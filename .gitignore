@@ -1,0 +1,35 @@
+# Workspace state — not part of the research record
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Project tooling settings (not research)
+.claude/
+.vscode/
+.idea/
+
+# Exploratory / scratch work
+scratch/
+
+# GitHub 100 MB-per-file limit — large reference PDFs must stay local
+data/literature/khalifa/1982-khalifa-quran-visual-presentation-of-the-miracle.pdf
+data/literature/classical-tafsir/biqai-nazm-al-durar.pdf
+
+# Historical bundle (large binary archive, not part of the research record)
+Archive.zip
+
+# Build / cache artifacts
+*.egg-info/
+build/
+dist/
+node_modules/
+
+# External git repos imported as data
+quran-text/_external_git/
+data/alt-text/risan-quran-json/_external_git/

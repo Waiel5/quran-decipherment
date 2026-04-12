@@ -1,0 +1,2107 @@
+{
+  "config": {
+    "similarity": "jaccard of verse root sets (QAC v0.4)",
+    "nulls": {
+      "A_intra": "shuffle verse order within pericope (2000 trials)",
+      "B_surah": "shuffle full surah, resample window at same offset (2000 trials)"
+    },
+    "n_pericopes_tested": 34,
+    "bonferroni_z_41": 3.0308053371488466,
+    "bonferroni_z_82": 3.2342767542843966
+  },
+  "results": [
+    {
+      "prophet": "Noah",
+      "label": "71:1-28 Surah Nuh (whole)",
+      "surah": 71,
+      "start": 1,
+      "end": 28,
+      "N": 28,
+      "observed": 0.01988636363636364,
+      "null_A_intra": {
+        "mean": 0.028788185790050286,
+        "std": 0.014562573077978834,
+        "z": -0.6112808571685566,
+        "p_emp": 0.6956521739130435
+      },
+      "null_B_surah": {
+        "mean": 0.02850102019245927,
+        "std": 0.01437424706518942,
+        "z": -0.5993118468763503,
+        "p_emp": 0.6916541729135433
+      },
+      "top_pairs": [
+        {
+          "a_verse": 14,
+          "b_verse": 15,
+          "jaccard": 0.125,
+          "shared": [
+            "xlq"
+          ]
+        },
+        {
+          "a_verse": 7,
+          "b_verse": 22,
+          "jaccard": 0.09090909090909091,
+          "shared": [
+            "kbr"
+          ]
+        },
+        {
+          "a_verse": 4,
+          "b_verse": 25,
+          "jaccard": 0.0625,
+          "shared": [
+            "Alh"
+          ]
+        },
+        {
+          "a_verse": 1,
+          "b_verse": 28,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 2,
+          "b_verse": 27,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "14/15",
+      "center_text": "[14] While He has created you in stages? // [15] Do you not consider how Allah has created seven heavens in layers"
+    },
+    {
+      "prophet": "Noah",
+      "label": "11:25-49 Hud Noah pericope",
+      "surah": 11,
+      "start": 25,
+      "end": 49,
+      "N": 25,
+      "observed": 0.07300811389046684,
+      "null_A_intra": {
+        "mean": 0.061585886787999373,
+        "std": 0.01366249073211787,
+        "z": 0.8360281683936314,
+        "p_emp": 0.1984007996001999
+      },
+      "null_B_surah": {
+        "mean": 0.03787846403656598,
+        "std": 0.014866280385233816,
+        "z": 2.363042330938005,
+        "p_emp": 0.019490254872563718
+      },
+      "top_pairs": [
+        {
+          "a_verse": 33,
+          "b_verse": 41,
+          "jaccard": 0.16666666666666666,
+          "shared": [
+            "Alh",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 26,
+          "b_verse": 48,
+          "jaccard": 0.15384615384615385,
+          "shared": [
+            "Alm",
+            "E*b"
+          ]
+        },
+        {
+          "a_verse": 28,
+          "b_verse": 46,
+          "jaccard": 0.09523809523809523,
+          "shared": [
+            "kwn",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 31,
+          "b_verse": 43,
+          "jaccard": 0.08,
+          "shared": [
+            "Alh",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 25,
+          "b_verse": 49,
+          "jaccard": 0.07692307692307693,
+          "shared": [
+            "qwm"
+          ]
+        }
+      ],
+      "center_verse": 37,
+      "center_text": "And construct the ship under Our observation and Our inspiration and do not address Me concerning those who have wronged; indeed, they are [to be] drowned.\""
+    },
+    {
+      "prophet": "Noah",
+      "label": "7:59-64 A`raf Noah",
+      "surah": 7,
+      "start": 59,
+      "end": 64,
+      "N": 6,
+      "observed": 0.11960784313725491,
+      "null_A_intra": {
+        "mean": 0.09766449041154923,
+        "std": 0.03732671112962671,
+        "z": 0.5878726537010367,
+        "p_emp": 0.4147926036981509
+      },
+      "null_B_surah": {
+        "mean": 0.040872831402172925,
+        "std": 0.03364514317363973,
+        "z": 2.340159806386832,
+        "p_emp": 0.02048975512243878
+      },
+      "top_pairs": [
+        {
+          "a_verse": 61,
+          "b_verse": 62,
+          "jaccard": 0.3,
+          "shared": [
+            "Elm",
+            "rbb",
+            "rsl"
+          ]
+        },
+        {
+          "a_verse": 59,
+          "b_verse": 64,
+          "jaccard": 0.058823529411764705,
+          "shared": [
+            "qwm"
+          ]
+        },
+        {
+          "a_verse": 60,
+          "b_verse": 63,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "61/62",
+      "center_text": "[61] [Noah] said, \"O my people, there is not error in me, but I am a messenger from the Lord of the worlds.\" // [62] I convey to you the messages of my Lord and advise you; and I know from Allah what you do not know."
+    },
+    {
+      "prophet": "Noah",
+      "label": "26:105-122 Shu`ara Noah",
+      "surah": 26,
+      "start": 105,
+      "end": 122,
+      "N": 18,
+      "observed": 0.015873015873015872,
+      "null_A_intra": {
+        "mean": 0.04871679894179894,
+        "std": 0.03701590208552461,
+        "z": -0.8872884684235999,
+        "p_emp": 0.9250374812593704
+      },
+      "null_B_surah": {
+        "mean": 0.02935536992152059,
+        "std": 0.030497082402736384,
+        "z": -0.4420866845706854,
+        "p_emp": 0.6696651674162919
+      },
+      "top_pairs": [
+        {
+          "a_verse": 111,
+          "b_verse": 116,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 105,
+          "b_verse": 122,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 106,
+          "b_verse": 121,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 107,
+          "b_verse": 120,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 108,
+          "b_verse": 119,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "113/114",
+      "center_text": "[113] Their account is only upon my Lord, if you [could] perceive. // [114] And I am not one to drive away the believers."
+    },
+    {
+      "prophet": "Moses",
+      "label": "28:7-42 Qasas birth narrative",
+      "surah": 28,
+      "start": 7,
+      "end": 42,
+      "N": 36,
+      "observed": 0.06113974787304531,
+      "null_A_intra": {
+        "mean": 0.04726179516152742,
+        "std": 0.009933217421921823,
+        "z": 1.397125636341187,
+        "p_emp": 0.08595702148925537
+      },
+      "null_B_surah": {
+        "mean": 0.04539944725518302,
+        "std": 0.012548385534303156,
+        "z": 1.2543685858896738,
+        "p_emp": 0.09845077461269365
+      },
+      "top_pairs": [
+        {
+          "a_verse": 16,
+          "b_verse": 33,
+          "jaccard": 0.375,
+          "shared": [
+            "nfs",
+            "qwl",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 17,
+          "b_verse": 32,
+          "jaccard": 0.1,
+          "shared": [
+            "kwn",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 23,
+          "b_verse": 26,
+          "jaccard": 0.09523809523809523,
+          "shared": [
+            "Abw",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 24,
+          "b_verse": 25,
+          "jaccard": 0.09523809523809523,
+          "shared": [
+            "qwl",
+            "sqy"
+          ]
+        },
+        {
+          "a_verse": 21,
+          "b_verse": 28,
+          "jaccard": 0.07142857142857142,
+          "shared": [
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": "24/25",
+      "center_text": "[24] So he watered [their flocks] for them; then he went back to the shade and said, \"My Lord, indeed I am, for whatever good You would send down to me, in need.\" // [25] Then one of the two women came to him walking with shyness. She said, \"Indeed, my father invites you that he may reward you for having watered for us.\" So when he came to him and related to him the story, he said, \"Fear not. You have escaped from the wrongdoing people.\""
+    },
+    {
+      "prophet": "Moses",
+      "label": "20:9-98 Ta-Ha long Moses",
+      "surah": 20,
+      "start": 9,
+      "end": 98,
+      "N": 90,
+      "observed": 0.01861331975367063,
+      "null_A_intra": {
+        "mean": 0.031059706045769058,
+        "std": 0.007544004819869222,
+        "z": -1.6498380620486124,
+        "p_emp": 0.9615192403798101
+      },
+      "null_B_surah": {
+        "mean": 0.02707499547021451,
+        "std": 0.007224592010903386,
+        "z": -1.1712323275519896,
+        "p_emp": 0.8905547226386806
+      },
+      "top_pairs": [
+        {
+          "a_verse": 19,
+          "b_verse": 88,
+          "jaccard": 0.125,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 46,
+          "b_verse": 61,
+          "jaccard": 0.1,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 44,
+          "b_verse": 63,
+          "jaccard": 0.09090909090909091,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 50,
+          "b_verse": 57,
+          "jaccard": 0.09090909090909091,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 18,
+          "b_verse": 89,
+          "jaccard": 0.08333333333333333,
+          "shared": [
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": "53/54",
+      "center_text": "[53] [It is He] who has made for you the earth as a bed [spread out] and inserted therein for you roadways and sent down from the sky, rain and produced thereby categories of various plants. // [54] Eat [therefrom] and pasture your livestock. Indeed, in that are signs for those of intelligence."
+    },
+    {
+      "prophet": "Moses",
+      "label": "7:103-162 A`raf Moses",
+      "surah": 7,
+      "start": 103,
+      "end": 162,
+      "N": 60,
+      "observed": 0.050781510991779306,
+      "null_A_intra": {
+        "mean": 0.049582336297281066,
+        "std": 0.009856760951274305,
+        "z": 0.12166011739822186,
+        "p_emp": 0.4292853573213393
+      },
+      "null_B_surah": {
+        "mean": 0.04004819759694604,
+        "std": 0.009617395824025102,
+        "z": 1.1160311576259034,
+        "p_emp": 0.14142928535732133
+      },
+      "top_pairs": [
+        {
+          "a_verse": 127,
+          "b_verse": 138,
+          "jaccard": 0.2,
+          "shared": [
+            "Alh",
+            "bny",
+            "qwl",
+            "qwm"
+          ]
+        },
+        {
+          "a_verse": 118,
+          "b_verse": 147,
+          "jaccard": 0.18181818181818182,
+          "shared": [
+            "Eml",
+            "kwn"
+          ]
+        },
+        {
+          "a_verse": 128,
+          "b_verse": 137,
+          "jaccard": 0.16666666666666666,
+          "shared": [
+            "ArD",
+            "Sbr",
+            "qwm",
+            "wrv"
+          ]
+        },
+        {
+          "a_verse": 114,
+          "b_verse": 151,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 103,
+          "b_verse": 162,
+          "jaccard": 0.125,
+          "shared": [
+            "Zlm",
+            "kwn"
+          ]
+        }
+      ],
+      "center_verse": "132/133",
+      "center_text": "[132] And they said, \"No matter what sign you bring us with which to bewitch us, we will not be believers in you.\" // [133] So We sent upon them the flood and locusts and lice and frogs and blood as distinct signs, but they were arrogant and were a criminal people."
+    },
+    {
+      "prophet": "Moses",
+      "label": "26:10-68 Shu`ara Moses",
+      "surah": 26,
+      "start": 10,
+      "end": 68,
+      "N": 59,
+      "observed": 0.05318828680897646,
+      "null_A_intra": {
+        "mean": 0.04733684475761715,
+        "std": 0.012906748784297747,
+        "z": 0.453362976931737,
+        "p_emp": 0.296351824087956
+      },
+      "null_B_surah": {
+        "mean": 0.030611006170635054,
+        "std": 0.01687364107939937,
+        "z": 1.3380206756860242,
+        "p_emp": 0.1024487756121939
+      },
+      "top_pairs": [
+        {
+          "a_verse": 16,
+          "b_verse": 62,
+          "jaccard": 0.3333333333333333,
+          "shared": [
+            "qwl",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 28,
+          "b_verse": 50,
+          "jaccard": 0.2222222222222222,
+          "shared": [
+            "qwl",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 32,
+          "b_verse": 46,
+          "jaccard": 0.16666666666666666,
+          "shared": [
+            "lqy"
+          ]
+        },
+        {
+          "a_verse": 10,
+          "b_verse": 68,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 31,
+          "b_verse": 47,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": 39,
+      "center_text": "And it was said to the people, \"Will you congregate"
+    },
+    {
+      "prophet": "Abraham",
+      "label": "2:124-141 Baqara (beyond 131-144)",
+      "surah": 2,
+      "start": 124,
+      "end": 141,
+      "N": 18,
+      "observed": 0.06401550519197578,
+      "null_A_intra": {
+        "mean": 0.06587419141895999,
+        "std": 0.030529350212671145,
+        "z": -0.06088194521129256,
+        "p_emp": 0.4102948525737131
+      },
+      "null_B_surah": {
+        "mean": 0.04731530679130968,
+        "std": 0.016771613283465315,
+        "z": 0.995741919301847,
+        "p_emp": 0.14392803598200898
+      },
+      "top_pairs": [
+        {
+          "a_verse": 132,
+          "b_verse": 133,
+          "jaccard": 0.26666666666666666,
+          "shared": [
+            "Alh",
+            "bny",
+            "mwt",
+            "slm"
+          ]
+        },
+        {
+          "a_verse": 126,
+          "b_verse": 139,
+          "jaccard": 0.13636363636363635,
+          "shared": [
+            "Alh",
+            "qwl",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 130,
+          "b_verse": 135,
+          "jaccard": 0.06666666666666667,
+          "shared": [
+            "mll"
+          ]
+        },
+        {
+          "a_verse": 124,
+          "b_verse": 141,
+          "jaccard": 0.058823529411764705,
+          "shared": [
+            "Amm"
+          ]
+        },
+        {
+          "a_verse": 129,
+          "b_verse": 136,
+          "jaccard": 0.047619047619047616,
+          "shared": [
+            "rbb"
+          ]
+        }
+      ],
+      "center_verse": "132/133",
+      "center_text": "[132] And Abraham instructed his sons [to do the same] and [so did] Jacob, [saying], \"O my sons, indeed Allah has chosen for you this religion, so do not die except while you are Muslims.\" // [133] Or were you witnesses when death approached Jacob, when he said to his sons, \"What will you worship after me?\" They said, \"We will worship your God and the God of your fathers, Abraham and Ishmael and Isaac - one God. And we are Muslims [in submission] to Him.\""
+    },
+    {
+      "prophet": "Abraham",
+      "label": "6:74-83 Aflachain An`am",
+      "surah": 6,
+      "start": 74,
+      "end": 83,
+      "N": 10,
+      "observed": 0.067203302373581,
+      "null_A_intra": {
+        "mean": 0.09646621150822003,
+        "std": 0.034709579785155716,
+        "z": -0.8430787498946883,
+        "p_emp": 0.783608195902049
+      },
+      "null_B_surah": {
+        "mean": 0.04729565005522515,
+        "std": 0.024237468795368852,
+        "z": 0.8213585538337933,
+        "p_emp": 0.20039980009995004
+      },
+      "top_pairs": [
+        {
+          "a_verse": 77,
+          "b_verse": 80,
+          "jaccard": 0.21052631578947367,
+          "shared": [
+            "hdy",
+            "qwl",
+            "qwm",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 78,
+          "b_verse": 79,
+          "jaccard": 0.06666666666666667,
+          "shared": [
+            "$rk"
+          ]
+        },
+        {
+          "a_verse": 74,
+          "b_verse": 83,
+          "jaccard": 0.058823529411764705,
+          "shared": [
+            "qwm"
+          ]
+        },
+        {
+          "a_verse": 75,
+          "b_verse": 82,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 76,
+          "b_verse": 81,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "78/79",
+      "center_text": "[78] And when he saw the sun rising, he said, \"This is my lord; this is greater.\" But when it set, he said, \"O my people, indeed I am free from what you associate with Allah. // [79] Indeed, I have turned my face toward He who created the heavens and the earth, inclining toward truth, and I am not of those who associate others with Allah.\""
+    },
+    {
+      "prophet": "Abraham",
+      "label": "11:69-76 Hud angelic visitation",
+      "surah": 11,
+      "start": 69,
+      "end": 76,
+      "N": 8,
+      "observed": 0.10555555555555556,
+      "null_A_intra": {
+        "mean": 0.049525662572721396,
+        "std": 0.024560933299416565,
+        "z": 2.281260744442685,
+        "p_emp": 0.02348825587206397
+      },
+      "null_B_surah": {
+        "mean": 0.03714632518312784,
+        "std": 0.02455709437476371,
+        "z": 2.7857216871198327,
+        "p_emp": 0.012993503248375811
+      },
+      "top_pairs": [
+        {
+          "a_verse": 71,
+          "b_verse": 74,
+          "jaccard": 0.2222222222222222,
+          "shared": [
+            "b$r",
+            "qwm"
+          ]
+        },
+        {
+          "a_verse": 72,
+          "b_verse": 73,
+          "jaccard": 0.13333333333333333,
+          "shared": [
+            "Ejb",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 69,
+          "b_verse": 76,
+          "jaccard": 0.06666666666666667,
+          "shared": [
+            "jyA"
+          ]
+        },
+        {
+          "a_verse": 70,
+          "b_verse": 75,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "72/73",
+      "center_text": "[72] She said, \"Woe to me! Shall I give birth while I am an old woman and this, my husband, is an old man? Indeed, this is an amazing thing!\" // [73] They said, \"Are you amazed at the decree of Allah? May the mercy of Allah and His blessings be upon you, people of the house. Indeed, He is Praiseworthy and Honorable.\""
+    },
+    {
+      "prophet": "Abraham",
+      "label": "14:35-41 Ibrahim prayer",
+      "surah": 14,
+      "start": 35,
+      "end": 41,
+      "N": 7,
+      "observed": 0.0853174603174603,
+      "null_A_intra": {
+        "mean": 0.10150643686627382,
+        "std": 0.02720416557489477,
+        "z": -0.595091825339919,
+        "p_emp": 0.697151424287856
+      },
+      "null_B_surah": {
+        "mean": 0.04755149315023017,
+        "std": 0.030505424454860586,
+        "z": 1.2380082507330166,
+        "p_emp": 0.11394302848575712
+      },
+      "top_pairs": [
+        {
+          "a_verse": 35,
+          "b_verse": 41,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "Amn",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 36,
+          "b_verse": 40,
+          "jaccard": 0.07142857142857142,
+          "shared": [
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 37,
+          "b_verse": 39,
+          "jaccard": 0.041666666666666664,
+          "shared": [
+            "rbb"
+          ]
+        }
+      ],
+      "center_verse": 38,
+      "center_text": "Our Lord, indeed You know what we conceal and what we declare, and nothing is hidden from Allah on the earth or in the heaven."
+    },
+    {
+      "prophet": "Abraham",
+      "label": "19:41-50 Maryam",
+      "surah": 19,
+      "start": 41,
+      "end": 50,
+      "N": 10,
+      "observed": 0.05246753246753246,
+      "null_A_intra": {
+        "mean": 0.06667751082251082,
+        "std": 0.029591703684132862,
+        "z": -0.4802014276250603,
+        "p_emp": 0.5942028985507246
+      },
+      "null_B_surah": {
+        "mean": 0.03627680208249521,
+        "std": 0.028896824721303928,
+        "z": 0.5602944455381902,
+        "p_emp": 0.24387806096951525
+      },
+      "top_pairs": [
+        {
+          "a_verse": 41,
+          "b_verse": 50,
+          "jaccard": 0.1,
+          "shared": [
+            "Sdq"
+          ]
+        },
+        {
+          "a_verse": 44,
+          "b_verse": 47,
+          "jaccard": 0.09090909090909091,
+          "shared": [
+            "kwn"
+          ]
+        },
+        {
+          "a_verse": 42,
+          "b_verse": 49,
+          "jaccard": 0.07142857142857142,
+          "shared": [
+            "Ebd"
+          ]
+        },
+        {
+          "a_verse": 43,
+          "b_verse": 48,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 45,
+          "b_verse": 46,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "45/46",
+      "center_text": "[45] O my father, indeed I fear that there will touch you a punishment from the Most Merciful so you would be to Satan a companion [in Hellfire].\" // [46] [His father] said, \"Have you no desire for my gods, O Abraham? If you do not desist, I will surely stone you, so avoid me a prolonged time.\""
+    },
+    {
+      "prophet": "Abraham",
+      "label": "21:51-73 Anbiya idol-destruction",
+      "surah": 21,
+      "start": 51,
+      "end": 73,
+      "N": 23,
+      "observed": 0.062160566706021256,
+      "null_A_intra": {
+        "mean": 0.07358428372980336,
+        "std": 0.022989674671082507,
+        "z": -0.4969064237412367,
+        "p_emp": 0.6626686656671664
+      },
+      "null_B_surah": {
+        "mean": 0.028781448162276135,
+        "std": 0.016931588694103872,
+        "z": 1.9714109022367645,
+        "p_emp": 0.03498250874562719
+      },
+      "top_pairs": [
+        {
+          "a_verse": 60,
+          "b_verse": 64,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 51,
+          "b_verse": 73,
+          "jaccard": 0.125,
+          "shared": [
+            "Aty",
+            "kwn"
+          ]
+        },
+        {
+          "a_verse": 55,
+          "b_verse": 69,
+          "jaccard": 0.125,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 57,
+          "b_verse": 67,
+          "jaccard": 0.1,
+          "shared": [
+            "Alh"
+          ]
+        },
+        {
+          "a_verse": 61,
+          "b_verse": 63,
+          "jaccard": 0.1,
+          "shared": [
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": 62,
+      "center_text": "They said, \"Have you done this to our gods, O Abraham?\""
+    },
+    {
+      "prophet": "Abraham",
+      "label": "26:69-104 Shu`ara",
+      "surah": 26,
+      "start": 69,
+      "end": 104,
+      "N": 36,
+      "observed": 0.0,
+      "null_A_intra": {
+        "mean": 0.01941765873015873,
+        "std": 0.014139556277687775,
+        "z": -1.3732862862747541,
+        "p_emp": 1.0
+      },
+      "null_B_surah": {
+        "mean": 0.030160226194633447,
+        "std": 0.021594064164042664,
+        "z": -1.3966905889283556,
+        "p_emp": 1.0
+      },
+      "top_pairs": [
+        {
+          "a_verse": 69,
+          "b_verse": 104,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 70,
+          "b_verse": 103,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 71,
+          "b_verse": 102,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 72,
+          "b_verse": 101,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 73,
+          "b_verse": 100,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "86/87",
+      "center_text": "[86] And forgive my father. Indeed, he has been of those astray. // [87] And do not disgrace me on the Day they are [all] resurrected -"
+    },
+    {
+      "prophet": "Abraham",
+      "label": "37:83-113 Saffat sacrifice",
+      "surah": 37,
+      "start": 83,
+      "end": 113,
+      "N": 31,
+      "observed": 0.022857142857142857,
+      "null_A_intra": {
+        "mean": 0.016554053843759724,
+        "std": 0.01344647919243885,
+        "z": 0.46875385914607676,
+        "p_emp": 0.30434782608695654
+      },
+      "null_B_surah": {
+        "mean": 0.014292365271467438,
+        "std": 0.017989377982629243,
+        "z": 0.47610193048062416,
+        "p_emp": 0.2048975512243878
+      },
+      "top_pairs": [
+        {
+          "a_verse": 85,
+          "b_verse": 111,
+          "jaccard": 0.2,
+          "shared": [
+            "Ebd"
+          ]
+        },
+        {
+          "a_verse": 97,
+          "b_verse": 99,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 83,
+          "b_verse": 113,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 84,
+          "b_verse": 112,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 86,
+          "b_verse": 110,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": 98,
+      "center_text": "And they intended for him a plan, but We made them the most debased."
+    },
+    {
+      "prophet": "Joseph",
+      "label": "12:1-111 whole Yusuf",
+      "surah": 12,
+      "start": 1,
+      "end": 111,
+      "N": 111,
+      "observed": 0.04055157006107382,
+      "null_A_intra": {
+        "mean": 0.051480124287161526,
+        "std": 0.006238247205519727,
+        "z": -1.7518629618297106,
+        "p_emp": 0.9715142428785607
+      },
+      "null_B_surah": {
+        "mean": 0.051120295315275795,
+        "std": 0.006348004231287574,
+        "z": -1.6648894470031417,
+        "p_emp": 0.9540229885057471
+      },
+      "top_pairs": [
+        {
+          "a_verse": 3,
+          "b_verse": 109,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "kwn",
+            "qbl",
+            "wHy"
+          ]
+        },
+        {
+          "a_verse": 10,
+          "b_verse": 102,
+          "jaccard": 0.13333333333333333,
+          "shared": [
+            "gyb",
+            "kwn"
+          ]
+        },
+        {
+          "a_verse": 51,
+          "b_verse": 61,
+          "jaccard": 0.13333333333333333,
+          "shared": [
+            "qwl",
+            "rwd"
+          ]
+        },
+        {
+          "a_verse": 7,
+          "b_verse": 105,
+          "jaccard": 0.125,
+          "shared": [
+            "Ayy"
+          ]
+        },
+        {
+          "a_verse": 14,
+          "b_verse": 98,
+          "jaccard": 0.125,
+          "shared": [
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": 56,
+      "center_text": "And thus We established Joseph in the land to settle therein wherever he willed. We touch with Our mercy whom We will, and We do not allow to be lost the reward of those who do good."
+    },
+    {
+      "prophet": "Joseph",
+      "label": "12:4-6 dream",
+      "surah": 12,
+      "start": 4,
+      "end": 6,
+      "N": 3,
+      "observed": 0.05555555555555555,
+      "null_A_intra": {
+        "mean": 0.057325163398692806,
+        "std": 0.048394630042017626,
+        "z": -0.03656620252290035,
+        "p_emp": 0.6581709145427287
+      },
+      "null_B_surah": {
+        "mean": 0.04951242629164814,
+        "std": 0.05527637217017411,
+        "z": 0.10932572140051094,
+        "p_emp": 0.4362818590704648
+      },
+      "top_pairs": [
+        {
+          "a_verse": 4,
+          "b_verse": 6,
+          "jaccard": 0.05555555555555555,
+          "shared": [
+            "Abw"
+          ]
+        }
+      ],
+      "center_verse": 5,
+      "center_text": "He said, \"O my son, do not relate your vision to your brothers or they will contrive against you a plan. Indeed Satan, to man, is a manifest enemy."
+    },
+    {
+      "prophet": "Joseph",
+      "label": "12:7-18 brothers",
+      "surah": 12,
+      "start": 7,
+      "end": 18,
+      "N": 12,
+      "observed": 0.07286953242835596,
+      "null_A_intra": {
+        "mean": 0.06044582356748572,
+        "std": 0.023467519960296848,
+        "z": 0.5294001616655316,
+        "p_emp": 0.2798600699650175
+      },
+      "null_B_surah": {
+        "mean": 0.0506029716169281,
+        "std": 0.0232257069965065,
+        "z": 0.9587032513058521,
+        "p_emp": 0.1619190404797601
+      },
+      "top_pairs": [
+        {
+          "a_verse": 11,
+          "b_verse": 14,
+          "jaccard": 0.125,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 8,
+          "b_verse": 17,
+          "jaccard": 0.11764705882352941,
+          "shared": [
+            "Abw",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 10,
+          "b_verse": 15,
+          "jaccard": 0.11764705882352941,
+          "shared": [
+            "gyb",
+            "jbb"
+          ]
+        },
+        {
+          "a_verse": 9,
+          "b_verse": 16,
+          "jaccard": 0.07692307692307693,
+          "shared": [
+            "Abw"
+          ]
+        },
+        {
+          "a_verse": 7,
+          "b_verse": 18,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "12/13",
+      "center_text": "[12] Send him with us tomorrow that he may eat well and play. And indeed, we will be his guardians. // [13] [Jacob] said, \"Indeed, it saddens me that you should take him, and I fear that a wolf would eat him while you are of him unaware.\""
+    },
+    {
+      "prophet": "Joseph",
+      "label": "12:36-42 prison",
+      "surah": 12,
+      "start": 36,
+      "end": 42,
+      "N": 7,
+      "observed": 0.1111111111111111,
+      "null_A_intra": {
+        "mean": 0.08086048792338266,
+        "std": 0.04483988187475547,
+        "z": 0.6746365494945545,
+        "p_emp": 0.23938030984507747
+      },
+      "null_B_surah": {
+        "mean": 0.05096213753140123,
+        "std": 0.03281044238903781,
+        "z": 1.8332265339953493,
+        "p_emp": 0.05147426286856572
+      },
+      "top_pairs": [
+        {
+          "a_verse": 38,
+          "b_verse": 40,
+          "jaccard": 0.19047619047619047,
+          "shared": [
+            "Abw",
+            "Alh",
+            "kvr",
+            "nws"
+          ]
+        },
+        {
+          "a_verse": 36,
+          "b_verse": 42,
+          "jaccard": 0.07142857142857142,
+          "shared": [
+            "qwl",
+            "sjn"
+          ]
+        },
+        {
+          "a_verse": 37,
+          "b_verse": 41,
+          "jaccard": 0.07142857142857142,
+          "shared": [
+            "Axr",
+            "rbb"
+          ]
+        }
+      ],
+      "center_verse": 39,
+      "center_text": "O [my] two companions of prison, are separate lords better or Allah, the One, the Prevailing?"
+    },
+    {
+      "prophet": "Joseph",
+      "label": "12:58-93 recognition",
+      "surah": 12,
+      "start": 58,
+      "end": 93,
+      "N": 36,
+      "observed": 0.08349864550844943,
+      "null_A_intra": {
+        "mean": 0.08844517842741899,
+        "std": 0.011636658308070069,
+        "z": -0.4250819082261027,
+        "p_emp": 0.6416791604197901
+      },
+      "null_B_surah": {
+        "mean": 0.05099534798941942,
+        "std": 0.012261992132362903,
+        "z": 2.6507354733367117,
+        "p_emp": 0.009495252373813094
+      },
+      "top_pairs": [
+        {
+          "a_verse": 68,
+          "b_verse": 83,
+          "jaccard": 0.18181818181818182,
+          "shared": [
+            "Alh",
+            "Amr",
+            "Elm",
+            "nfs"
+          ]
+        },
+        {
+          "a_verse": 66,
+          "b_verse": 85,
+          "jaccard": 0.16666666666666666,
+          "shared": [
+            "Alh",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 74,
+          "b_verse": 77,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "kwn",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 64,
+          "b_verse": 87,
+          "jaccard": 0.13333333333333333,
+          "shared": [
+            "Alh",
+            "Axw"
+          ]
+        },
+        {
+          "a_verse": 73,
+          "b_verse": 78,
+          "jaccard": 0.125,
+          "shared": [
+            "kwn",
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": "75/76",
+      "center_text": "[75] [The brothers] said, \"Its recompense is that he in whose bag it is found - he [himself] will be its recompense. Thus do we recompense the wrongdoers.\" // [76] So he began [the search] with their bags before the bag of his brother; then he extracted it from the bag of his brother. Thus did We plan for Joseph. He could not have taken his brother within the religion of the king except that Allah willed. We raise in degrees whom We will, but over every possessor of knowledge is one [more] knowing."
+    },
+    {
+      "prophet": "Joseph",
+      "label": "12:94-101 reunion",
+      "surah": 12,
+      "start": 94,
+      "end": 101,
+      "N": 8,
+      "observed": 0.10445402298850574,
+      "null_A_intra": {
+        "mean": 0.09440231525692976,
+        "std": 0.02363607374346343,
+        "z": 0.4252697736804021,
+        "p_emp": 0.31984007996002
+      },
+      "null_B_surah": {
+        "mean": 0.05109433678581484,
+        "std": 0.02825448440938872,
+        "z": 1.8885386627320633,
+        "p_emp": 0.04297851074462768
+      },
+      "top_pairs": [
+        {
+          "a_verse": 97,
+          "b_verse": 98,
+          "jaccard": 0.25,
+          "shared": [
+            "gfr",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 96,
+          "b_verse": 99,
+          "jaccard": 0.13333333333333333,
+          "shared": [
+            "Alh",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 95,
+          "b_verse": 100,
+          "jaccard": 0.034482758620689655,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 94,
+          "b_verse": 101,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "97/98",
+      "center_text": "[97] They said, \"O our father, ask for us forgiveness of our sins; indeed, we have been sinners.\" // [98] He said, \"I will ask forgiveness for you from my Lord. Indeed, it is He who is the Forgiving, the Merciful.\""
+    },
+    {
+      "prophet": "David/Solomon",
+      "label": "27:15-44 Naml hoopoe/Sheba",
+      "surah": 27,
+      "start": 15,
+      "end": 44,
+      "N": 30,
+      "observed": 0.05351632084390705,
+      "null_A_intra": {
+        "mean": 0.061685825031478105,
+        "std": 0.015223007489405124,
+        "z": -0.5366550724787366,
+        "p_emp": 0.688655672163918
+      },
+      "null_B_surah": {
+        "mean": 0.038619876907425826,
+        "std": 0.014142860769531036,
+        "z": 1.0532836446056009,
+        "p_emp": 0.15792103948025987
+      },
+      "top_pairs": [
+        {
+          "a_verse": 27,
+          "b_verse": 32,
+          "jaccard": 0.2,
+          "shared": [
+            "kwn",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 15,
+          "b_verse": 44,
+          "jaccard": 0.13636363636363635,
+          "shared": [
+            "Alh",
+            "Elm",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 19,
+          "b_verse": 40,
+          "jaccard": 0.10344827586206896,
+          "shared": [
+            "$kr",
+            "qwl",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 21,
+          "b_verse": 38,
+          "jaccard": 0.09090909090909091,
+          "shared": [
+            "Aty"
+          ]
+        },
+        {
+          "a_verse": 18,
+          "b_verse": 41,
+          "jaccard": 0.07142857142857142,
+          "shared": [
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": "29/30",
+      "center_text": "[29] She said, \"O eminent ones, indeed, to me has been delivered a noble letter. // [30] Indeed, it is from Solomon, and indeed, it reads: 'In the name of Allah, the Entirely Merciful, the Especially Merciful,"
+    },
+    {
+      "prophet": "David/Solomon",
+      "label": "38:17-40 Sad David/Solomon",
+      "surah": 38,
+      "start": 17,
+      "end": 40,
+      "N": 24,
+      "observed": 0.017592592592592594,
+      "null_A_intra": {
+        "mean": 0.019188419964538385,
+        "std": 0.017435666029584865,
+        "z": -0.09152660811683298,
+        "p_emp": 0.4307846076961519
+      },
+      "null_B_surah": {
+        "mean": 0.017857380000952317,
+        "std": 0.014020199123291348,
+        "z": -0.018886137495710734,
+        "p_emp": 0.44877561219390305
+      },
+      "top_pairs": [
+        {
+          "a_verse": 17,
+          "b_verse": 40,
+          "jaccard": 0.1111111111111111,
+          "shared": [
+            "Awb"
+          ]
+        },
+        {
+          "a_verse": 22,
+          "b_verse": 35,
+          "jaccard": 0.1,
+          "shared": [
+            "bgy",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 18,
+          "b_verse": 39,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 19,
+          "b_verse": 38,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 20,
+          "b_verse": 37,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "28/29",
+      "center_text": "[28] Or should we treat those who believe and do righteous deeds like corrupters in the land? Or should We treat those who fear Allah like the wicked? // [29] [This is] a blessed Book which We have revealed to you, [O Muhammad], that they might reflect upon its verses and that those of understanding would be reminded."
+    },
+    {
+      "prophet": "David/Solomon",
+      "label": "34:10-14 Saba Solomon jinn",
+      "surah": 34,
+      "start": 10,
+      "end": 14,
+      "N": 5,
+      "observed": 0.0625,
+      "null_A_intra": {
+        "mean": 0.030226948051948054,
+        "std": 0.03070780216122794,
+        "z": 1.0509723808498517,
+        "p_emp": 0.18840579710144928
+      },
+      "null_B_surah": {
+        "mean": 0.04553914656833289,
+        "std": 0.03866477701354759,
+        "z": 0.4386641988320343,
+        "p_emp": 0.2888555722138931
+      },
+      "top_pairs": [
+        {
+          "a_verse": 11,
+          "b_verse": 13,
+          "jaccard": 0.125,
+          "shared": [
+            "Eml",
+            "qdr"
+          ]
+        },
+        {
+          "a_verse": 10,
+          "b_verse": 14,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": 12,
+      "center_text": "And to Solomon [We subjected] the wind - its morning [journey was that of] a month - and its afternoon [journey was that of] a month, and We made flow for him a spring of [liquid] copper. And among the jinn were those who worked for him by the permission of his Lord. And whoever deviated among them from Our command - We will make him taste of the punishment of the Blaze."
+    },
+    {
+      "prophet": "Jonah",
+      "label": "37:139-148 Yunus whale",
+      "surah": 37,
+      "start": 139,
+      "end": 148,
+      "N": 10,
+      "observed": 0.0,
+      "null_A_intra": {
+        "mean": 0.011025,
+        "std": 0.02246551524002955,
+        "z": -0.4907521542330537,
+        "p_emp": 1.0
+      },
+      "null_B_surah": {
+        "mean": 0.0141362415340937,
+        "std": 0.03107614040061439,
+        "z": -0.4548905157415951,
+        "p_emp": 1.0
+      },
+      "top_pairs": [
+        {
+          "a_verse": 139,
+          "b_verse": 148,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 140,
+          "b_verse": 147,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 141,
+          "b_verse": 146,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 142,
+          "b_verse": 145,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 143,
+          "b_verse": 144,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "143/144",
+      "center_text": "[143] And had he not been of those who exalt Allah, // [144] He would have remained inside its belly until the Day they are resurrected."
+    },
+    {
+      "prophet": "Jonah",
+      "label": "10:1-109 whole Yunus",
+      "surah": 10,
+      "start": 1,
+      "end": 109,
+      "N": 109,
+      "observed": 0.04916431459150371,
+      "null_A_intra": {
+        "mean": 0.05367159156817959,
+        "std": 0.007137015421264611,
+        "z": -0.6315352721876615,
+        "p_emp": 0.7351324337831084
+      },
+      "null_B_surah": {
+        "mean": 0.05356821126098463,
+        "std": 0.0071713723737241355,
+        "z": -0.6140939892644217,
+        "p_emp": 0.7231384307846077
+      },
+      "top_pairs": [
+        {
+          "a_verse": 41,
+          "b_verse": 69,
+          "jaccard": 0.2857142857142857,
+          "shared": [
+            "k*b",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 25,
+          "b_verse": 85,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "Alh",
+            "qwm"
+          ]
+        },
+        {
+          "a_verse": 2,
+          "b_verse": 108,
+          "jaccard": 0.13636363636363635,
+          "shared": [
+            "nws",
+            "qwl",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 12,
+          "b_verse": 98,
+          "jaccard": 0.13636363636363635,
+          "shared": [
+            "k$f",
+            "kwn",
+            "qwm"
+          ]
+        },
+        {
+          "a_verse": 1,
+          "b_verse": 109,
+          "jaccard": 0.125,
+          "shared": [
+            "Hkm"
+          ]
+        }
+      ],
+      "center_verse": 55,
+      "center_text": "Unquestionably, to Allah belongs whatever is in the heavens and the earth. Unquestionably, the promise of Allah is truth, but most of them do not know"
+    },
+    {
+      "prophet": "Jesus",
+      "label": "3:35-63 AL Imran birth/life",
+      "surah": 3,
+      "start": 35,
+      "end": 63,
+      "N": 29,
+      "observed": 0.03469268090011124,
+      "null_A_intra": {
+        "mean": 0.059596494925313034,
+        "std": 0.011988243079204394,
+        "z": -2.0773531084301764,
+        "p_emp": 0.9885057471264368
+      },
+      "null_B_surah": {
+        "mean": 0.053706362813218306,
+        "std": 0.01439160978462469,
+        "z": -1.3211643587933004,
+        "p_emp": 0.92103948025987
+      },
+      "top_pairs": [
+        {
+          "a_verse": 47,
+          "b_verse": 51,
+          "jaccard": 0.13333333333333333,
+          "shared": [
+            "Alh",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 38,
+          "b_verse": 60,
+          "jaccard": 0.09090909090909091,
+          "shared": [
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 35,
+          "b_verse": 63,
+          "jaccard": 0.08333333333333333,
+          "shared": [
+            "Elm"
+          ]
+        },
+        {
+          "a_verse": 37,
+          "b_verse": 61,
+          "jaccard": 0.06666666666666667,
+          "shared": [
+            "Alh",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 36,
+          "b_verse": 62,
+          "jaccard": 0.058823529411764705,
+          "shared": [
+            "Alh"
+          ]
+        }
+      ],
+      "center_verse": 49,
+      "center_text": "And [make him] a messenger to the Children of Israel, [who will say], 'Indeed I have come to you with a sign from your Lord in that I design for you from clay [that which is] like the form of a bird, then I breathe into it and it becomes a bird by permission of Allah. And I cure the blind and the leper, and I give life to the dead - by permission of Allah. And I inform you of what you eat and what you store in your houses. Indeed in that is a sign for you, if you are believers."
+    },
+    {
+      "prophet": "Jesus",
+      "label": "5:109-120 Ma'ida table",
+      "surah": 5,
+      "start": 109,
+      "end": 120,
+      "N": 12,
+      "observed": 0.10396129211918685,
+      "null_A_intra": {
+        "mean": 0.09862807922819267,
+        "std": 0.020164673322835534,
+        "z": 0.2644829799922707,
+        "p_emp": 0.3343328335832084
+      },
+      "null_B_surah": {
+        "mean": 0.06212082751943324,
+        "std": 0.022300695699993812,
+        "z": 1.876195485675598,
+        "p_emp": 0.04147926036981509
+      },
+      "top_pairs": [
+        {
+          "a_verse": 112,
+          "b_verse": 117,
+          "jaccard": 0.2,
+          "shared": [
+            "Alh",
+            "kwn",
+            "qwl",
+            "rbb"
+          ]
+        },
+        {
+          "a_verse": 114,
+          "b_verse": 115,
+          "jaccard": 0.15789473684210525,
+          "shared": [
+            "Alh",
+            "nzl",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 113,
+          "b_verse": 116,
+          "jaccard": 0.15,
+          "shared": [
+            "Elm",
+            "kwn",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 109,
+          "b_verse": 120,
+          "jaccard": 0.07142857142857142,
+          "shared": [
+            "Alh"
+          ]
+        },
+        {
+          "a_verse": 110,
+          "b_verse": 119,
+          "jaccard": 0.044444444444444446,
+          "shared": [
+            "Alh",
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": "114/115",
+      "center_text": "[114] Said Jesus, the son of Mary, \"O Allah, our Lord, send down to us a table [spread with food] from the heaven to be for us a festival for the first of us and the last of us and a sign from You. And provide for us, and You are the best of providers.\" // [115] Allah said, \"Indeed, I will sent it down to you, but whoever disbelieves afterwards from among you - then indeed will I punish him with a punishment by which I have not punished anyone among the worlds.\""
+    },
+    {
+      "prophet": "Jesus",
+      "label": "19:16-40 Maryam",
+      "surah": 19,
+      "start": 16,
+      "end": 40,
+      "N": 25,
+      "observed": 0.04867216117216117,
+      "null_A_intra": {
+        "mean": 0.042924614080414196,
+        "std": 0.013288334026705017,
+        "z": 0.43252578390913177,
+        "p_emp": 0.31134432783608196
+      },
+      "null_B_surah": {
+        "mean": 0.03599345397208876,
+        "std": 0.018252411985963966,
+        "z": 0.6946318771361446,
+        "p_emp": 0.21489255372313842
+      },
+      "top_pairs": [
+        {
+          "a_verse": 21,
+          "b_verse": 35,
+          "jaccard": 0.2857142857142857,
+          "shared": [
+            "Amr",
+            "kwn",
+            "qDy",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 24,
+          "b_verse": 32,
+          "jaccard": 0.1,
+          "shared": [
+            "jEl"
+          ]
+        },
+        {
+          "a_verse": 27,
+          "b_verse": 29,
+          "jaccard": 0.07692307692307693,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 23,
+          "b_verse": 33,
+          "jaccard": 0.07142857142857142,
+          "shared": [
+            "mwt"
+          ]
+        },
+        {
+          "a_verse": 26,
+          "b_verse": 30,
+          "jaccard": 0.05,
+          "shared": [
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": 28,
+      "center_text": "O sister of Aaron, your father was not a man of evil, nor was your mother unchaste.\""
+    },
+    {
+      "prophet": "Adam",
+      "label": "2:30-39 Baqara primordial",
+      "surah": 2,
+      "start": 30,
+      "end": 39,
+      "N": 10,
+      "observed": 0.06936274509803922,
+      "null_A_intra": {
+        "mean": 0.07965111572045834,
+        "std": 0.022310757724494583,
+        "z": -0.4611394534181913,
+        "p_emp": 0.6361819090454772
+      },
+      "null_B_surah": {
+        "mean": 0.04779462492955069,
+        "std": 0.022678401369165494,
+        "z": 0.9510423515924474,
+        "p_emp": 0.16091954022988506
+      },
+      "top_pairs": [
+        {
+          "a_verse": 33,
+          "b_verse": 36,
+          "jaccard": 0.16666666666666666,
+          "shared": [
+            "ArD",
+            "kwn",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 34,
+          "b_verse": 35,
+          "jaccard": 0.11764705882352941,
+          "shared": [
+            "kwn",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 31,
+          "b_verse": 38,
+          "jaccard": 0.0625,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 30,
+          "b_verse": 39,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 32,
+          "b_verse": 37,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": "34/35",
+      "center_text": "[34] And [mention] when We said to the angels, \"Prostrate before Adam\"; so they prostrated, except for Iblees. He refused and was arrogant and became of the disbelievers. // [35] And We said, \"O Adam, dwell, you and your wife, in Paradise and eat therefrom in [ease and] abundance from wherever you will. But do not approach this tree, lest you be among the wrongdoers.\""
+    },
+    {
+      "prophet": "Adam",
+      "label": "7:11-25 A`raf temptation",
+      "surah": 7,
+      "start": 11,
+      "end": 25,
+      "N": 15,
+      "observed": 0.06527777777777778,
+      "null_A_intra": {
+        "mean": 0.0780347410758642,
+        "std": 0.023982894598636294,
+        "z": -0.5319192495976609,
+        "p_emp": 0.6606696651674163
+      },
+      "null_B_surah": {
+        "mean": 0.040543639345885105,
+        "std": 0.020627363127576428,
+        "z": 1.199093567069945,
+        "p_emp": 0.11294352823588207
+      },
+      "top_pairs": [
+        {
+          "a_verse": 13,
+          "b_verse": 23,
+          "jaccard": 0.16666666666666666,
+          "shared": [
+            "kwn",
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 11,
+          "b_verse": 25,
+          "jaccard": 0.1111111111111111,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 12,
+          "b_verse": 24,
+          "jaccard": 0.06666666666666667,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 16,
+          "b_verse": 20,
+          "jaccard": 0.0625,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 14,
+          "b_verse": 22,
+          "jaccard": 0.05,
+          "shared": [
+            "qwl"
+          ]
+        }
+      ],
+      "center_verse": 18,
+      "center_text": "[Allah] said, \"Get out of Paradise, reproached and expelled. Whoever follows you among them - I will surely fill Hell with you, all together.\""
+    },
+    {
+      "prophet": "Adam",
+      "label": "15:26-42 Hijr",
+      "surah": 15,
+      "start": 26,
+      "end": 42,
+      "N": 17,
+      "observed": 0.017857142857142856,
+      "null_A_intra": {
+        "mean": 0.06627071747696747,
+        "std": 0.034977772368086774,
+        "z": -1.3841240119681402,
+        "p_emp": 0.95952023988006
+      },
+      "null_B_surah": {
+        "mean": 0.022227318688256188,
+        "std": 0.021079829088510096,
+        "z": -0.2073155248443341,
+        "p_emp": 0.5647176411794103
+      },
+      "top_pairs": [
+        {
+          "a_verse": 32,
+          "b_verse": 36,
+          "jaccard": 0.14285714285714285,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 26,
+          "b_verse": 42,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 27,
+          "b_verse": 41,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 28,
+          "b_verse": 40,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 29,
+          "b_verse": 39,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": 34,
+      "center_text": "[Allah] said, \"Then get out of it, for indeed, you are expelled."
+    },
+    {
+      "prophet": "Adam",
+      "label": "20:115-127 Ta-Ha",
+      "surah": 20,
+      "start": 115,
+      "end": 127,
+      "N": 13,
+      "observed": 0.03598484848484849,
+      "null_A_intra": {
+        "mean": 0.03480244747082983,
+        "std": 0.01834104861679215,
+        "z": 0.06446747068409782,
+        "p_emp": 0.45377311344327836
+      },
+      "null_B_surah": {
+        "mean": 0.02693811781142578,
+        "std": 0.022267905915906196,
+        "z": 0.40626768891458875,
+        "p_emp": 0.28235882058970513
+      },
+      "top_pairs": [
+        {
+          "a_verse": 116,
+          "b_verse": 126,
+          "jaccard": 0.125,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 117,
+          "b_verse": 125,
+          "jaccard": 0.09090909090909091,
+          "shared": [
+            "qwl"
+          ]
+        },
+        {
+          "a_verse": 115,
+          "b_verse": 127,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 118,
+          "b_verse": 124,
+          "jaccard": 0.0,
+          "shared": []
+        },
+        {
+          "a_verse": 119,
+          "b_verse": 123,
+          "jaccard": 0.0,
+          "shared": []
+        }
+      ],
+      "center_verse": 121,
+      "center_text": "And Adam and his wife ate of it, and their private parts became apparent to them, and they began to fasten over themselves from the leaves of Paradise. And Adam disobeyed his Lord and erred."
+    }
+  ]
+}
