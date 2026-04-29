@@ -1,0 +1,80 @@
+{
+  "id": "H-NEW-670",
+  "prereg_sha": "0a6241a03386e95d2e177971600746c1cc4724ada3677f72b85a692fde43189a",
+  "seed": 20260440,
+  "anchors": {
+    "L_mushaf": 85.759656,
+    "L_2opt_unconstrained_cf011": 77.466858,
+    "L_2opt_unconstrained_my": 77.469565,
+    "L_2opt_used": 77.466858
+  },
+  "tests": [
+    {
+      "label": "Hijra-kink Q56-Q57",
+      "pair": [
+        56,
+        57
+      ],
+      "L_constrained": 77.74332500000004,
+      "delta": 0.2764670000000393,
+      "fraction_residual_explained": 0.03333820503044198,
+      "residual_left_pct": 9.347438380583016
+    },
+    {
+      "label": "Q1-Q2 (canonical opener)",
+      "pair": [
+        1,
+        2
+      ],
+      "L_constrained": 78.0831939999999,
+      "delta": 0.6163359999999045,
+      "fraction_residual_explained": 0.07432183926340713,
+      "residual_left_pct": 8.951134318915761
+    },
+    {
+      "label": "Q113-Q114 (terminal-pair canonical)",
+      "pair": [
+        113,
+        114
+      ],
+      "L_constrained": 77.53173199999989,
+      "delta": 0.06487399999988952,
+      "fraction_residual_explained": 0.007822932621762821,
+      "residual_left_pct": 9.59416628257011
+    },
+    {
+      "label": "Q1-Q113 (random non-canonical)",
+      "pair": [
+        1,
+        113
+      ],
+      "L_constrained": 77.61076800000001,
+      "delta": 0.1439100000000053,
+      "fraction_residual_explained": 0.01735361213428872,
+      "residual_left_pct": 9.502006397973425
+    },
+    {
+      "label": "Q50-Q90 (random non-canonical)",
+      "pair": [
+        50,
+        90
+      ],
+      "L_constrained": 77.67897799999994,
+      "delta": 0.2121199999999419,
+      "fraction_residual_explained": 0.025578821526816616,
+      "residual_left_pct": 9.42247016475913
+    },
+    {
+      "label": "Q9-Q108 (random non-canonical)",
+      "pair": [
+        9,
+        108
+      ],
+      "L_constrained": 78.26137600000001,
+      "delta": 0.7945180000000107,
+      "fraction_residual_explained": 0.09580819404982616,
+      "residual_left_pct": 8.743365295215263
+    }
+  ],
+  "verdict": "NULL \u2014 Hijra-kink does NOT explain TSP-residual; other factors dominate"
+}

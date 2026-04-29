@@ -1,0 +1,198 @@
+{
+  "finding_id": "h-new-204",
+  "title": "Reverse-mushaf boundary test: symmetry verification + mirror-symmetry test",
+  "parent_finding": "h-new-111 / h-new-130 / cross-finding-011",
+  "parent_d_matrix_sha256": "4c366c414b82b0d0f3bcd06b68a7b5a87b500cf925b5088704a36c355d7f33fc",
+  "parent_130_sha256": "777fb68382abf25fdeee4406c4cd7a5cf2e56a9201b76f41baf32b01a8da4d23",
+  "seed": 20260419,
+  "date": "2026-04-17",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, mushaf order REVERSED, Hafs-Kufan)",
+  "bonferroni_k": 2,
+  "bonferroni_family": "h-new-204-reverse-mushaf",
+  "alpha_bon": 0.025,
+  "n_perms": 10000,
+  "primary_symmetry_verification": {
+    "description": "Under reverse mushaf order, top-15 largest consecutive-pair Fisher-Rao distances should be IDENTICAL (as sets) to forward order (Fisher-Rao is symmetric).",
+    "max_abs_diff_fwd_reversed_vs_rev": 0.0,
+    "symmetry_ok_tol_1e-12": true,
+    "top15_fwd_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        49,
+        50
+      ],
+      [
+        53,
+        54
+      ],
+      [
+        54,
+        55
+      ],
+      [
+        55,
+        56
+      ],
+      [
+        56,
+        57
+      ]
+    ],
+    "top15_rev_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        49,
+        50
+      ],
+      [
+        53,
+        54
+      ],
+      [
+        54,
+        55
+      ],
+      [
+        55,
+        56
+      ],
+      [
+        56,
+        57
+      ]
+    ],
+    "sets_identical": true,
+    "pass_primary": true,
+    "interpretation": "PASS = metric is symmetric (expected). FAIL = bug in pipeline."
+  },
+  "secondary_mirror_symmetry": {
+    "description": "Spearman correlation between d(i, i+1) and d(115-i, 114-i) for i in 1..56 tests reflective architectural structure about the mushaf midpoint.",
+    "n_mirror_pairs": 56,
+    "mirror_partner_indices": [
+      [
+        1,
+        113
+      ],
+      [
+        2,
+        112
+      ],
+      [
+        3,
+        111
+      ],
+      [
+        4,
+        110
+      ],
+      [
+        5,
+        109
+      ]
+    ],
+    "rho_obs_spearman": -0.051059466848940534,
+    "p_two_sided_perm": 0.7154284571542846,
+    "alpha_bon": 0.025,
+    "pass_secondary_mirror": false,
+    "sign": "negative_mirror_corr",
+    "null_rho_mean": 0.002517060833902939,
+    "null_rho_sd": 0.1352188269428112
+  },
+  "tertiary_top15_mirror_hits": {
+    "description": "Count of mirror-partner pairs within top-15 forward boundaries (exploratory, not Bonferroni-counted).",
+    "mirror_hits_observed": 0,
+    "mirror_hit_pairs": [],
+    "p_one_sided_perm": 1.0,
+    "null_expected": 0.9282
+  },
+  "magnitude_mirror_check": {
+    "d_2_3": 0.63093,
+    "d_113_114": 0.271785,
+    "abs_diff": 0.359145,
+    "mean_consecutive_d": 0.7589349999999999,
+    "relative_diff_to_mean": 0.47322234446955275
+  },
+  "verdict": {
+    "primary_symmetry": "PASS",
+    "secondary_mirror": "NULL",
+    "interpretation": "Primary PASS confirms Fisher-Rao metric symmetry (no bug). Secondary mirror test is the novel question: is there reflective architectural structure about the mushaf midpoint? NULL = boundaries are not systematically mirror-placed."
+  }
+}

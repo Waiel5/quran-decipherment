@@ -1,0 +1,90 @@
+{
+  "id": "H-NEW-810",
+  "prereg_sha": "4f3970eb430bd44d33c89d5577feffd3361866e9f80db6d93000e4e555161bb1",
+  "seed": 20260448,
+  "n_perm": 10000,
+  "alpha_bon": 0.016666666666666666,
+  "K": 15,
+  "n_windows": 100,
+  "parents": {
+    "h_new_730": {
+      "json": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-730.json",
+      "r_content_rhyme_recomputed": -0.8643313420937,
+      "r_content_rhyme_reported": -0.8643313420937001,
+      "r_content_phoneme_recomputed": -0.8932679028327408,
+      "r_content_phoneme_reported": -0.8932679028327408
+    },
+    "h_new_770": {
+      "json": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-770.json",
+      "r_letters_vs_content": 0.8718923143349032,
+      "r_words_vs_content": 0.8729556987359639
+    }
+  },
+  "tests": {
+    "T1_content_rhyme_given_letters": {
+      "r_xy": -0.8643313420937,
+      "r_xz": 0.8718923143349033,
+      "r_yz": -0.8855457569932431,
+      "partial_r": -0.4054277562033232,
+      "fisher_z": -0.4301273796169275,
+      "perm_null": {
+        "observed_partial_r": -0.4054277562033232,
+        "perm_p_one_sided_lower": 9.999000099990002e-05,
+        "null_mean": 0.0006688814085261022,
+        "null_std": 0.10248578610896297,
+        "null_min": -0.4032979287512659,
+        "null_max": 0.35731655904334314,
+        "null_pct_at_or_below_obs": 0,
+        "n_perm": 10000
+      },
+      "alpha_bon": 0.016666666666666666,
+      "passes_alpha_bon": true,
+      "classification": "PARTIAL-DEPENDENT"
+    },
+    "T2_content_rhyme_given_words": {
+      "r_xy": -0.8643313420937,
+      "r_xz": 0.8729556987359641,
+      "r_yz": -0.8860555518511508,
+      "partial_r": -0.4017274875508068,
+      "fisher_z": -0.42570715902225176,
+      "perm_null": {
+        "observed_partial_r": -0.4017274875508068,
+        "perm_p_one_sided_lower": 9.999000099990002e-05,
+        "null_mean": 0.0011829576405708582,
+        "null_std": 0.10164497825071239,
+        "null_min": -0.34496466843805823,
+        "null_max": 0.3400324569077028,
+        "null_pct_at_or_below_obs": 0,
+        "n_perm": 10000
+      },
+      "alpha_bon": 0.016666666666666666,
+      "passes_alpha_bon": true,
+      "classification": "PARTIAL-DEPENDENT"
+    },
+    "T3_content_phoneme_given_letters": {
+      "r_xy": -0.8932679028327408,
+      "r_xz": 0.8718923143349033,
+      "r_yz": -0.6655999225708138,
+      "partial_r": -0.8562677590935639,
+      "fisher_z": -1.2791855195842816,
+      "perm_null": {
+        "observed_partial_r": -0.8562677590935639,
+        "perm_p_one_sided_lower": 9.999000099990002e-05,
+        "null_mean": -0.0005325309459443581,
+        "null_std": 0.10140848626188793,
+        "null_min": -0.3886355114139378,
+        "null_max": 0.3538805488753259,
+        "null_pct_at_or_below_obs": 0,
+        "n_perm": 10000
+      },
+      "alpha_bon": 0.016666666666666666,
+      "passes_alpha_bon": true,
+      "classification": "PASS-INDEPENDENT"
+    }
+  },
+  "verdict": {
+    "ijaz_axis_T1_T2": "PARTIAL-DEPENDENT",
+    "phoneme_axis_T3": "LENGTH-INDEPENDENT",
+    "summary": "T1 (content×rhyme | letters): partial r = -0.4054, p = 0.00010 → PARTIAL-DEPENDENT; T2 (content×rhyme | words): partial r = -0.4017, p = 0.00010 → PARTIAL-DEPENDENT; T3 (content×phoneme | letters): partial r = -0.8563, p = 0.00010 → PASS-INDEPENDENT; original r(content,rhyme) = -0.8643; original r(content,phoneme) = -0.8933."
+  }
+}

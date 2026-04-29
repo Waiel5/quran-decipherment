@@ -1,0 +1,35 @@
+{
+  "finding_id": "Q044-F-01",
+  "title": "Q 41:11 + Q 44:10 are the corpus's only two attestations of the noun dukhān",
+  "prereg_sha": "8efd2b13c3c2714e11ec8c856b80647f89df649bbbcc2cd5c042e0b033bc30b8",
+  "prereg_sha_expected": "8efd2b13c3c2714e11ec8c856b80647f89df649bbbcc2cd5c042e0b033bc30b8",
+  "primary_run": {
+    "tashkeel_level": "no-tashkeel",
+    "source": "/Users/grey/Downloads/quran/quran-text/quran-no-tashkeel.json",
+    "match_count": 2,
+    "hits": [
+      {
+        "surah": 41,
+        "verse": 11,
+        "text": "ثم استوى إلى السماء وهي دخان فقال لها وللأرض ائتيا طوعا أو كرها قالتا أتينا طائعين"
+      },
+      {
+        "surah": 44,
+        "verse": 10,
+        "text": "فارتقب يوم تأتي السماء بدخان مبين"
+      }
+    ],
+    "surahs_hit": [
+      41,
+      44
+    ]
+  },
+  "replication_run": {
+    "tashkeel_level": "min-tashkeel",
+    "source": "/Users/grey/Downloads/quran/quran-text/quran-min-tashkeel.json",
+    "match_count": 0,
+    "hits": []
+  },
+  "verdict": "VINDICATED",
+  "in_HM7_only": true
+}

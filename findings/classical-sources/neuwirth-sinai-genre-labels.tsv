@@ -1,0 +1,127 @@
+#	title	TSV for H-NEW-28.v2 al-Sakkākī × Neuwirth-Sinai genre bridge
+#	delivered_by	classical-scholar (green)
+#	delivered_date	2026-04-14
+#	source_1	Angelika Neuwirth, Frühmekkanische Suren (1981) — early-Meccan pericope classification
+#	source_2	Angelika Neuwirth, Der Koran als Text der Spätantike (2010) — full-corpus genre scheme refined
+#	source_3	Nicolai Sinai, The Qurʾān: A Historical-Critical Introduction (2017) — cross-checked labels + middle/late-Meccan + Medinan
+#	jurjani_tier_rationale	Classical-scholar mapping of each genre to al-Jurjānī U-curve poles: HIGH asyndeton = kamāl al-ittiṣāl (hymn/oath/eschatological pole) OR kamāl al-inqiṭāʿ (narrative-rupture pole); MED = tawassuṭ bayna al-kamālayn (middle-range exhortation/legal); LOW = strong syndetic cohesion
+#	mw5_confidence_scheme	HIGH = Neuwirth/Sinai explicitly labels this surah in the cited work; MED = inferred by applying Neuwirth's schema to adjacent/structurally-similar surah; LOW = edge case or disputed
+#	mw6_source_anchor	See neuwirth-sinai-source-anchors.md for page-range citations to each category
+#	amend28_gate	N/A — Neuwirth/Sinai cite page numbers (not anwāʿ); AMEND-28 inapplicable
+#	columns	surah_number	surah_name_translit	neuwirth_phase	neuwirth_genre	sinai_genre	jurjani_predicted_asyndeton_tier	mw5_confidence	notes
+#
+surah_number	surah_name_translit	neuwirth_phase	neuwirth_genre	sinai_genre	jurjani_predicted_asyndeton_tier	mw5_confidence	notes
+1	al-Fātiḥa	liturgical-opening	liturgical-prayer	liturgical-prayer	HIGH	HIGH	Neuwirth+Sinai both treat as liturgical-opening outside the phase scheme
+2	al-Baqara	Medinan-long	community-forming-polemical	legal-exhortative-polemical	MED	HIGH	Neuwirth Gemeindebildende; Sinai legal-polemical composite
+3	Āl-ʿImrān	Medinan-long	community-forming-polemical	legal-exhortative-polemical	MED	HIGH	Medinan polemical engagement with ahl al-kitāb
+4	al-Nisāʾ	Medinan-long	legal-exhortative	legal-exhortative	LOW	HIGH	Primarily legal; strongly syndetic
+5	al-Māʾida	Medinan-long	legal-exhortative-polemical	legal-exhortative-polemical	LOW	HIGH	Legal framework
+6	al-Anʿām	late-Meccan	scripture-reflective	scripture-reflective-polemical	MED	HIGH	Neuwirth Schriftsure
+7	al-Aʿrāf	late-Meccan	narrative-qaṣaṣ	narrative-qaṣaṣ	HIGH	HIGH	Large narrative-cycle surah; break-points elevate asyndeton
+8	al-Anfāl	Medinan-long	legal-exhortative	legal-exhortative	LOW	HIGH	Post-Badr legislation
+9	al-Tawba	Medinan-long	polemical-legal	polemical-legal	LOW	HIGH	No basmala; strongly exhortative-legal
+10	Yūnus	late-Meccan	narrative-scripture	narrative-scripture	MED	HIGH	Transitional
+11	Hūd	late-Meccan	narrative-qaṣaṣ	narrative-qaṣaṣ	HIGH	HIGH	Cycle of prophet-narratives with rupture-breaks
+12	Yūsuf	late-Meccan	narrative-qaṣaṣ-monolithic	narrative-qaṣaṣ-monolithic	MED	HIGH	Continuous monolithic narrative; internally cohesive so predicted MED not HIGH
+13	al-Raʿd	late-Meccan/Medinan-border	scripture-reflective	scripture-reflective	MED	MED	Phase-disputed
+14	Ibrāhīm	late-Meccan	scripture-reflective-qaṣaṣ	scripture-reflective-qaṣaṣ	MED	HIGH
+15	al-Ḥijr	late-Meccan	narrative-qaṣaṣ	narrative-qaṣaṣ	HIGH	HIGH
+16	al-Naḥl	late-Meccan	scripture-reflective-polemical	scripture-reflective-polemical	MED	HIGH	Neuwirth Schriftsure
+17	al-Isrāʾ	late-Meccan	scripture-reflective	scripture-reflective	MED	HIGH
+18	al-Kahf	late-Meccan	narrative-qaṣaṣ-with-frame	narrative-qaṣaṣ-with-frame	HIGH	HIGH	Four embedded narratives with strong break-points
+19	Maryam	middle-Meccan	narrative-hymnic	narrative-hymnic	HIGH	HIGH	Neuwirth treats as hymnic-narrative hybrid
+20	Ṭā-Hā	middle-Meccan	narrative-qaṣaṣ-bipartite	narrative-qaṣaṣ-bipartite	HIGH	HIGH	Neuwirth bipartite structure (narrative + eschatology)
+21	al-Anbiyāʾ	middle-Meccan	narrative-catalog	narrative-catalog	HIGH	HIGH	Prophet-catalog with rupture-breaks
+22	al-Ḥajj	late-Meccan/Medinan-hybrid	hybrid	hybrid	MED	MED	Phase-disputed
+23	al-Muʾminūn	middle-Meccan	tripartite-structure	tripartite-structure	HIGH	HIGH	Neuwirth classic tripartite
+24	al-Nūr	Medinan-long	legal-exhortative	legal-exhortative	LOW	HIGH
+25	al-Furqān	middle-Meccan	scripture-reflective-polemical	scripture-reflective-polemical	MED	HIGH
+26	al-Shuʿarāʾ	middle-Meccan	narrative-catalog	narrative-catalog	HIGH	HIGH	Seven-prophet narrative cycle with strong breaks
+27	al-Naml	middle-Meccan	narrative-qaṣaṣ	narrative-qaṣaṣ	HIGH	HIGH
+28	al-Qaṣaṣ	middle-Meccan	narrative-qaṣaṣ	narrative-qaṣaṣ	HIGH	HIGH
+29	al-ʿAnkabūt	late-Meccan	narrative-scripture	narrative-scripture	MED	HIGH
+30	al-Rūm	late-Meccan	scripture-reflective	scripture-reflective	MED	HIGH
+31	Luqmān	late-Meccan	exhortative-wisdom	exhortative-wisdom	LOW	HIGH
+32	al-Sajda	middle-Meccan	scripture-reflective	scripture-reflective	MED	HIGH
+33	al-Aḥzāb	Medinan-long	legal-exhortative	legal-exhortative	LOW	HIGH
+34	Sabaʾ	late-Meccan	scripture-reflective-narrative	scripture-reflective-narrative	MED	HIGH
+35	Fāṭir	late-Meccan	scripture-reflective	scripture-reflective	MED	HIGH
+36	Yā-Sīn	middle-Meccan	tripartite-structure	tripartite-structure	HIGH	HIGH	Classic Neuwirth tripartite (sign-narrative-eschatology)
+37	al-Ṣāffāt	middle-Meccan	oath-sworn-narrative	oath-sworn-narrative	HIGH	HIGH	Oath-opening + catalog narratives
+38	Ṣād	middle-Meccan	narrative-catalog	narrative-catalog	HIGH	HIGH
+39	al-Zumar	late-Meccan	scripture-reflective	scripture-reflective	MED	HIGH
+40	Ghāfir	late-Meccan	scripture-reflective-narrative	scripture-reflective-narrative	MED	HIGH
+41	Fuṣṣilat	late-Meccan	scripture-reflective	scripture-reflective	MED	HIGH
+42	al-Shūrā	late-Meccan	scripture-reflective	scripture-reflective	MED	HIGH
+43	al-Zukhruf	late-Meccan	narrative-scripture	narrative-scripture	MED	HIGH
+44	al-Dukhān	middle-Meccan	eschatological-narrative	eschatological-narrative	HIGH	HIGH
+45	al-Jāthiya	late-Meccan	scripture-reflective	scripture-reflective	MED	HIGH
+46	al-Aḥqāf	late-Meccan	narrative-scripture	narrative-scripture	MED	HIGH
+47	Muḥammad	Medinan-long	polemical-legal	polemical-legal	LOW	HIGH
+48	al-Fatḥ	Medinan-long	historical-proclamation	historical-proclamation	LOW	HIGH
+49	al-Ḥujurāt	Medinan-long	legal-exhortative	legal-exhortative	LOW	HIGH
+50	Qāf	middle-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+51	al-Dhāriyāt	early-Meccan	oath-sworn-eschatological	oath-sworn-eschatological	HIGH	HIGH	Neuwirth Frühmekkanisch; oath cluster
+52	al-Ṭūr	early-Meccan	oath-sworn-eschatological	oath-sworn-eschatological	HIGH	HIGH
+53	al-Najm	early-Meccan	oath-sworn-visionary	oath-sworn-visionary	HIGH	HIGH	Neuwirth key early-Meccan vision-text
+54	al-Qamar	early-Meccan	eschatological-narrative	eschatological-narrative	HIGH	HIGH	Refrain-structured eschatology
+55	al-Raḥmān	early-Meccan	hymn-refrain	hymn-refrain	HIGH	HIGH	Classic Neuwirth Hymnus with 31× refrain
+56	al-Wāqiʿa	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+57	al-Ḥadīd	Medinan-long	exhortative	exhortative	MED	HIGH
+58	al-Mujādila	Medinan-long	legal-exhortative	legal-exhortative	LOW	HIGH
+59	al-Ḥashr	Medinan-long	historical-legal	historical-legal	LOW	HIGH	Banū Naḍīr event-surah
+60	al-Mumtaḥana	Medinan-long	legal-exhortative	legal-exhortative	LOW	HIGH
+61	al-Ṣaff	Medinan-long	exhortative	exhortative	MED	HIGH
+62	al-Jumuʿa	Medinan-long	legal-exhortative	legal-exhortative	LOW	HIGH
+63	al-Munāfiqūn	Medinan-long	polemical	polemical	MED	HIGH
+64	al-Taghābun	Medinan-long	exhortative	exhortative	MED	HIGH
+65	al-Ṭalāq	Medinan-long	legal	legal	LOW	HIGH
+66	al-Taḥrīm	Medinan-long	legal-exhortative	legal-exhortative	LOW	HIGH
+67	al-Mulk	middle-Meccan	hymnic-eschatological	hymnic-eschatological	HIGH	HIGH
+68	al-Qalam	early-Meccan	polemical-narrative	polemical-narrative	HIGH	HIGH	Neuwirth Frühmekkanisch (second earliest per her chronology)
+69	al-Ḥāqqa	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+70	al-Maʿārij	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+71	Nūḥ	middle-Meccan	narrative-monolithic	narrative-monolithic	MED	HIGH	Monolithic single-prophet narrative — internally cohesive MED
+72	al-Jinn	late-Meccan/middle-Meccan	narrative-report	narrative-report	MED	MED
+73	al-Muzzammil	early-Meccan	address-to-prophet	address-to-prophet	MED	HIGH
+74	al-Muddaththir	early-Meccan	address-to-prophet-eschatological	address-to-prophet-eschatological	HIGH	HIGH	Per Neuwirth one of the earliest prophetic-call surahs
+75	al-Qiyāma	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+76	al-Insān	early-Meccan/Medinan-disputed	eschatological-paradise	eschatological-paradise	HIGH	MED	Phase-disputed (Nöldeke Medinan; Neuwirth leans early-Meccan)
+77	al-Mursalāt	early-Meccan	oath-sworn-eschatological	oath-sworn-eschatological	HIGH	HIGH
+78	al-Nabaʾ	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+79	al-Nāziʿāt	early-Meccan	oath-sworn-eschatological	oath-sworn-eschatological	HIGH	HIGH
+80	ʿAbasa	early-Meccan	admonition-eschatological	admonition-eschatological	HIGH	HIGH
+81	al-Takwīr	early-Meccan	eschatological-oracle-oath	eschatological-oracle-oath	HIGH	HIGH	Neuwirth key Frühmekkanisch
+82	al-Infiṭār	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+83	al-Muṭaffifīn	early-Meccan	polemical-eschatological	polemical-eschatological	HIGH	HIGH
+84	al-Inshiqāq	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+85	al-Burūj	early-Meccan	oath-sworn-eschatological	oath-sworn-eschatological	HIGH	HIGH
+86	al-Ṭāriq	early-Meccan	oath-sworn-eschatological	oath-sworn-eschatological	HIGH	HIGH
+87	al-Aʿlā	early-Meccan	hymn-imperative	hymn-imperative	HIGH	HIGH
+88	al-Ghāshiya	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+89	al-Fajr	early-Meccan	oath-sworn-eschatological-narrative	oath-sworn-eschatological-narrative	HIGH	HIGH
+90	al-Balad	early-Meccan	oath-sworn-admonition	oath-sworn-admonition	HIGH	HIGH
+91	al-Shams	early-Meccan	oath-sworn-cosmological	oath-sworn-cosmological	HIGH	HIGH	Neuwirth paradigm Frühmekkanisch oath-cluster
+92	al-Layl	early-Meccan	oath-sworn-admonition	oath-sworn-admonition	HIGH	HIGH
+93	al-Ḍuḥā	early-Meccan	oath-sworn-address	oath-sworn-address	HIGH	HIGH
+94	al-Sharḥ	early-Meccan	address-to-prophet	address-to-prophet	HIGH	HIGH
+95	al-Tīn	early-Meccan	oath-sworn-admonition	oath-sworn-admonition	HIGH	HIGH
+96	al-ʿAlaq	early-Meccan	prophetic-call-admonition	prophetic-call-admonition	HIGH	HIGH	Traditionally the first revealed surah per Neuwirth
+97	al-Qadr	early-Meccan	hymnic-eschatological	hymnic-eschatological	HIGH	HIGH
+98	al-Bayyina	Medinan-short	polemical-legal	polemical-legal	LOW	MED	Phase-disputed
+99	al-Zalzala	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+100	al-ʿĀdiyāt	early-Meccan	oath-sworn-admonition	oath-sworn-admonition	HIGH	HIGH
+101	al-Qāriʿa	early-Meccan	eschatological-oracle	eschatological-oracle	HIGH	HIGH
+102	al-Takāthur	early-Meccan	admonition	admonition	HIGH	HIGH
+103	al-ʿAṣr	early-Meccan	oath-sworn-admonition	oath-sworn-admonition	HIGH	HIGH
+104	al-Humaza	early-Meccan	polemical-eschatological	polemical-eschatological	HIGH	HIGH
+105	al-Fīl	early-Meccan	historical-narrative	historical-narrative	HIGH	HIGH	Short historical oracle
+106	Quraysh	early-Meccan	exhortative-address	exhortative-address	MED	HIGH
+107	al-Māʿūn	early-Meccan	polemical-admonition	polemical-admonition	HIGH	HIGH
+108	al-Kawthar	early-Meccan	hymnic-address-to-prophet	hymnic-address-to-prophet	HIGH	HIGH
+109	al-Kāfirūn	early-Meccan	polemical-monotheist	polemical-monotheist	HIGH	HIGH
+110	al-Naṣr	Medinan-short	hymnic-exhortation	hymnic-exhortation	MED	HIGH	Traditionally last revealed Medinan surah
+111	al-Masad	early-Meccan	polemical-curse	polemical-curse	HIGH	HIGH
+112	al-Ikhlāṣ	early-Meccan	creedal-hymn	creedal-hymn	HIGH	HIGH	Pure creedal asyndeton
+113	al-Falaq	early-Meccan	apotropaic-hymn	apotropaic-hymn	HIGH	HIGH
+114	al-Nās	early-Meccan	apotropaic-hymn	apotropaic-hymn	HIGH	HIGH

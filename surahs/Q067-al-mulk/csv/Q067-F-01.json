@@ -1,0 +1,66 @@
+{
+  "finding_id": "Q067-F-01",
+  "prereg_sha256": "591775e3a0683d27917b40208cb2f32e5bf91afc5d92a760c26a46741e79fd3a",
+  "pre_reg_path": "/Users/grey/Downloads/quran/surahs/Q067-al-mulk/preregs/Q067-F-01-architectural-rank-cross-comparison-prereg.md",
+  "date_run": "2026-04-28",
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, QAC v0.4, basmala-counted-only-in-Q1, Hafs-Kufan, mushaf-order)",
+  "target_surahs": [
+    67,
+    36,
+    112,
+    18
+  ],
+  "per_surah": {
+    "67": {
+      "rank": 102,
+      "uas": -2.0525738348176406
+    },
+    "36": {
+      "rank": 35,
+      "uas": 0.5040129672966395
+    },
+    "112": {
+      "rank": 109,
+      "uas": -2.4621972542954467
+    },
+    "18": {
+      "rank": 46,
+      "uas": 0.04564381726798272
+    }
+  },
+  "ranks": [
+    102,
+    35,
+    109,
+    46
+  ],
+  "median_rank_of_target_surahs": 74.0,
+  "pre_reg_threshold_orthogonality_vindicated": "median_rank > 50 AND all > 30",
+  "verdict": "VINDICATED",
+  "interpretation": "Recitation-tradition surahs do NOT cluster high on UAS — orthogonality of theological-iʿjāz and architectural-iʿjāz axes confirmed.",
+  "top5_UAS_for_contrast": [
+    [
+      33,
+      9.364271626045946
+    ],
+    [
+      1,
+      8.869121012085472
+    ],
+    [
+      2,
+      7.396251009415892
+    ],
+    [
+      9,
+      6.184635716362661
+    ],
+    [
+      24,
+      4.45013102356719
+    ]
+  ],
+  "recitation_tradition_predicts_UAS": false,
+  "cross_finding_ref": "cross-finding-026-iʿjāz-architecture",
+  "h_new_ref": "h-new-840-unified-architectural-score"
+}

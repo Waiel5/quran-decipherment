@@ -1,0 +1,147 @@
+{
+  "finding_id": "Q067-F-04",
+  "prereg_sha256": "2611e9cc5ed19fab87f1c4cec0eaf5db245b9e963db5dbe35f951e18cdb76fd1",
+  "date_run": "2026-04-28",
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, QAC v0.4, basmala-counted-only-in-Q1, Hafs-Kufan)",
+  "target_root": "mlk",
+  "corpus_total_root_tokens": 49968,
+  "corpus_mlk_total": 206,
+  "q67_total_root_tokens": 208,
+  "q67_mlk_observed": 1,
+  "q67_mlk_expected_under_uniform": 0.8575088056356068,
+  "p_value_hypergeometric_X_ge_observed": 0.5772903636049195,
+  "alpha_raw": 0.05,
+  "alpha_bonferroni_for_114_surahs": 0.0004385964912280702,
+  "passes_raw_alpha": false,
+  "passes_bonferroni": false,
+  "q67_rank_by_raw_count": 54,
+  "q67_rank_by_density": 37,
+  "q67_density_per_1000": 4.807692307692308,
+  "top10_by_raw_count": [
+    {
+      "surah": 2,
+      "mlk_count": 20,
+      "total_tokens": 3884,
+      "density_per_1000": 5.149330587023687
+    },
+    {
+      "surah": 3,
+      "mlk_count": 13,
+      "total_tokens": 2274,
+      "density_per_1000": 5.716798592788039
+    },
+    {
+      "surah": 4,
+      "mlk_count": 10,
+      "total_tokens": 2462,
+      "density_per_1000": 4.061738424045491
+    },
+    {
+      "surah": 5,
+      "mlk_count": 9,
+      "total_tokens": 1798,
+      "density_per_1000": 5.005561735261401
+    },
+    {
+      "surah": 6,
+      "mlk_count": 9,
+      "total_tokens": 1946,
+      "density_per_1000": 4.6248715313463515
+    },
+    {
+      "surah": 25,
+      "mlk_count": 9,
+      "total_tokens": 608,
+      "density_per_1000": 14.802631578947368
+    },
+    {
+      "surah": 16,
+      "mlk_count": 8,
+      "total_tokens": 1184,
+      "density_per_1000": 6.756756756756757
+    },
+    {
+      "surah": 17,
+      "mlk_count": 8,
+      "total_tokens": 1043,
+      "density_per_1000": 7.670182166826462
+    },
+    {
+      "surah": 12,
+      "mlk_count": 7,
+      "total_tokens": 1126,
+      "density_per_1000": 6.216696269982238
+    },
+    {
+      "surah": 43,
+      "mlk_count": 7,
+      "total_tokens": 512,
+      "density_per_1000": 13.671875
+    }
+  ],
+  "top10_by_density": [
+    {
+      "surah": 114,
+      "mlk_count": 1,
+      "total_tokens": 16,
+      "density_per_1000": 62.5
+    },
+    {
+      "surah": 97,
+      "mlk_count": 1,
+      "total_tokens": 21,
+      "density_per_1000": 47.61904761904761
+    },
+    {
+      "surah": 1,
+      "mlk_count": 1,
+      "total_tokens": 23,
+      "density_per_1000": 43.47826086956522
+    },
+    {
+      "surah": 82,
+      "mlk_count": 1,
+      "total_tokens": 50,
+      "density_per_1000": 20.0
+    },
+    {
+      "surah": 78,
+      "mlk_count": 2,
+      "total_tokens": 131,
+      "density_per_1000": 15.267175572519083
+    },
+    {
+      "surah": 85,
+      "mlk_count": 1,
+      "total_tokens": 66,
+      "density_per_1000": 15.151515151515152
+    },
+    {
+      "surah": 25,
+      "mlk_count": 9,
+      "total_tokens": 608,
+      "density_per_1000": 14.802631578947368
+    },
+    {
+      "surah": 70,
+      "mlk_count": 2,
+      "total_tokens": 142,
+      "density_per_1000": 14.084507042253522
+    },
+    {
+      "surah": 43,
+      "mlk_count": 7,
+      "total_tokens": 512,
+      "density_per_1000": 13.671875
+    },
+    {
+      "surah": 66,
+      "mlk_count": 2,
+      "total_tokens": 171,
+      "density_per_1000": 11.695906432748536
+    }
+  ],
+  "verdict": "NULL_DIRECTIONAL",
+  "interpretation": "Q67 mlk-stem count (1) exceeds expected (0.86) but not at significance (p=0.5773).",
+  "cross_reference_to_Q024_F_01": "Q24 al-Nūr passes light-cluster Bonferroni at p<10⁻⁶ (light root family of 16 roots vs Q67 single mlk root)"
+}

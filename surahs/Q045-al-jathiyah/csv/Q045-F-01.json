@@ -1,0 +1,114 @@
+{
+  "prereg_id": "Q045-F-01",
+  "prereg_sha": "b13a44a3444b921a8ada51b5f9e4267e3e0b71e5ead4140e687621f009802a88",
+  "seed": 20260428,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "primary_test": {
+    "needle": "شريعة",
+    "hit_count": 1,
+    "hits": [
+      {
+        "surah": 45,
+        "verse": 18,
+        "text": "ثم جعلناك على شريعة من الأمر فاتبعها ولا تتبع أهواء الذين لا يعلمون"
+      }
+    ],
+    "verdict": "VINDICATED"
+  },
+  "rules_tuple_stability": {
+    "no-tashkeel": {
+      "count": 1,
+      "verses": [
+        [
+          45,
+          18
+        ]
+      ]
+    },
+    "min-tashkeel": {
+      "count": 1,
+      "verses": [
+        [
+          45,
+          18
+        ]
+      ]
+    },
+    "full-tashkeel": {
+      "count": 1,
+      "verses": [
+        [
+          45,
+          18
+        ]
+      ]
+    }
+  },
+  "root_family_inventory": {
+    "needle_substring": "شرع",
+    "hit_count": 4,
+    "hits": [
+      {
+        "surah": 5,
+        "verse": 48,
+        "text": "وأنزلنا إليك الكتاب بالحق مصدقا لما بين يديه من الكتاب ومهيمنا عليه ۖ فاحكم بينهم بما أنزل الله ۖ ولا تتبع أهواءهم عما جاءك من الحق ۚ لكل جعلنا منكم شرعة ومنهاجا ۚ ولو شاء الله لجعلكم أمة واحدة ولكن ليبلوكم في ما آتاكم ۖ فاستبقوا الخيرات ۚ إلى الله مرجعكم جميعا فينبئكم بما كنتم فيه تختلفون"
+      },
+      {
+        "surah": 7,
+        "verse": 163,
+        "text": "واسألهم عن القرية التي كانت حاضرة البحر إذ يعدون في السبت إذ تأتيهم حيتانهم يوم سبتهم شرعا ويوم لا يسبتون ۙ لا تأتيهم ۚ كذلك نبلوهم بما كانوا يفسقون"
+      },
+      {
+        "surah": 42,
+        "verse": 13,
+        "text": "۞ شرع لكم من الدين ما وصى به نوحا والذي أوحينا إليك وما وصينا به إبراهيم وموسى وعيسى ۖ أن أقيموا الدين ولا تتفرقوا فيه ۚ كبر على المشركين ما تدعوهم إليه ۚ الله يجتبي إليه من يشاء ويهدي إليه من ينيب"
+      },
+      {
+        "surah": 42,
+        "verse": 21,
+        "text": "أم لهم شركاء شرعوا لهم من الدين ما لم يأذن به الله ۚ ولولا كلمة الفصل لقضي بينهم ۗ وإن الظالمين لهم عذاب أليم"
+      }
+    ]
+  },
+  "qac_root_audit": {
+    "target_root_buckwalter": "$rE",
+    "hit_count": 5,
+    "hits": [
+      {
+        "surah": 5,
+        "verse": 48,
+        "form": "$iroEapF",
+        "tag": "N",
+        "features": "STEM|POS:N|LEM:$iroEap|ROOT:$rE|F|INDEF|ACC"
+      },
+      {
+        "surah": 7,
+        "verse": 163,
+        "form": "$ur~aEFA",
+        "tag": "N",
+        "features": "STEM|POS:N|LEM:$ur~aE|ROOT:$rE|MP|INDEF|ACC"
+      },
+      {
+        "surah": 42,
+        "verse": 13,
+        "form": "$araEa",
+        "tag": "V",
+        "features": "STEM|POS:V|PERF|LEM:$araEa|ROOT:$rE|3MS"
+      },
+      {
+        "surah": 42,
+        "verse": 21,
+        "form": "$araEu",
+        "tag": "V",
+        "features": "STEM|POS:V|PERF|LEM:$araEa|ROOT:$rE|3MP"
+      },
+      {
+        "surah": 45,
+        "verse": 18,
+        "form": "$ariyEapK",
+        "tag": "N",
+        "features": "STEM|POS:N|LEM:$ariyEap|ROOT:$rE|F|INDEF|GEN"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "H-NEW-340",
+  "prereg_sha": "dee483d2247dfaba6126840e16b782b5bd94de4ad6de7b177f9b6c624c5d868d",
+  "seed": 20260501,
+  "n_perm": 10000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.0167,
+  "cell_A_block_plus_formula": {
+    "d_obs": 0.7703513,
+    "null_mean": 0.9240474073199999,
+    "p_less": 0.0807,
+    "pct_1_67": 0.6375040000000001,
+    "pct_2_5": 0.6763483,
+    "pass": false,
+    "subset": [
+      57,
+      59,
+      61,
+      62,
+      64
+    ]
+  },
+  "cell_B_formula_no_block_pair": {
+    "d_17_87": 1.094795,
+    "null_mean": 0.9233249717047629,
+    "p_less": 0.8138153257476588
+  },
+  "cell_C_block_no_formula": {
+    "d_obs": 0.872261,
+    "null_mean": 0.92398248055,
+    "p_less": 0.2365,
+    "pct_1_67": 0.633563,
+    "pct_2_5": 0.6683814,
+    "pass": false,
+    "subset": [
+      40,
+      41,
+      43,
+      44,
+      45
+    ]
+  },
+  "verdict": "UNDERPOWERED-AT-N5 (null variance too high; directional verdict only)",
+  "descriptive_pct_A": 8.07,
+  "descriptive_pct_C": 23.65,
+  "full_musabbihat_7_pct": 19.8
+}

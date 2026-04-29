@@ -1,0 +1,167 @@
+{
+  "hypothesis_id": "H-NEW-65",
+  "title": "Fātiḥa-as-DNA — 6-axis microcosm test",
+  "rules_tuple": "(no-tashkeel; word-segment substring + first-letter-of-token; hafs-kufan; 6236 verses; basmala-counted-only-in-surah-1; mashriqi)",
+  "seed": 20260416,
+  "bonferroni_k": 6,
+  "alpha_bon": 0.008333333333333333,
+  "fatiha_word_counts": [
+    4,
+    4,
+    2,
+    3,
+    4,
+    3,
+    9
+  ],
+  "fatiha_final_letters": [
+    "م",
+    "ن",
+    "م",
+    "ن",
+    "ن",
+    "م",
+    "ن"
+  ],
+  "axes": [
+    {
+      "axis": "1_lexical_mean_log_token_freq",
+      "direction": "upper",
+      "fatiha_value": 3.0233726599491746,
+      "null_summary": {
+        "n": 6230,
+        "min": 0.5734066199354354,
+        "q01": 1.8050903488010686,
+        "q05": 2.3573570706511084,
+        "q25": 2.894845162588496,
+        "median": 3.1899293168015803,
+        "q75": 3.4285528491872617,
+        "q95": 3.7802698075435184,
+        "q99": 4.063499763773866,
+        "max": 4.6038027029334945,
+        "mean": 3.1415396903071584
+      },
+      "percentile_lower_tail": 0.34269662921348315,
+      "p_value_one_sided": 0.6574638844301766,
+      "alpha_bon": 0.008333333333333333,
+      "pass": false
+    },
+    {
+      "axis": "2_semantic_theme_coverage",
+      "direction": "upper",
+      "fatiha_value": 5,
+      "null_summary": {
+        "n": 6230,
+        "min": 0,
+        "q01": 0,
+        "q05": 0,
+        "q25": 0,
+        "median": 1,
+        "q75": 2,
+        "q95": 3,
+        "q99": 4,
+        "max": 5,
+        "mean": 1.1919743178170144
+      },
+      "percentile_lower_tail": 1.0,
+      "p_value_one_sided": 0.0014446227929373998,
+      "alpha_bon": 0.008333333333333333,
+      "pass": true
+    },
+    {
+      "axis": "3_phonetic_rhyme_LL",
+      "direction": "upper",
+      "fatiha_value": -9.479820445437802,
+      "null_summary": {
+        "n": 6230,
+        "min": -42.13584947055845,
+        "q01": -34.366744636069875,
+        "q05": -27.538512298110877,
+        "q25": -15.829514200193138,
+        "median": -9.870359903329291,
+        "q75": -6.385655504830356,
+        "q95": -4.838573034526634,
+        "q99": -4.838573034526634,
+        "max": -4.838573034526634,
+        "mean": -12.251525796012027
+      },
+      "percentile_lower_tail": 0.5330658105939005,
+      "p_value_one_sided": 0.4914927768860353,
+      "alpha_bon": 0.008333333333333333,
+      "pass": false
+    },
+    {
+      "axis": "4_structural_KS_word_count",
+      "direction": "lower",
+      "fatiha_value": 0.6786630624026391,
+      "null_summary": {
+        "n": 6230,
+        "min": 0.11715385320260241,
+        "q01": 0.19062127737560708,
+        "q05": 0.2487171263630532,
+        "q25": 0.36949051589846965,
+        "median": 0.4698982864473564,
+        "q75": 0.6079217447081462,
+        "q95": 0.755612572161642,
+        "q99": 0.8215202052597819,
+        "max": 0.9049069916613214,
+        "mean": 0.485305941534674
+      },
+      "percentile_lower_tail": 0.8470304975922953,
+      "p_value_one_sided": 0.8470304975922953,
+      "alpha_bon": 0.008333333333333333,
+      "pass": false
+    },
+    {
+      "axis": "5_compression_gzip_gain",
+      "direction": "upper",
+      "fatiha_value": 0.0005003778895520054,
+      "null_summary": {
+        "n": 1000,
+        "min": 0.0002032785176305022,
+        "q01": 0.0002501889447760027,
+        "q05": 0.0003127361809700034,
+        "q25": 0.0004899533501863386,
+        "median": 0.0007453545646451747,
+        "q75": 0.001016392588152511,
+        "q95": 0.0013812514659508482,
+        "q99": 0.002757290662218863,
+        "max": 0.003450522530035704,
+        "mean": 0.0007955956321180058
+      },
+      "percentile_lower_tail": 0.269,
+      "p_value_one_sided": 0.74,
+      "alpha_bon": 0.008333333333333333,
+      "pass": false
+    },
+    {
+      "axis": "6_letter_coverage_pharyngeal_glottal",
+      "direction": "upper",
+      "fatiha_value": 2,
+      "null_summary": {
+        "n": 6230,
+        "min": 0,
+        "q01": 1,
+        "q05": 2,
+        "q25": 3,
+        "median": 3,
+        "q75": 4,
+        "q95": 4,
+        "q99": 4,
+        "max": 4,
+        "mean": 3.0547351524879613
+      },
+      "percentile_lower_tail": 0.24574638844301766,
+      "p_value_one_sided": 0.9502407704654896,
+      "alpha_bon": 0.008333333333333333,
+      "pass": false
+    }
+  ],
+  "mw5_controls": {
+    "Q59_22_window_axis1_lexical": 3.1380390046182285,
+    "Q59_22_window_axis2_semantic": 2,
+    "Q26_1_window_axis4_KS": 0.4652020525978191
+  },
+  "n_axes_pass": 1,
+  "overall_verdict": "REFUTED-WEAK"
+}

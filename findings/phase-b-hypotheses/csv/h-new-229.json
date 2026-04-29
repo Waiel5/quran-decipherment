@@ -1,0 +1,963 @@
+{
+  "finding_id": "h-new-229",
+  "title": "Mirror-pair structure across chronologies",
+  "date": "2026-04-17",
+  "pre_reg_sha256": "a3e72d061b55fb7a5aeb7b34e7237975768339f675eac09c52e2c632c59b878f",
+  "h212_source_sha256": "3a4f7474e03e228a5ad490bf39c5a052ffe9977b4e001c19b95f8c8f2ff28a7d",
+  "seed": 20260419,
+  "bonferroni_k": 1,
+  "rules_tuple": "(113 consecutive mushaf pairs; signed Δ = rank(i+1) - rank(i); strict mirror (±0 tolerance); above-median magnitude requirement; Bell/Blachère ties resolved by mushaf-order ascending inherited from H-NEW-212 pre-reg §5; Bell surah 15 rank imputed 52)",
+  "chronologies_tested": [
+    "noldeke_1860",
+    "egyptian_1924",
+    "bell_1937",
+    "blachere_1947"
+  ],
+  "results_per_chronology": {
+    "noldeke_1860": {
+      "top6_by_abs_desc": [
+        {
+          "pair": "Q110->Q111",
+          "i_from": 110,
+          "i_to": 111,
+          "signed_delta": -108,
+          "abs_delta": 108
+        },
+        {
+          "pair": "Q97->Q98",
+          "i_from": 97,
+          "i_to": 98,
+          "signed_delta": 78,
+          "abs_delta": 78
+        },
+        {
+          "pair": "Q98->Q99",
+          "i_from": 98,
+          "i_to": 99,
+          "signed_delta": -67,
+          "abs_delta": 67
+        },
+        {
+          "pair": "Q109->Q110",
+          "i_from": 109,
+          "i_to": 110,
+          "signed_delta": 66,
+          "abs_delta": 66
+        },
+        {
+          "pair": "Q49->Q50",
+          "i_from": 49,
+          "i_to": 50,
+          "signed_delta": -58,
+          "abs_delta": 58
+        },
+        {
+          "pair": "Q56->Q57",
+          "i_from": 56,
+          "i_to": 57,
+          "signed_delta": 58,
+          "abs_delta": 58
+        }
+      ],
+      "median_abs_delta": 11,
+      "mean_abs_delta": 16.362832,
+      "Q49_to_Q50": {
+        "signed_delta": -58,
+        "abs_delta": 58
+      },
+      "Q56_to_Q57": {
+        "signed_delta": 58,
+        "abs_delta": 58
+      },
+      "primary_test": {
+        "abs_equal": true,
+        "opposite_signs": true,
+        "above_median": true,
+        "PASS": true
+      },
+      "tertiary_Q49_Q56_mirror_ge50": true,
+      "n_distinct_mirrored_abs_magnitudes": 21,
+      "largest_mirrored_abs_delta": 58,
+      "largest_mirror_pairs": [
+        [
+          "Q49->Q50",
+          -58
+        ],
+        [
+          "Q56->Q57",
+          58
+        ]
+      ],
+      "all_mirrored_magnitudes_desc_abs": [
+        {
+          "abs_delta": 58,
+          "pairs": [
+            [
+              "Q49->Q50",
+              -58
+            ],
+            [
+              "Q56->Q57",
+              58
+            ]
+          ]
+        },
+        {
+          "abs_delta": 43,
+          "pairs": [
+            [
+              "Q1->Q2",
+              43
+            ],
+            [
+              "Q22->Q23",
+              -43
+            ]
+          ]
+        },
+        {
+          "abs_delta": 21,
+          "pairs": [
+            [
+              "Q38->Q39",
+              21
+            ],
+            [
+              "Q53->Q54",
+              21
+            ],
+            [
+              "Q73->Q74",
+              -21
+            ]
+          ]
+        },
+        {
+          "abs_delta": 20,
+          "pairs": [
+            [
+              "Q68->Q69",
+              20
+            ],
+            [
+              "Q76->Q77",
+              -20
+            ]
+          ]
+        },
+        {
+          "abs_delta": 19,
+          "pairs": [
+            [
+              "Q14->Q15",
+              -19
+            ],
+            [
+              "Q44->Q45",
+              19
+            ],
+            [
+              "Q95->Q96",
+              -19
+            ]
+          ]
+        },
+        {
+          "abs_delta": 18,
+          "pairs": [
+            [
+              "Q8->Q9",
+              18
+            ],
+            [
+              "Q33->Q34",
+              -18
+            ]
+          ]
+        },
+        {
+          "abs_delta": 16,
+          "pairs": [
+            [
+              "Q15->Q16",
+              16
+            ],
+            [
+              "Q45->Q46",
+              16
+            ],
+            [
+              "Q75->Q76",
+              16
+            ],
+            [
+              "Q101->Q102",
+              -16
+            ]
+          ]
+        },
+        {
+          "abs_delta": 15,
+          "pairs": [
+            [
+              "Q50->Q51",
+              -15
+            ],
+            [
+              "Q87->Q88",
+              15
+            ],
+            [
+              "Q103->Q104",
+              -15
+            ]
+          ]
+        },
+        {
+          "abs_delta": 14,
+          "pairs": [
+            [
+              "Q4->Q5",
+              14
+            ],
+            [
+              "Q13->Q14",
+              -14
+            ],
+            [
+              "Q79->Q80",
+              -14
+            ]
+          ]
+        },
+        {
+          "abs_delta": 12,
+          "pairs": [
+            [
+              "Q26->Q27",
+              12
+            ],
+            [
+              "Q31->Q32",
+              -12
+            ],
+            [
+              "Q41->Q42",
+              12
+            ],
+            [
+              "Q47->Q48",
+              12
+            ],
+            [
+              "Q52->Q53",
+              -12
+            ],
+            [
+              "Q60->Q61",
+              -12
+            ]
+          ]
+        }
+      ]
+    },
+    "egyptian_1924": {
+      "top6_by_abs_desc": [
+        {
+          "pair": "Q110->Q111",
+          "i_from": 110,
+          "i_to": 111,
+          "signed_delta": -108,
+          "abs_delta": 108
+        },
+        {
+          "pair": "Q109->Q110",
+          "i_from": 109,
+          "i_to": 110,
+          "signed_delta": 96,
+          "abs_delta": 96
+        },
+        {
+          "pair": "Q1->Q2",
+          "i_from": 1,
+          "i_to": 2,
+          "signed_delta": 82,
+          "abs_delta": 82
+        },
+        {
+          "pair": "Q99->Q100",
+          "i_from": 99,
+          "i_to": 100,
+          "signed_delta": -79,
+          "abs_delta": 79
+        },
+        {
+          "pair": "Q68->Q69",
+          "i_from": 68,
+          "i_to": 69,
+          "signed_delta": 76,
+          "abs_delta": 76
+        },
+        {
+          "pair": "Q67->Q68",
+          "i_from": 67,
+          "i_to": 68,
+          "signed_delta": -75,
+          "abs_delta": 75
+        }
+      ],
+      "median_abs_delta": 16,
+      "mean_abs_delta": 24.460177,
+      "Q49_to_Q50": {
+        "signed_delta": -72,
+        "abs_delta": 72
+      },
+      "Q56_to_Q57": {
+        "signed_delta": 48,
+        "abs_delta": 48
+      },
+      "primary_test": {
+        "abs_equal": false,
+        "opposite_signs": true,
+        "above_median": true,
+        "PASS": false
+      },
+      "tertiary_Q49_Q56_mirror_ge50": false,
+      "n_distinct_mirrored_abs_magnitudes": 21,
+      "largest_mirrored_abs_delta": 75,
+      "largest_mirror_pairs": [
+        [
+          "Q67->Q68",
+          -75
+        ],
+        [
+          "Q81->Q82",
+          75
+        ],
+        [
+          "Q97->Q98",
+          75
+        ]
+      ],
+      "all_mirrored_magnitudes_desc_abs": [
+        {
+          "abs_delta": 75,
+          "pairs": [
+            [
+              "Q67->Q68",
+              -75
+            ],
+            [
+              "Q81->Q82",
+              75
+            ],
+            [
+              "Q97->Q98",
+              75
+            ]
+          ]
+        },
+        {
+          "abs_delta": 60,
+          "pairs": [
+            [
+              "Q24->Q25",
+              -60
+            ],
+            [
+              "Q54->Q55",
+              60
+            ],
+            [
+              "Q87->Q88",
+              60
+            ]
+          ]
+        },
+        {
+          "abs_delta": 30,
+          "pairs": [
+            [
+              "Q21->Q22",
+              30
+            ],
+            [
+              "Q66->Q67",
+              -30
+            ]
+          ]
+        },
+        {
+          "abs_delta": 29,
+          "pairs": [
+            [
+              "Q22->Q23",
+              -29
+            ],
+            [
+              "Q46->Q47",
+              29
+            ]
+          ]
+        },
+        {
+          "abs_delta": 28,
+          "pairs": [
+            [
+              "Q20->Q21",
+              28
+            ],
+            [
+              "Q23->Q24",
+              28
+            ],
+            [
+              "Q86->Q87",
+              -28
+            ]
+          ]
+        },
+        {
+          "abs_delta": 27,
+          "pairs": [
+            [
+              "Q30->Q31",
+              -27
+            ],
+            [
+              "Q74->Q75",
+              27
+            ],
+            [
+              "Q95->Q96",
+              -27
+            ]
+          ]
+        },
+        {
+          "abs_delta": 25,
+          "pairs": [
+            [
+              "Q8->Q9",
+              25
+            ],
+            [
+              "Q18->Q19",
+              -25
+            ],
+            [
+              "Q89->Q90",
+              25
+            ]
+          ]
+        },
+        {
+          "abs_delta": 24,
+          "pairs": [
+            [
+              "Q13->Q14",
+              -24
+            ],
+            [
+              "Q96->Q97",
+              24
+            ]
+          ]
+        },
+        {
+          "abs_delta": 20,
+          "pairs": [
+            [
+              "Q4->Q5",
+              20
+            ],
+            [
+              "Q16->Q17",
+              -20
+            ]
+          ]
+        },
+        {
+          "abs_delta": 18,
+          "pairs": [
+            [
+              "Q14->Q15",
+              -18
+            ],
+            [
+              "Q31->Q32",
+              18
+            ],
+            [
+              "Q37->Q38",
+              -18
+            ],
+            [
+              "Q60->Q61",
+              18
+            ]
+          ]
+        }
+      ]
+    },
+    "bell_1937": {
+      "top6_by_abs_desc": [
+        {
+          "pair": "Q98->Q99",
+          "i_from": 98,
+          "i_to": 99,
+          "signed_delta": -81,
+          "abs_delta": 81
+        },
+        {
+          "pair": "Q56->Q57",
+          "i_from": 56,
+          "i_to": 57,
+          "signed_delta": 76,
+          "abs_delta": 76
+        },
+        {
+          "pair": "Q110->Q111",
+          "i_from": 110,
+          "i_to": 111,
+          "signed_delta": -75,
+          "abs_delta": 75
+        },
+        {
+          "pair": "Q109->Q110",
+          "i_from": 109,
+          "i_to": 110,
+          "signed_delta": 67,
+          "abs_delta": 67
+        },
+        {
+          "pair": "Q97->Q98",
+          "i_from": 97,
+          "i_to": 98,
+          "signed_delta": 63,
+          "abs_delta": 63
+        },
+        {
+          "pair": "Q49->Q50",
+          "i_from": 49,
+          "i_to": 50,
+          "signed_delta": -57,
+          "abs_delta": 57
+        }
+      ],
+      "median_abs_delta": 10,
+      "mean_abs_delta": 16.725664,
+      "Q49_to_Q50": {
+        "signed_delta": -57,
+        "abs_delta": 57
+      },
+      "Q56_to_Q57": {
+        "signed_delta": 76,
+        "abs_delta": 76
+      },
+      "primary_test": {
+        "abs_equal": false,
+        "opposite_signs": true,
+        "above_median": true,
+        "PASS": false
+      },
+      "tertiary_Q49_Q56_mirror_ge50": false,
+      "n_distinct_mirrored_abs_magnitudes": 19,
+      "largest_mirrored_abs_delta": 33,
+      "largest_mirror_pairs": [
+        [
+          "Q32->Q33",
+          33
+        ],
+        [
+          "Q85->Q86",
+          -33
+        ]
+      ],
+      "all_mirrored_magnitudes_desc_abs": [
+        {
+          "abs_delta": 33,
+          "pairs": [
+            [
+              "Q32->Q33",
+              33
+            ],
+            [
+              "Q85->Q86",
+              -33
+            ]
+          ]
+        },
+        {
+          "abs_delta": 32,
+          "pairs": [
+            [
+              "Q90->Q91",
+              -32
+            ],
+            [
+              "Q103->Q104",
+              32
+            ]
+          ]
+        },
+        {
+          "abs_delta": 29,
+          "pairs": [
+            [
+              "Q9->Q10",
+              -29
+            ],
+            [
+              "Q107->Q108",
+              29
+            ]
+          ]
+        },
+        {
+          "abs_delta": 25,
+          "pairs": [
+            [
+              "Q5->Q6",
+              -25
+            ],
+            [
+              "Q14->Q15",
+              -25
+            ],
+            [
+              "Q74->Q75",
+              25
+            ],
+            [
+              "Q102->Q103",
+              -25
+            ]
+          ]
+        },
+        {
+          "abs_delta": 21,
+          "pairs": [
+            [
+              "Q54->Q55",
+              -21
+            ],
+            [
+              "Q70->Q71",
+              21
+            ]
+          ]
+        },
+        {
+          "abs_delta": 18,
+          "pairs": [
+            [
+              "Q8->Q9",
+              18
+            ],
+            [
+              "Q33->Q34",
+              -18
+            ],
+            [
+              "Q44->Q45",
+              18
+            ]
+          ]
+        },
+        {
+          "abs_delta": 16,
+          "pairs": [
+            [
+              "Q45->Q46",
+              16
+            ],
+            [
+              "Q83->Q84",
+              -16
+            ]
+          ]
+        },
+        {
+          "abs_delta": 14,
+          "pairs": [
+            [
+              "Q4->Q5",
+              14
+            ],
+            [
+              "Q67->Q68",
+              -14
+            ]
+          ]
+        },
+        {
+          "abs_delta": 12,
+          "pairs": [
+            [
+              "Q12->Q13",
+              12
+            ],
+            [
+              "Q27->Q28",
+              12
+            ],
+            [
+              "Q47->Q48",
+              12
+            ],
+            [
+              "Q60->Q61",
+              -12
+            ]
+          ]
+        },
+        {
+          "abs_delta": 11,
+          "pairs": [
+            [
+              "Q18->Q19",
+              -11
+            ],
+            [
+              "Q26->Q27",
+              11
+            ],
+            [
+              "Q63->Q64",
+              -11
+            ]
+          ]
+        }
+      ]
+    },
+    "blachere_1947": {
+      "top6_by_abs_desc": [
+        {
+          "pair": "Q110->Q111",
+          "i_from": 110,
+          "i_to": 111,
+          "signed_delta": -108,
+          "abs_delta": 108
+        },
+        {
+          "pair": "Q109->Q110",
+          "i_from": 109,
+          "i_to": 110,
+          "signed_delta": 97,
+          "abs_delta": 97
+        },
+        {
+          "pair": "Q1->Q2",
+          "i_from": 1,
+          "i_to": 2,
+          "signed_delta": 82,
+          "abs_delta": 82
+        },
+        {
+          "pair": "Q99->Q100",
+          "i_from": 99,
+          "i_to": 100,
+          "signed_delta": -80,
+          "abs_delta": 80
+        },
+        {
+          "pair": "Q68->Q69",
+          "i_from": 68,
+          "i_to": 69,
+          "signed_delta": 76,
+          "abs_delta": 76
+        },
+        {
+          "pair": "Q67->Q68",
+          "i_from": 67,
+          "i_to": 68,
+          "signed_delta": -75,
+          "abs_delta": 75
+        }
+      ],
+      "median_abs_delta": 17,
+      "mean_abs_delta": 24.486726,
+      "Q49_to_Q50": {
+        "signed_delta": -72,
+        "abs_delta": 72
+      },
+      "Q56_to_Q57": {
+        "signed_delta": 48,
+        "abs_delta": 48
+      },
+      "primary_test": {
+        "abs_equal": false,
+        "opposite_signs": true,
+        "above_median": true,
+        "PASS": false
+      },
+      "tertiary_Q49_Q56_mirror_ge50": false,
+      "n_distinct_mirrored_abs_magnitudes": 22,
+      "largest_mirrored_abs_delta": 75,
+      "largest_mirror_pairs": [
+        [
+          "Q67->Q68",
+          -75
+        ],
+        [
+          "Q97->Q98",
+          75
+        ]
+      ],
+      "all_mirrored_magnitudes_desc_abs": [
+        {
+          "abs_delta": 75,
+          "pairs": [
+            [
+              "Q67->Q68",
+              -75
+            ],
+            [
+              "Q97->Q98",
+              75
+            ]
+          ]
+        },
+        {
+          "abs_delta": 60,
+          "pairs": [
+            [
+              "Q24->Q25",
+              -60
+            ],
+            [
+              "Q54->Q55",
+              60
+            ]
+          ]
+        },
+        {
+          "abs_delta": 59,
+          "pairs": [
+            [
+              "Q80->Q81",
+              59
+            ],
+            [
+              "Q83->Q84",
+              -59
+            ],
+            [
+              "Q88->Q89",
+              -59
+            ]
+          ]
+        },
+        {
+          "abs_delta": 30,
+          "pairs": [
+            [
+              "Q21->Q22",
+              30
+            ],
+            [
+              "Q66->Q67",
+              -30
+            ]
+          ]
+        },
+        {
+          "abs_delta": 29,
+          "pairs": [
+            [
+              "Q22->Q23",
+              -29
+            ],
+            [
+              "Q46->Q47",
+              29
+            ],
+            [
+              "Q86->Q87",
+              -29
+            ]
+          ]
+        },
+        {
+          "abs_delta": 27,
+          "pairs": [
+            [
+              "Q74->Q75",
+              27
+            ],
+            [
+              "Q95->Q96",
+              -27
+            ]
+          ]
+        },
+        {
+          "abs_delta": 26,
+          "pairs": [
+            [
+              "Q30->Q31",
+              -26
+            ],
+            [
+              "Q89->Q90",
+              26
+            ]
+          ]
+        },
+        {
+          "abs_delta": 25,
+          "pairs": [
+            [
+              "Q8->Q9",
+              25
+            ],
+            [
+              "Q18->Q19",
+              -25
+            ]
+          ]
+        },
+        {
+          "abs_delta": 24,
+          "pairs": [
+            [
+              "Q13->Q14",
+              -24
+            ],
+            [
+              "Q96->Q97",
+              24
+            ]
+          ]
+        },
+        {
+          "abs_delta": 20,
+          "pairs": [
+            [
+              "Q4->Q5",
+              20
+            ],
+            [
+              "Q16->Q17",
+              -20
+            ],
+            [
+              "Q103->Q104",
+              20
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "chronologies_passing_primary": [
+    "noldeke_1860"
+  ],
+  "verdict": "NOLDEKE_ARTIFACT — mirror passes only under Nöldeke; not a robust architectural feature of the mushaf under alternative chronologies.",
+  "references": {
+    "parent_finding_h_new_142": "findings/phase-b-hypotheses/h-new-142-universal-hinges-chrono-rhetorical.md",
+    "parent_finding_h_new_158": "findings/phase-b-hypotheses/h-new-158-mirror-pair-uniqueness.md",
+    "inherited_chronology_script_h_new_212": "scripts/h_new_212_alt_chronology_fisher_rao.py"
+  }
+}

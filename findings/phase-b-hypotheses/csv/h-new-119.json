@@ -1,0 +1,518 @@
+{
+  "id": "H-NEW-119",
+  "seed": 20260417,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.0167,
+  "cell_a": {
+    "C1": {
+      "description": "seven heavens (strict phrase سبع + سماء/سماوات adjacency)",
+      "count_strict": 5,
+      "count_extended_with_shidad_tiraaq_tibaq": 8,
+      "classical_claim": "7",
+      "strict_hits": [
+        [
+          2,
+          29,
+          "سبع سماو"
+        ],
+        [
+          41,
+          12,
+          "سبع سماو"
+        ],
+        [
+          65,
+          12,
+          "سبع سماو"
+        ],
+        [
+          67,
+          3,
+          "سبع سماو"
+        ],
+        [
+          71,
+          15,
+          "سبع سماو"
+        ]
+      ],
+      "extended_hits": [
+        [
+          2,
+          29,
+          "سبع سماو"
+        ],
+        [
+          12,
+          48,
+          "سبع شداد"
+        ],
+        [
+          23,
+          17,
+          "سبع طرائق"
+        ],
+        [
+          41,
+          12,
+          "سبع سماو"
+        ],
+        [
+          65,
+          12,
+          "سبع سماو"
+        ],
+        [
+          67,
+          3,
+          "سبع سماو"
+        ],
+        [
+          71,
+          15,
+          "سبع سماو"
+        ],
+        [
+          78,
+          12,
+          "سبعا شداد"
+        ]
+      ],
+      "pass_strict": false,
+      "pass_extended": false
+    },
+    "C2": {
+      "description": "al-Fātiḥa verse count (Hafs-Kūfan)",
+      "count": 7,
+      "classical_claim": 7,
+      "pass": true
+    },
+    "C3": {
+      "description": "7 long surahs — classical Q 2,3,4,5,6,7,9 (H-NEW-67 confirmed)",
+      "verse_counts": {
+        "2": 286,
+        "3": 200,
+        "4": 176,
+        "5": 120,
+        "6": 165,
+        "7": 206,
+        "9": 129
+      },
+      "pass": true
+    },
+    "C4": {
+      "description": "Q 91 oath-opener contiguous cluster length",
+      "count": 7,
+      "classical_claim": 7,
+      "pass": true
+    },
+    "C5": {
+      "description": "Musabbiḥāt — surahs whose v1 starts with SBḤ root",
+      "count": 7,
+      "classical_claim": 7,
+      "members": [
+        {
+          "id": 17,
+          "name": "الإسراء",
+          "v1_head": "سبحان الذي أسرى بعبده ليلا من المسجد الحرام إلى المسجد الأقص"
+        },
+        {
+          "id": 57,
+          "name": "الحديد",
+          "v1_head": "سبح لله ما في السماوات والأرض ۖ وهو العزيز الحكيم"
+        },
+        {
+          "id": 59,
+          "name": "الحشر",
+          "v1_head": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم"
+        },
+        {
+          "id": 61,
+          "name": "الصف",
+          "v1_head": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم"
+        },
+        {
+          "id": 62,
+          "name": "الجمعة",
+          "v1_head": "يسبح لله ما في السماوات وما في الأرض الملك القدوس العزيز الح"
+        },
+        {
+          "id": 64,
+          "name": "التغابن",
+          "v1_head": "يسبح لله ما في السماوات وما في الأرض ۖ له الملك وله الحمد ۖ "
+        },
+        {
+          "id": 87,
+          "name": "الأعلى",
+          "v1_head": "سبح اسم ربك الأعلى"
+        }
+      ],
+      "pass": true
+    },
+    "C6": {
+      "description": "7 prophets named in Q 7 (Adam, Nūḥ, Hūd, Ṣāliḥ, Lūṭ, Shuʿayb, Mūsā)",
+      "present_count": 7,
+      "per_prophet": {
+        "Adam": {
+          "count": 6,
+          "first_verse": 19
+        },
+        "Nuh": {
+          "count": 2,
+          "first_verse": 59
+        },
+        "Hud": {
+          "count": 1,
+          "first_verse": 65
+        },
+        "Salih": {
+          "count": 5,
+          "first_verse": 73
+        },
+        "Lut": {
+          "count": 1,
+          "first_verse": 80
+        },
+        "Shuayb": {
+          "count": 4,
+          "first_verse": 85
+        },
+        "Musa": {
+          "count": 19,
+          "first_verse": 103
+        }
+      },
+      "pass": true
+    },
+    "C7": {
+      "description": "Total سبع-root cardinality token count in Quran",
+      "count": 22,
+      "pass_window": [
+        7,
+        14,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "pass": true
+    },
+    "pass_bool": {
+      "C1": false,
+      "C2": true,
+      "C3": true,
+      "C4": true,
+      "C5": true,
+      "C6": true,
+      "C7": true
+    },
+    "total_passed": 6,
+    "primary_direction_fires": true
+  },
+  "cell_c_specificity": {
+    "3": {
+      "count": 19,
+      "sample_hits": [
+        [
+          2,
+          196,
+          "ثلاثة"
+        ],
+        [
+          2,
+          228,
+          "ثلاثة"
+        ],
+        [
+          3,
+          41,
+          "ثلاثة"
+        ],
+        [
+          4,
+          3,
+          "وثلاث"
+        ],
+        [
+          4,
+          171,
+          "ثلاثة"
+        ],
+        [
+          5,
+          73,
+          "ثلاثة"
+        ],
+        [
+          5,
+          89,
+          "ثلاثة"
+        ],
+        [
+          11,
+          65,
+          "ثلاثة"
+        ],
+        [
+          18,
+          22,
+          "ثلاثة"
+        ],
+        [
+          18,
+          25,
+          "ثلاث"
+        ]
+      ]
+    },
+    "5": {
+      "count": 3,
+      "sample_hits": [
+        [
+          8,
+          41,
+          "خمسه"
+        ],
+        [
+          18,
+          22,
+          "خمسة"
+        ],
+        [
+          58,
+          7,
+          "خمسة"
+        ]
+      ]
+    },
+    "6": {
+      "count": 7,
+      "sample_hits": [
+        [
+          7,
+          54,
+          "ستة"
+        ],
+        [
+          10,
+          3,
+          "ستة"
+        ],
+        [
+          11,
+          7,
+          "ستة"
+        ],
+        [
+          25,
+          59,
+          "ستة"
+        ],
+        [
+          32,
+          4,
+          "ستة"
+        ],
+        [
+          50,
+          38,
+          "ستة"
+        ],
+        [
+          57,
+          4,
+          "ستة"
+        ]
+      ]
+    },
+    "7": {
+      "count": 22,
+      "sample_hits": [
+        [
+          2,
+          29,
+          "سبع"
+        ],
+        [
+          2,
+          196,
+          "وسبعة"
+        ],
+        [
+          2,
+          261,
+          "سبع"
+        ],
+        [
+          12,
+          43,
+          "سبع"
+        ],
+        [
+          12,
+          43,
+          "سبع"
+        ],
+        [
+          12,
+          43,
+          "وسبع"
+        ],
+        [
+          12,
+          46,
+          "سبع"
+        ],
+        [
+          12,
+          46,
+          "سبع"
+        ],
+        [
+          12,
+          46,
+          "وسبع"
+        ],
+        [
+          12,
+          47,
+          "سبع"
+        ]
+      ]
+    },
+    "8": {
+      "count": 5,
+      "sample_hits": [
+        [
+          6,
+          143,
+          "ثمانية"
+        ],
+        [
+          28,
+          27,
+          "ثماني"
+        ],
+        [
+          39,
+          6,
+          "ثمانية"
+        ],
+        [
+          69,
+          7,
+          "وثمانية"
+        ],
+        [
+          69,
+          17,
+          "ثمانية"
+        ]
+      ]
+    },
+    "_ranked": [
+      [
+        7,
+        22
+      ],
+      [
+        3,
+        19
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "_seven_is_max": true
+  },
+  "cell_c_permutation": {
+    "observed_counts": {
+      "3": 19,
+      "5": 3,
+      "6": 7,
+      "7": 22,
+      "8": 5
+    },
+    "observed_seven_is_max": true,
+    "n_perm": 5000,
+    "p_null_7_is_max": 0.231,
+    "p_null_7_strict_max": 0.1632,
+    "note": "under uniform-assignment null over {3,5,6,7,8}; tests specificity of 7"
+  },
+  "cell_bd_baseline": {
+    "3": {
+      "quran_count": 19,
+      "quran_rate_per_10k": 2.307,
+      "bukhari_count": 508,
+      "bukhari_rate_per_10k": 9.653,
+      "quran_enriched_vs_bukhari": false,
+      "ratio": 0.239
+    },
+    "5": {
+      "quran_count": 3,
+      "quran_rate_per_10k": 0.364,
+      "bukhari_count": 163,
+      "bukhari_rate_per_10k": 3.097,
+      "quran_enriched_vs_bukhari": false,
+      "ratio": 0.118
+    },
+    "6": {
+      "quran_count": 7,
+      "quran_rate_per_10k": 0.85,
+      "bukhari_count": 60,
+      "bukhari_rate_per_10k": 1.14,
+      "quran_enriched_vs_bukhari": false,
+      "ratio": 0.745
+    },
+    "7": {
+      "quran_count": 22,
+      "quran_rate_per_10k": 2.671,
+      "bukhari_count": 137,
+      "bukhari_rate_per_10k": 2.603,
+      "quran_enriched_vs_bukhari": true,
+      "ratio": 1.026
+    },
+    "8": {
+      "quran_count": 5,
+      "quran_rate_per_10k": 0.607,
+      "bukhari_count": 24,
+      "bukhari_rate_per_10k": 0.456,
+      "quran_enriched_vs_bukhari": true,
+      "ratio": 1.331
+    },
+    "seven_heaven_phrase": {
+      "quran": 5,
+      "bukhari": 2,
+      "quran_rate_per_10k": 0.607,
+      "bukhari_rate_per_10k": 0.038
+    },
+    "permutation": {
+      "observed_quran_seven_count": 22,
+      "bootstrap_n": 2000,
+      "bootstrap_mean": 20.91,
+      "bootstrap_max": 31,
+      "bootstrap_min": 8,
+      "p_quran_greater": 0.56,
+      "p_quran_less": 0.492,
+      "note": "one-sided p = fraction of bootstrap slices with >= observed count"
+    },
+    "permutation_strict_seven_heaven": {
+      "observed_quran": 5,
+      "bootstrap_mean": 0.363,
+      "bootstrap_max": 1,
+      "p_quran_greater_or_equal": 0.0
+    },
+    "n_tokens_quran": 82375,
+    "n_tokens_bukhari": 526250
+  }
+}

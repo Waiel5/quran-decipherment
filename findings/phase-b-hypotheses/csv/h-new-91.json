@@ -1,0 +1,600 @@
+{
+  "finding_id": "h-new-91",
+  "pre_reg_sha256": "d3f1fcce6fd0c750b9b21525acd95034c911dfa50d7ece153df41e5db3bfb60a",
+  "seed": 20260415,
+  "rules_tuple": "(no-tashkeel, STEM-root tokens, QAC-roots v0.4, basmala-counted-only-in-surah-1, mushaf order, Hafs-Kufan)",
+  "date": "2026-04-15",
+  "n_surahs_ranked": 114,
+  "n_global_roots": 1642,
+  "total_root_tokens": 49968,
+  "tests": {
+    "T1_heterogeneity": {
+      "observed_sum_z2": 862.257,
+      "null_mean_sum_z2": 112.755788,
+      "null_sd_sum_z2": 17.00637,
+      "n_perm_ge_obs": 0,
+      "p_perm": 0.0001,
+      "pass": true
+    },
+    "T2_length_confound": {
+      "spearman_rho_geom_mean_freq_vs_log_N": 0.553678,
+      "length_confounded": true
+    },
+    "T3_q26_al_shuara": {
+      "q26_geom_mean_freq": 179.623866,
+      "q26_n_root_tokens": 821,
+      "q26_rank_ascending": 97,
+      "q26_total_surahs": 114,
+      "q26_length_quintile": 4,
+      "q26_resid_rank_in_quintile": 22,
+      "q26_quintile_size": 26,
+      "verdict_raw": "FAIL (Q26 above median)",
+      "pass": false
+    },
+    "T4_hapax_final_xref": {
+      "spearman_rho_rare5_vs_hapax_final_rate": 0.668372,
+      "n_surahs_with_hapax": 87,
+      "p_perm_two_sided": 0.0001,
+      "pass": true
+    },
+    "T5_genre_anova": {
+      "geom_mean_freq": {
+        "F_obs": 12.981036,
+        "p_perm": 0.0001,
+        "means_per_genre": {
+          "hymn": 101.297355,
+          "legal": 169.942103,
+          "narrative": 141.062615,
+          "polemic": 164.667596,
+          "eschatological": 79.93528
+        },
+        "n_per_genre": {
+          "hymn": 6,
+          "legal": 10,
+          "narrative": 60,
+          "polemic": 6,
+          "eschatological": 32
+        },
+        "pass": true
+      },
+      "rare_density_5": {
+        "F_obs": 11.219493,
+        "p_perm": 0.0001,
+        "means_per_genre": {
+          "hymn": 0.148469,
+          "legal": 0.026694,
+          "narrative": 0.04673,
+          "polemic": 0.037831,
+          "eschatological": 0.134415
+        },
+        "n_per_genre": {
+          "hymn": 6,
+          "legal": 10,
+          "narrative": 60,
+          "polemic": 6,
+          "eschatological": 32
+        },
+        "pass": true
+      },
+      "pass": true
+    }
+  },
+  "composite_verdict": "PARTIAL-PASS",
+  "n_tests_pass": 3,
+  "top15_rare_root_density": [
+    {
+      "sid": 111,
+      "name": "Al-Masad",
+      "genre": "eschatological",
+      "geom_mean_freq": 15.315975,
+      "rare_density_5": 0.411765,
+      "hapax_density": 0.117647,
+      "n_root_tokens": 17,
+      "length_quintile": 0,
+      "null_z": -2.088993
+    },
+    {
+      "sid": 108,
+      "name": "Al-Kawthar",
+      "genre": "eschatological",
+      "geom_mean_freq": 18.27395,
+      "rare_density_5": 0.428571,
+      "hapax_density": 0.285714,
+      "n_root_tokens": 7,
+      "length_quintile": 0,
+      "null_z": -1.360854
+    },
+    {
+      "sid": 113,
+      "name": "Al-Falaq",
+      "genre": "hymn",
+      "geom_mean_freq": 19.31065,
+      "rare_density_5": 0.4,
+      "hapax_density": 0.133333,
+      "n_root_tokens": 15,
+      "length_quintile": 0,
+      "null_z": -1.991716
+    },
+    {
+      "sid": 100,
+      "name": "Al-'Adiyat",
+      "genre": "eschatological",
+      "geom_mean_freq": 28.308437,
+      "rare_density_5": 0.333333,
+      "hapax_density": 0.208333,
+      "n_root_tokens": 24,
+      "length_quintile": 0,
+      "null_z": -2.317534
+    },
+    {
+      "sid": 101,
+      "name": "Al-Qari'ah",
+      "genre": "eschatological",
+      "geom_mean_freq": 29.099365,
+      "rare_density_5": 0.208333,
+      "hapax_density": 0.0,
+      "n_root_tokens": 24,
+      "length_quintile": 0,
+      "null_z": -2.396327
+    },
+    {
+      "sid": 94,
+      "name": "Ash-Sharh",
+      "genre": "hymn",
+      "geom_mean_freq": 29.358853,
+      "rare_density_5": 0.0625,
+      "hapax_density": 0.0,
+      "n_root_tokens": 16,
+      "length_quintile": 0,
+      "null_z": -1.920019
+    },
+    {
+      "sid": 107,
+      "name": "Al-Ma'un",
+      "genre": "eschatological",
+      "geom_mean_freq": 30.827459,
+      "rare_density_5": 0.285714,
+      "hapax_density": 0.071429,
+      "n_root_tokens": 14,
+      "length_quintile": 0,
+      "null_z": -1.734228
+    },
+    {
+      "sid": 106,
+      "name": "Quraysh",
+      "genre": "eschatological",
+      "geom_mean_freq": 31.613123,
+      "rare_density_5": 0.333333,
+      "hapax_density": 0.166667,
+      "n_root_tokens": 12,
+      "length_quintile": 0,
+      "null_z": -1.680442
+    },
+    {
+      "sid": 104,
+      "name": "Al-Humazah",
+      "genre": "eschatological",
+      "geom_mean_freq": 31.832362,
+      "rare_density_5": 0.142857,
+      "hapax_density": 0.0,
+      "n_root_tokens": 21,
+      "length_quintile": 0,
+      "null_z": -2.100359
+    },
+    {
+      "sid": 80,
+      "name": "'Abasa",
+      "genre": "eschatological",
+      "geom_mean_freq": 47.53588,
+      "rare_density_5": 0.113636,
+      "hapax_density": 0.034091,
+      "n_root_tokens": 88,
+      "length_quintile": 1,
+      "null_z": -3.76137
+    },
+    {
+      "sid": 90,
+      "name": "Al-Balad",
+      "genre": "eschatological",
+      "geom_mean_freq": 50.123728,
+      "rare_density_5": 0.173077,
+      "hapax_density": 0.076923,
+      "n_root_tokens": 52,
+      "length_quintile": 1,
+      "null_z": -2.999403
+    },
+    {
+      "sid": 105,
+      "name": "Al-Fil",
+      "genre": "eschatological",
+      "geom_mean_freq": 51.157123,
+      "rare_density_5": 0.166667,
+      "hapax_density": 0.055556,
+      "n_root_tokens": 18,
+      "length_quintile": 0,
+      "null_z": -1.748493
+    },
+    {
+      "sid": 91,
+      "name": "Ash-Shams",
+      "genre": "eschatological",
+      "geom_mean_freq": 53.595402,
+      "rare_density_5": 0.153846,
+      "hapax_density": 0.102564,
+      "n_root_tokens": 39,
+      "length_quintile": 0,
+      "null_z": -2.401229
+    },
+    {
+      "sid": 81,
+      "name": "At-Takwir",
+      "genre": "eschatological",
+      "geom_mean_freq": 53.884665,
+      "rare_density_5": 0.181818,
+      "hapax_density": 0.106061,
+      "n_root_tokens": 66,
+      "length_quintile": 1,
+      "null_z": -3.200844
+    },
+    {
+      "sid": 86,
+      "name": "At-Tariq",
+      "genre": "eschatological",
+      "geom_mean_freq": 55.240285,
+      "rare_density_5": 0.097561,
+      "hapax_density": 0.04878,
+      "n_root_tokens": 41,
+      "length_quintile": 1,
+      "null_z": -2.457989
+    }
+  ],
+  "top15_common_only": [
+    {
+      "sid": 109,
+      "name": "Al-Kafirun",
+      "genre": "eschatological",
+      "geom_mean_freq": 286.170412,
+      "common_only_density": 1.0,
+      "n_root_tokens": 12,
+      "length_quintile": 0,
+      "null_z": 1.352833
+    },
+    {
+      "sid": 1,
+      "name": "Al-Fatihah",
+      "genre": "hymn",
+      "geom_mean_freq": 230.944171,
+      "common_only_density": 0.782609,
+      "n_root_tokens": 23,
+      "length_quintile": 0,
+      "null_z": 1.352571
+    },
+    {
+      "sid": 64,
+      "name": "At-Taghabun",
+      "genre": "narrative",
+      "geom_mean_freq": 229.039644,
+      "common_only_density": 0.725146,
+      "n_root_tokens": 171,
+      "length_quintile": 2,
+      "null_z": 4.079731
+    },
+    {
+      "sid": 61,
+      "name": "As-Saf",
+      "genre": "narrative",
+      "geom_mean_freq": 223.838479,
+      "common_only_density": 0.731034,
+      "n_root_tokens": 145,
+      "length_quintile": 2,
+      "null_z": 3.30993
+    },
+    {
+      "sid": 45,
+      "name": "Al-Jathiyah",
+      "genre": "narrative",
+      "geom_mean_freq": 219.863972,
+      "common_only_density": 0.7625,
+      "n_root_tokens": 320,
+      "length_quintile": 3,
+      "null_z": 4.979689
+    },
+    {
+      "sid": 29,
+      "name": "Al-'Ankabut",
+      "genre": "narrative",
+      "geom_mean_freq": 213.177428,
+      "common_only_density": 0.706539,
+      "n_root_tokens": 627,
+      "length_quintile": 3,
+      "null_z": 6.143615
+    },
+    {
+      "sid": 10,
+      "name": "Yunus",
+      "genre": "narrative",
+      "geom_mean_freq": 209.583668,
+      "common_only_density": 0.701506,
+      "n_root_tokens": 1129,
+      "length_quintile": 4,
+      "null_z": 7.992452
+    },
+    {
+      "sid": 63,
+      "name": "Al-Munafiqun",
+      "genre": "narrative",
+      "geom_mean_freq": 206.571936,
+      "common_only_density": 0.735043,
+      "n_root_tokens": 117,
+      "length_quintile": 1,
+      "null_z": 2.244806
+    },
+    {
+      "sid": 110,
+      "name": "An-Nasr",
+      "genre": "eschatological",
+      "geom_mean_freq": 206.54209,
+      "common_only_density": 0.6875,
+      "n_root_tokens": 16,
+      "length_quintile": 0,
+      "null_z": 0.69167
+    },
+    {
+      "sid": 3,
+      "name": "Ali 'Imran",
+      "genre": "legal",
+      "geom_mean_freq": 195.328465,
+      "common_only_density": 0.705365,
+      "n_root_tokens": 2274,
+      "length_quintile": 4,
+      "null_z": 8.522954
+    },
+    {
+      "sid": 40,
+      "name": "Ghafir",
+      "genre": "narrative",
+      "geom_mean_freq": 194.03428,
+      "common_only_density": 0.704315,
+      "n_root_tokens": 788,
+      "length_quintile": 4,
+      "null_z": 4.865304
+    },
+    {
+      "sid": 49,
+      "name": "Al-Hujurat",
+      "genre": "polemic",
+      "geom_mean_freq": 191.759309,
+      "common_only_density": 0.67094,
+      "n_root_tokens": 234,
+      "length_quintile": 2,
+      "null_z": 2.475387
+    },
+    {
+      "sid": 46,
+      "name": "Al-Ahqaf",
+      "genre": "narrative",
+      "geom_mean_freq": 191.386519,
+      "common_only_density": 0.706173,
+      "n_root_tokens": 405,
+      "length_quintile": 3,
+      "null_z": 3.427136
+    },
+    {
+      "sid": 39,
+      "name": "Az-Zumar",
+      "genre": "narrative",
+      "geom_mean_freq": 190.315708,
+      "common_only_density": 0.699092,
+      "n_root_tokens": 771,
+      "length_quintile": 4,
+      "null_z": 4.642513
+    },
+    {
+      "sid": 60,
+      "name": "Al-Mumtahanah",
+      "genre": "legal",
+      "geom_mean_freq": 188.885595,
+      "common_only_density": 0.688372,
+      "n_root_tokens": 215,
+      "length_quintile": 2,
+      "null_z": 2.149774
+    }
+  ],
+  "top_per_length_quintile": {
+    "0": {
+      "n_in_quintile": 22,
+      "log_n_min": 1.94591,
+      "log_n_max": 3.663562,
+      "most_rare": [
+        {
+          "sid": 111,
+          "name": "Al-Masad",
+          "geom_mean_freq": 15.315975
+        },
+        {
+          "sid": 108,
+          "name": "Al-Kawthar",
+          "geom_mean_freq": 18.27395
+        },
+        {
+          "sid": 113,
+          "name": "Al-Falaq",
+          "geom_mean_freq": 19.31065
+        }
+      ],
+      "most_common": [
+        {
+          "sid": 109,
+          "name": "Al-Kafirun",
+          "geom_mean_freq": 286.170412
+        },
+        {
+          "sid": 1,
+          "name": "Al-Fatihah",
+          "geom_mean_freq": 230.944171
+        },
+        {
+          "sid": 110,
+          "name": "An-Nasr",
+          "geom_mean_freq": 206.54209
+        }
+      ]
+    },
+    "1": {
+      "n_in_quintile": 22,
+      "log_n_min": 3.713572,
+      "log_n_max": 4.955827,
+      "most_rare": [
+        {
+          "sid": 80,
+          "name": "'Abasa",
+          "geom_mean_freq": 47.53588
+        },
+        {
+          "sid": 90,
+          "name": "Al-Balad",
+          "geom_mean_freq": 50.123728
+        },
+        {
+          "sid": 81,
+          "name": "At-Takwir",
+          "geom_mean_freq": 53.884665
+        }
+      ],
+      "most_common": [
+        {
+          "sid": 63,
+          "name": "Al-Munafiqun",
+          "geom_mean_freq": 206.571936
+        },
+        {
+          "sid": 62,
+          "name": "Al-Jumu'ah",
+          "geom_mean_freq": 187.692577
+        },
+        {
+          "sid": 98,
+          "name": "Al-Bayyinah",
+          "geom_mean_freq": 175.22259
+        }
+      ]
+    },
+    "2": {
+      "n_in_quintile": 22,
+      "log_n_min": 4.976734,
+      "log_n_max": 5.545177,
+      "most_rare": [
+        {
+          "sid": 56,
+          "name": "Al-Waqi'ah",
+          "geom_mean_freq": 62.062993
+        },
+        {
+          "sid": 69,
+          "name": "Al-Haqqah",
+          "geom_mean_freq": 74.046681
+        },
+        {
+          "sid": 55,
+          "name": "Ar-Rahman",
+          "geom_mean_freq": 81.341119
+        }
+      ],
+      "most_common": [
+        {
+          "sid": 64,
+          "name": "At-Taghabun",
+          "geom_mean_freq": 229.039644
+        },
+        {
+          "sid": 61,
+          "name": "As-Saf",
+          "geom_mean_freq": 223.838479
+        },
+        {
+          "sid": 49,
+          "name": "Al-Hujurat",
+          "geom_mean_freq": 191.759309
+        }
+      ]
+    },
+    "3": {
+      "n_in_quintile": 22,
+      "log_n_min": 5.655992,
+      "log_n_max": 6.440947,
+      "most_rare": [
+        {
+          "sid": 38,
+          "name": "Sad",
+          "geom_mean_freq": 97.961227
+        },
+        {
+          "sid": 37,
+          "name": "As-Saffat",
+          "geom_mean_freq": 119.901934
+        },
+        {
+          "sid": 15,
+          "name": "Al-Hijr",
+          "geom_mean_freq": 123.800191
+        }
+      ],
+      "most_common": [
+        {
+          "sid": 45,
+          "name": "Al-Jathiyah",
+          "geom_mean_freq": 219.863972
+        },
+        {
+          "sid": 29,
+          "name": "Al-'Ankabut",
+          "geom_mean_freq": 213.177428
+        },
+        {
+          "sid": 46,
+          "name": "Al-Ahqaf",
+          "geom_mean_freq": 191.386519
+        }
+      ]
+    },
+    "4": {
+      "n_in_quintile": 26,
+      "log_n_min": 6.45677,
+      "log_n_max": 8.264621,
+      "most_rare": [
+        {
+          "sid": 20,
+          "name": "Taha",
+          "geom_mean_freq": 110.026671
+        },
+        {
+          "sid": 18,
+          "name": "Al-Kahf",
+          "geom_mean_freq": 112.688248
+        },
+        {
+          "sid": 12,
+          "name": "Yusuf",
+          "geom_mean_freq": 123.225431
+        }
+      ],
+      "most_common": [
+        {
+          "sid": 10,
+          "name": "Yunus",
+          "geom_mean_freq": 209.583668
+        },
+        {
+          "sid": 3,
+          "name": "Ali 'Imran",
+          "geom_mean_freq": 195.328465
+        },
+        {
+          "sid": 40,
+          "name": "Ghafir",
+          "geom_mean_freq": 194.03428
+        }
+      ]
+    }
+  }
+}

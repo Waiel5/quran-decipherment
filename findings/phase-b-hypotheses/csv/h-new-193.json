@@ -1,0 +1,452 @@
+{
+  "id": "H-NEW-193",
+  "prereg_sha256": "94702df7acd22d62b55dcf207544f708f21ac56a8b5448156f34736a8e2e81ac",
+  "seed": 20260419,
+  "n_null": 10000,
+  "n_verses_corpus": 6236,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "q1_distinct_surahs_top10": 37,
+  "q1_surahs_touched": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    10,
+    15,
+    19,
+    20,
+    23,
+    26,
+    27,
+    28,
+    36,
+    37,
+    38,
+    40,
+    41,
+    44,
+    45,
+    46,
+    51,
+    53,
+    55,
+    56,
+    59,
+    69,
+    70,
+    74,
+    81,
+    82,
+    83,
+    100,
+    104,
+    106,
+    109,
+    112
+  ],
+  "q1_avg_top10_jaccard": 0.2522,
+  "q1_no_basmala_distinct_surahs_top10": 34,
+  "q1_no_basmala_avg_top10_jaccard": 0.2437,
+  "null_distinct_mean": 40.197,
+  "null_distinct_median": 40.0,
+  "null_distinct_sd": 3.995,
+  "null_jac_mean": 0.1756,
+  "null_jac_sd": 0.04,
+  "p_primary": 0.8231,
+  "p_secondary": 0.0612,
+  "z_primary": -0.8,
+  "z_secondary": 1.913,
+  "pass_primary": false,
+  "pass_secondary": false,
+  "mw5_pass": false,
+  "verdict": "FAIL",
+  "q1_per_verse_top10": [
+    {
+      "q1_verse": 1,
+      "top10": [
+        {
+          "surah": 1,
+          "verse": 3,
+          "jaccard": 0.5333
+        },
+        {
+          "surah": 27,
+          "verse": 30,
+          "jaccard": 0.5172
+        },
+        {
+          "surah": 41,
+          "verse": 2,
+          "jaccard": 0.4
+        },
+        {
+          "surah": 59,
+          "verse": 22,
+          "jaccard": 0.2826
+        },
+        {
+          "surah": 55,
+          "verse": 1,
+          "jaccard": 0.2667
+        },
+        {
+          "surah": 44,
+          "verse": 42,
+          "jaccard": 0.2353
+        },
+        {
+          "surah": 2,
+          "verse": 163,
+          "jaccard": 0.2286
+        },
+        {
+          "surah": 112,
+          "verse": 2,
+          "jaccard": 0.2222
+        },
+        {
+          "surah": 104,
+          "verse": 6,
+          "jaccard": 0.1739
+        },
+        {
+          "surah": 40,
+          "verse": 2,
+          "jaccard": 0.1714
+        }
+      ]
+    },
+    {
+      "q1_verse": 2,
+      "top10": [
+        {
+          "surah": 37,
+          "verse": 182,
+          "jaccard": 0.9412
+        },
+        {
+          "surah": 6,
+          "verse": 45,
+          "jaccard": 0.4
+        },
+        {
+          "surah": 69,
+          "verse": 43,
+          "jaccard": 0.3478
+        },
+        {
+          "surah": 56,
+          "verse": 80,
+          "jaccard": 0.3478
+        },
+        {
+          "surah": 45,
+          "verse": 36,
+          "jaccard": 0.3429
+        },
+        {
+          "surah": 37,
+          "verse": 87,
+          "jaccard": 0.3333
+        },
+        {
+          "surah": 2,
+          "verse": 131,
+          "jaccard": 0.3333
+        },
+        {
+          "surah": 81,
+          "verse": 29,
+          "jaccard": 0.3235
+        },
+        {
+          "surah": 40,
+          "verse": 65,
+          "jaccard": 0.32
+        },
+        {
+          "surah": 26,
+          "verse": 98,
+          "jaccard": 0.32
+        }
+      ]
+    },
+    {
+      "q1_verse": 3,
+      "top10": [
+        {
+          "surah": 41,
+          "verse": 2,
+          "jaccard": 0.6154
+        },
+        {
+          "surah": 1,
+          "verse": 1,
+          "jaccard": 0.5333
+        },
+        {
+          "surah": 55,
+          "verse": 1,
+          "jaccard": 0.5
+        },
+        {
+          "surah": 2,
+          "verse": 163,
+          "jaccard": 0.2857
+        },
+        {
+          "surah": 27,
+          "verse": 30,
+          "jaccard": 0.2759
+        },
+        {
+          "surah": 36,
+          "verse": 5,
+          "jaccard": 0.2105
+        },
+        {
+          "surah": 20,
+          "verse": 5,
+          "jaccard": 0.1905
+        },
+        {
+          "surah": 59,
+          "verse": 22,
+          "jaccard": 0.1818
+        },
+        {
+          "surah": 26,
+          "verse": 217,
+          "jaccard": 0.1818
+        },
+        {
+          "surah": 19,
+          "verse": 88,
+          "jaccard": 0.1818
+        }
+      ]
+    },
+    {
+      "q1_verse": 4,
+      "top10": [
+        {
+          "surah": 82,
+          "verse": 15,
+          "jaccard": 0.375
+        },
+        {
+          "surah": 56,
+          "verse": 56,
+          "jaccard": 0.3529
+        },
+        {
+          "surah": 82,
+          "verse": 17,
+          "jaccard": 0.3333
+        },
+        {
+          "surah": 74,
+          "verse": 46,
+          "jaccard": 0.3333
+        },
+        {
+          "surah": 51,
+          "verse": 12,
+          "jaccard": 0.3158
+        },
+        {
+          "surah": 82,
+          "verse": 18,
+          "jaccard": 0.3
+        },
+        {
+          "surah": 83,
+          "verse": 11,
+          "jaccard": 0.2857
+        },
+        {
+          "surah": 70,
+          "verse": 26,
+          "jaccard": 0.2727
+        },
+        {
+          "surah": 38,
+          "verse": 78,
+          "jaccard": 0.25
+        },
+        {
+          "surah": 37,
+          "verse": 20,
+          "jaccard": 0.24
+        }
+      ]
+    },
+    {
+      "q1_verse": 5,
+      "top10": [
+        {
+          "surah": 26,
+          "verse": 92,
+          "jaccard": 0.0968
+        },
+        {
+          "surah": 26,
+          "verse": 75,
+          "jaccard": 0.0968
+        },
+        {
+          "surah": 109,
+          "verse": 2,
+          "jaccard": 0.087
+        },
+        {
+          "surah": 37,
+          "verse": 161,
+          "jaccard": 0.0833
+        },
+        {
+          "surah": 53,
+          "verse": 62,
+          "jaccard": 0.0769
+        },
+        {
+          "surah": 26,
+          "verse": 22,
+          "jaccard": 0.0732
+        },
+        {
+          "surah": 106,
+          "verse": 3,
+          "jaccard": 0.0714
+        },
+        {
+          "surah": 37,
+          "verse": 95,
+          "jaccard": 0.0714
+        },
+        {
+          "surah": 109,
+          "verse": 5,
+          "jaccard": 0.069
+        },
+        {
+          "surah": 109,
+          "verse": 3,
+          "jaccard": 0.069
+        }
+      ]
+    },
+    {
+      "q1_verse": 6,
+      "top10": [
+        {
+          "surah": 37,
+          "verse": 118,
+          "jaccard": 0.52
+        },
+        {
+          "surah": 36,
+          "verse": 4,
+          "jaccard": 0.2727
+        },
+        {
+          "surah": 4,
+          "verse": 68,
+          "jaccard": 0.2414
+        },
+        {
+          "surah": 15,
+          "verse": 41,
+          "jaccard": 0.2143
+        },
+        {
+          "surah": 26,
+          "verse": 182,
+          "jaccard": 0.2
+        },
+        {
+          "surah": 36,
+          "verse": 61,
+          "jaccard": 0.1875
+        },
+        {
+          "surah": 7,
+          "verse": 16,
+          "jaccard": 0.186
+        },
+        {
+          "surah": 23,
+          "verse": 73,
+          "jaccard": 0.1818
+        },
+        {
+          "surah": 6,
+          "verse": 126,
+          "jaccard": 0.1667
+        },
+        {
+          "surah": 15,
+          "verse": 24,
+          "jaccard": 0.1538
+        }
+      ]
+    },
+    {
+      "q1_verse": 7,
+      "top10": [
+        {
+          "surah": 7,
+          "verse": 6,
+          "jaccard": 0.1786
+        },
+        {
+          "surah": 2,
+          "verse": 160,
+          "jaccard": 0.1358
+        },
+        {
+          "surah": 4,
+          "verse": 168,
+          "jaccard": 0.1316
+        },
+        {
+          "surah": 46,
+          "verse": 13,
+          "jaccard": 0.1266
+        },
+        {
+          "surah": 4,
+          "verse": 137,
+          "jaccard": 0.125
+        },
+        {
+          "surah": 28,
+          "verse": 17,
+          "jaccard": 0.1231
+        },
+        {
+          "surah": 1,
+          "verse": 6,
+          "jaccard": 0.12
+        },
+        {
+          "surah": 10,
+          "verse": 96,
+          "jaccard": 0.1167
+        },
+        {
+          "surah": 100,
+          "verse": 3,
+          "jaccard": 0.1111
+        },
+        {
+          "surah": 37,
+          "verse": 118,
+          "jaccard": 0.1111
+        }
+      ]
+    }
+  ]
+}

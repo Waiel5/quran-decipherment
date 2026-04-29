@@ -1,0 +1,143 @@
+{
+  "finding_id": "h-new-890",
+  "title": "Numerical and sequence re-audit in light of 2026-04-28 architectural findings",
+  "date": "2026-04-28",
+  "seed": 20260428,
+  "n_iter": 100000,
+  "bonferroni_k": 5,
+  "alpha_bon": 0.01,
+  "prereg_path": "findings/phase-b-hypotheses/h-new-890-numerical-reaudit-prereg.md",
+  "prereg_sha256": "0c0c7e8ce0774832df0f7bb56f1937cc6bc8bf87d347022f64d5a7cea2ff7885",
+  "rules_tuple": {
+    "corpus": "Hafs-no-tashkeel",
+    "verse_counts": "data/hafs-verse-counts.tsv",
+    "fr_matrix": "findings/phase-b-hypotheses/csv/h-new-111.json (D_matrix_upper_triangular)",
+    "compression": "findings/phase-b-hypotheses/csv/compression_per_surah.csv (gzip_ratio)",
+    "baseline_corpus": "data/baseline-corpora/raw/bukhari-noquran.txt"
+  },
+  "tests": {
+    "T1": {
+      "test_id": "T1",
+      "test_name": "Q8+Q9 FR-distance unity",
+      "d_FR_8_9": 0.910997,
+      "adjacent_mean": 0.7589349999999999,
+      "adjacent_median": 0.816186,
+      "adjacent_std": 0.24197481515955332,
+      "adjacent_min": 0.225639,
+      "adjacent_max": 1.177623,
+      "rank_le": 81,
+      "n_adjacent": 113,
+      "p_one_sided": 0.7168141592920354,
+      "alpha_bon": 0.01,
+      "verdict": "NULL",
+      "notes": "rank_le = number of adjacent pairs with distance <= d_FR(8, 9). Smaller rank => smaller-than-typical adjacent distance."
+    },
+    "T2": {
+      "test_id": "T2",
+      "test_name": "Compression-tail genericity (Quran vs Bukhari)",
+      "quran_fit": {
+        "alpha": 0.31376724159521246,
+        "beta": 0.005322243857154736,
+        "r2": 0.7656077000742488,
+        "adj_r2": 0.7635149116820547,
+        "n": 114,
+        "kink": 50
+      },
+      "bukhari_pseudomushaf_fit": {
+        "alpha": 0.24688694439475867,
+        "beta": 0.0012095822809083433,
+        "r2": 0.4978811963697495,
+        "adj_r2": 0.4933979927659079,
+        "n": 114,
+        "kink": 50
+      },
+      "delta_r2": 0.26772650370449935,
+      "verdict": "PASS-DISTINCTIVE",
+      "notes": "Per-surah gzip_ratio as a function of mushaf-position, kink-50 simple model. NOTE: this is a related but distinct metric from H-NEW-660 (which uses pairwise FR-cohesion-distance). Slope sign: positive beta means gzip_ratio rises in the tail (short surahs are less compressible due to small-sample overhead); this is the EXPECTED direction once one accounts for length-scale, and the magnitude difference Quran vs Bukhari is the signal of interest. Distinctive iff Quran R^2 exceeds Bukhari by >= 0.20 AND |Bukhari beta| < 0.5 * |Quran beta|."
+    },
+    "T3": {
+      "test_id": "T3",
+      "test_name": "Verse-count divisibility-by-19",
+      "k_obs": 4,
+      "expected_uniform": 6.0,
+      "null_mean": 4.00556,
+      "null_std": 1.9721734155696886,
+      "null_min": 0,
+      "null_max": 15,
+      "p_two_sided": 1.0,
+      "alpha_bon": 0.01,
+      "verdict": "NULL",
+      "matching_surahs": {
+        "47": 38,
+        "82": 19,
+        "87": 19,
+        "96": 19
+      },
+      "n_iter": 100000,
+      "notes": "Multinomial bootstrap from empirical verse-count distribution preserves range/skew. Two-tailed p around the bootstrap mean."
+    },
+    "T4": {
+      "test_id": "T4",
+      "test_name": "6236 / 114 divisibility (descriptive)",
+      "total_verses": 6236,
+      "n_surahs": 114,
+      "mean_verses_per_surah": 54.70175438596491,
+      "factorization_6236": "2^2 * 1559 (1559 prime)",
+      "factorization_114": "2 * 3 * 19",
+      "divisors_6236": [
+        1,
+        2,
+        4,
+        1559,
+        3118,
+        6236
+      ],
+      "divisors_114": [
+        1,
+        2,
+        3,
+        6,
+        19,
+        38,
+        57,
+        114
+      ],
+      "surahs_whose_n_divides_6236": [
+        106,
+        112
+      ],
+      "verdict": "DESCRIPTIVE-NULL",
+      "notes": "No structural divisibility pattern: 1559 is prime; 6236 has only 6 divisors (1,2,4,1559,3118,6236), none of which match any actual surah length. The factorization 6236 = 4 x 1559 has no architectural significance."
+    },
+    "T5": {
+      "test_id": "T5",
+      "test_name": "Divine-name density vs d_FR(s, 1)",
+      "n_surahs_in_test": 113,
+      "primary_metric": "divine-names-by-verse.csv num_names per verse",
+      "primary_spearman_rho": 0.6066192849350078,
+      "primary_p_two_sided": 1.0698136828081693e-12,
+      "primary_p_one_sided_neg": 0.9999999999994651,
+      "sensitivity_metric": "bare regex الله per verse (no-tashkeel)",
+      "sensitivity_spearman_rho": 0.5944305018383055,
+      "sensitivity_p_two_sided": 3.887398620851901e-12,
+      "sensitivity_p_one_sided_neg": 0.9999999999980563,
+      "alpha_bon": 0.01,
+      "verdict": "NULL",
+      "q1_div_names_count": 6,
+      "q1_div_names_density": 0.8571428571428571,
+      "q1_bare_allah_count": 1,
+      "q1_bare_allah_density": 0.14285714285714285,
+      "q1_n_verses": 7,
+      "global_div_density": 0.3781270044900577,
+      "global_bare_density": 0.345253367543297,
+      "notes": "Primary metric uses the broader divine-names catalog (Allah, al-Rahman, al-Rahim, etc.) from divine-names-by-verse.csv per the classical 'Q 1 = umm al-kitāb' claim. Sensitivity uses bare الله token regex — narrower, missing prefixed forms (لله, بالله, والله). One-sided NEG test: closer-to-Q1 surahs should have HIGHER divine-name density => negative rho."
+    }
+  },
+  "headline": {
+    "T1": "NULL",
+    "T2": "PASS-DISTINCTIVE",
+    "T3": "NULL",
+    "T4": "DESCRIPTIVE-NULL",
+    "T5": "NULL"
+  }
+}

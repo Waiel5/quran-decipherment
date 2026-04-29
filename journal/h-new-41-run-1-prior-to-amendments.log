@@ -1,0 +1,27 @@
+[h-new-41] seed=20260415  N_NULL=10000  alpha_per_cell=1.389e-03
+[step1] QAC triliteral roots (canonicalized): 1602
+[step2] mutanabbi: 2227 distinct candidate roots, 6821 tokens, QAC-overlap-precision=0.433
+[step2] jahiz: 7960 distinct candidate roots, 266163 tokens, QAC-overlap-precision=0.442
+[step2] sira: 6457 distinct candidate roots, 216786 tokens, QAC-overlap-precision=0.456
+[step2] bukhari: 5890 distinct candidate roots, 417140 tokens, QAC-overlap-precision=0.457
+[step2] diwan-antara: 2993 distinct candidate roots, 23880 tokens, QAC-overlap-precision=0.441
+[step2] diwan-labid: 3140 distinct candidate roots, 11253 tokens, QAC-overlap-precision=0.448
+[step2] diwan-tarafa: 1903 distinct candidate roots, 4573 tokens, QAC-overlap-precision=0.443
+[step2] diwan-zuhayr: 1673 distinct candidate roots, 3641 tokens, QAC-overlap-precision=0.404
+[step2] diwan-imru-al-qais: 3563 distinct candidate roots, 17392 tokens, QAC-overlap-precision=0.453
+[step2] diwan-harith: 806 distinct candidate roots, 1267 tokens, QAC-overlap-precision=0.406
+[step2] diwan-amr-ibn-kulthum: 52 distinct candidate roots, 56 tokens, QAC-overlap-precision=0.482
+[step2] |Q|=1602, |extra|=6528, |C|=8130
+[subA] Q / C coverage = 0.1970
+[posctrl] Mutanabbi root set size (in C): 2199
+[step4] precomputing 12-feature vectors for all of C...
+[step4] drawing 10000 size-1602 null subsets from |C|=8130...
+    null iter 2000/10000
+    null iter 4000/10000
+    null iter 6000/10000
+    null iter 8000/10000
+[MW-5] positive control max |z_M| = 4.715  -> ANOMALOUS
+[verdict] Q significant cells = 5 / 12 at alpha=1.389e-03
+[verdict] >>> NULL-BROKEN <<<
+[out] wrote /Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-41.json
+[out] wrote /Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-41-rootlists.json

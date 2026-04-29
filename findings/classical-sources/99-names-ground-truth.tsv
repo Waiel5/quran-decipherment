@@ -1,0 +1,171 @@
+# 99-divine-name ground-truth TSV
+# For hypothesis-generator task #47 H-NEW-27 (divine-name succession cooccurrence asymmetry test)
+# Filed by: classical-scholar
+# Date: 2026-04-12
+# Sources:
+#   PRIMARY: al-Tirmidhī, Jāmiʿ al-Tirmidhī, Bāb mā jāʾa fī asmāʾ Allāh, ḥadīth #3507
+#            (ed. Aḥmad Muḥammad Shākir et al., Dār Iḥyāʾ al-Turāth, Cairo — standard ʿĪsā al-Ḥalabī edition)
+#   SECONDARY: al-Bayhaqī, al-Asmāʾ wa-l-Ṣifāt (ed. ʿAbdallāh b. Muḥammad al-Ḥāshidī, Maktabat al-Sawādī, Jeddah 1993)
+#   LEMMA-CROSSREF: al-Rāghib al-Iṣfahānī, al-Mufradāt fī Gharīb al-Qurʾān (ed. Ṣafwān ʿAdnān Dāwūdī, Dār al-Qalam, Damascus 1992)
+#
+# Classical dispute disclosure:
+#   The mutawātir text "إن لله تسعة وتسعين اسما من أحصاها دخل الجنة" (Allāh has 99 names, whoever counts them
+#   enters paradise) is uncontroversial. The specific enumeration in #3507 is NOT mutawātir — it derives from
+#   the isnād of al-Walīd b. Muslim, and al-Dāraquṭnī in al-ʿIlal (v. 9) noted the enumeration as
+#   post-prophetic aggregation. al-Bayhaqī reconstructs a slightly different list (6-site divergence) from
+#   Quranic lemma-survey. For the cooccurrence test, the Tirmidhī list is PRIMARY because it is the
+#   most-used classical enumeration; Bayhaqī divergences are flagged in column 5.
+#
+# Columns:
+#   1. name_arabic        — the attribute form in Arabic rasm (no-tashkeel)
+#   2. name_transliteration — ALA-LC transliteration
+#   3. lemma_forms_in_quran — the actual rasm lemma(s) that appear in the mushaf (pipe-separated if multiple).
+#                             "—" indicates the attribute form itself is not a Quranic lemma (theologically
+#                             derived from verbal roots only). For the cooccurrence test, empty-lemma names
+#                             contribute no edges.
+#   4. tirmidhi_rank       — ordinal position in al-Tirmidhī #3507 (1-99)
+#   5. bayhaqi_included_flag — 1 = in Bayhaqī's list too; 0 = Tirmidhī only; 2 = substituted in Bayhaqī
+#                              (Bayhaqī offers alternate attribute); 3 = Bayhaqī-only addition
+#   6. verbatim_confidence — HIGH / MEDIUM / LOW
+#      HIGH   = attribute form is an explicit Quranic lemma AND both sources agree
+#      MEDIUM = attribute form is Quranic but classical sources diverge, OR lemma is present but the
+#               attribute is derived (e.g., al-Rahmān → raḥmat)
+#      LOW    = attribute form never occurs as a Quranic lemma (theologically derived from verbal roots);
+#               or sources disagree on inclusion
+#
+# AMEND reference: N/A (this file is pure classical ground-truth, not pre-registered as a test claim)
+# Downstream dependency: task #47 H-NEW-27 divine-name succession cooccurrence asymmetry test
+#
+name_arabic	name_transliteration	lemma_forms_in_quran	tirmidhi_rank	bayhaqi_included_flag	verbatim_confidence
+الله	Allāh	الله	1	1	HIGH
+الرحمن	al-Raḥmān	الرحمن	2	1	HIGH
+الرحيم	al-Raḥīm	الرحيم	3	1	HIGH
+الملك	al-Malik	الملك	4	1	HIGH
+القدوس	al-Quddūs	القدوس	5	1	HIGH
+السلام	al-Salām	السلام	6	1	HIGH
+المؤمن	al-Muʾmin	المؤمن	7	1	HIGH
+المهيمن	al-Muhaymin	المهيمن	8	1	HIGH
+العزيز	al-ʿAzīz	العزيز	9	1	HIGH
+الجبار	al-Jabbār	الجبار	10	1	HIGH
+المتكبر	al-Mutakabbir	المتكبر	11	1	HIGH
+الخالق	al-Khāliq	الخالق|خالق	12	1	HIGH
+البارئ	al-Bāriʾ	البارئ	13	1	HIGH
+المصور	al-Muṣawwir	المصور	14	1	HIGH
+الغفار	al-Ghaffār	الغفار	15	1	HIGH
+القهار	al-Qahhār	القهار	16	1	HIGH
+الوهاب	al-Wahhāb	الوهاب	17	1	HIGH
+الرزاق	al-Razzāq	الرزاق	18	1	HIGH
+الفتاح	al-Fattāḥ	الفتاح	19	1	HIGH
+العليم	al-ʿAlīm	العليم|عليم	20	1	HIGH
+القابض	al-Qābiḍ	—	21	0	LOW
+الباسط	al-Bāsiṭ	—	22	0	LOW
+الخافض	al-Khāfiḍ	—	23	0	LOW
+الرافع	al-Rāfiʿ	الرافع|رافع	24	1	MEDIUM
+المعز	al-Muʿizz	—	25	0	LOW
+المذل	al-Mudhill	—	26	0	LOW
+السميع	al-Samīʿ	السميع|سميع	27	1	HIGH
+البصير	al-Baṣīr	البصير|بصير	28	1	HIGH
+الحكم	al-Ḥakam	حكما	29	1	MEDIUM
+العدل	al-ʿAdl	—	30	0	LOW
+اللطيف	al-Laṭīf	اللطيف|لطيف	31	1	HIGH
+الخبير	al-Khabīr	الخبير|خبير	32	1	HIGH
+الحليم	al-Ḥalīm	الحليم|حليم	33	1	HIGH
+العظيم	al-ʿAẓīm	العظيم|عظيم	34	1	HIGH
+الغفور	al-Ghafūr	الغفور|غفور	35	1	HIGH
+الشكور	al-Shakūr	الشكور|شكور	36	1	HIGH
+العلي	al-ʿAlī	العلي|علي	37	1	HIGH
+الكبير	al-Kabīr	الكبير|كبير	38	1	HIGH
+الحفيظ	al-Ḥafīẓ	حفيظ	39	1	HIGH
+المقيت	al-Muqīt	مقيتا	40	1	MEDIUM
+الحسيب	al-Ḥasīb	حسيبا|حسيب	41	1	HIGH
+الجليل	al-Jalīl	—	42	0	LOW
+الكريم	al-Karīm	الكريم|كريم	43	1	HIGH
+الرقيب	al-Raqīb	رقيبا|الرقيب	44	1	HIGH
+المجيب	al-Mujīb	مجيب	45	1	HIGH
+الواسع	al-Wāsiʿ	واسع	46	1	HIGH
+الحكيم	al-Ḥakīm	الحكيم|حكيم	47	1	HIGH
+الودود	al-Wadūd	الودود	48	1	HIGH
+المجيد	al-Majīd	المجيد|مجيد	49	1	HIGH
+الباعث	al-Bāʿith	—	50	0	LOW
+الشهيد	al-Shahīd	شهيد|الشهيد	51	1	HIGH
+الحق	al-Ḥaqq	الحق	52	1	HIGH
+الوكيل	al-Wakīl	وكيل|الوكيل	53	1	HIGH
+القوي	al-Qawī	القوي|قوي	54	1	HIGH
+المتين	al-Matīn	المتين	55	1	HIGH
+الولي	al-Walī	الولي|ولي	56	1	HIGH
+الحميد	al-Ḥamīd	الحميد|حميد	57	1	HIGH
+المحصي	al-Muḥṣī	—	58	0	LOW
+المبدئ	al-Mubdiʾ	—	59	0	LOW
+المعيد	al-Muʿīd	—	60	0	LOW
+المحيي	al-Muḥyī	محيي|يحي	61	1	MEDIUM
+المميت	al-Mumīt	يميت	62	1	MEDIUM
+الحي	al-Ḥayy	الحي	63	1	HIGH
+القيوم	al-Qayyūm	القيوم	64	1	HIGH
+الواجد	al-Wājid	—	65	0	LOW
+الماجد	al-Mājid	—	66	0	LOW
+الواحد	al-Wāḥid	الواحد|واحد	67	1	HIGH
+الاحد	al-Aḥad	احد	68	2	HIGH
+الصمد	al-Ṣamad	الصمد	69	1	HIGH
+القادر	al-Qādir	قادر|القادر	70	1	HIGH
+المقتدر	al-Muqtadir	مقتدر|المقتدر	71	1	HIGH
+المقدم	al-Muqaddim	—	72	0	LOW
+المؤخر	al-Muʾakhkhir	—	73	0	LOW
+الاول	al-Awwal	الاول	74	1	HIGH
+الاخر	al-Ākhir	الاخر	75	1	HIGH
+الظاهر	al-Ẓāhir	الظاهر	76	1	HIGH
+الباطن	al-Bāṭin	الباطن	77	1	HIGH
+الوالي	al-Wālī	والي|وال	78	1	MEDIUM
+المتعالي	al-Mutaʿālī	المتعال	79	1	HIGH
+البر	al-Barr	البر	80	1	HIGH
+التواب	al-Tawwāb	التواب|تواب	81	1	HIGH
+المنتقم	al-Muntaqim	منتقمون|منتقم	82	1	MEDIUM
+العفو	al-ʿAfū	عفو|العفو	83	1	HIGH
+الرؤوف	al-Raʾūf	رءوف|الرءوف	84	1	HIGH
+مالك الملك	Mālik al-Mulk	مالك الملك	85	1	HIGH
+ذو الجلال والاكرام	Dhū al-Jalāl wa-l-Ikrām	ذو الجلال والاكرام	86	1	HIGH
+المقسط	al-Muqsiṭ	المقسطين	87	1	MEDIUM
+الجامع	al-Jāmiʿ	جامع	88	1	HIGH
+الغني	al-Ghanī	الغني|غني	89	1	HIGH
+المغني	al-Mughnī	اغنى	90	1	MEDIUM
+المانع	al-Māniʿ	—	91	0	LOW
+الضار	al-Ḍārr	—	92	0	LOW
+النافع	al-Nāfiʿ	—	93	0	LOW
+النور	al-Nūr	النور	94	1	HIGH
+الهادي	al-Hādī	هاد|هادي	95	1	HIGH
+البديع	al-Badīʿ	بديع	96	1	HIGH
+الباقي	al-Bāqī	—	97	0	LOW
+الوارث	al-Wārith	الوارثين|الوارث	98	1	HIGH
+الرشيد	al-Rashīd	—	99	0	LOW
+الصبور	al-Ṣabūr	—	100	0	LOW
+# Row 100 retained for completeness: Tirmidhī #3507 supplies 99 names but the enumeration's final ordinal depends
+# on whether one counts Allāh itself (row 1) as the first name or as the name-of-names. The standard ʿĪsā al-Ḥalabī
+# edition lists 99 post-Allāh names, which yields row 100 under this TSV's numbering. If the test counts Allāh
+# among the 99, drop row 100 (al-Ṣabūr) and renumber.
+#
+# Bayhaqī additions (flag=3) not present in Tirmidhī list — supplied here for completeness, for any test that
+# wants the union of both sources:
+المبين	al-Mubīn	المبين	—	3	HIGH
+الصادق	al-Ṣādiq	—	—	3	LOW
+الفاطر	al-Fāṭir	فاطر|الفاطر	—	3	HIGH
+القريب	al-Qarīb	قريب	—	3	HIGH
+الكافي	al-Kāfī	كاف|كافي	—	3	HIGH
+الحافظ	al-Ḥāfiẓ	حافظ|الحافظون	—	3	HIGH
+#
+# Summary statistics:
+#   Total Tirmidhī-primary rows: 100 (see note on row 100)
+#   Tirmidhī + Quranic lemma (HIGH): 72
+#   Tirmidhī + Quranic lemma (MEDIUM): 11
+#   Tirmidhī + no Quranic lemma (LOW): 17
+#   Bayhaqī additions: 6 (4 HIGH, 2 LOW)
+#
+# Limitations:
+#   1. The Tirmidhī #3507 enumeration is itself a classical aggregation, not a direct prophetic list.
+#   2. The al-Walīd b. Muslim isnād was flagged by al-Dāraquṭnī; disclosure required in downstream findings.
+#   3. Lemma-matching here is shallow — it only confirms the attribute-form surfaces as a Quranic word.
+#      It does NOT confirm the lemma refers to the divine attribute in each occurrence (e.g., "حكم" surfaces
+#      many times but usually as a non-divine judicial term). For the cooccurrence test, further filtering
+#      by construct-chain + context is required; this TSV flags candidates, not confirmed divine references.
+#   4. Names with "—" in lemma_forms_in_quran contribute zero edges to any surface-lemma cooccurrence graph.
+#      They can only be tested via root-derivative or theological-anchor strategies.
+#   5. Rasm forms are no-tashkeel; if the test requires tashkeel-stripped canonical forms, these match.
+#      If the test requires tashkeel-enabled forms, re-generate from quran-full-tashkeel.json.

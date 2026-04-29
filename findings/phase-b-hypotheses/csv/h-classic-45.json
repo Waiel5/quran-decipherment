@@ -1,0 +1,115 @@
+{
+  "finding_id": "h-classic-45",
+  "pre_reg": "findings/phase-b-hypotheses/h-classic-45-prereg.md",
+  "pre_reg_compliance": "PRE-REG-STANDARD-04 + STANDARD-05",
+  "rules_tuple": "(no-tashkeel, root-level via QAC, hafs-kufan, mashriqi)",
+  "seed": 20260414,
+  "n_perm": 10000,
+  "bonferroni_k_outer": 6,
+  "bonferroni_family_outer": "h-classic-44-49",
+  "bonferroni_k_inner": 1,
+  "bonferroni_family_inner": "h-classic-45-single-primary",
+  "alpha_bon": 0.00833,
+  "parent_dispatch": "2026-04-14-wave-1-3-meta-analyst",
+  "sided_test": "one-sided lower-tail (rho < 0)",
+  "gharib_threshold_primary": 5,
+  "noldeke_phase_map": {
+    "Early Meccan": 1,
+    "Middle Meccan": 2,
+    "Late Meccan": 3,
+    "Medinan": 4
+  },
+  "n_unique_roots": 1642,
+  "n_gharib_roots_primary": 898,
+  "n_total_stem_tokens": 49968,
+  "primary": {
+    "name": "Spearman rho(N\u00f6ldeke period, ghar\u012bb density @\u22645)",
+    "observed_rho": -0.6817621782884851,
+    "null_mean": -0.00046128097883373726,
+    "null_sd": 0.09471131503776836,
+    "empirical_p_one_sided_lower": 9.999000099990002e-05,
+    "empirical_p_one_sided_upper": 1.0,
+    "passes": true,
+    "reverse": false,
+    "verdict": "PASS \u2014 al-Suy\u016b\u1e6d\u012b ghar\u012bb claim confirmed"
+  },
+  "diagnostics": {
+    "per_period_stats": {
+      "1": {
+        "n": 48,
+        "mean": 12.649039172669424,
+        "sd": 10.58720060420178,
+        "median": 9.8828125
+      },
+      "2": {
+        "n": 21,
+        "mean": 5.244262776132996,
+        "sd": 1.410279820071526,
+        "median": 5.307262569832402
+      },
+      "3": {
+        "n": 21,
+        "mean": 2.8710107200826633,
+        "sd": 1.1665470010209371,
+        "median": 2.7613412228796843
+      },
+      "4": {
+        "n": 24,
+        "mean": 2.975420069882755,
+        "sd": 1.5541079562532278,
+        "median": 2.8451097255001043
+      }
+    },
+    "threshold_sensitivity": {
+      "3": {
+        "n_gharib_roots": 713,
+        "observed_rho": -0.5900592786021097,
+        "note": "diagnostic only"
+      },
+      "5": {
+        "n_gharib_roots": 898,
+        "observed_rho": -0.6817621782884851,
+        "note": "primary (verdict-entering)"
+      },
+      "10": {
+        "n_gharib_roots": 1075,
+        "observed_rho": -0.7336412566974734,
+        "note": "diagnostic only"
+      }
+    },
+    "length_confound": {
+      "stem_token_count_vs_density_rho": -0.47746264374116426,
+      "stem_token_count_vs_period_rho": 0.671860919868311,
+      "flagged": false,
+      "note": "If |rho| > 0.5 narrative must flag length confound."
+    },
+    "meccan_vs_medinan_mannwhitney": {
+      "meccan_n": 90,
+      "medinan_n": 24,
+      "meccan_mean": 8.639718041207347,
+      "medinan_mean": 2.975420069882755,
+      "u_statistic": 1706.0,
+      "empirical_p_one_sided_greater": 6.875542962471021e-06,
+      "note": "Diagnostic only; not verdict-entering."
+    },
+    "revelation_order_alt": {
+      "observed_rho": -0.4554223659636697,
+      "empirical_p_one_sided_lower": 9.999000099990002e-05,
+      "note": "Higher-resolution chronology; diagnostic only."
+    }
+  },
+  "final_verdict": "PASS \u2014 al-Suy\u016b\u1e6d\u012b ghar\u012bb claim confirmed",
+  "no_fork_protections_honored": [
+    "ghar\u012bb threshold LOCKED \u22645 total Quranic STEM token occurrences",
+    "density normalization LOCKED per-100-STEM-token",
+    "N\u00f6ldeke period mapping LOCKED 1/2/3/4 = Early/Middle/Late/Medinan",
+    "primary statistic LOCKED Spearman rho (not Pearson, not Kendall)",
+    "null seed LOCKED 20260414, n_perm LOCKED 10000",
+    "\u03b1_bon LOCKED 0.00833 (hierarchical k_outer=6, k_inner=1)",
+    "one-sided test LOCKED lower-tail",
+    "denominator LOCKED STEM-bearing tokens per surah",
+    "verdict matrix LOCKED per pre-reg",
+    "all 5 diagnostics are reported but NOT verdict-entering"
+  ],
+  "data_reuse_disclosed": "Reuses QAC v0.4 morphology loader pattern from h_classic_44_zarkashi_regime.py. Reuses data/revelation-order.csv for N\u00f6ldeke labels. Reuses data/morphology/root-stats.csv total_occurrences column as cross-check. Cross-refs scholar-convergence-tracker.md \u00a72 al-Suy\u016b\u1e6d\u012b and \u00a75 chronology prior."
+}

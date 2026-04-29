@@ -1,0 +1,1063 @@
+{
+  "id": "H-NEW-1010",
+  "title": "Singleton-letter muqaṭṭaʿāt cohort verse-1 form-coherence",
+  "prereg_sha256": "f79b0235e26ef1424050e8ff4d7153b12b4f54042cc69cdb47172e68562e055d",
+  "seed": 20260507,
+  "n_perms": 10000,
+  "rules_tuple": "(no-tashkeel-allowed-for-letter-detection, min-tashkeel-allowed-for-wāw-detection, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, mushaf-order)",
+  "canonical_29_muqattaat_surahs": [
+    2,
+    3,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    19,
+    20,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    36,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    50,
+    68
+  ],
+  "singleton_letter_map": {
+    "38": "ص",
+    "50": "ق",
+    "68": "ن"
+  },
+  "two_letter_openers": {
+    "20": "طه",
+    "36": "يس"
+  },
+  "h1": {
+    "predicted_hits": [
+      38,
+      50,
+      68
+    ],
+    "observed_hits": [
+      38,
+      50,
+      68
+    ],
+    "false_positives": [],
+    "false_negatives": [],
+    "verdict": "PASS",
+    "per_surah_diag": {
+      "2": {
+        "v1_tokens_first2": [
+          "الم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "الم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الم",
+        "v1_min_tashkeel_no_tashkeel": "الم",
+        "min_tashkeel_first2": [
+          "الم"
+        ]
+      },
+      "3": {
+        "v1_tokens_first2": [
+          "الم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "الم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الم",
+        "v1_min_tashkeel_no_tashkeel": "الم",
+        "min_tashkeel_first2": [
+          "الم"
+        ]
+      },
+      "7": {
+        "v1_tokens_first2": [
+          "المص"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "المص",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "المص",
+        "v1_min_tashkeel_no_tashkeel": "المص",
+        "min_tashkeel_first2": [
+          "المص"
+        ]
+      },
+      "10": {
+        "v1_tokens_first2": [
+          "الر",
+          "تلك"
+        ],
+        "n_tokens_v1": 5,
+        "muq_token": "الر",
+        "next_token": "تلك",
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الر تلك آيات الكتاب الحكيم",
+        "v1_min_tashkeel_no_tashkeel": "الر تلك ءايت الكتب الحكيم",
+        "min_tashkeel_first2": [
+          "الر",
+          "تلك"
+        ]
+      },
+      "11": {
+        "v1_tokens_first2": [
+          "الر",
+          "كتاب"
+        ],
+        "n_tokens_v1": 10,
+        "muq_token": "الر",
+        "next_token": "كتاب",
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الر كتاب أحكمت آياته ثم فصلت من لدن حكيم خبير",
+        "v1_min_tashkeel_no_tashkeel": "الر كتب أحكمت ءايته ثم فصلت من لدن حكيم خبير",
+        "min_tashkeel_first2": [
+          "الر",
+          "كتب"
+        ]
+      },
+      "12": {
+        "v1_tokens_first2": [
+          "الر",
+          "تلك"
+        ],
+        "n_tokens_v1": 5,
+        "muq_token": "الر",
+        "next_token": "تلك",
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الر تلك آيات الكتاب المبين",
+        "v1_min_tashkeel_no_tashkeel": "الر تلك ءايت الكتب المبين",
+        "min_tashkeel_first2": [
+          "الر",
+          "تلك"
+        ]
+      },
+      "13": {
+        "v1_tokens_first2": [
+          "المر",
+          "تلك"
+        ],
+        "n_tokens_v1": 15,
+        "muq_token": "المر",
+        "next_token": "تلك",
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "المر تلك آيات الكتاب والذي أنزل إليك من ربك الحق ولكن أكثر الناس لا يؤمنون",
+        "v1_min_tashkeel_no_tashkeel": "المر تلك ءايت الكتب والذى أنزل إليك من ربك الحق ولكن أكثر الناس لا يؤمنون",
+        "min_tashkeel_first2": [
+          "المر",
+          "تلك"
+        ]
+      },
+      "14": {
+        "v1_tokens_first2": [
+          "الر",
+          "كتاب"
+        ],
+        "n_tokens_v1": 16,
+        "muq_token": "الر",
+        "next_token": "كتاب",
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الر كتاب أنزلناه إليك لتخرج الناس من الظلمات إلى النور بإذن ربهم إلى صراط العزيز الحميد",
+        "v1_min_tashkeel_no_tashkeel": "الر كتب أنزلنه إليك لتخرج الناس من الظلمت إلى النور بإذن ربهم إلى صرط العزيز الحميد",
+        "min_tashkeel_first2": [
+          "الر",
+          "كتب"
+        ]
+      },
+      "15": {
+        "v1_tokens_first2": [
+          "الر",
+          "تلك"
+        ],
+        "n_tokens_v1": 6,
+        "muq_token": "الر",
+        "next_token": "تلك",
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الر تلك آيات الكتاب وقرآن مبين",
+        "v1_min_tashkeel_no_tashkeel": "الر تلك ءايت الكتب وقرءان مبين",
+        "min_tashkeel_first2": [
+          "الر",
+          "تلك"
+        ]
+      },
+      "19": {
+        "v1_tokens_first2": [
+          "كهيعص"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "كهيعص",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "كهيعص",
+        "v1_min_tashkeel_no_tashkeel": "كهيعص",
+        "min_tashkeel_first2": [
+          "كهيعص"
+        ]
+      },
+      "20": {
+        "v1_tokens_first2": [
+          "طه"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "طه",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "طه",
+        "v1_min_tashkeel_no_tashkeel": "طه",
+        "min_tashkeel_first2": [
+          "طه"
+        ]
+      },
+      "26": {
+        "v1_tokens_first2": [
+          "طسم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "طسم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "طسم",
+        "v1_min_tashkeel_no_tashkeel": "طسم",
+        "min_tashkeel_first2": [
+          "طسم"
+        ]
+      },
+      "27": {
+        "v1_tokens_first2": [
+          "طس",
+          "تلك"
+        ],
+        "n_tokens_v1": 6,
+        "muq_token": "طس",
+        "next_token": "تلك",
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "طس تلك آيات القرآن وكتاب مبين",
+        "v1_min_tashkeel_no_tashkeel": "طس تلك ءايت القرءان وكتاب مبين",
+        "min_tashkeel_first2": [
+          "طس",
+          "تلك"
+        ]
+      },
+      "28": {
+        "v1_tokens_first2": [
+          "طسم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "طسم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "طسم",
+        "v1_min_tashkeel_no_tashkeel": "طسم",
+        "min_tashkeel_first2": [
+          "طسم"
+        ]
+      },
+      "29": {
+        "v1_tokens_first2": [
+          "الم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "الم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الم",
+        "v1_min_tashkeel_no_tashkeel": "الم",
+        "min_tashkeel_first2": [
+          "الم"
+        ]
+      },
+      "30": {
+        "v1_tokens_first2": [
+          "الم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "الم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الم",
+        "v1_min_tashkeel_no_tashkeel": "الم",
+        "min_tashkeel_first2": [
+          "الم"
+        ]
+      },
+      "31": {
+        "v1_tokens_first2": [
+          "الم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "الم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الم",
+        "v1_min_tashkeel_no_tashkeel": "الم",
+        "min_tashkeel_first2": [
+          "الم"
+        ]
+      },
+      "32": {
+        "v1_tokens_first2": [
+          "الم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "الم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "الم",
+        "v1_min_tashkeel_no_tashkeel": "الم",
+        "min_tashkeel_first2": [
+          "الم"
+        ]
+      },
+      "36": {
+        "v1_tokens_first2": [
+          "يس"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "يس",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "يس",
+        "v1_min_tashkeel_no_tashkeel": "يس",
+        "min_tashkeel_first2": [
+          "يس"
+        ]
+      },
+      "38": {
+        "v1_tokens_first2": [
+          "ص",
+          "والقرآن"
+        ],
+        "n_tokens_v1": 4,
+        "muq_token": "ص",
+        "next_token": "والقرآن",
+        "muq_is_singleton_letter": true,
+        "next_starts_with_wal": true,
+        "matches_pattern": true,
+        "v1_no_tashkeel": "ص والقرآن ذي الذكر",
+        "v1_min_tashkeel_no_tashkeel": "ص والقرءان ذى الذكر",
+        "min_tashkeel_first2": [
+          "ص",
+          "والقرءان"
+        ]
+      },
+      "40": {
+        "v1_tokens_first2": [
+          "حم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "حم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "حم",
+        "v1_min_tashkeel_no_tashkeel": "حم",
+        "min_tashkeel_first2": [
+          "حم"
+        ]
+      },
+      "41": {
+        "v1_tokens_first2": [
+          "حم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "حم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "حم",
+        "v1_min_tashkeel_no_tashkeel": "حم",
+        "min_tashkeel_first2": [
+          "حم"
+        ]
+      },
+      "42": {
+        "v1_tokens_first2": [
+          "حم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "حم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "حم",
+        "v1_min_tashkeel_no_tashkeel": "حم",
+        "min_tashkeel_first2": [
+          "حم"
+        ]
+      },
+      "43": {
+        "v1_tokens_first2": [
+          "حم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "حم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "حم",
+        "v1_min_tashkeel_no_tashkeel": "حم",
+        "min_tashkeel_first2": [
+          "حم"
+        ]
+      },
+      "44": {
+        "v1_tokens_first2": [
+          "حم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "حم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "حم",
+        "v1_min_tashkeel_no_tashkeel": "حم",
+        "min_tashkeel_first2": [
+          "حم"
+        ]
+      },
+      "45": {
+        "v1_tokens_first2": [
+          "حم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "حم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "حم",
+        "v1_min_tashkeel_no_tashkeel": "حم",
+        "min_tashkeel_first2": [
+          "حم"
+        ]
+      },
+      "46": {
+        "v1_tokens_first2": [
+          "حم"
+        ],
+        "n_tokens_v1": 1,
+        "muq_token": "حم",
+        "next_token": null,
+        "muq_is_singleton_letter": false,
+        "next_starts_with_wal": false,
+        "matches_pattern": false,
+        "v1_no_tashkeel": "حم",
+        "v1_min_tashkeel_no_tashkeel": "حم",
+        "min_tashkeel_first2": [
+          "حم"
+        ]
+      },
+      "50": {
+        "v1_tokens_first2": [
+          "ق",
+          "والقرآن"
+        ],
+        "n_tokens_v1": 3,
+        "muq_token": "ق",
+        "next_token": "والقرآن",
+        "muq_is_singleton_letter": true,
+        "next_starts_with_wal": true,
+        "matches_pattern": true,
+        "v1_no_tashkeel": "ق والقرآن المجيد",
+        "v1_min_tashkeel_no_tashkeel": "ق والقرءان المجيد",
+        "min_tashkeel_first2": [
+          "ق",
+          "والقرءان"
+        ]
+      },
+      "68": {
+        "v1_tokens_first2": [
+          "ن",
+          "والقلم"
+        ],
+        "n_tokens_v1": 4,
+        "muq_token": "ن",
+        "next_token": "والقلم",
+        "muq_is_singleton_letter": true,
+        "next_starts_with_wal": true,
+        "matches_pattern": true,
+        "v1_no_tashkeel": "ن والقلم وما يسطرون",
+        "v1_min_tashkeel_no_tashkeel": "ن والقلم وما يسطرون",
+        "min_tashkeel_first2": [
+          "ن",
+          "والقلم"
+        ]
+      }
+    }
+  },
+  "h2": {
+    "per_surah_density": {
+      "2": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 91,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "3": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 150,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "7": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 92,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "10": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 174,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "11": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 163,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "12": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 135,
+        "n_prophet_hits": 8,
+        "hit_tokens": [
+          "يوسف",
+          "يعقوب",
+          "إبراهيم",
+          "وإسحاق",
+          "يوسف",
+          "ليوسف",
+          "يوسف",
+          "يوسف"
+        ],
+        "density_per_100w": 5.9259259259259265
+      },
+      "13": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 185,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "14": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 205,
+        "n_prophet_hits": 4,
+        "hit_tokens": [
+          "موسى",
+          "موسى",
+          "موسى",
+          "نوح"
+        ],
+        "density_per_100w": 1.951219512195122
+      },
+      "15": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 74,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "19": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 99,
+        "n_prophet_hits": 4,
+        "hit_tokens": [
+          "زكريا",
+          "يعقوب",
+          "زكريا",
+          "يحيى"
+        ],
+        "density_per_100w": 4.040404040404041
+      },
+      "20": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 68,
+        "n_prophet_hits": 1,
+        "hit_tokens": [
+          "موسى"
+        ],
+        "density_per_100w": 1.4705882352941175
+      },
+      "26": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 72,
+        "n_prophet_hits": 1,
+        "hit_tokens": [
+          "موسى"
+        ],
+        "density_per_100w": 1.3888888888888888
+      },
+      "27": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 101,
+        "n_prophet_hits": 3,
+        "hit_tokens": [
+          "موسى",
+          "موسى",
+          "موسى"
+        ],
+        "density_per_100w": 2.9702970297029703
+      },
+      "28": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 126,
+        "n_prophet_hits": 3,
+        "hit_tokens": [
+          "موسى",
+          "موسى",
+          "موسى"
+        ],
+        "density_per_100w": 2.380952380952381
+      },
+      "29": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 124,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "30": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 118,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "31": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 101,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "32": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 119,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "36": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 56,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "38": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 91,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "40": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 134,
+        "n_prophet_hits": 1,
+        "hit_tokens": [
+          "نوح"
+        ],
+        "density_per_100w": 0.7462686567164178
+      },
+      "41": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 97,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "42": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 124,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "43": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 65,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "44": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 57,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "45": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 101,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "46": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 164,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "50": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 81,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      },
+      "68": {
+        "n_verses_used": 10,
+        "n_words_after_muq_strip": 44,
+        "n_prophet_hits": 0,
+        "hit_tokens": [],
+        "density_per_100w": 0.0
+      }
+    },
+    "rank_table": {
+      "12": {
+        "rank": 1,
+        "density_per_100w": 5.9259259259259265,
+        "n_words": 135,
+        "n_hits": 8,
+        "hit_tokens": [
+          "يوسف",
+          "يعقوب",
+          "إبراهيم",
+          "وإسحاق",
+          "يوسف",
+          "ليوسف",
+          "يوسف",
+          "يوسف"
+        ]
+      },
+      "19": {
+        "rank": 2,
+        "density_per_100w": 4.040404040404041,
+        "n_words": 99,
+        "n_hits": 4,
+        "hit_tokens": [
+          "زكريا",
+          "يعقوب",
+          "زكريا",
+          "يحيى"
+        ]
+      },
+      "27": {
+        "rank": 3,
+        "density_per_100w": 2.9702970297029703,
+        "n_words": 101,
+        "n_hits": 3,
+        "hit_tokens": [
+          "موسى",
+          "موسى",
+          "موسى"
+        ]
+      },
+      "28": {
+        "rank": 4,
+        "density_per_100w": 2.380952380952381,
+        "n_words": 126,
+        "n_hits": 3,
+        "hit_tokens": [
+          "موسى",
+          "موسى",
+          "موسى"
+        ]
+      },
+      "14": {
+        "rank": 5,
+        "density_per_100w": 1.951219512195122,
+        "n_words": 205,
+        "n_hits": 4,
+        "hit_tokens": [
+          "موسى",
+          "موسى",
+          "موسى",
+          "نوح"
+        ]
+      },
+      "20": {
+        "rank": 6,
+        "density_per_100w": 1.4705882352941175,
+        "n_words": 68,
+        "n_hits": 1,
+        "hit_tokens": [
+          "موسى"
+        ]
+      },
+      "26": {
+        "rank": 7,
+        "density_per_100w": 1.3888888888888888,
+        "n_words": 72,
+        "n_hits": 1,
+        "hit_tokens": [
+          "موسى"
+        ]
+      },
+      "40": {
+        "rank": 8,
+        "density_per_100w": 0.7462686567164178,
+        "n_words": 134,
+        "n_hits": 1,
+        "hit_tokens": [
+          "نوح"
+        ]
+      },
+      "2": {
+        "rank": 9,
+        "density_per_100w": 0.0,
+        "n_words": 91,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "3": {
+        "rank": 10,
+        "density_per_100w": 0.0,
+        "n_words": 150,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "7": {
+        "rank": 11,
+        "density_per_100w": 0.0,
+        "n_words": 92,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "10": {
+        "rank": 12,
+        "density_per_100w": 0.0,
+        "n_words": 174,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "11": {
+        "rank": 13,
+        "density_per_100w": 0.0,
+        "n_words": 163,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "13": {
+        "rank": 14,
+        "density_per_100w": 0.0,
+        "n_words": 185,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "15": {
+        "rank": 15,
+        "density_per_100w": 0.0,
+        "n_words": 74,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "29": {
+        "rank": 16,
+        "density_per_100w": 0.0,
+        "n_words": 124,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "30": {
+        "rank": 17,
+        "density_per_100w": 0.0,
+        "n_words": 118,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "31": {
+        "rank": 18,
+        "density_per_100w": 0.0,
+        "n_words": 101,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "32": {
+        "rank": 19,
+        "density_per_100w": 0.0,
+        "n_words": 119,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "36": {
+        "rank": 20,
+        "density_per_100w": 0.0,
+        "n_words": 56,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "38": {
+        "rank": 21,
+        "density_per_100w": 0.0,
+        "n_words": 91,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "41": {
+        "rank": 22,
+        "density_per_100w": 0.0,
+        "n_words": 97,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "42": {
+        "rank": 23,
+        "density_per_100w": 0.0,
+        "n_words": 124,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "43": {
+        "rank": 24,
+        "density_per_100w": 0.0,
+        "n_words": 65,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "44": {
+        "rank": 25,
+        "density_per_100w": 0.0,
+        "n_words": 57,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "45": {
+        "rank": 26,
+        "density_per_100w": 0.0,
+        "n_words": 101,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "46": {
+        "rank": 27,
+        "density_per_100w": 0.0,
+        "n_words": 164,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "50": {
+        "rank": 28,
+        "density_per_100w": 0.0,
+        "n_words": 81,
+        "n_hits": 0,
+        "hit_tokens": []
+      },
+      "68": {
+        "rank": 29,
+        "density_per_100w": 0.0,
+        "n_words": 44,
+        "n_hits": 0,
+        "hit_tokens": []
+      }
+    },
+    "predicted_top_half_targets": [
+      38,
+      50,
+      68
+    ],
+    "in_top_half_obs": {
+      "38": false,
+      "50": false,
+      "68": false
+    },
+    "n_in_top_half_obs": 0,
+    "top_half_size": 15,
+    "permutation_null": {
+      "obs_rank": {
+        "19": 20,
+        "27": 27,
+        "28": 28
+      },
+      "obs_in_top_half": {
+        "19": false,
+        "27": false,
+        "28": false
+      },
+      "obs_count_in_top_half": 0,
+      "p_count_geq_obs": 1.0,
+      "p_all_in_top_half_under_null": 0.0150984901509849,
+      "n_perms": 10000,
+      "top_half_size": 15,
+      "n_total": 29
+    },
+    "verdict": "COHORT-NULL"
+  },
+  "h3": {
+    "status": "DATA-GAP",
+    "rationale": "Pre-Islamic qaṣīda openers (nasīb-prelude, atlal-motif, etc.) do not use isolated single Arabic letters as verse-openers; the form (singleton-letter + oath-wāw + def-art-X) is genre-foreign to qaṣīda. Corpus-distinctness against poetry is therefore vacuously true at the pattern level (0 of any pre-Islamic section matches). Operational test omitted as data-vacuous; formal cross-corpus verdict deferred."
+  },
+  "overall_verdict": "FORM-COHERENT-CONTENT-INDEPENDENT — H1 corpus-exact + H2 NULL; cross-finding-026 §1 letter-axis ⊥ content-axis instantiation"
+}

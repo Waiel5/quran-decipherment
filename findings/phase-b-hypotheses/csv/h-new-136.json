@@ -1,0 +1,379 @@
+{
+  "finding_id": "H-NEW-136",
+  "title": "Muqattaat cardinality × Pattern-B composite Spearman correlation",
+  "pre_reg_path": "scratch/theorist-2026-04-17-unified-equation.md §7",
+  "seed": 20260418,
+  "n_perms": 10000,
+  "muq_surahs": [
+    2,
+    3,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    19,
+    20,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    36,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    50,
+    68
+  ],
+  "n_muq": 29,
+  "pattern_B_axes": [
+    "qul_density",
+    "book_reference_density",
+    "eschatological_density",
+    "loanword_density"
+  ],
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05,
+  "direction_preregistered": "POSITIVE (one-sided)",
+  "primary": {
+    "rho_spearman": 0.37062088512106184,
+    "p_one_sided_perm": 0.023897610238976102,
+    "p_two_sided_perm": 0.04739526047395261,
+    "n_ge_one_sided": 238,
+    "n_ge_two_sided": 473,
+    "pass_directed": true,
+    "strong_pass": false,
+    "verdict": "PASS-DIRECTED"
+  },
+  "by_cardinality": {
+    "1": {
+      "n": 3,
+      "mean_composite": -0.28946517068320793,
+      "surahs": [
+        38,
+        50,
+        68
+      ]
+    },
+    "2": {
+      "n": 9,
+      "mean_composite": 0.4800300253885344,
+      "surahs": [
+        20,
+        27,
+        36,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "3": {
+      "n": 13,
+      "mean_composite": 0.6064278984584207,
+      "surahs": [
+        2,
+        3,
+        10,
+        11,
+        12,
+        14,
+        15,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "4": {
+      "n": 2,
+      "mean_composite": 1.349681552759486,
+      "surahs": [
+        7,
+        13
+      ]
+    },
+    "5": {
+      "n": 2,
+      "mean_composite": 0.41050757991172154,
+      "surahs": [
+        19,
+        42
+      ]
+    }
+  },
+  "per_surah_composite": {
+    "2": {
+      "muq_cardinality": 3,
+      "composite_z": 1.0760211181862276,
+      "qul_z": 0.2781779873038089,
+      "book_z": 1.6407272866120057,
+      "eschat_z": 0.6862923635830582,
+      "loan_z": 1.6988868352460373
+    },
+    "3": {
+      "muq_cardinality": 3,
+      "composite_z": 1.1637597670028443,
+      "qul_z": 1.0116398807634122,
+      "book_z": 1.8931017286144287,
+      "eschat_z": 0.5854977809442119,
+      "loan_z": 1.1647996776893246
+    },
+    "7": {
+      "muq_cardinality": 4,
+      "composite_z": 0.8397878245887467,
+      "qul_z": 0.14379262926580305,
+      "book_z": 0.9056560963136872,
+      "eschat_z": 1.2971545345004025,
+      "loan_z": 1.0125480382750938
+    },
+    "10": {
+      "muq_cardinality": 3,
+      "composite_z": 1.4681239833742923,
+      "qul_z": 2.4934632916081414,
+      "book_z": 1.2486944273713785,
+      "eschat_z": 0.969639160427861,
+      "loan_z": 1.1606990540897881
+    },
+    "11": {
+      "muq_cardinality": 3,
+      "composite_z": 0.6138474316598468,
+      "qul_z": -0.26486903368546305,
+      "book_z": -0.27353192332876536,
+      "eschat_z": 2.2781238465417215,
+      "loan_z": 0.715666837111894
+    },
+    "12": {
+      "muq_cardinality": 3,
+      "composite_z": -0.03424082390957377,
+      "qul_z": -0.4815596451860057,
+      "book_z": -0.26861661838175344,
+      "eschat_z": -0.24204189778005053,
+      "loan_z": 0.8552548657095146
+    },
+    "13": {
+      "muq_cardinality": 4,
+      "composite_z": 1.8595752809302253,
+      "qul_z": 2.667797225682512,
+      "book_z": 2.527772761937646,
+      "eschat_z": 0.36335772329950927,
+      "loan_z": 1.8793734128012336
+    },
+    "14": {
+      "muq_cardinality": 3,
+      "composite_z": 0.7510679561892255,
+      "qul_z": -0.06663284239513147,
+      "book_z": -0.22340211454225312,
+      "eschat_z": 1.9312610802623944,
+      "loan_z": 1.3630457014318924
+    },
+    "15": {
+      "muq_cardinality": 3,
+      "composite_z": -0.26721204983933156,
+      "qul_z": -0.4661755498240624,
+      "book_z": 0.18940043349889987,
+      "eschat_z": -0.3990649791630299,
+      "loan_z": -0.3930081038691338
+    },
+    "19": {
+      "muq_cardinality": 5,
+      "composite_z": 0.12629589244666264,
+      "qul_z": -0.4647234795985729,
+      "book_z": 0.2009287538523584,
+      "eschat_z": 0.23824043532758263,
+      "loan_z": 0.5307378602052825
+    },
+    "20": {
+      "muq_cardinality": 2,
+      "composite_z": 0.0870362056839355,
+      "qul_z": -0.29541209130649193,
+      "book_z": 0.16429431361803437,
+      "eschat_z": 0.08970051701478363,
+      "loan_z": 0.38956208340941595
+    },
+    "26": {
+      "muq_cardinality": 3,
+      "composite_z": -0.42888729702560313,
+      "qul_z": -0.546416822548912,
+      "book_z": -0.18486877212598413,
+      "eschat_z": -0.5050975570887296,
+      "loan_z": -0.47916603633878685
+    },
+    "27": {
+      "muq_cardinality": 2,
+      "composite_z": 0.4396506985417543,
+      "qul_z": 0.4519075604854564,
+      "book_z": 0.6631772118958765,
+      "eschat_z": 0.39075388410665657,
+      "loan_z": 0.25276413767902783
+    },
+    "28": {
+      "muq_cardinality": 3,
+      "composite_z": 0.7180123925713322,
+      "qul_z": 0.03188453751885154,
+      "book_z": 0.33062235782876803,
+      "eschat_z": 0.7940300409880008,
+      "loan_z": 1.7155126339497084
+    },
+    "29": {
+      "muq_cardinality": 3,
+      "composite_z": 0.9466140483815063,
+      "qul_z": 0.20821636968373405,
+      "book_z": 1.6531963795963152,
+      "eschat_z": 1.0533985236295293,
+      "loan_z": 0.8716449206164466
+    },
+    "30": {
+      "muq_cardinality": 3,
+      "composite_z": 0.96423449416775,
+      "qul_z": -0.3736786764603784,
+      "book_z": 1.7936814938862014,
+      "eschat_z": 1.3957649207163467,
+      "loan_z": 1.0411702385288302
+    },
+    "31": {
+      "muq_cardinality": 3,
+      "composite_z": 0.30858833711260375,
+      "qul_z": -0.19412592228381528,
+      "book_z": 1.2527184519826122,
+      "eschat_z": -0.42347613047046784,
+      "loan_z": 0.5992369492220859
+    },
+    "32": {
+      "muq_cardinality": 3,
+      "composite_z": 0.6036333220883487,
+      "qul_z": 0.33072058992459985,
+      "book_z": 1.048029733424498,
+      "eschat_z": 0.5969099941804392,
+      "loan_z": 0.4388729708238579
+    },
+    "36": {
+      "muq_cardinality": 2,
+      "composite_z": -0.1928642850655641,
+      "qul_z": -0.4387436689377057,
+      "book_z": 0.22751333837828586,
+      "eschat_z": -0.15657107250058894,
+      "loan_z": -0.4036557372022476
+    },
+    "38": {
+      "muq_cardinality": 1,
+      "composite_z": -0.2189982163844504,
+      "qul_z": -0.12820620484137082,
+      "book_z": -0.5167091881504406,
+      "eschat_z": -0.21750704131395998,
+      "loan_z": -0.01357043123203017
+    },
+    "40": {
+      "muq_cardinality": 2,
+      "composite_z": 0.5921387917487942,
+      "qul_z": -0.44273742806674876,
+      "book_z": 0.37548108673354963,
+      "eschat_z": 1.187659855820438,
+      "loan_z": 1.2481516525079381
+    },
+    "41": {
+      "muq_cardinality": 2,
+      "composite_z": 0.9178484353092585,
+      "qul_z": 0.6959646539760701,
+      "book_z": 1.8212982257551535,
+      "eschat_z": 0.6729914157552875,
+      "loan_z": 0.48113944575052275
+    },
+    "42": {
+      "muq_cardinality": 5,
+      "composite_z": 0.6947192673767805,
+      "qul_z": -0.07685634408431839,
+      "book_z": 0.8885821871622467,
+      "eschat_z": 0.19209941146143492,
+      "loan_z": 1.7750518149677585
+    },
+    "43": {
+      "muq_cardinality": 2,
+      "composite_z": 0.050027071402304224,
+      "qul_z": -0.29189449197373296,
+      "book_z": 0.1487792957141287,
+      "eschat_z": 0.3096812565495512,
+      "loan_z": 0.03354222531926995
+    },
+    "44": {
+      "muq_cardinality": 2,
+      "composite_z": -0.4203839866218259,
+      "qul_z": -0.6084784319220378,
+      "book_z": -0.561229998193416,
+      "eschat_z": 0.04757634009763595,
+      "loan_z": -0.5594038564694858
+    },
+    "45": {
+      "muq_cardinality": 2,
+      "composite_z": 1.342280299367748,
+      "qul_z": 0.15303428849415485,
+      "book_z": 2.687120089754729,
+      "eschat_z": 2.102088388580141,
+      "loan_z": 0.4268784306419668
+    },
+    "46": {
+      "muq_cardinality": 2,
+      "composite_z": 1.5045369981304053,
+      "qul_z": 1.0015770341007697,
+      "book_z": 1.403102000311023,
+      "eschat_z": 2.09680087665602,
+      "loan_z": 1.5166680814538083
+    },
+    "50": {
+      "muq_cardinality": 1,
+      "composite_z": 0.04483118401828367,
+      "qul_z": -0.6084784319220378,
+      "book_z": -0.27757339628519734,
+      "eschat_z": 0.9012356804798325,
+      "loan_z": 0.1641408838005373
+    },
+    "68": {
+      "muq_cardinality": 1,
+      "composite_z": -0.694228479683457,
+      "qul_z": -0.6084784319220378,
+      "book_z": -0.5101912531813698,
+      "eschat_z": -0.5706472061412718,
+      "loan_z": -1.0875970274891484
+    }
+  },
+  "mw5_positive_control": {
+    "description": "Pattern-B axes vs Nöldeke-rank across 114 surahs (inherited from H-NEW-125)",
+    "axis_results": {
+      "qul_density": {
+        "rho_spearman_vs_noldeke": 0.5420880560578859,
+        "p_perm_two_sided": 9.999000099990002e-05,
+        "bonferroni_survives_h125": true
+      },
+      "book_reference_density": {
+        "rho_spearman_vs_noldeke": 0.5743518951320435,
+        "p_perm_two_sided": 9.999000099990002e-05,
+        "bonferroni_survives_h125": true
+      },
+      "eschatological_density": {
+        "rho_spearman_vs_noldeke": 0.7095959400098946,
+        "p_perm_two_sided": 9.999000099990002e-05,
+        "bonferroni_survives_h125": true
+      },
+      "loanword_density": {
+        "rho_spearman_vs_noldeke": 0.8328675472230577,
+        "p_perm_two_sided": 9.999000099990002e-05,
+        "bonferroni_survives_h125": true
+      }
+    },
+    "all_axes_bonferroni_survive_in_h125": true
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "seed": 20260419,
+  "bonferroni_k": 2,
+  "alpha": 0.05,
+  "alpha_corrected": 0.025,
+  "tolerance": 0.05,
+  "p0_uniform_null": 0.1,
+  "n_positions": 12,
+  "positions": [
+    {
+      "code": "HASHR",
+      "surah": 59,
+      "verse": 22,
+      "total": 24,
+      "ratio": 0.9166666666666666
+    },
+    {
+      "code": "HASHR",
+      "surah": 59,
+      "verse": 23,
+      "total": 24,
+      "ratio": 0.9583333333333334
+    },
+    {
+      "code": "HASHR",
+      "surah": 59,
+      "verse": 24,
+      "total": 24,
+      "ratio": 1.0
+    },
+    {
+      "code": "NUR",
+      "surah": 24,
+      "verse": 35,
+      "total": 64,
+      "ratio": 0.546875
+    },
+    {
+      "code": "KURSI",
+      "surah": 2,
+      "verse": 255,
+      "total": 286,
+      "ratio": 0.8916083916083916
+    },
+    {
+      "code": "IKHLAS",
+      "surah": 112,
+      "verse": 1,
+      "total": 4,
+      "ratio": 0.25
+    },
+    {
+      "code": "IKHLAS",
+      "surah": 112,
+      "verse": 2,
+      "total": 4,
+      "ratio": 0.5
+    },
+    {
+      "code": "IKHLAS",
+      "surah": 112,
+      "verse": 3,
+      "total": 4,
+      "ratio": 0.75
+    },
+    {
+      "code": "IKHLAS",
+      "surah": 112,
+      "verse": 4,
+      "total": 4,
+      "ratio": 1.0
+    },
+    {
+      "code": "FATIHA",
+      "surah": 1,
+      "verse": 1,
+      "total": 7,
+      "ratio": 0.14285714285714285
+    },
+    {
+      "code": "FATIHA",
+      "surah": 1,
+      "verse": 4,
+      "total": 7,
+      "ratio": 0.5714285714285714
+    },
+    {
+      "code": "FATIHA",
+      "surah": 1,
+      "verse": 7,
+      "total": 7,
+      "ratio": 1.0
+    }
+  ],
+  "descriptive": {
+    "mean_ratio": 0.7106474254911754,
+    "sample_variance": 0.09221999639913027,
+    "uniform_expected_variance": 0.08333333333333333
+  },
+  "tests": [
+    {
+      "label": "golden_ratio_minus_1",
+      "anchor": 0.6180339887498949,
+      "tolerance": 0.05,
+      "n_positions": 12,
+      "hits": 1,
+      "expected_hits": 1.2000000000000002,
+      "p_value": 0.7175704635190002,
+      "bonferroni_corrected_alpha": 0.025,
+      "promoted": false
+    },
+    {
+      "label": "two_thirds",
+      "anchor": 0.6666666666666666,
+      "tolerance": 0.05,
+      "n_positions": 12,
+      "hits": 0,
+      "expected_hits": 1.2000000000000002,
+      "p_value": 1.0000000000000002,
+      "bonferroni_corrected_alpha": 0.025,
+      "promoted": false
+    }
+  ],
+  "edge_counts": {
+    "near_0.0": 0,
+    "near_0.5": 2,
+    "near_0.618": 1,
+    "near_0.667": 0,
+    "near_1.0": 5
+  }
+}

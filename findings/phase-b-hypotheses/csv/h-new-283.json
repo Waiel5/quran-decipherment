@@ -1,0 +1,124 @@
+{
+  "id": "H-NEW-283",
+  "title": "Divine-name surah max-edge under fixed-margin null",
+  "parent_hypothesis": "H-NEW-263",
+  "follow_up": "H-NEW-276",
+  "seed": 20260694,
+  "pre_reg_sha256": "c189e547921bd400e8cca72713da2c8397b9f413e5478cca5ad630f2c2293bdc",
+  "source_csv": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/divine-names-by-verse.csv",
+  "n_surahs": 114,
+  "n_attested_names": 58,
+  "n_perm": 10000,
+  "accepted_swaps_per_perm": 500,
+  "alpha": 0.025,
+  "observed": {
+    "M_obs": 10,
+    "M_null_mean": 9.7615,
+    "M_null_sd": 0.8430236170368468,
+    "M_p_upper": 0.6000399960003999,
+    "M_ge_count": 6000,
+    "mc_se_p_M": 0.004898897827065186,
+    "primary_pass_alpha_0_025": false,
+    "top_edges": [
+      {
+        "surah_a": 2,
+        "surah_b": 3,
+        "shared_names": 10
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 5,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 40,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 5,
+        "surah_b": 6,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 6,
+        "surah_b": 10,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 40,
+        "surah_b": 42,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 6,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 10,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 27,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 42,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 3,
+        "surah_b": 5,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 3,
+        "surah_b": 40,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 5,
+        "surah_b": 10,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 5,
+        "surah_b": 29,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 6,
+        "surah_b": 40,
+        "shared_names": 8
+      }
+    ],
+    "max_edges": [
+      {
+        "surah_a": 2,
+        "surah_b": 3,
+        "shared_names": 10
+      }
+    ],
+    "max_edge_count": 1,
+    "q2_q3_edge": {
+      "surah_a": 2,
+      "surah_b": 3,
+      "shared_names": 10
+    },
+    "q2_q3_is_unique_max_edge": true
+  },
+  "mw5_positive_control": {
+    "description": "Synthetic planted-pair incidence matrix from the parent-line control family",
+    "M_obs": 20,
+    "M_null_mean": 8.85,
+    "M_null_sd": 1.0504100839852097,
+    "M_p_upper": 0.008264462809917356,
+    "M_ge_count": 0,
+    "pass": true
+  },
+  "verdict": "MAX-EDGE-NO-PASS"
+}

@@ -1,0 +1,367 @@
+{
+  "test_id": "Q001-F-01",
+  "title": "Chiastic-symmetry score for Q 1 al-Fātiḥa",
+  "prereg_sha_expected": "84c6157b63be6718ddc999a08f698ab843c0b2369b704a1fb6d09b82473608da",
+  "prereg_sha_runtime": "84c6157b63be6718ddc999a08f698ab843c0b2369b704a1fb6d09b82473608da",
+  "rules_tuple": {
+    "tashkeel": "no-tashkeel",
+    "token": "orthographic-word",
+    "basmala": "counted-V1",
+    "reading": "Hafs-Kufan"
+  },
+  "verse_words": {
+    "1": [
+      "بسم",
+      "الله",
+      "الرحمن",
+      "الرحيم"
+    ],
+    "2": [
+      "الحمد",
+      "لله",
+      "رب",
+      "العالمين"
+    ],
+    "3": [
+      "الرحمن",
+      "الرحيم"
+    ],
+    "4": [
+      "مالك",
+      "يوم",
+      "الدين"
+    ],
+    "5": [
+      "إياك",
+      "نعبد",
+      "وإياك",
+      "نستعين"
+    ],
+    "6": [
+      "اهدنا",
+      "الصراط",
+      "المستقيم"
+    ],
+    "7": [
+      "صراط",
+      "الذين",
+      "أنعمت",
+      "عليهم",
+      "غير",
+      "المغضوب",
+      "عليهم",
+      "ولا",
+      "الضالين"
+    ]
+  },
+  "mirror_pairs": [
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "M_obs_word_jaccard": 0.0,
+  "M_obs_letter_jaccard": 0.3736842105263158,
+  "n_pairings": 15,
+  "word_rank_top1is_highest": 4,
+  "letter_rank_top1is_highest": 15,
+  "word_p_one_tailed": 1.0,
+  "letter_p_one_tailed": 1.0,
+  "all_pairings_records": [
+    {
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.48333333333333334,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.503968253968254,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.47222222222222215,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "word_jaccard_mean": 0.16666666666666666,
+      "letter_jaccard_mean": 0.525,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "word_jaccard_mean": 0.16666666666666666,
+      "letter_jaccard_mean": 0.5111111111111111,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "word_jaccard_mean": 0.16666666666666666,
+      "letter_jaccard_mean": 0.5023391812865498,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.4829545454545454,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.3819444444444444,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.4049185463659148,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.501010101010101,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.4138888888888889,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.4023391812865497,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.4635832004253057,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.4082080200501253,
+      "is_mirror": false
+    },
+    {
+      "pairing": [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "word_jaccard_mean": 0.0,
+      "letter_jaccard_mean": 0.3736842105263158,
+      "is_mirror": true
+    }
+  ],
+  "verdict_word": "NULL",
+  "verdict_letter": "NULL"
+}

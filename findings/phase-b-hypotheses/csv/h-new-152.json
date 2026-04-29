@@ -1,0 +1,59 @@
+{
+  "finding_id": "h-new-152",
+  "title": "Book-reference inclusio — Q 50 v1↔v_last uniqueness",
+  "pre_reg_sha256": "4be90969b0c522a45c054b26bbb48009c3312852b34c0b356b1f912121dc404f",
+  "seed": 20260417,
+  "date": "2026-04-17",
+  "bonferroni": {
+    "k": 2,
+    "alpha_bon": 0.025,
+    "family": "h-new-152-book-ref-inclusio"
+  },
+  "cell_A": {
+    "cell_name": "A_qrA_ktb",
+    "book_roots": [
+      "ktb",
+      "qrA"
+    ],
+    "n_v1_has": 14,
+    "n_vlast_has": 7,
+    "n_both_v1_and_vlast": 2,
+    "surahs_with_inclusio": [
+      13,
+      50
+    ],
+    "p_v1": 0.12280701754385964,
+    "p_vlast": 0.06140350877192982,
+    "p_joint_independent": 0.007540781779008925,
+    "expected_both_under_independence": 0.8596491228070174,
+    "p_binom_two_sided": 0.4251902854207785,
+    "p_perm_lower": 0.9636,
+    "p_perm_upper": 0.1991,
+    "p_perm_two_sided": 0.3982,
+    "threshold_alpha_bon": 0.025,
+    "pass": "False"
+  },
+  "cell_B": {
+    "cell_name": "B_qrA_only",
+    "book_roots": [
+      "qrA"
+    ],
+    "n_v1_has": 6,
+    "n_vlast_has": 2,
+    "n_both_v1_and_vlast": 1,
+    "surahs_with_inclusio": [
+      50
+    ],
+    "p_v1": 0.05263157894736842,
+    "p_vlast": 0.017543859649122806,
+    "p_joint_independent": 0.0009233610341643581,
+    "expected_both_under_independence": 0.10526315789473682,
+    "p_binom_two_sided": 0.1999122840832248,
+    "p_perm_lower": 0.9979,
+    "p_perm_upper": 0.0983,
+    "p_perm_two_sided": 0.1966,
+    "threshold_alpha_bon": 0.025,
+    "pass": "False"
+  },
+  "final_verdict": "NULL — no rare-inclusio pattern at α_bon=0.025"
+}

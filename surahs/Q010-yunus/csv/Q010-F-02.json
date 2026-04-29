@@ -1,0 +1,33 @@
+{
+  "finding_id": "Q010-F-02",
+  "prereg_sha256": "7b821be7d6b12fec97e2488fcc33ec757cbf0e4cc7fad43f7672e8c6125c2ed5",
+  "alr_cluster": [
+    10,
+    11,
+    12,
+    14,
+    15
+  ],
+  "intra_mean_FR": 0.9551825,
+  "corpus_mean_FR": 0.9234872255860892,
+  "perm_p": 0.6056,
+  "n_perm": 10000,
+  "alpha_bonferroni_2": 0.025,
+  "q10_to_alr_mean": 0.91428475,
+  "q10_to_others_mean": 1.0532226422018347,
+  "q10_alr_advantage": 0.13893789220183472,
+  "pairwise_alr": {
+    "Q10-Q11": 0.805201,
+    "Q10-Q12": 1.005986,
+    "Q10-Q14": 0.88109,
+    "Q10-Q15": 0.964862,
+    "Q11-Q12": 0.963772,
+    "Q11-Q14": 0.896227,
+    "Q11-Q15": 0.952179,
+    "Q12-Q14": 1.075726,
+    "Q12-Q15": 0.997671,
+    "Q14-Q15": 1.009111
+  },
+  "verdict_intra_lt_random": "NULL",
+  "verdict_q10_alr_pull": "PULLED-IN"
+}

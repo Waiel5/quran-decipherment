@@ -1,0 +1,1251 @@
+{
+  "id": "H-NEW-274",
+  "title": "Empirical-vs-classical a-priori reassignment test for Q36 YS and Q42 HMASQ",
+  "prereg_sha256": "5a64d6c614eb75d843831fd8243d037b020865d3845f614b1d3a5e4ecd59312d",
+  "discovery_source": {
+    "space_id": "h232_discovery_baseline",
+    "source": "h-new-232.json",
+    "source_field": "per_singleton_results",
+    "empirical_replacements": {
+      "YS": "HM",
+      "HMASQ": "TSM"
+    }
+  },
+  "tables": {
+    "classical": {
+      "ALMR": [
+        "ALM",
+        "ALR"
+      ],
+      "ALMS": [
+        "ALM"
+      ],
+      "HMASQ": [
+        "HM"
+      ],
+      "KHYAS": [
+        "HM",
+        "TSM"
+      ],
+      "N": [
+        "ALM",
+        "ALR"
+      ],
+      "Q": [
+        "HM",
+        "TSM"
+      ],
+      "S": [
+        "TSM"
+      ],
+      "TH": [
+        "TSM"
+      ],
+      "TS": [
+        "TSM"
+      ],
+      "YS": [
+        "ALM",
+        "ALR"
+      ]
+    },
+    "empirical": {
+      "ALMR": [
+        "ALM",
+        "ALR"
+      ],
+      "ALMS": [
+        "ALM"
+      ],
+      "HMASQ": [
+        "TSM"
+      ],
+      "KHYAS": [
+        "HM",
+        "TSM"
+      ],
+      "N": [
+        "ALM",
+        "ALR"
+      ],
+      "Q": [
+        "HM",
+        "TSM"
+      ],
+      "S": [
+        "TSM"
+      ],
+      "TH": [
+        "TSM"
+      ],
+      "TS": [
+        "TSM"
+      ],
+      "YS": [
+        "HM"
+      ]
+    }
+  },
+  "spaces": [
+    {
+      "space_id": "h232_discovery_baseline",
+      "split": "discovery",
+      "source": "h-new-232.json",
+      "source_field": "per_singleton_results",
+      "observed_matches_parent": 8,
+      "permutation_p_parent": 0.024975024975024976,
+      "classical_matches": 8,
+      "empirical_matches": 10,
+      "delta_matches": 2,
+      "classical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": false
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "HM"
+          ],
+          "match": false
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "empirical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "HM"
+          ],
+          "match": true
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "disputed_singletons": {
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "distances": {
+            "ALM": 9.519865556354281,
+            "ALR": 9.961124417074306,
+            "HM": 8.46065804256435,
+            "TSM": 9.102435064854541
+          },
+          "margin_empirical_over_classical": 1.0592075137899304
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "distances": {
+            "ALM": 11.077694735510837,
+            "ALR": 11.311917407730453,
+            "HM": 9.920234570143094,
+            "TSM": 6.8318884713623005
+          },
+          "margin_empirical_over_classical": 3.088346098780794
+        }
+      }
+    },
+    {
+      "space_id": "h252_joint_phon_alphabeta",
+      "split": "holdout",
+      "source": "h-new-252.json",
+      "source_field": "joint_results",
+      "observed_matches_parent": 8,
+      "permutation_p_parent": 0.06,
+      "classical_matches": 8,
+      "empirical_matches": 10,
+      "delta_matches": 2,
+      "classical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": false
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "HM"
+          ],
+          "match": false
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "empirical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "HM"
+          ],
+          "match": true
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "disputed_singletons": {
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "distances": {
+            "ALM": 9.439447573108103,
+            "ALR": 9.779454905116324,
+            "HM": 7.65084000557385,
+            "TSM": 9.373051243027975
+          },
+          "margin_empirical_over_classical": 1.7886075675342523
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "distances": {
+            "ALM": 11.104685076450531,
+            "ALR": 11.301933686096222,
+            "HM": 9.43795647050447,
+            "TSM": 7.501113828060608
+          },
+          "margin_empirical_over_classical": 1.936842642443863
+        }
+      }
+    },
+    {
+      "space_id": "h1652_watson_modern_voice",
+      "split": "holdout",
+      "source": "h-new-165-2.json",
+      "source_field": "variants[watson_modern_voice].singleton_geometry.rows",
+      "observed_matches_parent": 8,
+      "permutation_p_parent": 0.02197802197802198,
+      "classical_matches": 8,
+      "empirical_matches": 10,
+      "delta_matches": 2,
+      "classical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": false
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "HM"
+          ],
+          "match": false
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "empirical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "HM"
+          ],
+          "match": true
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "disputed_singletons": {
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "distances": {
+            "ALM": 9.451863547266171,
+            "ALR": 9.89615500876539,
+            "HM": 8.46065804256435,
+            "TSM": 9.094557599002211
+          },
+          "margin_empirical_over_classical": 0.9912055047018207
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "distances": {
+            "ALM": 10.993523277479222,
+            "ALR": 11.229501718180916,
+            "HM": 9.917633250875195,
+            "TSM": 6.7382007768699195
+          },
+          "margin_empirical_over_classical": 3.1794324740052753
+        }
+      }
+    },
+    {
+      "space_id": "h1652_strict_pharyngeal_split",
+      "split": "holdout",
+      "source": "h-new-165-2.json",
+      "source_field": "variants[strict_pharyngeal_split].singleton_geometry.rows",
+      "observed_matches_parent": 8,
+      "permutation_p_parent": 0.024975024975024976,
+      "classical_matches": 8,
+      "empirical_matches": 10,
+      "delta_matches": 2,
+      "classical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": false
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "HM"
+          ],
+          "match": false
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "empirical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "HM"
+          ],
+          "match": true
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "disputed_singletons": {
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "distances": {
+            "ALM": 9.519865556354281,
+            "ALR": 9.961124417074306,
+            "HM": 8.454349908638052,
+            "TSM": 8.870904171762364
+          },
+          "margin_empirical_over_classical": 1.0655156477162286
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "distances": {
+            "ALM": 10.73110159176991,
+            "ALR": 10.972725101771092,
+            "HM": 9.92001944762415,
+            "TSM": 7.0665067286914836
+          },
+          "margin_empirical_over_classical": 2.8535127189326657
+        }
+      }
+    },
+    {
+      "space_id": "h1652_holes_glottal_ha_ayn",
+      "split": "holdout",
+      "source": "h-new-165-2.json",
+      "source_field": "variants[holes_glottal_ha_ayn].singleton_geometry.rows",
+      "observed_matches_parent": 8,
+      "permutation_p_parent": 0.023976023976023976,
+      "classical_matches": 8,
+      "empirical_matches": 10,
+      "delta_matches": 2,
+      "classical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": false
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "HM"
+          ],
+          "match": false
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "empirical_per_singleton": {
+        "ALMS": {
+          "surah": 7,
+          "nearest": "ALM",
+          "accepted": [
+            "ALM"
+          ],
+          "match": true
+        },
+        "ALMR": {
+          "surah": 13,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        },
+        "KHYAS": {
+          "surah": 19,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "TH": {
+          "surah": 20,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "TS": {
+          "surah": 27,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "accepted": [
+            "HM"
+          ],
+          "match": true
+        },
+        "S": {
+          "surah": 38,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "accepted": [
+            "TSM"
+          ],
+          "match": true
+        },
+        "Q": {
+          "surah": 50,
+          "nearest": "TSM",
+          "accepted": [
+            "HM",
+            "TSM"
+          ],
+          "match": true
+        },
+        "N": {
+          "surah": 68,
+          "nearest": "ALR",
+          "accepted": [
+            "ALM",
+            "ALR"
+          ],
+          "match": true
+        }
+      },
+      "disputed_singletons": {
+        "YS": {
+          "surah": 36,
+          "nearest": "HM",
+          "distances": {
+            "ALM": 9.516125665359647,
+            "ALR": 9.94164955459185,
+            "HM": 8.551614306186611,
+            "TSM": 9.081118891622108
+          },
+          "margin_empirical_over_classical": 0.9645113591730361
+        },
+        "HMASQ": {
+          "surah": 42,
+          "nearest": "TSM",
+          "distances": {
+            "ALM": 11.147176206658822,
+            "ALR": 11.337102924897815,
+            "HM": 9.89469999505954,
+            "TSM": 7.0388884791686746
+          },
+          "margin_empirical_over_classical": 2.8558115158908652
+        }
+      }
+    }
+  ],
+  "primary_holdout_test": {
+    "n_holdout_spaces": 4,
+    "n_singleton_cells": 40,
+    "classical_total_matches": 32,
+    "empirical_total_matches": 40,
+    "delta_matches": 8,
+    "improved_cells": [
+      {
+        "space_id": "h252_joint_phon_alphabeta",
+        "singleton": "YS",
+        "surah": 36,
+        "nearest": "HM"
+      },
+      {
+        "space_id": "h252_joint_phon_alphabeta",
+        "singleton": "HMASQ",
+        "surah": 42,
+        "nearest": "TSM"
+      },
+      {
+        "space_id": "h1652_watson_modern_voice",
+        "singleton": "YS",
+        "surah": 36,
+        "nearest": "HM"
+      },
+      {
+        "space_id": "h1652_watson_modern_voice",
+        "singleton": "HMASQ",
+        "surah": 42,
+        "nearest": "TSM"
+      },
+      {
+        "space_id": "h1652_strict_pharyngeal_split",
+        "singleton": "YS",
+        "surah": 36,
+        "nearest": "HM"
+      },
+      {
+        "space_id": "h1652_strict_pharyngeal_split",
+        "singleton": "HMASQ",
+        "surah": 42,
+        "nearest": "TSM"
+      },
+      {
+        "space_id": "h1652_holes_glottal_ha_ayn",
+        "singleton": "YS",
+        "surah": 36,
+        "nearest": "HM"
+      },
+      {
+        "space_id": "h1652_holes_glottal_ha_ayn",
+        "singleton": "HMASQ",
+        "surah": 42,
+        "nearest": "TSM"
+      }
+    ],
+    "worsened_cells": [],
+    "unchanged_cell_count": 32,
+    "discordant_cell_count": 8,
+    "exact_one_sided_p": 0.00390625,
+    "alpha_primary": 0.025,
+    "min_material_delta": 6,
+    "pass_primary": true
+  },
+  "margin_summary": {
+    "YS": {
+      "per_space": [
+        {
+          "space_id": "h252_joint_phon_alphabeta",
+          "margin_empirical_over_classical": 1.7886075675342523
+        },
+        {
+          "space_id": "h1652_watson_modern_voice",
+          "margin_empirical_over_classical": 0.9912055047018207
+        },
+        {
+          "space_id": "h1652_strict_pharyngeal_split",
+          "margin_empirical_over_classical": 1.0655156477162286
+        },
+        {
+          "space_id": "h1652_holes_glottal_ha_ayn",
+          "margin_empirical_over_classical": 0.9645113591730361
+        }
+      ],
+      "mean_margin": 1.2024600197813344,
+      "min_margin": 0.9645113591730361,
+      "all_positive": true
+    },
+    "HMASQ": {
+      "per_space": [
+        {
+          "space_id": "h252_joint_phon_alphabeta",
+          "margin_empirical_over_classical": 1.936842642443863
+        },
+        {
+          "space_id": "h1652_watson_modern_voice",
+          "margin_empirical_over_classical": 3.1794324740052753
+        },
+        {
+          "space_id": "h1652_strict_pharyngeal_split",
+          "margin_empirical_over_classical": 2.8535127189326657
+        },
+        {
+          "space_id": "h1652_holes_glottal_ha_ayn",
+          "margin_empirical_over_classical": 2.8558115158908652
+        }
+      ],
+      "mean_margin": 2.706399837818167,
+      "min_margin": 1.936842642443863,
+      "all_positive": true
+    }
+  },
+  "summary": {
+    "discovery_classical_matches": 8,
+    "discovery_empirical_matches": 10,
+    "all_spaces_classical_matches": 40,
+    "all_spaces_empirical_matches": 50,
+    "all_spaces_delta": 10,
+    "verdict": "PASS-HOLDOUT-STRONGER"
+  }
+}

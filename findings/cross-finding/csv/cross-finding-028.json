@@ -1,0 +1,235 @@
+{
+  "finding_id": "cross-finding-028",
+  "title": "Liturgical-recitation surah-pair ↔ FR-near-pair hypothesis",
+  "pre_reg_sha256": "8606f9e1b76144fe4b6db39cd16118ea640728f48bd0bb1be8050c53a5dd7c96",
+  "date": "2026-05-07",
+  "seed": 20260507,
+  "n_perms": 10000,
+  "corpus_mean_fr": 0.923487,
+  "corpus_median_fr": 0.956707,
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi) — inherited from H-NEW-111",
+  "fr_source": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-111.json",
+  "fr_source_pre_reg_sha256": "ea3f0ee41d413b0e2a9bfced340f7bfa12e93f40ad8c43a92a873c82856ee8c8",
+  "verified_pairs": [
+    {
+      "label": "P1",
+      "surah_a": 50,
+      "surah_b": 54,
+      "fr": 0.882003,
+      "context": "Eid prayer (muslim#1949, tirmidhi#534, abudawud#1155)"
+    },
+    {
+      "label": "P2",
+      "surah_a": 32,
+      "surah_b": 76,
+      "fr": 0.839509,
+      "context": "Fajr-Friday (bukhari#870, bukhari#1037, muslim#1926/1927)"
+    },
+    {
+      "label": "P3",
+      "surah_a": 87,
+      "surah_b": 88,
+      "fr": 0.557249,
+      "context": "Eid + Jumuʿa (muslim#1920, tirmidhi#533, abudawud#1123/1126)"
+    },
+    {
+      "label": "P4",
+      "surah_a": 109,
+      "surah_b": 112,
+      "fr": 0.361118,
+      "context": "Maghrib/Fajr-sunnah/ṭawāf (tirmidhi#870, ibnmajah#883/900)"
+    },
+    {
+      "label": "P5",
+      "surah_a": 113,
+      "surah_b": 114,
+      "fr": 0.271785,
+      "context": "Muʿawwidhatān (bukhari#4809/4810/5526, nasai#5441)"
+    },
+    {
+      "label": "P6",
+      "surah_a": 32,
+      "surah_b": 67,
+      "fr": 0.75342,
+      "context": "Pre-sleep al-Munjiya (tirmidhi#2975) — replaces prompt Q36/Q67 per specialist override"
+    }
+  ],
+  "data_gaps_dropped": [
+    {
+      "pair": "Q97/Q30",
+      "reason": "NOT FOUND in 9-book canonical content-search"
+    },
+    {
+      "pair": "Q17/Q23",
+      "reason": "NOT FOUND in 9-book canonical content-search"
+    },
+    {
+      "pair": "Q18/Q32",
+      "reason": "NOT FOUND in 9-book content-search as joint single-night practice"
+    }
+  ],
+  "specialist_override": {
+    "replaced": "Q36/Q67 (prompt)",
+    "with": "Q32/Q67",
+    "evidence": "tirmidhi#2975 — Prophet would not sleep until reciting Alif Lam Mim Tanzil (Q32) AND Tabarak Alladhi Biyadihil-Mulk (Q67)",
+    "q36_q67_note": "Q36 alone (death-recitation) and Q67 alone (al-Mānīʿa grave-protection) are well-attested but NOT as a single coupled pair-recitation in 9-book content-search"
+  },
+  "primary_aggregate_test": {
+    "n_pairs": 6,
+    "observed_mean_fr": 0.6108473333333333,
+    "observed_median_fr": 0.75342,
+    "corpus_mean_fr": 0.923487,
+    "perm_mean_of_means": 0.9226312366833334,
+    "perm_min": 0.508837,
+    "perm_max": 1.1799993333333332,
+    "p_low_one_sided": 0.0008999100089991,
+    "alpha_bon": 0.025,
+    "verdict": "CONFIRMED"
+  },
+  "per_pair_descriptive": [
+    {
+      "label": "P1",
+      "surah_a": 50,
+      "surah_b": 54,
+      "fr": 0.882003,
+      "percentile_in_pool": 33.954933954933956,
+      "p_one_sided": 0.3396519577377253,
+      "context": "Eid prayer (muslim#1949, tirmidhi#534, abudawud#1155)"
+    },
+    {
+      "label": "P2",
+      "surah_a": 32,
+      "surah_b": 76,
+      "fr": 0.839509,
+      "percentile_in_pool": 27.055167055167054,
+      "p_one_sided": 0.2706650093225606,
+      "context": "Fajr-Friday (bukhari#870, bukhari#1037, muslim#1926/1927)"
+    },
+    {
+      "label": "P3",
+      "surah_a": 87,
+      "surah_b": 88,
+      "fr": 0.557249,
+      "percentile_in_pool": 7.505827505827506,
+      "p_one_sided": 0.07520198881292728,
+      "context": "Eid + Jumuʿa (muslim#1920, tirmidhi#533, abudawud#1123/1126)"
+    },
+    {
+      "label": "P4",
+      "surah_a": 109,
+      "surah_b": 112,
+      "fr": 0.361118,
+      "percentile_in_pool": 1.8648018648018647,
+      "p_one_sided": 0.01880049720323182,
+      "context": "Maghrib/Fajr-sunnah/ṭawāf (tirmidhi#870, ibnmajah#883/900)"
+    },
+    {
+      "label": "P5",
+      "surah_a": 113,
+      "surah_b": 114,
+      "fr": 0.271785,
+      "percentile_in_pool": 0.21756021756021757,
+      "p_one_sided": 0.0023306401491609697,
+      "context": "Muʿawwidhatān (bukhari#4809/4810/5526, nasai#5441)"
+    },
+    {
+      "label": "P6",
+      "surah_a": 32,
+      "surah_b": 67,
+      "fr": 0.75342,
+      "percentile_in_pool": 17.047397047397048,
+      "p_one_sided": 0.17060285891858298,
+      "context": "Pre-sleep al-Munjiya (tirmidhi#2975) — replaces prompt Q36/Q67 per specialist override"
+    }
+  ],
+  "length_control_test": {
+    "tolerance_combined_verses": 0.1,
+    "mean_diff_pair_minus_length_matched": -0.0938164327809589,
+    "sign_test_n_below": 5,
+    "sign_test_n_above": 1,
+    "sign_test_p_one_sided": 0.109375,
+    "perm_null_p_low": 0.022397760223977603,
+    "verdict": "PASS",
+    "pair_details": [
+      {
+        "label": "P1",
+        "surah_a": 50,
+        "surah_b": 54,
+        "pair_fr": 0.882003,
+        "combined_verses": 100,
+        "n_length_matched_random": 722,
+        "length_matched_mean_fr": 0.9948514404432133,
+        "fr_minus_length_matched_mean": -0.1128484404432133
+      },
+      {
+        "label": "P2",
+        "surah_a": 32,
+        "surah_b": 76,
+        "pair_fr": 0.839509,
+        "combined_verses": 61,
+        "n_length_matched_random": 607,
+        "length_matched_mean_fr": 0.8667675996705106,
+        "fr_minus_length_matched_mean": -0.027258599670510697
+      },
+      {
+        "label": "P3",
+        "surah_a": 87,
+        "surah_b": 88,
+        "pair_fr": 0.557249,
+        "combined_verses": 45,
+        "n_length_matched_random": 363,
+        "length_matched_mean_fr": 0.8078675785123967,
+        "fr_minus_length_matched_mean": -0.25061857851239666
+      },
+      {
+        "label": "P4",
+        "surah_a": 109,
+        "surah_b": 112,
+        "pair_fr": 0.361118,
+        "combined_verses": 10,
+        "n_length_matched_random": 55,
+        "length_matched_mean_fr": 0.34078029090909095,
+        "fr_minus_length_matched_mean": 0.02033770909090904
+      },
+      {
+        "label": "P5",
+        "surah_a": 113,
+        "surah_b": 114,
+        "pair_fr": 0.271785,
+        "combined_verses": 11,
+        "n_length_matched_random": 63,
+        "length_matched_mean_fr": 0.3524312063492063,
+        "fr_minus_length_matched_mean": -0.08064620634920633
+      },
+      {
+        "label": "P6",
+        "surah_a": 32,
+        "surah_b": 67,
+        "pair_fr": 0.75342,
+        "combined_verses": 60,
+        "n_length_matched_random": 599,
+        "length_matched_mean_fr": 0.8652844808013355,
+        "fr_minus_length_matched_mean": -0.11186448080133549
+      }
+    ]
+  },
+  "cluster_sub_test_muawwidhat": {
+    "cluster": [
+      112,
+      113,
+      114
+    ],
+    "hadith": "bukhari#4810, bukhari#5526",
+    "cluster_pair_fr": [
+      0.288619,
+      0.308609,
+      0.271785
+    ],
+    "cluster_mean_pairwise_fr": 0.289671,
+    "perm_null_n": 10000,
+    "p_low_one_sided": 0.00039996000399960006
+  },
+  "bonferroni_family": "cross-finding-028-liturgical-pair-FR",
+  "bonferroni_k": 2,
+  "bonferroni_alpha": 0.025
+}

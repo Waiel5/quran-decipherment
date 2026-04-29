@@ -1,0 +1,37 @@
+{
+  "finding_id": "Q036-F-02",
+  "pre_reg_sha256": "6d2a50a502bff0a2440b18299da5c3b5805e8634e14926c8fcfb9d1ec41e060f",
+  "q36_uas_rank": 35,
+  "q36_uas_score": 0.5040129672966395,
+  "q36_fadail_score": 10,
+  "fadail_10_peers": [
+    1,
+    2,
+    36,
+    67,
+    112
+  ],
+  "fadail_10_uas_ranks": {
+    "1": 2,
+    "2": 3,
+    "36": 35,
+    "67": 102,
+    "112": 109
+  },
+  "fr_distances_q36_to_fadail_peers": {
+    "1": 0.905319,
+    "2": 1.00779,
+    "67": 0.793998,
+    "112": 0.929129
+  },
+  "nearest_fadail_peer": 67,
+  "condition_2a": true,
+  "condition_2b": true,
+  "condition_2c": true,
+  "verdicts": {
+    "2a_in_divergence_cell": "CONFIRMED",
+    "2b_less_divergent_than_q112_q67": "CONFIRMED",
+    "2c_meaning_ijaz_cluster_with_q67": "CONFIRMED"
+  },
+  "final_verdict": "CONFIRMED"
+}

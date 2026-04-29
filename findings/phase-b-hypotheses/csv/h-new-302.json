@@ -1,0 +1,187 @@
+{
+  "finding_id": "h-new-302",
+  "title": "Pattern-B marker-versus-content peak-lag test",
+  "date": "2026-04-20",
+  "pre_reg_sha256": "4c590bf8e33133ad89ddcc5f6203f32936c4df21677ec7dfce5a0e785fa12e84",
+  "parent_backdrop": [
+    "cross-finding-012",
+    "cross-finding-017",
+    "h-new-129"
+  ],
+  "rules_tuple": "(reuse H-NEW-125 per-surah axis values exactly; reuse cross-finding-012 equal-count Noldke octile bins B1..B8 exactly; marker axis = muq_cardinality; content axes = qul_density, book_reference_density, eschatological_density, loanword_density; for each axis define peak_bin(a) as the smallest octile attaining the maximum observed bin mean; primary statistic L_peak = mean_content peak_bin(a) - peak_bin(marker); null by 10000 permutations of the 114 Noldke ranks across surahs with octile reassignment recomputed each time; one-sided upper-tail for content peaking later than marker; imported-family positive control = exact reproduction of cross-finding-012 observed Pattern-B peak bins under the inherited observed octile mapping)",
+  "seed": 20260420,
+  "n_perm": 10000,
+  "n_bins": 8,
+  "bin_rank_upper_edges": [
+    15.125,
+    29.25,
+    43.375,
+    57.5,
+    71.625,
+    85.75,
+    99.875
+  ],
+  "marker_axis": "muq_cardinality",
+  "content_axes": [
+    "qul_density",
+    "book_reference_density",
+    "eschatological_density",
+    "loanword_density"
+  ],
+  "positive_control": {
+    "expected_peak_bins_from_cf012": {
+      "qul_density": "B7",
+      "book_reference_density": "B7",
+      "eschatological_density": "B6",
+      "muq_cardinality": "B6",
+      "loanword_density": "B7"
+    },
+    "reproduced_peak_bins": {
+      "muq_cardinality": "B6",
+      "qul_density": "B7",
+      "book_reference_density": "B7",
+      "eschatological_density": "B6",
+      "loanword_density": "B7"
+    },
+    "pass": true
+  },
+  "observed": {
+    "marker": {
+      "axis": "muq_cardinality",
+      "peak_bin_idx_0": 5,
+      "peak_bin_label": "B6",
+      "means_by_bin": {
+        "B1": 0.0,
+        "B2": 0.07142857142857142,
+        "B3": 0.0,
+        "B4": 0.7857142857142857,
+        "B5": 1.2142857142857142,
+        "B6": 2.357142857142857,
+        "B7": 1.1428571428571428,
+        "B8": 0.0
+      }
+    },
+    "contents": [
+      {
+        "axis": "qul_density",
+        "peak_bin_idx_0": 6,
+        "peak_bin_label": "B7",
+        "means_by_bin": {
+          "B1": 0.0,
+          "B2": 0.0,
+          "B3": 0.37545685976253856,
+          "B4": 5.896831124962025,
+          "B5": 8.168873633088692,
+          "B6": 7.3620939693011085,
+          "B7": 8.823933515584324,
+          "B8": 4.240013189321667
+        }
+      },
+      {
+        "axis": "book_reference_density",
+        "peak_bin_idx_0": 6,
+        "peak_bin_label": "B7",
+        "means_by_bin": {
+          "B1": 4.0588972431077694,
+          "B2": 4.405693627255597,
+          "B3": 4.184996243281513,
+          "B4": 5.6588620026859475,
+          "B5": 16.668747973977347,
+          "B6": 23.69085634976825,
+          "B7": 28.141732990254816,
+          "B8": 14.553956630269921
+        }
+      },
+      {
+        "axis": "eschatological_density",
+        "peak_bin_idx_0": 5,
+        "peak_bin_label": "B6",
+        "means_by_bin": {
+          "B1": 2.2442492148374504,
+          "B2": 9.213978642092169,
+          "B3": 9.820150389637968,
+          "B4": 12.450847358543825,
+          "B5": 20.370232440467984,
+          "B6": 31.994738681748725,
+          "B7": 28.83068546026403,
+          "B8": 29.00147255646275
+        }
+      },
+      {
+        "axis": "loanword_density",
+        "peak_bin_idx_0": 6,
+        "peak_bin_label": "B7",
+        "means_by_bin": {
+          "B1": 26.93340153711671,
+          "B2": 32.813585529610855,
+          "B3": 32.654109834511345,
+          "B4": 58.63104381830375,
+          "B5": 88.88428840292296,
+          "B6": 133.70832725860626,
+          "B7": 139.00674178661168,
+          "B8": 129.71631872054874
+        }
+      }
+    ],
+    "marker_peak_bin_1indexed": 6,
+    "content_peak_bins_1indexed": [
+      7,
+      7,
+      6,
+      7
+    ],
+    "l_peak": 0.75
+  },
+  "null_summary": {
+    "mean": 0.171675,
+    "q95": 4.25,
+    "q99": 5.5,
+    "max": 7.0,
+    "rank_desc": 3922,
+    "p_lag_upper": 0.42845715428457154,
+    "top_configurations": [
+      {
+        "configuration": "muq=B1;content=['B1', 'B1', 'B1', 'B1']",
+        "count": 38
+      },
+      {
+        "configuration": "muq=B6;content=['B6', 'B6', 'B6', 'B6']",
+        "count": 35
+      },
+      {
+        "configuration": "muq=B2;content=['B2', 'B2', 'B2', 'B2']",
+        "count": 32
+      },
+      {
+        "configuration": "muq=B8;content=['B8', 'B8', 'B8', 'B8']",
+        "count": 30
+      },
+      {
+        "configuration": "muq=B7;content=['B7', 'B7', 'B7', 'B7']",
+        "count": 29
+      },
+      {
+        "configuration": "muq=B5;content=['B5', 'B5', 'B5', 'B5']",
+        "count": 26
+      },
+      {
+        "configuration": "muq=B4;content=['B4', 'B4', 'B4', 'B4']",
+        "count": 25
+      },
+      {
+        "configuration": "muq=B3;content=['B3', 'B3', 'B3', 'B3']",
+        "count": 22
+      },
+      {
+        "configuration": "muq=B6;content=['B3', 'B6', 'B6', 'B6']",
+        "count": 20
+      },
+      {
+        "configuration": "muq=B2;content=['B7', 'B2', 'B2', 'B2']",
+        "count": 19
+      }
+    ]
+  },
+  "verdict": "NULL",
+  "verdict_note": "This is a post-hoc-noticed formalization of the already disclosed B6/B7 staircase, so the strongest honest positive reading is PASS-DIRECTED."
+}

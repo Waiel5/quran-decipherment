@@ -1,0 +1,1846 @@
+{
+  "id": "H-NEW-620",
+  "title": "Divine-name density as candidate 6th cohesion factor",
+  "prereg_sha256": "73dfb7f5e48c6ea3ec72db82b00fb6add51fe457526f6c2da80b37bc32c1034c",
+  "seed": 20260501,
+  "n_perm": 10000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016666666666666666,
+  "rules_tuple": "(no-tashkeel; whitespace-tokenized; CORE-DN locked; proclitic-strip ∈ {و, ف, ب, ل, ك, س, +bigrams}; mushaf 114; 12 training subsets locked from cross-finding-024 §3)",
+  "core_dn_forms": [
+    "الله",
+    "الرحمن",
+    "الرحيم",
+    "رب",
+    "ربك",
+    "ربكم",
+    "ربنا",
+    "ربه",
+    "ربها",
+    "ربهم",
+    "ربي",
+    "الإله"
+  ],
+  "alias_map": {
+    "الإله": "الله"
+  },
+  "subsets": [
+    {
+      "rank": 1,
+      "name": "Q 107-114 terminal-tail",
+      "surahs": [
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "pct": 0.0,
+      "block": 1,
+      "register": 1,
+      "chrono": 1,
+      "formula": 0,
+      "no_outlier": 1,
+      "core_mean": 0.05960144927536232,
+      "core_cv": 0.961077691057804,
+      "full_mean": 0.037500000000000006,
+      "full_cv": 1.8559214542766738
+    },
+    {
+      "rank": 2,
+      "name": "Q 98-114 terminal-17",
+      "surahs": [
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "pct": 0.0,
+      "block": 1,
+      "register": 1,
+      "chrono": 1,
+      "formula": 0,
+      "no_outlier": 1,
+      "core_mean": 0.043300224878590116,
+      "core_cv": 1.0443678423591045,
+      "full_mean": 0.02537956359014194,
+      "full_cv": 2.0485833347642535
+    },
+    {
+      "rank": 3,
+      "name": "Medinan half Q 57-66",
+      "surahs": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "pct": 4.8,
+      "block": 1,
+      "register": 1,
+      "chrono": 1,
+      "formula": 0,
+      "no_outlier": 1,
+      "core_mean": 0.0677821887936424,
+      "core_cv": 0.13197830855102058,
+      "full_mean": 0.07928097058192264,
+      "full_cv": 0.1442409755565289
+    },
+    {
+      "rank": 4,
+      "name": "Mufaṣṣal-awsāṭ Q 67-77",
+      "surahs": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "pct": 7.1,
+      "block": 1,
+      "register": 1,
+      "chrono": 1,
+      "formula": 0,
+      "no_outlier": 1,
+      "core_mean": 0.030305343176122,
+      "core_cv": 0.5488146716133883,
+      "full_mean": 0.01590668122170449,
+      "full_cv": 0.8213975726956465
+    },
+    {
+      "rank": 5,
+      "name": "Musabbiḥāt block-subset",
+      "surahs": [
+        57,
+        59,
+        61,
+        62,
+        64
+      ],
+      "pct": 8.1,
+      "block": 1,
+      "register": 1,
+      "chrono": 1,
+      "formula": 1,
+      "no_outlier": 1,
+      "core_mean": 0.06341831446421624,
+      "core_cv": 0.1361613059723666,
+      "full_mean": 0.08635158596712486,
+      "full_cv": 0.10541079872416767
+    },
+    {
+      "rank": 6,
+      "name": "Ṭiwāl Q 2-9",
+      "surahs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pct": 17.3,
+      "block": 1,
+      "register": 0,
+      "chrono": 0,
+      "formula": 0,
+      "no_outlier": 1,
+      "core_mean": 0.05323787871932701,
+      "core_cv": 0.21446518051190955,
+      "full_mean": 0.05195565086568224,
+      "full_cv": 0.31022743305428385
+    },
+    {
+      "rank": 7,
+      "name": "Ḥawāmīm 5-6",
+      "surahs": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "pct": 21.5,
+      "block": 1,
+      "register": 0,
+      "chrono": 1,
+      "formula": 1,
+      "no_outlier": 1,
+      "core_mean": 0.03861980471838958,
+      "core_cv": 0.26168002056113115,
+      "full_mean": 0.037901796014634614,
+      "full_cv": 0.40358934087720644
+    },
+    {
+      "rank": 8,
+      "name": "Musabbiḥāt Q 50-56 minus Q 55",
+      "surahs": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        56
+      ],
+      "pct": 37.5,
+      "block": 1,
+      "register": 0,
+      "chrono": 1,
+      "formula": 0,
+      "no_outlier": 1,
+      "core_mean": 0.01678915304853709,
+      "core_cv": 0.6507667295611252,
+      "full_mean": 0.011823717819951243,
+      "full_cv": 0.5536414132553109
+    },
+    {
+      "rank": 9,
+      "name": "Mufaṣṣal-ṭiwāl Q 50-66",
+      "surahs": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "pct": 50.1,
+      "block": 1,
+      "register": 0,
+      "chrono": 0,
+      "formula": 0,
+      "no_outlier": 0,
+      "core_mean": 0.046791659686961806,
+      "core_cv": 0.5729107284982417,
+      "full_mean": 0.05114034209151972,
+      "full_cv": 0.6844636001944622
+    },
+    {
+      "rank": 10,
+      "name": "Meccan half Q 50-56",
+      "surahs": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "pct": 70.1,
+      "block": 1,
+      "register": 0,
+      "chrono": 1,
+      "formula": 0,
+      "no_outlier": 0,
+      "core_mean": 0.016805189534560967,
+      "core_cv": 0.6019225233387393,
+      "full_mean": 0.01093944424808698,
+      "full_cv": 0.5883249730783603
+    },
+    {
+      "rank": 11,
+      "name": "al-Ḥāmidāt",
+      "surahs": [
+        1,
+        6,
+        18,
+        34,
+        35
+      ],
+      "pct": 75.0,
+      "block": 0,
+      "register": 0,
+      "chrono": 0,
+      "formula": 1,
+      "no_outlier": 1,
+      "core_mean": 0.06887708726022812,
+      "core_cv": 1.0081313444515374,
+      "full_mean": 0.05897274259803109,
+      "full_cv": 0.9860495503859089
+    },
+    {
+      "rank": 12,
+      "name": "Q 1 + Q 27 Basmala-pair",
+      "surahs": [
+        1,
+        27
+      ],
+      "pct": 81.0,
+      "block": 0,
+      "register": 0,
+      "chrono": 0,
+      "formula": 1,
+      "no_outlier": 1,
+      "core_mean": 0.11785156804313893,
+      "core_cv": 0.7555689343768813,
+      "full_mean": 0.09855257556406982,
+      "full_cv": 0.7494600431965444
+    }
+  ],
+  "per_surah_density": {
+    "1": {
+      "words": 29,
+      "core_dn": 6,
+      "core_dn_breakdown": {
+        "الله": 1,
+        "الرحمن": 2,
+        "الرحيم": 2,
+        "رب": 1
+      },
+      "full_dn": 5,
+      "core_density": 0.20689655172413793,
+      "full_density": 0.1724137931034483
+    },
+    "2": {
+      "words": 6630,
+      "core_dn": 324,
+      "core_dn_breakdown": {
+        "ربهم": 10,
+        "الله": 269,
+        "ربكم": 8,
+        "ربك": 7,
+        "ربه": 9,
+        "الرحيم": 5,
+        "رب": 3,
+        "ربنا": 11,
+        "الرحمن": 1,
+        "ربي": 1
+      },
+      "full_dn": 331,
+      "core_density": 0.048868778280542986,
+      "full_density": 0.04992458521870287
+    },
+    "3": {
+      "words": 3717,
+      "core_dn": 238,
+      "core_dn_breakdown": {
+        "الله": 200,
+        "ربنا": 11,
+        "ربهم": 7,
+        "رب": 6,
+        "ربها": 1,
+        "ربه": 1,
+        "ربك": 3,
+        "ربكم": 8,
+        "ربي": 1
+      },
+      "full_dn": 232,
+      "core_density": 0.064030131826742,
+      "full_density": 0.06241592682270648
+    },
+    "4": {
+      "words": 4029,
+      "core_dn": 224,
+      "core_dn_breakdown": {
+        "ربكم": 3,
+        "الله": 218,
+        "ربك": 1,
+        "ربنا": 2
+      },
+      "full_dn": 230,
+      "core_density": 0.05559692231322909,
+      "full_density": 0.057086125589476296
+    },
+    "5": {
+      "words": 3047,
+      "core_dn": 160,
+      "core_dn_breakdown": {
+        "الله": 143,
+        "ربهم": 2,
+        "ربك": 5,
+        "رب": 2,
+        "ربكم": 3,
+        "ربي": 2,
+        "ربنا": 3
+      },
+      "full_dn": 161,
+      "core_density": 0.05251066622907778,
+      "full_density": 0.052838857893009517
+    },
+    "6": {
+      "words": 3304,
+      "core_dn": 130,
+      "core_dn_breakdown": {
+        "ربهم": 10,
+        "الله": 77,
+        "ربي": 9,
+        "ربنا": 4,
+        "ربه": 1,
+        "رب": 5,
+        "ربكم": 7,
+        "ربك": 17
+      },
+      "full_dn": 114,
+      "core_density": 0.03934624697336562,
+      "full_density": 0.03450363196125908
+    },
+    "7": {
+      "words": 3551,
+      "core_dn": 120,
+      "core_dn_breakdown": {
+        "ربكم": 16,
+        "ربنا": 13,
+        "الله": 58,
+        "ربي": 8,
+        "رب": 9,
+        "ربه": 5,
+        "ربهم": 3,
+        "ربك": 8
+      },
+      "full_dn": 71,
+      "core_density": 0.03379329766263024,
+      "full_density": 0.019994367783722895
+    },
+    "8": {
+      "words": 1320,
+      "core_dn": 90,
+      "core_dn_breakdown": {
+        "الله": 84,
+        "ربهم": 3,
+        "ربك": 2,
+        "ربكم": 1
+      },
+      "full_dn": 92,
+      "core_density": 0.06818181818181818,
+      "full_density": 0.0696969696969697
+    },
+    "9": {
+      "words": 2674,
+      "core_dn": 170,
+      "core_dn_breakdown": {
+        "الله": 166,
+        "ربهم": 1,
+        "الرحيم": 2,
+        "رب": 1
+      },
+      "full_dn": 185,
+      "core_density": 0.06357516828721017,
+      "full_density": 0.06918474195961107
+    },
+    "10": {
+      "words": 1964,
+      "core_dn": 80,
+      "core_dn_breakdown": {
+        "ربهم": 2,
+        "ربكم": 5,
+        "الله": 55,
+        "رب": 2,
+        "ربي": 2,
+        "ربك": 8,
+        "ربه": 1,
+        "ربنا": 4,
+        "الرحيم": 1
+      },
+      "full_dn": 78,
+      "core_density": 0.04073319755600815,
+      "full_density": 0.03971486761710794
+    },
+    "11": {
+      "words": 2083,
+      "core_dn": 81,
+      "core_dn_breakdown": {
+        "الله": 37,
+        "ربكم": 5,
+        "ربه": 2,
+        "ربك": 17,
+        "ربهم": 7,
+        "ربي": 11,
+        "رب": 2
+      },
+      "full_dn": 46,
+      "core_density": 0.03888622179548728,
+      "full_density": 0.022083533365338453
+    },
+    "12": {
+      "words": 1912,
+      "core_dn": 55,
+      "core_dn_breakdown": {
+        "ربك": 4,
+        "الله": 36,
+        "ربي": 8,
+        "ربه": 4,
+        "رب": 2,
+        "الرحيم": 1
+      },
+      "full_dn": 61,
+      "core_density": 0.028765690376569036,
+      "full_density": 0.03190376569037657
+    },
+    "13": {
+      "words": 928,
+      "core_dn": 43,
+      "core_dn_breakdown": {
+        "ربك": 4,
+        "الله": 29,
+        "ربكم": 1,
+        "ربهم": 4,
+        "ربه": 2,
+        "رب": 1,
+        "الرحمن": 1,
+        "ربي": 1
+      },
+      "full_dn": 39,
+      "core_density": 0.04633620689655173,
+      "full_density": 0.04202586206896552
+    },
+    "14": {
+      "words": 885,
+      "core_dn": 50,
+      "core_dn_breakdown": {
+        "ربهم": 4,
+        "الله": 33,
+        "ربكم": 2,
+        "ربها": 1,
+        "رب": 3,
+        "ربنا": 6,
+        "ربي": 1
+      },
+      "full_dn": 43,
+      "core_density": 0.05649717514124294,
+      "full_density": 0.04858757062146893
+    },
+    "15": {
+      "words": 666,
+      "core_dn": 11,
+      "core_dn_breakdown": {
+        "ربك": 5,
+        "رب": 2,
+        "الرحيم": 1,
+        "ربه": 1,
+        "الله": 2
+      },
+      "full_dn": 10,
+      "core_density": 0.016516516516516516,
+      "full_density": 0.015015015015015015
+    },
+    "16": {
+      "words": 1963,
+      "core_dn": 93,
+      "core_dn_breakdown": {
+        "الله": 73,
+        "ربكم": 4,
+        "ربك": 11,
+        "ربهم": 4,
+        "ربنا": 1
+      },
+      "full_dn": 79,
+      "core_density": 0.04737646459500764,
+      "full_density": 0.040244523688232295
+    },
+    "17": {
+      "words": 1644,
+      "core_dn": 42,
+      "core_dn_breakdown": {
+        "ربكم": 7,
+        "ربك": 15,
+        "الله": 9,
+        "رب": 3,
+        "ربه": 1,
+        "ربهم": 1,
+        "ربي": 3,
+        "ربنا": 2,
+        "الرحمن": 1
+      },
+      "full_dn": 20,
+      "core_density": 0.025547445255474453,
+      "full_density": 0.012165450121654502
+    },
+    "18": {
+      "words": 1657,
+      "core_dn": 51,
+      "core_dn_breakdown": {
+        "الله": 14,
+        "ربنا": 2,
+        "ربهم": 5,
+        "رب": 1,
+        "ربكم": 3,
+        "ربي": 13,
+        "ربك": 8,
+        "ربه": 5
+      },
+      "full_dn": 19,
+      "core_density": 0.030778515389257695,
+      "full_density": 0.011466505733252867
+    },
+    "19": {
+      "words": 1012,
+      "core_dn": 41,
+      "core_dn_breakdown": {
+        "ربك": 9,
+        "ربه": 2,
+        "رب": 6,
+        "الرحمن": 12,
+        "الله": 7,
+        "ربي": 4,
+        "ربكم": 1
+      },
+      "full_dn": 22,
+      "core_density": 0.040513833992094864,
+      "full_density": 0.021739130434782608
+    },
+    "20": {
+      "words": 1409,
+      "core_dn": 35,
+      "core_dn_breakdown": {
+        "الرحمن": 3,
+        "الله": 6,
+        "ربك": 6,
+        "رب": 5,
+        "ربنا": 4,
+        "ربي": 3,
+        "ربه": 5,
+        "ربكم": 3
+      },
+      "full_dn": 13,
+      "core_density": 0.0248403122782115,
+      "full_density": 0.009226401703335699
+    },
+    "21": {
+      "words": 1236,
+      "core_dn": 23,
+      "core_dn_breakdown": {
+        "ربهم": 3,
+        "ربي": 1,
+        "الله": 5,
+        "رب": 4,
+        "الرحمن": 4,
+        "ربك": 1,
+        "ربكم": 2,
+        "ربه": 2,
+        "ربنا": 1
+      },
+      "full_dn": 17,
+      "core_density": 0.0186084142394822,
+      "full_density": 0.013754045307443365
+    },
+    "22": {
+      "words": 1356,
+      "core_dn": 80,
+      "core_dn_breakdown": {
+        "ربكم": 2,
+        "الله": 72,
+        "ربهم": 1,
+        "ربه": 1,
+        "ربنا": 1,
+        "ربك": 3
+      },
+      "full_dn": 81,
+      "core_density": 0.058997050147492625,
+      "full_density": 0.059734513274336286
+    },
+    "23": {
+      "words": 1089,
+      "core_dn": 32,
+      "core_dn_breakdown": {
+        "الله": 9,
+        "رب": 12,
+        "ربكم": 1,
+        "ربهم": 5,
+        "ربك": 1,
+        "ربنا": 3,
+        "ربه": 1
+      },
+      "full_dn": 18,
+      "core_density": 0.02938475665748393,
+      "full_density": 0.01652892561983471
+    },
+    "24": {
+      "words": 1415,
+      "core_dn": 78,
+      "core_dn_breakdown": {
+        "الله": 78
+      },
+      "full_dn": 82,
+      "core_density": 0.05512367491166078,
+      "full_density": 0.057950530035335686
+    },
+    "25": {
+      "words": 932,
+      "core_dn": 25,
+      "core_dn_breakdown": {
+        "ربك": 5,
+        "الله": 8,
+        "ربنا": 3,
+        "رب": 1,
+        "ربه": 2,
+        "الرحمن": 3,
+        "ربهم": 2,
+        "ربي": 1
+      },
+      "full_dn": 17,
+      "core_density": 0.02682403433476395,
+      "full_density": 0.018240343347639486
+    },
+    "26": {
+      "words": 1353,
+      "core_dn": 58,
+      "core_dn_breakdown": {
+        "الرحمن": 1,
+        "ربك": 9,
+        "الرحيم": 9,
+        "رب": 19,
+        "ربي": 4,
+        "ربكم": 2,
+        "ربنا": 2,
+        "الله": 12
+      },
+      "full_dn": 34,
+      "core_density": 0.04286770140428677,
+      "full_density": 0.025129342202512936
+    },
+    "27": {
+      "words": 1215,
+      "core_dn": 35,
+      "core_dn_breakdown": {
+        "الله": 21,
+        "رب": 6,
+        "الرحمن": 1,
+        "الرحيم": 1,
+        "ربي": 2,
+        "ربك": 4
+      },
+      "full_dn": 30,
+      "core_density": 0.02880658436213992,
+      "full_density": 0.024691358024691357
+    },
+    "28": {
+      "words": 1520,
+      "core_dn": 46,
+      "core_dn_breakdown": {
+        "الله": 26,
+        "رب": 6,
+        "الرحيم": 1,
+        "ربي": 3,
+        "ربك": 7,
+        "ربنا": 3
+      },
+      "full_dn": 36,
+      "core_density": 0.030263157894736843,
+      "full_density": 0.02368421052631579
+    },
+    "29": {
+      "words": 1044,
+      "core_dn": 46,
+      "core_dn_breakdown": {
+        "الله": 41,
+        "ربك": 1,
+        "ربي": 1,
+        "رب": 1,
+        "ربه": 1,
+        "ربهم": 1
+      },
+      "full_dn": 53,
+      "core_density": 0.044061302681992334,
+      "full_density": 0.05076628352490421
+    },
+    "30": {
+      "words": 868,
+      "core_dn": 27,
+      "core_dn_breakdown": {
+        "الله": 23,
+        "الرحيم": 1,
+        "ربهم": 3
+      },
+      "full_dn": 32,
+      "core_density": 0.03110599078341014,
+      "full_density": 0.03686635944700461
+    },
+    "31": {
+      "words": 586,
+      "core_dn": 31,
+      "core_dn_breakdown": {
+        "ربهم": 1,
+        "الله": 29,
+        "ربكم": 1
+      },
+      "full_dn": 38,
+      "core_density": 0.052901023890784986,
+      "full_density": 0.06484641638225255
+    },
+    "32": {
+      "words": 390,
+      "core_dn": 12,
+      "core_dn_breakdown": {
+        "رب": 1,
+        "ربك": 2,
+        "الله": 1,
+        "الرحيم": 1,
+        "ربهم": 4,
+        "ربكم": 1,
+        "ربنا": 1,
+        "ربه": 1
+      },
+      "full_dn": 4,
+      "core_density": 0.03076923076923077,
+      "full_density": 0.010256410256410256
+    },
+    "33": {
+      "words": 1384,
+      "core_dn": 92,
+      "core_dn_breakdown": {
+        "الله": 89,
+        "ربك": 1,
+        "ربنا": 2
+      },
+      "full_dn": 93,
+      "core_density": 0.06647398843930635,
+      "full_density": 0.06719653179190752
+    },
+    "34": {
+      "words": 940,
+      "core_dn": 21,
+      "core_dn_breakdown": {
+        "الرحيم": 1,
+        "ربي": 5,
+        "ربك": 2,
+        "الله": 6,
+        "ربه": 1,
+        "ربكم": 2,
+        "رب": 1,
+        "ربنا": 2,
+        "ربهم": 1
+      },
+      "full_dn": 24,
+      "core_density": 0.022340425531914895,
+      "full_density": 0.02553191489361702
+    },
+    "35": {
+      "words": 844,
+      "core_dn": 38,
+      "core_dn_breakdown": {
+        "الله": 33,
+        "ربكم": 1,
+        "ربهم": 2,
+        "ربنا": 2
+      },
+      "full_dn": 43,
+      "core_density": 0.045023696682464455,
+      "full_density": 0.0509478672985782
+    },
+    "36": {
+      "words": 754,
+      "core_dn": 14,
+      "core_dn_breakdown": {
+        "الرحيم": 1,
+        "الرحمن": 4,
+        "ربنا": 1,
+        "ربكم": 1,
+        "ربي": 1,
+        "ربهم": 2,
+        "الله": 3,
+        "رب": 1
+      },
+      "full_dn": 13,
+      "core_density": 0.01856763925729443,
+      "full_density": 0.017241379310344827
+    },
+    "37": {
+      "words": 881,
+      "core_dn": 26,
+      "core_dn_breakdown": {
+        "رب": 7,
+        "الله": 13,
+        "ربنا": 1,
+        "ربي": 2,
+        "ربه": 1,
+        "ربكم": 1,
+        "ربك": 1
+      },
+      "full_dn": 17,
+      "core_density": 0.029511918274687854,
+      "full_density": 0.019296254256526674
+    },
+    "38": {
+      "words": 774,
+      "core_dn": 13,
+      "core_dn_breakdown": {
+        "ربك": 2,
+        "ربنا": 2,
+        "ربه": 2,
+        "الله": 3,
+        "ربي": 1,
+        "رب": 3
+      },
+      "full_dn": 14,
+      "core_density": 0.016795865633074936,
+      "full_density": 0.01808785529715762
+    },
+    "39": {
+      "words": 1259,
+      "core_dn": 72,
+      "core_dn_breakdown": {
+        "الله": 53,
+        "ربكم": 7,
+        "ربه": 3,
+        "ربي": 1,
+        "ربهم": 5,
+        "الرحيم": 1,
+        "ربها": 1,
+        "رب": 1
+      },
+      "full_dn": 67,
+      "core_density": 0.057188244638602066,
+      "full_density": 0.05321683876092136
+    },
+    "40": {
+      "words": 1296,
+      "core_dn": 69,
+      "core_dn_breakdown": {
+        "الله": 50,
+        "ربك": 2,
+        "ربهم": 1,
+        "ربنا": 3,
+        "ربه": 1,
+        "ربي": 3,
+        "ربكم": 6,
+        "رب": 3
+      },
+      "full_dn": 75,
+      "core_density": 0.05324074074074074,
+      "full_density": 0.05787037037037037
+    },
+    "41": {
+      "words": 838,
+      "core_dn": 24,
+      "core_dn_breakdown": {
+        "الرحمن": 1,
+        "الرحيم": 1,
+        "رب": 1,
+        "الله": 10,
+        "ربنا": 3,
+        "ربكم": 1,
+        "ربك": 5,
+        "ربي": 1,
+        "ربهم": 1
+      },
+      "full_dn": 18,
+      "core_density": 0.028639618138424822,
+      "full_density": 0.021479713603818614
+    },
+    "42": {
+      "words": 932,
+      "core_dn": 42,
+      "core_dn_breakdown": {
+        "الله": 31,
+        "ربهم": 5,
+        "الرحيم": 1,
+        "ربي": 1,
+        "ربك": 1,
+        "ربنا": 1,
+        "ربكم": 2
+      },
+      "full_dn": 49,
+      "core_density": 0.045064377682403435,
+      "full_density": 0.05257510729613734
+    },
+    "43": {
+      "words": 870,
+      "core_dn": 21,
+      "core_dn_breakdown": {
+        "ربكم": 2,
+        "ربنا": 1,
+        "الرحمن": 5,
+        "ربك": 5,
+        "رب": 4,
+        "الله": 3,
+        "ربي": 1
+      },
+      "full_dn": 16,
+      "core_density": 0.02413793103448276,
+      "full_density": 0.01839080459770115
+    },
+    "44": {
+      "words": 364,
+      "core_dn": 13,
+      "core_dn_breakdown": {
+        "ربك": 2,
+        "رب": 2,
+        "ربكم": 2,
+        "ربنا": 1,
+        "الله": 3,
+        "ربي": 1,
+        "ربه": 1,
+        "الرحيم": 1
+      },
+      "full_dn": 11,
+      "core_density": 0.03571428571428571,
+      "full_density": 0.03021978021978022
+    },
+    "45": {
+      "words": 512,
+      "core_dn": 23,
+      "core_dn_breakdown": {
+        "الله": 16,
+        "ربهم": 2,
+        "ربكم": 1,
+        "ربك": 1,
+        "رب": 3
+      },
+      "full_dn": 24,
+      "core_density": 0.044921875,
+      "full_density": 0.046875
+    },
+    "46": {
+      "words": 676,
+      "core_dn": 21,
+      "core_dn_breakdown": {
+        "الله": 16,
+        "الرحيم": 1,
+        "ربنا": 2,
+        "رب": 1,
+        "ربها": 1
+      },
+      "full_dn": 24,
+      "core_density": 0.03106508875739645,
+      "full_density": 0.03550295857988166
+    },
+    "47": {
+      "words": 570,
+      "core_dn": 31,
+      "core_dn_breakdown": {
+        "الله": 27,
+        "ربهم": 3,
+        "ربه": 1
+      },
+      "full_dn": 30,
+      "core_density": 0.054385964912280704,
+      "full_density": 0.05263157894736842
+    },
+    "48": {
+      "words": 600,
+      "core_dn": 36,
+      "core_dn_breakdown": {
+        "الله": 36
+      },
+      "full_dn": 38,
+      "core_density": 0.06,
+      "full_density": 0.06333333333333334
+    },
+    "49": {
+      "words": 382,
+      "core_dn": 27,
+      "core_dn_breakdown": {
+        "الله": 27
+      },
+      "full_dn": 28,
+      "core_density": 0.07068062827225131,
+      "full_density": 0.07329842931937172
+    },
+    "50": {
+      "words": 389,
+      "core_dn": 4,
+      "core_dn_breakdown": {
+        "الله": 1,
+        "ربنا": 1,
+        "الرحمن": 1,
+        "ربك": 1
+      },
+      "full_dn": 7,
+      "core_density": 0.010282776349614395,
+      "full_density": 0.017994858611825194
+    },
+    "51": {
+      "words": 371,
+      "core_dn": 7,
+      "core_dn_breakdown": {
+        "ربهم": 2,
+        "ربك": 2,
+        "الله": 3
+      },
+      "full_dn": 7,
+      "core_density": 0.018867924528301886,
+      "full_density": 0.018867924528301886
+    },
+    "52": {
+      "words": 324,
+      "core_dn": 11,
+      "core_dn_breakdown": {
+        "ربك": 5,
+        "ربهم": 2,
+        "الله": 3,
+        "الرحيم": 1
+      },
+      "full_dn": 5,
+      "core_density": 0.033950617283950615,
+      "full_density": 0.015432098765432098
+    },
+    "53": {
+      "words": 372,
+      "core_dn": 10,
+      "core_dn_breakdown": {
+        "ربه": 1,
+        "الله": 3,
+        "ربهم": 1,
+        "ربك": 4,
+        "رب": 1
+      },
+      "full_dn": 4,
+      "core_density": 0.026881720430107527,
+      "full_density": 0.010752688172043012
+    },
+    "54": {
+      "words": 350,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "ربه": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.002857142857142857,
+      "full_density": 0.0
+    },
+    "55": {
+      "words": 355,
+      "core_dn": 6,
+      "core_dn_breakdown": {
+        "الرحمن": 1,
+        "رب": 2,
+        "ربك": 2,
+        "ربه": 1
+      },
+      "full_dn": 2,
+      "core_density": 0.016901408450704224,
+      "full_density": 0.005633802816901409
+    },
+    "56": {
+      "words": 380,
+      "core_dn": 3,
+      "core_dn_breakdown": {
+        "ربك": 2,
+        "رب": 1
+      },
+      "full_dn": 3,
+      "core_density": 0.007894736842105263,
+      "full_density": 0.007894736842105263
+    },
+    "57": {
+      "words": 618,
+      "core_dn": 33,
+      "core_dn_breakdown": {
+        "الله": 30,
+        "ربكم": 2,
+        "ربهم": 1
+      },
+      "full_dn": 43,
+      "core_density": 0.05339805825242718,
+      "full_density": 0.06957928802588997
+    },
+    "58": {
+      "words": 516,
+      "core_dn": 40,
+      "core_dn_breakdown": {
+        "الله": 40
+      },
+      "full_dn": 42,
+      "core_density": 0.07751937984496124,
+      "full_density": 0.08139534883720931
+    },
+    "59": {
+      "words": 478,
+      "core_dn": 32,
+      "core_dn_breakdown": {
+        "الله": 27,
+        "ربنا": 2,
+        "رب": 1,
+        "الرحمن": 1,
+        "الرحيم": 1
+      },
+      "full_dn": 44,
+      "core_density": 0.06694560669456066,
+      "full_density": 0.09205020920502092
+    },
+    "60": {
+      "words": 377,
+      "core_dn": 25,
+      "core_dn_breakdown": {
+        "الله": 21,
+        "ربكم": 1,
+        "ربنا": 3
+      },
+      "full_dn": 27,
+      "core_density": 0.06631299734748011,
+      "full_density": 0.07161803713527852
+    },
+    "61": {
+      "words": 238,
+      "core_dn": 16,
+      "core_dn_breakdown": {
+        "الله": 16
+      },
+      "full_dn": 20,
+      "core_density": 0.06722689075630252,
+      "full_density": 0.08403361344537816
+    },
+    "62": {
+      "words": 186,
+      "core_dn": 10,
+      "core_dn_breakdown": {
+        "الله": 10
+      },
+      "full_dn": 17,
+      "core_density": 0.053763440860215055,
+      "full_density": 0.0913978494623656
+    },
+    "63": {
+      "words": 195,
+      "core_dn": 13,
+      "core_dn_breakdown": {
+        "الله": 12,
+        "رب": 1
+      },
+      "full_dn": 12,
+      "core_density": 0.06666666666666667,
+      "full_density": 0.06153846153846154
+    },
+    "64": {
+      "words": 264,
+      "core_dn": 20,
+      "core_dn_breakdown": {
+        "الله": 19,
+        "ربي": 1
+      },
+      "full_dn": 25,
+      "core_density": 0.07575757575757576,
+      "full_density": 0.0946969696969697
+    },
+    "65": {
+      "words": 313,
+      "core_dn": 26,
+      "core_dn_breakdown": {
+        "الله": 24,
+        "ربكم": 1,
+        "ربها": 1
+      },
+      "full_dn": 26,
+      "core_density": 0.08306709265175719,
+      "full_density": 0.08306709265175719
+    },
+    "66": {
+      "words": 268,
+      "core_dn": 18,
+      "core_dn_breakdown": {
+        "الله": 13,
+        "ربه": 1,
+        "ربكم": 1,
+        "ربنا": 1,
+        "رب": 1,
+        "ربها": 1
+      },
+      "full_dn": 17,
+      "core_density": 0.06716417910447761,
+      "full_density": 0.06343283582089553
+    },
+    "67": {
+      "words": 348,
+      "core_dn": 9,
+      "core_dn_breakdown": {
+        "الرحمن": 4,
+        "ربهم": 2,
+        "الله": 3
+      },
+      "full_dn": 12,
+      "core_density": 0.02586206896551724,
+      "full_density": 0.034482758620689655
+    },
+    "68": {
+      "words": 308,
+      "core_dn": 10,
+      "core_dn_breakdown": {
+        "ربك": 4,
+        "ربنا": 3,
+        "ربهم": 1,
+        "ربه": 2
+      },
+      "full_dn": 0,
+      "core_density": 0.032467532467532464,
+      "full_density": 0.0
+    },
+    "69": {
+      "words": 264,
+      "core_dn": 5,
+      "core_dn_breakdown": {
+        "ربهم": 1,
+        "ربك": 2,
+        "الله": 1,
+        "رب": 1
+      },
+      "full_dn": 4,
+      "core_density": 0.01893939393939394,
+      "full_density": 0.015151515151515152
+    },
+    "70": {
+      "words": 222,
+      "core_dn": 4,
+      "core_dn_breakdown": {
+        "الله": 1,
+        "ربهم": 2,
+        "رب": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.018018018018018018,
+      "full_density": 0.0045045045045045045
+    },
+    "71": {
+      "words": 230,
+      "core_dn": 11,
+      "core_dn_breakdown": {
+        "الله": 6,
+        "رب": 4,
+        "ربكم": 1
+      },
+      "full_dn": 6,
+      "core_density": 0.04782608695652174,
+      "full_density": 0.02608695652173913
+    },
+    "72": {
+      "words": 293,
+      "core_dn": 17,
+      "core_dn_breakdown": {
+        "ربنا": 2,
+        "الله": 9,
+        "ربهم": 2,
+        "ربه": 2,
+        "ربي": 2
+      },
+      "full_dn": 9,
+      "core_density": 0.05802047781569966,
+      "full_density": 0.030716723549488054
+    },
+    "73": {
+      "words": 214,
+      "core_dn": 11,
+      "core_dn_breakdown": {
+        "ربك": 2,
+        "رب": 1,
+        "ربه": 1,
+        "الله": 7
+      },
+      "full_dn": 7,
+      "core_density": 0.0514018691588785,
+      "full_density": 0.03271028037383177
+    },
+    "74": {
+      "words": 265,
+      "core_dn": 6,
+      "core_dn_breakdown": {
+        "ربك": 3,
+        "الله": 3
+      },
+      "full_dn": 3,
+      "core_density": 0.022641509433962263,
+      "full_density": 0.011320754716981131
+    },
+    "75": {
+      "words": 165,
+      "core_dn": 3,
+      "core_dn_breakdown": {
+        "ربك": 2,
+        "ربها": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.01818181818181818,
+      "full_density": 0.0
+    },
+    "76": {
+      "words": 250,
+      "core_dn": 10,
+      "core_dn_breakdown": {
+        "الله": 5,
+        "ربنا": 1,
+        "ربهم": 1,
+        "ربك": 2,
+        "ربه": 1
+      },
+      "full_dn": 5,
+      "core_density": 0.04,
+      "full_density": 0.02
+    },
+    "77": {
+      "words": 182,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 0,
+      "core_density": 0.0,
+      "full_density": 0.0
+    },
+    "78": {
+      "words": 177,
+      "core_dn": 5,
+      "core_dn_breakdown": {
+        "ربك": 1,
+        "رب": 1,
+        "الرحمن": 2,
+        "ربه": 1
+      },
+      "full_dn": 4,
+      "core_density": 0.02824858757062147,
+      "full_density": 0.022598870056497175
+    },
+    "79": {
+      "words": 180,
+      "core_dn": 6,
+      "core_dn_breakdown": {
+        "ربه": 2,
+        "ربك": 2,
+        "ربكم": 1,
+        "الله": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.03333333333333333,
+      "full_density": 0.005555555555555556
+    },
+    "80": {
+      "words": 133,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 0,
+      "core_density": 0.0,
+      "full_density": 0.0
+    },
+    "81": {
+      "words": 104,
+      "core_dn": 2,
+      "core_dn_breakdown": {
+        "الله": 1,
+        "رب": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.019230769230769232,
+      "full_density": 0.009615384615384616
+    },
+    "82": {
+      "words": 82,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "ربك": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.012195121951219513,
+      "full_density": 0.012195121951219513
+    },
+    "83": {
+      "words": 172,
+      "core_dn": 2,
+      "core_dn_breakdown": {
+        "رب": 1,
+        "ربهم": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.011627906976744186,
+      "full_density": 0.0
+    },
+    "84": {
+      "words": 109,
+      "core_dn": 5,
+      "core_dn_breakdown": {
+        "ربها": 2,
+        "ربك": 1,
+        "ربه": 1,
+        "الله": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.045871559633027525,
+      "full_density": 0.009174311926605505
+    },
+    "85": {
+      "words": 111,
+      "core_dn": 4,
+      "core_dn_breakdown": {
+        "الله": 3,
+        "ربك": 1
+      },
+      "full_dn": 9,
+      "core_density": 0.036036036036036036,
+      "full_density": 0.08108108108108109
+    },
+    "86": {
+      "words": 61,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 0,
+      "core_density": 0.0,
+      "full_density": 0.0
+    },
+    "87": {
+      "words": 73,
+      "core_dn": 3,
+      "core_dn_breakdown": {
+        "ربك": 1,
+        "الله": 1,
+        "ربه": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.0410958904109589,
+      "full_density": 0.0136986301369863
+    },
+    "88": {
+      "words": 92,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "الله": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.010869565217391304,
+      "full_density": 0.010869565217391304
+    },
+    "89": {
+      "words": 141,
+      "core_dn": 8,
+      "core_dn_breakdown": {
+        "ربك": 5,
+        "ربه": 1,
+        "ربي": 2
+      },
+      "full_dn": 1,
+      "core_density": 0.05673758865248227,
+      "full_density": 0.0070921985815602835
+    },
+    "90": {
+      "words": 82,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 0,
+      "core_density": 0.0,
+      "full_density": 0.0
+    },
+    "91": {
+      "words": 54,
+      "core_dn": 3,
+      "core_dn_breakdown": {
+        "الله": 2,
+        "ربهم": 1
+      },
+      "full_dn": 2,
+      "core_density": 0.05555555555555555,
+      "full_density": 0.037037037037037035
+    },
+    "92": {
+      "words": 71,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "ربه": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.014084507042253521,
+      "full_density": 0.0
+    },
+    "93": {
+      "words": 40,
+      "core_dn": 3,
+      "core_dn_breakdown": {
+        "ربك": 3
+      },
+      "full_dn": 0,
+      "core_density": 0.075,
+      "full_density": 0.0
+    },
+    "94": {
+      "words": 27,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "ربك": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.037037037037037035,
+      "full_density": 0.0
+    },
+    "95": {
+      "words": 34,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "الله": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.029411764705882353,
+      "full_density": 0.029411764705882353
+    },
+    "96": {
+      "words": 73,
+      "core_dn": 4,
+      "core_dn_breakdown": {
+        "ربك": 3,
+        "الله": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.0547945205479452,
+      "full_density": 0.0136986301369863
+    },
+    "97": {
+      "words": 30,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "ربهم": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.03333333333333333,
+      "full_density": 0.0
+    },
+    "98": {
+      "words": 98,
+      "core_dn": 5,
+      "core_dn_breakdown": {
+        "الله": 3,
+        "ربهم": 1,
+        "ربه": 1
+      },
+      "full_dn": 3,
+      "core_density": 0.05102040816326531,
+      "full_density": 0.030612244897959183
+    },
+    "99": {
+      "words": 36,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "ربك": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.027777777777777776,
+      "full_density": 0.0
+    },
+    "100": {
+      "words": 41,
+      "core_dn": 2,
+      "core_dn_breakdown": {
+        "ربه": 1,
+        "ربهم": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.04878048780487805,
+      "full_density": 0.0
+    },
+    "101": {
+      "words": 36,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 0,
+      "core_density": 0.0,
+      "full_density": 0.0
+    },
+    "102": {
+      "words": 28,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 0,
+      "core_density": 0.0,
+      "full_density": 0.0
+    },
+    "103": {
+      "words": 14,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 1,
+      "core_density": 0.0,
+      "full_density": 0.07142857142857142
+    },
+    "104": {
+      "words": 34,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "الله": 1
+      },
+      "full_dn": 1,
+      "core_density": 0.029411764705882353,
+      "full_density": 0.029411764705882353
+    },
+    "105": {
+      "words": 23,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "ربك": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.043478260869565216,
+      "full_density": 0.0
+    },
+    "106": {
+      "words": 17,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "رب": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.058823529411764705,
+      "full_density": 0.0
+    },
+    "107": {
+      "words": 25,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 0,
+      "core_density": 0.0,
+      "full_density": 0.0
+    },
+    "108": {
+      "words": 10,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "ربك": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.1,
+      "full_density": 0.0
+    },
+    "109": {
+      "words": 27,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 0,
+      "core_density": 0.0,
+      "full_density": 0.0
+    },
+    "110": {
+      "words": 20,
+      "core_dn": 3,
+      "core_dn_breakdown": {
+        "الله": 2,
+        "ربك": 1
+      },
+      "full_dn": 2,
+      "core_density": 0.15,
+      "full_density": 0.1
+    },
+    "111": {
+      "words": 23,
+      "core_dn": 0,
+      "core_dn_breakdown": {},
+      "full_dn": 0,
+      "core_density": 0.0,
+      "full_density": 0.0
+    },
+    "112": {
+      "words": 15,
+      "core_dn": 2,
+      "core_dn_breakdown": {
+        "الله": 2
+      },
+      "full_dn": 3,
+      "core_density": 0.13333333333333333,
+      "full_density": 0.2
+    },
+    "113": {
+      "words": 23,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "رب": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.043478260869565216,
+      "full_density": 0.0
+    },
+    "114": {
+      "words": 20,
+      "core_dn": 1,
+      "core_dn_breakdown": {
+        "رب": 1
+      },
+      "full_dn": 0,
+      "core_density": 0.05,
+      "full_density": 0.0
+    }
+  },
+  "model_A": {
+    "r2": 0.980286618849238,
+    "betas": [
+      117.86875000000008,
+      -66.06250000000003,
+      -27.449999999999985,
+      16.587500000000027,
+      -3.6562500000000377,
+      -36.21250000000002
+    ],
+    "design_columns": [
+      "intercept",
+      "block",
+      "register",
+      "chrono",
+      "formula",
+      "no_outlier"
+    ]
+  },
+  "model_B": {
+    "r2": 0.9861582476902023,
+    "betas": [
+      136.42309410730047,
+      -77.57138506546485,
+      -25.61473917206046,
+      17.94235131154794,
+      -7.442401887076347,
+      -37.199081892837135,
+      -10.551643012562739,
+      -47.9481037169842
+    ],
+    "design_columns": [
+      "intercept",
+      "block",
+      "register",
+      "chrono",
+      "formula",
+      "no_outlier",
+      "dn_cv",
+      "dn_mean"
+    ]
+  },
+  "delta_r2": 0.005871628840964371,
+  "perm_p": 0.4913,
+  "perm_null_summary": {
+    "n": 10000,
+    "mean": 0.006570933900520767,
+    "min": 1.512433527306456e-07,
+    "max": 0.019547020113372504,
+    "p95": 0.015318361094035948,
+    "p99": 0.017787624739316388
+  },
+  "gates": {
+    "gate1_delta_r2_gt_005": false,
+    "gate2_perm_p_le_alpha_bon": false,
+    "gate3_beta_dn_cv_positive": false,
+    "aggregate_h1_pass": false
+  },
+  "spearman_descriptive": {
+    "n": 64,
+    "rho_per_surah_core_density_vs_inherited_pct": -0.1444139194139194
+  },
+  "verdict": "NULL — 5-factor model TERMINAL"
+}

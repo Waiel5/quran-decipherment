@@ -1,0 +1,86 @@
+{
+  "seed": 20260413,
+  "hypothesis": "H-NEW-23 hapax-final slot theory (al-Zarkash\u012b maq\u1e63\u016bda li-ghayrih\u0101)",
+  "rules_tuple": "no-tashkeel, orthographic-token, QAC-roots, counted-only-in-surah-1, Kufan, mashriqi",
+  "n_root_hapaxes": 395,
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0025,
+  "sub1_quartile_trend": {
+    "quartile_hapax_final_count": [
+      24,
+      36,
+      27,
+      34
+    ],
+    "quartile_verse_count": [
+      1599,
+      1546,
+      1573,
+      1518
+    ],
+    "final_rates_by_q": [
+      0.0150093808630394,
+      0.02328589909443726,
+      0.017164653528289893,
+      0.022397891963109356
+    ],
+    "cochran_armitage_z": 1.0345058334277617,
+    "p_one_sided": 0.15044987556049583,
+    "pass": false
+  },
+  "sub2_genre": {
+    "genre_counts": {
+      "hymn": [
+        7,
+        0
+      ],
+      "legal": [
+        978,
+        2
+      ],
+      "narrative": [
+        4393,
+        74
+      ],
+      "polemic": [
+        313,
+        3
+      ],
+      "eschatological": [
+        545,
+        42
+      ]
+    },
+    "genre_rates": {
+      "eschatological": 0.07706422018348624,
+      "hymn": 0.0,
+      "legal": 0.002044989775051125,
+      "narrative": 0.016844980651035738,
+      "polemic": 0.009584664536741214
+    },
+    "chi2": 113.95670187940989,
+    "df": 4,
+    "p": 0.0,
+    "pass": true
+  },
+  "sub3_within_verse_slot_CRITICAL": {
+    "n_hapax": 395,
+    "observed_final": 121,
+    "expected_uniform": 53.94880700374769,
+    "expected_sd": 6.320916788532199,
+    "z": 10.60782719334334,
+    "p_one_sided": 0.0,
+    "pass": true
+  },
+  "sub4_tasdir_mutual_exclusion": {
+    "n_tasdir_verses": 114,
+    "n_hapax_final_verses": 121,
+    "intersection": 0,
+    "expected_intersection": 2.2119948685054522,
+    "expected_sd": 1.459370854941721,
+    "z": 1.5157181336157264,
+    "p_one_sided": 0.06479532018284284,
+    "pass": false
+  },
+  "joint_pass": false
+}

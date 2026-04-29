@@ -1,0 +1,42 @@
+{
+  "id": "H-NEW-331",
+  "prereg_sha": "f6608cd496fa6b5ecfd1eca5839404f161980b30176c4bb3a7f1893d5aa9a0fb",
+  "seed": 20260430,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "cell_A_musabbihat": {
+    "d_obs": 0.8622437619047619,
+    "null_mean": 0.9227928523428571,
+    "p_less": 0.1977,
+    "pct_2_5": 0.7240591904761905,
+    "pct_97_5": 1.0465489523809524,
+    "pass": false,
+    "subset": [
+      17,
+      57,
+      59,
+      61,
+      62,
+      64,
+      87
+    ]
+  },
+  "cell_B_mw5_hawamim": {
+    "d_obs": 0.8570372666666667,
+    "null_mean": 0.9245826105533334,
+    "p_less": 0.1886,
+    "pct_2_5": 0.7007658,
+    "pct_97_5": 1.0562139333333334,
+    "pass": false,
+    "subset": [
+      40,
+      41,
+      43,
+      44,
+      45,
+      46
+    ]
+  },
+  "verdict": "NULL (musabbi\u1e25\u0101t not cohesive; MW-5 underpowered)"
+}

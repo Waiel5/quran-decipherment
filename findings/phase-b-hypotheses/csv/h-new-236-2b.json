@@ -1,0 +1,3604 @@
+{
+  "finding_id": "h-new-236-2b",
+  "title": "Held-out predictability of the extra scaffold edges under locked boundary features",
+  "date": "2026-04-19",
+  "seed": 20260419,
+  "pre_reg_sha256": "b6bfd54250cfb42d37f53c14f00a6b9b7d59e8f89e0b1dcce3d53c3d5516a7cf",
+  "rules_tuple": "(113 canonical consecutive edges; H100 and H50 imported directly from h-new-236-1d.json; positive=P=H100\\\\H50; negative=N=E\\\\H100; 9 locked binary features from H-NEW-130 / H-NEW-236.1b; LOOCV logistic C=1.0 class_weight=balanced solver=newton-cholesky; 10000 label permutations; descriptive H-NEW-130 top-15 positive control)",
+  "feature_names": [
+    "classical_length_boundary",
+    "period_transition",
+    "phase_transition",
+    "muq_presence_change",
+    "muq_letterset_change",
+    "within_hawamim",
+    "within_mufassal_short",
+    "same_rhyme_class",
+    "liturgical_pair"
+  ],
+  "universe": {
+    "canonical_edge_count": 113,
+    "h50_count": 50,
+    "h100_count": 100,
+    "analysis_pool_count": 63,
+    "positive_count": 50,
+    "negative_count": 13,
+    "excluded_h50_count": 50,
+    "positive_edges": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        27,
+        28
+      ],
+      [
+        39,
+        40
+      ],
+      [
+        45,
+        46
+      ],
+      [
+        50,
+        51
+      ],
+      [
+        51,
+        52
+      ],
+      [
+        58,
+        59
+      ],
+      [
+        59,
+        60
+      ],
+      [
+        60,
+        61
+      ],
+      [
+        61,
+        62
+      ],
+      [
+        62,
+        63
+      ],
+      [
+        63,
+        64
+      ],
+      [
+        64,
+        65
+      ],
+      [
+        67,
+        68
+      ],
+      [
+        68,
+        69
+      ],
+      [
+        69,
+        70
+      ],
+      [
+        71,
+        72
+      ],
+      [
+        72,
+        73
+      ],
+      [
+        73,
+        74
+      ],
+      [
+        74,
+        75
+      ],
+      [
+        75,
+        76
+      ],
+      [
+        77,
+        78
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        79,
+        80
+      ],
+      [
+        80,
+        81
+      ],
+      [
+        81,
+        82
+      ],
+      [
+        82,
+        83
+      ],
+      [
+        83,
+        84
+      ],
+      [
+        84,
+        85
+      ],
+      [
+        85,
+        86
+      ],
+      [
+        86,
+        87
+      ],
+      [
+        87,
+        88
+      ],
+      [
+        88,
+        89
+      ],
+      [
+        89,
+        90
+      ],
+      [
+        90,
+        91
+      ],
+      [
+        91,
+        92
+      ],
+      [
+        92,
+        93
+      ],
+      [
+        95,
+        96
+      ],
+      [
+        96,
+        97
+      ],
+      [
+        97,
+        98
+      ],
+      [
+        98,
+        99
+      ],
+      [
+        99,
+        100
+      ],
+      [
+        100,
+        101
+      ],
+      [
+        101,
+        102
+      ],
+      [
+        109,
+        110
+      ]
+    ],
+    "negative_edges": [
+      [
+        93,
+        94
+      ],
+      [
+        94,
+        95
+      ],
+      [
+        102,
+        103
+      ],
+      [
+        103,
+        104
+      ],
+      [
+        104,
+        105
+      ],
+      [
+        105,
+        106
+      ],
+      [
+        106,
+        107
+      ],
+      [
+        107,
+        108
+      ],
+      [
+        108,
+        109
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        111,
+        112
+      ],
+      [
+        112,
+        113
+      ],
+      [
+        113,
+        114
+      ]
+    ],
+    "excluded_h50_edges": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        26,
+        27
+      ],
+      [
+        28,
+        29
+      ],
+      [
+        29,
+        30
+      ],
+      [
+        30,
+        31
+      ],
+      [
+        31,
+        32
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        34,
+        35
+      ],
+      [
+        35,
+        36
+      ],
+      [
+        36,
+        37
+      ],
+      [
+        37,
+        38
+      ],
+      [
+        38,
+        39
+      ],
+      [
+        40,
+        41
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        42,
+        43
+      ],
+      [
+        43,
+        44
+      ],
+      [
+        44,
+        45
+      ],
+      [
+        46,
+        47
+      ],
+      [
+        47,
+        48
+      ],
+      [
+        48,
+        49
+      ],
+      [
+        49,
+        50
+      ],
+      [
+        52,
+        53
+      ],
+      [
+        53,
+        54
+      ],
+      [
+        54,
+        55
+      ],
+      [
+        55,
+        56
+      ],
+      [
+        56,
+        57
+      ],
+      [
+        57,
+        58
+      ],
+      [
+        65,
+        66
+      ],
+      [
+        66,
+        67
+      ],
+      [
+        70,
+        71
+      ],
+      [
+        76,
+        77
+      ]
+    ]
+  },
+  "main_analysis": {
+    "auc_loocv": 0.647692,
+    "descriptive_strength_band": "weak",
+    "verdict": "PASS-DIRECTED (weak)",
+    "accuracy_at_0_5": 0.619048,
+    "balanced_accuracy_at_0_5": 0.731538,
+    "confusion_at_0_5": {
+      "tp": 27,
+      "tn": 12,
+      "fp": 1,
+      "fn": 23,
+      "accuracy": 0.619048,
+      "sensitivity": 0.54,
+      "specificity": 0.923077,
+      "balanced_accuracy": 0.731538
+    },
+    "permutation_null": {
+      "n_perm": 10000,
+      "p_value": 0.030197,
+      "ge_count": 301,
+      "null_auc_mean": 0.430961,
+      "null_auc_std": 0.125221,
+      "null_auc_q95": 0.623077,
+      "null_auc_q99": 0.692308,
+      "null_auc_max": 0.793846,
+      "null_auc_min": 0.0
+    },
+    "feature_prevalence": {
+      "classical_length_boundary": {
+        "all": 2,
+        "positive": 2,
+        "negative": 0
+      },
+      "period_transition": {
+        "all": 6,
+        "positive": 5,
+        "negative": 1
+      },
+      "phase_transition": {
+        "all": 9,
+        "positive": 8,
+        "negative": 1
+      },
+      "muq_presence_change": {
+        "all": 6,
+        "positive": 6,
+        "negative": 0
+      },
+      "muq_letterset_change": {
+        "all": 2,
+        "positive": 2,
+        "negative": 0
+      },
+      "within_hawamim": {
+        "all": 1,
+        "positive": 1,
+        "negative": 0
+      },
+      "within_mufassal_short": {
+        "all": 36,
+        "positive": 23,
+        "negative": 13
+      },
+      "same_rhyme_class": {
+        "all": 14,
+        "positive": 9,
+        "negative": 5
+      },
+      "liturgical_pair": {
+        "all": 4,
+        "positive": 2,
+        "negative": 2
+      }
+    },
+    "full_model": {
+      "intercept": 1.74213,
+      "coefficients": {
+        "classical_length_boundary": 0.418034,
+        "period_transition": 0.107676,
+        "phase_transition": 0.257314,
+        "muq_presence_change": 0.377077,
+        "muq_letterset_change": 0.141846,
+        "within_hawamim": 0.087124,
+        "within_mufassal_short": -2.222671,
+        "same_rhyme_class": -0.179432,
+        "liturgical_pair": -0.432041
+      }
+    },
+    "rows": [
+      {
+        "edge": [
+          2,
+          3
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          3,
+          4
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.886887
+      },
+      {
+        "edge": [
+          4,
+          5
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          6,
+          7
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.886887
+      },
+      {
+        "edge": [
+          10,
+          11
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          13,
+          14
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.865137
+      },
+      {
+        "edge": [
+          27,
+          28
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.884282
+      },
+      {
+        "edge": [
+          39,
+          40
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.886887
+      },
+      {
+        "edge": [
+          45,
+          46
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 1,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847935
+      },
+      {
+        "edge": [
+          50,
+          51
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.9096
+      },
+      {
+        "edge": [
+          51,
+          52
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          58,
+          59
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          59,
+          60
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          60,
+          61
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          61,
+          62
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          62,
+          63
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          63,
+          64
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          64,
+          65
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          67,
+          68
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.9096
+      },
+      {
+        "edge": [
+          68,
+          69
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.886887
+      },
+      {
+        "edge": [
+          69,
+          70
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          71,
+          72
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          72,
+          73
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.874966
+      },
+      {
+        "edge": [
+          73,
+          74
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          74,
+          75
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.847582
+      },
+      {
+        "edge": [
+          75,
+          76
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.88613
+      },
+      {
+        "edge": [
+          77,
+          78
+        ],
+        "label": 1,
+        "classical_length_boundary": 1,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.88967
+      },
+      {
+        "edge": [
+          78,
+          79
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          79,
+          80
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          80,
+          81
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.32404
+      },
+      {
+        "edge": [
+          81,
+          82
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.32404
+      },
+      {
+        "edge": [
+          82,
+          83
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          83,
+          84
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          84,
+          85
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.32404
+      },
+      {
+        "edge": [
+          85,
+          86
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.32404
+      },
+      {
+        "edge": [
+          86,
+          87
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          87,
+          88
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 1,
+        "loocv_p_positive": 0.202605
+      },
+      {
+        "edge": [
+          88,
+          89
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.32404
+      },
+      {
+        "edge": [
+          89,
+          90
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          90,
+          91
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          91,
+          92
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.32404
+      },
+      {
+        "edge": [
+          92,
+          93
+        ],
+        "label": 1,
+        "classical_length_boundary": 1,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.346663
+      },
+      {
+        "edge": [
+          93,
+          94
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 1,
+        "loocv_p_positive": 0.328461
+      },
+      {
+        "edge": [
+          94,
+          95
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.368845
+      },
+      {
+        "edge": [
+          95,
+          96
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.32404
+      },
+      {
+        "edge": [
+          96,
+          97
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          97,
+          98
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.417002
+      },
+      {
+        "edge": [
+          98,
+          99
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.39435
+      },
+      {
+        "edge": [
+          99,
+          100
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.35233
+      },
+      {
+        "edge": [
+          100,
+          101
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          101,
+          102
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.373474
+      },
+      {
+        "edge": [
+          102,
+          103
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.397054
+      },
+      {
+        "edge": [
+          103,
+          104
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.397054
+      },
+      {
+        "edge": [
+          104,
+          105
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.368845
+      },
+      {
+        "edge": [
+          105,
+          106
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.368845
+      },
+      {
+        "edge": [
+          106,
+          107
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.368845
+      },
+      {
+        "edge": [
+          107,
+          108
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.397054
+      },
+      {
+        "edge": [
+          108,
+          109
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.397054
+      },
+      {
+        "edge": [
+          109,
+          110
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 1,
+        "loocv_p_positive": 0.267599
+      },
+      {
+        "edge": [
+          110,
+          111
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.746484
+      },
+      {
+        "edge": [
+          111,
+          112
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.397054
+      },
+      {
+        "edge": [
+          112,
+          113
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.397054
+      },
+      {
+        "edge": [
+          113,
+          114
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 1,
+        "loocv_p_positive": 0.378695
+      }
+    ]
+  },
+  "positive_control_h130_top15_descriptive": {
+    "edge_count": 113,
+    "positive_count": 15,
+    "negative_count": 98,
+    "auc_loocv": 0.90068,
+    "descriptive_strength_band": "strong",
+    "accuracy_at_0_5": 0.787611,
+    "balanced_accuracy_at_0_5": 0.736395,
+    "confusion_at_0_5": {
+      "tp": 10,
+      "tn": 79,
+      "fp": 19,
+      "fn": 5,
+      "accuracy": 0.787611,
+      "sensitivity": 0.666667,
+      "specificity": 0.806122,
+      "balanced_accuracy": 0.736395
+    },
+    "full_model": {
+      "intercept": -1.761818,
+      "coefficients": {
+        "classical_length_boundary": 0.160415,
+        "period_transition": 2.000148,
+        "phase_transition": 1.738635,
+        "muq_presence_change": 0.325557,
+        "muq_letterset_change": 0.211701,
+        "within_hawamim": -0.627562,
+        "within_mufassal_short": -1.662738,
+        "same_rhyme_class": -0.203212,
+        "liturgical_pair": -0.322168
+      }
+    },
+    "rows": [
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.905052
+      },
+      {
+        "edge": [
+          2,
+          3
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          3,
+          4
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.198048
+      },
+      {
+        "edge": [
+          4,
+          5
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          5,
+          6
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.888247
+      },
+      {
+        "edge": [
+          6,
+          7
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.198048
+      },
+      {
+        "edge": [
+          7,
+          8
+        ],
+        "label": 1,
+        "classical_length_boundary": 1,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.91083
+      },
+      {
+        "edge": [
+          8,
+          9
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          9,
+          10
+        ],
+        "label": 1,
+        "classical_length_boundary": 1,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.91083
+      },
+      {
+        "edge": [
+          10,
+          11
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          11,
+          12
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          12,
+          13
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.308237
+      },
+      {
+        "edge": [
+          13,
+          14
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.65111
+      },
+      {
+        "edge": [
+          14,
+          15
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.392914
+      },
+      {
+        "edge": [
+          15,
+          16
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.433627
+      },
+      {
+        "edge": [
+          16,
+          17
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.506446
+      },
+      {
+        "edge": [
+          17,
+          18
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          18,
+          19
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.198048
+      },
+      {
+        "edge": [
+          19,
+          20
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.181641
+      },
+      {
+        "edge": [
+          20,
+          21
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.198048
+      },
+      {
+        "edge": [
+          21,
+          22
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.888247
+      },
+      {
+        "edge": [
+          22,
+          23
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.888247
+      },
+      {
+        "edge": [
+          23,
+          24
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.876559
+      },
+      {
+        "edge": [
+          24,
+          25
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.876559
+      },
+      {
+        "edge": [
+          25,
+          26
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.198048
+      },
+      {
+        "edge": [
+          26,
+          27
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.181641
+      },
+      {
+        "edge": [
+          27,
+          28
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.596173
+      },
+      {
+        "edge": [
+          28,
+          29
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.181641
+      },
+      {
+        "edge": [
+          29,
+          30
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          30,
+          31
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          31,
+          32
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          32,
+          33
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.905052
+      },
+      {
+        "edge": [
+          33,
+          34
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.876559
+      },
+      {
+        "edge": [
+          34,
+          35
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          35,
+          36
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.596874
+      },
+      {
+        "edge": [
+          36,
+          37
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.198048
+      },
+      {
+        "edge": [
+          37,
+          38
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.198048
+      },
+      {
+        "edge": [
+          38,
+          39
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.596874
+      },
+      {
+        "edge": [
+          39,
+          40
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.198048
+      },
+      {
+        "edge": [
+          40,
+          41
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 1,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.087023
+      },
+      {
+        "edge": [
+          41,
+          42
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 1,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.107384
+      },
+      {
+        "edge": [
+          42,
+          43
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 1,
+        "within_hawamim": 1,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.463602
+      },
+      {
+        "edge": [
+          43,
+          44
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 1,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.087023
+      },
+      {
+        "edge": [
+          44,
+          45
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 1,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.382163
+      },
+      {
+        "edge": [
+          45,
+          46
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 1,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.087023
+      },
+      {
+        "edge": [
+          46,
+          47
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.922226
+      },
+      {
+        "edge": [
+          47,
+          48
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          48,
+          49
+        ],
+        "label": 0,
+        "classical_length_boundary": 1,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.178319
+      },
+      {
+        "edge": [
+          49,
+          50
+        ],
+        "label": 1,
+        "classical_length_boundary": 1,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.91083
+      },
+      {
+        "edge": [
+          50,
+          51
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.596874
+      },
+      {
+        "edge": [
+          51,
+          52
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          52,
+          53
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          53,
+          54
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.392914
+      },
+      {
+        "edge": [
+          54,
+          55
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.876559
+      },
+      {
+        "edge": [
+          55,
+          56
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.409335
+      },
+      {
+        "edge": [
+          56,
+          57
+        ],
+        "label": 1,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.876559
+      },
+      {
+        "edge": [
+          57,
+          58
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          58,
+          59
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          59,
+          60
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          60,
+          61
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          61,
+          62
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          62,
+          63
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          63,
+          64
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          64,
+          65
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          65,
+          66
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          66,
+          67
+        ],
+        "label": 0,
+        "classical_length_boundary": 1,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.922544
+      },
+      {
+        "edge": [
+          67,
+          68
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.596874
+      },
+      {
+        "edge": [
+          68,
+          69
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 1,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.198048
+      },
+      {
+        "edge": [
+          69,
+          70
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          70,
+          71
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.506446
+      },
+      {
+        "edge": [
+          71,
+          72
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          72,
+          73
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.506446
+      },
+      {
+        "edge": [
+          73,
+          74
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          74,
+          75
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.148077
+      },
+      {
+        "edge": [
+          75,
+          76
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.888247
+      },
+      {
+        "edge": [
+          76,
+          77
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.888247
+      },
+      {
+        "edge": [
+          77,
+          78
+        ],
+        "label": 0,
+        "classical_length_boundary": 1,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 0,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.178319
+      },
+      {
+        "edge": [
+          78,
+          79
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          79,
+          80
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          80,
+          81
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          81,
+          82
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          82,
+          83
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          83,
+          84
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          84,
+          85
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          85,
+          86
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          86,
+          87
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          87,
+          88
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 1,
+        "loocv_p_positive": 0.019272
+      },
+      {
+        "edge": [
+          88,
+          89
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          89,
+          90
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          90,
+          91
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          91,
+          92
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          92,
+          93
+        ],
+        "label": 0,
+        "classical_length_boundary": 1,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.03118
+      },
+      {
+        "edge": [
+          93,
+          94
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 1,
+        "loocv_p_positive": 0.019272
+      },
+      {
+        "edge": [
+          94,
+          95
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          95,
+          96
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          96,
+          97
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          97,
+          98
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.629982
+      },
+      {
+        "edge": [
+          98,
+          99
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.163501
+      },
+      {
+        "edge": [
+          99,
+          100
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.205952
+      },
+      {
+        "edge": [
+          100,
+          101
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          101,
+          102
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          102,
+          103
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          103,
+          104
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          104,
+          105
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          105,
+          106
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          106,
+          107
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 1,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.026311
+      },
+      {
+        "edge": [
+          107,
+          108
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          108,
+          109
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          109,
+          110
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 1,
+        "loocv_p_positive": 0.609124
+      },
+      {
+        "edge": [
+          110,
+          111
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 1,
+        "phase_transition": 1,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.629982
+      },
+      {
+        "edge": [
+          111,
+          112
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          112,
+          113
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 0,
+        "loocv_p_positive": 0.031803
+      },
+      {
+        "edge": [
+          113,
+          114
+        ],
+        "label": 0,
+        "classical_length_boundary": 0,
+        "period_transition": 0,
+        "phase_transition": 0,
+        "muq_presence_change": 0,
+        "muq_letterset_change": 0,
+        "within_hawamim": 0,
+        "within_mufassal_short": 1,
+        "same_rhyme_class": 0,
+        "liturgical_pair": 1,
+        "loocv_p_positive": 0.02342
+      }
+    ]
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "n_valid_surahs": 90,
+  "n_insufficient_surahs": 24,
+  "min_distinct_lemmas_threshold": 50,
+  "whole_quran_zipf": {
+    "alpha": 1.317706164468749,
+    "r2": 0.9754088848491874,
+    "n_distinct_lemmas": 4832,
+    "n_lemma_tokens": 74608
+  },
+  "correlations": {
+    "spearman_rho_alpha_revelation_order": 0.19902868666913612,
+    "spearman_rho_alpha_noldeke_order": 0.6082973206568713,
+    "spearman_rho_alpha_n_tokens": 0.9620230244811303,
+    "spearman_rho_alpha_n_distinct": 0.9292185110713647,
+    "point_biserial_medinan_alpha": 0.2037024703964062,
+    "partial_spearman_alpha_revorder_given_logtokens": 0.39737416141910525,
+    "partial_pearson_alpha_revorder_given_logtokens": 0.39533268554137263,
+    "perm_p_rho_revelation": 0.06239376062393761,
+    "perm_p_rho_noldeke": 9.999000099990002e-05,
+    "n_perm": 10000
+  },
+  "length_bins": [
+    {
+      "bin": 0,
+      "n": 18,
+      "n_tokens_range": [
+        70,
+        179
+      ],
+      "mean_alpha": 0.4330588888888889,
+      "spearman_rho_alpha_revorder": 0.6553147574819401
+    },
+    {
+      "bin": 1,
+      "n": 18,
+      "n_tokens_range": [
+        194,
+        338
+      ],
+      "mean_alpha": 0.5648024444444445,
+      "spearman_rho_alpha_revorder": 0.1042311661506708
+    },
+    {
+      "bin": 2,
+      "n": 18,
+      "n_tokens_range": [
+        342,
+        755
+      ],
+      "mean_alpha": 0.6685976666666666,
+      "spearman_rho_alpha_revorder": 0.3065015479876161
+    },
+    {
+      "bin": 3,
+      "n": 18,
+      "n_tokens_range": [
+        767,
+        1224
+      ],
+      "mean_alpha": 0.7588715,
+      "spearman_rho_alpha_revorder": 0.15583075335397317
+    },
+    {
+      "bin": 4,
+      "n": 18,
+      "n_tokens_range": [
+        1247,
+        5884
+      ],
+      "mean_alpha": 0.8694033888888888,
+      "spearman_rho_alpha_revorder": 0.3333333333333333
+    }
+  ],
+  "noldeke_phase_means": {
+    "Early Meccan": {
+      "n": 25,
+      "mean_alpha": 0.4702006,
+      "min": 0.290574,
+      "max": 0.727058
+    },
+    "Middle Meccan": {
+      "n": 21,
+      "mean_alpha": 0.6933878095238095,
+      "min": 0.498378,
+      "max": 0.845656
+    },
+    "Late Meccan": {
+      "n": 21,
+      "mean_alpha": 0.7826390952380953,
+      "min": 0.61185,
+      "max": 0.935833
+    },
+    "Medinan": {
+      "n": 23,
+      "mean_alpha": 0.7197230434782608,
+      "min": 0.480235,
+      "max": 0.99566
+    }
+  },
+  "period_means": {
+    "Meccan": {
+      "n": 64,
+      "mean_alpha": 0.6376745625,
+      "sd_alpha": 0.1671784591754624
+    },
+    "Medinan": {
+      "n": 26,
+      "mean_alpha": 0.7113091538461538,
+      "sd_alpha": 0.148983887401475
+    }
+  },
+  "top10_alpha": [
+    {
+      "mushaf_order": 2,
+      "name_tl": "Al-Baqarah",
+      "period": "Medinan",
+      "revelation_order": 87,
+      "n_distinct_lemmas": 1136,
+      "zipf_alpha": 0.99566,
+      "r_squared": 0.971272,
+      "boot_95ci": [
+        1.008795,
+        1.042961
+      ]
+    },
+    {
+      "mushaf_order": 4,
+      "name_tl": "An-Nisa",
+      "period": "Medinan",
+      "revelation_order": 92,
+      "n_distinct_lemmas": 809,
+      "zipf_alpha": 0.964356,
+      "r_squared": 0.96631,
+      "boot_95ci": [
+        0.97673,
+        1.016924
+      ]
+    },
+    {
+      "mushaf_order": 3,
+      "name_tl": "Al-Imran",
+      "period": "Medinan",
+      "revelation_order": 89,
+      "n_distinct_lemmas": 760,
+      "zipf_alpha": 0.953981,
+      "r_squared": 0.967177,
+      "boot_95ci": [
+        0.963405,
+        1.006489
+      ]
+    },
+    {
+      "mushaf_order": 6,
+      "name_tl": "Al-Anam",
+      "period": "Meccan",
+      "revelation_order": 55,
+      "n_distinct_lemmas": 724,
+      "zipf_alpha": 0.935833,
+      "r_squared": 0.963153,
+      "boot_95ci": [
+        0.961804,
+        1.005763
+      ]
+    },
+    {
+      "mushaf_order": 5,
+      "name_tl": "Al-Maidah",
+      "period": "Medinan",
+      "revelation_order": 112,
+      "n_distinct_lemmas": 684,
+      "zipf_alpha": 0.916651,
+      "r_squared": 0.967398,
+      "boot_95ci": [
+        0.933586,
+        0.979408
+      ]
+    },
+    {
+      "mushaf_order": 7,
+      "name_tl": "Al-Araf",
+      "period": "Meccan",
+      "revelation_order": 39,
+      "n_distinct_lemmas": 818,
+      "zipf_alpha": 0.913216,
+      "r_squared": 0.960876,
+      "boot_95ci": [
+        0.941566,
+        0.984049
+      ]
+    },
+    {
+      "mushaf_order": 9,
+      "name_tl": "At-Tawbah",
+      "period": "Medinan",
+      "revelation_order": 113,
+      "n_distinct_lemmas": 637,
+      "zipf_alpha": 0.907942,
+      "r_squared": 0.960871,
+      "boot_95ci": [
+        0.923185,
+        0.971724
+      ]
+    },
+    {
+      "mushaf_order": 10,
+      "name_tl": "Yunus",
+      "period": "Meccan",
+      "revelation_order": 51,
+      "n_distinct_lemmas": 485,
+      "zipf_alpha": 0.907395,
+      "r_squared": 0.95977,
+      "boot_95ci": [
+        0.928966,
+        0.986725
+      ]
+    },
+    {
+      "mushaf_order": 11,
+      "name_tl": "Hud",
+      "period": "Meccan",
+      "revelation_order": 52,
+      "n_distinct_lemmas": 553,
+      "zipf_alpha": 0.855342,
+      "r_squared": 0.953122,
+      "boot_95ci": [
+        0.897424,
+        0.951631
+      ]
+    },
+    {
+      "mushaf_order": 12,
+      "name_tl": "Yusuf",
+      "period": "Meccan",
+      "revelation_order": 53,
+      "n_distinct_lemmas": 511,
+      "zipf_alpha": 0.850994,
+      "r_squared": 0.961315,
+      "boot_95ci": [
+        0.883224,
+        0.93709
+      ]
+    }
+  ],
+  "bot10_alpha": [
+    {
+      "mushaf_order": 87,
+      "name_tl": "Al-A'la",
+      "period": "Meccan",
+      "revelation_order": 8,
+      "n_distinct_lemmas": 60,
+      "zipf_alpha": 0.290574,
+      "r_squared": 0.722509,
+      "boot_95ci": [
+        0.43904,
+        0.644054
+      ]
+    },
+    {
+      "mushaf_order": 90,
+      "name_tl": "Al-Balad",
+      "period": "Meccan",
+      "revelation_order": 35,
+      "n_distinct_lemmas": 62,
+      "zipf_alpha": 0.306584,
+      "r_squared": 0.743842,
+      "boot_95ci": [
+        0.432483,
+        0.624868
+      ]
+    },
+    {
+      "mushaf_order": 92,
+      "name_tl": "Al-Layl",
+      "period": "Meccan",
+      "revelation_order": 9,
+      "n_distinct_lemmas": 56,
+      "zipf_alpha": 0.324661,
+      "r_squared": 0.767801,
+      "boot_95ci": [
+        0.448654,
+        0.652902
+      ]
+    },
+    {
+      "mushaf_order": 80,
+      "name_tl": "Abasa",
+      "period": "Meccan",
+      "revelation_order": 24,
+      "n_distinct_lemmas": 102,
+      "zipf_alpha": 0.329656,
+      "r_squared": 0.761294,
+      "boot_95ci": [
+        0.468469,
+        0.611103
+      ]
+    },
+    {
+      "mushaf_order": 81,
+      "name_tl": "At-Takwir",
+      "period": "Meccan",
+      "revelation_order": 7,
+      "n_distinct_lemmas": 76,
+      "zipf_alpha": 0.352359,
+      "r_squared": 0.625015,
+      "boot_95ci": [
+        0.539964,
+        0.709022
+      ]
+    },
+    {
+      "mushaf_order": 85,
+      "name_tl": "Al-Buruj",
+      "period": "Meccan",
+      "revelation_order": 27,
+      "n_distinct_lemmas": 76,
+      "zipf_alpha": 0.375848,
+      "r_squared": 0.789976,
+      "boot_95ci": [
+        0.476587,
+        0.656358
+      ]
+    },
+    {
+      "mushaf_order": 88,
+      "name_tl": "Al-Ghashiyah",
+      "period": "Meccan",
+      "revelation_order": 68,
+      "n_distinct_lemmas": 68,
+      "zipf_alpha": 0.400622,
+      "r_squared": 0.77188,
+      "boot_95ci": [
+        0.503738,
+        0.686572
+      ]
+    },
+    {
+      "mushaf_order": 84,
+      "name_tl": "Al-Inshiqaq",
+      "period": "Meccan",
+      "revelation_order": 83,
+      "n_distinct_lemmas": 75,
+      "zipf_alpha": 0.405258,
+      "r_squared": 0.829555,
+      "boot_95ci": [
+        0.490339,
+        0.661501
+      ]
+    },
+    {
+      "mushaf_order": 79,
+      "name_tl": "An-Naziat",
+      "period": "Meccan",
+      "revelation_order": 81,
+      "n_distinct_lemmas": 126,
+      "zipf_alpha": 0.406171,
+      "r_squared": 0.806266,
+      "boot_95ci": [
+        0.503927,
+        0.650128
+      ]
+    },
+    {
+      "mushaf_order": 78,
+      "name_tl": "An-Naba",
+      "period": "Meccan",
+      "revelation_order": 80,
+      "n_distinct_lemmas": 121,
+      "zipf_alpha": 0.433721,
+      "r_squared": 0.816551,
+      "boot_95ci": [
+        0.535543,
+        0.67297
+      ]
+    }
+  ],
+  "seed": 17,
+  "n_bootstrap": 1000
+}

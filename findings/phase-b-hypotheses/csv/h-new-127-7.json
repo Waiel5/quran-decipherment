@@ -1,0 +1,1649 @@
+{
+  "finding_id": "h-new-127-7",
+  "title": "H-NEW-127.7 phase-aware control for the Jurjani-tier bridge",
+  "pre_reg_sha256": "9dc8ba8bdc0c3be82c3083f2ec993ad8b982038fcd14ece2857ff688454d7721",
+  "seed": 20260419,
+  "date": "2026-04-19",
+  "parent_finding": "h-new-127",
+  "audit_backdrop": "h-new-127-6",
+  "observable": {
+    "source_file": "findings/phase-b-hypotheses/csv/compression_self_ref_results.json",
+    "source_field": "task_A.surah_metrics.gzip_z",
+    "definition": "z_s = -gzip_z so larger values mean stronger compression relative to the locked length-matched null"
+  },
+  "label_axis": {
+    "source_file": "findings/classical-sources/neuwirth-sinai-genre-labels.tsv",
+    "field": "jurjani_predicted_asyndeton_tier",
+    "note": "No relabeling or pooling; the exact locked tier taxonomy is used as-is."
+  },
+  "control_axis": {
+    "source_file": "findings/classical-sources/neuwirth-sinai-genre-labels.tsv",
+    "field": "neuwirth_phase",
+    "note": "Tier labels are shuffled only within these phase blocks, preserving the observed tier counts inside each phase."
+  },
+  "rules_tuple": "(no-tashkeel; locked per-surah compression z-scores from the repository-computed gzip null; primary label axis = jurjani_predicted_asyndeton_tier; control axis = neuwirth_phase; Kruskal-Wallis H on raw z_s; outer null shuffles tier labels only within phase blocks, preserving observed tier counts inside each phase; 114 surahs)",
+  "n_surahs": 114,
+  "n_perm": 20000,
+  "alpha": 0.05,
+  "class_counts": {
+    "HIGH": 65,
+    "MED": 32,
+    "LOW": 17
+  },
+  "phase_control_diagnostics": {
+    "n_phase_blocks": 10,
+    "n_informative_phase_blocks": 5,
+    "n_frozen_phase_blocks": 5,
+    "n_surahs_in_informative_phase_blocks": 109,
+    "n_surahs_in_frozen_phase_blocks": 5,
+    "informative_phase_blocks": [
+      {
+        "phase": "Medinan-long",
+        "n": 21,
+        "tier_counts": {
+          "LOW": 15,
+          "MED": 6
+        }
+      },
+      {
+        "phase": "Medinan-short",
+        "n": 2,
+        "tier_counts": {
+          "LOW": 1,
+          "MED": 1
+        }
+      },
+      {
+        "phase": "early-Meccan",
+        "n": 48,
+        "tier_counts": {
+          "HIGH": 46,
+          "MED": 2
+        }
+      },
+      {
+        "phase": "late-Meccan",
+        "n": 22,
+        "tier_counts": {
+          "HIGH": 4,
+          "LOW": 1,
+          "MED": 17
+        }
+      },
+      {
+        "phase": "middle-Meccan",
+        "n": 16,
+        "tier_counts": {
+          "HIGH": 13,
+          "MED": 3
+        }
+      }
+    ],
+    "frozen_phase_blocks": [
+      {
+        "phase": "early-Meccan/Medinan-disputed",
+        "n": 1,
+        "tier_counts": {
+          "HIGH": 1
+        }
+      },
+      {
+        "phase": "late-Meccan/Medinan-border",
+        "n": 1,
+        "tier_counts": {
+          "MED": 1
+        }
+      },
+      {
+        "phase": "late-Meccan/Medinan-hybrid",
+        "n": 1,
+        "tier_counts": {
+          "MED": 1
+        }
+      },
+      {
+        "phase": "late-Meccan/middle-Meccan",
+        "n": 1,
+        "tier_counts": {
+          "MED": 1
+        }
+      },
+      {
+        "phase": "liturgical-opening",
+        "n": 1,
+        "tier_counts": {
+          "HIGH": 1
+        }
+      }
+    ]
+  },
+  "primary_test": {
+    "statistic": "Kruskal-Wallis H",
+    "df": 2,
+    "observed_H": 58.10449819832883,
+    "null_mean_H": 53.011575118215276,
+    "null_sd_H": 3.7769254988374317,
+    "null_min_H": 41.58686032906388,
+    "null_max_H": 70.31897449703354,
+    "null_quantiles": {
+      "q001": 43.646680084285094,
+      "q005": 44.85428507822775,
+      "q01": 45.51024819574019,
+      "q025": 46.44453257504381,
+      "q05": 47.28383178707145,
+      "q50": 52.769562136947684,
+      "q95": 59.63847191877983,
+      "q99": 63.159804094142544,
+      "q995": 64.56840407136275,
+      "q999": 67.06867483976521
+    },
+    "z_vs_null": 1.3484309080709147,
+    "n_perm_ge_obs": 1889,
+    "p_perm_upper": 0.09449527523623819,
+    "verdict": "NULL"
+  },
+  "tier_summary": [
+    {
+      "tier": "HIGH",
+      "n": 65,
+      "mean_z_s": -1.759455678114288,
+      "median_z_s": -2.7520198492292254,
+      "min_z_s": -8.405287548858151,
+      "max_z_s": 13.449261454205212
+    },
+    {
+      "tier": "MED",
+      "n": 32,
+      "mean_z_s": 4.161802374983721,
+      "median_z_s": 3.7339558731686533,
+      "min_z_s": -3.1425843490013183,
+      "max_z_s": 14.706114164637786
+    },
+    {
+      "tier": "LOW",
+      "n": 17,
+      "mean_z_s": 6.299056510716509,
+      "median_z_s": 5.117084293427459,
+      "min_z_s": 1.72388441080286,
+      "max_z_s": 13.806468301615947
+    }
+  ],
+  "phase_summary": [
+    {
+      "phase": "Medinan-long",
+      "n": 21,
+      "tiers_present": [
+        "LOW",
+        "MED"
+      ],
+      "n_tiers_present": 2,
+      "mean_z_s": 6.817694050675588,
+      "median_z_s": 5.396568259625289
+    },
+    {
+      "phase": "Medinan-short",
+      "n": 2,
+      "tiers_present": [
+        "LOW",
+        "MED"
+      ],
+      "n_tiers_present": 2,
+      "mean_z_s": 0.03652975920407553,
+      "median_z_s": 0.03652975920407553
+    },
+    {
+      "phase": "early-Meccan",
+      "n": 48,
+      "tiers_present": [
+        "HIGH",
+        "MED"
+      ],
+      "n_tiers_present": 2,
+      "mean_z_s": -2.9382451321322227,
+      "median_z_s": -3.3510746187458995
+    },
+    {
+      "phase": "early-Meccan/Medinan-disputed",
+      "n": 1,
+      "tiers_present": [
+        "HIGH"
+      ],
+      "n_tiers_present": 1,
+      "mean_z_s": -1.3238742581275194,
+      "median_z_s": -1.3238742581275194
+    },
+    {
+      "phase": "late-Meccan",
+      "n": 22,
+      "tiers_present": [
+        "HIGH",
+        "LOW",
+        "MED"
+      ],
+      "n_tiers_present": 3,
+      "mean_z_s": 4.435757740435351,
+      "median_z_s": 4.611283679323166
+    },
+    {
+      "phase": "late-Meccan/Medinan-border",
+      "n": 1,
+      "tiers_present": [
+        "MED"
+      ],
+      "n_tiers_present": 1,
+      "mean_z_s": 4.295126775757565,
+      "median_z_s": 4.295126775757565
+    },
+    {
+      "phase": "late-Meccan/Medinan-hybrid",
+      "n": 1,
+      "tiers_present": [
+        "MED"
+      ],
+      "n_tiers_present": 1,
+      "mean_z_s": 6.305418732080939,
+      "median_z_s": 6.305418732080939
+    },
+    {
+      "phase": "late-Meccan/middle-Meccan",
+      "n": 1,
+      "tiers_present": [
+        "MED"
+      ],
+      "n_tiers_present": 1,
+      "mean_z_s": 1.4217784419911357,
+      "median_z_s": 1.4217784419911357
+    },
+    {
+      "phase": "liturgical-opening",
+      "n": 1,
+      "tiers_present": [
+        "HIGH"
+      ],
+      "n_tiers_present": 1,
+      "mean_z_s": -0.8492700208984997,
+      "median_z_s": -0.8492700208984997
+    },
+    {
+      "phase": "middle-Meccan",
+      "n": 16,
+      "tiers_present": [
+        "HIGH",
+        "MED"
+      ],
+      "n_tiers_present": 2,
+      "mean_z_s": 1.0157687127250556,
+      "median_z_s": 0.8635184037711192
+    }
+  ],
+  "records": [
+    {
+      "surah": 1,
+      "name": "Al-Fatihah",
+      "type": "meccan",
+      "z_s": -0.8492700208984997,
+      "gzip_z": 0.8492700208984997,
+      "gzip_ratio": 0.5159235668789809,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "liturgical-prayer",
+      "neuwirth_genre": "liturgical-prayer",
+      "phase": "liturgical-opening"
+    },
+    {
+      "surah": 2,
+      "name": "Al-Baqarah",
+      "type": "medinan",
+      "z_s": 14.706114164637786,
+      "gzip_z": -14.706114164637786,
+      "gzip_ratio": 0.25787345899812003,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "legal-exhortative-polemical",
+      "neuwirth_genre": "community-forming-polemical",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 3,
+      "name": "Ali 'Imran",
+      "type": "medinan",
+      "z_s": 11.902092108488402,
+      "gzip_z": -11.902092108488402,
+      "gzip_ratio": 0.27199718623600444,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "legal-exhortative-polemical",
+      "neuwirth_genre": "community-forming-polemical",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 4,
+      "name": "An-Nisa",
+      "type": "medinan",
+      "z_s": 13.806468301615947,
+      "gzip_z": -13.806468301615947,
+      "gzip_ratio": 0.26203524607779927,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative",
+      "neuwirth_genre": "legal-exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 5,
+      "name": "Al-Ma'idah",
+      "type": "medinan",
+      "z_s": 11.930206474100535,
+      "gzip_z": -11.930206474100535,
+      "gzip_ratio": 0.27494798766052087,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative-polemical",
+      "neuwirth_genre": "legal-exhortative-polemical",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 6,
+      "name": "Al-An'am",
+      "type": "meccan",
+      "z_s": 8.189000076150453,
+      "gzip_z": -8.189000076150453,
+      "gzip_ratio": 0.2895969368568596,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective-polemical",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 7,
+      "name": "Al-A'raf",
+      "type": "meccan",
+      "z_s": 7.119220099022135,
+      "gzip_z": -7.119220099022135,
+      "gzip_ratio": 0.2882460414129111,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-qaṣaṣ",
+      "neuwirth_genre": "narrative-qaṣaṣ",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 8,
+      "name": "Al-Anfal",
+      "type": "medinan",
+      "z_s": 9.117057399028502,
+      "gzip_z": -9.117057399028502,
+      "gzip_ratio": 0.2960241652379786,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative",
+      "neuwirth_genre": "legal-exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 9,
+      "name": "At-Tawbah",
+      "type": "medinan",
+      "z_s": 12.130143715735638,
+      "gzip_z": -12.130143715735638,
+      "gzip_ratio": 0.2723346935541381,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "polemical-legal",
+      "neuwirth_genre": "polemical-legal",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 10,
+      "name": "Yunus",
+      "type": "meccan",
+      "z_s": 7.582523341247093,
+      "gzip_z": -7.582523341247093,
+      "gzip_ratio": 0.2988327295727675,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "narrative-scripture",
+      "neuwirth_genre": "narrative-scripture",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 11,
+      "name": "Hud",
+      "type": "meccan",
+      "z_s": 5.729298921386993,
+      "gzip_z": -5.729298921386993,
+      "gzip_ratio": 0.3042245692051139,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-qaṣaṣ",
+      "neuwirth_genre": "narrative-qaṣaṣ",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 12,
+      "name": "Yusuf",
+      "type": "meccan",
+      "z_s": 4.941668932933486,
+      "gzip_z": -4.941668932933486,
+      "gzip_ratio": 0.3108180679038129,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "narrative-qaṣaṣ-monolithic",
+      "neuwirth_genre": "narrative-qaṣaṣ-monolithic",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 13,
+      "name": "Ar-Ra'd",
+      "type": "medinan",
+      "z_s": 4.295126775757565,
+      "gzip_z": -4.295126775757565,
+      "gzip_ratio": 0.33819027794783885,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "late-Meccan/Medinan-border"
+    },
+    {
+      "surah": 14,
+      "name": "Ibrahim",
+      "type": "meccan",
+      "z_s": 3.2541387838379174,
+      "gzip_z": -3.2541387838379174,
+      "gzip_ratio": 0.3405599603567889,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective-qaṣaṣ",
+      "neuwirth_genre": "scripture-reflective-qaṣaṣ",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 15,
+      "name": "Al-Hijr",
+      "type": "meccan",
+      "z_s": -1.1621067091931419,
+      "gzip_z": 1.1621067091931419,
+      "gzip_ratio": 0.34605242748565224,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-qaṣaṣ",
+      "neuwirth_genre": "narrative-qaṣaṣ",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 16,
+      "name": "An-Nahl",
+      "type": "meccan",
+      "z_s": 6.470742798382533,
+      "gzip_z": -6.470742798382533,
+      "gzip_ratio": 0.29998880429914915,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective-polemical",
+      "neuwirth_genre": "scripture-reflective-polemical",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 17,
+      "name": "Al-Isra",
+      "type": "meccan",
+      "z_s": 2.957588673469314,
+      "gzip_z": -2.957588673469314,
+      "gzip_ratio": 0.3210383418316668,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 18,
+      "name": "Al-Kahf",
+      "type": "meccan",
+      "z_s": 1.4840675121622027,
+      "gzip_z": -1.4840675121622027,
+      "gzip_ratio": 0.3284813522940703,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-qaṣaṣ-with-frame",
+      "neuwirth_genre": "narrative-qaṣaṣ-with-frame",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 19,
+      "name": "Maryam",
+      "type": "meccan",
+      "z_s": 0.9894330506205451,
+      "gzip_z": -0.9894330506205451,
+      "gzip_ratio": 0.33459779091821934,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-hymnic",
+      "neuwirth_genre": "narrative-hymnic",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 20,
+      "name": "Taha",
+      "type": "meccan",
+      "z_s": -2.2101657261128587,
+      "gzip_z": 2.2101657261128587,
+      "gzip_ratio": 0.33909725604805974,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-qaṣaṣ-bipartite",
+      "neuwirth_genre": "narrative-qaṣaṣ-bipartite",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 21,
+      "name": "Al-Anbya",
+      "type": "meccan",
+      "z_s": 1.94938642792846,
+      "gzip_z": -1.94938642792846,
+      "gzip_ratio": 0.3255391010652117,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-catalog",
+      "neuwirth_genre": "narrative-catalog",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 22,
+      "name": "Al-Hajj",
+      "type": "medinan",
+      "z_s": 6.305418732080939,
+      "gzip_z": -6.305418732080939,
+      "gzip_ratio": 0.3118563071599242,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "hybrid",
+      "neuwirth_genre": "hybrid",
+      "phase": "late-Meccan/Medinan-hybrid"
+    },
+    {
+      "surah": 23,
+      "name": "Al-Mu'minun",
+      "type": "meccan",
+      "z_s": 1.6692976820519938,
+      "gzip_z": -1.6692976820519938,
+      "gzip_ratio": 0.32553317535545023,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "tripartite-structure",
+      "neuwirth_genre": "tripartite-structure",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 24,
+      "name": "An-Nur",
+      "type": "medinan",
+      "z_s": 9.014679648933694,
+      "gzip_z": -9.014679648933694,
+      "gzip_ratio": 0.2953332316608205,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative",
+      "neuwirth_genre": "legal-exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 25,
+      "name": "Al-Furqan",
+      "type": "meccan",
+      "z_s": 2.0470022508991383,
+      "gzip_z": -2.0470022508991383,
+      "gzip_ratio": 0.3366822696654869,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective-polemical",
+      "neuwirth_genre": "scripture-reflective-polemical",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 26,
+      "name": "Ash-Shu'ara",
+      "type": "meccan",
+      "z_s": 8.367286843301475,
+      "gzip_z": -8.367286843301475,
+      "gzip_ratio": 0.2819056633538413,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-catalog",
+      "neuwirth_genre": "narrative-catalog",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 27,
+      "name": "An-Naml",
+      "type": "meccan",
+      "z_s": 2.383569887844769,
+      "gzip_z": -2.383569887844769,
+      "gzip_ratio": 0.32926829268292684,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-qaṣaṣ",
+      "neuwirth_genre": "narrative-qaṣaṣ",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 28,
+      "name": "Al-Qasas",
+      "type": "meccan",
+      "z_s": 4.4880046902903565,
+      "gzip_z": -4.4880046902903565,
+      "gzip_ratio": 0.3191316547293805,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-qaṣaṣ",
+      "neuwirth_genre": "narrative-qaṣaṣ",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 29,
+      "name": "Al-'Ankabut",
+      "type": "meccan",
+      "z_s": 5.918514072715409,
+      "gzip_z": -5.918514072715409,
+      "gzip_ratio": 0.31369150779896016,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "narrative-scripture",
+      "neuwirth_genre": "narrative-scripture",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 30,
+      "name": "Ar-Rum",
+      "type": "meccan",
+      "z_s": 6.841864587835385,
+      "gzip_z": -6.841864587835385,
+      "gzip_ratio": 0.31088082901554404,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 31,
+      "name": "Luqman",
+      "type": "meccan",
+      "z_s": 2.7884365342442017,
+      "gzip_z": -2.7884365342442017,
+      "gzip_ratio": 0.35547109421884376,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "exhortative-wisdom",
+      "neuwirth_genre": "exhortative-wisdom",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 32,
+      "name": "As-Sajdah",
+      "type": "meccan",
+      "z_s": 1.1288507822336022,
+      "gzip_z": -1.1288507822336022,
+      "gzip_ratio": 0.377640101379893,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 33,
+      "name": "Al-Ahzab",
+      "type": "medinan",
+      "z_s": 7.823913358079396,
+      "gzip_z": -7.823913358079396,
+      "gzip_ratio": 0.30058684551482356,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative",
+      "neuwirth_genre": "legal-exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 34,
+      "name": "Saba",
+      "type": "meccan",
+      "z_s": 4.280898425712846,
+      "gzip_z": -4.280898425712846,
+      "gzip_ratio": 0.33098677023910666,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective-narrative",
+      "neuwirth_genre": "scripture-reflective-narrative",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 35,
+      "name": "Fatir",
+      "type": "meccan",
+      "z_s": 3.8918520134906167,
+      "gzip_z": -3.8918520134906167,
+      "gzip_ratio": 0.3374043752516441,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 36,
+      "name": "Ya-Sin",
+      "type": "meccan",
+      "z_s": 0.6467961011747921,
+      "gzip_z": -0.6467961011747921,
+      "gzip_ratio": 0.3420787083753784,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "tripartite-structure",
+      "neuwirth_genre": "tripartite-structure",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 37,
+      "name": "As-Saffat",
+      "type": "meccan",
+      "z_s": 0.22679824184991998,
+      "gzip_z": -0.22679824184991998,
+      "gzip_ratio": 0.31814006888633756,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-narrative",
+      "neuwirth_genre": "oath-sworn-narrative",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 38,
+      "name": "Sad",
+      "type": "meccan",
+      "z_s": -2.0783374817731675,
+      "gzip_z": 2.0783374817731675,
+      "gzip_ratio": 0.35582294800171893,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "narrative-catalog",
+      "neuwirth_genre": "narrative-catalog",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 39,
+      "name": "Az-Zumar",
+      "type": "meccan",
+      "z_s": 5.397525760642554,
+      "gzip_z": -5.397525760642554,
+      "gzip_ratio": 0.3171146953405018,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 40,
+      "name": "Ghafir",
+      "type": "meccan",
+      "z_s": 5.9668528311576745,
+      "gzip_z": -5.9668528311576745,
+      "gzip_ratio": 0.3106171144107802,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective-narrative",
+      "neuwirth_genre": "scripture-reflective-narrative",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 41,
+      "name": "Fussilat",
+      "type": "meccan",
+      "z_s": 2.8340260948532126,
+      "gzip_z": -2.8340260948532126,
+      "gzip_ratio": 0.340953625081646,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 42,
+      "name": "Ash-Shuraa",
+      "type": "meccan",
+      "z_s": 5.7402343150542805,
+      "gzip_z": -5.7402343150542805,
+      "gzip_ratio": 0.320359650203227,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 43,
+      "name": "Az-Zukhruf",
+      "type": "meccan",
+      "z_s": 0.3894739889810106,
+      "gzip_z": -0.3894739889810106,
+      "gzip_ratio": 0.34150827713059473,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "narrative-scripture",
+      "neuwirth_genre": "narrative-scripture",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 44,
+      "name": "Ad-Dukhan",
+      "type": "meccan",
+      "z_s": -2.1416169523489406,
+      "gzip_z": 2.1416169523489406,
+      "gzip_ratio": 0.3740663280549746,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-narrative",
+      "neuwirth_genre": "eschatological-narrative",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 45,
+      "name": "Al-Jathiyah",
+      "type": "meccan",
+      "z_s": 3.57605973284669,
+      "gzip_z": -3.57605973284669,
+      "gzip_ratio": 0.3463734404736731,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "scripture-reflective",
+      "neuwirth_genre": "scripture-reflective",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 46,
+      "name": "Al-Ahqaf",
+      "type": "meccan",
+      "z_s": 3.3947895026448522,
+      "gzip_z": -3.3947895026448522,
+      "gzip_ratio": 0.3496952726074782,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "narrative-scripture",
+      "neuwirth_genre": "narrative-scripture",
+      "phase": "late-Meccan"
+    },
+    {
+      "surah": 47,
+      "name": "Muhammad",
+      "type": "medinan",
+      "z_s": 5.396568259625289,
+      "gzip_z": -5.396568259625289,
+      "gzip_ratio": 0.3277280204715774,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "polemical-legal",
+      "neuwirth_genre": "polemical-legal",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 48,
+      "name": "Al-Fath",
+      "type": "medinan",
+      "z_s": 5.117084293427459,
+      "gzip_z": -5.117084293427459,
+      "gzip_ratio": 0.3328654149850851,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "historical-proclamation",
+      "neuwirth_genre": "historical-proclamation",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 49,
+      "name": "Al-Hujurat",
+      "type": "medinan",
+      "z_s": 4.738329776224166,
+      "gzip_z": -4.738329776224166,
+      "gzip_ratio": 0.3443651925820257,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative",
+      "neuwirth_genre": "legal-exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 50,
+      "name": "Qaf",
+      "type": "meccan",
+      "z_s": -2.46479967049708,
+      "gzip_z": 2.46479967049708,
+      "gzip_ratio": 0.3910891089108911,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 51,
+      "name": "Adh-Dhariyat",
+      "type": "meccan",
+      "z_s": -2.798757040252616,
+      "gzip_z": 2.798757040252616,
+      "gzip_ratio": 0.3780137772675086,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-eschatological",
+      "neuwirth_genre": "oath-sworn-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 52,
+      "name": "At-Tur",
+      "type": "meccan",
+      "z_s": -3.087718179376448,
+      "gzip_z": 3.087718179376448,
+      "gzip_ratio": 0.39131886477462435,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-eschatological",
+      "neuwirth_genre": "oath-sworn-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 53,
+      "name": "An-Najm",
+      "type": "meccan",
+      "z_s": -3.6380382317438205,
+      "gzip_z": 3.6380382317438205,
+      "gzip_ratio": 0.38239803741183687,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-visionary",
+      "neuwirth_genre": "oath-sworn-visionary",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 54,
+      "name": "Al-Qamar",
+      "type": "meccan",
+      "z_s": 0.0363045296269547,
+      "gzip_z": -0.0363045296269547,
+      "gzip_ratio": 0.3614895549500454,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-narrative",
+      "neuwirth_genre": "eschatological-narrative",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 55,
+      "name": "Ar-Rahman",
+      "type": "medinan",
+      "z_s": 13.449261454205212,
+      "gzip_z": -13.449261454205212,
+      "gzip_ratio": 0.26683087027914615,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "hymn-refrain",
+      "neuwirth_genre": "hymn-refrain",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 56,
+      "name": "Al-Waqi'ah",
+      "type": "meccan",
+      "z_s": -0.8525546711135994,
+      "gzip_z": 0.8525546711135994,
+      "gzip_ratio": 0.34549190855381456,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 57,
+      "name": "Al-Hadid",
+      "type": "medinan",
+      "z_s": 5.790246730455872,
+      "gzip_z": -5.790246730455872,
+      "gzip_ratio": 0.33057137925082,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "exhortative",
+      "neuwirth_genre": "exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 58,
+      "name": "Al-Mujadila",
+      "type": "medinan",
+      "z_s": 5.908207139183636,
+      "gzip_z": -5.908207139183636,
+      "gzip_ratio": 0.3258690552356579,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative",
+      "neuwirth_genre": "legal-exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 59,
+      "name": "Al-Hashr",
+      "type": "medinan",
+      "z_s": 4.546412060396702,
+      "gzip_z": -4.546412060396702,
+      "gzip_ratio": 0.34405001116320605,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "historical-legal",
+      "neuwirth_genre": "historical-legal",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 60,
+      "name": "Al-Mumtahanah",
+      "type": "medinan",
+      "z_s": 4.722366649318991,
+      "gzip_z": -4.722366649318991,
+      "gzip_ratio": 0.34715172024816693,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative",
+      "neuwirth_genre": "legal-exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 61,
+      "name": "As-Saf",
+      "type": "medinan",
+      "z_s": 3.0907188228916875,
+      "gzip_z": -3.0907188228916875,
+      "gzip_ratio": 0.3734610123119015,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "exhortative",
+      "neuwirth_genre": "exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 62,
+      "name": "Al-Jumu'ah",
+      "type": "medinan",
+      "z_s": 2.0426230550391393,
+      "gzip_z": -2.0426230550391393,
+      "gzip_ratio": 0.40023001725129387,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative",
+      "neuwirth_genre": "legal-exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 63,
+      "name": "Al-Munafiqun",
+      "type": "medinan",
+      "z_s": 2.513137048997154,
+      "gzip_z": -2.513137048997154,
+      "gzip_ratio": 0.39364035087719296,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "polemical",
+      "neuwirth_genre": "polemical",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 64,
+      "name": "At-Taghabun",
+      "type": "medinan",
+      "z_s": 2.597626451582837,
+      "gzip_z": -2.597626451582837,
+      "gzip_ratio": 0.3764564081960627,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "exhortative",
+      "neuwirth_genre": "exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 65,
+      "name": "At-Talaq",
+      "type": "medinan",
+      "z_s": 3.408733771596944,
+      "gzip_z": -3.408733771596944,
+      "gzip_ratio": 0.3720173535791757,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal",
+      "neuwirth_genre": "legal",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 66,
+      "name": "At-Tahrim",
+      "type": "medinan",
+      "z_s": 2.8688458348275603,
+      "gzip_z": -2.8688458348275603,
+      "gzip_ratio": 0.38323353293413176,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "legal-exhortative",
+      "neuwirth_genre": "legal-exhortative",
+      "phase": "Medinan-long"
+    },
+    {
+      "surah": 67,
+      "name": "Al-Mulk",
+      "type": "meccan",
+      "z_s": 0.7376037569216933,
+      "gzip_z": -0.7376037569216933,
+      "gzip_ratio": 0.3809833930315858,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "hymnic-eschatological",
+      "neuwirth_genre": "hymnic-eschatological",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 68,
+      "name": "Al-Qalam",
+      "type": "meccan",
+      "z_s": -3.8477258909795924,
+      "gzip_z": 3.8477258909795924,
+      "gzip_ratio": 0.39358399448085546,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "polemical-narrative",
+      "neuwirth_genre": "polemical-narrative",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 69,
+      "name": "Al-Haqqah",
+      "type": "meccan",
+      "z_s": -2.912514246241892,
+      "gzip_z": 2.912514246241892,
+      "gzip_ratio": 0.3866771777690185,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 70,
+      "name": "Al-Ma'arij",
+      "type": "meccan",
+      "z_s": -3.9615637590935995,
+      "gzip_z": 3.9615637590935995,
+      "gzip_ratio": 0.40404970087436726,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 71,
+      "name": "Nuh",
+      "type": "meccan",
+      "z_s": 0.51318951921619,
+      "gzip_z": -0.51318951921619,
+      "gzip_ratio": 0.3861431870669746,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "narrative-monolithic",
+      "neuwirth_genre": "narrative-monolithic",
+      "phase": "middle-Meccan"
+    },
+    {
+      "surah": 72,
+      "name": "Al-Jinn",
+      "type": "meccan",
+      "z_s": 1.4217784419911357,
+      "gzip_z": -1.4217784419911357,
+      "gzip_ratio": 0.37599049128367673,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "narrative-report",
+      "neuwirth_genre": "narrative-report",
+      "phase": "late-Meccan/middle-Meccan"
+    },
+    {
+      "surah": 73,
+      "name": "Al-Muzzammil",
+      "type": "meccan",
+      "z_s": 0.03202947968747025,
+      "gzip_z": -0.03202947968747025,
+      "gzip_ratio": 0.40841457157516675,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "address-to-prophet",
+      "neuwirth_genre": "address-to-prophet",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 74,
+      "name": "Al-Muddaththir",
+      "type": "meccan",
+      "z_s": -5.397148223363154,
+      "gzip_z": 5.397148223363154,
+      "gzip_ratio": 0.4005102040816326,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "address-to-prophet-eschatological",
+      "neuwirth_genre": "address-to-prophet-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 75,
+      "name": "Al-Qiyamah",
+      "type": "meccan",
+      "z_s": -2.233008547761664,
+      "gzip_z": 2.233008547761664,
+      "gzip_ratio": 0.3952569169960474,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 76,
+      "name": "Al-Insan",
+      "type": "medinan",
+      "z_s": -1.3238742581275194,
+      "gzip_z": 1.3238742581275194,
+      "gzip_ratio": 0.400902749281904,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-paradise",
+      "neuwirth_genre": "eschatological-paradise",
+      "phase": "early-Meccan/Medinan-disputed"
+    },
+    {
+      "surah": 77,
+      "name": "Al-Mursalat",
+      "type": "meccan",
+      "z_s": 1.0705544434664664,
+      "gzip_z": -1.0705544434664664,
+      "gzip_ratio": 0.3576407506702413,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-eschatological",
+      "neuwirth_genre": "oath-sworn-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 78,
+      "name": "An-Naba",
+      "type": "meccan",
+      "z_s": -3.5862370504602743,
+      "gzip_z": 3.5862370504602743,
+      "gzip_ratio": 0.4064261555806088,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 79,
+      "name": "An-Nazi'at",
+      "type": "meccan",
+      "z_s": -5.851614820507917,
+      "gzip_z": 5.851614820507917,
+      "gzip_ratio": 0.4169046259280411,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-eschatological",
+      "neuwirth_genre": "oath-sworn-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 80,
+      "name": "'Abasa",
+      "type": "meccan",
+      "z_s": -8.405287548858151,
+      "gzip_z": 8.405287548858151,
+      "gzip_ratio": 0.4457928802588997,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "admonition-eschatological",
+      "neuwirth_genre": "admonition-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 81,
+      "name": "At-Takwir",
+      "type": "meccan",
+      "z_s": -3.6391682392343165,
+      "gzip_z": 3.6391682392343165,
+      "gzip_ratio": 0.4295991778006166,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle-oath",
+      "neuwirth_genre": "eschatological-oracle-oath",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 82,
+      "name": "Al-Infitar",
+      "type": "meccan",
+      "z_s": -2.623411982947334,
+      "gzip_z": 2.623411982947334,
+      "gzip_ratio": 0.45260347129506007,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 83,
+      "name": "Al-Mutaffifin",
+      "type": "meccan",
+      "z_s": -1.0198625079804464,
+      "gzip_z": 1.0198625079804464,
+      "gzip_ratio": 0.38938580799045913,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "polemical-eschatological",
+      "neuwirth_genre": "polemical-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 84,
+      "name": "Al-Inshiqaq",
+      "type": "meccan",
+      "z_s": -3.3287116713880835,
+      "gzip_z": 3.3287116713880835,
+      "gzip_ratio": 0.438,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 85,
+      "name": "Al-Buruj",
+      "type": "meccan",
+      "z_s": -2.8411566922135716,
+      "gzip_z": 2.8411566922135716,
+      "gzip_ratio": 0.4429657794676806,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-eschatological",
+      "neuwirth_genre": "oath-sworn-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 86,
+      "name": "At-Tariq",
+      "type": "meccan",
+      "z_s": -4.813808637193548,
+      "gzip_z": 4.813808637193548,
+      "gzip_ratio": 0.4964788732394366,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-eschatological",
+      "neuwirth_genre": "oath-sworn-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 87,
+      "name": "Al-A'la",
+      "type": "meccan",
+      "z_s": -6.549312858986514,
+      "gzip_z": 6.549312858986514,
+      "gzip_ratio": 0.5075075075075075,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "hymn-imperative",
+      "neuwirth_genre": "hymn-imperative",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 88,
+      "name": "Al-Ghashiyah",
+      "type": "meccan",
+      "z_s": -5.781033385505967,
+      "gzip_z": 5.781033385505967,
+      "gzip_ratio": 0.464327485380117,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 89,
+      "name": "Al-Fajr",
+      "type": "meccan",
+      "z_s": -4.3621555920882065,
+      "gzip_z": 4.3621555920882065,
+      "gzip_ratio": 0.43597560975609756,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-eschatological-narrative",
+      "neuwirth_genre": "oath-sworn-eschatological-narrative",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 90,
+      "name": "Al-Balad",
+      "type": "meccan",
+      "z_s": -3.5235536847999316,
+      "gzip_z": 3.5235536847999316,
+      "gzip_ratio": 0.4588235294117647,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-admonition",
+      "neuwirth_genre": "oath-sworn-admonition",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 91,
+      "name": "Ash-Shams",
+      "type": "meccan",
+      "z_s": -2.7520198492292254,
+      "gzip_z": 2.7520198492292254,
+      "gzip_ratio": 0.47227191413237923,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-cosmological",
+      "neuwirth_genre": "oath-sworn-cosmological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 92,
+      "name": "Al-Layl",
+      "type": "meccan",
+      "z_s": -4.7397401591683,
+      "gzip_z": 4.7397401591683,
+      "gzip_ratio": 0.47277936962750716,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-admonition",
+      "neuwirth_genre": "oath-sworn-admonition",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 93,
+      "name": "Ad-Duhaa",
+      "type": "meccan",
+      "z_s": -4.336558936516676,
+      "gzip_z": 4.336558936516676,
+      "gzip_ratio": 0.5474254742547425,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-address",
+      "neuwirth_genre": "oath-sworn-address",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 94,
+      "name": "Ash-Sharh",
+      "type": "meccan",
+      "z_s": -4.844804375764285,
+      "gzip_z": 4.844804375764285,
+      "gzip_ratio": 0.6217391304347826,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "address-to-prophet",
+      "neuwirth_genre": "address-to-prophet",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 95,
+      "name": "At-Tin",
+      "type": "meccan",
+      "z_s": -3.0651312008763494,
+      "gzip_z": 3.0651312008763494,
+      "gzip_ratio": 0.5686274509803921,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-admonition",
+      "neuwirth_genre": "oath-sworn-admonition",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 96,
+      "name": "Al-'Alaq",
+      "type": "meccan",
+      "z_s": -3.660324210769529,
+      "gzip_z": 3.660324210769529,
+      "gzip_ratio": 0.46615384615384614,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "prophetic-call-admonition",
+      "neuwirth_genre": "prophetic-call-admonition",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 97,
+      "name": "Al-Qadr",
+      "type": "meccan",
+      "z_s": -1.4415086221751814,
+      "gzip_z": 1.4415086221751814,
+      "gzip_ratio": 0.6023166023166023,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "hymnic-eschatological",
+      "neuwirth_genre": "hymnic-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 98,
+      "name": "Al-Bayyinah",
+      "type": "medinan",
+      "z_s": 1.72388441080286,
+      "gzip_z": -1.72388441080286,
+      "gzip_ratio": 0.42278203723986857,
+      "jurjani_predicted_asyndeton_tier": "LOW",
+      "sinai_genre": "polemical-legal",
+      "neuwirth_genre": "polemical-legal",
+      "phase": "Medinan-short"
+    },
+    {
+      "surah": 99,
+      "name": "Az-Zalzalah",
+      "type": "medinan",
+      "z_s": -1.5390341661290556,
+      "gzip_z": 1.5390341661290556,
+      "gzip_ratio": 0.5213675213675214,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 100,
+      "name": "Al-'Adiyat",
+      "type": "meccan",
+      "z_s": -4.8949907275917015,
+      "gzip_z": 4.8949907275917015,
+      "gzip_ratio": 0.5578947368421052,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-admonition",
+      "neuwirth_genre": "oath-sworn-admonition",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 101,
+      "name": "Al-Qari'ah",
+      "type": "meccan",
+      "z_s": -2.5357289933083673,
+      "gzip_z": 2.5357289933083673,
+      "gzip_ratio": 0.504225352112676,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "eschatological-oracle",
+      "neuwirth_genre": "eschatological-oracle",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 102,
+      "name": "At-Takathur",
+      "type": "meccan",
+      "z_s": -2.597618919065232,
+      "gzip_z": 2.597618919065232,
+      "gzip_ratio": 0.5531135531135531,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "admonition",
+      "neuwirth_genre": "admonition",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 103,
+      "name": "Al-'Asr",
+      "type": "meccan",
+      "z_s": -0.7405984322169181,
+      "gzip_z": 0.7405984322169181,
+      "gzip_ratio": 0.6792452830188679,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "oath-sworn-admonition",
+      "neuwirth_genre": "oath-sworn-admonition",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 104,
+      "name": "Al-Humazah",
+      "type": "meccan",
+      "z_s": -5.455042411509084,
+      "gzip_z": 5.455042411509084,
+      "gzip_ratio": 0.6105610561056105,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "polemical-eschatological",
+      "neuwirth_genre": "polemical-eschatological",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 105,
+      "name": "Al-Fil",
+      "type": "meccan",
+      "z_s": -2.9571184751182056,
+      "gzip_z": 2.9571184751182056,
+      "gzip_ratio": 0.6759259259259259,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "historical-narrative",
+      "neuwirth_genre": "historical-narrative",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 106,
+      "name": "Quraysh",
+      "type": "meccan",
+      "z_s": -3.1425843490013183,
+      "gzip_z": 3.1425843490013183,
+      "gzip_ratio": 0.7529411764705882,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "exhortative-address",
+      "neuwirth_genre": "exhortative-address",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 107,
+      "name": "Al-Ma'un",
+      "type": "meccan",
+      "z_s": -3.208518538306262,
+      "gzip_z": 3.208518538306262,
+      "gzip_ratio": 0.5992063492063492,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "polemical-admonition",
+      "neuwirth_genre": "polemical-admonition",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 108,
+      "name": "Al-Kawthar",
+      "type": "meccan",
+      "z_s": -3.9976483099708218,
+      "gzip_z": 3.9976483099708218,
+      "gzip_ratio": 0.9789473684210527,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "hymnic-address-to-prophet",
+      "neuwirth_genre": "hymnic-address-to-prophet",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 109,
+      "name": "Al-Kafirun",
+      "type": "meccan",
+      "z_s": -0.1882575308934875,
+      "gzip_z": 0.1882575308934875,
+      "gzip_ratio": 0.5133928571428571,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "polemical-monotheist",
+      "neuwirth_genre": "polemical-monotheist",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 110,
+      "name": "An-Nasr",
+      "type": "medinan",
+      "z_s": -1.6508248923947089,
+      "gzip_z": 1.6508248923947089,
+      "gzip_ratio": 0.7624309392265194,
+      "jurjani_predicted_asyndeton_tier": "MED",
+      "sinai_genre": "hymnic-exhortation",
+      "neuwirth_genre": "hymnic-exhortation",
+      "phase": "Medinan-short"
+    },
+    {
+      "surah": 111,
+      "name": "Al-Masad",
+      "type": "meccan",
+      "z_s": -4.157152118800966,
+      "gzip_z": 4.157152118800966,
+      "gzip_ratio": 0.7336956521739131,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "polemical-curse",
+      "neuwirth_genre": "polemical-curse",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 112,
+      "name": "Al-Ikhlas",
+      "type": "meccan",
+      "z_s": -3.50690906346523,
+      "gzip_z": 3.50690906346523,
+      "gzip_ratio": 0.7870370370370371,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "creedal-hymn",
+      "neuwirth_genre": "creedal-hymn",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 113,
+      "name": "Al-Falaq",
+      "type": "meccan",
+      "z_s": -3.373437566103715,
+      "gzip_z": 3.373437566103715,
+      "gzip_ratio": 0.6904761904761905,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "apotropaic-hymn",
+      "neuwirth_genre": "apotropaic-hymn",
+      "phase": "early-Meccan"
+    },
+    {
+      "surah": 114,
+      "name": "An-Nas",
+      "type": "meccan",
+      "z_s": -3.4348458312622414,
+      "gzip_z": 3.4348458312622414,
+      "gzip_ratio": 0.6424581005586593,
+      "jurjani_predicted_asyndeton_tier": "HIGH",
+      "sinai_genre": "apotropaic-hymn",
+      "neuwirth_genre": "apotropaic-hymn",
+      "phase": "early-Meccan"
+    }
+  ]
+}

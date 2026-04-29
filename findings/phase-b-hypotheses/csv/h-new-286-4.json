@@ -1,0 +1,306 @@
+{
+  "id": "H-NEW-286.4",
+  "title": "Q17-conditioned eschatological bridge-bundle exact test",
+  "date": "2026-04-19",
+  "prereg_file": "findings/phase-b-hypotheses/h-new-286-4-q17-conditioned-eschatological-bridge-bundle-prereg.md",
+  "prereg_sha256": "3f60e80d1caed15908897cf3e2e012fc31849e59b79f9029dda2e4cb4b66e6fa",
+  "script_file": "scripts/h_new_286_4_q17_conditioned_eschatological_bridge_bundle.py",
+  "axis_source": {
+    "source_file": "findings/phase-b-hypotheses/csv/h-new-125.json",
+    "axis": "eschatological_density",
+    "standardization": "z-score across all 114 surahs using population mean and population standard deviation"
+  },
+  "rules_tuple": "(H-NEW-125 per-surah eschatological_density reused from h-new-125.json; z-score computed across all 114 surahs using population mean and population standard deviation; exact within-zone enumeration over all C(10,6)=210 six-surah subsets of Q16..Q25; target bundle fixed to B*={Q16,Q17,Q21,Q22,Q23,Q25}; primary statistic Delta_E(S)=mean_{q in S} z_eschat(q)-mean_{q in Z\\S} z_eschat(q); one-sided upper-tail exact null)",
+  "zone": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "target_subset": [
+    16,
+    17,
+    21,
+    22,
+    23,
+    25
+  ],
+  "exact_space_n": 210,
+  "primary": {
+    "statistic": "delta_e_bridge_bundle",
+    "direction": "upper",
+    "observed": 0.4383478816749684,
+    "target_mean_eschat_z": 0.49571225066042574,
+    "complement_mean_eschat_z": 0.05736436898545733,
+    "n_ge_observed": 9,
+    "exact_upper_p": 0.04285714285714286,
+    "rank_desc": 9,
+    "tie_count_at_observed": 1,
+    "null_mean_full_space": -5.286776307738841e-19,
+    "null_median_full_space": -0.0065610084648171085,
+    "null_min_full_space": -0.6704278453345714,
+    "null_max_full_space": 0.6676110940098908,
+    "alpha": 0.05,
+    "verdict": "PASS-DIRECTED"
+  },
+  "target_detail": {
+    "subset": [
+      16,
+      17,
+      21,
+      22,
+      23,
+      25
+    ],
+    "complement_subset": [
+      18,
+      19,
+      20,
+      24
+    ],
+    "mean_eschat_z_subset": 0.49571225066042574,
+    "mean_eschat_z_complement": 0.05736436898545733,
+    "delta_e": 0.4383478816749684
+  },
+  "top_subsets_by_delta": [
+    {
+      "subset": [
+        16,
+        17,
+        19,
+        22,
+        23,
+        25
+      ],
+      "complement_subset": [
+        18,
+        20,
+        21,
+        24
+      ],
+      "mean_eschat_z_subset": 0.5874175355943947,
+      "mean_eschat_z_complement": -0.08019355841549611,
+      "delta_e": 0.6676110940098908
+    },
+    {
+      "subset": [
+        16,
+        17,
+        20,
+        22,
+        23,
+        25
+      ],
+      "complement_subset": [
+        18,
+        19,
+        21,
+        24
+      ],
+      "mean_eschat_z_subset": 0.5626608825422615,
+      "mean_eschat_z_complement": -0.04305857883729636,
+      "delta_e": 0.6057194613795579
+    },
+    {
+      "subset": [
+        16,
+        17,
+        18,
+        22,
+        23,
+        25
+      ],
+      "complement_subset": [
+        19,
+        20,
+        21,
+        24
+      ],
+      "mean_eschat_z_subset": 0.5399901559113723,
+      "mean_eschat_z_complement": -0.009052488890962638,
+      "delta_e": 0.549042644802335
+    },
+    {
+      "subset": [
+        16,
+        17,
+        22,
+        23,
+        24,
+        25
+      ],
+      "complement_subset": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "mean_eschat_z_subset": 0.5390175241014666,
+      "mean_eschat_z_complement": -0.007593541176104031,
+      "delta_e": 0.5466110652775706
+    },
+    {
+      "subset": [
+        16,
+        17,
+        19,
+        20,
+        22,
+        25
+      ],
+      "complement_subset": [
+        18,
+        21,
+        23,
+        24
+      ],
+      "mean_eschat_z_subset": 0.5364100288511818,
+      "mean_eschat_z_complement": -0.003682298300676878,
+      "delta_e": 0.5400923271518587
+    },
+    {
+      "subset": [
+        16,
+        17,
+        18,
+        19,
+        22,
+        25
+      ],
+      "complement_subset": [
+        20,
+        21,
+        23,
+        24
+      ],
+      "mean_eschat_z_subset": 0.5137393022202927,
+      "mean_eschat_z_complement": 0.03032379164565684,
+      "delta_e": 0.4834155105746359
+    },
+    {
+      "subset": [
+        16,
+        17,
+        19,
+        22,
+        24,
+        25
+      ],
+      "complement_subset": [
+        18,
+        20,
+        21,
+        23
+      ],
+      "mean_eschat_z_subset": 0.5127666704103869,
+      "mean_eschat_z_complement": 0.03178273936051545,
+      "delta_e": 0.48098393104987147
+    },
+    {
+      "subset": [
+        16,
+        17,
+        19,
+        20,
+        23,
+        25
+      ],
+      "complement_subset": [
+        18,
+        21,
+        22,
+        24
+      ],
+      "mean_eschat_z_subset": 0.4999564142113425,
+      "mean_eschat_z_complement": 0.05099812365908211,
+      "delta_e": 0.4489582905522604
+    },
+    {
+      "subset": [
+        16,
+        17,
+        21,
+        22,
+        23,
+        25
+      ],
+      "complement_subset": [
+        18,
+        19,
+        20,
+        24
+      ],
+      "mean_eschat_z_subset": 0.49571225066042574,
+      "mean_eschat_z_complement": 0.05736436898545733,
+      "delta_e": 0.4383478816749684
+    },
+    {
+      "subset": [
+        16,
+        17,
+        18,
+        20,
+        22,
+        25
+      ],
+      "complement_subset": [
+        19,
+        21,
+        23,
+        24
+      ],
+      "mean_eschat_z_subset": 0.48898264916815953,
+      "mean_eschat_z_complement": 0.06745877122385659,
+      "delta_e": 0.42152387794430296
+    }
+  ],
+  "zone_profile": {
+    "16": {
+      "eschat_z": 0.803756359087058,
+      "in_target_bundle": true
+    },
+    "17": {
+      "eschat_z": 0.7449603280558197,
+      "in_target_bundle": true
+    },
+    "18": {
+      "eschat_z": -0.046323842770551245,
+      "in_target_bundle": false
+    },
+    "19": {
+      "eschat_z": 0.23824043532758263,
+      "in_target_bundle": false
+    },
+    "20": {
+      "eschat_z": 0.08970051701478363,
+      "in_target_bundle": false
+    },
+    "21": {
+      "eschat_z": -0.31199127427623113,
+      "in_target_bundle": true
+    },
+    "22": {
+      "eschat_z": 0.6144672453130965,
+      "in_target_bundle": true
+    },
+    "23": {
+      "eschat_z": 0.39574555747406054,
+      "in_target_bundle": true
+    },
+    "24": {
+      "eschat_z": -0.05215963362998567,
+      "in_target_bundle": false
+    },
+    "25": {
+      "eschat_z": 0.7273352883087507,
+      "in_target_bundle": true
+    }
+  },
+  "verdict": "PASS-DIRECTED"
+}

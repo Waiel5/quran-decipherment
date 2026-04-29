@@ -1,0 +1,323 @@
+{
+  "id": "H-NEW-200",
+  "seed": 20260419,
+  "n_perm": 100000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016666666666666666,
+  "rules_tuple": "(hafs-kufan; no-tashkeel; canonical 114; Tanzil+Wikipedia Nöldeke rev-order; locked H-NEW-49 9-way taxonomy)",
+  "n_surahs": 114,
+  "classes": [
+    "PROPHET_PERSON",
+    "ANIMAL_OBJECT",
+    "DIVINE_ATTRIBUTE",
+    "COSMOLOGICAL_NATURAL",
+    "EVENT_ESCHATOLOGICAL",
+    "SOCIAL_LEGAL",
+    "REVELATION_RITUAL",
+    "MUQATTAAT_LETTER",
+    "OTHER_ABSTRACT"
+  ],
+  "class_distribution": {
+    "REVELATION_RITUAL": 17,
+    "ANIMAL_OBJECT": 13,
+    "PROPHET_PERSON": 11,
+    "SOCIAL_LEGAL": 22,
+    "COSMOLOGICAL_NATURAL": 19,
+    "MUQATTAAT_LETTER": 4,
+    "DIVINE_ATTRIBUTE": 7,
+    "EVENT_ESCHATOLOGICAL": 18,
+    "OTHER_ABSTRACT": 3
+  },
+  "T1_mushaf_position": {
+    "test": "Kruskal-Wallis H on mushaf_rank across 9 etymology classes",
+    "H_obs": 24.04330059510687,
+    "df": 8,
+    "n_perm": 100000,
+    "n_perm_ge_obs": 105,
+    "p_perm_two_sided": 0.001059989400105999,
+    "class_sizes": {
+      "PROPHET_PERSON": 11,
+      "ANIMAL_OBJECT": 13,
+      "DIVINE_ATTRIBUTE": 7,
+      "COSMOLOGICAL_NATURAL": 19,
+      "EVENT_ESCHATOLOGICAL": 18,
+      "SOCIAL_LEGAL": 22,
+      "REVELATION_RITUAL": 17,
+      "MUQATTAAT_LETTER": 4,
+      "OTHER_ABSTRACT": 3
+    },
+    "class_medians_mushaf_rank": {
+      "PROPHET_PERSON": 19,
+      "ANIMAL_OBJECT": 43,
+      "DIVINE_ATTRIBUTE": 55,
+      "COSMOLOGICAL_NATURAL": 70,
+      "EVENT_ESCHATOLOGICAL": 78.5,
+      "SOCIAL_LEGAL": 59.0,
+      "REVELATION_RITUAL": 41,
+      "MUQATTAAT_LETTER": 37.0,
+      "OTHER_ABSTRACT": 102
+    },
+    "alpha_bon": 0.016666666666666666,
+    "pass_at_alpha_bon": true
+  },
+  "T2_meccan_medinan": {
+    "test": "χ² Meccan/Medinan × class (pooled if needed)",
+    "table_full_observed": [
+      [
+        9,
+        10,
+        5,
+        18,
+        13,
+        11,
+        13,
+        4,
+        3
+      ],
+      [
+        2,
+        3,
+        2,
+        1,
+        5,
+        11,
+        4,
+        0,
+        0
+      ]
+    ],
+    "classes_full": [
+      "PROPHET_PERSON",
+      "ANIMAL_OBJECT",
+      "DIVINE_ATTRIBUTE",
+      "COSMOLOGICAL_NATURAL",
+      "EVENT_ESCHATOLOGICAL",
+      "SOCIAL_LEGAL",
+      "REVELATION_RITUAL",
+      "MUQATTAAT_LETTER",
+      "OTHER_ABSTRACT"
+    ],
+    "row_names": [
+      "meccan",
+      "medinan"
+    ],
+    "table_used_observed": [
+      [
+        9,
+        10,
+        5,
+        18,
+        13,
+        11,
+        20
+      ],
+      [
+        2,
+        3,
+        2,
+        1,
+        5,
+        11,
+        4
+      ]
+    ],
+    "classes_used": [
+      "PROPHET_PERSON",
+      "ANIMAL_OBJECT",
+      "DIVINE_ATTRIBUTE",
+      "COSMOLOGICAL_NATURAL",
+      "EVENT_ESCHATOLOGICAL",
+      "SOCIAL_LEGAL",
+      "POOLED_OTHER"
+    ],
+    "expected_used": [
+      [
+        8.298245614035087,
+        9.807017543859649,
+        5.280701754385965,
+        14.333333333333334,
+        13.578947368421053,
+        16.596491228070175,
+        18.105263157894736
+      ],
+      [
+        2.7017543859649122,
+        3.192982456140351,
+        1.719298245614035,
+        4.666666666666667,
+        4.421052631578948,
+        5.4035087719298245,
+        5.894736842105263
+      ]
+    ],
+    "chi2_full": 14.209661161586116,
+    "df_full": 8,
+    "chi2_obs": 12.728129013843299,
+    "df_used": 6,
+    "n_perm": 100000,
+    "n_perm_ge_obs": 4333,
+    "p_perm": 0.043339566604333954,
+    "alpha_bon": 0.016666666666666666,
+    "pass_at_alpha_bon": false
+  },
+  "T3_noldeke_phase": {
+    "test": "χ² Nöldeke 4-phase × class (pooled if needed)",
+    "phases": [
+      "Early Meccan",
+      "Middle Meccan",
+      "Late Meccan",
+      "Medinan"
+    ],
+    "table_full_observed": [
+      [
+        0,
+        5,
+        3,
+        13,
+        13,
+        5,
+        7,
+        0,
+        2
+      ],
+      [
+        3,
+        2,
+        1,
+        3,
+        0,
+        4,
+        3,
+        4,
+        1
+      ],
+      [
+        6,
+        3,
+        2,
+        3,
+        1,
+        3,
+        3,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        1,
+        0,
+        4,
+        10,
+        4,
+        0,
+        0
+      ]
+    ],
+    "classes_full": [
+      "PROPHET_PERSON",
+      "ANIMAL_OBJECT",
+      "DIVINE_ATTRIBUTE",
+      "COSMOLOGICAL_NATURAL",
+      "EVENT_ESCHATOLOGICAL",
+      "SOCIAL_LEGAL",
+      "REVELATION_RITUAL",
+      "MUQATTAAT_LETTER",
+      "OTHER_ABSTRACT"
+    ],
+    "table_used_observed": [
+      [
+        0,
+        5,
+        3,
+        13,
+        13,
+        5,
+        9
+      ],
+      [
+        3,
+        2,
+        1,
+        3,
+        0,
+        4,
+        8
+      ],
+      [
+        6,
+        3,
+        2,
+        3,
+        1,
+        3,
+        3
+      ],
+      [
+        2,
+        3,
+        1,
+        0,
+        4,
+        10,
+        4
+      ]
+    ],
+    "classes_used": [
+      "PROPHET_PERSON",
+      "ANIMAL_OBJECT",
+      "DIVINE_ATTRIBUTE",
+      "COSMOLOGICAL_NATURAL",
+      "EVENT_ESCHATOLOGICAL",
+      "SOCIAL_LEGAL",
+      "POOLED_OTHER"
+    ],
+    "expected_used": [
+      [
+        4.631578947368421,
+        5.473684210526316,
+        2.9473684210526314,
+        8.0,
+        7.578947368421052,
+        9.263157894736842,
+        10.105263157894736
+      ],
+      [
+        2.026315789473684,
+        2.3947368421052633,
+        1.2894736842105263,
+        3.5,
+        3.3157894736842106,
+        4.052631578947368,
+        4.421052631578948
+      ],
+      [
+        2.026315789473684,
+        2.3947368421052633,
+        1.2894736842105263,
+        3.5,
+        3.3157894736842106,
+        4.052631578947368,
+        4.421052631578948
+      ],
+      [
+        2.3157894736842106,
+        2.736842105263158,
+        1.4736842105263157,
+        4.0,
+        3.789473684210526,
+        4.631578947368421,
+        5.052631578947368
+      ]
+    ],
+    "chi2_full": 58.132532966566586,
+    "df_full": 24,
+    "chi2_obs": 42.07217757440972,
+    "df_used": 18,
+    "n_perm": 100000,
+    "n_perm_ge_obs": 91,
+    "p_perm": 0.000919990800091999,
+    "alpha_bon": 0.016666666666666666,
+    "pass_at_alpha_bon": true
+  }
+}

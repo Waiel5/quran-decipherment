@@ -1,0 +1,199 @@
+{
+  "id": "H-NEW-68",
+  "title": "Friday-recitation cluster cohesion test (Q18, Q32, Q62, Q76)",
+  "seed": 20260416,
+  "n_null_per_axis": 10000,
+  "null_construction": "random 4-surah subsets (without replacement within subset; with replacement across draws); the EXACT Friday set excluded",
+  "alpha_bonferroni": 0.0125,
+  "bonferroni_k": 4,
+  "axes": [
+    "A1_pair_prefix_mean",
+    "A2_pair_root_jaccard_mean",
+    "A3_length_cohesion",
+    "A4_divine_density_cohesion"
+  ],
+  "friday_cluster": [
+    18,
+    32,
+    62,
+    76
+  ],
+  "observed_cluster_cohesion": {
+    "A1_pair_prefix_mean": 0.3333333333333333,
+    "A2_pair_root_jaccard_mean": 0.17838552199539806,
+    "A3_length_cohesion": 0.5443746190096855,
+    "A4_divine_density_cohesion": 0.44741776907928316
+  },
+  "results": {
+    "axes": {
+      "A1_pair_prefix_mean": {
+        "observed": 0.3333333333333333,
+        "null_mean": 0.31695,
+        "null_median": 0.0,
+        "null_q05": 0.0,
+        "null_q95": 1.6666666666666667,
+        "null_q99": 3.1666666666666665,
+        "null_max": 11.0,
+        "p_one_sided": 0.35236476352364765,
+        "bonferroni_significant": false,
+        "uncorrected_significant": false
+      },
+      "A2_pair_root_jaccard_mean": {
+        "observed": 0.17838552199539806,
+        "null_mean": 0.13407286819996656,
+        "null_median": 0.12392624886539334,
+        "null_q05": 0.043386574159887996,
+        "null_q95": 0.260574142847034,
+        "null_q99": 0.31722603950590744,
+        "null_max": 0.4231797326339208,
+        "p_one_sided": 0.2385761423857614,
+        "bonferroni_significant": false,
+        "uncorrected_significant": false
+      },
+      "A3_length_cohesion": {
+        "observed": 0.5443746190096855,
+        "null_mean": 0.595820661867369,
+        "null_median": 0.5894118255291468,
+        "null_q05": 0.4586251613511093,
+        "null_q95": 0.7607073823673959,
+        "null_q99": 0.834710823628853,
+        "null_max": 0.9761858659512922,
+        "p_one_sided": 0.6991300869913009,
+        "bonferroni_significant": false,
+        "uncorrected_significant": false
+      },
+      "A4_divine_density_cohesion": {
+        "observed": 0.44741776907928316,
+        "null_mean": 0.5215683711424803,
+        "null_median": 0.5106501051476068,
+        "null_q05": 0.37773670791344954,
+        "null_q95": 0.6858591057704396,
+        "null_q99": 0.8529320139154526,
+        "null_max": 1.0,
+        "p_one_sided": 0.7674232576742326,
+        "bonferroni_significant": false,
+        "uncorrected_significant": false
+      }
+    },
+    "n_axes_bonferroni_significant": 0,
+    "n_axes_uncorrected_significant": 0,
+    "verdict": "NULL"
+  },
+  "pair_details": [
+    {
+      "a": 18,
+      "b": 32,
+      "first_verse_a": "الحمد لله الذي أنزل على عبده الكتاب ولم يجعل له عوجا ۜ",
+      "first_verse_b": "الم",
+      "shared_prefix_chars": 2,
+      "root_jaccard": 0.22549019607843138,
+      "root_intersection_size": 92,
+      "root_union_size": 408
+    },
+    {
+      "a": 18,
+      "b": 62,
+      "first_verse_a": "الحمد لله الذي أنزل على عبده الكتاب ولم يجعل له عوجا ۜ",
+      "first_verse_b": "يسبح لله ما في السماوات وما في الأرض الملك القدوس العزيز الحكيم",
+      "shared_prefix_chars": 0,
+      "root_jaccard": 0.14395886889460155,
+      "root_intersection_size": 56,
+      "root_union_size": 389
+    },
+    {
+      "a": 18,
+      "b": 76,
+      "first_verse_a": "الحمد لله الذي أنزل على عبده الكتاب ولم يجعل له عوجا ۜ",
+      "first_verse_b": "هل أتى على الإنسان حين من الدهر لم يكن شيئا مذكورا",
+      "shared_prefix_chars": 0,
+      "root_jaccard": 0.16183574879227053,
+      "root_intersection_size": 67,
+      "root_union_size": 414
+    },
+    {
+      "a": 32,
+      "b": 62,
+      "first_verse_a": "الم",
+      "first_verse_b": "يسبح لله ما في السماوات وما في الأرض الملك القدوس العزيز الحكيم",
+      "shared_prefix_chars": 0,
+      "root_jaccard": 0.21764705882352942,
+      "root_intersection_size": 37,
+      "root_union_size": 170
+    },
+    {
+      "a": 32,
+      "b": 76,
+      "first_verse_a": "الم",
+      "first_verse_b": "هل أتى على الإنسان حين من الدهر لم يكن شيئا مذكورا",
+      "shared_prefix_chars": 0,
+      "root_jaccard": 0.208955223880597,
+      "root_intersection_size": 42,
+      "root_union_size": 201
+    },
+    {
+      "a": 62,
+      "b": 76,
+      "first_verse_a": "يسبح لله ما في السماوات وما في الأرض الملك القدوس العزيز الحكيم",
+      "first_verse_b": "هل أتى على الإنسان حين من الدهر لم يكن شيئا مذكورا",
+      "shared_prefix_chars": 0,
+      "root_jaccard": 0.11242603550295859,
+      "root_intersection_size": 19,
+      "root_union_size": 169
+    }
+  ],
+  "surah_scalars": {
+    "18": {
+      "first_verse": "الحمد لله الذي أنزل على عبده الكتاب ولم يجعل له عوجا ۜ",
+      "verse_count": 110,
+      "divine_density": 0.14545454545454545,
+      "n_distinct_roots": 369
+    },
+    "32": {
+      "first_verse": "الم",
+      "verse_count": 30,
+      "divine_density": 0.1,
+      "n_distinct_roots": 131
+    },
+    "62": {
+      "first_verse": "يسبح لله ما في السماوات وما في الأرض الملك القدوس العزيز الحكيم",
+      "verse_count": 11,
+      "divine_density": 1.3636363636363635,
+      "n_distinct_roots": 76
+    },
+    "76": {
+      "first_verse": "هل أتى على الإنسان حين من الدهر لم يكن شيئا مذكورا",
+      "verse_count": 31,
+      "divine_density": 0.12903225806451613,
+      "n_distinct_roots": 112
+    }
+  },
+  "secondary_q18_q62_pair_test": {
+    "purpose": "PRE-REGISTERED secondary test of Q18-Q62 specific link (both surahs are most unambiguously Friday-specific by tradition).",
+    "alpha_bonferroni_k2": 0.025,
+    "results": {
+      "P_prefix": {
+        "observed": 0,
+        "null_mean": 0.3457,
+        "null_median": 0,
+        "null_q95": 2,
+        "null_q99": 8,
+        "p_one_sided": 1.0,
+        "bonferroni_significant_k2": false
+      },
+      "P_jaccard": {
+        "observed": 0.14395886889460155,
+        "null_mean": 0.1352404042854701,
+        "null_median": 0.1095890410958904,
+        "null_q95": 0.3339317773788151,
+        "null_q99": 0.38979963570127507,
+        "p_one_sided": 0.41755824417558246,
+        "bonferroni_significant_k2": false
+      }
+    }
+  },
+  "mw5_instrument_validation": {
+    "definition": "Shared-prefix cluster instrument (A1) was independently validated in H-NEW-58c on the musabbiḥāt cluster (Q57, 59, 61, 62, 64) at p=0.0001. Same metric used here.",
+    "status": "Instrument-validated (no fresh MW-5 needed)."
+  },
+  "pass_criterion": "≥2 of 4 axes Bonferroni-significant at α=0.0125 → PASS; 1 → MARGINAL; 0 → NULL."
+}

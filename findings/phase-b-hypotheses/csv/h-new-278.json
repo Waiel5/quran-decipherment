@@ -1,0 +1,354 @@
+{
+  "finding_id": "h-new-278",
+  "title": "Length-normalized MST rerun for OQ-19 (literal NM-36 operationalization)",
+  "pre_reg_sha256": "8a1a31b5b7675c8f0a66b4a4e839cc3a94d06aeb250fba6d072231fa0e398a5f",
+  "seed": 20260418,
+  "date": "2026-04-18",
+  "parent_finding": "h-new-131",
+  "grandparent": "h-new-134",
+  "rules_tuple": "(114 surahs Hafs-Kufan; K=500 top QAC-STEM roots; Fisher-Rao arccos-Bhattacharyya; MST via Kruskal; no-tashkeel; QAC v0.4)",
+  "locked_params": {
+    "k_top_roots": 500,
+    "alpha": 0.5,
+    "length_normalization": "count[i,r] / total_stem_root_tokens_in_surah_i",
+    "tie_break_ranking": "degree desc, surah_id asc"
+  },
+  "bonferroni": {
+    "k": 2,
+    "alpha_bon": 0.025,
+    "family": "h-new-278-length-normalized-mst",
+    "inferential_slots": [
+      "Cell A top-3 replication",
+      "Cell B Q108>Q7 degree comparison"
+    ],
+    "note": "Both slots are locked bright-line decisions on deterministic outputs."
+  },
+  "baseline_replication": {
+    "top10_hubs": [
+      [
+        108,
+        24
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        112,
+        8
+      ],
+      [
+        64,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        23,
+        4
+      ],
+      [
+        63,
+        4
+      ],
+      [
+        78,
+        4
+      ],
+      [
+        103,
+        4
+      ]
+    ],
+    "top3": [
+      [
+        108,
+        24
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        112,
+        8
+      ]
+    ],
+    "q108_degree": 24,
+    "q7_degree": 10,
+    "q112_degree": 8,
+    "matches_expected_top3": true
+  },
+  "length_normalized_rerun": {
+    "top10_hubs": [
+      [
+        7,
+        15
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        17,
+        9
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        25,
+        8
+      ],
+      [
+        18,
+        7
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        16,
+        6
+      ],
+      [
+        38,
+        6
+      ],
+      [
+        22,
+        5
+      ]
+    ],
+    "top3": [
+      [
+        7,
+        15
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        17,
+        9
+      ]
+    ],
+    "top3_overlap_with_baseline_ids": [
+      7
+    ],
+    "top3_overlap_count": 1,
+    "q108_is_top3": false,
+    "q108_degree": 1,
+    "q7_degree": 15,
+    "q112_degree": 1,
+    "q108_minus_q7_degree": -14,
+    "q108_neighbors": [
+      [
+        89,
+        0.023009703985343667
+      ]
+    ],
+    "q108_total_stem_tokens": 7,
+    "q108_top500_tokens": 4,
+    "q108_top500_coverage": 0.5714285714285714
+  },
+  "cell_A_top3_replication": {
+    "baseline_top3_ids": [
+      7,
+      108,
+      112
+    ],
+    "length_normalized_top3_ids": [
+      2,
+      7,
+      17
+    ],
+    "overlap_ids": [
+      7
+    ],
+    "q108_is_top3": false,
+    "pass": false
+  },
+  "cell_B_q108_vs_q7": {
+    "q108_degree": 1,
+    "q7_degree": 15,
+    "degree_gap_q108_minus_q7": -14,
+    "pass": false
+  },
+  "mw5_label_permutation": {
+    "seed": 20260418,
+    "permutation": [
+      89,
+      65,
+      114,
+      99,
+      101,
+      25,
+      7,
+      67,
+      41,
+      66,
+      108,
+      75,
+      83,
+      61,
+      79,
+      9,
+      112,
+      86,
+      62,
+      48,
+      56,
+      43,
+      14,
+      60,
+      64,
+      21,
+      12,
+      38,
+      24,
+      29,
+      15,
+      74,
+      70,
+      34,
+      55,
+      49,
+      73,
+      77,
+      68,
+      11,
+      72,
+      106,
+      87,
+      40,
+      53,
+      59,
+      85,
+      8,
+      4,
+      51,
+      69,
+      71,
+      100,
+      96,
+      82,
+      45,
+      19,
+      84,
+      46,
+      44,
+      105,
+      63,
+      57,
+      107,
+      42,
+      95,
+      33,
+      92,
+      28,
+      20,
+      1,
+      88,
+      27,
+      110,
+      111,
+      22,
+      98,
+      104,
+      76,
+      31,
+      30,
+      103,
+      13,
+      81,
+      36,
+      94,
+      3,
+      32,
+      16,
+      47,
+      17,
+      35,
+      37,
+      91,
+      23,
+      58,
+      102,
+      50,
+      90,
+      39,
+      113,
+      80,
+      109,
+      18,
+      97,
+      52,
+      2,
+      5,
+      93,
+      6,
+      26,
+      78,
+      10,
+      54
+    ],
+    "permuted_top10_hubs": [
+      [
+        7,
+        15
+      ],
+      [
+        91,
+        9
+      ],
+      [
+        107,
+        9
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        16,
+        8
+      ],
+      [
+        104,
+        7
+      ],
+      [
+        28,
+        6
+      ],
+      [
+        87,
+        6
+      ],
+      [
+        89,
+        6
+      ],
+      [
+        76,
+        5
+      ]
+    ],
+    "permuted_q108_degree": 3,
+    "source_surah_assigned_to_q108": 5,
+    "degree_multiset_same": true,
+    "q108_degree_changed": true,
+    "pass": true
+  },
+  "final_verdict": "COLLAPSE-UNDER-LITERAL-LENGTH-NORMALIZATION - Q108 hub anomaly does not survive the NM-36 rerun"
+}

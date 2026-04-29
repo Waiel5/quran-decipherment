@@ -1,0 +1,173 @@
+{
+  "id": "H-NEW-901",
+  "title": "ḥawāmīm-7 cluster cohesion test",
+  "prereg_path": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-901-hm7-cohesion-prereg.md",
+  "prereg_sha256": "af7a1c1094f7d7e68e4d47660cc514648306ddbeb002f5dbbb471c82881b7ca0",
+  "expected_sha256": "af7a1c1094f7d7e68e4d47660cc514648306ddbeb002f5dbbb471c82881b7ca0",
+  "sha_verified": true,
+  "seed": 20260428,
+  "n_perms": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi); Fisher-Rao distance matrix from H-NEW-111 / QAC-STEM root tokens / QAC v0.4 / K_top_roots=500 / Dirichlet alpha=0.5",
+  "primary": {
+    "set": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "K": 7,
+    "d_observed": 0.8672422857142857,
+    "percentile": 21.21,
+    "verdict": "NULL",
+    "gates": {
+      "confirmed_pct": 5.0,
+      "directional_pct": 16.67,
+      "falsified_pct": 95.0
+    }
+  },
+  "secondary_hm_a": {
+    "set": [
+      40,
+      41,
+      42
+    ],
+    "K": 3,
+    "d_observed": 0.8624003333333333,
+    "percentile": 24.95,
+    "diagnostic_only": true
+  },
+  "secondary_hm_b": {
+    "set": [
+      43,
+      44,
+      45,
+      46
+    ],
+    "K": 4,
+    "d_observed": 0.866476,
+    "percentile": 23.53,
+    "diagnostic_only": true
+  },
+  "sub_block_comparison": {
+    "d_within_hm_a": 0.8624003333333333,
+    "d_within_hm_b": 0.866476,
+    "d_between_hm_ab": 0.8688359166666667,
+    "hm_a_more_cohesive_than_hm_b": true,
+    "between_exceeds_within_max": true
+  },
+  "pairwise_hm7": [
+    {
+      "a": 40,
+      "b": 41,
+      "d": 0.840334
+    },
+    {
+      "a": 40,
+      "b": 42,
+      "d": 0.89286
+    },
+    {
+      "a": 40,
+      "b": 43,
+      "d": 0.910869
+    },
+    {
+      "a": 40,
+      "b": 44,
+      "d": 0.965019
+    },
+    {
+      "a": 40,
+      "b": 45,
+      "d": 0.826717
+    },
+    {
+      "a": 40,
+      "b": 46,
+      "d": 0.818382
+    },
+    {
+      "a": 41,
+      "b": 42,
+      "d": 0.854007
+    },
+    {
+      "a": 41,
+      "b": 43,
+      "d": 0.855702
+    },
+    {
+      "a": 41,
+      "b": 44,
+      "d": 0.914883
+    },
+    {
+      "a": 41,
+      "b": 45,
+      "d": 0.799351
+    },
+    {
+      "a": 41,
+      "b": 46,
+      "d": 0.725446
+    },
+    {
+      "a": 42,
+      "b": 43,
+      "d": 0.991218
+    },
+    {
+      "a": 42,
+      "b": 44,
+      "d": 0.951261
+    },
+    {
+      "a": 42,
+      "b": 45,
+      "d": 0.801067
+    },
+    {
+      "a": 42,
+      "b": 46,
+      "d": 0.866116
+    },
+    {
+      "a": 43,
+      "b": 44,
+      "d": 0.864706
+    },
+    {
+      "a": 43,
+      "b": 45,
+      "d": 0.901133
+    },
+    {
+      "a": 43,
+      "b": 46,
+      "d": 0.874691
+    },
+    {
+      "a": 44,
+      "b": 45,
+      "d": 0.843896
+    },
+    {
+      "a": 44,
+      "b": 46,
+      "d": 0.903213
+    },
+    {
+      "a": 45,
+      "b": 46,
+      "d": 0.811217
+    }
+  ],
+  "notes": {
+    "classical_anchor": "Ibn ʿAbbās al-ḥawāmīm dībāj al-Qurʾān (al-Suyūṭī Itqān nawʿ 17)",
+    "h_new_570_priors": "HM-7 reported at 20.90%ile in MW-5 sub-test of H-NEW-570",
+    "h_new_600_double_null": "ALM-6 NULL @ 43.15%, ALR-5 NULL @ 56.25%"
+  }
+}

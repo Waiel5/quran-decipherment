@@ -1,0 +1,1083 @@
+{
+  "id": "H-NEW-123",
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-surah-1, hafs-kufan, mashriqi)",
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "fits": {
+    "Quran": {
+      "N": 77797,
+      "V": 14870,
+      "beta": 0.7468440619718563,
+      "K": 3.311299793706284,
+      "beta_ci95": [
+        0.6270597760485181,
+        0.6549640652405779
+      ]
+    },
+    "Bukhari_matched77k": {
+      "N": 77797,
+      "V": 12154,
+      "beta": 0.74722052873117,
+      "K": 2.750853803610646,
+      "beta_ci95": [
+        0.6239444339079383,
+        0.6638559310919123
+      ]
+    },
+    "Jahiz_Hayawan_first77k": {
+      "N": 77797,
+      "V": 22984,
+      "beta": 0.8023152014656266,
+      "K": 2.860908830942914,
+      "beta_ci95": [
+        0.7008610900094578,
+        0.7317220599726566
+      ]
+    },
+    "Muallaqat_7poems": {
+      "N": 7285,
+      "V": 3843,
+      "beta": 0.8313331061698371,
+      "K": 2.3241544627492723,
+      "beta_ci95": [
+        0.7035108378481062,
+        0.803032417433796
+      ]
+    },
+    "Quran_shuffled": {
+      "N": 77797,
+      "V": 14870,
+      "beta": 0.7071756163439211,
+      "K": 5.461019233470869,
+      "beta_ci95": [
+        0.6204587454378647,
+        0.6435549478213441
+      ]
+    }
+  },
+  "positive_controls": {
+    "iid_uniform_5000types": {
+      "beta": 0.2849136066201593,
+      "expect": "<0.5"
+    },
+    "all_unique": {
+      "beta": 1.0,
+      "expect": "≈1.0"
+    },
+    "pos_ok": true
+  },
+  "primary_cells": {
+    "A1_Quran_lt_Bukhari": {
+      "p_one_sided": 0.3826173826173826,
+      "passes": false
+    },
+    "A2_Quran_lt_Jahiz": {
+      "p_one_sided": 0.000999000999000999,
+      "passes": true
+    },
+    "A3_Quran_lt_Muallaqat": {
+      "p_one_sided": 0.000999000999000999,
+      "passes": true
+    },
+    "B_Quran_vs_shuffled": {
+      "p_two_sided": 0.334,
+      "passes": false
+    }
+  },
+  "secondary_muqattaat": {
+    "n_muq": 29,
+    "n_nonmuq": 43,
+    "median_beta_muq": 0.8305718978337899,
+    "median_beta_nonmuq": 0.8399651570405209,
+    "p_one_sided": 0.24907509249075094,
+    "passes_exploratory": false
+  },
+  "per_surah_top5_lowest_beta": [
+    {
+      "surah_id": 55,
+      "N": 352,
+      "V": 179,
+      "beta": 0.7307765629377204,
+      "is_muq": false
+    },
+    {
+      "surah_id": 26,
+      "N": 1320,
+      "V": 649,
+      "beta": 0.7498636599653237,
+      "is_muq": true
+    },
+    {
+      "surah_id": 60,
+      "N": 352,
+      "V": 239,
+      "beta": 0.7717192255631156,
+      "is_muq": false
+    },
+    {
+      "surah_id": 54,
+      "N": 342,
+      "V": 231,
+      "beta": 0.7790023589816178,
+      "is_muq": false
+    },
+    {
+      "surah_id": 10,
+      "N": 1839,
+      "V": 888,
+      "beta": 0.7901533403000296,
+      "is_muq": true
+    }
+  ],
+  "per_surah_top5_highest_beta": [
+    {
+      "surah_id": 32,
+      "N": 372,
+      "V": 280,
+      "beta": 0.9496204477457448,
+      "is_muq": true
+    },
+    {
+      "surah_id": 76,
+      "N": 243,
+      "V": 196,
+      "beta": 0.9429069709284955,
+      "is_muq": false
+    },
+    {
+      "surah_id": 57,
+      "N": 575,
+      "V": 365,
+      "beta": 0.942614642826802,
+      "is_muq": false
+    },
+    {
+      "surah_id": 66,
+      "N": 254,
+      "V": 197,
+      "beta": 0.9104671273142393,
+      "is_muq": false
+    },
+    {
+      "surah_id": 56,
+      "N": 379,
+      "V": 271,
+      "beta": 0.904557145648502,
+      "is_muq": false
+    }
+  ],
+  "per_surah_full": [
+    {
+      "surah_id": 1,
+      "N": 29,
+      "V": 26,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 2,
+      "N": 6140,
+      "V": 2279,
+      "beta": 0.7937985113541474,
+      "K": 2.2875542995635674,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 3,
+      "N": 3501,
+      "V": 1469,
+      "beta": 0.8114385626082778,
+      "K": 1.9959629542783848,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 4,
+      "N": 3763,
+      "V": 1513,
+      "beta": 0.8012864107386929,
+      "K": 2.15070631574127,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 5,
+      "N": 2837,
+      "V": 1249,
+      "beta": 0.8098762108848097,
+      "K": 2.044072936538655,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 6,
+      "N": 3056,
+      "V": 1364,
+      "beta": 0.8091653122438613,
+      "K": 2.084360285648936,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 7,
+      "N": 3341,
+      "V": 1558,
+      "beta": 0.8072832423864739,
+      "K": 2.2081613188709444,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 8,
+      "N": 1242,
+      "V": 641,
+      "beta": 0.7954126826666692,
+      "K": 2.30205030869725,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 9,
+      "N": 2505,
+      "V": 1126,
+      "beta": 0.8291560674146033,
+      "K": 1.7798975288393108,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 10,
+      "N": 1839,
+      "V": 888,
+      "beta": 0.7901533403000296,
+      "K": 2.407870233606764,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 11,
+      "N": 1946,
+      "V": 939,
+      "beta": 0.8029346755891684,
+      "K": 2.15938018665086,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 12,
+      "N": 1795,
+      "V": 925,
+      "beta": 0.8055341407575553,
+      "K": 2.25617209284181,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 13,
+      "N": 853,
+      "V": 511,
+      "beta": 0.8144765059257216,
+      "K": 2.1333424477707896,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 14,
+      "N": 830,
+      "V": 507,
+      "beta": 0.8664478383091037,
+      "K": 1.488792467235276,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 15,
+      "N": 657,
+      "V": 432,
+      "beta": 0.8853760081740265,
+      "K": 1.3694858858509407,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 16,
+      "N": 1844,
+      "V": 919,
+      "beta": 0.7954466043163624,
+      "K": 2.3677898935855968,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 17,
+      "N": 1558,
+      "V": 885,
+      "beta": 0.8206221140537265,
+      "K": 2.17934316646536,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 18,
+      "N": 1583,
+      "V": 917,
+      "beta": 0.8382638819358464,
+      "K": 1.932418335618414,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 19,
+      "N": 971,
+      "V": 589,
+      "beta": 0.8797669957716104,
+      "K": 1.4030895068804057,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 20,
+      "N": 1353,
+      "V": 809,
+      "beta": 0.8668675898371829,
+      "K": 1.58623559443881,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 21,
+      "N": 1174,
+      "V": 678,
+      "beta": 0.8259661324712295,
+      "K": 1.9938834711123667,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 22,
+      "N": 1279,
+      "V": 693,
+      "beta": 0.8868201951257118,
+      "K": 1.2462314081431922,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 23,
+      "N": 1052,
+      "V": 622,
+      "beta": 0.8857616348838228,
+      "K": 1.3425811143633173,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 24,
+      "N": 1319,
+      "V": 676,
+      "beta": 0.8399651570405209,
+      "K": 1.6621182907393417,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 25,
+      "N": 896,
+      "V": 574,
+      "beta": 0.8856307483140299,
+      "K": 1.4411283604650886,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 26,
+      "N": 1320,
+      "V": 649,
+      "beta": 0.7498636599653237,
+      "K": 2.9822641983102893,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 27,
+      "N": 1159,
+      "V": 679,
+      "beta": 0.834075791102981,
+      "K": 1.9387984026667486,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 28,
+      "N": 1438,
+      "V": 791,
+      "beta": 0.8705861382942912,
+      "K": 1.4695219837403073,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 29,
+      "N": 978,
+      "V": 575,
+      "beta": 0.8516406721277382,
+      "K": 1.6434610043468285,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 30,
+      "N": 817,
+      "V": 451,
+      "beta": 0.829011639372915,
+      "K": 1.736201127590571,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 31,
+      "N": 550,
+      "V": 343,
+      "beta": 0.8202275848042346,
+      "K": 1.9323963378407556,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 32,
+      "N": 372,
+      "V": 280,
+      "beta": 0.9496204477457448,
+      "K": 1.0409974457826057,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 33,
+      "N": 1303,
+      "V": 688,
+      "beta": 0.8085964412848407,
+      "K": 2.1375406462538544,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 34,
+      "N": 884,
+      "V": 514,
+      "beta": 0.868620036025976,
+      "K": 1.4714524551088004,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 35,
+      "N": 778,
+      "V": 482,
+      "beta": 0.8518790808743895,
+      "K": 1.6894952528320277,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 36,
+      "N": 730,
+      "V": 457,
+      "beta": 0.8354831127640707,
+      "K": 1.862374066125981,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 37,
+      "N": 865,
+      "V": 535,
+      "beta": 0.8300661265060846,
+      "K": 2.0065641732852453,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 38,
+      "N": 735,
+      "V": 478,
+      "beta": 0.8893640815504392,
+      "K": 1.3837339368028716,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 39,
+      "N": 1177,
+      "V": 637,
+      "beta": 0.8332178261052289,
+      "K": 1.7866821352401816,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 40,
+      "N": 1226,
+      "V": 665,
+      "beta": 0.7916783997355317,
+      "K": 2.409642215950071,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 41,
+      "N": 794,
+      "V": 513,
+      "beta": 0.8195340639121974,
+      "K": 2.180996975476959,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 42,
+      "N": 860,
+      "V": 462,
+      "beta": 0.8305718978337899,
+      "K": 1.7091571279212134,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 43,
+      "N": 836,
+      "V": 544,
+      "beta": 0.8747108308294103,
+      "K": 1.5433249090256105,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 44,
+      "N": 346,
+      "V": 243,
+      "beta": 0.8033488492629621,
+      "K": 2.219946336332858,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 45,
+      "N": 488,
+      "V": 314,
+      "beta": 0.8692420895671641,
+      "K": 1.4690790310799524,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 46,
+      "N": 645,
+      "V": 417,
+      "beta": 0.8914837378483756,
+      "K": 1.349544915682226,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 47,
+      "N": 542,
+      "V": 340,
+      "beta": 0.8956872302776236,
+      "K": 1.21939272356682,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 48,
+      "N": 560,
+      "V": 362,
+      "beta": 0.849067200290946,
+      "K": 1.6567290871578606,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 49,
+      "N": 353,
+      "V": 217,
+      "beta": 0.8309608241137183,
+      "K": 1.656372805116125,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 50,
+      "N": 373,
+      "V": 280,
+      "beta": 0.8460817785024642,
+      "K": 1.8643658632961195,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 51,
+      "N": 360,
+      "V": 265,
+      "beta": 0.863053427476715,
+      "K": 1.6783176540043603,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 52,
+      "N": 312,
+      "V": 236,
+      "beta": 0.8606442168060988,
+      "K": 1.6755012305536274,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 53,
+      "N": 360,
+      "V": 247,
+      "beta": 0.8124497366858625,
+      "K": 2.0081209714358654,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 54,
+      "N": 342,
+      "V": 231,
+      "beta": 0.7790023589816178,
+      "K": 2.4260797970011034,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 55,
+      "N": 352,
+      "V": 179,
+      "beta": 0.7307765629377204,
+      "K": 2.5408277831720874,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 56,
+      "N": 379,
+      "V": 271,
+      "beta": 0.904557145648502,
+      "K": 1.2796362012422582,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 57,
+      "N": 575,
+      "V": 365,
+      "beta": 0.942614642826802,
+      "K": 0.9487454502487435,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 58,
+      "N": 475,
+      "V": 275,
+      "beta": 0.8292031406569556,
+      "K": 1.6565940038543208,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 59,
+      "N": 447,
+      "V": 299,
+      "beta": 0.885589747622103,
+      "K": 1.3622893554390783,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 60,
+      "N": 352,
+      "V": 239,
+      "beta": 0.7717192255631156,
+      "K": 2.583574883888263,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 61,
+      "N": 226,
+      "V": 156,
+      "beta": 0.8482321219223146,
+      "K": 1.5944145651379198,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 62,
+      "N": 177,
+      "V": 133,
+      "beta": 0.7991566084176288,
+      "K": 2.1134811707297843,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 63,
+      "N": 181,
+      "V": 139,
+      "beta": 0.8621044235195416,
+      "K": 1.5607133648218539,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 64,
+      "N": 242,
+      "V": 183,
+      "beta": 0.8601045694637356,
+      "K": 1.6139522924257441,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 65,
+      "N": 289,
+      "V": 205,
+      "beta": 0.867116948643357,
+      "K": 1.4855281978012855,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 66,
+      "N": 254,
+      "V": 197,
+      "beta": 0.9104671273142393,
+      "K": 1.2644422314601667,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 67,
+      "N": 333,
+      "V": 224,
+      "beta": 0.8241506447842606,
+      "K": 1.8988522560855132,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 68,
+      "N": 301,
+      "V": 228,
+      "beta": 0.8303718235564893,
+      "K": 1.9877536765892927,
+      "is_muqattaat": true
+    },
+    {
+      "surah_id": 69,
+      "N": 260,
+      "V": 203,
+      "beta": 0.8444165768717911,
+      "K": 1.858796171139409,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 70,
+      "N": 217,
+      "V": 177,
+      "beta": 0.8366532329268271,
+      "K": 1.931689043335542,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 71,
+      "N": 227,
+      "V": 172,
+      "beta": 0.8995259890018578,
+      "K": 1.308857590860184,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 72,
+      "N": 286,
+      "V": 201,
+      "beta": 0.8418043117280484,
+      "K": 1.706839761074322,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 73,
+      "N": 200,
+      "V": 158,
+      "beta": 0.83378284004452,
+      "K": 1.932152566990862,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 74,
+      "N": 256,
+      "V": 193,
+      "beta": 0.8656284342312658,
+      "K": 1.581429987270158,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 75,
+      "N": 164,
+      "V": 124,
+      "beta": 0.9233126717806964,
+      "K": 1.1082412571689901,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 76,
+      "N": 243,
+      "V": 196,
+      "beta": 0.9429069709284955,
+      "K": 1.1009308364991681,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 77,
+      "N": 181,
+      "V": 129,
+      "beta": 0.8127017770871453,
+      "K": 1.9025700438599604,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 78,
+      "N": 174,
+      "V": 146,
+      "beta": 0.8600911366010361,
+      "K": 1.7068810246046917,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 79,
+      "N": 179,
+      "V": 154,
+      "beta": 0.8167810523650778,
+      "K": 2.237150904099346,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 80,
+      "N": 133,
+      "V": 116,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 81,
+      "N": 104,
+      "V": 84,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 82,
+      "N": 81,
+      "V": 63,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 83,
+      "N": 169,
+      "V": 118,
+      "beta": 0.9397401364628444,
+      "K": 0.968666191861745,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 84,
+      "N": 108,
+      "V": 91,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 85,
+      "N": 109,
+      "V": 97,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 86,
+      "N": 61,
+      "V": 53,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 87,
+      "N": 72,
+      "V": 67,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 88,
+      "N": 92,
+      "V": 76,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 89,
+      "N": 139,
+      "V": 114,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 90,
+      "N": 82,
+      "V": 70,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 91,
+      "N": 54,
+      "V": 48,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 92,
+      "N": 71,
+      "V": 59,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 93,
+      "N": 40,
+      "V": 35,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 94,
+      "N": 27,
+      "V": 23,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 95,
+      "N": 34,
+      "V": 34,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 96,
+      "N": 72,
+      "V": 55,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 97,
+      "N": 30,
+      "V": 25,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 98,
+      "N": 94,
+      "V": 70,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 99,
+      "N": 36,
+      "V": 29,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 100,
+      "N": 40,
+      "V": 35,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 101,
+      "N": 36,
+      "V": 28,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 102,
+      "N": 28,
+      "V": 20,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 103,
+      "N": 14,
+      "V": 13,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 104,
+      "N": 33,
+      "V": 31,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 105,
+      "N": 23,
+      "V": 22,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 106,
+      "N": 17,
+      "V": 16,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 107,
+      "N": 25,
+      "V": 22,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 108,
+      "N": 10,
+      "V": 10,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 109,
+      "N": 27,
+      "V": 18,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 110,
+      "N": 19,
+      "V": 18,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 111,
+      "N": 23,
+      "V": 22,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 112,
+      "N": 15,
+      "V": 12,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 113,
+      "N": 23,
+      "V": 17,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    },
+    {
+      "surah_id": 114,
+      "N": 20,
+      "V": 16,
+      "beta": NaN,
+      "K": NaN,
+      "is_muqattaat": false
+    }
+  ]
+}

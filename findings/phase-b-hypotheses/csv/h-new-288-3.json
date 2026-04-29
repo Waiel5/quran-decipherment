@@ -1,0 +1,287 @@
+{
+  "finding_id": "h-new-288-3",
+  "title": "Residualized short-core projection test for the H-NEW-273 speech-act score",
+  "date": "2026-04-19",
+  "pre_reg_sha256": "33da1364997438ae5ec04d6c6ce621c66cefd4a329a65996b78b03d70bad6228",
+  "parent_backdrop": [
+    "h-new-273",
+    "h-new-288-1",
+    "h-new-288-2"
+  ],
+  "rules_tuple": "(fixed H-NEW-273 5-7 verse Early-Meccan side B = {Q1,Q97,Q105,Q107,Q109,Q111,Q113,Q114}; fixed H-NEW-288.1 residualized short-core K = {Q108,Q106,Q103,Q112}; residualized probability family reused exactly from H-NEW-288.1; primary metrics = Fisher-Rao, Jensen-Shannon, Euclidean L2, cosine-angle; H-NEW-273 surah score reused exactly as S(s)=sqrt(divine_share_{Alh,rbb,rHm}(s) * imperative_density(s)); per metric core-closeness C_m(s) = -mean_{t in K} d_res,m(s,t); primary summary T_proj = mean_m Corr(S, C_m) over B; exact null by permuting the observed H-NEW-273 score multiset across B, yielding 8!/5! = 336 unique assignments; dual directional exact p_same and p_comp)",
+  "fixed_sets": {
+    "B": [
+      1,
+      97,
+      105,
+      107,
+      109,
+      111,
+      113,
+      114
+    ],
+    "K": [
+      108,
+      106,
+      103,
+      112
+    ]
+  },
+  "residualized_family_context": {
+    "mean_surah_tokens": 438.3157894736842,
+    "q108_effective_alpha_residualized": 31.30827067669173
+  },
+  "h273_score_map": {
+    "1": 0.20854568887374797,
+    "97": 0.0,
+    "105": 0.0,
+    "107": 0.0,
+    "109": 0.0,
+    "111": 0.0,
+    "113": 0.11547005383792516,
+    "114": 0.1443520003325205
+  },
+  "primary_metrics": [
+    "fisher_rao",
+    "jensen_shannon",
+    "euclidean_l2",
+    "cosine_angle"
+  ],
+  "per_metric": [
+    {
+      "metric": "fisher_rao",
+      "r_obs": -0.4831846584880257,
+      "per_surah": [
+        {
+          "surah": 1,
+          "h273_score": 0.20854568887374797,
+          "mean_residualized_distance_to_core": 0.027170785000674817,
+          "residualized_core_closeness": -0.027170785000674817
+        },
+        {
+          "surah": 97,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.024408738337467747,
+          "residualized_core_closeness": -0.024408738337467747
+        },
+        {
+          "surah": 105,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.014969259775863797,
+          "residualized_core_closeness": -0.014969259775863797
+        },
+        {
+          "surah": 107,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.011888322970809221,
+          "residualized_core_closeness": -0.011888322970809221
+        },
+        {
+          "surah": 109,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.01918148622189284,
+          "residualized_core_closeness": -0.01918148622189284
+        },
+        {
+          "surah": 111,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.012014143158240754,
+          "residualized_core_closeness": -0.012014143158240754
+        },
+        {
+          "surah": 113,
+          "h273_score": 0.11547005383792516,
+          "mean_residualized_distance_to_core": 0.014156654004902142,
+          "residualized_core_closeness": -0.014156654004902142
+        },
+        {
+          "surah": 114,
+          "h273_score": 0.1443520003325205,
+          "mean_residualized_distance_to_core": 0.01823503054006342,
+          "residualized_core_closeness": -0.01823503054006342
+        }
+      ]
+    },
+    {
+      "metric": "jensen_shannon",
+      "r_obs": -0.48306444995795217,
+      "per_surah": [
+        {
+          "surah": 1,
+          "h273_score": 0.20854568887374797,
+          "mean_residualized_distance_to_core": 0.009600630162755065,
+          "residualized_core_closeness": -0.009600630162755065
+        },
+        {
+          "surah": 97,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.008626552006497375,
+          "residualized_core_closeness": -0.008626552006497375
+        },
+        {
+          "surah": 105,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.005291895561214545,
+          "residualized_core_closeness": -0.005291895561214545
+        },
+        {
+          "surah": 107,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.004202787102749541,
+          "residualized_core_closeness": -0.004202787102749541
+        },
+        {
+          "surah": 109,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.006774583623750274,
+          "residualized_core_closeness": -0.006774583623750274
+        },
+        {
+          "surah": 111,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.004247393382418566,
+          "residualized_core_closeness": -0.004247393382418566
+        },
+        {
+          "surah": 113,
+          "h273_score": 0.11547005383792516,
+          "mean_residualized_distance_to_core": 0.005003033609485601,
+          "residualized_core_closeness": -0.005003033609485601
+        },
+        {
+          "surah": 114,
+          "h273_score": 0.1443520003325205,
+          "mean_residualized_distance_to_core": 0.00644258558111677,
+          "residualized_core_closeness": -0.00644258558111677
+        }
+      ]
+    },
+    {
+      "metric": "euclidean_l2",
+      "r_obs": -0.488654630213,
+      "per_surah": [
+        {
+          "surah": 1,
+          "h273_score": 0.20854568887374797,
+          "mean_residualized_distance_to_core": 0.0012828771388216816,
+          "residualized_core_closeness": -0.0012828771388216816
+        },
+        {
+          "surah": 97,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.0011404690357093579,
+          "residualized_core_closeness": -0.0011404690357093579
+        },
+        {
+          "surah": 105,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.0006849580818629952,
+          "residualized_core_closeness": -0.0006849580818629952
+        },
+        {
+          "surah": 107,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.0005435155714731007,
+          "residualized_core_closeness": -0.0005435155714731007
+        },
+        {
+          "surah": 109,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.0009317050359735252,
+          "residualized_core_closeness": -0.0009317050359735252
+        },
+        {
+          "surah": 111,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.0005469909216718501,
+          "residualized_core_closeness": -0.0005469909216718501
+        },
+        {
+          "surah": 113,
+          "h273_score": 0.11547005383792516,
+          "mean_residualized_distance_to_core": 0.0006636134111544865,
+          "residualized_core_closeness": -0.0006636134111544865
+        },
+        {
+          "surah": 114,
+          "h273_score": 0.1443520003325205,
+          "mean_residualized_distance_to_core": 0.0008664032149559785,
+          "residualized_core_closeness": -0.0008664032149559785
+        }
+      ]
+    },
+    {
+      "metric": "cosine_angle",
+      "r_obs": -0.488634276925045,
+      "per_surah": [
+        {
+          "surah": 1,
+          "h273_score": 0.20854568887374797,
+          "mean_residualized_distance_to_core": 0.028678333219925644,
+          "residualized_core_closeness": -0.028678333219925644
+        },
+        {
+          "surah": 97,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.025496474469130812,
+          "residualized_core_closeness": -0.025496474469130812
+        },
+        {
+          "surah": 105,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.015315156908731108,
+          "residualized_core_closeness": -0.015315156908731108
+        },
+        {
+          "surah": 107,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.012152919803939564,
+          "residualized_core_closeness": -0.012152919803939564
+        },
+        {
+          "surah": 109,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.02083069957240085,
+          "residualized_core_closeness": -0.02083069957240085
+        },
+        {
+          "surah": 111,
+          "h273_score": 0.0,
+          "mean_residualized_distance_to_core": 0.01223065909667934,
+          "residualized_core_closeness": -0.01223065909667934
+        },
+        {
+          "surah": 113,
+          "h273_score": 0.11547005383792516,
+          "mean_residualized_distance_to_core": 0.014837954347828778,
+          "residualized_core_closeness": -0.014837954347828778
+        },
+        {
+          "surah": 114,
+          "h273_score": 0.1443520003325205,
+          "mean_residualized_distance_to_core": 0.019371178577088588,
+          "residualized_core_closeness": -0.019371178577088588
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "t_proj_obs": -0.48588450389600574,
+    "r_obs_per_metric": [
+      -0.4831846584880257,
+      -0.48306444995795217,
+      -0.488654630213,
+      -0.488634276925045
+    ],
+    "null_n_unique_assignments": 336,
+    "null_mean": 3.7818004349792e-19,
+    "null_min": -0.9228733460261942,
+    "null_max": 0.7411332434734881,
+    "rank_desc": 299,
+    "rank_asc": 38,
+    "p_same": 0.8902077151335311,
+    "p_comp": 0.11572700296735905,
+    "decision_rule": "PASS-SAME-MECHANISM iff p_same < 0.05; PASS-COMPLEMENTARY iff p_comp < 0.05; NULL otherwise"
+  },
+  "verdict": "NULL"
+}

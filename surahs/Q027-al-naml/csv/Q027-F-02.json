@@ -1,0 +1,103 @@
+{
+  "finding_id": "Q027-F-02",
+  "prereg_sha": "0a6fb49cd4ccf57a842c07d6f72163cb1a6cdf0ca991657cab47de97031f9a08",
+  "rules_tuple": "(orthographic-token, three tashkeel variants, Hafs-Kufan, Mashriqi)",
+  "method": "Slice basmala-phrase from Q 27:30 starting at first token containing بسم; compare to Q 1:1.",
+  "results_per_variant": {
+    "no_tashkeel": {
+      "q1_v1_text": "بسم الله الرحمن الرحيم",
+      "q27_v30_text": "إنه من سليمان وإنه بسم الله الرحمن الرحيم",
+      "q1_tokens": [
+        "بسم",
+        "الله",
+        "الرحمن",
+        "الرحيم"
+      ],
+      "q27_v30_tokens": [
+        "إنه",
+        "من",
+        "سليمان",
+        "وإنه",
+        "بسم",
+        "الله",
+        "الرحمن",
+        "الرحيم"
+      ],
+      "q27_30_basmala_slice": [
+        "بسم",
+        "الله",
+        "الرحمن",
+        "الرحيم"
+      ],
+      "bism_token_index_in_q27_30": 5,
+      "match_exact_byte_for_byte": true,
+      "match_after_diacritic_strip": true,
+      "token_levenshtein_exact": 0,
+      "token_levenshtein_stripped": 0
+    },
+    "min_tashkeel": {
+      "q1_v1_text": "بِسمِ اللَّهِ الرَّحمٰنِ الرَّحيمِ",
+      "q27_v30_text": "إِنَّهُ مِن سُلَيمٰنَ وَإِنَّهُ بِسمِ اللَّهِ الرَّحمٰنِ الرَّحيمِ",
+      "q1_tokens": [
+        "بِسمِ",
+        "اللَّهِ",
+        "الرَّحمٰنِ",
+        "الرَّحيمِ"
+      ],
+      "q27_v30_tokens": [
+        "إِنَّهُ",
+        "مِن",
+        "سُلَيمٰنَ",
+        "وَإِنَّهُ",
+        "بِسمِ",
+        "اللَّهِ",
+        "الرَّحمٰنِ",
+        "الرَّحيمِ"
+      ],
+      "q27_30_basmala_slice": [
+        "بِسمِ",
+        "اللَّهِ",
+        "الرَّحمٰنِ",
+        "الرَّحيمِ"
+      ],
+      "bism_token_index_in_q27_30": 5,
+      "match_exact_byte_for_byte": true,
+      "match_after_diacritic_strip": true,
+      "token_levenshtein_exact": 0,
+      "token_levenshtein_stripped": 0
+    },
+    "full_tashkeel": {
+      "q1_v1_text": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+      "q27_v30_text": "إِنَّهُۥ مِن سُلَيۡمَٰنَ وَإِنَّهُۥ بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+      "q1_tokens": [
+        "بِسۡمِ",
+        "ٱللَّهِ",
+        "ٱلرَّحۡمَٰنِ",
+        "ٱلرَّحِيمِ"
+      ],
+      "q27_v30_tokens": [
+        "إِنَّهُۥ",
+        "مِن",
+        "سُلَيۡمَٰنَ",
+        "وَإِنَّهُۥ",
+        "بِسۡمِ",
+        "ٱللَّهِ",
+        "ٱلرَّحۡمَٰنِ",
+        "ٱلرَّحِيمِ"
+      ],
+      "q27_30_basmala_slice": [
+        "بِسۡمِ",
+        "ٱللَّهِ",
+        "ٱلرَّحۡمَٰنِ",
+        "ٱلرَّحِيمِ"
+      ],
+      "bism_token_index_in_q27_30": 5,
+      "match_exact_byte_for_byte": true,
+      "match_after_diacritic_strip": true,
+      "token_levenshtein_exact": 0,
+      "token_levenshtein_stripped": 0
+    }
+  },
+  "tashkeel_diacritic_divergences": [],
+  "verdict_no_tashkeel": "CONFIRMED_LEXICAL_MATCH_NO_TASHKEEL"
+}

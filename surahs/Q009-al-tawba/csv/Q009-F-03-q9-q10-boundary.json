@@ -1,0 +1,114 @@
+{
+  "finding_id": "Q009-F-03",
+  "prereg_sha": "a3f04af0f84584cbda89a983e5ad1bb30f4b825ce2e9a435c4d6ec1140ad4842",
+  "source": "findings/phase-b-hypotheses/csv/h-new-720.json",
+  "Q9_Q10_adjacency": {
+    "pair": [
+      9,
+      10
+    ],
+    "fraction_residual": 0.03730707054482234,
+    "rank": 4
+  },
+  "Q8_Q9_adjacency": {
+    "pair": [
+      8,
+      9
+    ],
+    "fraction_residual": 0.007385203401793681,
+    "rank": 58
+  },
+  "Q6_Q7_adjacency_control": {
+    "pair": [
+      6,
+      7
+    ],
+    "fraction_residual": 0.0,
+    "rank": 103,
+    "note": "Q7 al-Aʿrāf starts with المص muqaṭṭaʿāt cluster (singleton); compare to Q9-Q10 (Q10-15 ALR cluster start)"
+  },
+  "top_10_expensive_adjacencies": [
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "fraction_residual": 0.07495238639601703,
+      "rank": 1
+    },
+    {
+      "pair": [
+        32,
+        33
+      ],
+      "fraction_residual": 0.04379076880924653,
+      "rank": 2
+    },
+    {
+      "pair": [
+        33,
+        34
+      ],
+      "fraction_residual": 0.03992404011287633,
+      "rank": 3
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "fraction_residual": 0.03730707054482234,
+      "rank": 4
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "fraction_residual": 0.03492476242639902,
+      "rank": 5
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "fraction_residual": 0.03129595101676299,
+      "rank": 6
+    },
+    {
+      "pair": [
+        42,
+        43
+      ],
+      "fraction_residual": 0.02841972034047632,
+      "rank": 7
+    },
+    {
+      "pair": [
+        56,
+        57
+      ],
+      "fraction_residual": 0.027415837211988738,
+      "rank": 8
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "fraction_residual": 0.02602450945989564,
+      "rank": 9
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "fraction_residual": 0.025565677591563328,
+      "rank": 10
+    }
+  ],
+  "verdict": "VINDICATED",
+  "rationale": "Q9-Q10 fraction_residual = 0.0373 (rank 4/113); top-10 ⇒ VINDICATED."
+}

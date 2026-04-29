@@ -1,0 +1,835 @@
+{
+  "id": "H-NEW-96.2",
+  "title": "Rhyme-feature predictor for muqaṭṭaʿāt letter-set identity",
+  "seed": 20260417,
+  "parent_baseline": "H-NEW-88",
+  "parent_baseline_top1": 0.4138,
+  "parent_extension_null": "H-NEW-96",
+  "data_anchor": "H-NEW-139",
+  "n_surahs": 29,
+  "n_classes": 14,
+  "n_features": 14,
+  "muq_letters": [
+    "ا",
+    "ل",
+    "م",
+    "ر",
+    "ص",
+    "ك",
+    "ه",
+    "ي",
+    "ع",
+    "ط",
+    "س",
+    "ح",
+    "ن",
+    "ق"
+  ],
+  "muq_assignments": {
+    "2": "ALM",
+    "3": "ALM",
+    "29": "ALM",
+    "30": "ALM",
+    "31": "ALM",
+    "32": "ALM",
+    "7": "ALMS",
+    "10": "ALR",
+    "11": "ALR",
+    "12": "ALR",
+    "14": "ALR",
+    "15": "ALR",
+    "13": "ALMR",
+    "19": "KHYAS",
+    "20": "TH",
+    "26": "TSM",
+    "28": "TSM",
+    "27": "TS",
+    "36": "YS",
+    "38": "S",
+    "40": "HM",
+    "41": "HM",
+    "43": "HM",
+    "44": "HM",
+    "45": "HM",
+    "46": "HM",
+    "42": "HMASQ",
+    "50": "Q",
+    "68": "N"
+  },
+  "observed_top3_per_surah": {
+    "2": [
+      "ر",
+      "م",
+      "ن"
+    ],
+    "3": [
+      "ر",
+      "م",
+      "ن"
+    ],
+    "7": [
+      "ل",
+      "م",
+      "ن"
+    ],
+    "10": [
+      "ل",
+      "م",
+      "ن"
+    ],
+    "11": [
+      "ب",
+      "د",
+      "ن"
+    ],
+    "12": [
+      "ر",
+      "م",
+      "ن"
+    ],
+    "13": [
+      "ب",
+      "ر",
+      "ل"
+    ],
+    "14": [
+      "د",
+      "ر",
+      "م"
+    ],
+    "15": [
+      "ل",
+      "م",
+      "ن"
+    ],
+    "19": [
+      "ا",
+      "م",
+      "ن"
+    ],
+    "20": [
+      "ا",
+      "ى",
+      "ي"
+    ],
+    "26": [
+      "ل",
+      "م",
+      "ن"
+    ],
+    "27": [
+      "م",
+      "ن",
+      "۩"
+    ],
+    "28": [
+      "ر",
+      "ل",
+      "ن"
+    ],
+    "29": [
+      "ر",
+      "م",
+      "ن"
+    ],
+    "30": [
+      "ر",
+      "م",
+      "ن"
+    ],
+    "31": [
+      "ر",
+      "م",
+      "ن"
+    ],
+    "32": [
+      "ل",
+      "م",
+      "ن"
+    ],
+    "36": [
+      "م",
+      "ن"
+    ],
+    "38": [
+      "ب",
+      "ر",
+      "ن"
+    ],
+    "40": [
+      "ب",
+      "ر",
+      "ن"
+    ],
+    "41": [
+      "د",
+      "م",
+      "ن"
+    ],
+    "42": [
+      "ر",
+      "م",
+      "ن"
+    ],
+    "43": [
+      "ل",
+      "م",
+      "ن"
+    ],
+    "44": [
+      "م",
+      "ن"
+    ],
+    "45": [
+      "م",
+      "ن"
+    ],
+    "46": [
+      "ر",
+      "م",
+      "ن"
+    ],
+    "50": [
+      "ب",
+      "ج",
+      "د"
+    ],
+    "68": [
+      "م",
+      "ن"
+    ]
+  },
+  "hnew139_sanity_mismatches": 0,
+  "mw5_positive_control_top1": 0.5172413793103449,
+  "baseline_uniform_chance": 0.07142857142857142,
+  "baseline_majority_class": "ALM",
+  "baseline_majority_accuracy": 0.20689655172413793,
+  "results_by_classifier": {
+    "rf": {
+      "loocv_top1": 0.3103448275862069,
+      "loocv_top3": 0.3448275862068966,
+      "loocv_top5": 0.4482758620689655,
+      "per_class_recall": {
+        "ALM": 0.8333333333333334,
+        "ALMR": 0.0,
+        "ALMS": 0.0,
+        "ALR": 0.2,
+        "HM": 0.5,
+        "HMASQ": 0.0,
+        "KHYAS": 0.0,
+        "N": 0.0,
+        "Q": 0.0,
+        "S": 0.0,
+        "TH": 0.0,
+        "TS": 0.0,
+        "TSM": 0.0,
+        "YS": 0.0
+      },
+      "per_singleton_results": {
+        "19": {
+          "true": "KHYAS",
+          "pred": "HM",
+          "correct": false
+        },
+        "20": {
+          "true": "TH",
+          "pred": "Q",
+          "correct": false
+        },
+        "27": {
+          "true": "TS",
+          "pred": "HM",
+          "correct": false
+        },
+        "36": {
+          "true": "YS",
+          "pred": "HM",
+          "correct": false
+        },
+        "38": {
+          "true": "S",
+          "pred": "HM",
+          "correct": false
+        },
+        "42": {
+          "true": "HMASQ",
+          "pred": "ALM",
+          "correct": false
+        },
+        "50": {
+          "true": "Q",
+          "pred": "ALR",
+          "correct": false
+        },
+        "68": {
+          "true": "N",
+          "pred": "HM",
+          "correct": false
+        }
+      },
+      "n_singleton_hits": 0,
+      "permutation_null": {
+        "observed_top1": 0.3103448275862069,
+        "null_mean": 0.12406896551724138,
+        "null_std": 0.08467884351969819,
+        "null_q95": 0.27586206896551724,
+        "null_max": 0.41379310344827586,
+        "n_perm": 1000,
+        "p_value": 0.03596403596403597
+      },
+      "feature_importance": [
+        {
+          "letter": "ر",
+          "importance": 0.24513823790199865
+        },
+        {
+          "letter": "م",
+          "importance": 0.22837978876096623
+        },
+        {
+          "letter": "ل",
+          "importance": 0.2113411423232051
+        },
+        {
+          "letter": "ن",
+          "importance": 0.17257044954514864
+        },
+        {
+          "letter": "ا",
+          "importance": 0.10690684281427677
+        },
+        {
+          "letter": "ي",
+          "importance": 0.03566353865440463
+        },
+        {
+          "letter": "ص",
+          "importance": 0.0
+        },
+        {
+          "letter": "ك",
+          "importance": 0.0
+        },
+        {
+          "letter": "ه",
+          "importance": 0.0
+        },
+        {
+          "letter": "ع",
+          "importance": 0.0
+        },
+        {
+          "letter": "ط",
+          "importance": 0.0
+        },
+        {
+          "letter": "س",
+          "importance": 0.0
+        },
+        {
+          "letter": "ح",
+          "importance": 0.0
+        },
+        {
+          "letter": "ق",
+          "importance": 0.0
+        }
+      ],
+      "per_surah_predictions": [
+        {
+          "surah": 2,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 3,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 7,
+          "true_set": "ALMS",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 10,
+          "true_set": "ALR",
+          "pred_set": "ALMS",
+          "correct": false
+        },
+        {
+          "surah": 11,
+          "true_set": "ALR",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 12,
+          "true_set": "ALR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 13,
+          "true_set": "ALMR",
+          "pred_set": "TSM",
+          "correct": false
+        },
+        {
+          "surah": 14,
+          "true_set": "ALR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 15,
+          "true_set": "ALR",
+          "pred_set": "ALR",
+          "correct": true
+        },
+        {
+          "surah": 19,
+          "true_set": "KHYAS",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 20,
+          "true_set": "TH",
+          "pred_set": "Q",
+          "correct": false
+        },
+        {
+          "surah": 26,
+          "true_set": "TSM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 27,
+          "true_set": "TS",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 28,
+          "true_set": "TSM",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 29,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 30,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 31,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 32,
+          "true_set": "ALM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 36,
+          "true_set": "YS",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 38,
+          "true_set": "S",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 40,
+          "true_set": "HM",
+          "pred_set": "S",
+          "correct": false
+        },
+        {
+          "surah": 41,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 42,
+          "true_set": "HMASQ",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 43,
+          "true_set": "HM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 44,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 45,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 46,
+          "true_set": "HM",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 50,
+          "true_set": "Q",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 68,
+          "true_set": "N",
+          "pred_set": "HM",
+          "correct": false
+        }
+      ]
+    },
+    "logistic": {
+      "loocv_top1": 0.27586206896551724,
+      "loocv_top3": 0.3103448275862069,
+      "loocv_top5": 0.4827586206896552,
+      "per_class_recall": {
+        "ALM": 0.8333333333333334,
+        "ALMR": 0.0,
+        "ALMS": 0.0,
+        "ALR": 0.0,
+        "HM": 0.5,
+        "HMASQ": 0.0,
+        "KHYAS": 0.0,
+        "N": 0.0,
+        "Q": 0.0,
+        "S": 0.0,
+        "TH": 0.0,
+        "TS": 0.0,
+        "TSM": 0.0,
+        "YS": 0.0
+      },
+      "per_singleton_results": {
+        "19": {
+          "true": "KHYAS",
+          "pred": "HM",
+          "correct": false
+        },
+        "20": {
+          "true": "TH",
+          "pred": "KHYAS",
+          "correct": false
+        },
+        "27": {
+          "true": "TS",
+          "pred": "HM",
+          "correct": false
+        },
+        "36": {
+          "true": "YS",
+          "pred": "HM",
+          "correct": false
+        },
+        "38": {
+          "true": "S",
+          "pred": "HM",
+          "correct": false
+        },
+        "42": {
+          "true": "HMASQ",
+          "pred": "ALM",
+          "correct": false
+        },
+        "50": {
+          "true": "Q",
+          "pred": "ALR",
+          "correct": false
+        },
+        "68": {
+          "true": "N",
+          "pred": "HM",
+          "correct": false
+        }
+      },
+      "n_singleton_hits": 0,
+      "permutation_null": {
+        "observed_top1": 0.27586206896551724,
+        "null_mean": 0.13513793103448277,
+        "null_std": 0.09023973223959061,
+        "null_q95": 0.27758620689655017,
+        "null_max": 0.41379310344827586,
+        "n_perm": 1000,
+        "p_value": 0.0969030969030969
+      },
+      "feature_importance": [
+        {
+          "letter": "ل",
+          "importance": 0.38668632889608423
+        },
+        {
+          "letter": "ر",
+          "importance": 0.38581920610379733
+        },
+        {
+          "letter": "م",
+          "importance": 0.3623195670003506
+        },
+        {
+          "letter": "ن",
+          "importance": 0.33629903524801624
+        },
+        {
+          "letter": "ا",
+          "importance": 0.21570971321926188
+        },
+        {
+          "letter": "ي",
+          "importance": 0.09910358665002734
+        },
+        {
+          "letter": "ص",
+          "importance": 0.0
+        },
+        {
+          "letter": "ك",
+          "importance": 0.0
+        },
+        {
+          "letter": "ه",
+          "importance": 0.0
+        },
+        {
+          "letter": "ع",
+          "importance": 0.0
+        },
+        {
+          "letter": "ط",
+          "importance": 0.0
+        },
+        {
+          "letter": "س",
+          "importance": 0.0
+        },
+        {
+          "letter": "ح",
+          "importance": 0.0
+        },
+        {
+          "letter": "ق",
+          "importance": 0.0
+        }
+      ],
+      "per_surah_predictions": [
+        {
+          "surah": 2,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 3,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 7,
+          "true_set": "ALMS",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 10,
+          "true_set": "ALR",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 11,
+          "true_set": "ALR",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 12,
+          "true_set": "ALR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 13,
+          "true_set": "ALMR",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 14,
+          "true_set": "ALR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 15,
+          "true_set": "ALR",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 19,
+          "true_set": "KHYAS",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 20,
+          "true_set": "TH",
+          "pred_set": "KHYAS",
+          "correct": false
+        },
+        {
+          "surah": 26,
+          "true_set": "TSM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 27,
+          "true_set": "TS",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 28,
+          "true_set": "TSM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 29,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 30,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 31,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 32,
+          "true_set": "ALM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 36,
+          "true_set": "YS",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 38,
+          "true_set": "S",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 40,
+          "true_set": "HM",
+          "pred_set": "S",
+          "correct": false
+        },
+        {
+          "surah": 41,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 42,
+          "true_set": "HMASQ",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 43,
+          "true_set": "HM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 44,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 45,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 46,
+          "true_set": "HM",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 50,
+          "true_set": "Q",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 68,
+          "true_set": "N",
+          "pred_set": "HM",
+          "correct": false
+        }
+      ]
+    }
+  },
+  "verdict": "NULL",
+  "verdict_criteria": {
+    "pass_primary_threshold": "top-1 > 0.4138 AND perm p < 0.025",
+    "pass_strong_threshold": "top-1 > 0.50 AND perm p < 0.025",
+    "oq1_progress_threshold": ">= 1 of 8 singletons correctly predicted",
+    "pass_primary_met": false,
+    "pass_strong_met": false,
+    "oq1_progress_met": false
+  },
+  "bonferroni_family": "h-new-96-2-rhyme-predictor",
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025
+}

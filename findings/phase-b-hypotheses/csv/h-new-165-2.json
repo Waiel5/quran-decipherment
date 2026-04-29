@@ -1,0 +1,2596 @@
+{
+  "id": "H-NEW-165.2",
+  "title": "Phonological codebook sensitivity sweep for the OQ-1 muq predictor",
+  "seed": 20260419,
+  "n_perm": 1000,
+  "parents": [
+    "H-NEW-165",
+    "H-NEW-232"
+  ],
+  "baseline_reference": {
+    "h_new_165_rf_top1": 0.6551724137931034,
+    "h_new_232_singleton_matches": 8,
+    "h_new_88_top1": 0.4138
+  },
+  "thresholds": {
+    "alpha_bon": 0.025,
+    "primary_threshold": 0.5,
+    "primary_preserved_threshold": 0.6206896551724138,
+    "singleton_threshold_matches": 7
+  },
+  "codebook_specs": [
+    {
+      "id": "baseline_h165_locked",
+      "label": "Baseline locked H-165 codebook",
+      "voice_set": [
+        "ا",
+        "ر",
+        "ط",
+        "ع",
+        "ل",
+        "م",
+        "ن",
+        "ي"
+      ],
+      "pharyngeal_set": [
+        "ح",
+        "ص",
+        "ط",
+        "ع",
+        "ق"
+      ],
+      "makhraj_overrides": {}
+    },
+    {
+      "id": "watson_modern_voice",
+      "label": "Watson-style modern voice recode",
+      "voice_set": [
+        "ا",
+        "ر",
+        "ع",
+        "ل",
+        "م",
+        "ن",
+        "ي"
+      ],
+      "pharyngeal_set": [
+        "ح",
+        "ص",
+        "ط",
+        "ع",
+        "ق"
+      ],
+      "makhraj_overrides": {}
+    },
+    {
+      "id": "strict_pharyngeal_split",
+      "label": "Strict throat-only pharyngeal recode",
+      "voice_set": [
+        "ا",
+        "ر",
+        "ط",
+        "ع",
+        "ل",
+        "م",
+        "ن",
+        "ي"
+      ],
+      "pharyngeal_set": [
+        "ح",
+        "ع"
+      ],
+      "makhraj_overrides": {}
+    },
+    {
+      "id": "holes_glottal_ha_ayn",
+      "label": "Holes-style ha/ayn glottal makhraj recode",
+      "voice_set": [
+        "ا",
+        "ر",
+        "ط",
+        "ع",
+        "ل",
+        "م",
+        "ن",
+        "ي"
+      ],
+      "pharyngeal_set": [
+        "ح",
+        "ص",
+        "ط",
+        "ع",
+        "ق"
+      ],
+      "makhraj_overrides": {
+        "ح": 8,
+        "ع": 8
+      }
+    }
+  ],
+  "variants": [
+    {
+      "id": "baseline_h165_locked",
+      "label": "Baseline locked H-165 codebook",
+      "codebook_spec": {
+        "voice_set": [
+          "ا",
+          "ر",
+          "ط",
+          "ع",
+          "ل",
+          "م",
+          "ن",
+          "ي"
+        ],
+        "pharyngeal_set": [
+          "ح",
+          "ص",
+          "ط",
+          "ع",
+          "ق"
+        ],
+        "makhraj_overrides": {}
+      },
+      "feature_names": [
+        "mean_makhraj",
+        "mean_voice",
+        "mean_manner",
+        "mean_emphatic",
+        "mean_pharyngeal",
+        "mean_sonorant",
+        "mean_continuant",
+        "mean_idhlaq",
+        "mean_vowel_carrier",
+        "letter_count",
+        "frac_emphatic",
+        "frac_pharyngeal",
+        "frac_sonorant",
+        "frac_idhlaq",
+        "has_qalqala"
+      ],
+      "letter_features": {
+        "ا": {
+          "makhraj": 8.0,
+          "voice": 1.0,
+          "manner": 0.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 1.0
+        },
+        "ح": {
+          "makhraj": 7.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ر": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 6.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "س": {
+          "makhraj": 3.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ص": {
+          "makhraj": 3.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 1.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ط": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 1.0,
+          "emphatic": 1.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ع": {
+          "makhraj": 7.0,
+          "voice": 1.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ق": {
+          "makhraj": 6.0,
+          "voice": 0.0,
+          "manner": 1.0,
+          "emphatic": 1.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ك": {
+          "makhraj": 5.0,
+          "voice": 0.0,
+          "manner": 1.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ل": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 4.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "م": {
+          "makhraj": 1.0,
+          "voice": 1.0,
+          "manner": 5.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "ن": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 5.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "ه": {
+          "makhraj": 8.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ي": {
+          "makhraj": 4.0,
+          "voice": 1.0,
+          "manner": 3.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 1.0
+        }
+      },
+      "mw5_cheat_surah_id_top1": 0.5172413793103449,
+      "classifier_results": {
+        "rf": {
+          "top1": 0.6551724137931034,
+          "top3": 0.6551724137931034,
+          "top5": 0.6551724137931034,
+          "per_class_recall": {
+            "ALM": 1.0,
+            "ALMR": 0.0,
+            "ALMS": 0.0,
+            "ALR": 1.0,
+            "HM": 1.0,
+            "HMASQ": 0.0,
+            "KHYAS": 0.0,
+            "N": 0.0,
+            "Q": 0.0,
+            "S": 0.0,
+            "TH": 0.0,
+            "TS": 0.0,
+            "TSM": 1.0,
+            "YS": 0.0
+          },
+          "singleton_task_hits": 0,
+          "singleton_task_results": {
+            "19": {
+              "true": "KHYAS",
+              "pred": "HMASQ",
+              "correct": false
+            },
+            "20": {
+              "true": "TH",
+              "pred": "TS",
+              "correct": false
+            },
+            "27": {
+              "true": "TS",
+              "pred": "TH",
+              "correct": false
+            },
+            "36": {
+              "true": "YS",
+              "pred": "ALM",
+              "correct": false
+            },
+            "38": {
+              "true": "S",
+              "pred": "Q",
+              "correct": false
+            },
+            "42": {
+              "true": "HMASQ",
+              "pred": "KHYAS",
+              "correct": false
+            },
+            "50": {
+              "true": "Q",
+              "pred": "TH",
+              "correct": false
+            },
+            "68": {
+              "true": "N",
+              "pred": "ALMR",
+              "correct": false
+            }
+          },
+          "permutation_null": {
+            "n_perm": 1000,
+            "observed_top1": 0.6551724137931034,
+            "p_value_primary": 0.000999000999000999,
+            "p_value_singleton_hit": 0.000999000999000999,
+            "null_mean": 0.11406896551724137,
+            "null_std": 0.07760640350156092,
+            "null_q95": 0.2413793103448276,
+            "null_q99": 0.3103448275862069,
+            "null_max": 0.41379310344827586,
+            "ge_count": 0,
+            "singleton_hit_ge1_count": 0
+          }
+        },
+        "logistic": {
+          "top1": 0.6551724137931034,
+          "top3": 0.6551724137931034,
+          "top5": 0.6551724137931034,
+          "per_class_recall": {
+            "ALM": 1.0,
+            "ALMR": 0.0,
+            "ALMS": 0.0,
+            "ALR": 1.0,
+            "HM": 1.0,
+            "HMASQ": 0.0,
+            "KHYAS": 0.0,
+            "N": 0.0,
+            "Q": 0.0,
+            "S": 0.0,
+            "TH": 0.0,
+            "TS": 0.0,
+            "TSM": 1.0,
+            "YS": 0.0
+          },
+          "singleton_task_hits": 0,
+          "singleton_task_results": {
+            "19": {
+              "true": "KHYAS",
+              "pred": "HMASQ",
+              "correct": false
+            },
+            "20": {
+              "true": "TH",
+              "pred": "TS",
+              "correct": false
+            },
+            "27": {
+              "true": "TS",
+              "pred": "TSM",
+              "correct": false
+            },
+            "36": {
+              "true": "YS",
+              "pred": "ALM",
+              "correct": false
+            },
+            "38": {
+              "true": "S",
+              "pred": "TS",
+              "correct": false
+            },
+            "42": {
+              "true": "HMASQ",
+              "pred": "KHYAS",
+              "correct": false
+            },
+            "50": {
+              "true": "Q",
+              "pred": "TH",
+              "correct": false
+            },
+            "68": {
+              "true": "N",
+              "pred": "HM",
+              "correct": false
+            }
+          }
+        }
+      },
+      "singleton_geometry": {
+        "matches": 8,
+        "rows": [
+          {
+            "surah": 7,
+            "truth_set": "ALMS",
+            "nearest_multi_surah": 2,
+            "nearest_multi_cluster": "ALM",
+            "nearest_centroid_cluster": "ALM",
+            "nearest_centroid_distance": 5.2312094363534944,
+            "distances_to_centroids": {
+              "ALM": 5.2312094363534944,
+              "ALR": 5.7394880648385005,
+              "HM": 6.750482521113411,
+              "TSM": 6.628927340701245
+            },
+            "accepted_clusters": [
+              "ALM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 13,
+            "truth_set": "ALMR",
+            "nearest_multi_surah": 10,
+            "nearest_multi_cluster": "ALR",
+            "nearest_centroid_cluster": "ALR",
+            "nearest_centroid_distance": 3.2128230681632926,
+            "distances_to_centroids": {
+              "ALM": 3.683594925955326,
+              "ALR": 3.2128230681632926,
+              "HM": 7.239741718770697,
+              "TSM": 10.738951910551835
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": true
+          },
+          {
+            "surah": 19,
+            "truth_set": "KHYAS",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 9.161734055474817,
+            "distances_to_centroids": {
+              "ALM": 12.17977128368239,
+              "ALR": 12.456557382797694,
+              "HM": 11.459097308256661,
+              "TSM": 9.161734055474817
+            },
+            "accepted_clusters": [
+              "HM",
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 20,
+            "truth_set": "TH",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 8.779170242972677,
+            "distances_to_centroids": {
+              "ALM": 15.396662330459801,
+              "ALR": 15.746805874078678,
+              "HM": 13.661900165659237,
+              "TSM": 8.779170242972677
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 27,
+            "truth_set": "TS",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 7.325511304296968,
+            "distances_to_centroids": {
+              "ALM": 15.297177500755765,
+              "ALR": 15.907582498613813,
+              "HM": 13.549684302885748,
+              "TSM": 7.325511304296968
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 36,
+            "truth_set": "YS",
+            "nearest_multi_surah": 40,
+            "nearest_multi_cluster": "HM",
+            "nearest_centroid_cluster": "HM",
+            "nearest_centroid_distance": 8.46065804256435,
+            "distances_to_centroids": {
+              "ALM": 9.519865556354281,
+              "ALR": 9.961124417074306,
+              "HM": 8.46065804256435,
+              "TSM": 9.102435064854541
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": false
+          },
+          {
+            "surah": 38,
+            "truth_set": "S",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 13.305539559364918,
+            "distances_to_centroids": {
+              "ALM": 19.552758709027227,
+              "ALR": 19.92351648928222,
+              "HM": 16.968730741469848,
+              "TSM": 13.305539559364918
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 42,
+            "truth_set": "HMASQ",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 6.8318884713623005,
+            "distances_to_centroids": {
+              "ALM": 11.077694735510837,
+              "ALR": 11.311917407730453,
+              "HM": 9.920234570143094,
+              "TSM": 6.8318884713623005
+            },
+            "accepted_clusters": [
+              "HM"
+            ],
+            "match": false
+          },
+          {
+            "surah": 50,
+            "truth_set": "Q",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 16.152698133990633,
+            "distances_to_centroids": {
+              "ALM": 23.14126320683657,
+              "ALR": 23.43513560858036,
+              "HM": 21.316184661826767,
+              "TSM": 16.152698133990633
+            },
+            "accepted_clusters": [
+              "HM",
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 68,
+            "truth_set": "N",
+            "nearest_multi_surah": 10,
+            "nearest_multi_cluster": "ALR",
+            "nearest_centroid_cluster": "ALR",
+            "nearest_centroid_distance": 9.141121850273667,
+            "distances_to_centroids": {
+              "ALM": 9.766903515863374,
+              "ALR": 9.141121850273667,
+              "HM": 9.839724382200961,
+              "TSM": 14.900099586217916
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": true
+          }
+        ],
+        "centroids": {
+          "ALM": [
+            0.0,
+            0.83510858,
+            -0.76587078,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.34299717,
+            0.77615053,
+            0.85280287,
+            0.67936622,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.77615053,
+            -0.34299717
+          ],
+          "ALR": [
+            1.04197614,
+            0.83510858,
+            0.44675795,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.34299717,
+            0.77615053,
+            0.85280287,
+            0.67936622,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.77615053,
+            -0.34299717
+          ],
+          "HM": [
+            0.0,
+            -1.32858183,
+            1.05307232,
+            -0.34299717,
+            1.32858183,
+            -1.00156454,
+            0.34299717,
+            -0.69853547,
+            -1.17260394,
+            -1.47196014,
+            -0.34299717,
+            1.32858183,
+            -1.00156454,
+            -0.69853547,
+            -0.34299717
+          ],
+          "TSM": [
+            -2.60494036,
+            -0.60735169,
+            -1.9784995,
+            2.91547595,
+            0.60735169,
+            -1.61542667,
+            -2.91547595,
+            -2.17322147,
+            -1.17260394,
+            0.67936622,
+            2.91547595,
+            0.60735169,
+            -1.61542667,
+            -2.17322147,
+            2.91547595
+          ]
+        },
+        "permutation_null": {
+          "observed_matches": 8,
+          "p_value": 0.024975024975024976,
+          "null_mean": 3.662,
+          "null_std": 1.9944312472481973,
+          "null_q95": 7.0,
+          "null_q99": 8.0,
+          "null_max": 9,
+          "ge_count": 24
+        }
+      },
+      "variant_flags": {
+        "primary_retained": true,
+        "primary_preserved": true,
+        "collapsed_below_h88": false,
+        "singleton_retained": true,
+        "singleton_degraded": false
+      },
+      "variant_verdict": "PRESERVED-BOTH"
+    },
+    {
+      "id": "watson_modern_voice",
+      "label": "Watson-style modern voice recode",
+      "codebook_spec": {
+        "voice_set": [
+          "ا",
+          "ر",
+          "ع",
+          "ل",
+          "م",
+          "ن",
+          "ي"
+        ],
+        "pharyngeal_set": [
+          "ح",
+          "ص",
+          "ط",
+          "ع",
+          "ق"
+        ],
+        "makhraj_overrides": {}
+      },
+      "feature_names": [
+        "mean_makhraj",
+        "mean_voice",
+        "mean_manner",
+        "mean_emphatic",
+        "mean_pharyngeal",
+        "mean_sonorant",
+        "mean_continuant",
+        "mean_idhlaq",
+        "mean_vowel_carrier",
+        "letter_count",
+        "frac_emphatic",
+        "frac_pharyngeal",
+        "frac_sonorant",
+        "frac_idhlaq",
+        "has_qalqala"
+      ],
+      "letter_features": {
+        "ا": {
+          "makhraj": 8.0,
+          "voice": 1.0,
+          "manner": 0.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 1.0
+        },
+        "ح": {
+          "makhraj": 7.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ر": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 6.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "س": {
+          "makhraj": 3.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ص": {
+          "makhraj": 3.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 1.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ط": {
+          "makhraj": 3.0,
+          "voice": 0.0,
+          "manner": 1.0,
+          "emphatic": 1.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ع": {
+          "makhraj": 7.0,
+          "voice": 1.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ق": {
+          "makhraj": 6.0,
+          "voice": 0.0,
+          "manner": 1.0,
+          "emphatic": 1.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ك": {
+          "makhraj": 5.0,
+          "voice": 0.0,
+          "manner": 1.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ل": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 4.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "م": {
+          "makhraj": 1.0,
+          "voice": 1.0,
+          "manner": 5.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "ن": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 5.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "ه": {
+          "makhraj": 8.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ي": {
+          "makhraj": 4.0,
+          "voice": 1.0,
+          "manner": 3.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 1.0
+        }
+      },
+      "mw5_cheat_surah_id_top1": 0.5172413793103449,
+      "classifier_results": {
+        "rf": {
+          "top1": 0.6551724137931034,
+          "top3": 0.6551724137931034,
+          "top5": 0.6551724137931034,
+          "per_class_recall": {
+            "ALM": 1.0,
+            "ALMR": 0.0,
+            "ALMS": 0.0,
+            "ALR": 1.0,
+            "HM": 1.0,
+            "HMASQ": 0.0,
+            "KHYAS": 0.0,
+            "N": 0.0,
+            "Q": 0.0,
+            "S": 0.0,
+            "TH": 0.0,
+            "TS": 0.0,
+            "TSM": 1.0,
+            "YS": 0.0
+          },
+          "singleton_task_hits": 0,
+          "singleton_task_results": {
+            "19": {
+              "true": "KHYAS",
+              "pred": "HMASQ",
+              "correct": false
+            },
+            "20": {
+              "true": "TH",
+              "pred": "TS",
+              "correct": false
+            },
+            "27": {
+              "true": "TS",
+              "pred": "TH",
+              "correct": false
+            },
+            "36": {
+              "true": "YS",
+              "pred": "ALM",
+              "correct": false
+            },
+            "38": {
+              "true": "S",
+              "pred": "Q",
+              "correct": false
+            },
+            "42": {
+              "true": "HMASQ",
+              "pred": "KHYAS",
+              "correct": false
+            },
+            "50": {
+              "true": "Q",
+              "pred": "TH",
+              "correct": false
+            },
+            "68": {
+              "true": "N",
+              "pred": "ALMR",
+              "correct": false
+            }
+          },
+          "permutation_null": {
+            "n_perm": 1000,
+            "observed_top1": 0.6551724137931034,
+            "p_value_primary": 0.000999000999000999,
+            "p_value_singleton_hit": 0.000999000999000999,
+            "null_mean": 0.11455172413793104,
+            "null_std": 0.07790597705185578,
+            "null_q95": 0.2413793103448276,
+            "null_q99": 0.3103448275862069,
+            "null_max": 0.41379310344827586,
+            "ge_count": 0,
+            "singleton_hit_ge1_count": 0
+          }
+        },
+        "logistic": {
+          "top1": 0.6551724137931034,
+          "top3": 0.6551724137931034,
+          "top5": 0.6551724137931034,
+          "per_class_recall": {
+            "ALM": 1.0,
+            "ALMR": 0.0,
+            "ALMS": 0.0,
+            "ALR": 1.0,
+            "HM": 1.0,
+            "HMASQ": 0.0,
+            "KHYAS": 0.0,
+            "N": 0.0,
+            "Q": 0.0,
+            "S": 0.0,
+            "TH": 0.0,
+            "TS": 0.0,
+            "TSM": 1.0,
+            "YS": 0.0
+          },
+          "singleton_task_hits": 0,
+          "singleton_task_results": {
+            "19": {
+              "true": "KHYAS",
+              "pred": "HMASQ",
+              "correct": false
+            },
+            "20": {
+              "true": "TH",
+              "pred": "TS",
+              "correct": false
+            },
+            "27": {
+              "true": "TS",
+              "pred": "TSM",
+              "correct": false
+            },
+            "36": {
+              "true": "YS",
+              "pred": "ALM",
+              "correct": false
+            },
+            "38": {
+              "true": "S",
+              "pred": "TS",
+              "correct": false
+            },
+            "42": {
+              "true": "HMASQ",
+              "pred": "KHYAS",
+              "correct": false
+            },
+            "50": {
+              "true": "Q",
+              "pred": "TH",
+              "correct": false
+            },
+            "68": {
+              "true": "N",
+              "pred": "HM",
+              "correct": false
+            }
+          }
+        }
+      },
+      "singleton_geometry": {
+        "matches": 8,
+        "rows": [
+          {
+            "surah": 7,
+            "truth_set": "ALMS",
+            "nearest_multi_surah": 2,
+            "nearest_multi_cluster": "ALM",
+            "nearest_centroid_cluster": "ALM",
+            "nearest_centroid_distance": 5.200290688342667,
+            "distances_to_centroids": {
+              "ALM": 5.200290688342667,
+              "ALR": 5.711321591601474,
+              "HM": 6.726550776150232,
+              "TSM": 6.794689211085711
+            },
+            "accepted_clusters": [
+              "ALM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 13,
+            "truth_set": "ALMR",
+            "nearest_multi_surah": 10,
+            "nearest_multi_cluster": "ALR",
+            "nearest_centroid_cluster": "ALR",
+            "nearest_centroid_distance": 3.2128230681632926,
+            "distances_to_centroids": {
+              "ALM": 3.683594925955326,
+              "ALR": 3.2128230681632926,
+              "HM": 7.150087024616365,
+              "TSM": 10.921246451385706
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": true
+          },
+          {
+            "surah": 19,
+            "truth_set": "KHYAS",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 9.092085598339047,
+            "distances_to_centroids": {
+              "ALM": 12.10326658064372,
+              "ALR": 12.381763009775492,
+              "HM": 11.456845398812808,
+              "TSM": 9.092085598339047
+            },
+            "accepted_clusters": [
+              "HM",
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 20,
+            "truth_set": "TH",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 8.835211606621934,
+            "distances_to_centroids": {
+              "ALM": 15.682519463606917,
+              "ALR": 16.026418846521164,
+              "HM": 13.785461785427563,
+              "TSM": 8.835211606621934
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 27,
+            "truth_set": "TS",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 7.392580729898907,
+            "distances_to_centroids": {
+              "ALM": 15.584859489191372,
+              "ALR": 16.18441802346981,
+              "HM": 13.674259951050816,
+              "TSM": 7.392580729898907
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 36,
+            "truth_set": "YS",
+            "nearest_multi_surah": 40,
+            "nearest_multi_cluster": "HM",
+            "nearest_centroid_cluster": "HM",
+            "nearest_centroid_distance": 8.46065804256435,
+            "distances_to_centroids": {
+              "ALM": 9.451863547266171,
+              "ALR": 9.89615500876539,
+              "HM": 8.46065804256435,
+              "TSM": 9.094557599002211
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": false
+          },
+          {
+            "surah": 38,
+            "truth_set": "S",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 13.046912404265326,
+            "distances_to_centroids": {
+              "ALM": 19.420347843273916,
+              "ALR": 19.793585994433002,
+              "HM": 16.930673562548606,
+              "TSM": 13.046912404265326
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 42,
+            "truth_set": "HMASQ",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 6.7382007768699195,
+            "distances_to_centroids": {
+              "ALM": 10.993523277479222,
+              "ALR": 11.229501718180916,
+              "HM": 9.917633250875195,
+              "TSM": 6.7382007768699195
+            },
+            "accepted_clusters": [
+              "HM"
+            ],
+            "match": false
+          },
+          {
+            "surah": 50,
+            "truth_set": "Q",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 15.940332409538144,
+            "distances_to_centroids": {
+              "ALM": 23.029494133141565,
+              "ALR": 23.32477477303618,
+              "HM": 21.28590173899563,
+              "TSM": 15.940332409538144
+            },
+            "accepted_clusters": [
+              "HM",
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 68,
+            "truth_set": "N",
+            "nearest_multi_surah": 10,
+            "nearest_multi_cluster": "ALR",
+            "nearest_centroid_cluster": "ALR",
+            "nearest_centroid_distance": 9.141121850273667,
+            "distances_to_centroids": {
+              "ALM": 9.766903515863374,
+              "ALR": 9.141121850273667,
+              "HM": 9.773948036630772,
+              "TSM": 15.032015952425388
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": true
+          }
+        ],
+        "centroids": {
+          "ALM": [
+            0.0,
+            0.84002187,
+            -0.76587078,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.34299717,
+            0.77615053,
+            0.85280287,
+            0.67936622,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.77615053,
+            -0.34299717
+          ],
+          "ALR": [
+            1.04197614,
+            0.84002187,
+            0.44675795,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.34299717,
+            0.77615053,
+            0.85280287,
+            0.67936622,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.77615053,
+            -0.34299717
+          ],
+          "HM": [
+            0.0,
+            -1.00156454,
+            1.05307232,
+            -0.34299717,
+            1.32858183,
+            -1.00156454,
+            0.34299717,
+            -0.69853547,
+            -1.17260394,
+            -1.47196014,
+            -0.34299717,
+            1.32858183,
+            -1.00156454,
+            -0.69853547,
+            -0.34299717
+          ],
+          "TSM": [
+            -2.60494036,
+            -1.61542667,
+            -1.9784995,
+            2.91547595,
+            0.60735169,
+            -1.61542667,
+            -2.91547595,
+            -2.17322147,
+            -1.17260394,
+            0.67936622,
+            2.91547595,
+            0.60735169,
+            -1.61542667,
+            -2.17322147,
+            2.91547595
+          ]
+        },
+        "permutation_null": {
+          "observed_matches": 8,
+          "p_value": 0.02197802197802198,
+          "null_mean": 3.629,
+          "null_std": 1.9827654929416136,
+          "null_q95": 7.0,
+          "null_q99": 8.0,
+          "null_max": 9,
+          "ge_count": 21
+        }
+      },
+      "variant_flags": {
+        "primary_retained": true,
+        "primary_preserved": true,
+        "collapsed_below_h88": false,
+        "singleton_retained": true,
+        "singleton_degraded": false
+      },
+      "variant_verdict": "PRESERVED-BOTH"
+    },
+    {
+      "id": "strict_pharyngeal_split",
+      "label": "Strict throat-only pharyngeal recode",
+      "codebook_spec": {
+        "voice_set": [
+          "ا",
+          "ر",
+          "ط",
+          "ع",
+          "ل",
+          "م",
+          "ن",
+          "ي"
+        ],
+        "pharyngeal_set": [
+          "ح",
+          "ع"
+        ],
+        "makhraj_overrides": {}
+      },
+      "feature_names": [
+        "mean_makhraj",
+        "mean_voice",
+        "mean_manner",
+        "mean_emphatic",
+        "mean_pharyngeal",
+        "mean_sonorant",
+        "mean_continuant",
+        "mean_idhlaq",
+        "mean_vowel_carrier",
+        "letter_count",
+        "frac_emphatic",
+        "frac_pharyngeal",
+        "frac_sonorant",
+        "frac_idhlaq",
+        "has_qalqala"
+      ],
+      "letter_features": {
+        "ا": {
+          "makhraj": 8.0,
+          "voice": 1.0,
+          "manner": 0.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 1.0
+        },
+        "ح": {
+          "makhraj": 7.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ر": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 6.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "س": {
+          "makhraj": 3.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ص": {
+          "makhraj": 3.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 1.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ط": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 1.0,
+          "emphatic": 1.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ع": {
+          "makhraj": 7.0,
+          "voice": 1.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ق": {
+          "makhraj": 6.0,
+          "voice": 0.0,
+          "manner": 1.0,
+          "emphatic": 1.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ك": {
+          "makhraj": 5.0,
+          "voice": 0.0,
+          "manner": 1.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ل": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 4.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "م": {
+          "makhraj": 1.0,
+          "voice": 1.0,
+          "manner": 5.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "ن": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 5.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "ه": {
+          "makhraj": 8.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ي": {
+          "makhraj": 4.0,
+          "voice": 1.0,
+          "manner": 3.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 1.0
+        }
+      },
+      "mw5_cheat_surah_id_top1": 0.5172413793103449,
+      "classifier_results": {
+        "rf": {
+          "top1": 0.6551724137931034,
+          "top3": 0.6551724137931034,
+          "top5": 0.6551724137931034,
+          "per_class_recall": {
+            "ALM": 1.0,
+            "ALMR": 0.0,
+            "ALMS": 0.0,
+            "ALR": 1.0,
+            "HM": 1.0,
+            "HMASQ": 0.0,
+            "KHYAS": 0.0,
+            "N": 0.0,
+            "Q": 0.0,
+            "S": 0.0,
+            "TH": 0.0,
+            "TS": 0.0,
+            "TSM": 1.0,
+            "YS": 0.0
+          },
+          "singleton_task_hits": 0,
+          "singleton_task_results": {
+            "19": {
+              "true": "KHYAS",
+              "pred": "HMASQ",
+              "correct": false
+            },
+            "20": {
+              "true": "TH",
+              "pred": "TS",
+              "correct": false
+            },
+            "27": {
+              "true": "TS",
+              "pred": "TH",
+              "correct": false
+            },
+            "36": {
+              "true": "YS",
+              "pred": "ALM",
+              "correct": false
+            },
+            "38": {
+              "true": "S",
+              "pred": "TS",
+              "correct": false
+            },
+            "42": {
+              "true": "HMASQ",
+              "pred": "HM",
+              "correct": false
+            },
+            "50": {
+              "true": "Q",
+              "pred": "TH",
+              "correct": false
+            },
+            "68": {
+              "true": "N",
+              "pred": "ALMR",
+              "correct": false
+            }
+          },
+          "permutation_null": {
+            "n_perm": 1000,
+            "observed_top1": 0.6551724137931034,
+            "p_value_primary": 0.000999000999000999,
+            "p_value_singleton_hit": 0.000999000999000999,
+            "null_mean": 0.1150344827586207,
+            "null_std": 0.07821662653089789,
+            "null_q95": 0.2413793103448276,
+            "null_q99": 0.3103448275862069,
+            "null_max": 0.3793103448275862,
+            "ge_count": 0,
+            "singleton_hit_ge1_count": 0
+          }
+        },
+        "logistic": {
+          "top1": 0.6551724137931034,
+          "top3": 0.6551724137931034,
+          "top5": 0.6551724137931034,
+          "per_class_recall": {
+            "ALM": 1.0,
+            "ALMR": 0.0,
+            "ALMS": 0.0,
+            "ALR": 1.0,
+            "HM": 1.0,
+            "HMASQ": 0.0,
+            "KHYAS": 0.0,
+            "N": 0.0,
+            "Q": 0.0,
+            "S": 0.0,
+            "TH": 0.0,
+            "TS": 0.0,
+            "TSM": 1.0,
+            "YS": 0.0
+          },
+          "singleton_task_hits": 0,
+          "singleton_task_results": {
+            "19": {
+              "true": "KHYAS",
+              "pred": "HMASQ",
+              "correct": false
+            },
+            "20": {
+              "true": "TH",
+              "pred": "TS",
+              "correct": false
+            },
+            "27": {
+              "true": "TS",
+              "pred": "TSM",
+              "correct": false
+            },
+            "36": {
+              "true": "YS",
+              "pred": "ALM",
+              "correct": false
+            },
+            "38": {
+              "true": "S",
+              "pred": "TS",
+              "correct": false
+            },
+            "42": {
+              "true": "HMASQ",
+              "pred": "KHYAS",
+              "correct": false
+            },
+            "50": {
+              "true": "Q",
+              "pred": "TH",
+              "correct": false
+            },
+            "68": {
+              "true": "N",
+              "pred": "ALM",
+              "correct": false
+            }
+          }
+        }
+      },
+      "singleton_geometry": {
+        "matches": 8,
+        "rows": [
+          {
+            "surah": 7,
+            "truth_set": "ALMS",
+            "nearest_multi_surah": 2,
+            "nearest_multi_cluster": "ALM",
+            "nearest_centroid_cluster": "ALM",
+            "nearest_centroid_distance": 5.002476793450534,
+            "distances_to_centroids": {
+              "ALM": 5.002476793450534,
+              "ALR": 5.531812103501065,
+              "HM": 7.244628798377818,
+              "TSM": 6.609280689527801
+            },
+            "accepted_clusters": [
+              "ALM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 13,
+            "truth_set": "ALMR",
+            "nearest_multi_surah": 10,
+            "nearest_multi_cluster": "ALR",
+            "nearest_centroid_cluster": "ALR",
+            "nearest_centroid_distance": 3.2128230681632926,
+            "distances_to_centroids": {
+              "ALM": 3.683594925955326,
+              "ALR": 3.2128230681632926,
+              "HM": 7.232368769565633,
+              "TSM": 10.543419978917765
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": true
+          },
+          {
+            "surah": 19,
+            "truth_set": "KHYAS",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 9.233197778281399,
+            "distances_to_centroids": {
+              "ALM": 11.993142300206568,
+              "ALR": 12.274137669959615,
+              "HM": 11.587436917486349,
+              "TSM": 9.233197778281399
+            },
+            "accepted_clusters": [
+              "HM",
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 20,
+            "truth_set": "TH",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 8.719718133848783,
+            "distances_to_centroids": {
+              "ALM": 15.089536060670287,
+              "ALR": 15.446643093047367,
+              "HM": 13.996568379172452,
+              "TSM": 8.719718133848783
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 27,
+            "truth_set": "TS",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 7.254155364207264,
+            "distances_to_centroids": {
+              "ALM": 14.988012780141922,
+              "ALR": 15.610511476510744,
+              "HM": 13.88705710236257,
+              "TSM": 7.254155364207264
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 36,
+            "truth_set": "YS",
+            "nearest_multi_surah": 40,
+            "nearest_multi_cluster": "HM",
+            "nearest_centroid_cluster": "HM",
+            "nearest_centroid_distance": 8.454349908638052,
+            "distances_to_centroids": {
+              "ALM": 9.519865556354281,
+              "ALR": 9.961124417074306,
+              "HM": 8.454349908638052,
+              "TSM": 8.870904171762364
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": false
+          },
+          {
+            "surah": 38,
+            "truth_set": "S",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 12.664590393084744,
+            "distances_to_centroids": {
+              "ALM": 18.570350658124816,
+              "ALR": 18.960328576556293,
+              "HM": 16.965586368911133,
+              "TSM": 12.664590393084744
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 42,
+            "truth_set": "HMASQ",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 7.0665067286914836,
+            "distances_to_centroids": {
+              "ALM": 10.73110159176991,
+              "ALR": 10.972725101771092,
+              "HM": 9.92001944762415,
+              "TSM": 7.0665067286914836
+            },
+            "accepted_clusters": [
+              "HM"
+            ],
+            "match": false
+          },
+          {
+            "surah": 50,
+            "truth_set": "Q",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 15.628951464081462,
+            "distances_to_centroids": {
+              "ALM": 22.317383655804385,
+              "ALR": 22.621961263887528,
+              "HM": 21.313681671676953,
+              "TSM": 15.628951464081462
+            },
+            "accepted_clusters": [
+              "HM",
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 68,
+            "truth_set": "N",
+            "nearest_multi_surah": 10,
+            "nearest_multi_cluster": "ALR",
+            "nearest_centroid_cluster": "ALR",
+            "nearest_centroid_distance": 9.141121850273667,
+            "distances_to_centroids": {
+              "ALM": 9.766903515863374,
+              "ALR": 9.141121850273667,
+              "HM": 9.834300879175881,
+              "TSM": 14.759796217899106
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": true
+          }
+        ],
+        "centroids": {
+          "ALM": [
+            0.0,
+            0.83510858,
+            -0.76587078,
+            -0.34299717,
+            -0.67936622,
+            0.84002187,
+            0.34299717,
+            0.77615053,
+            0.85280287,
+            0.67936622,
+            -0.34299717,
+            -0.67936622,
+            0.84002187,
+            0.77615053,
+            -0.34299717
+          ],
+          "ALR": [
+            1.04197614,
+            0.83510858,
+            0.44675795,
+            -0.34299717,
+            -0.67936622,
+            0.84002187,
+            0.34299717,
+            0.77615053,
+            0.85280287,
+            0.67936622,
+            -0.34299717,
+            -0.67936622,
+            0.84002187,
+            0.77615053,
+            -0.34299717
+          ],
+          "HM": [
+            0.0,
+            -1.32858183,
+            1.05307232,
+            -0.34299717,
+            1.47196014,
+            -1.00156454,
+            0.34299717,
+            -0.69853547,
+            -1.17260394,
+            -1.47196014,
+            -0.34299717,
+            1.47196014,
+            -1.00156454,
+            -0.69853547,
+            -0.34299717
+          ],
+          "TSM": [
+            -2.60494036,
+            -0.60735169,
+            -1.9784995,
+            2.91547595,
+            -0.67936622,
+            -1.61542667,
+            -2.91547595,
+            -2.17322147,
+            -1.17260394,
+            0.67936622,
+            2.91547595,
+            -0.67936622,
+            -1.61542667,
+            -2.17322147,
+            2.91547595
+          ]
+        },
+        "permutation_null": {
+          "observed_matches": 8,
+          "p_value": 0.024975024975024976,
+          "null_mean": 3.567,
+          "null_std": 2.0053705393268344,
+          "null_q95": 7.0,
+          "null_q99": 8.0,
+          "null_max": 8,
+          "ge_count": 24
+        }
+      },
+      "variant_flags": {
+        "primary_retained": true,
+        "primary_preserved": true,
+        "collapsed_below_h88": false,
+        "singleton_retained": true,
+        "singleton_degraded": false
+      },
+      "variant_verdict": "PRESERVED-BOTH"
+    },
+    {
+      "id": "holes_glottal_ha_ayn",
+      "label": "Holes-style ha/ayn glottal makhraj recode",
+      "codebook_spec": {
+        "voice_set": [
+          "ا",
+          "ر",
+          "ط",
+          "ع",
+          "ل",
+          "م",
+          "ن",
+          "ي"
+        ],
+        "pharyngeal_set": [
+          "ح",
+          "ص",
+          "ط",
+          "ع",
+          "ق"
+        ],
+        "makhraj_overrides": {
+          "ح": 8,
+          "ع": 8
+        }
+      },
+      "feature_names": [
+        "mean_makhraj",
+        "mean_voice",
+        "mean_manner",
+        "mean_emphatic",
+        "mean_pharyngeal",
+        "mean_sonorant",
+        "mean_continuant",
+        "mean_idhlaq",
+        "mean_vowel_carrier",
+        "letter_count",
+        "frac_emphatic",
+        "frac_pharyngeal",
+        "frac_sonorant",
+        "frac_idhlaq",
+        "has_qalqala"
+      ],
+      "letter_features": {
+        "ا": {
+          "makhraj": 8.0,
+          "voice": 1.0,
+          "manner": 0.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 1.0
+        },
+        "ح": {
+          "makhraj": 8.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ر": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 6.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "س": {
+          "makhraj": 3.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ص": {
+          "makhraj": 3.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 1.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ط": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 1.0,
+          "emphatic": 1.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ع": {
+          "makhraj": 8.0,
+          "voice": 1.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ق": {
+          "makhraj": 6.0,
+          "voice": 0.0,
+          "manner": 1.0,
+          "emphatic": 1.0,
+          "pharyngeal": 1.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ك": {
+          "makhraj": 5.0,
+          "voice": 0.0,
+          "manner": 1.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 0.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ل": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 4.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "م": {
+          "makhraj": 1.0,
+          "voice": 1.0,
+          "manner": 5.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "ن": {
+          "makhraj": 3.0,
+          "voice": 1.0,
+          "manner": 5.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 1.0,
+          "vowel_carrier": 0.0
+        },
+        "ه": {
+          "makhraj": 8.0,
+          "voice": 0.0,
+          "manner": 2.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 0.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 0.0
+        },
+        "ي": {
+          "makhraj": 4.0,
+          "voice": 1.0,
+          "manner": 3.0,
+          "emphatic": 0.0,
+          "pharyngeal": 0.0,
+          "sonorant": 1.0,
+          "continuant": 1.0,
+          "idhlaq": 0.0,
+          "vowel_carrier": 1.0
+        }
+      },
+      "mw5_cheat_surah_id_top1": 0.5172413793103449,
+      "classifier_results": {
+        "rf": {
+          "top1": 0.6551724137931034,
+          "top3": 0.6551724137931034,
+          "top5": 0.6551724137931034,
+          "per_class_recall": {
+            "ALM": 1.0,
+            "ALMR": 0.0,
+            "ALMS": 0.0,
+            "ALR": 1.0,
+            "HM": 1.0,
+            "HMASQ": 0.0,
+            "KHYAS": 0.0,
+            "N": 0.0,
+            "Q": 0.0,
+            "S": 0.0,
+            "TH": 0.0,
+            "TS": 0.0,
+            "TSM": 1.0,
+            "YS": 0.0
+          },
+          "singleton_task_hits": 0,
+          "singleton_task_results": {
+            "19": {
+              "true": "KHYAS",
+              "pred": "HMASQ",
+              "correct": false
+            },
+            "20": {
+              "true": "TH",
+              "pred": "TS",
+              "correct": false
+            },
+            "27": {
+              "true": "TS",
+              "pred": "TH",
+              "correct": false
+            },
+            "36": {
+              "true": "YS",
+              "pred": "ALM",
+              "correct": false
+            },
+            "38": {
+              "true": "S",
+              "pred": "Q",
+              "correct": false
+            },
+            "42": {
+              "true": "HMASQ",
+              "pred": "KHYAS",
+              "correct": false
+            },
+            "50": {
+              "true": "Q",
+              "pred": "TH",
+              "correct": false
+            },
+            "68": {
+              "true": "N",
+              "pred": "ALMR",
+              "correct": false
+            }
+          },
+          "permutation_null": {
+            "n_perm": 1000,
+            "observed_top1": 0.6551724137931034,
+            "p_value_primary": 0.000999000999000999,
+            "p_value_singleton_hit": 0.000999000999000999,
+            "null_mean": 0.11437931034482758,
+            "null_std": 0.0777087996982007,
+            "null_q95": 0.2413793103448276,
+            "null_q99": 0.3103448275862069,
+            "null_max": 0.41379310344827586,
+            "ge_count": 0,
+            "singleton_hit_ge1_count": 0
+          }
+        },
+        "logistic": {
+          "top1": 0.6551724137931034,
+          "top3": 0.6551724137931034,
+          "top5": 0.6551724137931034,
+          "per_class_recall": {
+            "ALM": 1.0,
+            "ALMR": 0.0,
+            "ALMS": 0.0,
+            "ALR": 1.0,
+            "HM": 1.0,
+            "HMASQ": 0.0,
+            "KHYAS": 0.0,
+            "N": 0.0,
+            "Q": 0.0,
+            "S": 0.0,
+            "TH": 0.0,
+            "TS": 0.0,
+            "TSM": 1.0,
+            "YS": 0.0
+          },
+          "singleton_task_hits": 0,
+          "singleton_task_results": {
+            "19": {
+              "true": "KHYAS",
+              "pred": "HMASQ",
+              "correct": false
+            },
+            "20": {
+              "true": "TH",
+              "pred": "TS",
+              "correct": false
+            },
+            "27": {
+              "true": "TS",
+              "pred": "TSM",
+              "correct": false
+            },
+            "36": {
+              "true": "YS",
+              "pred": "ALM",
+              "correct": false
+            },
+            "38": {
+              "true": "S",
+              "pred": "TS",
+              "correct": false
+            },
+            "42": {
+              "true": "HMASQ",
+              "pred": "KHYAS",
+              "correct": false
+            },
+            "50": {
+              "true": "Q",
+              "pred": "TH",
+              "correct": false
+            },
+            "68": {
+              "true": "N",
+              "pred": "HM",
+              "correct": false
+            }
+          }
+        }
+      },
+      "singleton_geometry": {
+        "matches": 8,
+        "rows": [
+          {
+            "surah": 7,
+            "truth_set": "ALMS",
+            "nearest_multi_surah": 2,
+            "nearest_multi_cluster": "ALM",
+            "nearest_centroid_cluster": "ALM",
+            "nearest_centroid_distance": 5.229508010698313,
+            "distances_to_centroids": {
+              "ALM": 5.229508010698313,
+              "ALR": 5.718604483228939,
+              "HM": 6.828635269361087,
+              "TSM": 6.585678390325997
+            },
+            "accepted_clusters": [
+              "ALM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 13,
+            "truth_set": "ALMR",
+            "nearest_multi_surah": 10,
+            "nearest_multi_cluster": "ALR",
+            "nearest_centroid_cluster": "ALR",
+            "nearest_centroid_distance": 3.175365499671607,
+            "distances_to_centroids": {
+              "ALM": 3.681178268637341,
+              "ALR": 3.175365499671607,
+              "HM": 7.312667470124247,
+              "TSM": 10.7123092893015
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": true
+          },
+          {
+            "surah": 19,
+            "truth_set": "KHYAS",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 9.164760931653973,
+            "distances_to_centroids": {
+              "ALM": 12.209976710844844,
+              "ALR": 12.479264446356693,
+              "HM": 11.36372282341377,
+              "TSM": 9.164760931653973
+            },
+            "accepted_clusters": [
+              "HM",
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 20,
+            "truth_set": "TH",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 8.614999627857559,
+            "distances_to_centroids": {
+              "ALM": 15.375840729173264,
+              "ALR": 15.740525347083729,
+              "HM": 13.53917185721831,
+              "TSM": 8.614999627857559
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 27,
+            "truth_set": "TS",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 7.316867592610465,
+            "distances_to_centroids": {
+              "ALM": 15.287866736763904,
+              "ALR": 15.882699796170382,
+              "HM": 13.63843038429069,
+              "TSM": 7.316867592610465
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 36,
+            "truth_set": "YS",
+            "nearest_multi_surah": 40,
+            "nearest_multi_cluster": "HM",
+            "nearest_centroid_cluster": "HM",
+            "nearest_centroid_distance": 8.551614306186611,
+            "distances_to_centroids": {
+              "ALM": 9.516125665359647,
+              "ALR": 9.94164955459185,
+              "HM": 8.551614306186611,
+              "TSM": 9.081118891622108
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": false
+          },
+          {
+            "surah": 38,
+            "truth_set": "S",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 13.30078262600496,
+            "distances_to_centroids": {
+              "ALM": 19.545475256561655,
+              "ALR": 19.9036549699739,
+              "HM": 17.039679034998837,
+              "TSM": 13.30078262600496
+            },
+            "accepted_clusters": [
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 42,
+            "truth_set": "HMASQ",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 7.0388884791686746,
+            "distances_to_centroids": {
+              "ALM": 11.147176206658822,
+              "ALR": 11.337102924897815,
+              "HM": 9.89469999505954,
+              "TSM": 7.0388884791686746
+            },
+            "accepted_clusters": [
+              "HM"
+            ],
+            "match": false
+          },
+          {
+            "surah": 50,
+            "truth_set": "Q",
+            "nearest_multi_surah": 26,
+            "nearest_multi_cluster": "TSM",
+            "nearest_centroid_cluster": "TSM",
+            "nearest_centroid_distance": 16.033748184212726,
+            "distances_to_centroids": {
+              "ALM": 23.11663864608744,
+              "ALR": 23.42433185783948,
+              "HM": 21.200565929894474,
+              "TSM": 16.033748184212726
+            },
+            "accepted_clusters": [
+              "HM",
+              "TSM"
+            ],
+            "match": true
+          },
+          {
+            "surah": 68,
+            "truth_set": "N",
+            "nearest_multi_surah": 10,
+            "nearest_multi_cluster": "ALR",
+            "nearest_centroid_cluster": "ALR",
+            "nearest_centroid_distance": 9.097751400572387,
+            "distances_to_centroids": {
+              "ALM": 9.752314297622291,
+              "ALR": 9.097751400572387,
+              "HM": 9.961576911159955,
+              "TSM": 14.895851878211664
+            },
+            "accepted_clusters": [
+              "ALM",
+              "ALR"
+            ],
+            "match": true
+          }
+        ],
+        "centroids": {
+          "ALM": [
+            -0.23195414,
+            0.83510858,
+            -0.76587078,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.34299717,
+            0.77615053,
+            0.85280287,
+            0.67936622,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.77615053,
+            -0.34299717
+          ],
+          "ALR": [
+            0.74740779,
+            0.83510858,
+            0.44675795,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.34299717,
+            0.77615053,
+            0.85280287,
+            0.67936622,
+            -0.34299717,
+            -0.83510858,
+            0.84002187,
+            0.77615053,
+            -0.34299717
+          ],
+          "HM": [
+            0.5025673,
+            -1.32858183,
+            1.05307232,
+            -0.34299717,
+            1.32858183,
+            -1.00156454,
+            0.34299717,
+            -0.69853547,
+            -1.17260394,
+            -1.47196014,
+            -0.34299717,
+            1.32858183,
+            -1.00156454,
+            -0.69853547,
+            -0.34299717
+          ],
+          "TSM": [
+            -2.68035896,
+            -0.60735169,
+            -1.9784995,
+            2.91547595,
+            0.60735169,
+            -1.61542667,
+            -2.91547595,
+            -2.17322147,
+            -1.17260394,
+            0.67936622,
+            2.91547595,
+            0.60735169,
+            -1.61542667,
+            -2.17322147,
+            2.91547595
+          ]
+        },
+        "permutation_null": {
+          "observed_matches": 8,
+          "p_value": 0.023976023976023976,
+          "null_mean": 3.643,
+          "null_std": 1.9928750588032358,
+          "null_q95": 7.0,
+          "null_q99": 8.0,
+          "null_max": 8,
+          "ge_count": 23
+        }
+      },
+      "variant_flags": {
+        "primary_retained": true,
+        "primary_preserved": true,
+        "collapsed_below_h88": false,
+        "singleton_retained": true,
+        "singleton_degraded": false
+      },
+      "variant_verdict": "PRESERVED-BOTH"
+    }
+  ],
+  "summary": {
+    "baseline_reproduction_pass": true,
+    "n_perturbed_variants": 3,
+    "n_primary_retained": 3,
+    "n_primary_preserved": 3,
+    "n_singleton_retained": 3,
+    "any_collapsed_below_h88": false,
+    "overall_verdict": "ROBUST"
+  }
+}

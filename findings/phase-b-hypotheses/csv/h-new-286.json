@@ -1,0 +1,308 @@
+{
+  "id": "H-NEW-286",
+  "title": "OQ-18 within-zone name-class contrast",
+  "date": "2026-04-18",
+  "seed": 20260418,
+  "prereg_file": "findings/phase-b-hypotheses/h-new-286-oq18-within-zone-name-class-contrast-prereg.md",
+  "prereg_sha256": "c449c8289518c66e08296bd87e26246f8247f81f69772c0fb4b4d856895b7153",
+  "script_file": "scripts/h_new_286_oq18_within_zone_name_class_contrast.py",
+  "label_source": {
+    "source_file": "findings/phase-b-hypotheses/csv/h-new-126.json",
+    "source_field": "cell_b_genre_coherence.per_surah",
+    "concept_object_surahs": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "binary_label_definition": "1 = concept/object-named; 0 = other"
+  },
+  "rules_tuple": "(QAC v0.4 surah-name map reused from h-new-126 Cell B; binary label concept/object-named vs other; exact enumeration over all C(10,5)=252 five-surah subsets of Q16..Q25; primary statistic = Delta_name(S)=mean_{q in S} I[label(q)=concept/object]-mean_{q in Z\\S} I[label(q)=concept/object]; one-sided upper-tail)",
+  "zone": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "target_subset": [
+    16,
+    21,
+    22,
+    23,
+    25
+  ],
+  "exact_space_n": 252,
+  "zone_label_map": {
+    "16": 1,
+    "17": 0,
+    "18": 0,
+    "19": 0,
+    "20": 0,
+    "21": 1,
+    "22": 1,
+    "23": 1,
+    "24": 0,
+    "25": 1
+  },
+  "target_count_concept_object": 5,
+  "zone_count_concept_object": 5,
+  "primary": {
+    "statistic": "delta_name_concept_object",
+    "direction": "upper",
+    "observed": 1,
+    "target_mean_concept_object": 1,
+    "complement_mean_concept_object": 0,
+    "n_ge_observed": 1,
+    "exact_upper_p": 0.003968253968253968,
+    "rank_desc": 1,
+    "tie_count_at_observed": 1,
+    "null_mean_full_space": 0.0,
+    "null_median_full_space": 0.0,
+    "null_min_full_space": -1,
+    "null_max_full_space": 1,
+    "alpha": 0.05,
+    "verdict": "PASS-DIRECTED"
+  },
+  "target_detail": {
+    "subset": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "complement_subset": [
+      17,
+      18,
+      19,
+      20,
+      24
+    ],
+    "mean_concept_object_subset": 1,
+    "mean_concept_object_complement": 0,
+    "delta_name": 1
+  },
+  "complement_detail": {
+    "subset": [
+      17,
+      18,
+      19,
+      20,
+      24
+    ],
+    "complement_subset": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "mean_concept_object_subset": 0,
+    "mean_concept_object_complement": 1,
+    "delta_name": -1,
+    "rank_desc": 252,
+    "exact_upper_p": 1.0
+  },
+  "top_subsets_by_delta": [
+    {
+      "subset": [
+        16,
+        21,
+        22,
+        23,
+        25
+      ],
+      "complement_subset": [
+        17,
+        18,
+        19,
+        20,
+        24
+      ],
+      "mean_concept_object_subset": 1,
+      "mean_concept_object_complement": 0,
+      "delta_name": 1
+    },
+    {
+      "subset": [
+        16,
+        17,
+        21,
+        22,
+        23
+      ],
+      "complement_subset": [
+        18,
+        19,
+        20,
+        24,
+        25
+      ],
+      "mean_concept_object_subset": 0.8,
+      "mean_concept_object_complement": 0.2,
+      "delta_name": 0.6000000000000001
+    },
+    {
+      "subset": [
+        16,
+        17,
+        21,
+        22,
+        25
+      ],
+      "complement_subset": [
+        18,
+        19,
+        20,
+        23,
+        24
+      ],
+      "mean_concept_object_subset": 0.8,
+      "mean_concept_object_complement": 0.2,
+      "delta_name": 0.6000000000000001
+    },
+    {
+      "subset": [
+        16,
+        17,
+        21,
+        23,
+        25
+      ],
+      "complement_subset": [
+        18,
+        19,
+        20,
+        22,
+        24
+      ],
+      "mean_concept_object_subset": 0.8,
+      "mean_concept_object_complement": 0.2,
+      "delta_name": 0.6000000000000001
+    },
+    {
+      "subset": [
+        16,
+        17,
+        22,
+        23,
+        25
+      ],
+      "complement_subset": [
+        18,
+        19,
+        20,
+        21,
+        24
+      ],
+      "mean_concept_object_subset": 0.8,
+      "mean_concept_object_complement": 0.2,
+      "delta_name": 0.6000000000000001
+    },
+    {
+      "subset": [
+        16,
+        18,
+        21,
+        22,
+        23
+      ],
+      "complement_subset": [
+        17,
+        19,
+        20,
+        24,
+        25
+      ],
+      "mean_concept_object_subset": 0.8,
+      "mean_concept_object_complement": 0.2,
+      "delta_name": 0.6000000000000001
+    },
+    {
+      "subset": [
+        16,
+        18,
+        21,
+        22,
+        25
+      ],
+      "complement_subset": [
+        17,
+        19,
+        20,
+        23,
+        24
+      ],
+      "mean_concept_object_subset": 0.8,
+      "mean_concept_object_complement": 0.2,
+      "delta_name": 0.6000000000000001
+    },
+    {
+      "subset": [
+        16,
+        18,
+        21,
+        23,
+        25
+      ],
+      "complement_subset": [
+        17,
+        19,
+        20,
+        22,
+        24
+      ],
+      "mean_concept_object_subset": 0.8,
+      "mean_concept_object_complement": 0.2,
+      "delta_name": 0.6000000000000001
+    },
+    {
+      "subset": [
+        16,
+        18,
+        22,
+        23,
+        25
+      ],
+      "complement_subset": [
+        17,
+        19,
+        20,
+        21,
+        24
+      ],
+      "mean_concept_object_subset": 0.8,
+      "mean_concept_object_complement": 0.2,
+      "delta_name": 0.6000000000000001
+    },
+    {
+      "subset": [
+        16,
+        19,
+        21,
+        22,
+        23
+      ],
+      "complement_subset": [
+        17,
+        18,
+        20,
+        24,
+        25
+      ],
+      "mean_concept_object_subset": 0.8,
+      "mean_concept_object_complement": 0.2,
+      "delta_name": 0.6000000000000001
+    }
+  ],
+  "verdict": "PASS-DIRECTED",
+  "verdict_note": "The target split is the full concept/object set within the zone, so the exact-null maximum is categorical rather than graded. The bounded test is still valid and remains PASS-DIRECTED only.",
+  "id_collision_note": "Renumbered from H-NEW-282 per ID-collision protocol; codex independently claimed H-NEW-282 for Q108 top-500 MST at earlier timestamp. See MASTER-FINDINGS-LEDGER."
+}

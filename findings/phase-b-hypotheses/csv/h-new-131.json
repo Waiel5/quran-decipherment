@@ -1,0 +1,385 @@
+{
+  "finding_id": "h-new-131",
+  "title": "Q 108 al-Kawthar MST super-hub robustness",
+  "pre_reg_sha256": "c89f445eab9cb7df99685f4c5a4079a8333554acf3c65859635d367eabfd30d6",
+  "seed": 20260417,
+  "date": "2026-04-17",
+  "parent_finding": "h-new-134",
+  "parent_data": "findings/phase-b-hypotheses/csv/h-new-111.json",
+  "rules_tuple": "(114 surahs Hafs-Kūfan; K=500 QAC-STEM roots; no-tashkeel; QAC v0.4)",
+  "locked_params": {
+    "K_top_roots": 500,
+    "alpha_baseline_h_new_134": 0.5,
+    "alpha_cell_A_no_smoothing": 0.01
+  },
+  "bonferroni": {
+    "k": 2,
+    "alpha_bon": 0.025,
+    "family": "h-new-131-q108-supernode",
+    "inferential_slots": [
+      "Cell B JS",
+      "Cell B TV"
+    ],
+    "cell_A_role": "DESCRIPTIVE-ROBUSTNESS bright-line check (not an inferential Bonferroni slot)",
+    "hellinger_role": "rank-monotone consistency-check with Fisher-Rao (excluded from inferential family)",
+    "amendment_note": "audit-036 2026-04-17: tightening self-verifying per feedback_bonferroni_tightening_vs_loosening"
+  },
+  "sanity_replication": {
+    "h_new_134_mst_fr_alpha_05_q108_degree": 24,
+    "expected": 24,
+    "matches": true,
+    "top10_hubs_fr_alpha_05": [
+      [
+        108,
+        24
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        112,
+        8
+      ],
+      [
+        64,
+        7
+      ],
+      [
+        111,
+        4
+      ],
+      [
+        103,
+        4
+      ],
+      [
+        78,
+        4
+      ],
+      [
+        63,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        6,
+        4
+      ]
+    ],
+    "degree_distribution_fr_alpha_05": {
+      "1": 72,
+      "2": 16,
+      "3": 15,
+      "4": 7,
+      "7": 1,
+      "8": 1,
+      "10": 1,
+      "24": 1
+    }
+  },
+  "cell_A_dirichlet_robustness": {
+    "alpha": 0.01,
+    "metric": "Fisher-Rao arccos-Bhattacharyya",
+    "q108_degree": 11,
+    "top10_hubs": [
+      [
+        7,
+        25
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        108,
+        11
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        16,
+        7
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        25,
+        4
+      ]
+    ],
+    "degree_distribution": {
+      "1": 81,
+      "2": 17,
+      "3": 6,
+      "4": 4,
+      "7": 1,
+      "8": 1,
+      "10": 1,
+      "11": 1,
+      "16": 1,
+      "25": 1
+    },
+    "thresholds": {
+      "REFUTE_le": 5,
+      "WEAKLY_SURVIVE_6_14": true,
+      "SURVIVE_ge": 15
+    },
+    "verdict": "WEAKLY-SURVIVE"
+  },
+  "cell_B_cross_metric": {
+    "alpha": 0.5,
+    "fisher_rao": {
+      "q108_degree": 24,
+      "top10": [
+        [
+          108,
+          24
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          112,
+          8
+        ],
+        [
+          64,
+          7
+        ],
+        [
+          111,
+          4
+        ],
+        [
+          103,
+          4
+        ],
+        [
+          78,
+          4
+        ],
+        [
+          63,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    "hellinger": {
+      "q108_degree": 24,
+      "top10": [
+        [
+          108,
+          24
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          112,
+          8
+        ],
+        [
+          64,
+          7
+        ],
+        [
+          111,
+          4
+        ],
+        [
+          103,
+          4
+        ],
+        [
+          78,
+          4
+        ],
+        [
+          63,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "matches_fisher_rao_mst": true,
+      "role": "consistency-check (monotone with Fisher-Rao)"
+    },
+    "jensen_shannon": {
+      "q108_degree": 24,
+      "top10": [
+        [
+          108,
+          24
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          112,
+          8
+        ],
+        [
+          64,
+          7
+        ],
+        [
+          111,
+          4
+        ],
+        [
+          103,
+          4
+        ],
+        [
+          78,
+          4
+        ],
+        [
+          63,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    "total_variation": {
+      "q108_degree": 6,
+      "top10": [
+        [
+          64,
+          7
+        ],
+        [
+          108,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          32,
+          5
+        ],
+        [
+          45,
+          5
+        ],
+        [
+          63,
+          4
+        ],
+        [
+          61,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          16,
+          4
+        ]
+      ]
+    },
+    "cell_B_hits_of_3": 2,
+    "cell_B_hits_count_rule": "{FR, JS, TV} with deg ≥ 15; Hellinger not counted (redundant with FR)",
+    "verdict": "PASS"
+  },
+  "cell_C_q108_descriptive": {
+    "n_distinct_roots": 7,
+    "n_total_stem_root_tokens": 7,
+    "tokens_in_top_500": 4.0,
+    "top5_roots_by_q108_count": [
+      {
+        "root": "rbb",
+        "q108_count": 1,
+        "global_rank_in_top500": 4,
+        "global_corpus_count": 980
+      },
+      {
+        "root": "kvr",
+        "q108_count": 1,
+        "global_rank_in_top500": 64,
+        "global_corpus_count": 167
+      },
+      {
+        "root": "Slw",
+        "q108_count": 1,
+        "global_rank_in_top500": 115,
+        "global_corpus_count": 99
+      },
+      {
+        "root": "ETw",
+        "q108_count": 1,
+        "global_rank_in_top500": 481,
+        "global_corpus_count": 14
+      },
+      {
+        "root": "nHr",
+        "q108_count": 1,
+        "global_rank_in_top500": null,
+        "global_corpus_count": 1
+      }
+    ],
+    "alpha_05_probability_on_top50_global": 0.10236220472440945,
+    "alpha_05_probability_on_top100_global": 0.2047244094488189,
+    "unsmoothed_fraction_on_top50_global": 0.25
+  },
+  "pre_committed_acceptance_matrix": {
+    "SURVIVE+PASS": "STRUCTURAL",
+    "SURVIVE+FAIL": "Fisher-Rao-specific",
+    "WEAKLY+PASS": "Weakly structural",
+    "WEAKLY+FAIL": "Weakly artifact",
+    "REFUTE+any": "REFUTED — smoothing artifact"
+  },
+  "final_verdict": "WEAKLY STRUCTURAL — mixed mechanical + structural origin"
+}

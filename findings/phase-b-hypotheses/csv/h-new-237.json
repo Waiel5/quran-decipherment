@@ -1,0 +1,150 @@
+{
+  "id": "H-NEW-237",
+  "parent": "H-NEW-175",
+  "seed": 20260419,
+  "rules_tuple": {
+    "orthography": "no-tashkeel",
+    "letter_definition": "hafs-kufan graphemes",
+    "word_definition": "orthographic-token real-words",
+    "basmala_policy": "counted-only-in-surah-1",
+    "abjad_tables": [
+      "mashriqi",
+      "maghribi"
+    ]
+  },
+  "bonferroni": {
+    "k": 3,
+    "alpha_family": 0.05,
+    "alpha_bon": 0.016666666666666666
+  },
+  "prereg_sha256": "ab6ee8d39f0fa53d431406030130b151637d8a6ae5c651986ed6738a16116a63",
+  "inputs": {
+    "num_surahs": 114,
+    "sum_verses": 6236,
+    "sum_letters": 330709,
+    "V_min": 3,
+    "V_max": 286,
+    "L_min": 43,
+    "L_max": 26249
+  },
+  "cell_A_prime_density": {
+    "k_primes_observed": 32,
+    "v_range": [
+      3,
+      286
+    ],
+    "null_prime_count_mean": 24.029,
+    "null_prime_count_sd": 4.2982128418254995,
+    "null_samples_N": 1000,
+    "p_raw_two_sided": 0.081,
+    "p_bon_vs_k3": 0.243,
+    "mw5_invariance_ok": true,
+    "verdict": "NULL"
+  },
+  "cell_B_cumulative_constants": {
+    "total_letters": 330709,
+    "prefix_range": [
+      143,
+      330709
+    ],
+    "num_targets": 34,
+    "targets_sample": [
+      [
+        "pi_x_1e2",
+        314.1592653589793
+      ],
+      [
+        "pi_x_1e3",
+        3141.592653589793
+      ],
+      [
+        "pi_x_1e4",
+        31415.926535897932
+      ],
+      [
+        "pi_x_1e5",
+        314159.2653589793
+      ],
+      [
+        "e_x_1e2",
+        271.8281828459045
+      ],
+      [
+        "e_x_1e3",
+        2718.2818284590453
+      ],
+      [
+        "e_x_1e4",
+        27182.818284590452
+      ],
+      [
+        "e_x_1e5",
+        271828.1828459045
+      ]
+    ],
+    "observed_hits_primary_eps_0p001": 2,
+    "observed_hits_tight_eps_0p0001": 0,
+    "observed_hits_loose_eps_0p005": 5,
+    "observed_min_rel_distance": 0.00047343706654889205,
+    "null_hits_mean": 1.1425,
+    "null_hits_sd": 1.1575248083047383,
+    "null_minrel_mean": 0.0009549189797748123,
+    "null_minrel_sd": 0.0010182288446663296,
+    "null_samples_N": 2000,
+    "p_raw_hits_upper": 0.3065,
+    "p_raw_minrel_lower": 0.4,
+    "p_bon_primary_vs_k3": 0.9195,
+    "primary_statistic": "n_hits_upper_tail",
+    "observed_hits_details": [
+      {
+        "k": 40,
+        "prefix": 261643,
+        "target_name": "phi2_x_1e5",
+        "target_value": 261803.39887498948,
+        "rel_distance": 0.0006126691848873513
+      },
+      {
+        "k": 70,
+        "prefix": 314308,
+        "target_name": "pi_x_1e5",
+        "target_value": 314159.2653589793,
+        "rel_distance": 0.00047343706654889205
+      }
+    ],
+    "mw5_invariance_ok": true,
+    "verdict": "NULL"
+  },
+  "cell_C_surah_name_abjad": {
+    "S_mashriqi_observed": 40089,
+    "S_maghribi_observed": 47529,
+    "distinguished_hit_mashriqi": [
+      40071,
+      0.0004492026652691473,
+      "close_hit"
+    ],
+    "distinguished_hit_maghribi": [
+      47538,
+      0.0001893222264293828,
+      "close_hit"
+    ],
+    "null1_invariance_mashriqi": true,
+    "null1_invariance_maghribi": true,
+    "null2_mashriqi_mean": 46183.516,
+    "null2_mashriqi_sd": 3845.645897650239,
+    "null2_maghribi_mean": 49000.306,
+    "null2_maghribi_sd": 4082.73725211822,
+    "null2_samples_N": 1000,
+    "p_raw_mashriqi_two_sided": 0.108,
+    "p_raw_maghribi_two_sided": 0.734,
+    "primary_p": 0.108,
+    "p_bon_primary_vs_k3": 0.324,
+    "name_length_total": 656,
+    "num_names": 114,
+    "verdict": "DISTINGUISHED_HIT_BUT_NOT_RARE"
+  },
+  "overall_verdicts": {
+    "A": "NULL",
+    "B": "NULL",
+    "C": "DISTINGUISHED_HIT_BUT_NOT_RARE"
+  }
+}

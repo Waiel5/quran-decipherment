@@ -1,0 +1,47 @@
+{
+  "finding_id": "Q027-F-01",
+  "prereg_sha": "0e68fc3d2ba709191b738d1228668cc1f40979da0fe5f09ea90be2f4f717aedd",
+  "rules_tuple": "(no-tashkeel, orthographic-exact-match, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "method": "orthographic-exact-match per surah on naml forms; permutation null over per-surah token-length",
+  "naml_forms_matched": [
+    "النمل",
+    "نمل",
+    "نملة"
+  ],
+  "total_attestations": 3,
+  "attestations_full_list": [
+    {
+      "surah": 27,
+      "verse": 18,
+      "token": "النمل"
+    },
+    {
+      "surah": 27,
+      "verse": 18,
+      "token": "نملة"
+    },
+    {
+      "surah": 27,
+      "verse": 18,
+      "token": "النمل"
+    }
+  ],
+  "q27_count": 3,
+  "q27_concentration": 1.0,
+  "per_surah_nonzero": [
+    {
+      "surah": 27,
+      "name": "النمل",
+      "n_words": 1215,
+      "naml_count": 3
+    }
+  ],
+  "n_perm": 10000,
+  "seed": 42,
+  "p_perm_one_sided_upper": 0.000999900009999,
+  "bonferroni_k": 4,
+  "alpha_bonferroni": 0.0125,
+  "success_criteria_met": true,
+  "verdict": "CONFIRMED",
+  "note_excluded_form": "Token \"نملي\" (Q 3:178) was EXCLUDED — different lexical root (m-l-y, not n-m-l)."
+}

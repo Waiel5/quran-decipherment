@@ -1,0 +1,637 @@
+{
+  "finding_id": "h-new-257a",
+  "title": "Formal Biqa'i Medinan inclusio rerun from primary text",
+  "pre_reg_sha256": "dbd504b3290b280ae0bd0ef14796c19bb8cd5320751f51a721fff549475c8bea",
+  "sources": {
+    "primary": "/Users/grey/Downloads/quran/data/literature/classical-tafsir/raw/biqai-nazm-al-durar.ShamAY.raw.txt",
+    "secondary_inspected": "/Users/grey/Downloads/quran/data/literature/classical-tafsir/raw/biqai-nazm-al-durar.openiti.raw.txt",
+    "quran": "/Users/grey/Downloads/quran/quran-text/quran-no-tashkeel.json"
+  },
+  "parser": {
+    "n_surahs_parsed": 114,
+    "opening_span_chars": 1500,
+    "closing_span_chars": 1500,
+    "target_set": [
+      3,
+      4,
+      8,
+      9,
+      33,
+      47,
+      59,
+      60,
+      63,
+      65,
+      98
+    ],
+    "muq_surahs": [
+      2,
+      3,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      20,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      36,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      50,
+      68
+    ],
+    "alias_map": {
+      "9": [
+        "التوبة",
+        "براءة"
+      ],
+      "14": [
+        "ابراهيم",
+        "إبراهيم"
+      ],
+      "17": [
+        "الإسراء",
+        "بني إسرائيل"
+      ],
+      "40": [
+        "غافر",
+        "المؤمن"
+      ],
+      "41": [
+        "فصلت",
+        "حم السجدة"
+      ],
+      "76": [
+        "الإنسان",
+        "الانسان",
+        "الدهر"
+      ],
+      "78": [
+        "النبإ",
+        "النبأ"
+      ],
+      "82": [
+        "الإنفطار",
+        "الانفطار"
+      ],
+      "84": [
+        "الإنشقاق",
+        "الانشقاق"
+      ],
+      "94": [
+        "الشرح",
+        "الانشراح"
+      ],
+      "111": [
+        "المسد",
+        "اللهب"
+      ]
+    }
+  },
+  "scoring_rule": {
+    "basic_stopwords": [
+      "أن",
+      "أنه",
+      "أو",
+      "أي",
+      "إذا",
+      "إلى",
+      "إن",
+      "إنه",
+      "اذا",
+      "الى",
+      "بعد",
+      "بل",
+      "بها",
+      "بهم",
+      "بين",
+      "تلك",
+      "ثم",
+      "ذلك",
+      "ربكم",
+      "ربهم",
+      "على",
+      "عليه",
+      "عليهم",
+      "عن",
+      "في",
+      "فيه",
+      "فيها",
+      "قبل",
+      "قد",
+      "كان",
+      "كانت",
+      "كل",
+      "كما",
+      "لا",
+      "لم",
+      "لن",
+      "له",
+      "لهم",
+      "ما",
+      "من",
+      "هذا",
+      "هذه",
+      "هم",
+      "هو",
+      "هي",
+      "وهم",
+      "وهو",
+      "وهي",
+      "يا"
+    ],
+    "deformulaize": [
+      "الذين",
+      "الله",
+      "امنوا",
+      "ايها",
+      "كانت",
+      "والله",
+      "وكان",
+      "ومن",
+      "يايها"
+    ],
+    "bridge_patterns": [
+      "akhiruha_awwaliha",
+      "akhiruha_dalil_ala_awwaliha",
+      "anaqa_ibtidauha_tamamaha",
+      "awwaliha_akhiruha",
+      "inaatafa_ala_iftitahiha_wakhitamiha",
+      "khatama_iftataha",
+      "radd_alkhitam_ala_aliftitah",
+      "radd_almaqtae_ala_almatlae",
+      "rajaa_awwal_alsurah_ila_akhiriha",
+      "waffa_matlauha_maqtauha"
+    ],
+    "primary_binary": "support_positive = explicit_support OR material_support"
+  },
+  "primary_result": {
+    "target_support_positive": 3,
+    "target_total": 11,
+    "background_support_positive": 6,
+    "background_total": 103,
+    "odds_ratio": 6.0625,
+    "fisher_one_sided_p": 0.04118291923524781,
+    "expected_target_hits_under_global_rate": 0.8684210526315789,
+    "lift_vs_expectation": 3.454545454545455,
+    "verdict": "PASS"
+  },
+  "secondary_result": {
+    "target_explicit_support": 3,
+    "background_explicit_support": 5,
+    "target_support_hit_surahs": [
+      4,
+      47,
+      59
+    ],
+    "target_explicit_hit_surahs": [
+      4,
+      47,
+      59
+    ],
+    "background_support_hits": [
+      {
+        "surah": 6,
+        "name_ar": "الأنعام",
+        "shared_endpoint_tokens": [
+          "الذي"
+        ],
+        "combined_hits": [
+          "الذي"
+        ],
+        "bridge_cues": [
+          "akhiruha_awwaliha",
+          "awwaliha_akhiruha"
+        ]
+      },
+      {
+        "surah": 17,
+        "name_ar": "الإسراء",
+        "shared_endpoint_tokens": [
+          "الذي"
+        ],
+        "combined_hits": [
+          "الذي"
+        ],
+        "bridge_cues": []
+      },
+      {
+        "surah": 22,
+        "name_ar": "الحج",
+        "shared_endpoint_tokens": [
+          "الناس"
+        ],
+        "combined_hits": [
+          "الناس"
+        ],
+        "bridge_cues": [
+          "akhiruha_awwaliha"
+        ]
+      },
+      {
+        "surah": 35,
+        "name_ar": "فاطر",
+        "shared_endpoint_tokens": [
+          "علي"
+        ],
+        "combined_hits": [
+          "علي"
+        ],
+        "bridge_cues": [
+          "akhiruha_awwaliha"
+        ]
+      },
+      {
+        "surah": 45,
+        "name_ar": "الجاثية",
+        "shared_endpoint_tokens": [
+          "الحكيم",
+          "العزيز"
+        ],
+        "combined_hits": [
+          "الحكيم",
+          "العزيز"
+        ],
+        "bridge_cues": [
+          "akhiruha_awwaliha"
+        ]
+      },
+      {
+        "surah": 112,
+        "name_ar": "الإخلاص",
+        "shared_endpoint_tokens": [
+          "احد"
+        ],
+        "combined_hits": [
+          "احد"
+        ],
+        "bridge_cues": [
+          "akhiruha_awwaliha"
+        ]
+      }
+    ]
+  },
+  "target_records": [
+    {
+      "surah": 3,
+      "name_ar": "آل عمران",
+      "name_tl": "Ali 'Imran",
+      "is_target": true,
+      "first_content_verse": 2,
+      "last_verse": 200,
+      "shared_endpoint_tokens": [],
+      "opening_hits": [],
+      "closing_hits": [],
+      "combined_hits": [],
+      "bridge_cues": [
+        "akhiruha_awwaliha"
+      ],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": false,
+      "material_support": false,
+      "support_positive": false,
+      "opening_span_excerpt": "# آل عمران : ( 1 - 5 ) الم # ) الم الله لا إله إلا هو الحي القيوم نزل عليك الكتاب بالحق مصدقا لما ~~بين يديه وأنزل التوراة والإنجيل من قبل هدى للناس وأنزل الفرقان إن الذين ~~كفروا بآيات الله لهم عذاب شديد والله عزيز ذو انتقام إن الله لا يخفى عليه ~~شيء في الأرض ولا في السمآء ( ( ) # ) بسم الله ( الواحد المتفرد بالإحاطة بالكمال ) الرحمن ( الذي وسعت ~~رحمته إي",
+      "closing_span_excerpt": "، ثم أمر بملاك ذلك كله فقال : ( واتقوا الله ) ~~أي في جميع ذلك بأن تكونوا مراقبين له ، مستحضرين لجميع ما يمكنكم أن ~~تعلموه من عظمته بنعمته ونقمته ) لعلكم تفلحون ) أي ليكون حالكم حال من ~~يرجى فلاحه وظفره بما يريد من النصر على الأعداء والفوز بعيش الشهداء ، ~~وهذه الآية - كما ترى - معلمة بشرط استجابة الدعاء بالنصرة على الكافرين ، ~~المختتم به البقرة # 77 ( ) ",
+      "parser": {
+        "matched_heading_name": "آل عمران",
+        "heading_start": 1137587,
+        "heading_end": 1137618,
+        "section_start": 1137618,
+        "section_end": 1575758
+      }
+    },
+    {
+      "surah": 4,
+      "name_ar": "النساء",
+      "name_tl": "An-Nisa",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 176,
+      "shared_endpoint_tokens": [
+        "رجالا",
+        "ونساء"
+      ],
+      "opening_hits": [
+        "رجالا",
+        "ونساء"
+      ],
+      "closing_hits": [
+        "رجالا",
+        "ونساء"
+      ],
+      "combined_hits": [
+        "رجالا",
+        "ونساء"
+      ],
+      "bridge_cues": [
+        "akhiruha_awwaliha",
+        "awwaliha_akhiruha"
+      ],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": true,
+      "material_support": true,
+      "support_positive": true,
+      "opening_span_excerpt": "# مقصودها الاجتماع على التوحيد الذي هدت إليه آل عمران ، والكتاب الذي حدت ~~عليه البقرة لأجل الدين الذي جمعته الفاتحة تحذيرا مما أراده شأس بن قيس ~~وأنظاره من الفرقة ، وذه السورة من أواخر ما نزل ، روى البخاري في فضائل ~~القرآ ، \" عن يوسف بن ماهك أن عراقيا سأل أم المؤمنين عائشة رضي الله عنها ~~أن تريه مصحفها ، فقالت : لم ؟ قال لعلي : أؤلف القرآن عليه ، فإنه يق",
+      "closing_span_excerpt": "الله ناصرا ؛ ولا يخفى عليه شيء من حاله ، وما أشد مناسبة ختامها بإحاطة ~~العلم لما دل عليه أولها من تمام القدرة ، فكان آخرها دليلا على أولها لأن ~~تمام العلم مستلزم لشمول القدرة ، قال الإمام : وهذان الوصفان هما اللذان ~~بهما ثبتت الربوية والإلهية والجلال والعزة ، وبهما يجب على العبد أن يكون ~~مطيعا للأوامر والنواهي منقادا لكل التكاليف - انتهى . # ولختام أول آ",
+      "parser": {
+        "matched_heading_name": "النساء",
+        "heading_start": 1575758,
+        "heading_end": 1575780,
+        "section_start": 1575780,
+        "section_end": 1960559
+      }
+    },
+    {
+      "surah": 8,
+      "name_ar": "الأنفال",
+      "name_tl": "Al-Anfal",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 75,
+      "shared_endpoint_tokens": [],
+      "opening_hits": [],
+      "closing_hits": [],
+      "combined_hits": [],
+      "bridge_cues": [],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": false,
+      "material_support": false,
+      "support_positive": false,
+      "opening_span_excerpt": "# الأنفال : ( 1 - 3 ) يسألونك عن الأنفال. .. . . # ) يسألونك عن الأنفال قل الأنفال لله والرسول فاتقوا الله وأصلحوا ذات ~~بينكم وأطيعوا الله ورسوله إن كنتم مؤمنين إنما المؤمنون الذين إذا ذكر ~~الله وجلت قلوبهم وإذا تليت عليهم آياته زادتهم إيمانا وعلى ربهم يتوكلون ~~الذين يقيمون الصلاة ومما رزقناهم ينفقون ( ( ) # وتسمى الجهاد ) بسم الله ) أي الذي له جميع الحول",
+      "closing_span_excerpt": "ض ( وتكون تلك حينئذ مبينة أمر ما كان قبل غزوة ~~بدر - وهوحسن ، والآية التي في سورة الأحزاب مؤيدة له ، ثم علل سبحانه ما ~~ذكر بما يرغب فيه فقال : ( إن الله ) أي الذي له صفات الكمال كلها ) بكل ~~شيء عليم ( فهو يعلم أن هذا هو الذي تدور عليه المصلحة وتدوم به الألفة كما ~~علم في أول الأمر أن نوط الإرث وغيره من لوازم القرب بالأخوة الإسلامية ~~أولى لما في ذلك من تك",
+      "parser": {
+        "matched_heading_name": "الأنفال",
+        "heading_start": 3148079,
+        "heading_end": 3148102,
+        "section_start": 3148102,
+        "section_end": 3309757
+      }
+    },
+    {
+      "surah": 9,
+      "name_ar": "التوبة",
+      "name_tl": "At-Tawbah",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 129,
+      "shared_endpoint_tokens": [],
+      "opening_hits": [],
+      "closing_hits": [],
+      "combined_hits": [],
+      "bridge_cues": [
+        "akhiruha_awwaliha"
+      ],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": false,
+      "material_support": false,
+      "support_positive": false,
+      "opening_span_excerpt": "# مقصودها معاداة من أعرض عما دعت إليه السورة الماضية من اتباع الداعي إلى # الله في توحيده وأتباع ما يرضيه ، وموالاة من أقبل عليه ، وأدل ما فيها ~~على الإبلاغ في هذا المقصد فصة المحلفين فإنهم - لاعترافهم بالتخلف عن ~~الداعي بغير عذر في غزوة تبوك المحتمل على وجه بعيد منهم رضي الله عنهم ~~للاعراض بالقلب - هجروا ، وأعرض عنهم بكل اعتبار حتى بالكلام ، فذلك معنى ~~",
+      "closing_span_excerpt": "ويزيد من نعمته مالا يبلغ إلى حد ونهاية إذ ~~نعمه دائمة ومتنه متظاهر ) الله ) أي الملك الأعلى الذي لا كفؤ له ، وإنما ~~كان كافيا لأنه ) لا ms2103 إله إلا هو ( فلا مكافئ له فلا راد لأمره ولا معقب ~~لحكمه . # ولما قام الدليل على أنه كفؤ له ، وجب قصر الرغائب فقال : ( عليه ( اي ~~وحده ) توكلت ( لأن أمره نافذ في كل شيء ) وهو رب ( اي مالك ومخترع ومدبر ؛ ~~ولما كان ",
+      "parser": {
+        "matched_heading_name": "التوبة",
+        "heading_start": 3309757,
+        "heading_end": 3309774,
+        "section_start": 3309774,
+        "section_end": 3641192
+      }
+    },
+    {
+      "surah": 33,
+      "name_ar": "الأحزاب",
+      "name_tl": "Al-Ahzab",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 73,
+      "shared_endpoint_tokens": [],
+      "opening_hits": [],
+      "closing_hits": [],
+      "combined_hits": [],
+      "bridge_cues": [],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": false,
+      "material_support": false,
+      "support_positive": false,
+      "opening_span_excerpt": "# الأحزاب : ( 1 - 2 ) يا أيها النبي. .. . . # ) ياأيها النبي اتق الله ولا تطع الكافرين والمنافقين إن الله كان عليما ~~حكيما واتبع ما يوحى إليك من ربك إن الله كان بما تعملون خبيرا ( ( ) # مقصودها الحث على الصدق في الإخلاص في التوجه إلى الخالق من غير مراعاة ~~بوجه ما للخلائق ، لأنه عليم بما يصلحهم ، حكيم فيما يفعله فهو يعلي من ~~يشاء وإن كان ضعيفا ، ويردي من ي",
+      "closing_span_excerpt": "ى الموت ) والمؤمنات ( العصاة ~~وغيرهم فيرفقهم لبذلها بعد حملها فالآية من الاحتباك : ذكر العذاب أولا ~~دليلا على النعيم ثانيا ، والتوبة ثانيا دليلا على منعها أولا أي عرض هذا ~~العرض وحكم هذا الحكم ليعذب بحجة يتعارفها الناس فيما بينهم . # ولما كان هذا مؤذنا بأنه ما من أحد إلا وقد حملها وقتا ما ، فكان مرغبا ~~للقلوب مرهبا للنفوس ، قال مؤنسا لها مرغبا : ( وكان ا",
+      "parser": {
+        "matched_heading_name": "الأحزاب",
+        "heading_start": 6800742,
+        "heading_end": 6800765,
+        "section_start": 6800765,
+        "section_end": 6965353
+      }
+    },
+    {
+      "surah": 47,
+      "name_ar": "محمد",
+      "name_tl": "Muhammad",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 38,
+      "shared_endpoint_tokens": [
+        "سبيل"
+      ],
+      "opening_hits": [
+        "سبيل"
+      ],
+      "closing_hits": [],
+      "combined_hits": [
+        "سبيل"
+      ],
+      "bridge_cues": [
+        "khatama_iftataha",
+        "awwaliha_akhiruha"
+      ],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": true,
+      "material_support": true,
+      "support_positive": true,
+      "opening_span_excerpt": "# محمد : ( 1 - 3 ) الذين كفروا وصدوا. .. . . # ) الذين كفروا وصدوا عن سبيل الله أضل أعمالهم والذين آمنوا وعملوا ~~الصالحات وآمنوا بما نزل على محمد وهو الحق من ربهم كفر عنهم سيئاتهم وأصلح ~~بالهم ذلك بأن الذين كفروا اتبعوا الباطل وأن الذين آمنوا اتبعوا الحق من ~~ربهم كذلك يضرب الله للناس أمثالهم ( ( ) # مقصودها التقدم إلى المؤمنين في حفظ حظيرة الدين بإدامة ال",
+      "closing_span_excerpt": "بير ب ( غير ) وتثبيتا ~~له : ( ثم ) أي بعد استبعاد من يستبعد وعلوا الهمة في مجاوزة جميع عقبات ~~النفس والشيطان : ( لا يكونوا أمثالكم ( في التولي عنه بترك شيء مما أمر به ~~أو فعل شيء مما نهى عنه ، ومن قدر على الإيجاد قدر على الإعدام . # بل هو أهون في مجاري العادات ، فقد ثبت ms4882 أنه سبحانه لو شاء لانتصر من ~~الكفار ، إما بإهلاكهم أو إما بناس غيركم بضرب رقاب",
+      "parser": {
+        "matched_heading_name": "محمد",
+        "heading_start": 8378817,
+        "heading_end": 8378837,
+        "section_start": 8378837,
+        "section_end": 8455359
+      }
+    },
+    {
+      "surah": 59,
+      "name_ar": "الحشر",
+      "name_tl": "Al-Hashr",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 24,
+      "shared_endpoint_tokens": [
+        "الحكيم",
+        "السماوات",
+        "العزيز"
+      ],
+      "opening_hits": [
+        "الحكيم",
+        "السماوات",
+        "العزيز"
+      ],
+      "closing_hits": [
+        "الحكيم"
+      ],
+      "combined_hits": [
+        "الحكيم",
+        "السماوات",
+        "العزيز"
+      ],
+      "bridge_cues": [
+        "anaqa_ibtidauha_tamamaha"
+      ],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": true,
+      "material_support": true,
+      "support_positive": true,
+      "opening_span_excerpt": "# مقصودها بيان ما دل عليه آخر المجادلة من التنزه عن شوائب النقص بإثبات ~~القدرة الشاملة بدليل شهودي على أنه يغلب هو ورسله ، ومن حاده في الأذلين ، ~~لأنه قوي عزيز ، المستلزمة للعلم التام المستلزم الحكمة البالغة المستلزمة ~~للحشر المظهر لفلاح المفلح وخسار الخاسر ms5292 على زجه الثبات الكاشف أتم كشف ~~لجميع صفات الكمال ، وأدل ما فيها على ذلكط تأمل قصة بني النضي",
+      "closing_span_excerpt": "- انتهى . # وقد علم سر اتبع الأسماء الشريفة من غير عطف ، وذاك أنه لما ابتدأ ب ( هو ~~) وأخبر عنه بالاسم العلم الأعظم المفرد المصون الجامع لجميع معاني الأسماء ~~الحسنى ، أتبعه تلك الأوصاف العلى من غير عطف إعلاما بأنه لا شيء منها يؤدي ~~جميع معناه بالمفهوم المتعارف عند أهل اللغة ، ولذلك جمع بعدها الأسماء ~~إشارة إلى أنه لا يجمع معناه إلا جميع الأوصاف المنزلة ف",
+      "parser": {
+        "matched_heading_name": "الحشر",
+        "heading_start": 9162908,
+        "heading_end": 9162929,
+        "section_start": 9162929,
+        "section_end": 9246756
+      }
+    },
+    {
+      "surah": 60,
+      "name_ar": "الممتحنة",
+      "name_tl": "Al-Mumtahanah",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 13,
+      "shared_endpoint_tokens": [],
+      "opening_hits": [],
+      "closing_hits": [],
+      "combined_hits": [],
+      "bridge_cues": [
+        "khatama_iftataha",
+        "akhiruha_awwaliha"
+      ],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": false,
+      "material_support": false,
+      "support_positive": false,
+      "opening_span_excerpt": "# مقصودها براءة من أقر بالإيمان ممن ms5341 اتسم بالعدوان دلالة على صحة مدعاه ~~كما أن الكفار تبرؤوا من المؤمنين وكذبوا بما جاءهم من الحق لئلا يكونوا ~~على باطلهم أحرص من المؤمنين على حقهم ، وتسميتها بالممتحنة أوضح شيء فيها ~~وأدله على ذلك لأن الصهر أعظم الوصل وأشرفها بعد الدين ، فإذا نفى ومنع دل ~~على أعظم المقاطعة لدلالته على الامتهان بسبب الكفران الذي هو أ",
+      "closing_span_excerpt": "عرف أنه ناج أو هالك ، وكان الموتى أعم من الكفار ، ~~وموتى الكفار أعم ممن يدفن منهم فقال : ( من أصحاب القبور ( فإن الكفار ~~منهم قد علموا يأسهم من حصول الخير منها علما قطعيا ، ويجوز أن يكون ) من ( ~~ابتدائية فيكون المعنى : كما يئس عباد الأوثان من لقاء من مات ، فدفن ~~باعتقاد أنه لا اجتماع بينهم أصلا لأنه لا يمكن بعثه لا إلا الدنيا ولا غلى ~~الآخرة لأنه لا آخر",
+      "parser": {
+        "matched_heading_name": "الممتحنة",
+        "heading_start": 9246756,
+        "heading_end": 9246780,
+        "section_start": 9246780,
+        "section_end": 9296231
+      }
+    },
+    {
+      "surah": 63,
+      "name_ar": "المنافقون",
+      "name_tl": "Al-Munafiqun",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 11,
+      "shared_endpoint_tokens": [],
+      "opening_hits": [],
+      "closing_hits": [],
+      "combined_hits": [],
+      "bridge_cues": [],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": false,
+      "material_support": false,
+      "support_positive": false,
+      "opening_span_excerpt": "# مقصودها كمال التحذير مما يثلم الإيمان من الأعمال الباطنة ، والترهيب ~~مما يقدح في الإسلام من الأحوال الظاهرة ، بمخالفة الفعل للقول فإنه نفاق ~~في الجملة فيوشك يجر إلى كمال النفاق فيخرج من الدين ويدخل الهاوية ، ليكون ~~هذا التحذير سببا في صدق الأقوال ثم صدق الأعمال ثم صدق الأخلاق ثم صدق ~~الأحوال ثم قف الأنفاس ، فصدق القول ms5414 أن لا يقول القائل إلا عن بر",
+      "closing_span_excerpt": "ي لا شك في إراشاد اللفظ إليها : ~~الله عالم فإنه يقول ذلك ، عطف عليه قوله حاثا على المسارعة إلى الخروج عن ~~عهدة الطاعات والاستعداد لما لا بد منه من اللقاء محذرا من الإخلال ms5429 ولأنه ~~لا تهديد كالعلم : ( والله ) أي الذي له الإحاطة الشاملة علما وقدرة ) خبير ~~) أي بالغ الخبرة والعلم ظاهرا وباطنا ) بما تعلمون ) أي توقعون عمله في ~~الماضي والحال والمآل كله ",
+      "parser": {
+        "matched_heading_name": "المنافقون",
+        "heading_start": 9372041,
+        "heading_end": 9372066,
+        "section_start": 9372066,
+        "section_end": 9398925
+      }
+    },
+    {
+      "surah": 65,
+      "name_ar": "الطلاق",
+      "name_tl": "At-Talaq",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 12,
+      "shared_endpoint_tokens": [],
+      "opening_hits": [],
+      "closing_hits": [],
+      "combined_hits": [],
+      "bridge_cues": [
+        "akhiruha_awwaliha"
+      ],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": false,
+      "material_support": false,
+      "support_positive": false,
+      "opening_span_excerpt": "# لمقصودها تقدير حسن التدبير في المفارقة والمهاجرة بتهذيب الأخلاق ، ~~بالتقوى لا سيما في الإنفاق ، لا سيما إن كان ذلك عند الشقاق ، لا سيما إن ~~كان في أمر النساء لا سيما عند الطلاق ، ليكونالفراق على نحو التواصل ~~والتلاق ، واسمها الطلاق أجمع ما يكون لذلك ، فلذا سميت به وكذا سورة ~~النساء القصرى لأن العدل في الفراق بعض مطلق العدل الذي هو محط مقصود سورة ~~النس",
+      "closing_span_excerpt": "ي وأودعه فصوصه وغير ذلك من كتبه واستند فيه في ~~بعضها إلى الغزالي إتقانا لمكره - أعاذنا الله من شره ، والغزالي بريء منه ~~بشهادة ما وجد من عقائده في الإحياء وغيره ) قدير ) أي بالغ القدرة . # ولما كانت إحاطة العلم دالة على تمام القدرة وإليهما يرجع جميع الأسماء ~~والصفات قال : ( قد أحاط ( لتمام قدرته ) بكل شيء ( مطلقا ، ولما أسند ~~الإحاطة إليه سبحانه تعظيما ل",
+      "parser": {
+        "matched_heading_name": "الطلاق",
+        "heading_start": 9440908,
+        "heading_end": 9440930,
+        "section_start": 9440930,
+        "section_end": 9483012
+      }
+    },
+    {
+      "surah": 98,
+      "name_ar": "البينة",
+      "name_tl": "Al-Bayyinah",
+      "is_target": true,
+      "first_content_verse": 1,
+      "last_verse": 8,
+      "shared_endpoint_tokens": [],
+      "opening_hits": [],
+      "closing_hits": [],
+      "combined_hits": [],
+      "bridge_cues": [],
+      "start_cue": true,
+      "end_cue": true,
+      "explicit_support": false,
+      "material_support": false,
+      "support_positive": false,
+      "opening_span_excerpt": "# سورة الإعلام بأن هذا الكتاب القيم من علو مقداره وجليل آثاره أنه كما ~~أنه لقوم نور وهدى فهو لآخرين وقر وعمى ، فيقود إلى الجنة دار الأبرار ، ~~ويسوق إلا النار دار الأشقياء الفجار ، وعلى ذلك دل كل من اسمائها \" الذين ~~كفروا \" \" والمنفكين \" بتأمل الآية في انقسام الناس إلى أهل الشقاوة وأهل ms6027 ~~السعادة ) بسم الله ( الذي له العلو المطلق فلا يخرج شيء عن مراد",
+      "closing_span_excerpt": "لاوة النبي ( صلى الله عليه وسلم ) بما يتذكر من ~~الأمر الشريف بتخصيصه بذلك ، فيصير كلما قرأها هذه السورة الجامعة غائبا عن ~~تلاوة نفسه مصغيا بأذني قلبه إلى روح النبوة يتلو عليه ذلك فيدوم له حال ~~الشهود الذي وصل إليه بسر تلك PageV08P502 ~~صفحة رقم 503 # الضربة . # ولثبوته في هذا المقام قال ( صلى الله عليه وسلم ) : ( أقرؤكم أبي ) رواه ~~أحمد ms6037 والترمذي و",
+      "parser": {
+        "matched_heading_name": "البينة",
+        "heading_start": 10425308,
+        "heading_end": 10425330,
+        "section_start": 10425330,
+        "section_end": 10443516
+      }
+    }
+  ]
+}

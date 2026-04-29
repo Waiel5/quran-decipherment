@@ -1,0 +1,1011 @@
+{
+  "id": "cross-finding-012",
+  "title": "Late-Meccan Scripture-Announcement Apparatus — joint-peak concordance test",
+  "bonferroni_family": "cross-finding-012-joint-peak",
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016666666666666666,
+  "direction": "Late-Meccan-peak (B5/B6/B7 modal); 1-sided on W",
+  "n_perm": 10000,
+  "seed": 20260417,
+  "n_bins": 8,
+  "bin_rank_upper_edges": [
+    15.125,
+    29.25,
+    43.375,
+    57.5,
+    71.625,
+    85.75,
+    99.875
+  ],
+  "bin_counts": [
+    15,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    15
+  ],
+  "late_meccan_band_bins_0indexed": [
+    4,
+    5,
+    6
+  ],
+  "target_bins_cell_b_0indexed": [
+    4,
+    5,
+    6
+  ],
+  "pattern_b": {
+    "axes": [
+      "qul_density",
+      "book_reference_density",
+      "eschatological_density",
+      "muq_cardinality",
+      "loanword_density"
+    ],
+    "kendall_w_observed": 0.7923809523809524,
+    "kendall_w_p_perm": 0.0098990100989901,
+    "kendall_w_bonferroni_survives": true,
+    "per_axis_peak_bin": {
+      "qul_density": "B7",
+      "book_reference_density": "B7",
+      "eschatological_density": "B6",
+      "muq_cardinality": "B6",
+      "loanword_density": "B7"
+    },
+    "per_axis_means_by_bin": {
+      "qul_density": {
+        "B1": 0.0,
+        "B2": 0.0,
+        "B3": 0.37545685976253856,
+        "B4": 5.896831124962025,
+        "B5": 8.168873633088692,
+        "B6": 7.3620939693011085,
+        "B7": 8.823933515584324,
+        "B8": 4.240013189321667
+      },
+      "book_reference_density": {
+        "B1": 4.0588972431077694,
+        "B2": 4.405693627255597,
+        "B3": 4.184996243281513,
+        "B4": 5.6588620026859475,
+        "B5": 16.668747973977347,
+        "B6": 23.69085634976825,
+        "B7": 28.141732990254816,
+        "B8": 14.553956630269921
+      },
+      "eschatological_density": {
+        "B1": 2.2442492148374504,
+        "B2": 9.213978642092169,
+        "B3": 9.820150389637968,
+        "B4": 12.450847358543825,
+        "B5": 20.370232440467984,
+        "B6": 31.994738681748725,
+        "B7": 28.83068546026403,
+        "B8": 29.00147255646275
+      },
+      "muq_cardinality": {
+        "B1": 0.0,
+        "B2": 0.07142857142857142,
+        "B3": 0.0,
+        "B4": 0.7857142857142857,
+        "B5": 1.2142857142857142,
+        "B6": 2.357142857142857,
+        "B7": 1.1428571428571428,
+        "B8": 0.0
+      },
+      "loanword_density": {
+        "B1": 26.93340153711671,
+        "B2": 32.813585529610855,
+        "B3": 32.654109834511345,
+        "B4": 58.63104381830375,
+        "B5": 88.88428840292296,
+        "B6": 133.70832725860626,
+        "B7": 139.00674178661168,
+        "B8": 129.71631872054874
+      }
+    },
+    "per_axis_ranks_by_bin": {
+      "qul_density": {
+        "B1": 7.0,
+        "B2": 8.0,
+        "B3": 6.0,
+        "B4": 4.0,
+        "B5": 2.0,
+        "B6": 3.0,
+        "B7": 1.0,
+        "B8": 5.0
+      },
+      "book_reference_density": {
+        "B1": 8.0,
+        "B2": 6.0,
+        "B3": 7.0,
+        "B4": 5.0,
+        "B5": 3.0,
+        "B6": 2.0,
+        "B7": 1.0,
+        "B8": 4.0
+      },
+      "eschatological_density": {
+        "B1": 8.0,
+        "B2": 7.0,
+        "B3": 6.0,
+        "B4": 5.0,
+        "B5": 4.0,
+        "B6": 1.0,
+        "B7": 3.0,
+        "B8": 2.0
+      },
+      "muq_cardinality": {
+        "B1": 6.0,
+        "B2": 5.0,
+        "B3": 7.0,
+        "B4": 4.0,
+        "B5": 2.0,
+        "B6": 1.0,
+        "B7": 3.0,
+        "B8": 8.0
+      },
+      "loanword_density": {
+        "B1": 8.0,
+        "B2": 6.0,
+        "B3": 7.0,
+        "B4": 5.0,
+        "B5": 4.0,
+        "B6": 2.0,
+        "B7": 1.0,
+        "B8": 3.0
+      }
+    },
+    "cell_b_observed_pass": true,
+    "cell_b_mode_peak_bin": "B7",
+    "cell_b_n_axes_in_target": 5,
+    "cell_b_p_perm": 0.1578842115788421,
+    "cell_b_bonferroni_survives": false,
+    "w_perm_distribution": {
+      "mean": 0.4899156190476191,
+      "sd": 0.14108640201842063,
+      "p50": 0.49333333333333335,
+      "p95": 0.7161904761904762,
+      "p99": 0.7904761904761904,
+      "p99_9": 0.8571466666666674,
+      "max": 0.900952380952381
+    },
+    "surahs_in_mode_peak_bin": [
+      {
+        "sid": 2,
+        "name": "Al-Baqarah",
+        "noldeke_rank": 91
+      },
+      {
+        "sid": 3,
+        "name": "Ali 'Imran",
+        "noldeke_rank": 97
+      },
+      {
+        "sid": 6,
+        "name": "Al-An'am",
+        "noldeke_rank": 89
+      },
+      {
+        "sid": 7,
+        "name": "Al-A'raf",
+        "noldeke_rank": 87
+      },
+      {
+        "sid": 8,
+        "name": "Al-Anfal",
+        "noldeke_rank": 95
+      },
+      {
+        "sid": 13,
+        "name": "Ar-Ra'd",
+        "noldeke_rank": 90
+      },
+      {
+        "sid": 35,
+        "name": "Fatir",
+        "noldeke_rank": 86
+      },
+      {
+        "sid": 46,
+        "name": "Al-Ahqaf",
+        "noldeke_rank": 88
+      },
+      {
+        "sid": 47,
+        "name": "Muhammad",
+        "noldeke_rank": 96
+      },
+      {
+        "sid": 57,
+        "name": "Al-Hadid",
+        "noldeke_rank": 99
+      },
+      {
+        "sid": 61,
+        "name": "As-Saf",
+        "noldeke_rank": 98
+      },
+      {
+        "sid": 62,
+        "name": "Al-Jumu'ah",
+        "noldeke_rank": 94
+      },
+      {
+        "sid": 64,
+        "name": "At-Taghabun",
+        "noldeke_rank": 93
+      },
+      {
+        "sid": 98,
+        "name": "Al-Bayyinah",
+        "noldeke_rank": 92
+      }
+    ]
+  },
+  "pattern_b_4axis_sensitivity_audit036": {
+    "axes": [
+      "qul_density",
+      "book_reference_density",
+      "eschatological_density",
+      "loanword_density"
+    ],
+    "rationale": "muq_cardinality is Pattern-B BY DEFINITION per scratch connection note; dropping it tests whether the joint-peak signal survives on truly-evidentiary axes alone.",
+    "kendall_w_observed": 0.8928571428571429,
+    "kendall_w_p_perm": 0.0029997000299970002,
+    "kendall_w_bonferroni_survives": true,
+    "per_axis_peak_bin": {
+      "qul_density": "B7",
+      "book_reference_density": "B7",
+      "eschatological_density": "B6",
+      "loanword_density": "B7"
+    },
+    "cell_b_4axis_strict_pass": true,
+    "cell_b_mode_peak_bin": "B7",
+    "cell_b_n_axes_in_target": 4,
+    "n_axes": 4
+  },
+  "pattern_a_positive_control": {
+    "axes": [
+      "allah_density",
+      "legal_term_density",
+      "personal_pronoun_density",
+      "mean_verse_length",
+      "divine_name_density"
+    ],
+    "target_bins_0indexed": [
+      6,
+      7
+    ],
+    "kendall_w_observed": 0.9466666666666667,
+    "kendall_w_p_perm": 0.0008999100089991,
+    "per_axis_peak_bin": {
+      "allah_density": "B8",
+      "legal_term_density": "B8",
+      "personal_pronoun_density": "B8",
+      "mean_verse_length": "B8",
+      "divine_name_density": "B8"
+    },
+    "cell_b_observed_pass": true,
+    "cell_b_mode_peak_bin": "B8",
+    "cell_b_n_axes_in_target": 5,
+    "cell_b_p_perm": 0.1282871712828717,
+    "mw5_pipeline_valid": true
+  },
+  "surahs_by_bin": {
+    "B1": [
+      {
+        "sid": 74,
+        "name": "Al-Muddaththir",
+        "noldeke_rank": 2,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 86,
+        "name": "At-Tariq",
+        "noldeke_rank": 15,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 90,
+        "name": "Al-Balad",
+        "noldeke_rank": 11,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 92,
+        "name": "Al-Layl",
+        "noldeke_rank": 10,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 93,
+        "name": "Ad-Duhaa",
+        "noldeke_rank": 13,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 94,
+        "name": "Ash-Sharh",
+        "noldeke_rank": 12,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 96,
+        "name": "Al-'Alaq",
+        "noldeke_rank": 1,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 97,
+        "name": "Al-Qadr",
+        "noldeke_rank": 14,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 102,
+        "name": "At-Takathur",
+        "noldeke_rank": 8,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 104,
+        "name": "Al-Humazah",
+        "noldeke_rank": 6,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 105,
+        "name": "Al-Fil",
+        "noldeke_rank": 9,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 106,
+        "name": "Quraysh",
+        "noldeke_rank": 4,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 107,
+        "name": "Al-Ma'un",
+        "noldeke_rank": 7,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 108,
+        "name": "Al-Kawthar",
+        "noldeke_rank": 5,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 111,
+        "name": "Al-Masad",
+        "noldeke_rank": 3,
+        "noldeke_phase": "Early Meccan"
+      }
+    ],
+    "B2": [
+      {
+        "sid": 53,
+        "name": "An-Najm",
+        "noldeke_rank": 28,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 68,
+        "name": "Al-Qalam",
+        "noldeke_rank": 18,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 73,
+        "name": "Al-Muzzammil",
+        "noldeke_rank": 23,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 80,
+        "name": "'Abasa",
+        "noldeke_rank": 17,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 81,
+        "name": "At-Takwir",
+        "noldeke_rank": 27,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 82,
+        "name": "Al-Infitar",
+        "noldeke_rank": 26,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 84,
+        "name": "Al-Inshiqaq",
+        "noldeke_rank": 29,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 85,
+        "name": "Al-Buruj",
+        "noldeke_rank": 22,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 87,
+        "name": "Al-A'la",
+        "noldeke_rank": 19,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 91,
+        "name": "Ash-Shams",
+        "noldeke_rank": 16,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 95,
+        "name": "At-Tin",
+        "noldeke_rank": 20,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 99,
+        "name": "Az-Zalzalah",
+        "noldeke_rank": 25,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 101,
+        "name": "Al-Qari'ah",
+        "noldeke_rank": 24,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 103,
+        "name": "Al-'Asr",
+        "noldeke_rank": 21,
+        "noldeke_phase": "Early Meccan"
+      }
+    ],
+    "B3": [
+      {
+        "sid": 51,
+        "name": "Adh-Dhariyat",
+        "noldeke_rank": 39,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 52,
+        "name": "At-Tur",
+        "noldeke_rank": 40,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 55,
+        "name": "Ar-Rahman",
+        "noldeke_rank": 43,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 56,
+        "name": "Al-Waqi'ah",
+        "noldeke_rank": 41,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 69,
+        "name": "Al-Haqqah",
+        "noldeke_rank": 38,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 70,
+        "name": "Al-Ma'arij",
+        "noldeke_rank": 42,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 75,
+        "name": "Al-Qiyamah",
+        "noldeke_rank": 36,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 77,
+        "name": "Al-Mursalat",
+        "noldeke_rank": 32,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 78,
+        "name": "An-Naba",
+        "noldeke_rank": 33,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 79,
+        "name": "An-Nazi'at",
+        "noldeke_rank": 31,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 83,
+        "name": "Al-Mutaffifin",
+        "noldeke_rank": 37,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 88,
+        "name": "Al-Ghashiyah",
+        "noldeke_rank": 34,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 89,
+        "name": "Al-Fajr",
+        "noldeke_rank": 35,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 100,
+        "name": "Al-'Adiyat",
+        "noldeke_rank": 30,
+        "noldeke_phase": "Early Meccan"
+      }
+    ],
+    "B4": [
+      {
+        "sid": 1,
+        "name": "Al-Fatihah",
+        "noldeke_rank": 48,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 15,
+        "name": "Al-Hijr",
+        "noldeke_rank": 57,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 20,
+        "name": "Taha",
+        "noldeke_rank": 55,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 26,
+        "name": "Ash-Shu'ara",
+        "noldeke_rank": 56,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 37,
+        "name": "As-Saffat",
+        "noldeke_rank": 50,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 44,
+        "name": "Ad-Dukhan",
+        "noldeke_rank": 53,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 50,
+        "name": "Qaf",
+        "noldeke_rank": 54,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 54,
+        "name": "Al-Qamar",
+        "noldeke_rank": 49,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 71,
+        "name": "Nuh",
+        "noldeke_rank": 51,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 76,
+        "name": "Al-Insan",
+        "noldeke_rank": 52,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 109,
+        "name": "Al-Kafirun",
+        "noldeke_rank": 45,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 112,
+        "name": "Al-Ikhlas",
+        "noldeke_rank": 44,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 113,
+        "name": "Al-Falaq",
+        "noldeke_rank": 46,
+        "noldeke_phase": "Early Meccan"
+      },
+      {
+        "sid": 114,
+        "name": "An-Nas",
+        "noldeke_rank": 47,
+        "noldeke_phase": "Early Meccan"
+      }
+    ],
+    "B5": [
+      {
+        "sid": 17,
+        "name": "Al-Isra",
+        "noldeke_rank": 67,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 18,
+        "name": "Al-Kahf",
+        "noldeke_rank": 69,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 19,
+        "name": "Maryam",
+        "noldeke_rank": 58,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 21,
+        "name": "Al-Anbya",
+        "noldeke_rank": 65,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 23,
+        "name": "Al-Mu'minun",
+        "noldeke_rank": 64,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 25,
+        "name": "Al-Furqan",
+        "noldeke_rank": 66,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 27,
+        "name": "An-Naml",
+        "noldeke_rank": 68,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 32,
+        "name": "As-Sajdah",
+        "noldeke_rank": 70,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 36,
+        "name": "Ya-Sin",
+        "noldeke_rank": 60,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 38,
+        "name": "Sad",
+        "noldeke_rank": 59,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 41,
+        "name": "Fussilat",
+        "noldeke_rank": 71,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 43,
+        "name": "Az-Zukhruf",
+        "noldeke_rank": 61,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 67,
+        "name": "Al-Mulk",
+        "noldeke_rank": 63,
+        "noldeke_phase": "Middle Meccan"
+      },
+      {
+        "sid": 72,
+        "name": "Al-Jinn",
+        "noldeke_rank": 62,
+        "noldeke_phase": "Middle Meccan"
+      }
+    ],
+    "B6": [
+      {
+        "sid": 10,
+        "name": "Yunus",
+        "noldeke_rank": 84,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 11,
+        "name": "Hud",
+        "noldeke_rank": 75,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 12,
+        "name": "Yusuf",
+        "noldeke_rank": 77,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 14,
+        "name": "Ibrahim",
+        "noldeke_rank": 76,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 16,
+        "name": "An-Nahl",
+        "noldeke_rank": 73,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 28,
+        "name": "Al-Qasas",
+        "noldeke_rank": 79,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 29,
+        "name": "Al-'Ankabut",
+        "noldeke_rank": 81,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 30,
+        "name": "Ar-Rum",
+        "noldeke_rank": 74,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 31,
+        "name": "Luqman",
+        "noldeke_rank": 82,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 34,
+        "name": "Saba",
+        "noldeke_rank": 85,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 39,
+        "name": "Az-Zumar",
+        "noldeke_rank": 80,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 40,
+        "name": "Ghafir",
+        "noldeke_rank": 78,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 42,
+        "name": "Ash-Shuraa",
+        "noldeke_rank": 83,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 45,
+        "name": "Al-Jathiyah",
+        "noldeke_rank": 72,
+        "noldeke_phase": "Late Meccan"
+      }
+    ],
+    "B7": [
+      {
+        "sid": 2,
+        "name": "Al-Baqarah",
+        "noldeke_rank": 91,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 3,
+        "name": "Ali 'Imran",
+        "noldeke_rank": 97,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 6,
+        "name": "Al-An'am",
+        "noldeke_rank": 89,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 7,
+        "name": "Al-A'raf",
+        "noldeke_rank": 87,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 8,
+        "name": "Al-Anfal",
+        "noldeke_rank": 95,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 13,
+        "name": "Ar-Ra'd",
+        "noldeke_rank": 90,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 35,
+        "name": "Fatir",
+        "noldeke_rank": 86,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 46,
+        "name": "Al-Ahqaf",
+        "noldeke_rank": 88,
+        "noldeke_phase": "Late Meccan"
+      },
+      {
+        "sid": 47,
+        "name": "Muhammad",
+        "noldeke_rank": 96,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 57,
+        "name": "Al-Hadid",
+        "noldeke_rank": 99,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 61,
+        "name": "As-Saf",
+        "noldeke_rank": 98,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 62,
+        "name": "Al-Jumu'ah",
+        "noldeke_rank": 94,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 64,
+        "name": "At-Taghabun",
+        "noldeke_rank": 93,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 98,
+        "name": "Al-Bayyinah",
+        "noldeke_rank": 92,
+        "noldeke_phase": "Medinan"
+      }
+    ],
+    "B8": [
+      {
+        "sid": 4,
+        "name": "An-Nisa",
+        "noldeke_rank": 100,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 5,
+        "name": "Al-Ma'idah",
+        "noldeke_rank": 114,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 9,
+        "name": "At-Tawbah",
+        "noldeke_rank": 113,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 22,
+        "name": "Al-Hajj",
+        "noldeke_rank": 107,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 24,
+        "name": "An-Nur",
+        "noldeke_rank": 105,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 33,
+        "name": "Al-Ahzab",
+        "noldeke_rank": 103,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 48,
+        "name": "Al-Fath",
+        "noldeke_rank": 108,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 49,
+        "name": "Al-Hujurat",
+        "noldeke_rank": 112,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 58,
+        "name": "Al-Mujadila",
+        "noldeke_rank": 106,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 59,
+        "name": "Al-Hashr",
+        "noldeke_rank": 102,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 60,
+        "name": "Al-Mumtahanah",
+        "noldeke_rank": 110,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 63,
+        "name": "Al-Munafiqun",
+        "noldeke_rank": 104,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 65,
+        "name": "At-Talaq",
+        "noldeke_rank": 101,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 66,
+        "name": "At-Tahrim",
+        "noldeke_rank": 109,
+        "noldeke_phase": "Medinan"
+      },
+      {
+        "sid": 110,
+        "name": "An-Nasr",
+        "noldeke_rank": 111,
+        "noldeke_phase": "Medinan"
+      }
+    ]
+  },
+  "verdict": {
+    "cell_a_kw_pass_5axis": true,
+    "cell_a_kw_pass_4axis_sensitivity": true,
+    "cell_b_joint_peak_pass": false,
+    "cell_b_4axis_strict_pass": true,
+    "mw5_pos_control_pass": true,
+    "verdict_ceiling": "PASS-DIRECTED (post-hoc-noticed; requires independent replication for CONFIRMED)",
+    "overall": "FAIL-OR-NULL"
+  },
+  "pre_reg": "findings/phase-b-hypotheses/cross-finding-012-late-meccan-scripture-announcement-prereg.md",
+  "upstream_json": "findings/phase-b-hypotheses/csv/h-new-125.json"
+}

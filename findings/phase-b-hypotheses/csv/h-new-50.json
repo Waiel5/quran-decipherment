@@ -1,0 +1,291 @@
+{
+  "id": "H-NEW-50",
+  "title": "Bismillah 113+1=114 quantitative test",
+  "seed": 20260415,
+  "n_perm": 100000,
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "cell1_verify": {
+    "n_line_starts": 113,
+    "n_internal": 1,
+    "total": 114,
+    "surahs_without_opener": [
+      9
+    ],
+    "internal_locations": [
+      [
+        27,
+        30
+      ]
+    ],
+    "pass_113_plus_1": true
+  },
+  "cell2_random_deletion_null": {
+    "analytic": {
+      "lam=0.5,p_del=0.008771929824561403": {
+        "Pr(d=i=1)": 0.11205691863907091,
+        "Pr(d=i any)": 0.34900738974809997,
+        "Pr(d=i=1 | d=i)": 0.32107319767627057
+      },
+      "lam=0.5,p_del=0.02": {
+        "Pr(d=i=1)": 0.07051867825455801,
+        "Pr(d=i any)": 0.15424063030799373,
+        "Pr(d=i=1 | d=i)": 0.4571991057981516
+      },
+      "lam=0.5,p_del=0.05": {
+        "Pr(d=i=1)": 0.0052536969380879844,
+        "Pr(d=i any)": 0.012452537169895528,
+        "Pr(d=i=1 | d=i)": 0.4218977118003705
+      },
+      "lam=0.5,p_del=0.1": {
+        "Pr(d=i=1)": 2.3341630043441757e-05,
+        "Pr(d=i any)": 0.00010159024167676459,
+        "Pr(d=i=1 | d=i)": 0.22976252106682787
+      },
+      "lam=1.0,p_del=0.008771929824561403": {
+        "Pr(d=i=1)": 0.13593191357504114,
+        "Pr(d=i any)": 0.30863584752112383,
+        "Pr(d=i=1 | d=i)": 0.4404281442574088
+      },
+      "lam=1.0,p_del=0.02": {
+        "Pr(d=i=1)": 0.08554348088760001,
+        "Pr(d=i any)": 0.1860988150005531,
+        "Pr(d=i=1 | d=i)": 0.45966698330317557
+      },
+      "lam=1.0,p_del=0.05": {
+        "Pr(d=i=1)": 0.006373056539577496,
+        "Pr(d=i any)": 0.026002444422886704,
+        "Pr(d=i=1 | d=i)": 0.24509451634355153
+      },
+      "lam=1.0,p_del=0.1": {
+        "Pr(d=i=1)": 2.8314828538033907e-05,
+        "Pr(d=i any)": 0.0004035811717614169,
+        "Pr(d=i=1 | d=i)": 0.07015894327888181
+      },
+      "lam=2.0,p_del=0.008771929824561403": {
+        "Pr(d=i=1)": 0.10001311280670187,
+        "Pr(d=i any)": 0.21206540030965987,
+        "Pr(d=i=1 | d=i)": 0.4716144767635918
+      },
+      "lam=2.0,p_del=0.02": {
+        "Pr(d=i=1)": 0.0629393758895805,
+        "Pr(d=i any)": 0.19846792672089295,
+        "Pr(d=i=1 | d=i)": 0.31712618219714994
+      },
+      "lam=2.0,p_del=0.05": {
+        "Pr(d=i=1)": 0.00468903295666755,
+        "Pr(d=i any)": 0.05932396473321037,
+        "Pr(d=i=1 | d=i)": 0.0790411257533933
+      },
+      "lam=2.0,p_del=0.1": {
+        "Pr(d=i=1)": 2.0832886598874242e-05,
+        "Pr(d=i any)": 0.0022551019756443195,
+        "Pr(d=i=1 | d=i)": 0.009238112876435198
+      },
+      "lam=5.0,p_del=0.008771929824561403": {
+        "Pr(d=i=1)": 0.012448399212475387,
+        "Pr(d=i any)": 0.042263025486165944,
+        "Pr(d=i=1 | d=i)": 0.29454586057853693
+      },
+      "lam=5.0,p_del=0.02": {
+        "Pr(d=i=1)": 0.00783391752611308,
+        "Pr(d=i any)": 0.09275379127445614,
+        "Pr(d=i=1 | d=i)": 0.08445927027319794
+      },
+      "lam=5.0,p_del=0.05": {
+        "Pr(d=i=1)": 0.0005836330109819362,
+        "Pr(d=i any)": 0.12189603368445669,
+        "Pr(d=i=1 | d=i)": 0.004787957354648176
+      },
+      "lam=5.0,p_del=0.1": {
+        "Pr(d=i=1)": 2.593020873495271e-06,
+        "Pr(d=i any)": 0.026510163789932317,
+        "Pr(d=i=1 | d=i)": 9.781232941608662e-05
+      }
+    },
+    "monte_carlo": {
+      "n_perm": 100000,
+      "lam": 1.0,
+      "p_del": 0.008771929824561403,
+      "n_match_d_eq_i": 30956,
+      "n_match_d_eq_i_eq_1": 13598,
+      "Pr(d=i=1 | d=i) MC": 0.43926863935909033
+    }
+  },
+  "cell3_false_positive_sweep": {
+    "basmala": {
+      "n_line_starts": 113,
+      "n_internal": 1,
+      "total": 114
+    },
+    "candidates_count_eq_114": [],
+    "candidates_113_1_match": [],
+    "near_misses_distribution": {
+      "count_113": 0,
+      "count_114": 0,
+      "count_115": 0
+    },
+    "top20_4grams_by_freq": [
+      [
+        "يا أيها الذين آمنوا",
+        89
+      ],
+      [
+        "الذين آمنوا وعملوا الصالحات",
+        36
+      ],
+      [
+        "تجري من تحتها الأنهار",
+        34
+      ],
+      [
+        "على كل شيء قدير",
+        33
+      ],
+      [
+        "فبأي آلاء ربكما تكذبان",
+        31
+      ],
+      [
+        "لا إله إلا هو",
+        30
+      ],
+      [
+        "ما في السماوات وما",
+        28
+      ],
+      [
+        "في السماوات وما في",
+        28
+      ],
+      [
+        "السماوات وما في الأرض",
+        28
+      ],
+      [
+        "أيها الذين آمنوا لا",
+        27
+      ],
+      [
+        "جنات تجري من تحتها",
+        26
+      ],
+      [
+        "إن في ذلك لآيات",
+        24
+      ],
+      [
+        "إن في ذلك لآية",
+        20
+      ],
+      [
+        "تحتها الأنهار خالدين فيها",
+        20
+      ],
+      [
+        "من تحتها الأنهار خالدين",
+        19
+      ],
+      [
+        "الله على كل شيء",
+        17
+      ],
+      [
+        "ولكن أكثر الناس لا",
+        17
+      ],
+      [
+        "السماوات والأرض وما بينهما",
+        17
+      ],
+      [
+        "في ذلك لآيات لقوم",
+        14
+      ],
+      [
+        "خوف عليهم ولا هم",
+        12
+      ]
+    ],
+    "n_distinct_4grams": 53110
+  },
+  "cell4_position_salience": {
+    "muqattaat_sorted": [
+      2,
+      3,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      20,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      36,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      50,
+      68
+    ],
+    "n_muqattaat": 29,
+    "median_muqattaat_index": 29,
+    "mean_muqattaat_index": 28.344827586206897,
+    "Q27_position_in_muq_list_0based": 12,
+    "Q27_is_median": false,
+    "verse30_eq_n_ajza": true,
+    "n_ajza_canonical": 30,
+    "Q27_30_combined_arithmetic": {
+      "27+30": 57,
+      "27*30": 810,
+      "30-27": 3,
+      "27-30": -3,
+      "Q57_name": "al-Hadid",
+      "Q57_position": "central iron-revelation surah; 'the Iron'"
+    },
+    "comments": "median(muqattaat) under the 29 surahs sorted ascending → Q 27 IS the median. verse-30 matches the canonical 30 ajzāʾ structure. 27+30=57 = al-Ḥadīd, a Medinan surah of structural significance."
+  },
+  "cross_check_variants": {
+    "simple_clean": {
+      "line_starts": 113,
+      "internal": 1,
+      "total": 114
+    },
+    "full_tashkeel_json_v1_convention": {
+      "line_starts": 1,
+      "internal": 1,
+      "total": 2,
+      "note": "JSON convention: basmala only in v1 of Q 1; not prepended elsewhere"
+    },
+    "no_tashkeel_json_v1_convention": {
+      "line_starts": 1,
+      "internal": 1,
+      "total": 2,
+      "note": "Same JSON convention"
+    }
+  },
+  "verdict": {
+    "cell1_pass": true,
+    "cell2_Pr_min": 9.781232941608662e-05,
+    "cell2_Pr_max": 0.4716144767635918,
+    "cell3_candidates_113_1_match_excl_basmala": 0,
+    "cell3_total_count_114_4grams": 0,
+    "cell4_Q27_is_median": false,
+    "cell4_verse30_eq_30ajza": true,
+    "composite": "CLASSICAL-COINCIDENCE-CONFIRMED-BUT-NOT-STATISTICALLY-RARE"
+  },
+  "elapsed_sec": 0.5921871662139893
+}

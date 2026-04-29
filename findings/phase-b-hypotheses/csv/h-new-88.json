@@ -1,0 +1,1166 @@
+{
+  "id": "H-NEW-88",
+  "title": "Multi-class predictive model for muqaṭṭaʿāt LETTER-SET",
+  "seed": 20260416,
+  "n_surahs": 29,
+  "n_classes": 14,
+  "n_features": 43,
+  "feature_names": [
+    "length",
+    "period_meccan",
+    "noldeke_order",
+    "mushaf_index",
+    "book_ref_v1_3",
+    "prophet_named",
+    "name_class_PROPHET_PERSON",
+    "name_class_ANIMAL_OBJECT",
+    "name_class_DIVINE_ATTRIBUTE",
+    "name_class_COSMOLOGICAL_NATURAL",
+    "name_class_EVENT_ESCHATOLOGICAL",
+    "name_class_SOCIAL_LEGAL",
+    "name_class_REVELATION_RITUAL",
+    "name_class_MUQATTAAT_LETTER",
+    "name_class_OTHER_ABSTRACT",
+    "divine_name_density",
+    "first_word_BOOK_REF",
+    "first_word_OATH",
+    "first_word_ADDRESS",
+    "first_word_NARRATIVE_PARTICLE",
+    "first_word_OTHER",
+    "root_top_لله",
+    "root_top_الل",
+    "root_top_قال",
+    "root_top_ذين",
+    "root_top_علي",
+    "root_top_لوا",
+    "root_top_وما",
+    "root_top_ولا",
+    "root_top_كان",
+    "root_top_لهم",
+    "root_top_نوا",
+    "root_top_علم",
+    "root_top_رون",
+    "root_top_نهم",
+    "root_top_بين",
+    "root_top_بال",
+    "root_top_ليه",
+    "root_top_لكم",
+    "root_top_لون",
+    "root_top_لذي",
+    "mean_verse_length_chars",
+    "letter_count_in_set"
+  ],
+  "top_roots_locked": [
+    "لله",
+    "الل",
+    "قال",
+    "ذين",
+    "علي",
+    "لوا",
+    "وما",
+    "ولا",
+    "كان",
+    "لهم",
+    "نوا",
+    "علم",
+    "رون",
+    "نهم",
+    "بين",
+    "بال",
+    "ليه",
+    "لكم",
+    "لون",
+    "لذي"
+  ],
+  "letter_set_distribution": {
+    "ALM": 6,
+    "ALMS": 1,
+    "ALR": 5,
+    "ALMR": 1,
+    "KHYAS": 1,
+    "TH": 1,
+    "TSM": 2,
+    "TS": 1,
+    "YS": 1,
+    "S": 1,
+    "HM": 6,
+    "HMASQ": 1,
+    "Q": 1,
+    "N": 1
+  },
+  "baseline_uniform_chance": 0.07142857142857142,
+  "baseline_majority_class": "ALM",
+  "baseline_majority_accuracy": 0.20689655172413793,
+  "results_by_classifier": {
+    "logistic": {
+      "loocv_top1_accuracy": 0.27586206896551724,
+      "loocv_top3_accuracy": 0.4827586206896552,
+      "loocv_top5_accuracy": 0.5172413793103449,
+      "permutation_null": {
+        "n_perm": 1000,
+        "p_value": 0.03496503496503497,
+        "perm_acc_mean": 0.1273448275862069,
+        "perm_acc_std": 0.06629978218453665,
+        "perm_acc_max": 0.3448275862068966,
+        "perm_acc_q95": 0.2413793103448276,
+        "perm_acc_q99": 0.3103448275862069,
+        "ge_count": 34
+      },
+      "per_set_recall": {
+        "ALM": 0.3333333333333333,
+        "ALMR": 0.0,
+        "ALMS": 0.0,
+        "ALR": 0.4,
+        "HM": 0.6666666666666666,
+        "HMASQ": 0.0,
+        "KHYAS": 0.0,
+        "N": 0.0,
+        "Q": 0.0,
+        "S": 0.0,
+        "TH": 0.0,
+        "TS": 0.0,
+        "TSM": 0.0,
+        "YS": 0.0
+      },
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "ALM",
+        "ALMR",
+        "ALMS",
+        "ALR",
+        "HM",
+        "HMASQ",
+        "KHYAS",
+        "N",
+        "Q",
+        "S",
+        "TH",
+        "TS",
+        "TSM",
+        "YS"
+      ],
+      "feature_importance_top20": [
+        {
+          "feature": "letter_count_in_set",
+          "importance": 0.2287245234764121
+        },
+        {
+          "feature": "mushaf_index",
+          "importance": 0.22313035638515213
+        },
+        {
+          "feature": "name_class_MUQATTAAT_LETTER",
+          "importance": 0.21630366239610338
+        },
+        {
+          "feature": "first_word_OTHER",
+          "importance": 0.21630211868578358
+        },
+        {
+          "feature": "first_word_OATH",
+          "importance": 0.19829726313601
+        },
+        {
+          "feature": "first_word_NARRATIVE_PARTICLE",
+          "importance": 0.1938079208732823
+        },
+        {
+          "feature": "book_ref_v1_3",
+          "importance": 0.17924592795379785
+        },
+        {
+          "feature": "name_class_COSMOLOGICAL_NATURAL",
+          "importance": 0.1722784718970218
+        },
+        {
+          "feature": "name_class_ANIMAL_OBJECT",
+          "importance": 0.17150093368657945
+        },
+        {
+          "feature": "root_top_لهم",
+          "importance": 0.16001379250643205
+        },
+        {
+          "feature": "root_top_قال",
+          "importance": 0.1569271985943967
+        },
+        {
+          "feature": "divine_name_density",
+          "importance": 0.1534671018988954
+        },
+        {
+          "feature": "first_word_BOOK_REF",
+          "importance": 0.14759272755542252
+        },
+        {
+          "feature": "name_class_PROPHET_PERSON",
+          "importance": 0.14101273804395187
+        },
+        {
+          "feature": "prophet_named",
+          "importance": 0.14060457844273147
+        },
+        {
+          "feature": "root_top_كان",
+          "importance": 0.13987256001081064
+        },
+        {
+          "feature": "name_class_REVELATION_RITUAL",
+          "importance": 0.13914398422094829
+        },
+        {
+          "feature": "name_class_SOCIAL_LEGAL",
+          "importance": 0.1336184915032494
+        },
+        {
+          "feature": "root_top_رون",
+          "importance": 0.12854059854994962
+        },
+        {
+          "feature": "noldeke_order",
+          "importance": 0.12759013085287355
+        }
+      ],
+      "per_surah_predictions": [
+        {
+          "surah": 2,
+          "true_set": "ALM",
+          "pred_set": "ALMS",
+          "correct": false
+        },
+        {
+          "surah": 3,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 7,
+          "true_set": "ALMS",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 10,
+          "true_set": "ALR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 11,
+          "true_set": "ALR",
+          "pred_set": "ALR",
+          "correct": true
+        },
+        {
+          "surah": 12,
+          "true_set": "ALR",
+          "pred_set": "ALR",
+          "correct": true
+        },
+        {
+          "surah": 13,
+          "true_set": "ALMR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 14,
+          "true_set": "ALR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 15,
+          "true_set": "ALR",
+          "pred_set": "TSM",
+          "correct": false
+        },
+        {
+          "surah": 19,
+          "true_set": "KHYAS",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 20,
+          "true_set": "TH",
+          "pred_set": "S",
+          "correct": false
+        },
+        {
+          "surah": 26,
+          "true_set": "TSM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 27,
+          "true_set": "TS",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 28,
+          "true_set": "TSM",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 29,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 30,
+          "true_set": "ALM",
+          "pred_set": "HMASQ",
+          "correct": false
+        },
+        {
+          "surah": 31,
+          "true_set": "ALM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 32,
+          "true_set": "ALM",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 36,
+          "true_set": "YS",
+          "pred_set": "S",
+          "correct": false
+        },
+        {
+          "surah": 38,
+          "true_set": "S",
+          "pred_set": "Q",
+          "correct": false
+        },
+        {
+          "surah": 40,
+          "true_set": "HM",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 41,
+          "true_set": "HM",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 42,
+          "true_set": "HMASQ",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 43,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 44,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 45,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 46,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 50,
+          "true_set": "Q",
+          "pred_set": "S",
+          "correct": false
+        },
+        {
+          "surah": 68,
+          "true_set": "N",
+          "pred_set": "Q",
+          "correct": false
+        }
+      ]
+    },
+    "rf": {
+      "loocv_top1_accuracy": 0.41379310344827586,
+      "loocv_top3_accuracy": 0.6206896551724138,
+      "loocv_top5_accuracy": 0.6551724137931034,
+      "permutation_null": {
+        "n_perm": 1000,
+        "p_value": 0.001998001998001998,
+        "perm_acc_mean": 0.14151724137931035,
+        "perm_acc_std": 0.07964833527904365,
+        "perm_acc_max": 0.4482758620689655,
+        "perm_acc_q95": 0.27586206896551724,
+        "perm_acc_q99": 0.3448275862068966,
+        "ge_count": 1
+      },
+      "per_set_recall": {
+        "ALM": 0.6666666666666666,
+        "ALMR": 0.0,
+        "ALMS": 0.0,
+        "ALR": 0.6,
+        "HM": 0.8333333333333334,
+        "HMASQ": 0.0,
+        "KHYAS": 0.0,
+        "N": 0.0,
+        "Q": 0.0,
+        "S": 0.0,
+        "TH": 0.0,
+        "TS": 0.0,
+        "TSM": 0.0,
+        "YS": 0.0
+      },
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "ALM",
+        "ALMR",
+        "ALMS",
+        "ALR",
+        "HM",
+        "HMASQ",
+        "KHYAS",
+        "N",
+        "Q",
+        "S",
+        "TH",
+        "TS",
+        "TSM",
+        "YS"
+      ],
+      "feature_importance_top20": [
+        {
+          "feature": "mushaf_index",
+          "importance": 0.09906785401021803
+        },
+        {
+          "feature": "letter_count_in_set",
+          "importance": 0.061664524252527476
+        },
+        {
+          "feature": "mean_verse_length_chars",
+          "importance": 0.041635362779652976
+        },
+        {
+          "feature": "root_top_قال",
+          "importance": 0.03861442012857671
+        },
+        {
+          "feature": "divine_name_density",
+          "importance": 0.03849719192286383
+        },
+        {
+          "feature": "root_top_وما",
+          "importance": 0.03625234337422045
+        },
+        {
+          "feature": "root_top_نوا",
+          "importance": 0.03508688388809426
+        },
+        {
+          "feature": "noldeke_order",
+          "importance": 0.03399179639826186
+        },
+        {
+          "feature": "root_top_كان",
+          "importance": 0.032174785205052285
+        },
+        {
+          "feature": "root_top_علي",
+          "importance": 0.03186918291243904
+        },
+        {
+          "feature": "length",
+          "importance": 0.030895022187445793
+        },
+        {
+          "feature": "root_top_بين",
+          "importance": 0.030188486097531084
+        },
+        {
+          "feature": "root_top_لوا",
+          "importance": 0.029925186148883596
+        },
+        {
+          "feature": "root_top_لله",
+          "importance": 0.029254273790379693
+        },
+        {
+          "feature": "root_top_علم",
+          "importance": 0.02815619503130801
+        },
+        {
+          "feature": "root_top_لهم",
+          "importance": 0.027638200560596012
+        },
+        {
+          "feature": "root_top_رون",
+          "importance": 0.027368639113466854
+        },
+        {
+          "feature": "root_top_لون",
+          "importance": 0.026109484376673594
+        },
+        {
+          "feature": "root_top_الل",
+          "importance": 0.026091813102191653
+        },
+        {
+          "feature": "root_top_نهم",
+          "importance": 0.02428026084638146
+        }
+      ],
+      "per_surah_predictions": [
+        {
+          "surah": 2,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 3,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 7,
+          "true_set": "ALMS",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 10,
+          "true_set": "ALR",
+          "pred_set": "ALR",
+          "correct": true
+        },
+        {
+          "surah": 11,
+          "true_set": "ALR",
+          "pred_set": "ALR",
+          "correct": true
+        },
+        {
+          "surah": 12,
+          "true_set": "ALR",
+          "pred_set": "ALR",
+          "correct": true
+        },
+        {
+          "surah": 13,
+          "true_set": "ALMR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 14,
+          "true_set": "ALR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 15,
+          "true_set": "ALR",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 19,
+          "true_set": "KHYAS",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 20,
+          "true_set": "TH",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 26,
+          "true_set": "TSM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 27,
+          "true_set": "TS",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 28,
+          "true_set": "TSM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 29,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 30,
+          "true_set": "ALM",
+          "pred_set": "ALM",
+          "correct": true
+        },
+        {
+          "surah": 31,
+          "true_set": "ALM",
+          "pred_set": "ALR",
+          "correct": false
+        },
+        {
+          "surah": 32,
+          "true_set": "ALM",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 36,
+          "true_set": "YS",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 38,
+          "true_set": "S",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 40,
+          "true_set": "HM",
+          "pred_set": "ALM",
+          "correct": false
+        },
+        {
+          "surah": 41,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 42,
+          "true_set": "HMASQ",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 43,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 44,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 45,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 46,
+          "true_set": "HM",
+          "pred_set": "HM",
+          "correct": true
+        },
+        {
+          "surah": 50,
+          "true_set": "Q",
+          "pred_set": "HM",
+          "correct": false
+        },
+        {
+          "surah": 68,
+          "true_set": "N",
+          "pred_set": "HM",
+          "correct": false
+        }
+      ]
+    }
+  },
+  "primary_classifier": "logistic",
+  "verdict": "INCONCLUSIVE",
+  "pass_criterion": {
+    "top1_acc_gte_0_30": false,
+    "perm_p_lt_0_05": true,
+    "strong_top1_gte_0_50": false,
+    "strong_perm_p_lt_0_01": false
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "finding_id": "h-new-143-1",
+  "title": "Root-level rhetorical-bridge test across mushaf boundaries",
+  "pre_reg_path": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-143-1-prereg.md",
+  "parent_finding": "h-new-143 (surface NULL)",
+  "parent_h142": "h-new-142 (post-hoc rhetorical-bridge observations)",
+  "method": "QAC-STEM root-set overlap between last verse of surah i and first verse of surah i+1. Primary metric: cosine. Mann-Whitney U one-sided upper-tail.",
+  "n_boundaries": 113,
+  "zero_overlap_count": 90,
+  "primary_union_top15_vs_other": {
+    "union_top15_size": 28,
+    "mean_top15": 0.039810103997577125,
+    "mean_other": 0.033358858917592146,
+    "U": 1212.5,
+    "z_two_sided": 0.14963467232373986,
+    "p_one_sided_upper": 0.44052642579258544,
+    "alpha_bon": 0.0167,
+    "pass": false
+  },
+  "per_feature_top15": {
+    "root": {
+      "mean_top15": 0.06402530413133785,
+      "mean_other": 0.030508228142422697,
+      "U": 848.5,
+      "z": 0.9604513946522426,
+      "p_one_sided_upper": 0.16841404116897862
+    },
+    "char_4gram": {
+      "mean_top15": 0.0607039177800152,
+      "mean_other": 0.031016603604359837,
+      "U": 846.0,
+      "z": 0.9392960775894179,
+      "p_one_sided_upper": 0.17378937595783336
+    },
+    "vlen": {
+      "mean_top15": 0.040824829046386304,
+      "mean_other": 0.03405932126767038,
+      "U": 691.0,
+      "z": -0.3723335803057152,
+      "p_one_sided_upper": 0.6451777502225863
+    }
+  },
+  "universal_hinges": {
+    "(49, 50)": {
+      "pair": [
+        49,
+        50
+      ],
+      "cos": 0.0,
+      "rank_of_113_ascending": 36,
+      "percentile": 0.3185840707964602,
+      "above_50th_percentile": false,
+      "shared_roots": []
+    },
+    "(56, 57)": {
+      "pair": [
+        56,
+        57
+      ],
+      "cos": 0.4082482904638631,
+      "rank_of_113_ascending": 113,
+      "percentile": 1.0,
+      "above_50th_percentile": true,
+      "shared_roots": [
+        "sbH",
+        "smw"
+      ]
+    },
+    "(14, 15)": {
+      "pair": [
+        14,
+        15
+      ],
+      "cos": 0.0,
+      "rank_of_113_ascending": 7,
+      "percentile": 0.061946902654867256,
+      "above_50th_percentile": false,
+      "shared_roots": []
+    }
+  },
+  "universal_hinges_summary": {
+    "n_above_50th_percentile": 1,
+    "pass_full": false,
+    "pass_partial": false
+  },
+  "top10_strongest_root_bridges": [
+    {
+      "pair": [
+        56,
+        57
+      ],
+      "cos": 0.4082482904638631,
+      "shared_roots": [
+        "sbH",
+        "smw"
+      ]
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "cos": 0.3692744729379982,
+      "shared_roots": [
+        "Alh",
+        "ArD",
+        "smw"
+      ]
+    },
+    {
+      "pair": [
+        52,
+        53
+      ],
+      "cos": 0.35355339059327373,
+      "shared_roots": [
+        "njm"
+      ]
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "cos": 0.2519763153394848,
+      "shared_roots": [
+        "Alh",
+        "Hmd"
+      ]
+    },
+    {
+      "pair": [
+        48,
+        49
+      ],
+      "cos": 0.24343224778007383,
+      "shared_roots": [
+        "Alh",
+        "Amn",
+        "byn",
+        "rsl"
+      ]
+    },
+    {
+      "pair": [
+        62,
+        63
+      ],
+      "cos": 0.2279211529192759,
+      "shared_roots": [
+        "Alh",
+        "qwl"
+      ]
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "cos": 0.20412414523193154,
+      "shared_roots": [
+        "Alh",
+        "wqy"
+      ]
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "cos": 0.20412414523193154,
+      "shared_roots": [
+        "Aty"
+      ]
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "cos": 0.16666666666666666,
+      "shared_roots": [
+        "Hkm"
+      ]
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "cos": 0.1543033499620919,
+      "shared_roots": [
+        "rbb"
+      ]
+    }
+  ],
+  "mw5_sort_by_length_control": {
+    "synth_mean_cos": 0.027656577519223083,
+    "mushaf_mean_cos": 0.034957397521482234,
+    "note": "Sanity: sort-by-length gives different bridge-distribution than mushaf-adjacent."
+  }
+}

@@ -1,0 +1,532 @@
+{
+  "finding_id": "h-new-203",
+  "title": "Full 30-juzʾ partition against Fisher-Rao structural geometry",
+  "pre_reg_path": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-203-prereg.md",
+  "pre_reg_sha256": "479984febf64ea1a903d1e2a753c2332a2ba2dc0c0fbbc4e45fe86f26e7b7423",
+  "date": "2026-04-17",
+  "seed": 20260419,
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, mushaf order, Hafs-Kufan, 30-juzʾ canonical partition)",
+  "parameters": {
+    "window_W": 20,
+    "K_top_roots": 500,
+    "dirichlet_alpha": 0.5,
+    "n_perm": 10000,
+    "alpha_bon": 0.025,
+    "bonferroni_k": 2
+  },
+  "corpus": {
+    "n_verses": 6236,
+    "mean_root_tokens_per_verse": 8.012828736369467,
+    "verses_with_no_roots": 22
+  },
+  "verdict": "BOUNDARY-ONLY",
+  "test1_boundary_concentration": {
+    "T_obs": 23.101507744281747,
+    "null_mean": 21.100964005978515,
+    "null_sd": 0.6402807157794268,
+    "z": 3.124479137042148,
+    "p_one_sided_upper": 0.00039996000399960006,
+    "pass": true
+  },
+  "test2_segment_coherence": {
+    "T_obs": 0.7704388675119238,
+    "null_mean": 0.7528369600424534,
+    "null_sd": 0.004938933152976378,
+    "z": 3.563908828946773,
+    "p_one_sided_lower": 0.9999000099990001,
+    "pass": false,
+    "sign_note": "T2_obs > null → juzʾ segments are LESS coherent than length-matched random partitions"
+  },
+  "secondary_S1_per_boundary": {
+    "mean_percentile_rank": 0.6681158939298397,
+    "n_above_90th": 7,
+    "n_above_75th": 13,
+    "per_boundary": [
+      {
+        "juz_start": 2,
+        "global_pos": 149,
+        "surah": 2,
+        "verse_id": 142,
+        "surah_aligned": false,
+        "D": 0.835505073116386,
+        "percentile_rank": 0.8365415463586782
+      },
+      {
+        "juz_start": 3,
+        "global_pos": 260,
+        "surah": 2,
+        "verse_id": 253,
+        "surah_aligned": false,
+        "D": 0.948979719262247,
+        "percentile_rank": 0.9844401668270774
+      },
+      {
+        "juz_start": 4,
+        "global_pos": 386,
+        "surah": 3,
+        "verse_id": 93,
+        "surah_aligned": false,
+        "D": 0.7403533917514697,
+        "percentile_rank": 0.46278472890599937
+      },
+      {
+        "juz_start": 5,
+        "global_pos": 517,
+        "surah": 4,
+        "verse_id": 24,
+        "surah_aligned": false,
+        "D": 0.8908262153445231,
+        "percentile_rank": 0.9448187359640681
+      },
+      {
+        "juz_start": 6,
+        "global_pos": 641,
+        "surah": 4,
+        "verse_id": 148,
+        "surah_aligned": false,
+        "D": 0.7712482269540901,
+        "percentile_rank": 0.5840551812640359
+      },
+      {
+        "juz_start": 7,
+        "global_pos": 751,
+        "surah": 5,
+        "verse_id": 82,
+        "surah_aligned": false,
+        "D": 0.8762350224434111,
+        "percentile_rank": 0.9254090471607315
+      },
+      {
+        "juz_start": 8,
+        "global_pos": 900,
+        "surah": 6,
+        "verse_id": 111,
+        "surah_aligned": false,
+        "D": 0.8124550391188564,
+        "percentile_rank": 0.7574590952839269
+      },
+      {
+        "juz_start": 9,
+        "global_pos": 1042,
+        "surah": 7,
+        "verse_id": 88,
+        "surah_aligned": false,
+        "D": 0.7106231715679482,
+        "percentile_rank": 0.37728585178055823
+      },
+      {
+        "juz_start": 10,
+        "global_pos": 1201,
+        "surah": 8,
+        "verse_id": 41,
+        "surah_aligned": false,
+        "D": 0.805393598381188,
+        "percentile_rank": 0.7324350336862367
+      },
+      {
+        "juz_start": 11,
+        "global_pos": 1328,
+        "surah": 9,
+        "verse_id": 93,
+        "surah_aligned": false,
+        "D": 0.8231278337106372,
+        "percentile_rank": 0.7962784728905999
+      },
+      {
+        "juz_start": 12,
+        "global_pos": 1479,
+        "surah": 11,
+        "verse_id": 6,
+        "surah_aligned": false,
+        "D": 0.7936704943681779,
+        "percentile_rank": 0.6838306063522618
+      },
+      {
+        "juz_start": 13,
+        "global_pos": 1649,
+        "surah": 12,
+        "verse_id": 53,
+        "surah_aligned": false,
+        "D": 0.8856873291280367,
+        "percentile_rank": 0.9401668270773179
+      },
+      {
+        "juz_start": 14,
+        "global_pos": 1803,
+        "surah": 15,
+        "verse_id": 1,
+        "surah_aligned": true,
+        "D": 0.8108874561657591,
+        "percentile_rank": 0.7515239011870388
+      },
+      {
+        "juz_start": 15,
+        "global_pos": 2030,
+        "surah": 17,
+        "verse_id": 1,
+        "surah_aligned": true,
+        "D": 0.9084291828752007,
+        "percentile_rank": 0.9613410330445942
+      },
+      {
+        "juz_start": 16,
+        "global_pos": 2215,
+        "surah": 18,
+        "verse_id": 75,
+        "surah_aligned": false,
+        "D": 0.7375354214628765,
+        "percentile_rank": 0.45187680461982677
+      },
+      {
+        "juz_start": 17,
+        "global_pos": 2484,
+        "surah": 21,
+        "verse_id": 1,
+        "surah_aligned": true,
+        "D": 0.7506600696790495,
+        "percentile_rank": 0.4956689124157844
+      },
+      {
+        "juz_start": 18,
+        "global_pos": 2674,
+        "surah": 23,
+        "verse_id": 1,
+        "surah_aligned": true,
+        "D": 0.875905495843046,
+        "percentile_rank": 0.9247674045556625
+      },
+      {
+        "juz_start": 19,
+        "global_pos": 2876,
+        "surah": 25,
+        "verse_id": 21,
+        "surah_aligned": false,
+        "D": 0.7116131886765332,
+        "percentile_rank": 0.38065447545717035
+      },
+      {
+        "juz_start": 20,
+        "global_pos": 3215,
+        "surah": 27,
+        "verse_id": 56,
+        "surah_aligned": false,
+        "D": 0.8088929881676836,
+        "percentile_rank": 0.7438241899262111
+      },
+      {
+        "juz_start": 21,
+        "global_pos": 3386,
+        "surah": 29,
+        "verse_id": 46,
+        "surah_aligned": false,
+        "D": 0.7713699072024508,
+        "percentile_rank": 0.5851780558229066
+      },
+      {
+        "juz_start": 22,
+        "global_pos": 3564,
+        "surah": 33,
+        "verse_id": 31,
+        "surah_aligned": false,
+        "D": 0.8131134402222928,
+        "percentile_rank": 0.7603464870067372
+      },
+      {
+        "juz_start": 23,
+        "global_pos": 3733,
+        "surah": 36,
+        "verse_id": 28,
+        "surah_aligned": false,
+        "D": 0.7357140600486057,
+        "percentile_rank": 0.44594161052293874
+      },
+      {
+        "juz_start": 24,
+        "global_pos": 4090,
+        "surah": 39,
+        "verse_id": 32,
+        "surah_aligned": false,
+        "D": 0.7680124684065414,
+        "percentile_rank": 0.5680141161373116
+      },
+      {
+        "juz_start": 25,
+        "global_pos": 4265,
+        "surah": 41,
+        "verse_id": 47,
+        "surah_aligned": false,
+        "D": 0.7742506638028772,
+        "percentile_rank": 0.5964068014116137
+      },
+      {
+        "juz_start": 26,
+        "global_pos": 4511,
+        "surah": 46,
+        "verse_id": 1,
+        "surah_aligned": true,
+        "D": 0.7454045136222273,
+        "percentile_rank": 0.47786333012512033
+      },
+      {
+        "juz_start": 27,
+        "global_pos": 4706,
+        "surah": 51,
+        "verse_id": 31,
+        "surah_aligned": false,
+        "D": 0.6070532624452495,
+        "percentile_rank": 0.1878408726339429
+      },
+      {
+        "juz_start": 28,
+        "global_pos": 5105,
+        "surah": 58,
+        "verse_id": 1,
+        "surah_aligned": false,
+        "D": 0.8587903524871965,
+        "percentile_rank": 0.8933269169072826
+      },
+      {
+        "juz_start": 29,
+        "global_pos": 5242,
+        "surah": 67,
+        "verse_id": 1,
+        "surah_aligned": true,
+        "D": 0.9556722713072655,
+        "percentile_rank": 0.9878087905036894
+      },
+      {
+        "juz_start": 30,
+        "global_pos": 5673,
+        "surah": 78,
+        "verse_id": 1,
+        "surah_aligned": true,
+        "D": 0.5740978867199208,
+        "percentile_rank": 0.13747192813602824
+      }
+    ]
+  },
+  "secondary_S2_surah_seam_matched_null": {
+    "T_obs": 23.101507744281747,
+    "null_mean": 20.98091054903755,
+    "null_sd": 0.6587353738674593,
+    "z": 3.219194352345305,
+    "p_one_sided_upper": 0.0004999500049995,
+    "n_surah_aligned": 8,
+    "descriptive_only": true
+  },
+  "secondary_S3_per_juz_coherence": {
+    "per_juz": [
+      {
+        "juz": 1,
+        "mean_centroid_dist": 0.6585518035775064,
+        "segment_length": 148
+      },
+      {
+        "juz": 2,
+        "mean_centroid_dist": 0.6410476773157315,
+        "segment_length": 111
+      },
+      {
+        "juz": 3,
+        "mean_centroid_dist": 0.6125882760508672,
+        "segment_length": 126
+      },
+      {
+        "juz": 4,
+        "mean_centroid_dist": 0.6692650681728101,
+        "segment_length": 131
+      },
+      {
+        "juz": 5,
+        "mean_centroid_dist": 0.6147583682725144,
+        "segment_length": 124
+      },
+      {
+        "juz": 6,
+        "mean_centroid_dist": 0.5795731610846981,
+        "segment_length": 110
+      },
+      {
+        "juz": 7,
+        "mean_centroid_dist": 0.6505716951460974,
+        "segment_length": 149
+      },
+      {
+        "juz": 8,
+        "mean_centroid_dist": 0.6715670537184051,
+        "segment_length": 142
+      },
+      {
+        "juz": 9,
+        "mean_centroid_dist": 0.7338841879122828,
+        "segment_length": 159
+      },
+      {
+        "juz": 10,
+        "mean_centroid_dist": 0.6437941394027067,
+        "segment_length": 127
+      },
+      {
+        "juz": 11,
+        "mean_centroid_dist": 0.6684912071285096,
+        "segment_length": 151
+      },
+      {
+        "juz": 12,
+        "mean_centroid_dist": 0.700680089227652,
+        "segment_length": 170
+      },
+      {
+        "juz": 13,
+        "mean_centroid_dist": 0.6903494369572117,
+        "segment_length": 154
+      },
+      {
+        "juz": 14,
+        "mean_centroid_dist": 0.7879524372415806,
+        "segment_length": 227
+      },
+      {
+        "juz": 15,
+        "mean_centroid_dist": 0.7051609205750307,
+        "segment_length": 185
+      },
+      {
+        "juz": 16,
+        "mean_centroid_dist": 0.8218683056436182,
+        "segment_length": 269
+      },
+      {
+        "juz": 17,
+        "mean_centroid_dist": 0.7246586109844393,
+        "segment_length": 190
+      },
+      {
+        "juz": 18,
+        "mean_centroid_dist": 0.781046978119712,
+        "segment_length": 202
+      },
+      {
+        "juz": 19,
+        "mean_centroid_dist": 0.8651630859790426,
+        "segment_length": 339
+      },
+      {
+        "juz": 20,
+        "mean_centroid_dist": 0.7032941496287292,
+        "segment_length": 171
+      },
+      {
+        "juz": 21,
+        "mean_centroid_dist": 0.7008640458280101,
+        "segment_length": 178
+      },
+      {
+        "juz": 22,
+        "mean_centroid_dist": 0.7234324121022537,
+        "segment_length": 169
+      },
+      {
+        "juz": 23,
+        "mean_centroid_dist": 0.8606085548468132,
+        "segment_length": 357
+      },
+      {
+        "juz": 24,
+        "mean_centroid_dist": 0.6777190079621658,
+        "segment_length": 175
+      },
+      {
+        "juz": 25,
+        "mean_centroid_dist": 0.784229489676951,
+        "segment_length": 246
+      },
+      {
+        "juz": 26,
+        "mean_centroid_dist": 0.7632848530843764,
+        "segment_length": 195
+      },
+      {
+        "juz": 27,
+        "mean_centroid_dist": 0.9426614843883104,
+        "segment_length": 399
+      },
+      {
+        "juz": 28,
+        "mean_centroid_dist": 0.6275554229367154,
+        "segment_length": 137
+      },
+      {
+        "juz": 29,
+        "mean_centroid_dist": 0.875808069182133,
+        "segment_length": 431
+      },
+      {
+        "juz": 30,
+        "mean_centroid_dist": 0.9224771609452047,
+        "segment_length": 564
+      }
+    ],
+    "ranked_most_coherent_first": [
+      {
+        "juz": 6,
+        "mean_centroid_dist": 0.5795731610846981,
+        "segment_length": 110
+      },
+      {
+        "juz": 3,
+        "mean_centroid_dist": 0.6125882760508672,
+        "segment_length": 126
+      },
+      {
+        "juz": 5,
+        "mean_centroid_dist": 0.6147583682725144,
+        "segment_length": 124
+      },
+      {
+        "juz": 28,
+        "mean_centroid_dist": 0.6275554229367154,
+        "segment_length": 137
+      },
+      {
+        "juz": 2,
+        "mean_centroid_dist": 0.6410476773157315,
+        "segment_length": 111
+      }
+    ],
+    "ranked_least_coherent_first": [
+      {
+        "juz": 23,
+        "mean_centroid_dist": 0.8606085548468132,
+        "segment_length": 357
+      },
+      {
+        "juz": 19,
+        "mean_centroid_dist": 0.8651630859790426,
+        "segment_length": 339
+      },
+      {
+        "juz": 29,
+        "mean_centroid_dist": 0.875808069182133,
+        "segment_length": 431
+      },
+      {
+        "juz": 30,
+        "mean_centroid_dist": 0.9224771609452047,
+        "segment_length": 564
+      },
+      {
+        "juz": 27,
+        "mean_centroid_dist": 0.9426614843883104,
+        "segment_length": 399
+      }
+    ]
+  },
+  "secondary_S4_mw5_scramble": {
+    "T1_obs": 23.101507744281747,
+    "T1_scramble": 21.624537624818686,
+    "delta": 1.4769701194630613,
+    "delta_in_null_sd_units": 2.306754026888215,
+    "instrument_broken": false
+  }
+}

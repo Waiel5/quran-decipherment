@@ -1,0 +1,78 @@
+# al-Muṭlaq wa-l-muqayyad: 15 canonical pairs for H-CLASSIC-28
+# Source doctrine: al-Suyūṭī, al-Itqān fī ʿulūm al-Qurʾān, nawʿ on muṭlaq/muqayyad
+#   (PENDING physical verification — likely nawʿ 45 or adjacent, verbatim confidence on nawʿ-number: PENDING)
+# Secondary: al-Zarkashī, al-Burhān fī ʿulūm al-Qurʾān, fī al-muṭlaq wa-l-muqayyad
+#   (nawʿ-number PENDING physical verification)
+# Uṣūl al-fiqh cross-reference: al-Shāfiʿī, al-Risāla; al-Ghazālī, al-Mustaṣfā on
+#   "yuḥmalu al-muṭlaq ʿalā al-muqayyad idhā ittaḥada l-sabab wa-l-ḥukm"
+#
+# Purpose: ground-truth pair list for H-CLASSIC-28. For each pair:
+#   - muṭlaq_verse: Quranic verse where the token is unrestricted (absolute)
+#   - muqayyad_verse: Quranic verse where the same token is restricted by qayd (qualifier)
+#   - shared_token: the lexeme or root that is restricted in one and unrestricted in the other
+#   - qayd_type: the kind of restriction (sifa/adjective, number, ḥāl/circumstance, etc.)
+#   - classical_verdict: whether the two must be read together per classical uṣūl (WAJIB/MUSTAHABB/DISPUTED)
+#
+# AMEND-12 verbatim-confidence tags:
+#   HIGH = canonical pair in both Suyūṭī Itqān and al-Shāfiʿī Risāla, undisputed
+#   MEDIUM = in Itqān or Burhān but pair-status discussed (some scholars dispute whether sabab/ḥukm unify)
+#   LOW = single-source attestation or dispute among major schools
+#
+# Format: tab-separated, 9 columns
+# pair_id	muṭlaq_verse	muqayyad_verse	shared_token	qayd_type	classical_verdict	verbatim_confidence	itqan_chapter_PENDING	notes
+
+pair_id	mutlaq_verse	muqayyad_verse	shared_token	qayd_type	classical_verdict	verbatim_confidence	itqan_chapter_PENDING	notes
+MM01	Q 58:3 (ẓihār kaffāra)	Q 4:92 (qatl khaṭaʾ kaffāra)	raqaba (slave-freeing)	ṣifa: "muʾmina" (believing) in muqayyad	WAJIB carry qayd	HIGH	nawʿ 45	al-Shāfiʿī canonical example; both sabab (kaffāra) and ḥukm (taḥrīr raqaba) unify; Ḥanafī dispute the carry on ḥukm-not-sabab principle
+MM02	Q 5:89 (yamīn kaffāra, feeding)	Q 58:4 (ẓihār kaffāra, fasting)	ṣiyām (fasting)	qayd: "mutatābiʿayn" (consecutive) in muqayyad	DISPUTED	HIGH	nawʿ 45	classical dispute: Ḥanafī carry tatabuʿ to yamīn fast; Shāfiʿī do not (different sabab)
+MM03	Q 5:6 (wuḍūʾ)	Q 4:43 (tayammum)	ayd (hands)	qayd: "ilā l-marāfiq" (to elbows) in wuḍūʾ; "wujūhikum wa-aydīkum" unrestricted in tayammum	DISPUTED	HIGH	nawʿ 45	classical dispute: should tayammum hand-wiping extend to elbows by carrying the wuḍūʾ qayd? Most say no (different sabab)
+MM04	Q 2:228 (muṭallaqa ʿidda)	Q 65:4 (muṭallaqa lam yaḥiḍn)	qurūʾ / ashhur	qayd: "thalāthata qurūʾ" vs "thalāthatu ashhur"	NOT CARRIED	HIGH	nawʿ 45	different sabab: regular-cycle woman vs non-cycle woman; classical: no carry
+MM05	Q 4:3 (polygamy limit)	Q 4:129 (equal treatment warning)	nisāʾ (wives)	qayd: "mathnā wa-thulātha wa-rubāʿ" in muṭlaq; "lan tastaṭīʿū an taʿdilū" in qayyid-pair	NOT CARRIED as numerical limit	MEDIUM	nawʿ 45	discussed in Burhān; the qayd is ethical not numerical
+MM06	Q 2:196 (hadī tamattuʿ)	Q 5:95 (jazāʾ ṣayd)	hadī (sacrifice)	qayd: "bālighi l-kaʿba" in Q 5:95	WAJIB carry	HIGH	nawʿ 45	sabab (pilgrimage-violation requiring sacrifice) unifies; classical: sacrifice must reach Kaʿba
+MM07	Q 5:3 (muḥarramāt food)	Q 6:145 (muḥarramāt enumerated)	mayta (carrion)	qayd: "aw dam masfūḥ" (or flowing blood) in Q 6:145	NOT CARRIED to mayta	HIGH	nawʿ 45	the masfūḥ qayd applies to dam not mayta; this is a classical syntactic-scope example, not a true muṭlaq/muqayyad pair
+MM08	Q 24:4 (qadhf 80 lashes)	Q 24:6-9 (liʿān procedure)	shahāda (witnesses)	qayd: "arbaʿu shuhadāʾ" in qadhf; qayd: self-swearing 5x in liʿān	NOT CARRIED	MEDIUM	nawʿ 45	different sabab (public accusation vs spousal accusation); classical: separate hukms
+MM09	Q 4:6 (yatīm bulūgh test)	Q 6:152 (yatīm wealth protection)	yatīm (orphan)	qayd: "balaghū l-nikāḥ" in Q 4:6 restricts timing	WAJIB carry	HIGH	nawʿ 45	canonical Shāfiʿī example; both sabab (orphan-wealth handover) and ḥukm unify
+MM10	Q 5:38 (sariqa ḥadd)	Q 5:33 (muḥāriba ḥadd)	aydī (hands)	qayd: "min khilāf" (alternating) in muḥāriba; no qayd in sariqa	NOT CARRIED	HIGH	nawʿ 45	different sabab (theft vs armed banditry); classical: separate procedures
+MM11	Q 24:2 (zinā 100 lashes)	Q 4:25 (zinā of bondwoman, half)	ʿadhāb (punishment)	qayd: "niṣfu mā ʿalā l-muḥṣanāt" in Q 4:25	NOT CARRIED in reverse	HIGH	nawʿ 45	qayd applies only to bondwoman case; classical: no carry upward
+MM12	Q 2:275 (bayʿ halal)	Q 62:9 (bayʿ forbidden at Friday prayer)	bayʿ (trade)	qayd: "min yawmi l-jumʿa" temporal restriction	WAJIB time-restriction carry	HIGH	nawʿ 45	classical: general permissibility of bayʿ carries the Friday-prayer time restriction
+MM13	Q 2:222 (ḥayḍ approach-prohibition)	Q 2:223 (nisāʾ approach general)	nisāʾ (women)	qayd: "fī l-maḥīḍ" in Q 2:222	WAJIB carry	HIGH	nawʿ 45	sabab (marital relations) unifies; classical: abstention required during menstruation
+MM14	Q 4:25 (slave-marriage)	Q 24:33 (slave manumission contract)	fatayāt (bondwomen)	qayd: "min fatayātikumu l-muʾmināt" in Q 4:25	WAJIB carry	HIGH	nawʿ 45	classical: belief-condition for slave-marriage carries across both verses
+MM15	Q 2:275 (ribā prohibition)	Q 3:130 (ribā aḍʿāf muḍāʿafa)	ribā (usury)	qayd: "aḍʿāfan muḍāʿafa" in Q 3:130	DISPUTED	MEDIUM	nawʿ 45	Jurjānī-era dispute: does the "doubled-and-multiplied" qayd restrict the prohibition to large-scale ribā only, or is it descriptive of jāhilī practice?
+
+# Verbatim confidence distribution:
+# HIGH: MM01, MM02, MM03, MM04, MM06, MM07, MM09, MM10, MM11, MM12, MM13, MM14 = 12
+# MEDIUM: MM05, MM08, MM15 = 3
+# LOW: 0
+# Total: 15
+#
+# qayd_type distribution:
+# ṣifa (adjective): MM01
+# ʿadad (number): MM04, MM05, MM11
+# ḥāl (circumstance): MM02, MM07, MM10, MM13
+# ẓarf (time/place): MM06, MM12
+# ghāya (endpoint): MM03
+# shart (condition): MM09, MM14
+# ta'kīd (intensification): MM15
+# (MM08 is procedural not qaydī)
+#
+# Classical verdict distribution:
+# WAJIB carry: MM01, MM06, MM09, MM12, MM13, MM14 = 6
+# NOT CARRIED: MM04, MM07, MM10, MM11 = 4
+# DISPUTED: MM02, MM03, MM05, MM08, MM15 = 5
+#
+# H-CLASSIC-28 dispatch note: the WAJIB-carry subset (6 pairs) is the high-confidence ground
+# truth where uṣūl al-fiqh consensus says the two verses must be read in tandem. These 6 pairs
+# are the best candidates for a cross-referential computational test (e.g., does the Quran's
+# verse-level semantic-embedding graph place muṭlaq+muqayyad pairs with WAJIB-carry closer
+# than random WAJIB-pair-type-matched controls?).
+#
+# NOT CARRIED subset (4 pairs) functions as a NEGATIVE CONTROL — the computational signal
+# should NOT be present for these pairs if it is specifically tracking uṣūl-unified cross-reference.
+#
+# DISPUTED subset (5 pairs) is excluded from the primary test and used as a sensitivity robustness check.
+#
+# AMEND-12 rules-tuple disclosure:
+# - Verse-reference format: Q surah:verse (Hafs-Kufan counting)
+# - No tashkeel in shared_token entries
+# - Token forms given as pausal/citation forms where ambiguous
+# - itqan_chapter column PENDING physical verification of Itqān nawʿ number for muṭlaq/muqayyad
+#   (likely nawʿ 45 based on secondary sources but not verified against a physical edition)

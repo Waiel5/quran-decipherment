@@ -1,0 +1,196 @@
+{
+  "id": "H-NEW-129",
+  "title": "Formal joint Late-Meccan peak across the 5 Pattern-B axes",
+  "bonferroni_family": "h-new-129-joint-late-meccan-peak",
+  "bonferroni_k": 1,
+  "alpha_bon": 0.01,
+  "alpha_raw": 0.01,
+  "direction": "Late Meccan only; exact 5-of-5 unique-max joint peak",
+  "n_perm": 10000,
+  "seed": 20260418,
+  "phase_order": [
+    "Early Meccan",
+    "Middle Meccan",
+    "Late Meccan",
+    "Medinan"
+  ],
+  "phase_counts": {
+    "Early Meccan": 48,
+    "Medinan": 24,
+    "Late Meccan": 21,
+    "Middle Meccan": 21
+  },
+  "upstream_json": "findings/phase-b-hypotheses/csv/h-new-125.json",
+  "pre_reg": "findings/phase-b-hypotheses/h-new-129-joint-late-meccan-peak-prereg.md",
+  "naive_equal_phase_independence_reference": 0.0009765625,
+  "notes": [
+    "Primary inference is the empirical phase-label permutation p-value, not the naive equal-phase heuristic.",
+    "MW-5 uses a known Medinan-peak 5-axis bundle from H-NEW-125 and does not consume a Bonferroni slot."
+  ],
+  "primary_pattern_b": {
+    "axes": [
+      "qul_density",
+      "book_reference_density",
+      "eschatological_density",
+      "muq_cardinality",
+      "loanword_density"
+    ],
+    "target_phase": "Late Meccan",
+    "observed_n_target_phase_peaks": 5,
+    "observed_joint_hit": true,
+    "perm_joint_hits": 225,
+    "p_perm_one_sided": 0.0225977402259774,
+    "passes_alpha_bon": false,
+    "per_axis": {
+      "qul_density": {
+        "phase_means": {
+          "Early Meccan": 1.7414526952085183,
+          "Middle Meccan": 4.888600350164323,
+          "Late Meccan": 8.948015313920612,
+          "Medinan": 4.925924456742255
+        },
+        "peak_phase": "Late Meccan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      },
+      "book_reference_density": {
+        "phase_means": {
+          "Early Meccan": 3.774023267377835,
+          "Middle Meccan": 11.851563617599162,
+          "Late Meccan": 26.36327281166481,
+          "Medinan": 18.91835728637977
+        },
+        "peak_phase": "Late Meccan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      },
+      "eschatological_density": {
+        "phase_means": {
+          "Early Meccan": 6.848186942462754,
+          "Middle Meccan": 17.927583055728206,
+          "Late Meccan": 31.24484464037351,
+          "Medinan": 28.536697222155023
+        },
+        "peak_phase": "Late Meccan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      },
+      "muq_cardinality": {
+        "phase_means": {
+          "Early Meccan": 0.020833333333333332,
+          "Middle Meccan": 1.0952380952380953,
+          "Late Meccan": 2.2857142857142856,
+          "Medinan": 0.25
+        },
+        "peak_phase": "Late Meccan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      },
+      "loanword_density": {
+        "phase_means": {
+          "Early Meccan": 33.3398054774243,
+          "Middle Meccan": 75.07446940220859,
+          "Late Meccan": 135.47073976654553,
+          "Medinan": 130.32329588469645
+        },
+        "peak_phase": "Late Meccan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      }
+    },
+    "perm_n_target_phase_peaks_distribution": {
+      "0": 3708,
+      "1": 2665,
+      "2": 1589,
+      "3": 1056,
+      "4": 757,
+      "5": 225
+    }
+  },
+  "mw5_positive_control": {
+    "axes": [
+      "allah_density",
+      "legal_term_density",
+      "personal_pronoun_density",
+      "mean_verse_length",
+      "divine_name_density"
+    ],
+    "target_phase": "Medinan",
+    "observed_n_target_phase_peaks": 5,
+    "observed_joint_hit": true,
+    "perm_joint_hits": 598,
+    "p_perm_one_sided": 0.0598940105989401,
+    "mw5_pass": false,
+    "per_axis": {
+      "allah_density": {
+        "phase_means": {
+          "Early Meccan": 4.6617264265734555,
+          "Middle Meccan": 10.118647023431093,
+          "Late Meccan": 50.80395249250581,
+          "Medinan": 119.62379795842564
+        },
+        "peak_phase": "Medinan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      },
+      "legal_term_density": {
+        "phase_means": {
+          "Early Meccan": 2.919571904160529,
+          "Middle Meccan": 6.585195450513836,
+          "Late Meccan": 17.218883532831732,
+          "Medinan": 26.31832906283378
+        },
+        "peak_phase": "Medinan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      },
+      "personal_pronoun_density": {
+        "phase_means": {
+          "Early Meccan": 5.373148647400208,
+          "Middle Meccan": 8.2081899066979,
+          "Late Meccan": 13.561166883751138,
+          "Medinan": 15.691850345877695
+        },
+        "peak_phase": "Medinan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      },
+      "mean_verse_length": {
+        "phase_means": {
+          "Early Meccan": 4.419090626218936,
+          "Middle Meccan": 9.560712956065244,
+          "Late Meccan": 16.9016458258324,
+          "Medinan": 19.62757937281564
+        },
+        "peak_phase": "Medinan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      },
+      "divine_name_density": {
+        "phase_means": {
+          "Early Meccan": 12.70573114620943,
+          "Middle Meccan": 30.94782877525046,
+          "Late Meccan": 94.13169843692823,
+          "Medinan": 172.4786646247339
+        },
+        "peak_phase": "Medinan",
+        "peak_phase_unique": true,
+        "target_hit": true
+      }
+    },
+    "perm_n_target_phase_peaks_distribution": {
+      "0": 4879,
+      "1": 1877,
+      "2": 847,
+      "3": 842,
+      "4": 957,
+      "5": 598
+    }
+  },
+  "verdict": {
+    "primary_pass": false,
+    "mw5_pass": false,
+    "overall": "NULL-BROKEN",
+    "verdict_ceiling": "PASS-DIRECTED only; axis bundle was selected from prior H-NEW-125 results."
+  }
+}

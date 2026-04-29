@@ -1,0 +1,725 @@
+{
+  "hypothesis_id": "H-NEW-69",
+  "title": "Half-alphabet split: muqaṭṭaʿāt vs classical 14-of-28 groupings",
+  "run_date": "2026-04-15",
+  "agent": "h-new-69-specialist",
+  "pre_reg": "findings/phase-b-hypotheses/h-new-69-half-alphabet-split-prereg.md",
+  "rules_tuple": [
+    "28-letter Arabic orthographic alphabet",
+    "hamza folded into alif",
+    "classical Sibawayh/al-Khalīl/al-Zamakhsharī classifications"
+  ],
+  "bonferroni_family": "2026-04-15-Wave-Half-Alphabet",
+  "bonferroni_k": 8,
+  "alpha_family": 0.05,
+  "alpha_per_grouping": 0.00625,
+  "alphabet_28": [
+    "ا",
+    "ب",
+    "ت",
+    "ث",
+    "ج",
+    "ح",
+    "خ",
+    "د",
+    "ذ",
+    "ر",
+    "ز",
+    "س",
+    "ش",
+    "ص",
+    "ض",
+    "ط",
+    "ظ",
+    "ع",
+    "غ",
+    "ف",
+    "ق",
+    "ك",
+    "ل",
+    "م",
+    "ن",
+    "ه",
+    "و",
+    "ي"
+  ],
+  "muq_14": [
+    "ا",
+    "ح",
+    "ر",
+    "س",
+    "ص",
+    "ط",
+    "ع",
+    "ق",
+    "ك",
+    "ل",
+    "م",
+    "ن",
+    "ه",
+    "ي"
+  ],
+  "non_muq_14": [
+    "ب",
+    "ت",
+    "ث",
+    "ج",
+    "خ",
+    "د",
+    "ذ",
+    "ز",
+    "ش",
+    "ض",
+    "ظ",
+    "غ",
+    "ف",
+    "و"
+  ],
+  "groupings_tested": [
+    {
+      "name": "G1_shamsiyyah",
+      "source": "sun letters (al-Zamakhsharī Mufaṣṣal §82)",
+      "size": 14,
+      "letters": [
+        "ت",
+        "ث",
+        "د",
+        "ذ",
+        "ر",
+        "ز",
+        "س",
+        "ش",
+        "ص",
+        "ض",
+        "ط",
+        "ظ",
+        "ل",
+        "ن"
+      ]
+    },
+    {
+      "name": "G2_qamariyyah",
+      "source": "moon letters (complement of shamsiyyah)",
+      "size": 14,
+      "letters": [
+        "ا",
+        "ب",
+        "ج",
+        "ح",
+        "خ",
+        "ع",
+        "غ",
+        "ف",
+        "ق",
+        "ك",
+        "م",
+        "ه",
+        "و",
+        "ي"
+      ]
+    },
+    {
+      "name": "G3_majhura_Sibawayh",
+      "source": "voiced per Sibawayh al-Kitāb IV ch. 565",
+      "size": 18,
+      "letters": [
+        "ا",
+        "ب",
+        "ج",
+        "د",
+        "ذ",
+        "ر",
+        "ز",
+        "ض",
+        "ط",
+        "ظ",
+        "ع",
+        "غ",
+        "ق",
+        "ل",
+        "م",
+        "ن",
+        "و",
+        "ي"
+      ]
+    },
+    {
+      "name": "G4_mahmusa_Sibawayh",
+      "source": "voiceless per Sibawayh al-Kitāb IV ch. 565",
+      "size": 10,
+      "letters": [
+        "ت",
+        "ث",
+        "ح",
+        "خ",
+        "س",
+        "ش",
+        "ص",
+        "ف",
+        "ك",
+        "ه"
+      ]
+    },
+    {
+      "name": "G5_modern_voiced",
+      "source": "voiced per Watson 2002 modern phonetic",
+      "size": 16,
+      "letters": [
+        "ا",
+        "ب",
+        "ج",
+        "د",
+        "ذ",
+        "ر",
+        "ز",
+        "ض",
+        "ظ",
+        "ع",
+        "غ",
+        "ل",
+        "م",
+        "ن",
+        "و",
+        "ي"
+      ]
+    },
+    {
+      "name": "G6_modern_voiceless",
+      "source": "voiceless per Watson 2002 modern phonetic",
+      "size": 12,
+      "letters": [
+        "ت",
+        "ث",
+        "ح",
+        "خ",
+        "س",
+        "ش",
+        "ص",
+        "ط",
+        "ف",
+        "ق",
+        "ك",
+        "ه"
+      ]
+    },
+    {
+      "name": "G7_safir",
+      "source": "sibilants (Sibawayh / al-Khalīl)",
+      "size": 3,
+      "letters": [
+        "ز",
+        "س",
+        "ص"
+      ]
+    },
+    {
+      "name": "G8_itbaq",
+      "source": "strict emphatic / iṭbāq (Sibawayh / al-Mubarrad)",
+      "size": 4,
+      "letters": [
+        "ص",
+        "ض",
+        "ط",
+        "ظ"
+      ]
+    }
+  ],
+  "per_grouping_results": [
+    {
+      "name": "G1_shamsiyyah",
+      "source": "sun letters (al-Zamakhsharī Mufaṣṣal §82)",
+      "grouping_size": 14,
+      "grouping_letters": [
+        "ت",
+        "ث",
+        "د",
+        "ذ",
+        "ر",
+        "ز",
+        "س",
+        "ش",
+        "ص",
+        "ض",
+        "ط",
+        "ظ",
+        "ل",
+        "ن"
+      ],
+      "muq_intersect_grouping": [
+        "ر",
+        "س",
+        "ص",
+        "ط",
+        "ل",
+        "ن"
+      ],
+      "muq_only": [
+        "ا",
+        "ح",
+        "ع",
+        "ق",
+        "ك",
+        "م",
+        "ه",
+        "ي"
+      ],
+      "grouping_only": [
+        "ت",
+        "ث",
+        "د",
+        "ذ",
+        "ز",
+        "ش",
+        "ض",
+        "ظ"
+      ],
+      "k_observed": 6,
+      "k_expected": 7.0,
+      "jaccard_overlap": 0.2727272727272727,
+      "p_one_sided_enrichment": 0.8715998115493336,
+      "p_one_sided_depletion": 0.353195136178041,
+      "p_two_sided": 0.706390272356082,
+      "significant_bonferroni_8": false,
+      "significant_unprotected_05": false,
+      "direction": "DEPLETED"
+    },
+    {
+      "name": "G2_qamariyyah",
+      "source": "moon letters (complement of shamsiyyah)",
+      "grouping_size": 14,
+      "grouping_letters": [
+        "ا",
+        "ب",
+        "ج",
+        "ح",
+        "خ",
+        "ع",
+        "غ",
+        "ف",
+        "ق",
+        "ك",
+        "م",
+        "ه",
+        "و",
+        "ي"
+      ],
+      "muq_intersect_grouping": [
+        "ا",
+        "ح",
+        "ع",
+        "ق",
+        "ك",
+        "م",
+        "ه",
+        "ي"
+      ],
+      "muq_only": [
+        "ر",
+        "س",
+        "ص",
+        "ط",
+        "ل",
+        "ن"
+      ],
+      "grouping_only": [
+        "ب",
+        "ج",
+        "خ",
+        "غ",
+        "ف",
+        "و"
+      ],
+      "k_observed": 8,
+      "k_expected": 7.0,
+      "jaccard_overlap": 0.4,
+      "p_one_sided_enrichment": 0.353195136178041,
+      "p_one_sided_depletion": 0.8715998115493336,
+      "p_two_sided": 0.706390272356082,
+      "significant_bonferroni_8": false,
+      "significant_unprotected_05": false,
+      "direction": "ENRICHED"
+    },
+    {
+      "name": "G3_majhura_Sibawayh",
+      "source": "voiced per Sibawayh al-Kitāb IV ch. 565",
+      "grouping_size": 18,
+      "grouping_letters": [
+        "ا",
+        "ب",
+        "ج",
+        "د",
+        "ذ",
+        "ر",
+        "ز",
+        "ض",
+        "ط",
+        "ظ",
+        "ع",
+        "غ",
+        "ق",
+        "ل",
+        "م",
+        "ن",
+        "و",
+        "ي"
+      ],
+      "muq_intersect_grouping": [
+        "ا",
+        "ر",
+        "ط",
+        "ع",
+        "ق",
+        "ل",
+        "م",
+        "ن",
+        "ي"
+      ],
+      "muq_only": [
+        "ح",
+        "س",
+        "ص",
+        "ك",
+        "ه"
+      ],
+      "grouping_only": [
+        "ب",
+        "ج",
+        "د",
+        "ذ",
+        "ز",
+        "ض",
+        "ظ",
+        "غ",
+        "و"
+      ],
+      "k_observed": 9,
+      "k_expected": 9.0,
+      "jaccard_overlap": 0.391304347826087,
+      "p_one_sided_enrichment": 0.6527078565980168,
+      "p_one_sided_depletion": 0.6527078565980168,
+      "p_two_sided": 1.0,
+      "significant_bonferroni_8": false,
+      "significant_unprotected_05": false,
+      "direction": "NEUTRAL"
+    },
+    {
+      "name": "G4_mahmusa_Sibawayh",
+      "source": "voiceless per Sibawayh al-Kitāb IV ch. 565",
+      "grouping_size": 10,
+      "grouping_letters": [
+        "ت",
+        "ث",
+        "ح",
+        "خ",
+        "س",
+        "ش",
+        "ص",
+        "ف",
+        "ك",
+        "ه"
+      ],
+      "muq_intersect_grouping": [
+        "ح",
+        "س",
+        "ص",
+        "ك",
+        "ه"
+      ],
+      "muq_only": [
+        "ا",
+        "ر",
+        "ط",
+        "ع",
+        "ق",
+        "ل",
+        "م",
+        "ن",
+        "ي"
+      ],
+      "grouping_only": [
+        "ت",
+        "ث",
+        "خ",
+        "ش",
+        "ف"
+      ],
+      "k_observed": 5,
+      "k_expected": 5.0,
+      "jaccard_overlap": 0.2631578947368421,
+      "p_one_sided_enrichment": 0.6527078565980168,
+      "p_one_sided_depletion": 0.6527078565980168,
+      "p_two_sided": 1.0,
+      "significant_bonferroni_8": false,
+      "significant_unprotected_05": false,
+      "direction": "NEUTRAL"
+    },
+    {
+      "name": "G5_modern_voiced",
+      "source": "voiced per Watson 2002 modern phonetic",
+      "grouping_size": 16,
+      "grouping_letters": [
+        "ا",
+        "ب",
+        "ج",
+        "د",
+        "ذ",
+        "ر",
+        "ز",
+        "ض",
+        "ظ",
+        "ع",
+        "غ",
+        "ل",
+        "م",
+        "ن",
+        "و",
+        "ي"
+      ],
+      "muq_intersect_grouping": [
+        "ا",
+        "ر",
+        "ع",
+        "ل",
+        "م",
+        "ن",
+        "ي"
+      ],
+      "muq_only": [
+        "ح",
+        "س",
+        "ص",
+        "ط",
+        "ق",
+        "ك",
+        "ه"
+      ],
+      "grouping_only": [
+        "ب",
+        "ج",
+        "د",
+        "ذ",
+        "ز",
+        "ض",
+        "ظ",
+        "غ",
+        "و"
+      ],
+      "k_observed": 7,
+      "k_expected": 8.0,
+      "jaccard_overlap": 0.30434782608695654,
+      "p_one_sided_enrichment": 0.874070085700184,
+      "p_one_sided_depletion": 0.3517835509489837,
+      "p_two_sided": 0.7035671018979675,
+      "significant_bonferroni_8": false,
+      "significant_unprotected_05": false,
+      "direction": "DEPLETED"
+    },
+    {
+      "name": "G6_modern_voiceless",
+      "source": "voiceless per Watson 2002 modern phonetic",
+      "grouping_size": 12,
+      "grouping_letters": [
+        "ت",
+        "ث",
+        "ح",
+        "خ",
+        "س",
+        "ش",
+        "ص",
+        "ط",
+        "ف",
+        "ق",
+        "ك",
+        "ه"
+      ],
+      "muq_intersect_grouping": [
+        "ح",
+        "س",
+        "ص",
+        "ط",
+        "ق",
+        "ك",
+        "ه"
+      ],
+      "muq_only": [
+        "ا",
+        "ر",
+        "ع",
+        "ل",
+        "م",
+        "ن",
+        "ي"
+      ],
+      "grouping_only": [
+        "ت",
+        "ث",
+        "خ",
+        "ش",
+        "ف"
+      ],
+      "k_observed": 7,
+      "k_expected": 6.0,
+      "jaccard_overlap": 0.3684210526315789,
+      "p_one_sided_enrichment": 0.3517835509489837,
+      "p_one_sided_depletion": 0.874070085700184,
+      "p_two_sided": 0.7035671018979675,
+      "significant_bonferroni_8": false,
+      "significant_unprotected_05": false,
+      "direction": "ENRICHED"
+    },
+    {
+      "name": "G7_safir",
+      "source": "sibilants (Sibawayh / al-Khalīl)",
+      "grouping_size": 3,
+      "grouping_letters": [
+        "ز",
+        "س",
+        "ص"
+      ],
+      "muq_intersect_grouping": [
+        "س",
+        "ص"
+      ],
+      "muq_only": [
+        "ا",
+        "ح",
+        "ر",
+        "ط",
+        "ع",
+        "ق",
+        "ك",
+        "ل",
+        "م",
+        "ن",
+        "ه",
+        "ي"
+      ],
+      "grouping_only": [
+        "ز"
+      ],
+      "k_observed": 2,
+      "k_expected": 1.5,
+      "jaccard_overlap": 0.13333333333333333,
+      "p_one_sided_enrichment": 0.5,
+      "p_one_sided_depletion": 0.8888888888888888,
+      "p_two_sided": 1.0,
+      "significant_bonferroni_8": false,
+      "significant_unprotected_05": false,
+      "direction": "ENRICHED"
+    },
+    {
+      "name": "G8_itbaq",
+      "source": "strict emphatic / iṭbāq (Sibawayh / al-Mubarrad)",
+      "grouping_size": 4,
+      "grouping_letters": [
+        "ص",
+        "ض",
+        "ط",
+        "ظ"
+      ],
+      "muq_intersect_grouping": [
+        "ص",
+        "ط"
+      ],
+      "muq_only": [
+        "ا",
+        "ح",
+        "ر",
+        "س",
+        "ع",
+        "ق",
+        "ك",
+        "ل",
+        "م",
+        "ن",
+        "ه",
+        "ي"
+      ],
+      "grouping_only": [
+        "ض",
+        "ظ"
+      ],
+      "k_observed": 2,
+      "k_expected": 2.0,
+      "jaccard_overlap": 0.125,
+      "p_one_sided_enrichment": 0.7022222222222222,
+      "p_one_sided_depletion": 0.7022222222222222,
+      "p_two_sided": 1.0,
+      "significant_bonferroni_8": false,
+      "significant_unprotected_05": false,
+      "direction": "NEUTRAL"
+    }
+  ],
+  "best_matching_grouping": "G5_modern_voiced",
+  "best_matching_p_two_sided": 0.7035671018979675,
+  "mw5_positive_control": {
+    "name": "MW5_planted_full_G1",
+    "k_observed": 14,
+    "p_two_sided": 4.985467362637911e-08,
+    "expected_threshold": 1e-07,
+    "passes": true
+  },
+  "mw5b_positive_control": {
+    "name": "MW5b_planted_one_swap_G1",
+    "k_observed": 13,
+    "p_two_sided": 9.821370704396683e-06,
+    "expected_threshold": 0.001,
+    "passes": true
+  },
+  "phonotactic_side_test": {
+    "sonorants_total": 6,
+    "sonorants_in_muq": [
+      "ر",
+      "ل",
+      "م",
+      "ن",
+      "ي"
+    ],
+    "sonorants_in_muq_count": 5,
+    "sonorants_in_non_muq": [
+      "و"
+    ],
+    "sonorants_in_non_muq_count": 1,
+    "stops_total": 7,
+    "stops_in_muq": [
+      "ا",
+      "ط",
+      "ق",
+      "ك"
+    ],
+    "stops_in_muq_count": 4,
+    "stops_in_non_muq": [
+      "ب",
+      "ت",
+      "د"
+    ],
+    "stops_in_non_muq_count": 3,
+    "fricatives_total": 14,
+    "fricatives_in_muq": [
+      "ح",
+      "س",
+      "ص",
+      "ع",
+      "ه"
+    ],
+    "fricatives_in_muq_count": 5,
+    "fricatives_in_non_muq": [
+      "ث",
+      "خ",
+      "ذ",
+      "ز",
+      "ش",
+      "ض",
+      "ظ",
+      "غ",
+      "ف"
+    ],
+    "fricatives_in_non_muq_count": 9
+  },
+  "mw7_internal_error_gate": "PASS",
+  "verdict": "NULL",
+  "integrity_sha256": {
+    "quran_json": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "script": "a842382cfce3781f1359aba9a2c1cb4d13e4620011390a95e699a48389494e3b"
+  }
+}

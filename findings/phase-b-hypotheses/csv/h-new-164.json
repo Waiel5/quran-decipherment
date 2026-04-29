@@ -1,0 +1,88 @@
+{
+  "id": "h-new-164",
+  "title": "Fourier spectrum of 114 verse-count integer sequence",
+  "timestamp": "2026-04-17T06:44:44.118018Z",
+  "seed": 20260419,
+  "variant": "no-tashkeel",
+  "mw_5": {
+    "synthetic_f0": 7,
+    "P_norm_at_f0": 1.0,
+    "argmax_k": 7,
+    "passes_threshold_0p5": true
+  },
+  "primary": {
+    "name": "verse_counts",
+    "length": 114,
+    "sum": 6236.0,
+    "top5_peaks_k_and_power_fraction": [
+      [
+        1,
+        0.331834759622948
+      ],
+      [
+        2,
+        0.09942264251388502
+      ],
+      [
+        7,
+        0.07713885963668853
+      ],
+      [
+        3,
+        0.060685364993718134
+      ],
+      [
+        6,
+        0.03756932981782531
+      ]
+    ],
+    "observed_max_peak_power_fraction": 0.331834759622948,
+    "observed_argmax_k": 1,
+    "null_percentile_95": 0.11454470207587358,
+    "null_percentile_99": 0.13913708977758651,
+    "null_max": 0.23128070441016646,
+    "p_value": 9.999000099990002e-05,
+    "alpha_bon": 0.05,
+    "bonferroni_k": 1,
+    "reject_null": true,
+    "n_perm": 10000
+  },
+  "secondary": {
+    "name": "cumsum_verse_counts",
+    "length": 114,
+    "sum": 508111.0,
+    "top5_peaks_k_and_power_fraction": [
+      [
+        1,
+        0.578635254929203
+      ],
+      [
+        2,
+        0.17262309972726037
+      ],
+      [
+        3,
+        0.06430844140718876
+      ],
+      [
+        4,
+        0.0390166243737984
+      ],
+      [
+        5,
+        0.02475733893487677
+      ]
+    ],
+    "observed_max_peak_power_fraction": 0.578635254929203,
+    "observed_argmax_k": 1,
+    "null_percentile_95": 0.11976159067737704,
+    "null_percentile_99": 0.1432610682084502,
+    "null_max": 0.25809760523642716,
+    "p_value": 9.999000099990002e-05,
+    "alpha_bon": 0.05,
+    "bonferroni_k": 1,
+    "reject_null": true,
+    "n_perm": 10000
+  },
+  "prereg": "findings/phase-b-hypotheses/h-new-164-fourier-verse-count-prereg.md"
+}

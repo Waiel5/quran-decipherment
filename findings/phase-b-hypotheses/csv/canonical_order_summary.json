@@ -1,0 +1,113 @@
+{
+  "primary": {
+    "tau_forward": 0.015370284117373078,
+    "tau_p_forward": 0.8084402967833418,
+    "tau_reverse": -0.015370284117373078,
+    "tau_p_reverse": 0.8084402967833418,
+    "direction_used": "forward",
+    "tau_used": 0.015370284117373078,
+    "rho_used": 0.021955812964500523,
+    "adjacent_pair_matches": 17,
+    "adjacent_pairs_total": 113,
+    "null_mean_abs_tau": 0.05091420586865394,
+    "null_sd_abs_tau": 0.038464075232308804,
+    "null_mean_signed_tau": -0.0008758888371370905,
+    "null_sd_signed_tau": 0.06380418686463582,
+    "permutation_p_two_sided_abs": 0.8105189481051894,
+    "null_mean_adj_matches": 2.0054,
+    "null_sd_adj_matches": 1.4014174395946413,
+    "permutation_p_adj_matches": 9.999000099990002e-05,
+    "n_perms": 10000
+  },
+  "chronological": {
+    "tau_forward": -0.056047197640118,
+    "tau_reverse": 0.056047197640118,
+    "tau_used": -0.056047197640118,
+    "rho": -0.018343087422287928,
+    "direction_used": "forward"
+  },
+  "length_desc_control": {
+    "tau_length_desc_vs_canonical": 0.8376028566992704,
+    "note": "The canonical mushaf order is classically described as length-descending. This tau measures HOW MUCH of the recovered-vs-canonical signal is attributable to mere length."
+  },
+  "sub_distance_sensitivity": {
+    "NCD": {
+      "tau": -0.05294208973761839,
+      "adj_match": 18,
+      "cost": 9.644720496894413
+    },
+    "JAC": {
+      "tau": 0.47709982921906535,
+      "adj_match": 12,
+      "cost": 27.164596273291906
+    },
+    "JS": {
+      "tau": 0.18925632665735134,
+      "adj_match": 16,
+      "cost": 39.57950310559008
+    },
+    "MVL": {
+      "tau": 0.5205713398540599,
+      "adj_match": 6,
+      "cost": 2.651552795031055
+    },
+    "BOR": {
+      "tau": 0.12932774413910883,
+      "adj_match": 4,
+      "cost": 29.090683229813667
+    }
+  },
+  "pass": false,
+  "strong": false,
+  "seed": 20260412,
+  "recovered_ids_first_20": [
+    81,
+    91,
+    79,
+    87,
+    92,
+    93,
+    97,
+    106,
+    109,
+    111,
+    104,
+    101,
+    88,
+    80,
+    86,
+    90,
+    103,
+    95,
+    1,
+    82
+  ],
+  "recovered_ids_last_20": [
+    98,
+    72,
+    73,
+    71,
+    76,
+    53,
+    55,
+    89,
+    105,
+    110,
+    112,
+    114,
+    113,
+    99,
+    100,
+    102,
+    96,
+    107,
+    108,
+    94
+  ],
+  "search_params": {
+    "n_nn_starts": 114,
+    "n_rand_restarts": 50,
+    "max_iter_per_restart": 10000,
+    "total_restarts": 164
+  }
+}

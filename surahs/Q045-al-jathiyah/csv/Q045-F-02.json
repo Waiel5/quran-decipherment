@@ -1,0 +1,46 @@
+{
+  "prereg_id": "Q045-F-02",
+  "prereg_sha": "87889c09fa16dc303700fd47ed9af6886b2c67a8c9554328222afd40ba4d5717",
+  "seed": 20260428,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "needle": "اتخذ إلهه هواه",
+  "primary_hits": [
+    {
+      "surah": 25,
+      "verse": 43,
+      "text": "أرأيت من اتخذ إلهه هواه أفأنت تكون عليه وكيلا"
+    },
+    {
+      "surah": 45,
+      "verse": 23,
+      "text": "أفرأيت من اتخذ إلهه هواه وأضله الله على علم وختم على سمعه وقلبه وجعل على بصره غشاوة فمن يهديه من بعد الله ۚ أفلا تذكرون"
+    }
+  ],
+  "rules_tuple_stability": {
+    "no-tashkeel": {
+      "count": 2,
+      "verses": [
+        [
+          25,
+          43
+        ],
+        [
+          45,
+          23
+        ]
+      ]
+    },
+    "min-tashkeel": {
+      "count": 0,
+      "verses": []
+    }
+  },
+  "H1_pass": true,
+  "H1_violation": false,
+  "Q25_43_word_count_no_tashkeel": 9,
+  "Q45_23_word_count_no_tashkeel": 24,
+  "expansion_word_ratio_45_to_25": 2.6667,
+  "expansion_threshold": 1.7,
+  "H1b_pass": true,
+  "verdict": "VINDICATED"
+}

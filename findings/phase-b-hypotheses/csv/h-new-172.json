@@ -1,0 +1,452 @@
+{
+  "id": "H-NEW-172",
+  "title": "Per-surah Zipf α: Quran vs Bukhārī bab-segments",
+  "seed": 20260419,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-surah-1, hafs-kufan, mashriqi)",
+  "bonferroni": {
+    "k_primary": 3,
+    "alpha_family": 0.05,
+    "alpha_bon_primary": 0.016666666666666666,
+    "k_secondary_within": 4,
+    "alpha_bon_secondary": 0.004166666666666667
+  },
+  "mw5": {
+    "alpha_true": 1.0,
+    "alpha_hat": 0.9786190203008569,
+    "r2": 0.9885685638837249,
+    "pass_0.1_tol": true,
+    "aux_0.8": 0.852729919240566,
+    "aux_1.3": 1.195271199702354
+  },
+  "quran": {
+    "n_surahs_fit": 93,
+    "mean_alpha": 0.5429226137724896,
+    "sd_alpha": 0.1735694018028227,
+    "min_alpha": -0.0,
+    "max_alpha": 0.9250006013159207
+  },
+  "bukhari": {
+    "n_babs_fit": 114,
+    "mean_alpha": 0.7046944665879128,
+    "sd_alpha": 0.07560134853755918,
+    "min_alpha": 0.4890369683102333,
+    "max_alpha": 0.8532386020647516
+  },
+  "primary_cells": {
+    "P1_means_welch_t": {
+      "t": -8.364177649390355,
+      "df": 120.33489750558793,
+      "p_two_sided": 0.0,
+      "pass_bonferroni": true,
+      "direction": "Quran < Bukhari"
+    },
+    "P2_variances_brown_forsythe": {
+      "t": 4.831264339247675,
+      "p_two_sided": 1.3566873580117544e-06,
+      "pass_bonferroni": true,
+      "direction": "Quran > Bukhari"
+    }
+  },
+  "secondary_s1": {
+    "muq": {
+      "cohens_d": 0.7393002938164148,
+      "p": 0.00015163793637573697,
+      "pass_sub_bon": true
+    },
+    "medinan_vs_meccan": {
+      "cohens_d": 0.6323664173751751,
+      "p": 0.0036499385930928163,
+      "pass_sub_bon": true
+    },
+    "log_length_spearman": {
+      "rho": 0.810086541330946,
+      "p": 0.0,
+      "pass_sub_bon": true
+    },
+    "dispersion_spearman": {
+      "rho": -0.7517643724445834,
+      "p": 0.0,
+      "pass_sub_bon": true
+    },
+    "any_pass": true,
+    "strongest": {
+      "axis": "log_length",
+      "p": 0.0,
+      "effect": 0.810086541330946
+    }
+  },
+  "synthesis_h_new_159": {
+    "spearman_alpha_beta": -0.4525803310613438,
+    "p": 8.444416068176253e-06,
+    "note": "α and β are NEGATIVELY correlated: short-tailed surahs (low α) grow vocabulary fast (high β). Consistent with H-NEW-159 length-driven heterogeneity.",
+    "recall_h159_quran_mean_beta": 0.901,
+    "recall_h159_quran_sd_beta": 0.067,
+    "recall_h159_bukh_mean_beta": 0.842,
+    "recall_h159_bukh_sd_beta": 0.027
+  },
+  "verdict": "BOTH PRIMARY PASS — Quran α differs from Bukhārī in BOTH mean AND variance; secondary S1 pass on ['muq', 'medinan', 'log_length', 'dispersion']",
+  "per_surah_sample": [
+    {
+      "surah_id": 2,
+      "N": 6140,
+      "V": 2279,
+      "alpha": 0.7985367485702407,
+      "r2": 0.9791465112845311,
+      "n_fit_points": 757,
+      "is_muq": true,
+      "period": "Medinan"
+    },
+    {
+      "surah_id": 3,
+      "N": 3501,
+      "V": 1469,
+      "alpha": 0.761651651954341,
+      "r2": 0.9782529452613307,
+      "n_fit_points": 445,
+      "is_muq": true,
+      "period": "Medinan"
+    },
+    {
+      "surah_id": 4,
+      "N": 3763,
+      "V": 1513,
+      "alpha": 0.7797720951320202,
+      "r2": 0.9750750060910734,
+      "n_fit_points": 484,
+      "is_muq": false,
+      "period": "Medinan"
+    },
+    {
+      "surah_id": 5,
+      "N": 2837,
+      "V": 1249,
+      "alpha": 0.7520982010911527,
+      "r2": 0.9747235608817529,
+      "n_fit_points": 374,
+      "is_muq": false,
+      "period": "Medinan"
+    },
+    {
+      "surah_id": 6,
+      "N": 3056,
+      "V": 1364,
+      "alpha": 0.7331853698718839,
+      "r2": 0.9725147383566003,
+      "n_fit_points": 417,
+      "is_muq": false,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 7,
+      "N": 3341,
+      "V": 1558,
+      "alpha": 0.7305394750140864,
+      "r2": 0.9720456395061716,
+      "n_fit_points": 442,
+      "is_muq": true,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 8,
+      "N": 1242,
+      "V": 641,
+      "alpha": 0.6738276817675332,
+      "r2": 0.9728329851604736,
+      "n_fit_points": 172,
+      "is_muq": false,
+      "period": "Medinan"
+    },
+    {
+      "surah_id": 9,
+      "N": 2505,
+      "V": 1126,
+      "alpha": 0.7276919406716325,
+      "r2": 0.9796256479334565,
+      "n_fit_points": 328,
+      "is_muq": false,
+      "period": "Medinan"
+    },
+    {
+      "surah_id": 10,
+      "N": 1839,
+      "V": 888,
+      "alpha": 0.7056064075866647,
+      "r2": 0.9726867462213324,
+      "n_fit_points": 256,
+      "is_muq": true,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 11,
+      "N": 1946,
+      "V": 939,
+      "alpha": 0.7130169823919074,
+      "r2": 0.9742140863126922,
+      "n_fit_points": 264,
+      "is_muq": true,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 12,
+      "N": 1795,
+      "V": 925,
+      "alpha": 0.6820738012367011,
+      "r2": 0.9571486589328781,
+      "n_fit_points": 258,
+      "is_muq": true,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 13,
+      "N": 853,
+      "V": 511,
+      "alpha": 0.6485325748452542,
+      "r2": 0.9640832445874427,
+      "n_fit_points": 106,
+      "is_muq": true,
+      "period": "Medinan"
+    },
+    {
+      "surah_id": 14,
+      "N": 830,
+      "V": 507,
+      "alpha": 0.6146550778745962,
+      "r2": 0.9532524014764042,
+      "n_fit_points": 112,
+      "is_muq": true,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 15,
+      "N": 657,
+      "V": 432,
+      "alpha": 0.5806738262830017,
+      "r2": 0.9608616206673857,
+      "n_fit_points": 84,
+      "is_muq": true,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 16,
+      "N": 1844,
+      "V": 919,
+      "alpha": 0.697982711001928,
+      "r2": 0.966134878986054,
+      "n_fit_points": 257,
+      "is_muq": false,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 17,
+      "N": 1558,
+      "V": 885,
+      "alpha": 0.6285596836731846,
+      "r2": 0.9654031283239585,
+      "n_fit_points": 222,
+      "is_muq": false,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 18,
+      "N": 1583,
+      "V": 917,
+      "alpha": 0.6156023378631715,
+      "r2": 0.9690513735417563,
+      "n_fit_points": 222,
+      "is_muq": false,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 19,
+      "N": 971,
+      "V": 589,
+      "alpha": 0.5673416554992807,
+      "r2": 0.9466106180348183,
+      "n_fit_points": 148,
+      "is_muq": true,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 20,
+      "N": 1353,
+      "V": 809,
+      "alpha": 0.6537363298586194,
+      "r2": 0.9683147397480912,
+      "n_fit_points": 169,
+      "is_muq": true,
+      "period": "Meccan"
+    },
+    {
+      "surah_id": 21,
+      "N": 1174,
+      "V": 678,
+      "alpha": 0.5932317202120537,
+      "r2": 0.9638776192022753,
+      "n_fit_points": 168,
+      "is_muq": false,
+      "period": "Meccan"
+    }
+  ],
+  "per_bab_sample": [
+    {
+      "bab_id": 1,
+      "N": 4939,
+      "V": 1754,
+      "alpha": 0.8259490839557938,
+      "r2": 0.9783631882173327,
+      "n_fit_points": 566
+    },
+    {
+      "bab_id": 2,
+      "N": 3324,
+      "V": 1186,
+      "alpha": 0.8532386020647516,
+      "r2": 0.9792363598968982,
+      "n_fit_points": 384
+    },
+    {
+      "bab_id": 3,
+      "N": 3276,
+      "V": 1320,
+      "alpha": 0.7891223714903209,
+      "r2": 0.9720985523642977,
+      "n_fit_points": 417
+    },
+    {
+      "bab_id": 4,
+      "N": 2431,
+      "V": 939,
+      "alpha": 0.8135008461529165,
+      "r2": 0.9715623896294314,
+      "n_fit_points": 298
+    },
+    {
+      "bab_id": 5,
+      "N": 2143,
+      "V": 778,
+      "alpha": 0.8466087750050008,
+      "r2": 0.98111708633262,
+      "n_fit_points": 252
+    },
+    {
+      "bab_id": 6,
+      "N": 2074,
+      "V": 781,
+      "alpha": 0.8218526077810389,
+      "r2": 0.9751524662775317,
+      "n_fit_points": 263
+    },
+    {
+      "bab_id": 7,
+      "N": 1838,
+      "V": 879,
+      "alpha": 0.749763821700925,
+      "r2": 0.9729251531696536,
+      "n_fit_points": 235
+    },
+    {
+      "bab_id": 8,
+      "N": 1808,
+      "V": 742,
+      "alpha": 0.7418945836500309,
+      "r2": 0.9796205695342511,
+      "n_fit_points": 254
+    },
+    {
+      "bab_id": 9,
+      "N": 1739,
+      "V": 770,
+      "alpha": 0.7983421272015906,
+      "r2": 0.9733416879347863,
+      "n_fit_points": 212
+    },
+    {
+      "bab_id": 10,
+      "N": 1622,
+      "V": 760,
+      "alpha": 0.6968598399694726,
+      "r2": 0.9603370302869334,
+      "n_fit_points": 248
+    },
+    {
+      "bab_id": 11,
+      "N": 1611,
+      "V": 670,
+      "alpha": 0.8390796844486896,
+      "r2": 0.9746539139840423,
+      "n_fit_points": 185
+    },
+    {
+      "bab_id": 12,
+      "N": 1588,
+      "V": 747,
+      "alpha": 0.7360045621653089,
+      "r2": 0.9693759970573164,
+      "n_fit_points": 217
+    },
+    {
+      "bab_id": 13,
+      "N": 1474,
+      "V": 667,
+      "alpha": 0.6543112303367183,
+      "r2": 0.9768274829025186,
+      "n_fit_points": 233
+    },
+    {
+      "bab_id": 14,
+      "N": 1395,
+      "V": 718,
+      "alpha": 0.711539324311209,
+      "r2": 0.9648395719904592,
+      "n_fit_points": 187
+    },
+    {
+      "bab_id": 15,
+      "N": 1300,
+      "V": 531,
+      "alpha": 0.7598276445604157,
+      "r2": 0.9727467640601799,
+      "n_fit_points": 186
+    },
+    {
+      "bab_id": 16,
+      "N": 1299,
+      "V": 578,
+      "alpha": 0.7550866091969087,
+      "r2": 0.9641397316481899,
+      "n_fit_points": 179
+    },
+    {
+      "bab_id": 17,
+      "N": 1297,
+      "V": 621,
+      "alpha": 0.6747313316133248,
+      "r2": 0.9687018331842598,
+      "n_fit_points": 199
+    },
+    {
+      "bab_id": 18,
+      "N": 1277,
+      "V": 585,
+      "alpha": 0.7803803577160261,
+      "r2": 0.9731097410432376,
+      "n_fit_points": 159
+    },
+    {
+      "bab_id": 19,
+      "N": 1261,
+      "V": 655,
+      "alpha": 0.6854138222712237,
+      "r2": 0.9694693281529815,
+      "n_fit_points": 177
+    },
+    {
+      "bab_id": 20,
+      "N": 1221,
+      "V": 536,
+      "alpha": 0.744395980905525,
+      "r2": 0.9674195762319105,
+      "n_fit_points": 174
+    }
+  ]
+}

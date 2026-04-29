@@ -1,0 +1,373 @@
+{
+  "finding_id": "h-new-251",
+  "title": "Q 1 → Q 2 structural-hinge characterisation across 4 feature axes",
+  "prereg_sha256": "dd819d8162bf0757ebaab03e86255ef823ec77340a5b039299bbc43e1f4450cd",
+  "parent": "H-NEW-238",
+  "related": [
+    "H-NEW-130",
+    "H-NEW-130b",
+    "H-NEW-142",
+    "H-NEW-155",
+    "H-NEW-192",
+    "H-NEW-244"
+  ],
+  "seed": 20260419,
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "rank_pass_threshold": 5,
+  "rules_tuple": "(no-tashkeel; Hafs-Kūfan; FR arccos-Bhattacharyya Dirichlet α=0.5 for A/B/C; H-NEW-165-style 8-dim phonological Euclidean for D; 113 consecutive mushaf edges; seed 20260419)",
+  "test_edge": "Q 1 → Q 2",
+  "cells": {
+    "A_root_FR": {
+      "d": 1.177623,
+      "rank": 1,
+      "threshold": 5,
+      "verdict": "PASS",
+      "stats": {
+        "min": 0.225639,
+        "max": 1.177623,
+        "mean": 0.758935,
+        "median": 0.816186,
+        "sd": 0.241975
+      },
+      "comparators": {
+        "Q14→Q15": {
+          "distance": 1.009111,
+          "rank_desc": 12
+        },
+        "Q49→Q50": {
+          "distance": 1.003462,
+          "rank_desc": 14
+        },
+        "Q56→Q57": {
+          "distance": 1.115634,
+          "rank_desc": 6
+        },
+        "Q1→Q2": {
+          "distance": 1.177623,
+          "rank_desc": 1
+        }
+      }
+    },
+    "B_char4gram_FR": {
+      "d": 1.002276,
+      "rank": 22,
+      "threshold": 5,
+      "verdict": "NULL",
+      "stats": {
+        "min": 0.256725,
+        "max": 1.26272,
+        "mean": 0.789612,
+        "median": 0.855618,
+        "sd": 0.248821
+      },
+      "comparators": {
+        "Q14→Q15": {
+          "distance": 1.03683,
+          "rank_desc": 14
+        },
+        "Q49→Q50": {
+          "distance": 1.093928,
+          "rank_desc": 9
+        },
+        "Q56→Q57": {
+          "distance": 1.125771,
+          "rank_desc": 6
+        },
+        "Q1→Q2": {
+          "distance": 1.002276,
+          "rank_desc": 22
+        }
+      }
+    },
+    "C_rhyme_FR": {
+      "d": 1.510103,
+      "rank": 8,
+      "threshold": 5,
+      "verdict": "NULL",
+      "stats": {
+        "min": 0.122838,
+        "max": 1.951073,
+        "mean": 0.782932,
+        "median": 0.74777,
+        "sd": 0.417507
+      },
+      "comparators": {
+        "Q14→Q15": {
+          "distance": 1.216202,
+          "rank_desc": 20
+        },
+        "Q49→Q50": {
+          "distance": 0.990545,
+          "rank_desc": 30
+        },
+        "Q56→Q57": {
+          "distance": 0.937061,
+          "rank_desc": 35
+        },
+        "Q1→Q2": {
+          "distance": 1.510103,
+          "rank_desc": 8
+        }
+      },
+      "vocabulary_size": 227
+    },
+    "D_phono_euclid": {
+      "d": 4.157412,
+      "rank": 31,
+      "threshold": 5,
+      "verdict": "NULL",
+      "stats": {
+        "min": 0.614239,
+        "max": 11.328363,
+        "mean": 3.133132,
+        "median": 2.367837,
+        "sd": 2.146984
+      },
+      "comparators": {
+        "Q14→Q15": {
+          "distance": 1.424395,
+          "rank_desc": 89
+        },
+        "Q49→Q50": {
+          "distance": 4.0319,
+          "rank_desc": 35
+        },
+        "Q56→Q57": {
+          "distance": 1.187661,
+          "rank_desc": 104
+        },
+        "Q1→Q2": {
+          "distance": 4.157412,
+          "rank_desc": 31
+        }
+      }
+    }
+  },
+  "pass_count": 1,
+  "overall_verdict": "AXIS-SPECIFIC",
+  "interpretation": "Q 1→Q 2 is top-5 on 1 of 4 axes; effect is feature-specific.",
+  "mw5_shuffled_null": {
+    "cell_A_root": {
+      "mean_rank": 56.488,
+      "median_rank": 57.0,
+      "frac_top5": 0.047,
+      "n_shuffle": 1000
+    },
+    "cell_B_c4g": {
+      "mean_rank": 54.189,
+      "median_rank": 52.0,
+      "frac_top5": 0.045,
+      "n_shuffle": 1000
+    },
+    "cell_C_rhyme": {
+      "mean_rank": 56.629,
+      "median_rank": 57.0,
+      "frac_top5": 0.045,
+      "n_shuffle": 1000
+    },
+    "cell_D_phono": {
+      "mean_rank": 58.207,
+      "median_rank": 58.0,
+      "frac_top5": 0.047,
+      "n_shuffle": 1000
+    }
+  },
+  "content_bridge": {
+    "q1_all_roots": [
+      "Alh",
+      "Dll",
+      "Ebd",
+      "Elm",
+      "Ewn",
+      "Hmd",
+      "SrT",
+      "dyn",
+      "gDb",
+      "gyr",
+      "hdy",
+      "mlk",
+      "nEm",
+      "qwm",
+      "rHm",
+      "rbb",
+      "smw",
+      "ywm"
+    ],
+    "q2_v1_5_roots": [
+      "Amn",
+      "Axr",
+      "Slw",
+      "flH",
+      "gyb",
+      "hdy",
+      "ktb",
+      "nfq",
+      "nzl",
+      "qbl",
+      "qwm",
+      "rbb",
+      "ryb",
+      "rzq",
+      "wqy",
+      "yqn"
+    ],
+    "shared_roots": [
+      "hdy",
+      "qwm",
+      "rbb"
+    ],
+    "n_q1_roots": 18,
+    "n_q2_v1_5_roots": 16,
+    "n_shared": 3,
+    "jaccard": 0.096774,
+    "frac_q1_in_shared": 0.166667,
+    "frac_q2v15_in_shared": 0.1875,
+    "hdy_in_q1_v6_ihdina": true,
+    "hdy_in_q2_v2_hudan": true,
+    "q1_roots_by_verse": {
+      "1": [
+        "smw",
+        "Alh",
+        "rHm",
+        "rHm"
+      ],
+      "2": [
+        "Hmd",
+        "Alh",
+        "rbb",
+        "Elm"
+      ],
+      "3": [
+        "rHm",
+        "rHm"
+      ],
+      "4": [
+        "mlk",
+        "ywm",
+        "dyn"
+      ],
+      "5": [
+        "Ebd",
+        "Ewn"
+      ],
+      "6": [
+        "hdy",
+        "SrT",
+        "qwm"
+      ],
+      "7": [
+        "SrT",
+        "nEm",
+        "gyr",
+        "gDb",
+        "Dll"
+      ]
+    },
+    "q2_roots_by_verse": {
+      "2": [
+        "ktb",
+        "ryb",
+        "hdy",
+        "wqy"
+      ],
+      "3": [
+        "Amn",
+        "gyb",
+        "qwm",
+        "Slw",
+        "rzq",
+        "nfq"
+      ],
+      "4": [
+        "Amn",
+        "nzl",
+        "nzl",
+        "qbl",
+        "Axr",
+        "yqn"
+      ],
+      "5": [
+        "hdy",
+        "rbb",
+        "flH"
+      ]
+    }
+  },
+  "comparator_summary": {
+    "note": "Rank (desc) of Q 1→Q 2, Q 14→15, Q 49→50, Q 56→57 in each cell",
+    "cell_A_root": {
+      "Q14→Q15": {
+        "distance": 1.009111,
+        "rank_desc": 12
+      },
+      "Q49→Q50": {
+        "distance": 1.003462,
+        "rank_desc": 14
+      },
+      "Q56→Q57": {
+        "distance": 1.115634,
+        "rank_desc": 6
+      },
+      "Q1→Q2": {
+        "distance": 1.177623,
+        "rank_desc": 1
+      }
+    },
+    "cell_B_c4g": {
+      "Q14→Q15": {
+        "distance": 1.03683,
+        "rank_desc": 14
+      },
+      "Q49→Q50": {
+        "distance": 1.093928,
+        "rank_desc": 9
+      },
+      "Q56→Q57": {
+        "distance": 1.125771,
+        "rank_desc": 6
+      },
+      "Q1→Q2": {
+        "distance": 1.002276,
+        "rank_desc": 22
+      }
+    },
+    "cell_C_rhyme": {
+      "Q14→Q15": {
+        "distance": 1.216202,
+        "rank_desc": 20
+      },
+      "Q49→Q50": {
+        "distance": 0.990545,
+        "rank_desc": 30
+      },
+      "Q56→Q57": {
+        "distance": 0.937061,
+        "rank_desc": 35
+      },
+      "Q1→Q2": {
+        "distance": 1.510103,
+        "rank_desc": 8
+      }
+    },
+    "cell_D_phono": {
+      "Q14→Q15": {
+        "distance": 1.424395,
+        "rank_desc": 89
+      },
+      "Q49→Q50": {
+        "distance": 4.0319,
+        "rank_desc": 35
+      },
+      "Q56→Q57": {
+        "distance": 1.187661,
+        "rank_desc": 104
+      },
+      "Q1→Q2": {
+        "distance": 4.157412,
+        "rank_desc": 31
+      }
+    }
+  },
+  "date": "2026-04-17"
+}

@@ -1,0 +1,77 @@
+{
+  "finding_id": "Q067-F-03",
+  "prereg_sha256": "6722a3a4f9af866a759222fd0df008a94d4510a0dda7e66a189adafc2d7ff385",
+  "date_run": "2026-04-28",
+  "rules_tuple": "(no-tashkeel, orthographic-token, exact substring match, basmala-not-counted-in-Q67, Hafs-Kufan, mushaf-order)",
+  "phrases_tested": {
+    "A_bi_yadihi_al_mulk": {
+      "phrase": "بيده الملك",
+      "predicted_count": 1,
+      "predicted_locations": [
+        [
+          67,
+          1
+        ]
+      ],
+      "actual_count": 1,
+      "actual_locations": [
+        [
+          67,
+          1
+        ]
+      ],
+      "matches_predicted": true,
+      "description": "Q67:1 *bi-yadihi al-mulk* — corpus-singleton (predicted 1)"
+    },
+    "B_fa_rjii_al_basar": {
+      "phrase": "فارجع البصر",
+      "predicted_count": 1,
+      "predicted_locations": [
+        [
+          67,
+          3
+        ]
+      ],
+      "actual_count": 1,
+      "actual_locations": [
+        [
+          67,
+          3
+        ]
+      ],
+      "matches_predicted": true,
+      "description": "Q67:3 *fa-rjiʿi al-baṣar* — corpus-singleton (predicted 1)"
+    },
+    "C_sabaa_samawat_tibaqa": {
+      "phrase": "سبع سماوات طباقا",
+      "predicted_count": 2,
+      "predicted_locations": [
+        [
+          67,
+          3
+        ],
+        [
+          71,
+          15
+        ]
+      ],
+      "actual_count": 2,
+      "actual_locations": [
+        [
+          67,
+          3
+        ],
+        [
+          71,
+          15
+        ]
+      ],
+      "matches_predicted": true,
+      "description": "Q67:3 *sabʿa samāwātin ṭibāqan* — corpus-pair (predicted 2)"
+    }
+  },
+  "n_predicted_correct": 3,
+  "n_total": 3,
+  "verdict": "CONFIRMED",
+  "interpretation": "All three pre-registered phrase-uniqueness predictions match the corpus exactly."
+}

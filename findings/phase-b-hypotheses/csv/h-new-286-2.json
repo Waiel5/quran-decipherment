@@ -1,0 +1,536 @@
+{
+  "id": "H-NEW-286.2",
+  "title": "OQ-18 Q17 conditional bridge test",
+  "date": "2026-04-19",
+  "seed": 20260419,
+  "prereg_file": "findings/phase-b-hypotheses/h-new-286-2-q17-conditional-bridge-test-prereg.md",
+  "prereg_sha256": "c3299cc7e6e848d3fc15418702165f3352704d1c02f178c443154de5d62299e0",
+  "script_file": "scripts/h_new_286_2_oq18_q17_conditional_bridge_test.py",
+  "label_source": {
+    "source_file": "findings/phase-b-hypotheses/csv/h-new-126.json",
+    "source_field": "cell_b_genre_coherence.per_surah",
+    "concept_object_surahs_in_zone": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "binary_label_definition": "1 = concept/object-named; 0 = other"
+  },
+  "rules_tuple": "(QAC v0.4 root sets via surah-root-graph.json; fixed zone = Q16..Q25; target nucleus = {Q16,Q21,Q22,Q23,Q25}; primary statistic reused from H-NEW-286.1: Delta_pair(S)=mean_jaccard(++)-mean_jaccard(other pairs); primary null = exact enumeration over all C(9,5)=126 five-surah assignments with Q17 excluded from the positive side; one-sided upper-tail)",
+  "zone": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "target_positive_subset": [
+    16,
+    21,
+    22,
+    23,
+    25
+  ],
+  "conditioned_exclusion": 17,
+  "exact_space_n_primary": 126,
+  "exact_space_n_full_reference": 252,
+  "primary": {
+    "statistic": "delta_pairwise_name_class_localization_conditioned_on_q17_excluded",
+    "direction": "upper",
+    "observed": 0.02886785902425748,
+    "observed_mean_jaccard_pos_pos": 0.34138556942690185,
+    "observed_mean_jaccard_other_pairs": 0.31251771040264437,
+    "observed_mean_jaccard_pos_neg": 0.3154574405982288,
+    "observed_mean_jaccard_neg_neg": 0.30516838491368325,
+    "n_ge_observed": 1,
+    "exact_upper_p": 0.007936507936507936,
+    "rank_desc": 1,
+    "tie_count_at_observed": 1,
+    "null_mean_full_space": -0.004939076660072468,
+    "null_median_full_space": -0.006061755410743996,
+    "null_min_full_space": -0.03169181948860378,
+    "null_max_full_space": 0.02886785902425748,
+    "alpha": 0.05,
+    "verdict": "PASS-DIRECTED"
+  },
+  "observed_assignment_detail": {
+    "positive_subset": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "negative_subset": [
+      17,
+      18,
+      19,
+      20,
+      24
+    ],
+    "mean_jaccard_pos_pos": 0.34138556942690185,
+    "mean_jaccard_pos_neg": 0.3154574405982288,
+    "mean_jaccard_neg_neg": 0.30516838491368325,
+    "mean_jaccard_other_pairs": 0.31251771040264437,
+    "delta_pair": 0.02886785902425748
+  },
+  "q17_excluded_stratum": {
+    "n_assignments": 126,
+    "n_strictly_above_observed": 0,
+    "n_at_or_above_observed": 1,
+    "mean_delta_pair": -0.004939076660072468,
+    "median_delta_pair": -0.006061755410743996,
+    "min_delta_pair": -0.03169181948860378,
+    "max_delta_pair": 0.02886785902425748,
+    "top_assignments_by_delta_pair": [
+      {
+        "positive_subset": [
+          16,
+          21,
+          22,
+          23,
+          25
+        ],
+        "negative_subset": [
+          17,
+          18,
+          19,
+          20,
+          24
+        ],
+        "delta_pair": 0.02886785902425748
+      },
+      {
+        "positive_subset": [
+          16,
+          20,
+          21,
+          23,
+          25
+        ],
+        "negative_subset": [
+          17,
+          18,
+          19,
+          22,
+          24
+        ],
+        "delta_pair": 0.023534808510252636
+      },
+      {
+        "positive_subset": [
+          16,
+          20,
+          21,
+          22,
+          23
+        ],
+        "negative_subset": [
+          17,
+          18,
+          19,
+          24,
+          25
+        ],
+        "delta_pair": 0.023397538796919026
+      },
+      {
+        "positive_subset": [
+          16,
+          20,
+          22,
+          23,
+          25
+        ],
+        "negative_subset": [
+          17,
+          18,
+          19,
+          21,
+          24
+        ],
+        "delta_pair": 0.023218270012641484
+      },
+      {
+        "positive_subset": [
+          16,
+          18,
+          22,
+          23,
+          25
+        ],
+        "negative_subset": [
+          17,
+          19,
+          20,
+          21,
+          24
+        ],
+        "delta_pair": 0.02283488740258932
+      },
+      {
+        "positive_subset": [
+          16,
+          18,
+          21,
+          22,
+          23
+        ],
+        "negative_subset": [
+          17,
+          19,
+          20,
+          24,
+          25
+        ],
+        "delta_pair": 0.02103044781023672
+      },
+      {
+        "positive_subset": [
+          16,
+          18,
+          20,
+          22,
+          23
+        ],
+        "negative_subset": [
+          17,
+          19,
+          21,
+          24,
+          25
+        ],
+        "delta_pair": 0.019525943395218515
+      },
+      {
+        "positive_subset": [
+          16,
+          21,
+          22,
+          23,
+          24
+        ],
+        "negative_subset": [
+          17,
+          18,
+          19,
+          20,
+          25
+        ],
+        "delta_pair": 0.018458974618540347
+      },
+      {
+        "positive_subset": [
+          16,
+          18,
+          20,
+          21,
+          23
+        ],
+        "negative_subset": [
+          17,
+          19,
+          22,
+          24,
+          25
+        ],
+        "delta_pair": 0.01797382633822192
+      },
+      {
+        "positive_subset": [
+          16,
+          18,
+          21,
+          23,
+          25
+        ],
+        "negative_subset": [
+          17,
+          19,
+          20,
+          22,
+          24
+        ],
+        "delta_pair": 0.017687744002893857
+      }
+    ]
+  },
+  "q17_included_stratum_descriptive": {
+    "n_assignments": 126,
+    "n_strictly_above_observed": 7,
+    "n_at_or_above_observed": 7,
+    "mean_delta_pair": 0.004939076660072467,
+    "median_delta_pair": 0.005402020699104976,
+    "min_delta_pair": -0.022666855539691333,
+    "max_delta_pair": 0.0346190439274357,
+    "top_assignments_by_delta_pair": [
+      {
+        "positive_subset": [
+          16,
+          17,
+          22,
+          23,
+          25
+        ],
+        "negative_subset": [
+          18,
+          19,
+          20,
+          21,
+          24
+        ],
+        "delta_pair": 0.0346190439274357
+      },
+      {
+        "positive_subset": [
+          16,
+          17,
+          21,
+          23,
+          25
+        ],
+        "negative_subset": [
+          18,
+          19,
+          20,
+          22,
+          24
+        ],
+        "delta_pair": 0.03369615094234796
+      },
+      {
+        "positive_subset": [
+          16,
+          17,
+          18,
+          22,
+          25
+        ],
+        "negative_subset": [
+          19,
+          20,
+          21,
+          23,
+          24
+        ],
+        "delta_pair": 0.031566180751950224
+      },
+      {
+        "positive_subset": [
+          16,
+          17,
+          18,
+          23,
+          25
+        ],
+        "negative_subset": [
+          19,
+          20,
+          21,
+          22,
+          24
+        ],
+        "delta_pair": 0.030183245766442157
+      },
+      {
+        "positive_subset": [
+          16,
+          17,
+          20,
+          23,
+          25
+        ],
+        "negative_subset": [
+          18,
+          19,
+          21,
+          22,
+          24
+        ],
+        "delta_pair": 0.02948242177103394
+      },
+      {
+        "positive_subset": [
+          16,
+          17,
+          21,
+          22,
+          25
+        ],
+        "negative_subset": [
+          18,
+          19,
+          20,
+          23,
+          24
+        ],
+        "delta_pair": 0.029402992335682
+      },
+      {
+        "positive_subset": [
+          16,
+          17,
+          18,
+          22,
+          23
+        ],
+        "negative_subset": [
+          19,
+          20,
+          21,
+          24,
+          25
+        ],
+        "delta_pair": 0.02921225628193519
+      },
+      {
+        "positive_subset": [
+          16,
+          17,
+          21,
+          22,
+          23
+        ],
+        "negative_subset": [
+          18,
+          19,
+          20,
+          24,
+          25
+        ],
+        "delta_pair": 0.028704350603775186
+      },
+      {
+        "positive_subset": [
+          16,
+          17,
+          20,
+          21,
+          23
+        ],
+        "negative_subset": [
+          18,
+          19,
+          22,
+          24,
+          25
+        ],
+        "delta_pair": 0.027703592123461684
+      },
+      {
+        "positive_subset": [
+          17,
+          20,
+          21,
+          23,
+          25
+        ],
+        "negative_subset": [
+          16,
+          18,
+          19,
+          22,
+          24
+        ],
+        "delta_pair": 0.02704852357499621
+      }
+    ],
+    "note": "Descriptive comparison stratum only. It is not the family driver for H-NEW-286.2."
+  },
+  "outsider_bridge_descriptive": [
+    {
+      "outsider": 17,
+      "mean_jaccard_to_target": 0.3420193401695428,
+      "best_single_swap": {
+        "outsider": 17,
+        "removed_from_target": 21,
+        "swapped_subset": [
+          16,
+          17,
+          22,
+          23,
+          25
+        ],
+        "delta_pair": 0.0346190439274357
+      },
+      "best_single_swap_gain_vs_target": 0.005751184903178219
+    },
+    {
+      "outsider": 20,
+      "mean_jaccard_to_target": 0.32168166956743544,
+      "best_single_swap": {
+        "outsider": 20,
+        "removed_from_target": 22,
+        "swapped_subset": [
+          16,
+          20,
+          21,
+          23,
+          25
+        ],
+        "delta_pair": 0.023534808510252636
+      },
+      "best_single_swap_gain_vs_target": -0.0053330505140048445
+    },
+    {
+      "outsider": 18,
+      "mean_jaccard_to_target": 0.3163796176488051,
+      "best_single_swap": {
+        "outsider": 18,
+        "removed_from_target": 21,
+        "swapped_subset": [
+          16,
+          18,
+          22,
+          23,
+          25
+        ],
+        "delta_pair": 0.02283488740258932
+      },
+      "best_single_swap_gain_vs_target": -0.0060329716216681595
+    },
+    {
+      "outsider": 24,
+      "mean_jaccard_to_target": 0.30826448956935626,
+      "best_single_swap": {
+        "outsider": 24,
+        "removed_from_target": 25,
+        "swapped_subset": [
+          16,
+          21,
+          22,
+          23,
+          24
+        ],
+        "delta_pair": 0.018458974618540347
+      },
+      "best_single_swap_gain_vs_target": -0.010408884405717134
+    },
+    {
+      "outsider": 19,
+      "mean_jaccard_to_target": 0.2889420860360043,
+      "best_single_swap": {
+        "outsider": 19,
+        "removed_from_target": 21,
+        "swapped_subset": [
+          16,
+          19,
+          22,
+          23,
+          25
+        ],
+        "delta_pair": 0.007298358714302788
+      },
+      "best_single_swap_gain_vs_target": -0.021569500309954692
+    }
+  ],
+  "verdict": "PASS-DIRECTED",
+  "verdict_note": "This branch was opened by the H-NEW-286.1 observation that all seven better full-space relabelings include Q17. The conditioned result is exact but still post-selection-bounded, so the ceiling remains PASS-DIRECTED."
+}

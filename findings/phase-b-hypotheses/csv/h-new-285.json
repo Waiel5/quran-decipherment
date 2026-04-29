@@ -1,0 +1,300 @@
+{
+  "id": "H-NEW-285",
+  "title": "OQ-18 within-zone 5-vs-5 contrast test",
+  "date": "2026-04-18",
+  "seed": 20260418,
+  "prereg_file": "findings/phase-b-hypotheses/h-new-285-oq18-within-zone-contrast-prereg.md",
+  "prereg_sha256": "37284f04d002837b4675999a7bd7f5f40c2bcdded451f5f9aa780eb666d517f9",
+  "script_file": "scripts/h_new_285_oq18_within_zone_contrast.py",
+  "rules_tuple": "(QAC v0.4 root sets via surah-root-graph.json; exact enumeration over all C(10,5)=252 five-surah subsets of Q16..Q25; primary statistic = Delta(S)=mean_pairwise_root_jaccard(S)-mean_pairwise_root_jaccard(Z\\S); one-sided upper-tail)",
+  "zone": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "target_subset": [
+    16,
+    21,
+    22,
+    23,
+    25
+  ],
+  "complement_subset": [
+    17,
+    18,
+    19,
+    20,
+    24
+  ],
+  "exact_space_n": 252,
+  "zone_root_set_sizes": {
+    "16": 358,
+    "17": 342,
+    "18": 369,
+    "19": 239,
+    "20": 324,
+    "21": 284,
+    "22": 328,
+    "23": 271,
+    "24": 287,
+    "25": 250
+  },
+  "primary": {
+    "statistic": "delta_mean_pairwise_root_jaccard",
+    "direction": "upper",
+    "observed": 0.03621718451321859,
+    "target_mean_pairwise_root_jaccard": 0.34138556942690185,
+    "complement_mean_pairwise_root_jaccard": 0.30516838491368325,
+    "n_ge_observed": 12,
+    "exact_upper_p": 0.047619047619047616,
+    "rank_desc": 12,
+    "tie_count_at_observed": 1,
+    "null_mean_full_space": 0.0,
+    "null_median_full_space": 0.0,
+    "null_min_full_space": -0.04970470738489352,
+    "null_max_full_space": 0.04970470738489352,
+    "alpha": 0.05,
+    "verdict": "PASS-DIRECTED"
+  },
+  "target_detail": {
+    "subset": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "complement_subset": [
+      17,
+      18,
+      19,
+      20,
+      24
+    ],
+    "mean_pairwise_root_jaccard_subset": 0.34138556942690185,
+    "mean_pairwise_root_jaccard_complement": 0.30516838491368325,
+    "delta": 0.03621718451321859
+  },
+  "complement_detail": {
+    "subset": [
+      17,
+      18,
+      19,
+      20,
+      24
+    ],
+    "complement_subset": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "mean_pairwise_root_jaccard_subset": 0.30516838491368325,
+    "mean_pairwise_root_jaccard_complement": 0.34138556942690185,
+    "delta": -0.03621718451321859,
+    "rank_desc": 241,
+    "exact_upper_p": 0.9563492063492064
+  },
+  "top_subsets_by_delta": [
+    {
+      "subset": [
+        16,
+        17,
+        22,
+        23,
+        25
+      ],
+      "complement_subset": [
+        18,
+        19,
+        20,
+        21,
+        24
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.3458587132404849,
+      "mean_pairwise_root_jaccard_complement": 0.2961540058555914,
+      "delta": 0.04970470738489352
+    },
+    {
+      "subset": [
+        16,
+        17,
+        21,
+        23,
+        25
+      ],
+      "complement_subset": [
+        18,
+        19,
+        20,
+        22,
+        24
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.34514090758541666,
+      "mean_pairwise_root_jaccard_complement": 0.2964680551457315,
+      "delta": 0.048672852439685166
+    },
+    {
+      "subset": [
+        16,
+        17,
+        20,
+        23,
+        25
+      ],
+      "complement_subset": [
+        18,
+        19,
+        21,
+        22,
+        24
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.34186356267439466,
+      "mean_pairwise_root_jaccard_complement": 0.29428359725023195,
+      "delta": 0.04757996542416271
+    },
+    {
+      "subset": [
+        16,
+        17,
+        21,
+        22,
+        23
+      ],
+      "complement_subset": [
+        18,
+        19,
+        20,
+        24,
+        25
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.34125839621097115,
+      "mean_pairwise_root_jaccard_complement": 0.2968588377947541,
+      "delta": 0.044399558416217066
+    },
+    {
+      "subset": [
+        16,
+        17,
+        18,
+        23,
+        25
+      ],
+      "complement_subset": [
+        19,
+        20,
+        21,
+        22,
+        24
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.3424086480041566,
+      "mean_pairwise_root_jaccard_complement": 0.2980321487214877,
+      "delta": 0.0443764992826689
+    },
+    {
+      "subset": [
+        16,
+        17,
+        20,
+        22,
+        23
+      ],
+      "complement_subset": [
+        18,
+        19,
+        21,
+        24,
+        25
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.33840170255925195,
+      "mean_pairwise_root_jaccard_complement": 0.29509503115855734,
+      "delta": 0.04330667140069461
+    },
+    {
+      "subset": [
+        16,
+        17,
+        20,
+        21,
+        23
+      ],
+      "complement_subset": [
+        18,
+        19,
+        22,
+        24,
+        25
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.34048002850406067,
+      "mean_pairwise_root_jaccard_complement": 0.2982052120485744,
+      "delta": 0.04227481645548625
+    },
+    {
+      "subset": [
+        16,
+        17,
+        18,
+        22,
+        23
+      ],
+      "complement_subset": [
+        19,
+        20,
+        21,
+        24,
+        25
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.3416534339606512,
+      "mean_pairwise_root_jaccard_complement": 0.30155022870145043,
+      "delta": 0.04010320525920075
+    },
+    {
+      "subset": [
+        16,
+        17,
+        18,
+        21,
+        23
+      ],
+      "complement_subset": [
+        19,
+        20,
+        22,
+        24,
+        25
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.339482229540888,
+      "mean_pairwise_root_jaccard_complement": 0.30041087922689563,
+      "delta": 0.03907135031399239
+    },
+    {
+      "subset": [
+        16,
+        17,
+        18,
+        20,
+        23
+      ],
+      "complement_subset": [
+        19,
+        21,
+        22,
+        24,
+        25
+      ],
+      "mean_pairwise_root_jaccard_subset": 0.33942883931610873,
+      "mean_pairwise_root_jaccard_complement": 0.3014503760176388,
+      "delta": 0.03797846329846993
+    }
+  ],
+  "verdict": "PASS-DIRECTED",
+  "verdict_note": "Target split was surfaced by prior work, so a passing result is capped at PASS-DIRECTED under this new bounded exact null."
+}

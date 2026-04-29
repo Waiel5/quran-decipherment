@@ -1,0 +1,369 @@
+{
+  "id": "H-NEW-252",
+  "title": "Combined phonological + (\u03b1,\u03b2) predictor for muq singletons",
+  "prereg_sha256": "5db7bac520ae10bfeb37aded79eff94f1bf1c5ae3d9f4053d9847e5d29bcdb78",
+  "seed": 20260421,
+  "n_perm": 1000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "n_singletons_evaluated": 10,
+  "apriori_accepted_clusters": {
+    "ALMS": [
+      "ALM"
+    ],
+    "ALMR": [
+      "ALM",
+      "ALR"
+    ],
+    "KHYAS": [
+      "HM",
+      "TSM"
+    ],
+    "TH": [
+      "TSM"
+    ],
+    "TS": [
+      "TSM"
+    ],
+    "YS": [
+      "ALM",
+      "ALR"
+    ],
+    "S": [
+      "TSM"
+    ],
+    "HMASQ": [
+      "HM"
+    ],
+    "Q": [
+      "HM",
+      "TSM"
+    ],
+    "N": [
+      "ALM",
+      "ALR"
+    ]
+  },
+  "phon_only_matches": 8,
+  "joint_phon_alphabeta_matches": 8,
+  "null_phon_mean": 3.844,
+  "null_joint_mean": 3.844,
+  "perm_p_phon": 0.063,
+  "perm_p_joint": 0.06,
+  "phon_results": {
+    "ALMS": {
+      "surah": 7,
+      "nearest": "ALM",
+      "distance": 5.6460028495855035,
+      "all_distances": {
+        "ALM": 5.6460028495855035,
+        "ALR": 5.979837363352647,
+        "HM": 5.767000676714439,
+        "TSM": 6.863777650244766
+      },
+      "apriori_accepted": [
+        "ALM"
+      ],
+      "match": true
+    },
+    "ALMR": {
+      "surah": 13,
+      "nearest": "ALM",
+      "distance": 2.9557879678229977,
+      "all_distances": {
+        "ALM": 2.9557879678229977,
+        "ALR": 3.0725330023165034,
+        "HM": 7.8012446594985905,
+        "TSM": 10.995168580162575
+      },
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": true
+    },
+    "KHYAS": {
+      "surah": 19,
+      "nearest": "TSM",
+      "distance": 9.08173126290188,
+      "all_distances": {
+        "ALM": 12.979707106418237,
+        "ALR": 13.110962855533108,
+        "HM": 10.768900132064692,
+        "TSM": 9.08173126290188
+      },
+      "apriori_accepted": [
+        "HM",
+        "TSM"
+      ],
+      "match": true
+    },
+    "TH": {
+      "surah": 20,
+      "nearest": "TSM",
+      "distance": 9.134679612991244,
+      "all_distances": {
+        "ALM": 16.832635030019638,
+        "ALR": 16.978949005303544,
+        "HM": 13.381600479517433,
+        "TSM": 9.134679612991244
+      },
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": true
+    },
+    "TS": {
+      "surah": 27,
+      "nearest": "TSM",
+      "distance": 7.482497079040372,
+      "all_distances": {
+        "ALM": 16.03987384947445,
+        "ALR": 16.39620337517733,
+        "HM": 12.982457710501981,
+        "TSM": 7.482497079040372
+      },
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": true
+    },
+    "YS": {
+      "surah": 36,
+      "nearest": "HM",
+      "distance": 7.646786520185667,
+      "all_distances": {
+        "ALM": 9.40363002547904,
+        "ALR": 9.73784432364313,
+        "HM": 7.646786520185667,
+        "TSM": 9.27745330822059
+      },
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": false
+    },
+    "S": {
+      "surah": 38,
+      "nearest": "TSM",
+      "distance": 15.46864500177237,
+      "all_distances": {
+        "ALM": 21.38743056622411,
+        "ALR": 21.62688129129535,
+        "HM": 17.82578104925241,
+        "TSM": 15.46864500177237
+      },
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": true
+    },
+    "HMASQ": {
+      "surah": 42,
+      "nearest": "TSM",
+      "distance": 7.488486296504758,
+      "all_distances": {
+        "ALM": 11.096806119889187,
+        "ALR": 11.299231006151782,
+        "HM": 9.337489529613327,
+        "TSM": 7.488486296504758
+      },
+      "apriori_accepted": [
+        "HM"
+      ],
+      "match": false
+    },
+    "Q": {
+      "surah": 50,
+      "nearest": "TSM",
+      "distance": 13.13100570179269,
+      "all_distances": {
+        "ALM": 18.561525693724914,
+        "ALR": 18.692600200389702,
+        "HM": 16.010991937751243,
+        "TSM": 13.13100570179269
+      },
+      "apriori_accepted": [
+        "HM",
+        "TSM"
+      ],
+      "match": true
+    },
+    "N": {
+      "surah": 68,
+      "nearest": "ALM",
+      "distance": 8.70909989049752,
+      "all_distances": {
+        "ALM": 8.70909989049752,
+        "ALR": 8.715225531567674,
+        "HM": 11.635182918116111,
+        "TSM": 15.340535799940502
+      },
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": true
+    }
+  },
+  "joint_results": {
+    "ALMS": {
+      "surah": 7,
+      "nearest": "ALM",
+      "distance": 5.7570628341122125,
+      "all_distances": {
+        "ALM": 5.7570628341122125,
+        "ALR": 6.046950591586764,
+        "HM": 6.104467800232765,
+        "TSM": 6.877439554074642
+      },
+      "apriori_accepted": [
+        "ALM"
+      ],
+      "match": true
+    },
+    "ALMR": {
+      "surah": 13,
+      "nearest": "ALM",
+      "distance": 3.014284208319073,
+      "all_distances": {
+        "ALM": 3.014284208319073,
+        "ALR": 3.0920251930605924,
+        "HM": 7.884818269112469,
+        "TSM": 11.004548338445076
+      },
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": true
+    },
+    "KHYAS": {
+      "surah": 19,
+      "nearest": "TSM",
+      "distance": 9.291064138308387,
+      "all_distances": {
+        "ALM": 13.033697930617304,
+        "ALR": 13.188710209044128,
+        "HM": 10.799257030411871,
+        "TSM": 9.291064138308387
+      },
+      "apriori_accepted": [
+        "HM",
+        "TSM"
+      ],
+      "match": true
+    },
+    "TH": {
+      "surah": 20,
+      "nearest": "TSM",
+      "distance": 9.219855551922194,
+      "all_distances": {
+        "ALM": 16.840336925537276,
+        "ALR": 16.99656193438297,
+        "HM": 13.43300377958895,
+        "TSM": 9.219855551922194
+      },
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": true
+    },
+    "TS": {
+      "surah": 27,
+      "nearest": "TSM",
+      "distance": 7.5463001771629585,
+      "all_distances": {
+        "ALM": 16.04647528104599,
+        "ALR": 16.404351668537036,
+        "HM": 12.99712717662548,
+        "TSM": 7.5463001771629585
+      },
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": true
+    },
+    "YS": {
+      "surah": 36,
+      "nearest": "HM",
+      "distance": 7.65084000557385,
+      "all_distances": {
+        "ALM": 9.439447573108103,
+        "ALR": 9.779454905116324,
+        "HM": 7.65084000557385,
+        "TSM": 9.373051243027975
+      },
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": false
+    },
+    "S": {
+      "surah": 38,
+      "nearest": "TSM",
+      "distance": 15.617645114616383,
+      "all_distances": {
+        "ALM": 21.431044111751273,
+        "ALR": 21.687455121908794,
+        "HM": 17.853959554496868,
+        "TSM": 15.617645114616383
+      },
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": true
+    },
+    "HMASQ": {
+      "surah": 42,
+      "nearest": "TSM",
+      "distance": 7.501113828060608,
+      "all_distances": {
+        "ALM": 11.104685076450531,
+        "ALR": 11.301933686096222,
+        "HM": 9.43795647050447,
+        "TSM": 7.501113828060608
+      },
+      "apriori_accepted": [
+        "HM"
+      ],
+      "match": false
+    },
+    "Q": {
+      "surah": 50,
+      "nearest": "TSM",
+      "distance": 13.20526706638679,
+      "all_distances": {
+        "ALM": 18.577266770620703,
+        "ALR": 18.71480555451388,
+        "HM": 16.013357722761498,
+        "TSM": 13.20526706638679
+      },
+      "apriori_accepted": [
+        "HM",
+        "TSM"
+      ],
+      "match": true
+    },
+    "N": {
+      "surah": 68,
+      "nearest": "ALM",
+      "distance": 9.04852726809282,
+      "all_distances": {
+        "ALM": 9.04852726809282,
+        "ALR": 9.074435932488301,
+        "HM": 11.724058430958788,
+        "TSM": 15.61049230683103
+      },
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": true
+    }
+  },
+  "verdict": "MIXED",
+  "missing_alpha_beta": []
+}

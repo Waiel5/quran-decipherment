@@ -1,0 +1,642 @@
+{
+  "finding_id": "h-new-130",
+  "title": "Fisher-Rao mushaf-geodesic residuals analysis",
+  "pre_reg_path": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-130-prereg.md",
+  "pre_reg_sha256": "e82260442eea95b10ccef743f08e9dcc22301078b7d7b03c3f9922b5a1f743d4",
+  "parent_finding": "h-new-111 / cross-finding-011",
+  "seed": 20260417,
+  "date": "2026-04-17",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, mushaf order, Hafs-Kufan)",
+  "bonferroni_k": 3,
+  "bonferroni_family": "h-new-130-residuals",
+  "alpha_bon": 0.0167,
+  "boundary_set": {
+    "1-2": [
+      "muq_presence_change",
+      "period_Meccan_to_Medinan",
+      "phase_Early Meccan_to_Medinan"
+    ],
+    "3-4": [
+      "muq_presence_change"
+    ],
+    "5-6": [
+      "period_Medinan_to_Meccan",
+      "phase_Medinan_to_Late Meccan"
+    ],
+    "6-7": [
+      "muq_presence_change"
+    ],
+    "7-8": [
+      "muq_presence_change",
+      "period_Meccan_to_Medinan",
+      "phase_Late Meccan_to_Medinan",
+      "sab_tiwal_end_7_8"
+    ],
+    "9-10": [
+      "muq_presence_change",
+      "period_Medinan_to_Meccan",
+      "phase_Medinan_to_Late Meccan",
+      "sab_tiwal_alt_9_10"
+    ],
+    "12-13": [
+      "muq_letterset_ALR_to_ALMR",
+      "period_Meccan_to_Medinan"
+    ],
+    "13-14": [
+      "muq_letterset_ALMR_to_ALR",
+      "period_Medinan_to_Meccan"
+    ],
+    "14-15": [
+      "phase_Late Meccan_to_Middle Meccan"
+    ],
+    "15-16": [
+      "muq_presence_change",
+      "phase_Middle Meccan_to_Late Meccan"
+    ],
+    "16-17": [
+      "phase_Late Meccan_to_Middle Meccan"
+    ],
+    "18-19": [
+      "muq_presence_change"
+    ],
+    "19-20": [
+      "muq_letterset_KHYAS_to_TH"
+    ],
+    "20-21": [
+      "muq_presence_change"
+    ],
+    "21-22": [
+      "period_Meccan_to_Medinan",
+      "phase_Middle Meccan_to_Medinan"
+    ],
+    "22-23": [
+      "period_Medinan_to_Meccan",
+      "phase_Medinan_to_Middle Meccan"
+    ],
+    "23-24": [
+      "period_Meccan_to_Medinan",
+      "phase_Middle Meccan_to_Medinan"
+    ],
+    "24-25": [
+      "period_Medinan_to_Meccan",
+      "phase_Medinan_to_Middle Meccan"
+    ],
+    "25-26": [
+      "muq_presence_change"
+    ],
+    "26-27": [
+      "muq_letterset_TSM_to_TS"
+    ],
+    "27-28": [
+      "muq_letterset_TS_to_TSM",
+      "phase_Middle Meccan_to_Late Meccan"
+    ],
+    "28-29": [
+      "muq_letterset_TSM_to_ALM"
+    ],
+    "32-33": [
+      "muq_presence_change",
+      "period_Meccan_to_Medinan",
+      "phase_Late Meccan_to_Medinan"
+    ],
+    "33-34": [
+      "period_Medinan_to_Meccan",
+      "phase_Medinan_to_Late Meccan"
+    ],
+    "35-36": [
+      "muq_presence_change",
+      "phase_Late Meccan_to_Middle Meccan"
+    ],
+    "36-37": [
+      "muq_presence_change"
+    ],
+    "37-38": [
+      "muq_presence_change"
+    ],
+    "38-39": [
+      "muq_presence_change",
+      "phase_Middle Meccan_to_Late Meccan"
+    ],
+    "39-40": [
+      "muq_presence_change"
+    ],
+    "41-42": [
+      "muq_letterset_HM_to_HM+ASQ"
+    ],
+    "42-43": [
+      "muq_letterset_HM+ASQ_to_HM",
+      "phase_Late Meccan_to_Middle Meccan"
+    ],
+    "44-45": [
+      "phase_Middle Meccan_to_Late Meccan"
+    ],
+    "46-47": [
+      "muq_presence_change",
+      "period_Meccan_to_Medinan",
+      "phase_Late Meccan_to_Medinan"
+    ],
+    "48-49": [
+      "mufassal_start_48_49"
+    ],
+    "49-50": [
+      "mufassal_alt_49_50",
+      "muq_presence_change",
+      "period_Medinan_to_Meccan",
+      "phase_Medinan_to_Middle Meccan"
+    ],
+    "50-51": [
+      "muq_presence_change",
+      "phase_Middle Meccan_to_Early Meccan"
+    ],
+    "53-54": [
+      "phase_Early Meccan_to_Middle Meccan"
+    ],
+    "54-55": [
+      "period_Meccan_to_Medinan",
+      "phase_Middle Meccan_to_Early Meccan"
+    ],
+    "55-56": [
+      "period_Medinan_to_Meccan"
+    ],
+    "56-57": [
+      "period_Meccan_to_Medinan",
+      "phase_Early Meccan_to_Medinan"
+    ],
+    "66-67": [
+      "period_Medinan_to_Meccan",
+      "phase_Medinan_to_Middle Meccan",
+      "short_mufassal_boundary_66_67"
+    ],
+    "67-68": [
+      "muq_presence_change",
+      "phase_Middle Meccan_to_Early Meccan"
+    ],
+    "68-69": [
+      "muq_presence_change"
+    ],
+    "70-71": [
+      "phase_Early Meccan_to_Middle Meccan"
+    ],
+    "72-73": [
+      "phase_Middle Meccan_to_Early Meccan"
+    ],
+    "75-76": [
+      "period_Meccan_to_Medinan",
+      "phase_Early Meccan_to_Middle Meccan"
+    ],
+    "76-77": [
+      "period_Medinan_to_Meccan",
+      "phase_Middle Meccan_to_Early Meccan"
+    ],
+    "77-78": [
+      "juz_amma_77_78"
+    ],
+    "92-93": [
+      "ultra_short_mufassal_92_93"
+    ],
+    "97-98": [
+      "period_Meccan_to_Medinan",
+      "phase_Early Meccan_to_Medinan"
+    ],
+    "98-99": [
+      "phase_Medinan_to_Early Meccan"
+    ],
+    "99-100": [
+      "period_Medinan_to_Meccan"
+    ],
+    "109-110": [
+      "period_Meccan_to_Medinan",
+      "phase_Early Meccan_to_Medinan"
+    ],
+    "110-111": [
+      "period_Medinan_to_Meccan",
+      "phase_Medinan_to_Early Meccan"
+    ]
+  },
+  "boundary_set_size": 54,
+  "boundary_set_fraction_of_113": 0.4778761061946903,
+  "consecutive_mushaf_distances": {
+    "1-2": 1.177623,
+    "2-3": 0.63093,
+    "3-4": 0.793084,
+    "4-5": 0.778367,
+    "5-6": 0.860156,
+    "6-7": 0.720799,
+    "7-8": 1.030068,
+    "8-9": 0.910997,
+    "9-10": 1.068939,
+    "10-11": 0.805201,
+    "11-12": 0.963772,
+    "12-13": 1.068294,
+    "13-14": 0.783843,
+    "14-15": 1.009111,
+    "15-16": 1.002022,
+    "16-17": 0.962333,
+    "17-18": 0.901301,
+    "18-19": 0.925359,
+    "19-20": 0.980606,
+    "20-21": 0.972137,
+    "21-22": 0.959174,
+    "22-23": 0.952979,
+    "23-24": 1.049734,
+    "24-25": 1.129055,
+    "25-26": 0.959584,
+    "26-27": 0.958539,
+    "27-28": 0.804754,
+    "28-29": 0.886506,
+    "29-30": 0.91533,
+    "30-31": 0.90887,
+    "31-32": 0.909461,
+    "32-33": 1.132955,
+    "33-34": 1.115391,
+    "34-35": 0.926803,
+    "35-36": 0.943094,
+    "36-37": 0.900232,
+    "37-38": 0.903476,
+    "38-39": 0.936449,
+    "39-40": 0.795302,
+    "40-41": 0.840334,
+    "41-42": 0.854007,
+    "42-43": 0.991218,
+    "43-44": 0.864706,
+    "44-45": 0.843896,
+    "45-46": 0.811217,
+    "46-47": 0.990505,
+    "47-48": 0.889264,
+    "48-49": 0.858354,
+    "49-50": 1.003462,
+    "50-51": 0.823948,
+    "51-52": 0.754458,
+    "52-53": 0.928275,
+    "53-54": 1.006282,
+    "54-55": 1.151559,
+    "55-56": 1.149328,
+    "56-57": 1.115634,
+    "57-58": 0.88904,
+    "58-59": 0.830137,
+    "59-60": 0.816186,
+    "60-61": 0.807414,
+    "61-62": 0.734549,
+    "62-63": 0.685961,
+    "63-64": 0.695406,
+    "64-65": 0.777412,
+    "65-66": 0.870463,
+    "66-67": 0.940813,
+    "67-68": 0.837853,
+    "68-69": 0.833625,
+    "69-70": 0.820207,
+    "70-71": 0.862234,
+    "71-72": 0.807578,
+    "72-73": 0.792572,
+    "73-74": 0.761384,
+    "74-75": 0.809957,
+    "75-76": 0.816524,
+    "76-77": 0.843038,
+    "77-78": 0.703319,
+    "78-79": 0.720817,
+    "79-80": 0.706355,
+    "80-81": 0.635376,
+    "81-82": 0.528566,
+    "82-83": 0.577005,
+    "83-84": 0.652163,
+    "84-85": 0.584345,
+    "85-86": 0.568419,
+    "86-87": 0.524898,
+    "87-88": 0.557249,
+    "88-89": 0.657287,
+    "89-90": 0.632635,
+    "90-91": 0.529993,
+    "91-92": 0.473442,
+    "92-93": 0.433778,
+    "93-94": 0.364138,
+    "94-95": 0.361408,
+    "95-96": 0.504885,
+    "96-97": 0.545334,
+    "97-98": 0.576029,
+    "98-99": 0.581233,
+    "99-100": 0.379279,
+    "100-101": 0.368084,
+    "101-102": 0.386318,
+    "102-103": 0.344768,
+    "103-104": 0.311926,
+    "104-105": 0.336393,
+    "105-106": 0.291482,
+    "106-107": 0.277201,
+    "107-108": 0.225639,
+    "108-109": 0.334203,
+    "109-110": 0.380542,
+    "110-111": 0.318367,
+    "111-112": 0.284945,
+    "112-113": 0.288619,
+    "113-114": 0.271785
+  },
+  "top15_largest_jumps": [
+    {
+      "i": 1,
+      "j": 2,
+      "distance": 1.177623,
+      "in_B": true,
+      "B_labels": [
+        "muq_presence_change",
+        "period_Meccan_to_Medinan",
+        "phase_Early Meccan_to_Medinan"
+      ]
+    },
+    {
+      "i": 54,
+      "j": 55,
+      "distance": 1.151559,
+      "in_B": true,
+      "B_labels": [
+        "period_Meccan_to_Medinan",
+        "phase_Middle Meccan_to_Early Meccan"
+      ]
+    },
+    {
+      "i": 55,
+      "j": 56,
+      "distance": 1.149328,
+      "in_B": true,
+      "B_labels": [
+        "period_Medinan_to_Meccan"
+      ]
+    },
+    {
+      "i": 32,
+      "j": 33,
+      "distance": 1.132955,
+      "in_B": true,
+      "B_labels": [
+        "muq_presence_change",
+        "period_Meccan_to_Medinan",
+        "phase_Late Meccan_to_Medinan"
+      ]
+    },
+    {
+      "i": 24,
+      "j": 25,
+      "distance": 1.129055,
+      "in_B": true,
+      "B_labels": [
+        "period_Medinan_to_Meccan",
+        "phase_Medinan_to_Middle Meccan"
+      ]
+    },
+    {
+      "i": 56,
+      "j": 57,
+      "distance": 1.115634,
+      "in_B": true,
+      "B_labels": [
+        "period_Meccan_to_Medinan",
+        "phase_Early Meccan_to_Medinan"
+      ]
+    },
+    {
+      "i": 33,
+      "j": 34,
+      "distance": 1.115391,
+      "in_B": true,
+      "B_labels": [
+        "period_Medinan_to_Meccan",
+        "phase_Medinan_to_Late Meccan"
+      ]
+    },
+    {
+      "i": 9,
+      "j": 10,
+      "distance": 1.068939,
+      "in_B": true,
+      "B_labels": [
+        "muq_presence_change",
+        "period_Medinan_to_Meccan",
+        "phase_Medinan_to_Late Meccan",
+        "sab_tiwal_alt_9_10"
+      ]
+    },
+    {
+      "i": 12,
+      "j": 13,
+      "distance": 1.068294,
+      "in_B": true,
+      "B_labels": [
+        "muq_letterset_ALR_to_ALMR",
+        "period_Meccan_to_Medinan"
+      ]
+    },
+    {
+      "i": 23,
+      "j": 24,
+      "distance": 1.049734,
+      "in_B": true,
+      "B_labels": [
+        "period_Meccan_to_Medinan",
+        "phase_Middle Meccan_to_Medinan"
+      ]
+    },
+    {
+      "i": 7,
+      "j": 8,
+      "distance": 1.030068,
+      "in_B": true,
+      "B_labels": [
+        "muq_presence_change",
+        "period_Meccan_to_Medinan",
+        "phase_Late Meccan_to_Medinan",
+        "sab_tiwal_end_7_8"
+      ]
+    },
+    {
+      "i": 14,
+      "j": 15,
+      "distance": 1.009111,
+      "in_B": true,
+      "B_labels": [
+        "phase_Late Meccan_to_Middle Meccan"
+      ]
+    },
+    {
+      "i": 53,
+      "j": 54,
+      "distance": 1.006282,
+      "in_B": true,
+      "B_labels": [
+        "phase_Early Meccan_to_Middle Meccan"
+      ]
+    },
+    {
+      "i": 49,
+      "j": 50,
+      "distance": 1.003462,
+      "in_B": true,
+      "B_labels": [
+        "mufassal_alt_49_50",
+        "muq_presence_change",
+        "period_Medinan_to_Meccan",
+        "phase_Medinan_to_Middle Meccan"
+      ]
+    },
+    {
+      "i": 15,
+      "j": 16,
+      "distance": 1.002022,
+      "in_B": true,
+      "B_labels": [
+        "muq_presence_change",
+        "phase_Middle Meccan_to_Late Meccan"
+      ]
+    }
+  ],
+  "primary": {
+    "observed_M_intersect_B": 15,
+    "threshold_pass": 12,
+    "null_model": "hypergeometric(N=113, K=|B|=54, n=15)",
+    "null_expected_overlap": 7.168141592920354,
+    "p_primary_one_sided_upper": 4.7815017064806945e-06,
+    "alpha_bon": 0.0167,
+    "pass_primary": true,
+    "verdict": "PASS"
+  },
+  "secondary_A_concentration": {
+    "T_obs": 0.24424836503452607,
+    "sign": "positive_B_has_larger_distances",
+    "p_two_sided": 9.999000099990002e-05,
+    "n_perms": 10000,
+    "T_null_mean": 0.0006320911005649731,
+    "T_null_sd": 0.04607410756963517,
+    "alpha_bon": 0.0167,
+    "pass_secondary_A": true
+  },
+  "secondary_B_mw5_control": {
+    "synthetic_ordering": "descending_verse_count",
+    "top15_synth": [
+      [
+        22,
+        55
+      ],
+      [
+        55,
+        25
+      ],
+      [
+        20,
+        9
+      ],
+      [
+        19,
+        56
+      ],
+      [
+        56,
+        27
+      ],
+      [
+        24,
+        53
+      ],
+      [
+        37,
+        4
+      ],
+      [
+        89,
+        48
+      ],
+      [
+        53,
+        30
+      ],
+      [
+        25,
+        8
+      ],
+      [
+        13,
+        80
+      ],
+      [
+        3,
+        37
+      ],
+      [
+        39,
+        33
+      ],
+      [
+        14,
+        68
+      ],
+      [
+        78,
+        47
+      ]
+    ],
+    "n_pairs_shared_with_mushaf_top15": 0,
+    "identical_top15": false,
+    "synth_hits_against_B": 0,
+    "pass_discriminativeness": true
+  },
+  "top15_pairs_intersect_B_list": [
+    [
+      1,
+      2
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      15,
+      16
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      32,
+      33
+    ],
+    [
+      33,
+      34
+    ],
+    [
+      49,
+      50
+    ],
+    [
+      53,
+      54
+    ],
+    [
+      54,
+      55
+    ],
+    [
+      55,
+      56
+    ],
+    [
+      56,
+      57
+    ]
+  ],
+  "top15_pairs_not_in_B_list": []
+}

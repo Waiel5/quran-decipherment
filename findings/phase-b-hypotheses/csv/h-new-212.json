@@ -1,0 +1,254 @@
+{
+  "finding_id": "h-new-212",
+  "title": "Alternative chronology orderings — Fisher-Rao path length",
+  "pre_reg_sha256": "70777c0b108a0dc54af59f120829c74395b2e601f80623eb50e99ba7e774076e",
+  "h_new_111_source_sha256": "4c366c414b82b0d0f3bcd06b68a7b5a87b500cf925b5088704a36c355d7f33fc",
+  "seed": 20260419,
+  "permutations": 10000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016667,
+  "date": "2026-04-17",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, Hafs-Kufan, D-matrix-inherited-from-H-NEW-111)",
+  "null_quantiles": {
+    "min": 98.353859,
+    "q001": 99.31442,
+    "q01": 100.386614,
+    "q025": 101.06334,
+    "q05": 101.596702,
+    "q25": 103.263994,
+    "q50": 104.367559,
+    "q75": 105.468323,
+    "q95": 106.979645,
+    "max": 111.19782,
+    "mean": 104.347847,
+    "sd": 1.627324
+  },
+  "results": {
+    "mushaf": {
+      "L": 85.759655,
+      "z": -11.422552,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "egyptian_1924": {
+      "L": 89.529707,
+      "z": -9.105833,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        68,
+        73,
+        74,
+        1,
+        111,
+        81,
+        87,
+        92,
+        89,
+        93,
+        94,
+        103,
+        100,
+        108,
+        102,
+        107,
+        109,
+        105,
+        113
+      ]
+    },
+    "noldeke_1860": {
+      "L": 87.232105,
+      "z": -10.517723,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        74,
+        111,
+        106,
+        108,
+        104,
+        107,
+        102,
+        105,
+        92,
+        90,
+        94,
+        93,
+        97,
+        86,
+        91,
+        80,
+        68,
+        87,
+        95
+      ]
+    },
+    "bell_1937": {
+      "L": 87.795583,
+      "z": -10.171463,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        74,
+        106,
+        93,
+        94,
+        103,
+        91,
+        107,
+        86,
+        95,
+        99,
+        101,
+        100,
+        92,
+        81,
+        82,
+        87,
+        80,
+        84,
+        79
+      ]
+    },
+    "blachere_1947": {
+      "L": 89.834539,
+      "z": -8.918512,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        68,
+        73,
+        74,
+        1,
+        111,
+        87,
+        92,
+        89,
+        93,
+        94,
+        103,
+        100,
+        108,
+        102,
+        107,
+        109,
+        105,
+        113,
+        114
+      ]
+    }
+  },
+  "leaderboard_shortest_first": [
+    {
+      "rank": 1,
+      "name": "mushaf",
+      "L": 85.759655,
+      "p": 0.0001
+    },
+    {
+      "rank": 2,
+      "name": "noldeke_1860",
+      "L": 87.232105,
+      "p": 0.0001
+    },
+    {
+      "rank": 3,
+      "name": "bell_1937",
+      "L": 87.795583,
+      "p": 0.0001
+    },
+    {
+      "rank": 4,
+      "name": "egyptian_1924",
+      "L": 89.529707,
+      "p": 0.0001
+    },
+    {
+      "rank": 5,
+      "name": "blachere_1947",
+      "L": 89.834539,
+      "p": 0.0001
+    }
+  ],
+  "shortest_name": "mushaf",
+  "mushaf_rank_among_5": 1,
+  "bonferroni_family_verdicts": {
+    "egyptian_1924": {
+      "p": 0.0001,
+      "alpha_bon": 0.016667,
+      "pass": true
+    },
+    "bell_1937": {
+      "p": 0.0001,
+      "alpha_bon": 0.016667,
+      "pass": true
+    },
+    "blachere_1947": {
+      "p": 0.0001,
+      "alpha_bon": 0.016667,
+      "pass": true
+    }
+  },
+  "family_any_pass": true,
+  "mushaf_still_wins_over_all_3_chronologies": true,
+  "chronology_spearman_matrix": {
+    "mushaf vs noldeke_1860": -0.655106,
+    "egyptian_1924 vs mushaf": -0.406193,
+    "egyptian_1924 vs noldeke_1860": 0.771418,
+    "bell_1937 vs mushaf": -0.6214,
+    "bell_1937 vs egyptian_1924": 0.694012,
+    "bell_1937 vs noldeke_1860": 0.953999,
+    "bell_1937 vs blachere_1947": 0.689438,
+    "blachere_1947 vs mushaf": -0.40563,
+    "blachere_1947 vs egyptian_1924": 0.962492,
+    "blachere_1947 vs noldeke_1860": 0.768588
+  },
+  "pairwise_path_diffs_vs_mushaf": {
+    "egyptian_1924": {
+      "L_minus_mushaf_raw": 3.770052,
+      "L_minus_mushaf_in_null_sd": 2.316719
+    },
+    "noldeke_1860": {
+      "L_minus_mushaf_raw": 1.47245,
+      "L_minus_mushaf_in_null_sd": 0.904829
+    },
+    "bell_1937": {
+      "L_minus_mushaf_raw": 2.035928,
+      "L_minus_mushaf_in_null_sd": 1.25109
+    },
+    "blachere_1947": {
+      "L_minus_mushaf_raw": 4.074884,
+      "L_minus_mushaf_in_null_sd": 2.50404
+    }
+  },
+  "bell_data_quality_caveat": "Surah 15 imputed rank 52 (coded \"M\" not numeric in Fr. Wiki); ties (s81/s82 both rank 15) resolved by mushaf-order secondary",
+  "blachere_data_quality_caveat": "Tie s80/s84 (both rank 24) resolved by mushaf-order secondary",
+  "verdict_primary": "SEE leaderboard + family verdicts"
+}

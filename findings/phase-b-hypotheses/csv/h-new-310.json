@@ -1,0 +1,131 @@
+{
+  "id": "H-NEW-310",
+  "prereg_sha": "70ea962aade3a2f62ef551b34c2f89bb1479871307d6508f20d448c42b4471e5",
+  "seed": 20260425,
+  "n_perm": 1000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "results": [
+    {
+      "singleton": "ALMS",
+      "surah": 7,
+      "rank1_neighbor": 6,
+      "rank1_distance": 0.720799,
+      "rank1_cluster": "non-muq",
+      "apriori_accepted": [
+        "ALM"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "ALMR",
+      "surah": 13,
+      "rank1_neighbor": 14,
+      "rank1_distance": 0.783843,
+      "rank1_cluster": "ALR",
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": true
+    },
+    {
+      "singleton": "KHYAS",
+      "surah": 19,
+      "rank1_neighbor": 43,
+      "rank1_distance": 0.876691,
+      "rank1_cluster": "HM",
+      "apriori_accepted": [
+        "HM",
+        "TSM"
+      ],
+      "match": true
+    },
+    {
+      "singleton": "TH",
+      "surah": 20,
+      "rank1_neighbor": 23,
+      "rank1_distance": 0.860479,
+      "rank1_cluster": "non-muq",
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "TS",
+      "surah": 27,
+      "rank1_neighbor": 7,
+      "rank1_distance": 0.774156,
+      "rank1_cluster": "non-muq",
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "YS",
+      "surah": 36,
+      "rank1_neighbor": 25,
+      "rank1_distance": 0.777794,
+      "rank1_cluster": "non-muq",
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "S",
+      "surah": 38,
+      "rank1_neighbor": 78,
+      "rank1_distance": 0.833107,
+      "rank1_cluster": "non-muq",
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "HMASQ",
+      "surah": 42,
+      "rank1_neighbor": 45,
+      "rank1_distance": 0.801067,
+      "rank1_cluster": "HM",
+      "apriori_accepted": [
+        "HM"
+      ],
+      "match": true
+    },
+    {
+      "singleton": "Q",
+      "surah": 50,
+      "rank1_neighbor": 78,
+      "rank1_distance": 0.764829,
+      "rank1_cluster": "non-muq",
+      "apriori_accepted": [
+        "HM",
+        "TSM"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "N",
+      "surah": 68,
+      "rank1_neighbor": 100,
+      "rank1_distance": 0.715581,
+      "rank1_cluster": "non-muq",
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": false
+    }
+  ],
+  "match_count": 3,
+  "null_mean": 1.34,
+  "p_perm": 0.084,
+  "cell_a_pass": false,
+  "cell_b_pass": false,
+  "verdict": "NULL"
+}

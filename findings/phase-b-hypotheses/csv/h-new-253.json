@@ -1,0 +1,524 @@
+{
+  "id": "H-NEW-253",
+  "seed": 20260419,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "n_surahs": 114,
+  "n_metrics": 20,
+  "baseline_n_surahs_cell_count_ge3": 17,
+  "mw5": {
+    "n_permutations": 1000,
+    "null_mean_surahs_ge3": 18.519,
+    "null_sd": 3.0570637873619844,
+    "null_max": 27,
+    "null_min": 8,
+    "p_empirical": 0.766
+  },
+  "top_20": [
+    {
+      "rank": 1,
+      "sid": 2,
+      "cell_count": 4,
+      "cells_extreme": [
+        "M1",
+        "M2",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 9,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M2": [
+          "is_muq"
+        ],
+        "M3": [
+          "residual_H_cond"
+        ],
+        "M5": [
+          "N_tokens",
+          "kl_from_corpus",
+          "zipf_alpha",
+          "lz_norm_log",
+          "gzip_ratio",
+          "dispersion_h168"
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "sid": 3,
+      "cell_count": 4,
+      "cells_extreme": [
+        "M1",
+        "M2",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 7,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M2": [
+          "is_muq"
+        ],
+        "M3": [
+          "residual_H_cond"
+        ],
+        "M5": [
+          "N_tokens",
+          "kl_from_corpus",
+          "zipf_alpha",
+          "gzip_ratio"
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "sid": 108,
+      "cell_count": 4,
+      "cells_extreme": [
+        "M1",
+        "M2",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 7,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M2": [
+          "noldeke_order"
+        ],
+        "M3": [
+          "residual_H_cond",
+          "emphatic"
+        ],
+        "M5": [
+          "kl_from_corpus",
+          "lz_norm_log",
+          "gzip_ratio"
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "sid": 4,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 7,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M3": [
+          "residual_H_cond"
+        ],
+        "M5": [
+          "N_tokens",
+          "zipf_alpha",
+          "lz_norm_log",
+          "gzip_ratio",
+          "dispersion_h168"
+        ]
+      }
+    },
+    {
+      "rank": 5,
+      "sid": 55,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 7,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_position_is_structural_hinge"
+        ],
+        "M3": [
+          "pharyngeal"
+        ],
+        "M5": [
+          "kl_from_corpus",
+          "zipf_alpha",
+          "heap_beta",
+          "lz_norm_log",
+          "gzip_ratio"
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "sid": 7,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M2",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 5,
+      "extreme_metrics_by_cell": {
+        "M2": [
+          "is_muq"
+        ],
+        "M3": [
+          "z_Q_ljung_box"
+        ],
+        "M5": [
+          "N_tokens",
+          "kl_from_corpus",
+          "dispersion_h168"
+        ]
+      }
+    },
+    {
+      "rank": 7,
+      "sid": 106,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M2",
+        "M5"
+      ],
+      "extreme_metrics_count": 5,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M2": [
+          "noldeke_order"
+        ],
+        "M5": [
+          "kl_from_corpus",
+          "lz_norm_log",
+          "gzip_ratio"
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "sid": 111,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M2",
+        "M5"
+      ],
+      "extreme_metrics_count": 5,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M2": [
+          "noldeke_order"
+        ],
+        "M5": [
+          "kl_from_corpus",
+          "gzip_ratio",
+          "dispersion_h168"
+        ]
+      }
+    },
+    {
+      "rank": 9,
+      "sid": 5,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M2",
+        "M5"
+      ],
+      "extreme_metrics_count": 4,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M2": [
+          "noldeke_order"
+        ],
+        "M5": [
+          "kl_from_corpus",
+          "gzip_ratio"
+        ]
+      }
+    },
+    {
+      "rank": 10,
+      "sid": 9,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M2",
+        "M5"
+      ],
+      "extreme_metrics_count": 4,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M2": [
+          "noldeke_order"
+        ],
+        "M5": [
+          "lz_norm_log",
+          "gzip_ratio"
+        ]
+      }
+    },
+    {
+      "rank": 11,
+      "sid": 32,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M2",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 4,
+      "extreme_metrics_by_cell": {
+        "M2": [
+          "is_muq"
+        ],
+        "M3": [
+          "acf_2"
+        ],
+        "M5": [
+          "heap_beta",
+          "alpha_beta_residual"
+        ]
+      }
+    },
+    {
+      "rank": 12,
+      "sid": 54,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 4,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_position_is_structural_hinge"
+        ],
+        "M3": [
+          "acf_1",
+          "H_unigram"
+        ],
+        "M5": [
+          "heap_beta"
+        ]
+      }
+    },
+    {
+      "rank": 13,
+      "sid": 60,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M2",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 4,
+      "extreme_metrics_by_cell": {
+        "M2": [
+          "noldeke_order"
+        ],
+        "M3": [
+          "emphatic"
+        ],
+        "M5": [
+          "heap_beta",
+          "alpha_beta_residual"
+        ]
+      }
+    },
+    {
+      "rank": 14,
+      "sid": 50,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M2",
+        "M3"
+      ],
+      "extreme_metrics_count": 3,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_position_is_structural_hinge"
+        ],
+        "M2": [
+          "is_muq"
+        ],
+        "M3": [
+          "residual_H_cond"
+        ]
+      }
+    },
+    {
+      "rank": 15,
+      "sid": 104,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M2",
+        "M3"
+      ],
+      "extreme_metrics_count": 3,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M2": [
+          "noldeke_order"
+        ],
+        "M3": [
+          "pharyngeal"
+        ]
+      }
+    },
+    {
+      "rank": 16,
+      "sid": 105,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 3,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M3": [
+          "emphatic"
+        ],
+        "M5": [
+          "lz_norm_log"
+        ]
+      }
+    },
+    {
+      "rank": 17,
+      "sid": 107,
+      "cell_count": 3,
+      "cells_extreme": [
+        "M1",
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 3,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_minus_noldeke"
+        ],
+        "M3": [
+          "H_unigram"
+        ],
+        "M5": [
+          "dispersion_h168"
+        ]
+      }
+    },
+    {
+      "rank": 18,
+      "sid": 109,
+      "cell_count": 2,
+      "cells_extreme": [
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 6,
+      "extreme_metrics_by_cell": {
+        "M3": [
+          "residual_H_cond",
+          "H_unigram",
+          "emphatic",
+          "pharyngeal"
+        ],
+        "M5": [
+          "lz_norm_log",
+          "dispersion_h168"
+        ]
+      }
+    },
+    {
+      "rank": 19,
+      "sid": 51,
+      "cell_count": 2,
+      "cells_extreme": [
+        "M1",
+        "M3"
+      ],
+      "extreme_metrics_count": 5,
+      "extreme_metrics_by_cell": {
+        "M1": [
+          "mushaf_position_is_structural_hinge"
+        ],
+        "M3": [
+          "z_Q_ljung_box",
+          "acf_1",
+          "acf_2",
+          "max_abs_acf"
+        ]
+      }
+    },
+    {
+      "rank": 20,
+      "sid": 1,
+      "cell_count": 2,
+      "cells_extreme": [
+        "M3",
+        "M5"
+      ],
+      "extreme_metrics_count": 4,
+      "extreme_metrics_by_cell": {
+        "M3": [
+          "H_unigram",
+          "emphatic",
+          "pharyngeal"
+        ],
+        "M5": [
+          "dispersion_h168"
+        ]
+      }
+    }
+  ],
+  "candidate_ge3_shared_profile": {
+    "candidates": [
+      2,
+      3,
+      108,
+      4,
+      55,
+      7,
+      106,
+      111,
+      5,
+      9,
+      32,
+      54,
+      60,
+      50,
+      104,
+      105,
+      107
+    ],
+    "n_refrain": 2,
+    "n_oath_opener": 0,
+    "n_in_Q50_56_hub": 3,
+    "n_muq": 5
+  },
+  "verdict": "DESCRIPTIVE-CATEGORY (≥3 candidates but MW-5 p=0.7660 not < 0.025)"
+}

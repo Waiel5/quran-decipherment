@@ -1,0 +1,87 @@
+{
+  "finding_id": "h-new-171",
+  "title": "Entropy rate / k-NN conditional-entropy of mushaf surah-sequence",
+  "pre_reg_sha256": "8c0ec43f1dd3379a1c1e88834de509c30e7616a275b6bf43e1e4ca58e190f950",
+  "seed": 20260419,
+  "date": "2026-04-17",
+  "rules_tuple": "(no-tashkeel, QAC-STEM roots, top-K=100, Dirichlet α=0.5, L1-norm, Fisher-Rao, Hafs-Kūfan, mushaf order)",
+  "locked_params": {
+    "K_top_roots": 100,
+    "dirichlet_alpha": 0.5,
+    "permutations": 10000,
+    "distance": "Fisher-Rao 2·arccos(Bhattacharyya)",
+    "rank_kernel_for_H": "exp(-rank), normalised; H in bits"
+  },
+  "corpus_stats": {
+    "total_stem_root_tokens": 49968,
+    "global_distinct_roots": 1642,
+    "top_K_coverage_fraction": 0.604947
+  },
+  "distance_matrix_stats": {
+    "min": 0.203122,
+    "max": 1.75099,
+    "mean": 0.948832,
+    "median": 0.952501
+  },
+  "primary_mean_rank": {
+    "mushaf": 34.300885,
+    "null": {
+      "min": 47.070796,
+      "q001": 49.336283,
+      "q01": 51.017699,
+      "q025": 51.911504,
+      "q05": 52.778761,
+      "q50": 57.061947,
+      "q95": 61.19469,
+      "max": 66.59292,
+      "mean": 57.019668,
+      "sd": 2.541097
+    },
+    "z_score": -8.940542,
+    "n_perms_le_mushaf": 0,
+    "p_one_sided_lower": 0.0001,
+    "alpha_bon": 0.025,
+    "pass": true
+  },
+  "secondary_cond_entropy_bits": {
+    "mushaf": 50.147445,
+    "null": {
+      "min": 68.570533,
+      "q001": 71.838939,
+      "q01": 74.26471,
+      "q025": 75.554198,
+      "q05": 76.805385,
+      "q50": 82.984716,
+      "q95": 88.947005,
+      "max": 96.735004,
+      "mean": 82.923721,
+      "sd": 3.666028
+    },
+    "z_score": -8.940542,
+    "n_perms_le_mushaf": 0,
+    "p_one_sided_lower": 0.0001,
+    "alpha_bon": 0.025,
+    "pass": true
+  },
+  "mw5_positive_control": {
+    "method": "greedy-NN from surah 1",
+    "mean_rank": 14.044248,
+    "H_hat_bits": 20.923295,
+    "task_spec_threshold_approx_1": false,
+    "task_spec_threshold_note": "Task spec \"mean-rank ≈ 1\" is mathematically incorrect: greedy-NN picks nearest UNVISITED surah, so late steps have rank ≫ 1. Corrected threshold is mean_rank < null_q001.",
+    "null_q001": 49.336283,
+    "corrected_threshold_pass": true,
+    "sigma_below_null_mean": -16.912153
+  },
+  "chronology_descriptive": {
+    "noldeke_mean_rank": 30.212389,
+    "noldeke_H_bits": 44.248993,
+    "noldeke_p_one_sided_lower": 0.0001,
+    "tanzil_mean_rank": 33.59292,
+    "tanzil_H_bits": 49.126068,
+    "tanzil_p_one_sided_lower": 0.0001,
+    "delta_mushaf_vs_noldeke_mean_rank": 4.088496
+  },
+  "verdict_primary": "PASS",
+  "verdict_secondary": "PASS"
+}

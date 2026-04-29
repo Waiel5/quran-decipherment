@@ -1,0 +1,98 @@
+{
+  "finding_id": "h-new-280",
+  "title": "Q55 Fisher-Rao constrained-null salvage: fixed refrain slots, shuffled non-refrain verses",
+  "pre_reg_sha256": "d0720a7f603af3648434ad0d828d1ab5cfea78dcaa64b97924502b4de7c3829a",
+  "seed": 20260418,
+  "date": "2026-04-18",
+  "parent_backdrop": [
+    "h-new-127",
+    "h-new-83"
+  ],
+  "scope_note": "Q55 only. Fixed 31 refrain slots; permute only the 47 non-refrain verses across the 47 non-refrain slots; compute the same full 78-verse Fisher-Rao path.",
+  "rules_tuple": "(Q55 only; no-tashkeel; QAC-STEM root tokens; QAC v0.4; Hafs-Kufan; K=300 top global roots; Dirichlet alpha=0.5; Fisher-Rao angular distance; full 78-verse path length)",
+  "locked_params": {
+    "surah_id": 55,
+    "K_top_roots": 300,
+    "dirichlet_alpha": 0.5,
+    "permutations": 10000,
+    "alpha_raw": 0.05,
+    "distance": "Fisher-Rao angular = 2*arccos(sum sqrt(p_i*p_j))",
+    "refrain_positions": [
+      13,
+      16,
+      18,
+      21,
+      23,
+      25,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      45,
+      47,
+      49,
+      51,
+      53,
+      55,
+      57,
+      59,
+      61,
+      63,
+      65,
+      67,
+      69,
+      71,
+      73,
+      75,
+      77
+    ],
+    "n_refrain": 31,
+    "n_non_refrain": 47
+  },
+  "corpus_stats": {
+    "total_stem_root_tokens": 49968,
+    "global_distinct_roots": 1642,
+    "top_K_coverage_fraction": 0.834634
+  },
+  "instrument_checks": {
+    "refrain_positions_match_h_new_83": true,
+    "n_verses_q55": 78,
+    "mean_root_tokens_per_verse": 3.282051
+  },
+  "q55": {
+    "L_canon": 13.639165,
+    "null_mean": 13.693339,
+    "null_sd": 0.118168,
+    "delta_canon_minus_null_mean": -0.054173,
+    "z_score": -0.458439,
+    "n_perms_le_canon": 3121,
+    "p_value_one_sided_lower": 0.312168783122,
+    "pass_primary": false,
+    "anti_geodesic_under_constrained_null": false,
+    "canonical_shorter_than_null_mean": true,
+    "null_min": 13.124963,
+    "null_max": 14.103333,
+    "null_quantiles": {
+      "q001": 13.289109,
+      "q005": 13.356691,
+      "q01": 13.397862,
+      "q025": 13.450664,
+      "q05": 13.494382,
+      "q25": 13.617124,
+      "q50": 13.696709,
+      "q75": 13.773228,
+      "q95": 13.881741
+    },
+    "D_stats": {
+      "min": 0.0,
+      "max": 0.273834,
+      "mean": 0.146142,
+      "n_pairs": 3003
+    }
+  },
+  "verdict": "NULL"
+}

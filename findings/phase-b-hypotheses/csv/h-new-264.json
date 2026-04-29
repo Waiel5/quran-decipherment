@@ -1,0 +1,504 @@
+{
+  "id": "H-NEW-264",
+  "title": "Q 1 root-profile linkage to the ḥā-mīm subset",
+  "date": "2026-04-18",
+  "seed": 20260420,
+  "n_perm": 10000,
+  "prereg_sha256": "8a29c8088271b6bbeb39f561e8083e3d4504219c377d0b82e4a031f287c96497",
+  "rules_tuple": "QAC v0.4 STEM roots via surah-root-graph.json; subset fixed as Q40-46 ḥm muqaṭṭāʿat; null preserves exact period composition and coarse verse-count bins <10/10-29/30-59/60-99/100+; Hafs-Kūfan; basmala-counted-only-in-surah-1",
+  "bonferroni": {
+    "k": 2,
+    "alpha_bon": 0.025,
+    "family": "h-new-264-q1-connects-everything"
+  },
+  "subset_tested": {
+    "label": "ḥā-mīm block",
+    "members": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n": 7,
+    "matching_counts": {
+      "Meccan|30_59": 5,
+      "Meccan|60_99": 2
+    },
+    "matching_pool_sizes": {
+      "Meccan|30_59": 20,
+      "Meccan|60_99": 13
+    }
+  },
+  "q1_profile": {
+    "n_distinct_roots": 18,
+    "roots": [
+      "Alh",
+      "Dll",
+      "Ebd",
+      "Elm",
+      "Ewn",
+      "Hmd",
+      "SrT",
+      "dyn",
+      "gDb",
+      "gyr",
+      "hdy",
+      "mlk",
+      "nEm",
+      "qwm",
+      "rHm",
+      "rbb",
+      "smw",
+      "ywm"
+    ]
+  },
+  "cell_a_unweighted_recall": {
+    "statistic": "mean_shared_q1_root_fraction",
+    "direction": "one-sided upper",
+    "observed": 0.7380952380952381,
+    "null_mean": 0.5463126984126984,
+    "null_median": 0.5476190476190477,
+    "null_sd": 0.06074750906357751,
+    "z": 3.1570436819363703,
+    "p_one_sided_upper": 9.999000099990002e-05,
+    "pass": true
+  },
+  "cell_b_idf_recall": {
+    "statistic": "mean_idf_weighted_shared_q1_root_fraction",
+    "direction": "one-sided upper",
+    "observed": 0.5049113631255026,
+    "null_mean": 0.3542588709046586,
+    "null_median": 0.3543635061127658,
+    "null_sd": 0.04811446504178756,
+    "z": 3.131126826205006,
+    "p_one_sided_upper": 0.0004999500049995,
+    "pass": true
+  },
+  "mw5_positive_control": {
+    "anchor_surah": 62,
+    "subset_label": "musabbiḥāt inner-5 excluding anchor",
+    "subset_members": [
+      57,
+      59,
+      61,
+      64
+    ],
+    "matching_counts": {
+      "Medinan|10_29": 4
+    },
+    "matching_pool_sizes": {
+      "Medinan|10_29": 7
+    },
+    "cell_a_unweighted_recall": {
+      "observed": 0.47039473684210525,
+      "null_mean": 0.39683618421052635,
+      "null_sd": 0.026200785910186833,
+      "z": 2.80749412951691,
+      "p_one_sided_upper": 9.999000099990002e-05
+    },
+    "cell_b_idf_recall": {
+      "observed": 0.30983235392945563,
+      "null_mean": 0.24329749736493778,
+      "null_sd": 0.019262949533804037,
+      "z": 3.454032646856994,
+      "p_one_sided_upper": 9.999000099990002e-05
+    },
+    "pass": true
+  },
+  "hawamim_per_surah": [
+    {
+      "surah": 40,
+      "n_verses": 85,
+      "period": "Meccan",
+      "length_bin": "60_99",
+      "shared_q1_roots_n": 15,
+      "shared_q1_roots": [
+        "Alh",
+        "Dll",
+        "Ebd",
+        "Elm",
+        "Hmd",
+        "dyn",
+        "gyr",
+        "hdy",
+        "mlk",
+        "nEm",
+        "qwm",
+        "rHm",
+        "rbb",
+        "smw",
+        "ywm"
+      ],
+      "cell_a_recall": 0.8333,
+      "cell_b_idf_recall": 0.5849
+    },
+    {
+      "surah": 41,
+      "n_verses": 54,
+      "period": "Meccan",
+      "length_bin": "30_59",
+      "shared_q1_roots_n": 14,
+      "shared_q1_roots": [
+        "Alh",
+        "Dll",
+        "Ebd",
+        "Elm",
+        "Hmd",
+        "gyr",
+        "hdy",
+        "mlk",
+        "nEm",
+        "qwm",
+        "rHm",
+        "rbb",
+        "smw",
+        "ywm"
+      ],
+      "cell_a_recall": 0.7778,
+      "cell_b_idf_recall": 0.5148
+    },
+    {
+      "surah": 42,
+      "n_verses": 53,
+      "period": "Meccan",
+      "length_bin": "30_59",
+      "shared_q1_roots_n": 17,
+      "shared_q1_roots": [
+        "Alh",
+        "Dll",
+        "Ebd",
+        "Elm",
+        "Hmd",
+        "SrT",
+        "dyn",
+        "gDb",
+        "gyr",
+        "hdy",
+        "mlk",
+        "nEm",
+        "qwm",
+        "rHm",
+        "rbb",
+        "smw",
+        "ywm"
+      ],
+      "cell_a_recall": 0.9444,
+      "cell_b_idf_recall": 0.8222
+    },
+    {
+      "surah": 43,
+      "n_verses": 89,
+      "period": "Meccan",
+      "length_bin": "60_99",
+      "shared_q1_roots_n": 14,
+      "shared_q1_roots": [
+        "Alh",
+        "Dll",
+        "Ebd",
+        "Elm",
+        "SrT",
+        "gyr",
+        "hdy",
+        "mlk",
+        "nEm",
+        "qwm",
+        "rHm",
+        "rbb",
+        "smw",
+        "ywm"
+      ],
+      "cell_a_recall": 0.7778,
+      "cell_b_idf_recall": 0.5462
+    },
+    {
+      "surah": 44,
+      "n_verses": 59,
+      "period": "Meccan",
+      "length_bin": "30_59",
+      "shared_q1_roots_n": 9,
+      "shared_q1_roots": [
+        "Alh",
+        "Ebd",
+        "Elm",
+        "nEm",
+        "qwm",
+        "rHm",
+        "rbb",
+        "smw",
+        "ywm"
+      ],
+      "cell_a_recall": 0.5,
+      "cell_b_idf_recall": 0.2559
+    },
+    {
+      "surah": 45,
+      "n_verses": 37,
+      "period": "Meccan",
+      "length_bin": "30_59",
+      "shared_q1_roots_n": 11,
+      "shared_q1_roots": [
+        "Alh",
+        "Dll",
+        "Elm",
+        "Hmd",
+        "hdy",
+        "mlk",
+        "qwm",
+        "rHm",
+        "rbb",
+        "smw",
+        "ywm"
+      ],
+      "cell_a_recall": 0.6111,
+      "cell_b_idf_recall": 0.3658
+    },
+    {
+      "surah": 46,
+      "n_verses": 35,
+      "period": "Meccan",
+      "length_bin": "30_59",
+      "shared_q1_roots_n": 13,
+      "shared_q1_roots": [
+        "Alh",
+        "Dll",
+        "Ebd",
+        "Elm",
+        "gyr",
+        "hdy",
+        "mlk",
+        "nEm",
+        "qwm",
+        "rHm",
+        "rbb",
+        "smw",
+        "ywm"
+      ],
+      "cell_a_recall": 0.7222,
+      "cell_b_idf_recall": 0.4447
+    }
+  ],
+  "q1_root_coverage_within_hawamim": [
+    {
+      "root": "rHm",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 7,
+      "idf": 0.6091
+    },
+    {
+      "root": "ywm",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 7,
+      "idf": 0.4187
+    },
+    {
+      "root": "qwm",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 7,
+      "idf": 0.3668
+    },
+    {
+      "root": "smw",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 7,
+      "idf": 0.3417
+    },
+    {
+      "root": "Elm",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 7,
+      "idf": 0.2935
+    },
+    {
+      "root": "Alh",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 7,
+      "idf": 0.2819
+    },
+    {
+      "root": "rbb",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 7,
+      "idf": 0.1929
+    },
+    {
+      "root": "Dll",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 6,
+      "idf": 0.7108
+    },
+    {
+      "root": "Ebd",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        46
+      ],
+      "n_hawamim_hits": 6,
+      "idf": 0.6931
+    },
+    {
+      "root": "nEm",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        46
+      ],
+      "n_hawamim_hits": 6,
+      "idf": 0.6253
+    },
+    {
+      "root": "hdy",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 6,
+      "idf": 0.6091
+    },
+    {
+      "root": "mlk",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        45,
+        46
+      ],
+      "n_hawamim_hits": 6,
+      "idf": 0.5931
+    },
+    {
+      "root": "gyr",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        43,
+        46
+      ],
+      "n_hawamim_hits": 5,
+      "idf": 0.9076
+    },
+    {
+      "root": "Hmd",
+      "hawamim_hits": [
+        40,
+        41,
+        42,
+        45
+      ],
+      "n_hawamim_hits": 4,
+      "idf": 1.0473
+    },
+    {
+      "root": "SrT",
+      "hawamim_hits": [
+        42,
+        43
+      ],
+      "n_hawamim_hits": 2,
+      "idf": 1.5173
+    },
+    {
+      "root": "dyn",
+      "hawamim_hits": [
+        40,
+        42
+      ],
+      "n_hawamim_hits": 2,
+      "idf": 1.0473
+    },
+    {
+      "root": "gDb",
+      "hawamim_hits": [
+        42
+      ],
+      "n_hawamim_hits": 1,
+      "idf": 2.0281
+    },
+    {
+      "root": "Ewn",
+      "hawamim_hits": [],
+      "n_hawamim_hits": 0,
+      "idf": 2.6568
+    }
+  ],
+  "verdict": "CONFIRMED"
+}

@@ -1,0 +1,1130 @@
+{
+  "id": "H-NEW-233",
+  "seed": 20260419,
+  "n_perm": 100,
+  "bonferroni_family": "h-new-233-ensemble-mushaf-predictor",
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "alpha_fam": 0.05,
+  "n_surahs": 114,
+  "feature_names": [
+    "alpha",
+    "beta",
+    "alpha_minus_beta",
+    "log_length",
+    "mean_verse_len",
+    "allah_density",
+    "qul_density",
+    "book_ref_density",
+    "loanword_density",
+    "eschat_density",
+    "dispersion",
+    "muq_cardinality",
+    "verse_count",
+    "type_token_ratio",
+    "refrain_score",
+    "phon_labial",
+    "phon_alveolar",
+    "phon_palatal",
+    "phon_velar",
+    "phon_pharyngeal",
+    "phon_glottal",
+    "phon_emphatic",
+    "phon_voiced",
+    "phon_continuant",
+    "kl_from_corpus",
+    "hurst_verse_len",
+    "lz_norm_simple",
+    "entropy_rate_surah",
+    "alpha_beta_residual"
+  ],
+  "n_features": 29,
+  "model_A_ridge": {
+    "r2_loocv": 0.7395490015311565,
+    "mae_loocv": 10.655710803998838,
+    "ridge_alpha": 1.0
+  },
+  "model_B_rf": {
+    "r2_loocv": 0.848516936603147,
+    "mae_loocv": 7.243210526315789,
+    "n_estimators": 500
+  },
+  "rf_feature_importance_sorted": [
+    [
+      "log_length",
+      0.5625843150972836
+    ],
+    [
+      "entropy_rate_surah",
+      0.23577865625991326
+    ],
+    [
+      "lz_norm_simple",
+      0.04312009135783472
+    ],
+    [
+      "kl_from_corpus",
+      0.028921257461107727
+    ],
+    [
+      "eschat_density",
+      0.027267054669910615
+    ],
+    [
+      "dispersion",
+      0.018284116077698004
+    ],
+    [
+      "verse_count",
+      0.01798390475755463
+    ],
+    [
+      "phon_pharyngeal",
+      0.013309003743067649
+    ],
+    [
+      "type_token_ratio",
+      0.011797346805248219
+    ],
+    [
+      "phon_emphatic",
+      0.004309505483199616
+    ],
+    [
+      "phon_alveolar",
+      0.0038299892794377097
+    ],
+    [
+      "muq_cardinality",
+      0.00370724105645095
+    ],
+    [
+      "phon_labial",
+      0.003491803694105097
+    ],
+    [
+      "phon_continuant",
+      0.003393180397000584
+    ],
+    [
+      "phon_velar",
+      0.0033789968246876905
+    ],
+    [
+      "mean_verse_len",
+      0.003023145249865598
+    ],
+    [
+      "phon_voiced",
+      0.002632913936546934
+    ],
+    [
+      "qul_density",
+      0.0024293950648199216
+    ],
+    [
+      "loanword_density",
+      0.0018048324771200667
+    ],
+    [
+      "beta",
+      0.0014478946979285911
+    ],
+    [
+      "book_ref_density",
+      0.0013727597529431907
+    ],
+    [
+      "phon_palatal",
+      0.0012363233144664218
+    ],
+    [
+      "phon_glottal",
+      0.0009642499500589494
+    ],
+    [
+      "alpha_minus_beta",
+      0.0009182946097743026
+    ],
+    [
+      "allah_density",
+      0.0008715498294918104
+    ],
+    [
+      "hurst_verse_len",
+      0.0008103332380748125
+    ],
+    [
+      "alpha_beta_residual",
+      0.0007024281834411521
+    ],
+    [
+      "alpha",
+      0.0004314600789218663
+    ],
+    [
+      "refrain_score",
+      0.00019795665204648508
+    ]
+  ],
+  "ridge_fit_coefs_on_scaled": {
+    "alpha": -1.3265797972399462,
+    "beta": -0.9453343095320234,
+    "alpha_minus_beta": -0.705267853537342,
+    "log_length": -14.416059232993767,
+    "mean_verse_len": 1.6553193907819392,
+    "allah_density": 1.4717977754936573,
+    "qul_density": -0.0592964051920685,
+    "book_ref_density": 2.02636917272915,
+    "loanword_density": -1.4390180212606751,
+    "eschat_density": -2.1457505951819433,
+    "dispersion": -2.5719315111408525,
+    "muq_cardinality": -2.5174107498508693,
+    "verse_count": 0.428272757490254,
+    "type_token_ratio": -3.0150605915832056,
+    "refrain_score": -0.04154239523836748,
+    "phon_labial": -1.1156952996088685,
+    "phon_alveolar": -2.9604507986464004,
+    "phon_palatal": 0.32505549777106113,
+    "phon_velar": -2.3251504583056444,
+    "phon_pharyngeal": -3.8343879907621274,
+    "phon_glottal": -1.5437882695371912,
+    "phon_emphatic": -2.621574916389545,
+    "phon_voiced": -0.7477314657681406,
+    "phon_continuant": -1.9380594499702415,
+    "kl_from_corpus": 9.622130118369988,
+    "hurst_verse_len": -0.14949871192639255,
+    "lz_norm_simple": 5.305713040106867,
+    "entropy_rate_surah": -6.905636208599064,
+    "alpha_beta_residual": 2.060089033447497
+  },
+  "permutation_null_ridge": {
+    "n_perm": 100,
+    "null_r2_mean": -0.3407340409087798,
+    "null_r2_std": 0.11862315630882016,
+    "null_r2_95": -0.16443356171252974,
+    "null_r2_975": -0.12531001153606686,
+    "null_r2_max": -0.0744523017681804,
+    "p_one_sided_ridge": 0.009900990099009901
+  },
+  "h_new_192_baseline_ridge": 0.759,
+  "h_new_192_baseline_rf": 0.817,
+  "h_new_183_noldeke_ceiling_ridge": 0.836,
+  "H1_ridge_beats_baseline_and_p_lt_0p025": false,
+  "H2_rf_beats_baseline": true,
+  "verdict": "PASS \u2014 beats H-NEW-192 baseline",
+  "per_surah_predictions": [
+    {
+      "surah_id": 1,
+      "mushaf_pos": 1,
+      "pred_ridge": 110.9456958235468,
+      "pred_rf": 99.37,
+      "resid_ridge": -109.9456958235468,
+      "resid_rf": -98.37
+    },
+    {
+      "surah_id": 2,
+      "mushaf_pos": 2,
+      "pred_ridge": -21.51931507143621,
+      "pred_rf": 6.122,
+      "resid_ridge": 23.51931507143621,
+      "resid_rf": -4.122
+    },
+    {
+      "surah_id": 3,
+      "mushaf_pos": 3,
+      "pred_ridge": -0.37981351297089105,
+      "pred_rf": 7.21,
+      "resid_ridge": 3.379813512970891,
+      "resid_rf": -4.21
+    },
+    {
+      "surah_id": 4,
+      "mushaf_pos": 4,
+      "pred_ridge": 7.0001509997093265,
+      "pred_rf": 5.834,
+      "resid_ridge": -3.0001509997093265,
+      "resid_rf": -1.8339999999999996
+    },
+    {
+      "surah_id": 5,
+      "mushaf_pos": 5,
+      "pred_ridge": 11.377291944037829,
+      "pred_rf": 6.92,
+      "resid_ridge": -6.377291944037829,
+      "resid_rf": -1.92
+    },
+    {
+      "surah_id": 6,
+      "mushaf_pos": 6,
+      "pred_ridge": 8.265440155245138,
+      "pred_rf": 7.646,
+      "resid_ridge": -2.2654401552451375,
+      "resid_rf": -1.646
+    },
+    {
+      "surah_id": 7,
+      "mushaf_pos": 7,
+      "pred_ridge": -6.9051299712898455,
+      "pred_rf": 8.432,
+      "resid_ridge": 13.905129971289846,
+      "resid_rf": -1.4320000000000004
+    },
+    {
+      "surah_id": 8,
+      "mushaf_pos": 8,
+      "pred_ridge": 35.754055753671324,
+      "pred_rf": 29.962,
+      "resid_ridge": -27.754055753671324,
+      "resid_rf": -21.962
+    },
+    {
+      "surah_id": 9,
+      "mushaf_pos": 9,
+      "pred_ridge": 9.186958575630257,
+      "pred_rf": 10.198,
+      "resid_ridge": -0.18695857563025697,
+      "resid_rf": -1.1980000000000004
+    },
+    {
+      "surah_id": 10,
+      "mushaf_pos": 10,
+      "pred_ridge": 10.813687440951064,
+      "pred_rf": 16.122,
+      "resid_ridge": -0.8136874409510639,
+      "resid_rf": -6.122
+    },
+    {
+      "surah_id": 11,
+      "mushaf_pos": 11,
+      "pred_ridge": 5.128078938327356,
+      "pred_rf": 12.348,
+      "resid_ridge": 5.871921061672644,
+      "resid_rf": -1.3480000000000008
+    },
+    {
+      "surah_id": 12,
+      "mushaf_pos": 12,
+      "pred_ridge": 20.350533329402616,
+      "pred_rf": 18.41,
+      "resid_ridge": -8.350533329402616,
+      "resid_rf": -6.41
+    },
+    {
+      "surah_id": 13,
+      "mushaf_pos": 13,
+      "pred_ridge": 43.56147323456628,
+      "pred_rf": 31.618,
+      "resid_ridge": -30.56147323456628,
+      "resid_rf": -18.618
+    },
+    {
+      "surah_id": 14,
+      "mushaf_pos": 14,
+      "pred_ridge": 28.604118355447593,
+      "pred_rf": 33.06,
+      "resid_ridge": -14.604118355447593,
+      "resid_rf": -19.060000000000002
+    },
+    {
+      "surah_id": 15,
+      "mushaf_pos": 15,
+      "pred_ridge": 38.151473629644556,
+      "pred_rf": 38.044,
+      "resid_ridge": -23.151473629644556,
+      "resid_rf": -23.043999999999997
+    },
+    {
+      "surah_id": 16,
+      "mushaf_pos": 16,
+      "pred_ridge": 19.716308294340394,
+      "pred_rf": 12.44,
+      "resid_ridge": -3.7163082943403936,
+      "resid_rf": 3.5600000000000005
+    },
+    {
+      "surah_id": 17,
+      "mushaf_pos": 17,
+      "pred_ridge": 32.229697826258075,
+      "pred_rf": 21.132,
+      "resid_ridge": -15.229697826258075,
+      "resid_rf": -4.1320000000000014
+    },
+    {
+      "surah_id": 18,
+      "mushaf_pos": 18,
+      "pred_ridge": 30.60862736733157,
+      "pred_rf": 20.15,
+      "resid_ridge": -12.608627367331572,
+      "resid_rf": -2.1499999999999986
+    },
+    {
+      "surah_id": 19,
+      "mushaf_pos": 19,
+      "pred_ridge": 28.610270109614316,
+      "pred_rf": 26.238,
+      "resid_ridge": -9.610270109614316,
+      "resid_rf": -7.2379999999999995
+    },
+    {
+      "surah_id": 20,
+      "mushaf_pos": 20,
+      "pred_ridge": 27.284463679660433,
+      "pred_rf": 21.114,
+      "resid_ridge": -7.284463679660433,
+      "resid_rf": -1.1140000000000008
+    },
+    {
+      "surah_id": 21,
+      "mushaf_pos": 21,
+      "pred_ridge": 30.41271670501631,
+      "pred_rf": 25.152,
+      "resid_ridge": -9.412716705016312,
+      "resid_rf": -4.152000000000001
+    },
+    {
+      "surah_id": 22,
+      "mushaf_pos": 22,
+      "pred_ridge": 27.270240111867487,
+      "pred_rf": 27.472,
+      "resid_ridge": -5.270240111867487,
+      "resid_rf": -5.472000000000001
+    },
+    {
+      "surah_id": 23,
+      "mushaf_pos": 23,
+      "pred_ridge": 29.93900790360388,
+      "pred_rf": 24.196,
+      "resid_ridge": -6.93900790360388,
+      "resid_rf": -1.1960000000000015
+    },
+    {
+      "surah_id": 24,
+      "mushaf_pos": 24,
+      "pred_ridge": 31.32205534198481,
+      "pred_rf": 18.928,
+      "resid_ridge": -7.322055341984811,
+      "resid_rf": 5.071999999999999
+    },
+    {
+      "surah_id": 25,
+      "mushaf_pos": 25,
+      "pred_ridge": 40.993114128845555,
+      "pred_rf": 31.342,
+      "resid_ridge": -15.993114128845555,
+      "resid_rf": -6.341999999999999
+    },
+    {
+      "surah_id": 26,
+      "mushaf_pos": 26,
+      "pred_ridge": 18.4581628738734,
+      "pred_rf": 17.306,
+      "resid_ridge": 7.541837126126602,
+      "resid_rf": 8.693999999999999
+    },
+    {
+      "surah_id": 27,
+      "mushaf_pos": 27,
+      "pred_ridge": 28.361687317167554,
+      "pred_rf": 25.984,
+      "resid_ridge": -1.3616873171675543,
+      "resid_rf": 1.0159999999999982
+    },
+    {
+      "surah_id": 28,
+      "mushaf_pos": 28,
+      "pred_ridge": 15.50134703543609,
+      "pred_rf": 21.578,
+      "resid_ridge": 12.49865296456391,
+      "resid_rf": 6.422000000000001
+    },
+    {
+      "surah_id": 29,
+      "mushaf_pos": 29,
+      "pred_ridge": 27.365185090317347,
+      "pred_rf": 31.01,
+      "resid_ridge": 1.6348149096826532,
+      "resid_rf": -2.0100000000000016
+    },
+    {
+      "surah_id": 30,
+      "mushaf_pos": 30,
+      "pred_ridge": 27.725287819778657,
+      "pred_rf": 37.348,
+      "resid_ridge": 2.274712180221343,
+      "resid_rf": -7.347999999999999
+    },
+    {
+      "surah_id": 31,
+      "mushaf_pos": 31,
+      "pred_ridge": 42.368113340173224,
+      "pred_rf": 44.434,
+      "resid_ridge": -11.368113340173224,
+      "resid_rf": -13.433999999999997
+    },
+    {
+      "surah_id": 32,
+      "mushaf_pos": 32,
+      "pred_ridge": 56.0627254221758,
+      "pred_rf": 48.25,
+      "resid_ridge": -24.062725422175802,
+      "resid_rf": -16.25
+    },
+    {
+      "surah_id": 33,
+      "mushaf_pos": 33,
+      "pred_ridge": 36.15123975670913,
+      "pred_rf": 19.612,
+      "resid_ridge": -3.1512397567091313,
+      "resid_rf": 13.388000000000002
+    },
+    {
+      "surah_id": 34,
+      "mushaf_pos": 34,
+      "pred_ridge": 38.52946050329024,
+      "pred_rf": 26.836,
+      "resid_ridge": -4.529460503290238,
+      "resid_rf": 7.1640000000000015
+    },
+    {
+      "surah_id": 35,
+      "mushaf_pos": 35,
+      "pred_ridge": 41.854460753675596,
+      "pred_rf": 35.756,
+      "resid_ridge": -6.854460753675596,
+      "resid_rf": -0.7560000000000002
+    },
+    {
+      "surah_id": 36,
+      "mushaf_pos": 36,
+      "pred_ridge": 34.80520004669363,
+      "pred_rf": 36.236,
+      "resid_ridge": 1.1947999533063722,
+      "resid_rf": -0.2359999999999971
+    },
+    {
+      "surah_id": 37,
+      "mushaf_pos": 37,
+      "pred_ridge": 38.06784021844107,
+      "pred_rf": 26.536,
+      "resid_ridge": -1.06784021844107,
+      "resid_rf": 10.463999999999999
+    },
+    {
+      "surah_id": 38,
+      "mushaf_pos": 38,
+      "pred_ridge": 35.772328115510476,
+      "pred_rf": 27.896,
+      "resid_ridge": 2.2276718844895242,
+      "resid_rf": 10.104
+    },
+    {
+      "surah_id": 39,
+      "mushaf_pos": 39,
+      "pred_ridge": 24.045641424605748,
+      "pred_rf": 27.332,
+      "resid_ridge": 14.954358575394252,
+      "resid_rf": 11.668
+    },
+    {
+      "surah_id": 40,
+      "mushaf_pos": 40,
+      "pred_ridge": 19.53028671287006,
+      "pred_rf": 22.118,
+      "resid_ridge": 20.46971328712994,
+      "resid_rf": 17.882
+    },
+    {
+      "surah_id": 41,
+      "mushaf_pos": 41,
+      "pred_ridge": 37.13447894010669,
+      "pred_rf": 34.228,
+      "resid_ridge": 3.865521059893311,
+      "resid_rf": 6.7719999999999985
+    },
+    {
+      "surah_id": 42,
+      "mushaf_pos": 42,
+      "pred_ridge": 17.289407721641027,
+      "pred_rf": 28.786,
+      "resid_ridge": 24.710592278358973,
+      "resid_rf": 13.213999999999999
+    },
+    {
+      "surah_id": 43,
+      "mushaf_pos": 43,
+      "pred_ridge": 31.191536457333918,
+      "pred_rf": 29.374,
+      "resid_ridge": 11.808463542666082,
+      "resid_rf": 13.626000000000001
+    },
+    {
+      "surah_id": 44,
+      "mushaf_pos": 44,
+      "pred_ridge": 52.545287287557194,
+      "pred_rf": 52.588,
+      "resid_ridge": -8.545287287557194,
+      "resid_rf": -8.588000000000001
+    },
+    {
+      "surah_id": 45,
+      "mushaf_pos": 45,
+      "pred_ridge": 43.60338406170569,
+      "pred_rf": 42.49,
+      "resid_ridge": 1.3966159382943104,
+      "resid_rf": 2.509999999999998
+    },
+    {
+      "surah_id": 46,
+      "mushaf_pos": 46,
+      "pred_ridge": 35.17939959198573,
+      "pred_rf": 33.794,
+      "resid_ridge": 10.820600408014272,
+      "resid_rf": 12.206000000000003
+    },
+    {
+      "surah_id": 47,
+      "mushaf_pos": 47,
+      "pred_ridge": 48.73111227961058,
+      "pred_rf": 49.092,
+      "resid_ridge": -1.7311122796105778,
+      "resid_rf": -2.0919999999999987
+    },
+    {
+      "surah_id": 48,
+      "mushaf_pos": 48,
+      "pred_ridge": 46.54805753556876,
+      "pred_rf": 43.73,
+      "resid_ridge": 1.4519424644312409,
+      "resid_rf": 4.270000000000003
+    },
+    {
+      "surah_id": 49,
+      "mushaf_pos": 49,
+      "pred_ridge": 54.42802792447845,
+      "pred_rf": 53.794,
+      "resid_ridge": -5.4280279244784495,
+      "resid_rf": -4.793999999999997
+    },
+    {
+      "surah_id": 50,
+      "mushaf_pos": 50,
+      "pred_ridge": 51.19574956563102,
+      "pred_rf": 49.61,
+      "resid_ridge": -1.1957495656310186,
+      "resid_rf": 0.39000000000000057
+    },
+    {
+      "surah_id": 51,
+      "mushaf_pos": 51,
+      "pred_ridge": 55.95453500614555,
+      "pred_rf": 51.046,
+      "resid_ridge": -4.954535006145548,
+      "resid_rf": -0.045999999999999375
+    },
+    {
+      "surah_id": 52,
+      "mushaf_pos": 52,
+      "pred_ridge": 59.93399492425987,
+      "pred_rf": 66.88,
+      "resid_ridge": -7.933994924259871,
+      "resid_rf": -14.879999999999995
+    },
+    {
+      "surah_id": 53,
+      "mushaf_pos": 53,
+      "pred_ridge": 59.03863952255867,
+      "pred_rf": 52.734,
+      "resid_ridge": -6.038639522558668,
+      "resid_rf": 0.26599999999999824
+    },
+    {
+      "surah_id": 54,
+      "mushaf_pos": 54,
+      "pred_ridge": 52.70979980488731,
+      "pred_rf": 56.91,
+      "resid_ridge": 1.2902001951126891,
+      "resid_rf": -2.9099999999999966
+    },
+    {
+      "surah_id": 55,
+      "mushaf_pos": 55,
+      "pred_ridge": 98.07345357370104,
+      "pred_rf": 55.86,
+      "resid_ridge": -43.073453573701045,
+      "resid_rf": -0.8599999999999994
+    },
+    {
+      "surah_id": 56,
+      "mushaf_pos": 56,
+      "pred_ridge": 57.296486690176444,
+      "pred_rf": 40.428,
+      "resid_ridge": -1.2964866901764438,
+      "resid_rf": 15.572000000000003
+    },
+    {
+      "surah_id": 57,
+      "mushaf_pos": 57,
+      "pred_ridge": 49.03802363432511,
+      "pred_rf": 40.776,
+      "resid_ridge": 7.961976365674893,
+      "resid_rf": 16.223999999999997
+    },
+    {
+      "surah_id": 58,
+      "mushaf_pos": 58,
+      "pred_ridge": 48.990114209776706,
+      "pred_rf": 52.39,
+      "resid_ridge": 9.009885790223294,
+      "resid_rf": 5.609999999999999
+    },
+    {
+      "surah_id": 59,
+      "mushaf_pos": 59,
+      "pred_ridge": 56.24364360369073,
+      "pred_rf": 52.608,
+      "resid_ridge": 2.756356396309272,
+      "resid_rf": 6.392000000000003
+    },
+    {
+      "surah_id": 60,
+      "mushaf_pos": 60,
+      "pred_ridge": 55.68192908097442,
+      "pred_rf": 53.972,
+      "resid_ridge": 4.31807091902558,
+      "resid_rf": 6.027999999999999
+    },
+    {
+      "surah_id": 61,
+      "mushaf_pos": 61,
+      "pred_ridge": 57.88634006554251,
+      "pred_rf": 64.838,
+      "resid_ridge": 3.1136599344574876,
+      "resid_rf": -3.837999999999994
+    },
+    {
+      "surah_id": 62,
+      "mushaf_pos": 62,
+      "pred_ridge": 67.42786302602657,
+      "pred_rf": 70.778,
+      "resid_ridge": -5.4278630260265714,
+      "resid_rf": -8.778000000000006
+    },
+    {
+      "surah_id": 63,
+      "mushaf_pos": 63,
+      "pred_ridge": 63.97179781116284,
+      "pred_rf": 70.554,
+      "resid_ridge": -0.9717978111628369,
+      "resid_rf": -7.554000000000002
+    },
+    {
+      "surah_id": 64,
+      "mushaf_pos": 64,
+      "pred_ridge": 56.87629186813202,
+      "pred_rf": 65.202,
+      "resid_ridge": 7.1237081318679785,
+      "resid_rf": -1.2019999999999982
+    },
+    {
+      "surah_id": 65,
+      "mushaf_pos": 65,
+      "pred_ridge": 56.39925475741835,
+      "pred_rf": 63.188,
+      "resid_ridge": 8.600745242581652,
+      "resid_rf": 1.8119999999999976
+    },
+    {
+      "surah_id": 66,
+      "mushaf_pos": 66,
+      "pred_ridge": 60.76328604784912,
+      "pred_rf": 65.726,
+      "resid_ridge": 5.236713952150879,
+      "resid_rf": 0.2740000000000009
+    },
+    {
+      "surah_id": 67,
+      "mushaf_pos": 67,
+      "pred_ridge": 54.652352752721285,
+      "pred_rf": 53.146,
+      "resid_ridge": 12.347647247278715,
+      "resid_rf": 13.854
+    },
+    {
+      "surah_id": 68,
+      "mushaf_pos": 68,
+      "pred_ridge": 52.11912866991132,
+      "pred_rf": 57.514,
+      "resid_ridge": 15.88087133008868,
+      "resid_rf": 10.485999999999997
+    },
+    {
+      "surah_id": 69,
+      "mushaf_pos": 69,
+      "pred_ridge": 61.4191793231298,
+      "pred_rf": 75.36,
+      "resid_ridge": 7.5808206768701965,
+      "resid_rf": -6.359999999999999
+    },
+    {
+      "surah_id": 70,
+      "mushaf_pos": 70,
+      "pred_ridge": 60.47060263278669,
+      "pred_rf": 73.372,
+      "resid_ridge": 9.529397367213313,
+      "resid_rf": -3.372
+    },
+    {
+      "surah_id": 71,
+      "mushaf_pos": 71,
+      "pred_ridge": 63.48253666195308,
+      "pred_rf": 71.258,
+      "resid_ridge": 7.517463338046923,
+      "resid_rf": -0.25799999999999557
+    },
+    {
+      "surah_id": 72,
+      "mushaf_pos": 72,
+      "pred_ridge": 50.962030522889734,
+      "pred_rf": 66.634,
+      "resid_ridge": 21.037969477110266,
+      "resid_rf": 5.366
+    },
+    {
+      "surah_id": 73,
+      "mushaf_pos": 73,
+      "pred_ridge": 63.17740740543414,
+      "pred_rf": 70.952,
+      "resid_ridge": 9.822592594565862,
+      "resid_rf": 2.048000000000002
+    },
+    {
+      "surah_id": 74,
+      "mushaf_pos": 74,
+      "pred_ridge": 66.91278527796797,
+      "pred_rf": 71.664,
+      "resid_ridge": 7.08721472203203,
+      "resid_rf": 2.3359999999999985
+    },
+    {
+      "surah_id": 75,
+      "mushaf_pos": 75,
+      "pred_ridge": 77.50394374613111,
+      "pred_rf": 80.142,
+      "resid_ridge": -2.503943746131114,
+      "resid_rf": -5.141999999999996
+    },
+    {
+      "surah_id": 76,
+      "mushaf_pos": 76,
+      "pred_ridge": 71.81763821314615,
+      "pred_rf": 71.54,
+      "resid_ridge": 4.182361786853846,
+      "resid_rf": 4.459999999999994
+    },
+    {
+      "surah_id": 77,
+      "mushaf_pos": 77,
+      "pred_ridge": 71.8932665470808,
+      "pred_rf": 77.45,
+      "resid_ridge": 5.106733452919201,
+      "resid_rf": -0.45000000000000284
+    },
+    {
+      "surah_id": 78,
+      "mushaf_pos": 78,
+      "pred_ridge": 78.59403836874782,
+      "pred_rf": 75.73,
+      "resid_ridge": -0.5940383687478175,
+      "resid_rf": 2.269999999999996
+    },
+    {
+      "surah_id": 79,
+      "mushaf_pos": 79,
+      "pred_ridge": 70.58622831971681,
+      "pred_rf": 76.598,
+      "resid_ridge": 8.41377168028319,
+      "resid_rf": 2.402000000000001
+    },
+    {
+      "surah_id": 80,
+      "mushaf_pos": 80,
+      "pred_ridge": 78.47145675803965,
+      "pred_rf": 86.64,
+      "resid_ridge": 1.5285432419603495,
+      "resid_rf": -6.640000000000001
+    },
+    {
+      "surah_id": 81,
+      "mushaf_pos": 81,
+      "pred_ridge": 85.99454214897312,
+      "pred_rf": 87.192,
+      "resid_ridge": -4.9945421489731245,
+      "resid_rf": -6.191999999999993
+    },
+    {
+      "surah_id": 82,
+      "mushaf_pos": 82,
+      "pred_ridge": 88.95088936223172,
+      "pred_rf": 86.474,
+      "resid_ridge": -6.95088936223172,
+      "resid_rf": -4.474000000000004
+    },
+    {
+      "surah_id": 83,
+      "mushaf_pos": 83,
+      "pred_ridge": 73.65671221360182,
+      "pred_rf": 74.44,
+      "resid_ridge": 9.343287786398179,
+      "resid_rf": 8.560000000000002
+    },
+    {
+      "surah_id": 84,
+      "mushaf_pos": 84,
+      "pred_ridge": 84.44711113542988,
+      "pred_rf": 85.878,
+      "resid_ridge": -0.44711113542987846,
+      "resid_rf": -1.8780000000000001
+    },
+    {
+      "surah_id": 85,
+      "mushaf_pos": 85,
+      "pred_ridge": 75.97223957476464,
+      "pred_rf": 77.448,
+      "resid_ridge": 9.027760425235357,
+      "resid_rf": 7.552000000000007
+    },
+    {
+      "surah_id": 86,
+      "mushaf_pos": 86,
+      "pred_ridge": 84.3548297703686,
+      "pred_rf": 91.918,
+      "resid_ridge": 1.645170229631404,
+      "resid_rf": -5.918000000000006
+    },
+    {
+      "surah_id": 87,
+      "mushaf_pos": 87,
+      "pred_ridge": 84.04549056328517,
+      "pred_rf": 90.022,
+      "resid_ridge": 2.9545094367148295,
+      "resid_rf": -3.0220000000000056
+    },
+    {
+      "surah_id": 88,
+      "mushaf_pos": 88,
+      "pred_ridge": 73.69484105997358,
+      "pred_rf": 89.59,
+      "resid_ridge": 14.305158940026416,
+      "resid_rf": -1.5900000000000034
+    },
+    {
+      "surah_id": 89,
+      "mushaf_pos": 89,
+      "pred_ridge": 80.46994390773888,
+      "pred_rf": 80.902,
+      "resid_ridge": 8.53005609226112,
+      "resid_rf": 8.097999999999999
+    },
+    {
+      "surah_id": 90,
+      "mushaf_pos": 90,
+      "pred_ridge": 85.40215820742654,
+      "pred_rf": 85.84,
+      "resid_ridge": 4.597841792573462,
+      "resid_rf": 4.159999999999997
+    },
+    {
+      "surah_id": 91,
+      "mushaf_pos": 91,
+      "pred_ridge": 102.01149871995732,
+      "pred_rf": 94.742,
+      "resid_ridge": -11.011498719957316,
+      "resid_rf": -3.7420000000000044
+    },
+    {
+      "surah_id": 92,
+      "mushaf_pos": 92,
+      "pred_ridge": 85.37893657507237,
+      "pred_rf": 86.522,
+      "resid_ridge": 6.621063424927627,
+      "resid_rf": 5.477999999999994
+    },
+    {
+      "surah_id": 93,
+      "mushaf_pos": 93,
+      "pred_ridge": 100.8838231810041,
+      "pred_rf": 94.984,
+      "resid_ridge": -7.883823181004104,
+      "resid_rf": -1.9839999999999947
+    },
+    {
+      "surah_id": 94,
+      "mushaf_pos": 94,
+      "pred_ridge": 66.32107601551323,
+      "pred_rf": 90.038,
+      "resid_ridge": 27.678923984486772,
+      "resid_rf": 3.9620000000000033
+    },
+    {
+      "surah_id": 95,
+      "mushaf_pos": 95,
+      "pred_ridge": 92.58952891664865,
+      "pred_rf": 88.724,
+      "resid_ridge": 2.4104710833513536,
+      "resid_rf": 6.275999999999996
+    },
+    {
+      "surah_id": 96,
+      "mushaf_pos": 96,
+      "pred_ridge": 78.98457289678925,
+      "pred_rf": 88.832,
+      "resid_ridge": 17.015427103210754,
+      "resid_rf": 7.168000000000006
+    },
+    {
+      "surah_id": 97,
+      "mushaf_pos": 97,
+      "pred_ridge": 114.73561249621321,
+      "pred_rf": 102.64,
+      "resid_ridge": -17.735612496213207,
+      "resid_rf": -5.640000000000001
+    },
+    {
+      "surah_id": 98,
+      "mushaf_pos": 98,
+      "pred_ridge": 70.43574586187202,
+      "pred_rf": 77.298,
+      "resid_ridge": 27.56425413812798,
+      "resid_rf": 20.701999999999998
+    },
+    {
+      "surah_id": 99,
+      "mushaf_pos": 99,
+      "pred_ridge": 97.06940201531935,
+      "pred_rf": 98.274,
+      "resid_ridge": 1.9305979846806451,
+      "resid_rf": 0.7259999999999991
+    },
+    {
+      "surah_id": 100,
+      "mushaf_pos": 100,
+      "pred_ridge": 90.14065405973312,
+      "pred_rf": 94.534,
+      "resid_ridge": 9.859345940266877,
+      "resid_rf": 5.465999999999994
+    },
+    {
+      "surah_id": 101,
+      "mushaf_pos": 101,
+      "pred_ridge": 112.86513002240784,
+      "pred_rf": 89.004,
+      "resid_ridge": -11.86513002240784,
+      "resid_rf": 11.995999999999995
+    },
+    {
+      "surah_id": 102,
+      "mushaf_pos": 102,
+      "pred_ridge": 99.71419385654781,
+      "pred_rf": 105.964,
+      "resid_ridge": 2.2858061434521915,
+      "resid_rf": -3.9639999999999986
+    },
+    {
+      "surah_id": 103,
+      "mushaf_pos": 103,
+      "pred_ridge": 71.34428305720974,
+      "pred_rf": 107.02,
+      "resid_ridge": 31.655716942790264,
+      "resid_rf": -4.019999999999996
+    },
+    {
+      "surah_id": 104,
+      "mushaf_pos": 104,
+      "pred_ridge": 88.10410419534466,
+      "pred_rf": 97.426,
+      "resid_ridge": 15.89589580465534,
+      "resid_rf": 6.573999999999998
+    },
+    {
+      "surah_id": 105,
+      "mushaf_pos": 105,
+      "pred_ridge": 102.5961398384015,
+      "pred_rf": 105.184,
+      "resid_ridge": 2.4038601615985016,
+      "resid_rf": -0.1839999999999975
+    },
+    {
+      "surah_id": 106,
+      "mushaf_pos": 106,
+      "pred_ridge": 128.817681733688,
+      "pred_rf": 108.47,
+      "resid_ridge": -22.817681733688005,
+      "resid_rf": -2.469999999999999
+    },
+    {
+      "surah_id": 107,
+      "mushaf_pos": 107,
+      "pred_ridge": 98.0187126274369,
+      "pred_rf": 102.144,
+      "resid_ridge": 8.981287372563102,
+      "resid_rf": 4.8559999999999945
+    },
+    {
+      "surah_id": 108,
+      "mushaf_pos": 108,
+      "pred_ridge": 143.04984825005178,
+      "pred_rf": 105.252,
+      "resid_ridge": -35.04984825005178,
+      "resid_rf": 2.7480000000000047
+    },
+    {
+      "surah_id": 109,
+      "mushaf_pos": 109,
+      "pred_ridge": 60.4333109926219,
+      "pred_rf": 65.994,
+      "resid_ridge": 48.5666890073781,
+      "resid_rf": 43.006
+    },
+    {
+      "surah_id": 110,
+      "mushaf_pos": 110,
+      "pred_ridge": 121.69986727073322,
+      "pred_rf": 108.506,
+      "resid_ridge": -11.699867270733222,
+      "resid_rf": 1.4939999999999998
+    },
+    {
+      "surah_id": 111,
+      "mushaf_pos": 111,
+      "pred_ridge": 124.85516888084939,
+      "pred_rf": 105.188,
+      "resid_ridge": -13.85516888084939,
+      "resid_rf": 5.811999999999998
+    },
+    {
+      "surah_id": 112,
+      "mushaf_pos": 112,
+      "pred_ridge": 100.45046520514667,
+      "pred_rf": 107.324,
+      "resid_ridge": 11.54953479485333,
+      "resid_rf": 4.676000000000002
+    },
+    {
+      "surah_id": 113,
+      "mushaf_pos": 113,
+      "pred_ridge": 108.99873996212506,
+      "pred_rf": 106.784,
+      "resid_ridge": 4.0012600378749426,
+      "resid_rf": 6.215999999999994
+    },
+    {
+      "surah_id": 114,
+      "mushaf_pos": 114,
+      "pred_ridge": 97.84507795349495,
+      "pred_rf": 103.59,
+      "resid_ridge": 16.15492204650505,
+      "resid_rf": 10.409999999999997
+    }
+  ]
+}

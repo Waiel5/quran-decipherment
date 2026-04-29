@@ -1,0 +1,3251 @@
+{
+  "id": "H-NEW-125",
+  "title": "Comprehensive chronology-content map (15 axes)",
+  "bonferroni_family": "h-new-125-chronology-content",
+  "bonferroni_k": 15,
+  "alpha_bon": 0.0033333333333333335,
+  "direction": "2-sided",
+  "n_perm": 10000,
+  "seed": 20260417,
+  "axes_tested": [
+    "surah_length",
+    "mean_verse_length",
+    "muq_cardinality",
+    "allah_density",
+    "qul_density",
+    "prophet_narrative_density",
+    "legal_term_density",
+    "eschatological_density",
+    "book_reference_density",
+    "oath_density",
+    "divine_name_density",
+    "personal_pronoun_density",
+    "rhyme_letter_diversity",
+    "refrain_density",
+    "loanword_density"
+  ],
+  "n_axes_passing_bonferroni": 11,
+  "axes_passing": [
+    "surah_length",
+    "mean_verse_length",
+    "allah_density",
+    "qul_density",
+    "prophet_narrative_density",
+    "legal_term_density",
+    "eschatological_density",
+    "book_reference_density",
+    "divine_name_density",
+    "personal_pronoun_density",
+    "loanword_density"
+  ],
+  "strongest_3": [
+    {
+      "axis": "mean_verse_length",
+      "rho": 0.9037707575769782,
+      "p": 9.999000099990002e-05,
+      "trajectory": "MONOTONE_UP"
+    },
+    {
+      "axis": "divine_name_density",
+      "rho": 0.8972828034130429,
+      "p": 9.999000099990002e-05,
+      "trajectory": "MONOTONE_UP"
+    },
+    {
+      "axis": "allah_density",
+      "rho": 0.8519519993682146,
+      "p": 9.999000099990002e-05,
+      "trajectory": "MONOTONE_UP"
+    }
+  ],
+  "positive_control_axis_1_surah_length": {
+    "rho": 0.3903030902353864,
+    "p": 9.999000099990002e-05,
+    "mw5_pass": false
+  },
+  "totals": {
+    "allah_tokens": 2704,
+    "qul_tokens": 332,
+    "prophet_tokens": 528,
+    "legal_tokens": 851,
+    "eschat_tokens": 1394,
+    "book_tokens": 1082,
+    "oath_verse_starts": 206,
+    "divine_name_tokens": 4539,
+    "pronoun_tokens": 646,
+    "loanword_tokens": 6156,
+    "refrain_verse_repeats": 94
+  },
+  "per_axis_results": {
+    "surah_length": {
+      "axis_name": "surah_length",
+      "rho_spearman": 0.3903030902353864,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 25.395833333333332,
+          "sd": 22.086618248925273,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 60.958333333333336,
+          "sd": 72.70158132761784,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 78.85714285714286,
+          "sd": 46.69720089500624,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 90.38095238095238,
+          "sd": 50.359186044331764,
+          "n": 21
+        }
+      },
+      "trajectory": "INVERTED_U_peak_Middle Meccan + JUMP_between_Early Meccan_and_Middle Meccan",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        25.395833333333332,
+        90.38095238095238,
+        78.85714285714286,
+        60.958333333333336
+      ]
+    },
+    "mean_verse_length": {
+      "axis_name": "mean_verse_length",
+      "rho_spearman": 0.9037707575769782,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 4.419090626218936,
+          "sd": 1.2392110134516967,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 19.62757937281564,
+          "sd": 4.750187265737679,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 16.9016458258324,
+          "sd": 2.051234752421152,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 9.560712956065244,
+          "sd": 2.7923702544889766,
+          "n": 21
+        }
+      },
+      "trajectory": "MONOTONE_UP",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        4.419090626218936,
+        9.560712956065244,
+        16.9016458258324,
+        19.62757937281564
+      ]
+    },
+    "muq_cardinality": {
+      "axis_name": "muq_cardinality",
+      "rho_spearman": 0.25471398027760517,
+      "p_two_sided_perm": 0.006299370062993701,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": false,
+      "n_ge_perm": 62,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 0.020833333333333332,
+          "sd": 0.14433756729740643,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 0.25,
+          "sd": 0.8469895538599198,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 2.2857142857142856,
+          "sd": 1.4880476182856899,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 1.0952380952380953,
+          "sd": 1.4108423691100969,
+          "n": 21
+        }
+      },
+      "trajectory": "INVERTED_U_peak_Late Meccan",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        0.020833333333333332,
+        1.0952380952380953,
+        2.2857142857142856,
+        0.25
+      ]
+    },
+    "allah_density": {
+      "axis_name": "allah_density",
+      "rho_spearman": 0.8519519993682146,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 4.6617264265734555,
+          "sd": 9.747723631569128,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 119.62379795842564,
+          "sd": 35.20701333378498,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 50.80395249250581,
+          "sd": 23.851426033338655,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 10.118647023431093,
+          "sd": 9.386658977028052,
+          "n": 21
+        }
+      },
+      "trajectory": "MONOTONE_UP",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        4.6617264265734555,
+        10.118647023431093,
+        50.80395249250581,
+        119.62379795842564
+      ]
+    },
+    "qul_density": {
+      "axis_name": "qul_density",
+      "rho_spearman": 0.5420880560578859,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 1.7414526952085183,
+          "sd": 5.544719348452924,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 4.925924456742255,
+          "sd": 6.64827144849827,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 8.948015313920612,
+          "sd": 9.093663794808323,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 4.888600350164323,
+          "sd": 6.495837763563281,
+          "n": 21
+        }
+      },
+      "trajectory": "INVERTED_U_peak_Late Meccan",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        1.7414526952085183,
+        4.888600350164323,
+        8.948015313920612,
+        4.925924456742255
+      ]
+    },
+    "prophet_narrative_density": {
+      "axis_name": "prophet_narrative_density",
+      "rho_spearman": 0.5303986497600898,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 1.4358063161144645,
+          "sd": 2.966335937265678,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 13.631202848532316,
+          "sd": 16.814698841554574,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 9.303372769768288,
+          "sd": 9.831989194095376,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 6.473167828355459,
+          "sd": 4.633736258668935,
+          "n": 21
+        }
+      },
+      "trajectory": "MONOTONE_UP",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        1.4358063161144645,
+        6.473167828355459,
+        9.303372769768288,
+        13.631202848532316
+      ]
+    },
+    "legal_term_density": {
+      "axis_name": "legal_term_density",
+      "rho_spearman": 0.7038805861409199,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 2.919571904160529,
+          "sd": 5.621736920477657,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 26.31832906283378,
+          "sd": 18.500026512562798,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 17.218883532831732,
+          "sd": 7.0890259765867,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 6.585195450513836,
+          "sd": 4.733842270742773,
+          "n": 21
+        }
+      },
+      "trajectory": "MONOTONE_UP",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        2.919571904160529,
+        6.585195450513836,
+        17.218883532831732,
+        26.31832906283378
+      ]
+    },
+    "eschatological_density": {
+      "axis_name": "eschatological_density",
+      "rho_spearman": 0.7095959400098946,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 6.848186942462754,
+          "sd": 8.671416822623714,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 28.536697222155023,
+          "sd": 14.493650965091382,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 31.24484464037351,
+          "sd": 11.59577935155237,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 17.927583055728206,
+          "sd": 6.862163480364415,
+          "n": 21
+        }
+      },
+      "trajectory": "INVERTED_U_peak_Late Meccan",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        6.848186942462754,
+        17.927583055728206,
+        31.24484464037351,
+        28.536697222155023
+      ]
+    },
+    "book_reference_density": {
+      "axis_name": "book_reference_density",
+      "rho_spearman": 0.5743518951320435,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 3.774023267377835,
+          "sd": 7.139092709419773,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 18.91835728637977,
+          "sd": 15.449758629644759,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 26.36327281166481,
+          "sd": 11.549455428113202,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 11.851563617599162,
+          "sd": 7.9484630161184855,
+          "n": 21
+        }
+      },
+      "trajectory": "INVERTED_U_peak_Late Meccan",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        3.774023267377835,
+        11.851563617599162,
+        26.36327281166481,
+        18.91835728637977
+      ]
+    },
+    "oath_density": {
+      "axis_name": "oath_density",
+      "rho_spearman": -0.004068649303030121,
+      "p_two_sided_perm": 0.9667033296670333,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": false,
+      "n_ge_perm": 9667,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 5.723131973673591,
+          "sd": 8.633365592117165,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 2.9797998188525097,
+          "sd": 3.3120685146241233,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 3.0926305179449067,
+          "sd": 3.5734819222122547,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 2.264984947257928,
+          "sd": 2.621955278937616,
+          "n": 21
+        }
+      },
+      "trajectory": "U_SHAPED_trough_Middle Meccan + JUMP_between_Early Meccan_and_Middle Meccan",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        5.723131973673591,
+        2.264984947257928,
+        3.0926305179449067,
+        2.9797998188525097
+      ]
+    },
+    "divine_name_density": {
+      "axis_name": "divine_name_density",
+      "rho_spearman": 0.8972828034130429,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 12.70573114620943,
+          "sd": 20.574987766146656,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 172.4786646247339,
+          "sd": 59.789098544906516,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 94.13169843692823,
+          "sd": 35.33092095635245,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 30.94782877525046,
+          "sd": 11.806898989579711,
+          "n": 21
+        }
+      },
+      "trajectory": "MONOTONE_UP",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        12.70573114620943,
+        30.94782877525046,
+        94.13169843692823,
+        172.4786646247339
+      ]
+    },
+    "personal_pronoun_density": {
+      "axis_name": "personal_pronoun_density",
+      "rho_spearman": 0.49560964731616586,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 5.373148647400208,
+          "sd": 8.391315406113637,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 15.691850345877695,
+          "sd": 11.889247172062095,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 13.561166883751138,
+          "sd": 4.114892457382785,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 8.2081899066979,
+          "sd": 6.2630822148041485,
+          "n": 21
+        }
+      },
+      "trajectory": "MONOTONE_UP",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        5.373148647400208,
+        8.2081899066979,
+        13.561166883751138,
+        15.691850345877695
+      ]
+    },
+    "rhyme_letter_diversity": {
+      "axis_name": "rhyme_letter_diversity",
+      "rho_spearman": 0.17886713944945842,
+      "p_two_sided_perm": 0.05909409059094091,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": false,
+      "n_ge_perm": 590,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 3.7708333333333335,
+          "sd": 2.2807201488045656,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 4.208333333333333,
+          "sd": 2.413353551040303,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 5.666666666666667,
+          "sd": 2.8867513459481287,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 3.1904761904761907,
+          "sd": 2.204972734957229,
+          "n": 21
+        }
+      },
+      "trajectory": "INVERTED_U_peak_Late Meccan",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        3.7708333333333335,
+        3.1904761904761907,
+        5.666666666666667,
+        4.208333333333333
+      ]
+    },
+    "refrain_density": {
+      "axis_name": "refrain_density",
+      "rho_spearman": 0.0022820781405036962,
+      "p_two_sided_perm": 0.9794020597940206,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": false,
+      "n_ge_perm": 9794,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 1.7659811253561253,
+          "sd": 6.494801695217403,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 0.06385975135975136,
+          "sd": 0.2172548377644567,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 0.07722859664607237,
+          "sd": 0.26473778653553304,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 1.339395920680387,
+          "sd": 3.3400340690714714,
+          "n": 21
+        }
+      },
+      "trajectory": "MONOTONE_DOWN + JUMP_between_Middle Meccan_and_Late Meccan",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        1.7659811253561253,
+        1.339395920680387,
+        0.07722859664607237,
+        0.06385975135975136
+      ]
+    },
+    "loanword_density": {
+      "axis_name": "loanword_density",
+      "rho_spearman": 0.8328675472230577,
+      "p_two_sided_perm": 9.999000099990002e-05,
+      "alpha_bon": 0.0033333333333333335,
+      "bonferroni_survives": true,
+      "n_ge_perm": 0,
+      "n_perm": 10000,
+      "phase_means": {
+        "Early Meccan": {
+          "mean": 33.3398054774243,
+          "sd": 21.29110346729929,
+          "n": 48
+        },
+        "Medinan": {
+          "mean": 130.32329588469645,
+          "sd": 43.34501552964877,
+          "n": 24
+        },
+        "Late Meccan": {
+          "mean": 135.47073976654553,
+          "sd": 23.507657087542118,
+          "n": 21
+        },
+        "Middle Meccan": {
+          "mean": 75.07446940220859,
+          "sd": 21.39732147261906,
+          "n": 21
+        }
+      },
+      "trajectory": "INVERTED_U_peak_Late Meccan",
+      "phase_order": [
+        "Early Meccan",
+        "Middle Meccan",
+        "Late Meccan",
+        "Medinan"
+      ],
+      "phase_mu_sequence": [
+        33.3398054774243,
+        75.07446940220859,
+        135.47073976654553,
+        130.32329588469645
+      ]
+    }
+  },
+  "per_surah_axis_values": {
+    "1": {
+      "name": "Al-Fatihah",
+      "noldeke_rank": 48,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 7,
+        "mean_verse_length": 4.142857142857143,
+        "muq_cardinality": 0,
+        "allah_density": 28.571428571428573,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 28.571428571428573,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 85.71428571428571,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 71.42857142857143
+      }
+    },
+    "2": {
+      "name": "Al-Baqarah",
+      "noldeke_rank": 91,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 286,
+        "mean_verse_length": 23.181818181818183,
+        "muq_cardinality": 3,
+        "allah_density": 98.6013986013986,
+        "qul_density": 6.293706293706293,
+        "prophet_narrative_density": 10.839160839160838,
+        "legal_term_density": 30.41958041958042,
+        "eschatological_density": 27.972027972027973,
+        "book_reference_density": 34.61538461538461,
+        "oath_density": 2.097902097902098,
+        "divine_name_density": 159.0909090909091,
+        "personal_pronoun_density": 18.181818181818183,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.6993006993006993,
+        "loanword_density": 169.58041958041957
+      }
+    },
+    "3": {
+      "name": "Ali 'Imran",
+      "noldeke_rank": 97,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 200,
+        "mean_verse_length": 18.585,
+        "muq_cardinality": 3,
+        "allah_density": 105.0,
+        "qul_density": 11.5,
+        "prophet_narrative_density": 13.0,
+        "legal_term_density": 33.5,
+        "eschatological_density": 26.5,
+        "book_reference_density": 38.0,
+        "oath_density": 0.5,
+        "divine_name_density": 142.0,
+        "personal_pronoun_density": 13.0,
+        "rhyme_letter_diversity": 9,
+        "refrain_density": 0.0,
+        "loanword_density": 141.5
+      }
+    },
+    "4": {
+      "name": "An-Nisa",
+      "noldeke_rank": 100,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 176,
+        "mean_verse_length": 22.892045454545453,
+        "muq_cardinality": 0,
+        "allah_density": 130.11363636363637,
+        "qul_density": 2.840909090909091,
+        "prophet_narrative_density": 8.522727272727273,
+        "legal_term_density": 36.36363636363637,
+        "eschatological_density": 30.681818181818183,
+        "book_reference_density": 24.431818181818183,
+        "oath_density": 4.545454545454546,
+        "divine_name_density": 155.11363636363637,
+        "personal_pronoun_density": 1.1363636363636365,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 163.63636363636363
+      }
+    },
+    "5": {
+      "name": "Al-Ma'idah",
+      "noldeke_rank": 114,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 120,
+        "mean_verse_length": 25.391666666666666,
+        "muq_cardinality": 0,
+        "allah_density": 123.33333333333333,
+        "qul_density": 7.5,
+        "prophet_narrative_density": 10.833333333333334,
+        "legal_term_density": 37.5,
+        "eschatological_density": 44.166666666666664,
+        "book_reference_density": 40.833333333333336,
+        "oath_density": 2.5,
+        "divine_name_density": 172.5,
+        "personal_pronoun_density": 10.833333333333334,
+        "rhyme_letter_diversity": 6,
+        "refrain_density": 0.8333333333333334,
+        "loanword_density": 183.33333333333334
+      }
+    },
+    "6": {
+      "name": "Al-An'am",
+      "noldeke_rank": 89,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 165,
+        "mean_verse_length": 20.024242424242424,
+        "muq_cardinality": 0,
+        "allah_density": 52.72727272727273,
+        "qul_density": 26.666666666666668,
+        "prophet_narrative_density": 8.484848484848484,
+        "legal_term_density": 20.606060606060606,
+        "eschatological_density": 27.272727272727273,
+        "book_reference_density": 40.0,
+        "oath_density": 1.8181818181818181,
+        "divine_name_density": 104.24242424242425,
+        "personal_pronoun_density": 12.121212121212121,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 144.84848484848484
+      }
+    },
+    "7": {
+      "name": "Al-A'raf",
+      "noldeke_rank": 87,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 206,
+        "mean_verse_length": 17.237864077669904,
+        "muq_cardinality": 4,
+        "allah_density": 29.611650485436893,
+        "qul_density": 5.339805825242719,
+        "prophet_narrative_density": 19.902912621359224,
+        "legal_term_density": 14.563106796116505,
+        "eschatological_density": 36.89320388349515,
+        "book_reference_density": 24.75728155339806,
+        "oath_density": 4.368932038834951,
+        "divine_name_density": 48.05825242718446,
+        "personal_pronoun_density": 14.077669902912621,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.4854368932038835,
+        "loanword_density": 133.49514563106797
+      }
+    },
+    "8": {
+      "name": "Al-Anfal",
+      "noldeke_rank": 95,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 75,
+        "mean_verse_length": 17.6,
+        "muq_cardinality": 0,
+        "allah_density": 118.66666666666667,
+        "qul_density": 4.0,
+        "prophet_narrative_density": 14.666666666666666,
+        "legal_term_density": 18.666666666666668,
+        "eschatological_density": 17.333333333333332,
+        "book_reference_density": 10.666666666666666,
+        "oath_density": 4.0,
+        "divine_name_density": 172.0,
+        "personal_pronoun_density": 8.0,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.0,
+        "loanword_density": 98.66666666666667
+      }
+    },
+    "9": {
+      "name": "At-Tawbah",
+      "noldeke_rank": 113,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 129,
+        "mean_verse_length": 20.728682170542637,
+        "muq_cardinality": 0,
+        "allah_density": 131.0077519379845,
+        "qul_density": 9.30232558139535,
+        "prophet_narrative_density": 7.751937984496124,
+        "legal_term_density": 20.930232558139537,
+        "eschatological_density": 48.83720930232558,
+        "book_reference_density": 13.178294573643411,
+        "oath_density": 2.3255813953488373,
+        "divine_name_density": 186.8217054263566,
+        "personal_pronoun_density": 18.6046511627907,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 121.70542635658914
+      }
+    },
+    "10": {
+      "name": "Yunus",
+      "noldeke_rank": 84,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 109,
+        "mean_verse_length": 18.01834862385321,
+        "muq_cardinality": 3,
+        "allah_density": 56.88073394495413,
+        "qul_density": 22.01834862385321,
+        "prophet_narrative_density": 16.513761467889907,
+        "legal_term_density": 14.678899082568808,
+        "eschatological_density": 32.11009174311926,
+        "book_reference_density": 29.357798165137616,
+        "oath_density": 1.834862385321101,
+        "divine_name_density": 89.90825688073394,
+        "personal_pronoun_density": 15.596330275229358,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 141.28440366972478
+      }
+    },
+    "11": {
+      "name": "Hud",
+      "noldeke_rank": 75,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 123,
+        "mean_verse_length": 16.934959349593495,
+        "muq_cardinality": 3,
+        "allah_density": 30.89430894308943,
+        "qul_density": 2.4390243902439024,
+        "prophet_narrative_density": 21.13821138211382,
+        "legal_term_density": 21.951219512195124,
+        "eschatological_density": 51.21951219512195,
+        "book_reference_density": 8.94308943089431,
+        "oath_density": 0.0,
+        "divine_name_density": 63.41463414634146,
+        "personal_pronoun_density": 11.382113821138212,
+        "rhyme_letter_diversity": 12,
+        "refrain_density": 0.0,
+        "loanword_density": 117.88617886178862
+      }
+    },
+    "12": {
+      "name": "Yusuf",
+      "noldeke_rank": 77,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 111,
+        "mean_verse_length": 17.225225225225227,
+        "muq_cardinality": 3,
+        "allah_density": 39.63963963963964,
+        "qul_density": 0.9009009009009009,
+        "prophet_narrative_density": 26.126126126126128,
+        "legal_term_density": 17.117117117117118,
+        "eschatological_density": 14.414414414414415,
+        "book_reference_density": 9.00900900900901,
+        "oath_density": 0.0,
+        "divine_name_density": 81.08108108108108,
+        "personal_pronoun_density": 9.00900900900901,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 125.22522522522523
+      }
+    },
+    "13": {
+      "name": "Ar-Ra'd",
+      "noldeke_rank": 90,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 43,
+        "mean_verse_length": 21.58139534883721,
+        "muq_cardinality": 4,
+        "allah_density": 79.06976744186046,
+        "qul_density": 23.25581395348837,
+        "prophet_narrative_density": 4.651162790697675,
+        "legal_term_density": 32.55813953488372,
+        "eschatological_density": 23.25581395348837,
+        "book_reference_density": 46.51162790697674,
+        "oath_density": 9.30232558139535,
+        "divine_name_density": 123.25581395348837,
+        "personal_pronoun_density": 18.6046511627907,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.0,
+        "loanword_density": 179.06976744186048
+      }
+    },
+    "14": {
+      "name": "Ibrahim",
+      "noldeke_rank": 76,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 52,
+        "mean_verse_length": 17.01923076923077,
+        "muq_cardinality": 3,
+        "allah_density": 71.15384615384616,
+        "qul_density": 3.8461538461538463,
+        "prophet_narrative_density": 13.461538461538462,
+        "legal_term_density": 7.6923076923076925,
+        "eschatological_density": 46.15384615384615,
+        "book_reference_density": 9.615384615384615,
+        "oath_density": 0.0,
+        "divine_name_density": 115.38461538461539,
+        "personal_pronoun_density": 7.6923076923076925,
+        "rhyme_letter_diversity": 10,
+        "refrain_density": 0.0,
+        "loanword_density": 151.92307692307693
+      }
+    },
+    "15": {
+      "name": "Al-Hijr",
+      "noldeke_rank": 57,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 99,
+        "mean_verse_length": 6.7272727272727275,
+        "muq_cardinality": 3,
+        "allah_density": 2.0202020202020203,
+        "qul_density": 1.0101010101010102,
+        "prophet_narrative_density": 3.0303030303030303,
+        "legal_term_density": 7.070707070707071,
+        "eschatological_density": 12.121212121212121,
+        "book_reference_density": 15.151515151515152,
+        "oath_density": 2.0202020202020203,
+        "divine_name_density": 21.21212121212121,
+        "personal_pronoun_density": 6.0606060606060606,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 59.5959595959596
+      }
+    },
+    "16": {
+      "name": "An-Nahl",
+      "noldeke_rank": 73,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 128,
+        "mean_verse_length": 15.3359375,
+        "muq_cardinality": 0,
+        "allah_density": 65.625,
+        "qul_density": 0.78125,
+        "prophet_narrative_density": 0.78125,
+        "legal_term_density": 11.71875,
+        "eschatological_density": 29.6875,
+        "book_reference_density": 20.3125,
+        "oath_density": 9.375,
+        "divine_name_density": 83.59375,
+        "personal_pronoun_density": 15.625,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 102.34375
+      }
+    },
+    "17": {
+      "name": "Al-Isra",
+      "noldeke_rank": 67,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 111,
+        "mean_verse_length": 14.81081081081081,
+        "muq_cardinality": 0,
+        "allah_density": 9.00900900900901,
+        "qul_density": 18.91891891891892,
+        "prophet_narrative_density": 6.306306306306307,
+        "legal_term_density": 9.90990990990991,
+        "eschatological_density": 28.82882882882883,
+        "book_reference_density": 36.03603603603604,
+        "oath_density": 0.9009009009009009,
+        "divine_name_density": 32.432432432432435,
+        "personal_pronoun_density": 9.90990990990991,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 99.09909909909909
+      }
+    },
+    "18": {
+      "name": "Al-Kahf",
+      "noldeke_rank": 69,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 110,
+        "mean_verse_length": 15.063636363636364,
+        "muq_cardinality": 0,
+        "allah_density": 14.545454545454545,
+        "qul_density": 7.2727272727272725,
+        "prophet_narrative_density": 2.727272727272727,
+        "legal_term_density": 14.545454545454545,
+        "eschatological_density": 17.272727272727273,
+        "book_reference_density": 13.636363636363637,
+        "oath_density": 0.9090909090909091,
+        "divine_name_density": 35.45454545454545,
+        "personal_pronoun_density": 2.727272727272727,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.9090909090909091,
+        "loanword_density": 93.63636363636364
+      }
+    },
+    "19": {
+      "name": "Maryam",
+      "noldeke_rank": 58,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 98,
+        "mean_verse_length": 10.326530612244898,
+        "muq_cardinality": 5,
+        "allah_density": 8.16326530612245,
+        "qul_density": 1.0204081632653061,
+        "prophet_narrative_density": 10.204081632653061,
+        "legal_term_density": 15.306122448979592,
+        "eschatological_density": 21.428571428571427,
+        "book_reference_density": 15.306122448979592,
+        "oath_density": 1.0204081632653061,
+        "divine_name_density": 41.83673469387755,
+        "personal_pronoun_density": 6.122448979591836,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 108.16326530612245
+      }
+    },
+    "20": {
+      "name": "Taha",
+      "noldeke_rank": 55,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 135,
+        "mean_verse_length": 10.437037037037037,
+        "muq_cardinality": 2,
+        "allah_density": 4.444444444444445,
+        "qul_density": 2.2222222222222223,
+        "prophet_narrative_density": 17.037037037037038,
+        "legal_term_density": 6.666666666666667,
+        "eschatological_density": 19.25925925925926,
+        "book_reference_density": 14.814814814814815,
+        "oath_density": 0.0,
+        "divine_name_density": 24.444444444444443,
+        "personal_pronoun_density": 5.925925925925926,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 100.74074074074075
+      }
+    },
+    "21": {
+      "name": "Al-Anbya",
+      "noldeke_rank": 65,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 112,
+        "mean_verse_length": 11.035714285714286,
+        "muq_cardinality": 0,
+        "allah_density": 5.357142857142857,
+        "qul_density": 4.464285714285714,
+        "prophet_narrative_density": 7.142857142857143,
+        "legal_term_density": 11.607142857142858,
+        "eschatological_density": 13.392857142857142,
+        "book_reference_density": 9.821428571428571,
+        "oath_density": 0.8928571428571429,
+        "divine_name_density": 29.464285714285715,
+        "personal_pronoun_density": 8.928571428571429,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 84.82142857142857
+      }
+    },
+    "22": {
+      "name": "Al-Hajj",
+      "noldeke_rank": 107,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 78,
+        "mean_verse_length": 17.384615384615383,
+        "muq_cardinality": 0,
+        "allah_density": 96.15384615384616,
+        "qul_density": 3.8461538461538463,
+        "prophet_narrative_density": 6.410256410256411,
+        "legal_term_density": 16.666666666666668,
+        "eschatological_density": 26.923076923076923,
+        "book_reference_density": 16.666666666666668,
+        "oath_density": 5.128205128205129,
+        "divine_name_density": 150.0,
+        "personal_pronoun_density": 14.102564102564102,
+        "rhyme_letter_diversity": 10,
+        "refrain_density": 0.0,
+        "loanword_density": 164.10256410256412
+      }
+    },
+    "23": {
+      "name": "Al-Mu'minun",
+      "noldeke_rank": 64,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 118,
+        "mean_verse_length": 9.228813559322035,
+        "muq_cardinality": 0,
+        "allah_density": 11.016949152542374,
+        "qul_density": 9.322033898305085,
+        "prophet_narrative_density": 2.542372881355932,
+        "legal_term_density": 3.389830508474576,
+        "eschatological_density": 23.728813559322035,
+        "book_reference_density": 11.016949152542374,
+        "oath_density": 6.779661016949152,
+        "divine_name_density": 26.271186440677965,
+        "personal_pronoun_density": 22.88135593220339,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.847457627118644,
+        "loanword_density": 75.42372881355932
+      }
+    },
+    "24": {
+      "name": "An-Nur",
+      "noldeke_rank": 105,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 64,
+        "mean_verse_length": 22.109375,
+        "muq_cardinality": 0,
+        "allah_density": 125.0,
+        "qul_density": 6.25,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 20.3125,
+        "eschatological_density": 17.1875,
+        "book_reference_density": 21.875,
+        "oath_density": 10.9375,
+        "divine_name_density": 203.125,
+        "personal_pronoun_density": 14.0625,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 135.9375
+      }
+    },
+    "25": {
+      "name": "Al-Furqan",
+      "noldeke_rank": 66,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 77,
+        "mean_verse_length": 12.103896103896103,
+        "muq_cardinality": 0,
+        "allah_density": 10.38961038961039,
+        "qul_density": 5.194805194805195,
+        "prophet_narrative_density": 3.896103896103896,
+        "legal_term_density": 3.896103896103896,
+        "eschatological_density": 28.571428571428573,
+        "book_reference_density": 19.48051948051948,
+        "oath_density": 9.090909090909092,
+        "divine_name_density": 35.064935064935064,
+        "personal_pronoun_density": 3.896103896103896,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 76.62337662337663
+      }
+    },
+    "26": {
+      "name": "Ash-Shu'ara",
+      "noldeke_rank": 56,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 227,
+        "mean_verse_length": 5.960352422907489,
+        "muq_cardinality": 3,
+        "allah_density": 5.726872246696035,
+        "qul_density": 0.44052863436123346,
+        "prophet_narrative_density": 12.775330396475772,
+        "legal_term_density": 3.0837004405286343,
+        "eschatological_density": 10.572687224669604,
+        "book_reference_density": 10.13215859030837,
+        "oath_density": 1.7621145374449338,
+        "divine_name_density": 20.26431718061674,
+        "personal_pronoun_density": 4.405286343612334,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 12.334801762114537,
+        "loanword_density": 55.06607929515418
+      }
+    },
+    "27": {
+      "name": "An-Naml",
+      "noldeke_rank": 68,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 93,
+        "mean_verse_length": 13.064516129032258,
+        "muq_cardinality": 2,
+        "allah_density": 29.032258064516128,
+        "qul_density": 7.526881720430108,
+        "prophet_narrative_density": 13.978494623655914,
+        "legal_term_density": 15.053763440860216,
+        "eschatological_density": 23.655913978494624,
+        "book_reference_density": 21.50537634408602,
+        "oath_density": 0.0,
+        "divine_name_density": 54.83870967741935,
+        "personal_pronoun_density": 11.827956989247312,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 93.54838709677419
+      }
+    },
+    "28": {
+      "name": "Al-Qasas",
+      "noldeke_rank": 79,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 88,
+        "mean_verse_length": 17.272727272727273,
+        "muq_cardinality": 3,
+        "allah_density": 30.681818181818183,
+        "qul_density": 4.545454545454546,
+        "prophet_narrative_density": 30.681818181818183,
+        "legal_term_density": 12.5,
+        "eschatological_density": 29.545454545454547,
+        "book_reference_density": 17.045454545454547,
+        "oath_density": 2.272727272727273,
+        "divine_name_density": 65.9090909090909,
+        "personal_pronoun_density": 14.772727272727273,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 1.1363636363636365,
+        "loanword_density": 170.45454545454547
+      }
+    },
+    "29": {
+      "name": "Al-'Ankabut",
+      "noldeke_rank": 81,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 69,
+        "mean_verse_length": 15.130434782608695,
+        "muq_cardinality": 3,
+        "allah_density": 60.869565217391305,
+        "qul_density": 5.797101449275362,
+        "prophet_narrative_density": 5.797101449275362,
+        "legal_term_density": 15.942028985507246,
+        "eschatological_density": 33.333333333333336,
+        "book_reference_density": 34.78260869565217,
+        "oath_density": 7.246376811594203,
+        "divine_name_density": 92.7536231884058,
+        "personal_pronoun_density": 10.144927536231885,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 126.08695652173913
+      }
+    },
+    "30": {
+      "name": "Ar-Rum",
+      "noldeke_rank": 74,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 60,
+        "mean_verse_length": 14.466666666666667,
+        "muq_cardinality": 3,
+        "allah_density": 40.0,
+        "qul_density": 1.6666666666666667,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 8.333333333333334,
+        "eschatological_density": 38.333333333333336,
+        "book_reference_density": 36.666666666666664,
+        "oath_density": 0.0,
+        "divine_name_density": 66.66666666666667,
+        "personal_pronoun_density": 10.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 135.0
+      }
+    },
+    "31": {
+      "name": "Luqman",
+      "noldeke_rank": 82,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 34,
+        "mean_verse_length": 17.235294117647058,
+        "muq_cardinality": 3,
+        "allah_density": 94.11764705882354,
+        "qul_density": 2.9411764705882355,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 29.41176470588235,
+        "eschatological_density": 11.764705882352942,
+        "book_reference_density": 29.41176470588235,
+        "oath_density": 0.0,
+        "divine_name_density": 170.58823529411765,
+        "personal_pronoun_density": 17.647058823529413,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 111.76470588235294
+      }
+    },
+    "32": {
+      "name": "As-Sajdah",
+      "noldeke_rank": 70,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 30,
+        "mean_verse_length": 13.0,
+        "muq_cardinality": 3,
+        "allah_density": 3.3333333333333335,
+        "qul_density": 6.666666666666667,
+        "prophet_narrative_density": 3.3333333333333335,
+        "legal_term_density": 13.333333333333334,
+        "eschatological_density": 26.666666666666668,
+        "book_reference_density": 26.666666666666668,
+        "oath_density": 0.0,
+        "divine_name_density": 23.333333333333332,
+        "personal_pronoun_density": 13.333333333333334,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 103.33333333333333
+      }
+    },
+    "33": {
+      "name": "Al-Ahzab",
+      "noldeke_rank": 103,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 73,
+        "mean_verse_length": 18.958904109589042,
+        "muq_cardinality": 0,
+        "allah_density": 123.28767123287672,
+        "qul_density": 6.8493150684931505,
+        "prophet_narrative_density": 30.136986301369863,
+        "legal_term_density": 16.438356164383563,
+        "eschatological_density": 10.95890410958904,
+        "book_reference_density": 6.8493150684931505,
+        "oath_density": 1.36986301369863,
+        "divine_name_density": 132.87671232876713,
+        "personal_pronoun_density": 4.109589041095891,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 93.15068493150685
+      }
+    },
+    "34": {
+      "name": "Saba",
+      "noldeke_rank": 85,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 54,
+        "mean_verse_length": 17.40740740740741,
+        "muq_cardinality": 0,
+        "allah_density": 14.814814814814815,
+        "qul_density": 27.77777777777778,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 11.11111111111111,
+        "eschatological_density": 16.666666666666668,
+        "book_reference_density": 20.37037037037037,
+        "oath_density": 3.7037037037037037,
+        "divine_name_density": 83.33333333333333,
+        "personal_pronoun_density": 11.11111111111111,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.0,
+        "loanword_density": 127.77777777777777
+      }
+    },
+    "35": {
+      "name": "Fatir",
+      "noldeke_rank": 86,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 45,
+        "mean_verse_length": 18.755555555555556,
+        "muq_cardinality": 0,
+        "allah_density": 80.0,
+        "qul_density": 2.2222222222222223,
+        "prophet_narrative_density": 2.2222222222222223,
+        "legal_term_density": 17.77777777777778,
+        "eschatological_density": 17.77777777777778,
+        "book_reference_density": 15.555555555555555,
+        "oath_density": 8.88888888888889,
+        "divine_name_density": 140.0,
+        "personal_pronoun_density": 13.333333333333334,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.0,
+        "loanword_density": 146.66666666666666
+      }
+    },
+    "36": {
+      "name": "Ya-Sin",
+      "noldeke_rank": 60,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 83,
+        "mean_verse_length": 9.08433734939759,
+        "muq_cardinality": 2,
+        "allah_density": 3.6144578313253013,
+        "qul_density": 1.2048192771084338,
+        "prophet_narrative_density": 1.2048192771084338,
+        "legal_term_density": 4.819277108433735,
+        "eschatological_density": 15.662650602409638,
+        "book_reference_density": 15.662650602409638,
+        "oath_density": 3.6144578313253013,
+        "divine_name_density": 26.50602409638554,
+        "personal_pronoun_density": 10.843373493975903,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 59.036144578313255
+      }
+    },
+    "37": {
+      "name": "As-Saffat",
+      "noldeke_rank": 50,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 182,
+        "mean_verse_length": 4.84065934065934,
+        "muq_cardinality": 0,
+        "allah_density": 8.241758241758241,
+        "qul_density": 0.5494505494505495,
+        "prophet_narrative_density": 2.7472527472527473,
+        "legal_term_density": 2.197802197802198,
+        "eschatological_density": 8.791208791208792,
+        "book_reference_density": 2.7472527472527473,
+        "oath_density": 1.6483516483516483,
+        "divine_name_density": 15.934065934065934,
+        "personal_pronoun_density": 4.945054945054945,
+        "rhyme_letter_diversity": 6,
+        "refrain_density": 4.945054945054945,
+        "loanword_density": 35.16483516483517
+      }
+    },
+    "38": {
+      "name": "Sad",
+      "noldeke_rank": 59,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 88,
+        "mean_verse_length": 8.795454545454545,
+        "muq_cardinality": 1,
+        "allah_density": 3.409090909090909,
+        "qul_density": 3.409090909090909,
+        "prophet_narrative_density": 10.227272727272727,
+        "legal_term_density": 5.681818181818182,
+        "eschatological_density": 14.772727272727273,
+        "book_reference_density": 5.681818181818182,
+        "oath_density": 2.272727272727273,
+        "divine_name_density": 35.22727272727273,
+        "personal_pronoun_density": 4.545454545454546,
+        "rhyme_letter_diversity": 10,
+        "refrain_density": 0.0,
+        "loanword_density": 79.54545454545455
+      }
+    },
+    "39": {
+      "name": "Az-Zumar",
+      "noldeke_rank": 80,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 75,
+        "mean_verse_length": 16.786666666666665,
+        "muq_cardinality": 0,
+        "allah_density": 80.0,
+        "qul_density": 20.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 14.666666666666666,
+        "eschatological_density": 40.0,
+        "book_reference_density": 25.333333333333332,
+        "oath_density": 2.6666666666666665,
+        "divine_name_density": 129.33333333333334,
+        "personal_pronoun_density": 24.0,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.0,
+        "loanword_density": 140.0
+      }
+    },
+    "40": {
+      "name": "Ghafir",
+      "noldeke_rank": 78,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 85,
+        "mean_verse_length": 15.24705882352941,
+        "muq_cardinality": 2,
+        "allah_density": 62.35294117647059,
+        "qul_density": 1.1764705882352942,
+        "prophet_narrative_density": 23.529411764705884,
+        "legal_term_density": 14.117647058823529,
+        "eschatological_density": 35.294117647058826,
+        "book_reference_density": 17.647058823529413,
+        "oath_density": 1.1764705882352942,
+        "divine_name_density": 114.11764705882354,
+        "personal_pronoun_density": 20.0,
+        "rhyme_letter_diversity": 8,
+        "refrain_density": 0.0,
+        "loanword_density": 145.88235294117646
+      }
+    },
+    "41": {
+      "name": "Fussilat",
+      "noldeke_rank": 71,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 54,
+        "mean_verse_length": 15.518518518518519,
+        "muq_cardinality": 2,
+        "allah_density": 20.37037037037037,
+        "qul_density": 9.25925925925926,
+        "prophet_narrative_density": 9.25925925925926,
+        "legal_term_density": 9.25925925925926,
+        "eschatological_density": 27.77777777777778,
+        "book_reference_density": 37.03703703703704,
+        "oath_density": 0.0,
+        "divine_name_density": 64.81481481481481,
+        "personal_pronoun_density": 14.814814814814815,
+        "rhyme_letter_diversity": 10,
+        "refrain_density": 0.0,
+        "loanword_density": 105.55555555555556
+      }
+    },
+    "42": {
+      "name": "Ash-Shuraa",
+      "noldeke_rank": 83,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 53,
+        "mean_verse_length": 17.58490566037736,
+        "muq_cardinality": 5,
+        "allah_density": 60.37735849056604,
+        "qul_density": 3.7735849056603774,
+        "prophet_narrative_density": 3.7735849056603774,
+        "legal_term_density": 24.528301886792452,
+        "eschatological_density": 20.754716981132077,
+        "book_reference_density": 24.528301886792452,
+        "oath_density": 9.433962264150944,
+        "divine_name_density": 147.16981132075472,
+        "personal_pronoun_density": 9.433962264150944,
+        "rhyme_letter_diversity": 9,
+        "refrain_density": 0.0,
+        "loanword_density": 173.58490566037736
+      }
+    },
+    "43": {
+      "name": "Az-Zukhruf",
+      "noldeke_rank": 61,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 89,
+        "mean_verse_length": 9.775280898876405,
+        "muq_cardinality": 2,
+        "allah_density": 3.3707865168539324,
+        "qul_density": 2.247191011235955,
+        "prophet_narrative_density": 8.98876404494382,
+        "legal_term_density": 10.112359550561798,
+        "eschatological_density": 22.471910112359552,
+        "book_reference_density": 14.606741573033707,
+        "oath_density": 3.3707865168539324,
+        "divine_name_density": 34.831460674157306,
+        "personal_pronoun_density": 13.48314606741573,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 82.02247191011236
+      }
+    },
+    "44": {
+      "name": "Ad-Dukhan",
+      "noldeke_rank": 53,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 59,
+        "mean_verse_length": 6.169491525423729,
+        "muq_cardinality": 2,
+        "allah_density": 5.084745762711864,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 8.474576271186441,
+        "legal_term_density": 6.779661016949152,
+        "eschatological_density": 18.64406779661017,
+        "book_reference_density": 5.084745762711864,
+        "oath_density": 1.694915254237288,
+        "divine_name_density": 23.728813559322035,
+        "personal_pronoun_density": 13.559322033898304,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 50.847457627118644
+      }
+    },
+    "45": {
+      "name": "Al-Jathiyah",
+      "noldeke_rank": 72,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 37,
+        "mean_verse_length": 13.837837837837839,
+        "muq_cardinality": 2,
+        "allah_density": 48.648648648648646,
+        "qul_density": 5.405405405405405,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 29.72972972972973,
+        "eschatological_density": 48.648648648648646,
+        "book_reference_density": 48.648648648648646,
+        "oath_density": 0.0,
+        "divine_name_density": 78.37837837837837,
+        "personal_pronoun_density": 13.513513513513514,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 102.70270270270271
+      }
+    },
+    "46": {
+      "name": "Al-Ahqaf",
+      "noldeke_rank": 88,
+      "noldeke_phase": "Late Meccan",
+      "axis_values": {
+        "surah_length": 35,
+        "mean_verse_length": 19.314285714285713,
+        "muq_cardinality": 2,
+        "allah_density": 45.714285714285715,
+        "qul_density": 11.428571428571429,
+        "prophet_narrative_density": 5.714285714285714,
+        "legal_term_density": 20.0,
+        "eschatological_density": 48.57142857142857,
+        "book_reference_density": 31.428571428571427,
+        "oath_density": 2.857142857142857,
+        "divine_name_density": 91.42857142857143,
+        "personal_pronoun_density": 8.571428571428571,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 160.0
+      }
+    },
+    "47": {
+      "name": "Muhammad",
+      "noldeke_rank": 96,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 38,
+        "mean_verse_length": 15.0,
+        "muq_cardinality": 0,
+        "allah_density": 71.05263157894737,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 7.894736842105263,
+        "eschatological_density": 2.6315789473684212,
+        "book_reference_density": 15.789473684210526,
+        "oath_density": 7.894736842105263,
+        "divine_name_density": 81.57894736842105,
+        "personal_pronoun_density": 5.2631578947368425,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 81.57894736842105
+      }
+    },
+    "48": {
+      "name": "Al-Fath",
+      "noldeke_rank": 108,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 29,
+        "mean_verse_length": 20.689655172413794,
+        "muq_cardinality": 0,
+        "allah_density": 134.48275862068965,
+        "qul_density": 10.344827586206897,
+        "prophet_narrative_density": 3.4482758620689653,
+        "legal_term_density": 10.344827586206897,
+        "eschatological_density": 24.137931034482758,
+        "book_reference_density": 13.793103448275861,
+        "oath_density": 0.0,
+        "divine_name_density": 137.93103448275863,
+        "personal_pronoun_density": 10.344827586206897,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 117.24137931034483
+      }
+    },
+    "49": {
+      "name": "Al-Hujurat",
+      "noldeke_rank": 112,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 18,
+        "mean_verse_length": 21.22222222222222,
+        "muq_cardinality": 0,
+        "allah_density": 150.0,
+        "qul_density": 16.666666666666668,
+        "prophet_narrative_density": 16.666666666666668,
+        "legal_term_density": 16.666666666666668,
+        "eschatological_density": 22.22222222222222,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 250.0,
+        "personal_pronoun_density": 16.666666666666668,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 83.33333333333333
+      }
+    },
+    "50": {
+      "name": "Qaf",
+      "noldeke_rank": 54,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 45,
+        "mean_verse_length": 8.644444444444444,
+        "muq_cardinality": 1,
+        "allah_density": 2.2222222222222223,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 6.666666666666667,
+        "legal_term_density": 4.444444444444445,
+        "eschatological_density": 31.11111111111111,
+        "book_reference_density": 8.88888888888889,
+        "oath_density": 4.444444444444445,
+        "divine_name_density": 37.77777777777778,
+        "personal_pronoun_density": 8.88888888888889,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.0,
+        "loanword_density": 88.88888888888889
+      }
+    },
+    "51": {
+      "name": "Adh-Dhariyat",
+      "noldeke_rank": 39,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 60,
+        "mean_verse_length": 6.183333333333334,
+        "muq_cardinality": 0,
+        "allah_density": 5.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 8.333333333333334,
+        "legal_term_density": 5.0,
+        "eschatological_density": 16.666666666666668,
+        "book_reference_density": 3.3333333333333335,
+        "oath_density": 6.666666666666667,
+        "divine_name_density": 20.0,
+        "personal_pronoun_density": 10.0,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.0,
+        "loanword_density": 50.0
+      }
+    },
+    "52": {
+      "name": "At-Tur",
+      "noldeke_rank": 40,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 49,
+        "mean_verse_length": 6.612244897959184,
+        "muq_cardinality": 0,
+        "allah_density": 6.122448979591836,
+        "qul_density": 2.0408163265306123,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 8.16326530612245,
+        "eschatological_density": 14.285714285714286,
+        "book_reference_density": 4.081632653061225,
+        "oath_density": 10.204081632653061,
+        "divine_name_density": 16.3265306122449,
+        "personal_pronoun_density": 14.285714285714286,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 48.97959183673469
+      }
+    },
+    "53": {
+      "name": "An-Najm",
+      "noldeke_rank": 28,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 62,
+        "mean_verse_length": 6.0,
+        "muq_cardinality": 0,
+        "allah_density": 9.67741935483871,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 4.838709677419355,
+        "legal_term_density": 3.225806451612903,
+        "eschatological_density": 11.290322580645162,
+        "book_reference_density": 4.838709677419355,
+        "oath_density": 3.225806451612903,
+        "divine_name_density": 14.516129032258064,
+        "personal_pronoun_density": 16.129032258064516,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 53.225806451612904
+      }
+    },
+    "54": {
+      "name": "Al-Qamar",
+      "noldeke_rank": 49,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 55,
+        "mean_verse_length": 6.363636363636363,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 7.2727272727272725,
+        "legal_term_density": 7.2727272727272725,
+        "eschatological_density": 10.909090909090908,
+        "book_reference_density": 12.727272727272727,
+        "oath_density": 0.0,
+        "divine_name_density": 7.2727272727272725,
+        "personal_pronoun_density": 3.6363636363636362,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 9.090909090909092,
+        "loanword_density": 52.72727272727273
+      }
+    },
+    "55": {
+      "name": "Ar-Rahman",
+      "noldeke_rank": 43,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 78,
+        "mean_verse_length": 4.551282051282051,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 2.5641025641025643,
+        "legal_term_density": 0.0,
+        "eschatological_density": 5.128205128205129,
+        "book_reference_density": 1.2820512820512822,
+        "oath_density": 5.128205128205129,
+        "divine_name_density": 2.5641025641025643,
+        "personal_pronoun_density": 1.2820512820512822,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 38.46153846153846,
+        "loanword_density": 34.61538461538461
+      }
+    },
+    "56": {
+      "name": "Al-Waqi'ah",
+      "noldeke_rank": 41,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 96,
+        "mean_verse_length": 3.9583333333333335,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 1.0416666666666667,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 1.0416666666666667,
+        "eschatological_density": 5.208333333333333,
+        "book_reference_density": 7.291666666666667,
+        "oath_density": 1.0416666666666667,
+        "divine_name_density": 8.333333333333334,
+        "personal_pronoun_density": 9.375,
+        "rhyme_letter_diversity": 8,
+        "refrain_density": 2.0833333333333335,
+        "loanword_density": 26.041666666666668
+      }
+    },
+    "57": {
+      "name": "Al-Hadid",
+      "noldeke_rank": 99,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 29,
+        "mean_verse_length": 21.310344827586206,
+        "muq_cardinality": 0,
+        "allah_density": 110.34482758620689,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 13.793103448275861,
+        "legal_term_density": 34.48275862068966,
+        "eschatological_density": 27.586206896551722,
+        "book_reference_density": 48.275862068965516,
+        "oath_density": 3.4482758620689653,
+        "divine_name_density": 220.68965517241378,
+        "personal_pronoun_density": 24.137931034482758,
+        "rhyme_letter_diversity": 6,
+        "refrain_density": 0.0,
+        "loanword_density": 155.17241379310346
+      }
+    },
+    "58": {
+      "name": "Al-Mujadila",
+      "noldeke_rank": 106,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 22,
+        "mean_verse_length": 23.454545454545453,
+        "muq_cardinality": 0,
+        "allah_density": 181.8181818181818,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 18.181818181818183,
+        "eschatological_density": 45.45454545454545,
+        "book_reference_density": 18.181818181818183,
+        "oath_density": 4.545454545454546,
+        "divine_name_density": 254.54545454545453,
+        "personal_pronoun_density": 40.90909090909091,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 122.72727272727273
+      }
+    },
+    "59": {
+      "name": "Al-Hashr",
+      "noldeke_rank": 102,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 24,
+        "mean_verse_length": 19.916666666666668,
+        "muq_cardinality": 0,
+        "allah_density": 120.83333333333333,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 33.333333333333336,
+        "eschatological_density": 16.666666666666668,
+        "book_reference_density": 20.833333333333332,
+        "oath_density": 8.333333333333334,
+        "divine_name_density": 208.33333333333334,
+        "personal_pronoun_density": 45.833333333333336,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 104.16666666666667
+      }
+    },
+    "60": {
+      "name": "Al-Mumtahanah",
+      "noldeke_rank": 110,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 13,
+        "mean_verse_length": 29.0,
+        "muq_cardinality": 0,
+        "allah_density": 161.53846153846155,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 7.6923076923076925,
+        "legal_term_density": 46.15384615384615,
+        "eschatological_density": 53.84615384615385,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 269.2307692307692,
+        "personal_pronoun_density": 30.76923076923077,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 123.07692307692308
+      }
+    },
+    "61": {
+      "name": "As-Saf",
+      "noldeke_rank": 98,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 14,
+        "mean_verse_length": 17.0,
+        "muq_cardinality": 0,
+        "allah_density": 121.42857142857143,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 42.857142857142854,
+        "legal_term_density": 7.142857142857143,
+        "eschatological_density": 35.714285714285715,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 171.42857142857142,
+        "personal_pronoun_density": 14.285714285714286,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 178.57142857142858
+      }
+    },
+    "62": {
+      "name": "Al-Jumu'ah",
+      "noldeke_rank": 94,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 11,
+        "mean_verse_length": 16.90909090909091,
+        "muq_cardinality": 0,
+        "allah_density": 109.0909090909091,
+        "qul_density": 27.272727272727273,
+        "prophet_narrative_density": 9.090909090909092,
+        "legal_term_density": 36.36363636363637,
+        "eschatological_density": 45.45454545454545,
+        "book_reference_density": 27.272727272727273,
+        "oath_density": 0.0,
+        "divine_name_density": 181.8181818181818,
+        "personal_pronoun_density": 9.090909090909092,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 100.0
+      }
+    },
+    "63": {
+      "name": "Al-Munafiqun",
+      "noldeke_rank": 104,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 11,
+        "mean_verse_length": 17.727272727272727,
+        "muq_cardinality": 0,
+        "allah_density": 127.27272727272727,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 27.272727272727273,
+        "legal_term_density": 0.0,
+        "eschatological_density": 27.272727272727273,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 118.18181818181819,
+        "personal_pronoun_density": 27.272727272727273,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 100.0
+      }
+    },
+    "64": {
+      "name": "At-Taghabun",
+      "noldeke_rank": 93,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 18,
+        "mean_verse_length": 14.666666666666666,
+        "muq_cardinality": 0,
+        "allah_density": 111.11111111111111,
+        "qul_density": 5.555555555555555,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 11.11111111111111,
+        "eschatological_density": 16.666666666666668,
+        "book_reference_density": 11.11111111111111,
+        "oath_density": 5.555555555555555,
+        "divine_name_density": 222.22222222222223,
+        "personal_pronoun_density": 16.666666666666668,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 94.44444444444444
+      }
+    },
+    "65": {
+      "name": "At-Talaq",
+      "noldeke_rank": 101,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 12,
+        "mean_verse_length": 26.083333333333332,
+        "muq_cardinality": 0,
+        "allah_density": 208.33333333333334,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 16.666666666666668,
+        "legal_term_density": 75.0,
+        "eschatological_density": 33.333333333333336,
+        "book_reference_density": 33.333333333333336,
+        "oath_density": 8.333333333333334,
+        "divine_name_density": 275.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 233.33333333333334
+      }
+    },
+    "66": {
+      "name": "At-Tahrim",
+      "noldeke_rank": 109,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 12,
+        "mean_verse_length": 22.333333333333332,
+        "muq_cardinality": 0,
+        "allah_density": 108.33333333333333,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 75.0,
+        "legal_term_density": 41.666666666666664,
+        "eschatological_density": 33.333333333333336,
+        "book_reference_density": 8.333333333333334,
+        "oath_density": 0.0,
+        "divine_name_density": 158.33333333333334,
+        "personal_pronoun_density": 8.333333333333334,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 166.66666666666666
+      }
+    },
+    "67": {
+      "name": "Al-Mulk",
+      "noldeke_rank": 63,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 30,
+        "mean_verse_length": 11.6,
+        "muq_cardinality": 0,
+        "allah_density": 10.0,
+        "qul_density": 20.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 6.666666666666667,
+        "book_reference_density": 3.3333333333333335,
+        "oath_density": 0.0,
+        "divine_name_density": 53.333333333333336,
+        "personal_pronoun_density": 23.333333333333332,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 80.0
+      }
+    },
+    "68": {
+      "name": "Al-Qalam",
+      "noldeke_rank": 18,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 52,
+        "mean_verse_length": 5.923076923076923,
+        "muq_cardinality": 1,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 9.615384615384615,
+        "eschatological_density": 9.615384615384615,
+        "book_reference_density": 5.769230769230769,
+        "oath_density": 0.0,
+        "divine_name_density": 5.769230769230769,
+        "personal_pronoun_density": 5.769230769230769,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 23.076923076923077
+      }
+    },
+    "69": {
+      "name": "Al-Haqqah",
+      "noldeke_rank": 38,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 52,
+        "mean_verse_length": 5.076923076923077,
+        "muq_cardinality": 0,
+        "allah_density": 1.9230769230769231,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 5.769230769230769,
+        "legal_term_density": 7.6923076923076925,
+        "eschatological_density": 7.6923076923076925,
+        "book_reference_density": 11.538461538461538,
+        "oath_density": 1.9230769230769231,
+        "divine_name_density": 13.461538461538462,
+        "personal_pronoun_density": 1.9230769230769231,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 34.61538461538461
+      }
+    },
+    "70": {
+      "name": "Al-Ma'arij",
+      "noldeke_rank": 42,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 44,
+        "mean_verse_length": 5.045454545454546,
+        "muq_cardinality": 0,
+        "allah_density": 2.272727272727273,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 15.909090909090908,
+        "book_reference_density": 0.0,
+        "oath_density": 15.909090909090908,
+        "divine_name_density": 6.818181818181818,
+        "personal_pronoun_density": 18.181818181818183,
+        "rhyme_letter_diversity": 9,
+        "refrain_density": 0.0,
+        "loanword_density": 38.63636363636363
+      }
+    },
+    "71": {
+      "name": "Nuh",
+      "noldeke_rank": 51,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 28,
+        "mean_verse_length": 8.214285714285714,
+        "muq_cardinality": 0,
+        "allah_density": 25.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 7.142857142857143,
+        "legal_term_density": 0.0,
+        "eschatological_density": 21.428571428571427,
+        "book_reference_density": 0.0,
+        "oath_density": 7.142857142857143,
+        "divine_name_density": 25.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 46.42857142857143
+      }
+    },
+    "72": {
+      "name": "Al-Jinn",
+      "noldeke_rank": 62,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 28,
+        "mean_verse_length": 10.464285714285714,
+        "muq_cardinality": 0,
+        "allah_density": 35.714285714285715,
+        "qul_density": 17.857142857142858,
+        "prophet_narrative_density": 3.5714285714285716,
+        "legal_term_density": 0.0,
+        "eschatological_density": 14.285714285714286,
+        "book_reference_density": 3.5714285714285716,
+        "oath_density": 0.0,
+        "divine_name_density": 46.42857142857143,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 103.57142857142857
+      }
+    },
+    "73": {
+      "name": "Al-Muzzammil",
+      "noldeke_rank": 23,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 20,
+        "mean_verse_length": 10.7,
+        "muq_cardinality": 0,
+        "allah_density": 35.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 10.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 40.0,
+        "book_reference_density": 20.0,
+        "oath_density": 0.0,
+        "divine_name_density": 45.0,
+        "personal_pronoun_density": 15.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 75.0
+      }
+    },
+    "74": {
+      "name": "Al-Muddaththir",
+      "noldeke_rank": 2,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 56,
+        "mean_verse_length": 4.732142857142857,
+        "muq_cardinality": 0,
+        "allah_density": 5.357142857142857,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 3.5714285714285716,
+        "eschatological_density": 8.928571428571429,
+        "book_reference_density": 5.357142857142857,
+        "oath_density": 7.142857142857143,
+        "divine_name_density": 8.928571428571429,
+        "personal_pronoun_density": 5.357142857142857,
+        "rhyme_letter_diversity": 6,
+        "refrain_density": 0.0,
+        "loanword_density": 30.357142857142858
+      }
+    },
+    "75": {
+      "name": "Al-Qiyamah",
+      "noldeke_rank": 36,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 40,
+        "mean_verse_length": 4.125,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 15.0,
+        "book_reference_density": 7.5,
+        "oath_density": 2.5,
+        "divine_name_density": 2.5,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 6,
+        "refrain_density": 0.0,
+        "loanword_density": 25.0
+      }
+    },
+    "76": {
+      "name": "Al-Insan",
+      "noldeke_rank": 52,
+      "noldeke_phase": "Middle Meccan",
+      "axis_values": {
+        "surah_length": 31,
+        "mean_verse_length": 8.064516129032258,
+        "muq_cardinality": 0,
+        "allah_density": 16.129032258064516,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 6.451612903225806,
+        "eschatological_density": 12.903225806451612,
+        "book_reference_density": 9.67741935483871,
+        "oath_density": 0.0,
+        "divine_name_density": 22.580645161290324,
+        "personal_pronoun_density": 6.451612903225806,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 51.61290322580645
+      }
+    },
+    "77": {
+      "name": "Al-Mursalat",
+      "noldeke_rank": 32,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 50,
+        "mean_verse_length": 3.64,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 12.0,
+        "book_reference_density": 0.0,
+        "oath_density": 4.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 8,
+        "refrain_density": 18.0,
+        "loanword_density": 16.0
+      }
+    },
+    "78": {
+      "name": "An-Naba",
+      "noldeke_rank": 33,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 40,
+        "mean_verse_length": 4.425,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 2.5,
+        "eschatological_density": 17.5,
+        "book_reference_density": 7.5,
+        "oath_density": 2.5,
+        "divine_name_density": 12.5,
+        "personal_pronoun_density": 2.5,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 30.0
+      }
+    },
+    "79": {
+      "name": "An-Nazi'at",
+      "noldeke_rank": 31,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 46,
+        "mean_verse_length": 3.9130434782608696,
+        "muq_cardinality": 0,
+        "allah_density": 2.1739130434782608,
+        "qul_density": 2.1739130434782608,
+        "prophet_narrative_density": 4.3478260869565215,
+        "legal_term_density": 6.521739130434782,
+        "eschatological_density": 10.869565217391305,
+        "book_reference_density": 2.1739130434782608,
+        "oath_density": 10.869565217391305,
+        "divine_name_density": 2.1739130434782608,
+        "personal_pronoun_density": 8.695652173913043,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 32.608695652173914
+      }
+    },
+    "80": {
+      "name": "'Abasa",
+      "noldeke_rank": 17,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 42,
+        "mean_verse_length": 3.1666666666666665,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 2.380952380952381,
+        "eschatological_density": 2.380952380952381,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 2.380952380952381,
+        "personal_pronoun_density": 2.380952380952381,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 26.19047619047619
+      }
+    },
+    "81": {
+      "name": "At-Takwir",
+      "noldeke_rank": 27,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 29,
+        "mean_verse_length": 3.586206896551724,
+        "muq_cardinality": 0,
+        "allah_density": 3.4482758620689653,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 3.4482758620689653,
+        "legal_term_density": 0.0,
+        "eschatological_density": 3.4482758620689653,
+        "book_reference_density": 0.0,
+        "oath_density": 6.896551724137931,
+        "divine_name_density": 6.896551724137931,
+        "personal_pronoun_density": 10.344827586206897,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 20.689655172413794
+      }
+    },
+    "82": {
+      "name": "Al-Infitar",
+      "noldeke_rank": 26,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 19,
+        "mean_verse_length": 4.315789473684211,
+        "muq_cardinality": 0,
+        "allah_density": 5.2631578947368425,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 10.526315789473685,
+        "eschatological_density": 26.31578947368421,
+        "book_reference_density": 5.2631578947368425,
+        "oath_density": 0.0,
+        "divine_name_density": 10.526315789473685,
+        "personal_pronoun_density": 5.2631578947368425,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 31.57894736842105
+      }
+    },
+    "83": {
+      "name": "Al-Mutaffifin",
+      "noldeke_rank": 37,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 36,
+        "mean_verse_length": 4.777777777777778,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 11.11111111111111,
+        "eschatological_density": 13.88888888888889,
+        "book_reference_density": 13.88888888888889,
+        "oath_density": 0.0,
+        "divine_name_density": 2.7777777777777777,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 5.555555555555555,
+        "loanword_density": 55.55555555555556
+      }
+    },
+    "84": {
+      "name": "Al-Inshiqaq",
+      "noldeke_rank": 29,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 25,
+        "mean_verse_length": 4.36,
+        "muq_cardinality": 0,
+        "allah_density": 4.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 8.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 16.0,
+        "oath_density": 12.0,
+        "divine_name_density": 4.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 4.0,
+        "loanword_density": 16.0
+      }
+    },
+    "85": {
+      "name": "Al-Buruj",
+      "noldeke_rank": 22,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 22,
+        "mean_verse_length": 5.045454545454546,
+        "muq_cardinality": 0,
+        "allah_density": 13.636363636363637,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 9.090909090909092,
+        "legal_term_density": 0.0,
+        "eschatological_density": 9.090909090909092,
+        "book_reference_density": 4.545454545454546,
+        "oath_density": 13.636363636363637,
+        "divine_name_density": 59.09090909090909,
+        "personal_pronoun_density": 13.636363636363637,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.0,
+        "loanword_density": 54.54545454545455
+      }
+    },
+    "86": {
+      "name": "At-Tariq",
+      "noldeke_rank": 15,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 17,
+        "mean_verse_length": 3.588235294117647,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 5.882352941176471,
+        "book_reference_density": 0.0,
+        "oath_density": 17.647058823529413,
+        "divine_name_density": 11.764705882352942,
+        "personal_pronoun_density": 5.882352941176471,
+        "rhyme_letter_diversity": 7,
+        "refrain_density": 0.0,
+        "loanword_density": 52.94117647058823
+      }
+    },
+    "87": {
+      "name": "Al-A'la",
+      "noldeke_rank": 19,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 19,
+        "mean_verse_length": 3.8421052631578947,
+        "muq_cardinality": 0,
+        "allah_density": 5.2631578947368425,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 10.526315789473685,
+        "legal_term_density": 0.0,
+        "eschatological_density": 5.2631578947368425,
+        "book_reference_density": 5.2631578947368425,
+        "oath_density": 15.789473684210526,
+        "divine_name_density": 5.2631578947368425,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 21.05263157894737
+      }
+    },
+    "88": {
+      "name": "Al-Ghashiyah",
+      "noldeke_rank": 34,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 26,
+        "mean_verse_length": 3.5384615384615383,
+        "muq_cardinality": 0,
+        "allah_density": 3.8461538461538463,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 3.8461538461538463,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 26.923076923076923
+      }
+    },
+    "89": {
+      "name": "Al-Fajr",
+      "noldeke_rank": 35,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 30,
+        "mean_verse_length": 4.7,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 3.3333333333333335,
+        "legal_term_density": 0.0,
+        "eschatological_density": 3.3333333333333335,
+        "book_reference_density": 0.0,
+        "oath_density": 10.0,
+        "divine_name_density": 6.666666666666667,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 9,
+        "refrain_density": 0.0,
+        "loanword_density": 20.0
+      }
+    },
+    "90": {
+      "name": "Al-Balad",
+      "noldeke_rank": 11,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 20,
+        "mean_verse_length": 4.1,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 5.0,
+        "book_reference_density": 5.0,
+        "oath_density": 5.0,
+        "divine_name_density": 5.0,
+        "personal_pronoun_density": 5.0,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 20.0
+      }
+    },
+    "91": {
+      "name": "Ash-Shams",
+      "noldeke_rank": 16,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 15,
+        "mean_verse_length": 3.6,
+        "muq_cardinality": 0,
+        "allah_density": 13.333333333333334,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 6.666666666666667,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 40.0,
+        "divine_name_density": 13.333333333333334,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 26.666666666666668
+      }
+    },
+    "92": {
+      "name": "Al-Layl",
+      "noldeke_rank": 10,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 21,
+        "mean_verse_length": 3.380952380952381,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 4.761904761904762,
+        "book_reference_density": 0.0,
+        "oath_density": 9.523809523809524,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 28.571428571428573
+      }
+    },
+    "93": {
+      "name": "Ad-Duhaa",
+      "noldeke_rank": 13,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 11,
+        "mean_verse_length": 3.6363636363636362,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 9.090909090909092,
+        "book_reference_density": 0.0,
+        "oath_density": 18.181818181818183,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 18.181818181818183
+      }
+    },
+    "94": {
+      "name": "Ash-Sharh",
+      "noldeke_rank": 12,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 8,
+        "mean_verse_length": 3.375,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 0.0
+      }
+    },
+    "95": {
+      "name": "At-Tin",
+      "noldeke_rank": 20,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 8,
+        "mean_verse_length": 4.25,
+        "muq_cardinality": 0,
+        "allah_density": 12.5,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 25.0,
+        "eschatological_density": 12.5,
+        "book_reference_density": 0.0,
+        "oath_density": 12.5,
+        "divine_name_density": 12.5,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 50.0
+      }
+    },
+    "96": {
+      "name": "Al-'Alaq",
+      "noldeke_rank": 1,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 19,
+        "mean_verse_length": 3.8421052631578947,
+        "muq_cardinality": 0,
+        "allah_density": 5.2631578947368425,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 15.789473684210526,
+        "eschatological_density": 0.0,
+        "book_reference_density": 10.526315789473685,
+        "oath_density": 0.0,
+        "divine_name_density": 5.2631578947368425,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 5,
+        "refrain_density": 0.0,
+        "loanword_density": 21.05263157894737
+      }
+    },
+    "97": {
+      "name": "Al-Qadr",
+      "noldeke_rank": 14,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 5,
+        "mean_verse_length": 6.0,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 20.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 40.0,
+        "oath_density": 0.0,
+        "divine_name_density": 20.0,
+        "personal_pronoun_density": 20.0,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 60.0
+      }
+    },
+    "98": {
+      "name": "Al-Bayyinah",
+      "noldeke_rank": 92,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 8,
+        "mean_verse_length": 12.25,
+        "muq_cardinality": 0,
+        "allah_density": 37.5,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 12.5,
+        "legal_term_density": 62.5,
+        "eschatological_density": 50.0,
+        "book_reference_density": 50.0,
+        "oath_density": 0.0,
+        "divine_name_density": 50.0,
+        "personal_pronoun_density": 25.0,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 162.5
+      }
+    },
+    "99": {
+      "name": "Az-Zalzalah",
+      "noldeke_rank": 25,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 8,
+        "mean_verse_length": 4.5,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 25.0
+      }
+    },
+    "100": {
+      "name": "Al-'Adiyat",
+      "noldeke_rank": 30,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 11,
+        "mean_verse_length": 3.727272727272727,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 9.090909090909092,
+        "divine_name_density": 18.181818181818183,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 18.181818181818183
+      }
+    },
+    "101": {
+      "name": "Al-Qari'ah",
+      "noldeke_rank": 24,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 11,
+        "mean_verse_length": 3.272727272727273,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 9.090909090909092,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 4,
+        "refrain_density": 0.0,
+        "loanword_density": 36.36363636363637
+      }
+    },
+    "102": {
+      "name": "At-Takathur",
+      "noldeke_rank": 8,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 8,
+        "mean_verse_length": 3.5,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 12.5
+      }
+    },
+    "103": {
+      "name": "Al-'Asr",
+      "noldeke_rank": 21,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 3,
+        "mean_verse_length": 4.666666666666667,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 33.333333333333336,
+        "divine_name_density": 33.333333333333336,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 0.0
+      }
+    },
+    "104": {
+      "name": "Al-Humazah",
+      "noldeke_rank": 6,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 9,
+        "mean_verse_length": 3.7777777777777777,
+        "muq_cardinality": 0,
+        "allah_density": 11.11111111111111,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 11.11111111111111,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 11.11111111111111
+      }
+    },
+    "105": {
+      "name": "Al-Fil",
+      "noldeke_rank": 9,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 5,
+        "mean_verse_length": 4.6,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 20.0
+      }
+    },
+    "106": {
+      "name": "Quraysh",
+      "noldeke_rank": 4,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 4,
+        "mean_verse_length": 4.25,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 75.0
+      }
+    },
+    "107": {
+      "name": "Al-Ma'un",
+      "noldeke_rank": 7,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 7,
+        "mean_verse_length": 3.5714285714285716,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 28.571428571428573,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 14.285714285714286
+      }
+    },
+    "108": {
+      "name": "Al-Kawthar",
+      "noldeke_rank": 5,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 3,
+        "mean_verse_length": 3.3333333333333335,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 33.333333333333336,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 0.0
+      }
+    },
+    "109": {
+      "name": "Al-Kafirun",
+      "noldeke_rank": 45,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 6,
+        "mean_verse_length": 4.5,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 16.666666666666668,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 16.666666666666668,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 16.666666666666668,
+        "loanword_density": 16.666666666666668
+      }
+    },
+    "110": {
+      "name": "An-Nasr",
+      "noldeke_rank": 111,
+      "noldeke_phase": "Medinan",
+      "axis_values": {
+        "surah_length": 3,
+        "mean_verse_length": 6.666666666666667,
+        "muq_cardinality": 0,
+        "allah_density": 66.66666666666667,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 66.66666666666667,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 33.333333333333336
+      }
+    },
+    "111": {
+      "name": "Al-Masad",
+      "noldeke_rank": 3,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 5,
+        "mean_verse_length": 4.6,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 0.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 2,
+        "refrain_density": 0.0,
+        "loanword_density": 40.0
+      }
+    },
+    "112": {
+      "name": "Al-Ikhlas",
+      "noldeke_rank": 44,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 4,
+        "mean_verse_length": 3.75,
+        "muq_cardinality": 0,
+        "allah_density": 50.0,
+        "qul_density": 25.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 100.0,
+        "personal_pronoun_density": 25.0,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 25.0
+      }
+    },
+    "113": {
+      "name": "Al-Falaq",
+      "noldeke_rank": 46,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 5,
+        "mean_verse_length": 4.6,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 20.0,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 0.0,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 3,
+        "refrain_density": 0.0,
+        "loanword_density": 100.0
+      }
+    },
+    "114": {
+      "name": "An-Nas",
+      "noldeke_rank": 47,
+      "noldeke_phase": "Early Meccan",
+      "axis_values": {
+        "surah_length": 6,
+        "mean_verse_length": 3.3333333333333335,
+        "muq_cardinality": 0,
+        "allah_density": 0.0,
+        "qul_density": 16.666666666666668,
+        "prophet_narrative_density": 0.0,
+        "legal_term_density": 0.0,
+        "eschatological_density": 0.0,
+        "book_reference_density": 0.0,
+        "oath_density": 0.0,
+        "divine_name_density": 16.666666666666668,
+        "personal_pronoun_density": 0.0,
+        "rhyme_letter_diversity": 1,
+        "refrain_density": 0.0,
+        "loanword_density": 66.66666666666667
+      }
+    }
+  }
+}

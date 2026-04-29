@@ -1,0 +1,415 @@
+{
+  "finding_id": "h-new-239",
+  "seed": 20260419,
+  "bonferroni_k": 4,
+  "alpha_per_cell": 0.0125,
+  "n_surahs": 114,
+  "real": {
+    "A_spearman": {
+      "rho": -0.4754903002314996,
+      "p_two": 0.0,
+      "n_perm": 10000
+    },
+    "B_kruskal_blocks": {
+      "H": 19.22744387329698,
+      "p": 0.000245333319695048,
+      "means": {
+        "other": 0.032026203273734476,
+        "tiwal": 0.03394219647321477,
+        "hawamim": 0.030474409288367504,
+        "mufassal": 0.0201479191688596
+      },
+      "medians": {
+        "other": 0.02655644064858157,
+        "tiwal": 0.03469231888956037,
+        "hawamim": 0.026627218934911243,
+        "mufassal": 0.007575757575757576
+      },
+      "n_per_block": {
+        "other": 34,
+        "tiwal": 8,
+        "hawamim": 7,
+        "mufassal": 65
+      },
+      "pairwise_mwu": {
+        "tiwal_vs_hawamim": {
+          "U": 32.0,
+          "p": 0.6943278943278944,
+          "p_bonf_6": 1.0
+        },
+        "tiwal_vs_mufassal": {
+          "U": 405.0,
+          "p": 0.008822936684206624,
+          "p_bonf_6": 0.05293762010523974
+        },
+        "tiwal_vs_other": {
+          "U": 171.0,
+          "p": 0.2749777779302811,
+          "p_bonf_6": 1.0
+        },
+        "hawamim_vs_mufassal": {
+          "U": 340.0,
+          "p": 0.028724160480743048,
+          "p_bonf_6": 0.17234496288445827
+        },
+        "hawamim_vs_other": {
+          "U": 141.0,
+          "p": 0.4647270653689139,
+          "p_bonf_6": 1.0
+        },
+        "mufassal_vs_other": {
+          "U": 616.0,
+          "p": 0.0002761636350868562,
+          "p_bonf_6": 0.0016569818105211373
+        }
+      }
+    },
+    "C_juz30_vs_rest": {
+      "U_two": 561.0,
+      "p_two": 1.4574629562095961e-07,
+      "U_greater": 561.0,
+      "p_greater": 0.9999999295021954,
+      "mean_juz30": 0.01554437860750544,
+      "mean_rest": 0.029976910202719944,
+      "median_juz30": 0.0,
+      "median_rest": 0.02754237288135593,
+      "n_juz30": 37,
+      "n_rest": 77
+    },
+    "D_meccan_vs_medinan": {
+      "U_two": 353.0,
+      "p_two": 1.737961072712474e-08,
+      "U_greater": 353.0,
+      "p_greater": 0.9999999916382597,
+      "mean_meccan": 0.019535626930789335,
+      "mean_medinan": 0.042975006358544794,
+      "median_meccan": 0.012270400481782595,
+      "median_medinan": 0.041658717929904374,
+      "n_meccan": 86,
+      "n_medinan": 28
+    }
+  },
+  "mw5_shuffle_null": {
+    "A_spearman": {
+      "rho": 0.5025091437527778,
+      "p_two": 0.0,
+      "n_perm": 10000
+    },
+    "B_kruskal_blocks": {
+      "H": 29.274540897726403,
+      "p": 1.9608292115186744e-06,
+      "means": {
+        "other": 0.031347222670179246,
+        "tiwal": 0.018503651893632702,
+        "hawamim": 0.030161518060140367,
+        "mufassal": 0.06801921734788925
+      },
+      "medians": {
+        "other": 0.024741958713394144,
+        "tiwal": 0.017321315348986545,
+        "hawamim": 0.02700617283950617,
+        "mufassal": 0.07317073170731707
+      },
+      "n_per_block": {
+        "other": 34,
+        "tiwal": 8,
+        "hawamim": 7,
+        "mufassal": 65
+      },
+      "pairwise_mwu": {
+        "tiwal_vs_hawamim": {
+          "U": 0.0,
+          "p": 0.0003108003108003108,
+          "p_bonf_6": 0.0018648018648018648
+        },
+        "tiwal_vs_mufassal": {
+          "U": 81.0,
+          "p": 0.0016183930225546368,
+          "p_bonf_6": 0.00971035813532782
+        },
+        "tiwal_vs_other": {
+          "U": 56.0,
+          "p": 0.008880457147466133,
+          "p_bonf_6": 0.0532827428847968
+        },
+        "hawamim_vs_mufassal": {
+          "U": 101.0,
+          "p": 0.016609271351982105,
+          "p_bonf_6": 0.09965562811189263
+        },
+        "hawamim_vs_other": {
+          "U": 142.0,
+          "p": 0.4440465547012402,
+          "p_bonf_6": 1.0
+        },
+        "mufassal_vs_other": {
+          "U": 1698.0,
+          "p": 1.2642263788743196e-05,
+          "p_bonf_6": 7.585358273245918e-05
+        }
+      }
+    },
+    "C_juz30_vs_rest": {
+      "U_two": 2245.5,
+      "p_two": 6.842282563330893e-07,
+      "U_greater": 2245.5,
+      "p_greater": 3.4211412816654465e-07,
+      "mean_juz30": 0.0787704961991043,
+      "mean_rest": 0.038074106241585456,
+      "median_juz30": 0.08,
+      "median_rest": 0.02700617283950617,
+      "n_juz30": 37,
+      "n_rest": 77
+    },
+    "D_meccan_vs_medinan": {
+      "U_two": 1937.5,
+      "p_two": 1.3973667040533348e-06,
+      "U_greater": 1937.5,
+      "p_greater": 6.986833520266674e-07,
+      "mean_meccan": 0.05957292222921773,
+      "mean_medinan": 0.025819401009150558,
+      "median_meccan": 0.05490451516523846,
+      "median_medinan": 0.01894377652435848,
+      "n_meccan": 86,
+      "n_medinan": 28
+    }
+  },
+  "decisions": {
+    "A": {
+      "p": 0.0,
+      "rho": -0.4754903002314996,
+      "verdict": "PASS"
+    },
+    "B": {
+      "p": 0.000245333319695048,
+      "H": 19.22744387329698,
+      "verdict": "PASS"
+    },
+    "C": {
+      "p_directional": 0.9999999295021954,
+      "p_two": 1.4574629562095961e-07,
+      "verdict": "NULL"
+    },
+    "D": {
+      "p_directional": 0.9999999916382597,
+      "p_two": 1.737961072712474e-08,
+      "verdict": "NULL"
+    }
+  },
+  "top15_by_density": [
+    {
+      "surah": 1,
+      "density": 0.20689655172413793,
+      "tokens": 6,
+      "words": 29
+    },
+    {
+      "surah": 112,
+      "density": 0.2,
+      "tokens": 3,
+      "words": 15
+    },
+    {
+      "surah": 110,
+      "density": 0.1,
+      "tokens": 2,
+      "words": 20
+    },
+    {
+      "surah": 85,
+      "density": 0.08108108108108109,
+      "tokens": 9,
+      "words": 111
+    },
+    {
+      "surah": 62,
+      "density": 0.08064516129032258,
+      "tokens": 15,
+      "words": 186
+    },
+    {
+      "surah": 59,
+      "density": 0.07112970711297072,
+      "tokens": 34,
+      "words": 478
+    },
+    {
+      "surah": 64,
+      "density": 0.06818181818181818,
+      "tokens": 18,
+      "words": 264
+    },
+    {
+      "surah": 57,
+      "density": 0.05663430420711974,
+      "tokens": 35,
+      "words": 618
+    },
+    {
+      "surah": 61,
+      "density": 0.0546218487394958,
+      "tokens": 13,
+      "words": 238
+    },
+    {
+      "surah": 31,
+      "density": 0.051194539249146756,
+      "tokens": 30,
+      "words": 586
+    },
+    {
+      "surah": 63,
+      "density": 0.046153846153846156,
+      "tokens": 9,
+      "words": 195
+    },
+    {
+      "surah": 60,
+      "density": 0.04509283819628647,
+      "tokens": 17,
+      "words": 377
+    },
+    {
+      "surah": 48,
+      "density": 0.045,
+      "tokens": 27,
+      "words": 600
+    },
+    {
+      "surah": 66,
+      "density": 0.04477611940298507,
+      "tokens": 12,
+      "words": 268
+    },
+    {
+      "surah": 58,
+      "density": 0.044573643410852716,
+      "tokens": 23,
+      "words": 516
+    }
+  ],
+  "top15_by_diversity": [
+    {
+      "surah": 2,
+      "diversity": 17
+    },
+    {
+      "surah": 6,
+      "diversity": 15
+    },
+    {
+      "surah": 59,
+      "diversity": 15
+    },
+    {
+      "surah": 40,
+      "diversity": 14
+    },
+    {
+      "surah": 42,
+      "diversity": 14
+    },
+    {
+      "surah": 3,
+      "diversity": 12
+    },
+    {
+      "surah": 5,
+      "diversity": 12
+    },
+    {
+      "surah": 10,
+      "diversity": 12
+    },
+    {
+      "surah": 34,
+      "diversity": 12
+    },
+    {
+      "surah": 57,
+      "diversity": 12
+    },
+    {
+      "surah": 12,
+      "diversity": 9
+    },
+    {
+      "surah": 13,
+      "diversity": 9
+    },
+    {
+      "surah": 27,
+      "diversity": 9
+    },
+    {
+      "surah": 31,
+      "diversity": 9
+    },
+    {
+      "surah": 35,
+      "diversity": 9
+    }
+  ],
+  "top15_by_tokens": [
+    {
+      "surah": 2,
+      "tokens": 215
+    },
+    {
+      "surah": 3,
+      "tokens": 152
+    },
+    {
+      "surah": 4,
+      "tokens": 146
+    },
+    {
+      "surah": 9,
+      "tokens": 119
+    },
+    {
+      "surah": 5,
+      "tokens": 101
+    },
+    {
+      "surah": 6,
+      "tokens": 91
+    },
+    {
+      "surah": 16,
+      "tokens": 68
+    },
+    {
+      "surah": 10,
+      "tokens": 65
+    },
+    {
+      "surah": 22,
+      "tokens": 58
+    },
+    {
+      "surah": 8,
+      "tokens": 56
+    },
+    {
+      "surah": 40,
+      "tokens": 56
+    },
+    {
+      "surah": 33,
+      "tokens": 55
+    },
+    {
+      "surah": 39,
+      "tokens": 53
+    },
+    {
+      "surah": 24,
+      "tokens": 52
+    },
+    {
+      "surah": 7,
+      "tokens": 51
+    }
+  ]
+}

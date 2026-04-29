@@ -1,0 +1,166 @@
+{
+  "id": "H-NEW-930",
+  "title": "Modular-arithmetic patterns in verse-count distribution",
+  "prereg_sha256": "93ba966620068d10984923ea63b76aee8a8ec30adaa648da0e718b8ddd0ff390",
+  "seed": 20260507,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "n_surahs": 114,
+  "total_verses": 6236,
+  "verse_count_min": 3,
+  "verse_count_max": 286,
+  "moduli": [
+    7,
+    11,
+    13,
+    19
+  ],
+  "bonferroni_k": 4,
+  "alpha": 0.05,
+  "alpha_bon": 0.0125,
+  "per_modulus": {
+    "7": {
+      "modulus": 7,
+      "expected_per_cell": 16.285714285714285,
+      "observed_residue_counts": {
+        "0": 14,
+        "1": 21,
+        "2": 9,
+        "3": 17,
+        "4": 20,
+        "5": 19,
+        "6": 14
+      },
+      "chi2": 6.5964912280701755,
+      "df": 6,
+      "p_chi2": 0.359778919381481,
+      "verdict": "NULL (uniform-consistent)",
+      "rejected_at_alpha_bon": false,
+      "sensitivity_perm_check": null
+    },
+    "11": {
+      "modulus": 11,
+      "expected_per_cell": 10.363636363636363,
+      "observed_residue_counts": {
+        "0": 17,
+        "1": 11,
+        "2": 7,
+        "3": 8,
+        "4": 6,
+        "5": 9,
+        "6": 8,
+        "7": 13,
+        "8": 19,
+        "9": 9,
+        "10": 7
+      },
+      "chi2": 17.614035087719298,
+      "df": 10,
+      "p_chi2": 0.06183396181618617,
+      "verdict": "NULL (uniform-consistent)",
+      "rejected_at_alpha_bon": false,
+      "sensitivity_perm_check": null
+    },
+    "13": {
+      "modulus": 13,
+      "expected_per_cell": 8.76923076923077,
+      "observed_residue_counts": {
+        "0": 9,
+        "1": 5,
+        "2": 6,
+        "3": 9,
+        "4": 9,
+        "5": 13,
+        "6": 10,
+        "7": 11,
+        "8": 12,
+        "9": 5,
+        "10": 7,
+        "11": 11,
+        "12": 7
+      },
+      "chi2": 9.3859649122807,
+      "df": 12,
+      "p_chi2": 0.6696580674053372,
+      "verdict": "NULL (uniform-consistent)",
+      "rejected_at_alpha_bon": false,
+      "sensitivity_perm_check": null
+    },
+    "19": {
+      "modulus": 19,
+      "expected_per_cell": 6.0,
+      "observed_residue_counts": {
+        "0": 4,
+        "1": 5,
+        "2": 7,
+        "3": 8,
+        "4": 5,
+        "5": 8,
+        "6": 5,
+        "7": 7,
+        "8": 6,
+        "9": 5,
+        "10": 4,
+        "11": 10,
+        "12": 7,
+        "13": 3,
+        "14": 6,
+        "15": 5,
+        "16": 7,
+        "17": 5,
+        "18": 7
+      },
+      "chi2": 8.666666666666666,
+      "df": 18,
+      "p_chi2": 0.9669716492144371,
+      "verdict": "NULL (uniform-consistent)",
+      "rejected_at_alpha_bon": false,
+      "sensitivity_perm_check": {
+        "n_perms": 10000,
+        "p_perm": 0.9741,
+        "chi2_observed_check": 8.666666666666666,
+        "note": "Multinomial-permutation sensitivity check; expected cell E=6 is just above the \u03c7\u00b2-asymptotic E\u22655 floor."
+      }
+    }
+  },
+  "family_verdict": "NULL-FAMILY: verse-counts modularly random under {7,11,13,19}",
+  "n_rejects_at_alpha_bon": 0,
+  "h2_residue_zero": {
+    "7": {
+      "modulus": 7,
+      "count_residue_0": 14,
+      "expected_residue_0": 16.285714285714285,
+      "p_two_sided_binomial": null,
+      "note": "H1 did not reject; H2 not invoked (per pre-reg)."
+    },
+    "11": {
+      "modulus": 11,
+      "count_residue_0": 17,
+      "expected_residue_0": 10.363636363636363,
+      "p_two_sided_binomial": null,
+      "note": "H1 did not reject; H2 not invoked (per pre-reg)."
+    },
+    "13": {
+      "modulus": 13,
+      "count_residue_0": 9,
+      "expected_residue_0": 8.76923076923077,
+      "p_two_sided_binomial": null,
+      "note": "H1 did not reject; H2 not invoked (per pre-reg)."
+    },
+    "19": {
+      "modulus": 19,
+      "count_residue_0": 4,
+      "expected_residue_0": 6.0,
+      "p_two_sided_binomial": null,
+      "note": "H1 did not reject; H2 not invoked (per pre-reg)."
+    }
+  },
+  "h4a_mushaf_permutation_invariant": true,
+  "h4a_note": "\u03c7\u00b2(V mod m) depends only on the multiset {V_s}, not on the surah-position assignment. Mushaf-permutation null is mathematically a no-op for this statistic. Sanity-check verified empirically below for m=19.",
+  "h4b_data_gap": true,
+  "h4b_note": "No clean per-poem line-count tabulation on disk in tabular form for pre-Islamic d\u012bw\u0101n corpus. Reported as DATA-GAP.",
+  "h4a_empirical_invariance_check": {
+    "n_perms": 1000,
+    "n_chi2_differs_from_observed": 0,
+    "invariance_confirmed": true
+  }
+}

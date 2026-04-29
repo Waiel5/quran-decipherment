@@ -1,0 +1,323 @@
+{
+  "hypothesis": "H-NEW-201",
+  "seed": 20260419,
+  "rules_tuple": "(no-tashkeel; whitespace-collapsed; basmala-only-in-Q1)",
+  "method": {
+    "graph": "top-K=5 directed weighted (edge weight = Jaccard), no symmetrisation",
+    "pagerank": "damping=0.85, n_iter=100, uniform personalisation, dangling → uniform",
+    "bonferroni_k": 2,
+    "alpha_family": 0.05,
+    "alpha_test": 0.025
+  },
+  "graph_stats": {
+    "n_nodes": 6236,
+    "n_directed_edges": 31157,
+    "n_dangling": 3,
+    "mean_top1_sim": 0.3345706667919703,
+    "mean_top5_sim": 0.19984880452238066,
+    "convergence_trace": {
+      "10": {
+        "l1_change": 0.009149991522649448,
+        "total_mass": 1.0
+      },
+      "50": {
+        "l1_change": 2.7622055415659638e-06,
+        "total_mass": 1.0
+      },
+      "100": {
+        "l1_change": 3.9475049904623373e-10,
+        "total_mass": 0.9999999999999999
+      }
+    }
+  },
+  "top20_by_pagerank": [
+    {
+      "rank": 1,
+      "idx": 5126,
+      "surah": 59,
+      "ayah": 1,
+      "pagerank": 0.0032148701884593105,
+      "text_preview": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم"
+    },
+    {
+      "rank": 2,
+      "idx": 5075,
+      "surah": 57,
+      "ayah": 1,
+      "pagerank": 0.0031932176435604067,
+      "text_preview": "سبح لله ما في السماوات والأرض ۖ وهو العزيز الحكيم"
+    },
+    {
+      "rank": 3,
+      "idx": 3602,
+      "surah": 33,
+      "ayah": 70,
+      "pagerank": 0.0031855702454251216,
+      "text_preview": "يا أيها الذين آمنوا اتقوا الله وقولوا قولا سديدا"
+    },
+    {
+      "rank": 4,
+      "idx": 5163,
+      "surah": 61,
+      "ayah": 1,
+      "pagerank": 0.0031674309229573314,
+      "text_preview": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم"
+    },
+    {
+      "rank": 5,
+      "idx": 1353,
+      "surah": 9,
+      "ayah": 119,
+      "pagerank": 0.0029882358161888393,
+      "text_preview": "يا أيها الذين آمنوا اتقوا الله وكونوا مع الصادقين"
+    },
+    {
+      "rank": 6,
+      "idx": 45,
+      "surah": 2,
+      "ayah": 39,
+      "pagerank": 0.002759472672154404,
+      "text_preview": "والذين كفروا وكذبوا بآياتنا أولئك أصحاب النار ۖ هم فيها خالدون"
+    },
+    {
+      "rank": 7,
+      "idx": 678,
+      "surah": 5,
+      "ayah": 10,
+      "pagerank": 0.002609809324745697,
+      "text_preview": "والذين كفروا وكذبوا بآياتنا أولئك أصحاب الجحيم"
+    },
+    {
+      "rank": 8,
+      "idx": 4225,
+      "surah": 41,
+      "ayah": 8,
+      "pagerank": 0.0025632441050281126,
+      "text_preview": "إن الذين آمنوا وعملوا الصالحات لهم أجر غير ممنون"
+    },
+    {
+      "rank": 9,
+      "idx": 5908,
+      "surah": 84,
+      "ayah": 25,
+      "pagerank": 0.002562661752260073,
+      "text_preview": "إلا الذين آمنوا وعملوا الصالحات لهم أجر غير ممنون"
+    },
+    {
+      "rank": 10,
+      "idx": 788,
+      "surah": 5,
+      "ayah": 120,
+      "pagerank": 0.002550625568014591,
+      "text_preview": "لله ملك السماوات والأرض وما فيهن ۚ وهو على كل شيء قدير"
+    },
+    {
+      "rank": 11,
+      "idx": 481,
+      "surah": 3,
+      "ayah": 189,
+      "pagerank": 0.0025449386121623977,
+      "text_preview": "ولله ملك السماوات والأرض ۗ والله على كل شيء قدير"
+    },
+    {
+      "rank": 12,
+      "idx": 754,
+      "surah": 5,
+      "ayah": 86,
+      "pagerank": 0.0025403898358089144,
+      "text_preview": "والذين كفروا وكذبوا بآياتنا أولئك أصحاب الجحيم"
+    },
+    {
+      "rank": 13,
+      "idx": 3476,
+      "surah": 31,
+      "ayah": 8,
+      "pagerank": 0.002408324365204772,
+      "text_preview": "إن الذين آمنوا وعملوا الصالحات لهم جنات النعيم"
+    },
+    {
+      "rank": 14,
+      "idx": 4275,
+      "surah": 42,
+      "ayah": 4,
+      "pagerank": 0.002358660055438291,
+      "text_preview": "له ما في السماوات وما في الأرض ۖ وهو العلي العظيم"
+    },
+    {
+      "rank": 15,
+      "idx": 3573,
+      "surah": 33,
+      "ayah": 41,
+      "pagerank": 0.002213474169798275,
+      "text_preview": "يا أيها الذين آمنوا اذكروا الله ذكرا كثيرا"
+    },
+    {
+      "rank": 16,
+      "idx": 5208,
+      "surah": 64,
+      "ayah": 10,
+      "pagerank": 0.0022101332278914284,
+      "text_preview": "والذين كفروا وكذبوا بآياتنا أولئك أصحاب النار خالدين فيها ۖ وبئس المصير"
+    },
+    {
+      "rank": 17,
+      "idx": 2651,
+      "surah": 22,
+      "ayah": 57,
+      "pagerank": 0.0021687150635641005,
+      "text_preview": "والذين كفروا وكذبوا بآياتنا فأولئك لهم عذاب مهين"
+    },
+    {
+      "rank": 18,
+      "idx": 5917,
+      "surah": 85,
+      "ayah": 9,
+      "pagerank": 0.002039087954359207,
+      "text_preview": "الذي له ملك السماوات والأرض ۚ والله على كل شيء شهيد"
+    },
+    {
+      "rank": 19,
+      "idx": 5076,
+      "surah": 57,
+      "ayah": 2,
+      "pagerank": 0.001991487103410227,
+      "text_preview": "له ملك السماوات والأرض ۖ يحيي ويميت ۖ وهو على كل شيء قدير"
+    },
+    {
+      "rank": 20,
+      "idx": 394,
+      "surah": 3,
+      "ayah": 102,
+      "pagerank": 0.0019084456124080723,
+      "text_preview": "يا أيها الذين آمنوا اتقوا الله حق تقاته ولا تموتن إلا وأنتم مسلمون"
+    }
+  ],
+  "T1": {
+    "test": "T1_classical_celebration_top10",
+    "status": "TESTED",
+    "n_classical": 100,
+    "p_null": 0.01603592046183451,
+    "top10_hits": [],
+    "n_hits": 0,
+    "p_value_binomial": 0.9999999999999996,
+    "alpha_test": 0.025,
+    "pass_": false
+  },
+  "T2": {
+    "test": "T2_fatiha_pagerank_sum",
+    "status": "TESTED",
+    "fatiha_idxs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "S_F": 0.002675108326397963,
+    "n_null_bundles": 10000,
+    "null_mean": 0.0011244175457326235,
+    "null_std": 0.000629046728196514,
+    "null_p97_5": 0.0029083298795302137,
+    "null_p99_9": 0.004555206284479832,
+    "S_F_zscore": 2.4651440205582063,
+    "p_value": 0.0334,
+    "alpha_test": 0.025,
+    "pass_": false
+  },
+  "q1_aggregate_rank": {
+    "q1_sum_pagerank": 0.002675108326397963,
+    "percentile_vs_null": 96.66,
+    "z_vs_null": 2.4651440205582063
+  },
+  "h167_hub_overlap": {
+    "h167_top10_refs": [
+      [
+        55,
+        13
+      ],
+      [
+        77,
+        15
+      ],
+      [
+        26,
+        108
+      ],
+      [
+        26,
+        8
+      ],
+      [
+        26,
+        9
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        136
+      ],
+      [
+        3,
+        16
+      ],
+      [
+        6,
+        21
+      ],
+      [
+        26,
+        226
+      ]
+    ],
+    "h201_top10_refs": [
+      [
+        59,
+        1
+      ],
+      [
+        57,
+        1
+      ],
+      [
+        33,
+        70
+      ],
+      [
+        61,
+        1
+      ],
+      [
+        9,
+        119
+      ],
+      [
+        2,
+        39
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        41,
+        8
+      ],
+      [
+        84,
+        25
+      ],
+      [
+        5,
+        120
+      ]
+    ],
+    "overlap": [],
+    "overlap_count": 0
+  },
+  "prereg": "findings/phase-b-hypotheses/h-new-201-pagerank-verse-twin-prereg.md"
+}

@@ -1,0 +1,260 @@
+{
+  "id": "H-NEW-244",
+  "seed": 20260419,
+  "prereg_sha256": "02208c5f561c15185daf1d1cc27e2dd66cb8a636944d2e6f94f3f9e12436d1b6",
+  "rules_tuple": "(no-tashkeel, hafs-kufan, 7-verse sliding windows, char-4-gram, Dirichlet α=0.5, seed 20260419)",
+  "cell_A": {
+    "q1_kl": 1.0260677830124851,
+    "q1_rank": 4920,
+    "total_windows": 6230,
+    "q1_percentile": 0.7897271268057785,
+    "alpha_bon": 0.05,
+    "pass": false,
+    "top_15_windows_by_low_kl": [
+      {
+        "window_start": 668,
+        "verse_start": "Q 4:176",
+        "verse_end": "Q 5:6",
+        "kl": 0.9152847126161093
+      },
+      {
+        "window_start": 259,
+        "verse_start": "Q 2:253",
+        "verse_end": "Q 2:259",
+        "kl": 0.9168355991291962
+      },
+      {
+        "window_start": 670,
+        "verse_start": "Q 5:2",
+        "verse_end": "Q 5:8",
+        "kl": 0.9200653180391241
+      },
+      {
+        "window_start": 669,
+        "verse_start": "Q 5:1",
+        "verse_end": "Q 5:7",
+        "kl": 0.9208929299870339
+      },
+      {
+        "window_start": 218,
+        "verse_start": "Q 2:212",
+        "verse_end": "Q 2:218",
+        "kl": 0.9212036443744602
+      },
+      {
+        "window_start": 217,
+        "verse_start": "Q 2:211",
+        "verse_end": "Q 2:217",
+        "kl": 0.9228219143727275
+      },
+      {
+        "window_start": 286,
+        "verse_start": "Q 2:280",
+        "verse_end": "Q 2:286",
+        "kl": 0.9237732784429251
+      },
+      {
+        "window_start": 258,
+        "verse_start": "Q 2:252",
+        "verse_end": "Q 2:258",
+        "kl": 0.9257564804082236
+      },
+      {
+        "window_start": 219,
+        "verse_start": "Q 2:213",
+        "verse_end": "Q 2:219",
+        "kl": 0.9259934442655505
+      },
+      {
+        "window_start": 667,
+        "verse_start": "Q 4:175",
+        "verse_end": "Q 5:5",
+        "kl": 0.9265521318355704
+      },
+      {
+        "window_start": 287,
+        "verse_start": "Q 2:281",
+        "verse_end": "Q 3:1",
+        "kl": 0.92780544938769
+      },
+      {
+        "window_start": 581,
+        "verse_start": "Q 4:89",
+        "verse_end": "Q 4:95",
+        "kl": 0.9297669275879709
+      },
+      {
+        "window_start": 443,
+        "verse_start": "Q 3:151",
+        "verse_end": "Q 3:157",
+        "kl": 0.9307908977774688
+      },
+      {
+        "window_start": 716,
+        "verse_start": "Q 5:48",
+        "verse_end": "Q 5:54",
+        "kl": 0.931181300835761
+      },
+      {
+        "window_start": 288,
+        "verse_start": "Q 2:282",
+        "verse_end": "Q 3:2",
+        "kl": 0.9313056286414095
+      }
+    ],
+    "mw5_random_contig_start": 3963,
+    "mw5_random_contig_rank": 5393,
+    "mw5_random_contig_percentile": 0.8656500802568218,
+    "mw5_contig_pass": true,
+    "mw5_random_noncontig_kl": 0.9989861112551003,
+    "mw5_random_noncontig_rank_approx": 2900,
+    "mw5_random_noncontig_percentile_approx": 0.4654895666131621,
+    "mw5_noncontig_pass": true
+  },
+  "cell_B": {
+    "q1_root_count": 18,
+    "q1_mean_cross_presence_rate": 0.5,
+    "null_mean": 0.39828960786679957,
+    "null_sd": 0.03564495895875168,
+    "p_upper": 0.001999800019998,
+    "n_null": 10000,
+    "alpha_bon": 0.0167,
+    "pass": true
+  },
+  "cell_C": {
+    "q1_per_verse_kl": 0.14658111185892644,
+    "q1_rank": 102,
+    "q1_percentile": 0.8947368421052632,
+    "alpha_bon": 0.05,
+    "pass": false,
+    "top_15_surahs_by_low_per_verse_kl": [
+      {
+        "sid": 2,
+        "per_verse_kl": 0.0012911753319694785,
+        "raw_kl": 0.3692761449432708
+      },
+      {
+        "sid": 3,
+        "per_verse_kl": 0.002133525492643952,
+        "raw_kl": 0.4267050985287904
+      },
+      {
+        "sid": 7,
+        "per_verse_kl": 0.002282306144745993,
+        "raw_kl": 0.4701550658176745
+      },
+      {
+        "sid": 4,
+        "per_verse_kl": 0.0027595174339049336,
+        "raw_kl": 0.4856750683672683
+      },
+      {
+        "sid": 6,
+        "per_verse_kl": 0.0029112154344309044,
+        "raw_kl": 0.4803505466810992
+      },
+      {
+        "sid": 26,
+        "per_verse_kl": 0.0032632471791459784,
+        "raw_kl": 0.7407571096661371
+      },
+      {
+        "sid": 5,
+        "per_verse_kl": 0.004056558139594641,
+        "raw_kl": 0.48678697675135685
+      },
+      {
+        "sid": 9,
+        "per_verse_kl": 0.0042150242218073775,
+        "raw_kl": 0.5437381246131517
+      },
+      {
+        "sid": 16,
+        "per_verse_kl": 0.004400555678001757,
+        "raw_kl": 0.5632711267842249
+      },
+      {
+        "sid": 37,
+        "per_verse_kl": 0.004507448713256821,
+        "raw_kl": 0.8203556658127413
+      },
+      {
+        "sid": 11,
+        "per_verse_kl": 0.004976199192055491,
+        "raw_kl": 0.6120725006228254
+      },
+      {
+        "sid": 10,
+        "per_verse_kl": 0.005040350282970556,
+        "raw_kl": 0.5493981808437906
+      },
+      {
+        "sid": 20,
+        "per_verse_kl": 0.0057496479079261744,
+        "raw_kl": 0.7762024675700335
+      },
+      {
+        "sid": 23,
+        "per_verse_kl": 0.006229621182692022,
+        "raw_kl": 0.7350952995576586
+      },
+      {
+        "sid": 17,
+        "per_verse_kl": 0.006359066262173569,
+        "raw_kl": 0.7058563551012662
+      }
+    ],
+    "bottom_10_surahs_by_per_verse_kl": [
+      {
+        "sid": 114,
+        "per_verse_kl": 0.17238067666280377,
+        "raw_kl": 1.0342840599768226
+      },
+      {
+        "sid": 97,
+        "per_verse_kl": 0.20621582942556108,
+        "raw_kl": 1.0310791471278054
+      },
+      {
+        "sid": 105,
+        "per_verse_kl": 0.2074834976512922,
+        "raw_kl": 1.037417488256461
+      },
+      {
+        "sid": 113,
+        "per_verse_kl": 0.2077290970911708,
+        "raw_kl": 1.038645485455854
+      },
+      {
+        "sid": 111,
+        "per_verse_kl": 0.207735857651636,
+        "raw_kl": 1.03867928825818
+      },
+      {
+        "sid": 112,
+        "per_verse_kl": 0.2589682407457023,
+        "raw_kl": 1.0358729629828092
+      },
+      {
+        "sid": 106,
+        "per_verse_kl": 0.25956763626678214,
+        "raw_kl": 1.0382705450671286
+      },
+      {
+        "sid": 110,
+        "per_verse_kl": 0.3437623395196241,
+        "raw_kl": 1.0312870185588723
+      },
+      {
+        "sid": 103,
+        "per_verse_kl": 0.3440113637768161,
+        "raw_kl": 1.0320340913304484
+      },
+      {
+        "sid": 108,
+        "per_verse_kl": 0.3468447050347568,
+        "raw_kl": 1.0405341151042704
+      }
+    ]
+  }
+}

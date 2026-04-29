@@ -1,0 +1,118 @@
+{
+  "finding_id": "h-new-168",
+  "title": "Q 16-25 isolate-core on H-NEW-163 dispersion axis — TEMPLATE vs CONCENTRATOR",
+  "pre_reg_sha256": "12abd1be5b28a19aa9e22f176a41871068fa1ff254ced774055f2c809d810988",
+  "seed": 20260419,
+  "date": "2026-04-17",
+  "bonferroni": {
+    "k": 1,
+    "alpha_bon": 0.05,
+    "family": "h-new-168-isolate-core-dispersion"
+  },
+  "corpus": {
+    "mean_dispersion": 0.31619979401541126,
+    "median_dispersion": 0.3120906432748538,
+    "sd": 0.059497447981654496
+  },
+  "per_surah_q16_q25": {
+    "16": {
+      "dispersion": 0.2575222973635205,
+      "rank": 95,
+      "n_stems": 358
+    },
+    "17": {
+      "dispersion": 0.25551451728737046,
+      "rank": 96,
+      "n_stems": 342
+    },
+    "18": {
+      "dispersion": 0.23893405600722672,
+      "rank": 105,
+      "n_stems": 369
+    },
+    "19": {
+      "dispersion": 0.28826249724730235,
+      "rank": 80,
+      "n_stems": 239
+    },
+    "20": {
+      "dispersion": 0.2527886073207711,
+      "rank": 97,
+      "n_stems": 324
+    },
+    "21": {
+      "dispersion": 0.2738448233259204,
+      "rank": 88,
+      "n_stems": 284
+    },
+    "22": {
+      "dispersion": 0.25903936670945654,
+      "rank": 93,
+      "n_stems": 328
+    },
+    "23": {
+      "dispersion": 0.28937657797630606,
+      "rank": 79,
+      "n_stems": 271
+    },
+    "24": {
+      "dispersion": 0.26734519224891495,
+      "rank": 90,
+      "n_stems": 287
+    },
+    "25": {
+      "dispersion": 0.29729824561403506,
+      "rank": 76,
+      "n_stems": 250
+    }
+  },
+  "zone_summary": {
+    "window_mean_dispersion": 0.2679926181100824,
+    "window_mean_rank": 89.9
+  },
+  "mw5": {
+    "q1_rank": 2,
+    "q1_dispersion": 0.5043859649122807,
+    "mw5a_pass": true,
+    "q2_rank": 113,
+    "q2_dispersion": 0.20298395561553456,
+    "mw5b_pass": true
+  },
+  "cell_A_contiguous_null": {
+    "n_windows": 105,
+    "q16_q25_rank_ascending": 4,
+    "p_one_sided_lower": 0.0380952380952381,
+    "pass": true
+  },
+  "cell_B_permutation_null": {
+    "n_perm": 10000,
+    "null_mean": 0.31640826449605597,
+    "null_sd": 0.017874456019338826,
+    "p_one_sided_lower": 0.0006,
+    "pass": true
+  },
+  "cell_C_internal_overlap": {
+    "n_pairs": 45,
+    "zone_mean_jaccard": 0.31893279018581266,
+    "zone_median_jaccard": 0.3163064833005894,
+    "null_jaccard_mean": 0.13487744594448037,
+    "null_jaccard_sd": 0.03939347126804085,
+    "p_zone_above_null": 0.0001,
+    "p_zone_below_null": 0.9999,
+    "top_pair": {
+      "pair": [
+        16,
+        22
+      ],
+      "jaccard": 0.4057377049180328
+    },
+    "bottom_pair": {
+      "pair": [
+        19,
+        24
+      ],
+      "jaccard": 0.26139088729016785
+    }
+  },
+  "verdict": "CONFIRMED-CONCENTRATOR-INTERNALLY-SIMILAR — Q 16-25 below-median dispersion AND pairs share more than null"
+}

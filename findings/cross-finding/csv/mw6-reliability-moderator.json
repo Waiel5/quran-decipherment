@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "seed": 20260413,
+    "n_iter": 20000,
+    "estimator": "Beta-binomial Jeffreys posterior Beta(c+0.5, n-c+0.5)",
+    "restriction": "classical-medieval era only (avoids era\u00d7tier confound)",
+    "rules_tuple": "(no-tashkeel, orthographic-token & lemma, graphemes, basmala-counted-only-in-surah-1, hafs-kufan, mashriqi)"
+  },
+  "tier_counts_classical": {
+    "PENDING": {
+      "CONFIRMED": 5,
+      "REFUTED": 0
+    },
+    "SECONDARY-TRIANGULATED": {
+      "CONFIRMED": 2,
+      "REFUTED": 0
+    },
+    "VERIFIED": {
+      "CONFIRMED": 10,
+      "REFUTED": 6
+    },
+    "SECONDARY": {
+      "CONFIRMED": 31,
+      "REFUTED": 6
+    },
+    "UNTAGGED": {
+      "CONFIRMED": 0,
+      "REFUTED": 2
+    }
+  },
+  "tier_posterior_rates": {
+    "PENDING": {
+      "mean": 0.9164340613357972,
+      "median": 0.9575350903357628,
+      "ci_low": 0.6247514681156071,
+      "ci_high": 0.9999029227022851,
+      "n": 5,
+      "confirmed": 5,
+      "refuted": 0,
+      "raw_rate": 1.0
+    },
+    "SECONDARY-TRIANGULATED": {
+      "mean": 0.8343099714168603,
+      "median": 0.906144719071974,
+      "ci_low": 0.33739327786161916,
+      "ci_high": 0.9998049830881706,
+      "n": 2,
+      "confirmed": 2,
+      "refuted": 0,
+      "raw_rate": 1.0
+    },
+    "VERIFIED": {
+      "mean": 0.6178394559563911,
+      "median": 0.6218310057644125,
+      "ci_low": 0.38388170402364236,
+      "ci_high": 0.8269045713965955,
+      "n": 16,
+      "confirmed": 10,
+      "refuted": 6,
+      "raw_rate": 0.625
+    },
+    "SECONDARY": {
+      "mean": 0.8288126119000503,
+      "median": 0.8341190042453502,
+      "ci_low": 0.6962157967492132,
+      "ci_high": 0.9293453863600082,
+      "n": 37,
+      "confirmed": 31,
+      "refuted": 6,
+      "raw_rate": 0.8378378378378378
+    },
+    "UNTAGGED": {
+      "mean": 0.16519674559841696,
+      "median": 0.09526811685649605,
+      "ci_low": 0.00021042372117029902,
+      "ci_high": 0.6613973474918233,
+      "n": 2,
+      "confirmed": 0,
+      "refuted": 2,
+      "raw_rate": 0.0
+    }
+  },
+  "cross_tier_ratios": {
+    "VERIFIED_vs_SECONDARY": {
+      "median": 0.7478093027444489,
+      "mean": 0.7497118344956892,
+      "ci_low": 0.45704334585059997,
+      "ci_high": 1.0473140765842013,
+      "p_ratio_gt_1": 0.04845,
+      "n_finite": 20000
+    },
+    "VERIFIED_vs_PENDING": {
+      "median": 0.6720261166811694,
+      "mean": 0.6864071579900106,
+      "ci_low": 0.4081666874148562,
+      "ci_high": 1.072181513375614,
+      "p_ratio_gt_1": 0.0384,
+      "n_finite": 20000
+    },
+    "SECONDARY_vs_PENDING": {
+      "median": 0.8870807924326206,
+      "mean": 0.9207649988981577,
+      "ci_low": 0.7241805227442986,
+      "ci_high": 1.3539937576097232,
+      "p_ratio_gt_1": 0.18105,
+      "n_finite": 20000
+    },
+    "VERIFIED_vs_SECONDARY-TRIANGULATED": {
+      "median": 0.7187171533344032,
+      "mean": 0.8231484757367309,
+      "ci_low": 0.42141149171111963,
+      "ci_high": 1.8680904860259835,
+      "p_ratio_gt_1": 0.1544,
+      "n_finite": 20000
+    }
+  },
+  "sensitivity_S1_high_confidence_collapsed": {
+    "definition": "VERIFIED + SECONDARY-TRIANGULATED merged into HIGH-CONFIDENCE",
+    "high_confidence_rate": {
+      "mean": 0.658394545441395,
+      "median": 0.6636917106753821,
+      "ci_low": 0.43773662408481717,
+      "ci_high": 0.8461339969389162,
+      "n": 18,
+      "confirmed": 12,
+      "refuted": 6,
+      "raw_rate": 0.6666666666666666
+    },
+    "high_confidence_vs_secondary_ratio": {
+      "median": 0.7996277048117224,
+      "mean": 0.7987395972436988,
+      "ci_low": 0.5190602543559937,
+      "ci_high": 1.078834247682799,
+      "p_ratio_gt_1": 0.0786,
+      "n_finite": 20000
+    }
+  },
+  "sensitivity_S2_specificity_geq_4": {
+    "definition": "restrict to specificity >= 4 (more-testable claims only)",
+    "tier_posterior_rates": {
+      "PENDING": {
+        "mean": 0.8326036587610642,
+        "median": 0.9032365373556046,
+        "ci_low": 0.3283057665641867,
+        "ci_high": 0.9997927595118429,
+        "n": 2,
+        "confirmed": 2,
+        "refuted": 0,
+        "raw_rate": 1.0
+      },
+      "SECONDARY-TRIANGULATED": {
+        "mean": 0.8340596000123067,
+        "median": 0.905723593090416,
+        "ci_low": 0.3322889870198467,
+        "ci_high": 0.9997819127412867,
+        "n": 2,
+        "confirmed": 2,
+        "refuted": 0,
+        "raw_rate": 1.0
+      },
+      "VERIFIED": {
+        "mean": 0.7236634628850487,
+        "median": 0.7418067280545741,
+        "ci_low": 0.41193216742099337,
+        "ci_high": 0.9433495431782415,
+        "n": 8,
+        "confirmed": 6,
+        "refuted": 2,
+        "raw_rate": 0.75
+      },
+      "SECONDARY": {
+        "mean": 0.844723700823929,
+        "median": 0.8521622877458841,
+        "ci_low": 0.6965642442304808,
+        "ci_high": 0.9501211572533159,
+        "n": 28,
+        "confirmed": 24,
+        "refuted": 4,
+        "raw_rate": 0.8571428571428571
+      }
+    },
+    "tier_specificity_means_classical": {
+      "PENDING": 3.6,
+      "SECONDARY-TRIANGULATED": 4.5,
+      "VERIFIED": 3.9375,
+      "SECONDARY": 4.297297297297297,
+      "UNTAGGED": 3.0
+    }
+  },
+  "sensitivity_S3_structural_formal_only": {
+    "definition": "restrict to substance_type=structural-formal (drops numerical-gematric)",
+    "tier_posterior_rates": {
+      "PENDING": {
+        "mean": 0.8997167254635923,
+        "median": 0.948139082808205,
+        "ci_low": 0.5495921496814207,
+        "ci_high": 0.999906268649195,
+        "n": 4,
+        "confirmed": 4,
+        "refuted": 0,
+        "raw_rate": 1.0
+      },
+      "SECONDARY-TRIANGULATED": {
+        "mean": 0.8336897381166597,
+        "median": 0.9049750906263904,
+        "ci_low": 0.33336889101108447,
+        "ci_high": 0.9997978215147106,
+        "n": 2,
+        "confirmed": 2,
+        "refuted": 0,
+        "raw_rate": 1.0
+      },
+      "VERIFIED": {
+        "mean": 0.4513627082895233,
+        "median": 0.4467409965348886,
+        "ci_low": 0.1749050764175656,
+        "ci_high": 0.7454567074137494,
+        "n": 9,
+        "confirmed": 4,
+        "refuted": 5,
+        "raw_rate": 0.4444444444444444
+      },
+      "SECONDARY": {
+        "mean": 0.7880213729872322,
+        "median": 0.7950174192784182,
+        "ci_low": 0.6152493290227995,
+        "ci_high": 0.9201195926888426,
+        "n": 25,
+        "confirmed": 20,
+        "refuted": 5,
+        "raw_rate": 0.8
+      },
+      "UNTAGGED": {
+        "mean": 0.1636281786662274,
+        "median": 0.09348470738263762,
+        "ci_low": 0.00024000007899514534,
+        "ci_high": 0.6629627134600673,
+        "n": 2,
+        "confirmed": 0,
+        "refuted": 2,
+        "raw_rate": 0.0
+      }
+    }
+  }
+}

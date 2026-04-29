@@ -1,0 +1,352 @@
+{
+  "finding_id": "h-new-288-1",
+  "title": "Q108 residualized-pool medoid test",
+  "pre_reg_sha256": "cc8fc48139c8ff5686f6b636841fb83fc05d810d78042dad4ee11b803da9d96a",
+  "seed": 20260419,
+  "date": "2026-04-19",
+  "parent_backdrop": [
+    "h-new-273",
+    "h-new-284",
+    "h-new-288"
+  ],
+  "rules_tuple": "(114 surahs; QAC v0.4 STEM roots; K=500 top roots; literal family = count/N_i plus flat alpha=0.5; residualized family = raw counts plus alpha_i = 0.5 * mean_tokens / N_i; fixed pool P defined from revelation-order.csv and hafs-verse-counts.tsv only; mean pairwise distance medoid ranks computed inside P; primary metrics = Fisher-Rao, Jensen-Shannon, Euclidean L2, cosine-angle; total variation diagnostic only)",
+  "pool_definition": {
+    "noldeke_phase": "Early Meccan",
+    "verse_count_max": 17,
+    "pool_surahs": [
+      1,
+      86,
+      91,
+      93,
+      94,
+      95,
+      97,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      111,
+      112,
+      113,
+      114
+    ],
+    "pool_size": 22,
+    "pool_verse_counts": {
+      "1": 7,
+      "86": 17,
+      "91": 15,
+      "93": 11,
+      "94": 8,
+      "95": 8,
+      "97": 5,
+      "99": 8,
+      "100": 11,
+      "101": 11,
+      "102": 8,
+      "103": 3,
+      "104": 9,
+      "105": 5,
+      "106": 4,
+      "107": 7,
+      "108": 3,
+      "109": 6,
+      "111": 5,
+      "112": 4,
+      "113": 5,
+      "114": 6
+    }
+  },
+  "length_context": {
+    "mean_surah_tokens": 438.3157894736842,
+    "q108_total_stem_tokens": 7,
+    "q108_top500_tokens": 4,
+    "q108_top500_coverage": 0.5714285714285714,
+    "q108_effective_alpha_residualized": 31.30827067669173
+  },
+  "primary_metrics": [
+    "fisher_rao",
+    "jensen_shannon",
+    "euclidean_l2",
+    "cosine_angle"
+  ],
+  "diagnostic_metrics": [
+    "total_variation"
+  ],
+  "primary_statistics": {
+    "c_res_rank1": 4,
+    "delta_med_literal_minus_residualized": 14.0,
+    "decision_rule": "POOL-MEDOID-SEPARATION iff C_res >= 3 and Delta_med >= 10"
+  },
+  "per_metric_primary": [
+    {
+      "metric": "fisher_rao",
+      "literal_q108_mean_distance": 0.03160917923923775,
+      "literal_q108_rank": 15,
+      "literal_top5_medoids": [
+        [
+          91,
+          0.02556236106540168
+        ],
+        [
+          100,
+          0.026049864468145303
+        ],
+        [
+          86,
+          0.026732957578153242
+        ],
+        [
+          104,
+          0.027345980222622367
+        ],
+        [
+          111,
+          0.0274029034381434
+        ]
+      ],
+      "residualized_q108_mean_distance": 0.020301410351925883,
+      "residualized_q108_rank": 1,
+      "residualized_top5_medoids": [
+        [
+          108,
+          0.020301410351925883
+        ],
+        [
+          106,
+          0.021392170797408412
+        ],
+        [
+          103,
+          0.02139901740779319
+        ],
+        [
+          112,
+          0.02153780336635746
+        ],
+        [
+          107,
+          0.022768533045850487
+        ]
+      ],
+      "rank_gap_literal_minus_residualized": 14
+    },
+    {
+      "metric": "jensen_shannon",
+      "literal_q108_mean_distance": 0.011163875672500097,
+      "literal_q108_rank": 15,
+      "literal_top5_medoids": [
+        [
+          91,
+          0.00902854036274245
+        ],
+        [
+          100,
+          0.00920100838772494
+        ],
+        [
+          86,
+          0.009442136878984273
+        ],
+        [
+          104,
+          0.009659049528617002
+        ],
+        [
+          111,
+          0.00967913764321706
+        ]
+      ],
+      "residualized_q108_mean_distance": 0.007173894866914057,
+      "residualized_q108_rank": 1,
+      "residualized_top5_medoids": [
+        [
+          108,
+          0.007173894866914057
+        ],
+        [
+          106,
+          0.007559739444231878
+        ],
+        [
+          103,
+          0.007562000948894223
+        ],
+        [
+          112,
+          0.007611051908675522
+        ],
+        [
+          107,
+          0.008046225212575253
+        ]
+      ],
+      "rank_gap_literal_minus_residualized": 14
+    },
+    {
+      "metric": "euclidean_l2",
+      "literal_q108_mean_distance": 0.0015193702009989136,
+      "literal_q108_rank": 15,
+      "literal_top5_medoids": [
+        [
+          91,
+          0.0012158411410785775
+        ],
+        [
+          100,
+          0.0012388643818420635
+        ],
+        [
+          86,
+          0.001271269605192196
+        ],
+        [
+          104,
+          0.00129949254515986
+        ],
+        [
+          111,
+          0.001302063751770678
+        ]
+      ],
+      "residualized_q108_mean_distance": 0.0009539886856427106,
+      "residualized_q108_rank": 1,
+      "residualized_top5_medoids": [
+        [
+          108,
+          0.0009539886856427106
+        ],
+        [
+          106,
+          0.0010028334281826838
+        ],
+        [
+          103,
+          0.00100295763336975
+        ],
+        [
+          112,
+          0.0010097867336897055
+        ],
+        [
+          107,
+          0.0010656599083519354
+        ]
+      ],
+      "rank_gap_literal_minus_residualized": 14
+    },
+    {
+      "metric": "cosine_angle",
+      "literal_q108_mean_distance": 0.03396219045536636,
+      "literal_q108_rank": 15,
+      "literal_top5_medoids": [
+        [
+          91,
+          0.027178637849102485
+        ],
+        [
+          100,
+          0.027693242665638926
+        ],
+        [
+          86,
+          0.028417803727545713
+        ],
+        [
+          104,
+          0.029048664612208588
+        ],
+        [
+          111,
+          0.029106243278474053
+        ]
+      ],
+      "residualized_q108_mean_distance": 0.02132436768244935,
+      "residualized_q108_rank": 1,
+      "residualized_top5_medoids": [
+        [
+          108,
+          0.02132436768244935
+        ],
+        [
+          106,
+          0.022416518126436243
+        ],
+        [
+          103,
+          0.02241931144876612
+        ],
+        [
+          112,
+          0.02257199735694331
+        ],
+        [
+          107,
+          0.023821219592416495
+        ]
+      ],
+      "rank_gap_literal_minus_residualized": 14
+    }
+  ],
+  "per_metric_diagnostic": [
+    {
+      "metric": "total_variation",
+      "literal_q108_mean_distance": 0.00285651447315821,
+      "literal_q108_rank": 3,
+      "literal_top5_medoids": [
+        [
+          113,
+          0.002804882662986231
+        ],
+        [
+          100,
+          0.0028140785492481936
+        ],
+        [
+          108,
+          0.00285651447315821
+        ],
+        [
+          106,
+          0.0028995430453007767
+        ],
+        [
+          94,
+          0.0029180025070817722
+        ]
+      ],
+      "residualized_q108_mean_distance": 0.003199368582604334,
+      "residualized_q108_rank": 4,
+      "residualized_top5_medoids": [
+        [
+          113,
+          0.00316194985923605
+        ],
+        [
+          106,
+          0.0031717354568659485
+        ],
+        [
+          112,
+          0.0031814020296789614
+        ],
+        [
+          108,
+          0.003199368582604334
+        ],
+        [
+          103,
+          0.0032205493881274382
+        ]
+      ],
+      "rank_gap_literal_minus_residualized": -1
+    }
+  ],
+  "verdict": "POOL-MEDOID-SEPARATION"
+}

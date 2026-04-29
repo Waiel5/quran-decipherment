@@ -1,0 +1,2814 @@
+{
+  "id": "H-NEW-49",
+  "seed": 20260416,
+  "bonferroni_k": 5,
+  "alpha_bon": 0.01,
+  "rules_tuple": "(hafs-kufan; no-tashkeel; canonical 114; 29-muqaṭṭaʿāt set)",
+  "n_surahs": 114,
+  "n_muqattaat_openers": 29,
+  "muqattaat_set": [
+    2,
+    3,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    19,
+    20,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    36,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    50,
+    68
+  ],
+  "classes": [
+    "PROPHET_PERSON",
+    "ANIMAL_OBJECT",
+    "DIVINE_ATTRIBUTE",
+    "COSMOLOGICAL_NATURAL",
+    "EVENT_ESCHATOLOGICAL",
+    "SOCIAL_LEGAL",
+    "REVELATION_RITUAL",
+    "MUQATTAAT_LETTER",
+    "OTHER_ABSTRACT"
+  ],
+  "surah_class_assignments": {
+    "1": {
+      "translit": "Al-Fatihah",
+      "gloss": "the Opening",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "فتح"
+      ]
+    },
+    "2": {
+      "translit": "Al-Baqarah",
+      "gloss": "the Cow",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "بقر"
+      ]
+    },
+    "3": {
+      "translit": "Al-Imran",
+      "gloss": "the Family of Imran",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "عمرن"
+      ]
+    },
+    "4": {
+      "translit": "An-Nisa",
+      "gloss": "the Women",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "نسا",
+        "نسو"
+      ]
+    },
+    "5": {
+      "translit": "Al-Maidah",
+      "gloss": "the Table-spread",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "مايد",
+        "ميد"
+      ]
+    },
+    "6": {
+      "translit": "Al-Anam",
+      "gloss": "the Cattle",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "نعم"
+      ]
+    },
+    "7": {
+      "translit": "Al-Araf",
+      "gloss": "the Heights",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "عرف"
+      ]
+    },
+    "8": {
+      "translit": "Al-Anfal",
+      "gloss": "the Spoils",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "نفل"
+      ]
+    },
+    "9": {
+      "translit": "At-Tawbah",
+      "gloss": "the Repentance",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "توب"
+      ]
+    },
+    "10": {
+      "translit": "Yunus",
+      "gloss": "Jonah",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "يونس"
+      ]
+    },
+    "11": {
+      "translit": "Hud",
+      "gloss": "Hud",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "هود"
+      ]
+    },
+    "12": {
+      "translit": "Yusuf",
+      "gloss": "Joseph",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "يوسف"
+      ]
+    },
+    "13": {
+      "translit": "Ar-Rad",
+      "gloss": "the Thunder",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "رعد"
+      ]
+    },
+    "14": {
+      "translit": "Ibrahim",
+      "gloss": "Abraham",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "ابرهيم",
+        "إبرهيم"
+      ]
+    },
+    "15": {
+      "translit": "Al-Hijr",
+      "gloss": "the Rocky Tract",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "حجر"
+      ]
+    },
+    "16": {
+      "translit": "An-Nahl",
+      "gloss": "the Bee",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "نحل"
+      ]
+    },
+    "17": {
+      "translit": "Al-Isra",
+      "gloss": "the Night Journey",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "سرى",
+        "اسر"
+      ]
+    },
+    "18": {
+      "translit": "Al-Kahf",
+      "gloss": "the Cave",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "كهف"
+      ]
+    },
+    "19": {
+      "translit": "Maryam",
+      "gloss": "Mary",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "مريم"
+      ]
+    },
+    "20": {
+      "translit": "Ta-Ha",
+      "gloss": "Ta-Ha",
+      "class": "MUQATTAAT_LETTER",
+      "roots": []
+    },
+    "21": {
+      "translit": "Al-Anbiya",
+      "gloss": "the Prophets",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "نبا",
+        "نبي"
+      ]
+    },
+    "22": {
+      "translit": "Al-Hajj",
+      "gloss": "the Pilgrimage",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "حجج",
+        "حج"
+      ]
+    },
+    "23": {
+      "translit": "Al-Muminun",
+      "gloss": "the Believers",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "امن",
+        "ءمن"
+      ]
+    },
+    "24": {
+      "translit": "An-Nur",
+      "gloss": "the Light",
+      "class": "DIVINE_ATTRIBUTE",
+      "roots": [
+        "نور"
+      ]
+    },
+    "25": {
+      "translit": "Al-Furqan",
+      "gloss": "the Criterion",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "فرق"
+      ]
+    },
+    "26": {
+      "translit": "Ash-Shuara",
+      "gloss": "the Poets",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "شعر"
+      ]
+    },
+    "27": {
+      "translit": "An-Naml",
+      "gloss": "the Ant",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "نمل"
+      ]
+    },
+    "28": {
+      "translit": "Al-Qasas",
+      "gloss": "the Stories",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "قصص",
+        "قص"
+      ]
+    },
+    "29": {
+      "translit": "Al-Ankabut",
+      "gloss": "the Spider",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "عنكب"
+      ]
+    },
+    "30": {
+      "translit": "Ar-Rum",
+      "gloss": "the Romans",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "روم"
+      ]
+    },
+    "31": {
+      "translit": "Luqman",
+      "gloss": "Luqman",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "لقمن"
+      ]
+    },
+    "32": {
+      "translit": "As-Sajdah",
+      "gloss": "the Prostration",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "سجد"
+      ]
+    },
+    "33": {
+      "translit": "Al-Ahzab",
+      "gloss": "the Confederates",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "حزب"
+      ]
+    },
+    "34": {
+      "translit": "Saba",
+      "gloss": "Sheba",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "سبا"
+      ]
+    },
+    "35": {
+      "translit": "Fatir",
+      "gloss": "the Originator",
+      "class": "DIVINE_ATTRIBUTE",
+      "roots": [
+        "فطر"
+      ]
+    },
+    "36": {
+      "translit": "Ya-Sin",
+      "gloss": "Ya-Sin",
+      "class": "MUQATTAAT_LETTER",
+      "roots": []
+    },
+    "37": {
+      "translit": "As-Saffat",
+      "gloss": "the Ranks",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "صفف",
+        "صف"
+      ]
+    },
+    "38": {
+      "translit": "Sad",
+      "gloss": "Sad",
+      "class": "MUQATTAAT_LETTER",
+      "roots": []
+    },
+    "39": {
+      "translit": "Az-Zumar",
+      "gloss": "the Groups",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "زمر"
+      ]
+    },
+    "40": {
+      "translit": "Ghafir",
+      "gloss": "the Forgiver",
+      "class": "DIVINE_ATTRIBUTE",
+      "roots": [
+        "غفر"
+      ]
+    },
+    "41": {
+      "translit": "Fussilat",
+      "gloss": "Explained in Detail",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "فصل"
+      ]
+    },
+    "42": {
+      "translit": "Ash-Shura",
+      "gloss": "the Consultation",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "شور"
+      ]
+    },
+    "43": {
+      "translit": "Az-Zukhruf",
+      "gloss": "the Gold Adornments",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "زخرف"
+      ]
+    },
+    "44": {
+      "translit": "Ad-Dukhan",
+      "gloss": "the Smoke",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "دخن"
+      ]
+    },
+    "45": {
+      "translit": "Al-Jathiyah",
+      "gloss": "the Kneeling",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "جثو",
+        "جثا"
+      ]
+    },
+    "46": {
+      "translit": "Al-Ahqaf",
+      "gloss": "the Sand-dunes",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "حقف"
+      ]
+    },
+    "47": {
+      "translit": "Muhammad",
+      "gloss": "Muhammad",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "محمد"
+      ]
+    },
+    "48": {
+      "translit": "Al-Fath",
+      "gloss": "the Victory",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "فتح"
+      ]
+    },
+    "49": {
+      "translit": "Al-Hujurat",
+      "gloss": "the Chambers",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "حجر"
+      ]
+    },
+    "50": {
+      "translit": "Qaf",
+      "gloss": "Qaf",
+      "class": "MUQATTAAT_LETTER",
+      "roots": []
+    },
+    "51": {
+      "translit": "Adh-Dhariyat",
+      "gloss": "the Scatterers",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "ذرو",
+        "ذري"
+      ]
+    },
+    "52": {
+      "translit": "At-Tur",
+      "gloss": "the Mount",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "طور"
+      ]
+    },
+    "53": {
+      "translit": "An-Najm",
+      "gloss": "the Star",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "نجم"
+      ]
+    },
+    "54": {
+      "translit": "Al-Qamar",
+      "gloss": "the Moon",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "قمر"
+      ]
+    },
+    "55": {
+      "translit": "Ar-Rahman",
+      "gloss": "the Most Merciful",
+      "class": "DIVINE_ATTRIBUTE",
+      "roots": [
+        "رحمن",
+        "رحم"
+      ]
+    },
+    "56": {
+      "translit": "Al-Waqiah",
+      "gloss": "the Inevitable",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "وقع"
+      ]
+    },
+    "57": {
+      "translit": "Al-Hadid",
+      "gloss": "the Iron",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "حديد",
+        "حدد"
+      ]
+    },
+    "58": {
+      "translit": "Al-Mujadilah",
+      "gloss": "the Pleading Woman",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "جدل"
+      ]
+    },
+    "59": {
+      "translit": "Al-Hashr",
+      "gloss": "the Gathering",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "حشر"
+      ]
+    },
+    "60": {
+      "translit": "Al-Mumtahanah",
+      "gloss": "the Examined Woman",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "محن"
+      ]
+    },
+    "61": {
+      "translit": "As-Saff",
+      "gloss": "the Ranks",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "صف",
+        "صفف"
+      ]
+    },
+    "62": {
+      "translit": "Al-Jumuah",
+      "gloss": "the Friday",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "جمع"
+      ]
+    },
+    "63": {
+      "translit": "Al-Munafiqun",
+      "gloss": "the Hypocrites",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "نفق"
+      ]
+    },
+    "64": {
+      "translit": "At-Taghabun",
+      "gloss": "Mutual Loss-Gain",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "غبن"
+      ]
+    },
+    "65": {
+      "translit": "At-Talaq",
+      "gloss": "the Divorce",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "طلق"
+      ]
+    },
+    "66": {
+      "translit": "At-Tahrim",
+      "gloss": "the Prohibition",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "حرم"
+      ]
+    },
+    "67": {
+      "translit": "Al-Mulk",
+      "gloss": "the Sovereignty",
+      "class": "DIVINE_ATTRIBUTE",
+      "roots": [
+        "ملك"
+      ]
+    },
+    "68": {
+      "translit": "Al-Qalam",
+      "gloss": "the Pen",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "قلم"
+      ]
+    },
+    "69": {
+      "translit": "Al-Haqqah",
+      "gloss": "the Reality",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "حق"
+      ]
+    },
+    "70": {
+      "translit": "Al-Maarij",
+      "gloss": "the Ascending",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "عرج"
+      ]
+    },
+    "71": {
+      "translit": "Nuh",
+      "gloss": "Noah",
+      "class": "PROPHET_PERSON",
+      "roots": [
+        "نوح"
+      ]
+    },
+    "72": {
+      "translit": "Al-Jinn",
+      "gloss": "the Jinn",
+      "class": "OTHER_ABSTRACT",
+      "roots": [
+        "جن"
+      ]
+    },
+    "73": {
+      "translit": "Al-Muzzammil",
+      "gloss": "the Enwrapped",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "زمل"
+      ]
+    },
+    "74": {
+      "translit": "Al-Muddaththir",
+      "gloss": "the Cloaked",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "دثر"
+      ]
+    },
+    "75": {
+      "translit": "Al-Qiyamah",
+      "gloss": "the Resurrection",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "قوم",
+        "قيم"
+      ]
+    },
+    "76": {
+      "translit": "Al-Insan",
+      "gloss": "Man",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "انس",
+        "ءنس"
+      ]
+    },
+    "77": {
+      "translit": "Al-Mursalat",
+      "gloss": "Those Sent Forth",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "رسل"
+      ]
+    },
+    "78": {
+      "translit": "An-Naba",
+      "gloss": "the Tidings",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "نبا"
+      ]
+    },
+    "79": {
+      "translit": "An-Naziat",
+      "gloss": "Those who Pull Out",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "نزع"
+      ]
+    },
+    "80": {
+      "translit": "Abasa",
+      "gloss": "He Frowned",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "عبس"
+      ]
+    },
+    "81": {
+      "translit": "At-Takwir",
+      "gloss": "the Folding Up",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "كور"
+      ]
+    },
+    "82": {
+      "translit": "Al-Infitar",
+      "gloss": "the Cleaving",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "فطر"
+      ]
+    },
+    "83": {
+      "translit": "Al-Mutaffifin",
+      "gloss": "the Defrauders",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "طفف"
+      ]
+    },
+    "84": {
+      "translit": "Al-Inshiqaq",
+      "gloss": "the Splitting",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "شقق",
+        "شق"
+      ]
+    },
+    "85": {
+      "translit": "Al-Buruj",
+      "gloss": "the Constellations",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "برج"
+      ]
+    },
+    "86": {
+      "translit": "At-Tariq",
+      "gloss": "the Night-comer",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "طرق"
+      ]
+    },
+    "87": {
+      "translit": "Al-Ala",
+      "gloss": "the Most High",
+      "class": "DIVINE_ATTRIBUTE",
+      "roots": [
+        "علو",
+        "علا"
+      ]
+    },
+    "88": {
+      "translit": "Al-Ghashiyah",
+      "gloss": "the Overwhelming",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "غشو",
+        "غشي"
+      ]
+    },
+    "89": {
+      "translit": "Al-Fajr",
+      "gloss": "the Dawn",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "فجر"
+      ]
+    },
+    "90": {
+      "translit": "Al-Balad",
+      "gloss": "the City",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "بلد"
+      ]
+    },
+    "91": {
+      "translit": "Ash-Shams",
+      "gloss": "the Sun",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "شمس"
+      ]
+    },
+    "92": {
+      "translit": "Al-Layl",
+      "gloss": "the Night",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "ليل"
+      ]
+    },
+    "93": {
+      "translit": "Ad-Duha",
+      "gloss": "the Forenoon",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "ضحى",
+        "ضحو"
+      ]
+    },
+    "94": {
+      "translit": "Ash-Sharh",
+      "gloss": "the Opening Forth",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "شرح"
+      ]
+    },
+    "95": {
+      "translit": "At-Tin",
+      "gloss": "the Fig",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "تين"
+      ]
+    },
+    "96": {
+      "translit": "Al-Alaq",
+      "gloss": "the Clot",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "علق"
+      ]
+    },
+    "97": {
+      "translit": "Al-Qadr",
+      "gloss": "the Decree",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "قدر"
+      ]
+    },
+    "98": {
+      "translit": "Al-Bayyinah",
+      "gloss": "the Clear Proof",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "بين"
+      ]
+    },
+    "99": {
+      "translit": "Az-Zalzalah",
+      "gloss": "the Earthquake",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "زلزل",
+        "زلز"
+      ]
+    },
+    "100": {
+      "translit": "Al-Adiyat",
+      "gloss": "the Chargers",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "عدو",
+        "عدا"
+      ]
+    },
+    "101": {
+      "translit": "Al-Qariah",
+      "gloss": "the Striking Calamity",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "قرع"
+      ]
+    },
+    "102": {
+      "translit": "At-Takathur",
+      "gloss": "the Multiplication",
+      "class": "OTHER_ABSTRACT",
+      "roots": [
+        "كثر"
+      ]
+    },
+    "103": {
+      "translit": "Al-Asr",
+      "gloss": "the Time",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "عصر"
+      ]
+    },
+    "104": {
+      "translit": "Al-Humazah",
+      "gloss": "the Slanderer",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "همز"
+      ]
+    },
+    "105": {
+      "translit": "Al-Fil",
+      "gloss": "the Elephant",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "فيل"
+      ]
+    },
+    "106": {
+      "translit": "Quraysh",
+      "gloss": "Quraysh",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "قريش"
+      ]
+    },
+    "107": {
+      "translit": "Al-Maun",
+      "gloss": "the Small Kindnesses",
+      "class": "REVELATION_RITUAL",
+      "roots": [
+        "معن",
+        "ماعون"
+      ]
+    },
+    "108": {
+      "translit": "Al-Kawthar",
+      "gloss": "the Abundance",
+      "class": "OTHER_ABSTRACT",
+      "roots": [
+        "كثر",
+        "كوثر"
+      ]
+    },
+    "109": {
+      "translit": "Al-Kafirun",
+      "gloss": "the Disbelievers",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "كفر"
+      ]
+    },
+    "110": {
+      "translit": "An-Nasr",
+      "gloss": "the Help",
+      "class": "EVENT_ESCHATOLOGICAL",
+      "roots": [
+        "نصر"
+      ]
+    },
+    "111": {
+      "translit": "Al-Masad",
+      "gloss": "the Palm Fibre",
+      "class": "ANIMAL_OBJECT",
+      "roots": [
+        "مسد"
+      ]
+    },
+    "112": {
+      "translit": "Al-Ikhlas",
+      "gloss": "the Sincerity",
+      "class": "DIVINE_ATTRIBUTE",
+      "roots": [
+        "خلص",
+        "احد"
+      ]
+    },
+    "113": {
+      "translit": "Al-Falaq",
+      "gloss": "the Daybreak",
+      "class": "COSMOLOGICAL_NATURAL",
+      "roots": [
+        "فلق"
+      ]
+    },
+    "114": {
+      "translit": "An-Nas",
+      "gloss": "Mankind",
+      "class": "SOCIAL_LEGAL",
+      "roots": [
+        "نوس",
+        "ناس"
+      ]
+    }
+  },
+  "cell1_class_distribution": {
+    "PROPHET_PERSON": 11,
+    "ANIMAL_OBJECT": 13,
+    "DIVINE_ATTRIBUTE": 7,
+    "COSMOLOGICAL_NATURAL": 19,
+    "EVENT_ESCHATOLOGICAL": 18,
+    "SOCIAL_LEGAL": 22,
+    "REVELATION_RITUAL": 17,
+    "MUQATTAAT_LETTER": 4,
+    "OTHER_ABSTRACT": 3
+  },
+  "cell2_muqattaat_vs_class": {
+    "table_full_observed_yes": [
+      7,
+      5,
+      1,
+      5,
+      1,
+      3,
+      3,
+      4,
+      0
+    ],
+    "table_full_observed_no": [
+      4,
+      8,
+      6,
+      14,
+      17,
+      19,
+      14,
+      0,
+      3
+    ],
+    "classes_full": [
+      "PROPHET_PERSON",
+      "ANIMAL_OBJECT",
+      "DIVINE_ATTRIBUTE",
+      "COSMOLOGICAL_NATURAL",
+      "EVENT_ESCHATOLOGICAL",
+      "SOCIAL_LEGAL",
+      "REVELATION_RITUAL",
+      "MUQATTAAT_LETTER",
+      "OTHER_ABSTRACT"
+    ],
+    "table_used_observed_yes": [
+      7,
+      5,
+      1,
+      5,
+      1,
+      3,
+      7
+    ],
+    "table_used_observed_no": [
+      4,
+      8,
+      6,
+      14,
+      17,
+      19,
+      17
+    ],
+    "classes_used": [
+      "PROPHET_PERSON",
+      "ANIMAL_OBJECT",
+      "DIVINE_ATTRIBUTE",
+      "COSMOLOGICAL_NATURAL",
+      "EVENT_ESCHATOLOGICAL",
+      "SOCIAL_LEGAL",
+      "POOLED_OTHER"
+    ],
+    "expected": [
+      [
+        2.7982456140350878,
+        3.307017543859649,
+        1.780701754385965,
+        4.833333333333333,
+        4.578947368421052,
+        5.5964912280701755,
+        6.105263157894737
+      ],
+      [
+        8.201754385964913,
+        9.692982456140351,
+        5.219298245614035,
+        14.166666666666666,
+        13.421052631578947,
+        16.403508771929825,
+        17.894736842105264
+      ]
+    ],
+    "chi2": 15.6341571207697,
+    "df": 6,
+    "p": 0.01585828263618391
+  },
+  "cell3_muqattaat_letter_perm": {
+    "muqattaat_letter_surahs": [
+      20,
+      36,
+      38,
+      50
+    ],
+    "n_in_muqattaat_set": 4,
+    "n_total": 4,
+    "p_one_sided_upper": 0.0036399636003639963,
+    "n_perm": 100000
+  },
+  "cell4_khawatim_hashr_mufassal": {
+    "q59_class": "EVENT_ESCHATOLOGICAL",
+    "q59_pre_reg_prediction": "EVENT_ESCHATOLOGICAL",
+    "q59_is_divine_attribute": false,
+    "long_region_da_count": 3,
+    "long_region_n": 49,
+    "short_region_da_count": 4,
+    "short_region_n": 65,
+    "fisher_p_two_sided": 0.9999999999999971
+  },
+  "cell5_lexical_centrality": {
+    "n_testable": 110,
+    "alpha_per_surah_bonferroni": 9.090909090909092e-05,
+    "n_sig": 18,
+    "frac_sig": 0.16363636363636364,
+    "verdict": "EXPLORATORY",
+    "per_surah": [
+      {
+        "surah": 1,
+        "translit": "Al-Fatihah",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "فتح"
+        ],
+        "n_tokens": 29,
+        "hits": 0,
+        "rate_in": 0.0,
+        "rate_rest": 0.0006172204505709289,
+        "ratio": 0.0,
+        "p_one_sided": 1.0
+      },
+      {
+        "surah": 2,
+        "translit": "Al-Baqarah",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "بقر"
+        ],
+        "n_tokens": 6140,
+        "hits": 5,
+        "rate_in": 0.0008143322475570033,
+        "rate_rest": 0.0003070181559373125,
+        "ratio": 2.6523911755996448,
+        "p_one_sided": 0.0428546207753076
+      },
+      {
+        "surah": 3,
+        "translit": "Al-Imran",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "عمرن"
+        ],
+        "n_tokens": 3501,
+        "hits": 2,
+        "rate_in": 0.0005712653527563553,
+        "rate_rest": 1.3459674814256487e-05,
+        "ratio": 42.442730648386174,
+        "p_one_sided": 0.001075698401808347
+      },
+      {
+        "surah": 4,
+        "translit": "An-Nisa",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "نسا",
+          "نسو"
+        ],
+        "n_tokens": 3763,
+        "hits": 23,
+        "rate_in": 0.006112144565506245,
+        "rate_rest": 0.0024853445714131347,
+        "ratio": 2.459274515014616,
+        "p_one_sided": 0.00011343255530570614
+      },
+      {
+        "surah": 5,
+        "translit": "Al-Maidah",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "مايد",
+          "ميد"
+        ],
+        "n_tokens": 2837,
+        "hits": 0,
+        "rate_in": 0.0,
+        "rate_rest": 0.0005336179295624333,
+        "ratio": 0.0,
+        "p_one_sided": 1.0
+      },
+      {
+        "surah": 6,
+        "translit": "Al-Anam",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "نعم"
+        ],
+        "n_tokens": 3056,
+        "hits": 7,
+        "rate_in": 0.0022905759162303663,
+        "rate_rest": 0.002675907467119787,
+        "ratio": 0.8559996727748691,
+        "p_one_sided": 0.7081699950961374
+      },
+      {
+        "surah": 7,
+        "translit": "Al-Araf",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "عرف"
+        ],
+        "n_tokens": 3341,
+        "hits": 6,
+        "rate_in": 0.0017958695001496557,
+        "rate_rest": 0.0008729988180939078,
+        "ratio": 2.0571270692791197,
+        "p_one_sided": 0.07566627029903888
+      },
+      {
+        "surah": 8,
+        "translit": "Al-Anfal",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "نفل"
+        ],
+        "n_tokens": 1242,
+        "hits": 2,
+        "rate_in": 0.001610305958132045,
+        "rate_rest": 0.00016981255306642283,
+        "ratio": 9.48284404806144,
+        "p_one_sided": 0.01933630398525383
+      },
+      {
+        "surah": 9,
+        "translit": "At-Tawbah",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "توب"
+        ],
+        "n_tokens": 2505,
+        "hits": 10,
+        "rate_in": 0.003992015968063872,
+        "rate_rest": 0.0005047016947351644,
+        "ratio": 7.909654375459606,
+        "p_one_sided": 9.038148295198196e-07
+      },
+      {
+        "surah": 10,
+        "translit": "Yunus",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "يونس"
+        ],
+        "n_tokens": 1839,
+        "hits": 1,
+        "rate_in": 0.000543773790103317,
+        "rate_rest": 3.949551067695305e-05,
+        "ratio": 13.767989849555917,
+        "p_one_sided": 0.0700585748207487
+      },
+      {
+        "surah": 11,
+        "translit": "Hud",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "هود"
+        ],
+        "n_tokens": 1946,
+        "hits": 6,
+        "rate_in": 0.003083247687564234,
+        "rate_rest": 0.00025049109438240764,
+        "ratio": 12.30881159733867,
+        "p_one_sided": 1.2212831836395783e-05
+      },
+      {
+        "surah": 12,
+        "translit": "Yusuf",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "يوسف"
+        ],
+        "n_tokens": 1795,
+        "hits": 25,
+        "rate_in": 0.013927576601671309,
+        "rate_rest": 2.6315096971132338e-05,
+        "ratio": 529.2618384401114,
+        "p_one_sided": 3.747342947355875e-59
+      },
+      {
+        "surah": 13,
+        "translit": "Ar-Rad",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "رعد"
+        ],
+        "n_tokens": 853,
+        "hits": 1,
+        "rate_in": 0.0011723329425556857,
+        "rate_rest": 1.2996464961530463e-05,
+        "ratio": 90.20398593200468,
+        "p_one_sided": 0.011024832778708133
+      },
+      {
+        "surah": 14,
+        "translit": "Ibrahim",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "ابرهيم",
+          "إبرهيم"
+        ],
+        "n_tokens": 830,
+        "hits": 1,
+        "rate_in": 0.0012048192771084338,
+        "rate_rest": 0.0008834955240557642,
+        "ratio": 1.3636959603118357,
+        "p_one_sided": 0.5198349644399886
+      },
+      {
+        "surah": 15,
+        "translit": "Al-Hijr",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "حجر"
+        ],
+        "n_tokens": 657,
+        "hits": 2,
+        "rate_in": 0.0030441400304414,
+        "rate_rest": 0.0002722323049001815,
+        "ratio": 11.182141045154742,
+        "p_one_sided": 0.014192970649873383
+      },
+      {
+        "surah": 16,
+        "translit": "An-Nahl",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "نحل"
+        ],
+        "n_tokens": 1844,
+        "hits": 1,
+        "rate_in": 0.0005422993492407809,
+        "rate_rest": 2.633207378247074e-05,
+        "ratio": 20.594631236442517,
+        "p_one_sided": 0.04739694476427032
+      },
+      {
+        "surah": 17,
+        "translit": "Al-Isra",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "سرى",
+          "اسر"
+        ],
+        "n_tokens": 1558,
+        "hits": 5,
+        "rate_in": 0.003209242618741977,
+        "rate_rest": 0.0037120109130497517,
+        "ratio": 0.8645563533931787,
+        "p_one_sided": 0.6853691901619086
+      },
+      {
+        "surah": 18,
+        "translit": "Al-Kahf",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "كهف"
+        ],
+        "n_tokens": 1583,
+        "hits": 6,
+        "rate_in": 0.003790271636133923,
+        "rate_rest": 0.0,
+        "ratio": Infinity,
+        "p_one_sided": 0.0
+      },
+      {
+        "surah": 19,
+        "translit": "Maryam",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "مريم"
+        ],
+        "n_tokens": 971,
+        "hits": 3,
+        "rate_in": 0.003089598352214212,
+        "rate_rest": 0.0004165256553770859,
+        "ratio": 7.417546343975283,
+        "p_one_sided": 0.008148759313832292
+      },
+      {
+        "surah": 20,
+        "translit": "Ta-Ha",
+        "class": "MUQATTAAT_LETTER",
+        "testable": false,
+        "reason": "no name-root (muqaṭṭaʿāt-letter or empty)"
+      },
+      {
+        "surah": 21,
+        "translit": "Al-Anbiya",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "نبا",
+          "نبي"
+        ],
+        "n_tokens": 1174,
+        "hits": 0,
+        "rate_in": 0.0,
+        "rate_rest": 0.0028059459953277736,
+        "ratio": 0.0,
+        "p_one_sided": 0.9999999999991688
+      },
+      {
+        "surah": 22,
+        "translit": "Al-Hajj",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "حجج",
+          "حج"
+        ],
+        "n_tokens": 1279,
+        "hits": 2,
+        "rate_in": 0.001563721657544957,
+        "rate_rest": 0.001071643273478136,
+        "ratio": 1.4591811438051832,
+        "p_one_sided": 0.3980555661789309
+      },
+      {
+        "surah": 23,
+        "translit": "Al-Muminun",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "امن",
+          "ءمن"
+        ],
+        "n_tokens": 1052,
+        "hits": 18,
+        "rate_in": 0.017110266159695818,
+        "rate_rest": 0.021721284774252395,
+        "ratio": 0.7877188820790975,
+        "p_one_sided": 0.8737454934293585
+      },
+      {
+        "surah": 24,
+        "translit": "An-Nur",
+        "class": "DIVINE_ATTRIBUTE",
+        "testable": true,
+        "roots": [
+          "نور"
+        ],
+        "n_tokens": 1319,
+        "hits": 7,
+        "rate_in": 0.00530705079605762,
+        "rate_rest": 0.0007453123774157274,
+        "ratio": 7.120572469840257,
+        "p_one_sided": 7.407416621964861e-05
+      },
+      {
+        "surah": 25,
+        "translit": "Al-Furqan",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "فرق"
+        ],
+        "n_tokens": 896,
+        "hits": 1,
+        "rate_in": 0.0011160714285714285,
+        "rate_rest": 0.0010663060298305614,
+        "ratio": 1.0466708405923344,
+        "p_one_sided": 0.6155416986532436
+      },
+      {
+        "surah": 26,
+        "translit": "Ash-Shuara",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "شعر"
+        ],
+        "n_tokens": 1320,
+        "hits": 3,
+        "rate_in": 0.0022727272727272726,
+        "rate_rest": 0.0004968814153274841,
+        "ratio": 4.5739832535885165,
+        "p_one_sided": 0.028957814387636994
+      },
+      {
+        "surah": 27,
+        "translit": "An-Naml",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "نمل"
+        ],
+        "n_tokens": 1159,
+        "hits": 3,
+        "rate_in": 0.0025884383088869713,
+        "rate_rest": 0.0001304835721182703,
+        "ratio": 19.83727351164797,
+        "p_one_sided": 0.0005136821790342819
+      },
+      {
+        "surah": 28,
+        "translit": "Al-Qasas",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "قصص",
+          "قص"
+        ],
+        "n_tokens": 1438,
+        "hits": 4,
+        "rate_in": 0.0027816411682892906,
+        "rate_rest": 0.0008643381919616548,
+        "ratio": 3.218232393475787,
+        "p_one_sided": 0.037541720516834104
+      },
+      {
+        "surah": 29,
+        "translit": "Al-Ankabut",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "عنكب"
+        ],
+        "n_tokens": 978,
+        "hits": 2,
+        "rate_in": 0.002044989775051125,
+        "rate_rest": 0.0,
+        "ratio": Infinity,
+        "p_one_sided": 0.0
+      },
+      {
+        "surah": 30,
+        "translit": "Ar-Rum",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "روم"
+        ],
+        "n_tokens": 817,
+        "hits": 1,
+        "rate_in": 0.0012239902080783353,
+        "rate_rest": 0.0008443751623798389,
+        "ratio": 1.4495810187364653,
+        "p_one_sided": 0.49849711543514985
+      },
+      {
+        "surah": 31,
+        "translit": "Luqman",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "لقمن"
+        ],
+        "n_tokens": 550,
+        "hits": 2,
+        "rate_in": 0.0036363636363636364,
+        "rate_rest": 9.061840589278548e-05,
+        "ratio": 40.12831168831169,
+        "p_one_sided": 0.0011994702573672488
+      },
+      {
+        "surah": 32,
+        "translit": "As-Sajdah",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "سجد"
+        ],
+        "n_tokens": 372,
+        "hits": 1,
+        "rate_in": 0.002688172043010753,
+        "rate_rest": 0.001226993865030675,
+        "ratio": 2.1908602150537635,
+        "p_one_sided": 0.36664359401447166
+      },
+      {
+        "surah": 33,
+        "translit": "Al-Ahzab",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "حزب"
+        ],
+        "n_tokens": 1303,
+        "hits": 3,
+        "rate_in": 0.0023023791250959325,
+        "rate_rest": 0.00022223965278322483,
+        "ratio": 10.359893458534604,
+        "p_one_sided": 0.003256297189568377
+      },
+      {
+        "surah": 34,
+        "translit": "Saba",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "سبا"
+        ],
+        "n_tokens": 884,
+        "hits": 6,
+        "rate_in": 0.006787330316742082,
+        "rate_rest": 0.0026913525671863016,
+        "ratio": 2.5219030756115153,
+        "p_one_sided": 0.03422424115046891
+      },
+      {
+        "surah": 35,
+        "translit": "Fatir",
+        "class": "DIVINE_ATTRIBUTE",
+        "testable": true,
+        "roots": [
+          "فطر"
+        ],
+        "n_tokens": 778,
+        "hits": 1,
+        "rate_in": 0.0012853470437017994,
+        "rate_rest": 0.0002986276113686233,
+        "ratio": 4.304180172124735,
+        "p_one_sided": 0.20734481785702324
+      },
+      {
+        "surah": 36,
+        "translit": "Ya-Sin",
+        "class": "MUQATTAAT_LETTER",
+        "testable": false,
+        "reason": "no name-root (muqaṭṭaʿāt-letter or empty)"
+      },
+      {
+        "surah": 37,
+        "translit": "As-Saffat",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "صفف",
+          "صف"
+        ],
+        "n_tokens": 865,
+        "hits": 6,
+        "rate_in": 0.006936416184971098,
+        "rate_rest": 0.0015598190609889253,
+        "ratio": 4.446936416184971,
+        "p_one_sided": 0.0026483455711040203
+      },
+      {
+        "surah": 38,
+        "translit": "Sad",
+        "class": "MUQATTAAT_LETTER",
+        "testable": false,
+        "reason": "no name-root (muqaṭṭaʿāt-letter or empty)"
+      },
+      {
+        "surah": 39,
+        "translit": "Az-Zumar",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "زمر"
+        ],
+        "n_tokens": 1177,
+        "hits": 2,
+        "rate_in": 0.0016992353440951572,
+        "rate_rest": 1.3051422605063953e-05,
+        "ratio": 130.19541206457095,
+        "p_one_sided": 0.00011668962701002449
+      },
+      {
+        "surah": 40,
+        "translit": "Ghafir",
+        "class": "DIVINE_ATTRIBUTE",
+        "testable": true,
+        "roots": [
+          "غفر"
+        ],
+        "n_tokens": 1226,
+        "hits": 5,
+        "rate_in": 0.004078303425774877,
+        "rate_rest": 0.0029906883807185487,
+        "ratio": 1.3636671249563674,
+        "p_one_sided": 0.3062418580976402
+      },
+      {
+        "surah": 41,
+        "translit": "Fussilat",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "فصل"
+        ],
+        "n_tokens": 794,
+        "hits": 2,
+        "rate_in": 0.0025188916876574307,
+        "rate_rest": 0.0006493253509603522,
+        "ratio": 3.8792443324937027,
+        "p_one_sided": 0.09491183074221267
+      },
+      {
+        "surah": 42,
+        "translit": "Ash-Shura",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "شور"
+        ],
+        "n_tokens": 860,
+        "hits": 3,
+        "rate_in": 0.0034883720930232558,
+        "rate_rest": 0.00029894589079376634,
+        "ratio": 11.66890798786653,
+        "p_one_sided": 0.002331788536806965
+      },
+      {
+        "surah": 43,
+        "translit": "Az-Zukhruf",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "زخرف"
+        ],
+        "n_tokens": 836,
+        "hits": 1,
+        "rate_in": 0.0011961722488038277,
+        "rate_rest": 3.89807824742402e-05,
+        "ratio": 30.686204146730464,
+        "p_one_sided": 0.03206328345876481
+      },
+      {
+        "surah": 44,
+        "translit": "Ad-Dukhan",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "دخن"
+        ],
+        "n_tokens": 346,
+        "hits": 1,
+        "rate_in": 0.002890173410404624,
+        "rate_rest": 0.0004002530632270726,
+        "ratio": 7.220865187395114,
+        "p_one_sided": 0.1293500543742345
+      },
+      {
+        "surah": 45,
+        "translit": "Al-Jathiyah",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "جثو",
+          "جثا"
+        ],
+        "n_tokens": 488,
+        "hits": 0,
+        "rate_in": 0.0,
+        "rate_rest": 2.5870209160641065e-05,
+        "ratio": 0.0,
+        "p_one_sided": 0.9999999999999911
+      },
+      {
+        "surah": 46,
+        "translit": "Al-Ahqaf",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "حقف"
+        ],
+        "n_tokens": 645,
+        "hits": 1,
+        "rate_in": 0.0015503875968992248,
+        "rate_rest": 0.0,
+        "ratio": Infinity,
+        "p_one_sided": 0.0
+      },
+      {
+        "surah": 47,
+        "translit": "Muhammad",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "محمد"
+        ],
+        "n_tokens": 542,
+        "hits": 1,
+        "rate_in": 0.0018450184501845018,
+        "rate_rest": 5.177658403986797e-05,
+        "ratio": 35.63422509225092,
+        "p_one_sided": 0.027673509237076694
+      },
+      {
+        "surah": 48,
+        "translit": "Al-Fath",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "فتح"
+        ],
+        "n_tokens": 560,
+        "hits": 4,
+        "rate_in": 0.007142857142857143,
+        "rate_rest": 0.0005696751556896306,
+        "ratio": 12.538474025974025,
+        "p_one_sided": 0.0003318229827539259
+      },
+      {
+        "surah": 49,
+        "translit": "Al-Hujurat",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "حجر"
+        ],
+        "n_tokens": 353,
+        "hits": 1,
+        "rate_in": 0.0028328611898017,
+        "rate_rest": 0.00028407623573162543,
+        "ratio": 9.972186453772856,
+        "p_one_sided": 0.09542780281624504
+      },
+      {
+        "surah": 50,
+        "translit": "Qaf",
+        "class": "MUQATTAAT_LETTER",
+        "testable": false,
+        "reason": "no name-root (muqaṭṭaʿāt-letter or empty)"
+      },
+      {
+        "surah": 51,
+        "translit": "Adh-Dhariyat",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "ذرو",
+          "ذري"
+        ],
+        "n_tokens": 360,
+        "hits": 3,
+        "rate_in": 0.008333333333333333,
+        "rate_rest": 0.002440693725221793,
+        "ratio": 3.4143298059964726,
+        "p_one_sided": 0.05916766487700611
+      },
+      {
+        "surah": 52,
+        "translit": "At-Tur",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "طور"
+        ],
+        "n_tokens": 312,
+        "hits": 2,
+        "rate_in": 0.00641025641025641,
+        "rate_rest": 0.00019358585532683746,
+        "ratio": 33.113247863247864,
+        "p_one_sided": 0.0017470261226809035
+      },
+      {
+        "surah": 53,
+        "translit": "An-Najm",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "نجم"
+        ],
+        "n_tokens": 360,
+        "hits": 1,
+        "rate_in": 0.002777777777777778,
+        "rate_rest": 0.000658599894107468,
+        "ratio": 4.2177015250544665,
+        "p_one_sided": 0.21114604121343114
+      },
+      {
+        "surah": 54,
+        "translit": "Al-Qamar",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "قمر"
+        ],
+        "n_tokens": 342,
+        "hits": 1,
+        "rate_in": 0.0029239766081871343,
+        "rate_rest": 0.0003615002259376412,
+        "ratio": 8.08845029239766,
+        "p_one_sided": 0.11631571990423065
+      },
+      {
+        "surah": 55,
+        "translit": "Ar-Rahman",
+        "class": "DIVINE_ATTRIBUTE",
+        "testable": true,
+        "roots": [
+          "رحمن",
+          "رحم"
+        ],
+        "n_tokens": 352,
+        "hits": 1,
+        "rate_in": 0.002840909090909091,
+        "rate_rest": 0.004416037187681581,
+        "ratio": 0.6433163875598086,
+        "p_one_sided": 0.789419541223248
+      },
+      {
+        "surah": 56,
+        "translit": "Al-Waqiah",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "وقع"
+        ],
+        "n_tokens": 379,
+        "hits": 4,
+        "rate_in": 0.010554089709762533,
+        "rate_rest": 0.0004391743522178305,
+        "ratio": 24.031662269129285,
+        "p_one_sided": 2.7601056772686418e-05
+      },
+      {
+        "surah": 57,
+        "translit": "Al-Hadid",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "حديد",
+          "حدد"
+        ],
+        "n_tokens": 575,
+        "hits": 1,
+        "rate_in": 0.0017391304347826088,
+        "rate_rest": 0.0002719432286136075,
+        "ratio": 6.395196687370601,
+        "p_one_sided": 0.14477323400942468
+      },
+      {
+        "surah": 58,
+        "translit": "Al-Mujadilah",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "جدل"
+        ],
+        "n_tokens": 475,
+        "hits": 1,
+        "rate_in": 0.002105263157894737,
+        "rate_rest": 0.0003621220351258374,
+        "ratio": 5.813684210526316,
+        "p_one_sided": 0.15805376284889996
+      },
+      {
+        "surah": 59,
+        "translit": "Al-Hashr",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "حشر"
+        ],
+        "n_tokens": 447,
+        "hits": 1,
+        "rate_in": 0.0022371364653243847,
+        "rate_rest": 0.0005429864253393666,
+        "ratio": 4.120059656972408,
+        "p_one_sided": 0.21555659542664662
+      },
+      {
+        "surah": 60,
+        "translit": "Al-Mumtahanah",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "محن"
+        ],
+        "n_tokens": 352,
+        "hits": 1,
+        "rate_in": 0.002840909090909091,
+        "rate_rest": 0.001317063722641875,
+        "ratio": 2.1570020053475933,
+        "p_one_sided": 0.3711811108406047
+      },
+      {
+        "surah": 61,
+        "translit": "As-Saff",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "صف",
+          "صفف"
+        ],
+        "n_tokens": 226,
+        "hits": 1,
+        "rate_in": 0.004424778761061947,
+        "rate_rest": 0.0016114269507934665,
+        "ratio": 2.7458761061946904,
+        "p_one_sided": 0.30543965674437906
+      },
+      {
+        "surah": 62,
+        "translit": "Al-Jumuah",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "جمع"
+        ],
+        "n_tokens": 177,
+        "hits": 1,
+        "rate_in": 0.005649717514124294,
+        "rate_rest": 0.0016490595207420769,
+        "ratio": 3.4260240112994347,
+        "p_one_sided": 0.25332440608970613
+      },
+      {
+        "surah": 63,
+        "translit": "Al-Munafiqun",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "نفق"
+        ],
+        "n_tokens": 181,
+        "hits": 6,
+        "rate_in": 0.03314917127071823,
+        "rate_rest": 0.001430117501546073,
+        "ratio": 23.17933403016276,
+        "p_one_sided": 3.10168118145197e-07
+      },
+      {
+        "surah": 64,
+        "translit": "At-Taghabun",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "غبن"
+        ],
+        "n_tokens": 242,
+        "hits": 1,
+        "rate_in": 0.004132231404958678,
+        "rate_rest": 0.0003997163303462059,
+        "ratio": 10.337909890695816,
+        "p_one_sided": 0.09221770255175175
+      },
+      {
+        "surah": 65,
+        "translit": "At-Talaq",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "طلق"
+        ],
+        "n_tokens": 289,
+        "hits": 2,
+        "rate_in": 0.006920415224913495,
+        "rate_rest": 0.00027093977395881716,
+        "ratio": 25.542263964409294,
+        "p_one_sided": 0.002901102349708959
+      },
+      {
+        "surah": 66,
+        "translit": "At-Tahrim",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "حرم"
+        ],
+        "n_tokens": 254,
+        "hits": 1,
+        "rate_in": 0.003937007874015748,
+        "rate_rest": 0.0014443599035373921,
+        "ratio": 2.7257803712035997,
+        "p_one_sided": 0.30728222594247334
+      },
+      {
+        "surah": 67,
+        "translit": "Al-Mulk",
+        "class": "DIVINE_ATTRIBUTE",
+        "testable": true,
+        "roots": [
+          "ملك"
+        ],
+        "n_tokens": 333,
+        "hits": 1,
+        "rate_in": 0.003003003003003003,
+        "rate_rest": 0.0034209439223381183,
+        "ratio": 0.8778287721683948,
+        "p_one_sided": 0.680541309323269
+      },
+      {
+        "surah": 68,
+        "translit": "Al-Qalam",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "قلم"
+        ],
+        "n_tokens": 301,
+        "hits": 1,
+        "rate_in": 0.0033222591362126247,
+        "rate_rest": 0.0029291834417260244,
+        "ratio": 1.1341929251979452,
+        "p_one_sided": 0.5864504953176024
+      },
+      {
+        "surah": 69,
+        "translit": "Al-Haqqah",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "حق"
+        ],
+        "n_tokens": 260,
+        "hits": 4,
+        "rate_in": 0.015384615384615385,
+        "rate_rest": 0.004372106220256136,
+        "ratio": 3.5188109825277967,
+        "p_one_sided": 0.028221281323328056
+      },
+      {
+        "surah": 70,
+        "translit": "Al-Maarij",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "عرج"
+        ],
+        "n_tokens": 217,
+        "hits": 2,
+        "rate_in": 0.009216589861751152,
+        "rate_rest": 0.0001031193606599639,
+        "ratio": 89.3778801843318,
+        "p_one_sided": 0.00024555599227906344
+      },
+      {
+        "surah": 71,
+        "translit": "Nuh",
+        "class": "PROPHET_PERSON",
+        "testable": true,
+        "roots": [
+          "نوح"
+        ],
+        "n_tokens": 227,
+        "hits": 3,
+        "rate_in": 0.013215859030837005,
+        "rate_rest": 0.0006187959262601521,
+        "ratio": 21.35737885462555,
+        "p_one_sided": 0.0004109663345865641
+      },
+      {
+        "surah": 72,
+        "translit": "Al-Jinn",
+        "class": "OTHER_ABSTRACT",
+        "testable": true,
+        "roots": [
+          "جن"
+        ],
+        "n_tokens": 286,
+        "hits": 7,
+        "rate_in": 0.024475524475524476,
+        "rate_rest": 0.013481957399594896,
+        "ratio": 1.815428112557299,
+        "p_one_sided": 0.09479306386377738
+      },
+      {
+        "surah": 73,
+        "translit": "Al-Muzzammil",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "زمل"
+        ],
+        "n_tokens": 200,
+        "hits": 1,
+        "rate_in": 0.005,
+        "rate_rest": 0.0,
+        "ratio": Infinity,
+        "p_one_sided": 0.0
+      },
+      {
+        "surah": 74,
+        "translit": "Al-Muddaththir",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "دثر"
+        ],
+        "n_tokens": 256,
+        "hits": 1,
+        "rate_in": 0.00390625,
+        "rate_rest": 0.0,
+        "ratio": Infinity,
+        "p_one_sided": 0.0
+      },
+      {
+        "surah": 75,
+        "translit": "Al-Qiyamah",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "قوم",
+          "قيم"
+        ],
+        "n_tokens": 164,
+        "hits": 2,
+        "rate_in": 0.012195121951219513,
+        "rate_rest": 0.009622196746229052,
+        "ratio": 1.2673947823815588,
+        "p_one_sided": 0.4688561911138468
+      },
+      {
+        "surah": 76,
+        "translit": "Al-Insan",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "انس",
+          "ءنس"
+        ],
+        "n_tokens": 243,
+        "hits": 2,
+        "rate_in": 0.00823045267489712,
+        "rate_rest": 0.006343966784434072,
+        "ratio": 1.297366924286527,
+        "p_one_sided": 0.45656333972126406
+      },
+      {
+        "surah": 77,
+        "translit": "Al-Mursalat",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "رسل"
+        ],
+        "n_tokens": 181,
+        "hits": 2,
+        "rate_in": 0.011049723756906077,
+        "rate_rest": 0.006583694083694084,
+        "ratio": 1.6783470824188298,
+        "p_one_sided": 0.3345805252632345
+      },
+      {
+        "surah": 78,
+        "translit": "An-Naba",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "نبا"
+        ],
+        "n_tokens": 174,
+        "hits": 3,
+        "rate_in": 0.017241379310344827,
+        "rate_rest": 0.0017005269056851707,
+        "ratio": 10.138845350052247,
+        "p_one_sided": 0.0034169881653770716
+      },
+      {
+        "surah": 79,
+        "translit": "An-Naziat",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "نزع"
+        ],
+        "n_tokens": 179,
+        "hits": 1,
+        "rate_in": 0.00558659217877095,
+        "rate_rest": 0.00024478857996856397,
+        "ratio": 22.822111143781243,
+        "p_one_sided": 0.04287618694008045
+      },
+      {
+        "surah": 80,
+        "translit": "Abasa",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "عبس"
+        ],
+        "n_tokens": 133,
+        "hits": 1,
+        "rate_in": 0.007518796992481203,
+        "rate_rest": 2.5751957148743305e-05,
+        "ratio": 291.96992481203006,
+        "p_one_sided": 0.003419195593891908
+      },
+      {
+        "surah": 81,
+        "translit": "At-Takwir",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "كور"
+        ],
+        "n_tokens": 104,
+        "hits": 1,
+        "rate_in": 0.009615384615384616,
+        "rate_rest": 0.0004762333800985932,
+        "ratio": 20.190488565488568,
+        "p_one_sided": 0.04833297476796146
+      },
+      {
+        "surah": 82,
+        "translit": "Al-Infitar",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "فطر"
+        ],
+        "n_tokens": 81,
+        "hits": 1,
+        "rate_in": 0.012345679012345678,
+        "rate_rest": 0.00029594935405836633,
+        "ratio": 41.71551261406334,
+        "p_one_sided": 0.023690317850215692
+      },
+      {
+        "surah": 83,
+        "translit": "Al-Mutaffifin",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "طفف"
+        ],
+        "n_tokens": 169,
+        "hits": 1,
+        "rate_in": 0.005917159763313609,
+        "rate_rest": 0.0,
+        "ratio": Infinity,
+        "p_one_sided": 0.0
+      },
+      {
+        "surah": 84,
+        "translit": "Al-Inshiqaq",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "شقق",
+          "شق"
+        ],
+        "n_tokens": 108,
+        "hits": 2,
+        "rate_in": 0.018518518518518517,
+        "rate_rest": 0.000875284789352418,
+        "ratio": 21.15713507625272,
+        "p_one_sided": 0.004162068706698377
+      },
+      {
+        "surah": 85,
+        "translit": "Al-Buruj",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "برج"
+        ],
+        "n_tokens": 109,
+        "hits": 1,
+        "rate_in": 0.009174311926605505,
+        "rate_rest": 0.00018020801153331275,
+        "ratio": 50.90956749672346,
+        "p_one_sided": 0.019452748573936494
+      },
+      {
+        "surah": 86,
+        "translit": "At-Tariq",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "طرق"
+        ],
+        "n_tokens": 61,
+        "hits": 2,
+        "rate_in": 0.03278688524590164,
+        "rate_rest": 0.0001157764742204384,
+        "ratio": 283.1912568306011,
+        "p_one_sided": 2.4418247074651624e-05
+      },
+      {
+        "surah": 87,
+        "translit": "Al-Ala",
+        "class": "DIVINE_ATTRIBUTE",
+        "testable": true,
+        "roots": [
+          "علو",
+          "علا"
+        ],
+        "n_tokens": 72,
+        "hits": 0,
+        "rate_in": 0.0,
+        "rate_rest": 0.012518494692827276,
+        "ratio": 0.0,
+        "p_one_sided": 1.0
+      },
+      {
+        "surah": 88,
+        "translit": "Al-Ghashiyah",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "غشو",
+          "غشي"
+        ],
+        "n_tokens": 92,
+        "hits": 1,
+        "rate_in": 0.010869565217391304,
+        "rate_rest": 0.00018016858632005663,
+        "ratio": 60.32996894409938,
+        "p_one_sided": 0.016440360877062927
+      },
+      {
+        "surah": 89,
+        "translit": "Al-Fajr",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "فجر"
+        ],
+        "n_tokens": 139,
+        "hits": 1,
+        "rate_in": 0.007194244604316547,
+        "rate_rest": 0.00037343222848901594,
+        "ratio": 19.265194740759117,
+        "p_one_sided": 0.050592121083560135
+      },
+      {
+        "surah": 90,
+        "translit": "Al-Balad",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "بلد"
+        ],
+        "n_tokens": 82,
+        "hits": 2,
+        "rate_in": 0.024390243902439025,
+        "rate_rest": 0.001055137360869845,
+        "ratio": 23.11570493753718,
+        "p_one_sided": 0.0034956191062420613
+      },
+      {
+        "surah": 91,
+        "translit": "Ash-Shams",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "شمس"
+        ],
+        "n_tokens": 54,
+        "hits": 1,
+        "rate_in": 0.018518518518518517,
+        "rate_rest": 0.00041161262107199364,
+        "ratio": 44.99016203703703,
+        "p_one_sided": 0.02198635516165291
+      },
+      {
+        "surah": 92,
+        "translit": "Al-Layl",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "ليل"
+        ],
+        "n_tokens": 71,
+        "hits": 1,
+        "rate_in": 0.014084507042253521,
+        "rate_rest": 0.0045415948331317705,
+        "ratio": 3.101224913218689,
+        "p_one_sided": 0.2761620109609458
+      },
+      {
+        "surah": 93,
+        "translit": "Ad-Duha",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "ضحى",
+          "ضحو"
+        ],
+        "n_tokens": 40,
+        "hits": 1,
+        "rate_in": 0.025,
+        "rate_rest": 0.0001286057846881953,
+        "ratio": 194.39249999999998,
+        "p_one_sided": 0.005131351608662223
+      },
+      {
+        "surah": 94,
+        "translit": "Ash-Sharh",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "شرح"
+        ],
+        "n_tokens": 27,
+        "hits": 1,
+        "rate_in": 0.037037037037037035,
+        "rate_rest": 5.143371480005143e-05,
+        "ratio": 720.0925925925926,
+        "p_one_sided": 0.001387782152582837
+      },
+      {
+        "surah": 95,
+        "translit": "At-Tin",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "تين"
+        ],
+        "n_tokens": 34,
+        "hits": 1,
+        "rate_in": 0.029411764705882353,
+        "rate_rest": 0.004732327713694173,
+        "ratio": 6.215073529411765,
+        "p_one_sided": 0.14894716060294616
+      },
+      {
+        "surah": 96,
+        "translit": "Al-Alaq",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "علق"
+        ],
+        "n_tokens": 72,
+        "hits": 1,
+        "rate_in": 0.013888888888888888,
+        "rate_rest": 7.719523962688967e-05,
+        "ratio": 179.9189814814815,
+        "p_one_sided": 0.005542853179474599
+      },
+      {
+        "surah": 97,
+        "translit": "Al-Qadr",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "قدر"
+        ],
+        "n_tokens": 30,
+        "hits": 3,
+        "rate_in": 0.1,
+        "rate_rest": 0.0016588012910360435,
+        "ratio": 60.284496124031016,
+        "p_one_sided": 1.7919569973321926e-05
+      },
+      {
+        "surah": 98,
+        "translit": "Al-Bayyinah",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "بين"
+        ],
+        "n_tokens": 94,
+        "hits": 2,
+        "rate_in": 0.02127659574468085,
+        "rate_rest": 0.01177560711941624,
+        "ratio": 1.8068364143704219,
+        "p_one_sided": 0.3037274839892544
+      },
+      {
+        "surah": 99,
+        "translit": "Az-Zalzalah",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "زلزل",
+          "زلز"
+        ],
+        "n_tokens": 36,
+        "hits": 2,
+        "rate_in": 0.05555555555555555,
+        "rate_rest": 5.143966769974666e-05,
+        "ratio": 1080.0138888888887,
+        "p_one_sided": 1.6650623963370375e-06
+      },
+      {
+        "surah": 100,
+        "translit": "Al-Adiyat",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "عدو",
+          "عدا"
+        ],
+        "n_tokens": 40,
+        "hits": 1,
+        "rate_in": 0.025,
+        "rate_rest": 0.005028486181308435,
+        "ratio": 4.971675191815858,
+        "p_one_sided": 0.18261647420469257
+      },
+      {
+        "surah": 101,
+        "translit": "Al-Qariah",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "قرع"
+        ],
+        "n_tokens": 36,
+        "hits": 3,
+        "rate_in": 0.08333333333333333,
+        "rate_rest": 2.571983384987333e-05,
+        "ratio": 3240.0416666666665,
+        "p_one_sided": 1.214021097058668e-10
+      },
+      {
+        "surah": 102,
+        "translit": "At-Takathur",
+        "class": "OTHER_ABSTRACT",
+        "testable": true,
+        "roots": [
+          "كثر"
+        ],
+        "n_tokens": 28,
+        "hits": 1,
+        "rate_in": 0.03571428571428571,
+        "rate_rest": 0.0021345266108603687,
+        "ratio": 16.731712564543887,
+        "p_one_sided": 0.058075939535408606
+      },
+      {
+        "surah": 103,
+        "translit": "Al-Asr",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "عصر"
+        ],
+        "n_tokens": 14,
+        "hits": 1,
+        "rate_in": 0.07142857142857142,
+        "rate_rest": 5.142511859917977e-05,
+        "ratio": 1388.982142857143,
+        "p_one_sided": 0.0007197110564871502
+      },
+      {
+        "surah": 104,
+        "translit": "Al-Humazah",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "همز"
+        ],
+        "n_tokens": 33,
+        "hits": 1,
+        "rate_in": 0.030303030303030304,
+        "rate_rest": 2.5718841623373285e-05,
+        "ratio": 1178.2424242424242,
+        "p_one_sided": 0.000848372616116617
+      },
+      {
+        "surah": 105,
+        "translit": "Al-Fil",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "فيل"
+        ],
+        "n_tokens": 23,
+        "hits": 1,
+        "rate_in": 0.043478260869565216,
+        "rate_rest": 0.0010157636228045363,
+        "ratio": 42.803522289488164,
+        "p_one_sided": 0.023103370751827477
+      },
+      {
+        "surah": 106,
+        "translit": "Quraysh",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "قريش"
+        ],
+        "n_tokens": 17,
+        "hits": 1,
+        "rate_in": 0.058823529411764705,
+        "rate_rest": 0.0,
+        "ratio": Infinity,
+        "p_one_sided": 0.0
+      },
+      {
+        "surah": 107,
+        "translit": "Al-Maun",
+        "class": "REVELATION_RITUAL",
+        "testable": true,
+        "roots": [
+          "معن",
+          "ماعون"
+        ],
+        "n_tokens": 25,
+        "hits": 2,
+        "rate_in": 0.08,
+        "rate_rest": 0.002558761507997737,
+        "ratio": 31.265125628140705,
+        "p_one_sided": 0.0018887186218056427
+      },
+      {
+        "surah": 108,
+        "translit": "Al-Kawthar",
+        "class": "OTHER_ABSTRACT",
+        "testable": true,
+        "roots": [
+          "كثر",
+          "كوثر"
+        ],
+        "n_tokens": 10,
+        "hits": 1,
+        "rate_in": 0.1,
+        "rate_rest": 0.002134032678982349,
+        "ratio": 46.85963855421687,
+        "p_one_sided": 0.021136554379856697
+      },
+      {
+        "surah": 109,
+        "translit": "Al-Kafirun",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "كفر"
+        ],
+        "n_tokens": 27,
+        "hits": 1,
+        "rate_in": 0.037037037037037035,
+        "rate_rest": 0.006776391924906777,
+        "ratio": 5.465598425750228,
+        "p_one_sided": 0.16771912907253025
+      },
+      {
+        "surah": 110,
+        "translit": "An-Nasr",
+        "class": "EVENT_ESCHATOLOGICAL",
+        "testable": true,
+        "roots": [
+          "نصر"
+        ],
+        "n_tokens": 19,
+        "hits": 1,
+        "rate_in": 0.05263157894736842,
+        "rate_rest": 0.0021214225102213994,
+        "ratio": 24.809569377990428,
+        "p_one_sided": 0.03954662691832287
+      },
+      {
+        "surah": 111,
+        "translit": "Al-Masad",
+        "class": "ANIMAL_OBJECT",
+        "testable": true,
+        "roots": [
+          "مسد"
+        ],
+        "n_tokens": 23,
+        "hits": 1,
+        "rate_in": 0.043478260869565216,
+        "rate_rest": 0.0007200349731272662,
+        "ratio": 60.3835403726708,
+        "p_one_sided": 0.016430295185101803
+      },
+      {
+        "surah": 112,
+        "translit": "Al-Ikhlas",
+        "class": "DIVINE_ATTRIBUTE",
+        "testable": true,
+        "roots": [
+          "خلص",
+          "احد"
+        ],
+        "n_tokens": 15,
+        "hits": 2,
+        "rate_in": 0.13333333333333333,
+        "rate_rest": 0.0029955516700521973,
+        "ratio": 44.510443490701,
+        "p_one_sided": 0.0009180656160327485
+      },
+      {
+        "surah": 113,
+        "translit": "Al-Falaq",
+        "class": "COSMOLOGICAL_NATURAL",
+        "testable": true,
+        "roots": [
+          "فلق"
+        ],
+        "n_tokens": 23,
+        "hits": 1,
+        "rate_in": 0.043478260869565216,
+        "rate_rest": 0.0006043150667318127,
+        "ratio": 71.94634597594819,
+        "p_one_sided": 0.013807241440330574
+      },
+      {
+        "surah": 114,
+        "translit": "An-Nas",
+        "class": "SOCIAL_LEGAL",
+        "testable": true,
+        "roots": [
+          "نوس",
+          "ناس"
+        ],
+        "n_tokens": 20,
+        "hits": 6,
+        "rate_in": 0.3,
+        "rate_rest": 0.0032528896717538606,
+        "ratio": 92.22569169960474,
+        "p_one_sided": 4.416009487633962e-11
+      }
+    ]
+  }
+}

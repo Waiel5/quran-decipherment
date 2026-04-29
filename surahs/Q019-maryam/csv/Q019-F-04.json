@@ -1,0 +1,74 @@
+{
+  "finding_id": "Q019-F-04",
+  "pre_reg_sha256": "2c0b276ea10e2fc5d5716fcfb37cef075973740c7781f795b1ce94d400d14026",
+  "seed": 20260428,
+  "rules_tuple": "(9-canonical-Sunni, AhmedBaset JSON, substring search, Hafs-Kufan)",
+  "observed": {
+    "q19_raw_total_hits": 217,
+    "q19_cleaned_total_hits": 87,
+    "sub_cluster_counts": {
+      "najashi_q19_recitation": 72,
+      "isa_eschatological_return": 30,
+      "satan_no_touch_isa": 4,
+      "maryam_best_of_women": 1,
+      "cradle_speech": 1,
+      "q19_recitation_faḍl": 1,
+      "q19_v71_wuruud": 1,
+      "q19_v_specific": 0,
+      "mughira_ukhta_harun": 0
+    },
+    "sub_cluster_books": {
+      "maryam_best_of_women": [
+        "bukhari"
+      ],
+      "najashi_q19_recitation": [
+        "abudawud",
+        "bukhari",
+        "ibnmajah",
+        "malik",
+        "muslim",
+        "nasai",
+        "tirmidhi"
+      ],
+      "isa_eschatological_return": [
+        "abudawud",
+        "bukhari",
+        "muslim"
+      ],
+      "satan_no_touch_isa": [
+        "bukhari"
+      ],
+      "cradle_speech": [
+        "muslim"
+      ],
+      "q19_v_specific": [],
+      "q19_recitation_faḍl": [
+        "darimi"
+      ],
+      "mughira_ukhta_harun": [],
+      "q19_v71_wuruud": [
+        "darimi"
+      ]
+    },
+    "dominant_cluster": "najashi_q19_recitation",
+    "dominant_share": 0.6545454545454545,
+    "maryam_best_of_women_attestations": 1,
+    "najashi_q19_attestations": 72,
+    "q19_recitation_fadl_attestations": 1
+  },
+  "comparators": {
+    "q01_estimated": 150,
+    "q24_curated_count": 64,
+    "q33_curated_count_or_q19": null,
+    "q36_estimated": 30,
+    "q112_estimated": 80,
+    "q96_estimated": 5,
+    "q19_raw_total": 217,
+    "q19_cleaned_total": 87
+  },
+  "verdict": {
+    "direction_locked": "Q 19 cleaned count in 40-60th percentile range; Maryam-best-of-women is densest sub-cluster",
+    "maryam_cluster_is_dominant": false,
+    "note": "Q 19 cleaned hadith count = 87; raw = 217. Dominant sub-cluster: najashi_q19_recitation (72 hits). NULL-DATA-GAP: full sanad-grading + cross-corpus percentile permutation requires per-surah Q*-citations.md curated counts (only Q 1, 2, 9, 24, 33 currently)."
+  }
+}

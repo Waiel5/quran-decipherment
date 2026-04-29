@@ -1,0 +1,200 @@
+{
+  "task_id": 43,
+  "test_name": "H-META-2 null-model-comparator for Markov-surprise family",
+  "seed": 20260413,
+  "pre_registration": {
+    "nulls_locked": "before corpora loaded; see file header",
+    "corpora_locked": [
+      "mutanabbi-diwan",
+      "jahiz-hayawan"
+    ],
+    "calibration_window": [
+      0.005,
+      0.02
+    ],
+    "alpha_nominal": 0.01,
+    "effect_sizes_sigma": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "B_calibration_draws": 1000
+  },
+  "h_meta_2_a_calibration": {
+    "mutanabbi": {
+      "corpus": "mutanabbi-diwan",
+      "calibration": {
+        "null_A": {
+          "n_draws": 1000,
+          "rate_reject_at_alpha_01_two_sided": 0.693,
+          "alpha_nominal": 0.01,
+          "calibration_window": [
+            0.005,
+            0.02
+          ],
+          "in_window": false,
+          "mean_z": -1.1459863756384676,
+          "median_z": -2.088603153323494,
+          "sd_z": 5.1071036034401,
+          "max_abs_z": 14.296974187949493
+        },
+        "null_B": {
+          "n_draws": 200,
+          "rate_reject_at_alpha_01_two_sided": 0.62,
+          "alpha_nominal": 0.01,
+          "calibration_window": [
+            0.005,
+            0.02
+          ],
+          "in_window": false,
+          "mean_z": -2.2558529710398023,
+          "median_z": -2.0943861290592025,
+          "sd_z": 4.883058627145736,
+          "max_abs_z": 17.40670530207554
+        }
+      }
+    },
+    "jahiz": {
+      "corpus": "jahiz-hayawan",
+      "calibration": {
+        "null_A": {
+          "n_draws": 1000,
+          "rate_reject_at_alpha_01_two_sided": 0.651,
+          "alpha_nominal": 0.01,
+          "calibration_window": [
+            0.005,
+            0.02
+          ],
+          "in_window": false,
+          "mean_z": -0.76457530831202,
+          "median_z": -1.5720958645134493,
+          "sd_z": 5.259839326485965,
+          "max_abs_z": 16.83159997061518
+        },
+        "null_B": {
+          "n_draws": 200,
+          "rate_reject_at_alpha_01_two_sided": 0.72,
+          "alpha_nominal": 0.01,
+          "calibration_window": [
+            0.005,
+            0.02
+          ],
+          "in_window": false,
+          "mean_z": -3.618883238909217,
+          "median_z": -3.938555994811682,
+          "sd_z": 4.4788995908614035,
+          "max_abs_z": 14.641801983348113
+        }
+      }
+    }
+  },
+  "h_meta_2_b_power": {
+    "mutanabbi": {
+      "corpus": "mutanabbi-diwan",
+      "rhyme_set": "بتدرسقكلمن",
+      "cells": {
+        "sigma_0.5": {
+          "planting_meta": {
+            "p_flip": 0.024770096470960446,
+            "target_effect_sigma": 0.5,
+            "sigma_A_baseline": 0.09908038588384178
+          },
+          "null_A_recovered_z": -7.918813494250735,
+          "null_B_recovered_z": -2.7445408538355505,
+          "null_A_obs_diff": -0.8117315796416988,
+          "null_B_obs_diff": -0.8117315796416988,
+          "deviation_from_planted_A": 7.418813494250735,
+          "deviation_from_planted_B": 2.2445408538355505
+        },
+        "sigma_1.0": {
+          "planting_meta": {
+            "p_flip": 0.04713451103043321,
+            "target_effect_sigma": 1.0,
+            "sigma_A_baseline": 0.09426902206086642
+          },
+          "null_A_recovered_z": -7.210019970487719,
+          "null_B_recovered_z": -2.1844705013103614,
+          "null_A_obs_diff": -0.722749807027365,
+          "null_B_obs_diff": -0.722749807027365,
+          "deviation_from_planted_A": 6.210019970487719,
+          "deviation_from_planted_B": 1.1844705013103614
+        },
+        "sigma_2.0": {
+          "planting_meta": {
+            "p_flip": 0.09775521407847862,
+            "target_effect_sigma": 2.0,
+            "sigma_A_baseline": 0.09775521407847863
+          },
+          "null_A_recovered_z": -5.799987040747427,
+          "null_B_recovered_z": -2.25955737700667,
+          "null_A_obs_diff": -0.6034509647080293,
+          "null_B_obs_diff": -0.6034509647080293,
+          "deviation_from_planted_A": 3.7999870407474274,
+          "deviation_from_planted_B": 0.2595573770066699
+        }
+      }
+    },
+    "jahiz": {
+      "corpus": "jahiz-hayawan",
+      "rhyme_set": "بتدرسقكلمن",
+      "cells": {
+        "sigma_0.5": {
+          "planting_meta": {
+            "p_flip": 0.015438646708930663,
+            "target_effect_sigma": 0.5,
+            "sigma_A_baseline": 0.06175458683572265
+          },
+          "null_A_recovered_z": -5.469176057283104,
+          "null_B_recovered_z": 4.7401167050603155,
+          "null_A_obs_diff": -0.3136871435703248,
+          "null_B_obs_diff": -0.3136871435703248,
+          "deviation_from_planted_A": 4.969176057283104,
+          "deviation_from_planted_B": 4.2401167050603155
+        },
+        "sigma_1.0": {
+          "planting_meta": {
+            "p_flip": 0.02941915585980284,
+            "target_effect_sigma": 1.0,
+            "sigma_A_baseline": 0.05883831171960568
+          },
+          "null_A_recovered_z": -4.115903607050425,
+          "null_B_recovered_z": 4.825390658133479,
+          "null_A_obs_diff": -0.2520431875126943,
+          "null_B_obs_diff": -0.2520431875126943,
+          "deviation_from_planted_A": 3.1159036070504254,
+          "deviation_from_planted_B": 3.825390658133479
+        },
+        "sigma_2.0": {
+          "planting_meta": {
+            "p_flip": 0.05482494195511658,
+            "target_effect_sigma": 2.0,
+            "sigma_A_baseline": 0.05482494195511658
+          },
+          "null_A_recovered_z": -3.0739016304608713,
+          "null_B_recovered_z": 6.693138319699698,
+          "null_A_obs_diff": -0.19121994454451197,
+          "null_B_obs_diff": -0.19121994454451197,
+          "deviation_from_planted_A": 1.0739016304608713,
+          "deviation_from_planted_B": 4.693138319699698
+        }
+      }
+    }
+  },
+  "adjudication": {
+    "null_A": {
+      "calibrated_mutanabbi": false,
+      "calibrated_jahiz": false,
+      "calibrated_both": false,
+      "power_deviation_1sigma_mut": 6.210019970487719,
+      "power_deviation_1sigma_jahiz": 3.1159036070504254
+    },
+    "null_B": {
+      "calibrated_mutanabbi": false,
+      "calibrated_jahiz": false,
+      "calibrated_both": false,
+      "power_deviation_1sigma_mut": 1.1844705013103614,
+      "power_deviation_1sigma_jahiz": 3.825390658133479
+    }
+  },
+  "verdict": "BOTH_DISQUALIFIED — Markov-surprise family needs a third null spec"
+}

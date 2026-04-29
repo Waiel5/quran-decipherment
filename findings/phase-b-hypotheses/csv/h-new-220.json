@@ -1,0 +1,260 @@
+{
+  "finding_id": "h-new-220",
+  "title": "Cross-feature replication of H-NEW-212 — 4 chronologies vs mushaf under char-4-gram",
+  "parent_finding": "h-new-212",
+  "companion_finding": "cross-finding-011",
+  "feature_space_source": "h-new-111b",
+  "pre_reg_sha256": "d99c6494147195bca38012757b1ec9a7620fcaeb69fd71b1bd7c295befecbe46",
+  "h_new_111b_source_sha256": "1fdba549ddcd864c48959b1f82d847649ee9af26f5bb4ee771298d75d325c795",
+  "seed": 20260419,
+  "permutations": 10000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016667,
+  "date": "2026-04-17",
+  "rules_tuple": "(no-tashkeel, char-4-grams with spaces K=2000, Dirichlet α=0.5, L1-normalized, Fisher-Rao angular, basmala-counted-only-in-surah-1, Hafs-Kufan, D-matrix-inherited-from-H-NEW-111b)",
+  "null_quantiles": {
+    "min": 98.31899,
+    "q001": 99.180297,
+    "q01": 100.093518,
+    "q025": 100.658907,
+    "q05": 101.035704,
+    "q25": 102.26277,
+    "q50": 103.087916,
+    "q75": 103.918462,
+    "q95": 105.034086,
+    "max": 107.574335,
+    "mean": 103.072626,
+    "sd": 1.217977
+  },
+  "results": {
+    "mushaf": {
+      "L": 89.226104,
+      "z": -11.368461,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "egyptian_1924": {
+      "L": 91.44324,
+      "z": -9.548118,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        68,
+        73,
+        74,
+        1,
+        111,
+        81,
+        87,
+        92,
+        89,
+        93,
+        94,
+        103,
+        100,
+        108,
+        102,
+        107,
+        109,
+        105,
+        113
+      ]
+    },
+    "noldeke_1860": {
+      "L": 89.09965,
+      "z": -11.472284,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        74,
+        111,
+        106,
+        108,
+        104,
+        107,
+        102,
+        105,
+        92,
+        90,
+        94,
+        93,
+        97,
+        86,
+        91,
+        80,
+        68,
+        87,
+        95
+      ]
+    },
+    "bell_1937": {
+      "L": 90.174763,
+      "z": -10.58958,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        74,
+        106,
+        93,
+        94,
+        103,
+        91,
+        107,
+        86,
+        95,
+        99,
+        101,
+        100,
+        92,
+        81,
+        82,
+        87,
+        80,
+        84,
+        79
+      ]
+    },
+    "blachere_1947": {
+      "L": 91.707037,
+      "z": -9.331532,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        68,
+        73,
+        74,
+        1,
+        111,
+        87,
+        92,
+        89,
+        93,
+        94,
+        103,
+        100,
+        108,
+        102,
+        107,
+        109,
+        105,
+        113,
+        114
+      ]
+    }
+  },
+  "leaderboard_shortest_first": [
+    {
+      "rank": 1,
+      "name": "noldeke_1860",
+      "L": 89.09965,
+      "p": 0.0001
+    },
+    {
+      "rank": 2,
+      "name": "mushaf",
+      "L": 89.226104,
+      "p": 0.0001
+    },
+    {
+      "rank": 3,
+      "name": "bell_1937",
+      "L": 90.174763,
+      "p": 0.0001
+    },
+    {
+      "rank": 4,
+      "name": "egyptian_1924",
+      "L": 91.44324,
+      "p": 0.0001
+    },
+    {
+      "rank": 5,
+      "name": "blachere_1947",
+      "L": 91.707037,
+      "p": 0.0001
+    }
+  ],
+  "shortest_name": "noldeke_1860",
+  "mushaf_rank_among_5": 2,
+  "bonferroni_family_verdicts": {
+    "egyptian_1924": {
+      "p": 0.0001,
+      "alpha_bon": 0.016667,
+      "pass": true
+    },
+    "bell_1937": {
+      "p": 0.0001,
+      "alpha_bon": 0.016667,
+      "pass": true
+    },
+    "blachere_1947": {
+      "p": 0.0001,
+      "alpha_bon": 0.016667,
+      "pass": true
+    }
+  },
+  "family_any_pass": true,
+  "mushaf_still_wins_over_all_3_chronologies": true,
+  "mushaf_beats_noldeke": false,
+  "mushaf_rank_1_over_all_4_chronologies": false,
+  "chronology_spearman_matrix": {
+    "mushaf vs noldeke_1860": -0.655106,
+    "egyptian_1924 vs mushaf": -0.406193,
+    "egyptian_1924 vs noldeke_1860": 0.771418,
+    "bell_1937 vs mushaf": -0.6214,
+    "bell_1937 vs egyptian_1924": 0.694012,
+    "bell_1937 vs noldeke_1860": 0.953999,
+    "bell_1937 vs blachere_1947": 0.689438,
+    "blachere_1947 vs mushaf": -0.40563,
+    "blachere_1947 vs egyptian_1924": 0.962492,
+    "blachere_1947 vs noldeke_1860": 0.768588
+  },
+  "pairwise_path_diffs_vs_mushaf": {
+    "egyptian_1924": {
+      "L_minus_mushaf_raw": 2.217136,
+      "L_minus_mushaf_in_null_sd": 1.820343
+    },
+    "noldeke_1860": {
+      "L_minus_mushaf_raw": -0.126454,
+      "L_minus_mushaf_in_null_sd": -0.103823
+    },
+    "bell_1937": {
+      "L_minus_mushaf_raw": 0.948659,
+      "L_minus_mushaf_in_null_sd": 0.778881
+    },
+    "blachere_1947": {
+      "L_minus_mushaf_raw": 2.480933,
+      "L_minus_mushaf_in_null_sd": 2.03693
+    }
+  },
+  "bell_data_quality_caveat": "Surah 15 imputed rank 52 (coded \"M\" in Fr. Wiki); ties (s81/s82 rank 15) resolved by mushaf-order secondary",
+  "blachere_data_quality_caveat": "Tie s80/s84 (both rank 24) resolved by mushaf-order secondary",
+  "cross_feature_generalization_verdict": "PARTIAL generalization: mushaf beats the 3 Bonferroni-family chronologies under char-4-gram but LOSES to Nöldeke (descriptive reference). Signal is mostly feature-invariant but Nöldeke-specific comparison is feature-sensitive",
+  "verdict_primary": "SEE leaderboard + family verdicts"
+}

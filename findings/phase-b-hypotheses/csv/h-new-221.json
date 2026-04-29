@@ -1,0 +1,280 @@
+{
+  "finding_id": "h-new-221",
+  "title": "Cross-feature replication of H-NEW-212 under NCD feature space (non-parametric)",
+  "parent_lineage": [
+    "H-NEW-169",
+    "H-NEW-212",
+    "cross-finding-011"
+  ],
+  "pre_reg_sha256": "f0dadafc5d135dafee8113e1b9ad06c654fd3f2ece5208e40d072091cdece32f",
+  "ncd_npy_sha256": "92ac6b1cb466268152dfad03715d49b16faa80dcd11167d8c754581a78dad1ec",
+  "h_new_169_json_sha256": "fb17c0538325cbcbecfda5ff1912f77307b02ccca0e73fd43338066991499566",
+  "h_new_212_script_sha256": "3a4f7474e03e228a5ad490bf39c5a052ffe9977b4e001c19b95f8c8f2ff28a7d",
+  "seed": 20260419,
+  "permutations": 10000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016667,
+  "date": "2026-04-17",
+  "feature_space": "NCD-lzma (preset=9|EXTREME, 0x00 sep, arith-mean sym)",
+  "rules_tuple": "(no-tashkeel, QAC v0.4, basmala-counted-only-in-surah-1, Hafs-Kufan, D-matrix-inherited-from-H-NEW-169 NCD)",
+  "null_quantiles": {
+    "min": 95.424246,
+    "q001": 96.107189,
+    "q01": 96.746924,
+    "q025": 97.07088,
+    "q05": 97.339372,
+    "q25": 98.129958,
+    "q50": 98.672955,
+    "q75": 99.188924,
+    "q95": 99.912262,
+    "max": 101.125515,
+    "mean": 98.651152,
+    "sd": 0.786098
+  },
+  "results": {
+    "mushaf": {
+      "L": 86.286128,
+      "z": -15.72962,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "egyptian_1924": {
+      "L": 90.671995,
+      "z": -10.150332,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        68,
+        73,
+        74,
+        1,
+        111,
+        81,
+        87,
+        92,
+        89,
+        93,
+        94,
+        103,
+        100,
+        108,
+        102,
+        107,
+        109,
+        105,
+        113
+      ]
+    },
+    "noldeke_1860": {
+      "L": 90.232081,
+      "z": -10.70995,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        74,
+        111,
+        106,
+        108,
+        104,
+        107,
+        102,
+        105,
+        92,
+        90,
+        94,
+        93,
+        97,
+        86,
+        91,
+        80,
+        68,
+        87,
+        95
+      ]
+    },
+    "bell_1937": {
+      "L": 90.914767,
+      "z": -9.841501,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        74,
+        106,
+        93,
+        94,
+        103,
+        91,
+        107,
+        86,
+        95,
+        99,
+        101,
+        100,
+        92,
+        81,
+        82,
+        87,
+        80,
+        84,
+        79
+      ]
+    },
+    "blachere_1947": {
+      "L": 90.749216,
+      "z": -10.052099,
+      "n_perms_le": 0,
+      "p_one_sided_lower": 0.0001,
+      "first20_order": [
+        96,
+        68,
+        73,
+        74,
+        1,
+        111,
+        87,
+        92,
+        89,
+        93,
+        94,
+        103,
+        100,
+        108,
+        102,
+        107,
+        109,
+        105,
+        113,
+        114
+      ]
+    }
+  },
+  "leaderboard_shortest_first": [
+    {
+      "rank": 1,
+      "name": "mushaf",
+      "L": 86.286128,
+      "p": 0.0001
+    },
+    {
+      "rank": 2,
+      "name": "noldeke_1860",
+      "L": 90.232081,
+      "p": 0.0001
+    },
+    {
+      "rank": 3,
+      "name": "egyptian_1924",
+      "L": 90.671995,
+      "p": 0.0001
+    },
+    {
+      "rank": 4,
+      "name": "blachere_1947",
+      "L": 90.749216,
+      "p": 0.0001
+    },
+    {
+      "rank": 5,
+      "name": "bell_1937",
+      "L": 90.914767,
+      "p": 0.0001
+    }
+  ],
+  "shortest_name": "mushaf",
+  "mushaf_rank_among_5": 1,
+  "bonferroni_family_verdicts": {
+    "egyptian_1924": {
+      "p": 0.0001,
+      "alpha_bon": 0.016667,
+      "pass": true
+    },
+    "bell_1937": {
+      "p": 0.0001,
+      "alpha_bon": 0.016667,
+      "pass": true
+    },
+    "blachere_1947": {
+      "p": 0.0001,
+      "alpha_bon": 0.016667,
+      "pass": true
+    }
+  },
+  "family_any_pass": true,
+  "mushaf_still_wins_over_all_3_chronologies": true,
+  "chronology_spearman_matrix": {
+    "mushaf vs noldeke_1860": -0.655106,
+    "egyptian_1924 vs mushaf": -0.406193,
+    "egyptian_1924 vs noldeke_1860": 0.771418,
+    "bell_1937 vs mushaf": -0.6214,
+    "bell_1937 vs egyptian_1924": 0.694012,
+    "bell_1937 vs noldeke_1860": 0.953999,
+    "bell_1937 vs blachere_1947": 0.689438,
+    "blachere_1947 vs mushaf": -0.40563,
+    "blachere_1947 vs egyptian_1924": 0.962492,
+    "blachere_1947 vs noldeke_1860": 0.768588
+  },
+  "pairwise_path_diffs_vs_mushaf": {
+    "egyptian_1924": {
+      "L_minus_mushaf_raw": 4.385867,
+      "L_minus_mushaf_in_null_sd": 5.579288
+    },
+    "noldeke_1860": {
+      "L_minus_mushaf_raw": 3.945954,
+      "L_minus_mushaf_in_null_sd": 5.019671
+    },
+    "bell_1937": {
+      "L_minus_mushaf_raw": 4.628639,
+      "L_minus_mushaf_in_null_sd": 5.888119
+    },
+    "blachere_1947": {
+      "L_minus_mushaf_raw": 4.463088,
+      "L_minus_mushaf_in_null_sd": 5.677521
+    }
+  },
+  "cross_feature_concordance_with_h212": {
+    "fisher_rao_leaderboard": [
+      "mushaf",
+      "noldeke_1860",
+      "bell_1937",
+      "egyptian_1924",
+      "blachere_1947"
+    ],
+    "ncd_leaderboard": [
+      "mushaf",
+      "noldeke_1860",
+      "egyptian_1924",
+      "blachere_1947",
+      "bell_1937"
+    ],
+    "identical": false,
+    "leaderboard_spearman": 0.7
+  },
+  "bell_data_quality_caveat": "Surah 15 imputed rank 52 (coded \"M\" not numeric in Fr. Wiki); ties (s81/s82 both rank 15) resolved by mushaf-order secondary",
+  "blachere_data_quality_caveat": "Tie s80/s84 (both rank 24) resolved by mushaf-order secondary",
+  "verdict_primary": "SEE leaderboard + family verdicts"
+}

@@ -1,0 +1,82 @@
+{
+  "finding_id": "h-new-38",
+  "pre_reg": "findings/phase-b-hypotheses/h-new-38-prereg.md",
+  "pre_reg_compliance": "PRE-REG-STANDARD-04",
+  "rules_tuple": "(no-tashkeel, character-level, 28-letter-rasm, hamza→alif normalize, ى→ي, ة→ه, mushaf order, leave-one-out via per-verse subtraction)",
+  "seed": 20260414,
+  "n_gram_order": 5,
+  "smoothing": "add-one Laplace",
+  "bonferroni_k": 2,
+  "alpha_bon": 0.005,
+  "sided_test": "one-sided positive (f₊ > 0.5 LOCKED)",
+  "primary": {
+    "description": "sign(G_i > 0) fraction across all 6122 within-surah adjacent verse pairs",
+    "n_pairs": 6122,
+    "n_pos": 508,
+    "n_zero": 0,
+    "f_plus": 0.08297941849068932,
+    "p_binomial_one_sided": 1.0,
+    "mean_G": -0.15709584404063387,
+    "min_G": -1.4027283057456241,
+    "max_G": 0.7973684802301664,
+    "mean_H_uncond": 3.2656430047194465,
+    "mean_H_cond": 3.4227388487600803,
+    "pass": "False"
+  },
+  "shuffle_null_gate": {
+    "n_shuffles": 10000,
+    "observed_f_plus_nonloo": 0.04181639986932375,
+    "shuffle_mean": 0.03983464554067298,
+    "shuffle_99th_pctile": 0.044103234237177394,
+    "shuffle_min": 0.033812479581836,
+    "shuffle_max": 0.04835021234890559,
+    "pass": false,
+    "note": "Shuffle null uses non-LOO model for both observed and shuffled (so bias is constant across the distribution comparison). Primary uses LOO. Disclosure: observed_f_plus_nonloo and primary f_plus may differ slightly because of LOO vs non-LOO."
+  },
+  "secondary": {
+    "description": "Two-proportion z-test: Quran f₊ vs each baseline corpus f₊ (worst-baseline-wins)",
+    "baselines": {
+      "bukhari": {
+        "status": "DEGENERATE",
+        "reason": "too few lines",
+        "n_lines": 1
+      },
+      "jahiz": {
+        "status": "COMPUTED",
+        "n_lines": 35431,
+        "n_pairs": 35430,
+        "n_pos": 8726,
+        "n_zero": 0,
+        "f_plus": 0.2462884561106407,
+        "mean_G": -0.08595909321605837,
+        "z_vs_quran": -28.38057897853221,
+        "p_one_sided": 1.0,
+        "passes_alpha_bon": false
+      },
+      "mutanabbi": {
+        "status": "COMPUTED",
+        "n_lines": 966,
+        "n_pairs": 965,
+        "n_pos": 197,
+        "n_zero": 0,
+        "f_plus": 0.20414507772020726,
+        "mean_G": -0.14444790542832434,
+        "z_vs_quran": -11.688213253806973,
+        "p_one_sided": 1.0,
+        "passes_alpha_bon": false
+      }
+    },
+    "verdict": "FAIL"
+  },
+  "final_verdict": "REVERSE-CANDIDATE — file h-new-38-reverse if binomial-significant",
+  "no_fork_protections_honored": [
+    "sign locked to f₊ > 0.5 before script run",
+    "n-gram order locked to 5",
+    "smoothing locked to add-one Laplace",
+    "surah-initial gaps excluded (114 gaps, leaving 6122 pairs)",
+    "baselines locked to Bukhari-noquran, Jāḥiẓ Ḥayawān, Mutanabbī Dīwān",
+    "LOO for primary observation",
+    "shuffle null seed 20260414, 10000 shuffles"
+  ],
+  "data_reuse_disclosed": "Reuses normalization from H-NEW-25 (clean_consonants), reuses Quran JSON loader. No data shared with H-NEW-20 statistical machinery."
+}

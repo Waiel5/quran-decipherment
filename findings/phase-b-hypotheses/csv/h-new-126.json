@@ -1,0 +1,697 @@
+{
+  "meta": {
+    "id": "H-NEW-126",
+    "title": "True-isolate-core characterization",
+    "family": "h-new-126-isolate-core",
+    "bonferroni_k": 4,
+    "alpha_bon": 0.0125,
+    "seed": 20260417,
+    "n_perm": 10000,
+    "core_5": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "date": "2026-04-17",
+    "elapsed_seconds": 2.173
+  },
+  "profile_table": [
+    {
+      "surah": 16,
+      "name": "al-Naḥl",
+      "gloss": "the Bee",
+      "period": "Meccan",
+      "noldeke_rank": 73,
+      "surah_length_verses": 128,
+      "total_tokens": 1844,
+      "mean_verse_length": 14.41,
+      "allah_density_per_100v": 64.06,
+      "unique_root_count": 358,
+      "prophet_narrative_density": 2.34,
+      "first_word": "أتى",
+      "muqattaat_opened": false,
+      "imperative_ratio": 0.78,
+      "interrogative_ratio": 8.59,
+      "declarative_ratio": 90.62
+    },
+    {
+      "surah": 21,
+      "name": "al-Anbiyāʾ",
+      "gloss": "the Prophets",
+      "period": "Meccan",
+      "noldeke_rank": 65,
+      "surah_length_verses": 112,
+      "total_tokens": 1174,
+      "mean_verse_length": 10.48,
+      "allah_density_per_100v": 4.46,
+      "unique_root_count": 284,
+      "prophet_narrative_density": 17.86,
+      "first_word": "اقترب",
+      "muqattaat_opened": false,
+      "imperative_ratio": 4.46,
+      "interrogative_ratio": 2.68,
+      "declarative_ratio": 92.86
+    },
+    {
+      "surah": 22,
+      "name": "al-Ḥajj",
+      "gloss": "the Pilgrimage",
+      "period": "Medinan",
+      "noldeke_rank": 107,
+      "surah_length_verses": 78,
+      "total_tokens": 1279,
+      "mean_verse_length": 16.4,
+      "allah_density_per_100v": 96.15,
+      "unique_root_count": 328,
+      "prophet_narrative_density": 10.26,
+      "first_word": "يا",
+      "muqattaat_opened": false,
+      "imperative_ratio": 2.56,
+      "interrogative_ratio": 10.26,
+      "declarative_ratio": 87.18
+    },
+    {
+      "surah": 23,
+      "name": "al-Muʾminūn",
+      "gloss": "the Believers",
+      "period": "Meccan",
+      "noldeke_rank": 64,
+      "surah_length_verses": 118,
+      "total_tokens": 1052,
+      "mean_verse_length": 8.92,
+      "allah_density_per_100v": 11.02,
+      "unique_root_count": 271,
+      "prophet_narrative_density": 3.39,
+      "first_word": "قد",
+      "muqattaat_opened": false,
+      "imperative_ratio": 3.39,
+      "interrogative_ratio": 7.63,
+      "declarative_ratio": 88.98
+    },
+    {
+      "surah": 25,
+      "name": "al-Furqān",
+      "gloss": "the Criterion",
+      "period": "Meccan",
+      "noldeke_rank": 66,
+      "surah_length_verses": 77,
+      "total_tokens": 896,
+      "mean_verse_length": 11.64,
+      "allah_density_per_100v": 10.39,
+      "unique_root_count": 250,
+      "prophet_narrative_density": 3.9,
+      "first_word": "تبارك",
+      "muqattaat_opened": false,
+      "imperative_ratio": 5.19,
+      "interrogative_ratio": 5.19,
+      "declarative_ratio": 89.61
+    }
+  ],
+  "cell_a_shared_content": {
+    "statistic": "mean_pairwise_root_jaccard",
+    "direction": "one-sided upper",
+    "core": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "observed": 0.34138556942690185,
+    "null_mean": 0.12909419998186208,
+    "null_median": 0.12219051878303272,
+    "p_one_sided_upper": 0.0008999100089991,
+    "alpha_bon": 0.0125,
+    "verdict": "PASS",
+    "mw5_positive_control": {
+      "cluster": "hawamim_core_Q40-44",
+      "members": [
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "observed": 0.3062327854763829,
+      "null_mean": 0.12977618906521465,
+      "p_one_sided_upper": 0.0045995400459954,
+      "fired_at_0.05": true
+    }
+  },
+  "cell_b_genre_coherence": {
+    "description": "5/5 concept-or-object-named, 0 prophet/event/attribute/letter",
+    "per_surah": [
+      {
+        "surah": 16,
+        "name": "al-Naḥl",
+        "gloss": "the Bee",
+        "category": "object-name",
+        "justification": "al-Naḥl = 'the Bee' — a creature; concrete object; NOT a prophet/event/attribute/letter. Allied to concept-class for our purposes."
+      },
+      {
+        "surah": 21,
+        "name": "al-Anbiyāʾ",
+        "gloss": "the Prophets",
+        "category": "concept-name",
+        "justification": "al-Anbiyāʾ = 'the Prophets' — plural-concept referring to prophethood as a category; NOT any specific prophet."
+      },
+      {
+        "surah": 22,
+        "name": "al-Ḥajj",
+        "gloss": "the Pilgrimage",
+        "category": "concept-name",
+        "justification": "al-Ḥajj = 'the Pilgrimage' — concept/ritual-institution."
+      },
+      {
+        "surah": 23,
+        "name": "al-Muʾminūn",
+        "gloss": "the Believers",
+        "category": "concept-name",
+        "justification": "al-Muʾminūn = 'the Believers' — plural-concept referring to believers as a category."
+      },
+      {
+        "surah": 25,
+        "name": "al-Furqān",
+        "gloss": "the Criterion",
+        "category": "concept-name",
+        "justification": "al-Furqān = 'the Criterion' — abstract concept/epithet for revelation."
+      }
+    ],
+    "n_concept_or_object": 5,
+    "genre_coherent": true
+  },
+  "cell_c_rhetorical_mode": {
+    "statistic": "mean_pairwise_euclidean_in_imp_int_dec_space",
+    "direction": "one-sided lower",
+    "core": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "core_triples": {
+      "16": [
+        0.78125,
+        8.59375,
+        90.625
+      ],
+      "21": [
+        4.464285714285714,
+        2.6785714285714284,
+        92.85714285714286
+      ],
+      "22": [
+        2.5641025641025643,
+        10.256410256410257,
+        87.17948717948718
+      ],
+      "23": [
+        3.389830508474576,
+        7.627118644067797,
+        88.98305084745763
+      ],
+      "25": [
+        5.194805194805195,
+        5.194805194805195,
+        89.6103896103896
+      ]
+    },
+    "observed": 5.322337211716053,
+    "null_mean": 14.829492729291715,
+    "p_one_sided_lower": 0.0156984301569843,
+    "alpha_bon": 0.0125,
+    "verdict": "NULL",
+    "mw5_positive_control": {
+      "cluster": "musabbihat_inner_5_Q57_59_61_62_64",
+      "members": [
+        57,
+        59,
+        61,
+        62,
+        64
+      ],
+      "observed": 16.07988973231767,
+      "null_mean": 14.533965652149137,
+      "p_one_sided_lower": 0.6732326767323268,
+      "fired_at_0.05": false
+    }
+  },
+  "cell_d_per_surah_uniqueness": {
+    "axes": [
+      "surah_length",
+      "mean_verse_length",
+      "allah_density",
+      "noldeke_rank",
+      "unique_root_count",
+      "root_density",
+      "prophet_narrative_density",
+      "imperative_ratio",
+      "interrogative_ratio"
+    ],
+    "per_surah": [
+      {
+        "surah": 16,
+        "name": "al-Naḥl",
+        "top_extremity_axis": "unique_root_count",
+        "top_extremity_direction": "high",
+        "top_extremity_percentile": 92.54385964912281,
+        "top_extremity_value": 358,
+        "all_axes_sorted": [
+          {
+            "axis": "unique_root_count",
+            "value": 358,
+            "percentile": 92.54385964912281,
+            "extremity": 42.54385964912281,
+            "direction": "high"
+          },
+          {
+            "axis": "surah_length",
+            "value": 128,
+            "percentile": 91.66666666666667,
+            "extremity": 41.66666666666667,
+            "direction": "high"
+          },
+          {
+            "axis": "root_density",
+            "value": 0.19414316702819956,
+            "percentile": 10.087719298245615,
+            "extremity": 39.91228070175438,
+            "direction": "low"
+          },
+          {
+            "axis": "allah_density",
+            "value": 64.0625,
+            "percentile": 75.0,
+            "extremity": 25.0,
+            "direction": "high"
+          },
+          {
+            "axis": "mean_verse_length",
+            "value": 14.40625,
+            "percentile": 67.98245614035088,
+            "extremity": 17.982456140350877,
+            "direction": "high"
+          },
+          {
+            "axis": "interrogative_ratio",
+            "value": 8.59375,
+            "percentile": 65.35087719298245,
+            "extremity": 15.350877192982452,
+            "direction": "high"
+          },
+          {
+            "axis": "noldeke_rank",
+            "value": 73,
+            "percentile": 63.59649122807018,
+            "extremity": 13.596491228070178,
+            "direction": "high"
+          },
+          {
+            "axis": "prophet_narrative_density",
+            "value": 2.34375,
+            "percentile": 46.05263157894737,
+            "extremity": 3.94736842105263,
+            "direction": "low"
+          },
+          {
+            "axis": "imperative_ratio",
+            "value": 0.78125,
+            "percentile": 46.05263157894737,
+            "extremity": 3.94736842105263,
+            "direction": "low"
+          }
+        ],
+        "full_profile": {
+          "surah_length": 128,
+          "mean_verse_length": 14.40625,
+          "allah_density": 64.0625,
+          "noldeke_rank": 73,
+          "period": "Meccan",
+          "unique_root_count": 358,
+          "root_density": 0.19414316702819956,
+          "prophet_narrative_density": 2.34375,
+          "first_word_token": "أتى",
+          "imperative_ratio": 0.78125,
+          "interrogative_ratio": 8.59375,
+          "declarative_ratio": 90.625,
+          "total_tokens": 1844
+        }
+      },
+      {
+        "surah": 21,
+        "name": "al-Anbiyāʾ",
+        "top_extremity_axis": "surah_length",
+        "top_extremity_direction": "high",
+        "top_extremity_percentile": 88.15789473684211,
+        "top_extremity_value": 112,
+        "all_axes_sorted": [
+          {
+            "axis": "surah_length",
+            "value": 112,
+            "percentile": 88.15789473684211,
+            "extremity": 38.15789473684211,
+            "direction": "high"
+          },
+          {
+            "axis": "prophet_narrative_density",
+            "value": 17.857142857142858,
+            "percentile": 88.15789473684211,
+            "extremity": 38.15789473684211,
+            "direction": "high"
+          },
+          {
+            "axis": "unique_root_count",
+            "value": 284,
+            "percentile": 84.64912280701755,
+            "extremity": 34.64912280701755,
+            "direction": "high"
+          },
+          {
+            "axis": "root_density",
+            "value": 0.24190800681431004,
+            "percentile": 23.24561403508772,
+            "extremity": 26.75438596491228,
+            "direction": "low"
+          },
+          {
+            "axis": "imperative_ratio",
+            "value": 4.464285714285714,
+            "percentile": 72.36842105263158,
+            "extremity": 22.368421052631575,
+            "direction": "high"
+          },
+          {
+            "axis": "interrogative_ratio",
+            "value": 2.6785714285714284,
+            "percentile": 29.385964912280702,
+            "extremity": 20.614035087719298,
+            "direction": "low"
+          },
+          {
+            "axis": "allah_density",
+            "value": 4.464285714285714,
+            "percentile": 37.280701754385966,
+            "extremity": 12.719298245614034,
+            "direction": "low"
+          },
+          {
+            "axis": "mean_verse_length",
+            "value": 10.482142857142858,
+            "percentile": 56.578947368421055,
+            "extremity": 6.578947368421055,
+            "direction": "high"
+          },
+          {
+            "axis": "noldeke_rank",
+            "value": 65,
+            "percentile": 56.578947368421055,
+            "extremity": 6.578947368421055,
+            "direction": "high"
+          }
+        ],
+        "full_profile": {
+          "surah_length": 112,
+          "mean_verse_length": 10.482142857142858,
+          "allah_density": 4.464285714285714,
+          "noldeke_rank": 65,
+          "period": "Meccan",
+          "unique_root_count": 284,
+          "root_density": 0.24190800681431004,
+          "prophet_narrative_density": 17.857142857142858,
+          "first_word_token": "اقترب",
+          "imperative_ratio": 4.464285714285714,
+          "interrogative_ratio": 2.6785714285714284,
+          "declarative_ratio": 92.85714285714286,
+          "total_tokens": 1174
+        }
+      },
+      {
+        "surah": 22,
+        "name": "al-Ḥajj",
+        "top_extremity_axis": "noldeke_rank",
+        "top_extremity_direction": "high",
+        "top_extremity_percentile": 93.42105263157895,
+        "top_extremity_value": 107,
+        "all_axes_sorted": [
+          {
+            "axis": "noldeke_rank",
+            "value": 107,
+            "percentile": 93.42105263157895,
+            "extremity": 43.421052631578945,
+            "direction": "high"
+          },
+          {
+            "axis": "unique_root_count",
+            "value": 328,
+            "percentile": 89.03508771929825,
+            "extremity": 39.03508771929825,
+            "direction": "high"
+          },
+          {
+            "axis": "allah_density",
+            "value": 96.15384615384616,
+            "percentile": 82.01754385964912,
+            "extremity": 32.01754385964912,
+            "direction": "high"
+          },
+          {
+            "axis": "mean_verse_length",
+            "value": 16.397435897435898,
+            "percentile": 80.26315789473684,
+            "extremity": 30.263157894736835,
+            "direction": "high"
+          },
+          {
+            "axis": "surah_length",
+            "value": 78,
+            "percentile": 75.43859649122807,
+            "extremity": 25.43859649122807,
+            "direction": "high"
+          },
+          {
+            "axis": "prophet_narrative_density",
+            "value": 10.256410256410257,
+            "percentile": 74.12280701754386,
+            "extremity": 24.122807017543863,
+            "direction": "high"
+          },
+          {
+            "axis": "root_density",
+            "value": 0.25645035183737297,
+            "percentile": 26.75438596491228,
+            "extremity": 23.24561403508772,
+            "direction": "low"
+          },
+          {
+            "axis": "interrogative_ratio",
+            "value": 10.256410256410257,
+            "percentile": 72.36842105263158,
+            "extremity": 22.368421052631575,
+            "direction": "high"
+          },
+          {
+            "axis": "imperative_ratio",
+            "value": 2.5641025641025643,
+            "percentile": 60.08771929824562,
+            "extremity": 10.087719298245617,
+            "direction": "high"
+          }
+        ],
+        "full_profile": {
+          "surah_length": 78,
+          "mean_verse_length": 16.397435897435898,
+          "allah_density": 96.15384615384616,
+          "noldeke_rank": 107,
+          "period": "Medinan",
+          "unique_root_count": 328,
+          "root_density": 0.25645035183737297,
+          "prophet_narrative_density": 10.256410256410257,
+          "first_word_token": "يا",
+          "imperative_ratio": 2.5641025641025643,
+          "interrogative_ratio": 10.256410256410257,
+          "declarative_ratio": 87.17948717948718,
+          "total_tokens": 1279
+        }
+      },
+      {
+        "surah": 23,
+        "name": "al-Muʾminūn",
+        "top_extremity_axis": "surah_length",
+        "top_extremity_direction": "high",
+        "top_extremity_percentile": 89.03508771929825,
+        "top_extremity_value": 118,
+        "all_axes_sorted": [
+          {
+            "axis": "surah_length",
+            "value": 118,
+            "percentile": 89.03508771929825,
+            "extremity": 39.03508771929825,
+            "direction": "high"
+          },
+          {
+            "axis": "unique_root_count",
+            "value": 271,
+            "percentile": 82.89473684210526,
+            "extremity": 32.89473684210526,
+            "direction": "high"
+          },
+          {
+            "axis": "root_density",
+            "value": 0.2576045627376426,
+            "percentile": 27.63157894736842,
+            "extremity": 22.36842105263158,
+            "direction": "low"
+          },
+          {
+            "axis": "imperative_ratio",
+            "value": 3.389830508474576,
+            "percentile": 65.35087719298245,
+            "extremity": 15.350877192982452,
+            "direction": "high"
+          },
+          {
+            "axis": "interrogative_ratio",
+            "value": 7.627118644067797,
+            "percentile": 56.578947368421055,
+            "extremity": 6.578947368421055,
+            "direction": "high"
+          },
+          {
+            "axis": "noldeke_rank",
+            "value": 64,
+            "percentile": 55.70175438596491,
+            "extremity": 5.701754385964911,
+            "direction": "high"
+          },
+          {
+            "axis": "mean_verse_length",
+            "value": 8.915254237288135,
+            "percentile": 51.31578947368421,
+            "extremity": 1.3157894736842124,
+            "direction": "high"
+          },
+          {
+            "axis": "allah_density",
+            "value": 11.016949152542374,
+            "percentile": 50.43859649122807,
+            "extremity": 0.43859649122806843,
+            "direction": "high"
+          },
+          {
+            "axis": "prophet_narrative_density",
+            "value": 3.389830508474576,
+            "percentile": 49.56140350877193,
+            "extremity": 0.43859649122806843,
+            "direction": "low"
+          }
+        ],
+        "full_profile": {
+          "surah_length": 118,
+          "mean_verse_length": 8.915254237288135,
+          "allah_density": 11.016949152542374,
+          "noldeke_rank": 64,
+          "period": "Meccan",
+          "unique_root_count": 271,
+          "root_density": 0.2576045627376426,
+          "prophet_narrative_density": 3.389830508474576,
+          "first_word_token": "قد",
+          "imperative_ratio": 3.389830508474576,
+          "interrogative_ratio": 7.627118644067797,
+          "declarative_ratio": 88.98305084745763,
+          "total_tokens": 1052
+        }
+      },
+      {
+        "surah": 25,
+        "name": "al-Furqān",
+        "top_extremity_axis": "unique_root_count",
+        "top_extremity_direction": "high",
+        "top_extremity_percentile": 78.50877192982456,
+        "top_extremity_value": 250,
+        "all_axes_sorted": [
+          {
+            "axis": "unique_root_count",
+            "value": 250,
+            "percentile": 78.50877192982456,
+            "extremity": 28.50877192982456,
+            "direction": "high"
+          },
+          {
+            "axis": "imperative_ratio",
+            "value": 5.194805194805195,
+            "percentile": 76.75438596491227,
+            "extremity": 26.754385964912274,
+            "direction": "high"
+          },
+          {
+            "axis": "surah_length",
+            "value": 77,
+            "percentile": 74.12280701754386,
+            "extremity": 24.122807017543863,
+            "direction": "high"
+          },
+          {
+            "axis": "root_density",
+            "value": 0.27901785714285715,
+            "percentile": 32.89473684210526,
+            "extremity": 17.10526315789474,
+            "direction": "low"
+          },
+          {
+            "axis": "interrogative_ratio",
+            "value": 5.194805194805195,
+            "percentile": 39.91228070175438,
+            "extremity": 10.087719298245617,
+            "direction": "low"
+          },
+          {
+            "axis": "mean_verse_length",
+            "value": 11.636363636363637,
+            "percentile": 58.333333333333336,
+            "extremity": 8.333333333333336,
+            "direction": "high"
+          },
+          {
+            "axis": "noldeke_rank",
+            "value": 66,
+            "percentile": 57.45614035087719,
+            "extremity": 7.456140350877192,
+            "direction": "high"
+          },
+          {
+            "axis": "prophet_narrative_density",
+            "value": 3.896103896103896,
+            "percentile": 53.94736842105263,
+            "extremity": 3.94736842105263,
+            "direction": "high"
+          },
+          {
+            "axis": "allah_density",
+            "value": 10.38961038961039,
+            "percentile": 49.56140350877193,
+            "extremity": 0.43859649122806843,
+            "direction": "low"
+          }
+        ],
+        "full_profile": {
+          "surah_length": 77,
+          "mean_verse_length": 11.636363636363637,
+          "allah_density": 10.38961038961039,
+          "noldeke_rank": 66,
+          "period": "Meccan",
+          "unique_root_count": 250,
+          "root_density": 0.27901785714285715,
+          "prophet_narrative_density": 3.896103896103896,
+          "first_word_token": "تبارك",
+          "imperative_ratio": 5.194805194805195,
+          "interrogative_ratio": 5.194805194805195,
+          "declarative_ratio": 89.6103896103896,
+          "total_tokens": 896
+        }
+      }
+    ]
+  }
+}

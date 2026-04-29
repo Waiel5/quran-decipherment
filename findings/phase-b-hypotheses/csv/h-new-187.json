@@ -1,0 +1,220 @@
+{
+  "id": "H-NEW-187",
+  "seed": 20260419,
+  "bonferroni_k_primary": 2,
+  "alpha_bon_primary": 0.025,
+  "n_surahs": 114,
+  "correlations_with_lz_norm_simple": {
+    "gzip_ratio": {
+      "n": 114,
+      "rho": 0.9957048170466886,
+      "p": 0.0
+    },
+    "heap_beta": {
+      "n": 110,
+      "rho": 0.7620737147500701,
+      "p": 0.0
+    },
+    "zipf_alpha": {
+      "n": 90,
+      "rho": -0.9733629666213935,
+      "p": 0.0
+    },
+    "dispersion": {
+      "n": 114,
+      "rho": 0.3868661770044526,
+      "p": 2.1200841155755157e-05
+    }
+  },
+  "quran_vs_bukhari": {
+    "n_quran": 114,
+    "n_bukhari_matched": 114,
+    "quran_mean": 0.2852535671585282,
+    "bukhari_mean": 0.27215897474978956,
+    "mann_whitney_u": 7618.0,
+    "p_two_sided": 0.02451361702324184
+  },
+  "muq_vs_nonmuq": {
+    "n_muq": 29,
+    "n_nonmuq": 85,
+    "muq_mean": 0.22787453338345384,
+    "nonmuq_mean": 0.30482994338767117,
+    "welch_t": -7.055738803929991,
+    "p": 1.5135448450109834e-10
+  },
+  "mw5_sanity": {
+    "random_lz_norm_simple": 0.3232,
+    "repeating_lz_norm_simple": 0.0004,
+    "ratio": 807.9999999999999,
+    "pass": true
+  },
+  "decision": {
+    "p1_pass": true,
+    "p2_pass": true,
+    "mw5_pass": true
+  },
+  "top10_lowest_lz_norm": [
+    {
+      "surah": 2,
+      "name": "Al-Baqarah",
+      "type": "medinan",
+      "lz_norm_simple": 0.15967393910333252,
+      "gzip_ratio": 0.25787345899812003,
+      "n_chars": 33368
+    },
+    {
+      "surah": 4,
+      "name": "An-Nisa",
+      "type": "medinan",
+      "lz_norm_simple": 0.16784640744691168,
+      "gzip_ratio": 0.26203524607779927,
+      "n_chars": 20626
+    },
+    {
+      "surah": 3,
+      "name": "Ali 'Imran",
+      "type": "medinan",
+      "lz_norm_simple": 0.17513347782417932,
+      "gzip_ratio": 0.27199718623600444,
+      "n_chars": 18917
+    },
+    {
+      "surah": 9,
+      "name": "At-Tawbah",
+      "type": "medinan",
+      "lz_norm_simple": 0.17819015547753816,
+      "gzip_ratio": 0.2723346935541381,
+      "n_chars": 13957
+    },
+    {
+      "surah": 5,
+      "name": "Al-Ma'idah",
+      "type": "medinan",
+      "lz_norm_simple": 0.1789548570689432,
+      "gzip_ratio": 0.27494798766052087,
+      "n_chars": 15462
+    },
+    {
+      "surah": 7,
+      "name": "Al-A'raf",
+      "type": "meccan",
+      "lz_norm_simple": 0.18582028029678482,
+      "gzip_ratio": 0.2882460414129111,
+      "n_chars": 18195
+    },
+    {
+      "surah": 6,
+      "name": "Al-An'am",
+      "type": "meccan",
+      "lz_norm_simple": 0.18713522147815936,
+      "gzip_ratio": 0.2895969368568596,
+      "n_chars": 16277
+    },
+    {
+      "surah": 55,
+      "name": "Ar-Rahman",
+      "type": "medinan",
+      "lz_norm_simple": 0.18762475049900199,
+      "gzip_ratio": 0.26683087027914615,
+      "n_chars": 2004
+    },
+    {
+      "surah": 26,
+      "name": "Ash-Shu'ara",
+      "type": "meccan",
+      "lz_norm_simple": 0.1903064861012117,
+      "gzip_ratio": 0.2819056633538413,
+      "n_chars": 7015
+    },
+    {
+      "surah": 16,
+      "name": "An-Nahl",
+      "type": "meccan",
+      "lz_norm_simple": 0.19842630888731969,
+      "gzip_ratio": 0.29998880429914915,
+      "n_chars": 9913
+    }
+  ],
+  "top10_highest_lz_norm": [
+    {
+      "surah": 108,
+      "name": "Al-Kawthar",
+      "type": "meccan",
+      "lz_norm_simple": 0.5961538461538461,
+      "gzip_ratio": 0.9789473684210527,
+      "n_chars": 52
+    },
+    {
+      "surah": 110,
+      "name": "An-Nasr",
+      "type": "medinan",
+      "lz_norm_simple": 0.51,
+      "gzip_ratio": 0.7624309392265194,
+      "n_chars": 100
+    },
+    {
+      "surah": 106,
+      "name": "Quraysh",
+      "type": "meccan",
+      "lz_norm_simple": 0.5053763440860215,
+      "gzip_ratio": 0.7529411764705882,
+      "n_chars": 93
+    },
+    {
+      "surah": 105,
+      "name": "Al-Fil",
+      "type": "meccan",
+      "lz_norm_simple": 0.48739495798319327,
+      "gzip_ratio": 0.6759259259259259,
+      "n_chars": 119
+    },
+    {
+      "surah": 111,
+      "name": "Al-Masad",
+      "type": "meccan",
+      "lz_norm_simple": 0.44660194174757284,
+      "gzip_ratio": 0.7336956521739131,
+      "n_chars": 103
+    },
+    {
+      "surah": 94,
+      "name": "Ash-Sharh",
+      "type": "meccan",
+      "lz_norm_simple": 0.4453125,
+      "gzip_ratio": 0.6217391304347826,
+      "n_chars": 128
+    },
+    {
+      "surah": 112,
+      "name": "Al-Ikhlas",
+      "type": "meccan",
+      "lz_norm_simple": 0.4426229508196721,
+      "gzip_ratio": 0.7870370370370371,
+      "n_chars": 61
+    },
+    {
+      "surah": 103,
+      "name": "Al-'Asr",
+      "type": "meccan",
+      "lz_norm_simple": 0.43023255813953487,
+      "gzip_ratio": 0.6792452830188679,
+      "n_chars": 86
+    },
+    {
+      "surah": 97,
+      "name": "Al-Qadr",
+      "type": "meccan",
+      "lz_norm_simple": 0.4166666666666667,
+      "gzip_ratio": 0.6023166023166023,
+      "n_chars": 144
+    },
+    {
+      "surah": 104,
+      "name": "Al-Humazah",
+      "type": "meccan",
+      "lz_norm_simple": 0.4166666666666667,
+      "gzip_ratio": 0.6105610561056105,
+      "n_chars": 168
+    }
+  ]
+}

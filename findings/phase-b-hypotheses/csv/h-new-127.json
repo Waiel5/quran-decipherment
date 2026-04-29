@@ -1,0 +1,214 @@
+{
+  "finding_id": "h-new-127",
+  "title": "Fisher-Rao fractal extension: verse-level path optimality within 5 surahs",
+  "parent_finding": "h-new-111",
+  "pre_reg_sha256": "bc42449238e4eb67c3b54e234d2f392d093c9993622261d510d8ab7a5fe29e95",
+  "seed": 20260417,
+  "date": "2026-04-17",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, mushaf verse order, Hafs-Kufan)",
+  "locked_params": {
+    "K_top_roots": 300,
+    "dirichlet_alpha": 0.5,
+    "permutations": 10000,
+    "distance": "Fisher-Rao angular = 2·arccos(Σ sqrt(p_i·p_j))",
+    "length_control": "L1-normalized probability vectors (MW-1)",
+    "bonferroni_k": 5,
+    "alpha_bon": 0.01,
+    "locked_surahs": [
+      2,
+      7,
+      12,
+      36,
+      55
+    ]
+  },
+  "corpus_stats": {
+    "total_stem_root_tokens": 49968,
+    "global_distinct_roots": 1642,
+    "top_K_coverage_fraction": 0.834634
+  },
+  "per_surah": {
+    "2": {
+      "n_verses": 286,
+      "L_canon": 104.301933,
+      "null_mean": 108.492007,
+      "null_sd": 0.408449,
+      "null_min": 106.660501,
+      "null_max": 110.051842,
+      "null_quantiles": {
+        "q001": 107.198901,
+        "q005": 107.416019,
+        "q01": 107.511089,
+        "q025": 107.675263,
+        "q05": 107.799535,
+        "q25": 108.22125,
+        "q50": 108.498244,
+        "q75": 108.770115,
+        "q95": 109.155234
+      },
+      "z_score": -10.2585,
+      "n_perms_le_canon": 0,
+      "p_value_one_sided_lower": 0.0001,
+      "alpha_bon": 0.01,
+      "pass": true,
+      "L_greedy_best": 87.676814,
+      "L_2opt_best": 85.718611,
+      "ratio_canon_over_2opt": 1.216794,
+      "D_stats": {
+        "min": 0.0,
+        "max": 0.82062,
+        "mean": 0.380696,
+        "n_pairs": 40755
+      }
+    },
+    "7": {
+      "n_verses": 206,
+      "L_canon": 65.805001,
+      "null_mean": 68.268847,
+      "null_sd": 0.303765,
+      "null_min": 67.169312,
+      "null_max": 69.410762,
+      "null_quantiles": {
+        "q001": 67.280064,
+        "q005": 67.465087,
+        "q01": 67.558745,
+        "q025": 67.657591,
+        "q05": 67.754968,
+        "q25": 68.068066,
+        "q50": 68.275575,
+        "q75": 68.476055,
+        "q95": 68.754317
+      },
+      "z_score": -8.111017,
+      "n_perms_le_canon": 0,
+      "p_value_one_sided_lower": 0.0001,
+      "alpha_bon": 0.01,
+      "pass": true,
+      "L_greedy_best": 55.818742,
+      "L_2opt_best": 54.297138,
+      "ratio_canon_over_2opt": 1.211942,
+      "D_stats": {
+        "min": 0.0,
+        "max": 0.602019,
+        "mean": 0.333035,
+        "n_pairs": 21115
+      }
+    },
+    "12": {
+      "n_verses": 111,
+      "L_canon": 32.794547,
+      "null_mean": 34.260911,
+      "null_sd": 0.218328,
+      "null_min": 33.427456,
+      "null_max": 35.021733,
+      "null_quantiles": {
+        "q001": 33.556812,
+        "q005": 33.675419,
+        "q01": 33.737341,
+        "q025": 33.824744,
+        "q05": 33.896874,
+        "q25": 34.117042,
+        "q50": 34.263981,
+        "q75": 34.408848,
+        "q95": 34.615021
+      },
+      "z_score": -6.716332,
+      "n_perms_le_canon": 0,
+      "p_value_one_sided_lower": 0.0001,
+      "alpha_bon": 0.01,
+      "pass": true,
+      "L_greedy_best": 28.503595,
+      "L_2opt_best": 27.6542,
+      "ratio_canon_over_2opt": 1.185879,
+      "D_stats": {
+        "min": 0.142224,
+        "max": 0.507595,
+        "mean": 0.311456,
+        "n_pairs": 6105
+      }
+    },
+    "36": {
+      "n_verses": 83,
+      "L_canon": 19.129451,
+      "null_mean": 19.517401,
+      "null_sd": 0.137394,
+      "null_min": 18.867714,
+      "null_max": 19.974379,
+      "null_quantiles": {
+        "q001": 19.030791,
+        "q005": 19.13687,
+        "q01": 19.174169,
+        "q025": 19.229353,
+        "q05": 19.283451,
+        "q25": 19.427389,
+        "q50": 19.524155,
+        "q75": 19.612414,
+        "q95": 19.733166
+      },
+      "z_score": -2.823621,
+      "n_perms_le_canon": 45,
+      "p_value_one_sided_lower": 0.0046,
+      "alpha_bon": 0.01,
+      "pass": true,
+      "L_greedy_best": 16.370041,
+      "L_2opt_best": 15.801944,
+      "ratio_canon_over_2opt": 1.210576,
+      "D_stats": {
+        "min": 0.083584,
+        "max": 0.420924,
+        "mean": 0.238033,
+        "n_pairs": 3403
+      }
+    },
+    "55": {
+      "n_verses": 78,
+      "L_canon": 13.639165,
+      "null_mean": 11.252899,
+      "null_sd": 0.442398,
+      "null_min": 9.565544,
+      "null_max": 12.801425,
+      "null_quantiles": {
+        "q001": 9.892827,
+        "q005": 10.10303,
+        "q01": 10.23528,
+        "q025": 10.396571,
+        "q05": 10.534674,
+        "q25": 10.948539,
+        "q50": 11.250846,
+        "q75": 11.556607,
+        "q95": 11.983185
+      },
+      "z_score": 5.393938,
+      "n_perms_le_canon": 10000,
+      "p_value_one_sided_lower": 1.0,
+      "alpha_bon": 0.01,
+      "pass": false,
+      "L_greedy_best": 5.672339,
+      "L_2opt_best": 5.475751,
+      "ratio_canon_over_2opt": 2.49083,
+      "D_stats": {
+        "min": 0.0,
+        "max": 0.273834,
+        "mean": 0.146142,
+        "n_pairs": 3003
+      }
+    }
+  },
+  "mw5_positive_control": {
+    "surah": 55,
+    "method_primary": "length-sorted ascending by STEM-root token count",
+    "L_canon": 13.639165,
+    "L_length_sorted_token": 8.584038,
+    "L_length_sorted_char": 7.935758,
+    "mw5_token_pass": false,
+    "mw5_char_pass": false,
+    "mw5_broken": true
+  },
+  "family_verdict": {
+    "n_pass": 4,
+    "n_tests": 5,
+    "alpha_bon": 0.01,
+    "verdict": "INSTRUMENT-BROKEN",
+    "pass_criterion": "n_pass >= 3 of 5 at α_bon = 0.01"
+  }
+}

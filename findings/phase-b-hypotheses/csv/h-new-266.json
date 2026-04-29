@@ -1,0 +1,4040 @@
+{
+  "id": "h-new-266",
+  "title": "Per-surah phonological signature test",
+  "date": "2026-04-18",
+  "seed": 20260418,
+  "prereg": "findings/phase-b-hypotheses/h-new-266-per-surah-phonological-signature-prereg.md",
+  "prereg_sha256": "e561b4c4e35502f93513add5f02c2684c32f3c3a084fd1831f06a73013ba8f5f",
+  "bonferroni_family": "h-new-266-per-surah-phonological-signature",
+  "bonferroni_k": 5,
+  "alpha_bon": 0.01,
+  "n_perms": 5000,
+  "mw5_n_perms": 1000,
+  "rules_tuple": "quran-no-tashkeel, 28-letter orthographic normalization, exact surah letter counts preserved, 114 surahs, Hafs-Kufan",
+  "normalization": {
+    "alphabet28": "ابتثجحخدذرزسشصضطظعغفقكلمنهوي",
+    "map": {
+      "ٱ": "ا",
+      "أ": "ا",
+      "إ": "ا",
+      "آ": "ا",
+      "ؤ": "و",
+      "ئ": "ي",
+      "ة": "ه",
+      "ى": "ي"
+    },
+    "drop_non_alphabet": true
+  },
+  "class_definitions": {
+    "core_emphatic": [
+      "ص",
+      "ض",
+      "ط",
+      "ظ"
+    ],
+    "strict_throat": [
+      "ع",
+      "ح",
+      "خ",
+      "غ"
+    ],
+    "safir_sibilant": [
+      "س",
+      "ز",
+      "ص"
+    ],
+    "idgham_sonorant": [
+      "ي",
+      "ر",
+      "م",
+      "ل",
+      "و",
+      "ن"
+    ]
+  },
+  "category_definitions": {
+    "sad_shared": [
+      "ص"
+    ],
+    "emphatic_only": [
+      "ض",
+      "ط",
+      "ظ"
+    ],
+    "throat": [
+      "ع",
+      "ح",
+      "خ",
+      "غ"
+    ],
+    "sibilant_only": [
+      "س",
+      "ز"
+    ],
+    "sonorant": [
+      "ي",
+      "ر",
+      "م",
+      "ل",
+      "و",
+      "ن"
+    ],
+    "other": "all remaining normalized letters"
+  },
+  "corpus": {
+    "n_surahs": 114,
+    "total_retained_letters": 329131,
+    "min_surah_letters": 43,
+    "max_surah_letters": 26124,
+    "global_density": {
+      "core_emphatic": 0.017877,
+      "strict_throat": 0.05245,
+      "safir_sibilant": 0.02942,
+      "idgham_sonorant": 0.473465
+    }
+  },
+  "cells": {
+    "omnibus_l2": {
+      "observed": 0.032127,
+      "null_mean": 0.020705,
+      "null_sd": 0.001242,
+      "null_q95": 0.022831,
+      "p_perm_upper": 0.0002,
+      "pass": true
+    },
+    "core_emphatic_mad": {
+      "observed": 0.005073,
+      "null_mean": 0.004178,
+      "null_sd": 0.000381,
+      "null_q95": 0.004812,
+      "p_perm_upper": 0.014197,
+      "pass": false
+    },
+    "strict_throat_mad": {
+      "observed": 0.007749,
+      "null_mean": 0.007015,
+      "null_sd": 0.000647,
+      "null_q95": 0.008104,
+      "p_perm_upper": 0.126375,
+      "pass": false
+    },
+    "safir_sibilant_mad": {
+      "observed": 0.00748,
+      "null_mean": 0.005323,
+      "null_sd": 0.000496,
+      "null_q95": 0.006184,
+      "p_perm_upper": 0.0002,
+      "pass": true
+    },
+    "idgham_sonorant_mad": {
+      "observed": 0.026975,
+      "null_mean": 0.015729,
+      "null_sd": 0.001409,
+      "null_q95": 0.018135,
+      "p_perm_upper": 0.0002,
+      "pass": true
+    }
+  },
+  "top_outliers": {
+    "core_emphatic": {
+      "highest": [
+        {
+          "surah": 103,
+          "name": "العصر",
+          "type": "meccan",
+          "letters": 73,
+          "density": 0.068493,
+          "null_mean": 0.01791,
+          "z": 3.239,
+          "p_two_sided": 0.0104
+        },
+        {
+          "surah": 4,
+          "name": "النساء",
+          "type": "medinan",
+          "letters": 16261,
+          "density": 0.020478,
+          "null_mean": 0.017891,
+          "z": 2.573,
+          "p_two_sided": 0.01
+        },
+        {
+          "surah": 38,
+          "name": "ص",
+          "type": "meccan",
+          "letters": 3056,
+          "density": 0.023887,
+          "null_mean": 0.017938,
+          "z": 2.479,
+          "p_two_sided": 0.0156
+        },
+        {
+          "surah": 94,
+          "name": "الشرح",
+          "type": "meccan",
+          "letters": 102,
+          "density": 0.04902,
+          "null_mean": 0.017969,
+          "z": 2.391,
+          "p_two_sided": 0.0338
+        },
+        {
+          "surah": 88,
+          "name": "الغاشية",
+          "type": "meccan",
+          "letters": 381,
+          "density": 0.034121,
+          "null_mean": 0.017916,
+          "z": 2.363,
+          "p_two_sided": 0.027
+        }
+      ],
+      "lowest": [
+        {
+          "surah": 60,
+          "name": "الممتحنة",
+          "type": "medinan",
+          "letters": 1548,
+          "density": 0.00969,
+          "null_mean": 0.01783,
+          "z": -2.433,
+          "p_two_sided": 0.0136
+        },
+        {
+          "surah": 16,
+          "name": "النحل",
+          "type": "meccan",
+          "letters": 7791,
+          "density": 0.014376,
+          "null_mean": 0.017878,
+          "z": -2.327,
+          "p_two_sided": 0.0206
+        },
+        {
+          "surah": 44,
+          "name": "الدخان",
+          "type": "meccan",
+          "letters": 1466,
+          "density": 0.010232,
+          "null_mean": 0.017763,
+          "z": -2.194,
+          "p_two_sided": 0.026
+        },
+        {
+          "surah": 3,
+          "name": "آل عمران",
+          "type": "medinan",
+          "letters": 14917,
+          "density": 0.016089,
+          "null_mean": 0.017881,
+          "z": -1.708,
+          "p_two_sided": 0.0898
+        },
+        {
+          "surah": 63,
+          "name": "المنافقون",
+          "type": "medinan",
+          "letters": 796,
+          "density": 0.01005,
+          "null_mean": 0.017774,
+          "z": -1.676,
+          "p_two_sided": 0.107
+        }
+      ]
+    },
+    "strict_throat": {
+      "highest": [
+        {
+          "surah": 38,
+          "name": "ص",
+          "type": "meccan",
+          "letters": 3056,
+          "density": 0.066099,
+          "null_mean": 0.052389,
+          "z": 3.449,
+          "p_two_sided": 0.0008
+        },
+        {
+          "surah": 18,
+          "name": "الكهف",
+          "type": "meccan",
+          "letters": 6523,
+          "density": 0.060708,
+          "null_mean": 0.052483,
+          "z": 2.992,
+          "p_two_sided": 0.0032
+        },
+        {
+          "surah": 20,
+          "name": "طه",
+          "type": "meccan",
+          "letters": 5386,
+          "density": 0.05997,
+          "null_mean": 0.052367,
+          "z": 2.538,
+          "p_two_sided": 0.0122
+        },
+        {
+          "surah": 69,
+          "name": "الحاقة",
+          "type": "meccan",
+          "letters": 1129,
+          "density": 0.068202,
+          "null_mean": 0.052529,
+          "z": 2.376,
+          "p_two_sided": 0.0176
+        },
+        {
+          "surah": 24,
+          "name": "النور",
+          "type": "medinan",
+          "letters": 5720,
+          "density": 0.058741,
+          "null_mean": 0.0524,
+          "z": 2.167,
+          "p_two_sided": 0.0324
+        }
+      ],
+      "lowest": [
+        {
+          "surah": 55,
+          "name": "الرحمن",
+          "type": "medinan",
+          "letters": 1613,
+          "density": 0.030998,
+          "null_mean": 0.052482,
+          "z": -3.921,
+          "p_two_sided": 0.0002
+        },
+        {
+          "surah": 3,
+          "name": "آل عمران",
+          "type": "medinan",
+          "letters": 14917,
+          "density": 0.048267,
+          "null_mean": 0.052472,
+          "z": -2.362,
+          "p_two_sided": 0.0186
+        },
+        {
+          "surah": 77,
+          "name": "المرسلات",
+          "type": "meccan",
+          "letters": 837,
+          "density": 0.034648,
+          "null_mean": 0.052443,
+          "z": -2.259,
+          "p_two_sided": 0.0284
+        },
+        {
+          "surah": 4,
+          "name": "النساء",
+          "type": "medinan",
+          "letters": 16261,
+          "density": 0.048582,
+          "null_mean": 0.052442,
+          "z": -2.256,
+          "p_two_sided": 0.0252
+        },
+        {
+          "surah": 61,
+          "name": "الصف",
+          "type": "medinan",
+          "letters": 965,
+          "density": 0.038342,
+          "null_mean": 0.052471,
+          "z": -1.987,
+          "p_two_sided": 0.0444
+        }
+      ]
+    },
+    "safir_sibilant": {
+      "highest": [
+        {
+          "surah": 114,
+          "name": "الناس",
+          "type": "meccan",
+          "letters": 80,
+          "density": 0.1375,
+          "null_mean": 0.02866,
+          "z": 5.884,
+          "p_two_sided": 0.0002
+        },
+        {
+          "surah": 103,
+          "name": "العصر",
+          "type": "meccan",
+          "letters": 73,
+          "density": 0.09589,
+          "null_mean": 0.029364,
+          "z": 3.354,
+          "p_two_sided": 0.0052
+        },
+        {
+          "surah": 12,
+          "name": "يوسف",
+          "type": "meccan",
+          "letters": 7276,
+          "density": 0.035871,
+          "null_mean": 0.029426,
+          "z": 3.284,
+          "p_two_sided": 0.001
+        },
+        {
+          "surah": 15,
+          "name": "الحجر",
+          "type": "meccan",
+          "letters": 2870,
+          "density": 0.037631,
+          "null_mean": 0.029444,
+          "z": 2.579,
+          "p_two_sided": 0.0102
+        },
+        {
+          "surah": 75,
+          "name": "القيامة",
+          "type": "meccan",
+          "letters": 676,
+          "density": 0.045858,
+          "null_mean": 0.029524,
+          "z": 2.467,
+          "p_two_sided": 0.0162
+        }
+      ],
+      "lowest": [
+        {
+          "surah": 8,
+          "name": "الأنفال",
+          "type": "medinan",
+          "letters": 5365,
+          "density": 0.02274,
+          "null_mean": 0.029373,
+          "z": -2.858,
+          "p_two_sided": 0.004
+        },
+        {
+          "surah": 3,
+          "name": "آل عمران",
+          "type": "medinan",
+          "letters": 14917,
+          "density": 0.025608,
+          "null_mean": 0.029432,
+          "z": -2.82,
+          "p_two_sided": 0.0052
+        },
+        {
+          "surah": 23,
+          "name": "المؤمنون",
+          "type": "meccan",
+          "letters": 4467,
+          "density": 0.023058,
+          "null_mean": 0.029382,
+          "z": -2.483,
+          "p_two_sided": 0.0136
+        },
+        {
+          "surah": 10,
+          "name": "يونس",
+          "type": "meccan",
+          "letters": 7549,
+          "density": 0.024771,
+          "null_mean": 0.029408,
+          "z": -2.397,
+          "p_two_sided": 0.0162
+        },
+        {
+          "surah": 2,
+          "name": "البقرة",
+          "type": "medinan",
+          "letters": 26124,
+          "density": 0.027293,
+          "null_mean": 0.029438,
+          "z": -2.112,
+          "p_two_sided": 0.0364
+        }
+      ]
+    },
+    "idgham_sonorant": {
+      "highest": [
+        {
+          "surah": 26,
+          "name": "الشعراء",
+          "type": "meccan",
+          "letters": 5613,
+          "density": 0.501514,
+          "null_mean": 0.473478,
+          "z": 4.307,
+          "p_two_sided": 0.0002
+        },
+        {
+          "surah": 8,
+          "name": "الأنفال",
+          "type": "medinan",
+          "letters": 5365,
+          "density": 0.497297,
+          "null_mean": 0.473529,
+          "z": 3.488,
+          "p_two_sided": 0.0006
+        },
+        {
+          "surah": 9,
+          "name": "التوبة",
+          "type": "medinan",
+          "letters": 11089,
+          "density": 0.489133,
+          "null_mean": 0.473362,
+          "z": 3.409,
+          "p_two_sided": 0.0018
+        },
+        {
+          "surah": 16,
+          "name": "النحل",
+          "type": "meccan",
+          "letters": 7791,
+          "density": 0.490823,
+          "null_mean": 0.473532,
+          "z": 3.099,
+          "p_two_sided": 0.0016
+        },
+        {
+          "surah": 36,
+          "name": "يس",
+          "type": "meccan",
+          "letters": 3058,
+          "density": 0.499346,
+          "null_mean": 0.473497,
+          "z": 2.865,
+          "p_two_sided": 0.0032
+        }
+      ],
+      "lowest": [
+        {
+          "surah": 18,
+          "name": "الكهف",
+          "type": "meccan",
+          "letters": 6523,
+          "density": 0.43339,
+          "null_mean": 0.473571,
+          "z": -6.651,
+          "p_two_sided": 0.0002
+        },
+        {
+          "surah": 55,
+          "name": "الرحمن",
+          "type": "medinan",
+          "letters": 1613,
+          "density": 0.398016,
+          "null_mean": 0.473641,
+          "z": -6.168,
+          "p_two_sided": 0.0002
+        },
+        {
+          "surah": 79,
+          "name": "النازعات",
+          "type": "meccan",
+          "letters": 782,
+          "density": 0.378517,
+          "null_mean": 0.473441,
+          "z": -5.357,
+          "p_two_sided": 0.0002
+        },
+        {
+          "surah": 38,
+          "name": "ص",
+          "type": "meccan",
+          "letters": 3056,
+          "density": 0.427029,
+          "null_mean": 0.473261,
+          "z": -5.211,
+          "p_two_sided": 0.0002
+        },
+        {
+          "surah": 91,
+          "name": "الشمس",
+          "type": "meccan",
+          "letters": 252,
+          "density": 0.321429,
+          "null_mean": 0.473775,
+          "z": -4.875,
+          "p_two_sided": 0.0002
+        }
+      ]
+    }
+  },
+  "per_surah": [
+    {
+      "surah": 1,
+      "name": "الفاتحة",
+      "type": "meccan",
+      "letters": 143,
+      "densities": {
+        "core_emphatic": 0.041958,
+        "strict_throat": 0.090909,
+        "safir_sibilant": 0.034965,
+        "idgham_sonorant": 0.517483
+      },
+      "null_mean": {
+        "core_emphatic": 0.017926,
+        "strict_throat": 0.052428,
+        "safir_sibilant": 0.02949,
+        "idgham_sonorant": 0.473365
+      },
+      "z": {
+        "core_emphatic": 2.166,
+        "strict_throat": 2.031,
+        "safir_sibilant": 0.388,
+        "idgham_sonorant": 1.058
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.042791,
+        "strict_throat": 0.060188,
+        "safir_sibilant": 0.808638,
+        "idgham_sonorant": 0.322735
+      }
+    },
+    {
+      "surah": 2,
+      "name": "البقرة",
+      "type": "medinan",
+      "letters": 26124,
+      "densities": {
+        "core_emphatic": 0.017187,
+        "strict_throat": 0.053246,
+        "safir_sibilant": 0.027293,
+        "idgham_sonorant": 0.47041
+      },
+      "null_mean": {
+        "core_emphatic": 0.017879,
+        "strict_throat": 0.05248,
+        "safir_sibilant": 0.029438,
+        "idgham_sonorant": 0.473521
+      },
+      "z": {
+        "core_emphatic": -0.855,
+        "strict_throat": 0.583,
+        "safir_sibilant": -2.112,
+        "idgham_sonorant": -1.05
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.39772,
+        "strict_throat": 0.54789,
+        "safir_sibilant": 0.036393,
+        "idgham_sonorant": 0.303339
+      }
+    },
+    {
+      "surah": 3,
+      "name": "آل عمران",
+      "type": "medinan",
+      "letters": 14917,
+      "densities": {
+        "core_emphatic": 0.016089,
+        "strict_throat": 0.048267,
+        "safir_sibilant": 0.025608,
+        "idgham_sonorant": 0.484079
+      },
+      "null_mean": {
+        "core_emphatic": 0.017881,
+        "strict_throat": 0.052472,
+        "safir_sibilant": 0.029432,
+        "idgham_sonorant": 0.473523
+      },
+      "z": {
+        "core_emphatic": -1.708,
+        "strict_throat": -2.362,
+        "safir_sibilant": -2.82,
+        "idgham_sonorant": 2.651
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.089782,
+        "strict_throat": 0.018596,
+        "safir_sibilant": 0.005199,
+        "idgham_sonorant": 0.009598
+      }
+    },
+    {
+      "surah": 4,
+      "name": "النساء",
+      "type": "medinan",
+      "letters": 16261,
+      "densities": {
+        "core_emphatic": 0.020478,
+        "strict_throat": 0.048582,
+        "safir_sibilant": 0.029457,
+        "idgham_sonorant": 0.475739
+      },
+      "null_mean": {
+        "core_emphatic": 0.017891,
+        "strict_throat": 0.052442,
+        "safir_sibilant": 0.029443,
+        "idgham_sonorant": 0.473329
+      },
+      "z": {
+        "core_emphatic": 2.573,
+        "strict_throat": -2.256,
+        "safir_sibilant": 0.011,
+        "idgham_sonorant": 0.638
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.009998,
+        "strict_throat": 0.025195,
+        "safir_sibilant": 0.978404,
+        "idgham_sonorant": 0.554089
+      }
+    },
+    {
+      "surah": 5,
+      "name": "المائدة",
+      "type": "medinan",
+      "letters": 12144,
+      "densities": {
+        "core_emphatic": 0.016222,
+        "strict_throat": 0.052783,
+        "safir_sibilant": 0.028409,
+        "idgham_sonorant": 0.474638
+      },
+      "null_mean": {
+        "core_emphatic": 0.01788,
+        "strict_throat": 0.052473,
+        "safir_sibilant": 0.029431,
+        "idgham_sonorant": 0.473508
+      },
+      "z": {
+        "core_emphatic": -1.403,
+        "strict_throat": 0.157,
+        "safir_sibilant": -0.67,
+        "idgham_sonorant": 0.252
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.167566,
+        "strict_throat": 0.870826,
+        "safir_sibilant": 0.516097,
+        "idgham_sonorant": 0.79844
+      }
+    },
+    {
+      "surah": 6,
+      "name": "الأنعام",
+      "type": "meccan",
+      "letters": 12646,
+      "densities": {
+        "core_emphatic": 0.018583,
+        "strict_throat": 0.051716,
+        "safir_sibilant": 0.02744,
+        "idgham_sonorant": 0.477305
+      },
+      "null_mean": {
+        "core_emphatic": 0.017877,
+        "strict_throat": 0.052425,
+        "safir_sibilant": 0.029432,
+        "idgham_sonorant": 0.473455
+      },
+      "z": {
+        "core_emphatic": 0.607,
+        "strict_throat": -0.359,
+        "safir_sibilant": -1.373,
+        "idgham_sonorant": 0.889
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.568086,
+        "strict_throat": 0.712058,
+        "safir_sibilant": 0.170766,
+        "idgham_sonorant": 0.375925
+      }
+    },
+    {
+      "surah": 7,
+      "name": "الأعراف",
+      "type": "meccan",
+      "letters": 14359,
+      "densities": {
+        "core_emphatic": 0.017968,
+        "strict_throat": 0.052928,
+        "safir_sibilant": 0.030434,
+        "idgham_sonorant": 0.465213
+      },
+      "null_mean": {
+        "core_emphatic": 0.017889,
+        "strict_throat": 0.052459,
+        "safir_sibilant": 0.029443,
+        "idgham_sonorant": 0.473442
+      },
+      "z": {
+        "core_emphatic": 0.072,
+        "strict_throat": 0.259,
+        "safir_sibilant": 0.703,
+        "idgham_sonorant": -1.987
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.95021,
+        "strict_throat": 0.804439,
+        "safir_sibilant": 0.472505,
+        "idgham_sonorant": 0.045791
+      }
+    },
+    {
+      "surah": 8,
+      "name": "الأنفال",
+      "type": "medinan",
+      "letters": 5365,
+      "densities": {
+        "core_emphatic": 0.01603,
+        "strict_throat": 0.050885,
+        "safir_sibilant": 0.02274,
+        "idgham_sonorant": 0.497297
+      },
+      "null_mean": {
+        "core_emphatic": 0.017876,
+        "strict_throat": 0.052466,
+        "safir_sibilant": 0.029373,
+        "idgham_sonorant": 0.473529
+      },
+      "z": {
+        "core_emphatic": -1.024,
+        "strict_throat": -0.516,
+        "safir_sibilant": -2.858,
+        "idgham_sonorant": 3.488
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.328934,
+        "strict_throat": 0.625475,
+        "safir_sibilant": 0.003999,
+        "idgham_sonorant": 0.0006
+      }
+    },
+    {
+      "surah": 9,
+      "name": "التوبة",
+      "type": "medinan",
+      "letters": 11089,
+      "densities": {
+        "core_emphatic": 0.016864,
+        "strict_throat": 0.051763,
+        "safir_sibilant": 0.028136,
+        "idgham_sonorant": 0.489133
+      },
+      "null_mean": {
+        "core_emphatic": 0.01788,
+        "strict_throat": 0.052466,
+        "safir_sibilant": 0.029385,
+        "idgham_sonorant": 0.473362
+      },
+      "z": {
+        "core_emphatic": -0.838,
+        "strict_throat": -0.341,
+        "safir_sibilant": -0.796,
+        "idgham_sonorant": 3.409
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.411118,
+        "strict_throat": 0.740652,
+        "safir_sibilant": 0.426315,
+        "idgham_sonorant": 0.0018
+      }
+    },
+    {
+      "surah": 10,
+      "name": "يونس",
+      "type": "meccan",
+      "letters": 7549,
+      "densities": {
+        "core_emphatic": 0.016426,
+        "strict_throat": 0.048881,
+        "safir_sibilant": 0.024771,
+        "idgham_sonorant": 0.483375
+      },
+      "null_mean": {
+        "core_emphatic": 0.017874,
+        "strict_throat": 0.052447,
+        "safir_sibilant": 0.029408,
+        "idgham_sonorant": 0.473618
+      },
+      "z": {
+        "core_emphatic": -0.97,
+        "strict_throat": -1.403,
+        "safir_sibilant": -2.397,
+        "idgham_sonorant": 1.73
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.34953,
+        "strict_throat": 0.167766,
+        "safir_sibilant": 0.016197,
+        "idgham_sonorant": 0.079184
+      }
+    },
+    {
+      "surah": 11,
+      "name": "هود",
+      "type": "meccan",
+      "letters": 7768,
+      "densities": {
+        "core_emphatic": 0.018538,
+        "strict_throat": 0.054197,
+        "safir_sibilant": 0.027935,
+        "idgham_sonorant": 0.476957
+      },
+      "null_mean": {
+        "core_emphatic": 0.0179,
+        "strict_throat": 0.052507,
+        "safir_sibilant": 0.029398,
+        "idgham_sonorant": 0.473357
+      },
+      "z": {
+        "core_emphatic": 0.422,
+        "strict_throat": 0.682,
+        "safir_sibilant": -0.762,
+        "idgham_sonorant": 0.645
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.661068,
+        "strict_throat": 0.487303,
+        "safir_sibilant": 0.446311,
+        "idgham_sonorant": 0.531694
+      }
+    },
+    {
+      "surah": 12,
+      "name": "يوسف",
+      "type": "meccan",
+      "letters": 7276,
+      "densities": {
+        "core_emphatic": 0.017317,
+        "strict_throat": 0.057449,
+        "safir_sibilant": 0.035871,
+        "idgham_sonorant": 0.451072
+      },
+      "null_mean": {
+        "core_emphatic": 0.017905,
+        "strict_throat": 0.0525,
+        "safir_sibilant": 0.029426,
+        "idgham_sonorant": 0.473419
+      },
+      "z": {
+        "core_emphatic": -0.381,
+        "strict_throat": 1.902,
+        "safir_sibilant": 3.284,
+        "idgham_sonorant": -3.913
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.705859,
+        "strict_throat": 0.056789,
+        "safir_sibilant": 0.001,
+        "idgham_sonorant": 0.0004
+      }
+    },
+    {
+      "surah": 13,
+      "name": "الرعد",
+      "type": "medinan",
+      "letters": 3517,
+      "densities": {
+        "core_emphatic": 0.017629,
+        "strict_throat": 0.050896,
+        "safir_sibilant": 0.031561,
+        "idgham_sonorant": 0.467728
+      },
+      "null_mean": {
+        "core_emphatic": 0.017898,
+        "strict_throat": 0.052405,
+        "safir_sibilant": 0.029384,
+        "idgham_sonorant": 0.473652
+      },
+      "z": {
+        "core_emphatic": -0.122,
+        "strict_throat": -0.406,
+        "safir_sibilant": 0.761,
+        "idgham_sonorant": -0.692
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.94861,
+        "strict_throat": 0.70206,
+        "safir_sibilant": 0.468506,
+        "idgham_sonorant": 0.514697
+      }
+    },
+    {
+      "surah": 14,
+      "name": "ابراهيم",
+      "type": "meccan",
+      "letters": 3516,
+      "densities": {
+        "core_emphatic": 0.01934,
+        "strict_throat": 0.048919,
+        "safir_sibilant": 0.034414,
+        "idgham_sonorant": 0.484642
+      },
+      "null_mean": {
+        "core_emphatic": 0.017884,
+        "strict_throat": 0.052455,
+        "safir_sibilant": 0.029404,
+        "idgham_sonorant": 0.473359
+      },
+      "z": {
+        "core_emphatic": 0.656,
+        "strict_throat": -0.957,
+        "safir_sibilant": 1.754,
+        "idgham_sonorant": 1.358
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.526295,
+        "strict_throat": 0.355329,
+        "safir_sibilant": 0.085383,
+        "idgham_sonorant": 0.181564
+      }
+    },
+    {
+      "surah": 15,
+      "name": "الحجر",
+      "type": "meccan",
+      "letters": 2870,
+      "densities": {
+        "core_emphatic": 0.019861,
+        "strict_throat": 0.053659,
+        "safir_sibilant": 0.037631,
+        "idgham_sonorant": 0.488502
+      },
+      "null_mean": {
+        "core_emphatic": 0.01787,
+        "strict_throat": 0.052427,
+        "safir_sibilant": 0.029444,
+        "idgham_sonorant": 0.473485
+      },
+      "z": {
+        "core_emphatic": 0.814,
+        "strict_throat": 0.306,
+        "safir_sibilant": 2.579,
+        "idgham_sonorant": 1.641
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.429514,
+        "strict_throat": 0.796441,
+        "safir_sibilant": 0.010198,
+        "idgham_sonorant": 0.10098
+      }
+    },
+    {
+      "surah": 16,
+      "name": "النحل",
+      "type": "meccan",
+      "letters": 7791,
+      "densities": {
+        "core_emphatic": 0.014376,
+        "strict_throat": 0.053138,
+        "safir_sibilant": 0.027724,
+        "idgham_sonorant": 0.490823
+      },
+      "null_mean": {
+        "core_emphatic": 0.017878,
+        "strict_throat": 0.052404,
+        "safir_sibilant": 0.029425,
+        "idgham_sonorant": 0.473532
+      },
+      "z": {
+        "core_emphatic": -2.327,
+        "strict_throat": 0.297,
+        "safir_sibilant": -0.888,
+        "idgham_sonorant": 3.099
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.020596,
+        "strict_throat": 0.790842,
+        "safir_sibilant": 0.376525,
+        "idgham_sonorant": 0.0016
+      }
+    },
+    {
+      "surah": 17,
+      "name": "الإسراء",
+      "type": "meccan",
+      "letters": 6615,
+      "densities": {
+        "core_emphatic": 0.018141,
+        "strict_throat": 0.053968,
+        "safir_sibilant": 0.032653,
+        "idgham_sonorant": 0.453666
+      },
+      "null_mean": {
+        "core_emphatic": 0.017828,
+        "strict_throat": 0.052452,
+        "safir_sibilant": 0.02938,
+        "idgham_sonorant": 0.473503
+      },
+      "z": {
+        "core_emphatic": 0.191,
+        "strict_throat": 0.568,
+        "safir_sibilant": 1.587,
+        "idgham_sonorant": -3.295
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.884223,
+        "strict_throat": 0.576085,
+        "safir_sibilant": 0.123975,
+        "idgham_sonorant": 0.0018
+      }
+    },
+    {
+      "surah": 18,
+      "name": "الكهف",
+      "type": "meccan",
+      "letters": 6523,
+      "densities": {
+        "core_emphatic": 0.020236,
+        "strict_throat": 0.060708,
+        "safir_sibilant": 0.030814,
+        "idgham_sonorant": 0.43339
+      },
+      "null_mean": {
+        "core_emphatic": 0.017876,
+        "strict_throat": 0.052483,
+        "safir_sibilant": 0.02941,
+        "idgham_sonorant": 0.473571
+      },
+      "z": {
+        "core_emphatic": 1.45,
+        "strict_throat": 2.992,
+        "safir_sibilant": 0.685,
+        "idgham_sonorant": -6.651
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.156969,
+        "strict_throat": 0.003199,
+        "safir_sibilant": 0.497301,
+        "idgham_sonorant": 0.0002
+      }
+    },
+    {
+      "surah": 19,
+      "name": "مريم",
+      "type": "meccan",
+      "letters": 3930,
+      "densities": {
+        "core_emphatic": 0.015522,
+        "strict_throat": 0.057761,
+        "safir_sibilant": 0.02799,
+        "idgham_sonorant": 0.45598
+      },
+      "null_mean": {
+        "core_emphatic": 0.017883,
+        "strict_throat": 0.052412,
+        "safir_sibilant": 0.029413,
+        "idgham_sonorant": 0.473476
+      },
+      "z": {
+        "core_emphatic": -1.145,
+        "strict_throat": 1.53,
+        "safir_sibilant": -0.537,
+        "idgham_sonorant": -2.199
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.275745,
+        "strict_throat": 0.134373,
+        "safir_sibilant": 0.604479,
+        "idgham_sonorant": 0.026995
+      }
+    },
+    {
+      "surah": 20,
+      "name": "طه",
+      "type": "meccan",
+      "letters": 5386,
+      "densities": {
+        "core_emphatic": 0.019124,
+        "strict_throat": 0.05997,
+        "safir_sibilant": 0.034163,
+        "idgham_sonorant": 0.448199
+      },
+      "null_mean": {
+        "core_emphatic": 0.017883,
+        "strict_throat": 0.052367,
+        "safir_sibilant": 0.029483,
+        "idgham_sonorant": 0.473475
+      },
+      "z": {
+        "core_emphatic": 0.696,
+        "strict_throat": 2.538,
+        "safir_sibilant": 2.048,
+        "idgham_sonorant": -3.778
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.5015,
+        "strict_throat": 0.012198,
+        "safir_sibilant": 0.036593,
+        "idgham_sonorant": 0.0008
+      }
+    },
+    {
+      "surah": 21,
+      "name": "الأنبياء",
+      "type": "meccan",
+      "letters": 5074,
+      "densities": {
+        "core_emphatic": 0.018132,
+        "strict_throat": 0.053804,
+        "safir_sibilant": 0.029168,
+        "idgham_sonorant": 0.466496
+      },
+      "null_mean": {
+        "core_emphatic": 0.017895,
+        "strict_throat": 0.052469,
+        "safir_sibilant": 0.029459,
+        "idgham_sonorant": 0.473399
+      },
+      "z": {
+        "core_emphatic": 0.129,
+        "strict_throat": 0.43,
+        "safir_sibilant": -0.124,
+        "idgham_sonorant": -0.979
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.908818,
+        "strict_throat": 0.676865,
+        "safir_sibilant": 0.932414,
+        "idgham_sonorant": 0.329134
+      }
+    },
+    {
+      "surah": 22,
+      "name": "الحج",
+      "type": "medinan",
+      "letters": 5297,
+      "densities": {
+        "core_emphatic": 0.021333,
+        "strict_throat": 0.051916,
+        "safir_sibilant": 0.030772,
+        "idgham_sonorant": 0.482537
+      },
+      "null_mean": {
+        "core_emphatic": 0.017883,
+        "strict_throat": 0.052467,
+        "safir_sibilant": 0.029452,
+        "idgham_sonorant": 0.473321
+      },
+      "z": {
+        "core_emphatic": 1.896,
+        "strict_throat": -0.179,
+        "safir_sibilant": 0.584,
+        "idgham_sonorant": 1.355
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.058188,
+        "strict_throat": 0.875825,
+        "safir_sibilant": 0.558688,
+        "idgham_sonorant": 0.183963
+      }
+    },
+    {
+      "surah": 23,
+      "name": "المؤمنون",
+      "type": "meccan",
+      "letters": 4467,
+      "densities": {
+        "core_emphatic": 0.01567,
+        "strict_throat": 0.057533,
+        "safir_sibilant": 0.023058,
+        "idgham_sonorant": 0.470786
+      },
+      "null_mean": {
+        "core_emphatic": 0.017876,
+        "strict_throat": 0.052459,
+        "safir_sibilant": 0.029382,
+        "idgham_sonorant": 0.473504
+      },
+      "z": {
+        "core_emphatic": -1.124,
+        "strict_throat": 1.549,
+        "safir_sibilant": -2.483,
+        "idgham_sonorant": -0.369
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.272745,
+        "strict_throat": 0.122376,
+        "safir_sibilant": 0.013597,
+        "idgham_sonorant": 0.718456
+      }
+    },
+    {
+      "surah": 24,
+      "name": "النور",
+      "type": "medinan",
+      "letters": 5720,
+      "densities": {
+        "core_emphatic": 0.01958,
+        "strict_throat": 0.058741,
+        "safir_sibilant": 0.027098,
+        "idgham_sonorant": 0.482867
+      },
+      "null_mean": {
+        "core_emphatic": 0.017897,
+        "strict_throat": 0.0524,
+        "safir_sibilant": 0.029443,
+        "idgham_sonorant": 0.473437
+      },
+      "z": {
+        "core_emphatic": 0.966,
+        "strict_throat": 2.167,
+        "safir_sibilant": -1.044,
+        "idgham_sonorant": 1.443
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.343331,
+        "strict_throat": 0.032394,
+        "safir_sibilant": 0.309938,
+        "idgham_sonorant": 0.14977
+      }
+    },
+    {
+      "surah": 25,
+      "name": "الفرقان",
+      "type": "meccan",
+      "letters": 3858,
+      "densities": {
+        "core_emphatic": 0.015811,
+        "strict_throat": 0.050544,
+        "safir_sibilant": 0.031104,
+        "idgham_sonorant": 0.467341
+      },
+      "null_mean": {
+        "core_emphatic": 0.017902,
+        "strict_throat": 0.052522,
+        "safir_sibilant": 0.029415,
+        "idgham_sonorant": 0.473442
+      },
+      "z": {
+        "core_emphatic": -0.983,
+        "strict_throat": -0.556,
+        "safir_sibilant": 0.625,
+        "idgham_sonorant": -0.781
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.362927,
+        "strict_throat": 0.610878,
+        "safir_sibilant": 0.561488,
+        "idgham_sonorant": 0.439112
+      }
+    },
+    {
+      "surah": 26,
+      "name": "الشعراء",
+      "type": "meccan",
+      "letters": 5613,
+      "densities": {
+        "core_emphatic": 0.016925,
+        "strict_throat": 0.056832,
+        "safir_sibilant": 0.028149,
+        "idgham_sonorant": 0.501514
+      },
+      "null_mean": {
+        "core_emphatic": 0.017863,
+        "strict_throat": 0.052423,
+        "safir_sibilant": 0.029409,
+        "idgham_sonorant": 0.473478
+      },
+      "z": {
+        "core_emphatic": -0.535,
+        "strict_throat": 1.523,
+        "safir_sibilant": -0.56,
+        "idgham_sonorant": 4.307
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.605079,
+        "strict_throat": 0.133173,
+        "safir_sibilant": 0.584883,
+        "idgham_sonorant": 0.0002
+      }
+    },
+    {
+      "surah": 27,
+      "name": "النمل",
+      "type": "meccan",
+      "letters": 4764,
+      "densities": {
+        "core_emphatic": 0.019521,
+        "strict_throat": 0.048699,
+        "safir_sibilant": 0.028967,
+        "idgham_sonorant": 0.470823
+      },
+      "null_mean": {
+        "core_emphatic": 0.017912,
+        "strict_throat": 0.052428,
+        "safir_sibilant": 0.029381,
+        "idgham_sonorant": 0.473491
+      },
+      "z": {
+        "core_emphatic": 0.839,
+        "strict_throat": -1.159,
+        "safir_sibilant": -0.171,
+        "idgham_sonorant": -0.365
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.410518,
+        "strict_throat": 0.25195,
+        "safir_sibilant": 0.859828,
+        "idgham_sonorant": 0.712857
+      }
+    },
+    {
+      "surah": 28,
+      "name": "القصص",
+      "type": "meccan",
+      "letters": 5896,
+      "densities": {
+        "core_emphatic": 0.017469,
+        "strict_throat": 0.052748,
+        "safir_sibilant": 0.026967,
+        "idgham_sonorant": 0.481343
+      },
+      "null_mean": {
+        "core_emphatic": 0.017896,
+        "strict_throat": 0.052447,
+        "safir_sibilant": 0.029422,
+        "idgham_sonorant": 0.473385
+      },
+      "z": {
+        "core_emphatic": -0.246,
+        "strict_throat": 0.105,
+        "safir_sibilant": -1.107,
+        "idgham_sonorant": 1.229
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.84803,
+        "strict_throat": 0.929214,
+        "safir_sibilant": 0.287343,
+        "idgham_sonorant": 0.225155
+      }
+    },
+    {
+      "surah": 29,
+      "name": "العنكبوت",
+      "type": "meccan",
+      "letters": 4294,
+      "densities": {
+        "core_emphatic": 0.01537,
+        "strict_throat": 0.047275,
+        "safir_sibilant": 0.027014,
+        "idgham_sonorant": 0.486493
+      },
+      "null_mean": {
+        "core_emphatic": 0.01789,
+        "strict_throat": 0.052389,
+        "safir_sibilant": 0.029433,
+        "idgham_sonorant": 0.473415
+      },
+      "z": {
+        "core_emphatic": -1.241,
+        "strict_throat": -1.537,
+        "safir_sibilant": -0.944,
+        "idgham_sonorant": 1.72
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.232354,
+        "strict_throat": 0.123575,
+        "safir_sibilant": 0.360528,
+        "idgham_sonorant": 0.088382
+      }
+    },
+    {
+      "surah": 30,
+      "name": "الروم",
+      "type": "meccan",
+      "letters": 3451,
+      "densities": {
+        "core_emphatic": 0.019125,
+        "strict_throat": 0.048971,
+        "safir_sibilant": 0.029267,
+        "idgham_sonorant": 0.488264
+      },
+      "null_mean": {
+        "core_emphatic": 0.017857,
+        "strict_throat": 0.052388,
+        "safir_sibilant": 0.029453,
+        "idgham_sonorant": 0.473504
+      },
+      "z": {
+        "core_emphatic": 0.567,
+        "strict_throat": -0.898,
+        "safir_sibilant": -0.066,
+        "idgham_sonorant": 1.72
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.614477,
+        "strict_throat": 0.34973,
+        "safir_sibilant": 0.955809,
+        "idgham_sonorant": 0.085583
+      }
+    },
+    {
+      "surah": 31,
+      "name": "لقمان",
+      "type": "meccan",
+      "letters": 2168,
+      "densities": {
+        "core_emphatic": 0.021218,
+        "strict_throat": 0.059041,
+        "safir_sibilant": 0.032749,
+        "idgham_sonorant": 0.474631
+      },
+      "null_mean": {
+        "core_emphatic": 0.01788,
+        "strict_throat": 0.052384,
+        "safir_sibilant": 0.029418,
+        "idgham_sonorant": 0.47348
+      },
+      "z": {
+        "core_emphatic": 1.165,
+        "strict_throat": 1.408,
+        "safir_sibilant": 0.928,
+        "idgham_sonorant": 0.108
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.260348,
+        "strict_throat": 0.171366,
+        "safir_sibilant": 0.368126,
+        "idgham_sonorant": 0.919216
+      }
+    },
+    {
+      "surah": 32,
+      "name": "السجدة",
+      "type": "meccan",
+      "letters": 1555,
+      "densities": {
+        "core_emphatic": 0.014148,
+        "strict_throat": 0.044373,
+        "safir_sibilant": 0.030225,
+        "idgham_sonorant": 0.486817
+      },
+      "null_mean": {
+        "core_emphatic": 0.01784,
+        "strict_throat": 0.052572,
+        "safir_sibilant": 0.029487,
+        "idgham_sonorant": 0.473367
+      },
+      "z": {
+        "core_emphatic": -1.095,
+        "strict_throat": -1.446,
+        "safir_sibilant": 0.174,
+        "idgham_sonorant": 1.063
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.290942,
+        "strict_throat": 0.160768,
+        "safir_sibilant": 0.883623,
+        "idgham_sonorant": 0.29934
+      }
+    },
+    {
+      "surah": 33,
+      "name": "الأحزاب",
+      "type": "medinan",
+      "letters": 5763,
+      "densities": {
+        "core_emphatic": 0.016484,
+        "strict_throat": 0.047545,
+        "safir_sibilant": 0.026549,
+        "idgham_sonorant": 0.482561
+      },
+      "null_mean": {
+        "core_emphatic": 0.017838,
+        "strict_throat": 0.052407,
+        "safir_sibilant": 0.029379,
+        "idgham_sonorant": 0.473487
+      },
+      "z": {
+        "core_emphatic": -0.78,
+        "strict_throat": -1.679,
+        "safir_sibilant": -1.291,
+        "idgham_sonorant": 1.388
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.420516,
+        "strict_throat": 0.093781,
+        "safir_sibilant": 0.197161,
+        "idgham_sonorant": 0.174565
+      }
+    },
+    {
+      "surah": 34,
+      "name": "سبإ",
+      "type": "meccan",
+      "letters": 3578,
+      "densities": {
+        "core_emphatic": 0.015372,
+        "strict_throat": 0.049748,
+        "safir_sibilant": 0.028228,
+        "idgham_sonorant": 0.47848
+      },
+      "null_mean": {
+        "core_emphatic": 0.017887,
+        "strict_throat": 0.052413,
+        "safir_sibilant": 0.029436,
+        "idgham_sonorant": 0.473437
+      },
+      "z": {
+        "core_emphatic": -1.153,
+        "strict_throat": -0.72,
+        "safir_sibilant": -0.436,
+        "idgham_sonorant": 0.604
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.281144,
+        "strict_throat": 0.456309,
+        "safir_sibilant": 0.695461,
+        "idgham_sonorant": 0.560888
+      }
+    },
+    {
+      "surah": 35,
+      "name": "فاطر",
+      "type": "meccan",
+      "letters": 3217,
+      "densities": {
+        "core_emphatic": 0.017408,
+        "strict_throat": 0.051601,
+        "safir_sibilant": 0.036058,
+        "idgham_sonorant": 0.470314
+      },
+      "null_mean": {
+        "core_emphatic": 0.01784,
+        "strict_throat": 0.05238,
+        "safir_sibilant": 0.029375,
+        "idgham_sonorant": 0.473677
+      },
+      "z": {
+        "core_emphatic": -0.188,
+        "strict_throat": -0.198,
+        "safir_sibilant": 2.276,
+        "idgham_sonorant": -0.378
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.847431,
+        "strict_throat": 0.838432,
+        "safir_sibilant": 0.024195,
+        "idgham_sonorant": 0.729654
+      }
+    },
+    {
+      "surah": 36,
+      "name": "يس",
+      "type": "meccan",
+      "letters": 3058,
+      "densities": {
+        "core_emphatic": 0.018313,
+        "strict_throat": 0.053303,
+        "safir_sibilant": 0.02845,
+        "idgham_sonorant": 0.499346
+      },
+      "null_mean": {
+        "core_emphatic": 0.017861,
+        "strict_throat": 0.05251,
+        "safir_sibilant": 0.029383,
+        "idgham_sonorant": 0.473497
+      },
+      "z": {
+        "core_emphatic": 0.191,
+        "strict_throat": 0.193,
+        "safir_sibilant": -0.314,
+        "idgham_sonorant": 2.865
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.890422,
+        "strict_throat": 0.844831,
+        "safir_sibilant": 0.779244,
+        "idgham_sonorant": 0.003199
+      }
+    },
+    {
+      "surah": 37,
+      "name": "الصافات",
+      "type": "meccan",
+      "letters": 3886,
+      "densities": {
+        "core_emphatic": 0.021873,
+        "strict_throat": 0.052239,
+        "safir_sibilant": 0.033196,
+        "idgham_sonorant": 0.481987
+      },
+      "null_mean": {
+        "core_emphatic": 0.017903,
+        "strict_throat": 0.052503,
+        "safir_sibilant": 0.029388,
+        "idgham_sonorant": 0.473531
+      },
+      "z": {
+        "core_emphatic": 1.873,
+        "strict_throat": -0.075,
+        "safir_sibilant": 1.425,
+        "idgham_sonorant": 1.058
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.063787,
+        "strict_throat": 0.967407,
+        "safir_sibilant": 0.160768,
+        "idgham_sonorant": 0.284743
+      }
+    },
+    {
+      "surah": 38,
+      "name": "ص",
+      "type": "meccan",
+      "letters": 3056,
+      "densities": {
+        "core_emphatic": 0.023887,
+        "strict_throat": 0.066099,
+        "safir_sibilant": 0.033377,
+        "idgham_sonorant": 0.427029
+      },
+      "null_mean": {
+        "core_emphatic": 0.017938,
+        "strict_throat": 0.052389,
+        "safir_sibilant": 0.029416,
+        "idgham_sonorant": 0.473261
+      },
+      "z": {
+        "core_emphatic": 2.479,
+        "strict_throat": 3.449,
+        "safir_sibilant": 1.31,
+        "idgham_sonorant": -5.211
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.015597,
+        "strict_throat": 0.0008,
+        "safir_sibilant": 0.192761,
+        "idgham_sonorant": 0.0002
+      }
+    },
+    {
+      "surah": 39,
+      "name": "الزمر",
+      "type": "meccan",
+      "letters": 4842,
+      "densities": {
+        "core_emphatic": 0.015489,
+        "strict_throat": 0.051425,
+        "safir_sibilant": 0.030979,
+        "idgham_sonorant": 0.47026
+      },
+      "null_mean": {
+        "core_emphatic": 0.017878,
+        "strict_throat": 0.052491,
+        "safir_sibilant": 0.029413,
+        "idgham_sonorant": 0.473359
+      },
+      "z": {
+        "core_emphatic": -1.25,
+        "strict_throat": -0.335,
+        "safir_sibilant": 0.644,
+        "idgham_sonorant": -0.432
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.205759,
+        "strict_throat": 0.770446,
+        "safir_sibilant": 0.530894,
+        "idgham_sonorant": 0.656269
+      }
+    },
+    {
+      "surah": 40,
+      "name": "غافر",
+      "type": "meccan",
+      "letters": 5084,
+      "densities": {
+        "core_emphatic": 0.016129,
+        "strict_throat": 0.050354,
+        "safir_sibilant": 0.030488,
+        "idgham_sonorant": 0.470102
+      },
+      "null_mean": {
+        "core_emphatic": 0.017847,
+        "strict_throat": 0.052475,
+        "safir_sibilant": 0.029385,
+        "idgham_sonorant": 0.473507
+      },
+      "z": {
+        "core_emphatic": -0.922,
+        "strict_throat": -0.681,
+        "safir_sibilant": 0.464,
+        "idgham_sonorant": -0.49
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.373325,
+        "strict_throat": 0.508498,
+        "safir_sibilant": 0.679064,
+        "idgham_sonorant": 0.629674
+      }
+    },
+    {
+      "surah": 41,
+      "name": "فصلت",
+      "type": "meccan",
+      "letters": 3341,
+      "densities": {
+        "core_emphatic": 0.015864,
+        "strict_throat": 0.054774,
+        "safir_sibilant": 0.031727,
+        "idgham_sonorant": 0.471416
+      },
+      "null_mean": {
+        "core_emphatic": 0.017857,
+        "strict_throat": 0.052435,
+        "safir_sibilant": 0.029386,
+        "idgham_sonorant": 0.473769
+      },
+      "z": {
+        "core_emphatic": -0.865,
+        "strict_throat": 0.605,
+        "safir_sibilant": 0.808,
+        "idgham_sonorant": -0.274
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.40032,
+        "strict_throat": 0.563287,
+        "safir_sibilant": 0.44771,
+        "idgham_sonorant": 0.819236
+      }
+    },
+    {
+      "surah": 42,
+      "name": "الشورى",
+      "type": "meccan",
+      "letters": 3495,
+      "densities": {
+        "core_emphatic": 0.021459,
+        "strict_throat": 0.05093,
+        "safir_sibilant": 0.029471,
+        "idgham_sonorant": 0.494134
+      },
+      "null_mean": {
+        "core_emphatic": 0.01782,
+        "strict_throat": 0.052385,
+        "safir_sibilant": 0.029401,
+        "idgham_sonorant": 0.473505
+      },
+      "z": {
+        "core_emphatic": 1.641,
+        "strict_throat": -0.39,
+        "safir_sibilant": 0.025,
+        "idgham_sonorant": 2.427
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.106379,
+        "strict_throat": 0.704459,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.015997
+      }
+    },
+    {
+      "surah": 43,
+      "name": "الزخرف",
+      "type": "meccan",
+      "letters": 3589,
+      "densities": {
+        "core_emphatic": 0.017275,
+        "strict_throat": 0.055169,
+        "safir_sibilant": 0.027584,
+        "idgham_sonorant": 0.470883
+      },
+      "null_mean": {
+        "core_emphatic": 0.017862,
+        "strict_throat": 0.052412,
+        "safir_sibilant": 0.029416,
+        "idgham_sonorant": 0.473515
+      },
+      "z": {
+        "core_emphatic": -0.264,
+        "strict_throat": 0.739,
+        "safir_sibilant": -0.652,
+        "idgham_sonorant": -0.317
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.79924,
+        "strict_throat": 0.468706,
+        "safir_sibilant": 0.528894,
+        "idgham_sonorant": 0.761048
+      }
+    },
+    {
+      "surah": 44,
+      "name": "الدخان",
+      "type": "meccan",
+      "letters": 1466,
+      "densities": {
+        "core_emphatic": 0.010232,
+        "strict_throat": 0.049795,
+        "safir_sibilant": 0.024557,
+        "idgham_sonorant": 0.502046
+      },
+      "null_mean": {
+        "core_emphatic": 0.017763,
+        "strict_throat": 0.052454,
+        "safir_sibilant": 0.029301,
+        "idgham_sonorant": 0.473714
+      },
+      "z": {
+        "core_emphatic": -2.194,
+        "strict_throat": -0.465,
+        "safir_sibilant": -1.089,
+        "idgham_sonorant": 2.153
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.025995,
+        "strict_throat": 0.673665,
+        "safir_sibilant": 0.273545,
+        "idgham_sonorant": 0.030794
+      }
+    },
+    {
+      "surah": 45,
+      "name": "الجاثية",
+      "type": "meccan",
+      "letters": 2075,
+      "densities": {
+        "core_emphatic": 0.01494,
+        "strict_throat": 0.053976,
+        "safir_sibilant": 0.030843,
+        "idgham_sonorant": 0.478072
+      },
+      "null_mean": {
+        "core_emphatic": 0.01788,
+        "strict_throat": 0.052304,
+        "safir_sibilant": 0.029446,
+        "idgham_sonorant": 0.473408
+      },
+      "z": {
+        "core_emphatic": -1.008,
+        "strict_throat": 0.343,
+        "safir_sibilant": 0.374,
+        "idgham_sonorant": 0.426
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.328534,
+        "strict_throat": 0.776045,
+        "safir_sibilant": 0.75005,
+        "idgham_sonorant": 0.674265
+      }
+    },
+    {
+      "surah": 46,
+      "name": "الأحقاف",
+      "type": "meccan",
+      "letters": 2660,
+      "densities": {
+        "core_emphatic": 0.017293,
+        "strict_throat": 0.052256,
+        "safir_sibilant": 0.030075,
+        "idgham_sonorant": 0.467669
+      },
+      "null_mean": {
+        "core_emphatic": 0.017866,
+        "strict_throat": 0.052406,
+        "safir_sibilant": 0.029416,
+        "idgham_sonorant": 0.473356
+      },
+      "z": {
+        "core_emphatic": -0.223,
+        "strict_throat": -0.035,
+        "safir_sibilant": 0.202,
+        "idgham_sonorant": -0.592
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.823035,
+        "strict_throat": 0.970206,
+        "safir_sibilant": 0.858228,
+        "idgham_sonorant": 0.559088
+      }
+    },
+    {
+      "surah": 47,
+      "name": "محمد",
+      "type": "medinan",
+      "letters": 2410,
+      "densities": {
+        "core_emphatic": 0.022407,
+        "strict_throat": 0.051037,
+        "safir_sibilant": 0.024896,
+        "idgham_sonorant": 0.475104
+      },
+      "null_mean": {
+        "core_emphatic": 0.017862,
+        "strict_throat": 0.052524,
+        "safir_sibilant": 0.029385,
+        "idgham_sonorant": 0.473172
+      },
+      "z": {
+        "core_emphatic": 1.685,
+        "strict_throat": -0.33,
+        "safir_sibilant": -1.282,
+        "idgham_sonorant": 0.192
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.10018,
+        "strict_throat": 0.772246,
+        "safir_sibilant": 0.211758,
+        "idgham_sonorant": 0.889422
+      }
+    },
+    {
+      "surah": 48,
+      "name": "الفتح",
+      "type": "medinan",
+      "letters": 2496,
+      "densities": {
+        "core_emphatic": 0.017228,
+        "strict_throat": 0.058093,
+        "safir_sibilant": 0.033253,
+        "idgham_sonorant": 0.481571
+      },
+      "null_mean": {
+        "core_emphatic": 0.01792,
+        "strict_throat": 0.052444,
+        "safir_sibilant": 0.029486,
+        "idgham_sonorant": 0.473502
+      },
+      "z": {
+        "core_emphatic": -0.262,
+        "strict_throat": 1.271,
+        "safir_sibilant": 1.123,
+        "idgham_sonorant": 0.81
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.820836,
+        "strict_throat": 0.210758,
+        "safir_sibilant": 0.262148,
+        "idgham_sonorant": 0.431314
+      }
+    },
+    {
+      "surah": 49,
+      "name": "الحجرات",
+      "type": "medinan",
+      "letters": 1526,
+      "densities": {
+        "core_emphatic": 0.02097,
+        "strict_throat": 0.054391,
+        "safir_sibilant": 0.029489,
+        "idgham_sonorant": 0.486894
+      },
+      "null_mean": {
+        "core_emphatic": 0.017834,
+        "strict_throat": 0.052527,
+        "safir_sibilant": 0.029396,
+        "idgham_sonorant": 0.473164
+      },
+      "z": {
+        "core_emphatic": 0.94,
+        "strict_throat": 0.325,
+        "safir_sibilant": 0.022,
+        "idgham_sonorant": 1.082
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.382523,
+        "strict_throat": 0.763047,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.297341
+      }
+    },
+    {
+      "surah": 50,
+      "name": "ق",
+      "type": "meccan",
+      "letters": 1496,
+      "densities": {
+        "core_emphatic": 0.019385,
+        "strict_throat": 0.062834,
+        "safir_sibilant": 0.030749,
+        "idgham_sonorant": 0.450535
+      },
+      "null_mean": {
+        "core_emphatic": 0.017911,
+        "strict_throat": 0.052485,
+        "safir_sibilant": 0.029332,
+        "idgham_sonorant": 0.47322
+      },
+      "z": {
+        "core_emphatic": 0.435,
+        "strict_throat": 1.8,
+        "safir_sibilant": 0.33,
+        "idgham_sonorant": -1.777
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.678464,
+        "strict_throat": 0.067187,
+        "safir_sibilant": 0.816837,
+        "idgham_sonorant": 0.078184
+      }
+    },
+    {
+      "surah": 51,
+      "name": "الذاريات",
+      "type": "meccan",
+      "letters": 1539,
+      "densities": {
+        "core_emphatic": 0.014295,
+        "strict_throat": 0.049383,
+        "safir_sibilant": 0.032489,
+        "idgham_sonorant": 0.489929
+      },
+      "null_mean": {
+        "core_emphatic": 0.017857,
+        "strict_throat": 0.052254,
+        "safir_sibilant": 0.02952,
+        "idgham_sonorant": 0.473491
+      },
+      "z": {
+        "core_emphatic": -1.064,
+        "strict_throat": -0.511,
+        "safir_sibilant": 0.677,
+        "idgham_sonorant": 1.285
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.284943,
+        "strict_throat": 0.59808,
+        "safir_sibilant": 0.513097,
+        "idgham_sonorant": 0.206959
+      }
+    },
+    {
+      "surah": 52,
+      "name": "الطور",
+      "type": "meccan",
+      "letters": 1318,
+      "densities": {
+        "core_emphatic": 0.018968,
+        "strict_throat": 0.051593,
+        "safir_sibilant": 0.032625,
+        "idgham_sonorant": 0.49393
+      },
+      "null_mean": {
+        "core_emphatic": 0.017808,
+        "strict_throat": 0.052402,
+        "safir_sibilant": 0.029333,
+        "idgham_sonorant": 0.47339
+      },
+      "z": {
+        "core_emphatic": 0.32,
+        "strict_throat": -0.132,
+        "safir_sibilant": 0.702,
+        "idgham_sonorant": 1.495
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.834233,
+        "strict_throat": 0.89902,
+        "safir_sibilant": 0.523695,
+        "idgham_sonorant": 0.140172
+      }
+    },
+    {
+      "surah": 53,
+      "name": "النجم",
+      "type": "meccan",
+      "letters": 1427,
+      "densities": {
+        "core_emphatic": 0.016118,
+        "strict_throat": 0.049755,
+        "safir_sibilant": 0.033637,
+        "idgham_sonorant": 0.46391
+      },
+      "null_mean": {
+        "core_emphatic": 0.017916,
+        "strict_throat": 0.052456,
+        "safir_sibilant": 0.029448,
+        "idgham_sonorant": 0.473421
+      },
+      "z": {
+        "core_emphatic": -0.525,
+        "strict_throat": -0.463,
+        "safir_sibilant": 0.949,
+        "idgham_sonorant": -0.728
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.610478,
+        "strict_throat": 0.680464,
+        "safir_sibilant": 0.34953,
+        "idgham_sonorant": 0.470906
+      }
+    },
+    {
+      "surah": 54,
+      "name": "القمر",
+      "type": "meccan",
+      "letters": 1456,
+      "densities": {
+        "core_emphatic": 0.019231,
+        "strict_throat": 0.059066,
+        "safir_sibilant": 0.038462,
+        "idgham_sonorant": 0.43544
+      },
+      "null_mean": {
+        "core_emphatic": 0.017863,
+        "strict_throat": 0.052622,
+        "safir_sibilant": 0.029457,
+        "idgham_sonorant": 0.473624
+      },
+      "z": {
+        "core_emphatic": 0.386,
+        "strict_throat": 1.107,
+        "safir_sibilant": 2.061,
+        "idgham_sonorant": -2.94
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.771846,
+        "strict_throat": 0.263147,
+        "safir_sibilant": 0.043191,
+        "idgham_sonorant": 0.004799
+      }
+    },
+    {
+      "surah": 55,
+      "name": "الرحمن",
+      "type": "medinan",
+      "letters": 1613,
+      "densities": {
+        "core_emphatic": 0.015499,
+        "strict_throat": 0.030998,
+        "safir_sibilant": 0.026658,
+        "idgham_sonorant": 0.398016
+      },
+      "null_mean": {
+        "core_emphatic": 0.017865,
+        "strict_throat": 0.052482,
+        "safir_sibilant": 0.029493,
+        "idgham_sonorant": 0.473641
+      },
+      "z": {
+        "core_emphatic": -0.721,
+        "strict_throat": -3.921,
+        "safir_sibilant": -0.673,
+        "idgham_sonorant": -6.168
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.512897,
+        "strict_throat": 0.0002,
+        "safir_sibilant": 0.560488,
+        "idgham_sonorant": 0.0002
+      }
+    },
+    {
+      "surah": 56,
+      "name": "الواقعة",
+      "type": "meccan",
+      "letters": 1749,
+      "densities": {
+        "core_emphatic": 0.02287,
+        "strict_throat": 0.056604,
+        "safir_sibilant": 0.029731,
+        "idgham_sonorant": 0.496855
+      },
+      "null_mean": {
+        "core_emphatic": 0.017812,
+        "strict_throat": 0.052559,
+        "safir_sibilant": 0.029337,
+        "idgham_sonorant": 0.47355
+      },
+      "z": {
+        "core_emphatic": 1.606,
+        "strict_throat": 0.763,
+        "safir_sibilant": 0.098,
+        "idgham_sonorant": 1.948
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.117976,
+        "strict_throat": 0.443711,
+        "safir_sibilant": 0.945411,
+        "idgham_sonorant": 0.053189
+      }
+    },
+    {
+      "surah": 57,
+      "name": "الحديد",
+      "type": "medinan",
+      "letters": 2533,
+      "densities": {
+        "core_emphatic": 0.019739,
+        "strict_throat": 0.045795,
+        "safir_sibilant": 0.027635,
+        "idgham_sonorant": 0.493091
+      },
+      "null_mean": {
+        "core_emphatic": 0.017832,
+        "strict_throat": 0.052338,
+        "safir_sibilant": 0.029401,
+        "idgham_sonorant": 0.473639
+      },
+      "z": {
+        "core_emphatic": 0.732,
+        "strict_throat": -1.495,
+        "safir_sibilant": -0.531,
+        "idgham_sonorant": 1.975
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.486103,
+        "strict_throat": 0.136173,
+        "safir_sibilant": 0.592881,
+        "idgham_sonorant": 0.042791
+      }
+    },
+    {
+      "surah": 58,
+      "name": "المجادلة",
+      "type": "medinan",
+      "letters": 2039,
+      "densities": {
+        "core_emphatic": 0.013732,
+        "strict_throat": 0.049044,
+        "safir_sibilant": 0.030897,
+        "idgham_sonorant": 0.486023
+      },
+      "null_mean": {
+        "core_emphatic": 0.017835,
+        "strict_throat": 0.052478,
+        "safir_sibilant": 0.029438,
+        "idgham_sonorant": 0.473364
+      },
+      "z": {
+        "core_emphatic": -1.417,
+        "strict_throat": -0.691,
+        "safir_sibilant": 0.392,
+        "idgham_sonorant": 1.143
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.172366,
+        "strict_throat": 0.518896,
+        "safir_sibilant": 0.69786,
+        "idgham_sonorant": 0.258348
+      }
+    },
+    {
+      "surah": 59,
+      "name": "الحشر",
+      "type": "medinan",
+      "letters": 1956,
+      "densities": {
+        "core_emphatic": 0.01636,
+        "strict_throat": 0.04499,
+        "safir_sibilant": 0.032209,
+        "idgham_sonorant": 0.487219
+      },
+      "null_mean": {
+        "core_emphatic": 0.017914,
+        "strict_throat": 0.052525,
+        "safir_sibilant": 0.029438,
+        "idgham_sonorant": 0.473583
+      },
+      "z": {
+        "core_emphatic": -0.514,
+        "strict_throat": -1.505,
+        "safir_sibilant": 0.725,
+        "idgham_sonorant": 1.205
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.667067,
+        "strict_throat": 0.141772,
+        "safir_sibilant": 0.5013,
+        "idgham_sonorant": 0.226955
+      }
+    },
+    {
+      "surah": 60,
+      "name": "الممتحنة",
+      "type": "medinan",
+      "letters": 1548,
+      "densities": {
+        "core_emphatic": 0.00969,
+        "strict_throat": 0.045866,
+        "safir_sibilant": 0.021964,
+        "idgham_sonorant": 0.489664
+      },
+      "null_mean": {
+        "core_emphatic": 0.01783,
+        "strict_throat": 0.052511,
+        "safir_sibilant": 0.029415,
+        "idgham_sonorant": 0.473454
+      },
+      "z": {
+        "core_emphatic": -2.433,
+        "strict_throat": -1.194,
+        "safir_sibilant": -1.746,
+        "idgham_sonorant": 1.275
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.013597,
+        "strict_throat": 0.252949,
+        "safir_sibilant": 0.080384,
+        "idgham_sonorant": 0.19816
+      }
+    },
+    {
+      "surah": 61,
+      "name": "الصف",
+      "type": "medinan",
+      "letters": 965,
+      "densities": {
+        "core_emphatic": 0.019689,
+        "strict_throat": 0.038342,
+        "safir_sibilant": 0.036269,
+        "idgham_sonorant": 0.508808
+      },
+      "null_mean": {
+        "core_emphatic": 0.017776,
+        "strict_throat": 0.052471,
+        "safir_sibilant": 0.029341,
+        "idgham_sonorant": 0.47322
+      },
+      "z": {
+        "core_emphatic": 0.443,
+        "strict_throat": -1.987,
+        "safir_sibilant": 1.283,
+        "idgham_sonorant": 2.2
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.715457,
+        "strict_throat": 0.044391,
+        "safir_sibilant": 0.212158,
+        "idgham_sonorant": 0.029994
+      }
+    },
+    {
+      "surah": 62,
+      "name": "الجمعة",
+      "type": "medinan",
+      "letters": 766,
+      "densities": {
+        "core_emphatic": 0.018277,
+        "strict_throat": 0.041775,
+        "safir_sibilant": 0.023499,
+        "idgham_sonorant": 0.493473
+      },
+      "null_mean": {
+        "core_emphatic": 0.017843,
+        "strict_throat": 0.052308,
+        "safir_sibilant": 0.029478,
+        "idgham_sonorant": 0.473396
+      },
+      "z": {
+        "core_emphatic": 0.092,
+        "strict_throat": -1.301,
+        "safir_sibilant": -0.987,
+        "idgham_sonorant": 1.12
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 0.202759,
+        "safir_sibilant": 0.337932,
+        "idgham_sonorant": 0.277944
+      }
+    },
+    {
+      "surah": 63,
+      "name": "المنافقون",
+      "type": "medinan",
+      "letters": 796,
+      "densities": {
+        "core_emphatic": 0.01005,
+        "strict_throat": 0.047739,
+        "safir_sibilant": 0.037688,
+        "idgham_sonorant": 0.5
+      },
+      "null_mean": {
+        "core_emphatic": 0.017774,
+        "strict_throat": 0.052346,
+        "safir_sibilant": 0.029309,
+        "idgham_sonorant": 0.474128
+      },
+      "z": {
+        "core_emphatic": -1.676,
+        "strict_throat": -0.57,
+        "safir_sibilant": 1.405,
+        "idgham_sonorant": 1.486
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.106979,
+        "strict_throat": 0.584283,
+        "safir_sibilant": 0.167566,
+        "idgham_sonorant": 0.130374
+      }
+    },
+    {
+      "surah": 64,
+      "name": "التغابن",
+      "type": "medinan",
+      "letters": 1089,
+      "densities": {
+        "core_emphatic": 0.02112,
+        "strict_throat": 0.05877,
+        "safir_sibilant": 0.033058,
+        "idgham_sonorant": 0.486685
+      },
+      "null_mean": {
+        "core_emphatic": 0.017898,
+        "strict_throat": 0.052572,
+        "safir_sibilant": 0.029545,
+        "idgham_sonorant": 0.473273
+      },
+      "z": {
+        "core_emphatic": 0.805,
+        "strict_throat": 0.939,
+        "safir_sibilant": 0.68,
+        "idgham_sonorant": 0.884
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.408918,
+        "strict_throat": 0.366127,
+        "safir_sibilant": 0.535293,
+        "idgham_sonorant": 0.389522
+      }
+    },
+    {
+      "surah": 65,
+      "name": "الطلاق",
+      "type": "medinan",
+      "letters": 1199,
+      "densities": {
+        "core_emphatic": 0.015847,
+        "strict_throat": 0.065888,
+        "safir_sibilant": 0.030025,
+        "idgham_sonorant": 0.445371
+      },
+      "null_mean": {
+        "core_emphatic": 0.017869,
+        "strict_throat": 0.052377,
+        "safir_sibilant": 0.029351,
+        "idgham_sonorant": 0.47357
+      },
+      "z": {
+        "core_emphatic": -0.529,
+        "strict_throat": 2.11,
+        "safir_sibilant": 0.138,
+        "idgham_sonorant": -1.929
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.670066,
+        "strict_throat": 0.040392,
+        "safir_sibilant": 0.929814,
+        "idgham_sonorant": 0.055189
+      }
+    },
+    {
+      "surah": 66,
+      "name": "التحريم",
+      "type": "medinan",
+      "letters": 1104,
+      "densities": {
+        "core_emphatic": 0.021739,
+        "strict_throat": 0.057971,
+        "safir_sibilant": 0.020833,
+        "idgham_sonorant": 0.464674
+      },
+      "null_mean": {
+        "core_emphatic": 0.017943,
+        "strict_throat": 0.052369,
+        "safir_sibilant": 0.029399,
+        "idgham_sonorant": 0.473604
+      },
+      "z": {
+        "core_emphatic": 0.965,
+        "strict_throat": 0.827,
+        "safir_sibilant": -1.676,
+        "idgham_sonorant": -0.591
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.35113,
+        "strict_throat": 0.423515,
+        "safir_sibilant": 0.111578,
+        "idgham_sonorant": 0.569886
+      }
+    },
+    {
+      "surah": 67,
+      "name": "الملك",
+      "type": "meccan",
+      "letters": 1339,
+      "densities": {
+        "core_emphatic": 0.021658,
+        "strict_throat": 0.049291,
+        "safir_sibilant": 0.039582,
+        "idgham_sonorant": 0.471994
+      },
+      "null_mean": {
+        "core_emphatic": 0.017804,
+        "strict_throat": 0.052415,
+        "safir_sibilant": 0.029473,
+        "idgham_sonorant": 0.473515
+      },
+      "z": {
+        "core_emphatic": 1.063,
+        "strict_throat": -0.52,
+        "safir_sibilant": 2.168,
+        "idgham_sonorant": -0.111
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.304739,
+        "strict_throat": 0.627674,
+        "safir_sibilant": 0.030594,
+        "idgham_sonorant": 0.931214
+      }
+    },
+    {
+      "surah": 68,
+      "name": "القلم",
+      "type": "meccan",
+      "letters": 1286,
+      "densities": {
+        "core_emphatic": 0.025661,
+        "strict_throat": 0.060653,
+        "safir_sibilant": 0.034215,
+        "idgham_sonorant": 0.481337
+      },
+      "null_mean": {
+        "core_emphatic": 0.017877,
+        "strict_throat": 0.052652,
+        "safir_sibilant": 0.029377,
+        "idgham_sonorant": 0.473442
+      },
+      "z": {
+        "core_emphatic": 2.098,
+        "strict_throat": 1.301,
+        "safir_sibilant": 1.033,
+        "idgham_sonorant": 0.565
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.039192,
+        "strict_throat": 0.184363,
+        "safir_sibilant": 0.319536,
+        "idgham_sonorant": 0.583083
+      }
+    },
+    {
+      "surah": 69,
+      "name": "الحاقة",
+      "type": "meccan",
+      "letters": 1129,
+      "densities": {
+        "core_emphatic": 0.023029,
+        "strict_throat": 0.068202,
+        "safir_sibilant": 0.028344,
+        "idgham_sonorant": 0.441098
+      },
+      "null_mean": {
+        "core_emphatic": 0.017947,
+        "strict_throat": 0.052529,
+        "safir_sibilant": 0.029422,
+        "idgham_sonorant": 0.473551
+      },
+      "z": {
+        "core_emphatic": 1.299,
+        "strict_throat": 2.376,
+        "safir_sibilant": -0.214,
+        "idgham_sonorant": -2.158
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.211358,
+        "strict_throat": 0.017596,
+        "safir_sibilant": 0.865827,
+        "idgham_sonorant": 0.034793
+      }
+    },
+    {
+      "surah": 70,
+      "name": "المعارج",
+      "type": "meccan",
+      "letters": 969,
+      "densities": {
+        "core_emphatic": 0.019608,
+        "strict_throat": 0.063983,
+        "safir_sibilant": 0.029928,
+        "idgham_sonorant": 0.50258
+      },
+      "null_mean": {
+        "core_emphatic": 0.017827,
+        "strict_throat": 0.052479,
+        "safir_sibilant": 0.029368,
+        "idgham_sonorant": 0.473672
+      },
+      "z": {
+        "core_emphatic": 0.416,
+        "strict_throat": 1.612,
+        "safir_sibilant": 0.105,
+        "idgham_sonorant": 1.826
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.715057,
+        "strict_throat": 0.117776,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.069186
+      }
+    },
+    {
+      "surah": 71,
+      "name": "نوح",
+      "type": "meccan",
+      "letters": 963,
+      "densities": {
+        "core_emphatic": 0.017653,
+        "strict_throat": 0.047767,
+        "safir_sibilant": 0.029076,
+        "idgham_sonorant": 0.465213
+      },
+      "null_mean": {
+        "core_emphatic": 0.017964,
+        "strict_throat": 0.052505,
+        "safir_sibilant": 0.029433,
+        "idgham_sonorant": 0.47321
+      },
+      "z": {
+        "core_emphatic": -0.074,
+        "strict_throat": -0.66,
+        "safir_sibilant": -0.066,
+        "idgham_sonorant": -0.495
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 0.516297,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.628274
+      }
+    },
+    {
+      "surah": 72,
+      "name": "الجن",
+      "type": "meccan",
+      "letters": 1106,
+      "densities": {
+        "core_emphatic": 0.024412,
+        "strict_throat": 0.056962,
+        "safir_sibilant": 0.033454,
+        "idgham_sonorant": 0.436709
+      },
+      "null_mean": {
+        "core_emphatic": 0.017877,
+        "strict_throat": 0.05249,
+        "safir_sibilant": 0.029407,
+        "idgham_sonorant": 0.473331
+      },
+      "z": {
+        "core_emphatic": 1.663,
+        "strict_throat": 0.653,
+        "safir_sibilant": 0.8,
+        "idgham_sonorant": -2.461
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.105379,
+        "strict_throat": 0.554289,
+        "safir_sibilant": 0.472705,
+        "idgham_sonorant": 0.014597
+      }
+    },
+    {
+      "surah": 73,
+      "name": "المزمل",
+      "type": "meccan",
+      "letters": 850,
+      "densities": {
+        "core_emphatic": 0.024706,
+        "strict_throat": 0.044706,
+        "safir_sibilant": 0.032941,
+        "idgham_sonorant": 0.470588
+      },
+      "null_mean": {
+        "core_emphatic": 0.017852,
+        "strict_throat": 0.052299,
+        "safir_sibilant": 0.029292,
+        "idgham_sonorant": 0.473411
+      },
+      "z": {
+        "core_emphatic": 1.485,
+        "strict_throat": -0.995,
+        "safir_sibilant": 0.617,
+        "idgham_sonorant": -0.165
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.160368,
+        "strict_throat": 0.323535,
+        "safir_sibilant": 0.624275,
+        "idgham_sonorant": 0.896221
+      }
+    },
+    {
+      "surah": 74,
+      "name": "المدثر",
+      "type": "meccan",
+      "letters": 1029,
+      "densities": {
+        "core_emphatic": 0.016521,
+        "strict_throat": 0.038873,
+        "safir_sibilant": 0.03207,
+        "idgham_sonorant": 0.45481
+      },
+      "null_mean": {
+        "core_emphatic": 0.0179,
+        "strict_throat": 0.052324,
+        "safir_sibilant": 0.029441,
+        "idgham_sonorant": 0.473178
+      },
+      "z": {
+        "core_emphatic": -0.343,
+        "strict_throat": -1.952,
+        "safir_sibilant": 0.509,
+        "idgham_sonorant": -1.183
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.811638,
+        "strict_throat": 0.054789,
+        "safir_sibilant": 0.641272,
+        "idgham_sonorant": 0.229754
+      }
+    },
+    {
+      "surah": 75,
+      "name": "القيامة",
+      "type": "meccan",
+      "letters": 676,
+      "densities": {
+        "core_emphatic": 0.016272,
+        "strict_throat": 0.038462,
+        "safir_sibilant": 0.045858,
+        "idgham_sonorant": 0.465976
+      },
+      "null_mean": {
+        "core_emphatic": 0.017837,
+        "strict_throat": 0.052298,
+        "safir_sibilant": 0.029524,
+        "idgham_sonorant": 0.473503
+      },
+      "z": {
+        "core_emphatic": -0.307,
+        "strict_throat": -1.613,
+        "safir_sibilant": 2.467,
+        "idgham_sonorant": -0.396
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.784243,
+        "strict_throat": 0.116977,
+        "safir_sibilant": 0.016197,
+        "idgham_sonorant": 0.70046
+      }
+    },
+    {
+      "surah": 76,
+      "name": "الانسان",
+      "type": "medinan",
+      "letters": 1079,
+      "densities": {
+        "core_emphatic": 0.021316,
+        "strict_throat": 0.043559,
+        "safir_sibilant": 0.040778,
+        "idgham_sonorant": 0.44949
+      },
+      "null_mean": {
+        "core_emphatic": 0.017849,
+        "strict_throat": 0.052593,
+        "safir_sibilant": 0.029427,
+        "idgham_sonorant": 0.473675
+      },
+      "z": {
+        "core_emphatic": 0.869,
+        "strict_throat": -1.335,
+        "safir_sibilant": 2.183,
+        "idgham_sonorant": -1.568
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.411118,
+        "strict_throat": 0.192761,
+        "safir_sibilant": 0.034193,
+        "idgham_sonorant": 0.124175
+      }
+    },
+    {
+      "surah": 77,
+      "name": "المرسلات",
+      "type": "meccan",
+      "letters": 837,
+      "densities": {
+        "core_emphatic": 0.017921,
+        "strict_throat": 0.034648,
+        "safir_sibilant": 0.019116,
+        "idgham_sonorant": 0.519713
+      },
+      "null_mean": {
+        "core_emphatic": 0.017961,
+        "strict_throat": 0.052443,
+        "safir_sibilant": 0.029488,
+        "idgham_sonorant": 0.473085
+      },
+      "z": {
+        "core_emphatic": -0.009,
+        "strict_throat": -2.259,
+        "safir_sibilant": -1.766,
+        "idgham_sonorant": 2.686
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 0.028394,
+        "safir_sibilant": 0.083583,
+        "idgham_sonorant": 0.008398
+      }
+    },
+    {
+      "surah": 78,
+      "name": "النبإ",
+      "type": "meccan",
+      "letters": 787,
+      "densities": {
+        "core_emphatic": 0.017789,
+        "strict_throat": 0.050826,
+        "safir_sibilant": 0.036849,
+        "idgham_sonorant": 0.401525
+      },
+      "null_mean": {
+        "core_emphatic": 0.017903,
+        "strict_throat": 0.052295,
+        "safir_sibilant": 0.029533,
+        "idgham_sonorant": 0.473235
+      },
+      "z": {
+        "core_emphatic": -0.024,
+        "strict_throat": -0.182,
+        "safir_sibilant": 1.203,
+        "idgham_sonorant": -3.987
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 0.873825,
+        "safir_sibilant": 0.242152,
+        "idgham_sonorant": 0.0002
+      }
+    },
+    {
+      "surah": 79,
+      "name": "النازعات",
+      "type": "meccan",
+      "letters": 782,
+      "densities": {
+        "core_emphatic": 0.016624,
+        "strict_throat": 0.060102,
+        "safir_sibilant": 0.031969,
+        "idgham_sonorant": 0.378517
+      },
+      "null_mean": {
+        "core_emphatic": 0.017972,
+        "strict_throat": 0.052513,
+        "safir_sibilant": 0.029466,
+        "idgham_sonorant": 0.473441
+      },
+      "z": {
+        "core_emphatic": -0.287,
+        "strict_throat": 0.957,
+        "safir_sibilant": 0.414,
+        "idgham_sonorant": -5.357
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.890622,
+        "strict_throat": 0.365527,
+        "safir_sibilant": 0.758648,
+        "idgham_sonorant": 0.0002
+      }
+    },
+    {
+      "surah": 80,
+      "name": "عبس",
+      "type": "meccan",
+      "letters": 544,
+      "densities": {
+        "core_emphatic": 0.025735,
+        "strict_throat": 0.051471,
+        "safir_sibilant": 0.034926,
+        "idgham_sonorant": 0.404412
+      },
+      "null_mean": {
+        "core_emphatic": 0.017808,
+        "strict_throat": 0.052386,
+        "safir_sibilant": 0.029397,
+        "idgham_sonorant": 0.473465
+      },
+      "z": {
+        "core_emphatic": 1.401,
+        "strict_throat": -0.097,
+        "safir_sibilant": 0.771,
+        "idgham_sonorant": -3.329
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.189162,
+        "strict_throat": 0.922216,
+        "safir_sibilant": 0.524895,
+        "idgham_sonorant": 0.001
+      }
+    },
+    {
+      "surah": 81,
+      "name": "التكوير",
+      "type": "meccan",
+      "letters": 430,
+      "densities": {
+        "core_emphatic": 0.02093,
+        "strict_throat": 0.051163,
+        "safir_sibilant": 0.048837,
+        "idgham_sonorant": 0.418605
+      },
+      "null_mean": {
+        "core_emphatic": 0.017946,
+        "strict_throat": 0.052427,
+        "safir_sibilant": 0.029524,
+        "idgham_sonorant": 0.474039
+      },
+      "z": {
+        "core_emphatic": 0.472,
+        "strict_throat": -0.117,
+        "safir_sibilant": 2.357,
+        "idgham_sonorant": -2.297
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.706659,
+        "strict_throat": 0.916817,
+        "safir_sibilant": 0.024395,
+        "idgham_sonorant": 0.023795
+      }
+    },
+    {
+      "surah": 82,
+      "name": "الإنفطار",
+      "type": "meccan",
+      "letters": 331,
+      "densities": {
+        "core_emphatic": 0.012085,
+        "strict_throat": 0.045317,
+        "safir_sibilant": 0.024169,
+        "idgham_sonorant": 0.456193
+      },
+      "null_mean": {
+        "core_emphatic": 0.017839,
+        "strict_throat": 0.052516,
+        "safir_sibilant": 0.02959,
+        "idgham_sonorant": 0.473073
+      },
+      "z": {
+        "core_emphatic": -0.797,
+        "strict_throat": -0.587,
+        "safir_sibilant": -0.591,
+        "idgham_sonorant": -0.627
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.537293,
+        "strict_throat": 0.628074,
+        "safir_sibilant": 0.628074,
+        "idgham_sonorant": 0.535493
+      }
+    },
+    {
+      "surah": 83,
+      "name": "المطففين",
+      "type": "meccan",
+      "letters": 749,
+      "densities": {
+        "core_emphatic": 0.016021,
+        "strict_throat": 0.037383,
+        "safir_sibilant": 0.024032,
+        "idgham_sonorant": 0.507343
+      },
+      "null_mean": {
+        "core_emphatic": 0.017863,
+        "strict_throat": 0.052617,
+        "safir_sibilant": 0.029357,
+        "idgham_sonorant": 0.473389
+      },
+      "z": {
+        "core_emphatic": -0.384,
+        "strict_throat": -1.883,
+        "safir_sibilant": -0.845,
+        "idgham_sonorant": 1.895
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.772446,
+        "strict_throat": 0.068786,
+        "safir_sibilant": 0.40232,
+        "idgham_sonorant": 0.060788
+      }
+    },
+    {
+      "surah": 84,
+      "name": "الإنشقاق",
+      "type": "meccan",
+      "letters": 443,
+      "densities": {
+        "core_emphatic": 0.018059,
+        "strict_throat": 0.040632,
+        "safir_sibilant": 0.038375,
+        "idgham_sonorant": 0.433409
+      },
+      "null_mean": {
+        "core_emphatic": 0.017918,
+        "strict_throat": 0.05228,
+        "safir_sibilant": 0.029553,
+        "idgham_sonorant": 0.473159
+      },
+      "z": {
+        "core_emphatic": 0.022,
+        "strict_throat": -1.105,
+        "safir_sibilant": 1.092,
+        "idgham_sonorant": -1.703
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 0.286343,
+        "safir_sibilant": 0.324935,
+        "idgham_sonorant": 0.093581
+      }
+    },
+    {
+      "surah": 85,
+      "name": "البروج",
+      "type": "meccan",
+      "letters": 467,
+      "densities": {
+        "core_emphatic": 0.012848,
+        "strict_throat": 0.053533,
+        "safir_sibilant": 0.014989,
+        "idgham_sonorant": 0.48394
+      },
+      "null_mean": {
+        "core_emphatic": 0.017854,
+        "strict_throat": 0.052447,
+        "safir_sibilant": 0.029608,
+        "idgham_sonorant": 0.473914
+      },
+      "z": {
+        "core_emphatic": -0.812,
+        "strict_throat": 0.106,
+        "safir_sibilant": -1.887,
+        "idgham_sonorant": 0.436
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.492102,
+        "strict_throat": 0.920616,
+        "safir_sibilant": 0.066387,
+        "idgham_sonorant": 0.680064
+      }
+    },
+    {
+      "surah": 86,
+      "name": "الطارق",
+      "type": "meccan",
+      "letters": 251,
+      "densities": {
+        "core_emphatic": 0.035857,
+        "strict_throat": 0.035857,
+        "safir_sibilant": 0.039841,
+        "idgham_sonorant": 0.454183
+      },
+      "null_mean": {
+        "core_emphatic": 0.017831,
+        "strict_throat": 0.052692,
+        "safir_sibilant": 0.029448,
+        "idgham_sonorant": 0.473883
+      },
+      "z": {
+        "core_emphatic": 2.172,
+        "strict_throat": -1.204,
+        "safir_sibilant": 0.975,
+        "idgham_sonorant": -0.618
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.036793,
+        "strict_throat": 0.246951,
+        "safir_sibilant": 0.336133,
+        "idgham_sonorant": 0.574485
+      }
+    },
+    {
+      "surah": 87,
+      "name": "الأعلى",
+      "type": "meccan",
+      "letters": 294,
+      "densities": {
+        "core_emphatic": 0.013605,
+        "strict_throat": 0.064626,
+        "safir_sibilant": 0.05102,
+        "idgham_sonorant": 0.462585
+      },
+      "null_mean": {
+        "core_emphatic": 0.017838,
+        "strict_throat": 0.052088,
+        "safir_sibilant": 0.029626,
+        "idgham_sonorant": 0.473891
+      },
+      "z": {
+        "core_emphatic": -0.543,
+        "strict_throat": 0.967,
+        "safir_sibilant": 2.161,
+        "idgham_sonorant": -0.386
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.677465,
+        "strict_throat": 0.35053,
+        "safir_sibilant": 0.039192,
+        "idgham_sonorant": 0.729654
+      }
+    },
+    {
+      "surah": 88,
+      "name": "الغاشية",
+      "type": "meccan",
+      "letters": 381,
+      "densities": {
+        "core_emphatic": 0.034121,
+        "strict_throat": 0.070866,
+        "safir_sibilant": 0.041995,
+        "idgham_sonorant": 0.43832
+      },
+      "null_mean": {
+        "core_emphatic": 0.017916,
+        "strict_throat": 0.05223,
+        "safir_sibilant": 0.029261,
+        "idgham_sonorant": 0.473267
+      },
+      "z": {
+        "core_emphatic": 2.363,
+        "strict_throat": 1.656,
+        "safir_sibilant": 1.482,
+        "idgham_sonorant": -1.374
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.026995,
+        "strict_throat": 0.103179,
+        "safir_sibilant": 0.168366,
+        "idgham_sonorant": 0.177564
+      }
+    },
+    {
+      "surah": 89,
+      "name": "الفجر",
+      "type": "meccan",
+      "letters": 582,
+      "densities": {
+        "core_emphatic": 0.022337,
+        "strict_throat": 0.04811,
+        "safir_sibilant": 0.024055,
+        "idgham_sonorant": 0.42268
+      },
+      "null_mean": {
+        "core_emphatic": 0.017815,
+        "strict_throat": 0.052231,
+        "safir_sibilant": 0.029396,
+        "idgham_sonorant": 0.473671
+      },
+      "z": {
+        "core_emphatic": 0.828,
+        "strict_throat": -0.442,
+        "safir_sibilant": -0.771,
+        "idgham_sonorant": -2.476
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.422715,
+        "strict_throat": 0.654869,
+        "safir_sibilant": 0.462308,
+        "idgham_sonorant": 0.013797
+      }
+    },
+    {
+      "surah": 90,
+      "name": "البلد",
+      "type": "meccan",
+      "letters": 342,
+      "densities": {
+        "core_emphatic": 0.020468,
+        "strict_throat": 0.052632,
+        "safir_sibilant": 0.038012,
+        "idgham_sonorant": 0.418129
+      },
+      "null_mean": {
+        "core_emphatic": 0.017836,
+        "strict_throat": 0.052413,
+        "safir_sibilant": 0.029464,
+        "idgham_sonorant": 0.4732
+      },
+      "z": {
+        "core_emphatic": 0.374,
+        "strict_throat": 0.018,
+        "safir_sibilant": 0.918,
+        "idgham_sonorant": -2.035
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.828634,
+        "strict_throat": 1.0,
+        "safir_sibilant": 0.426315,
+        "idgham_sonorant": 0.045791
+      }
+    },
+    {
+      "surah": 91,
+      "name": "الشمس",
+      "type": "meccan",
+      "letters": 252,
+      "densities": {
+        "core_emphatic": 0.015873,
+        "strict_throat": 0.043651,
+        "safir_sibilant": 0.035714,
+        "idgham_sonorant": 0.321429
+      },
+      "null_mean": {
+        "core_emphatic": 0.017895,
+        "strict_throat": 0.052582,
+        "safir_sibilant": 0.029298,
+        "idgham_sonorant": 0.473775
+      },
+      "z": {
+        "core_emphatic": -0.245,
+        "strict_throat": -0.642,
+        "safir_sibilant": 0.603,
+        "idgham_sonorant": -4.875
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.818036,
+        "strict_throat": 0.572086,
+        "safir_sibilant": 0.565087,
+        "idgham_sonorant": 0.0002
+      }
+    },
+    {
+      "surah": 92,
+      "name": "الليل",
+      "type": "meccan",
+      "letters": 313,
+      "densities": {
+        "core_emphatic": 0.015974,
+        "strict_throat": 0.057508,
+        "safir_sibilant": 0.051118,
+        "idgham_sonorant": 0.469649
+      },
+      "null_mean": {
+        "core_emphatic": 0.017784,
+        "strict_throat": 0.052356,
+        "safir_sibilant": 0.029409,
+        "idgham_sonorant": 0.47361
+      },
+      "z": {
+        "core_emphatic": -0.241,
+        "strict_throat": 0.404,
+        "safir_sibilant": 2.248,
+        "idgham_sonorant": -0.138
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.845231,
+        "strict_throat": 0.69886,
+        "safir_sibilant": 0.032194,
+        "idgham_sonorant": 0.916017
+      }
+    },
+    {
+      "surah": 93,
+      "name": "الضحى",
+      "type": "meccan",
+      "letters": 165,
+      "densities": {
+        "core_emphatic": 0.024242,
+        "strict_throat": 0.054545,
+        "safir_sibilant": 0.018182,
+        "idgham_sonorant": 0.454545
+      },
+      "null_mean": {
+        "core_emphatic": 0.017891,
+        "strict_throat": 0.052652,
+        "safir_sibilant": 0.029316,
+        "idgham_sonorant": 0.47313
+      },
+      "z": {
+        "core_emphatic": 0.615,
+        "strict_throat": 0.11,
+        "safir_sibilant": -0.86,
+        "idgham_sonorant": -0.484
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.553289,
+        "strict_throat": 1.0,
+        "safir_sibilant": 0.484103,
+        "idgham_sonorant": 0.630074
+      }
+    },
+    {
+      "surah": 94,
+      "name": "الشرح",
+      "type": "meccan",
+      "letters": 102,
+      "densities": {
+        "core_emphatic": 0.04902,
+        "strict_throat": 0.098039,
+        "safir_sibilant": 0.068627,
+        "idgham_sonorant": 0.392157
+      },
+      "null_mean": {
+        "core_emphatic": 0.017969,
+        "strict_throat": 0.052635,
+        "safir_sibilant": 0.029165,
+        "idgham_sonorant": 0.473961
+      },
+      "z": {
+        "core_emphatic": 2.391,
+        "strict_throat": 2.048,
+        "safir_sibilant": 2.385,
+        "idgham_sonorant": -1.644
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.033793,
+        "strict_throat": 0.04759,
+        "safir_sibilant": 0.028194,
+        "idgham_sonorant": 0.111778
+      }
+    },
+    {
+      "surah": 95,
+      "name": "التين",
+      "type": "meccan",
+      "letters": 162,
+      "densities": {
+        "core_emphatic": 0.012346,
+        "strict_throat": 0.049383,
+        "safir_sibilant": 0.049383,
+        "idgham_sonorant": 0.481481
+      },
+      "null_mean": {
+        "core_emphatic": 0.01781,
+        "strict_throat": 0.052636,
+        "safir_sibilant": 0.029198,
+        "idgham_sonorant": 0.473711
+      },
+      "z": {
+        "core_emphatic": -0.533,
+        "strict_throat": -0.186,
+        "safir_sibilant": 1.544,
+        "idgham_sonorant": 0.199
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.781444,
+        "strict_throat": 1.0,
+        "safir_sibilant": 0.146571,
+        "idgham_sonorant": 0.872026
+      }
+    },
+    {
+      "surah": 96,
+      "name": "العلق",
+      "type": "meccan",
+      "letters": 288,
+      "densities": {
+        "core_emphatic": 0.020833,
+        "strict_throat": 0.059028,
+        "safir_sibilant": 0.041667,
+        "idgham_sonorant": 0.4375
+      },
+      "null_mean": {
+        "core_emphatic": 0.017873,
+        "strict_throat": 0.052641,
+        "safir_sibilant": 0.029399,
+        "idgham_sonorant": 0.473792
+      },
+      "z": {
+        "core_emphatic": 0.378,
+        "strict_throat": 0.483,
+        "safir_sibilant": 1.23,
+        "idgham_sonorant": -1.236
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.813037,
+        "strict_throat": 0.683263,
+        "safir_sibilant": 0.220356,
+        "idgham_sonorant": 0.241152
+      }
+    },
+    {
+      "surah": 97,
+      "name": "القدر",
+      "type": "meccan",
+      "letters": 115,
+      "densities": {
+        "core_emphatic": 0.008696,
+        "strict_throat": 0.034783,
+        "safir_sibilant": 0.026087,
+        "idgham_sonorant": 0.495652
+      },
+      "null_mean": {
+        "core_emphatic": 0.017864,
+        "strict_throat": 0.05255,
+        "safir_sibilant": 0.029471,
+        "idgham_sonorant": 0.473123
+      },
+      "z": {
+        "core_emphatic": -0.737,
+        "strict_throat": -0.855,
+        "safir_sibilant": -0.215,
+        "idgham_sonorant": 0.483
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.547491,
+        "strict_throat": 0.421916,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.646071
+      }
+    },
+    {
+      "surah": 98,
+      "name": "البينة",
+      "type": "medinan",
+      "letters": 402,
+      "densities": {
+        "core_emphatic": 0.017413,
+        "strict_throat": 0.042289,
+        "safir_sibilant": 0.017413,
+        "idgham_sonorant": 0.470149
+      },
+      "null_mean": {
+        "core_emphatic": 0.018096,
+        "strict_throat": 0.052683,
+        "safir_sibilant": 0.029354,
+        "idgham_sonorant": 0.472775
+      },
+      "z": {
+        "core_emphatic": -0.103,
+        "strict_throat": -0.93,
+        "safir_sibilant": -1.409,
+        "idgham_sonorant": -0.105
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 0.374925,
+        "safir_sibilant": 0.179164,
+        "idgham_sonorant": 0.921416
+      }
+    },
+    {
+      "surah": 99,
+      "name": "الزلزلة",
+      "type": "medinan",
+      "letters": 158,
+      "densities": {
+        "core_emphatic": 0.018987,
+        "strict_throat": 0.050633,
+        "safir_sibilant": 0.044304,
+        "idgham_sonorant": 0.424051
+      },
+      "null_mean": {
+        "core_emphatic": 0.018223,
+        "strict_throat": 0.052223,
+        "safir_sibilant": 0.029495,
+        "idgham_sonorant": 0.473689
+      },
+      "z": {
+        "core_emphatic": 0.073,
+        "strict_throat": -0.088,
+        "safir_sibilant": 1.091,
+        "idgham_sonorant": -1.263
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 1.0,
+        "safir_sibilant": 0.344531,
+        "idgham_sonorant": 0.227954
+      }
+    },
+    {
+      "surah": 100,
+      "name": "العاديات",
+      "type": "meccan",
+      "letters": 169,
+      "densities": {
+        "core_emphatic": 0.029586,
+        "strict_throat": 0.08284,
+        "safir_sibilant": 0.029586,
+        "idgham_sonorant": 0.414201
+      },
+      "null_mean": {
+        "core_emphatic": 0.01803,
+        "strict_throat": 0.052219,
+        "safir_sibilant": 0.029564,
+        "idgham_sonorant": 0.472473
+      },
+      "z": {
+        "core_emphatic": 1.121,
+        "strict_throat": 1.807,
+        "safir_sibilant": 0.002,
+        "idgham_sonorant": -1.539
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.380324,
+        "strict_throat": 0.076385,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.122176
+      }
+    },
+    {
+      "surah": 101,
+      "name": "القارعة",
+      "type": "meccan",
+      "letters": 160,
+      "densities": {
+        "core_emphatic": 0.00625,
+        "strict_throat": 0.04375,
+        "safir_sibilant": 0.01875,
+        "idgham_sonorant": 0.425
+      },
+      "null_mean": {
+        "core_emphatic": 0.017811,
+        "strict_throat": 0.052076,
+        "safir_sibilant": 0.029434,
+        "idgham_sonorant": 0.472996
+      },
+      "z": {
+        "core_emphatic": -1.093,
+        "strict_throat": -0.476,
+        "safir_sibilant": -0.795,
+        "idgham_sonorant": -1.212
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.385723,
+        "strict_throat": 0.726455,
+        "safir_sibilant": 0.4999,
+        "idgham_sonorant": 0.236953
+      }
+    },
+    {
+      "surah": 102,
+      "name": "التكاثر",
+      "type": "meccan",
+      "letters": 123,
+      "densities": {
+        "core_emphatic": 0.0,
+        "strict_throat": 0.073171,
+        "safir_sibilant": 0.03252,
+        "idgham_sonorant": 0.544715
+      },
+      "null_mean": {
+        "core_emphatic": 0.017984,
+        "strict_throat": 0.052112,
+        "safir_sibilant": 0.029272,
+        "idgham_sonorant": 0.472649
+      },
+      "z": {
+        "core_emphatic": -1.504,
+        "strict_throat": 1.057,
+        "safir_sibilant": 0.218,
+        "idgham_sonorant": 1.591
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.181964,
+        "strict_throat": 0.294741,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.124775
+      }
+    },
+    {
+      "surah": 103,
+      "name": "العصر",
+      "type": "meccan",
+      "letters": 73,
+      "densities": {
+        "core_emphatic": 0.068493,
+        "strict_throat": 0.068493,
+        "safir_sibilant": 0.09589,
+        "idgham_sonorant": 0.438356
+      },
+      "null_mean": {
+        "core_emphatic": 0.01791,
+        "strict_throat": 0.052307,
+        "safir_sibilant": 0.029364,
+        "idgham_sonorant": 0.473167
+      },
+      "z": {
+        "core_emphatic": 3.239,
+        "strict_throat": 0.625,
+        "safir_sibilant": 3.354,
+        "idgham_sonorant": -0.601
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.010398,
+        "strict_throat": 0.586883,
+        "safir_sibilant": 0.005199,
+        "idgham_sonorant": 0.561888
+      }
+    },
+    {
+      "surah": 104,
+      "name": "الهمزة",
+      "type": "meccan",
+      "letters": 134,
+      "densities": {
+        "core_emphatic": 0.029851,
+        "strict_throat": 0.074627,
+        "safir_sibilant": 0.029851,
+        "idgham_sonorant": 0.425373
+      },
+      "null_mean": {
+        "core_emphatic": 0.017664,
+        "strict_throat": 0.052284,
+        "safir_sibilant": 0.029016,
+        "idgham_sonorant": 0.473713
+      },
+      "z": {
+        "core_emphatic": 1.071,
+        "strict_throat": 1.151,
+        "safir_sibilant": 0.059,
+        "idgham_sonorant": -1.122
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.306539,
+        "strict_throat": 0.334133,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.30214
+      }
+    },
+    {
+      "surah": 105,
+      "name": "الفيل",
+      "type": "meccan",
+      "letters": 97,
+      "densities": {
+        "core_emphatic": 0.041237,
+        "strict_throat": 0.072165,
+        "safir_sibilant": 0.041237,
+        "idgham_sonorant": 0.443299
+      },
+      "null_mean": {
+        "core_emphatic": 0.017744,
+        "strict_throat": 0.052247,
+        "safir_sibilant": 0.029441,
+        "idgham_sonorant": 0.471835
+      },
+      "z": {
+        "core_emphatic": 1.773,
+        "strict_throat": 0.868,
+        "safir_sibilant": 0.688,
+        "idgham_sonorant": -0.565
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.091982,
+        "strict_throat": 0.489902,
+        "safir_sibilant": 0.543691,
+        "idgham_sonorant": 0.616677
+      }
+    },
+    {
+      "surah": 106,
+      "name": "قريش",
+      "type": "meccan",
+      "letters": 76,
+      "densities": {
+        "core_emphatic": 0.026316,
+        "strict_throat": 0.065789,
+        "safir_sibilant": 0.013158,
+        "idgham_sonorant": 0.447368
+      },
+      "null_mean": {
+        "core_emphatic": 0.017682,
+        "strict_throat": 0.052353,
+        "safir_sibilant": 0.029703,
+        "idgham_sonorant": 0.473711
+      },
+      "z": {
+        "core_emphatic": 0.566,
+        "strict_throat": 0.535,
+        "safir_sibilant": -0.85,
+        "idgham_sonorant": -0.469
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.65147,
+        "strict_throat": 0.588482,
+        "safir_sibilant": 0.526295,
+        "idgham_sonorant": 0.722256
+      }
+    },
+    {
+      "surah": 107,
+      "name": "الماعون",
+      "type": "meccan",
+      "letters": 113,
+      "densities": {
+        "core_emphatic": 0.035398,
+        "strict_throat": 0.061947,
+        "safir_sibilant": 0.035398,
+        "idgham_sonorant": 0.548673
+      },
+      "null_mean": {
+        "core_emphatic": 0.017777,
+        "strict_throat": 0.052908,
+        "safir_sibilant": 0.029037,
+        "idgham_sonorant": 0.473097
+      },
+      "z": {
+        "core_emphatic": 1.437,
+        "strict_throat": 0.436,
+        "safir_sibilant": 0.408,
+        "idgham_sonorant": 1.607
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.260948,
+        "strict_throat": 0.679064,
+        "safir_sibilant": 0.779044,
+        "idgham_sonorant": 0.127774
+      }
+    },
+    {
+      "surah": 108,
+      "name": "الكوثر",
+      "type": "meccan",
+      "letters": 43,
+      "densities": {
+        "core_emphatic": 0.046512,
+        "strict_throat": 0.046512,
+        "safir_sibilant": 0.023256,
+        "idgham_sonorant": 0.418605
+      },
+      "null_mean": {
+        "core_emphatic": 0.018028,
+        "strict_throat": 0.052809,
+        "safir_sibilant": 0.029153,
+        "idgham_sonorant": 0.472777
+      },
+      "z": {
+        "core_emphatic": 1.391,
+        "strict_throat": -0.183,
+        "safir_sibilant": -0.232,
+        "idgham_sonorant": -0.706
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.183963,
+        "strict_throat": 1.0,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.538692
+      }
+    },
+    {
+      "surah": 109,
+      "name": "الكافرون",
+      "type": "meccan",
+      "letters": 99,
+      "densities": {
+        "core_emphatic": 0.0,
+        "strict_throat": 0.080808,
+        "safir_sibilant": 0.0,
+        "idgham_sonorant": 0.40404
+      },
+      "null_mean": {
+        "core_emphatic": 0.017887,
+        "strict_throat": 0.052487,
+        "safir_sibilant": 0.029796,
+        "idgham_sonorant": 0.472869
+      },
+      "z": {
+        "core_emphatic": -1.347,
+        "strict_throat": 1.262,
+        "safir_sibilant": -1.757,
+        "idgham_sonorant": -1.383
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.267746,
+        "strict_throat": 0.257948,
+        "safir_sibilant": 0.124175,
+        "idgham_sonorant": 0.185163
+      }
+    },
+    {
+      "surah": 110,
+      "name": "النصر",
+      "type": "medinan",
+      "letters": 79,
+      "densities": {
+        "core_emphatic": 0.012658,
+        "strict_throat": 0.063291,
+        "safir_sibilant": 0.050633,
+        "idgham_sonorant": 0.35443
+      },
+      "null_mean": {
+        "core_emphatic": 0.017997,
+        "strict_throat": 0.052149,
+        "safir_sibilant": 0.029565,
+        "idgham_sonorant": 0.473985
+      },
+      "z": {
+        "core_emphatic": -0.353,
+        "strict_throat": 0.449,
+        "safir_sibilant": 1.098,
+        "idgham_sonorant": -2.123
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 0.785643,
+        "safir_sibilant": 0.304739,
+        "idgham_sonorant": 0.046391
+      }
+    },
+    {
+      "surah": 111,
+      "name": "المسد",
+      "type": "meccan",
+      "letters": 81,
+      "densities": {
+        "core_emphatic": 0.024691,
+        "strict_throat": 0.061728,
+        "safir_sibilant": 0.049383,
+        "idgham_sonorant": 0.37037
+      },
+      "null_mean": {
+        "core_emphatic": 0.017879,
+        "strict_throat": 0.053094,
+        "safir_sibilant": 0.029331,
+        "idgham_sonorant": 0.472785
+      },
+      "z": {
+        "core_emphatic": 0.471,
+        "strict_throat": 0.341,
+        "safir_sibilant": 1.062,
+        "idgham_sonorant": -1.826
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.646671,
+        "strict_throat": 0.795441,
+        "safir_sibilant": 0.30194,
+        "idgham_sonorant": 0.079184
+      }
+    },
+    {
+      "surah": 112,
+      "name": "الإخلاص",
+      "type": "meccan",
+      "letters": 47,
+      "densities": {
+        "core_emphatic": 0.021277,
+        "strict_throat": 0.042553,
+        "safir_sibilant": 0.021277,
+        "idgham_sonorant": 0.531915
+      },
+      "null_mean": {
+        "core_emphatic": 0.018306,
+        "strict_throat": 0.053226,
+        "safir_sibilant": 0.029838,
+        "idgham_sonorant": 0.473545
+      },
+      "z": {
+        "core_emphatic": 0.151,
+        "strict_throat": -0.326,
+        "safir_sibilant": -0.35,
+        "idgham_sonorant": 0.801
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 1.0,
+        "safir_sibilant": 1.0,
+        "idgham_sonorant": 0.461508
+      }
+    },
+    {
+      "surah": 113,
+      "name": "الفلق",
+      "type": "meccan",
+      "letters": 73,
+      "densities": {
+        "core_emphatic": 0.0,
+        "strict_throat": 0.082192,
+        "safir_sibilant": 0.041096,
+        "idgham_sonorant": 0.369863
+      },
+      "null_mean": {
+        "core_emphatic": 0.017995,
+        "strict_throat": 0.052268,
+        "safir_sibilant": 0.029186,
+        "idgham_sonorant": 0.474937
+      },
+      "z": {
+        "core_emphatic": -1.162,
+        "strict_throat": 1.147,
+        "safir_sibilant": 0.599,
+        "idgham_sonorant": -1.807
+      },
+      "p_two_sided": {
+        "core_emphatic": 0.407518,
+        "strict_throat": 0.281544,
+        "safir_sibilant": 0.732254,
+        "idgham_sonorant": 0.076785
+      }
+    },
+    {
+      "surah": 114,
+      "name": "الناس",
+      "type": "meccan",
+      "letters": 80,
+      "densities": {
+        "core_emphatic": 0.0125,
+        "strict_throat": 0.025,
+        "safir_sibilant": 0.1375,
+        "idgham_sonorant": 0.4625
+      },
+      "null_mean": {
+        "core_emphatic": 0.017505,
+        "strict_throat": 0.052508,
+        "safir_sibilant": 0.02866,
+        "idgham_sonorant": 0.472878
+      },
+      "z": {
+        "core_emphatic": -0.343,
+        "strict_throat": -1.104,
+        "safir_sibilant": 5.884,
+        "idgham_sonorant": -0.183
+      },
+      "p_two_sided": {
+        "core_emphatic": 1.0,
+        "strict_throat": 0.321936,
+        "safir_sibilant": 0.0002,
+        "idgham_sonorant": 0.911618
+      }
+    }
+  ],
+  "mw5": {
+    "description": "Synthetic planted four-block control with deterministic category boosts transferred from other-mass.",
+    "pass_rule": "omnibus PASS and at least 3/4 class cells PASS at alpha_bon=0.01",
+    "global_density": {
+      "core_emphatic": 0.035111,
+      "strict_throat": 0.069766,
+      "safir_sibilant": 0.04754,
+      "idgham_sonorant": 0.492652
+    },
+    "cells": {
+      "omnibus_l2": {
+        "observed": 0.055027,
+        "null_mean": 0.022529,
+        "null_sd": 0.001275,
+        "null_q95": 0.024682,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      },
+      "core_emphatic_mad": {
+        "observed": 0.019996,
+        "null_mean": 0.005806,
+        "null_sd": 0.000519,
+        "null_q95": 0.006664,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      },
+      "strict_throat_mad": {
+        "observed": 0.023917,
+        "null_mean": 0.008022,
+        "null_sd": 0.000726,
+        "null_q95": 0.009287,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      },
+      "safir_sibilant_mad": {
+        "observed": 0.020355,
+        "null_mean": 0.006729,
+        "null_sd": 0.000629,
+        "null_q95": 0.007829,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      },
+      "idgham_sonorant_mad": {
+        "observed": 0.029319,
+        "null_mean": 0.01581,
+        "null_sd": 0.00142,
+        "null_q95": 0.018244,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "verdict": "PASS-DIRECTED"
+}

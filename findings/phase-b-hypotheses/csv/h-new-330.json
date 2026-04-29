@@ -1,0 +1,39 @@
+{
+  "id": "H-NEW-330",
+  "prereg_sha": "dbbc9b6b36e9898361ea9016999f55a935989c6506dc0767e19897af0cb62c93",
+  "seed": 20260429,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "cell_A_hamidat": {
+    "d_obs": 0.9902174,
+    "null_mean": 0.9232451390899999,
+    "p_less": 0.7514,
+    "pct_2_5": 0.6752109,
+    "pct_97_5": 1.0724732,
+    "pass": false,
+    "subset": [
+      1,
+      6,
+      18,
+      34,
+      35
+    ]
+  },
+  "cell_B_mw5_hawamim": {
+    "d_obs": 0.872261,
+    "null_mean": 0.92312500676,
+    "p_less": 0.2434,
+    "pct_2_5": 0.6686297,
+    "pct_97_5": 1.0748545,
+    "pass": false,
+    "subset": [
+      40,
+      41,
+      43,
+      44,
+      45
+    ]
+  },
+  "verdict": "NULL (\u1e25\u0101mid\u0101t not content-cohesive; MW-5 also fails \u2014 pipeline may be suspect)"
+}

@@ -1,0 +1,296 @@
+{
+  "finding_id": "h-new-127-2",
+  "title": "H-NEW-127.2 rerun: alternate OQ-20 family with geometric MW control",
+  "pre_reg_sha256": "d5fef06982648aa8a4cf35c470c67d9f34aae3b61597692b73736e25482f73a1",
+  "seed": 20260418,
+  "date": "2026-04-18",
+  "parent_finding": "h-new-127",
+  "audit_backdrop": "h-new-127-1",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, mushaf verse order, Hafs-Kufan, K=300 top global roots, Dirichlet alpha=0.5, Fisher-Rao angular distance; all five surahs use uniform full-verse permutation null)",
+  "locked_params": {
+    "K_top_roots": 300,
+    "dirichlet_alpha": 0.5,
+    "permutations": 10000,
+    "distance": "Fisher-Rao angular = 2·arccos(Σ sqrt(p_i·p_j))",
+    "length_control": "L1-normalized probability vectors (MW-1)",
+    "bonferroni_k": 5,
+    "alpha_bon": 0.01,
+    "locked_surahs": [
+      1,
+      18,
+      28,
+      78,
+      112
+    ]
+  },
+  "corpus_stats": {
+    "total_stem_root_tokens": 49968,
+    "global_distinct_roots": 1642,
+    "top_K_coverage_fraction": 0.834634
+  },
+  "per_surah": {
+    "1": {
+      "n_verses": 7,
+      "null_model": "uniform_full_verse_permutation",
+      "L_canon": 1.161789,
+      "null_mean": 1.218288,
+      "null_sd": 0.056468,
+      "null_min": 1.060488,
+      "null_max": 1.317194,
+      "null_quantiles": {
+        "q001": 1.076481,
+        "q005": 1.079311,
+        "q01": 1.082302,
+        "q025": 1.098328,
+        "q05": 1.113968,
+        "q25": 1.179094,
+        "q50": 1.230645,
+        "q75": 1.260024,
+        "q95": 1.297511
+      },
+      "z_score": -1.00055,
+      "n_perms_le_canon": 2047,
+      "p_value_one_sided_lower": 0.20478,
+      "alpha_bon": 0.01,
+      "pass": false,
+      "L_greedy_best": 1.076481,
+      "L_2opt_best": 1.076481,
+      "ratio_canon_over_2opt": 1.079247,
+      "D_stats": {
+        "min": 0.11766,
+        "max": 0.248354,
+        "mean": 0.202957,
+        "n_pairs": 21
+      },
+      "control_values": {
+        "greedy_best_shorter_than_canon": true,
+        "two_opt_best_shorter_than_canon": true
+      },
+      "instrument_check": {
+        "refrain_positions_match_h_new_83": null,
+        "refrain_positions": null,
+        "n_refrain": null,
+        "n_non_refrain": null
+      }
+    },
+    "18": {
+      "n_verses": 110,
+      "null_model": "uniform_full_verse_permutation",
+      "L_canon": 32.416877,
+      "null_mean": 33.43629,
+      "null_sd": 0.211122,
+      "null_min": 32.531555,
+      "null_max": 34.193452,
+      "null_quantiles": {
+        "q001": 32.76444,
+        "q005": 32.863325,
+        "q01": 32.919824,
+        "q025": 33.004248,
+        "q05": 33.084373,
+        "q25": 33.298997,
+        "q50": 33.440383,
+        "q75": 33.582768,
+        "q95": 33.770468
+      },
+      "z_score": -4.828546,
+      "n_perms_le_canon": 0,
+      "p_value_one_sided_lower": 0.0001,
+      "alpha_bon": 0.01,
+      "pass": true,
+      "L_greedy_best": 27.620872,
+      "L_2opt_best": 26.817875,
+      "ratio_canon_over_2opt": 1.208779,
+      "D_stats": {
+        "min": 0.0,
+        "max": 0.564721,
+        "mean": 0.306724,
+        "n_pairs": 5995
+      },
+      "control_values": {
+        "greedy_best_shorter_than_canon": true,
+        "two_opt_best_shorter_than_canon": true
+      },
+      "instrument_check": {
+        "refrain_positions_match_h_new_83": null,
+        "refrain_positions": null,
+        "n_refrain": null,
+        "n_non_refrain": null
+      }
+    },
+    "28": {
+      "n_verses": 88,
+      "null_model": "uniform_full_verse_permutation",
+      "L_canon": 27.251392,
+      "null_mean": 28.674068,
+      "null_sd": 0.190346,
+      "null_min": 27.849973,
+      "null_max": 29.296986,
+      "null_quantiles": {
+        "q001": 28.005188,
+        "q005": 28.148488,
+        "q01": 28.203146,
+        "q025": 28.279651,
+        "q05": 28.351327,
+        "q25": 28.550636,
+        "q50": 28.680717,
+        "q75": 28.80149,
+        "q95": 28.979591
+      },
+      "z_score": -7.474145,
+      "n_perms_le_canon": 0,
+      "p_value_one_sided_lower": 0.0001,
+      "alpha_bon": 0.01,
+      "pass": true,
+      "L_greedy_best": 24.390358,
+      "L_2opt_best": 23.666976,
+      "ratio_canon_over_2opt": 1.151452,
+      "D_stats": {
+        "min": 0.0,
+        "max": 0.5066,
+        "mean": 0.329595,
+        "n_pairs": 3828
+      },
+      "control_values": {
+        "greedy_best_shorter_than_canon": true,
+        "two_opt_best_shorter_than_canon": true
+      },
+      "instrument_check": {
+        "refrain_positions_match_h_new_83": null,
+        "refrain_positions": null,
+        "n_refrain": null,
+        "n_non_refrain": null
+      }
+    },
+    "78": {
+      "n_verses": 40,
+      "null_model": "uniform_full_verse_permutation",
+      "L_canon": 5.738927,
+      "null_mean": 6.433836,
+      "null_sd": 0.103936,
+      "null_min": 5.857766,
+      "null_max": 6.714091,
+      "null_quantiles": {
+        "q001": 6.073414,
+        "q005": 6.126391,
+        "q01": 6.160733,
+        "q025": 6.207738,
+        "q05": 6.250479,
+        "q25": 6.367583,
+        "q50": 6.442208,
+        "q75": 6.509165,
+        "q95": 6.588299
+      },
+      "z_score": -6.685926,
+      "n_perms_le_canon": 0,
+      "p_value_one_sided_lower": 0.0001,
+      "alpha_bon": 0.01,
+      "pass": true,
+      "L_greedy_best": 5.094744,
+      "L_2opt_best": 5.070426,
+      "ratio_canon_over_2opt": 1.131843,
+      "D_stats": {
+        "min": 0.0,
+        "max": 0.338004,
+        "mean": 0.164996,
+        "n_pairs": 780
+      },
+      "control_values": {
+        "greedy_best_shorter_than_canon": true,
+        "two_opt_best_shorter_than_canon": true
+      },
+      "instrument_check": {
+        "refrain_positions_match_h_new_83": null,
+        "refrain_positions": null,
+        "n_refrain": null,
+        "n_non_refrain": null
+      }
+    },
+    "112": {
+      "n_verses": 4,
+      "null_model": "uniform_full_verse_permutation",
+      "L_canon": 0.46803,
+      "null_mean": 0.480444,
+      "null_sd": 0.031545,
+      "null_min": 0.428105,
+      "null_max": 0.533348,
+      "null_quantiles": {
+        "q001": 0.428105,
+        "q005": 0.428105,
+        "q01": 0.428105,
+        "q025": 0.428105,
+        "q05": 0.428105,
+        "q25": 0.448623,
+        "q50": 0.46803,
+        "q75": 0.51283,
+        "q95": 0.533348
+      },
+      "z_score": -0.393525,
+      "n_perms_le_canon": 5053,
+      "p_value_one_sided_lower": 0.505349,
+      "alpha_bon": 0.01,
+      "pass": false,
+      "L_greedy_best": 0.428105,
+      "L_2opt_best": 0.428105,
+      "ratio_canon_over_2opt": 1.093261,
+      "D_stats": {
+        "min": 0.118042,
+        "max": 0.202767,
+        "mean": 0.160242,
+        "n_pairs": 6
+      },
+      "control_values": {
+        "greedy_best_shorter_than_canon": true,
+        "two_opt_best_shorter_than_canon": true
+      },
+      "instrument_check": {
+        "refrain_positions_match_h_new_83": null,
+        "refrain_positions": null,
+        "n_refrain": null,
+        "n_non_refrain": null
+      }
+    }
+  },
+  "mw_controls": {
+    "control_bank_pass": true,
+    "control_definition": "For each locked surah, both the best greedy-NN path and its 2-opt refinement must be shorter than canonical verse order.",
+    "per_surah": {
+      "1": {
+        "greedy_pass": true,
+        "two_opt_pass": true,
+        "L_greedy_best": 1.076481,
+        "L_2opt_best": 1.076481
+      },
+      "18": {
+        "greedy_pass": true,
+        "two_opt_pass": true,
+        "L_greedy_best": 27.620872,
+        "L_2opt_best": 26.817875
+      },
+      "28": {
+        "greedy_pass": true,
+        "two_opt_pass": true,
+        "L_greedy_best": 24.390358,
+        "L_2opt_best": 23.666976
+      },
+      "78": {
+        "greedy_pass": true,
+        "two_opt_pass": true,
+        "L_greedy_best": 5.094744,
+        "L_2opt_best": 5.070426
+      },
+      "112": {
+        "greedy_pass": true,
+        "two_opt_pass": true,
+        "L_greedy_best": 0.428105,
+        "L_2opt_best": 0.428105
+      }
+    }
+  },
+  "family_verdict": {
+    "n_pass": 3,
+    "n_tests": 5,
+    "alpha_bon": 0.01,
+    "verdict": "POSITIVE",
+    "pass_criterion": "n_pass >= 3 and MW controls pass"
+  }
+}

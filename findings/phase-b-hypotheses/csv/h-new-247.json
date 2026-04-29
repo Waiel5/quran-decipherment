@@ -1,0 +1,824 @@
+{
+  "finding_id": "h-new-247",
+  "title": "Palindromic surah-pair symmetry test (k paired with 115-k)",
+  "parent_finding": "cross-finding-013",
+  "sibling_context": [
+    "h-new-204",
+    "h-new-158"
+  ],
+  "date": "2026-04-17",
+  "seed": 20260419,
+  "n_perms": 1000,
+  "bonferroni_k": 4,
+  "alpha": 0.05,
+  "alpha_bon": 0.0125,
+  "rules_tuple": "(no-tashkeel, 114 surahs, 57 pairs {(k,115-k)}, QAC-STEM K=500 via H-NEW-111, Hafs-Kufan)",
+  "prereg_sha256": "721e241bd0eb33480594f6732ae051af44b1c50a577a94b3f9e28864ab3c2b2a",
+  "parent_h_new_111_sha256": "4c366c414b82b0d0f3bcd06b68a7b5a87b500cf925b5088704a36c355d7f33fc",
+  "palindromic_pairs": [
+    [
+      1,
+      114
+    ],
+    [
+      2,
+      113
+    ],
+    [
+      3,
+      112
+    ],
+    [
+      4,
+      111
+    ],
+    [
+      5,
+      110
+    ],
+    [
+      6,
+      109
+    ],
+    [
+      7,
+      108
+    ],
+    [
+      8,
+      107
+    ],
+    [
+      9,
+      106
+    ],
+    [
+      10,
+      105
+    ],
+    [
+      11,
+      104
+    ],
+    [
+      12,
+      103
+    ],
+    [
+      13,
+      102
+    ],
+    [
+      14,
+      101
+    ],
+    [
+      15,
+      100
+    ],
+    [
+      16,
+      99
+    ],
+    [
+      17,
+      98
+    ],
+    [
+      18,
+      97
+    ],
+    [
+      19,
+      96
+    ],
+    [
+      20,
+      95
+    ],
+    [
+      21,
+      94
+    ],
+    [
+      22,
+      93
+    ],
+    [
+      23,
+      92
+    ],
+    [
+      24,
+      91
+    ],
+    [
+      25,
+      90
+    ],
+    [
+      26,
+      89
+    ],
+    [
+      27,
+      88
+    ],
+    [
+      28,
+      87
+    ],
+    [
+      29,
+      86
+    ],
+    [
+      30,
+      85
+    ],
+    [
+      31,
+      84
+    ],
+    [
+      32,
+      83
+    ],
+    [
+      33,
+      82
+    ],
+    [
+      34,
+      81
+    ],
+    [
+      35,
+      80
+    ],
+    [
+      36,
+      79
+    ],
+    [
+      37,
+      78
+    ],
+    [
+      38,
+      77
+    ],
+    [
+      39,
+      76
+    ],
+    [
+      40,
+      75
+    ],
+    [
+      41,
+      74
+    ],
+    [
+      42,
+      73
+    ],
+    [
+      43,
+      72
+    ],
+    [
+      44,
+      71
+    ],
+    [
+      45,
+      70
+    ],
+    [
+      46,
+      69
+    ],
+    [
+      47,
+      68
+    ],
+    [
+      48,
+      67
+    ],
+    [
+      49,
+      66
+    ],
+    [
+      50,
+      65
+    ],
+    [
+      51,
+      64
+    ],
+    [
+      52,
+      63
+    ],
+    [
+      53,
+      62
+    ],
+    [
+      54,
+      61
+    ],
+    [
+      55,
+      60
+    ],
+    [
+      56,
+      59
+    ],
+    [
+      57,
+      58
+    ]
+  ],
+  "muqattaat_surahs": [
+    2,
+    3,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    19,
+    20,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    36,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    50,
+    68
+  ],
+  "cells": {
+    "a_fisher_rao_mean_distance": {
+      "description": "Mean FR distance over 57 palindromic pairs (one-sided lower)",
+      "observed": 1.0466671578947369,
+      "null_mean": 0.9231418846491228,
+      "null_sd": 0.019343490614842043,
+      "null_min": 0.8612776140350877,
+      "null_max": 0.9827025087719299,
+      "z": 6.385883277490489,
+      "p_perm_one_sided_lower": 1.0,
+      "pass": false,
+      "verdict": "NULL"
+    },
+    "b_shared_top50_roots": {
+      "description": "Mean |top50(i) ∩ top50(j)| over 57 pairs (one-sided upper)",
+      "observed": 8.719298245614034,
+      "null_mean": 10.999561403508771,
+      "null_sd": 0.45266629715793605,
+      "null_min": 9.43859649122807,
+      "null_max": 12.631578947368421,
+      "z": -5.03740431353375,
+      "p_perm_one_sided_upper": 1.0,
+      "pass": false,
+      "verdict": "NULL"
+    },
+    "c_muq_concordance_count": {
+      "description": "Count of 57 pairs where muq-status concords (one-sided upper)",
+      "observed": 28,
+      "null_mean": 35.424,
+      "null_sd": 2.840473955573663,
+      "null_min": 28,
+      "null_max": 50,
+      "z": -2.6136483263408925,
+      "p_perm_one_sided_upper": 1.0,
+      "pass": false,
+      "verdict": "NULL"
+    },
+    "d_length_log_spearman": {
+      "description": "Spearman rho between log n_v(k) and log n_v(115-k), k=1..57 (one-sided upper)",
+      "observed": -0.46549983199612127,
+      "null_mean": 0.0003787037958630772,
+      "null_sd": 0.1323304676596612,
+      "null_min": -0.4037354704489682,
+      "null_max": 0.409755023857493,
+      "z": -3.520568951589974,
+      "p_perm_one_sided_upper": 1.0,
+      "pass": false,
+      "verdict": "NULL"
+    }
+  },
+  "n_cells_pass": 0,
+  "top5_palindromic_pairs_by_fr_proximity": [
+    {
+      "i": 1,
+      "j": 114,
+      "d_fr": 0.38837
+    },
+    {
+      "i": 49,
+      "j": 66,
+      "d_fr": 0.811102
+    },
+    {
+      "i": 32,
+      "j": 83,
+      "d_fr": 0.822348
+    },
+    {
+      "i": 52,
+      "j": 63,
+      "d_fr": 0.840293
+    },
+    {
+      "i": 53,
+      "j": 62,
+      "d_fr": 0.844698
+    }
+  ],
+  "bottom5_palindromic_pairs_by_fr_proximity": [
+    {
+      "i": 2,
+      "j": 113,
+      "d_fr": 1.24429
+    },
+    {
+      "i": 55,
+      "j": 60,
+      "d_fr": 1.246927
+    },
+    {
+      "i": 6,
+      "j": 109,
+      "d_fr": 1.253987
+    },
+    {
+      "i": 9,
+      "j": 106,
+      "d_fr": 1.285236
+    },
+    {
+      "i": 4,
+      "j": 111,
+      "d_fr": 1.285827
+    }
+  ],
+  "top5_palindromic_pairs_by_shared_roots": [
+    {
+      "i": 44,
+      "j": 71,
+      "shared": 22
+    },
+    {
+      "i": 41,
+      "j": 74,
+      "shared": 18
+    },
+    {
+      "i": 48,
+      "j": 67,
+      "shared": 17
+    },
+    {
+      "i": 49,
+      "j": 66,
+      "shared": 17
+    },
+    {
+      "i": 51,
+      "j": 64,
+      "shared": 17
+    }
+  ],
+  "muq_status_of_pairs": [
+    {
+      "i": 1,
+      "j": 114,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 2,
+      "j": 113,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 3,
+      "j": 112,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 4,
+      "j": 111,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 5,
+      "j": 110,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 6,
+      "j": 109,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 7,
+      "j": 108,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 8,
+      "j": 107,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 9,
+      "j": 106,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 10,
+      "j": 105,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 11,
+      "j": 104,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 12,
+      "j": 103,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 13,
+      "j": 102,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 14,
+      "j": 101,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 15,
+      "j": 100,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 16,
+      "j": 99,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 17,
+      "j": 98,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 18,
+      "j": 97,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 19,
+      "j": 96,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 20,
+      "j": 95,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 21,
+      "j": 94,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 22,
+      "j": 93,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 23,
+      "j": 92,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 24,
+      "j": 91,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 25,
+      "j": 90,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 26,
+      "j": 89,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 27,
+      "j": 88,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 28,
+      "j": 87,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 29,
+      "j": 86,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 30,
+      "j": 85,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 31,
+      "j": 84,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 32,
+      "j": 83,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 33,
+      "j": 82,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 34,
+      "j": 81,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 35,
+      "j": 80,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 36,
+      "j": 79,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 37,
+      "j": 78,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 38,
+      "j": 77,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 39,
+      "j": 76,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 40,
+      "j": 75,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 41,
+      "j": 74,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 42,
+      "j": 73,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 43,
+      "j": 72,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 44,
+      "j": 71,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 45,
+      "j": 70,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 46,
+      "j": 69,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 47,
+      "j": 68,
+      "i_muq": false,
+      "j_muq": true,
+      "concord": false
+    },
+    {
+      "i": 48,
+      "j": 67,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 49,
+      "j": 66,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 50,
+      "j": 65,
+      "i_muq": true,
+      "j_muq": false,
+      "concord": false
+    },
+    {
+      "i": 51,
+      "j": 64,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 52,
+      "j": 63,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 53,
+      "j": 62,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 54,
+      "j": 61,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 55,
+      "j": 60,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 56,
+      "j": 59,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    },
+    {
+      "i": 57,
+      "j": 58,
+      "i_muq": false,
+      "j_muq": false,
+      "concord": true
+    }
+  ],
+  "leave_q1_out_sensitivity": {
+    "description": "Drop pair (1,114) and recompute observed stats; if all observed stats move materially toward null, (1,114) is driving the signal.",
+    "obs_a_without_q1": 1.0584224642857143,
+    "obs_b_without_q1": 8.821428571428571,
+    "obs_c_without_q1": 27,
+    "obs_d_without_q1": -0.5145607023302297
+  },
+  "mw5_control_random_draw_z_mean": {
+    "cell_a": -1.5689364412686813e-15,
+    "note": "Should be ~0 by construction; any drift indicates bug."
+  },
+  "verdict_overall": "NULL (palindromic pairing is not structural; consistent with H-NEW-204)"
+}

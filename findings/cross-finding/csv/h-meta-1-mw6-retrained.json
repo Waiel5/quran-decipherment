@@ -1,0 +1,101 @@
+{
+  "seed": 20260413,
+  "task_id": 132,
+  "option": "A",
+  "parent_finding": "mw6-reliability-moderator",
+  "pre_registration": "findings/cross-finding/h-meta-1-mw6-prereg.md",
+  "corpus": "findings/phase-c-structures/h-meta-1-corpus-120.tsv",
+  "N": 120,
+  "P_baseline": 38,
+  "P_with_mw6": 52,
+  "P_delta": 14,
+  "mw6_tier_levels": [
+    "PENDING",
+    "SECONDARY",
+    "SECONDARY-TRIANGULATED",
+    "UNTAGGED",
+    "VERIFIED"
+  ],
+  "mw6_tier_counts": {
+    "PENDING": 5,
+    "SECONDARY-TRIANGULATED": 2,
+    "VERIFIED": 19,
+    "SECONDARY": 39,
+    "UNTAGGED": 55
+  },
+  "class_balance": {
+    "CONFIRMED": 77,
+    "REFUTED": 43
+  },
+  "baseline_lr_l1_accuracy": 0.7819855072463768,
+  "p1_threshold": 0.7919855072463768,
+  "lr_l1": {
+    "mean_acc": 0.7819855072463768,
+    "fold_accs": [
+      0.8,
+      0.84,
+      0.7916666666666666,
+      0.782608695652174,
+      0.6956521739130435
+    ],
+    "null_mean": 0.6418048985507246,
+    "null_975pct": 0.6418695652173912,
+    "null_95pct": 0.6418695652173912,
+    "p_empirical": 0.0,
+    "significant_alpha0025": true,
+    "lam": 0.05,
+    "delta_vs_baseline": 0.0,
+    "p1_hit": false
+  },
+  "tree_d3": {
+    "mean_acc": 0.6926231884057972,
+    "fold_accs": [
+      0.76,
+      0.56,
+      0.7083333333333334,
+      0.782608695652174,
+      0.6521739130434783
+    ],
+    "null_mean": 0.5861882028985507,
+    "null_975pct": 0.6759565217391305,
+    "null_95pct": 0.6592608695652175,
+    "p_empirical": 0.014,
+    "significant_alpha0025": true
+  },
+  "mw6_tier_coefficients": {
+    "mw6_tier=PENDING": 0.0,
+    "mw6_tier=SECONDARY": 0.0,
+    "mw6_tier=SECONDARY-TRIANGULATED": 0.0,
+    "mw6_tier=UNTAGGED": 0.0,
+    "mw6_tier=VERIFIED": 0.0
+  },
+  "p2_evaluation": {
+    "verified_coefficient": 0.0,
+    "result": "MISS-zero (L1 absorbed; collinear with substance_type or specificity)"
+  },
+  "decision_matrix_cell": "P1=MISS, P2=MISS(zero) \u2192 BOOKKEEPING-ONLY",
+  "top_lr_features": [
+    {
+      "feature": "school=modern",
+      "weight": -1.160276876435836
+    },
+    {
+      "feature": "specificity",
+      "weight": 0.1724358102125857
+    },
+    {
+      "feature": "era=classical-medieval",
+      "weight": 0.07214725126372368
+    }
+  ],
+  "bonferroni": {
+    "k": 2,
+    "alpha_family": 0.05,
+    "alpha_bon": 0.025
+  },
+  "acceptance_rule": {
+    "pass_threshold": 0.7,
+    "no_signature_floor": 0.6
+  },
+  "verdict_within_option_a": "PASS"
+}

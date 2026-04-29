@@ -1,0 +1,902 @@
+{
+  "finding_id": "h-new-132",
+  "title": "Q7 Al-A'raf vs Q11 Hud prophet-cycle parallelism",
+  "date": "2026-04-18",
+  "seed": 20260418,
+  "pre_reg_path": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-132-prophet-cycle-parallelism-prereg.md",
+  "pre_reg_sha256": "f97d3f72eb620c0e30b43744351644b8b978820c6f06d104850d07a12171e4d6",
+  "rules_tuple": "(QAC-v0.4 morphology roots; POS!=PN for primary/secondary, POS=PN lemmas for positive control; Hafs-Kufan verse numbering; basmala counted only in Surah 1; Fisher-Rao arccos-Bhattacharyya on L1-normalized window distributions; exact 5! assignment null)",
+  "bonferroni_k": 2,
+  "bonferroni_family": "h-new-132-q7-q11-prophet-cycle",
+  "alpha_bon": 0.025,
+  "dirichlet_alpha": 0.5,
+  "labels": [
+    "Noah",
+    "Hud",
+    "Salih",
+    "Lot",
+    "Shuayb"
+  ],
+  "windows": [
+    {
+      "prophet": "Noah",
+      "q7": {
+        "surah": 7,
+        "start": 59,
+        "end": 64,
+        "verse_count": 6,
+        "root_token_count": 47,
+        "unique_roots": 33,
+        "top_roots": [
+          [
+            "qwm",
+            5
+          ],
+          [
+            "rsl",
+            3
+          ],
+          [
+            "qwl",
+            3
+          ],
+          [
+            "rbb",
+            3
+          ],
+          [
+            "Elm",
+            3
+          ],
+          [
+            "Dll",
+            2
+          ],
+          [
+            "k*b",
+            2
+          ],
+          [
+            "Ebd",
+            1
+          ],
+          [
+            "Alh",
+            1
+          ],
+          [
+            "gyr",
+            1
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "{ll~ah",
+            2
+          ],
+          [
+            "nuwH",
+            1
+          ]
+        ],
+        "opening_text": "لقد أرسلنا نوحا إلى قومه فقال يا قوم اعبدوا الله ما لكم من إله غيره إني أخاف عليكم عذاب يوم عظيم",
+        "closing_text": "فكذبوه فأنجيناه والذين معه في الفلك وأغرقنا الذين كذبوا بآياتنا ۚ إنهم كانوا قوما عمين"
+      },
+      "q11": {
+        "surah": 11,
+        "start": 25,
+        "end": 49,
+        "verse_count": 25,
+        "root_token_count": 242,
+        "unique_roots": 123,
+        "top_roots": [
+          [
+            "qwl",
+            21
+          ],
+          [
+            "qwm",
+            11
+          ],
+          [
+            "kwn",
+            10
+          ],
+          [
+            "rbb",
+            7
+          ],
+          [
+            "rAy",
+            6
+          ],
+          [
+            "Elm",
+            6
+          ],
+          [
+            "Aty",
+            5
+          ],
+          [
+            "Amn",
+            5
+          ],
+          [
+            "E*b",
+            4
+          ],
+          [
+            "rHm",
+            4
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "{ll~ah",
+            10
+          ],
+          [
+            "nuwH",
+            7
+          ],
+          [
+            "juwdiY~",
+            1
+          ]
+        ],
+        "opening_text": "ولقد أرسلنا نوحا إلى قومه إني لكم نذير مبين",
+        "closing_text": "تلك من أنباء الغيب نوحيها إليك ۖ ما كنت تعلمها أنت ولا قومك من قبل هذا ۖ فاصبر ۖ إن العاقبة للمتقين"
+      }
+    },
+    {
+      "prophet": "Hud",
+      "q7": {
+        "surah": 7,
+        "start": 65,
+        "end": 72,
+        "verse_count": 8,
+        "root_token_count": 77,
+        "unique_roots": 53,
+        "top_roots": [
+          [
+            "qwl",
+            5
+          ],
+          [
+            "qwm",
+            4
+          ],
+          [
+            "rbb",
+            4
+          ],
+          [
+            "Ebd",
+            3
+          ],
+          [
+            "*kr",
+            3
+          ],
+          [
+            "kwn",
+            3
+          ],
+          [
+            "sfh",
+            2
+          ],
+          [
+            "k*b",
+            2
+          ],
+          [
+            "rsl",
+            2
+          ],
+          [
+            "Amn",
+            2
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "{ll~ah",
+            4
+          ],
+          [
+            "EaAd2",
+            1
+          ],
+          [
+            "huwd",
+            1
+          ],
+          [
+            "nuwH",
+            1
+          ]
+        ],
+        "opening_text": "۞ وإلى عاد أخاهم هودا ۗ قال يا قوم اعبدوا الله ما لكم من إله غيره ۚ أفلا تتقون",
+        "closing_text": "فأنجيناه والذين معه برحمة منا وقطعنا دابر الذين كذبوا بآياتنا ۖ وما كانوا مؤمنين"
+      },
+      "q11": {
+        "surah": 11,
+        "start": 50,
+        "end": 60,
+        "verse_count": 11,
+        "root_token_count": 95,
+        "unique_roots": 62,
+        "top_roots": [
+          [
+            "rbb",
+            8
+          ],
+          [
+            "qwm",
+            7
+          ],
+          [
+            "qwl",
+            5
+          ],
+          [
+            "Alh",
+            3
+          ],
+          [
+            "rsl",
+            3
+          ],
+          [
+            "gyr",
+            2
+          ],
+          [
+            "Ajr",
+            2
+          ],
+          [
+            "qwy",
+            2
+          ],
+          [
+            "wly",
+            2
+          ],
+          [
+            "jyA",
+            2
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "EaAd2",
+            4
+          ],
+          [
+            "huwd",
+            4
+          ],
+          [
+            "{ll~ah",
+            3
+          ]
+        ],
+        "opening_text": "وإلى عاد أخاهم هودا ۚ قال يا قوم اعبدوا الله ما لكم من إله غيره ۖ إن أنتم إلا مفترون",
+        "closing_text": "وأتبعوا في هذه الدنيا لعنة ويوم القيامة ۗ ألا إن عادا كفروا ربهم ۗ ألا بعدا لعاد قوم هود"
+      }
+    },
+    {
+      "prophet": "Salih",
+      "q7": {
+        "surah": 7,
+        "start": 73,
+        "end": 79,
+        "verse_count": 7,
+        "root_token_count": 76,
+        "unique_roots": 53,
+        "top_roots": [
+          [
+            "qwl",
+            6
+          ],
+          [
+            "rbb",
+            4
+          ],
+          [
+            "rsl",
+            4
+          ],
+          [
+            "qwm",
+            3
+          ],
+          [
+            "ArD",
+            3
+          ],
+          [
+            "Ax*",
+            3
+          ],
+          [
+            "Amn",
+            3
+          ],
+          [
+            "nwq",
+            2
+          ],
+          [
+            "*kr",
+            2
+          ],
+          [
+            "kbr",
+            2
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "{ll~ah",
+            4
+          ],
+          [
+            "Sa`liH2",
+            3
+          ],
+          [
+            "vamuwd",
+            1
+          ],
+          [
+            "EaAd2",
+            1
+          ]
+        ],
+        "opening_text": "وإلى ثمود أخاهم صالحا ۗ قال يا قوم اعبدوا الله ما لكم من إله غيره ۖ قد جاءتكم بينة من ربكم ۖ هذه ناقة الله لكم آية ۖ فذروها تأكل في أرض الله ۖ ولا تمسوها بسوء فيأخذكم عذاب أليم",
+        "closing_text": "فتولى عنهم وقال يا قوم لقد أبلغتكم رسالة ربي ونصحت لكم ولكن لا تحبون الناصحين"
+      },
+      "q11": {
+        "surah": 11,
+        "start": 61,
+        "end": 68,
+        "verse_count": 8,
+        "root_token_count": 77,
+        "unique_roots": 59,
+        "top_roots": [
+          [
+            "qwl",
+            4
+          ],
+          [
+            "rbb",
+            4
+          ],
+          [
+            "qwm",
+            3
+          ],
+          [
+            "Ebd",
+            3
+          ],
+          [
+            "gyr",
+            3
+          ],
+          [
+            "ArD",
+            2
+          ],
+          [
+            "qrb",
+            2
+          ],
+          [
+            "kwn",
+            2
+          ],
+          [
+            "rHm",
+            2
+          ],
+          [
+            "Ax*",
+            2
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "{ll~ah",
+            4
+          ],
+          [
+            "vamuwd",
+            3
+          ],
+          [
+            "Sa`liH2",
+            3
+          ]
+        ],
+        "opening_text": "۞ وإلى ثمود أخاهم صالحا ۚ قال يا قوم اعبدوا الله ما لكم من إله غيره ۖ هو أنشأكم من الأرض واستعمركم فيها فاستغفروه ثم توبوا إليه ۚ إن ربي قريب مجيب",
+        "closing_text": "كأن لم يغنوا فيها ۗ ألا إن ثمود كفروا ربهم ۗ ألا بعدا لثمود"
+      }
+    },
+    {
+      "prophet": "Lot",
+      "q7": {
+        "surah": 7,
+        "start": 80,
+        "end": 84,
+        "verse_count": 5,
+        "root_token_count": 34,
+        "unique_roots": 27,
+        "top_roots": [
+          [
+            "qwm",
+            3
+          ],
+          [
+            "kwn",
+            3
+          ],
+          [
+            "qwl",
+            2
+          ],
+          [
+            "Aty",
+            2
+          ],
+          [
+            "mTr",
+            2
+          ],
+          [
+            "fH$",
+            1
+          ],
+          [
+            "sbq",
+            1
+          ],
+          [
+            "AHd",
+            1
+          ],
+          [
+            "Elm",
+            1
+          ],
+          [
+            "rjl",
+            1
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "luwT",
+            1
+          ]
+        ],
+        "opening_text": "ولوطا إذ قال لقومه أتأتون الفاحشة ما سبقكم بها من أحد من العالمين",
+        "closing_text": "وأمطرنا عليهم مطرا ۖ فانظر كيف كان عاقبة المجرمين"
+      },
+      "q11": {
+        "surah": 11,
+        "start": 77,
+        "end": 83,
+        "verse_count": 7,
+        "root_token_count": 68,
+        "unique_roots": 53,
+        "top_roots": [
+          [
+            "qwl",
+            5
+          ],
+          [
+            "jyA",
+            3
+          ],
+          [
+            "rsl",
+            2
+          ],
+          [
+            "swA",
+            2
+          ],
+          [
+            "qwm",
+            2
+          ],
+          [
+            "bny",
+            2
+          ],
+          [
+            "lys",
+            2
+          ],
+          [
+            "Elm",
+            2
+          ],
+          [
+            "rbb",
+            2
+          ],
+          [
+            "Swb",
+            2
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "luwT",
+            2
+          ],
+          [
+            "{ll~ah",
+            1
+          ]
+        ],
+        "opening_text": "ولما جاءت رسلنا لوطا سيء بهم وضاق بهم ذرعا وقال هذا يوم عصيب",
+        "closing_text": "مسومة عند ربك ۖ وما هي من الظالمين ببعيد"
+      }
+    },
+    {
+      "prophet": "Shuayb",
+      "q7": {
+        "surah": 7,
+        "start": 85,
+        "end": 93,
+        "verse_count": 9,
+        "root_token_count": 114,
+        "unique_roots": 68,
+        "top_roots": [
+          [
+            "kwn",
+            7
+          ],
+          [
+            "qwm",
+            6
+          ],
+          [
+            "qwl",
+            5
+          ],
+          [
+            "rbb",
+            5
+          ],
+          [
+            "Amn",
+            5
+          ],
+          [
+            "byn",
+            4
+          ],
+          [
+            "$yA",
+            3
+          ],
+          [
+            "xyr",
+            3
+          ],
+          [
+            "Ewd",
+            3
+          ],
+          [
+            "k*b",
+            3
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "{ll~ah",
+            7
+          ],
+          [
+            "$uEayob",
+            5
+          ],
+          [
+            "madoyan",
+            1
+          ]
+        ],
+        "opening_text": "وإلى مدين أخاهم شعيبا ۗ قال يا قوم اعبدوا الله ما لكم من إله غيره ۖ قد جاءتكم بينة من ربكم ۖ فأوفوا الكيل والميزان ولا تبخسوا الناس أشياءهم ولا تفسدوا في الأرض بعد إصلاحها ۚ ذلكم خير لكم إن كنتم مؤمنين",
+        "closing_text": "فتولى عنهم وقال يا قوم لقد أبلغتكم رسالات ربي ونصحت لكم ۖ فكيف آسى على قوم كافرين"
+      },
+      "q11": {
+        "surah": 11,
+        "start": 84,
+        "end": 95,
+        "verse_count": 12,
+        "root_token_count": 121,
+        "unique_roots": 79,
+        "top_roots": [
+          [
+            "qwm",
+            10
+          ],
+          [
+            "qwl",
+            6
+          ],
+          [
+            "rbb",
+            4
+          ],
+          [
+            "rAy",
+            3
+          ],
+          [
+            "kwn",
+            3
+          ],
+          [
+            "bEd",
+            3
+          ],
+          [
+            "Eml",
+            3
+          ],
+          [
+            "Ebd",
+            2
+          ],
+          [
+            "kyl",
+            2
+          ],
+          [
+            "wzn",
+            2
+          ]
+        ],
+        "pn_lemmas": [
+          [
+            "$uEayob",
+            4
+          ],
+          [
+            "{ll~ah",
+            4
+          ],
+          [
+            "madoyan",
+            2
+          ],
+          [
+            "nuwH",
+            1
+          ],
+          [
+            "huwd",
+            1
+          ],
+          [
+            "Sa`liH2",
+            1
+          ],
+          [
+            "luwT",
+            1
+          ],
+          [
+            "vamuwd",
+            1
+          ]
+        ],
+        "opening_text": "۞ وإلى مدين أخاهم شعيبا ۚ قال يا قوم اعبدوا الله ما لكم من إله غيره ۖ ولا تنقصوا المكيال والميزان ۚ إني أراكم بخير وإني أخاف عليكم عذاب يوم محيط",
+        "closing_text": "كأن لم يغنوا فيها ۗ ألا بعدا لمدين كما بعدت ثمود"
+      }
+    }
+  ],
+  "primary_distance_matrix_roots_no_pn": [
+    {
+      "row": "Noah",
+      "distances": {
+        "Noah": 0.7781780457447842,
+        "Hud": 0.6748230376188384,
+        "Salih": 0.653731590687491,
+        "Lot": 0.6607210118788638,
+        "Shuayb": 0.7246307550844815
+      }
+    },
+    {
+      "row": "Hud",
+      "distances": {
+        "Noah": 0.8587526446786058,
+        "Hud": 0.7330856373417179,
+        "Salih": 0.6779273970190475,
+        "Lot": 0.7494347133586244,
+        "Shuayb": 0.795986360355112
+      }
+    },
+    {
+      "row": "Salih",
+      "distances": {
+        "Noah": 0.8954853358619049,
+        "Hud": 0.7190098261902835,
+        "Salih": 0.6225572555522042,
+        "Lot": 0.7544939949956775,
+        "Shuayb": 0.7790603420769953
+      }
+    },
+    {
+      "row": "Lot",
+      "distances": {
+        "Noah": 0.8803187415915369,
+        "Hud": 0.8015017559112312,
+        "Salih": 0.7215091810566453,
+        "Lot": 0.6693325278320659,
+        "Shuayb": 0.7909250995958031
+      }
+    },
+    {
+      "row": "Shuayb",
+      "distances": {
+        "Noah": 0.9205980692098434,
+        "Hud": 0.7953127605000179,
+        "Salih": 0.778819687209526,
+        "Lot": 0.8878380424245989,
+        "Shuayb": 0.7896195127817787
+      }
+    }
+  ],
+  "primary_root_vocab_size": 277,
+  "primary": {
+    "labels": [
+      "Noah",
+      "Hud",
+      "Salih",
+      "Lot",
+      "Shuayb"
+    ],
+    "n_permutations": 120,
+    "observed_assignment": {
+      "Noah": "Noah",
+      "Hud": "Hud",
+      "Salih": "Salih",
+      "Lot": "Lot",
+      "Shuayb": "Shuayb"
+    },
+    "observed_sum_distance": 3.592772979252551,
+    "rank_among_all_assignments": 1,
+    "count_assignments_le_observed": 1,
+    "p_exact_one_sided_lower": 0.008333333333333333,
+    "runner_up_assignment": {
+      "Noah": "Hud",
+      "Hud": "Noah",
+      "Salih": "Salih",
+      "Lot": "Lot",
+      "Shuayb": "Shuayb"
+    },
+    "runner_up_sum_distance": 3.615084978463493,
+    "margin_to_runner_up": 0.022311999210941735,
+    "diagonal_distances": {
+      "Noah": 0.7781780457447842,
+      "Hud": 0.7330856373417179,
+      "Salih": 0.6225572555522042,
+      "Lot": 0.6693325278320659,
+      "Shuayb": 0.7896195127817787
+    },
+    "diagonal_mean_distance": 0.7185545958505102,
+    "off_diagonal_mean_distance": 0.7760440173652564,
+    "mean_gap_offdiag_minus_diag": 0.05748942151474623,
+    "pass_primary": true
+  },
+  "secondary": {
+    "rowwise_nearest_neighbors": {
+      "Noah": "Salih",
+      "Hud": "Salih",
+      "Salih": "Salih",
+      "Lot": "Lot",
+      "Shuayb": "Salih"
+    },
+    "observed_hits": 2,
+    "max_possible_hits": 5,
+    "p_exact_one_sided_upper": 0.2,
+    "count_permutations_ge_observed": 24,
+    "pass_secondary": false
+  },
+  "positive_control_pn_only": {
+    "labels": [
+      "Noah",
+      "Hud",
+      "Salih",
+      "Lot",
+      "Shuayb"
+    ],
+    "n_permutations": 120,
+    "observed_assignment": {
+      "Noah": "Noah",
+      "Hud": "Hud",
+      "Salih": "Salih",
+      "Lot": "Lot",
+      "Shuayb": "Shuayb"
+    },
+    "observed_sum_distance": 2.7869988415518185,
+    "rank_among_all_assignments": 1,
+    "count_assignments_le_observed": 1,
+    "p_exact_one_sided_lower": 0.008333333333333333,
+    "runner_up_assignment": {
+      "Noah": "Hud",
+      "Hud": "Noah",
+      "Salih": "Salih",
+      "Lot": "Lot",
+      "Shuayb": "Shuayb"
+    },
+    "runner_up_sum_distance": 3.2684839239376666,
+    "margin_to_runner_up": 0.4814850823858481,
+    "distance_matrix": [
+      {
+        "row": "Noah",
+        "distances": {
+          "Noah": 0.6550406413304115,
+          "Hud": 1.037930351101459,
+          "Salih": 0.8991706978034528,
+          "Lot": 0.7658866065062176,
+          "Shuayb": 0.6746556445532761
+        }
+      },
+      {
+        "row": "Hud",
+        "distances": {
+          "Noah": 0.7924768352735148,
+          "Hud": 0.6938814626587142,
+          "Salih": 1.0093435628494178,
+          "Lot": 0.9039140800562786,
+          "Shuayb": 0.8598455272744142
+        }
+      },
+      {
+        "row": "Salih",
+        "distances": {
+          "Noah": 1.215469338243918,
+          "Hud": 1.100974821422346,
+          "Salih": 0.4302714488471156,
+          "Lot": 1.0064551086923772,
+          "Shuayb": 0.9519034373955259
+        }
+      },
+      {
+        "row": "Lot",
+        "distances": {
+          "Noah": 1.4066021649563125,
+          "Hud": 1.1625027396352143,
+          "Salih": 1.1302733392603972,
+          "Lot": 0.3815374294168052,
+          "Shuayb": 0.8035473209216132
+        }
+      },
+      {
+        "row": "Shuayb",
+        "distances": {
+          "Noah": 1.2159439565883632,
+          "Hud": 1.3689777479516685,
+          "Salih": 1.2175815335668119,
+          "Lot": 1.1724338644537842,
+          "Shuayb": 0.6262678592987719
+        }
+      }
+    ],
+    "pn_vocab_size": 10,
+    "pass_positive_control": true
+  },
+  "verdict": "PARTIAL-PASS"
+}

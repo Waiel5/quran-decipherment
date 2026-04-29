@@ -1,0 +1,353 @@
+{
+  "id": "H-NEW-92",
+  "target": "Q 24:35",
+  "alpha": 0.05,
+  "bonferroni_k": 8,
+  "alpha_bonferroni": 0.00625,
+  "rules_tuple": "no-tashkeel; orthographic-token-real-words; graphemes; hafs-kufan; 6236; basmala-counted-only-in-surah-1; mashriqi",
+  "target_scores": {
+    "length_letters": 203.0,
+    "length_words": 48.0,
+    "distinct_lemmas": 36.0,
+    "hapax_density": 0.16666666666666666,
+    "divine_density": 0.08333333333333333,
+    "light_density": 0.20833333333333334,
+    "ttr": 0.75,
+    "abjad_total": 13391.0
+  },
+  "axes_results": {
+    "length_letters": {
+      "value": 203.0,
+      "N": 6236,
+      "n_strict_below": 6183,
+      "n_equal": 2,
+      "n_strict_above": 51,
+      "rank_from_top_1indexed": 52,
+      "pct_top": 0.008338678640153918,
+      "pct_bot": 0.9916613213598461,
+      "p_two_sided": 0.016677357280307836,
+      "verdict": "PASS-DIRECTED"
+    },
+    "length_words": {
+      "value": 48.0,
+      "N": 6236,
+      "n_strict_below": 6182,
+      "n_equal": 4,
+      "n_strict_above": 50,
+      "rank_from_top_1indexed": 51,
+      "pct_top": 0.008338678640153918,
+      "pct_bot": 0.9916613213598461,
+      "p_two_sided": 0.016677357280307836,
+      "verdict": "PASS-DIRECTED"
+    },
+    "distinct_lemmas": {
+      "value": 36.0,
+      "N": 6236,
+      "n_strict_below": 6183,
+      "n_equal": 3,
+      "n_strict_above": 50,
+      "rank_from_top_1indexed": 51,
+      "pct_top": 0.008258499037844813,
+      "pct_bot": 0.9917415009621552,
+      "p_two_sided": 0.016516998075689626,
+      "verdict": "PASS-DIRECTED"
+    },
+    "hapax_density": {
+      "value": 0.16666666666666666,
+      "N": 6236,
+      "n_strict_below": 5666,
+      "n_equal": 73,
+      "n_strict_above": 497,
+      "rank_from_top_1indexed": 498,
+      "pct_top": 0.08555163566388713,
+      "pct_bot": 0.9144483643361129,
+      "p_two_sided": 0.17110327132777425,
+      "verdict": "NULL"
+    },
+    "divine_density": {
+      "value": 0.08333333333333333,
+      "N": 6236,
+      "n_strict_below": 4778,
+      "n_equal": 121,
+      "n_strict_above": 1337,
+      "rank_from_top_1indexed": 1338,
+      "pct_top": 0.2241019884541373,
+      "pct_bot": 0.7758980115458627,
+      "p_two_sided": 0.4482039769082746,
+      "verdict": "NULL"
+    },
+    "light_density": {
+      "value": 0.20833333333333334,
+      "N": 6236,
+      "n_strict_below": 6207,
+      "n_equal": 1,
+      "n_strict_above": 28,
+      "rank_from_top_1indexed": 29,
+      "pct_top": 0.004570237331622873,
+      "pct_bot": 0.9954297626683771,
+      "p_two_sided": 0.009140474663245746,
+      "verdict": "PASS-DIRECTED"
+    },
+    "ttr": {
+      "value": 0.75,
+      "N": 6236,
+      "n_strict_below": 290,
+      "n_equal": 74,
+      "n_strict_above": 5872,
+      "rank_from_top_1indexed": 5873,
+      "pct_top": 0.9475625400898011,
+      "pct_bot": 0.052437459910198846,
+      "p_two_sided": 0.10487491982039769,
+      "verdict": "NULL"
+    },
+    "abjad_total": {
+      "value": 13391.0,
+      "N": 6236,
+      "n_strict_below": 6149,
+      "n_equal": 1,
+      "n_strict_above": 86,
+      "rank_from_top_1indexed": 87,
+      "pct_top": 0.013871071199486829,
+      "pct_bot": 0.9861289288005132,
+      "p_two_sided": 0.027742142398973657,
+      "verdict": "PASS-DIRECTED"
+    }
+  },
+  "comparators": {
+    "Q 1:1 (Bismillah)": {
+      "length_letters": 19.0,
+      "length_words": 4.0,
+      "distinct_lemmas": 4.0,
+      "hapax_density": 0.0,
+      "divine_density": 0.75,
+      "light_density": 0.0,
+      "ttr": 1.0,
+      "abjad_total": 786.0
+    },
+    "Q 2:255 (Ayat al-Kursi)": {
+      "length_letters": 189.0,
+      "length_words": 50.0,
+      "distinct_lemmas": 34.0,
+      "hapax_density": 0.058823529411764705,
+      "divine_density": 0.02,
+      "light_density": 0.0,
+      "ttr": 0.723404255319149,
+      "abjad_total": 13659.0
+    },
+    "Q 112 (sum of v1-4)": {
+      "length_letters": 47.0,
+      "length_words": 15.0,
+      "distinct_lemmas": 11.0,
+      "hapax_density": 0.1875,
+      "divine_density": 0.1875,
+      "light_density": 0.0,
+      "ttr": 0.875,
+      "abjad_total": 1000.0
+    }
+  },
+  "verdict_per_axis": {
+    "length_letters": "PASS-DIRECTED",
+    "length_words": "PASS-DIRECTED",
+    "distinct_lemmas": "PASS-DIRECTED",
+    "hapax_density": "NULL",
+    "divine_density": "NULL",
+    "light_density": "PASS-DIRECTED",
+    "ttr": "NULL",
+    "abjad_total": "PASS-DIRECTED"
+  },
+  "n_strong_pass": 0,
+  "n_pass_directed": 5,
+  "n_null": 3,
+  "top_3_per_axis": {
+    "length_letters": [
+      {
+        "verse": "2:282",
+        "score": 551.0
+      },
+      {
+        "verse": "24:31",
+        "score": 350.0
+      },
+      {
+        "verse": "73:20",
+        "score": 329.0
+      }
+    ],
+    "length_words": [
+      {
+        "verse": "2:282",
+        "score": 129.0
+      },
+      {
+        "verse": "4:12",
+        "score": 88.0
+      },
+      {
+        "verse": "24:31",
+        "score": 78.0
+      }
+    ],
+    "distinct_lemmas": [
+      {
+        "verse": "2:282",
+        "score": 71.0
+      },
+      {
+        "verse": "22:5",
+        "score": 52.0
+      },
+      {
+        "verse": "73:20",
+        "score": 52.0
+      }
+    ],
+    "hapax_density": [
+      {
+        "verse": "37:2",
+        "score": 1.0
+      },
+      {
+        "verse": "51:1",
+        "score": 1.0
+      },
+      {
+        "verse": "51:2",
+        "score": 1.0
+      }
+    ],
+    "divine_density": [
+      {
+        "verse": "1:3",
+        "score": 1.0
+      },
+      {
+        "verse": "55:1",
+        "score": 1.0
+      },
+      {
+        "verse": "1:1",
+        "score": 0.75
+      }
+    ],
+    "light_density": [
+      {
+        "verse": "85:5",
+        "score": 0.6666666666666666
+      },
+      {
+        "verse": "104:6",
+        "score": 0.6666666666666666
+      },
+      {
+        "verse": "68:20",
+        "score": 0.5
+      }
+    ],
+    "ttr": [
+      {
+        "verse": "1:1",
+        "score": 1.0
+      },
+      {
+        "verse": "1:2",
+        "score": 1.0
+      },
+      {
+        "verse": "1:3",
+        "score": 1.0
+      }
+    ],
+    "abjad_total": [
+      {
+        "verse": "2:282",
+        "score": 39114.0
+      },
+      {
+        "verse": "73:20",
+        "score": 29600.0
+      },
+      {
+        "verse": "24:31",
+        "score": 25507.0
+      }
+    ]
+  },
+  "rank_per_axis_from_top": {
+    "length_letters": 53,
+    "length_words": 53,
+    "distinct_lemmas": 53,
+    "hapax_density": 519,
+    "divine_density": 1413,
+    "light_density": 29,
+    "ttr": 5905,
+    "abjad_total": 87
+  },
+  "overall_verdict": "NOTABLE",
+  "followup": {
+    "raw_light_count_rank": 1,
+    "raw_light_count": 10,
+    "raw_light_count_top_5": [
+      {
+        "verse": "24:35",
+        "count": 10,
+        "words": 48
+      },
+      {
+        "verse": "2:17",
+        "count": 4,
+        "words": 17
+      },
+      {
+        "verse": "20:10",
+        "count": 4,
+        "words": 18
+      },
+      {
+        "verse": "2:257",
+        "count": 3,
+        "words": 24
+      },
+      {
+        "verse": "28:29",
+        "count": 3,
+        "words": 27
+      }
+    ],
+    "length_conditional_30plus_rank": 1,
+    "length_conditional_30plus_N": 322,
+    "length_conditional_30plus_top_5": [
+      {
+        "verse": "24:35",
+        "density": 0.20833333333333334,
+        "count": 10,
+        "words": 48
+      },
+      {
+        "verse": "11:81",
+        "density": 0.06666666666666667,
+        "count": 2,
+        "words": 30
+      },
+      {
+        "verse": "24:40",
+        "density": 0.06060606060606061,
+        "count": 2,
+        "words": 33
+      },
+      {
+        "verse": "3:103",
+        "density": 0.058823529411764705,
+        "count": 2,
+        "words": 34
+      },
+      {
+        "verse": "7:38",
+        "density": 0.05,
+        "count": 2,
+        "words": 40
+      }
+    ],
+    "length_conditional_20plus_rank": 1,
+    "length_conditional_20plus_N": 1065
+  }
+}

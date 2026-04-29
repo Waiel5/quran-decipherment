@@ -1,0 +1,60 @@
+{
+  "finding_id": "Q027-F-04",
+  "prereg_sha": "a500b019e2d6872693ae93d21f4d7c9c840f6cb9ca9cb4c5e23302c5cfc221ad",
+  "rules_tuple": "(no-tashkeel, orthographic-token-words, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "method": "Deterministic check of coincidence relations + 10000-perm null on random surah-pair analogs",
+  "inputs": {
+    "V1": 7,
+    "V27": 93,
+    "W1": 29,
+    "W1_v1": 4,
+    "W1_minus_basmala": 25,
+    "W27": 1215,
+    "BASMALA_VERSE_IN_Q1": 1,
+    "BASMALA_VERSE_IN_Q27": 30
+  },
+  "C1_basmala_diff_equals_W1": {
+    "claim": "(v_basmala_in_Q27 - v_basmala_in_Q1) = W_1",
+    "lhs": 29,
+    "rhs_W1": 29,
+    "truth_value_full_W1": true,
+    "truth_value_W1_minus_basmala": false,
+    "p_perm_random_pair_analog": 0.0021997800219978004,
+    "verdict": "CONFIRMED"
+  },
+  "C2_index_sum_equals_W1_plus_1": {
+    "claim": "(Q_index_1 + Q_index_27) = W_1 + 1",
+    "lhs": 28,
+    "rhs": 30,
+    "truth_value": false,
+    "p_perm_random_pair_analog": 0.000999900009999,
+    "verdict": "FALSE",
+    "surahs_with_28_verses": [
+      71,
+      72
+    ]
+  },
+  "C3_v_basmala_minus_index": {
+    "claim": "(v_basmala_in_Q27 - Q_index_27) integer-relation to Q 1 properties",
+    "lhs": 3,
+    "relations_to_Q1_properties": {
+      "equals_V1_minus_4": true,
+      "equals_W1_v1_minus_1": true
+    },
+    "p_perm_random_v_minus_index_eq_3": 0.006199380061993801
+  },
+  "C4_q27_verse_count_divisibility": {
+    "claim": "Q 27 verse-count (93) has special arithmetic relation to 19 / 7 / 28 / 114",
+    "computations": {
+      "93_mod_19": 17,
+      "93_div_19_int": 4,
+      "93_mod_7": 2,
+      "93_mod_28": 9,
+      "93_mod_114": 93,
+      "114_minus_27": 87
+    },
+    "verdict": "NULL_NO_SPECIAL_DIVISIBILITY"
+  },
+  "aggregate_verdict": "See per-relation verdict; with rules-tuple discipline applied, none of the popular numerical coincidences survive as both arithmetically TRUE AND null-significant.",
+  "note": "Per MASTER-FINDINGS-LEDGER, \"Code 19\" verse-count divisibility is uniformly NULL. This investigation specifically extends that to the Q 1 ↔ Q 27 basmala-axis numerology that often appears in popular numerological writings. Equal NULL prominence is mandatory."
+}

@@ -1,0 +1,344 @@
+{
+  "seed": 20260428,
+  "rules_tuple": "(no-tashkeel for FR; min-tashkeel for rhyme; orthographic-token; graphemes; basmala-counted-only-in-Q1; Hafs-Kufan; Mashriqi)",
+  "rhyme_per_surah_HM7": {
+    "40": {
+      "n_verses": 85,
+      "entropy_bits": 2.4132258048334965,
+      "top_letter": "ن",
+      "top_frac": 0.3764705882352941,
+      "distinct_letters": 8,
+      "distribution": {
+        "ن": 32,
+        "ب": 17,
+        "ر": 15,
+        "د": 10,
+        "م": 5,
+        "ل": 3,
+        "ق": 2,
+        "ع": 1
+      }
+    },
+    "41": {
+      "n_verses": 54,
+      "entropy_bits": 2.1464022739660837,
+      "top_letter": "ن",
+      "top_frac": 0.5555555555555556,
+      "distinct_letters": 10,
+      "distribution": {
+        "ن": 30,
+        "م": 8,
+        "د": 7,
+        "ر": 2,
+        "ط": 2,
+        "ز": 1,
+        "ب": 1,
+        "ص": 1,
+        "ظ": 1,
+        "ض": 1
+      }
+    },
+    "42": {
+      "n_verses": 53,
+      "entropy_bits": 2.5654350737797786,
+      "top_letter": "ر",
+      "top_frac": 0.37735849056603776,
+      "distinct_letters": 9,
+      "distribution": {
+        "ر": 20,
+        "م": 11,
+        "ن": 6,
+        "ب": 5,
+        "ل": 4,
+        "د": 4,
+        "ق": 1,
+        "ز": 1,
+        "ص": 1
+      }
+    },
+    "43": {
+      "n_verses": 89,
+      "entropy_bits": 0.5939283296166338,
+      "top_letter": "ن",
+      "top_frac": 0.8764044943820225,
+      "distinct_letters": 3,
+      "distribution": {
+        "ن": 78,
+        "م": 10,
+        "ل": 1
+      }
+    },
+    "44": {
+      "n_verses": 59,
+      "entropy_bits": 0.8179252501386403,
+      "top_letter": "ن",
+      "top_frac": 0.7457627118644068,
+      "distinct_letters": 2,
+      "distribution": {
+        "ن": 44,
+        "م": 15
+      }
+    },
+    "45": {
+      "n_verses": 37,
+      "entropy_bits": 0.6997722217733069,
+      "top_letter": "ن",
+      "top_frac": 0.8108108108108109,
+      "distinct_letters": 2,
+      "distribution": {
+        "ن": 30,
+        "م": 7
+      }
+    },
+    "46": {
+      "n_verses": 35,
+      "entropy_bits": 0.9518135120401551,
+      "top_letter": "ن",
+      "top_frac": 0.7428571428571429,
+      "distinct_letters": 3,
+      "distribution": {
+        "ن": 26,
+        "م": 8,
+        "ر": 1
+      }
+    }
+  },
+  "HMM_F_01_bifurcation": {
+    "entropy_HM7": [
+      2.4132258048334965,
+      2.1464022739660837,
+      2.5654350737797786,
+      0.5939283296166338,
+      0.8179252501386403,
+      0.6997722217733069,
+      0.9518135120401551
+    ],
+    "mu_A_Q40_42": 2.3750210508597864,
+    "mu_B_Q43_46": 0.765859828392184,
+    "mu_all": 1.4555003523068706,
+    "obs_diff_A_minus_B": 1.6091612224676024,
+    "sse_2piece": 0.16120124112284417,
+    "sse_flat": 4.600172395225864,
+    "sse_reduction": 4.43897115410302,
+    "p_perm_diff_one_sided": 0.0264,
+    "p_perm_sse_reduction_one_sided": 0.0264,
+    "n_perm": 10000
+  },
+  "HMM_F_02_cohesion": {
+    "HM-7": {
+      "k": 7,
+      "d_bar": 0.8672422857142857,
+      "p_perm_le_one_sided": 0.2011,
+      "p_perm_ge_one_sided": 0.7989,
+      "percentile_le": 20.11
+    },
+    "HM-A(40-42)": {
+      "k": 3,
+      "d_bar": 0.8624003333333334,
+      "p_perm_le_one_sided": 0.2472,
+      "p_perm_ge_one_sided": 0.7528,
+      "percentile_le": 24.72
+    },
+    "HM-B(43-46)": {
+      "k": 4,
+      "d_bar": 0.866476,
+      "p_perm_le_one_sided": 0.2429,
+      "p_perm_ge_one_sided": 0.7571,
+      "percentile_le": 24.29
+    },
+    "ALR-5": {
+      "k": 5,
+      "d_bar": 0.9551825,
+      "p_perm_le_one_sided": 0.5597,
+      "p_perm_ge_one_sided": 0.4403,
+      "percentile_le": 55.97
+    },
+    "ALM-6": {
+      "k": 6,
+      "d_bar": 0.9256812000000001,
+      "p_perm_le_one_sided": 0.4286,
+      "p_perm_ge_one_sided": 0.5714,
+      "percentile_le": 42.86
+    }
+  },
+  "HMM_F_03_cross_cluster": {
+    "HM-7_d_bar": 0.8672422857142857,
+    "HM-A_d_bar": 0.8624003333333334,
+    "HM-B_d_bar": 0.866476,
+    "ALR-5_d_bar": 0.9551825,
+    "ALM-6_d_bar": 0.9256812000000001,
+    "most_cohesive": "HM-A(40-42)"
+  },
+  "HMM_F_04_multirawi": {
+    "muqattaat_29_entropy_ranked": [
+      {
+        "surah": 14,
+        "entropy": 2.954698755197291,
+        "rank": 1
+      },
+      {
+        "surah": 42,
+        "entropy": 2.5654350737797786,
+        "rank": 2
+      },
+      {
+        "surah": 11,
+        "entropy": 2.505296678168655,
+        "rank": 3
+      },
+      {
+        "surah": 13,
+        "entropy": 2.4816282113269517,
+        "rank": 4
+      },
+      {
+        "surah": 38,
+        "entropy": 2.4712344360920637,
+        "rank": 5
+      },
+      {
+        "surah": 40,
+        "entropy": 2.4132258048334965,
+        "rank": 6
+      },
+      {
+        "surah": 41,
+        "entropy": 2.1464022739660837,
+        "rank": 7
+      },
+      {
+        "surah": 3,
+        "entropy": 1.8871867132908728,
+        "rank": 8
+      },
+      {
+        "surah": 31,
+        "entropy": 1.862419180826715,
+        "rank": 9
+      },
+      {
+        "surah": 50,
+        "entropy": 1.8553400410573706,
+        "rank": 10
+      },
+      {
+        "surah": 2,
+        "entropy": 1.4587258519696311,
+        "rank": 11
+      },
+      {
+        "surah": 46,
+        "entropy": 0.9518135120401551,
+        "rank": 12
+      },
+      {
+        "surah": 20,
+        "entropy": 0.8283089287797856,
+        "rank": 13
+      },
+      {
+        "surah": 44,
+        "entropy": 0.8179252501386403,
+        "rank": 14
+      },
+      {
+        "surah": 15,
+        "entropy": 0.7755399510527954,
+        "rank": 15
+      },
+      {
+        "surah": 12,
+        "entropy": 0.7696849801593431,
+        "rank": 16
+      },
+      {
+        "surah": 29,
+        "entropy": 0.724722835489541,
+        "rank": 17
+      },
+      {
+        "surah": 68,
+        "entropy": 0.7062740891876007,
+        "rank": 18
+      },
+      {
+        "surah": 45,
+        "entropy": 0.6997722217733069,
+        "rank": 19
+      },
+      {
+        "surah": 26,
+        "entropy": 0.6875576235860908,
+        "rank": 20
+      },
+      {
+        "surah": 36,
+        "entropy": 0.6874567663493159,
+        "rank": 21
+      },
+      {
+        "surah": 43,
+        "entropy": 0.5939283296166338,
+        "rank": 22
+      },
+      {
+        "surah": 30,
+        "entropy": 0.5608251769947302,
+        "rank": 23
+      },
+      {
+        "surah": 32,
+        "entropy": 0.5608251769947302,
+        "rank": 24
+      },
+      {
+        "surah": 28,
+        "entropy": 0.5244005080030011,
+        "rank": 25
+      },
+      {
+        "surah": 10,
+        "entropy": 0.5162499608121187,
+        "rank": 26
+      },
+      {
+        "surah": 19,
+        "entropy": 0.5139300569304375,
+        "rank": 27
+      },
+      {
+        "surah": 27,
+        "entropy": 0.4586858162005403,
+        "rank": 28
+      },
+      {
+        "surah": 7,
+        "entropy": 0.4022117449423778,
+        "rank": 29
+      }
+    ],
+    "Q42_rank_in_muqattaat_29": 2,
+    "top_5_entropy_muqattaat_29": [
+      [
+        14,
+        2.954698755197291
+      ],
+      [
+        42,
+        2.5654350737797786
+      ],
+      [
+        11,
+        2.505296678168655
+      ],
+      [
+        13,
+        2.4816282113269517
+      ],
+      [
+        38,
+        2.4712344360920637
+      ]
+    ]
+  }
+}

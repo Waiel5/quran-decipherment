@@ -1,0 +1,171 @@
+{
+  "finding_id": "Q019-F-03",
+  "pre_reg_sha256": "d356279301bca3f6d484bfd94aa9ea12a7b8a69fca8448aa53e5746e2f6025fe",
+  "seed": 20260428,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic, exact-substring الرحمن, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "observed": {
+    "q19_count_abs": 12,
+    "q19_rank_abs": 1,
+    "q19_density_per_verse": 0.12244897959183673,
+    "q19_rank_density_among_30plus_verse": 2,
+    "corpus_total": 48,
+    "top_10_abs": [
+      {
+        "surah": 19,
+        "name": "Maryam",
+        "count": 12,
+        "n_verses": 98,
+        "density": 0.12244897959183673
+      },
+      {
+        "surah": 43,
+        "name": "Az-Zukhruf",
+        "count": 5,
+        "n_verses": 89,
+        "density": 0.056179775280898875
+      },
+      {
+        "surah": 21,
+        "name": "Al-Anbya",
+        "count": 4,
+        "n_verses": 112,
+        "density": 0.03571428571428571
+      },
+      {
+        "surah": 36,
+        "name": "Ya-Sin",
+        "count": 4,
+        "n_verses": 83,
+        "density": 0.04819277108433735
+      },
+      {
+        "surah": 67,
+        "name": "Al-Mulk",
+        "count": 4,
+        "n_verses": 30,
+        "density": 0.13333333333333333
+      },
+      {
+        "surah": 20,
+        "name": "Taha",
+        "count": 3,
+        "n_verses": 135,
+        "density": 0.022222222222222223
+      },
+      {
+        "surah": 25,
+        "name": "Al-Furqan",
+        "count": 3,
+        "n_verses": 77,
+        "density": 0.03896103896103896
+      },
+      {
+        "surah": 1,
+        "name": "Al-Fatihah",
+        "count": 2,
+        "n_verses": 7,
+        "density": 0.2857142857142857
+      },
+      {
+        "surah": 78,
+        "name": "An-Naba",
+        "count": 2,
+        "n_verses": 40,
+        "density": 0.05
+      },
+      {
+        "surah": 2,
+        "name": "Al-Baqarah",
+        "count": 1,
+        "n_verses": 286,
+        "density": 0.0034965034965034965
+      }
+    ],
+    "q55_alrahman_count": 1,
+    "q55_alrahman_density": 0.01282051282051282,
+    "top_10_density_among_30plus": [
+      {
+        "surah": 67,
+        "name": "Al-Mulk",
+        "count": 4,
+        "n_verses": 30,
+        "density": 0.13333333333333333
+      },
+      {
+        "surah": 19,
+        "name": "Maryam",
+        "count": 12,
+        "n_verses": 98,
+        "density": 0.12244897959183673
+      },
+      {
+        "surah": 43,
+        "name": "Az-Zukhruf",
+        "count": 5,
+        "n_verses": 89,
+        "density": 0.056179775280898875
+      },
+      {
+        "surah": 78,
+        "name": "An-Naba",
+        "count": 2,
+        "n_verses": 40,
+        "density": 0.05
+      },
+      {
+        "surah": 36,
+        "name": "Ya-Sin",
+        "count": 4,
+        "n_verses": 83,
+        "density": 0.04819277108433735
+      },
+      {
+        "surah": 25,
+        "name": "Al-Furqan",
+        "count": 3,
+        "n_verses": 77,
+        "density": 0.03896103896103896
+      },
+      {
+        "surah": 21,
+        "name": "Al-Anbya",
+        "count": 4,
+        "n_verses": 112,
+        "density": 0.03571428571428571
+      },
+      {
+        "surah": 13,
+        "name": "Ar-Ra'd",
+        "count": 1,
+        "n_verses": 43,
+        "density": 0.023255813953488372
+      },
+      {
+        "surah": 20,
+        "name": "Taha",
+        "count": 3,
+        "n_verses": 135,
+        "density": 0.022222222222222223
+      },
+      {
+        "surah": 50,
+        "name": "Qaf",
+        "count": 1,
+        "n_verses": 45,
+        "density": 0.022222222222222223
+      }
+    ]
+  },
+  "null_distribution": {
+    "q19_rank_mean": 26.9702,
+    "q19_rank_p05": 7,
+    "p_value_le_observed_rank": 0.0006
+  },
+  "verdict": {
+    "direction_locked": "Q 19 rank = 1 absolute count, p < 0.0125",
+    "pass_h1": true,
+    "pass_h2_q19_gt_q55": true,
+    "note": "Q 19 abs count = 12 (rank 1); Q 55 = 1; classical-vs-empirical inversion: CONFIRMED"
+  }
+}

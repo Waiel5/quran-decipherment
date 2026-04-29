@@ -1,0 +1,58 @@
+{
+  "k_means": {
+    "3": {
+      "silhouette": 0.21440003196019045,
+      "calinski_harabasz": 27.891289433717976,
+      "inertia": 1593.2959053907766
+    },
+    "4": {
+      "silhouette": 0.1327378517037492,
+      "calinski_harabasz": 21.756531834493604,
+      "inertia": 1502.4853525993908
+    },
+    "5": {
+      "silhouette": 0.18433176707095192,
+      "calinski_harabasz": 18.95583713042166,
+      "inertia": 1411.8670724623373
+    },
+    "6": {
+      "silhouette": 0.1664107773029065,
+      "calinski_harabasz": 17.41275749315902,
+      "inertia": 1325.4741095670447
+    },
+    "7": {
+      "silhouette": 0.14765670308272527,
+      "calinski_harabasz": 16.552068454241006,
+      "inertia": 1241.6024760666814
+    },
+    "8": {
+      "silhouette": 0.16148157093856175,
+      "calinski_harabasz": 15.66800008480443,
+      "inertia": 1176.5982274408595
+    },
+    "10": {
+      "silhouette": 0.1691596242626533,
+      "calinski_harabasz": 14.998496626439385,
+      "inertia": 1041.7995645409503
+    }
+  },
+  "hdbscan": {
+    "3": {
+      "n_clusters_found": 7,
+      "n_noise": 69,
+      "silhouette": 0.30302054029028475
+    },
+    "5": {
+      "n_clusters_found": 2,
+      "n_noise": 66,
+      "silhouette": 0.4113399099461377
+    },
+    "7": {
+      "n_clusters_found": 0,
+      "n_noise": 114,
+      "silhouette": NaN
+    }
+  },
+  "best_k": 3,
+  "best_silhouette": 0.21440003196019045
+}

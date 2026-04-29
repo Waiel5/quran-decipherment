@@ -1,0 +1,2217 @@
+{
+  "meta": {
+    "id": "H-NEW-95",
+    "date": "2026-04-17",
+    "seed": 20260417,
+    "n_perm": 10000,
+    "bonferroni_k": 5,
+    "bonferroni_family": "h-new-95-khawatim-extension",
+    "alpha_bon": 0.01,
+    "rules_tuple": "(no-tashkeel; substring search of definite-singular ال + name; word-matching with proclitic-prefix tolerance; hafs-kufan; 6236 verses; basmala-counted-only-in-surah-1; mashriqi)",
+    "khawatim_9_names": [
+      "القدوس",
+      "السلام",
+      "المؤمن",
+      "المهيمن",
+      "الجبار",
+      "المتكبر",
+      "الخالق",
+      "البارئ",
+      "المصور"
+    ]
+  },
+  "corpus_stats": {
+    "n_surahs": 114,
+    "n_verses": 6236,
+    "n_total_words": 82375
+  },
+  "per_name_khawatim_counts": {
+    "القدوس": {
+      "verses": 2,
+      "tokens": 2,
+      "surahs": 2,
+      "surah_list": [
+        59,
+        62
+      ]
+    },
+    "السلام": {
+      "verses": 7,
+      "tokens": 7,
+      "surahs": 7,
+      "surah_list": [
+        4,
+        5,
+        6,
+        10,
+        19,
+        20,
+        59
+      ]
+    },
+    "المؤمن": {
+      "verses": 1,
+      "tokens": 1,
+      "surahs": 1,
+      "surah_list": [
+        59
+      ]
+    },
+    "المهيمن": {
+      "verses": 1,
+      "tokens": 1,
+      "surahs": 1,
+      "surah_list": [
+        59
+      ]
+    },
+    "الجبار": {
+      "verses": 1,
+      "tokens": 1,
+      "surahs": 1,
+      "surah_list": [
+        59
+      ]
+    },
+    "المتكبر": {
+      "verses": 1,
+      "tokens": 1,
+      "surahs": 1,
+      "surah_list": [
+        59
+      ]
+    },
+    "الخالق": {
+      "verses": 1,
+      "tokens": 1,
+      "surahs": 1,
+      "surah_list": [
+        59
+      ]
+    },
+    "البارئ": {
+      "verses": 1,
+      "tokens": 1,
+      "surahs": 1,
+      "surah_list": [
+        59
+      ]
+    },
+    "المصور": {
+      "verses": 1,
+      "tokens": 1,
+      "surahs": 1,
+      "surah_list": [
+        59
+      ]
+    }
+  },
+  "cell_A_one_name_echo_verses": {
+    "count": 9,
+    "verse_list_sorted_by_n_names": [
+      {
+        "sid": 59,
+        "vid": 23,
+        "n_names": 6,
+        "names": [
+          "القدوس",
+          "السلام",
+          "المؤمن",
+          "المهيمن",
+          "الجبار",
+          "المتكبر"
+        ],
+        "total_tokens": 6
+      },
+      {
+        "sid": 59,
+        "vid": 24,
+        "n_names": 3,
+        "names": [
+          "الخالق",
+          "البارئ",
+          "المصور"
+        ],
+        "total_tokens": 3
+      },
+      {
+        "sid": 4,
+        "vid": 94,
+        "n_names": 1,
+        "names": [
+          "السلام"
+        ],
+        "total_tokens": 1
+      },
+      {
+        "sid": 5,
+        "vid": 16,
+        "n_names": 1,
+        "names": [
+          "السلام"
+        ],
+        "total_tokens": 1
+      },
+      {
+        "sid": 6,
+        "vid": 127,
+        "n_names": 1,
+        "names": [
+          "السلام"
+        ],
+        "total_tokens": 1
+      },
+      {
+        "sid": 10,
+        "vid": 25,
+        "n_names": 1,
+        "names": [
+          "السلام"
+        ],
+        "total_tokens": 1
+      },
+      {
+        "sid": 19,
+        "vid": 33,
+        "n_names": 1,
+        "names": [
+          "السلام"
+        ],
+        "total_tokens": 1
+      },
+      {
+        "sid": 20,
+        "vid": 47,
+        "n_names": 1,
+        "names": [
+          "السلام"
+        ],
+        "total_tokens": 1
+      },
+      {
+        "sid": 62,
+        "vid": 1,
+        "n_names": 1,
+        "names": [
+          "القدوس"
+        ],
+        "total_tokens": 1
+      }
+    ],
+    "total_tokens_across_corpus": 16
+  },
+  "cell_B_two_name_echo_verses": {
+    "count": 2,
+    "verse_list": [
+      {
+        "sid": 59,
+        "vid": 23,
+        "n_khawatim_names": 6,
+        "names": [
+          "القدوس",
+          "السلام",
+          "المؤمن",
+          "المهيمن",
+          "الجبار",
+          "المتكبر"
+        ],
+        "total_tokens": 6,
+        "verse_text": "هو الله الذي لا إله إلا هو الملك القدوس السلام المؤمن المهيمن العزيز الجبار المتكبر ۚ سبحان الله عما يشركون"
+      },
+      {
+        "sid": 59,
+        "vid": 24,
+        "n_khawatim_names": 3,
+        "names": [
+          "الخالق",
+          "البارئ",
+          "المصور"
+        ],
+        "total_tokens": 3,
+        "verse_text": "هو الله الخالق البارئ المصور ۖ له الأسماء الحسنى ۚ يسبح له ما في السماوات والأرض ۖ وهو العزيز الحكيم"
+      }
+    ]
+  },
+  "cell_C_network": {
+    "degree_distribution": {
+      "6": 1,
+      "1": 7,
+      "3": 1
+    },
+    "K_obs_geq2": 2,
+    "K_obs_geq3": 2,
+    "null_n_perm": 10000,
+    "null_K_geq2_mean": 0.0241,
+    "null_K_geq2_sd": 0.15466603427454853,
+    "null_K_geq3_mean": 0.0001,
+    "null_K_geq3_sd": 0.01,
+    "p_one_sided_K_geq2": 0.0002,
+    "p_one_sided_K_geq3": 0.0,
+    "pass_at_alpha_bon_K_geq2": true,
+    "pass_at_alpha_bon_K_geq3": true,
+    "null_K_geq2_max": 2,
+    "null_K_geq3_max": 1
+  },
+  "cell_D_surah_aggregation": {
+    "top_5_by_density": [
+      {
+        "sid": 59,
+        "name": "الحشر",
+        "translit": "Al-Hashr",
+        "type": "medinan",
+        "total_words": 478,
+        "khawatim_tokens": 9,
+        "density": 0.01882845188284519
+      },
+      {
+        "sid": 62,
+        "name": "الجمعة",
+        "translit": "Al-Jumu'ah",
+        "type": "medinan",
+        "total_words": 186,
+        "khawatim_tokens": 1,
+        "density": 0.005376344086021506
+      },
+      {
+        "sid": 19,
+        "name": "مريم",
+        "translit": "Maryam",
+        "type": "meccan",
+        "total_words": 1012,
+        "khawatim_tokens": 1,
+        "density": 0.0009881422924901185
+      },
+      {
+        "sid": 20,
+        "name": "طه",
+        "translit": "Taha",
+        "type": "meccan",
+        "total_words": 1409,
+        "khawatim_tokens": 1,
+        "density": 0.0007097232079489
+      },
+      {
+        "sid": 10,
+        "name": "يونس",
+        "translit": "Yunus",
+        "type": "meccan",
+        "total_words": 1964,
+        "khawatim_tokens": 1,
+        "density": 0.0005091649694501018
+      }
+    ],
+    "top_20_ranking": [
+      {
+        "sid": 59,
+        "name": "الحشر",
+        "translit": "Al-Hashr",
+        "type": "medinan",
+        "total_words": 478,
+        "khawatim_tokens": 9,
+        "density": 0.01882845188284519
+      },
+      {
+        "sid": 62,
+        "name": "الجمعة",
+        "translit": "Al-Jumu'ah",
+        "type": "medinan",
+        "total_words": 186,
+        "khawatim_tokens": 1,
+        "density": 0.005376344086021506
+      },
+      {
+        "sid": 19,
+        "name": "مريم",
+        "translit": "Maryam",
+        "type": "meccan",
+        "total_words": 1012,
+        "khawatim_tokens": 1,
+        "density": 0.0009881422924901185
+      },
+      {
+        "sid": 20,
+        "name": "طه",
+        "translit": "Taha",
+        "type": "meccan",
+        "total_words": 1409,
+        "khawatim_tokens": 1,
+        "density": 0.0007097232079489
+      },
+      {
+        "sid": 10,
+        "name": "يونس",
+        "translit": "Yunus",
+        "type": "meccan",
+        "total_words": 1964,
+        "khawatim_tokens": 1,
+        "density": 0.0005091649694501018
+      },
+      {
+        "sid": 5,
+        "name": "المائدة",
+        "translit": "Al-Ma'idah",
+        "type": "medinan",
+        "total_words": 3047,
+        "khawatim_tokens": 1,
+        "density": 0.0003281916639317361
+      },
+      {
+        "sid": 6,
+        "name": "الأنعام",
+        "translit": "Al-An'am",
+        "type": "meccan",
+        "total_words": 3304,
+        "khawatim_tokens": 1,
+        "density": 0.0003026634382566586
+      },
+      {
+        "sid": 4,
+        "name": "النساء",
+        "translit": "An-Nisa",
+        "type": "medinan",
+        "total_words": 4029,
+        "khawatim_tokens": 1,
+        "density": 0.0002482005460412013
+      },
+      {
+        "sid": 1,
+        "name": "الفاتحة",
+        "translit": "Al-Fatihah",
+        "type": "meccan",
+        "total_words": 29,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 2,
+        "name": "البقرة",
+        "translit": "Al-Baqarah",
+        "type": "medinan",
+        "total_words": 6630,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 3,
+        "name": "آل عمران",
+        "translit": "Ali 'Imran",
+        "type": "medinan",
+        "total_words": 3717,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 7,
+        "name": "الأعراف",
+        "translit": "Al-A'raf",
+        "type": "meccan",
+        "total_words": 3551,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 8,
+        "name": "الأنفال",
+        "translit": "Al-Anfal",
+        "type": "medinan",
+        "total_words": 1320,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 9,
+        "name": "التوبة",
+        "translit": "At-Tawbah",
+        "type": "medinan",
+        "total_words": 2674,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 11,
+        "name": "هود",
+        "translit": "Hud",
+        "type": "meccan",
+        "total_words": 2083,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 12,
+        "name": "يوسف",
+        "translit": "Yusuf",
+        "type": "meccan",
+        "total_words": 1912,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 13,
+        "name": "الرعد",
+        "translit": "Ar-Ra'd",
+        "type": "medinan",
+        "total_words": 928,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 14,
+        "name": "ابراهيم",
+        "translit": "Ibrahim",
+        "type": "meccan",
+        "total_words": 885,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 15,
+        "name": "الحجر",
+        "translit": "Al-Hijr",
+        "type": "meccan",
+        "total_words": 666,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 16,
+        "name": "النحل",
+        "translit": "An-Nahl",
+        "type": "meccan",
+        "total_words": 1963,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      }
+    ],
+    "all_114_ranking": [
+      {
+        "sid": 59,
+        "name": "الحشر",
+        "translit": "Al-Hashr",
+        "type": "medinan",
+        "total_words": 478,
+        "khawatim_tokens": 9,
+        "density": 0.01882845188284519
+      },
+      {
+        "sid": 62,
+        "name": "الجمعة",
+        "translit": "Al-Jumu'ah",
+        "type": "medinan",
+        "total_words": 186,
+        "khawatim_tokens": 1,
+        "density": 0.005376344086021506
+      },
+      {
+        "sid": 19,
+        "name": "مريم",
+        "translit": "Maryam",
+        "type": "meccan",
+        "total_words": 1012,
+        "khawatim_tokens": 1,
+        "density": 0.0009881422924901185
+      },
+      {
+        "sid": 20,
+        "name": "طه",
+        "translit": "Taha",
+        "type": "meccan",
+        "total_words": 1409,
+        "khawatim_tokens": 1,
+        "density": 0.0007097232079489
+      },
+      {
+        "sid": 10,
+        "name": "يونس",
+        "translit": "Yunus",
+        "type": "meccan",
+        "total_words": 1964,
+        "khawatim_tokens": 1,
+        "density": 0.0005091649694501018
+      },
+      {
+        "sid": 5,
+        "name": "المائدة",
+        "translit": "Al-Ma'idah",
+        "type": "medinan",
+        "total_words": 3047,
+        "khawatim_tokens": 1,
+        "density": 0.0003281916639317361
+      },
+      {
+        "sid": 6,
+        "name": "الأنعام",
+        "translit": "Al-An'am",
+        "type": "meccan",
+        "total_words": 3304,
+        "khawatim_tokens": 1,
+        "density": 0.0003026634382566586
+      },
+      {
+        "sid": 4,
+        "name": "النساء",
+        "translit": "An-Nisa",
+        "type": "medinan",
+        "total_words": 4029,
+        "khawatim_tokens": 1,
+        "density": 0.0002482005460412013
+      },
+      {
+        "sid": 1,
+        "name": "الفاتحة",
+        "translit": "Al-Fatihah",
+        "type": "meccan",
+        "total_words": 29,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 2,
+        "name": "البقرة",
+        "translit": "Al-Baqarah",
+        "type": "medinan",
+        "total_words": 6630,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 3,
+        "name": "آل عمران",
+        "translit": "Ali 'Imran",
+        "type": "medinan",
+        "total_words": 3717,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 7,
+        "name": "الأعراف",
+        "translit": "Al-A'raf",
+        "type": "meccan",
+        "total_words": 3551,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 8,
+        "name": "الأنفال",
+        "translit": "Al-Anfal",
+        "type": "medinan",
+        "total_words": 1320,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 9,
+        "name": "التوبة",
+        "translit": "At-Tawbah",
+        "type": "medinan",
+        "total_words": 2674,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 11,
+        "name": "هود",
+        "translit": "Hud",
+        "type": "meccan",
+        "total_words": 2083,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 12,
+        "name": "يوسف",
+        "translit": "Yusuf",
+        "type": "meccan",
+        "total_words": 1912,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 13,
+        "name": "الرعد",
+        "translit": "Ar-Ra'd",
+        "type": "medinan",
+        "total_words": 928,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 14,
+        "name": "ابراهيم",
+        "translit": "Ibrahim",
+        "type": "meccan",
+        "total_words": 885,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 15,
+        "name": "الحجر",
+        "translit": "Al-Hijr",
+        "type": "meccan",
+        "total_words": 666,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 16,
+        "name": "النحل",
+        "translit": "An-Nahl",
+        "type": "meccan",
+        "total_words": 1963,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 17,
+        "name": "الإسراء",
+        "translit": "Al-Isra",
+        "type": "meccan",
+        "total_words": 1644,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 18,
+        "name": "الكهف",
+        "translit": "Al-Kahf",
+        "type": "meccan",
+        "total_words": 1657,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 21,
+        "name": "الأنبياء",
+        "translit": "Al-Anbya",
+        "type": "meccan",
+        "total_words": 1236,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 22,
+        "name": "الحج",
+        "translit": "Al-Hajj",
+        "type": "medinan",
+        "total_words": 1356,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 23,
+        "name": "المؤمنون",
+        "translit": "Al-Mu'minun",
+        "type": "meccan",
+        "total_words": 1089,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 24,
+        "name": "النور",
+        "translit": "An-Nur",
+        "type": "medinan",
+        "total_words": 1415,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 25,
+        "name": "الفرقان",
+        "translit": "Al-Furqan",
+        "type": "meccan",
+        "total_words": 932,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 26,
+        "name": "الشعراء",
+        "translit": "Ash-Shu'ara",
+        "type": "meccan",
+        "total_words": 1353,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 27,
+        "name": "النمل",
+        "translit": "An-Naml",
+        "type": "meccan",
+        "total_words": 1215,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 28,
+        "name": "القصص",
+        "translit": "Al-Qasas",
+        "type": "meccan",
+        "total_words": 1520,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 29,
+        "name": "العنكبوت",
+        "translit": "Al-'Ankabut",
+        "type": "meccan",
+        "total_words": 1044,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 30,
+        "name": "الروم",
+        "translit": "Ar-Rum",
+        "type": "meccan",
+        "total_words": 868,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 31,
+        "name": "لقمان",
+        "translit": "Luqman",
+        "type": "meccan",
+        "total_words": 586,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 32,
+        "name": "السجدة",
+        "translit": "As-Sajdah",
+        "type": "meccan",
+        "total_words": 390,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 33,
+        "name": "الأحزاب",
+        "translit": "Al-Ahzab",
+        "type": "medinan",
+        "total_words": 1384,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 34,
+        "name": "سبإ",
+        "translit": "Saba",
+        "type": "meccan",
+        "total_words": 940,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 35,
+        "name": "فاطر",
+        "translit": "Fatir",
+        "type": "meccan",
+        "total_words": 844,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 36,
+        "name": "يس",
+        "translit": "Ya-Sin",
+        "type": "meccan",
+        "total_words": 754,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 37,
+        "name": "الصافات",
+        "translit": "As-Saffat",
+        "type": "meccan",
+        "total_words": 881,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 38,
+        "name": "ص",
+        "translit": "Sad",
+        "type": "meccan",
+        "total_words": 774,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 39,
+        "name": "الزمر",
+        "translit": "Az-Zumar",
+        "type": "meccan",
+        "total_words": 1259,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 40,
+        "name": "غافر",
+        "translit": "Ghafir",
+        "type": "meccan",
+        "total_words": 1296,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 41,
+        "name": "فصلت",
+        "translit": "Fussilat",
+        "type": "meccan",
+        "total_words": 838,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 42,
+        "name": "الشورى",
+        "translit": "Ash-Shuraa",
+        "type": "meccan",
+        "total_words": 932,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 43,
+        "name": "الزخرف",
+        "translit": "Az-Zukhruf",
+        "type": "meccan",
+        "total_words": 870,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 44,
+        "name": "الدخان",
+        "translit": "Ad-Dukhan",
+        "type": "meccan",
+        "total_words": 364,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 45,
+        "name": "الجاثية",
+        "translit": "Al-Jathiyah",
+        "type": "meccan",
+        "total_words": 512,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 46,
+        "name": "الأحقاف",
+        "translit": "Al-Ahqaf",
+        "type": "meccan",
+        "total_words": 676,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 47,
+        "name": "محمد",
+        "translit": "Muhammad",
+        "type": "medinan",
+        "total_words": 570,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 48,
+        "name": "الفتح",
+        "translit": "Al-Fath",
+        "type": "medinan",
+        "total_words": 600,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 49,
+        "name": "الحجرات",
+        "translit": "Al-Hujurat",
+        "type": "medinan",
+        "total_words": 382,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 50,
+        "name": "ق",
+        "translit": "Qaf",
+        "type": "meccan",
+        "total_words": 389,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 51,
+        "name": "الذاريات",
+        "translit": "Adh-Dhariyat",
+        "type": "meccan",
+        "total_words": 371,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 52,
+        "name": "الطور",
+        "translit": "At-Tur",
+        "type": "meccan",
+        "total_words": 324,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 53,
+        "name": "النجم",
+        "translit": "An-Najm",
+        "type": "meccan",
+        "total_words": 372,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 54,
+        "name": "القمر",
+        "translit": "Al-Qamar",
+        "type": "meccan",
+        "total_words": 350,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 55,
+        "name": "الرحمن",
+        "translit": "Ar-Rahman",
+        "type": "medinan",
+        "total_words": 355,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 56,
+        "name": "الواقعة",
+        "translit": "Al-Waqi'ah",
+        "type": "meccan",
+        "total_words": 380,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 57,
+        "name": "الحديد",
+        "translit": "Al-Hadid",
+        "type": "medinan",
+        "total_words": 618,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 58,
+        "name": "المجادلة",
+        "translit": "Al-Mujadila",
+        "type": "medinan",
+        "total_words": 516,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 60,
+        "name": "الممتحنة",
+        "translit": "Al-Mumtahanah",
+        "type": "medinan",
+        "total_words": 377,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 61,
+        "name": "الصف",
+        "translit": "As-Saf",
+        "type": "medinan",
+        "total_words": 238,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 63,
+        "name": "المنافقون",
+        "translit": "Al-Munafiqun",
+        "type": "medinan",
+        "total_words": 195,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 64,
+        "name": "التغابن",
+        "translit": "At-Taghabun",
+        "type": "medinan",
+        "total_words": 264,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 65,
+        "name": "الطلاق",
+        "translit": "At-Talaq",
+        "type": "medinan",
+        "total_words": 313,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 66,
+        "name": "التحريم",
+        "translit": "At-Tahrim",
+        "type": "medinan",
+        "total_words": 268,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 67,
+        "name": "الملك",
+        "translit": "Al-Mulk",
+        "type": "meccan",
+        "total_words": 348,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 68,
+        "name": "القلم",
+        "translit": "Al-Qalam",
+        "type": "meccan",
+        "total_words": 308,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 69,
+        "name": "الحاقة",
+        "translit": "Al-Haqqah",
+        "type": "meccan",
+        "total_words": 264,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 70,
+        "name": "المعارج",
+        "translit": "Al-Ma'arij",
+        "type": "meccan",
+        "total_words": 222,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 71,
+        "name": "نوح",
+        "translit": "Nuh",
+        "type": "meccan",
+        "total_words": 230,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 72,
+        "name": "الجن",
+        "translit": "Al-Jinn",
+        "type": "meccan",
+        "total_words": 293,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 73,
+        "name": "المزمل",
+        "translit": "Al-Muzzammil",
+        "type": "meccan",
+        "total_words": 214,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 74,
+        "name": "المدثر",
+        "translit": "Al-Muddaththir",
+        "type": "meccan",
+        "total_words": 265,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 75,
+        "name": "القيامة",
+        "translit": "Al-Qiyamah",
+        "type": "meccan",
+        "total_words": 165,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 76,
+        "name": "الانسان",
+        "translit": "Al-Insan",
+        "type": "medinan",
+        "total_words": 250,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 77,
+        "name": "المرسلات",
+        "translit": "Al-Mursalat",
+        "type": "meccan",
+        "total_words": 182,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 78,
+        "name": "النبإ",
+        "translit": "An-Naba",
+        "type": "meccan",
+        "total_words": 177,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 79,
+        "name": "النازعات",
+        "translit": "An-Nazi'at",
+        "type": "meccan",
+        "total_words": 180,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 80,
+        "name": "عبس",
+        "translit": "'Abasa",
+        "type": "meccan",
+        "total_words": 133,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 81,
+        "name": "التكوير",
+        "translit": "At-Takwir",
+        "type": "meccan",
+        "total_words": 104,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 82,
+        "name": "الإنفطار",
+        "translit": "Al-Infitar",
+        "type": "meccan",
+        "total_words": 82,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 83,
+        "name": "المطففين",
+        "translit": "Al-Mutaffifin",
+        "type": "meccan",
+        "total_words": 172,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 84,
+        "name": "الإنشقاق",
+        "translit": "Al-Inshiqaq",
+        "type": "meccan",
+        "total_words": 109,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 85,
+        "name": "البروج",
+        "translit": "Al-Buruj",
+        "type": "meccan",
+        "total_words": 111,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 86,
+        "name": "الطارق",
+        "translit": "At-Tariq",
+        "type": "meccan",
+        "total_words": 61,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 87,
+        "name": "الأعلى",
+        "translit": "Al-A'la",
+        "type": "meccan",
+        "total_words": 73,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 88,
+        "name": "الغاشية",
+        "translit": "Al-Ghashiyah",
+        "type": "meccan",
+        "total_words": 92,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 89,
+        "name": "الفجر",
+        "translit": "Al-Fajr",
+        "type": "meccan",
+        "total_words": 141,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 90,
+        "name": "البلد",
+        "translit": "Al-Balad",
+        "type": "meccan",
+        "total_words": 82,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 91,
+        "name": "الشمس",
+        "translit": "Ash-Shams",
+        "type": "meccan",
+        "total_words": 54,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 92,
+        "name": "الليل",
+        "translit": "Al-Layl",
+        "type": "meccan",
+        "total_words": 71,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 93,
+        "name": "الضحى",
+        "translit": "Ad-Duhaa",
+        "type": "meccan",
+        "total_words": 40,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 94,
+        "name": "الشرح",
+        "translit": "Ash-Sharh",
+        "type": "meccan",
+        "total_words": 27,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 95,
+        "name": "التين",
+        "translit": "At-Tin",
+        "type": "meccan",
+        "total_words": 34,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 96,
+        "name": "العلق",
+        "translit": "Al-'Alaq",
+        "type": "meccan",
+        "total_words": 73,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 97,
+        "name": "القدر",
+        "translit": "Al-Qadr",
+        "type": "meccan",
+        "total_words": 30,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 98,
+        "name": "البينة",
+        "translit": "Al-Bayyinah",
+        "type": "medinan",
+        "total_words": 98,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 99,
+        "name": "الزلزلة",
+        "translit": "Az-Zalzalah",
+        "type": "medinan",
+        "total_words": 36,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 100,
+        "name": "العاديات",
+        "translit": "Al-'Adiyat",
+        "type": "meccan",
+        "total_words": 41,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 101,
+        "name": "القارعة",
+        "translit": "Al-Qari'ah",
+        "type": "meccan",
+        "total_words": 36,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 102,
+        "name": "التكاثر",
+        "translit": "At-Takathur",
+        "type": "meccan",
+        "total_words": 28,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 103,
+        "name": "العصر",
+        "translit": "Al-'Asr",
+        "type": "meccan",
+        "total_words": 14,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 104,
+        "name": "الهمزة",
+        "translit": "Al-Humazah",
+        "type": "meccan",
+        "total_words": 34,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 105,
+        "name": "الفيل",
+        "translit": "Al-Fil",
+        "type": "meccan",
+        "total_words": 23,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 106,
+        "name": "قريش",
+        "translit": "Quraysh",
+        "type": "meccan",
+        "total_words": 17,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 107,
+        "name": "الماعون",
+        "translit": "Al-Ma'un",
+        "type": "meccan",
+        "total_words": 25,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 108,
+        "name": "الكوثر",
+        "translit": "Al-Kawthar",
+        "type": "meccan",
+        "total_words": 10,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 109,
+        "name": "الكافرون",
+        "translit": "Al-Kafirun",
+        "type": "meccan",
+        "total_words": 27,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 110,
+        "name": "النصر",
+        "translit": "An-Nasr",
+        "type": "medinan",
+        "total_words": 20,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 111,
+        "name": "المسد",
+        "translit": "Al-Masad",
+        "type": "meccan",
+        "total_words": 23,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 112,
+        "name": "الإخلاص",
+        "translit": "Al-Ikhlas",
+        "type": "meccan",
+        "total_words": 15,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 113,
+        "name": "الفلق",
+        "translit": "Al-Falaq",
+        "type": "meccan",
+        "total_words": 23,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      },
+      {
+        "sid": 114,
+        "name": "الناس",
+        "translit": "An-Nas",
+        "type": "meccan",
+        "total_words": 20,
+        "khawatim_tokens": 0,
+        "density": 0.0
+      }
+    ],
+    "top_5_token_concentration_obs": 0.8125,
+    "top_5_token_concentration_null_mean": 0.470575,
+    "top_5_token_concentration_null_sd": 0.08550252448418887,
+    "p_one_sided_top_5": 0.0003,
+    "pass_at_alpha_bon_top_5": true,
+    "top_5_by_tokens": [
+      59,
+      62,
+      4,
+      5,
+      6
+    ],
+    "total_khawatim_tokens_corpus": 16
+  },
+  "cell_E_reverse_direction": {
+    "Q_59_22_24_F": 19,
+    "n_windows": 6234,
+    "null_mean_F": 1.5673724735322425,
+    "null_sd_F": 2.056408263558803,
+    "null_max_F": 19,
+    "percentile_Q_59_22_24": 0.9998395893487327,
+    "p_one_sided_geq": 0.00016041065126724414,
+    "p_one_sided_strict": 0.0,
+    "pass_top_1_percent": true,
+    "pass_at_alpha_bon": true,
+    "top_20_3verse_windows": [
+      {
+        "start_sid": 59,
+        "start_vid": 22,
+        "end_sid": 59,
+        "end_vid": 24,
+        "F": 19
+      },
+      {
+        "start_sid": 59,
+        "start_vid": 23,
+        "end_sid": 60,
+        "end_vid": 1,
+        "F": 18
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 282,
+        "end_sid": 2,
+        "end_vid": 284,
+        "F": 14
+      },
+      {
+        "start_sid": 59,
+        "start_vid": 21,
+        "end_sid": 59,
+        "end_vid": 23,
+        "F": 14
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 281,
+        "end_sid": 2,
+        "end_vid": 283,
+        "F": 13
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 245,
+        "end_sid": 2,
+        "end_vid": 247,
+        "F": 11
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 251,
+        "end_sid": 2,
+        "end_vid": 253,
+        "F": 11
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 280,
+        "end_sid": 2,
+        "end_vid": 282,
+        "F": 11
+      },
+      {
+        "start_sid": 9,
+        "start_vid": 18,
+        "end_sid": 9,
+        "end_vid": 20,
+        "F": 11
+      },
+      {
+        "start_sid": 33,
+        "start_vid": 37,
+        "end_sid": 33,
+        "end_vid": 39,
+        "F": 11
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 228,
+        "end_sid": 2,
+        "end_vid": 230,
+        "F": 10
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 229,
+        "end_sid": 2,
+        "end_vid": 231,
+        "F": 10
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 231,
+        "end_sid": 2,
+        "end_vid": 233,
+        "F": 10
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 247,
+        "end_sid": 2,
+        "end_vid": 249,
+        "F": 10
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 255,
+        "end_sid": 2,
+        "end_vid": 257,
+        "F": 10
+      },
+      {
+        "start_sid": 2,
+        "start_vid": 257,
+        "end_sid": 2,
+        "end_vid": 259,
+        "F": 10
+      },
+      {
+        "start_sid": 4,
+        "start_vid": 93,
+        "end_sid": 4,
+        "end_vid": 95,
+        "F": 10
+      },
+      {
+        "start_sid": 4,
+        "start_vid": 94,
+        "end_sid": 4,
+        "end_vid": 96,
+        "F": 10
+      },
+      {
+        "start_sid": 5,
+        "start_vid": 2,
+        "end_sid": 5,
+        "end_vid": 4,
+        "F": 10
+      },
+      {
+        "start_sid": 5,
+        "start_vid": 47,
+        "end_sid": 5,
+        "end_vid": 49,
+        "F": 10
+      }
+    ]
+  },
+  "robustness_broader_inventory": {
+    "description": "Secondary inventory: 14 distinct divine names in Q 59:22-24 (includes al-Malik, al-Raḥmān, al-Raḥīm, al-ʿAzīz, al-Ḥakīm — all non-exclusive). This is the inventory H-NEW-63 used implicitly when counting Q 62:1 as a 3-name echo.",
+    "inventory": [
+      "الرحمن",
+      "الرحيم",
+      "الملك",
+      "القدوس",
+      "السلام",
+      "المؤمن",
+      "المهيمن",
+      "العزيز",
+      "الجبار",
+      "المتكبر",
+      "الخالق",
+      "البارئ",
+      "المصور",
+      "الحكيم"
+    ],
+    "verses_with_geq_2": 50,
+    "verses_with_geq_3": 3,
+    "verses_with_geq_5": 2,
+    "verses_with_geq_2_list": [
+      {
+        "sid": 1,
+        "vid": 1,
+        "n_names": 2,
+        "names": [
+          "الرحمن",
+          "الرحيم"
+        ],
+        "verse_text": "بسم الله الرحمن الرحيم"
+      },
+      {
+        "sid": 1,
+        "vid": 3,
+        "n_names": 2,
+        "names": [
+          "الرحمن",
+          "الرحيم"
+        ],
+        "verse_text": "الرحمن الرحيم"
+      },
+      {
+        "sid": 2,
+        "vid": 129,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "ربنا وابعث فيهم رسولا منهم يتلو عليهم آياتك ويعلمهم الكتاب والحكمة ويزكيهم ۚ إنك أنت العزيز الحكيم"
+      },
+      {
+        "sid": 2,
+        "vid": 163,
+        "n_names": 2,
+        "names": [
+          "الرحمن",
+          "الرحيم"
+        ],
+        "verse_text": "وإلهكم إله واحد ۖ لا إله إلا هو الرحمن الرحيم"
+      },
+      {
+        "sid": 3,
+        "vid": 6,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "هو الذي يصوركم في الأرحام كيف يشاء ۚ لا إله إلا هو العزيز الحكيم"
+      },
+      {
+        "sid": 3,
+        "vid": 18,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "شهد الله أنه لا إله إلا هو والملائكة وأولو العلم قائما بالقسط ۚ لا إله إلا هو العزيز الحكيم"
+      },
+      {
+        "sid": 3,
+        "vid": 62,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "إن هذا لهو القصص الحق ۚ وما من إله إلا الله ۚ وإن الله لهو العزيز الحكيم"
+      },
+      {
+        "sid": 3,
+        "vid": 126,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "وما جعله الله إلا بشرى لكم ولتطمئن قلوبكم به ۗ وما النصر إلا من عند الله العزيز الحكيم"
+      },
+      {
+        "sid": 5,
+        "vid": 118,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "إن تعذبهم فإنهم عبادك ۖ وإن تغفر لهم فإنك أنت العزيز الحكيم"
+      },
+      {
+        "sid": 6,
+        "vid": 73,
+        "n_names": 2,
+        "names": [
+          "الملك",
+          "الحكيم"
+        ],
+        "verse_text": "وهو الذي خلق السماوات والأرض بالحق ۖ ويوم يقول كن فيكون ۚ قوله الحق ۚ وله الملك يوم ينفخ في الصور ۚ عالم الغيب والشهادة ۚ وهو الحكيم الخبير"
+      },
+      {
+        "sid": 14,
+        "vid": 4,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "وما أرسلنا من رسول إلا بلسان قومه ليبين لهم ۖ فيضل الله من يشاء ويهدي من يشاء ۚ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 16,
+        "vid": 60,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "للذين لا يؤمنون بالآخرة مثل السوء ۖ ولله المثل الأعلى ۚ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 26,
+        "vid": 9,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "وإن ربك لهو العزيز الرحيم"
+      },
+      {
+        "sid": 26,
+        "vid": 68,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "وإن ربك لهو العزيز الرحيم"
+      },
+      {
+        "sid": 26,
+        "vid": 104,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "وإن ربك لهو العزيز الرحيم"
+      },
+      {
+        "sid": 26,
+        "vid": 122,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "وإن ربك لهو العزيز الرحيم"
+      },
+      {
+        "sid": 26,
+        "vid": 140,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "وإن ربك لهو العزيز الرحيم"
+      },
+      {
+        "sid": 26,
+        "vid": 159,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "وإن ربك لهو العزيز الرحيم"
+      },
+      {
+        "sid": 26,
+        "vid": 175,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "وإن ربك لهو العزيز الرحيم"
+      },
+      {
+        "sid": 26,
+        "vid": 191,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "وإن ربك لهو العزيز الرحيم"
+      },
+      {
+        "sid": 26,
+        "vid": 217,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "وتوكل على العزيز الرحيم"
+      },
+      {
+        "sid": 27,
+        "vid": 9,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "يا موسى إنه أنا الله العزيز الحكيم"
+      },
+      {
+        "sid": 27,
+        "vid": 30,
+        "n_names": 2,
+        "names": [
+          "الرحمن",
+          "الرحيم"
+        ],
+        "verse_text": "إنه من سليمان وإنه بسم الله الرحمن الرحيم"
+      },
+      {
+        "sid": 29,
+        "vid": 26,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "۞ فآمن له لوط ۘ وقال إني مهاجر إلى ربي ۖ إنه هو العزيز الحكيم"
+      },
+      {
+        "sid": 29,
+        "vid": 42,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "إن الله يعلم ما يدعون من دونه من شيء ۚ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 30,
+        "vid": 5,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "بنصر الله ۚ ينصر من يشاء ۖ وهو العزيز الرحيم"
+      },
+      {
+        "sid": 30,
+        "vid": 27,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "وهو الذي يبدأ الخلق ثم يعيده وهو أهون عليه ۚ وله المثل الأعلى في السماوات والأرض ۚ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 31,
+        "vid": 9,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "خالدين فيها ۖ وعد الله حقا ۚ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 32,
+        "vid": 6,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "ذلك عالم الغيب والشهادة العزيز الرحيم"
+      },
+      {
+        "sid": 34,
+        "vid": 27,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "قل أروني الذين ألحقتم به شركاء ۖ كلا ۚ بل هو الله العزيز الحكيم"
+      },
+      {
+        "sid": 35,
+        "vid": 2,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "ما يفتح الله للناس من رحمة فلا ممسك لها ۖ وما يمسك فلا مرسل له من بعده ۚ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 36,
+        "vid": 5,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "تنزيل العزيز الرحيم"
+      },
+      {
+        "sid": 39,
+        "vid": 1,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "تنزيل الكتاب من الله العزيز الحكيم"
+      },
+      {
+        "sid": 40,
+        "vid": 8,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "ربنا وأدخلهم جنات عدن التي وعدتهم ومن صلح من آبائهم وأزواجهم وذرياتهم ۚ إنك أنت العزيز الحكيم"
+      },
+      {
+        "sid": 41,
+        "vid": 2,
+        "n_names": 2,
+        "names": [
+          "الرحمن",
+          "الرحيم"
+        ],
+        "verse_text": "تنزيل من الرحمن الرحيم"
+      },
+      {
+        "sid": 42,
+        "vid": 3,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "كذلك يوحي إليك وإلى الذين من قبلك الله العزيز الحكيم"
+      },
+      {
+        "sid": 44,
+        "vid": 42,
+        "n_names": 2,
+        "names": [
+          "الرحيم",
+          "العزيز"
+        ],
+        "verse_text": "إلا من رحم الله ۚ إنه هو العزيز الرحيم"
+      },
+      {
+        "sid": 45,
+        "vid": 2,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "تنزيل الكتاب من الله العزيز الحكيم"
+      },
+      {
+        "sid": 45,
+        "vid": 37,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "وله الكبرياء في السماوات والأرض ۖ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 46,
+        "vid": 2,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "تنزيل الكتاب من الله العزيز الحكيم"
+      },
+      {
+        "sid": 57,
+        "vid": 1,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "سبح لله ما في السماوات والأرض ۖ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 59,
+        "vid": 1,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 59,
+        "vid": 22,
+        "n_names": 2,
+        "names": [
+          "الرحمن",
+          "الرحيم"
+        ],
+        "verse_text": "هو الله الذي لا إله إلا هو ۖ عالم الغيب والشهادة ۖ هو الرحمن الرحيم"
+      },
+      {
+        "sid": 59,
+        "vid": 23,
+        "n_names": 8,
+        "names": [
+          "الملك",
+          "القدوس",
+          "السلام",
+          "المؤمن",
+          "المهيمن",
+          "العزيز",
+          "الجبار",
+          "المتكبر"
+        ],
+        "verse_text": "هو الله الذي لا إله إلا هو الملك القدوس السلام المؤمن المهيمن العزيز الجبار المتكبر ۚ سبحان الله عما يشركون"
+      },
+      {
+        "sid": 59,
+        "vid": 24,
+        "n_names": 5,
+        "names": [
+          "العزيز",
+          "الخالق",
+          "البارئ",
+          "المصور",
+          "الحكيم"
+        ],
+        "verse_text": "هو الله الخالق البارئ المصور ۖ له الأسماء الحسنى ۚ يسبح له ما في السماوات والأرض ۖ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 60,
+        "vid": 5,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "ربنا لا تجعلنا فتنة للذين كفروا واغفر لنا ربنا ۖ إنك أنت العزيز الحكيم"
+      },
+      {
+        "sid": 61,
+        "vid": 1,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 62,
+        "vid": 1,
+        "n_names": 4,
+        "names": [
+          "الملك",
+          "القدوس",
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "يسبح لله ما في السماوات وما في الأرض الملك القدوس العزيز الحكيم"
+      },
+      {
+        "sid": 62,
+        "vid": 3,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "وآخرين منهم لما يلحقوا بهم ۚ وهو العزيز الحكيم"
+      },
+      {
+        "sid": 64,
+        "vid": 18,
+        "n_names": 2,
+        "names": [
+          "العزيز",
+          "الحكيم"
+        ],
+        "verse_text": "عالم الغيب والشهادة العزيز الحكيم"
+      }
+    ],
+    "interpretation": "Under the strict 9-name exclusive inventory (Cell B), only Q 59:23 and Q 59:24 qualify. Q 62:1 is a 1-name echo (al-Quddūs only) under the strict inventory. Under the broader 14-name Q 59:22-24 inventory, Q 62:1 becomes a 3-name echo, matching H-NEW-63."
+  }
+}

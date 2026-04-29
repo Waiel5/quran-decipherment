@@ -1,0 +1,427 @@
+{
+  "id": "H-NEW-263",
+  "title": "Divine-name surah-overlap network",
+  "seed": 20260418,
+  "pre_reg_sha256": "0aa9d2097bcba6c8b7ffd34cebd4c56645a6b6758fbdf274059c34bfc57f30c7",
+  "source_csv": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/divine-names-by-verse.csv",
+  "n_surahs": 114,
+  "n_canonical_names": 99,
+  "n_attested_names": 58,
+  "n_perm": 300,
+  "n_perm_mw5": 120,
+  "accepted_swaps_per_perm": 500,
+  "hub_threshold": 2,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "observed": {
+    "H_sum_w_sq": 17282,
+    "H_null_mean": 16614.34,
+    "H_null_sd": 244.25077112943657,
+    "H_p_upper": 0.006644518272425249,
+    "edge_count_ge1": 3603,
+    "edge_count_ge2": 1372,
+    "max_shared_names": 10,
+    "transitivity_ge2": 0.8215178656201538,
+    "transitivity_ge2_null_mean": 0.8237220858569907,
+    "transitivity_ge2_null_sd": 0.008975755958584733,
+    "cell_a_pass": true,
+    "top_edges": [
+      {
+        "surah_a": 2,
+        "surah_b": 3,
+        "shared_names": 10
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 5,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 40,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 5,
+        "surah_b": 6,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 6,
+        "surah_b": 10,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 40,
+        "surah_b": 42,
+        "shared_names": 9
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 6,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 10,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 27,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 2,
+        "surah_b": 42,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 3,
+        "surah_b": 5,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 3,
+        "surah_b": 40,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 5,
+        "surah_b": 10,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 5,
+        "surah_b": 29,
+        "shared_names": 8
+      },
+      {
+        "surah_a": 6,
+        "surah_b": 40,
+        "shared_names": 8
+      }
+    ],
+    "top_strength": [
+      {
+        "surah": 2,
+        "strength": 305
+      },
+      {
+        "surah": 40,
+        "strength": 267
+      },
+      {
+        "surah": 42,
+        "strength": 267
+      },
+      {
+        "surah": 5,
+        "strength": 263
+      },
+      {
+        "surah": 6,
+        "strength": 260
+      },
+      {
+        "surah": 27,
+        "strength": 258
+      },
+      {
+        "surah": 10,
+        "strength": 253
+      },
+      {
+        "surah": 3,
+        "strength": 251
+      },
+      {
+        "surah": 29,
+        "strength": 232
+      },
+      {
+        "surah": 30,
+        "strength": 232
+      }
+    ],
+    "top_strength_ge2": [
+      {
+        "surah": 2,
+        "strength_ge2": 282,
+        "degree_ge2": 63
+      },
+      {
+        "surah": 42,
+        "strength_ge2": 241,
+        "degree_ge2": 58
+      },
+      {
+        "surah": 5,
+        "strength_ge2": 239,
+        "degree_ge2": 60
+      },
+      {
+        "surah": 40,
+        "strength_ge2": 239,
+        "degree_ge2": 56
+      },
+      {
+        "surah": 6,
+        "strength_ge2": 233,
+        "degree_ge2": 57
+      },
+      {
+        "surah": 27,
+        "strength_ge2": 232,
+        "degree_ge2": 60
+      },
+      {
+        "surah": 10,
+        "strength_ge2": 228,
+        "degree_ge2": 59
+      },
+      {
+        "surah": 3,
+        "strength_ge2": 225,
+        "degree_ge2": 58
+      },
+      {
+        "surah": 29,
+        "strength_ge2": 205,
+        "degree_ge2": 57
+      },
+      {
+        "surah": 30,
+        "strength_ge2": 204,
+        "degree_ge2": 56
+      }
+    ]
+  },
+  "hub_test": {
+    "z_max_obs": 2.197241772833916,
+    "p_exist": 0.04318936877076412,
+    "cell_b_pass": false,
+    "ranked_surahs": [
+      {
+        "surah": 27,
+        "strength_ge2_obs": 232,
+        "null_mean": 177.76,
+        "null_sd": 24.68549463723484,
+        "z": 2.197241772833916,
+        "p_raw": 0.0033222591362126247,
+        "p_adj_fwer": 0.04318936877076412
+      },
+      {
+        "surah": 45,
+        "strength_ge2_obs": 147,
+        "null_mean": 99.15,
+        "null_sd": 28.203290327269976,
+        "z": 1.6966105530507363,
+        "p_raw": 0.03322259136212625,
+        "p_adj_fwer": 0.760797342192691
+      },
+      {
+        "surah": 41,
+        "strength_ge2_obs": 194,
+        "null_mean": 149.11666666666667,
+        "null_sd": 28.43539392460942,
+        "z": 1.5784319166575367,
+        "p_raw": 0.036544850498338874,
+        "p_adj_fwer": 0.9102990033222591
+      },
+      {
+        "surah": 30,
+        "strength_ge2_obs": 204,
+        "null_mean": 164.61,
+        "null_sd": 27.6156958181103,
+        "z": 1.42636275614566,
+        "p_raw": 0.0664451827242525,
+        "p_adj_fwer": 0.9867109634551495
+      },
+      {
+        "surah": 29,
+        "strength_ge2_obs": 205,
+        "null_mean": 166.34,
+        "null_sd": 27.83115119050287,
+        "z": 1.3890909411319061,
+        "p_raw": 0.059800664451827246,
+        "p_adj_fwer": 0.9966777408637874
+      },
+      {
+        "surah": 2,
+        "strength_ge2_obs": 282,
+        "null_mean": 252.73666666666668,
+        "null_sd": 23.45423186114204,
+        "z": 1.2476781804914083,
+        "p_raw": 0.10963455149501661,
+        "p_adj_fwer": 1.0
+      },
+      {
+        "surah": 48,
+        "strength_ge2_obs": 70,
+        "null_mean": 40.50666666666667,
+        "null_sd": 23.78238764497532,
+        "z": 1.240133403492168,
+        "p_raw": 0.09966777408637874,
+        "p_adj_fwer": 1.0
+      },
+      {
+        "surah": 5,
+        "strength_ge2_obs": 239,
+        "null_mean": 212.01,
+        "null_sd": 24.067697859736363,
+        "z": 1.1214200941566772,
+        "p_raw": 0.13953488372093023,
+        "p_adj_fwer": 1.0
+      },
+      {
+        "surah": 36,
+        "strength_ge2_obs": 163,
+        "null_mean": 135.69666666666666,
+        "null_sd": 26.055215146748772,
+        "z": 1.047902816367276,
+        "p_raw": 0.16279069767441862,
+        "p_adj_fwer": 1.0
+      },
+      {
+        "surah": 60,
+        "strength_ge2_obs": 175,
+        "null_mean": 151.89,
+        "null_sd": 25.114811283770337,
+        "z": 0.9201741450047897,
+        "p_raw": 0.22591362126245848,
+        "p_adj_fwer": 1.0
+      },
+      {
+        "surah": 61,
+        "strength_ge2_obs": 118,
+        "null_mean": 93.75666666666666,
+        "null_sd": 26.702325169425496,
+        "z": 0.9079109470621033,
+        "p_raw": 0.20930232558139536,
+        "p_adj_fwer": 1.0
+      },
+      {
+        "surah": 43,
+        "strength_ge2_obs": 141,
+        "null_mean": 116.34,
+        "null_sd": 27.249333089933668,
+        "z": 0.9049762766160978,
+        "p_raw": 0.2026578073089701,
+        "p_adj_fwer": 1.0
+      },
+      {
+        "surah": 10,
+        "strength_ge2_obs": 228,
+        "null_mean": 209.77333333333334,
+        "null_sd": 24.806716823353902,
+        "z": 0.734747237873391,
+        "p_raw": 0.2724252491694352,
+        "p_adj_fwer": 1.0
+      },
+      {
+        "surah": 26,
+        "strength_ge2_obs": 150,
+        "null_mean": 131.82666666666665,
+        "null_sd": 25.32471307894046,
+        "z": 0.7176126053900267,
+        "p_raw": 0.2558139534883721,
+        "p_adj_fwer": 1.0
+      },
+      {
+        "surah": 32,
+        "strength_ge2_obs": 90,
+        "null_mean": 71.49,
+        "null_sd": 26.742858891155244,
+        "z": 0.6921473906487193,
+        "p_raw": 0.2857142857142857,
+        "p_adj_fwer": 1.0
+      }
+    ]
+  },
+  "mw5_positive_control": {
+    "description": "Synthetic 3-block surah-name incidence matrix with one planted cross-block hub",
+    "structure_p": 0.008264462809917356,
+    "hub_p": 0.01652892561983471,
+    "structure_pass_raw_0_05": true,
+    "hub_pass_raw_0_05": true,
+    "pass": true,
+    "H_sum_w_sq": 6458,
+    "edge_count_ge2": 577,
+    "top_strength_ge2": [
+      {
+        "surah": 6,
+        "strength_ge2": 151,
+        "degree_ge2": 41
+      },
+      {
+        "surah": 2,
+        "strength_ge2": 143,
+        "degree_ge2": 36
+      },
+      {
+        "surah": 57,
+        "strength_ge2": 138,
+        "degree_ge2": 47
+      },
+      {
+        "surah": 59,
+        "strength_ge2": 112,
+        "degree_ge2": 35
+      },
+      {
+        "surah": 5,
+        "strength_ge2": 106,
+        "degree_ge2": 32
+      }
+    ],
+    "hub_ranked_surahs": [
+      {
+        "surah": 17,
+        "strength_ge2_obs": 47,
+        "null_mean": 21.083333333333332,
+        "null_sd": 6.3200140055867235,
+        "z": 4.100729309105491,
+        "p_raw": 0.008264462809917356,
+        "p_adj_fwer": 0.01652892561983471
+      },
+      {
+        "surah": 23,
+        "strength_ge2_obs": 49,
+        "null_mean": 20.45,
+        "null_sd": 6.9787793592101615,
+        "z": 4.090973296400534,
+        "p_raw": 0.008264462809917356,
+        "p_adj_fwer": 0.01652892561983471
+      },
+      {
+        "surah": 16,
+        "strength_ge2_obs": 36,
+        "null_mean": 14.3,
+        "null_sd": 5.6858958629846414,
+        "z": 3.81646103321513,
+        "p_raw": 0.008264462809917356,
+        "p_adj_fwer": 0.024793388429752067
+      },
+      {
+        "surah": 27,
+        "strength_ge2_obs": 99,
+        "null_mean": 57.50833333333333,
+        "null_sd": 11.008015287063516,
+        "z": 3.769223205515272,
+        "p_raw": 0.008264462809917356,
+        "p_adj_fwer": 0.024793388429752067
+      },
+      {
+        "surah": 24,
+        "strength_ge2_obs": 20,
+        "null_mean": 7.383333333333334,
+        "null_sd": 3.8592534945263703,
+        "z": 3.269198741300889,
+        "p_raw": 0.008264462809917356,
+        "p_adj_fwer": 0.18181818181818182
+      }
+    ]
+  },
+  "verdict": "PASS-STRUCTURE-NO-HUB"
+}

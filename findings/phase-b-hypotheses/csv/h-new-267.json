@@ -1,0 +1,1129 @@
+{
+  "id": "h-new-267",
+  "title": "Mecca-Medina vocabulary frontier test",
+  "date": "2026-04-18",
+  "seed": 20260418,
+  "prereg": "findings/phase-b-hypotheses/h-new-267-mecca-medina-vocabulary-frontier-prereg.md",
+  "prereg_sha256": "554bfb1f4ee27f6d4febf3ad4f62ca8d660892a6a1d5ad8d21c8e7f203eb265a",
+  "bonferroni_family": "h-new-267-mecca-medina-vocabulary-frontier",
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016666666666666666,
+  "n_perms": 5000,
+  "mw5_n_perms": 1000,
+  "rules_tuple": "QAC v0.4 STEM roots via surah-root-graph.json; Late Meccan vs Medinan pool from revelation-order.csv Noldeke phases; alternating split-halves by Noldeke rank within phase; Dirichlet-0.5 pooled log-odds scorer; held-out AUC cells; root-localizer support rule >=10 pooled tokens and >=2 surahs per side; Hafs-Kufan",
+  "corpus": {
+    "n_surahs": 114,
+    "n_roots": 1642,
+    "total_rooted_tokens": 49968,
+    "late_meccan_surahs": [
+      32,
+      41,
+      45,
+      16,
+      30,
+      11,
+      14,
+      12,
+      40,
+      28,
+      39,
+      29,
+      31,
+      42,
+      10,
+      34,
+      35,
+      7,
+      46,
+      6,
+      13
+    ],
+    "medinan_surahs": [
+      2,
+      98,
+      64,
+      62,
+      8,
+      47,
+      3,
+      61,
+      57,
+      4,
+      65,
+      59,
+      33,
+      63,
+      24,
+      58,
+      22,
+      48,
+      66,
+      60,
+      110,
+      49,
+      9,
+      5
+    ],
+    "late_meccan_count": 21,
+    "medinan_count": 24,
+    "meccan_count": 86,
+    "medinan_period_count": 28
+  },
+  "primary": {
+    "pool": {
+      "earlier_label": "Late Meccan",
+      "later_label": "Medinan",
+      "pool_surahs": [
+        32,
+        41,
+        45,
+        16,
+        30,
+        11,
+        14,
+        12,
+        40,
+        28,
+        39,
+        29,
+        31,
+        42,
+        10,
+        34,
+        35,
+        7,
+        46,
+        6,
+        13,
+        2,
+        98,
+        64,
+        62,
+        8,
+        47,
+        3,
+        61,
+        57,
+        4,
+        65,
+        59,
+        33,
+        63,
+        24,
+        58,
+        22,
+        48,
+        66,
+        60,
+        110,
+        49,
+        9,
+        5
+      ]
+    },
+    "split_rule": "alternating by Noldeke rank within each side",
+    "cells": {
+      "train_a_test_b_auc": {
+        "observed": 1.0,
+        "null_mean": 0.50948,
+        "null_sd": 0.117843,
+        "null_q95": 0.7,
+        "p_perm_upper": 0.0002,
+        "pass": true
+      },
+      "train_b_test_a_auc": {
+        "observed": 1.0,
+        "null_mean": 0.509376,
+        "null_sd": 0.10999,
+        "null_q95": 0.689394,
+        "p_perm_upper": 0.0002,
+        "pass": true
+      },
+      "split_weight_rho": {
+        "observed": 0.457673,
+        "null_mean": -0.037535,
+        "null_sd": 0.084591,
+        "null_q95": 0.10445,
+        "p_perm_upper": 0.0002,
+        "pass": true
+      }
+    },
+    "held_out_score_gaps": {
+      "train_a_test_b_gap": 0.105421,
+      "train_b_test_a_gap": 0.09029
+    },
+    "held_out_scores": {
+      "train_a_test_b": [
+        {
+          "surah": 41,
+          "class": "earlier",
+          "score": -0.223716
+        },
+        {
+          "surah": 34,
+          "class": "earlier",
+          "score": -0.210584
+        },
+        {
+          "surah": 11,
+          "class": "earlier",
+          "score": -0.135133
+        },
+        {
+          "surah": 6,
+          "class": "earlier",
+          "score": -0.110463
+        },
+        {
+          "surah": 16,
+          "class": "earlier",
+          "score": -0.096039
+        },
+        {
+          "surah": 42,
+          "class": "earlier",
+          "score": -0.091651
+        },
+        {
+          "surah": 7,
+          "class": "earlier",
+          "score": -0.059915
+        },
+        {
+          "surah": 29,
+          "class": "earlier",
+          "score": -0.042828
+        },
+        {
+          "surah": 28,
+          "class": "earlier",
+          "score": -0.007639
+        },
+        {
+          "surah": 12,
+          "class": "earlier",
+          "score": 0.02701
+        },
+        {
+          "surah": 47,
+          "class": "later",
+          "score": 0.132431
+        },
+        {
+          "surah": 62,
+          "class": "later",
+          "score": 0.205987
+        },
+        {
+          "surah": 5,
+          "class": "later",
+          "score": 0.221357
+        },
+        {
+          "surah": 63,
+          "class": "later",
+          "score": 0.229504
+        },
+        {
+          "surah": 48,
+          "class": "later",
+          "score": 0.246996
+        },
+        {
+          "surah": 98,
+          "class": "later",
+          "score": 0.249234
+        },
+        {
+          "surah": 59,
+          "class": "later",
+          "score": 0.252947
+        },
+        {
+          "surah": 58,
+          "class": "later",
+          "score": 0.25523
+        },
+        {
+          "surah": 61,
+          "class": "later",
+          "score": 0.27247
+        },
+        {
+          "surah": 4,
+          "class": "later",
+          "score": 0.308716
+        },
+        {
+          "surah": 60,
+          "class": "later",
+          "score": 0.323256
+        },
+        {
+          "surah": 49,
+          "class": "later",
+          "score": 0.356623
+        }
+      ],
+      "train_b_test_a": [
+        {
+          "surah": 32,
+          "class": "earlier",
+          "score": -0.400756
+        },
+        {
+          "surah": 10,
+          "class": "earlier",
+          "score": -0.322486
+        },
+        {
+          "surah": 45,
+          "class": "earlier",
+          "score": -0.276571
+        },
+        {
+          "surah": 30,
+          "class": "earlier",
+          "score": -0.276341
+        },
+        {
+          "surah": 46,
+          "class": "earlier",
+          "score": -0.261795
+        },
+        {
+          "surah": 40,
+          "class": "earlier",
+          "score": -0.225702
+        },
+        {
+          "surah": 39,
+          "class": "earlier",
+          "score": -0.208083
+        },
+        {
+          "surah": 13,
+          "class": "earlier",
+          "score": -0.199209
+        },
+        {
+          "surah": 14,
+          "class": "earlier",
+          "score": -0.191989
+        },
+        {
+          "surah": 35,
+          "class": "earlier",
+          "score": -0.165484
+        },
+        {
+          "surah": 31,
+          "class": "earlier",
+          "score": -0.140994
+        },
+        {
+          "surah": 22,
+          "class": "later",
+          "score": -0.050704
+        },
+        {
+          "surah": 3,
+          "class": "later",
+          "score": 0.062202
+        },
+        {
+          "surah": 2,
+          "class": "later",
+          "score": 0.076754
+        },
+        {
+          "surah": 8,
+          "class": "later",
+          "score": 0.130385
+        },
+        {
+          "surah": 65,
+          "class": "later",
+          "score": 0.142465
+        },
+        {
+          "surah": 57,
+          "class": "later",
+          "score": 0.147926
+        },
+        {
+          "surah": 110,
+          "class": "later",
+          "score": 0.165905
+        },
+        {
+          "surah": 24,
+          "class": "later",
+          "score": 0.194619
+        },
+        {
+          "surah": 66,
+          "class": "later",
+          "score": 0.208778
+        },
+        {
+          "surah": 33,
+          "class": "later",
+          "score": 0.260889
+        },
+        {
+          "surah": 64,
+          "class": "later",
+          "score": 0.278822
+        },
+        {
+          "surah": 9,
+          "class": "later",
+          "score": 0.304546
+        }
+      ]
+    }
+  },
+  "descriptive_adjacent_boundaries": {
+    "Early Meccan|Middle Meccan": {
+      "earlier": "Early Meccan",
+      "later": "Middle Meccan",
+      "auc_ab": 0.895833,
+      "auc_ba": 0.916667,
+      "mean_auc": 0.90625,
+      "split_weight_rho": 0.331475,
+      "support_n": 268
+    },
+    "Middle Meccan|Late Meccan": {
+      "earlier": "Middle Meccan",
+      "later": "Late Meccan",
+      "auc_ab": 0.94,
+      "auc_ba": 0.991736,
+      "mean_auc": 0.965868,
+      "split_weight_rho": 0.262604,
+      "support_n": 406
+    },
+    "Late Meccan|Medinan": {
+      "earlier": "Late Meccan",
+      "later": "Medinan",
+      "auc_ab": 1.0,
+      "auc_ba": 1.0,
+      "mean_auc": 1.0,
+      "split_weight_rho": 0.457673,
+      "support_n": 434
+    }
+  },
+  "root_localizers": {
+    "support_rule": "pooled tokens >= 10 and >= 2 surahs per side",
+    "support_n": 434,
+    "stable_direction_agreement_n": 294,
+    "top_toward_later_stable_log_odds": [
+      {
+        "root": "Avm",
+        "direction": "toward_later",
+        "stable_log_odds": 1.779882,
+        "full_log_odds": 1.737684,
+        "weight_ab": 1.779882,
+        "weight_ba": 1.862987,
+        "earlier_tokens": 5,
+        "later_tokens": 34,
+        "earlier_surahs": 4,
+        "later_surahs": 8,
+        "delta_mean_density": 0.000704,
+        "earlier_mean_density": 0.000312,
+        "later_mean_density": 0.001016
+      },
+      {
+        "root": "nfq",
+        "direction": "toward_later",
+        "stable_log_odds": 1.776165,
+        "full_log_odds": 2.12995,
+        "weight_ab": 2.175195,
+        "weight_ba": 1.776165,
+        "earlier_tokens": 10,
+        "later_tokens": 97,
+        "earlier_surahs": 10,
+        "later_surahs": 17,
+        "delta_mean_density": 0.006122,
+        "earlier_mean_density": 0.000839,
+        "later_mean_density": 0.006961
+      },
+      {
+        "root": "nsw",
+        "direction": "toward_later",
+        "stable_log_odds": 1.664369,
+        "full_log_odds": 1.68338,
+        "weight_ab": 1.664369,
+        "weight_ba": 1.854636,
+        "earlier_tokens": 8,
+        "later_tokens": 50,
+        "earlier_surahs": 5,
+        "later_surahs": 10,
+        "delta_mean_density": 0.001762,
+        "earlier_mean_density": 0.000351,
+        "later_mean_density": 0.002113
+      },
+      {
+        "root": "mwl",
+        "direction": "toward_later",
+        "stable_log_odds": 1.640769,
+        "full_log_odds": 1.759607,
+        "weight_ab": 1.640769,
+        "weight_ba": 1.812599,
+        "earlier_tokens": 8,
+        "later_tokens": 54,
+        "earlier_surahs": 5,
+        "later_surahs": 16,
+        "delta_mean_density": 0.002189,
+        "earlier_mean_density": 0.000456,
+        "later_mean_density": 0.002645
+      },
+      {
+        "root": "jnH",
+        "direction": "toward_later",
+        "stable_log_odds": 1.547906,
+        "full_log_odds": 1.962896,
+        "weight_ab": 1.996946,
+        "weight_ba": 1.547906,
+        "earlier_tokens": 3,
+        "later_tokens": 27,
+        "earlier_surahs": 3,
+        "later_surahs": 7,
+        "delta_mean_density": 0.000687,
+        "earlier_mean_density": 0.000172,
+        "later_mean_density": 0.000859
+      },
+      {
+        "root": "qtl",
+        "direction": "toward_later",
+        "stable_log_odds": 1.547906,
+        "full_log_odds": 1.77515,
+        "weight_ab": 2.529827,
+        "weight_ba": 1.547906,
+        "earlier_tokens": 20,
+        "later_tokens": 133,
+        "earlier_surahs": 6,
+        "later_surahs": 16,
+        "delta_mean_density": 0.004259,
+        "earlier_mean_density": 0.000884,
+        "later_mean_density": 0.005143
+      },
+      {
+        "root": "rDw",
+        "direction": "toward_later",
+        "stable_log_odds": 1.418869,
+        "full_log_odds": 2.157538,
+        "weight_ab": 1.418869,
+        "weight_ba": 2.961599,
+        "earlier_tokens": 5,
+        "later_tokens": 52,
+        "earlier_surahs": 4,
+        "later_surahs": 16,
+        "delta_mean_density": 0.003399,
+        "earlier_mean_density": 0.000308,
+        "later_mean_density": 0.003707
+      },
+      {
+        "root": "Thr",
+        "direction": "toward_later",
+        "stable_log_odds": 1.404805,
+        "full_log_odds": 2.142183,
+        "weight_ab": 2.937335,
+        "weight_ba": 1.404805,
+        "earlier_tokens": 2,
+        "later_tokens": 23,
+        "earlier_surahs": 2,
+        "later_surahs": 10,
+        "delta_mean_density": 0.001297,
+        "earlier_mean_density": 6.3e-05,
+        "later_mean_density": 0.001361
+      },
+      {
+        "root": "hjr",
+        "direction": "toward_later",
+        "stable_log_odds": 1.336597,
+        "full_log_odds": 1.762225,
+        "weight_ab": 2.749282,
+        "weight_ba": 1.336597,
+        "earlier_tokens": 3,
+        "later_tokens": 22,
+        "earlier_surahs": 2,
+        "later_surahs": 10,
+        "delta_mean_density": 0.000971,
+        "earlier_mean_density": 0.000156,
+        "later_mean_density": 0.001128
+      },
+      {
+        "root": "H*r",
+        "direction": "toward_later",
+        "stable_log_odds": 1.327897,
+        "full_log_odds": 1.847383,
+        "weight_ab": 1.327897,
+        "weight_ba": 2.058732,
+        "earlier_tokens": 2,
+        "later_tokens": 17,
+        "earlier_surahs": 2,
+        "later_surahs": 8,
+        "delta_mean_density": 0.000798,
+        "earlier_mean_density": 0.000116,
+        "later_mean_density": 0.000913
+      },
+      {
+        "root": "TwE",
+        "direction": "toward_later",
+        "stable_log_odds": 1.307955,
+        "full_log_odds": 1.353725,
+        "weight_ab": 1.603603,
+        "weight_ba": 1.307955,
+        "earlier_tokens": 16,
+        "later_tokens": 70,
+        "earlier_surahs": 10,
+        "later_surahs": 14,
+        "delta_mean_density": 0.003143,
+        "earlier_mean_density": 0.000871,
+        "later_mean_density": 0.004014
+      },
+      {
+        "root": "vwb",
+        "direction": "toward_later",
+        "stable_log_odds": 1.237751,
+        "full_log_odds": 1.847383,
+        "weight_ab": 2.600862,
+        "weight_ba": 1.237751,
+        "earlier_tokens": 2,
+        "later_tokens": 17,
+        "earlier_surahs": 2,
+        "later_surahs": 7,
+        "delta_mean_density": 0.000386,
+        "earlier_mean_density": 9.5e-05,
+        "later_mean_density": 0.000481
+      },
+      {
+        "root": "Hrj",
+        "direction": "toward_later",
+        "stable_log_odds": 1.237751,
+        "full_log_odds": 1.587872,
+        "weight_ab": 2.2152,
+        "weight_ba": 1.237751,
+        "earlier_tokens": 2,
+        "later_tokens": 13,
+        "earlier_surahs": 2,
+        "later_surahs": 7,
+        "delta_mean_density": 0.000666,
+        "earlier_mean_density": 4.7e-05,
+        "later_mean_density": 0.000713
+      },
+      {
+        "root": "wdd",
+        "direction": "toward_later",
+        "stable_log_odds": 1.227813,
+        "full_log_odds": 1.36781,
+        "weight_ab": 1.227813,
+        "weight_ba": 1.547906,
+        "earlier_tokens": 4,
+        "later_tokens": 19,
+        "earlier_surahs": 4,
+        "later_surahs": 8,
+        "delta_mean_density": 0.000904,
+        "earlier_mean_density": 0.000299,
+        "later_mean_density": 0.001203
+      },
+      {
+        "root": "zkw",
+        "direction": "toward_later",
+        "stable_log_odds": 1.116588,
+        "full_log_odds": 1.57063,
+        "weight_ab": 1.116588,
+        "weight_ba": 1.784295,
+        "earlier_tokens": 6,
+        "later_tokens": 34,
+        "earlier_surahs": 5,
+        "later_surahs": 11,
+        "delta_mean_density": 0.001473,
+        "earlier_mean_density": 0.000531,
+        "later_mean_density": 0.002004
+      }
+    ],
+    "top_toward_earlier_stable_log_odds": [
+      {
+        "root": "flk",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.841789,
+        "full_log_odds": -1.784926,
+        "weight_ab": -1.841789,
+        "weight_ba": -1.948601,
+        "earlier_tokens": 13,
+        "later_tokens": 2,
+        "earlier_surahs": 11,
+        "later_surahs": 2,
+        "delta_mean_density": -0.000858,
+        "earlier_mean_density": 0.000919,
+        "later_mean_density": 6.1e-05
+      },
+      {
+        "root": "jrm",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.702468,
+        "full_log_odds": -2.163982,
+        "weight_ab": -2.375871,
+        "weight_ba": -1.702468,
+        "earlier_tokens": 35,
+        "later_tokens": 4,
+        "earlier_surahs": 14,
+        "later_surahs": 3,
+        "delta_mean_density": -0.002029,
+        "earlier_mean_density": 0.002152,
+        "later_mean_density": 0.000124
+      },
+      {
+        "root": "$ms",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.573525,
+        "full_log_odds": -1.856385,
+        "weight_ab": -1.573525,
+        "weight_ba": -2.38392,
+        "earlier_tokens": 14,
+        "later_tokens": 2,
+        "earlier_surahs": 12,
+        "later_surahs": 2,
+        "delta_mean_density": -0.000863,
+        "earlier_mean_density": 0.000925,
+        "later_mean_density": 6.1e-05
+      },
+      {
+        "root": "wHy",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.558174,
+        "full_log_odds": -1.833128,
+        "weight_ab": -1.616542,
+        "weight_ba": -1.558174,
+        "earlier_tokens": 42,
+        "later_tokens": 7,
+        "earlier_surahs": 16,
+        "later_surahs": 5,
+        "delta_mean_density": -0.002099,
+        "earlier_mean_density": 0.00229,
+        "later_mean_density": 0.000191
+      },
+      {
+        "root": "fry",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.386917,
+        "full_log_odds": -1.901336,
+        "weight_ab": -2.14407,
+        "weight_ba": -1.386917,
+        "earlier_tokens": 45,
+        "later_tokens": 7,
+        "earlier_surahs": 12,
+        "later_surahs": 5,
+        "delta_mean_density": -0.001681,
+        "earlier_mean_density": 0.002255,
+        "later_mean_density": 0.000575
+      },
+      {
+        "root": "swE",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.348901,
+        "full_log_odds": -1.360769,
+        "weight_ab": -1.348901,
+        "weight_ba": -1.747931,
+        "earlier_tokens": 26,
+        "later_tokens": 7,
+        "earlier_surahs": 13,
+        "later_surahs": 4,
+        "delta_mean_density": -0.001642,
+        "earlier_mean_density": 0.002032,
+        "later_mean_density": 0.00039
+      },
+      {
+        "root": "mkr",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.34395,
+        "full_log_odds": -1.433528,
+        "weight_ab": -1.34395,
+        "weight_ba": -2.846543,
+        "earlier_tokens": 28,
+        "later_tokens": 7,
+        "earlier_surahs": 10,
+        "later_surahs": 2,
+        "delta_mean_density": -0.001351,
+        "earlier_mean_density": 0.001614,
+        "later_mean_density": 0.000263
+      },
+      {
+        "root": "n*r",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.285307,
+        "full_log_odds": -1.25966,
+        "weight_ab": -1.374339,
+        "weight_ba": -1.285307,
+        "earlier_tokens": 49,
+        "later_tokens": 15,
+        "earlier_surahs": 17,
+        "later_surahs": 8,
+        "delta_mean_density": -0.003214,
+        "earlier_mean_density": 0.003636,
+        "later_mean_density": 0.000423
+      },
+      {
+        "root": "fSl",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.254002,
+        "full_log_odds": -1.707965,
+        "weight_ab": -1.254002,
+        "weight_ba": -2.115656,
+        "earlier_tokens": 27,
+        "later_tokens": 5,
+        "earlier_surahs": 12,
+        "later_surahs": 4,
+        "delta_mean_density": -0.00118,
+        "earlier_mean_density": 0.001471,
+        "later_mean_density": 0.000291
+      },
+      {
+        "root": "Hmd",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.237105,
+        "full_log_odds": -1.113758,
+        "weight_ab": -1.334691,
+        "weight_ba": -1.237105,
+        "earlier_tokens": 34,
+        "later_tokens": 12,
+        "earlier_surahs": 19,
+        "later_surahs": 9,
+        "delta_mean_density": 0.000811,
+        "earlier_mean_density": 0.002764,
+        "later_mean_density": 0.003575
+      },
+      {
+        "root": "mlA",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.2058,
+        "full_log_odds": -2.250289,
+        "weight_ab": -1.2058,
+        "weight_ba": -3.106054,
+        "earlier_tokens": 21,
+        "later_tokens": 2,
+        "earlier_surahs": 6,
+        "later_surahs": 2,
+        "delta_mean_density": -0.000866,
+        "earlier_mean_density": 0.000896,
+        "later_mean_density": 2.9e-05
+      },
+      {
+        "root": "vql",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.2058,
+        "full_log_odds": -1.519913,
+        "weight_ab": -1.2058,
+        "weight_ba": -1.496616,
+        "earlier_tokens": 14,
+        "later_tokens": 3,
+        "earlier_surahs": 8,
+        "later_surahs": 2,
+        "delta_mean_density": -0.00082,
+        "earlier_mean_density": 0.000888,
+        "later_mean_density": 6.8e-05
+      },
+      {
+        "root": "jwb",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.188558,
+        "full_log_odds": -1.360769,
+        "weight_ab": -1.188558,
+        "weight_ba": -1.886081,
+        "earlier_tokens": 26,
+        "later_tokens": 7,
+        "earlier_surahs": 13,
+        "later_surahs": 4,
+        "delta_mean_density": -0.001665,
+        "earlier_mean_density": 0.00185,
+        "later_mean_density": 0.000185
+      },
+      {
+        "root": "dEw",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.183647,
+        "full_log_odds": -1.086858,
+        "weight_ab": -1.183647,
+        "weight_ba": -1.580877,
+        "earlier_tokens": 111,
+        "later_tokens": 41,
+        "earlier_surahs": 21,
+        "later_surahs": 11,
+        "delta_mean_density": -0.005327,
+        "earlier_mean_density": 0.007081,
+        "later_mean_density": 0.001753
+      },
+      {
+        "root": "sHr",
+        "direction": "toward_earlier",
+        "stable_log_odds": 1.160144,
+        "full_log_odds": -1.662503,
+        "weight_ab": -1.953014,
+        "weight_ba": -1.160144,
+        "earlier_tokens": 21,
+        "later_tokens": 4,
+        "earlier_surahs": 8,
+        "later_surahs": 4,
+        "delta_mean_density": -0.00055,
+        "earlier_mean_density": 0.00089,
+        "later_mean_density": 0.00034
+      }
+    ],
+    "top_abs_delta_mean_density": [
+      {
+        "root": "Alh",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.047716,
+        "delta_mean_density": 0.047716,
+        "full_log_odds": 0.597241,
+        "earlier_tokens": 857,
+        "later_tokens": 1719,
+        "earlier_mean_density": 0.052383,
+        "later_mean_density": 0.100099
+      },
+      {
+        "root": "Amn",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.015118,
+        "delta_mean_density": 0.015118,
+        "full_log_odds": 0.634687,
+        "earlier_tokens": 238,
+        "later_tokens": 496,
+        "earlier_mean_density": 0.013508,
+        "later_mean_density": 0.028626
+      },
+      {
+        "root": "qwl",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.014822,
+        "delta_mean_density": -0.014822,
+        "full_log_odds": -0.47479,
+        "earlier_tokens": 666,
+        "later_tokens": 457,
+        "earlier_mean_density": 0.035248,
+        "later_mean_density": 0.020425
+      },
+      {
+        "root": "rbb",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.010194,
+        "delta_mean_density": -0.010194,
+        "full_log_odds": -0.951054,
+        "earlier_tokens": 383,
+        "later_tokens": 163,
+        "earlier_mean_density": 0.021213,
+        "later_mean_density": 0.011019
+      },
+      {
+        "root": "Ayy",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.009053,
+        "delta_mean_density": -0.009053,
+        "full_log_odds": -0.934197,
+        "earlier_tokens": 199,
+        "later_tokens": 86,
+        "earlier_mean_density": 0.012629,
+        "later_mean_density": 0.003575
+      },
+      {
+        "root": "rsl",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.008218,
+        "delta_mean_density": 0.008218,
+        "full_log_odds": 0.371041,
+        "earlier_tokens": 143,
+        "later_tokens": 229,
+        "earlier_mean_density": 0.007902,
+        "later_mean_density": 0.01612
+      },
+      {
+        "root": "ArD",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.007935,
+        "delta_mean_density": -0.007935,
+        "full_log_odds": -0.679838,
+        "earlier_tokens": 215,
+        "later_tokens": 120,
+        "earlier_mean_density": 0.014849,
+        "later_mean_density": 0.006914
+      },
+      {
+        "root": "gfr",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.007443,
+        "delta_mean_density": 0.007443,
+        "full_log_odds": 0.636372,
+        "earlier_tokens": 64,
+        "later_tokens": 134,
+        "earlier_mean_density": 0.003872,
+        "later_mean_density": 0.011315
+      },
+      {
+        "root": "nfq",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.006122,
+        "delta_mean_density": 0.006122,
+        "full_log_odds": 2.12995,
+        "earlier_tokens": 10,
+        "later_tokens": 97,
+        "earlier_mean_density": 0.000839,
+        "later_mean_density": 0.006961
+      },
+      {
+        "root": "kwn",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.005963,
+        "delta_mean_density": -0.005963,
+        "full_log_odds": -0.19215,
+        "earlier_tokens": 503,
+        "later_tokens": 458,
+        "earlier_mean_density": 0.028441,
+        "later_mean_density": 0.022478
+      },
+      {
+        "root": "xlq",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.005463,
+        "delta_mean_density": -0.005463,
+        "full_log_odds": -1.111373,
+        "earlier_tokens": 100,
+        "later_tokens": 36,
+        "earlier_mean_density": 0.007317,
+        "later_mean_density": 0.001854
+      },
+      {
+        "root": "dEw",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.005327,
+        "delta_mean_density": -0.005327,
+        "full_log_odds": -1.086858,
+        "earlier_tokens": 111,
+        "later_tokens": 41,
+        "earlier_mean_density": 0.007081,
+        "later_mean_density": 0.001753
+      },
+      {
+        "root": "nSr",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.004928,
+        "delta_mean_density": 0.004928,
+        "full_log_odds": 0.848279,
+        "earlier_tokens": 35,
+        "later_tokens": 91,
+        "earlier_mean_density": 0.002321,
+        "later_mean_density": 0.007249
+      },
+      {
+        "root": "dyn",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.004712,
+        "delta_mean_density": 0.004712,
+        "full_log_odds": 0.512382,
+        "earlier_tokens": 28,
+        "later_tokens": 52,
+        "earlier_mean_density": 0.00167,
+        "later_mean_density": 0.006382
+      },
+      {
+        "root": "qlb",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.004652,
+        "delta_mean_density": 0.004652,
+        "full_log_odds": 1.138236,
+        "earlier_tokens": 31,
+        "later_tokens": 108,
+        "earlier_mean_density": 0.001677,
+        "later_mean_density": 0.006329
+      },
+      {
+        "root": "Hqq",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.004608,
+        "delta_mean_density": -0.004608,
+        "full_log_odds": -0.445869,
+        "earlier_tokens": 129,
+        "later_tokens": 91,
+        "earlier_mean_density": 0.008189,
+        "later_mean_density": 0.003581
+      },
+      {
+        "root": "smw",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.004583,
+        "delta_mean_density": -0.004583,
+        "full_log_odds": -0.528563,
+        "earlier_tokens": 154,
+        "later_tokens": 100,
+        "earlier_mean_density": 0.010946,
+        "later_mean_density": 0.006362
+      },
+      {
+        "root": "qwm",
+        "direction": "toward_earlier",
+        "abs_delta_mean_density": 0.004571,
+        "delta_mean_density": -0.004571,
+        "full_log_odds": -0.491253,
+        "earlier_tokens": 292,
+        "later_tokens": 197,
+        "earlier_mean_density": 0.016243,
+        "later_mean_density": 0.011672
+      },
+      {
+        "root": "twb",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.004476,
+        "delta_mean_density": 0.004476,
+        "full_log_odds": 1.311673,
+        "earlier_tokens": 15,
+        "later_tokens": 63,
+        "earlier_mean_density": 0.000783,
+        "later_mean_density": 0.005259
+      },
+      {
+        "root": "dxl",
+        "direction": "toward_later",
+        "abs_delta_mean_density": 0.004356,
+        "delta_mean_density": 0.004356,
+        "full_log_odds": 0.439327,
+        "earlier_tokens": 36,
+        "later_tokens": 62,
+        "earlier_mean_density": 0.001882,
+        "later_mean_density": 0.006239
+      }
+    ]
+  },
+  "mw5": {
+    "description": "Same instrument on the broader Meccan vs Medinan split, treated as an easier positive control.",
+    "cells": {
+      "train_a_test_b_auc": {
+        "observed": 0.901993,
+        "null_mean": 0.525968,
+        "null_sd": 0.083403,
+        "null_q95": 0.659468,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      },
+      "train_b_test_a_auc": {
+        "observed": 0.853821,
+        "null_mean": 0.529399,
+        "null_sd": 0.087949,
+        "null_q95": 0.666113,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      },
+      "split_weight_rho": {
+        "observed": 0.513728,
+        "null_mean": -0.034046,
+        "null_sd": 0.075301,
+        "null_q95": 0.096997,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      }
+    },
+    "pass_rule": "all 3 cells must pass at alpha_bon",
+    "pass": true
+  },
+  "verdict": "PASS-DIRECTED"
+}

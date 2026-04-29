@@ -1,0 +1,30 @@
+{
+  "prereg_id": "Q041-F-01",
+  "prereg_sha": "3ba8abe8acd2ac04e9a3aa37755e1c33206d8c0553997904cb955646674964f6",
+  "search_string": "قالوا ربنا الله ثم استقاموا",
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "n_attestations": 2,
+  "attestations": [
+    {
+      "surah": 41,
+      "verse": 30,
+      "text": "إن الذين قالوا ربنا الله ثم استقاموا تتنزل عليهم الملائكة ألا تخافوا ولا تحزنوا وأبشروا بالجنة التي كنتم توعدون"
+    },
+    {
+      "surah": 46,
+      "verse": 13,
+      "text": "إن الذين قالوا ربنا الله ثم استقاموا فلا خوف عليهم ولا هم يحزنون"
+    }
+  ],
+  "expected_pattern": [
+    [
+      41,
+      30
+    ],
+    [
+      46,
+      13
+    ]
+  ],
+  "verdict": "VINDICATED"
+}

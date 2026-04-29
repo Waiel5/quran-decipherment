@@ -1,0 +1,971 @@
+{
+  "id": "H-NEW-286.3",
+  "title": "OQ-18 Q17 bridge identity test",
+  "date": "2026-04-19",
+  "seed": 20260419,
+  "prereg_file": "findings/phase-b-hypotheses/h-new-286-3-q17-bridge-identity-test-prereg.md",
+  "prereg_sha256": "9d7cdcde1c94a4e6b6e01ab2e89a39b60836c6384edaaafa876c338b293f4fbe",
+  "script_file": "scripts/h_new_286_3_oq18_bridge_identity_test.py",
+  "label_source": {
+    "source_file": "findings/phase-b-hypotheses/csv/h-new-126.json",
+    "source_field": "cell_b_genre_coherence.per_surah",
+    "concept_object_surahs_in_zone": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "binary_label_definition": "1 = concept/object-named; 0 = other"
+  },
+  "rules_tuple": "(QAC v0.4 root sets via surah-root-graph.json; fixed zone = Q16..Q25; fixed core = {Q16,Q21,Q22,Q23,Q25}; outsider family = {Q17,Q18,Q19,Q20,Q24}; candidate bridge score Delta_bridge(b)=mean_jaccard(core-core ∪ bridge-core) - mean_jaccard(all other zone pairs); exact outsider-family rank/upper fraction over the 5 admissible bridges; one-sided upper-tail reported descriptively because the minimum attainable exact upper fraction is 1/5 = 0.20)",
+  "zone": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "core_subset": [
+    16,
+    21,
+    22,
+    23,
+    25
+  ],
+  "outsider_family": [
+    17,
+    18,
+    19,
+    20,
+    24
+  ],
+  "exact_space_n_primary": 5,
+  "primary": {
+    "statistic": "delta_bridge_fixed_core_plus_bridge_mask",
+    "direction": "upper",
+    "observed_bridge": 17,
+    "observed": 0.03399605423295421,
+    "observed_mean_jaccard_predicted_high": 0.3415968263411155,
+    "observed_mean_jaccard_other_pairs": 0.3076007721081613,
+    "observed_mean_jaccard_bridge_core": 0.3420193401695428,
+    "observed_mean_jaccard_core_core": 0.34138556942690185,
+    "n_ge_observed": 1,
+    "exact_upper_fraction": 0.2,
+    "rank_desc": 1,
+    "tie_count_at_observed": 1,
+    "family_mean": 0.020715104447297218,
+    "family_median": 0.021176192972585384,
+    "family_min": 0.007457427166184971,
+    "family_max": 0.03399605423295421,
+    "alpha": 0.05,
+    "minimum_attainable_exact_upper_fraction": 0.2,
+    "inferential_pass_possible_under_alpha": false,
+    "inferential_verdict": "NULL"
+  },
+  "pairwise_core_reference": {
+    "statistic": "delta_pair_from_h_new_286_2",
+    "core_subset": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "observed": 0.02886785902425748
+  },
+  "observed_bridge_detail": {
+    "bridge": 17,
+    "core": [
+      16,
+      21,
+      22,
+      23,
+      25
+    ],
+    "outsider_family": [
+      17,
+      18,
+      19,
+      20,
+      24
+    ],
+    "n_predicted_high_pairs": 15,
+    "n_other_pairs": 30,
+    "mean_jaccard_core_core": 0.34138556942690185,
+    "mean_jaccard_bridge_core": 0.3420193401695428,
+    "mean_jaccard_predicted_high": 0.3415968263411155,
+    "mean_jaccard_other_pairs": 0.3076007721081613,
+    "delta_bridge": 0.03399605423295421,
+    "predicted_high_core_core_pairs": [
+      {
+        "pair": [
+          16,
+          21
+        ],
+        "jaccard": 0.3237113402061856
+      },
+      {
+        "pair": [
+          16,
+          22
+        ],
+        "jaccard": 0.4057377049180328
+      },
+      {
+        "pair": [
+          16,
+          23
+        ],
+        "jaccard": 0.37037037037037035
+      },
+      {
+        "pair": [
+          16,
+          25
+        ],
+        "jaccard": 0.3392070484581498
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "jaccard": 0.3049040511727079
+      },
+      {
+        "pair": [
+          21,
+          23
+        ],
+        "jaccard": 0.3669950738916256
+      },
+      {
+        "pair": [
+          21,
+          25
+        ],
+        "jaccard": 0.335
+      },
+      {
+        "pair": [
+          22,
+          23
+        ],
+        "jaccard": 0.31072210065645517
+      },
+      {
+        "pair": [
+          22,
+          25
+        ],
+        "jaccard": 0.3348729792147806
+      },
+      {
+        "pair": [
+          23,
+          25
+        ],
+        "jaccard": 0.3223350253807107
+      }
+    ],
+    "predicted_high_bridge_core_pairs": [
+      {
+        "pair": [
+          16,
+          17
+        ],
+        "jaccard": 0.3435700575815739
+      },
+      {
+        "pair": [
+          17,
+          21
+        ],
+        "jaccard": 0.3347547974413646
+      },
+      {
+        "pair": [
+          17,
+          22
+        ],
+        "jaccard": 0.3163064833005894
+      },
+      {
+        "pair": [
+          17,
+          23
+        ],
+        "jaccard": 0.3355119825708061
+      },
+      {
+        "pair": [
+          17,
+          25
+        ],
+        "jaccard": 0.37995337995337997
+      }
+    ]
+  },
+  "candidate_rank_table": [
+    {
+      "bridge": 17,
+      "core": [
+        16,
+        21,
+        22,
+        23,
+        25
+      ],
+      "outsider_family": [
+        17,
+        18,
+        19,
+        20,
+        24
+      ],
+      "n_predicted_high_pairs": 15,
+      "n_other_pairs": 30,
+      "mean_jaccard_core_core": 0.34138556942690185,
+      "mean_jaccard_bridge_core": 0.3420193401695428,
+      "mean_jaccard_predicted_high": 0.3415968263411155,
+      "mean_jaccard_other_pairs": 0.3076007721081613,
+      "delta_bridge": 0.03399605423295421,
+      "predicted_high_core_core_pairs": [
+        {
+          "pair": [
+            16,
+            21
+          ],
+          "jaccard": 0.3237113402061856
+        },
+        {
+          "pair": [
+            16,
+            22
+          ],
+          "jaccard": 0.4057377049180328
+        },
+        {
+          "pair": [
+            16,
+            23
+          ],
+          "jaccard": 0.37037037037037035
+        },
+        {
+          "pair": [
+            16,
+            25
+          ],
+          "jaccard": 0.3392070484581498
+        },
+        {
+          "pair": [
+            21,
+            22
+          ],
+          "jaccard": 0.3049040511727079
+        },
+        {
+          "pair": [
+            21,
+            23
+          ],
+          "jaccard": 0.3669950738916256
+        },
+        {
+          "pair": [
+            21,
+            25
+          ],
+          "jaccard": 0.335
+        },
+        {
+          "pair": [
+            22,
+            23
+          ],
+          "jaccard": 0.31072210065645517
+        },
+        {
+          "pair": [
+            22,
+            25
+          ],
+          "jaccard": 0.3348729792147806
+        },
+        {
+          "pair": [
+            23,
+            25
+          ],
+          "jaccard": 0.3223350253807107
+        }
+      ],
+      "predicted_high_bridge_core_pairs": [
+        {
+          "pair": [
+            16,
+            17
+          ],
+          "jaccard": 0.3435700575815739
+        },
+        {
+          "pair": [
+            17,
+            21
+          ],
+          "jaccard": 0.3347547974413646
+        },
+        {
+          "pair": [
+            17,
+            22
+          ],
+          "jaccard": 0.3163064833005894
+        },
+        {
+          "pair": [
+            17,
+            23
+          ],
+          "jaccard": 0.3355119825708061
+        },
+        {
+          "pair": [
+            17,
+            25
+          ],
+          "jaccard": 0.37995337995337997
+        }
+      ]
+    },
+    {
+      "bridge": 20,
+      "core": [
+        16,
+        21,
+        22,
+        23,
+        25
+      ],
+      "outsider_family": [
+        17,
+        18,
+        19,
+        20,
+        24
+      ],
+      "n_predicted_high_pairs": 15,
+      "n_other_pairs": 30,
+      "mean_jaccard_core_core": 0.34138556942690185,
+      "mean_jaccard_bridge_core": 0.32168166956743544,
+      "mean_jaccard_predicted_high": 0.33481760280707973,
+      "mean_jaccard_other_pairs": 0.3109903838751792,
+      "delta_bridge": 0.02382721893190054,
+      "predicted_high_core_core_pairs": [
+        {
+          "pair": [
+            16,
+            21
+          ],
+          "jaccard": 0.3237113402061856
+        },
+        {
+          "pair": [
+            16,
+            22
+          ],
+          "jaccard": 0.4057377049180328
+        },
+        {
+          "pair": [
+            16,
+            23
+          ],
+          "jaccard": 0.37037037037037035
+        },
+        {
+          "pair": [
+            16,
+            25
+          ],
+          "jaccard": 0.3392070484581498
+        },
+        {
+          "pair": [
+            21,
+            22
+          ],
+          "jaccard": 0.3049040511727079
+        },
+        {
+          "pair": [
+            21,
+            23
+          ],
+          "jaccard": 0.3669950738916256
+        },
+        {
+          "pair": [
+            21,
+            25
+          ],
+          "jaccard": 0.335
+        },
+        {
+          "pair": [
+            22,
+            23
+          ],
+          "jaccard": 0.31072210065645517
+        },
+        {
+          "pair": [
+            22,
+            25
+          ],
+          "jaccard": 0.3348729792147806
+        },
+        {
+          "pair": [
+            23,
+            25
+          ],
+          "jaccard": 0.3223350253807107
+        }
+      ],
+      "predicted_high_bridge_core_pairs": [
+        {
+          "pair": [
+            16,
+            20
+          ],
+          "jaccard": 0.32427184466019415
+        },
+        {
+          "pair": [
+            20,
+            21
+          ],
+          "jaccard": 0.3217391304347826
+        },
+        {
+          "pair": [
+            20,
+            22
+          ],
+          "jaccard": 0.29365079365079366
+        },
+        {
+          "pair": [
+            20,
+            23
+          ],
+          "jaccard": 0.3492063492063492
+        },
+        {
+          "pair": [
+            20,
+            25
+          ],
+          "jaccard": 0.3195402298850575
+        }
+      ]
+    },
+    {
+      "bridge": 18,
+      "core": [
+        16,
+        21,
+        22,
+        23,
+        25
+      ],
+      "outsider_family": [
+        17,
+        18,
+        19,
+        20,
+        24
+      ],
+      "n_predicted_high_pairs": 15,
+      "n_other_pairs": 30,
+      "mean_jaccard_core_core": 0.34138556942690185,
+      "mean_jaccard_bridge_core": 0.3163796176488051,
+      "mean_jaccard_predicted_high": 0.33305025216753625,
+      "mean_jaccard_other_pairs": 0.31187405919495087,
+      "delta_bridge": 0.021176192972585384,
+      "predicted_high_core_core_pairs": [
+        {
+          "pair": [
+            16,
+            21
+          ],
+          "jaccard": 0.3237113402061856
+        },
+        {
+          "pair": [
+            16,
+            22
+          ],
+          "jaccard": 0.4057377049180328
+        },
+        {
+          "pair": [
+            16,
+            23
+          ],
+          "jaccard": 0.37037037037037035
+        },
+        {
+          "pair": [
+            16,
+            25
+          ],
+          "jaccard": 0.3392070484581498
+        },
+        {
+          "pair": [
+            21,
+            22
+          ],
+          "jaccard": 0.3049040511727079
+        },
+        {
+          "pair": [
+            21,
+            23
+          ],
+          "jaccard": 0.3669950738916256
+        },
+        {
+          "pair": [
+            21,
+            25
+          ],
+          "jaccard": 0.335
+        },
+        {
+          "pair": [
+            22,
+            23
+          ],
+          "jaccard": 0.31072210065645517
+        },
+        {
+          "pair": [
+            22,
+            25
+          ],
+          "jaccard": 0.3348729792147806
+        },
+        {
+          "pair": [
+            23,
+            25
+          ],
+          "jaccard": 0.3223350253807107
+        }
+      ],
+      "predicted_high_bridge_core_pairs": [
+        {
+          "pair": [
+            16,
+            18
+          ],
+          "jaccard": 0.3290676416819013
+        },
+        {
+          "pair": [
+            18,
+            21
+          ],
+          "jaccard": 0.2982107355864811
+        },
+        {
+          "pair": [
+            18,
+            22
+          ],
+          "jaccard": 0.3126177024482109
+        },
+        {
+          "pair": [
+            18,
+            23
+          ],
+          "jaccard": 0.3305613305613306
+        },
+        {
+          "pair": [
+            18,
+            25
+          ],
+          "jaccard": 0.3114406779661017
+        }
+      ]
+    },
+    {
+      "bridge": 24,
+      "core": [
+        16,
+        21,
+        22,
+        23,
+        25
+      ],
+      "outsider_family": [
+        17,
+        18,
+        19,
+        20,
+        24
+      ],
+      "n_predicted_high_pairs": 15,
+      "n_other_pairs": 30,
+      "mean_jaccard_core_core": 0.34138556942690185,
+      "mean_jaccard_bridge_core": 0.30826448956935626,
+      "mean_jaccard_predicted_high": 0.33034520947438667,
+      "mean_jaccard_other_pairs": 0.3132265805415257,
+      "delta_bridge": 0.01711862893286098,
+      "predicted_high_core_core_pairs": [
+        {
+          "pair": [
+            16,
+            21
+          ],
+          "jaccard": 0.3237113402061856
+        },
+        {
+          "pair": [
+            16,
+            22
+          ],
+          "jaccard": 0.4057377049180328
+        },
+        {
+          "pair": [
+            16,
+            23
+          ],
+          "jaccard": 0.37037037037037035
+        },
+        {
+          "pair": [
+            16,
+            25
+          ],
+          "jaccard": 0.3392070484581498
+        },
+        {
+          "pair": [
+            21,
+            22
+          ],
+          "jaccard": 0.3049040511727079
+        },
+        {
+          "pair": [
+            21,
+            23
+          ],
+          "jaccard": 0.3669950738916256
+        },
+        {
+          "pair": [
+            21,
+            25
+          ],
+          "jaccard": 0.335
+        },
+        {
+          "pair": [
+            22,
+            23
+          ],
+          "jaccard": 0.31072210065645517
+        },
+        {
+          "pair": [
+            22,
+            25
+          ],
+          "jaccard": 0.3348729792147806
+        },
+        {
+          "pair": [
+            23,
+            25
+          ],
+          "jaccard": 0.3223350253807107
+        }
+      ],
+      "predicted_high_bridge_core_pairs": [
+        {
+          "pair": [
+            16,
+            24
+          ],
+          "jaccard": 0.305668016194332
+        },
+        {
+          "pair": [
+            21,
+            24
+          ],
+          "jaccard": 0.30663615560640733
+        },
+        {
+          "pair": [
+            22,
+            24
+          ],
+          "jaccard": 0.3282937365010799
+        },
+        {
+          "pair": [
+            23,
+            24
+          ],
+          "jaccard": 0.30985915492957744
+        },
+        {
+          "pair": [
+            24,
+            25
+          ],
+          "jaccard": 0.29086538461538464
+        }
+      ]
+    },
+    {
+      "bridge": 19,
+      "core": [
+        16,
+        21,
+        22,
+        23,
+        25
+      ],
+      "outsider_family": [
+        17,
+        18,
+        19,
+        20,
+        24
+      ],
+      "n_predicted_high_pairs": 15,
+      "n_other_pairs": 30,
+      "mean_jaccard_core_core": 0.34138556942690185,
+      "mean_jaccard_bridge_core": 0.2889420860360043,
+      "mean_jaccard_predicted_high": 0.32390440829660266,
+      "mean_jaccard_other_pairs": 0.3164469811304177,
+      "delta_bridge": 0.007457427166184971,
+      "predicted_high_core_core_pairs": [
+        {
+          "pair": [
+            16,
+            21
+          ],
+          "jaccard": 0.3237113402061856
+        },
+        {
+          "pair": [
+            16,
+            22
+          ],
+          "jaccard": 0.4057377049180328
+        },
+        {
+          "pair": [
+            16,
+            23
+          ],
+          "jaccard": 0.37037037037037035
+        },
+        {
+          "pair": [
+            16,
+            25
+          ],
+          "jaccard": 0.3392070484581498
+        },
+        {
+          "pair": [
+            21,
+            22
+          ],
+          "jaccard": 0.3049040511727079
+        },
+        {
+          "pair": [
+            21,
+            23
+          ],
+          "jaccard": 0.3669950738916256
+        },
+        {
+          "pair": [
+            21,
+            25
+          ],
+          "jaccard": 0.335
+        },
+        {
+          "pair": [
+            22,
+            23
+          ],
+          "jaccard": 0.31072210065645517
+        },
+        {
+          "pair": [
+            22,
+            25
+          ],
+          "jaccard": 0.3348729792147806
+        },
+        {
+          "pair": [
+            23,
+            25
+          ],
+          "jaccard": 0.3223350253807107
+        }
+      ],
+      "predicted_high_bridge_core_pairs": [
+        {
+          "pair": [
+            16,
+            19
+          ],
+          "jaccard": 0.2811158798283262
+        },
+        {
+          "pair": [
+            19,
+            21
+          ],
+          "jaccard": 0.2818627450980392
+        },
+        {
+          "pair": [
+            19,
+            22
+          ],
+          "jaccard": 0.27702702702702703
+        },
+        {
+          "pair": [
+            19,
+            23
+          ],
+          "jaccard": 0.3110539845758355
+        },
+        {
+          "pair": [
+            19,
+            25
+          ],
+          "jaccard": 0.29365079365079366
+        }
+      ]
+    }
+  ],
+  "descriptive_robustness": [
+    {
+      "bridge": 17,
+      "mean_jaccard_bridge_core": 0.3420193401695428,
+      "best_single_swap": {
+        "outsider": 17,
+        "removed_from_core": 21,
+        "swapped_subset": [
+          16,
+          17,
+          22,
+          23,
+          25
+        ],
+        "delta_pair": 0.0346190439274357
+      },
+      "best_single_swap_gain_vs_h2862_core": 0.005751184903178219
+    },
+    {
+      "bridge": 20,
+      "mean_jaccard_bridge_core": 0.32168166956743544,
+      "best_single_swap": {
+        "outsider": 20,
+        "removed_from_core": 22,
+        "swapped_subset": [
+          16,
+          20,
+          21,
+          23,
+          25
+        ],
+        "delta_pair": 0.023534808510252636
+      },
+      "best_single_swap_gain_vs_h2862_core": -0.0053330505140048445
+    },
+    {
+      "bridge": 18,
+      "mean_jaccard_bridge_core": 0.3163796176488051,
+      "best_single_swap": {
+        "outsider": 18,
+        "removed_from_core": 21,
+        "swapped_subset": [
+          16,
+          18,
+          22,
+          23,
+          25
+        ],
+        "delta_pair": 0.02283488740258932
+      },
+      "best_single_swap_gain_vs_h2862_core": -0.0060329716216681595
+    },
+    {
+      "bridge": 24,
+      "mean_jaccard_bridge_core": 0.30826448956935626,
+      "best_single_swap": {
+        "outsider": 24,
+        "removed_from_core": 25,
+        "swapped_subset": [
+          16,
+          21,
+          22,
+          23,
+          24
+        ],
+        "delta_pair": 0.018458974618540347
+      },
+      "best_single_swap_gain_vs_h2862_core": -0.010408884405717134
+    },
+    {
+      "bridge": 19,
+      "mean_jaccard_bridge_core": 0.2889420860360043,
+      "best_single_swap": {
+        "outsider": 19,
+        "removed_from_core": 21,
+        "swapped_subset": [
+          16,
+          19,
+          22,
+          23,
+          25
+        ],
+        "delta_pair": 0.007298358714302788
+      },
+      "best_single_swap_gain_vs_h2862_core": -0.021569500309954692
+    }
+  ],
+  "verdict": "DESCRIPTIVE-ONLY",
+  "verdict_note": "Q17 is the unique rank-1 outsider bridge under the fixed core-plus-bridge mask, but the outsider family contains only five admissible candidates. So the best possible one-sided exact upper fraction is 0.20, which cannot support an inferential pass at alpha = 0.05. The honest inferential verdict is NULL; the positive statement is descriptive unique-best only."
+}

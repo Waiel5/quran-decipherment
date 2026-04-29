@@ -1,0 +1,99 @@
+{
+  "finding_id": "Q019-F-02",
+  "pre_reg_sha256": "efe91b7f7d7ef0fec22da88e5bb757d8055a1f932fe450f5d4f8c60f4407154d",
+  "seed": 20260428,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-STEM root, K=500, Dirichlet alpha=0.5, Hafs-Kufan, Mashriqi)",
+  "observed": {
+    "q19_top5_neighbors": [
+      {
+        "surah": 43,
+        "fr_distance": 0.8766913271108062
+      },
+      {
+        "surah": 21,
+        "fr_distance": 0.8793057210957469
+      },
+      {
+        "surah": 46,
+        "fr_distance": 0.8883166757284232
+      },
+      {
+        "surah": 41,
+        "fr_distance": 0.8987729811790887
+      },
+      {
+        "surah": 36,
+        "fr_distance": 0.9033085153003741
+      }
+    ],
+    "q19_top10_neighbors": [
+      {
+        "surah": 43,
+        "fr_distance": 0.8766913271108062
+      },
+      {
+        "surah": 21,
+        "fr_distance": 0.8793057210957469
+      },
+      {
+        "surah": 46,
+        "fr_distance": 0.8883166757284232
+      },
+      {
+        "surah": 41,
+        "fr_distance": 0.8987729811790887
+      },
+      {
+        "surah": 36,
+        "fr_distance": 0.9033085153003741
+      },
+      {
+        "surah": 25,
+        "fr_distance": 0.9041684581750511
+      },
+      {
+        "surah": 23,
+        "fr_distance": 0.9122723874727282
+      },
+      {
+        "surah": 15,
+        "fr_distance": 0.9137502221608116
+      },
+      {
+        "surah": 32,
+        "fr_distance": 0.9160881444007368
+      },
+      {
+        "surah": 27,
+        "fr_distance": 0.9165375905254014
+      }
+    ],
+    "target_set": [
+      21,
+      27,
+      28,
+      36,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "target_hits_top5": 5,
+    "single_letter_hits_top5": 0,
+    "mean_fr_to_corpus": 1.050467323863895
+  },
+  "null_distribution": {
+    "expected_target_hits": 0.4864,
+    "p_value_ge_observed": 0.0,
+    "null_target_hits_p95": 2
+  },
+  "verdict": {
+    "direction_locked": "top-5 hits ≥ 4 in target set, p < 0.0125",
+    "pass": true,
+    "note": "top-5 target hits = 5, p = 0.0000"
+  }
+}

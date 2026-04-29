@@ -1,0 +1,93 @@
+{
+  "id": "H-NEW-600",
+  "title": "Paired letter-family content-cohesion: ALM-6 + ALR-5",
+  "prereg_path": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-600-letter-families-prereg.md",
+  "prereg_sha256": "d667f28d3155a456758ab689ebb4d163c742501c878c767326a701801b2fb640",
+  "date": "2026-04-28",
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016666666666666666,
+  "gates": {
+    "strict_pct": 1.6666666666666667,
+    "directional_pct": 16.666666666666668
+  },
+  "alm_6": {
+    "name": "ALM-6",
+    "set": [
+      2,
+      3,
+      29,
+      30,
+      31,
+      32
+    ],
+    "K": 6,
+    "d_observed": 0.9256812,
+    "primary": {
+      "seed": 20260430,
+      "n_perms": 10000,
+      "percentile": 43.15
+    },
+    "mw5": {
+      "seed": 20260431,
+      "n_perms": 5000,
+      "percentile": 42.58
+    },
+    "drift_pp": 0.5700000000000003,
+    "stable_replication": true,
+    "strict_pass": false,
+    "directional_pass": false
+  },
+  "alr_5": {
+    "name": "ALR-5",
+    "set": [
+      10,
+      11,
+      12,
+      14,
+      15
+    ],
+    "K": 5,
+    "d_observed": 0.9551825,
+    "primary": {
+      "seed": 20260430,
+      "n_perms": 10000,
+      "percentile": 56.25
+    },
+    "mw5": {
+      "seed": 20260431,
+      "n_perms": 5000,
+      "percentile": 56.38
+    },
+    "drift_pp": 0.13000000000000256,
+    "stable_replication": true,
+    "strict_pass": false,
+    "directional_pass": false
+  },
+  "mw6_instrument": {
+    "set": [
+      5,
+      9,
+      17,
+      25,
+      33,
+      47
+    ],
+    "K": 6,
+    "d_observed": 1.0129062666666668,
+    "seed": 20260432,
+    "n_perms": 10000,
+    "percentile": 88.1,
+    "null_typical_[25,75]": false
+  },
+  "joint": {
+    "strict_pass": false,
+    "directional_pass": false,
+    "aggregate_h1_biqai": false,
+    "aggregate_null_h570_generalization": true
+  },
+  "notes": {
+    "q13_excluded_from_alr": "Q 13 al-Raʿd is ALMR (المر) not ALR (الر); see prereg §2.3",
+    "alm_classical_anchor": "al-Biqāʿī Naẓm al-Durar; al-Suyūṭī Itqān nawʿ 40; al-Rāzī Mafātīḥ vol.2",
+    "alr_classical_anchor": "al-Biqāʿī Naẓm al-Durar (qiṣaṣ-family); al-Rāzī Mafātīḥ vol.17; H-NEW-97 ALR-PROPHET_PERSON p_mc=0.0059"
+  }
+}

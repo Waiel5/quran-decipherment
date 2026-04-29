@@ -1,0 +1,275 @@
+{
+  "seed": 20260413,
+  "hypothesis": "H-NEW-29 root renewal-process CV < 1 (al-Jāḥiẓ takrār maqbūl)",
+  "rules_tuple": "(no-tashkeel, QAC roots, mushaf order, 77797-token STEM sequence, n_R ≥ 5)",
+  "n_tokens_with_root": 49968,
+  "n_roots_n_ge_5": 833,
+  "weighted_mean_cv": 1.3703251843693158,
+  "unweighted_mean_cv": 1.2474201354681722,
+  "median_cv": 1.228081352889766,
+  "sub_a_bootstrap": {
+    "ci99_low": 1.299222609485191,
+    "ci99_high": 1.4614133682929817,
+    "threshold_upper_lt_0_95": false
+  },
+  "sub_b_baseline": {
+    "quran_surface_wmcv": 1.2874392507302512,
+    "baselines": {
+      "bukhari-noquran.txt": {
+        "n_tokens": 77797,
+        "wmcv": 1.3332520054428116,
+        "n_roots": 1714
+      },
+      "jahiz-hayawan.txt": {
+        "n_tokens": 77797,
+        "wmcv": 1.3387286159921914,
+        "n_roots": 2045
+      }
+    },
+    "mann_whitney": {
+      "bukhari-noquran.txt": {
+        "U": 1476700.0,
+        "z": -9.635514769539782
+      },
+      "jahiz-hayawan.txt": {
+        "U": 1844751.0,
+        "z": -7.94792242659831
+      }
+    },
+    "pass": true
+  },
+  "sub_c_bins": {
+    "bin_summary": {
+      "rare": {
+        "n_roots": 239,
+        "total_count": 1543,
+        "weighted_mean_cv": 1.1290260121981,
+        "median_cv": 1.0807442431554148
+      },
+      "mid": {
+        "n_roots": 391,
+        "total_count": 8885,
+        "weighted_mean_cv": 1.3146620756116483,
+        "median_cv": 1.2372439113879594
+      },
+      "frequent": {
+        "n_roots": 156,
+        "total_count": 15776,
+        "weighted_mean_cv": 1.321942121288595,
+        "median_cv": 1.2657657510862896
+      },
+      "super_frequent": {
+        "n_roots": 47,
+        "total_count": 22228,
+        "weighted_mean_cv": 1.4436643308122525,
+        "median_cv": 1.304948280089319
+      }
+    },
+    "bin_z": {
+      "super_frequent": {
+        "null_mean": 0.9885665241088482,
+        "null_sd": 0.005743988470411783,
+        "z": 79.23027858563559
+      },
+      "frequent": {
+        "null_mean": 0.9886607817347343,
+        "null_sd": 0.006523982144571669,
+        "z": 51.08556893141868
+      },
+      "mid": {
+        "null_mean": 0.9608597194971156,
+        "null_sd": 0.00839329873365569,
+        "z": 42.15295646464314
+      },
+      "rare": {
+        "null_mean": 0.8752360810044015,
+        "null_sd": 0.017203710807951054,
+        "z": 14.752045882822216
+      }
+    },
+    "pass": false
+  },
+  "sub_d_shuffle": {
+    "null_mean": 0.9804750375156479,
+    "null_sd": 0.004108502065921109,
+    "observed": 1.3703251843693158,
+    "z": 94.88863352105074,
+    "pass": false
+  },
+  "top_regular_roots": [
+    [
+      "rEb",
+      5,
+      0.06794531272572671,
+      45.90251097924838
+    ],
+    [
+      "kwkb",
+      5,
+      0.20960355775671663,
+      413.11910775529736
+    ],
+    [
+      "frg",
+      6,
+      0.32193002399289194,
+      960.7744326026925
+    ],
+    [
+      "mrd",
+      5,
+      0.4249307995235708,
+      1309.9173846118501
+    ],
+    [
+      "$rH",
+      5,
+      0.45295032273195396,
+      1935.1067995476392
+    ],
+    [
+      "*rA",
+      6,
+      0.4609946163282542,
+      1484.5095198556992
+    ],
+    [
+      "jby",
+      12,
+      0.46101853266334397,
+      795.6266695808442
+    ],
+    [
+      "Snm",
+      5,
+      0.47000920414139047,
+      1072.677186840344
+    ],
+    [
+      "qSw",
+      5,
+      0.4810671545678869,
+      1250.9132633396543
+    ],
+    [
+      "lTf",
+      8,
+      0.49471356251254833,
+      1231.4693468097591
+    ]
+  ],
+  "top_clumped_roots": [
+    [
+      "$qw",
+      12,
+      2.2171226453770974,
+      13573.849731687242
+    ],
+    [
+      "fjr",
+      24,
+      2.226590000345348,
+      10582.755997526183
+    ],
+    [
+      "wEy",
+      7,
+      2.2595203899392446,
+      24697.529198966407
+    ],
+    [
+      "sjn",
+      12,
+      2.261265519986168,
+      13672.092669658641
+    ],
+    [
+      "bDE",
+      7,
+      2.2927309270626735,
+      12264.559139938568
+    ],
+    [
+      "Tlq",
+      23,
+      2.309277294892449,
+      11059.420414872799
+    ],
+    [
+      "Avm",
+      48,
+      2.433192623046284,
+      6054.076816328525
+    ],
+    [
+      "Hlf",
+      13,
+      2.448762063389584,
+      19894.6743548818
+    ],
+    [
+      "nkH",
+      23,
+      2.46980989433705,
+      11933.464444761617
+    ],
+    [
+      "Alw",
+      37,
+      3.2404109756884742,
+      12125.470709680967
+    ]
+  ],
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "joint_pass": false,
+  "h_new_29_1_rate_matched": {
+    "pre_reg_reference": "task #81 (PRE-REG-STANDARD-04 compliant)",
+    "seed": 20260414,
+    "rules_tuple": "(no-tashkeel, QAC roots, mushaf order, STEM sequence, n_R ≥ 5)",
+    "description": "Rate-matched per-root Poisson null. For each root with n_R≥5, simulate n_R uniform placements over N root-bearing tokens, 1000 sims/root, compute Δ_r = CV_observed(r) − E[CV_rate_matched(r)], then n_R-weighted aggregate.",
+    "data_reuse_disclosed": "Reuses positional index from H-NEW-29; only rate-matched null layer is new. H-NEW-29 MIXED primary verdict stands verbatim regardless of this outcome.",
+    "n_root_tokens_N": 49968,
+    "n_roots_processed": 833,
+    "n_sims_per_root": 1000,
+    "weighted_mean_delta": 0.39018026451602705,
+    "bootstrap_99_ci": {
+      "lo": 0.31798757820602647,
+      "hi": 0.4881758041510946
+    },
+    "verdict": "GENUINE-EXCESS-CLUMPING",
+    "interpretation": "Quran exhibits GENUINE excess clumping beyond rate-matched Poisson; absolute al-Jāḥiẓ refutation strengthened",
+    "diagnostic_weighted_observed_cv": 1.3703251843693174,
+    "diagnostic_weighted_expected_cv": 0.9801449198532898,
+    "diagnostic_simple_mean_observed_cv": 1.2474201354681722,
+    "diagnostic_simple_mean_expected_cv": 0.9371846317647399,
+    "per_frequency_bin": {
+      "rare": {
+        "n_roots": 239,
+        "total_count": 1543,
+        "weighted_mean_delta": 0.25489048522174307,
+        "median_delta": 0.2083542106185562
+      },
+      "mid": {
+        "n_roots": 391,
+        "total_count": 8885,
+        "weighted_mean_delta": 0.35386092512028416,
+        "median_delta": 0.2817084172769262
+      },
+      "frequent": {
+        "n_roots": 156,
+        "total_count": 15776,
+        "weighted_mean_delta": 0.33239983494285735,
+        "median_delta": 0.2782432166665022
+      },
+      "super_frequent": {
+        "n_roots": 47,
+        "total_count": 22228,
+        "weighted_mean_delta": 0.4550980941421116,
+        "median_delta": 0.31605848183045204
+      }
+    },
+    "bonferroni_k_aggregate": 1,
+    "bonferroni_note": "Per-bin Δ is exploratory and NOT Bonferroni-corrected. Aggregate-only PASS/FAIL is the primary test."
+  }
+}

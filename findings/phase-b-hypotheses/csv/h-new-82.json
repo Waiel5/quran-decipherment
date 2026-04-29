@@ -1,0 +1,1123 @@
+{
+  "id": "H-NEW-82",
+  "title": "Yā-Sīn (Q 36) as the heart of the Quran — multi-axis test",
+  "seed": 20260417,
+  "alpha_bonferroni": 0.008333333333333333,
+  "bonferroni_k": 6,
+  "axes": [
+    "A1_mushaf_position_median",
+    "A2_verse_count_median",
+    "A3_letter_count_median",
+    "A4_lexical_centroid",
+    "A5_eigenvector_centrality",
+    "A6_theme_centroid"
+  ],
+  "median_verse_count_corpus": 40,
+  "median_letter_count_corpus": 1477,
+  "q36_per_axis": {
+    "A1_mushaf_position_median": {
+      "rank_of_surah_1to114": 43,
+      "score": -21.5,
+      "top_5_surahs": [
+        57,
+        58,
+        56,
+        59,
+        55
+      ],
+      "p_one_sided_discrete": 0.37719298245614036
+    },
+    "A2_verse_count_median": {
+      "rank_of_surah_1to114": 88,
+      "score": -43,
+      "top_5_surahs": [
+        75,
+        78,
+        47,
+        80,
+        13
+      ],
+      "p_one_sided_discrete": 0.7719298245614035
+    },
+    "A3_letter_count_median": {
+      "rank_of_surah_1to114": 76,
+      "score": -1615,
+      "top_5_surahs": [
+        54,
+        44,
+        53,
+        50,
+        51
+      ],
+      "p_one_sided_discrete": 0.6666666666666666
+    },
+    "A4_lexical_centroid": {
+      "rank_of_surah_1to114": 18,
+      "score": 0.19819979642480545,
+      "top_5_surahs": [
+        10,
+        40,
+        29,
+        39,
+        42
+      ],
+      "p_one_sided_discrete": 0.15789473684210525
+    },
+    "A5_eigenvector_centrality": {
+      "rank_of_surah_1to114": 27,
+      "score": 0.1258764131838136,
+      "top_5_surahs": [
+        10,
+        40,
+        6,
+        39,
+        29
+      ],
+      "p_one_sided_discrete": 0.23684210526315788
+    },
+    "A6_theme_centroid": {
+      "rank_of_surah_1to114": 16,
+      "score": 0.9748174827224892,
+      "top_5_surahs": [
+        46,
+        23,
+        25,
+        57,
+        30
+      ],
+      "p_one_sided_discrete": 0.14035087719298245
+    }
+  },
+  "control_surahs_per_axis": {
+    "1": {
+      "A1_mushaf_position_median": {
+        "rank_of_surah_1to114": 113,
+        "score": -56.5,
+        "top_5_surahs": [
+          57,
+          58,
+          56,
+          59,
+          55
+        ],
+        "p_one_sided_discrete": 0.9912280701754386
+      },
+      "A2_verse_count_median": {
+        "rank_of_surah_1to114": 69,
+        "score": -33,
+        "top_5_surahs": [
+          75,
+          78,
+          47,
+          80,
+          13
+        ],
+        "p_one_sided_discrete": 0.6052631578947368
+      },
+      "A3_letter_count_median": {
+        "rank_of_surah_1to114": 59,
+        "score": -1334,
+        "top_5_surahs": [
+          54,
+          44,
+          53,
+          50,
+          51
+        ],
+        "p_one_sided_discrete": 0.5175438596491229
+      },
+      "A4_lexical_centroid": {
+        "rank_of_surah_1to114": 94,
+        "score": 0.06160532317254458,
+        "top_5_surahs": [
+          10,
+          40,
+          29,
+          39,
+          42
+        ],
+        "p_one_sided_discrete": 0.8245614035087719
+      },
+      "A5_eigenvector_centrality": {
+        "rank_of_surah_1to114": 94,
+        "score": 0.029754205040396327,
+        "top_5_surahs": [
+          10,
+          40,
+          6,
+          39,
+          29
+        ],
+        "p_one_sided_discrete": 0.8245614035087719
+      },
+      "A6_theme_centroid": {
+        "rank_of_surah_1to114": 89,
+        "score": 0.781185719733168,
+        "top_5_surahs": [
+          46,
+          23,
+          25,
+          57,
+          30
+        ],
+        "p_one_sided_discrete": 0.7807017543859649
+      }
+    },
+    "114": {
+      "A1_mushaf_position_median": {
+        "rank_of_surah_1to114": 114,
+        "score": -56.5,
+        "top_5_surahs": [
+          57,
+          58,
+          56,
+          59,
+          55
+        ],
+        "p_one_sided_discrete": 1.0
+      },
+      "A2_verse_count_median": {
+        "rank_of_surah_1to114": 73,
+        "score": -34,
+        "top_5_surahs": [
+          75,
+          78,
+          47,
+          80,
+          13
+        ],
+        "p_one_sided_discrete": 0.6403508771929824
+      },
+      "A3_letter_count_median": {
+        "rank_of_surah_1to114": 69,
+        "score": -1397,
+        "top_5_surahs": [
+          54,
+          44,
+          53,
+          50,
+          51
+        ],
+        "p_one_sided_discrete": 0.6052631578947368
+      },
+      "A4_lexical_centroid": {
+        "rank_of_surah_1to114": 100,
+        "score": 0.03878610704546752,
+        "top_5_surahs": [
+          10,
+          40,
+          29,
+          39,
+          42
+        ],
+        "p_one_sided_discrete": 0.8771929824561403
+      },
+      "A5_eigenvector_centrality": {
+        "rank_of_surah_1to114": 102,
+        "score": 0.01574147259826797,
+        "top_5_surahs": [
+          10,
+          40,
+          6,
+          39,
+          29
+        ],
+        "p_one_sided_discrete": 0.8947368421052632
+      },
+      "A6_theme_centroid": {
+        "rank_of_surah_1to114": 99,
+        "score": 0.615843002733176,
+        "top_5_surahs": [
+          46,
+          23,
+          25,
+          57,
+          30
+        ],
+        "p_one_sided_discrete": 0.868421052631579
+      }
+    }
+  },
+  "diagnostic_surahs_per_axis": {
+    "2": {
+      "A1_mushaf_position_median": {
+        "rank_of_surah_1to114": 111,
+        "score": -55.5,
+        "top_5_surahs": [
+          57,
+          58,
+          56,
+          59,
+          55
+        ],
+        "p_one_sided_discrete": 0.9736842105263158
+      },
+      "A2_verse_count_median": {
+        "rank_of_surah_1to114": 114,
+        "score": -246,
+        "top_5_surahs": [
+          75,
+          78,
+          47,
+          80,
+          13
+        ],
+        "p_one_sided_discrete": 1.0
+      },
+      "A3_letter_count_median": {
+        "rank_of_surah_1to114": 114,
+        "score": -25262,
+        "top_5_surahs": [
+          54,
+          44,
+          53,
+          50,
+          51
+        ],
+        "p_one_sided_discrete": 1.0
+      },
+      "A4_lexical_centroid": {
+        "rank_of_surah_1to114": 45,
+        "score": 0.17875427239628466,
+        "top_5_surahs": [
+          10,
+          40,
+          29,
+          39,
+          42
+        ],
+        "p_one_sided_discrete": 0.39473684210526316
+      },
+      "A5_eigenvector_centrality": {
+        "rank_of_surah_1to114": 38,
+        "score": 0.11981560194419659,
+        "top_5_surahs": [
+          10,
+          40,
+          6,
+          39,
+          29
+        ],
+        "p_one_sided_discrete": 0.3333333333333333
+      },
+      "A6_theme_centroid": {
+        "rank_of_surah_1to114": 34,
+        "score": 0.9635411093857907,
+        "top_5_surahs": [
+          46,
+          23,
+          25,
+          57,
+          30
+        ],
+        "p_one_sided_discrete": 0.2982456140350877
+      }
+    },
+    "18": {
+      "A1_mushaf_position_median": {
+        "rank_of_surah_1to114": 79,
+        "score": -39.5,
+        "top_5_surahs": [
+          57,
+          58,
+          56,
+          59,
+          55
+        ],
+        "p_one_sided_discrete": 0.6929824561403509
+      },
+      "A2_verse_count_median": {
+        "rank_of_surah_1to114": 98,
+        "score": -70,
+        "top_5_surahs": [
+          75,
+          78,
+          47,
+          80,
+          13
+        ],
+        "p_one_sided_discrete": 0.8596491228070176
+      },
+      "A3_letter_count_median": {
+        "rank_of_surah_1to114": 102,
+        "score": -5149,
+        "top_5_surahs": [
+          54,
+          44,
+          53,
+          50,
+          51
+        ],
+        "p_one_sided_discrete": 0.8947368421052632
+      },
+      "A4_lexical_centroid": {
+        "rank_of_surah_1to114": 42,
+        "score": 0.18275358945504977,
+        "top_5_surahs": [
+          10,
+          40,
+          29,
+          39,
+          42
+        ],
+        "p_one_sided_discrete": 0.3684210526315789
+      },
+      "A5_eigenvector_centrality": {
+        "rank_of_surah_1to114": 39,
+        "score": 0.11946122602114605,
+        "top_5_surahs": [
+          10,
+          40,
+          6,
+          39,
+          29
+        ],
+        "p_one_sided_discrete": 0.34210526315789475
+      },
+      "A6_theme_centroid": {
+        "rank_of_surah_1to114": 24,
+        "score": 0.971035970765699,
+        "top_5_surahs": [
+          46,
+          23,
+          25,
+          57,
+          30
+        ],
+        "p_one_sided_discrete": 0.21052631578947367
+      }
+    },
+    "50": {
+      "A1_mushaf_position_median": {
+        "rank_of_surah_1to114": 15,
+        "score": -7.5,
+        "top_5_surahs": [
+          57,
+          58,
+          56,
+          59,
+          55
+        ],
+        "p_one_sided_discrete": 0.13157894736842105
+      },
+      "A2_verse_count_median": {
+        "rank_of_surah_1to114": 11,
+        "score": -5,
+        "top_5_surahs": [
+          75,
+          78,
+          47,
+          80,
+          13
+        ],
+        "p_one_sided_discrete": 0.09649122807017543
+      },
+      "A3_letter_count_median": {
+        "rank_of_surah_1to114": 4,
+        "score": -46,
+        "top_5_surahs": [
+          54,
+          44,
+          53,
+          50,
+          51
+        ],
+        "p_one_sided_discrete": 0.03508771929824561
+      },
+      "A4_lexical_centroid": {
+        "rank_of_surah_1to114": 52,
+        "score": 0.15987987330386147,
+        "top_5_surahs": [
+          10,
+          40,
+          29,
+          39,
+          42
+        ],
+        "p_one_sided_discrete": 0.45614035087719296
+      },
+      "A5_eigenvector_centrality": {
+        "rank_of_surah_1to114": 52,
+        "score": 0.09859332024942606,
+        "top_5_surahs": [
+          10,
+          40,
+          6,
+          39,
+          29
+        ],
+        "p_one_sided_discrete": 0.45614035087719296
+      },
+      "A6_theme_centroid": {
+        "rank_of_surah_1to114": 32,
+        "score": 0.9648705894981263,
+        "top_5_surahs": [
+          46,
+          23,
+          25,
+          57,
+          30
+        ],
+        "p_one_sided_discrete": 0.2807017543859649
+      }
+    },
+    "55": {
+      "A1_mushaf_position_median": {
+        "rank_of_surah_1to114": 5,
+        "score": -2.5,
+        "top_5_surahs": [
+          57,
+          58,
+          56,
+          59,
+          55
+        ],
+        "p_one_sided_discrete": 0.043859649122807015
+      },
+      "A2_verse_count_median": {
+        "rank_of_surah_1to114": 87,
+        "score": -38,
+        "top_5_surahs": [
+          75,
+          78,
+          47,
+          80,
+          13
+        ],
+        "p_one_sided_discrete": 0.7631578947368421
+      },
+      "A3_letter_count_median": {
+        "rank_of_surah_1to114": 11,
+        "score": -173,
+        "top_5_surahs": [
+          54,
+          44,
+          53,
+          50,
+          51
+        ],
+        "p_one_sided_discrete": 0.09649122807017543
+      },
+      "A4_lexical_centroid": {
+        "rank_of_surah_1to114": 77,
+        "score": 0.09976023119973858,
+        "top_5_surahs": [
+          10,
+          40,
+          29,
+          39,
+          42
+        ],
+        "p_one_sided_discrete": 0.6754385964912281
+      },
+      "A5_eigenvector_centrality": {
+        "rank_of_surah_1to114": 76,
+        "score": 0.05887406351288024,
+        "top_5_surahs": [
+          10,
+          40,
+          6,
+          39,
+          29
+        ],
+        "p_one_sided_discrete": 0.6666666666666666
+      },
+      "A6_theme_centroid": {
+        "rank_of_surah_1to114": 76,
+        "score": 0.8544741487346904,
+        "top_5_surahs": [
+          46,
+          23,
+          25,
+          57,
+          30
+        ],
+        "p_one_sided_discrete": 0.6666666666666666
+      }
+    },
+    "57": {
+      "A1_mushaf_position_median": {
+        "rank_of_surah_1to114": 1,
+        "score": -0.5,
+        "top_5_surahs": [
+          57,
+          58,
+          56,
+          59,
+          55
+        ],
+        "p_one_sided_discrete": 0.008771929824561403
+      },
+      "A2_verse_count_median": {
+        "rank_of_surah_1to114": 21,
+        "score": -11,
+        "top_5_surahs": [
+          75,
+          78,
+          47,
+          80,
+          13
+        ],
+        "p_one_sided_discrete": 0.18421052631578946
+      },
+      "A3_letter_count_median": {
+        "rank_of_surah_1to114": 45,
+        "score": -1111,
+        "top_5_surahs": [
+          54,
+          44,
+          53,
+          50,
+          51
+        ],
+        "p_one_sided_discrete": 0.39473684210526316
+      },
+      "A4_lexical_centroid": {
+        "rank_of_surah_1to114": 25,
+        "score": 0.19590198185717966,
+        "top_5_surahs": [
+          10,
+          40,
+          29,
+          39,
+          42
+        ],
+        "p_one_sided_discrete": 0.21929824561403508
+      },
+      "A5_eigenvector_centrality": {
+        "rank_of_surah_1to114": 32,
+        "score": 0.12262385866239191,
+        "top_5_surahs": [
+          10,
+          40,
+          6,
+          39,
+          29
+        ],
+        "p_one_sided_discrete": 0.2807017543859649
+      },
+      "A6_theme_centroid": {
+        "rank_of_surah_1to114": 4,
+        "score": 0.9848518608882375,
+        "top_5_surahs": [
+          46,
+          23,
+          25,
+          57,
+          30
+        ],
+        "p_one_sided_discrete": 0.03508771929824561
+      }
+    },
+    "58": {
+      "A1_mushaf_position_median": {
+        "rank_of_surah_1to114": 2,
+        "score": -0.5,
+        "top_5_surahs": [
+          57,
+          58,
+          56,
+          59,
+          55
+        ],
+        "p_one_sided_discrete": 0.017543859649122806
+      },
+      "A2_verse_count_median": {
+        "rank_of_surah_1to114": 36,
+        "score": -18,
+        "top_5_surahs": [
+          75,
+          78,
+          47,
+          80,
+          13
+        ],
+        "p_one_sided_discrete": 0.3157894736842105
+      },
+      "A3_letter_count_median": {
+        "rank_of_surah_1to114": 26,
+        "score": -610,
+        "top_5_surahs": [
+          54,
+          44,
+          53,
+          50,
+          51
+        ],
+        "p_one_sided_discrete": 0.22807017543859648
+      },
+      "A4_lexical_centroid": {
+        "rank_of_surah_1to114": 48,
+        "score": 0.16787860837139665,
+        "top_5_surahs": [
+          10,
+          40,
+          29,
+          39,
+          42
+        ],
+        "p_one_sided_discrete": 0.42105263157894735
+      },
+      "A5_eigenvector_centrality": {
+        "rank_of_surah_1to114": 49,
+        "score": 0.10376762214687296,
+        "top_5_surahs": [
+          10,
+          40,
+          6,
+          39,
+          29
+        ],
+        "p_one_sided_discrete": 0.4298245614035088
+      },
+      "A6_theme_centroid": {
+        "rank_of_surah_1to114": 21,
+        "score": 0.9722759457102581,
+        "top_5_surahs": [
+          46,
+          23,
+          25,
+          57,
+          30
+        ],
+        "p_one_sided_discrete": 0.18421052631578946
+      }
+    },
+    "67": {
+      "A1_mushaf_position_median": {
+        "rank_of_surah_1to114": 20,
+        "score": -9.5,
+        "top_5_surahs": [
+          57,
+          58,
+          56,
+          59,
+          55
+        ],
+        "p_one_sided_discrete": 0.17543859649122806
+      },
+      "A2_verse_count_median": {
+        "rank_of_surah_1to114": 17,
+        "score": -10,
+        "top_5_surahs": [
+          75,
+          78,
+          47,
+          80,
+          13
+        ],
+        "p_one_sided_discrete": 0.14912280701754385
+      },
+      "A3_letter_count_median": {
+        "rank_of_surah_1to114": 9,
+        "score": -115,
+        "top_5_surahs": [
+          54,
+          44,
+          53,
+          50,
+          51
+        ],
+        "p_one_sided_discrete": 0.07894736842105263
+      },
+      "A4_lexical_centroid": {
+        "rank_of_surah_1to114": 55,
+        "score": 0.14956420972496215,
+        "top_5_surahs": [
+          10,
+          40,
+          29,
+          39,
+          42
+        ],
+        "p_one_sided_discrete": 0.4824561403508772
+      },
+      "A5_eigenvector_centrality": {
+        "rank_of_surah_1to114": 55,
+        "score": 0.092143082518509,
+        "top_5_surahs": [
+          10,
+          40,
+          6,
+          39,
+          29
+        ],
+        "p_one_sided_discrete": 0.4824561403508772
+      },
+      "A6_theme_centroid": {
+        "rank_of_surah_1to114": 58,
+        "score": 0.9408582894012925,
+        "top_5_surahs": [
+          46,
+          23,
+          25,
+          57,
+          30
+        ],
+        "p_one_sided_discrete": 0.5087719298245614
+      }
+    }
+  },
+  "q36_n_rank_1": 0,
+  "q36_n_top_5": 0,
+  "q36_ranks": {
+    "A1_mushaf_position_median": 43,
+    "A2_verse_count_median": 88,
+    "A3_letter_count_median": 76,
+    "A4_lexical_centroid": 18,
+    "A5_eigenvector_centrality": 27,
+    "A6_theme_centroid": 16
+  },
+  "a5_position_matched_null": {
+    "n_null": 10000,
+    "observed_q36_centrality": 0.1258764131838136,
+    "p_one_sided": 0.23827617238276172,
+    "bonferroni_significant": false,
+    "null_mean": 0.0834719804658405,
+    "null_max": 0.15016240811914114
+  },
+  "h_new_82_pass_criterion": "Q36 rank=1 on ≥3 axes OR top-5 on ≥5 axes",
+  "h_new_82_pre_mw5_outcome": "NULL",
+  "mw5_per_control": {
+    "1": {
+      "ranks": {
+        "A1_mushaf_position_median": 113,
+        "A2_verse_count_median": 69,
+        "A3_letter_count_median": 59,
+        "A4_lexical_centroid": 94,
+        "A5_eigenvector_centrality": 94,
+        "A6_theme_centroid": 89
+      },
+      "n_axes_in_bottom_half": 6,
+      "passes_mw5_solo": true
+    },
+    "114": {
+      "ranks": {
+        "A1_mushaf_position_median": 114,
+        "A2_verse_count_median": 73,
+        "A3_letter_count_median": 69,
+        "A4_lexical_centroid": 100,
+        "A5_eigenvector_centrality": 102,
+        "A6_theme_centroid": 99
+      },
+      "n_axes_in_bottom_half": 6,
+      "passes_mw5_solo": true
+    }
+  },
+  "mw5_outcome": "PASS",
+  "h_new_82_overall": "NULL",
+  "top_10_per_axis": {
+    "A1_mushaf_position_median": [
+      {
+        "rank": 1,
+        "surah": 57,
+        "score": -0.5
+      },
+      {
+        "rank": 2,
+        "surah": 58,
+        "score": -0.5
+      },
+      {
+        "rank": 3,
+        "surah": 56,
+        "score": -1.5
+      },
+      {
+        "rank": 4,
+        "surah": 59,
+        "score": -1.5
+      },
+      {
+        "rank": 5,
+        "surah": 55,
+        "score": -2.5
+      },
+      {
+        "rank": 6,
+        "surah": 60,
+        "score": -2.5
+      },
+      {
+        "rank": 7,
+        "surah": 54,
+        "score": -3.5
+      },
+      {
+        "rank": 8,
+        "surah": 61,
+        "score": -3.5
+      },
+      {
+        "rank": 9,
+        "surah": 53,
+        "score": -4.5
+      },
+      {
+        "rank": 10,
+        "surah": 62,
+        "score": -4.5
+      }
+    ],
+    "A2_verse_count_median": [
+      {
+        "rank": 1,
+        "surah": 75,
+        "score": 0
+      },
+      {
+        "rank": 2,
+        "surah": 78,
+        "score": 0
+      },
+      {
+        "rank": 3,
+        "surah": 47,
+        "score": -2
+      },
+      {
+        "rank": 4,
+        "surah": 80,
+        "score": -2
+      },
+      {
+        "rank": 5,
+        "surah": 13,
+        "score": -3
+      },
+      {
+        "rank": 6,
+        "surah": 45,
+        "score": -3
+      },
+      {
+        "rank": 7,
+        "surah": 70,
+        "score": -4
+      },
+      {
+        "rank": 8,
+        "surah": 83,
+        "score": -4
+      },
+      {
+        "rank": 9,
+        "surah": 35,
+        "score": -5
+      },
+      {
+        "rank": 10,
+        "surah": 46,
+        "score": -5
+      }
+    ],
+    "A3_letter_count_median": [
+      {
+        "rank": 1,
+        "surah": 54,
+        "score": 0
+      },
+      {
+        "rank": 2,
+        "surah": 44,
+        "score": -15
+      },
+      {
+        "rank": 3,
+        "surah": 53,
+        "score": -32
+      },
+      {
+        "rank": 4,
+        "surah": 50,
+        "score": -46
+      },
+      {
+        "rank": 5,
+        "surah": 51,
+        "score": -80
+      },
+      {
+        "rank": 6,
+        "surah": 49,
+        "score": -85
+      },
+      {
+        "rank": 7,
+        "surah": 32,
+        "score": -104
+      },
+      {
+        "rank": 8,
+        "surah": 60,
+        "score": -108
+      },
+      {
+        "rank": 9,
+        "surah": 67,
+        "score": -115
+      },
+      {
+        "rank": 10,
+        "surah": 52,
+        "score": -141
+      }
+    ],
+    "A4_lexical_centroid": [
+      {
+        "rank": 1,
+        "surah": 10,
+        "score": 0.2301753975096015
+      },
+      {
+        "rank": 2,
+        "surah": 40,
+        "score": 0.20911985293384402
+      },
+      {
+        "rank": 3,
+        "surah": 29,
+        "score": 0.20863320785687486
+      },
+      {
+        "rank": 4,
+        "surah": 39,
+        "score": 0.20858115529688556
+      },
+      {
+        "rank": 5,
+        "surah": 42,
+        "score": 0.20642792518239292
+      },
+      {
+        "rank": 6,
+        "surah": 46,
+        "score": 0.20320816547107465
+      },
+      {
+        "rank": 7,
+        "surah": 6,
+        "score": 0.2031906987243751
+      },
+      {
+        "rank": 8,
+        "surah": 23,
+        "score": 0.20142317952876315
+      },
+      {
+        "rank": 9,
+        "surah": 27,
+        "score": 0.20087889033261094
+      },
+      {
+        "rank": 10,
+        "surah": 41,
+        "score": 0.20084668949071804
+      }
+    ],
+    "A5_eigenvector_centrality": [
+      {
+        "rank": 1,
+        "surah": 10,
+        "score": 0.15016240811914114
+      },
+      {
+        "rank": 2,
+        "surah": 40,
+        "score": 0.13597818906544135
+      },
+      {
+        "rank": 3,
+        "surah": 6,
+        "score": 0.1346423685246741
+      },
+      {
+        "rank": 4,
+        "surah": 39,
+        "score": 0.13453531594248264
+      },
+      {
+        "rank": 5,
+        "surah": 29,
+        "score": 0.1341443721715931
+      },
+      {
+        "rank": 6,
+        "surah": 11,
+        "score": 0.13241159997887325
+      },
+      {
+        "rank": 7,
+        "surah": 42,
+        "score": 0.13148854399019358
+      },
+      {
+        "rank": 8,
+        "surah": 16,
+        "score": 0.13108645066897914
+      },
+      {
+        "rank": 9,
+        "surah": 7,
+        "score": 0.13078903466514097
+      },
+      {
+        "rank": 10,
+        "surah": 3,
+        "score": 0.13033672289587264
+      }
+    ],
+    "A6_theme_centroid": [
+      {
+        "rank": 1,
+        "surah": 46,
+        "score": 0.9868156560977538
+      },
+      {
+        "rank": 2,
+        "surah": 23,
+        "score": 0.9863730764382321
+      },
+      {
+        "rank": 3,
+        "surah": 25,
+        "score": 0.985319209410884
+      },
+      {
+        "rank": 4,
+        "surah": 57,
+        "score": 0.9848518608882375
+      },
+      {
+        "rank": 5,
+        "surah": 30,
+        "score": 0.9831558932659096
+      },
+      {
+        "rank": 6,
+        "surah": 32,
+        "score": 0.9822997299500887
+      },
+      {
+        "rank": 7,
+        "surah": 6,
+        "score": 0.9811919564840353
+      },
+      {
+        "rank": 8,
+        "surah": 17,
+        "score": 0.9798744729326545
+      },
+      {
+        "rank": 9,
+        "surah": 20,
+        "score": 0.9789929515649568
+      },
+      {
+        "rank": 10,
+        "surah": 51,
+        "score": 0.9786101524812244
+      }
+    ]
+  }
+}

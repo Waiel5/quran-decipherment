@@ -1,0 +1,585 @@
+{
+  "id": "H-NEW-58",
+  "title": "Empirical structural twinning of classically-paired surahs",
+  "seed": 20260416,
+  "n_null_per_pair": 10000,
+  "null_construction": "random adjacent (i, i+1) surah pairs, excluding the test pair from its own null",
+  "alpha_bonferroni": 0.0025,
+  "bonferroni_k": 20,
+  "axes": [
+    "A1_root_jaccard",
+    "A2_verse_len",
+    "A3_rhyme_entropy",
+    "A4_divine_density",
+    "A5_hapax_density"
+  ],
+  "pairs": [
+    {
+      "label": "P_zahrawan",
+      "a": 2,
+      "b": 3
+    },
+    {
+      "label": "P_anfal_tawba",
+      "a": 8,
+      "b": 9
+    },
+    {
+      "label": "P_muawwidhatan",
+      "a": 113,
+      "b": 114
+    },
+    {
+      "label": "P_muzz_mudd",
+      "a": 73,
+      "b": 74
+    }
+  ],
+  "results": {
+    "P_zahrawan": {
+      "surah_a": 2,
+      "surah_b": 3,
+      "axes": {
+        "A1_root_jaccard": {
+          "observed": 0.47763347763347763,
+          "null_mean": 0.20335409554167205,
+          "null_median": 0.1935483870967742,
+          "p_one_sided": 0.007599240075992401,
+          "bonferroni_significant": false
+        },
+        "A2_verse_len": {
+          "observed": 0.8090783786234622,
+          "null_mean": 0.752755767982148,
+          "null_median": 0.8126056518398361,
+          "p_one_sided": 0.5057494250574942,
+          "bonferroni_significant": false
+        },
+        "A3_rhyme_entropy": {
+          "observed": 0.8022873109830051,
+          "null_mean": 0.6788418553738341,
+          "null_median": 0.7241497964785897,
+          "p_one_sided": 0.39076092390760925,
+          "bonferroni_significant": false
+        },
+        "A4_divine_density": {
+          "observed": 0.9891424365108575,
+          "null_mean": 0.4621444243286614,
+          "null_median": 0.5,
+          "p_one_sided": 0.10768923107689231,
+          "bonferroni_significant": false
+        },
+        "A5_hapax_density": {
+          "observed": 0.44419134396355353,
+          "null_mean": 0.40701961345593995,
+          "null_median": 0.4022988505747126,
+          "p_one_sided": 0.4647535246475352,
+          "bonferroni_significant": false
+        }
+      },
+      "n_axes_significant_at_alpha_bon": 0
+    },
+    "P_anfal_tawba": {
+      "surah_a": 8,
+      "surah_b": 9,
+      "axes": {
+        "A1_root_jaccard": {
+          "observed": 0.3504273504273504,
+          "null_mean": 0.20568971739261924,
+          "null_median": 0.2,
+          "p_one_sided": 0.1085891410858914,
+          "bonferroni_significant": false
+        },
+        "A2_verse_len": {
+          "observed": 0.8345650444717623,
+          "null_mean": 0.7551098484086337,
+          "null_median": 0.8126056518398361,
+          "p_one_sided": 0.4413558644135586,
+          "bonferroni_significant": false
+        },
+        "A3_rhyme_entropy": {
+          "observed": 0.672926666330788,
+          "null_mean": 0.6789528178456888,
+          "null_median": 0.7241497964785897,
+          "p_one_sided": 0.5774422557744225,
+          "bonferroni_significant": false
+        },
+        "A4_divine_density": {
+          "observed": 0.8094117647058824,
+          "null_mean": 0.4687790121507092,
+          "null_median": 0.5059523809523809,
+          "p_one_sided": 0.2850714928507149,
+          "bonferroni_significant": false
+        },
+        "A5_hapax_density": {
+          "observed": 0.7644110275689223,
+          "null_mean": 0.4088147460368873,
+          "null_median": 0.4022988505747126,
+          "p_one_sided": 0.20507949205079493,
+          "bonferroni_significant": false
+        }
+      },
+      "n_axes_significant_at_alpha_bon": 0
+    },
+    "P_muawwidhatan": {
+      "surah_a": 113,
+      "surah_b": 114,
+      "axes": {
+        "A1_root_jaccard": {
+          "observed": 0.2222222222222222,
+          "null_mean": 0.20672208852426993,
+          "null_median": 0.1935483870967742,
+          "p_one_sided": 0.46515348465153483,
+          "bonferroni_significant": false
+        },
+        "A2_verse_len": {
+          "observed": 0.8608058608058609,
+          "null_mean": 0.7536742853968224,
+          "null_median": 0.8090783786234622,
+          "p_one_sided": 0.34836516348365165,
+          "bonferroni_significant": false
+        },
+        "A3_rhyme_entropy": {
+          "observed": 0.0,
+          "null_mean": 0.6870209217718066,
+          "null_median": 0.7244078178625923,
+          "p_one_sided": 1.0,
+          "bonferroni_significant": false
+        },
+        "A4_divine_density": {
+          "observed": 1.0,
+          "null_mean": 0.4647910137783111,
+          "null_median": 0.5,
+          "p_one_sided": 0.09709029097090291,
+          "bonferroni_significant": false
+        },
+        "A5_hapax_density": {
+          "observed": 0.0,
+          "null_mean": 0.4137368773369457,
+          "null_median": 0.4137115839243499,
+          "p_one_sided": 1.0,
+          "bonferroni_significant": false
+        }
+      },
+      "n_axes_significant_at_alpha_bon": 0
+    },
+    "P_muzz_mudd": {
+      "surah_a": 73,
+      "surah_b": 74,
+      "axes": {
+        "A1_root_jaccard": {
+          "observed": 0.19047619047619047,
+          "null_mean": 0.2084052840713762,
+          "null_median": 0.20161290322580644,
+          "p_one_sided": 0.5203479652034797,
+          "bonferroni_significant": false
+        },
+        "A2_verse_len": {
+          "observed": 0.4213747645951036,
+          "null_mean": 0.7591327305877997,
+          "null_median": 0.8228511530398323,
+          "p_one_sided": 0.9492050794920508,
+          "bonferroni_significant": false
+        },
+        "A3_rhyme_entropy": {
+          "observed": 0.3226820971375459,
+          "null_mean": 0.6841871901298291,
+          "null_median": 0.7244078178625923,
+          "p_one_sided": 0.9368063193680632,
+          "bonferroni_significant": false
+        },
+        "A4_divine_density": {
+          "observed": 0.7142857142857142,
+          "null_mean": 0.4649583714913454,
+          "null_median": 0.5,
+          "p_one_sided": 0.33626637336266374,
+          "bonferroni_significant": false
+        },
+        "A5_hapax_density": {
+          "observed": 0.4174311926605504,
+          "null_mean": 0.41532510108042625,
+          "null_median": 0.4137115839243499,
+          "p_one_sided": 0.49645035496450357,
+          "bonferroni_significant": false
+        }
+      },
+      "n_axes_significant_at_alpha_bon": 0
+    }
+  },
+  "null_distribution_summary": {
+    "P_zahrawan": {
+      "A1_root_jaccard": {
+        "mean": 0.20335409554167205,
+        "median": 0.1935483870967742,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 0.4199134199134199,
+        "q99": 0.4746317512274959,
+        "max": 0.4867549668874172
+      },
+      "A2_verse_len": {
+        "mean": 0.752755767982148,
+        "median": 0.8126056518398361,
+        "q01": 0.19406738537404267,
+        "q05": 0.41357721032154193,
+        "q95": 0.9782608695652174,
+        "q99": 0.9982207697893971,
+        "max": 0.9989275164735286
+      },
+      "A3_rhyme_entropy": {
+        "mean": 0.6788418553738341,
+        "median": 0.7241497964785897,
+        "q01": 0.0,
+        "q05": 0.31423733676098276,
+        "q95": 0.9592130760949201,
+        "q99": 0.9727568418349058,
+        "max": 0.9926567310702155
+      },
+      "A4_divine_density": {
+        "mean": 0.4621444243286614,
+        "median": 0.5,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 1.0,
+        "q99": 1.0,
+        "max": 1.0
+      },
+      "A5_hapax_density": {
+        "mean": 0.40701961345593995,
+        "median": 0.4022988505747126,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 1.0,
+        "q99": 1.0,
+        "max": 1.0
+      }
+    },
+    "P_anfal_tawba": {
+      "A1_root_jaccard": {
+        "mean": 0.20568971739261924,
+        "median": 0.2,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 0.4239864864864865,
+        "q99": 0.47763347763347763,
+        "max": 0.4867549668874172
+      },
+      "A2_verse_len": {
+        "mean": 0.7551098484086337,
+        "median": 0.8126056518398361,
+        "q01": 0.20377319382850922,
+        "q05": 0.41357721032154193,
+        "q95": 0.9782608695652174,
+        "q99": 0.9982207697893971,
+        "max": 0.9989275164735286
+      },
+      "A3_rhyme_entropy": {
+        "mean": 0.6789528178456888,
+        "median": 0.7241497964785897,
+        "q01": 0.0,
+        "q05": 0.31423733676098276,
+        "q95": 0.9592130760949201,
+        "q99": 0.9727568418349058,
+        "max": 0.9926567310702155
+      },
+      "A4_divine_density": {
+        "mean": 0.4687790121507092,
+        "median": 0.5059523809523809,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 1.0,
+        "q99": 1.0,
+        "max": 1.0
+      },
+      "A5_hapax_density": {
+        "mean": 0.4088147460368873,
+        "median": 0.4022988505747126,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 1.0,
+        "q99": 1.0,
+        "max": 1.0
+      }
+    },
+    "P_muawwidhatan": {
+      "A1_root_jaccard": {
+        "mean": 0.20672208852426993,
+        "median": 0.1935483870967742,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 0.4239864864864865,
+        "q99": 0.47763347763347763,
+        "max": 0.4867549668874172
+      },
+      "A2_verse_len": {
+        "mean": 0.7536742853968224,
+        "median": 0.8090783786234622,
+        "q01": 0.20377319382850922,
+        "q05": 0.41357721032154193,
+        "q95": 0.9828178694158075,
+        "q99": 0.9982207697893971,
+        "max": 0.9989275164735286
+      },
+      "A3_rhyme_entropy": {
+        "mean": 0.6870209217718066,
+        "median": 0.7244078178625923,
+        "q01": 0.0,
+        "q05": 0.3189073087566029,
+        "q95": 0.9580647295260384,
+        "q99": 0.9727568418349058,
+        "max": 0.9926567310702155
+      },
+      "A4_divine_density": {
+        "mean": 0.4647910137783111,
+        "median": 0.5,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 1.0,
+        "q99": 1.0,
+        "max": 1.0
+      },
+      "A5_hapax_density": {
+        "mean": 0.4137368773369457,
+        "median": 0.4137115839243499,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 1.0,
+        "q99": 1.0,
+        "max": 1.0
+      }
+    },
+    "P_muzz_mudd": {
+      "A1_root_jaccard": {
+        "mean": 0.2084052840713762,
+        "median": 0.20161290322580644,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 0.4239864864864865,
+        "q99": 0.47763347763347763,
+        "max": 0.4867549668874172
+      },
+      "A2_verse_len": {
+        "mean": 0.7591327305877997,
+        "median": 0.8228511530398323,
+        "q01": 0.20377319382850922,
+        "q05": 0.41357721032154193,
+        "q95": 0.9828178694158075,
+        "q99": 0.9982207697893971,
+        "max": 0.9989275164735286
+      },
+      "A3_rhyme_entropy": {
+        "mean": 0.6841871901298291,
+        "median": 0.7244078178625923,
+        "q01": 0.0,
+        "q05": 0.31423733676098276,
+        "q95": 0.9592130760949201,
+        "q99": 0.9727568418349058,
+        "max": 0.9926567310702155
+      },
+      "A4_divine_density": {
+        "mean": 0.4649583714913454,
+        "median": 0.5,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 1.0,
+        "q99": 1.0,
+        "max": 1.0
+      },
+      "A5_hapax_density": {
+        "mean": 0.41532510108042625,
+        "median": 0.4137115839243499,
+        "q01": 0.0,
+        "q05": 0.0,
+        "q95": 1.0,
+        "q99": 1.0,
+        "max": 1.0
+      }
+    }
+  },
+  "feature_scalars": {
+    "P_zahrawan": {
+      "surah_a": 2,
+      "surah_b": 3,
+      "verse_len_mean_a": 115.67482517482517,
+      "verse_len_mean_b": 93.59,
+      "rhyme_entropy_a": 2.2494484126620833,
+      "rhyme_entropy_b": 2.8037940795871985,
+      "divine_density_a": 0.7517482517482518,
+      "divine_density_b": 0.76,
+      "hapax_density_a": 0.03076923076923077,
+      "hapax_density_b": 0.01366742596810934,
+      "root_set_size_a": 585,
+      "root_set_size_b": 439,
+      "root_intersection": 331,
+      "root_union": 693
+    },
+    "P_anfal_tawba": {
+      "surah_a": 8,
+      "surah_b": 9,
+      "verse_len_mean_a": 89.46666666666667,
+      "verse_len_mean_b": 107.2015503875969,
+      "rhyme_entropy_a": 2.6833454377438444,
+      "rhyme_entropy_b": 1.8056947000348942,
+      "divine_density_a": 0.7466666666666667,
+      "divine_density_b": 0.9224806201550387,
+      "hapax_density_a": 0.018796992481203006,
+      "hapax_density_b": 0.02459016393442623,
+      "root_set_size_a": 266,
+      "root_set_size_b": 366,
+      "root_intersection": 164,
+      "root_union": 468
+    },
+    "P_muawwidhatan": {
+      "surah_a": 113,
+      "surah_b": 114,
+      "verse_len_mean_a": 18.2,
+      "verse_len_mean_b": 15.666666666666666,
+      "rhyme_entropy_a": 1.9219280948873623,
+      "rhyme_entropy_b": 0.0,
+      "divine_density_a": 0.0,
+      "divine_density_b": 0.0,
+      "hapax_density_a": 0.18181818181818182,
+      "hapax_density_b": 0.0,
+      "root_set_size_a": 11,
+      "root_set_size_b": 11,
+      "root_intersection": 4,
+      "root_union": 18
+    },
+    "P_muzz_mudd": {
+      "surah_a": 73,
+      "surah_b": 74,
+      "verse_len_mean_a": 53.1,
+      "verse_len_mean_b": 22.375,
+      "rhyme_entropy_a": 1.2917601481809735,
+      "rhyme_entropy_b": 4.003197449254056,
+      "divine_density_a": 0.05,
+      "divine_density_b": 0.03571428571428571,
+      "hapax_density_a": 0.04395604395604396,
+      "hapax_density_b": 0.01834862385321101,
+      "root_set_size_a": 91,
+      "root_set_size_b": 109,
+      "root_intersection": 32,
+      "root_union": 168
+    }
+  },
+  "pass_criterion": "≥2 of 4 pairs significant on ≥2 of 5 axes at α_bon=0.0025",
+  "n_pairs_with_geq_2_axes_sig": 0,
+  "h_new_58_overall": "INSTRUMENT_FAIL_NO_DECLARATION",
+  "mw5_instrument_check": {
+    "definition": "MW-5: P_muawwidhatan must have ≥2 axes with p<0.001",
+    "n_axes_under_0.001": 0,
+    "result": "INSTRUMENT_FAIL"
+  },
+  "secondary_any_pair_null_diagnostic": {
+    "purpose": "POST-HOC diagnostic ONLY (does not enter PASS/NULL declaration). Compares observed similarity to a null of any (i, j) surah pair to show whether adjacent-pair null is unusually tight.",
+    "results": {
+      "P_zahrawan": {
+        "A1_root_jaccard": {
+          "p_one_sided_any_pair": 0.0005999400059994001,
+          "null_any_mean": 0.10614057288348497,
+          "null_any_median": 0.07526881720430108
+        },
+        "A2_verse_len": {
+          "p_one_sided_any_pair": 0.28477152284771523,
+          "null_any_mean": 0.5882904882136727,
+          "null_any_median": 0.6236559139784946
+        },
+        "A3_rhyme_entropy": {
+          "p_one_sided_any_pair": 0.29077092290770923,
+          "null_any_mean": 0.6272120822215982,
+          "null_any_median": 0.6638612050556266
+        },
+        "A4_divine_density": {
+          "p_one_sided_any_pair": 0.1616838316168383,
+          "null_any_mean": 0.32356416384955594,
+          "null_any_median": 0.10646758703481396
+        },
+        "A5_hapax_density": {
+          "p_one_sided_any_pair": 0.33086691330866913,
+          "null_any_mean": 0.31709184647070765,
+          "null_any_median": 0.16899441340782118
+        }
+      },
+      "P_anfal_tawba": {
+        "A1_root_jaccard": {
+          "p_one_sided_any_pair": 0.014598540145985401,
+          "null_any_mean": 0.1062339417120157,
+          "null_any_median": 0.07692307692307693
+        },
+        "A2_verse_len": {
+          "p_one_sided_any_pair": 0.2460753924607539,
+          "null_any_mean": 0.5860665026208169,
+          "null_any_median": 0.6196581196581197
+        },
+        "A3_rhyme_entropy": {
+          "p_one_sided_any_pair": 0.48805119488051196,
+          "null_any_mean": 0.6285193727704067,
+          "null_any_median": 0.6631372748110183
+        },
+        "A4_divine_density": {
+          "p_one_sided_any_pair": 0.21527847215278473,
+          "null_any_mean": 0.328830974245186,
+          "null_any_median": 0.10666666666666658
+        },
+        "A5_hapax_density": {
+          "p_one_sided_any_pair": 0.16878312168783122,
+          "null_any_mean": 0.31983788845966304,
+          "null_any_median": 0.17886178861788626
+        }
+      },
+      "P_muawwidhatan": {
+        "A1_root_jaccard": {
+          "p_one_sided_any_pair": 0.1317868213178682,
+          "null_any_mean": 0.1054923217019008,
+          "null_any_median": 0.0759493670886076
+        },
+        "A2_verse_len": {
+          "p_one_sided_any_pair": 0.201979802019798,
+          "null_any_mean": 0.5876371877449289,
+          "null_any_median": 0.6175923465320223
+        },
+        "A3_rhyme_entropy": {
+          "p_one_sided_any_pair": 1.0,
+          "null_any_mean": 0.6350030710953698,
+          "null_any_median": 0.6672200741991964
+        },
+        "A4_divine_density": {
+          "p_one_sided_any_pair": 0.15158484151584842,
+          "null_any_mean": 0.31862566345033705,
+          "null_any_median": 0.10285714285714276
+        },
+        "A5_hapax_density": {
+          "p_one_sided_any_pair": 1.0,
+          "null_any_mean": 0.3164984339157512,
+          "null_any_median": 0.16500000000000004
+        }
+      },
+      "P_muzz_mudd": {
+        "A1_root_jaccard": {
+          "p_one_sided_any_pair": 0.17918208179182082,
+          "null_any_mean": 0.10609639975284202,
+          "null_any_median": 0.07692307692307693
+        },
+        "A2_verse_len": {
+          "p_one_sided_any_pair": 0.6576342365763423,
+          "null_any_mean": 0.5857607624860769,
+          "null_any_median": 0.6190476190476191
+        },
+        "A3_rhyme_entropy": {
+          "p_one_sided_any_pair": 0.8976102389761024,
+          "null_any_mean": 0.627759234692774,
+          "null_any_median": 0.6632077668662675
+        },
+        "A4_divine_density": {
+          "p_one_sided_any_pair": 0.23537646235376464,
+          "null_any_mean": 0.3190056295969708,
+          "null_any_median": 0.09433962264150941
+        },
+        "A5_hapax_density": {
+          "p_one_sided_any_pair": 0.3344665533446655,
+          "null_any_mean": 0.30913465883725283,
+          "null_any_median": 0.15714285714285714
+        }
+      }
+    }
+  }
+}

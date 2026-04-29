@@ -1,0 +1,1437 @@
+{
+  "seed": 20260413,
+  "hypothesis": "H-NEW-31 time/space/cosmos incipit asymmetry Meccan vs Medinan",
+  "rules_tuple": "(no-tashkeel, graphemes, normalized, 28-letter)",
+  "n_surahs": 114,
+  "incipit_class_counts": {
+    "PRAISE": 14,
+    "OTHER": 55,
+    "SPACE": 22,
+    "IMPER": 8,
+    "COSMOS": 1,
+    "TIME": 14
+  },
+  "period_class": {
+    "Meccan": {
+      "PRAISE": 9,
+      "OTHER": 47,
+      "SPACE": 12,
+      "COSMOS": 1,
+      "IMPER": 7,
+      "TIME": 10
+    },
+    "Medinan": {
+      "OTHER": 8,
+      "SPACE": 10,
+      "IMPER": 1,
+      "PRAISE": 5,
+      "TIME": 4
+    }
+  },
+  "sub_a_fisher": {
+    "TIME_pvalue": 0.7656051269216574,
+    "COSMOS_pvalue": 0.7543859649122803,
+    "SPACE_pvalue_med_greater": 0.014616345029006609,
+    "meccan_time_count": 10,
+    "medinan_time_count": 4,
+    "meccan_cosmos_count": 1,
+    "medinan_cosmos_count": 0,
+    "meccan_space_count": 12,
+    "medinan_space_count": 10,
+    "pass": true
+  },
+  "sub_b_jonckheere_meccan": {
+    "phases": [
+      "Early Meccan",
+      "Middle Meccan",
+      "Late Meccan"
+    ],
+    "phase_time_rates": [
+      0.20833333333333334,
+      0.09523809523809523,
+      0.0
+    ],
+    "J": 1045.5,
+    "z": -1.4090164883063154,
+    "pass": false
+  },
+  "sub_c_shuffle": {
+    "obs_p": 0.7656051269216574,
+    "empirical_p": 0.552,
+    "null_median_p": 0.5337018016787072,
+    "pass": false
+  },
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016666666666666666,
+  "joint_pass": false,
+  "surah_incipits": {
+    "1": {
+      "tokens": [
+        "بسم",
+        "الله",
+        "الرحمن",
+        "الرحيم",
+        "الحمد"
+      ],
+      "class": "PRAISE",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "2": {
+      "tokens": [
+        "ذلك",
+        "الكتاب",
+        "لا",
+        "ريب",
+        "ۛ"
+      ],
+      "class": "OTHER",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "3": {
+      "tokens": [
+        "الله",
+        "لا",
+        "إله",
+        "إلا",
+        "هو"
+      ],
+      "class": "OTHER",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "4": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "الناس",
+        "اتقوا",
+        "ربكم"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "5": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "الذين",
+        "آمنوا",
+        "أوفوا"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "6": {
+      "tokens": [
+        "الحمد",
+        "لله",
+        "الذي",
+        "خلق",
+        "السماوات"
+      ],
+      "class": "PRAISE",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "7": {
+      "tokens": [
+        "كتاب",
+        "أنزل",
+        "إليك",
+        "فلا",
+        "يكن"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "8": {
+      "tokens": [
+        "يسألونك",
+        "عن",
+        "الأنفال",
+        "ۖ",
+        "قل"
+      ],
+      "class": "IMPER",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "9": {
+      "tokens": [
+        "براءة",
+        "من",
+        "الله",
+        "ورسوله",
+        "إلى"
+      ],
+      "class": "OTHER",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "10": {
+      "tokens": [
+        "الر",
+        "ۚ",
+        "تلك",
+        "آيات",
+        "الكتاب"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "11": {
+      "tokens": [
+        "الر",
+        "ۚ",
+        "كتاب",
+        "أحكمت",
+        "آياته"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "12": {
+      "tokens": [
+        "الر",
+        "ۚ",
+        "تلك",
+        "آيات",
+        "الكتاب"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "13": {
+      "tokens": [
+        "المر",
+        "ۚ",
+        "تلك",
+        "آيات",
+        "الكتاب"
+      ],
+      "class": "OTHER",
+      "period": "Medinan",
+      "phase": "Late Meccan"
+    },
+    "14": {
+      "tokens": [
+        "الر",
+        "ۚ",
+        "كتاب",
+        "أنزلناه",
+        "إليك"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "15": {
+      "tokens": [
+        "الر",
+        "ۚ",
+        "تلك",
+        "آيات",
+        "الكتاب"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "16": {
+      "tokens": [
+        "أتى",
+        "أمر",
+        "الله",
+        "فلا",
+        "تستعجلوه"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "17": {
+      "tokens": [
+        "سبحان",
+        "الذي",
+        "أسرى",
+        "بعبده",
+        "ليلا"
+      ],
+      "class": "PRAISE",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "18": {
+      "tokens": [
+        "الحمد",
+        "لله",
+        "الذي",
+        "أنزل",
+        "على"
+      ],
+      "class": "PRAISE",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "19": {
+      "tokens": [
+        "ذكر",
+        "رحمت",
+        "ربك",
+        "عبده",
+        "زكريا"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "20": {
+      "tokens": [
+        "ما",
+        "أنزلنا",
+        "عليك",
+        "القرآن",
+        "لتشقى"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "21": {
+      "tokens": [
+        "اقترب",
+        "للناس",
+        "حسابهم",
+        "وهم",
+        "في"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "22": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "الناس",
+        "اتقوا",
+        "ربكم"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "23": {
+      "tokens": [
+        "قد",
+        "أفلح",
+        "المؤمنون",
+        "الذين",
+        "هم"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "24": {
+      "tokens": [
+        "سورة",
+        "أنزلناها",
+        "وفرضناها",
+        "وأنزلنا",
+        "فيها"
+      ],
+      "class": "OTHER",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "25": {
+      "tokens": [
+        "تبارك",
+        "الذي",
+        "نزل",
+        "الفرقان",
+        "على"
+      ],
+      "class": "PRAISE",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "26": {
+      "tokens": [
+        "لعلك",
+        "باخع",
+        "نفسك",
+        "ألا",
+        "يكونوا"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "27": {
+      "tokens": [
+        "طس",
+        "ۚ",
+        "تلك",
+        "آيات",
+        "القرآن"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "28": {
+      "tokens": [
+        "نتلو",
+        "عليك",
+        "من",
+        "نبإ",
+        "موسى"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "29": {
+      "tokens": [
+        "أحسب",
+        "الناس",
+        "أن",
+        "يتركوا",
+        "أن"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "30": {
+      "tokens": [
+        "في",
+        "أدنى",
+        "الأرض",
+        "وهم",
+        "من"
+      ],
+      "class": "COSMOS",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "31": {
+      "tokens": [
+        "الذين",
+        "يقيمون",
+        "الصلاة",
+        "ويؤتون",
+        "الزكاة"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "32": {
+      "tokens": [
+        "تنزيل",
+        "الكتاب",
+        "لا",
+        "ريب",
+        "فيه"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "33": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "النبي",
+        "اتق",
+        "الله"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "34": {
+      "tokens": [
+        "الحمد",
+        "لله",
+        "الذي",
+        "له",
+        "ما"
+      ],
+      "class": "PRAISE",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "35": {
+      "tokens": [
+        "الحمد",
+        "لله",
+        "فاطر",
+        "السماوات",
+        "والأرض"
+      ],
+      "class": "PRAISE",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "36": {
+      "tokens": [
+        "لتنذر",
+        "قوما",
+        "ما",
+        "أنذر",
+        "آباؤهم"
+      ],
+      "class": "IMPER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "37": {
+      "tokens": [
+        "والصافات",
+        "صفا",
+        "فالزاجرات",
+        "زجرا",
+        "فالتاليات"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "38": {
+      "tokens": [
+        "ص",
+        "ۚ",
+        "والقرآن",
+        "ذي",
+        "الذكر"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "39": {
+      "tokens": [
+        "تنزيل",
+        "الكتاب",
+        "من",
+        "الله",
+        "العزيز"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "40": {
+      "tokens": [
+        "تنزيل",
+        "الكتاب",
+        "من",
+        "الله",
+        "العزيز"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "41": {
+      "tokens": [
+        "كتاب",
+        "فصلت",
+        "آياته",
+        "قرآنا",
+        "عربيا"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "42": {
+      "tokens": [
+        "كذلك",
+        "يوحي",
+        "إليك",
+        "وإلى",
+        "الذين"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "43": {
+      "tokens": [
+        "إنا",
+        "جعلناه",
+        "قرآنا",
+        "عربيا",
+        "لعلكم"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "44": {
+      "tokens": [
+        "إنا",
+        "أنزلناه",
+        "في",
+        "ليلة",
+        "مباركة"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "45": {
+      "tokens": [
+        "تنزيل",
+        "الكتاب",
+        "من",
+        "الله",
+        "العزيز"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "46": {
+      "tokens": [
+        "تنزيل",
+        "الكتاب",
+        "من",
+        "الله",
+        "العزيز"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Late Meccan"
+    },
+    "47": {
+      "tokens": [
+        "الذين",
+        "كفروا",
+        "وصدوا",
+        "عن",
+        "سبيل"
+      ],
+      "class": "OTHER",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "48": {
+      "tokens": [
+        "إنا",
+        "فتحنا",
+        "لك",
+        "فتحا",
+        "مبينا"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "49": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "الذين",
+        "آمنوا",
+        "لا"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "50": {
+      "tokens": [
+        "بل",
+        "عجبوا",
+        "أن",
+        "جاءهم",
+        "منذر"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "51": {
+      "tokens": [
+        "والذاريات",
+        "ذروا",
+        "فالحاملات",
+        "وقرا",
+        "فالجاريات"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "52": {
+      "tokens": [
+        "والطور",
+        "وكتاب",
+        "مسطور",
+        "في",
+        "رق"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "53": {
+      "tokens": [
+        "والنجم",
+        "إذا",
+        "هوى",
+        "ما",
+        "ضل"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "54": {
+      "tokens": [
+        "اقتربت",
+        "الساعة",
+        "وانشق",
+        "القمر",
+        "وإن"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "55": {
+      "tokens": [
+        "الرحمن",
+        "علم",
+        "القرآن",
+        "خلق",
+        "الإنسان"
+      ],
+      "class": "OTHER",
+      "period": "Medinan",
+      "phase": "Early Meccan"
+    },
+    "56": {
+      "tokens": [
+        "إذا",
+        "وقعت",
+        "الواقعة",
+        "ليس",
+        "لوقعتها"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "57": {
+      "tokens": [
+        "سبح",
+        "لله",
+        "ما",
+        "في",
+        "السماوات"
+      ],
+      "class": "PRAISE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "58": {
+      "tokens": [
+        "قد",
+        "سمع",
+        "الله",
+        "قول",
+        "التي"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "59": {
+      "tokens": [
+        "سبح",
+        "لله",
+        "ما",
+        "في",
+        "السماوات"
+      ],
+      "class": "PRAISE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "60": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "الذين",
+        "آمنوا",
+        "لا"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "61": {
+      "tokens": [
+        "سبح",
+        "لله",
+        "ما",
+        "في",
+        "السماوات"
+      ],
+      "class": "PRAISE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "62": {
+      "tokens": [
+        "يسبح",
+        "لله",
+        "ما",
+        "في",
+        "السماوات"
+      ],
+      "class": "PRAISE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "63": {
+      "tokens": [
+        "إذا",
+        "جاءك",
+        "المنافقون",
+        "قالوا",
+        "نشهد"
+      ],
+      "class": "TIME",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "64": {
+      "tokens": [
+        "يسبح",
+        "لله",
+        "ما",
+        "في",
+        "السماوات"
+      ],
+      "class": "PRAISE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "65": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "النبي",
+        "إذا",
+        "طلقتم"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "66": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "النبي",
+        "لم",
+        "تحرم"
+      ],
+      "class": "SPACE",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "67": {
+      "tokens": [
+        "تبارك",
+        "الذي",
+        "بيده",
+        "الملك",
+        "وهو"
+      ],
+      "class": "PRAISE",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "68": {
+      "tokens": [
+        "ن",
+        "ۚ",
+        "والقلم",
+        "وما",
+        "يسطرون"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "69": {
+      "tokens": [
+        "الحاقة",
+        "ما",
+        "الحاقة",
+        "وما",
+        "أدراك"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "70": {
+      "tokens": [
+        "سأل",
+        "سائل",
+        "بعذاب",
+        "واقع",
+        "للكافرين"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "71": {
+      "tokens": [
+        "إنا",
+        "أرسلنا",
+        "نوحا",
+        "إلى",
+        "قومه"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "72": {
+      "tokens": [
+        "قل",
+        "أوحي",
+        "إلي",
+        "أنه",
+        "استمع"
+      ],
+      "class": "IMPER",
+      "period": "Meccan",
+      "phase": "Middle Meccan"
+    },
+    "73": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "المزمل",
+        "قم",
+        "الليل"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "74": {
+      "tokens": [
+        "يا",
+        "أيها",
+        "المدثر",
+        "قم",
+        "فأنذر"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "75": {
+      "tokens": [
+        "لا",
+        "أقسم",
+        "بيوم",
+        "القيامة",
+        "ولا"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "76": {
+      "tokens": [
+        "هل",
+        "أتى",
+        "على",
+        "الإنسان",
+        "حين"
+      ],
+      "class": "TIME",
+      "period": "Medinan",
+      "phase": "Middle Meccan"
+    },
+    "77": {
+      "tokens": [
+        "والمرسلات",
+        "عرفا",
+        "فالعاصفات",
+        "عصفا",
+        "والناشرات"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "78": {
+      "tokens": [
+        "عم",
+        "يتساءلون",
+        "عن",
+        "النبإ",
+        "العظيم"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "79": {
+      "tokens": [
+        "والنازعات",
+        "غرقا",
+        "والناشطات",
+        "نشطا",
+        "والسابحات"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "80": {
+      "tokens": [
+        "عبس",
+        "وتولى",
+        "أن",
+        "جاءه",
+        "الأعمى"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "81": {
+      "tokens": [
+        "إذا",
+        "الشمس",
+        "كورت",
+        "وإذا",
+        "النجوم"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "82": {
+      "tokens": [
+        "إذا",
+        "السماء",
+        "انفطرت",
+        "وإذا",
+        "الكواكب"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "83": {
+      "tokens": [
+        "ويل",
+        "للمطففين",
+        "الذين",
+        "إذا",
+        "اكتالوا"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "84": {
+      "tokens": [
+        "إذا",
+        "السماء",
+        "انشقت",
+        "وأذنت",
+        "لربها"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "85": {
+      "tokens": [
+        "والسماء",
+        "ذات",
+        "البروج",
+        "واليوم",
+        "الموعود"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "86": {
+      "tokens": [
+        "والسماء",
+        "والطارق",
+        "وما",
+        "أدراك",
+        "ما"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "87": {
+      "tokens": [
+        "سبح",
+        "اسم",
+        "ربك",
+        "الأعلى",
+        "الذي"
+      ],
+      "class": "PRAISE",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "88": {
+      "tokens": [
+        "هل",
+        "أتاك",
+        "حديث",
+        "الغاشية",
+        "وجوه"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "89": {
+      "tokens": [
+        "والفجر",
+        "وليال",
+        "عشر",
+        "والشفع",
+        "والوتر"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "90": {
+      "tokens": [
+        "لا",
+        "أقسم",
+        "بهذا",
+        "البلد",
+        "وأنت"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "91": {
+      "tokens": [
+        "والشمس",
+        "وضحاها",
+        "والقمر",
+        "إذا",
+        "تلاها"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "92": {
+      "tokens": [
+        "والليل",
+        "إذا",
+        "يغشى",
+        "والنهار",
+        "إذا"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "93": {
+      "tokens": [
+        "والضحى",
+        "والليل",
+        "إذا",
+        "سجى",
+        "ما"
+      ],
+      "class": "TIME",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "94": {
+      "tokens": [
+        "ألم",
+        "نشرح",
+        "لك",
+        "صدرك",
+        "ووضعنا"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "95": {
+      "tokens": [
+        "والتين",
+        "والزيتون",
+        "وطور",
+        "سينين",
+        "وهذا"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "96": {
+      "tokens": [
+        "اقرأ",
+        "باسم",
+        "ربك",
+        "الذي",
+        "خلق"
+      ],
+      "class": "IMPER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "97": {
+      "tokens": [
+        "إنا",
+        "أنزلناه",
+        "في",
+        "ليلة",
+        "القدر"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "98": {
+      "tokens": [
+        "لم",
+        "يكن",
+        "الذين",
+        "كفروا",
+        "من"
+      ],
+      "class": "OTHER",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "99": {
+      "tokens": [
+        "إذا",
+        "زلزلت",
+        "الأرض",
+        "زلزالها",
+        "وأخرجت"
+      ],
+      "class": "TIME",
+      "period": "Medinan",
+      "phase": "Early Meccan"
+    },
+    "100": {
+      "tokens": [
+        "والعاديات",
+        "ضبحا",
+        "فالموريات",
+        "قدحا",
+        "فالمغيرات"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "101": {
+      "tokens": [
+        "القارعة",
+        "ما",
+        "القارعة",
+        "وما",
+        "أدراك"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "102": {
+      "tokens": [
+        "ألهاكم",
+        "التكاثر",
+        "حتى",
+        "زرتم",
+        "المقابر"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "103": {
+      "tokens": [
+        "والعصر",
+        "إن",
+        "الإنسان",
+        "لفي",
+        "خسر"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "104": {
+      "tokens": [
+        "ويل",
+        "لكل",
+        "همزة",
+        "لمزة",
+        "الذي"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "105": {
+      "tokens": [
+        "ألم",
+        "تر",
+        "كيف",
+        "فعل",
+        "ربك"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "106": {
+      "tokens": [
+        "لإيلاف",
+        "قريش",
+        "إيلافهم",
+        "رحلة",
+        "الشتاء"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "107": {
+      "tokens": [
+        "أرأيت",
+        "الذي",
+        "يكذب",
+        "بالدين",
+        "فذلك"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "108": {
+      "tokens": [
+        "إنا",
+        "أعطيناك",
+        "الكوثر",
+        "فصل",
+        "لربك"
+      ],
+      "class": "SPACE",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "109": {
+      "tokens": [
+        "قل",
+        "يا",
+        "أيها",
+        "الكافرون",
+        "لا"
+      ],
+      "class": "IMPER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "110": {
+      "tokens": [
+        "إذا",
+        "جاء",
+        "نصر",
+        "الله",
+        "والفتح"
+      ],
+      "class": "TIME",
+      "period": "Medinan",
+      "phase": "Medinan"
+    },
+    "111": {
+      "tokens": [
+        "تبت",
+        "يدا",
+        "أبي",
+        "لهب",
+        "وتب"
+      ],
+      "class": "OTHER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "112": {
+      "tokens": [
+        "قل",
+        "هو",
+        "الله",
+        "أحد",
+        "الله"
+      ],
+      "class": "IMPER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "113": {
+      "tokens": [
+        "قل",
+        "أعوذ",
+        "برب",
+        "الفلق",
+        "من"
+      ],
+      "class": "IMPER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    },
+    "114": {
+      "tokens": [
+        "قل",
+        "أعوذ",
+        "برب",
+        "الناس",
+        "ملك"
+      ],
+      "class": "IMPER",
+      "period": "Meccan",
+      "phase": "Early Meccan"
+    }
+  }
+}

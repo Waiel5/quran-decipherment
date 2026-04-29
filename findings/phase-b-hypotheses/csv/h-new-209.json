@@ -1,0 +1,246 @@
+{
+  "hypothesis": "H-NEW-209",
+  "title": "PageRank verse-twin hubs vs classical celebrated verses",
+  "seed": 20260419,
+  "alpha": 0.05,
+  "bonferroni_k": 1,
+  "alpha_corrected": 0.05,
+  "method": "Reconstruct H-NEW-167 top-1 Jaccard char-trigram verse-twin graph; symmetrise (undirected); compute NetworkX PageRank (alpha=0.85, tol=1e-10); take top-50 by PageRank, tie-break (surah, ayah); test intersection with pre-registered celebrated set against hypergeometric null and 10,000-iter permutation null.",
+  "rules_tuple": "(no-tashkeel; whitespace-collapsed; basmala-only-in-Q1)",
+  "graph": {
+    "n_nodes": 6236,
+    "n_edges": 4943,
+    "n_components": 1293
+  },
+  "celebrated_set": {
+    "spec": "Q1:1-7 (al-Fatiha incl. basmala), Q2:255 (kursi), Q24:35 (nur), Q59:22-24 (khawatim Hashr), Q112:1-4 (Ikhlas), Q113:1-5 (Falaq), Q114:1-6 (Nas)",
+    "size": 27,
+    "members": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        255
+      ],
+      [
+        24,
+        35
+      ],
+      [
+        59,
+        22
+      ],
+      [
+        59,
+        23
+      ],
+      [
+        59,
+        24
+      ],
+      [
+        112,
+        1
+      ],
+      [
+        112,
+        2
+      ],
+      [
+        112,
+        3
+      ],
+      [
+        112,
+        4
+      ],
+      [
+        113,
+        1
+      ],
+      [
+        113,
+        2
+      ],
+      [
+        113,
+        3
+      ],
+      [
+        113,
+        4
+      ],
+      [
+        113,
+        5
+      ],
+      [
+        114,
+        1
+      ],
+      [
+        114,
+        2
+      ],
+      [
+        114,
+        3
+      ],
+      [
+        114,
+        4
+      ],
+      [
+        114,
+        5
+      ],
+      [
+        114,
+        6
+      ]
+    ]
+  },
+  "result": {
+    "top_k": 50,
+    "hits": 1,
+    "hits_detail": [
+      {
+        "surah": 1,
+        "ayah": 2,
+        "pagerank": 0.0005669609038763918,
+        "degree": 7,
+        "text_preview": "الحمد لله رب العالمين"
+      }
+    ],
+    "expected_under_uniform": 0.21648492623476587,
+    "p_hypergeom": 0.19572475408342022,
+    "p_permutation": 0.193980601939806,
+    "permutation_null_mean": 0.2155,
+    "permutation_null_std": 0.46352966463862916,
+    "permutation_null_max": 3,
+    "n_perm": 10000
+  },
+  "decision": {
+    "exceeds_chance_hypergeom": false,
+    "exceeds_chance_permutation": false,
+    "verdict": "FAIL"
+  },
+  "top10_pagerank": [
+    {
+      "rank": 1,
+      "surah": 55,
+      "ayah": 13,
+      "pagerank": 0.002352762382980417,
+      "degree": 31,
+      "celebrated": false,
+      "text_preview": "فبأي آلاء ربكما تكذبان"
+    },
+    {
+      "rank": 2,
+      "surah": 77,
+      "ayah": 15,
+      "pagerank": 0.0008975105454020125,
+      "degree": 11,
+      "celebrated": false,
+      "text_preview": "ويل يومئذ للمكذبين"
+    },
+    {
+      "rank": 3,
+      "surah": 26,
+      "ayah": 108,
+      "pagerank": 0.0008109690295755022,
+      "degree": 10,
+      "celebrated": false,
+      "text_preview": "فاتقوا الله وأطيعون"
+    },
+    {
+      "rank": 4,
+      "surah": 26,
+      "ayah": 8,
+      "pagerank": 0.0007137431923138869,
+      "degree": 9,
+      "celebrated": false,
+      "text_preview": "إن في ذلك لآية ۖ وما كان أكثرهم مؤمنين"
+    },
+    {
+      "rank": 5,
+      "surah": 26,
+      "ayah": 9,
+      "pagerank": 0.0006625762207377337,
+      "degree": 8,
+      "celebrated": false,
+      "text_preview": "وإن ربك لهو العزيز الرحيم"
+    },
+    {
+      "rank": 6,
+      "surah": 75,
+      "ayah": 9,
+      "pagerank": 0.0005729890254013717,
+      "degree": 7,
+      "celebrated": false,
+      "text_preview": "وجمع الشمس والقمر"
+    },
+    {
+      "rank": 7,
+      "surah": 1,
+      "ayah": 2,
+      "pagerank": 0.0005669609038763918,
+      "degree": 7,
+      "celebrated": true,
+      "text_preview": "الحمد لله رب العالمين"
+    },
+    {
+      "rank": 8,
+      "surah": 29,
+      "ayah": 47,
+      "pagerank": 0.000566286319339693,
+      "degree": 7,
+      "celebrated": false,
+      "text_preview": "وكذلك أنزلنا إليك الكتاب ۚ فالذين آتيناهم الكتاب يؤمنون به ۖ ومن هؤلاء من يؤمن به ۚ وما يجحد بآياتنا"
+    },
+    {
+      "rank": 9,
+      "surah": 96,
+      "ayah": 2,
+      "pagerank": 0.0005585975144009653,
+      "degree": 7,
+      "celebrated": false,
+      "text_preview": "خلق الإنسان من علق"
+    },
+    {
+      "rank": 10,
+      "surah": 56,
+      "ayah": 24,
+      "pagerank": 0.0005432381557661688,
+      "degree": 7,
+      "celebrated": false,
+      "text_preview": "جزاء بما كانوا يعملون"
+    }
+  ]
+}

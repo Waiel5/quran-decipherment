@@ -1,0 +1,247 @@
+{
+  "finding_id": "h-new-202",
+  "title": "Juzʾ 30 internal spectral structure",
+  "pre_reg_sha256": "56a46352dff266a548bec1aefbb6d65851efedd408b9764fa410338ffeeb3ed0",
+  "seed": 20260419,
+  "perms": 10000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.01667,
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens K=500, QAC v0.4, Dirichlet-0.5, L1-norm, sub-path Q78..Q114, Hafs-Kufan, Fisher-Rao)",
+  "juz30": {
+    "n_surahs": 37,
+    "mean_edge_weight": 0.4587473888888889,
+    "min_edge": 0.225639,
+    "max_edge": 0.720817,
+    "lambda_1": 0.0036932461526462124,
+    "lambda_2": 0.015575531292439049,
+    "spectral_gap": 0.011882285139792836,
+    "sub_fiedler_flip_path_idx": [
+      19
+    ],
+    "sub_fiedler_boundary_surahs": [
+      [
+        97,
+        98
+      ]
+    ]
+  },
+  "H1_mean_edge": {
+    "observed": 0.4587473888888889,
+    "null_mean": 0.7556137989694445,
+    "null_sd": 0.1628516880979015,
+    "null_min": 0.44951275,
+    "null_max": 0.9488119444444446,
+    "null_q025": 0.46248002777777775,
+    "null_q05": 0.4707344444444444,
+    "null_q50": 0.7927542222222221,
+    "n_null_le_obs": 185,
+    "p_lower": 0.018598140185981403,
+    "z": -1.8229249788326762,
+    "pass": false
+  },
+  "H2_spectral_gap": {
+    "observed": 0.011882285139792836,
+    "null_mean": 0.011297757656316122,
+    "null_sd": 0.0012750860873098288,
+    "null_min": 0.0072877146626519895,
+    "null_max": 0.014138111861644376,
+    "null_q95": 0.013518997457664828,
+    "null_q975": 0.013863408645896635,
+    "n_null_ge_obs": 2702,
+    "p_upper": 0.2702729727027297,
+    "z": 0.4584219754538507,
+    "pass": false
+  },
+  "H3_boundary_vs_interior": {
+    "boundary_surahs_1idx": [
+      78,
+      79,
+      80,
+      112,
+      113,
+      114
+    ],
+    "interior_surahs_1idx": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111
+    ],
+    "mean_boundary_pairwise": 0.5616713333333333,
+    "mean_interior_pairwise": 0.47514127741935486,
+    "t_obs_bdy_minus_int": 0.08653005591397844,
+    "null_t_mean": -0.0008064586574193569,
+    "null_t_sd": 0.07512465095485314,
+    "n_null_ge_abs_tobs": 2585,
+    "p_two_sided": 0.2585741425857414,
+    "z": 1.1625546802569628,
+    "pass": false
+  },
+  "verdict": "NULL (0/3)",
+  "n_pass": 0,
+  "descriptive": {
+    "per_juz_mean_edge_sorted_asc": [
+      {
+        "juz": 30,
+        "mean_edge": 0.4587473888888889
+      },
+      {
+        "juz": 8,
+        "mean_edge": 0.720799
+      },
+      {
+        "juz": 1,
+        "mean_edge": 1.177623
+      },
+      {
+        "juz": 2,
+        "mean_edge": NaN
+      },
+      {
+        "juz": 3,
+        "mean_edge": 0.63093
+      },
+      {
+        "juz": 4,
+        "mean_edge": 0.793084
+      },
+      {
+        "juz": 5,
+        "mean_edge": NaN
+      },
+      {
+        "juz": 28,
+        "mean_edge": 0.777191
+      },
+      {
+        "juz": 6,
+        "mean_edge": 0.778367
+      },
+      {
+        "juz": 24,
+        "mean_edge": 0.8178179999999999
+      },
+      {
+        "juz": 29,
+        "mean_edge": 0.8184972
+      },
+      {
+        "juz": 20,
+        "mean_edge": 0.84563
+      },
+      {
+        "juz": 7,
+        "mean_edge": 0.860156
+      },
+      {
+        "juz": 25,
+        "mean_edge": 0.88845675
+      },
+      {
+        "juz": 15,
+        "mean_edge": 0.901301
+      },
+      {
+        "juz": 10,
+        "mean_edge": 0.910997
+      },
+      {
+        "juz": 26,
+        "mean_edge": 0.9131065999999999
+      },
+      {
+        "juz": 23,
+        "mean_edge": 0.9133856666666667
+      },
+      {
+        "juz": 13,
+        "mean_edge": 0.9260685
+      },
+      {
+        "juz": 11,
+        "mean_edge": 0.9370700000000001
+      },
+      {
+        "juz": 16,
+        "mean_edge": 0.9529825000000001
+      },
+      {
+        "juz": 19,
+        "mean_edge": 0.9590615
+      },
+      {
+        "juz": 17,
+        "mean_edge": 0.959174
+      },
+      {
+        "juz": 12,
+        "mean_edge": 0.963772
+      },
+      {
+        "juz": 21,
+        "mean_edge": 0.9666539999999999
+      },
+      {
+        "juz": 22,
+        "mean_edge": 0.9950960000000001
+      },
+      {
+        "juz": 14,
+        "mean_edge": 1.002022
+      },
+      {
+        "juz": 27,
+        "mean_edge": 1.0175893333333332
+      },
+      {
+        "juz": 9,
+        "mean_edge": 1.030068
+      },
+      {
+        "juz": 18,
+        "mean_edge": 1.0893945
+      }
+    ],
+    "juz30_rank_among_30": 1,
+    "mufassal_alignment": {
+      "tiwal_awsat_boundary_path_idx_7_8_hit": false,
+      "awsat_qisar_boundary_path_idx_20_21_hit": false,
+      "actual_flip_path_idx": [
+        19
+      ],
+      "actual_flip_surah_boundaries_1idx": [
+        [
+          97,
+          98
+        ]
+      ]
+    }
+  }
+}

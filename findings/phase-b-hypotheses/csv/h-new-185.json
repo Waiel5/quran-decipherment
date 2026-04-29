@@ -1,0 +1,207 @@
+{
+  "finding_id": "h-new-185",
+  "title": "Spectral graph Laplacian analysis of mushaf ring",
+  "pre_reg_sha256": "1d289d8dd08e0960674d416d070dc37cc45cd944f209d3f1c7336a6c68b9473b",
+  "seed": 20260419,
+  "perms": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens K=500, QAC v0.4, Dirichlet-0.5, L1-norm, mushaf ring topology, Hafs-Kufan, Fisher-Rao angular distance)",
+  "locked_params": {
+    "affinity": "1/(w+eps), eps=1e-6",
+    "laplacian": "normalized symmetric L_sym = D^-1/2 (D_diag - A) D^-1/2",
+    "null_model": "random permutation of surah-to-ring-position assignment",
+    "axis": "Q50 mid-mushaf pivot",
+    "axis_tolerance_positions": 5,
+    "bonferroni_k": 2,
+    "alpha_bon": 0.025
+  },
+  "mushaf_spectrum": {
+    "lambda_0": 8.520961881132254e-16,
+    "lambda_1": 0.001182293863230239,
+    "lambda_2": 0.0018553109016544744,
+    "lambda_3": 0.005518102757711213,
+    "lambda_top10": [
+      8.520961881132254e-16,
+      0.001182293863230239,
+      0.0018553109016544744,
+      0.005518102757711213,
+      0.0064570848865253,
+      0.01313914214510314,
+      0.013967826823094182,
+      0.023446747682786876,
+      0.024541178176485372,
+      0.03577697476682648
+    ],
+    "lambda_max": 2.0,
+    "spectral_gap": 0.0006730170384242353
+  },
+  "fiedler": {
+    "sign_flip_positions": [
+      11,
+      76
+    ],
+    "sign_flip_surah_boundaries": [
+      [
+        12,
+        13
+      ],
+      [
+        77,
+        78
+      ]
+    ],
+    "n_flips": 2,
+    "pos_community_size": 49,
+    "neg_community_size": 65,
+    "arcs": [
+      {
+        "sign": -1,
+        "start_pos": 12,
+        "end_pos": 76,
+        "length": 65,
+        "span": "Q13..Q77"
+      },
+      {
+        "sign": 1,
+        "start_pos": 77,
+        "end_pos": 11,
+        "length": 49,
+        "span": "Q78..Q114..Q1..Q12"
+      }
+    ],
+    "min_distance_to_Q50": 27,
+    "top10_abs_v1": [
+      {
+        "surah": 107,
+        "v1": 0.15192952335886786,
+        "abs_v1": 0.15192952335886786
+      },
+      {
+        "surah": 108,
+        "v1": 0.14540214118334474,
+        "abs_v1": 0.14540214118334474
+      },
+      {
+        "surah": 45,
+        "v1": -0.14373297824062312,
+        "abs_v1": 0.14373297824062312
+      },
+      {
+        "surah": 106,
+        "v1": 0.1424958767929882,
+        "abs_v1": 0.1424958767929882
+      },
+      {
+        "surah": 44,
+        "v1": -0.14144536454817197,
+        "abs_v1": 0.14144536454817197
+      },
+      {
+        "surah": 40,
+        "v1": -0.14122395164052182,
+        "abs_v1": 0.14122395164052182
+      },
+      {
+        "surah": 41,
+        "v1": -0.1399793729680483,
+        "abs_v1": 0.1399793729680483
+      },
+      {
+        "surah": 51,
+        "v1": -0.1399241221473175,
+        "abs_v1": 0.1399241221473175
+      },
+      {
+        "surah": 46,
+        "v1": -0.13810288016087657,
+        "abs_v1": 0.13810288016087657
+      },
+      {
+        "surah": 48,
+        "v1": -0.1377979645927465,
+        "abs_v1": 0.1377979645927465
+      }
+    ]
+  },
+  "lambda2_centrality": {
+    "top10_abs_v2": [
+      {
+        "surah": 73,
+        "v2": -0.13418118573784152,
+        "abs_v2": 0.13418118573784152
+      },
+      {
+        "surah": 81,
+        "v2": -0.13286281564572275,
+        "abs_v2": 0.13286281564572275
+      },
+      {
+        "surah": 72,
+        "v2": -0.1326588936941754,
+        "abs_v2": 0.1326588936941754
+      },
+      {
+        "surah": 74,
+        "v2": -0.13255226817166285,
+        "abs_v2": 0.13255226817166285
+      },
+      {
+        "surah": 82,
+        "v2": -0.13191892327607557,
+        "abs_v2": 0.13191892327607557
+      },
+      {
+        "surah": 18,
+        "v2": 0.13149858826509417,
+        "abs_v2": 0.13149858826509417
+      },
+      {
+        "surah": 78,
+        "v2": -0.13018558516196319,
+        "abs_v2": 0.13018558516196319
+      },
+      {
+        "surah": 71,
+        "v2": -0.12988808551910402,
+        "abs_v2": 0.12988808551910402
+      },
+      {
+        "surah": 19,
+        "v2": 0.12975145139846453,
+        "abs_v2": 0.12975145139846453
+      },
+      {
+        "surah": 22,
+        "v2": 0.1296454469744247,
+        "abs_v2": 0.1296454469744247
+      }
+    ]
+  },
+  "primary_H1a_fiedler_Q50_alignment": {
+    "observed_axis_distance": 27,
+    "null_mean_axis_distance": 14.3132,
+    "null_median_axis_distance": 14.0,
+    "n_null_le_obs": 9628,
+    "p_value_one_sided_lower": 0.9628037196280372,
+    "alpha_bon": 0.025,
+    "pass_H1a": false
+  },
+  "primary_H1b_spectral_gap": {
+    "observed_gap": 0.0006730170384242353,
+    "null_gap_mean": 0.0001654623337255986,
+    "null_gap_sd": 8.620071516899416e-05,
+    "null_gap_min": 7.14130391995995e-07,
+    "null_gap_max": 0.0005589154101679338,
+    "null_gap_q025": 3.009280956764397e-05,
+    "null_gap_q05": 4.2263188195343076e-05,
+    "null_gap_q50": 0.0001557045673912735,
+    "null_gap_q95": 0.0003254167066051961,
+    "null_gap_q975": 0.00036304191676667157,
+    "z_score": 5.888056703654173,
+    "n_null_ge_obs": 0,
+    "p_value_one_sided_upper": 9.999000099990002e-05,
+    "alpha_bon": 0.025,
+    "pass_H1b": true
+  },
+  "verdict": "WEAK-PASS (gap only)",
+  "verdict_ceiling": "PASS-DIRECTED (CONFIRMED requires char-4-gram feature-space replication)"
+}

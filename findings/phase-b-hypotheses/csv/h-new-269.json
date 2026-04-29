@@ -1,0 +1,722 @@
+{
+  "id": "H-NEW-269",
+  "title": "qul imperative addressee-pattern test",
+  "prereg_file": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-269-qul-addressee-pattern-prereg.md",
+  "prereg_sha256": "f00d81df4b7808d35f8f06a8fcd4e41af9994341cc849758697ce1e71efef322",
+  "script": "/Users/grey/Downloads/quran/scripts/h_new_269_qul_addressee_pattern.py",
+  "seed": 20260418,
+  "n_perm": 5000,
+  "window_words_after_strip": 6,
+  "bonferroni_family": "h-new-269-qul-addressee-pattern",
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "rules_tuple": "(332 canonical qul tokens from Leeds QAC v0.4; no-tashkeel normalized token windows; QAC STEM roots; opener-family stripping; matched nonclass qul null on residual 6-word root mass)",
+  "corpus": {
+    "qul_tokens": 332,
+    "qul_unique_verses": 306,
+    "class_counts": {
+      "other": 215,
+      "interrogative_or_challenge": 55,
+      "self_or_devotional": 27,
+      "vocative_address": 16,
+      "restrictive_declaration": 19
+    },
+    "class_unique_verses": {
+      "other": 204,
+      "interrogative_or_challenge": 53,
+      "self_or_devotional": 27,
+      "vocative_address": 16,
+      "restrictive_declaration": 18
+    },
+    "inferential_class_tokens": 117,
+    "other_tokens": 215,
+    "inferential_share_of_332": 0.35240963855421686,
+    "top_first_tokens": [
+      {
+        "token": "ان",
+        "count": 25
+      },
+      {
+        "token": "انما",
+        "count": 19
+      },
+      {
+        "token": "يا",
+        "count": 16
+      },
+      {
+        "token": "الله",
+        "count": 16
+      },
+      {
+        "token": "لا",
+        "count": 14
+      },
+      {
+        "token": "من",
+        "count": 12
+      },
+      {
+        "token": "اني",
+        "count": 11
+      },
+      {
+        "token": "ارايتم",
+        "count": 11
+      },
+      {
+        "token": "هو",
+        "count": 10
+      },
+      {
+        "token": "هل",
+        "count": 10
+      },
+      {
+        "token": "ما",
+        "count": 8
+      },
+      {
+        "token": "لو",
+        "count": 7
+      },
+      {
+        "token": "رب",
+        "count": 7
+      },
+      {
+        "token": "الحمد",
+        "count": 6
+      },
+      {
+        "token": "للذين",
+        "count": 5
+      },
+      {
+        "token": "فاتوا",
+        "count": 4
+      },
+      {
+        "token": "قل",
+        "count": 4
+      },
+      {
+        "token": "سيروا",
+        "count": 4
+      },
+      {
+        "token": "ادعوا",
+        "count": 4
+      },
+      {
+        "token": "لن",
+        "count": 4
+      }
+    ]
+  },
+  "class_definitions": {
+    "vocative_address": {
+      "label": "Vocative address",
+      "rule": "first token after qul = يا; strip يا, and strip ايها too if immediately following"
+    },
+    "interrogative_or_challenge": {
+      "label": "Interrogative / challenge",
+      "rule": "first token after qul in {من, ما, هل, ارايتم, ارايتكم, هاتوا, فاتوا, اغير, افلا}; strip first token"
+    },
+    "self_or_devotional": {
+      "label": "Self / devotional",
+      "rule": "first token after qul in {اني, انني, انا, رب, ربي, اعوذ, اللهم, حسبي}; strip first token"
+    },
+    "restrictive_declaration": {
+      "label": "Restrictive declaration",
+      "rule": "first token after qul = انما; strip first token"
+    }
+  },
+  "cells": {
+    "vocative_address": {
+      "n_members": 16,
+      "observed_mean_pairwise_jaccard": 0.044166666666666674,
+      "null_mean": 0.03872818915343915,
+      "null_sd": 0.017146868501910897,
+      "null_q95": 0.07041666666666666,
+      "z_vs_null": 0.31717030503974764,
+      "p_perm_upper": 0.32213557288542294,
+      "successful_draws": 5000,
+      "failed_draws": 0,
+      "candidate_pool_k": 40,
+      "top_pairs": [
+        {
+          "a": "6:135:1",
+          "b": "39:39:1",
+          "jaccard": 1.0,
+          "a_preview": "قوم اعملوا علي مكانتكم اني عامل",
+          "b_preview": "قوم اعملوا علي مكانتكم اني عامل"
+        },
+        {
+          "a": "3:98:1",
+          "b": "3:99:1",
+          "jaccard": 0.333333,
+          "a_preview": "اهل الكتاب لم تكفرون بايات الله",
+          "b_preview": "اهل الكتاب لم تصدون عن سبيل"
+        },
+        {
+          "a": "10:104:1",
+          "b": "39:39:1",
+          "jaccard": 0.25,
+          "a_preview": "الناس ان كنتم في شك من",
+          "b_preview": "قوم اعملوا علي مكانتكم اني عامل"
+        },
+        {
+          "a": "6:135:1",
+          "b": "10:104:1",
+          "jaccard": 0.25,
+          "a_preview": "قوم اعملوا علي مكانتكم اني عامل",
+          "b_preview": "الناس ان كنتم في شك من"
+        },
+        {
+          "a": "3:98:1",
+          "b": "5:59:1",
+          "jaccard": 0.2,
+          "a_preview": "اهل الكتاب لم تكفرون بايات الله",
+          "b_preview": "اهل الكتاب هل تنقمون منا الا"
+        }
+      ],
+      "label": "Vocative address",
+      "rule": "first token after qul = يا; strip يا, and strip ايها too if immediately following",
+      "unique_verses": 16,
+      "share_of_332": 0.04819277108433735,
+      "examples": [
+        {
+          "ref": "3:64:1",
+          "first_token": "يا",
+          "after_preview": "يا اهل الكتاب تعالوا الي كلمه سواا بيننا",
+          "residual_preview": "اهل الكتاب تعالوا الي كلمه سواا"
+        },
+        {
+          "ref": "3:98:1",
+          "first_token": "يا",
+          "after_preview": "يا اهل الكتاب لم تكفرون بايات الله والله",
+          "residual_preview": "اهل الكتاب لم تكفرون بايات الله"
+        },
+        {
+          "ref": "3:99:1",
+          "first_token": "يا",
+          "after_preview": "يا اهل الكتاب لم تصدون عن سبيل الله",
+          "residual_preview": "اهل الكتاب لم تصدون عن سبيل"
+        },
+        {
+          "ref": "5:59:1",
+          "first_token": "يا",
+          "after_preview": "يا اهل الكتاب هل تنقمون منا الا ان",
+          "residual_preview": "اهل الكتاب هل تنقمون منا الا"
+        },
+        {
+          "ref": "5:68:1",
+          "first_token": "يا",
+          "after_preview": "يا اهل الكتاب لستم علي شيا حتي تقيموا",
+          "residual_preview": "اهل الكتاب لستم علي شيا حتي"
+        },
+        {
+          "ref": "5:77:1",
+          "first_token": "يا",
+          "after_preview": "يا اهل الكتاب لا تغلوا في دينكم غير",
+          "residual_preview": "اهل الكتاب لا تغلوا في دينكم"
+        },
+        {
+          "ref": "6:135:1",
+          "first_token": "يا",
+          "after_preview": "يا قوم اعملوا علي مكانتكم اني عامل فسوف",
+          "residual_preview": "قوم اعملوا علي مكانتكم اني عامل"
+        },
+        {
+          "ref": "7:158:1",
+          "first_token": "يا",
+          "after_preview": "يا ايها الناس اني رسول الله اليكم جميعا",
+          "residual_preview": "الناس اني رسول الله اليكم جميعا"
+        },
+        {
+          "ref": "10:104:1",
+          "first_token": "يا",
+          "after_preview": "يا ايها الناس ان كنتم في شك من",
+          "residual_preview": "الناس ان كنتم في شك من"
+        },
+        {
+          "ref": "10:108:1",
+          "first_token": "يا",
+          "after_preview": "يا ايها الناس قد جااكم الحق من ربكم",
+          "residual_preview": "الناس قد جااكم الحق من ربكم"
+        }
+      ],
+      "bonferroni_pass": false
+    },
+    "interrogative_or_challenge": {
+      "n_members": 55,
+      "observed_mean_pairwise_jaccard": 0.037182138848805564,
+      "null_mean": 0.03940010710277385,
+      "null_sd": 0.0077138472291852994,
+      "null_q95": 0.05298915076692852,
+      "z_vs_null": -0.2875307467299344,
+      "p_perm_upper": 0.5766846630673865,
+      "successful_draws": 5000,
+      "failed_draws": 0,
+      "candidate_pool_k": 110,
+      "top_pairs": [
+        {
+          "a": "10:31:25",
+          "b": "23:87:3",
+          "jaccard": 1.0,
+          "a_preview": "تتقون",
+          "b_preview": "تتقون"
+        },
+        {
+          "a": "25:57:1",
+          "b": "34:47:1",
+          "jaccard": 1.0,
+          "a_preview": "اسالكم عليه من اجر الا من",
+          "b_preview": "سالتكم من اجر فهو لكم ان"
+        },
+        {
+          "a": "25:57:1",
+          "b": "38:86:1",
+          "jaccard": 1.0,
+          "a_preview": "اسالكم عليه من اجر الا من",
+          "b_preview": "اسالكم عليه من اجر وما انا"
+        },
+        {
+          "a": "2:111:13",
+          "b": "27:64:14",
+          "jaccard": 1.0,
+          "a_preview": "برهانكم ان كنتم صادقين",
+          "b_preview": "برهانكم ان كنتم صادقين"
+        },
+        {
+          "a": "34:47:1",
+          "b": "38:86:1",
+          "jaccard": 1.0,
+          "a_preview": "سالتكم من اجر فهو لكم ان",
+          "b_preview": "اسالكم عليه من اجر وما انا"
+        }
+      ],
+      "label": "Interrogative / challenge",
+      "rule": "first token after qul in {من, ما, هل, ارايتم, ارايتكم, هاتوا, فاتوا, اغير, افلا}; strip first token",
+      "unique_verses": 53,
+      "share_of_332": 0.16566265060240964,
+      "examples": [
+        {
+          "ref": "2:97:1",
+          "first_token": "من",
+          "after_preview": "من كان عدوا لجبريل فانه نزله علي قلبك",
+          "residual_preview": "كان عدوا لجبريل فانه نزله علي"
+        },
+        {
+          "ref": "2:111:13",
+          "first_token": "هاتوا",
+          "after_preview": "هاتوا برهانكم ان كنتم صادقين",
+          "residual_preview": "برهانكم ان كنتم صادقين"
+        },
+        {
+          "ref": "2:215:4",
+          "first_token": "ما",
+          "after_preview": "ما انفقتم من خير فللوالدين والاقربين واليتامي والمساكين",
+          "residual_preview": "انفقتم من خير فللوالدين والاقربين واليتامي"
+        },
+        {
+          "ref": "3:93:18",
+          "first_token": "فاتوا",
+          "after_preview": "فاتوا بالتوراه فاتلوها ان كنتم صادقين",
+          "residual_preview": "بالتوراه فاتلوها ان كنتم صادقين"
+        },
+        {
+          "ref": "5:60:1",
+          "first_token": "هل",
+          "after_preview": "هل انبيكم بشر من ذلك مثوبه عند الله",
+          "residual_preview": "انبيكم بشر من ذلك مثوبه عند"
+        },
+        {
+          "ref": "6:14:1",
+          "first_token": "اغير",
+          "after_preview": "اغير الله اتخذ وليا فاطر السماوات والارض وهو",
+          "residual_preview": "الله اتخذ وليا فاطر السماوات والارض"
+        },
+        {
+          "ref": "6:40:1",
+          "first_token": "ارايتكم",
+          "after_preview": "ارايتكم ان اتاكم عذاب الله او اتتكم الساعه",
+          "residual_preview": "ان اتاكم عذاب الله او اتتكم"
+        },
+        {
+          "ref": "6:46:1",
+          "first_token": "ارايتم",
+          "after_preview": "ارايتم ان اخذ الله سمعكم وابصاركم وختم علي",
+          "residual_preview": "ان اخذ الله سمعكم وابصاركم وختم"
+        },
+        {
+          "ref": "6:47:1",
+          "first_token": "ارايتكم",
+          "after_preview": "ارايتكم ان اتاكم عذاب الله بغته او جهره",
+          "residual_preview": "ان اتاكم عذاب الله بغته او"
+        },
+        {
+          "ref": "6:50:22",
+          "first_token": "هل",
+          "after_preview": "هل يستوي الاعمي والبصير افلا تتفكرون",
+          "residual_preview": "يستوي الاعمي والبصير افلا تتفكرون"
+        }
+      ],
+      "bonferroni_pass": false
+    },
+    "self_or_devotional": {
+      "n_members": 27,
+      "observed_mean_pairwise_jaccard": 0.024917469361913813,
+      "null_mean": 0.04102559874282094,
+      "null_sd": 0.012524285466914595,
+      "null_q95": 0.06391602224935554,
+      "z_vs_null": -1.286151567166045,
+      "p_perm_upper": 0.9256148770245951,
+      "successful_draws": 5000,
+      "failed_draws": 0,
+      "candidate_pool_k": 54,
+      "top_pairs": [
+        {
+          "a": "6:15:1",
+          "b": "39:13:1",
+          "jaccard": 1.0,
+          "a_preview": "اخاف ان عصيت ربي عذاب يوم",
+          "b_preview": "اخاف ان عصيت ربي عذاب يوم"
+        },
+        {
+          "a": "6:56:1",
+          "b": "40:66:1",
+          "jaccard": 1.0,
+          "a_preview": "نهيت ان اعبد الذين تدعون من",
+          "b_preview": "نهيت ان اعبد الذين تدعون من"
+        },
+        {
+          "a": "9:129:3",
+          "b": "39:38:31",
+          "jaccard": 0.5,
+          "a_preview": "الله لا اله الا هو عليه",
+          "b_preview": "الله عليه يتوكل المتوكلون"
+        },
+        {
+          "a": "113:1:1",
+          "b": "114:1:1",
+          "jaccard": 0.333333,
+          "a_preview": "برب الفلق",
+          "b_preview": "برب الناس"
+        },
+        {
+          "a": "9:129:3",
+          "b": "72:22:1",
+          "jaccard": 0.333333,
+          "a_preview": "الله لا اله الا هو عليه",
+          "b_preview": "لن يجيرني من الله احد ولن"
+        }
+      ],
+      "label": "Self / devotional",
+      "rule": "first token after qul in {اني, انني, انا, رب, ربي, اعوذ, اللهم, حسبي}; strip first token",
+      "unique_verses": 27,
+      "share_of_332": 0.08132530120481928,
+      "examples": [
+        {
+          "ref": "3:26:1",
+          "first_token": "اللهم",
+          "after_preview": "اللهم مالك الملك توتي الملك من تشاا وتنزع",
+          "residual_preview": "مالك الملك توتي الملك من تشاا"
+        },
+        {
+          "ref": "6:14:13",
+          "first_token": "اني",
+          "after_preview": "اني امرت ان اكون اول من اسلم ولا",
+          "residual_preview": "امرت ان اكون اول من اسلم"
+        },
+        {
+          "ref": "6:15:1",
+          "first_token": "اني",
+          "after_preview": "اني اخاف ان عصيت ربي عذاب يوم عظيم",
+          "residual_preview": "اخاف ان عصيت ربي عذاب يوم"
+        },
+        {
+          "ref": "6:56:1",
+          "first_token": "اني",
+          "after_preview": "اني نهيت ان اعبد الذين تدعون من دون",
+          "residual_preview": "نهيت ان اعبد الذين تدعون من"
+        },
+        {
+          "ref": "6:57:1",
+          "first_token": "اني",
+          "after_preview": "اني علي بينه من ربي وكذبتم به ما",
+          "residual_preview": "علي بينه من ربي وكذبتم به"
+        },
+        {
+          "ref": "6:161:1",
+          "first_token": "انني",
+          "after_preview": "انني هداني ربي الي صراط مستقيم دينا قيما",
+          "residual_preview": "هداني ربي الي صراط مستقيم دينا"
+        },
+        {
+          "ref": "9:129:3",
+          "first_token": "حسبي",
+          "after_preview": "حسبي الله لا اله الا هو عليه توكلت",
+          "residual_preview": "الله لا اله الا هو عليه"
+        },
+        {
+          "ref": "15:89:1",
+          "first_token": "اني",
+          "after_preview": "اني انا النذير المبين",
+          "residual_preview": "انا النذير المبين"
+        },
+        {
+          "ref": "17:24:7",
+          "first_token": "رب",
+          "after_preview": "رب ارحمهما كما ربياني صغيرا",
+          "residual_preview": "ارحمهما كما ربياني صغيرا"
+        },
+        {
+          "ref": "17:80:1",
+          "first_token": "رب",
+          "after_preview": "رب ادخلني مدخل صدق واخرجني مخرج صدق واجعل",
+          "residual_preview": "ادخلني مدخل صدق واخرجني مخرج صدق"
+        }
+      ],
+      "bonferroni_pass": false
+    },
+    "restrictive_declaration": {
+      "n_members": 19,
+      "observed_mean_pairwise_jaccard": 0.11416272161886187,
+      "null_mean": 0.04060200686902442,
+      "null_sd": 0.015077542331037109,
+      "null_q95": 0.06826325071939107,
+      "z_vs_null": 4.878826610780776,
+      "p_perm_upper": 0.0007998400319936012,
+      "successful_draws": 5000,
+      "failed_draws": 0,
+      "candidate_pool_k": 40,
+      "top_pairs": [
+        {
+          "a": "18:110:1",
+          "b": "41:6:1",
+          "jaccard": 1.0,
+          "a_preview": "انا بشر مثلكم يوحي الي انما",
+          "b_preview": "انا بشر مثلكم يوحي الي انما"
+        },
+        {
+          "a": "29:50:8",
+          "b": "67:26:1",
+          "jaccard": 0.6,
+          "a_preview": "الايات عند الله وانما انا نذير",
+          "b_preview": "العلم عند الله وانما انا نذير"
+        },
+        {
+          "a": "33:63:5",
+          "b": "67:26:1",
+          "jaccard": 0.6,
+          "a_preview": "علمها عند الله وما يدريك لعل",
+          "b_preview": "العلم عند الله وانما انا نذير"
+        },
+        {
+          "a": "6:109:10",
+          "b": "29:50:8",
+          "jaccard": 0.6,
+          "a_preview": "الايات عند الله وما يشعركم انها",
+          "b_preview": "الايات عند الله وانما انا نذير"
+        },
+        {
+          "a": "27:92:11",
+          "b": "38:65:1",
+          "jaccard": 0.5,
+          "a_preview": "انا من المنذرين",
+          "b_preview": "انا منذر وما من اله الا"
+        }
+      ],
+      "label": "Restrictive declaration",
+      "rule": "first token after qul = انما; strip first token",
+      "unique_verses": 18,
+      "share_of_332": 0.0572289156626506,
+      "examples": [
+        {
+          "ref": "6:19:29",
+          "first_token": "انما",
+          "after_preview": "انما هو اله واحد وانني بريا مما تشركون",
+          "residual_preview": "هو اله واحد وانني بريا مما"
+        },
+        {
+          "ref": "6:109:10",
+          "first_token": "انما",
+          "after_preview": "انما الايات عند الله وما يشعركم انها اذا",
+          "residual_preview": "الايات عند الله وما يشعركم انها"
+        },
+        {
+          "ref": "7:33:1",
+          "first_token": "انما",
+          "after_preview": "انما حرم ربي الفواحش ما ظهر منها وما",
+          "residual_preview": "حرم ربي الفواحش ما ظهر منها"
+        },
+        {
+          "ref": "7:187:6",
+          "first_token": "انما",
+          "after_preview": "انما علمها عند ربي لا يجليها لوقتها الا",
+          "residual_preview": "علمها عند ربي لا يجليها لوقتها"
+        },
+        {
+          "ref": "7:187:28",
+          "first_token": "انما",
+          "after_preview": "انما علمها عند الله ولكن اكثر الناس لا",
+          "residual_preview": "علمها عند الله ولكن اكثر الناس"
+        },
+        {
+          "ref": "7:203:8",
+          "first_token": "انما",
+          "after_preview": "انما اتبع ما يوحي الي من ربي هذا",
+          "residual_preview": "اتبع ما يوحي الي من ربي"
+        },
+        {
+          "ref": "10:20:8",
+          "first_token": "انما",
+          "after_preview": "انما الغيب لله فانتظروا اني معكم من المنتظرين",
+          "residual_preview": "الغيب لله فانتظروا اني معكم من"
+        },
+        {
+          "ref": "13:36:13",
+          "first_token": "انما",
+          "after_preview": "انما امرت ان اعبد الله ولا اشرك به",
+          "residual_preview": "امرت ان اعبد الله ولا اشرك"
+        },
+        {
+          "ref": "18:110:1",
+          "first_token": "انما",
+          "after_preview": "انما انا بشر مثلكم يوحي الي انما الهكم",
+          "residual_preview": "انا بشر مثلكم يوحي الي انما"
+        },
+        {
+          "ref": "21:45:1",
+          "first_token": "انما",
+          "after_preview": "انما انذركم بالوحي ولا يسمع الصم الدعاا اذا",
+          "residual_preview": "انذركم بالوحي ولا يسمع الصم الدعاا"
+        }
+      ],
+      "bonferroni_pass": true
+    }
+  },
+  "mw5": {
+    "n_members": 13,
+    "observed_mean_pairwise_jaccard": 0.15958485958485952,
+    "null_mean": 0.040938995726495724,
+    "null_sd": 0.017915783019011398,
+    "null_q95": 0.07420634920634922,
+    "z_vs_null": 6.622421343932459,
+    "p_perm_upper": 0.0001999600079984003,
+    "successful_draws": 5000,
+    "failed_draws": 0,
+    "candidate_pool_k": 40,
+    "top_pairs": [
+      {
+        "a": "41:52:1",
+        "b": "46:10:1",
+        "jaccard": 0.75,
+        "a_preview": "ان كان من عند الله ثم",
+        "b_preview": "ان كان من عند الله وكفرتم"
+      },
+      {
+        "a": "6:40:1",
+        "b": "6:47:1",
+        "jaccard": 0.75,
+        "a_preview": "ان اتاكم عذاب الله او اتتكم",
+        "b_preview": "ان اتاكم عذاب الله بغته او"
+      },
+      {
+        "a": "28:71:1",
+        "b": "28:72:1",
+        "jaccard": 0.6,
+        "a_preview": "ان جعل الله عليكم الليل سرمدا",
+        "b_preview": "ان جعل الله عليكم النهار سرمدا"
+      },
+      {
+        "a": "35:40:1",
+        "b": "46:4:1",
+        "jaccard": 0.6,
+        "a_preview": "شركااكم الذين تدعون من دون الله",
+        "b_preview": "ما تدعون من دون الله اروني"
+      },
+      {
+        "a": "6:40:1",
+        "b": "10:50:1",
+        "jaccard": 0.4,
+        "a_preview": "ان اتاكم عذاب الله او اتتكم",
+        "b_preview": "ان اتاكم عذابه بياتا او نهارا"
+      }
+    ],
+    "label": "a-ra'aytum / a-ra'aytakum template",
+    "rule": "first token after qul in {ارايتم, ارايتكم}; strip first token",
+    "pass_nominal_005": true,
+    "examples": [
+      {
+        "ref": "6:40:1",
+        "after_preview": "ارايتكم ان اتاكم عذاب الله او اتتكم الساعه",
+        "residual_preview": "ان اتاكم عذاب الله او اتتكم"
+      },
+      {
+        "ref": "6:46:1",
+        "after_preview": "ارايتم ان اخذ الله سمعكم وابصاركم وختم علي",
+        "residual_preview": "ان اخذ الله سمعكم وابصاركم وختم"
+      },
+      {
+        "ref": "6:47:1",
+        "after_preview": "ارايتكم ان اتاكم عذاب الله بغته او جهره",
+        "residual_preview": "ان اتاكم عذاب الله بغته او"
+      },
+      {
+        "ref": "10:50:1",
+        "after_preview": "ارايتم ان اتاكم عذابه بياتا او نهارا ماذا",
+        "residual_preview": "ان اتاكم عذابه بياتا او نهارا"
+      },
+      {
+        "ref": "10:59:1",
+        "after_preview": "ارايتم ما انزل الله لكم من رزق فجعلتم",
+        "residual_preview": "ما انزل الله لكم من رزق"
+      },
+      {
+        "ref": "28:71:1",
+        "after_preview": "ارايتم ان جعل الله عليكم الليل سرمدا الي",
+        "residual_preview": "ان جعل الله عليكم الليل سرمدا"
+      },
+      {
+        "ref": "28:72:1",
+        "after_preview": "ارايتم ان جعل الله عليكم النهار سرمدا الي",
+        "residual_preview": "ان جعل الله عليكم النهار سرمدا"
+      },
+      {
+        "ref": "35:40:1",
+        "after_preview": "ارايتم شركااكم الذين تدعون من دون الله اروني",
+        "residual_preview": "شركااكم الذين تدعون من دون الله"
+      },
+      {
+        "ref": "41:52:1",
+        "after_preview": "ارايتم ان كان من عند الله ثم كفرتم",
+        "residual_preview": "ان كان من عند الله ثم"
+      },
+      {
+        "ref": "46:4:1",
+        "after_preview": "ارايتم ما تدعون من دون الله اروني ماذا",
+        "residual_preview": "ما تدعون من دون الله اروني"
+      },
+      {
+        "ref": "46:10:1",
+        "after_preview": "ارايتم ان كان من عند الله وكفرتم به",
+        "residual_preview": "ان كان من عند الله وكفرتم"
+      },
+      {
+        "ref": "67:28:1",
+        "after_preview": "ارايتم ان اهلكني الله ومن معي او رحمنا",
+        "residual_preview": "ان اهلكني الله ومن معي او"
+      },
+      {
+        "ref": "67:30:1",
+        "after_preview": "ارايتم ان اصبح ماوكم غورا فمن ياتيكم بماا",
+        "residual_preview": "ان اصبح ماوكم غورا فمن ياتيكم"
+      }
+    ]
+  },
+  "pass_count": 1,
+  "verdict": "PARTIAL-CLASS-ONLY"
+}

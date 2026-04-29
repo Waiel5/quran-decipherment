@@ -1,0 +1,265 @@
+{
+  "id": "H-NEW-273",
+  "title": "Q1<->Q108 twin liturgical-anchor test",
+  "date": "2026-04-18",
+  "seed": 20260418,
+  "prereg_file": "findings/phase-b-hypotheses/h-new-273-q1-q108-twin-liturgical-anchor-prereg.md",
+  "prereg_sha256": "a7d159419d9e33825345abd5a6b02647169c9c4d6f9347079c0621e0eabd9827",
+  "script_file": "scripts/h_new_273_q1_q108_twin_liturgical_anchor.py",
+  "rules_tuple": "(QAC v0.4 STEM roots via surah-root-graph.json; imperative density via imperatives-per-surah.csv; divine-reference root set {Alh,rbb,rHm}; surah score sqrt(divine_share * imperative_density); exact matched-null over Early-Meccan pairs with target verse bins)",
+  "divine_roots": [
+    "Alh",
+    "rHm",
+    "rbb"
+  ],
+  "surah_scores": {
+    "1": {
+      "divine_share": 0.30434782608695654,
+      "imperative_density_per_verse": 0.1429,
+      "score": 0.20854568887374797,
+      "n_root_tokens": 23,
+      "verse_count": 7,
+      "noldeke_phase": "Early Meccan"
+    },
+    "106": {
+      "divine_share": 0.08333333333333333,
+      "imperative_density_per_verse": 0.0,
+      "score": 0.0,
+      "n_root_tokens": 12,
+      "verse_count": 4,
+      "noldeke_phase": "Early Meccan"
+    },
+    "108": {
+      "divine_share": 0.14285714285714285,
+      "imperative_density_per_verse": 0.6667,
+      "score": 0.3086144149952447,
+      "n_root_tokens": 7,
+      "verse_count": 3,
+      "noldeke_phase": "Early Meccan"
+    },
+    "112": {
+      "divine_share": 0.2,
+      "imperative_density_per_verse": 0.25,
+      "score": 0.22360679774997896,
+      "n_root_tokens": 10,
+      "verse_count": 4,
+      "noldeke_phase": "Early Meccan"
+    },
+    "113": {
+      "divine_share": 0.06666666666666667,
+      "imperative_density_per_verse": 0.2,
+      "score": 0.11547005383792516,
+      "n_root_tokens": 15,
+      "verse_count": 5,
+      "noldeke_phase": "Early Meccan"
+    },
+    "114": {
+      "divine_share": 0.125,
+      "imperative_density_per_verse": 0.1667,
+      "score": 0.1443520003325205,
+      "n_root_tokens": 16,
+      "verse_count": 6,
+      "noldeke_phase": "Early Meccan"
+    }
+  },
+  "primary_target": {
+    "pair": [
+      1,
+      108
+    ],
+    "pair_score_obs": 0.5171601038689927,
+    "null_n_pairs": 31,
+    "null_mean": 0.1810993732345023,
+    "null_sd": 0.15132535133472502,
+    "z_vs_null": 2.220782754973678,
+    "p_exact_upper": 0.03125,
+    "rank_desc": 1,
+    "top_null_pairs": [
+      {
+        "pair": [
+          108,
+          114
+        ],
+        "score": 0.4529664153277652
+      },
+      {
+        "pair": [
+          1,
+          112
+        ],
+        "score": 0.43215248662372696
+      },
+      {
+        "pair": [
+          108,
+          113
+        ],
+        "score": 0.42408446883316986
+      },
+      {
+        "pair": [
+          112,
+          114
+        ],
+        "score": 0.3679587980824994
+      },
+      {
+        "pair": [
+          112,
+          113
+        ],
+        "score": 0.3390768515879041
+      },
+      {
+        "pair": [
+          97,
+          108
+        ],
+        "score": 0.3086144149952447
+      },
+      {
+        "pair": [
+          105,
+          108
+        ],
+        "score": 0.3086144149952447
+      },
+      {
+        "pair": [
+          107,
+          108
+        ],
+        "score": 0.3086144149952447
+      },
+      {
+        "pair": [
+          108,
+          109
+        ],
+        "score": 0.3086144149952447
+      },
+      {
+        "pair": [
+          108,
+          111
+        ],
+        "score": 0.3086144149952447
+      }
+    ],
+    "matched_pair_space": {
+      "phases": [
+        "Early Meccan",
+        "Early Meccan"
+      ],
+      "verse_bins": [
+        "3_4",
+        "5_7"
+      ],
+      "members_by_bin": {
+        "3_4": [
+          103,
+          106,
+          108,
+          112
+        ],
+        "5_7": [
+          1,
+          97,
+          105,
+          107,
+          109,
+          111,
+          113,
+          114
+        ]
+      }
+    }
+  },
+  "descriptive_contrast": {
+    "pair": [
+      113,
+      114
+    ],
+    "pair_score_obs": 0.2598220541704457,
+    "null_n_pairs": 27,
+    "null_mean": 0.11180563507921888,
+    "null_sd": 0.10383421846317124,
+    "z_vs_null": 1.4255071332166522,
+    "p_exact_upper": 0.10714285714285714,
+    "rank_desc": 3,
+    "top_null_pairs": [
+      {
+        "pair": [
+          1,
+          114
+        ],
+        "score": 0.35289768920626846
+      },
+      {
+        "pair": [
+          1,
+          113
+        ],
+        "score": 0.3240157427116731
+      },
+      {
+        "pair": [
+          1,
+          97
+        ],
+        "score": 0.20854568887374797
+      },
+      {
+        "pair": [
+          1,
+          105
+        ],
+        "score": 0.20854568887374797
+      },
+      {
+        "pair": [
+          1,
+          107
+        ],
+        "score": 0.20854568887374797
+      },
+      {
+        "pair": [
+          1,
+          109
+        ],
+        "score": 0.20854568887374797
+      },
+      {
+        "pair": [
+          1,
+          111
+        ],
+        "score": 0.20854568887374797
+      },
+      {
+        "pair": [
+          97,
+          114
+        ],
+        "score": 0.1443520003325205
+      },
+      {
+        "pair": [
+          105,
+          114
+        ],
+        "score": 0.1443520003325205
+      },
+      {
+        "pair": [
+          107,
+          114
+        ],
+        "score": 0.1443520003325205
+      }
+    ]
+  },
+  "verdict": "PASS-NARROW",
+  "verdict_note": "Primary target is exact-upper-tail on the matched null. Contrast pair is reported only to bound genericity; it does not ratify the primary cell."
+}

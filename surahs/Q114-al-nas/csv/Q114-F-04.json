@@ -1,0 +1,50 @@
+{
+  "preregistration_id": "Q114-F-04",
+  "prereg_sha": "871641c75975d91c1031077ae2c20e282cd73982fc40b6e37b287097b31d5955",
+  "per_variant": {
+    "no-tashkeel": {
+      "v1_normalized": "قل اعوذ برب الناس",
+      "v2_normalized": "ملك الناس",
+      "v3_normalized": "اله الناس",
+      "tests": {
+        "v1_has_rabb": true,
+        "v2_has_malik": true,
+        "v3_has_ilah": true,
+        "v1_has_al_nas": true,
+        "v2_has_al_nas": true,
+        "v3_has_al_nas": true
+      },
+      "all_pass": true
+    },
+    "min-tashkeel": {
+      "v1_normalized": "قل اعوذ برب الناس",
+      "v2_normalized": "ملك الناس",
+      "v3_normalized": "اله الناس",
+      "tests": {
+        "v1_has_rabb": true,
+        "v2_has_malik": true,
+        "v3_has_ilah": true,
+        "v1_has_al_nas": true,
+        "v2_has_al_nas": true,
+        "v3_has_al_nas": true
+      },
+      "all_pass": true
+    },
+    "full-tashkeel": {
+      "v1_normalized": "قل اعوذ برب الناس",
+      "v2_normalized": "ملك الناس",
+      "v3_normalized": "اله الناس",
+      "tests": {
+        "v1_has_rabb": true,
+        "v2_has_malik": true,
+        "v3_has_ilah": true,
+        "v1_has_al_nas": true,
+        "v2_has_al_nas": true,
+        "v3_has_al_nas": true
+      },
+      "all_pass": true
+    }
+  },
+  "rules_tuple_stable": true,
+  "verdict": "VINDICATED-RULES-TUPLE-STABLE"
+}

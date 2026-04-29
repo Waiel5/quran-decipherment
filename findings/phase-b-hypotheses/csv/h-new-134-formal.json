@@ -1,0 +1,556 @@
+{
+  "id": "H-NEW-134-FORMAL",
+  "title": "Prophet-named surahs show a conservative surface-form narrative signature beyond name-root enrichment",
+  "date": "2026-04-18",
+  "seed": 20260418,
+  "n_perm": 100000,
+  "prereg_sha256": "d96d57419332dfd6aaf7baca51ab39b0e02fe4096436f890eaaa5ba54f982a0f",
+  "bonferroni": {
+    "family": "h-new-134-formal-prophet-named-signature",
+    "k": 2,
+    "alpha_bon": 0.025
+  },
+  "primary_set": {
+    "definition": "strict explicit prophet-name titles only",
+    "surah_ids": [
+      10,
+      11,
+      12,
+      14,
+      47,
+      71
+    ],
+    "n": 6
+  },
+  "sensitivity_set": {
+    "definition": "expanded named-human-figure sensitivity",
+    "surah_ids": [
+      10,
+      11,
+      12,
+      14,
+      19,
+      31,
+      47,
+      71
+    ],
+    "n": 8
+  },
+  "marker_definitions": {
+    "vocative_share": [
+      "يا"
+    ],
+    "sequencer_share": [
+      "اذ",
+      "ثم",
+      "فلما",
+      "لما",
+      "واذ"
+    ],
+    "speech_share_auxiliary": [
+      "تقول",
+      "قال",
+      "قالا",
+      "قالت",
+      "قالوا",
+      "قل",
+      "قلنا",
+      "قيل",
+      "نقول",
+      "يقول",
+      "يقولون"
+    ]
+  },
+  "strict_primary": {
+    "surah_ids": [
+      10,
+      11,
+      12,
+      14,
+      47,
+      71
+    ],
+    "surah_table": [
+      {
+        "sid": 10,
+        "name_tl": "Yunus",
+        "type": "meccan",
+        "total_verses": 109,
+        "band": "100+",
+        "muq_status": "muq",
+        "vocative_share": 0.05504587155963303,
+        "sequencer_share": 0.2018348623853211,
+        "speech_share": 0.27522935779816515
+      },
+      {
+        "sid": 11,
+        "name_tl": "Hud",
+        "type": "meccan",
+        "total_verses": 123,
+        "band": "100+",
+        "muq_status": "muq",
+        "vocative_share": 0.17073170731707318,
+        "sequencer_share": 0.13008130081300814,
+        "speech_share": 0.24390243902439024
+      },
+      {
+        "sid": 12,
+        "name_tl": "Yusuf",
+        "type": "meccan",
+        "total_verses": 111,
+        "band": "100+",
+        "muq_status": "muq",
+        "vocative_share": 0.16216216216216217,
+        "sequencer_share": 0.16216216216216217,
+        "speech_share": 0.4864864864864865
+      },
+      {
+        "sid": 14,
+        "name_tl": "Ibrahim",
+        "type": "meccan",
+        "total_verses": 52,
+        "band": "50-99",
+        "muq_status": "muq",
+        "vocative_share": 0.0,
+        "sequencer_share": 0.019230769230769232,
+        "speech_share": 0.1346153846153846
+      },
+      {
+        "sid": 47,
+        "name_tl": "Muhammad",
+        "type": "medinan",
+        "total_verses": 38,
+        "band": "20-49",
+        "muq_status": "nonmuq",
+        "vocative_share": 0.05263157894736842,
+        "sequencer_share": 0.05263157894736842,
+        "speech_share": 0.05263157894736842
+      },
+      {
+        "sid": 71,
+        "name_tl": "Nuh",
+        "type": "meccan",
+        "total_verses": 28,
+        "band": "20-49",
+        "muq_status": "nonmuq",
+        "vocative_share": 0.03571428571428571,
+        "sequencer_share": 0.10714285714285714,
+        "speech_share": 0.10714285714285714
+      }
+    ],
+    "slot_profile": {
+      "meccan|100+|muq": 3,
+      "meccan|20-49|nonmuq": 1,
+      "meccan|50-99|muq": 1,
+      "medinan|20-49|nonmuq": 1
+    },
+    "slot_pool_sizes": {
+      "meccan|100+|muq": {
+        "needed": 3,
+        "available_non_target": 3
+      },
+      "meccan|20-49|nonmuq": {
+        "needed": 1,
+        "available_non_target": 18
+      },
+      "meccan|50-99|muq": {
+        "needed": 1,
+        "available_non_target": 14
+      },
+      "medinan|20-49|nonmuq": {
+        "needed": 1,
+        "available_non_target": 5
+      }
+    },
+    "primary_axes": {
+      "vocative_share": {
+        "feature": "vocative_share",
+        "observed_mean": 0.07938093428342041,
+        "null_mean": 0.05592205543608053,
+        "null_sd": 0.011206038100297471,
+        "z_vs_null": 2.0934141609528485,
+        "p_upper": 0.01944980550194498,
+        "n_perm": 100000,
+        "passes_alpha_bon": true
+      },
+      "sequencer_share": {
+        "feature": "sequencer_share",
+        "observed_mean": 0.11218058844691436,
+        "null_mean": 0.06454836386304223,
+        "null_sd": 0.011231338237403195,
+        "z_vs_null": 4.241010605952974,
+        "p_upper": 9.99990000099999e-06,
+        "n_perm": 100000,
+        "passes_alpha_bon": true
+      }
+    },
+    "speech_auxiliary": {
+      "feature": "speech_share",
+      "observed_mean": 0.21666801733577534,
+      "null_mean": 0.18702729124689257,
+      "null_sd": 0.02074023938093955,
+      "z_vs_null": 1.4291409826312245,
+      "p_upper": 0.08662913370866292,
+      "n_perm": 100000,
+      "passes_alpha_bon": false
+    }
+  },
+  "expanded_sensitivity": {
+    "surah_ids": [
+      10,
+      11,
+      12,
+      14,
+      19,
+      31,
+      47,
+      71
+    ],
+    "surah_table": [
+      {
+        "sid": 10,
+        "name_tl": "Yunus",
+        "type": "meccan",
+        "total_verses": 109,
+        "band": "100+",
+        "muq_status": "muq",
+        "vocative_share": 0.05504587155963303,
+        "sequencer_share": 0.2018348623853211,
+        "speech_share": 0.27522935779816515
+      },
+      {
+        "sid": 11,
+        "name_tl": "Hud",
+        "type": "meccan",
+        "total_verses": 123,
+        "band": "100+",
+        "muq_status": "muq",
+        "vocative_share": 0.17073170731707318,
+        "sequencer_share": 0.13008130081300814,
+        "speech_share": 0.24390243902439024
+      },
+      {
+        "sid": 12,
+        "name_tl": "Yusuf",
+        "type": "meccan",
+        "total_verses": 111,
+        "band": "100+",
+        "muq_status": "muq",
+        "vocative_share": 0.16216216216216217,
+        "sequencer_share": 0.16216216216216217,
+        "speech_share": 0.4864864864864865
+      },
+      {
+        "sid": 14,
+        "name_tl": "Ibrahim",
+        "type": "meccan",
+        "total_verses": 52,
+        "band": "50-99",
+        "muq_status": "muq",
+        "vocative_share": 0.0,
+        "sequencer_share": 0.019230769230769232,
+        "speech_share": 0.1346153846153846
+      },
+      {
+        "sid": 19,
+        "name_tl": "Maryam",
+        "type": "meccan",
+        "total_verses": 98,
+        "band": "50-99",
+        "muq_status": "muq",
+        "vocative_share": 0.10204081632653061,
+        "sequencer_share": 0.05102040816326531,
+        "speech_share": 0.20408163265306123
+      },
+      {
+        "sid": 31,
+        "name_tl": "Luqman",
+        "type": "meccan",
+        "total_verses": 34,
+        "band": "20-49",
+        "muq_status": "muq",
+        "vocative_share": 0.11764705882352941,
+        "sequencer_share": 0.08823529411764706,
+        "speech_share": 0.08823529411764706
+      },
+      {
+        "sid": 47,
+        "name_tl": "Muhammad",
+        "type": "medinan",
+        "total_verses": 38,
+        "band": "20-49",
+        "muq_status": "nonmuq",
+        "vocative_share": 0.05263157894736842,
+        "sequencer_share": 0.05263157894736842,
+        "speech_share": 0.05263157894736842
+      },
+      {
+        "sid": 71,
+        "name_tl": "Nuh",
+        "type": "meccan",
+        "total_verses": 28,
+        "band": "20-49",
+        "muq_status": "nonmuq",
+        "vocative_share": 0.03571428571428571,
+        "sequencer_share": 0.10714285714285714,
+        "speech_share": 0.10714285714285714
+      }
+    ],
+    "slot_profile": {
+      "meccan|100+|muq": 3,
+      "meccan|20-49|muq": 1,
+      "meccan|20-49|nonmuq": 1,
+      "meccan|50-99|muq": 2,
+      "medinan|20-49|nonmuq": 1
+    },
+    "slot_pool_sizes": {
+      "meccan|100+|muq": {
+        "needed": 3,
+        "available_non_target": 3
+      },
+      "meccan|20-49|muq": {
+        "needed": 1,
+        "available_non_target": 4
+      },
+      "meccan|20-49|nonmuq": {
+        "needed": 1,
+        "available_non_target": 18
+      },
+      "meccan|50-99|muq": {
+        "needed": 2,
+        "available_non_target": 13
+      },
+      "medinan|20-49|nonmuq": {
+        "needed": 1,
+        "available_non_target": 5
+      }
+    },
+    "primary_axes": {
+      "vocative_share": {
+        "feature": "vocative_share",
+        "observed_mean": 0.08699668510632282,
+        "null_mean": 0.047358503387258784,
+        "null_sd": 0.009421496801995183,
+        "z_vs_null": 4.207206408080496,
+        "p_upper": 9.99990000099999e-06,
+        "n_perm": 100000,
+        "passes_alpha_bon": true
+      },
+      "sequencer_share": {
+        "feature": "sequencer_share",
+        "observed_mean": 0.10154240412029983,
+        "null_mean": 0.07257631884589374,
+        "null_sd": 0.013540682971855145,
+        "z_vs_null": 2.139189384657573,
+        "p_upper": 0.014619853801461986,
+        "n_perm": 100000,
+        "passes_alpha_bon": true
+      }
+    },
+    "speech_auxiliary": {
+      "feature": "speech_share",
+      "observed_mean": 0.19904062884817003,
+      "null_mean": 0.1804439151130102,
+      "null_sd": 0.024548415904634552,
+      "z_vs_null": 0.7575524957457203,
+      "p_upper": 0.2218677813221868,
+      "n_perm": 100000,
+      "passes_alpha_bon": false
+    }
+  },
+  "mw5_positive_control": {
+    "planted_ids": [
+      7,
+      20,
+      26,
+      27,
+      35,
+      58
+    ],
+    "planted_table": [
+      {
+        "sid": 7,
+        "name_tl": "Al-A'raf",
+        "slot": "meccan|100+|muq",
+        "vocative_share": 0.0970873786407767,
+        "sequencer_share": 0.09223300970873786,
+        "composite": 0.18932038834951456
+      },
+      {
+        "sid": 20,
+        "name_tl": "Taha",
+        "slot": "meccan|100+|muq",
+        "vocative_share": 0.1259259259259259,
+        "sequencer_share": 0.06666666666666667,
+        "composite": 0.1925925925925926
+      },
+      {
+        "sid": 26,
+        "name_tl": "Ash-Shu'ara",
+        "slot": "meccan|100+|muq",
+        "vocative_share": 0.00881057268722467,
+        "sequencer_share": 0.039647577092511016,
+        "composite": 0.048458149779735685
+      },
+      {
+        "sid": 27,
+        "name_tl": "An-Naml",
+        "slot": "meccan|50-99|muq",
+        "vocative_share": 0.08602150537634409,
+        "sequencer_share": 0.11827956989247312,
+        "composite": 0.20430107526881722
+      },
+      {
+        "sid": 35,
+        "name_tl": "Fatir",
+        "slot": "meccan|20-49|nonmuq",
+        "vocative_share": 0.06666666666666667,
+        "sequencer_share": 0.1111111111111111,
+        "composite": 0.17777777777777776
+      },
+      {
+        "sid": 58,
+        "name_tl": "Al-Mujadila",
+        "slot": "medinan|20-49|nonmuq",
+        "vocative_share": 0.13636363636363635,
+        "sequencer_share": 0.13636363636363635,
+        "composite": 0.2727272727272727
+      }
+    ],
+    "evaluation": {
+      "surah_ids": [
+        7,
+        20,
+        26,
+        27,
+        35,
+        58
+      ],
+      "surah_table": [
+        {
+          "sid": 7,
+          "name_tl": "Al-A'raf",
+          "type": "meccan",
+          "total_verses": 206,
+          "band": "100+",
+          "muq_status": "muq",
+          "vocative_share": 0.0970873786407767,
+          "sequencer_share": 0.09223300970873786,
+          "speech_share": 0.33980582524271846
+        },
+        {
+          "sid": 20,
+          "name_tl": "Taha",
+          "type": "meccan",
+          "total_verses": 135,
+          "band": "100+",
+          "muq_status": "muq",
+          "vocative_share": 0.1259259259259259,
+          "sequencer_share": 0.06666666666666667,
+          "speech_share": 0.2962962962962963
+        },
+        {
+          "sid": 26,
+          "name_tl": "Ash-Shu'ara",
+          "type": "meccan",
+          "total_verses": 227,
+          "band": "100+",
+          "muq_status": "muq",
+          "vocative_share": 0.00881057268722467,
+          "sequencer_share": 0.039647577092511016,
+          "speech_share": 0.2026431718061674
+        },
+        {
+          "sid": 27,
+          "name_tl": "An-Naml",
+          "type": "meccan",
+          "total_verses": 93,
+          "band": "50-99",
+          "muq_status": "muq",
+          "vocative_share": 0.08602150537634409,
+          "sequencer_share": 0.11827956989247312,
+          "speech_share": 0.27956989247311825
+        },
+        {
+          "sid": 35,
+          "name_tl": "Fatir",
+          "type": "meccan",
+          "total_verses": 45,
+          "band": "20-49",
+          "muq_status": "nonmuq",
+          "vocative_share": 0.06666666666666667,
+          "sequencer_share": 0.1111111111111111,
+          "speech_share": 0.022222222222222223
+        },
+        {
+          "sid": 58,
+          "name_tl": "Al-Mujadila",
+          "type": "medinan",
+          "total_verses": 22,
+          "band": "20-49",
+          "muq_status": "nonmuq",
+          "vocative_share": 0.13636363636363635,
+          "sequencer_share": 0.13636363636363635,
+          "speech_share": 0.13636363636363635
+        }
+      ],
+      "slot_profile": {
+        "meccan|100+|muq": 3,
+        "meccan|20-49|nonmuq": 1,
+        "meccan|50-99|muq": 1,
+        "medinan|20-49|nonmuq": 1
+      },
+      "slot_pool_sizes": {
+        "meccan|100+|muq": {
+          "needed": 3,
+          "available_non_target": 3
+        },
+        "meccan|20-49|nonmuq": {
+          "needed": 1,
+          "available_non_target": 18
+        },
+        "meccan|50-99|muq": {
+          "needed": 1,
+          "available_non_target": 14
+        },
+        "medinan|20-49|nonmuq": {
+          "needed": 1,
+          "available_non_target": 5
+        }
+      },
+      "primary_axes": {
+        "vocative_share": {
+          "feature": "vocative_share",
+          "observed_mean": 0.0868126142767624,
+          "null_mean": 0.07780025445630562,
+          "null_sd": 0.008437856624045826,
+          "z_vs_null": 1.0680863899457316,
+          "p_upper": 0.16113838861611385,
+          "n_perm": 100000,
+          "passes_alpha_bon": false
+        },
+        "sequencer_share": {
+          "feature": "sequencer_share",
+          "observed_mean": 0.09405026180585602,
+          "null_mean": 0.10988397005743121,
+          "null_sd": 0.009951170362118693,
+          "z_vs_null": -1.5911403056518525,
+          "p_upper": 0.9462505374946251,
+          "n_perm": 100000,
+          "passes_alpha_bon": false
+        }
+      },
+      "speech_auxiliary": {
+        "feature": "speech_share",
+        "observed_mean": 0.21281684073402649,
+        "null_mean": 0.21130141093567836,
+        "null_sd": 0.01961225477339273,
+        "z_vs_null": 0.07726953457712847,
+        "p_upper": 0.4246257537424626,
+        "n_perm": 100000,
+        "passes_alpha_bon": false
+      }
+    }
+  },
+  "verdict": "INSTRUMENT-BROKEN"
+}

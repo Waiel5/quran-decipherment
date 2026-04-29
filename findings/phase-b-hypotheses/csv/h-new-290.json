@@ -1,0 +1,59 @@
+{
+  "id": "H-NEW-282",
+  "title": "Q 42 HMASQ mushaf-block vs phonological-cluster tension",
+  "prereg_sha256": "54a773c660d7eb173404f81c278d191846f141f8de7f759be261925115a22c25",
+  "seed": 20260422,
+  "n_perm": 1000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.01667,
+  "cell_A": {
+    "d_block_41": 0.854007,
+    "d_block_43": 0.991218,
+    "d_phon_26": 1.113933,
+    "d_phon_28": 0.98717,
+    "d_block_mean": 0.9226125000000001,
+    "d_phon_mean": 1.0505515,
+    "delta": -0.12793900000000002,
+    "null_mean": -0.0007069009999999986,
+    "null_sd": 0.07142222004348255,
+    "p_two_sided": 0.069,
+    "p_one_block": 0.035,
+    "p_one_phon": 0.965,
+    "verdict": "H_0 (indistinguishable)"
+  },
+  "cell_B": {
+    "block_neighbor_ranks": {
+      "40": 17,
+      "41": 6,
+      "43": 64,
+      "44": 37,
+      "45": 1,
+      "46": 9
+    },
+    "tsm_cluster_ranks": {
+      "26": 111,
+      "28": 59
+    },
+    "block_median_rank": 17,
+    "phon_median_rank": 111,
+    "p_block_rank": 0.007,
+    "p_phon_rank": 0.962,
+    "verdict": "BLOCK-DOMINANCE (block median 17 < phon median 111)"
+  },
+  "cell_C": {
+    "d_to_hm_mean": 0.8927548333333334,
+    "d_to_tsm_mean": 1.0505515,
+    "ratio_hm_over_tsm": 0.8497963529949111,
+    "verdict": "HM-centroid closer (block-content dominance at centroid level)"
+  },
+  "mw5": {
+    "control_surah": 43,
+    "d_ctrl_block": 0.927962,
+    "d_ctrl_phon": 0.9336979999999999,
+    "ctrl_delta": -0.005735999999999963,
+    "verdict": "PASS (Q 43 shows block-dominance as expected)"
+  },
+  "overall_verdict": "BLOCK-DOMINANCE (2-3 of 3 cells)",
+  "cells_supporting_block": 2,
+  "cells_supporting_phon": 0
+}

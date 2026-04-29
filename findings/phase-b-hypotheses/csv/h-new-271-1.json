@@ -1,0 +1,255 @@
+{
+  "id": "H-NEW-271-1",
+  "title": "1-D mean_manner singleton propagation follow-up to H-NEW-271",
+  "prereg_sha256": "181ae76964eb29eb9aadeda06ce4fe7108de15c17d83922b68c89099b0c7465f",
+  "seed": 20260419,
+  "n_perm": 1000,
+  "alpha_bon": 0.025,
+  "feature_source": "H-NEW-271 locked codebook",
+  "feature_axis": "mean_manner",
+  "controls": {
+    "multi_member_count": 19,
+    "singleton_count": 10
+  },
+  "raw_mean_manner": {
+    "2": 3.0,
+    "3": 3.0,
+    "29": 3.0,
+    "30": 3.0,
+    "31": 3.0,
+    "32": 3.0,
+    "7": 2.75,
+    "10": 3.3333333333333335,
+    "11": 3.3333333333333335,
+    "12": 3.3333333333333335,
+    "14": 3.3333333333333335,
+    "15": 3.3333333333333335,
+    "13": 3.75,
+    "19": 2.0,
+    "20": 1.5,
+    "26": 2.6666666666666665,
+    "28": 2.6666666666666665,
+    "27": 1.5,
+    "36": 2.5,
+    "38": 2.0,
+    "40": 3.5,
+    "41": 3.5,
+    "43": 3.5,
+    "44": 3.5,
+    "45": 3.5,
+    "46": 3.5,
+    "42": 2.4,
+    "50": 1.0,
+    "68": 5.0
+  },
+  "multi_member_mean": 3.210526315789474,
+  "multi_member_sd": 0.28241739348975853,
+  "cluster_centroids_z": {
+    "ALM": -0.7454438736511756,
+    "ALR": 0.43484225962985174,
+    "HM": 1.0249853262703648,
+    "TSM": -1.925730006932203
+  },
+  "singleton_results": [
+    {
+      "singleton": "ALMS",
+      "surah": 7,
+      "raw_mean_manner": 2.75,
+      "z": -1.6306584736119456,
+      "nearest_multi_surah": 26,
+      "nearest_multi_cluster": "TSM",
+      "nearest_multi_distance": 0.2950715333202574,
+      "nearest_cluster": "TSM",
+      "nearest_cluster_distance": 0.2950715333202574,
+      "apriori_accepted": [
+        "ALM"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "ALMR",
+      "surah": 13,
+      "raw_mean_manner": 3.75,
+      "z": 1.9101999262311349,
+      "nearest_multi_surah": 40,
+      "nearest_multi_cluster": "HM",
+      "nearest_multi_distance": 0.8852145999607701,
+      "nearest_cluster": "HM",
+      "nearest_cluster_distance": 0.8852145999607701,
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "KHYAS",
+      "surah": 19,
+      "raw_mean_manner": 2.0,
+      "z": -4.286302273494256,
+      "nearest_multi_surah": 26,
+      "nearest_multi_cluster": "TSM",
+      "nearest_multi_distance": 2.3605722665620528,
+      "nearest_cluster": "TSM",
+      "nearest_cluster_distance": 2.3605722665620528,
+      "apriori_accepted": [
+        "HM",
+        "TSM"
+      ],
+      "match": true
+    },
+    {
+      "singleton": "TH",
+      "surah": 20,
+      "raw_mean_manner": 1.5,
+      "z": -6.056731473415796,
+      "nearest_multi_surah": 26,
+      "nearest_multi_cluster": "TSM",
+      "nearest_multi_distance": 4.1310014664835935,
+      "nearest_cluster": "TSM",
+      "nearest_cluster_distance": 4.1310014664835935,
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": true
+    },
+    {
+      "singleton": "TS",
+      "surah": 27,
+      "raw_mean_manner": 1.5,
+      "z": -6.056731473415796,
+      "nearest_multi_surah": 26,
+      "nearest_multi_cluster": "TSM",
+      "nearest_multi_distance": 4.1310014664835935,
+      "nearest_cluster": "TSM",
+      "nearest_cluster_distance": 4.1310014664835935,
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": true
+    },
+    {
+      "singleton": "YS",
+      "surah": 36,
+      "raw_mean_manner": 2.5,
+      "z": -2.515873073572716,
+      "nearest_multi_surah": 26,
+      "nearest_multi_cluster": "TSM",
+      "nearest_multi_distance": 0.590143066640513,
+      "nearest_cluster": "TSM",
+      "nearest_cluster_distance": 0.590143066640513,
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "S",
+      "surah": 38,
+      "raw_mean_manner": 2.0,
+      "z": -4.286302273494256,
+      "nearest_multi_surah": 26,
+      "nearest_multi_cluster": "TSM",
+      "nearest_multi_distance": 2.3605722665620528,
+      "nearest_cluster": "TSM",
+      "nearest_cluster_distance": 2.3605722665620528,
+      "apriori_accepted": [
+        "TSM"
+      ],
+      "match": true
+    },
+    {
+      "singleton": "HMASQ",
+      "surah": 42,
+      "raw_mean_manner": 2.4,
+      "z": -2.8699589135570243,
+      "nearest_multi_surah": 26,
+      "nearest_multi_cluster": "TSM",
+      "nearest_multi_distance": 0.9442289066248213,
+      "nearest_cluster": "TSM",
+      "nearest_cluster_distance": 0.9442289066248213,
+      "apriori_accepted": [
+        "HM"
+      ],
+      "match": false
+    },
+    {
+      "singleton": "Q",
+      "surah": 50,
+      "raw_mean_manner": 1.0,
+      "z": -7.827160673337336,
+      "nearest_multi_surah": 26,
+      "nearest_multi_cluster": "TSM",
+      "nearest_multi_distance": 5.901430666405133,
+      "nearest_cluster": "TSM",
+      "nearest_cluster_distance": 5.901430666405133,
+      "apriori_accepted": [
+        "HM",
+        "TSM"
+      ],
+      "match": true
+    },
+    {
+      "singleton": "N",
+      "surah": 68,
+      "raw_mean_manner": 5.0,
+      "z": 6.336272926034986,
+      "nearest_multi_surah": 40,
+      "nearest_multi_cluster": "HM",
+      "nearest_multi_distance": 5.311287599764621,
+      "nearest_cluster": "HM",
+      "nearest_cluster_distance": 5.311287599764621,
+      "apriori_accepted": [
+        "ALM",
+        "ALR"
+      ],
+      "match": false
+    }
+  ],
+  "match_count": 5,
+  "match_rate": 0.5,
+  "null_mean": 3.758,
+  "ge_count": 410,
+  "p_perm": 0.41,
+  "cell_a_pass": false,
+  "cell_b_pass": false,
+  "verdict": "MULTI-DIM-REQUIRED-AT-SINGLETONS",
+  "apriori_sets": {
+    "ALMS": [
+      "ALM"
+    ],
+    "ALMR": [
+      "ALM",
+      "ALR"
+    ],
+    "KHYAS": [
+      "HM",
+      "TSM"
+    ],
+    "TH": [
+      "TSM"
+    ],
+    "TS": [
+      "TSM"
+    ],
+    "YS": [
+      "ALM",
+      "ALR"
+    ],
+    "S": [
+      "TSM"
+    ],
+    "HMASQ": [
+      "HM"
+    ],
+    "Q": [
+      "HM",
+      "TSM"
+    ],
+    "N": [
+      "ALM",
+      "ALR"
+    ]
+  }
+}

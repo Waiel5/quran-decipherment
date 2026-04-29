@@ -1,0 +1,343 @@
+{
+  "hypothesis_id": "H-NEW-93",
+  "title": "Q 29 al-ʿAnkabūt + Q 30 al-Rūm TEST-AND-PROPHECY sub-pattern",
+  "run_date": "2026-04-17",
+  "seed": 20260417,
+  "n_perm": 10000,
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "alpha_single_test_cap": 0.05,
+  "prereg_path": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-93-q29-q30-subpattern-prereg.md",
+  "prereg_sha256": "7219cd5bdc8599238e7e68b3ef89e0c6c189d6e8a8ea4999b16036c124fc467e",
+  "data_variant": "no-tashkeel",
+  "rules_tuple": "hafs-kūfan; no-tashkeel; QAC v0.4 STEM-ROOT tokens",
+  "target_surahs": [
+    29,
+    30
+  ],
+  "other_alm_surahs": [
+    2,
+    3,
+    31,
+    32
+  ],
+  "meccan_non_muq_baseline_n": 60,
+  "meccan_non_muq_baseline_ids": [
+    1,
+    6,
+    16,
+    17,
+    18,
+    21,
+    23,
+    25,
+    34,
+    35,
+    37,
+    39,
+    51,
+    52,
+    53,
+    54,
+    56,
+    67,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113,
+    114
+  ],
+  "per_cell_results": {
+    "a_test": {
+      "label": "TEST-of-believers density",
+      "roots": [
+        "Sbr",
+        "blw",
+        "ftn",
+        "mHn"
+      ],
+      "direction": "target > baseline",
+      "target_vs_other_alm": {
+        "observed_diff": -0.0007520384691459304,
+        "mean_A": 0.004136762360446571,
+        "mean_B": 0.004888800829592501,
+        "n_A": 2,
+        "n_B": 4,
+        "p_two_sided": 0.668033196680332,
+        "p_one_sided_A_gt_B": 0.7403259674032596,
+        "p_one_sided_A_lt_B": 0.3321667833216678
+      },
+      "target_vs_meccan_non_muq": {
+        "observed_diff": -0.0009157657478294605,
+        "mean_A": 0.004136762360446571,
+        "mean_B": 0.005052528108276031,
+        "n_A": 2,
+        "n_B": 60,
+        "p_two_sided": 0.9353064693530647,
+        "p_one_sided_A_gt_B": 0.33996600339966004,
+        "p_one_sided_A_lt_B": 0.6608339166083391
+      },
+      "mw5_other_alm_vs_meccan": {
+        "observed_diff": -0.00016372727868353004,
+        "mean_A": 0.004888800829592501,
+        "mean_B": 0.005052528108276031,
+        "n_A": 4,
+        "n_B": 60,
+        "p_two_sided": 0.9765023497650235,
+        "p_one_sided_A_gt_B": 0.3317668233176682,
+        "p_one_sided_A_lt_B": 0.6683331666833316
+      },
+      "verdict": "NULL",
+      "p_pred": 0.33996600339966004
+    },
+    "b_hist_full": {
+      "label": "HISTORICAL-PROPHECY density (full 4-root)",
+      "roots": [
+        "glb",
+        "kwn",
+        "nSr",
+        "ywm"
+      ],
+      "direction": "target > baseline",
+      "target_vs_other_alm": {
+        "observed_diff": 0.013533431043561188,
+        "mean_A": 0.051535087719298246,
+        "mean_B": 0.03800165667573706,
+        "n_A": 2,
+        "n_B": 4,
+        "p_two_sided": 0.45765423457654236,
+        "p_one_sided_A_gt_B": 0.26207379262073793,
+        "p_one_sided_A_lt_B": 0.7999200079992
+      },
+      "target_vs_meccan_non_muq": {
+        "observed_diff": 0.022230676608079272,
+        "mean_A": 0.051535087719298246,
+        "mean_B": 0.029304411111218974,
+        "n_A": 2,
+        "n_B": 60,
+        "p_two_sided": 0.28997100289971,
+        "p_one_sided_A_gt_B": 0.13988601139886012,
+        "p_one_sided_A_lt_B": 0.8602139786021398
+      },
+      "mw5_other_alm_vs_meccan": {
+        "observed_diff": 0.008697245564518084,
+        "mean_A": 0.03800165667573706,
+        "mean_B": 0.029304411111218974,
+        "n_A": 4,
+        "n_B": 60,
+        "p_two_sided": 0.5711428857114289,
+        "p_one_sided_A_gt_B": 0.2675732426757324,
+        "p_one_sided_A_lt_B": 0.7325267473252675
+      },
+      "verdict": "NULL",
+      "p_pred": 0.13988601139886012
+    },
+    "c_allah": {
+      "label": "ALLAH-density control",
+      "roots": [
+        "Alh"
+      ],
+      "direction": "target ≈ baseline (no difference predicted)",
+      "target_vs_other_alm": {
+        "observed_diff": -0.008205853180541574,
+        "mean_A": 0.05781499202551834,
+        "mean_B": 0.06602084520605991,
+        "n_A": 2,
+        "n_B": 4,
+        "p_two_sided": 0.8685131486851315,
+        "p_one_sided_A_gt_B": 0.6622337766223377,
+        "p_one_sided_A_lt_B": 0.40405959404059594
+      },
+      "target_vs_meccan_non_muq": {
+        "observed_diff": 0.035132847067332384,
+        "mean_A": 0.05781499202551834,
+        "mean_B": 0.022682144958185952,
+        "n_A": 2,
+        "n_B": 60,
+        "p_two_sided": 0.06379362063793621,
+        "p_one_sided_A_gt_B": 0.06379362063793621,
+        "p_one_sided_A_lt_B": 0.9375062493750624
+      },
+      "mw5_other_alm_vs_meccan": {
+        "observed_diff": 0.043338700247873965,
+        "mean_A": 0.06602084520605991,
+        "mean_B": 0.022682144958185952,
+        "n_A": 4,
+        "n_B": 60,
+        "p_two_sided": 0.0334966503349665,
+        "p_one_sided_A_gt_B": 0.0334966503349665,
+        "p_one_sided_A_lt_B": 0.9666033396660334
+      },
+      "verdict": "CONTROL-CONFIRMED",
+      "p_pred": null
+    },
+    "d_eschato": {
+      "label": "ESCHATOLOGICAL density (Axr/bEv/Hsb/jzy)",
+      "roots": [
+        "Axr",
+        "Hsb",
+        "bEv",
+        "jzy"
+      ],
+      "direction": "target ≈ baseline (no difference predicted)",
+      "target_vs_other_alm": {
+        "observed_diff": 0.0006315673690728777,
+        "mean_A": 0.010316985645933014,
+        "mean_B": 0.009685418276860137,
+        "n_A": 2,
+        "n_B": 4,
+        "p_two_sided": 0.9323067693230677,
+        "p_one_sided_A_gt_B": 0.6058394160583942,
+        "p_one_sided_A_lt_B": 0.459054094590541
+      },
+      "target_vs_meccan_non_muq": {
+        "observed_diff": -0.0010684340847458562,
+        "mean_A": 0.010316985645933014,
+        "mean_B": 0.01138541973067887,
+        "n_A": 2,
+        "n_B": 60,
+        "p_two_sided": 0.9338066193380662,
+        "p_one_sided_A_gt_B": 0.45965403459654036,
+        "p_one_sided_A_lt_B": 0.5412458754124587
+      },
+      "mw5_other_alm_vs_meccan": {
+        "observed_diff": -0.001700001453818734,
+        "mean_A": 0.009685418276860137,
+        "mean_B": 0.01138541973067887,
+        "n_A": 4,
+        "n_B": 60,
+        "p_two_sided": 0.8203179682031797,
+        "p_one_sided_A_gt_B": 0.5492450754924507,
+        "p_one_sided_A_lt_B": 0.45085491450854914
+      },
+      "verdict": "CONTROL-CONFIRMED",
+      "p_pred": null
+    },
+    "b_hist_glb_only": {
+      "label": "HIST glb-only (ghalaba alone)",
+      "roots": [
+        "glb"
+      ],
+      "direction": "target > baseline",
+      "target_vs_other_alm": {
+        "observed_diff": 0.002556665589617909,
+        "mean_A": 0.002840909090909091,
+        "mean_B": 0.00028424350129118217,
+        "n_A": 2,
+        "n_B": 4,
+        "p_two_sided": 0.3344665533446655,
+        "p_one_sided_A_gt_B": 0.3344665533446655,
+        "p_one_sided_A_lt_B": 0.8666133386661334
+      },
+      "target_vs_meccan_non_muq": {
+        "observed_diff": 0.002458553615008516,
+        "mean_A": 0.002840909090909091,
+        "mean_B": 0.0003823554759005751,
+        "n_A": 2,
+        "n_B": 60,
+        "p_two_sided": 0.06719328067193281,
+        "p_one_sided_A_gt_B": 0.06719328067193281,
+        "p_one_sided_A_lt_B": 0.9651034896510349
+      },
+      "mw5_other_alm_vs_meccan": {
+        "observed_diff": -9.811197460939293e-05,
+        "mean_A": 0.00028424350129118217,
+        "mean_B": 0.0003823554759005751,
+        "n_A": 4,
+        "n_B": 60,
+        "p_two_sided": 0.9021097890210978,
+        "p_one_sided_A_gt_B": 0.29087091290870914,
+        "p_one_sided_A_lt_B": 0.7117288271172882
+      },
+      "verdict": "NULL",
+      "p_pred": 0.06719328067193281
+    },
+    "b_hist_glb_nsr": {
+      "label": "HIST glb+nSr (ghalaba + naṣr)",
+      "roots": [
+        "glb",
+        "nSr"
+      ],
+      "direction": "target > baseline",
+      "target_vs_other_alm": {
+        "observed_diff": 0.006681089339603948,
+        "mean_A": 0.009818580542264753,
+        "mean_B": 0.003137491202660805,
+        "n_A": 2,
+        "n_B": 4,
+        "p_two_sided": 0.20687931206879312,
+        "p_one_sided_A_gt_B": 0.13688631136886312,
+        "p_one_sided_A_lt_B": 0.9331066893310669
+      },
+      "target_vs_meccan_non_muq": {
+        "observed_diff": 0.007984009337537911,
+        "mean_A": 0.009818580542264753,
+        "mean_B": 0.001834571204726841,
+        "n_A": 2,
+        "n_B": 60,
+        "p_two_sided": 0.036196380361963806,
+        "p_one_sided_A_gt_B": 0.036196380361963806,
+        "p_one_sided_A_lt_B": 0.9643035696430357
+      },
+      "mw5_other_alm_vs_meccan": {
+        "observed_diff": 0.0013029199979339638,
+        "mean_A": 0.003137491202660805,
+        "mean_B": 0.001834571204726841,
+        "n_A": 4,
+        "n_B": 60,
+        "p_two_sided": 0.49005099490050996,
+        "p_one_sided_A_gt_B": 0.1944805519448055,
+        "p_one_sided_A_lt_B": 0.8074192580741926
+      },
+      "verdict": "WEAK-PASS-DIRECTED-single-test-only",
+      "p_pred": 0.036196380361963806
+    }
+  },
+  "composite_verdict": "NULL-full-target-pattern-rejected",
+  "mw5_positive_control": {
+    "cell_a_p": 0.9765023497650235,
+    "cell_b_p": 0.5711428857114289,
+    "cell_a_pass": true,
+    "cell_b_pass": true,
+    "overall_pass": true
+  },
+  "verdict_ceiling": "PASS-DIRECTED (post-hoc-noticed sub-cluster)",
+  "note": "Independent replication required for promotion beyond PASS-DIRECTED"
+}

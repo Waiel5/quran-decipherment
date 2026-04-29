@@ -1,0 +1,106 @@
+{
+  "seed": 20260413,
+  "hypothesis": "H-NEW-24 letter-multiset surah-boundary detectability",
+  "rules_tuple": "rasm no-tashkeel, whitespace-stripped, letter-level",
+  "alphabet_size": 31,
+  "total_letters": 330709,
+  "true_boundaries_count": 113,
+  "K": 113,
+  "min_separation": 500,
+  "windows": [
+    500,
+    1000,
+    2000,
+    5000
+  ],
+  "epsilons": [
+    200,
+    500,
+    1000
+  ],
+  "primary_w": 2000,
+  "primary_epsilon": 500,
+  "results_by_w": {
+    "500": {
+      "hits_eps200": 26,
+      "hits_eps500": 39,
+      "hits_eps1000": 45,
+      "n_preds": 113,
+      "mean_score": 0.027613655328205516,
+      "max_score": 0.07872240849317817
+    },
+    "1000": {
+      "hits_eps200": 30,
+      "hits_eps500": 39,
+      "hits_eps1000": 46,
+      "n_preds": 113,
+      "mean_score": 0.014843063091747273,
+      "max_score": 0.06979168963566691
+    },
+    "2000": {
+      "hits_eps200": 28,
+      "hits_eps500": 41,
+      "hits_eps1000": 48,
+      "n_preds": 113,
+      "mean_score": 0.00816115167117544,
+      "max_score": 0.036671399543138326
+    },
+    "5000": {
+      "hits_eps200": 27,
+      "hits_eps500": 33,
+      "hits_eps1000": 39,
+      "n_preds": 113,
+      "mean_score": 0.004177352198076799,
+      "max_score": 0.014144655932142699
+    }
+  },
+  "sub_a": {
+    "observed_hits": 41,
+    "null_mean": 24.5729,
+    "null_sd": 3.745222057345316,
+    "null_9975_pct": 35,
+    "z": 4.386148470898369,
+    "p": 0.0,
+    "pass": true
+  },
+  "sub_b": {
+    "hit_sequence": [
+      39,
+      39,
+      41,
+      33
+    ],
+    "spearman_rho": -0.19999999999999996,
+    "z": -0.34641016151377535,
+    "p_one_sided": 0.6354827552305979,
+    "pass": false
+  },
+  "sub_c": {
+    "shuffled_hits": 28,
+    "z": 0.9150592268030143,
+    "p": 0.2132,
+    "within_95_band": true,
+    "pass": true
+  },
+  "sub_d": {
+    "bukhari_hits": 22,
+    "bukhari_null_mean": 29.067,
+    "bukhari_null_sd": 4.044216715808169,
+    "bukhari_z": -1.7474335567568067,
+    "bukhari_p": 0.975,
+    "pass_fails_as_required": true
+  },
+  "tercile_hits": [
+    3,
+    11,
+    35
+  ],
+  "tercile_totals": [
+    8,
+    20,
+    85
+  ],
+  "joint_pass": false,
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0025
+}

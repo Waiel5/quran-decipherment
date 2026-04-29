@@ -1,0 +1,160 @@
+{
+  "hypothesis_id": "H-NEW-44.2",
+  "title": "Place-of-articulation closure test on the 14 muqattaat letters",
+  "run_date": "2026-04-16",
+  "seed": 20260416,
+  "n_perm": 100000,
+  "bonferroni_family": "2026-04-16-Wave-Muqattaat-Extended",
+  "bonferroni_k_per_class": 8,
+  "alpha_bon_per_class": 0.00625,
+  "alphabet_size": 28,
+  "muqattaat_count": 14,
+  "POA_classes": {
+    "pharyngeal_glottal": [
+      "ا",
+      "ه",
+      "ع",
+      "ح"
+    ],
+    "velar_uvular": [
+      "غ",
+      "خ",
+      "ق",
+      "ك"
+    ],
+    "palatal": [
+      "ج",
+      "ش",
+      "ي",
+      "ض"
+    ],
+    "coronal_sibilant": [
+      "ص",
+      "ز",
+      "س"
+    ],
+    "coronal_stop": [
+      "ط",
+      "د",
+      "ت"
+    ],
+    "interdental": [
+      "ظ",
+      "ذ",
+      "ث"
+    ],
+    "coronal_sonorant": [
+      "ر",
+      "ل",
+      "ن"
+    ],
+    "labial": [
+      "ف",
+      "ب",
+      "م",
+      "و"
+    ]
+  },
+  "observed_per_class": {
+    "pharyngeal_glottal": 4,
+    "velar_uvular": 2,
+    "palatal": 1,
+    "coronal_sibilant": 2,
+    "coronal_stop": 1,
+    "interdental": 0,
+    "coronal_sonorant": 3,
+    "labial": 1
+  },
+  "null_results_per_class": {
+    "pharyngeal_glottal": {
+      "obs": 4,
+      "null_mean": 2.002,
+      "null_std": 0.9445824474337854,
+      "p_upper": 0.04998950010499895,
+      "p_lower": 1.0,
+      "p_two": 0.0999790002099979,
+      "sig_at_alpha_bon_8": false,
+      "z": 2.115220334051421
+    },
+    "velar_uvular": {
+      "obs": 2,
+      "null_mean": 1.99943,
+      "null_std": 0.9416632493094333,
+      "p_upper": 0.7025329746702533,
+      "p_lower": 0.7033029669703303,
+      "p_two": 1.4050659493405067,
+      "sig_at_alpha_bon_8": false,
+      "z": 0.000605311931221663
+    },
+    "palatal": {
+      "obs": 1,
+      "null_mean": 1.99726,
+      "null_std": 0.943107890116502,
+      "p_upper": 0.95090049099509,
+      "p_lower": 0.2993370066299337,
+      "p_two": 0.5986740132598674,
+      "sig_at_alpha_bon_8": false,
+      "z": -1.0574187857518704
+    },
+    "coronal_sibilant": {
+      "obs": 2,
+      "null_mean": 1.50331,
+      "null_std": 0.8325437189121061,
+      "p_upper": 0.5012849871501285,
+      "p_lower": 0.8882011179888201,
+      "p_two": 1.002569974300257,
+      "sig_at_alpha_bon_8": false,
+      "z": 0.5965932944026414
+    },
+    "coronal_stop": {
+      "obs": 1,
+      "null_mean": 1.49694,
+      "null_std": 0.8334210438907815,
+      "p_upper": 0.8877111228887711,
+      "p_lower": 0.5007849921500785,
+      "p_two": 1.001569984300157,
+      "sig_at_alpha_bon_8": false,
+      "z": -0.596265241491938
+    },
+    "interdental": {
+      "obs": 0,
+      "null_mean": 1.50045,
+      "null_std": 0.8358467547942027,
+      "p_upper": 1.0,
+      "p_lower": 0.11164888351116489,
+      "p_two": 0.22329776702232979,
+      "sig_at_alpha_bon_8": false,
+      "z": -1.7951257110155703
+    },
+    "coronal_sonorant": {
+      "obs": 3,
+      "null_mean": 1.50264,
+      "null_std": 0.8333024843356702,
+      "p_upper": 0.11192888071119289,
+      "p_lower": 1.0,
+      "p_two": 0.22385776142238578,
+      "sig_at_alpha_bon_8": false,
+      "z": 1.796898519021857
+    },
+    "labial": {
+      "obs": 1,
+      "null_mean": 1.99797,
+      "null_std": 0.942977136043075,
+      "p_upper": 0.951360486395136,
+      "p_lower": 0.3002269977300227,
+      "p_two": 0.6004539954600454,
+      "sig_at_alpha_bon_8": false,
+      "z": -1.0583183428897187
+    }
+  },
+  "chi2_overall": 12.666666666666668,
+  "chi2_perm_p": 0.06479935200647993,
+  "chi2_null_mean": 7.265346666666666,
+  "n_significant_per_class_after_bonferroni": 0,
+  "verdict": "NULL",
+  "notable_qualitative_observations": [
+    "ALL 4 pharyngeal/glottal letters (ا,ه,ع,ح) are muqattaat (4/4 = 100%); under random null, p_two = 0.1000 (not Bonferroni-8 significant)",
+    "ALL 3 coronal_sonorant letters (ر,ل,ن) are muqattaat (3/3); p_two = 0.2239",
+    "ZERO of 3 interdentals (ظ,ذ,ث) are muqattaat; p_two = 0.2233"
+  ]
+}

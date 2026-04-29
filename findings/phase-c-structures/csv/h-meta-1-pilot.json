@@ -1,0 +1,141 @@
+{
+  "status": "PILOT - BLOCKED_ON_CLASSICAL_CORPUS_VERIFICATION",
+  "task_id": 28,
+  "seed": 20260413,
+  "expected_corpus": {
+    "CLASS_C_classical": 49,
+    "CLASS_C_project": 28,
+    "CLASS_R_classical": 18,
+    "CLASS_R_project": 25,
+    "total": 120
+  },
+  "actual_pilot_corpus": {
+    "source": "docs/claims-catalog.md",
+    "proxy_label_rule": "criticisms-empirical-failure-markers + replicability",
+    "n_total_parsed": 68,
+    "n_labeled": 9,
+    "n_confirmed": 0,
+    "n_refuted": 9,
+    "n_dropped": 59
+  },
+  "amend_4_features": {
+    "broad_hisab_claim": "boolean (TRUE if claim involves 19/abjad/gematric/divisibility)",
+    "substance_type": "structural-formal | numerical-gematric | semantic | other"
+  },
+  "full_feature_set": [
+    "substance_type=numerical-gematric",
+    "substance_type=other",
+    "era=modern-apologetic",
+    "era=modern-numerology",
+    "era=unknown-era",
+    "claim_type=divisibility-miracle",
+    "claim_type=letter-count",
+    "claim_type=other",
+    "claim_type=word-count-symmetry",
+    "unit=other",
+    "unit=surah",
+    "unit=whole-corpus",
+    "broad_hisab_claim",
+    "specificity",
+    "rep_ordinal",
+    "rules_disclosed"
+  ],
+  "cv_5fold": {
+    "fold_accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mean_accuracy": 1.0,
+    "fold_details": [
+      {
+        "fold": 0,
+        "n_test": 2,
+        "acc": 1.0,
+        "test_labels": [
+          0,
+          0
+        ],
+        "preds": [
+          0,
+          0
+        ]
+      },
+      {
+        "fold": 1,
+        "n_test": 2,
+        "acc": 1.0,
+        "test_labels": [
+          0,
+          0
+        ],
+        "preds": [
+          0,
+          0
+        ]
+      },
+      {
+        "fold": 2,
+        "n_test": 2,
+        "acc": 1.0,
+        "test_labels": [
+          0,
+          0
+        ],
+        "preds": [
+          0,
+          0
+        ]
+      },
+      {
+        "fold": 3,
+        "n_test": 2,
+        "acc": 1.0,
+        "test_labels": [
+          0,
+          0
+        ],
+        "preds": [
+          0,
+          0
+        ]
+      },
+      {
+        "fold": 4,
+        "n_test": 1,
+        "acc": 1.0,
+        "test_labels": [
+          0
+        ],
+        "preds": [
+          0
+        ]
+      }
+    ]
+  },
+  "null_permutation": {
+    "n_perms": 1000,
+    "null_mean_acc": 1.0,
+    "null_95pct": 1.0,
+    "null_99pct": 1.0,
+    "p_perm": 1.0
+  },
+  "l1_selected_coefficients": [
+    {
+      "feature": "specificity",
+      "coef": -1.144165160824062
+    }
+  ],
+  "acceptance": "PILOT_HONEST_NO_SIGNATURE",
+  "classical_scholar_delivery_spec": {
+    "required_for_full_run": [
+      "49 CLASS-C classical claims (CONFIRMED via project audit)",
+      "18 CLASS-R classical claims (REFUTED via project audit)",
+      "28 CLASS-C project claims (from master-findings-ledger audit-survived)",
+      "25 CLASS-R project claims (from HONEST-LIMITS-LEDGER)",
+      "Fields per claim: claim_id, claim_source, era, genre, school, claim_type, unit, scope, specificity, broad_hisab_claim (bool), substance_type (cat), empirical_verdict (CONFIRMED/REFUTED)"
+    ]
+  }
+}

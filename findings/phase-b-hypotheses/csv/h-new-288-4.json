@@ -1,0 +1,343 @@
+{
+  "finding_id": "h-new-288-4",
+  "title": "Within-bin token-count projection into the residualized Q108 short-core",
+  "date": "2026-04-19",
+  "pre_reg_sha256": "9919841e3f508c20da1114df7c6b7983728c43a3e7db2236ba6ace75afd9d418",
+  "parent_backdrop": [
+    "h-new-288-1",
+    "h-new-288-2",
+    "h-new-288-3"
+  ],
+  "rules_tuple": "(fixed H-NEW-273 5-7 verse side B = {Q1,Q97,Q105,Q107,Q109,Q111,Q113,Q114}; fixed H-NEW-288.1 residualized short-core K = {Q108,Q106,Q103,Q112}; residualized probability family reused exactly from H-NEW-288.1; primary metrics = Fisher-Rao, Jensen-Shannon, Euclidean L2, cosine-angle; token count N_tok(s) = total QAC STEM-root tokens from the same parse used by H-NEW-288.1; per metric core-closeness C_m(s) = -mean_{t in K} d_res,m(s,t); primary summary T_tok = mean_m Corr(N_tok, C_m) over B; exact null by permuting the observed token-count vector across B, yielding 8! = 40320 unique assignments; one-sided lower-tail for shorter-closer direction)",
+  "fixed_sets": {
+    "B": [
+      1,
+      97,
+      105,
+      107,
+      109,
+      111,
+      113,
+      114
+    ],
+    "K": [
+      108,
+      106,
+      103,
+      112
+    ]
+  },
+  "residualized_family_context": {
+    "mean_surah_tokens": 438.3157894736842,
+    "q108_effective_alpha_residualized": 31.30827067669173
+  },
+  "token_counts": {
+    "1": 23,
+    "97": 21,
+    "105": 18,
+    "107": 14,
+    "109": 12,
+    "111": 17,
+    "113": 15,
+    "114": 16
+  },
+  "verse_counts": {
+    "1": 7,
+    "97": 5,
+    "105": 5,
+    "107": 7,
+    "109": 6,
+    "111": 5,
+    "113": 5,
+    "114": 6
+  },
+  "primary_metrics": [
+    "fisher_rao",
+    "jensen_shannon",
+    "euclidean_l2",
+    "cosine_angle"
+  ],
+  "per_metric": [
+    {
+      "metric": "fisher_rao",
+      "r_token_obs": -0.680336726398875,
+      "r_verse_obs_descriptive": -0.2572938686329654,
+      "per_surah": [
+        {
+          "surah": 1,
+          "token_count": 23,
+          "verse_count": 7,
+          "mean_residualized_distance_to_core": 0.027170785000674817,
+          "residualized_core_closeness": -0.027170785000674817
+        },
+        {
+          "surah": 97,
+          "token_count": 21,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.024408738337467747,
+          "residualized_core_closeness": -0.024408738337467747
+        },
+        {
+          "surah": 105,
+          "token_count": 18,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.014969259775863797,
+          "residualized_core_closeness": -0.014969259775863797
+        },
+        {
+          "surah": 107,
+          "token_count": 14,
+          "verse_count": 7,
+          "mean_residualized_distance_to_core": 0.011888322970809221,
+          "residualized_core_closeness": -0.011888322970809221
+        },
+        {
+          "surah": 109,
+          "token_count": 12,
+          "verse_count": 6,
+          "mean_residualized_distance_to_core": 0.01918148622189284,
+          "residualized_core_closeness": -0.01918148622189284
+        },
+        {
+          "surah": 111,
+          "token_count": 17,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.012014143158240754,
+          "residualized_core_closeness": -0.012014143158240754
+        },
+        {
+          "surah": 113,
+          "token_count": 15,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.014156654004902142,
+          "residualized_core_closeness": -0.014156654004902142
+        },
+        {
+          "surah": 114,
+          "token_count": 16,
+          "verse_count": 6,
+          "mean_residualized_distance_to_core": 0.01823503054006342,
+          "residualized_core_closeness": -0.01823503054006342
+        }
+      ]
+    },
+    {
+      "metric": "jensen_shannon",
+      "r_token_obs": -0.6809346816768348,
+      "r_verse_obs_descriptive": -0.25706310933430665,
+      "per_surah": [
+        {
+          "surah": 1,
+          "token_count": 23,
+          "verse_count": 7,
+          "mean_residualized_distance_to_core": 0.009600630162755065,
+          "residualized_core_closeness": -0.009600630162755065
+        },
+        {
+          "surah": 97,
+          "token_count": 21,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.008626552006497375,
+          "residualized_core_closeness": -0.008626552006497375
+        },
+        {
+          "surah": 105,
+          "token_count": 18,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.005291895561214545,
+          "residualized_core_closeness": -0.005291895561214545
+        },
+        {
+          "surah": 107,
+          "token_count": 14,
+          "verse_count": 7,
+          "mean_residualized_distance_to_core": 0.004202787102749541,
+          "residualized_core_closeness": -0.004202787102749541
+        },
+        {
+          "surah": 109,
+          "token_count": 12,
+          "verse_count": 6,
+          "mean_residualized_distance_to_core": 0.006774583623750274,
+          "residualized_core_closeness": -0.006774583623750274
+        },
+        {
+          "surah": 111,
+          "token_count": 17,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.004247393382418566,
+          "residualized_core_closeness": -0.004247393382418566
+        },
+        {
+          "surah": 113,
+          "token_count": 15,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.005003033609485601,
+          "residualized_core_closeness": -0.005003033609485601
+        },
+        {
+          "surah": 114,
+          "token_count": 16,
+          "verse_count": 6,
+          "mean_residualized_distance_to_core": 0.00644258558111677,
+          "residualized_core_closeness": -0.00644258558111677
+        }
+      ]
+    },
+    {
+      "metric": "euclidean_l2",
+      "r_token_obs": -0.6425597402352832,
+      "r_verse_obs_descriptive": -0.26831095074599215,
+      "per_surah": [
+        {
+          "surah": 1,
+          "token_count": 23,
+          "verse_count": 7,
+          "mean_residualized_distance_to_core": 0.0012828771388216816,
+          "residualized_core_closeness": -0.0012828771388216816
+        },
+        {
+          "surah": 97,
+          "token_count": 21,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.0011404690357093579,
+          "residualized_core_closeness": -0.0011404690357093579
+        },
+        {
+          "surah": 105,
+          "token_count": 18,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.0006849580818629952,
+          "residualized_core_closeness": -0.0006849580818629952
+        },
+        {
+          "surah": 107,
+          "token_count": 14,
+          "verse_count": 7,
+          "mean_residualized_distance_to_core": 0.0005435155714731007,
+          "residualized_core_closeness": -0.0005435155714731007
+        },
+        {
+          "surah": 109,
+          "token_count": 12,
+          "verse_count": 6,
+          "mean_residualized_distance_to_core": 0.0009317050359735252,
+          "residualized_core_closeness": -0.0009317050359735252
+        },
+        {
+          "surah": 111,
+          "token_count": 17,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.0005469909216718501,
+          "residualized_core_closeness": -0.0005469909216718501
+        },
+        {
+          "surah": 113,
+          "token_count": 15,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.0006636134111544865,
+          "residualized_core_closeness": -0.0006636134111544865
+        },
+        {
+          "surah": 114,
+          "token_count": 16,
+          "verse_count": 6,
+          "mean_residualized_distance_to_core": 0.0008664032149559785,
+          "residualized_core_closeness": -0.0008664032149559785
+        }
+      ]
+    },
+    {
+      "metric": "cosine_angle",
+      "r_token_obs": -0.6425163255892808,
+      "r_verse_obs_descriptive": -0.26826913854516854,
+      "per_surah": [
+        {
+          "surah": 1,
+          "token_count": 23,
+          "verse_count": 7,
+          "mean_residualized_distance_to_core": 0.028678333219925644,
+          "residualized_core_closeness": -0.028678333219925644
+        },
+        {
+          "surah": 97,
+          "token_count": 21,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.025496474469130812,
+          "residualized_core_closeness": -0.025496474469130812
+        },
+        {
+          "surah": 105,
+          "token_count": 18,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.015315156908731108,
+          "residualized_core_closeness": -0.015315156908731108
+        },
+        {
+          "surah": 107,
+          "token_count": 14,
+          "verse_count": 7,
+          "mean_residualized_distance_to_core": 0.012152919803939564,
+          "residualized_core_closeness": -0.012152919803939564
+        },
+        {
+          "surah": 109,
+          "token_count": 12,
+          "verse_count": 6,
+          "mean_residualized_distance_to_core": 0.02083069957240085,
+          "residualized_core_closeness": -0.02083069957240085
+        },
+        {
+          "surah": 111,
+          "token_count": 17,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.01223065909667934,
+          "residualized_core_closeness": -0.01223065909667934
+        },
+        {
+          "surah": 113,
+          "token_count": 15,
+          "verse_count": 5,
+          "mean_residualized_distance_to_core": 0.014837954347828778,
+          "residualized_core_closeness": -0.014837954347828778
+        },
+        {
+          "surah": 114,
+          "token_count": 16,
+          "verse_count": 6,
+          "mean_residualized_distance_to_core": 0.019371178577088588,
+          "residualized_core_closeness": -0.019371178577088588
+        }
+      ]
+    }
+  ],
+  "primary_summary": {
+    "t_tok_obs": -0.6615868684750684,
+    "r_token_obs_per_metric": [
+      -0.680336726398875,
+      -0.6809346816768348,
+      -0.6425597402352832,
+      -0.6425163255892808
+    ],
+    "null_n_unique_assignments": 40320,
+    "null_mean": 3.999972593498928e-18,
+    "null_min": -0.9832949596660443,
+    "null_max": 0.9256347163697933,
+    "rank_desc": 38567,
+    "rank_asc": 1754,
+    "p_short": 0.04352570620768334,
+    "decision_rule": "PASS-DIRECTED iff p_short < 0.05"
+  },
+  "descriptive_verse_count_contrast": {
+    "t_verse_obs": -0.2627342668146082,
+    "r_verse_obs_per_metric": [
+      -0.2572938686329654,
+      -0.25706310933430665,
+      -0.26831095074599215,
+      -0.26826913854516854
+    ],
+    "null_n_unique_assignments": 420,
+    "p_short": 0.2660332541567696
+  },
+  "verdict": "PASS-DIRECTED"
+}

@@ -1,0 +1,84 @@
+{
+  "hypothesis_id": "H-NEW-169",
+  "title": "NCD matrix mushaf optimality (cross-finding-011 third-axis replication)",
+  "prereg_sha256": "a3532abf77472f2a4678864b884ec6cbb47d683597d02c553f87d6c6b7f4606e",
+  "seed": 20260419,
+  "n_perms": 10000,
+  "compressor": "lzma preset=9|EXTREME",
+  "ncd_separator_byte": "0x00",
+  "ncd_symmetrization": "arithmetic mean of NCD(x,y), NCD(y,x)",
+  "matrix_stats": {
+    "min": 0.35714285714285715,
+    "max": 0.993316268486917,
+    "mean": 0.8730609909248537,
+    "median": 0.8899755501222494
+  },
+  "L_mushaf": 86.28612757330117,
+  "L_cycle_mushaf": 86.85094238811598,
+  "wrap_edge_D_114_1": 0.5648148148148149,
+  "null_open": {
+    "quantiles": {
+      "min": 95.69625734526377,
+      "q001": 96.19088606559333,
+      "q01": 96.74112217182034,
+      "q025": 97.09376575537038,
+      "q05": 97.3557764524223,
+      "q25": 98.13878241528883,
+      "q50": 98.6698445651185,
+      "q75": 99.19913075290155,
+      "q95": 99.92913948167434,
+      "max": 101.41971914851717,
+      "mean": 98.66064064772733,
+      "sd": 0.7851111157995468
+    },
+    "n_le_mushaf": 0,
+    "p_primary": 9.999000099990002e-05,
+    "z_mushaf": -15.761479904438902
+  },
+  "null_cycle": {
+    "quantiles": {
+      "min": 96.5907675713133,
+      "q001": 97.05162930748754,
+      "q01": 97.62916835207855,
+      "q05": 98.2312919394421,
+      "q50": 99.54762729880072,
+      "q95": 100.80181399998418,
+      "max": 102.36346914851717,
+      "mean": 99.53316274515801,
+      "sd": 0.785269613007538
+    },
+    "n_le_cycle": 0,
+    "p_cycle": 9.999000099990002e-05,
+    "z_cycle": -16.15014785618642
+  },
+  "secondary_2opt_open": {
+    "L_greedy_best": 82.50518102048336,
+    "L_greedy_from_surah1": 82.57029638041715,
+    "L_2opt_best": 82.17596235452042,
+    "ratio_L_mushaf_over_L_2opt": 1.050016636264615
+  },
+  "cycle_2opt": {
+    "L_cycle_2opt_best": 83.0481744357747,
+    "ratio_L_cycle_over_L_cycle_2opt": 1.045789904211346
+  },
+  "mw5_dominance_L2opt_lt_greedyS1_lt_nullmean": true,
+  "alpha_bonferroni_k2": 0.025,
+  "primary_verdict": "PASS",
+  "fr_parent_comparison": {
+    "roots_K500": {
+      "L_mushaf": 85.76,
+      "z": -11.46,
+      "ratio_2opt": 1.107
+    },
+    "char4gram_K2000": {
+      "L_mushaf": 89.23,
+      "z": -11.41,
+      "ratio_2opt": 1.114
+    },
+    "verselen_8bin": {
+      "L_mushaf": 77.66,
+      "z": -9.84,
+      "ratio_2opt": 2.71
+    }
+  }
+}

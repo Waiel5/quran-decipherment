@@ -1,0 +1,87 @@
+{
+  "id": "h-new-277",
+  "title": "Hijra lexical frontier broad-root ablation",
+  "date": "2026-04-18",
+  "seed": 20260418,
+  "prereg": "findings/phase-b-hypotheses/h-new-277-hijra-frontier-broad-root-ablation-prereg.md",
+  "prereg_sha256": "e129780c4794e5bc4a017ec35a812cbea2775666719b4b8b93383a97aacff101",
+  "bonferroni_family": "h-new-277-hijra-frontier-broad-root-ablation",
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016666666666666666,
+  "n_perms": 3000,
+  "mw5_n_perms": 1000,
+  "excluded_roots": [
+    "Alh",
+    "Amn",
+    "qwl",
+    "rbb",
+    "Ayy"
+  ],
+  "excluded_root_count": 5,
+  "remaining_root_count": 1637,
+  "remaining_rooted_tokens_total": 43154,
+  "rules_tuple": "H-NEW-267 scorer + split rule + nulls, but with fixed exclusion of {Alh, Amn, qwl, rbb, Ayy} from the root space",
+  "primary": {
+    "cells": {
+      "train_a_test_b_auc": {
+        "observed": 1.0,
+        "null_mean": 0.510225,
+        "null_sd": 0.118991,
+        "null_q95": 0.7,
+        "p_perm_upper": 0.000333,
+        "pass": true
+      },
+      "train_b_test_a_auc": {
+        "observed": 1.0,
+        "null_mean": 0.50875,
+        "null_sd": 0.113227,
+        "null_q95": 0.69697,
+        "p_perm_upper": 0.000333,
+        "pass": true
+      },
+      "split_weight_rho": {
+        "observed": 0.452289,
+        "null_mean": -0.03809,
+        "null_sd": 0.083261,
+        "null_q95": 0.103089,
+        "p_perm_upper": 0.000333,
+        "pass": true
+      }
+    },
+    "support_n": 429,
+    "held_out_score_gaps": {
+      "train_a_test_b_gap": 0.072133,
+      "train_b_test_a_gap": 0.083068
+    }
+  },
+  "mw5": {
+    "cells": {
+      "train_a_test_b_auc": {
+        "observed": 0.89701,
+        "null_mean": 0.52508,
+        "null_sd": 0.084732,
+        "null_q95": 0.659551,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      },
+      "train_b_test_a_auc": {
+        "observed": 0.855482,
+        "null_mean": 0.527377,
+        "null_sd": 0.08872,
+        "null_q95": 0.667774,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      },
+      "split_weight_rho": {
+        "observed": 0.509789,
+        "null_mean": -0.035189,
+        "null_sd": 0.074577,
+        "null_q95": 0.092749,
+        "p_perm_upper": 0.000999,
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "verdict": "PASS-DIRECTED"
+}

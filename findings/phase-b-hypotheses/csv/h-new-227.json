@@ -1,0 +1,149 @@
+{
+  "finding_id": "h-new-227",
+  "title": "Wrap-edge d(last,first) across chronologies — does mushaf ṭawāf-like closure beat each chronology?",
+  "pre_reg_note": "Pre-reg bonferroni_k=1, seed 20260419 as specified in task prompt; single primary test = mushaf wrap-edge vs permutation null; head-to-head deltas descriptive.",
+  "h_new_111_sha256_source_of_D": "4c366c414b82b0d0f3bcd06b68a7b5a87b500cf925b5088704a36c355d7f33fc",
+  "h_new_212_sha256_source_of_ranks": "b9725730c032d2bacea13a8b099c01ef5f009bfb2bb7ca5f1cf688f0ac341fba",
+  "seed": 20260419,
+  "permutations": 10000,
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05,
+  "date": "2026-04-17",
+  "rules_tuple": "(114 surahs Hafs-Kūfan; no-tashkeel; QAC-STEM top-500 roots; Dirichlet α=0.5; L1-normalized; Fisher-Rao arccos Bhattacharyya; basmala-counted-only-in-Surah-1; D-matrix inherited from H-NEW-111)",
+  "question": "Is d(Q114, Q1) < d(last_ordered, first_ordered) under each of Nöldeke/Egyptian/Bell/Blachère, and is it significantly small vs a uniform-random wrap-edge null?",
+  "chronology_wrap_stats": {
+    "mushaf": {
+      "first": 1,
+      "last": 114,
+      "wrap_edge": 0.38837,
+      "z": -2.536717,
+      "n_perms_le": 276,
+      "p_one_sided_lower": 0.027697
+    },
+    "noldeke_1860": {
+      "first": 96,
+      "last": 5,
+      "wrap_edge": 1.217331,
+      "z": 1.406424,
+      "n_perms_le": 9514,
+      "p_one_sided_lower": 0.951405
+    },
+    "egyptian_1924": {
+      "first": 96,
+      "last": 110,
+      "wrap_edge": 0.468763,
+      "z": -2.15431,
+      "n_perms_le": 460,
+      "p_one_sided_lower": 0.046095
+    },
+    "bell_1937": {
+      "first": 96,
+      "last": 5,
+      "wrap_edge": 1.217331,
+      "z": 1.406424,
+      "n_perms_le": 9514,
+      "p_one_sided_lower": 0.951405
+    },
+    "blachere_1947": {
+      "first": 96,
+      "last": 110,
+      "wrap_edge": 0.468763,
+      "z": -2.15431,
+      "n_perms_le": 460,
+      "p_one_sided_lower": 0.046095
+    }
+  },
+  "null_quantiles": {
+    "min": 0.212673,
+    "q001": 0.246504,
+    "q01": 0.309442,
+    "q025": 0.379279,
+    "q05": 0.479908,
+    "q25": 0.822012,
+    "q50": 0.953443,
+    "q75": 1.061833,
+    "q95": 1.215317,
+    "max": 1.537013,
+    "mean": 0.92166,
+    "sd": 0.210229
+  },
+  "primary": {
+    "metric": "mushaf wrap-edge d(Q114, Q1)",
+    "value": 0.38837,
+    "z": -2.536717,
+    "n_perms_le": 276,
+    "p_one_sided_lower": 0.027697,
+    "alpha_bon": 0.05,
+    "pass": true
+  },
+  "head_to_head_vs_chronologies": {
+    "noldeke_1860": {
+      "chrono_wrap": 1.217331,
+      "mushaf_wrap": 0.38837,
+      "delta_mushaf_minus_chrono": -0.828961,
+      "delta_in_null_sd": -3.943142,
+      "sign_interpretation": "mushaf TIGHTER"
+    },
+    "egyptian_1924": {
+      "chrono_wrap": 0.468763,
+      "mushaf_wrap": 0.38837,
+      "delta_mushaf_minus_chrono": -0.080393,
+      "delta_in_null_sd": -0.382408,
+      "sign_interpretation": "mushaf TIGHTER"
+    },
+    "bell_1937": {
+      "chrono_wrap": 1.217331,
+      "mushaf_wrap": 0.38837,
+      "delta_mushaf_minus_chrono": -0.828961,
+      "delta_in_null_sd": -3.943142,
+      "sign_interpretation": "mushaf TIGHTER"
+    },
+    "blachere_1947": {
+      "chrono_wrap": 0.468763,
+      "mushaf_wrap": 0.38837,
+      "delta_mushaf_minus_chrono": -0.080393,
+      "delta_in_null_sd": -0.382408,
+      "sign_interpretation": "mushaf TIGHTER"
+    }
+  },
+  "leaderboard_tightest_first": [
+    {
+      "rank": 1,
+      "name": "mushaf",
+      "first": 1,
+      "last": 114,
+      "wrap_edge": 0.38837
+    },
+    {
+      "rank": 2,
+      "name": "egyptian_1924",
+      "first": 96,
+      "last": 110,
+      "wrap_edge": 0.468763
+    },
+    {
+      "rank": 3,
+      "name": "blachere_1947",
+      "first": 96,
+      "last": 110,
+      "wrap_edge": 0.468763
+    },
+    {
+      "rank": 4,
+      "name": "noldeke_1860",
+      "first": 96,
+      "last": 5,
+      "wrap_edge": 1.217331
+    },
+    {
+      "rank": 5,
+      "name": "bell_1937",
+      "first": 96,
+      "last": 5,
+      "wrap_edge": 1.217331
+    }
+  ],
+  "mushaf_rank_among_5": 1,
+  "verdict_summary": "PRIMARY PASS: d(Q114,Q1)=0.3884 p=0.027697 < α=0.05; Mushaf wrap tighter than ALL 4 chronologies: True",
+  "mushaf_wrap_tighter_than_all_4_chronologies": true
+}

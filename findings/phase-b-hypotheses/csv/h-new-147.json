@@ -1,0 +1,43 @@
+{
+  "finding_id": "h-new-145",
+  "title": "Bukhārī cross-corpus Fisher-Rao near-optimality test",
+  "seed": 20260420,
+  "quran_qac_reference": {
+    "source": "cross-finding-011",
+    "R_qac": 1.107
+  },
+  "mw5": {
+    "quran_lightstem_R": 1.1205919322224358,
+    "difference_from_qac": 0.01359193222243582,
+    "pass": true,
+    "note": "Light-stemmer is a noisier root-extractor than QAC-annotated roots."
+  },
+  "quran_lightstem": {
+    "label": "QURAN (114 surahs, light-stemmed — MW-5 apples-to-apples)",
+    "n_segments": 114,
+    "L_canonical": 86.66878694060813,
+    "L_2opt": 77.34196940782945,
+    "R": 1.1205919322224358,
+    "null_mean": 104.3615256869542,
+    "null_sd": 1.5218630962412059,
+    "z_score": -11.62570982241748,
+    "p_one_sided_lower": 9.999000099990002e-05
+  },
+  "bukhari": {
+    "label": "BUKHĀRĪ (114 longest bab-segments, light-stemmed)",
+    "n_segments": 114,
+    "L_canonical": 108.16400419493601,
+    "L_2opt": 90.40959540817704,
+    "R": 1.1963774830160692,
+    "null_mean": 110.48822368692895,
+    "null_sd": 0.6675209821375546,
+    "z_score": -3.481867318312981,
+    "p_one_sided_lower": 0.0011998800119988001
+  },
+  "primary_comparison": {
+    "R_bukhari": 1.1963774830160692,
+    "R_quran_lightstem_apples_to_apples": 1.1205919322224358,
+    "R_bukhari_minus_R_quran_lightstem": 0.07578555079363336,
+    "verdict": "INTERMEDIATE (r_bukhari=1.196, r_quran=1.121, diff=0.076)"
+  }
+}

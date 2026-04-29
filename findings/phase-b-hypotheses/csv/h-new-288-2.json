@@ -1,0 +1,1478 @@
+{
+  "finding_id": "h-new-288-2",
+  "title": "Q1 liturgical-separation test inside the residualized Q108 pool",
+  "date": "2026-04-19",
+  "pre_reg_sha256": "0e94e5eb699aeb052eb34d8eae98ef259b87cfc75610a44772e1d28835b705be",
+  "parent_backdrop": [
+    "h-new-273",
+    "h-new-288",
+    "h-new-288-1"
+  ],
+  "rules_tuple": "(fixed H-NEW-288.1 pool P = {Early Meccan surahs with verse_count <= 17}; candidate family = P \\\\ {Q108}; literal and residualized probability families reused exactly from H-NEW-288.1; primary metrics = Fisher-Rao, Jensen-Shannon, Euclidean L2, cosine-angle; H-NEW-273 surah score reused exactly as S(s)=sqrt(divine_share_{Alh,rbb,rHm}(s) * imperative_density(s)); for each candidate s and primary metric m, compute rank_lit^m(s) and rank_res^m(s) by ascending distance to Q108 inside P \\\\ {Q108}; define C_sep(s)=#{m : rank_res^m(s) > rank_lit^m(s)} and L_sep(s)=S(s) * C_sep(s); exact candidate-family upper-tail over the 21 admissible surahs)",
+  "pool_definition": {
+    "pool_surahs": [
+      1,
+      86,
+      91,
+      93,
+      94,
+      95,
+      97,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      111,
+      112,
+      113,
+      114
+    ],
+    "candidate_family_excluding_q108": [
+      1,
+      86,
+      91,
+      93,
+      94,
+      95,
+      97,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      109,
+      111,
+      112,
+      113,
+      114
+    ],
+    "pool_size": 22,
+    "candidate_family_size": 21
+  },
+  "family_reuse": {
+    "literal_family": "count / N_i plus flat alpha=0.5",
+    "residualized_family": "raw counts plus alpha_i = 0.5 * mean_tokens / N_i",
+    "mean_surah_tokens": 438.3157894736842,
+    "q108_effective_alpha_residualized": 31.30827067669173
+  },
+  "primary_metrics": [
+    "fisher_rao",
+    "jensen_shannon",
+    "euclidean_l2",
+    "cosine_angle"
+  ],
+  "primary_target": {
+    "surah": 1,
+    "h273_surah_score": 0.20854568887374797,
+    "c_sep": 4,
+    "liturgical_separation_score": 0.8341827554949919,
+    "rank_desc": 1,
+    "p_exact_upper": 0.047619047619047616,
+    "decision_rule": "PASS-DIRECTED iff p_exact_upper < 0.05"
+  },
+  "descriptive_contrast": {
+    "surah": 112,
+    "h273_surah_score": 0.22360679774997896,
+    "c_app": 4,
+    "liturgical_approach_score": 0.8944271909999159,
+    "rank_desc": 1,
+    "p_exact_upper": 0.047619047619047616,
+    "note": "Descriptive only. This was not a second inferential cell."
+  },
+  "candidate_rows": [
+    {
+      "surah": 1,
+      "verse_count": 7,
+      "h273_divine_share": 0.30434782608695654,
+      "h273_imperative_density": 0.1429,
+      "h273_surah_score": 0.20854568887374797,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 12,
+      "delta_rank_mean_res_minus_lit": 3.0,
+      "liturgical_separation_score": 0.8341827554949919,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.03160398978747417,
+          "literal_rank_to_q108": 14,
+          "residualized_distance_to_q108": 0.02684970878556298,
+          "residualized_rank_to_q108": 17,
+          "delta_rank_res_minus_lit": 3,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.011167576854662273,
+          "literal_rank_to_q108": 14,
+          "residualized_distance_to_q108": 0.009487030085151523,
+          "residualized_rank_to_q108": 17,
+          "delta_rank_res_minus_lit": 3,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0014961714727484078,
+          "literal_rank_to_q108": 14,
+          "residualized_distance_to_q108": 0.0012691332824900949,
+          "residualized_rank_to_q108": 17,
+          "delta_rank_res_minus_lit": 3,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.033446902997177404,
+          "literal_rank_to_q108": 14,
+          "residualized_distance_to_q108": 0.02837102707370754,
+          "residualized_rank_to_q108": 17,
+          "delta_rank_res_minus_lit": 3,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 94,
+      "verse_count": 8,
+      "h273_divine_share": 0.0625,
+      "h273_imperative_density": 0.25,
+      "h273_surah_score": 0.125,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 8,
+      "delta_rank_mean_res_minus_lit": 2.0,
+      "liturgical_separation_score": 0.5,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.028084877595891584,
+          "literal_rank_to_q108": 4,
+          "residualized_distance_to_q108": 0.010930563142781857,
+          "residualized_rank_to_q108": 6,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.009924673115266389,
+          "literal_rank_to_q108": 4,
+          "residualized_distance_to_q108": 0.0038641768591569786,
+          "residualized_rank_to_q108": 6,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0013274009309004965,
+          "literal_rank_to_q108": 4,
+          "residualized_distance_to_q108": 0.0004998931404651169,
+          "residualized_rank_to_q108": 6,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.029674845835965906,
+          "literal_rank_to_q108": 4,
+          "residualized_distance_to_q108": 0.011177481621622925,
+          "residualized_rank_to_q108": 6,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 93,
+      "verse_count": 11,
+      "h273_divine_share": 0.10714285714285714,
+      "h273_imperative_density": 0.0909,
+      "h273_surah_score": 0.09868781948288102,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 68,
+      "delta_rank_mean_res_minus_lit": 17.0,
+      "liturgical_separation_score": 0.3947512779315241,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.02490138865080086,
+          "literal_rank_to_q108": 1,
+          "residualized_distance_to_q108": 0.030962586378012375,
+          "residualized_rank_to_q108": 18,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.008800183273196042,
+          "literal_rank_to_q108": 1,
+          "residualized_distance_to_q108": 0.010940767433916233,
+          "residualized_rank_to_q108": 18,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0011744298260821199,
+          "literal_rank_to_q108": 1,
+          "residualized_distance_to_q108": 0.0014676146715204405,
+          "residualized_rank_to_q108": 18,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.026254840840018827,
+          "literal_rank_to_q108": 1,
+          "residualized_distance_to_q108": 0.032804196176398376,
+          "residualized_rank_to_q108": 18,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 86,
+      "verse_count": 17,
+      "h273_divine_share": 0.0,
+      "h273_imperative_density": 0.1176,
+      "h273_surah_score": 0.0,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 64,
+      "delta_rank_mean_res_minus_lit": 16.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.028153402573178155,
+          "literal_rank_to_q108": 5,
+          "residualized_distance_to_q108": 0.05247318447301905,
+          "residualized_rank_to_q108": 21,
+          "delta_rank_res_minus_lit": 16,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.00994851115936556,
+          "literal_rank_to_q108": 5,
+          "residualized_distance_to_q108": 0.01852869715725522,
+          "residualized_rank_to_q108": 21,
+          "delta_rank_res_minus_lit": 16,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.001327656942538716,
+          "literal_rank_to_q108": 5,
+          "residualized_distance_to_q108": 0.002543290897549548,
+          "residualized_rank_to_q108": 21,
+          "delta_rank_res_minus_lit": 16,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.029681214596863036,
+          "literal_rank_to_q108": 5,
+          "residualized_distance_to_q108": 0.05680891769528982,
+          "residualized_rank_to_q108": 21,
+          "delta_rank_res_minus_lit": 16,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 91,
+      "verse_count": 15,
+      "h273_divine_share": 0.07692307692307693,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 68,
+      "delta_rank_mean_res_minus_lit": 17.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.026366335662282286,
+          "literal_rank_to_q108": 3,
+          "residualized_distance_to_q108": 0.04318219386370019,
+          "residualized_rank_to_q108": 20,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.00931737126941583,
+          "literal_rank_to_q108": 3,
+          "residualized_distance_to_q108": 0.015260162258800915,
+          "residualized_rank_to_q108": 20,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0012444395700330426,
+          "literal_rank_to_q108": 3,
+          "residualized_distance_to_q108": 0.0020288520410404955,
+          "residualized_rank_to_q108": 20,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.027820721363455914,
+          "literal_rank_to_q108": 3,
+          "residualized_distance_to_q108": 0.045335217986717614,
+          "residualized_rank_to_q108": 20,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 95,
+      "verse_count": 8,
+      "h273_divine_share": 0.04,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 18,
+      "delta_rank_mean_res_minus_lit": 4.5,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.029367260243310572,
+          "literal_rank_to_q108": 11,
+          "residualized_distance_to_q108": 0.023869640316141166,
+          "residualized_rank_to_q108": 16,
+          "delta_rank_res_minus_lit": 5,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.010377824134579083,
+          "literal_rank_to_q108": 11,
+          "residualized_distance_to_q108": 0.00843742151501672,
+          "residualized_rank_to_q108": 16,
+          "delta_rank_res_minus_lit": 5,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0013816674805613536,
+          "literal_rank_to_q108": 11,
+          "residualized_distance_to_q108": 0.0011033831697296326,
+          "residualized_rank_to_q108": 15,
+          "delta_rank_res_minus_lit": 4,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.030888500073390605,
+          "literal_rank_to_q108": 11,
+          "residualized_distance_to_q108": 0.02466751994388717,
+          "residualized_rank_to_q108": 15,
+          "delta_rank_res_minus_lit": 4,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 97,
+      "verse_count": 5,
+      "h273_divine_share": 0.047619047619047616,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 2,
+      "c_app": 2,
+      "delta_rank_sum_res_minus_lit": 0,
+      "delta_rank_mean_res_minus_lit": 0.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.03234550374353685,
+          "literal_rank_to_q108": 16,
+          "residualized_distance_to_q108": 0.023791370021045734,
+          "residualized_rank_to_q108": 15,
+          "delta_rank_res_minus_lit": -1,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.011429997593908479,
+          "literal_rank_to_q108": 16,
+          "residualized_distance_to_q108": 0.008408256889976241,
+          "residualized_rank_to_q108": 15,
+          "delta_rank_res_minus_lit": -1,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.001528981882304287,
+          "literal_rank_to_q108": 15,
+          "residualized_distance_to_q108": 0.0011130692770904467,
+          "residualized_rank_to_q108": 16,
+          "delta_rank_res_minus_lit": 1,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.03417997961270848,
+          "literal_rank_to_q108": 15,
+          "residualized_distance_to_q108": 0.024883822645143397,
+          "residualized_rank_to_q108": 16,
+          "delta_rank_res_minus_lit": 1,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 99,
+      "verse_count": 8,
+      "h273_divine_share": 0.037037037037037035,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 24,
+      "delta_rank_mean_res_minus_lit": 6.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.030935064400339683,
+          "literal_rank_to_q108": 13,
+          "residualized_distance_to_q108": 0.03442433738193675,
+          "residualized_rank_to_q108": 19,
+          "delta_rank_res_minus_lit": 6,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.010932025304427866,
+          "literal_rank_to_q108": 13,
+          "residualized_distance_to_q108": 0.012162536484620765,
+          "residualized_rank_to_q108": 19,
+          "delta_rank_res_minus_lit": 6,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.001459834845197577,
+          "literal_rank_to_q108": 13,
+          "residualized_distance_to_q108": 0.0016376167577432906,
+          "residualized_rank_to_q108": 19,
+          "delta_rank_res_minus_lit": 6,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.03263500764045884,
+          "literal_rank_to_q108": 13,
+          "residualized_distance_to_q108": 0.036601786814083555,
+          "residualized_rank_to_q108": 19,
+          "delta_rank_res_minus_lit": 6,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 100,
+      "verse_count": 11,
+      "h273_divine_share": 0.08333333333333333,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 40,
+      "delta_rank_mean_res_minus_lit": 10.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.02500514647385713,
+          "literal_rank_to_q108": 2,
+          "residualized_distance_to_q108": 0.018824340924951267,
+          "residualized_rank_to_q108": 12,
+          "delta_rank_res_minus_lit": 10,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.008836409162838508,
+          "literal_rank_to_q108": 2,
+          "residualized_distance_to_q108": 0.00665451577304243,
+          "residualized_rank_to_q108": 12,
+          "delta_rank_res_minus_lit": 10,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0011793282862304002,
+          "literal_rank_to_q108": 2,
+          "residualized_distance_to_q108": 0.0008674519725052388,
+          "residualized_rank_to_q108": 12,
+          "delta_rank_res_minus_lit": 10,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.026364768118367413,
+          "literal_rank_to_q108": 2,
+          "residualized_distance_to_q108": 0.019394207429477006,
+          "residualized_rank_to_q108": 12,
+          "delta_rank_res_minus_lit": 10,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 101,
+      "verse_count": 11,
+      "h273_divine_share": 0.0,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 16,
+      "delta_rank_mean_res_minus_lit": 4.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.02908171521560124,
+          "literal_rank_to_q108": 10,
+          "residualized_distance_to_q108": 0.021515062983358035,
+          "residualized_rank_to_q108": 14,
+          "delta_rank_res_minus_lit": 4,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.010276714192933925,
+          "literal_rank_to_q108": 10,
+          "residualized_distance_to_q108": 0.00760471354598876,
+          "residualized_rank_to_q108": 14,
+          "delta_rank_res_minus_lit": 4,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.001371316381298601,
+          "literal_rank_to_q108": 10,
+          "residualized_distance_to_q108": 0.0009994323345473553,
+          "residualized_rank_to_q108": 14,
+          "delta_rank_res_minus_lit": 4,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.030657118483129013,
+          "literal_rank_to_q108": 10,
+          "residualized_distance_to_q108": 0.022344374345150502,
+          "residualized_rank_to_q108": 14,
+          "delta_rank_res_minus_lit": 4,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 102,
+      "verse_count": 8,
+      "h273_divine_share": 0.0,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -28,
+      "delta_rank_mean_res_minus_lit": -7.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.03524645643572449,
+          "literal_rank_to_q108": 17,
+          "residualized_distance_to_q108": 0.0169160594407116,
+          "residualized_rank_to_q108": 10,
+          "delta_rank_res_minus_lit": -7,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.012450267589991548,
+          "literal_rank_to_q108": 17,
+          "residualized_distance_to_q108": 0.005978287564889982,
+          "residualized_rank_to_q108": 10,
+          "delta_rank_res_minus_lit": -7,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0016956214263561238,
+          "literal_rank_to_q108": 17,
+          "residualized_distance_to_q108": 0.0007926690316181511,
+          "residualized_rank_to_q108": 10,
+          "delta_rank_res_minus_lit": -7,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.037902456300388944,
+          "literal_rank_to_q108": 17,
+          "residualized_distance_to_q108": 0.01772276063494198,
+          "residualized_rank_to_q108": 10,
+          "delta_rank_res_minus_lit": -7,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 103,
+      "verse_count": 3,
+      "h273_divine_share": 0.0,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -70,
+      "delta_rank_mean_res_minus_lit": -17.5,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.03669772243196232,
+          "literal_rank_to_q108": 19,
+          "residualized_distance_to_q108": 0.007219724490451533,
+          "residualized_rank_to_q108": 1,
+          "delta_rank_res_minus_lit": -18,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.012966107823959846,
+          "literal_rank_to_q108": 19,
+          "residualized_distance_to_q108": 0.0025524644966689117,
+          "residualized_rank_to_q108": 1,
+          "delta_rank_res_minus_lit": -18,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0017447503509113167,
+          "literal_rank_to_q108": 18,
+          "residualized_distance_to_q108": 0.0003273142358947534,
+          "residualized_rank_to_q108": 1,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.039001448967199086,
+          "literal_rank_to_q108": 18,
+          "residualized_distance_to_q108": 0.007318864571771186,
+          "residualized_rank_to_q108": 1,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 104,
+      "verse_count": 9,
+      "h273_divine_share": 0.047619047619047616,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 0,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 0,
+      "delta_rank_mean_res_minus_lit": 0.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.028786047181192483,
+          "literal_rank_to_q108": 9,
+          "residualized_distance_to_q108": 0.016208187390780275,
+          "residualized_rank_to_q108": 9,
+          "delta_rank_res_minus_lit": 0,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.010172237128311439,
+          "literal_rank_to_q108": 9,
+          "residualized_distance_to_q108": 0.005729665356679058,
+          "residualized_rank_to_q108": 9,
+          "delta_rank_res_minus_lit": 0,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0013570676581644316,
+          "literal_rank_to_q108": 9,
+          "residualized_distance_to_q108": 0.0007446746823901269,
+          "residualized_rank_to_q108": 9,
+          "delta_rank_res_minus_lit": 0,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.030338626294582227,
+          "literal_rank_to_q108": 9,
+          "residualized_distance_to_q108": 0.0166499690192766,
+          "residualized_rank_to_q108": 9,
+          "delta_rank_res_minus_lit": 0,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 105,
+      "verse_count": 5,
+      "h273_divine_share": 0.05555555555555555,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 6,
+      "delta_rank_mean_res_minus_lit": 1.5,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.028319117038460274,
+          "literal_rank_to_q108": 7,
+          "residualized_distance_to_q108": 0.013661121745734193,
+          "residualized_rank_to_q108": 8,
+          "delta_rank_res_minus_lit": 1,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.010007757482054982,
+          "literal_rank_to_q108": 7,
+          "residualized_distance_to_q108": 0.004829428923453741,
+          "residualized_rank_to_q108": 8,
+          "delta_rank_res_minus_lit": 1,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0013353921000697814,
+          "literal_rank_to_q108": 6,
+          "residualized_distance_to_q108": 0.0006255924002846863,
+          "residualized_rank_to_q108": 8,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.02985354595538048,
+          "literal_rank_to_q108": 6,
+          "residualized_distance_to_q108": 0.01398774957415953,
+          "residualized_rank_to_q108": 8,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 106,
+      "verse_count": 4,
+      "h273_divine_share": 0.08333333333333333,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -40,
+      "delta_rank_mean_res_minus_lit": -10.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.02998803938181258,
+          "literal_rank_to_q108": 12,
+          "residualized_distance_to_q108": 0.007651647104957145,
+          "residualized_rank_to_q108": 2,
+          "delta_rank_res_minus_lit": -10,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.01059624535445408,
+          "literal_rank_to_q108": 12,
+          "residualized_distance_to_q108": 0.002705107403877759,
+          "residualized_rank_to_q108": 2,
+          "delta_rank_res_minus_lit": -10,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0014233835279453947,
+          "literal_rank_to_q108": 12,
+          "residualized_distance_to_q108": 0.0003482608837339581,
+          "residualized_rank_to_q108": 2,
+          "delta_rank_res_minus_lit": -10,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.03181965904996691,
+          "literal_rank_to_q108": 12,
+          "residualized_distance_to_q108": 0.007787197238264611,
+          "residualized_rank_to_q108": 2,
+          "delta_rank_res_minus_lit": -10,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 107,
+      "verse_count": 7,
+      "h273_divine_share": 0.0,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -10,
+      "delta_rank_mean_res_minus_lit": -2.5,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.02828664898156601,
+          "literal_rank_to_q108": 6,
+          "residualized_distance_to_q108": 0.010004865496289025,
+          "residualized_rank_to_q108": 4,
+          "delta_rank_res_minus_lit": -2,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.009995524836671906,
+          "literal_rank_to_q108": 6,
+          "residualized_distance_to_q108": 0.003536980499672846,
+          "residualized_rank_to_q108": 4,
+          "delta_rank_res_minus_lit": -2,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.001336474635514623,
+          "literal_rank_to_q108": 7,
+          "residualized_distance_to_q108": 0.0004577944671634229,
+          "residualized_rank_to_q108": 4,
+          "delta_rank_res_minus_lit": -3,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.029876564226019857,
+          "literal_rank_to_q108": 7,
+          "residualized_distance_to_q108": 0.010236199285092546,
+          "residualized_rank_to_q108": 4,
+          "delta_rank_res_minus_lit": -3,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 109,
+      "verse_count": 6,
+      "h273_divine_share": 0.0,
+      "h273_imperative_density": 0.1667,
+      "h273_surah_score": 0.0,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -32,
+      "delta_rank_mean_res_minus_lit": -8.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.055513064203976004,
+          "literal_rank_to_q108": 21,
+          "residualized_distance_to_q108": 0.01893296241379574,
+          "residualized_rank_to_q108": 13,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.019521351469962363,
+          "literal_rank_to_q108": 21,
+          "residualized_distance_to_q108": 0.006685739433115248,
+          "residualized_rank_to_q108": 13,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.003001715288502774,
+          "literal_rank_to_q108": 21,
+          "residualized_distance_to_q108": 0.0009226866381080461,
+          "residualized_rank_to_q108": 13,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.06703884869315155,
+          "literal_rank_to_q108": 21,
+          "residualized_distance_to_q108": 0.020629062333449116,
+          "residualized_rank_to_q108": 13,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 111,
+      "verse_count": 5,
+      "h273_divine_share": 0.0,
+      "h273_imperative_density": 0.0,
+      "h273_surah_score": 0.0,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -12,
+      "delta_rank_mean_res_minus_lit": -3.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.028414118882787498,
+          "literal_rank_to_q108": 8,
+          "residualized_distance_to_q108": 0.010532883216347079,
+          "residualized_rank_to_q108": 5,
+          "delta_rank_res_minus_lit": -3,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.01004078597155393,
+          "literal_rank_to_q108": 8,
+          "residualized_distance_to_q108": 0.003723737879462725,
+          "residualized_rank_to_q108": 5,
+          "delta_rank_res_minus_lit": -3,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0013402545562275188,
+          "literal_rank_to_q108": 8,
+          "residualized_distance_to_q108": 0.00047930255463953723,
+          "residualized_rank_to_q108": 5,
+          "delta_rank_res_minus_lit": -3,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.02996279823454027,
+          "literal_rank_to_q108": 8,
+          "residualized_distance_to_q108": 0.01071716445465191,
+          "residualized_rank_to_q108": 5,
+          "delta_rank_res_minus_lit": -3,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 112,
+      "verse_count": 4,
+      "h273_divine_share": 0.2,
+      "h273_imperative_density": 0.25,
+      "h273_surah_score": 0.22360679774997896,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -68,
+      "delta_rank_mean_res_minus_lit": -17.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.8944271909999159,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.03898864026445904,
+          "literal_rank_to_q108": 20,
+          "residualized_distance_to_q108": 0.007983201344546883,
+          "residualized_rank_to_q108": 3,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.013771996685715675,
+          "literal_rank_to_q108": 20,
+          "residualized_distance_to_q108": 0.0028223105290085884,
+          "residualized_rank_to_q108": 3,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0018772988342432686,
+          "literal_rank_to_q108": 20,
+          "residualized_distance_to_q108": 0.000363714901778429,
+          "residualized_rank_to_q108": 3,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.04196180605904916,
+          "literal_rank_to_q108": 20,
+          "residualized_distance_to_q108": 0.008132763347198299,
+          "residualized_rank_to_q108": 3,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 113,
+      "verse_count": 5,
+      "h273_divine_share": 0.06666666666666667,
+      "h273_imperative_density": 0.2,
+      "h273_surah_score": 0.11547005383792516,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -34,
+      "delta_rank_mean_res_minus_lit": -8.5,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.46188021535170065,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.031949113493339315,
+          "literal_rank_to_q108": 15,
+          "residualized_distance_to_q108": 0.012933240022918808,
+          "residualized_rank_to_q108": 7,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.011282766334751552,
+          "literal_rank_to_q108": 15,
+          "residualized_distance_to_q108": 0.004570379564986802,
+          "residualized_rank_to_q108": 7,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0015533447197969056,
+          "literal_rank_to_q108": 16,
+          "residualized_distance_to_q108": 0.0006094162983243359,
+          "residualized_rank_to_q108": 7,
+          "delta_rank_res_minus_lit": -9,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.03472387276387721,
+          "literal_rank_to_q108": 16,
+          "residualized_distance_to_q108": 0.013626118162075462,
+          "residualized_rank_to_q108": 7,
+          "delta_rank_res_minus_lit": -9,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 114,
+      "verse_count": 6,
+      "h273_divine_share": 0.125,
+      "h273_imperative_density": 0.1667,
+      "h273_surah_score": 0.1443520003325205,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -30,
+      "delta_rank_mean_res_minus_lit": -7.5,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.577408001330082,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.035759111382440145,
+          "literal_rank_to_q108": 18,
+          "residualized_distance_to_q108": 0.017462736453401857,
+          "residualized_rank_to_q108": 11,
+          "delta_rank_res_minus_lit": -7,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.012625062384480782,
+          "literal_rank_to_q108": 18,
+          "residualized_distance_to_q108": 0.006169412550453759,
+          "residualized_rank_to_q108": 11,
+          "delta_rank_res_minus_lit": -7,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0017502435053500475,
+          "literal_rank_to_q108": 19,
+          "residualized_distance_to_q108": 0.000832598759879816,
+          "residualized_rank_to_q108": 11,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.039122473457002475,
+          "literal_rank_to_q108": 19,
+          "residualized_distance_to_q108": 0.018615320979077206,
+          "residualized_rank_to_q108": 11,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    }
+  ],
+  "top_liturgical_separation_candidates": [
+    {
+      "surah": 1,
+      "verse_count": 7,
+      "h273_divine_share": 0.30434782608695654,
+      "h273_imperative_density": 0.1429,
+      "h273_surah_score": 0.20854568887374797,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 12,
+      "delta_rank_mean_res_minus_lit": 3.0,
+      "liturgical_separation_score": 0.8341827554949919,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.03160398978747417,
+          "literal_rank_to_q108": 14,
+          "residualized_distance_to_q108": 0.02684970878556298,
+          "residualized_rank_to_q108": 17,
+          "delta_rank_res_minus_lit": 3,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.011167576854662273,
+          "literal_rank_to_q108": 14,
+          "residualized_distance_to_q108": 0.009487030085151523,
+          "residualized_rank_to_q108": 17,
+          "delta_rank_res_minus_lit": 3,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0014961714727484078,
+          "literal_rank_to_q108": 14,
+          "residualized_distance_to_q108": 0.0012691332824900949,
+          "residualized_rank_to_q108": 17,
+          "delta_rank_res_minus_lit": 3,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.033446902997177404,
+          "literal_rank_to_q108": 14,
+          "residualized_distance_to_q108": 0.02837102707370754,
+          "residualized_rank_to_q108": 17,
+          "delta_rank_res_minus_lit": 3,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 94,
+      "verse_count": 8,
+      "h273_divine_share": 0.0625,
+      "h273_imperative_density": 0.25,
+      "h273_surah_score": 0.125,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 8,
+      "delta_rank_mean_res_minus_lit": 2.0,
+      "liturgical_separation_score": 0.5,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.028084877595891584,
+          "literal_rank_to_q108": 4,
+          "residualized_distance_to_q108": 0.010930563142781857,
+          "residualized_rank_to_q108": 6,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.009924673115266389,
+          "literal_rank_to_q108": 4,
+          "residualized_distance_to_q108": 0.0038641768591569786,
+          "residualized_rank_to_q108": 6,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0013274009309004965,
+          "literal_rank_to_q108": 4,
+          "residualized_distance_to_q108": 0.0004998931404651169,
+          "residualized_rank_to_q108": 6,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.029674845835965906,
+          "literal_rank_to_q108": 4,
+          "residualized_distance_to_q108": 0.011177481621622925,
+          "residualized_rank_to_q108": 6,
+          "delta_rank_res_minus_lit": 2,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    },
+    {
+      "surah": 93,
+      "verse_count": 11,
+      "h273_divine_share": 0.10714285714285714,
+      "h273_imperative_density": 0.0909,
+      "h273_surah_score": 0.09868781948288102,
+      "c_sep": 4,
+      "c_app": 0,
+      "delta_rank_sum_res_minus_lit": 68,
+      "delta_rank_mean_res_minus_lit": 17.0,
+      "liturgical_separation_score": 0.3947512779315241,
+      "liturgical_approach_score": 0.0,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.02490138865080086,
+          "literal_rank_to_q108": 1,
+          "residualized_distance_to_q108": 0.030962586378012375,
+          "residualized_rank_to_q108": 18,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.008800183273196042,
+          "literal_rank_to_q108": 1,
+          "residualized_distance_to_q108": 0.010940767433916233,
+          "residualized_rank_to_q108": 18,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0011744298260821199,
+          "literal_rank_to_q108": 1,
+          "residualized_distance_to_q108": 0.0014676146715204405,
+          "residualized_rank_to_q108": 18,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.026254840840018827,
+          "literal_rank_to_q108": 1,
+          "residualized_distance_to_q108": 0.032804196176398376,
+          "residualized_rank_to_q108": 18,
+          "delta_rank_res_minus_lit": 17,
+          "separates_under_residualized": true,
+          "approaches_under_residualized": false
+        }
+      }
+    }
+  ],
+  "top_liturgical_approach_candidates": [
+    {
+      "surah": 112,
+      "verse_count": 4,
+      "h273_divine_share": 0.2,
+      "h273_imperative_density": 0.25,
+      "h273_surah_score": 0.22360679774997896,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -68,
+      "delta_rank_mean_res_minus_lit": -17.0,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.8944271909999159,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.03898864026445904,
+          "literal_rank_to_q108": 20,
+          "residualized_distance_to_q108": 0.007983201344546883,
+          "residualized_rank_to_q108": 3,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.013771996685715675,
+          "literal_rank_to_q108": 20,
+          "residualized_distance_to_q108": 0.0028223105290085884,
+          "residualized_rank_to_q108": 3,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0018772988342432686,
+          "literal_rank_to_q108": 20,
+          "residualized_distance_to_q108": 0.000363714901778429,
+          "residualized_rank_to_q108": 3,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.04196180605904916,
+          "literal_rank_to_q108": 20,
+          "residualized_distance_to_q108": 0.008132763347198299,
+          "residualized_rank_to_q108": 3,
+          "delta_rank_res_minus_lit": -17,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 114,
+      "verse_count": 6,
+      "h273_divine_share": 0.125,
+      "h273_imperative_density": 0.1667,
+      "h273_surah_score": 0.1443520003325205,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -30,
+      "delta_rank_mean_res_minus_lit": -7.5,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.577408001330082,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.035759111382440145,
+          "literal_rank_to_q108": 18,
+          "residualized_distance_to_q108": 0.017462736453401857,
+          "residualized_rank_to_q108": 11,
+          "delta_rank_res_minus_lit": -7,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.012625062384480782,
+          "literal_rank_to_q108": 18,
+          "residualized_distance_to_q108": 0.006169412550453759,
+          "residualized_rank_to_q108": 11,
+          "delta_rank_res_minus_lit": -7,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0017502435053500475,
+          "literal_rank_to_q108": 19,
+          "residualized_distance_to_q108": 0.000832598759879816,
+          "residualized_rank_to_q108": 11,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.039122473457002475,
+          "literal_rank_to_q108": 19,
+          "residualized_distance_to_q108": 0.018615320979077206,
+          "residualized_rank_to_q108": 11,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    },
+    {
+      "surah": 113,
+      "verse_count": 5,
+      "h273_divine_share": 0.06666666666666667,
+      "h273_imperative_density": 0.2,
+      "h273_surah_score": 0.11547005383792516,
+      "c_sep": 0,
+      "c_app": 4,
+      "delta_rank_sum_res_minus_lit": -34,
+      "delta_rank_mean_res_minus_lit": -8.5,
+      "liturgical_separation_score": 0.0,
+      "liturgical_approach_score": 0.46188021535170065,
+      "per_metric": {
+        "fisher_rao": {
+          "literal_distance_to_q108": 0.031949113493339315,
+          "literal_rank_to_q108": 15,
+          "residualized_distance_to_q108": 0.012933240022918808,
+          "residualized_rank_to_q108": 7,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "jensen_shannon": {
+          "literal_distance_to_q108": 0.011282766334751552,
+          "literal_rank_to_q108": 15,
+          "residualized_distance_to_q108": 0.004570379564986802,
+          "residualized_rank_to_q108": 7,
+          "delta_rank_res_minus_lit": -8,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "euclidean_l2": {
+          "literal_distance_to_q108": 0.0015533447197969056,
+          "literal_rank_to_q108": 16,
+          "residualized_distance_to_q108": 0.0006094162983243359,
+          "residualized_rank_to_q108": 7,
+          "delta_rank_res_minus_lit": -9,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        },
+        "cosine_angle": {
+          "literal_distance_to_q108": 0.03472387276387721,
+          "literal_rank_to_q108": 16,
+          "residualized_distance_to_q108": 0.013626118162075462,
+          "residualized_rank_to_q108": 7,
+          "delta_rank_res_minus_lit": -9,
+          "separates_under_residualized": false,
+          "approaches_under_residualized": true
+        }
+      }
+    }
+  ],
+  "verdict": "PASS-DIRECTED",
+  "verdict_note": "Q1 is tested as a directed inherited target, not as a discovery-clean new candidate. The candidate family is exact and small, so the minimum attainable upper-tail is 1/21."
+}

@@ -1,0 +1,31 @@
+{
+  "finding_id": "h-new-151",
+  "title": "Single-letter muq sub-cluster under char-4-gram",
+  "pre_reg_sha256": "b734a039704aa63843c05dd68f4944fc2d9b3c1b6e98e8907c79c51c1a95ef38",
+  "seed": 20260417,
+  "date": "2026-04-17",
+  "feature_space": "char-4-gram (H-NEW-111b)",
+  "bonferroni": {
+    "k": 1,
+    "alpha_bon": 0.05,
+    "family": "h-new-151-single-letter-muq-char4gram"
+  },
+  "d_within_pairs": {
+    "(38,50)": 0.889329,
+    "(38,68)": 0.968158,
+    "(50,68)": 0.94511,
+    "mean": 0.934199
+  },
+  "d_between_mean": 0.9804701794871795,
+  "delta_observed": -0.046271179487179515,
+  "permutation_null": {
+    "n_perms": 10000,
+    "null_mean_delta": 1.4595833333355125e-06,
+    "null_sd": 0.04366749022245803,
+    "z_score": -1.0596587721158979,
+    "p_one_sided_lower_tail": 0.1495
+  },
+  "parent_h_new_146_Cell_C_p": 0.031,
+  "parent_feature_space": "QAC-STEM root top-500",
+  "verdict": "NULL"
+}

@@ -1,0 +1,3081 @@
+{
+  "seed": 20260416,
+  "hypothesis_id": "H-NEW-61",
+  "title": "Surah opening-word distribution — comprehensive",
+  "rules_tuple": "(no-tashkeel, hafs-kufan, canonical-114, 29-muqaṭṭaʿāt-set)",
+  "n_surahs": 114,
+  "bonferroni_k": 6,
+  "alpha_bon": 0.008333333333333333,
+  "extractor": {
+    "description": "first word after muqaṭṭaʿāt-token-run + after basmala",
+    "muqattaat_surahs": [
+      2,
+      3,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      20,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      36,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      50,
+      68
+    ],
+    "muqattaat_normalized_tokens": [
+      "الر",
+      "الم",
+      "المر",
+      "المص",
+      "حم",
+      "ص",
+      "طس",
+      "طسم",
+      "طه",
+      "عسق",
+      "ق",
+      "كهيعص",
+      "ن",
+      "يس"
+    ]
+  },
+  "cell_2_mw5": {
+    "hamd_surahs": [
+      1,
+      6,
+      18,
+      34,
+      35
+    ],
+    "correct": 5,
+    "pass": true,
+    "details": {
+      "1": {
+        "w1": "الحمد",
+        "is_hamd": true
+      },
+      "6": {
+        "w1": "الحمد",
+        "is_hamd": true
+      },
+      "18": {
+        "w1": "الحمد",
+        "is_hamd": true
+      },
+      "34": {
+        "w1": "الحمد",
+        "is_hamd": true
+      },
+      "35": {
+        "w1": "الحمد",
+        "is_hamd": true
+      }
+    }
+  },
+  "cell_1_descriptive": {
+    "top_15_openers": [
+      [
+        "يا",
+        10,
+        [
+          4,
+          5,
+          22,
+          33,
+          49,
+          60,
+          65,
+          66,
+          73,
+          74
+        ]
+      ],
+      [
+        "تلك",
+        8,
+        [
+          10,
+          12,
+          13,
+          15,
+          26,
+          27,
+          28,
+          31
+        ]
+      ],
+      [
+        "اذا",
+        7,
+        [
+          56,
+          63,
+          81,
+          82,
+          84,
+          99,
+          110
+        ]
+      ],
+      [
+        "تنزيل",
+        6,
+        [
+          32,
+          39,
+          40,
+          41,
+          45,
+          46
+        ]
+      ],
+      [
+        "الحمد",
+        5,
+        [
+          1,
+          6,
+          18,
+          34,
+          35
+        ]
+      ],
+      [
+        "قل",
+        5,
+        [
+          72,
+          109,
+          112,
+          113,
+          114
+        ]
+      ],
+      [
+        "انا",
+        4,
+        [
+          48,
+          71,
+          97,
+          108
+        ]
+      ],
+      [
+        "سبح",
+        4,
+        [
+          57,
+          59,
+          61,
+          87
+        ]
+      ],
+      [
+        "كتاب",
+        3,
+        [
+          7,
+          11,
+          14
+        ]
+      ],
+      [
+        "والقران",
+        3,
+        [
+          36,
+          38,
+          50
+        ]
+      ],
+      [
+        "قد",
+        2,
+        [
+          23,
+          58
+        ]
+      ],
+      [
+        "تبارك",
+        2,
+        [
+          25,
+          67
+        ]
+      ],
+      [
+        "والكتاب",
+        2,
+        [
+          43,
+          44
+        ]
+      ],
+      [
+        "يسبح",
+        2,
+        [
+          62,
+          64
+        ]
+      ],
+      [
+        "لا",
+        2,
+        [
+          75,
+          90
+        ]
+      ]
+    ],
+    "class_distribution": {
+      "PRAISE": 14,
+      "VOCATIVE": 10,
+      "CONDITIONAL_TEMPORAL": 7,
+      "OATH_PARTICLE": 21,
+      "IMPERATIVE": 6,
+      "REPORT_ASSERTIVE": 16,
+      "DEMONSTRATIVE_PRONOMINAL": 10,
+      "INTERROGATIVE_NEGATIVE": 5,
+      "OTHER_CONTENT": 25
+    }
+  },
+  "cell_3_chi2": {
+    "observed": {
+      "PRAISE": 14,
+      "VOCATIVE": 10,
+      "CONDITIONAL_TEMPORAL": 7,
+      "OATH_PARTICLE": 21,
+      "IMPERATIVE": 6,
+      "REPORT_ASSERTIVE": 16,
+      "DEMONSTRATIVE_PRONOMINAL": 10,
+      "INTERROGATIVE_NEGATIVE": 5,
+      "OTHER_CONTENT": 25
+    },
+    "expected": 12.666666666666666,
+    "chi2": 30.31578947368421,
+    "df": 8,
+    "p": 0.00018585681909133027,
+    "pass": true
+  },
+  "cell_4_period_class": {
+    "period_class_table": {
+      "Meccan": {
+        "PRAISE": 9,
+        "REPORT_ASSERTIVE": 13,
+        "DEMONSTRATIVE_PRONOMINAL": 7,
+        "OTHER_CONTENT": 20,
+        "INTERROGATIVE_NEGATIVE": 4,
+        "OATH_PARTICLE": 21,
+        "CONDITIONAL_TEMPORAL": 4,
+        "IMPERATIVE": 6,
+        "VOCATIVE": 2
+      },
+      "Medinan": {
+        "DEMONSTRATIVE_PRONOMINAL": 3,
+        "VOCATIVE": 8,
+        "OTHER_CONTENT": 5,
+        "REPORT_ASSERTIVE": 3,
+        "PRAISE": 5,
+        "CONDITIONAL_TEMPORAL": 3,
+        "INTERROGATIVE_NEGATIVE": 1
+      }
+    },
+    "inner_bonferroni_k": 9,
+    "alpha_inner": 0.000925925925925926,
+    "per_class": {
+      "PRAISE": {
+        "meccan_in_class": 9,
+        "meccan_other": 77,
+        "medinan_in_class": 5,
+        "medinan_other": 23,
+        "p": 0.32686411019685796,
+        "pass": false
+      },
+      "VOCATIVE": {
+        "meccan_in_class": 2,
+        "meccan_other": 84,
+        "medinan_in_class": 8,
+        "medinan_other": 20,
+        "p": 0.0001758372435707096,
+        "pass": true
+      },
+      "CONDITIONAL_TEMPORAL": {
+        "meccan_in_class": 4,
+        "meccan_other": 82,
+        "medinan_in_class": 3,
+        "medinan_other": 25,
+        "p": 0.36012895412396345,
+        "pass": false
+      },
+      "OATH_PARTICLE": {
+        "meccan_in_class": 21,
+        "meccan_other": 65,
+        "medinan_in_class": 0,
+        "medinan_other": 28,
+        "p": 0.0017125692865682335,
+        "pass": false
+      },
+      "IMPERATIVE": {
+        "meccan_in_class": 6,
+        "meccan_other": 80,
+        "medinan_in_class": 0,
+        "medinan_other": 28,
+        "p": 0.33337476405250654,
+        "pass": false
+      },
+      "REPORT_ASSERTIVE": {
+        "meccan_in_class": 13,
+        "meccan_other": 73,
+        "medinan_in_class": 3,
+        "medinan_other": 25,
+        "p": 0.7572361884508829,
+        "pass": false
+      },
+      "DEMONSTRATIVE_PRONOMINAL": {
+        "meccan_in_class": 7,
+        "meccan_other": 79,
+        "medinan_in_class": 3,
+        "medinan_other": 25,
+        "p": 0.7053008811345232,
+        "pass": false
+      },
+      "INTERROGATIVE_NEGATIVE": {
+        "meccan_in_class": 4,
+        "meccan_other": 82,
+        "medinan_in_class": 1,
+        "medinan_other": 27,
+        "p": 0.9999999999999984,
+        "pass": false
+      },
+      "OTHER_CONTENT": {
+        "meccan_in_class": 20,
+        "meccan_other": 66,
+        "medinan_in_class": 5,
+        "medinan_other": 23,
+        "p": 0.6110201956903405,
+        "pass": false
+      }
+    },
+    "any_pass": true
+  },
+  "cell_5_muqattaat_class": {
+    "muq_class_table": {
+      "NON_MUQ": {
+        "PRAISE": 14,
+        "VOCATIVE": 10,
+        "OTHER_CONTENT": 21,
+        "REPORT_ASSERTIVE": 8,
+        "OATH_PARTICLE": 15,
+        "CONDITIONAL_TEMPORAL": 7,
+        "IMPERATIVE": 6,
+        "INTERROGATIVE_NEGATIVE": 4
+      },
+      "MUQ": {
+        "DEMONSTRATIVE_PRONOMINAL": 10,
+        "REPORT_ASSERTIVE": 8,
+        "OTHER_CONTENT": 4,
+        "INTERROGATIVE_NEGATIVE": 1,
+        "OATH_PARTICLE": 6
+      }
+    },
+    "inner_bonferroni_k": 9,
+    "alpha_inner": 0.000925925925925926,
+    "per_class": {
+      "PRAISE": {
+        "muq_in_class": 0,
+        "muq_other": 29,
+        "nonmuq_in_class": 14,
+        "nonmuq_other": 71,
+        "p": 0.019350056652482527,
+        "pass": false
+      },
+      "VOCATIVE": {
+        "muq_in_class": 0,
+        "muq_other": 29,
+        "nonmuq_in_class": 10,
+        "nonmuq_other": 75,
+        "p": 0.06261261976969984,
+        "pass": false
+      },
+      "CONDITIONAL_TEMPORAL": {
+        "muq_in_class": 0,
+        "muq_other": 29,
+        "nonmuq_in_class": 7,
+        "nonmuq_other": 78,
+        "p": 0.18829204534773303,
+        "pass": false
+      },
+      "OATH_PARTICLE": {
+        "muq_in_class": 6,
+        "muq_other": 23,
+        "nonmuq_in_class": 15,
+        "nonmuq_other": 70,
+        "p": 0.7828908429462157,
+        "pass": false
+      },
+      "IMPERATIVE": {
+        "muq_in_class": 0,
+        "muq_other": 29,
+        "nonmuq_in_class": 6,
+        "nonmuq_other": 79,
+        "p": 0.33507467729213025,
+        "pass": false
+      },
+      "REPORT_ASSERTIVE": {
+        "muq_in_class": 8,
+        "muq_other": 21,
+        "nonmuq_in_class": 8,
+        "nonmuq_other": 77,
+        "p": 0.02672767444447306,
+        "pass": false
+      },
+      "DEMONSTRATIVE_PRONOMINAL": {
+        "muq_in_class": 10,
+        "muq_other": 19,
+        "nonmuq_in_class": 0,
+        "nonmuq_other": 85,
+        "p": 2.943052586241265e-07,
+        "pass": true
+      },
+      "INTERROGATIVE_NEGATIVE": {
+        "muq_in_class": 1,
+        "muq_other": 28,
+        "nonmuq_in_class": 4,
+        "nonmuq_other": 81,
+        "p": 0.9999999999999484,
+        "pass": false
+      },
+      "OTHER_CONTENT": {
+        "muq_in_class": 4,
+        "muq_other": 25,
+        "nonmuq_in_class": 21,
+        "nonmuq_other": 64,
+        "p": 0.3011640905286921,
+        "pass": false
+      }
+    },
+    "any_pass": true
+  },
+  "cell_6_twin_incipit": {
+    "observed_twin_groups_w1w2w3": 10,
+    "observed_twin_members_w1w2w3": 31,
+    "observed_twin_groups_w1": 19,
+    "observed_twin_members_w1": 73,
+    "null_n_perm": 10000,
+    "null_median_groups_w1w2w3": 0,
+    "null_median_members_w1w2w3": 0,
+    "null_median_groups_w1": 26,
+    "emp_p_twin_groups_w1w2w3": 0.0,
+    "emp_p_twin_members_w1w2w3": 0.0,
+    "emp_p_twin_groups_w1": 0.9965,
+    "pass": true,
+    "twin_groups_w1_detail": {
+      "الحمد": [
+        1,
+        6,
+        18,
+        34,
+        35
+      ],
+      "يا": [
+        4,
+        5,
+        22,
+        33,
+        49,
+        60,
+        65,
+        66,
+        73,
+        74
+      ],
+      "كتاب": [
+        7,
+        11,
+        14
+      ],
+      "تلك": [
+        10,
+        12,
+        13,
+        15,
+        26,
+        27,
+        28,
+        31
+      ],
+      "قد": [
+        23,
+        58
+      ],
+      "تبارك": [
+        25,
+        67
+      ],
+      "تنزيل": [
+        32,
+        39,
+        40,
+        41,
+        45,
+        46
+      ],
+      "والقران": [
+        36,
+        38,
+        50
+      ],
+      "والكتاب": [
+        43,
+        44
+      ],
+      "انا": [
+        48,
+        71,
+        97,
+        108
+      ],
+      "اذا": [
+        56,
+        63,
+        81,
+        82,
+        84,
+        99,
+        110
+      ],
+      "سبح": [
+        57,
+        59,
+        61,
+        87
+      ],
+      "يسبح": [
+        62,
+        64
+      ],
+      "قل": [
+        72,
+        109,
+        112,
+        113,
+        114
+      ],
+      "لا": [
+        75,
+        90
+      ],
+      "هل": [
+        76,
+        88
+      ],
+      "ويل": [
+        83,
+        104
+      ],
+      "والسماا": [
+        85,
+        86
+      ],
+      "الم": [
+        94,
+        105
+      ]
+    },
+    "twin_groups_w1w2w3_detail": {
+      "يا ايها الناس": [
+        4,
+        22
+      ],
+      "يا ايها الذين": [
+        5,
+        49,
+        60
+      ],
+      "الحمد لله الذي": [
+        6,
+        18,
+        34
+      ],
+      "تلك ايات الكتاب": [
+        10,
+        12,
+        13,
+        15,
+        26,
+        28,
+        31
+      ],
+      "يا ايها النبي": [
+        33,
+        65,
+        66
+      ],
+      "تنزيل الكتاب من": [
+        39,
+        40,
+        45,
+        46
+      ],
+      "والكتاب المبين انا": [
+        43,
+        44
+      ],
+      "سبح لله ما": [
+        57,
+        59,
+        61
+      ],
+      "يسبح لله ما": [
+        62,
+        64
+      ],
+      "قل اعوذ برب": [
+        113,
+        114
+      ]
+    }
+  },
+  "qac_pos": {
+    "1": "N",
+    "2": "DEM",
+    "3": "PN",
+    "4": "VOC",
+    "5": "VOC",
+    "6": "N",
+    "7": "N",
+    "8": "V",
+    "9": "N",
+    "10": "N",
+    "11": "V",
+    "12": "N",
+    "13": "N",
+    "14": "V",
+    "15": "N",
+    "16": "V",
+    "17": "N",
+    "18": "N",
+    "19": "N",
+    "20": "NEG",
+    "21": "V",
+    "22": "VOC",
+    "23": "CERT",
+    "24": "N",
+    "25": "V",
+    "26": "DEM",
+    "27": "N",
+    "28": "DEM",
+    "29": "INTG",
+    "30": "V",
+    "31": "DEM",
+    "32": "N",
+    "33": "VOC",
+    "34": "N",
+    "35": "N",
+    "36": "P",
+    "37": "P",
+    "38": "ADJ",
+    "39": "N",
+    "40": "N",
+    "41": "N",
+    "42": "DEM",
+    "43": "P",
+    "44": "P",
+    "45": "N",
+    "46": "N",
+    "47": "REL",
+    "48": "ACC",
+    "49": "VOC",
+    "50": "ADJ",
+    "51": "CONJ",
+    "52": "CONJ",
+    "53": "P",
+    "54": "V",
+    "55": "ADJ",
+    "56": "T",
+    "57": "V",
+    "58": "CERT",
+    "59": "V",
+    "60": "VOC",
+    "61": "V",
+    "62": "V",
+    "63": "T",
+    "64": "V",
+    "65": "VOC",
+    "66": "VOC",
+    "67": "V",
+    "68": "REL",
+    "69": "N",
+    "70": "V",
+    "71": "ACC",
+    "72": "V",
+    "73": "VOC",
+    "74": "VOC",
+    "75": "NEG",
+    "76": "INTG",
+    "77": "P",
+    "78": "INTG",
+    "79": "P",
+    "80": "V",
+    "81": "T",
+    "82": "T",
+    "83": "N",
+    "84": "T",
+    "85": "P",
+    "86": "P",
+    "87": "V",
+    "88": "INTG",
+    "89": "P",
+    "90": "NEG",
+    "91": "P",
+    "92": "P",
+    "93": "P",
+    "94": "INTG",
+    "95": "P",
+    "96": "V",
+    "97": "ACC",
+    "98": "NEG",
+    "99": "T",
+    "100": "P",
+    "101": "N",
+    "102": "V",
+    "103": "P",
+    "104": "N",
+    "105": "INTG",
+    "106": "N",
+    "107": "INTG",
+    "108": "ACC",
+    "109": "V",
+    "110": "T",
+    "111": "V",
+    "112": "V",
+    "113": "V",
+    "114": "V"
+  },
+  "qac_pos_distribution": {
+    "N": 26,
+    "DEM": 5,
+    "PN": 1,
+    "VOC": 10,
+    "V": 25,
+    "NEG": 4,
+    "CERT": 2,
+    "INTG": 7,
+    "P": 16,
+    "ADJ": 3,
+    "REL": 2,
+    "ACC": 4,
+    "CONJ": 2,
+    "T": 7
+  },
+  "opening_data": {
+    "1": {
+      "w1_raw": "الحمد",
+      "w1_norm": "الحمد",
+      "w2_norm": "لله",
+      "w3_norm": "رب",
+      "incipit_triple": [
+        "الحمد",
+        "لله",
+        "رب"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 7,
+      "name_ar": "الفاتحة",
+      "name_tl": "Al-Fatiha",
+      "qac_pos": "N"
+    },
+    "2": {
+      "w1_raw": "ذلك",
+      "w1_norm": "ذلك",
+      "w2_norm": "الكتاب",
+      "w3_norm": "لا",
+      "incipit_triple": [
+        "ذلك",
+        "الكتاب",
+        "لا"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": true,
+      "n_verses": 286,
+      "name_ar": "البقرة",
+      "name_tl": "Al-Baqarah",
+      "qac_pos": "DEM"
+    },
+    "3": {
+      "w1_raw": "الله",
+      "w1_norm": "الله",
+      "w2_norm": "لا",
+      "w3_norm": "اله",
+      "incipit_triple": [
+        "الله",
+        "لا",
+        "اله"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": true,
+      "n_verses": 200,
+      "name_ar": "آل عمران",
+      "name_tl": "Al-Imran",
+      "qac_pos": "PN"
+    },
+    "4": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "الناس",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "الناس"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 176,
+      "name_ar": "النساء",
+      "name_tl": "An-Nisa",
+      "qac_pos": "VOC"
+    },
+    "5": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "الذين",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "الذين"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 120,
+      "name_ar": "المائدة",
+      "name_tl": "Al-Maidah",
+      "qac_pos": "VOC"
+    },
+    "6": {
+      "w1_raw": "الحمد",
+      "w1_norm": "الحمد",
+      "w2_norm": "لله",
+      "w3_norm": "الذي",
+      "incipit_triple": [
+        "الحمد",
+        "لله",
+        "الذي"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": false,
+      "n_verses": 165,
+      "name_ar": "الأنعام",
+      "name_tl": "Al-Anam",
+      "qac_pos": "N"
+    },
+    "7": {
+      "w1_raw": "كتاب",
+      "w1_norm": "كتاب",
+      "w2_norm": "انزل",
+      "w3_norm": "اليك",
+      "incipit_triple": [
+        "كتاب",
+        "انزل",
+        "اليك"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 206,
+      "name_ar": "الأعراف",
+      "name_tl": "Al-Araf",
+      "qac_pos": "N"
+    },
+    "8": {
+      "w1_raw": "يسألونك",
+      "w1_norm": "يسالونك",
+      "w2_norm": "عن",
+      "w3_norm": "الانفال",
+      "incipit_triple": [
+        "يسالونك",
+        "عن",
+        "الانفال"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 75,
+      "name_ar": "الأنفال",
+      "name_tl": "Al-Anfal",
+      "qac_pos": "V"
+    },
+    "9": {
+      "w1_raw": "براءة",
+      "w1_norm": "برااه",
+      "w2_norm": "من",
+      "w3_norm": "الله",
+      "incipit_triple": [
+        "برااه",
+        "من",
+        "الله"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 129,
+      "name_ar": "التوبة",
+      "name_tl": "At-Tawbah",
+      "qac_pos": "N"
+    },
+    "10": {
+      "w1_raw": "تلك",
+      "w1_norm": "تلك",
+      "w2_norm": "ايات",
+      "w3_norm": "الكتاب",
+      "incipit_triple": [
+        "تلك",
+        "ايات",
+        "الكتاب"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 109,
+      "name_ar": "يونس",
+      "name_tl": "Yunus",
+      "qac_pos": "N"
+    },
+    "11": {
+      "w1_raw": "كتاب",
+      "w1_norm": "كتاب",
+      "w2_norm": "احكمت",
+      "w3_norm": "اياته",
+      "incipit_triple": [
+        "كتاب",
+        "احكمت",
+        "اياته"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 123,
+      "name_ar": "هود",
+      "name_tl": "Hud",
+      "qac_pos": "V"
+    },
+    "12": {
+      "w1_raw": "تلك",
+      "w1_norm": "تلك",
+      "w2_norm": "ايات",
+      "w3_norm": "الكتاب",
+      "incipit_triple": [
+        "تلك",
+        "ايات",
+        "الكتاب"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 111,
+      "name_ar": "يوسف",
+      "name_tl": "Yusuf",
+      "qac_pos": "N"
+    },
+    "13": {
+      "w1_raw": "تلك",
+      "w1_norm": "تلك",
+      "w2_norm": "ايات",
+      "w3_norm": "الكتاب",
+      "incipit_triple": [
+        "تلك",
+        "ايات",
+        "الكتاب"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 43,
+      "name_ar": "الرعد",
+      "name_tl": "Ar-Rad",
+      "qac_pos": "N"
+    },
+    "14": {
+      "w1_raw": "كتاب",
+      "w1_norm": "كتاب",
+      "w2_norm": "انزلناه",
+      "w3_norm": "اليك",
+      "incipit_triple": [
+        "كتاب",
+        "انزلناه",
+        "اليك"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 52,
+      "name_ar": "إبراهيم",
+      "name_tl": "Ibrahim",
+      "qac_pos": "V"
+    },
+    "15": {
+      "w1_raw": "تلك",
+      "w1_norm": "تلك",
+      "w2_norm": "ايات",
+      "w3_norm": "الكتاب",
+      "incipit_triple": [
+        "تلك",
+        "ايات",
+        "الكتاب"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 99,
+      "name_ar": "الحجر",
+      "name_tl": "Al-Hijr",
+      "qac_pos": "N"
+    },
+    "16": {
+      "w1_raw": "أتى",
+      "w1_norm": "اتي",
+      "w2_norm": "امر",
+      "w3_norm": "الله",
+      "incipit_triple": [
+        "اتي",
+        "امر",
+        "الله"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": false,
+      "n_verses": 128,
+      "name_ar": "النحل",
+      "name_tl": "An-Nahl",
+      "qac_pos": "V"
+    },
+    "17": {
+      "w1_raw": "سبحان",
+      "w1_norm": "سبحان",
+      "w2_norm": "الذي",
+      "w3_norm": "اسري",
+      "incipit_triple": [
+        "سبحان",
+        "الذي",
+        "اسري"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 111,
+      "name_ar": "الإسراء",
+      "name_tl": "Al-Isra",
+      "qac_pos": "N"
+    },
+    "18": {
+      "w1_raw": "الحمد",
+      "w1_norm": "الحمد",
+      "w2_norm": "لله",
+      "w3_norm": "الذي",
+      "incipit_triple": [
+        "الحمد",
+        "لله",
+        "الذي"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 110,
+      "name_ar": "الكهف",
+      "name_tl": "Al-Kahf",
+      "qac_pos": "N"
+    },
+    "19": {
+      "w1_raw": "ذكر",
+      "w1_norm": "ذكر",
+      "w2_norm": "رحمت",
+      "w3_norm": "ربك",
+      "incipit_triple": [
+        "ذكر",
+        "رحمت",
+        "ربك"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 98,
+      "name_ar": "مريم",
+      "name_tl": "Maryam",
+      "qac_pos": "N"
+    },
+    "20": {
+      "w1_raw": "ما",
+      "w1_norm": "ما",
+      "w2_norm": "انزلنا",
+      "w3_norm": "عليك",
+      "incipit_triple": [
+        "ما",
+        "انزلنا",
+        "عليك"
+      ],
+      "class": "INTERROGATIVE_NEGATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 135,
+      "name_ar": "طه",
+      "name_tl": "Ta-Ha",
+      "qac_pos": "NEG"
+    },
+    "21": {
+      "w1_raw": "اقترب",
+      "w1_norm": "اقترب",
+      "w2_norm": "للناس",
+      "w3_norm": "حسابهم",
+      "incipit_triple": [
+        "اقترب",
+        "للناس",
+        "حسابهم"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 112,
+      "name_ar": "الأنبياء",
+      "name_tl": "Al-Anbiya",
+      "qac_pos": "V"
+    },
+    "22": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "الناس",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "الناس"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 78,
+      "name_ar": "الحج",
+      "name_tl": "Al-Hajj",
+      "qac_pos": "VOC"
+    },
+    "23": {
+      "w1_raw": "قد",
+      "w1_norm": "قد",
+      "w2_norm": "افلح",
+      "w3_norm": "المومنون",
+      "incipit_triple": [
+        "قد",
+        "افلح",
+        "المومنون"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 118,
+      "name_ar": "المؤمنون",
+      "name_tl": "Al-Muminun",
+      "qac_pos": "CERT"
+    },
+    "24": {
+      "w1_raw": "سورة",
+      "w1_norm": "سوره",
+      "w2_norm": "انزلناها",
+      "w3_norm": "وفرضناها",
+      "incipit_triple": [
+        "سوره",
+        "انزلناها",
+        "وفرضناها"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 64,
+      "name_ar": "النور",
+      "name_tl": "An-Nur",
+      "qac_pos": "N"
+    },
+    "25": {
+      "w1_raw": "تبارك",
+      "w1_norm": "تبارك",
+      "w2_norm": "الذي",
+      "w3_norm": "نزل",
+      "incipit_triple": [
+        "تبارك",
+        "الذي",
+        "نزل"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 77,
+      "name_ar": "الفرقان",
+      "name_tl": "Al-Furqan",
+      "qac_pos": "V"
+    },
+    "26": {
+      "w1_raw": "تلك",
+      "w1_norm": "تلك",
+      "w2_norm": "ايات",
+      "w3_norm": "الكتاب",
+      "incipit_triple": [
+        "تلك",
+        "ايات",
+        "الكتاب"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 227,
+      "name_ar": "الشعراء",
+      "name_tl": "Ash-Shuara",
+      "qac_pos": "DEM"
+    },
+    "27": {
+      "w1_raw": "تلك",
+      "w1_norm": "تلك",
+      "w2_norm": "ايات",
+      "w3_norm": "القران",
+      "incipit_triple": [
+        "تلك",
+        "ايات",
+        "القران"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 93,
+      "name_ar": "النمل",
+      "name_tl": "An-Naml",
+      "qac_pos": "N"
+    },
+    "28": {
+      "w1_raw": "تلك",
+      "w1_norm": "تلك",
+      "w2_norm": "ايات",
+      "w3_norm": "الكتاب",
+      "incipit_triple": [
+        "تلك",
+        "ايات",
+        "الكتاب"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 88,
+      "name_ar": "القصص",
+      "name_tl": "Al-Qasas",
+      "qac_pos": "DEM"
+    },
+    "29": {
+      "w1_raw": "أحسب",
+      "w1_norm": "احسب",
+      "w2_norm": "الناس",
+      "w3_norm": "ان",
+      "incipit_triple": [
+        "احسب",
+        "الناس",
+        "ان"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 69,
+      "name_ar": "العنكبوت",
+      "name_tl": "Al-Ankabut",
+      "qac_pos": "INTG"
+    },
+    "30": {
+      "w1_raw": "غلبت",
+      "w1_norm": "غلبت",
+      "w2_norm": "الروم",
+      "w3_norm": "في",
+      "incipit_triple": [
+        "غلبت",
+        "الروم",
+        "في"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 60,
+      "name_ar": "الروم",
+      "name_tl": "Ar-Rum",
+      "qac_pos": "V"
+    },
+    "31": {
+      "w1_raw": "تلك",
+      "w1_norm": "تلك",
+      "w2_norm": "ايات",
+      "w3_norm": "الكتاب",
+      "incipit_triple": [
+        "تلك",
+        "ايات",
+        "الكتاب"
+      ],
+      "class": "DEMONSTRATIVE_PRONOMINAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 34,
+      "name_ar": "لقمان",
+      "name_tl": "Luqman",
+      "qac_pos": "DEM"
+    },
+    "32": {
+      "w1_raw": "تنزيل",
+      "w1_norm": "تنزيل",
+      "w2_norm": "الكتاب",
+      "w3_norm": "لا",
+      "incipit_triple": [
+        "تنزيل",
+        "الكتاب",
+        "لا"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 30,
+      "name_ar": "السجدة",
+      "name_tl": "As-Sajdah",
+      "qac_pos": "N"
+    },
+    "33": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "النبي",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "النبي"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 73,
+      "name_ar": "الأحزاب",
+      "name_tl": "Al-Ahzab",
+      "qac_pos": "VOC"
+    },
+    "34": {
+      "w1_raw": "الحمد",
+      "w1_norm": "الحمد",
+      "w2_norm": "لله",
+      "w3_norm": "الذي",
+      "incipit_triple": [
+        "الحمد",
+        "لله",
+        "الذي"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": false,
+      "n_verses": 54,
+      "name_ar": "سبأ",
+      "name_tl": "Saba",
+      "qac_pos": "N"
+    },
+    "35": {
+      "w1_raw": "الحمد",
+      "w1_norm": "الحمد",
+      "w2_norm": "لله",
+      "w3_norm": "فاطر",
+      "incipit_triple": [
+        "الحمد",
+        "لله",
+        "فاطر"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": false,
+      "n_verses": 45,
+      "name_ar": "فاطر",
+      "name_tl": "Fatir",
+      "qac_pos": "N"
+    },
+    "36": {
+      "w1_raw": "والقرآن",
+      "w1_norm": "والقران",
+      "w2_norm": "الحكيم",
+      "w3_norm": "انك",
+      "incipit_triple": [
+        "والقران",
+        "الحكيم",
+        "انك"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 83,
+      "name_ar": "يس",
+      "name_tl": "Ya-Sin",
+      "qac_pos": "P"
+    },
+    "37": {
+      "w1_raw": "والصافات",
+      "w1_norm": "والصافات",
+      "w2_norm": "صفا",
+      "w3_norm": "فالزاجرات",
+      "incipit_triple": [
+        "والصافات",
+        "صفا",
+        "فالزاجرات"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 182,
+      "name_ar": "الصافات",
+      "name_tl": "As-Saffat",
+      "qac_pos": "P"
+    },
+    "38": {
+      "w1_raw": "والقرآن",
+      "w1_norm": "والقران",
+      "w2_norm": "ذي",
+      "w3_norm": "الذكر",
+      "incipit_triple": [
+        "والقران",
+        "ذي",
+        "الذكر"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 88,
+      "name_ar": "ص",
+      "name_tl": "Sad",
+      "qac_pos": "ADJ"
+    },
+    "39": {
+      "w1_raw": "تنزيل",
+      "w1_norm": "تنزيل",
+      "w2_norm": "الكتاب",
+      "w3_norm": "من",
+      "incipit_triple": [
+        "تنزيل",
+        "الكتاب",
+        "من"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": false,
+      "n_verses": 75,
+      "name_ar": "الزمر",
+      "name_tl": "Az-Zumar",
+      "qac_pos": "N"
+    },
+    "40": {
+      "w1_raw": "تنزيل",
+      "w1_norm": "تنزيل",
+      "w2_norm": "الكتاب",
+      "w3_norm": "من",
+      "incipit_triple": [
+        "تنزيل",
+        "الكتاب",
+        "من"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 85,
+      "name_ar": "غافر",
+      "name_tl": "Ghafir",
+      "qac_pos": "N"
+    },
+    "41": {
+      "w1_raw": "تنزيل",
+      "w1_norm": "تنزيل",
+      "w2_norm": "من",
+      "w3_norm": "الرحمن",
+      "incipit_triple": [
+        "تنزيل",
+        "من",
+        "الرحمن"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 54,
+      "name_ar": "فصلت",
+      "name_tl": "Fussilat",
+      "qac_pos": "N"
+    },
+    "42": {
+      "w1_raw": "كذلك",
+      "w1_norm": "كذلك",
+      "w2_norm": "يوحي",
+      "w3_norm": "اليك",
+      "incipit_triple": [
+        "كذلك",
+        "يوحي",
+        "اليك"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 53,
+      "name_ar": "الشورى",
+      "name_tl": "Ash-Shura",
+      "qac_pos": "DEM"
+    },
+    "43": {
+      "w1_raw": "والكتاب",
+      "w1_norm": "والكتاب",
+      "w2_norm": "المبين",
+      "w3_norm": "انا",
+      "incipit_triple": [
+        "والكتاب",
+        "المبين",
+        "انا"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 89,
+      "name_ar": "الزخرف",
+      "name_tl": "Az-Zukhruf",
+      "qac_pos": "P"
+    },
+    "44": {
+      "w1_raw": "والكتاب",
+      "w1_norm": "والكتاب",
+      "w2_norm": "المبين",
+      "w3_norm": "انا",
+      "incipit_triple": [
+        "والكتاب",
+        "المبين",
+        "انا"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 59,
+      "name_ar": "الدخان",
+      "name_tl": "Ad-Dukhan",
+      "qac_pos": "P"
+    },
+    "45": {
+      "w1_raw": "تنزيل",
+      "w1_norm": "تنزيل",
+      "w2_norm": "الكتاب",
+      "w3_norm": "من",
+      "incipit_triple": [
+        "تنزيل",
+        "الكتاب",
+        "من"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 37,
+      "name_ar": "الجاثية",
+      "name_tl": "Al-Jathiyah",
+      "qac_pos": "N"
+    },
+    "46": {
+      "w1_raw": "تنزيل",
+      "w1_norm": "تنزيل",
+      "w2_norm": "الكتاب",
+      "w3_norm": "من",
+      "incipit_triple": [
+        "تنزيل",
+        "الكتاب",
+        "من"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Late Meccan",
+      "is_muqattaat": true,
+      "n_verses": 35,
+      "name_ar": "الأحقاف",
+      "name_tl": "Al-Ahqaf",
+      "qac_pos": "N"
+    },
+    "47": {
+      "w1_raw": "الذين",
+      "w1_norm": "الذين",
+      "w2_norm": "كفروا",
+      "w3_norm": "وصدوا",
+      "incipit_triple": [
+        "الذين",
+        "كفروا",
+        "وصدوا"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 38,
+      "name_ar": "محمد",
+      "name_tl": "Muhammad",
+      "qac_pos": "REL"
+    },
+    "48": {
+      "w1_raw": "إنا",
+      "w1_norm": "انا",
+      "w2_norm": "فتحنا",
+      "w3_norm": "لك",
+      "incipit_triple": [
+        "انا",
+        "فتحنا",
+        "لك"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 29,
+      "name_ar": "الفتح",
+      "name_tl": "Al-Fath",
+      "qac_pos": "ACC"
+    },
+    "49": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "الذين",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "الذين"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 18,
+      "name_ar": "الحجرات",
+      "name_tl": "Al-Hujurat",
+      "qac_pos": "VOC"
+    },
+    "50": {
+      "w1_raw": "والقرآن",
+      "w1_norm": "والقران",
+      "w2_norm": "المجيد",
+      "w3_norm": "بل",
+      "incipit_triple": [
+        "والقران",
+        "المجيد",
+        "بل"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": true,
+      "n_verses": 45,
+      "name_ar": "ق",
+      "name_tl": "Qaf",
+      "qac_pos": "ADJ"
+    },
+    "51": {
+      "w1_raw": "والذاريات",
+      "w1_norm": "والذاريات",
+      "w2_norm": "ذروا",
+      "w3_norm": "فالحاملات",
+      "incipit_triple": [
+        "والذاريات",
+        "ذروا",
+        "فالحاملات"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 60,
+      "name_ar": "الذاريات",
+      "name_tl": "Adh-Dhariyat",
+      "qac_pos": "CONJ"
+    },
+    "52": {
+      "w1_raw": "والطور",
+      "w1_norm": "والطور",
+      "w2_norm": "وكتاب",
+      "w3_norm": "مسطور",
+      "incipit_triple": [
+        "والطور",
+        "وكتاب",
+        "مسطور"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 49,
+      "name_ar": "الطور",
+      "name_tl": "At-Tur",
+      "qac_pos": "CONJ"
+    },
+    "53": {
+      "w1_raw": "والنجم",
+      "w1_norm": "والنجم",
+      "w2_norm": "اذا",
+      "w3_norm": "هوي",
+      "incipit_triple": [
+        "والنجم",
+        "اذا",
+        "هوي"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 62,
+      "name_ar": "النجم",
+      "name_tl": "An-Najm",
+      "qac_pos": "P"
+    },
+    "54": {
+      "w1_raw": "اقتربت",
+      "w1_norm": "اقتربت",
+      "w2_norm": "الساعه",
+      "w3_norm": "وانشق",
+      "incipit_triple": [
+        "اقتربت",
+        "الساعه",
+        "وانشق"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 55,
+      "name_ar": "القمر",
+      "name_tl": "Al-Qamar",
+      "qac_pos": "V"
+    },
+    "55": {
+      "w1_raw": "الرحمن",
+      "w1_norm": "الرحمن",
+      "w2_norm": "علم",
+      "w3_norm": "القران",
+      "incipit_triple": [
+        "الرحمن",
+        "علم",
+        "القران"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Medinan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 78,
+      "name_ar": "الرحمن",
+      "name_tl": "Ar-Rahman",
+      "qac_pos": "ADJ"
+    },
+    "56": {
+      "w1_raw": "إذا",
+      "w1_norm": "اذا",
+      "w2_norm": "وقعت",
+      "w3_norm": "الواقعه",
+      "incipit_triple": [
+        "اذا",
+        "وقعت",
+        "الواقعه"
+      ],
+      "class": "CONDITIONAL_TEMPORAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 96,
+      "name_ar": "الواقعة",
+      "name_tl": "Al-Waqiah",
+      "qac_pos": "T"
+    },
+    "57": {
+      "w1_raw": "سبح",
+      "w1_norm": "سبح",
+      "w2_norm": "لله",
+      "w3_norm": "ما",
+      "incipit_triple": [
+        "سبح",
+        "لله",
+        "ما"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 29,
+      "name_ar": "الحديد",
+      "name_tl": "Al-Hadid",
+      "qac_pos": "V"
+    },
+    "58": {
+      "w1_raw": "قد",
+      "w1_norm": "قد",
+      "w2_norm": "سمع",
+      "w3_norm": "الله",
+      "incipit_triple": [
+        "قد",
+        "سمع",
+        "الله"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 22,
+      "name_ar": "المجادلة",
+      "name_tl": "Al-Mujadilah",
+      "qac_pos": "CERT"
+    },
+    "59": {
+      "w1_raw": "سبح",
+      "w1_norm": "سبح",
+      "w2_norm": "لله",
+      "w3_norm": "ما",
+      "incipit_triple": [
+        "سبح",
+        "لله",
+        "ما"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 24,
+      "name_ar": "الحشر",
+      "name_tl": "Al-Hashr",
+      "qac_pos": "V"
+    },
+    "60": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "الذين",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "الذين"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 13,
+      "name_ar": "الممتحنة",
+      "name_tl": "Al-Mumtahanah",
+      "qac_pos": "VOC"
+    },
+    "61": {
+      "w1_raw": "سبح",
+      "w1_norm": "سبح",
+      "w2_norm": "لله",
+      "w3_norm": "ما",
+      "incipit_triple": [
+        "سبح",
+        "لله",
+        "ما"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 14,
+      "name_ar": "الصف",
+      "name_tl": "As-Saff",
+      "qac_pos": "V"
+    },
+    "62": {
+      "w1_raw": "يسبح",
+      "w1_norm": "يسبح",
+      "w2_norm": "لله",
+      "w3_norm": "ما",
+      "incipit_triple": [
+        "يسبح",
+        "لله",
+        "ما"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 11,
+      "name_ar": "الجمعة",
+      "name_tl": "Al-Jumuah",
+      "qac_pos": "V"
+    },
+    "63": {
+      "w1_raw": "إذا",
+      "w1_norm": "اذا",
+      "w2_norm": "جااك",
+      "w3_norm": "المنافقون",
+      "incipit_triple": [
+        "اذا",
+        "جااك",
+        "المنافقون"
+      ],
+      "class": "CONDITIONAL_TEMPORAL",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 11,
+      "name_ar": "المنافقون",
+      "name_tl": "Al-Munafiqun",
+      "qac_pos": "T"
+    },
+    "64": {
+      "w1_raw": "يسبح",
+      "w1_norm": "يسبح",
+      "w2_norm": "لله",
+      "w3_norm": "ما",
+      "incipit_triple": [
+        "يسبح",
+        "لله",
+        "ما"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 18,
+      "name_ar": "التغابن",
+      "name_tl": "At-Taghabun",
+      "qac_pos": "V"
+    },
+    "65": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "النبي",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "النبي"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 12,
+      "name_ar": "الطلاق",
+      "name_tl": "At-Talaq",
+      "qac_pos": "VOC"
+    },
+    "66": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "النبي",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "النبي"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 12,
+      "name_ar": "التحريم",
+      "name_tl": "At-Tahrim",
+      "qac_pos": "VOC"
+    },
+    "67": {
+      "w1_raw": "تبارك",
+      "w1_norm": "تبارك",
+      "w2_norm": "الذي",
+      "w3_norm": "بيده",
+      "incipit_triple": [
+        "تبارك",
+        "الذي",
+        "بيده"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 30,
+      "name_ar": "الملك",
+      "name_tl": "Al-Mulk",
+      "qac_pos": "V"
+    },
+    "68": {
+      "w1_raw": "والقلم",
+      "w1_norm": "والقلم",
+      "w2_norm": "وما",
+      "w3_norm": "يسطرون",
+      "incipit_triple": [
+        "والقلم",
+        "وما",
+        "يسطرون"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": true,
+      "n_verses": 52,
+      "name_ar": "القلم",
+      "name_tl": "Al-Qalam",
+      "qac_pos": "REL"
+    },
+    "69": {
+      "w1_raw": "الحاقة",
+      "w1_norm": "الحاقه",
+      "w2_norm": "ما",
+      "w3_norm": "الحاقه",
+      "incipit_triple": [
+        "الحاقه",
+        "ما",
+        "الحاقه"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 52,
+      "name_ar": "الحاقة",
+      "name_tl": "Al-Haqqah",
+      "qac_pos": "N"
+    },
+    "70": {
+      "w1_raw": "سأل",
+      "w1_norm": "سال",
+      "w2_norm": "سايل",
+      "w3_norm": "بعذاب",
+      "incipit_triple": [
+        "سال",
+        "سايل",
+        "بعذاب"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 44,
+      "name_ar": "المعارج",
+      "name_tl": "Al-Maarij",
+      "qac_pos": "V"
+    },
+    "71": {
+      "w1_raw": "إنا",
+      "w1_norm": "انا",
+      "w2_norm": "ارسلنا",
+      "w3_norm": "نوحا",
+      "incipit_triple": [
+        "انا",
+        "ارسلنا",
+        "نوحا"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 28,
+      "name_ar": "نوح",
+      "name_tl": "Nuh",
+      "qac_pos": "ACC"
+    },
+    "72": {
+      "w1_raw": "قل",
+      "w1_norm": "قل",
+      "w2_norm": "اوحي",
+      "w3_norm": "الي",
+      "incipit_triple": [
+        "قل",
+        "اوحي",
+        "الي"
+      ],
+      "class": "IMPERATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 28,
+      "name_ar": "الجن",
+      "name_tl": "Al-Jinn",
+      "qac_pos": "V"
+    },
+    "73": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "المزمل",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "المزمل"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 20,
+      "name_ar": "المزمل",
+      "name_tl": "Al-Muzzammil",
+      "qac_pos": "VOC"
+    },
+    "74": {
+      "w1_raw": "يا",
+      "w1_norm": "يا",
+      "w2_norm": "ايها",
+      "w3_norm": "المدثر",
+      "incipit_triple": [
+        "يا",
+        "ايها",
+        "المدثر"
+      ],
+      "class": "VOCATIVE",
+      "class_reason": "starts-with-yā",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 56,
+      "name_ar": "المدثر",
+      "name_tl": "Al-Muddaththir",
+      "qac_pos": "VOC"
+    },
+    "75": {
+      "w1_raw": "لا",
+      "w1_norm": "لا",
+      "w2_norm": "اقسم",
+      "w3_norm": "بيوم",
+      "incipit_triple": [
+        "لا",
+        "اقسم",
+        "بيوم"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 40,
+      "name_ar": "القيامة",
+      "name_tl": "Al-Qiyamah",
+      "qac_pos": "NEG"
+    },
+    "76": {
+      "w1_raw": "هل",
+      "w1_norm": "هل",
+      "w2_norm": "اتي",
+      "w3_norm": "علي",
+      "incipit_triple": [
+        "هل",
+        "اتي",
+        "علي"
+      ],
+      "class": "INTERROGATIVE_NEGATIVE",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Middle Meccan",
+      "is_muqattaat": false,
+      "n_verses": 31,
+      "name_ar": "الإنسان",
+      "name_tl": "Al-Insan",
+      "qac_pos": "INTG"
+    },
+    "77": {
+      "w1_raw": "والمرسلات",
+      "w1_norm": "والمرسلات",
+      "w2_norm": "عرفا",
+      "w3_norm": "فالعاصفات",
+      "incipit_triple": [
+        "والمرسلات",
+        "عرفا",
+        "فالعاصفات"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 50,
+      "name_ar": "المرسلات",
+      "name_tl": "Al-Mursalat",
+      "qac_pos": "P"
+    },
+    "78": {
+      "w1_raw": "عم",
+      "w1_norm": "عم",
+      "w2_norm": "يتساالون",
+      "w3_norm": "عن",
+      "incipit_triple": [
+        "عم",
+        "يتساالون",
+        "عن"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 40,
+      "name_ar": "النبأ",
+      "name_tl": "An-Naba",
+      "qac_pos": "INTG"
+    },
+    "79": {
+      "w1_raw": "والنازعات",
+      "w1_norm": "والنازعات",
+      "w2_norm": "غرقا",
+      "w3_norm": "والناشطات",
+      "incipit_triple": [
+        "والنازعات",
+        "غرقا",
+        "والناشطات"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 46,
+      "name_ar": "النازعات",
+      "name_tl": "An-Naziat",
+      "qac_pos": "P"
+    },
+    "80": {
+      "w1_raw": "عبس",
+      "w1_norm": "عبس",
+      "w2_norm": "وتولي",
+      "w3_norm": "ان",
+      "incipit_triple": [
+        "عبس",
+        "وتولي",
+        "ان"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 42,
+      "name_ar": "عبس",
+      "name_tl": "Abasa",
+      "qac_pos": "V"
+    },
+    "81": {
+      "w1_raw": "إذا",
+      "w1_norm": "اذا",
+      "w2_norm": "الشمس",
+      "w3_norm": "كورت",
+      "incipit_triple": [
+        "اذا",
+        "الشمس",
+        "كورت"
+      ],
+      "class": "CONDITIONAL_TEMPORAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 29,
+      "name_ar": "التكوير",
+      "name_tl": "At-Takwir",
+      "qac_pos": "T"
+    },
+    "82": {
+      "w1_raw": "إذا",
+      "w1_norm": "اذا",
+      "w2_norm": "السماا",
+      "w3_norm": "انفطرت",
+      "incipit_triple": [
+        "اذا",
+        "السماا",
+        "انفطرت"
+      ],
+      "class": "CONDITIONAL_TEMPORAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 19,
+      "name_ar": "الإنفطار",
+      "name_tl": "Al-Infitar",
+      "qac_pos": "T"
+    },
+    "83": {
+      "w1_raw": "ويل",
+      "w1_norm": "ويل",
+      "w2_norm": "للمطففين",
+      "w3_norm": "الذين",
+      "incipit_triple": [
+        "ويل",
+        "للمطففين",
+        "الذين"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 36,
+      "name_ar": "المطففين",
+      "name_tl": "Al-Mutaffifin",
+      "qac_pos": "N"
+    },
+    "84": {
+      "w1_raw": "إذا",
+      "w1_norm": "اذا",
+      "w2_norm": "السماا",
+      "w3_norm": "انشقت",
+      "incipit_triple": [
+        "اذا",
+        "السماا",
+        "انشقت"
+      ],
+      "class": "CONDITIONAL_TEMPORAL",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 25,
+      "name_ar": "الإنشقاق",
+      "name_tl": "Al-Inshiqaq",
+      "qac_pos": "T"
+    },
+    "85": {
+      "w1_raw": "والسماء",
+      "w1_norm": "والسماا",
+      "w2_norm": "ذات",
+      "w3_norm": "البروج",
+      "incipit_triple": [
+        "والسماا",
+        "ذات",
+        "البروج"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 22,
+      "name_ar": "البروج",
+      "name_tl": "Al-Buruj",
+      "qac_pos": "P"
+    },
+    "86": {
+      "w1_raw": "والسماء",
+      "w1_norm": "والسماا",
+      "w2_norm": "والطارق",
+      "w3_norm": "وما",
+      "incipit_triple": [
+        "والسماا",
+        "والطارق",
+        "وما"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 17,
+      "name_ar": "الطارق",
+      "name_tl": "At-Tariq",
+      "qac_pos": "P"
+    },
+    "87": {
+      "w1_raw": "سبح",
+      "w1_norm": "سبح",
+      "w2_norm": "اسم",
+      "w3_norm": "ربك",
+      "incipit_triple": [
+        "سبح",
+        "اسم",
+        "ربك"
+      ],
+      "class": "PRAISE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 19,
+      "name_ar": "الأعلى",
+      "name_tl": "Al-A'la",
+      "qac_pos": "V"
+    },
+    "88": {
+      "w1_raw": "هل",
+      "w1_norm": "هل",
+      "w2_norm": "اتاك",
+      "w3_norm": "حديث",
+      "incipit_triple": [
+        "هل",
+        "اتاك",
+        "حديث"
+      ],
+      "class": "INTERROGATIVE_NEGATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 26,
+      "name_ar": "الغاشية",
+      "name_tl": "Al-Ghashiyah",
+      "qac_pos": "INTG"
+    },
+    "89": {
+      "w1_raw": "والفجر",
+      "w1_norm": "والفجر",
+      "w2_norm": "وليال",
+      "w3_norm": "عشر",
+      "incipit_triple": [
+        "والفجر",
+        "وليال",
+        "عشر"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 30,
+      "name_ar": "الفجر",
+      "name_tl": "Al-Fajr",
+      "qac_pos": "P"
+    },
+    "90": {
+      "w1_raw": "لا",
+      "w1_norm": "لا",
+      "w2_norm": "اقسم",
+      "w3_norm": "بهذا",
+      "incipit_triple": [
+        "لا",
+        "اقسم",
+        "بهذا"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 20,
+      "name_ar": "البلد",
+      "name_tl": "Al-Balad",
+      "qac_pos": "NEG"
+    },
+    "91": {
+      "w1_raw": "والشمس",
+      "w1_norm": "والشمس",
+      "w2_norm": "وضحاها",
+      "w3_norm": "والقمر",
+      "incipit_triple": [
+        "والشمس",
+        "وضحاها",
+        "والقمر"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 15,
+      "name_ar": "الشمس",
+      "name_tl": "Ash-Shams",
+      "qac_pos": "P"
+    },
+    "92": {
+      "w1_raw": "والليل",
+      "w1_norm": "والليل",
+      "w2_norm": "اذا",
+      "w3_norm": "يغشي",
+      "incipit_triple": [
+        "والليل",
+        "اذا",
+        "يغشي"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 21,
+      "name_ar": "الليل",
+      "name_tl": "Al-Layl",
+      "qac_pos": "P"
+    },
+    "93": {
+      "w1_raw": "والضحى",
+      "w1_norm": "والضحي",
+      "w2_norm": "والليل",
+      "w3_norm": "اذا",
+      "incipit_triple": [
+        "والضحي",
+        "والليل",
+        "اذا"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 11,
+      "name_ar": "الضحى",
+      "name_tl": "Ad-Dhuha",
+      "qac_pos": "P"
+    },
+    "94": {
+      "w1_raw": "ألم",
+      "w1_norm": "الم",
+      "w2_norm": "نشرح",
+      "w3_norm": "لك",
+      "incipit_triple": [
+        "الم",
+        "نشرح",
+        "لك"
+      ],
+      "class": "INTERROGATIVE_NEGATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 8,
+      "name_ar": "الشرح",
+      "name_tl": "Ash-Sharh",
+      "qac_pos": "INTG"
+    },
+    "95": {
+      "w1_raw": "والتين",
+      "w1_norm": "والتين",
+      "w2_norm": "والزيتون",
+      "w3_norm": "وطور",
+      "incipit_triple": [
+        "والتين",
+        "والزيتون",
+        "وطور"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 8,
+      "name_ar": "التين",
+      "name_tl": "At-Tin",
+      "qac_pos": "P"
+    },
+    "96": {
+      "w1_raw": "اقرأ",
+      "w1_norm": "اقرا",
+      "w2_norm": "باسم",
+      "w3_norm": "ربك",
+      "incipit_triple": [
+        "اقرا",
+        "باسم",
+        "ربك"
+      ],
+      "class": "IMPERATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 19,
+      "name_ar": "العلق",
+      "name_tl": "Al-Alaq",
+      "qac_pos": "V"
+    },
+    "97": {
+      "w1_raw": "إنا",
+      "w1_norm": "انا",
+      "w2_norm": "انزلناه",
+      "w3_norm": "في",
+      "incipit_triple": [
+        "انا",
+        "انزلناه",
+        "في"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 5,
+      "name_ar": "القدر",
+      "name_tl": "Al-Qadr",
+      "qac_pos": "ACC"
+    },
+    "98": {
+      "w1_raw": "لم",
+      "w1_norm": "لم",
+      "w2_norm": "يكن",
+      "w3_norm": "الذين",
+      "incipit_triple": [
+        "لم",
+        "يكن",
+        "الذين"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 8,
+      "name_ar": "البينة",
+      "name_tl": "Al-Bayyinah",
+      "qac_pos": "NEG"
+    },
+    "99": {
+      "w1_raw": "إذا",
+      "w1_norm": "اذا",
+      "w2_norm": "زلزلت",
+      "w3_norm": "الارض",
+      "incipit_triple": [
+        "اذا",
+        "زلزلت",
+        "الارض"
+      ],
+      "class": "CONDITIONAL_TEMPORAL",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 8,
+      "name_ar": "الزلزلة",
+      "name_tl": "Az-Zalzalah",
+      "qac_pos": "T"
+    },
+    "100": {
+      "w1_raw": "والعاديات",
+      "w1_norm": "والعاديات",
+      "w2_norm": "ضبحا",
+      "w3_norm": "فالموريات",
+      "incipit_triple": [
+        "والعاديات",
+        "ضبحا",
+        "فالموريات"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 11,
+      "name_ar": "العاديات",
+      "name_tl": "Al-Adiyat",
+      "qac_pos": "P"
+    },
+    "101": {
+      "w1_raw": "القارعة",
+      "w1_norm": "القارعه",
+      "w2_norm": "ما",
+      "w3_norm": "القارعه",
+      "incipit_triple": [
+        "القارعه",
+        "ما",
+        "القارعه"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 11,
+      "name_ar": "القارعة",
+      "name_tl": "Al-Qariah",
+      "qac_pos": "N"
+    },
+    "102": {
+      "w1_raw": "ألهاكم",
+      "w1_norm": "الهاكم",
+      "w2_norm": "التكاثر",
+      "w3_norm": "حتي",
+      "incipit_triple": [
+        "الهاكم",
+        "التكاثر",
+        "حتي"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 8,
+      "name_ar": "التكاثر",
+      "name_tl": "At-Takathur",
+      "qac_pos": "V"
+    },
+    "103": {
+      "w1_raw": "والعصر",
+      "w1_norm": "والعصر",
+      "w2_norm": "ان",
+      "w3_norm": "الانسان",
+      "incipit_triple": [
+        "والعصر",
+        "ان",
+        "الانسان"
+      ],
+      "class": "OATH_PARTICLE",
+      "class_reason": "wa-l-X",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 3,
+      "name_ar": "العصر",
+      "name_tl": "Al-Asr",
+      "qac_pos": "P"
+    },
+    "104": {
+      "w1_raw": "ويل",
+      "w1_norm": "ويل",
+      "w2_norm": "لكل",
+      "w3_norm": "همزه",
+      "incipit_triple": [
+        "ويل",
+        "لكل",
+        "همزه"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 9,
+      "name_ar": "الهمزة",
+      "name_tl": "Al-Humazah",
+      "qac_pos": "N"
+    },
+    "105": {
+      "w1_raw": "ألم",
+      "w1_norm": "الم",
+      "w2_norm": "تر",
+      "w3_norm": "كيف",
+      "incipit_triple": [
+        "الم",
+        "تر",
+        "كيف"
+      ],
+      "class": "INTERROGATIVE_NEGATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 5,
+      "name_ar": "الفيل",
+      "name_tl": "Al-Fil",
+      "qac_pos": "INTG"
+    },
+    "106": {
+      "w1_raw": "لإيلاف",
+      "w1_norm": "لايلاف",
+      "w2_norm": "قريش",
+      "w3_norm": "ايلافهم",
+      "incipit_triple": [
+        "لايلاف",
+        "قريش",
+        "ايلافهم"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 4,
+      "name_ar": "قريش",
+      "name_tl": "Quraysh",
+      "qac_pos": "N"
+    },
+    "107": {
+      "w1_raw": "أرأيت",
+      "w1_norm": "ارايت",
+      "w2_norm": "الذي",
+      "w3_norm": "يكذب",
+      "incipit_triple": [
+        "ارايت",
+        "الذي",
+        "يكذب"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 7,
+      "name_ar": "الماعون",
+      "name_tl": "Al-Maun",
+      "qac_pos": "INTG"
+    },
+    "108": {
+      "w1_raw": "إنا",
+      "w1_norm": "انا",
+      "w2_norm": "اعطيناك",
+      "w3_norm": "الكوثر",
+      "incipit_triple": [
+        "انا",
+        "اعطيناك",
+        "الكوثر"
+      ],
+      "class": "REPORT_ASSERTIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 3,
+      "name_ar": "الكوثر",
+      "name_tl": "Al-Kawthar",
+      "qac_pos": "ACC"
+    },
+    "109": {
+      "w1_raw": "قل",
+      "w1_norm": "قل",
+      "w2_norm": "يا",
+      "w3_norm": "ايها",
+      "incipit_triple": [
+        "قل",
+        "يا",
+        "ايها"
+      ],
+      "class": "IMPERATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 6,
+      "name_ar": "الكافرون",
+      "name_tl": "Al-Kafirun",
+      "qac_pos": "V"
+    },
+    "110": {
+      "w1_raw": "إذا",
+      "w1_norm": "اذا",
+      "w2_norm": "جاا",
+      "w3_norm": "نصر",
+      "incipit_triple": [
+        "اذا",
+        "جاا",
+        "نصر"
+      ],
+      "class": "CONDITIONAL_TEMPORAL",
+      "class_reason": "lemma",
+      "period": "Medinan",
+      "phase": "Medinan",
+      "is_muqattaat": false,
+      "n_verses": 3,
+      "name_ar": "النصر",
+      "name_tl": "An-Nasr",
+      "qac_pos": "T"
+    },
+    "111": {
+      "w1_raw": "تبت",
+      "w1_norm": "تبت",
+      "w2_norm": "يدا",
+      "w3_norm": "ابي",
+      "incipit_triple": [
+        "تبت",
+        "يدا",
+        "ابي"
+      ],
+      "class": "OTHER_CONTENT",
+      "class_reason": "default",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 5,
+      "name_ar": "المسد",
+      "name_tl": "Al-Masad",
+      "qac_pos": "V"
+    },
+    "112": {
+      "w1_raw": "قل",
+      "w1_norm": "قل",
+      "w2_norm": "هو",
+      "w3_norm": "الله",
+      "incipit_triple": [
+        "قل",
+        "هو",
+        "الله"
+      ],
+      "class": "IMPERATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 4,
+      "name_ar": "الإخلاص",
+      "name_tl": "Al-Ikhlas",
+      "qac_pos": "V"
+    },
+    "113": {
+      "w1_raw": "قل",
+      "w1_norm": "قل",
+      "w2_norm": "اعوذ",
+      "w3_norm": "برب",
+      "incipit_triple": [
+        "قل",
+        "اعوذ",
+        "برب"
+      ],
+      "class": "IMPERATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 5,
+      "name_ar": "الفلق",
+      "name_tl": "Al-Falaq",
+      "qac_pos": "V"
+    },
+    "114": {
+      "w1_raw": "قل",
+      "w1_norm": "قل",
+      "w2_norm": "اعوذ",
+      "w3_norm": "برب",
+      "incipit_triple": [
+        "قل",
+        "اعوذ",
+        "برب"
+      ],
+      "class": "IMPERATIVE",
+      "class_reason": "lemma",
+      "period": "Meccan",
+      "phase": "Early Meccan",
+      "is_muqattaat": false,
+      "n_verses": 6,
+      "name_ar": "الناس",
+      "name_tl": "An-Nas",
+      "qac_pos": "V"
+    }
+  },
+  "verdicts": {
+    "cell_1": "PUBLISHED",
+    "cell_2_mw5": "PASS",
+    "cell_3_chi2": "PASS",
+    "cell_4_period": "PASS",
+    "cell_5_muqattaat": "PASS",
+    "cell_6_twin": "PASS"
+  }
+}

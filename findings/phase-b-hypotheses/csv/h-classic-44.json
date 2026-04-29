@@ -1,0 +1,157 @@
+{
+  "finding_id": "h-classic-44",
+  "pre_reg": "findings/phase-b-hypotheses/h-classic-44-prereg.md",
+  "pre_reg_compliance": "PRE-REG-STANDARD-04 + STANDARD-05",
+  "rules_tuple": "(no-tashkeel, root-level via QAC, hafs-kufan, mashriqi)",
+  "seed": 20260414,
+  "n_perm": 10000,
+  "bonferroni_k_outer": 6,
+  "bonferroni_family_outer": "h-classic-44-49",
+  "bonferroni_k_inner": 3,
+  "bonferroni_family_inner": "h-classic-44",
+  "alpha_bon": 0.00278,
+  "parent_dispatch": "2026-04-14-wave-1-3-meta-analyst",
+  "regime_declaration": "macro-architectural-primary-with-local-pairwise-stratification",
+  "h_meta_1_prior": "macro-regime-refuted-z-minus-2.51-local-pairwise-confirmed-z-plus-10.06",
+  "transitive_prior_status": "CONFIRMED-by-meta-analyst-2026-04-14-regime-level",
+  "z_prior_source": "task-21-T-002-direct-test",
+  "sided_test": "one-sided",
+  "munasaba_score_composition": {
+    "jaccard_weight": 0.5,
+    "gzip_delta_resid_weight": 0.5,
+    "gzip_residualization": "OLS delta_norm ~ log(|A|*|B|)",
+    "residualization_slope": -0.02028419647323605,
+    "residualization_intercept": 0.37362230066611546
+  },
+  "buckets": [
+    {
+      "lo": 1,
+      "hi": 1,
+      "midpoint": 1
+    },
+    {
+      "lo": 2,
+      "hi": 2,
+      "midpoint": 2
+    },
+    {
+      "lo": 3,
+      "hi": 5,
+      "midpoint": 4
+    },
+    {
+      "lo": 6,
+      "hi": 10,
+      "midpoint": 8
+    },
+    {
+      "lo": 11,
+      "hi": 113,
+      "midpoint": 50
+    }
+  ],
+  "pre_pilot_disclosure": {
+    "pre_pilot_location": "scratch/h_classic_44_pre_pilot/h-classic-44-pre-pilot-single-test.json",
+    "pre_pilot_verdict_under_old_spec": "PARTIAL-MUQATTAAT-DRIVEN",
+    "pre_pilot_primary_rho": -1.0,
+    "pre_pilot_primary_p": 0.0062,
+    "note": "Single-test version run at \u03b1=0.0083 before discovering task #95 hierarchical-Bonferroni 3-sub-test spec. NOT used as verdict. This run supersedes."
+  },
+  "sub_test_A": {
+    "name": "macro-architectural distance-decay Spearman \u03c1",
+    "observed_bucket_means": [
+      0.9303953343461696,
+      0.8555457245693052,
+      0.8011129753505601,
+      0.6789830896888148,
+      -0.15406723549918525
+    ],
+    "observed_bucket_counts": [
+      113,
+      112,
+      330,
+      530,
+      5356
+    ],
+    "observed_rho": -0.9999999999999999,
+    "null_mean": 0.01715,
+    "null_sd": 0.498453330886962,
+    "empirical_p_one_sided": 0.0062,
+    "passes": false,
+    "reverse": "False"
+  },
+  "sub_test_B": {
+    "name": "local-pairwise d=1 seam coherence",
+    "observed_d1_mean": 0.9303953343461696,
+    "null_mean": -0.0007157255967380825,
+    "null_sd": 0.06796111142738756,
+    "empirical_p_one_sided": 0.0,
+    "passes": true
+  },
+  "sub_test_C": {
+    "name": "regime-discrimination ratio + secondary difference",
+    "observed_d1_mean": 0.9303953343461696,
+    "observed_d11_mean": -0.15406723549918525,
+    "primary_ratio": {
+      "observed": -6.038891600356455,
+      "null_mean": 0.055458952510556,
+      "null_sd": 905.8366400427357,
+      "empirical_p_one_sided": 0.5206,
+      "passes": false,
+      "reverse": false
+    },
+    "secondary_difference": {
+      "observed": 1.084462569845355,
+      "null_mean": 4.766753526338118e-05,
+      "null_sd": 0.0696370684491009,
+      "empirical_p_one_sided": 0.0,
+      "would_pass_if_primary": true,
+      "note": "Diagnostic only; NOT verdict-entering per pre-reg sub-test C secondary lock. Reported to flag AMBIGUOUS-RATIO-NOISE-LIMIT cell if applicable."
+    },
+    "ambiguous_ratio_noise_limit": true
+  },
+  "muqattaat_confound_flag": {
+    "n_excluded_pairs": 39,
+    "without_muqattaat_obs": {
+      "bucket_means": [
+        0.7898636128681158,
+        0.8555457245693052,
+        0.8011129753505601,
+        0.6789830896888148,
+        -0.15406723549918525
+      ],
+      "bucket_counts": [
+        74,
+        112,
+        330,
+        530,
+        5356
+      ],
+      "obs_rho_A": -0.7,
+      "obs_d1_mean_B": 0.7898636128681158,
+      "obs_d11_mean": -0.15406723549918525,
+      "obs_ratio_C": -5.12674619174492,
+      "obs_diff_C_secondary": 0.943930848367301
+    },
+    "without_muqattaat_A_pass": false,
+    "without_muqattaat_B_pass": true,
+    "without_muqattaat_C_pass": false,
+    "any_flip": false,
+    "note": "If any flip, final_verdict carries MUQATTAAT-CONFOUND-FLAG suffix. Flag is diagnostic, not verdict-overriding."
+  },
+  "final_verdict": "PARTIAL-LOCAL-ONLY-ambiguous-regime-cut [AMBIGUOUS-RATIO-NOISE-LIMIT: diff passes but ratio does not]",
+  "no_fork_protections_honored": [
+    "mun\u0101saba score LOCKED 0.5*J_std + 0.5*\u0394_std (length-residualized)",
+    "distance buckets LOCKED {1, 2, 3-5, 6-10, 11+}",
+    "sub-test A statistic LOCKED Spearman \u03c1 across 5 bucket means",
+    "sub-test B statistic LOCKED mean(d=1) vs permutation null",
+    "sub-test C primary LOCKED ratio d1/d11, secondary diagnostic diff",
+    "seeds LOCKED 20260414/20260415/20260416, 10000 perms each",
+    "\u03b1_bon = 0.00278 (hierarchical: outer k=6, inner k=3)",
+    "muqa\u1e6d\u1e6da\u02bf\u0101t set LOCKED [2, 3, 7, 10, 11, 12, 13, 14, 15, 19, 20, 26, 27, 28, 29, 30, 31, 32, 36, 38, 40, 41, 42, 43, 44, 45, 46, 50, 68]",
+    "QAC v0.4 STEM-only root extraction LOCKED",
+    "6-cell verdict matrix LOCKED per task #95 spec",
+    "muqa\u1e6d\u1e6da\u02bf\u0101t-exclusion is DIAGNOSTIC FLAG not verdict gate"
+  ],
+  "data_reuse_disclosed": "Reuses QAC loader from h_classic_47_biqai_seam.py. Reuses pair-score computation method from pre-pilot run (scratch/h_classic_44_pre_pilot/). Reuses QAC morphology file and Quran JSON. Cross-refs scholar-convergence-tracker.md \u00a72/3/5 per task #95 spec."
+}

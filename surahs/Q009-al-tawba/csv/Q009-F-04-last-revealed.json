@@ -1,0 +1,137 @@
+{
+  "finding_id": "Q009-F-04",
+  "prereg_sha": "f489aa91c6810e7cf19ac634330e949118c41be0634a1ab390b9ab512fbda6bd",
+  "method": "For each \"آخر ما نزل|آية|سورة\" hit, scan 8-line context for rival-claim markers.",
+  "sources": [
+    "tabari-jami-bayan.openiti.raw.txt",
+    "qurtubi-jami-ahkam.openiti.raw.txt",
+    "razi-mafatih-al-ghayb.openiti.raw.txt",
+    "ibn-kathir-tafsir-quran.openiti.raw.txt",
+    "suyuti-durr-manthur.openiti.raw.txt",
+    "biqai-nazm-al-durar.openiti.raw.txt",
+    "zamakhshari-kashshaf.openiti.raw.txt",
+    "suyuti-itqan.openiti.raw.txt",
+    "tabarsi-majma-bayan.openiti.raw.txt",
+    "thaclabi-kashf-bayan.openiti.raw.txt"
+  ],
+  "per_source_hits": {
+    "tabari-jami-bayan.openiti.raw.txt": {
+      "last_total": 24,
+      "claim_hits": {
+        "Q9:128-129": 4,
+        "Q4:176": 11,
+        "Q2:281": 7,
+        "Q5:3": 1
+      }
+    },
+    "qurtubi-jami-ahkam.openiti.raw.txt": {
+      "last_total": 62,
+      "claim_hits": {
+        "Q9:128-129": 11,
+        "Q4:176": 6,
+        "Q2:281": 12,
+        "Q5:3": 1
+      }
+    },
+    "razi-mafatih-al-ghayb.openiti.raw.txt": {
+      "last_total": 31,
+      "claim_hits": {
+        "Q9:128-129": 0,
+        "Q4:176": 1,
+        "Q2:281": 2,
+        "Q5:3": 1
+      }
+    },
+    "ibn-kathir-tafsir-quran.openiti.raw.txt": {
+      "last_total": 52,
+      "claim_hits": {
+        "Q9:128-129": 7,
+        "Q4:176": 4,
+        "Q2:281": 8,
+        "Q5:3": 0
+      }
+    },
+    "suyuti-durr-manthur.openiti.raw.txt": {
+      "last_total": 58,
+      "claim_hits": {
+        "Q9:128-129": 7,
+        "Q4:176": 5,
+        "Q2:281": 5,
+        "Q5:3": 0
+      }
+    },
+    "biqai-nazm-al-durar.openiti.raw.txt": {
+      "last_total": 40,
+      "claim_hits": {
+        "Q9:128-129": 6,
+        "Q4:176": 4,
+        "Q2:281": 7,
+        "Q5:3": 0
+      }
+    },
+    "zamakhshari-kashshaf.openiti.raw.txt": {
+      "last_total": 12,
+      "claim_hits": {
+        "Q9:128-129": 1,
+        "Q4:176": 1,
+        "Q2:281": 0,
+        "Q5:3": 0
+      }
+    },
+    "suyuti-itqan.openiti.raw.txt": {
+      "last_total": 63,
+      "claim_hits": {
+        "Q9:128-129": 18,
+        "Q4:176": 9,
+        "Q2:281": 15,
+        "Q5:3": 3
+      }
+    },
+    "tabarsi-majma-bayan.openiti.raw.txt": {
+      "last_total": 19,
+      "claim_hits": {
+        "Q9:128-129": 5,
+        "Q4:176": 3,
+        "Q2:281": 1,
+        "Q5:3": 2
+      }
+    },
+    "thaclabi-kashf-bayan.openiti.raw.txt": {
+      "last_total": 23,
+      "claim_hits": {
+        "Q9:128-129": 5,
+        "Q4:176": 5,
+        "Q2:281": 4,
+        "Q5:3": 1
+      }
+    }
+  },
+  "totals": {
+    "Q9:128-129": 64,
+    "Q4:176": 49,
+    "Q2:281": 61,
+    "Q5:3": 9
+  },
+  "sorted_totals": [
+    [
+      "Q9:128-129",
+      64
+    ],
+    [
+      "Q2:281",
+      61
+    ],
+    [
+      "Q4:176",
+      49
+    ],
+    [
+      "Q5:3",
+      9
+    ]
+  ],
+  "q9_128_count": 64,
+  "max_rival_count": 61,
+  "verdict": "NULL_no_clear_dominance",
+  "last_revealed_total_mentions": 384
+}

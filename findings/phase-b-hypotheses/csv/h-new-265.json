@@ -1,0 +1,1450 @@
+{
+  "id": "H-NEW-265",
+  "prereg_file": "findings/phase-b-hypotheses/h-new-265-qul-openers-microcluster-prereg.md",
+  "prereg_sha256": "591bfca98c86eeaaab179d734e33df33b8ea1d1d08c70275b9cecff9fd9d3d4b",
+  "seed": 20260418,
+  "n_perm": 10000,
+  "match_k_nearest": 12,
+  "bonferroni_family": "h-new-265-qul-openers-microcluster",
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016667,
+  "question": "Do Q72/Q109/Q112/Q113/Q114 remain a coherent family after stripping the trivial opener itself?",
+  "target_set": [
+    72,
+    109,
+    112,
+    113,
+    114
+  ],
+  "mw5_positive_control": [
+    57,
+    59,
+    61,
+    62,
+    64
+  ],
+  "cell_results": [
+    {
+      "cell": "A",
+      "description": "v1 residual root-set Jaccard after dropping w1",
+      "direction": "one-sided upper",
+      "target": {
+        "members": [
+          72,
+          109,
+          112,
+          113,
+          114
+        ],
+        "token_mass": {
+          "72": 8,
+          "109": 1,
+          "112": 2,
+          "113": 3,
+          "114": 3
+        },
+        "pairwise_jaccard": [
+          {
+            "pair": [
+              72,
+              109
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              72,
+              112
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              72,
+              113
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              72,
+              114
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              109,
+              112
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              109,
+              113
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              109,
+              114
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              112,
+              113
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              112,
+              114
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              113,
+              114
+            ],
+            "jaccard": 0.5
+          }
+        ],
+        "observed": 0.05,
+        "null_mean": 0.013335,
+        "null_sd": 0.017155,
+        "null_median": 0.01,
+        "z_vs_null": 2.137298,
+        "p_perm_upper": 0.057894,
+        "candidate_preview": {
+          "72": [
+            {
+              "surah": 13,
+              "name": "Ar-Ra'd",
+              "token_mass": 8
+            },
+            {
+              "surah": 64,
+              "name": "At-Taghabun",
+              "token_mass": 8
+            },
+            {
+              "surah": 71,
+              "name": "Nuh",
+              "token_mass": 8
+            },
+            {
+              "surah": 98,
+              "name": "Al-Bayyinah",
+              "token_mass": 8
+            },
+            {
+              "surah": 11,
+              "name": "Hud",
+              "token_mass": 7
+            }
+          ],
+          "109": [
+            {
+              "surah": 37,
+              "name": "As-Saffat",
+              "token_mass": 1
+            },
+            {
+              "surah": 51,
+              "name": "Adh-Dhariyat",
+              "token_mass": 1
+            },
+            {
+              "surah": 53,
+              "name": "An-Najm",
+              "token_mass": 1
+            },
+            {
+              "surah": 73,
+              "name": "Al-Muzzammil",
+              "token_mass": 1
+            },
+            {
+              "surah": 74,
+              "name": "Al-Muddaththir",
+              "token_mass": 1
+            }
+          ],
+          "112": [
+            {
+              "surah": 23,
+              "name": "Al-Mu'minun",
+              "token_mass": 2
+            },
+            {
+              "surah": 38,
+              "name": "Sad",
+              "token_mass": 2
+            },
+            {
+              "surah": 50,
+              "name": "Qaf",
+              "token_mass": 2
+            },
+            {
+              "surah": 56,
+              "name": "Al-Waqi'ah",
+              "token_mass": 2
+            },
+            {
+              "surah": 68,
+              "name": "Al-Qalam",
+              "token_mass": 2
+            }
+          ],
+          "113": [
+            {
+              "surah": 1,
+              "name": "Al-Fatihah",
+              "token_mass": 3
+            },
+            {
+              "surah": 10,
+              "name": "Yunus",
+              "token_mass": 3
+            },
+            {
+              "surah": 12,
+              "name": "Yusuf",
+              "token_mass": 3
+            },
+            {
+              "surah": 48,
+              "name": "Al-Fath",
+              "token_mass": 3
+            },
+            {
+              "surah": 54,
+              "name": "Al-Qamar",
+              "token_mass": 3
+            }
+          ],
+          "114": [
+            {
+              "surah": 1,
+              "name": "Al-Fatihah",
+              "token_mass": 3
+            },
+            {
+              "surah": 10,
+              "name": "Yunus",
+              "token_mass": 3
+            },
+            {
+              "surah": 12,
+              "name": "Yusuf",
+              "token_mass": 3
+            },
+            {
+              "surah": 48,
+              "name": "Al-Fath",
+              "token_mass": 3
+            },
+            {
+              "surah": 54,
+              "name": "Al-Qamar",
+              "token_mass": 3
+            }
+          ]
+        },
+        "successful_draws": 10000,
+        "failed_draws": 0,
+        "pass_alpha_bon": false
+      },
+      "mw5_positive_control": {
+        "members": [
+          57,
+          59,
+          61,
+          62,
+          64
+        ],
+        "token_mass": {
+          "57": 5,
+          "59": 5,
+          "61": 5,
+          "62": 7,
+          "64": 8
+        },
+        "pairwise_jaccard": [
+          {
+            "pair": [
+              57,
+              59
+            ],
+            "jaccard": 1.0
+          },
+          {
+            "pair": [
+              57,
+              61
+            ],
+            "jaccard": 1.0
+          },
+          {
+            "pair": [
+              57,
+              62
+            ],
+            "jaccard": 0.714286
+          },
+          {
+            "pair": [
+              57,
+              64
+            ],
+            "jaccard": 0.3
+          },
+          {
+            "pair": [
+              59,
+              61
+            ],
+            "jaccard": 1.0
+          },
+          {
+            "pair": [
+              59,
+              62
+            ],
+            "jaccard": 0.714286
+          },
+          {
+            "pair": [
+              59,
+              64
+            ],
+            "jaccard": 0.3
+          },
+          {
+            "pair": [
+              61,
+              62
+            ],
+            "jaccard": 0.714286
+          },
+          {
+            "pair": [
+              61,
+              64
+            ],
+            "jaccard": 0.3
+          },
+          {
+            "pair": [
+              62,
+              64
+            ],
+            "jaccard": 0.363636
+          }
+        ],
+        "observed": 0.640649,
+        "null_mean": 0.039212,
+        "null_sd": 0.022678,
+        "null_median": 0.035874,
+        "z_vs_null": 26.5208,
+        "p_perm_upper": 0.0001,
+        "candidate_preview": {
+          "57": [
+            {
+              "surah": 59,
+              "name": "Al-Hashr",
+              "token_mass": 5
+            },
+            {
+              "surah": 61,
+              "name": "As-Saf",
+              "token_mass": 5
+            },
+            {
+              "surah": 67,
+              "name": "Al-Mulk",
+              "token_mass": 5
+            },
+            {
+              "surah": 16,
+              "name": "An-Nahl",
+              "token_mass": 6
+            },
+            {
+              "surah": 18,
+              "name": "Al-Kahf",
+              "token_mass": 6
+            }
+          ],
+          "59": [
+            {
+              "surah": 57,
+              "name": "Al-Hadid",
+              "token_mass": 5
+            },
+            {
+              "surah": 61,
+              "name": "As-Saf",
+              "token_mass": 5
+            },
+            {
+              "surah": 67,
+              "name": "Al-Mulk",
+              "token_mass": 5
+            },
+            {
+              "surah": 16,
+              "name": "An-Nahl",
+              "token_mass": 6
+            },
+            {
+              "surah": 18,
+              "name": "Al-Kahf",
+              "token_mass": 6
+            }
+          ],
+          "61": [
+            {
+              "surah": 57,
+              "name": "Al-Hadid",
+              "token_mass": 5
+            },
+            {
+              "surah": 59,
+              "name": "Al-Hashr",
+              "token_mass": 5
+            },
+            {
+              "surah": 67,
+              "name": "Al-Mulk",
+              "token_mass": 5
+            },
+            {
+              "surah": 16,
+              "name": "An-Nahl",
+              "token_mass": 6
+            },
+            {
+              "surah": 18,
+              "name": "Al-Kahf",
+              "token_mass": 6
+            }
+          ],
+          "62": [
+            {
+              "surah": 11,
+              "name": "Hud",
+              "token_mass": 7
+            },
+            {
+              "surah": 22,
+              "name": "Al-Hajj",
+              "token_mass": 7
+            },
+            {
+              "surah": 34,
+              "name": "Saba",
+              "token_mass": 7
+            },
+            {
+              "surah": 76,
+              "name": "Al-Insan",
+              "token_mass": 7
+            },
+            {
+              "surah": 13,
+              "name": "Ar-Ra'd",
+              "token_mass": 8
+            }
+          ],
+          "64": [
+            {
+              "surah": 13,
+              "name": "Ar-Ra'd",
+              "token_mass": 8
+            },
+            {
+              "surah": 71,
+              "name": "Nuh",
+              "token_mass": 8
+            },
+            {
+              "surah": 72,
+              "name": "Al-Jinn",
+              "token_mass": 8
+            },
+            {
+              "surah": 98,
+              "name": "Al-Bayyinah",
+              "token_mass": 8
+            },
+            {
+              "surah": 11,
+              "name": "Hud",
+              "token_mass": 7
+            }
+          ]
+        },
+        "pass_nominal_0_05": true,
+        "successful_draws": 10000,
+        "failed_draws": 0
+      }
+    },
+    {
+      "cell": "B",
+      "description": "v1-v3 residual root-set Jaccard after dropping v1-w1",
+      "direction": "one-sided upper",
+      "target": {
+        "members": [
+          72,
+          109,
+          112,
+          113,
+          114
+        ],
+        "token_mass": {
+          "72": 20,
+          "109": 5,
+          "112": 6,
+          "113": 8,
+          "114": 7
+        },
+        "pairwise_jaccard": [
+          {
+            "pair": [
+              72,
+              109
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              72,
+              112
+            ],
+            "jaccard": 0.1
+          },
+          {
+            "pair": [
+              72,
+              113
+            ],
+            "jaccard": 0.041667
+          },
+          {
+            "pair": [
+              72,
+              114
+            ],
+            "jaccard": 0.045455
+          },
+          {
+            "pair": [
+              109,
+              112
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              109,
+              113
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              109,
+              114
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              112,
+              113
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              112,
+              114
+            ],
+            "jaccard": 0.125
+          },
+          {
+            "pair": [
+              113,
+              114
+            ],
+            "jaccard": 0.2
+          }
+        ],
+        "observed": 0.051212,
+        "null_mean": 0.022704,
+        "null_sd": 0.018029,
+        "null_median": 0.018201,
+        "z_vs_null": 1.581241,
+        "p_perm_upper": 0.070193,
+        "candidate_preview": {
+          "72": [
+            {
+              "surah": 21,
+              "name": "Al-Anbya",
+              "token_mass": 20
+            },
+            {
+              "surah": 57,
+              "name": "Al-Hadid",
+              "token_mass": 20
+            },
+            {
+              "surah": 16,
+              "name": "An-Nahl",
+              "token_mass": 21
+            },
+            {
+              "surah": 18,
+              "name": "Al-Kahf",
+              "token_mass": 19
+            },
+            {
+              "surah": 76,
+              "name": "Al-Insan",
+              "token_mass": 19
+            }
+          ],
+          "109": [
+            {
+              "surah": 20,
+              "name": "Taha",
+              "token_mass": 5
+            },
+            {
+              "surah": 37,
+              "name": "As-Saffat",
+              "token_mass": 5
+            },
+            {
+              "surah": 42,
+              "name": "Ash-Shuraa",
+              "token_mass": 5
+            },
+            {
+              "surah": 51,
+              "name": "Adh-Dhariyat",
+              "token_mass": 5
+            },
+            {
+              "surah": 74,
+              "name": "Al-Muddaththir",
+              "token_mass": 5
+            }
+          ],
+          "112": [
+            {
+              "surah": 23,
+              "name": "Al-Mu'minun",
+              "token_mass": 6
+            },
+            {
+              "surah": 30,
+              "name": "Ar-Rum",
+              "token_mass": 6
+            },
+            {
+              "surah": 31,
+              "name": "Luqman",
+              "token_mass": 6
+            },
+            {
+              "surah": 43,
+              "name": "Az-Zukhruf",
+              "token_mass": 6
+            },
+            {
+              "surah": 53,
+              "name": "An-Najm",
+              "token_mass": 6
+            }
+          ],
+          "113": [
+            {
+              "surah": 19,
+              "name": "Maryam",
+              "token_mass": 8
+            },
+            {
+              "surah": 28,
+              "name": "Al-Qasas",
+              "token_mass": 8
+            },
+            {
+              "surah": 68,
+              "name": "Al-Qalam",
+              "token_mass": 8
+            },
+            {
+              "surah": 70,
+              "name": "Al-Ma'arij",
+              "token_mass": 8
+            },
+            {
+              "surah": 99,
+              "name": "Az-Zalzalah",
+              "token_mass": 8
+            }
+          ],
+          "114": [
+            {
+              "surah": 26,
+              "name": "Ash-Shu'ara",
+              "token_mass": 7
+            },
+            {
+              "surah": 44,
+              "name": "Ad-Dukhan",
+              "token_mass": 7
+            },
+            {
+              "surah": 56,
+              "name": "Al-Waqi'ah",
+              "token_mass": 7
+            },
+            {
+              "surah": 73,
+              "name": "Al-Muzzammil",
+              "token_mass": 7
+            },
+            {
+              "surah": 83,
+              "name": "Al-Mutaffifin",
+              "token_mass": 7
+            }
+          ]
+        },
+        "successful_draws": 10000,
+        "failed_draws": 0,
+        "pass_alpha_bon": false
+      },
+      "mw5_positive_control": {
+        "members": [
+          57,
+          59,
+          61,
+          62,
+          64
+        ],
+        "token_mass": {
+          "57": 20,
+          "59": 41,
+          "61": 14,
+          "62": 24,
+          "64": 22
+        },
+        "pairwise_jaccard": [
+          {
+            "pair": [
+              57,
+              59
+            ],
+            "jaccard": 0.170732
+          },
+          {
+            "pair": [
+              57,
+              61
+            ],
+            "jaccard": 0.227273
+          },
+          {
+            "pair": [
+              57,
+              62
+            ],
+            "jaccard": 0.275862
+          },
+          {
+            "pair": [
+              57,
+              64
+            ],
+            "jaccard": 0.269231
+          },
+          {
+            "pair": [
+              59,
+              61
+            ],
+            "jaccard": 0.162162
+          },
+          {
+            "pair": [
+              59,
+              62
+            ],
+            "jaccard": 0.152174
+          },
+          {
+            "pair": [
+              59,
+              64
+            ],
+            "jaccard": 0.139535
+          },
+          {
+            "pair": [
+              61,
+              62
+            ],
+            "jaccard": 0.185185
+          },
+          {
+            "pair": [
+              61,
+              64
+            ],
+            "jaccard": 0.166667
+          },
+          {
+            "pair": [
+              62,
+              64
+            ],
+            "jaccard": 0.117647
+          }
+        ],
+        "observed": 0.186647,
+        "null_mean": 0.069925,
+        "null_sd": 0.01836,
+        "null_median": 0.067705,
+        "z_vs_null": 6.35734,
+        "p_perm_upper": 0.0001,
+        "candidate_preview": {
+          "57": [
+            {
+              "surah": 21,
+              "name": "Al-Anbya",
+              "token_mass": 20
+            },
+            {
+              "surah": 72,
+              "name": "Al-Jinn",
+              "token_mass": 20
+            },
+            {
+              "surah": 16,
+              "name": "An-Nahl",
+              "token_mass": 21
+            },
+            {
+              "surah": 18,
+              "name": "Al-Kahf",
+              "token_mass": 19
+            },
+            {
+              "surah": 76,
+              "name": "Al-Insan",
+              "token_mass": 19
+            }
+          ],
+          "59": [
+            {
+              "surah": 35,
+              "name": "Fatir",
+              "token_mass": 42
+            },
+            {
+              "surah": 10,
+              "name": "Yunus",
+              "token_mass": 38
+            },
+            {
+              "surah": 9,
+              "name": "At-Tawbah",
+              "token_mass": 37
+            },
+            {
+              "surah": 49,
+              "name": "Al-Hujurat",
+              "token_mass": 37
+            },
+            {
+              "surah": 58,
+              "name": "Al-Mujadila",
+              "token_mass": 37
+            }
+          ],
+          "61": [
+            {
+              "surah": 15,
+              "name": "Al-Hijr",
+              "token_mass": 14
+            },
+            {
+              "surah": 40,
+              "name": "Ghafir",
+              "token_mass": 14
+            },
+            {
+              "surah": 50,
+              "name": "Qaf",
+              "token_mass": 14
+            },
+            {
+              "surah": 12,
+              "name": "Yusuf",
+              "token_mass": 15
+            },
+            {
+              "surah": 32,
+              "name": "As-Sajdah",
+              "token_mass": 15
+            }
+          ],
+          "62": [
+            {
+              "surah": 67,
+              "name": "Al-Mulk",
+              "token_mass": 25
+            },
+            {
+              "surah": 6,
+              "name": "Al-An'am",
+              "token_mass": 26
+            },
+            {
+              "surah": 17,
+              "name": "Al-Isra",
+              "token_mass": 26
+            },
+            {
+              "surah": 33,
+              "name": "Al-Ahzab",
+              "token_mass": 22
+            },
+            {
+              "surah": 64,
+              "name": "At-Taghabun",
+              "token_mass": 22
+            }
+          ],
+          "64": [
+            {
+              "surah": 33,
+              "name": "Al-Ahzab",
+              "token_mass": 22
+            },
+            {
+              "surah": 16,
+              "name": "An-Nahl",
+              "token_mass": 21
+            },
+            {
+              "surah": 62,
+              "name": "Al-Jumu'ah",
+              "token_mass": 24
+            },
+            {
+              "surah": 21,
+              "name": "Al-Anbya",
+              "token_mass": 20
+            },
+            {
+              "surah": 57,
+              "name": "Al-Hadid",
+              "token_mass": 20
+            }
+          ]
+        },
+        "pass_nominal_0_05": true,
+        "successful_draws": 10000,
+        "failed_draws": 0
+      }
+    },
+    {
+      "cell": "C",
+      "description": "whole-surah root-set Jaccard excluding trivial opener root (qwl / sbH)",
+      "direction": "one-sided upper",
+      "target": {
+        "members": [
+          72,
+          109,
+          112,
+          113,
+          114
+        ],
+        "token_mass": {
+          "72": 170,
+          "109": 11,
+          "112": 9,
+          "113": 14,
+          "114": 15
+        },
+        "pairwise_jaccard": [
+          {
+            "pair": [
+              72,
+              109
+            ],
+            "jaccard": 0.009901
+          },
+          {
+            "pair": [
+              72,
+              112
+            ],
+            "jaccard": 0.039604
+          },
+          {
+            "pair": [
+              72,
+              113
+            ],
+            "jaccard": 0.028302
+          },
+          {
+            "pair": [
+              72,
+              114
+            ],
+            "jaccard": 0.058252
+          },
+          {
+            "pair": [
+              109,
+              112
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              109,
+              113
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              109,
+              114
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              112,
+              113
+            ],
+            "jaccard": 0.0
+          },
+          {
+            "pair": [
+              112,
+              114
+            ],
+            "jaccard": 0.066667
+          },
+          {
+            "pair": [
+              113,
+              114
+            ],
+            "jaccard": 0.176471
+          }
+        ],
+        "observed": 0.03792,
+        "null_mean": 0.025917,
+        "null_sd": 0.008523,
+        "null_median": 0.025029,
+        "z_vs_null": 1.40817,
+        "p_perm_upper": 0.09749,
+        "candidate_preview": {
+          "72": [
+            {
+              "surah": 64,
+              "name": "At-Taghabun",
+              "token_mass": 169
+            },
+            {
+              "surah": 66,
+              "name": "At-Tahrim",
+              "token_mass": 166
+            },
+            {
+              "surah": 76,
+              "name": "Al-Insan",
+              "token_mass": 175
+            },
+            {
+              "surah": 69,
+              "name": "Al-Haqqah",
+              "token_mass": 161
+            },
+            {
+              "surah": 74,
+              "name": "Al-Muddaththir",
+              "token_mass": 158
+            }
+          ],
+          "109": [
+            {
+              "surah": 106,
+              "name": "Quraysh",
+              "token_mass": 12
+            },
+            {
+              "surah": 103,
+              "name": "Al-'Asr",
+              "token_mass": 10
+            },
+            {
+              "surah": 112,
+              "name": "Al-Ikhlas",
+              "token_mass": 9
+            },
+            {
+              "surah": 107,
+              "name": "Al-Ma'un",
+              "token_mass": 14
+            },
+            {
+              "surah": 113,
+              "name": "Al-Falaq",
+              "token_mass": 14
+            }
+          ],
+          "112": [
+            {
+              "surah": 103,
+              "name": "Al-'Asr",
+              "token_mass": 10
+            },
+            {
+              "surah": 109,
+              "name": "Al-Kafirun",
+              "token_mass": 11
+            },
+            {
+              "surah": 108,
+              "name": "Al-Kawthar",
+              "token_mass": 7
+            },
+            {
+              "surah": 106,
+              "name": "Quraysh",
+              "token_mass": 12
+            },
+            {
+              "surah": 107,
+              "name": "Al-Ma'un",
+              "token_mass": 14
+            }
+          ],
+          "113": [
+            {
+              "surah": 107,
+              "name": "Al-Ma'un",
+              "token_mass": 14
+            },
+            {
+              "surah": 114,
+              "name": "An-Nas",
+              "token_mass": 15
+            },
+            {
+              "surah": 94,
+              "name": "Ash-Sharh",
+              "token_mass": 16
+            },
+            {
+              "surah": 102,
+              "name": "At-Takathur",
+              "token_mass": 16
+            },
+            {
+              "surah": 110,
+              "name": "An-Nasr",
+              "token_mass": 16
+            }
+          ],
+          "114": [
+            {
+              "surah": 94,
+              "name": "Ash-Sharh",
+              "token_mass": 16
+            },
+            {
+              "surah": 102,
+              "name": "At-Takathur",
+              "token_mass": 16
+            },
+            {
+              "surah": 110,
+              "name": "An-Nasr",
+              "token_mass": 16
+            },
+            {
+              "surah": 107,
+              "name": "Al-Ma'un",
+              "token_mass": 14
+            },
+            {
+              "surah": 113,
+              "name": "Al-Falaq",
+              "token_mass": 14
+            }
+          ]
+        },
+        "successful_draws": 10000,
+        "failed_draws": 0,
+        "pass_alpha_bon": false
+      },
+      "mw5_positive_control": {
+        "members": [
+          57,
+          59,
+          61,
+          62,
+          64
+        ],
+        "token_mass": {
+          "57": 389,
+          "59": 283,
+          "61": 144,
+          "62": 116,
+          "64": 170
+        },
+        "pairwise_jaccard": [
+          {
+            "pair": [
+              57,
+              59
+            ],
+            "jaccard": 0.352459
+          },
+          {
+            "pair": [
+              57,
+              61
+            ],
+            "jaccard": 0.23301
+          },
+          {
+            "pair": [
+              57,
+              62
+            ],
+            "jaccard": 0.220588
+          },
+          {
+            "pair": [
+              57,
+              64
+            ],
+            "jaccard": 0.325123
+          },
+          {
+            "pair": [
+              59,
+              61
+            ],
+            "jaccard": 0.216495
+          },
+          {
+            "pair": [
+              59,
+              62
+            ],
+            "jaccard": 0.196891
+          },
+          {
+            "pair": [
+              59,
+              64
+            ],
+            "jaccard": 0.287179
+          },
+          {
+            "pair": [
+              61,
+              62
+            ],
+            "jaccard": 0.174242
+          },
+          {
+            "pair": [
+              61,
+              64
+            ],
+            "jaccard": 0.25
+          },
+          {
+            "pair": [
+              62,
+              64
+            ],
+            "jaccard": 0.240876
+          }
+        ],
+        "observed": 0.249686,
+        "null_mean": 0.162499,
+        "null_sd": 0.015964,
+        "null_median": 0.162481,
+        "z_vs_null": 5.461506,
+        "p_perm_upper": 0.0001,
+        "candidate_preview": {
+          "57": [
+            {
+              "surah": 48,
+              "name": "Al-Fath",
+              "token_mass": 403
+            },
+            {
+              "surah": 46,
+              "name": "Al-Ahqaf",
+              "token_mass": 405
+            },
+            {
+              "surah": 15,
+              "name": "Al-Hijr",
+              "token_mass": 409
+            },
+            {
+              "surah": 31,
+              "name": "Luqman",
+              "token_mass": 352
+            },
+            {
+              "surah": 47,
+              "name": "Muhammad",
+              "token_mass": 350
+            }
+          ],
+          "59": [
+            {
+              "surah": 58,
+              "name": "Al-Mujadila",
+              "token_mass": 297
+            },
+            {
+              "surah": 55,
+              "name": "Ar-Rahman",
+              "token_mass": 256
+            },
+            {
+              "surah": 56,
+              "name": "Al-Waqi'ah",
+              "token_mass": 253
+            },
+            {
+              "surah": 54,
+              "name": "Al-Qamar",
+              "token_mass": 252
+            },
+            {
+              "surah": 45,
+              "name": "Al-Jathiyah",
+              "token_mass": 320
+            }
+          ],
+          "61": [
+            {
+              "surah": 70,
+              "name": "Al-Ma'arij",
+              "token_mass": 142
+            },
+            {
+              "surah": 73,
+              "name": "Al-Muzzammil",
+              "token_mass": 141
+            },
+            {
+              "surah": 71,
+              "name": "Nuh",
+              "token_mass": 153
+            },
+            {
+              "surah": 78,
+              "name": "An-Naba",
+              "token_mass": 131
+            },
+            {
+              "surah": 74,
+              "name": "Al-Muddaththir",
+              "token_mass": 162
+            }
+          ],
+          "62": [
+            {
+              "surah": 63,
+              "name": "Al-Munafiqun",
+              "token_mass": 117
+            },
+            {
+              "surah": 77,
+              "name": "Al-Mursalat",
+              "token_mass": 115
+            },
+            {
+              "surah": 79,
+              "name": "An-Nazi'at",
+              "token_mass": 120
+            },
+            {
+              "surah": 75,
+              "name": "Al-Qiyamah",
+              "token_mass": 106
+            },
+            {
+              "surah": 78,
+              "name": "An-Naba",
+              "token_mass": 131
+            }
+          ],
+          "64": [
+            {
+              "surah": 66,
+              "name": "At-Tahrim",
+              "token_mass": 171
+            },
+            {
+              "surah": 69,
+              "name": "Al-Haqqah",
+              "token_mass": 167
+            },
+            {
+              "surah": 76,
+              "name": "Al-Insan",
+              "token_mass": 174
+            },
+            {
+              "surah": 72,
+              "name": "Al-Jinn",
+              "token_mass": 178
+            },
+            {
+              "surah": 74,
+              "name": "Al-Muddaththir",
+              "token_mass": 162
+            }
+          ]
+        },
+        "pass_nominal_0_05": true,
+        "successful_draws": 10000,
+        "failed_draws": 0
+      }
+    }
+  ],
+  "mw5_all_cells_pass_nominal": true,
+  "n_target_cells_pass_alpha_bon": 0,
+  "verdict": "NULL"
+}

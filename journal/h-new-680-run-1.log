@@ -1,0 +1,60 @@
+=== H-NEW-680 (Multi-K compression-tail spectrum) ===
+Pre-reg SHA: 316642e9ac0839a63f9f3817e048565ca393b944161fa00e0c4d38874a572c46
+Seed: 20260434, K values: [7, 11, 22], n_perms per K: 10000
+α_bon (within-K, 3 models)  = 0.01667
+α_bon (across-K, additional 3-K) = 0.00556
+
+========================================
+   K = 7
+========================================
+  Windows: 108 (start s=1..108)
+  d̄ range: best=0.2956 at s=106; worst=1.0643 at s=53
+  LINEAR     : β=-0.00617  R²=0.7459  adjR²=0.7435
+  QUADRATIC  : R²=0.9523  adjR²=0.9514
+  TWO-PIECE  : best kink (coarse {25,50,75}) = 50, R²=0.9485
+  TWO-PIECE  : best kink (refine 25..75 by 5) = 55, R²=0.9582, β=-0.01265
+  PRIMARY (highest adj-R²): quadratic, R²=0.9523, adjR²=0.9514
+  Running 10000 permutations...
+    Linear     R² obs=0.7459  null mean=0.0588  p=0.00000
+    Quadratic  R² obs=0.9523  null mean=0.1140  p=0.00000
+    Two-piece  R² obs=0.9485  null mean=0.0589  p=0.00000
+
+========================================
+   K = 11
+========================================
+  Windows: 104 (start s=1..104)
+  d̄ range: best=0.3020 at s=103; worst=1.0148 at s=47
+  LINEAR     : β=-0.00621  R²=0.7627  adjR²=0.7604
+  QUADRATIC  : R²=0.9712  adjR²=0.9706
+  TWO-PIECE  : best kink (coarse {25,50,75}) = 50, R²=0.9757
+  TWO-PIECE  : best kink (refine 25..75 by 5) = 55, R²=0.9803, β=-0.01338
+  PRIMARY (highest adj-R²): two-piece-kink-50, R²=0.9757, adjR²=0.9755
+  Running 10000 permutations...
+    Linear     R² obs=0.7627  null mean=0.0968  p=0.00000
+    Quadratic  R² obs=0.9712  null mean=0.1842  p=0.00000
+    Two-piece  R² obs=0.9757  null mean=0.0953  p=0.00000
+
+========================================
+   K = 22
+========================================
+  Windows: 93 (start s=1..93)
+  d̄ range: best=0.3729 at s=93; worst=0.9803 at s=37
+  LINEAR     : β=-0.00607  R²=0.7704  adjR²=0.7678
+  QUADRATIC  : R²=0.9829  adjR²=0.9825
+  TWO-PIECE  : best kink (coarse {25,50,75}) = 50, R²=0.9933
+  TWO-PIECE  : best kink (refine 25..75 by 5) = 50, R²=0.9933, β=-0.01337
+  PRIMARY (highest adj-R²): two-piece-kink-50, R²=0.9933, adjR²=0.9932
+  Running 10000 permutations...
+    Linear     R² obs=0.7704  null mean=0.1954  p=0.00590
+    Quadratic  R² obs=0.9829  null mean=0.3662  p=0.00000
+    Two-piece  R² obs=0.9933  null mean=0.1917  p=0.00000
+
+========================================
+   CROSS-K CONVERGENCE
+========================================
+  Coarse-grid kinks (primary): [(11, 50), (22, 50)]
+  Refined-grid kinks         : [(7, 55), (11, 55), (22, 50)]
+
+=== VERDICT: STRICT PASS (SCALE-INVARIANT) — at every K ∈ [7, 11, 22] the two-piece-kink law clears α_cross=0.00556, refined kinks span 5 surahs (within ±10 of s=50). ===
+
+Wrote /Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-680.json

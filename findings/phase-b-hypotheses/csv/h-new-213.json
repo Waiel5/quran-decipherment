@@ -1,0 +1,567 @@
+{
+  "id": "H-NEW-213",
+  "seed": 20260419,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "rules_tuple": "(Hafs-Kūfan; no-tashkeel; pause-marks stripped; word = whitespace-split Arabic-letter runs; min_count=3; n=1..12)",
+  "n_surahs": 114,
+  "primary_H1": {
+    "n_refrain_maxN_ge_3": 49,
+    "n_total": 114,
+    "fraction": 0.4298245614035088,
+    "H0_p": 0.1,
+    "p_binomial_upper": 6.282040753913916e-20,
+    "alpha_bon": 0.025,
+    "verdict": "PASS"
+  },
+  "secondary_H2_vs_H195": {
+    "n_refrain_with_residual": 49,
+    "n_nonrefrain_with_residual": 65,
+    "median_residual_refrain": -0.023751,
+    "median_residual_nonrefrain": 0.123169,
+    "MWU_U1": 1024.0,
+    "MWU_z": -3.2539992877092008,
+    "MWU_p_two_sided": 0.0011379256511494518,
+    "alpha_bon": 0.025,
+    "direction_predicted": "refrain_lower_residual",
+    "direction_observed": "refrain_lower_residual",
+    "verdict": "PASS"
+  },
+  "spearman_MaxN_vs_H195_residual": {
+    "n": 114,
+    "rho": -0.21584776738821612,
+    "p_two_sided": 0.019311317557547447
+  },
+  "MaxN_distribution": {
+    "0": 17,
+    "1": 29,
+    "2": 19,
+    "3": 18,
+    "4": 10,
+    "5": 9,
+    "6": 4,
+    "7": 2,
+    "8": 1,
+    "9": 2,
+    "10": 2,
+    "12": 1
+  },
+  "top20_by_MaxN": [
+    {
+      "surah_id": 26,
+      "name": "الشعراء",
+      "transliteration": "Ash-Shu'ara",
+      "MaxN": 12,
+      "top_ngram": "إن في ذلك لآية وما كان أكثرهم مؤمنين وإن ربك لهو العزيز",
+      "top_count": 8,
+      "length_tokens": 1320,
+      "highest_count_refrain": {
+        "ngram": "العزيز الرحيم",
+        "count": 9,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 7,
+      "name": "الأعراف",
+      "transliteration": "Al-A'raf",
+      "MaxN": 10,
+      "top_ngram": "قال يا قوم اعبدوا الله ما لكم من إله غيره",
+      "top_count": 3,
+      "length_tokens": 3341,
+      "highest_count_refrain": {
+        "ngram": "في الأرض",
+        "count": 10,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 11,
+      "name": "هود",
+      "transliteration": "Hud",
+      "MaxN": 10,
+      "top_ngram": "قال يا قوم أرأيتم إن كنت على بينة من ربي",
+      "top_count": 3,
+      "length_tokens": 1946,
+      "highest_count_refrain": {
+        "ngram": "قال يا",
+        "count": 9,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 2,
+      "name": "البقرة",
+      "transliteration": "Al-Baqarah",
+      "MaxN": 9,
+      "top_ngram": "أجرهم عند ربهم ولا خوف عليهم ولا هم يحزنون",
+      "top_count": 4,
+      "length_tokens": 6140,
+      "highest_count_refrain": {
+        "ngram": "إن الله",
+        "count": 23,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 54,
+      "name": "القمر",
+      "transliteration": "Al-Qamar",
+      "MaxN": 9,
+      "top_ngram": "عذابي ونذر ولقد يسرنا القرآن للذكر فهل من مدكر",
+      "top_count": 3,
+      "length_tokens": 342,
+      "highest_count_refrain": {
+        "ngram": "فهل من مدكر",
+        "count": 6,
+        "n": 3
+      }
+    },
+    {
+      "surah_id": 5,
+      "name": "المائدة",
+      "transliteration": "Al-Ma'idah",
+      "MaxN": 8,
+      "top_ngram": "ومن لم يحكم بما أنزل الله فأولئك هم",
+      "top_count": 3,
+      "length_tokens": 2837,
+      "highest_count_refrain": {
+        "ngram": "الذين آمنوا",
+        "count": 20,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 4,
+      "name": "النساء",
+      "transliteration": "An-Nisa",
+      "MaxN": 7,
+      "top_ngram": "جنات تجري من تحتها الأنهار خالدين فيها",
+      "top_count": 3,
+      "length_tokens": 3763,
+      "highest_count_refrain": {
+        "ngram": "إن الله",
+        "count": 25,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 37,
+      "name": "الصافات",
+      "transliteration": "As-Saffat",
+      "MaxN": 7,
+      "top_ngram": "كذلك نجزي المحسنين إنه من عبادنا المؤمنين",
+      "top_count": 3,
+      "length_tokens": 865,
+      "highest_count_refrain": {
+        "ngram": "عباد الله المخلصين",
+        "count": 5,
+        "n": 3
+      }
+    },
+    {
+      "surah_id": 3,
+      "name": "آل عمران",
+      "transliteration": "Ali 'Imran",
+      "MaxN": 6,
+      "top_ngram": "تجري من تحتها الأنهار خالدين فيها",
+      "top_count": 3,
+      "length_tokens": 3501,
+      "highest_count_refrain": {
+        "ngram": "إن الله",
+        "count": 15,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 6,
+      "name": "الأنعام",
+      "transliteration": "Al-An'am",
+      "MaxN": 6,
+      "top_ngram": "أظلم ممن افترى على الله كذبا",
+      "top_count": 3,
+      "length_tokens": 3056,
+      "highest_count_refrain": {
+        "ngram": "بما كانوا",
+        "count": 10,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 47,
+      "name": "محمد",
+      "transliteration": "Muhammad",
+      "MaxN": 6,
+      "top_ngram": "الذين كفروا وصدوا عن سبيل الله",
+      "top_count": 3,
+      "length_tokens": 542,
+      "highest_count_refrain": {
+        "ngram": "الذين آمنوا",
+        "count": 6,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 55,
+      "name": "الرحمن",
+      "transliteration": "Ar-Rahman",
+      "MaxN": 6,
+      "top_ngram": "ولا جان فبأي آلاء ربكما تكذبان",
+      "top_count": 3,
+      "length_tokens": 352,
+      "highest_count_refrain": {
+        "ngram": "فبأي آلاء ربكما تكذبان",
+        "count": 31,
+        "n": 4
+      }
+    },
+    {
+      "surah_id": 16,
+      "name": "النحل",
+      "transliteration": "An-Nahl",
+      "MaxN": 5,
+      "top_ngram": "إن في ذلك لآية لقوم",
+      "top_count": 5,
+      "length_tokens": 1844,
+      "highest_count_refrain": {
+        "ngram": "إن الله",
+        "count": 8,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 24,
+      "name": "النور",
+      "transliteration": "An-Nur",
+      "MaxN": 5,
+      "top_ngram": "ولولا فضل الله عليكم ورحمته",
+      "top_count": 4,
+      "length_tokens": 1319,
+      "highest_count_refrain": {
+        "ngram": "أو بيوت",
+        "count": 8,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 30,
+      "name": "الروم",
+      "transliteration": "Ar-Rum",
+      "MaxN": 5,
+      "top_ngram": "إن في ذلك لآيات لقوم",
+      "top_count": 4,
+      "length_tokens": 817,
+      "highest_count_refrain": {
+        "ngram": "ومن آياته",
+        "count": 7,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 12,
+      "name": "يوسف",
+      "transliteration": "Yusuf",
+      "MaxN": 5,
+      "top_ngram": "ولكن أكثر الناس لا يعلمون",
+      "top_count": 3,
+      "length_tokens": 1795,
+      "highest_count_refrain": {
+        "ngram": "قالوا يا",
+        "count": 7,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 15,
+      "name": "الحجر",
+      "transliteration": "Al-Hijr",
+      "MaxN": 5,
+      "top_ngram": "من صلصال من حمإ مسنون",
+      "top_count": 3,
+      "length_tokens": 657,
+      "highest_count_refrain": {
+        "ngram": "من صلصال من حمإ مسنون",
+        "count": 3,
+        "n": 5
+      }
+    },
+    {
+      "surah_id": 18,
+      "name": "الكهف",
+      "transliteration": "Al-Kahf",
+      "MaxN": 5,
+      "top_ngram": "إنك لن تستطيع معي صبرا",
+      "top_count": 3,
+      "length_tokens": 1583,
+      "highest_count_refrain": {
+        "ngram": "حتى إذا",
+        "count": 8,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 40,
+      "name": "غافر",
+      "transliteration": "Ghafir",
+      "MaxN": 5,
+      "top_ngram": "الذين يجادلون في آيات الله",
+      "top_count": 3,
+      "length_tokens": 1226,
+      "highest_count_refrain": {
+        "ngram": "في الأرض",
+        "count": 7,
+        "n": 2
+      }
+    },
+    {
+      "surah_id": 49,
+      "name": "الحجرات",
+      "transliteration": "Al-Hujurat",
+      "MaxN": 5,
+      "top_ngram": "يا أيها الذين آمنوا لا",
+      "top_count": 3,
+      "length_tokens": 353,
+      "highest_count_refrain": {
+        "ngram": "إن الله",
+        "count": 6,
+        "n": 2
+      }
+    }
+  ],
+  "top20_by_highest_count_refrain": [
+    {
+      "surah_id": 55,
+      "transliteration": "Ar-Rahman",
+      "refrain": {
+        "ngram": "فبأي آلاء ربكما تكذبان",
+        "count": 31,
+        "n": 4
+      },
+      "MaxN": 6,
+      "length_tokens": 352
+    },
+    {
+      "surah_id": 4,
+      "transliteration": "An-Nisa",
+      "refrain": {
+        "ngram": "إن الله",
+        "count": 25,
+        "n": 2
+      },
+      "MaxN": 7,
+      "length_tokens": 3763
+    },
+    {
+      "surah_id": 2,
+      "transliteration": "Al-Baqarah",
+      "refrain": {
+        "ngram": "إن الله",
+        "count": 23,
+        "n": 2
+      },
+      "MaxN": 9,
+      "length_tokens": 6140
+    },
+    {
+      "surah_id": 5,
+      "transliteration": "Al-Ma'idah",
+      "refrain": {
+        "ngram": "الذين آمنوا",
+        "count": 20,
+        "n": 2
+      },
+      "MaxN": 8,
+      "length_tokens": 2837
+    },
+    {
+      "surah_id": 3,
+      "transliteration": "Ali 'Imran",
+      "refrain": {
+        "ngram": "إن الله",
+        "count": 15,
+        "n": 2
+      },
+      "MaxN": 6,
+      "length_tokens": 3501
+    },
+    {
+      "surah_id": 9,
+      "transliteration": "At-Tawbah",
+      "refrain": {
+        "ngram": "إن الله",
+        "count": 15,
+        "n": 2
+      },
+      "MaxN": 4,
+      "length_tokens": 2505
+    },
+    {
+      "surah_id": 22,
+      "transliteration": "Al-Hajj",
+      "refrain": {
+        "ngram": "إن الله",
+        "count": 14,
+        "n": 2
+      },
+      "MaxN": 4,
+      "length_tokens": 1279
+    },
+    {
+      "surah_id": 33,
+      "transliteration": "Al-Ahzab",
+      "refrain": {
+        "ngram": "يا أيها",
+        "count": 12,
+        "n": 2
+      },
+      "MaxN": 4,
+      "length_tokens": 1303
+    },
+    {
+      "surah_id": 77,
+      "transliteration": "Al-Mursalat",
+      "refrain": {
+        "ngram": "ويل يومئذ للمكذبين",
+        "count": 10,
+        "n": 3
+      },
+      "MaxN": 4,
+      "length_tokens": 181
+    },
+    {
+      "surah_id": 6,
+      "transliteration": "Al-An'am",
+      "refrain": {
+        "ngram": "بما كانوا",
+        "count": 10,
+        "n": 2
+      },
+      "MaxN": 6,
+      "length_tokens": 3056
+    },
+    {
+      "surah_id": 7,
+      "transliteration": "Al-A'raf",
+      "refrain": {
+        "ngram": "في الأرض",
+        "count": 10,
+        "n": 2
+      },
+      "MaxN": 10,
+      "length_tokens": 3341
+    },
+    {
+      "surah_id": 10,
+      "transliteration": "Yunus",
+      "refrain": {
+        "ngram": "في الأرض",
+        "count": 10,
+        "n": 2
+      },
+      "MaxN": 4,
+      "length_tokens": 1839
+    },
+    {
+      "surah_id": 8,
+      "transliteration": "Al-Anfal",
+      "refrain": {
+        "ngram": "يا أيها",
+        "count": 9,
+        "n": 2
+      },
+      "MaxN": 4,
+      "length_tokens": 1242
+    },
+    {
+      "surah_id": 11,
+      "transliteration": "Hud",
+      "refrain": {
+        "ngram": "قال يا",
+        "count": 9,
+        "n": 2
+      },
+      "MaxN": 10,
+      "length_tokens": 1946
+    },
+    {
+      "surah_id": 20,
+      "transliteration": "Taha",
+      "refrain": {
+        "ngram": "يا موسى",
+        "count": 9,
+        "n": 2
+      },
+      "MaxN": 3,
+      "length_tokens": 1353
+    },
+    {
+      "surah_id": 26,
+      "transliteration": "Ash-Shu'ara",
+      "refrain": {
+        "ngram": "العزيز الرحيم",
+        "count": 9,
+        "n": 2
+      },
+      "MaxN": 12,
+      "length_tokens": 1320
+    },
+    {
+      "surah_id": 16,
+      "transliteration": "An-Nahl",
+      "refrain": {
+        "ngram": "إن الله",
+        "count": 8,
+        "n": 2
+      },
+      "MaxN": 5,
+      "length_tokens": 1844
+    },
+    {
+      "surah_id": 18,
+      "transliteration": "Al-Kahf",
+      "refrain": {
+        "ngram": "حتى إذا",
+        "count": 8,
+        "n": 2
+      },
+      "MaxN": 5,
+      "length_tokens": 1583
+    },
+    {
+      "surah_id": 24,
+      "transliteration": "An-Nur",
+      "refrain": {
+        "ngram": "أو بيوت",
+        "count": 8,
+        "n": 2
+      },
+      "MaxN": 5,
+      "length_tokens": 1319
+    },
+    {
+      "surah_id": 31,
+      "transliteration": "Luqman",
+      "refrain": {
+        "ngram": "إن الله",
+        "count": 8,
+        "n": 2
+      },
+      "MaxN": 2,
+      "length_tokens": 550
+    }
+  ],
+  "cross_reference_overlaps": {
+    "refrain_set_size": 49,
+    "overlap_with_oath_cluster": [
+      37,
+      77
+    ],
+    "overlap_with_short_creedal": [],
+    "overlap_with_musabbihat": [
+      17,
+      57,
+      61
+    ]
+  },
+  "H_NEW_191_cluster_4_note": "H-NEW-191 'cluster-4 refrain-stylistic' does not exist as a saved finding in this project (confirmed by grep; h-new-196-oath-cluster prereg explicitly states H-NEW-191 'does not exist in this project yet'). H-NEW-213 therefore operationalizes the refrain-stylistic axis directly via MaxN>=3, rather than reverse-inferring membership from a non-existent cluster assignment. The set here (refrain_ids) is the empirical refrain-structured set."
+}

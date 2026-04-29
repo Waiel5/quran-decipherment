@@ -1,0 +1,4124 @@
+{
+  "finding_id": "h-new-236-1c",
+  "title": "Targeted mufassal-short hinge injection on top-50 global scaffold",
+  "pre_reg_sha256": "001eff4e16af49c9f8b40e1e00ec827e0612cfe3b3b375ee12a82bc89453f67e",
+  "parent": "h-new-236-1a",
+  "grandparent": "h-new-236-1 -> h-new-236 -> cross-finding-020",
+  "seed": 20260419,
+  "n_sim": 1000,
+  "n_random": 1000,
+  "sa_iters": 200,
+  "rules_tuple": "(no-tashkeel, 114 surahs Hafs-Kufan, basmala-counted-only-in-surah-1, QAC-STEM root tokens, Fisher-Rao arccos-Bhattacharyya per H-NEW-111, stochastic 2-opt with classical-block + Q1-lock + length-stratification + M2-muq constraints + TOP-50-GLOBAL-HINGE-PRESERVATION + TOP-JUZ30-INTERNAL-HINGE-PRESERVATION for m in {5, 10})",
+  "empirical": {
+    "L_path": 85.759655,
+    "W_wrap": 0.38837,
+    "L_tiwal": 5.724401,
+    "L_hawamim": 5.2053780000000005,
+    "L_mufassal_short": 16.514906,
+    "L_tail_91_114": 8.639798
+  },
+  "baseline_h2361a_top50": {
+    "hinges_1indexed": [
+      [
+        1,
+        2
+      ],
+      [
+        54,
+        55
+      ],
+      [
+        55,
+        56
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        56,
+        57
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        53,
+        54
+      ],
+      [
+        49,
+        50
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        42,
+        43
+      ],
+      [
+        46,
+        47
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        26,
+        27
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        35,
+        36
+      ],
+      [
+        66,
+        67
+      ],
+      [
+        38,
+        39
+      ],
+      [
+        52,
+        53
+      ],
+      [
+        34,
+        35
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        29,
+        30
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        31,
+        32
+      ],
+      [
+        30,
+        31
+      ],
+      [
+        37,
+        38
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        36,
+        37
+      ],
+      [
+        47,
+        48
+      ],
+      [
+        57,
+        58
+      ],
+      [
+        28,
+        29
+      ],
+      [
+        65,
+        66
+      ],
+      [
+        43,
+        44
+      ],
+      [
+        70,
+        71
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        48,
+        49
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        44,
+        45
+      ],
+      [
+        76,
+        77
+      ],
+      [
+        40,
+        41
+      ]
+    ],
+    "l_path_gap": 0.06216896300000485,
+    "block_chi2": 115.52335839443509,
+    "mufassal_empirical": 16.514906,
+    "mufassal_sim_mean": 15.619384153,
+    "mufassal_gap": 0.8955218469999995
+  },
+  "canonical_edge_ranking_top_100": [
+    {
+      "rank": 1,
+      "a": 1,
+      "b": 2,
+      "distance": 1.177623,
+      "block_a": "fatiha",
+      "block_b": "tiwal",
+      "cross_block": true
+    },
+    {
+      "rank": 2,
+      "a": 54,
+      "b": 55,
+      "distance": 1.151559,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 3,
+      "a": 55,
+      "b": 56,
+      "distance": 1.149328,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 4,
+      "a": 32,
+      "b": 33,
+      "distance": 1.132955,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 5,
+      "a": 24,
+      "b": 25,
+      "distance": 1.129055,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 6,
+      "a": 56,
+      "b": 57,
+      "distance": 1.115634,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 7,
+      "a": 33,
+      "b": 34,
+      "distance": 1.115391,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 8,
+      "a": 9,
+      "b": 10,
+      "distance": 1.068939,
+      "block_a": "tiwal",
+      "block_b": "middle_pre_hm",
+      "cross_block": true
+    },
+    {
+      "rank": 9,
+      "a": 12,
+      "b": 13,
+      "distance": 1.068294,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 10,
+      "a": 23,
+      "b": 24,
+      "distance": 1.049734,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 11,
+      "a": 7,
+      "b": 8,
+      "distance": 1.030068,
+      "block_a": "tiwal",
+      "block_b": "tiwal",
+      "cross_block": false
+    },
+    {
+      "rank": 12,
+      "a": 14,
+      "b": 15,
+      "distance": 1.009111,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 13,
+      "a": 53,
+      "b": 54,
+      "distance": 1.006282,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 14,
+      "a": 49,
+      "b": 50,
+      "distance": 1.003462,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 15,
+      "a": 15,
+      "b": 16,
+      "distance": 1.002022,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 16,
+      "a": 42,
+      "b": 43,
+      "distance": 0.991218,
+      "block_a": "hawamim",
+      "block_b": "hawamim",
+      "cross_block": false
+    },
+    {
+      "rank": 17,
+      "a": 46,
+      "b": 47,
+      "distance": 0.990505,
+      "block_a": "hawamim",
+      "block_b": "middle_post_hm",
+      "cross_block": true
+    },
+    {
+      "rank": 18,
+      "a": 19,
+      "b": 20,
+      "distance": 0.980606,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 19,
+      "a": 20,
+      "b": 21,
+      "distance": 0.972137,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 20,
+      "a": 11,
+      "b": 12,
+      "distance": 0.963772,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 21,
+      "a": 16,
+      "b": 17,
+      "distance": 0.962333,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 22,
+      "a": 25,
+      "b": 26,
+      "distance": 0.959584,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 23,
+      "a": 21,
+      "b": 22,
+      "distance": 0.959174,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 24,
+      "a": 26,
+      "b": 27,
+      "distance": 0.958539,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 25,
+      "a": 22,
+      "b": 23,
+      "distance": 0.952979,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 26,
+      "a": 35,
+      "b": 36,
+      "distance": 0.943094,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 27,
+      "a": 66,
+      "b": 67,
+      "distance": 0.940813,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 28,
+      "a": 38,
+      "b": 39,
+      "distance": 0.936449,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 29,
+      "a": 52,
+      "b": 53,
+      "distance": 0.928275,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 30,
+      "a": 34,
+      "b": 35,
+      "distance": 0.926803,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 31,
+      "a": 18,
+      "b": 19,
+      "distance": 0.925359,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 32,
+      "a": 29,
+      "b": 30,
+      "distance": 0.91533,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 33,
+      "a": 8,
+      "b": 9,
+      "distance": 0.910997,
+      "block_a": "tiwal",
+      "block_b": "tiwal",
+      "cross_block": false
+    },
+    {
+      "rank": 34,
+      "a": 31,
+      "b": 32,
+      "distance": 0.909461,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 35,
+      "a": 30,
+      "b": 31,
+      "distance": 0.90887,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 36,
+      "a": 37,
+      "b": 38,
+      "distance": 0.903476,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 37,
+      "a": 17,
+      "b": 18,
+      "distance": 0.901301,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 38,
+      "a": 36,
+      "b": 37,
+      "distance": 0.900232,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 39,
+      "a": 47,
+      "b": 48,
+      "distance": 0.889264,
+      "block_a": "middle_post_hm",
+      "block_b": "middle_post_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 40,
+      "a": 57,
+      "b": 58,
+      "distance": 0.88904,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 41,
+      "a": 28,
+      "b": 29,
+      "distance": 0.886506,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 42,
+      "a": 65,
+      "b": 66,
+      "distance": 0.870463,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 43,
+      "a": 43,
+      "b": 44,
+      "distance": 0.864706,
+      "block_a": "hawamim",
+      "block_b": "hawamim",
+      "cross_block": false
+    },
+    {
+      "rank": 44,
+      "a": 70,
+      "b": 71,
+      "distance": 0.862234,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 45,
+      "a": 5,
+      "b": 6,
+      "distance": 0.860156,
+      "block_a": "tiwal",
+      "block_b": "tiwal",
+      "cross_block": false
+    },
+    {
+      "rank": 46,
+      "a": 48,
+      "b": 49,
+      "distance": 0.858354,
+      "block_a": "middle_post_hm",
+      "block_b": "mufassal_long",
+      "cross_block": true
+    },
+    {
+      "rank": 47,
+      "a": 41,
+      "b": 42,
+      "distance": 0.854007,
+      "block_a": "hawamim",
+      "block_b": "hawamim",
+      "cross_block": false
+    },
+    {
+      "rank": 48,
+      "a": 44,
+      "b": 45,
+      "distance": 0.843896,
+      "block_a": "hawamim",
+      "block_b": "hawamim",
+      "cross_block": false
+    },
+    {
+      "rank": 49,
+      "a": 76,
+      "b": 77,
+      "distance": 0.843038,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 50,
+      "a": 40,
+      "b": 41,
+      "distance": 0.840334,
+      "block_a": "hawamim",
+      "block_b": "hawamim",
+      "cross_block": false
+    },
+    {
+      "rank": 51,
+      "a": 67,
+      "b": 68,
+      "distance": 0.837853,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 52,
+      "a": 68,
+      "b": 69,
+      "distance": 0.833625,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 53,
+      "a": 58,
+      "b": 59,
+      "distance": 0.830137,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 54,
+      "a": 50,
+      "b": 51,
+      "distance": 0.823948,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 55,
+      "a": 69,
+      "b": 70,
+      "distance": 0.820207,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 56,
+      "a": 75,
+      "b": 76,
+      "distance": 0.816524,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 57,
+      "a": 59,
+      "b": 60,
+      "distance": 0.816186,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 58,
+      "a": 45,
+      "b": 46,
+      "distance": 0.811217,
+      "block_a": "hawamim",
+      "block_b": "hawamim",
+      "cross_block": false
+    },
+    {
+      "rank": 59,
+      "a": 74,
+      "b": 75,
+      "distance": 0.809957,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 60,
+      "a": 71,
+      "b": 72,
+      "distance": 0.807578,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 61,
+      "a": 60,
+      "b": 61,
+      "distance": 0.807414,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 62,
+      "a": 10,
+      "b": 11,
+      "distance": 0.805201,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 63,
+      "a": 27,
+      "b": 28,
+      "distance": 0.804754,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 64,
+      "a": 39,
+      "b": 40,
+      "distance": 0.795302,
+      "block_a": "middle_pre_hm",
+      "block_b": "hawamim",
+      "cross_block": true
+    },
+    {
+      "rank": 65,
+      "a": 3,
+      "b": 4,
+      "distance": 0.793084,
+      "block_a": "tiwal",
+      "block_b": "tiwal",
+      "cross_block": false
+    },
+    {
+      "rank": 66,
+      "a": 72,
+      "b": 73,
+      "distance": 0.792572,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 67,
+      "a": 13,
+      "b": 14,
+      "distance": 0.783843,
+      "block_a": "middle_pre_hm",
+      "block_b": "middle_pre_hm",
+      "cross_block": false
+    },
+    {
+      "rank": 68,
+      "a": 4,
+      "b": 5,
+      "distance": 0.778367,
+      "block_a": "tiwal",
+      "block_b": "tiwal",
+      "cross_block": false
+    },
+    {
+      "rank": 69,
+      "a": 64,
+      "b": 65,
+      "distance": 0.777412,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 70,
+      "a": 73,
+      "b": 74,
+      "distance": 0.761384,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 71,
+      "a": 51,
+      "b": 52,
+      "distance": 0.754458,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 72,
+      "a": 61,
+      "b": 62,
+      "distance": 0.734549,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 73,
+      "a": 78,
+      "b": 79,
+      "distance": 0.720817,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 74,
+      "a": 6,
+      "b": 7,
+      "distance": 0.720799,
+      "block_a": "tiwal",
+      "block_b": "tiwal",
+      "cross_block": false
+    },
+    {
+      "rank": 75,
+      "a": 79,
+      "b": 80,
+      "distance": 0.706355,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 76,
+      "a": 77,
+      "b": 78,
+      "distance": 0.703319,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_short",
+      "cross_block": true
+    },
+    {
+      "rank": 77,
+      "a": 63,
+      "b": 64,
+      "distance": 0.695406,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 78,
+      "a": 62,
+      "b": 63,
+      "distance": 0.685961,
+      "block_a": "mufassal_long",
+      "block_b": "mufassal_long",
+      "cross_block": false
+    },
+    {
+      "rank": 79,
+      "a": 88,
+      "b": 89,
+      "distance": 0.657287,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 80,
+      "a": 83,
+      "b": 84,
+      "distance": 0.652163,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 81,
+      "a": 80,
+      "b": 81,
+      "distance": 0.635376,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 82,
+      "a": 89,
+      "b": 90,
+      "distance": 0.632635,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 83,
+      "a": 2,
+      "b": 3,
+      "distance": 0.63093,
+      "block_a": "tiwal",
+      "block_b": "tiwal",
+      "cross_block": false
+    },
+    {
+      "rank": 84,
+      "a": 84,
+      "b": 85,
+      "distance": 0.584345,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 85,
+      "a": 98,
+      "b": 99,
+      "distance": 0.581233,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 86,
+      "a": 82,
+      "b": 83,
+      "distance": 0.577005,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 87,
+      "a": 97,
+      "b": 98,
+      "distance": 0.576029,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 88,
+      "a": 85,
+      "b": 86,
+      "distance": 0.568419,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 89,
+      "a": 87,
+      "b": 88,
+      "distance": 0.557249,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 90,
+      "a": 96,
+      "b": 97,
+      "distance": 0.545334,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 91,
+      "a": 90,
+      "b": 91,
+      "distance": 0.529993,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 92,
+      "a": 81,
+      "b": 82,
+      "distance": 0.528566,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 93,
+      "a": 86,
+      "b": 87,
+      "distance": 0.524898,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 94,
+      "a": 95,
+      "b": 96,
+      "distance": 0.504885,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 95,
+      "a": 91,
+      "b": 92,
+      "distance": 0.473442,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 96,
+      "a": 92,
+      "b": 93,
+      "distance": 0.433778,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 97,
+      "a": 101,
+      "b": 102,
+      "distance": 0.386318,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 98,
+      "a": 109,
+      "b": 110,
+      "distance": 0.380542,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 99,
+      "a": 99,
+      "b": 100,
+      "distance": 0.379279,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 100,
+      "a": 100,
+      "b": 101,
+      "distance": 0.368084,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    }
+  ],
+  "juz30_internal_consecutive_ranking_top_15": [
+    {
+      "rank": 73,
+      "a": 78,
+      "b": 79,
+      "distance": 0.720817,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 75,
+      "a": 79,
+      "b": 80,
+      "distance": 0.706355,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 79,
+      "a": 88,
+      "b": 89,
+      "distance": 0.657287,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 80,
+      "a": 83,
+      "b": 84,
+      "distance": 0.652163,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 81,
+      "a": 80,
+      "b": 81,
+      "distance": 0.635376,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 82,
+      "a": 89,
+      "b": 90,
+      "distance": 0.632635,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 84,
+      "a": 84,
+      "b": 85,
+      "distance": 0.584345,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 85,
+      "a": 98,
+      "b": 99,
+      "distance": 0.581233,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 86,
+      "a": 82,
+      "b": 83,
+      "distance": 0.577005,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 87,
+      "a": 97,
+      "b": 98,
+      "distance": 0.576029,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 88,
+      "a": 85,
+      "b": 86,
+      "distance": 0.568419,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 89,
+      "a": 87,
+      "b": 88,
+      "distance": 0.557249,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 90,
+      "a": 96,
+      "b": 97,
+      "distance": 0.545334,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 91,
+      "a": 90,
+      "b": 91,
+      "distance": 0.529993,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    },
+    {
+      "rank": 92,
+      "a": 81,
+      "b": 82,
+      "distance": 0.528566,
+      "block_a": "mufassal_short",
+      "block_b": "mufassal_short",
+      "cross_block": false
+    }
+  ],
+  "random_baseline_summaries": {
+    "L_path": {
+      "mean": 104.367453627,
+      "stdev": 1.6412987535257484,
+      "min": 98.20148199999997,
+      "max": 109.30694100000002,
+      "q025": 101.05686000000006,
+      "q975": 107.47256099999997
+    },
+    "W_wrap": {
+      "mean": 0.923868755,
+      "stdev": 0.21965036247367992,
+      "min": 0.212673,
+      "max": 1.550933,
+      "q025": 0.366935,
+      "q975": 1.272749
+    },
+    "L_tiwal": {
+      "mean": 6.47773405,
+      "stdev": 0.6476541347266576,
+      "min": 3.1500560000000006,
+      "max": 8.204033,
+      "q025": 5.061897,
+      "q975": 7.624731999999999
+    },
+    "L_hawamim": {
+      "mean": 5.557973878,
+      "stdev": 0.5843395500081037,
+      "min": 3.113482,
+      "max": 7.497291000000001,
+      "q025": 4.241611,
+      "q975": 6.5658970000000005
+    },
+    "L_mufassal_short": {
+      "mean": 33.238862372,
+      "stdev": 1.328073266805346,
+      "min": 26.88663999999999,
+      "max": 37.380959000000004,
+      "q025": 30.635252,
+      "q975": 35.828167
+    },
+    "L_tail_91_114": {
+      "mean": 21.203917101,
+      "stdev": 1.1431761523716957,
+      "min": 15.942858000000001,
+      "max": 24.70081,
+      "q025": 18.940907999999997,
+      "q975": 23.352032
+    }
+  },
+  "cells": {
+    "cell_a_top50_plus_j30_top5": {
+      "base_scaffold": "H-NEW-236.1a top-50",
+      "total_hinge_count": 55,
+      "hinges_1indexed": [
+        [
+          1,
+          2
+        ],
+        [
+          54,
+          55
+        ],
+        [
+          55,
+          56
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          56,
+          57
+        ],
+        [
+          33,
+          34
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          53,
+          54
+        ],
+        [
+          49,
+          50
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          46,
+          47
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          35,
+          36
+        ],
+        [
+          66,
+          67
+        ],
+        [
+          38,
+          39
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          31,
+          32
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          37,
+          38
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          57,
+          58
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          43,
+          44
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          48,
+          49
+        ],
+        [
+          41,
+          42
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          76,
+          77
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          78,
+          79
+        ],
+        [
+          79,
+          80
+        ],
+        [
+          88,
+          89
+        ],
+        [
+          83,
+          84
+        ],
+        [
+          80,
+          81
+        ]
+      ],
+      "added_juz30_internal_hinges_1indexed": [
+        [
+          78,
+          79
+        ],
+        [
+          79,
+          80
+        ],
+        [
+          88,
+          89
+        ],
+        [
+          83,
+          84
+        ],
+        [
+          80,
+          81
+        ]
+      ],
+      "within_hinges_1indexed": [
+        [
+          54,
+          55
+        ],
+        [
+          55,
+          56
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          56,
+          57
+        ],
+        [
+          33,
+          34
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          53,
+          54
+        ],
+        [
+          49,
+          50
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          35,
+          36
+        ],
+        [
+          66,
+          67
+        ],
+        [
+          38,
+          39
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          31,
+          32
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          37,
+          38
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          57,
+          58
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          43,
+          44
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          41,
+          42
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          76,
+          77
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          78,
+          79
+        ],
+        [
+          79,
+          80
+        ],
+        [
+          88,
+          89
+        ],
+        [
+          83,
+          84
+        ],
+        [
+          80,
+          81
+        ]
+      ],
+      "cross_hinges_1indexed": [
+        [
+          1,
+          2
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          46,
+          47
+        ],
+        [
+          48,
+          49
+        ]
+      ],
+      "full_analysis": {
+        "L_path": {
+          "empirical": 85.759655,
+          "sim_mean": 86.508699048,
+          "sim_std": 0.3185319281139154,
+          "sim_ci_lo": 85.828143,
+          "sim_ci_hi": 87.10522499999998,
+          "sim_percentile_of_empirical": 1.9,
+          "sim_inside_95ci": false,
+          "rand_mean": 104.367453627,
+          "rand_std": 1.6412987535257484,
+          "rand_ci_lo": 101.05686000000006,
+          "rand_ci_hi": 107.47256099999997,
+          "rand_percentile_of_empirical": 0.0,
+          "rand_inside_95ci": false
+        },
+        "W_wrap": {
+          "empirical": 0.38837,
+          "sim_mean": 0.437404201,
+          "sim_std": 0.07154313451890823,
+          "sim_ci_lo": 0.3384,
+          "sim_ci_hi": 0.624428,
+          "sim_percentile_of_empirical": 40.7,
+          "sim_inside_95ci": true,
+          "rand_mean": 0.923868755,
+          "rand_std": 0.21965036247367992,
+          "rand_ci_lo": 0.366935,
+          "rand_ci_hi": 1.272749,
+          "rand_percentile_of_empirical": 3.0,
+          "rand_inside_95ci": true
+        },
+        "L_tiwal": {
+          "empirical": 5.724401,
+          "sim_mean": 5.9522324740000006,
+          "sim_std": 0.17611282534285597,
+          "sim_ci_lo": 5.724401,
+          "sim_ci_hi": 6.116567,
+          "sim_percentile_of_empirical": 36.7,
+          "sim_inside_95ci": true,
+          "rand_mean": 6.47773405,
+          "rand_std": 0.6476541347266576,
+          "rand_ci_lo": 5.061897,
+          "rand_ci_hi": 7.624731999999999,
+          "rand_percentile_of_empirical": 11.9,
+          "rand_inside_95ci": true
+        },
+        "L_hawamim": {
+          "empirical": 5.2053780000000005,
+          "sim_mean": 5.2053780000000005,
+          "sim_std": 0.0,
+          "sim_ci_lo": 5.2053780000000005,
+          "sim_ci_hi": 5.2053780000000005,
+          "sim_percentile_of_empirical": 100.0,
+          "sim_inside_95ci": true,
+          "rand_mean": 5.557973878,
+          "rand_std": 0.5843395500081037,
+          "rand_ci_lo": 4.241611,
+          "rand_ci_hi": 6.5658970000000005,
+          "rand_percentile_of_empirical": 24.5,
+          "rand_inside_95ci": true
+        },
+        "L_mufassal_short": {
+          "empirical": 16.514906,
+          "sim_mean": 16.441383689000002,
+          "sim_std": 0.16996593643144567,
+          "sim_ci_lo": 16.057827000000003,
+          "sim_ci_hi": 16.734746,
+          "sim_percentile_of_empirical": 64.2,
+          "sim_inside_95ci": true,
+          "rand_mean": 33.238862372,
+          "rand_std": 1.328073266805346,
+          "rand_ci_lo": 30.635252,
+          "rand_ci_hi": 35.828167,
+          "rand_percentile_of_empirical": 0.0,
+          "rand_inside_95ci": false
+        },
+        "L_tail_91_114": {
+          "empirical": 8.639798,
+          "sim_mean": 10.503230953000001,
+          "sim_std": 0.7898571943435009,
+          "sim_ci_lo": 8.985740999999999,
+          "sim_ci_hi": 11.96073,
+          "sim_percentile_of_empirical": 0.6,
+          "sim_inside_95ci": false,
+          "rand_mean": 21.203917101,
+          "rand_std": 1.1431761523716957,
+          "rand_ci_lo": 18.940907999999997,
+          "rand_ci_hi": 23.352032,
+          "rand_percentile_of_empirical": 0.0,
+          "rand_inside_95ci": false
+        }
+      },
+      "block_chi2": {
+        "empirical_stat_under_sim": 1.8606936698348069,
+        "empirical_stat_under_rand": 160.2918020691386,
+        "sim_97_5th_pct": 6.3395387341702385,
+        "rand_97_5th_pct": 11.085985184205166,
+        "sim_percentile_of_empirical": 59.9,
+        "rand_percentile_of_empirical": 100.0,
+        "sim_inside_95ci": true,
+        "rand_inside_95ci": false,
+        "sim_block_means": {
+          "L_tiwal": 5.9522324740000006,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.441383689000002
+        },
+        "sim_block_stds": {
+          "L_tiwal": 0.17611282534285597,
+          "L_hawamim": 0.0,
+          "L_mufassal_short": 0.16996593643144567
+        },
+        "rand_block_means": {
+          "L_tiwal": 6.47773405,
+          "L_hawamim": 5.557973878,
+          "L_mufassal_short": 33.238862372
+        },
+        "rand_block_stds": {
+          "L_tiwal": 0.6476541347266576,
+          "L_hawamim": 0.5843395500081037,
+          "L_mufassal_short": 1.328073266805346
+        },
+        "per_block": {
+          "L_tiwal": {
+            "empirical": 5.724401,
+            "sim_mean": 5.9522324740000006,
+            "sim_std": 0.17611282534285597,
+            "sim_z": -1.2936677016932672,
+            "sim_z2": 1.6735761224043402,
+            "rand_mean": 6.47773405,
+            "rand_std": 0.6476541347266576,
+            "rand_z": -1.163171837570285,
+            "rand_z2": 1.3529687237166337
+          },
+          "L_hawamim": {
+            "empirical": 5.2053780000000005,
+            "sim_mean": 5.2053780000000005,
+            "sim_std": 0.0,
+            "sim_z": 0.0,
+            "sim_z2": 0.0,
+            "rand_mean": 5.557973878,
+            "rand_std": 0.5843395500081037,
+            "rand_z": -0.6034092301216133,
+            "rand_z2": 0.36410269899595804
+          },
+          "L_mufassal_short": {
+            "empirical": 16.514906,
+            "sim_mean": 16.441383689000002,
+            "sim_std": 0.16996593643144567,
+            "sim_z": 0.43257085827696096,
+            "sim_z2": 0.18711754743046663,
+            "rand_mean": 33.238862372,
+            "rand_std": 1.328073266805346,
+            "rand_z": -12.592645895379812,
+            "rand_z2": 158.57473064642602
+          }
+        }
+      },
+      "sim_passes": 2,
+      "rand_passes": 1,
+      "mw5_pass": true,
+      "l_path_gap_vs_sim_mean": -0.7490440480000018,
+      "mufassal_gap_vs_sim_mean": 0.07352231099999784,
+      "mufassal_gap_closed_pct_vs_h2361a_top50": 91.79000364465726,
+      "block_chi2_improvement_vs_h2361a_top50": 113.66266472460029,
+      "cell_verdict": "PARTIAL-TERMINAL-CLOSURE",
+      "sim_summaries": {
+        "L_path": {
+          "mean": 86.508699048,
+          "stdev": 0.3185319281139154,
+          "min": 85.49907899999998,
+          "max": 87.32774100000005,
+          "q025": 85.828143,
+          "q975": 87.10522499999998
+        },
+        "W_wrap": {
+          "mean": 0.437404201,
+          "stdev": 0.07154313451890823,
+          "min": 0.3384,
+          "max": 0.624428,
+          "q025": 0.3384,
+          "q975": 0.624428
+        },
+        "L_tiwal": {
+          "mean": 5.9522324740000006,
+          "stdev": 0.17611282534285597,
+          "min": 5.724401,
+          "max": 6.116567,
+          "q025": 5.724401,
+          "q975": 6.116567
+        },
+        "L_hawamim": {
+          "mean": 5.2053780000000005,
+          "stdev": 0.0,
+          "min": 5.2053780000000005,
+          "max": 5.2053780000000005,
+          "q025": 5.2053780000000005,
+          "q975": 5.2053780000000005
+        },
+        "L_mufassal_short": {
+          "mean": 16.441383689000002,
+          "stdev": 0.16996593643144567,
+          "min": 15.763032000000003,
+          "max": 16.884883,
+          "q025": 16.057827000000003,
+          "q975": 16.734746
+        },
+        "L_tail_91_114": {
+          "mean": 10.503230953000001,
+          "stdev": 0.7898571943435009,
+          "min": 8.227212000000002,
+          "max": 12.457953999999999,
+          "q025": 8.985740999999999,
+          "q975": 11.96073
+        }
+      },
+      "sa_summary": {
+        "accepted_mean": 2336.073,
+        "accepted_min": 1166,
+        "accepted_max": 5725,
+        "rejected_by_hinge_mean": 52719.434,
+        "rejected_by_sa_mean": 4694.728
+      },
+      "sim_samples": [
+        {
+          "L_path": 86.72047,
+          "W_wrap": 0.477496,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.457396,
+          "L_tail_91_114": 10.166210000000001,
+          "sim_idx": 0
+        },
+        {
+          "L_path": 87.01113599999992,
+          "W_wrap": 0.378886,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.780813,
+          "L_tail_91_114": 10.329357,
+          "sim_idx": 1
+        },
+        {
+          "L_path": 86.44423899999998,
+          "W_wrap": 0.502707,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.057184000000003,
+          "L_tail_91_114": 10.139062,
+          "sim_idx": 2
+        },
+        {
+          "L_path": 86.51836699999998,
+          "W_wrap": 0.383412,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.568103,
+          "L_tail_91_114": 10.442826,
+          "sim_idx": 3
+        },
+        {
+          "L_path": 86.36875300000001,
+          "W_wrap": 0.38752,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.568568000000003,
+          "L_tail_91_114": 9.976215999999997,
+          "sim_idx": 4
+        },
+        {
+          "L_path": 86.22760499999997,
+          "W_wrap": 0.477496,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.409742,
+          "L_tail_91_114": 11.309166000000003,
+          "sim_idx": 5
+        },
+        {
+          "L_path": 86.99875199999998,
+          "W_wrap": 0.393789,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.527984000000004,
+          "L_tail_91_114": 10.020568,
+          "sim_idx": 6
+        },
+        {
+          "L_path": 86.33076799999998,
+          "W_wrap": 0.511314,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.286628999999998,
+          "L_tail_91_114": 11.545207,
+          "sim_idx": 7
+        },
+        {
+          "L_path": 86.64960200000003,
+          "W_wrap": 0.415376,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.376317,
+          "L_tail_91_114": 11.383232000000001,
+          "sim_idx": 8
+        },
+        {
+          "L_path": 86.65028399999998,
+          "W_wrap": 0.383412,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.682449000000002,
+          "L_tail_91_114": 10.593338999999999,
+          "sim_idx": 9
+        },
+        {
+          "L_path": 86.17951199999997,
+          "W_wrap": 0.436832,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.411309000000003,
+          "L_tail_91_114": 9.146792000000001,
+          "sim_idx": 10
+        },
+        {
+          "L_path": 86.817861,
+          "W_wrap": 0.441256,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.558581,
+          "L_tail_91_114": 10.95169,
+          "sim_idx": 11
+        },
+        {
+          "L_path": 86.72893899999994,
+          "W_wrap": 0.393789,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.518642,
+          "L_tail_91_114": 9.949926999999999,
+          "sim_idx": 12
+        },
+        {
+          "L_path": 86.25434899999998,
+          "W_wrap": 0.381908,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.489570000000004,
+          "L_tail_91_114": 11.146238000000002,
+          "sim_idx": 13
+        },
+        {
+          "L_path": 86.25403999999999,
+          "W_wrap": 0.356487,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.396193,
+          "L_tail_91_114": 9.184804999999999,
+          "sim_idx": 14
+        },
+        {
+          "L_path": 86.66645499999998,
+          "W_wrap": 0.474238,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.573406000000006,
+          "L_tail_91_114": 10.222488999999998,
+          "sim_idx": 15
+        },
+        {
+          "L_path": 86.50592799999997,
+          "W_wrap": 0.356487,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.565669,
+          "L_tail_91_114": 11.262712,
+          "sim_idx": 16
+        },
+        {
+          "L_path": 86.45239300000003,
+          "W_wrap": 0.441256,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.513720999999997,
+          "L_tail_91_114": 9.913163,
+          "sim_idx": 17
+        },
+        {
+          "L_path": 86.67963799999997,
+          "W_wrap": 0.502707,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.444269,
+          "L_tail_91_114": 10.825770000000002,
+          "sim_idx": 18
+        },
+        {
+          "L_path": 86.27224499999997,
+          "W_wrap": 0.384265,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.497323999999995,
+          "L_tail_91_114": 11.773717999999997,
+          "sim_idx": 19
+        },
+        {
+          "L_path": 86.819175,
+          "W_wrap": 0.395782,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.629661,
+          "L_tail_91_114": 9.946285999999999,
+          "sim_idx": 20
+        },
+        {
+          "L_path": 86.88869700000004,
+          "W_wrap": 0.38837,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.721532,
+          "L_tail_91_114": 9.650235999999998,
+          "sim_idx": 21
+        },
+        {
+          "L_path": 85.93323799999997,
+          "W_wrap": 0.436832,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.170173000000002,
+          "L_tail_91_114": 10.845288000000004,
+          "sim_idx": 22
+        },
+        {
+          "L_path": 86.73712599999998,
+          "W_wrap": 0.441256,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.591259,
+          "L_tail_91_114": 11.338159000000003,
+          "sim_idx": 23
+        },
+        {
+          "L_path": 85.92788899999995,
+          "W_wrap": 0.624428,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.074432999999996,
+          "L_tail_91_114": 8.779802000000002,
+          "sim_idx": 24
+        },
+        {
+          "L_path": 86.79574600000001,
+          "W_wrap": 0.378886,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.498118,
+          "L_tail_91_114": 10.508034000000002,
+          "sim_idx": 25
+        },
+        {
+          "L_path": 86.59732600000001,
+          "W_wrap": 0.381908,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.429454000000003,
+          "L_tail_91_114": 11.458837,
+          "sim_idx": 26
+        },
+        {
+          "L_path": 86.17050800000001,
+          "W_wrap": 0.498833,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.189031,
+          "L_tail_91_114": 11.161465000000002,
+          "sim_idx": 27
+        },
+        {
+          "L_path": 86.79224799999997,
+          "W_wrap": 0.436832,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.532255000000003,
+          "L_tail_91_114": 11.974466000000001,
+          "sim_idx": 28
+        },
+        {
+          "L_path": 86.06134700000001,
+          "W_wrap": 0.484179,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.398307,
+          "L_tail_91_114": 10.775822,
+          "sim_idx": 29
+        },
+        {
+          "L_path": 86.53299299999996,
+          "W_wrap": 0.507628,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.557682,
+          "L_tail_91_114": 9.039017,
+          "sim_idx": 30
+        },
+        {
+          "L_path": 87.014011,
+          "W_wrap": 0.384101,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.565639,
+          "L_tail_91_114": 11.186152,
+          "sim_idx": 31
+        },
+        {
+          "L_path": 86.19651300000001,
+          "W_wrap": 0.436832,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.384887000000003,
+          "L_tail_91_114": 9.365296000000003,
+          "sim_idx": 32
+        },
+        {
+          "L_path": 86.63511199999995,
+          "W_wrap": 0.38837,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.570643,
+          "L_tail_91_114": 10.800697999999997,
+          "sim_idx": 33
+        },
+        {
+          "L_path": 86.942964,
+          "W_wrap": 0.498833,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.464457,
+          "L_tail_91_114": 9.246865999999999,
+          "sim_idx": 34
+        },
+        {
+          "L_path": 86.37865000000001,
+          "W_wrap": 0.507628,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.424840000000003,
+          "L_tail_91_114": 10.870429000000003,
+          "sim_idx": 35
+        },
+        {
+          "L_path": 86.51132299999993,
+          "W_wrap": 0.441256,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.588961,
+          "L_tail_91_114": 10.314128,
+          "sim_idx": 36
+        },
+        {
+          "L_path": 86.29848700000001,
+          "W_wrap": 0.477496,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.32944,
+          "L_tail_91_114": 11.858130000000001,
+          "sim_idx": 37
+        },
+        {
+          "L_path": 86.29583899999996,
+          "W_wrap": 0.498833,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.270597,
+          "L_tail_91_114": 9.404871,
+          "sim_idx": 38
+        },
+        {
+          "L_path": 87.01012200000001,
+          "W_wrap": 0.356487,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.671272999999996,
+          "L_tail_91_114": 10.93216,
+          "sim_idx": 39
+        },
+        {
+          "L_path": 86.28899299999998,
+          "W_wrap": 0.415376,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.603088,
+          "L_tail_91_114": 11.173363,
+          "sim_idx": 40
+        },
+        {
+          "L_path": 85.97546,
+          "W_wrap": 0.39101,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.550433,
+          "L_tail_91_114": 9.675455,
+          "sim_idx": 41
+        },
+        {
+          "L_path": 86.65186700000001,
+          "W_wrap": 0.624428,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.293344999999995,
+          "L_tail_91_114": 9.772716,
+          "sim_idx": 42
+        },
+        {
+          "L_path": 86.47058200000001,
+          "W_wrap": 0.474238,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.231368,
+          "L_tail_91_114": 10.616963000000004,
+          "sim_idx": 43
+        },
+        {
+          "L_path": 86.317022,
+          "W_wrap": 0.383412,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.643808,
+          "L_tail_91_114": 11.527771999999999,
+          "sim_idx": 44
+        },
+        {
+          "L_path": 86.37042600000001,
+          "W_wrap": 0.356487,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.464119,
+          "L_tail_91_114": 12.133529000000005,
+          "sim_idx": 45
+        },
+        {
+          "L_path": 86.95783500000002,
+          "W_wrap": 0.381908,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.641157999999997,
+          "L_tail_91_114": 11.285137999999998,
+          "sim_idx": 46
+        },
+        {
+          "L_path": 86.55151100000002,
+          "W_wrap": 0.502707,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.450370000000003,
+          "L_tail_91_114": 10.956232000000004,
+          "sim_idx": 47
+        },
+        {
+          "L_path": 86.85350200000006,
+          "W_wrap": 0.353069,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.461616000000003,
+          "L_tail_91_114": 12.183895999999999,
+          "sim_idx": 48
+        },
+        {
+          "L_path": 87.05597099999997,
+          "W_wrap": 0.477496,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.439712000000004,
+          "L_tail_91_114": 11.434882,
+          "sim_idx": 49
+        }
+      ]
+    },
+    "cell_b_top50_plus_j30_top10": {
+      "base_scaffold": "H-NEW-236.1a top-50",
+      "total_hinge_count": 60,
+      "hinges_1indexed": [
+        [
+          1,
+          2
+        ],
+        [
+          54,
+          55
+        ],
+        [
+          55,
+          56
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          56,
+          57
+        ],
+        [
+          33,
+          34
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          53,
+          54
+        ],
+        [
+          49,
+          50
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          46,
+          47
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          35,
+          36
+        ],
+        [
+          66,
+          67
+        ],
+        [
+          38,
+          39
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          31,
+          32
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          37,
+          38
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          57,
+          58
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          43,
+          44
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          48,
+          49
+        ],
+        [
+          41,
+          42
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          76,
+          77
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          78,
+          79
+        ],
+        [
+          79,
+          80
+        ],
+        [
+          88,
+          89
+        ],
+        [
+          83,
+          84
+        ],
+        [
+          80,
+          81
+        ],
+        [
+          89,
+          90
+        ],
+        [
+          84,
+          85
+        ],
+        [
+          98,
+          99
+        ],
+        [
+          82,
+          83
+        ],
+        [
+          97,
+          98
+        ]
+      ],
+      "added_juz30_internal_hinges_1indexed": [
+        [
+          78,
+          79
+        ],
+        [
+          79,
+          80
+        ],
+        [
+          88,
+          89
+        ],
+        [
+          83,
+          84
+        ],
+        [
+          80,
+          81
+        ],
+        [
+          89,
+          90
+        ],
+        [
+          84,
+          85
+        ],
+        [
+          98,
+          99
+        ],
+        [
+          82,
+          83
+        ],
+        [
+          97,
+          98
+        ]
+      ],
+      "within_hinges_1indexed": [
+        [
+          54,
+          55
+        ],
+        [
+          55,
+          56
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          56,
+          57
+        ],
+        [
+          33,
+          34
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          53,
+          54
+        ],
+        [
+          49,
+          50
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          35,
+          36
+        ],
+        [
+          66,
+          67
+        ],
+        [
+          38,
+          39
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          31,
+          32
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          37,
+          38
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          57,
+          58
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          43,
+          44
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          41,
+          42
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          76,
+          77
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          78,
+          79
+        ],
+        [
+          79,
+          80
+        ],
+        [
+          88,
+          89
+        ],
+        [
+          83,
+          84
+        ],
+        [
+          80,
+          81
+        ],
+        [
+          89,
+          90
+        ],
+        [
+          84,
+          85
+        ],
+        [
+          98,
+          99
+        ],
+        [
+          82,
+          83
+        ],
+        [
+          97,
+          98
+        ]
+      ],
+      "cross_hinges_1indexed": [
+        [
+          1,
+          2
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          46,
+          47
+        ],
+        [
+          48,
+          49
+        ]
+      ],
+      "full_analysis": {
+        "L_path": {
+          "empirical": 85.759655,
+          "sim_mean": 86.66995017599999,
+          "sim_std": 0.3107826958745121,
+          "sim_ci_lo": 86.05910499999996,
+          "sim_ci_hi": 87.29028700000003,
+          "sim_percentile_of_empirical": 0.2,
+          "sim_inside_95ci": false,
+          "rand_mean": 104.367453627,
+          "rand_std": 1.6412987535257484,
+          "rand_ci_lo": 101.05686000000006,
+          "rand_ci_hi": 107.47256099999997,
+          "rand_percentile_of_empirical": 0.0,
+          "rand_inside_95ci": false
+        },
+        "W_wrap": {
+          "empirical": 0.38837,
+          "sim_mean": 0.416754296,
+          "sim_std": 0.05601660452241267,
+          "sim_ci_lo": 0.3384,
+          "sim_ci_hi": 0.52892,
+          "sim_percentile_of_empirical": 49.7,
+          "sim_inside_95ci": true,
+          "rand_mean": 0.923868755,
+          "rand_std": 0.21965036247367992,
+          "rand_ci_lo": 0.366935,
+          "rand_ci_hi": 1.272749,
+          "rand_percentile_of_empirical": 3.0,
+          "rand_inside_95ci": true
+        },
+        "L_tiwal": {
+          "empirical": 5.724401,
+          "sim_mean": 5.959153581,
+          "sim_std": 0.1748827402149835,
+          "sim_ci_lo": 5.724401,
+          "sim_ci_hi": 6.116567,
+          "sim_percentile_of_empirical": 35.0,
+          "sim_inside_95ci": true,
+          "rand_mean": 6.47773405,
+          "rand_std": 0.6476541347266576,
+          "rand_ci_lo": 5.061897,
+          "rand_ci_hi": 7.624731999999999,
+          "rand_percentile_of_empirical": 11.9,
+          "rand_inside_95ci": true
+        },
+        "L_hawamim": {
+          "empirical": 5.2053780000000005,
+          "sim_mean": 5.2053780000000005,
+          "sim_std": 0.0,
+          "sim_ci_lo": 5.2053780000000005,
+          "sim_ci_hi": 5.2053780000000005,
+          "sim_percentile_of_empirical": 100.0,
+          "sim_inside_95ci": true,
+          "rand_mean": 5.557973878,
+          "rand_std": 0.5843395500081037,
+          "rand_ci_lo": 4.241611,
+          "rand_ci_hi": 6.5658970000000005,
+          "rand_percentile_of_empirical": 24.5,
+          "rand_inside_95ci": true
+        },
+        "L_mufassal_short": {
+          "empirical": 16.514906,
+          "sim_mean": 16.600570369,
+          "sim_std": 0.15328231595095,
+          "sim_ci_lo": 16.25302,
+          "sim_ci_hi": 16.865260999999997,
+          "sim_percentile_of_empirical": 25.9,
+          "sim_inside_95ci": true,
+          "rand_mean": 33.238862372,
+          "rand_std": 1.328073266805346,
+          "rand_ci_lo": 30.635252,
+          "rand_ci_hi": 35.828167,
+          "rand_percentile_of_empirical": 0.0,
+          "rand_inside_95ci": false
+        },
+        "L_tail_91_114": {
+          "empirical": 8.639798,
+          "sim_mean": 10.657000259,
+          "sim_std": 0.7772862526278324,
+          "sim_ci_lo": 9.135404,
+          "sim_ci_hi": 12.193969,
+          "sim_percentile_of_empirical": 0.4,
+          "sim_inside_95ci": false,
+          "rand_mean": 21.203917101,
+          "rand_std": 1.1431761523716957,
+          "rand_ci_lo": 18.940907999999997,
+          "rand_ci_hi": 23.352032,
+          "rand_percentile_of_empirical": 0.0,
+          "rand_inside_95ci": false
+        }
+      },
+      "block_chi2": {
+        "empirical_stat_under_sim": 2.1142159909270295,
+        "empirical_stat_under_rand": 160.2918020691386,
+        "sim_97_5th_pct": 6.383309807384904,
+        "rand_97_5th_pct": 11.085985184205166,
+        "sim_percentile_of_empirical": 65.9,
+        "rand_percentile_of_empirical": 100.0,
+        "sim_inside_95ci": true,
+        "rand_inside_95ci": false,
+        "sim_block_means": {
+          "L_tiwal": 5.959153581,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.600570369
+        },
+        "sim_block_stds": {
+          "L_tiwal": 0.1748827402149835,
+          "L_hawamim": 0.0,
+          "L_mufassal_short": 0.15328231595095
+        },
+        "rand_block_means": {
+          "L_tiwal": 6.47773405,
+          "L_hawamim": 5.557973878,
+          "L_mufassal_short": 33.238862372
+        },
+        "rand_block_stds": {
+          "L_tiwal": 0.6476541347266576,
+          "L_hawamim": 0.5843395500081037,
+          "L_mufassal_short": 1.328073266805346
+        },
+        "per_block": {
+          "L_tiwal": {
+            "empirical": 5.724401,
+            "sim_mean": 5.959153581,
+            "sim_std": 0.1748827402149835,
+            "sim_z": -1.3423427647086152,
+            "sim_z2": 1.8018840979655688,
+            "rand_mean": 6.47773405,
+            "rand_std": 0.6476541347266576,
+            "rand_z": -1.163171837570285,
+            "rand_z2": 1.3529687237166337
+          },
+          "L_hawamim": {
+            "empirical": 5.2053780000000005,
+            "sim_mean": 5.2053780000000005,
+            "sim_std": 0.0,
+            "sim_z": 0.0,
+            "sim_z2": 0.0,
+            "rand_mean": 5.557973878,
+            "rand_std": 0.5843395500081037,
+            "rand_z": -0.6034092301216133,
+            "rand_z2": 0.36410269899595804
+          },
+          "L_mufassal_short": {
+            "empirical": 16.514906,
+            "sim_mean": 16.600570369,
+            "sim_std": 0.15328231595095,
+            "sim_z": -0.5588666146420457,
+            "sim_z2": 0.3123318929614608,
+            "rand_mean": 33.238862372,
+            "rand_std": 1.328073266805346,
+            "rand_z": -12.592645895379812,
+            "rand_z2": 158.57473064642602
+          }
+        }
+      },
+      "sim_passes": 2,
+      "rand_passes": 1,
+      "mw5_pass": true,
+      "l_path_gap_vs_sim_mean": -0.9102951759999911,
+      "mufassal_gap_vs_sim_mean": -0.08566436899999985,
+      "mufassal_gap_closed_pct_vs_h2361a_top50": 109.5658603178667,
+      "block_chi2_improvement_vs_h2361a_top50": 113.40914240350806,
+      "cell_verdict": "PARTIAL-TERMINAL-CLOSURE",
+      "sim_summaries": {
+        "L_path": {
+          "mean": 86.66995017599999,
+          "stdev": 0.3107826958745121,
+          "min": 85.57633999999997,
+          "max": 87.62444699999996,
+          "q025": 86.05910499999996,
+          "q975": 87.29028700000003
+        },
+        "W_wrap": {
+          "mean": 0.416754296,
+          "stdev": 0.05601660452241267,
+          "min": 0.3384,
+          "max": 0.52892,
+          "q025": 0.3384,
+          "q975": 0.52892
+        },
+        "L_tiwal": {
+          "mean": 5.959153581,
+          "stdev": 0.1748827402149835,
+          "min": 5.724401,
+          "max": 6.116567,
+          "q025": 5.724401,
+          "q975": 6.116567
+        },
+        "L_hawamim": {
+          "mean": 5.2053780000000005,
+          "stdev": 0.0,
+          "min": 5.2053780000000005,
+          "max": 5.2053780000000005,
+          "q025": 5.2053780000000005,
+          "q975": 5.2053780000000005
+        },
+        "L_mufassal_short": {
+          "mean": 16.600570369,
+          "stdev": 0.15328231595095,
+          "min": 15.975258000000004,
+          "max": 16.992017000000004,
+          "q025": 16.25302,
+          "q975": 16.865260999999997
+        },
+        "L_tail_91_114": {
+          "mean": 10.657000259,
+          "stdev": 0.7772862526278324,
+          "min": 8.292889,
+          "max": 12.615432,
+          "q025": 9.135404,
+          "q975": 12.193969
+        }
+      },
+      "sa_summary": {
+        "accepted_mean": 1448.848,
+        "accepted_min": 661,
+        "accepted_max": 3907,
+        "rejected_by_hinge_mean": 55707.149,
+        "rejected_by_sa_mean": 2698.198
+      },
+      "sim_samples": [
+        {
+          "L_path": 86.91075499999997,
+          "W_wrap": 0.384101,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.598947000000003,
+          "L_tail_91_114": 9.769268,
+          "sim_idx": 0
+        },
+        {
+          "L_path": 86.975845,
+          "W_wrap": 0.356487,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.707451000000006,
+          "L_tail_91_114": 10.679236000000001,
+          "sim_idx": 1
+        },
+        {
+          "L_path": 86.768858,
+          "W_wrap": 0.383412,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.698468999999996,
+          "L_tail_91_114": 10.790683,
+          "sim_idx": 2
+        },
+        {
+          "L_path": 86.691383,
+          "W_wrap": 0.38752,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.846199000000002,
+          "L_tail_91_114": 11.149367000000002,
+          "sim_idx": 3
+        },
+        {
+          "L_path": 86.71545900000001,
+          "W_wrap": 0.498833,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.501504000000004,
+          "L_tail_91_114": 10.189658000000001,
+          "sim_idx": 4
+        },
+        {
+          "L_path": 87.38088499999999,
+          "W_wrap": 0.38752,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.830399000000003,
+          "L_tail_91_114": 12.097609,
+          "sim_idx": 5
+        },
+        {
+          "L_path": 87.08946000000002,
+          "W_wrap": 0.502707,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.618995,
+          "L_tail_91_114": 10.417723999999998,
+          "sim_idx": 6
+        },
+        {
+          "L_path": 87.08479699999998,
+          "W_wrap": 0.474238,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.454596,
+          "L_tail_91_114": 10.489211999999998,
+          "sim_idx": 7
+        },
+        {
+          "L_path": 86.53487499999999,
+          "W_wrap": 0.384265,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.658331999999998,
+          "L_tail_91_114": 10.185307,
+          "sim_idx": 8
+        },
+        {
+          "L_path": 86.163692,
+          "W_wrap": 0.356487,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.782436,
+          "L_tail_91_114": 11.066239999999999,
+          "sim_idx": 9
+        },
+        {
+          "L_path": 86.88091099999998,
+          "W_wrap": 0.511314,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.670268,
+          "L_tail_91_114": 10.491129000000003,
+          "sim_idx": 10
+        },
+        {
+          "L_path": 86.666327,
+          "W_wrap": 0.3384,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.834809000000003,
+          "L_tail_91_114": 10.452371000000003,
+          "sim_idx": 11
+        },
+        {
+          "L_path": 87.28450099999999,
+          "W_wrap": 0.384101,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.794773000000003,
+          "L_tail_91_114": 9.992842,
+          "sim_idx": 12
+        },
+        {
+          "L_path": 86.85973000000001,
+          "W_wrap": 0.379574,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.730618000000007,
+          "L_tail_91_114": 9.932154999999998,
+          "sim_idx": 13
+        },
+        {
+          "L_path": 86.90438099999999,
+          "W_wrap": 0.498833,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.381828,
+          "L_tail_91_114": 8.64057,
+          "sim_idx": 14
+        },
+        {
+          "L_path": 86.37305699999997,
+          "W_wrap": 0.393789,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.438522000000003,
+          "L_tail_91_114": 10.56634,
+          "sim_idx": 15
+        },
+        {
+          "L_path": 86.62082799999999,
+          "W_wrap": 0.381908,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.795803000000003,
+          "L_tail_91_114": 10.961821000000002,
+          "sim_idx": 16
+        },
+        {
+          "L_path": 86.956772,
+          "W_wrap": 0.384101,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.747198,
+          "L_tail_91_114": 11.652383000000004,
+          "sim_idx": 17
+        },
+        {
+          "L_path": 86.883359,
+          "W_wrap": 0.376856,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.594917000000002,
+          "L_tail_91_114": 12.019455,
+          "sim_idx": 18
+        },
+        {
+          "L_path": 86.55508199999998,
+          "W_wrap": 0.38837,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.601291000000007,
+          "L_tail_91_114": 10.328591,
+          "sim_idx": 19
+        },
+        {
+          "L_path": 86.75726599999999,
+          "W_wrap": 0.384265,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.558213,
+          "L_tail_91_114": 10.444431,
+          "sim_idx": 20
+        },
+        {
+          "L_path": 86.82072900000001,
+          "W_wrap": 0.378886,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.645453,
+          "L_tail_91_114": 10.546060000000002,
+          "sim_idx": 21
+        },
+        {
+          "L_path": 86.642163,
+          "W_wrap": 0.507628,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.642483000000002,
+          "L_tail_91_114": 10.737054,
+          "sim_idx": 22
+        },
+        {
+          "L_path": 86.98582300000001,
+          "W_wrap": 0.415376,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.655544000000003,
+          "L_tail_91_114": 10.24858,
+          "sim_idx": 23
+        },
+        {
+          "L_path": 86.614712,
+          "W_wrap": 0.38837,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.508733000000007,
+          "L_tail_91_114": 11.76727,
+          "sim_idx": 24
+        },
+        {
+          "L_path": 86.75997699999996,
+          "W_wrap": 0.381908,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.718825999999996,
+          "L_tail_91_114": 9.534391,
+          "sim_idx": 25
+        },
+        {
+          "L_path": 86.85162399999997,
+          "W_wrap": 0.383412,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.794444000000002,
+          "L_tail_91_114": 10.810429000000001,
+          "sim_idx": 26
+        },
+        {
+          "L_path": 86.248544,
+          "W_wrap": 0.3384,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.734631000000007,
+          "L_tail_91_114": 10.571245,
+          "sim_idx": 27
+        },
+        {
+          "L_path": 86.92840099999998,
+          "W_wrap": 0.381908,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.641434,
+          "L_tail_91_114": 9.470570000000002,
+          "sim_idx": 28
+        },
+        {
+          "L_path": 86.94106400000004,
+          "W_wrap": 0.395782,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.603707,
+          "L_tail_91_114": 11.746126999999998,
+          "sim_idx": 29
+        },
+        {
+          "L_path": 87.095243,
+          "W_wrap": 0.356487,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.765182,
+          "L_tail_91_114": 9.669831,
+          "sim_idx": 30
+        },
+        {
+          "L_path": 86.24987999999996,
+          "W_wrap": 0.395782,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.30808,
+          "L_tail_91_114": 8.834027,
+          "sim_idx": 31
+        },
+        {
+          "L_path": 86.31366799999999,
+          "W_wrap": 0.484179,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.394976,
+          "L_tail_91_114": 9.843356000000002,
+          "sim_idx": 32
+        },
+        {
+          "L_path": 86.62132499999998,
+          "W_wrap": 0.376856,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.388834,
+          "L_tail_91_114": 11.672099000000001,
+          "sim_idx": 33
+        },
+        {
+          "L_path": 86.78672300000001,
+          "W_wrap": 0.507628,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.464197000000002,
+          "L_tail_91_114": 8.697227000000002,
+          "sim_idx": 34
+        },
+        {
+          "L_path": 86.67495899999997,
+          "W_wrap": 0.395782,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.466146000000002,
+          "L_tail_91_114": 10.375618999999999,
+          "sim_idx": 35
+        },
+        {
+          "L_path": 85.99038600000004,
+          "W_wrap": 0.477496,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.580759999999998,
+          "L_tail_91_114": 10.278716,
+          "sim_idx": 36
+        },
+        {
+          "L_path": 86.16984000000002,
+          "W_wrap": 0.511314,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.355764,
+          "L_tail_91_114": 11.033272,
+          "sim_idx": 37
+        },
+        {
+          "L_path": 86.964383,
+          "W_wrap": 0.436832,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.593488,
+          "L_tail_91_114": 11.373125000000003,
+          "sim_idx": 38
+        },
+        {
+          "L_path": 86.05599099999999,
+          "W_wrap": 0.412875,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.381143,
+          "L_tail_91_114": 9.136385999999998,
+          "sim_idx": 39
+        },
+        {
+          "L_path": 86.15190700000002,
+          "W_wrap": 0.52892,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.455132000000003,
+          "L_tail_91_114": 12.044554,
+          "sim_idx": 40
+        },
+        {
+          "L_path": 86.68826899999999,
+          "W_wrap": 0.384101,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.710064,
+          "L_tail_91_114": 11.802262,
+          "sim_idx": 41
+        },
+        {
+          "L_path": 85.991238,
+          "W_wrap": 0.502707,
+          "L_tiwal": 5.724401,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.351008,
+          "L_tail_91_114": 11.546401999999999,
+          "sim_idx": 42
+        },
+        {
+          "L_path": 86.98967299999998,
+          "W_wrap": 0.393789,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.934426000000002,
+          "L_tail_91_114": 11.264470000000001,
+          "sim_idx": 43
+        },
+        {
+          "L_path": 87.015469,
+          "W_wrap": 0.436832,
+          "L_tiwal": 6.018823,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.584243999999998,
+          "L_tail_91_114": 9.409744,
+          "sim_idx": 44
+        },
+        {
+          "L_path": 86.63436399999998,
+          "W_wrap": 0.507628,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.212424999999996,
+          "L_tail_91_114": 8.686368,
+          "sim_idx": 45
+        },
+        {
+          "L_path": 86.79864199999997,
+          "W_wrap": 0.356487,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.772578000000003,
+          "L_tail_91_114": 9.659324000000002,
+          "sim_idx": 46
+        },
+        {
+          "L_path": 86.94654199999998,
+          "W_wrap": 0.384101,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.488964,
+          "L_tail_91_114": 10.708661999999997,
+          "sim_idx": 47
+        },
+        {
+          "L_path": 87.017903,
+          "W_wrap": 0.3384,
+          "L_tiwal": 6.100938,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.651745000000002,
+          "L_tail_91_114": 10.295126999999997,
+          "sim_idx": 48
+        },
+        {
+          "L_path": 86.83751199999999,
+          "W_wrap": 0.384101,
+          "L_tiwal": 6.116567,
+          "L_hawamim": 5.2053780000000005,
+          "L_mufassal_short": 16.777460000000005,
+          "L_tail_91_114": 10.732791,
+          "sim_idx": 49
+        }
+      ]
+    }
+  },
+  "rand_samples": [
+    {
+      "L_path": 106.64031099999991,
+      "W_wrap": 0.453281,
+      "L_tiwal": 6.044364,
+      "L_hawamim": 5.813549,
+      "L_mufassal_short": 33.231987999999994,
+      "L_tail_91_114": 20.851371,
+      "rand_idx": 0
+    },
+    {
+      "L_path": 107.35995900000003,
+      "W_wrap": 1.025414,
+      "L_tiwal": 6.614644,
+      "L_hawamim": 5.689794000000001,
+      "L_mufassal_short": 35.515671,
+      "L_tail_91_114": 22.583537999999994,
+      "rand_idx": 1
+    },
+    {
+      "L_path": 99.15818200000002,
+      "W_wrap": 1.142979,
+      "L_tiwal": 5.13298,
+      "L_hawamim": 5.772427,
+      "L_mufassal_short": 32.893324,
+      "L_tail_91_114": 20.385648999999997,
+      "rand_idx": 2
+    },
+    {
+      "L_path": 104.43873899999998,
+      "W_wrap": 0.340437,
+      "L_tiwal": 7.175508000000001,
+      "L_hawamim": 5.870157,
+      "L_mufassal_short": 33.98441999999999,
+      "L_tail_91_114": 21.6787,
+      "rand_idx": 3
+    },
+    {
+      "L_path": 104.47646100000003,
+      "W_wrap": 1.057802,
+      "L_tiwal": 6.354994,
+      "L_hawamim": 5.8767759999999996,
+      "L_mufassal_short": 34.992654,
+      "L_tail_91_114": 22.533143000000003,
+      "rand_idx": 4
+    },
+    {
+      "L_path": 106.19156100000001,
+      "W_wrap": 0.993088,
+      "L_tiwal": 6.710748000000001,
+      "L_hawamim": 5.599363,
+      "L_mufassal_short": 34.90800700000001,
+      "L_tail_91_114": 22.028167,
+      "rand_idx": 5
+    },
+    {
+      "L_path": 102.00645299999998,
+      "W_wrap": 0.920551,
+      "L_tiwal": 5.389726,
+      "L_hawamim": 4.558462,
+      "L_mufassal_short": 32.56009700000001,
+      "L_tail_91_114": 21.364912000000004,
+      "rand_idx": 6
+    },
+    {
+      "L_path": 102.592049,
+      "W_wrap": 1.164195,
+      "L_tiwal": 6.239203999999999,
+      "L_hawamim": 5.124789000000001,
+      "L_mufassal_short": 30.754936,
+      "L_tail_91_114": 20.190109999999997,
+      "rand_idx": 7
+    },
+    {
+      "L_path": 104.62048999999995,
+      "W_wrap": 0.697778,
+      "L_tiwal": 7.406277000000001,
+      "L_hawamim": 5.664952,
+      "L_mufassal_short": 33.401933,
+      "L_tail_91_114": 20.435136999999997,
+      "rand_idx": 8
+    },
+    {
+      "L_path": 103.70907300000002,
+      "W_wrap": 0.896339,
+      "L_tiwal": 6.135237,
+      "L_hawamim": 6.063701,
+      "L_mufassal_short": 32.025726999999996,
+      "L_tail_91_114": 20.219975,
+      "rand_idx": 9
+    },
+    {
+      "L_path": 104.56951499999997,
+      "W_wrap": 1.051585,
+      "L_tiwal": 6.968357999999999,
+      "L_hawamim": 6.838958999999999,
+      "L_mufassal_short": 31.166720000000012,
+      "L_tail_91_114": 19.273375,
+      "rand_idx": 10
+    },
+    {
+      "L_path": 106.41091100000004,
+      "W_wrap": 0.489527,
+      "L_tiwal": 6.921735,
+      "L_hawamim": 5.9441120000000005,
+      "L_mufassal_short": 34.700101000000004,
+      "L_tail_91_114": 21.655966999999997,
+      "rand_idx": 11
+    },
+    {
+      "L_path": 104.35955300000003,
+      "W_wrap": 1.243503,
+      "L_tiwal": 6.567741,
+      "L_hawamim": 4.531868,
+      "L_mufassal_short": 33.056642999999994,
+      "L_tail_91_114": 21.012263,
+      "rand_idx": 12
+    },
+    {
+      "L_path": 102.86544799999997,
+      "W_wrap": 1.083558,
+      "L_tiwal": 6.851450000000001,
+      "L_hawamim": 4.984572,
+      "L_mufassal_short": 31.322814,
+      "L_tail_91_114": 20.901063000000004,
+      "rand_idx": 13
+    },
+    {
+      "L_path": 105.42209599999997,
+      "W_wrap": 0.596002,
+      "L_tiwal": 6.7414060000000005,
+      "L_hawamim": 5.664678,
+      "L_mufassal_short": 34.089656999999995,
+      "L_tail_91_114": 20.640736,
+      "rand_idx": 14
+    },
+    {
+      "L_path": 106.67207100000005,
+      "W_wrap": 0.883482,
+      "L_tiwal": 6.5267990000000005,
+      "L_hawamim": 5.89477,
+      "L_mufassal_short": 32.336397000000005,
+      "L_tail_91_114": 20.512998999999997,
+      "rand_idx": 15
+    },
+    {
+      "L_path": 103.90233999999995,
+      "W_wrap": 0.933579,
+      "L_tiwal": 6.54129,
+      "L_hawamim": 5.078678,
+      "L_mufassal_short": 30.936223999999996,
+      "L_tail_91_114": 19.282873,
+      "rand_idx": 16
+    },
+    {
+      "L_path": 103.23348700000001,
+      "W_wrap": 0.317352,
+      "L_tiwal": 5.0370930000000005,
+      "L_hawamim": 5.358243000000001,
+      "L_mufassal_short": 32.408308000000005,
+      "L_tail_91_114": 21.376825,
+      "rand_idx": 17
+    },
+    {
+      "L_path": 108.41412200000003,
+      "W_wrap": 0.996293,
+      "L_tiwal": 7.66451,
+      "L_hawamim": 6.397114,
+      "L_mufassal_short": 35.53267400000001,
+      "L_tail_91_114": 22.47553,
+      "rand_idx": 18
+    },
+    {
+      "L_path": 106.49465100000003,
+      "W_wrap": 0.950344,
+      "L_tiwal": 7.16427,
+      "L_hawamim": 6.068192,
+      "L_mufassal_short": 35.22508299999999,
+      "L_tail_91_114": 22.345726000000003,
+      "rand_idx": 19
+    },
+    {
+      "L_path": 107.53393799999999,
+      "W_wrap": 0.723045,
+      "L_tiwal": 6.7676,
+      "L_hawamim": 4.612894,
+      "L_mufassal_short": 33.455311000000016,
+      "L_tail_91_114": 21.848161000000005,
+      "rand_idx": 20
+    },
+    {
+      "L_path": 103.856553,
+      "W_wrap": 0.986285,
+      "L_tiwal": 7.452282,
+      "L_hawamim": 4.86198,
+      "L_mufassal_short": 34.35422400000001,
+      "L_tail_91_114": 21.281816999999997,
+      "rand_idx": 21
+    },
+    {
+      "L_path": 103.00037199999996,
+      "W_wrap": 0.841901,
+      "L_tiwal": 6.284304,
+      "L_hawamim": 5.342566,
+      "L_mufassal_short": 33.234947,
+      "L_tail_91_114": 21.85730999999999,
+      "rand_idx": 22
+    },
+    {
+      "L_path": 105.270345,
+      "W_wrap": 0.934461,
+      "L_tiwal": 6.74838,
+      "L_hawamim": 5.641897,
+      "L_mufassal_short": 33.800709000000005,
+      "L_tail_91_114": 21.856199,
+      "rand_idx": 23
+    },
+    {
+      "L_path": 106.42223500000001,
+      "W_wrap": 0.350542,
+      "L_tiwal": 7.694948,
+      "L_hawamim": 6.26279,
+      "L_mufassal_short": 32.72298099999999,
+      "L_tail_91_114": 20.523085000000002,
+      "rand_idx": 24
+    },
+    {
+      "L_path": 104.95245799999996,
+      "W_wrap": 1.238461,
+      "L_tiwal": 6.377682,
+      "L_hawamim": 5.189937,
+      "L_mufassal_short": 32.881474000000004,
+      "L_tail_91_114": 20.653564000000003,
+      "rand_idx": 25
+    },
+    {
+      "L_path": 101.95150200000002,
+      "W_wrap": 1.02501,
+      "L_tiwal": 6.517675,
+      "L_hawamim": 5.562984,
+      "L_mufassal_short": 32.18884099999999,
+      "L_tail_91_114": 21.812459000000004,
+      "rand_idx": 26
+    },
+    {
+      "L_path": 106.20088699999997,
+      "W_wrap": 0.898144,
+      "L_tiwal": 6.117369,
+      "L_hawamim": 5.2690850000000005,
+      "L_mufassal_short": 34.150618,
+      "L_tail_91_114": 21.03804,
+      "rand_idx": 27
+    },
+    {
+      "L_path": 105.98461199999998,
+      "W_wrap": 1.07498,
+      "L_tiwal": 6.713924,
+      "L_hawamim": 5.130242000000001,
+      "L_mufassal_short": 34.745543000000005,
+      "L_tail_91_114": 21.949840000000002,
+      "rand_idx": 28
+    },
+    {
+      "L_path": 102.56576500000001,
+      "W_wrap": 0.874852,
+      "L_tiwal": 5.888986,
+      "L_hawamim": 5.424694,
+      "L_mufassal_short": 32.83547900000001,
+      "L_tail_91_114": 20.197114999999997,
+      "rand_idx": 29
+    },
+    {
+      "L_path": 104.89545800000005,
+      "W_wrap": 1.225911,
+      "L_tiwal": 7.3155209999999995,
+      "L_hawamim": 6.674125,
+      "L_mufassal_short": 29.995321999999998,
+      "L_tail_91_114": 17.790142000000003,
+      "rand_idx": 30
+    },
+    {
+      "L_path": 105.49858000000002,
+      "W_wrap": 0.372734,
+      "L_tiwal": 5.647651,
+      "L_hawamim": 5.627635,
+      "L_mufassal_short": 33.229482000000004,
+      "L_tail_91_114": 21.340093000000003,
+      "rand_idx": 31
+    },
+    {
+      "L_path": 104.88736500000005,
+      "W_wrap": 1.0174,
+      "L_tiwal": 6.01619,
+      "L_hawamim": 5.762384999999999,
+      "L_mufassal_short": 33.826924999999996,
+      "L_tail_91_114": 20.818368,
+      "rand_idx": 32
+    },
+    {
+      "L_path": 103.185268,
+      "W_wrap": 1.018185,
+      "L_tiwal": 5.465551,
+      "L_hawamim": 6.5658970000000005,
+      "L_mufassal_short": 33.894986,
+      "L_tail_91_114": 21.912844000000007,
+      "rand_idx": 33
+    },
+    {
+      "L_path": 105.56991200000007,
+      "W_wrap": 0.874346,
+      "L_tiwal": 6.452355,
+      "L_hawamim": 4.7633980000000005,
+      "L_mufassal_short": 34.97707,
+      "L_tail_91_114": 24.70081,
+      "rand_idx": 34
+    },
+    {
+      "L_path": 103.59356499999998,
+      "W_wrap": 1.091638,
+      "L_tiwal": 5.839238,
+      "L_hawamim": 6.010442,
+      "L_mufassal_short": 32.780369,
+      "L_tail_91_114": 19.824108000000003,
+      "rand_idx": 35
+    },
+    {
+      "L_path": 102.94696700000003,
+      "W_wrap": 0.882938,
+      "L_tiwal": 7.261496000000001,
+      "L_hawamim": 4.649812,
+      "L_mufassal_short": 32.64281899999999,
+      "L_tail_91_114": 19.777603,
+      "rand_idx": 36
+    },
+    {
+      "L_path": 106.05584400000002,
+      "W_wrap": 0.857033,
+      "L_tiwal": 6.840909,
+      "L_hawamim": 5.113619,
+      "L_mufassal_short": 34.533415999999995,
+      "L_tail_91_114": 21.35304,
+      "rand_idx": 37
+    },
+    {
+      "L_path": 106.68758100000004,
+      "W_wrap": 0.691814,
+      "L_tiwal": 6.872006,
+      "L_hawamim": 6.7938410000000005,
+      "L_mufassal_short": 33.795306,
+      "L_tail_91_114": 21.469894,
+      "rand_idx": 38
+    },
+    {
+      "L_path": 106.47824899999998,
+      "W_wrap": 0.6809,
+      "L_tiwal": 6.629276000000001,
+      "L_hawamim": 6.0235009999999996,
+      "L_mufassal_short": 33.073887,
+      "L_tail_91_114": 20.664373999999995,
+      "rand_idx": 39
+    },
+    {
+      "L_path": 104.81759100000002,
+      "W_wrap": 0.50763,
+      "L_tiwal": 6.2340979999999995,
+      "L_hawamim": 5.458894000000001,
+      "L_mufassal_short": 32.46014499999998,
+      "L_tail_91_114": 21.124764,
+      "rand_idx": 40
+    },
+    {
+      "L_path": 104.57321699999997,
+      "W_wrap": 1.132748,
+      "L_tiwal": 6.577739,
+      "L_hawamim": 5.332870999999999,
+      "L_mufassal_short": 33.159867000000006,
+      "L_tail_91_114": 22.458006999999995,
+      "rand_idx": 41
+    },
+    {
+      "L_path": 99.20193600000002,
+      "W_wrap": 0.700404,
+      "L_tiwal": 5.469589,
+      "L_hawamim": 4.727694,
+      "L_mufassal_short": 31.334367000000004,
+      "L_tail_91_114": 18.926914000000004,
+      "rand_idx": 42
+    },
+    {
+      "L_path": 102.42999200000001,
+      "W_wrap": 0.986457,
+      "L_tiwal": 6.012991,
+      "L_hawamim": 6.3794390000000005,
+      "L_mufassal_short": 33.795482,
+      "L_tail_91_114": 22.420466000000005,
+      "rand_idx": 43
+    },
+    {
+      "L_path": 104.544179,
+      "W_wrap": 1.054989,
+      "L_tiwal": 6.62635,
+      "L_hawamim": 6.574853000000001,
+      "L_mufassal_short": 30.871015,
+      "L_tail_91_114": 20.507422999999996,
+      "rand_idx": 44
+    },
+    {
+      "L_path": 101.828171,
+      "W_wrap": 0.796291,
+      "L_tiwal": 6.410046,
+      "L_hawamim": 5.725884000000001,
+      "L_mufassal_short": 30.967198999999997,
+      "L_tail_91_114": 20.61029299999999,
+      "rand_idx": 45
+    },
+    {
+      "L_path": 104.95813100000005,
+      "W_wrap": 1.053658,
+      "L_tiwal": 6.331996999999999,
+      "L_hawamim": 4.895069,
+      "L_mufassal_short": 34.081814,
+      "L_tail_91_114": 20.168421000000006,
+      "rand_idx": 46
+    },
+    {
+      "L_path": 102.69603499999997,
+      "W_wrap": 0.855468,
+      "L_tiwal": 5.652512,
+      "L_hawamim": 6.404405,
+      "L_mufassal_short": 34.724341,
+      "L_tail_91_114": 23.029158000000002,
+      "rand_idx": 47
+    },
+    {
+      "L_path": 105.19437099999998,
+      "W_wrap": 0.863309,
+      "L_tiwal": 7.042556000000001,
+      "L_hawamim": 6.553502,
+      "L_mufassal_short": 33.87842,
+      "L_tail_91_114": 22.345678,
+      "rand_idx": 48
+    },
+    {
+      "L_path": 100.90061399999999,
+      "W_wrap": 0.860103,
+      "L_tiwal": 6.354030999999999,
+      "L_hawamim": 5.404324,
+      "L_mufassal_short": 31.772914,
+      "L_tail_91_114": 19.792219,
+      "rand_idx": 49
+    }
+  ]
+}

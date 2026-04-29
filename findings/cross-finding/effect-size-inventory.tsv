@@ -1,0 +1,158 @@
+finding_id	test_name	observed_z_or_p	bonferroni_k	rules_tuple_summary	baseline_corpus	verdict	mw_compliance	parent_finding_id	classical_anchor
+# META-NOTES
+# Sorted by |headline statistic| descending. |z| floor of 15 assigned to "p≈0" entries where paper reports only p; paper-reported z used where available.
+# rules_tuple_summary abbreviation: NT=no-tashkeel, OT=orthographic-token, LEM=QAC-lemma, GR=graphemes, B1=basmala-counted-only-in-surah-1, HK=Hafs-Kufan, MQ=Mashriqi. Default tuple = (NT, OT/LEM, GR, B1, HK, MQ).
+# baseline_corpus: prose-pooled = Bukhari+Sira+Jahiz; multi4 = Bukhari+Sira+Jahiz+Muallaqat; multi5 = multi4+Mutanabbi.
+# mw_compliance: hyphen-separated list of MW-norms the finding satisfies (+) or violates (-). N/A for anchors/derived.
+# parent_finding_id: blank = independent; otherwise the parent whose lineage extends.
+# classical_anchor format: Scholar, Work [MW-6 tag] (VERIFIED/PENDING/SECONDARY-TRIANGULATED/NONE).
+# ============================================================================
+# SECTION 1: TIER-A ANCHOR-CLASS CONFIRMED FINDINGS (|z|>=15 or p<10^-15)
+# ============================================================================
+MASTER-§1-#30 / X-4 / T4	Simultaneous N-constraint density vs matched-Arabic (KS)	KS D=0.1092, p=8.7e-33; fallback p=3.0e-69; tail-k>=8 z=+6.73	5 (Tomorrow-Tests family)	NT,OT,GR,B1,HK,MQ	multi4 (Bukhari+Sira+Jahiz+Muallaqat)	CONFIRMED	MW-1+ MW-5+ MW-6+ MW-7+	T4 (Tomorrow-Tests)	al-Jurjani, Dalail al-Ijaz pp.44-81 (Shakir 1984) [SECONDARY-TRIANGULATED]
+MASTER-§1-#3 / H-NEW-23	Hapax-verse-final slot within-verse z-test	z=+10.61; p≈0; OR=3.19; parent p=7.35e-29	4 (H-NEW-23 sub-tests)	NT,LEM,GR,B1,HK,MQ	within-verse slot-control + Muallaqat positive-control	CONFIRMED	MW-1+ MW-5+ MW-6+ MW-7+	H-NEW-23 / hapax-legomena	al-Zarkashi, Burhan nawʿ 59 §4 "al-maqsuda li-ghayriha" [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-20 (face)	al-Razi linear nazm — verse-similarity autocorrelation (face-value)	Stouffer Z=+30.76	5 (classical naẓm family)	NT,LEM,GR,B1,HK,MQ	within-surah verse-order shuffle	CONFIRMED-SUPERSEDED-by-MW1	MW-1- MW-5+ MW-7+	H-NEW-20	al-Razi, Mafatih al-Ghayb [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-20 (MW-1 strict)	al-Razi linear nazm — length-residualized short-stratum strict	Z=+9.57 (short-stratum); Z=+22.78 IV-weighted	5	NT,LEM,GR,B1,HK,MQ	within-surah verse-order shuffle + OLS length residual	PARTIAL	MW-1+ MW-5+ MW-7+	H-NEW-20	al-Razi, Mafatih al-Ghayb [SECONDARY-TRIANGULATED]
+MASTER-§1-#17 / RQA-rhyme	Rhyme determinism via recurrence-quantification analysis	z=+15.09 (determinism); z=+14.66 (laminarity)	3 (RQA family)	NT,OT,GR,B1,HK,MQ	matched-Arabic prose shuffle	CONFIRMED	MW-5+ MW-6+	RQA-saj	al-Zarkashi, Burhan nawʿ 52 [SECONDARY-TRIANGULATED]
+MASTER-§1-#2 / muqattaat-density	Muqattaʿat letter density enrichment (3-gram Markov null)	χ²=228.78, p<1e-15; Stouffer Z=+4.48	3 nulls	NT,GR,HK	3-gram letter-Markov null	CONFIRMED	MW-5+ MW-6+	muqattaat-density	classical (al-Razi / Welch) [SECONDARY-TRIANGULATED]
+MASTER-§1-#20 / ar-Rahman-compression	Compression outlier ranking under length-controlled null	gzip z=-17.77 (Ar-Rahman); z=-13.34 (Ash-Shuʿara); z=-7.01 (Mursalat); z=-4.55 (Qamar)	114 (per-surah family)	NT,OT,GR,B1,HK,MQ	length-matched shuffle	CONFIRMED	MW-5+	compression-self-reference	al-Zarkashi, Burhan nawʿ 47 (munasaba al-takrar) [PENDING]
+MASTER-§3c / iltifat-block	Iltifat structured-block framing H_B across 3 channels	z≈-77; 100% of 73 testable surahs	3 (H_A/H_B/channels)	NT,OT,GR,B1,HK,MQ	within-surah block-shuffle	CONFIRMED	MW-5+ MW-6+	H-NEW-2 iltifat structured-block	al-Zarkashi, Burhan (iltifat nawʿ, PENDING MW-6)
+MASTER-§3c / H-NEW-16 (reverse)	Cross-word phonetic palindromes — pre-reg reversed	z=-6.38 two-tailed (obs=67, null-1=148, null-2=129)	2 (palindrome family)	NT,OT,GR,B1,HK,MQ	bigram-Markov null	REVERSE-CONFIRMED	MW-5+ MW-6+	H-NEW-16 / palindrome-full-sweep	al-Zarkashi (muqabala) [PENDING]
+MASTER-§1-#13 / root-palindrome	Root-level palindromes enrichment sweep	z=+10.51 (1170 windows vs null p95=929)	4	NT,LEM,HK	verse-order shuffle	CONFIRMED	MW-5+	palindrome-full-sweep	extension of Q 13:28 anchor (classical)
+MASTER-§1-#16 / verse-length-Hurst	Verse-length Hurst exponent vs matched prose	H=0.88 vs prose-max 0.46 (Bukhari 0.38/Sira 0.25/Jahiz 0.25/Muallaqat 0.46)	5	NT,OT,GR,B1,HK,MQ	multi5 prose+poetry	CONFIRMED	MW-5+	fractal-self-similarity	NONE
+MASTER-§1-#11 / opening-compression-predicts-body	Surah-opening predicts whole-surah compression	p=8.9e-11; mean rank 35.2/114 (null 57.5); top-10 30.1% vs null 8.8%	114	NT,OT,GR,B1,HK,MQ	per-surah permutation	CONFIRMED	MW-5+ MW-6+	opening-compression-prediction	al-Suyuti, Itqan / "fatihat al-sura tadullu ʿala khatimatiha" [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-29 (b-comparative)	Root inter-occurrence CV vs pooled prose (Mann-Whitney)	z=-14.79 (Bukhari+Sira pooled); z=-9.64 (Bukhari); z=-7.95 (Jahiz)	3 baselines	NT,LEM,GR,B1,HK,MQ	Bukhari / Jahiz / Bukhari+Sira pooled	DUAL (b-CONFIRMED, a-NULL)	MW-2+ MW-5+ MW-6+ MW-7+	H-NEW-29	al-Jahiz, Hayawan "takrar maqbul" [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-35 (primary)	Verse-length ρ(1) autocorrelation — primary signal	weighted ρ(1)=0.1368; z=+13.13 (p≈1e-39)	2 (primary + baseline-contrast)	NT,OT,GR,B1,HK,MQ	1000-perm within-surah phase-shuffle	CONFIRMED (primary)	MW-5+ MW-6+	H-NEW-35	al-Sakkaki, Miftah al-ʿUlum (īqāʿ) [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-35 (vs-Bukhari)	Verse-length ρ(1) Fisher z-diff vs Bukhari	Fisher z-diff=+19.46 (Quran 0.137 vs Bukhari -0.152)	2	NT,OT,GR,B1,HK,MQ	Bukhari-noquran	CONFIRMED-but-BUKHARI-OUTLIER	MW-5+ MW-7+	H-NEW-35	al-Sakkaki (īqāʿ) [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-35 (vs-Jahiz)	Verse-length ρ(1) Fisher z-diff vs Jahiz	Fisher z-diff=-0.67 (Quran 0.137 vs Jahiz 0.146)	2	NT,OT,GR,B1,HK,MQ	Jahiz Hayawan	NULL-as-distinguishing	MW-5+ MW-7+	H-NEW-35	al-Sakkaki (īqāʿ) — DEMOTED [SECONDARY-TRIANGULATED]
+MASTER-§1-#5 / H-META-1	Confirmable-claim signature classifier (LR L1 + tree)	LR CV acc=0.7820 (null 0.6419, p=0.0000); Tree CV 0.7010 (p=0.0040); equivalent headline |z| ≈ 4.3+ large effect	2 (LR + tree)	meta-claim (inherits from 120 sub-claims)	500-perm label-shuffle	CONFIRMED	MW-5+ MW-6+ MW-7+	(Tier-A meta)	al-Zarkashi/al-Suyuti/al-Biqaʿi/al-Razi/al-Jurjani/al-Rummani/Ibn Abi al-Isbaʿ/al-Kirmani (aggregate) [SECONDARY-TRIANGULATED]
+MASTER-§1-#6 / chiastic-baqara	Al-Baqarah ring Q 2:131-144	z=+9.69	57996 (windows scanned)	NT,LEM,GR,B1,HK,MQ	per-window permutation	CONFIRMED	MW-5+	chiastic-audit	al-Biqaʿi, Nazm al-Durar (local) [SECONDARY-TRIANGULATED]
+MASTER-§1-#14 / cosmic-inversion	Cosmic-inversion 5-word palindrome template	z=+6.84 (13 instances)	5 (template family)	NT,LEM,GR,B1,HK,MQ	verse-shuffle	CONFIRMED	MW-5+	palindrome-full-sweep	classical muqabala [PENDING]
+MASTER-§1-#12 / kitab-quran-shift	kitab-Medinan vs quran-Meccan lexical shift	z=-3.75 (Holm-Bonferroni surviving at k=10)	10 (lexeme family)	NT,LEM,GR,B1,HK,MQ	Meccan/Medinan label-shuffle	CONFIRMED	MW-5+	kitab-quran-shift	Ibn Ashur / Neuwirth / Wild [SECONDARY-TRIANGULATED]
+MASTER-§1-#7 / ring-family	6 ring-composition windows Bonferroni-surviving	window-family z range up to +9.69	57996	NT,LEM,GR,B1,HK,MQ	per-window shuffle	CONFIRMED	MW-5+	chiastic-audit	al-Biqaʿi (local munasaba) [SECONDARY-TRIANGULATED]
+MASTER-§3c / T-002 adjacent-pair	Cross-surah seam-munasaba (T3 secondary)	z≈+10.7 (17/113 pairs vs null mean 2.01, p<1e-4); Jaccard-alone Z=+10.06	4 (T3 sub-legs)	NT,LEM,GR,B1,HK,MQ	random Hamiltonian baseline	CONFIRMED	MW-5+ MW-6+ MW-7+	T3 sub-leg	al-Biqaʿi, Nazm al-Durar (local) [SECONDARY-TRIANGULATED]
+MASTER-§1-#4 / ism-al-azam	Ism al-Azam composite rank-product index	p≈5e-18 (top-10 Bonferroni); hypergeometric p=3.92e-20 (9/11 classical candidates in top-32)	10 (axes)	multi-axis (mixed rules)	within-verse null	CONFIRMED	MW-5+ MW-6+ MW-7+	ism-azam-composite	Tirmidhi 3478 / Ibn Majah 3856 [SECONDARY-TRIANGULATED]
+MASTER-§1-#18 / al-kawthar-forging	Al-Kawthar forging-difficulty MC 96% weight-regime win	96% over 1000 weight vectors on 6 axes	1000 (weight vectors)	NT,OT,GR,B1,HK,MQ	random weight draws	CONFIRMED	MW-5+	al-kawthar-brevity	al-Baqillani, Iʿjaz al-Quran (iʿjaz al-ījāz) [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-24 (main)	Letter-multiset surah-boundary detection (novel lane)	z=+4.39 (41/113 boundaries); sub-(e) preserves 174.5% of excess	7 (B1/B2 sub-family)	NT,GR	within-surah shuffle (sub-e) + length-matched iid (sub-f)	CONFIRMED	MW-1+ MW-2+ MW-5+ MW-6+ MW-7+	H-NEW-24	novel (tokenization-free) — no classical anchor
+MASTER-§3c / H-NEW-24 (ordering-suppression)	Letter-ordering contribution (real ordering suppresses signal)	-74.5% of excess (50/50 ordering perms exceed real, z=-5.00)	7	NT,GR	within-surah shuffle	REVERSE-SIDE-FINDING	MW-5+	H-NEW-24	novel
+MASTER-§3c / H-NEW-20 (B1+B2 K-sweep)	Letter-multiset K-sensitivity sweep (optimal K=200)	F1=0.383, z=+5.09 at K=200	K=30..300 sweep	NT,GR	within-surah shuffle	CONFIRMED-robustness	MW-5+	H-NEW-24	—
+MASTER-§1-#15 / prophet-vocab-suppression	Prophet pericopes share LESS vocabulary than random	mean Jaccard 0.3353 vs null 95% CI [0.348,0.388]	8 (prophets) + pan-prophet pass	NT,LEM,B1,HK	pericope-bootstrap	CONFIRMED	MW-5+	H-NEW-11 prophet-pericope	al-Suyuti, Itqan "takrar maʿa tanwiʿ" [SECONDARY-TRIANGULATED]
+# ============================================================================
+# SECTION 2: Tier-B confirmed, team-discovery, and comparative-cleared
+# ============================================================================
+MASTER-§3c / H-NEW-5	Syntactic mood-switch at verse boundaries	z=+10.68	5 (H-NEW-5 family)	NT,LEM,GR,B1,HK	within-verse shuffle	CONFIRMED	MW-5+	H-NEW-5	Ibn Abi al-Isbaʿ, Badiʿ al-Quran [PENDING]
+MASTER-§3c / H-NEW-8	Twin-opener N(k) exponential decay	z=+7.11 (outlier tail); R²=0.9893 exponential fit	4	NT,GR	tokenized-opening null	CONFIRMED	MW-5+	H-NEW-8	al-Kirmani (twin-opening catalog) [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-23 (eschatological)	Eschatological-verse hapax rate vs legal genre	38× ratio; χ²=113.96, p≈0	2 (genre pair)	NT,LEM,B1,HK	genre-partition	CONFIRMED	MW-5+	H-NEW-23	al-Suyuti, Itqan nawʿ 65 [PENDING]
+MASTER-§3c / T-004 Muallaqat	Muʿallaqat hapax-slot positive-control	Muallaqat z=+6.43, p=6.1e-11; two-prop z-diff Quran vs Muall. z=+6.67 (p=2.55e-11)	7 odes	NT,OT,GR	rhymed-poetry positive-control	DISCRIMINATIVE-PASS	MW-5+ MW-6+ MW-7+	H-NEW-23	Ibn Abi al-Isbaʿ (tasdir catalog) [PENDING]
+MASTER-§3c / H-NEW-19 (elision)	Ibn Abi al-Isbaʿ elision-eschatology triple-proxy	2/3 compression proxies PASS (needs revision under within-Meccan split)	3 (proxies)	NT,LEM,GR,B1,HK	genre-partition	PARTIAL	MW-5+	H-NEW-19	Ibn Abi al-Isbaʿ, Badiʿ al-Quran [PENDING]
+MASTER-§3c / H-NEW-14	Turn-taking signature in dialogic surahs	(z reported in team-discovery-007 ≈ positive)	8 (dialog surahs)	NT,LEM	within-surah turn shuffle	CONFIRMED	MW-5+	H-NEW-14	classical dialog rhetoric (munazara)
+MASTER-§1-#22 / muqattaat-distinctive	Muqattaʿat = Quranic distinctive vs comparative religion	present only in Quran (6 compared corpora)	6 corpora	NT,GR	comparative-religion	CONFIRMED	MW-5+	comparative-religion-audit	classical (muqattaat)
+MASTER-§1-#21 / covenant-architecture	5-lexeme covenant architecture (ʿahd/waʿd/mithaq/bayʿa/ʿaqd)	253 tokens; survives cross-religion audit	6 corpora	NT,LEM	comparative-religion	CONFIRMED	MW-5+	covenant-language	classical theology
+MASTER-§1-#19 / radd-al-kalam	18-verse radd al-kalam rhetorical catalog	catalog (18 instances)	—	NT,LEM	—	CONFIRMED-catalog	N/A	al-kawthar-radd-kalam	classical rhetoric (radd al-ʿajuz ʿala al-sadr) [PENDING]
+MASTER-§1-#23 / kahf-midpoint	Al-Kahf 5-method midpoint convergence at v50	5/5 methods converge on v50	5 (methods)	multi-rule	N/A	CONFIRMED-caveat	MW-5+	al-kahf-deep-dive	al-Suyuti (middle-verse) [PENDING]
+MASTER-§3c / H-NEW-29 (a-null-primary)	Root renewal-process absolute CV<1 (sub-Poisson)	reverse z=+94.89 (wrong direction)	3 (primary legs)	NT,LEM,GR,B1,HK,MQ	verse-shuffle	NULL (pre-reg REFUTED)	MW-6- (pre-reg operationalization-impossibility)	H-NEW-29	al-Jahiz, Hayawan [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-34 (primary)	Verse-final abjad mod m clustering (hisab al-jummal null test)	6/6 sub-tests NULL (χ² below baseline p95)	6 (3 moduli × 2 baselines)	NT,GR,MQ	Bukhari + Jahiz resample	NULL-CONFIRMED (primary)	MW-5+ MW-6+ MW-7+	H-NEW-34	Khalifa Code-19 lineage (REFUTED)
+MASTER-§3c / H-NEW-34 (reverse-underdispersion)	Verse-final abjad residues MORE uniform (post-hoc exploratory)	m=7 z=-5.90 (Buk); m=11 z=-11.36; m=19 z=-7.42; Jahiz m=7 z=-4.28; m=11 z=-6.75; m=19 z=-4.83	6	NT,GR,MQ	Bukhari + Jahiz resample	REVERSE-EXPLORATORY (mechanism refuted H-NEW-34a)	MW-5+ MW-6+ MW-7+	H-NEW-34	Khalifa Code-19 — opposite direction
+MASTER-§3d / H-NEW-34.1 (MECHANISM-INCONSISTENT)	Muallaqat rhymed + length-stratified follow-up	Bukhari strat m=11 z=+3.66; Jahiz strat m=7/11/19 z=+10.85/+19.26/+27.15 (over-disp after length conditioning); Muallaqat NaN	3 (strat thresholds k=3) / 9 auditor-alt	NT,GR,MQ	Muallaqat+Bukhari+Jahiz length-stratified	MECHANISM-INCONSISTENT	MW-1+ MW-6+ MW-7+	H-NEW-34	Muallaqat rhymed-baseline
+MASTER-§3c / H-NEW-34a (rhyme-pooling test)	Within-rhyme-class χ² dispersion (mechanism test)	m=7 z=+9.01; m=11 z=+26.62; m=19 z=+20.41 (over-dispersed, opposite pigeonhole)	6	NT,GR,MQ	random-partition null	MECHANISM-REFUTED	MW-5+ MW-6+	H-NEW-34	—
+MASTER-§3c / H-NEW-13 (bigram spectrum)	Letter-bigram Markov transition-matrix spectral gap	|λ₂|=0.175 in-band 0.15-0.18 vs 4 baselines; Bukhari out-of-band 0.265	4 baselines	NT,GR	4-corpus matched-baseline	NULL	MW-5+ (Bukhari as instrument positive-control)	H-NEW-13	al-Khalil, Kitab al-ʿAyn (talaʾum al-huruf) [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-22	Verse-boundary acrostic scan	NULL + rhyme-constraint suppression of substring diversity	4 (scan family)	NT,GR	within-surah shuffle	NULL	MW-5+	H-NEW-22	Ibn Ashur (acrostic-denial) [PENDING]
+MASTER-§3c / H-NEW-1 (retest-pending)	Verse-ending consonant Markov-residual surprise (order-3 classical-rawi)	z=+5.53 (all); z=+8.78 (Medinan)	6 (robustness)	NT,GR,HK	Markov-retrain (BROKEN per H-META-2)	CONFIRMED-pending-retest	MW-5- (null broken, H-NEW-META-3 gate)	H-NEW-1	al-Khalil (rawi definition) [SECONDARY-TRIANGULATED]
+MASTER-§3c / H-NEW-2 (primary)	Pronoun-chain entropy signature of iltifat	block-structured signal confirmed	3 (H_A/H_B/channels)	NT,LEM,GR,B1,HK	within-surah block-shuffle	CONFIRMED	MW-5+	H-NEW-2	al-Zarkashi, Burhan (iltifat) [PENDING]
+MASTER-§3c / H-NEW-2 × iltifat-rho	Per-surah iltifat-density Spearman rho with H-NEW-2 signatures	ρ(density,z_H)=+0.43; ρ(density,z_MI)=-0.41; ρ(density,z_shift)=+0.45 (all reverse-sign)	3 (channels)	NT,LEM,GR,B1,HK	per-surah permutation	REVERSE-SIGN-REFUTE	MW-5+ MW-6+ MW-7+	H-NEW-2	iltifat catalog [VERIFIED after task#73]
+MASTER-§3c / H-NEW-6	Spectral-gap clustering of 114-surah root-overlap graph	Spectral-4 beats length-preserving null for classical partition z=+4.25	4 (partitions)	NT,LEM	length-preserving null	PARTIAL	MW-5+	H-NEW-6	al-Suyuti, Itqan (Mecca/Medina) [SECONDARY-TRIANGULATED]
+MASTER-§1-#10 / ar-rahman-refrain	Ar-Rahman 31 refrain partition 8+7+8+8	matches classical tafsir (qualitative + gzip extreme outlier)	4 partition cells	NT,OT,B1,HK	length-matched null	CONFIRMED	MW-5+	H-NEW-15	classical tafsir division
+MASTER-§3c / counterfactual-fragility (T2)	Single-word ablation fragility genre-split	z=+5.38 Quran vs prose; z=-6.44 vs Muallaqat; pooled z=-4.86 (REVERSE)	5 (Tomorrow-Tests)	NT,LEM,GR,B1,HK,MQ	Bukhari+Jahiz / Muallaqat	MIXED (primary REVERSE, secondary PASS)	MW-5+ MW-6+ MW-7+	T2	al-Jurjani, Dalail (nazm) [SECONDARY-TRIANGULATED]
+MASTER-§1-#9 / khawatim-al-hashr	Khawatim al-Hashr structural engineering	49=7² (W, rule-brittle), 216=6³ (robust), 8 exclusive divine names, 15 unique names / 3 verses	3 (numerical legs)	NT,LEM,GR,B1,HK,MQ	within-corpus uniqueness	CONFIRMED	MW-5+ MW-6+ MW-7+	khawatim-al-hashr	Tirmidhi 3478 / Ibn Maja 3856 [SECONDARY-TRIANGULATED]
+MASTER-§1-#8 / twin-opener-lock	Twin-opener Lock (2 pairs with ≥30 identical chars)	exactly 2 (Q 2:149-150, Q 59:22-23); null ≤1 at L≥30	4 (L thresholds)	NT,OT,GR,B1,HK	bootstrap null	CONFIRMED	MW-5+	H-NEW-8 twin-opener	al-Biqaʿi (flagship munasaba) [SECONDARY-TRIANGULATED]
+MASTER-§3c / T3 length-residualized NCD	Length-residualized NCD Hamiltonian τ	τ=+0.648, p<1e-4	4 (T3 legs)	NT,GR	10000-perm Hamiltonian null	CONFIRMED (secondary)	MW-5+ MW-7+	T3	al-Biqaʿi (local munasaba) [SECONDARY-TRIANGULATED]
+MASTER-§3b / X-3 Mūsā-ʿĪsā co-mention	Medinan Mūsā-ʿĪsā co-mention rise (H3)	obs=4 vs null mean 0.50 (p<0.001); 6/40 cells Bonferroni-survive	180 (cell family)	NT,LEM,HK	within-surah token-shuffle	CONFIRMED (H3)	MW-5+ MW-6+	X-3 Prophet-chronology	Q 2:87 / Q 5:46 coupling constructed Medinan
+MASTER-§3b / X-3 Medinan-shorter-surahs	X-3 H2 Medinan-shorter-surahs (prophet mentions)	REVERSED (Medinan 173.9 vs late-Meccan 124.8 mean length)	180	NT,LEM,HK	within-surah shuffle	REVERSED	MW-5+	X-3	Nöldeke-school (REVERSED)
+MASTER-§3b / X-3 sequential-intro	X-3 H1 sequential-intro (al-Masih first Medinan)	REFUTED (1 counter-example)	180	NT,LEM,HK	—	REFUTED	MW-5+	X-3	apologetic-claim
+MASTER-§3c / H-NEW-18 directionality	al-Kirmani mutashabih pair directionality (asl/farʿ)	REFUTED (directionality not recovered)	2 (direction tests)	NT,LEM	pair-shuffle	REFUTED	MW-5+ MW-6+	H-NEW-18	al-Kirmani, Burhan fi Mutashabih [PENDING]
+MASTER-§3c / H-NEW-3 length-ratio	Consecutive-surah length-ratio bimodality	primary REFUTED; lag-1 ACF plateau-runs PARTIAL	2	NT,OT,B1,HK	per-surah	REFUTED-primary/PARTIAL-secondary	MW-5+	H-NEW-3	Nöldeke-school
+MASTER-§3c / H-NEW-4 muqattaat-first-lemma	Muqattaʿat surahs first-lemma-introduction rate	REFUTED	114 (surah family)	NT,LEM,HK	verse-order shuffle	REFUTED	MW-5+	H-NEW-4	classical (ijmal-tafsil)
+MASTER-§3b / al-suyuti-husn-ibtida	al-Suyuti husn al-ibtidaʾ/al-intihaʾ across 114 surahs	REFUTED as broad pattern (exemplars real)	114	NT,LEM,HK	within-surah shuffle	REFUTED-broad/CONFIRMED-exemplars	MW-5+	suyuti-ibtida	al-Suyuti, Itqan [SECONDARY-TRIANGULATED]
+MASTER-§3a / al-biqai-macro-ring	al-Biqaʿi macro-ring (last 9 mirror first 9)	z=-4.87	1	NT,LEM	whole-mushaf random	REFUTED	MW-5+	biqai-ring	al-Biqaʿi, Nazm al-Durar [SECONDARY-TRIANGULATED]
+MASTER-§3a / cuypers-maida-ring	Cuypers Sūrat al-Māʾida macro-ring	z=-2.06, p=0.99	1	NT,LEM	verse-pair random	REFUTED	MW-5+	cuypers-maida	Cuypers, Composition of the Qur'an [SECONDARY-TRIANGULATED]
+MASTER-§3a / farrin-whole-mushaf	Farrin whole-mushaf macro-ring (k↔115-k)	z=-4.87 (26/57 pairs beat null)	57 (surah-pairs)	NT,LEM	length-matched null	REFUTED	MW-5+	farrin-ring	Farrin, Structure and Qur'anic Interpretation [SECONDARY-TRIANGULATED]
+MASTER-§3a / yusuf-surah-ring	Surah Yūsuf whole-surah ring	z=-1.60	1	NT,LEM	verse-pair random	REFUTED	MW-5+	yusuf-ring	classical narrative unity
+# ============================================================================
+# SECTION 3: Tomorrow-Tests family (k=5, per-test α=0.01)
+# ============================================================================
+MASTER-§5 / T1	LLM-judge inauthenticity (fallback classifier)	p=0.157 (56.25% 45/80)	5 (Tomorrow-Tests)	N/A	80-test classifier	NULL (fallback)	MW-5+ MW-6+ MW-7+	T1	al-Jurjani (nazm) [SECONDARY-TRIANGULATED]
+MASTER-§5 / T3 primary	Canonical 114-surah reverse-engineering (combined-τ)	τ=+0.015, p=0.81	5	NT,LEM,GR,B1,HK	10000-perm Hamiltonian	FAIL (primary)	MW-5+ MW-6+ MW-7+	T3	al-Zarkashi, Burhan nawʿ 4 [SECONDARY-TRIANGULATED]
+MASTER-§5 / T3 Nöldeke (R-010)	T3 secondary Nöldeke chronology recovery	τ=-0.056, ρ=-0.018	5	NT,LEM,GR	10000-perm	FALSIFIED (Nöldeke-as-hidden-axis)	MW-5+ MW-6+ MW-7+	T3	al-Zarkashi nawʿ 4 [SECONDARY-TRIANGULATED]
+MASTER-§5 / T5 TDA (R-011)	Persistent homology bottleneck distance to 4 baselines	all 4 pairs inside within-baseline 90%tile (≤0.0409); H1 loop-density Quran #2 of 5	5	NT,OT,B1,HK	multi4	NULL	MW-5+ MW-6+ MW-7+	T5	mathani doctrine (Q 15:87, Q 39:23) [SECONDARY-TRIANGULATED]
+MASTER-§5 / T4 (see top)	(see §1-#30 above)	p=8.7e-33	5	—	multi4	CONFIRMED	—	T4	al-Jurjani (nazm)
+# ============================================================================
+# SECTION 4: Meta / additional notable tests
+# ============================================================================
+MASTER-§5 / H-META-2 (null-comparator)	Null-A vs Null-B calibration on Mutanabbi+Jahiz	Null-A reject 0.693/0.651; Null-B reject 0.620/0.720 (nominal α 0.005-0.02); Null-B SIGN FLIP on Jahiz planted -σ (recovered +4.74/+4.83/+6.69)	2 nulls × 2 corpora	NT,GR	Mutanabbi, Jahiz	BOTH_DISQUALIFIED	MW-5+ MW-6+ MW-7+	H-META-2	—
+MASTER-§3c / H-NEW-31 (primary)	Time-vs-space incipit asymmetry Meccan/Medinan	PARTIAL (Tier-B; H-NEW-31.1 held-out control in-flight)	6 (incipit classes)	NT,LEM,HK	class-partition	PARTIAL	MW-5- (PRE-REG-STANDARD-04 mis-spec)	H-NEW-31	al-Zarkashi nawʿ 40 (incipit) [PENDING]
+MASTER-§1-#28 / shahada-illa-huwa	Shahada: illa huwa (81%) not illa Allah	81% dominant, 2 instances of full phrase	1	NT,LEM,HK	intra-Quran	CONFIRMED	—	negation-taxonomy	none
+MASTER-§1-#29 / muhammad-named-4x	Muhammad named only 4 times (all post-Hijra); 332 qul imperatives	4 name instances; 332 qul	1	NT,LEM,HK	intra-Quran	CONFIRMED	—	quranic-self-reference	—
+MASTER-§1-#1 / bismillah-anchor	Bismillah: 19 letters, 4 words, 786 abjad mashriqi, 1026 maghribi	19 / 4 / 786 / 1026 (locked anchor)	—	multi-rule	—	ANCHOR	—	anchor	Khalifa (seed-anchor, not derived)
+# ============================================================================
+# SECTION 5: REFUTED modern numerology (from HONEST-LIMITS-LEDGER Part I)
+# ============================================================================
+HONEST-LIMITS-§1.3 / ALM-29-surahs	ALM sum per 29 muqattaat surahs divisible by 19	1/29 pass (expected 1.53); P(X>=1)=0.79	29	NT,GR	binomial uniform-residue	REFUTED	MW-5+	Khalifa Code-19	Khalifa (modern-numerology, 0%)
+HONEST-LIMITS-§1.9 / prime-mod-scan	Prime-mod scan p∈{7,11,13,17,19,23,29,31}	min raw p=0.056 vs Bonferroni 0.00156 (32 tests)	32	NT,GR	uniform-residue	NULL	MW-5+	Khalifa Code-19	Khalifa
+HONEST-LIMITS-§1.10 / letter-div-19	Letter-div-by-19 rate across 15 corpora	Quran 5.6%; range 0-11.1%; expected 5.3%	15 corpora	NT,GR	matched-corpus	NULL	MW-5+	letter-19	Khalifa
+HONEST-LIMITS-§2 / word-pair-symmetry	11 famous word-pair symmetries (Al-Kaheel/Nawfal)	2 verify (malak/shaytan 88; Adam/ʿIsa 25); 2 partial; 1 phrase; 6 fail	~15 pairs	LEM,HK	2817 McKay denominator	MIXED/below-baseline	MW-5+	word-pair-symmetry	Al-Kaheel/Nawfal modern
+HONEST-LIMITS-§3 / yusuf-sjn-12	Yūsuf sjn=12 single-chunk concentration	Quran 0.0% at f=12; Sira 4.5% (above Quran)	5 baselines	LEM,HK	length-matched chunks	DEMOTED (baseline rate)	MW-5+	root-cartographer	Khalifa-adjacent
+HONEST-LIMITS-§4 / rahma-114	rahma=114 uniqueness claim	34.1% baseline rate (every 77k slice has 1 lemma at 114); Bonferroni p=1.000	13 famous numbers	LEM,HK	1000 matched slices	REFUTED	MW-5+	root-cartographer	modern
+HONEST-LIMITS-§5 / 147-triple	147-triple (ghayr/ilah/janna)	16997 tied pairs (Quran); 10860-13177 (prose)	83	LEM,HK	matched-corpus	REFUTED (pigeonhole)	MW-5+	word-pair-symmetry	modern
+HONEST-LIMITS-§6 / razi-99names	al-Razi muqattaat=99 divine-names theory	naive p=0.000593; proper subset-null p=0.139	10^5 (subset null)	LEM,HK	proper subset null	REFUTED	MW-5+ MW-6+	razi-99names	al-Razi Mafatih (classical-hypothesis REFUTED) [SECONDARY-TRIANGULATED]
+HONEST-LIMITS-§7 / zipf-meccan	Per-surah Zipf α heterogeneity predicts Meccan	ρ(α,len)=+0.962 (length-determined); REVERSE direction	1	LEM	within-corpus	REFUTED (length-artifact)	MW-1+	zipf-per-surah	chronological-revelation
+HONEST-LIMITS-§8 / meccan-saj-denser	Meccan saj' density vs Medinan (folk wisdom)	p>0.3 all metrics	10000 label-perm	NT,GR	label-permutation	REFUTED	MW-5+	saj-rhyme-analysis	classical folk wisdom
+HONEST-LIMITS-§9 / khalifa-zipf	Khalifa aggregate Zipf α=0.97 distinctiveness	Quran 0.97 vs prose 0.94-1.07	multi4	LEM/OT	cross-textual	NULL (not distinctive)	MW-5+	cross-textual-baseline	Khalifa
+# ============================================================================
+# SECTION 6: iʿjāz ʿilmī (all REFUTED per H-META-1 scientific-foreknowledge 0/6)
+# ============================================================================
+HONEST-LIMITS-II.10 / embryology	Q 23:12-14 embryology stages	traced to Galen (pre-Islamic Syriac transmission)	12 (iʿjaz family)	N/A	philological	PRE-EXISTING-KNOWLEDGE	MW-6+	embryology	Bucaille 1976 (modern-apologetic, 0%)
+HONEST-LIMITS-II.11 / iron-sent-down	Q 57:25 iron meteoritic	anzala is generic ("sent down"); Fe-57 cherry-pick	12	N/A	philological	APOLOGETIC-OVERREACH	MW-6+	hadid-deep-dive	Bucaille/Naggar
+HONEST-LIMITS-II.12 / big-bang	Q 21:30 ratq/fatq Big Bang	Near-Eastern cosmogonic-split motif (Gen 1, Enuma Elish, Hesiod)	12	N/A	philological	APOLOGETIC-OVERREACH	MW-6+	cosmology-audit	Bucaille
+HONEST-LIMITS-II.13 / fingerprints	Q 75:4 banana fingerprints unique	s-w-y root = "proportion" not "make unique"	12	N/A	philological	AMBIGUOUS→OVERREACH	MW-6+	—	Bucaille
+HONEST-LIMITS-II.14 / mountain-pegs	Q 78:7 mountains as awtad	pan-Near-Eastern tent-peg metaphor; geologically wrong at face	12	N/A	philological	PRE-EXISTING+WRONG	MW-6+	earth-sciences-audit	Naggar
+HONEST-LIMITS-II.15 / expanding-universe	Q 51:47 musi'un expanding universe	awsaʿa = "generous/abundant"; classical tafsir gives "breadth"	12	N/A	philological	AMBIGUOUS	MW-6+	—	Bucaille
+HONEST-LIMITS-II.16 / sun-orbit	Q 36:38 sun orbit galactic center	mustaqarr = any astronomical settling (Ptolemy-compatible)	12	N/A	philological	PRE-EXISTING-KNOWLEDGE	MW-6+	—	Bucaille
+HONEST-LIMITS-II.17 / two-seas	Q 25:53/55:19-20 two seas not mixing	halocline observable to any sailor; Mediterranean folklore	12	N/A	philological	PRE-EXISTING-OBSERVATIONAL	MW-6+	—	—
+HONEST-LIMITS-II.18 / deep-sea-darkness	Q 24:40 deep-sea darkness	literary simile; storm imagery topos in pre-Islamic poetry	12	N/A	philological	PRE-EXISTING+SIMILE	MW-6+	—	—
+HONEST-LIMITS-II.19 / atom-dharra	Q 99:7-8 dharra atom	dharra = dust mote/red ant in pre-Islamic poetry	12	N/A	philological	APOLOGETIC-OVERREACH	MW-6+	—	—
+HONEST-LIMITS-II.20 / milk-formation	Q 16:66 milk between blood and excretion	observable slaughter (Pliny, Aristotle)	12	N/A	philological	PRE-EXISTING-OBSERVATIONAL	MW-6+	—	—
+HONEST-LIMITS-II.21 / pharaoh-body	Q 10:92 Pharaoh preserved body	any mummified Pharaoh satisfies	12	N/A	philological	AMBIGUOUS	MW-6+	—	—
+# ============================================================================
+# OUTLIER NOTES — sorted (top-of-file) highlights
+# ============================================================================
+# Top-end outliers (|z| >= 15):
+#   - H-NEW-20 face-value z=+30.76 (SUPERSEDED by MW-1 strict z=+9.57)
+#   - H-NEW-29.a reverse z=+94.89 (pre-reg broken operationalization, NOT a signal; MW-6 failure)
+#   - iltifat-block H_B z≈-77 (structured-block signal, 100% surahs)
+#   - H-NEW-34.1 Jahiz stratified m=19 z=+27.15 (MECHANISM-INCONSISTENT, routing §3d→§4)
+#   - H-NEW-34a rhyme-pooling m=11 z=+26.62 (refutes H-NEW-34 pigeonhole, over-disperse)
+#   - al-Razi adjacent IV-weighted z=+22.78 (MW-1 liberal, 12× Bon k=5)
+#   - H-NEW-35 vs Bukhari Fisher z=+19.46 (Bukhari outlier, not Quran)
+#   - Ar-Rahman compression z=-17.77 (strongest compression outlier)
+#   - RQA determinism z=+15.09 / laminarity z=+14.66 (saj' formalization)
+#   - H-NEW-29 pooled z=-14.79 (comparative CV, al-Jahiz takrar maqbul)
+#   - Ash-Shuʿara compression z=-13.34
+#   - H-NEW-35 primary ρ(1) z=+13.13
+#
+# Reverse-direction outliers (Quran LESS ornate/MORE regular):
+#   - H-NEW-16 z=-6.38 (less palindromic)
+#   - H-NEW-29 z=-14.79 (more regular root-repetition)
+#   - H-NEW-34 z=-4.28 to -11.36 (more uniform abjad residues; but see H-NEW-34.1 routing)
+#   - counterfactual-fragility z=-4.86 (less fragile than pooled prose)
+#
+# Notable zero-outliers (null as headline):
+#   - T5 TDA all 4 bottleneck distances inside 90%tile (Quran semantic manifold = prose)
+#   - T3 primary τ=+0.015 (canonical order unrecoverable)
+#   - H-NEW-35 vs Jahiz Fisher z=-0.67 (al-Sakkaki īqāʿ demoted)
+#   - H-NEW-13 spectrum in-band (letter-bigram NOT distinctive)
+#   - H-NEW-22 acrostic NULL
+#
+# H-META-1 regime prediction (78% CV):
+#   - structural-formal (72% CONFIRMED): confirmed cluster above
+#   - numerical-gematric (32% CONFIRMED): H-NEW-34 NULL-primary, Khalifa ALM 0/29 for 19, rahma=114 REFUTED
+#   - scientific-foreknowledge (0/6 CONFIRMED): all 12 iʿjaz ʿilmī in §6 REFUTED as expected

@@ -1,0 +1,234 @@
+{
+  "finding_id": "h-new-143",
+  "title": "Surface-word rhetorical-bridge NULL test across mushaf boundaries",
+  "parent_finding": "h-new-142 (post-hoc rhetorical-bridge observations)",
+  "method": "Token set overlap between last-1-verse of surah i and first-1-verse of surah i+1 across 113 transitions. Multi-metric: cosine, Jaccard, Dice, raw overlap count. Mann-Whitney U test for top-15 FR-jump vs other 98 on each feature space.",
+  "corpus_stats": {
+    "n_boundaries": 113,
+    "zero_overlap_under_1verse_window": 92,
+    "zero_overlap_under_2verse_window": 66
+  },
+  "by_feature_and_metric": {
+    "root": {
+      "cos": {
+        "mean_top15": 0.029500013461262322,
+        "mean_other": 0.026564813969884356,
+        "U": 719.0,
+        "z": -0.13539402920207824,
+        "p_two_sided": 0.892300344671941,
+        "direction_sign": "positive"
+      },
+      "jaccard": {
+        "mean_top15": 0.015105581772248439,
+        "mean_other": 0.013715178668291047,
+        "U": 719.0,
+        "z": -0.13539402920207824,
+        "p_two_sided": 0.892300344671941,
+        "direction_sign": "positive"
+      },
+      "dice": {
+        "mean_top15": 0.028084291187739464,
+        "mean_other": 0.02505810457989442,
+        "U": 719.0,
+        "z": -0.13539402920207824,
+        "p_two_sided": 0.892300344671941,
+        "direction_sign": "positive"
+      },
+      "overlap_count": {
+        "mean_top15": 0.4,
+        "mean_other": 0.4489795918367347,
+        "U": 725.0,
+        "z": -0.08462126825129891,
+        "p_two_sided": 0.9325624900939444,
+        "direction_sign": "negative"
+      }
+    },
+    "char_4gram": {
+      "cos": {
+        "mean_top15": 0.020164812901075593,
+        "mean_other": 0.02799367119848437,
+        "U": 695.5,
+        "z": -0.3342540095926307,
+        "p_two_sided": 0.7381878915229543,
+        "direction_sign": "negative"
+      },
+      "jaccard": {
+        "mean_top15": 0.010167310167310168,
+        "mean_other": 0.01447103656700609,
+        "U": 693.5,
+        "z": -0.3511782632428905,
+        "p_two_sided": 0.7254546163439197,
+        "direction_sign": "negative"
+      },
+      "dice": {
+        "mean_top15": 0.01888888888888889,
+        "mean_other": 0.02646556411543277,
+        "U": 693.5,
+        "z": -0.3511782632428905,
+        "p_two_sided": 0.7254546163439197,
+        "direction_sign": "negative"
+      },
+      "overlap_count": {
+        "mean_top15": 0.26666666666666666,
+        "mean_other": 0.46938775510204084,
+        "U": 688.5,
+        "z": -0.3934888973685399,
+        "p_two_sided": 0.6939584226577065,
+        "direction_sign": "negative"
+      }
+    },
+    "vlen": {
+      "cos": {
+        "mean_top15": 0.017647749916567985,
+        "mean_other": 0.02837893594101104,
+        "U": 689.5,
+        "z": -0.38502677054341006,
+        "p_two_sided": 0.7002175816195327,
+        "direction_sign": "negative"
+      },
+      "jaccard": {
+        "mean_top15": 0.008683473389355743,
+        "mean_other": 0.014698154441182786,
+        "U": 687.5,
+        "z": -0.4019510241936698,
+        "p_two_sided": 0.6877200703650039,
+        "direction_sign": "negative"
+      },
+      "dice": {
+        "mean_top15": 0.016296296296296295,
+        "mean_other": 0.02686238951225817,
+        "U": 687.5,
+        "z": -0.4019510241936698,
+        "p_two_sided": 0.6877200703650039,
+        "direction_sign": "negative"
+      },
+      "overlap_count": {
+        "mean_top15": 0.13333333333333333,
+        "mean_other": 0.4897959183673469,
+        "U": 677.5,
+        "z": -0.48657229244496875,
+        "p_two_sided": 0.6265614628232503,
+        "direction_sign": "negative"
+      }
+    }
+  },
+  "top10_strongest_bridges": [
+    {
+      "i": 17,
+      "j": 18,
+      "cos": 0.33113308926626095,
+      "overlap_count": 5,
+      "shared_tokens": [
+        "الحمد",
+        "الذي",
+        "لله",
+        "له",
+        "ولم"
+      ]
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "cos": 0.2279211529192759,
+      "overlap_count": 4,
+      "shared_tokens": [
+        "أيها",
+        "الله",
+        "واتقوا",
+        "يا"
+      ]
+    },
+    {
+      "i": 5,
+      "j": 6,
+      "cos": 0.22360679774997896,
+      "overlap_count": 3,
+      "shared_tokens": [
+        "السماوات",
+        "لله",
+        "والأرض"
+      ]
+    },
+    {
+      "i": 106,
+      "j": 107,
+      "cos": 0.20412414523193154,
+      "overlap_count": 1,
+      "shared_tokens": [
+        "الذي"
+      ]
+    },
+    {
+      "i": 48,
+      "j": 49,
+      "cos": 0.17677669529663687,
+      "overlap_count": 5,
+      "shared_tokens": [
+        "آمنوا",
+        "الذين",
+        "الله",
+        "ۖ",
+        "ۚ"
+      ]
+    },
+    {
+      "i": 4,
+      "j": 5,
+      "cos": 0.1732050807568877,
+      "overlap_count": 6,
+      "shared_tokens": [
+        "إن",
+        "الله",
+        "لكم",
+        "ما",
+        "ۗ",
+        "ۚ"
+      ]
+    },
+    {
+      "i": 57,
+      "j": 58,
+      "cos": 0.15877683720748895,
+      "overlap_count": 3,
+      "shared_tokens": [
+        "الله",
+        "والله",
+        "ۚ"
+      ]
+    },
+    {
+      "i": 12,
+      "j": 13,
+      "cos": 0.15171652122725207,
+      "overlap_count": 3,
+      "shared_tokens": [
+        "ولكن",
+        "يؤمنون",
+        "ۗ"
+      ]
+    },
+    {
+      "i": 49,
+      "j": 50,
+      "cos": 0.15075567228888181,
+      "overlap_count": 1,
+      "shared_tokens": [
+        "ۚ"
+      ]
+    },
+    {
+      "i": 34,
+      "j": 35,
+      "cos": 0.15,
+      "overlap_count": 3,
+      "shared_tokens": [
+        "في",
+        "ما",
+        "ۚ"
+      ]
+    }
+  ],
+  "verdict": "NULL",
+  "interpretation": "Surface-word (token-identity) bridge strength does NOT discriminate top-15 Fisher-Rao jumps from other boundaries. All 12 tests (3 feature spaces × 4 metrics) give p > 0.1. Top-10 strongest surface bridges (Q17→18 الحمد لله الذي, Q3→4 يا أيها, etc.) do NOT coincide with top-15 FR jumps. Surface-word is the wrong level of analysis for classical munāsabāt — which operates at ROOT level (semantic/thematic), not surface-token level. H-NEW-143.1 queued for root-level replication.",
+  "h_new_142_status_update": "H-NEW-142's post-hoc rhetorical-bridge observations (Q 14→15 message-echo, Q 49→50 omniscience-oath, Q 56→57 tasbīḥ-echo) are ROOT- and SEMANTIC-level, not surface-word-level. They are DOWNGRADED from 'rhetorical-bridge evidence' to 'thematic/semantic-bridge evidence under classical-munāsabāt reading'. The finding remains EXPLORATORY-POST-HOC. H-NEW-143.1 root-level test is the proper inferential path."
+}

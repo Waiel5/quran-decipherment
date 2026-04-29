@@ -1,0 +1,383 @@
+{
+  "id": "H-NEW-301.5",
+  "title": "Empirical-table residual-row rescue over the 55-pair singleton family",
+  "prereg_sha256": "63e596462615d794f74f76e91bfba049d47317705a95a73a4535066ea6977207",
+  "seed": 20260425,
+  "n_perm": 20000,
+  "alpha": 0.05,
+  "target_rows": [
+    "YS",
+    "N"
+  ],
+  "observed_best_pair": [
+    "mean_voice",
+    "mean_sonorant"
+  ],
+  "observed_best_pair_label": "mean_voice + mean_sonorant",
+  "observed_rescue_count": 2,
+  "observed_positive_margin_sum": 4.567826058189053,
+  "observed_total_hits": 8,
+  "pairs_rescuing_both_targets": 14,
+  "highest_total_hits_among_two_rescue_pairs": 9,
+  "top10_targeted_pairs": [
+    {
+      "pair": [
+        "mean_voice",
+        "mean_sonorant"
+      ],
+      "pair_label": "mean_voice + mean_sonorant",
+      "rescue_count": 2,
+      "positive_margin_sum": 4.567826058189053,
+      "total_hits": 8
+    },
+    {
+      "pair": [
+        "mean_voice",
+        "has_qalqala"
+      ],
+      "pair_label": "mean_voice + has_qalqala",
+      "rescue_count": 2,
+      "positive_margin_sum": 3.159364497665382,
+      "total_hits": 8
+    },
+    {
+      "pair": [
+        "mean_voice",
+        "mean_continuant"
+      ],
+      "pair_label": "mean_voice + mean_continuant",
+      "rescue_count": 2,
+      "positive_margin_sum": 3.159364497665382,
+      "total_hits": 8
+    },
+    {
+      "pair": [
+        "mean_voice",
+        "mean_emphatic"
+      ],
+      "pair_label": "mean_voice + mean_emphatic",
+      "rescue_count": 2,
+      "positive_margin_sum": 3.1593644976653814,
+      "total_hits": 7
+    },
+    {
+      "pair": [
+        "mean_makhraj",
+        "mean_sonorant"
+      ],
+      "pair_label": "mean_makhraj + mean_sonorant",
+      "rescue_count": 2,
+      "positive_margin_sum": 2.895527092044128,
+      "total_hits": 8
+    },
+    {
+      "pair": [
+        "mean_emphatic",
+        "mean_sonorant"
+      ],
+      "pair_label": "mean_emphatic + mean_sonorant",
+      "rescue_count": 2,
+      "positive_margin_sum": 2.8707079014455106,
+      "total_hits": 8
+    },
+    {
+      "pair": [
+        "mean_sonorant",
+        "has_qalqala"
+      ],
+      "pair_label": "mean_sonorant + has_qalqala",
+      "rescue_count": 2,
+      "positive_margin_sum": 2.8707079014455106,
+      "total_hits": 9
+    },
+    {
+      "pair": [
+        "mean_sonorant",
+        "mean_continuant"
+      ],
+      "pair_label": "mean_sonorant + mean_continuant",
+      "rescue_count": 2,
+      "positive_margin_sum": 2.8707079014455106,
+      "total_hits": 9
+    },
+    {
+      "pair": [
+        "mean_manner",
+        "has_qalqala"
+      ],
+      "pair_label": "mean_manner + has_qalqala",
+      "rescue_count": 2,
+      "positive_margin_sum": 2.590365585934185,
+      "total_hits": 8
+    },
+    {
+      "pair": [
+        "mean_manner",
+        "mean_continuant"
+      ],
+      "pair_label": "mean_manner + mean_continuant",
+      "rescue_count": 2,
+      "positive_margin_sum": 2.590365585934185,
+      "total_hits": 8
+    }
+  ],
+  "best_pair_target_rows": [
+    {
+      "singleton": "YS",
+      "surah": 36,
+      "nearest_cluster": "HM",
+      "accepted_clusters": [
+        "HM"
+      ],
+      "match": true,
+      "accepted_best_distance": 2.482534153247273e-16,
+      "rejected_best_distance": 2.538672162464229,
+      "margin": 2.5386721624642288,
+      "distances_to_centroids": {
+        "ALM": 2.538672162464229,
+        "ALR": 2.538672162464229,
+        "HM": 2.482534153247273e-16,
+        "TSM": 2.538672162464229
+      },
+      "rescued": true
+    },
+    {
+      "singleton": "N",
+      "surah": 68,
+      "nearest_cluster": "ALM",
+      "accepted_clusters": [
+        "ALM",
+        "ALR"
+      ],
+      "match": true,
+      "accepted_best_distance": 5.07734432492846,
+      "rejected_best_distance": 7.106498220653284,
+      "margin": 2.029153895724824,
+      "distances_to_centroids": {
+        "ALM": 5.07734432492846,
+        "ALR": 5.07734432492846,
+        "HM": 7.61601648739269,
+        "TSM": 7.106498220653284
+      },
+      "rescued": true
+    }
+  ],
+  "best_pair_per_singleton": [
+    {
+      "singleton": "ALMS",
+      "surah": 7,
+      "nearest_cluster": "HM",
+      "accepted_clusters": [
+        "ALM"
+      ],
+      "match": false,
+      "accepted_best_distance": 2.538672162464229,
+      "rejected_best_distance": 2.482534153247273e-16,
+      "margin": -2.5386721624642288,
+      "distances_to_centroids": {
+        "ALM": 2.538672162464229,
+        "ALR": 2.538672162464229,
+        "HM": 2.482534153247273e-16,
+        "TSM": 2.538672162464229
+      }
+    },
+    {
+      "singleton": "ALMR",
+      "surah": 13,
+      "nearest_cluster": "ALM",
+      "accepted_clusters": [
+        "ALM",
+        "ALR"
+      ],
+      "match": true,
+      "accepted_best_distance": 1.2693360812321153,
+      "rejected_best_distance": 3.7380021228258067,
+      "margin": 2.4686660415936914,
+      "distances_to_centroids": {
+        "ALM": 1.2693360812321153,
+        "ALR": 1.2693360812321153,
+        "HM": 3.808008243696345,
+        "TSM": 3.7380021228258067
+      }
+    },
+    {
+      "singleton": "KHYAS",
+      "surah": 19,
+      "nearest_cluster": "HM",
+      "accepted_clusters": [
+        "HM",
+        "TSM"
+      ],
+      "match": true,
+      "accepted_best_distance": 2.8729152896236085,
+      "rejected_best_distance": 5.2322943859498094,
+      "margin": 2.359379096326201,
+      "distances_to_centroids": {
+        "ALM": 5.2322943859498094,
+        "ALR": 5.2322943859498094,
+        "HM": 2.8729152896236085,
+        "TSM": 3.541633747507335
+      }
+    },
+    {
+      "singleton": "TH",
+      "surah": 20,
+      "nearest_cluster": "TSM",
+      "accepted_clusters": [
+        "TSM"
+      ],
+      "match": true,
+      "accepted_best_distance": 3.5532491103266417,
+      "rejected_best_distance": 4.306061852168266,
+      "margin": 0.7528127418416246,
+      "distances_to_centroids": {
+        "ALM": 6.111339526347897,
+        "ALR": 6.111339526347897,
+        "HM": 4.306061852168266,
+        "TSM": 3.5532491103266417
+      }
+    },
+    {
+      "singleton": "TS",
+      "surah": 27,
+      "nearest_cluster": "TSM",
+      "accepted_clusters": [
+        "TSM"
+      ],
+      "match": true,
+      "accepted_best_distance": 3.5532491103266417,
+      "rejected_best_distance": 4.306061852168266,
+      "margin": 0.7528127418416246,
+      "distances_to_centroids": {
+        "ALM": 6.111339526347897,
+        "ALR": 6.111339526347897,
+        "HM": 4.306061852168266,
+        "TSM": 3.5532491103266417
+      }
+    },
+    {
+      "singleton": "YS",
+      "surah": 36,
+      "nearest_cluster": "HM",
+      "accepted_clusters": [
+        "HM"
+      ],
+      "match": true,
+      "accepted_best_distance": 2.482534153247273e-16,
+      "rejected_best_distance": 2.538672162464229,
+      "margin": 2.5386721624642288,
+      "distances_to_centroids": {
+        "ALM": 2.538672162464229,
+        "ALR": 2.538672162464229,
+        "HM": 2.482534153247273e-16,
+        "TSM": 2.538672162464229
+      }
+    },
+    {
+      "singleton": "S",
+      "surah": 38,
+      "nearest_cluster": "HM",
+      "accepted_clusters": [
+        "TSM"
+      ],
+      "match": false,
+      "accepted_best_distance": 8.854084368768339,
+      "rejected_best_distance": 7.616016487392689,
+      "margin": -1.2380678813756498,
+      "distances_to_centroids": {
+        "ALM": 10.154688649856919,
+        "ALR": 10.154688649856919,
+        "HM": 7.616016487392689,
+        "TSM": 8.854084368768339
+      }
+    },
+    {
+      "singleton": "HMASQ",
+      "surah": 42,
+      "nearest_cluster": "TSM",
+      "accepted_clusters": [
+        "TSM"
+      ],
+      "match": true,
+      "accepted_best_distance": 1.4212996441306567,
+      "rejected_best_distance": 2.8729152896236085,
+      "margin": 1.4516156454929519,
+      "distances_to_centroids": {
+        "ALM": 4.105341352209944,
+        "ALR": 4.105341352209944,
+        "HM": 2.8729152896236085,
+        "TSM": 1.4212996441306567
+      }
+    },
+    {
+      "singleton": "Q",
+      "surah": 50,
+      "nearest_cluster": "TSM",
+      "accepted_clusters": [
+        "HM",
+        "TSM"
+      ],
+      "match": true,
+      "accepted_best_distance": 5.07734432492846,
+      "rejected_best_distance": 7.106498220653284,
+      "margin": 2.029153895724824,
+      "distances_to_centroids": {
+        "ALM": 7.106498220653284,
+        "ALR": 7.106498220653284,
+        "HM": 7.61601648739269,
+        "TSM": 5.07734432492846
+      }
+    },
+    {
+      "singleton": "N",
+      "surah": 68,
+      "nearest_cluster": "ALM",
+      "accepted_clusters": [
+        "ALM",
+        "ALR"
+      ],
+      "match": true,
+      "accepted_best_distance": 5.07734432492846,
+      "rejected_best_distance": 7.106498220653284,
+      "margin": 2.029153895724824,
+      "distances_to_centroids": {
+        "ALM": 5.07734432492846,
+        "ALR": 5.07734432492846,
+        "HM": 7.61601648739269,
+        "TSM": 7.106498220653284
+      }
+    }
+  ],
+  "best_pair_centroids_z": {
+    "ALM": [
+      0.66124652253358,
+      0.7554494477488182
+    ],
+    "ALR": [
+      0.66124652253358,
+      0.7554494477488182
+    ],
+    "HM": [
+      -1.4327007988227585,
+      -0.6799045029739371
+    ],
+    "TSM": [
+      0.66124652253358,
+      -2.1152584536966925
+    ]
+  },
+  "null_best_rescue_mean": 1.84315,
+  "null_best_rescue_counts": {
+    "1": 3137,
+    "2": 16863
+  },
+  "null_best_margin_mean": 0.8081389520148301,
+  "null_best_margin_sd": 0.43793622686917316,
+  "null_best_margin_q95": 1.5935361327274289,
+  "null_best_margin_q99": 2.0387486618975244,
+  "n_perm_ge_targeted_obs": 0,
+  "n_perm_ge_count_only_obs": 16863,
+  "p_maxT": 4.999750012499375e-05,
+  "p_count_only": 0.8431578421078946,
+  "verdict": "TARGETED-RESIDUAL-RESCUE"
+}

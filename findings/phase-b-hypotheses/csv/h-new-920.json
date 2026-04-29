@@ -1,0 +1,1401 @@
+{
+  "finding_id": "h-new-920",
+  "title": "Discrete geodesic curvature of the mushaf path",
+  "pre_reg_sha256": "2bd4c93ee87d0a5fac1c7331d16890966f21d46ad5c94455254bc6a915b32758",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "date": "2026-05-07",
+  "rules_tuple_inherited_from_h111": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, mushaf order, Hafs-Kufan)",
+  "locked_params_inherited_from_h111": {
+    "K_top_roots": 500,
+    "dirichlet_alpha": 0.5,
+    "permutations": 10000,
+    "distance": "Fisher-Rao angular = 2\u00b7arccos(\u03a3 sqrt(p_i\u00b7p_j))",
+    "length_control": "L1-normalized probability vectors (MW-1)"
+  },
+  "primary_metric": "turn_cost = d_in + d_out - d_skip (FR triangle slack)",
+  "secondary_metric": "turning_angle (Euclidean-pseudo, diagnostic only)",
+  "boundaries_pre_committed": {
+    "B1_mufassal_onset_Q50": [
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "B2_hawamim_cluster_Q40": [
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "B3_medinan_block_onset_Q2": [
+      2,
+      3,
+      4
+    ],
+    "B_union": [
+      2,
+      3,
+      4,
+      38,
+      39,
+      40,
+      41,
+      42,
+      48,
+      49,
+      50,
+      51,
+      52
+    ]
+  },
+  "empirical": {
+    "mean_turn_cost": 0.7434920267857142,
+    "median_turn_cost": 0.789915,
+    "min_turn_cost": 0.20048299999999997,
+    "max_turn_cost": 1.4251659999999997,
+    "top10": [
+      {
+        "rank": 1,
+        "path_position": 33,
+        "surah_prev": 32,
+        "surah_curr": 33,
+        "surah_next": 34,
+        "turn_cost": 1.4251659999999997,
+        "turning_angle_rad": 0.7495319155122152,
+        "turning_angle_deg": 42.94501536920613,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      },
+      {
+        "rank": 2,
+        "path_position": 24,
+        "surah_prev": 23,
+        "surah_curr": 24,
+        "surah_next": 25,
+        "turn_cost": 1.3460520000000002,
+        "turning_angle_rad": 0.7811416191045135,
+        "turning_angle_deg": 44.75611797670434,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      },
+      {
+        "rank": 3,
+        "path_position": 55,
+        "surah_prev": 54,
+        "surah_curr": 55,
+        "surah_next": 56,
+        "turn_cost": 1.278082,
+        "turning_angle_rad": 0.9212890545308665,
+        "turning_angle_deg": 52.78597453621661,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      },
+      {
+        "rank": 4,
+        "path_position": 15,
+        "surah_prev": 14,
+        "surah_curr": 15,
+        "surah_next": 16,
+        "turn_cost": 1.162012,
+        "turning_angle_rad": 0.8717376977008517,
+        "turning_angle_deg": 49.94689092071001,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      },
+      {
+        "rank": 5,
+        "path_position": 12,
+        "surah_prev": 11,
+        "surah_curr": 12,
+        "surah_next": 13,
+        "turn_cost": 1.112588,
+        "turning_angle_rad": 0.9338602713416583,
+        "turning_angle_deg": 53.506252202818885,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      },
+      {
+        "rank": 6,
+        "path_position": 22,
+        "surah_prev": 21,
+        "surah_curr": 22,
+        "surah_next": 23,
+        "turn_cost": 1.083451,
+        "turning_angle_rad": 0.896473249903831,
+        "turning_angle_deg": 51.36413366586625,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      },
+      {
+        "rank": 7,
+        "path_position": 23,
+        "surah_prev": 22,
+        "surah_curr": 23,
+        "surah_next": 24,
+        "turn_cost": 1.083362,
+        "turning_angle_rad": 0.9493224691207195,
+        "turning_angle_deg": 54.39217087755565,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      },
+      {
+        "rank": 8,
+        "path_position": 20,
+        "surah_prev": 19,
+        "surah_curr": 20,
+        "surah_next": 21,
+        "turn_cost": 1.0734369999999998,
+        "turning_angle_rad": 0.9341490504885551,
+        "turning_angle_deg": 53.52279802914746,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      },
+      {
+        "rank": 9,
+        "path_position": 54,
+        "surah_prev": 53,
+        "surah_curr": 54,
+        "surah_next": 55,
+        "turn_cost": 1.0554679999999999,
+        "turning_angle_rad": 1.0647113834352495,
+        "turning_angle_deg": 61.00346867037491,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      },
+      {
+        "rank": 10,
+        "path_position": 16,
+        "surah_prev": 15,
+        "surah_curr": 16,
+        "surah_next": 17,
+        "turn_cost": 1.0533349999999997,
+        "turning_angle_rad": 0.9637239191235416,
+        "turning_angle_deg": 55.217313181586015,
+        "in_B1_mufassal": false,
+        "in_B2_hawamim": false,
+        "in_B3_medinan": false,
+        "in_B_union": false
+      }
+    ],
+    "all_112_curvature": [
+      {
+        "path_position": 2,
+        "surah_prev": 1,
+        "surah_curr": 2,
+        "surah_next": 3,
+        "turn_cost": 0.5854900000000001,
+        "turning_angle_rad": 1.3750764935741593,
+        "turning_angle_deg": 78.78607958944738
+      },
+      {
+        "path_position": 3,
+        "surah_prev": 2,
+        "surah_curr": 3,
+        "surah_next": 4,
+        "turn_cost": 0.6691590000000001,
+        "turning_angle_rad": 1.0962880185390398,
+        "turning_angle_deg": 62.812676593046724
+      },
+      {
+        "path_position": 4,
+        "surah_prev": 3,
+        "surah_curr": 4,
+        "surah_next": 5,
+        "turn_cost": 0.8731430000000001,
+        "turning_angle_rad": 0.9207682312432591,
+        "turning_angle_deg": 52.75613355996457
+      },
+      {
+        "path_position": 5,
+        "surah_prev": 4,
+        "surah_curr": 5,
+        "surah_next": 6,
+        "turn_cost": 0.6406340000000001,
+        "turning_angle_rad": 1.3063877587756099,
+        "turning_angle_deg": 74.85050498539712
+      },
+      {
+        "path_position": 6,
+        "surah_prev": 5,
+        "surah_curr": 6,
+        "surah_next": 7,
+        "turn_cost": 0.7121449999999999,
+        "turning_angle_rad": 1.1517092917233078,
+        "turning_angle_deg": 65.98808164174685
+      },
+      {
+        "path_position": 7,
+        "surah_prev": 6,
+        "surah_curr": 7,
+        "surah_next": 8,
+        "turn_cost": 0.716294,
+        "turning_angle_rad": 1.2200320452298294,
+        "turning_angle_deg": 69.9026870623832
+      },
+      {
+        "path_position": 8,
+        "surah_prev": 7,
+        "surah_curr": 8,
+        "surah_next": 9,
+        "turn_cost": 0.8874070000000001,
+        "turning_angle_rad": 1.1417418803976045,
+        "turning_angle_deg": 65.41699104011316
+      },
+      {
+        "path_position": 9,
+        "surah_prev": 8,
+        "surah_curr": 9,
+        "surah_next": 10,
+        "turn_cost": 0.9727789999999998,
+        "turning_angle_rad": 1.0564335009955452,
+        "turning_angle_deg": 60.52918094327439
+      },
+      {
+        "path_position": 10,
+        "surah_prev": 9,
+        "surah_curr": 10,
+        "surah_next": 11,
+        "turn_cost": 0.8082810000000002,
+        "turning_angle_rad": 1.1805078238833713,
+        "turning_angle_deg": 67.63811599069025
+      },
+      {
+        "path_position": 11,
+        "surah_prev": 10,
+        "surah_curr": 11,
+        "surah_next": 12,
+        "turn_cost": 0.7629869999999999,
+        "turning_angle_rad": 1.1980663135997598,
+        "turning_angle_deg": 68.64414334606317
+      },
+      {
+        "path_position": 12,
+        "surah_prev": 11,
+        "surah_curr": 12,
+        "surah_next": 13,
+        "turn_cost": 1.112588,
+        "turning_angle_rad": 0.9338602713416583,
+        "turning_angle_deg": 53.506252202818885
+      },
+      {
+        "path_position": 13,
+        "surah_prev": 12,
+        "surah_curr": 13,
+        "surah_next": 14,
+        "turn_cost": 0.776411,
+        "turning_angle_rad": 1.2053649357747276,
+        "turning_angle_deg": 69.06232359294943
+      },
+      {
+        "path_position": 14,
+        "surah_prev": 13,
+        "surah_curr": 14,
+        "surah_next": 15,
+        "turn_cost": 0.8273579999999999,
+        "turning_angle_rad": 1.112187709365283,
+        "turning_angle_deg": 63.72366177295334
+      },
+      {
+        "path_position": 15,
+        "surah_prev": 14,
+        "surah_curr": 15,
+        "surah_next": 16,
+        "turn_cost": 1.162012,
+        "turning_angle_rad": 0.8717376977008517,
+        "turning_angle_deg": 49.94689092071001
+      },
+      {
+        "path_position": 16,
+        "surah_prev": 15,
+        "surah_curr": 16,
+        "surah_next": 17,
+        "turn_cost": 1.0533349999999997,
+        "turning_angle_rad": 0.9637239191235416,
+        "turning_angle_deg": 55.217313181586015
+      },
+      {
+        "path_position": 17,
+        "surah_prev": 16,
+        "surah_curr": 17,
+        "surah_next": 18,
+        "turn_cost": 0.8691720000000001,
+        "turning_angle_rad": 1.1240348573679697,
+        "turning_angle_deg": 64.40245335277413
+      },
+      {
+        "path_position": 18,
+        "surah_prev": 17,
+        "surah_curr": 18,
+        "surah_next": 19,
+        "turn_cost": 0.8889459999999999,
+        "turning_angle_rad": 1.0778752403411167,
+        "turning_angle_deg": 61.75770211319524
+      },
+      {
+        "path_position": 19,
+        "surah_prev": 18,
+        "surah_curr": 19,
+        "surah_next": 20,
+        "turn_cost": 0.9593140000000001,
+        "turning_angle_rad": 1.0380641993542707,
+        "turning_angle_deg": 59.47669748662663
+      },
+      {
+        "path_position": 20,
+        "surah_prev": 19,
+        "surah_curr": 20,
+        "surah_next": 21,
+        "turn_cost": 1.0734369999999998,
+        "turning_angle_rad": 0.9341490504885551,
+        "turning_angle_deg": 53.52279802914746
+      },
+      {
+        "path_position": 21,
+        "surah_prev": 20,
+        "surah_curr": 21,
+        "surah_next": 22,
+        "turn_cost": 0.8565050000000001,
+        "turning_angle_rad": 1.1803064347813337,
+        "turning_angle_deg": 67.62657724510358
+      },
+      {
+        "path_position": 22,
+        "surah_prev": 21,
+        "surah_curr": 22,
+        "surah_next": 23,
+        "turn_cost": 1.083451,
+        "turning_angle_rad": 0.896473249903831,
+        "turning_angle_deg": 51.36413366586625
+      },
+      {
+        "path_position": 23,
+        "surah_prev": 22,
+        "surah_curr": 23,
+        "surah_next": 24,
+        "turn_cost": 1.083362,
+        "turning_angle_rad": 0.9493224691207195,
+        "turning_angle_deg": 54.39217087755565
+      },
+      {
+        "path_position": 24,
+        "surah_prev": 23,
+        "surah_curr": 24,
+        "surah_next": 25,
+        "turn_cost": 1.3460520000000002,
+        "turning_angle_rad": 0.7811416191045135,
+        "turning_angle_deg": 44.75611797670434
+      },
+      {
+        "path_position": 25,
+        "surah_prev": 24,
+        "surah_curr": 25,
+        "surah_next": 26,
+        "turn_cost": 0.9267239999999997,
+        "turning_angle_rad": 1.1699391137792543,
+        "turning_angle_deg": 67.03257350682709
+      },
+      {
+        "path_position": 26,
+        "surah_prev": 25,
+        "surah_curr": 26,
+        "surah_next": 27,
+        "turn_cost": 0.9832150000000001,
+        "turning_angle_rad": 1.0182364884465533,
+        "turning_angle_deg": 58.340653334208916
+      },
+      {
+        "path_position": 27,
+        "surah_prev": 26,
+        "surah_curr": 27,
+        "surah_next": 28,
+        "turn_cost": 0.809584,
+        "turning_angle_rad": 1.1309855293417836,
+        "turning_angle_deg": 64.80069752165353
+      },
+      {
+        "path_position": 28,
+        "surah_prev": 27,
+        "surah_curr": 28,
+        "surah_next": 29,
+        "turn_cost": 0.840348,
+        "turning_angle_rad": 1.0503901001196414,
+        "turning_angle_deg": 60.18291957917944
+      },
+      {
+        "path_position": 29,
+        "surah_prev": 28,
+        "surah_curr": 29,
+        "surah_next": 30,
+        "turn_cost": 0.831016,
+        "turning_angle_rad": 1.1376115988356785,
+        "turning_angle_deg": 65.18034333841409
+      },
+      {
+        "path_position": 30,
+        "surah_prev": 29,
+        "surah_curr": 30,
+        "surah_next": 31,
+        "turn_cost": 0.9278609999999998,
+        "turning_angle_rad": 1.0272790172812578,
+        "turning_angle_deg": 58.85875207256284
+      },
+      {
+        "path_position": 31,
+        "surah_prev": 30,
+        "surah_curr": 31,
+        "surah_next": 32,
+        "turn_cost": 0.8910889999999999,
+        "turning_angle_rad": 1.0702328265774135,
+        "turning_angle_deg": 61.31982405924235
+      },
+      {
+        "path_position": 32,
+        "surah_prev": 31,
+        "surah_curr": 32,
+        "surah_next": 33,
+        "turn_cost": 0.9828769999999998,
+        "turning_angle_rad": 1.0707388061888485,
+        "turning_angle_deg": 61.34881455549725
+      },
+      {
+        "path_position": 33,
+        "surah_prev": 32,
+        "surah_curr": 33,
+        "surah_next": 34,
+        "turn_cost": 1.4251659999999997,
+        "turning_angle_rad": 0.7495319155122152,
+        "turning_angle_deg": 42.94501536920613
+      },
+      {
+        "path_position": 34,
+        "surah_prev": 33,
+        "surah_curr": 34,
+        "surah_next": 35,
+        "turn_cost": 0.9767690000000002,
+        "turning_angle_rad": 1.0835825376107724,
+        "turning_angle_deg": 62.08470615917305
+      },
+      {
+        "path_position": 35,
+        "surah_prev": 34,
+        "surah_curr": 35,
+        "surah_next": 36,
+        "turn_cost": 1.036822,
+        "turning_angle_rad": 0.9233556582054664,
+        "turning_angle_deg": 52.904382204697406
+      },
+      {
+        "path_position": 36,
+        "surah_prev": 35,
+        "surah_curr": 36,
+        "surah_next": 37,
+        "turn_cost": 0.8171299999999999,
+        "turning_angle_rad": 1.1800300791333986,
+        "turning_angle_deg": 67.61074323283229
+      },
+      {
+        "path_position": 37,
+        "surah_prev": 36,
+        "surah_curr": 37,
+        "surah_next": 38,
+        "turn_cost": 0.9146169999999999,
+        "turning_angle_rad": 1.0308887508019196,
+        "turning_angle_deg": 59.065574568463646
+      },
+      {
+        "path_position": 38,
+        "surah_prev": 37,
+        "surah_curr": 38,
+        "surah_next": 39,
+        "turn_cost": 0.915751,
+        "turning_angle_rad": 1.0519345631747121,
+        "turning_angle_deg": 60.27141079384887
+      },
+      {
+        "path_position": 39,
+        "surah_prev": 38,
+        "surah_curr": 39,
+        "surah_next": 40,
+        "turn_cost": 0.764336,
+        "turning_angle_rad": 1.1755265253793725,
+        "turning_angle_deg": 67.35270860991629
+      },
+      {
+        "path_position": 40,
+        "surah_prev": 39,
+        "surah_curr": 40,
+        "surah_next": 41,
+        "turn_cost": 0.8078659999999999,
+        "turning_angle_rad": 1.0599845421412015,
+        "turning_angle_deg": 60.7326406137978
+      },
+      {
+        "path_position": 41,
+        "surah_prev": 40,
+        "surah_curr": 41,
+        "surah_next": 42,
+        "turn_cost": 0.8014810000000001,
+        "turning_angle_rad": 1.1099482425300586,
+        "turning_angle_deg": 63.595349774935464
+      },
+      {
+        "path_position": 42,
+        "surah_prev": 41,
+        "surah_curr": 42,
+        "surah_next": 43,
+        "turn_cost": 0.9895230000000002,
+        "turning_angle_rad": 0.953758291159084,
+        "turning_angle_deg": 54.64632475902505
+      },
+      {
+        "path_position": 43,
+        "surah_prev": 42,
+        "surah_curr": 43,
+        "surah_next": 44,
+        "turn_cost": 0.9046629999999999,
+        "turning_angle_rad": 1.0684754892492414,
+        "turning_angle_deg": 61.21913604715729
+      },
+      {
+        "path_position": 44,
+        "surah_prev": 43,
+        "surah_curr": 44,
+        "surah_next": 45,
+        "turn_cost": 0.807469,
+        "turning_angle_rad": 1.1108583423542089,
+        "turning_angle_deg": 63.64749465379487
+      },
+      {
+        "path_position": 45,
+        "surah_prev": 44,
+        "surah_curr": 45,
+        "surah_next": 46,
+        "turn_cost": 0.7519,
+        "turning_angle_rad": 1.153875247060878,
+        "turning_angle_deg": 66.11218174120346
+      },
+      {
+        "path_position": 46,
+        "surah_prev": 45,
+        "surah_curr": 46,
+        "surah_next": 47,
+        "turn_cost": 0.8442069999999998,
+        "turning_angle_rad": 1.104605659744414,
+        "turning_angle_deg": 63.28924232961878
+      },
+      {
+        "path_position": 47,
+        "surah_prev": 46,
+        "surah_curr": 47,
+        "surah_next": 48,
+        "turn_cost": 0.948795,
+        "turning_angle_rad": 1.0311569497293855,
+        "turning_angle_deg": 59.08094123507738
+      },
+      {
+        "path_position": 48,
+        "surah_prev": 47,
+        "surah_curr": 48,
+        "surah_next": 49,
+        "turn_cost": 0.8973360000000001,
+        "turning_angle_rad": 1.015682686081953,
+        "turning_angle_deg": 58.19433123700679
+      },
+      {
+        "path_position": 49,
+        "surah_prev": 48,
+        "surah_curr": 49,
+        "surah_next": 50,
+        "turn_cost": 0.7785630000000001,
+        "turning_angle_rad": 1.2333883334311575,
+        "turning_angle_deg": 70.66794600627966
+      },
+      {
+        "path_position": 50,
+        "surah_prev": 49,
+        "surah_curr": 50,
+        "surah_next": 51,
+        "turn_cost": 0.9024139999999999,
+        "turning_angle_rad": 1.0448159952947136,
+        "turning_angle_deg": 59.86354689814756
+      },
+      {
+        "path_position": 51,
+        "surah_prev": 50,
+        "surah_curr": 51,
+        "surah_next": 52,
+        "turn_cost": 0.730495,
+        "turning_angle_rad": 1.1311633903461826,
+        "turning_angle_deg": 64.81088820654556
+      },
+      {
+        "path_position": 52,
+        "surah_prev": 51,
+        "surah_curr": 52,
+        "surah_next": 53,
+        "turn_cost": 0.7340789999999998,
+        "turning_angle_rad": 1.182006972391108,
+        "turning_angle_deg": 67.72401087304691
+      },
+      {
+        "path_position": 53,
+        "surah_prev": 52,
+        "surah_curr": 53,
+        "surah_next": 54,
+        "turn_cost": 1.0223209999999998,
+        "turning_angle_rad": 0.9790414593616265,
+        "turning_angle_deg": 56.0949435897501
+      },
+      {
+        "path_position": 54,
+        "surah_prev": 53,
+        "surah_curr": 54,
+        "surah_next": 55,
+        "turn_cost": 1.0554679999999999,
+        "turning_angle_rad": 1.0647113834352495,
+        "turning_angle_deg": 61.00346867037491
+      },
+      {
+        "path_position": 55,
+        "surah_prev": 54,
+        "surah_curr": 55,
+        "surah_next": 56,
+        "turn_cost": 1.278082,
+        "turning_angle_rad": 0.9212890545308665,
+        "turning_angle_deg": 52.78597453621661
+      },
+      {
+        "path_position": 56,
+        "surah_prev": 55,
+        "surah_curr": 56,
+        "surah_next": 57,
+        "turn_cost": 0.9937889999999996,
+        "turning_angle_rad": 1.191424829029701,
+        "turning_angle_deg": 68.26361431049754
+      },
+      {
+        "path_position": 57,
+        "surah_prev": 56,
+        "surah_curr": 57,
+        "surah_next": 58,
+        "turn_cost": 0.8671500000000001,
+        "turning_angle_rad": 1.1879282035702952,
+        "turning_angle_deg": 68.06327242913561
+      },
+      {
+        "path_position": 58,
+        "surah_prev": 57,
+        "surah_curr": 58,
+        "surah_next": 59,
+        "turn_cost": 0.9388690000000002,
+        "turning_angle_rad": 0.9399308932072332,
+        "turning_angle_deg": 53.85407321473616
+      },
+      {
+        "path_position": 59,
+        "surah_prev": 58,
+        "surah_curr": 59,
+        "surah_next": 60,
+        "turn_cost": 0.756844,
+        "turning_angle_rad": 1.1414329955893128,
+        "turning_angle_deg": 65.39929324424233
+      },
+      {
+        "path_position": 60,
+        "surah_prev": 59,
+        "surah_curr": 60,
+        "surah_next": 61,
+        "turn_cost": 0.8724139999999999,
+        "turning_angle_rad": 0.961946261084262,
+        "turning_angle_deg": 55.115460878517794
+      },
+      {
+        "path_position": 61,
+        "surah_prev": 60,
+        "surah_curr": 61,
+        "surah_next": 62,
+        "turn_cost": 0.7119249999999999,
+        "turning_angle_rad": 1.1333295255080125,
+        "turning_angle_deg": 64.93499860917329
+      },
+      {
+        "path_position": 62,
+        "surah_prev": 61,
+        "surah_curr": 62,
+        "surah_next": 63,
+        "turn_cost": 0.7633360000000001,
+        "turning_angle_rad": 0.9596780221540582,
+        "turning_angle_deg": 54.98550036088985
+      },
+      {
+        "path_position": 63,
+        "surah_prev": 62,
+        "surah_curr": 63,
+        "surah_next": 64,
+        "turn_cost": 0.646706,
+        "turning_angle_rad": 1.121460335852078,
+        "turning_angle_deg": 64.25494413564792
+      },
+      {
+        "path_position": 64,
+        "surah_prev": 63,
+        "surah_curr": 64,
+        "surah_next": 65,
+        "turn_cost": 0.661411,
+        "turning_angle_rad": 1.1622201496723163,
+        "turning_angle_deg": 66.59030944128656
+      },
+      {
+        "path_position": 65,
+        "surah_prev": 64,
+        "surah_curr": 65,
+        "surah_next": 66,
+        "turn_cost": 0.8949389999999999,
+        "turning_angle_rad": 0.9428026912518392,
+        "turning_angle_deg": 54.01861512230601
+      },
+      {
+        "path_position": 66,
+        "surah_prev": 65,
+        "surah_curr": 66,
+        "surah_next": 67,
+        "turn_cost": 0.8290999999999998,
+        "turning_angle_rad": 1.1438983623541743,
+        "turning_angle_deg": 65.54054835482071
+      },
+      {
+        "path_position": 67,
+        "surah_prev": 66,
+        "surah_curr": 67,
+        "surah_next": 68,
+        "turn_cost": 0.8710239999999999,
+        "turning_angle_rad": 1.0653775406823984,
+        "turning_angle_deg": 61.041636669128586
+      },
+      {
+        "path_position": 68,
+        "surah_prev": 67,
+        "surah_curr": 68,
+        "surah_next": 69,
+        "turn_cost": 0.804519,
+        "turning_angle_rad": 1.090597581456991,
+        "turning_angle_deg": 62.486638564660595
+      },
+      {
+        "path_position": 69,
+        "surah_prev": 68,
+        "surah_curr": 69,
+        "surah_next": 70,
+        "turn_cost": 0.91437,
+        "turning_angle_rad": 0.9269550975871365,
+        "turning_angle_deg": 53.11061488988028
+      },
+      {
+        "path_position": 70,
+        "surah_prev": 69,
+        "surah_curr": 70,
+        "surah_next": 71,
+        "turn_cost": 0.8182089999999999,
+        "turning_angle_rad": 1.077887765818507,
+        "turning_angle_deg": 61.7584197701861
+      },
+      {
+        "path_position": 71,
+        "surah_prev": 70,
+        "surah_curr": 71,
+        "surah_next": 72,
+        "turn_cost": 0.7814779999999999,
+        "turning_angle_rad": 1.120205375265976,
+        "turning_angle_deg": 64.183040190609
+      },
+      {
+        "path_position": 72,
+        "surah_prev": 71,
+        "surah_curr": 72,
+        "surah_next": 73,
+        "turn_cost": 0.8544950000000002,
+        "turning_angle_rad": 0.9693409322420788,
+        "turning_angle_deg": 55.53914432674782
+      },
+      {
+        "path_position": 73,
+        "surah_prev": 72,
+        "surah_curr": 73,
+        "surah_next": 74,
+        "turn_cost": 0.7089149999999999,
+        "turning_angle_rad": 1.149294701214925,
+        "turning_angle_deg": 65.84973579636417
+      },
+      {
+        "path_position": 74,
+        "surah_prev": 73,
+        "surah_curr": 74,
+        "surah_next": 75,
+        "turn_cost": 0.7707639999999999,
+        "turning_angle_rad": 1.0675597234478296,
+        "turning_angle_deg": 61.16666653171398
+      },
+      {
+        "path_position": 75,
+        "surah_prev": 74,
+        "surah_curr": 75,
+        "surah_next": 76,
+        "turn_cost": 0.8458690000000001,
+        "turning_angle_rad": 1.0011410298748533,
+        "turning_angle_deg": 57.361155709209754
+      },
+      {
+        "path_position": 76,
+        "surah_prev": 75,
+        "surah_curr": 76,
+        "surah_next": 77,
+        "turn_cost": 0.888766,
+        "turning_angle_rad": 0.9655569403154513,
+        "turning_angle_deg": 55.32233755964048
+      },
+      {
+        "path_position": 77,
+        "surah_prev": 76,
+        "surah_curr": 77,
+        "surah_next": 78,
+        "turn_cost": 0.789915,
+        "turning_angle_rad": 1.007548905131887,
+        "turning_angle_deg": 57.72829991708411
+      },
+      {
+        "path_position": 78,
+        "surah_prev": 77,
+        "surah_curr": 78,
+        "surah_next": 79,
+        "turn_cost": 0.6603910000000001,
+        "turning_angle_rad": 1.1318249725085043,
+        "turning_angle_deg": 64.84879407224773
+      },
+      {
+        "path_position": 79,
+        "surah_prev": 78,
+        "surah_curr": 79,
+        "surah_next": 80,
+        "turn_cost": 0.6737100000000001,
+        "turning_angle_rad": 1.1121824395387132,
+        "turning_angle_deg": 63.723359834132125
+      },
+      {
+        "path_position": 80,
+        "surah_prev": 79,
+        "surah_curr": 80,
+        "surah_next": 81,
+        "turn_cost": 0.694152,
+        "turning_angle_rad": 1.0022424576752964,
+        "turning_angle_deg": 57.42426287361352
+      },
+      {
+        "path_position": 81,
+        "surah_prev": 80,
+        "surah_curr": 81,
+        "surah_next": 82,
+        "turn_cost": 0.564708,
+        "turning_angle_rad": 1.0674264978220327,
+        "turning_angle_deg": 61.15903326563283
+      },
+      {
+        "path_position": 82,
+        "surah_prev": 81,
+        "surah_curr": 82,
+        "surah_next": 83,
+        "turn_cost": 0.4324189999999999,
+        "turning_angle_rad": 1.3067708274748662,
+        "turning_angle_deg": 74.87245320512807
+      },
+      {
+        "path_position": 83,
+        "surah_prev": 82,
+        "surah_curr": 83,
+        "surah_next": 84,
+        "turn_cost": 0.6107170000000001,
+        "turning_angle_rad": 1.048012984761439,
+        "turning_angle_deg": 60.04672090173871
+      },
+      {
+        "path_position": 84,
+        "surah_prev": 83,
+        "surah_curr": 84,
+        "surah_next": 85,
+        "turn_cost": 0.5505320000000001,
+        "turning_angle_rad": 1.1716407158037048,
+        "turning_angle_deg": 67.13006812123902
+      },
+      {
+        "path_position": 85,
+        "surah_prev": 84,
+        "surah_curr": 85,
+        "surah_next": 86,
+        "turn_cost": 0.5650559999999999,
+        "turning_angle_rad": 1.0696407399281052,
+        "turning_angle_deg": 61.28589999313095
+      },
+      {
+        "path_position": 86,
+        "surah_prev": 85,
+        "surah_curr": 86,
+        "surah_next": 87,
+        "turn_cost": 0.4977619999999999,
+        "turning_angle_rad": 1.1496730700117417,
+        "turning_angle_deg": 65.87141473152121
+      },
+      {
+        "path_position": 87,
+        "surah_prev": 86,
+        "surah_curr": 87,
+        "surah_next": 88,
+        "turn_cost": 0.532706,
+        "turning_angle_rad": 1.0635826136294653,
+        "turning_angle_deg": 60.93879492446166
+      },
+      {
+        "path_position": 88,
+        "surah_prev": 87,
+        "surah_curr": 88,
+        "surah_next": 89,
+        "turn_cost": 0.5676459999999999,
+        "turning_angle_rad": 1.1125110359024282,
+        "turning_angle_deg": 63.742187018936335
+      },
+      {
+        "path_position": 89,
+        "surah_prev": 88,
+        "surah_curr": 89,
+        "surah_next": 90,
+        "turn_cost": 0.7040649999999998,
+        "turning_angle_rad": 0.9421866811321113,
+        "turning_angle_deg": 53.983320342308254
+      },
+      {
+        "path_position": 90,
+        "surah_prev": 89,
+        "surah_curr": 90,
+        "surah_next": 91,
+        "turn_cost": 0.551402,
+        "turning_angle_rad": 1.0943898483295176,
+        "turning_angle_deg": 62.70391945124365
+      },
+      {
+        "path_position": 91,
+        "surah_prev": 90,
+        "surah_curr": 91,
+        "surah_next": 92,
+        "turn_cost": 0.4480360000000001,
+        "turning_angle_rad": 1.1683169769164552,
+        "turning_angle_deg": 66.93963191079611
+      },
+      {
+        "path_position": 92,
+        "surah_prev": 91,
+        "surah_curr": 92,
+        "surah_next": 93,
+        "turn_cost": 0.4659259999999999,
+        "turning_angle_rad": 1.0125418612011166,
+        "turning_angle_deg": 58.01437522714518
+      },
+      {
+        "path_position": 93,
+        "surah_prev": 92,
+        "surah_curr": 93,
+        "surah_next": 94,
+        "turn_cost": 0.3863810000000001,
+        "turning_angle_rad": 1.0710004473480017,
+        "turning_angle_deg": 61.36380548966364
+      },
+      {
+        "path_position": 94,
+        "surah_prev": 93,
+        "surah_curr": 94,
+        "surah_next": 95,
+        "turn_cost": 0.28602700000000003,
+        "turning_angle_rad": 1.30146529789878,
+        "turning_angle_deg": 74.5684687523365
+      },
+      {
+        "path_position": 95,
+        "surah_prev": 94,
+        "surah_curr": 95,
+        "surah_next": 96,
+        "turn_cost": 0.37231699999999995,
+        "turning_angle_rad": 1.1725854478281477,
+        "turning_angle_deg": 67.18419727901045
+      },
+      {
+        "path_position": 96,
+        "surah_prev": 95,
+        "surah_curr": 96,
+        "surah_next": 97,
+        "turn_cost": 0.6148089999999999,
+        "turning_angle_rad": 0.8517183377291505,
+        "turning_angle_deg": 48.7998660857784
+      },
+      {
+        "path_position": 97,
+        "surah_prev": 96,
+        "surah_curr": 97,
+        "surah_next": 98,
+        "turn_cost": 0.48196800000000006,
+        "turning_angle_rad": 1.2124046049682895,
+        "turning_angle_deg": 69.4656669269088
+      },
+      {
+        "path_position": 98,
+        "surah_prev": 97,
+        "surah_curr": 98,
+        "surah_next": 99,
+        "turn_cost": 0.6962619999999999,
+        "turning_angle_rad": 0.8193967678190922,
+        "turning_angle_deg": 46.94797654269502
+      },
+      {
+        "path_position": 99,
+        "surah_prev": 98,
+        "surah_curr": 99,
+        "surah_next": 100,
+        "turn_cost": 0.4221290000000001,
+        "turning_angle_rad": 1.1206646832487333,
+        "turning_angle_deg": 64.20935659951766
+      },
+      {
+        "path_position": 100,
+        "surah_prev": 99,
+        "surah_curr": 100,
+        "surah_next": 101,
+        "turn_cost": 0.3348,
+        "turning_angle_rad": 1.1692424840378841,
+        "turning_angle_deg": 66.99265956276328
+      },
+      {
+        "path_position": 101,
+        "surah_prev": 100,
+        "surah_curr": 101,
+        "surah_next": 102,
+        "turn_cost": 0.407934,
+        "turning_angle_rad": 0.9531968683176624,
+        "turning_angle_deg": 54.61415759968935
+      },
+      {
+        "path_position": 102,
+        "surah_prev": 101,
+        "surah_curr": 102,
+        "surah_next": 103,
+        "turn_cost": 0.396648,
+        "turning_angle_rad": 0.943945832629342,
+        "turning_angle_deg": 54.08411229862369
+      },
+      {
+        "path_position": 103,
+        "surah_prev": 102,
+        "surah_curr": 103,
+        "surah_next": 104,
+        "turn_cost": 0.289731,
+        "turning_angle_rad": 1.1821610429442821,
+        "turning_angle_deg": 67.73283846549103
+      },
+      {
+        "path_position": 104,
+        "surah_prev": 103,
+        "surah_curr": 104,
+        "surah_next": 105,
+        "turn_cost": 0.336393,
+        "turning_angle_rad": 1.0012865816066754,
+        "turning_angle_deg": 57.369495209143984
+      },
+      {
+        "path_position": 105,
+        "surah_prev": 104,
+        "surah_curr": 105,
+        "surah_next": 106,
+        "turn_cost": 0.322553,
+        "turning_angle_rad": 1.0063833177250165,
+        "turning_angle_deg": 57.66151667801682
+      },
+      {
+        "path_position": 106,
+        "surah_prev": 105,
+        "surah_curr": 106,
+        "surah_next": 107,
+        "turn_cost": 0.26713000000000003,
+        "turning_angle_rad": 1.1168182835830194,
+        "turning_angle_deg": 63.98897413235173
+      },
+      {
+        "path_position": 107,
+        "surah_prev": 106,
+        "surah_curr": 107,
+        "surah_next": 108,
+        "turn_cost": 0.29016699999999995,
+        "turning_angle_rad": 0.8503920783981282,
+        "turning_angle_deg": 48.72387702357098
+      },
+      {
+        "path_position": 108,
+        "surah_prev": 107,
+        "surah_curr": 108,
+        "surah_next": 109,
+        "turn_cost": 0.20048299999999997,
+        "turning_angle_rad": 1.347039854549577,
+        "turning_angle_deg": 77.17969850160705
+      },
+      {
+        "path_position": 109,
+        "surah_prev": 108,
+        "surah_curr": 109,
+        "surah_next": 110,
+        "turn_cost": 0.446312,
+        "turning_angle_rad": 0.759538829423423,
+        "turning_angle_deg": 43.518369302269086
+      },
+      {
+        "path_position": 110,
+        "surah_prev": 109,
+        "surah_curr": 110,
+        "surah_next": 111,
+        "turn_cost": 0.335445,
+        "turning_angle_rad": 1.0806600594856863,
+        "turning_angle_deg": 61.917260496886314
+      },
+      {
+        "path_position": 111,
+        "surah_prev": 110,
+        "surah_curr": 111,
+        "surah_next": 112,
+        "turn_cost": 0.32751500000000006,
+        "turning_angle_rad": 0.9435477653576736,
+        "turning_angle_deg": 54.061304723994795
+      },
+      {
+        "path_position": 112,
+        "surah_prev": 111,
+        "surah_curr": 112,
+        "surah_next": 113,
+        "turn_cost": 0.28204399999999996,
+        "turning_angle_rad": 1.0662582449024678,
+        "turning_angle_deg": 61.092097303937926
+      },
+      {
+        "path_position": 113,
+        "surah_prev": 112,
+        "surah_curr": 113,
+        "surah_next": 114,
+        "turn_cost": 0.251795,
+        "turning_angle_rad": 1.1650124460882838,
+        "turning_angle_deg": 66.75029624107101
+      }
+    ],
+    "boundary_hits": {
+      "B1_hits": 0,
+      "B2_hits": 0,
+      "B3_hits": 0,
+      "JOINT_hits": 0
+    }
+  },
+  "perm_null": {
+    "n_perm": 10000,
+    "mean_turn_cost_null_mean": 0.9233361740946427,
+    "mean_turn_cost_null_std": 0.03190050422035321,
+    "mean_turn_cost_null_p05": 0.8719764999999999,
+    "mean_turn_cost_null_p50": 0.9226635178571428,
+    "mean_turn_cost_null_p95": 0.9771770982142857,
+    "empirical_mean_z": -5.637658454131394,
+    "p_mean_lower_tail": 0.0,
+    "p_mean_upper_tail": 1.0,
+    "p_b1": 1.0,
+    "p_b2": 1.0,
+    "p_b3": 1.0,
+    "p_joint": 1.0,
+    "b1_hits_distribution": {
+      "1": 2978,
+      "0": 6357,
+      "2": 573,
+      "4": 10,
+      "3": 82
+    },
+    "b2_hits_distribution": {
+      "0": 6325,
+      "1": 2907,
+      "2": 669,
+      "3": 90,
+      "4": 9
+    },
+    "b3_hits_distribution": {
+      "1": 2046,
+      "0": 7695,
+      "3": 26,
+      "2": 233
+    },
+    "joint_hits_distribution": {
+      "2": 2202,
+      "1": 3862,
+      "4": 186,
+      "5": 30,
+      "0": 2927,
+      "3": 789,
+      "6": 4
+    },
+    "top30_most_frequent_top10_positions_in_perm_null": [
+      {
+        "position": 85,
+        "freq": 959
+      },
+      {
+        "position": 100,
+        "freq": 955
+      },
+      {
+        "position": 38,
+        "freq": 949
+      },
+      {
+        "position": 10,
+        "freq": 943
+      },
+      {
+        "position": 55,
+        "freq": 943
+      },
+      {
+        "position": 42,
+        "freq": 939
+      },
+      {
+        "position": 109,
+        "freq": 938
+      },
+      {
+        "position": 56,
+        "freq": 934
+      },
+      {
+        "position": 51,
+        "freq": 932
+      },
+      {
+        "position": 97,
+        "freq": 931
+      },
+      {
+        "position": 108,
+        "freq": 929
+      },
+      {
+        "position": 106,
+        "freq": 927
+      },
+      {
+        "position": 14,
+        "freq": 926
+      },
+      {
+        "position": 11,
+        "freq": 925
+      },
+      {
+        "position": 58,
+        "freq": 924
+      },
+      {
+        "position": 35,
+        "freq": 923
+      },
+      {
+        "position": 12,
+        "freq": 920
+      },
+      {
+        "position": 60,
+        "freq": 920
+      },
+      {
+        "position": 87,
+        "freq": 920
+      },
+      {
+        "position": 84,
+        "freq": 916
+      },
+      {
+        "position": 6,
+        "freq": 915
+      },
+      {
+        "position": 20,
+        "freq": 913
+      },
+      {
+        "position": 37,
+        "freq": 912
+      },
+      {
+        "position": 111,
+        "freq": 911
+      },
+      {
+        "position": 76,
+        "freq": 910
+      },
+      {
+        "position": 29,
+        "freq": 910
+      },
+      {
+        "position": 25,
+        "freq": 910
+      },
+      {
+        "position": 107,
+        "freq": 910
+      },
+      {
+        "position": 81,
+        "freq": 909
+      },
+      {
+        "position": 89,
+        "freq": 909
+      }
+    ]
+  },
+  "verdicts": {
+    "alpha_bonferroni_3": 0.016666666666666666,
+    "H1a_B1": "NULL",
+    "H1a_B2": "NULL",
+    "H1a_B3": "NULL",
+    "H1a_overall": "NULL",
+    "H1a_joint_pass_geq4_in_union_alpha_05": false,
+    "H1b": "PASS",
+    "overall": "PASS-DIRECTED (H1b only)"
+  },
+  "anchors": {
+    "h_new_111": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-111.json",
+    "cross_finding_011": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/cross-finding-011-mushaf-fisher-rao-confirmed.md",
+    "h_new_130": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-130-fisher-rao-residuals.md",
+    "h_new_236_1": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/h-new-236-1-hinges-constrained-simulator.md",
+    "cross_finding_020": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/cross-finding-020-the-complete-equation.md"
+  }
+}

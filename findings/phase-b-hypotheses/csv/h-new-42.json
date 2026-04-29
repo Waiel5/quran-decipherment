@@ -1,0 +1,109 @@
+{
+  "hypothesis_id": "H-NEW-42",
+  "run_date": "2026-04-15",
+  "seed": 20260415,
+  "rules_tuple": [
+    "no-tashkeel",
+    "orthographic-token",
+    "graphemes",
+    "basmala-counted-only-in-surah-1",
+    "hafs-kufan",
+    "mashriqi"
+  ],
+  "bonferroni_family": "2026-04-15-Fresh-Wave-3",
+  "alpha_bon": 0.0167,
+  "alpha_cell": 0.005566666666666667,
+  "amendments_applied": [
+    "42-A",
+    "42-B",
+    "42-C"
+  ],
+  "integrity_sha256": {
+    "quran_json": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "bukhari_noquran": "0169b60de7585a51fc340161488534c4d909370c3dcc8951ca2ae3818c44a100",
+    "jahiz_hayawan": "419095484df4e315eba889d38a9c2f6edff55c2f10f481ed9ad024e07bbff0cd",
+    "muallaqat_pool_canonical": "d97ce767d72254fd9faaeaecf6fb3a559d643bab9e664a9da1047f4ef57e0300",
+    "muallaqat_canonical_order": [
+      "muallaqa-imru-al-qais.txt",
+      "muallaqa-tarafa.txt",
+      "muallaqa-zuhayr.txt",
+      "muallaqa-labid.txt",
+      "muallaqa-amr-bin-kulthum.txt",
+      "muallaqa-antara.txt",
+      "muallaqa-harith.txt"
+    ]
+  },
+  "mw7_warnings": [],
+  "f2_amendment": "Rule-based char-trigram Jaccard proxy used in place of Arabic embedding model (no local model available). Logged BEFORE viewing results. Weakens f2 but preserves 6-axis fingerprint structure.",
+  "quran": {
+    "mean_fragility": 0.0002778525470996335,
+    "median_fragility": 4.4573309436122e-05,
+    "n_surahs": 114,
+    "min": 0.0,
+    "max": 0.004710212086263535
+  },
+  "baselines": {
+    "bukhari": {
+      "null_mean": 0.0003503781518605531,
+      "null_median": 0.0003442343374555764,
+      "null_std": 6.414339032968735e-05,
+      "p_one_sided": 0.8711288711288712,
+      "delta_vs_quran": -7.252560476091961e-05,
+      "passes_at_alpha_cell_three": false
+    },
+    "jahiz": {
+      "null_mean": 0.00032780565562140165,
+      "null_median": 0.0003257221492442607,
+      "null_std": 5.809845439187901e-05,
+      "p_one_sided": 0.7952047952047953,
+      "delta_vs_quran": -4.9953108521768165e-05,
+      "passes_at_alpha_cell_three": false
+    },
+    "muallaqat": {
+      "null_mean": 0.0003387004675547966,
+      "null_median": 0.00033619341883270196,
+      "null_std": 6.28306411738702e-05,
+      "p_one_sided": 0.8281718281718282,
+      "delta_vs_quran": -6.0847920455163094e-05,
+      "passes_at_alpha_cell_three": false,
+      "direct_poem_mean": 1.3260297436519731e-05,
+      "n_poems": 7
+    }
+  },
+  "positive_control": {
+    "muallaqat_direct_mean": 1.3260297436519731e-05,
+    "jahiz_partitioned_mean": 0.00032780565562140165,
+    "muallaqat_partitioned_mean": 0.0003387004675547966,
+    "muallaqat_direct_gt_jahiz_partitioned": false,
+    "muallaqat_partitioned_gt_jahiz_partitioned": true,
+    "null_broken": true
+  },
+  "synthetic_control": {
+    "quran_verse_shuffled_mean": 0.0002856631497061736,
+    "quran_forward_minus_shuffled": -7.810602606540102e-06
+  },
+  "extremes": {
+    "most_fragile_top3_surah_ids": [
+      111,
+      110,
+      95
+    ],
+    "most_fragile_top3_values": [
+      0.004710212086263535,
+      0.0024056261216234376,
+      0.001938461461988947
+    ],
+    "least_fragile_top3_surah_ids": [
+      106,
+      108,
+      112
+    ],
+    "least_fragile_top3_values": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "verdict": "NULL-BROKEN (EXPLORATORY-REVERSE)",
+  "runtime_seconds": 4006.171032190323
+}

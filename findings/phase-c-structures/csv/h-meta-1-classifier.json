@@ -1,0 +1,143 @@
+{
+  "seed": 20260413,
+  "task_id": 28,
+  "amendment": "AMEND-4",
+  "corpus": "findings/phase-c-structures/h-meta-1-corpus-120.tsv",
+  "N": 120,
+  "P": 47,
+  "class_balance": {
+    "CONFIRMED": 77,
+    "REFUTED": 43
+  },
+  "features_categorical": [
+    "era",
+    "genre",
+    "school",
+    "claim_type",
+    "unit",
+    "scope",
+    "substance_type"
+  ],
+  "features_bool": [
+    "broad_hisab_claim"
+  ],
+  "features_numeric": [
+    "specificity"
+  ],
+  "feature_levels": {
+    "era": [
+      "classical-medieval",
+      "contemporary-academic",
+      "modern-apologetic",
+      "modern-numerology"
+    ],
+    "genre": [
+      "bad\u012b\u02bf",
+      "bal\u0101gha",
+      "i\u02bfj\u0101z",
+      "i\u02bfj\u0101z-\u02bfilm\u012b",
+      "mun\u0101sab\u0101t",
+      "numerology",
+      "qir\u0101\u02be\u0101t",
+      "structural",
+      "structural-academic",
+      "tafs\u012br",
+      "\u02bfilm-al-\u1e25arf",
+      "\u1e25ad\u012bth"
+    ],
+    "school": [
+      "Andalusian",
+      "Ash\u02bfar\u012b",
+      "Basran",
+      "Ism\u0101\u02bf\u012bl\u012b",
+      "M\u0101lik\u012b",
+      "Sh\u0101fi\u02bf\u012b",
+      "modern",
+      "multi",
+      "project"
+    ],
+    "claim_type": [
+      "compositional",
+      "divisibility-miracle",
+      "letter-count",
+      "rhetorical-figure",
+      "scientific-foreknowledge",
+      "structural",
+      "word-count-symmetry"
+    ],
+    "unit": [
+      "multi-surah",
+      "multi-verse",
+      "single-instance",
+      "surah",
+      "verse",
+      "whole-corpus",
+      "word"
+    ],
+    "scope": [
+      "partial",
+      "single-instance",
+      "universal"
+    ],
+    "substance_type": [
+      "numerical-gematric",
+      "semantic",
+      "structural-formal"
+    ]
+  },
+  "lr_l1": {
+    "mean_acc": 0.7819855072463768,
+    "fold_accs": [
+      0.8,
+      0.84,
+      0.7916666666666666,
+      0.782608695652174,
+      0.6956521739130435
+    ],
+    "null_mean": 0.6418556811594203,
+    "null_975pct": 0.6418695652173912,
+    "null_95pct": 0.6418695652173912,
+    "p_empirical": 0.0,
+    "significant_alpha0025": true,
+    "lam": 0.05
+  },
+  "tree_d3": {
+    "mean_acc": 0.7009565217391305,
+    "fold_accs": [
+      0.76,
+      0.56,
+      0.75,
+      0.782608695652174,
+      0.6521739130434783
+    ],
+    "null_mean": 0.5851200869565217,
+    "null_975pct": 0.6748985507246377,
+    "null_95pct": 0.6588985507246377,
+    "p_empirical": 0.004,
+    "significant_alpha0025": true
+  },
+  "top_lr_features": [
+    {
+      "feature": "school=modern",
+      "weight": -1.1583788192725115
+    },
+    {
+      "feature": "specificity",
+      "weight": 0.17191649149331784
+    },
+    {
+      "feature": "era=classical-medieval",
+      "weight": 0.075487267753006
+    }
+  ],
+  "bonferroni": {
+    "k": 2,
+    "alpha_family": 0.05,
+    "alpha_bon": 0.025
+  },
+  "acceptance_rule": {
+    "pass_threshold": 0.7,
+    "no_signature_floor": 0.6
+  },
+  "verdict": "PASS"
+}

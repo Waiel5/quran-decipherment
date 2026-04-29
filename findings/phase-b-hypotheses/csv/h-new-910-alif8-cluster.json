@@ -1,0 +1,230 @@
+{
+  "finding_id": "H-NEW-910",
+  "title": "Alif-8 cluster cohesion test (Bonferroni-5)",
+  "pre_reg_sha256": "d3f08bada8705b2654810c0ffb89fc51de6970f7f22916e56dc1de6266f84fb9",
+  "seed": 20260428,
+  "n_perms": 10000,
+  "bonferroni_k": 5,
+  "alpha_bon": 0.01,
+  "alpha_directional": 0.1667,
+  "rules_tuple_default": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "rules_tuple_cluster_definition": "(min-tashkeel, last-letter-of-verse, alif-set={ا,آ,أ,إ,ى,ٰ}, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "cluster": [
+    18,
+    48,
+    65,
+    72,
+    76,
+    87,
+    91,
+    92
+  ],
+  "cluster_names_arabic": {
+    "18": "الكهف",
+    "48": "الفتح",
+    "65": "الطلاق",
+    "72": "الجن",
+    "76": "الإنسان",
+    "87": "الأعلى",
+    "91": "الشمس",
+    "92": "الليل"
+  },
+  "cluster_alif_rates_verified": {
+    "18": 1.0,
+    "48": 1.0,
+    "65": 1.0,
+    "72": 1.0,
+    "76": 1.0,
+    "87": 1.0,
+    "91": 1.0,
+    "92": 1.0
+  },
+  "H1_fr_roots": {
+    "observed": 0.8850233571428571,
+    "percentile": 0.2555,
+    "null_mean": 0.9230402102892856,
+    "null_std": 0.07571901374628834,
+    "effect_z": -0.5020780285624374,
+    "gate_strict": false,
+    "gate_directional": false,
+    "verdict": "NULL"
+  },
+  "H2_verse_count": {
+    "cluster_buckets": [
+      3,
+      4,
+      0,
+      1,
+      0
+    ],
+    "corpus_buckets": [
+      37,
+      30,
+      29,
+      15,
+      3
+    ],
+    "expected_under_corpus": [
+      2.5964912280701755,
+      2.1052631578947367,
+      2.0350877192982457,
+      1.0526315789473684,
+      0.21052631578947367
+    ],
+    "chi2": 4.0162162162162165,
+    "df": 4,
+    "perm_p_chi2_geq_obs": 0.3903,
+    "short_med_count": 7,
+    "direction_locked_satisfied": true,
+    "verdict": "NULL"
+  },
+  "H3_chronology": {
+    "observed": 50.57142857142857,
+    "percentile": 0.9663,
+    "null_mean": 38.438225,
+    "null_std": 7.1995583266874785,
+    "effect_z": 1.6852705431183113,
+    "cluster_rev_orders": {
+      "18": 69,
+      "48": 111,
+      "65": 99,
+      "72": 40,
+      "76": 98,
+      "87": 8,
+      "91": 26,
+      "92": 9
+    },
+    "gate_strict": false,
+    "gate_directional": false,
+    "verdict": "NULL"
+  },
+  "H4_mushaf": {
+    "observed": 28.678571428571427,
+    "percentile": 0.1,
+    "null_mean": 38.34668214285714,
+    "null_std": 7.2176390641394175,
+    "effect_z": -1.3395115256346604,
+    "gate_strict": false,
+    "gate_directional": true,
+    "verdict": "DIRECTIONAL"
+  },
+  "H5_4axis_composite": {
+    "observed_composite": 3.7378484832556014,
+    "percentile": 0.0918,
+    "null_mean": 4.507818454254756,
+    "null_std": 0.576713917630137,
+    "effect_z": -1.3350986467660697,
+    "per_axis_within_cluster_mean": {
+      "content": 0.10360228634639693,
+      "rhyme": 0.32158713230076114,
+      "phoneme": 0.019369855367381228,
+      "verse_len_words": 10.015332336265159
+    },
+    "per_axis_percentile": {
+      "content": 0.3083,
+      "rhyme": 0.0007,
+      "phoneme": 0.3118,
+      "verse_len_words": 0.9119
+    },
+    "corpus_stats": {
+      "content": {
+        "mean": 0.9234872255860892,
+        "std": 0.10132746669012968
+      },
+      "rhyme": {
+        "mean": 1.177549746717609,
+        "std": 0.8058073604747013
+      },
+      "phoneme": {
+        "mean": 0.1969277731980054,
+        "std": 0.022254457046672598
+      },
+      "verse_len_words": {
+        "mean": 10.867436749350304,
+        "std": 6.926565532783462
+      }
+    },
+    "gate_strict": false,
+    "gate_directional": true,
+    "verdict": "DIRECTIONAL"
+  },
+  "family_verdict": "MIXED — partial directionality",
+  "comparator_16": {
+    "extra_8_added": [
+      33,
+      20,
+      17,
+      25
+    ],
+    "extra_8_alif_rates": {
+      "33": 0.9863013698630136,
+      "20": 0.9851851851851852,
+      "17": 0.9819819819819819,
+      "25": 0.974025974025974
+    },
+    "cluster16": [
+      17,
+      18,
+      20,
+      25,
+      33,
+      48,
+      65,
+      72,
+      76,
+      87,
+      91,
+      92
+    ],
+    "fr_observed": 0.9749339696969697,
+    "fr_null_mean": 0.92395670137,
+    "fr_null_std": 0.04915496808269111,
+    "fr_percentile": 0.8684,
+    "fr_verdict_capped_alpha_05": "NULL",
+    "rev_observed": 42.166666666666664,
+    "rev_percentile": 0.7972,
+    "mushaf_observed": 35.45454545454545,
+    "mushaf_percentile": 0.2483,
+    "note": "POST-HOC; single-test α=0.05 ceiling per Protocol §1.7 (MW-7)."
+  },
+  "sub_cluster_tail": {
+    "sub_cluster": [
+      76,
+      87,
+      91,
+      92
+    ],
+    "fr_observed": 0.613127,
+    "fr_percentile": 0.0215,
+    "mushaf_observed": 8.666666666666666,
+    "mushaf_percentile": 0.008,
+    "note": "POST-HOC; single-test α=0.05 ceiling."
+  },
+  "rules_tuple_variants": {
+    "rules_variant_strict_alif_set_only": {
+      "cluster_at_100pct": [
+        18,
+        48,
+        72,
+        76,
+        91
+      ],
+      "matches_canonical": false
+    },
+    "rules_variant_no_tashkeel_text": {
+      "cluster_at_100pct": [
+        18,
+        48,
+        65,
+        72,
+        76,
+        87,
+        91,
+        92
+      ],
+      "matches_canonical": true
+    },
+    "note": "rules-tuple sensitivity check; if EITHER variant breaks the cluster, the 100%-claim is rules-fragile."
+  },
+  "runtime_seconds": 1.15938401222229
+}

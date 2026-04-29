@@ -1,0 +1,42 @@
+# al-Kirmānī 30-pair mechanistic tuples for FOAI task #26 operationalization
+# Source: al-Kirmānī, al-Burhān fī Mutashābih al-Qurʾān, ed. ʿAbd al-Qādir ʿAṭā (Dār al-Kutub al-ʿIlmiyya, Beirut 1986)
+#         cross-referenced with Ṣalāḥ al-Dīn al-Khālidī 1990 edition (Dār al-Qalam, Damascus)
+# Filed by: classical-scholar (green)
+# Date: 2026-04-12
+# VERBATIM CONFIDENCE: HIGH on pair-identification; MEDIUM on wajh-attribution; LOW on directionality sign
+# Sign correction: AMEND-15 (2026-04-12) — predicted_FOAI_sign flipped from A>0 to A<0 per re-derivation
+# SIGN HARMONIZATION (2026-04-13, team-lead ruling): task #40 H-NEW-18-EXT locked the A>0 convention at pre-reg time, superseding AMEND-15's A<0 convention for all downstream use. A = S(V_B|C_A) − S(V_A|C_B) with A>0 meaning "later-canonical is worse when transplanted" is the authoritative operationalization. The "predicted_FOAI_sign" column below continues to read "A<0" per AMEND-15 BUT all task #40 scoring and write-ups MUST apply the A>0 convention. This is a sign-LABEL change only — no data re-run. Reference: team-lead 2026-04-13 message "§11-20 approved + MW-tier + sign" + MW-9/MW-8 log entries.
+# FOAI definition: A = S(V_B | C_A) − S(V_A | C_B), where C_A = primary/al-aṣl context, C_B = echo/farʿ context
+# Predicted direction (task #40 primary, authoritative): A > 0 under classical aṣl/farʿ directionality
+# Predicted direction (AMEND-15 original, SUPERSEDED for scoring, retained for row-level column consistency): A < 0
+pair_id	v_A	v_B	variant_A	variant_B	wajh_category	primary_context	predicted_FOAI_sign	kirmani_quote_gist
+K01	Q2:58	Q7:161	wa-dkhulū l-bāba sujjadan wa-qūlū ḥiṭṭa naghfir lakum khaṭāyākum	wa-dkhulū l-bāba sujjadan wa-qūlū ḥiṭṭa naghfir lakum khaṭīʾātikum	economy-of-repetition	A=Q2	A<0	Q2 uses plural khaṭāyā for Banū Isrāʾīl collective; Q7 uses khaṭīʾāt for narrative variation
+K02	Q2:85	Q2:85	tuʾminūna bi-baʿḍi l-kitāb wa-takfurūna bi-baʿḍ	<intra-verse pairing>	rhetorical-pairing	A=baʿḍ1	N/A	intra-verse pair; not suitable for FOAI
+K03	Q2:126	Q14:35	rabbi jʿal hādhā baladan āminan	rabbi jʿal hādhā l-balada āminan	thematic-fit	A=Q14	A<0	al-Kirmānī: Q2 is initial supplication (indefinite); Q14 presupposes the land already (definite)
+K04	Q3:36	Q3:36	wa-innī sammaytuhā Maryam	<only-instance>	(not a pair)	N/A	N/A	single-occurrence
+K05	Q6:151	Q17:31	wa-lā taqtulū awlādakum min imlāq	wa-lā taqtulū awlādakum khashyata imlāq	maqām-sensitivity	A=Q6	A<0	Q6 addresses existing poverty (min imlāq); Q17 addresses fear of future poverty (khashyata)
+K06	Q2:35	Q7:19	wa-lā taqrabā hādhihi l-shajarata fa-takūnā mina l-ẓālimīn	wa-lā taqrabā hādhihi l-shajarata fa-takūnā mina l-ẓālimīn	(identical — positional only)	balanced	N/A	not a directional pair
+K07	Q4:91	Q5:14	fa-khudhūhum wa-qtulūhum ḥaythu thaqiftumūhum	fa-ʾaghraynā baynahum al-ʿadāwata wa-l-baghḍāʾ	maqām-sensitivity	A=Q4	A<0	Q4 treats immediate punitive command; Q5 treats long-term consequence
+K08	Q6:100	Q16:57	wa-yajʿalūna lillāhi shurakāʾa l-jinna	wa-yajʿalūna lillāhi l-banāt	thematic-fit	A=Q6	A<0	Q6 enumerates jinn-attribution; Q16 enumerates daughter-attribution; Q6 is more general category
+K09	Q7:137	Q28:5	wa-nurīda an namunna ʿalā lladhīna stuḍʿifū	wa-nurīdu an namunna ʿalā lladhīna stuḍʿifū	tense-aspectual	A=Q7	A<0	Q7 retrospective naṣb; Q28 prospective indicative
+K10	Q2:173	Q6:145	fa-mani ḍṭurra ghayra bāghin wa-lā ʿādin	fa-man ḍṭurra ghayra bāghin wa-lā ʿādin	economy-of-repetition	balanced	N/A	phonological identity — balanced
+K11	Q2:174	Q3:77	innamā yaʾkulūna fī buṭūnihim al-nāra	ulāʾika lā khalāqa lahum fī l-ākhira	structural-placement	A=Q2	A<0	Q2 places the concrete metaphor first (buṭūn/nār); Q3 abstracts it (khalāq)
+K12	Q5:42	Q5:47	sammāʿūna li-l-kadhibi akkālūna li-l-suḥt	akkālūna li-l-suḥt	economy-of-repetition	A=Q5:42	A<0	Q5:42 introduces full dyad; Q5:47 recalls with economy
+K13	Q6:145	Q16:115	innamā ḥarrama ʿalaykum al-mayta wa-l-dam wa-laḥma l-khinzīr	innamā ḥarrama ʿalaykum al-mayta wa-l-dam wa-laḥma l-khinzīr wa-mā uhilla li-ghayri llāh	economy-of-repetition	A=Q16	A<0	Q16 adds wa-mā uhilla (more complete); Q6 is proximate to context about idolatry
+K14	Q7:58	Q7:58	wa-l-baladu l-ṭayyibu yakhruju nabātuhu bi-idhni rabbih	wa-lladhī khabutha lā yakhruju illā nakidan	rhetorical-pairing	A=ṭayyib	N/A	within-verse antithesis — not suitable
+K15	Q9:40	Q48:29	idh yaqūlu li-ṣāḥibihi lā taḥzan inna llāha maʿanā	kazarʿin akhraja shaṭʾah	(thematic disjunction)	N/A	N/A	not suitable — different topics
+K16	Q11:37	Q23:27	wa-ṣnaʿ al-fulka bi-aʿyuninā	ani ṣnaʿ al-fulka bi-aʿyuninā	structural-placement	A=Q11	A<0	Q11 is matn-flow command; Q23 introduces with explanatory particle ani
+K17	Q2:223	Q2:223	<single verse>	N/A	N/A	N/A	N/A	not a pair
+K18	Q12:31	Q12:50	fa-lammā raʾaynahu akbarnahu wa-qaṭṭaʿna aydiyahunna	wa-qul lahu mā bālu l-niswati llātī qaṭṭaʿna aydiyahunna	economy-of-repetition	A=Q12:31	A<0	Q12:31 introduces the incident; Q12:50 recalls by brief reference
+K19	Q14:37	Q14:37	<single verse>	N/A	N/A	N/A	N/A	not a pair
+K20	Q17:23	Q17:24	fa-lā taqul lahumā uffin wa-lā tanharhumā	wa-khfiḍ lahumā janāḥa l-dhulli mina l-raḥma	structural-placement	A=Q17:23	A<0	negative injunction precedes positive; mirror-couplet structure
+K21	Q20:12	Q79:16	fa-khlaʿ naʿlayka innaka bi-l-wādi l-muqaddasi Ṭuwā	idh nādāhu rabbuhu bi-l-wādi l-muqaddasi Ṭuwā	thematic-fit	A=Q20	A<0	Q20 narrative voice (direct); Q79 recollective voice (indirect reference)
+K22	Q27:22	Q27:44	jiʾtuka min Sabaʾin bi-nabaʾin yaqīn	qīla lahā dkhulī l-ṣarḥ	(thematic disjunction)	N/A	N/A	not suitable — different sub-scene
+K23	Q12:4	Q12:100	innī raʾaytu aḥada ʿashara kawkaban	wa-raʾaytuhum lī sājidīn	thematic-fit	A=Q12:4	A<0	Q12:4 initial dream-vision report; Q12:100 retrospective confirmation
+K24	Q38:71	Q38:71	<single verse>	N/A	N/A	N/A	N/A	not a pair
+K25	Q2:38	Q20:123	qulnā hbiṭū minhā jamīʿan	qāla hbiṭā minhā jamīʿan	number-grammatical	A=Q2	A<0	Q2 plural (collective humankind); Q20 dual (Ādam-Hawwāʾ); Q2 is universal frame
+K26	Q7:20	Q20:120	fa-waswasa lahumā l-shayṭān	fa-waswasa ilayhi l-shayṭān	maqām-sensitivity	A=Q7	A<0	Q7 dual (collective sin); Q20 singular (Ādam's temptation narratively focalized)
+K27	Q3:73	Q3:73	<single verse>	N/A	N/A	N/A	N/A	not a pair
+K28	Q4:47	Q2:65	kamā laʿannā aṣḥāba l-sabt	wa-laqad ʿalimtum alladhīna ʿtadaw minkum fī l-sabt	economy-of-repetition	A=Q4	A<0	Q4 compact reference presupposing Q2's longer narrative
+K29	Q12:67	Q12:67	<single verse>	N/A	N/A	N/A	N/A	not a pair
+K30	Q19:23	Q19:23	<single verse>	N/A	N/A	N/A	N/A	not a pair

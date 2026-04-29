@@ -1,0 +1,125 @@
+{
+  "hypothesis_id": "H-NEW-45",
+  "run_date": "2026-04-16",
+  "seed": 20260416,
+  "n_perm": 100000,
+  "bonferroni_family": "2026-04-16-H-NEW-45",
+  "bonferroni_k": 8,
+  "alpha_bon": 0.00625,
+  "prereg_sha256": "a12d716cbbe4cae2c6697930b77718f73e5a2e4caae6fda491a3889c213c3d03",
+  "muq_surahs_locked": [
+    2,
+    3,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    19,
+    20,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    36,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    50,
+    68
+  ],
+  "observed": {
+    "primes": 10,
+    "twin_both": 3,
+    "fib": 3,
+    "sq": 1,
+    "tri": 6,
+    "hcn": 3,
+    "mod19_chi2": 9.655172413793103,
+    "gap_entropy": 1.5676898236494567
+  },
+  "positive_control": {
+    "planted_twin_both": 10,
+    "p_positive_control": 9.999000099990002e-05,
+    "detect_at_alpha_bon_over_10": true
+  },
+  "per_cell_results": {
+    "primes": {
+      "p_upper": 0.1789782102178978,
+      "p_lower": 0.9168608313916861,
+      "p_two_sided": 0.3579564204357956,
+      "null_mean": 7.62422,
+      "null_std": 2.0609535151477822
+    },
+    "twin_both": {
+      "p_one_sided_upper": 0.02030979690203098,
+      "null_mean": 0.63109,
+      "null_std": 0.7618762444780649
+    },
+    "fib": {
+      "p_upper": 0.49282507174928253,
+      "p_lower": 0.7745322546774532,
+      "p_two_sided": 0.9856501434985651,
+      "null_mean": 2.54682,
+      "null_std": 1.321789653310995
+    },
+    "sq": {
+      "p_upper": 0.9541404585954141,
+      "p_lower": 0.22085779142208578,
+      "p_two_sided": 0.44171558284417156,
+      "null_mean": 2.54609,
+      "null_std": 1.3226094328636855
+    },
+    "tri": {
+      "p_upper": 0.1036789632103679,
+      "p_lower": 0.967920320796792,
+      "p_two_sided": 0.2073579264207358,
+      "null_mean": 3.55813,
+      "null_std": 1.5311828444375934
+    },
+    "hcn": {
+      "p_upper": 0.6943230567694323,
+      "p_lower": 0.5704442955570445,
+      "p_two_sided": 1.140888591114089,
+      "null_mean": 3.30473,
+      "null_std": 1.4884319356624944
+    },
+    "mod19_chi2": {
+      "p_upper": 0.8726512734872651,
+      "p_lower": 0.22299777002229978,
+      "p_two_sided": 0.44599554004459957,
+      "null_mean": 13.549320689655172,
+      "null_std": 4.11244946434621
+    },
+    "gap_entropy": {
+      "p_upper": 1.0,
+      "p_lower": 9.99990000099999e-06,
+      "p_two_sided": 1.999980000199998e-05,
+      "null_mean": 2.799356159598751,
+      "null_std": 0.12810916287946075
+    }
+  },
+  "per_cell_significant_at_alpha_bon": {
+    "primes": false,
+    "twin_both": false,
+    "fib": false,
+    "sq": false,
+    "tri": false,
+    "hcn": false,
+    "mod19_chi2": false,
+    "gap_entropy": true
+  },
+  "n_significant": 1,
+  "verdict": "EXPLORATORY-POST-HOC",
+  "runtime_seconds": 1.8664209842681885
+}

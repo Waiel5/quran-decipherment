@@ -1,0 +1,32 @@
+{
+  "id": "H-NEW-400",
+  "prereg_sha": "c1162998a874b24439c09da949899f287368f7b87034517b14b5811b19bb971e",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "cell_A_exclude_Q62": {
+    "d_obs": 0.762756,
+    "null_mean": 0.92286582235,
+    "p_less": 0.0965,
+    "pct_2_5": 0.625236,
+    "pass": false,
+    "subset": [
+      57,
+      59,
+      61,
+      64
+    ],
+    "n": 4
+  },
+  "full_block_d_obs": 0.7703513,
+  "full_block_pct": 8.1,
+  "delta_pct_from_Q62_removal": -1.5500000000000007,
+  "q62_distances_to_block_members": {
+    "Q_57": 0.848966,
+    "Q_59": 0.808801,
+    "Q_61": 0.734549,
+    "Q_64": 0.734661
+  },
+  "verdict": "Q62-NOT-OUTLIER (negligible change -1.6pp)"
+}

@@ -1,0 +1,72 @@
+{
+  "seed": 20260413,
+  "source_file": "/Users/grey/Downloads/quran/scratch/team-discovery/result-razi-biqai.json",
+  "n_surahs": 95,
+  "threshold": 10.0,
+  "pre_residualization": {
+    "stouffer_z_r1": 30.756878821988522,
+    "stouffer_z_grad": 19.666272653606686,
+    "stouffer_z_ring": -2.5061890420549147
+  },
+  "post_residualization_linear": {
+    "stouffer_z_r1": 2.4438635053399807e-14,
+    "stouffer_z_grad": 3.405803719863222e-14,
+    "stouffer_z_ring": -6.9767718341679715e-15,
+    "beta_r1": [
+      -4.588496889663361,
+      2.010470115850758
+    ],
+    "beta_grad": [
+      -2.5048314592257412,
+      1.1741151168745567
+    ],
+    "beta_ring": [
+      -0.23597044818720114,
+      -0.005493196014670243
+    ]
+  },
+  "post_residualization_quadratic": {
+    "stouffer_z_r1": -8.428737721027385e-12,
+    "stouffer_z_grad": -1.689805462517187e-12,
+    "stouffer_z_ring": 3.2122766121693215e-13
+  },
+  "subsample_n_le_30": {
+    "n": 32,
+    "stouffer_z_r1": 9.57149654835846,
+    "stouffer_z_grad": 6.228940647494402,
+    "stouffer_z_ring": -1.7423436767098324
+  },
+  "subsample_30_100": {
+    "n": 45,
+    "stouffer_z_r1": 20.12987033806911,
+    "stouffer_z_grad": 13.568881290326754,
+    "stouffer_z_ring": -1.046544211951159
+  },
+  "subsample_n_gt_100": {
+    "n": 18,
+    "stouffer_z_r1": 26.068937823511195,
+    "stouffer_z_grad": 15.420604219271189,
+    "stouffer_z_ring": -1.7797153964109267
+  },
+  "length_correlations": {
+    "rho_logn_z_r1": 0.5975917182691407,
+    "rho_logn_z_grad": 0.4651047069260305,
+    "rho_logn_z_ring": -0.004637831435077598
+  },
+  "inverse_variance_weighted": {
+    "weights": "w=1/sqrt(n-1)",
+    "stouffer_z_r1": 22.775934212023504,
+    "stouffer_z_grad": 14.709242204741093,
+    "stouffer_z_ring": -2.3695008739573553
+  },
+  "gate_verdict": {
+    "short_stratum_r1_pass": false,
+    "short_stratum_grad_pass": false,
+    "iv_weighted_r1_pass": true,
+    "iv_weighted_grad_pass": true,
+    "joint_r1_pass": false,
+    "joint_grad_pass": false,
+    "threshold": 10.0,
+    "note": "naive OLS-residualization Z always = 0 by construction; proper gate = short-stratum Stouffer + inverse-variance-weighted Stouffer."
+  }
+}

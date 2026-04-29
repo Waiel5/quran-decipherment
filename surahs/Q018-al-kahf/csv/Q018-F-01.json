@@ -1,0 +1,56 @@
+{
+  "finding_id": "Q018-F-01",
+  "pre_reg_sha256": "7c17b23772237d91bd679c6d07784d86db54aebbe0c129a35a9a57467e3db3e6",
+  "verdict": "CONFIRMED on 0/3 cells",
+  "cells": {
+    "A_verses": {
+      "observed_ratio": 1.7692307692307692,
+      "null_median": 1.7692307692307692,
+      "p": 1.0,
+      "verdict": "NULL"
+    },
+    "B_words": {
+      "observed_ratio": 2.0,
+      "null_median": 1.6615384615384616,
+      "p": 0.9019,
+      "verdict": "NULL_PRECOMMIT_VIOLATION"
+    },
+    "C_roots": {
+      "observed_ratio": 1.9469026548672566,
+      "null_median": 1.6470588235294117,
+      "p": 0.8916,
+      "verdict": "NULL_PRECOMMIT_VIOLATION"
+    }
+  },
+  "block_data": {
+    "N1_kahf": {
+      "verses": 18,
+      "words": 336,
+      "roots": 220
+    },
+    "N2_gardens": {
+      "verses": 13,
+      "words": 168,
+      "roots": 113
+    },
+    "N3_musa_khadir": {
+      "verses": 23,
+      "words": 302,
+      "roots": 202
+    },
+    "N4_dhu_qarnayn": {
+      "verses": 19,
+      "words": 213,
+      "roots": 136
+    }
+  },
+  "block_lengths_verses": [
+    18,
+    13,
+    23,
+    19
+  ],
+  "n_perm": 10000,
+  "seed": 18001,
+  "alpha_bonferroni": 0.016666666666666666
+}

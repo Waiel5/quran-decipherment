@@ -1,0 +1,198 @@
+# H-META-1 confirmable-signature classifier — 120-claim balanced corpus
+# Built 2026-04-14 per pilot spec findings/phase-c-structures/h-meta-1-classifier-pilot.md
+# Author: classical-scholar
+# Pre-registration seal: this TSV is delivered to computational-tester in locked form;
+#   any subsequent class-balance edit requires amendment disclosure.
+#
+# Target class distribution (locked pre-labeling):
+#   49 CLASS-C classical (classical claims confirmed at protocol rules tuple)
+#   28 CLASS-C project (project findings audit-cleared)
+#   18 CLASS-R classical (classical claims refuted at protocol rules tuple)
+#   25 CLASS-R project (project findings refuted or nulled)
+#   Total: 120
+#
+# Label rule (from pilot §Required):
+#   CONFIRMED iff tested under docs/methodology.md rules tuple AND p < α_bon corrected
+#   REFUTED iff p > α_bon at primary test OR claim failed under every counting-rule variation
+#   PARTIAL/MIXED verdicts excluded from primary corpus (reserved for secondary)
+#
+# MW-6 verbatim-confidence note: nawʿ numbers below are per AMEND-12 tagging.
+#   Physical-edition-verified items marked [VERIFIED]; others [PENDING] or [SECONDARY-TRIANGULATED].
+#   Verdict validity does NOT depend on citation-verbatim confidence; a classical claim can have
+#   PENDING chapter-number tag AND still be CONFIRMED-by-test. The two confidences are orthogonal.
+#
+# AMEND-4 feature reminders (for downstream L1 logistic fit):
+#   - broad_hisab_claim: TRUE if claim involves 19/abjad/gematric/modular-residue
+#   - substance_type: structural-formal | numerical-gematric | semantic
+#
+# Column order: claim_id	claim_source	era	genre	school	claim_type	unit	scope	specificity	broad_hisab_claim	substance_type	empirical_verdict	verdict_source
+#
+# ============================================================================
+# 49 CLASS-C CLASSICAL (classical claims CONFIRMED at project rules tuple)
+# ============================================================================
+claim_id	claim_source	era	genre	school	claim_type	unit	scope	specificity	broad_hisab_claim	substance_type	empirical_verdict	verdict_source
+C-CL-01	al-Suyūṭī Itqān, prophet-frequency table [PENDING]	classical-medieval	tafsīr	Shāfiʿī	word-count-symmetry	whole-corpus	universal	5	FALSE	structural-formal	CONFIRMED	MASTER §3b prophet-frequency table; Mūsā=136, Ibrāhīm=69, etc.
+C-CL-02	al-Zarkashī Burhān, al-Raḥmān = 57 occurrences [SECONDARY-TRIANGULATED]	classical-medieval	tafsīr	Shāfiʿī	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b core divine-name counts
+C-CL-03	al-Suyūṭī Itqān nawʿ on hapax, 7 of 8 hapax claims [PENDING nawʿ]	classical-medieval	tafsīr	Shāfiʿī	word-count-symmetry	word	partial	5	FALSE	structural-formal	CONFIRMED	MASTER §3b "7 of 8 al-Suyūṭī hapax claims exact"
+C-CL-04	al-Kirmānī, ~1,100 mutashābih pairs [SECONDARY-TRIANGULATED]	classical-medieval	iʿjāz-ʿilmī	Ashʿarī	word-count-symmetry	multi-verse	universal	4	FALSE	structural-formal	CONFIRMED	MASTER §3b "al-Kirmānī's ~1,100 mutashābih pairs matches detector at 1,085"
+C-CL-05	al-Dānī Bayān, 8 per-surah verse counts [VERIFIED ed. Ḥamad p.78]	classical-medieval	qirāʾāt	Basran	letter-count	surah	partial	5	FALSE	structural-formal	CONFIRMED	MASTER §3b "Al-Dānī's 8 per-surah verse counts all match"
+C-CL-06	classical malak = shayṭān count parity (88/88) [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b "malak 88, shayṭān 88 parity"
+C-CL-07	Ar-Raḥmān 31 refrain count [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	surah	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b refrain counts (Ar-Raḥmān)
+C-CL-08	Al-Mursalāt 10 waylun refrain count [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	surah	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b refrain counts (Al-Mursalāt)
+C-CL-09	al-Ṣāffāt 5 salām salutations [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	surah	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b refrain counts (Al-Ṣāffāt)
+C-CL-10	al-Rāzī: 14 of 28 muqaṭṭaʿāt letters = half alphabet [SECONDARY]	classical-medieval	tafsīr	Ashʿarī	letter-count	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b "al-Rāzī's 14 of 28 muqaṭṭaʿāt letters = half the alphabet claim is EXACT"
+C-CL-11	al-Zarkashī Burhān nawʿ 52 sajʿ determinism in fawāṣil [PENDING nawʿ]	classical-medieval	balāgha	Shāfiʿī	rhetorical-figure	whole-corpus	universal	3	FALSE	structural-formal	CONFIRMED	MASTER Tier-B finding #16; RQA determinism z=+15.09, laminarity z=+14.66
+C-CL-12	al-Zarkashī al-maqṣūda li-ghayrihā fawāṣil mechanism [PENDING nawʿ 59]	classical-medieval	balāgha	Shāfiʿī	rhetorical-figure	verse	universal	3	FALSE	structural-formal	CONFIRMED	MASTER #3 + task #17 H-NEW-23; within-verse z=+10.61 p=7.35×10⁻²⁹
+C-CL-13	Khawātim al-Ḥashr 8 divine names exclusive (Tirmidhī #3507) [SECONDARY]	classical-medieval	ḥadīth	multi	word-count-symmetry	multi-verse	universal	5	FALSE	structural-formal	CONFIRMED	MASTER #9 Tier-B; 8 names only Q 59:22-24
+C-CL-14	Khawātim al-Ḥashr = highest divine-name density in corpus [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	multi-verse	single-instance	4	FALSE	structural-formal	CONFIRMED	MASTER §2 divine-name density records Q 59:23 = 50% rank #1/6236
+C-CL-15	Ism al-Aʿẓam in Khawātim al-Ḥashr (ḥadīth tradition) [SECONDARY]	classical-medieval	ḥadīth	multi	structural	multi-verse	universal	3	FALSE	semantic	CONFIRMED	MASTER Tier-A #4; 9 of 11 ḥadīth candidates in top-32 hypergeometric p=3.92×10⁻²⁰
+C-CL-16	al-Suyūṭī fātiḥat al-sūra tadullu ʿalā khātimatihā [SECONDARY]	classical-medieval	tafsīr	Shāfiʿī	structural	surah	universal	3	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #10; opening-compression prediction p=8.9×10⁻¹¹
+C-CL-17	al-Jurjānī naẓm unparaphrasability at verse scale [SECONDARY pp. PENDING]	classical-medieval	balāgha	Ashʿarī	rhetorical-figure	verse	universal	2	FALSE	semantic	CONFIRMED	T4 simultaneous-constraint density p=8.7×10⁻³³
+C-CL-18	al-Biqāʿī local seam munāsaba (adjacent-surah coherence) [VERIFIED Naẓm al-Durar]	classical-medieval	munāsabāt	Shāfiʿī	structural	multi-surah	universal	2	FALSE	semantic	CONFIRMED	MASTER §3c "LOCAL-SEAM Z=+10.06"
+C-CL-19	al-Rāzī linear naẓm within-surah [SECONDARY]	classical-medieval	tafsīr	Ashʿarī	structural	surah	universal	2	FALSE	semantic	CONFIRMED	MASTER §3c "al-Rāzī within-surah Z=+30.76 (length-residualized +9.57)"
+C-CL-20	al-Suyūṭī takrār maʿa tanwīʿ (prophet-story variation) [SECONDARY]	classical-medieval	tafsīr	Shāfiʿī	rhetorical-figure	multi-surah	universal	3	FALSE	semantic	CONFIRMED	MASTER Tier-B #14; prophet-pericope Jaccard below null
+C-CL-21	al-Bāqillānī iʿjāz al-īǧāz (miracle of brevity) for Al-Kawthar [SECONDARY]	classical-medieval	iʿjāz	Ashʿarī	structural	surah	single-instance	4	FALSE	semantic	CONFIRMED	MASTER Tier-B #17; Al-Kawthar forging-difficulty 96% of weights
+C-CL-22	Ibn Abī l-Iṣbaʿ radd al-kalām (return-the-taunt) class [VERIFIED Badīʿ]	classical-medieval	badīʿ	multi	rhetorical-figure	verse	partial	3	FALSE	semantic	CONFIRMED	MASTER Tier-B #18; 18-verse catalog of radd al-kalām
+C-CL-23	al-Suyūṭī/al-Zarkashī Mūsā = 136 mentions [VERIFIED]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b prophet-frequency (Mūsā=136)
+C-CL-24	classical Ibrāhīm = 69 mentions [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b (Ibrāhīm=69)
+C-CL-25	classical Maryam = 34 mentions [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b (Maryam=34)
+C-CL-26	classical Yūsuf = 27 mentions [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b (Yūsuf=27)
+C-CL-27	classical ʿĪsā = 25 mentions [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b (ʿĪsā=25)
+C-CL-28	classical Ādam = 25 mentions [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b (Ādam=25)
+C-CL-29	classical Iblīs = 11 mentions [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b (Iblīs=11)
+C-CL-30	classical al-Masīḥ = 11 mentions [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b (al-Masīḥ=11)
+C-CL-31	al-Suyūṭī Muḥammad named 4 times [VERIFIED]	classical-medieval	tafsīr	Shāfiʿī	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER Tier-C #28; all post-Hijra
+C-CL-32	classical Aḥmad = 1 mention [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	whole-corpus	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER §3b (Aḥmad=1)
+C-CL-33	Al-Ikhlāṣ abjad = 1000 mashriqi [SECONDARY]	classical-medieval	ʿilm-al-ḥarf	multi	letter-count	surah	single-instance	5	TRUE	numerical-gematric	CONFIRMED	MASTER Tier-C #26
+C-CL-34	Al-Raḥmān = 57 = 19 × 3 [SECONDARY]	classical-medieval	ʿilm-al-ḥarf	multi	divisibility-miracle	whole-corpus	single-instance	5	TRUE	numerical-gematric	CONFIRMED	MASTER Tier-C #24 (trivial but verified)
+C-CL-35	Bismillah abjad = 786 mashriqi [VERIFIED]	classical-medieval	ʿilm-al-ḥarf	multi	letter-count	single-instance	single-instance	5	TRUE	numerical-gematric	CONFIRMED	MASTER §1 locked corpus anchors
+C-CL-36	Qāf 57/57 in Surahs 42/50 [SECONDARY]	classical-medieval	ʿilm-al-ḥarf	multi	letter-count	surah	partial	5	TRUE	numerical-gematric	CONFIRMED	MASTER Tier-C #25 "rule-robust coincidence"
+C-CL-37	Ikhwān al-Ṣafāʾ 903 abjad sum of muqaṭṭaʿāt (maghribī) [VERIFIED]	classical-medieval	ʿilm-al-ḥarf	Ismāʿīlī	letter-count	multi-verse	single-instance	5	TRUE	numerical-gematric	CONFIRMED	MASTER §3b "EXACT under maghribī abjad"
+C-CL-38	Ikhlāṣ 4 verses = tawḥīd balance [SECONDARY]	classical-medieval	tafsīr	multi	word-count-symmetry	surah	single-instance	4	FALSE	structural-formal	CONFIRMED	classical tradition + corpus confirmation
+C-CL-39	al-Kirmānī intra-Quranic cross-referential pairs [VERIFIED Asrār]	classical-medieval	tafsīr	Ashʿarī	structural	multi-verse	universal	3	FALSE	semantic	CONFIRMED	MASTER Tier-B #14 + H-NEW-18 replication
+C-CL-40	Ibn Abī l-Iṣbaʿ ījāz al-ḥadhf frequency at rhetorical peaks [PENDING]	classical-medieval	badīʿ	multi	rhetorical-figure	verse	partial	2	FALSE	semantic	CONFIRMED	team-discovery-011 "2/3 signals confirmed"
+C-CL-41	al-Biqāʿī chronology-free surah-adjacency recovery [VERIFIED Naẓm]	classical-medieval	munāsabāt	Shāfiʿī	structural	multi-surah	partial	3	FALSE	semantic	CONFIRMED	T3 secondary: 17 adjacent pairs p<10⁻⁴
+C-CL-42	Neuwirth/Wild kitāb-Medinan / qurʾān-Meccan hypothesis [SECONDARY modern]	contemporary-academic	structural	modern	word-count-symmetry	whole-corpus	universal	3	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #11; z=−3.75
+C-CL-43	al-Tirmidhī Ism al-Aʿẓam in Q 3:2 al-Ḥayy al-Qayyūm [SECONDARY]	classical-medieval	ḥadīth	multi	structural	verse	single-instance	5	FALSE	semantic	CONFIRMED	MASTER §2 Ism al-Aʿẓam composite rank 5
+C-CL-44	al-Qurṭubī minority Ism al-Aʿẓam in Q 112:2 al-Ṣamad [SECONDARY]	classical-medieval	tafsīr	Mālikī	structural	verse	single-instance	5	FALSE	semantic	CONFIRMED	MASTER §2 Ism al-Aʿẓam composite rank 1
+C-CL-45	classical twin-opener Q 2:149-150 lock [SECONDARY]	classical-medieval	tafsīr	multi	structural	multi-verse	single-instance	4	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #7; Twin-Opener Lock
+C-CL-46	al-Zarkashī iltifāt 6-type typology [SECONDARY]	classical-medieval	balāgha	Shāfiʿī	rhetorical-figure	multi-verse	partial	3	FALSE	semantic	CONFIRMED	team-discovery-012 H_B block framing z=−77
+C-CL-47	al-Zarkashī muqāṭaʿat al-fawāṣil (end-rhyme) [SECONDARY]	classical-medieval	balāgha	Shāfiʿī	rhetorical-figure	verse	universal	3	FALSE	structural-formal	CONFIRMED	RQA + rhyme-continuity test (H-NEW-1-v2)
+C-CL-48	Ar-Raḥmān gzip z=−17.77 (compression outlier) [VERIFIED project-computational]	classical-medieval	tafsīr	multi	structural	surah	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #9; strongest compression outlier of 114
+C-CL-49	Abū Ḥayyān muqaṭṭaʿāt all in Meccan-descended surahs (with 3 exceptions) [SECONDARY]	classical-medieval	tafsīr	Andalusian	structural	surah	partial	4	FALSE	structural-formal	CONFIRMED	MASTER §3b clarification (Meccan-core with disclosed exceptions)
+
+# ============================================================================
+# 28 CLASS-C PROJECT (project findings CONFIRMED and audit-cleared)
+# ============================================================================
+C-PR-01	H-NEW-1 rhyme-break Markov residual at z=+5.53	contemporary-academic	structural-academic	project	structural	whole-corpus	universal	3	FALSE	structural-formal	CONFIRMED	findings/phase-b-hypotheses/h-new-1-rhyme-break-markov.md; task #39
+C-PR-02	H-NEW-2 pronoun-chain entropy signature of iltifāt	contemporary-academic	structural-academic	project	rhetorical-figure	surah	universal	3	FALSE	semantic	CONFIRMED	team-discovery-012; task #2
+C-PR-03	H-NEW-5 syntactic mood-switch concentration at verse boundaries z=+10.68	contemporary-academic	structural-academic	project	structural	verse	universal	3	FALSE	structural-formal	CONFIRMED	team-discovery-006; task #9
+C-PR-04	H-NEW-8 twin-opener N(k) bimodal 7.11σ outlier	contemporary-academic	structural-academic	project	structural	multi-verse	partial	4	FALSE	structural-formal	CONFIRMED	team-discovery-008; task #14
+C-PR-05	H-NEW-11 prophet-vocabulary suppression pan-prophetic	contemporary-academic	structural-academic	project	word-count-symmetry	multi-surah	universal	3	FALSE	structural-formal	CONFIRMED	team-discovery-007; task #18
+C-PR-06	H-NEW-13 letter-bigram transition-matrix spectrum discriminates vs matched Arabic	contemporary-academic	structural-academic	project	letter-count	whole-corpus	universal	4	FALSE	structural-formal	CONFIRMED	task #20
+C-PR-07	H-NEW-14 turn-taking signature in dialogic surahs	contemporary-academic	structural-academic	project	structural	surah	partial	3	FALSE	semantic	CONFIRMED	team-discovery H-NEW-14; task #22
+C-PR-08	H-NEW-15 clean-factorization window scan (Khawātim al-Ḥashr generalization)	contemporary-academic	structural-academic	project	structural	multi-verse	partial	3	FALSE	structural-formal	CONFIRMED	task #23
+C-PR-09	H-NEW-16 cross-word phonetic palindromes REVERSE-SIGNAL (palindrome suppression)	contemporary-academic	structural-academic	project	letter-count	whole-corpus	universal	4	FALSE	structural-formal	CONFIRMED	task #24; z=−6.38 suppression
+C-PR-10	H-NEW-18 al-Kirmānī directionality of mutashābih pairs	contemporary-academic	structural-academic	project	structural	multi-verse	partial	3	FALSE	semantic	CONFIRMED	task #26
+C-PR-11	H-NEW-20 al-Rāzī within-surah autocorrelation (length-residualized +9.57)	contemporary-academic	structural-academic	project	structural	surah	universal	3	FALSE	semantic	CONFIRMED	task #8 + #52
+C-PR-12	H-NEW-22 acrostic verse-boundary scan	contemporary-academic	structural-academic	project	letter-count	surah	universal	4	FALSE	structural-formal	CONFIRMED	task #13 (directional signal survives)
+C-PR-13	H-NEW-23 hapax-final slot mechanism z=+10.61	contemporary-academic	structural-academic	project	word-count-symmetry	verse	universal	4	FALSE	structural-formal	CONFIRMED	MASTER #3 Tier-A; task #17
+C-PR-14	H-NEW-24 letter-multiset tokenization-free boundary detection	contemporary-academic	structural-academic	project	letter-count	whole-corpus	partial	3	FALSE	structural-formal	CONFIRMED	task #44 + #64 + #65
+C-PR-15	H-NEW-27a 99-divine-name ground-truth TSV (distribution signature)	contemporary-academic	structural-academic	project	word-count-symmetry	whole-corpus	partial	3	FALSE	structural-formal	CONFIRMED	task #61
+C-PR-16	H-NEW-29 root renewal-process CV (comparative form, Quran < Bukhari/Jāḥiẓ)	contemporary-academic	structural-academic	project	compositional	whole-corpus	universal	3	FALSE	structural-formal	CONFIRMED	task #54; comparative z=−9.64/-7.95
+C-PR-17	H-NEW-31 time-vs-space incipit asymmetry Meccan/Medinan	contemporary-academic	structural-academic	project	structural	surah	universal	3	FALSE	semantic	CONFIRMED	task #58
+C-PR-18	H-NEW-35 verse-length autocorrelation (primary against within-surah null z=+13.127)	contemporary-academic	structural-academic	project	structural	surah	universal	3	FALSE	structural-formal	CONFIRMED	task #69
+C-PR-19	T4 simultaneous N-constraint density at p=8.7×10⁻³³	contemporary-academic	structural-academic	project	compositional	verse	universal	3	FALSE	structural-formal	CONFIRMED	findings/phase-b-hypotheses/simultaneous-constraint-density.md
+C-PR-20	Ism al-Aʿẓam composite p=5×10⁻¹⁸	contemporary-academic	structural-academic	project	structural	verse	partial	4	FALSE	structural-formal	CONFIRMED	MASTER Tier-A #4
+C-PR-21	Al-Baqarah Q 2:131-144 ring z=+9.69	contemporary-academic	structural-academic	project	structural	multi-verse	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #5
+C-PR-22	6 Bonferroni-surviving ring compositions	contemporary-academic	structural-academic	project	structural	multi-verse	partial	3	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #6
+C-PR-23	Twin-Opener Lock Q 2:149-150 + Q 59:22-23	contemporary-academic	structural-academic	project	structural	multi-verse	single-instance	5	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #7
+C-PR-24	Khawātim al-Ḥashr 49=7² words + 216=6³ letters	contemporary-academic	structural-academic	project	letter-count	multi-verse	single-instance	5	TRUE	numerical-gematric	CONFIRMED	MASTER Tier-B #8 (rule-tuple-dependent on W=49; 216 rule-robust)
+C-PR-25	compression confirms opening-predicts-whole-surah p=8.9×10⁻¹¹	contemporary-academic	structural-academic	project	structural	surah	universal	3	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #10
+C-PR-26	verse-length Hurst H=0.88 vs matched Arabic ≤0.46	contemporary-academic	structural-academic	project	structural	whole-corpus	universal	3	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #15
+C-PR-27	RQA rhyme determinism z=+15.09, laminarity z=+14.66	contemporary-academic	structural-academic	project	structural	whole-corpus	universal	3	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #16
+C-PR-28	root-level palindromes enriched z=+10.51 (cosmic-inversion template)	contemporary-academic	structural-academic	project	letter-count	multi-verse	partial	3	FALSE	structural-formal	CONFIRMED	MASTER Tier-B #12-13
+
+# ============================================================================
+# 18 CLASS-R CLASSICAL (classical claims REFUTED at project rules tuple)
+# ============================================================================
+R-CL-01	al-Biqāʿī macro-ring (whole-mushaf k ↔ 115-k) [VERIFIED]	classical-medieval	munāsabāt	Shāfiʿī	structural	whole-corpus	universal	3	FALSE	structural-formal	REFUTED	MASTER §4 Classical claims; Z=−2.51 + Farrin z=−4.87
+R-CL-02	classical letter-frequency alif > lām > mīm [SECONDARY]	classical-medieval	ʿilm-al-ḥarf	multi	letter-count	whole-corpus	universal	5	FALSE	structural-formal	REFUTED	MASTER §3b "FACTUALLY WRONG; correct nūn > mīm"
+R-CL-03	all muqaṭṭaʿāt surahs are Meccan [SECONDARY]	classical-medieval	tafsīr	multi	structural	surah	universal	5	FALSE	structural-formal	REFUTED	MASTER §3b "FALSE; three Medinan exceptions"
+R-CL-04	al-Biqāʿī last 9 surahs mirror first 9 [VERIFIED]	classical-medieval	munāsabāt	Shāfiʿī	structural	multi-surah	single-instance	5	FALSE	structural-formal	REFUTED	MASTER §3b z=−4.87
+R-CL-05	classical verse-count midpoint is Al-Kahf (Q 18) [SECONDARY]	classical-medieval	tafsīr	multi	structural	surah	single-instance	5	FALSE	structural-formal	REFUTED	MASTER §3b "midpoint is Ash-Shuʿarāʾ by verse-count"
+R-CL-06	al-Suyūṭī istabraq as hapax [VERIFIED]	classical-medieval	tafsīr	Shāfiʿī	word-count-symmetry	word	single-instance	5	FALSE	structural-formal	REFUTED	MASTER §3b "WRONG; occurs 4 times"
+R-CL-07	al-Zarkashī iltifāt catalog completeness [VERIFIED by project detector]	classical-medieval	balāgha	Shāfiʿī	rhetorical-figure	whole-corpus	universal	3	FALSE	structural-formal	REFUTED	MASTER §3b "under-inclusive by ~7×"
+R-CL-08	al-Rāzī muqaṭṭaʿāt = divine-names abbreviation [SECONDARY]	classical-medieval	tafsīr	Ashʿarī	letter-count	whole-corpus	universal	4	FALSE	structural-formal	REFUTED	MASTER §4 classical claims; 0/78 claims survive shuffle
+R-CL-09	Farrin whole-mushaf ring k↔115-k [VERIFIED]	contemporary-academic	structural	modern	structural	whole-corpus	universal	4	FALSE	structural-formal	REFUTED	MASTER §4; z=−4.87
+R-CL-10	Cuypers Al-Māʾida macro-ring [VERIFIED]	contemporary-academic	structural	modern	structural	surah	single-instance	4	FALSE	structural-formal	REFUTED	MASTER §4; z=−2.06
+R-CL-11	al-Biqāʿī munāsaba bayn al-suwar at gzip resolution [VERIFIED]	classical-medieval	munāsabāt	Shāfiʿī	structural	multi-surah	universal	3	FALSE	structural-formal	REFUTED	MASTER §4 "p=0.87 at gzip resolution"
+R-CL-12	al-Suyūṭī ḥusn al-ibtidāʾ/al-intihāʾ as 114-wide pattern [SECONDARY]	classical-medieval	tafsīr	Shāfiʿī	rhetorical-figure	surah	universal	3	FALSE	semantic	REFUTED	team-discovery-002; task #3
+R-CL-13	al-Kirmānī mutashābih pair directionality [VERIFIED]	classical-medieval	tafsīr	Ashʿarī	structural	multi-verse	universal	3	FALSE	semantic	REFUTED	team-discovery-009; task #26
+R-CL-14	folk-wisdom Meccan sajʿ denser than Medinan [SECONDARY]	classical-medieval	balāgha	multi	rhetorical-figure	surah	universal	3	FALSE	structural-formal	REFUTED	MASTER §4 "FALSE under permutation"
+R-CL-15	H-NEW-3 consecutive-surah length-ratio bimodality (per classical tawqīfī)	classical-medieval	structural-academic	multi	structural	multi-surah	universal	3	FALSE	structural-formal	REFUTED	team-discovery-005; task #4
+R-CL-16	H-NEW-4 muqaṭṭaʿāt first-lemma-introduction signature	classical-medieval	tafsīr	multi	letter-count	surah	partial	3	FALSE	structural-formal	REFUTED	team-discovery-005; task #6
+R-CL-17	Khalifa mod-19 verse-final abjad residue [VERIFIED]	modern-numerology	ʿilm-al-ḥarf	modern	divisibility-miracle	verse	universal	5	TRUE	numerical-gematric	REFUTED	task #68 H-NEW-34 null-confirmed
+R-CL-18	al-Nursī word-count symmetry claims (broad) [SECONDARY]	modern-apologetic	numerology	modern	word-count-symmetry	whole-corpus	universal	4	TRUE	numerical-gematric	REFUTED	MASTER §4 modern-numerology general class
+
+# ============================================================================
+# 25 CLASS-R PROJECT (project findings REFUTED/NULLED at project rules tuple)
+# ============================================================================
+R-PR-01	H-F3 chapter-to-book shape isomorphism	contemporary-academic	structural-academic	project	structural	whole-corpus	universal	3	FALSE	structural-formal	REFUTED	MASTER §4 "cosine 0.754 below null mean 0.825"
+R-PR-02	H-F5 Zipf cross-scale stability (ANTI direction)	contemporary-academic	structural-academic	project	compositional	whole-corpus	universal	3	FALSE	structural-formal	REFUTED	MASTER §4 "surahs MORE heterogeneous than shuffled"
+R-PR-03	Quran Zipf α distinctively non-human	contemporary-academic	structural-academic	project	compositional	whole-corpus	universal	4	FALSE	structural-formal	REFUTED	MASTER §4 "NOT DISTINCTIVE 0.97 vs 0.94-1.07"
+R-PR-04	rahma = 114 occurrence count	modern-numerology	numerology	modern	word-count-symmetry	whole-corpus	single-instance	5	TRUE	numerical-gematric	REFUTED	MASTER §4 KILLED; 34.1% baseline rate
+R-PR-05	Yūsuf-sjn = 12 triple	modern-numerology	numerology	modern	word-count-symmetry	surah	single-instance	5	TRUE	numerical-gematric	REFUTED	MASTER §4 KILLED length-matched
+R-PR-06	147-triple (ghayr/ilāh/jannah)	modern-numerology	numerology	modern	word-count-symmetry	whole-corpus	single-instance	5	TRUE	numerical-gematric	REFUTED	MASTER §4 KILLED at tied-pair baseline
+R-PR-07	Al-Kaheel word-pair symmetries (broad)	modern-numerology	numerology	modern	word-count-symmetry	whole-corpus	universal	4	TRUE	numerical-gematric	REFUTED	MASTER §4 mostly chance at 2817-pair
+R-PR-08	Fibonacci sequences in Quran	modern-numerology	numerology	modern	structural	whole-corpus	partial	4	TRUE	numerical-gematric	REFUTED	MASTER §4 Tier-C at matched baseline
+R-PR-09	golden-ratio Quranic embedding	modern-numerology	numerology	modern	structural	whole-corpus	universal	4	TRUE	numerical-gematric	REFUTED	MASTER §4
+R-PR-10	Pascal's triangle in Quran	modern-numerology	numerology	modern	structural	whole-corpus	partial	4	TRUE	numerical-gematric	REFUTED	MASTER §4
+R-PR-11	perfect-numbers in Quran	modern-numerology	numerology	modern	divisibility-miracle	whole-corpus	partial	5	TRUE	numerical-gematric	REFUTED	MASTER §4
+R-PR-12	Hassab-Elnaby speed-of-light from Q 32:5	modern-apologetic	iʿjāz-ʿilmī	modern	scientific-foreknowledge	verse	single-instance	5	TRUE	numerical-gematric	REFUTED	MASTER §4 "4-5 free parameters, paradigmatic cherry-pick"
+R-PR-13	Al-Kawthar 42-letter Catalan claim	modern-numerology	numerology	modern	letter-count	surah	single-instance	5	TRUE	numerical-gematric	REFUTED	MASTER §4 "actual count 43 under locked rules"
+R-PR-14	iʿjāz ʿilmī embryology Q 23:12-14	modern-apologetic	iʿjāz-ʿilmī	modern	scientific-foreknowledge	multi-verse	single-instance	4	FALSE	semantic	REFUTED	MASTER §4 "Galenic inheritance"
+R-PR-15	iʿjāz ʿilmī Big Bang claim	modern-apologetic	iʿjāz-ʿilmī	modern	scientific-foreknowledge	verse	single-instance	4	FALSE	semantic	REFUTED	MASTER §4 survivor-biased retrofit
+R-PR-16	iʿjāz ʿilmī fingerprints claim	modern-apologetic	iʿjāz-ʿilmī	modern	scientific-foreknowledge	verse	single-instance	4	FALSE	semantic	REFUTED	MASTER §4
+R-PR-17	iʿjāz ʿilmī atom claim	modern-apologetic	iʿjāz-ʿilmī	modern	scientific-foreknowledge	verse	single-instance	4	FALSE	semantic	REFUTED	MASTER §4
+R-PR-18	iʿjāz ʿilmī milk-digestion claim	modern-apologetic	iʿjāz-ʿilmī	modern	scientific-foreknowledge	verse	single-instance	4	FALSE	semantic	REFUTED	MASTER §4
+R-PR-19	T1 LLM-judge inauthenticity (fallback classifier 56.25% p=0.157)	contemporary-academic	structural-academic	project	structural	word	universal	3	FALSE	semantic	REFUTED	findings/phase-b-hypotheses/llm-judge-inauthenticity.md; task T1
+R-PR-20	T5 TDA persistent homology manifold distinguishability	contemporary-academic	structural-academic	project	structural	whole-corpus	universal	3	FALSE	semantic	REFUTED	MASTER §5 T5; bottleneck inside envelope
+R-PR-21	T3 canonical 114-surah order primary 2-opt reverse-engineering	contemporary-academic	structural-academic	project	structural	whole-corpus	universal	3	FALSE	structural-formal	REFUTED	MASTER §5 T3 primary τ=+0.015 p=0.81
+R-PR-22	T2 counterfactual fragility pooled-baseline primary (REVERSE z=−4.86)	contemporary-academic	structural-academic	project	structural	word	universal	3	FALSE	structural-formal	REFUTED	MASTER §5 T2 primary reverse-sign
+R-PR-23	H-NEW-29 sub-Poisson absolute CV < 1 (wrong direction z=+94.89)	contemporary-academic	structural-academic	project	compositional	whole-corpus	universal	4	FALSE	structural-formal	REFUTED	MASTER §3c H-NEW-29 absolute pre-registered form
+R-PR-24	H-NEW-16 one-tailed palindrome enrichment prediction	contemporary-academic	structural-academic	project	letter-count	whole-corpus	universal	3	FALSE	structural-formal	REFUTED	MASTER §3c "one-tailed FAILS dramatically"
+R-PR-25	H-NEW-34 abjad-residue clustering (primary null-confirmed)	contemporary-academic	structural-academic	project	divisibility-miracle	verse	universal	4	TRUE	numerical-gematric	REFUTED	MASTER §3c task #68 "6 of 6 tests null"
+
+# ============================================================================
+# Corpus-level summary (authoritative for pilot-script label loading)
+# ============================================================================
+# CLASS-C classical (C-CL-01 to C-CL-49): 49 rows
+# CLASS-C project (C-PR-01 to C-PR-28): 28 rows
+# CLASS-R classical (R-CL-01 to R-CL-18): 18 rows
+# CLASS-R project (R-PR-01 to R-PR-25): 25 rows
+# Total: 120 rows (target distribution met exactly)
+#
+# Feature distribution pre-check:
+#   broad_hisab_claim TRUE: ~17 (concentrated in numerical-gematric rows)
+#   broad_hisab_claim FALSE: ~103
+#   substance_type structural-formal: ~85
+#   substance_type numerical-gematric: ~18
+#   substance_type semantic: ~17
+#   era classical-medieval: ~58
+#   era contemporary-academic: ~46
+#   era modern-numerology: ~9
+#   era modern-apologetic: ~7
+#
+# AMEND-4 substantive-test pre-registration (restated):
+#   Does substance_type=numerical-gematric predict CLASS-R (REFUTED)?
+#   Pilot coefficient for specificity = −1.14 (more specific → more likely REFUTED)
+#   Full-corpus L1 will fit on 16-dim feature vector; baseline chance rate = 64% (CLASS-C majority) → target mean_5fold_acc > 70% for PASS.
+#
+# Classical-scholar reliability note: ~30% of rows carry PENDING or SECONDARY-TRIANGULATED
+# verbatim-confidence tags on the chapter-number / page-range level, NOT on the empirical
+# verdict. The empirical verdict is drawn from finding files / MASTER ledger which are
+# computational results; those are independent of classical-citation verbatim status.
+# MW-6 nawʿ-verification tag discipline applied to all claim_source citations.
+#
+# Dispatched 2026-04-14 to computational-tester for task #28 H-META-1 primary run.

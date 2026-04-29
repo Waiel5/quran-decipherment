@@ -1,0 +1,366 @@
+{
+  "finding_id": "h-classic-47",
+  "pre_reg": "findings/phase-b-hypotheses/h-classic-47-prereg.md",
+  "pre_reg_compliance": "PRE-REG-STANDARD-04",
+  "rules_tuple": "(no-tashkeel, root-level via QAC, hafs-kufan, mashriqi)",
+  "seed": 20260414,
+  "priority_surahs": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "control_surahs": [
+    6,
+    7,
+    26,
+    37
+  ],
+  "stopword_roots": [
+    "Alh",
+    "Amn",
+    "Eml",
+    "Erf",
+    "kwn",
+    "llh",
+    "qwl",
+    "xlq"
+  ],
+  "n_perm": 10000,
+  "bonferroni_k": 6,
+  "alpha_bon": 0.0083,
+  "sided_test": "one-sided positive",
+  "priority_results": {
+    "2": {
+      "sid": 2,
+      "label": "priority",
+      "with_stopwords": {
+        "n_verses": 285,
+        "observed_dist1_jaccard": 0.07375302823020304,
+        "null_99pct": 0.05346073856303698,
+        "null_mean": 0.04713529079495869,
+        "null_sd": 0.002546488331592828,
+        "z_score": 10.452723110886966,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.07375302823020304,
+          "2": 0.06763335835131777,
+          "3-5": 0.06291744218613828,
+          "6-10": 0.053961893264043326,
+          "11+": 0.04617309012537197
+        }
+      },
+      "without_stopwords": {
+        "n_verses": 285,
+        "observed_dist1_jaccard": 0.045879511443221895,
+        "null_99pct": 0.02973379913408039,
+        "null_mean": 0.023933286057180942,
+        "null_sd": 0.002342974043618106,
+        "z_score": 9.366823950021567,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.045879511443221895,
+          "2": 0.0400379092705573,
+          "3-5": 0.035320600582036225,
+          "6-10": 0.029008974370457626,
+          "11+": 0.023185638366091145
+        }
+      }
+    },
+    "3": {
+      "sid": 3,
+      "label": "priority",
+      "with_stopwords": {
+        "n_verses": 199,
+        "observed_dist1_jaccard": 0.07304981684316966,
+        "null_99pct": 0.06181184190418531,
+        "null_mean": 0.053980576000788955,
+        "null_sd": 0.003242870721108187,
+        "z_score": 5.880358016820408,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.07304981684316966,
+          "2": 0.06592203167453323,
+          "3-5": 0.060080154770392837,
+          "6-10": 0.05689309498112574,
+          "11+": 0.053289405977711916
+        }
+      },
+      "without_stopwords": {
+        "n_verses": 199,
+        "observed_dist1_jaccard": 0.04873966683780149,
+        "null_99pct": 0.03241210923632979,
+        "null_mean": 0.0248865577901025,
+        "null_sd": 0.0030473428790790368,
+        "z_score": 7.827510718094131,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.04873966683780149,
+          "2": 0.03440845266106299,
+          "3-5": 0.030389127614205865,
+          "6-10": 0.026175400075872886,
+          "11+": 0.024254870598683705
+        }
+      }
+    },
+    "4": {
+      "sid": 4,
+      "label": "priority",
+      "with_stopwords": {
+        "n_verses": 176,
+        "observed_dist1_jaccard": 0.09384571285813824,
+        "null_99pct": 0.07208374233930416,
+        "null_mean": 0.06353973164835014,
+        "null_sd": 0.003355578050856704,
+        "z_score": 9.031523257833552,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.09384571285813824,
+          "2": 0.07453006048466619,
+          "3-5": 0.07053784548779587,
+          "6-10": 0.06869628855969531,
+          "11+": 0.06239400422256016
+        }
+      },
+      "without_stopwords": {
+        "n_verses": 176,
+        "observed_dist1_jaccard": 0.050347434856165434,
+        "null_99pct": 0.03176384440130722,
+        "null_mean": 0.023983003191697688,
+        "null_sd": 0.0030841601949953244,
+        "z_score": 8.548334067487605,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.050347434856165434,
+          "2": 0.0305524234487936,
+          "3-5": 0.028924345337100792,
+          "6-10": 0.028853562406389147,
+          "11+": 0.0230363572778478
+        }
+      }
+    },
+    "5": {
+      "sid": 5,
+      "label": "priority",
+      "with_stopwords": {
+        "n_verses": 120,
+        "observed_dist1_jaccard": 0.09507090741200698,
+        "null_99pct": 0.07327289396964805,
+        "null_mean": 0.06216689885083995,
+        "null_sd": 0.004250321468313389,
+        "z_score": 7.7415340948843525,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.09507090741200698,
+          "2": 0.07402865987296478,
+          "3-5": 0.07447897204107401,
+          "6-10": 0.06316366866064548,
+          "11+": 0.060499744487970464
+        }
+      },
+      "without_stopwords": {
+        "n_verses": 120,
+        "observed_dist1_jaccard": 0.05556943955854877,
+        "null_99pct": 0.038612736865418135,
+        "null_mean": 0.02828671415609846,
+        "null_sd": 0.003907720190731121,
+        "z_score": 6.98174998997198,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.05556943955854877,
+          "2": 0.03623204378002677,
+          "3-5": 0.03695855225316316,
+          "6-10": 0.029642295177579162,
+          "11+": 0.026971642717278536
+        }
+      }
+    }
+  },
+  "control_results": {
+    "6": {
+      "sid": 6,
+      "label": "control",
+      "with_stopwords": {
+        "n_verses": 165,
+        "observed_dist1_jaccard": 0.06956938387292548,
+        "null_99pct": 0.05569309243723489,
+        "null_mean": 0.04727028140475835,
+        "null_sd": 0.003493467301461947,
+        "z_score": 6.383086070058648,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.06956938387292548,
+          "2": 0.06307703090746611,
+          "3-5": 0.053945002553660436,
+          "6-10": 0.05080436070322325,
+          "11+": 0.04622083623496245
+        }
+      },
+      "without_stopwords": {
+        "n_verses": 165,
+        "observed_dist1_jaccard": 0.05211740639081689,
+        "null_99pct": 0.03806579077215139,
+        "null_mean": 0.03004263828481736,
+        "null_sd": 0.0033204390718005097,
+        "z_score": 6.6481473168635725,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.05211740639081689,
+          "2": 0.043754972040467376,
+          "3-5": 0.037017428927988004,
+          "6-10": 0.033201202590047836,
+          "11+": 0.029007718538527762
+        }
+      }
+    },
+    "7": {
+      "sid": 7,
+      "label": "control",
+      "with_stopwords": {
+        "n_verses": 205,
+        "observed_dist1_jaccard": 0.07146202571059253,
+        "null_99pct": 0.048767573906841624,
+        "null_mean": 0.04043666157078106,
+        "null_sd": 0.0033133188506253453,
+        "z_score": 9.363832923582299,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.07146202571059253,
+          "2": 0.06105130749220635,
+          "3-5": 0.05404723864874529,
+          "6-10": 0.04989630057534051,
+          "11+": 0.038936992908747386
+        }
+      },
+      "without_stopwords": {
+        "n_verses": 205,
+        "observed_dist1_jaccard": 0.05452550086008634,
+        "null_99pct": 0.031333715034102025,
+        "null_mean": 0.02362088165877827,
+        "null_sd": 0.003010727380790512,
+        "z_score": 10.264834803207455,
+        "empirical_p_one_sided": 0.0,
+        "passes": true,
+        "bucket_means": {
+          "1": 0.05452550086008634,
+          "2": 0.03835425457141169,
+          "3-5": 0.036353715554820636,
+          "6-10": 0.03163757781794421,
+          "11+": 0.022306198676937086
+        }
+      }
+    },
+    "26": {
+      "sid": 26,
+      "label": "control",
+      "with_stopwords": {
+        "n_verses": 226,
+        "observed_dist1_jaccard": 0.04073809523809524,
+        "null_99pct": 0.04581630714964048,
+        "null_mean": 0.030265890066312924,
+        "null_sd": 0.00583047024909116,
+        "z_score": 1.796116732336418,
+        "empirical_p_one_sided": 0.046,
+        "passes": false,
+        "bucket_means": {
+          "1": 0.04073809523809524,
+          "2": 0.04397980882943289,
+          "3-5": 0.03751059584392918,
+          "6-10": 0.02827991527870103,
+          "11+": 0.02988126191838062
+        }
+      },
+      "without_stopwords": {
+        "n_verses": 226,
+        "observed_dist1_jaccard": 0.027456790123456788,
+        "null_99pct": 0.033478114478114475,
+        "null_mean": 0.01862321386021386,
+        "null_sd": 0.005552009752538042,
+        "z_score": 1.5910592122437737,
+        "empirical_p_one_sided": 0.0678,
+        "passes": false,
+        "bucket_means": {
+          "1": 0.027456790123456788,
+          "2": 0.037916312358276645,
+          "3-5": 0.021116371116371116,
+          "6-10": 0.014635586126411814,
+          "11+": 0.01844008393749996
+        }
+      }
+    },
+    "37": {
+      "sid": 37,
+      "label": "control",
+      "with_stopwords": {
+        "n_verses": 182,
+        "observed_dist1_jaccard": 0.016741208453915635,
+        "null_99pct": 0.028242567745330176,
+        "null_mean": 0.014366251278882644,
+        "null_sd": 0.005101203520364616,
+        "z_score": 0.465568010676672,
+        "empirical_p_one_sided": 0.292,
+        "passes": false,
+        "bucket_means": {
+          "1": 0.016741208453915635,
+          "2": 0.020648148148148148,
+          "3-5": 0.01899761152900611,
+          "6-10": 0.02214352790924799,
+          "11+": 0.013666291493697821
+        }
+      },
+      "without_stopwords": {
+        "n_verses": 182,
+        "observed_dist1_jaccard": 0.010880908532842234,
+        "null_99pct": 0.02372621240024555,
+        "null_mean": 0.009776594279841693,
+        "null_sd": 0.005075253663213673,
+        "z_score": 0.21758799190763684,
+        "empirical_p_one_sided": 0.3742,
+        "passes": false,
+        "bucket_means": {
+          "1": 0.010880908532842234,
+          "2": 0.0073280423280423276,
+          "3-5": 0.01260366506153023,
+          "6-10": 0.01735540959678891,
+          "11+": 0.00927891000835298
+        }
+      }
+    }
+  },
+  "pass_counts": {
+    "priority_with_stopwords": 4,
+    "priority_without_stopwords": 4,
+    "control_with_stopwords": 2,
+    "control_without_stopwords": 2
+  },
+  "verdict_routing": {
+    "primary_pass_with_stopwords": true,
+    "primary_pass_without_stopwords": true,
+    "primary_pass_both": true,
+    "control_clean_with_stopwords": false,
+    "control_clean_without_stopwords": false,
+    "control_clean_both": false
+  },
+  "final_verdict": "PARTIAL \u2014 verse-pair effect is real but generalizes beyond priority surahs (not specifically Medinan-Biq\u0101\u02bf\u012b)",
+  "no_fork_protections_honored": [
+    "priority surahs LOCKED to Q 2, 3, 4, 5",
+    "control surahs LOCKED to Q 6, 7, 26, 37",
+    "distance-1 LOCKED as primary scale",
+    "stopword list LOCKED to ['Alh', 'Amn', 'Eml', 'Erf', 'kwn', 'llh', 'qwl', 'xlq']",
+    "permutation null seed 20260414, 10000 within-surah perms per surah",
+    "pass rule LOCKED to >= 3/4 priority surahs (both stopword conditions)",
+    "root extraction LOCKED to QAC v0.4 STEM-only"
+  ],
+  "data_reuse_disclosed": "Reuses QAC morphology loader pattern (LOC_RE, ROOT_RE, STEM filter) from scripts/h_new_29_root_cv.py. Reuses data/morphology/quranic-corpus-morphology-0.4.txt and quran-text/quran-no-tashkeel.json (verse count sanity check only). No reuse of T-002 / task #21 (different scale: verse-pair-within-surah, not surah-pair-cross-surah)."
+}

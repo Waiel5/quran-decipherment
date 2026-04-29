@@ -1,0 +1,85 @@
+{
+  "seed": 20260414,
+  "hypothesis": "H-NEW-35 verse-length autocorrelation \u2014 al-Sakk\u0101k\u012b \u012bq\u0101\u02bf",
+  "rules_tuple": "no-tashkeel, hafs-kufan, character-length-cleaned",
+  "lags": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "quran_weighted_mean_rho": {
+    "1": 0.13676572470873846,
+    "2": 0.09595267424624218,
+    "3": 0.06761100871284101,
+    "4": 0.0185487315298813,
+    "5": 0.0344744250629723
+  },
+  "null_stats_per_lag": {
+    "1": {
+      "null_mean": -0.01861155331360385,
+      "null_sd": 0.011836098734825619,
+      "observed": 0.13676572470873846,
+      "z": 13.127406378013074,
+      "p_empirical": 0.0
+    },
+    "2": {
+      "null_mean": -0.017101538238403737,
+      "null_sd": 0.012005503219536478,
+      "observed": 0.09595267424624218,
+      "z": 9.416865783741038,
+      "p_empirical": 0.0
+    },
+    "3": {
+      "null_mean": -0.015585651074898786,
+      "null_sd": 0.012398083747516709,
+      "observed": 0.06761100871284101,
+      "z": 6.710445056027613,
+      "p_empirical": 0.0
+    },
+    "4": {
+      "null_mean": -0.01453727354307814,
+      "null_sd": 0.012218031294790457,
+      "observed": 0.0185487315298813,
+      "z": 2.70796532392798,
+      "p_empirical": 0.001
+    },
+    "5": {
+      "null_mean": -0.01389644885744878,
+      "null_sd": 0.012574117607741955,
+      "observed": 0.0344744250629723,
+      "z": 3.8468603069720664,
+      "p_empirical": 0.0
+    }
+  },
+  "baseline_rhos": {
+    "bukhari": {
+      "1": -0.15206174929800503,
+      "2": 0.11031639552474012,
+      "3": 0.007465171443807538,
+      "4": 0.012898269201983012,
+      "5": 0.011327420293417243
+    },
+    "jahiz": {
+      "1": 0.14561300695955098,
+      "2": 0.1794069964724098,
+      "3": 0.1725199579148441,
+      "4": 0.15279435097515973,
+      "5": 0.1569303742369512
+    }
+  },
+  "N_quran_pairs": 6122,
+  "N_bukhari_sentences": 16698,
+  "N_jahiz_sentences": 48936,
+  "bukhari_mean_sent_len": 118.05156306144448,
+  "jahiz_mean_sent_len": 29.066004577407227,
+  "fisher_z_diff_vs_bukhari_rho1": 19.464390173063087,
+  "fisher_z_diff_vs_jahiz_rho1": -0.6657512380946587,
+  "sub_a_pass": true,
+  "sub_b_strict_pass": false,
+  "sub_b_loose_pass": true,
+  "sub_c_pass": false,
+  "joint_strict_pass": false,
+  "joint_loose_pass": false
+}

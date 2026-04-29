@@ -1,0 +1,568 @@
+{
+  "finding_id": "H-NEW-206",
+  "title": "Semi-supervised surah taxonomy",
+  "seed": 20260419,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "n_features": 21,
+  "feature_names": [
+    "alpha",
+    "beta",
+    "dispersion",
+    "PC1",
+    "PC2",
+    "PC3",
+    "mean_verse_length",
+    "allah_density",
+    "qul_density",
+    "prophet_density",
+    "legal_density",
+    "eschat_density",
+    "book_ref_density",
+    "divine_name_density",
+    "loanword_density",
+    "mfdfa_width",
+    "lz_norm_log",
+    "inclusio",
+    "surah_length",
+    "muq_cardinality",
+    "noldeke_order"
+  ],
+  "n_surahs": 114,
+  "pca_explained_ratio_pc123": [
+    0.11520635236453942,
+    0.04848730842229963,
+    0.03571801372065026
+  ],
+  "km_silhouette_by_k": {
+    "3": 0.21440003196019045,
+    "4": 0.1327378517037492,
+    "5": 0.18433176707095192,
+    "6": 0.1664107773029065,
+    "7": 0.14765670308272527,
+    "8": 0.16148157093856175,
+    "10": 0.1691596242626533
+  },
+  "km_calinski_harabasz_by_k": {
+    "3": 27.891289433717976,
+    "4": 21.756531834493604,
+    "5": 18.95583713042166,
+    "6": 17.41275749315902,
+    "7": 16.552068454241006,
+    "8": 15.66800008480443,
+    "10": 14.998496626439385
+  },
+  "hdb_summary": {
+    "3": {
+      "n_clusters_found": 7,
+      "n_noise": 69,
+      "silhouette": 0.30302054029028475
+    },
+    "5": {
+      "n_clusters_found": 2,
+      "n_noise": 66,
+      "silhouette": 0.4113399099461377
+    },
+    "7": {
+      "n_clusters_found": 0,
+      "n_noise": 114,
+      "silhouette": NaN
+    }
+  },
+  "best_k": 3,
+  "best_silhouette": 0.21440003196019045,
+  "inference_a_silhouette_gt_0p2": true,
+  "inference_b_cluster_muq_chi2": {
+    "chi2": 53.729274507131464,
+    "p": 2.1519703457804935e-12,
+    "dof": 2,
+    "alpha_bon": 0.025,
+    "pass": true,
+    "contingency": [
+      [
+        22,
+        1
+      ],
+      [
+        11,
+        25
+      ],
+      [
+        52,
+        3
+      ]
+    ]
+  },
+  "cluster_summary": {
+    "0": {
+      "size": 23,
+      "members": [
+        4,
+        5,
+        8,
+        9,
+        22,
+        24,
+        31,
+        33,
+        35,
+        47,
+        48,
+        49,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        98
+      ],
+      "means": {
+        "alpha": 0.694114347826087,
+        "beta": 0.856219924066323,
+        "dispersion": 0.3263348260869566,
+        "PC1": 0.2017039945108774,
+        "PC2": 0.2141070799945725,
+        "PC3": 0.048148338165708376,
+        "mean_verse_length": 19.939968250969265,
+        "allah_density": 118.70613734220554,
+        "qul_density": 4.615654833873918,
+        "prophet_density": 3.7770517130242562,
+        "legal_density": 25.0639796358424,
+        "eschat_density": 19.913653007781512,
+        "book_ref_density": 8.033015494576945,
+        "divine_name_density": 19.209290634551564,
+        "loanword_density": 1.0541587036152253,
+        "mfdfa_width": 0.9490878901663432,
+        "lz_norm_log": 2.7091584015605346,
+        "inclusio": 0.17391304347826086,
+        "surah_length": 45.78260869565217,
+        "muq_cardinality": 0.13043478260869565,
+        "noldeke_order": 101.26086956521739
+      }
+    },
+    "1": {
+      "size": 36,
+      "members": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        46,
+        67
+      ],
+      "means": {
+        "alpha": 0.7801628611111112,
+        "beta": 0.8393639050992527,
+        "dispersion": 0.2920431388888889,
+        "PC1": 0.2300159315569615,
+        "PC2": -0.10726996424926107,
+        "PC3": -0.009583501899257624,
+        "mean_verse_length": 14.265690084371052,
+        "allah_density": 33.54315503457963,
+        "qul_density": 8.196620550233053,
+        "prophet_density": 6.996493560753766,
+        "legal_density": 11.233352837493896,
+        "eschat_density": 19.44278850579786,
+        "book_ref_density": 7.935702406957763,
+        "divine_name_density": 12.892575476214496,
+        "loanword_density": 1.950818201973199,
+        "mfdfa_width": 1.006372145355005,
+        "lz_norm_log": 2.7589022090616293,
+        "inclusio": 0.05555555555555555,
+        "surah_length": 103.19444444444444,
+        "muq_cardinality": 1.9722222222222223,
+        "noldeke_order": 72.72222222222223
+      }
+    },
+    "2": {
+      "size": 55,
+      "members": [
+        1,
+        44,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "means": {
+        "alpha": 0.5772799454545454,
+        "beta": 0.9164417870851562,
+        "dispersion": 0.3277731636363636,
+        "PC1": -0.23490482563274187,
+        "PC2": -0.01932262048912316,
+        "PC3": -0.013861921989781993,
+        "mean_verse_length": 4.8491577566597055,
+        "allah_density": 6.751891175415707,
+        "qul_density": 1.844488585948213,
+        "prophet_density": 0.6903251332074889,
+        "legal_density": 5.313478633933339,
+        "eschat_density": 5.9103993143324205,
+        "book_ref_density": 2.2709738686842496,
+        "divine_name_density": 2.97862224418888,
+        "loanword_density": 0.6866607968302884,
+        "mfdfa_width": 0.8573403957084893,
+        "lz_norm_log": 2.924241193909436,
+        "inclusio": 0.01818181818181818,
+        "surah_length": 26.69090909090909,
+        "muq_cardinality": 0.07272727272727272,
+        "noldeke_order": 29.236363636363638
+      }
+    }
+  },
+  "cluster_names": {
+    "0": {
+      "feature_tags": [
+        "long-verse",
+        "legal-heavy",
+        "eschatology-heavy"
+      ],
+      "classical_overlaps": {
+        "ṭiwāl": {
+          "n_in_cluster_from_target": 3,
+          "n_in_target": 7,
+          "recall": 0.42857142857142855,
+          "precision": 0.13043478260869565
+        },
+        "mi'ūn": {
+          "n_in_cluster_from_target": 0,
+          "n_in_target": 8,
+          "recall": 0.0,
+          "precision": 0.0
+        },
+        "mathānī": {
+          "n_in_cluster_from_target": 8,
+          "n_in_target": 32,
+          "recall": 0.25,
+          "precision": 0.34782608695652173
+        },
+        "mufaṣṣal": {
+          "n_in_cluster_from_target": 12,
+          "n_in_target": 66,
+          "recall": 0.18181818181818182,
+          "precision": 0.5217391304347826
+        },
+        "ḥawāmīm": {
+          "n_in_cluster_from_target": 0,
+          "n_in_target": 7,
+          "recall": 0.0,
+          "precision": 0.0
+        },
+        "musabbiḥāt": {
+          "n_in_cluster_from_target": 5,
+          "n_in_target": 7,
+          "recall": 0.7142857142857143,
+          "precision": 0.21739130434782608
+        },
+        "al-R-cluster": {
+          "n_in_cluster_from_target": 0,
+          "n_in_target": 5,
+          "recall": 0.0,
+          "precision": 0.0
+        }
+      },
+      "best_classical_label": "musabbiḥāt",
+      "best_classical_label_f1": 0.3333333333333333
+    },
+    "1": {
+      "feature_tags": [
+        "prophet-narrative-heavy",
+        "muq-rich"
+      ],
+      "classical_overlaps": {
+        "ṭiwāl": {
+          "n_in_cluster_from_target": 4,
+          "n_in_target": 7,
+          "recall": 0.5714285714285714,
+          "precision": 0.1111111111111111
+        },
+        "mi'ūn": {
+          "n_in_cluster_from_target": 8,
+          "n_in_target": 8,
+          "recall": 1.0,
+          "precision": 0.2222222222222222
+        },
+        "mathānī": {
+          "n_in_cluster_from_target": 23,
+          "n_in_target": 32,
+          "recall": 0.71875,
+          "precision": 0.6388888888888888
+        },
+        "mufaṣṣal": {
+          "n_in_cluster_from_target": 1,
+          "n_in_target": 66,
+          "recall": 0.015151515151515152,
+          "precision": 0.027777777777777776
+        },
+        "ḥawāmīm": {
+          "n_in_cluster_from_target": 6,
+          "n_in_target": 7,
+          "recall": 0.8571428571428571,
+          "precision": 0.16666666666666666
+        },
+        "musabbiḥāt": {
+          "n_in_cluster_from_target": 1,
+          "n_in_target": 7,
+          "recall": 0.14285714285714285,
+          "precision": 0.027777777777777776
+        },
+        "al-R-cluster": {
+          "n_in_cluster_from_target": 5,
+          "n_in_target": 5,
+          "recall": 1.0,
+          "precision": 0.1388888888888889
+        }
+      },
+      "best_classical_label": "mathānī",
+      "best_classical_label_f1": 0.676470588235294
+    },
+    "2": {
+      "feature_tags": [
+        "short-verse"
+      ],
+      "classical_overlaps": {
+        "ṭiwāl": {
+          "n_in_cluster_from_target": 0,
+          "n_in_target": 7,
+          "recall": 0.0,
+          "precision": 0.0
+        },
+        "mi'ūn": {
+          "n_in_cluster_from_target": 0,
+          "n_in_target": 8,
+          "recall": 0.0,
+          "precision": 0.0
+        },
+        "mathānī": {
+          "n_in_cluster_from_target": 1,
+          "n_in_target": 32,
+          "recall": 0.03125,
+          "precision": 0.01818181818181818
+        },
+        "mufaṣṣal": {
+          "n_in_cluster_from_target": 53,
+          "n_in_target": 66,
+          "recall": 0.803030303030303,
+          "precision": 0.9636363636363636
+        },
+        "ḥawāmīm": {
+          "n_in_cluster_from_target": 1,
+          "n_in_target": 7,
+          "recall": 0.14285714285714285,
+          "precision": 0.01818181818181818
+        },
+        "musabbiḥāt": {
+          "n_in_cluster_from_target": 1,
+          "n_in_target": 7,
+          "recall": 0.14285714285714285,
+          "precision": 0.01818181818181818
+        },
+        "al-R-cluster": {
+          "n_in_cluster_from_target": 0,
+          "n_in_target": 5,
+          "recall": 0.0,
+          "precision": 0.0
+        }
+      },
+      "best_classical_label": "mufaṣṣal",
+      "best_classical_label_f1": 0.8760330578512396
+    }
+  },
+  "hub_cluster_report": {
+    "2": {
+      "name": "Al-Baqarah",
+      "cluster_best_k": 1,
+      "is_primary_hub": true,
+      "labels_by_k": {
+        "3": 1,
+        "4": 3,
+        "5": 1,
+        "6": 0,
+        "7": 4,
+        "8": 7,
+        "10": 2
+      }
+    },
+    "3": {
+      "name": "Ali 'Imran",
+      "cluster_best_k": 1,
+      "is_primary_hub": true,
+      "labels_by_k": {
+        "3": 1,
+        "4": 3,
+        "5": 1,
+        "6": 0,
+        "7": 4,
+        "8": 7,
+        "10": 2
+      }
+    },
+    "59": {
+      "name": "Al-Hashr",
+      "cluster_best_k": 0,
+      "is_primary_hub": true,
+      "labels_by_k": {
+        "3": 0,
+        "4": 1,
+        "5": 3,
+        "6": 3,
+        "7": 2,
+        "8": 0,
+        "10": 5
+      }
+    },
+    "62": {
+      "name": "Al-Jumu'ah",
+      "cluster_best_k": 0,
+      "is_primary_hub": true,
+      "labels_by_k": {
+        "3": 0,
+        "4": 1,
+        "5": 3,
+        "6": 3,
+        "7": 2,
+        "8": 0,
+        "10": 5
+      }
+    },
+    "18": {
+      "name": "Al-Kahf",
+      "cluster_best_k": 1,
+      "is_primary_hub": false,
+      "labels_by_k": {
+        "3": 1,
+        "4": 0,
+        "5": 2,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "10": 6
+      }
+    },
+    "36": {
+      "name": "Ya-Sin",
+      "cluster_best_k": 1,
+      "is_primary_hub": false,
+      "labels_by_k": {
+        "3": 1,
+        "4": 0,
+        "5": 2,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "10": 6
+      }
+    },
+    "50": {
+      "name": "Qaf",
+      "cluster_best_k": 2,
+      "is_primary_hub": false,
+      "labels_by_k": {
+        "3": 2,
+        "4": 0,
+        "5": 2,
+        "6": 2,
+        "7": 0,
+        "8": 1,
+        "10": 0
+      }
+    },
+    "68": {
+      "name": "Al-Qalam",
+      "cluster_best_k": 2,
+      "is_primary_hub": false,
+      "labels_by_k": {
+        "3": 2,
+        "4": 2,
+        "5": 0,
+        "6": 1,
+        "7": 0,
+        "8": 2,
+        "10": 1
+      }
+    }
+  }
+}

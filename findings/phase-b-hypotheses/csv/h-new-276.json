@@ -1,0 +1,253 @@
+{
+  "id": "H-NEW-276",
+  "title": "Deep-null follow-up to H-NEW-263 hub existence",
+  "parent_hypothesis": "H-NEW-263",
+  "seed": 20260694,
+  "pre_reg_sha256": "49db16be65b240c87081a1b2cb84e7f66c1f54d8fdc02734a07fada91d2044f7",
+  "source_csv": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/divine-names-by-verse.csv",
+  "n_surahs": 114,
+  "n_attested_names": 58,
+  "n_perm": 10000,
+  "accepted_swaps_per_perm": 500,
+  "hub_threshold": 2,
+  "inherited_alpha_bon": 0.025,
+  "n_workers": 12,
+  "chunk_size": 50,
+  "observed": {
+    "q27_strength_ge2": 232,
+    "top_strength_ge2": [
+      {
+        "surah": 2,
+        "strength_ge2": 282
+      },
+      {
+        "surah": 42,
+        "strength_ge2": 241
+      },
+      {
+        "surah": 40,
+        "strength_ge2": 239
+      },
+      {
+        "surah": 5,
+        "strength_ge2": 239
+      },
+      {
+        "surah": 6,
+        "strength_ge2": 233
+      },
+      {
+        "surah": 27,
+        "strength_ge2": 232
+      },
+      {
+        "surah": 10,
+        "strength_ge2": 228
+      },
+      {
+        "surah": 3,
+        "strength_ge2": 225
+      },
+      {
+        "surah": 29,
+        "strength_ge2": 205
+      },
+      {
+        "surah": 30,
+        "strength_ge2": 204
+      }
+    ]
+  },
+  "hub_test_deep_null": {
+    "z_max_obs": 2.043819753429405,
+    "p_exist": 0.135986401359864,
+    "ge_max_count": 1359,
+    "mc_se_p_exist": 0.0034277412388489595,
+    "cell_b_pass_inherited_alpha_0_025": false,
+    "top_surah": 27,
+    "top_ranked_surahs": [
+      {
+        "surah": 27,
+        "strength_ge2_obs": 232,
+        "null_mean": 178.0261,
+        "null_sd": 26.40834638643406,
+        "z": 2.043819753429405,
+        "p_raw": 0.0044995500449955,
+        "p_adj_fwer": 0.135986401359864,
+        "ge_raw_count": 44,
+        "ge_adj_count": 1359
+      },
+      {
+        "surah": 45,
+        "strength_ge2_obs": 147,
+        "null_mean": 96.996,
+        "null_sd": 27.125787819646526,
+        "z": 1.8434118976549454,
+        "p_raw": 0.0173982601739826,
+        "p_adj_fwer": 0.511948805119488,
+        "ge_raw_count": 173,
+        "ge_adj_count": 5119
+      },
+      {
+        "surah": 41,
+        "strength_ge2_obs": 194,
+        "null_mean": 151.4634,
+        "null_sd": 26.70256472955941,
+        "z": 1.5929780689909723,
+        "p_raw": 0.035896410358964105,
+        "p_adj_fwer": 0.8895110488951105,
+        "ge_raw_count": 358,
+        "ge_adj_count": 8895
+      },
+      {
+        "surah": 29,
+        "strength_ge2_obs": 205,
+        "null_mean": 165.2729,
+        "null_sd": 26.529802272743506,
+        "z": 1.4974517937065552,
+        "p_raw": 0.04939506049395061,
+        "p_adj_fwer": 0.9593040695930407,
+        "ge_raw_count": 493,
+        "ge_adj_count": 9593
+      },
+      {
+        "surah": 30,
+        "strength_ge2_obs": 204,
+        "null_mean": 165.5212,
+        "null_sd": 26.2317891352481,
+        "z": 1.4668766892569822,
+        "p_raw": 0.055894410558944105,
+        "p_adj_fwer": 0.9714028597140286,
+        "ge_raw_count": 558,
+        "ge_adj_count": 9714
+      },
+      {
+        "surah": 2,
+        "strength_ge2_obs": 282,
+        "null_mean": 253.1893,
+        "null_sd": 22.531654023912793,
+        "z": 1.2786766550481943,
+        "p_raw": 0.0888911108889111,
+        "p_adj_fwer": 0.9987001299870013,
+        "ge_raw_count": 888,
+        "ge_adj_count": 9987
+      },
+      {
+        "surah": 48,
+        "strength_ge2_obs": 70,
+        "null_mean": 41.7602,
+        "null_sd": 23.910384074846284,
+        "z": 1.1810684392020394,
+        "p_raw": 0.13608639136086392,
+        "p_adj_fwer": 0.9997000299970003,
+        "ge_raw_count": 1360,
+        "ge_adj_count": 9997
+      },
+      {
+        "surah": 5,
+        "strength_ge2_obs": 239,
+        "null_mean": 211.7264,
+        "null_sd": 25.081819168578605,
+        "z": 1.0873852417438346,
+        "p_raw": 0.13858614138586142,
+        "p_adj_fwer": 1.0,
+        "ge_raw_count": 1385,
+        "ge_adj_count": 10000
+      },
+      {
+        "surah": 36,
+        "strength_ge2_obs": 163,
+        "null_mean": 134.8579,
+        "null_sd": 27.064906401202478,
+        "z": 1.039800381454475,
+        "p_raw": 0.1563843615638436,
+        "p_adj_fwer": 1.0,
+        "ge_raw_count": 1563,
+        "ge_adj_count": 10000
+      },
+      {
+        "surah": 43,
+        "strength_ge2_obs": 141,
+        "null_mean": 116.1921,
+        "null_sd": 27.72507647557641,
+        "z": 0.894782022399606,
+        "p_raw": 0.1937806219378062,
+        "p_adj_fwer": 1.0,
+        "ge_raw_count": 1937,
+        "ge_adj_count": 10000
+      },
+      {
+        "surah": 60,
+        "strength_ge2_obs": 175,
+        "null_mean": 150.8838,
+        "null_sd": 27.189855210770027,
+        "z": 0.8869558080782811,
+        "p_raw": 0.20167983201679832,
+        "p_adj_fwer": 1.0,
+        "ge_raw_count": 2016,
+        "ge_adj_count": 10000
+      },
+      {
+        "surah": 61,
+        "strength_ge2_obs": 118,
+        "null_mean": 95.4493,
+        "null_sd": 27.277353884009568,
+        "z": 0.8267187534352295,
+        "p_raw": 0.22287771222877711,
+        "p_adj_fwer": 1.0,
+        "ge_raw_count": 2228,
+        "ge_adj_count": 10000
+      },
+      {
+        "surah": 32,
+        "strength_ge2_obs": 90,
+        "null_mean": 69.7451,
+        "null_sd": 26.28740437458429,
+        "z": 0.7705173059833648,
+        "p_raw": 0.23427657234276572,
+        "p_adj_fwer": 1.0,
+        "ge_raw_count": 2342,
+        "ge_adj_count": 10000
+      },
+      {
+        "surah": 8,
+        "strength_ge2_obs": 136,
+        "null_mean": 115.9271,
+        "null_sd": 26.712209564241935,
+        "z": 0.7514503789634241,
+        "p_raw": 0.25047495250474955,
+        "p_adj_fwer": 1.0,
+        "ge_raw_count": 2504,
+        "ge_adj_count": 10000
+      },
+      {
+        "surah": 10,
+        "strength_ge2_obs": 228,
+        "null_mean": 211.9213,
+        "null_sd": 25.493134297289338,
+        "z": 0.630707068518822,
+        "p_raw": 0.29627037296270375,
+        "p_adj_fwer": 1.0,
+        "ge_raw_count": 2962,
+        "ge_adj_count": 10000
+      }
+    ],
+    "q27": {
+      "surah": 27,
+      "strength_ge2_obs": 232,
+      "null_mean": 178.0261,
+      "null_sd": 26.40834638643406,
+      "z": 2.043819753429405,
+      "p_raw": 0.0044995500449955,
+      "p_adj_fwer": 0.135986401359864,
+      "ge_raw_count": 44,
+      "ge_adj_count": 1359,
+      "is_top_rank": true,
+      "rank": 1,
+      "passes_inherited_alpha_0_025": false,
+      "mc_se_p_raw": 0.0006692760338147543,
+      "mc_se_p_adj": 0.0034277412388489595
+    }
+  },
+  "verdict": "NO-HUB-SURVIVES-DEEP-NULL"
+}

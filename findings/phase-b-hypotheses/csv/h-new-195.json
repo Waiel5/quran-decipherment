@@ -1,0 +1,242 @@
+{
+  "finding_id": "h-new-195",
+  "title": "Per-surah letter-bigram entropy — Quran vs Bukhārī, muq-residual, correlates",
+  "pre_reg_sha256": "7fda988730121eba5fe7dc35bed1a3f8e334459e3641232108601e570fdb1786",
+  "seed": 20260419,
+  "date": "2026-04-17",
+  "rules_tuple": "(no-tashkeel, raw Arabic letters U+0621..U+064A, cross-verse bigrams, Hafs-Kūfan, Bukhārī top-114 longest bab-segments)",
+  "bonferroni_k": 2,
+  "alpha_bonferroni": 0.025,
+  "corpus_stats": {
+    "quran_n_letters": 330709,
+    "quran_mean_H_cond": 3.164283,
+    "quran_sd_H_cond": 0.743409,
+    "quran_min_H_cond": 1.110219,
+    "quran_max_H_cond": 3.925502,
+    "bukhari_n_segments_total": 4079,
+    "bukhari_n_segments_used": 114,
+    "bukhari_min_seg_letters": 1855,
+    "bukhari_max_seg_letters": 19329,
+    "bukhari_mean_H_cond": 3.617899,
+    "bukhari_sd_H_cond": 0.133232
+  },
+  "length_regression": {
+    "slope": 1.049034,
+    "intercept": -0.054183,
+    "r2": 0.885481,
+    "formula": "H_cond = intercept + slope * log10(N_bigrams)"
+  },
+  "top5_lowest_H_cond_raw": [
+    {
+      "sid": 108,
+      "name": "Al-Kawthar",
+      "H_cond": 1.110219,
+      "residual": -0.538442,
+      "n_letters": 43
+    },
+    {
+      "sid": 112,
+      "name": "Al-Ikhlas",
+      "H_cond": 1.268794,
+      "residual": -0.421312,
+      "n_letters": 47
+    },
+    {
+      "sid": 114,
+      "name": "An-Nas",
+      "H_cond": 1.304337,
+      "residual": -0.632155,
+      "n_letters": 80
+    },
+    {
+      "sid": 113,
+      "name": "Al-Falaq",
+      "H_cond": 1.419266,
+      "residual": -0.474955,
+      "n_letters": 73
+    },
+    {
+      "sid": 109,
+      "name": "Al-Kafirun",
+      "H_cond": 1.517643,
+      "residual": -0.517037,
+      "n_letters": 99
+    }
+  ],
+  "top5_highest_H_cond_raw": [
+    {
+      "sid": 18,
+      "name": "Al-Kahf",
+      "H_cond": 3.925502,
+      "residual": -0.023751,
+      "n_letters": 6552
+    },
+    {
+      "sid": 17,
+      "name": "Al-Isra",
+      "H_cond": 3.919681,
+      "residual": -0.035856,
+      "n_letters": 6643
+    },
+    {
+      "sid": 20,
+      "name": "Taha",
+      "H_cond": 3.890888,
+      "residual": 0.029832,
+      "n_letters": 5399
+    },
+    {
+      "sid": 7,
+      "name": "Al-A'raf",
+      "H_cond": 3.881057,
+      "residual": -0.428098,
+      "n_letters": 14435
+    },
+    {
+      "sid": 12,
+      "name": "Yusuf",
+      "H_cond": 3.879383,
+      "residual": -0.119565,
+      "n_letters": 7307
+    }
+  ],
+  "top5_lowest_residual": [
+    {
+      "sid": 2,
+      "name": "Al-Baqarah",
+      "H_cond": 3.865227,
+      "residual": -0.716371,
+      "n_letters": 26249
+    },
+    {
+      "sid": 114,
+      "name": "An-Nas",
+      "H_cond": 1.304337,
+      "residual": -0.632155,
+      "n_letters": 80
+    },
+    {
+      "sid": 4,
+      "name": "An-Nisa",
+      "H_cond": 3.807917,
+      "residual": -0.557493,
+      "n_letters": 16332
+    },
+    {
+      "sid": 108,
+      "name": "Al-Kawthar",
+      "H_cond": 1.110219,
+      "residual": -0.538442,
+      "n_letters": 43
+    },
+    {
+      "sid": 3,
+      "name": "Ali 'Imran",
+      "H_cond": 3.803415,
+      "residual": -0.522777,
+      "n_letters": 14985
+    }
+  ],
+  "top5_highest_residual": [
+    {
+      "sid": 74,
+      "name": "Al-Muddaththir",
+      "H_cond": 3.483538,
+      "residual": 0.375387,
+      "n_letters": 1035
+    },
+    {
+      "sid": 84,
+      "name": "Al-Inshiqaq",
+      "H_cond": 3.096002,
+      "residual": 0.372991,
+      "n_letters": 445
+    },
+    {
+      "sid": 80,
+      "name": "'Abasa",
+      "H_cond": 3.179751,
+      "residual": 0.358374,
+      "n_letters": 552
+    },
+    {
+      "sid": 50,
+      "name": "Qaf",
+      "H_cond": 3.62732,
+      "residual": 0.347857,
+      "n_letters": 1507
+    },
+    {
+      "sid": 68,
+      "name": "Al-Qalam",
+      "H_cond": 3.54955,
+      "residual": 0.341326,
+      "n_letters": 1289
+    }
+  ],
+  "primary_quran_vs_bukhari": {
+    "quran_mean": 3.164283,
+    "bukhari_mean": 3.617899,
+    "delta": -0.453616,
+    "welch_t": -6.412803,
+    "welch_df": 120.25144,
+    "p_welch_twosided": 0.0,
+    "pass_alpha_bon_025": true,
+    "mwu_z": -3.9558,
+    "p_mwu_twosided": 7.6e-05,
+    "paired_wilcoxon_z_length_sorted": -6.838056,
+    "p_paired_wilcoxon_twosided": 0.0
+  },
+  "secondary_muq_vs_nonmuq_residual": {
+    "mean_muq": -0.008645,
+    "mean_nonmuq": 0.086077,
+    "delta": -0.094721,
+    "n_muq": 29,
+    "n_nonmuq": 64,
+    "mwu_z": -2.139722,
+    "p_mwu_twosided": 0.032377,
+    "pass_alpha_bon_025": false
+  },
+  "descriptive_correlations": {
+    "dispersion_h163": {
+      "rho": 0.696145,
+      "p": 0.0,
+      "n": 93
+    },
+    "alpha_h172": {
+      "rho": -0.739619,
+      "p": 0.0,
+      "n": 93
+    },
+    "beta_h159": {
+      "rho": 0.399734,
+      "p": 7.2e-05,
+      "n": 93
+    },
+    "noldeke": {
+      "rho": -0.49242,
+      "p": 1e-06,
+      "n": 93
+    },
+    "muq_vs_nonmuq": {
+      "mean_muq_residual": -0.008645,
+      "mean_nonmuq_residual": 0.086077,
+      "n_muq": 29,
+      "n_nonmuq": 64,
+      "mwu_z": -2.139722,
+      "p": 0.032377
+    }
+  },
+  "strongest_continuous_correlate": {
+    "covariate": "alpha_h172",
+    "abs_rho": 0.739619
+  },
+  "mw5_shuffle_control": {
+    "mean_shuffled_H_cond": 3.589585,
+    "mean_unshuffled_H_cond": 3.164283,
+    "delta_shuf_minus_unshuf": 0.425302,
+    "threshold_bits": 0.1,
+    "pass": true
+  },
+  "verdict": "PARTIAL"
+}

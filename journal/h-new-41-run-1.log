@@ -1,0 +1,16 @@
+[h-new-41] seed=20260415  N_NULL=10000  alpha_per_cell=1.389e-03
+[SHA] QAC: a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46 (expected a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46) -> True
+[SHA] Mut: d1bbed14b25111436af4149bacb5ff7cf3f400979a16e13cc45bf0d9a7ca89b9 (expected d1bbed14b25111436af4149bacb5ff7cf3f400979a16e13cc45bf0d9a7ca89b9) -> True
+[step1] QAC Q roots (canonicalized triliterals): 1602
+[step2] Mutanabbī candidate roots minfreq>=2: 1098
+[step2] Mutanabbī-only roots (not in Q): 611
+[step2] |Q|=1602, |M_only|=611, |C|=2213
+[subA] Q / C coverage = 0.7239
+[feat] C_feats shape=(2213, 12)
+[feat] C\M shape=(1115, 12)
+[null Q] drawing 10000 size-1602 uniform subsets from |C|=2213 ...
+[null M-LOO] drawing 10000 size-1098 uniform subsets from |C\M|=1115 ...
+[MW-5 41-A] posctrl cells failing (|z|>=2): 11/12, worst |z_M|=71.691
+[verdict raw] Q significant cells = 1/12 at alpha=1.389e-03
+[verdict] >>> EXPLORATORY (partial-posctrl downgrade) <<<
+[out] wrote /Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-41.json

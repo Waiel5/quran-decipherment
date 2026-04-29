@@ -1,0 +1,318 @@
+{
+  "id": "H-NEW-234",
+  "seed": 20260419,
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "q55_profile": [
+    {
+      "principle": "M1",
+      "metric": "mushaf_position_is_structural_hinge",
+      "q55_value": 1,
+      "percentile": NaN,
+      "extremity": 0.0,
+      "kind": "boolean",
+      "note": "hinge window Q49–Q57 per CF-018; Q55 ∈ window"
+    },
+    {
+      "principle": "M1",
+      "metric": "mushaf_minus_noldeke",
+      "q55_value": 12.0,
+      "percentile": 58.4070796460177,
+      "extremity": 41.5929203539823,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M2",
+      "metric": "is_muq",
+      "q55_value": 0,
+      "percentile": 74.33628318584071,
+      "extremity": 25.663716814159287,
+      "kind": "boolean",
+      "note": "25.7% of non-Q55 surahs are muq; Q55 is non-muq"
+    },
+    {
+      "principle": "M2",
+      "metric": "noldeke_order",
+      "q55_value": 43.0,
+      "percentile": 37.16814159292036,
+      "extremity": 37.16814159292036,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M3",
+      "metric": "residual_H_cond",
+      "q55_value": -0.496344,
+      "percentile": 5.3097345132743365,
+      "extremity": 5.3097345132743365,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M3",
+      "metric": "z_Q_ljung_box",
+      "q55_value": 2.6888,
+      "percentile": 82.05128205128206,
+      "extremity": 17.948717948717942,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M3",
+      "metric": "acf_1",
+      "q55_value": -0.0238,
+      "percentile": 12.820512820512821,
+      "extremity": 12.820512820512821,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M3",
+      "metric": "acf_2",
+      "q55_value": 0.3142,
+      "percentile": 92.3076923076923,
+      "extremity": 7.692307692307693,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M3",
+      "metric": "max_abs_acf",
+      "q55_value": 0.3142,
+      "percentile": 73.07692307692308,
+      "extremity": 26.92307692307692,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M3",
+      "metric": "H_unigram",
+      "q55_value": 4.322239,
+      "percentile": 35.39823008849557,
+      "extremity": 35.39823008849557,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M5",
+      "metric": "N_tokens",
+      "q55_value": 352.0,
+      "percentile": 40.76086956521739,
+      "extremity": 40.76086956521739,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M5",
+      "metric": "kl_from_corpus",
+      "q55_value": 1.1845624182388108,
+      "percentile": 100.0,
+      "extremity": 0.0,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M5",
+      "metric": "zipf_alpha",
+      "q55_value": 0.925001,
+      "percentile": 100.0,
+      "extremity": 0.0,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M5",
+      "metric": "heap_beta",
+      "q55_value": 0.730777,
+      "percentile": 0.0,
+      "extremity": 0.0,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M5",
+      "metric": "alpha_beta_residual",
+      "q55_value": -0.18727929800000043,
+      "percentile": 32.05128205128205,
+      "extremity": 32.05128205128205,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M5",
+      "metric": "lz_norm_log",
+      "q55_value": 2.0579933703799393,
+      "percentile": 0.0,
+      "extremity": 0.0,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M5",
+      "metric": "gzip_ratio",
+      "q55_value": 0.26683087027914615,
+      "percentile": 1.7699115044247788,
+      "extremity": 1.7699115044247788,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M5",
+      "metric": "dispersion_h168",
+      "q55_value": 0.252715,
+      "percentile": 14.15929203539823,
+      "extremity": 14.15929203539823,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M3",
+      "metric": "emphatic",
+      "q55_value": 0.015179,
+      "percentile": 16.8141592920354,
+      "extremity": 16.8141592920354,
+      "kind": "two_sided",
+      "note": ""
+    },
+    {
+      "principle": "M3",
+      "metric": "pharyngeal",
+      "q55_value": 0.030358,
+      "percentile": 0.8849557522123894,
+      "extremity": 0.8849557522123894,
+      "kind": "two_sided",
+      "note": ""
+    }
+  ],
+  "cell_verdicts": {
+    "M1": {
+      "n_metrics": 2,
+      "n_extreme_p05_p95": 1,
+      "extreme_metrics": [
+        "mushaf_position_is_structural_hinge"
+      ],
+      "verdict": "EXTREME"
+    },
+    "M2": {
+      "n_metrics": 2,
+      "n_extreme_p05_p95": 0,
+      "extreme_metrics": [],
+      "verdict": "TYPICAL"
+    },
+    "M3": {
+      "n_metrics": 8,
+      "n_extreme_p05_p95": 1,
+      "extreme_metrics": [
+        "pharyngeal"
+      ],
+      "verdict": "EXTREME"
+    },
+    "M5": {
+      "n_metrics": 8,
+      "n_extreme_p05_p95": 5,
+      "extreme_metrics": [
+        "kl_from_corpus",
+        "zipf_alpha",
+        "heap_beta",
+        "lz_norm_log",
+        "gzip_ratio"
+      ],
+      "verdict": "EXTREME"
+    }
+  },
+  "synthesis": "PATTERN-B-PARTIAL (3/4 cells extreme: ['M1', 'M3', 'M5'])",
+  "siblings_and_neighbors": {
+    "55": {
+      "N_tokens": 352.0,
+      "zipf_alpha": 0.925001,
+      "heap_beta": 0.730777,
+      "alpha_beta_residual": -0.18727929800000043,
+      "kl_from_corpus": 1.1845624182388108,
+      "lz_norm_log": 2.0579933703799393,
+      "gzip_ratio": 0.26683087027914615,
+      "acf_1": -0.0238,
+      "acf_2": 0.3142,
+      "max_abs_acf": 0.3142,
+      "residual_H_cond": -0.496344,
+      "z_Q_ljung_box": 2.6888,
+      "dispersion_h168": 0.252715,
+      "dispersion_h163": 0.183207,
+      "noldeke_order": 43.0,
+      "is_muq": 0
+    },
+    "26": {
+      "N_tokens": 1320.0,
+      "zipf_alpha": 0.722397,
+      "heap_beta": 0.749864,
+      "alpha_beta_residual": -0.32258253600000053,
+      "kl_from_corpus": 0.7494117504921193,
+      "lz_norm_log": 2.4313989399368774,
+      "gzip_ratio": 0.2819056633538413,
+      "acf_1": 0.0457,
+      "acf_2": 0.0784,
+      "max_abs_acf": 0.093,
+      "residual_H_cond": -0.194582,
+      "z_Q_ljung_box": 0.0021,
+      "dispersion_h168": 0.274843,
+      "dispersion_h163": 0.172677,
+      "noldeke_order": 56.0,
+      "is_muq": 1
+    },
+    "77": {
+      "N_tokens": 181.0,
+      "zipf_alpha": 0.667622,
+      "heap_beta": 0.812702,
+      "alpha_beta_residual": -0.15579074799999992,
+      "kl_from_corpus": 1.047903810162685,
+      "lz_norm_log": 2.6780193330891695,
+      "gzip_ratio": 0.3576407506702413,
+      "acf_1": 0.0623,
+      "acf_2": 0.3692,
+      "max_abs_acf": 0.3692,
+      "residual_H_cond": 0.15991,
+      "z_Q_ljung_box": 1.8721,
+      "dispersion_h168": 0.302243,
+      "dispersion_h163": 0.219872,
+      "noldeke_order": 32.0,
+      "is_muq": 0
+    },
+    "54": {
+      "N_tokens": 342.0,
+      "zipf_alpha": 0.565611,
+      "heap_beta": 0.779002,
+      "alpha_beta_residual": -0.37662794800000043,
+      "kl_from_corpus": 1.0259324096452767,
+      "lz_norm_log": 2.7709189377560963,
+      "gzip_ratio": 0.3614895549500454,
+      "acf_1": -0.0959,
+      "acf_2": -0.0941,
+      "max_abs_acf": 0.229,
+      "residual_H_cond": 0.270743,
+      "z_Q_ljung_box": -0.0783,
+      "dispersion_h168": 0.318296,
+      "dispersion_h163": 0.202701,
+      "noldeke_order": 49.0,
+      "is_muq": 0
+    },
+    "56": {
+      "N_tokens": 379.0,
+      "zipf_alpha": 0.576957,
+      "heap_beta": 0.904557,
+      "alpha_beta_residual": 0.07742498200000003,
+      "kl_from_corpus": 1.0249958297304,
+      "lz_norm_log": 2.7910651250840783,
+      "gzip_ratio": 0.34549190855381456,
+      "acf_1": 0.4064,
+      "acf_2": 0.1704,
+      "max_abs_acf": 0.4064,
+      "residual_H_cond": 0.117796,
+      "z_Q_ljung_box": 4.1999,
+      "dispersion_h168": 0.269877,
+      "dispersion_h163": 0.181343,
+      "noldeke_order": 41.0,
+      "is_muq": 0
+    }
+  },
+  "n_surahs_master": 114
+}

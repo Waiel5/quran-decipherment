@@ -1,0 +1,718 @@
+{
+  "hypothesis_id": "H-NEW-META-4",
+  "run_date": "2026-04-16",
+  "n_rows_loaded": 98,
+  "classification_counts": {
+    "MIXED": 5,
+    "RHYTHMIC-SURFACE": 19,
+    "SEMANTIC-STRUCTURAL": 49,
+    "N/A_catalog": 1,
+    "N/A_anchor": 1,
+    "N/A_apologetic": 23
+  },
+  "contingency_table": {
+    "SEMANTIC-STRUCTURAL": {
+      "Q-HIGH": 33,
+      "Q-LOW": 4
+    },
+    "RHYTHMIC-SURFACE": {
+      "Q-HIGH": 10,
+      "Q-LOW": 2
+    }
+  },
+  "pearson_chi2": 0.28916125427753336,
+  "yates_chi2": 0.0009624450031426776,
+  "p_chi2": 0.5907585201922709,
+  "p_yates": 0.9752509596972768,
+  "sem_q_high_fraction": 0.8918918918918919,
+  "rhy_q_high_fraction": 0.8333333333333334,
+  "verdict": "NULL",
+  "classifications": [
+    {
+      "finding_id": "MASTER-§1-#30 / X-4 / T4",
+      "test_name": "Simultaneous N-constraint density vs matched-Arabic (KS)",
+      "class": "MIXED",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#3 / H-NEW-23",
+      "test_name": "Hapax-verse-final slot within-verse z-test",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-20 (face)",
+      "test_name": "al-Razi linear nazm — verse-similarity autocorrelation (face-value)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED-SUPERSEDED-by-MW1",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-20 (MW-1 strict)",
+      "test_name": "al-Razi linear nazm — length-residualized short-stratum strict",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "PARTIAL",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#17 / RQA-rhyme",
+      "test_name": "Rhyme determinism via recurrence-quantification analysis",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#2 / muqattaat-density",
+      "test_name": "Muqattaʿat letter density enrichment (3-gram Markov null)",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#20 / ar-Rahman-compression",
+      "test_name": "Compression outlier ranking under length-controlled null",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / iltifat-block",
+      "test_name": "Iltifat structured-block framing H_B across 3 channels",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-16 (reverse)",
+      "test_name": "Cross-word phonetic palindromes — pre-reg reversed",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "REVERSE-CONFIRMED",
+      "direction": "Q-LOW"
+    },
+    {
+      "finding_id": "MASTER-§1-#13 / root-palindrome",
+      "test_name": "Root-level palindromes enrichment sweep",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#16 / verse-length-Hurst",
+      "test_name": "Verse-length Hurst exponent vs matched prose",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#11 / opening-compression-predicts-body",
+      "test_name": "Surah-opening predicts whole-surah compression",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-29 (b-comparative)",
+      "test_name": "Root inter-occurrence CV vs pooled prose (Mann-Whitney)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "DUAL (b-CONFIRMED, a-NULL)",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-35 (primary)",
+      "test_name": "Verse-length ρ(1) autocorrelation — primary signal",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED (primary)",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-35 (vs-Bukhari)",
+      "test_name": "Verse-length ρ(1) Fisher z-diff vs Bukhari",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED-but-BUKHARI-OUTLIER",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-35 (vs-Jahiz)",
+      "test_name": "Verse-length ρ(1) Fisher z-diff vs Jahiz",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "NULL-as-distinguishing",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§1-#5 / H-META-1",
+      "test_name": "Confirmable-claim signature classifier (LR L1 + tree)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#6 / chiastic-baqara",
+      "test_name": "Al-Baqarah ring Q 2:131-144",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#14 / cosmic-inversion",
+      "test_name": "Cosmic-inversion 5-word palindrome template",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#12 / kitab-quran-shift",
+      "test_name": "kitab-Medinan vs quran-Meccan lexical shift",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#7 / ring-family",
+      "test_name": "6 ring-composition windows Bonferroni-surviving",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / T-002 adjacent-pair",
+      "test_name": "Cross-surah seam-munasaba (T3 secondary)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#4 / ism-al-azam",
+      "test_name": "Ism al-Azam composite rank-product index",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#18 / al-kawthar-forging",
+      "test_name": "Al-Kawthar forging-difficulty MC 96% weight-regime win",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-24 (main)",
+      "test_name": "Letter-multiset surah-boundary detection (novel lane)",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-24 (ordering-suppression)",
+      "test_name": "Letter-ordering contribution (real ordering suppresses signal)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REVERSE-SIDE-FINDING",
+      "direction": "Q-LOW"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-20 (B1+B2 K-sweep)",
+      "test_name": "Letter-multiset K-sensitivity sweep (optimal K=200)",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED-robustness",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#15 / prophet-vocab-suppression",
+      "test_name": "Prophet pericopes share LESS vocabulary than random",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-5",
+      "test_name": "Syntactic mood-switch at verse boundaries",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-8",
+      "test_name": "Twin-opener N(k) exponential decay",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-23 (eschatological)",
+      "test_name": "Eschatological-verse hapax rate vs legal genre",
+      "class": "MIXED",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / T-004 Muallaqat",
+      "test_name": "Muʿallaqat hapax-slot positive-control",
+      "class": "MIXED",
+      "verdict_inv": "DISCRIMINATIVE-PASS",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-19 (elision)",
+      "test_name": "Ibn Abi al-Isbaʿ elision-eschatology triple-proxy",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "PARTIAL",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-14",
+      "test_name": "Turn-taking signature in dialogic surahs",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#22 / muqattaat-distinctive",
+      "test_name": "Muqattaʿat = Quranic distinctive vs comparative religion",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#21 / covenant-architecture",
+      "test_name": "5-lexeme covenant architecture (ʿahd/waʿd/mithaq/bayʿa/ʿaqd)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#19 / radd-al-kalam",
+      "test_name": "18-verse radd al-kalam rhetorical catalog",
+      "class": "N/A_catalog",
+      "verdict_inv": "CONFIRMED-catalog",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#23 / kahf-midpoint",
+      "test_name": "Al-Kahf 5-method midpoint convergence at v50",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED-caveat",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-29 (a-null-primary)",
+      "test_name": "Root renewal-process absolute CV<1 (sub-Poisson)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "NULL (pre-reg REFUTED)",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-34 (primary)",
+      "test_name": "Verse-final abjad mod m clustering (hisab al-jummal null test)",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "NULL-CONFIRMED (primary)",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-34 (reverse-underdispersion)",
+      "test_name": "Verse-final abjad residues MORE uniform (post-hoc exploratory)",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "REVERSE-EXPLORATORY (mechanism refuted H-NEW-34a)",
+      "direction": "Q-LOW"
+    },
+    {
+      "finding_id": "MASTER-§3d / H-NEW-34.1 (MECHANISM-INCONSISTENT)",
+      "test_name": "Muallaqat rhymed + length-stratified follow-up",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "MECHANISM-INCONSISTENT",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-34a (rhyme-pooling test)",
+      "test_name": "Within-rhyme-class χ² dispersion (mechanism test)",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "MECHANISM-REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-13 (bigram spectrum)",
+      "test_name": "Letter-bigram Markov transition-matrix spectral gap",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "NULL",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-22",
+      "test_name": "Verse-boundary acrostic scan",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "NULL",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-1 (retest-pending)",
+      "test_name": "Verse-ending consonant Markov-residual surprise (order-3 classical-rawi)",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "CONFIRMED-pending-retest",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-2 (primary)",
+      "test_name": "Pronoun-chain entropy signature of iltifat",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-2 × iltifat-rho",
+      "test_name": "Per-surah iltifat-density Spearman rho with H-NEW-2 signatures",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REVERSE-SIGN-REFUTE",
+      "direction": "Q-LOW"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-6",
+      "test_name": "Spectral-gap clustering of 114-surah root-overlap graph",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "PARTIAL",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#10 / ar-rahman-refrain",
+      "test_name": "Ar-Rahman 31 refrain partition 8+7+8+8",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / counterfactual-fragility (T2)",
+      "test_name": "Single-word ablation fragility genre-split",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "MIXED (primary REVERSE, secondary PASS)",
+      "direction": "Q-LOW"
+    },
+    {
+      "finding_id": "MASTER-§1-#9 / khawatim-al-hashr",
+      "test_name": "Khawatim al-Hashr structural engineering",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#8 / twin-opener-lock",
+      "test_name": "Twin-opener Lock (2 pairs with ≥30 identical chars)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3c / T3 length-residualized NCD",
+      "test_name": "Length-residualized NCD Hamiltonian τ",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED (secondary)",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3b / X-3 Mūsā-ʿĪsā co-mention",
+      "test_name": "Medinan Mūsā-ʿĪsā co-mention rise (H3)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED (H3)",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§3b / X-3 Medinan-shorter-surahs",
+      "test_name": "X-3 H2 Medinan-shorter-surahs (prophet mentions)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REVERSED",
+      "direction": "Q-LOW"
+    },
+    {
+      "finding_id": "MASTER-§3b / X-3 sequential-intro",
+      "test_name": "X-3 H1 sequential-intro (al-Masih first Medinan)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-18 directionality",
+      "test_name": "al-Kirmani mutashabih pair directionality (asl/farʿ)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-3 length-ratio",
+      "test_name": "Consecutive-surah length-ratio bimodality",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REFUTED-primary/PARTIAL-secondary",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-4 muqattaat-first-lemma",
+      "test_name": "Muqattaʿat surahs first-lemma-introduction rate",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3b / al-suyuti-husn-ibtida",
+      "test_name": "al-Suyuti husn al-ibtidaʾ/al-intihaʾ across 114 surahs",
+      "class": "MIXED",
+      "verdict_inv": "REFUTED-broad/CONFIRMED-exemplars",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3a / al-biqai-macro-ring",
+      "test_name": "al-Biqaʿi macro-ring (last 9 mirror first 9)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3a / cuypers-maida-ring",
+      "test_name": "Cuypers Sūrat al-Māʾida macro-ring",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3a / farrin-whole-mushaf",
+      "test_name": "Farrin whole-mushaf macro-ring (k↔115-k)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3a / yusuf-surah-ring",
+      "test_name": "Surah Yūsuf whole-surah ring",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§5 / T1",
+      "test_name": "LLM-judge inauthenticity (fallback classifier)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "NULL (fallback)",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§5 / T3 primary",
+      "test_name": "Canonical 114-surah reverse-engineering (combined-τ)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "FAIL (primary)",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§5 / T3 Nöldeke (R-010)",
+      "test_name": "T3 secondary Nöldeke chronology recovery",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "FALSIFIED (Nöldeke-as-hidden-axis)",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§5 / T5 TDA (R-011)",
+      "test_name": "Persistent homology bottleneck distance to 4 baselines",
+      "class": "RHYTHMIC-SURFACE",
+      "verdict_inv": "NULL",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§5 / T4 (see top)",
+      "test_name": "(see §1-#30 above)",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§5 / H-META-2 (null-comparator)",
+      "test_name": "Null-A vs Null-B calibration on Mutanabbi+Jahiz",
+      "class": "MIXED",
+      "verdict_inv": "BOTH_DISQUALIFIED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "MASTER-§3c / H-NEW-31 (primary)",
+      "test_name": "Time-vs-space incipit asymmetry Meccan/Medinan",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "PARTIAL",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#28 / shahada-illa-huwa",
+      "test_name": "Shahada: illa huwa (81%) not illa Allah",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#29 / muhammad-named-4x",
+      "test_name": "Muhammad named only 4 times (all post-Hijra); 332 qul imperatives",
+      "class": "SEMANTIC-STRUCTURAL",
+      "verdict_inv": "CONFIRMED",
+      "direction": "Q-HIGH"
+    },
+    {
+      "finding_id": "MASTER-§1-#1 / bismillah-anchor",
+      "test_name": "Bismillah: 19 letters, 4 words, 786 abjad mashriqi, 1026 maghribi",
+      "class": "N/A_anchor",
+      "verdict_inv": "ANCHOR",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§1.3 / ALM-29-surahs",
+      "test_name": "ALM sum per 29 muqattaat surahs divisible by 19",
+      "class": "N/A_apologetic",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§1.9 / prime-mod-scan",
+      "test_name": "Prime-mod scan p∈{7,11,13,17,19,23,29,31}",
+      "class": "N/A_apologetic",
+      "verdict_inv": "NULL",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§1.10 / letter-div-19",
+      "test_name": "Letter-div-by-19 rate across 15 corpora",
+      "class": "N/A_apologetic",
+      "verdict_inv": "NULL",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§2 / word-pair-symmetry",
+      "test_name": "11 famous word-pair symmetries (Al-Kaheel/Nawfal)",
+      "class": "N/A_apologetic",
+      "verdict_inv": "MIXED/below-baseline",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§3 / yusuf-sjn-12",
+      "test_name": "Yūsuf sjn=12 single-chunk concentration",
+      "class": "N/A_apologetic",
+      "verdict_inv": "DEMOTED (baseline rate)",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§4 / rahma-114",
+      "test_name": "rahma=114 uniqueness claim",
+      "class": "N/A_apologetic",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§5 / 147-triple",
+      "test_name": "147-triple (ghayr/ilah/janna)",
+      "class": "N/A_apologetic",
+      "verdict_inv": "REFUTED (pigeonhole)",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§6 / razi-99names",
+      "test_name": "al-Razi muqattaat=99 divine-names theory",
+      "class": "N/A_apologetic",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§7 / zipf-meccan",
+      "test_name": "Per-surah Zipf α heterogeneity predicts Meccan",
+      "class": "N/A_apologetic",
+      "verdict_inv": "REFUTED (length-artifact)",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§8 / meccan-saj-denser",
+      "test_name": "Meccan saj' density vs Medinan (folk wisdom)",
+      "class": "N/A_apologetic",
+      "verdict_inv": "REFUTED",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-§9 / khalifa-zipf",
+      "test_name": "Khalifa aggregate Zipf α=0.97 distinctiveness",
+      "class": "N/A_apologetic",
+      "verdict_inv": "NULL (not distinctive)",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.10 / embryology",
+      "test_name": "Q 23:12-14 embryology stages",
+      "class": "N/A_apologetic",
+      "verdict_inv": "PRE-EXISTING-KNOWLEDGE",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.11 / iron-sent-down",
+      "test_name": "Q 57:25 iron meteoritic",
+      "class": "N/A_apologetic",
+      "verdict_inv": "APOLOGETIC-OVERREACH",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.12 / big-bang",
+      "test_name": "Q 21:30 ratq/fatq Big Bang",
+      "class": "N/A_apologetic",
+      "verdict_inv": "APOLOGETIC-OVERREACH",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.13 / fingerprints",
+      "test_name": "Q 75:4 banana fingerprints unique",
+      "class": "N/A_apologetic",
+      "verdict_inv": "AMBIGUOUS→OVERREACH",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.14 / mountain-pegs",
+      "test_name": "Q 78:7 mountains as awtad",
+      "class": "N/A_apologetic",
+      "verdict_inv": "PRE-EXISTING+WRONG",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.15 / expanding-universe",
+      "test_name": "Q 51:47 musi'un expanding universe",
+      "class": "N/A_apologetic",
+      "verdict_inv": "AMBIGUOUS",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.16 / sun-orbit",
+      "test_name": "Q 36:38 sun orbit galactic center",
+      "class": "N/A_apologetic",
+      "verdict_inv": "PRE-EXISTING-KNOWLEDGE",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.17 / two-seas",
+      "test_name": "Q 25:53/55:19-20 two seas not mixing",
+      "class": "N/A_apologetic",
+      "verdict_inv": "PRE-EXISTING-OBSERVATIONAL",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.18 / deep-sea-darkness",
+      "test_name": "Q 24:40 deep-sea darkness",
+      "class": "N/A_apologetic",
+      "verdict_inv": "PRE-EXISTING+SIMILE",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.19 / atom-dharra",
+      "test_name": "Q 99:7-8 dharra atom",
+      "class": "N/A_apologetic",
+      "verdict_inv": "APOLOGETIC-OVERREACH",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.20 / milk-formation",
+      "test_name": "Q 16:66 milk between blood and excretion",
+      "class": "N/A_apologetic",
+      "verdict_inv": "PRE-EXISTING-OBSERVATIONAL",
+      "direction": "Q-EQ"
+    },
+    {
+      "finding_id": "HONEST-LIMITS-II.21 / pharaoh-body",
+      "test_name": "Q 10:92 Pharaoh preserved body",
+      "class": "N/A_apologetic",
+      "verdict_inv": "AMBIGUOUS",
+      "direction": "Q-EQ"
+    }
+  ]
+}

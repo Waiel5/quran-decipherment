@@ -1,0 +1,88 @@
+{
+  "finding_id": "Q019-F-01",
+  "pre_reg_sha256": "fe028e3ea25ba30d96aec724cf9bd8568d2ba909d67112d9c30b092d85c51fe2",
+  "seed": 20260428,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic, exact-substring مريم, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "observed": {
+    "q19_rank": 4,
+    "q19_count": 3,
+    "q19_share_corpus": 0.08823529411764706,
+    "corpus_total": 34,
+    "top_10": [
+      {
+        "surah": 5,
+        "name": "Al-Ma'idah",
+        "count": 10,
+        "share": 0.29411764705882354
+      },
+      {
+        "surah": 3,
+        "name": "Ali 'Imran",
+        "count": 7,
+        "share": 0.20588235294117646
+      },
+      {
+        "surah": 4,
+        "name": "An-Nisa",
+        "count": 4,
+        "share": 0.11764705882352941
+      },
+      {
+        "surah": 19,
+        "name": "Maryam",
+        "count": 3,
+        "share": 0.08823529411764706
+      },
+      {
+        "surah": 2,
+        "name": "Al-Baqarah",
+        "count": 2,
+        "share": 0.058823529411764705
+      },
+      {
+        "surah": 61,
+        "name": "As-Saf",
+        "count": 2,
+        "share": 0.058823529411764705
+      },
+      {
+        "surah": 9,
+        "name": "At-Tawbah",
+        "count": 1,
+        "share": 0.029411764705882353
+      },
+      {
+        "surah": 23,
+        "name": "Al-Mu'minun",
+        "count": 1,
+        "share": 0.029411764705882353
+      },
+      {
+        "surah": 33,
+        "name": "Al-Ahzab",
+        "count": 1,
+        "share": 0.029411764705882353
+      },
+      {
+        "surah": 43,
+        "name": "Az-Zukhruf",
+        "count": 1,
+        "share": 0.029411764705882353
+      }
+    ]
+  },
+  "null_distribution": {
+    "q19_rank_mean": 25.6757,
+    "q19_rank_p05": 6,
+    "q19_rank_p95": 37,
+    "p_value_le_observed": 0.0211
+  },
+  "comparator_yusuf_q12_concentration": 0.952,
+  "verdict": {
+    "direction_locked": "Q 19 rank > 1 (Yūsuf-model FALSIFIED for Q 19)",
+    "observed_direction_match": true,
+    "pass": true,
+    "note": "Q 19 rank = 4; concentration = 8.8% (vs Yūsuf 95.2% in Q 12)"
+  }
+}

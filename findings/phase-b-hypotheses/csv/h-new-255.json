@@ -1,0 +1,410 @@
+{
+  "finding_id": "h-new-255",
+  "title": "Juzʾ 30 mini-ring test",
+  "pre_reg_sha256": "574dcfeb0b56288028bd63500234faf20a188552e1a1a85bd9a212c33b2d1c52",
+  "seed": 20260419,
+  "n_perms": 1000,
+  "date": "2026-04-17",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens K=500, QAC v0.4, Dirichlet α=0.5, Fisher-Rao angular, Q 78..Q 114 = 37 surahs, Hafs-Kufan)",
+  "locked_params": {
+    "K_top_roots": 500,
+    "dirichlet_alpha": 0.5,
+    "n_perm": 1000,
+    "distance": "Fisher-Rao angular = 2·arccos(Σ sqrt(p_i·p_j))",
+    "juz30_surahs": [
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114
+    ],
+    "n_surahs_juz30": 37
+  },
+  "corpus_stats": {
+    "corpus_mean_d_114": 0.923487,
+    "juz30_pairs": 666,
+    "juz30_mean_d": 0.489147,
+    "juz30_median_d": 0.495121,
+    "juz30_min_d": 0.212673,
+    "juz30_max_d": 0.765519
+  },
+  "T1_primary_ratio": {
+    "L_juz30": 16.514906,
+    "L_2opt_juz30": 15.410756,
+    "R_juz30": 1.071648,
+    "baseline_full_mushaf_1_107": 1.107,
+    "deviation_from_baseline": -0.035352,
+    "best_2opt_start": 78,
+    "band": [
+      1.05,
+      1.2
+    ],
+    "pass": true
+  },
+  "T2_primary_permutation_null": {
+    "null_mean": 17.617684,
+    "null_sd": 0.207329,
+    "null_min": 16.898651,
+    "null_max": 18.189656,
+    "z_juz30": -5.318971,
+    "n_le_juz30": 0,
+    "p_one_sided_lower": 0.000999,
+    "threshold_z": -3.0,
+    "threshold_p": 0.01667,
+    "pass": true
+  },
+  "T3_primary_wrap_edge": {
+    "w_wrap_q114_q78": 0.644518,
+    "null_wrap_mean": 0.485283,
+    "null_wrap_sd": 0.115958,
+    "z_wrap": 1.373214,
+    "p_one_sided_lower": 0.918082,
+    "threshold_p": 0.01667,
+    "pass": false
+  },
+  "mw5_positive_control": {
+    "method": "greedy-NN from Q 78 on sub-graph",
+    "L_pos": 15.902183,
+    "z_pos": -8.274287,
+    "p_pos": 0.000999,
+    "threshold": 0.001,
+    "pass": true
+  },
+  "S1_structural_hinges_top5": [
+    {
+      "from": 78,
+      "to": 79,
+      "d": 0.720817
+    },
+    {
+      "from": 79,
+      "to": 80,
+      "d": 0.706355
+    },
+    {
+      "from": 88,
+      "to": 89,
+      "d": 0.657287
+    },
+    {
+      "from": 83,
+      "to": 84,
+      "d": 0.652163
+    },
+    {
+      "from": 80,
+      "to": 81,
+      "d": 0.635376
+    }
+  ],
+  "S1_all_consecutive_pairs": [
+    {
+      "from": 78,
+      "to": 79,
+      "d": 0.720817
+    },
+    {
+      "from": 79,
+      "to": 80,
+      "d": 0.706355
+    },
+    {
+      "from": 80,
+      "to": 81,
+      "d": 0.635376
+    },
+    {
+      "from": 81,
+      "to": 82,
+      "d": 0.528566
+    },
+    {
+      "from": 82,
+      "to": 83,
+      "d": 0.577005
+    },
+    {
+      "from": 83,
+      "to": 84,
+      "d": 0.652163
+    },
+    {
+      "from": 84,
+      "to": 85,
+      "d": 0.584345
+    },
+    {
+      "from": 85,
+      "to": 86,
+      "d": 0.568419
+    },
+    {
+      "from": 86,
+      "to": 87,
+      "d": 0.524898
+    },
+    {
+      "from": 87,
+      "to": 88,
+      "d": 0.557249
+    },
+    {
+      "from": 88,
+      "to": 89,
+      "d": 0.657287
+    },
+    {
+      "from": 89,
+      "to": 90,
+      "d": 0.632635
+    },
+    {
+      "from": 90,
+      "to": 91,
+      "d": 0.529993
+    },
+    {
+      "from": 91,
+      "to": 92,
+      "d": 0.473442
+    },
+    {
+      "from": 92,
+      "to": 93,
+      "d": 0.433778
+    },
+    {
+      "from": 93,
+      "to": 94,
+      "d": 0.364138
+    },
+    {
+      "from": 94,
+      "to": 95,
+      "d": 0.361408
+    },
+    {
+      "from": 95,
+      "to": 96,
+      "d": 0.504885
+    },
+    {
+      "from": 96,
+      "to": 97,
+      "d": 0.545334
+    },
+    {
+      "from": 97,
+      "to": 98,
+      "d": 0.576029
+    },
+    {
+      "from": 98,
+      "to": 99,
+      "d": 0.581233
+    },
+    {
+      "from": 99,
+      "to": 100,
+      "d": 0.379279
+    },
+    {
+      "from": 100,
+      "to": 101,
+      "d": 0.368084
+    },
+    {
+      "from": 101,
+      "to": 102,
+      "d": 0.386318
+    },
+    {
+      "from": 102,
+      "to": 103,
+      "d": 0.344768
+    },
+    {
+      "from": 103,
+      "to": 104,
+      "d": 0.311926
+    },
+    {
+      "from": 104,
+      "to": 105,
+      "d": 0.336393
+    },
+    {
+      "from": 105,
+      "to": 106,
+      "d": 0.291482
+    },
+    {
+      "from": 106,
+      "to": 107,
+      "d": 0.277201
+    },
+    {
+      "from": 107,
+      "to": 108,
+      "d": 0.225639
+    },
+    {
+      "from": 108,
+      "to": 109,
+      "d": 0.334203
+    },
+    {
+      "from": 109,
+      "to": 110,
+      "d": 0.380542
+    },
+    {
+      "from": 110,
+      "to": 111,
+      "d": 0.318367
+    },
+    {
+      "from": 111,
+      "to": 112,
+      "d": 0.284945
+    },
+    {
+      "from": 112,
+      "to": 113,
+      "d": 0.288619
+    },
+    {
+      "from": 113,
+      "to": 114,
+      "d": 0.271785
+    }
+  ],
+  "S2_vs_full_mushaf": {
+    "R_juz30": 1.071648,
+    "R_full_mushaf_CF011": 1.107,
+    "diff": -0.035352,
+    "self_similarity_band_pm_0_02": false
+  },
+  "S4_contiguous_37arc_null": {
+    "n_arcs": 78,
+    "mean": 29.032693,
+    "sd": 5.295067,
+    "n_le_juz30": 1,
+    "p_vs_contig": 0.025316,
+    "z_vs_contig": -2.364047,
+    "rank_from_shortest": 2
+  },
+  "opt_path_best": [
+    78,
+    83,
+    82,
+    81,
+    91,
+    95,
+    103,
+    111,
+    104,
+    101,
+    99,
+    100,
+    94,
+    105,
+    113,
+    114,
+    110,
+    112,
+    90,
+    86,
+    97,
+    93,
+    92,
+    87,
+    80,
+    88,
+    85,
+    84,
+    98,
+    109,
+    106,
+    108,
+    107,
+    102,
+    96,
+    79,
+    89
+  ],
+  "canonical_juz30": [
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114
+  ],
+  "verdict_label": "MINI-GEODESIC-OPEN-PATH",
+  "verdict_primary": "NULL-OR-MIXED",
+  "verdict_ceiling": "PASS-DIRECTED (sub-scale replication of CF-013 M1 principle; independent feature-space replication = CONFIRMED queue)"
+}

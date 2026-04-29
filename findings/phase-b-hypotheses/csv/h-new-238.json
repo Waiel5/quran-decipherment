@@ -1,0 +1,1250 @@
+{
+  "finding_id": "h-new-238",
+  "title": "Cyclic-shift wrap-edge analysis — rank of Q 1 among 114 rotations of the mushaf Fisher-Rao ring",
+  "prereg_file": "findings/phase-b-hypotheses/h-new-238-cyclic-shift-wrap-prereg.md",
+  "prereg_sha256": "4488649e3343d6d3ef73b48285eec97c05428008417bb41e7485f7a0cd773120",
+  "h_new_111_source_of_D": "4c366c414b82b0d0f3bcd06b68a7b5a87b500cf925b5088704a36c355d7f33fc",
+  "seed": 20260419,
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05,
+  "date": "2026-04-17",
+  "rules_tuple": "(114 surahs Hafs-Kūfan; no-tashkeel; QAC-STEM top-500 roots; Dirichlet α=0.5; L1-normalized; Fisher-Rao arccos Bhattacharyya; D inherited from H-NEW-111)",
+  "question": "Among all 114 cyclic shifts of the mushaf ordering, what is the rank of k=1 (canonical Q 1 start) when sorted by ascending wrap-edge W(k) = d_FR(Q k-1, Q k)?",
+  "cycle_total_length": 86.148025,
+  "wrap_edge_stats": {
+    "min": 0.225639,
+    "max": 1.177623,
+    "mean": 0.755684,
+    "median": 0.813701,
+    "sd": 0.243389
+  },
+  "canonical_k1": {
+    "k": 1,
+    "wrap_edge": 0.38837,
+    "rank_ascending": 18,
+    "rank_percentile_ascending": 0.157895,
+    "preceded_by_surah": 114,
+    "preceded_by_name": "al-Nās"
+  },
+  "minimum_wrap_start": {
+    "k": 108,
+    "wrap_edge": 0.225639,
+    "surah_at_position_1_name": "al-Kawthar",
+    "preceded_by_surah": 107,
+    "preceded_by_name": "al-Māʿūn"
+  },
+  "top10_tightest": [
+    {
+      "shift_k": 108,
+      "first_position_surah": 108,
+      "first_position_name": "al-Kawthar",
+      "last_position_surah": 107,
+      "last_position_name": "al-Māʿūn",
+      "wrap_edge": 0.225639,
+      "rank_ascending": 1
+    },
+    {
+      "shift_k": 114,
+      "first_position_surah": 114,
+      "first_position_name": "al-Nās",
+      "last_position_surah": 113,
+      "last_position_name": "al-Falaq",
+      "wrap_edge": 0.271785,
+      "rank_ascending": 2
+    },
+    {
+      "shift_k": 107,
+      "first_position_surah": 107,
+      "first_position_name": "al-Māʿūn",
+      "last_position_surah": 106,
+      "last_position_name": "Quraysh",
+      "wrap_edge": 0.277201,
+      "rank_ascending": 3
+    },
+    {
+      "shift_k": 112,
+      "first_position_surah": 112,
+      "first_position_name": "al-Ikhlāṣ",
+      "last_position_surah": 111,
+      "last_position_name": "al-Masad",
+      "wrap_edge": 0.284945,
+      "rank_ascending": 4
+    },
+    {
+      "shift_k": 113,
+      "first_position_surah": 113,
+      "first_position_name": "al-Falaq",
+      "last_position_surah": 112,
+      "last_position_name": "al-Ikhlāṣ",
+      "wrap_edge": 0.288619,
+      "rank_ascending": 5
+    },
+    {
+      "shift_k": 106,
+      "first_position_surah": 106,
+      "first_position_name": "Quraysh",
+      "last_position_surah": 105,
+      "last_position_name": "al-Fīl",
+      "wrap_edge": 0.291482,
+      "rank_ascending": 6
+    },
+    {
+      "shift_k": 104,
+      "first_position_surah": 104,
+      "first_position_name": "al-Humaza",
+      "last_position_surah": 103,
+      "last_position_name": "al-ʿAṣr",
+      "wrap_edge": 0.311926,
+      "rank_ascending": 7
+    },
+    {
+      "shift_k": 111,
+      "first_position_surah": 111,
+      "first_position_name": "al-Masad",
+      "last_position_surah": 110,
+      "last_position_name": "al-Naṣr",
+      "wrap_edge": 0.318367,
+      "rank_ascending": 8
+    },
+    {
+      "shift_k": 109,
+      "first_position_surah": 109,
+      "first_position_name": "al-Kāfirūn",
+      "last_position_surah": 108,
+      "last_position_name": "al-Kawthar",
+      "wrap_edge": 0.334203,
+      "rank_ascending": 9
+    },
+    {
+      "shift_k": 105,
+      "first_position_surah": 105,
+      "first_position_name": "al-Fīl",
+      "last_position_surah": 104,
+      "last_position_name": "al-Humaza",
+      "wrap_edge": 0.336393,
+      "rank_ascending": 10
+    }
+  ],
+  "bottom10_loosest": [
+    {
+      "shift_k": 24,
+      "first_position_surah": 24,
+      "first_position_name": "al-Nūr",
+      "last_position_surah": 23,
+      "last_position_name": "al-Muʾminūn",
+      "wrap_edge": 1.049734,
+      "rank_ascending": 105
+    },
+    {
+      "shift_k": 13,
+      "first_position_surah": 13,
+      "first_position_name": "al-Raʿd",
+      "last_position_surah": 12,
+      "last_position_name": "Yūsuf",
+      "wrap_edge": 1.068294,
+      "rank_ascending": 106
+    },
+    {
+      "shift_k": 10,
+      "first_position_surah": 10,
+      "first_position_name": "Yūnus",
+      "last_position_surah": 9,
+      "last_position_name": "al-Tawba",
+      "wrap_edge": 1.068939,
+      "rank_ascending": 107
+    },
+    {
+      "shift_k": 34,
+      "first_position_surah": 34,
+      "first_position_name": "Sabaʾ",
+      "last_position_surah": 33,
+      "last_position_name": "al-Aḥzāb",
+      "wrap_edge": 1.115391,
+      "rank_ascending": 108
+    },
+    {
+      "shift_k": 57,
+      "first_position_surah": 57,
+      "first_position_name": "al-Ḥadīd",
+      "last_position_surah": 56,
+      "last_position_name": "al-Wāqiʿa",
+      "wrap_edge": 1.115634,
+      "rank_ascending": 109
+    },
+    {
+      "shift_k": 25,
+      "first_position_surah": 25,
+      "first_position_name": "al-Furqān",
+      "last_position_surah": 24,
+      "last_position_name": "al-Nūr",
+      "wrap_edge": 1.129055,
+      "rank_ascending": 110
+    },
+    {
+      "shift_k": 33,
+      "first_position_surah": 33,
+      "first_position_name": "al-Aḥzāb",
+      "last_position_surah": 32,
+      "last_position_name": "al-Sajda",
+      "wrap_edge": 1.132955,
+      "rank_ascending": 111
+    },
+    {
+      "shift_k": 56,
+      "first_position_surah": 56,
+      "first_position_name": "al-Wāqiʿa",
+      "last_position_surah": 55,
+      "last_position_name": "al-Raḥmān",
+      "wrap_edge": 1.149328,
+      "rank_ascending": 112
+    },
+    {
+      "shift_k": 55,
+      "first_position_surah": 55,
+      "first_position_name": "al-Raḥmān",
+      "last_position_surah": 54,
+      "last_position_name": "al-Qamar",
+      "wrap_edge": 1.151559,
+      "rank_ascending": 113
+    },
+    {
+      "shift_k": 2,
+      "first_position_surah": 2,
+      "first_position_name": "al-Baqara",
+      "last_position_surah": 1,
+      "last_position_name": "al-Fātiḥa",
+      "wrap_edge": 1.177623,
+      "rank_ascending": 114
+    }
+  ],
+  "all_114_rotations": [
+    {
+      "shift_k": 108,
+      "first_position_surah": 108,
+      "first_position_name": "al-Kawthar",
+      "last_position_surah": 107,
+      "last_position_name": "al-Māʿūn",
+      "wrap_edge": 0.225639,
+      "rank_ascending": 1
+    },
+    {
+      "shift_k": 114,
+      "first_position_surah": 114,
+      "first_position_name": "al-Nās",
+      "last_position_surah": 113,
+      "last_position_name": "al-Falaq",
+      "wrap_edge": 0.271785,
+      "rank_ascending": 2
+    },
+    {
+      "shift_k": 107,
+      "first_position_surah": 107,
+      "first_position_name": "al-Māʿūn",
+      "last_position_surah": 106,
+      "last_position_name": "Quraysh",
+      "wrap_edge": 0.277201,
+      "rank_ascending": 3
+    },
+    {
+      "shift_k": 112,
+      "first_position_surah": 112,
+      "first_position_name": "al-Ikhlāṣ",
+      "last_position_surah": 111,
+      "last_position_name": "al-Masad",
+      "wrap_edge": 0.284945,
+      "rank_ascending": 4
+    },
+    {
+      "shift_k": 113,
+      "first_position_surah": 113,
+      "first_position_name": "al-Falaq",
+      "last_position_surah": 112,
+      "last_position_name": "al-Ikhlāṣ",
+      "wrap_edge": 0.288619,
+      "rank_ascending": 5
+    },
+    {
+      "shift_k": 106,
+      "first_position_surah": 106,
+      "first_position_name": "Quraysh",
+      "last_position_surah": 105,
+      "last_position_name": "al-Fīl",
+      "wrap_edge": 0.291482,
+      "rank_ascending": 6
+    },
+    {
+      "shift_k": 104,
+      "first_position_surah": 104,
+      "first_position_name": "al-Humaza",
+      "last_position_surah": 103,
+      "last_position_name": "al-ʿAṣr",
+      "wrap_edge": 0.311926,
+      "rank_ascending": 7
+    },
+    {
+      "shift_k": 111,
+      "first_position_surah": 111,
+      "first_position_name": "al-Masad",
+      "last_position_surah": 110,
+      "last_position_name": "al-Naṣr",
+      "wrap_edge": 0.318367,
+      "rank_ascending": 8
+    },
+    {
+      "shift_k": 109,
+      "first_position_surah": 109,
+      "first_position_name": "al-Kāfirūn",
+      "last_position_surah": 108,
+      "last_position_name": "al-Kawthar",
+      "wrap_edge": 0.334203,
+      "rank_ascending": 9
+    },
+    {
+      "shift_k": 105,
+      "first_position_surah": 105,
+      "first_position_name": "al-Fīl",
+      "last_position_surah": 104,
+      "last_position_name": "al-Humaza",
+      "wrap_edge": 0.336393,
+      "rank_ascending": 10
+    },
+    {
+      "shift_k": 103,
+      "first_position_surah": 103,
+      "first_position_name": "al-ʿAṣr",
+      "last_position_surah": 102,
+      "last_position_name": "al-Takāthur",
+      "wrap_edge": 0.344768,
+      "rank_ascending": 11
+    },
+    {
+      "shift_k": 95,
+      "first_position_surah": 95,
+      "first_position_name": "al-Tīn",
+      "last_position_surah": 94,
+      "last_position_name": "al-Sharḥ",
+      "wrap_edge": 0.361408,
+      "rank_ascending": 12
+    },
+    {
+      "shift_k": 94,
+      "first_position_surah": 94,
+      "first_position_name": "al-Sharḥ",
+      "last_position_surah": 93,
+      "last_position_name": "al-Ḍuḥā",
+      "wrap_edge": 0.364138,
+      "rank_ascending": 13
+    },
+    {
+      "shift_k": 101,
+      "first_position_surah": 101,
+      "first_position_name": "al-Qāriʿa",
+      "last_position_surah": 100,
+      "last_position_name": "al-ʿĀdiyāt",
+      "wrap_edge": 0.368084,
+      "rank_ascending": 14
+    },
+    {
+      "shift_k": 100,
+      "first_position_surah": 100,
+      "first_position_name": "al-ʿĀdiyāt",
+      "last_position_surah": 99,
+      "last_position_name": "al-Zalzala",
+      "wrap_edge": 0.379279,
+      "rank_ascending": 15
+    },
+    {
+      "shift_k": 110,
+      "first_position_surah": 110,
+      "first_position_name": "al-Naṣr",
+      "last_position_surah": 109,
+      "last_position_name": "al-Kāfirūn",
+      "wrap_edge": 0.380542,
+      "rank_ascending": 16
+    },
+    {
+      "shift_k": 102,
+      "first_position_surah": 102,
+      "first_position_name": "al-Takāthur",
+      "last_position_surah": 101,
+      "last_position_name": "al-Qāriʿa",
+      "wrap_edge": 0.386318,
+      "rank_ascending": 17
+    },
+    {
+      "shift_k": 1,
+      "first_position_surah": 1,
+      "first_position_name": "al-Fātiḥa",
+      "last_position_surah": 114,
+      "last_position_name": "al-Nās",
+      "wrap_edge": 0.38837,
+      "rank_ascending": 18
+    },
+    {
+      "shift_k": 93,
+      "first_position_surah": 93,
+      "first_position_name": "al-Ḍuḥā",
+      "last_position_surah": 92,
+      "last_position_name": "al-Layl",
+      "wrap_edge": 0.433778,
+      "rank_ascending": 19
+    },
+    {
+      "shift_k": 92,
+      "first_position_surah": 92,
+      "first_position_name": "al-Layl",
+      "last_position_surah": 91,
+      "last_position_name": "al-Shams",
+      "wrap_edge": 0.473442,
+      "rank_ascending": 20
+    },
+    {
+      "shift_k": 96,
+      "first_position_surah": 96,
+      "first_position_name": "al-ʿAlaq",
+      "last_position_surah": 95,
+      "last_position_name": "al-Tīn",
+      "wrap_edge": 0.504885,
+      "rank_ascending": 21
+    },
+    {
+      "shift_k": 87,
+      "first_position_surah": 87,
+      "first_position_name": "al-Aʿlā",
+      "last_position_surah": 86,
+      "last_position_name": "al-Ṭāriq",
+      "wrap_edge": 0.524898,
+      "rank_ascending": 22
+    },
+    {
+      "shift_k": 82,
+      "first_position_surah": 82,
+      "first_position_name": "al-Infiṭār",
+      "last_position_surah": 81,
+      "last_position_name": "al-Takwīr",
+      "wrap_edge": 0.528566,
+      "rank_ascending": 23
+    },
+    {
+      "shift_k": 91,
+      "first_position_surah": 91,
+      "first_position_name": "al-Shams",
+      "last_position_surah": 90,
+      "last_position_name": "al-Balad",
+      "wrap_edge": 0.529993,
+      "rank_ascending": 24
+    },
+    {
+      "shift_k": 97,
+      "first_position_surah": 97,
+      "first_position_name": "al-Qadr",
+      "last_position_surah": 96,
+      "last_position_name": "al-ʿAlaq",
+      "wrap_edge": 0.545334,
+      "rank_ascending": 25
+    },
+    {
+      "shift_k": 88,
+      "first_position_surah": 88,
+      "first_position_name": "al-Ghāshiya",
+      "last_position_surah": 87,
+      "last_position_name": "al-Aʿlā",
+      "wrap_edge": 0.557249,
+      "rank_ascending": 26
+    },
+    {
+      "shift_k": 86,
+      "first_position_surah": 86,
+      "first_position_name": "al-Ṭāriq",
+      "last_position_surah": 85,
+      "last_position_name": "al-Burūj",
+      "wrap_edge": 0.568419,
+      "rank_ascending": 27
+    },
+    {
+      "shift_k": 98,
+      "first_position_surah": 98,
+      "first_position_name": "al-Bayyina",
+      "last_position_surah": 97,
+      "last_position_name": "al-Qadr",
+      "wrap_edge": 0.576029,
+      "rank_ascending": 28
+    },
+    {
+      "shift_k": 83,
+      "first_position_surah": 83,
+      "first_position_name": "al-Muṭaffifīn",
+      "last_position_surah": 82,
+      "last_position_name": "al-Infiṭār",
+      "wrap_edge": 0.577005,
+      "rank_ascending": 29
+    },
+    {
+      "shift_k": 99,
+      "first_position_surah": 99,
+      "first_position_name": "al-Zalzala",
+      "last_position_surah": 98,
+      "last_position_name": "al-Bayyina",
+      "wrap_edge": 0.581233,
+      "rank_ascending": 30
+    },
+    {
+      "shift_k": 85,
+      "first_position_surah": 85,
+      "first_position_name": "al-Burūj",
+      "last_position_surah": 84,
+      "last_position_name": "al-Inshiqāq",
+      "wrap_edge": 0.584345,
+      "rank_ascending": 31
+    },
+    {
+      "shift_k": 3,
+      "first_position_surah": 3,
+      "first_position_name": "Āl ʿImrān",
+      "last_position_surah": 2,
+      "last_position_name": "al-Baqara",
+      "wrap_edge": 0.63093,
+      "rank_ascending": 32
+    },
+    {
+      "shift_k": 90,
+      "first_position_surah": 90,
+      "first_position_name": "al-Balad",
+      "last_position_surah": 89,
+      "last_position_name": "al-Fajr",
+      "wrap_edge": 0.632635,
+      "rank_ascending": 33
+    },
+    {
+      "shift_k": 81,
+      "first_position_surah": 81,
+      "first_position_name": "al-Takwīr",
+      "last_position_surah": 80,
+      "last_position_name": "ʿAbasa",
+      "wrap_edge": 0.635376,
+      "rank_ascending": 34
+    },
+    {
+      "shift_k": 84,
+      "first_position_surah": 84,
+      "first_position_name": "al-Inshiqāq",
+      "last_position_surah": 83,
+      "last_position_name": "al-Muṭaffifīn",
+      "wrap_edge": 0.652163,
+      "rank_ascending": 35
+    },
+    {
+      "shift_k": 89,
+      "first_position_surah": 89,
+      "first_position_name": "al-Fajr",
+      "last_position_surah": 88,
+      "last_position_name": "al-Ghāshiya",
+      "wrap_edge": 0.657287,
+      "rank_ascending": 36
+    },
+    {
+      "shift_k": 63,
+      "first_position_surah": 63,
+      "first_position_name": "al-Munāfiqūn",
+      "last_position_surah": 62,
+      "last_position_name": "al-Jumuʿa",
+      "wrap_edge": 0.685961,
+      "rank_ascending": 37
+    },
+    {
+      "shift_k": 64,
+      "first_position_surah": 64,
+      "first_position_name": "al-Taghābun",
+      "last_position_surah": 63,
+      "last_position_name": "al-Munāfiqūn",
+      "wrap_edge": 0.695406,
+      "rank_ascending": 38
+    },
+    {
+      "shift_k": 78,
+      "first_position_surah": 78,
+      "first_position_name": "al-Nabaʾ",
+      "last_position_surah": 77,
+      "last_position_name": "al-Mursalāt",
+      "wrap_edge": 0.703319,
+      "rank_ascending": 39
+    },
+    {
+      "shift_k": 80,
+      "first_position_surah": 80,
+      "first_position_name": "ʿAbasa",
+      "last_position_surah": 79,
+      "last_position_name": "al-Nāziʿāt",
+      "wrap_edge": 0.706355,
+      "rank_ascending": 40
+    },
+    {
+      "shift_k": 7,
+      "first_position_surah": 7,
+      "first_position_name": "al-Aʿrāf",
+      "last_position_surah": 6,
+      "last_position_name": "al-Anʿām",
+      "wrap_edge": 0.720799,
+      "rank_ascending": 41
+    },
+    {
+      "shift_k": 79,
+      "first_position_surah": 79,
+      "first_position_name": "al-Nāziʿāt",
+      "last_position_surah": 78,
+      "last_position_name": "al-Nabaʾ",
+      "wrap_edge": 0.720817,
+      "rank_ascending": 42
+    },
+    {
+      "shift_k": 62,
+      "first_position_surah": 62,
+      "first_position_name": "al-Jumuʿa",
+      "last_position_surah": 61,
+      "last_position_name": "al-Ṣaff",
+      "wrap_edge": 0.734549,
+      "rank_ascending": 43
+    },
+    {
+      "shift_k": 52,
+      "first_position_surah": 52,
+      "first_position_name": "al-Ṭūr",
+      "last_position_surah": 51,
+      "last_position_name": "al-Dhāriyāt",
+      "wrap_edge": 0.754458,
+      "rank_ascending": 44
+    },
+    {
+      "shift_k": 74,
+      "first_position_surah": 74,
+      "first_position_name": "al-Muddaththir",
+      "last_position_surah": 73,
+      "last_position_name": "al-Muzzammil",
+      "wrap_edge": 0.761384,
+      "rank_ascending": 45
+    },
+    {
+      "shift_k": 65,
+      "first_position_surah": 65,
+      "first_position_name": "al-Ṭalāq",
+      "last_position_surah": 64,
+      "last_position_name": "al-Taghābun",
+      "wrap_edge": 0.777412,
+      "rank_ascending": 46
+    },
+    {
+      "shift_k": 5,
+      "first_position_surah": 5,
+      "first_position_name": "al-Māʾida",
+      "last_position_surah": 4,
+      "last_position_name": "al-Nisāʾ",
+      "wrap_edge": 0.778367,
+      "rank_ascending": 47
+    },
+    {
+      "shift_k": 14,
+      "first_position_surah": 14,
+      "first_position_name": "Ibrāhīm",
+      "last_position_surah": 13,
+      "last_position_name": "al-Raʿd",
+      "wrap_edge": 0.783843,
+      "rank_ascending": 48
+    },
+    {
+      "shift_k": 73,
+      "first_position_surah": 73,
+      "first_position_name": "al-Muzzammil",
+      "last_position_surah": 72,
+      "last_position_name": "al-Jinn",
+      "wrap_edge": 0.792572,
+      "rank_ascending": 49
+    },
+    {
+      "shift_k": 4,
+      "first_position_surah": 4,
+      "first_position_name": "al-Nisāʾ",
+      "last_position_surah": 3,
+      "last_position_name": "Āl ʿImrān",
+      "wrap_edge": 0.793084,
+      "rank_ascending": 50
+    },
+    {
+      "shift_k": 40,
+      "first_position_surah": 40,
+      "first_position_name": "Ghāfir",
+      "last_position_surah": 39,
+      "last_position_name": "al-Zumar",
+      "wrap_edge": 0.795302,
+      "rank_ascending": 51
+    },
+    {
+      "shift_k": 28,
+      "first_position_surah": 28,
+      "first_position_name": "al-Qaṣaṣ",
+      "last_position_surah": 27,
+      "last_position_name": "al-Naml",
+      "wrap_edge": 0.804754,
+      "rank_ascending": 52
+    },
+    {
+      "shift_k": 11,
+      "first_position_surah": 11,
+      "first_position_name": "Hūd",
+      "last_position_surah": 10,
+      "last_position_name": "Yūnus",
+      "wrap_edge": 0.805201,
+      "rank_ascending": 53
+    },
+    {
+      "shift_k": 61,
+      "first_position_surah": 61,
+      "first_position_name": "al-Ṣaff",
+      "last_position_surah": 60,
+      "last_position_name": "al-Mumtaḥana",
+      "wrap_edge": 0.807414,
+      "rank_ascending": 54
+    },
+    {
+      "shift_k": 72,
+      "first_position_surah": 72,
+      "first_position_name": "al-Jinn",
+      "last_position_surah": 71,
+      "last_position_name": "Nūḥ",
+      "wrap_edge": 0.807578,
+      "rank_ascending": 55
+    },
+    {
+      "shift_k": 75,
+      "first_position_surah": 75,
+      "first_position_name": "al-Qiyāma",
+      "last_position_surah": 74,
+      "last_position_name": "al-Muddaththir",
+      "wrap_edge": 0.809957,
+      "rank_ascending": 56
+    },
+    {
+      "shift_k": 46,
+      "first_position_surah": 46,
+      "first_position_name": "al-Aḥqāf",
+      "last_position_surah": 45,
+      "last_position_name": "al-Jāthiya",
+      "wrap_edge": 0.811217,
+      "rank_ascending": 57
+    },
+    {
+      "shift_k": 60,
+      "first_position_surah": 60,
+      "first_position_name": "al-Mumtaḥana",
+      "last_position_surah": 59,
+      "last_position_name": "al-Ḥashr",
+      "wrap_edge": 0.816186,
+      "rank_ascending": 58
+    },
+    {
+      "shift_k": 76,
+      "first_position_surah": 76,
+      "first_position_name": "al-Insān",
+      "last_position_surah": 75,
+      "last_position_name": "al-Qiyāma",
+      "wrap_edge": 0.816524,
+      "rank_ascending": 59
+    },
+    {
+      "shift_k": 70,
+      "first_position_surah": 70,
+      "first_position_name": "al-Maʿārij",
+      "last_position_surah": 69,
+      "last_position_name": "al-Ḥāqqa",
+      "wrap_edge": 0.820207,
+      "rank_ascending": 60
+    },
+    {
+      "shift_k": 51,
+      "first_position_surah": 51,
+      "first_position_name": "al-Dhāriyāt",
+      "last_position_surah": 50,
+      "last_position_name": "Qāf",
+      "wrap_edge": 0.823948,
+      "rank_ascending": 61
+    },
+    {
+      "shift_k": 59,
+      "first_position_surah": 59,
+      "first_position_name": "al-Ḥashr",
+      "last_position_surah": 58,
+      "last_position_name": "al-Mujādila",
+      "wrap_edge": 0.830137,
+      "rank_ascending": 62
+    },
+    {
+      "shift_k": 69,
+      "first_position_surah": 69,
+      "first_position_name": "al-Ḥāqqa",
+      "last_position_surah": 68,
+      "last_position_name": "al-Qalam",
+      "wrap_edge": 0.833625,
+      "rank_ascending": 63
+    },
+    {
+      "shift_k": 68,
+      "first_position_surah": 68,
+      "first_position_name": "al-Qalam",
+      "last_position_surah": 67,
+      "last_position_name": "al-Mulk",
+      "wrap_edge": 0.837853,
+      "rank_ascending": 64
+    },
+    {
+      "shift_k": 41,
+      "first_position_surah": 41,
+      "first_position_name": "Fuṣṣilat",
+      "last_position_surah": 40,
+      "last_position_name": "Ghāfir",
+      "wrap_edge": 0.840334,
+      "rank_ascending": 65
+    },
+    {
+      "shift_k": 77,
+      "first_position_surah": 77,
+      "first_position_name": "al-Mursalāt",
+      "last_position_surah": 76,
+      "last_position_name": "al-Insān",
+      "wrap_edge": 0.843038,
+      "rank_ascending": 66
+    },
+    {
+      "shift_k": 45,
+      "first_position_surah": 45,
+      "first_position_name": "al-Jāthiya",
+      "last_position_surah": 44,
+      "last_position_name": "al-Dukhān",
+      "wrap_edge": 0.843896,
+      "rank_ascending": 67
+    },
+    {
+      "shift_k": 42,
+      "first_position_surah": 42,
+      "first_position_name": "al-Shūrā",
+      "last_position_surah": 41,
+      "last_position_name": "Fuṣṣilat",
+      "wrap_edge": 0.854007,
+      "rank_ascending": 68
+    },
+    {
+      "shift_k": 49,
+      "first_position_surah": 49,
+      "first_position_name": "al-Ḥujurāt",
+      "last_position_surah": 48,
+      "last_position_name": "al-Fatḥ",
+      "wrap_edge": 0.858354,
+      "rank_ascending": 69
+    },
+    {
+      "shift_k": 6,
+      "first_position_surah": 6,
+      "first_position_name": "al-Anʿām",
+      "last_position_surah": 5,
+      "last_position_name": "al-Māʾida",
+      "wrap_edge": 0.860156,
+      "rank_ascending": 70
+    },
+    {
+      "shift_k": 71,
+      "first_position_surah": 71,
+      "first_position_name": "Nūḥ",
+      "last_position_surah": 70,
+      "last_position_name": "al-Maʿārij",
+      "wrap_edge": 0.862234,
+      "rank_ascending": 71
+    },
+    {
+      "shift_k": 44,
+      "first_position_surah": 44,
+      "first_position_name": "al-Dukhān",
+      "last_position_surah": 43,
+      "last_position_name": "al-Zukhruf",
+      "wrap_edge": 0.864706,
+      "rank_ascending": 72
+    },
+    {
+      "shift_k": 66,
+      "first_position_surah": 66,
+      "first_position_name": "al-Taḥrīm",
+      "last_position_surah": 65,
+      "last_position_name": "al-Ṭalāq",
+      "wrap_edge": 0.870463,
+      "rank_ascending": 73
+    },
+    {
+      "shift_k": 29,
+      "first_position_surah": 29,
+      "first_position_name": "al-ʿAnkabūt",
+      "last_position_surah": 28,
+      "last_position_name": "al-Qaṣaṣ",
+      "wrap_edge": 0.886506,
+      "rank_ascending": 74
+    },
+    {
+      "shift_k": 58,
+      "first_position_surah": 58,
+      "first_position_name": "al-Mujādila",
+      "last_position_surah": 57,
+      "last_position_name": "al-Ḥadīd",
+      "wrap_edge": 0.88904,
+      "rank_ascending": 75
+    },
+    {
+      "shift_k": 48,
+      "first_position_surah": 48,
+      "first_position_name": "al-Fatḥ",
+      "last_position_surah": 47,
+      "last_position_name": "Muḥammad",
+      "wrap_edge": 0.889264,
+      "rank_ascending": 76
+    },
+    {
+      "shift_k": 37,
+      "first_position_surah": 37,
+      "first_position_name": "al-Ṣāffāt",
+      "last_position_surah": 36,
+      "last_position_name": "Yā-Sīn",
+      "wrap_edge": 0.900232,
+      "rank_ascending": 77
+    },
+    {
+      "shift_k": 18,
+      "first_position_surah": 18,
+      "first_position_name": "al-Kahf",
+      "last_position_surah": 17,
+      "last_position_name": "al-Isrāʾ",
+      "wrap_edge": 0.901301,
+      "rank_ascending": 78
+    },
+    {
+      "shift_k": 38,
+      "first_position_surah": 38,
+      "first_position_name": "Ṣād",
+      "last_position_surah": 37,
+      "last_position_name": "al-Ṣāffāt",
+      "wrap_edge": 0.903476,
+      "rank_ascending": 79
+    },
+    {
+      "shift_k": 31,
+      "first_position_surah": 31,
+      "first_position_name": "Luqmān",
+      "last_position_surah": 30,
+      "last_position_name": "al-Rūm",
+      "wrap_edge": 0.90887,
+      "rank_ascending": 80
+    },
+    {
+      "shift_k": 32,
+      "first_position_surah": 32,
+      "first_position_name": "al-Sajda",
+      "last_position_surah": 31,
+      "last_position_name": "Luqmān",
+      "wrap_edge": 0.909461,
+      "rank_ascending": 81
+    },
+    {
+      "shift_k": 9,
+      "first_position_surah": 9,
+      "first_position_name": "al-Tawba",
+      "last_position_surah": 8,
+      "last_position_name": "al-Anfāl",
+      "wrap_edge": 0.910997,
+      "rank_ascending": 82
+    },
+    {
+      "shift_k": 30,
+      "first_position_surah": 30,
+      "first_position_name": "al-Rūm",
+      "last_position_surah": 29,
+      "last_position_name": "al-ʿAnkabūt",
+      "wrap_edge": 0.91533,
+      "rank_ascending": 83
+    },
+    {
+      "shift_k": 19,
+      "first_position_surah": 19,
+      "first_position_name": "Maryam",
+      "last_position_surah": 18,
+      "last_position_name": "al-Kahf",
+      "wrap_edge": 0.925359,
+      "rank_ascending": 84
+    },
+    {
+      "shift_k": 35,
+      "first_position_surah": 35,
+      "first_position_name": "Fāṭir",
+      "last_position_surah": 34,
+      "last_position_name": "Sabaʾ",
+      "wrap_edge": 0.926803,
+      "rank_ascending": 85
+    },
+    {
+      "shift_k": 53,
+      "first_position_surah": 53,
+      "first_position_name": "al-Najm",
+      "last_position_surah": 52,
+      "last_position_name": "al-Ṭūr",
+      "wrap_edge": 0.928275,
+      "rank_ascending": 86
+    },
+    {
+      "shift_k": 39,
+      "first_position_surah": 39,
+      "first_position_name": "al-Zumar",
+      "last_position_surah": 38,
+      "last_position_name": "Ṣād",
+      "wrap_edge": 0.936449,
+      "rank_ascending": 87
+    },
+    {
+      "shift_k": 67,
+      "first_position_surah": 67,
+      "first_position_name": "al-Mulk",
+      "last_position_surah": 66,
+      "last_position_name": "al-Taḥrīm",
+      "wrap_edge": 0.940813,
+      "rank_ascending": 88
+    },
+    {
+      "shift_k": 36,
+      "first_position_surah": 36,
+      "first_position_name": "Yā-Sīn",
+      "last_position_surah": 35,
+      "last_position_name": "Fāṭir",
+      "wrap_edge": 0.943094,
+      "rank_ascending": 89
+    },
+    {
+      "shift_k": 23,
+      "first_position_surah": 23,
+      "first_position_name": "al-Muʾminūn",
+      "last_position_surah": 22,
+      "last_position_name": "al-Ḥajj",
+      "wrap_edge": 0.952979,
+      "rank_ascending": 90
+    },
+    {
+      "shift_k": 27,
+      "first_position_surah": 27,
+      "first_position_name": "al-Naml",
+      "last_position_surah": 26,
+      "last_position_name": "al-Shuʿarāʾ",
+      "wrap_edge": 0.958539,
+      "rank_ascending": 91
+    },
+    {
+      "shift_k": 22,
+      "first_position_surah": 22,
+      "first_position_name": "al-Ḥajj",
+      "last_position_surah": 21,
+      "last_position_name": "al-Anbiyāʾ",
+      "wrap_edge": 0.959174,
+      "rank_ascending": 92
+    },
+    {
+      "shift_k": 26,
+      "first_position_surah": 26,
+      "first_position_name": "al-Shuʿarāʾ",
+      "last_position_surah": 25,
+      "last_position_name": "al-Furqān",
+      "wrap_edge": 0.959584,
+      "rank_ascending": 93
+    },
+    {
+      "shift_k": 17,
+      "first_position_surah": 17,
+      "first_position_name": "al-Isrāʾ",
+      "last_position_surah": 16,
+      "last_position_name": "al-Naḥl",
+      "wrap_edge": 0.962333,
+      "rank_ascending": 94
+    },
+    {
+      "shift_k": 12,
+      "first_position_surah": 12,
+      "first_position_name": "Yūsuf",
+      "last_position_surah": 11,
+      "last_position_name": "Hūd",
+      "wrap_edge": 0.963772,
+      "rank_ascending": 95
+    },
+    {
+      "shift_k": 21,
+      "first_position_surah": 21,
+      "first_position_name": "al-Anbiyāʾ",
+      "last_position_surah": 20,
+      "last_position_name": "Ṭā-Hā",
+      "wrap_edge": 0.972137,
+      "rank_ascending": 96
+    },
+    {
+      "shift_k": 20,
+      "first_position_surah": 20,
+      "first_position_name": "Ṭā-Hā",
+      "last_position_surah": 19,
+      "last_position_name": "Maryam",
+      "wrap_edge": 0.980606,
+      "rank_ascending": 97
+    },
+    {
+      "shift_k": 47,
+      "first_position_surah": 47,
+      "first_position_name": "Muḥammad",
+      "last_position_surah": 46,
+      "last_position_name": "al-Aḥqāf",
+      "wrap_edge": 0.990505,
+      "rank_ascending": 98
+    },
+    {
+      "shift_k": 43,
+      "first_position_surah": 43,
+      "first_position_name": "al-Zukhruf",
+      "last_position_surah": 42,
+      "last_position_name": "al-Shūrā",
+      "wrap_edge": 0.991218,
+      "rank_ascending": 99
+    },
+    {
+      "shift_k": 16,
+      "first_position_surah": 16,
+      "first_position_name": "al-Naḥl",
+      "last_position_surah": 15,
+      "last_position_name": "al-Ḥijr",
+      "wrap_edge": 1.002022,
+      "rank_ascending": 100
+    },
+    {
+      "shift_k": 50,
+      "first_position_surah": 50,
+      "first_position_name": "Qāf",
+      "last_position_surah": 49,
+      "last_position_name": "al-Ḥujurāt",
+      "wrap_edge": 1.003462,
+      "rank_ascending": 101
+    },
+    {
+      "shift_k": 54,
+      "first_position_surah": 54,
+      "first_position_name": "al-Qamar",
+      "last_position_surah": 53,
+      "last_position_name": "al-Najm",
+      "wrap_edge": 1.006282,
+      "rank_ascending": 102
+    },
+    {
+      "shift_k": 15,
+      "first_position_surah": 15,
+      "first_position_name": "al-Ḥijr",
+      "last_position_surah": 14,
+      "last_position_name": "Ibrāhīm",
+      "wrap_edge": 1.009111,
+      "rank_ascending": 103
+    },
+    {
+      "shift_k": 8,
+      "first_position_surah": 8,
+      "first_position_name": "al-Anfāl",
+      "last_position_surah": 7,
+      "last_position_name": "al-Aʿrāf",
+      "wrap_edge": 1.030068,
+      "rank_ascending": 104
+    },
+    {
+      "shift_k": 24,
+      "first_position_surah": 24,
+      "first_position_name": "al-Nūr",
+      "last_position_surah": 23,
+      "last_position_name": "al-Muʾminūn",
+      "wrap_edge": 1.049734,
+      "rank_ascending": 105
+    },
+    {
+      "shift_k": 13,
+      "first_position_surah": 13,
+      "first_position_name": "al-Raʿd",
+      "last_position_surah": 12,
+      "last_position_name": "Yūsuf",
+      "wrap_edge": 1.068294,
+      "rank_ascending": 106
+    },
+    {
+      "shift_k": 10,
+      "first_position_surah": 10,
+      "first_position_name": "Yūnus",
+      "last_position_surah": 9,
+      "last_position_name": "al-Tawba",
+      "wrap_edge": 1.068939,
+      "rank_ascending": 107
+    },
+    {
+      "shift_k": 34,
+      "first_position_surah": 34,
+      "first_position_name": "Sabaʾ",
+      "last_position_surah": 33,
+      "last_position_name": "al-Aḥzāb",
+      "wrap_edge": 1.115391,
+      "rank_ascending": 108
+    },
+    {
+      "shift_k": 57,
+      "first_position_surah": 57,
+      "first_position_name": "al-Ḥadīd",
+      "last_position_surah": 56,
+      "last_position_name": "al-Wāqiʿa",
+      "wrap_edge": 1.115634,
+      "rank_ascending": 109
+    },
+    {
+      "shift_k": 25,
+      "first_position_surah": 25,
+      "first_position_name": "al-Furqān",
+      "last_position_surah": 24,
+      "last_position_name": "al-Nūr",
+      "wrap_edge": 1.129055,
+      "rank_ascending": 110
+    },
+    {
+      "shift_k": 33,
+      "first_position_surah": 33,
+      "first_position_name": "al-Aḥzāb",
+      "last_position_surah": 32,
+      "last_position_name": "al-Sajda",
+      "wrap_edge": 1.132955,
+      "rank_ascending": 111
+    },
+    {
+      "shift_k": 56,
+      "first_position_surah": 56,
+      "first_position_name": "al-Wāqiʿa",
+      "last_position_surah": 55,
+      "last_position_name": "al-Raḥmān",
+      "wrap_edge": 1.149328,
+      "rank_ascending": 112
+    },
+    {
+      "shift_k": 55,
+      "first_position_surah": 55,
+      "first_position_name": "al-Raḥmān",
+      "last_position_surah": 54,
+      "last_position_name": "al-Qamar",
+      "wrap_edge": 1.151559,
+      "rank_ascending": 113
+    },
+    {
+      "shift_k": 2,
+      "first_position_surah": 2,
+      "first_position_name": "al-Baqara",
+      "last_position_surah": 1,
+      "last_position_name": "al-Fātiḥa",
+      "wrap_edge": 1.177623,
+      "rank_ascending": 114
+    }
+  ],
+  "verdict": "NULL",
+  "interpretation": "P3 dominant, M1-neutral. Q 1 is arbitrary mid-pack (rank 18/114). Consistent with pure liturgical override."
+}
