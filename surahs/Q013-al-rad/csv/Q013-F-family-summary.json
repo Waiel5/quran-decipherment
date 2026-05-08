@@ -1,0 +1,356 @@
+{
+  "family": "Q013-F-family-2026-05-07",
+  "bonferroni_k": 5,
+  "alpha_bon": 0.01,
+  "seed": 20260507,
+  "n_perm": 10000,
+  "tests": [
+    {
+      "test_id": "Q013-F-01",
+      "title": "ALMR letter-family-lattice position — BETWEEN ALM and ALR",
+      "ALM_cluster": [
+        2,
+        3,
+        29,
+        30,
+        31,
+        32
+      ],
+      "ALR_cluster": [
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "Q13_FR_to_each_ALM": [
+        [
+          2,
+          0.90952
+        ],
+        [
+          3,
+          0.89318
+        ],
+        [
+          29,
+          0.882072
+        ],
+        [
+          30,
+          0.888409
+        ],
+        [
+          31,
+          0.850477
+        ],
+        [
+          32,
+          0.921149
+        ]
+      ],
+      "Q13_FR_to_each_ALR": [
+        [
+          10,
+          0.911399
+        ],
+        [
+          11,
+          0.919478
+        ],
+        [
+          12,
+          1.068294
+        ],
+        [
+          14,
+          0.783843
+        ],
+        [
+          15,
+          0.965596
+        ]
+      ],
+      "mean_FR_Q13_to_ALM": 0.8908011666666668,
+      "mean_FR_Q13_to_ALR": 0.9297219999999999,
+      "ALM_internal_pairwise_mean": 0.9256812,
+      "ALR_internal_pairwise_mean": 0.9551825,
+      "corpus_pairwise_FR_median": 0.95615,
+      "BETWEEN_indicator_observed": 1,
+      "p_perm_random_surah_also_BETWEEN": 0.1787,
+      "n_perm": 10000,
+      "alpha_bon": 0.01,
+      "interpretation": "p_perm_random_surah_also_BETWEEN = fraction of random non-Q13 substitutions that ALSO satisfy BETWEEN (mean to BOTH clusters below pairwise median). Low p_perm = Q 13's BETWEEN status is statistically distinctive.",
+      "verdict": "NULL",
+      "Q13_closer_to_ALM_or_ALR": "ALM",
+      "ALM_minus_ALR_mean": -0.03892083333333318
+    },
+    {
+      "test_id": "Q013-F-02",
+      "title": "Thunder-praises-God corpus uniqueness — yusabbiḥu al-raʿdu bi-ḥamdihi",
+      "raad_lemma_attestations": [
+        {
+          "surah": 2,
+          "verse": 19,
+          "word": "ورعد"
+        },
+        {
+          "surah": 13,
+          "verse": 13,
+          "word": "الرعد"
+        }
+      ],
+      "n_raad_attestations": 2,
+      "co_occurrence_verses": [
+        {
+          "surah": 13,
+          "verse": 13,
+          "raad_word": "الرعد",
+          "text": "ويسبح الرعد بحمده والملائكة من خيفته ويرسل الصواعق فيصيب بها من يشاء وهم يجادلون في الله وهو شديد المحال",
+          "raʿd_is_subject_of_praise_verb": true
+        }
+      ],
+      "n_co_occurrence": 1,
+      "n_raad_subject_of_praise_verb": 1,
+      "permutation_random_rare_noun_co_occurrence_rate": 0.13432835820895522,
+      "n_perm_trials_with_rare_substring": 134,
+      "verdict": "CONFIRMED",
+      "narrative": "Q 13:13 is the unique verse in the corpus where the lemma raʿd (thunder) is the grammatical subject of a divine-praise verb (yusabbiḥu). Q 2:19 contains raʿdun in a noun-list (storm-elements in a parable about hypocrites), with no praise-verb governing raʿd. Brq (lightning) and ṣawāʿiq (lightning-bolts) appear in Q 2:19, Q 13:12, Q 13:13, Q 30:24, Q 51:44 — never as subject of a praise-verb. The construction 'storm-element-as-divine-discourse-agent' is a corpus-hapax at Q 13:13."
+    },
+    {
+      "test_id": "Q013-F-03",
+      "title": "Chronology-architecture dissociation — Q 13 closer to Meccan centroid (Q5/6/7) than Medinan centroid (Q2/3/4)",
+      "v13": [
+        0.3976204387133688,
+        0.9495550247025136,
+        0.8682623098183962,
+        1.7207895681143606
+      ],
+      "M_meccan_centroid_Q5_6_7": [
+        1.3691498160392335,
+        -1.1930442708000908,
+        -0.6237323191564225,
+        -0.29331239843428253
+      ],
+      "Med_medinan_centroid_Q2_3_4": [
+        1.7440884127701053,
+        -1.186887907814595,
+        -0.2793522281995813,
+        0.09020485802654755
+      ],
+      "d_v13_M": 3.4376235652904548,
+      "d_v13_Med": 3.2176373371940366,
+      "delta_Med_minus_M": -0.2199862280964182,
+      "closer_to_M": false,
+      "axis_breakdown": [
+        {
+          "axis": "z_FR_mean",
+          "v13": 0.3976204387133688,
+          "M": 1.3691498160392335,
+          "Med": 1.7440884127701053,
+          "d_M_axis": 0.9715293773258646,
+          "d_Med_axis": 1.3464679740567365,
+          "closer_to": "M"
+        },
+        {
+          "axis": "z_local_cohesion",
+          "v13": 0.9495550247025136,
+          "M": -1.1930442708000908,
+          "Med": -1.186887907814595,
+          "d_M_axis": 2.1425992955026043,
+          "d_Med_axis": 2.1364429325171086,
+          "closer_to": "Med"
+        },
+        {
+          "axis": "sig_A",
+          "v13": 0.8682623098183962,
+          "M": -0.6237323191564225,
+          "Med": -0.2793522281995813,
+          "d_M_axis": 1.4919946289748187,
+          "d_Med_axis": 1.1476145380179776,
+          "closer_to": "Med"
+        },
+        {
+          "axis": "z_rhyme_entropy",
+          "v13": 1.7207895681143606,
+          "M": -0.29331239843428253,
+          "Med": 0.09020485802654755,
+          "d_M_axis": 2.014101966548643,
+          "d_Med_axis": 1.630584710087813,
+          "closer_to": "Med"
+        }
+      ],
+      "p_chance_baseline_random_triplets": 0.4951,
+      "n_perm": 10000,
+      "alpha_bon": 0.01,
+      "verdict": "NULL — direction reversed (pre-commit violation)"
+    },
+    {
+      "test_id": "Q013-F-04",
+      "title": "ALR-cluster membership of Q 13 — FR-distance test",
+      "Q13_to_ALR_distances": [
+        [
+          10,
+          0.911399
+        ],
+        [
+          11,
+          0.919478
+        ],
+        [
+          12,
+          1.068294
+        ],
+        [
+          14,
+          0.783843
+        ],
+        [
+          15,
+          0.965596
+        ]
+      ],
+      "mean_FR_Q13_to_ALR": 0.9297219999999999,
+      "ALR_internal_pairwise_pairs": [
+        {
+          "pair": [
+            10,
+            11
+          ],
+          "dist": 0.805201
+        },
+        {
+          "pair": [
+            10,
+            12
+          ],
+          "dist": 1.005986
+        },
+        {
+          "pair": [
+            10,
+            14
+          ],
+          "dist": 0.88109
+        },
+        {
+          "pair": [
+            10,
+            15
+          ],
+          "dist": 0.964862
+        },
+        {
+          "pair": [
+            11,
+            12
+          ],
+          "dist": 0.963772
+        },
+        {
+          "pair": [
+            11,
+            14
+          ],
+          "dist": 0.896227
+        },
+        {
+          "pair": [
+            11,
+            15
+          ],
+          "dist": 0.952179
+        },
+        {
+          "pair": [
+            12,
+            14
+          ],
+          "dist": 1.075726
+        },
+        {
+          "pair": [
+            12,
+            15
+          ],
+          "dist": 0.997671
+        },
+        {
+          "pair": [
+            14,
+            15
+          ],
+          "dist": 1.009111
+        }
+      ],
+      "mean_ALR_internal_pairwise": 0.9551825,
+      "delta_observed": -0.025460500000000108,
+      "delta_threshold": 0.05,
+      "in_threshold": true,
+      "p_perm_random_substitution_no_better": 0.143,
+      "n_perm": 10000,
+      "alpha_bon": 0.01,
+      "null_distribution_stats": {
+        "min": -0.11389330000000009,
+        "median": 0.08553109999999986,
+        "max": 0.3634036999999999,
+        "mean": 0.07752329205999994
+      },
+      "verdict": "NULL"
+    },
+    {
+      "test_id": "Q013-F-05",
+      "title": "Q 13 chronology-hadith audit + architecture-invariance",
+      "sub_test_a_chronology_hadith_audit": {
+        "sources_on_disk": {
+          "al-Suyūṭī": "Medinan (al-Itqān nawʿ 1, citing Ibn ʿAbbās chains)",
+          "al-Ṭabarī": "BOTH cited; intro to Q 13 in Jāmiʿ al-bayān reports Medinan AND Meccan classifications",
+          "Ibn ʿAbbās (Mujāhid/ʿIkrima chain)": "Meccan",
+          "Nöldeke": "Late Meccan (Geschichte des Qorâns; rev order #90)",
+          "data/revelation-order.csv": "Tanzil Egyptian Standard: Medinan (rev #96); Wikipedia Nöldeke: Late Meccan (#90)"
+        },
+        "n_meccan_classifications": 4,
+        "n_medinan_classifications": 3,
+        "is_contested": true
+      },
+      "sub_test_b_architectural_distance": {
+        "v13": [
+          0.3976204387133688,
+          0.9495550247025136,
+          0.8682623098183962,
+          1.7207895681143606
+        ],
+        "v14_meccan_reference": [
+          0.5198898311328766,
+          1.1097126169882665,
+          1.144269518612711,
+          2.0662325275613185
+        ],
+        "v76_medinan_reference": [
+          -0.1484598197890369,
+          -0.8938544427602615,
+          -1.3741561878484265,
+          -1.3940122881242307
+        ],
+        "d_v13_v14": 0.4859126220086345,
+        "d_v13_v76": 4.292644107745615,
+        "closer_to_Q14_meccan_reference": true
+      },
+      "sub_test_c_h_new_590_null_classification": {
+        "delta_pct": -3.85,
+        "p_greater_W": 0.5256,
+        "classification": "NULL",
+        "interpretation": "Q 13 is NOT a content outlier in window {Q 10-16}; fits its mushaf cohort, consistent with architecture-invariance."
+      },
+      "n_sub_tests_pass": 3,
+      "verdict": "CONFIRMED"
+    }
+  ],
+  "family_verdict_summary": {
+    "Q013-F-01": "NULL",
+    "Q013-F-02": "CONFIRMED",
+    "Q013-F-03": "NULL — direction reversed (pre-commit violation)",
+    "Q013-F-04": "NULL",
+    "Q013-F-05": "CONFIRMED"
+  }
+}

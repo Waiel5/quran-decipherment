@@ -1,0 +1,43 @@
+{
+  "finding_id": "Q026-F-04",
+  "prereg_sha": "2f5a07f6792215a41ccfbcec7d70ef1e6171e84a6611f56d0f376d14c909d8f4",
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, length-normalized-TF)",
+  "method": "Cosine distance on 3 Moses-narrative blocks; permutation by 3-way root-token partition",
+  "blocks": {
+    "M26 (Q26 vv 10-67, ṬSM)": {
+      "surah": 26,
+      "v_start": 10,
+      "v_end": 67,
+      "n_root_tokens": 241
+    },
+    "M28 (Q28 vv 3-43, ṬSM)": {
+      "surah": 28,
+      "v_start": 3,
+      "v_end": 43,
+      "n_root_tokens": 423
+    },
+    "M20 (Q20 vv 9-79, ṬH)": {
+      "surah": 20,
+      "v_start": 9,
+      "v_end": 79,
+      "n_root_tokens": 397
+    }
+  },
+  "block_distances_root_cosine": {
+    "d_M26_M28": 0.26944226284816697,
+    "d_M26_M20": 0.19544754371753748,
+    "d_M28_M20": 0.2639876972608154
+  },
+  "margin": -0.0739947191306295,
+  "TSM_pair_closest": false,
+  "p_perm_one_sided_upper": 0.777022297770223,
+  "n_perm": 10000,
+  "seed": 20260507,
+  "alpha_bonferroni": 0.01,
+  "verdict": "NULL_OR_VIOLATION",
+  "context_whole_surah_FR_distances": {
+    "d_Q26_Q28": 0.953709,
+    "d_Q26_Q20": 0.955931,
+    "d_Q28_Q20": 0.894788
+  }
+}

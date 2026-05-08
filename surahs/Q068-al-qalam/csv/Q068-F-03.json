@@ -1,0 +1,40 @@
+{
+  "finding_id": "Q068-F-03",
+  "prereg_sha256": "ce90bfc4654b5ce31d469248358d5c3c327c00f05d8a10af9725dda6e59b23e2",
+  "date_run": "2026-05-07",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "singletons": [
+    38,
+    50,
+    68
+  ],
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots for axis B; orthographic-token graphemes for axis A; basmala-counted-only-in-Q1, Hafs-Kufan)",
+  "axis_A_word_length": {
+    "U_singleton": 52033152.5,
+    "U_rest": 55597539.5,
+    "z": -2.170111371875293,
+    "p_two_sided": 0.02999840991054592,
+    "mean_singleton": 4.159687721788503,
+    "mean_rest": 4.252605121223229,
+    "median_singleton": 4,
+    "median_rest": 4,
+    "n_singleton": 1409,
+    "n_rest": 76388
+  },
+  "axis_A_verdict": "DIRECTIONAL",
+  "axis_B_root_rarity_zipf": {
+    "singleton_mean_zipf": 216.0730088495575,
+    "rest_mean_zipf": 157.66142181640308,
+    "observed_abs_diff": 58.41158703315443,
+    "observed_signed_diff_singleton_minus_rest": 58.41158703315443,
+    "p_value_perm_two_sided": 0.1064,
+    "distinct_roots_total": 1642,
+    "singleton_signed_diff_percentile": 89.4
+  },
+  "axis_B_verdict": "NULL",
+  "alpha_raw": 0.05,
+  "alpha_bonferroni_2": 0.025,
+  "joint_verdict": "CLUSTER-NULL on word-length and root-rarity (singleton-architecture, if any, must be on Q050-F-04 axes)",
+  "coordination_with_Q050_F_04": "AXIS-DISJOINT pre-registration; no Bonferroni overlap. Q050-F-04 covers FR-distance / sig_A / outlier; Q068-F-03 covers word-length / root-rarity."
+}

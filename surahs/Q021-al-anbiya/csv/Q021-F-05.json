@@ -1,0 +1,107 @@
+{
+  "test_id": "Q021-F-05",
+  "pre_reg_sha": "303446650a70ae0dbad6e03200139e8a421a29dd7ee13cd6e5753a124511ad66",
+  "pre_reg_sha_verified": true,
+  "within_cluster_pairs_sorted": [
+    {
+      "pair": [
+        16,
+        22
+      ],
+      "d": 0.7559293781946199,
+      "rank_within_cluster": 1
+    },
+    {
+      "pair": [
+        21,
+        23
+      ],
+      "d": 0.828701913270233,
+      "rank_within_cluster": 2
+    },
+    {
+      "pair": [
+        23,
+        25
+      ],
+      "d": 0.8327369492631314,
+      "rank_within_cluster": 3
+    },
+    {
+      "pair": [
+        21,
+        25
+      ],
+      "d": 0.8537292081426284,
+      "rank_within_cluster": 4
+    },
+    {
+      "pair": [
+        16,
+        25
+      ],
+      "d": 0.8647574663945466,
+      "rank_within_cluster": 5
+    },
+    {
+      "pair": [
+        16,
+        23
+      ],
+      "d": 0.8668955931408879,
+      "rank_within_cluster": 6
+    },
+    {
+      "pair": [
+        16,
+        21
+      ],
+      "d": 0.9297224317586998,
+      "rank_within_cluster": 7
+    },
+    {
+      "pair": [
+        22,
+        25
+      ],
+      "d": 0.9358799457415731,
+      "rank_within_cluster": 8
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "d": 0.9529790540690284,
+      "rank_within_cluster": 9
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "d": 0.9591741197960376,
+      "rank_within_cluster": 10
+    }
+  ],
+  "q21_q22_within_cluster_d": 0.9591741197960376,
+  "q21_q22_within_cluster_rank": 10,
+  "q21_q22_within_cluster_n_pairs": 10,
+  "cell_a_locked_direction": "LOW (rank ≤ 5 of 10 within-cluster pairs)",
+  "cell_a_pass": false,
+  "cell_a_strong_top1": false,
+  "q21_q22_tsp_fraction_residual": 0.021416414580463155,
+  "q21_q22_tsp_rank_in_h720": 16,
+  "cell_b_locked_direction": "HIGH-COST (rank < 57 of 113)",
+  "cell_b_pass": true,
+  "cell_b_pre_observed": true,
+  "joint_interpretation": "NEAR-NEIGHBOR-BUT-NOT-CLUSTER",
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "verdict": "NULL-NEAR-NEIGHBOR-BUT-NOT-CLUSTER",
+  "honest_limits": [
+    "5-surah within-cluster sample (10 pairs) is small; significance not established by perm null on 10 pairs.",
+    "Cell B was already-observed before pre-reg lock; MW-7 caps at α=0.05 single-test, no Bonferroni penalty applied.",
+    "STRUCTURAL coherence operationalized as FR + TSP only; rhyme / register / munāsabah-tafsir not jointly tested."
+  ]
+}

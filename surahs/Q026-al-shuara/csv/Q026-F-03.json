@@ -1,0 +1,39 @@
+{
+  "finding_id": "Q026-F-03",
+  "prereg_sha": "c2a39ef90ec770d9932ad2549067fd774b21b9f9e4ee147e9bf687170d8fc4a2",
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, sliding-4-verse-windows)",
+  "method": "Cosine distance per 4-verse window vs surah-mean (Laplace +1); rank coda among 224 windows",
+  "n_windows": 224,
+  "coda_window_start_verse": 224,
+  "coda_distance_from_mean": 0.6030307248366544,
+  "rank_coda": 99,
+  "max_distance": 0.9363869743828793,
+  "max_distance_window_start": 78,
+  "top_5_distinct_windows": [
+    [
+      78,
+      0.9363869743828793
+    ],
+    [
+      79,
+      0.9077760701083981
+    ],
+    [
+      54,
+      0.8982191590126068
+    ],
+    [
+      170,
+      0.8918578564508948
+    ],
+    [
+      53,
+      0.8695932974849025
+    ]
+  ],
+  "p_perm_one_sided_top1": 9.999000099990002e-05,
+  "n_perm": 10000,
+  "seed": 20260507,
+  "alpha_bonferroni": 0.01,
+  "verdict": "NULL_OR_PARTIAL"
+}

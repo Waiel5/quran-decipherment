@@ -1,0 +1,33 @@
+{
+  "finding_id": "Q038-F-04",
+  "prereg_sha": "cf6f80d637c673638ec6b1f54ed95785d91b0f3c34fa65d74859ca5df2ea8bfb",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, TF-IDF on Q 38-internal vocabulary, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "method": "TF-IDF on Q38 vocabulary; mean pairwise cosine; 10000 perms",
+  "verses": {
+    "triad_range": "17-44 (28 verses)",
+    "blockA_range": "1-16 (16 verses)",
+    "blockC_range": "45-88 (44 verses)"
+  },
+  "cohesions": {
+    "triad": 0.01614911109191341,
+    "blockA": 0.02000774559225916,
+    "blockC": 0.01612762045047684,
+    "ratio_triad_to_avg_AC": 0.8938119554574009
+  },
+  "test1_internal_cohesion": {
+    "null_mean": 0.012927878770847013,
+    "null_std": 0.003019912958368742,
+    "p_greater_perm": 0.1456,
+    "pass_alpha_bon": false
+  },
+  "test2_distinctness": {
+    "p_greater_perm": 0.6233,
+    "pass_alpha_bon": false
+  },
+  "alpha_bon": 0.025,
+  "pre_commit_violation": false,
+  "n_pass_of_2": 0,
+  "verdict": "NULL"
+}

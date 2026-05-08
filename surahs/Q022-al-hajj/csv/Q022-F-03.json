@@ -1,0 +1,163 @@
+{
+  "test_id": "Q022-F-03",
+  "per_metric": {
+    "M1_FR_QAC_roots": {
+      "q22_mean_3nearest": 0.7893603333333333,
+      "q22_rank": 81,
+      "top_quartile_pass": false,
+      "q22_3_nearest_surahs": [
+        [
+          16,
+          0.755929
+        ],
+        [
+          31,
+          0.799142
+        ],
+        [
+          45,
+          0.81301
+        ]
+      ]
+    },
+    "M2_cos_tf": {
+      "q22_mean_3nearest": 0.12690653589903902,
+      "q22_rank": 8,
+      "top_quartile_pass": false,
+      "q22_3_nearest_surahs": [
+        [
+          3,
+          0.11936395254414311
+        ],
+        [
+          2,
+          0.13004073572809827
+        ],
+        [
+          4,
+          0.13131491942487572
+        ]
+      ]
+    },
+    "M3_cos_tfidf": {
+      "q22_mean_3nearest": 0.7578902128368395,
+      "q22_rank": 17,
+      "top_quartile_pass": false,
+      "q22_3_nearest_surahs": [
+        [
+          2,
+          0.7452386224438108
+        ],
+        [
+          3,
+          0.7574282999669087
+        ],
+        [
+          5,
+          0.7710037160997993
+        ]
+      ]
+    },
+    "M4_jaccard_sets": {
+      "q22_mean_3nearest": 0.8435757109144548,
+      "q22_rank": 32,
+      "top_quartile_pass": false,
+      "q22_3_nearest_surahs": [
+        [
+          31,
+          0.8402234636871508
+        ],
+        [
+          8,
+          0.8444252376836646
+        ],
+        [
+          35,
+          0.846078431372549
+        ]
+      ]
+    },
+    "M5_cos_char3gram": {
+      "q22_mean_3nearest": 0.07087525663012839,
+      "q22_rank": 15,
+      "top_quartile_pass": false,
+      "q22_3_nearest_surahs": [
+        [
+          3,
+          0.06232786348558317
+        ],
+        [
+          5,
+          0.07501695529776153
+        ],
+        [
+          2,
+          0.07528095110704047
+        ]
+      ]
+    },
+    "M6_cos_char4gram": {
+      "q22_mean_3nearest": 0.16037291555663521,
+      "q22_rank": 11,
+      "top_quartile_pass": false,
+      "q22_3_nearest_surahs": [
+        [
+          3,
+          0.14766210894145682
+        ],
+        [
+          2,
+          0.16092785433289547
+        ],
+        [
+          5,
+          0.17252878339555333
+        ]
+      ]
+    },
+    "M7_bhatt_top200": {
+      "q22_mean_3nearest": 0.1457573402713401,
+      "q22_rank": 17,
+      "top_quartile_pass": false,
+      "q22_3_nearest_surahs": [
+        [
+          2,
+          0.140158390629054
+        ],
+        [
+          4,
+          0.14545506807718434
+        ],
+        [
+          3,
+          0.15165856210778197
+        ]
+      ]
+    },
+    "M8_cos_rhyme": {
+      "q22_mean_3nearest": 0.09206738000534805,
+      "q22_rank": 86,
+      "top_quartile_pass": true,
+      "q22_3_nearest_surahs": [
+        [
+          31,
+          0.08259085576574465
+        ],
+        [
+          42,
+          0.08584081638340313
+        ],
+        [
+          14,
+          0.10777046786689637
+        ]
+      ]
+    }
+  },
+  "hits_top_quartile": 1,
+  "total_metrics": 8,
+  "verdict": "NULL",
+  "pre_reg_sha": "2b9d468b511b4d8ac46cd900fee7d7b8a5eba81f7271bc10bcd5435c6988c88b",
+  "bonferroni_k": 8,
+  "alpha_bon": 0.00625
+}

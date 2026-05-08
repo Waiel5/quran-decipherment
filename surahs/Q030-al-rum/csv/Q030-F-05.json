@@ -1,0 +1,936 @@
+{
+  "finding_id": "Q030-F-05",
+  "prereg_sha": "850b16e6a4c5fee4e4d2828a3bf1da4c149798625cc933c9ae22b722a5608111",
+  "patterns": [
+    "أفلا\\s+يتفكرون",
+    "أفلا\\s+تتفكرون",
+    "أفلا\\s+يعقلون",
+    "أفلا\\s+تعقلون",
+    "أفلا\\s+يسمعون",
+    "أفلا\\s+تسمعون",
+    "أفلا\\s+يبصرون",
+    "أفلا\\s+تبصرون",
+    "أفلا\\s+ينظرون",
+    "أفلا\\s+تنظرون",
+    "\\bيتفكرون\\b",
+    "\\bتتفكرون\\b",
+    "\\bيعقلون\\b",
+    "\\bتعقلون\\b",
+    "لا\\s+يعقلون",
+    "لا\\s+يتفكرون"
+  ],
+  "all_surahs": [
+    {
+      "surah": 1,
+      "name": "Al-Fatihah",
+      "cog_count": 0,
+      "words": 29,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 2,
+      "name": "Al-Baqarah",
+      "cog_count": 9,
+      "words": 6630,
+      "cog_rate_per_1000": 1.3574660633484161
+    },
+    {
+      "surah": 3,
+      "name": "Ali 'Imran",
+      "cog_count": 2,
+      "words": 3717,
+      "cog_rate_per_1000": 0.5380683346785041
+    },
+    {
+      "surah": 4,
+      "name": "An-Nisa",
+      "cog_count": 0,
+      "words": 4029,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 5,
+      "name": "Al-Ma'idah",
+      "cog_count": 2,
+      "words": 3047,
+      "cog_rate_per_1000": 0.6563833278634722
+    },
+    {
+      "surah": 6,
+      "name": "Al-An'am",
+      "cog_count": 3,
+      "words": 3304,
+      "cog_rate_per_1000": 0.9079903147699758
+    },
+    {
+      "surah": 7,
+      "name": "Al-A'raf",
+      "cog_count": 2,
+      "words": 3551,
+      "cog_rate_per_1000": 0.5632216277105041
+    },
+    {
+      "surah": 8,
+      "name": "Al-Anfal",
+      "cog_count": 1,
+      "words": 1320,
+      "cog_rate_per_1000": 0.7575757575757576
+    },
+    {
+      "surah": 9,
+      "name": "At-Tawbah",
+      "cog_count": 0,
+      "words": 2674,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 10,
+      "name": "Yunus",
+      "cog_count": 4,
+      "words": 1964,
+      "cog_rate_per_1000": 2.0366598778004072
+    },
+    {
+      "surah": 11,
+      "name": "Hud",
+      "cog_count": 1,
+      "words": 2083,
+      "cog_rate_per_1000": 0.48007681228996635
+    },
+    {
+      "surah": 12,
+      "name": "Yusuf",
+      "cog_count": 2,
+      "words": 1912,
+      "cog_rate_per_1000": 1.0460251046025104
+    },
+    {
+      "surah": 13,
+      "name": "Ar-Ra'd",
+      "cog_count": 2,
+      "words": 928,
+      "cog_rate_per_1000": 2.155172413793103
+    },
+    {
+      "surah": 14,
+      "name": "Ibrahim",
+      "cog_count": 0,
+      "words": 885,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 15,
+      "name": "Al-Hijr",
+      "cog_count": 0,
+      "words": 666,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 16,
+      "name": "An-Nahl",
+      "cog_count": 5,
+      "words": 1963,
+      "cog_rate_per_1000": 2.547121752419766
+    },
+    {
+      "surah": 17,
+      "name": "Al-Isra",
+      "cog_count": 0,
+      "words": 1644,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 18,
+      "name": "Al-Kahf",
+      "cog_count": 0,
+      "words": 1657,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 19,
+      "name": "Maryam",
+      "cog_count": 0,
+      "words": 1012,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 20,
+      "name": "Taha",
+      "cog_count": 0,
+      "words": 1409,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 21,
+      "name": "Al-Anbya",
+      "cog_count": 2,
+      "words": 1236,
+      "cog_rate_per_1000": 1.6181229773462784
+    },
+    {
+      "surah": 22,
+      "name": "Al-Hajj",
+      "cog_count": 1,
+      "words": 1356,
+      "cog_rate_per_1000": 0.7374631268436578
+    },
+    {
+      "surah": 23,
+      "name": "Al-Mu'minun",
+      "cog_count": 1,
+      "words": 1089,
+      "cog_rate_per_1000": 0.9182736455463728
+    },
+    {
+      "surah": 24,
+      "name": "An-Nur",
+      "cog_count": 1,
+      "words": 1415,
+      "cog_rate_per_1000": 0.7067137809187278
+    },
+    {
+      "surah": 25,
+      "name": "Al-Furqan",
+      "cog_count": 1,
+      "words": 932,
+      "cog_rate_per_1000": 1.0729613733905579
+    },
+    {
+      "surah": 26,
+      "name": "Ash-Shu'ara",
+      "cog_count": 1,
+      "words": 1353,
+      "cog_rate_per_1000": 0.7390983000739099
+    },
+    {
+      "surah": 27,
+      "name": "An-Naml",
+      "cog_count": 0,
+      "words": 1215,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 28,
+      "name": "Al-Qasas",
+      "cog_count": 3,
+      "words": 1520,
+      "cog_rate_per_1000": 1.973684210526316
+    },
+    {
+      "surah": 29,
+      "name": "Al-'Ankabut",
+      "cog_count": 2,
+      "words": 1044,
+      "cog_rate_per_1000": 1.9157088122605364
+    },
+    {
+      "surah": 30,
+      "name": "Ar-Rum",
+      "cog_count": 3,
+      "words": 868,
+      "cog_rate_per_1000": 3.4562211981566824
+    },
+    {
+      "surah": 31,
+      "name": "Luqman",
+      "cog_count": 0,
+      "words": 586,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 32,
+      "name": "As-Sajdah",
+      "cog_count": 2,
+      "words": 390,
+      "cog_rate_per_1000": 5.128205128205129
+    },
+    {
+      "surah": 33,
+      "name": "Al-Ahzab",
+      "cog_count": 0,
+      "words": 1384,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 34,
+      "name": "Saba",
+      "cog_count": 0,
+      "words": 940,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 35,
+      "name": "Fatir",
+      "cog_count": 0,
+      "words": 844,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 36,
+      "name": "Ya-Sin",
+      "cog_count": 2,
+      "words": 754,
+      "cog_rate_per_1000": 2.6525198938992043
+    },
+    {
+      "surah": 37,
+      "name": "As-Saffat",
+      "cog_count": 1,
+      "words": 881,
+      "cog_rate_per_1000": 1.1350737797956867
+    },
+    {
+      "surah": 38,
+      "name": "Sad",
+      "cog_count": 0,
+      "words": 774,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 39,
+      "name": "Az-Zumar",
+      "cog_count": 2,
+      "words": 1259,
+      "cog_rate_per_1000": 1.5885623510722795
+    },
+    {
+      "surah": 40,
+      "name": "Ghafir",
+      "cog_count": 1,
+      "words": 1296,
+      "cog_rate_per_1000": 0.7716049382716049
+    },
+    {
+      "surah": 41,
+      "name": "Fussilat",
+      "cog_count": 0,
+      "words": 838,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 42,
+      "name": "Ash-Shuraa",
+      "cog_count": 0,
+      "words": 932,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 43,
+      "name": "Az-Zukhruf",
+      "cog_count": 2,
+      "words": 870,
+      "cog_rate_per_1000": 2.2988505747126435
+    },
+    {
+      "surah": 44,
+      "name": "Ad-Dukhan",
+      "cog_count": 0,
+      "words": 364,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 45,
+      "name": "Al-Jathiyah",
+      "cog_count": 2,
+      "words": 512,
+      "cog_rate_per_1000": 3.90625
+    },
+    {
+      "surah": 46,
+      "name": "Al-Ahqaf",
+      "cog_count": 0,
+      "words": 676,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 47,
+      "name": "Muhammad",
+      "cog_count": 0,
+      "words": 570,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 48,
+      "name": "Al-Fath",
+      "cog_count": 0,
+      "words": 600,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 49,
+      "name": "Al-Hujurat",
+      "cog_count": 1,
+      "words": 382,
+      "cog_rate_per_1000": 2.617801047120419
+    },
+    {
+      "surah": 50,
+      "name": "Qaf",
+      "cog_count": 0,
+      "words": 389,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 51,
+      "name": "Adh-Dhariyat",
+      "cog_count": 1,
+      "words": 371,
+      "cog_rate_per_1000": 2.6954177897574128
+    },
+    {
+      "surah": 52,
+      "name": "At-Tur",
+      "cog_count": 0,
+      "words": 324,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 53,
+      "name": "An-Najm",
+      "cog_count": 0,
+      "words": 372,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 54,
+      "name": "Al-Qamar",
+      "cog_count": 0,
+      "words": 350,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 55,
+      "name": "Ar-Rahman",
+      "cog_count": 0,
+      "words": 355,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 56,
+      "name": "Al-Waqi'ah",
+      "cog_count": 0,
+      "words": 380,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 57,
+      "name": "Al-Hadid",
+      "cog_count": 1,
+      "words": 618,
+      "cog_rate_per_1000": 1.6181229773462784
+    },
+    {
+      "surah": 58,
+      "name": "Al-Mujadila",
+      "cog_count": 0,
+      "words": 516,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 59,
+      "name": "Al-Hashr",
+      "cog_count": 2,
+      "words": 478,
+      "cog_rate_per_1000": 4.184100418410042
+    },
+    {
+      "surah": 60,
+      "name": "Al-Mumtahanah",
+      "cog_count": 0,
+      "words": 377,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 61,
+      "name": "As-Saf",
+      "cog_count": 0,
+      "words": 238,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 62,
+      "name": "Al-Jumu'ah",
+      "cog_count": 0,
+      "words": 186,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 63,
+      "name": "Al-Munafiqun",
+      "cog_count": 0,
+      "words": 195,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 64,
+      "name": "At-Taghabun",
+      "cog_count": 0,
+      "words": 264,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 65,
+      "name": "At-Talaq",
+      "cog_count": 0,
+      "words": 313,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 66,
+      "name": "At-Tahrim",
+      "cog_count": 0,
+      "words": 268,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 67,
+      "name": "Al-Mulk",
+      "cog_count": 0,
+      "words": 348,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 68,
+      "name": "Al-Qalam",
+      "cog_count": 0,
+      "words": 308,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 69,
+      "name": "Al-Haqqah",
+      "cog_count": 0,
+      "words": 264,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 70,
+      "name": "Al-Ma'arij",
+      "cog_count": 0,
+      "words": 222,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 71,
+      "name": "Nuh",
+      "cog_count": 0,
+      "words": 230,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 72,
+      "name": "Al-Jinn",
+      "cog_count": 0,
+      "words": 293,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 73,
+      "name": "Al-Muzzammil",
+      "cog_count": 0,
+      "words": 214,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 74,
+      "name": "Al-Muddaththir",
+      "cog_count": 0,
+      "words": 265,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 75,
+      "name": "Al-Qiyamah",
+      "cog_count": 0,
+      "words": 165,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 76,
+      "name": "Al-Insan",
+      "cog_count": 0,
+      "words": 250,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 77,
+      "name": "Al-Mursalat",
+      "cog_count": 0,
+      "words": 182,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 78,
+      "name": "An-Naba",
+      "cog_count": 0,
+      "words": 177,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 79,
+      "name": "An-Nazi'at",
+      "cog_count": 0,
+      "words": 180,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 80,
+      "name": "'Abasa",
+      "cog_count": 0,
+      "words": 133,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 81,
+      "name": "At-Takwir",
+      "cog_count": 0,
+      "words": 104,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 82,
+      "name": "Al-Infitar",
+      "cog_count": 0,
+      "words": 82,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 83,
+      "name": "Al-Mutaffifin",
+      "cog_count": 0,
+      "words": 172,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 84,
+      "name": "Al-Inshiqaq",
+      "cog_count": 0,
+      "words": 109,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 85,
+      "name": "Al-Buruj",
+      "cog_count": 0,
+      "words": 111,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 86,
+      "name": "At-Tariq",
+      "cog_count": 0,
+      "words": 61,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 87,
+      "name": "Al-A'la",
+      "cog_count": 0,
+      "words": 73,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 88,
+      "name": "Al-Ghashiyah",
+      "cog_count": 1,
+      "words": 92,
+      "cog_rate_per_1000": 10.869565217391305
+    },
+    {
+      "surah": 89,
+      "name": "Al-Fajr",
+      "cog_count": 0,
+      "words": 141,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 90,
+      "name": "Al-Balad",
+      "cog_count": 0,
+      "words": 82,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 91,
+      "name": "Ash-Shams",
+      "cog_count": 0,
+      "words": 54,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 92,
+      "name": "Al-Layl",
+      "cog_count": 0,
+      "words": 71,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 93,
+      "name": "Ad-Duhaa",
+      "cog_count": 0,
+      "words": 40,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 94,
+      "name": "Ash-Sharh",
+      "cog_count": 0,
+      "words": 27,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 95,
+      "name": "At-Tin",
+      "cog_count": 0,
+      "words": 34,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 96,
+      "name": "Al-'Alaq",
+      "cog_count": 0,
+      "words": 73,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 97,
+      "name": "Al-Qadr",
+      "cog_count": 0,
+      "words": 30,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 98,
+      "name": "Al-Bayyinah",
+      "cog_count": 0,
+      "words": 98,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 99,
+      "name": "Az-Zalzalah",
+      "cog_count": 0,
+      "words": 36,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 100,
+      "name": "Al-'Adiyat",
+      "cog_count": 0,
+      "words": 41,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 101,
+      "name": "Al-Qari'ah",
+      "cog_count": 0,
+      "words": 36,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 102,
+      "name": "At-Takathur",
+      "cog_count": 0,
+      "words": 28,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 103,
+      "name": "Al-'Asr",
+      "cog_count": 0,
+      "words": 14,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 104,
+      "name": "Al-Humazah",
+      "cog_count": 0,
+      "words": 34,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 105,
+      "name": "Al-Fil",
+      "cog_count": 0,
+      "words": 23,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 106,
+      "name": "Quraysh",
+      "cog_count": 0,
+      "words": 17,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 107,
+      "name": "Al-Ma'un",
+      "cog_count": 0,
+      "words": 25,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 108,
+      "name": "Al-Kawthar",
+      "cog_count": 0,
+      "words": 10,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 109,
+      "name": "Al-Kafirun",
+      "cog_count": 0,
+      "words": 27,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 110,
+      "name": "An-Nasr",
+      "cog_count": 0,
+      "words": 20,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 111,
+      "name": "Al-Masad",
+      "cog_count": 0,
+      "words": 23,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 112,
+      "name": "Al-Ikhlas",
+      "cog_count": 0,
+      "words": 15,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 113,
+      "name": "Al-Falaq",
+      "cog_count": 0,
+      "words": 23,
+      "cog_rate_per_1000": 0.0
+    },
+    {
+      "surah": 114,
+      "name": "An-Nas",
+      "cog_count": 0,
+      "words": 20,
+      "cog_rate_per_1000": 0.0
+    }
+  ],
+  "top_15_by_rate": [
+    {
+      "surah": 88,
+      "name": "Al-Ghashiyah",
+      "cog_count": 1,
+      "words": 92,
+      "cog_rate_per_1000": 10.869565217391305
+    },
+    {
+      "surah": 32,
+      "name": "As-Sajdah",
+      "cog_count": 2,
+      "words": 390,
+      "cog_rate_per_1000": 5.128205128205129
+    },
+    {
+      "surah": 59,
+      "name": "Al-Hashr",
+      "cog_count": 2,
+      "words": 478,
+      "cog_rate_per_1000": 4.184100418410042
+    },
+    {
+      "surah": 45,
+      "name": "Al-Jathiyah",
+      "cog_count": 2,
+      "words": 512,
+      "cog_rate_per_1000": 3.90625
+    },
+    {
+      "surah": 30,
+      "name": "Ar-Rum",
+      "cog_count": 3,
+      "words": 868,
+      "cog_rate_per_1000": 3.4562211981566824
+    },
+    {
+      "surah": 51,
+      "name": "Adh-Dhariyat",
+      "cog_count": 1,
+      "words": 371,
+      "cog_rate_per_1000": 2.6954177897574128
+    },
+    {
+      "surah": 36,
+      "name": "Ya-Sin",
+      "cog_count": 2,
+      "words": 754,
+      "cog_rate_per_1000": 2.6525198938992043
+    },
+    {
+      "surah": 49,
+      "name": "Al-Hujurat",
+      "cog_count": 1,
+      "words": 382,
+      "cog_rate_per_1000": 2.617801047120419
+    },
+    {
+      "surah": 16,
+      "name": "An-Nahl",
+      "cog_count": 5,
+      "words": 1963,
+      "cog_rate_per_1000": 2.547121752419766
+    },
+    {
+      "surah": 43,
+      "name": "Az-Zukhruf",
+      "cog_count": 2,
+      "words": 870,
+      "cog_rate_per_1000": 2.2988505747126435
+    },
+    {
+      "surah": 13,
+      "name": "Ar-Ra'd",
+      "cog_count": 2,
+      "words": 928,
+      "cog_rate_per_1000": 2.155172413793103
+    },
+    {
+      "surah": 10,
+      "name": "Yunus",
+      "cog_count": 4,
+      "words": 1964,
+      "cog_rate_per_1000": 2.0366598778004072
+    },
+    {
+      "surah": 28,
+      "name": "Al-Qasas",
+      "cog_count": 3,
+      "words": 1520,
+      "cog_rate_per_1000": 1.973684210526316
+    },
+    {
+      "surah": 29,
+      "name": "Al-'Ankabut",
+      "cog_count": 2,
+      "words": 1044,
+      "cog_rate_per_1000": 1.9157088122605364
+    },
+    {
+      "surah": 21,
+      "name": "Al-Anbya",
+      "cog_count": 2,
+      "words": 1236,
+      "cog_rate_per_1000": 1.6181229773462784
+    }
+  ],
+  "q30_rank_rate": 5,
+  "q30_rank_count": 6,
+  "q29_rank_rate": 14,
+  "q29_rank_count": 13,
+  "q30_cog_rate_per_1000": 3.4562211981566824,
+  "q30_cog_count": 3,
+  "verdict": "DIRECTIONAL"
+}

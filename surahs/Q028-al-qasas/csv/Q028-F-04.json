@@ -1,0 +1,25 @@
+{
+  "finding_id": "Q028-F-04",
+  "prereg_sha": "2e28b7a4129a8afb280eec2f6134509e3c5d9b5af36a5ea7e4737bda5a80efa9",
+  "seed": 20260510,
+  "n_perm": 10000,
+  "alpha_bon": 0.01,
+  "note_locator_correction": "Pre-reg corrected the prompt's mis-located Q28:35; re-anchored to Q28:34 (impediment-reference) + Q28:35 (response). Logged before observation.",
+  "h1": {
+    "shared_tokens": [
+      "قال",
+      "من"
+    ],
+    "shared_low_freq_tokens": [],
+    "shared_low_freq_count": 0,
+    "threshold": 2,
+    "pass": false
+  },
+  "h2": {
+    "cos_obs_q28_v34_35_vs_q20_v25_28": 0.09284766908852593,
+    "p_perm_one_sided_upper": 0.4545360824742268,
+    "pass": false,
+    "n_samples": 9699
+  },
+  "verdict": "NULL"
+}

@@ -1,0 +1,38 @@
+{
+  "finding_id": "Q026-F-02",
+  "prereg_sha": "8ad5f22dbc800889e6bfedadc136339cc25004f699ac5a982ffeca860e731b6c",
+  "rules_tuple": "(h-new-111 FR-roots, h-new-750 sig_A/rhyme, h-new-840 UAS)",
+  "method": "TSM (26,27,28) pct-rank vs C(29,3) muqaṭṭaʿ triplets on 4 axes; lower=more cohesive",
+  "TSM_triplet": [
+    26,
+    27,
+    28
+  ],
+  "n_muqattaʿ_surahs": 29,
+  "n_triplets_enumerated": 3654,
+  "axis_values_TSM": {
+    "A1_mean_FR": 0.9056673333333333,
+    "A2_rhyme_spread": 0.07023428113736485,
+    "A3_sigA_spread": 0.6036173358684656,
+    "A4_UAS_spread": 1.8630632406370684
+  },
+  "percentile_TSM_per_axis": {
+    "A1_mean_FR": 0.29118773946360155,
+    "A2_rhyme_spread": 0.06431308155446086,
+    "A3_sigA_spread": 0.055008210180623976,
+    "A4_UAS_spread": 0.41351943076081005
+  },
+  "n_axes_passing_top5pct": 0,
+  "n_axes_violating_bottom5pct": 0,
+  "alpha_bonferroni_per_axis": 0.0125,
+  "alpha_family": 0.01,
+  "verdict": "NULL",
+  "axis_means_over_triplets": {
+    "A1_mean_FR_mean": 0.9388131231527094,
+    "A1_mean_FR_min": 0.7618156666666668,
+    "A1_mean_FR_max": 1.1324433333333335,
+    "A2_rhyme_spread_mean": 0.3550057527412888,
+    "A3_sigA_spread_mean": 2.148182409594912,
+    "A4_UAS_spread_mean": 2.7625546602085547
+  }
+}

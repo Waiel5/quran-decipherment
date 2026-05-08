@@ -1,0 +1,32 @@
+{
+  "test_id": "Q013-F-02",
+  "title": "Thunder-praises-God corpus uniqueness — yusabbiḥu al-raʿdu bi-ḥamdihi",
+  "raad_lemma_attestations": [
+    {
+      "surah": 2,
+      "verse": 19,
+      "word": "ورعد"
+    },
+    {
+      "surah": 13,
+      "verse": 13,
+      "word": "الرعد"
+    }
+  ],
+  "n_raad_attestations": 2,
+  "co_occurrence_verses": [
+    {
+      "surah": 13,
+      "verse": 13,
+      "raad_word": "الرعد",
+      "text": "ويسبح الرعد بحمده والملائكة من خيفته ويرسل الصواعق فيصيب بها من يشاء وهم يجادلون في الله وهو شديد المحال",
+      "raʿd_is_subject_of_praise_verb": true
+    }
+  ],
+  "n_co_occurrence": 1,
+  "n_raad_subject_of_praise_verb": 1,
+  "permutation_random_rare_noun_co_occurrence_rate": 0.13432835820895522,
+  "n_perm_trials_with_rare_substring": 134,
+  "verdict": "CONFIRMED",
+  "narrative": "Q 13:13 is the unique verse in the corpus where the lemma raʿd (thunder) is the grammatical subject of a divine-praise verb (yusabbiḥu). Q 2:19 contains raʿdun in a noun-list (storm-elements in a parable about hypocrites), with no praise-verb governing raʿd. Brq (lightning) and ṣawāʿiq (lightning-bolts) appear in Q 2:19, Q 13:12, Q 13:13, Q 30:24, Q 51:44 — never as subject of a praise-verb. The construction 'storm-element-as-divine-discourse-agent' is a corpus-hapax at Q 13:13."
+}

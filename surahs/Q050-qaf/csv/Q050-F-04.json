@@ -1,0 +1,76 @@
+{
+  "finding_id": "Q050-F-04",
+  "prereg_sha256": "cac90ad5c9e1d4a9454f30ae994f2f9838352e8bb0ca725940a55d7d8a94d8df",
+  "date_run": "2026-05-07",
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, basmala-not-counted-elsewhere, Hafs-Kufan, mushaf-order, all metrics from H-NEW pipeline as published)",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "triplet": [
+    38,
+    50,
+    68
+  ],
+  "mean_pairwise_FR_observed": 0.869908,
+  "pairwise_FR_internal": {
+    "FR_Q38_Q50": 0.8541,
+    "FR_Q38_Q68": 0.9096,
+    "FR_Q50_Q68": 0.8461
+  },
+  "null_mean": 0.92173,
+  "null_sd": 0.147173,
+  "z": -0.3521,
+  "percentile_in_null_low_S": 26.68,
+  "p_low_S": 0.266873,
+  "p_high_S": 0.733227,
+  "primary_verdict": "NULL",
+  "descriptive_per_surah": [
+    {
+      "surah": 38,
+      "opener_letter": "ص",
+      "rev_order": 38,
+      "noldeke_phase": "Middle Meccan",
+      "n_verses": 88,
+      "mean_content_distance": 0.9663,
+      "sig_A": 1.2856,
+      "rank_A": 22,
+      "top_final_letter": "ب",
+      "top_final_letter_frac": 0.3977,
+      "rhyme_entropy_nats": 1.7129,
+      "delta_pct_outlier": 2.6999999999999957,
+      "outlier_classification": "WEAK_OUTLIER",
+      "UAS": -0.3198
+    },
+    {
+      "surah": 50,
+      "opener_letter": "ق",
+      "rev_order": 34,
+      "noldeke_phase": "Middle Meccan",
+      "n_verses": 45,
+      "mean_content_distance": 0.9279,
+      "sig_A": 0.891,
+      "rank_A": 37,
+      "top_final_letter": "د",
+      "top_final_letter_frac": 0.6,
+      "rhyme_entropy_nats": 1.286,
+      "delta_pct_outlier": 5.419999999999995,
+      "outlier_classification": "WEAK_OUTLIER",
+      "UAS": 0.3798
+    },
+    {
+      "surah": 68,
+      "opener_letter": "ن",
+      "rev_order": 2,
+      "noldeke_phase": "Early Meccan",
+      "n_verses": 52,
+      "mean_content_distance": 0.9139,
+      "sig_A": -0.4131,
+      "rank_A": 74,
+      "top_final_letter": "ن",
+      "top_final_letter_frac": 0.8077,
+      "rhyme_entropy_nats": 0.4896,
+      "delta_pct_outlier": -3.4499999999999993,
+      "outlier_classification": "NULL",
+      "UAS": -1.0074
+    }
+  ]
+}

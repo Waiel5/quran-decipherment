@@ -1,0 +1,43 @@
+{
+  "finding_id": "Q011-F-04",
+  "prereg_sha": "d1abe1d46336aef1213c07696cabbcab796bd6eaae92da005ebad1abca5da889",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "cohort": [
+    11,
+    56,
+    77,
+    78,
+    81
+  ],
+  "cohort_label": "shayyabatni-Hud Shamail #40 (Q11, Q56, Q77, Q78, Q81)",
+  "alpha_bon": 0.0125,
+  "axes": {
+    "A_mean_pairwise_FR": {
+      "cohort": 0.932953,
+      "null_mean": 0.9257422244,
+      "p_lower": 0.4430556944305569,
+      "pass_alpha_bon": false
+    },
+    "B_sig_A_sd": {
+      "cohort": 0.7257864790775495,
+      "null_mean": 1.192995217355624,
+      "p_lower": 0.11298870112988701,
+      "pass_alpha_bon": false
+    },
+    "C_UAS_sd": {
+      "cohort": 0.7005407654270285,
+      "null_mean": 1.5552959313660513,
+      "p_lower": 0.08689131086891311,
+      "pass_alpha_bon": false
+    },
+    "D_top_letter_agreement": {
+      "cohort": 0.6,
+      "null_mean": 0.50346,
+      "p_upper": 0.44835516448355167,
+      "pass_alpha_bon": false
+    }
+  },
+  "n_axes_pass_bonferroni": 0,
+  "verdict": "NULL"
+}

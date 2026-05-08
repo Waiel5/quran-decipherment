@@ -1,0 +1,192 @@
+{
+  "finding_id": "Q016-F-03",
+  "design_parent": "Q025-F-01",
+  "prereg_sha": "7214978abe65a97e6417b7392fda9334a150c43a40bb411a0496721f98272135",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "bonferroni_k": 8,
+  "alpha_bon": 0.00625,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "target_surah": 16,
+  "instruments": [
+    {
+      "instrument": "I1_root_jaccard",
+      "q16_mean_top3_sim": 0.43561303943015517,
+      "q16_top3_neighbors": [
+        6,
+        7,
+        10
+      ],
+      "q16_rank": 107,
+      "q16_in_bottom_quartile": false,
+      "p_perm_one_sided_lower": 0.934906509349065,
+      "passes_bonferroni": false,
+      "mw5_hawamim_in_bq_count": 0,
+      "mw5_hawamim_ranks": [
+        104,
+        95,
+        87,
+        88,
+        63
+      ],
+      "mw5_pass": true
+    },
+    {
+      "instrument": "I2_content_cosine",
+      "q16_mean_top3_sim": 0.6859599964843134,
+      "q16_top3_neighbors": [
+        2,
+        3,
+        10
+      ],
+      "q16_rank": 106,
+      "q16_in_bottom_quartile": false,
+      "p_perm_one_sided_lower": 0.9302069793020697,
+      "passes_bonferroni": false,
+      "mw5_hawamim_in_bq_count": 0,
+      "mw5_hawamim_ranks": [
+        97,
+        79,
+        98,
+        73,
+        58
+      ],
+      "mw5_pass": true
+    },
+    {
+      "instrument": "I3_char_trigram_dice",
+      "q16_mean_top3_sim": 0.5213756503726373,
+      "q16_top3_neighbors": [
+        6,
+        7,
+        39
+      ],
+      "q16_rank": 106,
+      "q16_in_bottom_quartile": false,
+      "p_perm_one_sided_lower": 0.9335066493350664,
+      "passes_bonferroni": false,
+      "mw5_hawamim_in_bq_count": 0,
+      "mw5_hawamim_ranks": [
+        97,
+        79,
+        85,
+        89,
+        64
+      ],
+      "mw5_pass": null
+    },
+    {
+      "instrument": "I4_fr_similarity",
+      "q16_mean_top3_sim": 0.5670104879534068,
+      "q16_top3_neighbors": [
+        39,
+        22,
+        6
+      ],
+      "q16_rank": 48,
+      "q16_in_bottom_quartile": false,
+      "p_perm_one_sided_lower": 0.42205779422057793,
+      "passes_bonferroni": false,
+      "mw5_hawamim_in_bq_count": 1,
+      "mw5_hawamim_ranks": [
+        35,
+        47,
+        20,
+        32,
+        45
+      ],
+      "mw5_pass": null
+    },
+    {
+      "instrument": "I5_rhyme_final_letter_cosine",
+      "q16_mean_top3_sim": 0.9997300364293539,
+      "q16_top3_neighbors": [
+        12,
+        95,
+        107
+      ],
+      "q16_rank": 101,
+      "q16_in_bottom_quartile": false,
+      "p_perm_one_sided_lower": 0.8893110688931107,
+      "passes_bonferroni": false,
+      "mw5_hawamim_in_bq_count": 0,
+      "mw5_hawamim_ranks": [
+        33,
+        51,
+        38,
+        98,
+        88
+      ],
+      "mw5_pass": null
+    },
+    {
+      "instrument": "I6_root_zipf_overlap",
+      "q16_mean_top3_sim": 0.3316374552400763,
+      "q16_top3_neighbors": [
+        6,
+        10,
+        7
+      ],
+      "q16_rank": 105,
+      "q16_in_bottom_quartile": false,
+      "p_perm_one_sided_lower": 0.923007699230077,
+      "passes_bonferroni": false,
+      "mw5_hawamim_in_bq_count": 0,
+      "mw5_hawamim_ranks": [
+        107,
+        97,
+        93,
+        95,
+        63
+      ],
+      "mw5_pass": null
+    },
+    {
+      "instrument": "I7_divine_name_jaccard",
+      "q16_mean_top3_sim": 0.7333333333333334,
+      "q16_top3_neighbors": [
+        45,
+        61,
+        64
+      ],
+      "q16_rank": 93,
+      "q16_in_bottom_quartile": false,
+      "p_perm_one_sided_lower": 0.815918408159184,
+      "passes_bonferroni": false,
+      "mw5_hawamim_in_bq_count": 0,
+      "mw5_hawamim_ranks": [
+        41,
+        85,
+        43,
+        87,
+        72
+      ],
+      "mw5_pass": null
+    },
+    {
+      "instrument": "I8_char_5gram_dice",
+      "q16_mean_top3_sim": 0.1911241639509562,
+      "q16_top3_neighbors": [
+        29,
+        6,
+        39
+      ],
+      "q16_rank": 107,
+      "q16_in_bottom_quartile": false,
+      "p_perm_one_sided_lower": 0.939006099390061,
+      "passes_bonferroni": false,
+      "mw5_hawamim_in_bq_count": 0,
+      "mw5_hawamim_ranks": [
+        98,
+        79,
+        90,
+        72,
+        63
+      ],
+      "mw5_pass": null
+    }
+  ],
+  "n_in_bottom_quartile": 0,
+  "n_pass_bonferroni": 0,
+  "verdict": "PRE_COMMIT_VIOLATION"
+}

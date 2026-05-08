@@ -1,0 +1,60 @@
+{
+  "finding_id": "Q027-F-06",
+  "prereg_sha": "bcfaed030d0ef6d63f5fd01b154307ca1696495cfa2c4addb4a150ae4aa00469",
+  "rules_tuple": "(no-tashkeel, orthographic-exact-match for tokens; QAC-stem-roots for Jaccard, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "seed": 20260507,
+  "H1a_locked_tokens": [
+    "الهدهد",
+    "عرشها",
+    "الخبء",
+    "سبإ",
+    "بنبإ",
+    "لأذبحنه",
+    "لأعذبنه",
+    "الصرح",
+    "بكتابي"
+  ],
+  "H1a_token_corpus_counts": {
+    "الهدهد": 1,
+    "عرشها": 1,
+    "الخبء": 1,
+    "سبإ": 1,
+    "بنبإ": 2,
+    "لأذبحنه": 1,
+    "لأعذبنه": 1,
+    "الصرح": 1,
+    "بكتابي": 1
+  },
+  "H1a_hapax_count": 8,
+  "H1a_hapax_tokens": [
+    "الهدهد",
+    "عرشها",
+    "الخبء",
+    "سبإ",
+    "لأذبحنه",
+    "لأعذبنه",
+    "الصرح",
+    "بكتابي"
+  ],
+  "H1a_pass": true,
+  "H1b_target_block_jaccard": 0.1471698113207547,
+  "H1b_n_q27_9blocks": 86,
+  "H1b_target_block_rank": 59,
+  "H1b_target_block_pct_lower_tail": 68.6046511627907,
+  "H1b_pass": false,
+  "H1c_wolf_locked_tokens": [
+    "الذئب",
+    "يأكله"
+  ],
+  "H1c_wolf_corpus_counts": {
+    "الذئب": 3,
+    "يأكله": 2
+  },
+  "H1c_wolf_hapax_count": 0,
+  "H1c_hudhud_minus_wolf": 8,
+  "H1c_pass": true,
+  "verdict": "DIRECTIONAL",
+  "n_pass_of_3": 2,
+  "bonferroni_k": 5,
+  "alpha_bon": 0.01
+}

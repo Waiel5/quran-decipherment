@@ -1,0 +1,75 @@
+{
+  "finding_id": "Q038-F-01",
+  "prereg_sha": "224aeb8bf99f9fd4cd5a21fb205237c06b2b12b3fbbe701e6b3b59f5ead955f7",
+  "seed": 20260507,
+  "rules_tuple": "(no-tashkeel, orthographic-token + QAC root, char-4-gram-NCD, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "method": "Q38:1 ↔ Q50:1 (after muq-strip) similarity vs n=100000 random eligible pair sample",
+  "n_eligible_verses": 6033,
+  "n_sample_pairs": 100000,
+  "q38_1_body": "والقرآن ذي الذكر",
+  "q50_1_body": "والقرآن المجيد",
+  "q38_1_roots": [
+    "qrA",
+    "*kr"
+  ],
+  "q50_1_roots": [
+    "qrA",
+    "mjd"
+  ],
+  "target_sims": {
+    "token_bag_cosine": 0.40824829046386296,
+    "root_bag_cosine": 0.4999999999999999,
+    "one_minus_ncd": 0.5555555555555556
+  },
+  "corpus_sample_top10": {
+    "token_bag_cosine": [
+      1.0000000000000002,
+      1.0,
+      1.0,
+      1.0,
+      0.75,
+      0.7171371656006361,
+      0.6666666666666667,
+      0.6123724356957946,
+      0.5454545454545454,
+      0.5345224838248487
+    ],
+    "root_bag_cosine": [
+      1.0000000000000002,
+      1.0000000000000002,
+      1.0000000000000002,
+      1.0,
+      0.9486832980505138,
+      0.8164965809277261,
+      0.8164965809277259,
+      0.8017837257372731,
+      0.7745966692414834,
+      0.7745966692414834
+    ],
+    "one_minus_ncd": [
+      0.9615384615384616,
+      0.9615384615384616,
+      0.9615384615384616,
+      0.9538461538461538,
+      0.7555555555555555,
+      0.75,
+      0.6666666666666667,
+      0.6615384615384615,
+      0.6603773584905661,
+      0.6511627906976745
+    ]
+  },
+  "percentile_pvalues": {
+    "token_bag": 0.00076,
+    "root_bag": 0.00268,
+    "one_minus_ncd": 0.00076
+  },
+  "alpha_bon": 0.016666666666666666,
+  "pass_per_metric": {
+    "token_bag": true,
+    "root_bag": true,
+    "one_minus_ncd": true
+  },
+  "n_pass_of_3": 3,
+  "verdict": "CONFIRMED"
+}

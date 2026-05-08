@@ -1,0 +1,34 @@
+{
+  "finding_id": "Q025-F-05",
+  "pre_reg_sha256": "8593ef9ff8aa3ec463dcbdcba1a6d686fe39b6720b1d375a2de84a797061fe8e",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "alpha_bon": 0.016666666666666666,
+  "cell_a_intra_block_self_similarity": {
+    "block": "Q25:63-77",
+    "observed_mean_pairwise_cosine": 0.021287288372904195,
+    "null_mean": 0.012061789738876057,
+    "p_one_sided_upper": 0.0069,
+    "pass_alpha_bon": true
+  },
+  "cell_b_cross_block_twin_similarity": {
+    "pair": "Q25:63-77 × Q23:1-11",
+    "observed_mean_cosine": 0.008273042184880341,
+    "null_mean": 0.00869946002822398,
+    "p_one_sided_upper": 0.4661,
+    "pass_alpha_bon": false,
+    "mw6_control_q70_q23": 0.051159504320019054
+  },
+  "cell_c_alladhina_marker": {
+    "q25_63_77_count": 8,
+    "q23_1_11_count": 7,
+    "q70_22_35_count": 8,
+    "descriptive_verifies": true
+  },
+  "mw5_q23_self_similarity": {
+    "observed": 0.0618537280487074,
+    "p_one_sided_upper": 0.0,
+    "passes": true
+  },
+  "verdict": "DIRECTIONAL"
+}

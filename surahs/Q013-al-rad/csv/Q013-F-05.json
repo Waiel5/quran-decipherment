@@ -1,0 +1,47 @@
+{
+  "test_id": "Q013-F-05",
+  "title": "Q 13 chronology-hadith audit + architecture-invariance",
+  "sub_test_a_chronology_hadith_audit": {
+    "sources_on_disk": {
+      "al-Suyūṭī": "Medinan (al-Itqān nawʿ 1, citing Ibn ʿAbbās chains)",
+      "al-Ṭabarī": "BOTH cited; intro to Q 13 in Jāmiʿ al-bayān reports Medinan AND Meccan classifications",
+      "Ibn ʿAbbās (Mujāhid/ʿIkrima chain)": "Meccan",
+      "Nöldeke": "Late Meccan (Geschichte des Qorâns; rev order #90)",
+      "data/revelation-order.csv": "Tanzil Egyptian Standard: Medinan (rev #96); Wikipedia Nöldeke: Late Meccan (#90)"
+    },
+    "n_meccan_classifications": 4,
+    "n_medinan_classifications": 3,
+    "is_contested": true
+  },
+  "sub_test_b_architectural_distance": {
+    "v13": [
+      0.3976204387133688,
+      0.9495550247025136,
+      0.8682623098183962,
+      1.7207895681143606
+    ],
+    "v14_meccan_reference": [
+      0.5198898311328766,
+      1.1097126169882665,
+      1.144269518612711,
+      2.0662325275613185
+    ],
+    "v76_medinan_reference": [
+      -0.1484598197890369,
+      -0.8938544427602615,
+      -1.3741561878484265,
+      -1.3940122881242307
+    ],
+    "d_v13_v14": 0.4859126220086345,
+    "d_v13_v76": 4.292644107745615,
+    "closer_to_Q14_meccan_reference": true
+  },
+  "sub_test_c_h_new_590_null_classification": {
+    "delta_pct": -3.85,
+    "p_greater_W": 0.5256,
+    "classification": "NULL",
+    "interpretation": "Q 13 is NOT a content outlier in window {Q 10-16}; fits its mushaf cohort, consistent with architecture-invariance."
+  },
+  "n_sub_tests_pass": 3,
+  "verdict": "CONFIRMED"
+}

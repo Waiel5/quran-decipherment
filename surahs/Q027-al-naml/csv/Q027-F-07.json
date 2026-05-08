@@ -1,0 +1,54 @@
+{
+  "finding_id": "Q027-F-07",
+  "prereg_sha": "d67a2635549de3077a8a0c75aa7aba7bd5fd7da0f3d66af60e2465319a1a32b3",
+  "rules_tuple": "(no-tashkeel, FR-roots from h-new-111 D-matrix; sig_A from h-new-750; UAS from h-new-840; rhyme top-letter from h-new-700; Hafs-Kufan)",
+  "seed": 20260507,
+  "data_audit": {
+    "missing_sig_A": [],
+    "missing_UAS": [],
+    "missing_rhyme_top": []
+  },
+  "target_tuple": [
+    20,
+    27,
+    36
+  ],
+  "target_pairwise_FR": {
+    "Q20-Q27": 0.928122,
+    "Q20-Q36": 0.936566,
+    "Q27-Q36": 0.933132,
+    "mean": 0.9326066666666666
+  },
+  "target_sig_A_values": {
+    "20": -1.5067983202144712,
+    "27": -1.649114148005088,
+    "36": -0.7237678308377113
+  },
+  "target_sig_A_spread": 0.9253463171673766,
+  "target_UAS_values": {
+    "20": 0.15848852167702332,
+    "27": 1.0229729446413383,
+    "36": 0.5040129672966395
+  },
+  "target_UAS_spread": 0.8644844229643149,
+  "target_rhyme_top_letters": {
+    "20": "ي",
+    "27": "ن",
+    "36": "ن"
+  },
+  "target_rhyme_disagreement": 0.33333333333333337,
+  "target_composite_z": -0.5044097298162991,
+  "n_kept_tuples": 3654,
+  "target_lower_tail_p": 0.21018062397372742,
+  "target_lower_tail_pct": 21.01806239737274,
+  "per_axis_lower_tail_pct": {
+    "FR_mean_pair": 46.88013136288998,
+    "sig_A_spread": 11.220580186097427,
+    "UAS_spread": 15.763546798029557,
+    "rhyme_disagreement": 84.59222769567597
+  },
+  "n_axes_below_30pct": 2,
+  "verdict": "WEAK_DIRECTIONAL",
+  "bonferroni_k": 5,
+  "alpha_bon": 0.01
+}

@@ -1,0 +1,97 @@
+{
+  "finding_id": "Q028-F-03",
+  "prereg_sha": "80061fb62c8aed32f47f91ba90deba17601cb91d24e8f7430a6489625cdb1718",
+  "seed": 20260509,
+  "n_perm": 0,
+  "alpha_bon": 0.01,
+  "h1": {
+    "target_window": "76-82 (Qārūn)",
+    "target_distinctness": 0.2350357376768495,
+    "target_cos_to_rest": 0.7649642623231505,
+    "rank_of_82_distinctness_descending": 80,
+    "pass": false
+  },
+  "h2": {
+    "cos_madyan_qarun": 0.5542039036720326,
+    "pair_rank_ascending_of_3321": 2748,
+    "bottom5pct_threshold": 166,
+    "pass": false
+  },
+  "h3": {
+    "q28_qarun_count": 2,
+    "corpus_total_qarun": 4,
+    "qarun_share_in_q28": 0.5,
+    "per_surah_distribution": [
+      {
+        "surah": 28,
+        "count": 2
+      },
+      {
+        "surah": 29,
+        "count": 1
+      },
+      {
+        "surah": 40,
+        "count": 1
+      }
+    ],
+    "pass": true
+  },
+  "reference": {
+    "madyan_window_22_28_distinctness": 0.3730879475549981,
+    "madyan_window_22_28_rank": 49
+  },
+  "top10_distinct_windows": [
+    {
+      "start": 8,
+      "end": 14,
+      "distinctness": 0.5902203374622351
+    },
+    {
+      "start": 5,
+      "end": 11,
+      "distinctness": 0.5850251773714943
+    },
+    {
+      "start": 62,
+      "end": 68,
+      "distinctness": 0.5840021730750289
+    },
+    {
+      "start": 63,
+      "end": 69,
+      "distinctness": 0.5633518789715879
+    },
+    {
+      "start": 60,
+      "end": 66,
+      "distinctness": 0.5601090931639067
+    },
+    {
+      "start": 59,
+      "end": 65,
+      "distinctness": 0.5597851635138766
+    },
+    {
+      "start": 2,
+      "end": 8,
+      "distinctness": 0.5537420126586377
+    },
+    {
+      "start": 4,
+      "end": 10,
+      "distinctness": 0.5511007229154588
+    },
+    {
+      "start": 3,
+      "end": 9,
+      "distinctness": 0.5496899180150981
+    },
+    {
+      "start": 6,
+      "end": 12,
+      "distinctness": 0.5460015118026126
+    }
+  ],
+  "verdict": "DIRECTIONAL"
+}

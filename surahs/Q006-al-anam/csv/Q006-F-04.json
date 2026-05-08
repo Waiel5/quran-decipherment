@@ -1,0 +1,71 @@
+{
+  "test_id": "Q006-F-04",
+  "pre_reg_sha": "bc63c8ee92e634997c59a3788c69bd8c09fa1b542441db0f067873ac752ec1c0",
+  "pre_reg_sha_verified": true,
+  "seed": 20260507,
+  "direction_locked": "ABOVE-CORPUS-MEAN",
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05,
+  "rules_tuple": "(no-tashkeel, QAC-STEM-root, top-500-Dirichlet-alpha=0.5, L1-normalize, Fisher-Rao, Hafs-Kufan, Mashriqi)",
+  "cell_A_d_q6_q21": 0.896166,
+  "corpus_pairwise_mean": 0.9234872255860892,
+  "corpus_pairwise_median": 0.956707,
+  "corpus_pairwise_sd": 0.20876794276040248,
+  "diff_from_mean": -0.02732122558608918,
+  "diff_in_sd_units": -0.13086887395084906,
+  "cell_B_q6q21_rank_within_q6_distances": 19,
+  "cell_C_q6q21_rank_within_q21_distances": 18,
+  "q6_nearest_5_surahs": [
+    [
+      7,
+      0.720799
+    ],
+    [
+      10,
+      0.739572
+    ],
+    [
+      16,
+      0.781463
+    ],
+    [
+      39,
+      0.803491
+    ],
+    [
+      2,
+      0.808091
+    ]
+  ],
+  "q21_nearest_5_surahs": [
+    [
+      7,
+      0.824277
+    ],
+    [
+      23,
+      0.828702
+    ],
+    [
+      29,
+      0.835079
+    ],
+    [
+      43,
+      0.839494
+    ],
+    [
+      36,
+      0.841693
+    ]
+  ],
+  "q6_isolation_mean_d_to_5_nearest": 0.7706832,
+  "q21_isolation_mean_d_to_5_nearest": 0.8338490000000001,
+  "verdict": "NULL",
+  "honest_limits": [
+    "FR-distance from H-NEW-111 upper-triangular matrix.",
+    "Corpus baseline includes all 6,441 unique pair-distances; not length-matched.",
+    "Q 6 and Q 21 are both Meccan; mid-Meccan baseline would be a more conservative test.",
+    "Single-pipeline FR-on-stem-roots-top-500-Dirichlet-0.5; alternative metrics may rank differently."
+  ]
+}

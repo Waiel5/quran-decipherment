@@ -1,0 +1,206 @@
+{
+  "finding_id": "Q038-F-05",
+  "prereg_sha": "376d3229c121dd0677d359e15672a0da821dc3e429044f3c7bf664d994f12b76",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, FR-angular distance per H-NEW-111, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "method": "compare Q38 mean-FR-distance to muq cluster centroids vs Q38 min-FR-distance to non-cluster non-muq surahs",
+  "cluster_centroids": {
+    "ALM-6": {
+      "members": [
+        2,
+        3,
+        29,
+        30,
+        31,
+        32
+      ],
+      "mean_distance_to_Q38": 1.0181763333333333,
+      "min_distance_to_Q38": 0.856916,
+      "min_distance_member": 32
+    },
+    "ALR-5": {
+      "members": [
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "mean_distance_to_Q38": 0.9860089999999999,
+      "min_distance_to_Q38": 0.882729,
+      "min_distance_member": 15
+    },
+    "HM-7": {
+      "members": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "mean_distance_to_Q38": 0.9339374285714286,
+      "min_distance_to_Q38": 0.861935,
+      "min_distance_member": 43
+    },
+    "TSM-3": {
+      "members": [
+        26,
+        27,
+        28
+      ],
+      "mean_distance_to_Q38": 1.0048353333333333,
+      "min_distance_to_Q38": 0.990792,
+      "min_distance_member": 27
+    }
+  },
+  "nearest_cluster_by_centroid": "HM-7",
+  "min_centroid_distance": 0.9339374285714286,
+  "nearest_noncluster_surah": 78,
+  "min_noncluster_distance": 0.833107,
+  "delta_centroid_minus_noncluster": 0.10083042857142854,
+  "direction_locked_satisfied": true,
+  "top5_nearest_to_Q38": [
+    {
+      "surah": 78,
+      "distance": 0.833107
+    },
+    {
+      "surah": 50,
+      "distance": 0.854087
+    },
+    {
+      "surah": 32,
+      "distance": 0.856916
+    },
+    {
+      "surah": 43,
+      "distance": 0.861935
+    },
+    {
+      "surah": 51,
+      "distance": 0.867266
+    }
+  ],
+  "cluster_in_top5_nearest": true,
+  "cluster_member_ranks": {
+    "ALM-6": [
+      [
+        2,
+        102,
+        1.05548
+      ],
+      [
+        3,
+        106,
+        1.079087
+      ],
+      [
+        29,
+        92,
+        1.012123
+      ],
+      [
+        30,
+        107,
+        1.081842
+      ],
+      [
+        31,
+        94,
+        1.02361
+      ],
+      [
+        32,
+        3,
+        0.856916
+      ]
+    ],
+    "ALR-5": [
+      [
+        10,
+        98,
+        1.04333
+      ],
+      [
+        11,
+        86,
+        0.997478
+      ],
+      [
+        12,
+        104,
+        1.072139
+      ],
+      [
+        14,
+        39,
+        0.934369
+      ],
+      [
+        15,
+        7,
+        0.882729
+      ]
+    ],
+    "HM-7": [
+      [
+        40,
+        71,
+        0.967415
+      ],
+      [
+        41,
+        6,
+        0.882625
+      ],
+      [
+        42,
+        77,
+        0.974939
+      ],
+      [
+        43,
+        4,
+        0.861935
+      ],
+      [
+        44,
+        29,
+        0.924725
+      ],
+      [
+        45,
+        73,
+        0.967621
+      ],
+      [
+        46,
+        64,
+        0.958302
+      ]
+    ],
+    "TSM-3": [
+      [
+        26,
+        95,
+        1.024617
+      ],
+      [
+        27,
+        82,
+        0.990792
+      ],
+      [
+        28,
+        88,
+        0.999097
+      ]
+    ]
+  },
+  "other_singletons_distance": {
+    "Q50": 0.854087,
+    "Q68": 0.909551
+  },
+  "verdict": "DIRECTIONAL"
+}

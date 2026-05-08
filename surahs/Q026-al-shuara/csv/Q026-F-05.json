@@ -1,0 +1,74 @@
+{
+  "finding_id": "Q026-F-05",
+  "prereg_sha": "dce525681887541a802d1ee319a84dc1a30e88c9db17c1667bceb33d678a25a6",
+  "rules_tuple": "(no-tashkeel, orthographic-token-ws-split, no-pause-strip)",
+  "method": "Q26 mean tokens-per-verse vs corpus and pre-Islamic poetry (al-Muʿallaqāt) baseline",
+  "Q26_mean_tpv_with_v1": 5.960352422907489,
+  "Q26_mean_tpv_without_muqattaa_v1": 5.982300884955753,
+  "Q26_n_verses": 227,
+  "Q26_total_tokens": 1353,
+  "rank_q26_among_114": 45,
+  "rank_quintile": "short",
+  "corpus_token_weighted_mean_tpv": 13.209589480436177,
+  "surah_mean_avg_tpv": 10.867436749350304,
+  "surah_mean_sd_tpv": 6.926565532783462,
+  "z_q26_corpus": -0.7084440771140569,
+  "p_perm_rank": 0.8144185581441856,
+  "n_perm": 10000,
+  "seed": 20260507,
+  "poetry_baseline": {
+    "n_files": 7,
+    "per_file": [
+      {
+        "file": "muallaqa-amr-bin-kulthum.raw.txt",
+        "n_lines": 111,
+        "mean_tokens_per_full_line": 7.072072072072072,
+        "mean_tokens_per_hemistich_estimate": 3.536036036036036
+      },
+      {
+        "file": "muallaqa-antara.raw.txt",
+        "n_lines": 162,
+        "mean_tokens_per_full_line": 5.592592592592593,
+        "mean_tokens_per_hemistich_estimate": 2.7962962962962963
+      },
+      {
+        "file": "muallaqa-harith.raw.txt",
+        "n_lines": 178,
+        "mean_tokens_per_full_line": 7.247191011235955,
+        "mean_tokens_per_hemistich_estimate": 3.6235955056179776
+      },
+      {
+        "file": "muallaqa-imru-al-qais.raw.txt",
+        "n_lines": 88,
+        "mean_tokens_per_full_line": 8.011363636363637,
+        "mean_tokens_per_hemistich_estimate": 4.005681818181818
+      },
+      {
+        "file": "muallaqa-labid.raw.txt",
+        "n_lines": 192,
+        "mean_tokens_per_full_line": 7.635416666666667,
+        "mean_tokens_per_hemistich_estimate": 3.8177083333333335
+      },
+      {
+        "file": "muallaqa-tarafa.raw.txt",
+        "n_lines": 126,
+        "mean_tokens_per_full_line": 9.134920634920634,
+        "mean_tokens_per_hemistich_estimate": 4.567460317460317
+      },
+      {
+        "file": "muallaqa-zuhayr.raw.txt",
+        "n_lines": 72,
+        "mean_tokens_per_full_line": 8.48611111111111,
+        "mean_tokens_per_hemistich_estimate": 4.243055555555555
+      }
+    ],
+    "mean_tokens_per_full_line_avg": 7.597095389280382,
+    "mean_tokens_per_hemistich_estimate_avg": 3.798547694640191,
+    "z_q26_vs_poetry_full_line": -1.5560875946729835,
+    "z_q26_vs_poetry_hemistich": 4.110550757052399
+  },
+  "h1a_corpus_short_passed": false,
+  "h1b_poetry_distinct_passed": false,
+  "alpha_bonferroni": 0.01,
+  "verdict": "NULL"
+}

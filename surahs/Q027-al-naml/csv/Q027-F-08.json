@@ -1,0 +1,34 @@
+{
+  "finding_id": "Q027-F-08",
+  "prereg_sha": "7dd3e7ab8649fda6fd756a83f8238551431a483c86309ae8cebe29c43144becb",
+  "rules_tuple": "(no-tashkeel orthographic + QAC stem-roots; FR distance from h-new-111; basmala-counted-only-in-Q1; Hafs-Kufan; Mashriqi)",
+  "seed": 20260507,
+  "pair_FR_distances": {
+    "Q27_Q34": 0.866149,
+    "Q27_Q38": 0.990792,
+    "Q34_Q38": 0.923222
+  },
+  "stat_a_FR_difference_38_minus_34": 0.12464300000000006,
+  "block_root_jaccard": {
+    "Q27_Q34_block": 0.09333333333333334,
+    "Q27_Q38_block": 0.10062893081761007
+  },
+  "stat_b_jaccard_difference_34_minus_38": -0.007295597484276731,
+  "block_token_concordance": {
+    "Q27_Q34_normalized": 1.3333333333333333,
+    "Q27_Q38_normalized": 1.0,
+    "Q27_Q34_raw_count": 4,
+    "Q27_Q38_raw_count": 11,
+    "Q34_block_size_verses": 3,
+    "Q38_block_size_verses": 11
+  },
+  "stat_c_token_concordance_difference": 0.33333333333333326,
+  "H1_pass": true,
+  "H1b_pass": false,
+  "H1c_pass": true,
+  "n_pass_of_3": 2,
+  "aux_p_two_sided_random_pair": 0.14608539146085392,
+  "verdict": "DIRECTIONAL",
+  "bonferroni_k": 5,
+  "alpha_bon": 0.01
+}

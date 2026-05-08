@@ -1,0 +1,62 @@
+{
+  "finding_id": "Q038-F-03",
+  "prereg_sha": "b437c3e2b0f87b375e2bc2a3757ad21225773c46ca03e0b7371faeb42cb41b61",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, character-graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "method": "per-singleton own-letter-rate vs permutation null of size-matched random substrings from corpus excluding self",
+  "alpha_bon": 0.016666666666666666,
+  "singletons": {
+    "38": {
+      "surah": 38,
+      "name": "Sad",
+      "letter": "ص",
+      "n_body_letters": 3064,
+      "count_L": 28,
+      "rate_L_in_body": 0.009138381201044387,
+      "rate_L_corpus_excl": 0.006230501065382103,
+      "delta_pct_pts": 0.2907880135662284,
+      "ratio_self_to_corpus": 1.4667168988733574,
+      "permutation_null_mean_rate": 0.006187695822454308,
+      "permutation_null_std": 0.001672611990585988,
+      "p_greater_perm": 0.0526,
+      "direction_locked": "HIGHER",
+      "pre_commit_satisfied": true
+    },
+    "50": {
+      "surah": 50,
+      "name": "Qaf",
+      "letter": "ق",
+      "n_body_letters": 1506,
+      "count_L": 56,
+      "rate_L_in_body": 0.03718459495351926,
+      "rate_L_corpus_excl": 0.021197666646411862,
+      "delta_pct_pts": 1.5986928307107395,
+      "ratio_self_to_corpus": 1.754183400172184,
+      "permutation_null_mean_rate": 0.021296082337317397,
+      "permutation_null_std": 0.005484282801842083,
+      "p_greater_perm": 0.0033,
+      "direction_locked": "HIGHER",
+      "pre_commit_satisfied": true
+    },
+    "68": {
+      "surah": 68,
+      "name": "Nun",
+      "letter": "ن",
+      "n_body_letters": 1288,
+      "count_L": 130,
+      "rate_L_in_body": 0.10093167701863354,
+      "rate_L_corpus_excl": 0.08239969880798402,
+      "delta_pct_pts": 1.8531978210649516,
+      "ratio_self_to_corpus": 1.2249034702643098,
+      "permutation_null_mean_rate": 0.08244107142857143,
+      "permutation_null_std": 0.01160542133907832,
+      "p_greater_perm": 0.0757,
+      "direction_locked": "HIGHER",
+      "pre_commit_satisfied": true
+    }
+  },
+  "n_pass_of_3": 1,
+  "direction_locked_satisfied_all": true,
+  "verdict": "NULL"
+}

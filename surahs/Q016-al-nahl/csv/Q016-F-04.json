@@ -1,0 +1,35 @@
+{
+  "finding_id": "Q016-F-04",
+  "prereg_sha": "b56cf82be99ad48c40d29ace39d8d84a4ecfe18bb93c7a97dd3c916602b4a3c9",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-root-set or orthographic-token-set)",
+  "coda_verses": [
+    120,
+    121,
+    122,
+    123
+  ],
+  "cell_A_roots_jaccard": {
+    "coda_jaccard": 0.04189944134078212,
+    "null_mean": 0.06474692737430167,
+    "null_median": 0.061452513966480445,
+    "p_perm": 0.10128987101289871,
+    "reject_h0": false
+  },
+  "cell_B_token_cosine": {
+    "coda_cosine": 0.3626257454292389,
+    "null_mean": 0.4575579026859509,
+    "null_median": 0.45539341819549495,
+    "p_perm": 0.18238176182381763,
+    "reject_h0": false
+  },
+  "mw5_q12v4_jaccard": 0.01488095238095238,
+  "mw5_q12v4_p": 0.306841046277666,
+  "mw5_pass": false,
+  "coda_unique_roots_count": 20,
+  "rest_unique_roots_count": 353,
+  "shared_roots_count": 15,
+  "verdict": "NULL",
+  "verdict_note": "no pre-commit violation"
+}

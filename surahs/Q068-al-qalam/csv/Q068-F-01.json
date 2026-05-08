@@ -1,0 +1,173 @@
+{
+  "finding_id": "Q068-F-01",
+  "prereg_sha256": "052e5de244595cb30a79f54eab0a45eda2261fdcbee759bdb28e4e63c61a738e",
+  "date_run": "2026-05-07",
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, QAC v0.4, basmala-counted-only-in-Q1, Hafs-Kufan)",
+  "target_surah": 68,
+  "root_family": [
+    "qlm",
+    "sTr",
+    "ktb",
+    "sjl",
+    "rqm",
+    "lwH"
+  ],
+  "corpus_total_root_tokens": 49968,
+  "q68_total_root_tokens": 191,
+  "per_root_results": {
+    "qlm": {
+      "corpus_K": 4,
+      "q68_k": 1,
+      "expected_under_uniform": 0.015289785462696126,
+      "observed_over_expected": 65.40314136125654,
+      "p_value_X_ge_k": 0.015202795837594537,
+      "passes_raw_alpha_0.05": true,
+      "passes_bonferroni_alpha": false
+    },
+    "sTr": {
+      "corpus_K": 16,
+      "q68_k": 2,
+      "expected_under_uniform": 0.061159141850784506,
+      "observed_over_expected": 32.70157068062827,
+      "p_value_X_ge_k": 0.001683726006855756,
+      "passes_raw_alpha_0.05": true,
+      "passes_bonferroni_alpha": true
+    },
+    "ktb": {
+      "corpus_K": 319,
+      "q68_k": 2,
+      "expected_under_uniform": 1.2193603906500161,
+      "observed_over_expected": 1.6402041720691296,
+      "p_value_X_ge_k": 0.3447582501586787,
+      "passes_raw_alpha_0.05": false,
+      "passes_bonferroni_alpha": false
+    },
+    "sjl": {
+      "corpus_K": 4,
+      "q68_k": 0,
+      "expected_under_uniform": 0.015289785462696126,
+      "observed_over_expected": 0.0,
+      "p_value_X_ge_k": 1.0,
+      "passes_raw_alpha_0.05": false,
+      "passes_bonferroni_alpha": false
+    },
+    "rqm": {
+      "corpus_K": 3,
+      "q68_k": 0,
+      "expected_under_uniform": 0.011467339097022093,
+      "observed_over_expected": 0.0,
+      "p_value_X_ge_k": 1.0,
+      "passes_raw_alpha_0.05": false,
+      "passes_bonferroni_alpha": false
+    },
+    "lwH": {
+      "corpus_K": 6,
+      "q68_k": 0,
+      "expected_under_uniform": 0.022934678194044187,
+      "observed_over_expected": 0.0,
+      "p_value_X_ge_k": 1.0,
+      "passes_raw_alpha_0.05": false,
+      "passes_bonferroni_alpha": false
+    }
+  },
+  "joint_family_K": 352,
+  "joint_family_k": 5,
+  "joint_family_expected_under_uniform": 1.3455011207172591,
+  "joint_family_p_value": 0.011700693585708266,
+  "q68_writing_density_per_1000": 26.17801047120419,
+  "q68_rank_by_writing_density_per_1000": 5,
+  "top10_surahs_by_writing_density": [
+    {
+      "surah": 83,
+      "density_per_1000": 69.30693069306932,
+      "k": 7,
+      "n": 101
+    },
+    {
+      "surah": 98,
+      "density_per_1000": 66.66666666666667,
+      "k": 4,
+      "n": 60
+    },
+    {
+      "surah": 105,
+      "density_per_1000": 55.55555555555555,
+      "k": 1,
+      "n": 18
+    },
+    {
+      "surah": 84,
+      "density_per_1000": 28.985507246376812,
+      "k": 2,
+      "n": 69
+    },
+    {
+      "surah": 68,
+      "density_per_1000": 26.17801047120419,
+      "k": 5,
+      "n": 191
+    },
+    {
+      "surah": 69,
+      "density_per_1000": 23.809523809523807,
+      "k": 4,
+      "n": 168
+    },
+    {
+      "surah": 96,
+      "density_per_1000": 20.408163265306122,
+      "k": 1,
+      "n": 49
+    },
+    {
+      "surah": 82,
+      "density_per_1000": 20.0,
+      "k": 1,
+      "n": 50
+    },
+    {
+      "surah": 52,
+      "density_per_1000": 19.801980198019802,
+      "k": 4,
+      "n": 202
+    },
+    {
+      "surah": 74,
+      "density_per_1000": 18.51851851851852,
+      "k": 3,
+      "n": 162
+    }
+  ],
+  "q68_writing_token_locations": {
+    "qlm": [
+      [
+        "(68:1:2:3)",
+        "qalami"
+      ]
+    ],
+    "sTr": [
+      [
+        "(68:1:4:1)",
+        "yasoTuru"
+      ],
+      [
+        "(68:15:6:1)",
+        ">asa`Tiyru"
+      ]
+    ],
+    "ktb": [
+      [
+        "(68:37:3:1)",
+        "kita`bN"
+      ],
+      [
+        "(68:47:5:1)",
+        "yakotubu"
+      ]
+    ]
+  },
+  "alpha_raw": 0.05,
+  "alpha_bonferroni_6": 0.008333333333333333,
+  "verdict": "VINDICATED",
+  "interpretation": "At least one root passes Bonferroni-6 α=0.0083, AND joint p=0.0117 < 0.05. Ibn ʿAbbās's CONTENT-BEACON gloss of ن empirically supported."
+}

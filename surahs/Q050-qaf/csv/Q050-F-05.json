@@ -1,0 +1,52 @@
+{
+  "finding_id": "Q050-F-05",
+  "prereg_sha256": "693953f73701776cb18678d96f0a73e7311095638621fd8ffe323ecf7891f95a",
+  "date_run": "2026-05-07",
+  "rules_tuple": "(min-tashkeel for rhyme analysis, last-grapheme of last word per verse after mushaf-mark stripping, basmala-not-counted-in-Q50/Q38/Q68, Hafs-Kufan, mushaf-order)",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016667,
+  "per_surah_diagnostic": [
+    {
+      "surah": 50,
+      "opener": "ق",
+      "dominant_rawi": "د",
+      "dominant_rawi_fraction": 0.6,
+      "opener_equals_rawi": false
+    },
+    {
+      "surah": 38,
+      "opener": "ص",
+      "dominant_rawi": "ب",
+      "dominant_rawi_fraction": 0.3977,
+      "opener_equals_rawi": false
+    },
+    {
+      "surah": 68,
+      "opener": "ن",
+      "dominant_rawi": "ن",
+      "dominant_rawi_fraction": 0.8077,
+      "opener_equals_rawi": true
+    }
+  ],
+  "per_surah_verdicts": [
+    {
+      "surah": 50,
+      "verdict": "NULL-(no-opener-rāwī-alignment)"
+    },
+    {
+      "surah": 38,
+      "verdict": "NULL-(no-opener-rāwī-alignment)"
+    },
+    {
+      "surah": 68,
+      "verdict": "MATCH-CONFIRMED"
+    }
+  ],
+  "cohort_match_count_observed": 1,
+  "null_mean_match_count": 0.169,
+  "p_value_one_sided": 0.157984,
+  "cohort_verdict": "CONFIRMED-NULL-on-opener-rāwī-alignment",
+  "interpretation": "The 1/3 cohort match rate (Q 68 only) is consistent with INDEPENDENCE of muqaṭṭaʿ-opener letter and verse-final rāwī. This vindicates the dual-iʿjāz typology orthogonality claim (letter-axis ⊥ rhyme-axis) at the singleton-letter cohort scale."
+}

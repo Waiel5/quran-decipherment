@@ -1,0 +1,48 @@
+{
+  "test_id": "Q006-F-05",
+  "pre_reg_sha": "8d9082b958c0681641c7930cf4b280e0040218e37444f5bae7b85251c269cde6",
+  "pre_reg_sha_verified": true,
+  "seed": 20260507,
+  "direction_locked": "MAX",
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "rules_tuple": "(no-tashkeel, orthographic-word, regex-word-boundary, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "q6v103": {
+    "c1_la_tudrikuhu": 1,
+    "c2_yudriku_obj": 1,
+    "c3_al_latif": 1,
+    "c4_al_khabir": 1,
+    "joint_score": 4,
+    "rank_among_6236": 1,
+    "n_tied_at_q6v103_score": 1
+  },
+  "cell_B_perfect_score_verses": [
+    {
+      "surah": 6,
+      "verse": 103,
+      "text": "لا تدركه الأبصار وهو يدرك الأبصار ۖ وهو اللطيف الخبير"
+    }
+  ],
+  "cell_B_high_score_verses_score3plus": [
+    {
+      "surah": 6,
+      "verse": 103,
+      "score": 4,
+      "text": "لا تدركه الأبصار وهو يدرك الأبصار ۖ وهو اللطيف الخبير"
+    }
+  ],
+  "cell_C_per_cell_corpus_counts": {
+    "c1_la_tudrikuhu_total": 1,
+    "c2_yudriku_obj_total": 1,
+    "c3_al_latif_total": 2,
+    "c4_al_khabir_total": 6
+  },
+  "total_verses_analyzed": 6236,
+  "verdict": "CONFIRMED-UNIQUE-MAX",
+  "honest_limits": [
+    "4-cell lexeme set is one operationalization of al-Bāqillānī's iʿjāz al-tawḥīd claim.",
+    "Cell C2 disambiguation: requires both يدرك verb AND (abṣār OR qulūb) object in same verse.",
+    "C3 (al-Laṭīf) and C4 (al-Khabīr) are paired in multiple verses (e.g., Q 33:34, Q 67:14) — these will appear as 2-cell verses.",
+    "Lexical-density-only test; does not capture rhetorical chiasm structure of Q 6:103."
+  ]
+}

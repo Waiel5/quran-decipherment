@@ -1,0 +1,56 @@
+{
+  "finding_id": "Q020-F-03",
+  "pre_reg_sha256": "b8564a47ca3741d1d04d80861462ed92775d4af7ff530456dbb6a20fa80f9b8b",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "trio": [
+    20,
+    27,
+    36
+  ],
+  "axis_1_FR": {
+    "trio_mean_intra": 0.9326,
+    "null_p5": 0.6269,
+    "p_perm": 0.4344,
+    "pass": false,
+    "pair_distances": {
+      "20-27": 0.9281,
+      "20-36": 0.9366,
+      "27-36": 0.9331
+    }
+  },
+  "axis_2_sigA_spread": {
+    "trio_spread": 0.925,
+    "null_p5": 0.629,
+    "p_perm": 0.1028,
+    "pass": false,
+    "sig_As": {
+      "20": -1.507,
+      "27": -1.649,
+      "36": -0.724
+    }
+  },
+  "axis_3_rhyme_top_letter_consensus": {
+    "top_letters": {
+      "20": "ي",
+      "27": "ن",
+      "36": "ن"
+    },
+    "consensus": 2,
+    "p_perm": 0.5519,
+    "pass": false
+  },
+  "axis_4_mean_d_rank_spread": {
+    "trio_ranks": {
+      "20": 99,
+      "27": 88,
+      "36": 64
+    },
+    "rank_spread": 35,
+    "null_p5": 17,
+    "p_perm": 0.2174,
+    "pass": false
+  },
+  "n_axes_pass": 0,
+  "verdict": "NULL"
+}

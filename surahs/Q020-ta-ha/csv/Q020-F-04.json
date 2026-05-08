@@ -1,0 +1,69 @@
+{
+  "finding_id": "Q020-F-04",
+  "pre_reg_sha256": "afd0ec991949c0f53afb47b695605d3efa87837b46aee414a5d7bce5baa54394",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "samiri_window": {
+    "start": 85,
+    "end": 98,
+    "cos_dist_to_surah_mean": 0.2969,
+    "rank": 110,
+    "n_windows": 122
+  },
+  "top_distant_windows": [
+    {
+      "rank": 1,
+      "start_verse": 1,
+      "end_verse": 14,
+      "cos_dist": 0.6475
+    },
+    {
+      "rank": 2,
+      "start_verse": 2,
+      "end_verse": 15,
+      "cos_dist": 0.6337
+    },
+    {
+      "rank": 3,
+      "start_verse": 3,
+      "end_verse": 16,
+      "cos_dist": 0.582
+    },
+    {
+      "rank": 4,
+      "start_verse": 4,
+      "end_verse": 17,
+      "cos_dist": 0.5645
+    },
+    {
+      "rank": 5,
+      "start_verse": 7,
+      "end_verse": 20,
+      "cos_dist": 0.5224
+    },
+    {
+      "rank": 6,
+      "start_verse": 5,
+      "end_verse": 18,
+      "cos_dist": 0.5213
+    },
+    {
+      "rank": 7,
+      "start_verse": 6,
+      "end_verse": 19,
+      "cos_dist": 0.4901
+    },
+    {
+      "rank": 8,
+      "start_verse": 8,
+      "end_verse": 21,
+      "cos_dist": 0.4826
+    }
+  ],
+  "permutation_null": {
+    "method": "verse-shuffle, recompute window-rank at position 84-0idx (Sāmirī verse-position)",
+    "p_perm": 0.8923,
+    "null_mean_rank": 64.4114
+  },
+  "verdict": "NULL"
+}

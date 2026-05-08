@@ -1,0 +1,97 @@
+{
+  "finding_id": "Q025-F-03",
+  "pre_reg_sha256": "0c0f1095a911f5b206d3009f949389ddeba80e722cc3e9fe297e75f7c80a5b40",
+  "seed": 20260507,
+  "alpha_bon": 0.0125,
+  "instruments": {
+    "I1_FR_similarity": {
+      "target_pair": [
+        25,
+        67
+      ],
+      "target_score": 0.5395041094028014,
+      "target_rank": 1871,
+      "target_percentile": 29.048284427883868,
+      "p_one_sided_upper": 0.2904828442788387,
+      "in_top_decile": false,
+      "pass_alpha_bon": false,
+      "control_pair": [
+        1,
+        6
+      ],
+      "control_score": 0.4608579515970111,
+      "control_rank": 5887,
+      "control_percentile": 91.39885111007608,
+      "control_in_top_decile": false
+    },
+    "I2_top_rhyme_identity": {
+      "target_pair": [
+        25,
+        67
+      ],
+      "target_score": 0,
+      "target_rank": 3306,
+      "target_percentile": 51.32743362831859,
+      "p_one_sided_upper": 1.0,
+      "in_top_decile": false,
+      "pass_alpha_bon": false,
+      "control_pair": [
+        1,
+        6
+      ],
+      "control_score": 1,
+      "control_rank": 4,
+      "control_percentile": 0.06210215804999224,
+      "control_in_top_decile": true
+    },
+    "I3_opening_word_identity": {
+      "target_pair": [
+        25,
+        67
+      ],
+      "target_score": 1,
+      "target_rank": 50,
+      "target_percentile": 0.7762769756249029,
+      "p_one_sided_upper": 0.02313305387362211,
+      "in_top_decile": true,
+      "pass_alpha_bon": false,
+      "control_pair": [
+        1,
+        6
+      ],
+      "control_score": 0,
+      "control_rank": 154,
+      "control_percentile": 2.3909330849247015,
+      "control_in_top_decile": true
+    },
+    "I4_sig_A_similarity": {
+      "target_pair": [
+        25,
+        67
+      ],
+      "target_score": 0.6547513601309458,
+      "target_rank": 4551,
+      "target_percentile": 70.65673032137867,
+      "p_one_sided_upper": 0.7065673032137867,
+      "in_top_decile": false,
+      "pass_alpha_bon": false,
+      "control_pair": [
+        1,
+        6
+      ],
+      "control_score": 0.489164112016106,
+      "control_rank": 5712,
+      "control_percentile": 88.68188169538892,
+      "control_in_top_decile": false
+    }
+  },
+  "aggregate": {
+    "n_top_decile_4": 1,
+    "n_top_decile_inferential_3": 0,
+    "n_pass_alpha_bon_4": 0,
+    "n_pass_alpha_bon_inferential_3": 0,
+    "mw6_top_decile_4": 2,
+    "mw6_passes": true,
+    "verdict": "NULL — *tabāraka* opener is surface-only"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "test_id": "Q021-F-03",
+  "pre_reg_sha": "16d48c7847fcb704f6588ce04df6239df227c529b1608616d1ca283bdee27587",
+  "pre_reg_sha_verified": true,
+  "rules_tuple": "(QAC-v0.4-STEM-roots, top-K=500, Dirichlet-α=0.5, L1-normalize, Fisher-Rao, no-tashkeel)",
+  "K_TOP": 500,
+  "DIRICHLET": 0.5,
+  "q21_mean_d_to_5_nearest": 0.8338492016365959,
+  "q21_5_nearest_surahs": [
+    7,
+    23,
+    29,
+    43,
+    36
+  ],
+  "q21_5_nearest_with_distance": [
+    {
+      "surah": 7,
+      "d": 0.8242773118422584
+    },
+    {
+      "surah": 23,
+      "d": 0.828701913270233
+    },
+    {
+      "surah": 29,
+      "d": 0.8350789429690537
+    },
+    {
+      "surah": 43,
+      "d": 0.8394944701728835
+    },
+    {
+      "surah": 36,
+      "d": 0.8416933699285508
+    }
+  ],
+  "q21_5_farthest_with_distance": [
+    {
+      "surah": 55,
+      "d": 1.3150612979470446
+    },
+    {
+      "surah": 9,
+      "d": 1.1529148550837107
+    },
+    {
+      "surah": 80,
+      "d": 1.1335852572127436
+    },
+    {
+      "surah": 92,
+      "d": 1.1332192408107675
+    },
+    {
+      "surah": 88,
+      "d": 1.1250187547529908
+    }
+  ],
+  "q21_mean_d_to_corpus": 1.009528643309748,
+  "q21_isolation_rank": 18,
+  "q21_isolation_percentile": 85.08771929824562,
+  "corpus_median_mean5": 0.7519092893258932,
+  "corpus_mean_mean5": 0.6538200259146422,
+  "q21_above_corpus_median": true,
+  "top_15_most_isolated": [
+    {
+      "surah": 55,
+      "mean5": 0.9927507711727194
+    },
+    {
+      "surah": 12,
+      "mean5": 0.9234545889683872
+    },
+    {
+      "surah": 24,
+      "mean5": 0.8926757335646727
+    },
+    {
+      "surah": 19,
+      "mean5": 0.8892790440828893
+    },
+    {
+      "surah": 26,
+      "mean5": 0.8845621496061743
+    },
+    {
+      "surah": 33,
+      "mean5": 0.8839554100771065
+    },
+    {
+      "surah": 18,
+      "mean5": 0.8807044303396009
+    },
+    {
+      "surah": 20,
+      "mean5": 0.8758994224481544
+    },
+    {
+      "surah": 8,
+      "mean5": 0.8665429413599665
+    },
+    {
+      "surah": 17,
+      "mean5": 0.8568837950079563
+    },
+    {
+      "surah": 38,
+      "mean5": 0.8546620930871854
+    },
+    {
+      "surah": 30,
+      "mean5": 0.8518111912448046
+    },
+    {
+      "surah": 37,
+      "mean5": 0.8499917460221802
+    },
+    {
+      "surah": 9,
+      "mean5": 0.8477737414500058
+    },
+    {
+      "surah": 47,
+      "mean5": 0.8457816198749661
+    }
+  ],
+  "bottom_5_least_isolated": [
+    {
+      "surah": 103,
+      "mean5": 0.27330412762242134
+    },
+    {
+      "surah": 113,
+      "mean5": 0.2727218248758986
+    },
+    {
+      "surah": 111,
+      "mean5": 0.2673483114999544
+    },
+    {
+      "surah": 106,
+      "mean5": 0.2590075333623445
+    },
+    {
+      "surah": 108,
+      "mean5": 0.22764237002222895
+    }
+  ],
+  "true_isolate_cluster_ranks": {
+    "16": {
+      "rank": 47,
+      "mean5": 0.779842739187455
+    },
+    "21": {
+      "rank": 18,
+      "mean5": 0.8338492016365959
+    },
+    "22": {
+      "rank": 35,
+      "mean5": 0.8025511593556065
+    },
+    "23": {
+      "rank": 30,
+      "mean5": 0.8087268926929213
+    },
+    "25": {
+      "rank": 33,
+      "mean5": 0.8052779980788111
+    }
+  },
+  "direction_locked": "HIGHER (Q21 above corpus median)",
+  "direction_pass": true,
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05,
+  "verdict": "CONFIRMED"
+}

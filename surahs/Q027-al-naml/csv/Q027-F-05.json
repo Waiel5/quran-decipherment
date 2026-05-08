@@ -1,0 +1,50 @@
+{
+  "finding_id": "Q027-F-05",
+  "prereg_sha": "f91bcf50d15d191009f429d7a34a542132e8f74b57bb0b56dd754ce891c70344",
+  "rules_tuple": "(no-tashkeel, orthographic-substring + QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "method": "verbatim-substring + window-Jaccard + extended-quotative substring",
+  "seed": 20260507,
+  "n_perm": "deterministic for H1.a/H1.c; rank-percentile over corpus 5-windows for H1.b",
+  "H1a_verbatim_basmala_count": 2,
+  "H1a_hits": [
+    {
+      "surah": 1,
+      "verse": 1,
+      "text": "بسم الله الرحمن الرحيم"
+    },
+    {
+      "surah": 27,
+      "verse": 30,
+      "text": "إنه من سليمان وإنه بسم الله الرحمن الرحيم"
+    }
+  ],
+  "H1a_pass": true,
+  "H1c_quotative_basmala_count": 3,
+  "H1c_hits": [
+    {
+      "surah": 1,
+      "verse": 1,
+      "text": "بسم الله الرحمن الرحيم"
+    },
+    {
+      "surah": 11,
+      "verse": 41,
+      "text": "۞ وقال اركبوا فيها بسم الله مجراها ومرساها ۚ إن ربي لغفور رحيم"
+    },
+    {
+      "surah": 27,
+      "verse": 30,
+      "text": "إنه من سليمان وإنه بسم الله الرحمن الرحيم"
+    }
+  ],
+  "H1c_pass": true,
+  "H1b_target_jaccard": 0.0,
+  "H1b_target_window_index_in_sorted": 3082,
+  "H1b_target_lower_tail_percentile": 53.31143005360539,
+  "H1b_n_windows": 5783,
+  "H1b_pass": false,
+  "verdict": "DIRECTIONAL",
+  "n_pass_of_3": 2,
+  "bonferroni_k": 5,
+  "alpha_bon": 0.01
+}

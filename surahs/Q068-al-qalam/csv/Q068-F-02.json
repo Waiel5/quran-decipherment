@@ -1,0 +1,29 @@
+{
+  "finding_id": "Q068-F-02",
+  "prereg_sha256": "506e0277dc25ff5bafac7fce935f58449e4716c681d5800ed0f49a06cbadc8ee",
+  "date_run": "2026-05-07",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "q68_letter_total": 1289,
+  "q68_nun_count": 131,
+  "q68_nun_rate": 0.10162916989914662,
+  "corpus_rest_letter_total": 329420,
+  "corpus_rest_nun_count": 27139,
+  "corpus_rest_nun_rate": 0.08238419039524011,
+  "rate_ratio_q68_over_rest": 1.2336003960417437,
+  "permutation_p_value_one_sided": 0.0686,
+  "binomial_p_value_one_sided": 0.008246461541382564,
+  "q68_percentile_in_perm_distribution": 93.14,
+  "perm_distribution_summary": {
+    "mean": 0.08218363072148951,
+    "min": 0.045771916214119475,
+    "max": 0.1287820015515904,
+    "p25": 0.07447633824670287,
+    "p50": 0.08068269976726145,
+    "p75": 0.08921644685802949
+  },
+  "alpha": 0.05,
+  "verdict": "DIRECTIONAL",
+  "interpretation": "Q 68 ن-rate marginally > corpus-rest at p_perm=0.0686."
+}

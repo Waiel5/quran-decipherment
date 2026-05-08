@@ -1,0 +1,80 @@
+{
+  "finding_id": "Q068-F-04",
+  "prereg_sha256": "5df62b113d245986c5a2a84a48ec3f145fe9725ce29c7c7ce4b7e4d63b88e8d3",
+  "date_run": "2026-05-07",
+  "seed": 20260507,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan)",
+  "sub_test_a_cross_surah_jaccard": {
+    "R_qalam_size": 40,
+    "R_kahf_size": 74,
+    "R_yasin_size": 72,
+    "d_qalam_kahf": 0.8932038834951457,
+    "d_qalam_yasin": 0.88,
+    "control_distribution": {
+      "n_ctrl_windows": 10000,
+      "mean": 0.9149310373471342,
+      "median": 0.9125,
+      "min": 0.8194444444444444,
+      "max": 1.0
+    },
+    "p_one_sided_qalam_kahf_high": 0.8332,
+    "p_one_sided_qalam_yasin_high": 0.9379,
+    "p_two_sided_qalam_kahf": 0.3335999999999999,
+    "p_two_sided_qalam_yasin": 0.12420000000000009,
+    "verdict_kahf": "NULL",
+    "verdict_yasin": "NULL"
+  },
+  "sub_test_b_within_surah_distinctness": {
+    "parable_window_v_start": 17,
+    "parable_window_v_end": 33,
+    "parable_window_jaccard_to_complement": 0.9186991869918699,
+    "parable_window_rank_among_all_36_windows": 7,
+    "top_window": {
+      "v_start": 13,
+      "v_end": 29,
+      "jaccard_to_complement": 0.926829268292683,
+      "root_set_size": 39
+    },
+    "top5_windows": [
+      {
+        "v_start": 13,
+        "v_end": 29,
+        "jaccard_to_complement": 0.926829268292683,
+        "root_set_size": 39
+      },
+      {
+        "v_start": 14,
+        "v_end": 30,
+        "jaccard_to_complement": 0.926829268292683,
+        "root_set_size": 39
+      },
+      {
+        "v_start": 15,
+        "v_end": 31,
+        "jaccard_to_complement": 0.926829268292683,
+        "root_set_size": 38
+      },
+      {
+        "v_start": 16,
+        "v_end": 32,
+        "jaccard_to_complement": 0.926829268292683,
+        "root_set_size": 38
+      },
+      {
+        "v_start": 9,
+        "v_end": 25,
+        "jaccard_to_complement": 0.9186991869918699,
+        "root_set_size": 46
+      }
+    ],
+    "p_v17_is_max_under_perm_null": 0.0175,
+    "p_v17_is_top3_under_perm_null": 0.062,
+    "baseline_uniform_rate": 0.027777777777777776,
+    "observed_v17_is_max": false,
+    "verdict": "NULL",
+    "p_b": 1.0
+  },
+  "alpha_bonferroni_2": 0.025,
+  "joint_verdict": "NULL"
+}

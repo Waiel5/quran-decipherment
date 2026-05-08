@@ -1,0 +1,113 @@
+{
+  "test_id": "Q013-F-04",
+  "title": "ALR-cluster membership of Q 13 — FR-distance test",
+  "Q13_to_ALR_distances": [
+    [
+      10,
+      0.911399
+    ],
+    [
+      11,
+      0.919478
+    ],
+    [
+      12,
+      1.068294
+    ],
+    [
+      14,
+      0.783843
+    ],
+    [
+      15,
+      0.965596
+    ]
+  ],
+  "mean_FR_Q13_to_ALR": 0.9297219999999999,
+  "ALR_internal_pairwise_pairs": [
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "dist": 0.805201
+    },
+    {
+      "pair": [
+        10,
+        12
+      ],
+      "dist": 1.005986
+    },
+    {
+      "pair": [
+        10,
+        14
+      ],
+      "dist": 0.88109
+    },
+    {
+      "pair": [
+        10,
+        15
+      ],
+      "dist": 0.964862
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "dist": 0.963772
+    },
+    {
+      "pair": [
+        11,
+        14
+      ],
+      "dist": 0.896227
+    },
+    {
+      "pair": [
+        11,
+        15
+      ],
+      "dist": 0.952179
+    },
+    {
+      "pair": [
+        12,
+        14
+      ],
+      "dist": 1.075726
+    },
+    {
+      "pair": [
+        12,
+        15
+      ],
+      "dist": 0.997671
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "dist": 1.009111
+    }
+  ],
+  "mean_ALR_internal_pairwise": 0.9551825,
+  "delta_observed": -0.025460500000000108,
+  "delta_threshold": 0.05,
+  "in_threshold": true,
+  "p_perm_random_substitution_no_better": 0.143,
+  "n_perm": 10000,
+  "alpha_bon": 0.01,
+  "null_distribution_stats": {
+    "min": -0.11389330000000009,
+    "median": 0.08553109999999986,
+    "max": 0.3634036999999999,
+    "mean": 0.07752329205999994
+  },
+  "verdict": "NULL"
+}

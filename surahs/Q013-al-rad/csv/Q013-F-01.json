@@ -1,0 +1,80 @@
+{
+  "test_id": "Q013-F-01",
+  "title": "ALMR letter-family-lattice position — BETWEEN ALM and ALR",
+  "ALM_cluster": [
+    2,
+    3,
+    29,
+    30,
+    31,
+    32
+  ],
+  "ALR_cluster": [
+    10,
+    11,
+    12,
+    14,
+    15
+  ],
+  "Q13_FR_to_each_ALM": [
+    [
+      2,
+      0.90952
+    ],
+    [
+      3,
+      0.89318
+    ],
+    [
+      29,
+      0.882072
+    ],
+    [
+      30,
+      0.888409
+    ],
+    [
+      31,
+      0.850477
+    ],
+    [
+      32,
+      0.921149
+    ]
+  ],
+  "Q13_FR_to_each_ALR": [
+    [
+      10,
+      0.911399
+    ],
+    [
+      11,
+      0.919478
+    ],
+    [
+      12,
+      1.068294
+    ],
+    [
+      14,
+      0.783843
+    ],
+    [
+      15,
+      0.965596
+    ]
+  ],
+  "mean_FR_Q13_to_ALM": 0.8908011666666668,
+  "mean_FR_Q13_to_ALR": 0.9297219999999999,
+  "ALM_internal_pairwise_mean": 0.9256812,
+  "ALR_internal_pairwise_mean": 0.9551825,
+  "corpus_pairwise_FR_median": 0.95615,
+  "BETWEEN_indicator_observed": 1,
+  "p_perm_random_surah_also_BETWEEN": 0.1787,
+  "n_perm": 10000,
+  "alpha_bon": 0.01,
+  "interpretation": "p_perm_random_surah_also_BETWEEN = fraction of random non-Q13 substitutions that ALSO satisfy BETWEEN (mean to BOTH clusters below pairwise median). Low p_perm = Q 13's BETWEEN status is statistically distinctive.",
+  "verdict": "NULL",
+  "Q13_closer_to_ALM_or_ALR": "ALM",
+  "ALM_minus_ALR_mean": -0.03892083333333318
+}

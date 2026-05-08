@@ -1,0 +1,187 @@
+{
+  "test_id": "Q006-F-01",
+  "pre_reg_sha": "741af6d1309e07a7c28846bebd1662de94ecabb1c42db5e4341a233fdb1b332c",
+  "pre_reg_sha_verified": true,
+  "seed": 20260507,
+  "direction_locked": "MAX",
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "rules_tuple": "(no-tashkeel, QAC-PN-lemma, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "q6_n_verses": 165,
+  "q6_total_prophet_tokens": 21,
+  "q6_cell_A_max_tokens_in_verse": 9,
+  "q6_cell_A_densest_verse_id": 84,
+  "q6_cell_A_rank": 2,
+  "q6_cell_B_densest_5window_density": 3.2,
+  "q6_cell_B_rank": 1,
+  "N_qualifying_surahs": 49,
+  "verdict": "DIRECTIONAL-strong",
+  "top10_cell_A": [
+    {
+      "rank": 1,
+      "surah": 4,
+      "max_tokens_in_verse": 10,
+      "densest_verse_id": 163,
+      "n_verses": 176
+    },
+    {
+      "rank": 2,
+      "surah": 6,
+      "max_tokens_in_verse": 9,
+      "densest_verse_id": 84,
+      "n_verses": 165
+    },
+    {
+      "rank": 3,
+      "surah": 2,
+      "max_tokens_in_verse": 5,
+      "densest_verse_id": 136,
+      "n_verses": 286
+    },
+    {
+      "rank": 4,
+      "surah": 3,
+      "max_tokens_in_verse": 5,
+      "densest_verse_id": 84,
+      "n_verses": 200
+    },
+    {
+      "rank": 5,
+      "surah": 11,
+      "max_tokens_in_verse": 4,
+      "densest_verse_id": 89,
+      "n_verses": 123
+    },
+    {
+      "rank": 6,
+      "surah": 12,
+      "max_tokens_in_verse": 3,
+      "densest_verse_id": 6,
+      "n_verses": 111
+    },
+    {
+      "rank": 7,
+      "surah": 7,
+      "max_tokens_in_verse": 3,
+      "densest_verse_id": 142,
+      "n_verses": 206
+    },
+    {
+      "rank": 8,
+      "surah": 19,
+      "max_tokens_in_verse": 3,
+      "densest_verse_id": 58,
+      "n_verses": 98
+    },
+    {
+      "rank": 9,
+      "surah": 38,
+      "max_tokens_in_verse": 3,
+      "densest_verse_id": 45,
+      "n_verses": 88
+    },
+    {
+      "rank": 10,
+      "surah": 33,
+      "max_tokens_in_verse": 3,
+      "densest_verse_id": 7,
+      "n_verses": 73
+    }
+  ],
+  "top10_cell_B": [
+    {
+      "rank": 1,
+      "surah": 6,
+      "densest_5_density": 3.2,
+      "total_prophet_tokens": 21,
+      "n_verses": 165
+    },
+    {
+      "rank": 2,
+      "surah": 2,
+      "densest_5_density": 2.4,
+      "total_prophet_tokens": 49,
+      "n_verses": 286
+    },
+    {
+      "rank": 3,
+      "surah": 4,
+      "densest_5_density": 2.2,
+      "total_prophet_tokens": 16,
+      "n_verses": 176
+    },
+    {
+      "rank": 4,
+      "surah": 12,
+      "densest_5_density": 1.4,
+      "total_prophet_tokens": 32,
+      "n_verses": 111
+    },
+    {
+      "rank": 5,
+      "surah": 7,
+      "densest_5_density": 1.2,
+      "total_prophet_tokens": 42,
+      "n_verses": 206
+    },
+    {
+      "rank": 6,
+      "surah": 11,
+      "densest_5_density": 1.2,
+      "total_prophet_tokens": 36,
+      "n_verses": 123
+    },
+    {
+      "rank": 7,
+      "surah": 27,
+      "densest_5_density": 1.2,
+      "total_prophet_tokens": 15,
+      "n_verses": 93
+    },
+    {
+      "rank": 8,
+      "surah": 3,
+      "densest_5_density": 1.0,
+      "total_prophet_tokens": 19,
+      "n_verses": 200
+    },
+    {
+      "rank": 9,
+      "surah": 19,
+      "densest_5_density": 1.0,
+      "total_prophet_tokens": 17,
+      "n_verses": 98
+    },
+    {
+      "rank": 10,
+      "surah": 21,
+      "densest_5_density": 1.0,
+      "total_prophet_tokens": 21,
+      "n_verses": 112
+    }
+  ],
+  "q6_densest_verse_lemmas": [
+    "<isoHaAq",
+    "yaEoquwb",
+    "nuwH",
+    "daAwud",
+    "sulayoma`n",
+    ">ay~uwb",
+    "yuwsuf",
+    "muwsaY`",
+    "ha`ruwn"
+  ],
+  "comparison_q21": {
+    "q21_total_prophet_tokens": 21,
+    "q21_cell_A_max": 2,
+    "q21_cell_B_density": 1.0,
+    "q21_cell_A_rank": 13,
+    "q21_cell_B_rank": 10
+  },
+  "honest_limits": [
+    "25-prophet QAC-PN-lemma set (locked from H-NEW-940 / Q021-F-01).",
+    "Token = each PN-lemma occurrence in a verse, not unique types per verse.",
+    "Cell B uses 5-verse contiguous windows; surahs <5 verses use total/n_verses.",
+    "Pronominal anaphora excluded (deliberate operational choice favoring LIST-FORM)."
+  ]
+}
