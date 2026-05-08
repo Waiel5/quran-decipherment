@@ -2592,3 +2592,39 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **NEW corpus-architectural element**: structural-twin-pairs are an organized class. Cross-finding-026 §13 currently has 2 confirmed members; future Wave specialists may identify additional twin-pairs.
 - Source: this ledger inline computation + Q014-F-02 specialist verification.
 
+
+### 10.37 H-NEW-1220 — Corpus FR-centroid ranking of all 114 surahs + classical-claim audit
+
+- **[[h-new-1220-fr-centroid-ranking|H-NEW-1220]] — full FR-centroid ranking of all 114 surahs computed (mean pairwise FR distance to corpus). Major classical-claim audit results.**
+
+**TOP-7 FR-CENTROIDS**:
+| Rank | Surah | mean_d | Note |
+|:-:|:-:|:-:|:--|
+| 1 | **Q 112 al-Ikhlāṣ** | 0.7592 | al-Khaṭṭābī iʿjāz al-maʿnā exemplar — CONFIRMED |
+| 2 | Q 110 al-Naṣr | 0.7644 | last-revealed surah, chronology-architecture-dissociated |
+| 3 | Q 108 al-Kawthar | 0.7718 | shortest surah |
+| 4 | **Q 1 al-Fātiḥa** | 0.7789 | foundational opener — near-centroid |
+| 5 | Q 106 Quraysh | 0.7803 | |
+| 6 | Q 114 al-Nās | 0.7838 | muʿawwidhatān |
+| 7 | Q 113 al-Falaq | 0.7843 | muʿawwidhatān |
+
+**The corpus FR-centroid zone is the muʿawwidhāt + early-Meccan + al-Fātiḥa cluster** — the architectural-anchor of the Quran.
+
+**MOST-ISOLATED surahs (rank 110-114)**:
+| Rank | Surah | mean_d | Note |
+|:-:|:-:|:-:|:--|
+| 110 | Q 26 al-Shuʿarāʾ | 1.0979 | dual-refrain prophet-cycle |
+| 111 | Q 12 Yūsuf | 1.1121 | unique continuous-narrative |
+| 112 | Q 4 al-Nisāʾ | 1.1375 | major Medinan legal |
+| 113 | Q 9 al-Tawba | 1.1573 | major Medinan war/treaty |
+| 114 | **Q 55 al-Raḥmān** | 1.1806 | corpus-min sig_A; iʿjāz al-takrīr |
+
+**MAJOR CLASSICAL-CLAIM AUDIT** (Wave-D MAY-7 et al. + this finding):
+- ✅ **al-Khaṭṭābī Q 112 iʿjāz al-maʿnā exemplar → CORPUS-RANK 1**: CONFIRMED at maximum precision. The "thuluth al-Qurʾān" surah IS architecturally most-central.
+- ❌ **al-Tirmidhī #2887 "Q 36 Yāsīn is heart of the Quran" → CORPUS-RANK 64/114**: NOT centroid at the FR-content level. Mid-pack. The hadith's "heart of Quran" status doesn't match the FR-centroid definition. The hadith is **classically contested as ḍaʿīf** (al-Albānī, *Silsilat al-Ḍaʿīfa*). Q 36 IS the heart in OTHER senses (muqaṭṭaʿ-opener + 2-letter, dying-recitation, narrative structure) — but NOT at the FR-centroid measure.
+- ⚠️ **al-Khaṭṭābī Q 55 al-Raḥmān iʿjāz signature → CORPUS-RANK 114 (most-isolated)**: this is a SECOND classical-claim about Q 55 — the "ʿarūs al-Qurʾān" (bride of the Quran) hadith and Q 55 having unique iʿjāz al-takrīr. The CORPUS-MOST-ISOLATED rank reinforces the cross-finding-027 finding that Q 55 sits at the maximum-distance EDGE of the corpus.
+
+**ARCHITECTURAL ASYMMETRY**: the mushaf's center-of-mass is at the SHORT-TAIL (muʿawwidhāt + Q 1), not the LONG-HEAD. **The mushaf is FR-CENTROID-WEIGHTED toward its TAIL, not its head.** This is consistent with H-NEW-660 compression-tail (content-distance d̄ decreases from Q 50 onward), H-NEW-1080 short-Medinan-cohesion (Q 57-66), H-NEW-1200 short-Meccan-tail-eschatology cluster (Q 56-104, p=0.00030).
+
+The corpus is structurally HEAVY in the LONG-HEAD (Q 2-9 al-sabʿ-al-ṭiwāl) but STRUCTURALLY TIGHT in the SHORT-TAIL (Q 90-114 mufaṣṣal-qiṣār). al-Suyūṭī's *al-Itqān* nawʿ on al-mufaṣṣal hierarchy (al-ṭiwāl → al-mathānī → al-mufaṣṣal-tiwāl → al-mufaṣṣal-mathānī → al-mufaṣṣal-qiṣār) tracks the corpus's architectural-tightness gradient empirically. Source: this ledger inline computation.
+
