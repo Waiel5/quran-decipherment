@@ -1,0 +1,55 @@
+{
+  "test_id": "Q014-F-02",
+  "title": "Q 13 ↔ Q 14 bilateral mutual-nearest FR-content twin pair",
+  "Q14_FR_nearest": 13,
+  "Q14_FR_nearest_distance": 0.783843,
+  "Q13_FR_nearest": 14,
+  "Q13_FR_nearest_distance": 0.783843,
+  "bilateral_FR_mutual_nearest": true,
+  "Q14_top5_FR_nearest": [
+    [
+      13,
+      0.783843
+    ],
+    [
+      40,
+      0.806793
+    ],
+    [
+      22,
+      0.825173
+    ],
+    [
+      35,
+      0.836831
+    ],
+    [
+      71,
+      0.836867
+    ]
+  ],
+  "v14": [
+    0.5198898311328766,
+    1.1097126169882665,
+    1.144269518612711,
+    2.0662325275613185
+  ],
+  "v13": [
+    0.3976204387133688,
+    0.9495550247025136,
+    0.8682623098183962,
+    1.7207895681143606
+  ],
+  "v76": [
+    -0.1484598197890369,
+    -0.8938544427602615,
+    -1.3741561878484265,
+    -1.3940122881242307
+  ],
+  "d_arch_Q14_Q13": 0.4859126220086345,
+  "d_arch_Q14_Q76": 4.77249771526816,
+  "twin_strength_ratio_Q76_over_Q13": 9.821719994718215,
+  "closer_to_Q13_than_Q76": true,
+  "interpretation": "Q 13 ↔ Q 14 is a bilateral mutual-nearest FR-content pair (each is the other's argmin in the FR matrix). In 4-axis architectural signature space, Q 14 is closer to Q 13 than to Q 76 al-Insān (Medinan similar-length reference) by the ratio reported. This confirms the Q013-F-05 finding from Q 14's perspective.",
+  "verdict": "CONFIRMED — bilateral mutual-nearest pair AND 4-axis twin"
+}

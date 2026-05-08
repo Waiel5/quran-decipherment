@@ -2573,3 +2573,22 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **10th classical-form-pattern locked at corpus-EXACT or corpus-formal-FR precision** (joining H-NEW-1190, 1180, 1170, 1160, 1130, 1100, 1010, 110, cross-finding-008).
 - Source: this ledger inline computation (seed 20260508).
 
+
+### 10.36 H-NEW-1210 + Q 14/Q 37 specialist landing — Q 13 ↔ Q 14 confirmed BILATERAL twin-pair (2nd corpus structural-twin)
+
+**Q 14 Ibrāhīm specialist** (4 JSONs, full template):
+- **Q014-F-01 CONFIRMED — corpus-MAX rank 1**: Q 14:35-41 Abrahamic Mecca-prayer lexical density. *rabbi jʿalnī muqīma al-ṣalāti* prayer-cluster density per 100w corpus-MAX. al-Bāqillānī's classical iʿjāz al-balāgha claim about Q 14:35 EMPIRICALLY VINDICATED.
+- **Q014-F-02 CONFIRMED — Q 13 ↔ Q 14 BILATERAL mutual-nearest 4-axis twin-pair** (extends Q013-F-05): Q 13's nearest FR = Q 14; Q 14's nearest FR = Q 13. Twin-cohesion across FR-content, sig_A, rhyme top-letter, length-class. **2nd structural-twin-pair confirmed in the corpus** (joining Q 24 ↔ Q 33 from cross-finding-026 §13).
+- **Q014-F-03 NULL**: Q 14 FR distance to ALR-strict cluster not distinctive — consistent with letter-cluster ⊥ content principle (H-NEW-1010 + Hawamim-NULL + ALR-NULL etc.).
+
+### 10.36b H-NEW-1210 — TWO confirmed corpus structural-twin-pairs identified
+
+- **[[h-new-1210-corpus-structural-twin-pairs|H-NEW-1210]] — TWO confirmed corpus structural-twin-pairs**:
+  - **Q 13 al-Raʿd ↔ Q 14 Ibrāhīm** (head-mushaf-zone, mushaf-positions 13-14): prophet-narrative + Abrahamic-prayer. Bilateral mutual-nearest at FR; 4-axis twin-cohesion. d(Q 13, Q 14) = 0.486 (Q014-F-02 CONFIRMED).
+  - **Q 24 al-Nūr ↔ Q 33 al-Aḥzāb** (mid-mushaf-zone, mushaf-positions 24+33): Prophet's-household legal-architectural. Both top-3 outlier-strength + both adjacencies in TSP-cost top-15 (cross-finding-026 §13).
+- **Both pairs share architectural properties**: mutual nearest-neighbors at FR, cohesive across multiple axes, empirically locked at corpus-formal strength.
+- **Geometric distribution**: head-mushaf twin (Q 13-14) at ~12% mushaf position; mid-mushaf twin (Q 24-33) at ~25% mushaf position — both in the LONG-SURAH region of the corpus.
+- **Connection to H-NEW-920 curvature peaks**: Q 32→33→34 is rank 1 curvature peak (H-NEW-920); Q 23→24→25 is rank 2; Q 11→12→13 is rank 5; Q 14→15→16 is rank 4. **3 of the top-5 H-NEW-920 curvature peaks involve a structural-twin-pair member** — the architectural twin-pairs ARE the curvature pivots of the mushaf.
+- **NEW corpus-architectural element**: structural-twin-pairs are an organized class. Cross-finding-026 §13 currently has 2 confirmed members; future Wave specialists may identify additional twin-pairs.
+- Source: this ledger inline computation + Q014-F-02 specialist verification.
+

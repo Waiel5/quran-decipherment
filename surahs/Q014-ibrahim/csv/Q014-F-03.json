@@ -1,0 +1,62 @@
+{
+  "test_id": "Q014-F-03",
+  "title": "Q 14 ALR-cluster FR-membership distinctiveness",
+  "Q14_to_ALR_strict_distances": [
+    [
+      10,
+      0.88109
+    ],
+    [
+      11,
+      0.896227
+    ],
+    [
+      12,
+      1.075726
+    ],
+    [
+      15,
+      1.009111
+    ]
+  ],
+  "mean_d_Q14_to_ALR_strict": 0.9655385000000001,
+  "mean_d_ALR_strict_internal_pairwise": 0.9482784999999999,
+  "delta_strict": 0.017260000000000164,
+  "p_perm_strict": 0.3998,
+  "Q14_to_ALR_ext_distances": [
+    [
+      10,
+      0.88109
+    ],
+    [
+      11,
+      0.896227
+    ],
+    [
+      12,
+      1.075726
+    ],
+    [
+      13,
+      0.783843
+    ],
+    [
+      15,
+      1.009111
+    ]
+  ],
+  "mean_d_Q14_to_ALR_ext": 0.9291994000000001,
+  "mean_d_ALR_ext_internal_pairwise": 0.9554438,
+  "delta_ext": -0.026244399999999835,
+  "p_perm_ext": 0.0722,
+  "n_perm": 10000,
+  "alpha_bon": 0.016666666666666666,
+  "null_distribution_strict_stats": {
+    "min": 0.840699,
+    "median": 0.97552725,
+    "max": 1.13439025,
+    "mean": 0.975854955725
+  },
+  "verdict": "NULL — Q 14 FR-distance to ALR-strict cluster is not distinctive",
+  "interpretation": "Per H-NEW-610 NULL on letter-family content cohesion (4-replication NULL across full-29, ḥawāmīm-7, ALM-6, ALR-5), this test is inherently low-power. Q013-F-04 found NULL (p_perm=0.143) on the same cluster from Q 13's perspective. If Q014-F-03 also returns NULL, this is the 6th replication of the H-NEW-610 letter-family-content-NULL finding."
+}
