@@ -2478,3 +2478,19 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **CONNECTION TO CHRONOLOGY-ARCHITECTURE DISSOCIATION (H-NEW-1030b)**: Strategy A clusters are typically CHRONOLOGY-CORRELATED (Hawamim are all late-Meccan; short-Medinan are all Medinan; oath-openers are mostly mid-Meccan); Strategy B clusters CROSS chronology-buckets (singletons span Q 38 mid-Meccan + Q 50 early-Meccan + Q 68 very-early-Meccan; hamd-closers span Q 17 mid-Meccan + Q 27 mid-Meccan + Q 37 mid-Meccan + Q 39 late-Meccan; basmala-embed spans Q 1 early-Meccan + Q 11 late-Meccan + Q 27 mid-Meccan). **Strategy A = position-clustered + chronology-clustered; Strategy B = position-distributed + chronology-distributed.** Two architectural modes consistent with each other.
 - Source: this ledger inline computation (22 cluster types tested, 10000 perms each, seed 20260508).
 
+
+### 10.31 H-NEW-1160 — *salāmun ʿalā [PROPHET]* benediction-formula Q 37-EXCLUSIVE-WITH-2-OUTLIERS
+
+- **[[h-new-1160-salam-ala-prophet|H-NEW-1160]] (extending Q037-F-01 CONFIRMED): the *salāmun ʿalā* benediction-formula occurs EXACTLY 7 times in the Quran across 3 surahs — 5 of 7 in Q 37 (71.4% share)**:
+  - Q 37:79 *salāmun ʿalā Nūḥ*
+  - Q 37:109 *salāmun ʿalā Ibrāhīm*
+  - Q 37:120 *salāmun ʿalā Mūsā wa-Hārūn*
+  - Q 37:130 *salāmun ʿalā Ilyāsīn*
+  - Q 37:181 *salāmun ʿalā al-mursalīn* (general — all messengers)
+  - Q 20:47 *salām ʿalā man ittabaʿa al-hudā* (general — whoever follows guidance)
+  - Q 27:59 *salāmun ʿalā ʿibādihi* (Solomon's prayer for God's servants)
+- **Q 37 owns the prophet-vignette-ending salām formula at corpus-EXACT precision** — each of Q 37's 5 prophet-vignettes (Noah, Abraham, Moses-Aaron, Elias, all-messengers) ends with a *salām* benediction. Q 20 + Q 27 carry single non-prophet-specific *salām* phrases (*salām ʿalā man ittabaʿa al-hudā* and *salām ʿalā ʿibādihi*).
+- **NEW corpus-form-pattern joins the typology**: cross-finding-008 + H-NEW-1010 + H-NEW-110 + H-NEW-1100 + H-NEW-1130 + H-NEW-1160. **6 distinct classical-form-patterns now empirically locked at corpus-EXACT precision.**
+- **Connection to H-NEW-1100 + Q026-F-01 dual-refrain**: Q 37 has a salām-refrain analogous to Q 26's prophet-vignette refrain pattern. Three corpus surahs (Q 26, Q 37, and Q 11 wa-ilā formula) each repeat a prophet-vignette-CLOSURE formula multiple times. **Three distinct prophet-narrative-architecture subtypes**: Q 11 (wa-ilā formula), Q 26 (dual refrain), Q 37 (salām benediction). Each surah has its OWN prophet-architecture-formula.
+- Source: this ledger inline computation (Q037-F-01 verification).
+
