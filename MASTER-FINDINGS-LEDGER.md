@@ -2427,3 +2427,15 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **4 attributed pairs DON'T OCCUR in the Quran at all**: al-ʿAfuww al-Ghafūr (0), al-Ḥalīm al-Ghafūr (0), al-Karīm al-Wahhāb (0), al-Wadūd al-Majīd (0). **Anti-hallucination corpus-check**: even classical scholarship sometimes attributes pairings to the Quran that don't exist in the text. al-Wadūd appears once (Q 85:14) but never paired with al-Majīd; al-Ḥalīm appears 11× but never with al-Ghafūr immediately adjacent.
 - **NEW corpus-architectural finding**: divine-name PAIRS have architectural concentration patterns distinct from individual divine-names. Some pairs are HEAVILY concentrated (al-ʿAzīz al-Raḥīm → Q 26; al-Tawwāb al-Raḥīm → legal-Medinan); others are DISTRIBUTED (al-Samīʿ al-ʿAlīm, al-ʿAzīz al-Ḥakīm); and some are RECONSTRUCTED-NOT-ATTESTED (4 pairs absent from Quran). Source: this ledger inline computation (23-pair corpus-search seed 20260508).
 
+
+### 10.28 H-NEW-1130 — al-ḥamdu li-llāh ENDPOINT 8-surah typology
+
+- **[[h-new-1130-hamd-endpoint-typology|H-NEW-1130]] — corpus-EXACT 8-surah HAMD-ENDPOINT typology** with two complementary 4-surah classes:
+  - **HAMD-OPENERS (v.1 starts with *al-ḥamdu li-llāh*)**: Q 6 al-Anʿām (165v), Q 18 al-Kahf (110v), Q 34 Sabaʾ (54v), Q 35 Fāṭir (45v). al-Suyūṭī Itqān nawʿ on hamd-suwar cites 5 (including Q 1) but Q 1:1 is the basmala — *al-ḥamdu li-llāh* is at Q 1:2 not v.1. Empirically Q 1 is NOT a hamd-opener; the 4-set is corpus-exact.
+  - **HAMD-CLOSERS (last-verse contains *al-ḥamdu li-llāh*)**: Q 17:111 al-Isrāʾ (*qul al-ḥamdu li-llāhi alladhī lam yattakhidh waladā*), Q 27:93 al-Naml (*qul al-ḥamdu li-llāhi sa-yurīkum āyātihi*), Q 37:182 al-Ṣāffāt (*wa-l-ḥamdu li-llāhi rabb al-ʿālamīn*), Q 39:75 al-Zumar (*wa-qīla al-ḥamdu li-llāhi rabb al-ʿālamīn*).
+  - **Combined 8 surahs (no overlap)**: {Q 6, 17, 18, 27, 34, 35, 37, 39}. The 4 openers + 4 closers form a structural-bracket typology.
+- **Q 39 self-ring (UNIQUE)**: Q 39:1 = tanzīl-opener (H-NEW-1100); Q 39:75 = hamd-closer with *rabb al-ʿālamīn*. **Q 39 is the ONLY surah from the H-NEW-1100 tanzīl-cluster that ALSO has a hamd-closer** — corpus-unique self-ring-composition signature.
+- **The 4-hamd-opener cluster is NOT FR-cohesive** (z=+0.20, p=0.50). Same pattern as other form-clusters: corpus-EXACT at the OPENER form level, content-orthogonal at the FR-cohesion level.
+- **Q 37:182 *wa-l-ḥamdu li-llāhi rabb al-ʿālamīn* exactly mirrors Q 1:2** *al-ḥamdu li-llāhi rabb al-ʿālamīn*. **Q 37 al-Ṣāffāt closes with the formula that opens al-Fātiḥa (Q 1)** — the corpus's Q 1↔Q 37 hamd-formula echo. Pre-figures Q 39's self-ring at the inter-surah level.
+- **NEW classical-form-pattern joins H-NEW-1100 (tanzīl-cluster), H-NEW-1010 (singleton-cohort form), H-NEW-110 (wa-ilā formula), cross-finding-008 (book-introduction)** as the 5th distinct classical-form-pattern empirically locked at corpus-EXACT precision. Source: this ledger inline computation (seed 20260508).
+
