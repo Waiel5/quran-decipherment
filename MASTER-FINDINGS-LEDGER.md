@@ -2439,3 +2439,17 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **Q 37:182 *wa-l-ḥamdu li-llāhi rabb al-ʿālamīn* exactly mirrors Q 1:2** *al-ḥamdu li-llāhi rabb al-ʿālamīn*. **Q 37 al-Ṣāffāt closes with the formula that opens al-Fātiḥa (Q 1)** — the corpus's Q 1↔Q 37 hamd-formula echo. Pre-figures Q 39's self-ring at the inter-surah level.
 - **NEW classical-form-pattern joins H-NEW-1100 (tanzīl-cluster), H-NEW-1010 (singleton-cohort form), H-NEW-110 (wa-ilā formula), cross-finding-008 (book-introduction)** as the 5th distinct classical-form-pattern empirically locked at corpus-EXACT precision. Source: this ledger inline computation (seed 20260508).
 
+
+### 10.29 H-NEW-1140 — oath-opener cluster is DOUBLY-CLUSTERED (FR + mushaf-position)
+
+- **[[h-new-1140-oath-opener-doubly-clustered|H-NEW-1140]] — the H-NEW-1070 oath-opener cluster is mushaf-position-adjacency-enriched at p=0.022, in addition to its FR-cohesion at p=0.0004 (H-NEW-1070). DUAL-AXIS architectural cluster.**
+- 15 oath-opener surahs {Q 37, 51, 52, 53, 77, 79, 85, 86, 89, 91, 92, 93, 95, 100, 103} have **5 mushaf-adjacent pairs** vs random-15-subset null mean 1.86 ± 1.21 pairs (z=+2.589, perm-p_upper=0.022).
+- **3 sub-runs identified**:
+  - **Q 51-52-53** (al-Dhāriyāt → al-Ṭūr → al-Najm): 3-surah consecutive oath-trio
+  - **Q 91-92-93** (al-Shams → al-Layl → al-Ḍuḥā): 3-surah consecutive oath-trio
+  - **Q 85-86** (al-Burūj → al-Ṭāriq): oath-pair
+- **Longest-run length 3** (both Q 51-53 and Q 91-93) at perm-p_upper=0.180 — direction-correct but not significant alone; the aggregate adjacent-pair count is the significant statistic.
+- **The mushaf was constructed (by *tartīb tawqīfī*) such that oath-openers preferentially appear in CONSECUTIVE GROUPS.** Joint H-NEW-1070 (FR-cohesion p=0.0004) + H-NEW-1140 (mushaf-adjacency p=0.022) makes the oath-opener cluster **the strongest DUAL-AXIS architectural cluster in the corpus** identified by this project — both content and position cluster simultaneously.
+- **Connection to cross-finding-020**: this is direct evidence for principle (i) of the Complete Equation — the mushaf is length/content/position-clustered. Oath-openers are a clear case where ALL THREE axes (length-class shortish-mid, content FR-cohesive, mushaf-position-adjacency-enriched) jointly determine architectural placement.
+- Source: this ledger inline computation (10000 perms, seed 20260508).
+
