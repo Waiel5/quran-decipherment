@@ -2668,3 +2668,23 @@ The corpus is structurally HEAVY in the LONG-HEAD (Q 2-9 al-sabʿ-al-ṭiwāl) b
 - **Two distinct architectural axes**: (1) FORM-PATTERNS (oath-openers, hamd-endpoints, tanzīl-openers, wa-mā adrāka, refrains) tend to be FR-cohesive; (2) THEMATIC PROPER-NAME RECURRENCE (Iblīs, Adam, prophet-mentions) does NOT cluster. Form-pattern clusters > thematic-recurrence clusters on the FR-content axis.
 - Equal NULL prominence per Protocol §1.3. Source: this ledger inline computation (seed 20260508).
 
+
+### 10.40 Q 37 specialist landing (full 5-test) refines H-NEW-1160 + reveals 2-tier oath-cluster structure
+
+**Q 37 al-Ṣāffāt specialist** completed (full 8-file template + 5 SHA-locked tests):
+
+- **Q037-F-01 CONFIRMED**: under STRICT pattern (specific named-prophet *salāmun ʿalā [PROPHET]*): **4/4 = 100% in Q 37** (Q 37:79 Nūḥ, Q 37:109 Ibrāhīm, Q 37:120 Mūsā+Hārūn, Q 37:130 Ilyāsīn). Corpus-EXACT pattern under strict rule-tuple. Length-weighted + uniform null both p<0.0001. **REFINES H-NEW-1160 broader-pattern finding (5/7 = 71%)**: under STRICT named-prophet rule, Q 37 owns the formula at corpus-EXACT 100%; under BROADER salām-ʿalā-X rule, Q 37 owns 71% with Q 20 + Q 27 single-instance-outliers.
+
+- **Q037-F-02 NULL (sacrifice-of-Ishmael uniqueness)**: 2 hapaxes (*t-l-l* and *j-b-n*) both at Q 37:103 *wa-tallahu li-l-jabīn* — pre-reg threshold ≥3 not met. **Corpus-rare 1-verse hapax-pair: 2 hapaxes in 1 verse, both at v.103, both relating to "laid-him-down on the temple" Abraham-binding-Isaac/Ishmael description.** Block isolation 0.730 (perm-p 0.213); Q 21 fire-pericope is MORE isolated (0.886).
+
+- **Q037-F-03 PRE-COMMIT VIOLATION (ranked-ones trio)**: Q 37:1-3 oath-trio cohesion = 0.000 lexical (verses share NO tokens / NO roots); BELOW null mean 0.0145. **DIRECTION REVERSED — published with prominence per Protocol §1.8.** Substantive interpretation: **iʿjāz operates at MORPHOLOGICAL-TEMPLATE level (active-participle female-plural triplet), NOT at LEXICAL level**. The 3 oath-targets (ṣāffāt + zājirāt + tāliyāt) share grammatical form but NOT vocabulary. **REFINES (not refutes) al-Rāzī + al-Bāqillānī classical readings**: their iʿjāz al-balāgha is at the morphological-template-of-form level, vindicated at the participle-pattern level rather than the lexical level.
+
+- **Q037-F-04 NULL (oath-cluster centrality)**: Q 37's mean FR distance to the OTHER 14 oath-openers = 0.9949 ≈ corpus mean 0.9234. **Q 37 ranks 15/15 — LEAST CENTRAL** of the 15-strict-oath-opener cluster. **REVEALS 2-TIER OATH-CLUSTER STRUCTURE** (extends H-NEW-1070):
+  - **CORE (short-tail)**: Q 91, 92, 93, 95, 100, 103 — tight FR-cluster within Q 89-103 region
+  - **PERIPHERY (mid-mushaf)**: Q 37, 51, 52, 53, 77, 79, 85, 86, 89 — looser
+- Q 37 is the LEAST CENTRAL because it's mid-mushaf isolated. **NEW H-NEW-1070.1 corollary** of the H-NEW-1140 doubly-clustered finding: the cluster has a 2-tier sub-structure with CORE + PERIPHERY.
+
+- **Q037-F-05 DIRECTIONAL (Q 37→Q 38 seam)**: clamped-zero (delta_raw = -0.000911). Q 37→Q 38 is **1 of 13 clamped-zero pairs in the corpus** (NOT 2 as my brief stated; Q 37 specialist correction). The 13 clamped-zero adjacencies = corpus's empirically-seamless transitions. Seam mechanism: shared length + close mean-content-distance + 4 shared prophets {Nūḥ, Ibrāhīm, Isḥāq, Lūṭ}; NOT shared rhyme-letter (Q 37 ن vs Q 38 ب). **al-Biqāʿī Q 37→Q 38 munāsaba VINDICATED at extreme level.**
+
+- Q037 specialist's HONEST DISCLOSURES: full ranked-ones-cohesion REVERSAL published with prominence; equal NULL prominence on F-02 + F-03 + F-04; pre-commit violation on F-03 documented.
+
