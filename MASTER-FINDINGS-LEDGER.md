@@ -2377,3 +2377,29 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **CORPUS-FORMAL VINDICATION OF 1400-YEAR-OLD CLASSICAL CHRONOLOGY METHODOLOGY.** al-Suyūṭī's *al-Itqān fī ʿulūm al-Qurʾān* (composed ~1500 CE) compiles diagnostics from al-Zarkashī, ibn Ḥaṣṣār, al-Bayhaqī. The strongest (yā-ayyuhā-alladhīna, al-yahūd, al-naṣārā) achieve CORPUS-EXACT precision.
 - **This is COMPATIBLE WITH H-NEW-1030b chronology-architecture dissociation**: chronology diagnostics operate at the LEXICAL-MARKER level (this finding); they DO NOT predict FR-content mushaf-position (H-NEW-1030b 60.5% mushaf-cluster dominance). **Two layers**: chronology-of-text-style (lexical) is well-defined; chronology-of-architectural-position (FR) is not. **al-Suyūṭī's *tartīb tawqīfī* + chronology-as-lexical-marker are CONSISTENT**: chronology shapes the LEXICON of each surah (which al-Suyūṭī compiled diagnostics for), but it does NOT determine the SEQUENCE-POSITION (which is tawqīfī-architectural). Source: this ledger inline computation (seed 20260508).
 
+
+### 10.24 H-NEW-1100 — *tanzīl al-kitāb min Allāh* opener-formula corpus-EXACT 6-surah cluster
+
+- **[[h-new-1100-tanzil-opener-cluster|H-NEW-1100]] — the *tanzīl* opener-formula occurs at v.1 OR v.2 in EXACTLY 6 surahs corpus-wide.** Discovered via top-20 divine-name-density-per-verse search. The 6 surahs:
+  - Q 32:2 *tanzīl al-kitāb lā rayba fīh min rabb al-ʿālamīn* (Sajda)
+  - Q 39:1 *tanzīl al-kitāb min Allāh al-ʿAzīz al-Ḥakīm* (al-Zumar — uniquely at v.1, not v.2)
+  - Q 40:2 *tanzīl al-kitāb min Allāh al-ʿAzīz al-ʿAlīm* (Ghāfir)
+  - Q 41:2 *tanzīl min al-Raḥmān al-Raḥīm* (Fuṣṣilat)
+  - Q 45:2 *tanzīl al-kitāb min Allāh al-ʿAzīz al-Ḥakīm* (al-Jāthiya)
+  - Q 46:2 *tanzīl al-kitāb min Allāh al-ʿAzīz al-Ḥakīm* (al-Aḥqāf)
+- **Composition**: 4 of 7 Hawamim surahs (Q 40, 41, 45, 46) + Q 39 al-Zumar (NOT Hawamim) + Q 32 al-Sajda (also NOT Hawamim, ALM-exception per H-NEW-93). **The cluster is form-defined BEYOND the Hawamim cluster** — including 2 non-Hawamim surahs that share the divine-revelation-declaration opener form.
+- **Sub-typology**: 3 surahs use IDENTICAL formula *al-ʿAzīz al-Ḥakīm* (Q 39, 45, 46); Q 40 has *al-ʿAzīz al-ʿAlīm* variant; Q 41 has *al-Raḥmān al-Raḥīm* variant; Q 32 has *min rabb al-ʿālamīn* variant.
+- **FR-cohesion**: 6-cluster mean pairwise FR = 0.8244 vs random 0.9235 (z=-1.105, p=0.129). DIRECTIONAL but not Bonferroni-significant. Identical-formula sub-cluster {Q 39, 45, 46} at p=0.21. **The cluster is corpus-EXACT at the FORM/OPENER level but only directional at the FR-content-cohesion level** — same pattern as letter-family clusters (H-NEW-1010), oath-openers (CONFIRMED at p=0.0004 for the much-larger 15-cluster), musabbiḥāt (verbal-6 at p=0.079), wa-ilā-formula (corpus-exact 8 instances).
+- **NEW corpus-form-pattern joins the cross-finding-008 (book-introduction muqaṭṭaʿāt + book-reference) + H-NEW-1010 (singleton-letter-cohort form) + H-NEW-110 (wa-ilā formula)** as the 4th distinct classical-form-pattern empirically locked at corpus-EXACT precision. Source: this ledger inline computation (top-20 divine-name density-per-verse search).
+
+
+### 10.25 Top-20 corpus-MAX-divine-name-density verses (≥5 words; H-NEW-63 + H-NEW-1100 anchor)
+
+- **Q 59:23 confirmed corpus-MAX (10 names / 20 words = 0.500 density)** — H-NEW-63 anchor verified at law-strength.
+- **Q 39:1, Q 40:2, Q 45:2, Q 46:2 TIED at 0.500 density** (3 names / 6 words) — *tanzīl al-kitāb min Allāh al-ʿAzīz al-Ḥakīm/al-ʿAlīm*. The H-NEW-1100 tanzīl cluster.
+- **Q 26's 8-fold refrain *wa-inna rabbaka la-huwa al-ʿAzīz al-Raḥīm*** (vv. 9, 68, 104, 122, 140, 159, 175, 191) all at 0.400 density. **This is the H-NEW-Q026-F-01 7-prophet-refrain CONFIRMED at the divine-name level.** Each prophet-cycle ends with a 5-word divine-name-pair refrain. Corpus-unique 8-fold occurrence.
+- **Q 27:30** (the second basmala — *bismi-llāhi al-Raḥmāni al-Raḥīm* in Solomon's letter) at 0.375 density.
+- **Q 3:2, Q 27:9, Q 51:58, Q 57:3, Q 64:18, Q 44:49** all at 0.400 density — short divine-name-clustered verses each carrying 2-3 attributes per <10 words.
+- **Q 26 dominates the top-20 with 8 of 20 entries** — consistent with the Q026-F-01 CONFIRMED refrain-cycle finding (the refrain is the densest-divine-name 5-word construction in the corpus, appearing 8× corpus-uniquely in Q 26).
+- **Pattern**: corpus-MAX-divine-name-density verses are concentrated at (a) Khawātim al-Ḥashr Q 59 (10-name verse), (b) Hawamim-extended openers (Q 39, 40, 45, 46), (c) Q 26 8-refrain, (d) brief tawḥīd verses (Q 3:2, Q 51:58, Q 57:3, Q 64:18). Total 1986 corpus verses (≥5 words) contain ≥1 divine-name; mean density 0.0937; tail is dominated by these architectural-pivots. Source: this ledger inline computation.
+
