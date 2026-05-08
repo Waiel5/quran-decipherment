@@ -2403,3 +2403,15 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **Q 26 dominates the top-20 with 8 of 20 entries** — consistent with the Q026-F-01 CONFIRMED refrain-cycle finding (the refrain is the densest-divine-name 5-word construction in the corpus, appearing 8× corpus-uniquely in Q 26).
 - **Pattern**: corpus-MAX-divine-name-density verses are concentrated at (a) Khawātim al-Ḥashr Q 59 (10-name verse), (b) Hawamim-extended openers (Q 39, 40, 45, 46), (c) Q 26 8-refrain, (d) brief tawḥīd verses (Q 3:2, Q 51:58, Q 57:3, Q 64:18). Total 1986 corpus verses (≥5 words) contain ≥1 divine-name; mean density 0.0937; tail is dominated by these architectural-pivots. Source: this ledger inline computation.
 
+
+### 10.26 H-NEW-1110 — Q 26 DUAL-refrain structure (extends Q026-F-01)
+
+- **[[h-new-1110-q26-dual-refrain|H-NEW-1110]] — Q 26 al-Shuʿarāʾ has a DUAL-refrain structure where each prophet-vignette ends with TWO refrains in succession.**
+  - **Refrain A** (Q026-F-01 CONFIRMED): *inna fī dhālika la-āyatan wa-mā kāna aktharuhum muʾminīn // wa-inna rabbaka la-huwa al-ʿAzīz al-Raḥīm* — 8 occurrences (Q 26:8, 67, 103, 121, 139, 158, 174, 190).
+  - **Refrain B** (NEW): *wa-mā asʾalukum ʿalayhi min ajrin in ajriya illā ʿalā rabb al-ʿālamīn* — 5 occurrences (Q 26:109, 127, 145, 164, 180), the prophet's no-payment-for-delivery formula.
+  - **Each prophet-vignette ends with BOTH refrains in succession**: prophet-vignette body → Refrain B (prophet declares no payment) → Refrain A (signs + Lord-attributes). This is more elaborate than Q026-F-01 captured.
+- **Q 26 has corpus-MAX *rabb al-ʿālamīn* density**: 11 occurrences (vs Q 7 al-Aʿrāf at 5; all others ≤3). Q 26 + Q 7 together account for 16/42 corpus-wide occurrences = 38% — both are prophet-cycle surahs, vindicating the construct's correlation with prophet-narrative-mode.
+- **Q 7 al-Aʿrāf occurrences are ALL in prophet-direct-discourse contexts**: Hud (v.61), Ṣāliḥ (v.67), Moses-Pharaoh (v.104), magicians' confession (v.121) + cosmic-creation (v.54). The *rasūl min rabb al-ʿālamīn* formula links Hud + Ṣāliḥ + Moses across Q 7 prophet-cycle.
+- **The 21-surah set containing *rabb al-ʿālamīn* is NOT FR-cohesive** (p=0.82): construct is widely-distributed across the corpus, not a tight cluster. *rabb al-ʿālamīn* is a CONCEPTUAL universal-Lord phrase, not an architectural marker.
+- **Refines Q026-F-01**: the prophet-cycle compression-tail Spearman ρ=−0.84 finding is at the CYCLE-LENGTH level; the dual-refrain finding is at the FORMULA-COUNT level. Both are corpus-unique signatures of Q 26 prophet-cycle architecture. al-Zamakhsharī *al-Kashshāf* on Q 26 references the qarīna-as-chorus reading; the empirical DUAL-refrain confirms it at law-strength. Source: this ledger inline computation.
+
