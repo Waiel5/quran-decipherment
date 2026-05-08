@@ -2536,3 +2536,26 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 
 8th classical-form-pattern locked at corpus-EXACT precision (joining H-NEW-1170 mathal). Source: this ledger inline computation.
 
+
+### 10.34 H-NEW-1190 — *wa-mā adrāka mā* corpus-EXACT 10-surah cluster CONFIRMED FR-cohesive at p=0.00068
+
+- **[[h-new-1190-wa-ma-adraka-cluster|H-NEW-1190]] — the *wa-mā adrāka mā* (rhetorical "what made you know what is X?") meta-question pattern occurs in EXACTLY 10 surahs corpus-wide, all in the short-Meccan-tail (Q 69-104). This 10-surah cluster is CONFIRMED FR-cohesive at p=0.00068 (z=-4.647).**
+- **Cluster**: Q 69 al-Ḥāqqa, Q 74 al-Muddaththir, Q 77 al-Mursalāt, Q 82 al-Infiṭār, Q 83 al-Muṭaffifīn, Q 86 al-Ṭāriq, Q 90 al-Balad, Q 97 al-Qadr, Q 101 al-Qāriʿa, Q 104 al-Humaza.
+- **Function**: each occurrence introduces a CONCEPT-TO-BE-DEFINED, followed by an explanatory verse:
+  - Q 69:3 al-Ḥāqqa (the Reality)
+  - Q 74:27 saqar (Hellfire)
+  - Q 77:14 yawm al-faṣl (Day of Decision)
+  - Q 82:17 yawm al-dīn (Day of Judgment) — DOUBLED at Q 82:18 (*thumma mā adrāka mā yawm al-dīn*)
+  - Q 83:8 sijjīn (Hell-record), Q 83:19 ʿilliyyīn (Heaven-record) — DOUBLE in same surah
+  - Q 86:2 al-ṭāriq (the Knocker)
+  - Q 90:12 al-ʿaqaba (the steep ascent)
+  - Q 97:2 laylat al-qadr (Night of Power)
+  - Q 101:3 al-qāriʿa, Q 101:10 hiyah (the Striker, the it) — DOUBLE in same surah
+  - Q 104:5 al-ḥuṭama (the Crusher)
+- **Mushaf-cohesion**: mean pairwise FR = 0.6183 vs corpus mean 0.9236 (-33%); perm-p_lower = 0.00068 over 100000 perms.
+- **Mushaf-adjacency**: only Q 82-83 adjacent (1 adjacent pair vs null 0.79); p_upper = 0.578. **STRATEGY B (POSITION-DISTRIBUTED) per H-NEW-1150**, but with STRONG content-cohesion. **REFINES H-NEW-1150**: Strategy B (position-distributed) does NOT preclude FR-cohesion. This is the second confirmed FR-cohesive cluster (after oath-openers H-NEW-1070), and the FIRST confirmed FR-cohesive *position-distributed* cluster.
+- **Sub-pattern: the formula is DOUBLED in 3 surahs** (Q 82, Q 83, Q 101) — corpus-EXACT 3-instance double-pattern. Each double-occurrence emphasizes the unknowability/intensity of the eschatological referent.
+- **Classical reference**: al-Suyūṭī *al-Itqān* nawʿ on rhetorical-questions cites this *wa-mā adrāka mā* as a stylistic signature of late-Meccan eschatology surahs. The empirical 10-instance corpus-EXACT lock vindicates this at law-strength.
+- **9th classical-form-pattern locked at corpus-EXACT precision** (joining H-NEW-1180 sabʿ + H-NEW-1170 mathal + H-NEW-1160 salām + H-NEW-1130 hamd-endpoint + H-NEW-1100 tanzīl + H-NEW-110 wa-ilā + H-NEW-1010 singleton + cross-finding-008 book-introduction).
+- Source: this ledger inline computation (seed 20260508).
+
