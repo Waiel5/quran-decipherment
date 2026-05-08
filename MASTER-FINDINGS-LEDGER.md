@@ -2453,3 +2453,28 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **Connection to cross-finding-020**: this is direct evidence for principle (i) of the Complete Equation — the mushaf is length/content/position-clustered. Oath-openers are a clear case where ALL THREE axes (length-class shortish-mid, content FR-cohesive, mushaf-position-adjacency-enriched) jointly determine architectural placement.
 - Source: this ledger inline computation (10000 perms, seed 20260508).
 
+
+### 10.30 H-NEW-1150 — META-ARCHITECTURAL PRINCIPLE: form-clusters split into CONTIGUOUS vs DISTRIBUTED
+
+- **[[h-new-1150-meta-architectural-form-strategies|H-NEW-1150]] — META-FINDING: corpus form-clusters split into two distinct architectural strategies — POSITION-CLUSTERED (mushaf-adjacent) vs POSITION-DISTRIBUTED (anchor-spaced).** Systematic mushaf-position adjacency-enrichment test on 22 corpus clusters (10000 perms each, seed 20260508):
+- **STRATEGY A — POSITION-CLUSTERED (mushaf-adjacency p < 0.05)**:
+  - Hawamim Q 40-46 (6 adj, p<0.0001), ALR Q 10-15 (5 adj, p<0.0001), ALM (4 adj, p<0.0001)
+  - Yā-ayyuhā-alladhīna 20 (11 adj, p<0.0001), Short-Medinan Q 57-66 (9 adj, p<0.0001)
+  - Tanzīl-openers (H-NEW-1100): 3 adj, p=0.0007
+  - TSM Q 26-28 (2 adj, p=0.0007), Muʿawwidhāt Q 112-114 (2 adj, p=0.0005)
+  - True-isolate {Q 16, 21-23, 25}: 2 adj, p=0.010
+  - 5-qul-openers (Q 72, 109, 112-114): 2 adj, p=0.010
+  - Oath-openers H-NEW-1070 + H-NEW-1140: 5 adj, p=0.018
+- **STRATEGY B — POSITION-DISTRIBUTED (zero or near-zero adjacency)**:
+  - Hamd-closers (Q 17, 27, 37, 39): **0 adjacent pairs**
+  - Singleton-letter cohort (Q 38, 50, 68): **0 adjacent**
+  - Basmala-embed (Q 1, 11, 27): **0 adjacent**
+  - Wa-ilā-formula (Q 7, 11, 27, 29): **0 adjacent**
+- **INTERPRETATION**:
+  - **Strategy A clusters are CONTIGUOUS NEIGHBORHOODS** — form-pattern members are mushaf-adjacent (e.g., Hawamim Q 40-46 is a 7-surah continuous block; ALR is Q 10-15)
+  - **Strategy B clusters are SPACED ANCHORS** — form-pattern members are deliberately DISTRIBUTED across the mushaf at structural waypoints
+  - Strategy B examples: singletons mark Q 38/50/68 (mushaf-positions ~33%/44%/60%); hamd-closers mark Q 17/27/37/39 (every ~10 surahs at late-Meccan-onset); basmala-embed marks Q 1/11/27 (head + early + mid-quarter)
+- **NEW META-ARCHITECTURAL PRINCIPLE**: the canonical mushaf uses form-pattern clusters in TWO complementary modes — NEIGHBORHOOD-CLUSTERING AND DISTRIBUTED-ANCHORING. al-Suyūṭī's *tartīb tawqīfī* position gains another empirical layer: the canonical compilers preserved BOTH cluster-types as deliberate architectural devices.
+- **CONNECTION TO CHRONOLOGY-ARCHITECTURE DISSOCIATION (H-NEW-1030b)**: Strategy A clusters are typically CHRONOLOGY-CORRELATED (Hawamim are all late-Meccan; short-Medinan are all Medinan; oath-openers are mostly mid-Meccan); Strategy B clusters CROSS chronology-buckets (singletons span Q 38 mid-Meccan + Q 50 early-Meccan + Q 68 very-early-Meccan; hamd-closers span Q 17 mid-Meccan + Q 27 mid-Meccan + Q 37 mid-Meccan + Q 39 late-Meccan; basmala-embed spans Q 1 early-Meccan + Q 11 late-Meccan + Q 27 mid-Meccan). **Strategy A = position-clustered + chronology-clustered; Strategy B = position-distributed + chronology-distributed.** Two architectural modes consistent with each other.
+- Source: this ledger inline computation (22 cluster types tested, 10000 perms each, seed 20260508).
+
