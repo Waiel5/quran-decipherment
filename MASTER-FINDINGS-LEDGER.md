@@ -2716,3 +2716,30 @@ The corpus is structurally HEAVY in the LONG-HEAD (Q 2-9 al-sabʿ-al-ṭiwāl) b
 - **NEW corpus-architectural finding**: the mushaf has 13 EXACT seamless-seam locations, distributed across 4 architectural regions (al-ṭiwāl, mid-mushaf, short-Medinan, short-tail). This refines the H-NEW-1040 finding (consecutive-pair-FR-mean 17.8% below corpus baseline at z=−11.65) by identifying the EXACT 13 seam-locations where the path is empirically-seamless.
 - Source: H-NEW-720 per_adjacency data + Q 37 specialist Q037-F-05 + this ledger inline computation.
 
+
+### 10.42 Q 14 + Q 15 specialist landing — corpus-MAX prayer-density + textual-preservation iʿjāz lock
+
+**Q 14 Ibrāhīm specialist (full 8-file template + 3 SHA-locked tests)**:
+
+- **Q014-F-01 CONFIRMED — corpus-MAX rank 1/5569 7-verse windows**: Q 14:35-41 = 14.02 prayer-tokens/100w. **The 4 HIGHEST-density 7-verse windows in the ENTIRE QURAN are ALL inside Q 14** (vv. 35-41, 36-42, 37-43, 34-40 all > 11/100w; 5th-place Q 23:93-99 = 10.20). Q 14 whole-surah prayer-density rank #4/114. **al-Bāqillānī's iʿjāz al-balāgha claim about Q 14:35 — that this is the corpus's prayer-iʿjāz-locus — empirically VINDICATED at maximum precision.** Confirms cross-finding-026 §4: Q 14 belongs to the "prayer-iʿjāz" sub-cell.
+
+- **Q014-F-02 CONFIRMED — Q 13 ↔ Q 14 bilateral mutual-nearest twin at 9.82× ratio** (refines H-NEW-1210's 8.83×). Q 14's FR-nearest = Q 13 (0.7838); Q 13's FR-nearest = Q 14 (0.7838) — both verified. Twin-strength ratio = d_arch(Q14,Q76 medinan-similar-length-reference)/d_arch(Q14,Q13) = 4.77/0.486 = 9.82×. **Strongest bilateral architectural-twin pair in the head-mushaf zone.**
+
+- **Q014-F-03 NULL — Q 14 ALR-strict-cluster FR-cohesion**: p_perm_strict = 0.40. **6th replication of H-NEW-610 letter-family-content-NULL principle** (joining full-29 muqaṭṭaʿāt, ḥawāmīm-7, ALM-6, ALR-5, Q013-F-04, now Q014-F-03).
+
+**Q 15 al-Ḥijr specialist (full 8-file template + 3 SHA-locked tests)**:
+
+- **Q015-F-01 PASS-DIRECTED — 5 corpus-hapax tokens in Q 15:28-44 Iblīs-rebellion**: لأسجد (would-prostrate), لأزينن (would-adorn), لموعدهم (their-appointed-time), مقسوم (apportioned), ولأغوينهم (would-mislead-them). ≥3 hapax threshold met. **Q 7:11-25 has more total hapax (22 vs 5)** — Q 15:28-44 is the most-developed pre-creation rebellion-discourse but NOT the most-hapax-dense.
+
+- **Q015-F-02 CONFIRMED — Q 15:9 CORPUS-UNIQUE textual-preservation verse**: *innā naḥnu nazzalnā al-dhikra wa-innā lahu la-ḥāfiẓūn* — Q 15:9 is the ONLY verse in 6,236 corpus-verses combining all three constructions: (a) *naḥnu nazzalnā* (we-revealed-emphatic), (b) *nazzalnā al-dhikr* (revealed-the-Reminder), (c) *lahu la-ḥāfiẓūn* (its-Guardians-emphatic). **The textual-preservation iʿjāz claim is empirically locked at corpus-UNIQUENESS** — there is no equivalent statement anywhere else in the Quran. al-Bāqillānī's iʿjāz al-ghayb claim about Q 15:9 (that the Quran's preservation is itself an iʿjāz miracle) is empirically anchored at maximum corpus-uniqueness.
+
+- **Q015-F-03 CONFIRMED — Q 15 prophet-density LOWEST in {Q 11, 15, 26, 29}**: Q 15 = 4.50 prophet-tokens/1000w vs Q 11=21.60, Q 26=15.52, Q 29=16.28. **Q 15 has 4.8× LESS prophet-density than Q 11** despite being a prophet-narrative surah (Hijr-tribe ruins). Surprising: Q 15 is named for the Hijr but Iblīs-rebellion + Lot-narrative dominate at non-prophet-name density.
+
+**Hadith correction #12 (Wave-G)**: Q 14 Hagar-Mecca-foundation = al-Bukhārī #3225 (NOT #3364 — the latter is about Aslam/Ghifar tribes per the on-disk Bukhārī corpus).
+
+**Cross-finding-026 §13 typology updates queued**:
+- Add Q 14:35-41 corpus-MAX prayer-density to "iʿjāz al-balāgha" sub-cell
+- Add Q 15:9 textual-preservation corpus-unique to "iʿjāz al-ghayb" sub-cell
+- Add Q 13+Q 14 didactic-cosmological-prayer-iʿjāz-positive sub-cell
+- Add Q 12+Q 15+Q 36 iterative-narrative-near-monorhyme sig_A-negative sub-cell
+
