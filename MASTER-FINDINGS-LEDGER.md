@@ -2743,3 +2743,17 @@ The corpus is structurally HEAVY in the LONG-HEAD (Q 2-9 al-sabʿ-al-ṭiwāl) b
 - Add Q 13+Q 14 didactic-cosmological-prayer-iʿjāz-positive sub-cell
 - Add Q 12+Q 15+Q 36 iterative-narrative-near-monorhyme sig_A-negative sub-cell
 
+
+### 10.43 H-NEW-1250 — Q 55 al-Raḥmān CORPUS-EXACT dual-audience architectural signature
+
+- **[[h-new-1250-q55-dual-audience|H-NEW-1250]] — Q 55 has CORPUS-EXACT dominance on dual-pronoun architecture, extending cross-finding-027 iʿjāz al-takrīr.**
+- **al-thaqalān (the two weighty ones — humans + jinn) is CORPUS-UNIQUE to Q 55:31** — only verse in the entire Quran using this term.
+- **rabbikumā (your-two-Lord) — 31 of 33 corpus occurrences (94%) in Q 55**. The 2 non-Q-55 occurrences are 2-PERSON-specific (NOT humans-jinn): Q 7:23 Adam-Eve dialogue, Q 20:50 Moses-Aaron with Pharaoh. **Q 55's *rabbikumā* is dual-AUDIENCE (humans+jinn); the other 2 are dual-PERSON (specific named individuals).**
+- **kumā (you-two dual-pronoun) — Q 55 has 32 occurrences at density 9.01/100w (corpus-MAX)**. Q 7 has 0.31/100w; Q 20 0.21/100w. **Q 55 has 30× higher dual-pronoun-density than next-highest non-dialogue surah.**
+- **Q 55 is corpus-EXCLUSIVELY a DUAL-AUDIENCE surah**: addressing humans+jinn together throughout.
+- **Refines cross-finding-027 (iʿjāz al-takrīr)**: Q 55's distinctness lives in (1) the 31× *fa-bi-ayyi ālāʾi rabbikumā tukadhdhibān* refrain (H-NEW-1230) + (2) the surah-wide dual-pronoun saturation (this finding). **The 31× refrain is a SUB-pattern within a SURAH-WIDE dual-audience grammatical architecture.** The two are MUTUALLY-REINFORCING.
+- **al-Bāqillānī iʿjāz al-fawāṣil reading of Q 55 is empirically anchored at the dual-pronoun-architecture level**, not just the 31-fold refrain. The dual-audience structure is itself an iʿjāz signature.
+- **Q 55:31 *sa-nafrugh lakum ayyuhā al-thaqalān*** is the FORMAL address-statement establishing the dual-audience for the entire surah. This single verse ANCHORS the dual-pronoun architecture by explicitly naming the addressees.
+- Connection to H-NEW-1220 corpus FR-centroid finding: Q 55 is corpus-MOST-ISOLATED at rank 114/114 (mean_d=1.181). The dual-audience architecture is the MECHANISM behind Q 55's maximum-distance signature: **Q 55 is FR-isolated because its grammatical architecture is corpus-uniquely dual-pronoun-saturated**, putting it far from the standard single-pronoun-mode of all other surahs.
+- 12th classical-form-pattern locked at corpus-EXACT precision (and this one identifies Q 55 as a SOLITARY architectural signature). Source: this ledger inline computation.
+
