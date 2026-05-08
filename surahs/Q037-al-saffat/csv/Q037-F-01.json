@@ -1,0 +1,65 @@
+{
+  "finding_id": "Q037-F-01",
+  "prereg_sha": "59f7afd2ea1e00d969c03a0ee9db531d28bec3e6eec679e292449b5b6f4d658b",
+  "seed": 20260508,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, regex-word-boundary, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "instances_corpus": [
+    {
+      "surah": 37,
+      "verse": 79,
+      "text": "سلام على نوح في العالمين",
+      "matched_name": "نوح"
+    },
+    {
+      "surah": 37,
+      "verse": 109,
+      "text": "سلام على إبراهيم",
+      "matched_name": "إبراهيم"
+    },
+    {
+      "surah": 37,
+      "verse": 120,
+      "text": "سلام على موسى وهارون",
+      "matched_name": "موسى"
+    },
+    {
+      "surah": 37,
+      "verse": 130,
+      "text": "سلام على إل ياسين",
+      "matched_name": "إل ياسين"
+    }
+  ],
+  "all_pre_filter_instances": [
+    {
+      "surah": 37,
+      "verse": 79,
+      "text": "سلام على نوح في العالمين"
+    },
+    {
+      "surah": 37,
+      "verse": 109,
+      "text": "سلام على إبراهيم"
+    },
+    {
+      "surah": 37,
+      "verse": 120,
+      "text": "سلام على موسى وهارون"
+    },
+    {
+      "surah": 37,
+      "verse": 130,
+      "text": "سلام على إل ياسين"
+    }
+  ],
+  "n_total": 4,
+  "n_q37": 4,
+  "share_q37": 1.0,
+  "h1a_pass_threshold_3": true,
+  "h1b_pass_threshold_75pct": true,
+  "p_lengthweighted_null_A": 0.0,
+  "p_uniform_null_B": 0.0,
+  "alpha_bon": 0.025,
+  "verdict": "CONFIRMED",
+  "honest_limits": "Post-hoc origin disclosed in pre-reg §6; verdict ceiling = PASS-DIRECTED until INDEPENDENT REPLICATION."
+}

@@ -1,0 +1,70 @@
+{
+  "test_id": "Q032-F-02",
+  "pre_reg_sha": "2f94580c3714cc4f7ce375e5160a1a6185935f4ce75a70fd87285b8f8a58e975",
+  "seed": 20260508,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "A1_rhyme": {
+    "Q32_top_final": "ن",
+    "Q67_top_final": "ر",
+    "pass": false
+  },
+  "A2_sig_A": {
+    "Q32_sig_A": -0.3497111236977206,
+    "Q67_sig_A": 0.3108463353043579,
+    "abs_diff": 0.6605574590020785,
+    "threshold": 0.5,
+    "pass": false
+  },
+  "A3_length_class": {
+    "Q32_n_verses": 30,
+    "Q67_n_verses": 30,
+    "abs_diff": 0,
+    "threshold": 5,
+    "pass": true
+  },
+  "A4_divine_density": {
+    "Q32_density_per_100w": 3.485254691689008,
+    "Q67_density_per_100w": 3.6036036036036037,
+    "Q32_rank": 57,
+    "Q67_rank": 54,
+    "threshold": 30,
+    "top_5_surahs_by_density": [
+      {
+        "surah": 1,
+        "density": 20.69,
+        "count": 6,
+        "words": 29
+      },
+      {
+        "surah": 110,
+        "density": 15.789,
+        "count": 3,
+        "words": 19
+      },
+      {
+        "surah": 112,
+        "density": 13.333,
+        "count": 2,
+        "words": 15
+      },
+      {
+        "surah": 65,
+        "density": 8.304,
+        "count": 24,
+        "words": 289
+      },
+      {
+        "surah": 59,
+        "density": 8.036,
+        "count": 36,
+        "words": 448
+      }
+    ],
+    "pass": false
+  },
+  "axes_passed": 1,
+  "axes_total": 4,
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "verdict": "NULL"
+}

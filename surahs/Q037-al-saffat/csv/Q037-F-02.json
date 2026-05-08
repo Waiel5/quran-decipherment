@@ -1,0 +1,34 @@
+{
+  "finding_id": "Q037-F-02",
+  "prereg_sha": "31df0ef290064534ff92bb7b135fef19147b56f2540cb89882ea869e87c9e381",
+  "seed": 20260508,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-root-index + orthographic-token, IDF, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "block": "Q 37:99-113 (Abraham + son sacrifice narrative, 15 verses)",
+  "h1_hapax_count": 2,
+  "h1_hapax_roots": [
+    [
+      "tll",
+      1
+    ],
+    [
+      "jbn",
+      1
+    ]
+  ],
+  "h1_threshold": 3,
+  "h1_pass": false,
+  "h2_block_isolation_obs": 0.7302294872012788,
+  "h2_perm_null_mean": 0.6790260554203434,
+  "h2_perm_null_max": 0.8437320245784236,
+  "h2_perm_null_p_one_tailed": 0.2128,
+  "h2_alpha_bon": 0.01667,
+  "h2_pass": false,
+  "h3_comparisons": {
+    "Q21:69-71_isolation": 0.8859250072653146,
+    "Q11:69-83_isolation": 0.6851866775143847
+  },
+  "h3_pass": false,
+  "verdict": "NULL",
+  "honest_limits": "TF-IDF on a 15-verse block has high variance; QAC-hapax depends on root-index v0.4 segmentation; comparison anchors differ in length (Q21:69-71 = 3 verses)."
+}

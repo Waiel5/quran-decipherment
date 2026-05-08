@@ -1,0 +1,206 @@
+{
+  "finding_id": "Q037-F-05",
+  "prereg_sha": "684ae9fdc0150ba64ed56e39a6e5f5c290980097ee6e9f25900320b046fb16cd",
+  "rules_tuple": "(no-tashkeel, orthographic-token + QAC-root, FR-on-QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "h1_q37_q38_seam": {
+    "rank_in_delta_raw_ascending": 13,
+    "delta_raw": -0.0009109999999310503,
+    "fraction_residual": 0.0,
+    "top_5_smoothest": [
+      [
+        1,
+        91,
+        [
+          91,
+          92
+        ],
+        -0.08683000000007723
+      ],
+      [
+        2,
+        4,
+        [
+          4,
+          5
+        ],
+        -0.06571199999984856
+      ],
+      [
+        3,
+        6,
+        [
+          6,
+          7
+        ],
+        -0.05752599999999575
+      ],
+      [
+        4,
+        3,
+        [
+          3,
+          4
+        ],
+        -0.046619999999990114
+      ],
+      [
+        5,
+        65,
+        [
+          65,
+          66
+        ],
+        -0.033966999999961445
+      ]
+    ],
+    "h1_pass_top5": false
+  },
+  "h2_architectural_cells": {
+    "cell_a_same_top_rhyme_letter": {
+      "q37_top": "ن",
+      "q37_frac": 0.7967032967032966,
+      "q38_top": "ب",
+      "q38_frac": 0.3977272727272727,
+      "pass": false
+    },
+    "cell_b_same_length_class": {
+      "q37_n_verses": 182,
+      "q38_n_verses": 88,
+      "pass": true
+    },
+    "cell_c_mean_content_distance_close": {
+      "q37_mcd": 0.9932759646017699,
+      "q38_mcd": 0.9662577345132737,
+      "delta": 0.027018230088496242,
+      "pass": true
+    },
+    "cell_d_top5_FR_neighbor": {
+      "q38_in_q37_top10": [
+        [
+          38,
+          0.903476
+        ]
+      ],
+      "q37_in_q38_top10": [],
+      "q37_top10_neighbors": [
+        [
+          23,
+          0.839146
+        ],
+        [
+          51,
+          0.842806
+        ],
+        [
+          44,
+          0.843379
+        ],
+        [
+          52,
+          0.860231
+        ],
+        [
+          43,
+          0.864397
+        ],
+        [
+          15,
+          0.888151
+        ],
+        [
+          36,
+          0.900232
+        ],
+        [
+          46,
+          0.901352
+        ],
+        [
+          38,
+          0.903476
+        ],
+        [
+          32,
+          0.905907
+        ]
+      ],
+      "q38_top10_neighbors": [
+        [
+          78,
+          0.833107
+        ],
+        [
+          50,
+          0.854087
+        ],
+        [
+          32,
+          0.856916
+        ],
+        [
+          43,
+          0.861935
+        ],
+        [
+          51,
+          0.867266
+        ],
+        [
+          41,
+          0.882625
+        ],
+        [
+          15,
+          0.882729
+        ],
+        [
+          36,
+          0.889091
+        ],
+        [
+          74,
+          0.892343
+        ],
+        [
+          52,
+          0.893218
+        ]
+      ],
+      "pass": false
+    },
+    "n_cells_pass": 2,
+    "h2_pass": true
+  },
+  "h3_shared_prophets": {
+    "prophets_in_q37": [
+      "إبراهيم",
+      "إسحاق",
+      "إلياس",
+      "موسى",
+      "نوح",
+      "هارون",
+      "يونس"
+    ],
+    "prophets_in_q38": [
+      "أيوب",
+      "إبراهيم",
+      "إسحاق",
+      "إسماعيل",
+      "اليسع",
+      "داوود",
+      "ذو الكفل",
+      "سليمان",
+      "لوط",
+      "نوح",
+      "يعقوب"
+    ],
+    "shared": [
+      "إبراهيم",
+      "إسحاق",
+      "نوح"
+    ],
+    "h3_pass": true
+  },
+  "verdict": "DIRECTIONAL",
+  "honest_limits": "Smoothest-5 ranking depends on H-NEW-720 2-opt heuristic with K=10 starts; cell (a) rhyme-letter likely fails (Q 37=ن, Q 38=ب expected); content seamlessness driven by shared prophet-cycle motif."
+}

@@ -1,0 +1,93 @@
+{
+  "test_id": "Q047-F-01",
+  "pre_reg_sha": "3fe40cf8cb8e8f0505f54904db7edc710c511f5abe19565cb1d4afb9ca1c62c1",
+  "seed": 20260508,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "corpus_total_muhammad_mentions": 4,
+  "corpus_total_ahmad_mentions": 1,
+  "all_named_surahs": [
+    {
+      "surah": 3,
+      "muhammad": 1,
+      "ahmad": 0,
+      "words": 3511
+    },
+    {
+      "surah": 33,
+      "muhammad": 1,
+      "ahmad": 0,
+      "words": 1307
+    },
+    {
+      "surah": 47,
+      "muhammad": 1,
+      "ahmad": 0,
+      "words": 547
+    },
+    {
+      "surah": 48,
+      "muhammad": 1,
+      "ahmad": 0,
+      "words": 561
+    },
+    {
+      "surah": 61,
+      "muhammad": 0,
+      "ahmad": 1,
+      "words": 226
+    }
+  ],
+  "target_surahs_densities": {
+    "3": {
+      "word_count": 3511,
+      "muhammad_count": 1,
+      "density_per_1000w": 0.28481913984619767
+    },
+    "33": {
+      "word_count": 1307,
+      "muhammad_count": 1,
+      "density_per_1000w": 0.7651109410864575
+    },
+    "47": {
+      "word_count": 547,
+      "muhammad_count": 1,
+      "density_per_1000w": 1.8281535648994516
+    },
+    "48": {
+      "word_count": 561,
+      "muhammad_count": 1,
+      "density_per_1000w": 1.7825311942959001
+    }
+  },
+  "sorted_by_density": [
+    {
+      "surah": 47,
+      "word_count": 547,
+      "muhammad_count": 1,
+      "density_per_1000w": 1.8281535648994516
+    },
+    {
+      "surah": 48,
+      "word_count": 561,
+      "muhammad_count": 1,
+      "density_per_1000w": 1.7825311942959001
+    },
+    {
+      "surah": 33,
+      "word_count": 1307,
+      "muhammad_count": 1,
+      "density_per_1000w": 0.7651109410864575
+    },
+    {
+      "surah": 3,
+      "word_count": 3511,
+      "muhammad_count": 1,
+      "density_per_1000w": 0.28481913984619767
+    }
+  ],
+  "Q47_rank_in_4set": 1,
+  "Q47_strict_top1": true,
+  "verdict": "VINDICATED",
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05
+}

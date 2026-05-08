@@ -1,0 +1,70 @@
+{
+  "test_id": "Q047-F-03",
+  "pre_reg_sha": "998eebaf6c77085b6fc50fbc5a0f86a156dfbf9d992291846b0359beaff08fe6",
+  "seed": 20260508,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "triplet": [
+    47,
+    48,
+    49
+  ],
+  "pairwise_FR": {
+    "Q47-Q48": 0.889264,
+    "Q47-Q49": 0.850282,
+    "Q48-Q49": 0.858354
+  },
+  "T_observed_mean_FR": 0.8659666666666667,
+  "corpus_3tuple_perm_median": 0.9523136666666666,
+  "corpus_3tuple_perm_p25": 0.8647583333333334,
+  "corpus_3tuple_perm_p10": 0.734052,
+  "p_low_T_le_T_obs": 0.2521747825217478,
+  "rank_among_consecutive_triplets": 63,
+  "consecutive_triplets_total": 112,
+  "percentile_among_consecutive": 0.5625,
+  "top_10_cheapest_consecutive_triplets": [
+    {
+      "start_surah": 106,
+      "mean_FR": 0.2385
+    },
+    {
+      "start_surah": 111,
+      "mean_FR": 0.2884
+    },
+    {
+      "start_surah": 112,
+      "mean_FR": 0.2897
+    },
+    {
+      "start_surah": 105,
+      "mean_FR": 0.2901
+    },
+    {
+      "start_surah": 110,
+      "mean_FR": 0.293
+    },
+    {
+      "start_surah": 107,
+      "mean_FR": 0.3064
+    },
+    {
+      "start_surah": 104,
+      "mean_FR": 0.3111
+    },
+    {
+      "start_surah": 103,
+      "mean_FR": 0.3201
+    },
+    {
+      "start_surah": 108,
+      "mean_FR": 0.3277
+    },
+    {
+      "start_surah": 102,
+      "mean_FR": 0.3412
+    }
+  ],
+  "verdict": "NULL",
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05
+}
