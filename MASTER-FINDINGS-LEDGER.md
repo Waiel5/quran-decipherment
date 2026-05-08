@@ -2415,3 +2415,15 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **The 21-surah set containing *rabb al-ʿālamīn* is NOT FR-cohesive** (p=0.82): construct is widely-distributed across the corpus, not a tight cluster. *rabb al-ʿālamīn* is a CONCEPTUAL universal-Lord phrase, not an architectural marker.
 - **Refines Q026-F-01**: the prophet-cycle compression-tail Spearman ρ=−0.84 finding is at the CYCLE-LENGTH level; the dual-refrain finding is at the FORMULA-COUNT level. Both are corpus-unique signatures of Q 26 prophet-cycle architecture. al-Zamakhsharī *al-Kashshāf* on Q 26 references the qarīna-as-chorus reading; the empirical DUAL-refrain confirms it at law-strength. Source: this ledger inline computation.
 
+
+### 10.27 H-NEW-1120 — divine-name-pair corpus-distribution (23 classical pairs surveyed)
+
+- **[[h-new-1120-divine-name-pair-distribution|H-NEW-1120]] — corpus-distribution of 23 classical divine-name pairs reveals 4 architectural anchors and 4 attribution-errors**:
+  - **al-ʿAzīz al-Ḥakīm corpus-MAX (29 occurrences)**: broadly distributed; the dominant tanzīl-opener pair (per H-NEW-1100). Top-5 surahs: Q 3 (4), Q 29 (2), Q 45 (2), Q 59 (2), Q 62 (2).
+  - **al-ʿAzīz al-Raḥīm Q 26-EXCLUSIVE (9/13 = 69% in Q 26)**: locks Q026-F-01 8-fold refrain at corpus-EXACT level. Other 4 occurrences scattered (Q 30:5, Q 32:6, Q 36:5, Q 44:42).
+  - **al-Tawwāb al-Raḥīm legal-Medinan-EXCLUSIVE (4/6 in Q 2, 2/6 in Q 9)**: 100% of corpus occurrences are in the legal-Medinan core. Forgive-mercy-repentance pair lives at legal-Medinan-EXACT.
+  - **al-Awwal + al-Ākhir + al-Ẓāhir + al-Bāṭin tetrad: corpus-UNIQUE to Q 57:3**: al-Khaṭṭābī's *iʿjāz-al-tawḥīd* anchor verse confirmed at corpus-MAX uniqueness. Q 57:3 is the ONLY verse combining all 4 attributes.
+  - **al-Samīʿ al-ʿAlīm**: 15 occurrences broadly distributed (Q 2:2, Q 6:2, Q 29:2 + 9 others at 1 each).
+- **4 attributed pairs DON'T OCCUR in the Quran at all**: al-ʿAfuww al-Ghafūr (0), al-Ḥalīm al-Ghafūr (0), al-Karīm al-Wahhāb (0), al-Wadūd al-Majīd (0). **Anti-hallucination corpus-check**: even classical scholarship sometimes attributes pairings to the Quran that don't exist in the text. al-Wadūd appears once (Q 85:14) but never paired with al-Majīd; al-Ḥalīm appears 11× but never with al-Ghafūr immediately adjacent.
+- **NEW corpus-architectural finding**: divine-name PAIRS have architectural concentration patterns distinct from individual divine-names. Some pairs are HEAVILY concentrated (al-ʿAzīz al-Raḥīm → Q 26; al-Tawwāb al-Raḥīm → legal-Medinan); others are DISTRIBUTED (al-Samīʿ al-ʿAlīm, al-ʿAzīz al-Ḥakīm); and some are RECONSTRUCTED-NOT-ATTESTED (4 pairs absent from Quran). Source: this ledger inline computation (23-pair corpus-search seed 20260508).
+
