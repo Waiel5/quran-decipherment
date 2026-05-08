@@ -1,8 +1,7 @@
 # root-cartographer-run-1 — journal
 
-**Agent:** root-cartographer (Phase B novelty hunt)
+**Specialist:** root-cartographer (Phase B novelty hunt)
 **Date:** 2026-04-12
-**Model:** Claude Opus 4.6 (1M context)
 **Inputs:** `data/morphology/quranic-corpus-morphology-0.4.txt`, `quran-text/quran-no-tashkeel.json`, `data/translations/en.sahih.txt-2.txt`
 **Outputs:**
 - `data/morphology/root-index.json` (672 KB) — `{root_BW: [(s,v,w), ...]}`

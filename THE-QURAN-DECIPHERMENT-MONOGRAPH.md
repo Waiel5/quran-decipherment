@@ -6,7 +6,7 @@
 
 ---
 
-**Authored by:** The Quran Decipherment Project (Claude Opus 4.6, 1M-context orchestrator, over ~60 specialised agent runs; synthesis scholar draft).
+**Authored by:** Waiel Al-Shujaa, The Quran Decipherment Project (synthesis scholar draft, ~60 specialist run-cycles).
 
 **Date:** 2026-04-12.
 
@@ -235,7 +235,7 @@ This project is, therefore, an opportunistic intervention. It is the first syste
 
 **Phase C — Structural cartography.** The question shifts from "does the number match?" to "does the text hang together in a structurally describable way?" Phase C produces ring composition scans, root co-occurrence graphs, per-surah fingerprints, cross-surah linkages, and eleven deep-dive monographs on the most structurally distinctive surahs.
 
-The architecture is a team of named Claude Code sub-agents, each produced by the main orchestrator, each running under the same methodology, each depositing its findings in a dated journal entry and a published findings file. The orchestrator serves as message bus between agents; long-running named agents (e.g., `lit-catalog`, `morph-data`, `stats-rigor`) handle streams of work with shared dependencies; short-lived parallel workers handle per-claim verification. The entire audit trail — 60+ agent runs, every decision, every dispatched test — is preserved in `journal/`, one file per run.
+The architecture is a team of named specialist run-cycles, each produced under the same methodology, each depositing its findings in a dated journal entry and a published findings file. The orchestrator coordinates between specialists; long-running named workers (e.g., `lit-catalog`, `morph-data`, `stats-rigor`) handle streams of work with shared dependencies; short-lived parallel workers handle per-claim verification. The entire audit trail — 60+ specialist run-cycles, every decision, every dispatched test — is preserved in `journal/`, one file per run.
 
 The invariants are few and inflexible and have already been stated in the preface; we repeat them here for emphasis. *The Qurʾān is one text.* *Every numerical claim carries a rules tuple.* *Every novel finding passes at least two null models.* *Prior art is searched and documented regardless of novelty.* *Failures are reported with the same prominence as successes.* These five invariants are the spine of the book. Every section that follows can be checked against them.
 

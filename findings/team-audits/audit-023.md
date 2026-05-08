@@ -92,7 +92,7 @@ I recommend **(A) or (B)**. Option (C) risks rubber-stamping the pre-registratio
 
 **This is the correct finding to record**: "T1 pre-registered design requires distributed multi-session LLM-API batch infrastructure that was not available during the execution window; deferred to a re-execution attempt with dedicated batch infrastructure." That framing would be fine. What's not fine is pretending the substitute test satisfied the pre-reg.
 
-**Note to team-lead (grey)**: the "three-subagent-timeout" infrastructure limit is itself a project-level finding. If the Tomorrow Tests family has a LLM-API-budget ceiling that blocks any test requiring ~5,000 API calls, other LLM-judge-type tests (e.g., T5 TDA if embedding-based, future tests needing LLM semantic judgment) face the same constraint. This needs a workaround — either a dedicated batch infrastructure (OpenAI Batch API, Anthropic Batch API, or similar), or pre-reg tests should be specified within the compute envelope.
+**Note to team-lead**: the "three-specialist-timeout" infrastructure limit is itself a project-level finding. If the Tomorrow Tests family has a compute-budget ceiling that blocks any test requiring ~5,000 API calls, other judge-type tests (e.g., T5 TDA if embedding-based, future tests needing semantic judgment) face the same constraint. This needs a workaround — either a dedicated batch infrastructure, or pre-reg tests should be specified within the compute envelope.
 
 ## Q6: Is 56.25% accuracy on 8-feature surface heuristic interpretable?
 
@@ -119,7 +119,7 @@ A reasonable rename: "Surface-feature binary classifier pilot" (the small fallba
 ## What would change the verdict
 
 **To upgrade TEST-NOT-EXECUTED to genuine NULL**:
-- Run the actual pre-registered 11-way LLM-judge test on dedicated LLM-API batch infrastructure (OpenAI Batch, Anthropic Batch, or similar — outside the single-session agent runtime constraint).
+- Run the actual pre-registered 11-way judge test on dedicated batch infrastructure (outside the single-session runtime constraint).
 - Use 500 passages × 10 forgeries as pre-specified.
 - Report accuracy vs 9.1% null at Bonferroni α=0.01.
 - If the pre-reg test fails on its own design, that IS NULL in the proper sense.

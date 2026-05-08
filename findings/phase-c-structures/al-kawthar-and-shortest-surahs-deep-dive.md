@@ -411,7 +411,7 @@ The Al-Kawthar claim stands on three pillars: (i) the classical tradition (al-B�
 
 ### Prior art not checked by WebSearch (limitation)
 
-The Claude Code environment here did not expose WebSearch at the time of this run. Targeted prior-art queries that remain open:
+The working environment here did not expose WebSearch at the time of this run. Targeted prior-art queries that remain open:
 
 - **Sayf al-Dīn al-Āmidī** on iʿjāz-of-brevity (classical; search would locate relevant *al-Iḥkām* or *al-Ghāya* passages).
 - **Todd Lawson**, *The Crucifixion and the Qurʾān* and related papers on Q108 reversal.

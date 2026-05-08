@@ -2,7 +2,7 @@
 
 **Date:** 2026-04-12
 **Status:** Draft, in-flight (user authorized starting work in parallel with finalizing the spec)
-**Orchestrator:** Claude (Opus 4.6, 1M context)
+**Lead:** Waiel Al-Shujaa
 
 ## 1. Mission
 
@@ -95,7 +95,7 @@ quran/
 
 The user explicitly requested a **team** of agents that can communicate, not just isolated subagents.
 
-Claude Code's actual primitive: named subagents addressable via `SendMessage`. Real peer-to-peer messaging requires the orchestrator (this main session) to act as message bus — there is no independent message channel between sibling agents. We will:
+The runtime's actual primitive: named specialist workers addressable via message-passing. Real peer-to-peer messaging requires the orchestrator (this main session) to act as message bus — there is no independent message channel between sibling specialists. We will:
 
 1. Spawn long-running named agents for streams of work that produce shared dependencies (`lit-catalog`, `morph-data`, `stats-rigor`).
 2. Spawn short-lived parallel workers for embarrassingly-parallel claim verification (one per claim cluster in Phase A2).
