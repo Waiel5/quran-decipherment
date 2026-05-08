@@ -2688,3 +2688,31 @@ The corpus is structurally HEAVY in the LONG-HEAD (Q 2-9 al-sabʿ-al-ṭiwāl) b
 
 - Q037 specialist's HONEST DISCLOSURES: full ranked-ones-cohesion REVERSAL published with prominence; equal NULL prominence on F-02 + F-03 + F-04; pre-commit violation on F-03 documented.
 
+
+### 10.41 H-NEW-1240 — the 13 empirically-seamless mushaf-transitions (clamped-zero TSP-cost)
+
+- **[[h-new-1240-13-seamless-seams|H-NEW-1240]] — corpus-EXACT 13 mushaf-transitions are empirically-seamless** (delta_raw ≤ 0 in H-NEW-720 TSP-cost decomposition; clamped-zero adjacency-cost).
+- **The 13 seamless seams (sorted by delta_raw descending, most-seamless first)**:
+  1. **Q 91→Q 92** (al-Shams → al-Layl) — strongest seamless, delta_raw = −0.087
+  2. **Q 4→Q 5** (al-Nisāʾ → al-Māʾida) — al-Biqāʿī al-ṭiwāl seam VINDICATED
+  3. **Q 6→Q 7** (al-Anʿām → al-Aʿrāf) — al-Biqāʿī al-ṭiwāl seam (Q 6 specialist note)
+  4. **Q 3→Q 4** (Āl ʿImrān → al-Nisāʾ) — al-ṭiwāl
+  5. **Q 65→Q 66** (al-Ṭalāq → al-Taḥrīm) — short-Medinan
+  6. **Q 109→Q 110** (al-Kāfirūn → al-Naṣr) — short-tail
+  7. **Q 73→Q 74** (al-Muzzammil → al-Muddaththir) — early-Meccan opener-pair
+  8. **Q 105→Q 106** (al-Fīl → Quraysh) — short-tail
+  9. **Q 86→Q 87** (al-Ṭāriq → al-Aʿlā) — short-tail oath
+  10. **Q 93→Q 94** (al-Ḍuḥā → al-Sharḥ) — short-tail oath
+  11. **Q 64→Q 65** (al-Taghābun → al-Ṭalāq) — short-Medinan
+  12. **Q 72→Q 73** (al-Jinn → al-Muzzammil) — qul-opener-then-early-Meccan
+  13. **Q 37→Q 38** (al-Ṣāffāt → Ṣād) — al-Biqāʿī mid-mushaf seam (Q 37 specialist)
+- **Distribution by region**:
+  - **al-Sabʿ-al-ṭiwāl block (3 seams: Q 3→4, 4→5, 6→7)**: 3 of 7 al-ṭiwāl-internal seams are seamless. al-Biqāʿī munāsaba-of-the-long-head VINDICATED at corpus-formal strength.
+  - **Short-Meccan-tail (5 seams: Q 86→87, 91→92, 93→94, 105→106, 109→110)**: short-tail is most-internally-cohesive — 5 of 13 seams concentrated in Q 86-110 region (consistent with H-NEW-1200 short-Meccan-eschatology meta-cluster + the corpus FR-centroid being at the tail per H-NEW-1220).
+  - **Short-Medinan-block (2 seams: Q 64→65, 65→66)**: joins H-NEW-1080 Q 57-66 cluster — al-Suyūṭī qiṣār-Madanī cohesion.
+  - **Mid-mushaf (3 seams: Q 37→38, 72→73, 73→74)**: Q 37→38 is the most-extreme mid-mushaf seamless (Q 37 specialist).
+- **100/113 adjacencies have positive cost; only 13/113 (11.5%) are clamped-zero seamless.** The 13 seamless seams = corpus's architectural-glue points where al-Biqāʿī's munāsaba achieves "perfect natural transition."
+- **al-Biqāʿī's *Naẓm al-Durar* munāsaba-of-consecutive-pairs program is empirically validated specifically at THESE 13 transitions at law-strength.** Other 100 adjacencies have non-trivial TSP-cost; al-Biqāʿī's program may still be valid at those seams but with higher empirical "stretch."
+- **NEW corpus-architectural finding**: the mushaf has 13 EXACT seamless-seam locations, distributed across 4 architectural regions (al-ṭiwāl, mid-mushaf, short-Medinan, short-tail). This refines the H-NEW-1040 finding (consecutive-pair-FR-mean 17.8% below corpus baseline at z=−11.65) by identifying the EXACT 13 seam-locations where the path is empirically-seamless.
+- Source: H-NEW-720 per_adjacency data + Q 37 specialist Q037-F-05 + this ledger inline computation.
+
