@@ -2559,3 +2559,17 @@ Three candidate cross-findings emerged from Wave-D MAY-7:
 - **9th classical-form-pattern locked at corpus-EXACT precision** (joining H-NEW-1180 sabʿ + H-NEW-1170 mathal + H-NEW-1160 salām + H-NEW-1130 hamd-endpoint + H-NEW-1100 tanzīl + H-NEW-110 wa-ilā + H-NEW-1010 singleton + cross-finding-008 book-introduction).
 - Source: this ledger inline computation (seed 20260508).
 
+
+### 10.35 H-NEW-1200 — SHORT-MECCAN-TAIL ESCHATOLOGY META-CLUSTER (14 surahs, p=0.00030)
+
+- **[[h-new-1200-short-meccan-eschatology|H-NEW-1200]] — META-CLUSTER: the 14-surah union of idhā-eschatology-openers + *wa-mā adrāka mā* meta-question surahs forms an FR-cohesive cluster at p=0.00030.**
+- **Cluster**: Q {56, 69, 74, 77, 81, 82, 83, 84, 86, 90, 97, 99, 101, 104}. Mean pairwise FR = 0.6462 vs corpus mean 0.9236 (-30%). Perm-p_lower = 0.00030 over 10000 perms.
+- **Sub-cluster A — idhā-cosmic-event-openers (5 surahs)**: Q 56 al-Wāqiʿa (*idhā waqaʿat al-wāqiʿa*), Q 81 al-Takwīr (*idhā al-shamsu kuwwirat*), Q 82 al-Infiṭār (*idhā al-samāʾu infaṭarat*), Q 84 al-Inshiqāq (*idhā al-samāʾu inshaqqat*), Q 99 al-Zalzala (*idhā zulzilati al-arḍu*). FR-cohesion at p=0.034.
+- **Sub-cluster B — *wa-mā adrāka mā* surahs (10 surahs)**: per H-NEW-1190 (CONFIRMED p=0.00068).
+- **Overlap = Q 82 only** (in both sub-clusters). Union = 14 distinct surahs.
+- **STRUCTURAL CORE**: the 4 tightest sub-pairs are Q 81-Q 82, Q 81-Q 84, Q 81-Q 99, Q 82-Q 99 (all FR=0.52-0.57). These 4 short-Meccan idhā-cosmic-opener surahs form the architectural CORE of the eschatology-tail.
+- **EMPIRICAL LOCK ON CLASSICAL al-mufaṣṣal al-qiṣār CLASSIFICATION**: al-Suyūṭī *al-Itqān* nawʿ 18 *al-mufaṣṣal* classifies the short-mufaṣṣal as Q 100-114 (or Q 50-114 broadly per al-Bāqillānī). The H-NEW-1200 14-surah eschatology-cluster operationalizes the THEMATIC short-mufaṣṣal at FR-content level — it is NOT the strict mushaf-position-defined al-mufaṣṣal-qiṣār (Q 100-114), but the THEMATICALLY-CONSISTENT eschatological subset within the broader Q 50-114 mufaṣṣal-tail.
+- **Connection to H-NEW-1080 short-Medinan-block (Q 57-66) finding**: H-NEW-1080 found the short-Medinan block FR-cohesive at p=0.049. H-NEW-1200 finds the short-Meccan-tail eschatology cluster cohesive at p=0.00030 — much stronger. Together: BOTH the short-Medinan AND the short-Meccan-tail-eschatology surahs form architecturally-coherent length-and-content clusters.
+- **10th classical-form-pattern locked at corpus-EXACT or corpus-formal-FR precision** (joining H-NEW-1190, 1180, 1170, 1160, 1130, 1100, 1010, 110, cross-finding-008).
+- Source: this ledger inline computation (seed 20260508).
+
