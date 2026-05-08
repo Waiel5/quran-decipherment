@@ -2659,3 +2659,12 @@ The corpus is structurally HEAVY in the LONG-HEAD (Q 2-9 al-sabʿ-al-ṭiwāl) b
 **11th classical-form-pattern locked at corpus-EXACT precision** (joining cross-finding-008, H-NEW-1010/1100/1130/1160/1170/1180/1190/1200/110, hamd-endpoint).
 - Source: this ledger inline computation (seed 20260508).
 
+
+### 10.39 NULL — Iblīs-narrative + Adam-narrative thematic clusters NOT FR-cohesive
+
+- **Iblīs-narrative 9-surah cluster (corpus-EXACT 9 surahs containing *Iblīs*)**: Q 2, 7, 15, 17, 18, 20, 26, 34, 38 (11 occurrences total; Q 15 + Q 38 each have 2). FR-cohesion mean=0.9402 vs corpus 0.9237; z=+0.237, p_lower=0.537. **NULL.**
+- **Adam-narrative 8-surah cluster (corpus-EXACT 8 surahs containing *Ādam*)**: Q 2, 3, 5, 7, 17, 19, 20, 36 (20 occurrences; Q 7 has 6, Q 2 + Q 20 have 4 each). FR-cohesion mean=0.9392 vs corpus 0.9237; perm-p=0.515. **NULL.**
+- **Substantive interpretation**: NARRATIVE-RECURRENCE at the proper-name level does NOT drive FR-content-clustering. The Iblīs and Adam narratives recur in scattered surahs that don't share a unified FR-content signature. This is consistent with H-NEW-1010 + Hawamim-NULL + ALR-NULL et al "letter-axis ⊥ content-axis" findings — extending to "thematic-recurrence ⊥ content-cohesion" at the proper-name level.
+- **Two distinct architectural axes**: (1) FORM-PATTERNS (oath-openers, hamd-endpoints, tanzīl-openers, wa-mā adrāka, refrains) tend to be FR-cohesive; (2) THEMATIC PROPER-NAME RECURRENCE (Iblīs, Adam, prophet-mentions) does NOT cluster. Form-pattern clusters > thematic-recurrence clusters on the FR-content axis.
+- Equal NULL prominence per Protocol §1.3. Source: this ledger inline computation (seed 20260508).
+
