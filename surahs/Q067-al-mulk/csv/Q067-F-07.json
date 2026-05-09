@@ -1,0 +1,141 @@
+{
+  "finding_id": "Q067-F-07",
+  "pre_reg_sha256": "61ded14703d78a04d1277970f909aedd263065a98ff9d22d264b97c97c5630e8",
+  "target_root": "mlk",
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, density-per-root-token, Hafs-Kufan)",
+  "corpus_total_stem_root_tokens": 49968,
+  "corpus_mlk_total": 206,
+  "q67_mlk_count": 1,
+  "q67_total_stem_root_tokens": 208,
+  "q67_density_per_1000": 4.8077,
+  "q67_rank_density": 37,
+  "q67_rank_count": 54,
+  "passes_top5_density": false,
+  "top10_by_density": [
+    {
+      "surah": 114,
+      "mlk_count": 1,
+      "total_stem_root_tokens": 16,
+      "density_per_1000": 62.5
+    },
+    {
+      "surah": 97,
+      "mlk_count": 1,
+      "total_stem_root_tokens": 21,
+      "density_per_1000": 47.619
+    },
+    {
+      "surah": 1,
+      "mlk_count": 1,
+      "total_stem_root_tokens": 23,
+      "density_per_1000": 43.4783
+    },
+    {
+      "surah": 82,
+      "mlk_count": 1,
+      "total_stem_root_tokens": 50,
+      "density_per_1000": 20.0
+    },
+    {
+      "surah": 78,
+      "mlk_count": 2,
+      "total_stem_root_tokens": 131,
+      "density_per_1000": 15.2672
+    },
+    {
+      "surah": 85,
+      "mlk_count": 1,
+      "total_stem_root_tokens": 66,
+      "density_per_1000": 15.1515
+    },
+    {
+      "surah": 25,
+      "mlk_count": 9,
+      "total_stem_root_tokens": 608,
+      "density_per_1000": 14.8026
+    },
+    {
+      "surah": 70,
+      "mlk_count": 2,
+      "total_stem_root_tokens": 142,
+      "density_per_1000": 14.0845
+    },
+    {
+      "surah": 43,
+      "mlk_count": 7,
+      "total_stem_root_tokens": 512,
+      "density_per_1000": 13.6719
+    },
+    {
+      "surah": 66,
+      "mlk_count": 2,
+      "total_stem_root_tokens": 171,
+      "density_per_1000": 11.6959
+    }
+  ],
+  "top10_by_raw_count": [
+    {
+      "surah": 2,
+      "mlk_count": 20,
+      "total_stem_root_tokens": 3884,
+      "density_per_1000": 5.1493
+    },
+    {
+      "surah": 3,
+      "mlk_count": 13,
+      "total_stem_root_tokens": 2274,
+      "density_per_1000": 5.7168
+    },
+    {
+      "surah": 4,
+      "mlk_count": 10,
+      "total_stem_root_tokens": 2462,
+      "density_per_1000": 4.0617
+    },
+    {
+      "surah": 5,
+      "mlk_count": 9,
+      "total_stem_root_tokens": 1798,
+      "density_per_1000": 5.0056
+    },
+    {
+      "surah": 6,
+      "mlk_count": 9,
+      "total_stem_root_tokens": 1946,
+      "density_per_1000": 4.6249
+    },
+    {
+      "surah": 25,
+      "mlk_count": 9,
+      "total_stem_root_tokens": 608,
+      "density_per_1000": 14.8026
+    },
+    {
+      "surah": 16,
+      "mlk_count": 8,
+      "total_stem_root_tokens": 1184,
+      "density_per_1000": 6.7568
+    },
+    {
+      "surah": 17,
+      "mlk_count": 8,
+      "total_stem_root_tokens": 1043,
+      "density_per_1000": 7.6702
+    },
+    {
+      "surah": 12,
+      "mlk_count": 7,
+      "total_stem_root_tokens": 1126,
+      "density_per_1000": 6.2167
+    },
+    {
+      "surah": 43,
+      "mlk_count": 7,
+      "total_stem_root_tokens": 512,
+      "density_per_1000": 13.6719
+    }
+  ],
+  "verdict": "NULL",
+  "interpretation": "Q 67 ranks 37/114 by mlk-stem-density (>5). Pre-registered top-5 direction NOT met. Q 67 has 1 mlk-stem-token across 30 verses, density ≈ 4.81/1000 — middle of corpus. The name \"al-Mulk\" follows the OPENING-WORD convention (Q 67:1 *bi-yadihi al-mulk*), not a thematic lexical-density concentration. This complements Q067-F-04 NULL.",
+  "companion_finding": "Q067-F-04 (hypergeometric over-concentration NULL p=0.58)"
+}

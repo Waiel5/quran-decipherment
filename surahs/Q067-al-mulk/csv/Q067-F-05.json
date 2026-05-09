@@ -1,0 +1,122 @@
+{
+  "finding_id": "Q067-F-05",
+  "pre_reg_sha256": "826c4a8e7934907ed5125547a4c289fe703cbbac7f96b8a63f8bd2cadcec001e",
+  "seed": 20260509,
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, K=500, Dirichlet α=0.5, FR-distance, Hafs-Kufan)",
+  "data_source": "/Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-720.json",
+  "target_pair": [
+    66,
+    67
+  ],
+  "q66_q67": {
+    "delta_raw": 0.07803999999991618,
+    "fraction_residual": 0.009410575296771504,
+    "rank_descending": 47,
+    "rank_ascending": 67,
+    "in_top_decile_descending": false,
+    "observational_p_at_or_above": 0.415929203539823
+  },
+  "neighbours": {
+    "q65_q66": {
+      "delta_raw": -0.033966999999961445,
+      "fraction_residual": 0.0,
+      "rank_descending": 109
+    },
+    "q67_q68": {
+      "delta_raw": 0.09615899999994326,
+      "fraction_residual": 0.011595483213258446,
+      "rank_descending": 36
+    }
+  },
+  "bootstrap": {
+    "n_boot": 10000,
+    "boot_p_in_top_decile": 0.0,
+    "boot_rank_mean": 46.9474,
+    "boot_rank_median": 47.0,
+    "boot_rank_q05": 38,
+    "boot_rank_q95": 56
+  },
+  "distribution_stats": {
+    "mean_delta_raw": 0.08323000884955496,
+    "median_delta_raw": 0.06210600000005684,
+    "stdev_delta_raw": 0.0971782776187951,
+    "min_delta_raw": -0.08683000000007723,
+    "max_delta_raw": 0.6215650000001176,
+    "n_adjacencies": 113,
+    "top_decile_threshold": 11
+  },
+  "top10_expensive_pairs": [
+    [
+      [
+        1,
+        2
+      ],
+      0.6216
+    ],
+    [
+      [
+        32,
+        33
+      ],
+      0.3631
+    ],
+    [
+      [
+        33,
+        34
+      ],
+      0.3311
+    ],
+    [
+      [
+        9,
+        10
+      ],
+      0.3094
+    ],
+    [
+      [
+        24,
+        25
+      ],
+      0.2896
+    ],
+    [
+      [
+        22,
+        23
+      ],
+      0.2595
+    ],
+    [
+      [
+        42,
+        43
+      ],
+      0.2357
+    ],
+    [
+      [
+        56,
+        57
+      ],
+      0.2274
+    ],
+    [
+      [
+        12,
+        13
+      ],
+      0.2158
+    ],
+    [
+      [
+        7,
+        8
+      ],
+      0.212
+    ]
+  ],
+  "verdict": "NULL",
+  "interpretation": "Q 66 → Q 67 ranks 47/113 (descending) — outside top decile (>11). delta_raw=0.0780 vs corpus mean 0.0832, median 0.0621. Pre-registered \"high-cost seam\" direction NOT supported: the Q 66 → Q 67 transition is mid-pack on the H-NEW-720 adjacency map; the post-Hijra-kink position-architecture is not visible at this seam under the current rules-tuple."
+}

@@ -2,9 +2,9 @@
 surah: 67
 file_type: journal
 date_started: 2026-04-28
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE — 9 template files + 4 pre-regs + 4 scripts + 4 JSON outputs delivered (Wave-D launch)
+verdict: COMPLETE — 9 template files + 7 pre-regs + 7 scripts + 7 JSON outputs (Wave-D launch + Wave-H additions)
 ---
 
 # Q 67 al-Mulk — Investigation Journal
@@ -123,3 +123,59 @@ Word count (after stripping mushaf marks): **9 words** in all three variants. Le
 **Q 67 al-Mulk is the corpus's clearest case of theological-iʿjāz / recitation-tradition prominence WITHOUT structural-architectural distinctness.** UAS rank 102/114 (bottom decile) sits Q 67 in the same architectural cell as Q 112, Q 87, Q 73, Q 83 — yet its classical recitation-tradition prominence (al-Mānīʿa / al-Munjiya / nightly-recitation pair with Q 32) is among the corpus's richest. The Wave-D investigation produced four pre-registered novel findings (Q067-F-01 through F-04) with verdicts: VINDICATED, DIRECTIONAL_ENHANCED (pre-commit violation, honest), CONFIRMED 3/3, and substantive NULL. The eight classical-claims audit catches multiple verdict types: VINDICATED (×6), DA'IF-CHAIN (×1), VINDICATED-with-DATA-GAP (×1). The empirical signature precisely matches the qualitative classical reading: a Meccan-mufaṣṣal-awsāṭ surah whose distinctness lives at the *recitation-tradition* level (high faḍāʾil) and at the *token-level lexical-uniqueness* level (corpus-singleton phrases at Q 67:1, 67:3-4), but NOT at the *fawāṣila / outlier / adjacency-cost* level (UAS rank 102, NULL outlier, mid-pack adjacency, mid-pack sig_A).
 
 **Headline empirical verdict on the recitation-tradition / architectural-rank alignment hypothesis**: ORTHOGONAL — high *faḍāʾil* recitation-tradition status does NOT predict elevated UAS. This vindicates the [[cross-finding-026-iʿjāz-architecture|cross-finding-026]] dual-iʿjāz typology at one of its most dramatic instances.
+
+## 2026-05-09 — Wave-H additions (3 follow-up pre-registered tests)
+
+### Pre-flight reading completed
+
+- `/Users/grey/Downloads/quran/.claude/skills/quran-investigation/SKILL.md`
+- `/Users/grey/Downloads/quran/INVESTIGATION-PROTOCOL.md`
+- `/Users/grey/Downloads/quran/HANDOFF/SESSION-HANDOFF-2026-05-09-PM.md`
+- `/Users/grey/Downloads/quran/surahs/Q067-al-mulk/` (Wave-D landing, full 8-file template)
+- `/Users/grey/Downloads/quran/findings/phase-b-hypotheses/csv/h-new-720.json` (TSP adjacency-cost map)
+
+### 3 additional pre-registered tests run
+
+| Pre-reg | SHA-head | Title | Verdict |
+|:--|:--|:--|:--|
+| Q067-F-05 | `826c4a8e7934` | Q 66 → Q 67 mushaf-seam adjacency cost (juzʾ-29 boundary) | **NULL** (rank 47/113, outside top-decile) |
+| Q067-F-06 | `d39272d33613` | tabāraka alladhī opener verse-pair tightness {Q 25:1, Q 64:1, Q 67:1} | **NULL** (p_perm=0.084, near-miss directional) |
+| Q067-F-07 | `61ded14703d7` | mulk-stem density rank across 114 corpus | **NULL** (rank 37/114, outside top-5) |
+
+### Data-verification correction
+
+The brief's pre-registration for Q067-F-06 asserts that Q 25:1, Q 64:1, and Q 67:1 *all* open with *tabāraka alladhī*. **This is empirically false** (verified against `quran-text/quran-no-tashkeel.json`):
+- Q 25:1 ✓ opens with *tabāraka alladhī*
+- Q 64:1 ✗ opens with *yusabbiḥu li-llāhi* (musabbiḥāt-class opener); contains *lahu al-mulk* phrase mid-verse
+- Q 67:1 ✓ opens with *tabāraka alladhī*
+
+The 5 corpus-wide *tabāraka alladhī* occurrences are: Q 25:1, Q 25:10, Q 25:61, Q 43:85, Q 67:1 (per Q067-F-03 corpus-singleton audit, vindicated).
+
+The locked triplet is honored per §1.6 pre-registration discipline (interpreted as a "mulk-doxology opener" test rather than a *tabāraka alladhī* opener test); the script's secondary test computes FR over the actual 5 *tabāraka alladhī* verse-occurrences. This correction is documented in `06-novel-findings.md` Q067-F-06 § Data-verification note.
+
+### Headline Wave-H verdict
+
+All three Wave-H tests resolve NULL. The pattern reinforces the Wave-D portrait of Q 67: its empirical-architectural signature does NOT live at standard structural axes (UAS, outlier, adjacency-cost, density, opener-cohesion). It lives at:
+- **token-singularity** (Q067-F-03 *bi-yadihi al-mulk*, *fa-rjiʿi al-baṣar* corpus-singletons)
+- **recitation-tradition prominence** (`04-hadith-corpus.md`; al-Mānīʿa / nightly-recitation pair with Q 32)
+- **al-mulk-doxology motif** (descriptive, not statistically tight at verse-level)
+
+The Wave-H NULLs anchor Q 67 firmly in the **theological-iʿjāz** cell of cross-finding-026 and add a third data point to **cross-finding-025** (marker-thickness rule): the juzʾ-29 boundary, the *tabāraka alladhī* opener formula, and the *mlk*-root-name each fail to drive empirical cohesion when isolated as single thin markers.
+
+### Files added 2026-05-09
+
+- `preregs/Q067-F-05-q66-q67-mushaf-seam-prereg.md` (SHA `826c4a8e7934…`)
+- `preregs/Q067-F-06-tabaraka-alladhi-pair-prereg.md` (SHA `d39272d33613…`)
+- `preregs/Q067-F-07-mulk-root-density-rank-prereg.md` (SHA `61ded14703d7…`)
+- `scripts/Q067_F_05_q66_q67_mushaf_seam.py` (SHA-verified)
+- `scripts/Q067_F_06_tabaraka_alladhi_pair.py` (SHA-verified)
+- `scripts/Q067_F_07_mulk_root_density_rank.py` (SHA-verified)
+- `csv/Q067-F-05.json`
+- `csv/Q067-F-06.json`
+- `csv/Q067-F-07.json`
+
+### Honest pre-commit notes (Wave-H)
+
+- All three Wave-H pre-regs locked BEFORE running. SHAs embedded in scripts. Runtime SHA verification in every script. No post-hoc adjustments.
+- Q067-F-06 contains a pre-reg factual error (Q 64:1 mis-attributed to *tabāraka alladhī* openers). Per §1.6, the locked triplet is honored AS-LOCKED and the verdict is reported on what was actually computed; the factual correction is documented prominently in both the JOURNAL and 06-novel-findings § Data-verification note.
+- All three verdicts are NULL. Per §1.3 equal-NULL-prominence, they carry the same publication weight as positive findings.

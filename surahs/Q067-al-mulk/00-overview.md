@@ -4,9 +4,9 @@ surah_name_ar: الملك
 surah_name_translit: al-Mulk
 surah_name_english: The Dominion / Sovereignty
 file_type: overview
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE — 9 template files + JOURNAL produced 2026-04-28 (Wave-D launch)
+verdict: COMPLETE — 9 template files + JOURNAL (Wave-D 2026-04-28; Wave-H 2026-05-09 added 3 pre-regs/scripts/JSONs)
 ---
 
 # Q 67 al-Mulk — Overview
@@ -147,9 +147,9 @@ Q 67 sits within the **post-Hijra-kink mufaṣṣal zone**. See `01-empirical-pr
 - [x] 03-tafsir-survey.md
 - [x] 04-hadith-corpus.md
 - [x] 05-classical-claims-audit.md (≥6 audits)
-- [x] 06-novel-findings.md (4 pre-registered tests)
+- [x] 06-novel-findings.md (**7 pre-registered tests** — Wave-D F-01..04 + Wave-H F-05..07)
 - [x] 07-cross-references.md
-- [x] JOURNAL.md
-- [x] 4 pre-regs in `preregs/`
-- [x] 4 scripts in `scripts/`
-- [x] 4 JSON outputs in `csv/`
+- [x] JOURNAL.md (Wave-D + Wave-H entries)
+- [x] 7 pre-regs in `preregs/`
+- [x] 7 scripts in `scripts/`
+- [x] 7 JSON outputs in `csv/`

@@ -1,0 +1,256 @@
+{
+  "finding_id": "Q067-F-06",
+  "pre_reg_sha256": "d39272d336133ffa8bb30690859b5661fa264f31e5e0ac8f0eefe4084fd7e7aa",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, K=500, Dirichlet α=0.5, FR-distance verse-level, Hafs-Kufan)",
+  "target_verses": [
+    [
+      25,
+      1
+    ],
+    [
+      64,
+      1
+    ],
+    [
+      67,
+      1
+    ]
+  ],
+  "target_word_counts": [
+    9,
+    19,
+    9
+  ],
+  "target_pairwise_fr": [
+    {
+      "pair": [
+        [
+          25,
+          1
+        ],
+        [
+          64,
+          1
+        ]
+      ],
+      "fr_distance": 0.2578769151235099
+    },
+    {
+      "pair": [
+        [
+          25,
+          1
+        ],
+        [
+          67,
+          1
+        ]
+      ],
+      "fr_distance": 0.21445963455866723
+    },
+    {
+      "pair": [
+        [
+          64,
+          1
+        ],
+        [
+          67,
+          1
+        ]
+      ],
+      "fr_distance": 0.1703482284485923
+    }
+  ],
+  "target_mean_fr": 0.21422825937692314,
+  "null_distribution": {
+    "min": 0.14297308970577816,
+    "q01": 0.19341835898966153,
+    "q05": 0.20875222203068053,
+    "q10": 0.21566298817003943,
+    "q25": 0.22697060135320765,
+    "q50": 0.23879028581412445,
+    "q75": 0.24995891477377524,
+    "q95": 0.2659395181544679,
+    "max": 0.301800250014056,
+    "mean": 0.23799755667748881,
+    "stdev": 0.017756678787175583
+  },
+  "p_perm_target_le_null": 0.08389161083891611,
+  "pool_sizes_per_target_wc": [
+    873,
+    443,
+    873
+  ],
+  "passes_tighter_q05": false,
+  "pre_commit_violation": false,
+  "verdict": "NULL",
+  "interpretation": "tabāraka alladhī opener triplet mean FR=0.2142, null q05=0.2088, p_perm=0.0839. Tightness pre-registration NOT met at p<0.05. The shared opener formula does NOT generate verse-level FR cohesion at this rules-tuple beyond what length alone explains.",
+  "secondary": {
+    "verses": [
+      [
+        25,
+        1
+      ],
+      [
+        25,
+        10
+      ],
+      [
+        25,
+        61
+      ],
+      [
+        43,
+        85
+      ],
+      [
+        67,
+        1
+      ]
+    ],
+    "word_counts": [
+      9,
+      17,
+      11,
+      13,
+      9
+    ],
+    "pairwise_fr": [
+      {
+        "pair": [
+          [
+            25,
+            1
+          ],
+          [
+            25,
+            10
+          ]
+        ],
+        "fr_distance": 0.2484242279346911
+      },
+      {
+        "pair": [
+          [
+            25,
+            1
+          ],
+          [
+            25,
+            61
+          ]
+        ],
+        "fr_distance": 0.22261201757615212
+      },
+      {
+        "pair": [
+          [
+            25,
+            1
+          ],
+          [
+            43,
+            85
+          ]
+        ],
+        "fr_distance": 0.22325552427715994
+      },
+      {
+        "pair": [
+          [
+            25,
+            1
+          ],
+          [
+            67,
+            1
+          ]
+        ],
+        "fr_distance": 0.21445963455866723
+      },
+      {
+        "pair": [
+          [
+            25,
+            10
+          ],
+          [
+            25,
+            61
+          ]
+        ],
+        "fr_distance": 0.19327394477491414
+      },
+      {
+        "pair": [
+          [
+            25,
+            10
+          ],
+          [
+            43,
+            85
+          ]
+        ],
+        "fr_distance": 0.2642625230573438
+      },
+      {
+        "pair": [
+          [
+            25,
+            10
+          ],
+          [
+            67,
+            1
+          ]
+        ],
+        "fr_distance": 0.22190845198935302
+      },
+      {
+        "pair": [
+          [
+            25,
+            61
+          ],
+          [
+            43,
+            85
+          ]
+        ],
+        "fr_distance": 0.22190845198935302
+      },
+      {
+        "pair": [
+          [
+            25,
+            61
+          ],
+          [
+            67,
+            1
+          ]
+        ],
+        "fr_distance": 0.21324434319393393
+      },
+      {
+        "pair": [
+          [
+            43,
+            85
+          ],
+          [
+            67,
+            1
+          ]
+        ],
+        "fr_distance": 0.2137615842759302
+      }
+    ],
+    "mean_fr": 0.22371107036274984,
+    "note": "Descriptive: includes all 5 of corpus verse-level *tabāraka alladhī* occurrences (Q25:1, Q25:10, Q25:61, Q43:85, Q67:1). Q 64:1 starts *yusabbiḥu* not *tabāraka*, but is included in the primary 3-verse comparison set because the brief locked it; the secondary recomputes over the actual *tabāraka alladhī* occurrences."
+  }
+}

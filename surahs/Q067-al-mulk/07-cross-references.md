@@ -3,9 +3,9 @@ surah: 67
 surah_name_ar: الملك
 surah_name_translit: al-Mulk
 file_type: cross-references
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE
+verdict: COMPLETE — Wave-D + Wave-H integrations
 ---
 
 # Q 67 al-Mulk — Cross-References
@@ -200,3 +200,30 @@ All six are theological-iʿjāz / faḍāʾil-rich surahs, selected to test the 
 - The Q 67 ↔ Q 32 pair-recitation alignment (§5) is post-hoc descriptive — the FR-rank-2 observation was made AFTER the classical-tradition-claim was identified. A pre-registered version would test "all classical pair-recitation traditions correspond to FR-near-pairs" as a corpus-wide hypothesis.
 - The "30-verse identity" (Q 32 = Q 67 = 30 verses) is a coincidence noted in the classical literature but not numerologically tested. Coincidences of this kind across 114 surahs are common (e.g., Q 36 = 83 verses; Q 78 = 40 verses). A null-distribution test would be required for any formal numerological claim.
 - The **al-Raḥmān-density signature** of Q 67 (5/30 verses) is descriptive; pre-registration would require an a-priori divine-name dictionary and a corpus-wide hypergeometric test analogous to Q067-F-04.
+
+## 11. Wave-H additions (2026-05-09)
+
+### 11.1 Q 67 as juzʾ-29 boundary — empirical NULL
+
+Q 67 al-Mulk opens **juzʾ-29** (*tabāraka*) of the standard 30-juzʾ recitation division. The pre-registered hypothesis that this position-boundary should be a high-cost mushaf seam (Q 66 → Q 67 rank ≤ 11/113 by H-NEW-720 delta_raw) is **NULL** (rank 47/113, mid-pack; see Q067-F-05 in `06-novel-findings.md`).
+
+The NULL implies that the juzʾ-29 boundary is a **liturgical-pedagogical** division (set by recitation-rate convention ≈ 1/30 of the Quran), not a **mushaf-architectural** discontinuity. This contributes to the project's understanding of the juzʾ system as orthogonal to the mushaf-FR architecture.
+
+**Comparison with other juzʾ boundaries**: a follow-up corpus-wide test should compute rank distribution of all 29 juzʾ-opening adjacencies vs. the 113-cost distribution. If the median juzʾ-boundary rank is mid-pack (around 56), the present Q 67 NULL is representative; if juzʾ-boundaries cluster at the top, then Q 66 → Q 67 is an exception. Pre-reg recommended.
+
+### 11.2 Q 67 in cross-finding-025 (marker-thickness rule)
+
+Wave-H produced 3 NULLs for Q 67 (F-05 seam, F-06 verse-pair tightness, F-07 density rank). All three involve **thin or single-axis markers**:
+- F-05: single mushaf-position marker (juzʾ-29 boundary) → NULL
+- F-06: single opener-formula marker (*tabāraka alladhī* or *al-mulk*-doxology) → NULL (p=0.084, near-miss)
+- F-07: single name-stem density marker (*mlk* root) → NULL
+
+These data points add 3 instances to **[[cross-finding-025-marker-thickness|cross-finding-025]]**'s NULL column: thin markers (single axis, <10% of surah content) consistently fail to drive FR cohesion. Q 67 is now the corpus's most-tested case of the marker-thickness rule, with 4 supporting NULL data points (F-04, F-05, F-06, F-07) and 1 supporting CONFIRMED point (F-03 token-singularity, which is itself a *non-distributional* axis).
+
+### 11.3 Cross-finding-006 (juzʾ-29 + short-Meccan-tail gateway)
+
+Q 67 is the *opening* surah of juzʾ-29 and (by classical convention) the *gateway* into the corpus's short-Meccan-tail block (Q 67 onwards is overwhelmingly Meccan-mufaṣṣal-awsāṭ/qiṣār). The empirical position-test (Q067-F-05) finds NO architectural seam at Q 66 → Q 67. If cross-finding-006 hypothesizes a structural-boundary at this point, the Wave-H result is a substantive **NULL counter** to that hypothesis — the boundary is real but liturgical, not FR-architectural.
+
+### 11.4 H-NEW-1080 (short-Medinan block) connection
+
+Per the brief, Q 67 is the gateway to the **post-Medinan short-Meccan-tail block** (after the long-Medinan block Q 47-Q 66). The H-NEW-1080 family of findings characterizes the Q 47-Q 66 cluster's internal cohesion. The Wave-H Q067-F-05 NULL implies that the **exit** from this block (Q 66 → Q 67) is NOT a high-cost transition — the long-Medinan cluster does not pay structural cost to release into Q 67. This is consistent with Q 65-66 being **internally** tight (Q 65 → Q 66 rank 109/113 = one of the corpus's cheapest pairs) but **externally** unremarkable in its boundary cost.

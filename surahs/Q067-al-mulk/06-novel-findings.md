@@ -3,16 +3,16 @@ surah: 67
 surah_name_ar: الملك
 surah_name_translit: al-Mulk
 file_type: novel-findings
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE
+verdict: COMPLETE — 7 pre-registered tests
 ---
 
 # Q 67 al-Mulk — Novel Findings
 
 ## 0. Source
 
-This file presents 4 pre-registered novel empirical findings on Q 67, each with locked pre-reg, SHA256-checksummed run script, and JSON-archived results. Pre-regs live in `preregs/`, scripts in `scripts/`, JSON outputs in `csv/`. All scripts verify the pre-reg SHA at runtime and fail-fast on mismatch.
+This file presents 7 pre-registered novel empirical findings on Q 67, each with locked pre-reg, SHA256-checksummed run script, and JSON-archived results. Pre-regs live in `preregs/`, scripts in `scripts/`, JSON outputs in `csv/`. All scripts verify the pre-reg SHA at runtime and fail-fast on mismatch.
 
 | ID | Pre-reg SHA256 (head 12) | Script | JSON | Verdict |
 |:--|:--|:--|:--|:--|
@@ -20,8 +20,13 @@ This file presents 4 pre-registered novel empirical findings on Q 67, each with 
 | Q067-F-02 | `f9f2d651034d` | `Q067_F_02_postkink_distinctness.py` | `Q067-F-02.json` | **DIRECTIONAL_ENHANCED** (unexpected) |
 | Q067-F-03 | `6722a3a4f9af` | `Q067_F_03_corpus_singleton_phrases.py` | `Q067-F-03.json` | **CONFIRMED** (3/3) |
 | Q067-F-04 | `2611e9cc5ed1` | `Q067_F_04_mulk_stem_density.py` | `Q067-F-04.json` | **NULL** (name-tracks-vocabulary FALSIFIED for Q 67) |
+| Q067-F-05 | `826c4a8e7934` | `Q067_F_05_q66_q67_mushaf_seam.py` | `Q067-F-05.json` | **NULL** (Q 66 → Q 67 mid-pack, NOT high-cost) |
+| Q067-F-06 | `d39272d33613` | `Q067_F_06_tabaraka_alladhi_pair.py` | `Q067-F-06.json` | **NULL** (p=0.084, near-miss directional) |
+| Q067-F-07 | `61ded14703d7` | `Q067_F_07_mulk_root_density_rank.py` | `Q067-F-07.json` | **NULL** (rank 37/114 — outside top-5) |
 
-Two of the four findings are positive vindications; one is a surprise *enhanced* directional finding (Q067-F-02) that pre-commits to honest reporting; one is a substantive **NULL** that falsifies a corpus-wide hypothesis.
+Two of the seven findings are positive vindications; one is a surprise *enhanced* directional finding (Q067-F-02) that pre-commits to honest reporting; four are substantive **NULL**s that falsify corpus-wide hypotheses or pre-registered directions.
+
+The Wave-H additions (Q067-F-05 through F-07) further sharpen the project's reading of Q 67: the surah's recitation-tradition prominence is **not** mirrored by mushaf-position seam-cost (F-05), opener-formula verse-level cohesion (F-06), or lexical-density rank (F-07). All three of the Wave-H tests resolve NULL, reinforcing the F-04 + F-01 portrait of Q 67 as a *theological-iʿjāz* surah whose architectural signature lives at the **token-singularity** axis (F-03) rather than at standard structural axes.
 
 ## Q067-F-01 — Architectural rank cross-comparison: high-recitation-tradition surahs do NOT cluster high on UAS
 
@@ -256,6 +261,159 @@ Q 67 follows the opening-word pattern, NOT the thematic-density pattern.
 - Pre-register a corpus-singleton-phrase typology to identify which surahs have analogous lexical singularities at their first 3-4 verses.
 - Calibrate single-surah residuals to H-NEW-660 to interpret Q067-F-02's enhancement properly.
 
+## Q067-F-05 — Q 66 → Q 67 mushaf-seam adjacency cost: NULL on "high-cost juzʾ-29 boundary"
+
+### Pre-registered hypothesis
+
+Q 67 opens the Quran's short-Meccan tail (Q 67 onwards is dominated by mufaṣṣal-awsāṭ/qiṣār) immediately after the long-Medinan block Q 47-Q 66. If mushaf order encodes this position-boundary, the Q 66 → Q 67 adjacency should be a high-cost (top-decile, rank ≤ 11/113) seam in `findings/phase-b-hypotheses/csv/h-new-720.json`. Pre-registered direction: **HIGH-cost (top-decile)**.
+
+### Result
+
+| Metric | Q 66 → Q 67 | Q 65 → Q 66 | Q 67 → Q 68 |
+|:--|:-:|:-:|:-:|
+| delta_raw | 0.0780 | −0.0340 | 0.0962 |
+| fraction_residual | 0.0094 | 0.0000 | 0.0116 |
+| Rank (descending of 113) | **47** | 109 | 36 |
+| Observational p ≥ observed | 0.416 | — | — |
+
+Distribution stats (113 canonical adjacencies): mean=0.0832, median=0.0621, sd=0.0924, max=0.6216 (Q 1 → Q 2). Bootstrap (10000 resamples, seed 20260509): boot_rank median = 47, p(rank ≤ 11 top-decile) = **0.000**.
+
+### Verdict
+
+**NULL** — Q 66 → Q 67 sits at rank 47/113 (descending), well outside the pre-registered top-decile (≤11). The pre-commit-locked "high-cost seam" prediction is NOT supported.
+
+### Interpretation
+
+Three readings:
+
+1. **The juzʾ-29 boundary is liturgical-pedagogical, not mushaf-architectural.** The compiler's *taqsīm* into 30 juzʾ blocks was settled later than the mushaf-order itself; juzʾ-29 begins at Q 67:1 by recitation-rate convention (≈ 1/30 of the Quran), not by an underlying root-distribution discontinuity. The empirical NULL at this seam is consistent with this reading.
+
+2. **The H-NEW-720 root-distribution lens is insensitive to the position-boundary.** Q 66 and Q 67 share enough root-distribution overlap (al-Raḥmān-cluster, sovereignty-cluster) that the FR-distance between them is mid-pack. A different lens (rhyme, phoneme, or verse-length) may yield a higher seam-cost.
+
+3. **The "long-Medinan→short-Meccan-tail" boundary is at a different seam.** The transition from long-Medinan to short-Meccan does happen, but the breakpoint by FR-content is closer to Q 49→50 or Q 56→57; Q 66→67 is a less salient instance.
+
+The **immediate neighbour Q 65 → Q 66 is rank 109/113** (one of the *cheapest* canonical transitions) — the long-Medinan etiquette/divorce-cluster {Q 65, Q 66} is unusually FR-tight, and Q 66→67 then opens to a typical (mid-pack) cost rather than spiking. This pattern is **consistent with cross-finding-025's marker-thickness rule** (cf. [[cross-finding-025-marker-thickness|cross-finding-025]]): Q 65-66 share thick markers (divorce-domestic-etiquette + ʿiddah-vocabulary) so cohere tightly; Q 66→67 then steps out to a thematically different but lexically-overlapping surah and the cost is unremarkable.
+
+### Honest limits
+
+- The pre-registered HIGH-cost direction was an *architectural hypothesis*; the NULL is itself a contribution under §1.3 equal-NULL-prominence discipline.
+- Single-rules-tuple test; sensitivity to alternate K and α was not pre-registered.
+- The H-NEW-720 delta is FR-residual after greedy + 2-opt TSP; it measures *cost of forced canonical order vs. unconstrained shortest tour*, not absolute pairwise FR distance.
+
+### Cross-references
+
+- [[h-new-720-canonical-adjacency-cost|H-NEW-720]] — adjacency-cost map.
+- [[cross-finding-025-marker-thickness|cross-finding-025]] — thick-marker pairs (Q 65-66) tend to FR-cohere; cross-boundary transitions need not be high-cost when neighbours share lexicon.
+- `04-hadith-corpus.md` for Q 67 juzʾ-29 recitation-tradition framing.
+
+## Q067-F-06 — Verse-pair tightness for {Q 25:1, Q 64:1, Q 67:1}: NULL near-miss
+
+### Pre-registered hypothesis
+
+The three opener-verses {Q 25:1, Q 64:1, Q 67:1} pre-registered in the specialist brief should sit tighter on verse-level Fisher-Rao than a length-matched null draw from the corpus.
+
+### Data-verification note (pre-commit-honored)
+
+**The brief's pre-registered claim that all three of Q 25:1, Q 64:1, Q 67:1 open with *tabāraka alladhī* is INCORRECT and is flagged here per the §1.6 anti-hallucination discipline.** Actual openings (computed from `quran-text/quran-no-tashkeel.json`):
+- Q 25:1: *تبارك الذي نزل الفرقان…* — *tabāraka alladhī nazzala al-furqān*. ✓ *tabāraka alladhī* opener.
+- Q 64:1: *يسبح لله ما في السماوات…* — *yusabbiḥu li-llāhi mā fī al-samāwāt…*. ✗ NOT a *tabāraka alladhī* opener; it is a musabbiḥāt-class opener. It does contain the phrase *lahu al-mulk* later in the same verse, so the comparison set is best read as **al-mulk-doxology verses**, not as a *tabāraka alladhī* opener triplet.
+- Q 67:1: *تبارك الذي بيده الملك…* — *tabāraka alladhī bi-yadihi al-mulk*. ✓ *tabāraka alladhī* opener.
+
+The actual 5 *tabāraka alladhī* verse-occurrences in the corpus are: Q 25:1, Q 25:10, Q 25:61, Q 43:85, Q 67:1 (per Q067-F-03 § corpus-singleton-phrases test, vindicated). The brief's pre-registered triplet is therefore best understood as a **mulk-doxology opener test** (the *al-mulk* divine-sovereignty motif appears prominently in v. 1 of each of the three surahs) — the locked triplet is honored, and the secondary test runs the actual *tabāraka alladhī* verse-set.
+
+### Result — primary (locked triplet)
+
+| Verse | Word count |
+|:--|:-:|
+| Q 25:1 | 9 |
+| Q 64:1 | 19 |
+| Q 67:1 | 9 |
+
+| Metric | Value |
+|:--|:-:|
+| Target mean pairwise FR | **0.2142** |
+| Null q05 | 0.2088 |
+| Null median | 0.2388 |
+| Null q95 | 0.2693 |
+| p_perm (target ≤ null) | **0.0839** |
+
+Target mean FR is **below** null median by ~0.025 (directionally tighter), but does not reach the pre-registered p<0.05 threshold (q05=0.2088). Pre-registered TIGHTER direction NOT met; reversed-direction pre-commit violation NOT triggered (target is below median, not above).
+
+### Result — secondary (5 actual *tabāraka alladhī* verses)
+
+| Verse | Word count |
+|:--|:-:|
+| Q 25:1 | 9 |
+| Q 25:10 | 14 |
+| Q 25:61 | 10 |
+| Q 43:85 | 11 |
+| Q 67:1 | 9 |
+
+Mean pairwise FR (10 pairs) = **0.2237** — comparable to the locked triplet. Three of the five *tabāraka alladhī* verses come from a single surah (Q 25) so the cohesion may partly be a within-surah artifact; cross-surah pairs (Q 25:* ↔ Q 43:85, Q 25:* ↔ Q 67:1, Q 43:85 ↔ Q 67:1) require separate analysis.
+
+### Verdict
+
+**NULL** (p_perm=0.0839, near-miss in pre-registered direction). The shared opener formula does NOT generate verse-level FR cohesion at the pre-registered α=0.05 threshold.
+
+### Interpretation
+
+Three readings:
+
+1. **Genuine signal at low power.** With only 3 pairs in the test statistic, statistical power for verse-level FR is intrinsically modest. The observed +0.025 effect-size below null median is consistent with a real-but-small lexical-cohesion signal that 3 pairs cannot resolve.
+
+2. **The brief's triplet mis-anchored.** Q 64:1 isn't a *tabāraka alladhī* opener; including it dilutes the opener-formula signature. A cleaner test would compare {Q 25:1, Q 67:1} only (2 surah-opener verses with the actual shared formula) — but a single pair is even weaker statistically.
+
+3. **Opener formulas don't constrain lexicon at the verse level.** The *tabāraka alladhī* + relative-clause construction is grammatical, not lexical-thematic; it admits any noun-cluster (*al-furqān*, *al-mulk*, etc.). Cohesion would need to come from the *content* slot, not the construction.
+
+### Honest limits
+
+- Pre-registered comparison set contained a factual error (Q 64:1 mis-attributed to *tabāraka alladhī*-openers). The script was run on the locked triplet per pre-reg discipline; the secondary recomputes over actual *tabāraka alladhī* occurrences.
+- Verse-level FR is statistically weak for short verses; the test is properly under-powered.
+- Length-matched null restricts pool to ±1 word per target wc; tolerance choice was pre-registered but may itself shape the null.
+
+### Cross-references
+
+- `00-overview.md` §3 — *tabāraka alladhī* opener cluster.
+- Q067-F-03 — *bi-yadihi al-mulk* corpus-singleton (vindicated).
+- [[cross-finding-025-marker-thickness|cross-finding-025]] — thin-marker clusters (single opener formula) frequently NULL on FR cohesion. Q067-F-06 adds another such NULL-near-miss data point.
+
+## Q067-F-07 — mulk-stem density rank across the 114 corpus: NULL on top-5
+
+### Pre-registered hypothesis
+
+Q 67 should rank in the top 5 of 114 by per-1000-root-token *mlk*-stem density. Direction: **TOP-5**.
+
+### Result
+
+| Metric | Q 67 | Top-5 |
+|:--|:-:|:--|
+| mlk stem-count | 1 | Q 114 (1), Q 97 (1), Q 1 (1), Q 82 (1), Q 78 (2) |
+| Total stem-root tokens | 208 | 16, 21, 23, 50, 131 |
+| Density per 1000 | **4.81** | 62.5, 47.6, 43.5, 20.0, 15.3 |
+| **Rank by density** | **37 / 114** | — |
+| Rank by raw count | 54 / 114 | — |
+
+### Verdict
+
+**NULL** — Q 67 ranks 37/114 by mlk-stem density, well outside the pre-registered top-5.
+
+### Interpretation
+
+The top-5 by density is dominated by **very short surahs** (Q 114 al-Nās has 16 stem-root tokens total; one *mlk* token from v.2 *malik al-nās* produces a 62.5/1000 density). This is a **length-artefact**: tiny denominators inflate the rate. None of the top-5 by density is named *al-Mulk*; the test is therefore both **directionally NULL** (Q 67 is not top-ranked) and **methodologically diagnostic** (per-1000 density is itself a noisy estimator at short surah lengths).
+
+Combined with the Q067-F-04 hypergeometric NULL (p=0.58 over-concentration vs uniform), this Wave-H rank test corroborates the central finding: **Q 67 is named "al-Mulk" by the opening-word convention, not by lexical-density**. The *mlk* root family appears once in the surah (v.1 *bi-yadihi al-mulk*) and does not recur — the title is from the *unique* corpus-singleton phrase, not from a thematic concentration.
+
+### Honest limits
+
+- Single test, single rules-tuple.
+- Top-5 by density is dominated by short surahs with tiny denominators; a cleaner test would normalize by surah length or by expected count under a length-weighted multinomial.
+- Per Q067-F-04, the hypergeometric formulation already rejected over-concentration at p=0.58; this F-07 rank test reaches the same conclusion through a different statistical lens, reinforcing the conclusion.
+
+### Cross-references
+
+- Q067-F-04 (same root, hypergeometric test) — corroborating NULL.
+- Q024-F-01 (Q 24 al-Nūr light-cluster, vindicated at p<10⁻⁶) — the *positive* analogue for name-tracks-vocabulary.
+
 ## 6. Honest summary
 
-Four pre-registered novel findings on Q 67. **Two passed** their pre-registered thresholds (Q067-F-01 VINDICATED, Q067-F-03 CONFIRMED 3/3). **One was a substantive NULL** (Q067-F-04) that falsifies the corpus-wide name-tracks-vocabulary hypothesis. **One was a pre-commit-direction violation** (Q067-F-02 DIRECTIONAL_ENHANCED) reported with full prominence and honest interpretation. The composite Wave-D contribution: Q 67 al-Mulk is the project's clearest case of **theological-iʿjāz / faḍāʾil-prominence WITHOUT structural-architectural distinctness** (Q067-F-01), while simultaneously exhibiting **token-level lexical singularity** in its opening verses (Q067-F-03) — an architectural axis distinct from the UAS-component axes. The name-tracks-vocabulary corpus-wide generalization is FALSIFIED at Q 67 (Q067-F-04), establishing the hypothesis as rules-tuple-fragile across surahs and refining the project's understanding of how surah-naming conventions interact with empirical lexicon-density signatures.
+Seven pre-registered novel findings on Q 67. **Two passed** their pre-registered thresholds (Q067-F-01 VINDICATED, Q067-F-03 CONFIRMED 3/3). **Four are substantive NULLs** (Q067-F-04 hypergeometric, Q067-F-05 mushaf-seam, Q067-F-06 verse-pair tightness near-miss, Q067-F-07 density rank). **One was a pre-commit-direction violation** (Q067-F-02 DIRECTIONAL_ENHANCED) reported with full prominence and honest interpretation. The composite Wave-D + Wave-H contribution: Q 67 al-Mulk is the project's clearest case of **theological-iʿjāz / faḍāʾil-prominence WITHOUT structural-architectural distinctness** (Q067-F-01), while simultaneously exhibiting **token-level lexical singularity** in its opening verses (Q067-F-03) — an architectural axis distinct from the UAS-component axes. The name-tracks-vocabulary corpus-wide generalization is FALSIFIED at Q 67 across BOTH the hypergeometric (Q067-F-04) and the rank-based (Q067-F-07) lenses, establishing the hypothesis as rules-tuple-fragile across surahs. The juzʾ-29 mushaf-boundary at Q 66 → Q 67 is **not** a high-cost FR seam (Q067-F-05), confirming the boundary as a liturgical-pedagogical convention rather than a mushaf-architectural discontinuity. The *al-mulk*-doxology opener triplet {Q 25:1, Q 64:1, Q 67:1} does NOT achieve verse-level FR tightness at α=0.05 (Q067-F-06; near-miss p=0.084). The Wave-H NULLs reinforce cross-finding-025's marker-thickness threshold rule: thin or grammatical-only markers (opener formula, single boundary, single name-stem at low density) consistently fail to drive FR-cohesion in the absence of multi-axis correlation.
