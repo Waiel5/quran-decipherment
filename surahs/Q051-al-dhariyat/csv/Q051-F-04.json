@@ -1,0 +1,49 @@
+{
+  "finding_id": "Q051-F-04",
+  "pre_reg_sha256_expected": "cb312aa4351fa2c3d0cff342fc240be52f2c577b9e81347ccc6474959a21a32f",
+  "pre_reg_sha256_used": "cb312aa4351fa2c3d0cff342fc240be52f2c577b9e81347ccc6474959a21a32f",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "observed": {
+    "sibling_set": [
+      37,
+      51,
+      77,
+      100
+    ],
+    "sibling_lengths": [
+      182,
+      60,
+      50,
+      11
+    ],
+    "sibling_mean_pairwise_fr": 0.8835976666666667
+  },
+  "length_matched_null": {
+    "mean": 0.9774244882166666,
+    "p_lower": 0.037,
+    "target_bands": [
+      "long",
+      "mid",
+      "mid",
+      "short"
+    ]
+  },
+  "uncontrolled_null": {
+    "mean": 0.8819709290500001,
+    "p_lower": 0.3912
+  },
+  "h1_pass_strict_bonferroni": false,
+  "h2_pass_strict_bonferroni": false,
+  "h1_pass_single_test_alpha_05": true,
+  "h2_pass_single_test_alpha_05": false,
+  "h1_pass": false,
+  "h2_pass": false,
+  "verdict_at_bonferroni_2_alpha_025": "NULL",
+  "verdict_at_single_test_alpha_05": "PASS-DIRECTED",
+  "verdict_ceiling": "PASS-DIRECTED (single-test α=0.05 cap per post-hoc origin disclosed)",
+  "verdict": "PASS-DIRECTED",
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "notes": "Length-matched null is the rigorous test (controls for verse-count confound). Under Bonferroni-2 (α_bon=0.025), length-matched p=0.037 fails strict gate. Under post-hoc-origin single-test α=0.05 cap (per HANDOFF/04-DISCIPLINE.md), the length-matched test PASSES at α=0.05. Verdict ceiling = PASS-DIRECTED. Awaiting independent replication on different feature space (e.g., char-4-grams)."
+}

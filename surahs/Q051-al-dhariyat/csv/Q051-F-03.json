@@ -1,0 +1,64 @@
+{
+  "finding_id": "Q051-F-03",
+  "pre_reg_sha256_expected": "4ce9ed02f75b46e7d7ddf71f75c3b2be4c2b0916726341e17d99838f8d9ddb2a",
+  "pre_reg_sha256_used": "4ce9ed02f75b46e7d7ddf71f75c3b2be4c2b0916726341e17d99838f8d9ddb2a",
+  "seed": 20260509,
+  "observed": {
+    "q51_pericope_lengths": [
+      3,
+      2,
+      3,
+      1
+    ],
+    "q7_pericope_lengths": [
+      6,
+      8,
+      7,
+      5,
+      9
+    ],
+    "cv_q51": 0.42552315900281695,
+    "cv_q7": 0.22587697572631282,
+    "spearman_rho_position_vs_chrono": -0.7999999999999998,
+    "n_wafi_corpus": 9,
+    "wafi_examples": [
+      [
+        13,
+        4,
+        "وفي الأرض قطع متجاورات وجنات من أعناب وزرع ونخيل صنوان وغير صنوان يسقى بماء واحد ونفضل بعضها على بعض في الأكل ۚ إن في ذلك لآيات لقوم يعقلون"
+      ],
+      [
+        45,
+        4,
+        "وفي خلقكم وما يبث من دابة آيات لقوم يوقنون"
+      ],
+      [
+        51,
+        19,
+        "وفي أموالهم حق للسائل والمحروم"
+      ],
+      [
+        51,
+        20,
+        "وفي الأرض آيات للموقنين"
+      ],
+      [
+        51,
+        21,
+        "وفي أنفسكم ۚ أفلا تبصرون"
+      ],
+      [
+        51,
+        22,
+        "وفي السماء رزقكم وما توعدون"
+      ]
+    ]
+  },
+  "h1_pass": true,
+  "h2_pass": true,
+  "h3_pass": true,
+  "verdict": "CONFIRMED",
+  "bonferroni_k": 3,
+  "alpha_bon": 0.0167,
+  "notes": "Descriptive-comparative test. Q 51 prophet-cycle is structurally distinct from Q 7: more unbalanced pericope-lengths AND chronologically retrograde."
+}

@@ -1,0 +1,23 @@
+{
+  "finding_id": "Q051-F-01",
+  "pre_reg_sha256_expected": "063a22f51b2b8724b685e555d5e1f6ea6a5d70b851fe2b9f2261539472e9ff75",
+  "pre_reg_sha256_used": "063a22f51b2b8724b685e555d5e1f6ea6a5d70b851fe2b9f2261539472e9ff75",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "observed": {
+    "mean_pair_token_cosine_q51_1_4": 0.0,
+    "mean_pair_token_cosine_q51_5_8": 0.0,
+    "morphological_template_match": 4
+  },
+  "null_distribution": {
+    "mean": 0.018438222116041837,
+    "p_one_tailed": 1.0
+  },
+  "verdict": "PRE-COMMIT VIOLATION (lexical-token level)",
+  "h1_pass": false,
+  "h2_pass": true,
+  "h3_pass": false,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.0167,
+  "notes": "Token-level cohesion at zero is the EXPECTED OUTCOME under iʿjāz-balagha morphological-template reading (cf. Q037-F-03 PRE-COMMIT VIOLATION). The 4 verses are held together by morphological pattern, not lexical overlap."
+}

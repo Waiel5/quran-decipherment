@@ -1,0 +1,53 @@
+{
+  "finding_id": "Q051-F-02",
+  "pre_reg_sha256_expected": "b32f173e282fab9d83ff5b9c37484c2f405c564e65c4d7f2aeffa521eadfd132",
+  "pre_reg_sha256_used": "b32f173e282fab9d83ff5b9c37484c2f405c564e65c4d7f2aeffa521eadfd132",
+  "seed": 20260509,
+  "observed": {
+    "n_strict_matches": 1,
+    "strict_matches": [
+      {
+        "surah": 51,
+        "verse": 56,
+        "text": "وما خلقت الجن والإنس إلا ليعبدون"
+      }
+    ],
+    "n_broader_matches": 7,
+    "broader_matches_summary": [
+      [
+        10,
+        5
+      ],
+      [
+        15,
+        85
+      ],
+      [
+        30,
+        8
+      ],
+      [
+        31,
+        28
+      ],
+      [
+        44,
+        39
+      ],
+      [
+        46,
+        3
+      ],
+      [
+        51,
+        56
+      ]
+    ]
+  },
+  "h1_pass": true,
+  "h2_pass": true,
+  "verdict": "CONFIRMED — Q 51:56 corpus-EXACT 1-of-1",
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "notes": "Q 51:56 corpus-EXACT under (mā/wa-mā/fa-mā + khlq + illā + ʿbd) strict construct. The 6 other broader-matches all have Y=bi-l-ḥaqq or Y=ka-nafs wāḥida."
+}
