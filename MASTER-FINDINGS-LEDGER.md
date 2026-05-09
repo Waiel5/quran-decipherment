@@ -2829,6 +2829,8 @@ NOTE: this specialist used the same H-NEW-1260..1263 range as Q 49 specialist (p
 
 **H-NEW-1331 PASS-DIRECTED** (this batch): sajda × muqaṭṭāʿat hypergeometric. Sajda ∩ Muqaṭṭāʿat = {Q 7, 13, 19, 27, 32, 38, 41} = 7 of 14 (50% vs corpus 25.4%, ratio **1.97×**). Hypergeometric p = 0.0318; Permutation p_perm = 0.0321. **Refines H-NEW-1330**: the sajda set has at least one structural correlate (muqaṭṭāʿat-opening) but lacks root-distribution cohesion — exactly the cross-finding-025 prediction. **Adds sajda-trigger as a 14th-axis correlate of muqaṭṭāʿat function** (extending cross-finding-008's reach).
 
+**H-NEW-1360 NULL with PC pass** (this batch, commit pending): *yā-ayyuhā al-nabī* prophet-vocative 6-surah cluster {Q 8, 9, 33, 60, 65, 66} FR-cohesion test. Cluster locked via direct regex `يا\s*أيها\s*النبي` over no-tashkeel corpus (13 attestations, all Medinan; Q 33 al-Aḥzāb holds 5/13 = 38.5%). Cell A uniform p=0.5734; Cell B length-matched p=0.5835; MW-5 PC (H-NEW-1190 sub-sample {Q 69, 97, 101}) PASSED at p=0.0445. **Substantive NULL** — observed intra-cluster mean FR = 0.9532 sits at corpus baseline (null mean 0.9240). Internal sub-structure DOES reveal a tight short-Medinan-domestic sub-region {Q 60, 65, 66} at FR≈0.85 (overlapping H-NEW-1261 Q 49 target-set) versus a long-Medinan-polity sub-region {Q 8, 9, 33} at FR≈0.915 — cross-region pairs at FR≈0.972 cancel the headline mean. **Refines H-NEW-1260 sister-construction finding**: *yā-ayyuhā al-nabī* is a DISCOURSE marker (direct second-person prophetic command), NOT a content-cohesion marker — exact opposite of *yā-ayyuhā alladhīna āmanū* which concentrates in Q 49 and clusters with Q 49 target-set. **Third independent thin-marker NULL data-point** for cross-finding-025 (after H-NEW-1310 Christ-narrative, H-NEW-1330 sajda). Classical reading: al-Suyūṭī *al-Itqān* nawʿ 51 *fī khiṭābātihi* — descriptive Medinan direct-address marker confirmed at form level, but does NOT predict root-distribution clustering.
+
 #### 10.44.8 cross-finding-025 PRELIMINARY-SYNTHESIS (commit `f10deed23`) — marker-thickness vs FR-cohesion threshold
 
 Synthesis across **5 PASS + 3 NULL + 1 PASS-DIRECTED** clusters establishing a working empirical regularity:
@@ -2837,7 +2839,7 @@ Synthesis across **5 PASS + 3 NULL + 1 PASS-DIRECTED** clusters establishing a w
 
 **PASSING**: muqaṭṭāʿat (p≤10⁻¹², 13+ axes), eschatology H-1200 (60-90% content), wa-mā-adrāka-mā H-1190 (70-100%), short-Medinan H-1080 (length+chronology), refrain H-1320 (rhetorically-dominant 20-40%).
 
-**FAILING**: IMPV-qrA H-1301 (single imperative <5%), Christ-narrative H-1310 (sub-block 12-30%), sajda H-1330 (single trigger verse <5%).
+**FAILING**: IMPV-qrA H-1301 (single imperative <5%), Christ-narrative H-1310 (sub-block 12-30%), sajda H-1330 (single trigger verse <5%), prophet-vocative H-1360 (3-token discourse anchor scattered across 6 surahs).
 
 **Working threshold**: markers ≥30% of surah content tend toward cohesion; markers <10% need multi-axis correlation to overcome thinness. The muqaṭṭāʿat is the **maximum-multi-axis-correlation marker** in the corpus — H-NEW-1331 today extends its reach to a 14th axis (sajda-trigger).
 
