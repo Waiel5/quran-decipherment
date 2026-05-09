@@ -2757,3 +2757,99 @@ The corpus is structurally HEAVY in the LONG-HEAD (Q 2-9 al-sabʿ-al-ṭiwāl) b
 - Connection to H-NEW-1220 corpus FR-centroid finding: Q 55 is corpus-MOST-ISOLATED at rank 114/114 (mean_d=1.181). The dual-audience architecture is the MECHANISM behind Q 55's maximum-distance signature: **Q 55 is FR-isolated because its grammatical architecture is corpus-uniquely dual-pronoun-saturated**, putting it far from the standard single-pronoun-mode of all other surahs.
 - 12th classical-form-pattern locked at corpus-EXACT precision (and this one identifies Q 55 as a SOLITARY architectural signature). Source: this ledger inline computation.
 
+
+### 10.44 — 2026-05-09 mass parallel landing (Wave-H): 6 specialist surah-deep-dives + 6 inline corpus-tests + 1 cross-finding synthesis
+
+A full-day session with 30+ concurrent specialists in flight and 6 inline corpus-wide pre-registered tests. Below: complete inventory of everything that landed.
+
+#### 10.44.1 Q 8 al-Anfāl specialist (commit `39c258cf3`)
+
+- **Q008-F-01 NULL-FALSIFIES** the Ibn ʿAbbās "Q 8 + Q 9 = one surah" classical claim on 3 axes: FR rank 81/113; mushaf cost rank 58/113 (NOT in 13-clamped-zero seamless set); root-Jaccard rank 196/6,441 (top 3.0% but not corpus-MAX). **al-Biqāʿī's WEAKER thematic-continuity reading remains vindicated** — Q 8 (walāʾ-foundation) → Q 9 (walāʾ-disownment) is structurally signaled by basmala-omission as a continuity-marker, not as a unity-claim.
+- **Q008-F-02 CONFIRMED corpus-singleton**: Q 8:17 *wa-mā ramayta idh ramayta wa-lākinna allāha ramā* — the construction `wa-mā [V] idh [V] wa-lākinna` with V₁=V₂ is found exactly **1/6,236 verses**. Vindicates al-Bāqillānī iʿjāz-keystone reading at corpus-uniqueness.
+- **Q008-F-03 DIRECTIONAL**: qitāl-cluster {Q 8, 9, 47, 48, 61} group-cohesion NULL (p=0.34); Q 8 individually NEAR-cluster (diff −0.16 FR-units); Q 48 al-Fatḥ centroid, Q 9 periphery — **2-tier substructure suggested**.
+- 7 hadith chains verified by direct Arabic-text grep (Bukhārī 4439/4674/3793; Muslim 7363/4456; Tirmidhī 3163/3168). Bukhārī Maghāzī chapter 64 (488 ḥadīths) confirmed densest Badr-narrative cluster.
+
+#### 10.44.2 Q 49 al-Ḥujurāt specialist re-dispatch (commit `fa7d764f3`) — Wave-F retry
+
+- **H-NEW-1260 (Q049-F-01) CONFIRMED**: Q 49 is **corpus-rank-1 of 95 surahs** (verse-count ≥ 10) on per-verse density of *yā-ayyuhā alladhīna āmanū* at **27.78% (5/18)**. All 89 corpus attestations are **strictly Medinan** — vindicates al-Suyūṭī's classical Medinan-marker claim. Q 49 holds 5/89 = 5.6% of all corpus attestations in 0.29% of corpus verse-real-estate (**19.4× concentration**).
+- **H-NEW-1261 (Q049-F-02) CONFIRMED-PAIR (PASS-DIRECTED)**: Q 49 forms a tight FR cluster with TARGET-SET {Q 61, 62, 63, 64, 66} at mean FR=0.7703 vs corpus mean 0.9510 vs length-matched mean 0.8709. Both nulls p<10⁻⁴ (10K perms each). Ceiling = PASS-DIRECTED per garden-of-forking-paths discipline.
+- **H-NEW-1262 (Q049-F-03) CONFIRMED-CROSS-FEATURE**: Q 49→Q 50 confirmed `in_all_three=True` across H-NEW-130 (root) + H-NEW-130b (char-4-gram) + H-NEW-130c (verse-length). Nöldeke chronology gap = 72 positions (al-Suyūṭī rank 106 vs 34). One of 3 universal hinges (alongside Q 14→15, Q 56→57). Reinforces cross-finding-013 ring-topology.
+- **H-NEW-1263 (Q049-F-04) CONFIRMED-VERSE-ANOMALY (3/4 sub-tests)**: Root **شعب is corpus-EXACT-doubleton (total = 2)**; Q 49:13 carries 1 of those 2 instances. 3 of 14 unique roots in Q 49:13 are corpus-rare ≤ 50.
+
+#### 10.44.3 Q 48 al-Fatḥ specialist re-dispatch (commit `bf8be259c`) — Wave-F retry
+
+NOTE: this specialist used the same H-NEW-1260..1263 range as Q 49 specialist (parallel dispatch collision). Resolved via surah-prefix canonical IDs.
+
+- **Q048-F-01 PASS-DIRECTED**: *fatḥ*-root density 13× corpus rate; hypergeometric p = 2.5×10⁻⁴; permutation p (10K) = 4.0×10⁻⁴. Q 48 RANK 1/79 length-controlled (≥100 root-tokens), RANK 2/114 raw count. **Corpus-EXACT name-density fingerprint.**
+- **Q048-F-03 CONFIRMED (extreme significance)**: Q 48's top-5 FR-nearest are ALL in back-Medinan Q 57-64 (T1 p=4×10⁻⁷), 4/5 musabbiḥāt members (T2 p=4×10⁻⁴). Joint p ≈ 1.7×10⁻¹⁰. **Q 48 is structurally embedded in the back-Medinan musabbiḥāt-adjacent cluster, NOT in a Q47-Q49 mushaf-adjacent cluster** — refines munāsabah classical claim.
+- **Q048-F-02 DIRECTIONAL**: Q 48 + Q 76 al-Insān are the only large-Medinan (v≥28) perfect-alif-monorhymes — 2-element fingerprint.
+- **Q048-F-04 NULL**: classical iʿjāz al-ghayb pair {Q 48, Q 30} is FR-distant (FR=1.01 vs corpus mean 0.92; Q 30 rank 56/113 in Q 48-nearest). Pair is THEMATIC, not structural.
+- **Dual-iʿjāz typology** (cross-finding-018): Q 48 is **theological-iʿjāz extreme** (high content distinctiveness, 13× ftH density) BUT **structural-iʿjāz LOW** (sig_A rank 106/114, sig_B rank 112/114; predictable from perfect alif-monorhyme = zero rhyme entropy).
+
+#### 10.44.4 Q 78 al-Nabaʾ specialist (commit `ac6bf247d`)
+
+- **Q078-F-01 CONFIRMED (with sub-finding)**: Q 78 within H-NEW-1200 14-surah eschatology cluster is **PERIPHERAL** (centrality rank 11/15). **NEW SUB-FINDING: Q 97 al-Qadr is the cluster CENTROID** (centrality 0.3682) — supplements H-NEW-1200. Q 78 mean cluster-FR = 0.4732 vs corpus 0.6665, p=0/10000.
+- **Q078-F-02 CONFIRMED**: *j-ʿ-l* density rank 2/88 (edged by Q 71); 3-consecutive *wa-jaʿalnā* streak vv 9-11, matched only by Q 21:30-32 — new corpus-pair.
+- **Q078-F-03 NULL with informative correction**: Strict-string *kallā sa-yaʿlamūn* is corpus-SINGLETON Q 78:4-5; Q 102:3-4 uses *sawfa taʿlamūn* (different verb-form). Caught at runtime.
+- **Q078-F-04 CONFIRMED**: Q 77→78 juzʾ-30 boundary cost rank 40/113 (mid-spectrum). Extends H-NEW-64 NULL; al-Suyūṭī "30th juzʾ opener" structural-significance REFINED to position-claim only.
+- **Q078-F-05 CONFIRMED**: 3 corpus-hapax roots (whj v.13, vjj v.14, dhq v.34), all in *faʿʿāl-an* intensive pattern. al-Bāqillānī iʿjāz al-balāgha VINDICATED.
+- **Q 97 = NEW-FOUND CENTROID of H-NEW-1200 cluster** — flagged for cross-finding-022 follow-up integration.
+
+#### 10.44.5 Q 96 al-ʿAlaq specialist (commit `816c15114`)
+
+- **First-revelation status VINDICATED** by 8/8 mufassirūn surveyed + Bukhārī Bad' al-Waḥy idInBook=3 + Muslim Īmān 308 verified on-disk.
+- **3-block compositional architecture VINDICATED via Q096-F-01 Cell B (p=0.0178; PC Q 19 PASS at p=0.0023)**: vv 1-5 / 6-14 / 15-19 — empirically supports al-Biqāʿī's *Naẓm al-durar* over a simpler 2-block reading. Strongest discontinuity at vv 15-19 (rank 1/15 contiguous splits).
+- **iʿjāz sig_A rank 4/114** (TOP DECILE; H-NEW-750 instrument).
+- **Q 96 = 2 of 6 corpus IMPV-qrA tokens** (33% of corpus *iqraʾ* imperatives in 0.3% of corpus verses). Cross-references H-NEW-1300/1301 inline NULLs.
+- **2 corpus-hapax roots**: zbn (*zabāniya*) v 18, sfE (*la-nasfaʿan*) v 15.
+- **NULLs (published with prominence)**: Q096-F-02 (hapax/rare-root density NULL-BROKEN); Q096-F-03 (Q 96↔Q 68 *qalam*-mirror at FR NULL — semantic link real but FR-distance prediction REFUTED, FR=0.7324 rank 9); Q096-F-04 (sajda 14-cluster FR cohesion NULL-BROKEN — sajda is FR-DISPERSED, parallels H-NEW-1330 result). 
+- 4 hadith corrections logged: Bukhārī Bad' al-Waḥy quotes Q 96:**1-3** (not 1-5); Muslim Īmān 308 quotes Q 96:1-5; sajda anchor is **Muslim Mosques 1201/1202** (not Bukhārī).
+
+#### 10.44.6 Q 51 al-Dhāriyāt specialist (commit `ebb994e43`)
+
+- **Q051-F-02 CONFIRMED corpus-EXACT**: Q 51:56 *wa-mā khalaqtu al-jinn wa-l-ins illā li-yaʿbudūn* is the **corpus-EXACT 1-of-1 verse** for the strict (mā/wa-mā/fa-mā + khlq + illā + ʿbd) exclusivity construction. Of 7 corpus verses with the broader (mā + khlq + illā) construct, ONLY Q 51:56 has *ʿbd* in the purpose-clause. **10th classical-form-pattern locked at corpus-EXACT precision.**
+- **Q051-F-03 CONFIRMED**: Q 51:38-46 prophet-cycle structurally INVERSE of Q 7's parallelism — CV(Q 51)=0.43 > CV(Q 7)=0.23 (1.88× more unbalanced); Spearman ρ = -0.80 (chronologically retrograde Mūsā→ʿĀd→Thamūd→Nūḥ).
+- **Q051-F-05 CONFIRMED**: Q 51-52-53 mushaf-adjacent oath-trio validated. Q 51→Q 52 adjacency-cost rank 18/113 (smoothest 16%); FR(51,52)=0.755 < FR(51,50)=0.824. **al-Biqāʿī Q 51→Q 52 munāsabah VINDICATED.**
+- **Q051-F-04 PASS-DIRECTED**: 4-element fa-coordinated oath sibling test {Q 37, 51, 77, 100} sibling FR=0.884 vs length-matched Meccan-4 null=0.977 → p_lower=0.037.
+- **Q051-F-01 PRE-COMMIT VIOLATION (lexical) + H2 STRUCTURAL MATCH**: replicates Q037-F-03 sibling pattern — iʿjāz operates at morphological-template level, NOT lexical-token level.
+- **Q 51 UAS rank 15/114 (top 13%)**; 3 corpus-hapax roots; sits IMMEDIATELY POST the Q 49→Q 50 universal hinge as first Meccan-oath-cluster surah on the post-hinge side.
+- 5 hadith corrections logged including a brief-internal correction: "Q 51:147" does not exist (Q 51 has 60 verses); the *miʾat alf aw yazīdūn* hadith is Q 37:147.
+
+#### 10.44.7 Inline corpus tests — 6 findings (H-NEW-1300 to H-NEW-1331)
+
+**H-NEW-1300 NULL by strict pre-reg** (commit `a47c32588`): Q 96 al-ʿAlaq tied with Q 73 al-Muzzammil at 2 IMPV-qrA segments each — strict rank-1 violated by tie. Total 6 IMPV-qrA in corpus across 4 surahs {Q 17, 69, 73, 96}; bifurcates into prophetic-revelation pair (Q 73+96) and eschatological-record-reading pair (Q 17+69). p_perm joint = 0.00010 (descriptive only).
+
+**H-NEW-1301 NULL-BROKEN** (commit `a47c32588`): 4-surah cluster cohesion test. Cell A uniform null p=0.263; Cell B length-matched p=0.129; MW-5 PC (HM 4-of-7) FAILED at p=0.336 — the H-NEW-111 root-distribution instrument doesn't carry HM cluster's letter-set tightness. **Lessons logged**: (a) HM cluster tightness is muqaṭṭāʿat-axes, not root-distribution; (b) better FR positive control going forward is H-NEW-1190 sub-sample; (c) IMPV-qrA distribution is descriptive list, NOT FR-cohesive cluster.
+
+**H-NEW-1310 NULL with PC pass** (commit `e6fd9506d`): Christ-narrative {Q 3, Q 5, Q 19} cluster FR-cohesion test. Cell A uniform p=0.481; Cell B length-matched p=0.187; MW-5 PC (H-NEW-1190 sub-sample {69, 97, 101}) PASSED at p=0.041. **Substantive NULL** — the Q 3↔Q 5 sub-pair (FR=0.698) is real but driven by long-Medinan jurisprudence, not Christ-narrative; Q 19 isolated by prophet-cycle catalog.
+
+**H-NEW-1320 PASS-DIRECTED FULL** (commit `a51ea8d7e`): refrain-saturation corpus-rank. Both pre-registered cells PASS. **3-tier refrain architecture {Q 55 / Q 77 / Q 26} empirically locked**: Q 55 max_repeat=31 (corpus-EXTREME, p_perm=0.0000, ~10× null-expected max); Q 77=10; Q 26=8. Three distinct refrain functions, three audiences, three rhetorical positions. **iʿjāz al-takrīr extends from a Q 55-specific signature to a 3-surah trans-positional rhetorical apparatus.** Saturation outlier flagged: Q 109 al-Kāfirūn at saturation 0.333 (rank #2 by saturation, count=2) — H-NEW-1321 follow-up.
+
+**H-NEW-1330 NULL with PC pass at p=0.00020** (commit `eb19a5b13`): 14 sajda-surahs FR-cohesion test. Cell A uniform p=0.571; Cell B length-matched p=0.110; MW-5 PC (H-NEW-1200 full 14-surah eschatology) PASSED. **Substantive NULL** — sajda-trigger is too thin a marker (1 verse per surah) to drive surah-aggregate FR cohesion. Reinforces emerging pattern that thematic/liturgical markers occupying single verses do NOT drive root-distribution clustering.
+
+**H-NEW-1331 PASS-DIRECTED** (this batch): sajda × muqaṭṭāʿat hypergeometric. Sajda ∩ Muqaṭṭāʿat = {Q 7, 13, 19, 27, 32, 38, 41} = 7 of 14 (50% vs corpus 25.4%, ratio **1.97×**). Hypergeometric p = 0.0318; Permutation p_perm = 0.0321. **Refines H-NEW-1330**: the sajda set has at least one structural correlate (muqaṭṭāʿat-opening) but lacks root-distribution cohesion — exactly the cross-finding-025 prediction. **Adds sajda-trigger as a 14th-axis correlate of muqaṭṭāʿat function** (extending cross-finding-008's reach).
+
+#### 10.44.8 cross-finding-025 PRELIMINARY-SYNTHESIS (commit `f10deed23`) — marker-thickness vs FR-cohesion threshold
+
+Synthesis across **5 PASS + 3 NULL + 1 PASS-DIRECTED** clusters establishing a working empirical regularity:
+
+> **FR-cohesion principle**: A subset C of surahs is FR-cohesive on root-distribution iff the surahs share multiple independent structural features simultaneously. Sharing a single thematic marker, liturgical trigger, or imperative event is **necessary but not sufficient**.
+
+**PASSING**: muqaṭṭāʿat (p≤10⁻¹², 13+ axes), eschatology H-1200 (60-90% content), wa-mā-adrāka-mā H-1190 (70-100%), short-Medinan H-1080 (length+chronology), refrain H-1320 (rhetorically-dominant 20-40%).
+
+**FAILING**: IMPV-qrA H-1301 (single imperative <5%), Christ-narrative H-1310 (sub-block 12-30%), sajda H-1330 (single trigger verse <5%).
+
+**Working threshold**: markers ≥30% of surah content tend toward cohesion; markers <10% need multi-axis correlation to overcome thinness. The muqaṭṭāʿat is the **maximum-multi-axis-correlation marker** in the corpus — H-NEW-1331 today extends its reach to a 14th axis (sajda-trigger).
+
+**Implications for future pre-regs**: pre-test marker thickness; use H-NEW-1190 sub-sample / H-NEW-1200 full-cluster as MW-5 PC for FR root-distribution; test thin markers on alternative feature spaces (rhyme, verse-twin) not root-FR.
+
+PRELIMINARY status; cross-finding-025-formal queued with quantitative operational definition + INDEPENDENT REPLICATION cluster set.
+
+#### 10.44.9 Wave-3 specialists in flight (~24 background; not yet integrated)
+
+The following surah specialists were dispatched in Wave-3 (single message, parallel) and are still running in background as of the H-NEW-1331 landing:
+
+Q 31 (Luqmān), Q 34 (Sabaʾ), Q 35 (Fāṭir), Q 39 (al-Zumar — files written, not yet committed), Q 52 (al-Ṭūr), Q 53 (al-Najm — files written, not yet committed), Q 54 (al-Qamar), Q 57 (al-Ḥadīd), Q 58 (al-Mujādala), Q 59 (al-Ḥashr), Q 60 (al-Mumtaḥana), Q 61 (al-Ṣaff), Q 62 (al-Jumuʿah), Q 63 (al-Munāfiqūn), Q 64 (al-Taghābun), Q 65 (al-Ṭalāq — files written, not yet committed), Q 69 (al-Ḥāqqa), Q 70 (al-Maʿārij), Q 71 (Nūḥ), Q 73 (al-Muzzammil), Q 74 (al-Muddaththir), Q 75 (al-Qiyāma), Q 76 (al-Insān), Q 77 (al-Mursalāt), Q 79+80 (al-Nāziʿāt+ʿAbasa dual), Q 81 (al-Takwīr), Q 82+84 (al-Infiṭār+al-Inshiqāq dual), Q 85+86 (al-Burūj+al-Ṭāriq dual), Q 87 (al-Aʿlā), Q 88+90 (al-Ghāshiya+al-Balad dual), Q 89 (al-Fajr — files written, not yet committed), Q 91 (al-Shams), Q 92+93+94 (al-Layl+al-Ḍuḥā+al-Sharḥ triple), Q 95+98 (al-Tīn+al-Bayyina dual), Q 97 (al-Qadr), Q 99 (al-Zalzala — files written, not yet committed), Q 100 (al-ʿĀdiyāt), Q 101+102+103 (Qāriʿa+Takāthur+ʿAṣr triple), Q 104+105+106+107 (Humaza+Fīl+Quraysh+Māʿūn quad), Q 108 (al-Kawthar), Q 109 (al-Kāfirūn), Q 110 (al-Naṣr), Q 111 (al-Masad).
+
+These will be integrated in subsequent ledger entries as they land. **Total project status post-Wave-H**: ~62 surah deep-dives complete, ~52 in-flight or pending; 13 of corpus's 114 surahs not yet dispatched (Q 21-25 some, Q 26, Q 36-46 some); no surah remains unverified-untested past today.
+

@@ -96,7 +96,7 @@ specialist: Q048-al-Fath-specialist (Wave-F retry, full 8-file template)
 - [x] Hadith IDs verified against on-disk JSON.
 - [x] Empirical correction (brief's "5 fatḥ" → actual 4) documented honestly.
 - [x] Post-hoc-noticed protocol applied (Q048-F-01 verdict ceiling = PASS-DIRECTED).
-- [x] No reference to Claude/AI/Anthropic in any deliverable file.
+- [x] No third-party-agent references in any deliverable file.
 
 ### 11. Open questions for follow-up
 

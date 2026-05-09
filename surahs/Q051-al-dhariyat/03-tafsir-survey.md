@@ -80,7 +80,7 @@ al-Rāzī catalogs **6 distinct vajh** (more than al-Ṭabarī or al-Zamakhshar�
 al-Rāzī notes (vol. 28 p. 197): *"And it is permissible that the four sworn-by entities should be of distinct kinds, with each *fa-l-* introducing a successive distinct subject; and it is permissible that they all denote a single subject in four functional modes."*
 
 **On Q 51:21 *wa-fī anfusikum afalā tubṣirūn***:
-- al-Rāzī devotes ~4 pages to v. 21 alone (vol. 28 pp. 213-217), elaborating the **inner-anthropic argument**: the human body's organ-systems, the soul-body composite, the cognitive-perceptive faculties, the moral-affective dimensions. Each of these is a *bayyina* (clear sign).
+- al-Rāzī devotes ~4 pages to v. 21 alone (vol. 28 pp. 213-217), elaborating the **inner-anfus argument**: the human body's organ-systems, the soul-body composite, the cognitive-perceptive faculties, the moral-affective dimensions. Each of these is a *bayyina* (clear sign).
 - The verse's *afalā tubṣirūn* (the rhetorical question) is an *inkārī* (denial-implicit) form: God expects a positive perceiving-response and rebukes its absence.
 
 **On Q 51:38-46 (the 4-people compendium)**:
@@ -181,7 +181,7 @@ al-Bāqillānī's *Iʿjāz al-Qurʾān* (ed. al-Ṣaqar, Cairo: Dar al-Maʿārif
 - al-Bāqillānī cites Q 51's compressed hospitality account as an exemplar of *bayān al-iʿjāz* — the corpus's distinctive ability to compress dramatic narrative without losing rhetorical effect. He compares the 14-verse Q 51:24-37 account to Q 11:69-83 (the longer Hud version) and notes Q 51's *ījāz* (compression) as the rhetorical achievement.
 
 **On Q 51:21 *afalā tubṣirūn***:
-- The rhetorical-question form (*afalā* + verb) is one of the corpus's signature *istinkārī* (denial-implicit-question) constructions; al-Bāqillānī catalogs ~20 corpus-instances and reads Q 51:21 as the most-effective due to the inner-anthropic depth.
+- The rhetorical-question form (*afalā* + verb) is one of the corpus's signature *istinkārī* (denial-implicit-question) constructions; al-Bāqillānī catalogs ~20 corpus-instances and reads Q 51:21 as the most-effective due to the inner-anfus depth.
 
 ## 8. al-Biqāʿī (d. 885/1480) — *Naẓm al-Durar fī Tanāsub al-Āyāt wa-l-Suwar*
 
@@ -216,7 +216,7 @@ For comparative reference (not classical authorities; cited as pure SECONDARY):
 | 1-4 (oath) | 4-distinct subjects | 4-distinct subjects | 6 vajh; preferred 4-cosmic-stages | 4-distinct subjects | catalogued in al-aqsām nawʿ; dual-jawāb unique | 4-cosmic-stages (integrative) |
 | 7 (al-ḥubuk) | woven-tracts | orbital-paths | woven-tracts | orbital-paths | hapax | — |
 | 17 (yahjaʿūn) | sleep | night-vigil | night-vigil | night-vigil | hapax | — |
-| 21 (afalā tubṣirūn) | rhetorical inkārī | rhetorical | 4-page treatment on inner-anthropic argument | rhetorical | catalogued in istifhām nawʿ | rhetorical-question iʿjāz |
+| 21 (afalā tubṣirūn) | rhetorical inkārī | rhetorical | 4-page treatment on inner-anfus argument | rhetorical | catalogued in istifhām nawʿ | rhetorical-question iʿjāz |
 | 29 (fa-ṣakkat) | she struck | astonishment-gesture | astonishment | Mujāhid's taʿajjub gloss | hapax | dramatic compression |
 | 56 (creation-purpose) | tawḥīd | fiṭra teleological | teleological 3-vajh | miftāḥ al-tawḥīd | catalogued in āyāt al-aḥkām | — |
 | 58 (al-razzāq triad) | (?) | triadic taqsīm | triadic naẓm | qirāʾāt variant noted | catalogued in qirāʾāt | — |

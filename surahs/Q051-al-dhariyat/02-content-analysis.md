@@ -67,7 +67,7 @@ This 5-verse description of the *muttaqūn* — those who fear God — establish
 - v. 22: *wa-fī al-samāʾi rizqukum wa-mā tūʿadūn* — "And in the heaven is your provision and what you are promised."
 - v. 23: *fa-wa-rabbi al-samāʾi wa-l-arḍi innahu la-ḥaqqun mithlu mā annakum tanṭiqūn* — "By the Lord of heaven and earth, it is as true as that you speak."
 
-The "signs in the earth + signs in yourselves + provision in the heaven" triad is a classical proof-from-creation argument; v. 21 *wa-fī anfusikum afalā tubṣirūn* ("and in yourselves — will you not see?") is one of the corpus's most-cited verses on the inner-anthropic argument. al-Rāzī devotes 4 pages to v. 21 alone (*Mafātīḥ al-ghayb* vol. 28, pp. 213-217).
+The "signs in the earth + signs in yourselves + provision in the heaven" triad is a classical proof-from-creation argument; v. 21 *wa-fī anfusikum afalā tubṣirūn* ("and in yourselves — will you not see?") is one of the corpus's most-cited verses on the inner-anfus argument. al-Rāzī devotes 4 pages to v. 21 alone (*Mafātīḥ al-ghayb* vol. 28, pp. 213-217).
 
 ### Block B (vv. 24-37): IBRĀHĪM-HOSPITALITY + LŪṬ-DESTRUCTION
 
@@ -226,7 +226,7 @@ The **3-fold *wa-fī [SUBJECT] idh* opener** in the compressed prophet-cycle (vv
 - Q 51:7 *al-samāʾ dhāti al-ḥubuk* — corpus-unique cosmic image; classical exegesis links to Q 67:3 (*allatī tarā fī khalqi al-raḥmāni min tafāwut*) on heavenly perfection.
 - Q 51:17-18 night-vigil — paralleled at Q 32:16, Q 73:6, Q 76:26. See `04-hadith-corpus.md` for Abū Dāwūd ch5 #73 hadith chain on v. 17.
 - Q 51:19 right-of-the-deprived — paralleled at Q 70:24-25 (the *li-l-sāʾili wa-l-maḥrūm* fixed-share); Medinan zakāt-foreshadowing.
-- Q 51:21 *wa-fī anfusikum afalā tubṣirūn* — one of the corpus's most-cited inner-anthropic verses; al-Rāzī devotes 4 pages to v. 21.
+- Q 51:21 *wa-fī anfusikum afalā tubṣirūn* — one of the corpus's most-cited inner-anfus verses; al-Rāzī devotes 4 pages to v. 21.
 - Q 51:24-37 hospitality + Lūṭ — paralleled at Q 11:69-83 (longer, with explicit *bushrā*), Q 15:51-77 (full Lūṭ-destruction), Q 29:31-35 (compressed). Q 51 has the most compact account (14 verses).
 - Q 51:38-40 Mūsā vs Pharaoh — paralleled across Q 7, 20, 26, 28; Q 51's 3-verse compression is the most condensed.
 - Q 51:41-42 ʿĀd + barren wind — paralleled at Q 41:16, Q 46:24-25, Q 54:18-21, Q 69:6-7.

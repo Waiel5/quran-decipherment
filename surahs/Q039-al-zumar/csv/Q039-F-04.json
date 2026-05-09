@@ -1,0 +1,59 @@
+{
+  "id": "Q039-F-04",
+  "h_new_id": "H-NEW-1300",
+  "title": "Q 39 self-ring composition (tanzīl-opener + hamd-closer)",
+  "prereg_path": "surahs/Q039-al-zumar/preregs/Q039-F-04-self-ring-cohesion-prereg.md",
+  "prereg_sha": "fe370b2edecfb818cc18ad6a13f3bd79f1a8b3455fccb5838b8e1b037ca17d81",
+  "prereg_sha_verified": "fe370b2edecfb818cc18ad6a13f3bd79f1a8b3455fccb5838b8e1b037ca17d81",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.0125,
+  "bonferroni_k": 4,
+  "bonferroni_family": "Q039-novel-tests",
+  "tanzil_cluster": [
+    32,
+    39,
+    40,
+    41,
+    45,
+    46
+  ],
+  "hamd_close_cluster": [
+    17,
+    27,
+    37,
+    39
+  ],
+  "observed_intersection": [
+    39
+  ],
+  "observed_intersection_size": 1,
+  "h1_p_random_hamd_hits_tanzil_at_least_1": 0.1991,
+  "h2_p_random_tanzil_hits_hamd_at_least_1": 0.1967,
+  "h1_pass": false,
+  "h2_pass": false,
+  "rabb_alamin_closer_set": [
+    37,
+    39,
+    81
+  ],
+  "rabb_alamin_closer_count": 3,
+  "h3_p_rba_closer_size": 0.0191,
+  "h3_null_mean": 0.5754,
+  "h3_null_q975": 2.0,
+  "h3_pass": false,
+  "tanzil_intersect_rba_closer": [
+    39
+  ],
+  "q39_self_ring_member": true,
+  "self_ring_size": 1,
+  "verdict": "NULL",
+  "verdict_ceiling": "PASS-DIRECTED",
+  "rules_tuple": [
+    "no-tashkeel",
+    "orthographic-token",
+    "graphemes",
+    "basmala-counted-only-in-Q1",
+    "Hafs-Kufan"
+  ]
+}

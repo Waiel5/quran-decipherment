@@ -1,0 +1,181 @@
+{
+  "id": "Q039-F-02",
+  "h_new_id": "H-NEW-1280",
+  "title": "Q 39 خلص root concentration vs corpus + Late-Meccan distribution test",
+  "prereg_path": "surahs/Q039-al-zumar/preregs/Q039-F-02-mukhlis-root-concentration-prereg.md",
+  "prereg_sha": "092aed7c34f1223b3aae2c48f17e2c34ea1433dfa8eb9ccf4bfc4f7a39760b9b",
+  "prereg_sha_verified": "092aed7c34f1223b3aae2c48f17e2c34ea1433dfa8eb9ccf4bfc4f7a39760b9b",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.0125,
+  "bonferroni_k": 4,
+  "bonferroni_family": "Q039-novel-tests",
+  "target_root": "xlS",
+  "corpus_xls_total": 31,
+  "q39_xls_count": 4,
+  "q39_words": 1177,
+  "q39_xls_density_per_1000": 3.3984706881903146,
+  "rest_corpus_density_per_1000": 0.35231943628890194,
+  "q39_xls_density_rank": 4,
+  "n_surahs_with_xls": 17,
+  "h1_perm_p_q39_density": 0.0011,
+  "h1_null_mean_density": 0.4035683942225998,
+  "h1_null_q975": 1.6992353440951573,
+  "h1_pass": true,
+  "late_meccan_threshold_noldeke": 65,
+  "xls_in_late_meccan": 21,
+  "frac_xls_late_meccan": 0.6774193548387096,
+  "chance_frac_late_meccan_verses": 0.5808210391276459,
+  "h2_binomial_p": 0.18254192978245237,
+  "h2_pass": false,
+  "verdict": "PASS-DIRECTED",
+  "verdict_ceiling": "PASS-DIRECTED",
+  "xls_locations_q39": [
+    {
+      "surah": 39,
+      "verse": 2
+    },
+    {
+      "surah": 39,
+      "verse": 3
+    },
+    {
+      "surah": 39,
+      "verse": 11
+    },
+    {
+      "surah": 39,
+      "verse": 14
+    }
+  ],
+  "xls_per_surah_top20": [
+    {
+      "surah": 98,
+      "count": 1,
+      "words": 94,
+      "density_per_1000": 10.638297872340425
+    },
+    {
+      "surah": 37,
+      "count": 5,
+      "words": 865,
+      "density_per_1000": 5.780346820809248
+    },
+    {
+      "surah": 38,
+      "count": 3,
+      "words": 736,
+      "density_per_1000": 4.076086956521739
+    },
+    {
+      "surah": 39,
+      "count": 4,
+      "words": 1177,
+      "density_per_1000": 3.3984706881903146
+    },
+    {
+      "surah": 31,
+      "count": 1,
+      "words": 550,
+      "density_per_1000": 1.8181818181818181
+    },
+    {
+      "surah": 12,
+      "count": 3,
+      "words": 1795,
+      "density_per_1000": 1.671309192200557
+    },
+    {
+      "surah": 40,
+      "count": 2,
+      "words": 1226,
+      "density_per_1000": 1.6313213703099512
+    },
+    {
+      "surah": 15,
+      "count": 1,
+      "words": 657,
+      "density_per_1000": 1.5220700152207
+    },
+    {
+      "surah": 19,
+      "count": 1,
+      "words": 972,
+      "density_per_1000": 1.02880658436214
+    },
+    {
+      "surah": 29,
+      "count": 1,
+      "words": 978,
+      "density_per_1000": 1.0224948875255624
+    },
+    {
+      "surah": 33,
+      "count": 1,
+      "words": 1303,
+      "density_per_1000": 0.7674597083653109
+    },
+    {
+      "surah": 7,
+      "count": 2,
+      "words": 3342,
+      "density_per_1000": 0.5984440454817475
+    },
+    {
+      "surah": 10,
+      "count": 1,
+      "words": 1839,
+      "density_per_1000": 0.543773790103317
+    },
+    {
+      "surah": 16,
+      "count": 1,
+      "words": 1845,
+      "density_per_1000": 0.5420054200542005
+    },
+    {
+      "surah": 6,
+      "count": 1,
+      "words": 3056,
+      "density_per_1000": 0.3272251308900524
+    },
+    {
+      "surah": 2,
+      "count": 2,
+      "words": 6140,
+      "density_per_1000": 0.32573289902280134
+    },
+    {
+      "surah": 4,
+      "count": 1,
+      "words": 3763,
+      "density_per_1000": 0.26574541589157585
+    },
+    {
+      "surah": 1,
+      "count": 0,
+      "words": 29,
+      "density_per_1000": 0.0
+    },
+    {
+      "surah": 3,
+      "count": 0,
+      "words": 3501,
+      "density_per_1000": 0.0
+    },
+    {
+      "surah": 5,
+      "count": 0,
+      "words": 2837,
+      "density_per_1000": 0.0
+    }
+  ],
+  "rules_tuple": [
+    "no-tashkeel",
+    "orthographic-token",
+    "graphemes",
+    "QAC-v0.4-root",
+    "basmala-counted-only-in-Q1",
+    "Hafs-Kufan"
+  ]
+}

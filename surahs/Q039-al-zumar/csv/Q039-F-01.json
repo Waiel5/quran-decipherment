@@ -1,0 +1,51 @@
+{
+  "id": "Q039-F-01",
+  "h_new_id": "H-NEW-1270",
+  "title": "Tanzīl-cluster (H-NEW-1100) Late-Meccan Nöldeke-peak co-localization",
+  "prereg_path": "surahs/Q039-al-zumar/preregs/Q039-F-01-tanzil-cluster-noldeke-peak-prereg.md",
+  "prereg_sha": "3634a4cb01d1efbcf3ff86880297f78081d62a93bfb692ae7bebfec0a89bfbe3",
+  "prereg_sha_verified": "3634a4cb01d1efbcf3ff86880297f78081d62a93bfb692ae7bebfec0a89bfbe3",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.0125,
+  "bonferroni_k": 4,
+  "bonferroni_family": "Q039-novel-tests",
+  "tanzil_cluster": [
+    32,
+    39,
+    40,
+    41,
+    45,
+    46
+  ],
+  "observed_noldeke_ranks": [
+    70,
+    80,
+    78,
+    71,
+    72,
+    88
+  ],
+  "observed_variance": 39.916666666666664,
+  "observed_mean": 76.5,
+  "null_variance_mean": 914.792225,
+  "null_variance_q025": 221.45833333333337,
+  "null_variance_q975": 1751.807638888889,
+  "null_mean_mean": 57.38968333333332,
+  "null_mean_q025": 31.833333333333332,
+  "null_mean_q975": 82.66666666666667,
+  "h1_p_variance_lowtail": 0.0003,
+  "h2_p_mean_uppertail": 0.0743,
+  "h1_pass": true,
+  "h2_pass": false,
+  "verdict": "PASS-DIRECTED",
+  "verdict_ceiling": "PASS-DIRECTED",
+  "rules_tuple": [
+    "no-tashkeel",
+    "orthographic-token",
+    "graphemes",
+    "basmala-counted-only-in-Q1",
+    "Hafs-Kufan",
+    "mashriqi"
+  ]
+}

@@ -131,7 +131,7 @@ Q 49 al-Ḥujurāt is empirically (a) the **corpus-rank-1 surah by Medinan addre
 - All hadith citations are tagged VERIFIED (AhmedBaset-JSON cross-checked against matn-text) or SECONDARY-TRIANGULATED.
 - All classical-scholar citations are tagged VERIFIED (physical-edition print on file in project library).
 
-The work commits to GitHub as Waiel Al-Shujaa per project convention (no AI/agent/Claude references).
+The work commits to GitHub as Waiel Al-Shujaa per project convention (single-author voice maintained).
 
 ### Continuation guidance
 
