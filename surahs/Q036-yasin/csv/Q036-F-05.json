@@ -1,0 +1,63 @@
+{
+  "finding_id": "Q036-F-05",
+  "pre_reg_sha256": "9cc710c5a340e52a98a9030c27edfe92031bad37b43b4a106dfdd33d62d6053f",
+  "seed": 20260509,
+  "date": "2026-05-09",
+  "rules_tuple": "(no-tashkeel, orthographic-grapheme, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi, surah-opening-verse-only)",
+  "variants": {
+    "no-tashkeel": {
+      "exact_ys_v1_surahs": [
+        36
+      ],
+      "count_exact_ys_v1": 1,
+      "muq_inventory_size": 29,
+      "muq_inventory_sample": {
+        "2": "الم",
+        "3": "الم",
+        "7": "المص",
+        "10": "الر ۚ تلك آيات الكتاب الحكيم",
+        "11": "الر ۚ كتاب أحكمت آياته ثم فصلت من لدن حكيم خبير",
+        "12": "الر ۚ تلك آيات الكتاب المبين",
+        "13": "المر ۚ تلك آيات الكتاب ۗ والذي أنزل إليك من ربك الحق ولكن أكثر الناس لا يؤمنون",
+        "14": "الر ۚ كتاب أنزلناه إليك لتخرج الناس من الظلمات إلى النور بإذن ربهم إلى صراط العزيز الحميد"
+      }
+    },
+    "min-tashkeel": {
+      "exact_ys_v1_surahs": [
+        36
+      ],
+      "count_exact_ys_v1": 1,
+      "muq_inventory_size": 29,
+      "muq_inventory_sample": {
+        "2": "الم",
+        "3": "الم",
+        "7": "المص",
+        "10": "الر ۚ تِلكَ ءايٰتُ الكِتٰبِ الحَكيمِ",
+        "11": "الر ۚ كِتٰبٌ أُحكِمَت ءايٰتُهُ ثُمَّ فُصِّلَت مِن لَدُن حَكيمٍ خَبيرٍ",
+        "12": "الر ۚ تِلكَ ءايٰتُ الكِتٰبِ المُبينِ",
+        "13": "المر ۚ تِلكَ ءايٰتُ الكِتٰبِ ۗ وَالَّذى أُنزِلَ إِلَيكَ مِن رَبِّكَ الحَقُّ وَلٰكِنَّ أَكثَرَ النّاسِ لا يُؤمِنونَ",
+        "14": "الر ۚ كِتٰبٌ أَنزَلنٰهُ إِلَيكَ لِتُخرِجَ النّاسَ مِنَ الظُّلُمٰتِ إِلَى النّورِ بِإِذنِ رَبِّهِم إِلىٰ صِرٰطِ العَزيزِ الحَميدِ"
+      }
+    },
+    "uthmani-consonant": {
+      "exact_ys_v1_surahs": [
+        36
+      ],
+      "count_exact_ys_v1": 1,
+      "muq_inventory_size": 29,
+      "muq_inventory_sample": {
+        "2": "الم",
+        "3": "الم",
+        "7": "المص",
+        "10": "الر تلك ءايت الكتب الحكيم",
+        "11": "الر كتب أحكمت ءايته ثم فصلت من لدن حكيم خبير",
+        "12": "الر تلك ءايت الكتب المبين",
+        "13": "المر تلك ءايت الكتب والذى أنزل إليك من ربك الحق ولكن أكثر الناس لا يؤمنون",
+        "14": "الر كتب أنزلنه إليك لتخرج الناس من الظلمت إلى النور بإذن ربهم إلى صرط العزيز الحميد"
+      }
+    }
+  },
+  "verdict": "PASS-DIRECTED-CORPUS-EXACT",
+  "singleton_confirmed": true,
+  "interpretation": "Q 36's two-letter muqaṭṭāʿat opening 'يس' is unique in the corpus. No other surah's verse 1 equals this string under any of three orthographic conventions tested (no-tashkeel, min-tashkeel, Uthmani-consonantal). 1/114 corpus-EXACT."
+}

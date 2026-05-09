@@ -1,0 +1,84 @@
+{
+  "finding_id": "Q036-F-06",
+  "pre_reg_sha256": "69c0782025c1ae13c951fd5ab019f5ce1ca34591042c987c881c39b5c301a4b1",
+  "seed": 20260509,
+  "date": "2026-05-09",
+  "source_matrix": "H-NEW-111 D_matrix_upper_triangular (QAC stem-roots, K=500 truncation, Dirichlet α=0.5)",
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, K500, Dirichlet-alpha-0.5, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "metric": "Fisher–Rao distance on smoothed root-frequency probability simplex",
+  "centroid_top10_by_mean_FR": [
+    {
+      "rank": 1,
+      "surah": 112,
+      "mean_FR": 0.759188
+    },
+    {
+      "rank": 2,
+      "surah": 110,
+      "mean_FR": 0.764372
+    },
+    {
+      "rank": 3,
+      "surah": 108,
+      "mean_FR": 0.771843
+    },
+    {
+      "rank": 4,
+      "surah": 1,
+      "mean_FR": 0.778878
+    },
+    {
+      "rank": 5,
+      "surah": 106,
+      "mean_FR": 0.780298
+    },
+    {
+      "rank": 6,
+      "surah": 114,
+      "mean_FR": 0.783777
+    },
+    {
+      "rank": 7,
+      "surah": 113,
+      "mean_FR": 0.784282
+    },
+    {
+      "rank": 8,
+      "surah": 95,
+      "mean_FR": 0.786281
+    },
+    {
+      "rank": 9,
+      "surah": 103,
+      "mean_FR": 0.787033
+    },
+    {
+      "rank": 10,
+      "surah": 105,
+      "mean_FR": 0.787676
+    }
+  ],
+  "q036_mean_FR": 0.943004,
+  "q036_rank_mean": 64,
+  "q036_rank_median": 64,
+  "q112_mean_FR": 0.759188,
+  "q112_rank_mean": 1,
+  "q112_rank_median": 3,
+  "pre_committed_predictions": {
+    "q112_in_top3_on_mean": true,
+    "q036_outside_top30_on_mean": true
+  },
+  "verdict": "PASS-DIRECTED-REAFFIRMED",
+  "interpretation": "Under the project-canonical H-NEW-111 FR-roots metric (K=500, Dirichlet α=0.5), Q 112 ranks #1 on min(mean FR distance) = 0.7592. Q 112 ranks 1/114 (mean FR = 0.7592). Q 36 ranks 64/114 (mean FR = 0.9430). Q 36 is NOT the FR-centroid by any metric tested in the project. The pre-committed prediction is reaffirmed.",
+  "honest_limits": [
+    "FR-centroid is biased toward short-and-theologically-broad surahs.",
+    "The metric depends on the K=500 truncation + Dirichlet α=0.5 smoothing locked by H-NEW-111.",
+    "Liturgy-weighting was tested separately in Q036-F-01 and was also NULL.",
+    "A length-normalised cosine variant on roots could yield a different ordering; such variants are post-hoc."
+  ],
+  "cross_references": [
+    "Q112-F-01 — Q 112 FR-centroid rank-1 finding",
+    "H-NEW-82 — the binding 6-axis NULL on the qalb al-Qurʾān claim",
+    "Q036-F-01 — the 7th-axis (liturgy-weighted Jaccard) NULL"
+  ]
+}

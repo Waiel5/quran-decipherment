@@ -1,0 +1,45 @@
+{
+  "finding_id": "Q036-F-07",
+  "pre_reg_sha256": "6f71e1877fff6e799a5a2b2c494452fb117198396468cc3284737fe68802e82d",
+  "seed": 20260509,
+  "n_permutations": 10000,
+  "date": "2026-05-09",
+  "rules_tuple": "(no-tashkeel, QAC v0.4 stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi, verse-range-inclusive)",
+  "pericope": {
+    "surah": 36,
+    "v_start": 13,
+    "v_end": 32,
+    "n_roots": 72
+  },
+  "parallel_pericopes": [
+    {
+      "surah": 7,
+      "v_start": 73,
+      "v_end": 93
+    },
+    {
+      "surah": 11,
+      "v_start": 42,
+      "v_end": 95
+    },
+    {
+      "surah": 27,
+      "v_start": 45,
+      "v_end": 58
+    }
+  ],
+  "parallel_union_size": 269,
+  "q36_ambient_size": 180,
+  "j_pericope_vs_parallel_union": 0.171821,
+  "j_pericope_vs_q36_ambient": 0.194313,
+  "delta_observed": -0.022491,
+  "p_perm": 0.18758,
+  "robustness_q11_alone": 0.178862,
+  "verdict": "NULL (Δ ≤ 0; ambient cohesion ≥ parallel-pericope cohesion)",
+  "interpretation": "Q 36:13-32 (the aṣḥāb al-qarya pericope) shares 17.2% Jaccard root-overlap with the union of three parallel town-destruction pericopes (Q 7:73-93, Q 11:42-95, Q 27:45-58), versus 19.4% with the rest of Q 36. Δ = -0.0225. Permutation null over 10,000 random 20-verse contiguous spans of Q 36 gives p = 0.1876.",
+  "honest_limits": [
+    "Q 11:42-95 dominates the parallel-union (54 of the 89 parallel verses).",
+    "Mass-shared theological roots (Allāh, rabb, rasūl, qāla) inflate Jaccard regardless.",
+    "Set-based Jaccard does not capture frequency; a TF-weighted cosine variant is queued."
+  ]
+}

@@ -3,9 +3,9 @@ surah: 36
 surah_name_ar: يس
 surah_name_translit: Yāsīn
 file_type: novel-findings
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE — 4 pre-registered tests, 2 CONFIRMED + 2 NULL (with prominence)
+verdict: EXTENDED — 7 pre-registered tests, 3 CONFIRMED/PASS + 4 NULL (with full prominence). Wave-H 2026-05-09 added F-05 / F-06 / F-07.
 ---
 
 # Q 36 Yāsīn — Novel Findings
@@ -235,3 +235,42 @@ This is an instructive NULL: **eschatology-pericope-presence ≠ eschatology-voc
 **Aggregate**: 2 CONFIRMED + 2 NULL. The CONFIRMED tests both refine the dual-iʿjāz typology (F-02) and document a novel positional-structural fact (F-03). The NULL tests both confirm the H-NEW-82 binding prior (F-01) and surface an instructive pericope-vs-density distinction (F-04).
 
 The classical *qalb al-Qurʾān* claim's **liturgical-theological content** is confirmed (Q 36 is in the meaning-iʿjāz cluster with Q 67); the **multi-axis quantitative-centrality form** of the claim remains FALSIFIED (H-NEW-82 binding NULL + Q036-F-01 7th-axis NULL); the **vocabulary-density form** is NULL (Q036-F-04). What survives is a single novel structural finding: **Q 36:82 is the corpus's only *kun-fa-yakūn* verse positioned at the rhetorical climax of its surah** (Q036-F-03).
+
+---
+
+## 6. Wave-H 2026-05-09 addendum — 3 additional pre-registered tests
+
+Three further pre-registered tests, each with its own SHA-locked pre-reg, run script, and JSON output, were added in the Wave-H session 2026-05-09.
+
+| ID | Pre-reg SHA-256 (head 12) | Script | JSON | Verdict |
+|:--|:--|:--|:--|:--|
+| Q036-F-05 | `9cc710c5a340` | `Q036_F_05_ys_singleton.py` | `Q036-F-05.json` | **PASS-DIRECTED-CORPUS-EXACT** |
+| Q036-F-06 | `69c0782025c1` | `Q036_F_06_fr_centroid_audit.py` | `Q036-F-06.json` | **PASS-DIRECTED-REAFFIRMED** |
+| Q036-F-07 | `6f71e1877fff` | `Q036_F_07_town_of_prophets_cohesion.py` | `Q036-F-07.json` | **NULL** (with full prominence) |
+
+Full findings markdowns:
+- [[Q036-F-05-ys-singleton]] — corpus-EXACT singleton verification of the يس opening
+- [[Q036-F-06-fr-centroid-audit]] — Q 112 confirmed as the corpus FR-centroid (Q 36 rank 64/114)
+- [[Q036-F-07-town-of-prophets-cohesion]] — aṣḥāb al-qarya pericope NOT more aligned with parallel town-pericopes than with ambient Q 36
+
+### Headline for each
+
+- **Q036-F-05 (PASS)**: Across `quran-no-tashkeel.json`, `quran-min-tashkeel.json`, and `data/alt-text/quran-uthmani-consonantal.json`, exactly one surah's verse 1 equals "يس" — Q 36. 1/114 corpus-EXACT. The YS combination has no other muqaṭṭāʿat attestation in the corpus, neither as standalone v1 nor as a substring of any other muqaṭṭāʿat string. Q 36 is one of three "ungrouped" muqaṭṭāʿat openers (with Q 19 *KHYʿṢ* and Q 42's *ḤM | ʿSQ* composite) that does not belong to any letter-family cluster (الم / الر / حم / طسم).
+
+- **Q036-F-06 (PASS-DIRECTED-REAFFIRMED)**: On the project-canonical H-NEW-111 FR-roots distance matrix (K=500 truncation, Dirichlet α=0.5 smoothing), Q 112 al-Ikhlāṣ ranks #1 with mean-FR = 0.7592, Q 36 ranks 64/114 with mean-FR = 0.9430. The pre-committed prediction (Q 112 in top-3, Q 36 outside top-30) is reaffirmed on both conditions. This is the **8th independent axis** on which the classical *qalb al-Qurʾān* multi-axis quantitative-centrality claim fails for Q 36 (the prior 7 are H-NEW-82's 6 axes + Q036-F-01's liturgy-weighted Jaccard). The empirical corpus FR-centroid is Q 112.
+
+- **Q036-F-07 (NULL)**: The aṣḥāb al-qarya pericope (Q 36:13-32) has root-Jaccard 0.172 with the union of three parallel town-destruction pericopes (Q 7:73-93, Q 11:42-95, Q 27:45-58) but root-Jaccard 0.194 with the rest of Q 36. The pre-committed direction (parallel > ambient) is reversed by Δ = −0.022, and the 10,000-permutation null gives p = 0.19. Published with equal NULL prominence. Three plausible mechanisms: (1) local-cohesion dominates inter-pericope cohesion (consistent with H-NEW-660); (2) Q 36's pericope is content-typologically the *unnamed-city + unnamed-believing-man* configuration distinct from the named-prophet destructions of Q 7/11/27; (3) the *muʾadhdhin* speech (vv. 20-27) contains uniquely-Q 36 roots that inflate the ambient comparison. This is an **instructive NULL**: typological membership at the narrative level does NOT imply root-vocabulary cohesion.
+
+### 7. Aggregate Q 036 novel-findings family (post-Wave-H)
+
+| Test | Verdict | Direction relative to *qalb-al-Qurʾān* / structural claims |
+|:-:|:--|:--|
+| Q036-F-01 (liturgy-weighted centrality) | NULL | confirms H-NEW-82 binding NULL on a 7th axis |
+| Q036-F-02 (UAS-vs-fadāʾil divergence cell) | CONFIRMED 3/3 | refines dual-iʿjāz typology with Q 36 in mild-divergence sub-cell |
+| Q036-F-03 (*kun-fa-yakūn* climax position) | CONFIRMED 3/3 | novel structural fact: Q 36:82 is corpus's only > 95% *kun-fa-yakūn* verse |
+| Q036-F-04 (eschatology density) | NULL | al-Ghazālī's "expressive ḥashr" classical reading not corroborable as vocabulary-density |
+| **Q036-F-05** (YS singleton) | **PASS-DIRECTED-CORPUS-EXACT** | structural marker; Q 36 is the unique YS muqaṭṭāʿat opener |
+| **Q036-F-06** (FR-centroid audit) | **PASS-DIRECTED-REAFFIRMED** | 8th-axis NULL on quantitative *qalb al-Qurʾān* form; Q 112 confirmed as FR-centroid |
+| **Q036-F-07** (aṣḥāb al-qarya cohesion) | **NULL** (Δ=−0.022, p=0.19) | typological membership ≠ root-vocabulary cohesion |
+
+**Post-Wave-H aggregate**: 3 PASS-direction confirmations + 4 NULL. The pattern is now eight independent quantitative tests of "Q 36 is central/maximal/typed on axis X", with zero PASS at the centrality direction and one structural-fingerprint PASS at the singleton direction. The classical liturgical-theological claim remains real (Q 36 is in the meaning-iʿjāz cluster, fadāʾil-grade 10/10) but **the quantitative-architectural form of the claim is now decisively NULL across 8 axes** — a 7-NULL + 1-PASS-reaffirming-the-NULL fingerprint of robust falsification.

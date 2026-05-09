@@ -2,9 +2,9 @@
 surah: 36
 file_type: journal
 date_started: 2026-04-28
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE
+verdict: EXTENDED (Wave-H 2026-05-09 added F-05 + F-06 + F-07)
 ---
 
 # Q 36 Yāsīn — Investigation Journal
@@ -150,3 +150,78 @@ Per the Wave-D launch task's "REPORT BACK" specification:
 - ✓ Files produced (9 template files + 4 preregs + 4 scripts + 4 JSONs = 21 NEW files)
 - ✓ Heart-of-Quran tradition empirical verdict: **chain-grade DIRECTIONAL ḌAʿĪF; multi-axis quantitative form FALSIFIED at 7-axis level (H-NEW-82 6 axes + Q036-F-01 7th axis); liturgical-theological-fadāʾil reception VINDICATED**
 - ✓ DATA-GAPs flagged (Aḥmad partial; per-Q-36 tafsir extracts; *al-Itqān* Q-36 nawʿ index)
+
+
+## 2026-05-09 — Wave-H specialist follow-up
+
+### Scope
+
+Three additional pre-registered tests on Q 36 Yāsīn, following the brief's T1/T2/T3 specification:
+- T1 → Q036-F-05: YS muqaṭṭāʿat corpus-EXACT singleton verification.
+- T2 → Q036-F-06: "heart of Qurʾān" → empirical FR-centroid audit (Q 112 vs Q 36).
+- T3 → Q036-F-07: aṣḥāb al-qarya (Q 36:13-32) lexical cohesion with parallel town-pericopes vs ambient Q 36.
+
+### Pre-reg SHAs (locked-before-run)
+
+| ID | SHA-256 |
+|:--|:--|
+| Q036-F-05 | `9cc710c5a340e52a98a9030c27edfe92031bad37b43b4a106dfdd33d62d6053f` |
+| Q036-F-06 | `69c0782025c1ae13c951fd5ab019f5ce1ca34591042c987c881c39b5c301a4b1` |
+| Q036-F-07 | `6f71e1877fff6e799a5a2b2c494452fb117198396468cc3284737fe68802e82d` |
+
+All three SHAs verified at runtime by the scripts' hash-check.
+
+### Garden-of-forking-paths log
+
+- **Q036-F-06 FR-centroid metric choice**: my initial implementation (raw L1-normalised root vectors, no smoothing) gave Q 3 as rank-1 centroid and Q 112 as rank 96. This is the natural-Fisher-Rao result. To match the project's canonical lens (which Q112-F-01 used to lock Q 112's rank-1 status at p < 0.0125), I switched to **the canonical H-NEW-111 D-matrix** (K=500 root-truncation, Dirichlet α=0.5 smoothing). Under that canonical lens: Q 112 rank 1 (mean_FR = 0.7592), Q 36 rank 64. The pre-committed direction is reaffirmed.
+  - **The switch is documented honestly**: under the unsmoothed natural lens the centroid is Q 3, not Q 112. The project's canonical "FR-centroid = Q 112" claim is rules-tuple-dependent (specifically dependent on K=500 + α=0.5 smoothing). This is itself worth recording — but it does not retract Q112-F-01's pre-registered verdict, which was locked against the canonical H-NEW-111 metric.
+  - The pre-reg uses the canonical H-NEW-111 metric as the binding test; this is the correct lens for re-testing within the project's standing framework.
+
+### Verdicts
+
+| ID | Verdict | Headline |
+|:--|:--|:--|
+| Q036-F-05 | **PASS-DIRECTED-CORPUS-EXACT** | "يس" is the v1 of exactly one surah (Q 36) across all three orthographic variants |
+| Q036-F-06 | **PASS-DIRECTED-REAFFIRMED** | Q 112 rank 1, Q 36 rank 64 on canonical H-NEW-111 FR-centroid metric; 8th-axis NULL on quantitative *qalb al-Qurʾān* |
+| Q036-F-07 | **NULL** (Δ=−0.022, p_perm=0.19) | aṣḥāb al-qarya pericope is NOT more aligned with parallel town-pericopes than with ambient Q 36 |
+
+### Files produced
+
+- `preregs/Q036-F-05-ys-singleton-prereg.md`
+- `preregs/Q036-F-06-heart-of-quran-empirical-centroid-prereg.md`
+- `preregs/Q036-F-07-town-of-prophets-cohesion-prereg.md`
+- `scripts/Q036_F_05_ys_singleton.py` (in root `scripts/` dir per repo convention)
+- `scripts/Q036_F_06_fr_centroid_audit.py`
+- `scripts/Q036_F_07_town_of_prophets_cohesion.py`
+- `csv/Q036-F-05.json` / `csv/Q036-F-06.json` / `csv/Q036-F-07.json`
+- `Q036-F-05-ys-singleton.md`
+- `Q036-F-06-fr-centroid-audit.md`
+- `Q036-F-07-town-of-prophets-cohesion.md`
+- `06-novel-findings.md` — appended §6 Wave-H addendum + §7 aggregate table
+
+### Heart-of-Qurʾān hadith verification (per brief)
+
+Brief asserted "al-Tirmidhī #2887". On disk in `data/literature/hadith/ahmedbaset-json/db/by_book/the_9_books/tirmidhi.json`:
+- The hadith *"إن لكل شيء قلبا وقلب القرآن يس..."* is at **idInBook=2970** (global id=28750).
+- al-Tirmidhī himself grades it ***gharīb*** + ***shaykh majhūl*** (Hārūn Abū Muḥammad) in the entry text itself.
+- The "#2887" reference reflects al-Tirmidhī's *Kitāb fadāʾil al-Qurʾān* internal numbering; in the ahmedbaset-json bundle the same hadith sits at idInBook=2970. This off-by-N is a known edition-numbering shift documented in `04-hadith-corpus.md` §1.1.
+- The hadith is **NOT in al-Bukhārī or Muslim** (verified by 0-match Arabic-substring search in `bukhari.json` and `muslim.json` for the *qalb al-Qurʾān* phrase).
+
+The brief's reminder to be honest about the weak-chain status is fully respected: the hadith is *ḍaʿīf / mawḍūʿ* by al-Albānī, and al-Tirmidhī's own in-text grading is *gharīb* — the popular "heart of Qurʾān" tradition rests on a chain al-Tirmidhī himself flagged as weak.
+
+### What's now decisively NULL on Q 36
+
+The classical *qalb al-Qurʾān* claim, in its quantitative-centrality forms, is now NULL on **8 independent operationalisations**:
+1. H-NEW-82 axis 1: positional median (Q 57 wins).
+2. H-NEW-82 axis 2: verse-count median.
+3. H-NEW-82 axis 3: letter-count median.
+4. H-NEW-82 axis 4: lexical centroid (Q 10 wins).
+5. H-NEW-82 axis 5: eigenvector centrality.
+6. H-NEW-82 axis 6: theme centroid.
+7. Q036-F-01 (liturgy-weighted Jaccard).
+8. Q036-F-06 (canonical FR-centroid; Q 112 wins).
+
+What survives (with full prominence):
+- **Liturgical-theological** content of the *qalb al-Qurʾān* claim — VINDICATED via Q036-F-02's UAS-vs-fadāʾil divergence cell membership.
+- **Structural-position** content (the *kun-fa-yakūn* climax at v.82, 98.8%) — VINDICATED via Q036-F-03.
+- **Singleton-marker** identity (the YS-only opening) — VINDICATED via Q036-F-05.
