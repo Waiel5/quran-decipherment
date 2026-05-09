@@ -1,0 +1,175 @@
+{
+  "family_id": "Q053-F-family-2026-05-09",
+  "date": "2026-05-09",
+  "specialist": "Waiel Al-Shujaa",
+  "seed": 20260509,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.0167,
+  "n_perm": 20000,
+  "shas": {
+    "Q053-F-01": {
+      "filename": "Q053-F-01-vision-pericope-fr-cohesion-prereg.md",
+      "sha256": "d7c954bf3a151d9c630015a4977be261a59fb953fa03a04d1666047e340c14f0"
+    },
+    "Q053-F-02": {
+      "filename": "Q053-F-02-gharaniq-text-anomaly-prereg.md",
+      "sha256": "af6c4a8bd429ca5d5662ca11986865c232f404272f4f1ff2755d70cfceeefe88"
+    },
+    "Q053-F-03": {
+      "filename": "Q053-F-03-sajda-14-fr-cohesion-prereg.md",
+      "sha256": "cdbebcbbfe97c7f0881c1b3b4504b681a0b76a118186ad45b2231f56a6b60d5c"
+    }
+  },
+  "tests": {
+    "Q053-F-01": {
+      "test_id": "Q053-F-01",
+      "title": "Q 53 FR-nearest = Q 96 al-ʿAlaq",
+      "target_neighbor": 96,
+      "target_rank": 1,
+      "rank_threshold_confirmed": 1,
+      "verdict": "CONFIRMED",
+      "top_15_nearest": [
+        {
+          "rank": 1,
+          "surah": 96,
+          "distance": 0.712637
+        },
+        {
+          "rank": 2,
+          "surah": 87,
+          "distance": 0.748896
+        },
+        {
+          "rank": 3,
+          "surah": 92,
+          "distance": 0.763489
+        },
+        {
+          "rank": 4,
+          "surah": 110,
+          "distance": 0.775574
+        },
+        {
+          "rank": 5,
+          "surah": 102,
+          "distance": 0.776914
+        },
+        {
+          "rank": 6,
+          "surah": 1,
+          "distance": 0.777488
+        },
+        {
+          "rank": 7,
+          "surah": 93,
+          "distance": 0.782189
+        },
+        {
+          "rank": 8,
+          "surah": 81,
+          "distance": 0.782515
+        },
+        {
+          "rank": 9,
+          "surah": 108,
+          "distance": 0.787313
+        },
+        {
+          "rank": 10,
+          "surah": 91,
+          "distance": 0.790566
+        },
+        {
+          "rank": 11,
+          "surah": 100,
+          "distance": 0.793241
+        },
+        {
+          "rank": 12,
+          "surah": 79,
+          "distance": 0.794587
+        },
+        {
+          "rank": 13,
+          "surah": 99,
+          "distance": 0.795532
+        },
+        {
+          "rank": 14,
+          "surah": 112,
+          "distance": 0.79591
+        },
+        {
+          "rank": 15,
+          "surah": 94,
+          "distance": 0.79666
+        }
+      ],
+      "alpha_bon": 0.0167,
+      "bonferroni_k": 3,
+      "seed": 20260509,
+      "sha256_of_prereg": "d7c954bf3a151d9c630015a4977be261a59fb953fa03a04d1666047e340c14f0"
+    },
+    "Q053-F-02": {
+      "test_id": "Q053-F-02",
+      "title": "Q 53:19-23 text-anomaly null (gharānīq adversarial)",
+      "block": "Q 53:19-23",
+      "n_tokens": 41,
+      "n_unique": 38,
+      "ttr": 0.926829,
+      "n_total_windows": 5783,
+      "token_count_rank_low_to_high": 1831,
+      "token_count_pct": 0.3166,
+      "ttr_rank_low_to_high": 4486,
+      "ttr_pct": 0.7757,
+      "null_confirmed": true,
+      "verdict": "NULL CONFIRMED (text statistically typical — no lexical anomaly)",
+      "interpretation": "Q 53:19-23 lies within corpus 5%-95% range on both n_tokens and TTR — no detectable lexical anomaly suggestive of editorial-interpolation removal. This is the predicted reverse-direction outcome and provides one verification axis for the broader gharānīq-narrative falsification (see 04-hadith-corpus.md §6 and 05-classical-claims-audit.md §2).",
+      "alpha_bon": 0.0167,
+      "bonferroni_k": 3,
+      "seed": 20260509,
+      "sha256_of_prereg": "af6c4a8bd429ca5d5662ca11986865c232f404272f4f1ff2755d70cfceeefe88"
+    },
+    "Q053-F-03": {
+      "test_id": "Q053-F-03",
+      "title": "14 sajda-surahs FR cohesion test",
+      "sajda_14_surahs": [
+        7,
+        13,
+        16,
+        17,
+        19,
+        22,
+        25,
+        27,
+        32,
+        38,
+        41,
+        53,
+        84,
+        96
+      ],
+      "n_pairs": 91,
+      "d_sajda_within_cluster_mean": 0.941394,
+      "d_corpus_pairwise_mean": 0.923487,
+      "ratio_within_to_corpus": 1.019391,
+      "n_perm": 20000,
+      "null_mean": 0.923726,
+      "null_sd": 0.053133,
+      "z_score": 0.3325,
+      "perm_p_one_tailed": 0.58805,
+      "verdict": "NULL CONFIRMED (functional-classification, not content-cohesive)",
+      "interpretation": "14 sajda-surahs are NOT FR-content-cohesive (within-cluster mean is slightly ABOVE corpus baseline). The classical sujūd-al-tilāwah classification is functional-liturgical (where to prostrate during recitation), NOT a content-fingerprint classification. This adds the sajda-classification to the project's catalog of functional-classifications-without-content-cohesion (alongside H-NEW-68 Friday-recitation NULL, H-NEW-69 14-vs-14 alphabet-split NULL).",
+      "alpha_bon": 0.0167,
+      "bonferroni_k": 3,
+      "seed": 20260509,
+      "sha256_of_prereg": "cdbebcbbfe97c7f0881c1b3b4504b681a0b76a118186ad45b2231f56a6b60d5c"
+    }
+  },
+  "family_summary": {
+    "CONFIRMED": 1,
+    "PASS-DIRECTED": 0,
+    "NULL_CONFIRMED": 2,
+    "OTHER": 0
+  }
+}
