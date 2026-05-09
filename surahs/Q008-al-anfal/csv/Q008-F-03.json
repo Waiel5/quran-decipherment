@@ -1,0 +1,104 @@
+{
+  "test_id": "Q008-F-03",
+  "title": "qitāl-fī-sabīl-Allāh cluster FR-cohesion test",
+  "prereg_sha256": "fd442dbfd1dc245b7d931e2501fbd91e8fb89c27466439cc25e0f32fff92488f",
+  "prereg_sha256_verified": true,
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.0125,
+  "cluster": [
+    8,
+    9,
+    47,
+    48,
+    61
+  ],
+  "intra_cluster_pairs": [
+    [
+      8,
+      9,
+      0.910997
+    ],
+    [
+      8,
+      47,
+      0.913151
+    ],
+    [
+      8,
+      48,
+      0.899527
+    ],
+    [
+      8,
+      61,
+      0.944204
+    ],
+    [
+      9,
+      47,
+      1.02336
+    ],
+    [
+      9,
+      48,
+      0.870578
+    ],
+    [
+      9,
+      61,
+      0.936703
+    ],
+    [
+      47,
+      48,
+      0.889264
+    ],
+    [
+      47,
+      61,
+      0.863716
+    ],
+    [
+      48,
+      61,
+      0.787575
+    ]
+  ],
+  "D_intra": 0.9039075000000001,
+  "null_intra_mean": 0.92255057223,
+  "null_intra_std": 0.10150261988596651,
+  "null_intra_min": 0.3574629,
+  "null_intra_max": 1.2020998999999999,
+  "p_intra": 0.3399,
+  "D_q8_cluster": 0.91696975,
+  "D_q8_corpus": 1.0745190707964603,
+  "diff_q8": -0.15754932079646022,
+  "p_q8_specific": 0.0013,
+  "member_centrality_ranking": [
+    {
+      "surah": 48,
+      "mean_dist_to_others": 0.861736
+    },
+    {
+      "surah": 61,
+      "mean_dist_to_others": 0.8830495
+    },
+    {
+      "surah": 8,
+      "mean_dist_to_others": 0.91696975
+    },
+    {
+      "surah": 47,
+      "mean_dist_to_others": 0.9223727500000001
+    },
+    {
+      "surah": 9,
+      "mean_dist_to_others": 0.9354095
+    }
+  ],
+  "H1_pass": false,
+  "H2_pass": true,
+  "verdict": "DIRECTIONAL",
+  "interpretation": "Cluster cohesion test: {Q 8, 9, 47, 48, 61} qitāl-fī-sabīl-Allāh thematic group. If cohesive at FR level, Bonferroni-2 should pass."
+}

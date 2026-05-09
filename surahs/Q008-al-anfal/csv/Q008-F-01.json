@@ -1,0 +1,75 @@
+{
+  "test_id": "Q008-F-01",
+  "title": "Q 8 + Q 9 unity test (Ibn ʿAbbās one-surah claim adjudication)",
+  "prereg_sha256": "a2423796bdf29f272ea069b621c482383b84435548cac43d3931fd247f717681",
+  "prereg_sha256_verified": true,
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.01667,
+  "axis_A_FR_distance": {
+    "d_FR_q8_q9": 0.910997,
+    "adjacent_pairs_n": 113,
+    "adjacent_mean": 0.7589349999999999,
+    "adjacent_median": 0.816186,
+    "adjacent_std": 0.240901750824923,
+    "adjacent_min": 0.225639,
+    "adjacent_max": 1.177623,
+    "rank_le": 81,
+    "p_one_sided": 0.7168141592920354,
+    "H1_threshold": "rank_le ≤ 11",
+    "H1_pass": false
+  },
+  "axis_B_adjacency_cost": {
+    "q8_q9_delta_raw": 0.061243999999987864,
+    "q8_q9_fraction_residual": 0.007385203401793681,
+    "q8_q9_in_clamped_zero": false,
+    "n_clamped_zero_pairs": 13,
+    "rank_by_cost_descending": 58,
+    "q7_q8_context": {
+      "delta_raw": 0.2120109999999613,
+      "fraction_residual": 0.025565677591563328,
+      "rank_by_cost_descending": 10
+    },
+    "H2_threshold": "in clamped-zero set",
+    "H2_pass": false
+  },
+  "axis_C_root_jaccard": {
+    "J_q8_q9": 0.3504273504273504,
+    "rank_in_adjacent_pairs": 13,
+    "rank_in_all_pairs": 196,
+    "all_pairs_n": 6441,
+    "percentile_in_all_pairs": 3.0430057444496197,
+    "top_5_all_pair_J": [
+      [
+        2,
+        4,
+        0.4957142857142857
+      ],
+      [
+        2,
+        7,
+        0.4936708860759494
+      ],
+      [
+        6,
+        7,
+        0.4867549668874172
+      ],
+      [
+        2,
+        3,
+        0.47763347763347763
+      ],
+      [
+        6,
+        10,
+        0.475103734439834
+      ]
+    ],
+    "H3_threshold": "rank_in_all_pairs == 1",
+    "H3_pass": false
+  },
+  "verdict": "NULL-FALSIFIES-STRONG-IBN-ABBAS",
+  "pre_commit_violation": true,
+  "interpretation": "Q 8 and Q 9 are EMPIRICALLY DISTINCT SURAHS. The strong Ibn ʿAbbās 'one-surah' reading is FALSIFIED on all 3 axes. The al-Biqāʿī weaker thematic-continuity reading remains VINDICATED (the basmala-omission is preserved as a thematic-continuity marker)."
+}

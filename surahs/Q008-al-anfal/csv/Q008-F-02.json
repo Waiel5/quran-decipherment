@@ -1,0 +1,51 @@
+{
+  "test_id": "Q008-F-02",
+  "title": "Q 8:17 yaqīn-formula corpus-singleton test",
+  "prereg_sha256": "07b8e87374de1e7a5733169b78a1fc0aaa773abfac7cdbf922de336df11c1f20",
+  "prereg_sha256_verified": true,
+  "seed": 20260509,
+  "alpha_bon": 0.025,
+  "strict_pattern": "(?:^|\\s)(?:و|ف)?ما\\s+(\\S+)\\s+(?:إذ|اذ)\\s+(\\S+)(?:\\s+\\S+){0,3}\\s+و?لكنّ? + V₁=V₂",
+  "loose_pattern": "(?:^|\\s)(?:و|ف)?ما\\s+(\\S+)\\s+(?:إذ|اذ)\\s+(\\S+)",
+  "N_strict_with_V_identity": 1,
+  "strict_matches": [
+    {
+      "surah": 8,
+      "verse": 17,
+      "V": "رميت",
+      "text": "فلم تقتلوهم ولكن الله قتلهم ۚ وما رميت إذ رميت ولكن الله رمى ۚ وليبلي المؤمنين منه بلاء حسنا ۚ إن الله سميع عليم"
+    }
+  ],
+  "N_loose": 3,
+  "loose_matches": [
+    {
+      "surah": 8,
+      "verse": 17,
+      "V1": "رميت",
+      "V2": "رميت",
+      "text": "فلم تقتلوهم ولكن الله قتلهم ۚ وما رميت إذ رميت ولكن الله رمى ۚ وليبلي المؤمنين منه بلاء حسنا ۚ إن الله سميع عليم"
+    },
+    {
+      "surah": 12,
+      "verse": 51,
+      "V1": "خطبكن",
+      "V2": "راودتن",
+      "text": "قال ما خطبكن إذ راودتن يوسف عن نفسه ۚ قلن حاش لله ما علمنا عليه من سوء ۚ قالت امرأت العزيز الآن حصحص الحق أنا راودته عن نفسه وإنه لمن الصادقين"
+    },
+    {
+      "surah": 20,
+      "verse": 92,
+      "V1": "منعك",
+      "V2": "رأيتهم",
+      "text": "قال يا هارون ما منعك إذ رأيتهم ضلوا"
+    }
+  ],
+  "q817_strict_match": true,
+  "q817_loose_count": 1,
+  "uniqueness_q817_strict": true,
+  "uniqueness_q817_loose": 0.3333333333333333,
+  "H1_pass": true,
+  "H2_pass": true,
+  "verdict": "CONFIRMED-CORPUS-SINGLETON",
+  "interpretation": "Q 8:17 contains the corpus-singleton yaqīn-formula 'wa-mā [V] idh [V] wa-lākin'. The construction is found exactly once in 6,236 verses, vindicating the classical balāgha tradition (al-Bāqillānī, al-Rāzī) identification of Q 8:17 as the iʿjāz-keystone of takhrīj al-fāʿil (agency-transfer)."
+}
