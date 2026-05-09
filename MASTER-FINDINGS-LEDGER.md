@@ -2853,3 +2853,42 @@ Q 31 (Luqmān), Q 34 (Sabaʾ), Q 35 (Fāṭir), Q 39 (al-Zumar — files written
 
 These will be integrated in subsequent ledger entries as they land. **Total project status post-Wave-H**: ~62 surah deep-dives complete, ~52 in-flight or pending; 13 of corpus's 114 surahs not yet dispatched (Q 21-25 some, Q 26, Q 36-46 some); no surah remains unverified-untested past today.
 
+---
+
+## §10.46 H-NEW-1350 inline (2026-05-09 PM continuation) — Allāh-density corpus distribution + Medinan/Meccan separation
+
+**Status**: PASS-DIRECTED (single planned test; independent replication required for promotion).
+
+**Pre-reg SHA256**: `b41ee6b93e09a1ab25655a50edb4ad0f6e14198e4a7a12f34d2e8b6a90bd434f`
+**Files**: `findings/phase-b-hypotheses/prereg-h-new-1350-allah-density-corpus.md`, `scripts/h-new-1350.py`, `csv/h-new-1350.json`, `h-new-1350-allah-density-corpus.md`.
+
+**Hypothesis (pre-locked)**: Medinan surahs > Meccan surahs on per-surah per-verse *Allāh* coverage (substring الله; `data/revelation-order.csv` "period" column; one-sided Mann-Whitney U; 10,000 label-permutation null preserving 86/28 marginals; α=0.05; k=1, no Bonferroni).
+
+**Result**:
+- mean Meccan coverage = 0.1204; mean Medinan = 0.6222 (5.2× ratio).
+- median Meccan = 0.0446; median Medinan = 0.6849.
+- U(Medinan vs Meccan) = 2218.0 of max 2408 (Medinan beats Meccan in 92.1% of all 2408 pairwise comparisons; expected under null = 1204).
+- **p_perm (one-sided) = 0.00010 (0 of 10,000 random label shuffles ≥ observed)**.
+- Direction matches pre-reg lock: ✓.
+
+**Top-10 by per-verse coverage are 10/10 Medinan**:
+Q 58 (1.000, 22/22) > Q 48 (0.862, 25/29) > Q 60 (0.846, 11/13) > Q 24 (0.781, 50/64) > Q 49 (0.778, 14/18) > Q 9 (0.775, 100/129) > Q 4 (0.750, 132/176) > Q 65 (0.750, 9/12) > Q 5 (0.733, 88/120) > Q 63 (0.727, 8/11).
+
+**Bottom-10 are 10/10 Meccan** (all at coverage 0.000): Q 102, 103, 105, 106, 107, 108, 109, 111, 113, 114.
+
+**Independent corroboration**: drawing 10 Medinan from 28 Medinan + 86 Meccan in the top 10 has hypergeometric p ≈ 4.4×10⁻⁶ — a separate statistic giving the same verdict.
+
+**Q 58 al-Mujādala corpus-MAX confirmed**: rank 1/114, coverage = 1.0000. Extends Q058-F-01's H2 (corpus-uniqueness at length ≥ 5) to the full 114-surah distribution.
+
+**Secondary per-word density (descriptive, NOT pre-reg-bound)**: Q 112 al-Ikhlāṣ tops the per-word density list (0.133, 2/15 — a Meccan creed surah where *Allāh* saturates content-words), inverting the Medinan-dominated per-verse view. The per-word density top-10 is still 9 of 10 Medinan (Q 110, 58, 65, 64, 49, 61, 33, 8, 9).
+
+**Classical anchor**: al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 9-10 lists high *Allāh* invocation as a Medinan marker. H-NEW-1350 provides the first project-internal corpus-wide empirical test of this classical marker; verdict = empirically corroborated at p_perm = 10⁻⁴ in the pre-committed direction.
+
+**Open follow-ups** (queued for independent replication / next Wave):
+1. Nöldeke-only chronology re-run (using `noldeke_order` + `noldeke_phase`).
+2. Strict-isolated-token variant (exact-token *Allāh*, no prefixes) corpus-wide.
+3. Late-Meccan vs Medinan sub-split (does Late-Meccan tilt up toward Medinan on Allāh-coverage?).
+4. Cross-corpus baseline against pre-Islamic poetry and Bukhari hadith (Quran-specific?).
+
+**Connection to existing findings**: Confirms and corpus-contextualizes Q058-F-01; orthogonal to muqaṭṭāʿat structure (cross-finding-008); empirically corroborates al-Suyūṭī's Meccan/Medinan marker tradition.
+

@@ -1,0 +1,1187 @@
+{
+  "finding_id": "H-NEW-1350",
+  "pre_reg_sha256": "b41ee6b93e09a1ab25655a50edb4ad0f6e14198e4a7a12f34d2e8b6a90bd434f",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, substring الله, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "chronology_source": "data/revelation-order.csv (al-Suyūṭī / Tanzil Egyptian Standard + Nöldeke phase)",
+  "hypothesis": "Medinan > Meccan per-verse Allāh-coverage (one-sided Mann-Whitney U)",
+  "n_meccan": 86,
+  "n_medinan": 28,
+  "mean_meccan_coverage": 0.12040850198438054,
+  "mean_medinan_coverage": 0.6222022887832767,
+  "median_meccan_coverage": 0.044642857142857144,
+  "median_medinan_coverage": 0.684931506849315,
+  "u_observed": 2218.0,
+  "u_max": 2408,
+  "u_expected_under_null": 1204.0,
+  "direction_observed": "Medinan > Meccan",
+  "direction_matches_prereg": true,
+  "p_perm_one_sided": 9.999000099990002e-05,
+  "n_extreme_perms": 0,
+  "verdict": "PASS-DIRECTED",
+  "q58_corpus_rank": 1,
+  "q58_coverage": 1.0,
+  "q58_n_verses_with_allah": 22,
+  "q58_n_verses": 22,
+  "top_10_by_coverage": [
+    {
+      "rank": 1,
+      "sid": 58,
+      "n_verses": 22,
+      "n_verses_with_allah": 22,
+      "coverage": 1.0,
+      "period": "Medinan"
+    },
+    {
+      "rank": 2,
+      "sid": 48,
+      "n_verses": 29,
+      "n_verses_with_allah": 25,
+      "coverage": 0.8620689655172413,
+      "period": "Medinan"
+    },
+    {
+      "rank": 3,
+      "sid": 60,
+      "n_verses": 13,
+      "n_verses_with_allah": 11,
+      "coverage": 0.8461538461538461,
+      "period": "Medinan"
+    },
+    {
+      "rank": 4,
+      "sid": 24,
+      "n_verses": 64,
+      "n_verses_with_allah": 50,
+      "coverage": 0.78125,
+      "period": "Medinan"
+    },
+    {
+      "rank": 5,
+      "sid": 49,
+      "n_verses": 18,
+      "n_verses_with_allah": 14,
+      "coverage": 0.7777777777777778,
+      "period": "Medinan"
+    },
+    {
+      "rank": 6,
+      "sid": 9,
+      "n_verses": 129,
+      "n_verses_with_allah": 100,
+      "coverage": 0.7751937984496124,
+      "period": "Medinan"
+    },
+    {
+      "rank": 7,
+      "sid": 4,
+      "n_verses": 176,
+      "n_verses_with_allah": 132,
+      "coverage": 0.75,
+      "period": "Medinan"
+    },
+    {
+      "rank": 8,
+      "sid": 65,
+      "n_verses": 12,
+      "n_verses_with_allah": 9,
+      "coverage": 0.75,
+      "period": "Medinan"
+    },
+    {
+      "rank": 9,
+      "sid": 5,
+      "n_verses": 120,
+      "n_verses_with_allah": 88,
+      "coverage": 0.7333333333333333,
+      "period": "Medinan"
+    },
+    {
+      "rank": 10,
+      "sid": 63,
+      "n_verses": 11,
+      "n_verses_with_allah": 8,
+      "coverage": 0.7272727272727273,
+      "period": "Medinan"
+    }
+  ],
+  "bottom_10_by_coverage": [
+    {
+      "rank": 105,
+      "sid": 102,
+      "n_verses": 8,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 106,
+      "sid": 103,
+      "n_verses": 3,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 107,
+      "sid": 105,
+      "n_verses": 5,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 108,
+      "sid": 106,
+      "n_verses": 4,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 109,
+      "sid": 107,
+      "n_verses": 7,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 110,
+      "sid": 108,
+      "n_verses": 3,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 111,
+      "sid": 109,
+      "n_verses": 6,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 112,
+      "sid": 111,
+      "n_verses": 5,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 113,
+      "sid": 113,
+      "n_verses": 5,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 114,
+      "sid": 114,
+      "n_verses": 6,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan"
+    }
+  ],
+  "per_surah_full_table": [
+    {
+      "sid": 1,
+      "n_verses": 7,
+      "n_verses_with_allah": 1,
+      "coverage": 0.14285714285714285,
+      "period": "Meccan",
+      "corpus_rank": 48
+    },
+    {
+      "sid": 2,
+      "n_verses": 286,
+      "n_verses_with_allah": 165,
+      "coverage": 0.5769230769230769,
+      "period": "Medinan",
+      "corpus_rank": 22
+    },
+    {
+      "sid": 3,
+      "n_verses": 200,
+      "n_verses_with_allah": 131,
+      "coverage": 0.655,
+      "period": "Medinan",
+      "corpus_rank": 18
+    },
+    {
+      "sid": 4,
+      "n_verses": 176,
+      "n_verses_with_allah": 132,
+      "coverage": 0.75,
+      "period": "Medinan",
+      "corpus_rank": 7
+    },
+    {
+      "sid": 5,
+      "n_verses": 120,
+      "n_verses_with_allah": 88,
+      "coverage": 0.7333333333333333,
+      "period": "Medinan",
+      "corpus_rank": 9
+    },
+    {
+      "sid": 6,
+      "n_verses": 165,
+      "n_verses_with_allah": 58,
+      "coverage": 0.3515151515151515,
+      "period": "Meccan",
+      "corpus_rank": 37
+    },
+    {
+      "sid": 7,
+      "n_verses": 206,
+      "n_verses_with_allah": 44,
+      "coverage": 0.21359223300970873,
+      "period": "Meccan",
+      "corpus_rank": 46
+    },
+    {
+      "sid": 8,
+      "n_verses": 75,
+      "n_verses_with_allah": 53,
+      "coverage": 0.7066666666666667,
+      "period": "Medinan",
+      "corpus_rank": 13
+    },
+    {
+      "sid": 9,
+      "n_verses": 129,
+      "n_verses_with_allah": 100,
+      "coverage": 0.7751937984496124,
+      "period": "Medinan",
+      "corpus_rank": 6
+    },
+    {
+      "sid": 10,
+      "n_verses": 109,
+      "n_verses_with_allah": 47,
+      "coverage": 0.43119266055045874,
+      "period": "Meccan",
+      "corpus_rank": 33
+    },
+    {
+      "sid": 11,
+      "n_verses": 123,
+      "n_verses_with_allah": 32,
+      "coverage": 0.2601626016260163,
+      "period": "Meccan",
+      "corpus_rank": 42
+    },
+    {
+      "sid": 12,
+      "n_verses": 111,
+      "n_verses_with_allah": 32,
+      "coverage": 0.2882882882882883,
+      "period": "Meccan",
+      "corpus_rank": 40
+    },
+    {
+      "sid": 13,
+      "n_verses": 43,
+      "n_verses_with_allah": 21,
+      "coverage": 0.4883720930232558,
+      "period": "Medinan",
+      "corpus_rank": 28
+    },
+    {
+      "sid": 14,
+      "n_verses": 52,
+      "n_verses_with_allah": 25,
+      "coverage": 0.4807692307692308,
+      "period": "Meccan",
+      "corpus_rank": 29
+    },
+    {
+      "sid": 15,
+      "n_verses": 99,
+      "n_verses_with_allah": 2,
+      "coverage": 0.020202020202020204,
+      "period": "Meccan",
+      "corpus_rank": 83
+    },
+    {
+      "sid": 16,
+      "n_verses": 128,
+      "n_verses_with_allah": 59,
+      "coverage": 0.4609375,
+      "period": "Meccan",
+      "corpus_rank": 30
+    },
+    {
+      "sid": 17,
+      "n_verses": 111,
+      "n_verses_with_allah": 9,
+      "coverage": 0.08108108108108109,
+      "period": "Meccan",
+      "corpus_rank": 56
+    },
+    {
+      "sid": 18,
+      "n_verses": 110,
+      "n_verses_with_allah": 12,
+      "coverage": 0.10909090909090909,
+      "period": "Meccan",
+      "corpus_rank": 54
+    },
+    {
+      "sid": 19,
+      "n_verses": 98,
+      "n_verses_with_allah": 7,
+      "coverage": 0.07142857142857142,
+      "period": "Meccan",
+      "corpus_rank": 59
+    },
+    {
+      "sid": 20,
+      "n_verses": 135,
+      "n_verses_with_allah": 6,
+      "coverage": 0.044444444444444446,
+      "period": "Meccan",
+      "corpus_rank": 70
+    },
+    {
+      "sid": 21,
+      "n_verses": 112,
+      "n_verses_with_allah": 5,
+      "coverage": 0.044642857142857144,
+      "period": "Meccan",
+      "corpus_rank": 69
+    },
+    {
+      "sid": 22,
+      "n_verses": 78,
+      "n_verses_with_allah": 48,
+      "coverage": 0.6153846153846154,
+      "period": "Medinan",
+      "corpus_rank": 21
+    },
+    {
+      "sid": 23,
+      "n_verses": 118,
+      "n_verses_with_allah": 8,
+      "coverage": 0.06779661016949153,
+      "period": "Meccan",
+      "corpus_rank": 60
+    },
+    {
+      "sid": 24,
+      "n_verses": 64,
+      "n_verses_with_allah": 50,
+      "coverage": 0.78125,
+      "period": "Medinan",
+      "corpus_rank": 4
+    },
+    {
+      "sid": 25,
+      "n_verses": 77,
+      "n_verses_with_allah": 6,
+      "coverage": 0.07792207792207792,
+      "period": "Meccan",
+      "corpus_rank": 57
+    },
+    {
+      "sid": 26,
+      "n_verses": 227,
+      "n_verses_with_allah": 13,
+      "coverage": 0.05726872246696035,
+      "period": "Meccan",
+      "corpus_rank": 62
+    },
+    {
+      "sid": 27,
+      "n_verses": 93,
+      "n_verses_with_allah": 20,
+      "coverage": 0.21505376344086022,
+      "period": "Meccan",
+      "corpus_rank": 44
+    },
+    {
+      "sid": 28,
+      "n_verses": 88,
+      "n_verses_with_allah": 20,
+      "coverage": 0.22727272727272727,
+      "period": "Meccan",
+      "corpus_rank": 43
+    },
+    {
+      "sid": 29,
+      "n_verses": 69,
+      "n_verses_with_allah": 30,
+      "coverage": 0.43478260869565216,
+      "period": "Meccan",
+      "corpus_rank": 31
+    },
+    {
+      "sid": 30,
+      "n_verses": 60,
+      "n_verses_with_allah": 20,
+      "coverage": 0.3333333333333333,
+      "period": "Meccan",
+      "corpus_rank": 39
+    },
+    {
+      "sid": 31,
+      "n_verses": 34,
+      "n_verses_with_allah": 21,
+      "coverage": 0.6176470588235294,
+      "period": "Meccan",
+      "corpus_rank": 20
+    },
+    {
+      "sid": 32,
+      "n_verses": 30,
+      "n_verses_with_allah": 1,
+      "coverage": 0.03333333333333333,
+      "period": "Meccan",
+      "corpus_rank": 77
+    },
+    {
+      "sid": 33,
+      "n_verses": 73,
+      "n_verses_with_allah": 50,
+      "coverage": 0.684931506849315,
+      "period": "Medinan",
+      "corpus_rank": 14
+    },
+    {
+      "sid": 34,
+      "n_verses": 54,
+      "n_verses_with_allah": 6,
+      "coverage": 0.1111111111111111,
+      "period": "Meccan",
+      "corpus_rank": 52
+    },
+    {
+      "sid": 35,
+      "n_verses": 45,
+      "n_verses_with_allah": 25,
+      "coverage": 0.5555555555555556,
+      "period": "Meccan",
+      "corpus_rank": 23
+    },
+    {
+      "sid": 36,
+      "n_verses": 83,
+      "n_verses_with_allah": 2,
+      "coverage": 0.024096385542168676,
+      "period": "Meccan",
+      "corpus_rank": 78
+    },
+    {
+      "sid": 37,
+      "n_verses": 182,
+      "n_verses_with_allah": 14,
+      "coverage": 0.07692307692307693,
+      "period": "Meccan",
+      "corpus_rank": 58
+    },
+    {
+      "sid": 38,
+      "n_verses": 88,
+      "n_verses_with_allah": 2,
+      "coverage": 0.022727272727272728,
+      "period": "Meccan",
+      "corpus_rank": 79
+    },
+    {
+      "sid": 39,
+      "n_verses": 75,
+      "n_verses_with_allah": 40,
+      "coverage": 0.5333333333333333,
+      "period": "Meccan",
+      "corpus_rank": 26
+    },
+    {
+      "sid": 40,
+      "n_verses": 85,
+      "n_verses_with_allah": 36,
+      "coverage": 0.4235294117647059,
+      "period": "Meccan",
+      "corpus_rank": 34
+    },
+    {
+      "sid": 41,
+      "n_verses": 54,
+      "n_verses_with_allah": 10,
+      "coverage": 0.18518518518518517,
+      "period": "Meccan",
+      "corpus_rank": 47
+    },
+    {
+      "sid": 42,
+      "n_verses": 53,
+      "n_verses_with_allah": 23,
+      "coverage": 0.4339622641509434,
+      "period": "Meccan",
+      "corpus_rank": 32
+    },
+    {
+      "sid": 43,
+      "n_verses": 89,
+      "n_verses_with_allah": 3,
+      "coverage": 0.033707865168539325,
+      "period": "Meccan",
+      "corpus_rank": 76
+    },
+    {
+      "sid": 44,
+      "n_verses": 59,
+      "n_verses_with_allah": 3,
+      "coverage": 0.05084745762711865,
+      "period": "Meccan",
+      "corpus_rank": 65
+    },
+    {
+      "sid": 45,
+      "n_verses": 37,
+      "n_verses_with_allah": 13,
+      "coverage": 0.35135135135135137,
+      "period": "Meccan",
+      "corpus_rank": 38
+    },
+    {
+      "sid": 46,
+      "n_verses": 35,
+      "n_verses_with_allah": 14,
+      "coverage": 0.4,
+      "period": "Meccan",
+      "corpus_rank": 35
+    },
+    {
+      "sid": 47,
+      "n_verses": 38,
+      "n_verses_with_allah": 21,
+      "coverage": 0.5526315789473685,
+      "period": "Medinan",
+      "corpus_rank": 24
+    },
+    {
+      "sid": 48,
+      "n_verses": 29,
+      "n_verses_with_allah": 25,
+      "coverage": 0.8620689655172413,
+      "period": "Medinan",
+      "corpus_rank": 2
+    },
+    {
+      "sid": 49,
+      "n_verses": 18,
+      "n_verses_with_allah": 14,
+      "coverage": 0.7777777777777778,
+      "period": "Medinan",
+      "corpus_rank": 5
+    },
+    {
+      "sid": 50,
+      "n_verses": 45,
+      "n_verses_with_allah": 1,
+      "coverage": 0.022222222222222223,
+      "period": "Meccan",
+      "corpus_rank": 81
+    },
+    {
+      "sid": 51,
+      "n_verses": 60,
+      "n_verses_with_allah": 3,
+      "coverage": 0.05,
+      "period": "Meccan",
+      "corpus_rank": 66
+    },
+    {
+      "sid": 52,
+      "n_verses": 49,
+      "n_verses_with_allah": 2,
+      "coverage": 0.04081632653061224,
+      "period": "Meccan",
+      "corpus_rank": 71
+    },
+    {
+      "sid": 53,
+      "n_verses": 62,
+      "n_verses_with_allah": 3,
+      "coverage": 0.04838709677419355,
+      "period": "Meccan",
+      "corpus_rank": 68
+    },
+    {
+      "sid": 54,
+      "n_verses": 55,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 86
+    },
+    {
+      "sid": 55,
+      "n_verses": 78,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Medinan",
+      "corpus_rank": 87
+    },
+    {
+      "sid": 56,
+      "n_verses": 96,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 88
+    },
+    {
+      "sid": 57,
+      "n_verses": 29,
+      "n_verses_with_allah": 21,
+      "coverage": 0.7241379310344828,
+      "period": "Medinan",
+      "corpus_rank": 11
+    },
+    {
+      "sid": 58,
+      "n_verses": 22,
+      "n_verses_with_allah": 22,
+      "coverage": 1.0,
+      "period": "Medinan",
+      "corpus_rank": 1
+    },
+    {
+      "sid": 59,
+      "n_verses": 24,
+      "n_verses_with_allah": 16,
+      "coverage": 0.6666666666666666,
+      "period": "Medinan",
+      "corpus_rank": 15
+    },
+    {
+      "sid": 60,
+      "n_verses": 13,
+      "n_verses_with_allah": 11,
+      "coverage": 0.8461538461538461,
+      "period": "Medinan",
+      "corpus_rank": 3
+    },
+    {
+      "sid": 61,
+      "n_verses": 14,
+      "n_verses_with_allah": 9,
+      "coverage": 0.6428571428571429,
+      "period": "Medinan",
+      "corpus_rank": 19
+    },
+    {
+      "sid": 62,
+      "n_verses": 11,
+      "n_verses_with_allah": 6,
+      "coverage": 0.5454545454545454,
+      "period": "Medinan",
+      "corpus_rank": 25
+    },
+    {
+      "sid": 63,
+      "n_verses": 11,
+      "n_verses_with_allah": 8,
+      "coverage": 0.7272727272727273,
+      "period": "Medinan",
+      "corpus_rank": 10
+    },
+    {
+      "sid": 64,
+      "n_verses": 18,
+      "n_verses_with_allah": 13,
+      "coverage": 0.7222222222222222,
+      "period": "Medinan",
+      "corpus_rank": 12
+    },
+    {
+      "sid": 65,
+      "n_verses": 12,
+      "n_verses_with_allah": 9,
+      "coverage": 0.75,
+      "period": "Medinan",
+      "corpus_rank": 8
+    },
+    {
+      "sid": 66,
+      "n_verses": 12,
+      "n_verses_with_allah": 8,
+      "coverage": 0.6666666666666666,
+      "period": "Medinan",
+      "corpus_rank": 16
+    },
+    {
+      "sid": 67,
+      "n_verses": 30,
+      "n_verses_with_allah": 3,
+      "coverage": 0.1,
+      "period": "Meccan",
+      "corpus_rank": 55
+    },
+    {
+      "sid": 68,
+      "n_verses": 52,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 89
+    },
+    {
+      "sid": 69,
+      "n_verses": 52,
+      "n_verses_with_allah": 1,
+      "coverage": 0.019230769230769232,
+      "period": "Meccan",
+      "corpus_rank": 85
+    },
+    {
+      "sid": 70,
+      "n_verses": 44,
+      "n_verses_with_allah": 1,
+      "coverage": 0.022727272727272728,
+      "period": "Meccan",
+      "corpus_rank": 80
+    },
+    {
+      "sid": 71,
+      "n_verses": 28,
+      "n_verses_with_allah": 6,
+      "coverage": 0.21428571428571427,
+      "period": "Meccan",
+      "corpus_rank": 45
+    },
+    {
+      "sid": 72,
+      "n_verses": 28,
+      "n_verses_with_allah": 8,
+      "coverage": 0.2857142857142857,
+      "period": "Meccan",
+      "corpus_rank": 41
+    },
+    {
+      "sid": 73,
+      "n_verses": 20,
+      "n_verses_with_allah": 1,
+      "coverage": 0.05,
+      "period": "Meccan",
+      "corpus_rank": 67
+    },
+    {
+      "sid": 74,
+      "n_verses": 56,
+      "n_verses_with_allah": 2,
+      "coverage": 0.03571428571428571,
+      "period": "Meccan",
+      "corpus_rank": 74
+    },
+    {
+      "sid": 75,
+      "n_verses": 40,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 90
+    },
+    {
+      "sid": 76,
+      "n_verses": 31,
+      "n_verses_with_allah": 4,
+      "coverage": 0.12903225806451613,
+      "period": "Medinan",
+      "corpus_rank": 50
+    },
+    {
+      "sid": 77,
+      "n_verses": 50,
+      "n_verses_with_allah": 1,
+      "coverage": 0.02,
+      "period": "Meccan",
+      "corpus_rank": 84
+    },
+    {
+      "sid": 78,
+      "n_verses": 40,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 91
+    },
+    {
+      "sid": 79,
+      "n_verses": 46,
+      "n_verses_with_allah": 1,
+      "coverage": 0.021739130434782608,
+      "period": "Meccan",
+      "corpus_rank": 82
+    },
+    {
+      "sid": 80,
+      "n_verses": 42,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 92
+    },
+    {
+      "sid": 81,
+      "n_verses": 29,
+      "n_verses_with_allah": 1,
+      "coverage": 0.034482758620689655,
+      "period": "Meccan",
+      "corpus_rank": 75
+    },
+    {
+      "sid": 82,
+      "n_verses": 19,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 93
+    },
+    {
+      "sid": 83,
+      "n_verses": 36,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 94
+    },
+    {
+      "sid": 84,
+      "n_verses": 25,
+      "n_verses_with_allah": 1,
+      "coverage": 0.04,
+      "period": "Meccan",
+      "corpus_rank": 72
+    },
+    {
+      "sid": 85,
+      "n_verses": 22,
+      "n_verses_with_allah": 3,
+      "coverage": 0.13636363636363635,
+      "period": "Meccan",
+      "corpus_rank": 49
+    },
+    {
+      "sid": 86,
+      "n_verses": 17,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 95
+    },
+    {
+      "sid": 87,
+      "n_verses": 19,
+      "n_verses_with_allah": 1,
+      "coverage": 0.05263157894736842,
+      "period": "Meccan",
+      "corpus_rank": 63
+    },
+    {
+      "sid": 88,
+      "n_verses": 26,
+      "n_verses_with_allah": 1,
+      "coverage": 0.038461538461538464,
+      "period": "Meccan",
+      "corpus_rank": 73
+    },
+    {
+      "sid": 89,
+      "n_verses": 30,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 96
+    },
+    {
+      "sid": 90,
+      "n_verses": 20,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 97
+    },
+    {
+      "sid": 91,
+      "n_verses": 15,
+      "n_verses_with_allah": 1,
+      "coverage": 0.06666666666666667,
+      "period": "Meccan",
+      "corpus_rank": 61
+    },
+    {
+      "sid": 92,
+      "n_verses": 21,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 98
+    },
+    {
+      "sid": 93,
+      "n_verses": 11,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 99
+    },
+    {
+      "sid": 94,
+      "n_verses": 8,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 100
+    },
+    {
+      "sid": 95,
+      "n_verses": 8,
+      "n_verses_with_allah": 1,
+      "coverage": 0.125,
+      "period": "Meccan",
+      "corpus_rank": 51
+    },
+    {
+      "sid": 96,
+      "n_verses": 19,
+      "n_verses_with_allah": 1,
+      "coverage": 0.05263157894736842,
+      "period": "Meccan",
+      "corpus_rank": 64
+    },
+    {
+      "sid": 97,
+      "n_verses": 5,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 101
+    },
+    {
+      "sid": 98,
+      "n_verses": 8,
+      "n_verses_with_allah": 3,
+      "coverage": 0.375,
+      "period": "Medinan",
+      "corpus_rank": 36
+    },
+    {
+      "sid": 99,
+      "n_verses": 8,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Medinan",
+      "corpus_rank": 102
+    },
+    {
+      "sid": 100,
+      "n_verses": 11,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 103
+    },
+    {
+      "sid": 101,
+      "n_verses": 11,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 104
+    },
+    {
+      "sid": 102,
+      "n_verses": 8,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 105
+    },
+    {
+      "sid": 103,
+      "n_verses": 3,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 106
+    },
+    {
+      "sid": 104,
+      "n_verses": 9,
+      "n_verses_with_allah": 1,
+      "coverage": 0.1111111111111111,
+      "period": "Meccan",
+      "corpus_rank": 53
+    },
+    {
+      "sid": 105,
+      "n_verses": 5,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 107
+    },
+    {
+      "sid": 106,
+      "n_verses": 4,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 108
+    },
+    {
+      "sid": 107,
+      "n_verses": 7,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 109
+    },
+    {
+      "sid": 108,
+      "n_verses": 3,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 110
+    },
+    {
+      "sid": 109,
+      "n_verses": 6,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 111
+    },
+    {
+      "sid": 110,
+      "n_verses": 3,
+      "n_verses_with_allah": 2,
+      "coverage": 0.6666666666666666,
+      "period": "Medinan",
+      "corpus_rank": 17
+    },
+    {
+      "sid": 111,
+      "n_verses": 5,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 112
+    },
+    {
+      "sid": 112,
+      "n_verses": 4,
+      "n_verses_with_allah": 2,
+      "coverage": 0.5,
+      "period": "Meccan",
+      "corpus_rank": 27
+    },
+    {
+      "sid": 113,
+      "n_verses": 5,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 113
+    },
+    {
+      "sid": 114,
+      "n_verses": 6,
+      "n_verses_with_allah": 0,
+      "coverage": 0.0,
+      "period": "Meccan",
+      "corpus_rank": 114
+    }
+  ],
+  "secondary_per_word_density_top_10": [
+    {
+      "rank": 1,
+      "sid": 112,
+      "allah_per_word": 0.13333333333333333,
+      "n_allah_substrings": 2,
+      "n_words": 15,
+      "period": "Meccan"
+    },
+    {
+      "rank": 2,
+      "sid": 110,
+      "allah_per_word": 0.10526315789473684,
+      "n_allah_substrings": 2,
+      "n_words": 19,
+      "period": "Medinan"
+    },
+    {
+      "rank": 3,
+      "sid": 58,
+      "allah_per_word": 0.08421052631578947,
+      "n_allah_substrings": 40,
+      "n_words": 475,
+      "period": "Medinan"
+    },
+    {
+      "rank": 4,
+      "sid": 65,
+      "allah_per_word": 0.08304498269896193,
+      "n_allah_substrings": 24,
+      "n_words": 289,
+      "period": "Medinan"
+    },
+    {
+      "rank": 5,
+      "sid": 64,
+      "allah_per_word": 0.07851239669421488,
+      "n_allah_substrings": 19,
+      "n_words": 242,
+      "period": "Medinan"
+    },
+    {
+      "rank": 6,
+      "sid": 49,
+      "allah_per_word": 0.0764872521246459,
+      "n_allah_substrings": 27,
+      "n_words": 353,
+      "period": "Medinan"
+    },
+    {
+      "rank": 7,
+      "sid": 61,
+      "allah_per_word": 0.07079646017699115,
+      "n_allah_substrings": 16,
+      "n_words": 226,
+      "period": "Medinan"
+    },
+    {
+      "rank": 8,
+      "sid": 33,
+      "allah_per_word": 0.06830391404451266,
+      "n_allah_substrings": 89,
+      "n_words": 1303,
+      "period": "Medinan"
+    },
+    {
+      "rank": 9,
+      "sid": 8,
+      "allah_per_word": 0.06810897435897435,
+      "n_allah_substrings": 85,
+      "n_words": 1248,
+      "period": "Medinan"
+    },
+    {
+      "rank": 10,
+      "sid": 9,
+      "allah_per_word": 0.0665073675826364,
+      "n_allah_substrings": 167,
+      "n_words": 2511,
+      "period": "Medinan"
+    }
+  ]
+}
