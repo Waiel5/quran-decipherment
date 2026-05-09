@@ -1,0 +1,42 @@
+{
+  "test_id": "Q064-F-03",
+  "title": "Q 64:9 *taghābun* root g-b-n hapax-status",
+  "prereg_sha256": "f8ba5e1a6a3a0bac738594d5d802d43685274c113217a5b1c93e69dd87a92d09",
+  "seed": null,
+  "n_perm": 0,
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05,
+  "rules_tuple": "(no-tashkeel, QAC-v0.4-root-index, basmala-counted-only-in-Q1, Hafs-Kufan)",
+  "data_source": [
+    "data/morphology/root-index.json",
+    "quran-text/quran-no-tashkeel.json"
+  ],
+  "root_key_buckwalter": "gbn",
+  "root_arabic": "غ-ب-ن",
+  "n_root_attestations_qac_v04": 1,
+  "root_locations": [
+    [
+      64,
+      9,
+      7
+    ]
+  ],
+  "surface_form_substring_hits": [
+    {
+      "surah": 64,
+      "verse": 9,
+      "word_idx": 7,
+      "token": "التغابن",
+      "matched_patterns": [
+        "غابن",
+        "تغابن"
+      ]
+    }
+  ],
+  "n_surface_hits": 1,
+  "qac_surface_consistency": true,
+  "H1_corpus_exact_root_hapax": true,
+  "H2_unique_location_q64_9_w7": true,
+  "H3_surface_form_unique": true,
+  "verdict": "CORPUS-EXACT-HAPAX-CONFIRMED"
+}

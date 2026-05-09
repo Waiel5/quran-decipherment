@@ -1,0 +1,220 @@
+{
+  "test_id": "Q054-F-04",
+  "title": "Q 54 100% ر-monorhyme corpus-uniqueness",
+  "prereg_sha256": "8c1331667d6123c9290da740786d4321971c885c7307da9e9b19b4cf977a67ec",
+  "H4a": {
+    "top_final_letter": "ر",
+    "top_final_letter_frac": 1.0,
+    "rhyme_entropy_nats": 0.0,
+    "pass": true
+  },
+  "H4b": {
+    "rank_A": 105,
+    "rank_B": 114,
+    "sig_A": -2.049297533594645,
+    "sig_B": -2.1308100303351645,
+    "pass": true
+  },
+  "H4c": {
+    "n_perfect_monorhyme_surahs": 15,
+    "perfect_monorhyme_surahs": [
+      {
+        "surah": 48,
+        "top_letter": "ا",
+        "n_verses": 29
+      },
+      {
+        "surah": 54,
+        "top_letter": "ر",
+        "n_verses": 55
+      },
+      {
+        "surah": 63,
+        "top_letter": "ن",
+        "n_verses": 11
+      },
+      {
+        "surah": 72,
+        "top_letter": "ا",
+        "n_verses": 28
+      },
+      {
+        "surah": 76,
+        "top_letter": "ا",
+        "n_verses": 31
+      },
+      {
+        "surah": 91,
+        "top_letter": "ا",
+        "n_verses": 15
+      },
+      {
+        "surah": 92,
+        "top_letter": "ي",
+        "n_verses": 21
+      },
+      {
+        "surah": 97,
+        "top_letter": "ر",
+        "n_verses": 5
+      },
+      {
+        "surah": 98,
+        "top_letter": "ه",
+        "n_verses": 8
+      },
+      {
+        "surah": 103,
+        "top_letter": "ر",
+        "n_verses": 3
+      },
+      {
+        "surah": 104,
+        "top_letter": "ه",
+        "n_verses": 9
+      },
+      {
+        "surah": 105,
+        "top_letter": "ل",
+        "n_verses": 5
+      },
+      {
+        "surah": 108,
+        "top_letter": "ر",
+        "n_verses": 3
+      },
+      {
+        "surah": 112,
+        "top_letter": "د",
+        "n_verses": 4
+      },
+      {
+        "surah": 114,
+        "top_letter": "س",
+        "n_verses": 6
+      }
+    ],
+    "n_near_monorhyme_surahs": 17,
+    "near_monorhyme_surahs": [
+      {
+        "surah": 48,
+        "top_letter": "ا",
+        "frac": 1.0,
+        "n_verses": 29
+      },
+      {
+        "surah": 54,
+        "top_letter": "ر",
+        "frac": 1.0,
+        "n_verses": 55
+      },
+      {
+        "surah": 63,
+        "top_letter": "ن",
+        "frac": 1.0,
+        "n_verses": 11
+      },
+      {
+        "surah": 72,
+        "top_letter": "ا",
+        "frac": 1.0,
+        "n_verses": 28
+      },
+      {
+        "surah": 76,
+        "top_letter": "ا",
+        "frac": 1.0,
+        "n_verses": 31
+      },
+      {
+        "surah": 91,
+        "top_letter": "ا",
+        "frac": 1.0,
+        "n_verses": 15
+      },
+      {
+        "surah": 92,
+        "top_letter": "ي",
+        "frac": 1.0,
+        "n_verses": 21
+      },
+      {
+        "surah": 97,
+        "top_letter": "ر",
+        "frac": 1.0,
+        "n_verses": 5
+      },
+      {
+        "surah": 98,
+        "top_letter": "ه",
+        "frac": 1.0,
+        "n_verses": 8
+      },
+      {
+        "surah": 103,
+        "top_letter": "ر",
+        "frac": 1.0,
+        "n_verses": 3
+      },
+      {
+        "surah": 104,
+        "top_letter": "ه",
+        "frac": 1.0,
+        "n_verses": 9
+      },
+      {
+        "surah": 105,
+        "top_letter": "ل",
+        "frac": 1.0,
+        "n_verses": 5
+      },
+      {
+        "surah": 108,
+        "top_letter": "ر",
+        "frac": 1.0,
+        "n_verses": 3
+      },
+      {
+        "surah": 112,
+        "top_letter": "د",
+        "frac": 1.0,
+        "n_verses": 4
+      },
+      {
+        "surah": 114,
+        "top_letter": "س",
+        "frac": 1.0,
+        "n_verses": 6
+      },
+      {
+        "surah": 17,
+        "top_letter": "ا",
+        "frac": 0.990990990990991,
+        "n_verses": 111
+      },
+      {
+        "surah": 18,
+        "top_letter": "ا",
+        "frac": 0.990909090909091,
+        "n_verses": 110
+      }
+    ],
+    "pass": false
+  },
+  "Q54_unique_long_surah_perfect_monorhyme": true,
+  "Q54_perfect_monorhyme_50plus_companions": [
+    {
+      "surah": 54,
+      "top_letter": "ر",
+      "n_verses": 55
+    }
+  ],
+  "MW5_positive_control": {
+    "n_perm": 10000,
+    "perm_p_perfect_monorhyme_under_shuffle": 0.0
+  },
+  "aggregate": {
+    "n_passed": 2,
+    "verdict": "CONFIRMED"
+  }
+}

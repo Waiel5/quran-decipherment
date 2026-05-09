@@ -1,0 +1,119 @@
+{
+  "test_id": "Q054-F-02",
+  "title": "Q 54 vs Q 26 prophet-cycle compression",
+  "prereg_sha256": "b604bdb40233c539da7b0569ca14b732d6a18972b78e2e43cf4f404f1d8fc389",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "Q54_pericopes": [
+    {
+      "name": "Nūḥ",
+      "lo": 9,
+      "hi": 17,
+      "verses": 9,
+      "words": 57
+    },
+    {
+      "name": "ʿĀd",
+      "lo": 18,
+      "hi": 22,
+      "verses": 5,
+      "words": 32
+    },
+    {
+      "name": "Thamūd",
+      "lo": 23,
+      "hi": 32,
+      "verses": 10,
+      "words": 66
+    },
+    {
+      "name": "Lūṭ",
+      "lo": 33,
+      "hi": 40,
+      "verses": 8,
+      "words": 51
+    },
+    {
+      "name": "āl-Firʿawn",
+      "lo": 41,
+      "hi": 42,
+      "verses": 2,
+      "words": 12
+    }
+  ],
+  "Q26_pericopes": [
+    {
+      "name": "Mūsā",
+      "lo": 10,
+      "hi": 68,
+      "verses": 59,
+      "words": 398
+    },
+    {
+      "name": "Ibrāhīm",
+      "lo": 69,
+      "hi": 104,
+      "verses": 36,
+      "words": 180
+    },
+    {
+      "name": "Nūḥ",
+      "lo": 105,
+      "hi": 122,
+      "verses": 18,
+      "words": 109
+    },
+    {
+      "name": "Hūd",
+      "lo": 123,
+      "hi": 140,
+      "verses": 18,
+      "words": 95
+    },
+    {
+      "name": "Ṣāliḥ",
+      "lo": 141,
+      "hi": 159,
+      "verses": 19,
+      "words": 111
+    },
+    {
+      "name": "Lūṭ",
+      "lo": 160,
+      "hi": 175,
+      "verses": 16,
+      "words": 96
+    },
+    {
+      "name": "Shuʿayb",
+      "lo": 176,
+      "hi": 191,
+      "verses": 16,
+      "words": 106
+    }
+  ],
+  "Q54_mean_verses_per_pericope": 6.8,
+  "Q54_mean_words_per_pericope": 43.6,
+  "Q26_mean_verses_per_pericope": 26.0,
+  "Q26_mean_words_per_pericope": 156.42857142857142,
+  "compression_ratio_verses": 3.823529411764706,
+  "compression_ratio_words": 3.5878112712975097,
+  "perm_p_verses": 1.0,
+  "perm_p_words": 1.0,
+  "H2a": {
+    "ratio": 3.823529411764706,
+    "threshold": 2.0,
+    "pass": true
+  },
+  "H2b": {
+    "ratio": 3.5878112712975097,
+    "threshold": 2.0,
+    "pass": true
+  },
+  "aggregate": {
+    "n_passed": 2,
+    "verdict": "CONFIRMED"
+  }
+}

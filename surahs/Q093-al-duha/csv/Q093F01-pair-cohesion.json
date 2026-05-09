@@ -1,0 +1,110 @@
+{
+  "finding_id": "Q093F01",
+  "title": "Q 93 al-Ḍuḥā ↔ Q 94 al-Sharḥ PAIR FR cohesion",
+  "date": "2026-05-09",
+  "rules_tuple": {
+    "orthography": "no-tashkeel",
+    "verse_numbering": "hafs-kufan",
+    "feature": "root-distribution Fisher-Rao distance (h-new-111)",
+    "instrument": "h-new-111.json (locked, ex-ante)",
+    "null_model": "random-pair-from-pool",
+    "n_perm": 10000,
+    "seed": 20260509
+  },
+  "tests": {
+    "F01a_corpus_pool": {
+      "label": "pair vs all-corpus pair",
+      "cluster": [
+        93,
+        94
+      ],
+      "pool_size": 114,
+      "obs": 0.364138,
+      "null_mean": 0.9232439079,
+      "null_sd": 0.2092566855193245,
+      "z": -2.671866404231886,
+      "p_lower": 0.0183,
+      "n_perm": 10000,
+      "seed": 20260509
+    },
+    "F01b_mufaṣṣal_Q49_114": {
+      "label": "pair vs mufaṣṣal Q49-114 pair",
+      "cluster": [
+        93,
+        94
+      ],
+      "pool_size": 66,
+      "obs": 0.364138,
+      "null_mean": 0.7247397936,
+      "null_sd": 0.19635606654770055,
+      "z": -1.8364688188149225,
+      "p_lower": 0.0605,
+      "n_perm": 10000,
+      "seed": 20260509
+    },
+    "F01c_short_mufaṣṣal_Q78_114": {
+      "label": "pair vs short-mufaṣṣal Q78-114 pair",
+      "cluster": [
+        93,
+        94
+      ],
+      "pool_size": 37,
+      "obs": 0.364138,
+      "null_mean": 0.4879204606,
+      "null_sd": 0.11854420689654607,
+      "z": -1.0441881880236066,
+      "p_lower": 0.189,
+      "n_perm": 10000,
+      "seed": 20260509
+    },
+    "F01d_qiṣār_Q89_114": {
+      "label": "pair vs qiṣār Q89-114 pair",
+      "cluster": [
+        93,
+        94
+      ],
+      "pool_size": 26,
+      "obs": 0.364138,
+      "null_mean": 0.4071037355,
+      "null_sd": 0.09917971164700762,
+      "z": -0.43321093383413084,
+      "p_lower": 0.3892,
+      "n_perm": 10000,
+      "seed": 20260509
+    }
+  },
+  "corpus_rank": {
+    "rank": 128,
+    "total": 6441,
+    "percentile": 1.9872690575997516,
+    "distance": 0.364138
+  },
+  "bonferroni": {
+    "k": 3,
+    "family": "Q093F01-pair-cohesion-3-pools",
+    "alpha": 0.05,
+    "alpha_bon": 0.016666666666666666,
+    "pre_committed_pools": [
+      "F01a_corpus_pool",
+      "F01b_mufaṣṣal_Q49_114",
+      "F01c_short_mufaṣṣal_Q78_114"
+    ],
+    "exploratory_replication": [
+      "F01d_qiṣār_Q89_114"
+    ]
+  },
+  "verdicts": [
+    [
+      "F01a_corpus_pool",
+      "PASS-DIRECTED"
+    ],
+    [
+      "F01b_mufaṣṣal_Q49_114",
+      "NULL"
+    ],
+    [
+      "F01c_short_mufaṣṣal_Q78_114",
+      "NULL"
+    ]
+  ]
+}

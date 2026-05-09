@@ -1,0 +1,75 @@
+{
+  "test_id": "Q031-F-02",
+  "title": "Q 31 FR-position within ALM cohort",
+  "pre_reg_sha256": "d496f4a2d887f304cb973daaf69b1fdf3619b0c1b073d6a32e0389be37ae1fcc",
+  "pre_reg_sha_expected": "d496f4a2d887f304cb973daaf69b1fdf3619b0c1b073d6a32e0389be37ae1fcc",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "q31_alm_siblings_fr": {
+    "Q2": 0.977041,
+    "Q3": 0.996123,
+    "Q29": 0.896339,
+    "Q30": 0.90887,
+    "Q32": 0.909461
+  },
+  "d_alm_q31_mean": 0.9375667999999999,
+  "top12_non_alm_neighbors": [
+    {
+      "surah": 45,
+      "fr": 0.768501
+    },
+    {
+      "surah": 64,
+      "fr": 0.774262
+    },
+    {
+      "surah": 22,
+      "fr": 0.799142
+    },
+    {
+      "surah": 62,
+      "fr": 0.831323
+    },
+    {
+      "surah": 35,
+      "fr": 0.845484
+    },
+    {
+      "surah": 13,
+      "fr": 0.850477
+    },
+    {
+      "surah": 112,
+      "fr": 0.855468
+    },
+    {
+      "surah": 1,
+      "fr": 0.85587
+    },
+    {
+      "surah": 61,
+      "fr": 0.862965
+    },
+    {
+      "surah": 96,
+      "fr": 0.866363
+    },
+    {
+      "surah": 91,
+      "fr": 0.869416
+    },
+    {
+      "surah": 14,
+      "fr": 0.870029
+    }
+  ],
+  "d_top12_q31_mean": 0.8374416666666668,
+  "perm_null_mean": 0.9482765185,
+  "h1_perm_p_one_tailed_low": 0.3842,
+  "h1_null_pass": true,
+  "h1_unexpected_cohesion": false,
+  "h2_top12_lt_alm": true,
+  "alpha_bon": 0.025,
+  "bonferroni_k": 2,
+  "verdict": "NULL CONFIRMED + H2 vindicated (Q 31 is NOT preferentially close to ALM-siblings; closer to top-12 non-ALM)"
+}

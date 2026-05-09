@@ -1,0 +1,126 @@
+{
+  "test_id": "Q089-F-04",
+  "prereg_sha256": "e7e791dbb40229f42f9db9f628f35d2248bc326ccff2b191c81f5f6084de89f3",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "h1": {
+    "D_oath_q89": 0.7175134285714286,
+    "null_mean": 0.8937117569071429,
+    "null_min": 0.6835017142857143,
+    "null_max": 1.1051976428571428,
+    "perm_p_one_sided": 0.0007,
+    "alpha_bon": 0.025,
+    "pass": true
+  },
+  "h2": {
+    "M_t1_core_mean": 0.61890825,
+    "M_t2_periphery_mean": 0.848987,
+    "M_t2_minus_M_t1": 0.23007875,
+    "tier_1_members": [
+      85,
+      86,
+      89,
+      91,
+      92,
+      93,
+      95,
+      100,
+      103
+    ],
+    "tier_2_members": [
+      37,
+      51,
+      52,
+      53,
+      77,
+      79
+    ],
+    "pass": true
+  },
+  "centrality": {
+    "ranking": [
+      {
+        "rank": 1,
+        "surah": 103,
+        "mean_dist_to_other_14": 0.5710852857142857
+      },
+      {
+        "rank": 2,
+        "surah": 100,
+        "mean_dist_to_other_14": 0.5788664285714286
+      },
+      {
+        "rank": 3,
+        "surah": 95,
+        "mean_dist_to_other_14": 0.5847472142857143
+      },
+      {
+        "rank": 4,
+        "surah": 91,
+        "mean_dist_to_other_14": 0.5944406428571429
+      },
+      {
+        "rank": 5,
+        "surah": 93,
+        "mean_dist_to_other_14": 0.5972581428571428
+      },
+      {
+        "rank": 6,
+        "surah": 86,
+        "mean_dist_to_other_14": 0.6228064285714285
+      },
+      {
+        "rank": 7,
+        "surah": 92,
+        "mean_dist_to_other_14": 0.6311425
+      },
+      {
+        "rank": 8,
+        "surah": 85,
+        "mean_dist_to_other_14": 0.6711453571428572
+      },
+      {
+        "rank": 9,
+        "surah": 79,
+        "mean_dist_to_other_14": 0.7027370714285714
+      },
+      {
+        "rank": 10,
+        "surah": 89,
+        "mean_dist_to_other_14": 0.7175134285714286
+      },
+      {
+        "rank": 11,
+        "surah": 77,
+        "mean_dist_to_other_14": 0.7597939285714286
+      },
+      {
+        "rank": 12,
+        "surah": 52,
+        "mean_dist_to_other_14": 0.7790299285714286
+      },
+      {
+        "rank": 13,
+        "surah": 51,
+        "mean_dist_to_other_14": 0.8205652142857143
+      },
+      {
+        "rank": 14,
+        "surah": 53,
+        "mean_dist_to_other_14": 0.8514983571428572
+      },
+      {
+        "rank": 15,
+        "surah": 37,
+        "mean_dist_to_other_14": 0.9948649285714286
+      }
+    ],
+    "q89_rank_within_15": 10,
+    "intra_cluster_pairwise_median": 0.720505,
+    "q89_row_median_to_others": 0.6712359999999999,
+    "q89_corpus_mean_dist": 0.8942546902654868
+  },
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "verdict": "CONFIRMED"
+}

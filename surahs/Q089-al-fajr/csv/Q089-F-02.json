@@ -1,0 +1,44 @@
+{
+  "test_id": "Q089-F-02",
+  "prereg_sha256": "a0fbb868280cb29041ee8cab845a0f0197dbdcdc93a67c9ec67ccd7e9ee1d438",
+  "seed": 20260509,
+  "n_perm": 5364,
+  "h1": {
+    "ref_mean_cosine": 0.22312692678296328,
+    "ref_cosines_per_block": {
+      "Q7:65-102 (Hūd-ʿĀd through Pharaoh-Mūsā)": 0.1935397401743897,
+      "Q11:25-99 (Nūḥ through Pharaoh)": 0.22404420350484533,
+      "Q26:105-191 (Nūḥ through Shuʿayb)": 0.25179683666965474
+    },
+    "null_mean_of_means": 0.40511566494091583,
+    "null_max": 0.761029202291088,
+    "perm_p_one_sided": 0.866331096196868,
+    "alpha_bon": 0.01667,
+    "pass": false
+  },
+  "h2": {
+    "ref_mean": 0.22312692678296328,
+    "ctrl_mean": 0.05695258783555698,
+    "ctrl_cosines_per_block": {
+      "Q56:1-9": 0.0,
+      "Q87:1-9": 0.13340746919301402,
+      "Q92:1-9": 0.037450294313656915
+    },
+    "ref_minus_ctrl": 0.1661743389474063,
+    "pass": true
+  },
+  "h3": {
+    "proper_nouns": [
+      "عاد",
+      "إرم",
+      "ثمود",
+      "فرعون"
+    ],
+    "n_other_9verse_blocks_with_all_4_PNs": 0,
+    "matches": [],
+    "pass": true
+  },
+  "bonferroni_k": 3,
+  "alpha_bon": 0.01667,
+  "verdict": "CONFIRMED"
+}

@@ -1,0 +1,39 @@
+{
+  "test_id": "Q099-F-01",
+  "title": "Q 99 within H-NEW-1200 14-cluster + 4-CORE idhā-cosmic-opener architectural replication",
+  "prereg_sha256": "a535c632f8713176b904ab5d8a5d4e50707c4a3479ed53d155ab03b3a038fc48",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "Q99_corpus_mean": 0.8148008849557522,
+  "Q99_cluster_14_mean": 0.5914621538461539,
+  "Q99_core_4_mean": 0.5579156666666667,
+  "Q99_distance_to_each_cluster_member": {
+    "Q56": 0.871883,
+    "Q69": 0.734714,
+    "Q74": 0.767342,
+    "Q77": 0.695649,
+    "Q81": 0.542893,
+    "Q82": 0.569231,
+    "Q83": 0.645932,
+    "Q84": 0.561623,
+    "Q86": 0.479908,
+    "Q90": 0.520205,
+    "Q97": 0.461,
+    "Q101": 0.412563,
+    "Q104": 0.426065
+  },
+  "Q99_distance_to_each_core_member": {
+    "Q81": 0.542893,
+    "Q82": 0.569231,
+    "Q84": 0.561623
+  },
+  "T1_cluster_corpus_ratio": 0.7258977803862758,
+  "T1_perm_p": 0.0012,
+  "T1_pass": true,
+  "T2_perm_p": 0.0531,
+  "T2_pass": false,
+  "verdict": "DIRECTIONAL",
+  "bonferroni_family": "Q099-F-01-idha-cosmic-core"
+}

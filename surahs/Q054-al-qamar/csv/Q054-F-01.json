@@ -1,0 +1,66 @@
+{
+  "test_id": "Q054-F-01",
+  "title": "Q 54 dual-refrain 5-section architecture",
+  "prereg_sha256": "fd1e8281a0955f7c3b1e84082bcd521e22aa58841b1939bfd40bbf9735c33413",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.0167,
+  "H1a": {
+    "n_q54": 6,
+    "n_total_corpus": 6,
+    "share_q54": 1.0,
+    "locations": [
+      [
+        54,
+        15
+      ],
+      [
+        54,
+        17
+      ],
+      [
+        54,
+        22
+      ],
+      [
+        54,
+        32
+      ],
+      [
+        54,
+        40
+      ],
+      [
+        54,
+        51
+      ]
+    ],
+    "perm_p_length_weighted": 0.0,
+    "perm_p_uniform": 0.0,
+    "pass": true
+  },
+  "H1b": {
+    "pericope_closures": {
+      "Nūḥ": true,
+      "ʿĀd": true,
+      "Thamūd": true,
+      "Lūṭ": true,
+      "āl-Firʿawn": true
+    },
+    "n_closed": 5,
+    "threshold": 4,
+    "pass": true
+  },
+  "H1c": {
+    "q54_mean_verses_per_pericope": 6.8,
+    "q26_mean_verses_per_pericope": 26.0,
+    "compression_ratio": 3.823529411764706,
+    "threshold": 2.0,
+    "pass": true
+  },
+  "aggregate": {
+    "n_passed": 3,
+    "verdict": "CONFIRMED"
+  }
+}

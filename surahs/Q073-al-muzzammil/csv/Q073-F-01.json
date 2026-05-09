@@ -1,0 +1,64 @@
+{
+  "test_id": "Q073-F-01",
+  "prereg_sha": "a477010077cd15340b209ba24e73b1a666de95cb410215e0963b696d41b3e2b0",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "pair_verses": {
+    "Q 73:20": {
+      "A_iqraa": true,
+      "B_qurankitab": true,
+      "C_addressee_lib": true,
+      "C_addressee_2ms_strict": true,
+      "score_lib": 3,
+      "score_strict": 3,
+      "word_count": 90,
+      "char_count": 430
+    },
+    "Q 96:1": {
+      "A_iqraa": true,
+      "B_qurankitab": false,
+      "C_addressee_lib": true,
+      "C_addressee_2ms_strict": true,
+      "score_lib": 2,
+      "score_strict": 2,
+      "word_count": 5,
+      "char_count": 22
+    },
+    "Q 96:3": {
+      "A_iqraa": true,
+      "B_qurankitab": false,
+      "C_addressee_lib": true,
+      "C_addressee_2ms_strict": true,
+      "score_lib": 2,
+      "score_strict": 2,
+      "word_count": 3,
+      "char_count": 16
+    }
+  },
+  "cluster_score_lib": 7,
+  "cluster_score_strict": 7,
+  "null_lib": {
+    "mean": 1.1031,
+    "min": 0,
+    "max": 5,
+    "p_one_sided_geq": 0.0
+  },
+  "null_strict": {
+    "mean": 0.8881,
+    "p_one_sided_geq": 0.0
+  },
+  "h1a_co_occurrence_pass": true,
+  "h1a_co_occurrence_pass_strict": true,
+  "verse_twin_sim": {
+    "Q73_20_vs_Q96_1": 0.05752212389380531,
+    "Q73_20_vs_Q96_3": 0.04484304932735426,
+    "max_sim": 0.05752212389380531,
+    "rank_Q96_1_in_Q73_20_neighbors": 5101,
+    "rank_Q96_3_in_Q73_20_neighbors": 5656,
+    "pct_min": 0.8179631114675221,
+    "n_total_compared": 6235
+  },
+  "h1b_pass": false,
+  "n_pass_axes": 1,
+  "verdict": "DIRECTIONAL"
+}

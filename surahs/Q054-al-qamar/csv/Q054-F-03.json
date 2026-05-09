@@ -1,0 +1,141 @@
+{
+  "test_id": "Q054-F-03",
+  "title": "Q 53 → Q 54 seam empirical-cost diagnostic (adversarial)",
+  "prereg_sha256": "19909d279f1cf3059cbeb17b626404caf48a58e309ed4844e10d7d50bcbbd410",
+  "H3a": {
+    "delta_raw": 0.21005999999999858,
+    "fraction_residual": 0.02533041320914828,
+    "rank_by_delta_raw_desc": 12,
+    "is_clamped_zero": false,
+    "locked_direction": "clamped-zero seamless",
+    "observation": "delta_raw = +0.21006 (top-12 EXPENSIVE seam)",
+    "pass": false,
+    "pre_commit_note": "PRE-COMMIT VIOLATION on H3a: locked direction REVERSED. Per HANDOFF/04-DISCIPLINE.md PRE-REG-STANDARD-01, sign-flip published with explicit pre-commit-violation flag. Empirical correction of brief: Q 53→Q 54 is the 12th MOST-EXPENSIVE seam (delta_raw = +0.21006), NOT a clamped-zero seamless seam."
+  },
+  "H3b": {
+    "q53_top_final_letter": "ي",
+    "q53_top_final_letter_frac": 0.8548387096774194,
+    "q54_top_final_letter": "ر",
+    "q54_top_final_letter_frac": 1.0,
+    "rhyme_letter_shared": false,
+    "pass": true
+  },
+  "H3c": {
+    "q53_50_54_narratives": [
+      "Lūṭ",
+      "Nūḥ",
+      "Thamūd",
+      "ʿĀd"
+    ],
+    "q54_9_42_narratives": [
+      "Lūṭ",
+      "Nūḥ",
+      "Thamūd",
+      "āl-Firʿawn",
+      "ʿĀd"
+    ],
+    "shared": [
+      "Lūṭ",
+      "Nūḥ",
+      "Thamūd",
+      "ʿĀd"
+    ],
+    "n_shared": 4,
+    "threshold": 4,
+    "pass": true
+  },
+  "clamped_zero_set": [
+    {
+      "pair": [
+        91,
+        92
+      ],
+      "delta_raw": -0.08683000000007723
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "delta_raw": -0.06571199999984856
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "delta_raw": -0.05752599999999575
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "delta_raw": -0.046619999999990114
+    },
+    {
+      "pair": [
+        65,
+        66
+      ],
+      "delta_raw": -0.033966999999961445
+    },
+    {
+      "pair": [
+        109,
+        110
+      ],
+      "delta_raw": -0.03068300000012414
+    },
+    {
+      "pair": [
+        73,
+        74
+      ],
+      "delta_raw": -0.028879000000131327
+    },
+    {
+      "pair": [
+        105,
+        106
+      ],
+      "delta_raw": -0.028208000000034872
+    },
+    {
+      "pair": [
+        86,
+        87
+      ],
+      "delta_raw": -0.017766999999963673
+    },
+    {
+      "pair": [
+        93,
+        94
+      ],
+      "delta_raw": -0.0151999999998651
+    },
+    {
+      "pair": [
+        64,
+        65
+      ],
+      "delta_raw": -0.008651999999997884
+    },
+    {
+      "pair": [
+        72,
+        73
+      ],
+      "delta_raw": -0.001183000000054335
+    },
+    {
+      "pair": [
+        37,
+        38
+      ],
+      "delta_raw": -0.0009109999999310503
+    }
+  ],
+  "verdict": "BRIEF-REFUTED-WITH-RHYME-SHIFT-CONFIRMED"
+}

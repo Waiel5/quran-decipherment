@@ -1,0 +1,66 @@
+{
+  "test_id": "Q031-F-04",
+  "title": "Q 31 divine-name-pair density",
+  "pre_reg_sha256": "6e7a14d1f704ba323c5fd87fb59ef753d68c5f6f8f55023b9f58fc5a555b05fd",
+  "pre_reg_sha_expected": "6e7a14d1f704ba323c5fd87fb59ef753d68c5f6f8f55023b9f58fc5a555b05fd",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "pairs_tested": [
+    "latif_khabir",
+    "aziz_hakim",
+    "alim_khabir"
+  ],
+  "per_pair_results": {
+    "latif_khabir": {
+      "n_corpus_pair_verses": 5,
+      "n_q31_pair_verses": 1,
+      "q31_pair_verses": [
+        {
+          "surah": 31,
+          "verse": 16
+        }
+      ],
+      "q31_density": 0.029411764705882353,
+      "perm_null_mean": 0.0012529411764705882,
+      "perm_null_max": 0.029411764705882353,
+      "perm_p_one_tailed": 0.0426
+    },
+    "aziz_hakim": {
+      "n_corpus_pair_verses": 47,
+      "n_q31_pair_verses": 2,
+      "q31_pair_verses": [
+        {
+          "surah": 31,
+          "verse": 9
+        },
+        {
+          "surah": 31,
+          "verse": 27
+        }
+      ],
+      "q31_density": 0.058823529411764705,
+      "perm_null_mean": 0.00623235294117647,
+      "perm_null_max": 0.08823529411764706,
+      "perm_p_one_tailed": 0.0348
+    },
+    "alim_khabir": {
+      "n_corpus_pair_verses": 4,
+      "n_q31_pair_verses": 1,
+      "q31_pair_verses": [
+        {
+          "surah": 31,
+          "verse": 34
+        }
+      ],
+      "q31_density": 0.029411764705882353,
+      "perm_null_mean": 0.00055,
+      "perm_null_max": 0.029411764705882353,
+      "perm_p_one_tailed": 0.0187
+    }
+  },
+  "alpha_bon": 0.016666666666666666,
+  "bonferroni_k": 3,
+  "n_pass_alpha_bon": 0,
+  "n_pass_alpha_05": 3,
+  "verdict": "DIRECTIONAL (3/3 pairs at α=0.05 but not α_bon)"
+}

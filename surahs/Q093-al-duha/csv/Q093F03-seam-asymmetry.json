@@ -1,0 +1,83 @@
+{
+  "finding_id": "Q093F03",
+  "title": "Q 92→Q 93 is the pair-boundary marker between oath-block (91-92) and consolation-block (93-94)",
+  "date": "2026-05-09",
+  "instrument": "h-new-720 + h-new-111 (locked, ex-ante)",
+  "rules_tuple": {
+    "orthography": "no-tashkeel",
+    "verse_numbering": "hafs-kufan",
+    "instrument": "h-new-720.json TSP-cost + h-new-111.json FR matrix"
+  },
+  "transitions": {
+    "Q91→Q92": {
+      "delta_raw": -0.08683000000007723,
+      "delta": 0.0,
+      "fraction_residual": 0.0,
+      "L_constrained": 77.38002799999992,
+      "fr_distance": 0.473442,
+      "seamless": true
+    },
+    "Q92→Q93": {
+      "delta_raw": 0.06063300000002414,
+      "delta": 0.06063300000002414,
+      "fraction_residual": 0.007311525012429352,
+      "L_constrained": 77.52749100000003,
+      "fr_distance": 0.433778,
+      "seamless": false
+    },
+    "Q93→Q94": {
+      "delta_raw": -0.0151999999998651,
+      "delta": 0.0,
+      "fraction_residual": 0.0,
+      "L_constrained": 77.45165800000014,
+      "fr_distance": 0.364138,
+      "seamless": true
+    },
+    "Q94→Q95": {
+      "delta_raw": 0.04700400000008642,
+      "delta": 0.04700400000008642,
+      "fraction_residual": 0.0056680507592354705,
+      "L_constrained": 77.51386200000009,
+      "fr_distance": 0.361408,
+      "seamless": false
+    },
+    "Q95→Q96": {
+      "delta_raw": 0.03233800000000997,
+      "delta": 0.03233800000000997,
+      "fraction_residual": 0.003899528241253429,
+      "L_constrained": 77.49919600000001,
+      "fr_distance": 0.504885,
+      "seamless": false
+    }
+  },
+  "observation_pre_committed": "Hypothesis: among Q91→92, Q92→93, Q93→94, Q94→95, the seamless transitions (delta_raw < 0) should be Q91→92 and Q93→94, while Q92→93 and Q94→95 should be NON-seamless. Pattern: seamless | NON | seamless | NON.",
+  "observed_pattern": [
+    [
+      "Q91→92",
+      "SEAMLESS"
+    ],
+    [
+      "Q92→93",
+      "NON"
+    ],
+    [
+      "Q93→94",
+      "SEAMLESS"
+    ],
+    [
+      "Q94→95",
+      "NON"
+    ]
+  ],
+  "verdict": "PASS-EXACT-MATCH",
+  "pattern_match": true,
+  "delta_raw_global_rank": {
+    "Q91→Q92": 1,
+    "Q93→Q94": 10,
+    "Q94→Q95": 43,
+    "Q92→Q93": 55
+  },
+  "n_total_transitions": 113,
+  "hypergeometric_4_position_p": 0.009994191410120614,
+  "hypergeometric_explanation": "P(seamless×non×seamless×non) for 4 random transitions ≈ 0.0100. Note this is a one-tailed prior probability; observed pattern matches the prediction exactly."
+}

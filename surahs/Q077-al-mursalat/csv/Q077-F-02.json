@@ -1,0 +1,132 @@
+{
+  "id": "Q077-F-02",
+  "title": "Q 77 oath-cluster sibling taxonomy",
+  "prereg_sha": "8b6a07fc8eb5d9c89e227a94833954b725dcf628ea8da58a5bf21ff3fcdd4dae",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-letter-no-space, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "cell_A": {
+    "targets": {
+      "51": 4,
+      "77": 5,
+      "79": 5,
+      "100": 5
+    },
+    "verse_text_per_surah": {
+      "Q51": {
+        "expected_verse_count": 4,
+        "verses_text": [
+          "والذاريات ذروا",
+          "فالحاملات وقرا",
+          "فالجاريات يسرا",
+          "فالمقسمات أمرا"
+        ]
+      },
+      "Q77": {
+        "expected_verse_count": 5,
+        "verses_text": [
+          "والمرسلات عرفا",
+          "فالعاصفات عصفا",
+          "والناشرات نشرا",
+          "فالفارقات فرقا",
+          "فالملقيات ذكرا"
+        ]
+      },
+      "Q79": {
+        "expected_verse_count": 5,
+        "verses_text": [
+          "والنازعات غرقا",
+          "والناشطات نشطا",
+          "والسابحات سبحا",
+          "فالسابقات سبقا",
+          "فالمدبرات أمرا"
+        ]
+      },
+      "Q100": {
+        "expected_verse_count": 5,
+        "verses_text": [
+          "والعاديات ضبحا",
+          "فالموريات قدحا",
+          "فالمغيرات صبحا",
+          "فأثرن به نقعا",
+          "فوسطن به جمعا"
+        ]
+      }
+    },
+    "pass": true
+  },
+  "cell_B": {
+    "q77_letter_counts_v1_5": [
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "uniform": true,
+    "target_13": true,
+    "pass": true
+  },
+  "cell_C": {
+    "five_uniform_corpus_set": [
+      77,
+      79
+    ],
+    "four_uniform_corpus_set": [
+      51,
+      77,
+      79
+    ],
+    "six_uniform_corpus_set": [],
+    "expected_five_uniform_set": [
+      77,
+      79
+    ],
+    "match_expected": true,
+    "pass": true
+  },
+  "cell_D": {
+    "siblings_tested": [
+      51,
+      79,
+      100
+    ],
+    "individual_FR_distances": {
+      "Q51": 0.896073,
+      "Q79": 0.763745,
+      "Q100": 0.673791
+    },
+    "D_oath_3_mean": 0.7778696666666667,
+    "perm_null_mean": 0.9213631701666667,
+    "perm_p_one_tailed_lower": 0.1144,
+    "alpha_bon_0125": false,
+    "pass": false
+  },
+  "oath_cluster_full_distances_q77": {
+    "Q37": 1.052367,
+    "Q51": 0.896073,
+    "Q52": 0.81829,
+    "Q53": 0.921539,
+    "Q79": 0.763745,
+    "Q85": 0.738668,
+    "Q86": 0.642186,
+    "Q89": 0.824702,
+    "Q91": 0.652854,
+    "Q92": 0.667246,
+    "Q93": 0.688341,
+    "Q95": 0.645169,
+    "Q100": 0.673791,
+    "Q103": 0.652144
+  },
+  "oath_cluster_mean_distance_q77": 0.7597939285714286,
+  "verdict_summary": {
+    "n_cells_pass": 3,
+    "verdict": "PASS-DIRECTED PARTIAL (3/4)",
+    "cells": {
+      "A_oath_counts": true,
+      "B_q77_uniform_13": true,
+      "C_corpus_5_uniform_2_surahs": true,
+      "D_FR_sibling_perm": false
+    }
+  }
+}

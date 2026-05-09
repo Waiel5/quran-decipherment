@@ -1,0 +1,120 @@
+{
+  "id": "Q074-F-01",
+  "title": "Q 74:30 Code-19 / Khalifa adversarial RECAP audit (full enumeration)",
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "seed": 20260509,
+  "frame": "ADVERSARIAL: enumerate existing REFUTATIONS + check whether any new operationalization could rehabilitate the claim",
+  "n_claims_audited": 13,
+  "n_verified": 3,
+  "n_failed_or_refuted": 9,
+  "n_rules_tuple_fragile": 1,
+  "claim_recap": [
+    {
+      "claim_id": "K1.Q74.text-self-reference",
+      "khalifa_claim": "Q 74:30 self-references the divine '19 code'",
+      "empirical_status": "VERIFIED (textual presence) — UNFALSIFIABLE (interpretation)",
+      "test": "Quran text Q 74:30 contains 'عليها تسعة عشر' = literally 'over it are nineteen'. Classical tafsir (al-Ṭabarī, al-Qurṭubī, al-Rāzī, Ibn Kathīr unanimously): the 19 are angels guarding Hellfire (khazana al-nār). Khalifa's reinterpretation as a divine numeric signature is exegetical, not numerical.",
+      "verdict": "TEXTUAL-VERIFIED but INTERPRETIVELY-CONTESTED"
+    },
+    {
+      "claim_id": "K2.basmala-19-letters",
+      "khalifa_claim": "Basmala = 19 letters; this is the divine signature",
+      "empirical_status": "RULES-TUPLE-FRAGILE (TRUE under no-tashkeel/min-tashkeel; NULL under full-Uthmani-script alif-waṣla → 20 graphemes)",
+      "test": "Bismillah: ب س م ا ل ل ه ا ل ر ح م ن ا ل ر ح ي م = 19 graphemes (no-tashkeel). Under full-Uthmani with alif-waṣla = 20.",
+      "verdict": "RULES-TUPLE-FRAGILE (per H-NEW-890; per Q 1 audit Claim 5)"
+    },
+    {
+      "claim_id": "K3.basmala-word-counts",
+      "khalifa_claim": "ism=19, Allah=2698, al-Rahman=57, al-Rahim=114",
+      "empirical_status": "FAILED (ism=39, Allah=2699, al-Rahim=116; only al-Rahman=57 holds without contortion)",
+      "test": "QAC LEM count under standard rule-tuple",
+      "verdict": "FAILED (3 of 4 wrong; Allah=2698 only holds if Q 9:128-129 are deleted — the famous Khalifa textual edit)"
+    },
+    {
+      "claim_id": "K4.114-equals-19-times-6",
+      "khalifa_claim": "114 surahs = 19×6, divine signature",
+      "empirical_status": "VERIFIED (trivial)",
+      "test": "Pure arithmetic. 114 = 19 × 6. No statistical significance — small-integer coincidence.",
+      "verdict": "VERIFIED (trivial coincidence)"
+    },
+    {
+      "claim_id": "K5.surah-96-19th-from-end",
+      "khalifa_claim": "Surah 96 (al-ʿAlaq) is the 19th from end (114 - 96 + 1 = 19)",
+      "empirical_status": "VERIFIED (trivial)",
+      "test": "Pure arithmetic. Mushaf-position 96 → distance to end = 114 - 96 + 1 = 19.",
+      "verdict": "VERIFIED (trivial); BUT see K5.alt: Q 74 al-Muddaththir-as-first-revealed view (Bukhari #4714/4716; al-Suyūṭī Itqān القول الثاني) DEPRIVES this claim of its anchor surah"
+    },
+    {
+      "claim_id": "K6.muqattaat-div-19",
+      "khalifa_claim": "Each muqaṭṭāʿat letter count in its host surah divides by 19",
+      "empirical_status": "FAILED (1/29 surah-sums = chance rate)",
+      "test": "Standard counting yields 6/78 individual letters and 1/29 surah-sums divisible by 19; expected ≈ 1.5 by chance",
+      "verdict": "FAILED (Khalifa's published numbers don't match any orthography; collapses under standard counting)"
+    },
+    {
+      "claim_id": "K7.346199-word-count",
+      "khalifa_claim": "Quran has 346,199 = 19² × 959 letters in some unspecified counting",
+      "empirical_status": "FAILED (actual = 346,458 standard 6,236 verses; passes only under Q 9:128-129 deletion)",
+      "test": "Standard Hafs-Kūfan letter count; Khalifa's number requires Q 9:128-129 deletion",
+      "verdict": "FAILED (anchor-fragile)"
+    },
+    {
+      "claim_id": "K8.q74v30-19-letters",
+      "khalifa_claim": "Q 74:30 anchor verse has 19-related letter signature",
+      "empirical_status": "FAILED (12 letters under no-tashkeel; not 19; not divisible by 19)",
+      "test": "Phrase 'عليها تسعة عشر' = 12 graphemes (no-tashkeel). The verse is 3 words and 12 letters — neither is 19 nor a multiple of 19.",
+      "verdict": "FAILED (no rule-tuple yields 19)"
+    },
+    {
+      "claim_id": "K9.verse-counts-mod-19",
+      "khalifa_claim": "Verse-counts of surahs follow mod-19 patterns",
+      "empirical_status": "NULL (H-NEW-930)",
+      "test": "Pearson χ² goodness-of-fit on V_s mod 19 across 114 surahs. χ²=8.67, p=0.967 (under-dispersed, not over)",
+      "verdict": "FAILED (Khalifa-19 REVERSED on its own terms — residue-0 mod 19 has 4 surahs, expected 6)"
+    },
+    {
+      "claim_id": "K10.fasila-abjad-mod-19",
+      "khalifa_claim": "Verse-final abjad-residues cluster mod 19",
+      "empirical_status": "NULL (H-NEW-34)",
+      "test": "χ² on verse-final abjad-residues mod 19 vs Bukhari/Jahiz baselines: 6 of 6 NULL; Quran is more uniform than baselines (z = -4.28 to -11.36)",
+      "verdict": "FAILED (under-dispersed, opposite direction from numerological prediction)"
+    },
+    {
+      "claim_id": "K11.cumulative-numerology-tally",
+      "khalifa_claim": "Code-19 corpus-architectural signature",
+      "empirical_status": "NULL across 163 numerology tests, zero Bonferroni survivors (H-NEW-237 consolidation)",
+      "test": "163 cumulative numerology-audit family tests across H-NEW-34, 175, 237, 890, 930, 950, classical numerology audit, abjad-mashriqi/maghribi, prime/cumulative-letter, Benford, etc.",
+      "verdict": "REFUTED at law-strength (cf. cross-finding-015 classical-scholarship validation pattern)"
+    },
+    {
+      "claim_id": "K12.divine-name-spectral-19",
+      "khalifa_claim": "Divine-name placement obeys 19-periodicity",
+      "empirical_status": "NULL (H-NEW-950)",
+      "test": "Lomb-Scargle periodogram on divine-name placement across 48 long surahs; 0 of 48 surahs have any peak surviving Bonferroni-150",
+      "verdict": "FAILED"
+    },
+    {
+      "claim_id": "K13.NEW-operationalization-search",
+      "khalifa_claim": "Some unexamined operationalization of Q 74:30 might rehabilitate Code-19",
+      "empirical_status": "NULL across all checked operationalizations",
+      "test_battery": {
+        "Q74v30_word_count": 3,
+        "Q74v30_letter_count_no_tashkeel": 12,
+        "Q74v30_letter_count_min_tashkeel": 12,
+        "Q74v30_letter_count_full_tashkeel": 12,
+        "Q74v30_isolated_phrase_letter_count": 12,
+        "Q74_total_verses": 56,
+        "Q74_total_words": 256,
+        "Q74_total_letters_no_tashkeel": 1035,
+        "Q74_total_verses_mod_19": 18,
+        "Q74_total_words_mod_19": 9,
+        "Q74_total_letters_mod_19": 9,
+        "Q73Q74_combined_verses": 76,
+        "Q73Q74_combined_verses_mod_19": 0
+      },
+      "verdict": "FAILED. None of 11 reasonable operationalizations yields 19-residue at chance-improbable rate. The single exception (Q 73+74 verse total = 76 = 4×19) is a small-integer coincidence (76 has 5 factor-pairs in [2..38]; the chance any 2-surah verse-sum is divisible by 19 = ~1/19 ≈ 5.3%, no Bonferroni-survival)."
+    }
+  ],
+  "summary": "Of 13 claim-axes adversarially audited: 3 VERIFIED-TRIVIAL (basmala-19-letters under no-tashkeel only; 114=19×6 arithmetic; surah-96-as-19th-from-end arithmetic — none statistically significant), 1 VERIFIED-TEXTUAL (Q 74:30 contains 'عليها تسعة عشر' as a textual fact, but classical tafsir interpretation = 19 angels guarding Hell, not a Code-19 self-reference), 1 RULES-TUPLE-FRAGILE (basmala-19-letters fails under full-Uthmani-script), 8 FAILED/REFUTED (all corpus-architectural numerology claims null at Bonferroni-corrected α; cumulative 163-test corpus-wide numerology-audit family registers ZERO Bonferroni survivors per H-NEW-237 consolidation). Specialist NEW-operationalization search across 11 reasonable rules-tuple variations of Q 74:30 yields no 19-residue at chance-improbable rate. VERDICT: Code-19 claim from Q 74:30 anchor REMAINS REFUTED across all axes. The Q 74:30 'nineteen' refers to 19 angels (classical tafsir, al-Ṭabarī chain Ibn ʿAbbās), and the surah's structural-architectural signature (UAS rank 54, FR-centroid rank 42, oath-pair with Q 73) is independently characterized at law-strength.",
+  "verdict": "RECAP-CONFIRMED-NULL"
+}

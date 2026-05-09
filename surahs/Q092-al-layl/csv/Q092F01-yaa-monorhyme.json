@@ -1,0 +1,185 @@
+{
+  "finding_id": "Q092F01",
+  "title": "Q 92 al-Layl is the corpus-UNIQUE yāʾ-monorhyme surah",
+  "date": "2026-05-09",
+  "instrument": "h-new-750.json (locked rhyme/iʿjāz instrument)",
+  "rules_tuple": {
+    "orthography": "no-tashkeel",
+    "verse_numbering": "hafs-kufan",
+    "feature": "verse-final letter, rhyme-entropy = Shannon nats over per-surah final letter distribution"
+  },
+  "n_perfect_monorhyme": 15,
+  "perfect_monorhyme_surahs": [
+    {
+      "surah": 54,
+      "n_verses": 55,
+      "top_final_letter": "ر",
+      "mean_FR": 0.9898856194690261
+    },
+    {
+      "surah": 76,
+      "n_verses": 31,
+      "top_final_letter": "ا",
+      "mean_FR": 0.9084441681415929
+    },
+    {
+      "surah": 48,
+      "n_verses": 29,
+      "top_final_letter": "ا",
+      "mean_FR": 0.994499778761062
+    },
+    {
+      "surah": 72,
+      "n_verses": 28,
+      "top_final_letter": "ا",
+      "mean_FR": 0.8985168761061946
+    },
+    {
+      "surah": 92,
+      "n_verses": 21,
+      "top_final_letter": "ي",
+      "mean_FR": 0.8438230442477878
+    },
+    {
+      "surah": 91,
+      "n_verses": 15,
+      "top_final_letter": "ا",
+      "mean_FR": 0.7925275132743363
+    },
+    {
+      "surah": 63,
+      "n_verses": 11,
+      "top_final_letter": "ن",
+      "mean_FR": 0.8433771504424782
+    },
+    {
+      "surah": 104,
+      "n_verses": 9,
+      "top_final_letter": "ه",
+      "mean_FR": 0.793360955752212
+    },
+    {
+      "surah": 98,
+      "n_verses": 8,
+      "top_final_letter": "ه",
+      "mean_FR": 0.821375902654867
+    },
+    {
+      "surah": 114,
+      "n_verses": 6,
+      "top_final_letter": "س",
+      "mean_FR": 0.7837765575221238
+    },
+    {
+      "surah": 97,
+      "n_verses": 5,
+      "top_final_letter": "ر",
+      "mean_FR": 0.8197089115044248
+    },
+    {
+      "surah": 105,
+      "n_verses": 5,
+      "top_final_letter": "ل",
+      "mean_FR": 0.7876760176991155
+    },
+    {
+      "surah": 112,
+      "n_verses": 4,
+      "top_final_letter": "د",
+      "mean_FR": 0.7591876902654864
+    },
+    {
+      "surah": 103,
+      "n_verses": 3,
+      "top_final_letter": "ر",
+      "mean_FR": 0.7870325132743362
+    },
+    {
+      "surah": 108,
+      "n_verses": 3,
+      "top_final_letter": "ر",
+      "mean_FR": 0.7718433539823008
+    }
+  ],
+  "terminal_letter_distribution": {
+    "ر": 4,
+    "ا": 4,
+    "ي": 1,
+    "ن": 1,
+    "ه": 2,
+    "س": 1,
+    "ل": 1,
+    "د": 1
+  },
+  "Q92": {
+    "surah": 92,
+    "n_verses": 21,
+    "rhyme_entropy_nats": 0.0,
+    "top_final_letter": "ي",
+    "top_final_letter_frac": 1.0,
+    "mean_content_distance": 0.8438230442477878,
+    "local_cohesion": 2.134296327836453,
+    "z_rhyme_entropy": -1.3940122881242307,
+    "z_mean_content_distance": -0.7862052012207418,
+    "z_local_cohesion": 0.8384538170476187,
+    "sig_A": -0.607807086903489,
+    "sig_B": -0.555558471076612,
+    "rank_A": 77,
+    "rank_B": 66
+  },
+  "n_yaa_perfect_monorhyme": 1,
+  "Q92_unique_yaa_perfect": true,
+  "verdict": "CORPUS-EXACT-1-OF-1",
+  "Q92_top10_neighbors_with_monorhyme_flag": [
+    [
+      111,
+      0.406006,
+      false
+    ],
+    [
+      108,
+      0.410607,
+      true
+    ],
+    [
+      94,
+      0.411535,
+      false
+    ],
+    [
+      93,
+      0.433778,
+      false
+    ],
+    [
+      104,
+      0.444619,
+      true
+    ],
+    [
+      106,
+      0.445173,
+      false
+    ],
+    [
+      112,
+      0.446611,
+      true
+    ],
+    [
+      113,
+      0.447881,
+      false
+    ],
+    [
+      107,
+      0.452729,
+      false
+    ],
+    [
+      103,
+      0.458807,
+      true
+    ]
+  ]
+}

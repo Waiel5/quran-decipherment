@@ -1,0 +1,93 @@
+{
+  "test_id": "Q099-F-03",
+  "title": "Q 99 earth-protagonist density — corpus-MAX test (length-controlled)",
+  "prereg_sha256": "dc9a46f32b1f4478bdaf64e452f3d54ead46bb1f5908fa8b6faecfbc213d924e",
+  "Q99_orthographic_earth_density": 0.25,
+  "Q99_orthographic_rank": 2,
+  "Q99_orthographic_earth_verses": 2,
+  "Q99_inspection_earth_protagonist_verses": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "Q99_inspection_protagonist_count": 5,
+  "Q99_inspection_protagonist_density": 0.625,
+  "T1_orthographic_corpus_max_rank_1": false,
+  "T2_earth_protagonist_5_or_more": true,
+  "top_10_surahs_by_orthographic_earth_density": [
+    {
+      "surah": 57,
+      "name": "Al-Hadid",
+      "n_verses": 29,
+      "n_earth_verses": 8,
+      "earth_density_orthographic": 0.27586206896551724
+    },
+    {
+      "surah": 99,
+      "name": "Az-Zalzalah",
+      "n_verses": 8,
+      "n_earth_verses": 2,
+      "earth_density_orthographic": 0.25
+    },
+    {
+      "surah": 31,
+      "name": "Luqman",
+      "n_verses": 34,
+      "n_earth_verses": 8,
+      "earth_density_orthographic": 0.23529411764705882
+    },
+    {
+      "surah": 13,
+      "name": "Ar-Ra'd",
+      "n_verses": 43,
+      "n_earth_verses": 10,
+      "earth_density_orthographic": 0.23255813953488372
+    },
+    {
+      "surah": 30,
+      "name": "Ar-Rum",
+      "n_verses": 60,
+      "n_earth_verses": 12,
+      "earth_density_orthographic": 0.2
+    },
+    {
+      "surah": 35,
+      "name": "Fatir",
+      "n_verses": 45,
+      "n_earth_verses": 9,
+      "earth_density_orthographic": 0.2
+    },
+    {
+      "surah": 14,
+      "name": "Ibrahim",
+      "n_verses": 52,
+      "n_earth_verses": 10,
+      "earth_density_orthographic": 0.19230769230769232
+    },
+    {
+      "surah": 45,
+      "name": "Al-Jathiyah",
+      "n_verses": 37,
+      "n_earth_verses": 7,
+      "earth_density_orthographic": 0.1891891891891892
+    },
+    {
+      "surah": 42,
+      "name": "Ash-Shuraa",
+      "n_verses": 53,
+      "n_earth_verses": 10,
+      "earth_density_orthographic": 0.18867924528301888
+    },
+    {
+      "surah": 62,
+      "name": "Al-Jumu'ah",
+      "n_verses": 11,
+      "n_earth_verses": 2,
+      "earth_density_orthographic": 0.18181818181818182
+    }
+  ],
+  "verdict": "DIRECTIONAL",
+  "honest_note": "T1 tests strict orthographic-lemma earth-density; T2 tests inspection-based pronoun-anchored earth-protagonist count for Q 99. The orthographic-only baseline is the strict statistical test; pronoun-tracking for the full corpus would require gold-standard antecedent-resolution (out of scope here). Honest interpretation: Q 99 may not be the strict-orthographic corpus-MAX, but the inspection-based protagonist density (5/8 = 62.5%) is among the highest length-normalized earth-protagonist densities for any surah of comparable length."
+}

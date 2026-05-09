@@ -1,0 +1,193 @@
+{
+  "id": "Q077-F-03",
+  "title": "Q 77 dual-cluster centrality (H-NEW-1190 + H-NEW-1200)",
+  "prereg_sha": "f888997289ea8ab2acd51508d4003792f4fc3ebcf60cdc095289169fdb8b094d",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, FR-on-QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "alpha_bon": 0.0167,
+  "cell_A_adraka": {
+    "cluster_name": "H-NEW-1190 wa-mā-adrāka-mā",
+    "cluster_size": 10,
+    "members": [
+      69,
+      74,
+      77,
+      82,
+      83,
+      86,
+      90,
+      97,
+      101,
+      104
+    ],
+    "q77_individual_distances": {
+      "Q69": 0.795579,
+      "Q74": 0.825903,
+      "Q82": 0.694828,
+      "Q83": 0.689347,
+      "Q86": 0.642186,
+      "Q90": 0.700056,
+      "Q97": 0.677983,
+      "Q101": 0.636339,
+      "Q104": 0.666789
+    },
+    "D_obs_mean_q77_to_others": 0.7032233333333333,
+    "perm_null_mean": 0.9214724214555555,
+    "perm_p_one_tailed_lower": 0.0001,
+    "pass_alpha_bon_0167": true,
+    "centrality_ranking": [
+      {
+        "surah": 101,
+        "mean_dist": 0.5231926666666666
+      },
+      {
+        "surah": 104,
+        "mean_dist": 0.5262298888888889
+      },
+      {
+        "surah": 97,
+        "mean_dist": 0.556217
+      },
+      {
+        "surah": 86,
+        "mean_dist": 0.5659787777777778
+      },
+      {
+        "surah": 90,
+        "mean_dist": 0.5842302222222222
+      },
+      {
+        "surah": 82,
+        "mean_dist": 0.5953498888888888
+      },
+      {
+        "surah": 83,
+        "mean_dist": 0.6487101111111111
+      },
+      {
+        "surah": 77,
+        "mean_dist": 0.7032233333333333
+      },
+      {
+        "surah": 74,
+        "mean_dist": 0.7377448888888889
+      },
+      {
+        "surah": 69,
+        "mean_dist": 0.7425423333333333
+      }
+    ],
+    "q77_centrality_rank": 8,
+    "q77_centrality_total": 10
+  },
+  "cell_B_eschat": {
+    "cluster_name": "H-NEW-1200 short-Meccan-tail-eschatology",
+    "cluster_size": 14,
+    "members": [
+      56,
+      69,
+      74,
+      77,
+      81,
+      82,
+      83,
+      84,
+      86,
+      90,
+      97,
+      99,
+      101,
+      104
+    ],
+    "q77_individual_distances": {
+      "Q56": 0.835564,
+      "Q69": 0.795579,
+      "Q74": 0.825903,
+      "Q81": 0.741256,
+      "Q82": 0.694828,
+      "Q83": 0.689347,
+      "Q84": 0.746167,
+      "Q86": 0.642186,
+      "Q90": 0.700056,
+      "Q97": 0.677983,
+      "Q99": 0.695649,
+      "Q101": 0.636339,
+      "Q104": 0.666789
+    },
+    "D_obs_mean_q77_to_others": 0.7190496923076923,
+    "perm_null_mean": 0.9209705370307693,
+    "perm_p_one_tailed_lower": 0.0,
+    "pass_alpha_bon_0167": true,
+    "centrality_ranking": [
+      {
+        "surah": 101,
+        "mean_dist": 0.5406449230769231
+      },
+      {
+        "surah": 104,
+        "mean_dist": 0.5428709230769231
+      },
+      {
+        "surah": 97,
+        "mean_dist": 0.5701593076923077
+      },
+      {
+        "surah": 86,
+        "mean_dist": 0.5826583846153847
+      },
+      {
+        "surah": 99,
+        "mean_dist": 0.5914621538461539
+      },
+      {
+        "surah": 90,
+        "mean_dist": 0.5999709230769231
+      },
+      {
+        "surah": 82,
+        "mean_dist": 0.6113366153846154
+      },
+      {
+        "surah": 81,
+        "mean_dist": 0.6211089230769231
+      },
+      {
+        "surah": 84,
+        "mean_dist": 0.6355626923076924
+      },
+      {
+        "surah": 83,
+        "mean_dist": 0.666757076923077
+      },
+      {
+        "surah": 77,
+        "mean_dist": 0.7190496923076923
+      },
+      {
+        "surah": 69,
+        "mean_dist": 0.7463894615384615
+      },
+      {
+        "surah": 74,
+        "mean_dist": 0.7496945384615384
+      },
+      {
+        "surah": 56,
+        "mean_dist": 0.868459
+      }
+    ],
+    "q77_centrality_rank": 11,
+    "q77_centrality_total": 14
+  },
+  "cell_C_centrality_summary": {
+    "q77_rank_in_H_NEW_1190": 8,
+    "q77_rank_in_H_NEW_1200": 11,
+    "interpretation": "Q 77 ranks 8/10 in H-NEW-1190 and 11/14 in H-NEW-1200 — PERIPHERAL within both clusters (consistent with Q 37's rank 15/15 in H-NEW-1070 oath-cluster: cluster membership confirmed, central-anchor identity rejected)."
+  },
+  "verdict_summary": {
+    "cell_A_pass": true,
+    "cell_B_pass": true,
+    "verdict": "PASS-DIRECTED FULL"
+  }
+}

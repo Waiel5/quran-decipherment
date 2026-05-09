@@ -1,0 +1,48 @@
+{
+  "finding_id": "Q060-F-04",
+  "prereg_sha": "1754e381458e58b6458ee9190950c488cb63c0a35d252d703596e4fedf7a0b7d",
+  "seed": 20260509,
+  "rules_tuple": "(no-tashkeel, orthographic-token, regex-fixed-pattern + char-LCS, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "h1a_test": {
+    "pattern": "أسوة\\s+حسنة",
+    "predicted_distribution": "3 instances in 2 surahs ({Q 33, Q 60})",
+    "corpus_instances": 3,
+    "instances": [
+      {
+        "surah": 33,
+        "verse": 21,
+        "text": "لقد كان لكم في رسول الله أسوة حسنة لمن كان يرجو الله واليوم الآخر وذكر الله كثيرا"
+      },
+      {
+        "surah": 60,
+        "verse": 4,
+        "text": "قد كانت لكم أسوة حسنة في إبراهيم والذين معه إذ قالوا لقومهم إنا برآء منكم ومما تعبدون من دون الله كفرنا بكم وبدا بيننا وبينكم العداوة والبغضاء أبدا حتى تؤمنوا بالله وحده إلا قول إبراهيم لأبيه لأستغفرن لك وما أملك لك من الله من شيء ۖ ربنا عليك توكلنا وإليك أنبنا وإليك المصير"
+      },
+      {
+        "surah": 60,
+        "verse": 6,
+        "text": "لقد كان لكم فيهم أسوة حسنة لمن كان يرجو الله واليوم الآخر ۚ ومن يتول فإن الله هو الغني الحميد"
+      }
+    ],
+    "verdict": "PASS"
+  },
+  "h1b_test": {
+    "description": "Longest common substring Q 33:21 ↔ Q 60:6",
+    "shared_substring": "أسوة حسنة لمن كان يرجو الله واليوم الآخر",
+    "shared_chars": 42,
+    "shared_words": 8,
+    "threshold_words": 7,
+    "verdict": "PASS"
+  },
+  "heuristic_null_lengthweighted": {
+    "q33_q60_combined_word_share": 0.021377845220030348,
+    "p_3hits_concentration_random": 9.769937491581455e-06
+  },
+  "descriptive_q33_q60_fr": {
+    "fr_distance": 0.959018,
+    "rank_in_medinan_pairs": 237,
+    "total_medinan_pairs": 378,
+    "percentile": 0.626984126984127
+  },
+  "overall_verdict": "CORPUS-EXACT 3-instance, paired-exemplar architecture (Muhammad↔Ibrahim)"
+}

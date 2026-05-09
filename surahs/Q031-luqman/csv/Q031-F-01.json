@@ -1,0 +1,78 @@
+{
+  "test_id": "Q031-F-01",
+  "title": "Q 31 yā-bunayya density vs cohort",
+  "pre_reg_sha256": "1d483e8d6495fd406f3cd17f060cd0b74d581c221cb3ee3e10b0c63cc9858e97",
+  "pre_reg_sha_expected": "1d483e8d6495fd406f3cd17f060cd0b74d581c221cb3ee3e10b0c63cc9858e97",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "corpus_total_yabunayya_tokens": 9,
+  "cohort_surahs": [
+    2,
+    11,
+    12,
+    31,
+    37
+  ],
+  "cohort_data": {
+    "2": {
+      "count": 1,
+      "verse_count": 286,
+      "density": 0.0034965034965034965
+    },
+    "11": {
+      "count": 1,
+      "verse_count": 123,
+      "density": 0.008130081300813009
+    },
+    "12": {
+      "count": 3,
+      "verse_count": 111,
+      "density": 0.02702702702702703
+    },
+    "31": {
+      "count": 3,
+      "verse_count": 34,
+      "density": 0.08823529411764706
+    },
+    "37": {
+      "count": 1,
+      "verse_count": 182,
+      "density": 0.005494505494505495
+    }
+  },
+  "q31_density": 0.08823529411764706,
+  "q31_count": 3,
+  "q31_rank_in_cohort": 1,
+  "q31_share_of_corpus": 0.3333333333333333,
+  "cohort_density_ranking": [
+    {
+      "surah": 31,
+      "density": 0.08823529411764706
+    },
+    {
+      "surah": 12,
+      "density": 0.02702702702702703
+    },
+    {
+      "surah": 11,
+      "density": 0.008130081300813009
+    },
+    {
+      "surah": 37,
+      "density": 0.005494505494505495
+    },
+    {
+      "surah": 2,
+      "density": 0.0034965034965034965
+    }
+  ],
+  "h1_rank_eq_1": true,
+  "h2_share_ge_50pct": false,
+  "h3_perm_p_lt_alpha_bon": true,
+  "perm_p_one_tailed": 0.0067,
+  "perm_null_mean": 0.012323529411764705,
+  "perm_null_max": 0.14705882352941177,
+  "alpha_bon": 0.025,
+  "bonferroni_k": 2,
+  "verdict": "PASS-DIRECTED (post-hoc origin disclosed)"
+}

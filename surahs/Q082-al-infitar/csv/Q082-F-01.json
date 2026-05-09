@@ -1,0 +1,123 @@
+{
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "pre_reg_finding_id": "Q082-F-01",
+  "parent_findings": [
+    "H-NEW-1190"
+  ],
+  "no_tashkeel_hits": [
+    {
+      "surah": 69,
+      "verse": 3,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما الحاقة"
+    },
+    {
+      "surah": 74,
+      "verse": 27,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما سقر"
+    },
+    {
+      "surah": 77,
+      "verse": 14,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما يوم الفصل"
+    },
+    {
+      "surah": 82,
+      "verse": 17,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما يوم الدين"
+    },
+    {
+      "surah": 82,
+      "verse": 18,
+      "count_in_verse": 1,
+      "text": "ثم ما أدراك ما يوم الدين"
+    },
+    {
+      "surah": 83,
+      "verse": 8,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما سجين"
+    },
+    {
+      "surah": 83,
+      "verse": 19,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما عليون"
+    },
+    {
+      "surah": 86,
+      "verse": 2,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما الطارق"
+    },
+    {
+      "surah": 90,
+      "verse": 12,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما العقبة"
+    },
+    {
+      "surah": 97,
+      "verse": 2,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما ليلة القدر"
+    },
+    {
+      "surah": 101,
+      "verse": 3,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما القارعة"
+    },
+    {
+      "surah": 101,
+      "verse": 10,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما هيه"
+    },
+    {
+      "surah": 104,
+      "verse": 5,
+      "count_in_verse": 1,
+      "text": "وما أدراك ما الحطمة"
+    }
+  ],
+  "cross_variant_consistent": true,
+  "surahs_with_pattern": [
+    69,
+    74,
+    77,
+    82,
+    83,
+    86,
+    90,
+    97,
+    101,
+    104
+  ],
+  "n_distinct_surahs": 10,
+  "doubled_meta_pairs": [
+    {
+      "surah": 82,
+      "v_first": 17,
+      "v_second": 18,
+      "np_first": "يوم الدين",
+      "np_second": "يوم الدين",
+      "np_head_first": "يوم الدين",
+      "np_head_second": "يوم الدين",
+      "same_np": true
+    }
+  ],
+  "n_doubled_with_same_np": 1,
+  "thumma_construction_hits": [
+    {
+      "surah": 82,
+      "verse": 18,
+      "text": "ثم ما أدراك ما يوم الدين"
+    }
+  ],
+  "n_thumma_construction": 1,
+  "verdict": "CONFIRMED — Q 82:17-18 is the corpus-UNIQUE doubled wa-mā-adrāka-mā construction with same-NP (yawm al-dīn) meta-questioned twice via thumma."
+}

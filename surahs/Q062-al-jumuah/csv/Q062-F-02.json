@@ -1,0 +1,70 @@
+{
+  "test_id": "Q062-F-02",
+  "parent_finding": "cross-finding-010 audit-035 dedup 4-way tied hub set {Q 62, 112, 113, 114}",
+  "q62_to_each_hub": {
+    "112": 0.616012,
+    "113": 0.684449,
+    "114": 0.655994
+  },
+  "mean_q62_to_hub_set": 0.6521516666666667,
+  "within_hub_pairwise_distances": {
+    "112_113": 0.288619,
+    "112_114": 0.308609,
+    "113_114": 0.271785
+  },
+  "mean_within_hub_set": 0.289671,
+  "ratio_q62_to_hub_over_within_hub": 2.251352971704681,
+  "q62_corpus_mean_FR_distance": 0.838018389380531,
+  "corpus_pairwise_mean_FR_distance": 0.9234872255860892,
+  "q62_top_10_FR_nearest_surahs": [
+    {
+      "surah": 112,
+      "d": 0.616012
+    },
+    {
+      "surah": 110,
+      "d": 0.635319
+    },
+    {
+      "surah": 95,
+      "d": 0.649629
+    },
+    {
+      "surah": 1,
+      "d": 0.649958
+    },
+    {
+      "surah": 114,
+      "d": 0.655994
+    },
+    {
+      "surah": 108,
+      "d": 0.657305
+    },
+    {
+      "surah": 91,
+      "d": 0.658479
+    },
+    {
+      "surah": 102,
+      "d": 0.660343
+    },
+    {
+      "surah": 107,
+      "d": 0.669844
+    },
+    {
+      "surah": 111,
+      "d": 0.673755
+    }
+  ],
+  "q62_FR_rank_1_nearest_surah": {
+    "surah": 112,
+    "d": 0.616012
+  },
+  "cell_A_q62_closer_to_hub_than_corpus_mean": true,
+  "cell_B_q62_more_distant_than_within_hub": true,
+  "cell_C_structural_cluster_degree_not_FR_content": true,
+  "fr_matrix_sha256": "4c366c414b82b0d0f3bcd06b68a7b5a87b500cf925b5088704a36c355d7f33fc",
+  "verdict": "PARTIAL — Q 62 IS FR-closer to {Q 112, 113, 114} than to its own corpus-mean (0.6522 < 0.8380). Q 62-FR-rank-1-nearest = Q 112 (d = 0.6160). BUT: Q 62 is ~2.25× more distant from {Q 112, 113, 114} than {Q 112, 113, 114} are from each other (0.6522 vs 0.2897). Refines audit-035 reading: the 4-way hub TIE is STRUCTURAL-CLUSTER-DEGREE in 18-cluster taxonomy, NOT FR-content cluster co-membership."
+}

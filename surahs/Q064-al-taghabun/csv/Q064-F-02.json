@@ -1,0 +1,143 @@
+{
+  "test_id": "Q064-F-02",
+  "title": "Q 64 short-Medinan-block (Q 57-66) FR-centrality test",
+  "prereg_sha256": "9c74af048df58035f3b8369d5ff604e817748043bba07fb9bbe22eb42fff032a",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "rules_tuple": "(no-tashkeel, FR-on-QAC-stem-roots-K=500-Dirichlet-α=0.5, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "data_source": "findings/phase-b-hypotheses/csv/h-new-111.json",
+  "short_medinan_block": [
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66
+  ],
+  "H1_D_block": 0.7409016666666667,
+  "H1_null_mean": 0.8747999770555556,
+  "H1_null_min": 0.7747768888888888,
+  "H1_null_max": 1.001433888888889,
+  "H1_perm_p": 0.0,
+  "H2_q64_rank_in_block": 1,
+  "centrality_within_block": [
+    {
+      "surah": 64,
+      "mean_FR_to_others_in_block": 0.7409016666666667
+    },
+    {
+      "surah": 63,
+      "mean_FR_to_others_in_block": 0.7490787777777778
+    },
+    {
+      "surah": 61,
+      "mean_FR_to_others_in_block": 0.7742073333333334
+    },
+    {
+      "surah": 62,
+      "mean_FR_to_others_in_block": 0.7908294444444445
+    },
+    {
+      "surah": 59,
+      "mean_FR_to_others_in_block": 0.798043111111111
+    },
+    {
+      "surah": 60,
+      "mean_FR_to_others_in_block": 0.8249498888888889
+    },
+    {
+      "surah": 66,
+      "mean_FR_to_others_in_block": 0.8261444444444445
+    },
+    {
+      "surah": 58,
+      "mean_FR_to_others_in_block": 0.8316083333333333
+    },
+    {
+      "surah": 57,
+      "mean_FR_to_others_in_block": 0.8368356666666666
+    },
+    {
+      "surah": 65,
+      "mean_FR_to_others_in_block": 0.8479477777777777
+    }
+  ],
+  "pair_table_q64": [
+    {
+      "pair": [
+        64,
+        57
+      ],
+      "FR": 0.722033
+    },
+    {
+      "pair": [
+        64,
+        58
+      ],
+      "FR": 0.739128
+    },
+    {
+      "pair": [
+        64,
+        59
+      ],
+      "FR": 0.757065
+    },
+    {
+      "pair": [
+        64,
+        60
+      ],
+      "FR": 0.760933
+    },
+    {
+      "pair": [
+        64,
+        61
+      ],
+      "FR": 0.728541
+    },
+    {
+      "pair": [
+        64,
+        62
+      ],
+      "FR": 0.734661
+    },
+    {
+      "pair": [
+        64,
+        63
+      ],
+      "FR": 0.695406
+    },
+    {
+      "pair": [
+        64,
+        65
+      ],
+      "FR": 0.777412
+    },
+    {
+      "pair": [
+        64,
+        66
+      ],
+      "FR": 0.752936
+    }
+  ],
+  "verdicts": {
+    "H1_perm_p_le_alpha_bon": true,
+    "H1_perm_p": 0.0,
+    "H2_centrality_rank_le_5": true,
+    "H2_q64_rank": 1
+  },
+  "verdict": "CONFIRMED"
+}

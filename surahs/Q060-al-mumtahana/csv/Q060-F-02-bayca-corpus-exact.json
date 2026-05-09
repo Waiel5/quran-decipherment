@@ -1,0 +1,96 @@
+{
+  "finding_id": "Q060-F-02",
+  "prereg_sha": "08f0033c65aa9907b6ebde476dcdb88048b370e7729316a81595ab3ad9f31962",
+  "seed": 20260509,
+  "rules_tuple": "(no-tashkeel, orthographic-token, regex-fixed-pattern, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "test_a_yubayicna": {
+    "pattern": "يبايعنك",
+    "corpus_instances": 1,
+    "instances": [
+      {
+        "surah": 60,
+        "verse": 12,
+        "text": "يا أيها النبي إذا جاءك المؤمنات يبايعنك على أن لا يشركن بالله شيئا ولا يسرقن ولا يزنين ولا يقتلن أولادهن ولا يأتين ببهتان يفترينه بين أيديهن وأرجلهن ولا يعصينك في معروف ۙ فبايعهن واستغفر لهن الله ۖ إن الله غفور رحيم"
+      }
+    ],
+    "verdict": "CORPUS-EXACT to Q 60:12"
+  },
+  "test_a_extension_fa_bayic_hunna": {
+    "pattern": "فبايعهن",
+    "corpus_instances": 1,
+    "instances": [
+      {
+        "surah": 60,
+        "verse": 12,
+        "text": "يا أيها النبي إذا جاءك المؤمنات يبايعنك على أن لا يشركن بالله شيئا ولا يسرقن ولا يزنين ولا يقتلن أولادهن ولا يأتين ببهتان يفترينه بين أيديهن وأرجلهن ولا يعصينك في معروف ۙ فبايعهن واستغفر لهن الله ۖ إن الله غفور رحيم"
+      }
+    ]
+  },
+  "comparator_masculine_yubayicunaka": {
+    "pattern": "يبايعونك",
+    "corpus_instances": 2,
+    "instances": [
+      {
+        "surah": 48,
+        "verse": 10,
+        "text": "إن الذين يبايعونك إنما يبايعون الله يد الله فوق أيديهم ۚ فمن نكث فإنما ينكث على نفسه ۖ ومن أوفى بما عاهد عليه الله فسيؤتيه أجرا عظيما"
+      },
+      {
+        "surah": 48,
+        "verse": 18,
+        "text": "۞ لقد رضي الله عن المؤمنين إذ يبايعونك تحت الشجرة فعلم ما في قلوبهم فأنزل السكينة عليهم وأثابهم فتحا قريبا"
+      }
+    ]
+  },
+  "test_b_chained_negimps": {
+    "pattern": "(و)لا + feminine-plural negative-imperative chain ≥4 in single verse",
+    "corpus_instances_geq_4": 1,
+    "instances_geq_4": [
+      {
+        "surah": 60,
+        "verse": 12,
+        "n_chain": 6,
+        "matches": [
+          "لا يشركن",
+          "ولا يسرقن",
+          "ولا يزنين",
+          "ولا يقتلن",
+          "ولا يأتين",
+          "ولا يعصينك"
+        ],
+        "text": "يا أيها النبي إذا جاءك المؤمنات يبايعنك على أن لا يشركن بالله شيئا ولا يسرقن ولا يزنين ولا يقتلن أولادهن ولا يأتين ببهتان يفترينه بين أيديهن وأرجلهن ولا يعصينك في معروف ۙ فبايعهن واستغفر لهن الله ۖ إن الله غفور رحيم"
+      }
+    ],
+    "instances_geq_2": [
+      {
+        "surah": 24,
+        "verse": 31,
+        "n_chain": 3,
+        "matches": [
+          "ولا يبدين",
+          "ولا يبدين",
+          "ولا يضربن"
+        ]
+      },
+      {
+        "surah": 60,
+        "verse": 12,
+        "n_chain": 6,
+        "matches": [
+          "لا يشركن",
+          "ولا يسرقن",
+          "ولا يزنين",
+          "ولا يقتلن",
+          "ولا يأتين",
+          "ولا يعصينك"
+        ]
+      }
+    ],
+    "verdict": "CORPUS-EXACT to Q 60:12"
+  },
+  "length_weighted_null": {
+    "q60_word_share": 0.0045766312594840665,
+    "p_lengthweighted_one_instance_at_q60": 0.0045766312594840665
+  },
+  "overall_verdict": "BOTH CORPUS-EXACT (PASS-DIRECTED with replication queue)"
+}

@@ -159,7 +159,7 @@ The bracketing is rhetorical-thematic; the surah's middle 53 verses unfold the s
 | Cosmic-oath + eschatological oracle | 1-6 | 4-element fa-coordinated oath sub-genre |
 | Skeptics' confusion + judgment-Q&A | 7-14 | dialogic |
 | Pious-vigil + zakāt-precursor | 15-19 | grounds night-prayer + right-of-deprived |
-| Anthropic + cosmic signs | 20-23 | "in yourselves" + "in the heavens" |
+| Anfus + cosmic signs | 20-23 | "in yourselves" + "in the heavens" |
 | Ibrāhīm-hospitality + Lūṭ-destruction | 24-37 | balanced 7+7 sub-blocks |
 | Compressed prophet-cycle (4 retrograde) | 38-46 | unbalanced 3+2+3+1 |
 | Cosmological building-doctrine + tawḥīd | 47-51 | "flee to Allah" double-refrain |

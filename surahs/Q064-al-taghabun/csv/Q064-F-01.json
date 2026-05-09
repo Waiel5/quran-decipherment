@@ -1,0 +1,95 @@
+{
+  "test_id": "Q064-F-01",
+  "title": "Q 64 musabbiḥāt cluster membership (FR axis) + Q 62↔Q 64 imperfect-tense pair",
+  "prereg_sha256": "93e25cb9df1e464774bf25d6757316479790e9ccd77d360a2e9ec48af6f3a8ae",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 3,
+  "alpha_bon": 0.016666666666666666,
+  "rules_tuple": "(no-tashkeel, FR-on-QAC-stem-roots-K=500-Dirichlet-α=0.5, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "data_source": "findings/phase-b-hypotheses/csv/h-new-111.json",
+  "musabbihat_5_cluster": [
+    57,
+    59,
+    61,
+    62,
+    64
+  ],
+  "pair_table_q64": [
+    {
+      "pair": [
+        64,
+        57
+      ],
+      "FR": 0.722033,
+      "tense_class": "perfect"
+    },
+    {
+      "pair": [
+        64,
+        59
+      ],
+      "FR": 0.757065,
+      "tense_class": "perfect"
+    },
+    {
+      "pair": [
+        64,
+        61
+      ],
+      "FR": 0.728541,
+      "tense_class": "perfect"
+    },
+    {
+      "pair": [
+        64,
+        62
+      ],
+      "FR": 0.734661,
+      "tense_class": "imperfect"
+    }
+  ],
+  "H1_D_musabb": 0.735575,
+  "H1_null_mean": 0.87442024855,
+  "H1_null_min": 0.73270525,
+  "H1_null_max": 1.07377,
+  "H1_perm_p": 0.0001,
+  "H2_d_q62_q64": 0.734661,
+  "H2_pair_rank_in_6441": 1003,
+  "H2_pair_pct_rank": 15.572116131035555,
+  "H3_M_intra": 0.7703513,
+  "H3_M_q64": 0.735575,
+  "centrality_within_cluster": [
+    {
+      "surah": 64,
+      "mean_FR_to_others": 0.735575
+    },
+    {
+      "surah": 61,
+      "mean_FR_to_others": 0.76291975
+    },
+    {
+      "surah": 59,
+      "mean_FR_to_others": 0.77434
+    },
+    {
+      "surah": 62,
+      "mean_FR_to_others": 0.78174425
+    },
+    {
+      "surah": 57,
+      "mean_FR_to_others": 0.7971775
+    }
+  ],
+  "q64_centrality_rank": 1,
+  "verdicts": {
+    "H1_perm_p_le_alpha_bon": true,
+    "H1_perm_p": 0.0001,
+    "H2_pair_rank_le_5pct": false,
+    "H2_pair_pct_rank": 15.572116131035555,
+    "H3_within_cluster_centroid": true,
+    "H3_M_q64": 0.735575,
+    "H3_M_intra": 0.7703513
+  },
+  "verdict": "DIRECTIONAL"
+}

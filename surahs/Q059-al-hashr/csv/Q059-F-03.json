@@ -1,0 +1,228 @@
+{
+  "finding_id": "Q059-F-03",
+  "title": "Q 59 ↔ Q 62 surah-token-set Jaccard cohesion vs length-matched Medinan pairs",
+  "prereg_sha": "d0fa6ad0aaf95d09350c3202e2ca207cc7236f6639259b3ce9db148cf52288d0",
+  "seed": 20260509,
+  "n_perm": 105,
+  "rules_tuple": "(no-tashkeel, ornament-stripped, whitespace-tokenized, surah-as-bag-of-tokens)",
+  "authored_by": "Waiel Al-Shujaa",
+  "date": "2026-05-09",
+  "observed": {
+    "q59_q62_token_jaccard": 0.11627906976744186,
+    "q59_word_count": 447,
+    "q62_word_count": 177,
+    "harmonic_mean_W": 253.58653846153845,
+    "q59_in_q62_share": 0.1505016722408027,
+    "q62_in_q59_share": 0.3383458646616541
+  },
+  "q59_jaccard_to_all_27_medinan": {
+    "64": 0.1642512077294686,
+    "58": 0.13663366336633664,
+    "57": 0.13504273504273503,
+    "8": 0.1163895486935867,
+    "62": 0.11627906976744186,
+    "24": 0.11556064073226545,
+    "48": 0.11467116357504216,
+    "13": 0.1111111111111111,
+    "60": 0.10927835051546392,
+    "49": 0.1072961373390558,
+    "9": 0.1063664596273292,
+    "63": 0.10327455919395466,
+    "22": 0.10222222222222223,
+    "66": 0.10222222222222223,
+    "61": 0.1016949152542373,
+    "5": 0.10021321961620469,
+    "47": 0.09982788296041308,
+    "33": 0.09666666666666666,
+    "65": 0.08855291576673865,
+    "3": 0.08666256914566688,
+    "4": 0.07409602845287493,
+    "98": 0.06956521739130435,
+    "2": 0.06484923585295332,
+    "76": 0.06451612903225806,
+    "55": 0.045951859956236324,
+    "110": 0.009554140127388535,
+    "99": 0.009230769230769232
+  },
+  "q62_rank_among_q59_medinan_partners": 5,
+  "q59_top10_medinan_partners": [
+    [
+      64,
+      0.1642512077294686
+    ],
+    [
+      58,
+      0.13663366336633664
+    ],
+    [
+      57,
+      0.13504273504273503
+    ],
+    [
+      8,
+      0.1163895486935867
+    ],
+    [
+      62,
+      0.11627906976744186
+    ],
+    [
+      24,
+      0.11556064073226545
+    ],
+    [
+      48,
+      0.11467116357504216
+    ],
+    [
+      13,
+      0.1111111111111111
+    ],
+    [
+      60,
+      0.10927835051546392
+    ],
+    [
+      49,
+      0.1072961373390558
+    ]
+  ],
+  "cell_B_length_matched_null": {
+    "pool_size": 105,
+    "lower_bound": 0.7,
+    "upper_bound": 1.5,
+    "mean_jaccard_in_pool": 0.08347597002468637,
+    "p_one_sided_geq": 0.14285714285714285
+  },
+  "unconditional_null": {
+    "pool_size": 377,
+    "p_one_sided_geq": 0.16445623342175067
+  },
+  "top_20_shared_tokens": [
+    {
+      "token": "الله",
+      "q59_freq": 25,
+      "q62_freq": 6,
+      "combined": 31
+    },
+    {
+      "token": "من",
+      "q59_freq": 18,
+      "q62_freq": 6,
+      "combined": 24
+    },
+    {
+      "token": "في",
+      "q59_freq": 11,
+      "q62_freq": 4,
+      "combined": 15
+    },
+    {
+      "token": "الذين",
+      "q59_freq": 7,
+      "q62_freq": 4,
+      "combined": 11
+    },
+    {
+      "token": "لا",
+      "q59_freq": 10,
+      "q62_freq": 1,
+      "combined": 11
+    },
+    {
+      "token": "هو",
+      "q59_freq": 7,
+      "q62_freq": 1,
+      "combined": 8
+    },
+    {
+      "token": "ما",
+      "q59_freq": 6,
+      "q62_freq": 2,
+      "combined": 8
+    },
+    {
+      "token": "ولا",
+      "q59_freq": 5,
+      "q62_freq": 1,
+      "combined": 6
+    },
+    {
+      "token": "إن",
+      "q59_freq": 2,
+      "q62_freq": 4,
+      "combined": 6
+    },
+    {
+      "token": "والله",
+      "q59_freq": 2,
+      "q62_freq": 4,
+      "combined": 6
+    },
+    {
+      "token": "الذي",
+      "q59_freq": 3,
+      "q62_freq": 2,
+      "combined": 5
+    },
+    {
+      "token": "وما",
+      "q59_freq": 4,
+      "q62_freq": 1,
+      "combined": 5
+    },
+    {
+      "token": "العزيز",
+      "q59_freq": 3,
+      "q62_freq": 2,
+      "combined": 5
+    },
+    {
+      "token": "الحكيم",
+      "q59_freq": 2,
+      "q62_freq": 2,
+      "combined": 4
+    },
+    {
+      "token": "ذلك",
+      "q59_freq": 3,
+      "q62_freq": 1,
+      "combined": 4
+    },
+    {
+      "token": "يا",
+      "q59_freq": 2,
+      "q62_freq": 2,
+      "combined": 4
+    },
+    {
+      "token": "وهو",
+      "q59_freq": 2,
+      "q62_freq": 1,
+      "combined": 3
+    },
+    {
+      "token": "ثم",
+      "q59_freq": 1,
+      "q62_freq": 2,
+      "combined": 3
+    },
+    {
+      "token": "كمثل",
+      "q59_freq": 2,
+      "q62_freq": 1,
+      "combined": 3
+    },
+    {
+      "token": "إلى",
+      "q59_freq": 1,
+      "q62_freq": 2,
+      "combined": 3
+    }
+  ],
+  "verdict": {
+    "cohesion_above_length_matched_null": false,
+    "q62_is_top_quartile_q59_partner": true,
+    "overall": "NULL"
+  }
+}

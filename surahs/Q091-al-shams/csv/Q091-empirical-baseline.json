@@ -1,0 +1,230 @@
+{
+  "finding_id": "Q091-empirical-baseline",
+  "date": "2026-05-09",
+  "rules_tuple": "(no-tashkeel, hafs-kufan, canonical-114, basmala-counted-only-in-Q1)",
+  "seed": 91,
+  "q91_total_verses": 15,
+  "q91_total_words": 54,
+  "q91_total_letters_no_space": 253,
+  "q91_mean_words_per_verse": 3.6,
+  "q91_mean_letters_per_verse": 16.87,
+  "test_1_seven_oath_replication": {
+    "q91_oath_block_length": 7,
+    "q91_oath_block_verses": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "corpus_oath_block_max": 7,
+    "next_contender_oath_block": 4,
+    "gap_to_next": 3,
+    "verdict": "CORPUS-EXACT MAX (gap = 3 verses to next contender Q 89)",
+    "replicates_h_new_85_cell_2": true
+  },
+  "test_2_palindrome": {
+    "q91_letter_counts_v1_7": [
+      12,
+      14,
+      15,
+      15,
+      15,
+      14,
+      12
+    ],
+    "palindrome": true,
+    "corpus_eligible_surahs": 103,
+    "corpus_palindromes": 1,
+    "corpus_palindrome_p_under_shuffle": 0.043,
+    "verdict": "CORPUS-EXACT (1/103 with ≥7-verse first-block palindrome)"
+  },
+  "test_3_cosmic_pair_symmetry": {
+    "consecutive_pair_diffs_sum": 3,
+    "consecutive_pair_p": 0.314,
+    "palindromic_pair_diffs_sum": 0,
+    "palindromic_pair_p": 0.029,
+    "pairs": {
+      "consecutive": [
+        {
+          "pair": [
+            "v1",
+            "v2"
+          ],
+          "NPs": "sun-moon",
+          "category": "CELESTIAL",
+          "letter_diff": 2
+        },
+        {
+          "pair": [
+            "v3",
+            "v4"
+          ],
+          "NPs": "day-night",
+          "category": "TEMPORAL",
+          "letter_diff": 0
+        },
+        {
+          "pair": [
+            "v5",
+            "v6"
+          ],
+          "NPs": "heaven-earth",
+          "category": "COSMIC-VERTICAL",
+          "letter_diff": 1
+        },
+        {
+          "pair": [
+            "v7",
+            null
+          ],
+          "NPs": "soul-UNPAIRED",
+          "category": "PSYCHOLOGICAL",
+          "letter_diff": null
+        }
+      ],
+      "palindromic_chiasmus": [
+        {
+          "pair": [
+            "v1",
+            "v7"
+          ],
+          "NPs": "sun-soul",
+          "symmetry": "outer ↔ inner",
+          "letter_diff": 0
+        },
+        {
+          "pair": [
+            "v2",
+            "v6"
+          ],
+          "NPs": "moon-earth",
+          "symmetry": "celestial-secondary ↔ terrestrial",
+          "letter_diff": 0
+        },
+        {
+          "pair": [
+            "v3",
+            "v5"
+          ],
+          "NPs": "day-heaven",
+          "symmetry": "temporal ↔ celestial-realm",
+          "letter_diff": 0
+        },
+        {
+          "pair": [
+            "v4"
+          ],
+          "NPs": "night",
+          "symmetry": "CENTER (yaghsha-fold)",
+          "letter_diff": 0
+        }
+      ]
+    },
+    "verdict": "BOTH READINGS STRUCTURAL: consecutive-pair (3 cosmic-pairs + 1 unpaired descent) AND palindromic-chiasmus (perfect ABCDCBA mirror) both supported. Palindromic reading achieves perfect 0-asymmetry at p=0.029."
+  },
+  "test_4_thamud_compression": {
+    "narrative_features_canonical": 8,
+    "q91_features_present": 7,
+    "q91_features_density_per_100_chars": 6.36,
+    "q91_features_density_corpus_rank": "1/7",
+    "corpus_baseline_density_per_100_chars": 1.31,
+    "q91_density_ratio_to_baseline": 4.86,
+    "narrative_blocks": {
+      "7": {
+        "verses": "73-79",
+        "features": 5,
+        "chars": 547
+      },
+      "11": {
+        "verses": "61-68",
+        "features": 5,
+        "chars": 564
+      },
+      "26": {
+        "verses": "141-159",
+        "features": 6,
+        "chars": 459
+      },
+      "27": {
+        "verses": "45-53",
+        "features": 3,
+        "chars": 430
+      },
+      "51": {
+        "verses": "43-46",
+        "features": 2,
+        "chars": 128
+      },
+      "54": {
+        "verses": "23-32",
+        "features": 5,
+        "chars": 286
+      },
+      "91": {
+        "verses": "11-15",
+        "features": 7,
+        "chars": 110
+      }
+    },
+    "features_q91_missing": [
+      "salih_named_explicitly"
+    ],
+    "features_q91_uniquely_present": [
+      "moral/aftermath"
+    ],
+    "verdict": "Q 91 is SELECTIVELY-LOSSY: shortest absolute (5v, 110 chars) but most-feature-dense (7/8 in 110 chars; 4.86× corpus baseline). The dropped feature is the messenger's personal name; the retained features include the unique aftermath-moral closure (\"and He fears not its consequence\")."
+  },
+  "architectural_signature": {
+    "uas_rank": "108/114",
+    "uas_value": -2.302,
+    "ijaz_sig_A_rank": 65,
+    "ijaz_sig_B_rank": 75,
+    "rhyme_entropy_nats": 0.0,
+    "top_final_letter": "ا",
+    "fr_nearest_15": [
+      "Q111",
+      "Q108",
+      "Q106",
+      "Q110",
+      "Q112",
+      "Q113",
+      "Q105",
+      "Q104",
+      "Q97",
+      "Q94",
+      "Q93",
+      "Q101",
+      "Q103",
+      "Q114",
+      "Q99"
+    ],
+    "fr_farthest_5": [
+      "Q26",
+      "Q9",
+      "Q4",
+      "Q33",
+      "Q55"
+    ],
+    "mushaf_seam_in": {
+      "Q90→Q91_delta_raw": 0.099,
+      "cost_fraction": 0.012
+    },
+    "mushaf_seam_out": {
+      "Q91→Q92_delta_raw": -0.087,
+      "rank_in_seamless_set": "1/13"
+    },
+    "h_new_1070_oath_cluster_member": true,
+    "h_new_1070_role": "core member; tightest mushaf-tail oath-quintet (Q 89-93)"
+  },
+  "h_new_85_replication": "CONFIRMED on all 3 axes (verse-block, head-NPs, category-diversity)",
+  "classical_anchors": {
+    "al-Tabari": "Q 91:11-15 Thamud-narrative Cell",
+    "al-Razi": "cosmic-descent doctrine on vv 1-7",
+    "al-Suyuti_Itqan_naw_67": "aqsām al-Qurʾān classification — Q 91 strongest example",
+    "al-Bukhari_4735": "Prophet recites Q 91:12 in sermon (re: she-camel hamstring)",
+    "al-Bukhari_688": "Mu`adh hadith — Q 91 listed as recommended Isha-prayer surah"
+  }
+}

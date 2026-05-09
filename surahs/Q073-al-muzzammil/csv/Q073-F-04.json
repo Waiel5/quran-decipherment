@@ -1,0 +1,115 @@
+{
+  "test_id": "Q073-F-04",
+  "prereg_sha": "996b6babbcdb7a5eaf89f5d8e94f8ff498f8f2d3505865a377143d740422a257",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "cluster_impv_qra": [
+    17,
+    69,
+    73,
+    96
+  ],
+  "D_obs": 0.8800108333333334,
+  "cell_A_uniform": {
+    "n_perm": 10000,
+    "null_mean": 0.9261623749666665,
+    "null_5pct": 0.6951623,
+    "p_one_sided_le": 0.2633,
+    "pass_alpha_bon_0_025": false
+  },
+  "cell_B_length_matched": {
+    "n_perm": 10000,
+    "length_band_low": 9,
+    "length_band_high": 222,
+    "pool_size": 94,
+    "null_mean": 0.9601762652833333,
+    "null_5pct": 0.8134071166666668,
+    "p_one_sided_le": 0.1348,
+    "pass_alpha_bon_0_025": false
+  },
+  "mw5_positive_control_corrected": {
+    "method": "4-of-10 sub-sample of H-NEW-1190 wa-mā adrāka mā 10-surah cluster (FR-cohesive p=0.00068)",
+    "subsample_seed": 20260509,
+    "subsample_surahs": [
+      69,
+      74,
+      97,
+      101
+    ],
+    "D_pc": 0.6746008333333333,
+    "p_one_sided_le": 0.0395,
+    "alpha_threshold": 0.05,
+    "pass": true
+  },
+  "mw5_pc_sensitivity": [
+    {
+      "seed": 20260510,
+      "sample": [
+        77,
+        82,
+        83,
+        90
+      ],
+      "D_pc_alt": 0.6496689999999999,
+      "p_pc_alt": 0.0285,
+      "pass": true
+    },
+    {
+      "seed": 20260511,
+      "sample": [
+        77,
+        82,
+        83,
+        101
+      ],
+      "D_pc_alt": 0.6083291666666667,
+      "p_pc_alt": 0.0184,
+      "pass": true
+    },
+    {
+      "seed": 20260512,
+      "sample": [
+        77,
+        83,
+        86,
+        101
+      ],
+      "D_pc_alt": 0.5995433333333333,
+      "p_pc_alt": 0.0166,
+      "pass": true
+    },
+    {
+      "seed": 20260513,
+      "sample": [
+        74,
+        77,
+        83,
+        97
+      ],
+      "D_pc_alt": 0.7137351666666668,
+      "p_pc_alt": 0.0574,
+      "pass": false
+    },
+    {
+      "seed": 20260514,
+      "sample": [
+        69,
+        77,
+        97,
+        104
+      ],
+      "D_pc_alt": 0.6563581666666667,
+      "p_pc_alt": 0.0307,
+      "pass": true
+    }
+  ],
+  "verdict": "NULL (PC valid)",
+  "comparison_to_h_new_1301": {
+    "h_new_1301_verdict": "NULL-BROKEN (HM 4-of-7 PC failed at p=0.336)",
+    "h_new_1301_p_A": 0.263,
+    "h_new_1301_p_B": 0.129,
+    "this_test_p_A": 0.2633,
+    "this_test_p_B": 0.1348,
+    "this_test_p_pc": 0.0395
+  }
+}

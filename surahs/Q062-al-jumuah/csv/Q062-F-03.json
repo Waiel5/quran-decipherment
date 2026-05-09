@@ -1,0 +1,81 @@
+{
+  "test_id": "Q062-F-03",
+  "parent_finding": "H-NEW-58c musabbiḥāt tense-split structure",
+  "cluster_v1_texts": {
+    "57": "سبح لله ما في السماوات والأرض ۖ وهو العزيز الحكيم",
+    "59": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم",
+    "61": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم",
+    "62": "يسبح لله ما في السماوات وما في الأرض الملك القدوس العزيز الحكيم",
+    "64": "يسبح لله ما في السماوات وما في الأرض ۖ له الملك وله الحمد ۖ وهو على كل شيء قدير"
+  },
+  "all_10_pairs": [
+    {
+      "a": 57,
+      "b": 59,
+      "shared_prefix_chars": 24,
+      "tense_class": "perfect-pair"
+    },
+    {
+      "a": 57,
+      "b": 61,
+      "shared_prefix_chars": 24,
+      "tense_class": "perfect-pair"
+    },
+    {
+      "a": 57,
+      "b": 62,
+      "shared_prefix_chars": 0,
+      "tense_class": "cross-tense"
+    },
+    {
+      "a": 57,
+      "b": 64,
+      "shared_prefix_chars": 0,
+      "tense_class": "cross-tense"
+    },
+    {
+      "a": 59,
+      "b": 61,
+      "shared_prefix_chars": 55,
+      "tense_class": "perfect-pair"
+    },
+    {
+      "a": 59,
+      "b": 62,
+      "shared_prefix_chars": 0,
+      "tense_class": "cross-tense"
+    },
+    {
+      "a": 59,
+      "b": 64,
+      "shared_prefix_chars": 0,
+      "tense_class": "cross-tense"
+    },
+    {
+      "a": 61,
+      "b": 62,
+      "shared_prefix_chars": 0,
+      "tense_class": "cross-tense"
+    },
+    {
+      "a": 61,
+      "b": 64,
+      "shared_prefix_chars": 0,
+      "tense_class": "cross-tense"
+    },
+    {
+      "a": 62,
+      "b": 64,
+      "shared_prefix_chars": 37,
+      "tense_class": "imperfect-pair"
+    }
+  ],
+  "imperfect_pair_q62_q64_chars": 37,
+  "mean_within_tense_4_pairs": 35.0,
+  "mean_cross_tense_6_pairs": 0.0,
+  "all_cross_tense_zero": true,
+  "all_within_tense_nonzero": true,
+  "tense_binary_sharp": true,
+  "source_text_sha256": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+  "verdict": "CONFIRMED — Q 62↔Q 64 imperfect-pair shared prefix = 37 chars; all 6 cross-tense pairs share exactly 0 chars; all 4 within-tense pairs share ≥24 chars. H-NEW-58c sharp tense-binary structure independently REPLICATED. Minor numeric drift: Q 59↔Q 61 prefix is 55 chars in this run vs 56 reported in H-NEW-58c (single-char drift likely from ZWNJ/inv-mark handling; the qualitative binary structure is unaffected)."
+}

@@ -108,4 +108,14 @@ The pattern holds: cohesion ↔ marker dominance.
 | B — length-matched | 0.110 | NO | NULL |
 | MW-5 PC (H-NEW-1200 full 14) | 0.00020 | YES | PC PASSED |
 
-**Final verdict: NULL.** Sajda-trigger is too thin a marker (1 verse per surah) to drive surah-aggregate FR cohesion. Substantive NULL with passing instrument-control. 6/14 muqaṭṭāʿat over-representation flagged as descriptive observation for H-NEW-1331 follow-up pre-reg.
+**Final verdict: NULL — promoted CONFIRMED-NULL via independent replication 2026-05-09.** Sajda-trigger is too thin a marker (1 verse per surah) to drive surah-aggregate FR cohesion. Substantive NULL with passing instrument-control. 6/14 muqaṭṭāʿat over-representation flagged as descriptive observation for H-NEW-1331 follow-up pre-reg.
+
+## Independent replication (2026-05-09 same session)
+
+**Q 53 al-Najm specialist's Q053-F-03 INDEPENDENTLY REPLICATES this NULL** with a different seed and slightly different operationalization:
+- Q 53 specialist's perm-p = 0.588 vs my Cell A p = 0.571 (z = +0.333 in their report)
+- Same direction-of-effect (within-cluster mean ≥ corpus mean → NULL)
+- 20,000 perms vs my 10,000 — different seed, distinct random draws
+- Same conclusion: 14 sajda-surahs are NOT FR-cohesive on root-distribution
+
+**Per Protocol §1.5 INDEPENDENT REPLICATION criterion** (different operationalization, different seed, different specialist), H-NEW-1330's NULL is now **CONFIRMED-NULL** rather than the post-hoc-cap PASS-DIRECTED ceiling. The marker-thickness threshold prediction (cross-finding-025) is correspondingly strengthened.

@@ -1,0 +1,187 @@
+{
+  "finding_id": "Q059-F-05",
+  "title": "Q 59:22-24 within-surah window uniqueness",
+  "prereg_sha": "6d7d116c3dd0dcf6de18067d0fbd1c4ab1f796cba929de2a24a654422ca03ef2",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, ornament-stripped, whitespace-tokenized, 99-name-substring-with-proclitic-tolerance, word-count-weighted-within-surah-permutation)",
+  "authored_by": "Waiel Al-Shujaa",
+  "date": "2026-05-09",
+  "observed_v22_24": {
+    "F99": 19,
+    "words": 49,
+    "density": 0.3877551020408163,
+    "rank_among_22_internal_windows_by_F": 1
+  },
+  "all_22_windows_sorted_by_F": [
+    {
+      "start_vid": 22,
+      "end_vid": 24,
+      "F": 19,
+      "words": 49,
+      "density": 0.3877551020408163
+    },
+    {
+      "start_vid": 21,
+      "end_vid": 23,
+      "F": 14,
+      "words": 50,
+      "density": 0.28
+    },
+    {
+      "start_vid": 6,
+      "end_vid": 8,
+      "F": 8,
+      "words": 80,
+      "density": 0.1
+    },
+    {
+      "start_vid": 4,
+      "end_vid": 6,
+      "F": 7,
+      "words": 50,
+      "density": 0.14
+    },
+    {
+      "start_vid": 5,
+      "end_vid": 7,
+      "F": 7,
+      "words": 75,
+      "density": 0.09333333333333334
+    },
+    {
+      "start_vid": 2,
+      "end_vid": 4,
+      "F": 6,
+      "words": 67,
+      "density": 0.08955223880597014
+    },
+    {
+      "start_vid": 1,
+      "end_vid": 3,
+      "F": 5,
+      "words": 66,
+      "density": 0.07575757575757576
+    },
+    {
+      "start_vid": 3,
+      "end_vid": 5,
+      "F": 5,
+      "words": 39,
+      "density": 0.1282051282051282
+    },
+    {
+      "start_vid": 7,
+      "end_vid": 9,
+      "F": 5,
+      "words": 86,
+      "density": 0.05813953488372093
+    },
+    {
+      "start_vid": 16,
+      "end_vid": 18,
+      "F": 4,
+      "words": 45,
+      "density": 0.08888888888888889
+    },
+    {
+      "start_vid": 17,
+      "end_vid": 19,
+      "F": 4,
+      "words": 38,
+      "density": 0.10526315789473684
+    },
+    {
+      "start_vid": 18,
+      "end_vid": 20,
+      "F": 4,
+      "words": 38,
+      "density": 0.10526315789473684
+    },
+    {
+      "start_vid": 20,
+      "end_vid": 22,
+      "F": 4,
+      "words": 41,
+      "density": 0.0975609756097561
+    },
+    {
+      "start_vid": 8,
+      "end_vid": 10,
+      "F": 2,
+      "words": 72,
+      "density": 0.027777777777777776
+    },
+    {
+      "start_vid": 11,
+      "end_vid": 13,
+      "F": 2,
+      "words": 56,
+      "density": 0.03571428571428571
+    },
+    {
+      "start_vid": 19,
+      "end_vid": 21,
+      "F": 2,
+      "words": 38,
+      "density": 0.05263157894736842
+    },
+    {
+      "start_vid": 9,
+      "end_vid": 11,
+      "F": 1,
+      "words": 82,
+      "density": 0.012195121951219513
+    },
+    {
+      "start_vid": 10,
+      "end_vid": 12,
+      "F": 1,
+      "words": 67,
+      "density": 0.014925373134328358
+    },
+    {
+      "start_vid": 12,
+      "end_vid": 14,
+      "F": 1,
+      "words": 51,
+      "density": 0.0196078431372549
+    },
+    {
+      "start_vid": 13,
+      "end_vid": 15,
+      "F": 1,
+      "words": 46,
+      "density": 0.021739130434782608
+    },
+    {
+      "start_vid": 14,
+      "end_vid": 16,
+      "F": 1,
+      "words": 51,
+      "density": 0.0196078431372549
+    },
+    {
+      "start_vid": 15,
+      "end_vid": 17,
+      "F": 1,
+      "words": 38,
+      "density": 0.02631578947368421
+    }
+  ],
+  "q59_total_99name_tokens": 44,
+  "null_summary": {
+    "null_max_F_mean": 10.9015,
+    "null_max_F_max": 20,
+    "null_max_density_mean": 0.18089400766671318,
+    "null_max_density_max": 0.3684210526315789
+  },
+  "p_one_sided": {
+    "F_geq_obs": 0.0004,
+    "density_geq_obs": 0.0
+  },
+  "verdict": {
+    "within_surah_uniqueness_F": "PASS",
+    "within_surah_uniqueness_density": "PASS"
+  }
+}

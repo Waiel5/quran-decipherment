@@ -1,0 +1,98 @@
+{
+  "id": "Q077-F-04",
+  "title": "Q 77 quadruple-cluster-intersection corpus-uniqueness",
+  "prereg_sha": "76565f698cb2703cbc153c66fa20e20ab212405429b0186ab0bab836ce824f91",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(cluster-membership-set-theoretic, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "intersections": {
+    "quad_OAER": [
+      77
+    ],
+    "triple_OAE": [
+      77,
+      86
+    ],
+    "triple_OAR": [
+      77
+    ],
+    "triple_OER": [
+      77
+    ],
+    "triple_AER": [
+      77
+    ],
+    "pair_OA": [
+      77,
+      86
+    ],
+    "pair_OE": [
+      77,
+      86
+    ],
+    "pair_OR": [
+      37,
+      77
+    ],
+    "pair_AE": [
+      69,
+      74,
+      77,
+      82,
+      83,
+      86,
+      90,
+      97,
+      101,
+      104
+    ],
+    "pair_AR": [
+      77
+    ],
+    "pair_ER": [
+      77
+    ]
+  },
+  "cell_A": {
+    "target": "|O ∩ A ∩ E ∩ R| == 1 AND Q 77 ∈ ∩₄",
+    "obs_size": 1,
+    "q77_in_quad": true,
+    "obs_set": [
+      77
+    ],
+    "pass": true
+  },
+  "cell_B": {
+    "target": "|O ∩ A ∩ E| == 2 AND set == {77, 86}",
+    "obs_set": [
+      77,
+      86
+    ],
+    "obs_size": 2,
+    "pass": true
+  },
+  "cell_C": {
+    "target": "p_perm(any-surah-in-4-way-random-intersect) ≤ 0.05",
+    "n_perm": 10000,
+    "cluster_sizes": [
+      15,
+      10,
+      14,
+      5
+    ],
+    "n_perm_with_quad_hit": 63,
+    "p_perm_one_tailed": 0.0063,
+    "perm_null_mean_intersect_size": 0.0063,
+    "max_intersect_size_observed_in_perm": 1,
+    "pass": true
+  },
+  "verdict_summary": {
+    "n_cells_pass": 3,
+    "verdict": "PASS-DIRECTED FULL",
+    "cells": {
+      "A_quad_intersect_unique": true,
+      "B_triple_OAE_77_86": true,
+      "C_perm_null": true
+    }
+  }
+}

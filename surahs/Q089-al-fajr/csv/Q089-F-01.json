@@ -1,0 +1,51 @@
+{
+  "test_id": "Q089-F-01",
+  "prereg_sha256": "ae86d807f11de909e13025996c9310c04b29c43d78c03f74d05f222f57561b5f",
+  "seed": 20260509,
+  "h1": {
+    "phrase": "al-nafs al-muṭmaʾinna",
+    "regex": "النفس\\s+المطمينة",
+    "n_corpus_occurrences": 1,
+    "hits": [
+      {
+        "surah": 89,
+        "verse": 27,
+        "text": "يأيتها النفس المطمئنة"
+      }
+    ],
+    "pre_locked_direction": "exactly 1",
+    "pass": true
+  },
+  "h2": {
+    "cohort": {
+      "muṭmaʾinna": [
+        {
+          "surah": 89,
+          "verse": 27
+        }
+      ],
+      "lawwāma": [
+        {
+          "surah": 75,
+          "verse": 2
+        }
+      ],
+      "ammāra_bi-l-sūʾ": [
+        {
+          "surah": 12,
+          "verse": 53
+        }
+      ]
+    },
+    "cohort_surahs": [
+      12,
+      75,
+      89
+    ],
+    "pre_locked_direction": "exactly {Q 12, Q 75, Q 89}",
+    "pass": true
+  },
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "verdict": "CONFIRMED"
+}

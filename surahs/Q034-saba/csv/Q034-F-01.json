@@ -1,0 +1,46 @@
+{
+  "finding_id": "Q034-F-01",
+  "prereg_sha": "26500022e51a2fe82807fa6308393f9a2b45d1101e2be99797e080f96fb8063a",
+  "rules_tuple": "(no-tashkeel, orthographic-token + QAC-root, FR-on-QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.016666666666666666,
+  "h1_5cluster_cohesion": {
+    "cluster": [
+      1,
+      6,
+      18,
+      34,
+      35
+    ],
+    "observed_mean_fr": 0.9902173999999999,
+    "null_mean": 0.92262094471,
+    "null_std": 0.10184325503989432,
+    "p_lower": 0.7516,
+    "pass": false
+  },
+  "h2_4cluster_drop_q1": {
+    "cluster": [
+      6,
+      18,
+      34,
+      35
+    ],
+    "observed_mean_fr": 0.9466181666666665,
+    "null_mean": 0.9222569765166667,
+    "null_std": 0.11914709301535005,
+    "p_lower": 0.5071,
+    "pass": false
+  },
+  "h3_length_residualized": {
+    "regression_b0": 0.8363903147936693,
+    "regression_b1": 0.06926875561910012,
+    "cluster_mean_residual": 0.053887668936126974,
+    "null_mean_residual": 0.0005471168517124401,
+    "p_lower": 0.6771,
+    "pass": false
+  },
+  "n_pass": 0,
+  "verdict": "NULL",
+  "honest_limits": "Empirical-anchor extraction prior to lock observed observed_mean_fr=0.9902 (above corpus mean 0.9226). Direction-locked at COHESIVE under DISCIPLINE; expected NULL based on pre-observation. Verdict ceiling DESCRIPTIVE-EMPIRICAL."
+}

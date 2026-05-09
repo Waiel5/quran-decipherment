@@ -1,0 +1,204 @@
+{
+  "test_id": "Q054-F-05",
+  "title": "Q 54 wa-laqad opener density",
+  "prereg_sha256": "88278d98f579d7742df1315c079548f606ae396f32aa386c5d04caa91deadd12",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "Q54_walaqad_count": 11,
+  "Q54_walaqad_density_per100": 20.0,
+  "Q54_corpus_rank": 1,
+  "corpus_total_walaqad_openers": 107,
+  "top10_by_density": [
+    {
+      "surah": 54,
+      "n_verses": 55,
+      "walaqad_count": 11,
+      "density_per100": 20.0
+    },
+    {
+      "surah": 15,
+      "n_verses": 99,
+      "walaqad_count": 7,
+      "density_per100": 7.07070707070707
+    },
+    {
+      "surah": 67,
+      "n_verses": 30,
+      "walaqad_count": 2,
+      "density_per100": 6.666666666666667
+    },
+    {
+      "surah": 46,
+      "n_verses": 35,
+      "walaqad_count": 2,
+      "density_per100": 5.714285714285714
+    },
+    {
+      "surah": 40,
+      "n_verses": 85,
+      "walaqad_count": 4,
+      "density_per100": 4.705882352941177
+    },
+    {
+      "surah": 13,
+      "n_verses": 43,
+      "walaqad_count": 2,
+      "density_per100": 4.651162790697675
+    },
+    {
+      "surah": 50,
+      "n_verses": 45,
+      "walaqad_count": 2,
+      "density_per100": 4.444444444444445
+    },
+    {
+      "surah": 29,
+      "n_verses": 69,
+      "walaqad_count": 3,
+      "density_per100": 4.3478260869565215
+    },
+    {
+      "surah": 23,
+      "n_verses": 118,
+      "walaqad_count": 5,
+      "density_per100": 4.23728813559322
+    },
+    {
+      "surah": 25,
+      "n_verses": 77,
+      "walaqad_count": 3,
+      "density_per100": 3.896103896103896
+    }
+  ],
+  "Q54_walaqad_verses": [
+    4,
+    15,
+    17,
+    22,
+    32,
+    36,
+    37,
+    38,
+    40,
+    41,
+    51
+  ],
+  "Q54_refrain_verses": [
+    [
+      15,
+      "muddakir-terminal"
+    ],
+    [
+      16,
+      "kayfa-kana"
+    ],
+    [
+      17,
+      "yassarna"
+    ],
+    [
+      18,
+      "kayfa-kana"
+    ],
+    [
+      21,
+      "kayfa-kana"
+    ],
+    [
+      22,
+      "yassarna"
+    ],
+    [
+      30,
+      "kayfa-kana"
+    ],
+    [
+      32,
+      "yassarna"
+    ],
+    [
+      37,
+      "fa-dhuqu"
+    ],
+    [
+      39,
+      "fa-dhuqu"
+    ],
+    [
+      40,
+      "yassarna"
+    ],
+    [
+      51,
+      "muddakir-terminal"
+    ]
+  ],
+  "pairing_detail": [
+    {
+      "v": 4,
+      "type": "unpaired"
+    },
+    {
+      "v": 15,
+      "type": "self-muddakir-terminal"
+    },
+    {
+      "v": 17,
+      "type": "self-muddakir-terminal"
+    },
+    {
+      "v": 22,
+      "type": "self-muddakir-terminal"
+    },
+    {
+      "v": 32,
+      "type": "self-muddakir-terminal"
+    },
+    {
+      "v": 36,
+      "type": "adj-fa-dhuqu",
+      "refrain_v": 37
+    },
+    {
+      "v": 37,
+      "type": "adj-fa-dhuqu",
+      "refrain_v": 37
+    },
+    {
+      "v": 38,
+      "type": "adj-fa-dhuqu",
+      "refrain_v": 37
+    },
+    {
+      "v": 40,
+      "type": "self-muddakir-terminal"
+    },
+    {
+      "v": 41,
+      "type": "adj-yassarna",
+      "refrain_v": 40
+    },
+    {
+      "v": 51,
+      "type": "self-muddakir-terminal"
+    }
+  ],
+  "H5a": {
+    "rank": 1,
+    "density_per100": 20.0,
+    "perm_p_length_weighted": 0.0,
+    "pass": true
+  },
+  "H5b": {
+    "n_paired": 10,
+    "n_walaqad_total": 11,
+    "threshold": 6,
+    "pass": true
+  },
+  "aggregate": {
+    "n_passed": 2,
+    "verdict": "CONFIRMED"
+  }
+}

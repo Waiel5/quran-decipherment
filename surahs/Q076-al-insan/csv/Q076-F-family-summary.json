@@ -1,0 +1,103 @@
+{
+  "family": "Q076-F (Q 76 al-Insān specialist)",
+  "date_run": "2026-05-09",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "results": {
+    "Q076-F-01": {
+      "verdict": "CORPUS-EXACT-EXTREME",
+      "passes": 4,
+      "cells_total": 4,
+      "cell_A_pass": true,
+      "cell_B_pass": true,
+      "cell_C_pass": true,
+      "cell_D_pass": true,
+      "q76_density": 0.18,
+      "q76_rank": 1,
+      "rank2_density": 0.09782608695652174,
+      "separation_ratio": 1.8399999999999999,
+      "q76_in_top5_windows": 5,
+      "q76_in_top10_windows": 9,
+      "p_C": 0.0,
+      "p_D": 0.0005
+    },
+    "Q076-F-02": {
+      "verdict": "CONFIRMED-CORPUS-EXACT",
+      "passes": 2,
+      "cells_total": 2,
+      "q76_alif_rank": 1,
+      "q76_overall_single_rawi_rank": 2,
+      "n_alif100": 4,
+      "n_single_rawi": 13
+    },
+    "Q076-F-03": {
+      "verdict": "CONFIRMED",
+      "passes": 2,
+      "cells_total": 2,
+      "cell_A_pass": true,
+      "cell_B_pass": true,
+      "adjacent_triplet_pairs": [
+        [
+          22,
+          23
+        ],
+        [
+          75,
+          76
+        ]
+      ],
+      "p_triplet_pair_random": 0.0068,
+      "q75_q76_fr_dist": 0.816524,
+      "q75_q76_fr_percentile": 23.940381928272007,
+      "q75_rank_from_q76": 43
+    },
+    "Q076-F-04": {
+      "verdict": "AUDIT-VERIFIED-NEGATIVE-AND-FRIDAY-CONFIRMED",
+      "cell_A_pass_negative": true,
+      "cell_B_pass_positive": true,
+      "n_revelation_cause_hits": 0,
+      "n_friday_fajr_hits": 6,
+      "friday_fajr_hits_summary": [
+        {
+          "corpus": "Bukhari",
+          "id": 870,
+          "bookId": 1,
+          "idInBook": 870
+        },
+        {
+          "corpus": "Bukhari",
+          "id": 1037,
+          "bookId": 1,
+          "idInBook": 1037
+        },
+        {
+          "corpus": "Tirmidhi",
+          "id": 26300,
+          "bookId": 5,
+          "idInBook": 520
+        },
+        {
+          "corpus": "Tirmidhi",
+          "id": 29434,
+          "bookId": 5,
+          "idInBook": 3654
+        },
+        {
+          "corpus": "AbuDawud",
+          "id": 21579,
+          "bookId": 4,
+          "idInBook": 1075
+        },
+        {
+          "corpus": "Nasai",
+          "id": 16162,
+          "bookId": 3,
+          "idInBook": 1426
+        }
+      ],
+      "revelation_cause_hits_summary": []
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "id": "Q077-F-01",
+  "title": "Q 77 refrain architecture replication",
+  "prereg_sha": "f7539758c75931ea4935da7bedb6c198494fbf19c57aa77ae3cf499b158e0f73",
+  "rules_tuple": "(no-tashkeel, orthographic-token-exact, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "cell_A": {
+    "target_count": 10,
+    "counts_by_variant": {
+      "no-tashkeel": 10,
+      "min-tashkeel": 10,
+      "full-tashkeel": 10
+    },
+    "cross_variant_consistent": true,
+    "refrain_positions_no_tashkeel": [
+      15,
+      19,
+      24,
+      28,
+      34,
+      37,
+      40,
+      45,
+      47,
+      49
+    ],
+    "match_target_10": true,
+    "pass": true
+  },
+  "cell_B": {
+    "target_rank": 2,
+    "obs_rank_q77": 2,
+    "obs_max_count_q77": 10,
+    "rank_q55_ref": 1,
+    "rank_q26_ref": 3,
+    "max_count_q55_ref": 31,
+    "max_count_q26_ref": 8,
+    "top_5_ranking": [
+      {
+        "rank": 1,
+        "surah": 55,
+        "max_count": 31,
+        "top_string": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "rank": 2,
+        "surah": 77,
+        "max_count": 10,
+        "top_string": "ويل يومئذ للمكذبين"
+      },
+      {
+        "rank": 3,
+        "surah": 26,
+        "max_count": 8,
+        "top_string": "وإن ربك لهو العزيز الرحيم"
+      },
+      {
+        "rank": 4,
+        "surah": 37,
+        "max_count": 4,
+        "top_string": "إلا عباد الله المخلصين"
+      },
+      {
+        "rank": 5,
+        "surah": 54,
+        "max_count": 4,
+        "top_string": "ولقد يسرنا القرآن للذكر فهل من مدكر"
+      }
+    ],
+    "match_target_2": true,
+    "pass": true
+  },
+  "cell_C": {
+    "target_concentration_min": 0.909,
+    "corpus_exact_total": 11,
+    "q77_exact_count": 10,
+    "concentration_q77": 0.9090909090909091,
+    "all_exact_locations": [
+      {
+        "surah": 77,
+        "verse": 15
+      },
+      {
+        "surah": 77,
+        "verse": 19
+      },
+      {
+        "surah": 77,
+        "verse": 24
+      },
+      {
+        "surah": 77,
+        "verse": 28
+      },
+      {
+        "surah": 77,
+        "verse": 34
+      },
+      {
+        "surah": 77,
+        "verse": 37
+      },
+      {
+        "surah": 77,
+        "verse": 40
+      },
+      {
+        "surah": 77,
+        "verse": 45
+      },
+      {
+        "surah": 77,
+        "verse": 47
+      },
+      {
+        "surah": 77,
+        "verse": 49
+      },
+      {
+        "surah": 83,
+        "verse": 10
+      }
+    ],
+    "prefix_fa_near_echoes": [
+      {
+        "surah": 52,
+        "verse": 11,
+        "text": "فويل يومئذ للمكذبين"
+      }
+    ],
+    "pass": true
+  },
+  "verdict_summary": {
+    "n_cells_pass": 3,
+    "verdict": "PASS-DIRECTED FULL (replication of H-NEW-1320)"
+  }
+}

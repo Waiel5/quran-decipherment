@@ -1,0 +1,109 @@
+{
+  "finding_id": "Q093F02",
+  "title": "Q 92 + Q 93 + Q 94 trio FR cohesion",
+  "date": "2026-05-09",
+  "rules_tuple": {
+    "orthography": "no-tashkeel",
+    "verse_numbering": "hafs-kufan",
+    "feature": "root-distribution Fisher-Rao distance (h-new-111)",
+    "null_model": "random-triple-from-pool",
+    "n_perm": 10000,
+    "seed": 20260509
+  },
+  "tests": {
+    "F02a_corpus": {
+      "label": "trio vs corpus triple",
+      "cluster": [
+        92,
+        93,
+        94
+      ],
+      "pool_size": 114,
+      "obs": 0.40315033333333333,
+      "null_mean": 0.9243268216333334,
+      "null_sd": 0.14546978044464504,
+      "z": -3.582713101696892,
+      "p_lower": 0.0054,
+      "n_perm": 10000,
+      "seed": 20260509
+    },
+    "F02b_mufaṣṣal": {
+      "label": "trio vs mufaṣṣal Q49-114 triple",
+      "cluster": [
+        92,
+        93,
+        94
+      ],
+      "pool_size": 66,
+      "obs": 0.40315033333333333,
+      "null_mean": 0.7245521790333334,
+      "null_sd": 0.15320396326536986,
+      "z": -2.09786900318818,
+      "p_lower": 0.0339,
+      "n_perm": 10000,
+      "seed": 20260509
+    },
+    "F02c_short_mufaṣṣal": {
+      "label": "trio vs short-mufaṣṣal Q78-114 triple",
+      "cluster": [
+        92,
+        93,
+        94
+      ],
+      "pool_size": 37,
+      "obs": 0.40315033333333333,
+      "null_mean": 0.4883402407333333,
+      "null_sd": 0.09387648590402092,
+      "z": -0.9074680052158953,
+      "p_lower": 0.1952,
+      "n_perm": 10000,
+      "seed": 20260509
+    },
+    "F02d_qiṣār": {
+      "label": "trio vs qiṣār Q89-114 triple",
+      "cluster": [
+        92,
+        93,
+        94
+      ],
+      "pool_size": 26,
+      "obs": 0.40315033333333333,
+      "null_mean": 0.4081271590666667,
+      "null_sd": 0.07805902914908834,
+      "z": -0.06375720768737593,
+      "p_lower": 0.5086,
+      "n_perm": 10000,
+      "seed": 20260509
+    }
+  },
+  "bonferroni": {
+    "k": 4,
+    "family": "Q093F02-trio-cohesion-4-pools",
+    "alpha": 0.05,
+    "alpha_bon": 0.0125,
+    "pre_committed_pools": [
+      "F02a_corpus",
+      "F02b_mufaṣṣal",
+      "F02c_short_mufaṣṣal",
+      "F02d_qiṣār"
+    ]
+  },
+  "verdicts": [
+    [
+      "F02a_corpus",
+      "PASS"
+    ],
+    [
+      "F02b_mufaṣṣal",
+      "PASS-DIRECTED"
+    ],
+    [
+      "F02c_short_mufaṣṣal",
+      "NULL"
+    ],
+    [
+      "F02d_qiṣār",
+      "NULL"
+    ]
+  ]
+}

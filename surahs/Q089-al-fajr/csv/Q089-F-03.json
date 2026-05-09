@@ -1,0 +1,565 @@
+{
+  "test_id": "Q089-F-03",
+  "prereg_sha256": "da8f6b6d67c07200cf460c061140f18dc7bb75756a071216699872bf3b2c4817",
+  "seed": 20260509,
+  "h1": {
+    "q89_n_wa": 5,
+    "q89_n_fa": 0,
+    "pre_locked_direction": "Q 89 = 4 wa, 0 fa",
+    "pass": false
+  },
+  "h2": {
+    "pattern_regex": "هل\\s+في\\s+ذلك\\s+قسم",
+    "n_corpus_occurrences": 1,
+    "hits": [
+      {
+        "surah": 89,
+        "verse": 5,
+        "text": "هل فى ذلك قسم لذى حجر"
+      }
+    ],
+    "pass": true
+  },
+  "taxonomy": {
+    "37": {
+      "name_ar": "الصافات",
+      "transliteration": "As-Saffat",
+      "n_wa": 1,
+      "n_fa": 2,
+      "n_total": 3,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والصفت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 2,
+          "token": "فالزجرت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 3,
+          "token": "فالتليت"
+        }
+      ]
+    },
+    "51": {
+      "name_ar": "الذاريات",
+      "transliteration": "Adh-Dhariyat",
+      "n_wa": 1,
+      "n_fa": 3,
+      "n_total": 4,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والذريت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 2,
+          "token": "فالحملت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 3,
+          "token": "فالجريت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 4,
+          "token": "فالمقسمت"
+        }
+      ]
+    },
+    "52": {
+      "name_ar": "الطور",
+      "transliteration": "At-Tur",
+      "n_wa": 5,
+      "n_fa": 1,
+      "n_total": 6,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والطور"
+        },
+        {
+          "particle": "wa-",
+          "verse": 2,
+          "token": "وكتب"
+        },
+        {
+          "particle": "fa-",
+          "verse": 3,
+          "token": "في"
+        },
+        {
+          "particle": "wa-",
+          "verse": 4,
+          "token": "والبيت"
+        },
+        {
+          "particle": "wa-",
+          "verse": 5,
+          "token": "والسقف"
+        },
+        {
+          "particle": "wa-",
+          "verse": 6,
+          "token": "والبحر"
+        }
+      ]
+    },
+    "53": {
+      "name_ar": "النجم",
+      "transliteration": "An-Najm",
+      "n_wa": 1,
+      "n_fa": 0,
+      "n_total": 1,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والنجم"
+        }
+      ]
+    },
+    "77": {
+      "name_ar": "المرسلات",
+      "transliteration": "Al-Mursalat",
+      "n_wa": 2,
+      "n_fa": 3,
+      "n_total": 5,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والمرسلت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 2,
+          "token": "فالعصفت"
+        },
+        {
+          "particle": "wa-",
+          "verse": 3,
+          "token": "والنشرت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 4,
+          "token": "فالفرقت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 5,
+          "token": "فالملقيت"
+        }
+      ]
+    },
+    "79": {
+      "name_ar": "النازعات",
+      "transliteration": "An-Nazi'at",
+      "n_wa": 3,
+      "n_fa": 2,
+      "n_total": 5,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والنزعت"
+        },
+        {
+          "particle": "wa-",
+          "verse": 2,
+          "token": "والنشطت"
+        },
+        {
+          "particle": "wa-",
+          "verse": 3,
+          "token": "والسبحت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 4,
+          "token": "فالسبقت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 5,
+          "token": "فالمدبرت"
+        }
+      ]
+    },
+    "85": {
+      "name_ar": "البروج",
+      "transliteration": "Al-Buruj",
+      "n_wa": 3,
+      "n_fa": 0,
+      "n_total": 3,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والسماء"
+        },
+        {
+          "particle": "wa-",
+          "verse": 2,
+          "token": "واليوم"
+        },
+        {
+          "particle": "wa-",
+          "verse": 3,
+          "token": "وشاهد"
+        }
+      ]
+    },
+    "86": {
+      "name_ar": "الطارق",
+      "transliteration": "At-Tariq",
+      "n_wa": 3,
+      "n_fa": 0,
+      "n_total": 3,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والسماء"
+        },
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والطارق"
+        },
+        {
+          "particle": "wa-",
+          "verse": 2,
+          "token": "وما"
+        }
+      ]
+    },
+    "89": {
+      "name_ar": "الفجر",
+      "transliteration": "Al-Fajr",
+      "n_wa": 5,
+      "n_fa": 0,
+      "n_total": 5,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والفجر"
+        },
+        {
+          "particle": "wa-",
+          "verse": 2,
+          "token": "وليال"
+        },
+        {
+          "particle": "wa-",
+          "verse": 3,
+          "token": "والشفع"
+        },
+        {
+          "particle": "wa-",
+          "verse": 3,
+          "token": "والوتر"
+        },
+        {
+          "particle": "wa-",
+          "verse": 4,
+          "token": "واليل"
+        }
+      ]
+    },
+    "91": {
+      "name_ar": "الشمس",
+      "transliteration": "Ash-Shams",
+      "n_wa": 7,
+      "n_fa": 1,
+      "n_total": 8,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والشمس"
+        },
+        {
+          "particle": "wa-",
+          "verse": 2,
+          "token": "والقمر"
+        },
+        {
+          "particle": "wa-",
+          "verse": 3,
+          "token": "والنهار"
+        },
+        {
+          "particle": "wa-",
+          "verse": 4,
+          "token": "واليل"
+        },
+        {
+          "particle": "wa-",
+          "verse": 5,
+          "token": "والسماء"
+        },
+        {
+          "particle": "wa-",
+          "verse": 6,
+          "token": "والارض"
+        },
+        {
+          "particle": "wa-",
+          "verse": 7,
+          "token": "ونفس"
+        },
+        {
+          "particle": "fa-",
+          "verse": 8,
+          "token": "فالهمها"
+        }
+      ]
+    },
+    "92": {
+      "name_ar": "الليل",
+      "transliteration": "Al-Layl",
+      "n_wa": 4,
+      "n_fa": 0,
+      "n_total": 4,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "واليل"
+        },
+        {
+          "particle": "wa-",
+          "verse": 2,
+          "token": "والنهار"
+        },
+        {
+          "particle": "wa-",
+          "verse": 3,
+          "token": "وما"
+        },
+        {
+          "particle": "wa-",
+          "verse": 3,
+          "token": "والانثي"
+        }
+      ]
+    },
+    "93": {
+      "name_ar": "الضحى",
+      "transliteration": "Ad-Duhaa",
+      "n_wa": 2,
+      "n_fa": 0,
+      "n_total": 2,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والضحي"
+        },
+        {
+          "particle": "wa-",
+          "verse": 2,
+          "token": "واليل"
+        }
+      ]
+    },
+    "95": {
+      "name_ar": "التين",
+      "transliteration": "At-Tin",
+      "n_wa": 4,
+      "n_fa": 0,
+      "n_total": 4,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والتين"
+        },
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والزيتون"
+        },
+        {
+          "particle": "wa-",
+          "verse": 2,
+          "token": "وطور"
+        },
+        {
+          "particle": "wa-",
+          "verse": 3,
+          "token": "وهذا"
+        }
+      ]
+    },
+    "100": {
+      "name_ar": "العاديات",
+      "transliteration": "Al-'Adiyat",
+      "n_wa": 1,
+      "n_fa": 4,
+      "n_total": 5,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والعديت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 2,
+          "token": "فالموريت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 3,
+          "token": "فالمغيرت"
+        },
+        {
+          "particle": "fa-",
+          "verse": 4,
+          "token": "فاثرن"
+        },
+        {
+          "particle": "fa-",
+          "verse": 5,
+          "token": "فوسطن"
+        }
+      ]
+    },
+    "103": {
+      "name_ar": "العصر",
+      "transliteration": "Al-'Asr",
+      "n_wa": 1,
+      "n_fa": 0,
+      "n_total": 1,
+      "elements": [
+        {
+          "particle": "wa-",
+          "verse": 1,
+          "token": "والعصر"
+        }
+      ]
+    }
+  },
+  "summary_table": [
+    {
+      "surah": 37,
+      "name": "As-Saffat",
+      "n_wa": 1,
+      "n_fa": 2,
+      "n_total": 3
+    },
+    {
+      "surah": 51,
+      "name": "Adh-Dhariyat",
+      "n_wa": 1,
+      "n_fa": 3,
+      "n_total": 4
+    },
+    {
+      "surah": 52,
+      "name": "At-Tur",
+      "n_wa": 5,
+      "n_fa": 1,
+      "n_total": 6
+    },
+    {
+      "surah": 53,
+      "name": "An-Najm",
+      "n_wa": 1,
+      "n_fa": 0,
+      "n_total": 1
+    },
+    {
+      "surah": 77,
+      "name": "Al-Mursalat",
+      "n_wa": 2,
+      "n_fa": 3,
+      "n_total": 5
+    },
+    {
+      "surah": 79,
+      "name": "An-Nazi'at",
+      "n_wa": 3,
+      "n_fa": 2,
+      "n_total": 5
+    },
+    {
+      "surah": 85,
+      "name": "Al-Buruj",
+      "n_wa": 3,
+      "n_fa": 0,
+      "n_total": 3
+    },
+    {
+      "surah": 86,
+      "name": "At-Tariq",
+      "n_wa": 3,
+      "n_fa": 0,
+      "n_total": 3
+    },
+    {
+      "surah": 89,
+      "name": "Al-Fajr",
+      "n_wa": 5,
+      "n_fa": 0,
+      "n_total": 5
+    },
+    {
+      "surah": 91,
+      "name": "Ash-Shams",
+      "n_wa": 7,
+      "n_fa": 1,
+      "n_total": 8
+    },
+    {
+      "surah": 92,
+      "name": "Al-Layl",
+      "n_wa": 4,
+      "n_fa": 0,
+      "n_total": 4
+    },
+    {
+      "surah": 93,
+      "name": "Ad-Duhaa",
+      "n_wa": 2,
+      "n_fa": 0,
+      "n_total": 2
+    },
+    {
+      "surah": 95,
+      "name": "At-Tin",
+      "n_wa": 4,
+      "n_fa": 0,
+      "n_total": 4
+    },
+    {
+      "surah": 100,
+      "name": "Al-'Adiyat",
+      "n_wa": 1,
+      "n_fa": 4,
+      "n_total": 5
+    },
+    {
+      "surah": 103,
+      "name": "Al-'Asr",
+      "n_wa": 1,
+      "n_fa": 0,
+      "n_total": 1
+    }
+  ],
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "verdict": "DIRECTIONAL"
+}

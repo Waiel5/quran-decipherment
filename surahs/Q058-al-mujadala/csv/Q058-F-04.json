@@ -1,0 +1,122 @@
+{
+  "finding_id": "Q058-F-04",
+  "pre_reg_sha256": "9618031240079d8c5aa79cf35aa03ce16dbf178f6b0ffef96eb9d4f109d74703",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, surface-phrase-and-root-stem-match, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "q58_hizb_root_count": 4,
+  "q58_hits": [
+    {
+      "verse": 19,
+      "token": "حزب"
+    },
+    {
+      "verse": 19,
+      "token": "حزب"
+    },
+    {
+      "verse": 22,
+      "token": "حزب"
+    },
+    {
+      "verse": 22,
+      "token": "حزب"
+    }
+  ],
+  "corpus_total_hizb_root": 19,
+  "q58_share_of_corpus_root": 0.21052631578947367,
+  "top_5_surahs_by_hizb_root_count": [
+    {
+      "sid": 58,
+      "count": 4
+    },
+    {
+      "sid": 33,
+      "count": 2
+    },
+    {
+      "sid": 38,
+      "count": 2
+    },
+    {
+      "sid": 40,
+      "count": 2
+    },
+    {
+      "sid": 5,
+      "count": 1
+    }
+  ],
+  "all_surahs_with_hizb_root": [
+    {
+      "sid": 58,
+      "count": 4
+    },
+    {
+      "sid": 33,
+      "count": 2
+    },
+    {
+      "sid": 38,
+      "count": 2
+    },
+    {
+      "sid": 40,
+      "count": 2
+    },
+    {
+      "sid": 5,
+      "count": 1
+    },
+    {
+      "sid": 11,
+      "count": 1
+    },
+    {
+      "sid": 13,
+      "count": 1
+    },
+    {
+      "sid": 18,
+      "count": 1
+    },
+    {
+      "sid": 19,
+      "count": 1
+    },
+    {
+      "sid": 23,
+      "count": 1
+    },
+    {
+      "sid": 30,
+      "count": 1
+    },
+    {
+      "sid": 35,
+      "count": 1
+    },
+    {
+      "sid": 43,
+      "count": 1
+    }
+  ],
+  "surahs_with_hizb_shaytan_phrase": [
+    58
+  ],
+  "surahs_with_hizb_allah_phrase": [
+    5,
+    58
+  ],
+  "h1_pass": true,
+  "h2a_hizb_shaytan_corpus_exclusive_to_Q58": true,
+  "h2b_hizb_allah_in_fewer_than_3_surahs": true,
+  "h2_pass": true,
+  "h3_q58_share_geq_30_percent": false,
+  "permutation_null_A": {
+    "n_extreme_random_q58_at_or_above_observed": 0,
+    "p_value": 9.999000099990002e-05,
+    "description": "fraction of length-weighted distributions where Q 58 receives >= q58_root_count root tokens"
+  },
+  "verdict": "DIRECTIONAL"
+}
