@@ -1,0 +1,50 @@
+{
+  "test_id": "Q078-F-05",
+  "prereg_sha": "769be11be7fe8a24b989f1fef7eee830f554b2b2ab2faa110e829ee28aa3303a",
+  "seed": 20260509,
+  "block_ranges": {
+    "block_1_framing": [
+      1,
+      5
+    ],
+    "block_2_cosmic_evidence": [
+      6,
+      16
+    ],
+    "block_3_judgment": [
+      17,
+      30
+    ],
+    "block_4_paradise_closure": [
+      31,
+      40
+    ]
+  },
+  "q78_hapax": [
+    {
+      "root": "whj",
+      "verse": 13,
+      "block": "block_2_cosmic_evidence",
+      "count_in_q78": 1
+    },
+    {
+      "root": "vjj",
+      "verse": 14,
+      "block": "block_2_cosmic_evidence",
+      "count_in_q78": 1
+    },
+    {
+      "root": "dhq",
+      "verse": 34,
+      "block": "block_4_paradise_closure",
+      "count_in_q78": 1
+    }
+  ],
+  "h1_hapax_count": 3,
+  "h1_pass_3_or_more": true,
+  "h2_blocks_with_hapax": [
+    "block_2_cosmic_evidence",
+    "block_4_paradise_closure"
+  ],
+  "h2_pass_block24_only": true
+}
