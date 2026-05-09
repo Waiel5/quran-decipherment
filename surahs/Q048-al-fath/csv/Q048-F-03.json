@@ -1,0 +1,107 @@
+{
+  "test_id": "Q048-F-03",
+  "H_NEW": "H-NEW-1262",
+  "title": "Q 48 — top-5 FR-nearest ⊆ back-Medinan musabbiḥāt-adjacent cluster",
+  "pre_reg_sha": "df56fc6e80aee104d05a3bff7d4b4f6277aa7fc0c9d0513dc9acbd67d20c5685",
+  "seed": 20260509,
+  "rules_tuple": "(no-tashkeel, QAC-v0.4-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "alpha_bon": 0.05,
+  "bonferroni_k": 1,
+  "musabbihat_cluster": [
+    57,
+    59,
+    61,
+    62,
+    64
+  ],
+  "back_medinan_range": [
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
+  ],
+  "top_5_nearest_to_q48": [
+    {
+      "surah": 61,
+      "fr": 0.787575
+    },
+    {
+      "surah": 64,
+      "fr": 0.793588
+    },
+    {
+      "surah": 59,
+      "fr": 0.818142
+    },
+    {
+      "surah": 63,
+      "fr": 0.826547
+    },
+    {
+      "surah": 57,
+      "fr": 0.834983
+    }
+  ],
+  "top_10_nearest_to_q48": [
+    {
+      "surah": 61,
+      "fr": 0.787575
+    },
+    {
+      "surah": 64,
+      "fr": 0.793588
+    },
+    {
+      "surah": 59,
+      "fr": 0.818142
+    },
+    {
+      "surah": 63,
+      "fr": 0.826547
+    },
+    {
+      "surah": 57,
+      "fr": 0.834983
+    },
+    {
+      "surah": 49,
+      "fr": 0.858354
+    },
+    {
+      "surah": 9,
+      "fr": 0.870578
+    },
+    {
+      "surah": 58,
+      "fr": 0.875729
+    },
+    {
+      "surah": 60,
+      "fr": 0.876154
+    },
+    {
+      "surah": 22,
+      "fr": 0.881361
+    }
+  ],
+  "test_t1_top5_in_back_medinan": true,
+  "test_t2_at_least_3_musabbihat": true,
+  "musabbihat_in_top_5": [
+    57,
+    59,
+    61,
+    64
+  ],
+  "p_t1_under_uniform_random_5tuple_null": 3.989611848668437e-07,
+  "p_t2_under_uniform_random_5tuple_null": 0.00041549670111819985,
+  "verdict": "CONFIRMED",
+  "honest_limits": [
+    "Test is descriptive-categorical; null is conservative (uniform random 5-tuple).",
+    "Q 48's mushaf-immediate neighbors Q 47 (rank 13) and Q 49 (rank 6) are NOT in top-5; this contradicts the al-Biqāʿī Q 47-Q 48-Q 49 munāsabah claim at FR level (already noted as DIRECTIONAL via Q047-F-03).",
+    "The cluster-membership pattern is consistent with cross-finding-009 META-cluster network architecture."
+  ]
+}

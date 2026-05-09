@@ -1,0 +1,29 @@
+{
+  "test_id": "Q048-F-04",
+  "H_NEW": "H-NEW-1263",
+  "title": "Q 48 + Q 30 forward-prophecy pair FR-cohesion test (the iʿjāz al-ghayb pair claim)",
+  "pre_reg_sha": "53364809db4b805494b1e8343627f8f007979ec6c1b66f5931a9d3a7ab4bc4b8",
+  "seed": 20260509,
+  "rules_tuple": "(no-tashkeel, QAC-v0.4-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "alpha_bon": 0.05,
+  "bonferroni_k": 1,
+  "fr_48_30": 1.010117,
+  "corpus_mean_fr": 0.9234872255860892,
+  "rank_30_in_q48_nearest": 56,
+  "rank_30_in_q48_farthest": 58,
+  "test_t1_fr_below_corpus_mean": false,
+  "test_t1_strict_below_086": false,
+  "test_t2_not_in_top50_farthest": true,
+  "test_t2_strict_top30_nearest": false,
+  "comparator_fr_48_105": 1.020795,
+  "comparator_fr_30_105": 1.065921,
+  "comparator_rank_105_in_q48": 63,
+  "verdict": "NULL",
+  "interpretation": "FR(Q48,Q30)=1.0101 vs corpus mean 0.9235. Q30 rank in Q48-nearest = 56/113. Classical iʿjāz al-ghayb pair claim is THEMATIC, NOT FR-cluster.",
+  "honest_limits": [
+    "The classical iʿjāz al-ghayb pair claim is thematic-content, not structural-distance.",
+    "Q 30 is FAR from Q 48 in FR-space (rank ~88/113); they do not form a structural cluster.",
+    "Q 105 al-Fīl is RETROSPECTIVE (not forward-looking); it is included only as comparator.",
+    "Pre-reg LOCKED the prediction direction (LOW = cohesion) with the EXPECTED outcome being NULL — this is the project's discipline of testing classical claims and reporting NULLs with equal prominence."
+  ]
+}

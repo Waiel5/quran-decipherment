@@ -1,0 +1,73 @@
+{
+  "test_id": "Q048-F-01",
+  "H_NEW": "H-NEW-1260",
+  "title": "Q 48 al-Fatḥ — corpus-EXACT *fatḥ* root-density signature",
+  "pre_reg_sha": "263b58105397cb13f1ec36ad5faeac1f7603c21fc10ba57a0027b37c5696f511",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-v0.4-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "alpha_bon": 0.05,
+  "bonferroni_k": 1,
+  "corpus_stats": {
+    "total_root_tagged_tokens": 49968,
+    "total_ftH_tokens": 38,
+    "corpus_ftH_rate": 0.000760486711495357
+  },
+  "q48_stats": {
+    "q48_root_tagged_tokens": 404,
+    "q48_ftH_tokens": 4,
+    "q48_ftH_density": 0.009900990099009901,
+    "expected_under_corpus_rate": 0.3072366314441242,
+    "enrichment_factor": 13.019280875455967
+  },
+  "rank_density_length_controlled": {
+    "rank": 1,
+    "of_total": 79,
+    "filter": ">=100 root-tagged tokens",
+    "top_5": [
+      {
+        "surah": 48,
+        "ftH": 4,
+        "tokens": 404,
+        "density": 0.009900990099009901
+      },
+      {
+        "surah": 32,
+        "ftH": 2,
+        "tokens": 237,
+        "density": 0.008438818565400843
+      },
+      {
+        "surah": 78,
+        "ftH": 1,
+        "tokens": 131,
+        "density": 0.007633587786259542
+      },
+      {
+        "surah": 61,
+        "ftH": 1,
+        "tokens": 145,
+        "density": 0.006896551724137931
+      },
+      {
+        "surah": 54,
+        "ftH": 1,
+        "tokens": 252,
+        "density": 0.003968253968253968
+      }
+    ]
+  },
+  "rank_count_all_surahs": 2,
+  "p_hypergeometric": 0.00025004218831925387,
+  "p_permutation": 0.00039996000399960006,
+  "primary_pass": true,
+  "directional_pass": true,
+  "verdict": "PASS-DIRECTED",
+  "verdict_ceiling": "PASS-DIRECTED",
+  "honest_limits": [
+    "Brief stated 5 fatḥ occurrences; on-disk QAC v0.4 returns 4 root-tokens / 3 verses. Corrected count used here.",
+    "Q 48 is NAMED for this root, so the test is in some sense tautological. Empirical contribution = quantifying the magnitude.",
+    "Test is post-hoc-noticed; verdict ceiling = PASS-DIRECTED until INDEPENDENT REPLICATION on a distinct dimension.",
+    "Replication candidate: orthographic substring فتح count (different operationalization)."
+  ]
+}
