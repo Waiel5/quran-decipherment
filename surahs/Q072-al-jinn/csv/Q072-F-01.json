@@ -1,0 +1,99 @@
+{
+  "test_id": "Q072-F-01",
+  "prereg_sha": "b4faaeeea844cf372b8e101fa2d53994b11c8db25e789728c36bd7a719b4f540",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha": 0.05,
+  "predicted_p_bound": 0.01,
+  "cluster": [
+    72,
+    109,
+    112,
+    113,
+    114
+  ],
+  "cluster_within_mean_fr": 0.49827330000000003,
+  "cluster_pairs": [
+    {
+      "i": 72,
+      "j": 109,
+      "d": 0.797649
+    },
+    {
+      "i": 72,
+      "j": 112,
+      "d": 0.69448
+    },
+    {
+      "i": 72,
+      "j": 113,
+      "d": 0.750862
+    },
+    {
+      "i": 72,
+      "j": 114,
+      "d": 0.743267
+    },
+    {
+      "i": 109,
+      "j": 112,
+      "d": 0.361118
+    },
+    {
+      "i": 109,
+      "j": 113,
+      "d": 0.366309
+    },
+    {
+      "i": 109,
+      "j": 114,
+      "d": 0.400035
+    },
+    {
+      "i": 112,
+      "j": 113,
+      "d": 0.288619
+    },
+    {
+      "i": 112,
+      "j": 114,
+      "d": 0.308609
+    },
+    {
+      "i": 113,
+      "j": 114,
+      "d": 0.271785
+    }
+  ],
+  "q72_to_4qul_distances": {
+    "Q72-Q109": 0.797649,
+    "Q72-Q112": 0.69448,
+    "Q72-Q113": 0.750862,
+    "Q72-Q114": 0.743267
+  },
+  "q72_to_4qul_mean": 0.7465645000000001,
+  "null_random5": {
+    "mean": 0.92358835902,
+    "sd": 0.10085222908636167,
+    "min": 0.310871,
+    "max": 1.2159002,
+    "p_one_sided_le": 0.0026,
+    "z_score": -4.217210297412412
+  },
+  "mw5_pc": {
+    "cluster": [
+      69,
+      97,
+      101
+    ],
+    "name": "H-NEW-1190 sub-sample (wa-ma adraka ma)",
+    "obs_within_mean": 0.6078476666666667,
+    "null_random3_mean": 0.9254941274666667,
+    "p_one_sided_le": 0.0362,
+    "pass": true
+  },
+  "direction_correct": true,
+  "primary_pass_alpha": true,
+  "primary_pass_predicted_bound": true,
+  "verdict": "PASS-STRONG (predicted p<0.01 met; PC passes)"
+}

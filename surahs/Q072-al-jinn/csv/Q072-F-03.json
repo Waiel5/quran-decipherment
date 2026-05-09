@@ -1,0 +1,76 @@
+{
+  "test_id": "Q072-F-03",
+  "prereg_sha": "ff4ec27cb7e802f4a090ba3e419466a1d6594d7598a21b1d38ca009cd944f4bc",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha": 0.05,
+  "q72_block": {
+    "surah": 72,
+    "verses": "1-19",
+    "n_words": 193,
+    "n_types": 143
+  },
+  "q46_block": {
+    "surah": 46,
+    "verses": "29-32",
+    "n_words": 73,
+    "n_types": 61
+  },
+  "observed_jaccard": 0.0851063829787234,
+  "intersection_size": 16,
+  "intersection_tokens": [
+    "إلى",
+    "إنا",
+    "الأرض",
+    "الجن",
+    "الله",
+    "به",
+    "سمعنا",
+    "في",
+    "لا",
+    "لما",
+    "له",
+    "من",
+    "ومن",
+    "يهدي",
+    "ۖ",
+    "ۚ"
+  ],
+  "diagnostic_tokens_in_both": [
+    "الجن",
+    "سمعنا",
+    "يهدي"
+  ],
+  "diagnostic_tokens_in_q72_only": [
+    "نفر",
+    "استمع",
+    "قرآنا",
+    "الهدى",
+    "آمنا",
+    "أحدا"
+  ],
+  "diagnostic_tokens_in_q46_only": [
+    "نفرا",
+    "يستمعون",
+    "القرآن",
+    "قومهم",
+    "قومنا"
+  ],
+  "null_band_word_count": [
+    54,
+    91
+  ],
+  "n_candidate_windows": 19023,
+  "null": {
+    "mean": 0.04690316456218476,
+    "sd": 0.013606532253559666,
+    "min": 0.005235602094240838,
+    "max": 0.1043956043956044,
+    "p_one_sided_ge": 0.0068,
+    "percentile_of_obs": 0.9932,
+    "z_score": 2.8077115979748717
+  },
+  "direction_correct": true,
+  "primary_pass": true,
+  "verdict": "PASS"
+}

@@ -1,0 +1,219 @@
+{
+  "finding_id": "Q023-F-02",
+  "pre_reg_sha256": "ae48a41c7410b543be980d505c5c0305a6f62e5fd9cce1d242463b3da9e1ef72",
+  "strict_marker_list": [
+    "والذين هم",
+    "الذين هم"
+  ],
+  "looser_marker_list": [
+    "والذين هم",
+    "الذين هم",
+    "والذين ",
+    "الذين ",
+    "أولئك"
+  ],
+  "comparators": {
+    "Q23:1-11": {
+      "surah": 23,
+      "start": 1,
+      "end": 11,
+      "n_verses": 11,
+      "strict_marker_verses": 6,
+      "looser_marker_verses": 9,
+      "note": "qad aflaha al-muʾminūn opener + 10 trait-clauses"
+    },
+    "Q8:2-4": {
+      "surah": 8,
+      "start": 2,
+      "end": 4,
+      "n_verses": 3,
+      "strict_marker_verses": 0,
+      "looser_marker_verses": 3,
+      "note": "innama al-muʾminūn alladhīna idhā..."
+    },
+    "Q9:71": {
+      "surah": 9,
+      "start": 71,
+      "end": 71,
+      "n_verses": 1,
+      "strict_marker_verses": 0,
+      "looser_marker_verses": 1,
+      "note": "al-muʾminūn wa-al-muʾmināt baʿḍuhum awliyāʾ"
+    },
+    "Q70:22-35": {
+      "surah": 70,
+      "start": 22,
+      "end": 35,
+      "n_verses": 14,
+      "strict_marker_verses": 6,
+      "looser_marker_verses": 10,
+      "note": "illā al-muṣallīn alladhīna hum..."
+    },
+    "Q25:63-77": {
+      "surah": 25,
+      "start": 63,
+      "end": 77,
+      "n_verses": 15,
+      "strict_marker_verses": 0,
+      "looser_marker_verses": 10,
+      "note": "ʿibād al-Raḥmān list"
+    },
+    "Q32:15-16": {
+      "surah": 32,
+      "start": 15,
+      "end": 16,
+      "n_verses": 2,
+      "strict_marker_verses": 0,
+      "looser_marker_verses": 1,
+      "note": "innamā yuʾminu bi-āyātinā..."
+    }
+  },
+  "Q23_strict_longest": {
+    "surah": 23,
+    "name": "Al-Mu'minun",
+    "longest_run_verses": 4,
+    "start_verse": 2,
+    "end_verse": 5
+  },
+  "Q23_looser_longest": {
+    "surah": 23,
+    "name": "Al-Mu'minun",
+    "longest_run_verses": 5,
+    "start_verse": 7,
+    "end_verse": 11
+  },
+  "strict_top5_corpus": [
+    {
+      "surah": 23,
+      "name": "Al-Mu'minun",
+      "longest_run_verses": 4,
+      "start_verse": 2,
+      "end_verse": 5
+    },
+    {
+      "surah": 70,
+      "name": "Al-Ma'arij",
+      "longest_run_verses": 3,
+      "start_verse": 32,
+      "end_verse": 34
+    },
+    {
+      "surah": 107,
+      "name": "Al-Ma'un",
+      "longest_run_verses": 2,
+      "start_verse": 5,
+      "end_verse": 6
+    },
+    {
+      "surah": 7,
+      "name": "Al-A'raf",
+      "longest_run_verses": 1,
+      "start_verse": 156,
+      "end_verse": 156
+    },
+    {
+      "surah": 10,
+      "name": "Yunus",
+      "longest_run_verses": 1,
+      "start_verse": 7,
+      "end_verse": 7
+    }
+  ],
+  "looser_top5_corpus": [
+    {
+      "surah": 5,
+      "name": "Al-Ma'idah",
+      "longest_run_verses": 7,
+      "start_verse": 51,
+      "end_verse": 57
+    },
+    {
+      "surah": 11,
+      "name": "Hud",
+      "longest_run_verses": 6,
+      "start_verse": 16,
+      "end_verse": 21
+    },
+    {
+      "surah": 34,
+      "name": "Saba",
+      "longest_run_verses": 6,
+      "start_verse": 3,
+      "end_verse": 8
+    },
+    {
+      "surah": 70,
+      "name": "Al-Ma'arij",
+      "longest_run_verses": 6,
+      "start_verse": 31,
+      "end_verse": 36
+    },
+    {
+      "surah": 2,
+      "name": "Al-Baqarah",
+      "longest_run_verses": 5,
+      "start_verse": 174,
+      "end_verse": 178
+    }
+  ],
+  "strict_corpus_max": 4,
+  "strict_ties_for_max": [
+    {
+      "surah": 23,
+      "name": "Al-Mu'minun",
+      "longest_run_verses": 4,
+      "start_verse": 2,
+      "end_verse": 5
+    }
+  ],
+  "looser_corpus_max": 7,
+  "looser_ties_for_max": [
+    {
+      "surah": 5,
+      "name": "Al-Ma'idah",
+      "longest_run_verses": 7,
+      "start_verse": 51,
+      "end_verse": 57
+    }
+  ],
+  "disbeliever_top5_control": [
+    {
+      "surah": 3,
+      "name": "Ali 'Imran",
+      "longest_run_verses": 2,
+      "start_verse": 55,
+      "end_verse": 56
+    },
+    {
+      "surah": 4,
+      "name": "An-Nisa",
+      "longest_run_verses": 2,
+      "start_verse": 101,
+      "end_verse": 102
+    },
+    {
+      "surah": 7,
+      "name": "Al-A'raf",
+      "longest_run_verses": 2,
+      "start_verse": 176,
+      "end_verse": 177
+    },
+    {
+      "surah": 41,
+      "name": "Fussilat",
+      "longest_run_verses": 2,
+      "start_verse": 26,
+      "end_verse": 27
+    },
+    {
+      "surah": 47,
+      "name": "Muhammad",
+      "longest_run_verses": 2,
+      "start_verse": 3,
+      "end_verse": 4
+    }
+  ],
+  "verdict": "PASS-DIRECTED-EXACT",
+  "bonferroni_family_alpha": 0.016666666666666666,
+  "rules_tuple": "(no-tashkeel, orthographic-token, Hafs-Kufan)"
+}

@@ -1,0 +1,46 @@
+{
+  "finding_id": "Q023-F-03",
+  "pre_reg_sha256": "4518ad85b89225a206d2042b13e1af25205de29474fa7c3612c2eb74a44e9c80",
+  "seed": 20260509,
+  "n_perms_valid": 10000,
+  "n_perms_attempts": 10375,
+  "primary_pair": {
+    "A": "Q 23:12-14",
+    "B": "Q 22:5"
+  },
+  "J_obs_raw": 0.08860759493670886,
+  "J_obs_stem": 0.09333333333333334,
+  "J_q23_q75_raw": 0.08163265306122448,
+  "J_q22_q75_raw": 0.05333333333333334,
+  "J_control_q23_1_3_q22_5_raw": 0.014925373134328358,
+  "Q23_12_14_tokens_unique": 30,
+  "Q22_5_tokens_unique": 56,
+  "intersection_tokens": [
+    "ثم",
+    "علقة",
+    "في",
+    "مضغة",
+    "من",
+    "نطفة",
+    "ۚ"
+  ],
+  "null_raw": {
+    "n": 10000,
+    "mean": 0.022025380519099,
+    "median": 0.016129032258064516,
+    "p95": 0.07368421052631578,
+    "min": 0.0,
+    "max": 0.46153846153846156
+  },
+  "null_stem": {
+    "n": 10000,
+    "median": 0.025,
+    "mean": 0.03148803429778855
+  },
+  "p_upper_tail_raw": 0.0231976802319768,
+  "p_upper_tail_stem": 0.051594840515948405,
+  "verdict": "PASS-DIRECTED",
+  "bonferroni_family_alpha": 0.016666666666666666,
+  "verdict_bonferroni": "NOT-PASS-BONF",
+  "rules_tuple": "(no-tashkeel, orthographic-token-Jaccard, Hafs-Kufan)"
+}
