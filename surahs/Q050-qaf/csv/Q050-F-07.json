@@ -1,0 +1,183 @@
+{
+  "finding_id": "Q050-F-07",
+  "prereg_sha256": "6a5530552dd610e3d995740a6771735f215f33c45f421f14f9e3eb8e8d97da54",
+  "date_run": "2026-05-09",
+  "rules_tuple": "(no-tashkeel, grapheme-counting, mushaf-marks-stripped, basmala-not-counted-outside-Q1, Hafs-Kufan, Mashriqi)",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 1,
+  "alpha": 0.05,
+  "class_definition": "Meccan surahs with 30 <= total_verses <= 50",
+  "class_size": 16,
+  "class_ids": [
+    31,
+    32,
+    35,
+    45,
+    46,
+    50,
+    52,
+    67,
+    70,
+    75,
+    77,
+    78,
+    79,
+    80,
+    83,
+    89
+  ],
+  "per_surah_sorted_desc": [
+    {
+      "rank": 1,
+      "surah": 75,
+      "name": "Al-Qiyamah",
+      "n_verses": 40,
+      "qaf_count": 27,
+      "letter_count": 676,
+      "qaf_rate": 0.039941
+    },
+    {
+      "rank": 2,
+      "surah": 50,
+      "name": "Qaf",
+      "n_verses": 45,
+      "qaf_count": 57,
+      "letter_count": 1507,
+      "qaf_rate": 0.037823
+    },
+    {
+      "rank": 3,
+      "surah": 46,
+      "name": "Al-Ahqaf",
+      "n_verses": 35,
+      "qaf_count": 73,
+      "letter_count": 2667,
+      "qaf_rate": 0.027372
+    },
+    {
+      "rank": 4,
+      "surah": 67,
+      "name": "Al-Mulk",
+      "n_verses": 30,
+      "qaf_count": 36,
+      "letter_count": 1347,
+      "qaf_rate": 0.026726
+    },
+    {
+      "rank": 5,
+      "surah": 32,
+      "name": "As-Sajdah",
+      "n_verses": 30,
+      "qaf_count": 38,
+      "letter_count": 1563,
+      "qaf_rate": 0.024312
+    },
+    {
+      "rank": 6,
+      "surah": 80,
+      "name": "'Abasa",
+      "n_verses": 42,
+      "qaf_count": 13,
+      "letter_count": 552,
+      "qaf_rate": 0.023551
+    },
+    {
+      "rank": 7,
+      "surah": 77,
+      "name": "Al-Mursalat",
+      "n_verses": 50,
+      "qaf_count": 18,
+      "letter_count": 841,
+      "qaf_rate": 0.021403
+    },
+    {
+      "rank": 8,
+      "surah": 78,
+      "name": "An-Naba",
+      "n_verses": 40,
+      "qaf_count": 17,
+      "letter_count": 796,
+      "qaf_rate": 0.021357
+    },
+    {
+      "rank": 9,
+      "surah": 52,
+      "name": "At-Tur",
+      "n_verses": 49,
+      "qaf_count": 28,
+      "letter_count": 1324,
+      "qaf_rate": 0.021148
+    },
+    {
+      "rank": 10,
+      "surah": 83,
+      "name": "Al-Mutaffifin",
+      "n_verses": 36,
+      "qaf_count": 13,
+      "letter_count": 750,
+      "qaf_rate": 0.017333
+    },
+    {
+      "rank": 11,
+      "surah": 45,
+      "name": "Al-Jathiyah",
+      "n_verses": 37,
+      "qaf_count": 36,
+      "letter_count": 2085,
+      "qaf_rate": 0.017266
+    },
+    {
+      "rank": 12,
+      "surah": 89,
+      "name": "Al-Fajr",
+      "n_verses": 30,
+      "qaf_count": 10,
+      "letter_count": 584,
+      "qaf_rate": 0.017123
+    },
+    {
+      "rank": 13,
+      "surah": 70,
+      "name": "Al-Ma'arij",
+      "n_verses": 44,
+      "qaf_count": 16,
+      "letter_count": 971,
+      "qaf_rate": 0.016478
+    },
+    {
+      "rank": 14,
+      "surah": 31,
+      "name": "Luqman",
+      "n_verses": 34,
+      "qaf_count": 31,
+      "letter_count": 2171,
+      "qaf_rate": 0.014279
+    },
+    {
+      "rank": 15,
+      "surah": 79,
+      "name": "An-Nazi'at",
+      "n_verses": 46,
+      "qaf_count": 11,
+      "letter_count": 785,
+      "qaf_rate": 0.014013
+    },
+    {
+      "rank": 16,
+      "surah": 35,
+      "name": "Fatir",
+      "n_verses": 45,
+      "qaf_count": 42,
+      "letter_count": 3238,
+      "qaf_rate": 0.012971
+    }
+  ],
+  "q50_rank": 2,
+  "q50_rate": 0.037823,
+  "q50_qaf_count": 57,
+  "q50_letter_count": 1507,
+  "perm_p_rank_1": 0.0052,
+  "pre_commit_violation": false,
+  "verdict": "DIRECTIONAL-TOP-3"
+}

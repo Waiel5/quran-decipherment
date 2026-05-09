@@ -1,0 +1,37 @@
+{
+  "finding_id": "Q050-F-08",
+  "prereg_sha256": "a5abbd2243712cbaa2bc355a132c8cb70a9427934b870418b043b902f40f8ed8",
+  "date_run": "2026-05-09",
+  "rules_tuple": "(cross-feature replication; no parameter change from Q049-F-03)",
+  "seed": 20260509,
+  "q049_f_03_json_cross_read": {
+    "in_h130_top15_root": true,
+    "in_h130b_top15_char4gram": true,
+    "in_h130c_top15_verselen": true,
+    "primary_all_three": true,
+    "pair": [
+      49,
+      50
+    ],
+    "all_ok": true
+  },
+  "direct_h130_root_top15": {
+    "contains_49_50": true,
+    "distance": 1.003462,
+    "top15_size": 15
+  },
+  "direct_h130b_char4gram_top15": {
+    "contains_49_50": true,
+    "distance": 1.093928,
+    "top15_size": 15
+  },
+  "direct_h130c_verselen_top15": {
+    "contains_49_50": true,
+    "distance": 1.371826,
+    "top15_size": 15
+  },
+  "direct_all_ok": true,
+  "json_vs_direct_agreement": true,
+  "pre_commit_violation": false,
+  "verdict": "STRONG-REPLICATION"
+}

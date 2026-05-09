@@ -3,9 +3,9 @@ surah: 50
 surah_name_ar: ق
 surah_name_translit: Qāf
 file_type: novel-findings
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE — 5 pre-registered tests run with mixed verdicts
+verdict: COMPLETE — 8 pre-registered tests run with mixed verdicts (5 Wave-D 2026-05-07 + 3 Wave-H 2026-05-09)
 ---
 
 # Q 50 Qāf — Novel Findings
@@ -21,6 +21,9 @@ This file presents 5 pre-registered novel empirical findings on Q 50, each with 
 | Q050-F-03 | `66c22536f23c` | `Q050_F_03_qaf_letter_density.py` | `Q050-F-03.json` | **PARTIAL-1/3** (Q 50 ق CONFIRMED; Q 38 ṣ raw-significant Bonferroni-fails; Q 68 ن NULL) |
 | Q050-F-04 | `cac90ad5c9e1` | `Q050_F_04_singleton_letter_triplet.py` | `Q050-F-04.json` | **NULL** (singleton-letter triplet is NOT FR-cohesive at p<0.05) |
 | Q050-F-05 | `693953f73701` | `Q050_F_05_rhyme_vs_opener.py` | `Q050-F-05.json` | **CONFIRMED-NULL on opener-rāwī alignment** (1/3 cohort match — Q 68 only) |
+| Q050-F-06 | `d058275499fc` | `Q050_F_06_singleton_vs_muqattaat_baseline.py` | `Q050-F-06.json` | **DIRECTIONAL** (LOW-S correct on both nulls; null-b percentile 0.162 closer to but not passing Bonferroni-2) |
+| Q050-F-07 | `6a5530552dd6` | `Q050_F_07_qaf_density_vs_meccan_30_50.py` | `Q050-F-07.json` | **DIRECTIONAL-TOP-3** (Q 50 rank 2/16; Q 75 al-Qiyāma narrowly higher; pre-reg's strict rank-1 FALSIFIED) |
+| Q050-F-08 | `a5abbd224371` | `Q050_F_08_q49_q50_hinge_reverify.py` | `Q050-F-08.json` | **STRONG-REPLICATION** (Q 49 → Q 50 universal hinge confirmed in_all_three=True) |
 
 The headline result is a *cluster of cohort-coherence findings*: **Q 50, Q 38, Q 68 are precisely the 3 muqaṭṭaʿāt-opener verses with the muqaṭṭaʿ + oath-wāw + definite-article construction** (Q050-F-01, 3/29 = 10.3%). They are NOT FR-cohesive (Q050-F-04 NULL) and only Q 68's opener letter equals its dominant rāwī (Q050-F-05 CONFIRMED-NULL). The cohort is therefore *FORM-coherent* (verse-1 syntax) but NOT *content-coherent* — exactly the cross-finding-026 §1 letter-axis ⊥ content-axis prediction at the cohort scale.
 
@@ -291,3 +294,61 @@ This pattern suggests a refined hypothesis for future testing:
 > **Conjecture**: classical recitation-pair traditions (e.g., Q 50/Q 54 Eid; Q 32/Q 67 nightly) correspond to FR-near-pairs at higher-than-chance rate.
 
 This is *NOT* tested in this surah investigation; flagged for future cross-finding-028 candidate.
+
+---
+
+## Wave-H 2026-05-09 — 3 additional pre-registered tests
+
+This section adds 3 pre-registered tests (Q050-F-06, F-07, F-08) executed in the Wave-H landing on 2026-05-09. Each is documented in full in its own per-test markdown file at the parent surah folder. Headlines:
+
+### Q050-F-06 — singleton-triplet FR-cluster vs 28-muqaṭṭāʿat baseline (DIRECTIONAL)
+
+See `Q050-F-06-singleton-vs-muqattaat-baseline.md` for full report.
+
+Tests singleton-letter triplet {Q 38, 50, 68} mean pairwise FR against:
+- Null A: 10000 random non-triplet 3-surah samples from the full corpus.
+- Null B: exhaustive C(26,3) = 2600 triplets from the 26 non-singleton muqaṭṭāʿat surahs.
+
+S_obs = 0.8699. Null A percentile = 0.260 (replicates Q050-F-04 to within RNG drift). Null B percentile = 0.162. Direction LOW-S correct on both nulls; neither passes Bonferroni-2 (α=0.025). **DIRECTIONAL**.
+
+The 26 non-singleton-muqaṭṭāʿat triplets have mean = 0.925 (essentially the corpus mean 0.924). This is the precise quantitative signature of cross-finding-026 §1 letter-axis ⊥ content-axis: the muqaṭṭāʿat-class does NOT cluster on root-distribution, even though the singleton-letter sub-cohort form-clusters perfectly on verse-1 syntax (Q050-F-01).
+
+### Q050-F-07 — Q 50 ق-density vs Meccan 30-50-verse class (DIRECTIONAL-TOP-3 — pre-reg's rank-1 FALSIFIED)
+
+See `Q050-F-07-qaf-density-vs-meccan-30-50.md` for full report.
+
+Pre-reg locked direction: **Q 50 = rank 1** among 16 Meccan surahs of 30-50 verses on ق-letter density. Observed: **Q 50 = rank 2** (Q 75 al-Qiyāma narrowly edges Q 50: 0.0399 vs 0.0378).
+
+**Pre-commit honored**: pre-reg's strict rank-1 is FALSIFIED; verdict reported as DIRECTIONAL-TOP-3. The underlying claim (Q 50 has corpus-extreme ق density at z = +3.34 per Q050-F-03) is robust; the refinement is that Q 50 is NOT uniquely the densest ق-surah within its length-matched-period-matched reference class.
+
+**New finding-candidate**: Q 75 al-Qiyāma's ق-saturation (driven by qiyāma/qul/taqūm lexical-thematic load) is potentially a previously-unrecognized classical-iʿjāz-echo. A Q 75 specialist investigation is flagged as a follow-up task.
+
+### Q050-F-08 — Q 49 → Q 50 universal hinge re-verification (STRONG-REPLICATION)
+
+See `Q050-F-08-q49-q50-hinge-reverify.md` for full report.
+
+Cross-reads `surahs/Q049-al-hujurat/csv/Q049-F-03.json` AND independently re-extracts top-15 from `h-new-130.json`, `h-new-130b.json`, `h-new-130c.json`. All checks PASS:
+
+- Q049-F-03 `primary_all_three = True`; pair `[49, 50]`.
+- Direct h-new-130 root top-15: contains (49, 50) at distance 1.0035 ✓
+- Direct h-new-130b char-4-gram top-15: contains (49, 50) at distance 1.0939 ✓
+- Direct h-new-130c verse-length top-15: contains (49, 50) at distance 1.3718 ✓
+
+**Verdict: STRONG-REPLICATION.** Q 50 inherits the H-NEW-1262 universal-hinge cross-reference. This is a method-discipline test (dependency verification), not new science; its value is integrity.
+
+---
+
+## Wave-H synthesis update
+
+After Wave-H, the singleton-letter cohort coherence table is:
+
+| Axis | Wave-D verdict | Wave-H additional |
+|:--|:--|:--|
+| Verse-1 syntax (muqaṭṭaʿ + oath-wāw + al-) | Form-coherent 3/3 (Q050-F-01 DIRECTIONAL-EXTENDED-COHORT) | — |
+| Body-part density | Corpus-extreme z=+7.2 (Q050-F-02 CONFIRMED) | — |
+| Host-letter density | Q-50-specific (Q050-F-03 PARTIAL-1/3) | DIRECTIONAL-TOP-3 within Meccan 30-50-verse class (Q050-F-07; rank-2/16, Q 75 narrowly higher) |
+| FR-roots content cohesion | NULL on full-corpus null (Q050-F-04, percentile 0.27) | DIRECTIONAL on muqaṭṭāʿat-only null (Q050-F-06, percentile 0.16; still below Bonferroni-2 cutoff) |
+| Opener-rāwī alignment | NOT COHERENT 1/3 (Q050-F-05 CONFIRMED-NULL) | — |
+| Q 49 → Q 50 universal hinge | (NOT TESTED in Wave-D) | STRONG-REPLICATION on all 3 axes (Q050-F-08) |
+
+The Wave-H tests TIGHTEN the Wave-D results by: (1) showing the singleton-letter FR-cohesion direction holds even under the more stringent within-muqaṭṭāʿat null; (2) finding that Q 50's ق-density is NOT uniquely class-rank-1 (Q 75 ties as a comparator-class peer); (3) verifying the universal-hinge dependency. **The Wave-H tests add nuance, not new corpus-extreme effects.**

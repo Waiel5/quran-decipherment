@@ -4,9 +4,9 @@ surah_name_ar: ق
 surah_name_translit: Qāf
 surah_name_english: "Qāf (singleton-letter opener)"
 file_type: overview
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE — singleton-letter cohort triplet (Q 50, Q 38, Q 68) characterized; classical Friday-recitation status verified at Sahih Muslim #1907 (NOT #872 as task prompt stated); 5 novel tests pre-registered and executed with mixed verdicts
+verdict: COMPLETE — singleton-letter cohort triplet (Q 50, Q 38, Q 68) characterized; classical Friday-recitation status verified at Sahih Muslim #1907 (NOT #872 as task prompt stated); 8 novel tests pre-registered and executed with mixed verdicts (5 Wave-D 2026-05-07 + 3 Wave-H 2026-05-09)
 ---
 
 # Q 50 Qāf — Overview
@@ -161,6 +161,7 @@ The new cohort-membership in (Q 38, Q 50, Q 68) is a *sub-classification within 
 - [x] 03-tafsir-survey.md (5 mufassirūn surveyed: al-Ṭabarī, al-Qurṭubī, Ibn Kathīr, al-Jalālayn, al-Muyassar; al-Rāzī through razi-muqattaat-surah-qaf.md; al-Suyūṭī classical chronology)
 - [x] 04-hadith-corpus.md (Muslim #1907 verified; Eid + Friday + Fajr recitation chains; corrected from task prompt's "Muslim #872")
 - [x] 05-classical-claims-audit.md (5 claims audited)
-- [x] 06-novel-findings.md (Q050-F-01 through Q050-F-05 all pre-registered + executed)
+- [x] 06-novel-findings.md (Q050-F-01 through Q050-F-08 all pre-registered + executed; F-06/07/08 Wave-H landings 2026-05-09)
 - [x] 07-cross-references.md
 - [x] JOURNAL.md
+- [x] Wave-H 2026-05-09 — 3 additional pre-registered tests (Q050-F-06 DIRECTIONAL, Q050-F-07 DIRECTIONAL-TOP-3 [pre-reg rank-1 FALSIFIED — Q 75 narrowly higher], Q050-F-08 STRONG-REPLICATION of Q 49 → Q 50 universal hinge)

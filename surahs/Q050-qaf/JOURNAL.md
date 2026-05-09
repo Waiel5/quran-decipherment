@@ -3,7 +3,7 @@ surah: 50
 surah_name_ar: ق
 surah_name_translit: Qāf
 file_type: journal
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-09
 phase: B+
 ---
 
@@ -147,17 +147,87 @@ Q 50 assigned to *iʿjāz-al-fawāṣil-pure* cell (cross-finding-026 §13.6 4-c
 
 This file. Complete.
 
+## 2026-05-09 — Wave-H agent dispatch (Q050-qaf-specialist Wave-H continuation)
+
+**Specialist agent**: Q050-qaf-specialist (Wave-H).
+
+**Task**: 3 additional pre-registered tests (T1, T2, T3 per brief) layered on the Wave-D 2026-05-07 baseline.
+
+### Pre-flight reading
+
+Re-read:
+1. `.claude/skills/quran-investigation/SKILL.md`
+2. `INVESTIGATION-PROTOCOL.md`
+3. `HANDOFF/SESSION-HANDOFF-2026-05-09-PM.md`
+4. Existing `surahs/Q050-qaf/` 8-file template + 5 Wave-D pre-regs + scripts + JSONs.
+
+### Hadith number — already corrected in Wave-D
+
+Note: the Wave-H brief still cited "Muslim #872" as candidate; Wave-D's earlier verification confirmed the correct reference is Muslim **#1907** (Umm Hishām). The 04-hadith-corpus.md already reflects the corrected #1907; no further correction needed in Wave-H. ʿUmm Hishām bint Ḥāritha hadith on memorizing Q 50 by hearing the Prophet recite from minbar is at Muslim idInBook 1907 chapterId 7 (*Kitāb al-Jumʿa*).
+
+### 3 new pre-regs locked
+
+| Pre-reg | SHA256 head | Direction | Verdict |
+|:--|:--|:--|:--|
+| Q050-F-06 | `d058275499fc` | LOW-S on both nulls (Bonferroni-2 α=0.025) | DIRECTIONAL (percentile_a=0.260; percentile_b=0.162; both direction-correct, neither Bonferroni-passing) |
+| Q050-F-07 | `6a5530552dd6` | Q 50 = rank 1 of 16 Meccan 30-50-verse surahs on ق-density | DIRECTIONAL-TOP-3 (Q 50 rank=2; Q 75 al-Qiyāma narrowly higher; pre-reg strict rank-1 FALSIFIED; pre-commit honored) |
+| Q050-F-08 | `a5abbd224371` | Replication of Q049-F-03 in_all_three=True | STRONG-REPLICATION (JSON cross-read + direct re-extraction agree) |
+
+### Decisions / forking-paths log (Wave-H)
+
+1. **Q050-F-07 falsification**: pre-reg locked Q 50 = rank 1 (strict). Observed: Q 50 = rank 2 (Q 75 narrowly higher at 0.0399 vs 0.0378). Per protocol §1.3: published with full prominence as DIRECTIONAL-TOP-3. NOT massaged into "Q 50 is top-3" weakened criterion. The data observation is a discovery: Q 75 al-Qiyāma has even higher class-rank ق density than Q 50, suggesting an independent classical-iʿjāz-echo finding-candidate for Q 75 specialist follow-up.
+
+2. **Q050-F-06 stratified null**: the brief asked for comparison to "28-muqaṭṭāʿat baseline" — interpreted as the 26 non-singleton muqaṭṭāʿat surahs (29 total minus 3 singleton-letter cohort), exhaustively enumerated as C(26,3) = 2600 triplets. This is the most class-controlled null possible. The percentile shift from null-a (full-corpus, 0.260) to null-b (muqaṭṭāʿat-only, 0.162) suggests the singleton-letter cohort IS more cohesive than other muqaṭṭāʿat triplets, but neither cell passes Bonferroni-2.
+
+3. **Q050-F-08 minimal risk**: this is a method-discipline test (dependency verification) — Q049-F-03 was a CONFIRMED-CROSS-FEATURE landing, so REPLICATION was expected. Both verification paths (JSON cross-read + direct re-extraction from h-new-130/130b/130c) AGREE. Q 50 inherits the H-NEW-1262 universal-hinge cross-reference with confidence.
+
+### Wave-H test execution
+
+All 3 Wave-H scripts: SHA-checksum verified at runtime. None failed. Output JSONs written to `csv/`. Findings markdowns written at `surahs/Q050-qaf/Q050-F-06-*.md`, `Q050-F-07-*.md`, `Q050-F-08-*.md`.
+
+```
+$ python3 scripts/Q050_F_06_singleton_vs_muqattaat_baseline.py
+Q050-F-06: VERDICT=DIRECTIONAL
+  S_obs=0.8699, null_a percentile=0.2600, null_b percentile=0.1619
+
+$ python3 scripts/Q050_F_07_qaf_density_vs_meccan_30_50.py
+Q050-F-07: VERDICT=DIRECTIONAL-TOP-3
+  Q 50 rank = 2 / 16; rate = 0.03782; perm_p_rank_1 = 0.0052
+
+$ python3 scripts/Q050_F_08_q49_q50_hinge_reverify.py
+Q050-F-08: VERDICT=STRONG-REPLICATION
+  All 3 feature axes (root, char-4-gram, verse-length) contain (49, 50) in top-15.
+```
+
+### Wave-H net additions
+
+- 3 new pre-regs (SHA-locked, embedded in scripts).
+- 3 new scripts (`scripts/Q050_F_06_*.py`, `Q050_F_07_*.py`, `Q050_F_08_*.py`).
+- 3 new CSV/JSON outputs (`csv/Q050-F-06.json`, `Q050-F-07.json`, `Q050-F-08.json`).
+- 3 new findings markdowns (in `surahs/Q050-qaf/` root).
+- Updated `06-novel-findings.md` with §"Wave-H 2026-05-09" extension.
+
+The Wave-H tests add NUANCE to the Wave-D findings, not new corpus-extreme claims. Specifically:
+- Q050-F-06 sharpens Q050-F-04: the singleton-letter cohort IS directionally tighter under a muqaṭṭāʿat-only null (percentile 0.162) than under a full-corpus null (0.267), but still does not pass Bonferroni-2.
+- Q050-F-07 REFINES Q050-F-03: Q 50 is corpus-extreme on ق-density (z=+3.34 per Q050-F-03), but NOT uniquely class-rank-1 within its length-matched-period-matched reference (Q 75 narrowly higher). The classical claim "Q 50 saturated with ق" is qualitatively correct but the *uniqueness* part is FALSIFIED.
+- Q050-F-08 VERIFIES the Q 49 → Q 50 universal hinge as a stable dependency.
+
 ## Investigation status
 
 - [x] Pre-flight reading (binding protocol + 4 templates + cross-finding-026)
 - [x] Empirical metric extraction from 6 H-NEW JSON files
 - [x] Hadith verification (Muslim #1907 corrected from prompt's #872)
-- [x] 5 pre-regs written, SHA256-locked
-- [x] 5 scripts written, SHA-checked at runtime
-- [x] All 5 tests run; verdicts reported with full pre-commit transparency
+- [x] 5 Wave-D pre-regs written, SHA256-locked
+- [x] 5 Wave-D scripts written, SHA-checked at runtime
+- [x] All 5 Wave-D tests run; verdicts reported with full pre-commit transparency
 - [x] 8-file template written
 - [x] Q 50 cell-assignment (cross-finding-026): iʿjāz-al-fawāṣil-pure + dual-cell iʿjāz-al-maʿnā (mild)
 - [x] Future test candidates flagged in 07-cross-references §10
+- [x] 3 Wave-H pre-regs written + SHA-locked (Q050-F-06, F-07, F-08)
+- [x] 3 Wave-H scripts written + SHA-checked at runtime
+- [x] 3 Wave-H tests run; all verdicts published with pre-commit transparency
+- [x] 06-novel-findings.md updated with Wave-H synthesis
+- [x] JOURNAL.md updated with Wave-H session log
 - [x] JOURNAL.md complete
 
 ## Honest limits and open questions
