@@ -4,9 +4,9 @@ surah_name_ar: ص
 surah_name_translit: Ṣād
 surah_name_english: Sād (the Arabic letter ṣād)
 file_type: overview
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-09
 phase: B+
-verdict: SCAFFOLD — empirical profile complete; full investigation written 2026-05-07
+verdict: SCAFFOLD — empirical profile complete; full investigation written 2026-05-07; 3 follow-up pre-registered tests (F-06..F-08) added 2026-05-09
 ---
 
 # Q 38 Ṣād — Overview
@@ -148,6 +148,6 @@ Q 38:24 contains one of the **15 canonical sajdat al-tilāwa** (recitation prost
 - [x] 06-novel-findings.md
 - [x] 07-cross-references.md
 - [x] JOURNAL.md
-- [x] 5 pre-regs (Q038-F-01..F-05)
-- [x] 5 scripts (SHA-verified)
-- [x] 5 JSON outputs in `csv/`
+- [x] 8 pre-regs (Q038-F-01..F-08)
+- [x] 8 scripts (SHA-verified)
+- [x] 8 JSON outputs in `csv/`

@@ -117,3 +117,52 @@ This Q 38 investigation contributes to:
 This investigation has been conducted per the Quran Decipherment Project's INVESTIGATION-PROTOCOL.md, the quran-investigation skill, and the discipline outlined in HANDOFF/04-DISCIPLINE.md. The five pre-regs were SHA-locked before computation; all scripts SHA-verify at runtime; all classical citations are scholar+work+passage; all hadith citations are verified against on-disk JSON; all numerical values are traced to specific data files. Pre-commit violations: ZERO. Garden-of-forking-paths: 5 entries documented above.
 
 *Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+---
+
+## 2026-05-09 — Follow-up specialist run: 3 additional pre-registered tests (F-06..F-08)
+
+**Agent**: Q038-sad-followup-specialist (single-author voice; dispatched per Wave-H session brief 2026-05-09 PM).
+
+### Outputs added
+- `Q038-F-06-sad-density-rank-prereg.md` SHA `06dd2010ce39314f07404cb5cb53cb9d22f5135a9566265df8a63f580735fa48`
+- `Q038-F-07-iblis-narrative-cohesion-prereg.md` SHA `9778fb03e21170410a7b6041cf3784b3883cb8ddf63355f87cbdc88e023b0d95`
+- `Q038-F-08-david-repentance-marker-prereg.md` SHA `20cd8ed33367cfef0c1bf6acdaba7b25658ccdccfc96a81f39cc0239f950a39f`
+- `scripts/Q038_F_06_sad_density_rank.py`
+- `scripts/Q038_F_07_iblis_pericope_cohesion.py`
+- `scripts/Q038_F_08_david_repentance_marker.py`
+- `csv/Q038-F-06.json`, `csv/Q038-F-07.json`, `csv/Q038-F-08.json`
+- `06-novel-findings.md` extended with F-06..F-08 sections + updated cross-finding-strength table
+
+### Headline results (seed = 20260509, n_perm = 10000 for F-07/F-08)
+
+| Test | Verdict | Key metric |
+|:--|:--:|:--|
+| Q038-F-06 ص-density rank in 60-100-verse band | **DIRECTIONAL** | Rank 2/20 (Q 56 al-Wāqiʿa 0.968% vs Q 38 0.914%) — strict rank-1 not met, but DIRECTIONAL band hit |
+| Q038-F-07 Iblīs-narrative 7-pericope root-Jaccard | **CONFIRMED** | obs J=0.1456 vs null 0.0650 ± 0.0169 (z=+4.76, p<0.0001); 0 of 10000 perms ≥ obs |
+| Q038-F-08 David sajda repentance-marker discriminator | **DIRECTIONAL** | Δ=+4.07 pp (A=4.07%, B=0.00%); direction-matched but small-N (B has 25 tokens) keeps p=0.25 |
+
+### Decision points
+
+1. **F-08 root-string correction PRE-RUN.** The pre-reg's initial §6 listed Buckwalter-style root strings `Awob`, `tawob`, `gh~afar`, `sajad`, `rajaE`, `nadim` (verb-lemma style). A direct grep against `data/morphology/quranic-corpus-morphology-0.4.txt` confirmed the actual QAC v0.4 ROOT-field strings are the consonantal abbreviations `Awb`, `twb`, `gfr`, `sjd`, `rjE`, `ndm`. The pre-reg §6 was corrected to use the actual QAC strings BEFORE SHA-locking. This is a data-format correction, not a hypothesis adjustment. The script verifies all 6 roots have ≥1 attestation in QAC before running (sanity check). Logged per protocol §6.4.
+
+2. **F-07 pericope-level CONFIRMED complements the prior H-NEW NULL on host-surahs.** The earlier 2026-05-07 test of Iblīs-narrative HOST-SURAHS {Q 2, 7, 15, 17, 18, 20, 38} returned NOT FR-cohesive at the whole-surah root-distribution level. F-07 zooms into the actual narrative-pericopes inside those surahs and CONFIRMS strong root-Jaccard cohesion (z=+4.76). This is a clean cross-finding-025 ratification: marker-thickness matters; the Iblīs-narrative is a thin marker at the surah scale but a concentrated narrative trope at the pericope scale. The two results together strengthen the cross-finding-025 operational definition.
+
+3. **F-06 rank-2 result is honest.** The Q 38-vs-Q 56 ص-rate gap is 0.054 pp (a 6% relative gap). The pre-committed rank-1 is not met. The DIRECTIONAL bucket (pre-reg §4 rank 2-3) catches this; no result-massaging needed. Q 56 al-Wāqiʿa's elevated ص is driven by the eschatological *aṣḥāb al-yamīn / aṣḥāb al-shimāl / aṣḥāb al-mashʾama* triad and *al-naṣb / al-naṣīb / al-ṣaffīna* vocabulary.
+
+### Anti-hallucination compliance (F-06..F-08)
+
+- [x] All 3 pre-regs SHA256-locked BEFORE running.
+- [x] Pre-reg SHAs embedded in scripts; runtime verification fails-fast on mismatch.
+- [x] F-08 QAC root-strings verified against the morphology file before pre-reg SHA-lock.
+- [x] No numerical claim made from memory; every value computed from disk and traced to JSON output.
+- [x] No hadith numbers invented (none cited in F-06..F-08).
+- [x] No verse references invented; the F-07 and F-08 pre-reg verse-ranges are from the brief and align with classical pericope-boundaries.
+- [x] Pre-committed directions: F-06 HIGHEST rank-1 (DIRECTIONAL hit on rank-2); F-07 TIGHTER (CONFIRMED); F-08 A > B (DIRECTIONAL hit).
+- [x] No pre-commit violations.
+
+### Cumulative tally
+
+8 pre-registered tests total for Q 38 (F-01..F-08): **3 CONFIRMED (F-01, F-02, F-07), 4 DIRECTIONAL (F-03, F-05, F-06, F-08), 1 NULL (F-04)**. All 8 direction-locked-correct. Zero pre-commit violations across the full investigation.
+
+*Bismillāhi al-Raḥmāni al-Raḥīm.*

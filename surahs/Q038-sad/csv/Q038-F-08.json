@@ -1,0 +1,108 @@
+{
+  "finding_id": "Q038-F-08",
+  "prereg_sha": "20cd8ed33367cfef0c1bf6acdaba7b25658ccdccfc96a81f39cc0239f950a39f",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, root-tokens via QAC-v0.4, Hafs-Kufan, Mashriqi)",
+  "repentance_roots": [
+    "Awb",
+    "gfr",
+    "ndm",
+    "rjE",
+    "sjd",
+    "twb"
+  ],
+  "segment_A": {
+    "label": "Q 38:17-29",
+    "surah": 38,
+    "v0": 17,
+    "v1": 29,
+    "n_tokens": 123,
+    "n_repentance_tokens": 5,
+    "density": 0.04065040650406504,
+    "per_verse": {
+      "17": {
+        "n_tokens": 6,
+        "n_rep": 1
+      },
+      "18": {
+        "n_tokens": 5,
+        "n_rep": 0
+      },
+      "19": {
+        "n_tokens": 4,
+        "n_rep": 1
+      },
+      "20": {
+        "n_tokens": 6,
+        "n_rep": 0
+      },
+      "21": {
+        "n_tokens": 5,
+        "n_rep": 0
+      },
+      "22": {
+        "n_tokens": 15,
+        "n_rep": 0
+      },
+      "23": {
+        "n_tokens": 10,
+        "n_rep": 0
+      },
+      "24": {
+        "n_tokens": 21,
+        "n_rep": 1
+      },
+      "25": {
+        "n_tokens": 5,
+        "n_rep": 2
+      },
+      "26": {
+        "n_tokens": 20,
+        "n_rep": 0
+      },
+      "27": {
+        "n_tokens": 9,
+        "n_rep": 0
+      },
+      "28": {
+        "n_tokens": 9,
+        "n_rep": 0
+      },
+      "29": {
+        "n_tokens": 8,
+        "n_rep": 0
+      }
+    }
+  },
+  "segment_B": {
+    "label": "Q 21:78-80",
+    "surah": 21,
+    "v0": 78,
+    "v1": 80,
+    "n_tokens": 25,
+    "n_repentance_tokens": 0,
+    "density": 0.0,
+    "per_verse": {
+      "78": {
+        "n_tokens": 8,
+        "n_rep": 0
+      },
+      "79": {
+        "n_tokens": 11,
+        "n_rep": 0
+      },
+      "80": {
+        "n_tokens": 6,
+        "n_rep": 0
+      }
+    }
+  },
+  "delta_A_minus_B": 0.04065040650406504,
+  "null_mean": -0.004530681135323784,
+  "null_std": 0.05285054873276991,
+  "p_greater_perm": 0.2498,
+  "direction_locked": "A > B (Q 38 David-narrative more repentance-focused than Q 21 David-praise)",
+  "direction_match": true,
+  "verdict": "DIRECTIONAL"
+}
