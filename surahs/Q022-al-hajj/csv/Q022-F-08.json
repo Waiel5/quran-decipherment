@@ -1,0 +1,101 @@
+{
+  "test_id": "Q022-F-08",
+  "description": "Q22 sajda verses (18,77) at within-surah block-boundaries (top-30%)",
+  "n_verses": 78,
+  "n_inter_verse_deltas": 77,
+  "top_30_percent_cutoff_rank": 23,
+  "v18_test": {
+    "verse": 18,
+    "adjacent_edges": [
+      {
+        "edge": "v17->v18",
+        "rank": 62,
+        "delta": 0.7752667125122527
+      },
+      {
+        "edge": "v18->v19",
+        "rank": 71,
+        "delta": 0.746453723581445
+      }
+    ],
+    "best_rank": 62,
+    "is_top_30pct_boundary": false,
+    "threshold_top_n": 23
+  },
+  "v77_test": {
+    "verse": 77,
+    "adjacent_edges": [
+      {
+        "edge": "v76->v77",
+        "rank": 21,
+        "delta": 1.0
+      },
+      {
+        "edge": "v77->v78",
+        "rank": 22,
+        "delta": 1.0
+      }
+    ],
+    "best_rank": 21,
+    "is_top_30pct_boundary": true,
+    "threshold_top_n": 23
+  },
+  "n_pass_of_2": 1,
+  "top_10_boundary_deltas": [
+    {
+      "from_v": 20,
+      "to_v": 21,
+      "delta": 1.0
+    },
+    {
+      "from_v": 25,
+      "to_v": 26,
+      "delta": 1.0
+    },
+    {
+      "from_v": 26,
+      "to_v": 27,
+      "delta": 1.0
+    },
+    {
+      "from_v": 28,
+      "to_v": 29,
+      "delta": 1.0
+    },
+    {
+      "from_v": 29,
+      "to_v": 30,
+      "delta": 1.0
+    },
+    {
+      "from_v": 32,
+      "to_v": 33,
+      "delta": 1.0
+    },
+    {
+      "from_v": 33,
+      "to_v": 34,
+      "delta": 1.0
+    },
+    {
+      "from_v": 41,
+      "to_v": 42,
+      "delta": 1.0
+    },
+    {
+      "from_v": 42,
+      "to_v": 43,
+      "delta": 1.0
+    },
+    {
+      "from_v": 43,
+      "to_v": 44,
+      "delta": 1.0
+    }
+  ],
+  "verdict": "DIRECTIONAL_SPLIT",
+  "note": "Sajda v77 is at the closing-exhortation block-boundary. Sajda v18 is in the cosmic-eschatological block-INTERIOR (its adjacent verses share continuous cosmic vocabulary). This is a SPLIT result: the imperative-sajda (v77) is structural; the cosmic-roll-call-sajda (v18) is mid-block.",
+  "pre_reg_sha": "4fcf6b9938fa6a24b655a966319690da93a9b5fc8960c5751b26a91910f51d8d",
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025
+}
