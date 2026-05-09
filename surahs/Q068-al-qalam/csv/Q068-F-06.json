@@ -1,0 +1,104 @@
+{
+  "finding_id": "Q068-F-06",
+  "prereg_sha256": "497822f6f771ac63b0e1816d43163609137a509f2feeb852fe5f2330606b38ac",
+  "date_run": "2026-05-09",
+  "seed": 20260509,
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, QAC v0.4, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "corpus_total_root_tokens": 128219,
+  "corpus_total_qlm_tokens": 4,
+  "q68_root_tokens": 508,
+  "q68_qlm_tokens": 1,
+  "q68_density_per_1000": 1.968503937007874,
+  "q68_rank_by_density": 2,
+  "q96_density_per_1000": 9.00900900900901,
+  "q96_rank_by_density": 1,
+  "top_5_by_qlm_density": [
+    {
+      "surah": 96,
+      "k_qlm": 1,
+      "n_root_tokens": 111,
+      "density_per_1000": 9.00900900900901,
+      "rank": 1
+    },
+    {
+      "surah": 68,
+      "k_qlm": 1,
+      "n_root_tokens": 508,
+      "density_per_1000": 1.968503937007874,
+      "rank": 2
+    },
+    {
+      "surah": 31,
+      "k_qlm": 1,
+      "n_root_tokens": 852,
+      "density_per_1000": 1.1737089201877935,
+      "rank": 3
+    },
+    {
+      "surah": 3,
+      "k_qlm": 1,
+      "n_root_tokens": 5752,
+      "density_per_1000": 0.17385257301808066,
+      "rank": 4
+    },
+    {
+      "surah": 1,
+      "k_qlm": 0,
+      "n_root_tokens": 48,
+      "density_per_1000": 0.0,
+      "rank": 5
+    }
+  ],
+  "all_surahs_with_qlm_token": [
+    {
+      "surah": 96,
+      "k_qlm": 1,
+      "n_root_tokens": 111,
+      "density_per_1000": 9.00900900900901,
+      "rank": 1
+    },
+    {
+      "surah": 68,
+      "k_qlm": 1,
+      "n_root_tokens": 508,
+      "density_per_1000": 1.968503937007874,
+      "rank": 2
+    },
+    {
+      "surah": 31,
+      "k_qlm": 1,
+      "n_root_tokens": 852,
+      "density_per_1000": 1.1737089201877935,
+      "rank": 3
+    },
+    {
+      "surah": 3,
+      "k_qlm": 1,
+      "n_root_tokens": 5752,
+      "density_per_1000": 0.17385257301808066,
+      "rank": 4
+    }
+  ],
+  "qlm_token_locations_qac": [
+    [
+      "(3:44:12:1)",
+      ">aqola`ma"
+    ],
+    [
+      "(31:27:7:1)",
+      ">aqola`mN"
+    ],
+    [
+      "(68:1:2:3)",
+      "qalami"
+    ],
+    [
+      "(96:4:3:3)",
+      "qalami"
+    ]
+  ],
+  "q68_hypergeom_p_value_X_ge_k": 0.015754133688499622,
+  "alpha_raw": 0.05,
+  "verdict": "VINDICATED-TOP-3",
+  "interpretation": "Q 68 is rank 2 by qlm-density (density=1.9685 per 1000 root-tokens, k=1 in n=508). Rank-1 is Q 96 (density=9.0090, k=1 in n=111). Verdict: VINDICATED-TOP-3. Q 96 al-ʿAlaq (revelation #1) has higher *qalam* density than the title-eponymous Q 68 al-Qalam (revelation #2), because Q 96 packs *qalam* into a much shorter root-token base."
+}

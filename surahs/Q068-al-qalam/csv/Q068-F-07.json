@@ -1,0 +1,142 @@
+{
+  "finding_id": "Q068-F-07",
+  "prereg_sha256": "c3154905fbd2f05c91e6e8884a92e6537e44a9860a710f9a32042be79cfe87a3",
+  "h_new_111_sha256": "ea3f0ee41d413b0e2a9bfced340f7bfa12e93f40ad8c43a92a873c82856ee8c8",
+  "date_run": "2026-05-09",
+  "rules_tuple": "(no-tashkeel, QAC-stem-roots, QAC v0.4, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "fr_distance_q68_q96": 0.73241,
+  "rank_q96_in_q68_neighbors": 6,
+  "rank_q68_in_q96_neighbors": 46,
+  "q68_top_15_fr_nearest": [
+    {
+      "surah": 100,
+      "fr_dist": 0.715581
+    },
+    {
+      "surah": 52,
+      "fr_dist": 0.717533
+    },
+    {
+      "surah": 105,
+      "fr_dist": 0.725699
+    },
+    {
+      "surah": 93,
+      "fr_dist": 0.727604
+    },
+    {
+      "surah": 108,
+      "fr_dist": 0.731981
+    },
+    {
+      "surah": 96,
+      "fr_dist": 0.73241
+    },
+    {
+      "surah": 113,
+      "fr_dist": 0.732687
+    },
+    {
+      "surah": 112,
+      "fr_dist": 0.738066
+    },
+    {
+      "surah": 102,
+      "fr_dist": 0.73853
+    },
+    {
+      "surah": 110,
+      "fr_dist": 0.738812
+    },
+    {
+      "surah": 70,
+      "fr_dist": 0.739462
+    },
+    {
+      "surah": 114,
+      "fr_dist": 0.746826
+    },
+    {
+      "surah": 94,
+      "fr_dist": 0.748922
+    },
+    {
+      "surah": 106,
+      "fr_dist": 0.749173
+    },
+    {
+      "surah": 1,
+      "fr_dist": 0.753077
+    }
+  ],
+  "q96_top_15_fr_nearest": [
+    {
+      "surah": 102,
+      "fr_dist": 0.442371
+    },
+    {
+      "surah": 107,
+      "fr_dist": 0.443415
+    },
+    {
+      "surah": 108,
+      "fr_dist": 0.453619
+    },
+    {
+      "surah": 100,
+      "fr_dist": 0.46314
+    },
+    {
+      "surah": 110,
+      "fr_dist": 0.468763
+    },
+    {
+      "surah": 106,
+      "fr_dist": 0.476806
+    },
+    {
+      "surah": 105,
+      "fr_dist": 0.481853
+    },
+    {
+      "surah": 113,
+      "fr_dist": 0.481881
+    },
+    {
+      "surah": 112,
+      "fr_dist": 0.488313
+    },
+    {
+      "surah": 103,
+      "fr_dist": 0.489527
+    },
+    {
+      "surah": 94,
+      "fr_dist": 0.493976
+    },
+    {
+      "surah": 111,
+      "fr_dist": 0.496088
+    },
+    {
+      "surah": 1,
+      "fr_dist": 0.502707
+    },
+    {
+      "surah": 95,
+      "fr_dist": 0.504885
+    },
+    {
+      "surah": 99,
+      "fr_dist": 0.505891
+    }
+  ],
+  "uniform_rank_null_p_q68_to_q96": 0.05309734513274336,
+  "uniform_rank_null_p_q96_to_q68": 0.40707964601769914,
+  "alpha_bonferroni_2": 0.025,
+  "in_top_15_q68_side": true,
+  "in_top_15_q96_side": false,
+  "direction_reversed_flag": false,
+  "verdict": "VINDICATED-UNIDIRECTIONAL",
+  "interpretation": "Q 96 is rank 6/113 in Q 68's FR-nearest list (d=0.7324); Q 68 is rank 46/113 in Q 96's FR-nearest list (same d=0.7324). Pre-committed BIDIRECTIONAL prediction (both ≤ 15) is NOT FULLY MET. The asymmetric rank pattern reflects neighborhood-density differences: Q 96 (19 verses) sits in a dense short-mufaṣṣal terminal-tail cluster, so its 15-nearest is saturated by post-s=75 short surahs; Q 68 (52 verses, position 68) finds Q 96 well within its top-15."
+}
