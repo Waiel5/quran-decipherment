@@ -1,0 +1,53 @@
+{
+  "id": "Q096-F-04",
+  "title": "Sajda-tilāwa 14-cluster Fisher-Rao cohesion",
+  "prereg_sha": "6620cbef4068e0c62f4fc33066f677209777f4bcb8388c3933b65142ce259898",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "cluster": [
+    7,
+    13,
+    16,
+    17,
+    19,
+    22,
+    25,
+    27,
+    32,
+    38,
+    41,
+    53,
+    84,
+    96
+  ],
+  "obs_mean_intra_FR": 0.9413944395604396,
+  "cell_A_uniform_random": {
+    "null_mean": 0.9232159367120879,
+    "null_p5": 0.8252935604395605,
+    "p_perm": 0.5912,
+    "alpha_bon": 0.025,
+    "pass": false
+  },
+  "cell_B_exclude_q1": {
+    "null_mean": 0.9273908858582417,
+    "null_p5": 0.831503956043956,
+    "p_perm": 0.5599,
+    "alpha_bon": 0.025,
+    "pass": false
+  },
+  "mw5_positive_control_musabbihat": {
+    "cluster": [
+      57,
+      59,
+      61,
+      62,
+      64
+    ],
+    "obs_mean_intra_FR": 0.7703513,
+    "p_perm": 0.0828,
+    "pass": false
+  },
+  "bonferroni_k": 2,
+  "alpha_bon_per_cell": 0.025,
+  "verdict": "NULL-BROKEN (positive control failed)"
+}

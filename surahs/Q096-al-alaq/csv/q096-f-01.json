@@ -1,0 +1,55 @@
+{
+  "id": "Q096-F-01",
+  "title": "Q 96 vv 1-5 vs vv 6-19 register-discontinuity",
+  "prereg_sha": "a00c71629c45f6797fe9093453d7aa20ec553838b66a6e847229a33bbaabfc5f",
+  "seed": 20260509,
+  "n_verses_q96": 19,
+  "block_a_verses": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "block_b_verses": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "obs_js_divergence": 0.14053951849754368,
+  "cell_A_contiguous_block_null": {
+    "n_splits": 15,
+    "rank_observed": 2,
+    "p_perm": 0.13333333333333333,
+    "alpha_bon": 0.025,
+    "pass": false
+  },
+  "cell_B_random_split_null": {
+    "n_perm": 10000,
+    "n_ge": 177,
+    "p_perm": 0.017798220177982202,
+    "alpha_bon": 0.025,
+    "pass": true
+  },
+  "mw5_positive_control_q19": {
+    "obs_js": 0.11688156920381133,
+    "n_perm": 10000,
+    "n_ge": 22,
+    "p_perm": 0.0022997700229977,
+    "pass": true
+  },
+  "bonferroni_k": 2,
+  "alpha_bon_per_cell": 0.025,
+  "verdict": "ANOMALOUS (Cell B only — flag for review)"
+}

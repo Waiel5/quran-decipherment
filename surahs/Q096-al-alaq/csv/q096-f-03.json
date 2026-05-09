@@ -1,0 +1,97 @@
+{
+  "id": "Q096-F-03",
+  "title": "Q 96 ↔ Q 68 al-Qalam structural mirror",
+  "prereg_sha": "e97e3b6381bac5ed1990a07038b19a2a1081d2552de71d2361fb22a4b5b331c8",
+  "seed": 20260509,
+  "obs_FR_q68_q96": 0.73241,
+  "cell_A_meccan_pair_FR": {
+    "pool_size": 33,
+    "n_pairs": 528,
+    "obs_FR": 0.73241,
+    "rank": 146,
+    "p_perm": 0.2765151515151515,
+    "alpha_bon": 0.025,
+    "pass": false
+  },
+  "cell_B_consecutive_rev_order_FR": {
+    "n_consecutive_pairs": 113,
+    "q96_q68_rev_pair": [
+      1,
+      2
+    ],
+    "obs_FR": 0.73241,
+    "rank": 34,
+    "p_perm": 0.3008849557522124,
+    "alpha_bon": 0.025,
+    "pass": false
+  },
+  "mw5_positive_control_q57_q59": {
+    "obs_FR": 0.780308,
+    "rank_in_all_pairs": 1208,
+    "n_total_pairs": 6328,
+    "p_perm": 0.19089759797724398,
+    "pass": false
+  },
+  "bonferroni_k": 2,
+  "alpha_bon_per_cell": 0.025,
+  "verdict": "NULL-BROKEN (positive control failed)",
+  "top_5_meccan_pairs_by_low_FR": [
+    [
+      87,
+      92,
+      0.481013
+    ],
+    [
+      86,
+      90,
+      0.50581
+    ],
+    [
+      82,
+      86,
+      0.516681
+    ],
+    [
+      86,
+      87,
+      0.524898
+    ],
+    [
+      81,
+      82,
+      0.528566
+    ]
+  ],
+  "top_5_consecutive_rev_pairs_by_low_FR": [
+    [
+      14,
+      100,
+      108,
+      0.257587
+    ],
+    [
+      20,
+      113,
+      114,
+      0.271785
+    ],
+    [
+      12,
+      94,
+      103,
+      0.292647
+    ],
+    [
+      15,
+      108,
+      102,
+      0.293718
+    ],
+    [
+      21,
+      114,
+      112,
+      0.308609
+    ]
+  ]
+}

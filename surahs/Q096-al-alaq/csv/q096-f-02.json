@@ -1,0 +1,113 @@
+{
+  "id": "Q096-F-02",
+  "title": "Q 96 corpus-hapax-root and rare-root density",
+  "prereg_sha": "a2df036101f4086f293bb3a5dc1f4733678d7cdd90c8043575e3d64f37393eb5",
+  "seed": 20260509,
+  "comparator_pool_size": 10,
+  "comparator_pool": [
+    73,
+    82,
+    84,
+    85,
+    86,
+    87,
+    90,
+    91,
+    92,
+    96
+  ],
+  "q96_metrics": {
+    "frac_hapax": 0.04081632653061224,
+    "frac_rare": 0.10204081632653061,
+    "n_hapax_token": 2,
+    "n_rare_token": 5,
+    "n_total_token": 49
+  },
+  "cell_A_hapax": {
+    "rank": 4,
+    "out_of": 10,
+    "p_perm": 0.4,
+    "alpha_bon": 0.025,
+    "pass": false
+  },
+  "cell_B_rare": {
+    "rank": 3,
+    "out_of": 10,
+    "p_perm": 0.3,
+    "alpha_bon": 0.025,
+    "pass": false
+  },
+  "mw5_positive_control_q113": {
+    "rank": 3,
+    "out_of": 12,
+    "p_perm": 0.25,
+    "pass": false
+  },
+  "bonferroni_k": 2,
+  "alpha_bon_per_cell": 0.025,
+  "verdict": "NULL-BROKEN (positive control failed)",
+  "top_5_hapax_density": [
+    {
+      "surah": 91,
+      "frac_hapax": 0.10256410256410256,
+      "n_hapax": 4,
+      "n_total": 39
+    },
+    {
+      "surah": 90,
+      "frac_hapax": 0.07692307692307693,
+      "n_hapax": 4,
+      "n_total": 52
+    },
+    {
+      "surah": 86,
+      "frac_hapax": 0.04878048780487805,
+      "n_hapax": 2,
+      "n_total": 41
+    },
+    {
+      "surah": 96,
+      "frac_hapax": 0.04081632653061224,
+      "n_hapax": 2,
+      "n_total": 49
+    },
+    {
+      "surah": 73,
+      "frac_hapax": 0.028169014084507043,
+      "n_hapax": 4,
+      "n_total": 142
+    }
+  ],
+  "top_5_rare_density": [
+    {
+      "surah": 90,
+      "frac_rare": 0.17307692307692307,
+      "n_rare": 9,
+      "n_total": 52
+    },
+    {
+      "surah": 91,
+      "frac_rare": 0.15384615384615385,
+      "n_rare": 6,
+      "n_total": 39
+    },
+    {
+      "surah": 96,
+      "frac_rare": 0.10204081632653061,
+      "n_rare": 5,
+      "n_total": 49
+    },
+    {
+      "surah": 84,
+      "frac_rare": 0.10144927536231885,
+      "n_rare": 7,
+      "n_total": 69
+    },
+    {
+      "surah": 86,
+      "frac_rare": 0.0975609756097561,
+      "n_rare": 4,
+      "n_total": 41
+    }
+  ]
+}
