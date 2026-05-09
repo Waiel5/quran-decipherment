@@ -1,0 +1,55 @@
+{
+  "id": "H-NEW-1310",
+  "title": "Christ-narrative 3-surah cluster Fisher-Rao cohesion",
+  "prereg_sha": "d131ca234513a5bd7f825707c0778a5dedfe6f04cea6dab6e0cba7f013b17996",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "cluster": [
+    3,
+    5,
+    19
+  ],
+  "cluster_verse_counts": {
+    "3": 200,
+    "5": 120,
+    "19": 98
+  },
+  "cluster_total_verses": 418,
+  "obs_intra_cluster_FR_mean": 0.948396,
+  "pairwise": {
+    "3-5": 0.698308,
+    "3-19": 1.030951,
+    "5-19": 1.115929
+  },
+  "cell_A_uniform_null": {
+    "n_perm": 10000,
+    "null_mean": 0.9266615776666667,
+    "null_p5": 0.6322483333333333,
+    "p_perm": 0.4809,
+    "pass": false
+  },
+  "cell_B_length_matched_null": {
+    "lo_total_verses": 334.40000000000003,
+    "hi_total_verses": 501.59999999999997,
+    "n_perm": 10000,
+    "null_mean": 1.0257748706,
+    "null_p5": 0.886817,
+    "p_perm": 0.1872,
+    "pass": false
+  },
+  "MW5_positive_control": {
+    "source": "H-NEW-1190 wa-mā adrāka mā cluster (CONFIRMED FR-cohesive at p=0.00068)",
+    "subsample": [
+      69,
+      97,
+      101
+    ],
+    "pc_obs_mean": 0.6078476666666667,
+    "pc_null_mean": 0.9246059009666666,
+    "pc_null_p5": 0.6346656666666667,
+    "p_pc": 0.0406,
+    "pc_pass": true
+  },
+  "alpha_bon_per_cell": 0.025,
+  "verdict": "NULL"
+}
