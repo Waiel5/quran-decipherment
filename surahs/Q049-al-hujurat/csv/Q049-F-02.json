@@ -1,0 +1,36 @@
+{
+  "finding_id": "Q049-F-02",
+  "pre_reg_sha256": "8d8759bad9b42b9ccae37d40532e91767f41e609c6fc2dfdd902cf83214a9c59",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "target_set": [
+    61,
+    62,
+    63,
+    64,
+    66
+  ],
+  "rules_tuple": "(QAC-v0.4-roots-via-h-new-111, no-tashkeel, FR-distance-from-h-new-111)",
+  "q49_mean_to_target_set": 0.7703398,
+  "q49_mean_to_all_113": 0.9510354159292036,
+  "ratio_observed_to_corpus_mean": 0.8100011704057771,
+  "null_a_uniform": {
+    "mean": 0.95098452816,
+    "stdev": 0.036957039023140244,
+    "p_one_sided_lower": 0.0
+  },
+  "null_b_length_matched": {
+    "pool_size": 20,
+    "pool_verse_count_range": [
+      11,
+      22
+    ],
+    "mean": 0.87085129202,
+    "stdev": 0.026773015800519183,
+    "p_one_sided_lower": 0.0
+  },
+  "pass_a_uniform": true,
+  "pass_b_length_matched": true,
+  "verdict": "CONFIRMED-PAIR (PASS-DIRECTED ceiling per garden-of-forking-paths)",
+  "verdict_ceiling_note": "PASS-DIRECTED \u2014 TARGET-SET pre-extracted from Q 49 top-5 FR neighbors prior to pre-reg lock; verdict ceiling is PASS-DIRECTED per garden-of-forking-paths until independent replication (e.g., on H-NEW-111b char-4-gram matrix)."
+}

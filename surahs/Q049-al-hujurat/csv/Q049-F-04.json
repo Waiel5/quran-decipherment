@@ -1,0 +1,104 @@
+{
+  "finding_id": "Q049-F-04",
+  "pre_reg_sha256": "314b36ee8c13491427f9ef57f860341639d8235a5d000e639cba0dded59504bd",
+  "seed": 20260509,
+  "rules_tuple": "(QAC-v0.4-morphology, root-from-feats-ROOT-tag, no-tashkeel, mushaf-order)",
+  "bonferroni_k": 4,
+  "alpha_bon": 0.0125,
+  "q49_13_unique_roots": [
+    "$Eb",
+    "*kr",
+    "Alh",
+    "Anv",
+    "Elm",
+    "End",
+    "Erf",
+    "jEl",
+    "krm",
+    "nws",
+    "qbl",
+    "wqy",
+    "xbr",
+    "xlq"
+  ],
+  "q49_13_n_unique_roots": 14,
+  "q49_13_root_corpus_table": [
+    {
+      "root": "$Eb",
+      "corpus_total": 2
+    },
+    {
+      "root": "Anv",
+      "corpus_total": 30
+    },
+    {
+      "root": "krm",
+      "corpus_total": 47
+    },
+    {
+      "root": "xbr",
+      "corpus_total": 52
+    },
+    {
+      "root": "Erf",
+      "corpus_total": 70
+    },
+    {
+      "root": "End",
+      "corpus_total": 201
+    },
+    {
+      "root": "nws",
+      "corpus_total": 241
+    },
+    {
+      "root": "wqy",
+      "corpus_total": 258
+    },
+    {
+      "root": "xlq",
+      "corpus_total": 261
+    },
+    {
+      "root": "*kr",
+      "corpus_total": 292
+    },
+    {
+      "root": "qbl",
+      "corpus_total": 294
+    },
+    {
+      "root": "jEl",
+      "corpus_total": 346
+    },
+    {
+      "root": "Elm",
+      "corpus_total": 854
+    },
+    {
+      "root": "Alh",
+      "corpus_total": 2851
+    }
+  ],
+  "sub1_shab_corpus_total": 2,
+  "sub1_pass_doubleton_exact": true,
+  "sub2_rare_5_count": 1,
+  "sub2_rare_5_roots": [
+    "$Eb"
+  ],
+  "sub2_pass": true,
+  "sub3_rare_50_count": 3,
+  "sub3_rare_50_roots": [
+    "$Eb",
+    "Anv",
+    "krm"
+  ],
+  "sub3_pass": true,
+  "sub4_q49_13_rarity_score": 0.04401401478430862,
+  "sub4_q49_13_verse_rank_descending": 1358,
+  "sub4_n_verses_with_roots": 6214,
+  "sub4_top_decile_threshold": 0.09522288357969677,
+  "sub4_pass_in_top_decile": false,
+  "n_subtests_pass": 3,
+  "verdict": "CONFIRMED-VERSE-ANOMALY"
+}
