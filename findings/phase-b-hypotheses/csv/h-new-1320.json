@@ -1,0 +1,158 @@
+{
+  "id": "H-NEW-1320",
+  "title": "Refrain-saturation corpus-rank — Q 55 strict rank-1 + Q 26/Q 77 top-5",
+  "prereg_sha": "abc1630142b86b70f7bdec1edc51b2d17c7987d5e776e6bb6d8da069590abec4",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "obs_q55_max_repeat_count": 31,
+  "rank_q55_of_114": 1,
+  "rank_q26": 3,
+  "rank_q77": 2,
+  "top_15_ranking": [
+    {
+      "rank": 1,
+      "surah": 55,
+      "max_repeat_count": 31,
+      "top_repeat_string": "فبأي آلاء ربكما تكذبان",
+      "n_verses": 78,
+      "saturation": 0.3974358974358974
+    },
+    {
+      "rank": 2,
+      "surah": 77,
+      "max_repeat_count": 10,
+      "top_repeat_string": "ويل يومئذ للمكذبين",
+      "n_verses": 50,
+      "saturation": 0.2
+    },
+    {
+      "rank": 3,
+      "surah": 26,
+      "max_repeat_count": 8,
+      "top_repeat_string": "وإن ربك لهو العزيز الرحيم",
+      "n_verses": 227,
+      "saturation": 0.03524229074889868
+    },
+    {
+      "rank": 4,
+      "surah": 37,
+      "max_repeat_count": 4,
+      "top_repeat_string": "إلا عباد الله المخلصين",
+      "n_verses": 182,
+      "saturation": 0.02197802197802198
+    },
+    {
+      "rank": 5,
+      "surah": 54,
+      "max_repeat_count": 4,
+      "top_repeat_string": "ولقد يسرنا القرآن للذكر فهل من مدكر",
+      "n_verses": 55,
+      "saturation": 0.07272727272727272
+    },
+    {
+      "rank": 6,
+      "surah": 2,
+      "max_repeat_count": 2,
+      "top_repeat_string": "يا بني إسرائيل اذكروا نعمتي التي أنعمت عليكم وأني فضلتكم على العالمين",
+      "n_verses": 286,
+      "saturation": 0.006993006993006993
+    },
+    {
+      "rank": 7,
+      "surah": 5,
+      "max_repeat_count": 2,
+      "top_repeat_string": "والذين كفروا وكذبوا بآياتنا أولئك أصحاب الجحيم",
+      "n_verses": 120,
+      "saturation": 0.016666666666666666
+    },
+    {
+      "rank": 8,
+      "surah": 7,
+      "max_repeat_count": 2,
+      "top_repeat_string": "فأخذتهم الرجفة فأصبحوا في دارهم جاثمين",
+      "n_verses": 206,
+      "saturation": 0.009708737864077669
+    },
+    {
+      "rank": 9,
+      "surah": 18,
+      "max_repeat_count": 2,
+      "top_repeat_string": "ثم أتبع سببا",
+      "n_verses": 110,
+      "saturation": 0.01818181818181818
+    },
+    {
+      "rank": 10,
+      "surah": 23,
+      "max_repeat_count": 2,
+      "top_repeat_string": "قال رب انصرني بما كذبون",
+      "n_verses": 118,
+      "saturation": 0.01694915254237288
+    },
+    {
+      "rank": 11,
+      "surah": 28,
+      "max_repeat_count": 2,
+      "top_repeat_string": "ويوم يناديهم فيقول أين شركائي الذين كنتم تزعمون",
+      "n_verses": 88,
+      "saturation": 0.022727272727272728
+    },
+    {
+      "rank": 12,
+      "surah": 56,
+      "max_repeat_count": 2,
+      "top_repeat_string": "ثلة من الأولين",
+      "n_verses": 96,
+      "saturation": 0.020833333333333332
+    },
+    {
+      "rank": 13,
+      "surah": 83,
+      "max_repeat_count": 2,
+      "top_repeat_string": "كتاب مرقوم",
+      "n_verses": 36,
+      "saturation": 0.05555555555555555
+    },
+    {
+      "rank": 14,
+      "surah": 84,
+      "max_repeat_count": 2,
+      "top_repeat_string": "وأذنت لربها وحقت",
+      "n_verses": 25,
+      "saturation": 0.08
+    },
+    {
+      "rank": 15,
+      "surah": 109,
+      "max_repeat_count": 2,
+      "top_repeat_string": "ولا أنتم عابدون ما أعبد",
+      "n_verses": 6,
+      "saturation": 0.3333333333333333
+    }
+  ],
+  "cell_A_strict_rank": {
+    "obs_q55": 31,
+    "rank_q55": 1,
+    "rank_pass_strict_1": true
+  },
+  "cell_A_permutation_null": {
+    "p_perm_any_surah_ge_obs": 0.0,
+    "p_perm_q55_ge_obs": 0.0,
+    "perm_max_overall_mean": 2.9405,
+    "perm_q55_mean": 1.1034,
+    "perm_pass": true
+  },
+  "cell_B_q26_q77_top5": {
+    "q26_rank": 3,
+    "q77_rank": 2,
+    "q26_top5": true,
+    "q77_top5": true,
+    "pass_full": true,
+    "partial": true
+  },
+  "MW5_instrument_control": {
+    "null_mean_max_overall": 2.9405,
+    "pc_pass": true
+  },
+  "verdict": "PASS-DIRECTED FULL"
+}
