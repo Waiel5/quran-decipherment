@@ -1,0 +1,83 @@
+{
+  "id": "H-NEW-1330",
+  "title": "Sajda-surahs 14-surah cluster Fisher-Rao cohesion",
+  "prereg_sha": "f56fd6446618b37485a6765f44d340e57888697eaa512ad876a95b48cbdc774f",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "cluster": [
+    7,
+    13,
+    16,
+    17,
+    19,
+    22,
+    25,
+    27,
+    32,
+    38,
+    41,
+    53,
+    84,
+    96
+  ],
+  "cluster_verse_counts": {
+    "7": 206,
+    "13": 43,
+    "16": 128,
+    "17": 111,
+    "19": 98,
+    "22": 78,
+    "25": 77,
+    "27": 93,
+    "32": 30,
+    "38": 88,
+    "41": 54,
+    "53": 62,
+    "84": 25,
+    "96": 19
+  },
+  "cluster_total_verses": 1112,
+  "obs_intra_cluster_FR_mean": 0.9413944395604396,
+  "cell_A_uniform_null": {
+    "n_perm": 10000,
+    "null_mean": 0.9264255688967032,
+    "null_p5": 0.8327263626373627,
+    "p_perm": 0.5705,
+    "pass": false
+  },
+  "cell_B_length_matched_null": {
+    "lo_total_verses": 945.1999999999999,
+    "hi_total_verses": 1278.8,
+    "n_perm": 10000,
+    "null_mean": 0.9748902719736263,
+    "null_p5": 0.9291882637362637,
+    "p_perm": 0.1095,
+    "pass": false
+  },
+  "MW5_positive_control": {
+    "source": "H-NEW-1200 14-surah eschatology cluster (CONFIRMED p=0.00030)",
+    "cluster": [
+      56,
+      69,
+      74,
+      77,
+      81,
+      82,
+      83,
+      84,
+      86,
+      90,
+      97,
+      99,
+      101,
+      104
+    ],
+    "pc_obs_mean": 0.6461517582417582,
+    "pc_null_mean": 0.9260821305406594,
+    "pc_null_p5": 0.8307658681318681,
+    "p_pc": 0.0002,
+    "pc_pass": true
+  },
+  "alpha_bon_per_cell": 0.025,
+  "verdict": "NULL"
+}

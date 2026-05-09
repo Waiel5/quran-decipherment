@@ -90,6 +90,7 @@ Three distinct refrain functions, three distinct audiences, three distinct rheto
 
 ## Connections to existing findings
 
+- **H-NEW-1230** (existing landed finding): identified 5 refrain-bearing surahs {Q 55, Q 77, Q 26, Q 54, Q 37} using **combined-refrain-count** (Q 26 = 27× across 4 distinct refrains; Q 54 = 7×; Q 37 = 10×). H-NEW-1320 is the **complementary single-axis** test (max identical-verse-repeat-count) with permutation null. The two findings agree on the top-2 strictly (Q 55 #1 at 31, Q 77 #2 at 10) and partially diverge on Q 26's strength: H-NEW-1230's combined-count = 27 vs my single-refrain count = 8 (the strongest of Q 26's 4 refrains). The two findings together establish that **refrain-architecture is a robust corpus-level signature** detectable under multiple operationalizations. The 3-tier structure {Q 55, Q 77, Q 26} survives both the strict-single-refrain test (H-NEW-1320) and the combined-multiple-refrain test (H-NEW-1230), with Q 54 and Q 37 entering the top-5 at the tier-2 boundary.
 - **Cross-finding-027** (H-NEW-1250) Q 55 dual-audience signature: this finding extends to a 3-surah architecture.
 - **H-NEW-1190** *wa-mā adrāka mā* 10-surah cluster: Q 77 is a member of both H-NEW-1190 AND the new refrain top-3. Refrain architecture bridges the *wa-mā adrāka mā* meta-question structure.
 - **H-NEW-1200** short-Meccan-tail eschatology meta-cluster (14 surahs): Q 77 is also a member; Q 26 is NOT (it's mid-mushaf Meccan with prophet-cycle structure).
