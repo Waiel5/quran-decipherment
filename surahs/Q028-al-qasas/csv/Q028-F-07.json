@@ -1,0 +1,65 @@
+{
+  "finding_id": "Q028-F-07",
+  "pre_reg_sha256": "dacc213250309dd1b8fe45d08b5d57ea9012790eb2109bcad63e980eecf93d53",
+  "seed": 20260509,
+  "rules_tuple": "H-NEW-111 standard (QAC-STEM-roots, K_TOP=500, Dirichlet α=0.5, L1-normalised, Fisher-Rao angular)",
+  "k_top": 500,
+  "dirichlet_alpha": 0.5,
+  "fr_distance_26_28": 0.9537088725572305,
+  "fr_distance_26_27": 0.958538965812246,
+  "fr_distance_27_28": 0.8047544340636832,
+  "min_ts_only_pair": 0.8047544340636832,
+  "q28_nearest_5_neighbors": [
+    {
+      "sid": 7,
+      "fr": 0.7619102122877432
+    },
+    {
+      "sid": 27,
+      "fr": 0.8047544340636832
+    },
+    {
+      "sid": 10,
+      "fr": 0.842892953296131
+    },
+    {
+      "sid": 6,
+      "fr": 0.8443944406253128
+    },
+    {
+      "sid": 11,
+      "fr": 0.8527285530293569
+    }
+  ],
+  "q28_farthest_5_neighbors": [
+    {
+      "sid": 82,
+      "fr": 1.1691613775151026
+    },
+    {
+      "sid": 88,
+      "fr": 1.1866839208935962
+    },
+    {
+      "sid": 80,
+      "fr": 1.1878280716219696
+    },
+    {
+      "sid": 56,
+      "fr": 1.2051104505860655
+    },
+    {
+      "sid": 55,
+      "fr": 1.352815440787699
+    }
+  ],
+  "q26_rank_in_q28_neighbors": 29,
+  "q27_rank_in_q28_neighbors": 2,
+  "corpus_pair_percentile_26_28": 49.161490683229815,
+  "n_corpus_pairs": 6441,
+  "h1_tsm_pair_closest_in_cluster": false,
+  "h2_q26_in_q28_top5_neighbors": false,
+  "h3_pair_below_median_percentile": true,
+  "verdict": "DIRECTIONAL",
+  "interpretation": "DIRECTIONAL pending replication on other exact-letter-match clusters"
+}

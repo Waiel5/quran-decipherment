@@ -197,9 +197,83 @@ Q 28 is the **Moses-Madyan-Qārūn surah**. Its empirical profile shows:
 | `surahs/Q028-al-qasas/03-tafsir-survey.md` | 6 mufassirūn survey |
 | `surahs/Q028-al-qasas/04-hadith-corpus.md` | hadith citations + locator corrections |
 | `surahs/Q028-al-qasas/05-classical-claims-audit.md` | 6 classical claims audited |
-| `surahs/Q028-al-qasas/06-novel-findings.md` | 5 pre-registered novel findings |
+| `surahs/Q028-al-qasas/06-novel-findings.md` | 5 + 3 pre-registered novel findings |
 | `surahs/Q028-al-qasas/07-cross-references.md` | network coordinates |
 | `surahs/Q028-al-qasas/JOURNAL.md` | this file |
 | `surahs/Q028-al-qasas/Q028-F-01-...-prereg.md` | pre-reg files (SHA-locked) |
-| `surahs/Q028-al-qasas/scripts/Q028_F_all.py` | runner script |
-| `surahs/Q028-al-qasas/csv/Q028-F-{01..05}.json` | JSON outputs |
+| `surahs/Q028-al-qasas/scripts/Q028_F_all.py` | Wave-A runner script |
+| `surahs/Q028-al-qasas/csv/Q028-F-{01..05}.json` | Wave-A JSON outputs |
+| `surahs/Q028-al-qasas/Q028-F-{06,07,08}-*-prereg.md` | Wave-H pre-reg files |
+| `scripts/Q028_F_{06,07,08}_*.py` | Wave-H runner scripts |
+| `surahs/Q028-al-qasas/csv/Q028-F-{06,07,08}.json` | Wave-H JSON outputs |
+
+---
+
+## 2026-05-09 PM — Wave-H addendum (F-06, F-07, F-08)
+
+Wave-H dispatch added three further pre-registered tests as a follow-up specialisation set:
+
+| Wave-H ID | Title | SHA-256 | Verdict |
+|:--|:--|:--|:--|
+| Q028-F-06 | Mūsā density and absolute-count corpus rank | `b2c6d43332bbd81bd267d3a38d027f617d395d0e270cb6469e8b1c251cef2d03` | DIRECTIONAL |
+| Q028-F-07 | TSM-pair {Q 26, Q 28} FR closest-intra-cluster test | `dacc213250309dd1b8fe45d08b5d57ea9012790eb2109bcad63e980eecf93d53` | DIRECTIONAL |
+| Q028-F-08 | Qārūn-pericope corpus-uniqueness rank-1 test | `076200dd8551ea742ddea59e239adad3735e53088555e3cf47afc00d811779d2` | ✅ CONFIRMED |
+
+Seed 20260509. Bonferroni k = 3 in the Wave-H family, α_Bonferroni = 0.05/3 = 0.01667.
+
+### Wave-H decision points
+
+**Decision W-H-1: dispatch-prompt T1 direction was "corpus rank-1 in Mūsā attestations"**.
+Empirical reality (verified at runtime): Q 7 al-Aʿrāf has 21 Mūsā QAC-attestations, Q 28 has 18 → Q 28 is rank 2, not rank 1. The pre-reg was direction-locked to rank-1 BEFORE running. Published as DIRECTIONAL with full prominence: H2 (density top-3) passes; H1 (absolute-rank-1) fails honestly. The classical "Sūrat Mūsā" attribution applies to **narrative-arc length** (Q 28 has the single longest Mosesic pericope, vv. 3-43, ~40 verses) and **density** (Q 28 in top-3 cluster), but NOT to **absolute count** (Q 7 leads).
+
+**Decision W-H-2: dispatch-prompt T2 direction was "TSM-pair {Q 26, Q 28} is the closest TSM pair on FR"**.
+Existing 00-overview.md already cited FR(Q 28, Q 26) = 0.954 and FR(Q 28, Q 27) = 0.805. The pre-reg was direction-locked to "TSM-pair closest" BEFORE running, with explicit honest-expectation note that this would likely FAIL. F-07 H1 fails as expected — published as DIRECTIONAL, consolidating Wave-FALSIFIED §3.7 on a 6th independent axis (Fisher-Rao on tightest TSM exact-letter-match specialisation).
+
+**Decision W-H-3: F-08 pericope-extent definition**.
+The pre-reg pre-commits TWO operational definitions for "Qārūn-pericope-extent":
+  (a) QAC-attestation extent = max_verse_with_Qārūn − min_verse_with_Qārūn + 1; in Q 28 = 4 (vv. 76 → 79).
+  (b) Narrative-block extent = the contiguous narrative arc; in Q 28 = 7 (vv. 76-82).
+Both pass the corpus-monopoly test (no other surah has Qārūn-extent ≥ 2 by either definition). F-08 reports both; the deterministic threshold uses (a) for clarity.
+
+**Decision W-H-4: Bonferroni for Wave-H family**.
+k = 3 (this dispatch's three pre-registered tests). α_Bonferroni = 0.01667. All three sub-claim families pass / fail deterministically (no permutation p needed), so Bonferroni applies trivially to the 9-sub-claim grand family.
+
+### Wave-H execution log
+
+```
+$ python3 scripts/Q028_F_06_musa_density_rank.py
+Q028-F-06 verdict: DIRECTIONAL
+  corpus Mūsā count (QAC): 136 (H-NEW-1710 ref: 136)
+  Q 28 absolute count: 18 (rank 2/114; H1 pass=False)
+  Q 28 density per 1000 stem tokens: 12.53 (rank 3/114; H2 pass=True)
+  Q 28 orthographic substring count: 18 (rank 2/114)
+  H3 count >= 20: pass=False
+  top-5 by QAC count: [(7, 21), (28, 18), (20, 17), (2, 13), (10, 8)]
+  top-5 by density:   [(87, 13.89), (20, 12.64), (28, 12.53), (7, 6.3), (26, 6.05)]
+
+$ python3 scripts/Q028_F_07_tsm_pair_fr.py
+Q028-F-07 verdict: DIRECTIONAL
+  FR(Q 26, Q 28) = 0.9537
+  FR(Q 26, Q 27) = 0.9585
+  FR(Q 27, Q 28) = 0.8048
+  min TS-only pair = 0.8048
+  H1 TSM-pair closest in cluster: pass=False
+  Q 26 rank in Q 28's neighbors: 29/113 (H2 ≤5 pass=False)
+  Q 27 rank in Q 28's neighbors: 2/113
+  FR(Q26,Q28) corpus percentile: 49.2% (H3 <50% pass=True)
+
+$ python3 scripts/Q028_F_08_qarun_corpus_rank.py
+Q028-F-08 verdict: CONFIRMED
+  corpus Qārūn count (QAC PN-lemma): 4
+  Q 28 Qārūn count: 2 (rank 1/4-attesting-surahs; H1 pass=True)
+  Q 28 Qārūn QAC-extent: 4 verses; max other surah extent: 1 (H2 pass=True)
+  Q 28:76-82 rare-token types (≤5 corpus-attest): 39 (H3 ≥5 pass=True)
+```
+
+All 3 Wave-H SHAs verified at runtime ✓.
+
+### Wave-H headline
+
+Q 28's Wave-H signature: **DIRECTIONAL on Mūsā-rank (Q 7 leads absolute count; Q 28 is rank-2 absolute, top-3 density), DIRECTIONAL on TSM-FR-cluster (6th independent NULL of muqaṭṭaʿāt-FR-cohesion claim), CONFIRMED on Qārūn-corpus-monopoly (rank-1 + corpus-extent-monopoly + 39 rare-token types).**
+
+The Qārūn-monopoly finding is the most robust new datapoint: corpus rank-1 + extent-monopoly + lexical-singleton on three independent metrics. This is a project-significant triple-corroboration for the classical canonical "Qārūn surah" attribution.

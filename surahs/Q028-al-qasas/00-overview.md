@@ -133,6 +133,8 @@ Final-letter distribution across 88 verses (computed via `[[h-new-750]]`):
 - [x] 03-tafsir-survey.md
 - [x] 04-hadith-corpus.md
 - [x] 05-classical-claims-audit.md
-- [x] 06-novel-findings.md (Q028-F-01 DIRECTIONAL, F-02 NULL [pre-commit-honest reverse], F-03 DIRECTIONAL, F-04 NULL, F-05 PASS — challenging Wave-FALSIFIED §3.7 on narrative-density axis)
+- [x] 06-novel-findings.md — **8 pre-registered novel tests**:
+  - Wave-A (2026-05-07): Q028-F-01 DIRECTIONAL, F-02 NULL (pre-commit-honest reverse), F-03 DIRECTIONAL, F-04 NULL, F-05 PASS (challenges Wave-FALSIFIED §3.7 on narrative-density axis)
+  - Wave-H (2026-05-09 PM): Q028-F-06 DIRECTIONAL (Mūsā rank 2 absolute, top-3 density — Q 7 leads absolute count), Q028-F-07 DIRECTIONAL → 6th independent NULL of TSM-FR-cohesion claim, Q028-F-08 ✅ **CONFIRMED** (Qārūn corpus rank-1 + extent-monopoly + 39 rare-token types — triple-corroborated singleton)
 - [x] 07-cross-references.md
 - [x] JOURNAL.md

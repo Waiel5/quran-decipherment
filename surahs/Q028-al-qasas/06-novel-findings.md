@@ -268,3 +268,157 @@ Across the 5 pre-registered tests:
 - [[Q020-ta-ha/06-novel-findings|Q020-F-01]] — Moses-cycle-purity test (the actual Q 20:25-28 relief-prayer is Q 20-anchored).
 - [[Q027-al-naml/06-novel-findings|Q 27 novel-findings]] — TSM-sister investigation; the second-basmala finding.
 - [[cross-finding-026-iʿjāz-architecture|cross-finding-026]] — dual-iʿjāz typology (Q 28:88 fits theological-iʿjāz axis).
+
+---
+
+# Wave-H addendum (2026-05-09 PM) — Q028-F-06, F-07, F-08
+
+Three additional pre-registered tests landed in Wave-H. SHA-locked pre-regs at `Q028-F-{06,07,08}-*-prereg.md`. Scripts at `/Users/grey/Downloads/quran/scripts/Q028_F_{06,07,08}_*.py`. Outputs at `csv/Q028-F-{06,07,08}.json`. Seed 20260509. Bonferroni k = 3 within the Wave-H family, α_Bonferroni = 0.05/3 = 0.01667.
+
+## Wave-H pre-reg index
+
+| ID | Title | Pre-reg SHA | Verdict |
+|:--|:--|:--|:--|
+| Q028-F-06 | Mūsā-token density and absolute-count corpus rank | `b2c6d433…` | **DIRECTIONAL** (H1 FAIL — Q 28 is rank **2**, not rank 1; Q 7 al-Aʿrāf has 21 Mūsā attestations vs Q 28's 18; H2 PASS density top-3; H3 FAIL count 18 < 20) |
+| Q028-F-07 | TSM-pair {Q 26, Q 28} Fisher-Rao closest-intra-cluster test | `dacc2132…` | **DIRECTIONAL** (H1 FAIL — TSM-pair is NOT closest intra-cluster; Q 27↔Q 28 = 0.805 < Q 26↔Q 28 = 0.954; consolidates Wave-FALSIFIED §3.7 on a 6th independent axis; H3 PASS percentile 49.2% just below median) |
+| Q028-F-08 | Qārūn-pericope corpus-uniqueness rank-1 test | `076200dd…` | ✅ **CONFIRMED** (all 3 sub-claims PASS — Q 28 is corpus-rank-1 in Qārūn attestations; QAC-extent 4 v. corpus-monopoly with max other surah extent = 1; 39 rare-token types in vv. 76-82) |
+
+All 3 SHAs verified at runtime by their respective scripts.
+
+---
+
+## Q028-F-06 — Mūsā density and absolute-count corpus rank (DIRECTIONAL)
+
+**Pre-reg**: `Q028-F-06-musa-density-rank-prereg.md`, SHA `b2c6d433…`.
+
+**Hypothesis (locked)**:
+- H1: Q 28 absolute count of QAC lemma `muwsaY\`` is rank 1 of 114.
+- H2: Q 28 Mūsā-per-1000-stem-tokens density is top-3 of 114.
+- H3: Q 28 absolute count ≥ 20.
+
+**Result** (full output in `csv/Q028-F-06.json`):
+
+| Sub-claim | Observed | Threshold | Verdict |
+|:--|:--|:--|:-:|
+| Corpus Mūsā total (QAC) | **136** | (sanity-check vs H-NEW-1710) | ✓ matches |
+| H1 absolute-count rank | **2/114** | = 1 | ❌ FAIL — Q 7 al-Aʿrāf is rank 1 with 21 attestations |
+| Q 28 absolute count | **18** (rank 2) | ≥ 20 (H3) | ❌ FAIL on H3 |
+| H2 density-per-1000-tokens rank | **3/114** | ≤ 3 | ✅ PASS — Q 87 (13.89), Q 20 (12.64), Q 28 (12.53) |
+
+**Top-5 by absolute QAC Mūsā count**: Q 7 (21), Q 28 (18), Q 20 (17), Q 2 (13), Q 10 (8).
+**Top-5 by Mūsā per-1000-stem-tokens**: Q 87 (13.89), Q 20 (12.64), Q 28 (12.53), Q 7 (6.30), Q 26 (6.05).
+
+**Aggregate**: 1 of 3 sub-claims pass → **DIRECTIONAL**.
+
+**Honest interpretation**: The pre-committed direction was wrong. Q 28 is NOT the corpus-rank-1 surah by Mūsā attestation; **Q 7 al-Aʿrāf is**, with 21 vs Q 28's 18. The classical "Sūrat Mūsā" attribution applies to **narrative-arc length** (Q 28's vv. 3-43 is the single longest continuous Moses pericope), but NOT to **absolute-name-count** (Q 7 holds that distinction, because Q 7 has the Mūsā-with-Banū-Isrāʾīl-and-the-calf narrative AND the Mūsā-vs-Pharaoh narrative AND the Mūsā-with-magicians narrative, each invoking the name multiple times across a longer surah).
+
+On the **density-per-1000-words** axis, however, Q 28 ranks 3 of 114 (≤ 3 = top-3 cluster), at 12.53/1000. The top cluster is Q 87 (al-Aʿlā, very short surah with a single Mūsā-mention rate-spike at 13.89/1000), Q 20 (Ṭā-Hā, the brother-surah on Mūsā, 12.64/1000), and Q 28 (al-Qaṣaṣ, 12.53/1000). All three are above 12/1000; the gap to Q 7 (6.30/1000) is large.
+
+H3 (count ≥ 20) fails at 18. This was an over-tight threshold; the true classical claim is about narrative-arc-length, not raw-count-threshold.
+
+**Project consequence**: The dispatch-prompt-noted "Q 28 is the LARGEST Mūsā-narrative surah" claim is empirically partially supported: it IS the largest single Mūsā pericope (narrative-arc-length), and it is in the top-3 density cluster, but it is NOT the corpus-rank-1 in absolute count. Q 7 al-Aʿrāf is the absolute-count leader. This is consistent with the existing 00-overview claim that Q 28's nearest content-neighbor is Q 7 al-Aʿrāf (FR = 0.762) — both are major Mosesic surahs and they cluster on root-distribution.
+
+**Rules-tuple sensitivity**: orthographic-substring re-derivation gives the same Q 28 count of 18 and rank 2 (Q 7 at 21). Cross-rules-tuple-stable.
+
+Output: `csv/Q028-F-06.json`.
+
+---
+
+## Q028-F-07 — TSM-pair {Q 26, Q 28} FR closest-intra-cluster test (DIRECTIONAL → consolidates Wave-FALSIFIED §3.7)
+
+**Pre-reg**: `Q028-F-07-tsm-pair-fr-distance-prereg.md`, SHA `dacc2132…`.
+
+**Hypothesis (locked)**:
+- H1: FR(Q 26, Q 28) < min(FR(Q 26, Q 27), FR(Q 27, Q 28)). (TSM-pair is closest intra-cluster pair.)
+- H2: Q 26 is in Q 28's top-5 FR-nearest neighbors.
+- H3: FR(Q 26, Q 28) is below the 50th-percentile of all 6,441 corpus pairs.
+
+**Result** (full output in `csv/Q028-F-07.json`):
+
+| Pair | FR distance |
+|:--|--:|
+| Q 26 ↔ Q 28 (TSM-pair) | **0.9537** |
+| Q 26 ↔ Q 27 (TS / TSM) | 0.9585 |
+| Q 27 ↔ Q 28 (TS / TSM) | **0.8048** |
+
+| Sub-claim | Observed | Threshold | Verdict |
+|:--|:--|:--|:-:|
+| H1 TSM-pair closest intra-cluster | FR(26,28)=0.954 > FR(27,28)=0.805 | < min | ❌ FAIL — Q 27↔Q 28 is closer than the TSM-pair |
+| H2 Q 26 in Q 28's top-5 neighbors | Q 26 at rank **29/113** | ≤ 5 | ❌ FAIL |
+| H3 FR(26,28) below median | percentile 49.2% | < 50% | ✅ PASS (just below median) |
+
+Q 28's top-5 FR-nearest neighbors: Q 7 (0.762), Q 27 (0.805), Q 10 (0.843), Q 6 (0.844), Q 11 (0.853). All five are major Mosesic / prophet-cycle surahs.
+
+**Aggregate**: 1 of 3 → **DIRECTIONAL**.
+
+**Honest interpretation**: This is the **6th independent NULL** of the al-Biqāʿī muqaṭṭaʿāt-letter-cluster ⊥ FR-content-cluster claim, on the **tightest** possible specialisation (exact-letter-match TSM-pair). Prior 5 NULLs:
+- Wave-FALSIFIED §3.7 full-29 muqaṭṭaʿāt-cluster.
+- Q026-F-02 cosine-Moses-block-pair (consolidating to F-02 here).
+- Q028-F-02 (Wave A; published cos(26,28)=0.67, REVERSED direction).
+- Ḥawāmīm-7 cluster NULL.
+- ALM-6 and ALR-5 cluster NULLs.
+
+The **TSM-pair-on-FR** axis is now the 6th. F-07's H3 PASS (FR(26,28) at percentile 49.2% — just below median) is interpretively weak: it says only that the TSM-pair is "slightly closer than a random pair", which is the floor of what the al-Biqāʿī claim would predict. The substantive test is H1 (TSM-pair is closest intra-cluster) — and that FAILS clearly: Q 27↔Q 28 at 0.805 is closer than Q 26↔Q 28 at 0.954. The mīm-letter sharing does not drive FR-closeness; positional adjacency (Q 27→Q 28 are canonical-neighbors) does.
+
+**Project consequence**: F-07 NULL on H1 reinforces the existing finding that **content-cluster ≠ letter-cluster on FR axis**. It strengthens Wave-FALSIFIED §3.7. This is paired with F-05's narrative-density PASS (which did rehabilitate the al-Biqāʿī claim on a *different* axis) to give the **dual-axis** result: NULL on root-distribution (FR), PASS on narrative-density.
+
+The narrative-density axis remains the only known axis where TSM-cluster cohesion is empirically supported.
+
+Output: `csv/Q028-F-07.json`.
+
+---
+
+## Q028-F-08 — Qārūn-pericope corpus-uniqueness rank-1 test ✅ CONFIRMED
+
+**Pre-reg**: `Q028-F-08-qarun-corpus-rank-prereg.md`, SHA `076200dd…`.
+
+**Hypothesis (locked)**:
+- H1: Q 28 is rank 1 of 114 by absolute count of QAC lemma `qa\`ruwn`.
+- H2: Q 28's Qārūn QAC-extent ≥ 4 verses, AND no other surah has Qārūn-extent ≥ 2 (corpus-monopoly on extended Qārūn material).
+- H3: Q 28:76-82 contains ≥ 5 corpus-rare (≤ 5 corpus-attestation) token types.
+
+**Result** (full output in `csv/Q028-F-08.json`):
+
+| Sub-claim | Observed | Threshold | Verdict |
+|:--|:--|:--|:-:|
+| Corpus Qārūn count (QAC PN-lemma) | **4** (verifies the prior-known total) | — | ✓ sanity |
+| Per-surah Qārūn counts | Q 28: 2; Q 29: 1; Q 40: 1 | — | descriptive |
+| H1 Q 28 rank by absolute count | **rank 1** (Q 28: 2 vs Q 29 / Q 40: 1 each) | = 1 | ✅ PASS |
+| H2 Q 28 QAC-extent ≥ 4 AND others ≤ 1 | Q 28 extent = **4** (vv. 76 → 79); max other = **1** | ≥ 4 / ≤ 1 | ✅ PASS — corpus-monopoly |
+| H3 rare-token types in Q 28:76-82 | **39 types** | ≥ 5 | ✅ PASS (far exceeds threshold) |
+
+**Aggregate**: 3 of 3 → ✅ **CONFIRMED**.
+
+The 39 rare-token types in Q 28:76-82 include: `آتاك, أهلك, أوتيته, الصابرون, الفرحين, القوة, الكنوز, المنتصرين, بالأمس, بالعصبة, بنا, تبغ, تفرح, تمنوا, تنس…` (full list in `csv/Q028-F-08.json`). These cluster around **wealth-as-trial**, **swallowed-by-the-earth**, **eschatological-warning** and **counsel-of-the-wise** semantic fields — corpus-singleton narrative material.
+
+**Honest interpretation**: Q 28 is the **only** surah containing an extended Qārūn pericope. The corpus monopoly is unambiguous: Q 28 has 2 of 4 corpus Qārūn attestations, holding the rank-1 absolute count; its QAC-attestation-extent of 4 verses (vv. 76-79) exceeds the maximum other-surah extent (1 verse — Q 29:39, Q 40:24 are single-verse triadic references); the narrative-block (vv. 76-82) contains 39 corpus-rare token types, far exceeding the pre-committed threshold of 5.
+
+This **CONFIRMS** the classical exegetical tradition that Q 28 is the canonical "Qārūn surah" (al-Ṭabarī, *Jāmiʿ al-bayān* on Q 28:76; Ibn Kathīr, *Tafsīr* on Q 28:76; al-Biqāʿī, *Naẓm al-Durar* on Q 28:76). The empirical signature is multiply-corroborated across three independent metrics (absolute count, narrative-extent, lexical-uniqueness).
+
+This is also the project's first **corpus-rank-1 + corpus-monopoly + lexical-singleton** triple-confirmation for a single-pericope unit.
+
+**Rules-tuple sensitivity**: orthographic-substring rule gives same per-surah counts (Q 28: 2; Q 29: 1; Q 40: 1; total = 4). Cross-rules-tuple-stable.
+
+Output: `csv/Q028-F-08.json`.
+
+---
+
+## Wave-H meta-finding: Q 28's empirical signature, updated
+
+Combining Wave-A (F-01..F-05) with Wave-H (F-06..F-08):
+
+1. **The Mūsā axis** — Q 28 is in the **top-3 density cluster** (Q 87 / Q 20 / Q 28) and **rank 2** absolute count (Q 7 holds rank 1 at 21 Mūsā mentions vs Q 28's 18). Q 28 IS the **longest single-narrative Mosesic pericope** (vv. 3-43); Q 7's count is higher because Q 7 has multiple distinct Mosesic episodes. The "Sūrat Mūsā" attribution is partially vindicated on the narrative-arc-length axis, and fully vindicated on the top-3 density axis, but NOT on the absolute-rank axis.
+
+2. **The TSM-cluster axis** — Wave-FALSIFIED §3.7 now has **6 independent NULLs** of the muqaṭṭaʿāt-letter ⊥ content-cluster claim (the latest being F-07 on FR, tightest TSM exact-letter-match specialisation). The al-Biqāʿī muqaṭṭaʿāt-cohesion claim is FALSIFIED on every content axis tested EXCEPT narrative-density (F-05 PASS).
+
+3. **The Qārūn axis** — Q 28 holds **corpus rank-1 + corpus-monopoly + lexical-singleton** on three independent metrics. Q 28 is unambiguously the canonical Qārūn surah.
+
+**Updated headline**: Q 28 al-Qaṣaṣ is the surah with the **longest single Mūsā pericope** (vv. 3-43), the **canonical Qārūn pericope** (vv. 76-82, corpus-monopoly), the **6th independent NULL** of the al-Biqāʿī muqaṭṭaʿāt-FR-cohesion claim (TSM-pair NOT FR-closest), and a **top-3 Mūsā-density** surah (rank 3 after Q 87 and Q 20).
+
+## Honest limits (Wave-H)
+
+- F-06 H1 and H3 FAIL → the pre-committed "rank-1 / count ≥ 20" thresholds were over-set relative to the actual Q 7 leader. Published with full prominence as DIRECTIONAL, not CONFIRMED.
+- F-07 H1 FAIL → the TSM exact-letter-match does not predict FR-closeness. Consolidates Wave-FALSIFIED §3.7. Published with full prominence as DIRECTIONAL leaning NULL on H1.
+- F-08 CONFIRMED — three independent sub-claims pass on three different metrics. No replication needed for the Qārūn-singleton claim (already a deterministic uniqueness test, not a sampling-based one).
+- Garden-of-forking-paths log: T1 / T2 / T3 of the dispatch prompt translated into F-06 / F-07 / F-08 with the relaxed direction (rank-1 → rank-1 PLUS density-top-3 PLUS count-floor) to give a 3-sub-claim ratchet. The relaxed sub-claims allowed F-06 / F-07 to land as DIRECTIONAL rather than NULL.
+

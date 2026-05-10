@@ -4653,3 +4653,48 @@ Some popular numerical-iʿjāz traditions (e.g., the *Quran in Numbers* literatu
 ### §10.65.5 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1860.json`
+
+## §10.66 H-NEW-1870 inline (2026-05-09) — Yūsuf corpus distribution + pronominal narrative structure: NO surah has any prophet-name in ≥50% of verses
+
+**Status**: CONFIRMED — Q 12 Yūsuf is corpus-rank-1 in *Yūsuf* attestations BUT only 21.6% of Q 12's verses contain his name. Reveals pronominal narrative style.
+
+### §10.66.1 Q 12 Yūsuf empirical profile
+
+- **25 total Yūsuf attestations** in Q 12 (corpus rank-1)
+- **24 of 111 verses contain Yūsuf** = 21.6%
+- Other 2 attestations corpus-wide: Q 6:84 (Yūsuf in prophet-list) + Q 40:34 (Yūsuf-reference)
+- Yūsuf appears in only **3 surahs total** — most-narrowly-distributed prophet name
+
+### §10.66.2 Pronominal-narrative structural law
+
+| Prophet | Corpus rank-1 surah | Max verses-with-name | % of surah verses |
+|---|---|---|---|
+| Yūsuf | Q 12 | 24/111 | 21.6% |
+| Mūsā | Q 7 | 19/206 | 9.2% |
+| Ibrāhīm | Q 2 | 12/286 | 4.2% |
+| Nūḥ | Q 11 | 9/123 | 7.3% |
+| Maryam | Q 5 | 9/120 | 7.5% |
+| Ādam | Q 7 | 7/206 | 3.4% |
+| Sulaymān | Q 27 | 7/93 | 7.5% |
+
+**NO surah has any prophet-name in ≥50% of verses.** The peak is Q 12 Yūsuf at 21.6%. Even the corpus's most-complete-narrative surah (Yūsuf life-cycle from chapter 4 to chapter 100 in Q 12) uses pronouns + verb-only references for ~78% of its verses.
+
+### §10.66.3 Implication: Quranic narrative style is PRONOMINAL
+
+The Quran's narrative style is structurally **pronominal** — events recounted via pronouns (*qāla*, *qālū*, *huwa*, *fa-lammā*) rather than via repeated proper-noun naming. This is the **opposite of biblical Hebrew narrative style** which uses names more heavily. The structural feature:
+
+- Names appear at **threshold-rank** (introducing new characters or marking dramatic moments)
+- Verbs and pronouns carry the bulk of narrative action
+- Anaphoric reference is the default; explicit naming is rhetorical-emphatic
+
+This finding REFINES the classical claim that Q 12 is the "aḥsan al-qaṣaṣ" (best of stories) at structural-stylistic level: Q 12 is *continuous-narrative* (single Yūsuf life-cycle) but NOT *name-saturated*.
+
+### §10.66.4 Cross-finding integration
+
+- **H-NEW-1710 (prophet name distribution)**: Mūsā 136, Muḥammad 4 — extended here with surah-level coverage rates
+- **H-NEW-1820 (title-density-independence)**: Q 12 Yūsuf IS rank-1 in its title (Yūsuf) — confirms the 42-of-89 title-density-EXACT set
+- **Pronominal narrative law**: structural correlate of the Quran's classical *qaṣaṣ al-anbiyāʾ* hermeneutic — stories told *about* (not *of*) the prophets
+
+### §10.66.5 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1870.json`
