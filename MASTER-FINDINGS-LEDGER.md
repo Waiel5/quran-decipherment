@@ -1,6 +1,6 @@
 ---
 document: Master Findings Ledger — Quran Decipherment Project
-date_last_updated: 2026-05-07 (cross-finding-028 added — liturgical-recitation pair-traditions correspond to FR-near-pairs at p=0.00090, length-controlled p=0.0224, cluster muʿawwidhāt p=0.00040; CONFIRMED at α_bon=0.025; resolves cross-finding-026 §13.5b conjecture as POSITIVE; 7th cross-cutting empirical axis added to mushaf-architecture)
+date_last_updated: 2026-05-09 PM continuation (H-NEW-1510 added — sajda 15-verse pericope-scale flip test PASS-DIRECTED at z=+2.685, p=0.0058; second cross-scale NULL→PASS finding-pair under cross-finding-025 scale-of-aggregation axis; H-NEW-1330 whole-surah NULL → H-NEW-1510 pericope PASS)
 status: single precise consolidated record of all confirmed findings, refutations, divine-name data, and in-flight tests
 rule_tuple_default: (no-tashkeel, orthographic-token & lemma where noted, graphemes, basmala-counted-only-in-surah-1, hafs-kufan, mashriqi)
 canonical_corpus: quran-text/quran-no-tashkeel.json
@@ -3330,10 +3330,94 @@ This is the empirical correlate of the classical *khawātim al-suwar* tradition 
 - **NULL findings (with full prominence)**: ~30+
 - **Surah-folders with substantial deep-dive content**: ~85 of 114
 - **Pending high-EV moves**:
-  - Pericope-scale re-test of thin-marker NULLs (H-NEW-1310, 1330, 1340, 1360) per H-NEW-1380 principle
+  - Pericope-scale re-test of thin-marker NULLs (H-NEW-1310, 1340, 1360) per H-NEW-1380 principle — **H-NEW-1330 sajda done as H-NEW-1510 PASS-DIRECTED 2026-05-09 PM**
   - Q 65→Q 66 architecturally-strongest OPENING-LINKED pair (3-axis TRUE)
   - Q 75 al-Qiyāma narrowly-higher ق-density than Q 50 (new sub-finding to investigate)
   - Q 96 vs Q 68 chronology-pair inverse-rank lexical-key principle (formalize as H-NEW)
   - 5-qul cluster cohesion now triply-confirmed (H-NEW-74 + 2026-05-07 inline + Q072-F-01 with PC valid)
 
 *Synthesis written 2026-05-09 PM by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+## §10.55 H-NEW-1510 inline (2026-05-09 PM continuation) — Sajda 15-verse pericope-scale flip test: H-NEW-1330 whole-surah NULL → pericope PASS at z=+2.685 (p=0.0058); second cross-scale finding-pair under cross-finding-025
+
+**Status**: PASS-DIRECTED (single-test k=1; α=0.05). Direction matched pre-commit lock.
+
+**Pre-reg SHA256**: `fab8c413105c9867253a49bc09765e3313d22bb6f59688f8a4642048c4d00581`
+**Files**: `findings/phase-b-hypotheses/prereg-h-new-1510-sajda-pericope-replication.md`, `scripts/h-new-1510.py`, `csv/h-new-1510.json`, `h-new-1510-sajda-pericope-replication.md`.
+
+**Hypothesis (pre-locked)**: The 15 sajda-verse pericopes — each defined as the sajda verse ± 2 verses, clipped to surah boundaries — exhibit TIGHTER mean pairwise root-Jaccard similarity than length-matched random pericopes drawn from the flat 6,236-verse corpus index (seed 20260509; n_perm=10000; one-tailed; QAC v0.4 ROOT-field; rules-tuple default).
+
+**Pericope inventory**: 14 classical-Sunnī sajda verses {Q 7:206, 13:15, 16:50, 17:109, 19:58, 22:18, 22:77, 25:60, 27:26, 32:15, 38:24, 41:38, 53:62, 84:21, 96:19} = 15 sajda verses (Q 22 carries TWO sajdas per Q022-F-06). Each verified by ۩ glyph in `quran-text/quran-no-tashkeel.json`. Length-vector L = (3, 5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 3, 5, 3); sum = 68 verses; C(15,2) = 105 pairwise comparisons. Edge-clipping at surah boundaries (no cross-surah bleed) is the conservative pre-locked choice for Q 7:206, Q 22:77, Q 53:62, Q 96:19.
+
+**Result**:
+- **J_mean observed = 0.09667** (mean of 105 pairwise root-Jaccards)
+- **Null mean = 0.06354 ± 0.01234** (10,000 length-matched permutations)
+- **z = +2.685**
+- **p_perm (one-tailed, strict ≥ obs) = 0.0058** (58/10000 perms ≥ observed)
+- Direction matches pre-commit lock: ✓
+- **Verdict = PASS-DIRECTED** below α=0.05 single-test ceiling.
+
+**Per-pair structure**: Tightest 5 pairs are all middle-to-late Meccan sajdas centered on the *sjd* + *kbr* + *sbH* + *rbb* + *Hmd* lexical complex; Q 41:38 is in 4 of top-5 (cohesion hub). Tightest pair: Q 17:109 ↔ Q 22:77 at J=0.219 (14/64). Loosest 5 pairs all involve Q 96:19 (6 roots in 3-verse window) or Q 53:62 (6 roots in 3-verse window) — the two sparsest pericopes. Loosest pair: Q 38:24 ↔ Q 96:19 at J=0.000 (0/60) — David-juridical-parable pericope vs *iqra*-closing-sajda pericope.
+
+### §10.55.1 — Scale-of-aggregation flip (the methodological finding)
+
+The classical-Sunnī sajda set has now been tested under TWO scales and produces TWO different verdicts:
+
+| Scale | Finding | Set | Statistic | Verdict |
+|:--|:--|:--|:--|:--|
+| Whole-surah | **H-NEW-1330** | 14 sajda-surahs | mean intra-cluster FR | **NULL** (Cell A p=0.571, Cell B p=0.110; PC pass p=0.00020) |
+| Pericope (±2) | **H-NEW-1510** | 15 sajda-verse pericopes (±2 clipped) | mean pairwise root-Jaccard | **PASS-DIRECTED** (z=+2.685, p=0.0058) |
+
+**This is the second cross-scale finding-pair** under cross-finding-025's scale-of-aggregation axis. The first pair was H-NEW-039 (whole-surah NULL, Iblīs) ↔ H-NEW-1380 (pericope PASS at z=+4.76, Iblīs). H-NEW-1510 satisfies the §10.51.4 threshold for graduating cross-finding-025 from PRELIMINARY-SYNTHESIS toward formal codification: TWO independent cross-scale NULL→PASS finding-pairs are now on record.
+
+### §10.55.2 — Why the PASS is moderate (z=+2.685, not +4.76)
+
+Three dispersing pressures keep the sajda PASS below the Iblīs PASS:
+
+1. **Two very thin pericopes**: Q 53:62 (6 roots / 3 verses) and Q 96:19 (6 roots / 3 verses) — both surah-closing 1-verse sajdas with only ±2-clipped context. Small unions inflate pairwise Jaccard noise.
+2. **Off-axis pericope**: Q 38:24 (David-Iblīs-juridical-parable) lexically diverges from the standard prostration-praise complex. Contributes 2 of the bottom-5 loosest pairs including the corpus-extreme zero-overlap pair vs Q 96:19.
+3. **Chronological-structural heterogeneity**: sajda set spans Early Meccan through Medinan, opener through closer positions, narrative through eschatological prose. Iblīs by contrast is a tightly bounded narrative cycle.
+
+Even under these pressures the signal is real (z=+2.685, p=0.0058). **The H-NEW-1330 NULL was a scale-of-aggregation artifact, not substantive absence of cohesion.**
+
+### §10.55.3 — Implications for cross-finding-025 + queued re-tests
+
+| Cross-scale pair | Whole-surah | Pericope | Status |
+|:--|:--|:--|:--|
+| Iblīs narrative | H-NEW-039 NULL | H-NEW-1380 PASS (z=+4.76) | LOGGED ✓ |
+| Sajda set | H-NEW-1330 NULL | H-NEW-1510 PASS (z=+2.685) | **LOGGED ✓ (this finding)** |
+| Christ-narrative | H-NEW-1310 NULL | H-NEW-1520 (queued) | PENDING |
+| al-ḥamdu opener | H-NEW-1340 NULL | H-NEW-1530 (queued) | PENDING |
+| *yā-ayyuhā al-nabī* | H-NEW-1360 NULL | H-NEW-1540 (queued) | PENDING |
+
+If 1+ additional flip lands (3-of-3 or 4-of-4 pairs), cross-finding-025 graduates from PRELIMINARY-SYNTHESIS to formal corpus-law level.
+
+### §10.55.4 — Honest limits
+
+- Single seed 20260509 (matches H-NEW-1380 / Q038-F-07 instrument; seed-independent replication queued as H-NEW-1510b).
+- ±2 window-width is canonical pre-locked; ±1 / ±3 sensitivity queued.
+- Edge-clipping (no cross-surah bleed) is conservative; bleed-permitted variant queued as sensitivity.
+- Length-matched null is not prose-genre-matched; prose-matched null queued.
+- Set-equivalent comparison (drop Q 22:77 → 14 pericopes matching H-NEW-1330's 14 surahs) queued as sensitivity.
+- Single instrument (root-Jaccard); TF-IDF and root-cosine variants queued.
+
+### §10.55.5 — Classical context
+
+al-Suyūṭī (*al-Itqān fī ʿulūm al-Qurʾān*, nawʿ on sujūd al-tilāwa), al-Bukhārī (*Ṣaḥīḥ*, *Kitāb Sujūd al-Qurʾān*, ḥadīths 1067-1079), and al-Tirmidhī (*Kitāb al-Witr*, ḥadīths 573-577) all treat the sajda phenomenon at the verse-in-immediate-recitation-context scale, never at whole-surah class. The empirical PASS at pericope scale corresponds to the classical operational unit; the prior whole-surah NULL (H-NEW-1330) was testing at the wrong scale for the classical phenomenon, exactly as the H-NEW-1380 scale-of-aggregation principle predicted.
+
+### §10.55.6 — Connection to existing findings
+
+- **Promotes**: H-NEW-1330 NULL from "substantive NULL" to "whole-surah scale partner of H-NEW-1510 PASS".
+- **Pairs with**: H-NEW-039 / H-NEW-1380 (Iblīs cross-scale pair) — second independent cross-scale flip.
+- **Refines**: cross-finding-025 PRELIMINARY-SYNTHESIS by supplying the second cross-scale finding-pair needed for formal codification.
+- **Joins**: H-NEW-1331 PASS-DIRECTED (sajda × muqaṭṭāʿat over-representation). Sajda set now has TWO structural correlates: hypergeometric muqaṭṭāʿat enrichment + pericope-scale root cohesion.
+- **Uses**: Q022-F-06 (Q 22 double-sajda) as basis for the 15th sajda verse inclusion.
+
+### §10.55.7 — Files
+
+- pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1510-sajda-pericope-replication.md`
+- script: `findings/phase-b-hypotheses/scripts/h-new-1510.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1510.json`
+- finding: `findings/phase-b-hypotheses/h-new-1510-sajda-pericope-replication.md`
+
+*Inline run logged 2026-05-09 PM continuation by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
