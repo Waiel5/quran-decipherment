@@ -1,0 +1,106 @@
+{
+  "finding_id": "Q029-F-04",
+  "prereg_sha": "899a4c2201655c2d28e75c8d9c5cde7fa86e65c6a2d2f7794236311453ffebfe",
+  "rules_tuple": "(no-tashkeel, orthographic-token, QAC v0.4 LEM, Hafs-Kufan, Mashriqi, basmala-counted-only-in-Q1)",
+  "sub_claim_a_Eankabuwt_corpus_singleton": {
+    "attested_verses": [
+      "Q 29:41"
+    ],
+    "pass": true
+  },
+  "sub_claim_b_>awohan_corpus_singleton": {
+    "attested_verses": [
+      "Q 29:41"
+    ],
+    "pass": true
+  },
+  "sub_claim_c_joint_schema_animal_AND_shelter_AND_frailty": {
+    "matching_verses": [
+      "Q 29:41"
+    ],
+    "matches_detail": [
+      {
+        "s": 29,
+        "v": 41,
+        "animals": [
+          "Eankabuwt"
+        ],
+        "shelters": [
+          "bayot"
+        ],
+        "frailty_roots": [
+          "whn"
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "descriptive_context": {
+    "verses_with_any_animal_lemma": [
+      "Q 16:68",
+      "Q 22:73",
+      "Q 27:18",
+      "Q 29:41"
+    ],
+    "verses_with_shelter_lemma_bayot": 47,
+    "verses_with_frailty_root": 52,
+    "verses_animal_AND_shelter": [
+      "Q 16:68",
+      "Q 29:41"
+    ],
+    "verses_animal_AND_frailty": [
+      "Q 22:73",
+      "Q 29:41"
+    ]
+  },
+  "comparator_animal_lemmas": {
+    "Eankabuwt": {
+      "gloss": "spider",
+      "attested_verses": [
+        "Q 29:41"
+      ],
+      "n_verses": 1,
+      "n_surahs": 1
+    },
+    "n~aHol": {
+      "gloss": "bee",
+      "attested_verses": [
+        "Q 16:68"
+      ],
+      "n_verses": 1,
+      "n_surahs": 1
+    },
+    "naHol": {
+      "gloss": "bee-alt-lemma",
+      "attested_verses": [],
+      "n_verses": 0,
+      "n_surahs": 0
+    },
+    "namolap": {
+      "gloss": "an-ant",
+      "attested_verses": [
+        "Q 27:18"
+      ],
+      "n_verses": 1,
+      "n_surahs": 1
+    },
+    "n~amol": {
+      "gloss": "ant-collective",
+      "attested_verses": [
+        "Q 27:18"
+      ],
+      "n_verses": 1,
+      "n_surahs": 1
+    },
+    "*ubaAb": {
+      "gloss": "fly",
+      "attested_verses": [
+        "Q 22:73"
+      ],
+      "n_verses": 1,
+      "n_surahs": 1
+    }
+  },
+  "n_sub_claims_passed": 3,
+  "verdict": "PASS-DIRECTED — corpus-unique parable schema"
+}

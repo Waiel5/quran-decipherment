@@ -1,0 +1,170 @@
+{
+  "finding_id": "Q029-F-03",
+  "prereg_sha": "2718837da9e3c5dce8d955da9752a38f654c9cd100f30b81f5751f46b0a2d6a7",
+  "rules_tuple": "(QAC v0.4 LEM-tag + ROOT-tag, no-tashkeel, Hafs-Kufan, Mashriqi, basmala-counted-only-in-Q1)",
+  "target_lem": "Eankabuwt",
+  "target_root": "Enkb",
+  "lemma_attestation": {
+    "n_tokens": 2,
+    "n_distinct_surahs": 1,
+    "n_distinct_verses": 1,
+    "surahs": [
+      29
+    ],
+    "verses": [
+      "Q 29:41"
+    ],
+    "attestations": [
+      {
+        "s": 29,
+        "v": 41,
+        "w": 9,
+        "seg": 2
+      },
+      {
+        "s": 29,
+        "v": 41,
+        "w": 16,
+        "seg": 2
+      }
+    ]
+  },
+  "root_attestation": {
+    "n_tokens": 2,
+    "n_distinct_surahs": 1,
+    "n_distinct_verses": 1,
+    "surahs": [
+      29
+    ],
+    "verses": [
+      "Q 29:41"
+    ],
+    "attestations": [
+      {
+        "s": 29,
+        "v": 41,
+        "w": 9,
+        "seg": 2
+      },
+      {
+        "s": 29,
+        "v": 41,
+        "w": 16,
+        "seg": 2
+      }
+    ]
+  },
+  "verdict": "PASS-DIRECTED — corpus-singleton (lemma)",
+  "comparators": [
+    {
+      "lem": "n~aHol",
+      "english_gloss": "bee",
+      "attested_at": "Q 16:68",
+      "attest_summary": {
+        "n_tokens": 1,
+        "n_distinct_surahs": 1,
+        "n_distinct_verses": 1,
+        "surahs": [
+          16
+        ],
+        "verses": [
+          "Q 16:68"
+        ],
+        "attestations": [
+          {
+            "s": 16,
+            "v": 68,
+            "w": 4,
+            "seg": 2
+          }
+        ]
+      }
+    },
+    {
+      "lem": "namolap",
+      "english_gloss": "an ant (one specific ant)",
+      "attested_at": "Q 27:18",
+      "attest_summary": {
+        "n_tokens": 1,
+        "n_distinct_surahs": 1,
+        "n_distinct_verses": 1,
+        "surahs": [
+          27
+        ],
+        "verses": [
+          "Q 27:18"
+        ],
+        "attestations": [
+          {
+            "s": 27,
+            "v": 18,
+            "w": 8,
+            "seg": 1
+          }
+        ]
+      }
+    },
+    {
+      "lem": "n~amol",
+      "english_gloss": "ant(s) — collective",
+      "attested_at": "Q 27:18 + Q 27:18",
+      "attest_summary": {
+        "n_tokens": 2,
+        "n_distinct_surahs": 1,
+        "n_distinct_verses": 1,
+        "surahs": [
+          27
+        ],
+        "verses": [
+          "Q 27:18"
+        ],
+        "attestations": [
+          {
+            "s": 27,
+            "v": 18,
+            "w": 6,
+            "seg": 2
+          },
+          {
+            "s": 27,
+            "v": 18,
+            "w": 10,
+            "seg": 2
+          }
+        ]
+      }
+    },
+    {
+      "lem": "*ubaAb",
+      "english_gloss": "fly",
+      "attested_at": "Q 22:73",
+      "attest_summary": {
+        "n_tokens": 2,
+        "n_distinct_surahs": 1,
+        "n_distinct_verses": 1,
+        "surahs": [
+          22
+        ],
+        "verses": [
+          "Q 22:73"
+        ],
+        "attestations": [
+          {
+            "s": 22,
+            "v": 73,
+            "w": 15,
+            "seg": 1
+          },
+          {
+            "s": 22,
+            "v": 73,
+            "w": 21,
+            "seg": 2
+          }
+        ]
+      }
+    }
+  ],
+  "a_priori_prediction": "corpus-singleton (1 surah, 1 verse)",
+  "note": "corpus-singleton is a deterministic count-fact; no permutation null applies."
+}

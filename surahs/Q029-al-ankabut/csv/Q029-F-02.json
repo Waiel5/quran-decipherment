@@ -1,0 +1,149 @@
+{
+  "finding_id": "Q029-F-02",
+  "prereg_sha": "3d4acccc01e01985bcdbef1b4dcd4dd5c7005878862dbd291a7159c4406994d8",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha": 0.05,
+  "rules_tuple": "(no-tashkeel, root-tokens via QAC-v0.4, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "pericopes": [
+    {
+      "label": "Q 29:1-3",
+      "surah": 29,
+      "v_start": 1,
+      "v_end": 3,
+      "n_roots": 11,
+      "roots": [
+        "Alh",
+        "Amn",
+        "Elm",
+        "Hsb",
+        "Sdq",
+        "ftn",
+        "k*b",
+        "nws",
+        "qbl",
+        "qwl",
+        "trk"
+      ]
+    },
+    {
+      "label": "Q 30:1-3",
+      "surah": 30,
+      "v_start": 1,
+      "v_end": 3,
+      "n_roots": 4,
+      "roots": [
+        "ArD",
+        "bEd",
+        "dnw",
+        "glb"
+      ]
+    },
+    {
+      "label": "Q 31:1-3",
+      "surah": 31,
+      "v_start": 1,
+      "v_end": 3,
+      "n_roots": 6,
+      "roots": [
+        "Ayy",
+        "Hkm",
+        "Hsn",
+        "hdy",
+        "ktb",
+        "rHm"
+      ]
+    },
+    {
+      "label": "Q 32:1-3",
+      "surah": 32,
+      "v_start": 1,
+      "v_end": 3,
+      "n_roots": 13,
+      "roots": [
+        "Aty",
+        "Elm",
+        "Hqq",
+        "fry",
+        "hdy",
+        "ktb",
+        "n*r",
+        "nzl",
+        "qbl",
+        "qwl",
+        "qwm",
+        "rbb",
+        "ryb"
+      ]
+    }
+  ],
+  "pericope_root_sizes": [
+    11,
+    4,
+    6,
+    13
+  ],
+  "observed_mean_pairwise_jaccard": 0.0434173669467787,
+  "observed_pair_jaccards": [
+    {
+      "pair": "Q 29:1-3 ↔ Q 30:1-3",
+      "jaccard": 0.0,
+      "intersection_size": 0,
+      "union_size": 15,
+      "intersection_roots": []
+    },
+    {
+      "pair": "Q 29:1-3 ↔ Q 31:1-3",
+      "jaccard": 0.0,
+      "intersection_size": 0,
+      "union_size": 17,
+      "intersection_roots": []
+    },
+    {
+      "pair": "Q 29:1-3 ↔ Q 32:1-3",
+      "jaccard": 0.14285714285714285,
+      "intersection_size": 3,
+      "union_size": 21,
+      "intersection_roots": [
+        "Elm",
+        "qbl",
+        "qwl"
+      ]
+    },
+    {
+      "pair": "Q 30:1-3 ↔ Q 31:1-3",
+      "jaccard": 0.0,
+      "intersection_size": 0,
+      "union_size": 10,
+      "intersection_roots": []
+    },
+    {
+      "pair": "Q 30:1-3 ↔ Q 32:1-3",
+      "jaccard": 0.0,
+      "intersection_size": 0,
+      "union_size": 17,
+      "intersection_roots": []
+    },
+    {
+      "pair": "Q 31:1-3 ↔ Q 32:1-3",
+      "jaccard": 0.11764705882352941,
+      "intersection_size": 2,
+      "union_size": 17,
+      "intersection_roots": [
+        "hdy",
+        "ktb"
+      ]
+    }
+  ],
+  "null_mean": 0.049695858236211865,
+  "null_std": 0.025047401890708833,
+  "null_min": 0.0,
+  "null_max": 0.25351425594392346,
+  "p_one_sided_ge_perm": 0.5572,
+  "z_score": -0.2506643729688438,
+  "percentile_of_obs": 0.4428,
+  "n_candidate_windows": 5982,
+  "direction_locked": "TIGHTER (J_mean > null mean)",
+  "direction_match": false,
+  "verdict": "NULL"
+}
