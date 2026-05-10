@@ -1,0 +1,2080 @@
+{
+  "id": "H-NEW-1790",
+  "title": "Refrain-architecture full corpus inventory",
+  "prereg_sha": "1687591022153584cf745bd83855fd907387ac0afa2978475131bb1e071dd3e4",
+  "rules_tuple": {
+    "orthography": "no-tashkeel",
+    "verse_equality": "exact-NFC-whitespace-normalized",
+    "basmala_policy": "data-file-driven (counted only where verse 1 carries it)",
+    "reading_tradition": "hafs-kufan"
+  },
+  "cell_A_q55_saturation_rank_1": {
+    "q55_saturation": 0.3974358974358974,
+    "q55_rank_by_saturation": 1,
+    "pass": true
+  },
+  "cell_B_n_strict_in_5_to_15": {
+    "n_strict_surahs": 5,
+    "strict_surahs": [
+      26,
+      37,
+      54,
+      55,
+      77
+    ],
+    "window": [
+      5,
+      15
+    ],
+    "pass": true
+  },
+  "verdict": "PASS-DIRECTED FULL",
+  "top10_by_saturation": [
+    {
+      "rank": 1,
+      "surah": 55,
+      "name": "Ar-Rahman",
+      "n_verses": 78,
+      "max_repeat_count": 31,
+      "saturation": 0.3974358974358974,
+      "top_refrain_text": "فبأي آلاء ربكما تكذبان",
+      "n_strict_refrains": 1,
+      "n_broad_refrains": 1
+    },
+    {
+      "rank": 2,
+      "surah": 109,
+      "name": "Al-Kafirun",
+      "n_verses": 6,
+      "max_repeat_count": 2,
+      "saturation": 0.3333333333333333,
+      "top_refrain_text": "ولا أنتم عابدون ما أعبد",
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 1
+    },
+    {
+      "rank": 3,
+      "surah": 103,
+      "name": "Al-'Asr",
+      "n_verses": 3,
+      "max_repeat_count": 1,
+      "saturation": 0.3333333333333333,
+      "top_refrain_text": "",
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0
+    },
+    {
+      "rank": 4,
+      "surah": 108,
+      "name": "Al-Kawthar",
+      "n_verses": 3,
+      "max_repeat_count": 1,
+      "saturation": 0.3333333333333333,
+      "top_refrain_text": "",
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0
+    },
+    {
+      "rank": 5,
+      "surah": 110,
+      "name": "An-Nasr",
+      "n_verses": 3,
+      "max_repeat_count": 1,
+      "saturation": 0.3333333333333333,
+      "top_refrain_text": "",
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0
+    },
+    {
+      "rank": 6,
+      "surah": 106,
+      "name": "Quraysh",
+      "n_verses": 4,
+      "max_repeat_count": 1,
+      "saturation": 0.25,
+      "top_refrain_text": "",
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0
+    },
+    {
+      "rank": 7,
+      "surah": 112,
+      "name": "Al-Ikhlas",
+      "n_verses": 4,
+      "max_repeat_count": 1,
+      "saturation": 0.25,
+      "top_refrain_text": "",
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0
+    },
+    {
+      "rank": 8,
+      "surah": 77,
+      "name": "Al-Mursalat",
+      "n_verses": 50,
+      "max_repeat_count": 10,
+      "saturation": 0.2,
+      "top_refrain_text": "ويل يومئذ للمكذبين",
+      "n_strict_refrains": 1,
+      "n_broad_refrains": 1
+    },
+    {
+      "rank": 9,
+      "surah": 97,
+      "name": "Al-Qadr",
+      "n_verses": 5,
+      "max_repeat_count": 1,
+      "saturation": 0.2,
+      "top_refrain_text": "",
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0
+    },
+    {
+      "rank": 10,
+      "surah": 105,
+      "name": "Al-Fil",
+      "n_verses": 5,
+      "max_repeat_count": 1,
+      "saturation": 0.2,
+      "top_refrain_text": "",
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0
+    }
+  ],
+  "top10_by_absolute_count": [
+    {
+      "rank": 1,
+      "surah": 55,
+      "name": "Ar-Rahman",
+      "n_verses": 78,
+      "max_repeat_count": 31,
+      "saturation": 0.3974358974358974,
+      "top_refrain_text": "فبأي آلاء ربكما تكذبان"
+    },
+    {
+      "rank": 2,
+      "surah": 77,
+      "name": "Al-Mursalat",
+      "n_verses": 50,
+      "max_repeat_count": 10,
+      "saturation": 0.2,
+      "top_refrain_text": "ويل يومئذ للمكذبين"
+    },
+    {
+      "rank": 3,
+      "surah": 26,
+      "name": "Ash-Shu'ara",
+      "n_verses": 227,
+      "max_repeat_count": 8,
+      "saturation": 0.03524229074889868,
+      "top_refrain_text": "فاتقوا الله وأطيعون"
+    },
+    {
+      "rank": 4,
+      "surah": 37,
+      "name": "As-Saffat",
+      "n_verses": 182,
+      "max_repeat_count": 4,
+      "saturation": 0.02197802197802198,
+      "top_refrain_text": "إلا عباد الله المخلصين"
+    },
+    {
+      "rank": 5,
+      "surah": 54,
+      "name": "Al-Qamar",
+      "n_verses": 55,
+      "max_repeat_count": 4,
+      "saturation": 0.07272727272727272,
+      "top_refrain_text": "ولقد يسرنا القرآن للذكر فهل من مدكر"
+    },
+    {
+      "rank": 6,
+      "surah": 2,
+      "name": "Al-Baqarah",
+      "n_verses": 286,
+      "max_repeat_count": 2,
+      "saturation": 0.006993006993006993,
+      "top_refrain_text": "تلك أمة قد خلت ۖ لها ما كسبت ولكم ما كسبتم ۖ ولا تسألون عما كانوا يعملون"
+    },
+    {
+      "rank": 7,
+      "surah": 5,
+      "name": "Al-Ma'idah",
+      "n_verses": 120,
+      "max_repeat_count": 2,
+      "saturation": 0.016666666666666666,
+      "top_refrain_text": "والذين كفروا وكذبوا بآياتنا أولئك أصحاب الجحيم"
+    },
+    {
+      "rank": 8,
+      "surah": 7,
+      "name": "Al-A'raf",
+      "n_verses": 206,
+      "max_repeat_count": 2,
+      "saturation": 0.009708737864077669,
+      "top_refrain_text": "فأخذتهم الرجفة فأصبحوا في دارهم جاثمين"
+    },
+    {
+      "rank": 9,
+      "surah": 18,
+      "name": "Al-Kahf",
+      "n_verses": 110,
+      "max_repeat_count": 2,
+      "saturation": 0.01818181818181818,
+      "top_refrain_text": "ثم أتبع سببا"
+    },
+    {
+      "rank": 10,
+      "surah": 23,
+      "name": "Al-Mu'minun",
+      "n_verses": 118,
+      "max_repeat_count": 2,
+      "saturation": 0.01694915254237288,
+      "top_refrain_text": "قال رب انصرني بما كذبون"
+    }
+  ],
+  "strict_refrain_inventory": [
+    {
+      "surah": 55,
+      "name": "Ar-Rahman",
+      "n_verses": 78,
+      "strict_refrains": [
+        {
+          "verse_text": "فبأي آلاء ربكما تكذبان",
+          "count": 31
+        }
+      ],
+      "max_repeat_count": 31,
+      "saturation": 0.3974358974358974
+    },
+    {
+      "surah": 77,
+      "name": "Al-Mursalat",
+      "n_verses": 50,
+      "strict_refrains": [
+        {
+          "verse_text": "ويل يومئذ للمكذبين",
+          "count": 10
+        }
+      ],
+      "max_repeat_count": 10,
+      "saturation": 0.2
+    },
+    {
+      "surah": 26,
+      "name": "Ash-Shu'ara",
+      "n_verses": 227,
+      "strict_refrains": [
+        {
+          "verse_text": "فاتقوا الله وأطيعون",
+          "count": 8
+        },
+        {
+          "verse_text": "وإن ربك لهو العزيز الرحيم",
+          "count": 8
+        },
+        {
+          "verse_text": "إن في ذلك لآية ۖ وما كان أكثرهم مؤمنين",
+          "count": 6
+        },
+        {
+          "verse_text": "إني لكم رسول أمين",
+          "count": 5
+        },
+        {
+          "verse_text": "وما أسألكم عليه من أجر ۖ إن أجري إلا على رب العالمين",
+          "count": 5
+        }
+      ],
+      "max_repeat_count": 8,
+      "saturation": 0.03524229074889868
+    },
+    {
+      "surah": 37,
+      "name": "As-Saffat",
+      "n_verses": 182,
+      "strict_refrains": [
+        {
+          "verse_text": "إلا عباد الله المخلصين",
+          "count": 4
+        },
+        {
+          "verse_text": "إنا كذلك نجزي المحسنين",
+          "count": 3
+        },
+        {
+          "verse_text": "إنه من عبادنا المؤمنين",
+          "count": 3
+        },
+        {
+          "verse_text": "وتركنا عليه في الآخرين",
+          "count": 3
+        }
+      ],
+      "max_repeat_count": 4,
+      "saturation": 0.02197802197802198
+    },
+    {
+      "surah": 54,
+      "name": "Al-Qamar",
+      "n_verses": 55,
+      "strict_refrains": [
+        {
+          "verse_text": "ولقد يسرنا القرآن للذكر فهل من مدكر",
+          "count": 4
+        },
+        {
+          "verse_text": "فكيف كان عذابي ونذر",
+          "count": 3
+        }
+      ],
+      "max_repeat_count": 4,
+      "saturation": 0.07272727272727272
+    }
+  ],
+  "cross_surah_refrain_pairs": [
+    {
+      "verse_text": "حم",
+      "verse_text_short": "حم",
+      "n_surahs": 7,
+      "total_occurrences": 7,
+      "surah_counts": {
+        "40": 1,
+        "41": 1,
+        "42": 1,
+        "43": 1,
+        "44": 1,
+        "45": 1,
+        "46": 1
+      }
+    },
+    {
+      "verse_text": "الم",
+      "verse_text_short": "الم",
+      "n_surahs": 6,
+      "total_occurrences": 6,
+      "surah_counts": {
+        "2": 1,
+        "3": 1,
+        "29": 1,
+        "30": 1,
+        "31": 1,
+        "32": 1
+      }
+    },
+    {
+      "verse_text": "ويقولون متى هذا الوعد إن كنتم صادقين",
+      "verse_text_short": "ويقولون متى هذا الوعد إن كنتم صادقين",
+      "n_surahs": 6,
+      "total_occurrences": 6,
+      "surah_counts": {
+        "10": 1,
+        "21": 1,
+        "27": 1,
+        "34": 1,
+        "36": 1,
+        "67": 1
+      }
+    },
+    {
+      "verse_text": "تنزيل الكتاب من الله العزيز الحكيم",
+      "verse_text_short": "تنزيل الكتاب من الله العزيز الحكيم",
+      "n_surahs": 3,
+      "total_occurrences": 3,
+      "surah_counts": {
+        "39": 1,
+        "45": 1,
+        "46": 1
+      }
+    },
+    {
+      "verse_text": "ويل يومئذ للمكذبين",
+      "verse_text_short": "ويل يومئذ للمكذبين",
+      "n_surahs": 2,
+      "total_occurrences": 11,
+      "surah_counts": {
+        "77": 10,
+        "83": 1
+      }
+    },
+    {
+      "verse_text": "إنا كذلك نجزي المحسنين",
+      "verse_text_short": "إنا كذلك نجزي المحسنين",
+      "n_surahs": 2,
+      "total_occurrences": 4,
+      "surah_counts": {
+        "37": 3,
+        "77": 1
+      }
+    },
+    {
+      "verse_text": "فسبح باسم ربك العظيم",
+      "verse_text_short": "فسبح باسم ربك العظيم",
+      "n_surahs": 2,
+      "total_occurrences": 3,
+      "surah_counts": {
+        "56": 2,
+        "69": 1
+      }
+    },
+    {
+      "verse_text": "أفبعذابنا يستعجلون",
+      "verse_text_short": "أفبعذابنا يستعجلون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "26": 1,
+        "37": 1
+      }
+    },
+    {
+      "verse_text": "أم تسألهم أجرا فهم من مغرم مثقلون",
+      "verse_text_short": "أم تسألهم أجرا فهم من مغرم مثقلون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "52": 1,
+        "68": 1
+      }
+    },
+    {
+      "verse_text": "أم عندهم الغيب فهم يكتبون",
+      "verse_text_short": "أم عندهم الغيب فهم يكتبون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "52": 1,
+        "68": 1
+      }
+    },
+    {
+      "verse_text": "أوآباؤنا الأولون",
+      "verse_text_short": "أوآباؤنا الأولون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "37": 1,
+        "56": 1
+      }
+    },
+    {
+      "verse_text": "أولئك على هدى من ربهم ۖ وأولئك هم المفلحون",
+      "verse_text_short": "أولئك على هدى من ربهم ۖ وأولئك هم المفلحون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "2": 1,
+        "31": 1
+      }
+    },
+    {
+      "verse_text": "إذا تتلى عليه آياتنا قال أساطير الأولين",
+      "verse_text_short": "إذا تتلى عليه آياتنا قال أساطير الأولين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "68": 1,
+        "83": 1
+      }
+    },
+    {
+      "verse_text": "إلا الذين تابوا من بعد ذلك وأصلحوا فإن الله غفور رحيم",
+      "verse_text_short": "إلا الذين تابوا من بعد ذلك وأصلحوا فإن الله غفور رحيم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "3": 1,
+        "24": 1
+      }
+    },
+    {
+      "verse_text": "إلا عبادك منهم المخلصين",
+      "verse_text_short": "إلا عبادك منهم المخلصين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "38": 1
+      }
+    },
+    {
+      "verse_text": "إلا عجوزا في الغابرين",
+      "verse_text_short": "إلا عجوزا في الغابرين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "26": 1,
+        "37": 1
+      }
+    },
+    {
+      "verse_text": "إلا على أزواجهم أو ما ملكت أيمانهم فإنهم غير ملومين",
+      "verse_text_short": "إلا على أزواجهم أو ما ملكت أيمانهم فإنهم غير ملومين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "23": 1,
+        "70": 1
+      }
+    },
+    {
+      "verse_text": "إلى يوم الوقت المعلوم",
+      "verse_text_short": "إلى يوم الوقت المعلوم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "38": 1
+      }
+    },
+    {
+      "verse_text": "إن الأبرار لفي نعيم",
+      "verse_text_short": "إن الأبرار لفي نعيم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "82": 1,
+        "83": 1
+      }
+    },
+    {
+      "verse_text": "إن المتقين في جنات وعيون",
+      "verse_text_short": "إن المتقين في جنات وعيون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "51": 1
+      }
+    },
+    {
+      "verse_text": "إن هذه تذكرة ۖ فمن شاء اتخذ إلى ربه سبيلا",
+      "verse_text_short": "إن هذه تذكرة ۖ فمن شاء اتخذ إلى ربه سبيلا",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "73": 1,
+        "76": 1
+      }
+    },
+    {
+      "verse_text": "إن هو إلا ذكر للعالمين",
+      "verse_text_short": "إن هو إلا ذكر للعالمين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "38": 1,
+        "81": 1
+      }
+    },
+    {
+      "verse_text": "إنه لقول رسول كريم",
+      "verse_text_short": "إنه لقول رسول كريم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "69": 1,
+        "81": 1
+      }
+    },
+    {
+      "verse_text": "اذهب إلى فرعون إنه طغى",
+      "verse_text_short": "اذهب إلى فرعون إنه طغى",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "20": 1,
+        "79": 1
+      }
+    },
+    {
+      "verse_text": "الذين صبروا وعلى ربهم يتوكلون",
+      "verse_text_short": "الذين صبروا وعلى ربهم يتوكلون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "16": 1,
+        "29": 1
+      }
+    },
+    {
+      "verse_text": "الذين يقيمون الصلاة ويؤتون الزكاة وهم بالآخرة هم يوقنون",
+      "verse_text_short": "الذين يقيمون الصلاة ويؤتون الزكاة وهم بالآخرة هم يوقنون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "27": 1,
+        "31": 1
+      }
+    },
+    {
+      "verse_text": "انظر كيف ضربوا لك الأمثال فضلوا فلا يستطيعون سبيلا",
+      "verse_text_short": "انظر كيف ضربوا لك الأمثال فضلوا فلا يستطيعون سبيلا",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "17": 1,
+        "25": 1
+      }
+    },
+    {
+      "verse_text": "بل نحن محرومون",
+      "verse_text_short": "بل نحن محرومون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "56": 1,
+        "68": 1
+      }
+    },
+    {
+      "verse_text": "تلك آيات الكتاب المبين",
+      "verse_text_short": "تلك آيات الكتاب المبين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "26": 1,
+        "28": 1
+      }
+    },
+    {
+      "verse_text": "تنزيل من رب العالمين",
+      "verse_text_short": "تنزيل من رب العالمين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "56": 1,
+        "69": 1
+      }
+    },
+    {
+      "verse_text": "ثم أغرقنا الآخرين",
+      "verse_text_short": "ثم أغرقنا الآخرين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "26": 1,
+        "37": 1
+      }
+    },
+    {
+      "verse_text": "ثم دمرنا الآخرين",
+      "verse_text_short": "ثم دمرنا الآخرين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "26": 1,
+        "37": 1
+      }
+    },
+    {
+      "verse_text": "ذلك بما قدمت أيديكم وأن الله ليس بظلام للعبيد",
+      "verse_text_short": "ذلك بما قدمت أيديكم وأن الله ليس بظلام للعبيد",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "3": 1,
+        "8": 1
+      }
+    },
+    {
+      "verse_text": "رب موسى وهارون",
+      "verse_text_short": "رب موسى وهارون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "7": 1,
+        "26": 1
+      }
+    },
+    {
+      "verse_text": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم",
+      "verse_text_short": "سبح لله ما في السماوات وما في الأرض ۖ وهو العزيز الحكيم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "59": 1,
+        "61": 1
+      }
+    },
+    {
+      "verse_text": "طسم",
+      "verse_text_short": "طسم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "26": 1,
+        "28": 1
+      }
+    },
+    {
+      "verse_text": "فألقى عصاه فإذا هي ثعبان مبين",
+      "verse_text_short": "فألقى عصاه فإذا هي ثعبان مبين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "7": 1,
+        "26": 1
+      }
+    },
+    {
+      "verse_text": "فإذا سويته ونفخت فيه من روحي فقعوا له ساجدين",
+      "verse_text_short": "فإذا سويته ونفخت فيه من روحي فقعوا له ساجدين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "38": 1
+      }
+    },
+    {
+      "verse_text": "فذرهم يخوضوا ويلعبوا حتى يلاقوا يومهم الذي يوعدون",
+      "verse_text_short": "فذرهم يخوضوا ويلعبوا حتى يلاقوا يومهم الذي يوعدون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "43": 1,
+        "70": 1
+      }
+    },
+    {
+      "verse_text": "فسجد الملائكة كلهم أجمعون",
+      "verse_text_short": "فسجد الملائكة كلهم أجمعون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "38": 1
+      }
+    },
+    {
+      "verse_text": "فمن ابتغى وراء ذلك فأولئك هم العادون",
+      "verse_text_short": "فمن ابتغى وراء ذلك فأولئك هم العادون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "23": 1,
+        "70": 1
+      }
+    },
+    {
+      "verse_text": "فمن شاء ذكره",
+      "verse_text_short": "فمن شاء ذكره",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "74": 1,
+        "80": 1
+      }
+    },
+    {
+      "verse_text": "فهو في عيشة راضية",
+      "verse_text_short": "فهو في عيشة راضية",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "69": 1,
+        "101": 1
+      }
+    },
+    {
+      "verse_text": "في جنات النعيم",
+      "verse_text_short": "في جنات النعيم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "37": 1,
+        "56": 1
+      }
+    },
+    {
+      "verse_text": "في جنات وعيون",
+      "verse_text_short": "في جنات وعيون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "26": 1,
+        "44": 1
+      }
+    },
+    {
+      "verse_text": "في جنة عالية",
+      "verse_text_short": "في جنة عالية",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "69": 1,
+        "88": 1
+      }
+    },
+    {
+      "verse_text": "قال رب فأنظرني إلى يوم يبعثون",
+      "verse_text_short": "قال رب فأنظرني إلى يوم يبعثون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "38": 1
+      }
+    },
+    {
+      "verse_text": "قال فإنك من المنظرين",
+      "verse_text_short": "قال فإنك من المنظرين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "38": 1
+      }
+    },
+    {
+      "verse_text": "قال فاخرج منها فإنك رجيم",
+      "verse_text_short": "قال فاخرج منها فإنك رجيم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "38": 1
+      }
+    },
+    {
+      "verse_text": "قالوا آمنا برب العالمين",
+      "verse_text_short": "قالوا آمنا برب العالمين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "7": 1,
+        "26": 1
+      }
+    },
+    {
+      "verse_text": "قالوا إنا أرسلنا إلى قوم مجرمين",
+      "verse_text_short": "قالوا إنا أرسلنا إلى قوم مجرمين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "51": 1
+      }
+    },
+    {
+      "verse_text": "قل إني أخاف إن عصيت ربي عذاب يوم عظيم",
+      "verse_text_short": "قل إني أخاف إن عصيت ربي عذاب يوم عظيم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "6": 1,
+        "39": 1
+      }
+    },
+    {
+      "verse_text": "كلوا واشربوا هنيئا بما كنتم تعملون",
+      "verse_text_short": "كلوا واشربوا هنيئا بما كنتم تعملون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "52": 1,
+        "77": 1
+      }
+    },
+    {
+      "verse_text": "ما تسبق من أمة أجلها وما يستأخرون",
+      "verse_text_short": "ما تسبق من أمة أجلها وما يستأخرون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "15": 1,
+        "23": 1
+      }
+    },
+    {
+      "verse_text": "ما لكم كيف تحكمون",
+      "verse_text_short": "ما لكم كيف تحكمون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "37": 1,
+        "68": 1
+      }
+    },
+    {
+      "verse_text": "متاعا لكم ولأنعامكم",
+      "verse_text_short": "متاعا لكم ولأنعامكم",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "79": 1,
+        "80": 1
+      }
+    },
+    {
+      "verse_text": "هو الذي أرسل رسوله بالهدى ودين الحق ليظهره على الدين كله ولو كره المشركون",
+      "verse_text_short": "هو الذي أرسل رسوله بالهدى ودين الحق ليظهره على الدين كله ولو كره المشركون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "9": 1,
+        "61": 1
+      }
+    },
+    {
+      "verse_text": "وأقبل بعضهم على بعض يتساءلون",
+      "verse_text_short": "وأقبل بعضهم على بعض يتساءلون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "37": 1,
+        "52": 1
+      }
+    },
+    {
+      "verse_text": "وأمطرنا عليهم مطرا ۖ فساء مطر المنذرين",
+      "verse_text_short": "وأمطرنا عليهم مطرا ۖ فساء مطر المنذرين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "26": 1,
+        "27": 1
+      }
+    },
+    {
+      "verse_text": "وأملي لهم ۚ إن كيدي متين",
+      "verse_text_short": "وأملي لهم ۚ إن كيدي متين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "7": 1,
+        "68": 1
+      }
+    },
+    {
+      "verse_text": "والذين هم لأماناتهم وعهدهم راعون",
+      "verse_text_short": "والذين هم لأماناتهم وعهدهم راعون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "23": 1,
+        "70": 1
+      }
+    },
+    {
+      "verse_text": "والذين هم لفروجهم حافظون",
+      "verse_text_short": "والذين هم لفروجهم حافظون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "23": 1,
+        "70": 1
+      }
+    },
+    {
+      "verse_text": "والكتاب المبين",
+      "verse_text_short": "والكتاب المبين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "43": 1,
+        "44": 1
+      }
+    },
+    {
+      "verse_text": "ولا يحض على طعام المسكين",
+      "verse_text_short": "ولا يحض على طعام المسكين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "69": 1,
+        "107": 1
+      }
+    },
+    {
+      "verse_text": "ولقد أرسلنا موسى بآياتنا وسلطان مبين",
+      "verse_text_short": "ولقد أرسلنا موسى بآياتنا وسلطان مبين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "11": 1,
+        "40": 1
+      }
+    },
+    {
+      "verse_text": "ولقد استهزئ برسل من قبلك فحاق بالذين سخروا منهم ما كانوا به يستهزئون",
+      "verse_text_short": "ولقد استهزئ برسل من قبلك فحاق بالذين سخروا منهم ما كانوا به يستهزئون",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "6": 1,
+        "21": 1
+      }
+    },
+    {
+      "verse_text": "وما تأتيهم من آية من آيات ربهم إلا كانوا عنها معرضين",
+      "verse_text_short": "وما تأتيهم من آية من آيات ربهم إلا كانوا عنها معرضين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "6": 1,
+        "36": 1
+      }
+    },
+    {
+      "verse_text": "وما ذلك على الله بعزيز",
+      "verse_text_short": "وما ذلك على الله بعزيز",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "14": 1,
+        "35": 1
+      }
+    },
+    {
+      "verse_text": "ونزع يده فإذا هي بيضاء للناظرين",
+      "verse_text_short": "ونزع يده فإذا هي بيضاء للناظرين",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "7": 1,
+        "26": 1
+      }
+    },
+    {
+      "verse_text": "يا أيها النبي جاهد الكفار والمنافقين واغلظ عليهم ۚ ومأواهم جهنم ۖ وبئس المصير",
+      "verse_text_short": "يا أيها النبي جاهد الكفار والمنافقين واغلظ عليهم ۚ ومأواهم جهنم ۖ وبئس المصير",
+      "n_surahs": 2,
+      "total_occurrences": 2,
+      "surah_counts": {
+        "9": 1,
+        "66": 1
+      }
+    }
+  ],
+  "n_cross_surah_pairs": 70,
+  "per_surah_summary": [
+    {
+      "surah": 1,
+      "n_verses": 7,
+      "max_repeat_count": 1,
+      "saturation": 0.14285714285714285,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 2,
+      "n_verses": 286,
+      "max_repeat_count": 2,
+      "saturation": 0.006993006993006993,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 2,
+      "broad_refrain_total_occurrences": 4
+    },
+    {
+      "surah": 3,
+      "n_verses": 200,
+      "max_repeat_count": 1,
+      "saturation": 0.005,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 4,
+      "n_verses": 176,
+      "max_repeat_count": 1,
+      "saturation": 0.005681818181818182,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 5,
+      "n_verses": 120,
+      "max_repeat_count": 2,
+      "saturation": 0.016666666666666666,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 1,
+      "broad_refrain_total_occurrences": 2
+    },
+    {
+      "surah": 6,
+      "n_verses": 165,
+      "max_repeat_count": 1,
+      "saturation": 0.006060606060606061,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 7,
+      "n_verses": 206,
+      "max_repeat_count": 2,
+      "saturation": 0.009708737864077669,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 1,
+      "broad_refrain_total_occurrences": 2
+    },
+    {
+      "surah": 8,
+      "n_verses": 75,
+      "max_repeat_count": 1,
+      "saturation": 0.013333333333333334,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 9,
+      "n_verses": 129,
+      "max_repeat_count": 1,
+      "saturation": 0.007751937984496124,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 10,
+      "n_verses": 109,
+      "max_repeat_count": 1,
+      "saturation": 0.009174311926605505,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 11,
+      "n_verses": 123,
+      "max_repeat_count": 1,
+      "saturation": 0.008130081300813009,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 12,
+      "n_verses": 111,
+      "max_repeat_count": 1,
+      "saturation": 0.009009009009009009,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 13,
+      "n_verses": 43,
+      "max_repeat_count": 1,
+      "saturation": 0.023255813953488372,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 14,
+      "n_verses": 52,
+      "max_repeat_count": 1,
+      "saturation": 0.019230769230769232,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 15,
+      "n_verses": 99,
+      "max_repeat_count": 1,
+      "saturation": 0.010101010101010102,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 16,
+      "n_verses": 128,
+      "max_repeat_count": 1,
+      "saturation": 0.0078125,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 17,
+      "n_verses": 111,
+      "max_repeat_count": 1,
+      "saturation": 0.009009009009009009,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 18,
+      "n_verses": 110,
+      "max_repeat_count": 2,
+      "saturation": 0.01818181818181818,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 1,
+      "broad_refrain_total_occurrences": 2
+    },
+    {
+      "surah": 19,
+      "n_verses": 98,
+      "max_repeat_count": 1,
+      "saturation": 0.01020408163265306,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 20,
+      "n_verses": 135,
+      "max_repeat_count": 1,
+      "saturation": 0.007407407407407408,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 21,
+      "n_verses": 112,
+      "max_repeat_count": 1,
+      "saturation": 0.008928571428571428,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 22,
+      "n_verses": 78,
+      "max_repeat_count": 1,
+      "saturation": 0.01282051282051282,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 23,
+      "n_verses": 118,
+      "max_repeat_count": 2,
+      "saturation": 0.01694915254237288,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 1,
+      "broad_refrain_total_occurrences": 2
+    },
+    {
+      "surah": 24,
+      "n_verses": 64,
+      "max_repeat_count": 1,
+      "saturation": 0.015625,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 25,
+      "n_verses": 77,
+      "max_repeat_count": 1,
+      "saturation": 0.012987012987012988,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 26,
+      "n_verses": 227,
+      "max_repeat_count": 8,
+      "saturation": 0.03524229074889868,
+      "n_strict_refrains": 5,
+      "n_broad_refrains": 6,
+      "broad_refrain_total_occurrences": 34
+    },
+    {
+      "surah": 27,
+      "n_verses": 93,
+      "max_repeat_count": 1,
+      "saturation": 0.010752688172043012,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 28,
+      "n_verses": 88,
+      "max_repeat_count": 2,
+      "saturation": 0.022727272727272728,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 1,
+      "broad_refrain_total_occurrences": 2
+    },
+    {
+      "surah": 29,
+      "n_verses": 69,
+      "max_repeat_count": 1,
+      "saturation": 0.014492753623188406,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 30,
+      "n_verses": 60,
+      "max_repeat_count": 1,
+      "saturation": 0.016666666666666666,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 31,
+      "n_verses": 34,
+      "max_repeat_count": 1,
+      "saturation": 0.029411764705882353,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 32,
+      "n_verses": 30,
+      "max_repeat_count": 1,
+      "saturation": 0.03333333333333333,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 33,
+      "n_verses": 73,
+      "max_repeat_count": 1,
+      "saturation": 0.0136986301369863,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 34,
+      "n_verses": 54,
+      "max_repeat_count": 1,
+      "saturation": 0.018518518518518517,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 35,
+      "n_verses": 45,
+      "max_repeat_count": 1,
+      "saturation": 0.022222222222222223,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 36,
+      "n_verses": 83,
+      "max_repeat_count": 1,
+      "saturation": 0.012048192771084338,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 37,
+      "n_verses": 182,
+      "max_repeat_count": 4,
+      "saturation": 0.02197802197802198,
+      "n_strict_refrains": 4,
+      "n_broad_refrains": 4,
+      "broad_refrain_total_occurrences": 13
+    },
+    {
+      "surah": 38,
+      "n_verses": 88,
+      "max_repeat_count": 1,
+      "saturation": 0.011363636363636364,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 39,
+      "n_verses": 75,
+      "max_repeat_count": 1,
+      "saturation": 0.013333333333333334,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 40,
+      "n_verses": 85,
+      "max_repeat_count": 1,
+      "saturation": 0.011764705882352941,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 41,
+      "n_verses": 54,
+      "max_repeat_count": 1,
+      "saturation": 0.018518518518518517,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 42,
+      "n_verses": 53,
+      "max_repeat_count": 1,
+      "saturation": 0.018867924528301886,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 43,
+      "n_verses": 89,
+      "max_repeat_count": 1,
+      "saturation": 0.011235955056179775,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 44,
+      "n_verses": 59,
+      "max_repeat_count": 1,
+      "saturation": 0.01694915254237288,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 45,
+      "n_verses": 37,
+      "max_repeat_count": 1,
+      "saturation": 0.02702702702702703,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 46,
+      "n_verses": 35,
+      "max_repeat_count": 1,
+      "saturation": 0.02857142857142857,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 47,
+      "n_verses": 38,
+      "max_repeat_count": 1,
+      "saturation": 0.02631578947368421,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 48,
+      "n_verses": 29,
+      "max_repeat_count": 1,
+      "saturation": 0.034482758620689655,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 49,
+      "n_verses": 18,
+      "max_repeat_count": 1,
+      "saturation": 0.05555555555555555,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 50,
+      "n_verses": 45,
+      "max_repeat_count": 1,
+      "saturation": 0.022222222222222223,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 51,
+      "n_verses": 60,
+      "max_repeat_count": 1,
+      "saturation": 0.016666666666666666,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 52,
+      "n_verses": 49,
+      "max_repeat_count": 1,
+      "saturation": 0.02040816326530612,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 53,
+      "n_verses": 62,
+      "max_repeat_count": 1,
+      "saturation": 0.016129032258064516,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 54,
+      "n_verses": 55,
+      "max_repeat_count": 4,
+      "saturation": 0.07272727272727272,
+      "n_strict_refrains": 2,
+      "n_broad_refrains": 2,
+      "broad_refrain_total_occurrences": 7
+    },
+    {
+      "surah": 55,
+      "n_verses": 78,
+      "max_repeat_count": 31,
+      "saturation": 0.3974358974358974,
+      "n_strict_refrains": 1,
+      "n_broad_refrains": 1,
+      "broad_refrain_total_occurrences": 31
+    },
+    {
+      "surah": 56,
+      "n_verses": 96,
+      "max_repeat_count": 2,
+      "saturation": 0.020833333333333332,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 2,
+      "broad_refrain_total_occurrences": 4
+    },
+    {
+      "surah": 57,
+      "n_verses": 29,
+      "max_repeat_count": 1,
+      "saturation": 0.034482758620689655,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 58,
+      "n_verses": 22,
+      "max_repeat_count": 1,
+      "saturation": 0.045454545454545456,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 59,
+      "n_verses": 24,
+      "max_repeat_count": 1,
+      "saturation": 0.041666666666666664,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 60,
+      "n_verses": 13,
+      "max_repeat_count": 1,
+      "saturation": 0.07692307692307693,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 61,
+      "n_verses": 14,
+      "max_repeat_count": 1,
+      "saturation": 0.07142857142857142,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 62,
+      "n_verses": 11,
+      "max_repeat_count": 1,
+      "saturation": 0.09090909090909091,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 63,
+      "n_verses": 11,
+      "max_repeat_count": 1,
+      "saturation": 0.09090909090909091,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 64,
+      "n_verses": 18,
+      "max_repeat_count": 1,
+      "saturation": 0.05555555555555555,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 65,
+      "n_verses": 12,
+      "max_repeat_count": 1,
+      "saturation": 0.08333333333333333,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 66,
+      "n_verses": 12,
+      "max_repeat_count": 1,
+      "saturation": 0.08333333333333333,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 67,
+      "n_verses": 30,
+      "max_repeat_count": 1,
+      "saturation": 0.03333333333333333,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 68,
+      "n_verses": 52,
+      "max_repeat_count": 1,
+      "saturation": 0.019230769230769232,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 69,
+      "n_verses": 52,
+      "max_repeat_count": 1,
+      "saturation": 0.019230769230769232,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 70,
+      "n_verses": 44,
+      "max_repeat_count": 1,
+      "saturation": 0.022727272727272728,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 71,
+      "n_verses": 28,
+      "max_repeat_count": 1,
+      "saturation": 0.03571428571428571,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 72,
+      "n_verses": 28,
+      "max_repeat_count": 1,
+      "saturation": 0.03571428571428571,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 73,
+      "n_verses": 20,
+      "max_repeat_count": 1,
+      "saturation": 0.05,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 74,
+      "n_verses": 56,
+      "max_repeat_count": 1,
+      "saturation": 0.017857142857142856,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 75,
+      "n_verses": 40,
+      "max_repeat_count": 1,
+      "saturation": 0.025,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 76,
+      "n_verses": 31,
+      "max_repeat_count": 1,
+      "saturation": 0.03225806451612903,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 77,
+      "n_verses": 50,
+      "max_repeat_count": 10,
+      "saturation": 0.2,
+      "n_strict_refrains": 1,
+      "n_broad_refrains": 1,
+      "broad_refrain_total_occurrences": 10
+    },
+    {
+      "surah": 78,
+      "n_verses": 40,
+      "max_repeat_count": 1,
+      "saturation": 0.025,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 79,
+      "n_verses": 46,
+      "max_repeat_count": 1,
+      "saturation": 0.021739130434782608,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 80,
+      "n_verses": 42,
+      "max_repeat_count": 1,
+      "saturation": 0.023809523809523808,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 81,
+      "n_verses": 29,
+      "max_repeat_count": 1,
+      "saturation": 0.034482758620689655,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 82,
+      "n_verses": 19,
+      "max_repeat_count": 1,
+      "saturation": 0.05263157894736842,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 83,
+      "n_verses": 36,
+      "max_repeat_count": 2,
+      "saturation": 0.05555555555555555,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 2,
+      "broad_refrain_total_occurrences": 4
+    },
+    {
+      "surah": 84,
+      "n_verses": 25,
+      "max_repeat_count": 2,
+      "saturation": 0.08,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 1,
+      "broad_refrain_total_occurrences": 2
+    },
+    {
+      "surah": 85,
+      "n_verses": 22,
+      "max_repeat_count": 1,
+      "saturation": 0.045454545454545456,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 86,
+      "n_verses": 17,
+      "max_repeat_count": 1,
+      "saturation": 0.058823529411764705,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 87,
+      "n_verses": 19,
+      "max_repeat_count": 1,
+      "saturation": 0.05263157894736842,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 88,
+      "n_verses": 26,
+      "max_repeat_count": 1,
+      "saturation": 0.038461538461538464,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 89,
+      "n_verses": 30,
+      "max_repeat_count": 1,
+      "saturation": 0.03333333333333333,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 90,
+      "n_verses": 20,
+      "max_repeat_count": 1,
+      "saturation": 0.05,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 91,
+      "n_verses": 15,
+      "max_repeat_count": 1,
+      "saturation": 0.06666666666666667,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 92,
+      "n_verses": 21,
+      "max_repeat_count": 1,
+      "saturation": 0.047619047619047616,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 93,
+      "n_verses": 11,
+      "max_repeat_count": 1,
+      "saturation": 0.09090909090909091,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 94,
+      "n_verses": 8,
+      "max_repeat_count": 1,
+      "saturation": 0.125,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 95,
+      "n_verses": 8,
+      "max_repeat_count": 1,
+      "saturation": 0.125,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 96,
+      "n_verses": 19,
+      "max_repeat_count": 1,
+      "saturation": 0.05263157894736842,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 97,
+      "n_verses": 5,
+      "max_repeat_count": 1,
+      "saturation": 0.2,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 98,
+      "n_verses": 8,
+      "max_repeat_count": 1,
+      "saturation": 0.125,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 99,
+      "n_verses": 8,
+      "max_repeat_count": 1,
+      "saturation": 0.125,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 100,
+      "n_verses": 11,
+      "max_repeat_count": 1,
+      "saturation": 0.09090909090909091,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 101,
+      "n_verses": 11,
+      "max_repeat_count": 1,
+      "saturation": 0.09090909090909091,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 102,
+      "n_verses": 8,
+      "max_repeat_count": 1,
+      "saturation": 0.125,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 103,
+      "n_verses": 3,
+      "max_repeat_count": 1,
+      "saturation": 0.3333333333333333,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 104,
+      "n_verses": 9,
+      "max_repeat_count": 1,
+      "saturation": 0.1111111111111111,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 105,
+      "n_verses": 5,
+      "max_repeat_count": 1,
+      "saturation": 0.2,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 106,
+      "n_verses": 4,
+      "max_repeat_count": 1,
+      "saturation": 0.25,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 107,
+      "n_verses": 7,
+      "max_repeat_count": 1,
+      "saturation": 0.14285714285714285,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 108,
+      "n_verses": 3,
+      "max_repeat_count": 1,
+      "saturation": 0.3333333333333333,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 109,
+      "n_verses": 6,
+      "max_repeat_count": 2,
+      "saturation": 0.3333333333333333,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 1,
+      "broad_refrain_total_occurrences": 2
+    },
+    {
+      "surah": 110,
+      "n_verses": 3,
+      "max_repeat_count": 1,
+      "saturation": 0.3333333333333333,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 111,
+      "n_verses": 5,
+      "max_repeat_count": 1,
+      "saturation": 0.2,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 112,
+      "n_verses": 4,
+      "max_repeat_count": 1,
+      "saturation": 0.25,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 113,
+      "n_verses": 5,
+      "max_repeat_count": 1,
+      "saturation": 0.2,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    },
+    {
+      "surah": 114,
+      "n_verses": 6,
+      "max_repeat_count": 1,
+      "saturation": 0.16666666666666666,
+      "n_strict_refrains": 0,
+      "n_broad_refrains": 0,
+      "broad_refrain_total_occurrences": 0
+    }
+  ]
+}
