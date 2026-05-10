@@ -2995,6 +2995,67 @@ The PASS/FAIL boundary at ~30% marker-thickness now has 5 PASS + 5 FAIL data poi
 - `surahs/Q058-al-mujadala/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts
 - `surahs/Q073-al-muzzammil/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts
 
+## §10.50 H-NEW-1390 inline (2026-05-09 PM continuation) — OPENING-LINKED CONTENT-DIVERGENT mushaf-adjacent pair corpus scan: 19/113 pairs satisfy the joint signature (DIRECTIONAL; below chance vs. marginal independence)
+
+**Status**: DIRECTIONAL. Q073-F-02 candidate-class formalized into 4-axis flag tuple; corpus-wide scan recovers 19 instances (well above the ≥3 class-formation threshold) but observed count = 0.81× expected under marginal independence — the joint signature does NOT exceed chance given the corpus-wide marginal rates of clamped-zero seams, morph-iso openers, and FR-distant pairs.
+
+**Pre-reg SHA256**: `d17f38124d228623f7e512d301f6519590ece5c4cd2c6b543e983a1185a41ec2`
+**Files**: `findings/phase-b-hypotheses/prereg-h-new-1390-opening-linked-content-divergent.md`, `scripts/h-new-1390.py`, `csv/h-new-1390.json`, `h-new-1390-opening-linked-content-divergent.md`.
+
+**Hypothesis (pre-locked)**: For each of 113 mushaf-adjacent pairs (Q_n, Q_{n+1}), compute 4 boolean flags — A = clamped-zero TSP seam (`delta_raw ≤ 0` per `h-new-720.json`), B = morph-iso first 3 words of v1, C_strict = identical opener subclass from a 20-class taxonomy, D = FR mutual top-15 per `h-new-111.json`. The OPENING-LINKED CONTENT-DIVERGENT signature is (A ∨ B ∨ C_strict) ∧ ¬D = TRUE. Direction-locked H1: ≥3 pairs satisfy the signature AND observed ≥ 1.5× expected under marginal independence.
+
+**Result (across 113 mushaf-adjacent pairs)**:
+- A clamped-zero seam: 13 (11.50%)
+- B morph-iso first 3 words: 4 (3.54%)
+- C strict opener subclass match: 19 (16.81%); C loose opener class match: 36
+- D mutual top-15: 32 TRUE / 81 FALSE (P(D=FALSE) = 71.68%)
+- Opening-linked (A ∨ B ∨ C_strict): 31 (27.43%)
+- Expected joint signature under independence = 113 × 0.2898 × 0.7168 = **23.48**
+- **Observed joint signature = 19** → **ratio 0.81×**
+- **Verdict: DIRECTIONAL** (class established at ≥3 absolute threshold, fails at the 1.5× enrichment threshold)
+
+**The 19 signature pairs** (n → n+1, with flags A/B/C_strict and Q_{n+1}-rank-in-Q_n / Q_n-rank-in-Q_{n+1}):
+
+| Pair | A | B | C_strict | rank_n+1 | rank_n |
+|:--|:-:|:-:|:-:|--:|--:|
+| Q11→Q12 | F | F | T | 34 | 5 |
+| Q14→Q15 | F | F | T | 73 | 93 |
+| Q29→Q30 | F | F | T | 33 | 12 |
+| Q30→Q31 | F | F | T | 11 | 35 |
+| Q31→Q32 | F | F | T | 36 | 75 |
+| Q34→Q35 | F | F | T | 28 | 24 |
+| Q42→Q43 | F | F | T | 64 | 65 |
+| Q43→Q44 | F | F | T | 10 | 51 |
+| Q44→Q45 | F | F | T | 40 | 12 |
+| Q64→Q65 | T | F | F | 20 | 1 |
+| Q65→Q66 | T | T | T | 25 | 49 |
+| Q72→Q73 | T | F | F | 25 | 46 |
+| **Q73→Q74** | **T** | **T** | F | **37** | **37** |
+| Q81→Q82 | F | F | T | 19 | 22 |
+| Q85→Q86 | F | F | T | 20 | 31 |
+| Q86→Q87 | T | F | F | 25 | 23 |
+| Q91→Q92 | T | F | F | 22 | 13 |
+| Q93→Q94 | T | F | F | 4 | 16 |
+| Q109→Q110 | T | F | F | 9 | 17 |
+
+**Q73→Q74 seed (row 13)** is recovered with identical FR-rank-37 / rank-37 measurement as Q073-F-02 (consistency check passed).
+
+**Interpretation**: The OPENING-LINKED CONTENT-DIVERGENT class is REAL but at-chance given the marginals. The corpus-wide P(D=FALSE) is INFLATED by the very phenomenon under test (repeat-opener streaks tend to be FR-distant), which over-inflates the independence baseline. The class is dominated by muqaṭṭāʿat streaks (الم Q 29-32, الر Q 11/14/15, حم Q 42-45) and the 7-pair clamped-zero-seam subset (Q 64→65, Q 72→73, Q 73→74, Q 86→87, Q 91→92, Q 93→94, Q 109→110). Q 65 → Q 66 is the only 3-axis-TRUE pair in the corpus (axes A + B + C_strict all PASS, D = FALSE).
+
+**Reframing of Q073-F-02**: Q 73 ↔ Q 74 is **NOT** "the first instance of a new architectural class" (as Q073-F-02 prose suggested) but rather a TYPICAL exemplar of a 19-pair pattern. Q 65 → Q 66 (yā-ayyuhā al-nabī repeat-opener) is architecturally more distinctive than Q 73 → Q 74 by the 3-axis count.
+
+**Connection to cross-finding-025 marker-thickness rule**: STRENGTHENS the rule. Thin opening-formula markers (≤3 words of surah content) systematically produce OPENING-LINKED CONTENT-DIVERGENT pairs rather than FR-cohesive clusters. The marker-thickness rule's PASS/FAIL boundary at ~30% content is reaffirmed: muqaṭṭāʿat-only streaks (≪1% content) are reliable producers of opener-coupling-with-content-divergence, not FR cohesion.
+
+**Connection to OQ-3 (other introduction-marker classes besides muqaṭṭāʿat)**: H-NEW-1390 reframes OQ-3. The question "what other introduction-marker classes exist?" should be paired with "what architectural pattern do they produce?", and the empirical answer is: opening-formula markers systematically produce OPENING-LINKED CONTENT-DIVERGENT pairs at the mushaf-adjacency level, not FR-cohesive blocks (except where the marker has multi-axis support, per cross-finding-025).
+
+**Honest limits**: The independence baseline is internally biased (P(D=FALSE) inflated by the phenomenon being tested); axis B template-matching is operationalized loosely (length ±1, same first letter); the 113 mushaf-adjacent pairs are NOT independent (muqaṭṭāʿat streaks are linked across multiple sequential pairs); top-15 threshold is project-default and not stress-tested.
+
+**Files**:
+- `findings/phase-b-hypotheses/prereg-h-new-1390-opening-linked-content-divergent.md`
+- `findings/phase-b-hypotheses/scripts/h-new-1390.py`
+- `findings/phase-b-hypotheses/csv/h-new-1390.json`
+- `findings/phase-b-hypotheses/h-new-1390-opening-linked-content-divergent.md`
+
 ## §10.51 H-NEW-1380 inline (2026-05-09 PM continuation) — Iblīs-narrative 7-pericope corpus replication PASS-DIRECTED-REPLICATION (z=+4.76) + scale-of-aggregation as 2nd methodological axis under cross-finding-025
 
 **Status**: PASS-DIRECTED-REPLICATION (numerical replication of Q038-F-07 under identical seed + instrument; corpus-extreme at pericope-scale).

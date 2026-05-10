@@ -1,0 +1,2971 @@
+{
+  "test_id": "H-NEW-1390",
+  "prereg_sha": "d17f38124d228623f7e512d301f6519590ece5c4cd2c6b543e983a1185a41ec2",
+  "seed": 20260509,
+  "title": "OPENING-LINKED CONTENT-DIVERGENT mushaf-adjacent pair corpus scan",
+  "n_pairs_scanned": 113,
+  "marginals": {
+    "n_A_clamped_zero": 13,
+    "n_B_morph_iso": 4,
+    "n_C_strict_opener_subclass": 19,
+    "n_C_loose_opener_class": 36,
+    "n_D_false": 81,
+    "n_opening_linked": 31,
+    "p_A": 0.11504424778761062,
+    "p_B": 0.035398230088495575,
+    "p_C_strict": 0.168141592920354,
+    "p_D_false": 0.7168141592920354,
+    "p_opening_linked": 0.28990080373027327
+  },
+  "expected_signature_under_independence": {
+    "p_signature_expected": 0.2078050009040012,
+    "expected_count": 23.481965102152135
+  },
+  "observed_signature_count": 19,
+  "ratio_observed_to_expected": 0.8091316002449318,
+  "verdict": "DIRECTIONAL (signature exists but at chance level given marginals)",
+  "signature_pairs": [
+    {
+      "n": 11,
+      "np1": 12,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 34,
+      "rank_n_in_np1": 5,
+      "v1_n": "الر ۚ كتاب أحكمت آياته",
+      "v1_np1": "الر ۚ تلك آيات الكتاب"
+    },
+    {
+      "n": 14,
+      "np1": 15,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 73,
+      "rank_n_in_np1": 93,
+      "v1_n": "الر ۚ كتاب أنزلناه إليك",
+      "v1_np1": "الر ۚ تلك آيات الكتاب"
+    },
+    {
+      "n": 29,
+      "np1": 30,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 33,
+      "rank_n_in_np1": 12,
+      "v1_n": "الم",
+      "v1_np1": "الم"
+    },
+    {
+      "n": 30,
+      "np1": 31,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 11,
+      "rank_n_in_np1": 35,
+      "v1_n": "الم",
+      "v1_np1": "الم"
+    },
+    {
+      "n": 31,
+      "np1": 32,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 36,
+      "rank_n_in_np1": 75,
+      "v1_n": "الم",
+      "v1_np1": "الم"
+    },
+    {
+      "n": 34,
+      "np1": 35,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 28,
+      "rank_n_in_np1": 24,
+      "v1_n": "الحمد لله الذي له ما",
+      "v1_np1": "الحمد لله فاطر السماوات والأرض"
+    },
+    {
+      "n": 42,
+      "np1": 43,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 64,
+      "rank_n_in_np1": 65,
+      "v1_n": "حم",
+      "v1_np1": "حم"
+    },
+    {
+      "n": 43,
+      "np1": 44,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 10,
+      "rank_n_in_np1": 51,
+      "v1_n": "حم",
+      "v1_np1": "حم"
+    },
+    {
+      "n": 44,
+      "np1": 45,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 40,
+      "rank_n_in_np1": 12,
+      "v1_n": "حم",
+      "v1_np1": "حم"
+    },
+    {
+      "n": 64,
+      "np1": 65,
+      "A": true,
+      "B": false,
+      "C_strict": false,
+      "C_loose": false,
+      "rank_np1_in_n": 20,
+      "rank_n_in_np1": 1,
+      "v1_n": "يسبح لله ما في السماوات",
+      "v1_np1": "يا أيها النبي إذا طلقتم"
+    },
+    {
+      "n": 65,
+      "np1": 66,
+      "A": true,
+      "B": true,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 25,
+      "rank_n_in_np1": 49,
+      "v1_n": "يا أيها النبي إذا طلقتم",
+      "v1_np1": "يا أيها النبي لم تحرم"
+    },
+    {
+      "n": 72,
+      "np1": 73,
+      "A": true,
+      "B": false,
+      "C_strict": false,
+      "C_loose": false,
+      "rank_np1_in_n": 25,
+      "rank_n_in_np1": 46,
+      "v1_n": "قل أوحي إلي أنه استمع",
+      "v1_np1": "يا أيها المزمل"
+    },
+    {
+      "n": 73,
+      "np1": 74,
+      "A": true,
+      "B": true,
+      "C_strict": false,
+      "C_loose": true,
+      "rank_np1_in_n": 37,
+      "rank_n_in_np1": 37,
+      "v1_n": "يا أيها المزمل",
+      "v1_np1": "يا أيها المدثر"
+    },
+    {
+      "n": 81,
+      "np1": 82,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 19,
+      "rank_n_in_np1": 22,
+      "v1_n": "إذا الشمس كورت",
+      "v1_np1": "إذا السماء انفطرت"
+    },
+    {
+      "n": 85,
+      "np1": 86,
+      "A": false,
+      "B": false,
+      "C_strict": true,
+      "C_loose": true,
+      "rank_np1_in_n": 20,
+      "rank_n_in_np1": 31,
+      "v1_n": "والسماء ذات البروج",
+      "v1_np1": "والسماء والطارق"
+    },
+    {
+      "n": 86,
+      "np1": 87,
+      "A": true,
+      "B": false,
+      "C_strict": false,
+      "C_loose": false,
+      "rank_np1_in_n": 25,
+      "rank_n_in_np1": 23,
+      "v1_n": "والسماء والطارق",
+      "v1_np1": "سبح اسم ربك الأعلى"
+    },
+    {
+      "n": 91,
+      "np1": 92,
+      "A": true,
+      "B": false,
+      "C_strict": false,
+      "C_loose": true,
+      "rank_np1_in_n": 22,
+      "rank_n_in_np1": 13,
+      "v1_n": "والشمس وضحاها",
+      "v1_np1": "والليل إذا يغشى"
+    },
+    {
+      "n": 93,
+      "np1": 94,
+      "A": true,
+      "B": false,
+      "C_strict": false,
+      "C_loose": false,
+      "rank_np1_in_n": 4,
+      "rank_n_in_np1": 16,
+      "v1_n": "والضحى",
+      "v1_np1": "ألم نشرح لك صدرك"
+    },
+    {
+      "n": 109,
+      "np1": 110,
+      "A": true,
+      "B": false,
+      "C_strict": false,
+      "C_loose": false,
+      "rank_np1_in_n": 9,
+      "rank_n_in_np1": 17,
+      "v1_n": "قل يا أيها الكافرون",
+      "v1_np1": "إذا جاء نصر الله والفتح"
+    }
+  ],
+  "all_rows": [
+    {
+      "n": 1,
+      "np1": 2,
+      "v1_n": "بسم الله الرحمن الرحيم",
+      "v1_np1": "الم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "basmala",
+        null
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الم"
+      ],
+      "rank_np1_in_n": 110,
+      "rank_n_in_np1": 75,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.177623
+    },
+    {
+      "n": 2,
+      "np1": 3,
+      "v1_n": "الم",
+      "v1_np1": "الم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "الم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الم"
+      ],
+      "rank_np1_in_n": 1,
+      "rank_n_in_np1": 1,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.63093
+    },
+    {
+      "n": 3,
+      "np1": 4,
+      "v1_n": "الم",
+      "v1_np1": "يا أيها الناس اتقوا ربكم",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "الم"
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "الناس"
+      ],
+      "rank_np1_in_n": 3,
+      "rank_n_in_np1": 3,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.793084
+    },
+    {
+      "n": 4,
+      "np1": 5,
+      "v1_n": "يا أيها الناس اتقوا ربكم",
+      "v1_np1": "يا أيها الذين آمنوا أوفوا",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": true,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "الناس"
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "الذين"
+      ],
+      "rank_np1_in_n": 2,
+      "rank_n_in_np1": 3,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.778367
+    },
+    {
+      "n": 5,
+      "np1": 6,
+      "v1_n": "يا أيها الذين آمنوا أوفوا",
+      "v1_np1": "الحمد لله الذي خلق السماوات",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "الذين"
+      ],
+      "opener_class_np1": [
+        "al-hamd",
+        null
+      ],
+      "rank_np1_in_n": 5,
+      "rank_n_in_np1": 12,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.860156
+    },
+    {
+      "n": 6,
+      "np1": 7,
+      "v1_n": "الحمد لله الذي خلق السماوات",
+      "v1_np1": "المص",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "al-hamd",
+        null
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "المص"
+      ],
+      "rank_np1_in_n": 1,
+      "rank_n_in_np1": 1,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.720799
+    },
+    {
+      "n": 7,
+      "np1": 8,
+      "v1_n": "المص",
+      "v1_np1": "يسألونك عن الأنفال ۖ قل",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "المص"
+      ],
+      "opener_class_np1": [
+        "other",
+        "يسألونك"
+      ],
+      "rank_np1_in_n": 51,
+      "rank_n_in_np1": 40,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.030068
+    },
+    {
+      "n": 8,
+      "np1": 9,
+      "v1_n": "يسألونك عن الأنفال ۖ قل",
+      "v1_np1": "براءة من الله ورسوله إلى",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "other",
+        "يسألونك"
+      ],
+      "opener_class_np1": [
+        "other",
+        "براءة"
+      ],
+      "rank_np1_in_n": 9,
+      "rank_n_in_np1": 6,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.910997
+    },
+    {
+      "n": 9,
+      "np1": 10,
+      "v1_n": "براءة من الله ورسوله إلى",
+      "v1_np1": "الر ۚ تلك آيات الكتاب",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "براءة"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الر"
+      ],
+      "rank_np1_in_n": 31,
+      "rank_n_in_np1": 61,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.068939
+    },
+    {
+      "n": 10,
+      "np1": 11,
+      "v1_n": "الر ۚ تلك آيات الكتاب",
+      "v1_np1": "الر ۚ كتاب أحكمت آياته",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "الر"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الر"
+      ],
+      "rank_np1_in_n": 8,
+      "rank_n_in_np1": 2,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.805201
+    },
+    {
+      "n": 11,
+      "np1": 12,
+      "v1_n": "الر ۚ كتاب أحكمت آياته",
+      "v1_np1": "الر ۚ تلك آيات الكتاب",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "الر"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الر"
+      ],
+      "rank_np1_in_n": 34,
+      "rank_n_in_np1": 5,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.963772
+    },
+    {
+      "n": 12,
+      "np1": 13,
+      "v1_n": "الر ۚ تلك آيات الكتاب",
+      "v1_np1": "المر ۚ تلك آيات الكتاب",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "الر"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "المر"
+      ],
+      "rank_np1_in_n": 38,
+      "rank_n_in_np1": 107,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.068294
+    },
+    {
+      "n": 13,
+      "np1": 14,
+      "v1_n": "المر ۚ تلك آيات الكتاب",
+      "v1_np1": "الر ۚ كتاب أنزلناه إليك",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "المر"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الر"
+      ],
+      "rank_np1_in_n": 1,
+      "rank_n_in_np1": 1,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.783843
+    },
+    {
+      "n": 14,
+      "np1": 15,
+      "v1_n": "الر ۚ كتاب أنزلناه إليك",
+      "v1_np1": "الر ۚ تلك آيات الكتاب",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "الر"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الر"
+      ],
+      "rank_np1_in_n": 73,
+      "rank_n_in_np1": 93,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 1.009111
+    },
+    {
+      "n": 15,
+      "np1": 16,
+      "v1_n": "الر ۚ تلك آيات الكتاب",
+      "v1_np1": "أتى أمر الله فلا تستعجلوه",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "الر"
+      ],
+      "opener_class_np1": [
+        "other",
+        "أتى"
+      ],
+      "rank_np1_in_n": 90,
+      "rank_n_in_np1": 47,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.002022
+    },
+    {
+      "n": 16,
+      "np1": 17,
+      "v1_n": "أتى أمر الله فلا تستعجلوه",
+      "v1_np1": "سبحان الذي أسرى بعبده ليلا",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "other",
+        "أتى"
+      ],
+      "opener_class_np1": [
+        "other",
+        "سبحان"
+      ],
+      "rank_np1_in_n": 36,
+      "rank_n_in_np1": 28,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.962333
+    },
+    {
+      "n": 17,
+      "np1": 18,
+      "v1_n": "سبحان الذي أسرى بعبده ليلا",
+      "v1_np1": "الحمد لله الذي أنزل على",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "سبحان"
+      ],
+      "opener_class_np1": [
+        "al-hamd",
+        null
+      ],
+      "rank_np1_in_n": 10,
+      "rank_n_in_np1": 7,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.901301
+    },
+    {
+      "n": 18,
+      "np1": 19,
+      "v1_n": "الحمد لله الذي أنزل على",
+      "v1_np1": "كهيعص",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "al-hamd",
+        null
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "كهيعص"
+      ],
+      "rank_np1_in_n": 15,
+      "rank_n_in_np1": 12,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.925359
+    },
+    {
+      "n": 19,
+      "np1": 20,
+      "v1_n": "كهيعص",
+      "v1_np1": "طه",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "كهيعص"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "طه"
+      ],
+      "rank_np1_in_n": 26,
+      "rank_n_in_np1": 28,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.980606
+    },
+    {
+      "n": 20,
+      "np1": 21,
+      "v1_n": "طه",
+      "v1_np1": "اقترب للناس حسابهم وهم في",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "طه"
+      ],
+      "opener_class_np1": [
+        "other",
+        "اقترب"
+      ],
+      "rank_np1_in_n": 24,
+      "rank_n_in_np1": 40,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.972137
+    },
+    {
+      "n": 21,
+      "np1": 22,
+      "v1_n": "اقترب للناس حسابهم وهم في",
+      "v1_np1": "يا أيها الناس اتقوا ربكم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "اقترب"
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "الناس"
+      ],
+      "rank_np1_in_n": 34,
+      "rank_n_in_np1": 43,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.959174
+    },
+    {
+      "n": 22,
+      "np1": 23,
+      "v1_n": "يا أيها الناس اتقوا ربكم",
+      "v1_np1": "قد أفلح المؤمنون",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "الناس"
+      ],
+      "opener_class_np1": [
+        "qad",
+        null
+      ],
+      "rank_np1_in_n": 39,
+      "rank_n_in_np1": 46,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.952979
+    },
+    {
+      "n": 23,
+      "np1": 24,
+      "v1_n": "قد أفلح المؤمنون",
+      "v1_np1": "سورة أنزلناها وفرضناها وأنزلنا فيها",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "qad",
+        null
+      ],
+      "opener_class_np1": [
+        "other",
+        "سورة"
+      ],
+      "rank_np1_in_n": 103,
+      "rank_n_in_np1": 40,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.049734
+    },
+    {
+      "n": 24,
+      "np1": 25,
+      "v1_n": "سورة أنزلناها وفرضناها وأنزلنا فيها",
+      "v1_np1": "تبارك الذي نزل الفرقان على",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "سورة"
+      ],
+      "opener_class_np1": [
+        "tabaraka",
+        null
+      ],
+      "rank_np1_in_n": 80,
+      "rank_n_in_np1": 111,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.129055
+    },
+    {
+      "n": 25,
+      "np1": 26,
+      "v1_n": "تبارك الذي نزل الفرقان على",
+      "v1_np1": "طسم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "tabaraka",
+        null
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "طسم"
+      ],
+      "rank_np1_in_n": 45,
+      "rank_n_in_np1": 15,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.959584
+    },
+    {
+      "n": 26,
+      "np1": 27,
+      "v1_n": "طسم",
+      "v1_np1": "طس ۚ تلك آيات القرآن",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "طسم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "طس"
+      ],
+      "rank_np1_in_n": 14,
+      "rank_n_in_np1": 40,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.958539
+    },
+    {
+      "n": 27,
+      "np1": 28,
+      "v1_n": "طس ۚ تلك آيات القرآن",
+      "v1_np1": "طسم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "طس"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "طسم"
+      ],
+      "rank_np1_in_n": 3,
+      "rank_n_in_np1": 2,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.804754
+    },
+    {
+      "n": 28,
+      "np1": 29,
+      "v1_n": "طسم",
+      "v1_np1": "الم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "طسم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الم"
+      ],
+      "rank_np1_in_n": 11,
+      "rank_n_in_np1": 21,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.886506
+    },
+    {
+      "n": 29,
+      "np1": 30,
+      "v1_n": "الم",
+      "v1_np1": "الم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "الم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الم"
+      ],
+      "rank_np1_in_n": 33,
+      "rank_n_in_np1": 12,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.91533
+    },
+    {
+      "n": 30,
+      "np1": 31,
+      "v1_n": "الم",
+      "v1_np1": "الم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "الم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الم"
+      ],
+      "rank_np1_in_n": 11,
+      "rank_n_in_np1": 35,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.90887
+    },
+    {
+      "n": 31,
+      "np1": 32,
+      "v1_n": "الم",
+      "v1_np1": "الم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "الم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "الم"
+      ],
+      "rank_np1_in_n": 36,
+      "rank_n_in_np1": 75,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.909461
+    },
+    {
+      "n": 32,
+      "np1": 33,
+      "v1_n": "الم",
+      "v1_np1": "يا أيها النبي اتق الله",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "الم"
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "النبي"
+      ],
+      "rank_np1_in_n": 111,
+      "rank_n_in_np1": 66,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.132955
+    },
+    {
+      "n": 33,
+      "np1": 34,
+      "v1_n": "يا أيها النبي اتق الله",
+      "v1_np1": "الحمد لله الذي له ما",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "النبي"
+      ],
+      "opener_class_np1": [
+        "al-hamd",
+        null
+      ],
+      "rank_np1_in_n": 63,
+      "rank_n_in_np1": 109,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.115391
+    },
+    {
+      "n": 34,
+      "np1": 35,
+      "v1_n": "الحمد لله الذي له ما",
+      "v1_np1": "الحمد لله فاطر السماوات والأرض",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "al-hamd",
+        null
+      ],
+      "opener_class_np1": [
+        "al-hamd",
+        null
+      ],
+      "rank_np1_in_n": 28,
+      "rank_n_in_np1": 24,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.926803
+    },
+    {
+      "n": 35,
+      "np1": 36,
+      "v1_n": "الحمد لله فاطر السماوات والأرض",
+      "v1_np1": "يس",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "al-hamd",
+        null
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "يس"
+      ],
+      "rank_np1_in_n": 31,
+      "rank_n_in_np1": 58,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.943094
+    },
+    {
+      "n": 36,
+      "np1": 37,
+      "v1_n": "يس",
+      "v1_np1": "والصافات صفا",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "يس"
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والصافات"
+      ],
+      "rank_np1_in_n": 21,
+      "rank_n_in_np1": 7,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.900232
+    },
+    {
+      "n": 37,
+      "np1": 38,
+      "v1_n": "والصافات صفا",
+      "v1_np1": "ص ۚ والقرآن ذي الذكر",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "والصافات"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "ص"
+      ],
+      "rank_np1_in_n": 9,
+      "rank_n_in_np1": 12,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.903476
+    },
+    {
+      "n": 38,
+      "np1": 39,
+      "v1_n": "ص ۚ والقرآن ذي الذكر",
+      "v1_np1": "تنزيل الكتاب من الله العزيز",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "ص"
+      ],
+      "opener_class_np1": [
+        "tanzil",
+        null
+      ],
+      "rank_np1_in_n": 43,
+      "rank_n_in_np1": 31,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.936449
+    },
+    {
+      "n": 39,
+      "np1": 40,
+      "v1_n": "تنزيل الكتاب من الله العزيز",
+      "v1_np1": "حم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "tanzil",
+        null
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "حم"
+      ],
+      "rank_np1_in_n": 2,
+      "rank_n_in_np1": 2,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.795302
+    },
+    {
+      "n": 40,
+      "np1": 41,
+      "v1_n": "حم",
+      "v1_np1": "حم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "حم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "حم"
+      ],
+      "rank_np1_in_n": 12,
+      "rank_n_in_np1": 9,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.840334
+    },
+    {
+      "n": 41,
+      "np1": 42,
+      "v1_n": "حم",
+      "v1_np1": "حم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "حم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "حم"
+      ],
+      "rank_np1_in_n": 15,
+      "rank_n_in_np1": 6,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.854007
+    },
+    {
+      "n": 42,
+      "np1": 43,
+      "v1_n": "حم",
+      "v1_np1": "حم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "حم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "حم"
+      ],
+      "rank_np1_in_n": 64,
+      "rank_n_in_np1": 65,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.991218
+    },
+    {
+      "n": 43,
+      "np1": 44,
+      "v1_n": "حم",
+      "v1_np1": "حم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "حم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "حم"
+      ],
+      "rank_np1_in_n": 10,
+      "rank_n_in_np1": 51,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.864706
+    },
+    {
+      "n": 44,
+      "np1": 45,
+      "v1_n": "حم",
+      "v1_np1": "حم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "حم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "حم"
+      ],
+      "rank_np1_in_n": 40,
+      "rank_n_in_np1": 12,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.843896
+    },
+    {
+      "n": 45,
+      "np1": 46,
+      "v1_n": "حم",
+      "v1_np1": "حم",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "muqatta",
+        "حم"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "حم"
+      ],
+      "rank_np1_in_n": 8,
+      "rank_n_in_np1": 4,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.811217
+    },
+    {
+      "n": 46,
+      "np1": 47,
+      "v1_n": "حم",
+      "v1_np1": "الذين كفروا وصدوا عن سبيل",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "حم"
+      ],
+      "opener_class_np1": [
+        "other",
+        "الذين"
+      ],
+      "rank_np1_in_n": 87,
+      "rank_n_in_np1": 65,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.990505
+    },
+    {
+      "n": 47,
+      "np1": 48,
+      "v1_n": "الذين كفروا وصدوا عن سبيل",
+      "v1_np1": "إنا فتحنا لك فتحا مبينا",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "الذين"
+      ],
+      "opener_class_np1": [
+        "inna",
+        null
+      ],
+      "rank_np1_in_n": 8,
+      "rank_n_in_np1": 13,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.889264
+    },
+    {
+      "n": 48,
+      "np1": 49,
+      "v1_n": "إنا فتحنا لك فتحا مبينا",
+      "v1_np1": "يا أيها الذين آمنوا لا",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "inna",
+        null
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "الذين"
+      ],
+      "rank_np1_in_n": 6,
+      "rank_n_in_np1": 16,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.858354
+    },
+    {
+      "n": 49,
+      "np1": 50,
+      "v1_n": "يا أيها الذين آمنوا لا",
+      "v1_np1": "ق ۚ والقرآن المجيد",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "الذين"
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "ق"
+      ],
+      "rank_np1_in_n": 85,
+      "rank_n_in_np1": 85,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.003462
+    },
+    {
+      "n": 50,
+      "np1": 51,
+      "v1_n": "ق ۚ والقرآن المجيد",
+      "v1_np1": "والذاريات ذروا",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "ق"
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والذاريات"
+      ],
+      "rank_np1_in_n": 22,
+      "rank_n_in_np1": 44,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.823948
+    },
+    {
+      "n": 51,
+      "np1": 52,
+      "v1_n": "والذاريات ذروا",
+      "v1_np1": "والطور",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "wa-oath",
+        "والذاريات"
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والطور"
+      ],
+      "rank_np1_in_n": 4,
+      "rank_n_in_np1": 24,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.754458
+    },
+    {
+      "n": 52,
+      "np1": 53,
+      "v1_n": "والطور",
+      "v1_np1": "والنجم إذا هوى",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "wa-oath",
+        "والطور"
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والنجم"
+      ],
+      "rank_np1_in_n": 74,
+      "rank_n_in_np1": 54,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.928275
+    },
+    {
+      "n": 53,
+      "np1": 54,
+      "v1_n": "والنجم إذا هوى",
+      "v1_np1": "اقتربت الساعة وانشق القمر",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "والنجم"
+      ],
+      "opener_class_np1": [
+        "other",
+        "اقتربت"
+      ],
+      "rank_np1_in_n": 71,
+      "rank_n_in_np1": 66,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.006282
+    },
+    {
+      "n": 54,
+      "np1": 55,
+      "v1_n": "اقتربت الساعة وانشق القمر",
+      "v1_np1": "الرحمن",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "other",
+        "اقتربت"
+      ],
+      "opener_class_np1": [
+        "other",
+        "الرحمن"
+      ],
+      "rank_np1_in_n": 102,
+      "rank_n_in_np1": 56,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.151559
+    },
+    {
+      "n": 55,
+      "np1": 56,
+      "v1_n": "الرحمن",
+      "v1_np1": "إذا وقعت الواقعة",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "الرحمن"
+      ],
+      "opener_class_np1": [
+        "idha",
+        null
+      ],
+      "rank_np1_in_n": 55,
+      "rank_n_in_np1": 83,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.149328
+    },
+    {
+      "n": 56,
+      "np1": 57,
+      "v1_n": "إذا وقعت الواقعة",
+      "v1_np1": "سبح لله ما في السماوات",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "idha",
+        null
+      ],
+      "opener_class_np1": [
+        "sabbaha",
+        null
+      ],
+      "rank_np1_in_n": 76,
+      "rank_n_in_np1": 112,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 1.115634
+    },
+    {
+      "n": 57,
+      "np1": 58,
+      "v1_n": "سبح لله ما في السماوات",
+      "v1_np1": "قد سمع الله قول التي",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "sabbaha",
+        null
+      ],
+      "opener_class_np1": [
+        "qad",
+        null
+      ],
+      "rank_np1_in_n": 20,
+      "rank_n_in_np1": 13,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.88904
+    },
+    {
+      "n": 58,
+      "np1": 59,
+      "v1_n": "قد سمع الله قول التي",
+      "v1_np1": "سبح لله ما في السماوات",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "qad",
+        null
+      ],
+      "opener_class_np1": [
+        "sabbaha",
+        null
+      ],
+      "rank_np1_in_n": 4,
+      "rank_n_in_np1": 14,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.830137
+    },
+    {
+      "n": 59,
+      "np1": 60,
+      "v1_n": "سبح لله ما في السماوات",
+      "v1_np1": "يا أيها الذين آمنوا لا",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "sabbaha",
+        null
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "الذين"
+      ],
+      "rank_np1_in_n": 7,
+      "rank_n_in_np1": 8,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.816186
+    },
+    {
+      "n": 60,
+      "np1": 61,
+      "v1_n": "يا أيها الذين آمنوا لا",
+      "v1_np1": "سبح لله ما في السماوات",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "الذين"
+      ],
+      "opener_class_np1": [
+        "sabbaha",
+        null
+      ],
+      "rank_np1_in_n": 4,
+      "rank_n_in_np1": 37,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.807414
+    },
+    {
+      "n": 61,
+      "np1": 62,
+      "v1_n": "سبح لله ما في السماوات",
+      "v1_np1": "يسبح لله ما في السماوات",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "sabbaha",
+        null
+      ],
+      "opener_class_np1": [
+        "yusabbihu",
+        null
+      ],
+      "rank_np1_in_n": 10,
+      "rank_n_in_np1": 31,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.734549
+    },
+    {
+      "n": 62,
+      "np1": 63,
+      "v1_n": "يسبح لله ما في السماوات",
+      "v1_np1": "إذا جاءك المنافقون قالوا نشهد",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "yusabbihu",
+        null
+      ],
+      "opener_class_np1": [
+        "idha",
+        null
+      ],
+      "rank_np1_in_n": 18,
+      "rank_n_in_np1": 9,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.685961
+    },
+    {
+      "n": 63,
+      "np1": 64,
+      "v1_n": "إذا جاءك المنافقون قالوا نشهد",
+      "v1_np1": "يسبح لله ما في السماوات",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "idha",
+        null
+      ],
+      "opener_class_np1": [
+        "yusabbihu",
+        null
+      ],
+      "rank_np1_in_n": 13,
+      "rank_n_in_np1": 1,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.695406
+    },
+    {
+      "n": 64,
+      "np1": 65,
+      "v1_n": "يسبح لله ما في السماوات",
+      "v1_np1": "يا أيها النبي إذا طلقتم",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "yusabbihu",
+        null
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "النبي"
+      ],
+      "rank_np1_in_n": 20,
+      "rank_n_in_np1": 1,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.777412
+    },
+    {
+      "n": 65,
+      "np1": 66,
+      "v1_n": "يا أيها النبي إذا طلقتم",
+      "v1_np1": "يا أيها النبي لم تحرم",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": true,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "النبي"
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "النبي"
+      ],
+      "rank_np1_in_n": 25,
+      "rank_n_in_np1": 49,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.870463
+    },
+    {
+      "n": 66,
+      "np1": 67,
+      "v1_n": "يا أيها النبي لم تحرم",
+      "v1_np1": "تبارك الذي بيده الملك وهو",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "النبي"
+      ],
+      "opener_class_np1": [
+        "tabaraka",
+        null
+      ],
+      "rank_np1_in_n": 67,
+      "rank_n_in_np1": 80,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.940813
+    },
+    {
+      "n": 67,
+      "np1": 68,
+      "v1_n": "تبارك الذي بيده الملك وهو",
+      "v1_np1": "ن ۚ والقلم وما يسطرون",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "tabaraka",
+        null
+      ],
+      "opener_class_np1": [
+        "muqatta",
+        "ن"
+      ],
+      "rank_np1_in_n": 42,
+      "rank_n_in_np1": 47,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.837853
+    },
+    {
+      "n": 68,
+      "np1": 69,
+      "v1_n": "ن ۚ والقلم وما يسطرون",
+      "v1_np1": "الحاقة",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "muqatta",
+        "ن"
+      ],
+      "opener_class_np1": [
+        "other",
+        "الحاقة"
+      ],
+      "rank_np1_in_n": 46,
+      "rank_n_in_np1": 48,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.833625
+    },
+    {
+      "n": 69,
+      "np1": 70,
+      "v1_n": "الحاقة",
+      "v1_np1": "سأل سائل بعذاب واقع",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "other",
+        "الحاقة"
+      ],
+      "opener_class_np1": [
+        "other",
+        "سأل"
+      ],
+      "rank_np1_in_n": 46,
+      "rank_n_in_np1": 48,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.820207
+    },
+    {
+      "n": 70,
+      "np1": 71,
+      "v1_n": "سأل سائل بعذاب واقع",
+      "v1_np1": "إنا أرسلنا نوحا إلى قومه",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "سأل"
+      ],
+      "opener_class_np1": [
+        "inna",
+        null
+      ],
+      "rank_np1_in_n": 55,
+      "rank_n_in_np1": 53,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.862234
+    },
+    {
+      "n": 71,
+      "np1": 72,
+      "v1_n": "إنا أرسلنا نوحا إلى قومه",
+      "v1_np1": "قل أوحي إلي أنه استمع",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "inna",
+        null
+      ],
+      "opener_class_np1": [
+        "qul",
+        null
+      ],
+      "rank_np1_in_n": 41,
+      "rank_n_in_np1": 31,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.807578
+    },
+    {
+      "n": 72,
+      "np1": 73,
+      "v1_n": "قل أوحي إلي أنه استمع",
+      "v1_np1": "يا أيها المزمل",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "qul",
+        null
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "المزمل"
+      ],
+      "rank_np1_in_n": 25,
+      "rank_n_in_np1": 46,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.792572
+    },
+    {
+      "n": 73,
+      "np1": 74,
+      "v1_n": "يا أيها المزمل",
+      "v1_np1": "يا أيها المدثر",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": true,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "المزمل"
+      ],
+      "opener_class_np1": [
+        "ya-ayyuha",
+        "المدثر"
+      ],
+      "rank_np1_in_n": 37,
+      "rank_n_in_np1": 37,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.761384
+    },
+    {
+      "n": 74,
+      "np1": 75,
+      "v1_n": "يا أيها المدثر",
+      "v1_np1": "لا أقسم بيوم القيامة",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "ya-ayyuha",
+        "المدثر"
+      ],
+      "opener_class_np1": [
+        "la",
+        null
+      ],
+      "rank_np1_in_n": 50,
+      "rank_n_in_np1": 43,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.809957
+    },
+    {
+      "n": 75,
+      "np1": 76,
+      "v1_n": "لا أقسم بيوم القيامة",
+      "v1_np1": "هل أتى على الإنسان حين",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "la",
+        null
+      ],
+      "opener_class_np1": [
+        "hal",
+        null
+      ],
+      "rank_np1_in_n": 44,
+      "rank_n_in_np1": 43,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.816524
+    },
+    {
+      "n": 76,
+      "np1": 77,
+      "v1_n": "هل أتى على الإنسان حين",
+      "v1_np1": "والمرسلات عرفا",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "hal",
+        null
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والمرسلات"
+      ],
+      "rank_np1_in_n": 47,
+      "rank_n_in_np1": 48,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.843038
+    },
+    {
+      "n": 77,
+      "np1": 78,
+      "v1_n": "والمرسلات عرفا",
+      "v1_np1": "عم يتساءلون",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "والمرسلات"
+      ],
+      "opener_class_np1": [
+        "other",
+        "عم"
+      ],
+      "rank_np1_in_n": 29,
+      "rank_n_in_np1": 32,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.703319
+    },
+    {
+      "n": 78,
+      "np1": 79,
+      "v1_n": "عم يتساءلون",
+      "v1_np1": "والنازعات غرقا",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "عم"
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والنازعات"
+      ],
+      "rank_np1_in_n": 37,
+      "rank_n_in_np1": 37,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.720817
+    },
+    {
+      "n": 79,
+      "np1": 80,
+      "v1_n": "والنازعات غرقا",
+      "v1_np1": "عبس وتولى",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "والنازعات"
+      ],
+      "opener_class_np1": [
+        "other",
+        "عبس"
+      ],
+      "rank_np1_in_n": 33,
+      "rank_n_in_np1": 35,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.706355
+    },
+    {
+      "n": 80,
+      "np1": 81,
+      "v1_n": "عبس وتولى",
+      "v1_np1": "إذا الشمس كورت",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "عبس"
+      ],
+      "opener_class_np1": [
+        "idha",
+        null
+      ],
+      "rank_np1_in_n": 29,
+      "rank_n_in_np1": 33,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.635376
+    },
+    {
+      "n": 81,
+      "np1": 82,
+      "v1_n": "إذا الشمس كورت",
+      "v1_np1": "إذا السماء انفطرت",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "idha",
+        null
+      ],
+      "opener_class_np1": [
+        "idha",
+        null
+      ],
+      "rank_np1_in_n": 19,
+      "rank_n_in_np1": 22,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.528566
+    },
+    {
+      "n": 82,
+      "np1": 83,
+      "v1_n": "إذا السماء انفطرت",
+      "v1_np1": "ويل للمطففين",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "idha",
+        null
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "ويل"
+      ],
+      "rank_np1_in_n": 27,
+      "rank_n_in_np1": 2,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.577005
+    },
+    {
+      "n": 83,
+      "np1": 84,
+      "v1_n": "ويل للمطففين",
+      "v1_np1": "إذا السماء انشقت",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "ويل"
+      ],
+      "opener_class_np1": [
+        "idha",
+        null
+      ],
+      "rank_np1_in_n": 26,
+      "rank_n_in_np1": 33,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.652163
+    },
+    {
+      "n": 84,
+      "np1": 85,
+      "v1_n": "إذا السماء انشقت",
+      "v1_np1": "والسماء ذات البروج",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "idha",
+        null
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والسماء"
+      ],
+      "rank_np1_in_n": 25,
+      "rank_n_in_np1": 24,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.584345
+    },
+    {
+      "n": 85,
+      "np1": 86,
+      "v1_n": "والسماء ذات البروج",
+      "v1_np1": "والسماء والطارق",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "wa-oath",
+        "والسماء"
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والسماء"
+      ],
+      "rank_np1_in_n": 20,
+      "rank_n_in_np1": 31,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.568419
+    },
+    {
+      "n": 86,
+      "np1": 87,
+      "v1_n": "والسماء والطارق",
+      "v1_np1": "سبح اسم ربك الأعلى",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "والسماء"
+      ],
+      "opener_class_np1": [
+        "sabbaha",
+        null
+      ],
+      "rank_np1_in_n": 25,
+      "rank_n_in_np1": 23,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.524898
+    },
+    {
+      "n": 87,
+      "np1": 88,
+      "v1_n": "سبح اسم ربك الأعلى",
+      "v1_np1": "هل أتاك حديث الغاشية",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "sabbaha",
+        null
+      ],
+      "opener_class_np1": [
+        "hal",
+        null
+      ],
+      "rank_np1_in_n": 27,
+      "rank_n_in_np1": 24,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.557249
+    },
+    {
+      "n": 88,
+      "np1": 89,
+      "v1_n": "هل أتاك حديث الغاشية",
+      "v1_np1": "والفجر",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "hal",
+        null
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والفجر"
+      ],
+      "rank_np1_in_n": 34,
+      "rank_n_in_np1": 30,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.657287
+    },
+    {
+      "n": 89,
+      "np1": 90,
+      "v1_n": "والفجر",
+      "v1_np1": "لا أقسم بهذا البلد",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "والفجر"
+      ],
+      "opener_class_np1": [
+        "la",
+        null
+      ],
+      "rank_np1_in_n": 25,
+      "rank_n_in_np1": 33,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.632635
+    },
+    {
+      "n": 90,
+      "np1": 91,
+      "v1_n": "لا أقسم بهذا البلد",
+      "v1_np1": "والشمس وضحاها",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "la",
+        null
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والشمس"
+      ],
+      "rank_np1_in_n": 23,
+      "rank_n_in_np1": 28,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.529993
+    },
+    {
+      "n": 91,
+      "np1": 92,
+      "v1_n": "والشمس وضحاها",
+      "v1_np1": "والليل إذا يغشى",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "wa-oath",
+        "والشمس"
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والليل"
+      ],
+      "rank_np1_in_n": 22,
+      "rank_n_in_np1": 13,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.473442
+    },
+    {
+      "n": 92,
+      "np1": 93,
+      "v1_n": "والليل إذا يغشى",
+      "v1_np1": "والضحى",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "wa-oath",
+        "والليل"
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والضحى"
+      ],
+      "rank_np1_in_n": 4,
+      "rank_n_in_np1": 18,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.433778
+    },
+    {
+      "n": 93,
+      "np1": 94,
+      "v1_n": "والضحى",
+      "v1_np1": "ألم نشرح لك صدرك",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "والضحى"
+      ],
+      "opener_class_np1": [
+        "a-lam",
+        null
+      ],
+      "rank_np1_in_n": 4,
+      "rank_n_in_np1": 16,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.364138
+    },
+    {
+      "n": 94,
+      "np1": 95,
+      "v1_n": "ألم نشرح لك صدرك",
+      "v1_np1": "والتين والزيتون",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "a-lam",
+        null
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والتين"
+      ],
+      "rank_np1_in_n": 15,
+      "rank_n_in_np1": 9,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.361408
+    },
+    {
+      "n": 95,
+      "np1": 96,
+      "v1_n": "والتين والزيتون",
+      "v1_np1": "اقرأ باسم ربك الذي خلق",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "والتين"
+      ],
+      "opener_class_np1": [
+        "other",
+        "اقرأ"
+      ],
+      "rank_np1_in_n": 29,
+      "rank_n_in_np1": 14,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.504885
+    },
+    {
+      "n": 96,
+      "np1": 97,
+      "v1_n": "اقرأ باسم ربك الذي خلق",
+      "v1_np1": "إنا أنزلناه في ليلة القدر",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "اقرأ"
+      ],
+      "opener_class_np1": [
+        "inna",
+        null
+      ],
+      "rank_np1_in_n": 23,
+      "rank_n_in_np1": 28,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.545334
+    },
+    {
+      "n": 97,
+      "np1": 98,
+      "v1_n": "إنا أنزلناه في ليلة القدر",
+      "v1_np1": "لم يكن الذين كفروا من",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "inna",
+        null
+      ],
+      "opener_class_np1": [
+        "lam",
+        null
+      ],
+      "rank_np1_in_n": 33,
+      "rank_n_in_np1": 21,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.576029
+    },
+    {
+      "n": 98,
+      "np1": 99,
+      "v1_n": "لم يكن الذين كفروا من",
+      "v1_np1": "إذا زلزلت الأرض زلزالها",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "lam",
+        null
+      ],
+      "opener_class_np1": [
+        "idha",
+        null
+      ],
+      "rank_np1_in_n": 22,
+      "rank_n_in_np1": 32,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.581233
+    },
+    {
+      "n": 99,
+      "np1": 100,
+      "v1_n": "إذا زلزلت الأرض زلزالها",
+      "v1_np1": "والعاديات ضبحا",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "idha",
+        null
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والعاديات"
+      ],
+      "rank_np1_in_n": 6,
+      "rank_n_in_np1": 18,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.379279
+    },
+    {
+      "n": 100,
+      "np1": 101,
+      "v1_n": "والعاديات ضبحا",
+      "v1_np1": "القارعة",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "والعاديات"
+      ],
+      "opener_class_np1": [
+        "other",
+        "القارعة"
+      ],
+      "rank_np1_in_n": 16,
+      "rank_n_in_np1": 13,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.368084
+    },
+    {
+      "n": 101,
+      "np1": 102,
+      "v1_n": "القارعة",
+      "v1_np1": "ألهاكم التكاثر",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "القارعة"
+      ],
+      "opener_class_np1": [
+        "alhakum",
+        null
+      ],
+      "rank_np1_in_n": 14,
+      "rank_n_in_np1": 13,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.386318
+    },
+    {
+      "n": 102,
+      "np1": 103,
+      "v1_n": "ألهاكم التكاثر",
+      "v1_np1": "والعصر",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "alhakum",
+        null
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "والعصر"
+      ],
+      "rank_np1_in_n": 5,
+      "rank_n_in_np1": 15,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.344768
+    },
+    {
+      "n": 103,
+      "np1": 104,
+      "v1_n": "والعصر",
+      "v1_np1": "ويل لكل همزة لمزة",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "wa-oath",
+        "والعصر"
+      ],
+      "opener_class_np1": [
+        "wa-oath",
+        "ويل"
+      ],
+      "rank_np1_in_n": 10,
+      "rank_n_in_np1": 5,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.311926
+    },
+    {
+      "n": 104,
+      "np1": 105,
+      "v1_n": "ويل لكل همزة لمزة",
+      "v1_np1": "ألم تر كيف فعل ربك",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "wa-oath",
+        "ويل"
+      ],
+      "opener_class_np1": [
+        "a-lam",
+        null
+      ],
+      "rank_np1_in_n": 12,
+      "rank_n_in_np1": 11,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.336393
+    },
+    {
+      "n": 105,
+      "np1": 106,
+      "v1_n": "ألم تر كيف فعل ربك",
+      "v1_np1": "لإيلاف قريش",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "a-lam",
+        null
+      ],
+      "opener_class_np1": [
+        "other",
+        "لإيلاف"
+      ],
+      "rank_np1_in_n": 2,
+      "rank_n_in_np1": 8,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.291482
+    },
+    {
+      "n": 106,
+      "np1": 107,
+      "v1_n": "لإيلاف قريش",
+      "v1_np1": "أرأيت الذي يكذب بالدين",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "لإيلاف"
+      ],
+      "opener_class_np1": [
+        "ar-ayta",
+        null
+      ],
+      "rank_np1_in_n": 6,
+      "rank_n_in_np1": 2,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.277201
+    },
+    {
+      "n": 107,
+      "np1": 108,
+      "v1_n": "أرأيت الذي يكذب بالدين",
+      "v1_np1": "إنا أعطيناك الكوثر",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "ar-ayta",
+        null
+      ],
+      "opener_class_np1": [
+        "inna",
+        null
+      ],
+      "rank_np1_in_n": 1,
+      "rank_n_in_np1": 2,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.225639
+    },
+    {
+      "n": 108,
+      "np1": 109,
+      "v1_n": "إنا أعطيناك الكوثر",
+      "v1_np1": "قل يا أيها الكافرون",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "inna",
+        null
+      ],
+      "opener_class_np1": [
+        "qul",
+        null
+      ],
+      "rank_np1_in_n": 18,
+      "rank_n_in_np1": 2,
+      "D_mutual_top15": false,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.334203
+    },
+    {
+      "n": 109,
+      "np1": 110,
+      "v1_n": "قل يا أيها الكافرون",
+      "v1_np1": "إذا جاء نصر الله والفتح",
+      "A_clamped_zero_seam": true,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "qul",
+        null
+      ],
+      "opener_class_np1": [
+        "idha",
+        null
+      ],
+      "rank_np1_in_n": 9,
+      "rank_n_in_np1": 17,
+      "D_mutual_top15": false,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": true,
+      "fr_distance": 0.380542
+    },
+    {
+      "n": 110,
+      "np1": 111,
+      "v1_n": "إذا جاء نصر الله والفتح",
+      "v1_np1": "تبت يدا أبي لهب وتب",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "idha",
+        null
+      ],
+      "opener_class_np1": [
+        "other",
+        "تبت"
+      ],
+      "rank_np1_in_n": 7,
+      "rank_n_in_np1": 11,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.318367
+    },
+    {
+      "n": 111,
+      "np1": 112,
+      "v1_n": "تبت يدا أبي لهب وتب",
+      "v1_np1": "قل هو الله أحد",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": false,
+      "C_loose_opener_class": false,
+      "opener_class_n": [
+        "other",
+        "تبت"
+      ],
+      "opener_class_np1": [
+        "qul",
+        null
+      ],
+      "rank_np1_in_n": 5,
+      "rank_n_in_np1": 4,
+      "D_mutual_top15": true,
+      "opening_linked": false,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.284945
+    },
+    {
+      "n": 112,
+      "np1": 113,
+      "v1_n": "قل هو الله أحد",
+      "v1_np1": "قل أعوذ برب الفلق",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": false,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "qul",
+        null
+      ],
+      "opener_class_np1": [
+        "qul",
+        null
+      ],
+      "rank_np1_in_n": 5,
+      "rank_n_in_np1": 4,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.288619
+    },
+    {
+      "n": 113,
+      "np1": 114,
+      "v1_n": "قل أعوذ برب الفلق",
+      "v1_np1": "قل أعوذ برب الناس",
+      "A_clamped_zero_seam": false,
+      "B_morph_iso_first3": true,
+      "C_strict_opener_subclass": true,
+      "C_loose_opener_class": true,
+      "opener_class_n": [
+        "qul",
+        null
+      ],
+      "opener_class_np1": [
+        "qul",
+        null
+      ],
+      "rank_np1_in_n": 2,
+      "rank_n_in_np1": 1,
+      "D_mutual_top15": true,
+      "opening_linked": true,
+      "signature_opening_linked_content_divergent": false,
+      "fr_distance": 0.271785
+    }
+  ]
+}
