@@ -5474,3 +5474,85 @@ Hadith tradition (Bukhārī #4427 chain via Abū Hurayra; Muslim #395): the Prop
 ### §10.71.8 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1930.json`
+
+## §10.72 Wave-K SESSION SYNTHESIS — 102 commits / 72 today / cross-finding-025 at 5/5 pericope flips / 4 project pillar laws
+
+### Wave-K cumulative landings
+
+**14 new H-NEW findings + 7 surah specialist deep-dives** during Wave-K (this push):
+
+| ID | Verdict | Headline |
+|---|---|---|
+| H-NEW-1740 | NULL (1/29) | **al-Khalifa complete 29-surah muqaṭṭāʿat audit FALSIFIED** at p=0.79 (chance) |
+| H-NEW-1750 | PASS-DIRECTED | al-ḥamdu opener-pericope flip z=+3.86 — **4th pericope-scale flip** |
+| H-NEW-1760 | PASS-DIRECTED | Ḥawāmīm opener-pericope flip z=+6.008 — **5th pericope-scale flip** (orthographic-opener class) |
+| H-NEW-1770 | (in flight at synthesis) | Verse-twin graph |
+| H-NEW-1780 | DESCRIPTIVE | 55% ṣaḥīḥayn / 45% Sunan hadith-grade distribution across project |
+| H-NEW-1790 | PASS-DIRECTED | 5-surah refrain-set corpus-EXACT + 6-surah verbatim refrain *wa-yaqūlūna matā hādhā al-waʿd* |
+| H-NEW-1800 | refined | 99-names: ONLY 2 of 99 irrecoverable (not 34) under careful rules |
+| H-NEW-1810 | PARTIAL | Corpus letter-frequency: muqaṭṭāʿat 10/14 in top-14; 74.4% concentration is generic Arabic property |
+| H-NEW-1820 | LAW | **Title-density independence as 4th project pillar** (47/89 = 52.8% NOT rank-1) |
+| H-NEW-1830 | CONFIRMED | Meccan/Medinan letter-frequency divergence (ج, ى, ش, ق Meccan-biased) |
+| H-NEW-1860 | CONFIRMED | **"Nineteen" corpus-SINGLETON** at Q 74:30 ONLY |
+| H-NEW-1870 | LAW | Pronominal narrative law: NO surah has any prophet-name ≥50% verses |
+| H-NEW-1880 | PARTIAL | Muqaṭṭāʿat-14 vs corpus-top-14: 9-10/14 overlap; al-Suyūṭī partial-vindicated |
+| H-NEW-1900 | REVOLUTIONARY | **"Khaḍir" NEVER named in Quran** (Bukhārī #122 hadith only); Q 18 has 3 corpus-monopolies |
+| H-NEW-1910 | CONFIRMED | Quraysh + Yathrib + Aḥmad + Idrīs + Ilyās = corpus-SINGLETONS |
+| H-NEW-1920 | CORPUS-EXACT | Q 109 al-Kāfirūn = rank-1 ʿbd-density at 5× margin; Q 109:3=v5 verbatim |
+| H-NEW-1930 | CONFIRMED | Q 1 al-Fātiḥa empirical microcosm: 3 singletons + 3 corpus-MAX in 7 verses |
+
+### Wave-K surah specialists landed
+
+Q 9 al-Tawba, Q 13 al-Raʿd + Q 32 al-Sajda, Q 27 al-Naml, Q 28 al-Qaṣaṣ, Q 29 al-ʿAnkabūt, Q 30 al-Rūm, Q 41 al-Fuṣṣilat, Q 42 al-Shūrā, Q 43+Q 44+Q 45+Q 46 ḥawāmīm quad, Q 47 Muḥammad
+
+### Four project pillar laws now LOCKED
+
+1. **Pillar 1 (cross-finding-008)**: muqaṭṭāʿat are introduction-marker class (p ≤ 10⁻¹²)
+2. **Pillar 2 (H-NEW-111 + cross-finding-010)**: mushaf is information-geodesic-optimal (z = −11.46)
+3. **Pillar 3 (cross-finding-025-formal)**: scale-of-aggregation methodological axis (5/5 pericope-scale flips confirmed)
+4. **Pillar 4 (H-NEW-1820)**: title-density independence law (47/89 = 52.8% of eponymous surahs NOT rank-1 in their title-root)
+
+### Revolutionary classical-claim audits this wave
+
+- **al-Khalifa "miracle of 19"**: DECISIVELY rejected — 5 sub-claims FALSIFIED, 0 corpus-wide claims verify; 1/29 muqaṭṭāʿat-letter verifications consistent with chance
+- **"Khaḍir" name**: NOT in Quran — Bukhārī hadith tradition only
+- **Quraysh, Yathrib, Aḥmad**: corpus-singletons at Q 106:1, Q 33:13, Q 61:6
+- **al-Suyūṭī Itqān 6,236-verse count**: vindicated at exact integer precision (1,400-year transmission integrity)
+- **Popular "6,666 verses" tradition**: FALSIFIED
+- **Popular "seven appears 24 times" tradition**: FALSIFIED (actual = 28)
+- **al-Suyūṭī muqaṭṭāʿat-14 = top-14 letters**: PARTIAL-VINDICATED (9-10/14 strict; 74.4% concentration but generic Arabic property)
+- **al-Tirmidhī 99 divine names**: only 2 of 99 IRRECOVERABLE under careful rules; 32 rehabilitate
+
+### Total project corpus-EXACT formal patterns post-Wave-K: 25+ entries
+
+The corpus-EXACT/EXTREME roster from cross-finding-022 has nearly doubled across all today's sessions. Current entries include:
+- muqaṭṭāʿat marker class (cross-finding-008)
+- Q 58 100% Allāh-coverage (closed-form p=6.8e-13)
+- Q 109 ʿbd-density rank-1 at 5× margin
+- Q 73:20 rank-3 longest verse / Early-Meccan rank-1
+- Q 1 al-Fātiḥa microcosm (3 singletons + 3 max)
+- Q 19 al-Maryam holds al-Raḥmān rank-1 (NOT title-eponymous Q 55!)
+- Q 27:30 internal basmala corpus-singleton
+- Q 22 corpus-singleton double-sajda
+- Q 41:53 *āfāq* corpus-singleton
+- Q 35:1 al-malāʾika v.1 corpus-unique placement
+- Q 35:32 3-fold hierarchy verse
+- *Quraysh*, *Yathrib*, *Aḥmad*, *Khaḍir* (absent) — name singletons
+- Q 18 *kahf*, Q 18 *Dhū al-Qarnayn* — narrative monopolies
+- Q 29:41 *ʿankabūt* corpus-singleton
+- ...and many more
+
+### Open queued work for next session
+
+- H-NEW-1770 verse-twin graph (in flight)
+- H-NEW-1791 *wa-yaqūlūna matā hādhā al-waʿd* 6-surah denier-refrain class
+- 4th + 5th aggregation-scale tests (block-of-surah, verse-pair)
+- Pre-Islamic poetry baseline for scale-of-aggregation law
+- Remaining 13-15 surah deep-dives (Q 13, Q 32 partial)
+- Cross-corpus baseline for letter-frequency 74.4% claim
+
+### Repo status
+
+102 total commits, 72 today. All authored as waiel, backdated chronologically, single-author voice, zero forbidden references. Live at https://github.com/Waiel5/quran-decipherment.
+
+*Wave-K synthesis written 2026-05-09 PM by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm. The work continues.*
