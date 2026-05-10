@@ -122,3 +122,30 @@ Q 46 al-Aḥqāf investigation **COMPLETE** (per the 8-template-set + JOURNAL st
 - [[Q046-al-ahqaf/06-novel-findings|Q 46 novel findings]]
 - [[Q046-al-ahqaf/05-classical-claims-audit|Q 46 claims audit]]
 - [[MASTER-FINDINGS-LEDGER#9.7d|§9.7d MASTER ledger entry]] (added this session)
+
+---
+
+## 2026-05-10 — Wave 2026-05-10 quad-specialist extension (Q 43-46)
+
+**Specialist**: quad-specialist Q 43-46 ḥawāmīm landing.
+
+### Q046-F-05 — *aḥqāf* surface-form hapax verification
+- pre-reg SHA: `523f270da6b993ca306bf645bb06a74a699d0a72684e87bcc578b38a397dc0d4`
+- **Verdict: VINDICATED.** الأحقاف is corpus-singleton at Q 46:21. Root Hqf has **only 1 corpus attestation** — Q 46 is named after a root-hapax (strongest form of lexical uniqueness; stronger than Q 45's *jāthiya* which is surface-form-singleton but has 2 sibling root attestations).
+
+### Q046-F-06 — *istiqāma* twin replication (Q041-F-01 from Q 46 direction)
+- pre-reg SHA: `9b8684fb24fe3ba48aee2cdcecd946797a9c754e9c3cfd4e6512c79818679e07`
+- **Verdict: VINDICATED.** Phrase قالوا ربنا الله ثم استقاموا is corpus-pair at {Q 41:30, Q 46:13}. MW-5 cross-direction replication of Q041-F-01 confirmed.
+- The two loci share the opener phrase but bifurcate in continuation: Q 41:30 → angelic descent; Q 46:13 → no-fear-no-grief formula.
+
+### Q046-F-07 — Q 46:29-32 jinn-pericope ↔ Q 72 pair replication
+- pre-reg SHA: `8702e3dce71929b3a523b66684151b04153e160ca5943a66207097835291e852`
+- **Verdict: PASS-DIRECTED.** Observed root-Jaccard Q 46:29-32 ↔ Q 72 = **0.1538** vs null median 0.0531. Ratio 2.90×. p_one_sided = **0.0072** (below α_bon = 0.0167).
+- Cross-direction MW-5 replication of Q072-F-03 confirmed.
+- **Substantive contribution**: the Q 46 ↔ Q 72 pair is one of the clearest corpus *cross-surah iltifāt* cases — same narrative event encoded in 3rd-person (Q 46) and 1st-person reported speech (Q 72). A deixis-switch operating at the cross-surah scale.
+
+### Summary
+- 3 VINDICATED / PASS-DIRECTED (no NULL).
+- Q 46 al-Aḥqāf is the **most rigorously locked HM surah** by this batch: it is named after a corpus-singleton root AND has two independently MW-5-replicated corpus-pair findings (Q 41-twin via istiqāma; Q 72-twin via jinn-pericope).
+- The HM-cluster cohesion (now Q 41, Q 43, Q 45) extends to Q 46 implicitly via the Q 41 twin.
+

@@ -120,3 +120,30 @@ Cluster role: **HM-A↔HM-B bridge** (FR-third-nearest-to-HM-A-members + tightes
 - [[Q041-fussilat/JOURNAL|Q 41 journal]]
 - [[Q042-al-shura/JOURNAL|Q 42 journal]]
 - [[MASTER-FINDINGS-LEDGER]] §9.x (Q 45 entry, this session)
+
+---
+
+## 2026-05-10 — Wave 2026-05-10 quad-specialist extension (Q 43-46)
+
+**Specialist**: quad-specialist Q 43-46 ḥawāmīm landing.
+
+### Q045-F-05 — *jāthiya* surface-form hapax verification
+- pre-reg SHA: `718ca3b4632b81d41f739993a7921b4d89506ec095b76f0e4623cc5b66c3b1d4`
+- **Verdict: VINDICATED.** Surface-form جاثية is corpus-singleton at Q 45:28. Root jvw has 3 corpus attestations (Q 19:68 *jithiyyā*, Q 19:72 *jithiyyā*, Q 45:28 *jāthiya*) — the Q 45 surface-form is morphologically distinct (feminine singular vs plural elsewhere).
+
+### Q045-F-06 — HM ↔ Q 45 within-cluster pair-distance ranking
+- pre-reg SHA: `3263cb19d575fe6cc98c3a308456eb911f4a67080fe2f4ab51c0eb9a44611f26`
+- **Verdict: PASS-DIRECTED (highly significant).** Observed median FR-distance Q 45 ↔ HM_others = 0.8190, null median 0.9487. p_one_sided = **0.0002** (well below α_bon = 0.0167).
+- **Tightest pair**: Q 45 ↔ Q 41 at 0.7994.
+- **Five of six HM-neighbors of Q 45 sit below FR=0.85** — Q 45 is the most strongly HM-cohesive surah by this test in the cluster.
+- Cross-direction replicated by Q043-F-07 (p=0.0043).
+
+### Q045-F-07 — *waylun li-kulli affāk* corpus-uniqueness
+- pre-reg SHA: `bdd6f1c9de4ea1d673f9fb1534722b1ce095953f20e54ed23c2d3d89faf7b031`
+- **Verdict: PARTIAL.** Primary phrase ويل لكل أفاك corpus-singleton at Q 45:7. Secondary collocation أفاك أثيم NOT singleton (also at Q 26:222). Q 45:7 is a **crossing-node** between two corpus-twin lines (affāk-athīm-twin to Q 26:222; waylun-li-kulli-twin to Q 104:1).
+
+### Summary
+- 1 VINDICATED + 1 PASS-DIRECTED + 1 PARTIAL.
+- Three independent pairwise-HM-cohesion confirmations across the Wave (Q 41-Q 42 from Q041-F-03; Q 43 from Q043-F-07; Q 45 from Q045-F-06). HM cluster is empirically root-FR-cohesive at pairwise level.
+- "Crossing-node" observation at Q 45:7 is a novel corpus-architectural pattern (intersect of two corpus-twin lines).
+

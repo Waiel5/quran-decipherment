@@ -1,0 +1,58 @@
+{
+  "prereg_id": "Q043-F-07",
+  "prereg_sha": "4b7630a63ef47d4dfc559611070a5b166144593a1872d5fecfc1a866ea7bd654",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.016666666666666666,
+  "target_surah": 43,
+  "hm_cluster": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "hm_others": [
+    40,
+    41,
+    42,
+    44,
+    45,
+    46
+  ],
+  "observed_pairs": [
+    {
+      "hm": 40,
+      "fr_distance": 0.910869
+    },
+    {
+      "hm": 41,
+      "fr_distance": 0.855702
+    },
+    {
+      "hm": 42,
+      "fr_distance": 0.991218
+    },
+    {
+      "hm": 44,
+      "fr_distance": 0.864706
+    },
+    {
+      "hm": 45,
+      "fr_distance": 0.901133
+    },
+    {
+      "hm": 46,
+      "fr_distance": 0.874691
+    }
+  ],
+  "observed_median": 0.887912,
+  "null_median": 0.983436,
+  "null_p25": 0.9575659999999999,
+  "null_p75": 0.9986015,
+  "p_one_sided_lower": 0.0043,
+  "pass_alpha": true,
+  "verdict": "PASS-DIRECTED — Q 43 tighter to HM than to random"
+}

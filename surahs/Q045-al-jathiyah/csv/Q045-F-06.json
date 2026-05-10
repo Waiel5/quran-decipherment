@@ -1,0 +1,58 @@
+{
+  "prereg_id": "Q045-F-06",
+  "prereg_sha": "3263cb19d575fe6cc98c3a308456eb911f4a67080fe2f4ab51c0eb9a44611f26",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.016666666666666666,
+  "target_surah": 45,
+  "hm_cluster": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "hm_others": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    46
+  ],
+  "observed_pairs": [
+    {
+      "hm": 40,
+      "fr_distance": 0.826717
+    },
+    {
+      "hm": 41,
+      "fr_distance": 0.799351
+    },
+    {
+      "hm": 42,
+      "fr_distance": 0.801067
+    },
+    {
+      "hm": 43,
+      "fr_distance": 0.901133
+    },
+    {
+      "hm": 44,
+      "fr_distance": 0.843896
+    },
+    {
+      "hm": 46,
+      "fr_distance": 0.811217
+    }
+  ],
+  "observed_median": 0.818967,
+  "null_median": 0.9486565,
+  "null_p25": 0.93077,
+  "null_p75": 0.962715,
+  "p_one_sided_lower": 0.0002,
+  "pass_alpha": true,
+  "verdict": "PASS-DIRECTED — Q 45 tighter to HM than to random"
+}

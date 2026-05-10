@@ -114,3 +114,30 @@ Q 43 al-Zukhruf investigation **COMPLETE** (per the 8-template-set + JOURNAL sta
 - [[Q040-ghafir/JOURNAL|Q 40 journal]] — sibling model
 - [[Q041-fussilat/JOURNAL|Q 41 journal]] — sibling model (UAS-correction precedent)
 - [[Q042-al-shura/JOURNAL|Q 42 journal]] — bifurcation-partner journal
+
+---
+
+## 2026-05-10 — Wave 2026-05-10 quad-specialist extension (Q 43-46)
+
+**Specialist**: quad-specialist Q 43-46 ḥawāmīm landing.
+**Method**: 3 new pre-registered tests under direction-locked + SHA-locked + n_perm=10000 discipline.
+
+### Q043-F-06 — *tabāraka alladhī* corpus 5-locus distribution
+- pre-reg SHA: `52407393b4f9373229dff0e00ac76d53e615307c8827a0bab14c913d29351e02`
+- **Verdict: VINDICATED.** Exact 5 attestations at {Q 25:1, Q 25:10, Q 25:61, Q 43:85, Q 67:1}. Q 43:85 is the closing-doxology *tabāraka* — dual-function (opener-class at Q 25/Q 67, closer-class at Q 43).
+
+### Q043-F-07 — HM ↔ Q 43 within-cluster pair-distance ranking
+- pre-reg SHA: `4b7630a63ef47d4dfc559611070a5b166144593a1872d5fecfc1a866ea7bd654`
+- **Verdict: PASS-DIRECTED.** Observed median FR-distance Q 43 ↔ HM_others = 0.8879, null median 0.9834. p_one_sided = 0.0043 (< α_bon = 0.0167).
+- Tightest within-HM neighbors of Q 43: Q 41 (0.8557), Q 44 (0.8647). Loosest: Q 42 (0.9912 — heterogeneity flag).
+- Cross-direction replicated by Q045-F-06 (p=0.0002).
+
+### Q043-F-08 — *zukhruf* root corpus rank full inventory
+- pre-reg SHA: `ed564811745f4261226f7d05bb1acaecb314ec6c4dab0adac099dd2a594c5430`
+- **Verdict: NULL_OR_DISCREPANCY (pre-commit honored).** 4-attestation total CONFIRMED; 4 surahs with attestation CONFIRMED. But Q 43 IS the densest (1.196 per 1000) — driven by small-denominator effect, not lexical concentration. The naive "named-after = densest" hypothesis reverses the original Q043-F-04 expectation.
+
+### Summary
+- 1 VINDICATED + 1 PASS-DIRECTED + 1 NULL (pre-commit honored).
+- Cross-finding-025 marker-thickness rule: weakened by Q043-F-07 (HM-cohesion present at pairwise level) and Q044-F-05 (HM-cohesion present at opener-pericope level).
+- Q 43:85 *tabāraka* dual-function (opener/closer) observation is novel.
+

@@ -118,3 +118,30 @@ Q 44 al-Dukhān investigation **COMPLETE** (per the 8-template-set + JOURNAL sta
 - [[cross-finding-026-iʿjāz-architecture|cross-finding-026]] — Q 44 typology.
 
 *Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+---
+
+## 2026-05-10 — Wave 2026-05-10 quad-specialist extension (Q 43-46)
+
+**Specialist**: quad-specialist Q 43-46 ḥawāmīm landing.
+
+### Q044-F-04 — *dukhān* root corpus rank
+- pre-reg SHA: `5508294c18cc97b95e5f99e42978bbe82608e9417ee5c5e47d70715db19eb16b`
+- **Verdict: MIXED.** Q 44 rank-1 by density (2.890 per 1000), tied-1 with Q 41 by count (both have 1 attestation). Corpus total dxn root attestations = 2, all in HM-cluster.
+
+### Q044-F-05 — HM sibling-opener pericope Jaccard test
+- pre-reg SHA: `3ef9170973093f0eaec509b32fdf04eb05ec3370e7ff8d5210744e00159c8f2e`
+- **Verdict: PASS-DIRECTED.** Mean pairwise Jaccard of {Q 41:1-8, Q 44:1-8, Q 46:1-8} = 0.1880 vs null median 0.0664. Ratio 2.83×. p_one_sided = 0.0131 (< α_bon = 0.0167).
+- **Substantive contribution**: First test isolating opener-pericope templating from full-surah cohesion. Partially weakens cross-finding-025 by demonstrating that the marker-thickness rule applies at FULL-SURAH level only — opener-pericope windows ARE templated.
+
+### Q044-F-06 — Muslim 10-signs-of-hour hadith verification
+- pre-reg SHA: `a3a29927abfd04ef9f5c72199751d0f7a0ad526294422cc0fc1d42fefdce8ce3`
+- **Verdict: VERIFIED-PARTIAL.** Pre-committed #2901/#2902 numbers do NOT contain دخان (they are Hajj/Umra hadiths in the on-disk numbering). The 10-signs hadith with دخان IS in Muslim at idInBook #7106/#7107 (Kitāb al-fitan), narrated via Ḥudhayfa b. Asīd → Abū al-Ṭufayl → Furāt al-Qazzāz. Classical citation linkage verified; numbering convention discrepancy logged.
+- **Correction for project records**: Muslim 10-signs hadith on disk = idInBook #7106, NOT #2901.
+
+### Summary
+- 1 PASS-DIRECTED + 1 MIXED + 1 VERIFIED-PARTIAL.
+- New corpus observation: dxn root is HM-only (Q 41, Q 44 only).
+- HM opener-pericope templating is empirically confirmed (Q044-F-05).
+- Hadith numbering convention discrepancy logged for future citation work.
+
