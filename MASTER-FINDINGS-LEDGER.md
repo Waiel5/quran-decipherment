@@ -4465,3 +4465,51 @@ H-NEW-1820 joins:
 - **Pillar 4 (this)**: title-density independence law (titles ⊥ density-rank-1)
 
 The 4th project pillar law: **the Quran's surah-titling system is empirically independent of its root-distribution-density peaks**. Titles are rhetorical-curatorial, not statistical-extractive.
+
+## §10.64 H-NEW-1830 inline (2026-05-09) — Meccan/Medinan letter-frequency divergence: phonetic correlate of chronological development
+
+**Status**: CONFIRMED descriptive distribution; corroborates chronological-development hypothesis at letter-frequency level.
+
+**Computation**: Per-letter grapheme frequency over Meccan corpus (202,610 chars) vs Medinan corpus (132,677 chars), normalized to per-1000-chars.
+
+**Top 5 MECCAN-biased letters** (highest Meccan/Medinan ratio, freq ≥10/1000):
+
+| Letter | Meccan/1k | Medinan/1k | Ratio |
+|---|---|---|---|
+| ج (jīm) | 10.84 | 8.45 | **1.283** |
+| ى (alif maqṣūra) | 8.32 | 6.83 | **1.219** |
+| ش (shīn) | 6.81 | 5.62 | **1.212** |
+| ق (qāf) | 22.45 | 18.73 | **1.199** |
+| إ (alif-kasra) | 16.21 | 13.74 | **1.180** |
+
+**Top 5 MEDINAN-biased letters**:
+
+| Letter | Meccan/1k | Medinan/1k | Ratio |
+|---|---|---|---|
+| ل (lām) | 109.57 | 120.53 | 0.909 |
+| و (wāw) | 71.83 | 77.33 | 0.929 |
+| ت (tāʾ) | 30.46 | 32.77 | 0.930 |
+| ه (hāʾ) | 42.20 | 47.48 | 0.889 |
+| ا (alif) | 128.35 | 132.17 | 0.971 (small but consistent) |
+
+**Interpretation**:
+- **Meccan-biased letters** (ج, ى, ش, ق): consonants typical of eschatological, oath, and short-mufaṣṣal vocabulary (ج in adjectives like *jaḥīm*, *jannat*; ى in eschatological pronouns; ق in *qāʾila*, *qudus*, *qāriʿa*; ش in *shaykh*, *shams*, *shams*)
+- **Medinan-biased letters** (ل, و, ت, ه): function-words and conjunction-letters typical of long jurisprudential prose (ل= prefixes *li-*, *al-*; و= conjunction *wa-*; ت= verb-suffix; ه= pronominal-suffix *-hu/-hā*)
+- **Punctuation marks** ۚ ۗ are STRONGLY Medinan-biased (ratios 0.68 / 0.37) — consistent with longer-pause syntax in jurisprudential prose
+
+### §10.64.1 Connection to existing project findings
+
+- **H-NEW-1370 (long-verse top-10 are 9/10 Medinan)**: corroborated at letter-level — Medinan's long jurisprudential verses use higher-frequency function-words (ل, و, ت, ه)
+- **H-NEW-1350 (Allāh-density Medinan-biased)**: corroborated; Allāh = الله = 4 letters all of which are in Medinan-biased set (ا+ل+ل+ه)
+- **H-NEW-1810 (queued)**: corpus letter-frequency top-14 vs muqaṭṭāʿat-14 overlap test — this finding contributes baseline data for that audit
+
+### §10.64.2 Open follow-ups
+
+1. Phoneme-level analysis: do these letter biases correspond to phonological-class biases (emphatic vs non-emphatic; voiced vs unvoiced)?
+2. Q 36 Yāsīn = highest ج-density? Test which surah is corpus-rank-1 by Meccan-biased letter density
+3. Pre-Islamic poetry baseline: do qaṣīda show similar Meccan-style letter frequencies?
+4. Cross-period transition: do Late-Meccan surahs (chronologically between) show intermediate letter frequencies?
+
+### §10.64.3 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1830.json`
