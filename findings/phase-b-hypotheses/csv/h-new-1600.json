@@ -1,0 +1,42 @@
+{
+  "finding_id": "H-NEW-1600-inline",
+  "rules_tuple": "(no-tashkeel, Hafs-Kūfan, basmala-as-v.1-of-Q1-only, whitespace-token, no-space-char-count)",
+  "seed": 20260509,
+  "total_surahs": 114,
+  "total_verses_strict": 6236,
+  "total_words": 82375,
+  "total_chars_no_space": 335287,
+  "allah_substring_total": 2555,
+  "allah_strict_token_total": 2153,
+  "al_khalifa_claims_audit": {
+    "C1_basmala_19_letters": {
+      "expected": 19,
+      "actual": 19,
+      "confirmed": true
+    },
+    "C2_q96_15_19_words": {
+      "expected": 19,
+      "actual": 20,
+      "confirmed": false
+    },
+    "C3_114_surahs_div_19": {
+      "div_by_19": true,
+      "quotient": 6.0
+    },
+    "C4_6236_verses_div_19": {
+      "expected_2698_via_khalifa": true,
+      "actual_verses": 6236,
+      "div_by_19": false,
+      "mod_19": 4
+    },
+    "C5_allah_count_2698": {
+      "expected": 2698,
+      "actual_substring": 2555,
+      "actual_strict": 2153,
+      "match_substring": false,
+      "match_strict": false,
+      "sub_div_19": false,
+      "strict_div_19": false
+    }
+  }
+}
