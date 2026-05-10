@@ -4952,3 +4952,53 @@ This distinguishes a TEXT-iʿjāz claim (Quran-internal evidence) from a TRADITI
 ### §10.68.4 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1900.json`
+
+## §10.70 H-NEW-1780 (pre-registered) — ṣaḥīḥayn vs Sunan hadith-grade distribution: 45% of project surah-claim citations rest on Sunan-grade evidence (DESCRIPTIVE-CONFIRMED)
+
+**Status**: DESCRIPTIVE-CONFIRMED. Pre-registered (SHA `2c93112e6bcf275f348566d0be65cc76b07369ef82ab46c17fe11832e69a78bf`), direction-locked `%sunan-grade ≥ 30%` BEFORE tally. Audited 63 per-surah `04-hadith-corpus.md` files; extracted 680 deduplicated citation-instances; classified as ṣaḥīḥayn (Bukhārī + Muslim), Sunan-4 (Tirmidhī + Abū Dāwūd + Nasāʾī + Ibn Mājah), or Other (Mālik + Aḥmad + Dārimī + Bayhaqī + Ibn Ḥibbān + Ḥākim + Ibn Abī Shayba).
+
+Origin: Q022-F-06 (Q 22 al-Ḥajj specialist) discovered al-Bukhārī silent on Q 22; Sunnī-majority double-sajda position rests on Abū Dāwūd #1402 + Tirmidhī #578 + Ibn Mājah #1057 (all Sunan-grade). H-NEW-1780 generalises the question.
+
+### §10.70.1 Headline ratio
+
+| Grade | N | % of classified |
+|:--|--:|--:|
+| ṣaḥīḥayn (al-Bukhārī + Muslim) | 374 | 55.00% |
+| Sunan-4 (Tirmidhī + Abū Dāwūd + Nasāʾī + Ibn Mājah) | 245 | 36.03% |
+| Other (Mālik + Aḥmad + Dārimī + Bayhaqī + Ibn Ḥibbān + Ḥākim + Ibn Abī Shayba) | 61 | 8.97% |
+| **Sunan-grade combined** | **306** | **45.00%** |
+
+Pre-registered direction `≥30%` → **MET** (observed 45.00%).
+
+### §10.70.2 Per-collection ranking
+
+al-Bukhārī (274, 40.29%) > al-Tirmidhī (136, 20.00%) > Muslim (100, 14.71%) > Abū Dāwūd (41, 6.03%) > Ibn Mājah (40, 5.88%) > al-Nasāʾī (28, 4.12%) > al-Dārimī (23, 3.38%) > Aḥmad (21, 3.09%) > Mālik (13, 1.91%) > al-Ḥākim (2) > Ibn Abī Shayba (1) > al-Bayhaqī (1).
+
+**al-Tirmidhī alone exceeds Muslim** in project specialist citations (20.00% vs 14.71%). Combined Sunan-4 (36.03%) by itself exceeds the 30% pre-registered threshold.
+
+### §10.70.3 Heavy-Sunan and pure-Sunan surahs
+
+**Heavy-Sunan-grade surahs (>50%, ≥15 citations)**: Q 11 Hūd 77.8%, Q 46 al-Aḥqāf 73.7%, Q 22 al-Ḥajj 72.2%, Q 67 al-Mulk 66.7%, Q 17 al-Isrāʾ 60.0%, Q 18 al-Kahf 52.2%.
+
+**Pure-Sunan surahs (zero ṣaḥīḥayn citations)**: Q 40 Ghāfir (1 sunan4, 0 ṣaḥīḥayn), Q 51 al-Dhāriyāt (9 sunan4, 0 ṣaḥīḥayn), Q 99 al-Zalzala (4 sunan4 + 1 other, 0 ṣaḥīḥayn).
+
+**Pure-ṣaḥīḥayn surahs (zero Sunan-grade citations)**: Q 48 al-Fatḥ (22, Ḥudaybiya-period historical narration), Q 1 al-Fātiḥa (7, *Umm al-Kitāb* liturgical core), Q 53 al-Najm, Q 96 al-ʿAlaq, Q 114 al-Nās, Q 49 al-Ḥujurāt, Q 35 Fāṭir, Q 112 al-Ikhlāṣ.
+
+### §10.70.4 Interpretation
+
+The Q 22 al-Ḥajj specialist's observation — al-Bukhārī silent, Sunnī-majority position resting on Sunan-grade — is **representative**, not an outlier. Five other surahs sit in the same Sunan-heavy territory (Q 11, Q 17, Q 18, Q 46, Q 67). The methodological-vigilance concern that "classical = ṣaḥīḥayn" is empirically overgeneralized is substantiated at corpus scale.
+
+Equal NULL prominence: although the verdict is DESCRIPTIVE-CONFIRMED on the pre-registered direction, the **majority of citations (55%) ARE ṣaḥīḥayn**. The headline "the project's per-surah hadith corpora are anchored in the most-authentic Sunnī collections more often than not" deserves equal billing. The pre-registered question was about whether the Sunan-grade share is **substantively large** (≥30%) — a threshold large enough to break the "classical = ṣaḥīḥayn" rhetorical short-hand. The observed 45% breaks it decisively while leaving the ṣaḥīḥayn majority intact.
+
+### §10.70.5 Cross-finding integration
+
+- **Q022-F-06 (Q 22 al-Ḥajj specialist)**: the prompting case — Sunan-grade attestation for double-sajda; al-Bukhārī silent. H-NEW-1780 finds this is representative across 6 other heavy-Sunan surahs.
+- **cross-finding-015-classical-scholarship-validation-pattern**: when classical scholarship aligns with empirical findings — refined here by distinguishing ṣaḥīḥayn-classical from Sunan-classical. Future specialist write-ups should carry grade-qualifier forward when citing "the classical hadith tradition holds X."
+- **MW-7 (post-hoc cap)**: direction was pre-locked before tally; the audit is a single pre-registered descriptive ratio test, not post-hoc.
+
+### §10.70.6 Files
+
+- `findings/phase-b-hypotheses/prereg-h-new-1780-hadith-grade-distribution.md` (SHA `2c93112e6bcf275f348566d0be65cc76b07369ef82ab46c17fe11832e69a78bf`)
+- `findings/phase-b-hypotheses/scripts/h-new-1780.py`
+- `findings/phase-b-hypotheses/csv/h-new-1780.json`
+- `findings/phase-b-hypotheses/h-new-1780-sahihayn-vs-sunan-distribution.md`
