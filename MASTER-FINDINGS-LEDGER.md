@@ -4268,3 +4268,51 @@ Q 19 is the **named-eponymous surah for Maryam but the structural locus for al-R
 ### §10.61.3 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1720.json`
+
+## §10.62 H-NEW-1730 inline (2026-05-09) — Muqaṭṭāʿat letter-count audit: MIXED al-Khalifa verdict (2 EXACT verifies + 2 falsifies); refines the H-NEW-1600 FALSIFICATION
+
+**Status**: MIXED — REFINES prior FALSIFICATION verdicts on al-Khalifa.
+
+| Surah | Letter | Count | Khalifa claim | Verdict |
+|---|---|---|---|---|
+| **Q 50 (Qāf)** | ق | **57** | **57 = 19×3** | ✅ **CONFIRMED EXACT** |
+| **Q 38 + Q 7 + Q 19** | ص-combined | **152** | **152 = 19×8** | ✅ **CONFIRMED EXACT** |
+| Q 68 (Qalam) | ن | 131 | div by 19 | ❌ FALSIFIED (mod 19 = 17) |
+| Q 38 (Ṣād, alone) | ص | 29 | div by 19 | ❌ FALSIFIED (mod 19 = 10) |
+| Q 42 (ḤMʿSQ) | ع+س+ق | 208 | div by 19 | ❌ FALSIFIED (mod 19 = 18) |
+
+**Combined ص-count breakdown**: Q 7 (المص opener) = 97; Q 19 (كهيعص opener) = 26; Q 38 (ص opener) = 29; total = 152 = **19 × 8 EXACTLY**.
+
+### §10.62.1 Refined al-Khalifa cumulative audit
+
+| Class of claims | Empirical result |
+|---|---|
+| Corpus-wide token counts | 5/5 FALSIFIED (Allāh, al-Raḥmān, al-Raḥīm, Q 96 words, total verses div-19) |
+| Muqaṭṭāʿat-letter counts | **2/4 EXACTLY VERIFY** (Q 50 ق=57; combined ص=152) |
+| Pre-existing classical facts | 3/3 CONFIRMED (basmala 19 letters; Q 1 = 29 words; 114 surahs = 19×6) |
+| **Cumulative** | **MIXED** — not wholesale falsification, not wholesale vindication |
+
+### §10.62.2 Statistical-significance honest assessment
+
+P(count mod 19 = 0) ≈ 1/19 ≈ 5.3% under uniform null. With 14 muqaṭṭāʿat-letter tests possible (and 2 of 4 sampled here verifying):
+- Expected by chance over 14 tests: ≈ 0.74 hits
+- Observed in this sub-sample (2/4): higher than chance baseline, but small sample
+- Statistical claim "muqaṭṭāʿat-letter counts are systematically 19-organized" is **NOT supported** at sample size 4; would require full 14-letter test
+
+The 2 EXACT verifies remain **interesting individual curiosities** — they MAY be real partial-iʿjāz design, MAY be selection-effect post-hoc cherry-picks from al-Khalifa's broader claim set, MAY be structurally-constrained by Arabic morphology of the surahs. **No determinate verdict possible without complete muqaṭṭāʿat-letter audit**.
+
+### §10.62.3 Bidirectional rules-tuple sensitivity in action
+
+This finding is a textbook case of `feedback_rules_tuple_bidirectional` memory: same author's claims falsify on corpus-wide rules but verify on letter-count rules. **The audit is MORE RIGOROUS for reporting both directions honestly than for choosing one direction.**
+
+### §10.62.4 Cross-finding integration
+
+- Combined with H-NEW-1600 + H-NEW-1530 + H-NEW-1720: al-Khalifa cumulative audit verdict is **MIXED**, not uniform-FALSE
+- Q050-F-07 finding: Q 50 ق-density rank 2/20 (Q 75 narrowly higher) — provides STRUCTURAL EXPLANATION for the 57-exact: Q 50 is highly ق-saturated thematically; the count 57 emerges from ق-saturated content
+- **Q 75 al-Qiyāma higher ق-density than Q 50** suggests if Q 75 were a muqaṭṭāʿat-ق-opener it might show even HIGHER ق-count — but Q 75 does NOT have a muqaṭṭaʿ opener; this falsifies a "named-letter must dominate" reading
+- Open follow-up: pre-register the FULL muqaṭṭāʿat-letter audit (all 14 surahs, 14 named-letters); compute under permutation null
+
+### §10.62.5 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1730.json`
+- Finding: `findings/phase-b-hypotheses/h-new-1730-muqattaat-letter-count-audit.md`
