@@ -4316,3 +4316,91 @@ This finding is a textbook case of `feedback_rules_tuple_bidirectional` memory: 
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1730.json`
 - Finding: `findings/phase-b-hypotheses/h-new-1730-muqattaat-letter-count-audit.md`
+
+## §10.63 H-NEW-1740 (pre-registered) — COMPLETE 29-surah al-Khalifa muqaṭṭāʿat-letter audit: NULL (1/29 hits = chance; the H-NEW-1730 sample-of-4 was a cherry-pick)
+
+**Status**: NULL. Pre-registered (SHA `5aae04c37cdb05742df2c78e292c89f98a6aede3068700f64cdd655a236b0516`), seed `20260509`, 10,000 perms. The H-NEW-1730 open follow-up is closed: the full muqaṭṭāʿat-letter audit returns chance-level results.
+
+### §10.63.1 Headline result
+
+Across all 29 muqaṭṭāʿat-bearing surahs (Q 2, 3, 7, 10, 11, 12, 13, 14, 15, 19, 20, 26, 27, 28, 29, 30, 31, 32, 36, 38, 40, 41, 42, 43, 44, 45, 46, 50, 68), the count of each surah's named muqaṭṭāʿ letter(s) is divisible by 19 in **1 case out of 29**.
+
+| Quantity | Value |
+|---|---|
+| Expected under uniform null (Binomial mean) | 1.526 |
+| Expected under al-Khalifa hypothesis | 29 |
+| **Observed** | **1** |
+| Permutation p-value (10,000 perms) | **0.7909** |
+| Verdict (pre-committed thresholds: ≥5 PATTERN, 3–4 AMBIGUOUS, ≤2 NULL) | **NULL** |
+
+The single surah-level hit is **Q 50 ق = 57 = 19 × 3** (the H-NEW-1730 reproduction). All 28 other sub-claims fail (mod-19 residues 2, 5, 5, 6, 6, 7, 7, 7, 8, 9, 9, 9, 10, 11, 11, 12, 13, 14, 14, 14, 15, 16, 17, 17, 17, 17, 18, 18).
+
+### §10.63.2 Permutation null hit-distribution (10,000 perms)
+
+| k_perm | Count | % |
+|---:|---:|---:|
+| 0 | 2,091 | 20.9% |
+| 1 | 3,280 | 32.8% |
+| **2** | 2,591 | 25.9% |
+| 3 | 1,361 | 13.6% |
+| 4 | 490 | 4.9% |
+| 5 (threshold) | 154 | 1.5% |
+| 6–8 | 33 | 0.3% |
+| ≥9 | 0 | 0.0% |
+
+Observed k = 1 sits at the mode of the null. To clear the PATTERN threshold (k ≥ 5), the audit would need ~3× the null mean; that threshold has permutation-p < 0.02. The observed result clears NOTHING.
+
+### §10.63.3 Compound (cross-surah) family aggregates
+
+| Family | Surahs | Total | mod 19 | Hit? |
+|---|---|---:|---:|:---:|
+| الم-family | Q 2, 3, 29, 30, 31, 32 | 17,952 | 16 | – |
+| المص (Q 7) | Q 7 | 4,742 | 11 | – |
+| الر-family | Q 10, 11, 12, 14, 15 | 8,101 | 7 | – |
+| المر (Q 13) | Q 13 | 1,339 | 9 | – |
+| كهيعص (Q 19) | Q 19 | 740 | 18 | – |
+| طه (Q 20) | Q 20 | 242 | 14 | – |
+| طسم-family | Q 26, 28 | 1,184 | 6 | – |
+| طس (Q 27) | Q 27 | 120 | 6 | – |
+| يس (Q 36) | Q 36 | 261 | 14 | – |
+| ص (Q 38) | Q 38 | 29 | 10 | – |
+| **ص-combined** | **Q 7, 19, 38** | **152** | **0** | **YES** |
+| حم-family | Q 40–46 | 2,112 | 3 | – |
+| حم عسق (Q 42) | Q 42 | 556 | 5 | – |
+| **ق (Q 50)** | **Q 50** | **57** | **0** | **YES** |
+| ن (Q 68) | Q 68 | 131 | 17 | – |
+
+Family hits 2/15 vs expected 0.79 (one-tailed Binomial p ≈ 0.21) — also chance-level. The الم-family and حم-family, which would be the most-stable targets if the thesis were real, both fail.
+
+### §10.63.4 Honest cherry-picking diagnosis
+
+The H-NEW-1730 inline result (2 EXACT verifies from a sample of 4) is now decisively explained as **selection-effect cherry-picking**. al-Khalifa's published catalogue, viewed at its full scope of 29 surah-level sub-claims, contains exactly one true verify — Q 50 ق = 57 = 19 × 3. That is exactly what one expects from chance across 29 random-modulus tests (expected = 1.53).
+
+The Q 50 hit IS a real, reproducible fact under the audit's rules-tuple — and Q050-F-07 documents Q 50's ق-saturation as the structural explanation (Q 50 has ق-density rank 2/20 in the corpus). The fact remains curious; the systematic claim does not.
+
+### §10.63.5 Refined cumulative al-Khalifa audit (H-NEW-1600 + 1530 + 1720 + 1730 + 1740)
+
+| Category | Result |
+|---|---|
+| Pre-existing classical facts (basmala = 19 letters; Q 1 = 29 words; 114 = 19 × 6) | 3/3 CONFIRMED (trivial / tautological) |
+| Corpus-wide token counts (Allāh, al-Raḥmān, al-Raḥīm, Q 96 words, 6,236 verses) | 0/5 — all FALSIFIED |
+| Muqaṭṭāʿat surah-letter counts | **1/29 — chance-level (this audit)** |
+| Muqaṭṭāʿat compound family aggregates | 2/15 — chance-level |
+
+**Cumulative**: 3 trivial-CONFIRMED + 0/5 corpus-VERIFIED + 1/29 surah-VERIFIED + 2/15 family-VERIFIED. **Total novel verifications: 1 surah + 1 family. Total novel falsifications: 33.** The al-Khalifa "miracle of 19" thesis is **decisively rejected** on its complete published catalogue.
+
+This is the most-comprehensive empirical test of the al-Khalifa thesis in the project's audit history. It converges with H-META-1 (modern-numerology era: 0/10 confirmations) and finalizes the al-Khalifa lane.
+
+### §10.63.6 Files
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1740-khalifa-muqattaat-complete-audit.md`
+- Script: `findings/phase-b-hypotheses/scripts/h-new-1740.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1740.json`
+- Finding: `findings/phase-b-hypotheses/h-new-1740-khalifa-muqattaat-complete-audit.md`
+
+### §10.63.7 Open follow-ups
+
+- The al-Khalifa lane is empirically CLOSED on the muqaṭṭāʿat sub-thesis. No further follow-up tests are warranted on that sub-thesis.
+- Q 50 ق = 57 = 19 × 3 remains a real, reproducible fact; the Q050 specialist file may note this as a *curious arithmetic fact* without elevating it to a systematic claim.
+- ص-combined = 152 across Q 7 + Q 19 + Q 38 = 19 × 8 likewise remains a real fact; surahs Q 7, Q 19, Q 38 each have their own ص-counts (97, 26, 29) none of which alone divides by 19, but the cross-surah sum does. This is interesting at the level of one isolated arithmetic coincidence; it does not generalize.
+- H-META-1 modern-numerology-era 0/10 confirmation pattern is now reinforced by an additional 33 novel-FALSIFICATIONS and 2 isolated VERIFICATIONS — i.e., still ≪ 5% confirmation rate on substantive numerological claims.
