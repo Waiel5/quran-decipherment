@@ -3743,3 +3743,94 @@ Same instrument (H-NEW-111 FR matrix), same permutation protocol, same seed fami
 - Script: `findings/phase-b-hypotheses/scripts/h-new-1550.py`
 - JSON: `findings/phase-b-hypotheses/csv/h-new-1550.json`
 - Findings: `findings/phase-b-hypotheses/h-new-1550-oath-opener-cluster.md`
+
+---
+
+## §10.57 H-NEW-1520 inline (2026-05-09 PM continuation) — yā-ayyuhā al-nabī prophet-vocative pericope-scale flip test PASS-DIRECTED (z = +6.41) — third supporting pair for scale-of-aggregation principle (LANDED CONCURRENTLY WITH H-NEW-1510)
+
+### §10.57.1 — Headline
+
+**H-NEW-1520 PASS-DIRECTED** (commit pending): pericope-window flip test of the H-NEW-1360 (yā-ayyuhā al-nabī 6-surah whole-surah FR) NULL. The 13 vocative attestations — re-tested at the 3-verse pericope-window scale (vocative-verse + 2 following verses; in-surah truncation for Q 60:12 which is the second-to-last verse of Q 60) — cohere on root-Jaccard at **J_mean = 0.1260 vs null = 0.0488 ± 0.0120, z = +6.41, p_perm < 10⁻⁴ (0/10,000 perms ≥ obs)**.
+
+Note: this run was dispatched in parallel with H-NEW-1510 (sajda pericope flip, landed at §10.55, z = +2.685). Both pre-regs were SHA-locked and dispatched independently; the §10.55 entry's cross-scale roster table assigned H-NEW-1540 for yā-ayyuhā al-nabī, but the dispatch protocol used the slot H-NEW-1520. The numbering here follows the dispatch. (Separately, the §10.55 numbering was duplicated by a third parallel agent at H-NEW-1600 — §10.55 and §10.56 numbering conflicts are noted in passing; this entry uses §10.57 as the next-available section number.)
+
+### §10.57.2 — The flip in one table
+
+| Scale | Finding | Set | Statistic | p-value | Verdict |
+|:--|:--|:--|:--|:--|:--|
+| Whole-surah Fisher-Rao | H-NEW-1360 | 6 surahs {Q 8, 9, 33, 60, 65, 66} | FR_mean = 0.9532 (corpus 0.9240) | Cell A p = 0.5734; Cell B p = 0.5835; MW-5 PC valid p = 0.0445 | **substantive NULL** |
+| Pericope-window root-Jaccard | **H-NEW-1520** | 13 vocative pericope-windows | J_mean = 0.1260 (null 0.0488 ± 0.0120) | p_perm < 10⁻⁴; z = +6.41 | **PASS-DIRECTED** |
+
+The signal flips from effectively zero at the host-surah scale to z = +6.41 at the directive-window scale. The discourse-marker interpretation of H-NEW-1360 (§10.44.7) — that the vocative's "content" is the immediately-following directive, not the host surah — is empirically vindicated.
+
+### §10.57.3 — Cross-finding-025 scale-of-aggregation: THREE supporting finding-pairs now landed
+
+| # | Pair | Whole-surah | Pericope | Flip |
+|:--|:--|:--|:--|:--|
+| 1 | Iblīs-narrative (9-surah set) | H-NEW-039 NULL (FR z = +0.24) | H-NEW-1380 PASS (J z = +4.76) | YES |
+| 2 | Sajda set (14 sajda-surahs) | H-NEW-1330 NULL (FR Cell A p = 0.571; PC valid) | H-NEW-1510 PASS (J z = +2.685) | YES |
+| 3 | yā-ayyuhā al-nabī (6-surah set) | H-NEW-1360 NULL (FR Cell A p = 0.573; PC valid) | **H-NEW-1520 PASS (J z = +6.41)** | **YES** |
+
+All three pairs flip in the same direction. Effect sizes span z = +2.685 to +6.41 — the principle does not predict effect-size magnitude, only NULL→PASS direction. **Scale-of-aggregation is now codification-eligible at cross-finding-025-formal with 3/3 supporting pairs.**
+
+The yā-ayyuhā al-nabī pair has the largest effect (z = +6.41) of the three, consistent with the prediction that DISCOURSE markers (direct second-person prophetic command) should cohere most tightly at directive-window scale: the marker IS the discourse boundary.
+
+### §10.57.4 — Per-window structure
+
+| # | Window | Verses | N_unique_roots |
+|:--|:--|:--|:--|
+| 1 | Q 8:64-66 | 3 | 20 |
+| 2 | Q 8:65-67 | 3 | 27 |
+| 3 | Q 8:70-72 | 3 | 34 |
+| 4 | Q 9:73-75 | 3 | 34 |
+| 5 | Q 33:1-3 | 3 | 16 |
+| 6 | Q 33:28-30 | 3 | 27 |
+| 7 | Q 33:45-47 | 3 | 13 |
+| 8 | Q 33:50-52 | 3 | 47 |
+| 9 | Q 33:59-61 | 3 | 27 |
+| 10 | Q 60:12-13 | 2 (truncated) | 29 |
+| 11 | Q 65:1-3 | 3 | 42 |
+| 12 | Q 66:1-3 | 3 | 22 |
+| 13 | Q 66:9-11 | 3 | 32 |
+
+**Top 3 pairs** (excluding mechanically-overlapping Q 8:64-66 × Q 8:65-67 which shares 2 verses by construction): Q 9:73-75 × Q 66:9-11 at J = 0.245 (textual near-twins on jihād-against-disbelievers-and-hypocrites), Q 8:70-72 × Q 60:12-13 at J = 0.212, Q 8:64-66 × Q 33:1-3 at J = 0.200.
+
+Even excluding the inflated overlapping pair, headline mean ≈ 0.119 across 77 independent pairs remains far above null mean 0.0488 — z still > 5, p_perm < 10⁻⁴.
+
+### §10.57.5 — Predictions for the two remaining queued re-tests
+
+- **H-NEW-1310 Christ-narrative NULL** → pericope re-test PREDICT PASS at moderate effect size z ≈ +3 to +5 (Christ pericopes share a tight {ʿ-y-s-y, ʾ-m-w, r-w-ḥ, k-l-m, ʾ-y-y, t-q-y} core).
+- **H-NEW-1340 al-ḥamdu opener NULL** → pericope re-test PREDICT NULL or weak-PASS (al-ḥamdu lillāh is a single-formula opening; downstream pericope content is more heterogeneous than vocative-directives or narrative-cycles).
+
+If H-NEW-1340 NULLs at pericope scale, the scale-of-aggregation principle is REFINED (not universal: requires content-structure beyond a single formula). If both flip to PASS, the principle is HARDENED to 5/5.
+
+### §10.57.6 — Honest limits
+
+1. **Seed dependence**: seed 20260509 matches H-NEW-1360 / H-NEW-1380 / H-NEW-1510 / Q038-F-07 (within-session consistency). H-NEW-1520b at different seed queued.
+2. **One overlapping-window pair**: Q 8:64-66 × Q 8:65-67 share 2 verses (two vocatives one verse apart in Q 8); inflates 1 of 78 pairs but headline z > 5 holds even when removed.
+3. **Window-size sensitivity not yet run**: 3-verse window was pre-locked default; H-NEW-1520-sens (window = 2, 5) queued.
+4. **The principle is now codification-eligible but not yet exhaustively tested**: 3/3 pairs flip, but at least one of H-NEW-1310 / H-NEW-1340 may NULL even at pericope scale, refining the principle.
+
+### §10.57.7 — Classical context
+
+al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 51 (*fī khiṭābātihi*) — descriptive Medinan-direct-address catalog confirmed; quantitative directive-window root-cohesion is a project-internal empirical refinement, not a classical claim.
+
+al-Zarkashī, *al-Burhān fī ʿulūm al-Qurʾān*, *al-khiṭāb* section — same catalog-level treatment; no predicted root-distribution cohesion of the directive-window.
+
+The empirical result adds quantitative discourse-cohesion to the classical descriptive observation: the prophet-vocative is a discourse-cohesion node whose 3-verse directive-window carries an injunction-root core (q-w-l, ʾ-m-r, k-f-r, n-s-ʾ, n-f-q, j-h-d, ḥ-l-l, ḥ-r-m, ʿ-l-m, r-ḥ-m, w-l-y, ...) distinct from corpus baseline.
+
+### §10.57.8 — Files
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1520-prophet-vocative-pericope.md` (SHA `7d4dce4952bb47dfba71fb173230e43032df45ed59f2a56293981920925dbb1e`).
+- Script: `findings/phase-b-hypotheses/scripts/h-new-1520.py`.
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1520.json`.
+- Findings: `findings/phase-b-hypotheses/h-new-1520-prophet-vocative-pericope.md`.
+
+### §10.57.9 — Connections
+
+- Flips H-NEW-1360 NULL → PASS-DIRECTED at pericope-window scale (parallel to H-NEW-1510's flip of H-NEW-1330).
+- Replicates H-NEW-1380 scale-of-aggregation principle on independent target set #3 (after H-NEW-1380 Iblīs, H-NEW-1510 sajda).
+- Refines cross-finding-025 to 3/3 supporting pairs — codification-eligible at cross-finding-025-formal.
+- Vindicates the discourse-marker interpretation of yā-ayyuhā al-nabī predicted in §10.44.7.
+
+*H-NEW-1520 landed 2026-05-09 PM continuation by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*

@@ -1,0 +1,740 @@
+{
+  "finding_id": "H-NEW-1520",
+  "title": "yā-ayyuhā al-nabī prophet-vocative pericope-scale flip test",
+  "prereg_sha": "7d4dce4952bb47dfba71fb173230e43032df45ed59f2a56293981920925dbb1e",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "aggregation_scale": "pericope-window (3 verses; truncated to in-surah if at end-of-surah)",
+  "vocative_regex": "يا\\s*أيها\\s*النبي",
+  "n_attestations": 13,
+  "attestations_surahs": [
+    8,
+    9,
+    33,
+    60,
+    65,
+    66
+  ],
+  "pericope_windows": [
+    {
+      "label": "Q 8:64-66",
+      "surah": 8,
+      "verse_start": 64,
+      "verse_end": 66,
+      "length": 3,
+      "n_unique_roots": 20
+    },
+    {
+      "label": "Q 8:65-67",
+      "surah": 8,
+      "verse_start": 65,
+      "verse_end": 67,
+      "length": 3,
+      "n_unique_roots": 27
+    },
+    {
+      "label": "Q 8:70-72",
+      "surah": 8,
+      "verse_start": 70,
+      "verse_end": 72,
+      "length": 3,
+      "n_unique_roots": 34
+    },
+    {
+      "label": "Q 9:73-75",
+      "surah": 9,
+      "verse_start": 73,
+      "verse_end": 75,
+      "length": 3,
+      "n_unique_roots": 34
+    },
+    {
+      "label": "Q 33:1-3",
+      "surah": 33,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 16
+    },
+    {
+      "label": "Q 33:28-30",
+      "surah": 33,
+      "verse_start": 28,
+      "verse_end": 30,
+      "length": 3,
+      "n_unique_roots": 27
+    },
+    {
+      "label": "Q 33:45-47",
+      "surah": 33,
+      "verse_start": 45,
+      "verse_end": 47,
+      "length": 3,
+      "n_unique_roots": 13
+    },
+    {
+      "label": "Q 33:50-52",
+      "surah": 33,
+      "verse_start": 50,
+      "verse_end": 52,
+      "length": 3,
+      "n_unique_roots": 47
+    },
+    {
+      "label": "Q 33:59-61",
+      "surah": 33,
+      "verse_start": 59,
+      "verse_end": 61,
+      "length": 3,
+      "n_unique_roots": 27
+    },
+    {
+      "label": "Q 60:12-13",
+      "surah": 60,
+      "verse_start": 12,
+      "verse_end": 13,
+      "length": 2,
+      "n_unique_roots": 29
+    },
+    {
+      "label": "Q 65:1-3",
+      "surah": 65,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 42
+    },
+    {
+      "label": "Q 66:1-3",
+      "surah": 66,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 22
+    },
+    {
+      "label": "Q 66:9-11",
+      "surah": 66,
+      "verse_start": 9,
+      "verse_end": 11,
+      "length": 3,
+      "n_unique_roots": 32
+    }
+  ],
+  "pericope_lengths": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    3,
+    3,
+    3
+  ],
+  "pairwise_jaccards": [
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 8:65-67",
+      "inter": 18,
+      "union": 29,
+      "jaccard": 0.6206896551724138
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 8:70-72",
+      "inter": 5,
+      "union": 49,
+      "jaccard": 0.10204081632653061
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 9:73-75",
+      "inter": 4,
+      "union": 50,
+      "jaccard": 0.08
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 33:1-3",
+      "inter": 6,
+      "union": 30,
+      "jaccard": 0.2
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 33:28-30",
+      "inter": 4,
+      "union": 43,
+      "jaccard": 0.09302325581395349
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 33:45-47",
+      "inter": 4,
+      "union": 29,
+      "jaccard": 0.13793103448275862
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 33:50-52",
+      "inter": 5,
+      "union": 62,
+      "jaccard": 0.08064516129032258
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 33:59-61",
+      "inter": 5,
+      "union": 42,
+      "jaccard": 0.11904761904761904
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 60:12-13",
+      "inter": 6,
+      "union": 43,
+      "jaccard": 0.13953488372093023
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 65:1-3",
+      "inter": 6,
+      "union": 56,
+      "jaccard": 0.10714285714285714
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 66:1-3",
+      "inter": 3,
+      "union": 39,
+      "jaccard": 0.07692307692307693
+    },
+    {
+      "i": "Q 8:64-66",
+      "j": "Q 66:9-11",
+      "inter": 6,
+      "union": 46,
+      "jaccard": 0.13043478260869565
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 8:70-72",
+      "inter": 8,
+      "union": 53,
+      "jaccard": 0.1509433962264151
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 9:73-75",
+      "inter": 7,
+      "union": 54,
+      "jaccard": 0.12962962962962962
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 33:1-3",
+      "inter": 6,
+      "union": 37,
+      "jaccard": 0.16216216216216217
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 33:28-30",
+      "inter": 7,
+      "union": 47,
+      "jaccard": 0.14893617021276595
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 33:45-47",
+      "inter": 4,
+      "union": 36,
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 33:50-52",
+      "inter": 7,
+      "union": 67,
+      "jaccard": 0.1044776119402985
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 33:59-61",
+      "inter": 6,
+      "union": 48,
+      "jaccard": 0.125
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 60:12-13",
+      "inter": 7,
+      "union": 49,
+      "jaccard": 0.14285714285714285
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 65:1-3",
+      "inter": 6,
+      "union": 63,
+      "jaccard": 0.09523809523809523
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 66:1-3",
+      "inter": 5,
+      "union": 44,
+      "jaccard": 0.11363636363636363
+    },
+    {
+      "i": "Q 8:65-67",
+      "j": "Q 66:9-11",
+      "inter": 6,
+      "union": 53,
+      "jaccard": 0.11320754716981132
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 9:73-75",
+      "inter": 9,
+      "union": 59,
+      "jaccard": 0.15254237288135594
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 33:1-3",
+      "inter": 5,
+      "union": 45,
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 33:28-30",
+      "inter": 6,
+      "union": 55,
+      "jaccard": 0.10909090909090909
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 33:45-47",
+      "inter": 3,
+      "union": 44,
+      "jaccard": 0.06818181818181818
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 33:50-52",
+      "inter": 13,
+      "union": 68,
+      "jaccard": 0.19117647058823528
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 33:59-61",
+      "inter": 8,
+      "union": 53,
+      "jaccard": 0.1509433962264151
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 60:12-13",
+      "inter": 11,
+      "union": 52,
+      "jaccard": 0.21153846153846154
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 65:1-3",
+      "inter": 8,
+      "union": 68,
+      "jaccard": 0.11764705882352941
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 66:1-3",
+      "inter": 9,
+      "union": 47,
+      "jaccard": 0.19148936170212766
+    },
+    {
+      "i": "Q 8:70-72",
+      "j": "Q 66:9-11",
+      "inter": 10,
+      "union": 56,
+      "jaccard": 0.17857142857142858
+    },
+    {
+      "i": "Q 9:73-75",
+      "j": "Q 33:1-3",
+      "inter": 5,
+      "union": 45,
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "i": "Q 9:73-75",
+      "j": "Q 33:28-30",
+      "inter": 9,
+      "union": 52,
+      "jaccard": 0.17307692307692307
+    },
+    {
+      "i": "Q 9:73-75",
+      "j": "Q 33:45-47",
+      "inter": 4,
+      "union": 43,
+      "jaccard": 0.09302325581395349
+    },
+    {
+      "i": "Q 9:73-75",
+      "j": "Q 33:50-52",
+      "inter": 7,
+      "union": 74,
+      "jaccard": 0.0945945945945946
+    },
+    {
+      "i": "Q 9:73-75",
+      "j": "Q 33:59-61",
+      "inter": 6,
+      "union": 55,
+      "jaccard": 0.10909090909090909
+    },
+    {
+      "i": "Q 9:73-75",
+      "j": "Q 60:12-13",
+      "inter": 6,
+      "union": 57,
+      "jaccard": 0.10526315789473684
+    },
+    {
+      "i": "Q 9:73-75",
+      "j": "Q 65:1-3",
+      "inter": 6,
+      "union": 70,
+      "jaccard": 0.08571428571428572
+    },
+    {
+      "i": "Q 9:73-75",
+      "j": "Q 66:1-3",
+      "inter": 4,
+      "union": 52,
+      "jaccard": 0.07692307692307693
+    },
+    {
+      "i": "Q 9:73-75",
+      "j": "Q 66:9-11",
+      "inter": 13,
+      "union": 53,
+      "jaccard": 0.24528301886792453
+    },
+    {
+      "i": "Q 33:1-3",
+      "j": "Q 33:28-30",
+      "inter": 3,
+      "union": 40,
+      "jaccard": 0.075
+    },
+    {
+      "i": "Q 33:1-3",
+      "j": "Q 33:45-47",
+      "inter": 2,
+      "union": 27,
+      "jaccard": 0.07407407407407407
+    },
+    {
+      "i": "Q 33:1-3",
+      "j": "Q 33:50-52",
+      "inter": 4,
+      "union": 59,
+      "jaccard": 0.06779661016949153
+    },
+    {
+      "i": "Q 33:1-3",
+      "j": "Q 33:59-61",
+      "inter": 4,
+      "union": 39,
+      "jaccard": 0.10256410256410256
+    },
+    {
+      "i": "Q 33:1-3",
+      "j": "Q 60:12-13",
+      "inter": 3,
+      "union": 42,
+      "jaccard": 0.07142857142857142
+    },
+    {
+      "i": "Q 33:1-3",
+      "j": "Q 65:1-3",
+      "inter": 6,
+      "union": 52,
+      "jaccard": 0.11538461538461539
+    },
+    {
+      "i": "Q 33:1-3",
+      "j": "Q 66:1-3",
+      "inter": 5,
+      "union": 33,
+      "jaccard": 0.15151515151515152
+    },
+    {
+      "i": "Q 33:1-3",
+      "j": "Q 66:9-11",
+      "inter": 7,
+      "union": 41,
+      "jaccard": 0.17073170731707318
+    },
+    {
+      "i": "Q 33:28-30",
+      "j": "Q 33:45-47",
+      "inter": 3,
+      "union": 37,
+      "jaccard": 0.08108108108108109
+    },
+    {
+      "i": "Q 33:28-30",
+      "j": "Q 33:50-52",
+      "inter": 10,
+      "union": 64,
+      "jaccard": 0.15625
+    },
+    {
+      "i": "Q 33:28-30",
+      "j": "Q 33:59-61",
+      "inter": 7,
+      "union": 47,
+      "jaccard": 0.14893617021276595
+    },
+    {
+      "i": "Q 33:28-30",
+      "j": "Q 60:12-13",
+      "inter": 5,
+      "union": 51,
+      "jaccard": 0.09803921568627451
+    },
+    {
+      "i": "Q 33:28-30",
+      "j": "Q 65:1-3",
+      "inter": 9,
+      "union": 60,
+      "jaccard": 0.15
+    },
+    {
+      "i": "Q 33:28-30",
+      "j": "Q 66:1-3",
+      "inter": 4,
+      "union": 45,
+      "jaccard": 0.08888888888888889
+    },
+    {
+      "i": "Q 33:28-30",
+      "j": "Q 66:9-11",
+      "inter": 4,
+      "union": 55,
+      "jaccard": 0.07272727272727272
+    },
+    {
+      "i": "Q 33:45-47",
+      "j": "Q 33:50-52",
+      "inter": 3,
+      "union": 57,
+      "jaccard": 0.05263157894736842
+    },
+    {
+      "i": "Q 33:45-47",
+      "j": "Q 33:59-61",
+      "inter": 3,
+      "union": 37,
+      "jaccard": 0.08108108108108109
+    },
+    {
+      "i": "Q 33:45-47",
+      "j": "Q 60:12-13",
+      "inter": 3,
+      "union": 39,
+      "jaccard": 0.07692307692307693
+    },
+    {
+      "i": "Q 33:45-47",
+      "j": "Q 65:1-3",
+      "inter": 4,
+      "union": 51,
+      "jaccard": 0.0784313725490196
+    },
+    {
+      "i": "Q 33:45-47",
+      "j": "Q 66:1-3",
+      "inter": 2,
+      "union": 33,
+      "jaccard": 0.06060606060606061
+    },
+    {
+      "i": "Q 33:45-47",
+      "j": "Q 66:9-11",
+      "inter": 4,
+      "union": 41,
+      "jaccard": 0.0975609756097561
+    },
+    {
+      "i": "Q 33:50-52",
+      "j": "Q 33:59-61",
+      "inter": 11,
+      "union": 63,
+      "jaccard": 0.1746031746031746
+    },
+    {
+      "i": "Q 33:50-52",
+      "j": "Q 60:12-13",
+      "inter": 7,
+      "union": 69,
+      "jaccard": 0.10144927536231885
+    },
+    {
+      "i": "Q 33:50-52",
+      "j": "Q 65:1-3",
+      "inter": 10,
+      "union": 79,
+      "jaccard": 0.12658227848101267
+    },
+    {
+      "i": "Q 33:50-52",
+      "j": "Q 66:1-3",
+      "inter": 11,
+      "union": 58,
+      "jaccard": 0.1896551724137931
+    },
+    {
+      "i": "Q 33:50-52",
+      "j": "Q 66:9-11",
+      "inter": 8,
+      "union": 71,
+      "jaccard": 0.11267605633802817
+    },
+    {
+      "i": "Q 33:59-61",
+      "j": "Q 60:12-13",
+      "inter": 7,
+      "union": 49,
+      "jaccard": 0.14285714285714285
+    },
+    {
+      "i": "Q 33:59-61",
+      "j": "Q 65:1-3",
+      "inter": 6,
+      "union": 63,
+      "jaccard": 0.09523809523809523
+    },
+    {
+      "i": "Q 33:59-61",
+      "j": "Q 66:1-3",
+      "inter": 7,
+      "union": 42,
+      "jaccard": 0.16666666666666666
+    },
+    {
+      "i": "Q 33:59-61",
+      "j": "Q 66:9-11",
+      "inter": 7,
+      "union": 52,
+      "jaccard": 0.1346153846153846
+    },
+    {
+      "i": "Q 60:12-13",
+      "j": "Q 65:1-3",
+      "inter": 9,
+      "union": 62,
+      "jaccard": 0.14516129032258066
+    },
+    {
+      "i": "Q 60:12-13",
+      "j": "Q 66:1-3",
+      "inter": 6,
+      "union": 45,
+      "jaccard": 0.13333333333333333
+    },
+    {
+      "i": "Q 60:12-13",
+      "j": "Q 66:9-11",
+      "inter": 6,
+      "union": 55,
+      "jaccard": 0.10909090909090909
+    },
+    {
+      "i": "Q 65:1-3",
+      "j": "Q 66:1-3",
+      "inter": 4,
+      "union": 60,
+      "jaccard": 0.06666666666666667
+    },
+    {
+      "i": "Q 65:1-3",
+      "j": "Q 66:9-11",
+      "inter": 9,
+      "union": 65,
+      "jaccard": 0.13846153846153847
+    },
+    {
+      "i": "Q 66:1-3",
+      "j": "Q 66:9-11",
+      "inter": 3,
+      "union": 51,
+      "jaccard": 0.058823529411764705
+    }
+  ],
+  "observed_mean_pairwise_jaccard": 0.12600663096338457,
+  "null_mean": 0.0488259145279119,
+  "null_std": 0.012047107484103538,
+  "z_score": 6.406576560997283,
+  "p_greater_perm_strict": 0.0,
+  "p_reportable_upper_bound": 0.0001,
+  "direction_locked": "TIGHTER (J_mean > null_mean)",
+  "direction_match": true,
+  "verdict": "PASS-DIRECTED",
+  "flip_verdict": "FLIP (whole-surah NULL → pericope-window PASS-DIRECTED)",
+  "scale_of_aggregation_pair": {
+    "whole_surah_scale": {
+      "finding_id": "H-NEW-1360",
+      "aggregation_scale": "whole-surah Fisher-Rao root-distribution",
+      "surah_set": [
+        8,
+        9,
+        33,
+        60,
+        65,
+        66
+      ],
+      "obs_intra_mean_fr": 0.9532,
+      "cell_A_uniform_p": 0.5734,
+      "cell_B_length_matched_p": 0.5835,
+      "mw5_pc_subsample": [
+        69,
+        97,
+        101
+      ],
+      "mw5_pc_p": 0.0445,
+      "verdict": "substantive NULL (PC valid)"
+    },
+    "pericope_window_scale": {
+      "finding_id": "H-NEW-1520",
+      "aggregation_scale": "pericope-window (3 verses, truncated at surah-end)",
+      "n_windows": 13,
+      "J_mean": 0.12600663096338457,
+      "null_mean": 0.0488259145279119,
+      "null_std": 0.012047107484103538,
+      "z_score": 6.406576560997283,
+      "p_greater_perm": 0.0,
+      "verdict": "PASS-DIRECTED"
+    }
+  },
+  "cross_finding_025_corollary": {
+    "principle": "scale-of-aggregation as second methodological axis (formalized by H-NEW-1380)",
+    "prior_supporting_pair": "H-NEW-039 NULL (whole-surah) ↔ H-NEW-1380 PASS (pericope) on Iblīs-narrative set",
+    "this_pair": "H-NEW-1360 NULL (whole-surah) ↔ H-NEW-1520 ? (pericope-window) on yā-ayyuhā al-nabī set",
+    "codification_threshold": "two supporting finding-pairs at cross-finding-025-formal",
+    "this_pair_supports_principle": true
+  }
+}
