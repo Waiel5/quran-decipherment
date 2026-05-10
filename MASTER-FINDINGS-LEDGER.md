@@ -4142,3 +4142,60 @@ Cross-finding-025 now joins muqaṭṭāʿat-as-introduction-markers (cross-find
 1. **Structural (cross-finding-008)**: muqaṭṭāʿat are book-introduction markers
 2. **Geometric (H-NEW-111 + cross-finding-010 4-region hub)**: mushaf is information-geodesic-optimal
 3. **Methodological (cross-finding-025-formal)**: scale-of-aggregation is itself a finding axis
+
+## §10.59 H-NEW-1560 inline (2026-05-10) — 99 asmāʾ al-ḥusnā corpus-wide distribution + top-10-by-density Fisher-Rao cluster cohesion
+
+**Status**: DESCRIPTIVE-ONLY on FR-cohesion (length-confound); SUBSTANTIVE corroboration of al-Suyūṭī classical observation on the 99-list's reconstructive character.
+
+**Pre-reg SHA256**: `6d751b87bb6cdda175217d42601c3b1cca03f5c333bcfe964766dc9cf9566c0b`
+**Files**: `findings/phase-b-hypotheses/prereg-h-new-1560-divine-names-distribution.md`, `scripts/h-new-1560.py`, `csv/h-new-1560.json`, `h-new-1560-divine-names-distribution.md`.
+
+**Hypothesis (pre-locked)**: top-10 surahs by per-word divine-name density (substring rule over 99 al-Tirmidhī names) form a Fisher-Rao cohesive cluster (intra-cluster mean ≤ 5th %ile null), under both uniform (Cell A) and length-matched (Cell B) nulls. Bonferroni k=2, α=0.025 per cell; MW-5 PC = 10-surah sub-sample of H-NEW-1200.
+
+**Result — cluster cohesion**:
+- Cell A uniform: obs=0.7313 vs null_mean=0.9263, null_p5=0.8069; **p=0.00880 — PASS at α=0.025**.
+- Cell B length-matched (±15% on total words=2092): obs=0.7313 vs null_mean=0.7556, null_p5=0.6846; **p=0.27190 — FAIL**.
+- MW-5 PC (10-of-H1200 sub-sample {56, 69, 74, 77, 81, 82, 83, 84, 86, 90}): obs=0.7113, p=0.00530 — instrument valid.
+- **Verdict per acceptance window: DESCRIPTIVE-ONLY (length-confound suspected)**. Cluster total is 2,092 words (short-surah regime); short surahs naturally cluster tighter on FR-roots because their distributions are peakier.
+
+**Top-10 by per-word density (the locked cluster)**:
+
+| Rank | Surah | density | n_name / n_words | period |
+|--:|:--|--:|:--|:--|
+| 1 | Q 112 al-Ikhlāṣ | 0.200 | 3/15 | Meccan |
+| 2 | Q 1 al-Fātiḥa | 0.172 | 5/29 | Meccan |
+| 3 | Q 85 al-Burūj | 0.119 | 13/109 | Meccan |
+| 4 | Q 64 al-Taghābun | 0.107 | 26/242 | Medinan |
+| 5 | Q 62 al-Jumuʿa | 0.107 | 19/177 | Medinan |
+| 6 | Q 110 al-Naṣr | 0.105 | 2/19 | Medinan |
+| 7 | Q 59 al-Ḥashr | 0.103 | 46/447 | Medinan |
+| 8 | Q 61 al-Ṣaff | 0.093 | 21/226 | Medinan |
+| 9 | Q 49 al-Ḥujurāt | 0.091 | 32/353 | Medinan |
+| 10 | Q 58 al-Mujādala | 0.091 | 43/475 | Medinan |
+
+Period composition: **7 Medinan + 3 Meccan**. Consistent with H-NEW-1350 Medinan > Meccan on Allāh-density.
+
+**Substantive co-finding — al-Tirmidhī 99-list absentees (independent corroboration of al-Suyūṭī, al-Itqān, nawʿ 56)**:
+- 34/99 names are absent under the no-tashkeel substring rule.
+- The 34 absentees: al-Qābiḍ (#21), al-Bāsiṭ (#22), al-Khāfiḍ (#23), al-Rāfiʿ (#24), al-Mudhill (#26), al-Ḥafīẓ (#38), al-Muqīt (#39), al-Ḥasīb (#40), al-Jalīl (#41), al-Wāsiʿ (#45), al-Bāʿith (#50), al-Shahīd (#51), al-Muḥṣī (#58), al-Mubdiʾ (#59), al-Muʿīd (#60), al-Muḥyī (#61), al-Mumīt (#62), al-Wājid (#65), al-Mājid (#66), al-Muqtadir (#70), al-Muqaddim (#71), al-Muʾakhkhir (#72), al-Wālī (#77), al-Mutaʿālī (#78), al-Muntaqim (#81), al-Raʾūf (#83), al-Jāmiʿ (#87), al-Mughnī (#89), al-Māniʿ (#90), al-Ḍār (#91), al-Nāfiʿ (#92), al-Hādī (#94), al-Badīʿ (#95), al-Ṣabūr (#99).
+- Cross-reference: prior project finding `divine-names-distribution.md` (morphology-strict, Buckwalter LEM, requires DET-MS divine-referring) found ~58/99 attested → 41 absent. Substring rule (this finding) found 65/99 attested → 34 absent. **Both rules bracket the absence-fraction at 1/3 to 2/5 of the al-Tirmidhī list**. The al-Walīd b. Muslim chain (gharīb per al-Tirmidhī himself) yields a list that is, by either rule, NOT corpus-internal in the canonical *al-X* lexicalized form.
+- **Classical anchor confirmed**: al-Suyūṭī's observation (*al-Itqān*, nawʿ 56) that the 99-enumeration is reconstructive — built from verbal-form roots, plural attestations, and contextual inferences rather than from canonical *al-X* divine-name lexicalizations — is empirically corroborated by both rules.
+
+**Top-5 names by corpus substring count**: الله (2555, 85 surahs, 1745 verses); الحق (187, 53/176); الآخر (156, 47/154); المؤمن (134, 36/119); الحي (107, 44/99). Allāh dominates ~73% of all name-attestations — corpus-internal grounding for hub-name treatment.
+
+**Honest a-priori expectation**: pre-reg explicitly predicted 60/40 toward NULL given cross-finding-025 marker-thickness rule. The DESCRIPTIVE-ONLY verdict realized the predicted outcome class. Single-axis lexical density does not drive root-FR clustering once length is controlled — same pattern as H-NEW-1310 (Christ-narrative whole-surah NULL), H-NEW-1330 (sajda whole-surah CONFIRMED-NULL), H-NEW-1340 (al-ḥamdu opener NULL).
+
+**Connection to existing findings**:
+- H-NEW-1350 Allāh-density Medinan > Meccan: same instrument family; H-NEW-1560 extends to all 99 names; 7/10 Medinan in top-10-by-density is consistent.
+- `divine-names-distribution.md` morphology catalog: bracket on absent-count (41 vs 34 absent).
+- cross-finding-025 marker-thickness rule: +1 to the NULL docket at whole-surah scale; rule's predictive accuracy strengthens. Under §10.58's CONFIRMED graduation of cross-finding-025, H-NEW-1560 is a candidate for pericope-scale flip-test (do divine-name-density top-10 pericopes — e.g., name-saturated 5-verse windows — cohere when whole surahs do not?).
+- H-NEW-1330 sajda-cluster whole-surah CONFIRMED-NULL: same single-marker whole-surah pattern under length control.
+
+**Open follow-ups**:
+1. **Pericope-scale flip-test** under §10.58's CONFIRMED scale-of-aggregation principle: do the highest-name-density 5-verse windows cohere by root-Jaccard?
+2. Rules-tuple sensitivity: re-run under a verbal-form-aware morphological rule (count verbal *yu-X / X-an* attestations of the absentee names as evidence of reconstructive root-presence).
+3. Alternative 99-lists: al-Ḥākim ~80, expanded Ibn al-ʿArabī >300 — does the absence-fraction stabilize across enumerations?
+4. Q 12 Yūsuf disambiguation: morphological rule to separate الملك (God) from الملك (King of Egypt) and العزيز (God) from العزيز (governor).
+5. Per-name surah-network extension of H-NEW-170 / H-NEW-140 to substring instrument.
+
+*H-NEW-1560 landed 2026-05-10 by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*

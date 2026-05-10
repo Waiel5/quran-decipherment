@@ -1,0 +1,2228 @@
+{
+  "finding_id": "H-NEW-1560",
+  "title": "99 asmāʾ al-ḥusnā corpus-wide distribution + top-10-by-density Fisher-Rao cluster cohesion",
+  "pre_reg_sha256": "6d751b87bb6cdda175217d42601c3b1cca03f5c333bcfe964766dc9cf9566c0b",
+  "seed_A": 20260509,
+  "seed_B": 20260511,
+  "seed_PC": 20260512,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, per-name substring, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "name_list_source": "data/asma-al-husna.txt (al-Tirmidhī #3507 / al-Walīd b. Muslim, gharīb)",
+  "name_count_locked": 99,
+  "fr_instrument": "h-new-111 (114×114 FR distance on QAC stem-roots, no-tashkeel)",
+  "names_present_count": 65,
+  "names_absent_count": 34,
+  "names_absent_list": [
+    "القابض",
+    "الباسط",
+    "الخافض",
+    "الرافع",
+    "المذل",
+    "الحفيظ",
+    "المقيت",
+    "الحسيب",
+    "الجليل",
+    "الواسع",
+    "الباعث",
+    "الشهيد",
+    "المحصي",
+    "المبدئ",
+    "المعيد",
+    "المحيي",
+    "المميت",
+    "الواجد",
+    "الماجد",
+    "المقتدر",
+    "المقدم",
+    "المؤخر",
+    "الوالي",
+    "المتعالي",
+    "المنتقم",
+    "الرؤوف",
+    "الجامع",
+    "المغني",
+    "المانع",
+    "الضار",
+    "النافع",
+    "الهادي",
+    "البديع",
+    "الصبور"
+  ],
+  "top_5_names_by_corpus_count": [
+    {
+      "name": "الله",
+      "corpus_count": 2555,
+      "n_surahs_attested": 85,
+      "n_verses_attested": 1745
+    },
+    {
+      "name": "الحق",
+      "corpus_count": 187,
+      "n_surahs_attested": 53,
+      "n_verses_attested": 176
+    },
+    {
+      "name": "الآخر",
+      "corpus_count": 156,
+      "n_surahs_attested": 47,
+      "n_verses_attested": 154
+    },
+    {
+      "name": "المؤمن",
+      "corpus_count": 134,
+      "n_surahs_attested": 36,
+      "n_verses_attested": 119
+    },
+    {
+      "name": "الحي",
+      "corpus_count": 107,
+      "n_surahs_attested": 44,
+      "n_verses_attested": 99
+    }
+  ],
+  "per_name_table_full": [
+    {
+      "name": "الله",
+      "total_corpus_count": 2555,
+      "n_surahs_attested": 85,
+      "n_verses_attested": 1745,
+      "first_attestation": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "الرحمن",
+      "total_corpus_count": 48,
+      "n_surahs_attested": 18,
+      "n_verses_attested": 48,
+      "first_attestation": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "الرحيم",
+      "total_corpus_count": 34,
+      "n_surahs_attested": 20,
+      "n_verses_attested": 34,
+      "first_attestation": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "الملك",
+      "total_corpus_count": 32,
+      "n_surahs_attested": 19,
+      "n_verses_attested": 29,
+      "first_attestation": [
+        2,
+        102
+      ]
+    },
+    {
+      "name": "القدوس",
+      "total_corpus_count": 2,
+      "n_surahs_attested": 2,
+      "n_verses_attested": 2,
+      "first_attestation": [
+        59,
+        23
+      ]
+    },
+    {
+      "name": "السلام",
+      "total_corpus_count": 7,
+      "n_surahs_attested": 7,
+      "n_verses_attested": 7,
+      "first_attestation": [
+        4,
+        94
+      ]
+    },
+    {
+      "name": "المؤمن",
+      "total_corpus_count": 134,
+      "n_surahs_attested": 36,
+      "n_verses_attested": 119,
+      "first_attestation": [
+        2,
+        223
+      ]
+    },
+    {
+      "name": "المهيمن",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        59,
+        23
+      ]
+    },
+    {
+      "name": "العزيز",
+      "total_corpus_count": 64,
+      "n_surahs_attested": 34,
+      "n_verses_attested": 64,
+      "first_attestation": [
+        2,
+        129
+      ]
+    },
+    {
+      "name": "الجبار",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        59,
+        23
+      ]
+    },
+    {
+      "name": "المتكبر",
+      "total_corpus_count": 4,
+      "n_surahs_attested": 4,
+      "n_verses_attested": 4,
+      "first_attestation": [
+        16,
+        29
+      ]
+    },
+    {
+      "name": "الخالق",
+      "total_corpus_count": 5,
+      "n_surahs_attested": 5,
+      "n_verses_attested": 5,
+      "first_attestation": [
+        23,
+        14
+      ]
+    },
+    {
+      "name": "البارئ",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        59,
+        24
+      ]
+    },
+    {
+      "name": "المصور",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        59,
+        24
+      ]
+    },
+    {
+      "name": "الغفار",
+      "total_corpus_count": 3,
+      "n_surahs_attested": 3,
+      "n_verses_attested": 3,
+      "first_attestation": [
+        38,
+        66
+      ]
+    },
+    {
+      "name": "القهار",
+      "total_corpus_count": 6,
+      "n_surahs_attested": 6,
+      "n_verses_attested": 6,
+      "first_attestation": [
+        12,
+        39
+      ]
+    },
+    {
+      "name": "الوهاب",
+      "total_corpus_count": 3,
+      "n_surahs_attested": 2,
+      "n_verses_attested": 3,
+      "first_attestation": [
+        3,
+        8
+      ]
+    },
+    {
+      "name": "الرزاق",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        51,
+        58
+      ]
+    },
+    {
+      "name": "الفتاح",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        34,
+        26
+      ]
+    },
+    {
+      "name": "العليم",
+      "total_corpus_count": 32,
+      "n_surahs_attested": 21,
+      "n_verses_attested": 32,
+      "first_attestation": [
+        2,
+        32
+      ]
+    },
+    {
+      "name": "القابض",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الباسط",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الخافض",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الرافع",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المعز",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        6,
+        143
+      ]
+    },
+    {
+      "name": "المذل",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "السميع",
+      "total_corpus_count": 20,
+      "n_surahs_attested": 16,
+      "n_verses_attested": 20,
+      "first_attestation": [
+        2,
+        127
+      ]
+    },
+    {
+      "name": "البصير",
+      "total_corpus_count": 9,
+      "n_surahs_attested": 7,
+      "n_verses_attested": 9,
+      "first_attestation": [
+        6,
+        50
+      ]
+    },
+    {
+      "name": "الحكم",
+      "total_corpus_count": 29,
+      "n_surahs_attested": 17,
+      "n_verses_attested": 28,
+      "first_attestation": [
+        2,
+        129
+      ]
+    },
+    {
+      "name": "العدل",
+      "total_corpus_count": 6,
+      "n_surahs_attested": 4,
+      "n_verses_attested": 5,
+      "first_attestation": [
+        2,
+        282
+      ]
+    },
+    {
+      "name": "اللطيف",
+      "total_corpus_count": 2,
+      "n_surahs_attested": 2,
+      "n_verses_attested": 2,
+      "first_attestation": [
+        6,
+        103
+      ]
+    },
+    {
+      "name": "الخبير",
+      "total_corpus_count": 6,
+      "n_surahs_attested": 4,
+      "n_verses_attested": 6,
+      "first_attestation": [
+        6,
+        18
+      ]
+    },
+    {
+      "name": "الحليم",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        11,
+        87
+      ]
+    },
+    {
+      "name": "العظيم",
+      "total_corpus_count": 36,
+      "n_surahs_attested": 23,
+      "n_verses_attested": 36,
+      "first_attestation": [
+        2,
+        105
+      ]
+    },
+    {
+      "name": "الغفور",
+      "total_corpus_count": 11,
+      "n_surahs_attested": 11,
+      "n_verses_attested": 11,
+      "first_attestation": [
+        10,
+        107
+      ]
+    },
+    {
+      "name": "الشكور",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        34,
+        13
+      ]
+    },
+    {
+      "name": "العلي",
+      "total_corpus_count": 39,
+      "n_surahs_attested": 25,
+      "n_verses_attested": 39,
+      "first_attestation": [
+        2,
+        32
+      ]
+    },
+    {
+      "name": "الكبير",
+      "total_corpus_count": 8,
+      "n_surahs_attested": 8,
+      "n_verses_attested": 8,
+      "first_attestation": [
+        13,
+        9
+      ]
+    },
+    {
+      "name": "الحفيظ",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المقيت",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الحسيب",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الجليل",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الكريم",
+      "total_corpus_count": 3,
+      "n_surahs_attested": 3,
+      "n_verses_attested": 3,
+      "first_attestation": [
+        23,
+        116
+      ]
+    },
+    {
+      "name": "الرقيب",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        5,
+        117
+      ]
+    },
+    {
+      "name": "المجيب",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        37,
+        75
+      ]
+    },
+    {
+      "name": "الواسع",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الحكيم",
+      "total_corpus_count": 42,
+      "n_surahs_attested": 29,
+      "n_verses_attested": 42,
+      "first_attestation": [
+        2,
+        32
+      ]
+    },
+    {
+      "name": "الودود",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        85,
+        14
+      ]
+    },
+    {
+      "name": "المجيد",
+      "total_corpus_count": 2,
+      "n_surahs_attested": 2,
+      "n_verses_attested": 2,
+      "first_attestation": [
+        50,
+        1
+      ]
+    },
+    {
+      "name": "الباعث",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الشهيد",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الحق",
+      "total_corpus_count": 187,
+      "n_surahs_attested": 53,
+      "n_verses_attested": 176,
+      "first_attestation": [
+        2,
+        26
+      ]
+    },
+    {
+      "name": "الوكيل",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        3,
+        173
+      ]
+    },
+    {
+      "name": "القوي",
+      "total_corpus_count": 3,
+      "n_surahs_attested": 3,
+      "n_verses_attested": 3,
+      "first_attestation": [
+        11,
+        66
+      ]
+    },
+    {
+      "name": "المتين",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        51,
+        58
+      ]
+    },
+    {
+      "name": "الولي",
+      "total_corpus_count": 2,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 2,
+      "first_attestation": [
+        42,
+        9
+      ]
+    },
+    {
+      "name": "الحميد",
+      "total_corpus_count": 10,
+      "n_surahs_attested": 9,
+      "n_verses_attested": 10,
+      "first_attestation": [
+        14,
+        1
+      ]
+    },
+    {
+      "name": "المحصي",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المبدئ",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المعيد",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المحيي",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المميت",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الحي",
+      "total_corpus_count": 107,
+      "n_surahs_attested": 44,
+      "n_verses_attested": 99,
+      "first_attestation": [
+        2,
+        85
+      ]
+    },
+    {
+      "name": "القيوم",
+      "total_corpus_count": 3,
+      "n_surahs_attested": 3,
+      "n_verses_attested": 3,
+      "first_attestation": [
+        2,
+        255
+      ]
+    },
+    {
+      "name": "الواجد",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الماجد",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الواحد",
+      "total_corpus_count": 6,
+      "n_surahs_attested": 6,
+      "n_verses_attested": 6,
+      "first_attestation": [
+        12,
+        39
+      ]
+    },
+    {
+      "name": "الصمد",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        112,
+        2
+      ]
+    },
+    {
+      "name": "القادر",
+      "total_corpus_count": 2,
+      "n_surahs_attested": 2,
+      "n_verses_attested": 2,
+      "first_attestation": [
+        6,
+        65
+      ]
+    },
+    {
+      "name": "المقتدر",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المقدم",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المؤخر",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الأول",
+      "total_corpus_count": 60,
+      "n_surahs_attested": 32,
+      "n_verses_attested": 60,
+      "first_attestation": [
+        5,
+        107
+      ]
+    },
+    {
+      "name": "الآخر",
+      "total_corpus_count": 156,
+      "n_surahs_attested": 47,
+      "n_verses_attested": 154,
+      "first_attestation": [
+        2,
+        4
+      ]
+    },
+    {
+      "name": "الظاهر",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        57,
+        3
+      ]
+    },
+    {
+      "name": "الباطن",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        57,
+        3
+      ]
+    },
+    {
+      "name": "الوالي",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المتعالي",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "البر",
+      "total_corpus_count": 27,
+      "n_surahs_attested": 15,
+      "n_verses_attested": 25,
+      "first_attestation": [
+        2,
+        20
+      ]
+    },
+    {
+      "name": "التواب",
+      "total_corpus_count": 7,
+      "n_surahs_attested": 2,
+      "n_verses_attested": 7,
+      "first_attestation": [
+        2,
+        37
+      ]
+    },
+    {
+      "name": "المنتقم",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "العفو",
+      "total_corpus_count": 2,
+      "n_surahs_attested": 2,
+      "n_verses_attested": 2,
+      "first_attestation": [
+        2,
+        219
+      ]
+    },
+    {
+      "name": "الرؤوف",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "مالك الملك",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        3,
+        26
+      ]
+    },
+    {
+      "name": "ذو الجلال والإكرام",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        55,
+        27
+      ]
+    },
+    {
+      "name": "المقسط",
+      "total_corpus_count": 3,
+      "n_surahs_attested": 3,
+      "n_verses_attested": 3,
+      "first_attestation": [
+        5,
+        42
+      ]
+    },
+    {
+      "name": "الجامع",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الغني",
+      "total_corpus_count": 8,
+      "n_surahs_attested": 8,
+      "n_verses_attested": 8,
+      "first_attestation": [
+        6,
+        133
+      ]
+    },
+    {
+      "name": "المغني",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "المانع",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الضار",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "النافع",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "النور",
+      "total_corpus_count": 13,
+      "n_surahs_attested": 11,
+      "n_verses_attested": 12,
+      "first_attestation": [
+        2,
+        257
+      ]
+    },
+    {
+      "name": "الهادي",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "البديع",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    },
+    {
+      "name": "الباقي",
+      "total_corpus_count": 4,
+      "n_surahs_attested": 4,
+      "n_verses_attested": 4,
+      "first_attestation": [
+        18,
+        46
+      ]
+    },
+    {
+      "name": "الوارث",
+      "total_corpus_count": 6,
+      "n_surahs_attested": 5,
+      "n_verses_attested": 6,
+      "first_attestation": [
+        2,
+        233
+      ]
+    },
+    {
+      "name": "الرشيد",
+      "total_corpus_count": 1,
+      "n_surahs_attested": 1,
+      "n_verses_attested": 1,
+      "first_attestation": [
+        11,
+        87
+      ]
+    },
+    {
+      "name": "الصبور",
+      "total_corpus_count": 0,
+      "n_surahs_attested": 0,
+      "n_verses_attested": 0,
+      "first_attestation": null
+    }
+  ],
+  "per_surah_table_full": [
+    {
+      "sid": 1,
+      "n_verses": 7,
+      "n_words": 29,
+      "total_name_attestations": 5,
+      "density": 0.1724137931034483,
+      "corpus_rank": 2,
+      "period": "Meccan"
+    },
+    {
+      "sid": 2,
+      "n_verses": 286,
+      "n_words": 6146,
+      "total_name_attestations": 360,
+      "density": 0.0585746827204686,
+      "corpus_rank": 32,
+      "period": "Medinan"
+    },
+    {
+      "sid": 3,
+      "n_verses": 200,
+      "n_words": 3501,
+      "total_name_attestations": 263,
+      "density": 0.07512139388746072,
+      "corpus_rank": 19,
+      "period": "Medinan"
+    },
+    {
+      "sid": 4,
+      "n_verses": 176,
+      "n_words": 3763,
+      "total_name_attestations": 253,
+      "density": 0.0672335902205687,
+      "corpus_rank": 24,
+      "period": "Medinan"
+    },
+    {
+      "sid": 5,
+      "n_verses": 120,
+      "n_words": 2844,
+      "total_name_attestations": 174,
+      "density": 0.06118143459915612,
+      "corpus_rank": 29,
+      "period": "Medinan"
+    },
+    {
+      "sid": 6,
+      "n_verses": 165,
+      "n_words": 3058,
+      "total_name_attestations": 127,
+      "density": 0.04153041203400916,
+      "corpus_rank": 44,
+      "period": "Meccan"
+    },
+    {
+      "sid": 7,
+      "n_verses": 206,
+      "n_words": 3346,
+      "total_name_attestations": 80,
+      "density": 0.023909145248057383,
+      "corpus_rank": 67,
+      "period": "Meccan"
+    },
+    {
+      "sid": 8,
+      "n_verses": 75,
+      "n_words": 1248,
+      "total_name_attestations": 106,
+      "density": 0.08493589743589744,
+      "corpus_rank": 14,
+      "period": "Medinan"
+    },
+    {
+      "sid": 9,
+      "n_verses": 129,
+      "n_words": 2511,
+      "total_name_attestations": 210,
+      "density": 0.08363201911589008,
+      "corpus_rank": 16,
+      "period": "Medinan"
+    },
+    {
+      "sid": 10,
+      "n_verses": 109,
+      "n_words": 1842,
+      "total_name_attestations": 90,
+      "density": 0.048859934853420196,
+      "corpus_rank": 40,
+      "period": "Meccan"
+    },
+    {
+      "sid": 11,
+      "n_verses": 123,
+      "n_words": 1946,
+      "total_name_attestations": 51,
+      "density": 0.026207605344295993,
+      "corpus_rank": 65,
+      "period": "Meccan"
+    },
+    {
+      "sid": 12,
+      "n_verses": 111,
+      "n_words": 1795,
+      "total_name_attestations": 74,
+      "density": 0.041225626740947076,
+      "corpus_rank": 45,
+      "period": "Meccan"
+    },
+    {
+      "sid": 13,
+      "n_verses": 43,
+      "n_words": 855,
+      "total_name_attestations": 45,
+      "density": 0.05263157894736842,
+      "corpus_rank": 37,
+      "period": "Medinan"
+    },
+    {
+      "sid": 14,
+      "n_verses": 52,
+      "n_words": 830,
+      "total_name_attestations": 48,
+      "density": 0.05783132530120482,
+      "corpus_rank": 34,
+      "period": "Meccan"
+    },
+    {
+      "sid": 15,
+      "n_verses": 99,
+      "n_words": 658,
+      "total_name_attestations": 14,
+      "density": 0.02127659574468085,
+      "corpus_rank": 73,
+      "period": "Meccan"
+    },
+    {
+      "sid": 16,
+      "n_verses": 128,
+      "n_words": 1855,
+      "total_name_attestations": 93,
+      "density": 0.05013477088948787,
+      "corpus_rank": 39,
+      "period": "Meccan"
+    },
+    {
+      "sid": 17,
+      "n_verses": 111,
+      "n_words": 1561,
+      "total_name_attestations": 32,
+      "density": 0.020499679692504803,
+      "corpus_rank": 76,
+      "period": "Meccan"
+    },
+    {
+      "sid": 18,
+      "n_verses": 110,
+      "n_words": 1584,
+      "total_name_attestations": 26,
+      "density": 0.016414141414141416,
+      "corpus_rank": 81,
+      "period": "Meccan"
+    },
+    {
+      "sid": 19,
+      "n_verses": 98,
+      "n_words": 972,
+      "total_name_attestations": 23,
+      "density": 0.023662551440329218,
+      "corpus_rank": 68,
+      "period": "Meccan"
+    },
+    {
+      "sid": 20,
+      "n_verses": 135,
+      "n_words": 1353,
+      "total_name_attestations": 20,
+      "density": 0.014781966001478197,
+      "corpus_rank": 83,
+      "period": "Meccan"
+    },
+    {
+      "sid": 21,
+      "n_verses": 112,
+      "n_words": 1174,
+      "total_name_attestations": 25,
+      "density": 0.02129471890971039,
+      "corpus_rank": 72,
+      "period": "Meccan"
+    },
+    {
+      "sid": 22,
+      "n_verses": 78,
+      "n_words": 1281,
+      "total_name_attestations": 83,
+      "density": 0.06479313036690086,
+      "corpus_rank": 26,
+      "period": "Medinan"
+    },
+    {
+      "sid": 23,
+      "n_verses": 118,
+      "n_words": 1053,
+      "total_name_attestations": 28,
+      "density": 0.026590693257359924,
+      "corpus_rank": 64,
+      "period": "Meccan"
+    },
+    {
+      "sid": 24,
+      "n_verses": 64,
+      "n_words": 1322,
+      "total_name_attestations": 96,
+      "density": 0.07261724659606657,
+      "corpus_rank": 21,
+      "period": "Medinan"
+    },
+    {
+      "sid": 25,
+      "n_verses": 77,
+      "n_words": 898,
+      "total_name_attestations": 18,
+      "density": 0.0200445434298441,
+      "corpus_rank": 77,
+      "period": "Meccan"
+    },
+    {
+      "sid": 26,
+      "n_verses": 227,
+      "n_words": 1320,
+      "total_name_attestations": 51,
+      "density": 0.038636363636363635,
+      "corpus_rank": 48,
+      "period": "Meccan"
+    },
+    {
+      "sid": 27,
+      "n_verses": 93,
+      "n_words": 1160,
+      "total_name_attestations": 38,
+      "density": 0.032758620689655175,
+      "corpus_rank": 53,
+      "period": "Meccan"
+    },
+    {
+      "sid": 28,
+      "n_verses": 88,
+      "n_words": 1438,
+      "total_name_attestations": 50,
+      "density": 0.03477051460361613,
+      "corpus_rank": 50,
+      "period": "Meccan"
+    },
+    {
+      "sid": 29,
+      "n_verses": 69,
+      "n_words": 978,
+      "total_name_attestations": 63,
+      "density": 0.06441717791411043,
+      "corpus_rank": 27,
+      "period": "Meccan"
+    },
+    {
+      "sid": 30,
+      "n_verses": 60,
+      "n_words": 817,
+      "total_name_attestations": 39,
+      "density": 0.04773561811505508,
+      "corpus_rank": 41,
+      "period": "Meccan"
+    },
+    {
+      "sid": 31,
+      "n_verses": 34,
+      "n_words": 550,
+      "total_name_attestations": 41,
+      "density": 0.07454545454545454,
+      "corpus_rank": 20,
+      "period": "Meccan"
+    },
+    {
+      "sid": 32,
+      "n_verses": 30,
+      "n_words": 373,
+      "total_name_attestations": 4,
+      "density": 0.010723860589812333,
+      "corpus_rank": 88,
+      "period": "Meccan"
+    },
+    {
+      "sid": 33,
+      "n_verses": 73,
+      "n_words": 1303,
+      "total_name_attestations": 116,
+      "density": 0.08902532617037605,
+      "corpus_rank": 12,
+      "period": "Medinan"
+    },
+    {
+      "sid": 34,
+      "n_verses": 54,
+      "n_words": 884,
+      "total_name_attestations": 29,
+      "density": 0.032805429864253395,
+      "corpus_rank": 52,
+      "period": "Meccan"
+    },
+    {
+      "sid": 35,
+      "n_verses": 45,
+      "n_words": 778,
+      "total_name_attestations": 45,
+      "density": 0.05784061696658098,
+      "corpus_rank": 33,
+      "period": "Meccan"
+    },
+    {
+      "sid": 36,
+      "n_verses": 83,
+      "n_words": 731,
+      "total_name_attestations": 15,
+      "density": 0.02051983584131327,
+      "corpus_rank": 75,
+      "period": "Meccan"
+    },
+    {
+      "sid": 37,
+      "n_verses": 182,
+      "n_words": 865,
+      "total_name_attestations": 38,
+      "density": 0.04393063583815029,
+      "corpus_rank": 42,
+      "period": "Meccan"
+    },
+    {
+      "sid": 38,
+      "n_verses": 88,
+      "n_words": 736,
+      "total_name_attestations": 16,
+      "density": 0.021739130434782608,
+      "corpus_rank": 71,
+      "period": "Meccan"
+    },
+    {
+      "sid": 39,
+      "n_verses": 75,
+      "n_words": 1178,
+      "total_name_attestations": 73,
+      "density": 0.06196943972835314,
+      "corpus_rank": 28,
+      "period": "Meccan"
+    },
+    {
+      "sid": 40,
+      "n_verses": 85,
+      "n_words": 1227,
+      "total_name_attestations": 81,
+      "density": 0.06601466992665037,
+      "corpus_rank": 25,
+      "period": "Meccan"
+    },
+    {
+      "sid": 41,
+      "n_verses": 54,
+      "n_words": 795,
+      "total_name_attestations": 25,
+      "density": 0.031446540880503145,
+      "corpus_rank": 56,
+      "period": "Meccan"
+    },
+    {
+      "sid": 42,
+      "n_verses": 53,
+      "n_words": 860,
+      "total_name_attestations": 52,
+      "density": 0.06046511627906977,
+      "corpus_rank": 30,
+      "period": "Meccan"
+    },
+    {
+      "sid": 43,
+      "n_verses": 89,
+      "n_words": 836,
+      "total_name_attestations": 24,
+      "density": 0.028708133971291867,
+      "corpus_rank": 60,
+      "period": "Meccan"
+    },
+    {
+      "sid": 44,
+      "n_verses": 59,
+      "n_words": 346,
+      "total_name_attestations": 15,
+      "density": 0.04335260115606936,
+      "corpus_rank": 43,
+      "period": "Meccan"
+    },
+    {
+      "sid": 45,
+      "n_verses": 37,
+      "n_words": 488,
+      "total_name_attestations": 25,
+      "density": 0.05122950819672131,
+      "corpus_rank": 38,
+      "period": "Meccan"
+    },
+    {
+      "sid": 46,
+      "n_verses": 35,
+      "n_words": 645,
+      "total_name_attestations": 25,
+      "density": 0.03875968992248062,
+      "corpus_rank": 47,
+      "period": "Meccan"
+    },
+    {
+      "sid": 47,
+      "n_verses": 38,
+      "n_words": 545,
+      "total_name_attestations": 32,
+      "density": 0.05871559633027523,
+      "corpus_rank": 31,
+      "period": "Medinan"
+    },
+    {
+      "sid": 48,
+      "n_verses": 29,
+      "n_words": 560,
+      "total_name_attestations": 44,
+      "density": 0.07857142857142857,
+      "corpus_rank": 18,
+      "period": "Medinan"
+    },
+    {
+      "sid": 49,
+      "n_verses": 18,
+      "n_words": 353,
+      "total_name_attestations": 32,
+      "density": 0.0906515580736544,
+      "corpus_rank": 9,
+      "period": "Medinan"
+    },
+    {
+      "sid": 50,
+      "n_verses": 45,
+      "n_words": 373,
+      "total_name_attestations": 7,
+      "density": 0.01876675603217158,
+      "corpus_rank": 80,
+      "period": "Meccan"
+    },
+    {
+      "sid": 51,
+      "n_verses": 60,
+      "n_words": 360,
+      "total_name_attestations": 10,
+      "density": 0.027777777777777776,
+      "corpus_rank": 61,
+      "period": "Meccan"
+    },
+    {
+      "sid": 52,
+      "n_verses": 49,
+      "n_words": 312,
+      "total_name_attestations": 6,
+      "density": 0.019230769230769232,
+      "corpus_rank": 79,
+      "period": "Meccan"
+    },
+    {
+      "sid": 53,
+      "n_verses": 62,
+      "n_words": 361,
+      "total_name_attestations": 10,
+      "density": 0.027700831024930747,
+      "corpus_rank": 62,
+      "period": "Meccan"
+    },
+    {
+      "sid": 54,
+      "n_verses": 55,
+      "n_words": 342,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 97,
+      "period": "Meccan"
+    },
+    {
+      "sid": 55,
+      "n_verses": 78,
+      "n_words": 352,
+      "total_name_attestations": 2,
+      "density": 0.005681818181818182,
+      "corpus_rank": 95,
+      "period": "Medinan"
+    },
+    {
+      "sid": 56,
+      "n_verses": 96,
+      "n_words": 379,
+      "total_name_attestations": 12,
+      "density": 0.0316622691292876,
+      "corpus_rank": 54,
+      "period": "Meccan"
+    },
+    {
+      "sid": 57,
+      "n_verses": 29,
+      "n_words": 577,
+      "total_name_attestations": 49,
+      "density": 0.08492201039861352,
+      "corpus_rank": 15,
+      "period": "Medinan"
+    },
+    {
+      "sid": 58,
+      "n_verses": 22,
+      "n_words": 475,
+      "total_name_attestations": 43,
+      "density": 0.09052631578947369,
+      "corpus_rank": 10,
+      "period": "Medinan"
+    },
+    {
+      "sid": 59,
+      "n_verses": 24,
+      "n_words": 447,
+      "total_name_attestations": 46,
+      "density": 0.1029082774049217,
+      "corpus_rank": 7,
+      "period": "Medinan"
+    },
+    {
+      "sid": 60,
+      "n_verses": 13,
+      "n_words": 354,
+      "total_name_attestations": 31,
+      "density": 0.08757062146892655,
+      "corpus_rank": 13,
+      "period": "Medinan"
+    },
+    {
+      "sid": 61,
+      "n_verses": 14,
+      "n_words": 226,
+      "total_name_attestations": 21,
+      "density": 0.09292035398230089,
+      "corpus_rank": 8,
+      "period": "Medinan"
+    },
+    {
+      "sid": 62,
+      "n_verses": 11,
+      "n_words": 177,
+      "total_name_attestations": 19,
+      "density": 0.10734463276836158,
+      "corpus_rank": 5,
+      "period": "Medinan"
+    },
+    {
+      "sid": 63,
+      "n_verses": 11,
+      "n_words": 181,
+      "total_name_attestations": 13,
+      "density": 0.0718232044198895,
+      "corpus_rank": 22,
+      "period": "Medinan"
+    },
+    {
+      "sid": 64,
+      "n_verses": 18,
+      "n_words": 242,
+      "total_name_attestations": 26,
+      "density": 0.10743801652892562,
+      "corpus_rank": 4,
+      "period": "Medinan"
+    },
+    {
+      "sid": 65,
+      "n_verses": 12,
+      "n_words": 289,
+      "total_name_attestations": 26,
+      "density": 0.08996539792387544,
+      "corpus_rank": 11,
+      "period": "Medinan"
+    },
+    {
+      "sid": 66,
+      "n_verses": 12,
+      "n_words": 254,
+      "total_name_attestations": 21,
+      "density": 0.08267716535433071,
+      "corpus_rank": 17,
+      "period": "Medinan"
+    },
+    {
+      "sid": 67,
+      "n_verses": 30,
+      "n_words": 333,
+      "total_name_attestations": 13,
+      "density": 0.03903903903903904,
+      "corpus_rank": 46,
+      "period": "Meccan"
+    },
+    {
+      "sid": 68,
+      "n_verses": 52,
+      "n_words": 302,
+      "total_name_attestations": 3,
+      "density": 0.009933774834437087,
+      "corpus_rank": 89,
+      "period": "Meccan"
+    },
+    {
+      "sid": 69,
+      "n_verses": 52,
+      "n_words": 261,
+      "total_name_attestations": 4,
+      "density": 0.01532567049808429,
+      "corpus_rank": 82,
+      "period": "Meccan"
+    },
+    {
+      "sid": 70,
+      "n_verses": 44,
+      "n_words": 217,
+      "total_name_attestations": 1,
+      "density": 0.004608294930875576,
+      "corpus_rank": 96,
+      "period": "Meccan"
+    },
+    {
+      "sid": 71,
+      "n_verses": 28,
+      "n_words": 227,
+      "total_name_attestations": 7,
+      "density": 0.030837004405286344,
+      "corpus_rank": 57,
+      "period": "Meccan"
+    },
+    {
+      "sid": 72,
+      "n_verses": 28,
+      "n_words": 286,
+      "total_name_attestations": 9,
+      "density": 0.03146853146853147,
+      "corpus_rank": 55,
+      "period": "Meccan"
+    },
+    {
+      "sid": 73,
+      "n_verses": 20,
+      "n_words": 202,
+      "total_name_attestations": 7,
+      "density": 0.034653465346534656,
+      "corpus_rank": 51,
+      "period": "Meccan"
+    },
+    {
+      "sid": 74,
+      "n_verses": 56,
+      "n_words": 259,
+      "total_name_attestations": 5,
+      "density": 0.019305019305019305,
+      "corpus_rank": 78,
+      "period": "Meccan"
+    },
+    {
+      "sid": 75,
+      "n_verses": 40,
+      "n_words": 165,
+      "total_name_attestations": 1,
+      "density": 0.006060606060606061,
+      "corpus_rank": 93,
+      "period": "Meccan"
+    },
+    {
+      "sid": 76,
+      "n_verses": 31,
+      "n_words": 243,
+      "total_name_attestations": 5,
+      "density": 0.0205761316872428,
+      "corpus_rank": 74,
+      "period": "Medinan"
+    },
+    {
+      "sid": 77,
+      "n_verses": 50,
+      "n_words": 181,
+      "total_name_attestations": 5,
+      "density": 0.027624309392265192,
+      "corpus_rank": 63,
+      "period": "Meccan"
+    },
+    {
+      "sid": 78,
+      "n_verses": 40,
+      "n_words": 174,
+      "total_name_attestations": 4,
+      "density": 0.022988505747126436,
+      "corpus_rank": 69,
+      "period": "Meccan"
+    },
+    {
+      "sid": 79,
+      "n_verses": 46,
+      "n_words": 179,
+      "total_name_attestations": 4,
+      "density": 0.0223463687150838,
+      "corpus_rank": 70,
+      "period": "Meccan"
+    },
+    {
+      "sid": 80,
+      "n_verses": 42,
+      "n_words": 133,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 98,
+      "period": "Meccan"
+    },
+    {
+      "sid": 81,
+      "n_verses": 29,
+      "n_words": 104,
+      "total_name_attestations": 1,
+      "density": 0.009615384615384616,
+      "corpus_rank": 90,
+      "period": "Meccan"
+    },
+    {
+      "sid": 82,
+      "n_verses": 19,
+      "n_words": 81,
+      "total_name_attestations": 1,
+      "density": 0.012345679012345678,
+      "corpus_rank": 86,
+      "period": "Meccan"
+    },
+    {
+      "sid": 83,
+      "n_verses": 36,
+      "n_words": 170,
+      "total_name_attestations": 1,
+      "density": 0.0058823529411764705,
+      "corpus_rank": 94,
+      "period": "Meccan"
+    },
+    {
+      "sid": 84,
+      "n_verses": 25,
+      "n_words": 109,
+      "total_name_attestations": 1,
+      "density": 0.009174311926605505,
+      "corpus_rank": 91,
+      "period": "Meccan"
+    },
+    {
+      "sid": 85,
+      "n_verses": 22,
+      "n_words": 109,
+      "total_name_attestations": 13,
+      "density": 0.11926605504587157,
+      "corpus_rank": 3,
+      "period": "Meccan"
+    },
+    {
+      "sid": 86,
+      "n_verses": 17,
+      "n_words": 61,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 99,
+      "period": "Meccan"
+    },
+    {
+      "sid": 87,
+      "n_verses": 19,
+      "n_words": 72,
+      "total_name_attestations": 4,
+      "density": 0.05555555555555555,
+      "corpus_rank": 35,
+      "period": "Meccan"
+    },
+    {
+      "sid": 88,
+      "n_verses": 26,
+      "n_words": 92,
+      "total_name_attestations": 1,
+      "density": 0.010869565217391304,
+      "corpus_rank": 87,
+      "period": "Meccan"
+    },
+    {
+      "sid": 89,
+      "n_verses": 30,
+      "n_words": 139,
+      "total_name_attestations": 1,
+      "density": 0.007194244604316547,
+      "corpus_rank": 92,
+      "period": "Meccan"
+    },
+    {
+      "sid": 90,
+      "n_verses": 20,
+      "n_words": 82,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 100,
+      "period": "Meccan"
+    },
+    {
+      "sid": 91,
+      "n_verses": 15,
+      "n_words": 54,
+      "total_name_attestations": 2,
+      "density": 0.037037037037037035,
+      "corpus_rank": 49,
+      "period": "Meccan"
+    },
+    {
+      "sid": 92,
+      "n_verses": 21,
+      "n_words": 71,
+      "total_name_attestations": 1,
+      "density": 0.014084507042253521,
+      "corpus_rank": 84,
+      "period": "Meccan"
+    },
+    {
+      "sid": 93,
+      "n_verses": 11,
+      "n_words": 40,
+      "total_name_attestations": 1,
+      "density": 0.025,
+      "corpus_rank": 66,
+      "period": "Meccan"
+    },
+    {
+      "sid": 94,
+      "n_verses": 8,
+      "n_words": 27,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 101,
+      "period": "Meccan"
+    },
+    {
+      "sid": 95,
+      "n_verses": 8,
+      "n_words": 34,
+      "total_name_attestations": 1,
+      "density": 0.029411764705882353,
+      "corpus_rank": 59,
+      "period": "Meccan"
+    },
+    {
+      "sid": 96,
+      "n_verses": 19,
+      "n_words": 73,
+      "total_name_attestations": 1,
+      "density": 0.0136986301369863,
+      "corpus_rank": 85,
+      "period": "Meccan"
+    },
+    {
+      "sid": 97,
+      "n_verses": 5,
+      "n_words": 30,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 102,
+      "period": "Meccan"
+    },
+    {
+      "sid": 98,
+      "n_verses": 8,
+      "n_words": 94,
+      "total_name_attestations": 5,
+      "density": 0.05319148936170213,
+      "corpus_rank": 36,
+      "period": "Medinan"
+    },
+    {
+      "sid": 99,
+      "n_verses": 8,
+      "n_words": 36,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 103,
+      "period": "Medinan"
+    },
+    {
+      "sid": 100,
+      "n_verses": 11,
+      "n_words": 40,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 104,
+      "period": "Meccan"
+    },
+    {
+      "sid": 101,
+      "n_verses": 11,
+      "n_words": 36,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 105,
+      "period": "Meccan"
+    },
+    {
+      "sid": 102,
+      "n_verses": 8,
+      "n_words": 28,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 106,
+      "period": "Meccan"
+    },
+    {
+      "sid": 103,
+      "n_verses": 3,
+      "n_words": 14,
+      "total_name_attestations": 1,
+      "density": 0.07142857142857142,
+      "corpus_rank": 23,
+      "period": "Meccan"
+    },
+    {
+      "sid": 104,
+      "n_verses": 9,
+      "n_words": 33,
+      "total_name_attestations": 1,
+      "density": 0.030303030303030304,
+      "corpus_rank": 58,
+      "period": "Meccan"
+    },
+    {
+      "sid": 105,
+      "n_verses": 5,
+      "n_words": 23,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 107,
+      "period": "Meccan"
+    },
+    {
+      "sid": 106,
+      "n_verses": 4,
+      "n_words": 17,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 108,
+      "period": "Meccan"
+    },
+    {
+      "sid": 107,
+      "n_verses": 7,
+      "n_words": 25,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 109,
+      "period": "Meccan"
+    },
+    {
+      "sid": 108,
+      "n_verses": 3,
+      "n_words": 10,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 110,
+      "period": "Meccan"
+    },
+    {
+      "sid": 109,
+      "n_verses": 6,
+      "n_words": 27,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 111,
+      "period": "Meccan"
+    },
+    {
+      "sid": 110,
+      "n_verses": 3,
+      "n_words": 19,
+      "total_name_attestations": 2,
+      "density": 0.10526315789473684,
+      "corpus_rank": 6,
+      "period": "Medinan"
+    },
+    {
+      "sid": 111,
+      "n_verses": 5,
+      "n_words": 23,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 112,
+      "period": "Meccan"
+    },
+    {
+      "sid": 112,
+      "n_verses": 4,
+      "n_words": 15,
+      "total_name_attestations": 3,
+      "density": 0.2,
+      "corpus_rank": 1,
+      "period": "Meccan"
+    },
+    {
+      "sid": 113,
+      "n_verses": 5,
+      "n_words": 23,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 113,
+      "period": "Meccan"
+    },
+    {
+      "sid": 114,
+      "n_verses": 6,
+      "n_words": 20,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "corpus_rank": 114,
+      "period": "Meccan"
+    }
+  ],
+  "top_10_by_density": [
+    {
+      "rank": 1,
+      "sid": 112,
+      "n_words": 15,
+      "total_name_attestations": 3,
+      "density": 0.2,
+      "period": "Meccan"
+    },
+    {
+      "rank": 2,
+      "sid": 1,
+      "n_words": 29,
+      "total_name_attestations": 5,
+      "density": 0.1724137931034483,
+      "period": "Meccan"
+    },
+    {
+      "rank": 3,
+      "sid": 85,
+      "n_words": 109,
+      "total_name_attestations": 13,
+      "density": 0.11926605504587157,
+      "period": "Meccan"
+    },
+    {
+      "rank": 4,
+      "sid": 64,
+      "n_words": 242,
+      "total_name_attestations": 26,
+      "density": 0.10743801652892562,
+      "period": "Medinan"
+    },
+    {
+      "rank": 5,
+      "sid": 62,
+      "n_words": 177,
+      "total_name_attestations": 19,
+      "density": 0.10734463276836158,
+      "period": "Medinan"
+    },
+    {
+      "rank": 6,
+      "sid": 110,
+      "n_words": 19,
+      "total_name_attestations": 2,
+      "density": 0.10526315789473684,
+      "period": "Medinan"
+    },
+    {
+      "rank": 7,
+      "sid": 59,
+      "n_words": 447,
+      "total_name_attestations": 46,
+      "density": 0.1029082774049217,
+      "period": "Medinan"
+    },
+    {
+      "rank": 8,
+      "sid": 61,
+      "n_words": 226,
+      "total_name_attestations": 21,
+      "density": 0.09292035398230089,
+      "period": "Medinan"
+    },
+    {
+      "rank": 9,
+      "sid": 49,
+      "n_words": 353,
+      "total_name_attestations": 32,
+      "density": 0.0906515580736544,
+      "period": "Medinan"
+    },
+    {
+      "rank": 10,
+      "sid": 58,
+      "n_words": 475,
+      "total_name_attestations": 43,
+      "density": 0.09052631578947369,
+      "period": "Medinan"
+    }
+  ],
+  "bottom_10_by_density": [
+    {
+      "rank": 105,
+      "sid": 101,
+      "n_words": 36,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 106,
+      "sid": 102,
+      "n_words": 28,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 107,
+      "sid": 105,
+      "n_words": 23,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 108,
+      "sid": 106,
+      "n_words": 17,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 109,
+      "sid": 107,
+      "n_words": 25,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 110,
+      "sid": 108,
+      "n_words": 10,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 111,
+      "sid": 109,
+      "n_words": 27,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 112,
+      "sid": 111,
+      "n_words": 23,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 113,
+      "sid": 113,
+      "n_words": 23,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    },
+    {
+      "rank": 114,
+      "sid": 114,
+      "n_words": 20,
+      "total_name_attestations": 0,
+      "density": 0.0,
+      "period": "Meccan"
+    }
+  ],
+  "cluster_sids": [
+    112,
+    1,
+    85,
+    64,
+    62,
+    110,
+    59,
+    61,
+    49,
+    58
+  ],
+  "cluster_total_words": 2092,
+  "cluster_period_composition": {
+    "meccan": 3,
+    "medinan": 7
+  },
+  "obs_intra_cluster_FR_mean": 0.7312582888888889,
+  "cell_A_uniform_null": {
+    "n_perm": 10000,
+    "null_mean": 0.92625031396,
+    "null_p5": 0.8068964,
+    "null_p25": 0.8920785777777778,
+    "p_perm": 0.0088,
+    "pass": true
+  },
+  "cell_B_length_matched_null": {
+    "lo_total_words": 1778.2,
+    "hi_total_words": 2405.7999999999997,
+    "n_perm": 10000,
+    "null_mean": 0.7555524299755556,
+    "null_p5": 0.6845913555555555,
+    "p_perm": 0.2719,
+    "pass": false
+  },
+  "MW5_positive_control": {
+    "source": "H-NEW-1200 first-10-by-sid sub-sample {56, 69, 74, 77, 81, 82, 83, 84, 86, 90}",
+    "cluster": [
+      56,
+      69,
+      74,
+      77,
+      81,
+      82,
+      83,
+      84,
+      86,
+      90
+    ],
+    "pc_obs_mean": 0.7112534444444445,
+    "pc_null_mean": 0.9261427454044444,
+    "pc_null_p5": 0.808059,
+    "p_pc": 0.0053,
+    "pc_pass": true
+  },
+  "alpha_bon_per_cell": 0.025,
+  "verdict": "DESCRIPTIVE-ONLY (length-confound suspected)",
+  "period_distribution_descriptive": {
+    "n_meccan": 86,
+    "n_medinan": 28,
+    "mean_meccan_density": 0.02940979238390048,
+    "mean_medinan_density": 0.0728747670071654
+  }
+}
