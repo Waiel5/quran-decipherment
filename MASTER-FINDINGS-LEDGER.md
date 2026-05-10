@@ -4199,3 +4199,72 @@ Period composition: **7 Medinan + 3 Meccan**. Consistent with H-NEW-1350 Medinan
 5. Per-name surah-network extension of H-NEW-170 / H-NEW-140 to substring instrument.
 
 *H-NEW-1560 landed 2026-05-10 by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+## §10.61 H-NEW-1720 inline (2026-05-09) — al-Raḥmān + al-Raḥīm corpus distribution: two MORE al-Khalifa derivative claims EMPIRICALLY FALSIFIED; Q 19 (not Q 55) is corpus-rank-1 in al-Raḥmān
+
+**Status**: FALSIFICATION + new title-density-independence data point.
+
+**Counts** (substring rule, no-tashkeel Hafs-Kūfan, basmala-as-v.1-of-Q1-only):
+
+| Name | Verse-internal count | al-Khalifa claim | Verdict |
+|---|---|---|---|
+| **al-Raḥmān (الرحمن)** | **48** | 57 = 19×3 | ❌ **FALSIFIED (off by -9)** |
+| **al-Raḥīm (الرحيم)** | **34** | 114 = 19×6 | ❌ **FALSIFIED (off by -80)** |
+
+Neither count is divisible by 19. The al-Raḥīm claim is **wildly off** (34 vs claimed 114 — al-Khalifa apparently double-counted basmala instances; even with all 113 surah-opener basmalas added, total = 147, still not 114).
+
+**Cumulative al-Khalifa audit (H-NEW-1600 + H-NEW-1530 + H-NEW-1720)**:
+
+| Sub-claim | Verdict |
+|---|---|
+| Basmala = 19 letters | ✅ CONFIRMED (pre-existing classical fact) |
+| Q 1 al-Fātiḥa = 29 words | ✅ CONFIRMED (pre-existing fact; not div by 19) |
+| 114 surahs = 19 × 6 | ✅ CONFIRMED (trivially — 19 chosen because 114/6=19) |
+| Q 96:1-5 = 19 words | ❌ FALSIFIED (actual 20) |
+| 6,236 verses ÷ 19 | ❌ FALSIFIED (mod 19 = 4) |
+| Allāh = 2,698 | ❌ FALSIFIED (actual 2,555 substring / 2,153 strict) |
+| al-Raḥmān = 57 | ❌ FALSIFIED (actual 48) |
+| al-Raḥīm = 114 | ❌ FALSIFIED (actual 34) |
+
+**5 substantive claims FALSIFIED**, 3 trivial/pre-existing CONFIRMED. The al-Khalifa "miracle of 19" thesis is **decisively rejected** on its empirically-falsifiable novel claims.
+
+### §10.61.1 NEW title-density-independence finding
+
+Top 5 surahs by al-Raḥmān count:
+- **Q 19 al-Maryam: 12** ← corpus-rank-1
+- Q 43 al-Zukhruf: 5
+- Q 21 al-Anbiyāʾ: 4
+- Q 36 Yāsīn: 4
+- Q 67 al-Mulk: 4
+- ...
+- Q 55 al-Raḥmān (title-eponymous): **1**
+
+**Q 19 (not Q 55) holds rank-1 in al-Raḥmān attestations** despite Q 55 being the al-Raḥmān-eponymous surah. **Extends the H-NEW-1700 title-density independence finding** to a 4th instance:
+
+| Eponymous surah | Title-key | Actual rank-1 surah |
+|---|---|---|
+| Q 19 al-Maryam | *مريم* | Q 5 al-Māʾida (H-NEW-1700) |
+| Q 68 al-Qalam | *قلم* | Q 96 al-ʿAlaq (Q068-F-06) |
+| Q 40 al-Ghāfir | *غفر* | Q 40 only rank 25 (Q040-F-03) |
+| **Q 55 al-Raḥmān** | **الرحمن** | **Q 19 al-Maryam** (this finding) |
+| Q 23 al-Muʾminūn | *ʾمن* | Q 23 IS rank-1 |
+| Q 58 al-Mujādila | *جدل* | Q 58 IS rank-1 |
+
+**Pattern hardens**: 4 of 6 title-eponymous surahs DO NOT hold rank-1 in their own title-key. Title-eponymy and density-rank-1 are **independent axes**.
+
+**The Q 55 / Q 19 inversion is particularly striking** because Q 55 al-Raḥmān is the project's most-known structural-outlier (corpus-MAX FR-isolation per H-NEW-1220) — even SO, its title-name belongs to a DIFFERENT surah.
+
+### §10.61.2 Q 19 polysemic structural-importance
+
+Q 19 al-Maryam is emerging as a multi-axis anchor:
+- Corpus rank-1 in **al-Raḥmān** (al-Raḥmān-attestations, this finding)
+- **Title-eponymous** for Maryam (3 Maryam-attestations)
+- Christ-narrative cluster member (1 ʿĪsā + 3 Maryam = 4 Christ-mentions)
+- Per H-NEW-1500 pericope-scale flip: Christ-narrative cluster cohesive at z=+4.25
+- Per H-NEW-1700 title-density: NOT rank-1 in Maryam (Q 5 is)
+
+Q 19 is the **named-eponymous surah for Maryam but the structural locus for al-Raḥmān-attestations** — empirically, Q 19 is more "al-Raḥmān centered" than Q 55 itself.
+
+### §10.61.3 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1720.json`
