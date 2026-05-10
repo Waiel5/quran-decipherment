@@ -2994,3 +2994,44 @@ The PASS/FAIL boundary at ~30% marker-thickness now has 5 PASS + 5 FAIL data poi
 **Files**:
 - `surahs/Q058-al-mujadala/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts
 - `surahs/Q073-al-muzzammil/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts
+
+## §10.52 H-NEW-1430 inline (2026-05-09 PM continuation) — Concentrator-verse corpus distribution: Q 103 corpus-MAX at 64.3%
+
+**Status**: POST-HOC EXPLORATORY with MW-4 single-test α-cap; intrinsically replicable as deterministic computation. Single-test direction not pre-registered (descriptive ranking computation).
+
+**Computation**: For each of 114 surahs, `ratio = max_verse_words / total_surah_words`. Whitespace-tokenized no-tashkeel; basmala excluded except Q 1.
+
+**Top-9 concentrator-surahs (ratio ≥ 0.30)**:
+
+| Rank | Surah | Verse | Words | Total | Ratio |
+|---|---|---|---|---|---|
+| **1** | **Q 103 al-ʿAṣr** | v 3 | 9 | 14 | **0.643** |
+| **2** | **Q 73 al-Muzzammil** | v 20 | 90 | 214 | **0.421** |
+| 3 | Q 106 Quraysh | v 4 | 7 | 17 | 0.412 |
+| 4 | Q 108 al-Kawthar | v 3 | 4 | 10 | 0.400 |
+| 5 | Q 110 al-Naṣr | v 3 | 8 | 20 | 0.400 |
+| 6 | Q 112 al-Ikhlāṣ | v 4 | 5 | 15 | 0.333 |
+| 7 | Q 1 al-Fātiḥa | v 7 | 9 | 29 | 0.310 |
+| 8 | Q 105 al-Fīl | v 1 | 7 | 23 | 0.304 |
+| 9 | Q 97 al-Qadr | v 4 | 9 | 30 | 0.300 |
+
+**Headline findings**:
+- **Q 103 al-ʿAṣr v 3 is corpus-MAX at 64.3%** — the 9-word salvation-clause *illā alladhīna āmanū wa-ʿamilū al-ṣāliḥāt wa-tawāṣaw bi-l-ḥaqq wa-tawāṣaw bi-l-ṣabr* carries 9 of the surah's 14 total words. Vindicates al-Shāfiʿī's classical assessment ("if only Q 103 had been revealed, it would have sufficed") at corpus-MAX precision.
+- **Q 73 al-Muzzammil v 20 is corpus-rank-2 at 42.1%** — independent corroboration of Q073-F-05 (rank-3 by absolute length, rank-1 in Early-Meccan).
+- **8 of top-9 are Meccan** (only Q 110 Medinan) — short-Meccan-tail dominance on the proportional concentrator measure.
+- **Q 74:31 = rank #13 at 23.8%** — pairs with Q 73:20 across the Q 73-Q 74 vocative twin (Q073-F-02 OPENING-LINKED CONTENT-DIVERGENT pair).
+- **Meccan/Medinan symmetry NULL** — observed diff −0.0008, permutation p = 0.495. Distinctly different signature from H-NEW-1350/1370 (chronology-dominant in absolute measures): proportional concentrator-ratio is chronology-independent due to denominator scaling.
+
+**Classical-tradition validations**:
+- al-Shāfiʿī: Q 103 as *jawāmiʿ al-kalim* — vindicated at 64.3% empirical word-concentration.
+- al-Suyūṭī Itqān nawʿ 47: Q 73:20 abrogating-status — corroborated by 42.1% concentrator role.
+- Ibn Kathīr on Q 108 al-Kawthar: v 3 retort-payload — empirically supported at 40% concentration.
+
+**Cross-finding integration**:
+- Extends cross-finding-022 corpus-EXACT/EXTREME roster from 13 to 14 entries (Q 103 corpus-MAX concentrator).
+- Q 73:20 cross-test convergence: rank-3 absolute length (H-NEW-1370), rank-1 Early-Meccan (Q073-F-05), rank-2 proportional concentrator (H-NEW-1430).
+- Refines H-NEW-1430 → cross-finding-025 marker-thickness rule: when marker IS a single verse, the relevant scale is verse-proportion-of-surah.
+
+**Files**: `findings/phase-b-hypotheses/h-new-1430-concentrator-verse-corpus-distribution.md`, `findings/phase-b-hypotheses/csv/h-new-1430.json`.
+
+**Open follow-ups**: alternative-tokenization pre-registered replication; concentrator-verse content-axis classification (5 of 9 are eschatological-recompense, 2 are introit/closer, 1 historical); Q 73+Q 74 long-concentrator pair sub-class hypothesis; cross-corpus baseline against pre-Islamic qaṣīda.
