@@ -3834,3 +3834,173 @@ The empirical result adds quantitative discourse-cohesion to the classical descr
 - Vindicates the discourse-marker interpretation of yā-ayyuhā al-nabī predicted in §10.44.7.
 
 *H-NEW-1520 landed 2026-05-09 PM continuation by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+## §10.58 H-NEW-1500 inline (2026-05-09 PM continuation) — Christ-narrative 9-pericope flip test PASSES at z=+4.25 (p≤10⁻⁴); third confirming cross-scale finding-pair under cross-finding-025
+
+**Status**: PASS-DIRECTED (single test k=1; α=0.05). Direction matched pre-commit lock at corpus-extreme magnitude.
+
+**Pre-reg SHA256**: `74626141b16e345be4ec5feb35b8217b92423afbe0a6432e1d885cb31e95bea7`
+**Files**: `findings/phase-b-hypotheses/prereg-h-new-1500-christ-pericope-replication.md`, `scripts/h-new-1500.py`, `csv/h-new-1500.json`, `h-new-1500-christ-pericope-replication.md`.
+
+**Note on numbering**: This finding was queued in §10.51.3 as the FIRST flip-candidate (Christ-narrative re-test). Multiple parallel agents in this PM continuation created duplicate §10.55 / §10.56 entries; this §10.58 is the H-NEW-1500 landing under the §10.51.3 queue. H-NEW-1700 (Maryam corpus-distribution, §10.56-third instance) is a directly-related sister finding landed in parallel.
+
+**Hypothesis (pre-locked)**: The 9 Christ-narrative pericopes — Q 3:33-63, Q 3:64-89, Q 4:155-172, Q 5:17, Q 5:46-48, Q 5:72-75, Q 5:109-120, Q 19:16-40, Q 19:88-93 — exhibit TIGHTER mean pairwise root-Jaccard cohesion than length-matched random pericopes drawn from the flat 6,236-verse corpus index (seed 20260509; n_perm=10000; one-tailed; QAC v0.4 ROOT-field; rules-tuple default).
+
+**Pericope inventory** (verified by direct grep over `quran-text/quran-no-tashkeel.json` for canonical Arabic surface-forms عيسى / مريم / مسيح / حواري / انجيل):
+
+| # | Pericope | L | Unique roots | Anchor terms |
+|:--|:--|:--|:--|:--|
+| 1 | Q 3:33-63 | 31 | 151 | maryam[36,37,42,43,44,45]; ʿīsā[45,52,55,59]; masīḥ[45]; ḥawārī[52] |
+| 2 | Q 3:64-89 | 26 | 115 | ʿīsā[84]; Christological-polemic discourse |
+| 3 | Q 4:155-172 | 18 | 101 | ʿīsā[157,163,171]; maryam[156,157,171]; masīḥ[157,171,172] |
+| 4 | Q 5:17 | 1 | 16 | masīḥ[17]; maryam[17] |
+| 5 | Q 5:46-48 | 3 | 37 | ʿīsā[46]; maryam[46]; injīl |
+| 6 | Q 5:72-75 | 4 | 36 | masīḥ[72,75]; maryam[72,75] |
+| 7 | Q 5:109-120 | 12 | 92 | ʿīsā[110,112,114,116]; maryam[110,112,114,116]; ḥawārī[111,112] |
+| 8 | Q 19:16-40 | 25 | 107 | maryam[16,27,34]; ʿīsā[34] |
+| 9 | Q 19:88-93 | 6 | 20 | walad-denial pericope (Christological-by-content) |
+
+Total verses: 126. Total surahs spanned: 4 ({Q 3, Q 4, Q 5, Q 19}; widens H-NEW-1310's 3-surah set by adding Q 4 for the structurally load-bearing Q 4:155-172).
+
+**Result**:
+- **J_mean observed = 0.156031** (mean of 36 pairwise root-Jaccards)
+- **Null mean = 0.085168 ± 0.016671** (10,000 length-matched permutations)
+- **Null 95th percentile = 0.113972**
+- **z = +4.251**
+- **p_perm (one-tailed, strict ≥ obs) = 0.0001** (1 of 10,000 perms ≥ observed; reportable upper bound ≤ 10⁻⁴)
+- Direction matches pre-commit lock: ✓
+- **Verdict = PASS-DIRECTED** at corpus-extreme magnitude.
+
+**Per-pair structure**: 36 pairwise Jaccards span 0.049–0.321 with mean 0.156. TIGHTEST pair: **Q 3:33-63 ↔ Q 5:109-120 at J=0.321** (Maryam-birth + ʿĪsā-birth + ḥawāriyyīn opening of Q 3 sharing 59 roots with the ḥawāriyyīn-table + ʿĪsā's-final-response closer of Q 5). Top-6 pairs all at J ≥ 0.27 form a tight inter-surah Christological lexical block. LOOSEST pairs all involve the Q 19:88-93 walad-denial pericope (Christological-by-content without proper-name carrier; J = 0.049–0.071).
+
+### §10.58.1 — Scale-of-aggregation TRIPLE-pair table (cross-finding-025 graduation evidence)
+
+The Christ-narrative is the THIRD theological set to flip NULL→PASS across scales:
+
+| Cluster | Whole-surah | Pericope | z (pericope) | Flip verdict |
+|:--|:--|:--|:--|:--|
+| **Iblīs-narrative** (H-NEW-039 ↔ H-NEW-1380) | NULL (p=0.537) | PASS (p≤10⁻⁴) | **+4.76** | NULL→PASS ✓ |
+| **Sajda set** (H-NEW-1330 ↔ H-NEW-1510) | NULL (Cell-B p=0.110) | PASS (p=0.0058) | **+2.685** | NULL→PASS ✓ |
+| **Christ-narrative** (H-NEW-1310 ↔ H-NEW-1500, THIS finding) | NULL (Cell-B p=0.187) | PASS (p≤10⁻⁴) | **+4.25** | NULL→PASS ✓ |
+
+**Three independent cross-scale finding-pairs at the same instrument, all flipping NULL→PASS at pericope scale.** Two narrative-cycle pairs (Iblīs, Christ) land at z ≈ +4.5 ± 0.3; the sajda-marker pair lands at z = +2.685 (less concentrated lexicon, more chronologically/structurally heterogeneous).
+
+### §10.58.2 — cross-finding-025 graduates from PRELIMINARY-SYNTHESIS → CONFIRMED
+
+The original §10.51.3 graduation criterion required 2+ flips. Three are now on record at the same instrument with consistent direction. **Cross-finding-025-formal graduates from PRELIMINARY-SYNTHESIS to CONFIRMED.** The principle:
+
+> **FR/Jaccard cohesion of a thematic set is jointly determined by (marker-thickness × scale-of-aggregation × instrument). Pre-registration must specify all three. NULL at one scale does NOT entail NULL at all scales — discrepancies across scales are FIRST-CLASS findings, not contradictions.**
+
+is now supported by three confirming finding-pairs, with both narrative cycles AND a liturgical marker set showing the flip pattern.
+
+### §10.58.3 — Refinement: flip-magnitude scales with internal-lexical-concentration
+
+Initial prediction (in H-NEW-1500 finding's §"Predictions"): "Iblīs-narrative and Christ-narrative are narrative cycles; the remaining 3 are liturgical/discourse markers; the scale-of-aggregation flip is specific to narrative cycles."
+
+**The sajda flip (H-NEW-1510, z=+2.685) FALSIFIES the narrative-cycle-specific refinement.** The sajda set is a liturgical-marker cluster, yet it flips. The direction is consistent across all three pairs; only flip-magnitude differs.
+
+**Revised refinement**: Pericope-scale flip-magnitude scales with **internal-lexical-concentration** of the thematic set, not with narrative-cycle status as such. Narrative cycles (Iblīs, Christ) have multiple lexical attractors (4–7 each) and produce z ≈ +4.5; liturgical markers (sajda) have fewer attractors and produce z ≈ +2.7. Both flip, but at different magnitudes.
+
+Predictions:
+- **H-NEW-1530 al-ḥamdu li-llāh opener** (5 opener-pericopes): PASS at moderate magnitude (z ≈ +2 to +3).
+- **H-NEW-1540 *yā-ayyuhā al-nabī*** (13 vocative-attestation verses ± context): weak DIRECTIONAL or NULL.
+
+### §10.58.4 — Honest limits
+
+- Seed 20260509 shared with H-NEW-1380 + H-NEW-1510 (instrument-uniformity across the queued re-test family). Different-seed run queued as H-NEW-1500b.
+- Pericope boundaries are interpretive (LOCKED + grep-verified, ±2-verse boundary sensitivity queued).
+- Length-matched null does not control for prose-type.
+- The 4-surah set {Q 3, Q 4, Q 5, Q 19} widens H-NEW-1310's 3-surah set by adding Q 4; sensitivity test excluding Q 4 queued.
+
+### §10.58.5 — Classical context
+
+al-Rāzī (*Mafātīḥ al-ghayb*) cross-references Q 3:42-47 ↔ Q 19:16-22 ↔ Q 5:110-118 as a single rhetorical cycle. al-Biqāʿī (*Naẓm al-durar*) treats Q 3, Q 5, Q 19 as cross-linked Christological discourses. al-Suyūṭī (*al-Itqān*, nawʿ 49 *fī tanāsub al-āyāt wa-l-suwar*) treats inter-surah narrative-recurrence as a deliberate compositional feature. H-NEW-1500 provides quantitative correlate: the Christ-narrative recurrence-cycle is corpus-extreme at pericope scale (z=+4.25); the classical reading is empirically vindicated at the correct scale-of-aggregation.
+
+### §10.58.6 — Connection to existing findings
+
+- **Inverts**: H-NEW-1310 NULL from "substantive NULL" to "scale-of-aggregation companion of H-NEW-1500 PASS".
+- **Pairs with**: H-NEW-039/H-NEW-1380 (Iblīs) AND H-NEW-1330/H-NEW-1510 (sajda) as the third independent cross-scale flip.
+- **Graduates**: cross-finding-025 PRELIMINARY-SYNTHESIS → CONFIRMED via 3-pair criterion.
+- **Falsifies**: narrative-cycle-specific refinement (sajda is liturgical-marker, yet flips).
+- **Refines**: flip-magnitude scales with internal-lexical-concentration, not narrative-cycle status.
+- **Predicts**: H-NEW-1530 moderate PASS; H-NEW-1540 weak/NULL.
+- **Sister-finding**: H-NEW-1700 (Maryam corpus-distribution, this batch) — the 31 maryam-attestations in 12 surahs operationalize the proper-name-attestation distribution; H-NEW-1500 operationalizes the cohesion-at-pericope-scale of the same narrative cluster.
+
+### §10.58.7 — Files
+
+- pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1500-christ-pericope-replication.md`
+- script: `findings/phase-b-hypotheses/scripts/h-new-1500.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1500.json`
+- finding: `findings/phase-b-hypotheses/h-new-1500-christ-pericope-replication.md`
+
+*Inline run logged 2026-05-09 PM continuation by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+## §10.57 H-NEW-1710 inline (2026-05-09) — Prophet name corpus distribution: Mūsā corpus-rank-1 at 136 attestations; Muḥammad named only 4 times; Q 5 is the Christ-narrative center (not Q 19)
+
+**Status**: CONFIRMED corpus distributions; multiple SURPRISE findings on title-eponymous vs density rankings.
+
+### §10.57.1 Prophet-name corpus distribution (substring grep, no-tashkeel Hafs-Kūfan)
+
+| Prophet/Person | Verses | Surahs | Corpus rank-1 surah |
+|---|---|---|---|
+| **Mūsā (موسى)** | **136** | 34 | **Q 7 al-Aʿrāf (21×)** — corpus's most-named human |
+| Ibrāhīm (إبراهيم) | 69 | 25 | Q 2 al-Baqara (15×) |
+| Nūḥ (نوح) | 50 | 30 | Q 11 Hūd (9×) |
+| **ʿĪsā (عيسى)** | **36** | 12 | **Q 5 al-Māʾida (11×)** |
+| **Maryam (مريم)** | **34** | 12 | **Q 5 al-Māʾida (10×)** — corroborates H-NEW-1700 |
+| Ādam (آدم) | 25 | 9 | Q 7 al-Aʿrāf (7×) |
+| **Muḥammad (محمد)** | **4** | 4 | distributed across Q 3, 33, 47, 48 (1× each) |
+
+### §10.57.2 The Mūsā/Muḥammad asymmetry — 34× named gap
+
+- Mūsā: 136 verses, 21× in Q 7 alone
+- Muḥammad: 4 verses, 1× in each of Q 3:144, Q 33:40, Q 47:2, Q 48:29
+
+**The ratio is 34:1.** Classical scholarship (al-Suyūṭī Itqān nawʿ 23 *fī alqāb al-Qurʾān*) notes this asymmetry — the corpus prefers to address the Prophet (vocatively: *yā ayyuhā al-nabī*, *yā ayyuhā al-rasūl*) rather than name him. **Empirical correlate at 34× density-asymmetry**: vocative addressing dominates eponymous naming for the Prophet.
+
+### §10.57.3 Q 5 al-Māʾida is the Christ-narrative center (NOT Q 19)
+
+| Surah | ʿĪsā | Maryam | al-Masīḥ | Combined Christ-mentions |
+|---|---|---|---|---|
+| **Q 5 al-Māʾida** | **11** | **10** | **5** | **26 attestations** |
+| Q 3 Āl ʿImrān | 5 | 6 | 1 | 12 |
+| Q 4 al-Nisāʾ | 5 | 3 | 3 | 11 |
+| **Q 19 al-Maryam (eponymous)** | **1** | **3** | **0** | **4** |
+
+**Q 5 carries 6.5× the Christ-mentions of title-eponymous Q 19.** The title-density independence pattern (H-NEW-1700) extends: not only does Q 5 hold Maryam rank-1, it holds ALL of: ʿĪsā rank-1 + Maryam rank-1 + al-Masīḥ rank-1.
+
+**al-Masīḥ NEVER appears in Q 19** — the title-eponymous Maryam-surah uses *ʿĪsā ibn Maryam* not *al-Masīḥ*. Title-classification structural distinction documented.
+
+### §10.57.4 ʿĪsā ↔ Maryam co-occurrence
+
+- Verses with BOTH ʿĪsā AND Maryam: **20**
+- Verses with only ʿĪsā: 11
+- Verses with only Maryam: 11
+
+**~58% of ʿĪsā attestations and ~59% of Maryam attestations are paired in the same verse.** The names are STRUCTURALLY LINKED at the verse-pair level — they function as a name-pair *ʿĪsā ibn Maryam* with high regularity.
+
+### §10.57.5 al-Masīḥ corpus distribution
+
+al-Masīḥ (Christ-title): 11 verses across 4 surahs only.
+- Q 5: 5 (rank-1)
+- Q 4: 3
+- Q 9: 2
+- Q 3: 1
+- **NEVER in Q 19** (the eponymous Maryam-surah uses *ʿĪsā ibn Maryam*, never *al-Masīḥ*)
+
+### §10.57.6 Cross-finding integration
+
+- **H-NEW-1700 (Maryam-distribution)**: §10.56 — Q 5 = Maryam rank-1; corroborated here
+- **H-NEW-1310 (Christ-narrative whole-surah NULL)**: cluster reality at MARKER level (Q 3+4+5+19 = 21/31 = 67.7% concentration) confirmed; whole-surah NULL persists; **H-NEW-1500 pericope-scale re-test (in flight) should PASS** per H-NEW-1380 + H-NEW-1510 scale-of-aggregation principle
+- **H-NEW-1570 (chronology-pair inverse-rank)**: title-density independence extends — Q 19 / Q 68 / Q 40 break the eponymy=density-rank-1 pattern; Q 23 / Q 58 confirm it
+
+### §10.57.7 Open follow-ups
+
+1. **Top 10 most-named figures**: extend to include Hārūn, Yūsuf, Sulaymān, Dāwūd, Yaʿqūb, Isḥāq, Ismāʿīl, Zakariyyāʾ, Yaḥyā, Lūṭ — establish complete corpus-prophet-name distribution
+2. **Verify Mūsā = corpus-most-named-individual**: include also Iblīs (only Satan-name), al-Shayṭān; non-prophet humans (Pharaoh, Qārūn)
+3. **Christ-narrative pericope FR at scale-of-aggregation principle**: H-NEW-1500 in flight
+4. **Prophet-name co-occurrence graph**: a corpus-wide co-mention network would show which prophets cluster
+
+### §10.57.8 Files
+
+- Inline computation; output JSON at `findings/phase-b-hypotheses/csv/h-new-1710.json`
