@@ -1,0 +1,282 @@
+{
+  "finding_id": "H-NEW-1380",
+  "prereg_sha": "b7e02919d77be823205670f807a144b0419182b4be0f23ca660efd7a5ed29d20",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "aggregation_scale": "pericope (locked verse range)",
+  "pericopes": [
+    {
+      "label": "Q 2:34",
+      "surah": 2,
+      "verse_start": 34,
+      "verse_end": 34,
+      "n_verses": 1,
+      "n_unique_roots": 7
+    },
+    {
+      "label": "Q 7:11-25",
+      "surah": 7,
+      "verse_start": 11,
+      "verse_end": 25,
+      "n_verses": 15,
+      "n_unique_roots": 74
+    },
+    {
+      "label": "Q 15:31-44",
+      "surah": 15,
+      "verse_start": 31,
+      "verse_end": 44,
+      "n_verses": 14,
+      "n_unique_roots": 36
+    },
+    {
+      "label": "Q 17:61-65",
+      "surah": 17,
+      "verse_start": 61,
+      "verse_end": 65,
+      "n_verses": 5,
+      "n_unique_roots": 35
+    },
+    {
+      "label": "Q 18:50",
+      "surah": 18,
+      "verse_start": 50,
+      "verse_end": 50,
+      "n_verses": 1,
+      "n_unique_roots": 16
+    },
+    {
+      "label": "Q 20:115-123",
+      "surah": 20,
+      "verse_start": 115,
+      "verse_end": 123,
+      "n_verses": 9,
+      "n_unique_roots": 42
+    },
+    {
+      "label": "Q 38:71-85",
+      "surah": 38,
+      "verse_start": 71,
+      "verse_end": 85,
+      "n_verses": 15,
+      "n_unique_roots": 37
+    }
+  ],
+  "pericope_lengths": [
+    1,
+    15,
+    14,
+    5,
+    1,
+    9,
+    15
+  ],
+  "pairwise_jaccards": [
+    {
+      "i": "Q 2:34",
+      "j": "Q 7:11-25",
+      "inter": 5,
+      "union": 76,
+      "jaccard": 0.06578947368421052
+    },
+    {
+      "i": "Q 2:34",
+      "j": "Q 15:31-44",
+      "inter": 4,
+      "union": 39,
+      "jaccard": 0.10256410256410256
+    },
+    {
+      "i": "Q 2:34",
+      "j": "Q 17:61-65",
+      "inter": 3,
+      "union": 39,
+      "jaccard": 0.07692307692307693
+    },
+    {
+      "i": "Q 2:34",
+      "j": "Q 18:50",
+      "inter": 4,
+      "union": 19,
+      "jaccard": 0.21052631578947367
+    },
+    {
+      "i": "Q 2:34",
+      "j": "Q 20:115-123",
+      "inter": 4,
+      "union": 45,
+      "jaccard": 0.08888888888888889
+    },
+    {
+      "i": "Q 2:34",
+      "j": "Q 38:71-85",
+      "inter": 6,
+      "union": 38,
+      "jaccard": 0.15789473684210525
+    },
+    {
+      "i": "Q 7:11-25",
+      "j": "Q 15:31-44",
+      "inter": 16,
+      "union": 94,
+      "jaccard": 0.1702127659574468
+    },
+    {
+      "i": "Q 7:11-25",
+      "j": "Q 17:61-65",
+      "inter": 11,
+      "union": 98,
+      "jaccard": 0.11224489795918367
+    },
+    {
+      "i": "Q 7:11-25",
+      "j": "Q 18:50",
+      "inter": 9,
+      "union": 81,
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "i": "Q 7:11-25",
+      "j": "Q 20:115-123",
+      "inter": 26,
+      "union": 90,
+      "jaccard": 0.28888888888888886
+    },
+    {
+      "i": "Q 7:11-25",
+      "j": "Q 38:71-85",
+      "inter": 20,
+      "union": 91,
+      "jaccard": 0.21978021978021978
+    },
+    {
+      "i": "Q 15:31-44",
+      "j": "Q 17:61-65",
+      "inter": 11,
+      "union": 60,
+      "jaccard": 0.18333333333333332
+    },
+    {
+      "i": "Q 15:31-44",
+      "j": "Q 18:50",
+      "inter": 4,
+      "union": 48,
+      "jaccard": 0.08333333333333333
+    },
+    {
+      "i": "Q 15:31-44",
+      "j": "Q 20:115-123",
+      "inter": 8,
+      "union": 70,
+      "jaccard": 0.11428571428571428
+    },
+    {
+      "i": "Q 15:31-44",
+      "j": "Q 38:71-85",
+      "inter": 21,
+      "union": 52,
+      "jaccard": 0.40384615384615385
+    },
+    {
+      "i": "Q 17:61-65",
+      "j": "Q 18:50",
+      "inter": 5,
+      "union": 46,
+      "jaccard": 0.10869565217391304
+    },
+    {
+      "i": "Q 17:61-65",
+      "j": "Q 20:115-123",
+      "inter": 6,
+      "union": 71,
+      "jaccard": 0.08450704225352113
+    },
+    {
+      "i": "Q 17:61-65",
+      "j": "Q 38:71-85",
+      "inter": 9,
+      "union": 63,
+      "jaccard": 0.14285714285714285
+    },
+    {
+      "i": "Q 18:50",
+      "j": "Q 20:115-123",
+      "inter": 6,
+      "union": 52,
+      "jaccard": 0.11538461538461539
+    },
+    {
+      "i": "Q 18:50",
+      "j": "Q 38:71-85",
+      "inter": 5,
+      "union": 48,
+      "jaccard": 0.10416666666666667
+    },
+    {
+      "i": "Q 20:115-123",
+      "j": "Q 38:71-85",
+      "inter": 8,
+      "union": 71,
+      "jaccard": 0.11267605633802817
+    }
+  ],
+  "observed_mean_pairwise_jaccard": 0.14561477089814906,
+  "null_mean": 0.06503342766937967,
+  "null_std": 0.016926423282065298,
+  "z_score": 4.76068345248998,
+  "p_greater_perm_strict": 0.0,
+  "p_reportable_upper_bound": 0.0001,
+  "direction_locked": "TIGHTER (J_mean > null_mean)",
+  "direction_match": true,
+  "verdict": "PASS-DIRECTED-REPLICATION",
+  "numerical_replication_of_Q038_F_07": {
+    "matches": true,
+    "Q038_F_07_reference": {
+      "finding_id": "Q038-F-07",
+      "J_obs": 0.14561477089814906,
+      "null_mean": 0.06503342766937967,
+      "null_std": 0.016926423282065298,
+      "p_greater_perm": 0.0
+    }
+  },
+  "scale_of_aggregation_pair": {
+    "whole_surah_scale": {
+      "finding": "H-NEW-039",
+      "set": [
+        2,
+        7,
+        15,
+        17,
+        18,
+        20,
+        26,
+        34,
+        38
+      ],
+      "verdict": "NULL",
+      "mean_FR": 0.9402,
+      "corpus_mean_FR": 0.9237,
+      "p_lower": 0.537,
+      "note": "Whole-surah FR root-distribution cohesion of 9 Iblīs-token surahs"
+    },
+    "pericope_scale": {
+      "finding": "H-NEW-1380 (== Q038-F-07 replication)",
+      "set": [
+        "Q 2:34",
+        "Q 7:11-25",
+        "Q 15:31-44",
+        "Q 17:61-65",
+        "Q 18:50",
+        "Q 20:115-123",
+        "Q 38:71-85"
+      ],
+      "verdict": "PASS-DIRECTED-REPLICATION",
+      "J_mean": 0.14561477089814906,
+      "null_mean": 0.06503342766937967,
+      "z_score": 4.76068345248998,
+      "p_greater_perm": 0.0,
+      "note": "Pericope-scale root-Jaccard cohesion of 7 Iblīs-narrative pericopes"
+    }
+  }
+}

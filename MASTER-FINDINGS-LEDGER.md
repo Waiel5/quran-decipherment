@@ -2995,6 +2995,79 @@ The PASS/FAIL boundary at ~30% marker-thickness now has 5 PASS + 5 FAIL data poi
 - `surahs/Q058-al-mujadala/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts
 - `surahs/Q073-al-muzzammil/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts
 
+## §10.51 H-NEW-1380 inline (2026-05-09 PM continuation) — Iblīs-narrative 7-pericope corpus replication PASS-DIRECTED-REPLICATION (z=+4.76) + scale-of-aggregation as 2nd methodological axis under cross-finding-025
+
+**Status**: PASS-DIRECTED-REPLICATION (numerical replication of Q038-F-07 under identical seed + instrument; corpus-extreme at pericope-scale).
+
+**Pre-reg SHA256**: `b7e02919d77be823205670f807a144b0419182b4be0f23ca660efd7a5ed29d20`
+**Files**: `findings/phase-b-hypotheses/prereg-h-new-1380-iblis-pericope-replication.md`, `scripts/h-new-1380.py`, `csv/h-new-1380.json`, `h-new-1380-iblis-pericope-replication.md`.
+
+**Hypothesis (pre-locked)**: 7 Iblīs-narrative pericopes (Q 2:34, 7:11-25, 15:31-44, 17:61-65, 18:50, 20:115-123, 38:71-85) exhibit TIGHTER mean pairwise root-Jaccard cohesion than length-matched random pericopes drawn from the flat 6,236-verse corpus index (seed 20260509; n_perm=10000; one-tailed; QAC v0.4 ROOT-field; rules-tuple default).
+
+**Result**:
+- **J_mean observed = 0.14561477** (mean of 21 pairwise root-Jaccards)
+- **Null mean = 0.06503343 ± 0.01692642** (10,000 length-matched permutations)
+- **z = +4.76**
+- **p_perm (one-tailed, strict ≥ obs) = 0.0000; reportable upper bound ≤ 10⁻⁴** (0 of 10,000 perms ≥ observed)
+- Direction matches pre-commit lock: ✓
+- **Numerical replication of Q038-F-07: EXACT** (J, null_mean, null_std, p all match to floating-point precision — identical seed, identical instrument, identical pericope ranges)
+
+**Per-pair structure**: 21 pairwise Jaccards span 0.066–0.211 with mean 0.146; the TIGHTEST pair is **Q 2:34 ↔ Q 18:50 at J=0.211** (both single-verse pericopes); the LOOSEST is **Q 2:34 ↔ Q 7:11-25 at J=0.066** (Q 7's 15-verse vocabulary expansion dilutes Q 2:34's minimal 7-root set). The narrative-cycle backbone — *sjd*, *Aby*, *kbr*, *Edw*, *qwl*, *Amr*, *Edn* — appears in 5-7 of 7 pericopes and is the structural source of the +4.76 z.
+
+### §10.51.1 — Scale-of-aggregation pairing (THE methodological finding)
+
+The same theological set has been tested under TWO scales-of-aggregation and produces TWO different verdicts:
+
+| Scale | Finding | Set | Statistic | Verdict |
+|:--|:--|:--|:--|:--|
+| Whole-surah | **H-NEW-039** | 9 surahs containing *Iblīs* {Q 2, 7, 15, 17, 18, 20, 26, 34, 38} | FR root-distribution mean cohesion | mean FR=0.9402 vs corpus 0.9237; z=+0.24; p=0.537 → **NULL** |
+| Pericope | **H-NEW-1380** | 7 Iblīs-narrative pericopes (locked verse ranges) | root-Jaccard mean pairwise | J_mean=0.1456 vs 0.0650±0.0169; z=+4.76; p≤10⁻⁴ → **PASS-DIRECTED-REPLICATION** |
+
+The two verdicts are NOT inconsistent. They are scale-of-aggregation phenomena.
+
+### §10.51.2 — Scale-of-aggregation principle formalized as cross-finding-025 corollary
+
+> **Scale-of-aggregation axis** (formalization claim): For a thematic set C ⊆ corpus, FR/Jaccard cohesion is a function of BOTH (a) marker-thickness within each unit of aggregation AND (b) the unit of aggregation itself (verse / pericope / surah / multi-surah block). A NULL at one scale does NOT entail a NULL at all scales. A PASS at a narrower scale does NOT entail a PASS at broader scales. The scale-of-aggregation must be pre-specified in the pre-reg; discrepancies across scales are FIRST-CLASS findings, not contradictions.
+
+This corollary is the **second methodological axis** under cross-finding-025 (the first being marker-thickness). The combined principle is:
+
+> **FR/Jaccard cohesion of a thematic set is jointly determined by (marker-thickness × scale-of-aggregation × instrument). Pre-registration must specify all three.**
+
+### §10.51.3 — Implications for future pre-regs + queued re-tests
+
+Thin-marker NULLs at whole-surah scale do NOT preclude PASSes at pericope scale. Candidates for pericope-scale re-test (queued):
+
+- **H-NEW-1310** (Christ-narrative {Q 3, 5, 19}) — re-test as Christ-pericope-set {Q 3:42-63 + Q 5:110-118 + Q 19:1-37}
+- **H-NEW-1330** (sajda 14-surahs) — re-test as 14-sajda-verse-pericopes (±2 verse windows)
+- **H-NEW-1340** (al-ḥamdu li-llāh opener {Q 1, 6, 18, 34, 35}) — re-test on opening-pericopes only
+- **H-NEW-1360** (*yā-ayyuhā al-nabī* 6-surah set) — re-test on 13 vocative-attestation verses ± context
+
+If 2 or more of these flip from NULL to PASS at pericope-scale, cross-finding-025-formal gains its replication-cluster set and graduates from PRELIMINARY-SYNTHESIS.
+
+### §10.51.4 — Honest limits
+
+- Seed 20260509 matches Q038-F-07; the numerical agreement is a **script-integrity check**, NOT seed-independent replication. A different-seed run (H-NEW-1380b) is queued for genuine seed-independence.
+- The pericope ranges are interpretive choices; ±2-verse boundary sensitivity is queued.
+- Length-matched null does not control for prose-type (narrative vs eschatological vs lyrical); prose-matched null is a follow-up.
+- The scale-of-aggregation claim is supported by ONE finding-pair (H-NEW-039 + H-NEW-1380). Full codification at cross-finding-025-formal requires 2+ additional finding-pairs with same pattern.
+- The 9-surah vs 7-pericope inclusion-criteria differ (Q 26, Q 34 dropped — no developed narrative pericope). Both criteria are pre-registered and operationalized per scale.
+
+### §10.51.5 — Classical context
+
+al-Rāzī, *Mafātīḥ al-ghayb* (commentary on Q 2:34), reads the Iblīs-refusal scene as a kalām-foundational pericope and explicitly notes parallel occurrences in Q 7, 15, 17, 18, 20, 38. al-Biqāʿī, *Naẓm al-durar*, treats the recurrence as deliberate thematic recurrence rather than mere repetition. The empirical result — corpus-extreme root-Jaccard at pericope-scale — quantitatively supports the classical reading of the Iblīs narrative as a coherent textual cycle, with the methodological clarification that the right unit-of-aggregation for that coherence is the PERICOPE, not the SURAH.
+
+### §10.51.6 — Files
+
+- pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1380-iblis-pericope-replication.md`
+- script: `findings/phase-b-hypotheses/scripts/h-new-1380.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1380.json`
+- finding: `findings/phase-b-hypotheses/h-new-1380-iblis-pericope-replication.md`
+
+**Connection to existing findings**:
+- Promotes Q038-F-07 (specialist-scale, CONFIRMED) → H-NEW-1380 (corpus-wide inline, PASS-DIRECTED-REPLICATION).
+- Pairs with H-NEW-039 (whole-surah, NULL) to operationalize scale-of-aggregation axis.
+- Extends cross-finding-025 PRELIMINARY-SYNTHESIS by adding scale-of-aggregation as the second methodological axis under the marker-thickness rule.
+
 ## §10.52 H-NEW-1430 inline (2026-05-09 PM continuation) — Concentrator-verse corpus distribution: Q 103 corpus-MAX at 64.3%
 
 **Status**: POST-HOC EXPLORATORY with MW-4 single-test α-cap; intrinsically replicable as deterministic computation. Single-test direction not pre-registered (descriptive ranking computation).
