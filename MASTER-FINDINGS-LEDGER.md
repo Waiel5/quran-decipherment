@@ -5081,3 +5081,59 @@ Q 42 al-Shūrā uniquely carries a 2-verse muqaṭṭaʿāt opening (v1 = حم, 
 ### §10.71.9 Project consequence
 
 cross-finding-025-formal is now **5/5 confirmed across 5 structurally distinct marker classes**. The next falsification-target is to find a thin-marker NULL at whole-surah scale that does NOT flip to PASS at pericope scale (a NULL/NULL pair would refine the law's domain of applicability). Until such a counterexample is found, the pericope-flip law stands as Pillar 3 of the project at corpus-wide law strength.
+
+## §10.69 H-NEW-1910 inline (2026-05-09) — Complete proper-noun corpus distribution: Quraysh + Yathrib + Aḥmad + Idrīs + Ilyās are corpus-SINGLETONS
+
+**Status**: CONFIRMED descriptive inventory; ~47 named entities catalogued.
+
+**Top-10 most-named entities** (single-word substring with word-boundary):
+
+| Entity | Attestations | Rank-1 surah |
+|---|---|---|
+| **Mūsā** | 129 | Q 7 (20×) |
+| **Firʿawn** | 67 | Q 7 (9×) |
+| **al-Shayṭān** | 63 | Q 4 (7×) |
+| **Ibrāhīm** | 62 | Q 2 (15×) |
+| Banū Isrāʾīl | 41 | Q 2 (6×) |
+| Nūḥ | 33 | Q 11 (7×) |
+| Maryam | 33 | Q 5 (10×) |
+| Yūsuf | 21 | Q 12 (20×) |
+| Adam | 20 | Q 7 (6×) |
+| Lūṭ | 17 | Q 11 (4×) |
+| ʿĀd | 17 | Q 2 (2×) |
+| ʿĪsā | 16 | Q 3 (4×) |
+| al-Madīna (city) | 14 | Q 28 (3×) |
+| Thamūd | 13 | Q 11 (3×) |
+| Hārūn | 12 | Q 20 (4×) |
+| Iblīs | 11 | Q 15 (2×) |
+| Sulaymān | 10 | Q 27 (5×) |
+
+### §10.69.1 Corpus-SINGLETON proper nouns
+
+| Entity | Single attestation |
+|---|---|
+| **Quraysh** | Q 106:1 — the Prophet's own tribe is named ONLY ONCE in the entire corpus |
+| **Yathrib** | Q 33:13 — Madina's pre-Hijra name appears once |
+| **Aḥmad** | Q 61:6 (ʿĪsā's prophecy of "Aḥmad") |
+| **Abū Lahab** | Q 111 al-Masad (Abū Lahab + his wife — title-eponymous singleton) |
+| **Ayyūb** | Q 38:41 (Job-mention, despite Q 21:83 also referencing) |
+| **Idrīs** | Q 19:56 (Enoch) |
+| **Ilyās** | Q 37:123 (Elijah) |
+| **Bakka** | Q 3:96 (Makka's old name) |
+| **Mount Sinai** | Q 23:20 |
+
+### §10.69.2 Strikingly low named attestations
+
+- **Muḥammad named only 4×** (Q 3:144, Q 33:40, Q 47:2, Q 48:29) — Mūsā/Muḥammad ratio = 32:1 (corroborates H-NEW-1710)
+- **Hāmān only 2×** (Q 28:6, Q 28:8) — both in Q 28; the historical-biblical-revisionist debate locus (Hāmān is biblically Persian, Quranically Egyptian)
+- **Qārūn only 2×** (Q 28:76, Q 28:79) — corpus-monopoly to Q 28 (Q028-F-08 finding)
+
+### §10.69.3 Cross-finding integration
+
+- **H-NEW-1710**: Mūsā 136 vs 129 here — minor regex difference (\b vs substring); both ~136 in QAC-token-strict
+- **H-NEW-1820 (title-density-independence)**: Quraysh-singleton corroborates title-eponymy independence; Q 106 al-Quraysh is rank-1 (its only attestation) but the single-attestation makes the rank trivial
+- **Pronominal-narrative law (H-NEW-1870)**: the small named-frequency for major adversaries (Iblīs = 11; the Devil is referenced via "the deceiver", "the rejected one" mostly via *al-shayṭān* = 63×) corroborates pronominal-style law
+
+### §10.69.4 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1910.json`
