@@ -5276,3 +5276,133 @@ Classical scholars (al-Zamakhsharī, al-Rāzī) debate whether Q 109:3 and Q 109
 ### §10.70.7 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1920.json`
+
+## §10.73 H-NEW-1770 (pre-registered) — Corpus-wide verse-twin graph deep analysis (char-Levenshtein, threshold 0.70): DIRECTIONAL-PASS with surah-pair clustering significant at p<10⁻⁴
+
+**Status**: DIRECTIONAL-PASS. Pre-registered (SHA `3e986697e71e0b07fd5ac20f2ef4d6f848662bef5abbbeefce757c540f0576bb`), seed `20260509`, 10,000 perms. Three direction-locked sub-claims at Bonferroni-3 α=0.0167: H1a (top-10 deg ≥ 5), H1b (bottom-quartile = isolate), H2 (≥ 5 surah-pairs with ≥ 3 edges).
+
+### §10.73.1 Headline graph statistics
+
+Inter-surah edges only; sim = 1 − lev/max_len ≥ 0.70 on no-tashkeel verses.
+
+| Quantity | Value |
+|---|---|
+| nodes | 6,236 |
+| pairs evaluated post-length-prefilter | 4,930,191 |
+| **edges (sim ≥ 0.70)** | **536** |
+| max degree | **11** |
+| isolates | **5,591 (89.66%)** |
+| connected components | 5,843 |
+| **largest component** | **13 nodes** |
+| rich surah-pairs (≥ 3 edges) | **35** |
+| rich surah-pairs (≥ 5 edges) | **13** |
+
+### §10.73.2 Top-10 hub verses (inter-surah twin-degree)
+
+| Rank | Verse | Deg | Text |
+|---|---|---|---|
+| 1 | Q 52:11 | 11 | فويل يومئذ للمكذبين |
+| 2 | Q 83:10 | 11 | ويل يومئذ للمكذبين |
+| 3 | Q 74:27 | 7 | وما أدراك ما سقر |
+| 4 | Q 83:19 | 7 | وما أدراك ما عليون |
+| 5 | Q 2:1 | 6 | الم |
+| 6 | Q 3:1 | 6 | الم |
+| 7 | Q 7:1 | 6 | المص |
+| 8 | Q 10:48 | 6 | ويقولون متى هذا الوعد إن كنتم صادقين |
+| 9 | Q 21:38 | 6 | ويقولون متى هذا الوعد إن كنتم صادقين |
+| 10 | Q 27:71 | 6 | ويقولون متى هذا الوعد إن كنتم صادقين |
+
+Top hubs are the *(fa-)waylun yawmaʾidhin lil-mukadhdhibīn* refrain bridging Q 77 al-Mursalāt into Q 52 + Q 83; the *wa-mā adrāka mā* rhetorical-question pattern; the *الم / المص* muqaṭṭaʿāt opener family; and 3 exact copies of *wa-yaqūlūna matā hādhā al-waʿd*. Q 55:13 (the famous H-NEW-167 hub at deg 31) is absent because inter-surah-only adjacency excludes Q 55-internal refrain repetition.
+
+### §10.73.3 Top-10 surah-pairs by inter-surah twin-edge count
+
+| Rank | Pair | n_edges | Sample twin (sim) |
+|---|---|---|---|
+| 1 | Q 52 ↔ Q 77 | 12 | Q 52:19 / Q 77:43 *kulū wa-shrabū hanīʾan* (1.00) |
+| 2 | Q 7 ↔ Q 26 | 11 | Q 7:122 / Q 26:48 *rabbi mūsā wa-hārūn* (1.00) |
+| 3 | Q 26 ↔ Q 37 | 11 | Q 26:172 / Q 37:136 *thumma dammarnā al-ākharīn* (1.00) |
+| 4 | Q 23 ↔ Q 70 | 11 | Q 23:5 / Q 70:29 *li-furūjihim ḥāfiẓūn* (1.00) |
+| 5 | Q 77 ↔ Q 83 | 10 | Q 77:15 / Q 83:10 *waylun yawmaʾidhin* (1.00) |
+| 6 | Q 37 ↔ Q 77 | 8 | Q 37:80 / Q 77:44 *innā kadhālika najzī al-muḥsinīn* (1.00) |
+| 7 | Q 15 ↔ Q 38 | 8 | Q 15:37 / Q 38:80 *fa-innaka mina al-munẓarīn* (1.00) |
+| 8 | Q 2 ↔ Q 7 | 7 | Q 2:49 / Q 7:141 *najjaynākum min āli firʿawn* (0.94) |
+| 9 | Q 12 ↔ Q 26 | 6 | Q 12:1 / Q 26:2 *tilka āyāt al-kitāb al-mubīn* (0.79) |
+| 10 | Q 37 ↔ Q 38 | 6 | Q 37:5 / Q 38:66 *rabbu al-samāwāti wa-al-arḍ* (0.79) |
+
+Every top-10 pair is a known classical *mutashābih* (parallel-passage) ecosystem documented in al-Suyūṭī *Itqān* (nawʿ 35, 62), al-Biqāʿī *Naẓm al-Durar*, and Yaḥyā Mīr ʿAlam's *Mawsūʿat al-mutashābih*. **Q 37 al-Ṣāffāt is the prophet-cycle hinge** (appears in 9 of 35 rich-pairs); **Q 7 al-Aʿrāf is the second hinge** (6 rich-pairs).
+
+### §10.73.4 Per-surah mean inter-surah twin-degree
+
+| Top 10 (mean deg) | Bottom 10 (mean deg) |
+|---|---|
+| Q 101 al-Qāriʿa: 1.091 | Q 94 al-Sharḥ: 0.0 |
+| Q 77 al-Mursalāt: 0.900 | Q 99 al-Zalzala: 0.0 |
+| Q 107 al-Māʿūn: 0.857 | Q 103 al-ʿAṣr: 0.0 |
+| Q 83 al-Muṭaffifīn: 0.667 | Q 105 al-Fīl: 0.0 |
+| Q 31 Luqmān: 0.588 | Q 106 Quraysh: 0.0 |
+| Q 61 al-Ṣaff: 0.571 | Q 108 al-Kawthar: 0.0 |
+| Q 104 al-Humaza: 0.556 | Q 109 al-Kāfirūn: 0.0 |
+| Q 32 al-Sajda: 0.533 | Q 110 al-Naṣr: 0.0 |
+| Q 52 al-Ṭūr: 0.510 | Q 111 al-Masad: 0.0 |
+| Q 95 al-Tīn: 0.500 | Q 112 al-Ikhlāṣ: 0.0 |
+
+Top-10 dominated by **late-Meccan short-mufaṣṣal eschatology + al-Mursalāt refrain group**. Bottom-10 are the shortest distinctive surahs whose lexicon is hapax-cluster (no inter-surah twins at 0.70).
+
+### §10.73.5 Permutation null (degree-preserving label-shuffle, 10,000 perms)
+
+| Statistic | Observed | Null mean | p (one-tailed) | Sig @ α_bon=0.0167 |
+|---|---|---|---|---|
+| max degree | 11 | 10.96 | 0.963 | NO |
+| isolates | 5,591 | 5,598.5 | 1.000 | NO |
+| **rich surah-pairs ≥3** | **35** | **10.84** | **0.0000** | **YES** |
+
+The label-shuffle null is **uninformative for max-degree and isolate-count** because it preserves the edge-set. For the rich-surah-pair count the null IS informative: under random labels, edges scatter uniformly; observed 35 surah-pair channels (out of 6,441 possible) is structurally non-random at p < 10⁻⁴.
+
+### §10.73.6 Decision rule outcome
+
+Pre-committed: 3/3 fire → PASS; 2/3 → DIRECTIONAL; ≤1 → NULL.
+
+- H1a (top-10 all deg ≥ 5): observed **PASS** (rank-10 = deg 6 ≥ 5)
+- H1b (bottom quartile ≥ 1,559 verses = isolate): observed **PASS** (5,591 isolates ≫ 1,559)
+- H2 (≥ 5 rich-surah-pairs with ≥ 3 edges): observed **PASS** (35 ≫ 5)
+
+**Verdict: DIRECTIONAL-PASS** — all 3 direction-locked sub-claims fire on observation; H2 also passes the permutation null at α_bon. H1a/H1b are method-limited (chosen null too conservative); follow-up H-NEW-1771 will test against a text-shuffle null.
+
+### §10.73.7 Sensitivity at adjacent thresholds
+
+| threshold | edges | max deg | isolates |
+|---|---|---|---|
+| 0.60 | 1,352 | 31 | 4,934 |
+| **0.70** | **536** | **11** | **5,591** |
+| 0.80 | 323 | 11 | 5,820 |
+
+At 0.60, max degree recovers the H-NEW-167 31-hub (Q 55 refrain ecosystem under looser overlap criterion). At 0.80, only the verbatim refrains survive. The 0.70 threshold sits in a stable mid-region.
+
+### §10.73.8 Cross-finding integration
+
+- **H-NEW-66** (top-1 5-gram-Jaccard): Q 4:43 ↔ Q 5:6 wuḍūʾ-doublet (5-gram=151) is BELOW H-NEW-1770's 0.70 threshold (sim=0.62) — the two instruments capture different aspects
+- **H-NEW-167** (top-1 graph topology): both graphs are **disassortative hub-and-spoke** with refrain-hubs; H-NEW-1770 confirms the architectural claim under a different construction
+- **H-NEW-273** (Q 1 ↔ Q 108 liturgical anchor, threshold 0.50): NOT captured at 0.70 — looser-threshold phenomenon
+- **H-NEW-1320** (refrain-saturation): predicts inter-surah-twin-spread only when refrain appears in MULTIPLE surahs (Q 77 yes, Q 55 no — Q 55's refrain is intra-surah only)
+- **H-NEW-1790** (refrain inventory, §10.70): cross-validated — Q 26, Q 37, Q 54, Q 55, Q 77 refrain-set consistent with H-NEW-1770 top-surah-pair structure (Q 26 in 5 rich-pairs, Q 37 in 9, Q 77 in 5; Q 54/Q 55 absent because refrains are intra-surah-only)
+- **cross-finding-018** (4-principle reduced model): mean-twin-degree adds an INDEPENDENT empirical observable; top-10 dominated by late-Meccan mufaṣṣal-short cluster
+
+### §10.73.9 Classical anchor priors
+
+- al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 35 (*muṭlaq al-mukarrar*) and nawʿ 62 (*munāsabāt al-āyāt*): every top-10 surah-pair has an Itqān entry
+- al-Biqāʿī, *Naẓm al-Durar fī Tanāsub al-Āyāt wa-l-Suwar*: prophet-cycle parallels Q 7 / 26 / 37 / 38 systematically treated
+- Yaḥyā Mīr ʿAlam, *Mawsūʿat al-qaḍāyā al-mufaṣṣala fī mutashābih al-Qurʾān*: modern verse-by-verse compendium; H-NEW-1773 queued to cross-validate H-NEW-1770's 536 edges
+
+### §10.73.10 Honest limits
+
+- The chosen permutation null (label-shuffle) is informatively WEAK for H1a/H1b because it preserves the edge-set; H-NEW-1771 follow-up will test text-shuffle null
+- Inter-surah-only adjacency deliberately excludes intra-surah refrains (Q 55's 31-fold *fa-bi-ayyi*); intra-surah twins are covered by H-NEW-1320 / H-NEW-1790
+- Char-Levenshtein under no-tashkeel may under-count *rasm*-orthographic twins; H-NEW-1772 will replicate under min-tashkeel + Uthmani-consonantal
+- No semantic similarity captured — pure orthographic instrument
+
+### §10.73.11 Files
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1770-verse-twin-graph.md` (SHA `3e986697e71e0b07fd5ac20f2ef4d6f848662bef5abbbeefce757c540f0576bb`)
+- Script: `findings/phase-b-hypotheses/scripts/h-new-1770.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1770.json`
+- Finding: `findings/phase-b-hypotheses/h-new-1770-verse-twin-graph-deep.md`
