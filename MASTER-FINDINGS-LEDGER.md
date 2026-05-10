@@ -1,6 +1,6 @@
 ---
 document: Master Findings Ledger — Quran Decipherment Project
-date_last_updated: 2026-05-09 PM continuation (H-NEW-1510 added — sajda 15-verse pericope-scale flip test PASS-DIRECTED at z=+2.685, p=0.0058; second cross-scale NULL→PASS finding-pair under cross-finding-025 scale-of-aggregation axis; H-NEW-1330 whole-surah NULL → H-NEW-1510 pericope PASS)
+date_last_updated: 2026-05-09 PM continuation (H-NEW-1540 added — hapax-legomenon root distribution across 114 surahs PARTIAL verdict: 2/3 cells pass at α_Bonf=0.0167; max-density at Q 108 al-Kawthar p=0.0014; count-of-surahs-above-2×-baseline = 40 vs null 11.47, p<0.0001; CV trends correct direction but p=0.0368 just sub-threshold; top-10 hapax-density surahs are all Early-Meccan)
 status: single precise consolidated record of all confirmed findings, refutations, divine-name data, and in-flight tests
 rule_tuple_default: (no-tashkeel, orthographic-token & lemma where noted, graphemes, basmala-counted-only-in-surah-1, hafs-kufan, mashriqi)
 canonical_corpus: quran-text/quran-no-tashkeel.json
@@ -3387,8 +3387,8 @@ Even under these pressures the signal is real (z=+2.685, p=0.0058). **The H-NEW-
 | Iblīs narrative | H-NEW-039 NULL | H-NEW-1380 PASS (z=+4.76) | LOGGED ✓ |
 | Sajda set | H-NEW-1330 NULL | H-NEW-1510 PASS (z=+2.685) | **LOGGED ✓ (this finding)** |
 | Christ-narrative | H-NEW-1310 NULL | H-NEW-1520 (queued) | PENDING |
-| al-ḥamdu opener | H-NEW-1340 NULL | H-NEW-1530 (queued) | PENDING |
-| *yā-ayyuhā al-nabī* | H-NEW-1360 NULL | H-NEW-1540 (queued) | PENDING |
+| al-ḥamdu opener | H-NEW-1340 NULL | (slot reassigned — pericope-flip pending in TBD ID) | PENDING |
+| *yā-ayyuhā al-nabī* | H-NEW-1360 NULL | (slot reassigned — pericope-flip pending in TBD ID) | PENDING |
 
 If 1+ additional flip lands (3-of-3 or 4-of-4 pairs), cross-finding-025 graduates from PRELIMINARY-SYNTHESIS to formal corpus-law level.
 
@@ -3421,6 +3421,86 @@ al-Suyūṭī (*al-Itqān fī ʿulūm al-Qurʾān*, nawʿ on sujūd al-tilāwa),
 - finding: `findings/phase-b-hypotheses/h-new-1510-sajda-pericope-replication.md`
 
 *Inline run logged 2026-05-09 PM continuation by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+---
+
+## §10.56 H-NEW-1540 inline (2026-05-09 PM) — Hapax-legomenon (corpus-singleton root) distribution across 114 surahs: PARTIAL with strong Early-Meccan phase signal
+
+### §10.56.1 — Test
+
+Pre-registered direction-locked test (`prereg-h-new-1540-hapax-distribution.md`, SHA `a8cecf09…`) of whether hapax-root tokens (roots with exactly 1 attestation in QAC v0.4 `root-index.json`) distribute proportional to surah length. Length-proportional permutation null, 10,000 perms, seed 20260509, 3 pre-committed cells under Bonferroni α = 0.05/3 ≈ 0.0167.
+
+### §10.56.2 — Result
+
+**Verdict: PARTIAL** — 2 of 3 cells pass at α_Bonf=0.0167; the third (CV) trends in pre-committed direction but does not survive correction.
+
+| Cell | Observed | Null mean | p | α_Bonf | Pass |
+|:--|--:|--:|--:|--:|:--:|
+| CV(density) | 1.9997 | 1.4100 | 0.0368 | 0.0167 | NO (trends correct direction) |
+| max-density (Q 108) | 0.20000 | 0.04992 | **0.0014** | 0.0167 | **YES** |
+| n(ratio ≥ 2×) = 40 vs null 11.47 | 40 | 11.47 | **<0.0001** | 0.0167 | **YES** |
+
+Reverse-direction flag: NOT raised (all three statistics above null mean).
+
+### §10.56.3 — Counts
+
+- QAC v0.4: **1,642 total roots**, **395 hapax roots** (24.06%), **395 hapax tokens**.
+- Corpus: **82,375** orthographic words (no-tashkeel), **6,236 verses**, **114 surahs**.
+- Baseline hapax density: **0.00480**.
+- **27 surahs** carry zero hapaxes.
+- **40 surahs** carry hapax-density ≥ 2× baseline (vs null expectation 11.47).
+- **9 surahs** carry hapax-density ≥ 10× baseline.
+
+### §10.56.4 — Top-10 ranking (post-hoc, MW-7 capped)
+
+All 10 are Nöldeke-Early-Meccan: Q 108 (41.71× baseline) > Q 112 > Q 100 > Q 106 > Q 111 > Q 113 > Q 91 > Q 81 > Q 90 > Q 105 (9.07×).
+
+The 40-surah set with ratio ≥ 2× stratifies as: 31 Early Meccan / 5 Middle Meccan / 4 Medinan. **31/40 (77.5%) are Early Meccan.**
+
+### §10.56.5 — Bottom-10 (zero hapax)
+
+The longest zero-hapax surahs are: Q 10 (1,964 words, Late Meccan), Q 43 (870 words, Middle Meccan), Q 41 (838 words, Late Meccan), Q 57 (618 words, Medinan), Q 48 (600 words, Medinan). Q 1 (al-Fātiḥa, 29 words, Early Meccan) is the structural exception — its 7 verses recycle high-frequency roots by design.
+
+### §10.56.6 — Honest interpretation
+
+The length-proportional null is rejected on 2/3 cells: hapax tokens cluster heavily in short Early-Meccan surahs and are partially depleted in long Late-Meccan / Medinan administrative surahs. The CV cell trends in the predicted direction (1.9997 vs 1.4100 null mean) but lands at the 96.3rd percentile, just short of Bonferroni significance. The chronological-phase pattern (31/40 high-hapax surahs Early-Meccan) is post-hoc descriptive (MW-7 capped) and is candidate for separate pre-registration as **H-NEW-1540B-phase-test**.
+
+### §10.56.7 — Classical context
+
+- al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 38 (*al-mufradāt*) and nawʿ 39 (*al-gharīb*): catalogues lexical singletons and rarities surah-by-surah; treats them as iʿjāz-axis evidence of irreducible precision.
+- al-Bāqillānī, *Iʿjāz al-Qurʾān*: word-choice precision (incl. hapax irreducibility) as balāgha-axis iʿjāz marker.
+- Jeffery 1938, *The Foreign Vocabulary of the Qurʾān*: many corpus-singletons are loanwords from Aramaic, Hebrew, Ethiopic, Persian — Early-Meccan oath-and-eschatology surahs are precisely where Jeffery locates the heaviest loanword concentration. The hapax-distribution pattern is empirically consistent with Jeffery's qualitative claim, although a quantitative test against Jeffery's loanword set is queued.
+
+### §10.56.8 — Cross-references
+
+- [[h-new-590-outlier-strength]] — per-surah outlier-strength; check overlap with top hapax-density set.
+- [[h-new-840-unified-architectural-score]] — UAS top-10 (Q 33, 1, 2, 9, 24, 12, 55, 10, 23, 17) is largely DISJOINT from hapax-density top-10 (Q 108, 112, 100, 106, 111, 113, 91, 81, 90, 105). Hapax-density picks out a structurally orthogonal axis from UAS — short Early-Meccan lexical-singularity vs long-and-architectural prominence.
+- [[cross-finding-010-extended-network]] — Q 1 (zero hapax) and Q 112 (high hapax) form a bipolar fingerprint axis confirmed at hapax-axis level.
+- [[h-new-1370-long-verse-top10]] — long-verse top-10 is Medinan-loaded; hapax-density top-10 is Early-Meccan-loaded. Mirror-axis evidence.
+
+### §10.56.9 — MW-protections audit
+
+- MW-1: instrument pre-specified.
+- MW-2: 10,000 length-proportional perms.
+- MW-3: 3 statistics + equal-prob null sensitivity.
+- MW-4: no fitted parameters; threshold = 2.0 fixed pre-observation.
+- MW-5: equal-prob null sensitivity (p_CV=0.22, p_max≈1, p_count≈1 — expected because equal-prob null loads short surahs by construction; primary test is length-proportional).
+- MW-6: full 114-surah population.
+- MW-7: post-hoc chronology-phase pattern capped at descriptive-only.
+
+### §10.56.10 — Files
+
+- pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1540-hapax-distribution.md` (SHA a8cecf09…)
+- script: `findings/phase-b-hypotheses/scripts/h-new-1540.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1540.json`
+- finding: `findings/phase-b-hypotheses/h-new-1540-hapax-distribution.md`
+
+### §10.56.11 — Queued follow-ups
+
+- **H-NEW-1540B**: direction-locked Nöldeke-phase test for hapax-density concentration in Early-Meccan vs other phases.
+- **H-NEW-1540C**: Jeffery-loanword overlap with the 395-hapax set — does the loanword catalogue subsume the corpus-singleton class, or is there residual "iʿjāz-precise" hapax content beyond loanwords?
+
+*Inline run logged 2026-05-09 PM by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
 
 ## §10.55 H-NEW-1600 inline (2026-05-09) — Corpus count audit + al-Khalifa 19-miracle RIGOROUS FALSIFICATION + al-Suyūṭī Itqān VINDICATION at exact integer precision
 

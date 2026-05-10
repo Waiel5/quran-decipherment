@@ -1,0 +1,990 @@
+{
+  "id": "H-NEW-1540",
+  "title": "Hapax legomenon distribution across 114 surahs",
+  "prereg_sha": "a8cecf09831dd054eb4e7b64cf1981f03998691e02e32ab5cc0b07a63b299a44",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "n_hapax_roots": 395,
+  "n_hapax_tokens": 395,
+  "n_total_roots": 1642,
+  "n_total_words": 82375,
+  "baseline_density": 0.004795144157814871,
+  "ratio_threshold": 2.0,
+  "alpha_bonf": 0.016666666666666666,
+  "obs_CV": 1.999687644298177,
+  "obs_max_density": 0.2,
+  "obs_max_surah": 108,
+  "obs_n_above_2x": 40,
+  "cell_CV": {
+    "p": 0.0368,
+    "null_mean": 1.410044799669974,
+    "null_p95": 1.9382252232211392,
+    "null_p99": 2.211651256619845,
+    "pass": false
+  },
+  "cell_max": {
+    "p": 0.0014,
+    "null_mean": 0.04991876370067078,
+    "null_p95": 0.1,
+    "null_p99": 0.11764705882352941,
+    "pass": true
+  },
+  "cell_count": {
+    "p": 0.0,
+    "null_mean": 11.4686,
+    "null_p95": 16,
+    "null_p99": 19,
+    "pass": true
+  },
+  "equal_probability_null_sensitivity": {
+    "p_CV": 0.22,
+    "p_max": 0.9999,
+    "p_count": 1.0
+  },
+  "reverse_direction_flag": false,
+  "verdict": "PARTIAL",
+  "top10_by_density": [
+    {
+      "s": 108,
+      "word_count": 10,
+      "hapax_count": 2,
+      "density": 0.2,
+      "ratio": 41.708860759493675
+    },
+    {
+      "s": 112,
+      "word_count": 15,
+      "hapax_count": 2,
+      "density": 0.13333333333333333,
+      "ratio": 27.80590717299578
+    },
+    {
+      "s": 100,
+      "word_count": 41,
+      "hapax_count": 5,
+      "density": 0.12195121951219512,
+      "ratio": 25.43223217042297
+    },
+    {
+      "s": 106,
+      "word_count": 17,
+      "hapax_count": 2,
+      "density": 0.11764705882352941,
+      "ratio": 24.53462397617275
+    },
+    {
+      "s": 111,
+      "word_count": 23,
+      "hapax_count": 2,
+      "density": 0.08695652173913043,
+      "ratio": 18.134287286736377
+    },
+    {
+      "s": 113,
+      "word_count": 23,
+      "hapax_count": 2,
+      "density": 0.08695652173913043,
+      "ratio": 18.134287286736377
+    },
+    {
+      "s": 91,
+      "word_count": 54,
+      "hapax_count": 4,
+      "density": 0.07407407407407407,
+      "ratio": 15.447726207219878
+    },
+    {
+      "s": 81,
+      "word_count": 104,
+      "hapax_count": 7,
+      "density": 0.0673076923076923,
+      "ratio": 14.036635832521908
+    },
+    {
+      "s": 90,
+      "word_count": 82,
+      "hapax_count": 4,
+      "density": 0.04878048780487805,
+      "ratio": 10.172892868169189
+    },
+    {
+      "s": 105,
+      "word_count": 23,
+      "hapax_count": 1,
+      "density": 0.043478260869565216,
+      "ratio": 9.067143643368189
+    }
+  ],
+  "bottom10_by_density": [
+    {
+      "s": 1,
+      "word_count": 29,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 10,
+      "word_count": 1964,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 41,
+      "word_count": 838,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 43,
+      "word_count": 870,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 45,
+      "word_count": 512,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 48,
+      "word_count": 600,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 57,
+      "word_count": 618,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 59,
+      "word_count": 478,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 60,
+      "word_count": 377,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 62,
+      "word_count": 186,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    }
+  ],
+  "per_surah": [
+    {
+      "s": 1,
+      "word_count": 29,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 2,
+      "word_count": 6630,
+      "hapax_count": 18,
+      "density": 0.0027149321266968325,
+      "ratio": 0.5661836302193711
+    },
+    {
+      "s": 3,
+      "word_count": 3717,
+      "hapax_count": 6,
+      "density": 0.0016142050040355124,
+      "ratio": 0.33663325875297556
+    },
+    {
+      "s": 4,
+      "word_count": 4029,
+      "hapax_count": 13,
+      "density": 0.003226607098535617,
+      "ratio": 0.6728905309920796
+    },
+    {
+      "s": 5,
+      "word_count": 3047,
+      "hapax_count": 11,
+      "density": 0.0036101083032490976,
+      "ratio": 0.7528675227345428
+    },
+    {
+      "s": 6,
+      "word_count": 3304,
+      "hapax_count": 7,
+      "density": 0.00211864406779661,
+      "ratio": 0.44183115211328045
+    },
+    {
+      "s": 7,
+      "word_count": 3551,
+      "hapax_count": 13,
+      "density": 0.0036609405801182764,
+      "ratio": 0.7634683045246659
+    },
+    {
+      "s": 8,
+      "word_count": 1320,
+      "hapax_count": 5,
+      "density": 0.003787878787878788,
+      "ratio": 0.7899405446873802
+    },
+    {
+      "s": 9,
+      "word_count": 2674,
+      "hapax_count": 9,
+      "density": 0.0033657442034405387,
+      "ratio": 0.7019067816668718
+    },
+    {
+      "s": 10,
+      "word_count": 1964,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 11,
+      "word_count": 2083,
+      "hapax_count": 5,
+      "density": 0.002400384061449832,
+      "ratio": 0.5005864229415947
+    },
+    {
+      "s": 12,
+      "word_count": 1912,
+      "hapax_count": 14,
+      "density": 0.007322175732217573,
+      "ratio": 1.5269980403580319
+    },
+    {
+      "s": 13,
+      "word_count": 928,
+      "hapax_count": 2,
+      "density": 0.0021551724137931034,
+      "ratio": 0.4494489305979921
+    },
+    {
+      "s": 14,
+      "word_count": 885,
+      "hapax_count": 4,
+      "density": 0.004519774011299435,
+      "ratio": 0.9425731245083316
+    },
+    {
+      "s": 15,
+      "word_count": 666,
+      "hapax_count": 3,
+      "density": 0.0045045045045045045,
+      "ratio": 0.939388755844452
+    },
+    {
+      "s": 16,
+      "word_count": 1963,
+      "hapax_count": 11,
+      "density": 0.0056036678553234845,
+      "ratio": 1.1686130116006888
+    },
+    {
+      "s": 17,
+      "word_count": 1644,
+      "hapax_count": 8,
+      "density": 0.004866180048661801,
+      "ratio": 1.0148141304013059
+    },
+    {
+      "s": 18,
+      "word_count": 1657,
+      "hapax_count": 9,
+      "density": 0.005431502715751358,
+      "ratio": 1.1327089524304257
+    },
+    {
+      "s": 19,
+      "word_count": 1012,
+      "hapax_count": 9,
+      "density": 0.008893280632411068,
+      "ratio": 1.8546430179616753
+    },
+    {
+      "s": 20,
+      "word_count": 1409,
+      "hapax_count": 14,
+      "density": 0.0099361249112846,
+      "ratio": 2.072122252068529
+    },
+    {
+      "s": 21,
+      "word_count": 1236,
+      "hapax_count": 9,
+      "density": 0.007281553398058253,
+      "ratio": 1.5185264839621484
+    },
+    {
+      "s": 22,
+      "word_count": 1356,
+      "hapax_count": 14,
+      "density": 0.01032448377581121,
+      "ratio": 2.1531122810948062
+    },
+    {
+      "s": 23,
+      "word_count": 1089,
+      "hapax_count": 2,
+      "density": 0.0018365472910927456,
+      "ratio": 0.3830014762120631
+    },
+    {
+      "s": 24,
+      "word_count": 1415,
+      "hapax_count": 4,
+      "density": 0.0028268551236749115,
+      "ratio": 0.5895245337030908
+    },
+    {
+      "s": 25,
+      "word_count": 932,
+      "hapax_count": 3,
+      "density": 0.003218884120171674,
+      "ratio": 0.6712799478459281
+    },
+    {
+      "s": 26,
+      "word_count": 1353,
+      "hapax_count": 6,
+      "density": 0.004434589800443459,
+      "ratio": 0.9248084425608353
+    },
+    {
+      "s": 27,
+      "word_count": 1215,
+      "hapax_count": 6,
+      "density": 0.0049382716049382715,
+      "ratio": 1.0298484138146586
+    },
+    {
+      "s": 28,
+      "word_count": 1520,
+      "hapax_count": 8,
+      "density": 0.005263157894736842,
+      "ratio": 1.097601598934044
+    },
+    {
+      "s": 29,
+      "word_count": 1044,
+      "hapax_count": 1,
+      "density": 0.0009578544061302681,
+      "ratio": 0.1997550802657743
+    },
+    {
+      "s": 30,
+      "word_count": 868,
+      "hapax_count": 1,
+      "density": 0.001152073732718894,
+      "ratio": 0.2402584145132124
+    },
+    {
+      "s": 31,
+      "word_count": 586,
+      "hapax_count": 2,
+      "density": 0.0034129692832764505,
+      "ratio": 0.7117553030630319
+    },
+    {
+      "s": 32,
+      "word_count": 390,
+      "hapax_count": 1,
+      "density": 0.002564102564102564,
+      "ratio": 0.5347289840960727
+    },
+    {
+      "s": 33,
+      "word_count": 1384,
+      "hapax_count": 5,
+      "density": 0.0036127167630057803,
+      "ratio": 0.753411502158484
+    },
+    {
+      "s": 34,
+      "word_count": 940,
+      "hapax_count": 6,
+      "density": 0.006382978723404255,
+      "ratio": 1.3311338540263937
+    },
+    {
+      "s": 35,
+      "word_count": 844,
+      "hapax_count": 1,
+      "density": 0.001184834123222749,
+      "ratio": 0.24709040734297202
+    },
+    {
+      "s": 36,
+      "word_count": 754,
+      "hapax_count": 3,
+      "density": 0.003978779840848806,
+      "ratio": 0.8297518718732163
+    },
+    {
+      "s": 37,
+      "word_count": 881,
+      "hapax_count": 10,
+      "density": 0.011350737797956867,
+      "ratio": 2.367131711662524
+    },
+    {
+      "s": 38,
+      "word_count": 774,
+      "hapax_count": 6,
+      "density": 0.007751937984496124,
+      "ratio": 1.6166225100578941
+    },
+    {
+      "s": 39,
+      "word_count": 1259,
+      "hapax_count": 3,
+      "density": 0.0023828435266084196,
+      "ratio": 0.4969284443148571
+    },
+    {
+      "s": 40,
+      "word_count": 1296,
+      "hapax_count": 1,
+      "density": 0.0007716049382716049,
+      "ratio": 0.1609138146585404
+    },
+    {
+      "s": 41,
+      "word_count": 838,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 42,
+      "word_count": 932,
+      "hapax_count": 1,
+      "density": 0.001072961373390558,
+      "ratio": 0.2237599826153094
+    },
+    {
+      "s": 43,
+      "word_count": 870,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 44,
+      "word_count": 364,
+      "hapax_count": 1,
+      "density": 0.0027472527472527475,
+      "ratio": 0.5729239115315066
+    },
+    {
+      "s": 45,
+      "word_count": 512,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 46,
+      "word_count": 676,
+      "hapax_count": 1,
+      "density": 0.0014792899408284023,
+      "ratio": 0.3084974908246573
+    },
+    {
+      "s": 47,
+      "word_count": 570,
+      "hapax_count": 7,
+      "density": 0.012280701754385965,
+      "ratio": 2.5610703975127693
+    },
+    {
+      "s": 48,
+      "word_count": 600,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 49,
+      "word_count": 382,
+      "hapax_count": 4,
+      "density": 0.010471204188481676,
+      "ratio": 2.183709987408046
+    },
+    {
+      "s": 50,
+      "word_count": 389,
+      "hapax_count": 3,
+      "density": 0.007712082262210797,
+      "ratio": 1.6083108262015555
+    },
+    {
+      "s": 51,
+      "word_count": 371,
+      "hapax_count": 3,
+      "density": 0.008086253369272238,
+      "ratio": 1.6863420792248116
+    },
+    {
+      "s": 52,
+      "word_count": 324,
+      "hapax_count": 2,
+      "density": 0.006172839506172839,
+      "ratio": 1.2873105172683232
+    },
+    {
+      "s": 53,
+      "word_count": 372,
+      "hapax_count": 6,
+      "density": 0.016129032258064516,
+      "ratio": 3.3636178031849733
+    },
+    {
+      "s": 54,
+      "word_count": 350,
+      "hapax_count": 4,
+      "density": 0.011428571428571429,
+      "ratio": 2.383363471971067
+    },
+    {
+      "s": 55,
+      "word_count": 355,
+      "hapax_count": 9,
+      "density": 0.02535211267605634,
+      "ratio": 5.2870386878231415
+    },
+    {
+      "s": 56,
+      "word_count": 380,
+      "hapax_count": 5,
+      "density": 0.013157894736842105,
+      "ratio": 2.74400399733511
+    },
+    {
+      "s": 57,
+      "word_count": 618,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 58,
+      "word_count": 516,
+      "hapax_count": 1,
+      "density": 0.001937984496124031,
+      "ratio": 0.40415562751447354
+    },
+    {
+      "s": 59,
+      "word_count": 478,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 60,
+      "word_count": 377,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 61,
+      "word_count": 238,
+      "hapax_count": 1,
+      "density": 0.004201680672268907,
+      "ratio": 0.8762365705775981
+    },
+    {
+      "s": 62,
+      "word_count": 186,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 63,
+      "word_count": 195,
+      "hapax_count": 2,
+      "density": 0.010256410256410256,
+      "ratio": 2.138915936384291
+    },
+    {
+      "s": 64,
+      "word_count": 264,
+      "hapax_count": 1,
+      "density": 0.003787878787878788,
+      "ratio": 0.7899405446873802
+    },
+    {
+      "s": 65,
+      "word_count": 313,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 66,
+      "word_count": 268,
+      "hapax_count": 1,
+      "density": 0.0037313432835820895,
+      "ratio": 0.7781503873039864
+    },
+    {
+      "s": 67,
+      "word_count": 348,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 68,
+      "word_count": 308,
+      "hapax_count": 4,
+      "density": 0.012987012987012988,
+      "ratio": 2.7083675817853035
+    },
+    {
+      "s": 69,
+      "word_count": 264,
+      "hapax_count": 4,
+      "density": 0.015151515151515152,
+      "ratio": 3.1597621787495207
+    },
+    {
+      "s": 70,
+      "word_count": 222,
+      "hapax_count": 3,
+      "density": 0.013513513513513514,
+      "ratio": 2.8181662675333565
+    },
+    {
+      "s": 71,
+      "word_count": 230,
+      "hapax_count": 1,
+      "density": 0.004347826086956522,
+      "ratio": 0.906714364336819
+    },
+    {
+      "s": 72,
+      "word_count": 293,
+      "hapax_count": 4,
+      "density": 0.013651877133105802,
+      "ratio": 2.8470212122521277
+    },
+    {
+      "s": 73,
+      "word_count": 214,
+      "hapax_count": 4,
+      "density": 0.018691588785046728,
+      "ratio": 3.898024370046137
+    },
+    {
+      "s": 74,
+      "word_count": 265,
+      "hapax_count": 2,
+      "density": 0.007547169811320755,
+      "ratio": 1.5739192739431576
+    },
+    {
+      "s": 75,
+      "word_count": 165,
+      "hapax_count": 4,
+      "density": 0.024242424242424242,
+      "ratio": 5.055619485999233
+    },
+    {
+      "s": 76,
+      "word_count": 250,
+      "hapax_count": 3,
+      "density": 0.012,
+      "ratio": 2.5025316455696203
+    },
+    {
+      "s": 77,
+      "word_count": 182,
+      "hapax_count": 2,
+      "density": 0.01098901098901099,
+      "ratio": 2.2916956461260263
+    },
+    {
+      "s": 78,
+      "word_count": 177,
+      "hapax_count": 3,
+      "density": 0.01694915254237288,
+      "ratio": 3.5346492169062436
+    },
+    {
+      "s": 79,
+      "word_count": 180,
+      "hapax_count": 6,
+      "density": 0.03333333333333333,
+      "ratio": 6.951476793248945
+    },
+    {
+      "s": 80,
+      "word_count": 133,
+      "hapax_count": 3,
+      "density": 0.022556390977443608,
+      "ratio": 4.704006852574474
+    },
+    {
+      "s": 81,
+      "word_count": 104,
+      "hapax_count": 7,
+      "density": 0.0673076923076923,
+      "ratio": 14.036635832521908
+    },
+    {
+      "s": 82,
+      "word_count": 82,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 83,
+      "word_count": 172,
+      "hapax_count": 5,
+      "density": 0.029069767441860465,
+      "ratio": 6.062334412717103
+    },
+    {
+      "s": 84,
+      "word_count": 109,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 85,
+      "word_count": 111,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 86,
+      "word_count": 61,
+      "hapax_count": 2,
+      "density": 0.03278688524590164,
+      "ratio": 6.837518157294045
+    },
+    {
+      "s": 87,
+      "word_count": 73,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 88,
+      "word_count": 92,
+      "hapax_count": 1,
+      "density": 0.010869565217391304,
+      "ratio": 2.266785910842047
+    },
+    {
+      "s": 89,
+      "word_count": 141,
+      "hapax_count": 2,
+      "density": 0.014184397163120567,
+      "ratio": 2.958075231169764
+    },
+    {
+      "s": 90,
+      "word_count": 82,
+      "hapax_count": 4,
+      "density": 0.04878048780487805,
+      "ratio": 10.172892868169189
+    },
+    {
+      "s": 91,
+      "word_count": 54,
+      "hapax_count": 4,
+      "density": 0.07407407407407407,
+      "ratio": 15.447726207219878
+    },
+    {
+      "s": 92,
+      "word_count": 71,
+      "hapax_count": 1,
+      "density": 0.014084507042253521,
+      "ratio": 2.937243715457301
+    },
+    {
+      "s": 93,
+      "word_count": 40,
+      "hapax_count": 1,
+      "density": 0.025,
+      "ratio": 5.213607594936709
+    },
+    {
+      "s": 94,
+      "word_count": 27,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 95,
+      "word_count": 34,
+      "hapax_count": 1,
+      "density": 0.029411764705882353,
+      "ratio": 6.133655994043187
+    },
+    {
+      "s": 96,
+      "word_count": 73,
+      "hapax_count": 2,
+      "density": 0.0273972602739726,
+      "ratio": 5.7135425697936535
+    },
+    {
+      "s": 97,
+      "word_count": 30,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 98,
+      "word_count": 98,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 99,
+      "word_count": 36,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 100,
+      "word_count": 41,
+      "hapax_count": 5,
+      "density": 0.12195121951219512,
+      "ratio": 25.43223217042297
+    },
+    {
+      "s": 101,
+      "word_count": 36,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 102,
+      "word_count": 28,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 103,
+      "word_count": 14,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 104,
+      "word_count": 34,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 105,
+      "word_count": 23,
+      "hapax_count": 1,
+      "density": 0.043478260869565216,
+      "ratio": 9.067143643368189
+    },
+    {
+      "s": 106,
+      "word_count": 17,
+      "hapax_count": 2,
+      "density": 0.11764705882352941,
+      "ratio": 24.53462397617275
+    },
+    {
+      "s": 107,
+      "word_count": 25,
+      "hapax_count": 1,
+      "density": 0.04,
+      "ratio": 8.341772151898734
+    },
+    {
+      "s": 108,
+      "word_count": 10,
+      "hapax_count": 2,
+      "density": 0.2,
+      "ratio": 41.708860759493675
+    },
+    {
+      "s": 109,
+      "word_count": 27,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 110,
+      "word_count": 20,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "s": 111,
+      "word_count": 23,
+      "hapax_count": 2,
+      "density": 0.08695652173913043,
+      "ratio": 18.134287286736377
+    },
+    {
+      "s": 112,
+      "word_count": 15,
+      "hapax_count": 2,
+      "density": 0.13333333333333333,
+      "ratio": 27.80590717299578
+    },
+    {
+      "s": 113,
+      "word_count": 23,
+      "hapax_count": 2,
+      "density": 0.08695652173913043,
+      "ratio": 18.134287286736377
+    },
+    {
+      "s": 114,
+      "word_count": 20,
+      "hapax_count": 0,
+      "density": 0.0,
+      "ratio": 0.0
+    }
+  ]
+}
