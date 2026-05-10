@@ -1,6 +1,6 @@
 ---
 document: Master Findings Ledger — Quran Decipherment Project
-date_last_updated: 2026-05-09 PM continuation (H-NEW-1540 added — hapax-legomenon root distribution across 114 surahs PARTIAL verdict: 2/3 cells pass at α_Bonf=0.0167; max-density at Q 108 al-Kawthar p=0.0014; count-of-surahs-above-2×-baseline = 40 vs null 11.47, p<0.0001; CV trends correct direction but p=0.0368 just sub-threshold; top-10 hapax-density surahs are all Early-Meccan)
+date_last_updated: 2026-05-10 — §10.72 H-NEW-1800 added (99-names 4-variant complete enumeration + rehabilitation audit: 32/34 V-A-absent rehabilitated, 2/99 IRRECOVERABLE under all 4 rules — al-Jalīl, al-Mājid; sharpens H-NEW-1560's 34/99-absent headline; classical anchor al-Suyūṭī al-Itqān nawʿ 56 empirically vindicated and quantitatively refined)
 status: single precise consolidated record of all confirmed findings, refutations, divine-name data, and in-flight tests
 rule_tuple_default: (no-tashkeel, orthographic-token & lemma where noted, graphemes, basmala-counted-only-in-surah-1, hafs-kufan, mashriqi)
 canonical_corpus: quran-text/quran-no-tashkeel.json
