@@ -4698,3 +4698,43 @@ This finding REFINES the classical claim that Q 12 is the "aḥsan al-qaṣaṣ"
 ### §10.66.5 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1870.json`
+
+## §10.68 H-NEW-1810 (pre-registered) — Corpus-wide Arabic letter frequency + muqaṭṭāʿat-14 overlap audit: MIXED (al-Suyūṭī Itqān nawʿ 6 strong-form FALSIFIED; T1 + T3 PASS)
+
+**Status**: MIXED. Pre-registered (SHA `b6b4eeac2b8015cf447805c2494070d2042b7af2a71b9157f4580c941b61533f`), seed `20260509`, k=3 family with α_bon=0.0167. Foundational corpus letter-frequency anchor that had been queued in §10.64 (H-NEW-1830). 28-letter normalized count over 6,236 verses = 329,131 graphemes (plus 1,578 standalone hamza ء tracked separately, not in 28 per al-Suyūṭī Itqān nawʿ 6 convention).
+
+**Top-14 letters by frequency** (no-tashkeel, Hafs-Kūfan, normalized: أ/إ/آ→ا, ؤ→و, ئ→ي, ة→ت, ى→ي):
+ا (18.01%) > ل (11.60%) > ن (8.29%) > م (8.12%) > ي (7.82%) > و (7.74%) > ه (4.51%) > ت (3.91%) > ر (3.77%) > ب (3.49%) > ك (3.19%) > ع (2.86%) > ف (2.66%) > ق (2.14%). Top-3 alone = 37.9% of all letter-grapheme mass (T1 PASS).
+
+**al-Suyūṭī strong-form claim FALSIFIED**: muqaṭṭāʿat-14 ∩ top-14 = **10/14**, not 14/14. The 4 displacements:
+- **Muqaṭṭāʿat letters OUTSIDE top-14**: س (rank 15), ح (rank 18), ص (rank 22), ط (rank 26). ṭāʾ in particular sits at the absolute bottom of the corpus (rank 26 of 28) yet opens Q 20, Q 26, Q 27, Q 28.
+- **Non-muqaṭṭāʿat letters INSIDE top-14**: و (rank 6), ت (rank 8), ب (rank 10), ف (rank 13).
+
+**Hypergeometric weak-form**: P(X ≥ 10 | N=28, K=14, n=14) = **0.0285** — fails Bonferroni α_bon=0.0167 (NULL after correction). Single-test α=0.05 would pass.
+
+**T3 PASS**: muqaṭṭāʿat-14 cumulative frequency = **0.7441** (vs 0.50 uniform baseline). Real concentration (1.49× over chance) but NOT a Qurʾān-specific signature: cross-corpus baselines (al-Bukhārī 0.7359, Ibn Hishām *Sīra* 0.7343, al-Jāḥiẓ *Ḥayawān* 0.7208, al-Mutanabbī 0.7188, Imruʾ al-Qays 0.7159) all show 71.6%-73.6% cumulative muq-14 frequency with 9-10 letter overlaps. The pattern is a property of Arabic *language*, not the Qurʾān.
+
+**Interpretation**: al-Suyūṭī's qualitative observation ("the 14 muqaṭṭāʿat are the high-frequency letters") is PARTIALLY VINDICATED on cumulative mass (74%) but FALSIFIED on strict set-equality. The selection of the 14 muqaṭṭāʿat letters was NOT driven by pure corpus frequency — 4 letters (ح س ص ط) sit deep in the low-frequency tail. Candidate alternative selection criteria (not adjudicated here): articulation-point balance, theological-semiotic letter associations, abjad-arithmetic constraints, pre-Islamic alphabetic-mystical-tradition substrate.
+
+### §10.68.1 Tests and verdicts
+
+| Test | Threshold | Observed | Verdict |
+|:--|:--|:--|:--|
+| T1 top-3 sum > 0.25 (LOCKED HIGH) | > 0.25 | 0.3790 | **PASS** |
+| T2-strong overlap = 14/14 | k=14 | k=10 | **FALSIFIED** |
+| T2-weak hypergeom p < 0.0167 | p < 0.0167 | p=0.0285 | **NULL** |
+| T3 muq-14 sum > 0.50 (LOCKED HIGH) | > 0.50 | 0.7441 | **PASS** |
+
+### §10.68.2 Cross-finding integration
+
+- **H-NEW-1730 / H-NEW-1740** (Khalifa-19 falsification): independent letter-axis evidence that simple frequency-equality claims about the Qurʾān fail at strict precision. Q 50's ق=57 (Khalifa-19 confirmed hit) is at the corpus rank-14 cusp (2.14%); ص (Q 38, the confirmed combined-152 hit) is corpus rank-22 (0.63%) — structurally low.
+- **H-NEW-1830** (Meccan/Medinan letter-frequency divergence, §10.64): provides the corpus-baseline frequency table that H-NEW-1830 was queued against; T3 confirms the structural ceiling that the chronological deltas are perturbations on top of.
+- **al-Biqāʿī muqaṭṭāʿat content-munāsaba**: already FALSIFIED in 4 prior replications. H-NEW-1810 adds independent evidence that the muqaṭṭāʿat letter-axis is NOT a frequency-axis either.
+- **cross-finding-015 (classical claims often hold qualitatively but fail at strict empirical precision)**: another supporting case — al-Suyūṭī Itqān nawʿ 6 vindicated qualitatively (T3 PASS) but falsified at strict precision (T2-strong FAIL).
+
+### §10.68.3 Files
+
+- `findings/phase-b-hypotheses/prereg-h-new-1810-letter-frequency.md` (SHA `b6b4eeac2b8015cf447805c2494070d2042b7af2a71b9157f4580c941b61533f`)
+- `findings/phase-b-hypotheses/scripts/h-new-1810.py`
+- `findings/phase-b-hypotheses/csv/h-new-1810.json`
+- `findings/phase-b-hypotheses/h-new-1810-letter-frequency.md`

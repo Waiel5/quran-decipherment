@@ -1,0 +1,891 @@
+{
+  "finding_id": "H-NEW-1810",
+  "title": "Corpus-wide Arabic letter frequency + muqaṭṭāʿat-14 overlap audit",
+  "date_run": "2026-05-10",
+  "prereg_sha256": "b6b4eeac2b8015cf447805c2494070d2042b7af2a71b9157f4580c941b61533f",
+  "seed": 20260509,
+  "rules_tuple": {
+    "orthography": "no-tashkeel",
+    "letter_definition": "graphemes (28-letter normalized)",
+    "basmala_policy": "counted-only-in-surah-1",
+    "verse_numbering": "hafs-kufan",
+    "normalization": {
+      "أ/إ/آ → ا": true,
+      "ؤ → و": true,
+      "ئ → ي": true,
+      "ة → ت": true,
+      "ى → ي": true,
+      "ء (standalone hamza)": "tracked separately, not in 28"
+    }
+  },
+  "corpus_stats": {
+    "n_surahs": 114,
+    "n_verses": 6236,
+    "total_28_letter_graphemes": 329131,
+    "standalone_hamza_count": 1578
+  },
+  "letter_counts_28": {
+    "ا": 59280,
+    "ب": 11491,
+    "ت": 12864,
+    "ث": 1414,
+    "ج": 3317,
+    "ح": 4140,
+    "خ": 2497,
+    "د": 5991,
+    "ذ": 4932,
+    "ر": 12403,
+    "ز": 1599,
+    "س": 6012,
+    "ش": 2124,
+    "ص": 2072,
+    "ض": 1686,
+    "ط": 1273,
+    "ظ": 853,
+    "ع": 9405,
+    "غ": 1221,
+    "ف": 8747,
+    "ق": 7034,
+    "ك": 10497,
+    "ل": 38191,
+    "م": 26735,
+    "ن": 27270,
+    "ه": 14850,
+    "و": 25486,
+    "ي": 25747
+  },
+  "letter_relative_freq_28": {
+    "ا": 0.180111,
+    "ب": 0.034913,
+    "ت": 0.039085,
+    "ث": 0.004296,
+    "ج": 0.010078,
+    "ح": 0.012579,
+    "خ": 0.007587,
+    "د": 0.018202,
+    "ذ": 0.014985,
+    "ر": 0.037684,
+    "ز": 0.004858,
+    "س": 0.018266,
+    "ش": 0.006453,
+    "ص": 0.006295,
+    "ض": 0.005123,
+    "ط": 0.003868,
+    "ظ": 0.002592,
+    "ع": 0.028575,
+    "غ": 0.00371,
+    "ف": 0.026576,
+    "ق": 0.021371,
+    "ك": 0.031893,
+    "ل": 0.116036,
+    "م": 0.081229,
+    "ن": 0.082855,
+    "ه": 0.045119,
+    "و": 0.077434,
+    "ي": 0.078227
+  },
+  "ranked_descending": [
+    {
+      "rank": 1,
+      "letter": "ا",
+      "count": 59280,
+      "rel_freq": 0.180111
+    },
+    {
+      "rank": 2,
+      "letter": "ل",
+      "count": 38191,
+      "rel_freq": 0.116036
+    },
+    {
+      "rank": 3,
+      "letter": "ن",
+      "count": 27270,
+      "rel_freq": 0.082855
+    },
+    {
+      "rank": 4,
+      "letter": "م",
+      "count": 26735,
+      "rel_freq": 0.081229
+    },
+    {
+      "rank": 5,
+      "letter": "ي",
+      "count": 25747,
+      "rel_freq": 0.078227
+    },
+    {
+      "rank": 6,
+      "letter": "و",
+      "count": 25486,
+      "rel_freq": 0.077434
+    },
+    {
+      "rank": 7,
+      "letter": "ه",
+      "count": 14850,
+      "rel_freq": 0.045119
+    },
+    {
+      "rank": 8,
+      "letter": "ت",
+      "count": 12864,
+      "rel_freq": 0.039085
+    },
+    {
+      "rank": 9,
+      "letter": "ر",
+      "count": 12403,
+      "rel_freq": 0.037684
+    },
+    {
+      "rank": 10,
+      "letter": "ب",
+      "count": 11491,
+      "rel_freq": 0.034913
+    },
+    {
+      "rank": 11,
+      "letter": "ك",
+      "count": 10497,
+      "rel_freq": 0.031893
+    },
+    {
+      "rank": 12,
+      "letter": "ع",
+      "count": 9405,
+      "rel_freq": 0.028575
+    },
+    {
+      "rank": 13,
+      "letter": "ف",
+      "count": 8747,
+      "rel_freq": 0.026576
+    },
+    {
+      "rank": 14,
+      "letter": "ق",
+      "count": 7034,
+      "rel_freq": 0.021371
+    },
+    {
+      "rank": 15,
+      "letter": "س",
+      "count": 6012,
+      "rel_freq": 0.018266
+    },
+    {
+      "rank": 16,
+      "letter": "د",
+      "count": 5991,
+      "rel_freq": 0.018202
+    },
+    {
+      "rank": 17,
+      "letter": "ذ",
+      "count": 4932,
+      "rel_freq": 0.014985
+    },
+    {
+      "rank": 18,
+      "letter": "ح",
+      "count": 4140,
+      "rel_freq": 0.012579
+    },
+    {
+      "rank": 19,
+      "letter": "ج",
+      "count": 3317,
+      "rel_freq": 0.010078
+    },
+    {
+      "rank": 20,
+      "letter": "خ",
+      "count": 2497,
+      "rel_freq": 0.007587
+    },
+    {
+      "rank": 21,
+      "letter": "ش",
+      "count": 2124,
+      "rel_freq": 0.006453
+    },
+    {
+      "rank": 22,
+      "letter": "ص",
+      "count": 2072,
+      "rel_freq": 0.006295
+    },
+    {
+      "rank": 23,
+      "letter": "ض",
+      "count": 1686,
+      "rel_freq": 0.005123
+    },
+    {
+      "rank": 24,
+      "letter": "ز",
+      "count": 1599,
+      "rel_freq": 0.004858
+    },
+    {
+      "rank": 25,
+      "letter": "ث",
+      "count": 1414,
+      "rel_freq": 0.004296
+    },
+    {
+      "rank": 26,
+      "letter": "ط",
+      "count": 1273,
+      "rel_freq": 0.003868
+    },
+    {
+      "rank": 27,
+      "letter": "غ",
+      "count": 1221,
+      "rel_freq": 0.00371
+    },
+    {
+      "rank": 28,
+      "letter": "ظ",
+      "count": 853,
+      "rel_freq": 0.002592
+    }
+  ],
+  "top3_letters": [
+    "ا",
+    "ل",
+    "ن"
+  ],
+  "top14_letters": [
+    "ا",
+    "ل",
+    "ن",
+    "م",
+    "ي",
+    "و",
+    "ه",
+    "ت",
+    "ر",
+    "ب",
+    "ك",
+    "ع",
+    "ف",
+    "ق"
+  ],
+  "muqattaat_14_set": [
+    "ا",
+    "ح",
+    "ر",
+    "س",
+    "ص",
+    "ط",
+    "ع",
+    "ق",
+    "ك",
+    "ل",
+    "م",
+    "ن",
+    "ه",
+    "ي"
+  ],
+  "muqattaat_14_letters_unicode_order": [
+    "ا",
+    "ل",
+    "م",
+    "ص",
+    "ر",
+    "ك",
+    "ه",
+    "ي",
+    "ع",
+    "ط",
+    "س",
+    "ح",
+    "ق",
+    "ن"
+  ],
+  "overlap_top14_vs_muqattaat14": [
+    "ا",
+    "ر",
+    "ع",
+    "ق",
+    "ك",
+    "ل",
+    "م",
+    "ن",
+    "ه",
+    "ي"
+  ],
+  "k_overlap": 10,
+  "muqattaat14_NOT_in_top14": [
+    "ح",
+    "س",
+    "ص",
+    "ط"
+  ],
+  "top14_NOT_in_muqattaat14": [
+    "ب",
+    "ت",
+    "ف",
+    "و"
+  ],
+  "hypergeometric_p_X_geq_k": 0.0284913228,
+  "tests": {
+    "T1_top3_nonuniform": {
+      "description": "Top-3 letters' summed relative freq > 0.25 (direction LOCKED HIGH)",
+      "top3_sum": 0.379001,
+      "threshold": 0.25,
+      "direction_locked": "HIGH",
+      "direction_observed": "HIGH",
+      "pass": true
+    },
+    "T2_strong_set_equality": {
+      "description": "muqaṭṭāʿat-14 set == top-14 by frequency (al-Suyūṭī Itqān nawʿ 6 strong-form)",
+      "k_overlap": 10,
+      "threshold": 14,
+      "pass": false
+    },
+    "T2_weak_hypergeometric": {
+      "description": "P(X ≥ k_observed | N=28, K=14, n=14), one-tailed",
+      "k_overlap": 10,
+      "p_value": 0.0284913228,
+      "alpha_bonferroni": 0.0167,
+      "pass_directed": false
+    },
+    "T3_muqattaat_sum_freq": {
+      "description": "muqaṭṭāʿat-14 summed relative freq > 0.50 (direction LOCKED HIGH)",
+      "sum_freq": 0.744108,
+      "threshold": 0.5,
+      "direction_locked": "HIGH",
+      "direction_observed": "HIGH",
+      "pass": true
+    }
+  },
+  "raw_codepoint_top20": [
+    {
+      "codepoint": " ",
+      "count": 76139,
+      "hex": "U+0020"
+    },
+    {
+      "codepoint": "ا",
+      "count": 43542,
+      "hex": "U+0627"
+    },
+    {
+      "codepoint": "ل",
+      "count": 38191,
+      "hex": "U+0644"
+    },
+    {
+      "codepoint": "ن",
+      "count": 27270,
+      "hex": "U+0646"
+    },
+    {
+      "codepoint": "م",
+      "count": 26735,
+      "hex": "U+0645"
+    },
+    {
+      "codepoint": "و",
+      "count": 24813,
+      "hex": "U+0648"
+    },
+    {
+      "codepoint": "ي",
+      "count": 21973,
+      "hex": "U+064A"
+    },
+    {
+      "codepoint": "ه",
+      "count": 14850,
+      "hex": "U+0647"
+    },
+    {
+      "codepoint": "ر",
+      "count": 12403,
+      "hex": "U+0631"
+    },
+    {
+      "codepoint": "ب",
+      "count": 11491,
+      "hex": "U+0628"
+    },
+    {
+      "codepoint": "ت",
+      "count": 10520,
+      "hex": "U+062A"
+    },
+    {
+      "codepoint": "ك",
+      "count": 10497,
+      "hex": "U+0643"
+    },
+    {
+      "codepoint": "ع",
+      "count": 9405,
+      "hex": "U+0639"
+    },
+    {
+      "codepoint": "أ",
+      "count": 9119,
+      "hex": "U+0623"
+    },
+    {
+      "codepoint": "ف",
+      "count": 8747,
+      "hex": "U+0641"
+    },
+    {
+      "codepoint": "ق",
+      "count": 7034,
+      "hex": "U+0642"
+    },
+    {
+      "codepoint": "س",
+      "count": 6012,
+      "hex": "U+0633"
+    },
+    {
+      "codepoint": "د",
+      "count": 5991,
+      "hex": "U+062F"
+    },
+    {
+      "codepoint": "إ",
+      "count": 5108,
+      "hex": "U+0625"
+    },
+    {
+      "codepoint": "ذ",
+      "count": 4932,
+      "hex": "U+0630"
+    }
+  ],
+  "cross_corpus_descriptive": {
+    "quran-no-tashkeel": {
+      "top14": [
+        "ا",
+        "ل",
+        "ن",
+        "م",
+        "ي",
+        "و",
+        "ه",
+        "ت",
+        "ر",
+        "ب",
+        "ك",
+        "ع",
+        "ف",
+        "ق"
+      ],
+      "k_overlap_with_muqattaat14": 10,
+      "muqattaat14_sum_freq": 0.744092
+    },
+    "bukhari-noquran": {
+      "top14": [
+        "ا",
+        "ل",
+        "ن",
+        "ي",
+        "ب",
+        "م",
+        "ع",
+        "ر",
+        "و",
+        "ه",
+        "ت",
+        "د",
+        "ق",
+        "ف"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.735935
+    },
+    "bukhari": {
+      "top14": [
+        "ا",
+        "ل",
+        "ن",
+        "ي",
+        "م",
+        "ب",
+        "ع",
+        "و",
+        "ر",
+        "ه",
+        "ت",
+        "د",
+        "ق",
+        "ف"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.737805
+    },
+    "diwan-amr-ibn-kulthum": {
+      "top14": [
+        "ا",
+        "ل",
+        "م",
+        "و",
+        "ت",
+        "ي",
+        "د",
+        "ب",
+        "ن",
+        "ه",
+        "ع",
+        "ر",
+        "ح",
+        "س"
+      ],
+      "k_overlap_with_muqattaat14": 10,
+      "muqattaat14_sum_freq": 0.676963
+    },
+    "diwan-antara": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "م",
+        "و",
+        "ن",
+        "ت",
+        "ر",
+        "ب",
+        "ع",
+        "د",
+        "ه",
+        "ف",
+        "ق"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.71372
+    },
+    "diwan-harith": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "م",
+        "ن",
+        "و",
+        "ر",
+        "ب",
+        "ت",
+        "ه",
+        "ع",
+        "ف",
+        "د",
+        "ك"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.737302
+    },
+    "diwan-imru-al-qais": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "و",
+        "م",
+        "ن",
+        "ر",
+        "ت",
+        "ب",
+        "ه",
+        "ع",
+        "ف",
+        "ق",
+        "د"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.717761
+    },
+    "diwan-labid": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "م",
+        "و",
+        "ن",
+        "ر",
+        "ب",
+        "ت",
+        "ه",
+        "ع",
+        "ف",
+        "د",
+        "ق"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.712909
+    },
+    "diwan-tarafa": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "م",
+        "و",
+        "ن",
+        "ر",
+        "ت",
+        "ب",
+        "ه",
+        "ع",
+        "د",
+        "ف",
+        "ق"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.710152
+    },
+    "diwan-zuhayr": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "م",
+        "و",
+        "ن",
+        "ت",
+        "ر",
+        "ه",
+        "ب",
+        "ع",
+        "ف",
+        "د",
+        "ق"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.722303
+    },
+    "jahiz-hayawan": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "و",
+        "ن",
+        "م",
+        "ر",
+        "ت",
+        "ب",
+        "ه",
+        "ع",
+        "ف",
+        "ق",
+        "ك"
+      ],
+      "k_overlap_with_muqattaat14": 10,
+      "muqattaat14_sum_freq": 0.72078
+    },
+    "matched-bukhari-77k": {
+      "top14": [
+        "ا",
+        "ل",
+        "ن",
+        "ي",
+        "م",
+        "ب",
+        "ع",
+        "ر",
+        "و",
+        "ه",
+        "ت",
+        "د",
+        "ق",
+        "ف"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.741606
+    },
+    "muallaqa-amr-bin-kulthum": {
+      "top14": [
+        "ا",
+        "ن",
+        "ل",
+        "ي",
+        "و",
+        "م",
+        "ب",
+        "ت",
+        "ر",
+        "ع",
+        "د",
+        "ق",
+        "ه",
+        "ف"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.727197
+    },
+    "muallaqa-antara": {
+      "top14": [
+        "ا",
+        "ل",
+        "م",
+        "ي",
+        "ت",
+        "ر",
+        "ن",
+        "ب",
+        "و",
+        "ع",
+        "ه",
+        "ك",
+        "د",
+        "ف"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.700433
+    },
+    "muallaqa-harith": {
+      "top14": [
+        "ا",
+        "ل",
+        "ن",
+        "م",
+        "ي",
+        "و",
+        "ت",
+        "ب",
+        "ه",
+        "ر",
+        "ع",
+        "ف",
+        "د",
+        "ق"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.733746
+    },
+    "muallaqa-imru-al-qais": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "م",
+        "ت",
+        "ن",
+        "ر",
+        "و",
+        "ب",
+        "ع",
+        "ف",
+        "ه",
+        "ك",
+        "د"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.715929
+    },
+    "muallaqa-labid": {
+      "top14": [
+        "ا",
+        "ل",
+        "م",
+        "و",
+        "ه",
+        "ت",
+        "ي",
+        "ر",
+        "ن",
+        "ب",
+        "ف",
+        "ع",
+        "د",
+        "ح"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.70286
+    },
+    "muallaqa-tarafa": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "م",
+        "ت",
+        "و",
+        "ن",
+        "د",
+        "ر",
+        "ب",
+        "ع",
+        "ف",
+        "ه",
+        "ق"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.686665
+    },
+    "muallaqa-zuhayr": {
+      "top14": [
+        "ا",
+        "م",
+        "ل",
+        "ي",
+        "ن",
+        "و",
+        "ت",
+        "ر",
+        "ع",
+        "ه",
+        "ب",
+        "ف",
+        "د",
+        "ك"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.731008
+    },
+    "mutanabbi-diwan": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "م",
+        "و",
+        "ن",
+        "ت",
+        "ر",
+        "ب",
+        "ه",
+        "ف",
+        "ك",
+        "ع",
+        "د"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.718795
+    },
+    "sira-ibn-hisham": {
+      "top14": [
+        "ا",
+        "ل",
+        "ي",
+        "ن",
+        "م",
+        "ب",
+        "و",
+        "ه",
+        "ر",
+        "ت",
+        "ع",
+        "ف",
+        "ق",
+        "د"
+      ],
+      "k_overlap_with_muqattaat14": 9,
+      "muqattaat14_sum_freq": 0.734282
+    }
+  }
+}
