@@ -2894,3 +2894,44 @@ Q 58 (1.000, 22/22) > Q 48 (0.862, 25/29) > Q 60 (0.846, 11/13) > Q 24 (0.781, 5
 
 **Connection to existing findings**: Confirms and corpus-contextualizes Q058-F-01; orthogonal to muqaṭṭāʿat structure (cross-finding-008); empirically corroborates al-Suyūṭī's Meccan/Medinan marker tradition.
 
+## §10.47 H-NEW-1370 inline (2026-05-09 PM continuation) — Corpus top-10 longest-verses chronological + rhetorical-type profile
+
+**Status**: PASS-DIRECTED (single planned test + char-count replication; independent replication on alternative tashkeel-variant tokenization is the next promotion gate).
+
+**Pre-reg SHA256**: `6aab7c774dc28f32c5d2b7777180c3a16cfed83d25e1d529f6b0dbc82ba50ae2`
+**Files**: `findings/phase-b-hypotheses/prereg-h-new-1370-long-verse-top10.md`, `scripts/h-new-1370.py`, `csv/h-new-1370.json`, `h-new-1370-long-verse-top10.md`.
+
+**Hypothesis (pre-locked)**: ≥7 of the corpus top-10 longest verses (no-tashkeel, whitespace tokenization, ranked by word-count primarily and char-count as auxiliary replication) belong to Medinan surahs (`data/revelation-order.csv` `period` field), tested against the corpus-wide Medinan-verse-share baseline by one-sided binomial.
+
+**Result**:
+- Corpus Medinan-verse-share baseline = 26.03% (1623/6236).
+- **Cell A (word-count primary)**: 9 of 10 are Medinan; one-sided binomial p = **4.20 × 10⁻⁵**. PASS.
+- **Cell B (char-count replication)**: 9 of 10 are Medinan; one-sided binomial p = **4.20 × 10⁻⁵**. PASS.
+- Sole Meccan outlier in BOTH rankings: **Q 73:20** (Early-Meccan, ritual-instruction — qiyām al-layl revision verse).
+- Set overlap between the two rankings: 8 of 10 verses appear in both top-10 sets.
+
+**Top-10 by word-count**: Q 2:282 (145w / Medinan / debt-and-contract) — Q 4:12 (99w / Medinan / inheritance) — **Q 73:20** (90w / Early-Meccan / ritual-instruction) — Q 3:154 (83w / Medinan / polemical-narrative) — Q 24:31 (82w / Medinan / marital-family-law) — Q 2:102 (82w / Medinan / polemical-narrative) — Q 2:196 (81w / Medinan / ritual-instruction) — Q 4:11 (81w / Medinan / inheritance) — Q 24:61 (79w / Medinan / food-and-purity-law) — Q 5:41 (77w / Medinan / polemical-narrative).
+
+**Rhetorical-type breakdown** (top-10 word-count): 5 purely jurisprudential-procedural (debt + inheritance × 2 + marital + food-purity), 3 polemical-narrative, 2 ritual-instruction (including Q 73:20). The top-10 is monolithically Medinan-jurisprudential with Q 73:20 as the structural exception — itself classically recognized (al-Suyūṭī, *al-Itqān*, nawʿ 47 *al-nāsikh wa-l-mansūkh*) as Medinan-thematic content abrogating Q 73:1-4 within an otherwise Early-Meccan surah.
+
+**Surah concentration**: Q 2 supplies 4 of the top-10 word-count entries (Q 2:282 + 2:102 + 2:196 + 2:233 also appears in char-count). Q 4 supplies 2 (the adjacent inheritance pair Q 4:11 + 4:12). Q 24 supplies 2 (modesty + communal-eating etiquette). The verse-level long-tail concentrates in Q 2 + Q 4 + Q 24 — exactly the three Medinan jurisprudential anchors.
+
+**Q 73:20 special status**: corpus rank-3 by word-count (90w / 430 chars in min-tashkeel; 341 non-space chars in no-tashkeel). Q073-F-05 already established Early-Meccan rank-1 status; H-NEW-1370 now establishes Q 73:20 as the SOLE Meccan entry in the corpus-top-10 long-verses — a single-verse structural anomaly that classical scholarship anticipated via the abrogation-classification.
+
+**Classical anchors**:
+- al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 19 (āyāt al-aḥkām): identifies Q 2:282 as the longest verse — confirmed rank-1 in canonical corpus.
+- al-Zarkashī, *al-Burhān fī ʿulūm al-Qurʾān*: same identification + notes Q 2:281 (one ayah earlier) as last verse revealed.
+- al-Suyūṭī, *al-Itqān*, nawʿ 47: classifies Q 73:20 as the abrogator of Q 73:1-4 night-prayer requirement.
+
+**Connection to existing findings**:
+- Extends Q073-F-05 from "Q 73:20 is corpus rank-3" to "Q 73:20 is sole Meccan entry in corpus top-10".
+- Corroborates H-NEW-770 verse-length kink-50 law at the verse-level outlier tail (9/10 Medinan vs surah-mean R²=0.81 — the chronological signal is sharper at the upper tail than at the surah-aggregate).
+- Independent verse-level evidence for cross-finding-018 four-principle reduced model (Medinan-jurisprudence is one of the four principles) and cross-finding-016 Late-Meccan apparatus deep-dive.
+- Parallels H-NEW-1350 (Allāh-density Medinan-domination at p_perm=10⁻⁴) — both tests independently corroborate al-Suyūṭī's Meccan/Medinan marker tradition via different empirical instruments.
+
+**Open follow-ups**:
+1. Top-25 extension (Q 73:20 should remain the SOLE Meccan in top-25 — verify).
+2. Cross-corpus baseline: do the corpus top-10 longest verses share verse-length tail-shape with pre-Islamic poetry / Bukhari hadith?
+3. Rules-tuple sensitivity: rerun under min-tashkeel and full-tashkeel — direction-stable but absolute rank-order may shift slightly.
+4. Verse-twin proximity check (H-NEW-167): are the top-10 long verses also high-degree in the verse-twin graph?
+
