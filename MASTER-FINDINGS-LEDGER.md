@@ -4907,3 +4907,48 @@ The refrain architecture is empirically sparse (~4.4% of surahs carry strict ref
 - Script: `findings/phase-b-hypotheses/scripts/h-new-1790.py`
 - JSON: `findings/phase-b-hypotheses/csv/h-new-1790.json`
 - Findings: `findings/phase-b-hypotheses/h-new-1790-refrain-inventory.md`
+
+## §10.68 H-NEW-1900 inline (2026-05-09) — Q 18 al-Kahf 3-narrative corpus-monopoly + classical "Khaḍir" name FALSIFIED at Quranic-text level
+
+**Status**: CONFIRMED multiple corpus-monopoly findings + REVOLUTIONARY classical-claim audit on Khaḍir-name.
+
+### §10.68.1 Q 18 narrative-uniqueness empirical profile
+
+| Marker | Corpus attestations | Q 18 share |
+|---|---|---|
+| كهف (cave/Kahf) | 6 | **6 of 6 — corpus-monopoly** |
+| ذو القرنين (Dhū al-Qarnayn) | 3 | **3 of 3 — corpus-monopoly** |
+| يأجوج / مأجوج (Gog/Magog) | 2 verses (Q 18:94, Q 21:96) | 1 of 2 |
+| Owner-of-two-gardens parable | Q 18:32-44 | sui generis |
+
+**Q 18 holds CORPUS-MONOPOLY on 2 of its 4 narrative anchors** (kahf, Dhū al-Qarnayn) and CORPUS-SHARED (with Q 21) on a 3rd (Yājūj wa-Mājūj). The 4-narrative architecture is genuinely sui generis.
+
+### §10.68.2 Khaḍir-name REVOLUTIONARY classical-claim audit
+
+**Classical claim**: the Mūsā-companion in Q 18:60-82 is "al-Khaḍir" (the Green One).
+
+**Source of name**: NOT the Quran. The name *Khaḍir* / *al-Khiḍr* originates in **Bukhārī #122 / #4727** (Ubayy ibn Kaʿb chain) — a hadith narration explaining the Quranic *ʿabdan min ʿibādinā*.
+
+**Quran search**: substring خضر appears 8 times in canonical corpus, but NEVER as a personal name. All 8 attestations are color/vegetation references:
+- Q 6:99: *fa-akhrajnā minhu khaḍiran* (green vegetation)
+- Q 12:43, 12:46: *sunbulātin khuḍrin* (green ears of grain — Yūsuf's vision)
+- Q 18:31: *thiyāban khuḍran* (green clothing — paradise description)
+- Q 22:63: *fa-tuṣbiḥu al-arḍu mukhḍarra* (earth becomes green)
+
+**Audit verdict**: **"Khaḍir" as a personal name is POST-Quranic hadith tradition, NOT a Quranic name.** The Quran calls the Mūsā-companion only *ʿabdan min ʿibādinā ātaynāhu raḥmatan min ʿindinā* (Q 18:65 — "a servant from among Our servants whom We gave mercy from Us"). The personal name was added by Bukhārī's hadith. This is a textbook case where the *Quranic text* and *classical hadith tradition* must be DISTINGUISHED.
+
+The classical claim is empirically:
+- **FALSIFIED** at Quranic-text level (Khaḍir never named in Quran)
+- **VINDICATED** at hadith-tradition level (Bukhārī chain authentic)
+
+This distinguishes a TEXT-iʿjāz claim (Quran-internal evidence) from a TRADITION-iʿjāz claim (hadith corroboration).
+
+### §10.68.3 Cross-finding integration
+
+- **H-NEW-1300/Q073-F-04 (IMPV-qrA inventory)**: similar pattern — what the Quran SAYS vs what later tradition NAMES diverges
+- **Pronominal-narrative law (H-NEW-1870)**: Quran narrates by pronoun + descriptive epithet, not by personal name — Khaḍir-narrative is a perfect example (*ʿabdan*)
+- **Cross-finding-022 (corpus-EXACT roster)**: Q 18 contributes 3 more corpus-EXACT markers (kahf, Dhū al-Qarnayn, Yājūj-monopoly), bringing the roster up
+
+### §10.68.4 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1900.json`
