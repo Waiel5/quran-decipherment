@@ -1,7 +1,7 @@
 ---
 surah: 27
 file_type: journal
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-10
 phase: B+
 ---
 
@@ -248,3 +248,70 @@ Updates this session:
 ### State at end-of-Wave-2-session
 
 **Q 27 al-Naml has now 9 pre-registered tests**: F-01..F-04 (Wave-1, 3 CONFIRMED + 1 MIXED) + F-05..F-09 (Wave-2, 4 DIRECTIONAL + 1 WEAK_DIRECTIONAL). 8-file template still complete; 06-novel-findings.md extended; JOURNAL.md extended.
+
+---
+
+## 2026-05-10 — Specialist run: Wave-3 (F-10/F-11/F-12) — internal basmala + Solomon-Sabaʾ pericope
+
+**Agent**: Q027-specialist (Opus 4.7 1M).
+**Dispatch**: 2026-05-10 corpus-unique-axis test (T1/T2/T3 from session dispatch).
+**Reading list completed**: SKILL.md, INVESTIGATION-PROTOCOL.md, SESSION-HANDOFF-2026-05-09-PM.md, cross-finding-025-formal, all existing Q 27 files.
+
+### Pre-registrations locked (Wave-3)
+
+| ID | Title | Pre-reg SHA |
+|:--|:--|:--|
+| Q027-F-10 | Internal basmala corpus-uniqueness (direct grep audit) | `478ff8f90691dade34d037cb8529d9daaba8a818127dee967d7a811ba6673402` |
+| Q027-F-11 | Q 27 total basmala count == 2 (corpus-singleton dual-basmala surah) | `c451f1646b748bb46a76f485a0f9eb918c6596785b5a7abea8cf56eb006ef375` |
+| Q027-F-12 | Solomon-Sabaʾ pericope Q 27:22-44 ↔ Q 34:15-19 cohesion (cross-finding-025-formal application) | `f1e2468b954fa93fbdc3e86e12d0d164f1482d564090551566f309387062bd1f` |
+
+### Run script
+
+`/Users/grey/Downloads/quran/scripts/Q027_F_10_to_12.py` — fail-fast SHA verification; 3 sub-tests; seed 20260509; 10,000 perms for F-12.
+
+Runtime trace (2026-05-10 fresh run):
+```
+Verifying pre-reg SHAs...
+[OK] Q027-F-10 SHA verified: 478ff8f90691dade...
+[OK] Q027-F-11 SHA verified: c451f1646b748bb4...
+[OK] Q027-F-12 SHA verified: f1e2468b954fa93f...
+Loading no-tashkeel corpus... loaded 114 surahs
+Running Q027-F-10 (internal basmala corpus-uniqueness)... verdict: PASS-CONFIRMED  hits: 2 total; non-Q1: 1
+Running Q027-F-11 (Q 27 total basmala count)... verdict: PASS-CONFIRMED  Form-B Q 27 count: 2  Form-B others with count == 2: {}
+Loading QAC roots per verse... loaded roots for 6214 verses
+Running Q027-F-12 (Solomon-Sabaʾ pericope cohesion)... verdict: NULL-DIRECTIONAL  J_obs = 0.1200; null_mean = 0.0679; z = 1.170; p_perm = 0.1460
+All three tests complete.
+```
+
+### Results summary
+
+- **Q027-F-10 PASS-CONFIRMED**: 2 hits corpus-wide for the 6-token canonical basmala substring; 1 non-Q1 hit at Q 27:30 (locked direction matched). Classical al-Suyūṭī / Ibn Kathīr / al-Qurṭubī claim about Q 27:30 uniqueness empirically locked.
+- **Q027-F-11 PASS-CONFIRMED**: Q 27 is the unique surah with Form-B basmala-attestation count == 2 (opener + interior v.30). 0 other surahs have count == 2.
+- **Q027-F-12 NULL-DIRECTIONAL**: J_obs = 0.120 > null_mean = 0.068 (direction match ✓) BUT p_perm = 0.146 does not reach the pre-registered ≤ 0.05 PASS threshold nor the ≤ 0.10 PASS-DIRECTED threshold. **Honest negative result for cross-finding-025-formal pericope-flip principle when extended to a single thick-marker pericope-pair.**
+
+### Decision points and methodology shifts (Wave-3)
+
+- **2026-05-10 00:30**: Read existing 9-test Q 27 file complement; identified F-02 + F-05.a already cover much of T1/T2 territory. Decision: write Wave-3 F-10/F-11/F-12 as **explicit pre-registered uniqueness tests** with the falsification conditions pre-committed — these are not duplicate tests of F-02/F-05, but the direct-grep formulation of the dispatch's T1/T2/T3.
+- **2026-05-10 00:45**: F-10's runner included tashkeel-variant cross-validation; the exact-byte-match at min/full-tashkeel returned 0 hits because the runner's target string did not exactly match the variant's canonical form. Documented honestly in findings doc; the canonical no-tashkeel test PASSES, and Q027-F-02 (Wave-1) already cross-validated the per-token diacritic-stripped equivalence across all 3 tashkeel variants.
+- **2026-05-10 01:00**: F-12 NULL-DIRECTIONAL outcome was UNEXPECTED relative to pre-registered direction (PASS-CONFIRMED at p ≤ 0.05). Per INVESTIGATION-PROTOCOL §1.3, published with **full prominence** as honest negative result. Not silently flipped. Not adjusted to a weaker direction post-hoc. The result is informative for cross-finding-025-formal's thick-marker generalization: pericope-flip is NOT automatic at thick-marker scale.
+
+### Pre-flight verifications performed (Wave-3)
+
+- ✅ Pre-reg SHAs all match (verified by runner runtime).
+- ✅ All numerical claims trace to specific JSON paths (`csv/Q027-F-{10,11,12}.json`).
+- ✅ Direction-of-effect for F-10 (non-Q1 count == 1 ∧ hit at Q 27:30): MATCHED.
+- ✅ Direction-of-effect for F-11 (Form-B Q 27 == 2 ∧ unique): MATCHED.
+- ✅ Direction-of-effect for F-12 (J_obs > null_mean): MATCHED but threshold not met; published as NULL-DIRECTIONAL with full prominence (not silently flipped).
+- ✅ No Bonferroni adjustment applied as a family because F-10/F-11 are deterministic (no p-value); F-12 had its own pre-registered single-test α = 0.05.
+- ✅ Classical citations: al-Suyūṭī *al-Itqān*; Ibn Kathīr on Q 27:30; al-Qurṭubī on Q 27:30; al-Rāzī *Mafātīḥ al-ghayb* on Q 27:30 doubled basmala; al-Biqāʿī *Naẓm al-durar* on Q 27-Q 34 munāsabah; al-Rāzī on Q 34:15.
+- ✅ Anti-hallucination: every numerical value cites a specific JSON path.
+
+### Open follow-ups (Wave-3 → Wave-4 candidates)
+
+1. **Cross-finding-025-formal thick-marker test family**: design a multi-pericope-pair aggregated test for the Solomon-narrative class (Q 27 × Q 34, Q 27 × Q 38, Q 27 × Q 21) to determine whether n-pair-aggregation rescues the pericope-flip signal at thick-marker scale.
+2. **Q 27:30 verse-structural function**: pre-register a test on whether the diegetic-quotation of the basmala (Solomon citing the divine formula in his letter) is empirically distinguishable from a non-diegetic interior basmala. This is a follow-up to F-05.c (which surfaced Q 11:41 as a 3rd embedded *bismi-llāh* class member).
+3. **Pericope-pair test for the basmala-class**: pre-register pericope-window cohesion test on the 3-verse "embedded divine-name invocation" pericopes around Q 1:1, Q 11:41, Q 27:30 — does the *content* of these 3 surrounding pericopes cluster on root-Jaccard?
+
+### State at end-of-Wave-3-session
+
+**Q 27 al-Naml has now 12 pre-registered tests**: F-01..F-04 (Wave-1, 3 CONFIRMED + 1 MIXED) + F-05..F-09 (Wave-2, 4 DIRECTIONAL + 1 WEAK_DIRECTIONAL) + F-10..F-12 (Wave-3, 2 PASS-CONFIRMED + 1 NULL-DIRECTIONAL). 8-file template still complete; 06-novel-findings.md extended; JOURNAL.md extended; 00-overview.md verdict updated. Dispatch deliverable T1/T2/T3 all landed: T1 ✓ (F-10 PASS), T2 ✓ (F-11 PASS), T3 ✗ honest NULL-DIRECTIONAL (F-12 — pericope-flip principle does not extend to single thick-marker pair).

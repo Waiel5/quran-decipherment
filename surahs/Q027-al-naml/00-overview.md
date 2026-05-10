@@ -4,9 +4,9 @@ surah_name_ar: النمل
 surah_name_translit: al-Naml
 surah_name_english: The Ant
 file_type: overview
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-10
 phase: B+
-verdict: COMPLETE — all 8 template files + JOURNAL; 9 pre-registered novel tests (F-01..F-09). Wave-1 (2026-04-28): 3 CONFIRMED (F-01 naml 100%, F-02 lexical-match, F-03 Sulaymān rank 1 41%) + 1 MIXED (F-04 numerology). Wave-2 (2026-05-07): 4 DIRECTIONAL (F-05 second-basmala class=3 verses incl. NEW Q 11:41; F-06 hud-hud 8 hapaxes; F-08 Q 27↔Q 34 FR-closer than Q 27↔Q 38; F-09 Q 27:18 3-hapax floor met) + 1 WEAK_DIRECTIONAL (F-07 2-letter family).
+verdict: COMPLETE — all 8 template files + JOURNAL; 12 pre-registered novel tests (F-01..F-12). Wave-1 (2026-04-28): 3 CONFIRMED (F-01 naml 100%, F-02 lexical-match, F-03 Sulaymān rank 1 41%) + 1 MIXED (F-04 numerology). Wave-2 (2026-05-07): 4 DIRECTIONAL (F-05 second-basmala class=3 verses incl. NEW Q 11:41; F-06 hud-hud 8 hapaxes; F-08 Q 27↔Q 34 FR-closer than Q 27↔Q 38; F-09 Q 27:18 3-hapax floor met) + 1 WEAK_DIRECTIONAL (F-07 2-letter family). Wave-3 (2026-05-10): 2 PASS-CONFIRMED (F-10 internal basmala corpus-singleton; F-11 Q 27 unique dual-basmala surah) + 1 NULL-DIRECTIONAL (F-12 Solomon-Sabaʾ pericope p_perm = 0.146 — honest negative for cross-finding-025-formal thick-marker case).
 ---
 
 # Q 27 al-Naml — Overview

@@ -1,0 +1,49 @@
+{
+  "finding_id": "Q027-F-10",
+  "prereg_sha": "478ff8f90691dade34d037cb8529d9daaba8a818127dee967d7a811ba6673402",
+  "rules_tuple": "(no-tashkeel, orthographic-substring, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "method": "deterministic substring search; no permutation null",
+  "target_substring": "بسم الله الرحمن الرحيم",
+  "total_hits": 2,
+  "hits": [
+    {
+      "surah": 1,
+      "verse": 1,
+      "text": "بسم الله الرحمن الرحيم"
+    },
+    {
+      "surah": 27,
+      "verse": 30,
+      "text": "إنه من سليمان وإنه بسم الله الرحمن الرحيم"
+    }
+  ],
+  "q1_hits": [
+    {
+      "surah": 1,
+      "verse": 1,
+      "text": "بسم الله الرحمن الرحيم"
+    }
+  ],
+  "non_q1_hits": [
+    {
+      "surah": 27,
+      "verse": 30,
+      "text": "إنه من سليمان وإنه بسم الله الرحمن الرحيم"
+    }
+  ],
+  "non_q1_count": 1,
+  "verdict": "PASS-CONFIRMED",
+  "locked_direction": "corpus-singleton: count(non-Q1 hits) == 1 AND hit == Q 27:30",
+  "cross_validation": {
+    "min-tashkeel": {
+      "target_token": "بِسمِ اللَّهِ الرَّحمٰنِ الرَّحيمِ",
+      "total_hits": 0,
+      "hits": []
+    },
+    "full-tashkeel": {
+      "target_token": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+      "total_hits": 0,
+      "hits": []
+    }
+  }
+}

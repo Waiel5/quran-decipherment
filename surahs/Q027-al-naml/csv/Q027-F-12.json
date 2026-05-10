@@ -1,0 +1,88 @@
+{
+  "finding_id": "Q027-F-12",
+  "prereg_sha": "f1e2468b954fa93fbdc3e86e12d0d164f1482d564090551566f309387062bd1f",
+  "rules_tuple": "(no-tashkeel, QAC v0.4 stem-ROOT, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "method": "pericope-window root-Jaccard with permutation null over length-matched random pericope-pairs",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "pericope_A": {
+    "surah": 27,
+    "verses": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "n_unique_roots": 96
+  },
+  "pericope_B": {
+    "surah": 34,
+    "verses": [
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "n_unique_roots": 44
+  },
+  "shared_roots_count": 15,
+  "union_roots_count": 125,
+  "shared_roots": [
+    "$kr",
+    "$yA",
+    "Amn",
+    "Zlm",
+    "bEd",
+    "jEl",
+    "jnn",
+    "kfr",
+    "kll",
+    "kwn",
+    "nfs",
+    "qry",
+    "qwl",
+    "rbb",
+    "rsl"
+  ],
+  "J_obs": 0.12,
+  "null_mean": 0.06789607027182523,
+  "null_std": 0.04452444780511078,
+  "n_perm_valid": 10000,
+  "n_perm_fail": 0,
+  "z_score": 1.1702319129535386,
+  "p_perm_one_sided_upper": 0.146,
+  "n_null_ge_obs": 1460,
+  "direction_match": true,
+  "locked_direction": "J_obs > null_mean (one-sided upper-tail)",
+  "verdict": "NULL-DIRECTIONAL (weak direction, not significant)",
+  "aux_per_verse_concordance_B_in_A": {
+    "per_verse": [
+      0.3076923076923077,
+      0.25,
+      0.5,
+      0.3,
+      0.5714285714285714
+    ],
+    "mean": 0.38582417582417583
+  }
+}

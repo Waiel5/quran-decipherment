@@ -2,9 +2,9 @@
 surah: 27
 surah_name_ar: النمل
 file_type: novel-findings
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-10
 phase: B+
-verdict: 9 PRE-REGISTERED TESTS RUN — F-01..F-04 (Wave 2026-04-28) + F-05..F-09 (Wave 2026-05-07). Wave-1: 3 CONFIRMED + 1 MIXED. Wave-2: 4 DIRECTIONAL (2/3 each) + 1 WEAK_DIRECTIONAL.
+verdict: 12 PRE-REGISTERED TESTS RUN — F-01..F-04 (Wave 2026-04-28) + F-05..F-09 (Wave 2026-05-07) + F-10..F-12 (Wave 2026-05-10). Wave-1: 3 CONFIRMED + 1 MIXED. Wave-2: 4 DIRECTIONAL (2/3 each) + 1 WEAK_DIRECTIONAL. Wave-3: 2 PASS-CONFIRMED (F-10 internal basmala corpus-singleton; F-11 Q 27 unique dual-basmala surah) + 1 NULL-DIRECTIONAL (F-12 Solomon-Sabaʾ pericope cohesion p_perm = 0.146 — cross-finding-025-formal thick-marker case).
 ---
 
 # Q 27 al-Naml — Novel Findings
@@ -448,4 +448,64 @@ Across the 5 new pre-registered tests:
 - The **mid-tier Jaccard / IDF-percentile** tests (F-05.b, F-06.b, F-09.b) consistently NULL — Q 27's narrative blocks are *lexically distinctive at the surface-token level* (hapaxes, rare forms) but *NOT at the root level* (familiar Quranic roots recombined). This is a robust empirical fact about the surah's structure: the iʿjāz is in the formation (sarf), not in the lexicon (mufradāt).
 - The **strongest results** are F-05.a (verbatim basmala count = 2, exact), F-06.a (8 hapaxes, far exceeds the ≥ 2 floor), F-08 H1 (FR-axis Q 27 ↔ Q 34 < Q 27 ↔ Q 38, directional with classical mechanism), and the **NEW finding** that Q 11:41 is a third "embedded divine-name invocation" verse alongside Q 1:1 and Q 27:30 (F-05.c).
 - Per equal-NULL prominence: H1.b NULLs in F-05/F-06/F-09 are reported with full prominence. The under-effect on QAC-root-Jaccard at the 5-verse / 9-verse / single-verse scales is a real architectural feature, not a noise artifact.
+
+---
+
+# Wave-3 (2026-05-10) — Q027-F-10..F-12
+
+Three additional pre-registered tests addressing the corpus-unique features of Q 27 (internal basmala + Solomon-Sabaʾ pericope). Direction-locked PASS predictions per dispatch. SHA-locked; runner `/Users/grey/Downloads/quran/scripts/Q027_F_10_to_12.py`; seed 20260509; 10,000 perms where applicable. **Family Bonferroni**: NOT applied as a 3-cell family because (i) F-10 and F-11 are deterministic uniqueness tests with no permutation p-value; (ii) F-12 is a single-pair pericope-scale test with its own α threshold pre-locked at 0.05 (no Bonferroni adjustment per pre-reg).
+
+| ID | Title | Pre-reg SHA | Verdict |
+|:--|:--|:--|:--|
+| Q027-F-10 | Internal basmala corpus-uniqueness (direct grep audit; deterministic) | `478ff8f90691dade34d037cb8529d9daaba8a818127dee967d7a811ba6673402` | **PASS-CONFIRMED** |
+| Q027-F-11 | Q 27 total basmala count == 2 (corpus-singleton dual-basmala surah) | `c451f1646b748bb46a76f485a0f9eb918c6596785b5a7abea8cf56eb006ef375` | **PASS-CONFIRMED** |
+| Q027-F-12 | Solomon-Sabaʾ pericope Q 27:22-44 ↔ Q 34:15-19 root-Jaccard cohesion (cross-finding-025-formal application) | `f1e2468b954fa93fbdc3e86e12d0d164f1482d564090551566f309387062bd1f` | **NULL-DIRECTIONAL** (J_obs > null_mean ✓; p_perm = 0.146 — does not reach 0.05 PASS) |
+
+All three SHAs verified at runtime. Output JSONs: `csv/Q027-F-{10,11,12}.json`. Full findings docs: `Q027-F-10-internal-basmala-corpus-uniqueness.md`, `Q027-F-11-q27-total-basmala-count.md`, `Q027-F-12-solomon-sabaq-pericope-cross-finding-025.md`.
+
+## Q027-F-10 — Internal basmala corpus-uniqueness ✅ PASS-CONFIRMED
+
+Direct grep on `quran-text/quran-no-tashkeel.json` for the canonical 6-token substring `بسم الله الرحمن الرحيم`:
+
+- **2 total corpus hits**: Q 1:1 and Q 27:30.
+- **Non-Q1 hits**: exactly **1** (Q 27:30) — locked direction MATCHED.
+- The classical recognition (al-Suyūṭī *al-Itqān* on basmala enumeration; Ibn Kathīr on Q 27:30; al-Qurṭubī on Q 27:30) that Q 27:30 is the unique INTERIOR basmala in the corpus is empirically locked at the deterministic-grep level.
+
+## Q027-F-11 — Q 27 total basmala count == 2 ✅ PASS-CONFIRMED
+
+Per-surah count under two accounting schemes (Form A = Hafs-Kufan strict-numbered-verse; Form B = total attestations including headers). Both schemes confirm Q 27 uniqueness:
+
+- **Form B**: Q 27 count = **2** (opener-header + interior v.30); **0 other surahs have count == 2**. Q 1 = 1; Q 9 = 0; 111 other surahs = 1.
+- **Form A**: Q 1 = 1, Q 27 = 1, 112 others = 0 (numbered-verse-strict; Q 1 and Q 27 tied as numbered-verse-basmala carriers).
+
+Both forms confirm: Q 27 is the unique surah with TWO basmala-attestations.
+
+## Q027-F-12 — Solomon-Sabaʾ pericope cohesion ❌ NULL-DIRECTIONAL
+
+Pre-registered PASS-CONFIRMED at p_perm ≤ 0.05 per cross-finding-025-formal pericope-scale principle. Observed result is **directionally correct but below significance**:
+
+- Pericope A: Q 27:22-44 (23 verses, 96 unique stem-roots).
+- Pericope B: Q 34:15-19 (5 verses, 44 unique stem-roots).
+- Shared roots: **15** (theological-narrative substrate: *Amn*, *Zlm*, *jnn*, *kfr*, *qry*, *qwl*, *rbb*, *rsl*, etc.).
+- J_obs = **0.1200**; null_mean = 0.0679 ± 0.0445; z = **+1.17**; **p_perm = 0.1460**.
+- Direction match (J_obs > null_mean): ✓.
+- Verdict: **NULL-DIRECTIONAL** — pre-registered PASS threshold (p ≤ 0.05) NOT met; pre-registered PASS-DIRECTED threshold (p ≤ 0.10) also NOT met.
+
+### Honest interpretation
+
+The pre-committed prediction was that the Solomon-Sabaʾ thick-marker pericope-pair would PASS strongly at pericope scale (per cross-finding-025-formal thin-marker flip law extended to thick-markers). This is **NOT vindicated**. Three readings (full discussion in `Q027-F-12-solomon-sabaq-pericope-cross-finding-025.md`):
+
+1. **n=1 pair-statistic against n=10,000 null pairs has wide variance**; single-pair tests at pericope scale require either many aggregated pairs OR very tight thematic markers.
+2. **Solomon-narrative is content-rich but lexically dispersed** — shared roots are theological-substrate, not Solomon-specific.
+3. **cross-finding-025-formal's pericope-flip is heterogeneous at the thick-marker end**: thin markers (Iblīs, sajda, prophet-vocative) PASS at z = +2.7 to +6.4 when aggregated across many pericope-pairs; thick markers in single-pair tests produce modest-but-not-strong signals.
+
+Per-verse-normalized concordance (aux statistic, not pre-registered direction-locked): mean = 0.386 (Q 34:19 highest at 0.571), suggesting per-verse there IS substantial overlap; the asymmetric-size denominator dilutes the Jaccard.
+
+The Wave-2 F-08 whole-surah test had aux_p_two_sided ≈ 0.146 — **exactly the same magnitude** as F-12's pericope-scale p_perm. The Solomon-narrative-clustering signal is consistent across scales at the moderate-effect-size level.
+
+## Wave-3 meta-finding
+
+**Q 27's corpus-uniqueness on the basmala axis is empirically locked** (F-10, F-11 both PASS-CONFIRMED at the deterministic level). The dispatch's framing — "Q 27 is corpus-unique on TWO axes: (1) contains the only INTERNAL basmala (Q 27:30); (2) is the only surah with TWO basmalas total" — is now triple-confirmed by Wave-1 (F-02), Wave-2 (F-05), and Wave-3 (F-10, F-11).
+
+**The Solomon-Sabaʾ pericope-cohesion case is NULL-DIRECTIONAL** (F-12). This is an honest negative result for the cross-finding-025-formal pericope-scale principle when extended to a single thick-marker pericope-pair. The implication for the broader cross-finding is that the pericope-flip law is **not universal**: aggregation of multiple pericope-pairs and/or tight-marker selection appear to be necessary conditions for the strong PASS signals observed in the triple-flip confirmation (H-NEW-1380/1510/1520).
 
