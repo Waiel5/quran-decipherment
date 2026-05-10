@@ -2,9 +2,9 @@
 surah: 41
 surah_name: Fuṣṣilat
 file_type: overview
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: HM-A high-entropy member; UAS rank 39/114 (top-quartile, 3rd in HM-7); contains Q 41:53 inner+outer signs verse
+verdict: HM-A high-entropy member; UAS rank 39/114 (top-quartile, 3rd in HM-7); contains Q 41:53 *āfāq* corpus-singleton; FR-tightest HM-7 pair is Q 41 ↔ Q 46 (not Q 41 ↔ Q 42)
 ---
 
 # Q 41 — Sūrat Fuṣṣilat (Detailed)
@@ -51,7 +51,9 @@ Classically debated as a *mushkil* (difficult passage) reconciling Q 41:9-12 ("t
 ### 4.2 The apologetic verse — Q 41:53
 *Sa-nurīhim āyātinā fī al-āfāqi wa-fī anfusihim ḥattā yatabayyana lahum annahu al-ḥaqq* — "We shall show them Our signs in the horizons and in themselves until it becomes clear to them that it is the truth".
 
-This is the **single most-cited verse in modern Islamic apologetic literature** for the inner+outer-signs argument (cf. al-Kaheel, Bucaille, modern *iʿjāz ʿilmī* corpus). Classical exegetes (al-Ṭabarī, al-Qurṭubī ad loc.) read it primarily as eschatological-historical: *al-āfāq* = the conquests / the spread of Islam; *fī anfusihim* = inner experience of believers post-conquest. Modern readings reorient *al-āfāq* to cosmology and *anfusihim* to anatomy — empirically weaker reading but apologetically dominant.
+This is the **single most-cited verse in modern Islamic apologetic literature** for the inner+outer-signs argument (cf. al-Kaheel, Bucaille, al-ʿAlī, M. Kūrkayl, modern *iʿjāz ʿilmī* corpus). Classical exegetes (al-Ṭabarī, al-Qurṭubī ad loc.) read it primarily as eschatological-historical: *al-āfāq* = the conquests / the spread of Islam; *fī anfusihim* = inner experience of believers post-conquest. Modern readings reorient *al-āfāq* to cosmology and *anfusihim* to anatomy — empirically weaker reading but apologetically dominant.
+
+**Empirical-lexical layer (Q041-F-02, 2026-05-09)**: The lexeme *آفاق* (āfāq, with U+0622 alif-madda) is a **corpus-singleton at Q 41:53** — appearing in exactly 1 verse in the entire 6,236-verse Qurʾān. The *āfāq* × *anfus* co-occurrence is also a corpus-singleton, as is the full collocation *في الآفاق وفي أنفسهم*. This lexical hapax status (descriptive-neutral) **explains** the verse's outsized apologetic prominence without **validating** the modern hermeneutic — a hapax can carry any meaning; the classical-source consensus (eschatological-historical) remains the empirically settled reading. See [[Q041-fussilat/06-novel-findings|novel findings §Finding 2]].
 
 ### 4.3 The disputers' confession (Q 41:5)
 The opening polemic (v. 5): *"Our hearts are in coverings (akinna) from what you call us to, and in our ears is heaviness (waqr), and between us and you is a barrier (ḥijāb)…"* — three-fold sensory-cognitive denial of the message. This verse is a textbook case for classical *ḥijāb* exegesis (al-Rāzī).
@@ -79,10 +81,22 @@ Compact narrative cycle of ʿĀd's *rīḥ ṣarṣarin ʿātiyatan* (cold, ragi
 - [[hawamim-7-cluster-bifurcation|HM-7 cluster bifurcation]] — Q 41 highest UAS in HM-7
 - [[h-new-840-unified-architectural-score|H-NEW-840]] — UAS rank 39
 
+## 6a. Wave 2026-05-09 findings summary
+
+| ID | Test | Verdict |
+|:--|:--|:--|
+| Q041-F-01 | *istiqāma* Q 41:30 ↔ Q 46:13 twin formula corpus-singleton | VINDICATED |
+| Q041-F-02 | *āfāq* corpus-singleton at Q 41:53 (3 sub-hypotheses) | VINDICATED (3/3) |
+| Q041-F-03 | Q 41 ↔ Q 42 tightest HM-7 FR pair (al-Suyūṭī "two cousins") | **NULL (pre-commit violation)** — Q 41 ↔ Q 46 is tightest (rank 1); Q 41 ↔ Q 42 is rank 9/21 |
+| Q041-F-04 | 6-day-creation 8-pericope cohesion root-Jaccard | VINDICATED (p<10⁻⁴) |
+
+**Key refinement**: HM-7 cluster bifurcation (HM-A vs HM-B) holds on **prosodic axes** (rhyme-entropy, multi-rāwī) but **NOT on root-content axes**. Q 41 ↔ Q 46 (the *istiqāma* twin AND the ʿĀd-narrative twin) is the FR-tightest HM-7 pair, crossing the HM-A/HM-B line.
+
 ## 7. Honest limits
 
-1. Q 41:53 modern apologetic reading is empirically weaker than classical reading — not yet falsified on disk; flagged for follow-up.
-2. The "two + four = six days" debate is a classical *mushkil*, not yet quantified.
-3. No surah-internal *thuluth al-Qurʾān* tradition; theological-iʿjāz axis low.
+1. Q 41:53 modern apologetic reading is classically unsupported (al-Ṭabarī, al-Qurṭubī, Ibn Kathīr consensus). The lexical hapax finding (Q041-F-02) is *descriptive-neutral*: it explains modern prominence without validating modern hermeneutic.
+2. Q041-F-03 NULL: al-Suyūṭī's "two cousins" *munāsaba* claim is a thematic-rhetorical observation, NOT a lexical-statistical one. *Munāsaba* axis ≠ FR-root axis.
+3. The "two + four = six days" debate is a classical *mushkil*, not yet quantified.
+4. No surah-internal *thuluth al-Qurʾān* tradition; theological-iʿjāz axis low.
 
 *Bismillāhi al-Raḥmāni al-Raḥīm.*

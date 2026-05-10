@@ -1,0 +1,496 @@
+{
+  "finding_id": "Q041-F-04",
+  "pre_reg_sha256": "ea3a180a6f9ba2259f2c6cfee8587f06672d707cddc9785a936693cae9078604",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, pericope-bag union, Jaccard similarity, length-matched permutation null, Hafs-Kufan, Mashriqi)",
+  "pericopes": [
+    {
+      "label": "Q7:54",
+      "verses": [
+        [
+          7,
+          54
+        ]
+      ],
+      "n_unique_roots": 21,
+      "sample_roots": [
+        "$ms",
+        "Alh",
+        "Amr",
+        "ArD",
+        "Elm",
+        "Er$",
+        "Hvv",
+        "Tlb",
+        "brk",
+        "g$w",
+        "lyl",
+        "nhr",
+        "njm",
+        "qmr",
+        "rbb"
+      ]
+    },
+    {
+      "label": "Q10:3",
+      "verses": [
+        [
+          10,
+          3
+        ]
+      ],
+      "n_unique_roots": 16,
+      "sample_roots": [
+        "$fE",
+        "*kr",
+        "A*n",
+        "Alh",
+        "Amr",
+        "ArD",
+        "Ebd",
+        "Er$",
+        "bEd",
+        "dbr",
+        "rbb",
+        "smw",
+        "stt",
+        "swy",
+        "xlq"
+      ]
+    },
+    {
+      "label": "Q11:7",
+      "verses": [
+        [
+          11,
+          7
+        ]
+      ],
+      "n_unique_roots": 18,
+      "sample_roots": [
+        "ArD",
+        "Eml",
+        "Er$",
+        "Hsn",
+        "bEd",
+        "bEv",
+        "blw",
+        "byn",
+        "kfr",
+        "kwn",
+        "mwh",
+        "mwt",
+        "qwl",
+        "sHr",
+        "smw"
+      ]
+    },
+    {
+      "label": "Q25:59",
+      "verses": [
+        [
+          25,
+          59
+        ]
+      ],
+      "n_unique_roots": 11,
+      "sample_roots": [
+        "ArD",
+        "Er$",
+        "byn",
+        "rHm",
+        "sAl",
+        "smw",
+        "stt",
+        "swy",
+        "xbr",
+        "xlq",
+        "ywm"
+      ]
+    },
+    {
+      "label": "Q32:4",
+      "verses": [
+        [
+          32,
+          4
+        ]
+      ],
+      "n_unique_roots": 13,
+      "sample_roots": [
+        "$fE",
+        "*kr",
+        "Alh",
+        "ArD",
+        "Er$",
+        "byn",
+        "dwn",
+        "smw",
+        "stt",
+        "swy",
+        "wly",
+        "xlq",
+        "ywm"
+      ]
+    },
+    {
+      "label": "Q41:9-12",
+      "verses": [
+        [
+          41,
+          9
+        ],
+        [
+          41,
+          10
+        ],
+        [
+          41,
+          11
+        ],
+        [
+          41,
+          12
+        ]
+      ],
+      "n_unique_roots": 32,
+      "sample_roots": [
+        "Amr",
+        "ArD",
+        "Aty",
+        "Elm",
+        "Ezz",
+        "HfZ",
+        "SbH",
+        "TwE",
+        "brk",
+        "dnw",
+        "dxn",
+        "fwq",
+        "jEl",
+        "kfr",
+        "kll"
+      ]
+    },
+    {
+      "label": "Q50:38",
+      "verses": [
+        [
+          50,
+          38
+        ]
+      ],
+      "n_unique_roots": 8,
+      "sample_roots": [
+        "ArD",
+        "byn",
+        "lgb",
+        "mss",
+        "smw",
+        "stt",
+        "xlq",
+        "ywm"
+      ]
+    },
+    {
+      "label": "Q57:4",
+      "verses": [
+        [
+          57,
+          4
+        ]
+      ],
+      "n_unique_roots": 16,
+      "sample_roots": [
+        "Alh",
+        "ArD",
+        "Elm",
+        "Eml",
+        "Er$",
+        "Erj",
+        "bSr",
+        "kwn",
+        "nzl",
+        "smw",
+        "stt",
+        "swy",
+        "wlj",
+        "xlq",
+        "xrj"
+      ]
+    }
+  ],
+  "observed_mean_pairwise_jaccard": 0.2867024923418193,
+  "pair_jaccard_matrix": [
+    {
+      "pair": [
+        "Q7:54",
+        "Q10:3"
+      ],
+      "jaccard": 0.37037037037037035,
+      "intersection_size": 10,
+      "union_size": 27
+    },
+    {
+      "pair": [
+        "Q7:54",
+        "Q11:7"
+      ],
+      "jaccard": 0.18181818181818182,
+      "intersection_size": 6,
+      "union_size": 33
+    },
+    {
+      "pair": [
+        "Q7:54",
+        "Q25:59"
+      ],
+      "jaccard": 0.28,
+      "intersection_size": 7,
+      "union_size": 25
+    },
+    {
+      "pair": [
+        "Q7:54",
+        "Q32:4"
+      ],
+      "jaccard": 0.3076923076923077,
+      "intersection_size": 8,
+      "union_size": 26
+    },
+    {
+      "pair": [
+        "Q7:54",
+        "Q41:9-12"
+      ],
+      "jaccard": 0.20454545454545456,
+      "intersection_size": 9,
+      "union_size": 44
+    },
+    {
+      "pair": [
+        "Q7:54",
+        "Q50:38"
+      ],
+      "jaccard": 0.20833333333333334,
+      "intersection_size": 5,
+      "union_size": 24
+    },
+    {
+      "pair": [
+        "Q7:54",
+        "Q57:4"
+      ],
+      "jaccard": 0.32142857142857145,
+      "intersection_size": 9,
+      "union_size": 28
+    },
+    {
+      "pair": [
+        "Q10:3",
+        "Q11:7"
+      ],
+      "jaccard": 0.25925925925925924,
+      "intersection_size": 7,
+      "union_size": 27
+    },
+    {
+      "pair": [
+        "Q10:3",
+        "Q25:59"
+      ],
+      "jaccard": 0.35,
+      "intersection_size": 7,
+      "union_size": 20
+    },
+    {
+      "pair": [
+        "Q10:3",
+        "Q32:4"
+      ],
+      "jaccard": 0.5263157894736842,
+      "intersection_size": 10,
+      "union_size": 19
+    },
+    {
+      "pair": [
+        "Q10:3",
+        "Q41:9-12"
+      ],
+      "jaccard": 0.17073170731707318,
+      "intersection_size": 7,
+      "union_size": 41
+    },
+    {
+      "pair": [
+        "Q10:3",
+        "Q50:38"
+      ],
+      "jaccard": 0.2631578947368421,
+      "intersection_size": 5,
+      "union_size": 19
+    },
+    {
+      "pair": [
+        "Q10:3",
+        "Q57:4"
+      ],
+      "jaccard": 0.3333333333333333,
+      "intersection_size": 8,
+      "union_size": 24
+    },
+    {
+      "pair": [
+        "Q11:7",
+        "Q25:59"
+      ],
+      "jaccard": 0.3181818181818182,
+      "intersection_size": 7,
+      "union_size": 22
+    },
+    {
+      "pair": [
+        "Q11:7",
+        "Q32:4"
+      ],
+      "jaccard": 0.2916666666666667,
+      "intersection_size": 7,
+      "union_size": 24
+    },
+    {
+      "pair": [
+        "Q11:7",
+        "Q41:9-12"
+      ],
+      "jaccard": 0.13636363636363635,
+      "intersection_size": 6,
+      "union_size": 44
+    },
+    {
+      "pair": [
+        "Q11:7",
+        "Q50:38"
+      ],
+      "jaccard": 0.3,
+      "intersection_size": 6,
+      "union_size": 20
+    },
+    {
+      "pair": [
+        "Q11:7",
+        "Q57:4"
+      ],
+      "jaccard": 0.3076923076923077,
+      "intersection_size": 8,
+      "union_size": 26
+    },
+    {
+      "pair": [
+        "Q25:59",
+        "Q32:4"
+      ],
+      "jaccard": 0.5,
+      "intersection_size": 8,
+      "union_size": 16
+    },
+    {
+      "pair": [
+        "Q25:59",
+        "Q41:9-12"
+      ],
+      "jaccard": 0.16216216216216217,
+      "intersection_size": 6,
+      "union_size": 37
+    },
+    {
+      "pair": [
+        "Q25:59",
+        "Q50:38"
+      ],
+      "jaccard": 0.46153846153846156,
+      "intersection_size": 6,
+      "union_size": 13
+    },
+    {
+      "pair": [
+        "Q25:59",
+        "Q57:4"
+      ],
+      "jaccard": 0.35,
+      "intersection_size": 7,
+      "union_size": 20
+    },
+    {
+      "pair": [
+        "Q32:4",
+        "Q41:9-12"
+      ],
+      "jaccard": 0.125,
+      "intersection_size": 5,
+      "union_size": 40
+    },
+    {
+      "pair": [
+        "Q32:4",
+        "Q50:38"
+      ],
+      "jaccard": 0.4,
+      "intersection_size": 6,
+      "union_size": 15
+    },
+    {
+      "pair": [
+        "Q32:4",
+        "Q57:4"
+      ],
+      "jaccard": 0.38095238095238093,
+      "intersection_size": 8,
+      "union_size": 21
+    },
+    {
+      "pair": [
+        "Q41:9-12",
+        "Q50:38"
+      ],
+      "jaccard": 0.1111111111111111,
+      "intersection_size": 4,
+      "union_size": 36
+    },
+    {
+      "pair": [
+        "Q41:9-12",
+        "Q57:4"
+      ],
+      "jaccard": 0.14285714285714285,
+      "intersection_size": 6,
+      "union_size": 42
+    },
+    {
+      "pair": [
+        "Q50:38",
+        "Q57:4"
+      ],
+      "jaccard": 0.2631578947368421,
+      "intersection_size": 5,
+      "union_size": 19
+    }
+  ],
+  "null_distribution_summary": {
+    "min": 0.0,
+    "p5": 0.00763688988140059,
+    "p25": 0.01581852315235028,
+    "p50": 0.023211705243991843,
+    "p75": 0.03216993509180822,
+    "p95": 0.049238357163500904,
+    "p99": 0.06483666028860537,
+    "max": 0.09270051183889087,
+    "mean": 0.02508840386127061
+  },
+  "n_perms_ge_observed": 0,
+  "p_value": 9.999000099990002e-05,
+  "direction_pre_committed": "observed > null mean",
+  "direction_match": true,
+  "observed_minus_null_mean": 0.26161408848054873,
+  "verdict": "VINDICATED"
+}

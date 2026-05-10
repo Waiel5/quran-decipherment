@@ -2,7 +2,7 @@
 surah: 41
 surah_name: Fuṣṣilat
 file_type: tafsir-survey
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
 ---
 
@@ -78,11 +78,20 @@ Source: `/Users/grey/Downloads/quran/data/literature/classical-tafsir/raw/ibn-ka
 
 ## 9. The Q 41:53 modern-vs-classical divergence
 
-Modern apologetic readings (Bucaille 1976; *iʿjāz ʿilmī* corpus including al-Kaheel `data/literature/al-kaheel/`) read *al-āfāq* as cosmology (galaxies, stars) and *fī anfusihim* as anatomy (embryology, biology). 
+Modern apologetic readings (Bucaille 1976; *iʿjāz ʿilmī* corpus including al-Kaheel `data/literature/al-kaheel/`; al-ʿAlī *al-Iʿjāz al-ʿilmī fī al-Qurʾān al-karīm*; M. Kūrkayl) read *al-āfāq* as cosmology (galaxies, stars) and *fī anfusihim* as anatomy (embryology, biology).
 
 **Classical sources do NOT support this reading**. Even al-Rāzī's secondary cosmological reading is contextually-bounded (referring to ordinary cosmic signs, not modern science). The modern reading is a 20th-century innovation.
 
-This is the project's clearest case of **modern-vs-classical hermeneutic divergence** — flagged for cross-reference [[h-new-iʿjāz-ʿilmī-classical-anchor-test]] (TODO).
+**Empirical-lexical finding (Q041-F-02, 2026-05-09)**: The verse's lexical structure has a **3-fold corpus-singleton character**:
+1. *āfāq* (آفاق with U+0622 alif-madda) — single attestation in the corpus (hapax-lexeme).
+2. *āfāq* × *anfus* co-occurrence — single attestation.
+3. Full collocation *في الآفاق وفي أنفسهم* — single attestation.
+
+This **explains** the verse's outsized modern apologetic prominence (a hapax verse is a *natural rhetorical anchor*) but does NOT **validate** the modern hermeneutic. The classical-source consensus is the empirically settled meaning.
+
+al-Ghazālī's general *iʿjāz al-ʿilmī* framework (*Jawāhir al-Qurʾān*) is **gnostic-spiritual**, NOT physical-empirical. Modern apologetic literature selectively reads al-Ghazālī's "all sciences in the Qurʾān" claim out of its mystical-gnostic context.
+
+This is the project's clearest case of **modern-vs-classical hermeneutic divergence**, now anchored to a quantitative lexical-singularity finding. See [[Q041-fussilat/05-classical-claims-audit|claims audit §6a-6d]] and [[Q041-fussilat/06-novel-findings|novel findings §Finding 2]].
 
 ## 10. Honest limits
 

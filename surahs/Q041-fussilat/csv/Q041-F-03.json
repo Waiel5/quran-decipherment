@@ -1,0 +1,212 @@
+{
+  "finding_id": "Q041-F-03",
+  "pre_reg_sha256": "949d624bd39fe62f0b946eb2f58426ff812c1a3e5fff8dbad1c5d4299c27d78b",
+  "seed": 20260509,
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, Hafs-Kufan, Mashriqi, FR-distance per H-NEW-111)",
+  "pre_committed_tightest_pair": [
+    41,
+    42
+  ],
+  "observed_tightest_pair": [
+    41,
+    46
+  ],
+  "observed_tightest_distance": 0.725446,
+  "q41_q42_fr_distance": 0.854007,
+  "q41_q42_rank_among_21_pairs": 9,
+  "h1_pass": false,
+  "pre_commit_violation": true,
+  "all_hm7_pairs_sorted_tightest_first": [
+    {
+      "pair": [
+        41,
+        46
+      ],
+      "fr_distance": 0.725446
+    },
+    {
+      "pair": [
+        41,
+        45
+      ],
+      "fr_distance": 0.799351
+    },
+    {
+      "pair": [
+        42,
+        45
+      ],
+      "fr_distance": 0.801067
+    },
+    {
+      "pair": [
+        45,
+        46
+      ],
+      "fr_distance": 0.811217
+    },
+    {
+      "pair": [
+        40,
+        46
+      ],
+      "fr_distance": 0.818382
+    },
+    {
+      "pair": [
+        40,
+        45
+      ],
+      "fr_distance": 0.826717
+    },
+    {
+      "pair": [
+        40,
+        41
+      ],
+      "fr_distance": 0.840334
+    },
+    {
+      "pair": [
+        44,
+        45
+      ],
+      "fr_distance": 0.843896
+    },
+    {
+      "pair": [
+        41,
+        42
+      ],
+      "fr_distance": 0.854007
+    },
+    {
+      "pair": [
+        41,
+        43
+      ],
+      "fr_distance": 0.855702
+    },
+    {
+      "pair": [
+        43,
+        44
+      ],
+      "fr_distance": 0.864706
+    },
+    {
+      "pair": [
+        42,
+        46
+      ],
+      "fr_distance": 0.866116
+    },
+    {
+      "pair": [
+        43,
+        46
+      ],
+      "fr_distance": 0.874691
+    },
+    {
+      "pair": [
+        40,
+        42
+      ],
+      "fr_distance": 0.89286
+    },
+    {
+      "pair": [
+        43,
+        45
+      ],
+      "fr_distance": 0.901133
+    },
+    {
+      "pair": [
+        44,
+        46
+      ],
+      "fr_distance": 0.903213
+    },
+    {
+      "pair": [
+        40,
+        43
+      ],
+      "fr_distance": 0.910869
+    },
+    {
+      "pair": [
+        41,
+        44
+      ],
+      "fr_distance": 0.914883
+    },
+    {
+      "pair": [
+        42,
+        44
+      ],
+      "fr_distance": 0.951261
+    },
+    {
+      "pair": [
+        40,
+        44
+      ],
+      "fr_distance": 0.965019
+    },
+    {
+      "pair": [
+        42,
+        43
+      ],
+      "fr_distance": 0.991218
+    }
+  ],
+  "q41_top10_corpus_neighbors_for_context": [
+    {
+      "partner_surah": 46,
+      "fr_distance": 0.725446
+    },
+    {
+      "partner_surah": 32,
+      "fr_distance": 0.768379
+    },
+    {
+      "partner_surah": 45,
+      "fr_distance": 0.799351
+    },
+    {
+      "partner_surah": 34,
+      "fr_distance": 0.802072
+    },
+    {
+      "partner_surah": 25,
+      "fr_distance": 0.807959
+    },
+    {
+      "partner_surah": 36,
+      "fr_distance": 0.819084
+    },
+    {
+      "partner_surah": 10,
+      "fr_distance": 0.819796
+    },
+    {
+      "partner_surah": 39,
+      "fr_distance": 0.82777
+    },
+    {
+      "partner_surah": 40,
+      "fr_distance": 0.840334
+    },
+    {
+      "partner_surah": 13,
+      "fr_distance": 0.846505
+    }
+  ],
+  "verdict": "NULL-PRE-COMMIT-VIOLATION",
+  "interpretation": "Q 41 ↔ Q 42 is rank-9 of 21 HM-7 pairs by FR distance. The actual tightest pair is Q41 ↔ Q46 at FR=0.725446. Per protocol §1.3 (equal NULL prominence) and §1.8 (honest pre-commit violations), the al-Suyūṭī \"two cousins\" claim does NOT translate to FR-root tightness within HM-7. The FR-tightest HM-7 pair is Q 41 ↔ Q 46 — already known to be istiqāma + ʿĀd twin (Q041-F-01)."
+}

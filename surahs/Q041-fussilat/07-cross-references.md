@@ -2,7 +2,7 @@
 surah: 41
 surah_name: Fuṣṣilat
 file_type: cross-references
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
 ---
 
@@ -64,7 +64,13 @@ phase: B+
 
 - [[Q041-fussilat/04-hadith-corpus|Q 41 ḥadīth corpus]] — 28 sajda al-tilāwa hadiths in 8 of 9 books.
 
-## 8. Honest limits
+## 8. Wave 2026-05-09 cross-finding integrations
 
-- Q 32 al-Sajda not yet fully built; the name-cousin cross-link is identified but not anchored.
-- Modern-apologetic-vs-classical Q 41:53 hermeneutic test not yet run; flagged.
+- **Q041-F-02 (*āfāq* corpus-singleton)** — feeds the modern *iʿjāz ʿilmī* literature audit. Cross-link to `data/literature/al-kaheel/` and to the classical-vs-modern hermeneutic dichotomy. See [[Q041-fussilat/05-classical-claims-audit|claims audit §6a-6d]].
+- **Q041-F-03 NULL (al-Suyūṭī "two cousins")** — refines [[hawamim-7-cluster-bifurcation|HM-7 cluster bifurcation]] cross-finding. The HM-A/HM-B bifurcation is **prosodic-axis only**, NOT root-content axis. Q 41 ↔ Q 46 (the istiqāma + ʿĀd twin) is the FR-tightest HM-7 pair, crossing the bifurcation. Recorded as classical-claim-NULL contributing to the *munāsaba* axis ≠ FR-root axis disambiguation.
+- **Q041-F-04 (6-day creation pericope cohesion)** — strengthens [[cross-finding-025-marker-thickness|cross-finding-025]]. Empirically confirms that **topos-cohesion at pericope-scale** is detectable even when surah-scale cohesion is absent. Top-2 pairs: Q 10:3 ↔ Q 32:4 (J=0.526) and Q 25:59 ↔ Q 32:4 (J=0.500). Q 32 al-Sajda is the **central node** of the 6-day-creation lexical cluster — empirically and thematically.
+
+## 9. Honest limits
+
+- Q 32 al-Sajda not yet fully built; the name-cousin cross-link is identified, AND Q 32 is now empirically central to the 6-day-creation pericope cluster (Q041-F-04).
+- Modern-apologetic-vs-classical Q 41:53 hermeneutic test: Q041-F-02 establishes the lexical-singularity layer. The hermeneutic-decision-layer remains theological and not adjudicable empirically.
