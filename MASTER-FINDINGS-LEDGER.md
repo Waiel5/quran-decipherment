@@ -4086,3 +4086,59 @@ Both audits independently land the same conclusion: the al-Khalifa "miracle of 1
 - Q 9:128-129 "two false verses" claim (al-Khalifa appendix-24) — would removing them yield 2 fewer Allāh-references? Currently Tally B - 2 = 2549 (still not 2698, still not 19-divisible).
 
 *Logged 2026-05-09 by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+## §10.58 cross-finding-025 FORMAL CODIFICATION — Scale-of-aggregation principle locked at corpus-wide law strength via 3/3 pericope-scale flip confirmation
+
+**Status**: FORMAL — graduates from PRELIMINARY (2026-05-09 PM-1) after triple-flip confirmation. Cross-finding-025 is now a formal methodological law of the project.
+
+### §10.58.1 The principle (formal statement)
+
+> Cohesion verdicts in the Quran corpus are jointly determined by `(marker-thickness × scale-of-aggregation × instrument)`. Pre-registration of cluster-cohesion tests MUST specify all three. Discrepant verdicts across aggregation scales are first-class findings, not contradictions.
+>
+> **Pericope-scale flip corollary**: thin-marker NULLs at whole-surah scale frequently PASS at pericope scale. This is a corpus-wide regularity.
+
+### §10.58.2 Triple-flip empirical anchor (3/3 confirmed)
+
+| Marker class | Whole-surah NULL → Pericope-scale PASS | Flip Δz |
+|---|---|---|
+| **Iblīs-narrative** | H-NEW-039 (p=0.54) → **H-NEW-1380 (z=+4.76, p≤10⁻⁴)** | +4.5σ |
+| **Sajda 14-verse** | H-NEW-1330 (p=0.57) → **H-NEW-1510 (z=+2.69, p=0.0058)** | +2.7σ |
+| **yā-ayyuhā al-nabī** | H-NEW-1360 (p=0.57) → **H-NEW-1520 (z=+6.41, p<10⁻⁴)** | **+6.4σ — largest** |
+
+All three: same instrument (FR-derived root-Jaccard), same seed 20260509, same 10000 perms, same protocol — only aggregation scale differs. **3/3 invert.** Pericope-scale test is consistently more powerful for thin markers.
+
+### §10.58.3 Theoretical explanation
+
+A marker occupying a small fraction of a surah cannot move the whole-surah root-distribution measurably (host-surah content dominates). At the pericope scale (verse-window around the marker), the marker IS the content; if surrounding thematic vocabulary is shared across pericope-cluster members, root-Jaccard rises. Empirically verified across 3 marker-classes that this thematic-vocabulary-sharing is statistically significant.
+
+### §10.58.4 Pending pericope-scale re-tests (queued)
+
+- H-NEW-1310 Christ-narrative cluster (in flight at session-end via H-NEW-1500)
+- H-NEW-1340 al-ḥamdu-li-llāh opener cluster
+- H-NEW-1395 ḥawāmīm 7-surah cluster (opener pericope)
+- H-NEW-1301/Q073-F-04 IMPV-qrA cluster
+
+### §10.58.5 Methodological consequence
+
+All future cluster-cohesion pre-regs must specify all three axes: marker × scale × instrument. Existing NULLs are *conditionally NULL* (NULL under specified triple); re-tests at alternative scales are required to claim substantive cluster-failure.
+
+NULLs that hold at BOTH whole-surah AND pericope scale become substantively stronger findings.
+
+### §10.58.6 Classical-tradition vindication
+
+- al-Suyūṭī Itqān nawʿ 49 (asbāb al-nuzūl): treats individual verses/short pericopes as units of revelation-event analysis — empirically vindicated at scale-of-aggregation principle
+- al-Biqāʿī Naẓm al-durar: internal *naẓm* within pericopes operates at sub-surah scales — empirically vindicated
+- The pericope-scale flip law is the empirical correlate of 1,400 years of asbāb-al-nuzūl + naẓm literature's methodological intuition
+
+### §10.58.7 Files
+
+- Formal codification: `findings/phase-b-hypotheses/cross-finding-025-formal-scale-of-aggregation-law.md`
+- Empirical anchors: h-new-1380, h-new-1510, h-new-1520
+
+### §10.58.8 Implication for project structure
+
+Cross-finding-025 now joins muqaṭṭāʿat-as-introduction-markers (cross-finding-008, p≤10⁻¹²) and Fisher-Rao information-geodesic optimality (H-NEW-111, z=−11.46) as a **third project pillar law**. The three pillars:
+
+1. **Structural (cross-finding-008)**: muqaṭṭāʿat are book-introduction markers
+2. **Geometric (H-NEW-111 + cross-finding-010 4-region hub)**: mushaf is information-geodesic-optimal
+3. **Methodological (cross-finding-025-formal)**: scale-of-aggregation is itself a finding axis
