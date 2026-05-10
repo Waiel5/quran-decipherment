@@ -2,7 +2,7 @@
 surah: 40
 surah_name: Ghāfir
 file_type: novel-findings
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
 ---
 
@@ -87,15 +87,68 @@ This is reported as a descriptive observation (not a formal pre-registered test)
 
 ---
 
+## Finding 5: Q040-F-02 — HM corpus-EXACT 7-surah identity VINDICATED
+
+**Pre-registration**: [[Q040-F-02-hm-corpus-exact-prereg]] — SHA `2932348c71e35d72103fc8ffe12ac0dafecaa70cf303e450801952a1d65b5b45`.
+**Script**: `/Users/grey/Downloads/quran/scripts/Q040_F_02_hm_corpus_exact.py`.
+**Output**: `csv/Q040-F-02.json`.
+
+**Result**: The set of surahs whose v.1 (no-tashkeel) is exactly *حم* is precisely {Q 40, 41, 42, 43, 44, 45, 46} — corpus-EXACT 7-tuple. All 7 first verses string-equal "حم" (Hafs-Kufan verse division).
+
+**Verdict**: **VINDICATED** — the ḥawāmīm-7 cluster definition used by H-NEW-1395 (and earlier H-NEW-570) is corpus-EXACT. Q 42 al-Shūrā has *عسق* as a separate v.2 in Hafs-Kufan, so its v.1 is *حم* alone — matching the test.
+
+**Significance**: foundational definitional sanity check for HM-cluster claims.
+
+---
+
+## Finding 6: Q040-F-03 — Q 40 *ghfr*-root density rank — NULL
+
+**Pre-registration**: [[Q040-F-03-ghfr-density-rank-prereg]] — SHA `3854e00736e0ff4534212d21d7149048afc61daef100f828ed9322db1d8c721d`.
+**Script**: `/Users/grey/Downloads/quran/scripts/Q040_F_03_ghfr_density.py`.
+**Output**: `csv/Q040-F-03.json`.
+
+**Pre-committed direction**: rank(Q 40) ≤ 5.
+
+**Result**:
+- Q 40 *gfr*-count = 5; tokens = 1296; density = 3.858 per 1000.
+- Q 40 rank = **25 / 114**.
+- Top-5 by density: Q 110 (50.0, 1 token in 20-word surah), Q 71 (21.74), Q 63 (20.51), Q 60 (13.26), Q 64 (11.36).
+
+**Verdict**: **NULL** — naming-density direction does not hold. Q 40 is named *Ghāfir* from a single divine-attribute verse (Q 40:3), NOT from saturating *ghfr*-lexicon throughout the surah. This contrasts substantively with Q 23 al-Muʾminūn (rank-1 *ʾmn* density) and Q 58 al-Mujādila (rank-3 *jdl*). Q 40's naming reflects **narrative-thematic prominence of a key verse**, not **lexical saturation** — a substantively distinct naming logic worth noting against the "names-reflect-density" prior.
+
+**Equal-NULL-prominence note**: This is a clean direction-locked NULL. The classical name *Ghāfir* is an **attribute-pointing name**, not a **density-pointing name**. Top-5 by density is dominated by short surahs where a single *ghfr*-token saturates a small denominator (Q 110 al-Naṣr has 1/20). Even by raw count, Q 40 is rank 16 (the legal/narrative-heavy Q 2, 3, 4, 5, 9 dominate raw counts).
+
+---
+
+## Finding 7: Q040-F-04 — Believer-of-Pharaoh's-family pericope corpus-SINGLETON VINDICATED
+
+**Pre-registration**: [[Q040-F-04-believer-pharaoh-singleton-prereg]] — SHA `cab6798de756be312cb96be7c19fb4049bdd737a1d285cc3b081486cc3331fe6`.
+**Script**: `/Users/grey/Downloads/quran/scripts/Q040_F_04_believer_pharaoh_singleton.py`.
+**Output**: `csv/Q040-F-04.json`.
+
+**Result**: Across the entire no-tashkeel corpus, the substring *مؤمن* AND substring *آل فرعون* co-occur in EXACTLY ONE verse: **Q 40:28** — *wa-qāla rajulun muʾminun min āli Firʿawna yaktumu īmānahu...* "And a believing man from Pharaoh's family, who was concealing his faith, said: would you kill a man because he says 'My Lord is Allah'..."
+
+**Verdict**: **CORPUS-SINGLETON VINDICATED** — the unnamed *muʾmin min āl Firʿawn* is empirically a corpus-singleton at the phrase-level. The 17-verse dramatic monologue (Q 40:28-44) that follows is unique in the Quran: a covert believing relative of a Quranic tyrant delivers an extended rhetorical defense.
+
+**Classical anchoring**: al-Ṭabarī (*Jāmiʿ al-bayān* ad Q 40:28), al-Qurṭubī (*al-Jāmiʿ* ad loc.), Ibn Kathīr (tafsīr Sūrat Ghāfir, section 4 opening) all identify this figure as foundational to the *al-Muʾmin* alternate name of the surah. The corpus-singleton phrase-level test now anchors the classical observation in a falsifiable string-matching protocol.
+
+**Narrative-level kinship acknowledged**: Q 28:9 (Pharaoh's wife Āsiya rescuing Mūsā) and Q 66:11 (Āsiya as faith-exemplar) are also "believer inside Pharaoh's family" narratives, but use *imraʾat Firʿawn* phrasing, not *muʾmin min āl Firʿawn* — so they are NOT counted as hits by the pre-committed protocol. The narrative-type kinship (faithful kin of a tyrant) has 3 corpus exemplars; the phrase-singleton has exactly 1.
+
+---
+
 ## 5. Honest limits
 
-1. **Q040-F-01 is single-test** — replication via stem-root vs. lemma-root operationalization needed for full robustness.
-2. **Findings 2-3 are descriptive / post-hoc** — flagged MW-7-capped.
-3. **The classical thematic-vindication frame** (Finding 1) is the strongest empirical result for Q 40; weaker claims are flagged.
+1. **Q040-F-01 (jadāl-density z=+8.75)** is single-test — replication via stem-root vs. lemma-root operationalization needed for full robustness.
+2. **Findings 2-3 (Q 39↔Q 40 echo, *muʾmin* density rank 2)** are descriptive / post-hoc — flagged MW-7-capped.
+3. **Findings 5-7 (Q040-F-02 to F-04)** are direction-locked pre-registered tests landed 2026-05-09; Q040-F-02 and F-04 VINDICATED, Q040-F-03 NULL (with equal prominence).
+4. The Q040-F-03 NULL is interesting in itself: it falsifies the simple "names reflect lexical density" prior for Q 40 and shifts the explanation toward attribute-naming.
 
 ## 6. Cross-references
 
 - [[Q040-ghafir/preregs/Q040-F-01-jadal-density-prereg|Q040-F-01 pre-registration]]
+- [[Q040-ghafir/preregs/Q040-F-02-hm-corpus-exact-prereg|Q040-F-02 pre-registration]]
+- [[Q040-ghafir/preregs/Q040-F-03-ghfr-density-rank-prereg|Q040-F-03 pre-registration]]
+- [[Q040-ghafir/preregs/Q040-F-04-believer-pharaoh-singleton-prereg|Q040-F-04 pre-registration]]
 - [[Q040-ghafir/05-classical-claims-audit|Q 40 claims audit]]
 - [[Q040-ghafir/03-tafsir-survey|Q 40 tafsīr]]
-- [[hawamim-7-cluster-synthesis|HM-7 cluster synthesis]] — *jadāl* theme aggregated across HM-A
+- [[h-new-1395-hawamim-cluster|H-NEW-1395]] — HM-7 FR-cohesion NULL (Q 40 opens the cluster)

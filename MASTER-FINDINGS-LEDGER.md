@@ -2995,6 +2995,62 @@ The PASS/FAIL boundary at ~30% marker-thickness now has 5 PASS + 5 FAIL data poi
 - `surahs/Q058-al-mujadala/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts
 - `surahs/Q073-al-muzzammil/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts
 
+## §10.49 Q 40 Ghāfir Wave-H follow-up + H-NEW-1395 ḥawāmīm 7-cluster FR-cohesion NULL
+
+**Status**: 3 new pre-registered Q040-local tests (2 VINDICATED, 1 NULL) + 1 corpus-wide HM-cluster cohesion test (NULL with valid PC). Adds the ḥawāmīm to the growing data point set for cross-finding-025 marker-thickness rule.
+
+### §10.49.1 Q 40 Ghāfir surah-local tests (date 2026-05-09)
+
+| ID | Test | Pre-reg SHA | Verdict |
+|:--|:--|:--|:--|
+| **Q040-F-02** | HM corpus-EXACT 7-surah identity | `2932348c71e35d72103fc8ffe12ac0dafecaa70cf303e450801952a1d65b5b45` | **VINDICATED** — {Q 40-46} exactly, all v.1 == "حم" (Hafs-Kufan) |
+| **Q040-F-03** | Q 40 *ghfr*-root density rank corpus 114, top-5 direction | `3854e00736e0ff4534212d21d7149048afc61daef100f828ed9322db1d8c721d` | **NULL** — rank 25/114 (density 3.858/1000). Q 40's *Ghāfir* name is attribute-pointing not density-pointing; falsifies naïve naming-density prior. |
+| **Q040-F-04** | Believer-of-Pharaoh's-family pericope (Q 40:28-44) corpus-singleton | `cab6798de756be312cb96be7c19fb4049bdd737a1d285cc3b081486cc3331fe6` | **VINDICATED** — Q 40:28 is the unique verse containing both *مؤمن* and *آل فرعون*; 17-verse dramatic monologue (Q 40:28-44) is corpus-unique narrative type. |
+
+### §10.49.2 H-NEW-1395 ḥawāmīm 7-cluster FR-roots cohesion
+
+**Status**: NULL (CONFIRMED-NULL via valid PC). HM-7 is NOT FR-cohesive on root distribution at Bonferroni α=0.025.
+
+**Pre-reg**: `findings/phase-b-hypotheses/prereg-h-new-1395-hawamim-cluster.md` SHA `06bc435a00d5622d29c8e3d459ffe8083e020aafa0ef9fa0eac83583ea9f296f`
+**Run**: seed 20260509, n_perm 10,000, k=2 cells (Bonferroni α_corr=0.025), MW-5 PC = 4-of-10 H-NEW-1190 adraka-mā sub-sample.
+
+**Results**:
+- Observed d̄(HM-7) = **0.8672** (direction-consistent: below null mean)
+- Cell A (uniform-7-of-114): null mean 0.9230, **p = 0.2086** ✗
+- Cell B (length-matched ±20%, total 412 verses): **p = 0.0514** ✗ (borderline, just above α)
+- MW-5 PC: subsample {Q 69, 74, 97, 101}, p_pc = 0.0414 ✓ (instrument valid)
+
+**Verdict**: NULL — direction correct, effect sub-threshold. Replicates the pattern of H-NEW-1301 (IMPV-qrA NULL-BROKEN) and H-NEW-1340 (al-ḥamdu li-llāh NULL): **muqaṭṭāʿat-axis ≠ FR-root-distribution-axis**. The ḥawāmīm form a definitional cluster on a 2-grapheme orthographic marker, NOT a root-frequency cluster.
+
+**Connection to cross-finding-025**: HM-7 marker thickness = 2 graphemes / surah-average ~3,000 graphemes ≈ 0.07% per surah. Well below the 10% threshold the rule identifies. Predicted by the rule; observed NULL confirms.
+
+**Classical claim status**: Ibn Masʿūd (*dībāj al-Qurʾān*, al-Suyūṭī *Itqān* nawʿ 17), Ibn ʿAbbās (*lubāb al-Qurʾān*, Ibn Kathīr opening of Sūrat Ghāfir) treated the ḥawāmīm as a coherent thematic family. Empirically NOT vindicated on the FR-root-distribution axis. Future tests on theme-keyword density, iʿjāz signature similarity, eschatological-vocabulary cohesion could rescue the classical claim on a different axis.
+
+**Files**:
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1395-hawamim-cluster.md`
+- Script: `findings/phase-b-hypotheses/scripts/h-new-1395.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1395.json`
+- Findings: `findings/phase-b-hypotheses/h-new-1395-hawamim-cluster.md`
+- Q 40 surah-local artifacts: `surahs/Q040-ghafir/preregs/Q040-F-0[2-4]*.md`, `scripts/Q040_F_0[2-4]_*.py`, `surahs/Q040-ghafir/csv/Q040-F-0[2-4].json`
+
+### §10.49.3 Cumulative cross-finding-025 ledger update
+
+Cross-finding-025 (marker-thickness vs FR-cohesion threshold) data points (post H-NEW-1395):
+
+| Cluster | Marker thickness | FR-cohesion verdict |
+|:--|:--|:--|
+| Sajda-surahs (14) — H-NEW-1330 | low-axis, narrative-trigger | CONFIRMED-NULL |
+| IMPV-qrA — H-NEW-1301 | thin (2 imperative tokens) | NULL-BROKEN |
+| al-ḥamdu li-llāh openers — H-NEW-1340 | thin (1-2 token opener) | NULL |
+| **Ḥawāmīm-7 — H-NEW-1395** | **thin (2-grapheme muqaṭṭāʿat)** | **NULL (this finding)** |
+| Etiquette-cluster {Q 49,61-66} — Q049 | thick (multi-axis) | CONFIRMED-PAIR |
+| Q 39 tanzīl-opener cluster | thick + chronologically-locked | PASS-DIRECTED p=0.0003 |
+| Refrain architecture {Q 55, 77, 26} — H-NEW-1320 | refrain-saturated (29%+) | PASS-DIRECTED p_perm=0.0000 |
+
+Pattern strengthens: **thin orthographic / liturgical markers consistently NULL on FR-roots; thick multi-axis content markers PASS**.
+
+---
+
 ## §10.50 H-NEW-1390 inline (2026-05-09 PM continuation) — OPENING-LINKED CONTENT-DIVERGENT mushaf-adjacent pair corpus scan: 19/113 pairs satisfy the joint signature (DIRECTIONAL; below chance vs. marginal independence)
 
 **Status**: DIRECTIONAL. Q073-F-02 candidate-class formalized into 4-axis flag tuple; corpus-wide scan recovers 19 instances (well above the ≥3 class-formation threshold) but observed count = 0.81× expected under marginal independence — the joint signature does NOT exceed chance given the corpus-wide marginal rates of clamped-zero seams, morph-iso openers, and FR-distant pairs.

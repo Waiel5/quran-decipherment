@@ -3,7 +3,7 @@ surah: 40
 surah_name: Ghāfir
 file_type: journal
 date_started: 2026-04-28
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
 ---
 
@@ -59,3 +59,37 @@ Q 40 Ghāfir investigation **COMPLETE** (per the 8-template-set + JOURNAL standa
 
 - [[hawamim-7-cluster-synthesis|HM-7 cluster synthesis]] — Q 40's role in the cluster
 - [[Q040-ghafir/06-novel-findings|Q 40 novel findings]]
+
+---
+
+## 2026-05-09 (Session 2) — Wave-H follow-up: 3 new pre-registered tests + H-NEW-1395
+
+### Garden-of-forking-paths log (BEFORE running)
+
+For each of Q040-F-02, Q040-F-03, Q040-F-04, and H-NEW-1395:
+- Pre-reg markdown locked first; SHA256 computed; SHA embedded in run script with fail-fast verification.
+- Direction one-tailed and pre-committed BEFORE viewing data.
+- N_perm = 10,000; seed = 20260509 (matches session-wide Wave-H convention).
+- Bonferroni α_corr = 0.025 for k=2 cells on H-NEW-1395.
+
+### Run timeline
+
+1. Q040-F-02 (HM corpus-EXACT): wrote prereg → SHA `2932348c...` → script → ran → VINDICATED. HM-set = {40..46} exactly.
+2. Q040-F-03 (*ghfr*-density rank): wrote prereg → SHA `3854e007...` → script → ran → NULL (rank 25, not top-5). Direction NOT held; clean NULL — Q 40's name is attribute-pointing, not density-pointing.
+3. Q040-F-04 (Believer-of-Pharaoh phrase-singleton): wrote prereg → SHA `cab6798d...` → script → ran → VINDICATED (1 hit, Q 40:28).
+4. H-NEW-1395 (ḥawāmīm-7 FR-cohesion): wrote prereg at findings/phase-b-hypotheses/prereg-h-new-1395-hawamim-cluster.md → SHA `06bc435a...` → script at findings/phase-b-hypotheses/scripts/h-new-1395.py → ran → NULL. obs d̄=0.8672; cell A p=0.2086; cell B p=0.0514; PC valid (p_pc=0.0414).
+
+### Pre-commit honoring
+
+All four tests pre-committed direction one-tailed lower (for FR-cohesion / hits / rank). Two VINDICATED (F-02, F-04), one DIRECTIONAL-VINDICATION-failed (F-03 NULL with correct direction-frame), one NULL with valid PC (H-NEW-1395). No pre-commit violations.
+
+### Equal NULL prominence
+
+- Q040-F-03 NULL **promoted** to a substantive finding in 06-novel-findings — Q 40's *Ghāfir* name is attribute-pointing not density-pointing, falsifying the naïve naming-density prior.
+- H-NEW-1395 NULL **promoted** to a substantive finding — adds HM-7 to the growing evidence (with H-NEW-1301, H-NEW-1340) that muqaṭṭaʿāt-axis ≠ FR-root-axis. Reinforces cross-finding-025 marker-thickness rule.
+
+### Cross-references
+
+- [[h-new-1395-hawamim-cluster|H-NEW-1395]] — ḥawāmīm cluster cohesion NULL
+- [[cross-finding-025-marker-thickness-vs-fr-cohesion-threshold|cross-finding-025]] — marker-thickness rule supported
+- [[Q040-ghafir/06-novel-findings|Q 40 novel findings §5-7]]
