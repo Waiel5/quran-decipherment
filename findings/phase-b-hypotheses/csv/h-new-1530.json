@@ -1,0 +1,103 @@
+{
+  "id": "H-NEW-1530",
+  "title": "al-Khalifa 'miracle of 19' — 5-sub-claim rigorous audit",
+  "prereg_sha": "461ac84c5e1bfd14e5178a72f17fa11e7e25131c8f39f77bdf62de705edb1269",
+  "seed": 20260509,
+  "phase": "B",
+  "corpus": "quran-text/quran-no-tashkeel.json",
+  "sub_claims": {
+    "C1": {
+      "claim": "Q 96:1-5 = 19 words (khalifa-first-revelation-19-words)",
+      "expected": 19,
+      "observed": 20,
+      "verdict": "FALSIFIED",
+      "per_verse": {
+        "96:1": 5,
+        "96:2": 4,
+        "96:3": 3,
+        "96:4": 3,
+        "96:5": 5
+      }
+    },
+    "C2": {
+      "claim": "Q 1 (al-Fatiha) total = 29 words (per appendix-1 word-count table)",
+      "expected": 29,
+      "observed": 29,
+      "verdict": "CONFIRMED",
+      "per_verse": {
+        "1:1": 4,
+        "1:2": 4,
+        "1:3": 2,
+        "1:4": 3,
+        "1:5": 4,
+        "1:6": 3,
+        "1:7": 9
+      }
+    },
+    "C3": {
+      "claim": "114 surahs = 19*6 (khalifa-114-chapters-19x6)",
+      "expected": 114,
+      "observed": 114,
+      "observed_div_19_remainder": 0,
+      "verdict": "CONFIRMED"
+    },
+    "C4": {
+      "claim": "Basmala = 19 letters (khalifa-bismillah-19-letters)",
+      "expected": 19,
+      "observed": 19,
+      "verdict": "CONFIRMED",
+      "probes": {
+        "no-tashkeel": 19,
+        "full-tashkeel-base-letters": 19,
+        "full-tashkeel-with-marks": 35,
+        "full-tashkeel-form": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+        "uthmani-consonantal": 19,
+        "uthmani-consonantal-form": "بسم الله الرحمن الرحيم"
+      }
+    },
+    "C5": {
+      "claim": "Total 'Allah' references = 2698 = 19*142 (appendix-1)",
+      "expected": 2698,
+      "tally_A_definition": "exact word الله only",
+      "tally_A": 2153,
+      "tally_A_mod19": 6,
+      "tally_B_definition": "A + prefixed (wa/fa/bi/ta) + vocative اللهم",
+      "tally_B": 2551,
+      "tally_B_mod19": 5,
+      "tally_C_definition": "B + li-llah forms (لله, ولله, فلله)",
+      "tally_C": 2700,
+      "tally_C_mod19": 2,
+      "tally_D_definition": "C + interrogative/compound prefixed (آلله, أبالله, وتالله)",
+      "tally_D": 2704,
+      "tally_D_mod19": 6,
+      "tally_E_definition": "D minus vocative اللهم",
+      "tally_E": 2699,
+      "tally_E_mod19": 1,
+      "per_form_counts": {
+        "الله": 2153,
+        "والله": 240,
+        "فالله": 6,
+        "بالله": 139,
+        "تالله": 8,
+        "اللهم": 5,
+        "لله": 116,
+        "ولله": 27,
+        "فلله": 6,
+        "آلله": 2,
+        "أبالله": 1,
+        "وتالله": 1
+      },
+      "verdict": "FALSIFIED",
+      "closest_to_target": 2699,
+      "closest_19_divisible": [
+        null,
+        null
+      ]
+    }
+  },
+  "verdict_tally": {
+    "FALSIFIED": 2,
+    "CONFIRMED": 3
+  },
+  "composite_verdict": "SPLIT"
+}

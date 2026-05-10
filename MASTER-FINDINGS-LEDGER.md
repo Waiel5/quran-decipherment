@@ -4004,3 +4004,85 @@ al-Masīḥ (Christ-title): 11 verses across 4 surahs only.
 ### §10.57.8 Files
 
 - Inline computation; output JSON at `findings/phase-b-hypotheses/csv/h-new-1710.json`
+
+---
+
+## §10.60 H-NEW-1530 (formal pre-registered) — al-Khalifa "miracle of 19" 5-sub-claim audit: 3 CONFIRMED / 2 FALSIFIED / composite SPLIT
+
+**Status**: COMPLETE. Pre-registered (SHA `461ac84c5e1bfd14e5178a72f17fa11e7e25131c8f39f77bdf62de705edb1269`) parallel-specialist audit corroborating the inline §10.55 H-NEW-1600 result with a tighter pre-commit and a 5-tally Allāh-count ambiguity envelope.
+
+**Verdict tally**: 3 CONFIRMED (C2, C3, C4), 2 FALSIFIED (C1, C5), 0 DEFINITION-DEPENDENT. Composite: **SPLIT.**
+
+### §10.60.1 Sub-claim results
+
+| ID | Claim (verbatim per appendix-1) | Target | Observed | Verdict |
+|:--|:--|--:|--:|:--|
+| C1 | Q 96:1-5 = 19 words | 19 | **20** | **FALSIFIED** |
+| C2 | Q 1 (al-Fātiḥa) = 29 words | 29 | **29** | CONFIRMED |
+| C3 | corpus = 114 surahs = 19×6 | 114 | **114** | CONFIRMED (trivial) |
+| C4 | basmala = 19 letters (no-tashkeel) | 19 | **19** | CONFIRMED |
+| C5 | Allāh-references = 2698 = 19×142 | 2698 | A=2153, B=2551, C=2700, D=2704, E=2699 (5-tally envelope) | **FALSIFIED** |
+
+For C4, three orthographic-robustness probes all return 19 (no-tashkeel; full-tashkeel base-letters excluding Mn category combining marks; uthmani-consonantal). The 19-letter basmala is robust across all standard representations.
+
+For C5, the **five pre-committed nested tallies** of Allāh-reference word-forms are:
+- A: strict standalone الله only = **2153** (mod 19 = 6)
+- B: A + classical prefixed (والله, فالله, بالله, تالله) + vocative اللهم = **2551** (mod 19 = 5)
+- C: B + li-llah forms (لله, ولله, فلله) = **2700** (mod 19 = 2)
+- D: C + interrogative/compound (آلله, أبالله, وتالله) = **2704** (mod 19 = 6)
+- E: D minus vocative اللهم = **2699** (mod 19 = 1)
+
+**No tally equals 2698; no tally is divisible by 19.** Closest is E = 2699 (off by 1, not 19-divisible). The 19-multiples bracketing E are 2698 and 2717, neither observed.
+
+The companion claim "76 letters in Q 96:1-5" (paired with C1's "19 words") also falsifies: actual letter count is **78** (no-tashkeel, no spaces; mod 19 = 2). No boundary choice in Q 96 yields 19 words and 76 letters simultaneously (Q 96:1-3 = 12 words; Q 96:1-4 = 15; Q 96:1-5 = 20; Q 96:1-6 = 22).
+
+### §10.60.2 Diagnostic pattern (the heart of the finding)
+
+The CONFIRMED claims are **pre-existing facts of the canonical text** known to medieval scholars centuries before al-Khalifa:
+- C2 (Fātiḥa = 29 words) — al-Suyūṭī *al-Itqān* nawʿ 19 (*fī ʿadad āyātihi wa-kalimātihi*).
+- C3 (114 surahs) — fact of the ʿUthmānic compilation, 7th c. CE.
+- C4 (basmala = 19 letters) — fact of the Arabic rasm; appears in ʿilm al-ḥarf treatises (al-Būnī *Shams al-maʿārif*, al-Tilimsānī, al-Bisṭāmī, al-Suyūṭī *al-Itqān* nawʿ 17).
+
+The FALSIFIED claims are **al-Khalifa's NOVEL contributions** — exactly the claims that would constitute new empirical evidence beyond classical scholarship:
+- C1 (Q 96:1-5 = 19 words / 76 letters) — al-Khalifa specific.
+- C5 (Allāh = 2698 = 19 × 142) — al-Khalifa's flagship divisibility claim.
+
+This pattern — pre-existing classical facts confirm; novel-numerical claims fail — is **the exact signature** predicted by H-META-1 (modern-numerology era: 0/10 confirmations; numerical-gematric substance type: 32% [6/19] confirmation rate vs structural-formal 72% [53/74]). H-NEW-1530 is a direct integer-equality demonstration of that meta-finding on the most-cited Code-19 claims.
+
+### §10.60.3 Convergence with §10.55 inline (H-NEW-1600)
+
+Both audits independently land the same conclusion: the al-Khalifa "miracle of 19" thesis does not survive direct empirical verification on the Hafs-Kūfan canonical corpus. The inline §10.55 H-NEW-1600 audit reported 1 substantive CONFIRMED + 1 trivial + 3 FALSIFIED (using a 5-claim catalogue that differs slightly: 6236 mod 19 ≠ 0; Allāh = 2555 substring/2153 strict). H-NEW-1530 (this entry) reports 3 CONFIRMED + 2 FALSIFIED on a *different* 5-claim catalogue (substituting Fātiḥa-word-count for verse-count, and expanding the Allāh-count test to a 5-tally envelope).
+
+**Joint convergent findings**:
+1. Basmala = 19 letters (both audits CONFIRMED; robust across orthographies).
+2. 114 surahs (both audits CONFIRMED; trivial corpus arithmetic).
+3. Q 96:1-5 ≠ 19 words (both audits FALSIFIED at 20 words).
+4. *Allāh* total ≠ 2698 (both audits FALSIFIED; no counting convention recovers 2698 or 19-divisibility).
+5. Total verses 6236 ≠ 19-divisible (inline finding: 6236 mod 19 = 4; not in H-NEW-1530 catalogue).
+
+**Joint conclusion**: al-Khalifa's specific novel-numerical 19-divisibility claims do not verify on the standard corpus under any reasonable counting convention. The thesis fails as an empirical claim about the text.
+
+### §10.60.4 Files
+
+- pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1530-khalifa-19-audit.md` (SHA `461ac84c5e1bfd14e5178a72f17fa11e7e25131c8f39f77bdf62de705edb1269`)
+- script: `findings/phase-b-hypotheses/scripts/h-new-1530.py` (runtime SHA-verification embedded)
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1530.json`
+- finding: `findings/phase-b-hypotheses/h-new-1530-khalifa-19-audit.md`
+
+### §10.60.5 Cross-references
+
+- §10.55 H-NEW-1600 inline (companion audit, partial overlap)
+- §10 H-META-1 (claim-signature classifier: modern-numerology 0% confirmation)
+- `findings/phase-b-hypotheses/classical-quantitative-claims-audit.md` (survey-level)
+- `data/literature/khalifa/1989-khalifa-appendix-1-one-of-the-great-miracles.md` (primary source)
+- Bilāl Philips (1987) *Quran's Numerical Miracle: Hoax and Heresy* (academic critical literature)
+
+### §10.60.6 Open follow-ups (inherited from §10.55.7)
+
+- *al-raḥmān* count claim (57 = 19×3) and *al-raḥīm* count claim (114 = 19×6).
+- Q 50 qāf-letter count claim; Q 68 nūn-letter count claim; Q 38 ṣād-letter count claim.
+- Cross-counting-system audit (Madanian-Awwal 6217, Baṣrī 6205, Shāmī 6225, Madanian-Akhīr 6214, Makkī 6219, Kūfī 6236).
+- Pre-Islamic-poetry baseline of integer-19 hit-rate under arbitrary recounting.
+- Q 9:128-129 "two false verses" claim (al-Khalifa appendix-24) — would removing them yield 2 fewer Allāh-references? Currently Tally B - 2 = 2549 (still not 2698, still not 19-divisible).
+
+*Logged 2026-05-09 by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
