@@ -4513,3 +4513,143 @@ The 4th project pillar law: **the Quran's surah-titling system is empirically in
 ### §10.64.3 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1830.json`
+
+## §10.66 H-NEW-1750 inline (2026-05-10) — al-ḥamdu li-llāh opener-pericope flip-test: H-NEW-1340 whole-surah NULL → opener-pericope PASS-DIRECTED (z=+3.86, p=0.0014); 4/4 cross-finding-025-formal pericope-scale flip law
+
+**Status**: PASS-DIRECTED. Pre-reg SHA `840fdf5f932cc7f3112ddf70723c3f8cb37f29200b4d1c5ac496c38481baca73`; seed `20260509`; n_perm=10000; direction-locked TIGHTER pre-commit. **4th supporting pair for cross-finding-025-formal pericope-scale flip law.**
+
+### §10.66.1 Headline result
+
+The 5 al-ḥamdu li-llāh opener-pericope windows {Q 1:1-3, Q 6:1-3, Q 18:1-3, Q 34:1-3, Q 35:1-3} exhibit TIGHTER mean pairwise root-Jaccard than length-matched random 3-verse pericope draws.
+
+| Metric | Value |
+|---|---:|
+| Observed mean pairwise root-Jaccard | **0.1325** |
+| Null mean (10,000 length-3 random pericopes) | 0.0496 |
+| Null std | 0.0215 |
+| **z-score** | **+3.86** |
+| **p_perm (strict, one-tailed, ≥ obs)** | **0.0014** |
+| Direction match | YES (TIGHTER locked) |
+| **Verdict** | **PASS-DIRECTED — FLIP from whole-surah NULL** |
+
+Effect size: observed J̄ is 2.67× null mean — the 5 al-ḥamdu opener-pericopes share ~13% of their unique-root union pairwise vs ~5% for random 3-verse pericopes.
+
+### §10.66.2 Cross-scale comparison — the flip
+
+| Scale | Test | Result |
+|---|---|---|
+| Whole-surah FR (H-NEW-1340) | 5-surah set {Q 1, 6, 18, 34, 35} intra-mean FR on root-distribution | NULL: Cell A p=0.7485, Cell B p=0.4975 |
+| **Opener-pericope root-Jaccard (H-NEW-1750)** | **5 opener-pericope windows (first 3 verses) intra-mean J on root-set** | **PASS-DIRECTED: z=+3.86, p=0.0014** |
+
+Clean FLIP from whole-surah NULL to opener-pericope PASS-DIRECTED. 4th independent thin-marker class to exhibit the scale-of-aggregation flip.
+
+### §10.66.3 cross-finding-025-formal: 4/4 confirmation
+
+| Marker class | Whole-surah NULL | Pericope PASS-DIRECTED | Flip z |
+|---|---|---|---:|
+| Iblīs-narrative | H-NEW-039 (p=0.54) | H-NEW-1380 (z=+4.76, p≤10⁻⁴) | +4.76 |
+| Sajda 14-verse | H-NEW-1330 (p=0.57) | H-NEW-1510 (z=+2.69, p=0.0058) | +2.69 |
+| yā-ayyuhā al-nabī | H-NEW-1360 (p=0.57) | H-NEW-1520 (z=+6.41, p<10⁻⁴) | +6.41 |
+| **al-ḥamdu li-llāh opener** | **H-NEW-1340 (p=0.75)** | **H-NEW-1750 (z=+3.86, p=0.0014)** | **+3.86** |
+
+All four share IDENTICAL instrument (root-Jaccard, length-matched random-pericope null), IDENTICAL seed 20260509, IDENTICAL n_perm=10000. **4/4 invert at pericope-scale.** cross-finding-025-formal pericope-scale flip law strengthened from 3/3 to 4/4 supporting pairs.
+
+### §10.66.4 Per-pair evidence
+
+The 5 opener-pericopes contain 6 (Q 1), 20 (Q 6), 20 (Q 18), 27 (Q 34), 31 (Q 35) unique roots respectively. Strongest pairs:
+
+| Pair | \|∩\| | \|∪\| | J |
+|---|---:|---:|---:|
+| Q 1:1-3 ↔ Q 6:1-3 | 5 | 21 | **0.238** |
+| Q 1:1-3 ↔ Q 34:1-3 | 6 | 27 | **0.222** |
+| Q 6:1-3 ↔ Q 34:1-3 | 7 | 40 | 0.175 |
+| Q 6:1-3 ↔ Q 35:1-3 | 6 | 45 | 0.133 |
+| Q 1:1-3 ↔ Q 35:1-3 | 4 | 33 | 0.121 |
+
+Q 1 contributes the 2 strongest pairs at opener-pericope scale despite being sui-generis at whole-surah scale (H-NEW-89). Mechanism: Q 1's basmala-verse + ḥamd-verse + raḥmān-raḥīm-verse contains canonical opener-roots ḥ-m-d, ʾ-l-h, r-ḥ-m, r-b-b — exactly what Q 6's verbose creation-cosmology opener also carries.
+
+### §10.66.5 OQ-3 reopened POSITIVE at pericope scale
+
+H-NEW-1340 closed OQ-3 ("are al-ḥamdu li-llāh openers a 2nd introduction-marker class?") as NEGATIVE at whole-surah scale. **H-NEW-1750 reopens OQ-3 as POSITIVE at pericope scale.** The al-ḥamdu opener IS a coherent root-cluster class at opener-pericope granularity.
+
+Confirmed introduction-marker network now includes:
+1. Muqaṭṭāʿat (whole-surah, cross-finding-008, p≤10⁻¹²)
+2. qul openers (whole-surah, H-NEW-74)
+3. idhā cosmic-openers (H-NEW-1200 sub-A)
+4. **al-ḥamdu li-llāh openers — NEW: pericope-scale (H-NEW-1750)**
+
+### §10.66.6 Classical anchoring
+
+- **al-Biqāʿī, Naẓm al-durar fī Tanāsub al-Āyāt wa-l-Suwar**: treats the al-ḥamdu li-llāh chain as a munāsabah-class. H-NEW-1750 VINDICATES al-Biqāʿī's qualitative naẓm-of-openers at the pericope-scale (whole-surah scale NULL'd by H-NEW-1340).
+- **al-Suyūṭī, al-Itqān fī ʿulūm al-Qurʾān, nawʿ 17 (fawātih al-suwar)**: enumerates ḥamd-openings as a typology class. H-NEW-1750 provides the first empirical-architectural confirmation of this class at the opener-pericope scale.
+
+### §10.66.7 Honest limits
+
+- Single planned test, single-test α=0.05; PASS-DIRECTED verdict ceiling; CONFIRMED requires independent replication.
+- Replication queued: H-NEW-1750b (different seed), H-NEW-1750c (surah-opener-restricted null), H-NEW-1750-sens (window=1, 5), H-NEW-1750d (Q 1 starts at v 2 sensitivity).
+- 4/4 confirmation strengthens cross-finding-025-formal; a 5th independent test (H-NEW-1395 ḥawāmīm cluster opener-pericope, queued) would push toward 5/5.
+
+### §10.66.8 Files
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1750-alhamdu-opener-pericope.md`
+- Script: `findings/phase-b-hypotheses/scripts/h-new-1750.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1750.json`
+- Finding: `findings/phase-b-hypotheses/h-new-1750-alhamdu-opener-pericope.md`
+
+### §10.66.9 Cross-references
+
+- **Parent NULL**: H-NEW-1340 (whole-surah FR on same 5-surah set)
+- **Parent principle**: cross-finding-025-formal §"What this means for the project" §item 1 (queued target)
+- **Sibling pericope-flips**: H-NEW-1380 (Iblīs), H-NEW-1510 (sajda), H-NEW-1520 (yā-ayyuhā al-nabī)
+- **Contrast case**: H-NEW-74 (qul opener PASS at whole-surah; al-ḥamdu opener PASS only at pericope — qul is a corpus-uniformly DIRECT-DIVINE-SPEECH marker, al-ḥamdu is a 2-word formula whose content-completion is more variable)
+- **Q 1 sui-generis context**: H-NEW-89 — Q 1 is sui-generis at whole-surah scale but NOT at opener-pericope scale (Q 1 contributes the 2 strongest pairs)
+
+*Logged 2026-05-10 by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+## §10.65 H-NEW-1860 inline (2026-05-09) — Arabic number-word corpus distribution: "Nineteen" is corpus-SINGLETON (Q 74:30 only); popular "seven appears 24 times" tradition FALSIFIED
+
+**Status**: CONFIRMED descriptive corpus inventory + classical-claim audits.
+
+| Number word | Arabic root | Corpus count |
+|---|---|---|
+| **One (wāḥid/aḥad)** | وحد | **52** — corpus rank-1 number |
+| Seven (sabʿ) | سبع | **28** |
+| Three (thalāth) | ثلث | 25 |
+| Ten (ʿashr) | عشر | 20 |
+| Four (arbaʿ) | أربع | 16 |
+| Two (ithnān/thintayn) | اثن | 15 |
+| Nine (tisʿ) | تسع | 10 |
+| Thousand (alf) | ألف | 10 |
+| Hundred (miʾa) | مائة | 9 |
+| Six (sitt) | ست | 7 |
+| Eight (thamān) | ثمن | 6 |
+| Twelve (ithnā ʿashar) | اثنا عشر | 4 |
+| Forty (arbaʿūn) | أربعون | 4 |
+| Five (khams) | خمس | 3 |
+| Seventy (sabʿūn) | سبعون | 3 |
+| **Nineteen (tisʿata ʿashar)** | **تسعة عشر** | **1 — CORPUS-SINGLETON** |
+
+### §10.65.1 Corpus-SINGLETON for "nineteen"
+
+The phrase *tisʿata ʿashar* appears **EXACTLY ONCE in the canonical corpus**, at Q 74:30 (*ʿalayhā tisʿata ʿashar* — "over it are nineteen"). This is the textual seed of al-Khalifa's entire "miracle of 19" thesis. The phrase is corpus-singleton.
+
+This is an EMPIRICAL FACT — a textual property of the canonical Hafs-Kūfan corpus. Its theological/numerical-iʿjāz interpretation is outside project scope (per H-NEW-1600 framing), but the lexical-singleton status is corpus-rigid.
+
+### §10.65.2 Popular "seven appears 24 times" tradition FALSIFIED
+
+Some popular numerical-iʿjāz traditions (e.g., the *Quran in Numbers* literature) claim *sabʿ* (seven) appears exactly 24 times. **Computed actual: 28** — off by +4. **Classical popular claim FALSIFIED.**
+
+### §10.65.3 Number-frequency ranking ≈ classical-numerology focus
+
+- **One/Three/Seven/Ten** are the top-4 most-frequent numbers — consistent with classical numerology emphasizing tawḥīd (one), 7-heavens / 7-earths cosmology, 10-commandments-of-monotheism, and trinitarian-rejection (Q 4:171 "say not three").
+- **"Nineteen" alone is corpus-rank-15** (1 attestation) — bottom of all number-words tested.
+
+### §10.65.4 Cross-finding integration
+
+- **H-NEW-1600 + H-NEW-1740**: al-Khalifa "miracle of 19" thesis decisively rejected; H-NEW-1860 quantifies the textual SEED (Q 74:30 only) at corpus-singleton precision
+- **Cross-finding-022 (corpus-EXACT/EXTREME roster)**: corpus-singleton phrases extend by adding *tisʿata ʿashar* as a verbal-uniqueness fingerprint
+- al-Suyūṭī Itqān nawʿ 67-68 number-frequencies: classical numerology is empirically corroborated for the top-4 but FALSIFIED for the "seven=24" popular tradition
+
+### §10.65.5 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-1860.json`

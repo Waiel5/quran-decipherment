@@ -1,0 +1,369 @@
+{
+  "finding_id": "H-NEW-1750",
+  "title": "al-ḥamdu li-llāh opener-pericope flip-test",
+  "prereg_sha": "840fdf5f932cc7f3112ddf70723c3f8cb37f29200b4d1c5ac496c38481baca73",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "aggregation_scale": "opener-pericope (first 3 verses of each cluster member surah)",
+  "cluster_definition": "5 surahs opening with al-ḥamdu li-llāh: {Q 1, 6, 18, 34, 35}",
+  "n_attestations": 5,
+  "attestations_surahs": [
+    1,
+    6,
+    18,
+    34,
+    35
+  ],
+  "pericope_windows": [
+    {
+      "label": "Q 1:1-3",
+      "surah": 1,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 6,
+      "roots": [
+        "Alh",
+        "Elm",
+        "Hmd",
+        "rHm",
+        "rbb",
+        "smw"
+      ]
+    },
+    {
+      "label": "Q 6:1-3",
+      "surah": 6,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 20,
+      "roots": [
+        "Ajl",
+        "Alh",
+        "ArD",
+        "Edl",
+        "Elm",
+        "End",
+        "Hmd",
+        "Tyn",
+        "Zlm",
+        "jEl",
+        "jhr",
+        "kfr",
+        "ksb",
+        "mry",
+        "nwr",
+        "qDy",
+        "rbb",
+        "smw",
+        "srr",
+        "xlq"
+      ]
+    },
+    {
+      "label": "Q 18:1-3",
+      "surah": 18,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 20,
+      "roots": [
+        "$dd",
+        "Abd",
+        "Ajr",
+        "Alh",
+        "Amn",
+        "Ebd",
+        "Eml",
+        "Ewj",
+        "Hmd",
+        "Hsn",
+        "SlH",
+        "b$r",
+        "bAs",
+        "jEl",
+        "ktb",
+        "ldn",
+        "mkv",
+        "n*r",
+        "nzl",
+        "qwm"
+      ]
+    },
+    {
+      "label": "Q 34:1-3",
+      "surah": 34,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 27,
+      "roots": [
+        "*rr",
+        "Alh",
+        "ArD",
+        "Aty",
+        "Axr",
+        "Elm",
+        "Erj",
+        "Ezb",
+        "Hkm",
+        "Hmd",
+        "Sgr",
+        "byn",
+        "gfr",
+        "gyb",
+        "kbr",
+        "kfr",
+        "ktb",
+        "nzl",
+        "qwl",
+        "rHm",
+        "rbb",
+        "smw",
+        "swE",
+        "vql",
+        "wlj",
+        "xbr",
+        "xrj"
+      ]
+    },
+    {
+      "label": "Q 35:1-3",
+      "surah": 35,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 31,
+      "roots": [
+        "$yA",
+        "*kr",
+        "Afk",
+        "Alh",
+        "Any",
+        "ArD",
+        "Awl",
+        "Ezz",
+        "Hkm",
+        "Hmd",
+        "bEd",
+        "fTr",
+        "ftH",
+        "gyr",
+        "jEl",
+        "jnH",
+        "kll",
+        "mlk",
+        "msk",
+        "nEm",
+        "nws",
+        "qdr",
+        "rHm",
+        "rbE",
+        "rsl",
+        "rzq",
+        "smw",
+        "vlv",
+        "vny",
+        "xlq",
+        "zyd"
+      ]
+    }
+  ],
+  "pericope_lengths": [
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "pairwise_jaccards": [
+    {
+      "i": "Q 1:1-3",
+      "j": "Q 6:1-3",
+      "inter": 5,
+      "union": 21,
+      "shared_roots": [
+        "Alh",
+        "Elm",
+        "Hmd",
+        "rbb",
+        "smw"
+      ],
+      "jaccard": 0.23809523809523808
+    },
+    {
+      "i": "Q 1:1-3",
+      "j": "Q 18:1-3",
+      "inter": 2,
+      "union": 24,
+      "shared_roots": [
+        "Alh",
+        "Hmd"
+      ],
+      "jaccard": 0.08333333333333333
+    },
+    {
+      "i": "Q 1:1-3",
+      "j": "Q 34:1-3",
+      "inter": 6,
+      "union": 27,
+      "shared_roots": [
+        "Alh",
+        "Elm",
+        "Hmd",
+        "rHm",
+        "rbb",
+        "smw"
+      ],
+      "jaccard": 0.2222222222222222
+    },
+    {
+      "i": "Q 1:1-3",
+      "j": "Q 35:1-3",
+      "inter": 4,
+      "union": 33,
+      "shared_roots": [
+        "Alh",
+        "Hmd",
+        "rHm",
+        "smw"
+      ],
+      "jaccard": 0.12121212121212122
+    },
+    {
+      "i": "Q 6:1-3",
+      "j": "Q 18:1-3",
+      "inter": 3,
+      "union": 37,
+      "shared_roots": [
+        "Alh",
+        "Hmd",
+        "jEl"
+      ],
+      "jaccard": 0.08108108108108109
+    },
+    {
+      "i": "Q 6:1-3",
+      "j": "Q 34:1-3",
+      "inter": 7,
+      "union": 40,
+      "shared_roots": [
+        "Alh",
+        "ArD",
+        "Elm",
+        "Hmd",
+        "kfr",
+        "rbb",
+        "smw"
+      ],
+      "jaccard": 0.175
+    },
+    {
+      "i": "Q 6:1-3",
+      "j": "Q 35:1-3",
+      "inter": 6,
+      "union": 45,
+      "shared_roots": [
+        "Alh",
+        "ArD",
+        "Hmd",
+        "jEl",
+        "smw",
+        "xlq"
+      ],
+      "jaccard": 0.13333333333333333
+    },
+    {
+      "i": "Q 18:1-3",
+      "j": "Q 34:1-3",
+      "inter": 4,
+      "union": 43,
+      "shared_roots": [
+        "Alh",
+        "Hmd",
+        "ktb",
+        "nzl"
+      ],
+      "jaccard": 0.09302325581395349
+    },
+    {
+      "i": "Q 18:1-3",
+      "j": "Q 35:1-3",
+      "inter": 3,
+      "union": 48,
+      "shared_roots": [
+        "Alh",
+        "Hmd",
+        "jEl"
+      ],
+      "jaccard": 0.0625
+    },
+    {
+      "i": "Q 34:1-3",
+      "j": "Q 35:1-3",
+      "inter": 6,
+      "union": 52,
+      "shared_roots": [
+        "Alh",
+        "ArD",
+        "Hkm",
+        "Hmd",
+        "rHm",
+        "smw"
+      ],
+      "jaccard": 0.11538461538461539
+    }
+  ],
+  "observed_mean_pairwise_jaccard": 0.13251852004758982,
+  "null_mean": 0.049570055813710545,
+  "null_std": 0.021472258282012553,
+  "z_score": 3.8630526488853634,
+  "p_greater_perm_strict": 0.0014,
+  "p_reportable_upper_bound": 0.0014,
+  "direction_locked": "TIGHTER (J_mean > null_mean)",
+  "direction_match": true,
+  "verdict": "PASS-DIRECTED",
+  "flip_verdict": "FLIP (whole-surah NULL → opener-pericope PASS-DIRECTED)",
+  "scale_of_aggregation_pair": {
+    "whole_surah_scale": {
+      "finding_id": "H-NEW-1340",
+      "aggregation_scale": "whole-surah Fisher-Rao root-distribution",
+      "surah_set": [
+        1,
+        6,
+        18,
+        34,
+        35
+      ],
+      "obs_intra_mean_fr": 0.9902,
+      "cell_A_uniform_p": 0.7485,
+      "cell_B_length_matched_p": 0.4975,
+      "mw5_pc_pass_p": 0.021,
+      "verdict": "NULL (both cells; PC valid)"
+    },
+    "opener_pericope_scale": {
+      "finding_id": "H-NEW-1750",
+      "aggregation_scale": "opener-pericope (first 3 verses of each cluster member)",
+      "n_windows": 5,
+      "J_mean": 0.13251852004758982,
+      "null_mean": 0.049570055813710545,
+      "null_std": 0.021472258282012553,
+      "z_score": 3.8630526488853634,
+      "p_greater_perm": 0.0014,
+      "verdict": "PASS-DIRECTED"
+    }
+  },
+  "cross_finding_025_formal_corollary": {
+    "principle": "pericope-scale flip law (cross-finding-025-formal, 2026-05-09 PM)",
+    "prior_supporting_pairs": [
+      "H-NEW-039 NULL (whole-surah) ↔ H-NEW-1380 PASS (pericope) on Iblīs-narrative set, z=+4.76",
+      "H-NEW-1330 NULL (whole-surah) ↔ H-NEW-1510 PASS (pericope) on sajda 14-verse cluster, z=+2.685",
+      "H-NEW-1360 NULL (whole-surah) ↔ H-NEW-1520 PASS (pericope) on yā-ayyuhā al-nabī set, z=+6.41"
+    ],
+    "this_pair": "H-NEW-1340 NULL (whole-surah) ↔ H-NEW-1750 ? (opener-pericope) on al-ḥamdu li-llāh opener set",
+    "this_pair_supports_principle": true,
+    "count_after_this_test": "4/4 if PASS, 3/4 if first non-flip"
+  }
+}
