@@ -3263,3 +3263,77 @@ al-Rāzī, *Mafātīḥ al-ghayb* (commentary on Q 2:34), reads the Iblīs-refus
 **Files**: `findings/phase-b-hypotheses/csv/h-new-1431.json`. Inline computation; intrinsically replicable.
 
 **Open follow-ups**: pre-registered replication with alternative position-classes (terminal-third vs middle-third vs initial-third); chronology stratification (does LAST-verse over-representation differ between Meccan and Medinan?); cross-corpus baseline with pre-Islamic poetry (do qaṣīda show the same closing-payload signature?).
+
+## §10.54 — 2026-05-09 PM session synthesis (12+ commits): cross-finding-025 hardens via H-NEW-1380 scale-of-aggregation principle
+
+A second day of mass-parallel landing produced 12+ commits pushed today, integrating new specialist deep-dives + inline corpus-wide tests + 2 new cross-finding-level methodological principles.
+
+### Today's new H-NEW findings
+
+| ID | Verdict | One-liner |
+|---|---|---|
+| H-NEW-1350 | PASS-DIRECTED | Allāh-density Medinan > Meccan (p_perm = 0.00010); 10/10 top-coverage surahs Medinan; Q 58 corpus-MAX confirms Q058-F-01 |
+| H-NEW-1360 | substantive NULL (PC valid) | *yā-ayyuhā al-nabī* 6-surah cluster NOT FR-cohesive; discourse marker not content cluster |
+| H-NEW-1370 | PASS-DIRECTED | Top-10 longest verses are 9/10 Medinan (p = 4.20×10⁻⁵); Q 73:20 sole Meccan exception |
+| H-NEW-1380 | PASS-DIRECTED-REPLICATION | Iblīs-narrative 7-pericope FR-cohesion at z = +4.76 (p ≤ 10⁻⁴); whole-surah NULL flips to PASS at pericope scale |
+| H-NEW-1390 | DIRECTIONAL | 19 OPENING-LINKED CONTENT-DIVERGENT mushaf-adjacent pairs identified (Q 73→Q 74 typical, Q 65→Q 66 architecturally strongest) |
+| H-NEW-1395 | substantive NULL | ḥawāmīm 7-surah cluster {Q 40-46} NOT FR-cohesive; 4th confirmation of letter-axis ⊥ content-axis |
+| H-NEW-1430 | corpus-MAX confirmed | Q 103 al-ʿAṣr v 3 = corpus-MAX concentrator at 64.3% (vindicates al-Shāfiʿī classical claim); Q 73 rank-2 at 42.1% |
+| H-NEW-1431 | CONFIRMED (p = 0.00140) | Corpus over-represents LAST-verse-concentrators (15 vs 6.4 expected); validates classical *khawātim al-suwar* tradition |
+
+### Today's specialist landings (~10 surahs)
+
+| Surah | Headline finding(s) |
+|---|---|
+| Q 21 al-Anbiyāʾ | 1 CONFIRMED (lexical isolation rank 18/114) + 4 informative NULLs; FR-most-distant-of-true-isolates is Q 21↔Q 22 (mushaf paid top-15 cost to adjacent them) |
+| Q 22 al-Ḥajj | (in-flight at session end) |
+| Q 23 al-Muʾminūn | UAS top-10 NOT FR-cohesive (pre-commit violation NULL); Q 23:2-5 = corpus-EXACT longest believer-attributes block (4 verses); embryology pair Q 23:12-14 ↔ Q 22:5 PASS |
+| Q 24 al-Nūr | *nūr* rank 3/114; Q 24:35 Allāh-nūr cop-less identity-NOM corpus-singleton; ifk pericope COMPRESSED (NULL with PCV — opposite of Q 12 Yūsuf) |
+| Q 25 al-Furqān | (in-flight) |
+| Q 26 al-Shuʿarāʾ | F-01 corpus-EXACT 8/8 paired refrains at exact verses; F-06 NULL prophet-Jaccard; F-07 NULL TSM vs ḥawāmīm letter-family content |
+| Q 34/Q 35 | (in-flight twin) |
+| Q 36 Yāsīn | F-05 YS-singleton corpus-EXACT verified 3-orthographic-lenses; F-06 8th NULL on "qalb al-Quran" centrality claim; F-07 NULL town-of-prophets cohesion |
+| Q 38 Ṣād | F-06 ص-density rank 2/20 (DIRECTIONAL); **F-07 CONFIRMED Iblīs-pericope cohesion z = +4.76** (seed for H-NEW-1380); F-08 David-repentance marker DIRECTIONAL |
+| Q 40 Ghāfir | HM-7 corpus-EXACT; F-03 *gfr*-rank 25 (NULL — title is attribute-pointing not density-pointing); F-04 Q 40:28 corpus-singleton believer-of-Pharaoh's-family |
+| Q 50 Qāf | F-06 DIRECTIONAL singleton-letter triplet vs muqaṭṭāʿat baseline; F-07 DIRECTIONAL ق-density rank 2 (Q 75 narrowly higher!); F-08 STRONG-REPLICATION H-NEW-1262 universal hinge |
+| Q 58 al-Mujādala | **Q058-F-01 corpus-EXACT Allāh-saturation (closed-form p = 6.79×10⁻¹³)** + 2 more CONFIRMED + 1 DIRECTIONAL + 1 NULL with PCV |
+| Q 67 al-Mulk | F-05/F-06/F-07 all NULL (juzʾ-29 boundary, *tabāraka* triplet, *mlk*-density rank 37) |
+| Q 68 al-Qalam | F-06 Q 96 IS rank 1 in *qlm*-density (NOT Q 68!); F-07 Q 96↔Q 68 FR-pair ASYMMETRIC (1st explicit FR-pair-asymmetry finding); F-08 Nūn-opener corpus-EXACT singleton |
+| Q 72 al-Jinn | F-01 5-qul REPLICATION CONFIRMED p = 0.0026; F-02 *jin* density rank-1; F-03 Q 72:1-19 ↔ Q 46:29-32 pericope PASS p = 0.0068; Q 72 100% alif-monorhyme corpus-extreme |
+| Q 73 al-Muzzammil | **Q073-F-05 corpus-rank-3 longest verse / Early-Meccan rank-1**; Q073-F-04 promotes H-NEW-1301 to substantive NULL with valid PC; pair Q 73 ↔ Q 74 seamless-seam + morph-iso opening |
+
+### Two new methodological-level principles formalized
+
+#### Principle 1 (H-NEW-1380): Scale-of-aggregation as a methodological axis
+
+The Iblīs-narrative cluster NULLs at whole-surah scale (H-NEW-039) but PASSES at pericope scale at z = +4.76 (H-NEW-1380). This is not a contradiction but a **scale-of-aggregation finding**. Cohesion verdicts are jointly determined by:
+
+  `cohesion = f(marker-thickness × scale-of-aggregation × instrument)`
+
+Pre-registration must now specify all three dimensions. **Discrepant verdicts across scales are first-class findings, not contradictions.** Predicts: the other thin-marker NULLs (H-NEW-1310 Christ-narrative, H-NEW-1330 sajda, H-NEW-1340 al-ḥamdu, H-NEW-1360 *yā-ayyuhā al-nabī*) may flip to PASSes at pericope scale. Queued for systematic re-test.
+
+#### Principle 2 (H-NEW-1431 + H-NEW-1430): Rhetorical-payload-at-end architectural law
+
+Two convergent corpus statistics:
+- **H-NEW-1430**: 9 surahs have concentrator-ratio ≥ 30% (Q 103 corpus-MAX at 64.3%)
+- **H-NEW-1431**: 15 surahs have their longest verse as the LAST verse (vs 6.4 expected; p = 0.00140)
+- **Intersection**: 7 of the 9 ≥30% concentrators are LAST-verse — corpus systematically favors closing surahs with their semantic payload
+
+This is the empirical correlate of the classical *khawātim al-suwar* tradition (al-Suyūṭī *Itqān* nawʿ 39). Combined with cross-finding-022 corpus-EXACT roster extension (Q 103 + Q 73 + Q 1 as new corpus-MAX/EXTREME entries), the corpus now has 14+ corpus-EXACT formal patterns.
+
+### Cumulative running totals (post 2026-05-09 PM session-2)
+
+- **Total commits to repo**: ~50+ commits since project start; ~25 commits today (2026-05-09)
+- **Total H-NEW findings**: 30+ in the H-NEW-12NN..14NN range alone
+- **Confirmed corpus-EXACT formal patterns**: 14 (extending from cross-finding-022 baseline of 12)
+- **Confirmed law-strength findings**: ~25+ (z ≤ -4 OR p ≤ 10⁻⁴ OR R² ≥ 0.85)
+- **NULL findings (with full prominence)**: ~30+
+- **Surah-folders with substantial deep-dive content**: ~85 of 114
+- **Pending high-EV moves**:
+  - Pericope-scale re-test of thin-marker NULLs (H-NEW-1310, 1330, 1340, 1360) per H-NEW-1380 principle
+  - Q 65→Q 66 architecturally-strongest OPENING-LINKED pair (3-axis TRUE)
+  - Q 75 al-Qiyāma narrowly-higher ق-density than Q 50 (new sub-finding to investigate)
+  - Q 96 vs Q 68 chronology-pair inverse-rank lexical-key principle (formalize as H-NEW)
+  - 5-qul cluster cohesion now triply-confirmed (H-NEW-74 + 2026-05-07 inline + Q072-F-01 with PC valid)
+
+*Synthesis written 2026-05-09 PM by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm.*
