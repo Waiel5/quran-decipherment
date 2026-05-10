@@ -1,0 +1,302 @@
+{
+  "finding_id": "H-NEW-1570",
+  "title": "Chronology-paired surahs inverse-rank lexical-key principle (corpus-wide formalization)",
+  "prereg_sha": "911bdda399a7abec7da27c32d2231b2ca4a746327881771d20ef94839054a955",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "bonferroni_k": 5,
+  "alpha_raw": 0.05,
+  "alpha_bon": 0.01,
+  "parent_finding": "Q068-F-06 (Q 96 rank-1, Q 68 rank-2 by qlm density)",
+  "n_pairs_tested": 5,
+  "per_pair": [
+    {
+      "pair_label": "Q96 al-Alaq (rev#1) -> Q68 al-Qalam (rev#2) [qlm]",
+      "rev_early": 1,
+      "rev_later": 2,
+      "early_surah": 96,
+      "later_surah": 68,
+      "root": "qlm",
+      "corpus_total_tokens_for_root": 4,
+      "early": {
+        "count": 1,
+        "total_root_tokens": 49,
+        "density_per1000": 20.408163265306122,
+        "rank": 1
+      },
+      "later": {
+        "count": 1,
+        "total_root_tokens": 191,
+        "density_per1000": 5.235602094240838,
+        "rank": 2
+      },
+      "inverse_rank_strict": true,
+      "inverse_rank_loose": true,
+      "top5_by_density": [
+        {
+          "surah": 96,
+          "rank": 1,
+          "count": 1,
+          "density_per1000": 20.408163265306122
+        },
+        {
+          "surah": 68,
+          "rank": 2,
+          "count": 1,
+          "density_per1000": 5.235602094240838
+        },
+        {
+          "surah": 31,
+          "rank": 3,
+          "count": 1,
+          "density_per1000": 2.840909090909091
+        },
+        {
+          "surah": 3,
+          "rank": 4,
+          "count": 1,
+          "density_per1000": 0.43975373790677225
+        },
+        {
+          "surah": 1,
+          "rank": 5,
+          "count": 0,
+          "density_per1000": 0.0
+        }
+      ]
+    },
+    {
+      "pair_label": "Q73 al-Muzzammil (rev#3) -> Q74 al-Muddaththir (rev#4) [dvr]",
+      "rev_early": 3,
+      "rev_later": 4,
+      "early_surah": 73,
+      "later_surah": 74,
+      "root": "dvr",
+      "corpus_total_tokens_for_root": 1,
+      "early": {
+        "count": 0,
+        "total_root_tokens": 142,
+        "density_per1000": 0.0,
+        "rank": 74
+      },
+      "later": {
+        "count": 1,
+        "total_root_tokens": 162,
+        "density_per1000": 6.172839506172839,
+        "rank": 1
+      },
+      "inverse_rank_strict": false,
+      "inverse_rank_loose": false,
+      "top5_by_density": [
+        {
+          "surah": 74,
+          "rank": 1,
+          "count": 1,
+          "density_per1000": 6.172839506172839
+        },
+        {
+          "surah": 1,
+          "rank": 2,
+          "count": 0,
+          "density_per1000": 0.0
+        },
+        {
+          "surah": 2,
+          "rank": 3,
+          "count": 0,
+          "density_per1000": 0.0
+        },
+        {
+          "surah": 3,
+          "rank": 4,
+          "count": 0,
+          "density_per1000": 0.0
+        },
+        {
+          "surah": 4,
+          "rank": 5,
+          "count": 0,
+          "density_per1000": 0.0
+        }
+      ]
+    },
+    {
+      "pair_label": "Q1 al-Fatiha (rev#5) -> Q111 al-Masad (rev#6) [msd]",
+      "rev_early": 5,
+      "rev_later": 6,
+      "early_surah": 1,
+      "later_surah": 111,
+      "root": "msd",
+      "corpus_total_tokens_for_root": 1,
+      "early": {
+        "count": 0,
+        "total_root_tokens": 23,
+        "density_per1000": 0.0,
+        "rank": 2
+      },
+      "later": {
+        "count": 1,
+        "total_root_tokens": 17,
+        "density_per1000": 58.8235294117647,
+        "rank": 1
+      },
+      "inverse_rank_strict": false,
+      "inverse_rank_loose": false,
+      "top5_by_density": [
+        {
+          "surah": 111,
+          "rank": 1,
+          "count": 1,
+          "density_per1000": 58.8235294117647
+        },
+        {
+          "surah": 1,
+          "rank": 2,
+          "count": 0,
+          "density_per1000": 0.0
+        },
+        {
+          "surah": 2,
+          "rank": 3,
+          "count": 0,
+          "density_per1000": 0.0
+        },
+        {
+          "surah": 3,
+          "rank": 4,
+          "count": 0,
+          "density_per1000": 0.0
+        },
+        {
+          "surah": 4,
+          "rank": 5,
+          "count": 0,
+          "density_per1000": 0.0
+        }
+      ]
+    },
+    {
+      "pair_label": "Q81 al-Takwir (rev#7) -> Q87 al-Aala (rev#8) [Elw]",
+      "rev_early": 7,
+      "rev_later": 8,
+      "early_surah": 81,
+      "later_surah": 87,
+      "root": "Elw",
+      "corpus_total_tokens_for_root": 70,
+      "early": {
+        "count": 0,
+        "total_root_tokens": 66,
+        "density_per1000": 0.0,
+        "rank": 85
+      },
+      "later": {
+        "count": 1,
+        "total_root_tokens": 49,
+        "density_per1000": 20.408163265306122,
+        "rank": 2
+      },
+      "inverse_rank_strict": false,
+      "inverse_rank_loose": false,
+      "top5_by_density": [
+        {
+          "surah": 92,
+          "rank": 1,
+          "count": 1,
+          "density_per1000": 20.833333333333332
+        },
+        {
+          "surah": 87,
+          "rank": 2,
+          "count": 1,
+          "density_per1000": 20.408163265306122
+        },
+        {
+          "surah": 83,
+          "rank": 3,
+          "count": 2,
+          "density_per1000": 19.801980198019802
+        },
+        {
+          "surah": 88,
+          "rank": 4,
+          "count": 1,
+          "density_per1000": 16.666666666666668
+        },
+        {
+          "surah": 44,
+          "rank": 5,
+          "count": 2,
+          "density_per1000": 9.00900900900901
+        }
+      ]
+    },
+    {
+      "pair_label": "Q93 al-Duha (rev#11) -> Q94 al-Sharh (rev#12) [$rH]",
+      "rev_early": 11,
+      "rev_later": 12,
+      "early_surah": 93,
+      "later_surah": 94,
+      "root": "$rH",
+      "corpus_total_tokens_for_root": 5,
+      "early": {
+        "count": 0,
+        "total_root_tokens": 28,
+        "density_per1000": 0.0,
+        "rank": 94
+      },
+      "later": {
+        "count": 1,
+        "total_root_tokens": 16,
+        "density_per1000": 62.5,
+        "rank": 1
+      },
+      "inverse_rank_strict": false,
+      "inverse_rank_loose": false,
+      "top5_by_density": [
+        {
+          "surah": 94,
+          "rank": 1,
+          "count": 1,
+          "density_per1000": 62.5
+        },
+        {
+          "surah": 39,
+          "rank": 2,
+          "count": 1,
+          "density_per1000": 1.297016861219196
+        },
+        {
+          "surah": 20,
+          "rank": 3,
+          "count": 1,
+          "density_per1000": 1.194743130227001
+        },
+        {
+          "surah": 16,
+          "rank": 4,
+          "count": 1,
+          "density_per1000": 0.8445945945945946
+        },
+        {
+          "surah": 6,
+          "rank": 5,
+          "count": 1,
+          "density_per1000": 0.513874614594039
+        }
+      ]
+    }
+  ],
+  "n_strict_inverse_rank_observed": 1,
+  "n_loose_inverse_rank_observed": 1,
+  "p_strict_perm": 0.0004,
+  "p_loose_perm": 0.002,
+  "null_strict_mean": 0.0004,
+  "null_strict_max": 1,
+  "null_strict_min": 0,
+  "null_loose_mean": 0.002,
+  "direction_locked": "POSITIVE — >= 3 of 5 pairs strict inverse-rank",
+  "direction_match_strict": false,
+  "verdict": "NULL",
+  "corpus_principle_status": "Q068-F-06 is the ONLY pair satisfying the strict inverse-rank pattern; principle is NOT corpus-wide. Q068-F-06 isolated finding."
+}

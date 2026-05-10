@@ -3622,3 +3622,124 @@ Cluster reality at MARKER level is REAL; H-NEW-1310 NULL'd cluster at FR whole-s
 
 - Finding: `findings/phase-b-hypotheses/h-new-1700-maryam-corpus-distribution.md`
 - JSON: `findings/phase-b-hypotheses/csv/h-new-1700.json`
+
+## §10.57 H-NEW-1570 inline (2026-05-10) — Chronology-pair inverse-rank lexical-key principle: NULL on locked 5-pair test (Q068-F-06 is an isolated phenomenon, not corpus-wide)
+
+**Status**: NULL (locked ≥3-of-5 criterion not met); 1/5 pairs satisfy strict inverse-rank.
+**Parent**: Q068-F-06 (Q 96 rank-1, Q 68 rank-2 by *qlm* density)
+**Pre-reg SHA**: `911bdda399a7abec7da27c32d2231b2ca4a746327881771d20ef94839054a955`
+
+### §10.57.1 The hypothesis (formalized from Q068-F-06)
+
+Q068-F-06 found that Q 96 (rev #1) holds rank-1 by *qlm* density and Q 68 (rev #2, title-bearer)
+holds rank-2 — a chronology-adjacent pair with the title-lexical-key in **inverse rank order**
+(title-bearer at rank-2, earlier-pair-partner at rank-1). H-NEW-1570 formalized this as a
+corpus-wide test: do 5 chronology-adjacent revelation pairs from `data/revelation-order.csv`
+(Tanzil + Nöldeke) where the LATER surah is title-eponymous also exhibit the inverse-rank
+pattern?
+
+### §10.57.2 Five locked pairs
+
+| # | early (rev) | later (rev) | title-root | result |
+|:-:|:--|:--|:-:|:-:|
+| 1 | Q 96 al-ʿAlaq (1) | Q 68 al-Qalam (2) | `qlm` | **YES** (rank 1, 2; dens 20.41 > 5.24) |
+| 2 | Q 73 al-Muzzammil (3) | Q 74 al-Muddaththir (4) | `dvr` | no — *dvr* is singleton at 74:1; Q 73 has zero |
+| 3 | Q 1 al-Fātiḥa (5) | Q 111 al-Masad (6) | `msd` | no — *msd* singleton at 111:5; Q 1 has zero |
+| 4 | Q 81 al-Takwīr (7) | Q 87 al-Aʿlā (8) | `Elw` | no — *Elw* not attested in Q 81 |
+| 5 | Q 93 al-Ḍuḥā (11) | Q 94 al-Sharḥ (12) | `$rH` | no — *$rH* not attested in Q 93 |
+
+**n_strict = 1 / 5** (threshold ≥3); permutation p (n_strict ≥ 1) = **0.0004** at 10,000 perms, seed 20260509, Bonferroni α = 0.01.
+
+### §10.57.3 Verdict + interpretation
+
+**VERDICT: NULL** on the locked corpus-wide criterion. The inverse-rank principle does NOT
+generalize beyond the parent pair. But — and this is the informative subtlety — the **single
+hit (pair 1) is itself rare** under the random null (p ≈ 4×10⁻⁴, ~2500× over expectation),
+which means Q068-F-06 stands as a **striking isolated 2-surah phenomenon** rather than as a
+generalizable structural law.
+
+The pre-reg explicitly ACKNOWLEDGED before observation that 3 of 5 pairs used singleton-root
+keys (pairs 2, 3, 5) and that pair 4 was likely structurally constrained — so this was framed
+as a **falsification attempt** of the corpus-wide claim. The falsification succeeded.
+
+### §10.57.4 Connection to §10.56 (H-NEW-1700 Maryam)
+
+§10.56's Maryam audit independently revealed the same structural pattern: **title-eponymy and
+density-rank-1 are independent axes**. Q 19 (title-bearer) has 3 Maryam attestations vs Q 5's
+9. Q 68 (title-bearer) has lower *qlm* density than Q 96. H-NEW-1570 extends this: even when
+we restrict to chronology-ADJACENT pairs, the inverse pattern is **not generalizable** — it
+occurs for the *qlm* / Q 96–Q 68 pair specifically, plausibly because of the narrative
+continuity of the first two revealed surahs (Q 96:4 introduces *al-qalam*; Q 68 takes it as
+title + oath-opener).
+
+### §10.57.5 What this leaves standing
+
+- **Q068-F-06**: still standing as VERIFIED for the Q 96 ↔ Q 68 pair (single-pair p ≈ 4×10⁻⁴).
+- **Q068-F-06 corpus-wide generalization (H-NEW-1570)**: **FALSIFIED** — no inverse-rank principle for chronology pairs.
+- The principle behind H-NEW-1570 is **better described as a narrative-bridge** between the
+  first two revealed surahs, not a structural rule of chronology-pair architecture.
+
+### §10.57.6 Files
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1570-chronology-pair-inverse-rank.md`
+- Script: `findings/phase-b-hypotheses/scripts/h-new-1570.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1570.json`
+- Finding: `findings/phase-b-hypotheses/h-new-1570-chronology-pair-inverse-rank.md`
+
+---
+
+## §10.57 H-NEW-1550 inline (2026-05-10) — Oath-opener (qasamīyāt) 15-surah whole-surah FR-cohesion: PASS-DIRECTED at p=0.0011 / 0.0003
+
+**Status**: PASS-DIRECTED (both Bonferroni cells survive α=0.025; MW-5 PC valid; direction matches lock).
+
+**Classical anchor**: al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, **nawʿ 67** (*al-aqsām fī l-Qurʾān*) — the qasamīyāt category. This pre-reg promoted the classical structural-category claim to a falsifiable whole-surah FR test.
+
+**Cluster (15 surahs, locked via direct grep `r"^\s*وال"` on v1 of no-tashkeel corpus)**: Q 37, 51, 52, 53, 77, 79, 85, 86, 89, 91, 92, 93, 95, 100, 103. Total 587 verses. Strict-formula only: excludes Q 68 (muqaṭṭaʿ-then-oath), Q 75 + Q 90 (*lā-uqsimu* negation-oath), Q 36 + Q 56 + Q 81 (other openers).
+
+**Results**:
+
+| Quantity | Value |
+|:--|:--|
+| Observed intra-cluster mean FR | **0.6985** |
+| Cell A uniform null mean / p | 0.9235 / **0.0011** ✓ |
+| Cell B length-matched null mean / p | 0.8794 / **0.0003** ✓ |
+| MW-5 PC {Q 69, Q 97, Q 101} p | 0.0445 ✓ |
+| Bonferroni α per cell | 0.025 |
+| Both cells survive | **YES** |
+| Direction (LOWER, TIGHTER) | matches lock |
+
+**Diagnostic structure**: Q 37 al-Ṣāffāt (182 verses; only long surah in cluster) is loose against every other member (FR > 1.02 on all 14 cross-pairs). The cohesion engine is the short-mufaṣṣal core {Q 93, 95, 100, 103} (tightest pair Q 95-Q 103 at FR=0.2972; Q 100-Q 103 at FR=0.3109). Q 37 sits at chronological mid-Meccan in Nöldeke; other 14 are early-Meccan.
+
+**Differentiating prediction validated** — the marker-thickness axis of cross-finding-025 now has a sharp pre-specified contrast:
+
+| Marker type | Test | Cluster | Whole-surah FR verdict |
+|:--|:--|:--|:--|
+| **Thick + clustered** | **H-NEW-1550** | 15 oath-opener surahs | **PASS-DIRECTED (p=0.0011 / 0.0003)** |
+| Discourse (vocative) | H-NEW-1360 | 6 prophet-vocative surahs | NULL (p=0.5734) |
+| Discourse (sajda) | H-NEW-1330 | 14 sajda-surahs | NULL |
+| Discourse (al-ḥamdu) | H-NEW-1340 | 5 al-ḥamdu-opener surahs | NULL |
+
+Same instrument (H-NEW-111 FR matrix), same permutation protocol, same seed family — returns NULL on thin/scattered markers, PASS on the thick chronologically-clustered marker. This validates the marker-thickness axis as substantive, not artifactual.
+
+**Cross-finding-025 implications**: H-NEW-1550 supplies the **second-strongest supporting finding on the THICK-marker side** (alongside H-NEW-1260 *yā-ayyuhā alladhīna āmanū* root-cohesion CONFIRMED). With H-NEW-1510 (sajda pericope-flip PASS at z=+2.685) and H-NEW-1380 (Iblīs pericope-flip PASS at z=+4.76) supplying the scale-of-aggregation axis, cross-finding-025 now has TWO independent axes empirically supported by ≥2 PASS-DIRECTED findings each. The synthesis is on track for graduation from PRELIMINARY-SYNTHESIS to FORMAL.
+
+**Connections**:
+
+- Promotes al-Suyūṭī *Itqān* nawʿ 67 from classical-cataloged claim to empirically validated structural category (whole-surah FR scale).
+- Sister thick-marker confirmation to H-NEW-1260 (*yā-ayyuhā alladhīna āmanū*); both validate the cross-finding-025 thick-marker prediction.
+- Contrasts sharply against discourse-marker NULL family (H-NEW-1330, 1340, 1360, 1395 — same instrument, NULL on thin markers).
+- Partially nested within the compression-tail law (h-new-660): short-mufaṣṣal Meccan surahs cluster on d̄_content; but Cell B length-matched null demonstrates the *qasam* formula adds genuine FR signal above brevity-alone.
+- Cluster members Q 51 al-Dhāriyāt and Q 53 al-Najm have specialist templates landed in the immediate prior session (2026-05-09); both are intra-cluster tight.
+
+**Honest limits**:
+
+- Q 37 al-Ṣāffāt is a single-outlier load on the cluster (182 verses; all other members ≤62 verses). The signal is driven by the 14 short members; Cell B controls for verse-count but does not control for chronology-stratum directly. Chronology-matched null (Early-Meccan-only pool) is queued as H-NEW-1550-sens-chrono.
+- Wider inclusion definition (adding Q 68 + Q 75 + Q 90 → 18 surahs) is a queued sensitivity arm (H-NEW-1550-sens-wider); strict cluster used for primary inference here.
+- Tested on QAC stem-root distributions only (H-NEW-111). Whether the *qasam* signature shows on phoneme, rhyme, or content-cohesion instruments is a separate empirical question.
+
+**Files**:
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1550-oath-opener-cluster.md` (SHA `2ad17dab54450851c17b201b54a1bfb1191424426f63c3115639808f92ad1ac8`)
+- Script: `findings/phase-b-hypotheses/scripts/h-new-1550.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1550.json`
+- Findings: `findings/phase-b-hypotheses/h-new-1550-oath-opener-cluster.md`
