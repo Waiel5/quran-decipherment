@@ -2935,3 +2935,62 @@ Q 58 (1.000, 22/22) > Q 48 (0.862, 25/29) > Q 60 (0.846, 11/13) > Q 24 (0.781, 5
 3. Rules-tuple sensitivity: rerun under min-tashkeel and full-tashkeel — direction-stable but absolute rank-order may shift slightly.
 4. Verse-twin proximity check (H-NEW-167): are the top-10 long verses also high-degree in the verse-twin graph?
 
+
+## §10.48 Q 58 al-Mujādala + Q 73 al-Muzzammil specialist landings — corpus-EXACT Allāh-saturation + Early-Meccan long-verse rank-1 + H-NEW-1301 substantive-NULL promotion
+
+**Status**: CONFIRMED landings; 2026-05-09 PM specialist auto-commits not fired; integrated here.
+
+### §10.48.1 Q 58 al-Mujādala (5 pre-registered tests; 3 CONFIRMED + 1 DIRECTIONAL + 1 NULL)
+
+- **Q058-F-01 CONFIRMED corpus-EXACT** — Q 58 is the corpus-only surah of length ≥5 verses with **100% verse-coverage on the *Allāh* substring** (22/22 verses; 40 total Allāh-tokens / 475 words = 8.42% per-word density, corpus-rank 3). Permutation null p = 9.999×10⁻⁵; **closed-form iid Bernoulli null p = 6.79×10⁻¹³**. Vindicates classical iʿjāz al-isthibār reading: the *sūrat al-mujādila* (the woman whose plea Allāh literally HEARS) is structurally a 22-verse continuous Allāh-attestation. **13th corpus-EXACT formal pattern locked** (extending cross-finding-022 Wave-5 terminal synthesis from 12 to 13 patterns). Pre-reg SHA `5e2d18067236123bc610ab6017691119685732dcc6b6357a7e0af39cbf2f7e1f`.
+- **Q058-F-02 CONFIRMED** — Q 58 ∈ H-NEW-1080 short-Medinan cluster {Q 57-66}; centrality rank 8/10; corpus-nearest neighbor **Q 64 al-Taghābun** at FR=0.7391 (cluster-internal); permutation p = 9.999×10⁻⁵. 5 farthest corpus surahs from Q 58: Q 54, 12, 17, 56, **55** (Q 55 farthest at FR=1.3146 — corroborates Q 55 corpus-isolation rank 114/114 from H-NEW-1220).
+- **Q058-F-03 CONFIRMED** — Q 58:12→13 intra-surah abrogation: 3/4 classical sources attest (al-Wāḥidī *Asbāb* v.13, al-Ṭabarī *Tafsīr* vv.12+13); 3 isnād chains (ʿAlī, Mujāhid via Ibn Abī Najīḥ, Qatāda); 5 lexical markers. **Documents Q 58 as corpus-locus of the most cleanly-attested intra-surah abrogation** (most classical abrogations are cross-surah).
+- **Q058-F-04 DIRECTIONAL (2/3 sub-hypotheses)** — *ḥzb*-root concentration. Q 58 has 4 of 19 corpus *ḥzb* tokens (21.05% share, 2.8× length-weighted concentration); *ḥizb al-shayṭān* corpus-EXCLUSIVE to Q 58:19; *ḥizb Allāh* in only 2 surahs (Q 5:56 + Q 58:22). **Rhetorical-architectural pair**: Q 58 is the corpus-only surah to set party-of-Satan against party-of-Allāh with full lexical symmetry within 4 verses (vv 19, 22).
+- **Q058-F-05 NULL with pre-commit violation** — Q 57→Q 58→Q 59 musabbiḥāt-cluster internal seams. Pre-committed direction: Q 58→Q 59 SMOOTHER than Q 57→Q 58. Empirical: Q 57→Q 58 = 0.0211 (rank 24/113 ascending, IN bottom 57); Q 58→Q 59 = 0.0925 (rank 75/113, NOT in bottom 57). **Direction REVERSED**; published per PRE-REG-STANDARD-04 with equal prominence. The mushaf places its smoothest exit from Q 58 on the *backward* edge (musabbiḥāt-opener axis dominates thematic-historical continuity).
+
+### §10.48.2 Q 73 al-Muzzammil (5 pre-registered tests; 1 CONFIRMED + 1 VERIFIED + 2 DIRECTIONAL + 1 NULL)
+
+- **Q073-F-01 DIRECTIONAL** — Q 73:20 ↔ Q 96:1+3 IMPV-qrA prophetic-revelation pair. H1a co-occurrence cluster score 7/9, length-matched permutation p = 0.0000 (0/10K); H1b verse-twin char-Levenshtein FAILS (length asymmetry 90w vs 4w). **Garden-of-forking-paths refinement**: the brief framed these as "prophetic-revelation pair per H-NEW-1300" without flagging the addressee-grammar split. Q 73:20 uses 2MP plural (community-addressed *iqraʾū*); Q 96:1+3 uses 2MS singular (Prophet-direct *iqraʾ*). The 6-token corpus IMPV-qrA inventory bifurcates: **2MS Prophet-direct {Q 96}** vs **2MP community-addressed {Q 17, 69, 73 ×2}**. This is the 5th sub-axis to add to cross-finding-008 muqaṭṭāʿat-marker function-axis catalog.
+- **Q073-F-02 DIRECTIONAL** — Q 73 ↔ Q 74 muzzammil/muddaththir vocative-twin pair. Axis A FR mutual top-15 FAIL (Q 74 ranks 37 in Q 73's neighbors); Axis B clamped-zero seam PASS (delta_raw = -0.02888, in 13-seamless set); Axis C morph-iso opening PASS (both 3-word *yā-ayyuhā al-XaXXiX* Form-V passive participle definite). **Architectural finding**: this is a candidate first instance of a new architectural class — **OPENING-LINKED CONTENT-DIVERGENT pairs**. Queued as H-NEW-1400 corpus-wide search.
+- **Q073-F-03 VERIFIED (with brief-correction)** — Q 73:20 classical abrogation. Explicit naskh chain at **Abū Dāwūd #1305** (Ibn ʿAbbās via ʿIkrima): "Ibn ʿAbbās said regarding al-Muzzammil: 'qum al-laylā illā qalīlan • niṣfahu' was abrogated by 'ʿalima an lan tuḥṣūhu…'". Brief specified "Mālik Muwaṭṭaʾ + Bukhārī" — both INCORRECT (neither contains explicit Q 73:20 chain). Brief-correction logged.
+- **Q073-F-04 NULL with VALID instrument — PROMOTES H-NEW-1301** — IMPV-qrA 4-surah cluster {Q 17, 69, 73, 96} cohesion. Cell A p = 0.2633, Cell B p = 0.1348 (both FAIL α_bon=0.025); corrected MW-5 PC = 4-of-10 sub-sample of H-NEW-1190 = {Q 69, 74, 97, 101} PASSES at p = 0.0395 (4/5 seed-sensitivity also pass). **PC valid → substantive NULL authorized**. **Promotes H-NEW-1301 from NULL-BROKEN → substantive NULL with valid instrument**: the IMPV-qrA cluster is genuinely NOT FR-cohesive at surah-aggregate root-distribution. The 4 surahs are linked at lexical-imperative-event level (6-segment marker across 4 surahs) but NOT at thematic-root-distribution level. **Corroborates cross-finding-025**: a marker present in only ~0.1% of corpus verses is too thin to drive FR cohesion regardless of theological weight.
+- **Q073-F-05 CONFIRMED** — Q 73:20 long-verse rank-extremum. Word-count = 90; **corpus rank 3/6,236 verses** (Q 2:282 = 145w, Q 4:12 = 99w, Q 73:20 = 90w, Q 3:154 = 83w, Q 2:102 = 82w); **Early-Meccan rank 1/1,219 verses** (43% longer than 2nd-place Q 74:31 at 63w). Q 73:20's length is the *physical-textual correlate* of its theological role as abrogator — the 90-word verse carries the entire post-abrogation legal-ritual framework (relaxed night-prayer + recitation feasibility + zakāt). The classical descriptor *al-āya al-ṭawīla* (the long verse) is empirically supported at rank-extremum precision.
+
+### §10.48.3 Cross-axis lock: Q 73:20 as the Early-Meccan structural exception
+
+Three independent tests converge on Q 73:20 as a sui-generis verse:
+- **Q073-F-05** establishes Q 73:20 as corpus-rank-3 by length / Early-Meccan rank-1.
+- **H-NEW-1370** (PASS-DIRECTED, p = 4.20×10⁻⁵) establishes Q 73:20 as the SOLE Meccan entry in the corpus top-10 long-verses (9/10 Medinan).
+- **Q058-F-03 / Q073-F-03** both establish classical abrogation chains landing on a verse-pair structure (Q 58:12→13 intra-surah; Q 73:1-4→Q 73:20 also intra-surah but with the abrogator being the rank-3 long-verse itself).
+
+**Synthesis**: Q 73:20 is the **structural-architectural correlate** of the abrogating-clause function. Classical al-Suyūṭī *Itqān* nawʿ 47 already classified Q 73:20 as Medinan-thematic content; H-NEW-1370 + Q073-F-05 provide independent verse-length evidence that confirms the classification at law-strength precision.
+
+### §10.48.4 Cumulative cross-finding-025 ledger
+
+The **marker-thickness vs FR-cohesion threshold rule** continues to harden as 2026-05-09 batch accumulates:
+
+**PASSING markers (≥30% of surah content, multi-axis correlated)**:
+- muqaṭṭāʿat (p ≤ 10⁻¹², 14 axes incl. sajda × muqaṭṭāʿat 1.97×)
+- eschatology H-1200 (60-90% content)
+- *wa-mā adrāka mā* H-1190 (70-100%)
+- short-Medinan H-1080 (length + chronology)
+- refrain H-1320 (rhetorically-dominant 20-40%)
+
+**FAILING markers (thin, single-axis)**:
+- IMPV-qrA H-1301/Q073-F-04 (single imperative, <5%) — NOW substantive NULL with valid instrument
+- Christ-narrative H-1310 (sub-block 12-30%)
+- sajda H-1330 (single trigger verse <5%)
+- al-ḥamdu li-llāh opener H-1340 (3 words ~1%)
+- *yā-ayyuhā al-nabī* H-1360 (3-token discourse anchor scattered across 6 surahs)
+
+The PASS/FAIL boundary at ~30% marker-thickness now has 5 PASS + 5 FAIL data points; with cross-finding-025 PRELIMINARY-SYNTHESIS scheduled for formal codification with operational definition + replication cluster set.
+
+**Connection to existing findings**:
+- Q058-F-01 extends the corpus-EXACT roster (cross-finding-022) from 12 to 13 patterns.
+- Q073-F-04 promotes H-NEW-1301 from NULL-BROKEN to substantive NULL.
+- Q058-F-04 introduces antithetical-phrase-pair as candidate corpus-singleton fingerprint class (queued for corpus-wide replication).
+- Q073-F-02 introduces OPENING-LINKED CONTENT-DIVERGENT pair-class (queued as H-NEW-1400).
+
+**Files**:
+- `surahs/Q058-al-mujadala/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts
+- `surahs/Q073-al-muzzammil/{00-overview,06-novel-findings,JOURNAL}.md` + 5 preregs + 5 CSV + 5 scripts

@@ -4,9 +4,9 @@ surah_name_ar: النور
 surah_name_translit: al-Nūr
 surah_name_english: The Light
 file_type: overview
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE — all 7 template files + JOURNAL produced 2026-04-28
+verdict: COMPLETE — all 8 template files + JOURNAL; 8 pre-registered tests (2026-04-28 wave + 2026-05-09 supplementary wave)
 ---
 
 # Q 24 al-Nūr — Overview
@@ -101,9 +101,18 @@ Compute:
 - [x] 03-tafsir-survey.md
 - [x] 04-hadith-corpus.md
 - [x] 05-classical-claims-audit.md (8 audits)
-- [x] 06-novel-findings.md (4 pre-registered tests, all CONFIRMED)
+- [x] 06-novel-findings.md (8 pre-registered tests across two waves)
 - [x] 07-cross-references.md
 - [x] JOURNAL.md
-- [x] 4 pre-regs in `preregs/`
-- [x] 4 scripts in `scripts/`
-- [x] 4 JSON outputs in `csv/`
+- [x] 8 pre-regs in `preregs/` (Q024-F-01..F-08)
+- [x] 8 scripts in `scripts/`
+- [x] 8 JSON outputs in `csv/`
+
+### Two waves of pre-registered tests
+
+| Wave | Date | IDs | Verdicts |
+|:--|:--|:--|:--|
+| 1 | 2026-04-28 | F-01..F-04 | 4 / 4 CONFIRMED |
+| 2 | 2026-05-09 | F-05..F-08 | 2 CONFIRMED, 1 WEAK-DIRECTIONAL, 1 NULL-with-pre-commit-violation |
+
+The 2026-05-09 supplementary wave includes one published pre-commit-violation NULL (Q024-F-08 al-ifk verse-length expansion FALSIFIED — ifk is shorter, not longer, than ambient), reported with prominence per protocol §§ 1.3 and 1.8.

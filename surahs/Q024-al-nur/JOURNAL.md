@@ -2,9 +2,9 @@
 surah: 24
 file_type: journal
 date_started: 2026-04-28
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE
+verdict: COMPLETE — two waves (2026-04-28 + 2026-05-09 supplementary)
 ---
 
 # Q 24 al-Nūr — Investigation Journal
@@ -105,3 +105,61 @@ Word count (after stripping mushaf marks): **48 words** in all three variants. L
 ### Verdict-of-the-investigation
 
 Q 24 al-Nūr is the corpus's clearest case of **outlier-without-iʿjāz al-fawāṣil**: top-5 UAS via outlier-strength + bracketing canonical-adjacency-cost (both top-15 expensive), with anti-structural-iʿjāz signature (sig_A rank 82). All four pre-registered novel tests confirmed. Eight classical claims audited; six VINDICATED, two FALSIFIED-with-refinement. The empirical signature precisely matches the qualitative classical reading: a Medinan-legal centerpiece inserted into a Meccan-narrative zone, named for its unique-in-the-corpus light-vocabulary concentration, anchored by the al-ifk story (the corpus's most-narrative-cohesive defense-of-chastity passage), and structurally centered on the Light-verse (the literal word-and-letter median of the surah).
+
+---
+
+## 2026-05-09 — Supplementary wave (Q024-F-05..F-08)
+
+Following the 2026-05-09 PM dispatch (Wave-H session-handoff context), a second wave of 4 pre-registered novel tests was run with seed 20260509 and Bonferroni α = 0.05 / 4 = 0.0125. Each test had a locked pre-reg with SHA256 embedded in the run script and verified at runtime.
+
+### Pre-flight reading completed (2026-05-09)
+
+- `/Users/grey/Downloads/quran/.claude/skills/quran-investigation/SKILL.md`
+- `/Users/grey/Downloads/quran/INVESTIGATION-PROTOCOL.md` (§§ 1.1–1.8, 2.7)
+- `/Users/grey/Downloads/quran/HANDOFF/SESSION-HANDOFF-2026-05-09-PM.md` (referenced)
+- All 8 existing Q 24 files (verified state)
+
+### Tests run
+
+| Pre-reg | Test | SHA256 (head 12) | Verdict |
+|:--|:--|:--|:--|
+| Q024-F-05 | *nūr* root density rank in Q 24 vs corpus | `01766034a8b2` | **CONFIRMED** (rank 3 raw + rank 3 density-among-attesting) |
+| Q024-F-06 | Q 24:35 Allāh-nūr cop-less identity-nominal uniqueness | `7177ae2738e0` | **CONFIRMED** (1/4 surface hits — Q 5:15 PARTITIVE, Q 9:32 + Q 61:8 GENITIVE) |
+| Q024-F-07 | Q 24 mean FR distance to UAS top-10 < corpus | `9cc455db7a52` | **WEAK-DIRECTIONAL** (Δ = −0.008, p_one = 0.387) |
+| Q024-F-08 | Ifk pericope verse-length > ambient Q 24 | `1e4caa474df6` | **NULL with pre-commit violation** (Δ = −7.4 words, ifk SHORTER) |
+
+### Files produced (2026-05-09)
+
+- `surahs/Q024-al-nur/preregs/Q024-F-05-nur-root-density-rank-prereg.md`
+- `surahs/Q024-al-nur/preregs/Q024-F-06-allah-nur-cop-less-uniqueness-prereg.md`
+- `surahs/Q024-al-nur/preregs/Q024-F-07-fr-clustering-with-uas-top10-prereg.md`
+- `surahs/Q024-al-nur/preregs/Q024-F-08-ifk-verse-length-vs-ambient-prereg.md`
+- `scripts/Q024_F_05_nur_root_density_rank.py`
+- `scripts/Q024_F_06_allah_nur_unique.py`
+- `scripts/Q024_F_07_fr_clustering_uas_top10.py`
+- `scripts/Q024_F_08_ifk_verse_length.py`
+- `surahs/Q024-al-nur/csv/Q024-F-05.json`
+- `surahs/Q024-al-nur/csv/Q024-F-06.json`
+- `surahs/Q024-al-nur/csv/Q024-F-07.json`
+- `surahs/Q024-al-nur/csv/Q024-F-08.json`
+
+### Notable findings of the supplementary wave
+
+1. **Q 24:35 is the unique cop-less identity-nominal predicating *nūr* of Allāh in the corpus** (Q024-F-06). This is the empirical content of al-Ghazālī's *Mishkāt al-Anwār* doctrine and al-Rāzī's *iʿjāz al-ḥaṣr* claim — both classical scholars treat the identity-nominal at Q 24:35 as structurally distinctive. The corpus-wide search confirms: 1 hit out of 6,236 verses. The other 3 Allāh-nūr bigram constructions are partitive (Q 5:15) or genitive (Q 9:32, Q 61:8).
+
+2. **Q024-F-08 produces an unexpected genuine finding via pre-commit violation.** The pre-reg predicted that the al-ifk pericope (vv. 11-20) would be LONGER than ambient Q 24 verses on the genre-expansion theory of narrative-pericope expansion. The observed direction is REVERSED: ifk verses average 14.4 words; ambient verses average 21.8 words. The al-ifk story is *compressed* in dialogue-rebuke register, while the surrounding legal-prose, hijab-marriage law (vv. 31, 33), light-parable (vv. 35, 40), cosmic-signs (vv. 43-45), and closing-discipline (vv. 55-62) blocks contain the surah's longest verses. This refines the Q 24 narrative-architecture model: the al-ifk inset is a *short-narrative-in-long-legal-surah* — the opposite of Q 12 Yūsuf's long-narrative architecture.
+
+3. **Q024-F-07 weakly supports the UAS top-10 clustering thesis.** Q 24's mean FR distance to the 9 other top-10 UAS surahs is marginally below the corpus baseline (Δ = −0.008), with the closest 3 fellow-top-10 members being the other 3 Medinan surahs (Q 2, Q 33, Q 9). The result is direction-correct but does not pass Bonferroni at p = 0.387.
+
+### Honest pre-commit notes (2026-05-09 wave)
+
+- All four pre-regs were written and SHA-locked BEFORE running the scripts.
+- The SHA256 was computed at write-time and embedded as `EXPECTED_SHA` in each `Q024_F_0X_*.py` script. The script verifies the SHA at runtime and aborts if mismatched.
+- Q024-F-08's pre-commit violation is published with full prominence. The pre-registered direction was POSITIVE (ifk > ambient); the observed direction is NEGATIVE (Δ = −7.4 words). Per protocol §§ 1.3 and 1.8, the finding is reported as NULL with prominence, not silently massaged.
+- Q024-F-07's WEAK-DIRECTIONAL verdict honestly reflects that the direction was correct but the effect-size was too small to pass Bonferroni at the pre-registered top-10 cutoff.
+
+### Verdict-of-the-supplementary-wave
+
+The 2026-05-09 wave deepens the Q 24 profile in three ways: (a) narrows the "name-tracks-vocabulary" result from the 16-root light-cluster down to the single canonical *nwr* root (still rank 3 on both raw and density-among-attesting metrics); (b) identifies Q 24:35 as the corpus's syntactically-unique *Allāh = nūr* identity-nominal — supporting the al-Ghazālī / al-Rāzī classical reading at empirical resolution; and (c) falsifies via pre-commit violation a-priori genre-prediction about narrative-pericope expansion, producing the inverted finding that Q 24's al-ifk narrative is COMPRESSED, not expansive, relative to its surrounding legal-prose ambient.
+
+Combined across both waves (2026-04-28 + 2026-05-09): 8 pre-registered tests, 6 CONFIRMED, 1 WEAK-DIRECTIONAL, 1 NULL-with-pre-commit-violation. The Q 24 specialist landing is the project's most-tested per-surah file to date.

@@ -1,0 +1,38 @@
+{
+  "finding_id": "Q024-F-07",
+  "pre_reg_sha256": "9cc455db7a524c5b28a67c69d9bf4937c963d9c8056cc820cad08f53a55420de",
+  "seed": 20260509,
+  "date": "2026-05-09",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, mushaf order, Hafs-Kufan)",
+  "uas_top10": [
+    33,
+    1,
+    2,
+    9,
+    24,
+    12,
+    55,
+    10,
+    23,
+    17
+  ],
+  "q24_mean_fr_to_top9": 1.062233,
+  "q24_mean_fr_to_corpus": 1.0704083008849559,
+  "delta_top9_minus_corpus": -0.008175300884955883,
+  "p_one_sided_lower": 0.3874,
+  "p_two_sided": 0.7789,
+  "alpha_bonferroni": 0.0125,
+  "n_perm": 10000,
+  "per_pair_fr": {
+    "33": 0.913391,
+    "1": 1.068736,
+    "2": 0.900486,
+    "9": 0.957637,
+    "12": 1.085966,
+    "55": 1.426372,
+    "10": 1.048511,
+    "23": 1.049734,
+    "17": 1.109264
+  },
+  "verdict": "WEAK-DIRECTIONAL"
+}
