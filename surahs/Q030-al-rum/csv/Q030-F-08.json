@@ -1,0 +1,209 @@
+{
+  "test_id": "Q030-F-08",
+  "prereg_sha": "1a88f47c8101b244f136f25ce8df0dcbe45824cfa842473e364f84e44c78cc85",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.025,
+  "cluster_alm": [
+    2,
+    3,
+    29,
+    30,
+    31,
+    32
+  ],
+  "D_obs_mean_pairwise_FR": 0.9256812000000001,
+  "within_cluster_pair_distances_sorted": [
+    {
+      "a": 2,
+      "b": 3,
+      "d": 0.63093
+    },
+    {
+      "a": 3,
+      "b": 29,
+      "d": 0.842037
+    },
+    {
+      "a": 2,
+      "b": 29,
+      "d": 0.848889
+    },
+    {
+      "a": 29,
+      "b": 31,
+      "d": 0.896339
+    },
+    {
+      "a": 30,
+      "b": 31,
+      "d": 0.90887
+    },
+    {
+      "a": 31,
+      "b": 32,
+      "d": 0.909461
+    },
+    {
+      "a": 29,
+      "b": 30,
+      "d": 0.91533
+    },
+    {
+      "a": 30,
+      "b": 32,
+      "d": 0.927242
+    },
+    {
+      "a": 29,
+      "b": 32,
+      "d": 0.938252
+    },
+    {
+      "a": 2,
+      "b": 30,
+      "d": 0.973171
+    },
+    {
+      "a": 2,
+      "b": 31,
+      "d": 0.977041
+    },
+    {
+      "a": 3,
+      "b": 30,
+      "d": 0.984072
+    },
+    {
+      "a": 3,
+      "b": 31,
+      "d": 0.996123
+    },
+    {
+      "a": 2,
+      "b": 32,
+      "d": 1.05151
+    },
+    {
+      "a": 3,
+      "b": 32,
+      "d": 1.085951
+    }
+  ],
+  "cluster_verses_total": 679,
+  "cell_A_uniform": {
+    "n_perm": 10000,
+    "null_mean": 0.9263265547666666,
+    "null_5pct": 0.7561691966666667,
+    "null_50pct": 0.9415175999999998,
+    "p_one_sided_le": 0.4183,
+    "pass_alpha_bon_0_025": false
+  },
+  "cell_B_length_matched": {
+    "length_band_low": 543.2,
+    "length_band_high": 814.8,
+    "n_accepted_samples": 10000,
+    "null_mean": 1.0091199743066668,
+    "null_5pct": 0.9428840199999999,
+    "p_one_sided_le": 0.0225,
+    "pass_alpha_bon_0_025": true
+  },
+  "mw5_positive_control": {
+    "method": "6-of-10 sub-sample of H-NEW-1190 wa-mā adrāka mā (FR-cohesive p=0.00068)",
+    "subsample_seed": 20260509,
+    "subsample_surahs": [
+      69,
+      74,
+      82,
+      86,
+      97,
+      101
+    ],
+    "D_pc": 0.6279028000000001,
+    "p_one_sided_le": 0.0081,
+    "alpha_threshold": 0.05,
+    "pass": true
+  },
+  "mw5_pc_sensitivity": [
+    {
+      "seed": 20260510,
+      "sample": [
+        69,
+        74,
+        77,
+        82,
+        83,
+        90
+      ],
+      "D_pc_alt": 0.7130794666666667,
+      "p_pc_alt": 0.0278,
+      "pass": true
+    },
+    {
+      "seed": 20260511,
+      "sample": [
+        74,
+        77,
+        82,
+        83,
+        101,
+        104
+      ],
+      "D_pc_alt": 0.6293249999999999,
+      "p_pc_alt": 0.0082,
+      "pass": true
+    },
+    {
+      "seed": 20260512,
+      "sample": [
+        77,
+        83,
+        86,
+        97,
+        101,
+        104
+      ],
+      "D_pc_alt": 0.5453105333333333,
+      "p_pc_alt": 0.0022,
+      "pass": true
+    },
+    {
+      "seed": 20260513,
+      "sample": [
+        69,
+        74,
+        77,
+        82,
+        83,
+        97
+      ],
+      "D_pc_alt": 0.7073926,
+      "p_pc_alt": 0.0261,
+      "pass": true
+    },
+    {
+      "seed": 20260514,
+      "sample": [
+        69,
+        74,
+        77,
+        83,
+        97,
+        104
+      ],
+      "D_pc_alt": 0.6933203333333332,
+      "p_pc_alt": 0.0223,
+      "pass": true
+    }
+  ],
+  "verdict": "PARTIAL",
+  "comparison_to_h_new_1395_HM7": {
+    "h_new_1395_verdict": "NULL (CONFIRMED-NULL) — HM 7-cluster not FR-cohesive",
+    "h_new_1395_D_obs": 0.8672,
+    "h_new_1395_null_uniform_mean": 0.923,
+    "this_test_D_obs": 0.9256812000000001,
+    "this_test_p_A": 0.4183,
+    "this_test_p_B": 0.0225
+  },
+  "a_priori_prediction": "NULL-leaning per cross-finding-025 marker-thickness rule"
+}

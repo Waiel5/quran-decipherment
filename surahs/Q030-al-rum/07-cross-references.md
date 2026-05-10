@@ -110,6 +110,21 @@ Direct linkages:
 
 ## 6. Open questions queued
 
-- **OQ-Q030-1**: Is the corpus-hapax `r~uwm` (Romans) accompanied by similar hapax for `fAris` (Persians)? Quick check (not pre-registered): the QAC LEM `fAris` does not appear in the corpus search done for this run; the Persians are referenced indirectly via *Kisrā* (Tirmidhī #2284) but not by Quran-internal lemma. Queued as Q030-F-06.
+- **OQ-Q030-1**: Is the corpus-hapax `r~uwm` (Romans) accompanied by similar hapax for `fAris` (Persians)? Quick check (not pre-registered): the QAC LEM `fAris` does not appear in the corpus search done for this run; the Persians are referenced indirectly via *Kisrā* (Tirmidhī #2284) but not by Quran-internal lemma. (Re-numbered post Wave-H; the Q030-F-06 slot was used for the *biḍʿ* corpus-EXACT test.)
 - **OQ-Q030-2**: Does the ring-structure on *waʿda Allāh* vv. 6 + 60 hold quantitatively, or is it just an eyeball pattern? Queued for ring-structure pre-reg with control on bracketed-lemma frequency under permutation.
 - **OQ-Q030-3**: Q 30 + Q 29 share the *al-fāṣila al-nūniyya* (high nūn-rhyme rate). Is this an ALM-cluster-exception MARKER or just a Late-Meccan rhetorical default? Cross-test against the 4 non-exception ALM (Q 2, 3, 31, 32): if Q 31 + Q 32 also have ≥85% nūn-rhyme, the marker hypothesis is REFUTED.
+- **OQ-Q030-4** (Wave-H, new): The Q030-F-08 PARTIAL verdict shows ALM is length-matched-cohesive but uniform-NULL. Is this true also for other single-letter-string muqaṭṭāʿat sub-clusters? Queue: ALR cluster {Q 10, 11, 12, 14, 15} 5-surah test under same Cell A + Cell B + PC design.
+- **OQ-Q030-5** (Wave-H, new): Q 30:4 + Q 12:42 are corpus-EXACT *biḍʿ + sinīn* pair (Q030-F-06). Are there other lemma + adjacent-lemma 2-instance bounded-prediction frames? Queue: enumerate all `<temporal-quantifier> + <temporal-unit>` lemma-bigrams with corpus-count = 2 to find structural-parallels.
+
+## 7. Wave-H 2026-05-09 additions
+
+Three new pre-registered tests landed (`06-novel-findings.md`):
+- **Q030-F-06** (PASS-DIRECTED, corpus-EXACT): lemma `biDoE` appears exactly 2× in corpus at Q 12:42 + Q 30:4, both in the `biḍʿ + sinīn` syntactic frame. This makes the iʿjāz al-ghayb prophecy of Q 30:2-5 share a corpus-EXACT lemma+frame with exactly ONE other verse — Yūsuf's prison-time prediction at Q 12:42. Both are bounded-multi-year predictions of future events that came to pass per classical sīra.
+- **Q030-F-07** (PASS-DIRECTED, rare class): only 4 verses corpus-wide carry both (a) a time-quantifier lemma from the locked set {`biDoE`, `siniyn`, `sanap`, `yawom`, `Hiyn`} and (b) the FUT proclitic *sa-* in the same verse. Q 30:2-5 has 0 matches under the strict verse-as-unit rule (the prophecy is architecturally SPLIT across vv 3-4: sa- on v 3, biḍʿi sinīn on v 4); this is an honest pre-registered limit.
+- **Q030-F-08** (PARTIAL): ALM 6-cluster FR-cohesion under Cell A (uniform 6-of-113) FAILS at p=0.418, but Cell B (length-matched ±20%) PASSES at p=0.0225 (α_bon=0.025). MW-5 PC valid (H-NEW-1190 6-of-10 sub-sample, p_pc=0.0081, 5/5 alt-seed). The ALM cluster is conditionally cohesive — length-matched only. This is the FIRST muqaṭṭāʿat sub-cluster to show ANY FR cohesion (the parallel HM-7 ḥawāmīm test H-NEW-1395 was NULL on both cells).
+
+### Cross-finding wiring updates
+
+- **Cross-finding-025 marker-thickness rule**: ALM PARTIAL = conditional cohesion adds a NEW data point. Three-letter muqaṭṭāʿat opener (thin marker) yields CELL-B-only cohesion, NOT full-uniform cohesion. Rule REFINED: the FR-cohesion-vs-marker-thickness relationship is monotonic but with a length-confound that emerges at intermediate marker thickness.
+- **Cross-finding-008 muqaṭṭāʿat as book-introduction**: Q030-F-08 PARTIAL means ALM is a structural cluster on length-matched FR — but not on uniform. The marker network's "book-introduction" function is real but length-coupled.
+- **Q012 al-Yūsuf 06-novel-findings (future addition)**: Q030-F-06 implies Q 12:42 (Yūsuf prison-time prediction) should be flagged in Q 12's deep-dive as a corpus-EXACT structural parallel to Q 30:4. The bounded-multi-year-prediction structural class is a corpus 2-instance frame.

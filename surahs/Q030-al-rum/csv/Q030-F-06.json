@@ -1,0 +1,74 @@
+{
+  "finding_id": "Q030-F-06",
+  "prereg_sha": "45c0bad3d7dd76ba2ea99dc6790fc53743cc501198c84a3702c185c66c68d09b",
+  "target_lemma": "biDoE",
+  "prereg_target": {
+    "n_token": 2,
+    "n_surah": 2,
+    "frame_match": 2,
+    "surah_set": [
+      12,
+      30
+    ]
+  },
+  "observed": {
+    "n_token": 2,
+    "n_surah": 2,
+    "frame_match": 2,
+    "surah_set": [
+      12,
+      30
+    ]
+  },
+  "attestation_details": [
+    {
+      "location": "(12:42:17)",
+      "form": "biDoEa",
+      "lem": "biDoE",
+      "next_word_position": "(12:42:18)",
+      "next_word_lems": [
+        "siniyn"
+      ],
+      "next_word_roots": [
+        "snw"
+      ],
+      "frame_biDoE_plus_siniyn": true
+    },
+    {
+      "location": "(30:4:2)",
+      "form": "biDoEi",
+      "lem": "biDoE",
+      "next_word_position": "(30:4:3)",
+      "next_word_lems": [
+        "siniyn"
+      ],
+      "next_word_roots": [
+        "snw"
+      ],
+      "frame_biDoE_plus_siniyn": true
+    }
+  ],
+  "verdict": "PASS-DIRECTED",
+  "diagnostic_root_bDE_breakdown": {
+    "total_tokens_under_root": 7,
+    "distinct_surahs_under_root": [
+      12,
+      30
+    ],
+    "lemma_breakdown": {
+      "biDa`Eap": {
+        "tokens": 5,
+        "surahs": [
+          12
+        ]
+      },
+      "biDoE": {
+        "tokens": 2,
+        "surahs": [
+          12,
+          30
+        ]
+      }
+    }
+  }
+}

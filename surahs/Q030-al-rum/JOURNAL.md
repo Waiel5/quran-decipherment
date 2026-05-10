@@ -91,3 +91,91 @@ All 5 SHAs verified at run-time by each script's `verify_sha()` call.
 0 NULL with reversed direction.
 
 The H-NEW-93 parent NULL stands. The present family REFINES the interpretation: the ALM-exception status is REAL at lexical-eponymy axis, DIRECTIONAL at density axes, REFUTED at FR-content-twin axis.
+
+---
+
+## Run 2 — 2026-05-09 (Wave-H)
+
+**Specialist agent**: Q 30 al-Rūm Wave-H follow-up (Byzantine-prophecy + ALM-cluster deepening).
+
+### Pre-flight reading completed (Wave-H)
+
+- `.claude/skills/quran-investigation/SKILL.md`
+- `INVESTIGATION-PROTOCOL.md`
+- `HANDOFF/SESSION-HANDOFF-2026-05-09-PM.md`
+- Existing Q 30 template (00-overview, 01-empirical-profile, 02-content-analysis, 03-tafsir-survey, 04-hadith-corpus, 05-classical-claims-audit, 06-novel-findings, 07-cross-references)
+- `findings/phase-b-hypotheses/h-new-1330-sajda-surahs-cluster-prereg.md` (FR-cohesion test format reference)
+- `findings/phase-b-hypotheses/h-new-1340-hamdu-lillah-cluster-prereg.md` (PC sub-sample template)
+- `findings/phase-b-hypotheses/h-new-1395-hawamim-cluster.md` (NULL parallel for ALM test)
+- `scripts/Q073_F_04_impv_qra_cluster_corrected_pc.py` (canonical FR cohesion + PC template)
+
+### Three new pre-registered tests (Wave-H)
+
+#### Q030-F-06 — *biḍʿ* corpus-EXACT
+Hypothesis: lemma `biDoE` appears EXACTLY 2× in corpus, EXACTLY in {Q 12, Q 30}, both in `biḍʿ + sinīn` frame.
+**Result**: `(n_token=2, n_surah=2, frame_match=2)` — tuple matches pre-reg EXACTLY.
+**Verdict**: PASS-DIRECTED (corpus-EXACT).
+
+#### Q030-F-07 — Bounded-time-prediction class
+Hypothesis: < 10 corpus verses contain (quantifier from locked 5-set) + (FUT proclitic *sa-*) in the same verse.
+**Result**: 4 verses corpus-wide (Q 4:162, Q 6:93, Q 9:99, Q 11:43).
+**Verdict**: PASS-DIRECTED (4 < 10).
+**Honest verse-split limit**: Q 30:2-5 has 0 matches — Q 30:3 carries FUT sa- but no quantifier; Q 30:4 carries biḍʿ+siniyn but no FUT. The architectural prophecy is split across verses. This is the verse-as-unit-of-cooccurrence pre-registered rule operating honestly.
+
+#### Q030-F-08 — ALM 6-cluster FR cohesion
+Hypothesis: ALM = {Q 2, 3, 29, 30, 31, 32} has D_obs below 5th percentile of (A) uniform 6-of-113 null and (B) length-matched null.
+**Result**:
+- D_obs = 0.92568
+- Cell A: p=0.4183 → FAIL (uniform null mean ≈ ALM observed mean).
+- Cell B: p=0.0225 → PASS at α_bon=0.025 (length-matched null mean = 1.0091, higher than ALM's 0.926).
+- MW-5 PC (H-NEW-1190 6-of-10 sub-sample): p_pc=0.0081 PASS, 5/5 alt-seed sensitivity passes → PC valid.
+**Verdict**: PARTIAL (per pre-reg acceptance window: Cell A NULL + Cell B PASS + PC valid → PARTIAL).
+
+### Decision points
+
+1. **Operational choice for biḍʿ**: lock to LEM-level `biDoE` only (excludes the unrelated `biDa\`Eap` "merchandise" lemma). This is the precise classical-Arabic-lexical sense of *biḍʿ* = "few = 3-9" per Tirmidhī #3275 transmission.
+2. **Quantifier set Q for F-07**: locked 5 lemmas {`biDoE`, `siniyn`, `sanap`, `yawom`, `Hiyn`}. *yawom* restricted to det-modified forms only to avoid false-positive single-day phrases. Acknowledged a-priori as a curated set; alternative wider sets would change the count.
+3. **F-07 verse-as-unit rule**: Pre-registered (no pericope-level alternative). This caused Q 30:2-5 to miss the count because its prophecy is split across vv 3-4. Documented as honest limit; would have been a post-hoc adjustment to change rule.
+4. **ALM PC sub-sample size**: K=6 (matching cluster size) — drawn deterministically from H-NEW-1190 by seed 20260509 → {69, 74, 82, 86, 97, 101}. PC sensitivity tested under 5 alt seeds (all pass).
+5. **ALM Cell B length-band**: ±20% of total 679 verses → [543, 815]. Standard for cluster-of-6 tests.
+
+### Pre-registration SHA hashes (locked before script execution, Wave-H batch)
+
+| Test | Pre-reg SHA256 |
+|:--|:--|
+| Q030-F-06 | `45c0bad3d7dd76ba2ea99dc6790fc53743cc501198c84a3702c185c66c68d09b` |
+| Q030-F-07 | `716ecc65dfab506079db1b94b4f222aa6ec52cf4c7e5b9fa16d821fa04ad947b` |
+| Q030-F-08 | `1a88f47c8101b244f136f25ce8df0dcbe45824cfa842473e364f84e44c78cc85` |
+
+All 3 SHAs verified at run-time by each script's `verify_sha()`.
+
+### Files created in Wave-H run
+
+**Pre-regs**:
+- `surahs/Q030-al-rum/Q030-F-06-bidc-corpus-uniqueness-prereg.md`
+- `surahs/Q030-al-rum/Q030-F-07-bounded-time-prediction-class-prereg.md`
+- `surahs/Q030-al-rum/Q030-F-08-alm-cluster-fr-cohesion-prereg.md`
+
+**Scripts**:
+- `scripts/Q030_F_06_bidc_corpus_uniqueness.py`
+- `scripts/Q030_F_07_bounded_time_prediction_class.py`
+- `scripts/Q030_F_08_alm_cluster_fr_cohesion.py`
+
+**JSON outputs**:
+- `surahs/Q030-al-rum/csv/Q030-F-06.json`
+- `surahs/Q030-al-rum/csv/Q030-F-07.json`
+- `surahs/Q030-al-rum/csv/Q030-F-08.json`
+
+**Updated**: 06-novel-findings.md (new sections for F-06, F-07, F-08; updated family rollup); JOURNAL.md (this Run 2).
+
+### Verdict family rollup (Wave-H batch)
+
+3 PASS-DIRECTED (Q030-F-06 corpus-EXACT, Q030-F-07 bounded-time-class, Q030-F-02 prior).
+1 PARTIAL (Q030-F-08 ALM length-matched cohesion).
+0 NULL with reversed direction.
+
+The **strongest new finding** is the corpus-EXACT *biḍʿ + sinīn* 2-instance frame: Q 12:42 (Yūsuf's prison prediction) and Q 30:4 (Roman prophecy) are the only two verses in the entire corpus pairing this exact lemma + adjacent lemma. The iʿjāz al-ghayb framing of Q 30:2-5 has its sole structural-parallel verse at Q 12:42.
+
+The ALM-cluster PARTIAL result REFINES cross-finding-025 marker-thickness rule: ALM (the thinnest single-letter-string marker) yields cohesion only against a length-matched null — conditional cohesion. This is the FIRST muqaṭṭāʿat-sub-cluster to show ANY FR-cohesion (HM-7 was NULL on both cells per H-NEW-1395).
+
+The Q 30 specialist template is now COMPLETE: 8 files + 8 pre-registered novel tests (7 housed + 1 cross-link) + 8 SHA-locked pre-regs + 8 verified scripts.
