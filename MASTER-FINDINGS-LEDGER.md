@@ -3035,3 +3035,41 @@ The PASS/FAIL boundary at ~30% marker-thickness now has 5 PASS + 5 FAIL data poi
 **Files**: `findings/phase-b-hypotheses/h-new-1430-concentrator-verse-corpus-distribution.md`, `findings/phase-b-hypotheses/csv/h-new-1430.json`.
 
 **Open follow-ups**: alternative-tokenization pre-registered replication; concentrator-verse content-axis classification (5 of 9 are eschatological-recompense, 2 are introit/closer, 1 historical); Q 73+Q 74 long-concentrator pair sub-class hypothesis; cross-corpus baseline against pre-Islamic qaṣīda.
+
+## §10.53 H-NEW-1431 inline (2026-05-09 PM) — Max-verse position distribution: corpus prefers LAST-verse-concentrator architecture (p=0.00140)
+
+**Status**: CONFIRMED on permutation null (single-test, no pre-reg → MW-4 single-test α-cap; well below α=0.01).
+
+**Setup**: For each of 114 surahs (excluding 1-verse Q 108-edge cases), classify the position of the longest verse (the concentrator-verse from H-NEW-1430) as FIRST / LAST / MIDDLE.
+
+**Corpus distribution observed**:
+
+| Position | Count | % of corpus | Expected (uniform) |
+|---|---|---|---|
+| **LAST** | 15 | 13.2% | 6.4 |
+| FIRST | 3 | 2.6% | 6.4 |
+| MIDDLE | 96 | 84.2% | 101.2 |
+
+**Permutation null** (uniform-random verse-index per surah, 10K perms, seed 20260509):
+- P(LAST ≥ 15) = **0.00140** ← CONFIRMED at p<0.01 (mushaf surahs OVER-represent last-verse concentrators by 2.3×)
+- P(FIRST ≥ 3) = 0.964 (first-verse concentrators are NOT over-represented)
+
+**Top-9 concentrators (from H-NEW-1430) position breakdown**:
+- LAST: 7/9 → Q 103, Q 73, Q 106, Q 108, Q 110, Q 112, Q 1
+- FIRST: 1/9 → Q 105 al-Fīl (the *a-lam tara kayfa faʿala rabbuka bi-aṣḥābi al-fīl* opener)
+- MIDDLE: 1/9 → Q 97 al-Qadr v 4 (the *salāmun hiya* descent-of-night closer)
+
+**Architectural interpretation**: The mushaf systematically favors a **rhetorical-payload-at-end architecture**. The classical *khātimat al-sūra* (closing-of-surah-as-rhetorical-summary) tradition is empirically supported at p=0.00140 across the corpus. Combined with H-NEW-1430 (concentrator-ratio), 7 of the corpus's 9 highest-concentration surahs structurally close with their payload-verse.
+
+**Classical-tradition connection**:
+- al-Suyūṭī *Itqān* nawʿ 39 *fī khawātim al-suwar* (concerning surah-endings): treats surah-endings as a rhetorical-architectural class. H-NEW-1431 provides quantitative correlate: 13.2% of surahs concentrate their semantic load in the closing verse — 2.3× over baseline.
+- al-Rāzī *Mafātīḥ al-ghayb* on Q 103: explicitly notes the *jawāmiʿ al-kalim* status of v 3 as the surah's *khātima*. Now joined by 14 other LAST-verse concentrators.
+
+**Cross-finding integration**:
+- Combined with H-NEW-1430 (Q 103 corpus-MAX concentrator at 64.3%): **the corpus's two strongest architectural patterns at the verse level CONVERGE on the closing verse** — the longest verse tends to BE the last verse AND carry the most semantic weight.
+- Q 73 v 20 lies at the intersection: LAST + 42.1% concentrator + abrogating-function + rank-3 corpus-wide by length. **Q 73:20 is the canonical example of the LAST-verse-concentrator architectural class.**
+- Q 105 al-Fīl v 1 is the OUTLIER (FIRST-verse concentrator) — the *fīl*-narrative opener carries the full historical-event in the opening verse, with the rest being commentary/expansion. Single corpus-singleton FIRST-verse concentrator above the 30% threshold.
+
+**Files**: `findings/phase-b-hypotheses/csv/h-new-1431.json`. Inline computation; intrinsically replicable.
+
+**Open follow-ups**: pre-registered replication with alternative position-classes (terminal-third vs middle-third vs initial-third); chronology stratification (does LAST-verse over-representation differ between Meccan and Medinan?); cross-corpus baseline with pre-Islamic poetry (do qaṣīda show the same closing-payload signature?).
