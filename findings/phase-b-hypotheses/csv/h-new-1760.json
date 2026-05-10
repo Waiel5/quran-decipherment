@@ -1,0 +1,456 @@
+{
+  "finding_id": "H-NEW-1760",
+  "title": "Ḥawāmīm 7-surah opener-pericope (first 3 verses) root-Jaccard cohesion flip-test",
+  "prereg_sha": "160adb78a338a95248e4f2ab29f67412baeaa6daa5e2351aad7ac42ccd8d0eea",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "aggregation_scale": "opener-pericope (first 3 verses; uniform vv 1-3 across all 7 ḥawāmīm)",
+  "q42_treatment": "uniformly vv 1-3 — HM + ʿSQ + 1 content verse for Q 42; HM + 2 content verses for the other 6 surahs",
+  "cluster_surahs": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "n_pericopes": 7,
+  "opener_pericopes": [
+    {
+      "label": "Q 40:1-3",
+      "surah": 40,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 13,
+      "roots_sample": [
+        "$dd",
+        "*nb",
+        "Alh",
+        "Elm",
+        "Eqb",
+        "Ezz",
+        "Syr",
+        "Twl",
+        "gfr",
+        "ktb",
+        "nzl",
+        "qbl",
+        "twb"
+      ]
+    },
+    {
+      "label": "Q 41:1-3",
+      "surah": 41,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 9,
+      "roots_sample": [
+        "Ayy",
+        "Elm",
+        "Erb",
+        "fSl",
+        "ktb",
+        "nzl",
+        "qrA",
+        "qwm",
+        "rHm"
+      ]
+    },
+    {
+      "label": "Q 42:1-3",
+      "surah": 42,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 5,
+      "roots_sample": [
+        "Alh",
+        "Ezz",
+        "Hkm",
+        "qbl",
+        "wHy"
+      ]
+    },
+    {
+      "label": "Q 43:1-3",
+      "surah": 43,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 6,
+      "roots_sample": [
+        "Eql",
+        "Erb",
+        "byn",
+        "jEl",
+        "ktb",
+        "qrA"
+      ]
+    },
+    {
+      "label": "Q 44:1-3",
+      "surah": 44,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 7,
+      "roots_sample": [
+        "brk",
+        "byn",
+        "ktb",
+        "kwn",
+        "lyl",
+        "n*r",
+        "nzl"
+      ]
+    },
+    {
+      "label": "Q 45:1-3",
+      "surah": 45,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 9,
+      "roots_sample": [
+        "Alh",
+        "Amn",
+        "ArD",
+        "Ayy",
+        "Ezz",
+        "Hkm",
+        "ktb",
+        "nzl",
+        "smw"
+      ]
+    },
+    {
+      "label": "Q 46:1-3",
+      "surah": 46,
+      "verse_start": 1,
+      "verse_end": 3,
+      "length": 3,
+      "n_unique_roots": 14,
+      "roots_sample": [
+        "Ajl",
+        "Alh",
+        "ArD",
+        "ErD",
+        "Ezz",
+        "Hkm",
+        "Hqq",
+        "byn",
+        "kfr",
+        "ktb",
+        "n*r",
+        "nzl",
+        "smw",
+        "xlq"
+      ]
+    }
+  ],
+  "pericope_lengths": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "pairwise_jaccards": [
+    {
+      "i": "Q 40:1-3",
+      "j": "Q 41:1-3",
+      "inter": 3,
+      "union": 19,
+      "shared_roots": [
+        "Elm",
+        "ktb",
+        "nzl"
+      ],
+      "jaccard": 0.15789473684210525
+    },
+    {
+      "i": "Q 40:1-3",
+      "j": "Q 42:1-3",
+      "inter": 3,
+      "union": 15,
+      "shared_roots": [
+        "Alh",
+        "Ezz",
+        "qbl"
+      ],
+      "jaccard": 0.2
+    },
+    {
+      "i": "Q 40:1-3",
+      "j": "Q 43:1-3",
+      "inter": 1,
+      "union": 18,
+      "shared_roots": [
+        "ktb"
+      ],
+      "jaccard": 0.05555555555555555
+    },
+    {
+      "i": "Q 40:1-3",
+      "j": "Q 44:1-3",
+      "inter": 2,
+      "union": 18,
+      "shared_roots": [
+        "ktb",
+        "nzl"
+      ],
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "i": "Q 40:1-3",
+      "j": "Q 45:1-3",
+      "inter": 4,
+      "union": 18,
+      "shared_roots": [
+        "Alh",
+        "Ezz",
+        "ktb",
+        "nzl"
+      ],
+      "jaccard": 0.2222222222222222
+    },
+    {
+      "i": "Q 40:1-3",
+      "j": "Q 46:1-3",
+      "inter": 4,
+      "union": 23,
+      "shared_roots": [
+        "Alh",
+        "Ezz",
+        "ktb",
+        "nzl"
+      ],
+      "jaccard": 0.17391304347826086
+    },
+    {
+      "i": "Q 41:1-3",
+      "j": "Q 42:1-3",
+      "inter": 0,
+      "union": 14,
+      "shared_roots": [],
+      "jaccard": 0.0
+    },
+    {
+      "i": "Q 41:1-3",
+      "j": "Q 43:1-3",
+      "inter": 3,
+      "union": 12,
+      "shared_roots": [
+        "Erb",
+        "ktb",
+        "qrA"
+      ],
+      "jaccard": 0.25
+    },
+    {
+      "i": "Q 41:1-3",
+      "j": "Q 44:1-3",
+      "inter": 2,
+      "union": 14,
+      "shared_roots": [
+        "ktb",
+        "nzl"
+      ],
+      "jaccard": 0.14285714285714285
+    },
+    {
+      "i": "Q 41:1-3",
+      "j": "Q 45:1-3",
+      "inter": 3,
+      "union": 15,
+      "shared_roots": [
+        "Ayy",
+        "ktb",
+        "nzl"
+      ],
+      "jaccard": 0.2
+    },
+    {
+      "i": "Q 41:1-3",
+      "j": "Q 46:1-3",
+      "inter": 2,
+      "union": 21,
+      "shared_roots": [
+        "ktb",
+        "nzl"
+      ],
+      "jaccard": 0.09523809523809523
+    },
+    {
+      "i": "Q 42:1-3",
+      "j": "Q 43:1-3",
+      "inter": 0,
+      "union": 11,
+      "shared_roots": [],
+      "jaccard": 0.0
+    },
+    {
+      "i": "Q 42:1-3",
+      "j": "Q 44:1-3",
+      "inter": 0,
+      "union": 12,
+      "shared_roots": [],
+      "jaccard": 0.0
+    },
+    {
+      "i": "Q 42:1-3",
+      "j": "Q 45:1-3",
+      "inter": 3,
+      "union": 11,
+      "shared_roots": [
+        "Alh",
+        "Ezz",
+        "Hkm"
+      ],
+      "jaccard": 0.2727272727272727
+    },
+    {
+      "i": "Q 42:1-3",
+      "j": "Q 46:1-3",
+      "inter": 3,
+      "union": 16,
+      "shared_roots": [
+        "Alh",
+        "Ezz",
+        "Hkm"
+      ],
+      "jaccard": 0.1875
+    },
+    {
+      "i": "Q 43:1-3",
+      "j": "Q 44:1-3",
+      "inter": 2,
+      "union": 11,
+      "shared_roots": [
+        "byn",
+        "ktb"
+      ],
+      "jaccard": 0.18181818181818182
+    },
+    {
+      "i": "Q 43:1-3",
+      "j": "Q 45:1-3",
+      "inter": 1,
+      "union": 14,
+      "shared_roots": [
+        "ktb"
+      ],
+      "jaccard": 0.07142857142857142
+    },
+    {
+      "i": "Q 43:1-3",
+      "j": "Q 46:1-3",
+      "inter": 2,
+      "union": 18,
+      "shared_roots": [
+        "byn",
+        "ktb"
+      ],
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "i": "Q 44:1-3",
+      "j": "Q 45:1-3",
+      "inter": 2,
+      "union": 14,
+      "shared_roots": [
+        "ktb",
+        "nzl"
+      ],
+      "jaccard": 0.14285714285714285
+    },
+    {
+      "i": "Q 44:1-3",
+      "j": "Q 46:1-3",
+      "inter": 4,
+      "union": 17,
+      "shared_roots": [
+        "byn",
+        "ktb",
+        "n*r",
+        "nzl"
+      ],
+      "jaccard": 0.23529411764705882
+    },
+    {
+      "i": "Q 45:1-3",
+      "j": "Q 46:1-3",
+      "inter": 7,
+      "union": 16,
+      "shared_roots": [
+        "Alh",
+        "ArD",
+        "Ezz",
+        "Hkm",
+        "ktb",
+        "nzl",
+        "smw"
+      ],
+      "jaccard": 0.4375
+    }
+  ],
+  "observed_mean_pairwise_jaccard": 0.15471563356637294,
+  "null_mean": 0.04972098022915416,
+  "null_std": 0.017474589363600693,
+  "z_score": 6.008418919183363,
+  "p_greater_perm_strict": 0.0,
+  "p_reportable_upper_bound": 0.0001,
+  "n_perm_ge_obs": 0,
+  "direction_locked": "TIGHTER (J_mean > null_mean)",
+  "direction_match": true,
+  "verdict": "PASS-DIRECTED",
+  "flip_verdict": "FLIP (whole-surah NULL → opener-pericope PASS-DIRECTED)",
+  "scale_of_aggregation_pair": {
+    "whole_surah_scale": {
+      "finding_id": "H-NEW-1395",
+      "aggregation_scale": "whole-surah Fisher-Rao root-distribution",
+      "surah_set": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "obs_intra_mean_fr": 0.8672,
+      "cell_A_uniform_p": 0.2086,
+      "cell_B_length_matched_p": 0.0514,
+      "mw5_pc_p": 0.0414,
+      "verdict": "NULL (PC valid; both cells miss Bonferroni α=0.025)"
+    },
+    "opener_pericope_scale": {
+      "finding_id": "H-NEW-1760",
+      "aggregation_scale": "opener-pericope (vv 1-3 uniform across 7 surahs)",
+      "n_windows": 7,
+      "J_mean": 0.15471563356637294,
+      "null_mean": 0.04972098022915416,
+      "null_std": 0.017474589363600693,
+      "z_score": 6.008418919183363,
+      "p_greater_perm": 0.0,
+      "verdict": "PASS-DIRECTED"
+    }
+  },
+  "cross_finding_025_formal_corollary": {
+    "principle": "scale-of-aggregation pericope-flip law (corpus-wide, 3/3 prior flips confirmed at cross-finding-025-formal)",
+    "prior_supporting_pairs": [
+      "H-NEW-039 NULL ↔ H-NEW-1380 PASS (z=+4.76) — Iblīs-narrative",
+      "H-NEW-1330 NULL ↔ H-NEW-1510 PASS (z=+2.685) — sajda 15-verse",
+      "H-NEW-1360 NULL ↔ H-NEW-1520 PASS (z=+6.41) — yā-ayyuhā al-nabī"
+    ],
+    "this_pair": "H-NEW-1395 NULL (whole-surah) ↔ H-NEW-1760 ? (opener-pericope) on ḥawāmīm 7-surah orthographic-opener cluster",
+    "this_pair_supports_principle": true,
+    "novelty": "first orthographic-opener marker class tested at pericope scale (3 prior pairs are narrative / liturgical / discourse classes)"
+  }
+}

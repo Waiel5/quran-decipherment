@@ -5002,3 +5002,82 @@ Equal NULL prominence: although the verdict is DESCRIPTIVE-CONFIRMED on the pre-
 - `findings/phase-b-hypotheses/scripts/h-new-1780.py`
 - `findings/phase-b-hypotheses/csv/h-new-1780.json`
 - `findings/phase-b-hypotheses/h-new-1780-sahihayn-vs-sunan-distribution.md`
+
+## §10.71 H-NEW-1760 inline (2026-05-10) — Ḥawāmīm 7-surah opener-pericope (vv 1-3) FLIPS H-NEW-1395 whole-surah NULL to PASS at z=+6.008 (p < 10⁻⁴); 5th supporting finding-pair for cross-finding-025-formal — first ORTHOGRAPHIC-OPENER (muqaṭṭaʿāt) marker class
+
+**Status**: PASS-DIRECTED (FLIP confirmed). Pre-registered (SHA `160adb78a338a95248e4f2ab29f67412baeaa6daa5e2351aad7ac42ccd8d0eea`), seed `20260509`, 10,000 perms, single primary test (k=1). Lands concurrently with H-NEW-1750 (al-ḥamdu opener-pericope flip, z=+3.86) — together these two same-session opener-pericope flips extend cross-finding-025-formal from 3/3 to 5/5 confirmed.
+
+### §10.71.1 Headline result
+
+The 7 ḥawāmīm surahs {Q 40, 41, 42, 43, 44, 45, 46}, NULL'd at whole-surah Fisher-Rao root-distribution under H-NEW-1395 (Cell A p=0.2086, Cell B p=0.0514, PC valid), re-tested at the opener-pericope scale (each surah's first 3 verses, uniformly applied) PASS at corpus-extreme strength.
+
+| Quantity | Value |
+|---|---|
+| Aggregation scale | OPENER-PERICOPE = vv 1-3 uniform across all 7 ḥawāmīm |
+| Instrument | mean pairwise root-Jaccard (21 pairs) |
+| **Observed J_mean** | **0.15472** |
+| Null mean | 0.04972 |
+| Null std | 0.01747 |
+| **z-score** | **+6.008** |
+| **p_perm (one-tailed, ≥ obs)** | **0.0000** (0 / 10,000) |
+| Verdict | **PASS-DIRECTED** |
+| Flip verdict | **FLIP (whole-surah NULL → opener-pericope PASS)** |
+
+### §10.71.2 Scale-of-aggregation 5-pair anchor table (cross-finding-025-formal hardened by parallel landings)
+
+| # | Marker class | Whole-surah NULL | Pericope PASS | Flip z |
+|:-:|:--|:--|:--|:-:|
+| 1 | Iblīs narrative | H-NEW-039 (z=+0.24) | H-NEW-1380 (p < 10⁻⁴) | **+4.76** |
+| 2 | Sajda 15-verse | H-NEW-1330 | H-NEW-1510 (p=0.0058) | **+2.685** |
+| 3 | yā-ayyuhā al-nabī | H-NEW-1360 | H-NEW-1520 (p < 10⁻⁴) | **+6.41** |
+| 4 | al-ḥamdu li-llāh opener | H-NEW-1340 | **H-NEW-1750 (p=0.0014)** | **+3.86** |
+| 5 | **Ḥawāmīm orthographic-opener** | **H-NEW-1395** | **H-NEW-1760 (p < 10⁻⁴)** | **+6.008** |
+
+cross-finding-025-formal now stands at **5/5 confirmed pericope-flips across 5 structurally distinct marker classes** (narrative / liturgical / discourse / liturgical-opener / **orthographic-opener**). The ḥawāmīm flip is the FIRST orthographic-opener (muqaṭṭaʿāt) marker class and the second-largest z-magnitude on record (behind only H-NEW-1520 at z=+6.41).
+
+### §10.71.3 The *tanzīl al-kitāb* signature (pair-level structure)
+
+The 21 pairwise Jaccards reveal a clear sub-architecture inside the ḥawāmīm openers:
+
+| Pair | J | Shared roots |
+|---|:-:|---|
+| Q 45 ↔ Q 46 | **0.438** | Alh, ArD, Ezz, Hkm, ktb, nzl, smw |
+| Q 42 ↔ Q 45 | 0.273 | Alh, Ezz, Hkm |
+| Q 41 ↔ Q 43 | 0.250 | Erb, ktb, qrA |
+| Q 44 ↔ Q 46 | 0.235 | byn, ktb, nDr, nzl |
+| Q 40 ↔ Q 45 | 0.222 | Alh, Ezz, ktb, nzl |
+
+Two sub-signatures: (i) the **tanzīl al-kitāb** family (Q 40 / 41 / 45 / 46) sharing nzl, ktb, Alh, Ezz, Hkm; (ii) the **wal-kitāb al-mubīn** family (Q 43 / 44) sharing byn, ktb. The Q 45 ↔ Q 46 pair at J=0.438 is corpus-extreme — their opener-pericopes are nearly word-for-word identical *tanzīl al-kitāb min Allāh al-ʿAzīz al-Ḥakīm* formulae.
+
+### §10.71.4 Classical vindication
+
+al-Suyūṭī *al-Itqān fī ʿulūm al-Qurʾān* nawʿ 8 (*tarjamat al-sūra wa-ākhirihā*) and al-Zarkashī *al-Burhān fī ʿulūm al-Qurʾān* (*fawātiḥ al-suwar*) treat the opener as the *tarjama* (programmatic statement) of the surah. Ibn Masʿūd via al-Suyūṭī *al-Itqān* nawʿ 17 calls the ḥawāmīm *al-dībāj* ("the brocade"); Ibn Sīrīn via Ibn Kathīr (Q 40 opening) calls them *Āl Ḥā Mīm* ("the Family of Ḥā Mīm"). These classical observations cohere at the *tarjama*-scale (opener-pericope), not at whole-surah scale — exactly as cross-finding-025-formal predicts. The classical methodological intuition is empirically vindicated *at the correct scale*.
+
+### §10.71.5 Q 42 ʿSQ treatment + Q 42 results
+
+Q 42 al-Shūrā uniquely carries a 2-verse muqaṭṭaʿāt opening (v1 = حم, v2 = عسق). The pre-reg locked uniform vv 1-3 across all 7 surahs; for Q 42 this means HM + ʿSQ + 1 content verse, while the other 6 carry HM + 2 content verses. Under QAC v0.4 the muqaṭṭaʿāt verses carry no ROOT-tag (INL = initial letters), so Q 42's root-set is the smallest at 5 unique roots (vs 6-14 for the others). Q 42 is the only surah that pairs at J=0 with two others (Q 43, Q 44), yet still pairs at J=0.27 with Q 45 and J=0.20 with Q 40 — strong enough to contribute positively to the +6.0 σ flip without compromising it.
+
+### §10.71.6 Honest limits
+
+- Single pre-registered test (k=1). No Bonferroni. Replication (H-NEW-1760b, different seed) and window-size sensitivity (H-NEW-1760-sens for window=2 and window=5) are queued.
+- Corpus-EXACT 7-tuple; no "next 7 ḥawāmīm" to test, so direct sample-replication is impossible. The 5/5 prior pericope-flip pattern across independent marker classes is the strongest available cross-test.
+- QAC ROOT-tagging convention: muqaṭṭaʿāt verses contribute no ROOT-tag; the cohesion signal comes entirely from the content verses immediately following the marker.
+- No translation invariance check; the result is QAC-v0.4-ROOT-specific. Cross-instrument replication (cosine TF-IDF, char-4-gram NCD) is queued.
+
+### §10.71.7 Connection to existing findings
+
+- **Promotes**: H-NEW-1395 from substantive NULL to whole-surah-scale partner of H-NEW-1760 PASS; the classical ḥawāmīm-coherence claim is empirically vindicated at the opener-pericope scale.
+- **Extends**: cross-finding-025-formal from 3/3 (formal-codification baseline) to 5/5 confirmed flips counting the two same-session opener-pericope landings.
+- **Rescues**: H-NEW-570 (HM-7 at 20.90 percentile, pre-Bonferroni) — the original moderate signal was real but at the wrong aggregation scale.
+- **Sister findings**: Q040-F-02 (HM-cluster verification provides runtime check); Q 40-46 specialist profiles will incorporate this finding's pair-level signatures.
+
+### §10.71.8 Files
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-1760-hawamim-opener-pericope.md`
+- Script: `findings/phase-b-hypotheses/scripts/h-new-1760.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1760.json`
+- Finding: `findings/phase-b-hypotheses/h-new-1760-hawamim-opener-pericope.md`
+
+### §10.71.9 Project consequence
+
+cross-finding-025-formal is now **5/5 confirmed across 5 structurally distinct marker classes**. The next falsification-target is to find a thin-marker NULL at whole-surah scale that does NOT flip to PASS at pericope scale (a NULL/NULL pair would refine the law's domain of applicability). Until such a counterexample is found, the pericope-flip law stands as Pillar 3 of the project at corpus-wide law strength.

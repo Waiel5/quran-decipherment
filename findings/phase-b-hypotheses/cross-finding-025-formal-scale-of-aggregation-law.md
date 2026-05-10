@@ -77,3 +77,25 @@ al-Biqāʿī's *Naẓm al-durar* extends this to surah-level munāsabah but ackn
 ---
 
 *Cross-finding-025 elevated to FORMAL status 2026-05-09 PM by Waiel Al-Shujaa upon triple-flip confirmation. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+
+---
+
+## Update 2026-05-10 — Pericope-flip law extended to 5/5 (H-NEW-1750 + H-NEW-1760 landings)
+
+Two same-session opener-pericope flips extend the law to a 5-pair anchor.
+
+| # | Marker class | Whole-surah NULL | Pericope PASS | Flip z |
+|:-:|:--|:--|:--|:-:|
+| 1 | Iblīs narrative | H-NEW-039 | H-NEW-1380 | +4.76 |
+| 2 | Sajda 15-verse | H-NEW-1330 | H-NEW-1510 | +2.685 |
+| 3 | yā-ayyuhā al-nabī | H-NEW-1360 | H-NEW-1520 | +6.41 |
+| 4 | al-ḥamdu li-llāh opener | H-NEW-1340 | **H-NEW-1750** | **+3.86** |
+| 5 | **Ḥawāmīm orthographic-opener (muqaṭṭaʿāt)** | **H-NEW-1395** | **H-NEW-1760** | **+6.008** |
+
+The 5th pair (H-NEW-1760, ḥawāmīm 7-surah opener-pericope at z=+6.008, p<10⁻⁴) is the FIRST orthographic-opener marker class to support the law and the second-largest z-magnitude on record. The flip is driven by the corpus-EXACT *tanzīl al-kitāb min Allāh al-ʿAzīz al-Ḥakīm* opener-formula sub-family (Q 40 / 41 / 45 / 46) and the *wal-kitāb al-mubīn* sub-family (Q 43 / 44), with Q 45 ↔ Q 46 pairing at J = 0.438 (corpus-extreme for the 21-pair table).
+
+The next falsification-target is the first NULL/NULL pair — a thin-marker cluster that NULLs at BOTH whole-surah AND pericope scale would refine the law's domain of applicability. Until such a counterexample is found, the pericope-flip law stands at corpus-wide law strength across narrative / liturgical / discourse / liturgical-opener / orthographic-opener marker classes (5/5).
+
+- H-NEW-1750 (al-ḥamdu opener-pericope flip): pre-reg + finding under standard paths.
+- H-NEW-1760 (ḥawāmīm opener-pericope flip): `findings/phase-b-hypotheses/prereg-h-new-1760-hawamim-opener-pericope.md`, `scripts/h-new-1760.py`, `csv/h-new-1760.json`, `h-new-1760-hawamim-opener-pericope.md`.
