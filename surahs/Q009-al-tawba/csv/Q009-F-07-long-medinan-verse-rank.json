@@ -1,0 +1,182 @@
+{
+  "finding_id": "Q009-F-07",
+  "prereg_sha": "c97f9d9d352acf0f83f873a125651ae9e55c59cd1cce3121bd9056e37512168f",
+  "seed": 20260509,
+  "rules_tuple_primary": "no-tashkeel + orthographic + Hafs-Kufan",
+  "q9_primary_no_tashkeel": {
+    "surah": 9,
+    "name_translit": "At-Tawbah",
+    "type": "medinan",
+    "n_verses": 129,
+    "n_words": 2674,
+    "words_per_verse": 20.728682170542637,
+    "rank_desc": 12
+  },
+  "q9_replication_min_tashkeel": {
+    "surah": 9,
+    "name_translit": "At-Tawbah",
+    "type": "medinan",
+    "n_verses": 129,
+    "n_words": 2667,
+    "words_per_verse": 20.674418604651162,
+    "rank_desc": 13
+  },
+  "q9_replication_full_tashkeel": {
+    "surah": 9,
+    "name_translit": "At-Tawbah",
+    "type": "medinan",
+    "n_verses": 129,
+    "n_words": 2498,
+    "words_per_verse": 19.364341085271317,
+    "rank_desc": 11
+  },
+  "top15_by_words_per_verse": [
+    {
+      "rank_desc": 1,
+      "surah": 60,
+      "name_translit": "Al-Mumtahanah",
+      "type": "medinan",
+      "n_verses": 13,
+      "n_words": 377,
+      "words_per_verse": 29.0
+    },
+    {
+      "rank_desc": 2,
+      "surah": 65,
+      "name_translit": "At-Talaq",
+      "type": "medinan",
+      "n_verses": 12,
+      "n_words": 313,
+      "words_per_verse": 26.083333333333332
+    },
+    {
+      "rank_desc": 3,
+      "surah": 5,
+      "name_translit": "Al-Ma'idah",
+      "type": "medinan",
+      "n_verses": 120,
+      "n_words": 3047,
+      "words_per_verse": 25.391666666666666
+    },
+    {
+      "rank_desc": 4,
+      "surah": 58,
+      "name_translit": "Al-Mujadila",
+      "type": "medinan",
+      "n_verses": 22,
+      "n_words": 516,
+      "words_per_verse": 23.454545454545453
+    },
+    {
+      "rank_desc": 5,
+      "surah": 2,
+      "name_translit": "Al-Baqarah",
+      "type": "medinan",
+      "n_verses": 286,
+      "n_words": 6630,
+      "words_per_verse": 23.181818181818183
+    },
+    {
+      "rank_desc": 6,
+      "surah": 4,
+      "name_translit": "An-Nisa",
+      "type": "medinan",
+      "n_verses": 176,
+      "n_words": 4029,
+      "words_per_verse": 22.892045454545453
+    },
+    {
+      "rank_desc": 7,
+      "surah": 66,
+      "name_translit": "At-Tahrim",
+      "type": "medinan",
+      "n_verses": 12,
+      "n_words": 268,
+      "words_per_verse": 22.333333333333332
+    },
+    {
+      "rank_desc": 8,
+      "surah": 24,
+      "name_translit": "An-Nur",
+      "type": "medinan",
+      "n_verses": 64,
+      "n_words": 1415,
+      "words_per_verse": 22.109375
+    },
+    {
+      "rank_desc": 9,
+      "surah": 13,
+      "name_translit": "Ar-Ra'd",
+      "type": "medinan",
+      "n_verses": 43,
+      "n_words": 928,
+      "words_per_verse": 21.58139534883721
+    },
+    {
+      "rank_desc": 10,
+      "surah": 57,
+      "name_translit": "Al-Hadid",
+      "type": "medinan",
+      "n_verses": 29,
+      "n_words": 618,
+      "words_per_verse": 21.310344827586206
+    },
+    {
+      "rank_desc": 11,
+      "surah": 49,
+      "name_translit": "Al-Hujurat",
+      "type": "medinan",
+      "n_verses": 18,
+      "n_words": 382,
+      "words_per_verse": 21.22222222222222
+    },
+    {
+      "rank_desc": 12,
+      "surah": 9,
+      "name_translit": "At-Tawbah",
+      "type": "medinan",
+      "n_verses": 129,
+      "n_words": 2674,
+      "words_per_verse": 20.728682170542637
+    },
+    {
+      "rank_desc": 13,
+      "surah": 48,
+      "name_translit": "Al-Fath",
+      "type": "medinan",
+      "n_verses": 29,
+      "n_words": 600,
+      "words_per_verse": 20.689655172413794
+    },
+    {
+      "rank_desc": 14,
+      "surah": 6,
+      "name_translit": "Al-An'am",
+      "type": "meccan",
+      "n_verses": 165,
+      "n_words": 3304,
+      "words_per_verse": 20.024242424242424
+    },
+    {
+      "rank_desc": 15,
+      "surah": 59,
+      "name_translit": "Al-Hashr",
+      "type": "medinan",
+      "n_verses": 24,
+      "n_words": 478,
+      "words_per_verse": 19.916666666666668
+    }
+  ],
+  "pre_registered_threshold": {
+    "vindicated_if_rank": "<= 10",
+    "null_directional_if_rank": "11-30",
+    "falsified_if_rank": ">= 31"
+  },
+  "verdict": "NULL-DIRECTIONAL",
+  "rules_tuple_stability": {
+    "rank_no_tashkeel": 12,
+    "rank_min_tashkeel": 13,
+    "rank_full_tashkeel": 11,
+    "stable": false
+  }
+}

@@ -3,9 +3,9 @@ surah: 9
 surah_name_ar: التوبة
 surah_name_translit: al-Tawba
 file_type: classical-claims-audit
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: 7 audits — 3 VINDICATED (Q 9 outlier-status, al-Faḍiḥa hypocrisy-density, Q 9:128-129 multiple-Companion-attestation), 2 FALSIFIED (Q 8-Q 9 unity, no-mercy → no-basmala), 1 NULL (last-revealed-verse single dominance), 1 RULES-TUPLE-FRAGILE (lost-original-opening of Q 9 — empirically opaque, theologically rejected by al-Rāzī).
+verdict: 10 audits — 4 VINDICATED (Q 9 outlier-status, al-Faḍiḥa hypocrisy-density, Q 9:128-129 multiple-Companion-attestation, basmala-corpus-singleton al-Suyūṭī Itqān nawʿ 6), 2 FALSIFIED (Q 8-Q 9 unity, no-mercy → no-basmala), 2 NULL (last-revealed-verse single dominance, al-Biqāʿī Q 8↔Q 9 thematic-couplet at FR-seam level), 1 RULES-TUPLE-FRAGILE (lost-original-opening of Q 9 — empirically opaque, theologically rejected by al-Rāzī), 1 NULL-DIRECTIONAL (long-Medinan verse-length signature: top-12 not top-10).
 ---
 
 # Q 9 al-Tawba — Classical-Claims Audit
@@ -264,22 +264,102 @@ Documented as a classical claim that requires extra-Quranic textual corpus to ev
 
 ---
 
+## Audit 9 — Basmala canonical-attestation: Q 9 is the corpus-only basmala-omitter (al-Suyūṭī, ʿUthmān via al-Tirmidhī)
+
+### Claim
+The Quranic mushaf prints the basmala formula *bismi llāhi al-raḥmāni al-raḥīm* as the canonical opener of all 114 surahs EXCEPT Q 9 al-Tawba; the basmala appears internally exactly once more, at Q 27:30 (Solomon's letter to Bilqīs). This is the canonical 5-position debate documented in al-Suyūṭī.
+
+### Sources
+- al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 6 *fī asbāb sukūt al-basmala fī Barāʾah*.
+- al-Suyūṭī, *al-Itqān*, nawʿ 7 *fī ʿadad suwarihā wa-āyātihā wa-kalimātihā wa-ḥurūfihā*.
+- al-Tirmidhī, *Sunan*, ḥadīth #3086: ʿUthmān ibn ʿAffān explaining that the Prophet (ﷺ) did not specify whether Q 9 was a continuation of Q 8 or a separate surah; the Companions opted for separation-without-basmala.
+- al-Qurṭubī, *al-Jāmiʿ li-aḥkām al-Qurʾān*, introduction to Q 9 (5 classical positions on the omission).
+
+### Rules-tuple
+- Hafs-Kufan + orthographic + NFKD-strip
+- Corpus-1: stored JSON (`quran-text/quran-no-tashkeel.json`) — basmala stored as v.1 only for Q 1
+- Corpus-2: printed convention (`data/alt-text/quran-simple-txt.txt`) — basmala printed before every surah except Q 9
+
+### Test
+[[Q009-F-05-basmala-corpus-singleton]].
+
+### Result
+- Surahs with v.1 = basmala (in stored Hafs-numbered JSON): **[1]** (Q 1 only).
+- Surahs with v.1 ≠ basmala: **113** (all surahs except Q 1, including Q 9).
+- Q 9 is in the "v.1 ≠ basmala" set: **TRUE**.
+- Internal-basmala occurrences (non-v.1): **1**, at **Q 27:30**.
+- Printed corpus total basmala count: **114** = 113 printed-openers + 1 internal.
+
+### Verdict: **VINDICATED-CORPUS-EXACT**
+
+The al-Suyūṭī / ʿUthmān / al-Qurṭubī canonical attestation that Q 9 is the corpus-only basmala-omitter, and that Q 27:30 is the corpus-only internal basmala, is **exact** at the textual-arithmetic level. The 5-position theological debate that this attestation presupposes is preserved AS DEBATE; only the bare phenomenon (singleton-omission + singleton-internal) is rendered empirically explicit.
+
+### Cross-implications
+- Audit 2 (no-mercy → no-basmala) had FALSIFIED Position 5 of the omission-debate.
+- Audit 1 (Q 8-Q 9 unity) had FALSIFIED Position 2 (Ibn ʿAbbās).
+- Audit 9 (this one) leaves Positions 1 (ʿAlī war-context), 3 (ʿUthmān doubt-default), 4 (compromise), 6 (lost-opening) open as candidates — the bare phenomenon is now empirically locked, while the *causation* remains a classical inter-pretive question.
+
+---
+
+## Audit 10 — al-Biqāʿī Q 8 ↔ Q 9 thematic-couplet *tanāsub*
+
+### Claim
+al-Biqāʿī, *Naẓm al-Durar fī Tanāsub al-Āyāt wa-l-Suwar* — Q 8 al-Anfāl and Q 9 al-Tawba form a single *tanāsub* unit at the surah-pair level: Q 8 develops the Badr-victory/spoils-of-war discourse and the believer-mushrik treaty-base; Q 9 extends to Tabūk-expedition / treaty-renunciation / Faḍīḥa of the hypocrites. The two surahs are read as a connected war/community-discipline diptych. This is a *weaker* version of Ibn ʿAbbās's "one surah" claim (FALSIFIED in Audit 1) — it asserts thematic coupling, not textual unity.
+
+### Sources
+- al-Biqāʿī, *Naẓm al-Durar fī Tanāsub al-Āyāt wa-l-Suwar*, introduction to Q 9 (`biqai-nazm-al-durar.pdf`).
+- al-Suyūṭī, *al-Itqān*, nawʿ 7 endorses *tanāsub*-style readings as legitimate even where the unity claim is rejected.
+
+### Rules-tuple
+- Hafs no-tashkeel + QAC v0.4 stem-roots
+- Source: H-NEW-720 `per_adjacency` `delta_raw` (FR-TSP residual)
+- Test: rank-smooth = position of Q 8 → Q 9 in ascending delta_raw across 113 seams
+- Pre-committed: VINDICATED if rank-smooth ≤ 34 (top 30% smoothest), NULL if 35-80, FALSIFIED if ≥ 81.
+
+### Test
+[[Q009-F-06-q8-q9-seam-smoothness]].
+
+### Result
+- Q 8 → Q 9 `delta_raw` = 0.0612, `fraction_residual` = 0.74%.
+- **Rank-smooth: 56 / 113** (49.6th percentile, mid-band).
+- For comparison: Q 9 → Q 10 `delta_raw` = 0.3094, rank-smooth = 110/113 (4th most-expensive in corpus).
+
+### Verdict: **NULL** (rank-smooth 56 ∈ [35, 80] band)
+
+The pre-committed direction (top-30% smooth) is **not supported** at the FR-roots seam-smoothness level. The Q 8 → Q 9 seam is structurally mid-band — neither corpus-smooth (which would have supported al-Biqāʿī at root-frequency level) nor corpus-expensive.
+
+### Honest interpretation
+This is a NULL, not a FALSIFICATION. al-Biqāʿī's thematic *tanāsub* reading is interpretive — it operates on content topic, asbāb al-nuzūl chronology, and rhetorical movement, not necessarily on root-frequency distributions. The Q 8 ↔ Q 9 thematic-couplet reading is consistent with the mid-band seam (the surahs sit together without major TSP penalty), but the strong empirical signature predicted by the top-30% threshold is absent. The al-Biqāʿī reading remains a legitimate *literary*-level claim; the empirical translation to FR-seam-smoothness is not supported.
+
+This complements:
+- Audit 1: Ibn ʿAbbās's stronger "one surah" claim FALSIFIED (d_FR rank 81/113 — too dissimilar).
+- Audit 7: Q 9 → Q 10 boundary rank-4 expensive — Q 9's chronology-block transition is on its RIGHT side.
+- Audit 9 (this set): basmala-omission is a graphical-canonical fact orthogonal to root-distribution.
+
+Together: Q 9's couplings to its mushaf neighbours are NOT root-distribution-smooth in either direction; both Ibn ʿAbbās's textual-unity reading and al-Biqāʿī's thematic-couplet reading lack empirical support at the FR-roots seam level, even though both remain rhetorically/literarily plausible.
+
+---
+
 ## Summary of Audits
 
 | # | Claim | Verdict | Evidence-strength |
 |:-:|:--|:--|:--|
-| 1 | Q 8-Q 9 unity | **FALSIFIED** | rules-tuple-stable, p=0.717 |
-| 2 | No-mercy → no-basmala | **FALSIFIED** | density rank 24/114, vs. predicted ≥ 87 |
+| 1 | Q 8-Q 9 unity (Ibn ʿAbbās) | **FALSIFIED** | rules-tuple-stable, p=0.717 |
+| 2 | No-mercy → no-basmala (Position 5) | **FALSIFIED** | density rank 24/114, vs. predicted ≥ 87 |
 | 3 | al-Faḍiḥa naming | **VINDICATED** | density rank 5/114, predicted ≤ 12 |
 | 4 | Q 9 = 7th of al-sabʿ al-ṭiwāl with content-distinctness | VINDICATED-WITH-NUANCE | outlier rank 4/114 |
 | 5 | Q 9:128-129 = absolutely last | **NULL** (margin missed) | 64 vs 61 in 10-tafsir survey |
 | 6 | Q 9 originally al-Baqara-length | NOT-EMPIRICALLY-TESTABLE | al-Rāzī rejects on tawātur |
 | 7 | Q 9-Q 10 boundary structural | **VINDICATED** | rank 4/113, control falsifies muqaṭṭaʿāt-driver |
 | 8 | Q 9:111 *bayʿ* in Torah/Gospel | NOT-TESTABLE | extra-corpus |
+| 9 | Basmala canonical-singleton (al-Suyūṭī Itqān nawʿ 6) | **VINDICATED-CORPUS-EXACT** | exactly 113 openers + 1 internal Q 27:30 = 114 |
+| 10 | al-Biqāʿī Q 8 ↔ Q 9 thematic-couplet *tanāsub* | **NULL** | seam rank-smooth 56/113 (mid-band) |
 
 **Headline contributions to project**:
 - Empirical falsification of the most popular classical answer to "why no basmala" (Position 5).
 - Empirical confirmation of the al-Faḍiḥa naming.
 - Q 9-Q 10 boundary identified as the **4th most-expensive** canonical adjacency (a finding NOT in classical scholarship).
+- Basmala corpus-exact singleton verified (exactly 114 in corpus, 113 openers + 1 internal at Q 27:30).
+- al-Biqāʿī's *tanāsub* reading of Q 8 ↔ Q 9 NOT supported at FR-roots seam-smoothness, though the unity claim remains FALSIFIED while the *thematic* claim remains literarily plausible.
 
 *Bismillāhi al-Raḥmāni al-Raḥīm.*

@@ -164,4 +164,60 @@ Q009-F-02 result:
 - [x] Classical citations are scholar+work+passage everywhere.
 - [x] Final statements are intellectually honest (FALSIFIED reported with full prominence, NULL reported as NULL not "marginal vindication").
 
+---
+
+## 2026-05-09 — Wave-H specialist extension (3 new pre-registered tests)
+
+### Brief from dispatcher
+Add Q 9 specialist deliverables T1 (basmala corpus-exact verification), T2 (Q 8 → Q 9 seam smoothness for al-Biqāʿī thematic-couplet), T3 (Q 9 long-Medinan verse-length signature). Pre-register, SHA-lock, deterministic-count where applicable, honest reporting. Bonferroni family expands from k=5 to k=7 → α_bon = 0.05/7 ≈ 0.00714.
+
+### Run log
+
+```
+2026-05-09T22:30:00-05:00  pre-reg-write   Q009-F-05-basmala-corpus-singleton-prereg.md
+2026-05-09T22:30:01-05:00  pre-reg-write   Q009-F-06-q8-q9-seam-smoothness-prereg.md
+2026-05-09T22:30:02-05:00  pre-reg-write   Q009-F-07-long-medinan-verse-rank-prereg.md
+2026-05-09T22:30:30-05:00  sha-lock        F-05: e3beb6605cd44a6883e01be279a701f9fc1fa08dac6f9e78d4984488220050a7
+2026-05-09T22:30:30-05:00  sha-lock        F-06: 6fd9d94553ada755192702f89e4939f635403853225edf35b10904a78e53f88c
+2026-05-09T22:30:30-05:00  sha-lock        F-07: c97f9d9d352acf0f83f873a125651ae9e55c59cd1cce3121bd9056e37512168f
+2026-05-09T22:35:00-05:00  run             scripts/Q009_F_05_basmala_corpus_singleton.py
+                                            → VINDICATED-CORPUS-EXACT (114 = 113 + 1)
+2026-05-09T22:35:05-05:00  run             scripts/Q009_F_06_q8_q9_seam_smoothness.py
+                                            → NULL (rank-smooth 56/113, mid-band)
+2026-05-09T22:35:10-05:00  run             scripts/Q009_F_07_long_medinan_verse_rank.py
+                                            → NULL-DIRECTIONAL (rank 12/114, top-decile but JUST outside top-10)
+2026-05-09T22:40:00-05:00  ledger-update   05-classical-claims-audit.md: add Audits 9-10
+2026-05-09T22:40:30-05:00  ledger-update   06-novel-findings.md: add F-05/06/07 sections, Bonferroni k=7
+2026-05-09T22:40:45-05:00  ledger-update   00-overview.md: verdict line refreshed
+```
+
+### Headline summary
+
+| Test | Pre-committed direction | Result | Verdict |
+|:--|:--|:--|:--|
+| T1 (F-05) basmala corpus-singleton | 113 openers + 1 internal Q 27:30 = 114 | **EXACT** | **VINDICATED-CORPUS-EXACT** |
+| T2 (F-06) Q 8 → Q 9 seam smoothness ≤ top-30% | rank 56/113 mid-band | NULL | al-Biqāʿī thematic-couplet NOT supported at FR-seam-smoothness |
+| T3 (F-07) Q 9 verse-length top-10 | rank 12/114 (top-decile, just outside top-10) | NULL-DIRECTIONAL | direction supported, magnitude just-missed |
+
+### Garden-of-forking-paths log
+
+- F-05 has two equally-valid rules-tuples (stored-JSON vs printed-convention). Both were pre-committed and both verified. Reporting BOTH transparently.
+- F-06 chose `delta_raw` (raw FR-TSP penalty) over `fraction_residual` because `delta_raw` is the direct cost penalty and ranks identically (verified). The pre-reg specified `delta_raw`.
+- F-07 was tested across all three tashkeel variants for stability check. Result: rank oscillates 11/12/13 — rules-tuple-fragile at the borderline. Honest NULL-DIRECTIONAL, NOT massaged to VINDICATED via tashkeel-choice cherry-picking.
+
+### Why the NULLs matter
+
+This pair of NULLs (F-06, F-07) is informative:
+- F-06 NULL shows that al-Biqāʿī's *tanāsub* reading of Q 8 ↔ Q 9 does NOT translate to FR-roots seam-smoothness, *even though* the stronger Ibn ʿAbbās "one surah" claim was already FALSIFIED in [[Q008-F-01]]. The two surahs are mid-band-distant — neither unified, nor smoothly-coupled, nor structurally-isolated from each other. Their connection is interpretive (content/theme/asbāb), not root-distributional.
+- F-07 NULL-DIRECTIONAL shows that Q 9's UAS rank 4/114 is NOT driven by extreme verse-length alone (rank 12/114 by length). The UAS-4 status comes from outlier-strength + content-cohesion-isolation, not from sheer prose density.
+
+### Updated quality gates
+
+- [x] Pre-reg SHA matches embedded (7× now).
+- [x] Direction-of-effect locked before running (7× pre-reg files).
+- [x] Bonferroni correction applied (k=7, α_bon ≈ 0.00714).
+- [x] Replication: F-07 cross-checked across 3 tashkeel variants (stability log included).
+- [x] Honest NULL prominence: F-06 NULL and F-07 NULL-DIRECTIONAL reported as NULLs without massaging.
+- [x] Cross-references updated in 00-overview.md and 05-classical-claims-audit.md.
+
 *Bismillāhi al-Raḥmāni al-Raḥīm.*

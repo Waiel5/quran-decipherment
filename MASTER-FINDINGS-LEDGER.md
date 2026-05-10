@@ -3564,3 +3564,61 @@ al-Khalifa's most-cited claim — **2,698 *Allāh* attestations = 19×142** — 
 2. Cross-counting-system audit: Madanian-Awwal (6,217), Baṣrī (6,205), Shāmī (6,225) — does any classical counting yield 19-divisibility?
 3. Q 27 double-basmala verification: surah-opener + Q 27:30 Solomon's letter
 4. Pre-Islamic poetry baseline: do other ancient texts show integer-19 patterns under arbitrary recounting?
+
+## §10.56 H-NEW-1700 inline (2026-05-09) — Maryam corpus-distribution: 31 attestations / 12 surahs; classical "only-woman-named" VERIFIED; Q 5 (NOT Q 19) is corpus-rank-1
+
+**Status**: VERIFIED on classical claim; SURPRISE inverse-eponymous-rank discovery.
+
+**Maryam attestation distribution** (substring مريم, no-tashkeel Hafs-Kūfan):
+
+| Surah | Count | Verses |
+|---|---|---|
+| **Q 5 al-Māʾida** | **9 (corpus rank-1)** | 17, 46, 72, 75, 78, 110, 112, 114, 116 |
+| Q 3 Āl ʿImrān | 6 | 36, 37, 42, 43, 44, 45 |
+| Q 4 al-Nisāʾ | 3 | 156, 157, 171 |
+| **Q 19 Maryam (eponymous)** | **3 (tied rank-3)** | 16, 27, 34 |
+| Q 2 al-Baqara | 2 | 87, 253 |
+| Q 61 al-Ṣaff | 2 | 6, 14 |
+| Q 9, 23, 33, 43, 57, 66 | 1 each | — |
+| **TOTAL** | **31** | across **12 surahs** |
+
+### §10.56.1 Classical "only-woman-named" claim VERIFIED
+
+Searched 9 candidate female names from classical/Quranic narrative:
+- Sarah, Eve, Khadīja, ʿĀʾisha, Zaynab, Fāṭima, Āsiya, Bilqīs: **0 verses each** — NONE appear by personal name in canonical corpus
+- "Hajar" gives 21 false positives via the root *hajara* "to migrate", not the name Hagar
+
+**Vindicates al-Suyūṭī (Itqān nawʿ 22)**: Maryam is the canonical exception — the only woman named by personal name in the corpus.
+
+### §10.56.2 SURPRISE — Q 19 is NOT corpus-rank-1 in its title-lexical-key
+
+The title-eponymous surah holds 3 attestations; **Q 5 al-Māʾida holds 9** — triple the title-surah count.
+
+**Pattern across project**:
+
+| Eponymous surah | Title-root corpus-rank-1 actually |
+|---|---|
+| Q 19 Maryam (this finding) | Q 5 al-Māʾida (9 vs 3) |
+| Q 68 al-Qalam (Q068-F-06) | Q 96 al-ʿAlaq (9.01/1000 vs 1.97/1000) |
+| Q 40 al-Ghāfir (Q040-F-03) | Q 40 itself only rank 25/114 |
+| Q 23 al-Muʾminūn | Q 23 IS rank-1 |
+| Q 58 al-Mujādila | Q 58 IS rank-1 |
+
+**Title-density independence**: title-eponymy and density-rank-1 are *independent* axes. Q 19 / Q 68 / Q 40 break the title-density-EXACT pattern; Q 23 / Q 58 confirm it. Non-universality is itself a structural finding.
+
+### §10.56.3 Christ-narrative cluster concentration
+
+Q 3 + Q 4 + Q 5 + Q 19 hold 21 of 31 Maryam-attestations = **67.7% concentration in 4 of 114 surahs** (3.5% of corpus surah-real-estate carries 67.7% of Maryam-attestations).
+
+Cluster reality at MARKER level is REAL; H-NEW-1310 NULL'd cluster at FR whole-surah scale; H-NEW-1500 (in flight) predicted to PASS at pericope-scale per H-NEW-1380 + H-NEW-1510 scale-of-aggregation principle.
+
+### §10.56.4 Open follow-ups
+
+1. ʿĪsā (Jesus) corpus distribution — does Q 19 hold *ʿīsā*-rank-1?
+2. Title-density independence formalization — corpus-wide pre-registered test
+3. Q 5 specialist should highlight rank-1 Maryam-density finding (non-obvious for "Table" surah)
+
+### §10.56.5 Files
+
+- Finding: `findings/phase-b-hypotheses/h-new-1700-maryam-corpus-distribution.md`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-1700.json`

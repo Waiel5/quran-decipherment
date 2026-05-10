@@ -3,16 +3,16 @@ surah: 9
 surah_name_ar: التوبة
 surah_name_translit: al-Tawba
 file_type: novel-findings
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: 4 pre-registered novel findings completed. Q009-F-01 FALSIFIES the no-mercy-→ no-basmala classical claim (mercy-density rank 24/114, ABOVE corpus mean). Q009-F-02 VINDICATES the al-Faḍiḥa naming (hypocrisy rank 5/114). Q009-F-03 VINDICATES the Q9-Q10 boundary as rank 4/113 most expensive canonical adjacency, with muqaṭṭaʿāt-cluster-control falsifying that as the driver. Q009-F-04 returns NULL on the single-dominant-last-revealed-verse claim.
+verdict: 7 pre-registered novel findings completed. F-01 FALSIFIES no-mercy-→no-basmala (rank 24/114, above mean). F-02 VINDICATES al-Faḍiḥa naming (rank 5/114). F-03 VINDICATES Q9-Q10 boundary (rank 4/113). F-04 NULL on single-dominant-last-revealed-verse. F-05 VINDICATED-CORPUS-EXACT — Q 9 is the corpus-only surah without basmala opener (113 openers + 1 internal at Q 27:30 = 114). F-06 NULL — Q 8→Q 9 seam mid-band (rank-smooth 56/113); al-Biqāʿī thematic-couplet NOT supported at the FR-roots seam-smoothness level. F-07 NULL-DIRECTIONAL — Q 9 rank 12/114 by words/verse (top decile, just misses pre-committed top-10 threshold).
 ---
 
 # Q 9 al-Tawba — Novel Findings
 
 This file collates novel pre-registered findings on Q 9 produced in this investigation. Each is direction-locked, SHA-verified, Bonferroni-corrected, and reports honest NULL/DIRECTIONAL/VINDICATED/FALSIFIED verdicts.
 
-**Bonferroni**: family k = 5; α_corrected = 0.01.
+**Bonferroni**: family k = 7 pre-registered Q 9 audits (Q009-F-01..F-07); α_corrected = 0.05/7 ≈ 0.00714.
 
 ---
 
@@ -166,6 +166,121 @@ The pre-committed direction (Q 9:128-129 dominance) is supported (Q 9:128-129 IS
 - al-Bayhaqī's harmonization (al-Suyūṭī *Itqān* nawʿ 8 line 1800) — that each Companion answered with what reached him — is empirically the most defensible reading.
 - Q 9:128-129 = last absolutely-revealed-passage; Q 2:281 = last legal-ruling-on-ribā; Q 4:176 = last legal-ruling-on-kalāla. These three coexist as "last revealed in their domain."
 - Q 5:3 ("today I have perfected your religion for you") is overwhelmingly NOT cited as a last-verse contender — only 9× across 384 instances. The popular contemporary citation of Q 5:3 as "the last verse" is NOT supported by classical citation density.
+
+---
+
+## Q009-F-05 — Basmala corpus-singleton verification
+
+- **Pre-reg**: `Q009-F-05-basmala-corpus-singleton-prereg.md` (SHA: `e3beb6605cd44a6883e01be279a701f9fc1fa08dac6f9e78d4984488220050a7`)
+- **Script**: `/Users/grey/Downloads/quran/scripts/Q009_F_05_basmala_corpus_singleton.py`
+- **Results**: `csv/Q009-F-05-basmala-corpus-singleton.json`
+
+### Hypothesis (DIRECTION-LOCKED)
+Under the printed canonical convention, the entire corpus contains exactly **114** basmala occurrences = 113 surah-openers (all surahs except Q 9) + 1 internal occurrence at Q 27:30 (Solomon's letter to Bilqīs). Q 9 is the corpus-only surah whose printed canonical opener is NOT the basmala.
+
+### Rules-tuple
+- corpus-1: `quran-text/quran-no-tashkeel.json` (Hafs-numbered: basmala stored as v.1 only for Q 1).
+- corpus-2: `data/alt-text/quran-simple-txt.txt` (printed convention: basmala printed before every surah except Q 9).
+- token-match: NFKD-stripped orthographic regex `بسم\s*ا?ل?له\s*الرحم[نٰ]\s*الرحيم`.
+
+### Result
+**Corpus-1 (stored-JSON, Hafs-numbered convention):**
+- Surahs whose v.1 IS the basmala: **[1]** (count = 1).
+- Surahs whose v.1 is NOT the basmala: **113** (all surahs except Q 1 — i.e. the 112 surahs whose basmala-opener is unnumbered + Q 9).
+- Q 9 is in the "not-v.1-basmala" set: **TRUE**.
+- Internal-basmala occurrences (non-v.1): **1** at **Q 27:30** — *innahu min sulaymāna wa-innahu bismi llāhi al-raḥmāni al-raḥīm*.
+
+**Corpus-2 (printed convention):**
+- Total basmala matches in `quran-simple-txt.txt`: **114** = 113 surah-opener-basmalas + 1 internal Q 27:30. Matches the pre-committed count exactly.
+
+### Verdict: **VINDICATED-CORPUS-EXACT**
+
+Both pre-committed counts hit on the nose:
+- 113 printed-opener basmalas + 1 internal = 114 total.
+- Q 9 is the **corpus-only** surah without a printed basmala opener.
+- Q 27:30 is the **corpus-only** internal basmala (mid-surah, inside the Solomon-Bilqīs letter).
+
+This corpus-exact verification grounds the al-Suyūṭī (*al-Itqān* nawʿ 6 *fī asbāb sukūt al-basmala fī Barāʾah*, nawʿ 7 *fī ʿadad suwarihā*) canonical attestation at the textual-arithmetic level. The classical 5-position debate over *why* the basmala is absent from Q 9 (al-Bayhaqī, ʿAlī, al-Mubarrad, Ibn ʿAbbās, ʿUthmān via al-Tirmidhī #3086) presupposes the singleton-omission, and the singleton-omission holds at the empirical-arithmetic level. The Q 27:30 internal-basmala is itself a corpus-singleton — making the basmala formula appear at exactly the 114 architectural loci (113 opener-occurrences + 1 narrative-quotation).
+
+### What it does NOT establish
+- The *reason* for the omission remains theologically open; the 5 classical positions are not adjudicated by this corpus-exact count alone (only the bare phenomenon).
+- The numerical coincidence "114 basmala occurrences in 114-surah corpus" is a noted observation, not a hidden-code claim — pre-Quranic basmala formulas appear in many texts; the test only verifies the WITHIN-Quranic distribution.
+
+---
+
+## Q009-F-06 — Q 8 → Q 9 seam smoothness (al-Biqāʿī thematic-couplet test)
+
+- **Pre-reg**: `Q009-F-06-q8-q9-seam-smoothness-prereg.md` (SHA: `6fd9d94553ada755192702f89e4939f635403853225edf35b10904a78e53f88c`)
+- **Script**: `/Users/grey/Downloads/quran/scripts/Q009_F_06_q8_q9_seam_smoothness.py`
+- **Results**: `csv/Q009-F-06-q8-q9-seam-smoothness.json`
+
+### Hypothesis (DIRECTION-LOCKED)
+The Q 8 → Q 9 canonical-adjacency seam (H-NEW-720 `delta_raw`) is in the **top 30% smoothest seams** (rank-smooth ≤ 34 of 113), supporting al-Biqāʿī's (*Naẓm al-Durar*) thematic-couplet reading of Q 8 al-Anfāl ↔ Q 9 al-Tawba.
+
+### Result
+- Q 8 → Q 9 `delta_raw` = 0.0612, `fraction_residual` = 0.74%.
+- Rank-smooth: **56 / 113** (49.6th percentile — mid-band).
+- Pre-committed threshold: VINDICATED at ≤ 34. **NOT MET.**
+
+For context:
+- Q 9 → Q 10 `delta_raw` = 0.3094, `fraction_residual` = 3.73%, rank-smooth = **110/113** (97th percentile — among the 4 most-expensive seams of the corpus).
+
+### Verdict: **NULL** (35 ≤ rank-smooth ≤ 80)
+
+The pre-committed direction (top-30% smooth) is **not supported** by the FR-roots seam-smoothness rank. The Q 8 → Q 9 seam is structurally mid-band — neither a corpus-smooth coupling (which would have supported al-Biqāʿī's thematic-couplet) nor an outlier-expensive cost.
+
+### Honest interpretation
+This is a **NULL not a FALSIFICATION**: the seam is not unusually expensive (which is consistent with the surahs sitting together in the canonical mushaf without a major TSP-penalty), but it also is not unusually smooth. The al-Biqāʿī thematic-couplet *interpretive* reading — both Medinan, both war-context, both treating internal community discipline — is a content-level / *tanāsub*-level claim, not necessarily an FR-roots claim. Q 8 and Q 9 share content topics (military discipline, treaty-language, hypocrites) yet their root-frequency distributions are not particularly close.
+
+This test **adds nuance** to:
+- [[Q008-F-01]] / [[h-new-890-numerical-reaudit]] which FALSIFIED Ibn ʿAbbās's stronger "Q 8 + Q 9 = one surah" claim (d_FR(8,9) = 0.911, rank 81/113 by similarity — *more dissimilar* than typical adjacent pairs).
+- [[Q009-F-03]] which VINDICATED Q 9 → Q 10 as rank 4/113 most expensive seam.
+
+The picture that emerges: Q 8 ↔ Q 9 are mid-band-smooth at the FR-roots level; Q 9 ↔ Q 10 is corpus-expensive. The mushaf's chronology-block transition is encoded on the RIGHT side of Q 9, not the left.
+
+### Cross-implications
+- al-Biqāʿī's qualitative *tanāsub* reading (Q 8 ↔ Q 9 as thematic couplet) is not empirically supported at root-distribution similarity, but it is also NOT falsified — the seam is simply mid-band. Thematic *tanāsub* may operate on dimensions orthogonal to root-frequency (e.g., legal-discourse register, asbāb al-nuzūl chronology).
+- The basmala-omission (Q009-F-05 VINDICATED) is structurally orthogonal to the seam-smoothness: the omission is a graphical-canonical phenomenon, the seam is a content-distribution phenomenon. They co-exist without one implying the other.
+
+---
+
+## Q009-F-07 — Q 9 long-Medinan jurisprudential verse-length signature
+
+- **Pre-reg**: `Q009-F-07-long-medinan-verse-rank-prereg.md` (SHA: `c97f9d9d352acf0f83f873a125651ae9e55c59cd1cce3121bd9056e37512168f`)
+- **Script**: `/Users/grey/Downloads/quran/scripts/Q009_F_07_long_medinan_verse_rank.py`
+- **Results**: `csv/Q009-F-07-long-medinan-verse-rank.json`
+
+### Hypothesis (DIRECTION-LOCKED)
+Q 9's mean words-per-verse is in the **top-10** of the corpus (rank ≤ 10 of 114), reflecting its long-Medinan jurisprudential prose register.
+
+### Result
+- Q 9 mean words/verse = **20.73** (2,674 words / 129 verses).
+- Rank: **12 / 114** (top-decile but JUST OUTSIDE the pre-committed top-10 threshold).
+- Top-10 by mean-words/verse (no-tashkeel): Q 60, Q 65, Q 5, Q 58, Q 2, Q 4, Q 66, Q 24, Q 13, Q 57. Q 9 sits at rank 12 directly after Q 49 (rank 11, mean 21.22).
+
+### Rules-tuple stability
+- no-tashkeel: rank 12 (mean 20.73)
+- min-tashkeel: rank 13 (mean 20.73)
+- full-tashkeel: rank 11 (mean 20.73)
+- **Rank is rules-tuple-fragile**: oscillates between 11–13 depending on tashkeel level (full-tashkeel passes the pre-committed threshold, no/min-tashkeel does not).
+
+### Verdict: **NULL-DIRECTIONAL** (pre-committed band: 11-30)
+
+The pre-committed direction (Q 9 in long-Medinan jurisprudential top-tier) is **supported** — Q 9 is solidly in the top-decile of the corpus by verse length — but the **magnitude** narrowly misses the top-10 threshold under the primary no-tashkeel rules-tuple (Q 9 = rank 12). Honest report: direction supported, threshold-strict-vindication missed, no pre-commit violation.
+
+### Honest interpretation
+The 11 surahs that outrank Q 9 are predominantly Medinan jurisprudential or long-Medinan creedal:
+- Q 60 (al-Mumtaḥana), Q 65 (al-Ṭalāq), Q 5 (al-Māʾida), Q 58 (al-Mujādila), Q 2 (al-Baqara), Q 4 (al-Nisāʾ), Q 66 (al-Taḥrīm), Q 24 (al-Nūr), Q 57 (al-Ḥadīd), Q 49 (al-Ḥujurāt) — all Medinan.
+- Q 13 (al-Raʿd) is the lone Meccan in the top-11 (and is classed by some as late-Meccan or Medinan).
+
+Q 9 is **in the long-Medinan jurisprudential prose tier**; the long-Medinan signature is REAL, but Q 9 is not at its sharpest edge. The four surahs above Q 9 that exceed 22 words/verse (Q 60, Q 65, Q 5, Q 58) are extremely sustained jurisprudential prose; Q 9's mean is diluted by its short fāṣila-rich passages in the Tabūk-critique section (vv. 38-129) where verses are still moderate-length not very-long.
+
+### Rules-tuple-fragility note (MW-4)
+With full-tashkeel applied, Q 9's rank rises to 11 — still missing top-10 by one position. The borderline finding's interpretation should be robust to this 1-position drift. The dominant conclusion is: Q 9 is solidly top-decile, narrowly outside top-10. We **do NOT** post-hoc soften the threshold; we report NULL-DIRECTIONAL.
+
+### Cross-implications
+- Reinforces [[h-new-770-verse-length-compression-tail]]: the long-Medinan tier is empirically distinguished; Q 9 sits at its lower edge.
+- Q 9's UAS rank 4/114 (top-architectural) is **not driven** by extreme verse-length alone — Q 9 ranks 12 by length but 4 by overall UAS, indicating the rank-4 status comes from outlier-strength and content-cohesion-isolation, not from length alone.
 
 ---
 

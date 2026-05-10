@@ -4,9 +4,9 @@ surah_name_ar: التوبة
 surah_name_translit: al-Tawba
 surah_name_english: Repentance
 file_type: overview
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE — all 7 template files written; 4 pre-registered novel findings (F-01 mercy-FALSIFIED, F-02 al-Faḍiḥa-VINDICATED, F-03 Q9-Q10-boundary-VINDICATED rank 4/113, F-04 last-revealed-NULL); H-NEW-890 Q8-Q9-unity FALSIFIED; 8 classical claims audited.
+verdict: COMPLETE — all 8 template files written; 7 pre-registered novel findings (F-01 mercy-FALSIFIED, F-02 al-Faḍiḥa-VINDICATED, F-03 Q9-Q10-boundary-VINDICATED rank 4/113, F-04 last-revealed-NULL, F-05 basmala-CORPUS-EXACT 113+1=114, F-06 Q8-Q9-seam-NULL mid-band rank 56/113, F-07 long-Medinan-verse-length NULL-DIRECTIONAL rank 12/114); H-NEW-890 Q8-Q9-unity FALSIFIED; 10 classical claims audited.
 ---
 
 # Q 9 al-Tawba — Overview
@@ -39,13 +39,17 @@ verdict: COMPLETE — all 7 template files written; 4 pre-registered novel findi
 
 ## 3. Why no basmala — classical explanations
 
-al-Suyūṭī (*al-Itqān* nawʿ 7), citing al-Bayhaqī and others:
+al-Suyūṭī (*al-Itqān* nawʿ 6 *fī asbāb sukūt al-basmala fī Barāʾah*; nawʿ 7), citing al-Bayhaqī and others:
 - Position 1 (al-Bayhaqī, ʿAlī ibn Abī Ṭālib): Q 9 is a "war-declaration" against polytheists; basmala (mercy) is incompatible with war.
 - Position 2 (Ibn ʿAbbās): Q 9 is a CONTINUATION of Q 8 al-Anfāl (one revelation event); they were originally one surah; basmala would split them.
 - Position 3 (ʿUthmān ibn ʿAffān, recorded by al-Tirmidhī #3086): When the Prophet's revelations were collected, they didn't know whether Q 9 belonged with Q 8 or as a separate surah; doubt was resolved by no-basmala default.
+- Position 4 (compromise — leave a blank line, no basmala).
+- Position 5 (al-Mubarrad / Sufyān b. ʿUyayna): no-mercy → no-basmala — FALSIFIED by Q009-F-01 (mercy-density rank 24/114, top-quartile).
 - The position-87-revelation-order (very late) supports the "war-context" reading.
 
-H-NEW-890 falsified the "Q 8 + Q 9 are functionally one surah" claim: Q 8-Q 9 FR-distance ranks 81/113 — they are MORE dissimilar than typical adjacent pairs.
+[[Q009-F-05]] VINDICATED-CORPUS-EXACT: the printed corpus contains exactly **114 basmala occurrences** = 113 surah-openers (all surahs except Q 9) + 1 internal at Q 27:30 (Solomon's letter to Bilqīs). The al-Suyūṭī Itqān nawʿ 6 + ʿUthmān via al-Tirmidhī #3086 attestation is empirically locked at the textual-arithmetic level.
+
+H-NEW-890 / Q008-F-01 FALSIFIED the stronger "Q 8 + Q 9 are functionally one surah" claim (Ibn ʿAbbās): Q 8-Q 9 FR-distance ranks 81/113 — they are MORE dissimilar than typical adjacent pairs. [[Q009-F-06]] NULL — the WEAKER al-Biqāʿī thematic-couplet *tanāsub* reading is also not supported at the FR-seam-smoothness level (Q 8 → Q 9 seam rank 56/113, mid-band).
 
 ## 4. Opening formula
 
