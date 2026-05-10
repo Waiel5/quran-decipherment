@@ -1,0 +1,132 @@
+{
+  "test_id": "Q047-F-06",
+  "pre_reg_sha": "3b74c07902f7e50f4630a5ca6c48e836e00921f38222f83296082b90fc53dc72",
+  "seed": 20260509,
+  "rules_tuple": "(no-tashkeel, QAC-stem-root + char-4gram + verse-length-histogram, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "pair": "Q47-Q48",
+  "test_A_in_all_three_bottom15_cohesive": {
+    "h-new-130_root": {
+      "Q47-Q48_distance": 0.889264,
+      "rank_low": 75,
+      "in_bottom_15": false,
+      "bottom_15_set": [
+        "107-108",
+        "113-114",
+        "106-107",
+        "111-112",
+        "112-113",
+        "105-106",
+        "103-104",
+        "110-111",
+        "108-109",
+        "104-105",
+        "102-103",
+        "94-95",
+        "93-94",
+        "100-101",
+        "99-100"
+      ]
+    },
+    "h-new-130b_char4gram": {
+      "Q47-Q48_distance": 0.981588,
+      "rank_low": 89,
+      "in_bottom_15": false,
+      "bottom_15_set": [
+        "111-112",
+        "110-111",
+        "112-113",
+        "105-106",
+        "113-114",
+        "107-108",
+        "104-105",
+        "106-107",
+        "108-109",
+        "103-104",
+        "93-94",
+        "109-110",
+        "101-102",
+        "100-101",
+        "94-95"
+      ]
+    },
+    "h-new-130c_verselen": {
+      "Q47-Q48_distance": 0.694148,
+      "rank_low": 71,
+      "in_bottom_15": false,
+      "bottom_15_set": [
+        "91-92",
+        "29-30",
+        "11-12",
+        "39-40",
+        "10-11",
+        "100-101",
+        "51-52",
+        "105-106",
+        "106-107",
+        "40-41",
+        "92-93",
+        "86-87",
+        "69-70",
+        "4-5",
+        "87-88"
+      ]
+    },
+    "in_all_three_cohesive_bottom_15": false,
+    "test_A_pass": false
+  },
+  "test_B_FR_pair_rank": {
+    "pair_distance": 0.889264,
+    "pair_rank_low_of_6441": 2281,
+    "total_pairs": 6441,
+    "percentile_low": 0.35413755628008076,
+    "bottom_quartile_threshold_rank_1610": 1610,
+    "bottom_2_5pct_threshold_rank": 161,
+    "test_B_pass_quartile": false,
+    "test_B_pass_strict_alpha": false
+  },
+  "Q47_nearest_10_FR_neighbors": [
+    {
+      "surah": 64,
+      "fr": 0.819514
+    },
+    {
+      "surah": 63,
+      "fr": 0.829525
+    },
+    {
+      "surah": 49,
+      "fr": 0.850282
+    },
+    {
+      "surah": 61,
+      "fr": 0.863716
+    },
+    {
+      "surah": 66,
+      "fr": 0.865871
+    },
+    {
+      "surah": 59,
+      "fr": 0.876875
+    },
+    {
+      "surah": 13,
+      "fr": 0.887749
+    },
+    {
+      "surah": 48,
+      "fr": 0.889264
+    },
+    {
+      "surah": 60,
+      "fr": 0.893473
+    },
+    {
+      "surah": 98,
+      "fr": 0.904074
+    }
+  ],
+  "verdict": "NULL",
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025
+}
