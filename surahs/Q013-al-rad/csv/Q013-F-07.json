@@ -1,0 +1,87 @@
+{
+  "test_id": "Q013-F-07",
+  "title": "raʿd-substring corpus rank — Q 13 corpus-rank-1 prediction",
+  "prereg_sha_expected": "02f15efbee43f3f288b346c2f3d05f5efb167f7b75fc5afdd10587ba26c57f8d",
+  "prereg_sha_actual": "02f15efbee43f3f288b346c2f3d05f5efb167f7b75fc5afdd10587ba26c57f8d",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.025,
+  "target_lexeme": "رعد",
+  "cell_A_raw_count": {
+    "q13_count": 1,
+    "q13_rank": 2,
+    "top5": [
+      {
+        "surah": 2,
+        "count": 1
+      },
+      {
+        "surah": 13,
+        "count": 1
+      },
+      {
+        "surah": 1,
+        "count": 0
+      },
+      {
+        "surah": 3,
+        "count": 0
+      },
+      {
+        "surah": 4,
+        "count": 0
+      }
+    ],
+    "pass_direction_rank1": false,
+    "total_corpus_count": 2
+  },
+  "cell_B_density_per_1k_words": {
+    "q13_density": 1.0776,
+    "q13_rank": 1,
+    "top5": [
+      {
+        "surah": 13,
+        "density_per_1k_words": 1.0776
+      },
+      {
+        "surah": 2,
+        "density_per_1k_words": 0.1508
+      },
+      {
+        "surah": 1,
+        "density_per_1k_words": 0.0
+      },
+      {
+        "surah": 3,
+        "density_per_1k_words": 0.0
+      },
+      {
+        "surah": 4,
+        "density_per_1k_words": 0.0
+      }
+    ],
+    "pass_direction_rank1": true
+  },
+  "cell_C_permutation_null": {
+    "n_perm": 10000,
+    "p_q13_rank1": 0.01,
+    "pass_alpha_bon": true,
+    "interpretation": "If raʿd-positions were randomly shuffled across verses, the fraction of permutations in which Q 13 still ranks #1 corpus-wide."
+  },
+  "attestations": [
+    {
+      "surah": 2,
+      "verse": 19,
+      "text": "أو كصيب من السماء فيه ظلمات ورعد وبرق يجعلون أصابعهم في آذانهم من الصواعق حذر الموت ۚ والله محيط بالكافرين",
+      "raʿd_substring_count": 1
+    },
+    {
+      "surah": 13,
+      "verse": 13,
+      "text": "ويسبح الرعد بحمده والملائكة من خيفته ويرسل الصواعق فيصيب بها من يشاء وهم يجادلون في الله وهو شديد المحال",
+      "raʿd_substring_count": 1
+    }
+  ],
+  "verdict": "NULL — DIRECTION REVERSED",
+  "note": "The target lexeme is corpus-rare. Q 13:13 contains *al-raʿd* in the construction *yusabbiḥu al-raʿdu bi-ḥamdihi* — verified corpus-unique syntactic role by Q013-F-02."
+}

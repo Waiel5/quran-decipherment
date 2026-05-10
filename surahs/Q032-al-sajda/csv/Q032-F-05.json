@@ -1,0 +1,76 @@
+{
+  "test_id": "Q032-F-05",
+  "title": "Friday-fajr Sajda+Insān (al-Bukhārī #870/#1037) + al-Munjiya nightly Sajda+Mulk (al-Tirmidhī #2975) FR-pair audit",
+  "prereg_sha_expected": "eea6e10e756410f07dbd4667463fca9fe87d820aa8fbbb86d3614f173bd4afcb",
+  "prereg_sha_actual": "eea6e10e756410f07dbd4667463fca9fe87d820aa8fbbb86d3614f173bd4afcb",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.017,
+  "corpus_pairwise_FR_mean": 0.923487,
+  "corpus_pairwise_FR_std": 0.20876794276040248,
+  "threshold_mean_minus_1sigma": 0.7147190572395975,
+  "cell_A_friday_fajr_Q32_Q76": {
+    "FR_distance": 0.839509,
+    "threshold": 0.7147190572395975,
+    "pass_direction": false,
+    "z_score": -0.40225524517612055
+  },
+  "cell_B_munjiya_nightly_Q32_Q67": {
+    "FR_distance": 0.75342,
+    "threshold": 0.7147190572395975,
+    "pass_direction": false,
+    "z_score": -0.8146221960676282
+  },
+  "cell_C_joint_perm_null": {
+    "joint_obs_mean": 0.7964644999999999,
+    "n_perm": 10000,
+    "null_5pct": 0.807749,
+    "p_one_sided_le": 0.0237,
+    "pass_alpha_bon": false
+  },
+  "MW6_hadith_attestations": {
+    "bukhari_870_friday_fajr": {
+      "found": true,
+      "id": 870,
+      "contains_all_substrings": false,
+      "matched_substrings": [
+        "الم"
+      ],
+      "text_preview": "حَدَّثَنَا أَبُو نُعَيْمٍ، قَالَ حَدَّثَنَا سُفْيَانُ، عَنْ سَعْدِ بْنِ إِبْرَاهِيمَ، عَنْ عَبْدِ الرَّحْمَنِ ـ هُوَ ابْنُ هُرْمُزَ ـ عَنْ أَبِي هُرَيْرَةَ ـ رضى الله عنه ـ قَالَ كَانَ النَّبِيُّ صلى الله عليه وسلم يَقْرَأُ فِي الْجُمُعَةِ فِي صَلاَةِ الْفَجْرِ ‏{‏الم * تَنْزِيلُ‏}‏ السَّجْدَةَ وَ‏{"
+    },
+    "bukhari_1037_friday_fajr_variant": {
+      "found": true,
+      "id": 1037,
+      "contains_all_substrings": false,
+      "matched_substrings": [
+        "الم"
+      ],
+      "text_preview": "حَدَّثَنَا مُحَمَّدُ بْنُ يُوسُفَ، حَدَّثَنَا سُفْيَانُ، عَنْ سَعْدِ بْنِ إِبْرَاهِيمَ، عَنْ عَبْدِ الرَّحْمَنِ، عَنْ أَبِي هُرَيْرَةَ ـ رضى الله عنه ـ قَالَ كَانَ النَّبِيُّ صلى الله عليه وسلم يَقْرَأُ فِي الْجُمُعَةِ فِي صَلاَةِ الْفَجْرِ ‏{‏الم * تَنْزِيلُ‏}‏ السَّجْدَةَ وَ‏{‏هَلْ أَتَى عَلَى الإ"
+    },
+    "tirmidhi_2975_munjiya_nightly": {
+      "found": true,
+      "id": 2975,
+      "contains_all_substrings": false,
+      "matched_substrings": [
+        "الم"
+      ],
+      "text_preview": "حَدَّثَنَا هُرَيْمُ بْنُ مِسْعَرٍ، - تِرْمِذِيٌّ - قَالَ حَدَّثَنَا الْفُضَيْلُ بْنُ عِيَاضٍ، عَنْ لَيْثٍ، عَنْ أَبِي الزُّبَيْرِ، عَنْ جَابِرٍ، أَنَّ النَّبِيَّ صلى الله عليه وسلم كَانَ لاَ يَنَامُ حَتَّى يَقْرَأَ ‏:‏ ‏(‏الم * تَنْزِيلُ ‏)‏ وَ ‏(‏ تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ ‏)‏ ‏.‏ قَالَ "
+    },
+    "brief_error_tirmidhi_2891_check": {
+      "found": true,
+      "id": 2891,
+      "contains_all_substrings": false,
+      "matched_substrings": [],
+      "text_preview": "حَدَّثَنَا مُحَمَّدُ بْنُ بَشَّارٍ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مَهْدِيٍّ، حَدَّثَنَا عُبَيْدُ اللَّهِ بْنُ إِيَادِ بْنِ لَقِيطٍ، عَنْ أَبِيهِ، عَنْ أَبِي رِمْثَةَ، قَالَ رَأَيْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم وَعَلَيْهِ بُرْدَانِ أَخْضَرَانِ ‏.‏ قَالَ أَبُو عِيسَى هَذَا حَدِيثٌ حَسَنٌ غ"
+    },
+    "brief_error_tirmidhi_2892_check": {
+      "found": true,
+      "id": 2892,
+      "contains_all_substrings": false,
+      "matched_substrings": [],
+      "text_preview": "حَدَّثَنَا أَحْمَدُ بْنُ مَنِيعٍ، حَدَّثَنَا يَحْيَى بْنُ زَكَرِيَّا بْنِ أَبِي زَائِدَةَ، أَخْبَرَنِي أَبِي، عَنْ مُصْعَبِ بْنِ شَيْبَةَ، عَنْ صَفِيَّةَ بِنْتِ شَيْبَةَ، عَنْ عَائِشَةَ، قَالَتْ خَرَجَ النَّبِيُّ صلى الله عليه وسلم ذَاتَ غَدَاةٍ وَعَلَيْهِ مِرْطٌ مِنْ شَعَرٍ أَسْوَدَ ‏.‏ قَالَ أَبُو"
+    }
+  },
+  "verdict": "NULL — DIRECTION REVERSED on all cells",
+  "note": "Brief specified al-Tirmidhī #2891/#2892 as Friday-fajr Q32+Q67. On-disk: 2891/2892 are clothing hadith; the Q32+Q67 nightly pair is Tirmidhī #2975; Friday-fajr is Bukhārī #870/#1037 with Q32+Q76. Tested both empirically anchored pairs."
+}

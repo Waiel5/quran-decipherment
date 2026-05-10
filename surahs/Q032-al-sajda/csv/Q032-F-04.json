@@ -1,0 +1,99 @@
+{
+  "test_id": "Q032-F-04",
+  "title": "ALM-4 mid-Meccan cluster {Q 29, 30, 31, 32} Fisher-Rao cohesion",
+  "prereg_sha_expected": "363410f7172124d9e93c7d106a81e32ba4759747d55893efb345522527648d48",
+  "prereg_sha_actual": "363410f7172124d9e93c7d106a81e32ba4759747d55893efb345522527648d48",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.025,
+  "cluster": [
+    29,
+    30,
+    31,
+    32
+  ],
+  "cluster_total_words": 2888,
+  "cluster_per_surah_words": {
+    "29": 1044,
+    "30": 868,
+    "31": 586,
+    "32": 390
+  },
+  "T_obs_mean_pairwise_FR": 0.9159156666666667,
+  "within_cluster_pair_distances": [
+    {
+      "a": 29,
+      "b": 31,
+      "d": 0.896339
+    },
+    {
+      "a": 30,
+      "b": 31,
+      "d": 0.90887
+    },
+    {
+      "a": 31,
+      "b": 32,
+      "d": 0.909461
+    },
+    {
+      "a": 29,
+      "b": 30,
+      "d": 0.91533
+    },
+    {
+      "a": 30,
+      "b": 32,
+      "d": 0.927242
+    },
+    {
+      "a": 29,
+      "b": 32,
+      "d": 0.938252
+    }
+  ],
+  "corpus_pairwise_FR_stats": {
+    "n_pairs": 6441,
+    "min": 0.212673,
+    "max": 1.550933,
+    "mean": 0.923487,
+    "median": 0.956707
+  },
+  "cell_A_uniform": {
+    "n_perm": 10000,
+    "null_5pct": 0.6951748333333333,
+    "null_50pct": 0.9488718333333334,
+    "p_one_sided_le": 0.3659,
+    "pass_alpha_bon": false
+  },
+  "cell_B_length_matched": {
+    "band_low_words": 543,
+    "band_high_words": 815,
+    "pool_size": 8,
+    "n_accepted": 10000,
+    "null_5pct": 0.9012796666666666,
+    "null_50pct": 0.9516591666666666,
+    "p_one_sided_le": 0.1262,
+    "pass_alpha_bon": false
+  },
+  "mw5_positive_control_HM_7": {
+    "cluster": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "T_obs": 0.8672422857142857,
+    "comparison_note": "ALM-4 (T_obs=0.9159) vs HM-7 (T_obs=0.8672); H-NEW-1395 CONFIRMED-NULL HM-7. Lower T_obs = tighter cluster."
+  },
+  "comparison_to_Q030_F_08_ALM_6": {
+    "ALM_6_T_obs": 0.9256812,
+    "ALM_4_T_obs": 0.9159156666666667,
+    "delta": -0.009765533333333298,
+    "interpretation": "Negative delta = removing Q 2 + Q 3 from ALM-6 to form ALM-4 tightens (or loosens) the cluster mean by this amount."
+  },
+  "verdict": "NULL"
+}
