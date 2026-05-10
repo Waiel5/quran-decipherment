@@ -1,0 +1,96 @@
+{
+  "id": "Q042-F-03",
+  "title": "Root š-w-r corpus-EXACT count",
+  "prereg_sha": "4994d48fc2ee6a179ea33a7881fbdcef414a3d47ea638155b858cc1d0b36e703",
+  "rules_tuple": "(QAC-v0.4, Buckwalter-root-$wr, distinct-stem-attestations)",
+  "seed": 20260509,
+  "root_key_bw": "$wr",
+  "total_attestations": 4,
+  "raw_qac_grep_count": 4,
+  "cross_check_warning": null,
+  "attestations_root_index": [
+    [
+      2,
+      233,
+      40
+    ],
+    [
+      3,
+      159,
+      19
+    ],
+    [
+      19,
+      29,
+      1
+    ],
+    [
+      42,
+      38,
+      7
+    ]
+  ],
+  "attestations_detailed": [
+    {
+      "surah": 2,
+      "verse": 233,
+      "word_idx": 40,
+      "form_bw": "ta$aAwurK",
+      "pos": "N",
+      "lemma_bw": "ta$aAwur",
+      "semantic_sense": "consult/consultation"
+    },
+    {
+      "surah": 3,
+      "verse": 159,
+      "word_idx": 19,
+      "form_bw": "$aAwiro",
+      "pos": "V",
+      "lemma_bw": "$aAwiro",
+      "semantic_sense": "consult/consultation"
+    },
+    {
+      "surah": 19,
+      "verse": 29,
+      "word_idx": 1,
+      "form_bw": ">a$aArato",
+      "pos": "V",
+      "lemma_bw": ">a$aArato",
+      "semantic_sense": "point/indicate"
+    },
+    {
+      "surah": 42,
+      "verse": 38,
+      "word_idx": 7,
+      "form_bw": "$uwraY`",
+      "pos": "N",
+      "lemma_bw": "$uwraY`",
+      "semantic_sense": "consult/consultation"
+    }
+  ],
+  "consult_sense_count": 3,
+  "consult_sense_loci": [
+    [
+      2,
+      233
+    ],
+    [
+      3,
+      159
+    ],
+    [
+      42,
+      38
+    ]
+  ],
+  "point_sense_count": 1,
+  "point_sense_loci": [
+    [
+      19,
+      29
+    ]
+  ],
+  "pre_commit_honored": false,
+  "verdict": "NULL — pre-commit violation: root š-w-r attested 4 times (direction-locked ≤3)",
+  "post_hoc_note_mw7": "If pre-commit fails, the consult-sense sub-field count is reported as a post-hoc-capped observation (Protocol §1.7, MW-7 single-test ceiling)."
+}

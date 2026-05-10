@@ -3,7 +3,7 @@ surah: 42
 surah_name: al-Shūrā
 file_type: journal
 date_started: 2026-04-28
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-10
 phase: B+
 ---
 
@@ -49,3 +49,67 @@ Q 42 al-Shūrā investigation **COMPLETE**. One pre-registered novel finding (Q0
 - [[hawamim-7-cluster-synthesis]]
 - [[Q043-al-zukhruf/00-overview|Q 43]] — bifurcation partner
 - [[Q045-al-jathiyah/00-overview|Q 45]] — FR-nearest
+
+---
+
+## 2026-05-10 — Wave-3 follow-up: T2 + T3 pre-registered, both NULL
+
+### Garden-of-forking-paths log (BEFORE Q042-F-02 + Q042-F-03)
+
+- T1 (corpus-EXACT double-muqaṭṭaʿ) already executed as Q042-F-01 in
+  2026-04-28 session → VINDICATED. Re-stating T1 in this brief is a
+  re-confirmation, not a new test.
+- **T2 (Q042-F-02)** — pre-register: Q 41 ↔ Q 42 is the **TIGHTEST** of the
+  six mushaf-adjacent ḥawāmīm FR-pairs. Rules-tuple: QAC-stem-roots via
+  `h-new-111.json`. Single test (k=1). Direction lock written BEFORE
+  reading any of the 6 distances. Pre-reg SHA
+  `f737c0d8332e16f0c29922c85e0b5ada107fbca81363104ef2b28120d162107f`.
+- **T3 (Q042-F-03)** — pre-register: root š-w-r attested ≤ 3 times in QAC v0.4.
+  Source: `root-index.json` keyed on Buckwalter `$wr`; cross-validated
+  by direct regex on raw QAC. Direction locked at ≤ 3 BEFORE counting.
+  Pre-reg SHA
+  `4994d48fc2ee6a179ea33a7881fbdcef414a3d47ea638155b858cc1d0b36e703`.
+
+### Run timeline
+
+1. Pre-flight read of SKILL.md + INVESTIGATION-PROTOCOL.md + HANDOFF.
+2. Existing 00-07 reviewed (2026-04-28 session content is solid; no rewrites).
+3. Pre-regs T2 and T3 written. SHAs computed and embedded in scripts.
+4. **Q042-F-02 executed**. Result: Q 41 ↔ Q 42 rank **4 of 6**. Tightest
+   adjacent ḥawāmīm pair is Q 45 ↔ Q 46 (FR=0.811); Q 41 ↔ Q 42 is FR=0.854.
+   **Direction-locked prediction NOT met → NULL (pre-commit violation)**.
+5. **Q042-F-03 executed**. Result: root š-w-r attests **4 times** total
+   (Q 2:233, Q 3:159, Q 19:29, Q 42:38). Direction-locked ≤ 3 → **NULL
+   (pre-commit violation)**.
+6. Post-hoc MW-7-capped observation: restricting to *consult* semantic
+   sense (excluding Q 19:29 *ashārat* = "point/indicate"), exactly 3 stems
+   survive (Q 2:233 *tashāwur*, Q 3:159 *shāwirhum*, Q 42:38 *shūrā*).
+   This is reported under MW-7 single-test-α cap; cannot anchor a
+   CONFIRMED claim without independent replication.
+7. Updated 06-novel-findings.md with Findings 5 + 6 at full prominence.
+
+### NULLs published with equal prominence (Protocol §1.3)
+
+- **Q042-F-02 NULL**: Q 41 ↔ Q 42 is rank 4 of 6, not 1. The shared
+  *tanzīl-incipit + ḤMʿsq super-opener* formula does NOT linearly predict
+  minimum-FR adjacency on root-distributions. Consistent with cross-finding-025
+  (single-marker classes require multi-axis correlation to cohere).
+- **Q042-F-03 NULL**: root š-w-r attests 4 times, not ≤ 3. The *consultation*
+  semantic sub-field exhausts at 3 attestations (MW-7 post-hoc observation).
+
+### Self-checks
+
+- SHA verification: both scripts pass SHA check on their respective pre-reg
+  files. Direction was locked in pre-reg BEFORE the data were read.
+- Re-running `python3 scripts/Q042_F_01_muqattaat_split.py` (T1 reverification)
+  remains VINDICATED — no change.
+- The 2 NULL pre-commit violations are now logged. The Q 42 specialist
+  record reads: 1 VINDICATED novel + 3 VINDICATED architectural-observation
+  + 2 NULL-pre-commit-violation findings + 7 VINDICATED classical-claims
+  audits.
+
+### Verdict (this addendum)
+
+Q 42 specialist landing now includes 3 pre-registered novel tests (T1+T2+T3).
+T1 VINDICATED (corpus-EXACT double-muqaṭṭaʿ). T2 + T3 are honest NULL
+publications. The folder is template-complete and direction-honest.
