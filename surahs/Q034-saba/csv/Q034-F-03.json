@@ -1,0 +1,174 @@
+{
+  "finding_id": "Q034-F-03",
+  "prereg_sha": "70d7b5ec80de9cf6a2aef1586847b24e8c976b6314af0a228afa9d098c963c00",
+  "rules_tuple": "(no-tashkeel, QAC-root, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "seed": 20260509,
+  "alpha_bon": 0.016666666666666666,
+  "corpus_total_hmd_tokens": 63,
+  "corpus_n_surahs_with_hmd": 40,
+  "h1_token_count": {
+    "q34_count": 3,
+    "rank": 6,
+    "top10_threshold": 10,
+    "pass": true,
+    "top10_table": [
+      {
+        "surah": 17,
+        "count": 4
+      },
+      {
+        "surah": 39,
+        "count": 4
+      },
+      {
+        "surah": 14,
+        "count": 3
+      },
+      {
+        "surah": 27,
+        "count": 3
+      },
+      {
+        "surah": 31,
+        "count": 3
+      },
+      {
+        "surah": 34,
+        "count": 3
+      },
+      {
+        "surah": 35,
+        "count": 3
+      },
+      {
+        "surah": 40,
+        "count": 3
+      },
+      {
+        "surah": 2,
+        "count": 2
+      },
+      {
+        "surah": 6,
+        "count": 2
+      }
+    ]
+  },
+  "h2_per_verse_density": {
+    "q34_density": 0.05555555555555555,
+    "q34_verse_count": 54,
+    "rank": 8,
+    "top10_threshold": 10,
+    "pass": true,
+    "top10_table": [
+      {
+        "surah": 110,
+        "density": 0.3333333333333333,
+        "count": 1,
+        "verses": 3
+      },
+      {
+        "surah": 1,
+        "density": 0.14285714285714285,
+        "count": 1,
+        "verses": 7
+      },
+      {
+        "surah": 64,
+        "density": 0.1111111111111111,
+        "count": 2,
+        "verses": 18
+      },
+      {
+        "surah": 31,
+        "density": 0.08823529411764706,
+        "count": 3,
+        "verses": 34
+      },
+      {
+        "surah": 60,
+        "density": 0.07692307692307693,
+        "count": 1,
+        "verses": 13
+      },
+      {
+        "surah": 35,
+        "density": 0.06666666666666667,
+        "count": 3,
+        "verses": 45
+      },
+      {
+        "surah": 14,
+        "density": 0.057692307692307696,
+        "count": 3,
+        "verses": 52
+      },
+      {
+        "surah": 34,
+        "density": 0.05555555555555555,
+        "count": 3,
+        "verses": 54
+      },
+      {
+        "surah": 39,
+        "density": 0.05333333333333334,
+        "count": 4,
+        "verses": 75
+      },
+      {
+        "surah": 85,
+        "density": 0.045454545454545456,
+        "count": 1,
+        "verses": 22
+      }
+    ]
+  },
+  "h3_opener_intra_median": {
+    "openers": [
+      1,
+      6,
+      18,
+      34,
+      35
+    ],
+    "opener_densities": [
+      {
+        "surah": 1,
+        "density": 0.14285714285714285,
+        "count": 1,
+        "verses": 7
+      },
+      {
+        "surah": 6,
+        "density": 0.012121212121212121,
+        "count": 2,
+        "verses": 165
+      },
+      {
+        "surah": 18,
+        "density": 0.00909090909090909,
+        "count": 1,
+        "verses": 110
+      },
+      {
+        "surah": 34,
+        "density": 0.05555555555555555,
+        "count": 3,
+        "verses": 54
+      },
+      {
+        "surah": 35,
+        "density": 0.06666666666666667,
+        "count": 3,
+        "verses": 45
+      }
+    ],
+    "median_5_density": 0.05555555555555555,
+    "q34_density": 0.05555555555555555,
+    "q34_above_median": false,
+    "pass": false
+  },
+  "n_pass": 2,
+  "verdict": "DIRECTIONAL",
+  "honest_limits": "Token-count ties (rank 6 with multiple surahs at 3 tokens) means rank_count is dense-rank-based; Q34 tied with Q14, Q27, Q31, Q35, Q40. H2 density is more discriminating (per-verse normalization). Pre-flight observation made; verdict ceiling = DESCRIPTIVE-EMPIRICAL."
+}

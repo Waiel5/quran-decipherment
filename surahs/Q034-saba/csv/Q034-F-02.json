@@ -1,0 +1,115 @@
+{
+  "finding_id": "Q034-F-02",
+  "prereg_sha": "a8fd1b2d5e99d2d605a2794af208a69296860e4b238ab92da2155d194d007600",
+  "rules_tuple": "(no-tashkeel, QAC-root, FR-on-QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "seed": 20260509,
+  "alpha_bon": 0.016666666666666666,
+  "h1_pair_percentile": {
+    "d_q27_q34": 0.866149,
+    "percentile": 31.29948765719609,
+    "rank_of_6441": 2016,
+    "pass": false,
+    "threshold": 25
+  },
+  "h2_mutual_top10": {
+    "top10_q27_neighbors": [
+      {
+        "surah": 7,
+        "fr": 0.774156
+      },
+      {
+        "surah": 10,
+        "fr": 0.791848
+      },
+      {
+        "surah": 28,
+        "fr": 0.804754
+      },
+      {
+        "surah": 6,
+        "fr": 0.841364
+      },
+      {
+        "surah": 29,
+        "fr": 0.850912
+      },
+      {
+        "surah": 21,
+        "fr": 0.853983
+      },
+      {
+        "surah": 41,
+        "fr": 0.859641
+      },
+      {
+        "surah": 34,
+        "fr": 0.866149
+      },
+      {
+        "surah": 11,
+        "fr": 0.867331
+      },
+      {
+        "surah": 17,
+        "fr": 0.867722
+      }
+    ],
+    "top10_q34_neighbors": [
+      {
+        "surah": 41,
+        "fr": 0.802072
+      },
+      {
+        "surah": 46,
+        "fr": 0.805802
+      },
+      {
+        "surah": 32,
+        "fr": 0.82318
+      },
+      {
+        "surah": 36,
+        "fr": 0.833075
+      },
+      {
+        "surah": 10,
+        "fr": 0.854767
+      },
+      {
+        "surah": 25,
+        "fr": 0.859907
+      },
+      {
+        "surah": 67,
+        "fr": 0.862201
+      },
+      {
+        "surah": 45,
+        "fr": 0.864835
+      },
+      {
+        "surah": 17,
+        "fr": 0.865416
+      },
+      {
+        "surah": 27,
+        "fr": 0.866149
+      }
+    ],
+    "q34_rank_in_q27_top10": 8,
+    "q27_rank_in_q34_top10": 10,
+    "q34_in_q27_top10": true,
+    "q27_in_q34_top10": true,
+    "pass": true
+  },
+  "h3_length_residualized": {
+    "regression_b0": 0.8363903147936675,
+    "regression_b1": 0.06926875561910113,
+    "q27_q34_residual": -0.007896880314208321,
+    "residual_percentile": 38.037571805620246,
+    "pass": false
+  },
+  "n_pass": 1,
+  "verdict": "DIRECTIONAL-WEAK",
+  "honest_limits": "D[Q27,Q34]=0.8661 sits at 31.3rd percentile (pre-flight observed); H1 threshold 25th — likely FAIL. H2 pre-flight confirmed mutual top-10. H3 likely follows H1 trend. Verdict ceiling = DESCRIPTIVE-EMPIRICAL."
+}

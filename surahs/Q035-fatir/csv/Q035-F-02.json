@@ -1,0 +1,38 @@
+{
+  "finding_id": "Q035-F-02",
+  "prereg_sha": "6bde59963d13dd2b766d3ee52f0849f4af64a20ef94602abf8845fe5fc8790fa",
+  "rules_tuple": "(no-tashkeel, orthographic-token, regex-substring, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "seed": 20260509,
+  "alpha_bon": 0.025,
+  "h1a_verse_uniqueness": {
+    "n_verses_with_all_three": 1,
+    "verses": [
+      {
+        "surah": 35,
+        "verse": 32,
+        "text": "ثم أورثنا الكتاب الذين اصطفينا من عبادنا ۖ فمنهم ظالم لنفسه ومنهم مقتصد ومنهم سابق بالخيرات بإذن الله ۚ ذلك هو الفضل الكبير"
+      }
+    ],
+    "pass": true
+  },
+  "h1b_surah_uniqueness": {
+    "n_surahs_with_all_three": 1,
+    "surahs": {
+      "35": {
+        "zalim_nafsih": [
+          32
+        ],
+        "muqtasid": [
+          32
+        ],
+        "sabiq_khayrat": [
+          32
+        ]
+      }
+    },
+    "pass": true
+  },
+  "n_pass": 2,
+  "verdict": "CONFIRMED",
+  "honest_limits": "Pre-flight observed Q 35:32 is the SOLE verse with all 3 terms. PASS-DIRECTED status pre-locked given empirical-anchor disclosure. Result deterministic."
+}

@@ -1,0 +1,116 @@
+{
+  "finding_id": "Q035-F-04",
+  "prereg_sha": "a21dc6694c6202565fb3b00454f4f7829407faf27b010b74b937d7293ab29d75",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, mushaf order, Hafs-Kufan)",
+  "seed": 20260509,
+  "alpha_bon": 0.016666666666666666,
+  "h1_seam_top15": {
+    "delta_q34_q35": 0.07453200000001914,
+    "rank": 65,
+    "threshold": 15,
+    "pass": false
+  },
+  "h2_opener_median_cost": {
+    "comparison_set": [
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "delta_raw": 0.6215650000001176
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "delta_raw": 0.04237099999993177
+      },
+      {
+        "pair": [
+          17,
+          18
+        ],
+        "delta_raw": 0.027906999999999016
+      },
+      {
+        "pair": [
+          33,
+          34
+        ],
+        "delta_raw": 0.3310819999999808
+      },
+      {
+        "pair": [
+          35,
+          36
+        ],
+        "delta_raw": 0.1993110000000371
+      }
+    ],
+    "median_5": 0.1993110000000371,
+    "delta_q34_q35": 0.07453200000001914,
+    "pass": true
+  },
+  "h3_architectural_cells": {
+    "cells": {
+      "rhyme_letter": false,
+      "length_class": true,
+      "mean_content_dist": true,
+      "fr_top5_reciprocity": false
+    },
+    "n_cells_pass": 2,
+    "q34_top_final_letter": "ن",
+    "q35_top_final_letter": "ر",
+    "mean_q34": 0.9877070176991151,
+    "mean_q35": 0.9714327079646018,
+    "fr_top5_q34": [
+      {
+        "surah": 41,
+        "fr": 0.802072
+      },
+      {
+        "surah": 46,
+        "fr": 0.805802
+      },
+      {
+        "surah": 32,
+        "fr": 0.82318
+      },
+      {
+        "surah": 36,
+        "fr": 0.833075
+      },
+      {
+        "surah": 10,
+        "fr": 0.854767
+      }
+    ],
+    "fr_top5_q35": [
+      {
+        "surah": 22,
+        "fr": 0.831245
+      },
+      {
+        "surah": 14,
+        "fr": 0.836831
+      },
+      {
+        "surah": 13,
+        "fr": 0.842005
+      },
+      {
+        "surah": 31,
+        "fr": 0.845484
+      },
+      {
+        "surah": 63,
+        "fr": 0.853007
+      }
+    ],
+    "pass": false
+  },
+  "n_pass": 1,
+  "verdict": "DIRECTIONAL-WEAK",
+  "honest_limits": "Pre-flight: rank 65/113, NOT top-15; H1 will FAIL. H3 likely passes B+C; cell D depends on top-5 reciprocity (likely false at top-5)."
+}

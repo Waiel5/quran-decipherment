@@ -1,0 +1,33 @@
+{
+  "finding_id": "Q035-F-03",
+  "prereg_sha": "633ab39e30121d42cdd5626b49d9805414ffc6580e5fe191de7e6ff3f09d528a",
+  "rules_tuple": "(no-tashkeel, orthographic-token, regex-substring, basmala-counted-only-in-Q1, Hafs-Kufan, mashriqi)",
+  "seed": 20260509,
+  "alpha_bon": 0.025,
+  "h1_surface_v1": {
+    "n_matching": 1,
+    "matches": [
+      {
+        "surah": 35,
+        "v1_text": "الحمد لله فاطر السماوات والأرض جاعل الملائكة رسلا أولي أجنحة مثنى وثلاث ورباع ۚ يزيد في الخلق ما يشاء ۚ إن الله على كل شيء قدير"
+      }
+    ],
+    "pass": true
+  },
+  "h1b_lemma_v1": {
+    "n_matching_surahs": 1,
+    "surahs": [
+      35
+    ],
+    "lemma_lines": [
+      {
+        "surah": 35,
+        "qac_line": "(35:1:7:2)\tmala`^}ikapi\tN\tSTEM|POS:N|LEM:malak|ROOT:mlk|MP|GEN"
+      }
+    ],
+    "pass": true
+  },
+  "n_pass": 2,
+  "verdict": "CONFIRMED",
+  "honest_limits": "Test is deterministic counting. Pre-flight observed only Q35 v.1 has explicit al-malaika."
+}

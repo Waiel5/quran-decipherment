@@ -1,0 +1,142 @@
+{
+  "finding_id": "Q034-F-04",
+  "prereg_sha": "6f2d39c93528655fb7bf01f93b458cfab3bdedfdd61a27289127b13d1c415333",
+  "rules_tuple": "(no-tashkeel, QAC-root, FR-on-QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "seed": 20260509,
+  "alpha_bon": 0.016666666666666666,
+  "h1_seam_rank": {
+    "delta_q34_q35": 0.07453200000001914,
+    "rank": 65,
+    "top20_threshold": 20,
+    "pass": false
+  },
+  "h2_opener_median_cost": {
+    "targets": [
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "delta_raw": 0.6215650000001176
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "delta_raw": 0.04237099999993177
+      },
+      {
+        "pair": [
+          17,
+          18
+        ],
+        "delta_raw": 0.027906999999999016
+      },
+      {
+        "pair": [
+          33,
+          34
+        ],
+        "delta_raw": 0.3310819999999808
+      },
+      {
+        "pair": [
+          34,
+          35
+        ],
+        "delta_raw": 0.07453200000001914
+      }
+    ],
+    "median_5": 0.07453200000001914,
+    "delta_q34_q35": 0.07453200000001914,
+    "pass": false
+  },
+  "h3_intra_cluster_fr_median": {
+    "cluster": [
+      1,
+      6,
+      18,
+      34,
+      35
+    ],
+    "intra_pairs": [
+      {
+        "pair": [
+          1,
+          6
+        ],
+        "fr": 1.169866
+      },
+      {
+        "pair": [
+          1,
+          18
+        ],
+        "fr": 1.080007
+      },
+      {
+        "pair": [
+          1,
+          34
+        ],
+        "fr": 1.03542
+      },
+      {
+        "pair": [
+          1,
+          35
+        ],
+        "fr": 0.937172
+      },
+      {
+        "pair": [
+          6,
+          18
+        ],
+        "fr": 0.933952
+      },
+      {
+        "pair": [
+          6,
+          34
+        ],
+        "fr": 0.890465
+      },
+      {
+        "pair": [
+          6,
+          35
+        ],
+        "fr": 0.990769
+      },
+      {
+        "pair": [
+          18,
+          34
+        ],
+        "fr": 0.898433
+      },
+      {
+        "pair": [
+          18,
+          35
+        ],
+        "fr": 1.039287
+      },
+      {
+        "pair": [
+          34,
+          35
+        ],
+        "fr": 0.926803
+      }
+    ],
+    "median_intra": 0.9639705000000001,
+    "d_q34_q35": 0.926803,
+    "pass": true
+  },
+  "n_pass": 1,
+  "verdict": "DIRECTIONAL-WEAK",
+  "honest_limits": "Pre-flight: rank_seam=65/113 (NOT top-20); H1 will FAIL with full prominence. H3 likely passes (Q34-Q35 below intra-median 0.97). Net verdict probably DIRECTIONAL-WEAK or NULL — honest empirical refinement of al-Biqaʾi nażm claim."
+}

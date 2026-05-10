@@ -1,0 +1,89 @@
+{
+  "finding_id": "Q034-F-05",
+  "prereg_sha": "83414986ef57bbeeff090b9e57ec0f0ee0ccabe82a6a67c43b835cccbfd928e3",
+  "rules_tuple": "(no-tashkeel, QAC-root, FR-on-QAC-stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "seed": 20260509,
+  "alpha_bon": 0.025,
+  "h1_sequential_minimum": {
+    "pairs": [
+      {
+        "pair": [
+          1,
+          6
+        ],
+        "fr": 1.169866
+      },
+      {
+        "pair": [
+          6,
+          18
+        ],
+        "fr": 0.933952
+      },
+      {
+        "pair": [
+          18,
+          34
+        ],
+        "fr": 0.898433
+      },
+      {
+        "pair": [
+          34,
+          35
+        ],
+        "fr": 0.926803
+      }
+    ],
+    "sorted_ranking": [
+      {
+        "rank": 1,
+        "pair": [
+          18,
+          34
+        ],
+        "fr": 0.898433
+      },
+      {
+        "rank": 2,
+        "pair": [
+          34,
+          35
+        ],
+        "fr": 0.926803
+      },
+      {
+        "rank": 3,
+        "pair": [
+          6,
+          18
+        ],
+        "fr": 0.933952
+      },
+      {
+        "rank": 4,
+        "pair": [
+          1,
+          6
+        ],
+        "fr": 1.169866
+      }
+    ],
+    "tightest_pair": [
+      18,
+      34
+    ],
+    "q34_q35_rank_in_sequential": 2,
+    "pass": false
+  },
+  "h2_all_pair_percentile": {
+    "d_q34_q35": 0.926803,
+    "rank_of_6441": 2752,
+    "percentile": 42.72628473839466,
+    "threshold": 50,
+    "pass": true
+  },
+  "n_pass": 1,
+  "verdict": "DIRECTIONAL",
+  "honest_limits": "Pre-flight: Q18-Q34 is the tightest sequential pair (FR=0.8984), Q34-Q35 is rank 2 (FR=0.9268). H1 FAILS. H2 PASSES (Q34-Q35 percentile 42.73%). Net verdict = DIRECTIONAL."
+}

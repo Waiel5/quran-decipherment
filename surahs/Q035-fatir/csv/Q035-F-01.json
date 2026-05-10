@@ -1,0 +1,52 @@
+{
+  "finding_id": "Q035-F-01",
+  "prereg_sha": "18e534a4fedb377109e3290ee4593044eacbc40d0b2c62c793d0f724db5c8e2c",
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, Hafs-Kufan, mashriqi)",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.025,
+  "h1_cluster_cohesion": {
+    "cluster": [
+      1,
+      6,
+      18,
+      34,
+      35
+    ],
+    "observed_mean_fr": 0.9902173999999999,
+    "null_mean": 0.92262094471,
+    "null_std": 0.10184325503989432,
+    "p_lower": 0.7516,
+    "pass": false
+  },
+  "h2_q35_centrality": {
+    "centralities": [
+      {
+        "surah": 34,
+        "mean_fr_to_other_4": 0.93778025
+      },
+      {
+        "surah": 35,
+        "mean_fr_to_other_4": 0.9735077500000001
+      },
+      {
+        "surah": 18,
+        "mean_fr_to_other_4": 0.9879197499999999
+      },
+      {
+        "surah": 6,
+        "mean_fr_to_other_4": 0.9962629999999999
+      },
+      {
+        "surah": 1,
+        "mean_fr_to_other_4": 1.0556162500000001
+      }
+    ],
+    "q35_rank": 2,
+    "pass": true,
+    "threshold": "top-2 (bottom-half)"
+  },
+  "n_pass": 1,
+  "verdict": "DIRECTIONAL",
+  "honest_limits": "Pre-flight: obs_mean=0.9902 > corpus null mean 0.9226 (cluster is ANTI-cohesive). H1 will FAIL. H2 tests Q35 placement within the cluster; pre-flight Q35 centrality not yet examined here."
+}
