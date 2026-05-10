@@ -2,9 +2,9 @@
 surah: 26
 surah_name_ar: الشعراء
 file_type: novel-findings
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-09
 phase: B+
-verdict: 5 PRE-REGISTERED TESTS RUN — 1 CONFIRMED, 1 NULL, 1 NULL/REFINED, 1 PRE-COMMIT-VIOLATION/FALSIFIED, 1 NULL
+verdict: 7 PRE-REGISTERED TESTS RUN — F-01 CONFIRMED + T1 replication CONFIRMED-REPLICATION; F-02/F-03/F-04/F-05 NULL/FALSIFIED (prior wave); F-06 NULL (directional pass, p_perm=0.055); F-07 NULL (directional pass, p_perm=0.294)
 ---
 
 # Q 26 al-Shuʿarāʾ — Novel Findings
@@ -20,10 +20,14 @@ Five pre-registered tests, locked SHAs, direction locked before observation. NUL
 | Q026-F-03 | Anti-poetry coda lexical distinctness | `c2a39ef90ec770d9932ad2549067fd774b21b9f9e4ee147e9bf687170d8fc4a2` | ❌ **NULL/REFINED** |
 | Q026-F-04 | Pharaoh-Moses structural twin (Q 26 vs Q 28 vs Q 20) | `2f5a07f6792215a41ccfbcec7d70ef1e6171e84a6611f56d0f376d14c909d8f4` | ❌ **PRE-COMMIT VIOLATION / FALSIFIED** |
 | Q026-F-05 | Q 26 verse-length shortness | `dce525681887541a802d1ee319a84dc1a30e88c9db17c1667bceb33d678a25a6` | ❌ **NULL** |
+| Q026-F-06 | 7-prophet root-Jaccard cohesion vs random Meccan sub-blocks | `85766b7fcfe42c39c7a93de619127f385e1c4664d218b4f740c4a8328073c912` | ❌ **NULL** (direction passes, p_perm=0.055) |
+| Q026-F-07 | TSM (Q 26 ↔ {Q 27, Q 28}) FR closer than ḥawāmīm (Q 26 ↔ {Q 40-46}) | `4f15c979b511ef2604838dd31f8ab348238038609b7fb8ebb4b134f0c6695252` | ❌ **NULL** (direction passes, p_perm=0.294) |
+| Q026-T1   | Replication of F-01 refrain corpus-EXACT 8/8 (brief 2026-05-09) | (no separate prereg; verifies F-01) | ✅ **CONFIRMED-REPLICATION** |
 
-All 5 SHAs verified at runtime by `surahs/Q026-al-shuara/scripts/Q026_F_all.py` (verbatim trace logged to `JOURNAL.md`).
+All 5 SHAs of F-01..F-05 verified at runtime by `surahs/Q026-al-shuara/scripts/Q026_F_all.py`. F-06 and F-07 verified at runtime by `scripts/Q026_F_06_prophet_jaccard.py` and `scripts/Q026_F_07_tsm_vs_hawamim.py`; T1 replication run by `scripts/Q026_F_01_refrain_replication.py`.
 
-**Bonferroni-family**: Q026-F-01..F-05 (k=5). α_bon (per-test) = 0.05 / 5 = **0.01**.
+**Bonferroni-family (original)**: Q026-F-01..F-05 (k=5). α_bon (per-test) = 0.05 / 5 = **0.01**.
+**Bonferroni-family (2026-05-09 brief addition)**: Q026-F-06..F-07 (k=2). α_bon (per-test) = 0.05 / 2 = **0.025**.
 
 ---
 
@@ -236,3 +240,203 @@ Across the 5 pre-registered tests:
 - [[Q028-al-qasas]] — Q 28 ṬSM sister; F-04 falsifies the muqaṭṭaʿ-twin prediction at the Mūsā-block level.
 - [[Q020-ta-ha]] — Q 20 Mūsā-narrative; F-04's comparison-target.
 - [[cross-finding-026-iʿjāz-architecture]] — Q 26's anti-iʿjāz-al-fawāṣil profile; F-01's intra-surah refrain-compression is a NEW addition to the architectural model.
+
+---
+
+## 2026-05-09 brief addition — three additional pre-registered tests
+
+The 2026-05-09 PM brief (per `HANDOFF/SESSION-HANDOFF-2026-05-09-PM.md`, in
+the context of H-NEW-1320 refrain-triplet integration) requested three more
+pre-registered tests for Q 26. Two of the three (T2 and T3) are operationally
+distinct from the original F-01..F-05 wave and are filed below as **Q026-F-06**
+and **Q026-F-07**. The third (T1) is a direct replication of Q026-F-01's
+corpus-EXACT refrain-count claim, run as an audit-replication script and filed
+as Q026-T1-refrain-replication.
+
+Seed for this addition: **20260509**. Bonferroni k=2 for F-06+F-07 → α_per_test = **0.025**.
+
+---
+
+## Q026-T1 — refrain corpus-EXACT replication ✅ CONFIRMED-REPLICATION
+
+**Script**: `scripts/Q026_F_01_refrain_replication.py`.
+**Output**: `surahs/Q026-al-shuara/csv/Q026-T1-refrain-replication.json`.
+
+**Claim under test**: The closing-refrain pair R1 (`أكثرهم مؤمنين`) + R2
+(`وإن ربك لهو العزيز الرحيم`) occurs corpus-EXACTLY 8 times each, all in Q 26,
+at the exact verse positions {8, 67, 103, 121, 139, 158, 174, 190} (for R1)
+and {9, 68, 104, 122, 140, 159, 175, 191} (for R2).
+
+**Result**: All three sub-claims VERIFIED.
+- R1 corpus total = **8** (all in Q 26, 0 elsewhere).
+- R2 corpus total = **8** (all in Q 26, 0 elsewhere).
+- R1 positions = [8, 67, 103, 121, 139, 158, 174, 190] — exact match.
+- R2 positions = [9, 68, 104, 122, 140, 159, 175, 191] — exact match.
+
+**Verdict**: ✅ **CONFIRMED-REPLICATION** — independent audit replicates
+Q026-F-01's headline finding. Q 26 is the unique surah hosting this paired
+chorus, and the 8 cycles are confirmed corpus-exact.
+
+---
+
+## Q026-F-06 — 7-prophet root-Jaccard cohesion ❌ NULL (direction passes)
+
+**Pre-reg**: `Q026-F-06-prophet-jaccard-cohesion-prereg.md`, SHA
+`85766b7fcfe42c39c7a93de619127f385e1c4664d218b4f740c4a8328073c912`.
+**Script**: `scripts/Q026_F_06_prophet_jaccard.py`.
+**Output**: `surahs/Q026-al-shuara/csv/Q026-F-06.json`.
+
+**Hypothesis (locked, one-sided)**: The 7 prophet-pericopes inside Q 26 (Mūsā
+10-68, Ibrāhīm 69-104, Nūḥ 105-122, Hūd 123-140, Ṣāliḥ 141-159, Lūṭ 160-175,
+Shuʿayb 176-191) form a more cohesive 7-block decomposition by mean pairwise
+QAC-root Jaccard than 7 equally-sized contiguous sub-blocks drawn from the
+narrative-Meccan baseline pool {Q 7, Q 11, Q 21, Q 38, Q 51}.
+
+**Method**: Build per-block QAC root-set for each Q 26 prophet-pericope.
+Compute mean pairwise Jaccard over C(7,2)=21 pairs → `J_obs`. Null: 10,000
+draws of 7 contiguous sub-blocks of matching sizes {59, 36, 18, 18, 19, 16, 16}
+from the baseline pool (random surah, random valid start, with replacement
+across surahs).
+
+**Result**:
+- Per-block QAC root-set sizes (Mūsā, Ibrāhīm, Nūḥ, Hūd, Ṣāliḥ, Lūṭ, Shuʿayb)
+  = **{125, 76, 35, 41, 49, 38, 46}**.
+- **J_obs = 0.2398** (Q 26's 7 prophet blocks).
+- **null_mean = 0.1907**, null_sd = 0.0284.
+- **Z_obs = +1.73**.
+- **p_perm (one-sided upper tail) = 0.0548** (NOT < 0.025).
+
+**Verdict**: ❌ **NULL — direction passes but Bonferroni-α not crossed**.
+Q 26's 7 prophet-pericopes ARE more lexically-cohesive (by root-Jaccard) than
+random matched-size sub-blocks of comparable Meccan narrative surahs (+1.73 SD,
+~24% above null mean), but the permutation p-value of 0.055 does not cross the
+pre-committed Bonferroni-corrected α = 0.025. This is a **directional indication
+without statistical significance**.
+
+**Interpretation**: The result is consistent with the qualitative observation
+that Q 26's seven cycles share a common formulaic vocabulary (the recurring
+`kadhdhabat`, `qāla lahum akhūhum`, `innī lakum rasūlun amīn`, `fa-ttaqū llāha
+wa-aṭīʿūn`, `wa-mā asʾalukum ʿalayhi min ajrin in ajriya illā ʿalā rabbi
+l-ʿālamīn` — the formulaic incipits of pericopes 3-7). Spot-checking the verse
+data confirms vv 105-109, 123-127, 141-145, 160-164, 176-180 share a 5-verse
+near-identical incipit-template across Nūḥ/Hūd/Ṣāliḥ/Lūṭ/Shuʿayb. This
+template-sharing inflates Jaccard relative to random Meccan sub-blocks.
+However, this signal is **diluted** by the Mūsā cycle (vv 10-68, 59 verses)
+which has the largest root-set (125 roots, much wider vocabulary) and the
+Ibrāhīm cycle (76 roots) — both of which carry distinctive narrative
+vocabulary that lowers pairwise Jaccard with the shorter, formula-tighter
+pericopes 3-7.
+
+**Honest limits**:
+- p_perm = 0.055 is *near* the α=0.025 threshold; under a relaxed (single-test)
+  α=0.05 this would be a borderline directional PASS. We hold to the
+  pre-committed Bonferroni-α = 0.025.
+- A re-pre-registered test on **pericopes 3-7 only** (the formula-tight subset,
+  excluding the Mūsā+Ibrāhīm "long arms") might cross the threshold — but
+  excluding ~50% of the data after seeing the structure would be a garden-of-
+  forking-paths violation.
+- The Jaccard metric ignores token frequencies. A TF-cosine variant could give
+  a different result.
+- The baseline pool {Q 7, Q 11, Q 21, Q 38, Q 51} is deliberately narrative-Meccan
+  to control for genre; a broader-corpus null would inflate cohesion trivially.
+
+**Cross-references**:
+- [[Q026-F-01]] — refrain-cycle structure (the architectural complement to
+  this lexical test); F-01 CONFIRMED p=0.0083, F-06 NULL p=0.055.
+- [[h-new-1320]] — refrain triplet architecture {Q 26, Q 55, Q 77}.
+- [[h-new-600-letter-families|H-NEW-600]] — muqaṭṭaʿ-content NULL streak; this
+  is NOT a muqaṭṭaʿ test (it's intra-Q 26 vs Meccan-Meccan), but the negative
+  result extends the lesson: narrative-template-sharing does not automatically
+  produce strong statistical signal at root-Jaccard level.
+
+---
+
+## Q026-F-07 — TSM (Q 26 ↔ {Q 27, 28}) FR-closer than ḥawāmīm ❌ NULL (direction passes)
+
+**Pre-reg**: `Q026-F-07-tsm-vs-hawamim-prereg.md`, SHA
+`4f15c979b511ef2604838dd31f8ab348238038609b7fb8ebb4b134f0c6695252`.
+**Script**: `scripts/Q026_F_07_tsm_vs_hawamim.py`.
+**Output**: `surahs/Q026-al-shuara/csv/Q026-F-07.json`.
+
+**Hypothesis (locked, one-sided)**: In the precomputed 114×114 Fisher-Rao
+distance matrix `h-new-111.json` (QAC stem-root probability vectors), Q 26 is
+closer in mean FR-distance to its own TS-family sisters {Q 27, Q 28} than to
+the contiguous ḥawāmīm cluster {Q 40-46}. Direction:
+**mean d_FR(Q26, {Q27,Q28}) < mean d_FR(Q26, {Q40..Q46})**.
+
+**Method**: Load h-new-111 (114×114 FR matrix, stored upper-triangular sparse).
+Compute mean d_TSM (over 2 pairs) and mean d_HM (over 7 pairs). Null: 10,000
+draws of random pair + random 7-tuple from {1..114}∖{26}; compute analog Δ.
+One-sided lower-tail p_perm.
+
+**Result**:
+- d_FR(Q26, Q27) = **0.959**, d_FR(Q26, Q28) = **0.954** → mean d_TSM = **0.956**.
+- d_FR(Q26, Q40..46): {0.999, 0.974, 1.114, 0.946, 0.951, 0.997, 1.017}
+  → mean d_HM = **1.000**.
+- Δ_obs = d_TSM − d_HM = **−0.044** (NEGATIVE, direction-PASSED).
+- null_mean ≈ 0.001, null_sd ≈ 0.083.
+- **p_perm (one-sided lower tail) = 0.294** (NOT < 0.025).
+
+**Verdict**: ❌ **NULL — direction passes but Bonferroni-α not crossed**.
+Q 26 IS closer in mean FR-distance to its TS-family sisters {Q 27, Q 28}
+than to the ḥawāmīm cluster {Q 40-46} (Δ = −0.044), but the gap is only
+~0.5 SD into the null distribution. The pre-committed direction was correct
+but the magnitude is statistically unremarkable.
+
+**Interpretation**: This is a SOFT directional indication for TSM-family
+content-cohesion at the 3-letter scale, contrasting with the HARD multi-NULL
+on TSM-3 cohesion documented in Q026-F-02 (4-axis cohesion within muqaṭṭaʿ-29
+reference class) and Q026-F-04 (Mūsā-block muqaṭṭaʿ-twin PRE-COMMIT VIOLATION).
+The difference is that F-07 uses the ḥawāmīm cluster as a comparison-target
+(not muqaṭṭaʿ-29-reference) — and Q 26 IS slightly closer to its TS-family
+than to a different-letter-family. The ~50pp gap between p_perm=0.294 (NULL)
+and an α=0.025 PASS is large: ~0.5 SD into the null is too modest to claim
+statistical significance.
+
+The headline qualitative fact is preserved: **Q 26's nearest neighbors in
+FR-root-content are NOT its TSM sisters but rather Q 7 (d=0.832), Q 15
+(0.879), Q 36 (0.903), Q 23 (0.904), Q 11 (0.906)** — all narrative-Meccan
+prophet-cycle surahs. Q 27 (d=0.959) and Q 28 (d=0.954) are mid-table, closer
+than the ḥawāmīm but not particularly close in absolute terms.
+
+**Honest limits**:
+- The null draws random pairs and random 7-tuples without restricting to
+  muqaṭṭaʿ-opened surahs. A muqaṭṭaʿ-matched null would be more conservative.
+- The ḥawāmīm cluster is heterogeneous in content (Q 40 al-Ghāfir is
+  story-heavy, Q 42 al-Shūrā is exhortation-heavy at d=1.114 — pulling
+  d_HM up); using a smaller, content-matched 7-tuple would change the
+  comparison.
+- This is a *content-axis* test, not a *letter-axis* test. The muqaṭṭaʿ-content
+  orthogonality streak (H-NEW-600 + F-02 + F-04) predicted NULL; the
+  observation is a soft directional pass that does not overturn the streak.
+
+**Cross-references**:
+- [[h-new-111]] — 114×114 FR matrix source.
+- [[h-new-600-letter-families|H-NEW-600]] — muqaṭṭaʿ-content-orthogonality
+  streak; F-07 NULL is consistent with the streak (no PASS for muqaṭṭaʿ-content
+  cohesion).
+- [[Q026-F-02]] — TSM 4-axis NULL (extends the streak).
+- [[Q026-F-04]] — Mūsā-block muqaṭṭaʿ-twin FALSIFIED (the strongest replication
+  in the streak).
+- [[Q027-al-naml]], [[Q028-al-qasas]] — TSM-sisters.
+- [[Q040-ghafir]] through [[Q046-al-ahqaf]] — ḥawāmīm comparison-targets.
+
+---
+
+## Updated meta-finding post-2026-05-09 wave
+
+Across the 7 pre-registered tests (F-01..F-07 + T1 replication):
+
+- **1 CONFIRMED-DIRECT (F-01) + 1 CONFIRMED-REPLICATION (T1)** = strong empirical lock on the paired refrain as corpus-unique-to-Q-26 with monotone-decreasing cycle compression.
+- **2 NULL-WITH-DIRECTIONAL-PASS (F-06, F-07)** = soft signals that don't cross Bonferroni-α but match the qualitative pre-commit direction. Honest mid-pile evidence.
+- **3 NULL-OR-FALSIFIED (F-02 NULL, F-03 NULL/REFINED, F-04 PRE-COMMIT VIOLATION, F-05 NULL)** = robust refutation of the naive muqaṭṭaʿ-twin and TSM-cohesion hypotheses; refinement of al-Bāqillānī's coda-iʿjāz claim from lexical-distinctness to rhetorical-distinctness.
+
+**The corpus-strongest claim about Q 26** is the F-01 + T1 result: the
+paired-refrain `إن في ذلك لآية وما كان أكثرهم مؤمنين` + `وإن ربك لهو العزيز
+الرحيم` occurs corpus-EXACTLY 8 times each, all in Q 26, at exact verses
+{8/9, 67/68, 103/104, 121/122, 139/140, 158/159, 174/175, 190/191}, and the
+7 prophet-cycle lengths bounded by these refrains show monotone-decreasing
+progression (Spearman rho = −0.839, p_perm = 0.0083). This is an intra-surah
+analog of the corpus-wide content-compression-tail (H-NEW-660) and links to
+the H-NEW-1320 refrain-architecture triplet {Q 55 (31×), Q 77 (10×), Q 26
+(8×)} as the **narrative-prophetic refrain-tier** of that 3-tier architecture.

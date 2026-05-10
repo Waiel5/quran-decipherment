@@ -2,7 +2,7 @@
 surah: 26
 surah_name_ar: الشعراء
 file_type: cross-references
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-09
 phase: B+
 verdict: COMPLETE
 ---
@@ -75,6 +75,8 @@ The **Q 7, Q 11** combination (al-Aʿrāf, Hūd) appears in 6 of 7 cycles — th
 - **`[[cross-finding-026-iʿjāz-architecture|cross-finding-026]]`**: Q 26's profile (high UAS via outlier, anti-iʿjāz al-fawāṣil via rhyme uniformity, content-distinct rank 110/114) is a **textbook case** of structurally-rich-but-anti-fawāṣil. Q026-F-01's intra-surah refrain-compression is a **NEW** structural law to add to the cross-finding-026 architectural model.
 - **`[[h-new-600-letter-families|H-NEW-600]]`**: Q026-F-02 NULL + Q026-F-04 PRE-COMMIT VIOLATION jointly extend the muqaṭṭaʿ-content-NULL streak from 4 to **6 replications**. This is now the strongest empirical lock against muqaṭṭaʿ-as-content-cluster claims.
 - **`[[h-new-660-compression-tail-gradient|H-NEW-660]]`**: the corpus-wide content-compression law (R²=0.986) operates at *cross-surah* scale; Q026-F-01 finds the *intra-surah* analog (Spearman rho = −0.839 over 7 prophet-cycles). This suggests a possible scale-invariance: compression-tail operates within and across surahs.
+- **`[[h-new-1320-refrain-architecture|H-NEW-1320]]` (PASS-DIRECTED, 2026-05-09)**: 3-tier refrain architecture {Q 55 (31×), Q 77 (10×), Q 26 (8×)}; permutation p=0.0000. Q 26 is the **narrative-prophetic refrain tier**, in contrast to Q 55's catechetical-eschatological tier and Q 77's prophetic-warning tier. The iʿjāz al-takrīr classical claim extends from a Q 55-specific feature to a trans-positional 3-surah rhetorical apparatus. Q026-F-01 (and Q026-T1 replication, 2026-05-09) provides the corpus-EXACT 8/8 verification that anchors Q 26's role in this triplet.
+- **`[[cross-finding-025-marker-thickness|cross-finding-025]]` (PRELIMINARY, 2026-05-09)**: marker-thickness vs FR-cohesion threshold rule. Q026-F-06 (7-prophet root-Jaccard cohesion within Q 26 vs Meccan-baseline-pool sub-blocks) is a relevant data point: Q 26's prophet-pericopes share a tight 5-pericope formulaic incipit-template (vv 105/123/141/160/176 onward) but the Mūsā (long, vocab-broad) and Ibrāhīm (long, paradise-hell-imagery) cycles dilute the Jaccard signal. F-06 NULL (p_perm=0.055, direction passes) is consistent with the cross-finding-025 threshold: a marker-strong-but-vocab-diluted intra-surah block-set falls just short of statistical significance.
 
 ## 5. Empirical anchors (Q 26 row in each)
 

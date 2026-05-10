@@ -1,0 +1,41 @@
+{
+  "test_id": "Q026-F-07",
+  "prereg_sha": "4f15c979b511ef2604838dd31f8ab348238038609b7fb8ebb4b134f0c6695252",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "anchor": 26,
+  "tsm_sisters": [
+    27,
+    28
+  ],
+  "hawamim": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "d_FR_Q26_to_Q27": 0.958539,
+  "d_FR_Q26_to_Q28": 0.953709,
+  "d_FR_Q26_to_hawamim_individual": {
+    "Q40": 0.998768,
+    "Q41": 0.97389,
+    "Q42": 1.113933,
+    "Q43": 0.946383,
+    "Q44": 0.950776,
+    "Q45": 0.997245,
+    "Q46": 1.017201
+  },
+  "mean_d_TSM": 0.956124,
+  "mean_d_HM": 0.9997422857142857,
+  "delta_obs": -0.04361828571428572,
+  "null_mean": 0.0011050643857142867,
+  "null_sd": 0.08250097538658721,
+  "p_perm_one_sided_lower": 0.2939,
+  "alpha_bonferroni": 0.025,
+  "direction_passed": true,
+  "pass_criterion_met": false,
+  "verdict": "NULL: Δ_obs=-0.0436, direction passed but p_perm=0.2939 ≥ 0.025"
+}

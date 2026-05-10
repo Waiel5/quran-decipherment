@@ -1,0 +1,70 @@
+{
+  "test_id": "Q026-F-06",
+  "prereg_sha": "85766b7fcfe42c39c7a93de619127f385e1c4664d218b4f740c4a8328073c912",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "blocks_Q26": {
+    "Musa": [
+      10,
+      68
+    ],
+    "Ibrahim": [
+      69,
+      104
+    ],
+    "Nuh": [
+      105,
+      122
+    ],
+    "Hud": [
+      123,
+      140
+    ],
+    "Salih": [
+      141,
+      159
+    ],
+    "Lut": [
+      160,
+      175
+    ],
+    "Shuayb": [
+      176,
+      191
+    ]
+  },
+  "block_sizes": [
+    59,
+    36,
+    18,
+    18,
+    19,
+    16,
+    16
+  ],
+  "block_root_set_sizes": [
+    125,
+    76,
+    35,
+    41,
+    49,
+    38,
+    46
+  ],
+  "baseline_surahs": [
+    7,
+    11,
+    21,
+    38,
+    51
+  ],
+  "J_obs_Q26": 0.23981371769465853,
+  "null_mean": 0.19074040730299388,
+  "null_sd": 0.028445643636660297,
+  "Z_obs": 1.7251608372263985,
+  "p_perm_one_sided_upper": 0.0548,
+  "alpha_bonferroni": 0.025,
+  "direction_passed": true,
+  "pass_criterion_met": false,
+  "verdict": "NULL: J_obs=0.2398 vs null_mean=0.1907, p_perm=0.0548 (not < 0.025)"
+}

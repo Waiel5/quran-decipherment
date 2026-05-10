@@ -4,9 +4,9 @@ surah_name_ar: الشعراء
 surah_name_translit: al-Shuʿarāʾ
 surah_name_english: The Poets
 file_type: overview
-date_last_updated: 2026-05-07
+date_last_updated: 2026-05-09
 phase: B+
-verdict: COMPLETE — 8-file template produced 2026-05-07; 5 pre-registered novel tests run; headline = the 8-cycle paired refrain (R1 + R2) is corpus-unique to Q 26 and shows monotone-decreasing cycle-length compression (Spearman rho = −0.839, p = 0.0083 < α_bon = 0.01); 4 of 5 tests NULL or PRE-COMMIT VIOLATION (F-02 TSM-cluster cohesion NULL, F-03 anti-poetry coda NOT lexically distinct rank=99/224, F-04 Moses-twin FALSIFIED — Q28-Q20 closer than Q26-Q28, F-05 verse-shortness NULL — Q26 mean-tpv = 5.96 is rank 45 not extreme).
+verdict: COMPLETE — 8-file template produced 2026-05-07; 5 original pre-registered novel tests run (F-01..F-05); 2026-05-09 brief addition adds Q026-F-06 (NULL, directional pass), Q026-F-07 (NULL, directional pass), and Q026-T1 refrain-replication (CONFIRMED-REPLICATION). Headline = the 8-cycle paired refrain (R1 + R2) is corpus-EXACT to Q 26 (verified twice, T1 + F-01) and shows monotone-decreasing cycle-length compression (Spearman rho = −0.839, p = 0.0083 < α_bon = 0.01). Q 26 is the narrative-prophetic refrain-tier of H-NEW-1320's 3-tier architecture {Q 55, Q 77, Q 26}. 4 of original 5 tests NULL or PRE-COMMIT VIOLATION (F-02 TSM-cluster cohesion NULL, F-03 anti-poetry coda NOT lexically distinct rank=99/224, F-04 Moses-twin FALSIFIED — Q28-Q20 closer than Q26-Q28, F-05 verse-shortness NULL — Q26 mean-tpv = 5.96 is rank 45 not extreme).
 ---
 
 # Q 26 al-Shuʿarāʾ — Overview

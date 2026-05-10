@@ -93,3 +93,67 @@ This investigation should appear in:
 - [x] All H-NEW empirical metrics integrated
 - [x] Cross-surah references mapped (Q 7, 11, 12, 15, 20, 23, 25, 27, 28, 36)
 - [x] Honest-limits sections in each file
+
+## 2026-05-09 PM — Wave-H brief-addition (3 more pre-registered tests + replication)
+
+### Brief context
+Per `HANDOFF/SESSION-HANDOFF-2026-05-09-PM.md`, Q 26 is part of the H-NEW-1320
+PASS-DIRECTED 3-tier refrain architecture {Q 55 (max_repeat 31), Q 77 (10),
+Q 26 (8)} — the narrative-prophetic refrain tier. The 2026-05-09 brief
+requested three additional pre-registered tests:
+- **T1**: Replicate Q026-F-01's claim that the closing refrain occurs
+  corpus-EXACTLY 8 times at exact verse positions.
+- **T2**: 7-prophet narrative cohesion within Q 26 (root-Jaccard vs random
+  Meccan sub-blocks) → filed as **Q026-F-06**.
+- **T3**: TSM (Q 26) vs ḥawāmīm cluster FR-distance comparison → filed as
+  **Q026-F-07**.
+
+### New pre-regs locked
+Two new pre-reg files written and SHA256 computed BEFORE running tests:
+- Q026-F-06: SHA `85766b7fcfe42c39c7a93de619127f385e1c4664d218b4f740c4a8328073c912`
+- Q026-F-07: SHA `4f15c979b511ef2604838dd31f8ab348238038609b7fb8ebb4b134f0c6695252`
+
+Bonferroni k=2 for this addition → α_per_test = 0.025. Seed: 20260509.
+
+### Test execution
+- `scripts/Q026_F_01_refrain_replication.py` → T1 result: all 3 sub-claims PASS (R1 corpus=8, R2 corpus=8, exact positions match).
+- `scripts/Q026_F_06_prophet_jaccard.py` → F-06: J_obs=0.2398, null_mean=0.1907, Z=+1.73, p_perm=0.0548. Direction passes, Bonferroni-α (0.025) not crossed.
+- `scripts/Q026_F_07_tsm_vs_hawamim.py` → F-07: Δ=−0.044 (TSM closer than ḥawāmīm by 0.044), p_perm=0.294. Direction passes, Bonferroni-α not crossed.
+
+### Verdict summary (2026-05-09 brief tests)
+
+| Test | Verdict | Headline |
+|:--|:--|:--|
+| Q026-T1 | ✅ **CONFIRMED-REPLICATION** | R1+R2 = corpus-EXACT 8/8 at exact predicted positions; F-01 replicates cleanly |
+| Q026-F-06 | ❌ **NULL** (directional pass) | J_obs=0.240 > null_mean=0.191, Z=+1.73, p_perm=0.055 (>0.025); soft signal |
+| Q026-F-07 | ❌ **NULL** (directional pass) | Δ=−0.044 (TSM-family ~5% closer than ḥawāmīm), p_perm=0.294; soft signal |
+
+### Decision points
+- For F-06, chose narrative-Meccan baseline pool {Q 7, Q 11, Q 21, Q 38, Q 51}
+  to control for genre. Garden-of-forking-paths note: tested only this baseline;
+  did not also try whole-corpus null which would have been weaker.
+- For F-07, used the upper-triangular sparse h-new-111 format `[i, j, d]`.
+  Sanity: verified d(Q26,Q27)=0.959 matches the Q 26 nearest-neighbor list in
+  00-overview.md.
+- The two new tests' results are CONSISTENT with the qualitative pre-commit
+  direction but neither crosses Bonferroni-α — published as NULL with full
+  prominence per protocol §1.3.
+
+### Files added
+- `surahs/Q026-al-shuara/Q026-F-06-prophet-jaccard-cohesion-prereg.md`
+- `surahs/Q026-al-shuara/Q026-F-07-tsm-vs-hawamim-prereg.md`
+- `surahs/Q026-al-shuara/csv/Q026-F-06.json`
+- `surahs/Q026-al-shuara/csv/Q026-F-07.json`
+- `surahs/Q026-al-shuara/csv/Q026-T1-refrain-replication.json`
+- `scripts/Q026_F_01_refrain_replication.py` (T1 replication script)
+- `scripts/Q026_F_06_prophet_jaccard.py` (F-06)
+- `scripts/Q026_F_07_tsm_vs_hawamim.py` (F-07)
+
+### Headline finding (2026-05-09 brief)
+**T1 CONFIRMS Q026-F-01's headline empirically and independently**: the closing
+refrain pair `إن في ذلك لآية وما كان أكثرهم مؤمنين` + `وإن ربك لهو العزيز الرحيم`
+occurs corpus-EXACTLY 8 times in each phrase, all 8 in Q 26 at exact verses
+{8/9, 67/68, 103/104, 121/122, 139/140, 158/159, 174/175, 190/191}. Q 26 is the
+narrative-prophetic refrain tier of H-NEW-1320's 3-tier architecture {Q 55, Q 77,
+Q 26}. F-06 and F-07 give honest soft signals (directional pass, not Bonferroni-
+significant), neither overturning nor confirming their underlying claims.
