@@ -5602,3 +5602,34 @@ This finding is the answer to "why aren't you finding things on conventional rou
 ### §10.73.5 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2100.json`
+
+## §10.74 H-NEW-2110 inline (2026-05-29) — rabbanā supplication-marker scan: Q 14 corpus-rank-1 prayer-density; Q 3:191-194 longest prayer-run (close-reading, independent re-confirmation)
+
+**Status**: CONFIRMED. Independently RE-CONFIRMS the prior Q 14 + Q 15 prayer-density finding (handoff §10.42) via the *rabbanā*-marker route.
+
+**Method**: scan for *rabbanā* (ربنا, "Our Lord!") — the first-person-plural direct-supplication marker. Close-reading genre-detection.
+
+**Results**:
+- **117 *rabbanā* attestations across 41 surahs**
+- **Q 14 Ibrāhīm = corpus-rank-1 by prayer-density**: 0.135/verse (7 in 52 verses) — 2.1× Q 7's rate (0.063). Vindicates the surah's classical identity as the Abrahamic-supplication surah; re-confirms §10.42 via independent marker.
+- Top raw-count: Q 7 (13), Q 2 (11), Q 3 (11), Q 14 (7)
+
+### §10.74.1 Consecutive prayer-clusters (close-reading)
+
+**Q 3:191-194 = corpus's LONGEST consecutive prayer-run (4 verses)** — the famous *ulū al-albāb* ("those of understanding") supplication closing Āl ʿImrān.
+
+3-verse runs: Q 2:127-129 (Abraham+Ishmael building the Kaʿba prayer), Q 3:7-9.
+
+**Q 14 Ibrāhīm uniquely has THREE separate 2-verse prayer-clusters** (vv 37-38, 40-41, 44-45) — Abraham's serial supplications, a corpus-unique density of distinct prayer-units.
+
+Famous 2-verse runs: Q 2:285-286 (the closing two verses of al-Baqara — *āmana al-rasūl* + the great duʿāʾ).
+
+### §10.74.2 Cross-finding integration
+
+- **§10.42 (Q 14+Q 15 corpus-MAX prayer-density)**: re-confirmed via independent *rabbanā*-marker route — methodological cross-validation
+- **H-NEW-1431 (LAST-verse architecture)**: Q 2:285-286 and Q 3:191-194 are both surah-CLOSING prayer-runs — prayer concentrates at surah-end (consistent with payload-at-end law)
+- **Cross-finding-025-formal**: prayer-clusters operate at the pericope/verse-run scale
+
+### §10.74.3 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2110.json`
