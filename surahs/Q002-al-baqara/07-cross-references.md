@@ -212,6 +212,10 @@ Q 2's empirical placement in the project's network:
 | Vocabulary-distinctness | 30% hapax-Q2 vocab, 67% of "baqara", 40% of "ʿijl" | this audit |
 | Centroid candidate | NO (rank 104) — Q 112 is centroid | this audit (Q002-F-03) |
 | Length-extremity | rank 1 (Q 2:282 z=+12.31) | this audit (Q002-F-05) |
+| Āyat al-Kursī lexical isolation | NO (rank 117/286 in-surah) — embedded, not isolated | this audit (Q002-F-06) |
+| Qibla-pericope ring (131-144) | corpus-strongest ring, replicated z=+3.69 p=0.010 | this audit (Q002-F-07); chiastic-audit |
+| Lexical center | v172-175 (legal block E), NOT v143 | this audit (Q002-F-07) |
+| Longest-verse tail | plurality (3 of top-10); unique holder of 3+; NOT monopoly | this audit (Q002-F-08) |
 
 The single most-cited Q 2 fact across the project: **Q 2 is corpus-strongest cohesion-anchor (Δ%ile=-20.62pp rank 1).** This is the empirical core of Q 2's architectural significance. All other findings (UAS rank 3, sanām al-Qurʾān vindication, scaffold-as-anchor refinement of al-Biqāʿī) flow from this single empirical fact.
 
@@ -220,6 +224,8 @@ The single most-cited Q 2 fact across the project: **Q 2 is corpus-strongest coh
 - §00-overview.md (basic facts).
 - §01-empirical-profile.md (in flight — UAS, outlier, iʿjāz signature, adjacency costs, position in compression-tail).
 - §05-classical-claims-audit.md (10 audited claims).
-- §06-novel-findings.md (5 pre-registered novel tests + descriptive observations).
+- §06-novel-findings.md (8 pre-registered novel tests + descriptive observations).
+- Q002-F-06/07/08 (2026-05-29 deep close-read: root-level Āyat al-Kursī locality, qibla
+  ring replication + lexical center, longest-verse monopoly/plurality).
 
 *Bismillāhi al-Raḥmāni al-Raḥīm.*

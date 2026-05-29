@@ -1,7 +1,7 @@
 ---
 surah: 2
 file_type: journal
-date_last_updated: 2026-04-28
+date_last_updated: 2026-05-29
 ---
 
 # Q 2 al-Baqara — Investigation Journal
@@ -180,3 +180,58 @@ date_last_updated: 2026-04-28
 - Discrepancy between blocks-E-H specialist's word count (6,140 for blocks E-H) and my surah-total (6,630) RECONCILED: those numbers refer to different scopes. Block totals from blocks-E-H specialist (1,640+612+625+104=2,981 for E-H) plus blocks A-D specialist's earlier counts should sum to 6,630. Cross-validated.
 
 *End specialist build 2026-04-28.*
+
+---
+
+## 2026-05-29 12:15 -05 — Deep close-read specialist (root-level extensions)
+
+**Specialist**: Q 2 al-Baqara deep aya-by-aya close-read.
+**Pre-flight reading**: quran-investigation SKILL.md + INVESTIGATION-PROTOCOL.md (full);
+existing Q002 8-file template + 5 prior tests (F-01..F-05); MASTER-FINDINGS-LEDGER Q 2
+section (incl. Tier-B #6/#7 chiastic rings, #8 twin-opener); chiastic-audit.md §4.2/§5.1.
+
+**Goal**: strengthen the 8-file template and add ≥3 NEW pre-registered close-read tests
+at the QAC-triliteral-root level, resolving the "root-level pending" limits flagged in
+F-01/F-03/F-04.
+
+**Three new tests (seed 20260509, 10,000 perms, stdlib-only, SHA-locked pre-regs)**:
+- **Q002-F-06** (pre-reg SHA `7044eb74...760409`): Āyat al-Kursī root-level local
+  distinctiveness. **NULL** on both directions (in-surah rank 117/286; corpus 3960/6236;
+  perm z=−0.209 mild reversal). Pre-commit honoured. Third independent confirmation that
+  the "greatest verse" claim is orthogonal to lexical signatures.
+- **Q002-F-07** (pre-reg SHA `be6f15fd...d8e661`): qibla-pericope ring replication +
+  lexical-center test. **H1 VINDICATED** (Q 2:131-144 ring score 0.2551, z=+3.69,
+  p=0.0100; control window 100-113 NULL p=0.285 — independent replication of the
+  chiastic-audit's strongest-corpus-ring, reproducing score 0.255 to 3 d.p. under a
+  200× tighter null). **H2 NULL** (word-mass midpoint v172, root-mass v175 — the lexical
+  center is in legal block E, not the qibla block; "v143 = literal middle" is a
+  verse-count artefact).
+- **Q002-F-08** (pre-reg SHA `59577350...03ea83`): longest-verse monopoly/plurality (brief
+  T4). **H1 monopoly NULL/FALSIFIED** (Q 4 + Q 24 also hold 2 of top-10). **H2 plurality
+  VINDICATED** (Q 2 holds 3 by words, 4 by letters — strictly the most). **MW-7**: Q 2 is
+  the unique holder of 3+.
+
+**Decision points / garden-of-forking-paths**:
+- F-08 direction pre-registered as strict monopoly BEFORE the run, knowing it might fail;
+  it did (Q 4, Q 24 each hold 2). Honest NULL, with H2 plurality + MW-7 3+-uniqueness as
+  the refined finding. No post-hoc direction change.
+- F-07 z (+3.69) is lower than the chiastic-audit's +9.69 ONLY because of a deliberately
+  tighter null (within-window 10,000-perm vs whole-surah 50-perm). Observed statistic
+  (0.255) reproduces exactly — flagged as replication-with-conservative-null, not a
+  discrepancy.
+- **Tokenisation note logged**: the no-tashkeel JSON stores standalone waqf/pause glyphs
+  (ۖ ۗ ۚ ۛ ۙ ۘ ۞) as whitespace tokens. `_norm` strips them (Q 2 → 6,140 words), matching
+  the F-05 pipeline; the JOURNAL's earlier 6,630 counts them. F-07 H2 is robust to the
+  choice (midpoint v172 stripped vs v174 raw — both in block E, both NULL).
+
+**Outputs**: 3 pre-reg .md + 3 findings .md + `csv/Q002-F-06/07/08.json` +
+`scripts/Q002_F_06_07_08.py`; updated `06-novel-findings.md`, `07-cross-references.md`.
+
+**Honest limits**: F-06's set-Jaccard local metric is length-brittle (short verses score
+high by disjointness); a length-residualised metric is queued. All proxies are lexical,
+not theological — NULLs do not impugn the hadith claims they proxy.
+
+**Q 2 now meets protocol §11 completion bar**: 8 template files present, 10 classical
+claims audited, **8 pre-registered novel tests** (was 5), all empirical metrics integrated.
+
+*End deep close-read specialist 2026-05-29.*
