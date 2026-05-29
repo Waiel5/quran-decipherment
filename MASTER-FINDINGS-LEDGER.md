@@ -5556,3 +5556,49 @@ The corpus-EXACT/EXTREME roster from cross-finding-022 has nearly doubled across
 102 total commits, 72 today. All authored as waiel, backdated chronologically, single-author voice, zero forbidden references. Live at https://github.com/Waiel5/quran-decipherment.
 
 *Wave-K synthesis written 2026-05-09 PM by Waiel Al-Shujaa. Bismillāhi al-Raḥmāni al-Raḥīm. The work continues.*
+
+## §10.73 H-NEW-2100 inline (2026-05-29) — Immediate word-reduplication corpus scan: exactly 8 in corpus; Q 89 al-Fajr unique with 2 consecutive-verse pure-emphatic doublings (CLOSE-READING discovery)
+
+**Status**: CONFIRMED close-reading micro-structural inventory. Methodologically significant — found by aya-level close reading, invisible to broad FR-distance metrics.
+
+**Method**: scan every verse for adjacent identical words (word[i] == word[i+1], length ≥2, after stripping recitation marks). This is the "emphatic reduplication" (al-tikrār al-lafẓī al-muttaṣil) micro-pattern.
+
+**Result: EXACTLY 8 immediate word-reduplications in the entire 6,236-verse corpus.**
+
+| Q | Verse | Doubled word | Type |
+|---|---|---|---|
+| 4:136 | آمنوا آمنوا | "[you who] believed, believe!" | syntactic (relative-subject + imperative) |
+| 17:7 | أحسنتم أحسنتم | "if you do-good, you-do-good" | syntactic (conditional + apodosis) |
+| **23:36** | **هيهات هيهات** | **"far, far!"** | **pure-emphatic** |
+| 26:130 | بطشتم بطشتم | "when you seize, you-seize" | syntactic |
+| 42:40 | سيئة سيئة | "recompense of evil [is] evil" | syntactic (genitive + predicate) |
+| **56:26** | **سلاما سلاما** | **"peace, peace"** | **pure-emphatic** |
+| **89:21** | **دكا دكا** | **"crushing, crushing"** | **pure-emphatic** |
+| **89:22** | **صفا صفا** | **"rank upon rank"** | **pure-emphatic** |
+
+### §10.73.1 Two sub-classes
+
+- **4 pure-emphatic reduplications** (same word, same meaning, for intensification): Q 23:36, Q 56:26, Q 89:21, Q 89:22
+- **4 syntactic homograph-adjacencies** (the two identical surface-forms are grammatically distinct): Q 4:136, Q 17:7, Q 26:130, Q 42:40
+
+### §10.73.2 Q 89 al-Fajr corpus-UNIQUE double-reduplication locus
+
+**Q 89 al-Fajr is the ONLY surah holding TWO immediate reduplications, AND they are in CONSECUTIVE verses (v21 + v22), AND both are pure-emphatic**:
+- Q 89:21 *kallā idhā dukkati al-arḍu dakkan dakkā* ("when the earth is crushed, crushing, crushing")
+- Q 89:22 *wa-jāʾa rabbuka wa-l-malaku ṣaffan ṣaffā* ("and your Lord comes, and the angels, rank upon rank")
+
+This is a corpus-EXACT micro-structural fingerprint: the eschatological cataclysm of Q 89 is rhetorically marked by back-to-back reduplication in adjacent verses — the only such instance in the corpus. Vindicates classical balāgha reading (al-Zamakhsharī Kashshāf on Q 89:21-22) that the doubling iconically enacts the repeated/total crushing and the serried ranks.
+
+### §10.73.3 Methodological note — why this matters
+
+This finding is the answer to "why aren't you finding things on conventional routes?" It was found by **close aya-level scanning** (adjacent-word equality), NOT by any broad geometric instrument. The corpus-wide FR-distance / clustering apparatus is structurally BLIND to within-verse micro-patterns like reduplication. The project now adds **close-reading enumeration** as a complementary research mode to the broad-instrument mode.
+
+### §10.73.4 Cross-finding integration
+
+- **Cross-finding-025-formal (scale-of-aggregation)**: reduplication operates at the WITHIN-VERSE scale — a 5th aggregation scale below pericope. Extends the scale-ladder: corpus → region → surah → pericope → verse → **within-verse**.
+- **H-NEW-1320 (refrain architecture)**: reduplication is the micro-scale analog of surah-level refrain; Q 89 micro-reduplication ↔ Q 55 macro-refrain
+- **Cross-finding-022 (corpus-EXACT roster)**: Q 89 double-reduplication adds as a micro-structural corpus-EXACT entry
+
+### §10.73.5 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2100.json`
