@@ -1,0 +1,111 @@
+{
+  "finding": "H-NEW-2340",
+  "prereg_sha256": "acdbac5ab8b520a31abe59f3a4722743b2ba1a1b3bb607df7bf63f27e82dd134",
+  "seed": 20260509,
+  "nperm": 10000,
+  "heavy_letters": "isti'la' S D T Z q g x (Buckwalter)",
+  "primary": {
+    "rho_heavy_vs_adhab": 0.0232,
+    "p_one_sided": 0.40516,
+    "direction_locked": "rho > 0",
+    "verdict": "NULL"
+  },
+  "robustness": {
+    "rho_meccan_only": 0.0251,
+    "rho_medinan_only": -0.037,
+    "rho_secondary_hellfire_set": -0.156
+  },
+  "corpus": {
+    "total_letters": 328335,
+    "total_heavy": 16638,
+    "heavy_fraction": 0.0507,
+    "adhab_tokens": 373,
+    "hellfire_tokens": 551
+  },
+  "top_heavy_surahs": [
+    {
+      "surah": 113,
+      "name": "الفلق",
+      "region": "meccan",
+      "heavy_density": 0.1212,
+      "adhab_density": 0.0
+    },
+    {
+      "surah": 103,
+      "name": "العصر",
+      "region": "meccan",
+      "heavy_density": 0.0959,
+      "adhab_density": 0.0
+    },
+    {
+      "surah": 86,
+      "name": "الطارق",
+      "region": "meccan",
+      "heavy_density": 0.0827,
+      "adhab_density": 0.0
+    },
+    {
+      "surah": 94,
+      "name": "الشرح",
+      "region": "meccan",
+      "heavy_density": 0.0808,
+      "adhab_density": 0.0
+    },
+    {
+      "surah": 50,
+      "name": "ق",
+      "region": "meccan",
+      "heavy_density": 0.0733,
+      "adhab_density": 0.0017
+    },
+    {
+      "surah": 91,
+      "name": "الشمس",
+      "region": "meccan",
+      "heavy_density": 0.0706,
+      "adhab_density": 0.0
+    },
+    {
+      "surah": 73,
+      "name": "المزمل",
+      "region": "meccan",
+      "heavy_density": 0.0689,
+      "adhab_density": 0.0032
+    },
+    {
+      "surah": 80,
+      "name": "عبس",
+      "region": "meccan",
+      "heavy_density": 0.0678,
+      "adhab_density": 0.0
+    },
+    {
+      "surah": 69,
+      "name": "الحاقة",
+      "region": "meccan",
+      "heavy_density": 0.0664,
+      "adhab_density": 0.0
+    },
+    {
+      "surah": 100,
+      "name": "العاديات",
+      "region": "meccan",
+      "heavy_density": 0.0663,
+      "adhab_density": 0.0
+    },
+    {
+      "surah": 38,
+      "name": "ص",
+      "region": "meccan",
+      "heavy_density": 0.0659,
+      "adhab_density": 0.0033
+    },
+    {
+      "surah": 99,
+      "name": "الزلزلة",
+      "region": "medinan",
+      "heavy_density": 0.0658,
+      "adhab_density": 0.0
+    }
+  ]
+}
