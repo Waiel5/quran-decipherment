@@ -1,0 +1,431 @@
+{
+  "finding_id": "H-NEW-2230",
+  "seed": 20260529,
+  "prereg_sha256": "1967b6e447442c50d4527323afb06c8404cd33a4e96b89e49dd502287d57203a",
+  "rules": {
+    "R-lemma-strict": "exact QAC LEM equality, STEM tokens (gold standard)",
+    "R-lemma-all-clitics": "within-lemma morphological subset / multi-lemma aggregation where target is split",
+    "R-lemma-fem-noun": "A^xir tā-marbūṭa subset = Hereafter-noun al-ākhira",
+    "kalla_disambiguation": "POS:AVR ∧ LEM kal~aA = rebuke; LEM kul~ = quantifier"
+  },
+  "claims": {
+    "claim1_dunya_akhira": {
+      "claimed": "115 = 115",
+      "dunya_R_lemma_strict": 115,
+      "akhira_R_lemma_strict_whole_A^xir": 155,
+      "akhira_R_lemma_fem_noun_subset_Hereafter": 115,
+      "akhir_adjectival_remainder": 40,
+      "akhar_other_separate_lemma": 70,
+      "balance_strict": false,
+      "balance_fem_noun_subset": true
+    },
+    "claim2_hayat_mawt": {
+      "claimed": "145 = 145",
+      "hayat_noun_R_lemma_strict": 76,
+      "mawt_noun_R_lemma_strict": 50,
+      "root_Hyy_total_R_lemma_all": 184,
+      "root_mwt_total_R_lemma_all": 165,
+      "noun_balance": false,
+      "either_hits_145": false
+    },
+    "claim3_malaika_shayatin": {
+      "claimed": "88 = 88",
+      "malak_R_lemma_strict_whole": 88,
+      "shaytan_R_lemma_strict_whole": 88,
+      "malak_number_breakdown": {
+        "singular": 13,
+        "dual": 2,
+        "plural": 73,
+        "total": 88
+      },
+      "shaytan_number_breakdown": {
+        "singular": 70,
+        "dual": 0,
+        "plural": 18,
+        "total": 88
+      },
+      "whole_lemma_balance": true,
+      "plural_balance": false,
+      "singular_balance": false
+    },
+    "claim4_rajul_maraa": {
+      "claimed": "24 = 24",
+      "rajul_R_lemma_strict": 29,
+      "imraa_R_lemma_strict": 26,
+      "rijal_plural_R_lemma_all": 28,
+      "nisa_plural_R_lemma_all": 59,
+      "balance": false,
+      "either_hits_24": false
+    },
+    "claim5_calendar": {
+      "claimed_shahr": 12,
+      "claimed_yawm": 365,
+      "claimed_ayyam": 30,
+      "shahr_singular_R_lemma_strict": 12,
+      "shahr_breakdown": {
+        "singular": 12,
+        "dual": 2,
+        "plural": 7,
+        "total": 21
+      },
+      "yawm_singular_R_lemma_strict": 375,
+      "yawm_breakdown": {
+        "singular": 375,
+        "dual": 3,
+        "plural": 27,
+        "total": 405
+      },
+      "yawmaidhin_separate_lemma_excluded": 70,
+      "ayyam_plural_plus_dual": 30,
+      "shahr_hits_12": true,
+      "yawm_hits_365": false,
+      "ayyam_hits_30": true
+    },
+    "claim6_iblis_refuge": {
+      "claimed": "11 = 11",
+      "iblis_R_lemma_strict": 11,
+      "iblis_hits_11": true,
+      "refuge_root_total": 17,
+      "refuge_verbs_total": 15,
+      "refuge_verb_lemma_breakdown": {
+        "Eu*o": 10,
+        ">uEiy*u": 1,
+        "{sotaEi*o": 4
+      },
+      "refuge_form1_aoudhu": 10,
+      "refuge_form4_uidhu": 1,
+      "refuge_form10_istaidh": 4,
+      "refuge_form1_plus_form4_subset": 11,
+      "refuge_natural_totals": [
+        10,
+        15,
+        17
+      ],
+      "refuge_has_natural_11": false,
+      "refuge_11_only_via_selective_subset": true
+    },
+    "claim7_kalla": {
+      "claimed": 33,
+      "rebuke_kalla_POS_AVR_count": 33,
+      "rebuke_hits_33": true,
+      "rebuke_surahs": [
+        19,
+        23,
+        26,
+        34,
+        70,
+        74,
+        75,
+        78,
+        80,
+        82,
+        83,
+        89,
+        96,
+        102,
+        104
+      ],
+      "rebuke_by_surah": {
+        "19": 2,
+        "23": 1,
+        "26": 2,
+        "34": 1,
+        "70": 2,
+        "74": 4,
+        "75": 3,
+        "78": 2,
+        "80": 2,
+        "82": 1,
+        "83": 4,
+        "89": 2,
+        "96": 3,
+        "102": 3,
+        "104": 1
+      },
+      "min_surah_of_rebuke": 19,
+      "all_rebuke_in_second_half_ge19": true,
+      "raw_substring_standalone_kalla": 38,
+      "substring_minus_rebuke": 5,
+      "quantifier_kullan_count_among_substring": 5,
+      "quantifier_kullan_locs": [
+        "4:130",
+        "6:84",
+        "7:46",
+        "11:111",
+        "17:20"
+      ],
+      "per_token_disambiguation": [
+        {
+          "loc": "4:130",
+          "class": "quantifier_kullan",
+          "qac_lem": "kul~",
+          "qac_pos": "N",
+          "form": "kul~FA"
+        },
+        {
+          "loc": "6:84",
+          "class": "quantifier_kullan",
+          "qac_lem": "kul~",
+          "qac_pos": "N",
+          "form": "kul~FA"
+        },
+        {
+          "loc": "7:46",
+          "class": "quantifier_kullan",
+          "qac_lem": "kul~",
+          "qac_pos": "N",
+          "form": "kul~F[A"
+        },
+        {
+          "loc": "11:111",
+          "class": "quantifier_kullan",
+          "qac_lem": "kul~",
+          "qac_pos": "N",
+          "form": "kul~FA"
+        },
+        {
+          "loc": "17:20",
+          "class": "quantifier_kullan",
+          "qac_lem": "kul~",
+          "qac_pos": "N",
+          "form": "kul~FA"
+        },
+        {
+          "loc": "19:79",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "19:82",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "23:100",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "26:15",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "26:62",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "34:27",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "70:15",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "70:39",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "74:16",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "74:32",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "74:53",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "74:54",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "75:11",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "75:20",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "75:26",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "78:4",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "78:5",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "80:11",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "80:23",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "82:9",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "83:7",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "83:14",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "83:15",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "83:18",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "89:17",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "89:21",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "96:6",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "96:15",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "96:19",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "102:3",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "102:4",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "102:5",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        },
+        {
+          "loc": "104:4",
+          "class": "rebuke_kalla_AVR",
+          "qac_lem": "kal~aA",
+          "qac_pos": "AVR"
+        }
+      ]
+    }
+  },
+  "verdicts": {
+    "claim1_dunya_akhira": {
+      "verdict": "RULES-FRAGILE",
+      "note": "dunyā=115 (single bare-definite lemma, CONFIRMED-BUT-MEANINGLESS as a one-sided fact). ākhira whole-lemma A^xir=155 (≠115, includes adjectival ākhir). Hereafter-noun fem tā-marbūṭa subset=115. Balance 115=115 holds ONLY under the within-lemma fem-noun subset → RULES-FRAGILE."
+    },
+    "claim2_hayat_mawt": {
+      "verdict": "FALSIFIED",
+      "note": "ḥayāt-noun=76 vs mawt-noun=50; root totals 184 vs 165. No rule hits 145; no balance."
+    },
+    "claim3_malaika_shayatin": {
+      "verdict": "RULES-FRAGILE",
+      "note": "whole-lemma 88=88 balances, BUT it is a conflation artifact: plural malāʾika=73 vs plural shayāṭīn=18; singular angel=13 vs devil=70 (inverted morphology). The two 88s are made of opposite material → RULES-FRAGILE."
+    },
+    "claim4_rajul_maraa": {
+      "verdict": "FALSIFIED",
+      "note": "rajul=29 vs imraʾa=26; neither = 24, no balance. Plurals rijāl=28 vs nisāʾ=59 also unbalanced."
+    },
+    "claim5_calendar": {
+      "verdict": "RULES-FRAGILE",
+      "note": "shahr-sing=12 (=12 ✓, fact); ayyām+dual=30 (=30 ✓, fact); yawm-sing=375 (claimed 365 ✗ — astronomical headline FAILS). 2/3 sub-targets land → RULES-FRAGILE (the two facts are real; the 365 headline is wrong)."
+    },
+    "claim6_iblis_refuge": {
+      "verdict": "RULES-FRAGILE",
+      "note": "Iblīs=11 (=11 EXACT, CONFIRMED-BUT-MEANINGLESS one-sided fact). Refuge verbs: form1=10, +form4=11, all-verbs=15, all-root=17. The 11 needs the form1+form4 subset (excludes the 4 istaʿidh imperatives) — selective boundary → RULES-FRAGILE."
+    },
+    "claim7_kalla": {
+      "verdict": "CONFIRMED",
+      "note": "rebuke-kallā (POS:AVR LEM kal~aA)=33 (=33 ✓); min surah=19, all ≥19 ✓. Raw substring كلا=38 CONFLATES 5 quantifier kullan tokens at ['4:130', '6:84', '7:46', '11:111', '17:20'] (all first-half) → CONFIRMS al-Dānī after disambiguation."
+    }
+  },
+  "direction_lock": {
+    "locked_prediction": "<=1 of 6 balance claims CONFIRMED-clean at lemma-strict",
+    "n_balance_claims_CONFIRMED_clean": 0,
+    "direction_held": true,
+    "interpretation": "DIRECTION HELD — QAC-lemma disambiguation does NOT rescue the antonym balances; numerology stays retired.",
+    "kalla_confirmed_33": true
+  }
+}
