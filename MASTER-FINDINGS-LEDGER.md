@@ -5774,3 +5774,53 @@ A number can be **real AND meaningless**. The 57/57 split is a true fact about t
 ### §10.76.4 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2130.json`
+
+## §10.77 H-NEW-2140 inline (2026-05-29) — Verse-initial anaphora runs: 64 runs corpus-wide; two corpus-EXTREME 9-verse runs (Q 26 qāla-dialogue + Q 52 am-question cascade)
+
+**Status**: CONFIRMED close-reading rhetorical inventory. The instrument mechanically rediscovers the corpus's most famous balāgha set-pieces.
+
+**Method**: scan for runs of ≥3 consecutive verses sharing the identical opening word (al-tikrār al-istihlālī / anaphora). Close-reading, verse-initial scale.
+
+**Result: 64 anaphora runs of length ≥3 in the corpus.**
+
+### §10.77.1 Corpus-EXTREME runs (length 9 — the two longest)
+
+| Q | Verses | Word | Length | Rhetorical function |
+|---|---|---|---|---|
+| **26:23-31** | قال (*qāla*, "he said") | **9** | Mūsā↔Pharaoh verbal duel as pure dialogue-volley |
+| **52:35-43** | أم (*am*, "or...?") | **9** | The famous *am khuliqū min ghayri shayʾ* rhetorical-question cascade (al-Ṭūr) |
+
+Both are length-9 — corpus-EXTREME anaphora.
+
+### §10.77.2 Length-7 runs
+
+| Q | Verses | Word | Function |
+|---|---|---|---|
+| 72:8-14 | وأنا (*wa-annā*) | jinn's serial self-report litany |
+| 81:2-8 | وإذا (*wa-idhā*) | al-Takwīr eschatological "when..." cascade |
+
+### §10.77.3 Length-6 and notable
+
+- Q 30:20-25 ومن (*wa-min*, "and among His signs...") — the *āyāt* sign-cascade (6)
+- Q 27:60-64 أمن (*am-man*, "or who...?") — rhetorical-question cascade (5)
+- Q 12:71-75 قالوا (*qālū*) — the Joseph-brothers dialogue (5)
+- Q 3:192-194 ربنا (*rabbanā*) — the *ulū al-albāb* prayer (3; cf. H-NEW-2110 longest prayer-run)
+
+### §10.77.4 Distribution
+
+Surahs with most anaphora runs: Q 2 (4), Q 6 (4), Q 23 (4). The *qāla*/*qālū* (said) family dominates — narrative-dialogue anaphora is the corpus's most common run-type, consistent with the Quran's pronominal-narrative law (H-NEW-1870).
+
+### §10.77.5 Significance
+
+This is the close-reading route producing structure invisible to broad metrics. The two 9-runs are among the most celebrated balāgha passages in classical literature (al-Jurjānī, al-Zamakhsharī both cite the Q 52 *am*-cascade as iʿjāz al-naẓm). The instrument **mechanically rediscovers** them and ranks them corpus-EXTREME — confirming the close-scan method surfaces real, classically-recognized rhetorical architecture.
+
+### §10.77.6 Cross-finding integration
+
+- **H-NEW-2100 (reduplication)** + **H-NEW-2140 (anaphora)**: two micro-scale rhetorical-repetition findings; together they map the corpus's repetition-architecture at within-verse and verse-initial scales
+- **H-NEW-1320 (refrain) + H-NEW-1790 (refrain inventory)**: anaphora-runs are the consecutive-verse analog of distributed refrains
+- **Cross-finding-025-formal**: anaphora operates at the verse-initial / verse-run scale; extends the scale-ladder
+- **H-NEW-1870 (pronominal narrative)**: qāla-anaphora dominance corroborates the dialogue-driven narrative style
+
+### §10.77.7 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2140.json`
