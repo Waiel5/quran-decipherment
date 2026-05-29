@@ -1,0 +1,140 @@
+{
+  "finding": "H-NEW-2330",
+  "prereg_sha256": "7463c7e4821e0f6516892310527324b7de1d2cc65a43cf3c4a40700162b0d645",
+  "seed": 20260509,
+  "nsim": 10000,
+  "burst_min_freq": 3,
+  "corpus": {
+    "root_tokens": 49968,
+    "distinct_roots": 1642,
+    "roots_freq_ge3": 1050
+  },
+  "primary": {
+    "L_obs": 22,
+    "L_null_mean": 0.13,
+    "p_one_sided": 0.0001,
+    "direction_locked": "L_obs > L_null",
+    "verdict": "CONFIRMED"
+  },
+  "secondary": {
+    "spine_roots_ge90_surahs": [
+      {
+        "root": "rbb",
+        "surahs": 94,
+        "freq": 980
+      }
+    ],
+    "extreme_single_surah_bursts": [
+      {
+        "root": "myl",
+        "freq": 6,
+        "surah": 4,
+        "name": "النساء",
+        "region": "medinan"
+      },
+      {
+        "root": "Syd",
+        "freq": 6,
+        "surah": 5,
+        "name": "المائدة",
+        "region": "medinan"
+      },
+      {
+        "root": "qmS",
+        "freq": 6,
+        "surah": 12,
+        "name": "يوسف",
+        "region": "meccan"
+      },
+      {
+        "root": "khf",
+        "freq": 6,
+        "surah": 18,
+        "name": "الكهف",
+        "region": "meccan"
+      },
+      {
+        "root": "$Tr",
+        "freq": 5,
+        "surah": 2,
+        "name": "البقرة",
+        "region": "medinan"
+      },
+      {
+        "root": "slH",
+        "freq": 4,
+        "surah": 4,
+        "name": "النساء",
+        "region": "medinan"
+      },
+      {
+        "root": "Afl",
+        "freq": 4,
+        "surah": 6,
+        "name": "الأنعام",
+        "region": "meccan"
+      },
+      {
+        "root": "jhz",
+        "freq": 4,
+        "surah": 12,
+        "name": "يوسف",
+        "region": "meccan"
+      },
+      {
+        "root": "mzq",
+        "freq": 4,
+        "surah": 34,
+        "name": "سبإ",
+        "region": "meccan"
+      },
+      {
+        "root": "nEj",
+        "freq": 4,
+        "surah": 38,
+        "name": "ص",
+        "region": "meccan"
+      },
+      {
+        "root": "qrH",
+        "freq": 3,
+        "surah": 3,
+        "name": "آل عمران",
+        "region": "medinan"
+      },
+      {
+        "root": "nkf",
+        "freq": 3,
+        "surah": 4,
+        "name": "النساء",
+        "region": "medinan"
+      },
+      {
+        "root": "Ass",
+        "freq": 3,
+        "surah": 9,
+        "name": "التوبة",
+        "region": "medinan"
+      },
+      {
+        "root": "*Ab",
+        "freq": 3,
+        "surah": 12,
+        "name": "يوسف",
+        "region": "meccan"
+      },
+      {
+        "root": "Eyr",
+        "freq": 3,
+        "surah": 12,
+        "name": "يوسف",
+        "region": "meccan"
+      }
+    ],
+    "burst_region_split": {
+      "meccan": 12,
+      "medinan": 10,
+      "meccan_fraction": 0.545
+    }
+  }
+}

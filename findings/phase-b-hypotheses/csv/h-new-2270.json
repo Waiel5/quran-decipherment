@@ -1,0 +1,229 @@
+{
+  "id": "H-NEW-2270",
+  "prereg_sha256": "dcefa7d1f9f9b22fd3ccab4d8652a48b9487bd50ac1e75ab83de7b2a7ebecd25",
+  "claims": {
+    "1_muqattaat_jabari": {
+      "claim": "every muqattaat sura is Meccan except Zahrawan (2,3) and al-Rad (13)",
+      "citation": "al-Suyuti Itqan nawʿ 1, al-Jaʿbari (line 1171-1174)",
+      "n_muqattaat": 29,
+      "medinan_muqattaat_observed": [
+        2,
+        3,
+        13
+      ],
+      "predicted_exceptions": [
+        2,
+        3,
+        13
+      ],
+      "verdict": "CONFIRMED"
+    },
+    "2_munafiqun_makki": {
+      "claim": "every sura mentioning the munafiqun is Medinan except al-Ankabut (29)",
+      "citation": "al-Suyuti Itqan nawʿ 1, Makki b. Abi Talib (line 1175)",
+      "hypocrite_lemma_surahs": [
+        3,
+        4,
+        8,
+        9,
+        29,
+        33,
+        48,
+        57,
+        59,
+        63,
+        66
+      ],
+      "meccan_members_observed": [
+        29
+      ],
+      "predicted_meccan_members": [
+        29
+      ],
+      "raw_root_nfq_surahs_incl_spending": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        13,
+        14,
+        16,
+        17,
+        18,
+        22,
+        25,
+        28,
+        29,
+        32,
+        33,
+        34,
+        35,
+        36,
+        42,
+        47,
+        48,
+        57,
+        59,
+        60,
+        63,
+        64,
+        65,
+        66
+      ],
+      "disambiguation": "raw root-nfq (incl. anfaqa 'spend') spans 31 surahs; hypocrite-sense lemmas only span 11",
+      "verdict": "CONFIRMED"
+    },
+    "3a_amanu_medinan": {
+      "claim": "every sura with 'ya ayyuha alladhina amanu' is Medinan",
+      "citation": "al-Suyuti Itqan nawʿ 1, Ibn Masʿud via al-Hakim/al-Bayhaqi; Ibn ʿAtiyya 'sahih' (lines 1146-1151)",
+      "amanu_address_surahs": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        22,
+        24,
+        33,
+        47,
+        49,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        66
+      ],
+      "meccan_members_observed": [],
+      "verdict": "CONFIRMED"
+    },
+    "3b_nas_meccan": {
+      "claim": "every sura with 'ya ayyuha al-nas' is Meccan (Ibn ʿAtiyya: but al-nas MAY come in Medinan)",
+      "citation": "al-Suyuti Itqan nawʿ 1, Ibn Masʿud; Ibn ʿAtiyya qualification (line 1152, 1158)",
+      "nas_address_surahs": [
+        2,
+        4,
+        7,
+        10,
+        22,
+        27,
+        31,
+        35,
+        49
+      ],
+      "medinan_members_observed": [
+        2,
+        4,
+        22,
+        49
+      ],
+      "verdict": "QUALIFIED-IN-SOURCE",
+      "note": "Ibn ʿAtiyya in the SAME passage flags al-nas as fallible; al-Nisaʾ (Q4) opens with al-nas yet is Medinan"
+    },
+    "4_sajda_hudhali": {
+      "claim": "every sura containing a sajda (prostration verse) is Meccan",
+      "citation": "al-Suyuti Itqan nawʿ 1, al-Hudhali al-Kamil (line 1176); sajda list nawʿ 19 (lines 6783-6786)",
+      "sajda_surahs": [
+        7,
+        13,
+        16,
+        17,
+        19,
+        22,
+        25,
+        27,
+        32,
+        41,
+        53,
+        84,
+        96
+      ],
+      "medinan_members_lensA_binary_groundtruth": [
+        13,
+        22
+      ],
+      "medinan_members_lensB_suyuti_disputed_meccan": [],
+      "disputed_surahs_with_suyuti_meccan_reading": [
+        13,
+        22
+      ],
+      "disambiguation": "Q13 al-Raʿd + Q22 al-Hajj are mukhtalaf-fiha; al-Suyuti himself (Itqan nawʿ 1, lines 788-789/843-844/852-853) records authoritative Meccan readings (Ibn ʿAbbas, ʿAli b. Abi Talha, Saʿid b. Jubayr). al-Jaʿbari's twin criterion (Claim 1) lists al-Raʿd as an explicit muqattaat exception. Under the Meccan reading the rule holds.",
+      "verdict": "RULES-FRAGILE",
+      "note": "FALSIFIED under binary Tanzil label; RULES-FRAGILE because the only two counterexamples are precisely the surahs al-Suyuti flags as disputed-with-Meccan-reading"
+    },
+    "5_kalla_upper_half": {
+      "claim": "rebuke-kalla (33x) never at Yathrib and never in the upper half of the Quran",
+      "citation": "al-Suyuti Itqan nawʿ 1, al-Dirini verse / al-Dani (lines 1178-1180); midpoint nawʿ 19 line 4362",
+      "raw_substring_kalla_surahs": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        17,
+        19,
+        20,
+        21,
+        23,
+        25,
+        26,
+        29,
+        34,
+        48,
+        57,
+        70,
+        74,
+        75,
+        78,
+        80,
+        82,
+        83,
+        89,
+        96,
+        102,
+        104
+      ],
+      "qac_rebuke_kalla_count": 33,
+      "qac_rebuke_kalla_surahs": [
+        19,
+        23,
+        26,
+        34,
+        70,
+        74,
+        75,
+        78,
+        80,
+        82,
+        83,
+        89,
+        96,
+        102,
+        104
+      ],
+      "earliest_rebuke_kalla_surah": 19,
+      "earliest_rebuke_kalla_verse_pos": 2329,
+      "classical_letter_midpoint_verse_pos_Q18_74": 2214,
+      "total_verses": 6236,
+      "earliest_after_midpoint": true,
+      "medinan_rebuke_kalla_surahs": [],
+      "disambiguation": "raw substring كلا spans 29 surahs incl. quantifier kullan/kila (e.g. Q4,6,7,11,17); QAC POS=AVR lemma kal~aA = 33, all in surahs 19-104",
+      "verdict": "VINDICATED-AFTER-DISAMBIGUATION"
+    }
+  },
+  "tally": {
+    "CONFIRMED": 3,
+    "QUALIFIED-IN-SOURCE": 1,
+    "RULES-FRAGILE": 1,
+    "VINDICATED-AFTER-DISAMBIGUATION": 1
+  }
+}
