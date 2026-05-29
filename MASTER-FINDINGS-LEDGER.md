@@ -5682,3 +5682,94 @@ The center of God's book — by both word and letter, under the project's defaul
 ### §10.75.6 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2120.json`
+
+## §10.76 H-NEW-2050 (pre-registered) — Within-surah verse-length symmetry + central-pivot: palindrome/pivot NULL, monotone-gradient CONFIRMED
+
+**Status**: DIRECTIONAL. Pre-registered (SHA `a3215dc92eb91c8519aa3ba12eddebb729731400705e1d0d1707ef361f79221a`), seed `20260509`, 10,000 verse-order-shuffle perms per surah. Two direction-locked primary legs at Bonferroni α = 0.05/(3·109) = **1.529×10⁻⁴**. New position-dependent instrument — prior verse-length tests (H-NEW-35 ACF, H-NEW-43 FFT, H-NEW-181 Ljung-Box) are translation-invariant and could not see positional symmetry.
+
+### §10.76.1 The three locked statistics
+
+For length-vector L (words-per-verse, no-tashkeel): `S_pal` = Pearson r(L, reverse(L)) [palindrome]; `S_piv` = 1 − min(centre-dist of longest, of shortest) [central-pivot]; `S_grad` = |Spearman ρ(index, length)| [monotone gradient]. Null = same length-multiset, scrambled order.
+
+### §10.76.2 Verdict per leg
+
+| Leg | Hypothesis | Result |
+|---|---|---|
+| **H1 palindrome OR pivot** | ≥3 surahs significant | **NULL — 0 surahs** clear α anywhere |
+| **H2 monotone gradient** | ≥3 surahs significant | **PASS — 6 surahs**: Q 2, 15, 20, 51, 52, 77 |
+
+### §10.76.3 H2 gradient hits (all replicate seed2 + letters-per-verse)
+
+| Q | Name | n | S_grad | p | direction |
+|---:|---|---:|---:|---:|:--|
+| 51 | al-Dhāriyāt | 60 | 0.615 | 1.0×10⁻⁴ | lengthening |
+| 52 | al-Ṭūr | 49 | 0.653 | 1.0×10⁻⁴ | lengthening |
+| 77 | al-Mursalāt | 50 | 0.558 | 1.0×10⁻⁴ | lengthening |
+| 20 | Ṭāhā | 135 | 0.465 | 1.0×10⁻⁴ | lengthening |
+| 15 | al-Ḥijr | 99 | 0.417 | 1.0×10⁻⁴ | **shortening** |
+| 2 | al-Baqara | 286 | 0.355 | 1.0×10⁻⁴ | lengthening |
+
+Five lengthen, one (Q 15) shortens. Within-surah lengthening gradient is logically independent of the cross-surah compression-tail (H-NEW-770). Q 51/52 overlap H-NEW-181's top-2 rhythmic surahs.
+
+### §10.76.4 H1 NULL detail
+
+No length-palindrome anywhere: best is Q 89 al-Fajr S_pal = 0.644 at raw p = 0.0044 (2 orders from threshold). Four surahs hit S_piv = 1.0 (extremum dead-centre: Q 35, 92, 107, 113) but all NULL (single-extremum = 1 d.o.f., chance-explicable; Q 35 p = 0.11). **Concentric/ring-composition (Cuypers 2015, Farrin 2010) leaves NO footprint in the verse-length series** — chiasmus, where present, is lexical/thematic, not length-based.
+
+### §10.76.5 Named targets
+
+- **Q 55 al-Raḥmān — NULL on all three.** The 31× *fa-bi-ayyi ālāʾi* refrain LEVELS the profile (S_grad = 0.135, corpus-weakest; S_pal = −0.098). Refrain ≠ symmetry: it produces local periodicity (ACF/FFT-visible) but no positional architecture. Pre-registered refrain→rhythm prediction FALSIFIED for symmetry/pivot/gradient.
+- **Q 78 al-Nabaʾ, Q 81 al-Takwīr — directional, sub-threshold.** Lengthening gradient in locked direction (p = 0.0076, 0.0031), replicates seed2+letters, misses corpus-corrected α. MW-7 descriptive.
+
+### §10.76.6 Controls
+
+MW-6 negative control (20 synthetic surahs, lengths drawn i.i.d. from corpus): min-p pal 0.023 / piv 0.060 / grad 0.102 — **none fires**. H2 signal is a property of the actual ordering, not the length-distribution.
+
+### §10.76.7 Files
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-2050-verse-length-symmetry.md`
+- Script: `findings/phase-b-hypotheses/scripts/h-new-2050.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-2050.json`
+- Finding: `findings/phase-b-hypotheses/h-new-2050-verse-length-symmetry.md`
+
+## §10.76 H-NEW-2130 inline (2026-05-29) — Even/odd parity "57/57 split" audit: CONFIRMED as fact but it is EXACTLY the independence-expected value → zero design signal
+
+**Status**: CONFIRMED-BUT-MEANINGLESS. A rigor-demonstration: a real number that carries no design content.
+
+**Famous claim** (Khalifa-adjacent numerology): the 114 surahs split such that surahs where (position + verse-count) is EVEN number exactly 57, and ODD exactly 57 — and 57 = 19×3, "proving" the Code-19 design.
+
+**Audit result**:
+- Surahs with (position + verse-count) EVEN: **57** ✓
+- Surahs with (position + verse-count) ODD: **57** ✓
+- The 57/57 claim is **factually CONFIRMED**.
+
+**BUT — the cross-tabulation reveals it is chance**:
+
+| | vc-even | vc-odd | total |
+|---|---|---|---|
+| pos-even | **30** | 27 | 57 |
+| pos-odd | 30 | 27 | 57 |
+| total | 60 | 54 | 114 |
+
+The pos-even-&-vc-even cell = 30. Under statistical independence, the expected value is (57 × 60) / 114 = **30.0 EXACTLY**. The observed joint count equals the independence-expectation to the integer. Algebraically, sum-even = 2a − 3 where a = pos-even-vc-even; sum-even = 57 ⟺ a = 30 = the independence value.
+
+**Verdict**: the 57/57 split is **precisely what chance predicts** given the marginals (57 even positions are forced by 1..114; 60 even verse-counts is the empirical marginal). It carries **ZERO design signal**. The "57 = 19×3 miracle" framing is empty — 57 even-positions is arithmetically forced (half of 114), and the parity-match falls at the independence-expected value.
+
+### §10.76.1 Methodological lesson
+
+A number can be **real AND meaningless**. The 57/57 split is a true fact about the corpus that is simultaneously the null-expected outcome. This is the discipline that separates empirical-architectural analysis from numerology: we don't just check whether a claimed number is correct, we check whether it carries information beyond chance. It does not.
+
+### §10.76.2 Descriptive corpus facts (no design content)
+
+- Even verse-count surahs: 60; odd: 54
+- Σ positions where vc-even = 3450; where vc-odd = 3105; total Σ(1..114) = 6555
+- These are reported for completeness; none exceeds chance (cf. H-NEW-2090 surah-arithmetic NULL)
+
+### §10.76.3 Cross-finding integration
+
+- **H-NEW-2090 (surah-arithmetic NULL)**: same conclusion via different cells — surah-position numerology has no signal
+- **H-NEW-1600 + H-NEW-1740 (al-Khalifa rejected)**: the 57/57 parity claim joins the rejected Code-19 family
+- **Methodological pillar**: "confirmed-but-meaningless" is a distinct verdict-class — adds to the project's audit vocabulary alongside CONFIRMED / NULL / DIRECTIONAL / RULES-FRAGILE
+
+### §10.76.4 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2130.json`
