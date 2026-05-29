@@ -1,0 +1,210 @@
+{
+  "test_id": "Q066-F-01",
+  "prereg_sha": "749a186efd3959ab1e0eddfa435f916f8104454bf347a43d9466c1a1705c4d44",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, QAC v0.4 roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "arm_A": {
+    "q66_9_text": "يا أيها النبي جاهد الكفار والمنافقين واغلظ عليهم ومأواهم جهنم وبئس المصير",
+    "q66_9_verbatim_partners": [
+      [
+        9,
+        73
+      ]
+    ],
+    "A_H1_partner_is_Q9_73": true,
+    "n_verbatim_twin_groups_ge10tok": 11,
+    "A_H2_count_le_20": true,
+    "twin_group_locations": [
+      [
+        [
+          2,
+          47
+        ],
+        [
+          2,
+          122
+        ]
+      ],
+      [
+        [
+          2,
+          134
+        ],
+        [
+          2,
+          141
+        ]
+      ],
+      [
+        [
+          3,
+          89
+        ],
+        [
+          24,
+          5
+        ]
+      ],
+      [
+        [
+          6,
+          4
+        ],
+        [
+          36,
+          46
+        ]
+      ],
+      [
+        [
+          6,
+          10
+        ],
+        [
+          21,
+          41
+        ]
+      ],
+      [
+        [
+          9,
+          33
+        ],
+        [
+          61,
+          9
+        ]
+      ],
+      [
+        [
+          9,
+          73
+        ],
+        [
+          66,
+          9
+        ]
+      ],
+      [
+        [
+          11,
+          110
+        ],
+        [
+          41,
+          45
+        ]
+      ],
+      [
+        [
+          23,
+          6
+        ],
+        [
+          70,
+          30
+        ]
+      ],
+      [
+        [
+          26,
+          109
+        ],
+        [
+          26,
+          127
+        ],
+        [
+          26,
+          145
+        ],
+        [
+          26,
+          164
+        ],
+        [
+          26,
+          180
+        ]
+      ],
+      [
+        [
+          59,
+          1
+        ],
+        [
+          61,
+          1
+        ]
+      ]
+    ],
+    "n_long_verses_ge10tok": 3343,
+    "n_long_verse_pairs": 5586153,
+    "n_verbatim_pairs": 20,
+    "observed_verbatim_collision_rate": 3.5802814566661528e-06,
+    "verdict": "CONFIRMED"
+  },
+  "arm_B": {
+    "kafaru_frame_positions": [
+      [
+        66,
+        10
+      ]
+    ],
+    "amanu_frame_positions": [
+      [
+        66,
+        11
+      ]
+    ],
+    "adjacent_antithetical_pairs": [
+      [
+        [
+          66,
+          10
+        ],
+        [
+          66,
+          11
+        ]
+      ]
+    ],
+    "B_H1_corpus_exclusive_to_Q66": true,
+    "j_11_12": 0.08333333333333333,
+    "j_10_11": 0.2,
+    "j_10_12": 0.04,
+    "B_H2_believer_pair_tighter": false,
+    "frame_root_bias_note": {
+      "v10_n_roots": 15,
+      "v11_n_roots": 15,
+      "v12_n_roots": 11,
+      "shared_v10_v11": [
+        "Alh",
+        "Drb",
+        "mrA",
+        "mvl",
+        "qwl"
+      ],
+      "shared_v11_v12": [
+        "bny",
+        "rbb"
+      ]
+    },
+    "B_H3_perm": {
+      "j_11_12": 0.08333333333333333,
+      "null_mean": 0.050169759170144095,
+      "null_std": 0.046408481953395996,
+      "z": 0.7146015721111613,
+      "p_perm": 0.2542745725427457,
+      "n_ge": 2542,
+      "alpha": 0.05,
+      "pool_a_size": 796,
+      "pool_b_size": 1896,
+      "pass": false
+    },
+    "B_passes": 1,
+    "direction_violation": true,
+    "verdict": "NULL (pre-commit violation)"
+  }
+}
