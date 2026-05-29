@@ -1,0 +1,217 @@
+{
+  "finding": "H-NEW-2320",
+  "prereg_sha256": "68f2446d3f3c362823094d12870b896500146d67e70edd8fcb8e206632b9eaa6",
+  "seed": 20260509,
+  "nperm": 10000,
+  "rules_tuple": "QAC root v0.4, root-bearing tokens only, Hafs-Kufan",
+  "corpus": {
+    "root_tokens": 49968,
+    "distinct_roots": 1642,
+    "hapax_roots": 395,
+    "hapax_fraction_of_roots": 0.2406
+  },
+  "primary": {
+    "mean_rate_meccan": 0.028075,
+    "mean_rate_medinan": 0.006773,
+    "obs_delta_mecc_minus_med": 0.021302,
+    "p_one_sided": 0.0012,
+    "null_mean_delta": -0.000119,
+    "direction_locked": "meccan > medinan",
+    "verdict": "CONFIRMED"
+  },
+  "secondary": {
+    "top10_positive_residual_surahs": [
+      {
+        "surah": 22,
+        "name": "الحج",
+        "region": "medinan",
+        "hapax_count": 14,
+        "root_tokens": 826,
+        "rate": 0.01695,
+        "residual": 7.47
+      },
+      {
+        "surah": 20,
+        "name": "طه",
+        "region": "meccan",
+        "hapax_count": 14,
+        "root_tokens": 837,
+        "rate": 0.01673,
+        "residual": 7.38
+      },
+      {
+        "surah": 55,
+        "name": "الرحمن",
+        "region": "medinan",
+        "hapax_count": 9,
+        "root_tokens": 256,
+        "rate": 0.03516,
+        "residual": 6.98
+      },
+      {
+        "surah": 81,
+        "name": "التكوير",
+        "region": "meccan",
+        "hapax_count": 7,
+        "root_tokens": 66,
+        "rate": 0.10606,
+        "residual": 6.48
+      },
+      {
+        "surah": 37,
+        "name": "الصافات",
+        "region": "meccan",
+        "hapax_count": 10,
+        "root_tokens": 541,
+        "rate": 0.01848,
+        "residual": 5.72
+      },
+      {
+        "surah": 12,
+        "name": "يوسف",
+        "region": "meccan",
+        "hapax_count": 14,
+        "root_tokens": 1126,
+        "rate": 0.01243,
+        "residual": 5.1
+      },
+      {
+        "surah": 79,
+        "name": "النازعات",
+        "region": "meccan",
+        "hapax_count": 6,
+        "root_tokens": 122,
+        "rate": 0.04918,
+        "residual": 5.04
+      },
+      {
+        "surah": 100,
+        "name": "العاديات",
+        "region": "meccan",
+        "hapax_count": 5,
+        "root_tokens": 24,
+        "rate": 0.20833,
+        "residual": 4.81
+      },
+      {
+        "surah": 53,
+        "name": "النجم",
+        "region": "meccan",
+        "hapax_count": 6,
+        "root_tokens": 213,
+        "rate": 0.02817,
+        "residual": 4.32
+      },
+      {
+        "surah": 47,
+        "name": "محمد",
+        "region": "medinan",
+        "hapax_count": 7,
+        "root_tokens": 350,
+        "rate": 0.02,
+        "residual": 4.23
+      }
+    ],
+    "q1_alfatiha_hapax_roots": [],
+    "q1_alfatiha_hapax_count": 0,
+    "spearman_rate_vs_surah_number": 0.223,
+    "highest_rate_surahs": [
+      {
+        "surah": 108,
+        "name": "الكوثر",
+        "region": "meccan",
+        "rate": 0.28571,
+        "hapax_count": 2,
+        "root_tokens": 7
+      },
+      {
+        "surah": 100,
+        "name": "العاديات",
+        "region": "meccan",
+        "rate": 0.20833,
+        "hapax_count": 5,
+        "root_tokens": 24
+      },
+      {
+        "surah": 112,
+        "name": "الإخلاص",
+        "region": "meccan",
+        "rate": 0.2,
+        "hapax_count": 2,
+        "root_tokens": 10
+      },
+      {
+        "surah": 106,
+        "name": "قريش",
+        "region": "meccan",
+        "rate": 0.16667,
+        "hapax_count": 2,
+        "root_tokens": 12
+      },
+      {
+        "surah": 113,
+        "name": "الفلق",
+        "region": "meccan",
+        "rate": 0.13333,
+        "hapax_count": 2,
+        "root_tokens": 15
+      },
+      {
+        "surah": 111,
+        "name": "المسد",
+        "region": "meccan",
+        "rate": 0.11765,
+        "hapax_count": 2,
+        "root_tokens": 17
+      },
+      {
+        "surah": 81,
+        "name": "التكوير",
+        "region": "meccan",
+        "rate": 0.10606,
+        "hapax_count": 7,
+        "root_tokens": 66
+      },
+      {
+        "surah": 91,
+        "name": "الشمس",
+        "region": "meccan",
+        "rate": 0.10256,
+        "hapax_count": 4,
+        "root_tokens": 39
+      },
+      {
+        "surah": 90,
+        "name": "البلد",
+        "region": "meccan",
+        "rate": 0.07692,
+        "hapax_count": 4,
+        "root_tokens": 52
+      },
+      {
+        "surah": 107,
+        "name": "الماعون",
+        "region": "meccan",
+        "rate": 0.07143,
+        "hapax_count": 1,
+        "root_tokens": 14
+      },
+      {
+        "surah": 105,
+        "name": "الفيل",
+        "region": "meccan",
+        "rate": 0.05556,
+        "hapax_count": 1,
+        "root_tokens": 18
+      },
+      {
+        "surah": 83,
+        "name": "المطففين",
+        "region": "meccan",
+        "rate": 0.0495,
+        "hapax_count": 5,
+        "root_tokens": 101
+      }
+    ]
+  }
+}
