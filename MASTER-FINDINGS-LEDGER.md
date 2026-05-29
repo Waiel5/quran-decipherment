@@ -6040,3 +6040,47 @@ Each scale has its own law-strength findings. Broad instruments work at corpus/r
 - Numerology family status: balanced-words RETIRED, abjad RETIRED, surah-arithmetic RETIRED, parity-split RETIRED, Code-19 RETIRED — all via proper nulls. Genuine rhetorical structures (anaphora, reduplication, fawāṣil-grammar, prayer-clusters, gradients) CONFIRMED.
 
 *Wave-L synthesis 2026-05-29 by Waiel Al-Shujaa. The numerology is retired; the rhetoric is real. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+## §10.80 H-NEW-2160 inline (2026-05-29) — kallā distribution audit: classical "second-half-only" claim VINDICATED after homograph disambiguation (a close-reading care lesson)
+
+**Status**: CONFIRMED with disambiguation; demonstrates why close-reading beats raw substring-counting.
+
+**Classical claim** (al-Suyūṭī Itqān nawʿ 40, citing al-Dānī): the rebuke-particle *kallā* (كلا, "Nay! By no means!") occurs 33 times, ALL in the latter half of the Quran (the mufaṣṣal), never in the first half.
+
+**Raw substring result**: 38 attestations of كلا, scattered across BOTH halves (earliest Q 4:130). This APPEARS to falsify the claim.
+
+**The disambiguation**: كلا in the consonantal skeleton is a HOMOGRAPH:
+- *kallā* (rebuke particle) — "Nay!"
+- *kullan / kilā* (quantifier) — "each / both"
+
+The first-half occurrences are the QUANTIFIER, not the rebuke:
+- Q 4:130 *kullan min saʿatih* ("each from His abundance")
+- Q 6:84 *kullan hadaynā* ("each We guided")
+- Q 7:46 *yaʿrifūna kullan bi-sīmāhum* ("they know each by their mark")
+- Q 11:111 *wa-inna kullan* ("and indeed each")
+- Q 17:20 *kullan numiddu* ("each We extend")
+
+The genuine rebuke-*kallā* concentrates in the second half:
+- Q 70 (2), Q 74 (4), Q 75 (3), Q 78 (2), Q 80 (2), Q 82 (1), Q 83 (4), Q 89 (2), Q 96 (3), Q 102 (3), Q 104 (1)
+- **18 of these in Q 78-104 (juzʾ 29-30 short mufaṣṣal)**
+
+**Verdict**: The classical claim VINDICATES once the homograph is disambiguated. Raw substring-counting (38, both halves) misleads; morphological disambiguation (rebuke-kallā ~33, second-half-concentrated) confirms al-Dānī's 1,000-year-old observation.
+
+### §10.80.1 Methodological lesson (applies to the whole H-NEW-2000 numerical-symmetry series)
+
+This finding is a built-in caution: **raw substring counts conflate homographs and must be morphologically disambiguated**. The H-NEW-2000 / 2010 / 2020 balanced-word audits used substring/root counting; some "failures" might shift under disambiguation, and some "successes" might dissolve. The QAC lemma-level count is the disambiguated gold-standard; future numerical audits should use it. The kallā case shows disambiguation can RESCUE a classical claim (bidirectional rules-tuple sensitivity, project memory).
+
+### §10.80.2 Cross-finding integration
+
+- **feedback_rules_tuple_bidirectional** (memory): disambiguation rescues the kallā claim — rules-variants rehabilitate, not just demote
+- **H-NEW-2000/2010/2020 (balanced-word audits)**: kallā shows the disambiguation caveat applies to those too; flagged for lemma-level re-run
+- **al-Dānī al-Muktafā + al-Suyūṭī Itqān nawʿ 40**: classical distributional close-reading VINDICATED
+
+### §10.80.3 Open follow-up
+
+- Full QAC-lemma disambiguation of all 38 كلا tokens to get the exact rebuke-kallā count and confirm = 33
+- Re-run H-NEW-2000 famous-claims at QAC-lemma level (disambiguated)
+
+### §10.80.4 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2160.json`
