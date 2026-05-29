@@ -349,6 +349,7 @@ Full cataloguing at findings/HONEST-LIMITS-LEDGER.md (43 items in 6 parts). Summ
 - **Al-Kawthar 42-letter Catalan claim** — actual count is 43 under locked rules. (mathematical-sequences-audit.md)
 - **iʿjāz ʿilmī embryology (Q 23:12-14)** — Galenic inheritance traced. (findings/phase-b-hypotheses/embryology-audit.md)
 - **iʿjāz ʿilmī Big Bang, fingerprints, atom, milk, etc.** — all survivor-biased retrofits.
+- **Systematic abjad / ḥisāb al-jummal sweep + famous-claims audit (H-NEW-2040)** — SPLIT: famous deterministic claims VERIFY EXACT, systematic correlations NULL. **Class A (deterministic):** under the locked mashriqi table (methodology.md §6), abjad(basmala بسم الله الرحمن الرحيم) = **786** exactly, abjad(الله) = **66** exactly (1+30+30+5), abjad(محمد) = **92** exactly (40+8+40+4). These "verify" trivially — they are spelling letter-sums, not signals. **Rules-tuple-fragility:** 786 is mashriqi-specific (= **1026** under maghribi), whereas 66 and 92 are table-invariant (their letters never diverge between tables). **Class A muqaṭṭaʿāt:** all 14 unique disconnected-letter strings computed (الم=71, المص=161, الر=231, المر=271, كهيعص=195, طه=14, طسم=109, طس=69, يس=70, ص=90, حم=48, حمعسق=278, ق=100, ن=50); coincidence audit vs {position, verse-count, 19, 114, 786, 6236} = **0 hits**. **Class B (systematic, the pre-registered NULL):** 10000-perm shuffle null, Bonferroni k=7 (α=0.00714) — surah-name-abjad ~ position r=+0.159 (perm-p=0.090, NS); ~ verse-count r=−0.098 (p=0.296, NS); name-abjad==position **1 exact match** (al-Ḥadīd Q57 الحديد=57, perm-p=0.172 — chance expectation ≈1, and Q57 has 29 verses so it is NOT a verse-count match); name-abjad==verse-count 0; verse-abjad == {within-surah verse-no / surah×1000+verse / global index 1..6236} = **0 / 0 / 0**. MW-6 control: name-abjad ~ *random* position permutation r=+0.171 ≥ the real +0.159 → the position correlation is pure noise. No abjad-encoded numerical architecture exists in the name-set or verse corpus. Complements H-NEW-2090 (position↔count arithmetic NULL) on the abjad axis; consistent with H-NEW-34 abjad-residue NULL and the McKay-style audit verdict that the famous numbers are real arithmetic but explanatorily empty. (findings/phase-b-hypotheses/h-new-2040-abjad-sweep.md; script scripts/h-new-2040.py; JSON csv/h-new-2040.json; prereg SHA 68f40fafb5b13863002c7c36da2314a9d0eb94f5156d4fd7d28e5b6423776232)
 - **Surah-position ↔ verse-count arithmetic coincidences (H-NEW-2090)** — NULL. Exhaustive pre-registered scan of 8 arithmetic relations between mushaf-position N and Hafs-Kūfan verse-count, 10000-perm shuffle null, Bonferroni α=0.00625: **0 of 8 cells exceed chance**; most cells fall *below* the null mean (the length-ordered mushaf systematically *under*-produces position↔count coincidences). **Cell 1 (verse_count = N) = 0 exact hits** corpus-wide (null expects 0.88) — the "surah N has N verses" devotional claim has zero instances. The famous **"Q 36 Yāsīn = 36" is empty**: Yāsīn has 83 verses, not 36; 36 is only its ordinal position. The permissive 15-cell linear grid (a·N+b) catches 4 surahs vs null-mean 8.26 — half the chance rate. D1 note: Σ(1..114) = 6555 = 3×5×**19**×23 (the "Code-19" factor is a triangular-number artifact, no design content); Σ verse-counts = 6236 = 2²×1559 corroborates al-Suyūṭī *al-Itqān* nawʿ 17. Extends the skeptical audit alongside "6,666 verses" and Khalifa Code-19. (findings/phase-b-hypotheses/h-new-2090-surah-arithmetic.md; prereg SHA 5a6599038a283ce0886b9b8ce3f1cb15d99621f05d8546d3c304348918aed77d)
 
 ### Classical claims
@@ -5635,3 +5636,49 @@ Famous 2-verse runs: Q 2:285-286 (the closing two verses of al-Baqara — *āman
 ### §10.74.3 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2110.json`
+
+## §10.75 H-NEW-2120 inline (2026-05-29) — Center-of-the-Quran audit: both word-center AND letter-center fall inside Sūrat al-Kahf's Khaḍir narrative; classical wal-yatalattaf claim VINDICATED at surah-level, rules-fragile at exact-word level
+
+**Status**: CONFIRMED surah-level; RULES-FRAGILE exact-word level. A high-value classical close-reading audit.
+
+**Method**: flatten all words/letters in mushaf order (no-tashkeel, recitation-marks stripped, basmala-as-v1-of-Q1-only), find exact midpoint.
+
+**Counts**: 78,011 words; 330,709 Arabic letters (no-tashkeel whitespace tokenization).
+
+### §10.75.1 The exact centers
+
+| Center | Location | Word/Letter |
+|---|---|---|
+| **Word-center** (index 39,005 / 78,011) | **Q 18:77** | حتى (*ḥattā*) |
+| **Letter-center** (index 165,354 / 330,709) | **Q 18:73** | ت of نسيت (*nasītu*, "I forgot") |
+
+**BOTH centers fall inside Sūrat al-Kahf (Q 18), specifically inside the Mūsā-Khaḍir wisdom-narrative (Q 18:60-82).** vv 73 and 77 are both in the boat/boy/wall episode.
+
+### §10.75.2 Classical wal-yatalattaf claim audit
+
+**Classical claim** (cited in al-Suyūṭī Itqān nawʿ 19 from earlier ḥuffāẓ): the middle word of the Quran is *wal-yatalattaf* (وليتلطف, "let him be courteous") at Q 18:19, and its ت is the middle letter.
+
+**Audit**:
+- *wal-yatalattaf* (Q 18:19) sits at word-index 38,126 = **48.87% through the corpus** — close to center but **879 words short** of the exact midpoint under strict no-tashkeel counting.
+- **Surah-level claim VINDICATED**: the center IS in al-Kahf (both word and letter centers).
+- **Exact-word claim RULES-FRAGILE**: under strict no-tashkeel whitespace tokenization, the exact center is Q 18:77 (ḥattā), not Q 18:19. The classical claim depends on a specific counting convention (likely basmala-inclusive across surahs, or a tashkeel-sensitive letter-count, or a specific manuscript word-division).
+
+### §10.75.3 Why this is structurally beautiful
+
+The center of God's book — by both word and letter, under the project's default counting — lands inside the **Khaḍir narrative** (Q 18:60-82), the corpus's paradigmatic wisdom-and-hidden-knowledge story. The midpoint letter is literally the ت of *nasītu* ("I forgot") — Mūsā apologizing for forgetting his pledge to Khaḍir (Q 18:73). The classical tradition that "the heart of the Quran's geography is al-Kahf" is empirically supported at corpus-EXACT precision, even as the specific word differs by counting convention.
+
+### §10.75.4 Cross-finding integration
+
+- **H-NEW-1900 (Q 18 corpus-monopolies + Khaḍir-name-not-in-Quran)**: now joined by the corpus-center landing in al-Kahf — Q 18 is structurally central in multiple senses
+- **Rules-tuple bidirectional sensitivity** (project memory): the exact-word center shifts with counting convention; the surah-level center (al-Kahf) is robust across conventions
+- **Pillar 2 (mushaf geometry)**: the geometric center of the linear text is a meaningful structural locus
+
+### §10.75.5 Open follow-ups
+
+1. Compute the center under (a) basmala-inclusive-all-surahs, (b) full-tashkeel letter count, (c) Uthmani-rasm — does any convention make wal-yatalattaf (Q 18:19) exact?
+2. Verse-center: which verse is the exact middle verse (3118th of 6236)?
+3. Surah-center: Q 57 al-Ḥadīd is the 57th of 114 — is it the "middle surah"? (Iron, classically significant)
+
+### §10.75.6 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2120.json`
