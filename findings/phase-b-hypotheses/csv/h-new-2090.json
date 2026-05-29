@@ -1,0 +1,172 @@
+{
+  "id": "H-NEW-2090",
+  "prereg_sha256": "5a6599038a283ce0886b9b8ce3f1cb15d99621f05d8546d3c304348918aed77d",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 8,
+  "alpha_bon": 0.00625,
+  "rules_tuple": "Hafs-Kufan verse-counts; canonical order 1..114; whole-verse unit; shuffle-assignment null",
+  "cell7_grid": {
+    "a": [
+      1,
+      2,
+      3
+    ],
+    "b": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "observed_total_grid_hits": 4
+  },
+  "cells": {
+    "cell1_identity": {
+      "observed_count": 0,
+      "observed_hit_positions": [],
+      "null_mean": 0.8799,
+      "null_median": 1.0,
+      "null_max": 7,
+      "null_p95": 3.0,
+      "p_one_sided_excess": 1.0,
+      "bonferroni_significant": false,
+      "verdict": "chance-consistent"
+    },
+    "cell2_double": {
+      "observed_count": 1,
+      "observed_hit_positions": [
+        30
+      ],
+      "null_mean": 0.5138,
+      "null_median": 0.0,
+      "null_max": 6,
+      "null_p95": 2.0,
+      "p_one_sided_excess": 0.4012598740125987,
+      "bonferroni_significant": false,
+      "verdict": "chance-consistent"
+    },
+    "cell3_half": {
+      "observed_count": 0,
+      "observed_hit_positions": [],
+      "null_mean": 0.6499,
+      "null_median": 0.0,
+      "null_max": 6,
+      "null_p95": 2.0,
+      "p_one_sided_excess": 1.0,
+      "bonferroni_significant": false,
+      "verdict": "chance-consistent"
+    },
+    "cell4_offby1": {
+      "observed_count": 1,
+      "observed_hit_positions": [
+        54
+      ],
+      "null_mean": 2.6405,
+      "null_median": 2.0,
+      "null_max": 12,
+      "null_p95": 6.0,
+      "p_one_sided_excess": 0.9307069293070693,
+      "bonferroni_significant": false,
+      "verdict": "chance-consistent"
+    },
+    "cell5_coprimality": {
+      "observed_count": 7,
+      "observed_hit_positions": [
+        13,
+        43,
+        97,
+        101,
+        103,
+        107,
+        113
+      ],
+      "null_mean": 8.4479,
+      "null_median": 8.0,
+      "null_max": 17,
+      "null_p95": 12.0,
+      "p_one_sided_excess": 0.8245175482451755,
+      "bonferroni_significant": false,
+      "verdict": "chance-consistent"
+    },
+    "cell6_reversal": {
+      "observed_count": 0,
+      "observed_hit_positions": [],
+      "null_mean": 0.9824,
+      "null_median": 1.0,
+      "null_max": 6,
+      "null_p95": 3.0,
+      "p_one_sided_excess": 1.0,
+      "bonferroni_significant": false,
+      "verdict": "chance-consistent"
+    },
+    "cell7_linear_grid": {
+      "observed_count": 4,
+      "observed_hit_positions": [
+        25,
+        30,
+        32,
+        54
+      ],
+      "null_mean": 8.2545,
+      "null_median": 8.0,
+      "null_max": 20,
+      "null_p95": 13.0,
+      "p_one_sided_excess": 0.9729027097290271,
+      "bonferroni_significant": false,
+      "verdict": "chance-consistent"
+    },
+    "cell8_multiple": {
+      "observed_count": 6,
+      "observed_hit_positions": [
+        1,
+        2,
+        4,
+        5,
+        16,
+        30
+      ],
+      "null_mean": 4.8543,
+      "null_median": 5.0,
+      "null_max": 13,
+      "null_p95": 8.0,
+      "p_one_sided_excess": 0.3354664533546645,
+      "bonferroni_significant": false,
+      "verdict": "chance-consistent"
+    }
+  },
+  "n_cells_excess_over_chance_bonferroni": 0,
+  "descriptive_D1_sums": {
+    "sum_verse_counts": 6236,
+    "sum_positions_1_to_114": 6555,
+    "difference_pos_minus_vc": 319,
+    "factor_6236": {
+      "2": 2,
+      "1559": 1
+    },
+    "factor_6555": {
+      "3": 1,
+      "5": 1,
+      "19": 1,
+      "23": 1
+    },
+    "factor_319": {
+      "11": 1,
+      "29": 1
+    },
+    "note": "Sum invariants are fixed integers, not a distribution. Any relation among them is post-hoc; reported, never promoted (MW-7)."
+  },
+  "descriptive_D2_position_letter": {
+    "Q50_Qaf": "Q 50 is Sūrat Qāf; opens with the single letter qāf (abjad 100). Position 50 != 100; no verse-count link (Q 50 has 45 verses). Anecdote only.",
+    "Q68_Nun": "Q 68 al-Qalam opens with nūn (abjad 50); position 68 != 50. Anecdote only.",
+    "Q42_HM_ASQ": "Q 42 al-Shūrā opens ḤM ʿSQ (contains qāf); position 42, 53 verses. No arithmetic link.",
+    "note": "Name/letter coincidences cannot be shuffle-tested; capped at single-test alpha, never promoted."
+  },
+  "descriptive_D3_running_sum": {
+    "cumulative_at_pos1": 7,
+    "cumulative_at_pos2": 293,
+    "running_sum_equals_position_hits": [],
+    "note": "Running cumulative verse-count equals position only where it cannot meaningfully (pos 1: 7 != 1). No clean instance; descriptive only."
+  },
+  "verdict": "NULL — surah-position/verse-count arithmetic coincidences are chance-consistent"
+}
