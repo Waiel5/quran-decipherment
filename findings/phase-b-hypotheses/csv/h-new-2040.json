@@ -1,0 +1,1255 @@
+{
+  "finding_id": "h-new-2040-abjad-sweep",
+  "prereg_sha256": "68f40fafb5b13863002c7c36da2314a9d0eb94f5156d4fd7d28e5b6423776232",
+  "seed": 20260509,
+  "nperm": 10000,
+  "abjad_table_default": "mashriqi",
+  "class_A_famous_claims": {
+    "basmala": {
+      "text": "بسم الله الرحمن الرحيم",
+      "claimed": 786,
+      "mashriqi": 786,
+      "maghribi": 1026,
+      "matches_claim_mashriqi": true,
+      "matches_claim_maghribi": false
+    },
+    "allah": {
+      "text": "الله",
+      "claimed": 66,
+      "mashriqi": 66,
+      "maghribi": 66,
+      "matches_claim_mashriqi": true,
+      "matches_claim_maghribi": true
+    },
+    "muhammad": {
+      "text": "محمد",
+      "claimed": 92,
+      "mashriqi": 92,
+      "maghribi": 92,
+      "matches_claim_mashriqi": true,
+      "matches_claim_maghribi": true
+    }
+  },
+  "class_A_muqattaat": {
+    "alif-lam-mim": {
+      "letters": "الم",
+      "surahs": [
+        2,
+        3,
+        29,
+        30,
+        31,
+        32
+      ],
+      "mashriqi": 71,
+      "maghribi": 71,
+      "coincidence_hits": []
+    },
+    "alif-lam-mim-sad": {
+      "letters": "المص",
+      "surahs": [
+        7
+      ],
+      "mashriqi": 161,
+      "maghribi": 131,
+      "coincidence_hits": []
+    },
+    "alif-lam-ra": {
+      "letters": "الر",
+      "surahs": [
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "mashriqi": 231,
+      "maghribi": 231,
+      "coincidence_hits": []
+    },
+    "alif-lam-mim-ra": {
+      "letters": "المر",
+      "surahs": [
+        13
+      ],
+      "mashriqi": 271,
+      "maghribi": 271,
+      "coincidence_hits": []
+    },
+    "kaf-ha-ya-ayn-sad": {
+      "letters": "كهيعص",
+      "surahs": [
+        19
+      ],
+      "mashriqi": 195,
+      "maghribi": 165,
+      "coincidence_hits": []
+    },
+    "ta-ha": {
+      "letters": "طه",
+      "surahs": [
+        20
+      ],
+      "mashriqi": 14,
+      "maghribi": 14,
+      "coincidence_hits": []
+    },
+    "ta-sin-mim": {
+      "letters": "طسم",
+      "surahs": [
+        26,
+        28
+      ],
+      "mashriqi": 109,
+      "maghribi": 349,
+      "coincidence_hits": []
+    },
+    "ta-sin": {
+      "letters": "طس",
+      "surahs": [
+        27
+      ],
+      "mashriqi": 69,
+      "maghribi": 309,
+      "coincidence_hits": []
+    },
+    "ya-sin": {
+      "letters": "يس",
+      "surahs": [
+        36
+      ],
+      "mashriqi": 70,
+      "maghribi": 310,
+      "coincidence_hits": []
+    },
+    "sad": {
+      "letters": "ص",
+      "surahs": [
+        38
+      ],
+      "mashriqi": 90,
+      "maghribi": 60,
+      "coincidence_hits": []
+    },
+    "ha-mim": {
+      "letters": "حم",
+      "surahs": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "mashriqi": 48,
+      "maghribi": 48,
+      "coincidence_hits": []
+    },
+    "ha-mim-ayn-sin-qaf": {
+      "letters": "حمعسق",
+      "surahs": [
+        42
+      ],
+      "mashriqi": 278,
+      "maghribi": 518,
+      "coincidence_hits": []
+    },
+    "qaf": {
+      "letters": "ق",
+      "surahs": [
+        50
+      ],
+      "mashriqi": 100,
+      "maghribi": 100,
+      "coincidence_hits": []
+    },
+    "nun": {
+      "letters": "ن",
+      "surahs": [
+        68
+      ],
+      "mashriqi": 50,
+      "maghribi": 50,
+      "coincidence_hits": []
+    }
+  },
+  "class_B_systematic": {
+    "bonferroni_k": 7,
+    "alpha_corrected": 0.0071428571428571435,
+    "name_abjad_table": [
+      {
+        "id": 1,
+        "name": "الفاتحة",
+        "translit": "Al-Fatihah",
+        "verses": 7,
+        "abjad_mashriqi": 520,
+        "abjad_maghribi": 520,
+        "abjad_skip_carrier": 520
+      },
+      {
+        "id": 2,
+        "name": "البقرة",
+        "translit": "Al-Baqarah",
+        "verses": 286,
+        "abjad_mashriqi": 333,
+        "abjad_maghribi": 333,
+        "abjad_skip_carrier": 333
+      },
+      {
+        "id": 3,
+        "name": "آل عمران",
+        "translit": "Ali 'Imran",
+        "verses": 200,
+        "abjad_mashriqi": 392,
+        "abjad_maghribi": 392,
+        "abjad_skip_carrier": 391
+      },
+      {
+        "id": 4,
+        "name": "النساء",
+        "translit": "An-Nisa",
+        "verses": 176,
+        "abjad_mashriqi": 142,
+        "abjad_maghribi": 382,
+        "abjad_skip_carrier": 142
+      },
+      {
+        "id": 5,
+        "name": "المائدة",
+        "translit": "Al-Ma'idah",
+        "verses": 120,
+        "abjad_mashriqi": 86,
+        "abjad_maghribi": 86,
+        "abjad_skip_carrier": 76
+      },
+      {
+        "id": 6,
+        "name": "الأنعام",
+        "translit": "Al-An'am",
+        "verses": 165,
+        "abjad_mashriqi": 193,
+        "abjad_maghribi": 193,
+        "abjad_skip_carrier": 192
+      },
+      {
+        "id": 7,
+        "name": "الأعراف",
+        "translit": "Al-A'raf",
+        "verses": 206,
+        "abjad_mashriqi": 383,
+        "abjad_maghribi": 383,
+        "abjad_skip_carrier": 382
+      },
+      {
+        "id": 8,
+        "name": "الأنفال",
+        "translit": "Al-Anfal",
+        "verses": 75,
+        "abjad_mashriqi": 193,
+        "abjad_maghribi": 193,
+        "abjad_skip_carrier": 192
+      },
+      {
+        "id": 9,
+        "name": "التوبة",
+        "translit": "At-Tawbah",
+        "verses": 129,
+        "abjad_mashriqi": 439,
+        "abjad_maghribi": 439,
+        "abjad_skip_carrier": 439
+      },
+      {
+        "id": 10,
+        "name": "يونس",
+        "translit": "Yunus",
+        "verses": 109,
+        "abjad_mashriqi": 126,
+        "abjad_maghribi": 366,
+        "abjad_skip_carrier": 126
+      },
+      {
+        "id": 11,
+        "name": "هود",
+        "translit": "Hud",
+        "verses": 123,
+        "abjad_mashriqi": 15,
+        "abjad_maghribi": 15,
+        "abjad_skip_carrier": 15
+      },
+      {
+        "id": 12,
+        "name": "يوسف",
+        "translit": "Yusuf",
+        "verses": 111,
+        "abjad_mashriqi": 156,
+        "abjad_maghribi": 396,
+        "abjad_skip_carrier": 156
+      },
+      {
+        "id": 13,
+        "name": "الرعد",
+        "translit": "Ar-Ra'd",
+        "verses": 43,
+        "abjad_mashriqi": 305,
+        "abjad_maghribi": 305,
+        "abjad_skip_carrier": 305
+      },
+      {
+        "id": 14,
+        "name": "ابراهيم",
+        "translit": "Ibrahim",
+        "verses": 52,
+        "abjad_mashriqi": 259,
+        "abjad_maghribi": 259,
+        "abjad_skip_carrier": 259
+      },
+      {
+        "id": 15,
+        "name": "الحجر",
+        "translit": "Al-Hijr",
+        "verses": 99,
+        "abjad_mashriqi": 242,
+        "abjad_maghribi": 242,
+        "abjad_skip_carrier": 242
+      },
+      {
+        "id": 16,
+        "name": "النحل",
+        "translit": "An-Nahl",
+        "verses": 128,
+        "abjad_mashriqi": 119,
+        "abjad_maghribi": 119,
+        "abjad_skip_carrier": 119
+      },
+      {
+        "id": 17,
+        "name": "الإسراء",
+        "translit": "Al-Isra",
+        "verses": 111,
+        "abjad_mashriqi": 293,
+        "abjad_maghribi": 533,
+        "abjad_skip_carrier": 292
+      },
+      {
+        "id": 18,
+        "name": "الكهف",
+        "translit": "Al-Kahf",
+        "verses": 110,
+        "abjad_mashriqi": 136,
+        "abjad_maghribi": 136,
+        "abjad_skip_carrier": 136
+      },
+      {
+        "id": 19,
+        "name": "مريم",
+        "translit": "Maryam",
+        "verses": 98,
+        "abjad_mashriqi": 290,
+        "abjad_maghribi": 290,
+        "abjad_skip_carrier": 290
+      },
+      {
+        "id": 20,
+        "name": "طه",
+        "translit": "Taha",
+        "verses": 135,
+        "abjad_mashriqi": 14,
+        "abjad_maghribi": 14,
+        "abjad_skip_carrier": 14
+      },
+      {
+        "id": 21,
+        "name": "الأنبياء",
+        "translit": "Al-Anbya",
+        "verses": 112,
+        "abjad_mashriqi": 95,
+        "abjad_maghribi": 95,
+        "abjad_skip_carrier": 94
+      },
+      {
+        "id": 22,
+        "name": "الحج",
+        "translit": "Al-Hajj",
+        "verses": 78,
+        "abjad_mashriqi": 42,
+        "abjad_maghribi": 42,
+        "abjad_skip_carrier": 42
+      },
+      {
+        "id": 23,
+        "name": "المؤمنون",
+        "translit": "Al-Mu'minun",
+        "verses": 118,
+        "abjad_mashriqi": 223,
+        "abjad_maghribi": 223,
+        "abjad_skip_carrier": 217
+      },
+      {
+        "id": 24,
+        "name": "النور",
+        "translit": "An-Nur",
+        "verses": 64,
+        "abjad_mashriqi": 287,
+        "abjad_maghribi": 287,
+        "abjad_skip_carrier": 287
+      },
+      {
+        "id": 25,
+        "name": "الفرقان",
+        "translit": "Al-Furqan",
+        "verses": 77,
+        "abjad_mashriqi": 462,
+        "abjad_maghribi": 462,
+        "abjad_skip_carrier": 462
+      },
+      {
+        "id": 26,
+        "name": "الشعراء",
+        "translit": "Ash-Shu'ara",
+        "verses": 227,
+        "abjad_mashriqi": 602,
+        "abjad_maghribi": 1302,
+        "abjad_skip_carrier": 602
+      },
+      {
+        "id": 27,
+        "name": "النمل",
+        "translit": "An-Naml",
+        "verses": 93,
+        "abjad_mashriqi": 151,
+        "abjad_maghribi": 151,
+        "abjad_skip_carrier": 151
+      },
+      {
+        "id": 28,
+        "name": "القصص",
+        "translit": "Al-Qasas",
+        "verses": 88,
+        "abjad_mashriqi": 311,
+        "abjad_maghribi": 251,
+        "abjad_skip_carrier": 311
+      },
+      {
+        "id": 29,
+        "name": "العنكبوت",
+        "translit": "Al-'Ankabut",
+        "verses": 69,
+        "abjad_mashriqi": 579,
+        "abjad_maghribi": 579,
+        "abjad_skip_carrier": 579
+      },
+      {
+        "id": 30,
+        "name": "الروم",
+        "translit": "Ar-Rum",
+        "verses": 60,
+        "abjad_mashriqi": 277,
+        "abjad_maghribi": 277,
+        "abjad_skip_carrier": 277
+      },
+      {
+        "id": 31,
+        "name": "لقمان",
+        "translit": "Luqman",
+        "verses": 34,
+        "abjad_mashriqi": 221,
+        "abjad_maghribi": 221,
+        "abjad_skip_carrier": 221
+      },
+      {
+        "id": 32,
+        "name": "السجدة",
+        "translit": "As-Sajdah",
+        "verses": 30,
+        "abjad_mashriqi": 98,
+        "abjad_maghribi": 338,
+        "abjad_skip_carrier": 98
+      },
+      {
+        "id": 33,
+        "name": "الأحزاب",
+        "translit": "Al-Ahzab",
+        "verses": 73,
+        "abjad_mashriqi": 50,
+        "abjad_maghribi": 50,
+        "abjad_skip_carrier": 49
+      },
+      {
+        "id": 34,
+        "name": "سبإ",
+        "translit": "Saba",
+        "verses": 54,
+        "abjad_mashriqi": 63,
+        "abjad_maghribi": 303,
+        "abjad_skip_carrier": 62
+      },
+      {
+        "id": 35,
+        "name": "فاطر",
+        "translit": "Fatir",
+        "verses": 45,
+        "abjad_mashriqi": 290,
+        "abjad_maghribi": 290,
+        "abjad_skip_carrier": 290
+      },
+      {
+        "id": 36,
+        "name": "يس",
+        "translit": "Ya-Sin",
+        "verses": 83,
+        "abjad_mashriqi": 70,
+        "abjad_maghribi": 310,
+        "abjad_skip_carrier": 70
+      },
+      {
+        "id": 37,
+        "name": "الصافات",
+        "translit": "As-Saffat",
+        "verses": 182,
+        "abjad_mashriqi": 603,
+        "abjad_maghribi": 573,
+        "abjad_skip_carrier": 603
+      },
+      {
+        "id": 38,
+        "name": "ص",
+        "translit": "Sad",
+        "verses": 88,
+        "abjad_mashriqi": 90,
+        "abjad_maghribi": 60,
+        "abjad_skip_carrier": 90
+      },
+      {
+        "id": 39,
+        "name": "الزمر",
+        "translit": "Az-Zumar",
+        "verses": 75,
+        "abjad_mashriqi": 278,
+        "abjad_maghribi": 278,
+        "abjad_skip_carrier": 278
+      },
+      {
+        "id": 40,
+        "name": "غافر",
+        "translit": "Ghafir",
+        "verses": 85,
+        "abjad_mashriqi": 1281,
+        "abjad_maghribi": 1181,
+        "abjad_skip_carrier": 1281
+      },
+      {
+        "id": 41,
+        "name": "فصلت",
+        "translit": "Fussilat",
+        "verses": 54,
+        "abjad_mashriqi": 600,
+        "abjad_maghribi": 570,
+        "abjad_skip_carrier": 600
+      },
+      {
+        "id": 42,
+        "name": "الشورى",
+        "translit": "Ash-Shuraa",
+        "verses": 53,
+        "abjad_mashriqi": 537,
+        "abjad_maghribi": 1237,
+        "abjad_skip_carrier": 537
+      },
+      {
+        "id": 43,
+        "name": "الزخرف",
+        "translit": "Az-Zukhruf",
+        "verses": 89,
+        "abjad_mashriqi": 918,
+        "abjad_maghribi": 918,
+        "abjad_skip_carrier": 918
+      },
+      {
+        "id": 44,
+        "name": "الدخان",
+        "translit": "Ad-Dukhan",
+        "verses": 59,
+        "abjad_mashriqi": 686,
+        "abjad_maghribi": 686,
+        "abjad_skip_carrier": 686
+      },
+      {
+        "id": 45,
+        "name": "الجاثية",
+        "translit": "Al-Jathiyah",
+        "verses": 37,
+        "abjad_mashriqi": 545,
+        "abjad_maghribi": 545,
+        "abjad_skip_carrier": 545
+      },
+      {
+        "id": 46,
+        "name": "الأحقاف",
+        "translit": "Al-Ahqaf",
+        "verses": 35,
+        "abjad_mashriqi": 221,
+        "abjad_maghribi": 221,
+        "abjad_skip_carrier": 220
+      },
+      {
+        "id": 47,
+        "name": "محمد",
+        "translit": "Muhammad",
+        "verses": 38,
+        "abjad_mashriqi": 92,
+        "abjad_maghribi": 92,
+        "abjad_skip_carrier": 92
+      },
+      {
+        "id": 48,
+        "name": "الفتح",
+        "translit": "Al-Fath",
+        "verses": 29,
+        "abjad_mashriqi": 519,
+        "abjad_maghribi": 519,
+        "abjad_skip_carrier": 519
+      },
+      {
+        "id": 49,
+        "name": "الحجرات",
+        "translit": "Al-Hujurat",
+        "verses": 18,
+        "abjad_mashriqi": 643,
+        "abjad_maghribi": 643,
+        "abjad_skip_carrier": 643
+      },
+      {
+        "id": 50,
+        "name": "ق",
+        "translit": "Qaf",
+        "verses": 45,
+        "abjad_mashriqi": 100,
+        "abjad_maghribi": 100,
+        "abjad_skip_carrier": 100
+      },
+      {
+        "id": 51,
+        "name": "الذاريات",
+        "translit": "Adh-Dhariyat",
+        "verses": 60,
+        "abjad_mashriqi": 1343,
+        "abjad_maghribi": 1343,
+        "abjad_skip_carrier": 1343
+      },
+      {
+        "id": 52,
+        "name": "الطور",
+        "translit": "At-Tur",
+        "verses": 49,
+        "abjad_mashriqi": 246,
+        "abjad_maghribi": 246,
+        "abjad_skip_carrier": 246
+      },
+      {
+        "id": 53,
+        "name": "النجم",
+        "translit": "An-Najm",
+        "verses": 62,
+        "abjad_mashriqi": 124,
+        "abjad_maghribi": 124,
+        "abjad_skip_carrier": 124
+      },
+      {
+        "id": 54,
+        "name": "القمر",
+        "translit": "Al-Qamar",
+        "verses": 55,
+        "abjad_mashriqi": 371,
+        "abjad_maghribi": 371,
+        "abjad_skip_carrier": 371
+      },
+      {
+        "id": 55,
+        "name": "الرحمن",
+        "translit": "Ar-Rahman",
+        "verses": 78,
+        "abjad_mashriqi": 329,
+        "abjad_maghribi": 329,
+        "abjad_skip_carrier": 329
+      },
+      {
+        "id": 56,
+        "name": "الواقعة",
+        "translit": "Al-Waqi'ah",
+        "verses": 96,
+        "abjad_mashriqi": 208,
+        "abjad_maghribi": 208,
+        "abjad_skip_carrier": 208
+      },
+      {
+        "id": 57,
+        "name": "الحديد",
+        "translit": "Al-Hadid",
+        "verses": 29,
+        "abjad_mashriqi": 57,
+        "abjad_maghribi": 57,
+        "abjad_skip_carrier": 57
+      },
+      {
+        "id": 58,
+        "name": "المجادلة",
+        "translit": "Al-Mujadila",
+        "verses": 22,
+        "abjad_mashriqi": 109,
+        "abjad_maghribi": 109,
+        "abjad_skip_carrier": 109
+      },
+      {
+        "id": 59,
+        "name": "الحشر",
+        "translit": "Al-Hashr",
+        "verses": 24,
+        "abjad_mashriqi": 539,
+        "abjad_maghribi": 1239,
+        "abjad_skip_carrier": 539
+      },
+      {
+        "id": 60,
+        "name": "الممتحنة",
+        "translit": "Al-Mumtahanah",
+        "verses": 13,
+        "abjad_mashriqi": 569,
+        "abjad_maghribi": 569,
+        "abjad_skip_carrier": 569
+      },
+      {
+        "id": 61,
+        "name": "الصف",
+        "translit": "As-Saf",
+        "verses": 14,
+        "abjad_mashriqi": 201,
+        "abjad_maghribi": 171,
+        "abjad_skip_carrier": 201
+      },
+      {
+        "id": 62,
+        "name": "الجمعة",
+        "translit": "Al-Jumu'ah",
+        "verses": 11,
+        "abjad_mashriqi": 144,
+        "abjad_maghribi": 144,
+        "abjad_skip_carrier": 144
+      },
+      {
+        "id": 63,
+        "name": "المنافقون",
+        "translit": "Al-Munafiqun",
+        "verses": 11,
+        "abjad_mashriqi": 358,
+        "abjad_maghribi": 358,
+        "abjad_skip_carrier": 358
+      },
+      {
+        "id": 64,
+        "name": "التغابن",
+        "translit": "At-Taghabun",
+        "verses": 18,
+        "abjad_mashriqi": 1484,
+        "abjad_maghribi": 1384,
+        "abjad_skip_carrier": 1484
+      },
+      {
+        "id": 65,
+        "name": "الطلاق",
+        "translit": "At-Talaq",
+        "verses": 12,
+        "abjad_mashriqi": 171,
+        "abjad_maghribi": 171,
+        "abjad_skip_carrier": 171
+      },
+      {
+        "id": 66,
+        "name": "التحريم",
+        "translit": "At-Tahrim",
+        "verses": 12,
+        "abjad_mashriqi": 689,
+        "abjad_maghribi": 689,
+        "abjad_skip_carrier": 689
+      },
+      {
+        "id": 67,
+        "name": "الملك",
+        "translit": "Al-Mulk",
+        "verses": 30,
+        "abjad_mashriqi": 121,
+        "abjad_maghribi": 121,
+        "abjad_skip_carrier": 121
+      },
+      {
+        "id": 68,
+        "name": "القلم",
+        "translit": "Al-Qalam",
+        "verses": 52,
+        "abjad_mashriqi": 201,
+        "abjad_maghribi": 201,
+        "abjad_skip_carrier": 201
+      },
+      {
+        "id": 69,
+        "name": "الحاقة",
+        "translit": "Al-Haqqah",
+        "verses": 52,
+        "abjad_mashriqi": 140,
+        "abjad_maghribi": 140,
+        "abjad_skip_carrier": 140
+      },
+      {
+        "id": 70,
+        "name": "المعارج",
+        "translit": "Al-Ma'arij",
+        "verses": 44,
+        "abjad_mashriqi": 345,
+        "abjad_maghribi": 345,
+        "abjad_skip_carrier": 345
+      },
+      {
+        "id": 71,
+        "name": "نوح",
+        "translit": "Nuh",
+        "verses": 28,
+        "abjad_mashriqi": 64,
+        "abjad_maghribi": 64,
+        "abjad_skip_carrier": 64
+      },
+      {
+        "id": 72,
+        "name": "الجن",
+        "translit": "Al-Jinn",
+        "verses": 28,
+        "abjad_mashriqi": 84,
+        "abjad_maghribi": 84,
+        "abjad_skip_carrier": 84
+      },
+      {
+        "id": 73,
+        "name": "المزمل",
+        "translit": "Al-Muzzammil",
+        "verses": 20,
+        "abjad_mashriqi": 148,
+        "abjad_maghribi": 148,
+        "abjad_skip_carrier": 148
+      },
+      {
+        "id": 74,
+        "name": "المدثر",
+        "translit": "Al-Muddaththir",
+        "verses": 56,
+        "abjad_mashriqi": 775,
+        "abjad_maghribi": 775,
+        "abjad_skip_carrier": 775
+      },
+      {
+        "id": 75,
+        "name": "القيامة",
+        "translit": "Al-Qiyamah",
+        "verses": 40,
+        "abjad_mashriqi": 182,
+        "abjad_maghribi": 182,
+        "abjad_skip_carrier": 182
+      },
+      {
+        "id": 76,
+        "name": "الانسان",
+        "translit": "Al-Insan",
+        "verses": 31,
+        "abjad_mashriqi": 193,
+        "abjad_maghribi": 433,
+        "abjad_skip_carrier": 193
+      },
+      {
+        "id": 77,
+        "name": "المرسلات",
+        "translit": "Al-Mursalat",
+        "verses": 50,
+        "abjad_mashriqi": 762,
+        "abjad_maghribi": 1002,
+        "abjad_skip_carrier": 762
+      },
+      {
+        "id": 78,
+        "name": "النبإ",
+        "translit": "An-Naba",
+        "verses": 40,
+        "abjad_mashriqi": 84,
+        "abjad_maghribi": 84,
+        "abjad_skip_carrier": 83
+      },
+      {
+        "id": 79,
+        "name": "النازعات",
+        "translit": "An-Nazi'at",
+        "verses": 46,
+        "abjad_mashriqi": 560,
+        "abjad_maghribi": 560,
+        "abjad_skip_carrier": 560
+      },
+      {
+        "id": 80,
+        "name": "عبس",
+        "translit": "'Abasa",
+        "verses": 42,
+        "abjad_mashriqi": 132,
+        "abjad_maghribi": 372,
+        "abjad_skip_carrier": 132
+      },
+      {
+        "id": 81,
+        "name": "التكوير",
+        "translit": "At-Takwir",
+        "verses": 29,
+        "abjad_mashriqi": 667,
+        "abjad_maghribi": 667,
+        "abjad_skip_carrier": 667
+      },
+      {
+        "id": 82,
+        "name": "الإنفطار",
+        "translit": "Al-Infitar",
+        "verses": 19,
+        "abjad_mashriqi": 372,
+        "abjad_maghribi": 372,
+        "abjad_skip_carrier": 371
+      },
+      {
+        "id": 83,
+        "name": "المطففين",
+        "translit": "Al-Mutaffifin",
+        "verses": 36,
+        "abjad_mashriqi": 300,
+        "abjad_maghribi": 300,
+        "abjad_skip_carrier": 300
+      },
+      {
+        "id": 84,
+        "name": "الإنشقاق",
+        "translit": "Al-Inshiqaq",
+        "verses": 25,
+        "abjad_mashriqi": 583,
+        "abjad_maghribi": 1283,
+        "abjad_skip_carrier": 582
+      },
+      {
+        "id": 85,
+        "name": "البروج",
+        "translit": "Al-Buruj",
+        "verses": 22,
+        "abjad_mashriqi": 242,
+        "abjad_maghribi": 242,
+        "abjad_skip_carrier": 242
+      },
+      {
+        "id": 86,
+        "name": "الطارق",
+        "translit": "At-Tariq",
+        "verses": 17,
+        "abjad_mashriqi": 341,
+        "abjad_maghribi": 341,
+        "abjad_skip_carrier": 341
+      },
+      {
+        "id": 87,
+        "name": "الأعلى",
+        "translit": "Al-A'la",
+        "verses": 19,
+        "abjad_mashriqi": 132,
+        "abjad_maghribi": 132,
+        "abjad_skip_carrier": 131
+      },
+      {
+        "id": 88,
+        "name": "الغاشية",
+        "translit": "Al-Ghashiyah",
+        "verses": 26,
+        "abjad_mashriqi": 1342,
+        "abjad_maghribi": 1942,
+        "abjad_skip_carrier": 1342
+      },
+      {
+        "id": 89,
+        "name": "الفجر",
+        "translit": "Al-Fajr",
+        "verses": 30,
+        "abjad_mashriqi": 314,
+        "abjad_maghribi": 314,
+        "abjad_skip_carrier": 314
+      },
+      {
+        "id": 90,
+        "name": "البلد",
+        "translit": "Al-Balad",
+        "verses": 20,
+        "abjad_mashriqi": 67,
+        "abjad_maghribi": 67,
+        "abjad_skip_carrier": 67
+      },
+      {
+        "id": 91,
+        "name": "الشمس",
+        "translit": "Ash-Shams",
+        "verses": 15,
+        "abjad_mashriqi": 431,
+        "abjad_maghribi": 1371,
+        "abjad_skip_carrier": 431
+      },
+      {
+        "id": 92,
+        "name": "الليل",
+        "translit": "Al-Layl",
+        "verses": 21,
+        "abjad_mashriqi": 101,
+        "abjad_maghribi": 101,
+        "abjad_skip_carrier": 101
+      },
+      {
+        "id": 93,
+        "name": "الضحى",
+        "translit": "Ad-Duhaa",
+        "verses": 11,
+        "abjad_mashriqi": 839,
+        "abjad_maghribi": 129,
+        "abjad_skip_carrier": 839
+      },
+      {
+        "id": 94,
+        "name": "الشرح",
+        "translit": "Ash-Sharh",
+        "verses": 8,
+        "abjad_mashriqi": 539,
+        "abjad_maghribi": 1239,
+        "abjad_skip_carrier": 539
+      },
+      {
+        "id": 95,
+        "name": "التين",
+        "translit": "At-Tin",
+        "verses": 8,
+        "abjad_mashriqi": 491,
+        "abjad_maghribi": 491,
+        "abjad_skip_carrier": 491
+      },
+      {
+        "id": 96,
+        "name": "العلق",
+        "translit": "Al-'Alaq",
+        "verses": 19,
+        "abjad_mashriqi": 231,
+        "abjad_maghribi": 231,
+        "abjad_skip_carrier": 231
+      },
+      {
+        "id": 97,
+        "name": "القدر",
+        "translit": "Al-Qadr",
+        "verses": 5,
+        "abjad_mashriqi": 335,
+        "abjad_maghribi": 335,
+        "abjad_skip_carrier": 335
+      },
+      {
+        "id": 98,
+        "name": "البينة",
+        "translit": "Al-Bayyinah",
+        "verses": 8,
+        "abjad_mashriqi": 93,
+        "abjad_maghribi": 93,
+        "abjad_skip_carrier": 93
+      },
+      {
+        "id": 99,
+        "name": "الزلزلة",
+        "translit": "Az-Zalzalah",
+        "verses": 8,
+        "abjad_mashriqi": 105,
+        "abjad_maghribi": 105,
+        "abjad_skip_carrier": 105
+      },
+      {
+        "id": 100,
+        "name": "العاديات",
+        "translit": "Al-'Adiyat",
+        "verses": 11,
+        "abjad_mashriqi": 517,
+        "abjad_maghribi": 517,
+        "abjad_skip_carrier": 517
+      },
+      {
+        "id": 101,
+        "name": "القارعة",
+        "translit": "Al-Qari'ah",
+        "verses": 11,
+        "abjad_mashriqi": 402,
+        "abjad_maghribi": 402,
+        "abjad_skip_carrier": 402
+      },
+      {
+        "id": 102,
+        "name": "التكاثر",
+        "translit": "At-Takathur",
+        "verses": 8,
+        "abjad_mashriqi": 1152,
+        "abjad_maghribi": 1152,
+        "abjad_skip_carrier": 1152
+      },
+      {
+        "id": 103,
+        "name": "العصر",
+        "translit": "Al-'Asr",
+        "verses": 3,
+        "abjad_mashriqi": 391,
+        "abjad_maghribi": 361,
+        "abjad_skip_carrier": 391
+      },
+      {
+        "id": 104,
+        "name": "الهمزة",
+        "translit": "Al-Humazah",
+        "verses": 9,
+        "abjad_mashriqi": 83,
+        "abjad_maghribi": 83,
+        "abjad_skip_carrier": 83
+      },
+      {
+        "id": 105,
+        "name": "الفيل",
+        "translit": "Al-Fil",
+        "verses": 5,
+        "abjad_mashriqi": 151,
+        "abjad_maghribi": 151,
+        "abjad_skip_carrier": 151
+      },
+      {
+        "id": 106,
+        "name": "قريش",
+        "translit": "Quraysh",
+        "verses": 4,
+        "abjad_mashriqi": 610,
+        "abjad_maghribi": 1310,
+        "abjad_skip_carrier": 610
+      },
+      {
+        "id": 107,
+        "name": "الماعون",
+        "translit": "Al-Ma'un",
+        "verses": 7,
+        "abjad_mashriqi": 198,
+        "abjad_maghribi": 198,
+        "abjad_skip_carrier": 198
+      },
+      {
+        "id": 108,
+        "name": "الكوثر",
+        "translit": "Al-Kawthar",
+        "verses": 3,
+        "abjad_mashriqi": 757,
+        "abjad_maghribi": 757,
+        "abjad_skip_carrier": 757
+      },
+      {
+        "id": 109,
+        "name": "الكافرون",
+        "translit": "Al-Kafirun",
+        "verses": 6,
+        "abjad_mashriqi": 388,
+        "abjad_maghribi": 388,
+        "abjad_skip_carrier": 388
+      },
+      {
+        "id": 110,
+        "name": "النصر",
+        "translit": "An-Nasr",
+        "verses": 3,
+        "abjad_mashriqi": 371,
+        "abjad_maghribi": 341,
+        "abjad_skip_carrier": 371
+      },
+      {
+        "id": 111,
+        "name": "المسد",
+        "translit": "Al-Masad",
+        "verses": 5,
+        "abjad_mashriqi": 135,
+        "abjad_maghribi": 375,
+        "abjad_skip_carrier": 135
+      },
+      {
+        "id": 112,
+        "name": "الإخلاص",
+        "translit": "Al-Ikhlas",
+        "verses": 4,
+        "abjad_mashriqi": 753,
+        "abjad_maghribi": 723,
+        "abjad_skip_carrier": 752
+      },
+      {
+        "id": 113,
+        "name": "الفلق",
+        "translit": "Al-Falaq",
+        "verses": 5,
+        "abjad_mashriqi": 241,
+        "abjad_maghribi": 241,
+        "abjad_skip_carrier": 241
+      },
+      {
+        "id": 114,
+        "name": "الناس",
+        "translit": "An-Nas",
+        "verses": 6,
+        "abjad_mashriqi": 142,
+        "abjad_maghribi": 382,
+        "abjad_skip_carrier": 142
+      }
+    ],
+    "H-B1_name_vs_position": {
+      "pearson_r": 0.1589793385127086,
+      "perm_p": 0.0902909709029097,
+      "sig_at_bonferroni": false
+    },
+    "H-B2_name_vs_versecount": {
+      "pearson_r": -0.09777322187229097,
+      "perm_p": 0.2957704229577042,
+      "sig_at_bonferroni": false
+    },
+    "H-B3_name_eq_position": {
+      "observed_exact_matches": 1,
+      "perm_p": 0.17198280171982802,
+      "sig_at_bonferroni": false,
+      "matching_surahs": [
+        {
+          "id": 57,
+          "name": "الحديد",
+          "abjad": 57
+        }
+      ]
+    },
+    "H-B4_name_eq_versecount": {
+      "observed_exact_matches": 0,
+      "perm_p": 1.0,
+      "sig_at_bonferroni": false,
+      "matching_surahs": []
+    },
+    "H-B5_verse_eq_index": {
+      "target_a_within_surah_verse": {
+        "matches": 0,
+        "perm_p": 1.0,
+        "examples": []
+      },
+      "target_b_surah1000plusverse": {
+        "matches": 0,
+        "perm_p": 1.0,
+        "examples": []
+      },
+      "target_c_global_index": {
+        "matches": 0,
+        "perm_p": 1.0,
+        "examples": []
+      }
+    },
+    "MW6_instrument_control_random_position_r": 0.17052544759001548
+  }
+}
