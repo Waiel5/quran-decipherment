@@ -1,0 +1,76 @@
+{
+  "test_id": "Q003-F-01",
+  "prereg_sha": "40f796b7f07db6196fd397180b449e780382ba154684033fb8ecb2329f80c4d7",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 STEM-root, Fisher-Rao, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "seam_median": 0.06210600000005684,
+  "arm_A": {
+    "block_2345_internal_seams": [
+      0.01645700000001682,
+      -0.046619999999990114,
+      -0.06571199999984856
+    ],
+    "block_2345_mean_internal_seam": -0.03195833333327395,
+    "rank_among_111_blocks_ascending": 1,
+    "smoothest_6_blocks": [
+      [
+        2,
+        -0.031958
+      ],
+      [
+        4,
+        -0.026956
+      ],
+      [
+        3,
+        -0.02332
+      ],
+      [
+        91,
+        -0.013799
+      ],
+      [
+        84,
+        -0.00353
+      ],
+      [
+        109,
+        0.002815
+      ]
+    ],
+    "A_H1_rank_is_1": true,
+    "seam_Q2Q3": 0.01645700000001682,
+    "seam_Q3Q4": -0.046619999999990114,
+    "A_H2_both_seams_le_median": true,
+    "verdict": "CONFIRMED"
+  },
+  "arm_B": {
+    "delta_pct_X3": -15.280000000000001,
+    "classification_X3": "COHESION_ANCHOR",
+    "window": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "d_W": 0.9154000952380953,
+    "d_W_minus_X": 0.9462424666666667,
+    "B_H1_cohesion_anchor": true,
+    "verdict": "CONFIRMED"
+  },
+  "arm_C": {
+    "obs_block_mean": -0.03195833333327395,
+    "null_min_mean": -0.01682933293333625,
+    "null_min_std": 0.0128864782920778,
+    "z": -1.1740213312770278,
+    "p_perm": 0.12318768123187682,
+    "n_le": 1231,
+    "alpha": 0.05,
+    "C_H1_pass": false,
+    "verdict": "NULL"
+  }
+}

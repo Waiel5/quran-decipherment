@@ -1,0 +1,90 @@
+{
+  "test_id": "Q004-F-06",
+  "prereg_sha": "47eec58b703727e0acddd9b61bb60dac36b610d3850ebdcb08292e99af55cec6",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(min-tashkeel rhyme, orthographic-token, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "arm_A": {
+    "tiwal_roster": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "tiwal_dominant_letters": {
+      "2": "ن",
+      "3": "ن",
+      "4": "ا",
+      "5": "ن",
+      "6": "ن",
+      "7": "ن",
+      "9": "ن"
+    },
+    "alif_members": [
+      4
+    ],
+    "A_H1_Q4_unique_alif": true,
+    "others_all_nun": true,
+    "alt_roster": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "alt_roster_letters": {
+      "2": "ن",
+      "3": "ن",
+      "4": "ا",
+      "5": "ن",
+      "6": "ن",
+      "7": "ن",
+      "8": "ن"
+    },
+    "alt_roster_alif_members": [
+      4
+    ],
+    "verdict": "CONFIRMED"
+  },
+  "arm_B": {
+    "sig_A_Q4": -3.146255850534705,
+    "sig_A_rank_desc": 113,
+    "rhyme_entropy_nats_Q4": 0.19889267467354996,
+    "z_rhyme_entropy_Q4": -1.0338592901075596,
+    "B_H1_pass": true,
+    "verdict": "CONFIRMED"
+  },
+  "arm_C": {
+    "frac_Q4": 0.9602272727272727,
+    "top_letter_Q4": "ا",
+    "n_verses_Q4": 176,
+    "pool_size": 17,
+    "null_mean": 0.811217595632449,
+    "null_std": 0.1479923904950137,
+    "z": 1.006873911532933,
+    "p_perm": 0.17838216178382163,
+    "n_ge": 1783,
+    "alpha": 0.05,
+    "long_surahs_exceeding_Q4": [
+      [
+        17,
+        0.990990990990991
+      ],
+      [
+        18,
+        0.990909090909091
+      ],
+      [
+        23,
+        0.9661016949152542
+      ]
+    ],
+    "C_H1_pass": false,
+    "verdict": "NULL/DIRECTIONAL (notable-not-extreme)"
+  }
+}
