@@ -1,0 +1,367 @@
+{
+  "finding_id": "H-NEW-2000",
+  "seed": 20260509,
+  "prereg_sha256": "0474c9986636fe2543f7a9ce3aff4d1c77e82bbf2108648c9bb2b824798b3789",
+  "rules": {
+    "R1": "strict-al-form (definite surface lexeme, substring no-tashkeel)",
+    "R2": "all-morphological-forms (surface regex, homonyms documented)",
+    "R3": "QAC-lemma (Quranic Arabic Corpus v0.4 STEM tokens by LEM)"
+  },
+  "raw_counts": {
+    "claim1_dunya_akhira": {
+      "R1_aldunya": 115,
+      "R1_alakhira": 112,
+      "R3_dunya_lemma": 115,
+      "R3_akhira_lemma_Axir": 155,
+      "R3_akhar_lemma": 70,
+      "R3_akhira_strict": 155,
+      "R2_dunya_allforms": 115,
+      "R2_akhira_allforms": 115
+    },
+    "claim2_malaika_shayatin": {
+      "R3_malak_lemma_total": 88,
+      "R3_shaytan_lemma_total": 88,
+      "malak_number": {
+        "singular": 13,
+        "plural": 73,
+        "dual": 2,
+        "total": 88
+      },
+      "shaytan_number": {
+        "singular": 70,
+        "plural": 18,
+        "dual": 0,
+        "total": 88
+      }
+    },
+    "claim3_hayat_mawt": {
+      "R3_hayat_noun_lemma": 76,
+      "R3_mawt_noun_lemma": 50,
+      "R3_root_Hyy_total": 184,
+      "R3_root_mwt_total": 165,
+      "Hyy_lemma_breakdown": {
+        "yasotaHoYi.^": 9,
+        ">aHoyaA": 51,
+        "Hayaw`p": 76,
+        "Hay~": 24,
+        "Hay~a": 4,
+        "taHiy~ap": 6,
+        "m~aHoyaA": 2,
+        "HaY~a": 7,
+        "Hay~ap": 1,
+        "{sotiHoyaA^'": 1,
+        "HayawaAn": 1,
+        "muHoY": 2
+      },
+      "mwt_lemma_breakdown": {
+        "mawot": 50,
+        "m~ay~it": 38,
+        ">amaAta": 21,
+        "m~aAta": 39,
+        "mayotap": 6,
+        "m~ayot": 5,
+        "mamaAt": 3,
+        "mawotat": 3
+      },
+      "R1_alhayat": 67,
+      "R1_almawt": 53
+    },
+    "claim4_calendar": {
+      "shahr_lemma_total": 21,
+      "shahr_singular": 12,
+      "shahr_plural": 7,
+      "shahr_dual": 2,
+      "shahr_detail": [
+        {
+          "loc": "(2:185:1:1)",
+          "form": "$ahoru",
+          "cat": "singular"
+        },
+        {
+          "loc": "(2:185:16:2)",
+          "form": "$~ahora",
+          "cat": "singular"
+        },
+        {
+          "loc": "(2:194:1:2)",
+          "form": "$~ahoru",
+          "cat": "singular"
+        },
+        {
+          "loc": "(2:194:3:3)",
+          "form": "$~ahori",
+          "cat": "singular"
+        },
+        {
+          "loc": "(2:197:2:1)",
+          "form": ">a$ohurN",
+          "cat": "plural"
+        },
+        {
+          "loc": "(2:217:3:2)",
+          "form": "$~ahori",
+          "cat": "singular"
+        },
+        {
+          "loc": "(2:226:7:1)",
+          "form": ">a$ohurK",
+          "cat": "plural"
+        },
+        {
+          "loc": "(2:234:9:1)",
+          "form": ">a$ohurK",
+          "cat": "plural"
+        },
+        {
+          "loc": "(4:92:52:1)",
+          "form": "$ahorayoni",
+          "cat": "dual"
+        },
+        {
+          "loc": "(5:2:9:2)",
+          "form": "$~ahora",
+          "cat": "singular"
+        },
+        {
+          "loc": "(5:97:8:3)",
+          "form": "$~ahora",
+          "cat": "singular"
+        },
+        {
+          "loc": "(9:2:5:1)",
+          "form": ">a$ohurK",
+          "cat": "plural"
+        },
+        {
+          "loc": "(9:5:3:2)",
+          "form": ">a$ohuru",
+          "cat": "plural"
+        },
+        {
+          "loc": "(9:36:3:2)",
+          "form": "$~uhuwri",
+          "cat": "plural"
+        },
+        {
+          "loc": "(9:36:8:1)",
+          "form": "$ahorFA",
+          "cat": "singular"
+        },
+        {
+          "loc": "(34:12:4:1)",
+          "form": "$ahorN",
+          "cat": "singular"
+        },
+        {
+          "loc": "(34:12:6:1)",
+          "form": "$ahorN",
+          "cat": "singular"
+        },
+        {
+          "loc": "(46:15:13:1)",
+          "form": "$ahorFA",
+          "cat": "singular"
+        },
+        {
+          "loc": "(58:4:5:1)",
+          "form": "$ahorayoni",
+          "cat": "dual"
+        },
+        {
+          "loc": "(65:4:11:1)",
+          "form": ">a$ohurK",
+          "cat": "plural"
+        },
+        {
+          "loc": "(97:3:6:1)",
+          "form": "$ahorK",
+          "cat": "singular"
+        }
+      ],
+      "yawm_lemma_total": 405,
+      "yawm_singular": 375,
+      "yawm_plural_ayyam": 27,
+      "yawm_dual_yawmayn": 3,
+      "surf_yawm_token_exact": 339,
+      "surf_ayyam": 28
+    },
+    "claim5_rajul_maraa": {
+      "R3_rajul_lemma": 29,
+      "R3_imraa_lemma": 26,
+      "R3_rijal_lemma": 28,
+      "R3_nisa_lemma": 59,
+      "R1_alrajul": 0,
+      "R1_almaraa": 0
+    },
+    "claim6_iblis_refuge": {
+      "iblis_count": 11,
+      "iblis_locs": [
+        "(2:34:8:1)",
+        "(7:11:12:1)",
+        "(15:31:2:1)",
+        "(15:32:2:2)",
+        "(17:61:8:1)",
+        "(18:50:8:1)",
+        "(20:116:8:1)",
+        "(26:95:2:1)",
+        "(34:20:4:1)",
+        "(38:74:2:1)",
+        "(38:75:2:2)"
+      ],
+      "refuge_root_total": 17,
+      "refuge_verbs_total": 15,
+      "refuge_verb_lemma_breakdown": {
+        "Eu*o": 10,
+        ">uEiy*u": 1,
+        "{sotaEi*o": 4
+      },
+      "refuge_verb_locs": [
+        "(2:67:15:1)",
+        "(3:36:19:1)",
+        "(7:200:6:2)",
+        "(11:47:4:1)",
+        "(16:98:4:2)",
+        "(19:18:3:1)",
+        "(23:97:3:1)",
+        "(23:98:1:2)",
+        "(40:27:4:1)",
+        "(40:56:18:2)",
+        "(41:36:6:2)",
+        "(44:20:2:1)",
+        "(72:6:6:1)",
+        "(113:1:2:1)",
+        "(114:1:2:1)"
+      ],
+      "refuge_aoudhu_only": 10
+    },
+    "claim7_singular_angel_devil": {
+      "malak_singular": 13,
+      "malak_plural": 73,
+      "shaytan_singular": 70,
+      "shaytan_plural": 18
+    },
+    "claim8_salihat_sayyiat": {
+      "R3_salihat_lemma": 62,
+      "R3_sayyiat_lemma": 36,
+      "R3_sayyia_sing_lemma": 22,
+      "R3_hasanat_root_comp": 194
+    },
+    "claim9_rasul": {
+      "R3_rasul_lemma": 332,
+      "R3_mursal_lemma": 35,
+      "R3_nabiy_root_comp": 160
+    },
+    "claim10_sea_land": {
+      "R3_bahr_lemma": 41,
+      "R3_barr_land_lemma": 22,
+      "R3_birr_lemma": 8,
+      "R3_tabarru_lemma": 2,
+      "R3_root_brr_total": 32,
+      "R3_ard_lemma": 461,
+      "water_pct_strict": 65.08,
+      "claimed_water_pct": 71.11
+    }
+  },
+  "verdicts": {
+    "claim1": {
+      "dunya_R1": 115,
+      "akhira_R1": 112,
+      "dunya_R2_allforms": 115,
+      "akhira_R2_allforms": 115,
+      "dunya_R3_lemma": 115,
+      "akhira_R3_lemma_Axir": 155,
+      "balance_R1": false,
+      "balance_R2": true,
+      "balance_R3": false,
+      "verdict": "RULES-FRAGILE",
+      "note": "dunyā=115 EXACTLY (always bare-definite الدنيا, single form). ākhira balances at 115 ONLY under R2 (eschatological noun in ALL clitic forms الآخرة/بالآخرة/والآخرة/للآخرة...) — breaks under R1 strict-definite (112) and R3 QAC-lemma A^xir (155, includes adjectival ākhir). Balance real but rule-dependent."
+    },
+    "claim2": {
+      "malak_lemma_total": 88,
+      "shaytan_lemma_total": 88,
+      "malaika_plural": 73,
+      "shayatin_plural": 18,
+      "lemma_total_balances": true,
+      "plural_balances": false,
+      "verdict": "RULES-FRAGILE",
+      "note": "Whole-lemma 88=88 balances; but gloss 'angels/devils' is plural, and plural malāʾika=73 vs shayāṭīn=18 do NOT balance. Balance is conflation artifact."
+    },
+    "claim7": {
+      "malak_singular": 13,
+      "shaytan_singular": 70,
+      "verdict": "DESCRIPTIVE",
+      "note": "Singulars do NOT balance (angel sing=13 vs devil sing=70); inverse morphology vs the plural."
+    },
+    "claim3": {
+      "hayat_noun": 76,
+      "mawt_noun": 50,
+      "root_Hyy": 184,
+      "root_mwt": 165,
+      "noun_balances": false,
+      "noun_hits_145": false,
+      "root_balances": false,
+      "verdict": "FALSIFIED",
+      "note": "neither noun lemma nor whole-root totals balance or hit 145; ḥayāt-noun=76, mawt-noun=50; root totals 184 vs 165."
+    },
+    "claim4": {
+      "shahr_singular": 12,
+      "claimed_shahr": 12,
+      "yawm_singular": 375,
+      "claimed_yawm": 365,
+      "ayyam_dual_plural": 30,
+      "claimed_ayyam": 30,
+      "shahr_hits_12": true,
+      "yawm_hits_365": false,
+      "ayyam_hits_30": true,
+      "verdict": "RULES-FRAGILE",
+      "note": "2/3 calendar sub-targets hit exactly."
+    },
+    "claim5": {
+      "rajul_lemma": 29,
+      "imraa_lemma": 26,
+      "claimed": 24,
+      "balances": false,
+      "both_hit_24": false,
+      "verdict": "FALSIFIED",
+      "note": "rajul=29, imraʾa=26; neither equals claimed 24; not balanced."
+    },
+    "claim6": {
+      "iblis": 11,
+      "refuge_verbs_all": 15,
+      "refuge_root_total": 17,
+      "refuge_form1_aoudhu": 10,
+      "refuge_form4_uidhu": 1,
+      "refuge_form10_istaidh": 4,
+      "refuge_form1_plus_form4": 11,
+      "iblis_is_11": true,
+      "verdict": "RULES-FRAGILE",
+      "note": "Iblīs PN=11 (EXACT, robust). Refuge verbs do NOT have a unique natural total: form-1 aʿūdhu=10, +form-4 uʿīdhu=11, all-verbs=15, all-root=17. The 11 target is recoverable ONLY by the form-1+form-4 subset (10+1), excluding the 4 form-10 istaʿidh imperatives — a selective boundary."
+    },
+    "claim8": {
+      "salihat_lemma": 62,
+      "sayyiat_lemma": 36,
+      "balances": false,
+      "verdict": "FALSIFIED",
+      "note": "ṣāliḥāt=62 vs sayyiʾāt(pl)=36; not balanced."
+    },
+    "claim9": {
+      "rasul_lemma": 332,
+      "mursal_lemma": 35,
+      "verdict": "NOT-A-BALANCE-CLAIM",
+      "note": "rasūl lemma=332; descriptive, no symmetry target asserted by source."
+    },
+    "claim10": {
+      "bahr_sea": 41,
+      "barr_land_strict": 22,
+      "claimed_sea": 32,
+      "claimed_land": 13,
+      "birr_homonym_excluded": 8,
+      "water_pct_strict": 65.08,
+      "claimed_water_pct": 71.11,
+      "sea_hits_32": false,
+      "land_hits_13": false,
+      "verdict": "FALSIFIED",
+      "note": "strict baḥr(sea)=41 (claimed 32); strict bar~(land)=22 (claimed 13); birr-homonym (excluded)=8."
+    }
+  }
+}

@@ -6084,3 +6084,51 @@ This finding is a built-in caution: **raw substring counts conflate homographs a
 ### §10.80.4 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2160.json`
+
+## §10.80 H-NEW-2000 (pre-registered) — Iʿjāz ʿadadī "balanced words" multi-rules audit: 0 CONFIRMED / 4 RULES-FRAGILE / 4 FALSIFIED; the per-claim companion to the H-NEW-2010/2020 generators
+
+**Status**: COMPLETE — published with equal prominence to passes and fails. Pre-registered (SHA `0474c9986636fe2543f7a9ce3aff4d1c77e82bbf2108648c9bb2b824798b3789`, seed 20260509, runtime-verified). The per-claim, multi-rules-tuple audit of the 10 most-cited Nawfal / Jarrār / al-Kuḥayl word-balance + calendar claims (target values from `data/literature/nawfal/funci-miracle-of-numbers-in-quran.md`). Each claim tested under three pre-committed rules: **R1** strict-al-form, **R2** all-morphological-surface-forms, **R3** QAC-lemma.
+
+### §10.80.1 Per-claim verdict table
+
+| # | Claim | Claimed | Strict (R1) | Best-balancing rule | Verdict | Principled? |
+|:-:|:--|:--|:--|:--|:--|:--|
+| 1 | al-dunyā = al-ākhira | 115=115 | 115 vs **112** | R2 all-clitic-forms → **115 = 115** | **RULES-FRAGILE** | semi (asymmetric rule) |
+| 2 | al-malāʾika = al-shayāṭīn | 88=88 | — | R3 whole-lemma → 88 = 88 | **RULES-FRAGILE** | NO (plural 73 ≠ 18) |
+| 3 | al-ḥayāt = al-mawt | 145=145 | 67 vs 53 | none | **FALSIFIED** | n/a |
+| 4 | shahr=12 / yawm=365 / ayyām=30 | 12/365/30 | 12 ✓ / **375** / 30 ✓ | partial (2 of 3) | **RULES-FRAGILE** | mixed |
+| 5 | al-rajul = al-marʾa | 24=24 | — | none (29 vs 26) | **FALSIFIED** | n/a |
+| 6 | Iblīs = istiʿādha | 11=11 | Iblīs 11 ✓ | refuge=11 only via form-1+4 subset | **RULES-FRAGILE** | NO (selective subset) |
+| 7 | al-malak vs al-shayṭān (sing) | balance | 13 vs 70 | none | **DESCRIPTIVE** | diagnostic |
+| 8 | al-ṣāliḥāt = al-sayyiʾāt | balance | — | none (62 vs 36) | **FALSIFIED** | n/a |
+| 9 | al-rasūl / rusul | (descriptive) | — | rasūl lemma = 332 | **NOT-A-BALANCE** | n/a |
+| 10 | baḥr : barr = 32 : 13 (71.1% water) | 32:13 | 41 vs 22 | none → 65.1% | **FALSIFIED** | n/a |
+
+**Tally: 0 CONFIRMED · 4 RULES-FRAGILE · 4 FALSIFIED · 1 descriptive · 1 not-a-balance. Zero of ten survive a pre-specified principled counting rule.**
+
+### §10.80.2 The diagnostic (same as al-Khalifa)
+
+The numbers that **do** land exactly are **single-lexeme corpus facts, none a symmetry**: al-dunyā = 115 (always bare-definite); shahr-singular = 12; ayyām+yawmayn = 30; Iblīs = 11. Every claimed **antonym balance** and every **astronomical match** either fails outright (ḥayāt/mawt, rajul/marʾa, ṣāliḥāt/sayyiʾāt, baḥr/barr, yawm=365) or holds only under a lens chosen to fit the target. This reproduces the §10.55/§10.60 al-Khalifa signature and H-META-1's modern-numerology 0% confirmation rate: **pre-existing textual facts confirm; novel-symmetry claims fail.**
+
+### §10.80.3 Key per-claim refinements
+
+- **Claim 1 (dunyā/ākhira)** — REFINES H-NEW-2020 §10.79's flat-FALSIFIED to RULES-FRAGILE. The eschatological **noun** `آخرة` (fem. tā-marbūṭa) occurs in exactly six proclitic forms summing to **115** (`الآخرة`71 + `بالآخرة`21 + `والآخرة`19 + `وللآخرة`2 + `للآخرة`1 + `وبالآخرة`1), every one "the Hereafter" — so 115 = 115 is **real under the linguistically-correct noun-rule**. H-NEW-2020's strict-71 and broad-194 bracketed it: the 194 had swept in the masculine adjective *ākhir* `الآخر`(29)/`الآخرين`(13)/`آخر`(10). The balance is genuine but fragile (112 strict-definite; 155 QAC-lemma).
+- **Claim 2 (malāʾika/shayāṭīn 88=88)** — whole-lemma balances, but it is a *conflation artifact*: malāʾika-plural = 73 vs shayāṭīn-plural = 18, while the singulars invert (angel 13 vs devil 70). The two 88s are made of opposite morphological material.
+- **Claim 4 (calendar)** — shahr-singular = **12 EXACT** and ayyām+dual = **30 EXACT** are clean corpus facts, but the flagship **yawm-singular = 375, not 365** (off by 10; QAC already lists the adverb *yawmaʾidhin* = 70 as a separate lemma). The astronomical headline fails.
+- **Claim 6 (Iblīs/refuge)** — REFINES the inline-H-NEW-2000 "balanced!" note: **Iblīs = 11 EXACT** is robust, but seek-refuge verbs have no natural 11 (form-1 aʿūdhu=10, +form-4 uʿīdhu=11, all-verbs=15, all-root=17); the 11 requires excluding the 4 *istaʿidh* imperatives — a selective boundary. Downgraded PASS → RULES-FRAGILE.
+- **Claim 10 (baḥr/barr)** — the "71% water" claim fails: strict baḥr(sea)=**41** (not 32), bar~(land)=**22** (not 13), water-fraction = **65.1%** (not 71.1%); the *birr* "righteousness" homonym (8) is correctly excluded.
+
+### §10.80.4 Files
+
+- pre-reg: `findings/phase-b-hypotheses/prereg-h-new-2000-numerical-symmetry-audit.md` (SHA `0474c9986636fe2543f7a9ce3aff4d1c77e82bbf2108648c9bb2b824798b3789`)
+- script: `findings/phase-b-hypotheses/scripts/h-new-2000.py` (runtime SHA-verified)
+- JSON: `findings/phase-b-hypotheses/csv/h-new-2000.json`
+- finding: `findings/phase-b-hypotheses/h-new-2000-numerical-symmetry-audit.md`
+
+### §10.80.5 Cross-references
+
+- **H-NEW-2010 / H-NEW-2020 (§10.79)** — exhaustive root + surface generators; this is the per-claim companion that pins the rules-tuple sensitivity those scans summarised, and refines the dunyā/ākhira verdict.
+- §10.55 (H-NEW-1600), §10.60 (H-NEW-1530), §10.61 (H-NEW-1720) — al-Khalifa Code-19 audits; same genre, same signature.
+- H-META-1 — modern-numerology era 0/10 confirmations; numerical-gematric substance type low confirmation. Wave-L synthesis (§10.79): balanced-words family RETIRED — H-NEW-2000 is the claim-by-claim ledger behind that retirement.
+
+*H-NEW-2000 logged 2026-05-29 by Waiel Al-Shujaa. The single-word counts are real; the symmetries are not. Bismillāhi al-Raḥmāni al-Raḥīm.*
