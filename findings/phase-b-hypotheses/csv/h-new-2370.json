@@ -1,0 +1,42 @@
+{
+  "finding": "H-NEW-2370",
+  "prereg_sha256": "d7476efd8d24aee38c9773c231ec07be5334dedda52b17721bfa8435f289c7ec",
+  "seed": 20260509,
+  "nperm": 10000,
+  "design": "paired within-surah: Δ_s = mean(heavy_density punishment verses) - mean(non-punishment verses)",
+  "heavy_letters": "isti'la' S D T Z q g x (Buckwalter)",
+  "direction_locked": "Dbar > 0",
+  "alpha_bonferroni": 0.025,
+  "primary_adhab": {
+    "n_qualifying_surahs": 68,
+    "Dbar_mean_paired_diff": -0.006571,
+    "p_within_surah_label_perm": 0.9758,
+    "p_signflip": 0.9881,
+    "surahs_positive_delta": 23,
+    "surahs_negative_delta": 45,
+    "surahs_zero_delta": 0
+  },
+  "R1_secondary_hellfire": {
+    "n_qualifying_surahs": 86,
+    "Dbar_mean_paired_diff": -0.003383,
+    "p_within_surah_label_perm": 0.86751
+  },
+  "R2_region": {
+    "meccan": {
+      "n": 50,
+      "Dbar": -0.006874
+    },
+    "medinan": {
+      "n": 18,
+      "Dbar": -0.005728
+    }
+  },
+  "R3_verse_weighted_Dbar": -0.004029,
+  "R4_token_pool_descriptive_unpaired": {
+    "punishment_verse_heavy_density": 0.047008,
+    "nonpunishment_verse_heavy_density": 0.051138,
+    "diff": -0.004131,
+    "note": "NOT paired; surah confound reintroduced; context only"
+  },
+  "verdict": "NULL-REVERSED"
+}
