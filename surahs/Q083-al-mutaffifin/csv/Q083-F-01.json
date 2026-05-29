@@ -1,0 +1,80 @@
+{
+  "test_id": "Q083-F-01",
+  "title": "SIJJĪN(7-17) <-> ʿILLIYYĪN(18-28) antithetical-pair: frame-mirror vs destiny-disjunction",
+  "prereg_sha256": "acd67eb32847fa20631a37fedb608b04ef8f42152edcd618b51e4eaa7602ddc6",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "blocks": {
+    "fujjar_B_f": [
+      83,
+      7,
+      17
+    ],
+    "abrar_B_a": [
+      83,
+      18,
+      28
+    ],
+    "n_roots_Bf": 24,
+    "n_roots_Ba": 22
+  },
+  "h1_frame_mirror": {
+    "n_shared_roots": 3,
+    "shared_roots": [
+      "dry",
+      "ktb",
+      "rqm"
+    ],
+    "null_shared_mean": 12.7151,
+    "null_shared_max": 82,
+    "perm_p_one_sided_elevated": 0.9428,
+    "perm_p_within_surah_null": 0.9563,
+    "alpha_bon": 0.016666666666666666,
+    "reversed": true,
+    "pass": false
+  },
+  "h2_overall_jaccard_pivot": {
+    "jaccard_obs": 0.06976744186046512,
+    "null_jaccard_mean": 0.11292616994160214,
+    "pct_le_obs_low_side": 0.2415,
+    "pct_ge_obs_high_side": 0.76,
+    "classification": "TYPICAL (Jaccard within central 90% of block pairs)",
+    "note": "descriptive pivot; no locked direction; NOT a pass/fail gate"
+  },
+  "h3_destiny_disjunction": {
+    "fujjar_destiny_roots_locked": [
+      "Hjb",
+      "jHm",
+      "sjn"
+    ],
+    "abrar_destiny_roots_locked": [
+      "Ark",
+      "Elw",
+      "msk",
+      "nEm",
+      "rHq",
+      "snm"
+    ],
+    "fujjar_destiny_present_in_Bf": [
+      "Hjb",
+      "jHm",
+      "sjn"
+    ],
+    "abrar_destiny_present_in_Ba": [
+      "Ark",
+      "Elw",
+      "msk",
+      "nEm",
+      "rHq",
+      "snm"
+    ],
+    "abrar_destiny_leaking_into_Bf": [],
+    "fujjar_destiny_leaking_into_Ba": [],
+    "locked_sets_intersect": [],
+    "destiny_disjoint": true,
+    "pass": true
+  },
+  "bonferroni_k": 3,
+  "verdict": "DIRECTIONAL (PRE-COMMIT-VIOLATION on H1: shared-root count below null mean)"
+}
