@@ -6132,3 +6132,35 @@ The numbers that **do** land exactly are **single-lexeme corpus facts, none a sy
 - H-META-1 — modern-numerology era 0/10 confirmations; numerical-gematric substance type low confirmation. Wave-L synthesis (§10.79): balanced-words family RETIRED — H-NEW-2000 is the claim-by-claim ledger behind that retirement.
 
 *H-NEW-2000 logged 2026-05-29 by Waiel Al-Shujaa. The single-word counts are real; the symmetries are not. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+## §10.81 Q002-F-07 → cross-finding-025 EXTENSION (2026-05-29) — ring-composition is a 6th scale-of-aggregation flip: NULL at whole-surah, PASS at pericope/block
+
+**Status**: CONFIRMED scale-flip. The Q 2 deep close-read produced the capstone integration for Wave-L.
+
+### The flip
+
+| Scale | Test | Verdict |
+|---|---|---|
+| Whole-surah | H-NEW-2030 (Farrin Q 2 ring, Cuypers Q 5 ring) | **NULL** (z=−0.07 Q2; z=−2.01 Q5) |
+| Pericope/block | Q002-F-07 (Q 2:131-144 Abraham/qibla block) | **PASS z=+3.69, p=0.010** |
+
+Ring-composition (chiastic ABCB'A' mirroring) does NOT exist at the whole-surah content-root scale — but the Q 2:131-144 qibla-block IS a genuine ring (beats 99% of within-window shuffles, reproduces the chiastic-audit's strongest ring at z=+9.69 to 3 decimal places). 
+
+**This is the 6th confirmed instance of the cross-finding-025 scale-of-aggregation flip law** (after Iblīs, sajda, prophet-vocative, al-ḥamdu, ḥawāmīm — and now ring-composition). The pattern is now overwhelming: thin/distributed structure NULLs at whole-surah scale and PASSES at the pericope/block scale where the structure actually operates.
+
+### Scholarly consequence
+
+The Cuypers / Farrin "Semitic rhetoric" ring-composition school is **rescued at the correct scale**. H-NEW-2030 refuted their whole-surah ring claims; Q002-F-07 confirms they were RIGHT that rings exist — but the unit is the **thematic block/pericope** (Q 2:131-144), not the whole surah. This is the scale-of-aggregation law adjudicating a live academic dispute: Sinai's skepticism is correct at whole-surah scale; Cuypers/Farrin are correct at block scale. Both, properly scoped, are right.
+
+### Other Q 2 close-read results
+
+- **Q002-F-06 NULL**: Āyat al-Kursī (2:255) is NOT a lexical peak (ranks 3,960/6,236 corpus-wide by local root-distinctiveness) — 3rd independent confirmation that the "greatest verse" (aʿẓam āya) hadith claim is orthogonal to lexical signature. A verse-level instance of dual-iʿjāz orthogonality (theological-iʿjāz ⊥ structural-iʿjāz).
+- **Q002-F-08**: longest-verse "monopoly" FALSIFIED (Q 4 inheritance + Q 24 social-law each hold 2 of top-10) but Q 2 uniquely holds 3+ (3 by word, 4 by letter), anchored by the 4.33σ-isolated debt-verse 2:282. Refines H-NEW-1370.
+
+### cross-finding-025-formal update
+
+The pericope-flip law now stands at **6/6** across marker classes: narrative (Iblīs), liturgical (sajda), discourse (prophet-vocative), liturgical-opener (al-ḥamdu), orthographic-opener (ḥawāmīm), and **structural-rhetorical (ring-composition)**. The law has graduated from a marker-cohesion regularity to a general principle: **content structure in the Quran is pericope-scoped, not surah-scoped** — the surah is a container, the pericope is the structural unit.
+
+### Files
+
+- `surahs/Q002-al-baqara/Q002-F-06|07|08-*.md` + csv + `scripts/Q002_F_06_07_08.py`
