@@ -5882,3 +5882,39 @@ al-Bāqillānī (*Iʿjāz al-Qurʾān*: governed *naẓm* cadence), al-Zarkashī
 - Script: `findings/phase-b-hypotheses/scripts/h-new-2070.py`
 - JSON: `findings/phase-b-hypotheses/csv/h-new-2070.json`
 - Finding: `findings/phase-b-hypotheses/h-new-2070-divine-name-pairing.md`
+
+## §10.78 H-NEW-2150 inline (2026-05-29) — Rhetorical-question (istifhām) density scan: Q 67 al-Mulk corpus question-density champion (30%)
+
+**Status**: CONFIRMED descriptive close-reading inventory.
+
+**Method**: scan verses for interrogative markers (أ-istifhām, هل, أفلا, أولم, ألم, كيف, أين, أنى, أم, أرأيت, etc.). 461 verses (7.4% of corpus) carry interrogative markers.
+
+**Top question-density surahs (min 5 verses)**:
+
+| Q | Q-verses | Density | Identity |
+|---|---|---|---|
+| Q 105 al-Fīl | 2/5 | 40.0% | opens *a-lam tara kayfa* (small surah) |
+| **Q 67 al-Mulk** | **9/30** | **30.0%** | **the great interrogative-challenge surah** |
+| Q 65 al-Ṭalāq | 3/12 | 25.0% | |
+| Q 96 al-ʿAlaq | 4/19 | 21.1% | *a-raʾayta alladhī yanhā* cascade |
+| Q 32 al-Sajda | 6/30 | 20.0% | |
+| Q 88 al-Ghāshiya | 5/26 | 19.2% | *a-fa-lā yanẓurūn* contemplation-questions |
+| Q 39 al-Zumar | 14/75 | 18.7% | (highest raw count among long surahs) |
+
+### §10.78.1 Q 67 al-Mulk as the interrogative-challenge surah
+
+Q 67 al-Mulk is corpus-rank-1 (excluding the 5-verse Q 105) at 30% question-density — built around interrogative challenges: *a-fa-lā tubṣirūn* (do you not see?), *a-amintum man fī al-samāʾ* (have you secured against Him in heaven?), *a-man hādhā alladhī* (who is this that...?). This corroborates the surah's classical identity (al-Munjiya, the protector) as a challenge-discourse. Connects to Q 67's H-NEW findings (juzʾ-29 gateway).
+
+### §10.78.2 Measurement limit (honest)
+
+Q 55 al-Raḥmān scores only 1.3% under standard interrogative-particle matching, because its famous refrain *fa-bi-ayyi ālāʾi rabbikumā tukadhdhibān* ("which of your Lord's favors do you deny?") is grammatically a rhetorical question but uses *ayy* + negative-verb construction not caught by particle-regex. This is a known limitation; a syntactic-parse instrument would reclassify Q 55 as highly interrogative. Flagged for future refinement.
+
+### §10.78.3 Cross-finding integration
+
+- **H-NEW-2140 (anaphora)**: Q 52's *am*-question cascade and Q 27's *am-man* cascade are interrogative-anaphora — the two rhetorical devices compound
+- **H-NEW-1870 (pronominal narrative)**: rhetorical questions are a dialogic device consistent with the corpus's pronominal-dialogic style
+- Q 67 + Q 88 + Q 96 question-density corroborates the eschatological-challenge genre at the marker level
+
+### §10.78.4 Files
+
+- Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2150.json`
