@@ -1,0 +1,431 @@
+{
+  "id": "H-NEW-2020",
+  "title": "Exhaustive surface-word balance scan + curated antonym-pair audit",
+  "prereg_sha": "bfeb1abb9d68ba5448236b0833a0b4c9beeb3f6cfa1a5eb6c934806c370a5083",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "corpus_token_count": 77797,
+  "distinct_types": 14870,
+  "curated": [
+    {
+      "pair": "dunyā / ākhira",
+      "concept_A": "الدنيا",
+      "concept_B": "الآخرة (hereafter)",
+      "S_form_A": "الدنيا",
+      "S_form_B": "الآخرة",
+      "S_count_A": 115,
+      "S_count_B": 71,
+      "S_balanced": false,
+      "F_count_A": 115,
+      "F_count_B": 194,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "F-ākhira conflates hereafter+last+other (maximal pro-balance reading)"
+    },
+    {
+      "pair": "jannah / nār",
+      "concept_A": "paradise",
+      "concept_B": "fire",
+      "S_form_A": "الجنة",
+      "S_form_B": "النار",
+      "S_count_A": 56,
+      "S_count_B": 102,
+      "S_balanced": false,
+      "F_count_A": 151,
+      "F_count_B": 145,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "paradise-sense pruned of جناح/جند/جن/سجن/مجنون"
+    },
+    {
+      "pair": "jannah / jahannam",
+      "concept_A": "paradise",
+      "concept_B": "hell",
+      "S_form_A": "الجنة",
+      "S_form_B": "جهنم",
+      "S_count_A": 56,
+      "S_count_B": 72,
+      "S_balanced": false,
+      "F_count_A": 151,
+      "F_count_B": 77,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "same paradise set as pair 2"
+    },
+    {
+      "pair": "malāʾika / shayāṭīn",
+      "concept_A": "angels",
+      "concept_B": "devils(pl)",
+      "S_form_A": "الملائكة",
+      "S_form_B": "الشياطين",
+      "S_count_A": 38,
+      "S_count_B": 13,
+      "S_balanced": false,
+      "F_count_A": 73,
+      "F_count_B": 18,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "shayāṭīn-PLURAL only; singular الشيطان excluded"
+    },
+    {
+      "pair": "ḥayāt / mawt",
+      "concept_A": "life(noun)",
+      "concept_B": "death(noun)",
+      "S_form_A": "الحياة",
+      "S_form_B": "الموت",
+      "S_count_A": 63,
+      "S_count_B": 35,
+      "S_balanced": false,
+      "F_count_A": 76,
+      "F_count_B": 50,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "NOUN layer both sides; verbal أحيا/يموت & الموتى/الميت excluded for parity"
+    },
+    {
+      "pair": "khayr / sharr",
+      "concept_A": "good",
+      "concept_B": "evil",
+      "S_form_A": "خير",
+      "S_form_B": "شر",
+      "S_count_A": 116,
+      "S_count_B": 15,
+      "S_balanced": false,
+      "F_count_A": 188,
+      "F_count_B": 44,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "sharr evil-noun; homograph شرك/بشر(human)/حشر EXCLUDED"
+    },
+    {
+      "pair": "īmān / kufr",
+      "concept_A": "faith(noun)",
+      "concept_B": "disbelief(noun)",
+      "S_form_A": "الإيمان",
+      "S_form_B": "الكفر",
+      "S_count_A": 7,
+      "S_count_B": 11,
+      "S_balanced": false,
+      "F_count_A": 45,
+      "F_count_B": 56,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "NOUN layer both sides; verbal آمن/كفروا excluded for parity"
+    },
+    {
+      "pair": "hudā / ḍalāl",
+      "concept_A": "guidance(noun)",
+      "concept_B": "misguidance(noun)",
+      "S_form_A": "الهدى",
+      "S_form_B": "الضلال",
+      "S_count_A": 22,
+      "S_count_B": 3,
+      "S_balanced": false,
+      "F_count_A": 92,
+      "F_count_B": 45,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "ḍalāl-noun; homograph فضل/الفضل & verbal ضل EXCLUDED for parity"
+    },
+    {
+      "pair": "nūr / ẓulumāt",
+      "concept_A": "light",
+      "concept_B": "darkness(pl)",
+      "S_form_A": "النور",
+      "S_form_B": "الظلمات",
+      "S_count_A": 10,
+      "S_count_B": 14,
+      "S_balanced": false,
+      "F_count_A": 43,
+      "F_count_B": 23,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "darkness-PLURAL noun; verbal ظلم/ظالم EXCLUDED"
+    },
+    {
+      "pair": "ṣayf / shitāʾ",
+      "concept_A": "summer",
+      "concept_B": "winter",
+      "S_form_A": "الصيف",
+      "S_form_B": "الشتاء",
+      "S_count_A": 0,
+      "S_count_B": 1,
+      "S_balanced": false,
+      "F_count_A": 1,
+      "F_count_B": 1,
+      "F_balanced": true,
+      "balanced_under_any": true,
+      "note": "ṣayf strict form الصيف does NOT occur; only والصيف (Q106:2)"
+    },
+    {
+      "pair": "ḥarr / bard",
+      "concept_A": "heat",
+      "concept_B": "cold",
+      "S_form_A": "الحر",
+      "S_form_B": "البرد",
+      "S_count_A": 3,
+      "S_count_B": 0,
+      "S_balanced": false,
+      "F_count_A": 5,
+      "F_count_B": 4,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "ḥarr heat-noun; homograph البحر/الحرام/سحر/حرث EXCLUDED"
+    },
+    {
+      "pair": "rajul / nisāʾ",
+      "concept_A": "man",
+      "concept_B": "women",
+      "S_form_A": "الرجل",
+      "S_form_B": "النساء",
+      "S_count_A": 0,
+      "S_count_B": 24,
+      "S_balanced": false,
+      "F_count_A": 57,
+      "F_count_B": 46,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "rajul human-male sing+pl+dual; رِجل 'foot' (أرجلكم..) EXCLUDED"
+    },
+    {
+      "pair": "qul / qālū",
+      "concept_A": "say(impv)",
+      "concept_B": "they-said",
+      "S_form_A": "قل",
+      "S_form_B": "قالوا",
+      "S_count_A": 294,
+      "S_count_B": 250,
+      "S_balanced": false,
+      "F_count_A": 333,
+      "F_count_B": 332,
+      "F_balanced": false,
+      "balanced_under_any": false,
+      "note": "qul imperative only; قلوب/قليل/قلنا are different lexemes/forms"
+    }
+  ],
+  "curated_balanced_count": 1,
+  "curated_total": 13,
+  "H1_threshold": 6,
+  "H1_verdict": "PASS-DIRECTED (selective)",
+  "dunya_akhira_strict": {
+    "الدنيا": 115,
+    "الآخرة": 71,
+    "equal": false
+  },
+  "H2_verdict": "PASS-DIRECTED (strict unequal ⇒ legend FALSIFIED)",
+  "exhaustive": {
+    "content_types_ge2": 5999,
+    "hapax_forms_count1": 8709,
+    "n_exact_balanced_pairs": 3734882,
+    "frac_types_in_collision": 0.994166,
+    "zipf_ref_frac_mean": 0.976579,
+    "zipf_ref_frac_sd": 0.000872,
+    "z": 20.1718,
+    "top_multiplicity_counts": [
+      {
+        "count_value": 2,
+        "n_types_sharing": 2397,
+        "n_balanced_pairs": 2871606
+      },
+      {
+        "count_value": 3,
+        "n_types_sharing": 1008,
+        "n_balanced_pairs": 507528
+      },
+      {
+        "count_value": 4,
+        "n_types_sharing": 611,
+        "n_balanced_pairs": 186355
+      },
+      {
+        "count_value": 5,
+        "n_types_sharing": 400,
+        "n_balanced_pairs": 79800
+      },
+      {
+        "count_value": 6,
+        "n_types_sharing": 285,
+        "n_balanced_pairs": 40470
+      },
+      {
+        "count_value": 7,
+        "n_types_sharing": 191,
+        "n_balanced_pairs": 18145
+      },
+      {
+        "count_value": 8,
+        "n_types_sharing": 127,
+        "n_balanced_pairs": 8001
+      },
+      {
+        "count_value": 9,
+        "n_types_sharing": 116,
+        "n_balanced_pairs": 6670
+      },
+      {
+        "count_value": 10,
+        "n_types_sharing": 99,
+        "n_balanced_pairs": 4851
+      },
+      {
+        "count_value": 11,
+        "n_types_sharing": 85,
+        "n_balanced_pairs": 3570
+      },
+      {
+        "count_value": 12,
+        "n_types_sharing": 54,
+        "n_balanced_pairs": 1431
+      },
+      {
+        "count_value": 13,
+        "n_types_sharing": 52,
+        "n_balanced_pairs": 1326
+      },
+      {
+        "count_value": 14,
+        "n_types_sharing": 52,
+        "n_balanced_pairs": 1326
+      },
+      {
+        "count_value": 15,
+        "n_types_sharing": 36,
+        "n_balanced_pairs": 630
+      },
+      {
+        "count_value": 17,
+        "n_types_sharing": 35,
+        "n_balanced_pairs": 595
+      },
+      {
+        "count_value": 16,
+        "n_types_sharing": 33,
+        "n_balanced_pairs": 528
+      },
+      {
+        "count_value": 20,
+        "n_types_sharing": 24,
+        "n_balanced_pairs": 276
+      },
+      {
+        "count_value": 19,
+        "n_types_sharing": 23,
+        "n_balanced_pairs": 253
+      },
+      {
+        "count_value": 23,
+        "n_types_sharing": 19,
+        "n_balanced_pairs": 171
+      },
+      {
+        "count_value": 22,
+        "n_types_sharing": 18,
+        "n_balanced_pairs": 153
+      },
+      {
+        "count_value": 18,
+        "n_types_sharing": 17,
+        "n_balanced_pairs": 136
+      },
+      {
+        "count_value": 21,
+        "n_types_sharing": 17,
+        "n_balanced_pairs": 136
+      },
+      {
+        "count_value": 24,
+        "n_types_sharing": 15,
+        "n_balanced_pairs": 105
+      },
+      {
+        "count_value": 29,
+        "n_types_sharing": 15,
+        "n_balanced_pairs": 105
+      },
+      {
+        "count_value": 28,
+        "n_types_sharing": 13,
+        "n_balanced_pairs": 78
+      }
+    ],
+    "random_famous_looking_pairs": [
+      {
+        "word_A": "اليوم",
+        "word_B": "بغير",
+        "both_occur": 41
+      },
+      {
+        "word_A": "أصحاب",
+        "word_B": "إبراهيم",
+        "both_occur": 62
+      },
+      {
+        "word_A": "يهدي",
+        "word_B": "القرآن",
+        "both_occur": 43
+      },
+      {
+        "word_A": "وقال",
+        "word_B": "العذاب",
+        "both_occur": 85
+      },
+      {
+        "word_A": "كنا",
+        "word_B": "الحياة",
+        "both_occur": 63
+      },
+      {
+        "word_A": "ربي",
+        "word_B": "لمن",
+        "both_occur": 94
+      },
+      {
+        "word_A": "المحسنين",
+        "word_B": "أحد",
+        "both_occur": 30
+      },
+      {
+        "word_A": "النار",
+        "word_B": "ربكم",
+        "both_occur": 102
+      },
+      {
+        "word_A": "إله",
+        "word_B": "ربه",
+        "both_occur": 73
+      },
+      {
+        "word_A": "الآخرة",
+        "word_B": "يعلم",
+        "both_occur": 71
+      },
+      {
+        "word_A": "ظلموا",
+        "word_B": "الحكيم",
+        "both_occur": 42
+      },
+      {
+        "word_A": "غفور",
+        "word_B": "أليم",
+        "both_occur": 52
+      },
+      {
+        "word_A": "ذلكم",
+        "word_B": "خالدين",
+        "both_occur": 44
+      },
+      {
+        "word_A": "الصلاة",
+        "word_B": "بينهم",
+        "both_occur": 58
+      },
+      {
+        "word_A": "جهنم",
+        "word_B": "أنفسهم",
+        "both_occur": 72
+      }
+    ]
+  },
+  "H3_verdict": "REVERSAL (Quran collision rate atypical vs Zipf)",
+  "verdict": "MIXED — see per-hypothesis verdicts (reversal present)"
+}

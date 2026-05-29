@@ -5920,3 +5920,63 @@ Q 55 al-Raḥmān scores only 1.3% under standard interrogative-particle matchin
 ### §10.78.4 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2150.json`
+
+
+---
+
+## §10.79 H-NEW-2020 (pre-registered) — Exhaustive surface-word balance scan + curated antonym-pair audit: only 1 of 13 famous pairs balances; dunyā=ākhira=115 legend FALSIFIED at strict surface level; 3.7M generic balanced pairs ⇒ balance is the default, not a signal
+
+**Status**: MIXED — H1 PASS-DIRECTED, H2 PASS-DIRECTED (legend falsified), H3 REVERSAL published with full prominence (Protocol §1.8). Surface-word sibling of the root-based generator H-NEW-2010.
+
+**Pre-reg**: `findings/phase-b-hypotheses/prereg-h-new-2020-word-balance-scan.md` — SHA256 `bfeb1abb9d68ba5448236b0833a0b4c9beeb3f6cfa1a5eb6c934806c370a5083`. Seed 20260509. Rules-tuple `(no-tashkeel, orthographic-token, words, basmala-only-Q1, Hafs-Kūfan, Mashriqī)`; 77,797 tokens, 14,870 types.
+
+**Two rules**: Rule S (strict single canonical surface form, usually the *al-* form) and Rule F (sum of a pre-locked, homograph-pruned closed allow-list of surface variants; noun-layer locked on both sides of noun-antonyms for parity). Rule F is the permissive upper bound short of going to the root (the root version is the sibling H-NEW-2010).
+
+### §10.79.1 Curated-pair verdict table (1 of 13 balances under any rule)
+
+| # | Pair | S: A vs B | S balanced? | F: A vs B | F balanced? | any? |
+|--:|:--|:--|:--:|:--|:--:|:--:|
+| 1 | dunyā / ākhira | 115 vs 71 | ✗ | 115 vs 194 | ✗ | ✗ |
+| 2 | jannah / nār | 56 vs 102 | ✗ | 151 vs 145 (off 6) | ✗ | ✗ |
+| 3 | jannah / jahannam | 56 vs 72 | ✗ | 151 vs 77 | ✗ | ✗ |
+| 4 | malāʾika / shayāṭīn(pl) | 38 vs 13 | ✗ | 73 vs 18 | ✗ | ✗ |
+| 5 | ḥayāt / mawt (noun) | 63 vs 35 | ✗ | 76 vs 50 | ✗ | ✗ |
+| 6 | khayr / sharr | 116 vs 15 | ✗ | 188 vs 44 | ✗ | ✗ |
+| 7 | īmān / kufr (noun) | 7 vs 11 | ✗ | 45 vs 56 | ✗ | ✗ |
+| 8 | hudā / ḍalāl (noun) | 22 vs 3 | ✗ | 92 vs 45 | ✗ | ✗ |
+| 9 | nūr / ẓulumāt(pl) | 10 vs 14 | ✗ | 43 vs 23 | ✗ | ✗ |
+| 10 | **ṣayf / shitāʾ** | 0 vs 1 | ✗ | **1 = 1** | **✓** | **✓** |
+| 11 | ḥarr / bard | 3 vs 0 | ✗ | 5 vs 4 (off 1) | ✗ | ✗ |
+| 12 | rajul / nisāʾ | 0 vs 24 | ✗ | 57 vs 46 | ✗ | ✗ |
+| 13 | qul / qālū | 294 vs 250 | ✗ | 333 vs 332 (off 1) | ✗ | ✗ |
+
+**Balanced under any rule: 1/13** (ṣayf/shitāʾ, both = 1, only because both appear in the single verse Q 106:2 *riḥlata al-shitāʾi wa-l-ṣayf*). Pre-locked H1 threshold ≤ 6 → **PASS-DIRECTED (selective)**.
+
+### §10.79.2 H2 — the flagship legend FALSIFIED
+
+The dunyā=ākhira=115 claim (ʿAbd al-Razzāq Nawfal, *al-Iʿjāz al-ʿadadī*): `الدنيا` **= 115** (real corpus fact) but strict standalone `الآخرة` **= 71**. No pre-locked summation of ākhira lands on 115 (broad conflation = 194). Direction `dunyā ≠ ākhira` confirmed → **PASS-DIRECTED**.
+
+### §10.79.3 H3 — exhaustive scan: balance is generic (reversal published honestly)
+
+After stop-list + len>2 + dropping 8,709 hapax: **5,999** content-types with count ≥ 2. They share a short ladder of small integers (2,397 words occur exactly 2×; 1,008 occur 3×; …), generating **3,734,882** exact-balanced content-word pairs. Random examples the scan throws up: *al-Qurʾān*=*yahdī* (43), *Ibrāhīm*=*aṣḥāb* (62), *al-ākhira*=*yaʿlam* (71), *ghafūr*=*alīm* (52). Any "balanced pair" anecdote is a cherry-pick from this ocean.
+
+Pre-locked H3: `frac_types_in_collision` indistinguishable from a size-matched Zipf reference (|z|<2). Observed 0.994 vs Zipf 0.977±0.001 → **z = +20.17, band BREACHED**. Per Protocol §1.8 published as **REVERSAL**, not massaged. The breach is in the *pro-genericity* direction (Quran is even MORE collision-saturated than Zipf), so the finding's substantive direction — balance is generic, carries no signal — is reinforced; only the locked numeric band is violated.
+
+### §10.79.4 Most-surprising near-misses
+
+- **qul / qālū** off by exactly **1** under Rule F (333 vs 332)
+- **jannah / nār** off by **6** under Rule F (151 vs 145)
+- **ḥarr / bard** off by **1** under Rule F (5 vs 4)
+
+A deliberately balanced lexicon would not stop one short — the near-misses argue *against* design.
+
+### §10.79.5 Meta-finding consistency
+
+Consistent with **H-META-1** (modern-numerology era 0/10 confirmations) and the **H-NEW-1530** al-Khalifa audit (Bilāl Philips selection-bias critique). The classical ʿulūm al-Qurʾān tradition (al-Suyūṭī *al-Itqān* nawʿ 17-19, ʿadad al-kalimāt) counts words but does NOT advance antonym-balance as iʿjāz — that is a 20th-century overlay.
+
+### §10.79.6 Files
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-2020-word-balance-scan.md`
+- Script: `findings/phase-b-hypotheses/scripts/h-new-2020.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-2020.json`
+- Finding: `findings/phase-b-hypotheses/h-new-2020-word-balance-scan.md`
