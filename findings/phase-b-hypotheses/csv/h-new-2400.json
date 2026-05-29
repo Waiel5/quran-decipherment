@@ -1,0 +1,1052 @@
+{
+  "finding_id": "H-NEW-2400",
+  "title": "Divine-name co-occurrence network (corpus-wide) — backbone, centrality, community structure",
+  "extends": [
+    "H-NEW-2070",
+    "H-NEW-2300"
+  ],
+  "pre_reg_sha256": "b7209658084931d0f4486523412bd0a9a7f389c5c09f6e8f6399a447fbf9eab9",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bonferroni": 0.025,
+  "bonferroni_k": 2,
+  "rules_tuple": "(QAC-LEMMA+POS matcher; M_ADJ=ADJ+Allah-PN primary; within-verse undirected co-occurrence; Allah excluded from clustering test; semantic-class = al-Rāzī ṣifāt tripartition fixed pre-run; basmala-counted-only-in-Q1; Hafs-Kūfan; Mashriqī)",
+  "matchers": {
+    "M_ADJ_primary": {
+      "n_names_attested": 45,
+      "n_occurrences": 3476,
+      "n_cooccurrence_verses": 414,
+      "n_edges": 101
+    },
+    "M_LEM_sensitivity": {
+      "n_names_attested": 67,
+      "n_occurrences": 5112,
+      "n_cooccurrence_verses": 1021,
+      "n_edges": 306
+    }
+  },
+  "clustering_test": {
+    "subgraph": "M_ADJ name-name, Allah-excluded, classed nodes only",
+    "n_nodes_classed": 28,
+    "Q_class_observed": 0.5199110243055556,
+    "Q_null_median": 0.023193359375,
+    "Q_null_mean": 0.03145277235243056,
+    "Q_null_p97_5": 0.26388888888888895,
+    "p_perm_Q": 0.0,
+    "Q_pass": true,
+    "r_assort_observed": 0.6618584367661858,
+    "r_null_median": -0.11716198596488406,
+    "r_null_mean": -0.09851821071735965,
+    "r_null_p97_5": 0.28921795465062483,
+    "p_perm_r": 0.0,
+    "r_pass": true,
+    "same_class_edge_weight": 75,
+    "cross_class_edge_weight": 21,
+    "same_class_share": 0.78125
+  },
+  "MW5_replication_M_LEM": {
+    "subgraph": "M_LEM (ADJ+N+PN) name-name, Allah-excluded, classed nodes only",
+    "n_nodes_classed": 40,
+    "Q_class_observed": 0.41222511759484715,
+    "Q_null_median": 0.018613448768517338,
+    "p_perm_Q": 0.0,
+    "Q_pass": true,
+    "r_assort_observed": 0.5196816448350192,
+    "r_null_median": -0.0993174585172183,
+    "p_perm_r": 0.0,
+    "r_pass": true,
+    "same_class_share": 0.690631808278867,
+    "note": "wider homograph-admitting matcher; clustering REPLICATES → backbone robust to matcher choice"
+  },
+  "verdict": "CONFIRMED (PASS-CLUSTERED): co-occurrence is semantically clustered",
+  "node_centrality_top": [
+    {
+      "name_ar": "الله",
+      "translit": "له",
+      "class": "OTHER",
+      "occurrences": 2699,
+      "cooc_verses": 1821,
+      "distinct_partners": 40,
+      "strength": 485
+    },
+    {
+      "name_ar": "رحيم",
+      "translit": "raḥīm",
+      "class": "MERCY",
+      "occurrences": 112,
+      "cooc_verses": 112,
+      "distinct_partners": 7,
+      "strength": 98
+    },
+    {
+      "name_ar": "حكيم",
+      "translit": "ḥakīm",
+      "class": "POWER",
+      "occurrences": 84,
+      "cooc_verses": 84,
+      "distinct_partners": 10,
+      "strength": 95
+    },
+    {
+      "name_ar": "عليم",
+      "translit": "ʿalīm",
+      "class": "KNOW",
+      "occurrences": 101,
+      "cooc_verses": 101,
+      "distinct_partners": 6,
+      "strength": 87
+    },
+    {
+      "name_ar": "عظيم",
+      "translit": "ʿaẓīm",
+      "class": "POWER",
+      "occurrences": 104,
+      "cooc_verses": 104,
+      "distinct_partners": 5,
+      "strength": 64
+    },
+    {
+      "name_ar": "عزيز",
+      "translit": "ʿazīz",
+      "class": "POWER",
+      "occurrences": 38,
+      "cooc_verses": 38,
+      "distinct_partners": 15,
+      "strength": 62
+    },
+    {
+      "name_ar": "غفور",
+      "translit": "ghafūr",
+      "class": "MERCY",
+      "occurrences": 29,
+      "cooc_verses": 29,
+      "distinct_partners": 4,
+      "strength": 42
+    },
+    {
+      "name_ar": "آخر",
+      "translit": "ākhir",
+      "class": "POWER",
+      "occurrences": 47,
+      "cooc_verses": 47,
+      "distinct_partners": 4,
+      "strength": 38
+    },
+    {
+      "name_ar": "خبير",
+      "translit": "khabīr",
+      "class": "KNOW",
+      "occurrences": 23,
+      "cooc_verses": 23,
+      "distinct_partners": 5,
+      "strength": 23
+    },
+    {
+      "name_ar": "بصير",
+      "translit": "baṣīr",
+      "class": "KNOW",
+      "occurrences": 20,
+      "cooc_verses": 20,
+      "distinct_partners": 4,
+      "strength": 23
+    },
+    {
+      "name_ar": "حميد",
+      "translit": "ḥamīd",
+      "class": "POWER",
+      "occurrences": 16,
+      "cooc_verses": 16,
+      "distinct_partners": 4,
+      "strength": 16
+    },
+    {
+      "name_ar": "سميع",
+      "translit": "samīʿ",
+      "class": "KNOW",
+      "occurrences": 8,
+      "cooc_verses": 8,
+      "distinct_partners": 3,
+      "strength": 16
+    },
+    {
+      "name_ar": "شهيد",
+      "translit": "shahīd",
+      "class": "KNOW",
+      "occurrences": 16,
+      "cooc_verses": 16,
+      "distinct_partners": 3,
+      "strength": 15
+    },
+    {
+      "name_ar": "كبير",
+      "translit": "kabīr",
+      "class": "POWER",
+      "occurrences": 32,
+      "cooc_verses": 32,
+      "distinct_partners": 2,
+      "strength": 11
+    },
+    {
+      "name_ar": "حليم",
+      "translit": "ḥalīm",
+      "class": "MERCY",
+      "occurrences": 11,
+      "cooc_verses": 11,
+      "distinct_partners": 2,
+      "strength": 11
+    },
+    {
+      "name_ar": "ملك",
+      "translit": "malik",
+      "class": "POWER",
+      "occurrences": 2,
+      "cooc_verses": 2,
+      "distinct_partners": 8,
+      "strength": 11
+    },
+    {
+      "name_ar": "قدوس",
+      "translit": "quddūs",
+      "class": "OTHER",
+      "occurrences": 2,
+      "cooc_verses": 2,
+      "distinct_partners": 8,
+      "strength": 11
+    },
+    {
+      "name_ar": "مؤمن",
+      "translit": "muʾmin",
+      "class": "OTHER",
+      "occurrences": 7,
+      "cooc_verses": 7,
+      "distinct_partners": 7,
+      "strength": 10
+    },
+    {
+      "name_ar": "كريم",
+      "translit": "karīm",
+      "class": "MERCY",
+      "occurrences": 28,
+      "cooc_verses": 28,
+      "distinct_partners": 4,
+      "strength": 10
+    },
+    {
+      "name_ar": "جبار",
+      "translit": "jabbār",
+      "class": "POWER",
+      "occurrences": 5,
+      "cooc_verses": 5,
+      "distinct_partners": 7,
+      "strength": 8
+    },
+    {
+      "name_ar": "لطيف",
+      "translit": "laṭīf",
+      "class": "KNOW",
+      "occurrences": 4,
+      "cooc_verses": 4,
+      "distinct_partners": 4,
+      "strength": 7
+    },
+    {
+      "name_ar": "مهيمن",
+      "translit": "muhaymin",
+      "class": "OTHER",
+      "occurrences": 1,
+      "cooc_verses": 1,
+      "distinct_partners": 7,
+      "strength": 7
+    },
+    {
+      "name_ar": "متكبر",
+      "translit": "mutakabbir",
+      "class": "POWER",
+      "occurrences": 1,
+      "cooc_verses": 1,
+      "distinct_partners": 7,
+      "strength": 7
+    },
+    {
+      "name_ar": "رحمن",
+      "translit": "raḥmān",
+      "class": "MERCY",
+      "occurrences": 12,
+      "cooc_verses": 12,
+      "distinct_partners": 2,
+      "strength": 6
+    },
+    {
+      "name_ar": "حق",
+      "translit": "ḥaqq",
+      "class": "OTHER",
+      "occurrences": 5,
+      "cooc_verses": 5,
+      "distinct_partners": 3,
+      "strength": 6
+    },
+    {
+      "name_ar": "قهار",
+      "translit": "qahhār",
+      "class": "POWER",
+      "occurrences": 6,
+      "cooc_verses": 6,
+      "distinct_partners": 1,
+      "strength": 6
+    },
+    {
+      "name_ar": "أول",
+      "translit": "awwal",
+      "class": "POWER",
+      "occurrences": 19,
+      "cooc_verses": 19,
+      "distinct_partners": 2,
+      "strength": 5
+    },
+    {
+      "name_ar": "شكور",
+      "translit": "shakūr",
+      "class": "MERCY",
+      "occurrences": 9,
+      "cooc_verses": 9,
+      "distinct_partners": 2,
+      "strength": 5
+    },
+    {
+      "name_ar": "غني",
+      "translit": "ghanī",
+      "class": "OTHER",
+      "occurrences": 4,
+      "cooc_verses": 4,
+      "distinct_partners": 3,
+      "strength": 5
+    },
+    {
+      "name_ar": "قوي",
+      "translit": "qawī",
+      "class": "POWER",
+      "occurrences": 2,
+      "cooc_verses": 2,
+      "distinct_partners": 2,
+      "strength": 4
+    }
+  ],
+  "backbone_top30_with_allah": [
+    {
+      "pair_ar": "الله + رحيم",
+      "pair_translit": "له + raḥīm",
+      "weight": 72,
+      "class_a": "OTHER",
+      "class_b": "MERCY",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + عليم",
+      "pair_translit": "له + ʿalīm",
+      "weight": 67,
+      "class_a": "OTHER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + حكيم",
+      "pair_translit": "له + ḥakīm",
+      "weight": 65,
+      "class_a": "OTHER",
+      "class_b": "POWER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + عظيم",
+      "pair_translit": "له + ʿaẓīm",
+      "weight": 59,
+      "class_a": "OTHER",
+      "class_b": "POWER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "آخر + الله",
+      "pair_translit": "ākhir + له",
+      "weight": 34,
+      "class_a": "POWER",
+      "class_b": "OTHER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + عزيز",
+      "pair_translit": "له + ʿazīz",
+      "weight": 27,
+      "class_a": "OTHER",
+      "class_b": "POWER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + غفور",
+      "pair_translit": "له + ghafūr",
+      "weight": 23,
+      "class_a": "OTHER",
+      "class_b": "MERCY",
+      "same_class": false
+    },
+    {
+      "pair_ar": "رحيم + غفور",
+      "pair_translit": "raḥīm + ghafūr",
+      "weight": 17,
+      "class_a": "MERCY",
+      "class_b": "MERCY",
+      "same_class": true
+    },
+    {
+      "pair_ar": "الله + خبير",
+      "pair_translit": "له + khabīr",
+      "weight": 14,
+      "class_a": "OTHER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + بصير",
+      "pair_translit": "له + baṣīr",
+      "weight": 14,
+      "class_a": "OTHER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "حكيم + عزيز",
+      "pair_translit": "ḥakīm + ʿazīz",
+      "weight": 13,
+      "class_a": "POWER",
+      "class_b": "POWER",
+      "same_class": true
+    },
+    {
+      "pair_ar": "الله + شهيد",
+      "pair_translit": "له + shahīd",
+      "weight": 13,
+      "class_a": "OTHER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + حميد",
+      "pair_translit": "له + ḥamīd",
+      "weight": 11,
+      "class_a": "OTHER",
+      "class_b": "POWER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + كبير",
+      "pair_translit": "له + kabīr",
+      "weight": 10,
+      "class_a": "OTHER",
+      "class_b": "POWER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + حليم",
+      "pair_translit": "له + ḥalīm",
+      "weight": 10,
+      "class_a": "OTHER",
+      "class_b": "MERCY",
+      "same_class": false
+    },
+    {
+      "pair_ar": "حكيم + عليم",
+      "pair_translit": "ḥakīm + ʿalīm",
+      "weight": 10,
+      "class_a": "POWER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + سميع",
+      "pair_translit": "له + samīʿ",
+      "weight": 8,
+      "class_a": "OTHER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + كريم",
+      "pair_translit": "له + karīm",
+      "weight": 6,
+      "class_a": "OTHER",
+      "class_b": "MERCY",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + قهار",
+      "pair_translit": "له + qahhār",
+      "weight": 6,
+      "class_a": "OTHER",
+      "class_b": "POWER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "الله + مؤمن",
+      "pair_translit": "له + muʾmin",
+      "weight": 4,
+      "class_a": "OTHER",
+      "class_b": "OTHER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "أول + الله",
+      "pair_translit": "awwal + له",
+      "weight": 4,
+      "class_a": "POWER",
+      "class_b": "OTHER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "سميع + عليم",
+      "pair_translit": "samīʿ + ʿalīm",
+      "weight": 4,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "الله + شكور",
+      "pair_translit": "له + shakūr",
+      "weight": 4,
+      "class_a": "OTHER",
+      "class_b": "MERCY",
+      "same_class": false
+    },
+    {
+      "pair_ar": "بصير + خبير",
+      "pair_translit": "baṣīr + khabīr",
+      "weight": 4,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "بصير + سميع",
+      "pair_translit": "baṣīr + samīʿ",
+      "weight": 4,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "الله + رحمن",
+      "pair_translit": "له + raḥmān",
+      "weight": 3,
+      "class_a": "OTHER",
+      "class_b": "MERCY",
+      "same_class": false
+    },
+    {
+      "pair_ar": "رحمن + رحيم",
+      "pair_translit": "raḥmān + raḥīm",
+      "weight": 3,
+      "class_a": "MERCY",
+      "class_b": "MERCY",
+      "same_class": true
+    },
+    {
+      "pair_ar": "الله + حق",
+      "pair_translit": "له + ḥaqq",
+      "weight": 3,
+      "class_a": "OTHER",
+      "class_b": "OTHER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "عزيز + عليم",
+      "pair_translit": "ʿazīz + ʿalīm",
+      "weight": 3,
+      "class_a": "POWER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "رحيم + عزيز",
+      "pair_translit": "raḥīm + ʿazīz",
+      "weight": 3,
+      "class_a": "MERCY",
+      "class_b": "POWER",
+      "same_class": false
+    }
+  ],
+  "backbone_top30_name_name": [
+    {
+      "pair_ar": "رحيم + غفور",
+      "pair_translit": "raḥīm + ghafūr",
+      "weight": 17,
+      "class_a": "MERCY",
+      "class_b": "MERCY",
+      "same_class": true
+    },
+    {
+      "pair_ar": "حكيم + عزيز",
+      "pair_translit": "ḥakīm + ʿazīz",
+      "weight": 13,
+      "class_a": "POWER",
+      "class_b": "POWER",
+      "same_class": true
+    },
+    {
+      "pair_ar": "حكيم + عليم",
+      "pair_translit": "ḥakīm + ʿalīm",
+      "weight": 10,
+      "class_a": "POWER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "سميع + عليم",
+      "pair_translit": "samīʿ + ʿalīm",
+      "weight": 4,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "بصير + خبير",
+      "pair_translit": "baṣīr + khabīr",
+      "weight": 4,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "بصير + سميع",
+      "pair_translit": "baṣīr + samīʿ",
+      "weight": 4,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "رحمن + رحيم",
+      "pair_translit": "raḥmān + raḥīm",
+      "weight": 3,
+      "class_a": "MERCY",
+      "class_b": "MERCY",
+      "same_class": true
+    },
+    {
+      "pair_ar": "عزيز + عليم",
+      "pair_translit": "ʿazīz + ʿalīm",
+      "weight": 3,
+      "class_a": "POWER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "رحيم + عزيز",
+      "pair_translit": "raḥīm + ʿazīz",
+      "weight": 3,
+      "class_a": "MERCY",
+      "class_b": "POWER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "حميد + عزيز",
+      "pair_translit": "ḥamīd + ʿazīz",
+      "weight": 3,
+      "class_a": "POWER",
+      "class_b": "POWER",
+      "same_class": true
+    },
+    {
+      "pair_ar": "آخر + عظيم",
+      "pair_translit": "ākhir + ʿaẓīm",
+      "weight": 2,
+      "class_a": "POWER",
+      "class_b": "POWER",
+      "same_class": true
+    },
+    {
+      "pair_ar": "حق + كريم",
+      "pair_translit": "ḥaqq + karīm",
+      "weight": 2,
+      "class_a": "OTHER",
+      "class_b": "MERCY",
+      "same_class": false
+    },
+    {
+      "pair_ar": "خبير + لطيف",
+      "pair_translit": "khabīr + laṭīf",
+      "weight": 2,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "خبير + عليم",
+      "pair_translit": "khabīr + ʿalīm",
+      "weight": 2,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "عزيز + قوي",
+      "pair_translit": "ʿazīz + qawī",
+      "weight": 2,
+      "class_a": "POWER",
+      "class_b": "POWER",
+      "same_class": true
+    },
+    {
+      "pair_ar": "عزيز + قدوس",
+      "pair_translit": "ʿazīz + quddūs",
+      "weight": 2,
+      "class_a": "POWER",
+      "class_b": "OTHER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "عزيز + ملك",
+      "pair_translit": "ʿazīz + malik",
+      "weight": 2,
+      "class_a": "POWER",
+      "class_b": "POWER",
+      "same_class": true
+    },
+    {
+      "pair_ar": "قدوس + ملك",
+      "pair_translit": "quddūs + malik",
+      "weight": 2,
+      "class_a": "OTHER",
+      "class_b": "POWER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "آخر + حكيم",
+      "pair_translit": "ākhir + ḥakīm",
+      "weight": 1,
+      "class_a": "POWER",
+      "class_b": "POWER",
+      "same_class": true
+    },
+    {
+      "pair_ar": "عظيم + قيوم",
+      "pair_translit": "ʿaẓīm + qayyūm",
+      "weight": 1,
+      "class_a": "POWER",
+      "class_b": "POWER",
+      "same_class": true
+    },
+    {
+      "pair_ar": "حق + حكيم",
+      "pair_translit": "ḥaqq + ḥakīm",
+      "weight": 1,
+      "class_a": "OTHER",
+      "class_b": "POWER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "أول + عظيم",
+      "pair_translit": "awwal + ʿaẓīm",
+      "weight": 1,
+      "class_a": "POWER",
+      "class_b": "POWER",
+      "same_class": true
+    },
+    {
+      "pair_ar": "رحيم + ودود",
+      "pair_translit": "raḥīm + wadūd",
+      "weight": 1,
+      "class_a": "MERCY",
+      "class_b": "MERCY",
+      "same_class": true
+    },
+    {
+      "pair_ar": "حكيم + لطيف",
+      "pair_translit": "ḥakīm + laṭīf",
+      "weight": 1,
+      "class_a": "POWER",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "بصير + شهيد",
+      "pair_translit": "baṣīr + shahīd",
+      "weight": 1,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "خبير + شهيد",
+      "pair_translit": "khabīr + shahīd",
+      "weight": 1,
+      "class_a": "KNOW",
+      "class_b": "KNOW",
+      "same_class": true
+    },
+    {
+      "pair_ar": "غني + كريم",
+      "pair_translit": "ghanī + karīm",
+      "weight": 1,
+      "class_a": "OTHER",
+      "class_b": "MERCY",
+      "same_class": false
+    },
+    {
+      "pair_ar": "حميد + غني",
+      "pair_translit": "ḥamīd + ghanī",
+      "weight": 1,
+      "class_a": "POWER",
+      "class_b": "OTHER",
+      "same_class": false
+    },
+    {
+      "pair_ar": "حليم + عليم",
+      "pair_translit": "ḥalīm + ʿalīm",
+      "weight": 1,
+      "class_a": "MERCY",
+      "class_b": "KNOW",
+      "same_class": false
+    },
+    {
+      "pair_ar": "عزيز + غفور",
+      "pair_translit": "ʿazīz + ghafūr",
+      "weight": 1,
+      "class_a": "POWER",
+      "class_b": "MERCY",
+      "same_class": false
+    }
+  ],
+  "exploratory_communities_MW7": [
+    {
+      "size": 9,
+      "members_translit": [
+        "bāriʾ",
+        "muṣawwir",
+        "qawī",
+        "wahhāb",
+        "ʿalīm",
+        "ʿazīz",
+        "ḥakīm",
+        "ḥalīm",
+        "ḥamīd"
+      ],
+      "class_composition": {
+        "POWER": 4,
+        "OTHER": 3,
+        "MERCY": 1,
+        "KNOW": 1
+      },
+      "dominant_class": "POWER"
+    },
+    {
+      "size": 6,
+      "members_translit": [
+        "ghafūr",
+        "raḥmān",
+        "raḥīm",
+        "shakūr",
+        "tawwāb",
+        "wadūd"
+      ],
+      "class_composition": {
+        "MERCY": 6
+      },
+      "dominant_class": "MERCY"
+    },
+    {
+      "size": 6,
+      "members_translit": [
+        "jabbār",
+        "malik",
+        "muhaymin",
+        "mutakabbir",
+        "muʾmin",
+        "quddūs"
+      ],
+      "class_composition": {
+        "OTHER": 3,
+        "POWER": 3
+      },
+      "dominant_class": "OTHER"
+    },
+    {
+      "size": 5,
+      "members_translit": [
+        "baṣīr",
+        "khabīr",
+        "laṭīf",
+        "samīʿ",
+        "shahīd"
+      ],
+      "class_composition": {
+        "KNOW": 5
+      },
+      "dominant_class": "KNOW"
+    },
+    {
+      "size": 4,
+      "members_translit": [
+        "barr",
+        "ghanī",
+        "karīm",
+        "ḥaqq"
+      ],
+      "class_composition": {
+        "MERCY": 2,
+        "OTHER": 2
+      },
+      "dominant_class": "MERCY"
+    },
+    {
+      "size": 4,
+      "members_translit": [
+        "awwal",
+        "qayyūm",
+        "ākhir",
+        "ʿaẓīm"
+      ],
+      "class_composition": {
+        "POWER": 4
+      },
+      "dominant_class": "POWER"
+    },
+    {
+      "size": 2,
+      "members_translit": [
+        "kabīr",
+        "ʿalī"
+      ],
+      "class_composition": {
+        "POWER": 2
+      },
+      "dominant_class": "POWER"
+    }
+  ],
+  "consistency_vs_h_new_2070": {
+    "n_verse_final_pairs_distinct": 50,
+    "top15_verse_final": [
+      {
+        "pair_translit": "raḥīm + ghafūr",
+        "vf_count": 65,
+        "full_weight_M_ADJ": 17,
+        "full_weight_M_LEM": 72,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "ḥakīm + ʿazīz",
+        "vf_count": 47,
+        "full_weight_M_ADJ": 13,
+        "full_weight_M_LEM": 47,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "ḥakīm + ʿalīm",
+        "vf_count": 36,
+        "full_weight_M_ADJ": 10,
+        "full_weight_M_LEM": 36,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "samīʿ + ʿalīm",
+        "vf_count": 31,
+        "full_weight_M_ADJ": 4,
+        "full_weight_M_LEM": 32,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "raḥīm + ʿazīz",
+        "vf_count": 13,
+        "full_weight_M_ADJ": 3,
+        "full_weight_M_LEM": 14,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "baṣīr + samīʿ",
+        "vf_count": 11,
+        "full_weight_M_ADJ": 4,
+        "full_weight_M_LEM": 12,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "tawwāb + raḥīm",
+        "vf_count": 9,
+        "full_weight_M_ADJ": 1,
+        "full_weight_M_LEM": 9,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "ḥamīd + ghanī",
+        "vf_count": 9,
+        "full_weight_M_ADJ": 1,
+        "full_weight_M_LEM": 10,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "ʿalīm + واسع",
+        "vf_count": 7,
+        "full_weight_M_ADJ": 0,
+        "full_weight_M_LEM": 0,
+        "in_M_LEM_network": false,
+        "M_LEM_ge_vf": false
+      },
+      {
+        "pair_translit": "raḥmān + raḥīm",
+        "vf_count": 6,
+        "full_weight_M_ADJ": 3,
+        "full_weight_M_LEM": 6,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "ḥalīm + ghafūr",
+        "vf_count": 6,
+        "full_weight_M_ADJ": 0,
+        "full_weight_M_LEM": 6,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "ʿazīz + ʿalīm",
+        "vf_count": 6,
+        "full_weight_M_ADJ": 3,
+        "full_weight_M_LEM": 8,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "qahhār + wāḥid",
+        "vf_count": 6,
+        "full_weight_M_ADJ": 0,
+        "full_weight_M_LEM": 0,
+        "in_M_LEM_network": false,
+        "M_LEM_ge_vf": false
+      },
+      {
+        "pair_translit": "ʿalī + kabīr",
+        "vf_count": 5,
+        "full_weight_M_ADJ": 1,
+        "full_weight_M_LEM": 5,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      },
+      {
+        "pair_translit": "khabīr + laṭīf",
+        "vf_count": 5,
+        "full_weight_M_ADJ": 2,
+        "full_weight_M_LEM": 5,
+        "in_M_LEM_network": true,
+        "M_LEM_ge_vf": true
+      }
+    ],
+    "n_top15_present_M_LEM": 13,
+    "n_top15_M_LEM_ge_vf": 13,
+    "note": "verse-final ordered seal-pairs are a SUBSET of the full within-verse co-occurrence network. Subset relation (full>=vf) is verified against the M_LEM matcher (13/15): the surface verse-final detector matches any case-form, incl. POS=N seals, so M_ADJ (POS=ADJ only) under-counts them by design — documented pre-commit nuance (§7 expectation holds under M_LEM, not M_ADJ)."
+  }
+}
