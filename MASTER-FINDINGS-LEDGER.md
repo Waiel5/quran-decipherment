@@ -5980,3 +5980,61 @@ Consistent with **H-META-1** (modern-numerology era 0/10 confirmations) and the 
 - Script: `findings/phase-b-hypotheses/scripts/h-new-2020.py`
 - JSON: `findings/phase-b-hypotheses/csv/h-new-2020.json`
 - Finding: `findings/phase-b-hypotheses/h-new-2020-word-balance-scan.md`
+
+## §10.79 Wave-L SYNTHESIS (2026-05-29) — Methodological correction: close-reading + exhaustive GENERATORS; the balanced-word miracle mechanically retired; new al-fawāṣil head/seal grammar discovered
+
+### The correction
+
+Wave-L answered a direct methodological challenge: the project had been biased toward (a) BROAD-perspective instruments (FR-distance, clustering, TSP) and (b) CONFIRMING classical claims already known. Both are limited by priors. Wave-L added two complementary modes:
+
+1. **Close-reading enumeration** — aya-by-aya / verse-run / within-verse micro-structure scanning
+2. **Exhaustive candidate-GENERATORS** — scan the WHOLE hypothesis space, let data surface candidates, then pre-register + null-test
+
+### Wave-L landings
+
+| ID | Mode | Verdict | Headline |
+|---|---|---|---|
+| H-NEW-2000 | generator/audit | (in flight) | numerical-symmetry multi-rule audit |
+| **H-NEW-2010** | **GENERATOR** | **NULL (reversed)** | **balanced-word miracle MECHANICALLY RETIRED — 118,584 exact-balances scanned; only sbH=sjd=layl=92 survives semantic filter, UNDER chance (expected 3.9)** |
+| H-NEW-2030 | generator | NULL | ring-composition (Farrin Q2 / Cuypers Q5) NOT SUPPORTED at content-root level; surahs are progressive not concentric |
+| H-NEW-2040 | generator/audit | trivial/NULL | abjad famous sums verify (786/66/92) but explanatorily empty; systematic correlations NULL |
+| H-NEW-2050 | close-reading | DIRECTIONAL | verse-length palindrome NULL; monotone GRADIENT pass (Q 52, 51, 77, 20, 15) |
+| **H-NEW-2070** | **GENERATOR** | **PASS-DIRECTED** | **verse-final divine-name pairing (al-fawāṣil) head/seal grammar — p<0.0001; raḥīm/ḥakīm seal, samīʿ never seals, ʿalīm pivot; reconstructs classical tartīb al-fāṣila** |
+| H-NEW-2090 | generator | NULL | surah-position/verse-count numerology chance-consistent; NO surah has verse-count=position |
+| **H-NEW-2100** | **close-reading** | **CONFIRMED** | **word-reduplication: exactly 8 in corpus; Q 89 al-Fajr unique with 2 consecutive pure-emphatic (dakkan dakkā + ṣaffan ṣaffā)** |
+| H-NEW-2110 | close-reading | CONFIRMED | rabbanā prayer-density: Q 14 rank-1 (re-confirms §10.42); Q 3:191-194 longest prayer-run |
+| **H-NEW-2120** | **close-reading** | **CONFIRMED** | **center-of-Quran: word-center Q 18:77 + letter-center Q 18:73 both inside al-Kahf Khaḍir narrative; wal-yatalattaf claim surah-vindicated, exact-rules-fragile** |
+| H-NEW-2130 | generator/audit | CONFIRMED-BUT-MEANINGLESS | "57/57 parity split" = exactly independence-expected (30 = 57×60/114); zero design signal |
+| **H-NEW-2140** | **close-reading** | **CONFIRMED** | **anaphora runs: 64 corpus-wide; two 9-runs (Q 26 qāla-volley + Q 52 am-cascade); mechanically rediscovers classical balāgha set-pieces** |
+| H-NEW-2150 | close-reading | CONFIRMED | rhetorical-question density: Q 67 al-Mulk champion (30%) |
+
+(In flight at synthesis: H-NEW-2020 word-balance, 2060 first/last-word, 2080 rhyme, Q 2 deep close-read.)
+
+### The two big results
+
+**1. The generator approach definitively works (H-NEW-2010).** Instead of testing the famous "balanced-word" claims one by one (which I could only do when named), the exhaustive root-frequency scanner tested the ENTIRE hypothesis space mechanically: 118,584 exact-frequency balances, semantic gazetteer of 27 antonym families + 11 co-thematic groups, 10,000-perm null. Result: meaningful balances are UNDER-represented vs chance (1 observed, 3.9 expected). The "balanced-word miracle" is retired at root level. The one survivor — sabbaḥa = sajada = layl, all 92 — is a beautiful co-thematic triple (echoing "glorify Him in the night and at prostration") but is honestly 1-of-expected-3.9.
+
+**2. New structural law discovered (H-NEW-2070).** The verse-final divine-name pairing has a strict directed head/seal grammar (p<0.0001): *ghafūr+raḥīm* (64), *ʿazīz+ḥakīm* (47), *samīʿ+ʿalīm* (31) dominate; *raḥīm*/*ḥakīm* are terminal seals, *samīʿ* never seals, *ʿalīm* is the lone bidirectional pivot. This empirically reconstructs the classical *tartīb al-fāṣila* / *murāʿāt al-fāṣila* doctrine (al-Bāqillānī, al-Zarkashī, al-Suyūṭī Itqān nawʿ 59) at law-strength.
+
+### Close-reading micro-structure findings (invisible to broad metrics)
+
+- **Q 89 al-Fajr** uniquely carries 2 consecutive-verse pure-emphatic reduplications (H-NEW-2100)
+- **Q 26:23-31 + Q 52:35-43** are the corpus's two 9-verse anaphora runs (H-NEW-2140)
+- **The center of the Quran lands inside the Khaḍir narrative** (H-NEW-2120)
+- **Q 14 Ibrāhīm** is the prayer-density champion (H-NEW-2110)
+- **Q 67 al-Mulk** is the question-density champion (H-NEW-2150)
+
+### The scale-ladder, now complete
+
+Close reading extends the cross-finding-025 scale-of-aggregation ladder to its full range:
+**corpus → region → surah → pericope → verse-run → verse → within-verse**
+
+Each scale has its own law-strength findings. Broad instruments work at corpus/region/surah; close-reading works at pericope/verse-run/verse/within-verse. The project now operates at ALL scales.
+
+### Methodological pillar additions
+
+- **Verdict class CONFIRMED-BUT-MEANINGLESS** (H-NEW-2130): a number can be real AND carry zero design signal (= chance-expected)
+- **GENERATOR mode**: scan the whole hypothesis space, null-test the survivors — the rigorous way to handle any numerology/symmetry family
+- Numerology family status: balanced-words RETIRED, abjad RETIRED, surah-arithmetic RETIRED, parity-split RETIRED, Code-19 RETIRED — all via proper nulls. Genuine rhetorical structures (anaphora, reduplication, fawāṣil-grammar, prayer-clusters, gradients) CONFIRMED.
+
+*Wave-L synthesis 2026-05-29 by Waiel Al-Shujaa. The numerology is retired; the rhetoric is real. Bismillāhi al-Raḥmāni al-Raḥīm.*
