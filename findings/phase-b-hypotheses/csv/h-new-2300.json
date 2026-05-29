@@ -1,0 +1,581 @@
+{
+  "finding_id": "H-NEW-2300",
+  "title": "Dual-name fāṣila seal-grammar — verse-content predicts the sealing name-pair (content↔seal matching)",
+  "extends": "H-NEW-2070",
+  "pre_reg_sha256": "cc1962fba93c68c14026b468d0bef6bc4b66f6b701f85f5eb64168fd7c204cb5",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon_per_cell": 0.025,
+  "bonferroni_k": 2,
+  "alpha_H3": 0.05,
+  "rules_tuple": "(no-tashkeel seal-detect + QAC-ROOT content, verse-final ordered name-pair, base-normalized to 97 al-Tirmidhī single-token names, content = body roots excl. final-2-words + seal-roots stripped, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "classes": [
+    "MERCY",
+    "POWER",
+    "KNOW"
+  ],
+  "n_verses_closing_divine_pair": 321,
+  "n_pure_class_verses": 212,
+  "pure_class_sizes": {
+    "MERCY": 94,
+    "KNOW": 56,
+    "POWER": 62
+  },
+  "n_called_primary": 91,
+  "primary_leakage_stripped": {
+    "H1_MI": {
+      "observed": 0.14994056014395357,
+      "null_mean": 0.033095581544221,
+      "null_median": 0.028092365684687717,
+      "null_p97_5": 0.09186326320817954,
+      "p_perm": 0.0011,
+      "pass": true
+    },
+    "H2_match_rate": {
+      "observed": 0.4725274725274725,
+      "null_mean": 0.36003736263736263,
+      "null_median": 0.3626373626373626,
+      "null_p97_5": 0.46153846153846156,
+      "p_perm": 0.0154,
+      "pass": true
+    },
+    "confusion_seal_rows_x_content_cols": {
+      "MERCY": {
+        "MERCY": 29,
+        "POWER": 5,
+        "KNOW": 11
+      },
+      "POWER": {
+        "MERCY": 5,
+        "POWER": 7,
+        "KNOW": 10
+      },
+      "KNOW": {
+        "MERCY": 6,
+        "POWER": 11,
+        "KNOW": 7
+      }
+    }
+  },
+  "H3_mercy_content_enriches_mercy_seal": {
+    "table_2x2": {
+      "mercy_content_AND_mercy_seal": 37,
+      "mercy_content_AND_other_seal": 17,
+      "no_mercy_content_AND_mercy_seal": 57,
+      "no_mercy_content_AND_other_seal": 101
+    },
+    "odds_ratio": 3.8565531475748194,
+    "fisher_one_sided_p": 3.247168546209565e-05,
+    "pass": true
+  },
+  "leakage_sensitivity_seal_roots_kept": {
+    "n_called": 99,
+    "MI_observed": 0.36630307704784004,
+    "MI_p_perm": 0.0,
+    "match_observed": 0.6262626262626263,
+    "match_p_perm": 0.0,
+    "note": "inflated by self-seal echo; NOT the claim under test; for contrast only"
+  },
+  "verdict": "EXTENDS H-NEW-2070 (PASS-DIRECTED-CONTENT)",
+  "top_pairs_by_seal_class": {
+    "MERCY": [
+      {
+        "pair_ar": "غفور + رحيم",
+        "pair_translit": "ghafūr + raḥīm",
+        "count": 64
+      },
+      {
+        "pair_ar": "تواب + رحيم",
+        "pair_translit": "tawwāb + raḥīm",
+        "count": 9
+      },
+      {
+        "pair_ar": "رحمن + رحيم",
+        "pair_translit": "raḥmān + raḥīm",
+        "count": 6
+      },
+      {
+        "pair_ar": "غفور + حليم",
+        "pair_translit": "ghafūr + ḥalīm",
+        "count": 4
+      },
+      {
+        "pair_ar": "عفو + غفور",
+        "pair_translit": "ʿafū + ghafūr",
+        "count": 2
+      },
+      {
+        "pair_ar": "حليم + غفور",
+        "pair_translit": "ḥalīm + ghafūr",
+        "count": 2
+      },
+      {
+        "pair_ar": "غفور + شكور",
+        "pair_translit": "ghafūr + shakūr",
+        "count": 2
+      },
+      {
+        "pair_ar": "رحيم + ودود",
+        "pair_translit": "raḥīm + wadūd",
+        "count": 1
+      },
+      {
+        "pair_ar": "رحيم + غفور",
+        "pair_translit": "raḥīm + ghafūr",
+        "count": 1
+      },
+      {
+        "pair_ar": "بر + رحيم",
+        "pair_translit": "barr + raḥīm",
+        "count": 1
+      },
+      {
+        "pair_ar": "شكور + حليم",
+        "pair_translit": "shakūr + ḥalīm",
+        "count": 1
+      },
+      {
+        "pair_ar": "غفور + ودود",
+        "pair_translit": "ghafūr + wadūd",
+        "count": 1
+      }
+    ],
+    "POWER": [
+      {
+        "pair_ar": "عزيز + حكيم",
+        "pair_translit": "ʿazīz + ḥakīm",
+        "count": 47
+      },
+      {
+        "pair_ar": "علي + كبير",
+        "pair_translit": "ʿalī + kabīr",
+        "count": 5
+      },
+      {
+        "pair_ar": "قوي + عزيز",
+        "pair_translit": "qawī + ʿazīz",
+        "count": 5
+      },
+      {
+        "pair_ar": "علي + عظيم",
+        "pair_translit": "ʿalī + ʿaẓīm",
+        "count": 2
+      },
+      {
+        "pair_ar": "متكبر + جبار",
+        "pair_translit": "mutakabbir + jabbār",
+        "count": 1
+      },
+      {
+        "pair_ar": "علي + حكيم",
+        "pair_translit": "ʿalī + ḥakīm",
+        "count": 1
+      },
+      {
+        "pair_ar": "عزيز + مقتدر",
+        "pair_translit": "ʿazīz + muqtadir",
+        "count": 1
+      }
+    ],
+    "KNOW": [
+      {
+        "pair_ar": "سميع + عليم",
+        "pair_translit": "samīʿ + ʿalīm",
+        "count": 31
+      },
+      {
+        "pair_ar": "سميع + بصير",
+        "pair_translit": "samīʿ + baṣīr",
+        "count": 11
+      },
+      {
+        "pair_ar": "لطيف + خبير",
+        "pair_translit": "laṭīf + khabīr",
+        "count": 5
+      },
+      {
+        "pair_ar": "عليم + خبير",
+        "pair_translit": "ʿalīm + khabīr",
+        "count": 4
+      },
+      {
+        "pair_ar": "خبير + بصير",
+        "pair_translit": "khabīr + baṣīr",
+        "count": 4
+      },
+      {
+        "pair_ar": "حفيظ + عليم",
+        "pair_translit": "ḥafīẓ + ʿalīm",
+        "count": 1
+      }
+    ]
+  },
+  "n_mercy_matched_examples": 37,
+  "mercy_matched_examples": [
+    {
+      "loc": "Q2:54",
+      "seal": "tawwāb raḥīm",
+      "mercy_content_roots": [
+        "Zlm"
+      ]
+    },
+    {
+      "loc": "Q2:173",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Avm",
+        "Edw",
+        "bgy"
+      ]
+    },
+    {
+      "loc": "Q2:182",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Avm"
+      ]
+    },
+    {
+      "loc": "Q3:31",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "*nb"
+      ]
+    },
+    {
+      "loc": "Q3:89",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q3:155",
+      "seal": "ghafūr ḥalīm",
+      "mercy_content_roots": [
+        "Efw"
+      ]
+    },
+    {
+      "loc": "Q4:64",
+      "seal": "tawwāb raḥīm",
+      "mercy_content_roots": [
+        "Zlm",
+        "gfr"
+      ]
+    },
+    {
+      "loc": "Q4:110",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Zlm",
+        "swA"
+      ]
+    },
+    {
+      "loc": "Q5:3",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Avm",
+        "fsq"
+      ]
+    },
+    {
+      "loc": "Q5:34",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q5:39",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Zlm",
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q5:74",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q5:101",
+      "seal": "ghafūr ḥalīm",
+      "mercy_content_roots": [
+        "Efw",
+        "swA"
+      ]
+    },
+    {
+      "loc": "Q6:54",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "swA",
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q6:145",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Edw",
+        "bgy",
+        "fsq"
+      ]
+    },
+    {
+      "loc": "Q9:5",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q9:27",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q9:102",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "*nb",
+        "swA",
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q11:90",
+      "seal": "raḥīm wadūd",
+      "mercy_content_roots": [
+        "gfr",
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q12:53",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "swA"
+      ]
+    },
+    {
+      "loc": "Q16:115",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Edw",
+        "bgy"
+      ]
+    },
+    {
+      "loc": "Q24:5",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q24:22",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Efw"
+      ]
+    },
+    {
+      "loc": "Q24:33",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "bgy"
+      ]
+    },
+    {
+      "loc": "Q25:70",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "swA",
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q27:11",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Zlm",
+        "swA"
+      ]
+    },
+    {
+      "loc": "Q28:16",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Zlm"
+      ]
+    },
+    {
+      "loc": "Q33:5",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "xTA"
+      ]
+    },
+    {
+      "loc": "Q33:24",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q33:73",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "twb"
+      ]
+    },
+    {
+      "loc": "Q39:53",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "*nb"
+      ]
+    },
+    {
+      "loc": "Q49:12",
+      "seal": "tawwāb raḥīm",
+      "mercy_content_roots": [
+        "Avm"
+      ]
+    },
+    {
+      "loc": "Q60:7",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Edw"
+      ]
+    },
+    {
+      "loc": "Q64:14",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "Edw",
+        "Efw"
+      ]
+    },
+    {
+      "loc": "Q64:17",
+      "seal": "shakūr ḥalīm",
+      "mercy_content_roots": [
+        "gfr"
+      ]
+    },
+    {
+      "loc": "Q66:1",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "bgy"
+      ]
+    },
+    {
+      "loc": "Q73:20",
+      "seal": "ghafūr raḥīm",
+      "mercy_content_roots": [
+        "bgy",
+        "twb"
+      ]
+    }
+  ],
+  "n_power_matched_examples": 12,
+  "power_matched_examples": [
+    {
+      "loc": "Q2:129",
+      "seal": "ʿazīz ḥakīm",
+      "power_content_roots": [
+        "ktb"
+      ]
+    },
+    {
+      "loc": "Q3:18",
+      "seal": "ʿazīz ḥakīm",
+      "power_content_roots": [
+        "mlk"
+      ]
+    },
+    {
+      "loc": "Q9:71",
+      "seal": "ʿazīz ḥakīm",
+      "power_content_roots": [
+        "Amr"
+      ]
+    },
+    {
+      "loc": "Q11:66",
+      "seal": "qawī ʿazīz",
+      "power_content_roots": [
+        "Amr"
+      ]
+    },
+    {
+      "loc": "Q33:25",
+      "seal": "qawī ʿazīz",
+      "power_content_roots": [
+        "qtl"
+      ]
+    },
+    {
+      "loc": "Q39:1",
+      "seal": "ʿazīz ḥakīm",
+      "power_content_roots": [
+        "ktb"
+      ]
+    },
+    {
+      "loc": "Q40:12",
+      "seal": "ʿalī kabīr",
+      "power_content_roots": [
+        "Hkm"
+      ]
+    },
+    {
+      "loc": "Q45:2",
+      "seal": "ʿazīz ḥakīm",
+      "power_content_roots": [
+        "ktb"
+      ]
+    },
+    {
+      "loc": "Q46:2",
+      "seal": "ʿazīz ḥakīm",
+      "power_content_roots": [
+        "ktb"
+      ]
+    },
+    {
+      "loc": "Q57:25",
+      "seal": "qawī ʿazīz",
+      "power_content_roots": [
+        "ktb"
+      ]
+    },
+    {
+      "loc": "Q58:21",
+      "seal": "qawī ʿazīz",
+      "power_content_roots": [
+        "glb",
+        "ktb"
+      ]
+    },
+    {
+      "loc": "Q62:1",
+      "seal": "ʿazīz ḥakīm",
+      "power_content_roots": [
+        "mlk"
+      ]
+    }
+  ]
+}
