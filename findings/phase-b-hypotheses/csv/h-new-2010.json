@@ -1,0 +1,1139 @@
+{
+  "id": "H-NEW-2010",
+  "title": "Exhaustive root-frequency exact-equality balance scan + semantic over-representation null",
+  "prereg_sha256": "c0d92b61a614af48cf14bbf455d86f39de9629facce6aef708be6887b9ce72b2",
+  "rules_tuple": "(no-tashkeel, QAC-root, total-attestations, basmala-as-QAC, Hafs-Kufan, Mashriqi)",
+  "seed_primary": 20260509,
+  "seed_replicate": 20260530,
+  "n_perm": 10000,
+  "n_roots": 1642,
+  "scan": {
+    "n_distinct_counts": 185,
+    "n_shared_buckets": 93,
+    "total_exact_balance_pairs": 118584,
+    "n_roots_unique_count": 92,
+    "bucket_size_distribution": {
+      "1": 92,
+      "2": 32,
+      "3": 12,
+      "4": 7,
+      "5": 4,
+      "6": 5,
+      "7": 2,
+      "8": 3,
+      "9": 2,
+      "10": 3,
+      "11": 2,
+      "12": 2,
+      "13": 4,
+      "14": 2,
+      "26": 1,
+      "27": 2,
+      "29": 1,
+      "32": 2,
+      "36": 1,
+      "53": 1,
+      "89": 1,
+      "96": 1,
+      "121": 1,
+      "197": 1,
+      "395": 1
+    }
+  },
+  "dropped_families": {
+    "heaven/hell": "hell-root jhnm/nar absent as a QAC root; root-level only"
+  },
+  "n_tagged_roots": 67,
+  "T1_test": {
+    "full": {
+      "name": "full-gazetteer",
+      "M_obs": 1,
+      "n_perm": 10000,
+      "null_mean": 3.9236,
+      "null_median": 4.0,
+      "null_max": 14,
+      "null_min": 0,
+      "p_one_tailed_ge": 0.9792020797920208,
+      "exceeds_median": false
+    },
+    "antonym": {
+      "name": "antonym-only",
+      "M_obs": 0,
+      "n_perm": 10000,
+      "null_mean": 2.953,
+      "null_median": 3.0,
+      "null_max": 11,
+      "null_min": 0,
+      "p_one_tailed_ge": 1.0,
+      "exceeds_median": false
+    },
+    "cothematic": {
+      "name": "cothematic-only",
+      "M_obs": 1,
+      "n_perm": 10000,
+      "null_mean": 0.9706,
+      "null_median": 1.0,
+      "null_max": 6,
+      "null_min": 0,
+      "p_one_tailed_ge": 0.6397360263973603,
+      "exceeds_median": false
+    },
+    "full_replicate": {
+      "name": "full-gazetteer-seed-20260530",
+      "M_obs": 1,
+      "n_perm": 10000,
+      "null_mean": 3.92,
+      "null_median": 4.0,
+      "null_max": 14,
+      "null_min": 0,
+      "p_one_tailed_ge": 0.9793020697930207,
+      "exceeds_median": false
+    },
+    "decoy_control": {
+      "name": "decoy-gazetteer (MW-6)",
+      "M_obs": 4,
+      "n_perm": 10000,
+      "null_mean": 4.0027,
+      "null_median": 4.0,
+      "null_max": 14,
+      "null_min": 0,
+      "p_one_tailed_ge": 0.5682431756824318,
+      "exceeds_median": false
+    }
+  },
+  "all_meaningful_pairs_full": [
+    {
+      "count": 92,
+      "root_a": "sbH",
+      "root_b": "sjd",
+      "families": [
+        "glorify/prostrate"
+      ]
+    }
+  ],
+  "ranked_top30_most_surprising": [
+    {
+      "count": 92,
+      "bucket_size": 3,
+      "root_a": "sbH",
+      "arabic_a": "سبح",
+      "gloss_a": "to glorify (tasbih)",
+      "root_b": "sjd",
+      "arabic_b": "سجد",
+      "gloss_b": "to prostrate",
+      "families": [
+        "glorify/prostrate"
+      ],
+      "tier": "C"
+    }
+  ],
+  "high_count_shared_buckets_ge50": [
+    {
+      "count": 201,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "End",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "jnn",
+          "ar": "جنن",
+          "gloss": "garden/paradise/jinn"
+        }
+      ]
+    },
+    {
+      "count": 194,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Hsn",
+          "ar": "حسن",
+          "gloss": "good/beautiful"
+        },
+        {
+          "r": "nwr",
+          "ar": "نور",
+          "gloss": "light"
+        }
+      ]
+    },
+    {
+      "count": 184,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Hyy",
+          "ar": "حيي",
+          "gloss": "life/to live"
+        },
+        {
+          "r": "bny",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 170,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Awl",
+          "ar": "اول",
+          "gloss": "first/former"
+        },
+        {
+          "r": "qtl",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 168,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "$rk",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "qlb",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 167,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "kvr",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "swA",
+          "ar": "سوا",
+          "gloss": "evil/bad"
+        }
+      ]
+    },
+    {
+      "count": 160,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "$hd",
+          "ar": "شهد",
+          "gloss": "witness/seen"
+        },
+        {
+          "r": "nbA",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 158,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "bED",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "nSr",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 148,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "bSr",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "rwd",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 140,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "nEm",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "slm",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 129,
+      "n_roots": 4,
+      "roots": [
+        {
+          "r": "TwE",
+          "ar": "طوع",
+          "gloss": "obedience/to obey"
+        },
+        {
+          "r": "jmE",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "nZr",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "sAl",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 127,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Ahl",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "xlf",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 123,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "b$r",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "rzq",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 119,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Amm",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "Ezz",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 109,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Akl",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "Hsb",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 108,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Ajr",
+          "ar": "اجر",
+          "gloss": "reward/wage"
+        },
+        {
+          "r": "fEl",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 104,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "fDl",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "rjE",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 102,
+      "n_roots": 3,
+      "roots": [
+        {
+          "r": "$dd",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "A*n",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "wld",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 97,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Ans",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "SHb",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 96,
+      "n_roots": 3,
+      "roots": [
+        {
+          "r": "Axw",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "bgy",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "qrb",
+          "ar": "قرب",
+          "gloss": "near/to approach"
+        }
+      ]
+    },
+    {
+      "count": 92,
+      "n_roots": 3,
+      "roots": [
+        {
+          "r": "lyl",
+          "ar": "ليل",
+          "gloss": "night"
+        },
+        {
+          "r": "sbH",
+          "ar": "سبح",
+          "gloss": "to glorify (tasbih)"
+        },
+        {
+          "r": "sjd",
+          "ar": "سجد",
+          "gloss": "to prostrate"
+        }
+      ]
+    },
+    {
+      "count": 88,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "$Tn",
+          "ar": "شطن",
+          "gloss": "Satan/devil"
+        },
+        {
+          "r": "qrA",
+          "ar": "قرا",
+          "gloss": "to recite/read (Quran)"
+        }
+      ]
+    },
+    {
+      "count": 87,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "twb",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "xld",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 83,
+      "n_roots": 3,
+      "roots": [
+        {
+          "r": "Hrm",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "kyf",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "swy",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 78,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "wHy",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "wjh",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 77,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Swb",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "blg",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 75,
+      "n_roots": 3,
+      "roots": [
+        {
+          "r": "$kr",
+          "ar": "شكر",
+          "gloss": "gratitude/to thank"
+        },
+        {
+          "r": "Alm",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "klm",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 73,
+      "n_roots": 5,
+      "roots": [
+        {
+          "r": "bAs",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "byt",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "gny",
+          "ar": "غني",
+          "gloss": "wealthy/rich"
+        },
+        {
+          "r": "rDw",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "rjl",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 70,
+      "n_roots": 4,
+      "roots": [
+        {
+          "r": "Elw",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "Erf",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "mtE",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "wkl",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 69,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Znn",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "skn",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 68,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "hlk",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "wHd",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 67,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "bEv",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "ksb",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 66,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "jrm",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "wfy",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 65,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Eyn",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "xsr",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 64,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Hml",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "jry",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 63,
+      "n_roots": 7,
+      "roots": [
+        {
+          "r": "*wq",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "Ewd",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "Hmd",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "mwh",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "qDy",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "sHr",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "tlw",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 61,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "mss",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "zyd",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 60,
+      "n_roots": 3,
+      "roots": [
+        {
+          "r": "fry",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "ftn",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "gyb",
+          "ar": "غيب",
+          "gloss": "unseen/hidden"
+        }
+      ]
+    },
+    {
+      "count": 59,
+      "n_roots": 4,
+      "roots": [
+        {
+          "r": "Zhr",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "nsw",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "rdd",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "zkw",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 57,
+      "n_roots": 3,
+      "roots": [
+        {
+          "r": "Edd",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "qry",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "rwH",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 56,
+      "n_roots": 3,
+      "roots": [
+        {
+          "r": "*hb",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "Ajl",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "nhy",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 52,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "DEf",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "xbr",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 51,
+      "n_roots": 2,
+      "roots": [
+        {
+          "r": "Hll",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "tHt",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    },
+    {
+      "count": 50,
+      "n_roots": 3,
+      "roots": [
+        {
+          "r": "Tyb",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "fsd",
+          "ar": "",
+          "gloss": ""
+        },
+        {
+          "r": "nfE",
+          "ar": "",
+          "gloss": ""
+        }
+      ]
+    }
+  ],
+  "antonym_families_exact_balance_status": {
+    "heaven/earth": {
+      "members": {
+        "smw": 381,
+        "ArD": 461
+      },
+      "any_exact_equal_within_family": false
+    },
+    "life/death": {
+      "members": {
+        "Hyy": 184,
+        "mwt": 165
+      },
+      "any_exact_equal_within_family": false
+    },
+    "dunya/akhira": {
+      "members": {
+        "dnw": 133,
+        "Axr": 250
+      },
+      "any_exact_equal_within_family": false
+    },
+    "sun/moon": {
+      "members": {
+        "$ms": 33,
+        "qmr": 27
+      },
+      "any_exact_equal_within_family": false
+    },
+    "guidance/misguidance": {
+      "members": {
+        "hdy": 316,
+        "Dll": 191
+      },
+      "any_exact_equal_within_family": false
+    },
+    "day/night": {
+      "members": {
+        "ywm": 405,
+        "nhr": 113,
+        "lyl": 92
+      },
+      "any_exact_equal_within_family": false
+    },
+    "secret/open": {
+      "members": {
+        "srr": 44,
+        "Eln": 16
+      },
+      "any_exact_equal_within_family": false
+    },
+    "east/west": {
+      "members": {
+        "$rq": 17,
+        "grb": 19
+      },
+      "any_exact_equal_within_family": false
+    },
+    "faith/disbelief": {
+      "members": {
+        "Amn": 879,
+        "kfr": 525
+      },
+      "any_exact_equal_within_family": false
+    },
+    "male/female": {
+      "members": {
+        "*kr": 292,
+        "Anv": 30
+      },
+      "any_exact_equal_within_family": false
+    },
+    "good/evil": {
+      "members": {
+        "Hsn": 194,
+        "swA": 167
+      },
+      "any_exact_equal_within_family": false
+    },
+    "truth/falsehood": {
+      "members": {
+        "Hqq": 287,
+        "bTl": 36
+      },
+      "any_exact_equal_within_family": false
+    },
+    "ease/difficulty": {
+      "members": {
+        "ysr": 44,
+        "Esr": 12
+      },
+      "any_exact_equal_within_family": false
+    },
+    "light/darkness": {
+      "members": {
+        "nwr": 194,
+        "Zlm": 315
+      },
+      "any_exact_equal_within_family": false
+    },
+    "wealthy/poor": {
+      "members": {
+        "gny": 73,
+        "fqr": 14
+      },
+      "any_exact_equal_within_family": false
+    },
+    "seen/unseen": {
+      "members": {
+        "$hd": 160,
+        "gyb": 60
+      },
+      "any_exact_equal_within_family": false
+    },
+    "remember/forget": {
+      "members": {
+        "*kr": 292,
+        "nsy": 45
+      },
+      "any_exact_equal_within_family": false
+    },
+    "first/last": {
+      "members": {
+        "Awl": 170,
+        "Axr": 250
+      },
+      "any_exact_equal_within_family": false
+    },
+    "give/withhold": {
+      "members": {
+        "Aty": 549,
+        "mnE": 17,
+        "bxl": 12
+      },
+      "any_exact_equal_within_family": false
+    },
+    "near/far": {
+      "members": {
+        "qrb": 96,
+        "bEd": 235
+      },
+      "any_exact_equal_within_family": false
+    },
+    "pure/impure": {
+      "members": {
+        "Thr": 31,
+        "njs": 1,
+        "rjs": 10
+      },
+      "any_exact_equal_within_family": false
+    },
+    "obedience/disobed": {
+      "members": {
+        "TwE": 129,
+        "ESy": 32
+      },
+      "any_exact_equal_within_family": false
+    },
+    "grateful/ungrateful": {
+      "members": {
+        "$kr": 75,
+        "kfr": 525
+      },
+      "any_exact_equal_within_family": false
+    },
+    "mercy/wrath": {
+      "members": {
+        "rHm": 339,
+        "gDb": 24
+      },
+      "any_exact_equal_within_family": false
+    },
+    "reward/punishment": {
+      "members": {
+        "Ajr": 108,
+        "E*b": 373
+      },
+      "any_exact_equal_within_family": false
+    },
+    "speak/silent": {
+      "members": {
+        "qwl": 1722,
+        "Smt": 1,
+        "nSt": 2
+      },
+      "any_exact_equal_within_family": false
+    }
+  }
+}
