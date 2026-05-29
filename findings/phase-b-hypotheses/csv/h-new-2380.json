@@ -1,0 +1,1017 @@
+{
+  "finding": "H-NEW-2380",
+  "title": "Cross-surah near-twin verse census (<=k token edits) + revelation proximity",
+  "prereg_sha256": "42828931e11e5d432a1b570adb98071c1a58f053ccfcfeefdfc4b219a24ae8b9",
+  "seed": 20260509,
+  "nperm": 10000,
+  "k_primary": 2,
+  "min_tokens_primary": 8,
+  "tokenization": "no-tashkeel, waqf/pause-marks stripped, NFC, whitespace; cross-surah only; d=0 excluded",
+  "counts": {
+    "near_twin_verse_pairs": 32,
+    "near_twin_verse_pairs_d1": 17,
+    "near_twin_verse_pairs_d2": 15,
+    "near_twin_distinct_surah_pairs": 31,
+    "exact_strip_surah_pairs": 17
+  },
+  "primary": {
+    "D_obs_mean_rev_distance": 21.097,
+    "null_mean": 38.287,
+    "p_one_sided_closer": 0.0001,
+    "direction_locked": "near-twins closer than random",
+    "verdict": "CONFIRMED"
+  },
+  "s3_exact_vs_near": {
+    "D_obs_near": 21.097,
+    "p_near": 0.0001,
+    "D_obs_exact": 15.176,
+    "p_exact": 0.0001,
+    "null_mean": 38.287,
+    "more_clustered": "exact"
+  },
+  "robustness": {
+    "D_obs_noldeke": 13.29,
+    "period_concordant_pairs": 27,
+    "total_surah_pairs": 31,
+    "p_concordance": 0.0028
+  },
+  "s6_ladder": {
+    "L6_k1": {
+      "verse_pairs": 40,
+      "surah_pairs": 36,
+      "D_obs_rev": 19.556
+    },
+    "L6_k2": {
+      "verse_pairs": 65,
+      "surah_pairs": 57,
+      "D_obs_rev": 19.404
+    },
+    "L6_k3": {
+      "verse_pairs": 139,
+      "surah_pairs": 119,
+      "D_obs_rev": 18.521
+    },
+    "L8_k1": {
+      "verse_pairs": 17,
+      "surah_pairs": 16,
+      "D_obs_rev": 21.062
+    },
+    "L8_k2": {
+      "verse_pairs": 32,
+      "surah_pairs": 31,
+      "D_obs_rev": 21.097
+    },
+    "L8_k3": {
+      "verse_pairs": 64,
+      "surah_pairs": 61,
+      "D_obs_rev": 18.721
+    },
+    "L10_k1": {
+      "verse_pairs": 7,
+      "surah_pairs": 6,
+      "D_obs_rev": 21.5
+    },
+    "L10_k2": {
+      "verse_pairs": 16,
+      "surah_pairs": 15,
+      "D_obs_rev": 23.533
+    },
+    "L10_k3": {
+      "verse_pairs": 31,
+      "surah_pairs": 30,
+      "D_obs_rev": 17.467
+    }
+  },
+  "edit_taxonomy": {
+    "name/epithet or lexical substitution": 22,
+    "single-word ins-del": 11,
+    "connective/particle ins-del": 4,
+    "rhyme/final-word swap": 4,
+    "connective/particle swap": 3,
+    "pronoun/inflection shift": 3
+  },
+  "census": [
+    {
+      "dist": 1,
+      "ref_a": "3:51",
+      "ref_b": "19:36",
+      "surah_a": 3,
+      "surah_b": 19,
+      "name_a": "آل عمران",
+      "name_b": "مريم",
+      "region_a": "medinan",
+      "region_b": "meccan",
+      "rev_a": 89,
+      "rev_b": 44,
+      "rev_dist": 45,
+      "tok_a": 8,
+      "tok_b": 8,
+      "text_a": "إن الله ربي وربكم فاعبدوه هذا صراط مستقيم",
+      "text_b": "وإن الله ربي وربكم فاعبدوه هذا صراط مستقيم",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "إن",
+          "to": "وإن",
+          "type": "connective/particle swap"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "3:51",
+      "ref_b": "43:64",
+      "surah_a": 3,
+      "surah_b": 43,
+      "name_a": "آل عمران",
+      "name_b": "الزخرف",
+      "region_a": "medinan",
+      "region_b": "meccan",
+      "rev_a": 89,
+      "rev_b": 63,
+      "rev_dist": 26,
+      "tok_a": 8,
+      "tok_b": 9,
+      "text_a": "إن الله ربي وربكم فاعبدوه هذا صراط مستقيم",
+      "text_b": "إن الله هو ربي وربكم فاعبدوه هذا صراط مستقيم",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "هو",
+          "type": "connective/particle ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "3:182",
+      "ref_b": "22:10",
+      "surah_a": 3,
+      "surah_b": 22,
+      "name_a": "آل عمران",
+      "name_b": "الحج",
+      "region_a": "medinan",
+      "region_b": "medinan",
+      "rev_a": 89,
+      "rev_b": 103,
+      "rev_dist": 14,
+      "tok_a": 9,
+      "tok_b": 9,
+      "text_a": "ذلك بما قدمت أيديكم وأن الله ليس بظلام للعبيد",
+      "text_b": "ذلك بما قدمت يداك وأن الله ليس بظلام للعبيد",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "أيديكم",
+          "to": "يداك",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "7:45",
+      "ref_b": "11:19",
+      "surah_a": 7,
+      "surah_b": 11,
+      "name_a": "الأعراف",
+      "name_b": "هود",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 39,
+      "rev_b": 52,
+      "rev_dist": 13,
+      "tok_a": 10,
+      "tok_b": 11,
+      "text_a": "الذين يصدون عن سبيل الله ويبغونها عوجا وهم بالآخرة كافرون",
+      "text_b": "الذين يصدون عن سبيل الله ويبغونها عوجا وهم بالآخرة هم كافرون",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "هم",
+          "type": "connective/particle ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "8:51",
+      "ref_b": "22:10",
+      "surah_a": 8,
+      "surah_b": 22,
+      "name_a": "الأنفال",
+      "name_b": "الحج",
+      "region_a": "medinan",
+      "region_b": "medinan",
+      "rev_a": 88,
+      "rev_b": 103,
+      "rev_dist": 15,
+      "tok_a": 9,
+      "tok_b": 9,
+      "text_a": "ذلك بما قدمت أيديكم وأن الله ليس بظلام للعبيد",
+      "text_b": "ذلك بما قدمت يداك وأن الله ليس بظلام للعبيد",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "أيديكم",
+          "to": "يداك",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "12:22",
+      "ref_b": "28:14",
+      "surah_a": 12,
+      "surah_b": 28,
+      "name_a": "يوسف",
+      "name_b": "القصص",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 53,
+      "rev_b": 49,
+      "rev_dist": 4,
+      "tok_a": 9,
+      "tok_b": 10,
+      "text_a": "ولما بلغ أشده آتيناه حكما وعلما وكذلك نجزي المحسنين",
+      "text_b": "ولما بلغ أشده واستوى آتيناه حكما وعلما وكذلك نجزي المحسنين",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "واستوى",
+          "type": "single-word ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "15:11",
+      "ref_b": "43:7",
+      "surah_a": 15,
+      "surah_b": 43,
+      "name_a": "الحجر",
+      "name_b": "الزخرف",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 54,
+      "rev_b": 63,
+      "rev_dist": 9,
+      "tok_a": 8,
+      "tok_b": 8,
+      "text_a": "وما يأتيهم من رسول إلا كانوا به يستهزئون",
+      "text_b": "وما يأتيهم من نبي إلا كانوا به يستهزئون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "رسول",
+          "to": "نبي",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "16:43",
+      "ref_b": "21:7",
+      "surah_a": 16,
+      "surah_b": 21,
+      "name_a": "النحل",
+      "name_b": "الأنبياء",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 70,
+      "rev_b": 73,
+      "rev_dist": 3,
+      "tok_a": 15,
+      "tok_b": 14,
+      "text_a": "وما أرسلنا من قبلك إلا رجالا نوحي إليهم فاسألوا أهل الذكر إن كنتم لا تعلمون",
+      "text_b": "وما أرسلنا قبلك إلا رجالا نوحي إليهم فاسألوا أهل الذكر إن كنتم لا تعلمون",
+      "edits": [
+        {
+          "op": "del",
+          "from": "من",
+          "to": null,
+          "type": "single-word ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "22:62",
+      "ref_b": "31:30",
+      "surah_a": 22,
+      "surah_b": 31,
+      "name_a": "الحج",
+      "name_b": "لقمان",
+      "region_a": "medinan",
+      "region_b": "meccan",
+      "rev_a": 103,
+      "rev_b": 57,
+      "rev_dist": 46,
+      "tok_a": 17,
+      "tok_b": 16,
+      "text_a": "ذلك بأن الله هو الحق وأن ما يدعون من دونه هو الباطل وأن الله هو العلي الكبير",
+      "text_b": "ذلك بأن الله هو الحق وأن ما يدعون من دونه الباطل وأن الله هو العلي الكبير",
+      "edits": [
+        {
+          "op": "del",
+          "from": "هو",
+          "to": null,
+          "type": "connective/particle ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "26:24",
+      "ref_b": "44:7",
+      "surah_a": 26,
+      "surah_b": 44,
+      "name_a": "الشعراء",
+      "name_b": "الدخان",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 47,
+      "rev_b": 64,
+      "rev_dist": 17,
+      "tok_a": 9,
+      "tok_b": 8,
+      "text_a": "قال رب السماوات والأرض وما بينهما إن كنتم موقنين",
+      "text_b": "رب السماوات والأرض وما بينهما إن كنتم موقنين",
+      "edits": [
+        {
+          "op": "del",
+          "from": "قال",
+          "to": null,
+          "type": "single-word ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "27:80",
+      "ref_b": "30:52",
+      "surah_a": 27,
+      "surah_b": 30,
+      "name_a": "النمل",
+      "name_b": "الروم",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 48,
+      "rev_b": 84,
+      "rev_dist": 36,
+      "tok_a": 11,
+      "tok_b": 11,
+      "text_a": "إنك لا تسمع الموتى ولا تسمع الصم الدعاء إذا ولوا مدبرين",
+      "text_b": "فإنك لا تسمع الموتى ولا تسمع الصم الدعاء إذا ولوا مدبرين",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "إنك",
+          "to": "فإنك",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "27:81",
+      "ref_b": "30:53",
+      "surah_a": 27,
+      "surah_b": 30,
+      "name_a": "النمل",
+      "name_b": "الروم",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 48,
+      "rev_b": 84,
+      "rev_dist": 36,
+      "tok_a": 14,
+      "tok_b": 14,
+      "text_a": "وما أنت بهادي العمي عن ضلالتهم إن تسمع إلا من يؤمن بآياتنا فهم مسلمون",
+      "text_b": "وما أنت بهاد العمي عن ضلالتهم إن تسمع إلا من يؤمن بآياتنا فهم مسلمون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "بهادي",
+          "to": "بهاد",
+          "type": "pronoun/inflection shift"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "30:37",
+      "ref_b": "39:52",
+      "surah_a": 30,
+      "surah_b": 39,
+      "name_a": "الروم",
+      "name_b": "الزمر",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 84,
+      "rev_b": 59,
+      "rev_dist": 25,
+      "tok_a": 15,
+      "tok_b": 15,
+      "text_a": "أولم يروا أن الله يبسط الرزق لمن يشاء ويقدر إن في ذلك لآيات لقوم يؤمنون",
+      "text_b": "أولم يعلموا أن الله يبسط الرزق لمن يشاء ويقدر إن في ذلك لآيات لقوم يؤمنون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "يروا",
+          "to": "يعلموا",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "39:48",
+      "ref_b": "45:33",
+      "surah_a": 39,
+      "surah_b": 45,
+      "name_a": "الزمر",
+      "name_b": "الجاثية",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 59,
+      "rev_b": 65,
+      "rev_dist": 6,
+      "tok_a": 11,
+      "tok_b": 11,
+      "text_a": "وبدا لهم سيئات ما كسبوا وحاق بهم ما كانوا به يستهزئون",
+      "text_b": "وبدا لهم سيئات ما عملوا وحاق بهم ما كانوا به يستهزئون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "كسبوا",
+          "to": "عملوا",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "39:72",
+      "ref_b": "40:76",
+      "surah_a": 39,
+      "surah_b": 40,
+      "name_a": "الزمر",
+      "name_b": "غافر",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 59,
+      "rev_b": 60,
+      "rev_dist": 1,
+      "tok_a": 9,
+      "tok_b": 8,
+      "text_a": "قيل ادخلوا أبواب جهنم خالدين فيها فبئس مثوى المتكبرين",
+      "text_b": "ادخلوا أبواب جهنم خالدين فيها فبئس مثوى المتكبرين",
+      "edits": [
+        {
+          "op": "del",
+          "from": "قيل",
+          "to": null,
+          "type": "single-word ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "41:8",
+      "ref_b": "84:25",
+      "surah_a": 41,
+      "surah_b": 84,
+      "name_a": "فصلت",
+      "name_b": "الإنشقاق",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 61,
+      "rev_b": 83,
+      "rev_dist": 22,
+      "tok_a": 9,
+      "tok_b": 9,
+      "text_a": "إن الذين آمنوا وعملوا الصالحات لهم أجر غير ممنون",
+      "text_b": "إلا الذين آمنوا وعملوا الصالحات لهم أجر غير ممنون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "إن",
+          "to": "إلا",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 1,
+      "ref_a": "84:25",
+      "ref_b": "95:6",
+      "surah_a": 84,
+      "surah_b": 95,
+      "name_a": "الإنشقاق",
+      "name_b": "التين",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 83,
+      "rev_b": 28,
+      "rev_dist": 55,
+      "tok_a": 9,
+      "tok_b": 9,
+      "text_a": "إلا الذين آمنوا وعملوا الصالحات لهم أجر غير ممنون",
+      "text_b": "إلا الذين آمنوا وعملوا الصالحات فلهم أجر غير ممنون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "لهم",
+          "to": "فلهم",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "2:49",
+      "ref_b": "7:141",
+      "surah_a": 2,
+      "surah_b": 7,
+      "name_a": "البقرة",
+      "name_b": "الأعراف",
+      "region_a": "medinan",
+      "region_b": "meccan",
+      "rev_a": 87,
+      "rev_b": 39,
+      "rev_dist": 48,
+      "tok_a": 18,
+      "tok_b": 18,
+      "text_a": "وإذ نجيناكم من آل فرعون يسومونكم سوء العذاب يذبحون أبناءكم ويستحيون نساءكم وفي ذلكم بلاء من ربكم عظيم",
+      "text_b": "وإذ أنجيناكم من آل فرعون يسومونكم سوء العذاب يقتلون أبناءكم ويستحيون نساءكم وفي ذلكم بلاء من ربكم عظيم",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "نجيناكم",
+          "to": "أنجيناكم",
+          "type": "name/epithet or lexical substitution"
+        },
+        {
+          "op": "sub",
+          "from": "يذبحون",
+          "to": "يقتلون",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "2:95",
+      "ref_b": "62:7",
+      "surah_a": 2,
+      "surah_b": 62,
+      "name_a": "البقرة",
+      "name_b": "الجمعة",
+      "region_a": "medinan",
+      "region_b": "medinan",
+      "rev_a": 87,
+      "rev_b": 110,
+      "rev_dist": 23,
+      "tok_a": 9,
+      "tok_b": 9,
+      "text_a": "ولن يتمنوه أبدا بما قدمت أيديهم والله عليم بالظالمين",
+      "text_b": "ولا يتمنونه أبدا بما قدمت أيديهم والله عليم بالظالمين",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "ولن",
+          "to": "ولا",
+          "type": "name/epithet or lexical substitution"
+        },
+        {
+          "op": "sub",
+          "from": "يتمنوه",
+          "to": "يتمنونه",
+          "type": "pronoun/inflection shift"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "6:21",
+      "ref_b": "10:17",
+      "surah_a": 6,
+      "surah_b": 10,
+      "name_a": "الأنعام",
+      "name_b": "يونس",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 55,
+      "rev_b": 51,
+      "rev_dist": 4,
+      "tok_a": 14,
+      "tok_b": 14,
+      "text_a": "ومن أظلم ممن افترى على الله كذبا أو كذب بآياته إنه لا يفلح الظالمون",
+      "text_b": "فمن أظلم ممن افترى على الله كذبا أو كذب بآياته إنه لا يفلح المجرمون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "ومن",
+          "to": "فمن",
+          "type": "name/epithet or lexical substitution"
+        },
+        {
+          "op": "sub",
+          "from": "الظالمون",
+          "to": "المجرمون",
+          "type": "rhyme/final-word swap"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "6:117",
+      "ref_b": "68:7",
+      "surah_a": 6,
+      "surah_b": 68,
+      "name_a": "الأنعام",
+      "name_b": "القلم",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 55,
+      "rev_b": 2,
+      "rev_dist": 53,
+      "tok_a": 11,
+      "tok_b": 11,
+      "text_a": "إن ربك هو أعلم من يضل عن سبيله وهو أعلم بالمهتدين",
+      "text_b": "إن ربك هو أعلم بمن ضل عن سبيله وهو أعلم بالمهتدين",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "من",
+          "to": "بمن",
+          "type": "name/epithet or lexical substitution"
+        },
+        {
+          "op": "sub",
+          "from": "يضل",
+          "to": "ضل",
+          "type": "pronoun/inflection shift"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "7:80",
+      "ref_b": "29:28",
+      "surah_a": 7,
+      "surah_b": 29,
+      "name_a": "الأعراف",
+      "name_b": "العنكبوت",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 39,
+      "rev_b": 85,
+      "rev_dist": 46,
+      "tok_a": 13,
+      "tok_b": 14,
+      "text_a": "ولوطا إذ قال لقومه أتأتون الفاحشة ما سبقكم بها من أحد من العالمين",
+      "text_b": "ولوطا إذ قال لقومه إنكم لتأتون الفاحشة ما سبقكم بها من أحد من العالمين",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "إنكم",
+          "type": "single-word ins-del"
+        },
+        {
+          "op": "sub",
+          "from": "أتأتون",
+          "to": "لتأتون",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "7:81",
+      "ref_b": "27:55",
+      "surah_a": 7,
+      "surah_b": 27,
+      "name_a": "الأعراف",
+      "name_b": "النمل",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 39,
+      "rev_b": 48,
+      "rev_dist": 9,
+      "tok_a": 11,
+      "tok_b": 11,
+      "text_a": "إنكم لتأتون الرجال شهوة من دون النساء بل أنتم قوم مسرفون",
+      "text_b": "أئنكم لتأتون الرجال شهوة من دون النساء بل أنتم قوم تجهلون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "إنكم",
+          "to": "أئنكم",
+          "type": "name/epithet or lexical substitution"
+        },
+        {
+          "op": "sub",
+          "from": "مسرفون",
+          "to": "تجهلون",
+          "type": "rhyme/final-word swap"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "8:13",
+      "ref_b": "59:4",
+      "surah_a": 8,
+      "surah_b": 59,
+      "name_a": "الأنفال",
+      "name_b": "الحشر",
+      "region_a": "medinan",
+      "region_b": "medinan",
+      "rev_a": 88,
+      "rev_b": 101,
+      "rev_dist": 13,
+      "tok_a": 13,
+      "tok_b": 12,
+      "text_a": "ذلك بأنهم شاقوا الله ورسوله ومن يشاقق الله ورسوله فإن الله شديد العقاب",
+      "text_b": "ذلك بأنهم شاقوا الله ورسوله ومن يشاق الله فإن الله شديد العقاب",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "يشاقق",
+          "to": "يشاق",
+          "type": "name/epithet or lexical substitution"
+        },
+        {
+          "op": "del",
+          "from": "ورسوله",
+          "to": null,
+          "type": "single-word ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "11:39",
+      "ref_b": "39:40",
+      "surah_a": 11,
+      "surah_b": 39,
+      "name_a": "هود",
+      "name_b": "الزمر",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 52,
+      "rev_b": 59,
+      "rev_dist": 7,
+      "tok_a": 10,
+      "tok_b": 8,
+      "text_a": "فسوف تعلمون من يأتيه عذاب يخزيه ويحل عليه عذاب مقيم",
+      "text_b": "من يأتيه عذاب يخزيه ويحل عليه عذاب مقيم",
+      "edits": [
+        {
+          "op": "del",
+          "from": "فسوف",
+          "to": null,
+          "type": "single-word ins-del"
+        },
+        {
+          "op": "del",
+          "from": "تعلمون",
+          "to": null,
+          "type": "single-word ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "15:19",
+      "ref_b": "50:7",
+      "surah_a": 15,
+      "surah_b": 50,
+      "name_a": "الحجر",
+      "name_b": "ق",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 54,
+      "rev_b": 34,
+      "rev_dist": 20,
+      "tok_a": 11,
+      "tok_b": 11,
+      "text_a": "والأرض مددناها وألقينا فيها رواسي وأنبتنا فيها من كل شيء موزون",
+      "text_b": "والأرض مددناها وألقينا فيها رواسي وأنبتنا فيها من كل زوج بهيج",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "شيء",
+          "to": "زوج",
+          "type": "name/epithet or lexical substitution"
+        },
+        {
+          "op": "sub",
+          "from": "موزون",
+          "to": "بهيج",
+          "type": "rhyme/final-word swap"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "16:29",
+      "ref_b": "40:76",
+      "surah_a": 16,
+      "surah_b": 40,
+      "name_a": "النحل",
+      "name_b": "غافر",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 70,
+      "rev_b": 60,
+      "rev_dist": 10,
+      "tok_a": 8,
+      "tok_b": 8,
+      "text_a": "فادخلوا أبواب جهنم خالدين فيها فلبئس مثوى المتكبرين",
+      "text_b": "ادخلوا أبواب جهنم خالدين فيها فبئس مثوى المتكبرين",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "فادخلوا",
+          "to": "ادخلوا",
+          "type": "name/epithet or lexical substitution"
+        },
+        {
+          "op": "sub",
+          "from": "فلبئس",
+          "to": "فبئس",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "16:34",
+      "ref_b": "45:33",
+      "surah_a": 16,
+      "surah_b": 45,
+      "name_a": "النحل",
+      "name_b": "الجاثية",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 70,
+      "rev_b": 65,
+      "rev_dist": 5,
+      "tok_a": 10,
+      "tok_b": 11,
+      "text_a": "فأصابهم سيئات ما عملوا وحاق بهم ما كانوا به يستهزئون",
+      "text_b": "وبدا لهم سيئات ما عملوا وحاق بهم ما كانوا به يستهزئون",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "وبدا",
+          "type": "single-word ins-del"
+        },
+        {
+          "op": "sub",
+          "from": "فأصابهم",
+          "to": "لهم",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "19:36",
+      "ref_b": "43:64",
+      "surah_a": 19,
+      "surah_b": 43,
+      "name_a": "مريم",
+      "name_b": "الزخرف",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 44,
+      "rev_b": 63,
+      "rev_dist": 19,
+      "tok_a": 8,
+      "tok_b": 9,
+      "text_a": "وإن الله ربي وربكم فاعبدوه هذا صراط مستقيم",
+      "text_b": "إن الله هو ربي وربكم فاعبدوه هذا صراط مستقيم",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "وإن",
+          "to": "إن",
+          "type": "connective/particle swap"
+        },
+        {
+          "op": "ins",
+          "from": null,
+          "to": "هو",
+          "type": "connective/particle ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "21:92",
+      "ref_b": "23:52",
+      "surah_a": 21,
+      "surah_b": 23,
+      "name_a": "الأنبياء",
+      "name_b": "المؤمنون",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 73,
+      "rev_b": 74,
+      "rev_dist": 1,
+      "tok_a": 8,
+      "tok_b": 8,
+      "text_a": "إن هذه أمتكم أمة واحدة وأنا ربكم فاعبدون",
+      "text_b": "وإن هذه أمتكم أمة واحدة وأنا ربكم فاتقون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "إن",
+          "to": "وإن",
+          "type": "connective/particle swap"
+        },
+        {
+          "op": "sub",
+          "from": "فاعبدون",
+          "to": "فاتقون",
+          "type": "rhyme/final-word swap"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "23:83",
+      "ref_b": "27:68",
+      "surah_a": 23,
+      "surah_b": 27,
+      "name_a": "المؤمنون",
+      "name_b": "النمل",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 74,
+      "rev_b": 48,
+      "rev_dist": 26,
+      "tok_a": 12,
+      "tok_b": 12,
+      "text_a": "لقد وعدنا نحن وآباؤنا هذا من قبل إن هذا إلا أساطير الأولين",
+      "text_b": "لقد وعدنا هذا نحن وآباؤنا من قبل إن هذا إلا أساطير الأولين",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "هذا",
+          "type": "single-word ins-del"
+        },
+        {
+          "op": "del",
+          "from": "هذا",
+          "to": null,
+          "type": "single-word ins-del"
+        }
+      ]
+    },
+    {
+      "dist": 2,
+      "ref_a": "41:8",
+      "ref_b": "95:6",
+      "surah_a": 41,
+      "surah_b": 95,
+      "name_a": "فصلت",
+      "name_b": "التين",
+      "region_a": "meccan",
+      "region_b": "meccan",
+      "rev_a": 61,
+      "rev_b": 28,
+      "rev_dist": 33,
+      "tok_a": 9,
+      "tok_b": 9,
+      "text_a": "إن الذين آمنوا وعملوا الصالحات لهم أجر غير ممنون",
+      "text_b": "إلا الذين آمنوا وعملوا الصالحات فلهم أجر غير ممنون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "إن",
+          "to": "إلا",
+          "type": "name/epithet or lexical substitution"
+        },
+        {
+          "op": "sub",
+          "from": "لهم",
+          "to": "فلهم",
+          "type": "name/epithet or lexical substitution"
+        }
+      ]
+    }
+  ]
+}
