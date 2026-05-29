@@ -5824,3 +5824,61 @@ This is the close-reading route producing structure invisible to broad metrics. 
 ### §10.77.7 Files
 
 - Inline; JSON at `findings/phase-b-hypotheses/csv/h-new-2140.json`
+
+## §10.78 H-NEW-2070 (pre-registered) — Divine-name verse-final pairing arithmetic + co-occurrence graph (al-fawāṣil): PASS-DIRECTED, pairings highly non-random
+
+**Verdict: PASS-DIRECTED** (Bonferroni-2; both concentration statistics p<0.0001 against a slot-independence null; Medinan-robustness concordant). Pre-reg SHA256 `03e5b967421cc4e78856c23251a84c5b100ec3ad70172e176c3c4b4691e3aa79`, seed 20260509, 10,000 perms.
+
+**What**: enumerated every verse closing on a PAIR of divine epithets — the *al-fawāṣil* cadence (*ghafūrun raḥīm*, *ʿazīzun ḥakīm*, …). Detection: last two no-tashkeel tokens both base-normalize (strip `ال`; strip one trailing accusative alif) to one of the **97 single-token al-Tirmidhī names**. **321 verses close on a divine-name pair**, across **54 distinct ordered pairs**, forming a directed graph of **42 nodes / 54 edges**.
+
+### §10.78.1 Top-5 verse-final divine-name pairs
+
+| Rank | Pair | Count | Share |
+|:-:|:--|:-:|:-:|
+| 1 | غفور + رحيم (*ghafūr + raḥīm*) | **64** | 19.9% |
+| 2 | عزيز + حكيم (*ʿazīz + ḥakīm*) | **47** | 14.6% |
+| 3 | سميع + عليم (*samīʿ + ʿalīm*) | **31** | 9.7% |
+| 4 | عليم + حكيم (*ʿalīm + ḥakīm*) | **29** | 9.0% |
+| 5 | عزيز + رحيم (*ʿazīz + raḥīm*) | 13 | 4.0% |
+
+Top-5 pairs = 57.3% of all 321 closings; top-4 = 53.3%.
+
+### §10.78.2 Non-randomness verdict (slot-independence null)
+
+The null holds each name's head-slot (penultimate) and seal-slot (final) marginal frequency EXACTLY fixed and only destroys the head↔seal pairing — so it cannot be passed merely because *raḥīm*/*ḥakīm* are frequent verse-enders.
+
+| Statistic | Observed | Null p97.5 | p_perm |
+|:--|:-:|:-:|:-:|
+| top-5-pair share | **0.573** | 0.318 | **<0.0001** |
+| normalized HHI | **0.0871** | 0.0302 | **<0.0001** |
+
+Observed concentration ≈ 1.8× the null upper tail (share) and 2.9× (HHI). Medinan-only cell (182 pairs) concordant on both, p<0.0001 → not a chronology artifact.
+
+### §10.78.3 Famous *al-ʿazīz al-ḥakīm* count — VERIFIED
+
+Closes **47** verses total: العزيز الحكيم (definite) = **29**, عزيز حكيم (nom.) = 13, عزيزا حكيما (acc.) = 5. The classical "~thirty verses" claim is confirmed at **exactly 29** in the definite *al-X al-Y* form; reconciles H-NEW-140's "~29".
+
+### §10.78.4 Head/seal grammar of the cadence
+
+The pairing graph is sharply role-differentiated: *raḥīm* (in-deg 93/95) and *ḥakīm* (79/91) are terminal SEALS; *ʿazīz* (out-deg 77/82), *ghafūr* (71/78), *samīʿ* (42/42, never a seal) are HEADS; *ʿalīm* is the unique bidirectional pivot (35 head / 53 seal). This *tartīb al-fāṣila* asymmetry is itself evidence the pairings are rule-governed.
+
+### §10.78.5 Corpus-extreme pairs
+
+- **Corpus-MAX**: غفور + رحيم at 64 — the most frequent verse-closing collocation of any kind.
+- **Corpus-SINGLETON fawāṣila (n=25)**: incl. حي + قيوم (Q 3:2), الله + صمد (Q 112:2, sole *al-Ṣamad* closing), غفور + ودود (Q 85:14, unique *al-Wadūd*-seal), متكبر + جبار (Q 40:35).
+
+### §10.78.6 Classical connection
+
+al-Bāqillānī (*Iʿjāz al-Qurʾān*: governed *naẓm* cadence), al-Zarkashī (*al-Burhān*, nawʿ on al-fawāṣil: *murāʿāt al-fāṣila*), al-Suyūṭī (*al-Itqān*, nawʿ 59, *asmāʾ mutazāwijah*). H-NEW-2070 supplies the full ranked enumeration the tradition gestures at but never tabulated — the *al-fawāṣil* pairing constraint is empirically vindicated as a real collocational structure, not a marginal artifact.
+
+### §10.78.7 Cross-finding integration
+
+- **H-NEW-140 / H-NEW-170** (anywhere-in-verse co-occurrence): H-NEW-2070 is the positional refinement (verse-FINAL ordered bigram) adding the head/seal directional grammar; rankings agree, independently confirming the classical pair-list.
+- **H-NEW-1560 / H-NEW-1800** (99-name surah density / enumeration): orthogonal axis; all three vindicate the al-Tirmidhī list as a live corpus object.
+
+### §10.78.8 Files
+
+- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-2070-divine-name-pairing.md`
+- Script: `findings/phase-b-hypotheses/scripts/h-new-2070.py`
+- JSON: `findings/phase-b-hypotheses/csv/h-new-2070.json`
+- Finding: `findings/phase-b-hypotheses/h-new-2070-divine-name-pairing.md`

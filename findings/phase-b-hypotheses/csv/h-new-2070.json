@@ -1,0 +1,3373 @@
+{
+  "finding_id": "H-NEW-2070",
+  "title": "Divine-name verse-final pairing arithmetic + co-occurrence graph (al-fawāṣil)",
+  "pre_reg_sha256": "03e5b967421cc4e78856c23251a84c5b100ec3ad70172e176c3c4b4691e3aa79",
+  "seed_A": 20260509,
+  "seed_B": 20260511,
+  "n_perm": 10000,
+  "alpha_bon_per_cell": 0.025,
+  "bonferroni_k": 2,
+  "rules_tuple": "(no-tashkeel, orthographic-token, verse-final ordered bigram, base-normalized to 97 al-Tirmidhī single-token names, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "divine_set_size": 97,
+  "n_verses_closing_divine_pair": 321,
+  "n_distinct_ordered_pairs": 54,
+  "observed_top5_share": 0.573208722741433,
+  "observed_HHI": 0.08710125095835637,
+  "cell_A_whole_corpus": {
+    "H1_top5_share": {
+      "observed": 0.573208722741433,
+      "null_mean": 0.2946467289719626,
+      "null_median": 0.29595015576323985,
+      "null_p97_5": 0.3177570093457944,
+      "p_perm": 0.0,
+      "pass": true
+    },
+    "H2_HHI": {
+      "observed": 0.08710125095835637,
+      "null_mean": 0.027756260129463025,
+      "null_median": 0.02772682718529517,
+      "null_p97_5": 0.030172455624460165,
+      "p_perm": 0.0,
+      "pass": true
+    }
+  },
+  "cell_B_medinan_robustness": {
+    "n_medinan_pair_verses": 182,
+    "observed_top5_share": 0.7307692307692307,
+    "null_median_share": 0.36813186813186816,
+    "p_perm_share": 0.0,
+    "share_concordant": true,
+    "observed_HHI": 0.13627581209998793,
+    "null_median_HHI": 0.04202391015577829,
+    "p_perm_HHI": 0.0,
+    "HHI_concordant": true,
+    "concordant": true
+  },
+  "verdict": "PASS-DIRECTED",
+  "top_15_pairs": [
+    {
+      "rank": 1,
+      "pair_ar": "غفور + رحيم",
+      "pair_translit": "ghafūr + raḥīm",
+      "count": 64,
+      "share": 0.19937694704049844,
+      "example": "Q2:173",
+      "example_surface": "غفور رحيم"
+    },
+    {
+      "rank": 2,
+      "pair_ar": "عزيز + حكيم",
+      "pair_translit": "ʿazīz + ḥakīm",
+      "count": 47,
+      "share": 0.14641744548286603,
+      "example": "Q2:129",
+      "example_surface": "العزيز الحكيم"
+    },
+    {
+      "rank": 3,
+      "pair_ar": "سميع + عليم",
+      "pair_translit": "samīʿ + ʿalīm",
+      "count": 31,
+      "share": 0.09657320872274143,
+      "example": "Q2:127",
+      "example_surface": "السميع العليم"
+    },
+    {
+      "rank": 4,
+      "pair_ar": "عليم + حكيم",
+      "pair_translit": "ʿalīm + ḥakīm",
+      "count": 29,
+      "share": 0.09034267912772585,
+      "example": "Q2:32",
+      "example_surface": "العليم الحكيم"
+    },
+    {
+      "rank": 5,
+      "pair_ar": "عزيز + رحيم",
+      "pair_translit": "ʿazīz + raḥīm",
+      "count": 13,
+      "share": 0.040498442367601244,
+      "example": "Q26:9",
+      "example_surface": "العزيز الرحيم"
+    },
+    {
+      "rank": 6,
+      "pair_ar": "سميع + بصير",
+      "pair_translit": "samīʿ + baṣīr",
+      "count": 11,
+      "share": 0.03426791277258567,
+      "example": "Q4:58",
+      "example_surface": "سميعا بصيرا"
+    },
+    {
+      "rank": 7,
+      "pair_ar": "تواب + رحيم",
+      "pair_translit": "tawwāb + raḥīm",
+      "count": 9,
+      "share": 0.028037383177570093,
+      "example": "Q2:37",
+      "example_surface": "التواب الرحيم"
+    },
+    {
+      "rank": 8,
+      "pair_ar": "غني + حميد",
+      "pair_translit": "ghanī + ḥamīd",
+      "count": 9,
+      "share": 0.028037383177570093,
+      "example": "Q2:267",
+      "example_surface": "غني حميد"
+    },
+    {
+      "rank": 9,
+      "pair_ar": "واسع + عليم",
+      "pair_translit": "wāsiʿ + ʿalīm",
+      "count": 7,
+      "share": 0.021806853582554516,
+      "example": "Q2:115",
+      "example_surface": "واسع عليم"
+    },
+    {
+      "rank": 10,
+      "pair_ar": "حكيم + عليم",
+      "pair_translit": "ḥakīm + ʿalīm",
+      "count": 7,
+      "share": 0.021806853582554516,
+      "example": "Q6:83",
+      "example_surface": "حكيم عليم"
+    },
+    {
+      "rank": 11,
+      "pair_ar": "رحمن + رحيم",
+      "pair_translit": "raḥmān + raḥīm",
+      "count": 6,
+      "share": 0.018691588785046728,
+      "example": "Q1:1",
+      "example_surface": "الرحمن الرحيم"
+    },
+    {
+      "rank": 12,
+      "pair_ar": "عزيز + عليم",
+      "pair_translit": "ʿazīz + ʿalīm",
+      "count": 6,
+      "share": 0.018691588785046728,
+      "example": "Q6:96",
+      "example_surface": "العزيز العليم"
+    },
+    {
+      "rank": 13,
+      "pair_ar": "واحد + قهار",
+      "pair_translit": "wāḥid + qahhār",
+      "count": 6,
+      "share": 0.018691588785046728,
+      "example": "Q12:39",
+      "example_surface": "الواحد القهار"
+    },
+    {
+      "rank": 14,
+      "pair_ar": "علي + كبير",
+      "pair_translit": "ʿalī + kabīr",
+      "count": 5,
+      "share": 0.01557632398753894,
+      "example": "Q4:34",
+      "example_surface": "عليا كبيرا"
+    },
+    {
+      "rank": 15,
+      "pair_ar": "لطيف + خبير",
+      "pair_translit": "laṭīf + khabīr",
+      "count": 5,
+      "share": 0.01557632398753894,
+      "example": "Q6:103",
+      "example_surface": "اللطيف الخبير"
+    }
+  ],
+  "corpus_max_pair": {
+    "rank": 1,
+    "pair_ar": "غفور + رحيم",
+    "pair_translit": "ghafūr + raḥīm",
+    "count": 64,
+    "share": 0.19937694704049844,
+    "example": "Q2:173",
+    "example_surface": "غفور رحيم"
+  },
+  "corpus_singleton_pairs": [
+    {
+      "pair_ar": "بر + رحيم",
+      "pair_translit": "barr + raḥīm",
+      "example": "Q52:28",
+      "surface": "البر الرحيم"
+    },
+    {
+      "pair_ar": "تواب + حكيم",
+      "pair_translit": "tawwāb + ḥakīm",
+      "example": "Q24:10",
+      "surface": "تواب حكيم"
+    },
+    {
+      "pair_ar": "حفيظ + عليم",
+      "pair_translit": "ḥafīẓ + ʿalīm",
+      "example": "Q12:55",
+      "surface": "حفيظ عليم"
+    },
+    {
+      "pair_ar": "حكيم + حميد",
+      "pair_translit": "ḥakīm + ḥamīd",
+      "example": "Q41:42",
+      "surface": "حكيم حميد"
+    },
+    {
+      "pair_ar": "حليم + رشيد",
+      "pair_translit": "ḥalīm + rashīd",
+      "example": "Q11:87",
+      "surface": "الحليم الرشيد"
+    },
+    {
+      "pair_ar": "حميد + مجيد",
+      "pair_translit": "ḥamīd + majīd",
+      "example": "Q11:73",
+      "surface": "حميد مجيد"
+    },
+    {
+      "pair_ar": "حي + قيوم",
+      "pair_translit": "ḥayy + qayyūm",
+      "example": "Q3:2",
+      "surface": "الحي القيوم"
+    },
+    {
+      "pair_ar": "رحيم + غفور",
+      "pair_translit": "raḥīm + ghafūr",
+      "example": "Q34:2",
+      "surface": "الرحيم الغفور"
+    },
+    {
+      "pair_ar": "رحيم + ودود",
+      "pair_translit": "raḥīm + wadūd",
+      "example": "Q11:90",
+      "surface": "رحيم ودود"
+    },
+    {
+      "pair_ar": "سلام + سلام",
+      "pair_translit": "salām + salām",
+      "example": "Q56:26",
+      "surface": "سلاما سلاما"
+    },
+    {
+      "pair_ar": "شكور + حليم",
+      "pair_translit": "shakūr + ḥalīm",
+      "example": "Q64:17",
+      "surface": "شكور حليم"
+    },
+    {
+      "pair_ar": "عزيز + كريم",
+      "pair_translit": "ʿazīz + karīm",
+      "example": "Q44:49",
+      "surface": "العزيز الكريم"
+    },
+    {
+      "pair_ar": "عزيز + مقتدر",
+      "pair_translit": "ʿazīz + muqtadir",
+      "example": "Q54:42",
+      "surface": "عزيز مقتدر"
+    },
+    {
+      "pair_ar": "عزيز + وهاب",
+      "pair_translit": "ʿazīz + wahhāb",
+      "example": "Q38:9",
+      "surface": "العزيز الوهاب"
+    },
+    {
+      "pair_ar": "علي + حكيم",
+      "pair_translit": "ʿalī + ḥakīm",
+      "example": "Q42:51",
+      "surface": "علي حكيم"
+    },
+    {
+      "pair_ar": "غفور + ودود",
+      "pair_translit": "ghafūr + wadūd",
+      "example": "Q85:14",
+      "surface": "الغفور الودود"
+    },
+    {
+      "pair_ar": "غني + حليم",
+      "pair_translit": "ghanī + ḥalīm",
+      "example": "Q2:263",
+      "surface": "غني حليم"
+    },
+    {
+      "pair_ar": "غني + كريم",
+      "pair_translit": "ghanī + karīm",
+      "example": "Q27:40",
+      "surface": "غني كريم"
+    },
+    {
+      "pair_ar": "فتاح + عليم",
+      "pair_translit": "fattāḥ + ʿalīm",
+      "example": "Q34:26",
+      "surface": "الفتاح العليم"
+    },
+    {
+      "pair_ar": "له + صمد",
+      "pair_translit": "له + ṣamad",
+      "example": "Q112:2",
+      "surface": "الله الصمد"
+    },
+    {
+      "pair_ar": "متكبر + جبار",
+      "pair_translit": "mutakabbir + jabbār",
+      "example": "Q40:35",
+      "surface": "متكبر جبار"
+    },
+    {
+      "pair_ar": "ملك + عظيم",
+      "pair_translit": "malik + ʿaẓīm",
+      "example": "Q4:54",
+      "surface": "ملكا عظيما"
+    },
+    {
+      "pair_ar": "ملك + كريم",
+      "pair_translit": "malik + karīm",
+      "example": "Q12:31",
+      "surface": "ملك كريم"
+    },
+    {
+      "pair_ar": "واسع + حكيم",
+      "pair_translit": "wāsiʿ + ḥakīm",
+      "example": "Q4:130",
+      "surface": "واسعا حكيما"
+    },
+    {
+      "pair_ar": "ولي + حميد",
+      "pair_translit": "walī + ḥamīd",
+      "example": "Q42:28",
+      "surface": "الولي الحميد"
+    }
+  ],
+  "n_corpus_singletons": 25,
+  "famous_al_aziz_al_hakim": {
+    "total_verse_final": 47,
+    "by_form": {
+      "العزيز الحكيم": 29,
+      "عزيز حكيم": 13,
+      "عزيزا حكيما": 5
+    },
+    "note": "al-X al-Y definite form = the classical 'al-ʿazīz al-ḥakīm' enumeration"
+  },
+  "pairing_graph": {
+    "n_nodes": 42,
+    "n_edges": 54,
+    "nodes_by_weighted_degree": [
+      {
+        "name_ar": "رحيم",
+        "name_translit": "raḥīm",
+        "weighted_degree": 95,
+        "out_weight": 2,
+        "in_weight": 93
+      },
+      {
+        "name_ar": "حكيم",
+        "name_translit": "ḥakīm",
+        "weighted_degree": 91,
+        "out_weight": 12,
+        "in_weight": 79
+      },
+      {
+        "name_ar": "عليم",
+        "name_translit": "ʿalīm",
+        "weighted_degree": 88,
+        "out_weight": 35,
+        "in_weight": 53
+      },
+      {
+        "name_ar": "عزيز",
+        "name_translit": "ʿazīz",
+        "weighted_degree": 82,
+        "out_weight": 77,
+        "in_weight": 5
+      },
+      {
+        "name_ar": "غفور",
+        "name_translit": "ghafūr",
+        "weighted_degree": 78,
+        "out_weight": 71,
+        "in_weight": 7
+      },
+      {
+        "name_ar": "سميع",
+        "name_translit": "samīʿ",
+        "weighted_degree": 42,
+        "out_weight": 42,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "خبير",
+        "name_translit": "khabīr",
+        "weighted_degree": 17,
+        "out_weight": 4,
+        "in_weight": 13
+      },
+      {
+        "name_ar": "بصير",
+        "name_translit": "baṣīr",
+        "weighted_degree": 15,
+        "out_weight": 0,
+        "in_weight": 15
+      },
+      {
+        "name_ar": "حميد",
+        "name_translit": "ḥamīd",
+        "weighted_degree": 15,
+        "out_weight": 1,
+        "in_weight": 14
+      },
+      {
+        "name_ar": "حليم",
+        "name_translit": "ḥalīm",
+        "weighted_degree": 11,
+        "out_weight": 3,
+        "in_weight": 8
+      },
+      {
+        "name_ar": "غني",
+        "name_translit": "ghanī",
+        "weighted_degree": 11,
+        "out_weight": 11,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "تواب",
+        "name_translit": "tawwāb",
+        "weighted_degree": 10,
+        "out_weight": 10,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "علي",
+        "name_translit": "ʿalī",
+        "weighted_degree": 8,
+        "out_weight": 8,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "واسع",
+        "name_translit": "wāsiʿ",
+        "weighted_degree": 8,
+        "out_weight": 8,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "رحمن",
+        "name_translit": "raḥmān",
+        "weighted_degree": 6,
+        "out_weight": 6,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "قهار",
+        "name_translit": "qahhār",
+        "weighted_degree": 6,
+        "out_weight": 0,
+        "in_weight": 6
+      },
+      {
+        "name_ar": "واحد",
+        "name_translit": "wāḥid",
+        "weighted_degree": 6,
+        "out_weight": 6,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "عظيم",
+        "name_translit": "ʿaẓīm",
+        "weighted_degree": 5,
+        "out_weight": 0,
+        "in_weight": 5
+      },
+      {
+        "name_ar": "قوي",
+        "name_translit": "qawī",
+        "weighted_degree": 5,
+        "out_weight": 5,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "كبير",
+        "name_translit": "kabīr",
+        "weighted_degree": 5,
+        "out_weight": 0,
+        "in_weight": 5
+      },
+      {
+        "name_ar": "لطيف",
+        "name_translit": "laṭīf",
+        "weighted_degree": 5,
+        "out_weight": 5,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "شكور",
+        "name_translit": "shakūr",
+        "weighted_degree": 3,
+        "out_weight": 1,
+        "in_weight": 2
+      },
+      {
+        "name_ar": "غفار",
+        "name_translit": "ghaffār",
+        "weighted_degree": 3,
+        "out_weight": 0,
+        "in_weight": 3
+      },
+      {
+        "name_ar": "كريم",
+        "name_translit": "karīm",
+        "weighted_degree": 3,
+        "out_weight": 0,
+        "in_weight": 3
+      },
+      {
+        "name_ar": "له",
+        "name_translit": "له",
+        "weighted_degree": 3,
+        "out_weight": 3,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "سلام",
+        "name_translit": "salām",
+        "weighted_degree": 2,
+        "out_weight": 1,
+        "in_weight": 1
+      },
+      {
+        "name_ar": "عفو",
+        "name_translit": "ʿafū",
+        "weighted_degree": 2,
+        "out_weight": 2,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "ملك",
+        "name_translit": "malik",
+        "weighted_degree": 2,
+        "out_weight": 2,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "ودود",
+        "name_translit": "wadūd",
+        "weighted_degree": 2,
+        "out_weight": 0,
+        "in_weight": 2
+      },
+      {
+        "name_ar": "بر",
+        "name_translit": "barr",
+        "weighted_degree": 1,
+        "out_weight": 1,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "جبار",
+        "name_translit": "jabbār",
+        "weighted_degree": 1,
+        "out_weight": 0,
+        "in_weight": 1
+      },
+      {
+        "name_ar": "حفيظ",
+        "name_translit": "ḥafīẓ",
+        "weighted_degree": 1,
+        "out_weight": 1,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "حي",
+        "name_translit": "ḥayy",
+        "weighted_degree": 1,
+        "out_weight": 1,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "رشيد",
+        "name_translit": "rashīd",
+        "weighted_degree": 1,
+        "out_weight": 0,
+        "in_weight": 1
+      },
+      {
+        "name_ar": "صمد",
+        "name_translit": "ṣamad",
+        "weighted_degree": 1,
+        "out_weight": 0,
+        "in_weight": 1
+      },
+      {
+        "name_ar": "فتاح",
+        "name_translit": "fattāḥ",
+        "weighted_degree": 1,
+        "out_weight": 1,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "قيوم",
+        "name_translit": "qayyūm",
+        "weighted_degree": 1,
+        "out_weight": 0,
+        "in_weight": 1
+      },
+      {
+        "name_ar": "متكبر",
+        "name_translit": "mutakabbir",
+        "weighted_degree": 1,
+        "out_weight": 1,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "مجيد",
+        "name_translit": "majīd",
+        "weighted_degree": 1,
+        "out_weight": 0,
+        "in_weight": 1
+      },
+      {
+        "name_ar": "مقتدر",
+        "name_translit": "muqtadir",
+        "weighted_degree": 1,
+        "out_weight": 0,
+        "in_weight": 1
+      },
+      {
+        "name_ar": "ولي",
+        "name_translit": "walī",
+        "weighted_degree": 1,
+        "out_weight": 1,
+        "in_weight": 0
+      },
+      {
+        "name_ar": "وهاب",
+        "name_translit": "wahhāb",
+        "weighted_degree": 1,
+        "out_weight": 0,
+        "in_weight": 1
+      }
+    ],
+    "edges": [
+      {
+        "from": "غفور",
+        "to": "رحيم",
+        "from_translit": "ghafūr",
+        "to_translit": "raḥīm",
+        "weight": 64
+      },
+      {
+        "from": "عزيز",
+        "to": "حكيم",
+        "from_translit": "ʿazīz",
+        "to_translit": "ḥakīm",
+        "weight": 47
+      },
+      {
+        "from": "سميع",
+        "to": "عليم",
+        "from_translit": "samīʿ",
+        "to_translit": "ʿalīm",
+        "weight": 31
+      },
+      {
+        "from": "عليم",
+        "to": "حكيم",
+        "from_translit": "ʿalīm",
+        "to_translit": "ḥakīm",
+        "weight": 29
+      },
+      {
+        "from": "عزيز",
+        "to": "رحيم",
+        "from_translit": "ʿazīz",
+        "to_translit": "raḥīm",
+        "weight": 13
+      },
+      {
+        "from": "سميع",
+        "to": "بصير",
+        "from_translit": "samīʿ",
+        "to_translit": "baṣīr",
+        "weight": 11
+      },
+      {
+        "from": "تواب",
+        "to": "رحيم",
+        "from_translit": "tawwāb",
+        "to_translit": "raḥīm",
+        "weight": 9
+      },
+      {
+        "from": "غني",
+        "to": "حميد",
+        "from_translit": "ghanī",
+        "to_translit": "ḥamīd",
+        "weight": 9
+      },
+      {
+        "from": "واسع",
+        "to": "عليم",
+        "from_translit": "wāsiʿ",
+        "to_translit": "ʿalīm",
+        "weight": 7
+      },
+      {
+        "from": "حكيم",
+        "to": "عليم",
+        "from_translit": "ḥakīm",
+        "to_translit": "ʿalīm",
+        "weight": 7
+      },
+      {
+        "from": "رحمن",
+        "to": "رحيم",
+        "from_translit": "raḥmān",
+        "to_translit": "raḥīm",
+        "weight": 6
+      },
+      {
+        "from": "عزيز",
+        "to": "عليم",
+        "from_translit": "ʿazīz",
+        "to_translit": "ʿalīm",
+        "weight": 6
+      },
+      {
+        "from": "واحد",
+        "to": "قهار",
+        "from_translit": "wāḥid",
+        "to_translit": "qahhār",
+        "weight": 6
+      },
+      {
+        "from": "علي",
+        "to": "كبير",
+        "from_translit": "ʿalī",
+        "to_translit": "kabīr",
+        "weight": 5
+      },
+      {
+        "from": "لطيف",
+        "to": "خبير",
+        "from_translit": "laṭīf",
+        "to_translit": "khabīr",
+        "weight": 5
+      },
+      {
+        "from": "قوي",
+        "to": "عزيز",
+        "from_translit": "qawī",
+        "to_translit": "ʿazīz",
+        "weight": 5
+      },
+      {
+        "from": "غفور",
+        "to": "حليم",
+        "from_translit": "ghafūr",
+        "to_translit": "ḥalīm",
+        "weight": 4
+      },
+      {
+        "from": "عليم",
+        "to": "خبير",
+        "from_translit": "ʿalīm",
+        "to_translit": "khabīr",
+        "weight": 4
+      },
+      {
+        "from": "حكيم",
+        "to": "خبير",
+        "from_translit": "ḥakīm",
+        "to_translit": "khabīr",
+        "weight": 4
+      },
+      {
+        "from": "خبير",
+        "to": "بصير",
+        "from_translit": "khabīr",
+        "to_translit": "baṣīr",
+        "weight": 4
+      },
+      {
+        "from": "عزيز",
+        "to": "حميد",
+        "from_translit": "ʿazīz",
+        "to_translit": "ḥamīd",
+        "weight": 3
+      },
+      {
+        "from": "عزيز",
+        "to": "غفار",
+        "from_translit": "ʿazīz",
+        "to_translit": "ghaffār",
+        "weight": 3
+      },
+      {
+        "from": "علي",
+        "to": "عظيم",
+        "from_translit": "ʿalī",
+        "to_translit": "ʿaẓīm",
+        "weight": 2
+      },
+      {
+        "from": "عليم",
+        "to": "حليم",
+        "from_translit": "ʿalīm",
+        "to_translit": "ḥalīm",
+        "weight": 2
+      },
+      {
+        "from": "عفو",
+        "to": "غفور",
+        "from_translit": "ʿafū",
+        "to_translit": "ghafūr",
+        "weight": 2
+      },
+      {
+        "from": "حليم",
+        "to": "غفور",
+        "from_translit": "ḥalīm",
+        "to_translit": "ghafūr",
+        "weight": 2
+      },
+      {
+        "from": "له",
+        "to": "عظيم",
+        "from_translit": "له",
+        "to_translit": "ʿaẓīm",
+        "weight": 2
+      },
+      {
+        "from": "عزيز",
+        "to": "غفور",
+        "from_translit": "ʿazīz",
+        "to_translit": "ghafūr",
+        "weight": 2
+      },
+      {
+        "from": "غفور",
+        "to": "شكور",
+        "from_translit": "ghafūr",
+        "to_translit": "shakūr",
+        "weight": 2
+      },
+      {
+        "from": "غني",
+        "to": "حليم",
+        "from_translit": "ghanī",
+        "to_translit": "ḥalīm",
+        "weight": 1
+      },
+      {
+        "from": "حي",
+        "to": "قيوم",
+        "from_translit": "ḥayy",
+        "to_translit": "qayyūm",
+        "weight": 1
+      },
+      {
+        "from": "ملك",
+        "to": "عظيم",
+        "from_translit": "malik",
+        "to_translit": "ʿaẓīm",
+        "weight": 1
+      },
+      {
+        "from": "واسع",
+        "to": "حكيم",
+        "from_translit": "wāsiʿ",
+        "to_translit": "ḥakīm",
+        "weight": 1
+      },
+      {
+        "from": "حميد",
+        "to": "مجيد",
+        "from_translit": "ḥamīd",
+        "to_translit": "majīd",
+        "weight": 1
+      },
+      {
+        "from": "حليم",
+        "to": "رشيد",
+        "from_translit": "ḥalīm",
+        "to_translit": "rashīd",
+        "weight": 1
+      },
+      {
+        "from": "رحيم",
+        "to": "ودود",
+        "from_translit": "raḥīm",
+        "to_translit": "wadūd",
+        "weight": 1
+      },
+      {
+        "from": "ملك",
+        "to": "كريم",
+        "from_translit": "malik",
+        "to_translit": "karīm",
+        "weight": 1
+      },
+      {
+        "from": "حفيظ",
+        "to": "عليم",
+        "from_translit": "ḥafīẓ",
+        "to_translit": "ʿalīm",
+        "weight": 1
+      },
+      {
+        "from": "تواب",
+        "to": "حكيم",
+        "from_translit": "tawwāb",
+        "to_translit": "ḥakīm",
+        "weight": 1
+      },
+      {
+        "from": "غني",
+        "to": "كريم",
+        "from_translit": "ghanī",
+        "to_translit": "karīm",
+        "weight": 1
+      },
+      {
+        "from": "رحيم",
+        "to": "غفور",
+        "from_translit": "raḥīm",
+        "to_translit": "ghafūr",
+        "weight": 1
+      },
+      {
+        "from": "فتاح",
+        "to": "عليم",
+        "from_translit": "fattāḥ",
+        "to_translit": "ʿalīm",
+        "weight": 1
+      },
+      {
+        "from": "عزيز",
+        "to": "وهاب",
+        "from_translit": "ʿazīz",
+        "to_translit": "wahhāb",
+        "weight": 1
+      },
+      {
+        "from": "متكبر",
+        "to": "جبار",
+        "from_translit": "mutakabbir",
+        "to_translit": "jabbār",
+        "weight": 1
+      },
+      {
+        "from": "حكيم",
+        "to": "حميد",
+        "from_translit": "ḥakīm",
+        "to_translit": "ḥamīd",
+        "weight": 1
+      },
+      {
+        "from": "ولي",
+        "to": "حميد",
+        "from_translit": "walī",
+        "to_translit": "ḥamīd",
+        "weight": 1
+      },
+      {
+        "from": "علي",
+        "to": "حكيم",
+        "from_translit": "ʿalī",
+        "to_translit": "ḥakīm",
+        "weight": 1
+      },
+      {
+        "from": "عزيز",
+        "to": "كريم",
+        "from_translit": "ʿazīz",
+        "to_translit": "karīm",
+        "weight": 1
+      },
+      {
+        "from": "بر",
+        "to": "رحيم",
+        "from_translit": "barr",
+        "to_translit": "raḥīm",
+        "weight": 1
+      },
+      {
+        "from": "عزيز",
+        "to": "مقتدر",
+        "from_translit": "ʿazīz",
+        "to_translit": "muqtadir",
+        "weight": 1
+      },
+      {
+        "from": "سلام",
+        "to": "سلام",
+        "from_translit": "salām",
+        "to_translit": "salām",
+        "weight": 1
+      },
+      {
+        "from": "شكور",
+        "to": "حليم",
+        "from_translit": "shakūr",
+        "to_translit": "ḥalīm",
+        "weight": 1
+      },
+      {
+        "from": "غفور",
+        "to": "ودود",
+        "from_translit": "ghafūr",
+        "to_translit": "wadūd",
+        "weight": 1
+      },
+      {
+        "from": "له",
+        "to": "صمد",
+        "from_translit": "له",
+        "to_translit": "ṣamad",
+        "weight": 1
+      }
+    ]
+  },
+  "top_10_unordered_collapse_descriptive": [
+    {
+      "pair": "raḥīm ↔ ghafūr",
+      "count": 65
+    },
+    {
+      "pair": "ḥakīm ↔ ʿazīz",
+      "count": 47
+    },
+    {
+      "pair": "ḥakīm ↔ ʿalīm",
+      "count": 36
+    },
+    {
+      "pair": "samīʿ ↔ ʿalīm",
+      "count": 31
+    },
+    {
+      "pair": "raḥīm ↔ ʿazīz",
+      "count": 13
+    },
+    {
+      "pair": "baṣīr ↔ samīʿ",
+      "count": 11
+    },
+    {
+      "pair": "tawwāb ↔ raḥīm",
+      "count": 9
+    },
+    {
+      "pair": "ḥamīd ↔ ghanī",
+      "count": 9
+    },
+    {
+      "pair": "ʿalīm ↔ wāsiʿ",
+      "count": 7
+    },
+    {
+      "pair": "raḥmān ↔ raḥīm",
+      "count": 6
+    }
+  ],
+  "Q12_verse_final_divine_pairs_spotcheck": [
+    {
+      "loc": "Q12:6",
+      "pair": "عليم + حكيم",
+      "surface": "عليم حكيم"
+    },
+    {
+      "loc": "Q12:31",
+      "pair": "ملك + كريم",
+      "surface": "ملك كريم"
+    },
+    {
+      "loc": "Q12:34",
+      "pair": "سميع + عليم",
+      "surface": "السميع العليم"
+    },
+    {
+      "loc": "Q12:39",
+      "pair": "واحد + قهار",
+      "surface": "الواحد القهار"
+    },
+    {
+      "loc": "Q12:53",
+      "pair": "غفور + رحيم",
+      "surface": "غفور رحيم"
+    },
+    {
+      "loc": "Q12:55",
+      "pair": "حفيظ + عليم",
+      "surface": "حفيظ عليم"
+    },
+    {
+      "loc": "Q12:83",
+      "pair": "عليم + حكيم",
+      "surface": "العليم الحكيم"
+    },
+    {
+      "loc": "Q12:98",
+      "pair": "غفور + رحيم",
+      "surface": "الغفور الرحيم"
+    },
+    {
+      "loc": "Q12:100",
+      "pair": "عليم + حكيم",
+      "surface": "العليم الحكيم"
+    }
+  ],
+  "all_pair_rows": [
+    {
+      "loc": "Q1:1",
+      "base1": "رحمن",
+      "base2": "رحيم",
+      "surface": "الرحمن الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q1:3",
+      "base1": "رحمن",
+      "base2": "رحيم",
+      "surface": "الرحمن الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q2:32",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "العليم الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:37",
+      "base1": "تواب",
+      "base2": "رحيم",
+      "surface": "التواب الرحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:54",
+      "base1": "تواب",
+      "base2": "رحيم",
+      "surface": "التواب الرحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:115",
+      "base1": "واسع",
+      "base2": "عليم",
+      "surface": "واسع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:127",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:128",
+      "base1": "تواب",
+      "base2": "رحيم",
+      "surface": "التواب الرحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:129",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:137",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:160",
+      "base1": "تواب",
+      "base2": "رحيم",
+      "surface": "التواب الرحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:163",
+      "base1": "رحمن",
+      "base2": "رحيم",
+      "surface": "الرحمن الرحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:173",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:181",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:182",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:192",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:199",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:209",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:218",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:220",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:224",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:225",
+      "base1": "غفور",
+      "base2": "حليم",
+      "surface": "غفور حليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:226",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:227",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:228",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:235",
+      "base1": "غفور",
+      "base2": "حليم",
+      "surface": "غفور حليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:240",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:244",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:247",
+      "base1": "واسع",
+      "base2": "عليم",
+      "surface": "واسع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:255",
+      "base1": "علي",
+      "base2": "عظيم",
+      "surface": "العلي العظيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:256",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:260",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:261",
+      "base1": "واسع",
+      "base2": "عليم",
+      "surface": "واسع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:263",
+      "base1": "غني",
+      "base2": "حليم",
+      "surface": "غني حليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:267",
+      "base1": "غني",
+      "base2": "حميد",
+      "surface": "غني حميد",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q2:268",
+      "base1": "واسع",
+      "base2": "عليم",
+      "surface": "واسع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:2",
+      "base1": "حي",
+      "base2": "قيوم",
+      "surface": "الحي القيوم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:6",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:18",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:31",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:34",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:35",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:62",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:73",
+      "base1": "واسع",
+      "base2": "عليم",
+      "surface": "واسع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:89",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:121",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:126",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:129",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q3:155",
+      "base1": "غفور",
+      "base2": "حليم",
+      "surface": "غفور حليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:11",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:12",
+      "base1": "عليم",
+      "base2": "حليم",
+      "surface": "عليم حليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:16",
+      "base1": "تواب",
+      "base2": "رحيم",
+      "surface": "توابا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:17",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:23",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:24",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:25",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:26",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:34",
+      "base1": "علي",
+      "base2": "كبير",
+      "surface": "عليا كبيرا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:35",
+      "base1": "عليم",
+      "base2": "خبير",
+      "surface": "عليما خبيرا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:43",
+      "base1": "عفو",
+      "base2": "غفور",
+      "surface": "عفوا غفورا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:54",
+      "base1": "ملك",
+      "base2": "عظيم",
+      "surface": "ملكا عظيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:56",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيزا حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:58",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "سميعا بصيرا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:64",
+      "base1": "تواب",
+      "base2": "رحيم",
+      "surface": "توابا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:92",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:96",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:99",
+      "base1": "عفو",
+      "base2": "غفور",
+      "surface": "عفوا غفورا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:100",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:104",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:106",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:110",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:111",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:129",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:130",
+      "base1": "واسع",
+      "base2": "حكيم",
+      "surface": "واسعا حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:131",
+      "base1": "غني",
+      "base2": "حميد",
+      "surface": "غنيا حميدا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:134",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "سميعا بصيرا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:148",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميعا عليما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:152",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:158",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيزا حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:165",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيزا حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q4:170",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:3",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:34",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:38",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:39",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:54",
+      "base1": "واسع",
+      "base2": "عليم",
+      "surface": "واسع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:74",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:76",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:98",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:101",
+      "base1": "غفور",
+      "base2": "حليم",
+      "surface": "غفور حليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q5:118",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q6:13",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:18",
+      "base1": "حكيم",
+      "base2": "خبير",
+      "surface": "الحكيم الخبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:54",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:73",
+      "base1": "حكيم",
+      "base2": "خبير",
+      "surface": "الحكيم الخبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:83",
+      "base1": "حكيم",
+      "base2": "عليم",
+      "surface": "حكيم عليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:96",
+      "base1": "عزيز",
+      "base2": "عليم",
+      "surface": "العزيز العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:103",
+      "base1": "لطيف",
+      "base2": "خبير",
+      "surface": "اللطيف الخبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:115",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:128",
+      "base1": "حكيم",
+      "base2": "عليم",
+      "surface": "حكيم عليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:139",
+      "base1": "حكيم",
+      "base2": "عليم",
+      "surface": "حكيم عليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q6:145",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q7:200",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q8:10",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q8:17",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q8:49",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q8:53",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q8:61",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q8:63",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q8:67",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q8:69",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q8:70",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q8:71",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:5",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:15",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:27",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:28",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:40",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:60",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:71",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:91",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:97",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:98",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:99",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:102",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:103",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:104",
+      "base1": "تواب",
+      "base2": "رحيم",
+      "surface": "التواب الرحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:106",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:110",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q9:118",
+      "base1": "تواب",
+      "base2": "رحيم",
+      "surface": "التواب الرحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q10:65",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q10:107",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "الغفور الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q11:1",
+      "base1": "حكيم",
+      "base2": "خبير",
+      "surface": "حكيم خبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q11:66",
+      "base1": "قوي",
+      "base2": "عزيز",
+      "surface": "القوي العزيز",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q11:73",
+      "base1": "حميد",
+      "base2": "مجيد",
+      "surface": "حميد مجيد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q11:87",
+      "base1": "حليم",
+      "base2": "رشيد",
+      "surface": "الحليم الرشيد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q11:90",
+      "base1": "رحيم",
+      "base2": "ودود",
+      "surface": "رحيم ودود",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q12:6",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q12:31",
+      "base1": "ملك",
+      "base2": "كريم",
+      "surface": "ملك كريم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q12:34",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q12:39",
+      "base1": "واحد",
+      "base2": "قهار",
+      "surface": "الواحد القهار",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q12:53",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q12:55",
+      "base1": "حفيظ",
+      "base2": "عليم",
+      "surface": "حفيظ عليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q12:83",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "العليم الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q12:98",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "الغفور الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q12:100",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "العليم الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q13:16",
+      "base1": "واحد",
+      "base2": "قهار",
+      "surface": "الواحد القهار",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q14:1",
+      "base1": "عزيز",
+      "base2": "حميد",
+      "surface": "العزيز الحميد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q14:4",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q14:36",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q14:48",
+      "base1": "واحد",
+      "base2": "قهار",
+      "surface": "الواحد القهار",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q15:25",
+      "base1": "حكيم",
+      "base2": "عليم",
+      "surface": "حكيم عليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q15:49",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "الغفور الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q16:60",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q16:115",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q17:1",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "السميع البصير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q17:17",
+      "base1": "خبير",
+      "base2": "بصير",
+      "surface": "خبيرا بصيرا",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q17:30",
+      "base1": "خبير",
+      "base2": "بصير",
+      "surface": "خبيرا بصيرا",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q17:44",
+      "base1": "حليم",
+      "base2": "غفور",
+      "surface": "حليما غفورا",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q17:96",
+      "base1": "خبير",
+      "base2": "بصير",
+      "surface": "خبيرا بصيرا",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q21:4",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q22:52",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q22:61",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "سميع بصير",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q22:62",
+      "base1": "علي",
+      "base2": "كبير",
+      "surface": "العلي الكبير",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q22:63",
+      "base1": "لطيف",
+      "base2": "خبير",
+      "surface": "لطيف خبير",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q22:64",
+      "base1": "غني",
+      "base2": "حميد",
+      "surface": "الغني الحميد",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q22:75",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "سميع بصير",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:5",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:10",
+      "base1": "تواب",
+      "base2": "حكيم",
+      "surface": "تواب حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:15",
+      "base1": "له",
+      "base2": "عظيم",
+      "surface": "الله عظيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:18",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:21",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:22",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:32",
+      "base1": "واسع",
+      "base2": "عليم",
+      "surface": "واسع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:33",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:58",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:59",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:60",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q24:62",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q25:6",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q25:70",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:9",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:68",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:104",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:122",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:140",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:159",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:175",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:191",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:217",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q26:220",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q27:6",
+      "base1": "حكيم",
+      "base2": "عليم",
+      "surface": "حكيم عليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q27:9",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q27:11",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q27:30",
+      "base1": "رحمن",
+      "base2": "رحيم",
+      "surface": "الرحمن الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q27:40",
+      "base1": "غني",
+      "base2": "كريم",
+      "surface": "غني كريم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q27:78",
+      "base1": "عزيز",
+      "base2": "عليم",
+      "surface": "العزيز العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q28:16",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "الغفور الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q29:5",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q29:26",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q29:42",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q29:60",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q30:5",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q30:27",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q31:9",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q31:12",
+      "base1": "غني",
+      "base2": "حميد",
+      "surface": "غني حميد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q31:16",
+      "base1": "لطيف",
+      "base2": "خبير",
+      "surface": "لطيف خبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q31:26",
+      "base1": "غني",
+      "base2": "حميد",
+      "surface": "الغني الحميد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q31:27",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيز حكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q31:28",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "سميع بصير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q31:30",
+      "base1": "علي",
+      "base2": "كبير",
+      "surface": "العلي الكبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q31:34",
+      "base1": "عليم",
+      "base2": "خبير",
+      "surface": "عليم خبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q32:6",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q33:1",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q33:5",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q33:24",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q33:25",
+      "base1": "قوي",
+      "base2": "عزيز",
+      "surface": "قويا عزيزا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q33:34",
+      "base1": "لطيف",
+      "base2": "خبير",
+      "surface": "لطيفا خبيرا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q33:50",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q33:51",
+      "base1": "عليم",
+      "base2": "حليم",
+      "surface": "عليما حليما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q33:53",
+      "base1": "له",
+      "base2": "عظيم",
+      "surface": "الله عظيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q33:59",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q33:73",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q34:1",
+      "base1": "حكيم",
+      "base2": "خبير",
+      "surface": "الحكيم الخبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q34:2",
+      "base1": "رحيم",
+      "base2": "غفور",
+      "surface": "الرحيم الغفور",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q34:6",
+      "base1": "عزيز",
+      "base2": "حميد",
+      "surface": "العزيز الحميد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q34:23",
+      "base1": "علي",
+      "base2": "كبير",
+      "surface": "العلي الكبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q34:26",
+      "base1": "فتاح",
+      "base2": "عليم",
+      "surface": "الفتاح العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q34:27",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q35:2",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q35:15",
+      "base1": "غني",
+      "base2": "حميد",
+      "surface": "الغني الحميد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q35:28",
+      "base1": "عزيز",
+      "base2": "غفور",
+      "surface": "عزيز غفور",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q35:30",
+      "base1": "غفور",
+      "base2": "شكور",
+      "surface": "غفور شكور",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q35:41",
+      "base1": "حليم",
+      "base2": "غفور",
+      "surface": "حليما غفورا",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q36:5",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q36:38",
+      "base1": "عزيز",
+      "base2": "عليم",
+      "surface": "العزيز العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q38:9",
+      "base1": "عزيز",
+      "base2": "وهاب",
+      "surface": "العزيز الوهاب",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q38:65",
+      "base1": "واحد",
+      "base2": "قهار",
+      "surface": "الواحد القهار",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q38:66",
+      "base1": "عزيز",
+      "base2": "غفار",
+      "surface": "العزيز الغفار",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q39:1",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q39:4",
+      "base1": "واحد",
+      "base2": "قهار",
+      "surface": "الواحد القهار",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q39:5",
+      "base1": "عزيز",
+      "base2": "غفار",
+      "surface": "العزيز الغفار",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q39:53",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "الغفور الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q40:2",
+      "base1": "عزيز",
+      "base2": "عليم",
+      "surface": "العزيز العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q40:8",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q40:12",
+      "base1": "علي",
+      "base2": "كبير",
+      "surface": "العلي الكبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q40:16",
+      "base1": "واحد",
+      "base2": "قهار",
+      "surface": "الواحد القهار",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q40:20",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "السميع البصير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q40:35",
+      "base1": "متكبر",
+      "base2": "جبار",
+      "surface": "متكبر جبار",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q40:42",
+      "base1": "عزيز",
+      "base2": "غفار",
+      "surface": "العزيز الغفار",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q40:56",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "السميع البصير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q41:2",
+      "base1": "رحمن",
+      "base2": "رحيم",
+      "surface": "الرحمن الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q41:12",
+      "base1": "عزيز",
+      "base2": "عليم",
+      "surface": "العزيز العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q41:32",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q41:36",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q41:42",
+      "base1": "حكيم",
+      "base2": "حميد",
+      "surface": "حكيم حميد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q42:3",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q42:4",
+      "base1": "علي",
+      "base2": "عظيم",
+      "surface": "العلي العظيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q42:5",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "الغفور الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q42:11",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "السميع البصير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q42:19",
+      "base1": "قوي",
+      "base2": "عزيز",
+      "surface": "القوي العزيز",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q42:23",
+      "base1": "غفور",
+      "base2": "شكور",
+      "surface": "غفور شكور",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q42:27",
+      "base1": "خبير",
+      "base2": "بصير",
+      "surface": "خبير بصير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q42:28",
+      "base1": "ولي",
+      "base2": "حميد",
+      "surface": "الولي الحميد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q42:51",
+      "base1": "علي",
+      "base2": "حكيم",
+      "surface": "علي حكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q43:9",
+      "base1": "عزيز",
+      "base2": "عليم",
+      "surface": "العزيز العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q43:84",
+      "base1": "حكيم",
+      "base2": "عليم",
+      "surface": "الحكيم العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q44:6",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "السميع العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q44:42",
+      "base1": "عزيز",
+      "base2": "رحيم",
+      "surface": "العزيز الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q44:49",
+      "base1": "عزيز",
+      "base2": "كريم",
+      "surface": "العزيز الكريم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q45:2",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q45:37",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q46:2",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q46:8",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "الغفور الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q48:4",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q48:7",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيزا حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q48:14",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفورا رحيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q48:19",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "عزيزا حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q49:1",
+      "base1": "سميع",
+      "base2": "عليم",
+      "surface": "سميع عليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q49:5",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q49:8",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q49:12",
+      "base1": "تواب",
+      "base2": "رحيم",
+      "surface": "تواب رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q49:13",
+      "base1": "عليم",
+      "base2": "خبير",
+      "surface": "عليم خبير",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q49:14",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q51:30",
+      "base1": "حكيم",
+      "base2": "عليم",
+      "surface": "الحكيم العليم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q52:28",
+      "base1": "بر",
+      "base2": "رحيم",
+      "surface": "البر الرحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q54:42",
+      "base1": "عزيز",
+      "base2": "مقتدر",
+      "surface": "عزيز مقتدر",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q56:26",
+      "base1": "سلام",
+      "base2": "سلام",
+      "surface": "سلاما سلاما",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q57:1",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q57:24",
+      "base1": "غني",
+      "base2": "حميد",
+      "surface": "الغني الحميد",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q57:25",
+      "base1": "قوي",
+      "base2": "عزيز",
+      "surface": "قوي عزيز",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q57:28",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q58:1",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "سميع بصير",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q58:12",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q58:21",
+      "base1": "قوي",
+      "base2": "عزيز",
+      "surface": "قوي عزيز",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q59:1",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q59:22",
+      "base1": "رحمن",
+      "base2": "رحيم",
+      "surface": "الرحمن الرحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q59:24",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q60:5",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q60:6",
+      "base1": "غني",
+      "base2": "حميد",
+      "surface": "الغني الحميد",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q60:7",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q60:10",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليم حكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q60:12",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q61:1",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q62:1",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q62:3",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q64:6",
+      "base1": "غني",
+      "base2": "حميد",
+      "surface": "غني حميد",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q64:14",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q64:17",
+      "base1": "شكور",
+      "base2": "حليم",
+      "surface": "شكور حليم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q64:18",
+      "base1": "عزيز",
+      "base2": "حكيم",
+      "surface": "العزيز الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q66:1",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q66:2",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "العليم الحكيم",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q66:3",
+      "base1": "عليم",
+      "base2": "خبير",
+      "surface": "العليم الخبير",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q67:2",
+      "base1": "عزيز",
+      "base2": "غفور",
+      "surface": "العزيز الغفور",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q67:14",
+      "base1": "لطيف",
+      "base2": "خبير",
+      "surface": "اللطيف الخبير",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q73:20",
+      "base1": "غفور",
+      "base2": "رحيم",
+      "surface": "غفور رحيم",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q76:2",
+      "base1": "سميع",
+      "base2": "بصير",
+      "surface": "سميعا بصيرا",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q76:30",
+      "base1": "عليم",
+      "base2": "حكيم",
+      "surface": "عليما حكيما",
+      "period": "Medinan"
+    },
+    {
+      "loc": "Q85:8",
+      "base1": "عزيز",
+      "base2": "حميد",
+      "surface": "العزيز الحميد",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q85:14",
+      "base1": "غفور",
+      "base2": "ودود",
+      "surface": "الغفور الودود",
+      "period": "Meccan"
+    },
+    {
+      "loc": "Q112:2",
+      "base1": "له",
+      "base2": "صمد",
+      "surface": "الله الصمد",
+      "period": "Meccan"
+    }
+  ]
+}
