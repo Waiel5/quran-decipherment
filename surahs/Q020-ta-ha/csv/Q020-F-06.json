@@ -1,0 +1,98 @@
+{
+  "finding_id": "Q020-F-06",
+  "pre_reg_sha256": "c3d5c3a6e4c44853af2a599b3a38ef9cc89bd1f81350cb84c2e84461b7302309",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha_bon": 0.05,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, verse-union pericope, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "cycle_pericopes": {
+    "Q20:9-36": [
+      20,
+      9,
+      36
+    ],
+    "Q27:7-14": [
+      27,
+      7,
+      14
+    ],
+    "Q28:29-35": [
+      28,
+      29,
+      35
+    ],
+    "Q79:15-26": [
+      79,
+      15,
+      26
+    ]
+  },
+  "pericope_n_roots": {
+    "Q20:9-36": 82,
+    "Q27:7-14": 57,
+    "Q28:29-35": 67,
+    "Q79:15-26": 28
+  },
+  "arm_A_signature_completeness": {
+    "signature_roots": [
+      "byD",
+      "ESw",
+      "Twy",
+      "Ans",
+      "*hb",
+      "dbr"
+    ],
+    "signature_count_per_pericope": {
+      "Q20:9-36": 5,
+      "Q27:7-14": 4,
+      "Q28:29-35": 4,
+      "Q79:15-26": 3
+    },
+    "Q20_signature_count": 5,
+    "A_H1_Q20_is_max_signature": true,
+    "Q20_anchored_4way_core": [
+      "Alh",
+      "Aty",
+      "Ayy",
+      "ndw",
+      "qwl",
+      "rAy",
+      "rbb"
+    ],
+    "A_H2_core_nonempty": true,
+    "verdict": "CONFIRMED"
+  },
+  "descriptive_hub_ranking_MW7capped": {
+    "pairwise_jaccard": {
+      "Q20:9-36 x Q27:7-14": 0.2087,
+      "Q20:9-36 x Q28:29-35": 0.2845,
+      "Q20:9-36 x Q79:15-26": 0.2088,
+      "Q27:7-14 x Q28:29-35": 0.3626,
+      "Q27:7-14 x Q79:15-26": 0.1184,
+      "Q28:29-35 x Q79:15-26": 0.1176
+    },
+    "hub_strength": {
+      "Q20:9-36": 0.234,
+      "Q27:7-14": 0.2299,
+      "Q28:29-35": 0.2549,
+      "Q79:15-26": 0.1483
+    },
+    "hub_rank_descending": [
+      "Q28:29-35",
+      "Q20:9-36",
+      "Q27:7-14",
+      "Q79:15-26"
+    ]
+  },
+  "arm_B_hub_strength_null": {
+    "H_obs_Q20": 0.234,
+    "null_mean": 0.1123,
+    "null_std": 0.021,
+    "null_p95": 0.1433,
+    "z": 5.807,
+    "p_perm": 0.0001,
+    "n_candidate_windows": 25867,
+    "direction_locked": "TIGHTER (z>0)",
+    "verdict": "CONFIRMED"
+  }
+}

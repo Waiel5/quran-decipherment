@@ -1,0 +1,84 @@
+{
+  "test_id": "Q103-F-01",
+  "prereg_sha256": "b6445946260ce8db4cbb424c8638ad5d5be030adbac6e47af6f9be130364037c",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes/letters, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "arm_A": {
+    "three_verse_surahs": [
+      103,
+      108,
+      110
+    ],
+    "ra_monorhyme_3verse": [
+      103,
+      108
+    ],
+    "A_H1_pair_is_103_108": true,
+    "q103_fr_rank1_neighbor": 108,
+    "q103_fr_to_108": 0.2399,
+    "A_H2_nn1_is_108": true,
+    "verdict": "CONFIRMED"
+  },
+  "arm_B": {
+    "q103_total_letters": 73,
+    "q103_heavy_count": 7,
+    "q103_istilaa_density": 0.0959,
+    "heavy_breakdown": {
+      "ص": 5,
+      "خ": 1,
+      "ق": 1
+    },
+    "sad_count": 5,
+    "B_H1_dens_and_sad_dominant": true,
+    "null_mean": 0.05005,
+    "null_std": 0.0251,
+    "z": 1.827,
+    "p_perm": 0.07019,
+    "direction_obs_gt_null": true,
+    "verdict": "DIRECTIONAL"
+  },
+  "arm_C": {
+    "qasam_cluster": {
+      "surah": 103,
+      "first_verse": 1,
+      "n_stacked": 1,
+      "n_openings": 1,
+      "kinds": [
+        "waaw"
+      ],
+      "members": [
+        {
+          "s": 103,
+          "v": 1,
+          "w": 1,
+          "kind": "waaw",
+          "obj": [
+            "EaSori",
+            "ESr",
+            "EaSor",
+            "temporal"
+          ],
+          "opening": true
+        }
+      ],
+      "jawab": {
+        "s": 103,
+        "v": 2,
+        "w": 1,
+        "marker": "inna/anna"
+      },
+      "qasam_to_jawab_verse_distance": 1,
+      "sem_classes": [
+        "temporal"
+      ]
+    },
+    "v3_istithnaa_EXP_at_103_3_1_1": true,
+    "C_H1_minimal_tripartite": true,
+    "q103_local_cohesion": 3.0697,
+    "q103_local_cohesion_rank_desc": 10,
+    "q103_rhyme_entropy_nats": 0.0,
+    "C_H2_top15_cohesion": true,
+    "verdict": "CONFIRMED"
+  }
+}

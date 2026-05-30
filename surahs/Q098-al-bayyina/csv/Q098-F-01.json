@@ -1,0 +1,275 @@
+{
+  "test_id": "Q098-F-01",
+  "prereg_sha": "57eb6828a86fccaecb0a5438ad4acb671a6f8724e16d1669fede67b2d1852b41",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, QAC v0.4 roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "arm_A_title_density": {
+    "q98_byn_raw_count": 2,
+    "q98_byn_raw_rank": 59,
+    "n_surahs_with_byn": 71,
+    "byn_top5": [
+      [
+        2,
+        46
+      ],
+      [
+        4,
+        37
+      ],
+      [
+        5,
+        24
+      ],
+      [
+        3,
+        22
+      ],
+      [
+        6,
+        16
+      ]
+    ],
+    "A_H1_not_rank1_raw": true,
+    "q98_bayyina_surface_count": 2,
+    "bayyina_surface_top": [
+      [
+        11,
+        4
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        98,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        20,
+        1
+      ],
+      [
+        29,
+        1
+      ]
+    ],
+    "n_surahs_ge_q98_surface": 4,
+    "A_H2_not_rank1_surface": true,
+    "byn_normalized_density_rank": 6,
+    "verdict": "title-density-EXACT FALSIFIED"
+  },
+  "arm_B_bariyya_hapax": {
+    "bariyya_positions": [
+      [
+        98,
+        6
+      ],
+      [
+        98,
+        7
+      ]
+    ],
+    "n_occurrences": 2,
+    "B_H1_count_is_2": true,
+    "B_H2_both_in_q98_6_7": true,
+    "verdict": "CONFIRMED"
+  },
+  "arm_C_minimal_muqabala": {
+    "n_adjacent_faith_antithetical_pairs": 219,
+    "minimal_antonym_pairs": [
+      [
+        [
+          98,
+          6
+        ],
+        [
+          98,
+          7
+        ],
+        3,
+        [
+          "خير",
+          "شر"
+        ]
+      ]
+    ],
+    "C_count": 1,
+    "C_H1_unique_q98_6_7": true,
+    "top_matched_tail_examples": [
+      [
+        [
+          2,
+          102
+        ],
+        [
+          2,
+          103
+        ],
+        3,
+        1,
+        [
+          "خير",
+          "أنفسهم"
+        ]
+      ],
+      [
+        [
+          34,
+          52
+        ],
+        [
+          34,
+          53
+        ],
+        3,
+        1,
+        [
+          "التناوش",
+          "بالغيب"
+        ]
+      ],
+      [
+        [
+          63,
+          7
+        ],
+        [
+          63,
+          8
+        ],
+        3,
+        1,
+        [
+          "يعلمون",
+          "يفقهون"
+        ]
+      ],
+      [
+        [
+          98,
+          6
+        ],
+        [
+          98,
+          7
+        ],
+        3,
+        1,
+        [
+          "خير",
+          "شر"
+        ]
+      ],
+      [
+        [
+          3,
+          176
+        ],
+        [
+          3,
+          177
+        ],
+        2,
+        1,
+        [
+          "أليم",
+          "عظيم"
+        ]
+      ],
+      [
+        [
+          3,
+          177
+        ],
+        [
+          3,
+          178
+        ],
+        2,
+        1,
+        [
+          "أليم",
+          "مهين"
+        ]
+      ],
+      [
+        [
+          58,
+          4
+        ],
+        [
+          58,
+          5
+        ],
+        2,
+        1,
+        [
+          "أليم",
+          "مهين"
+        ]
+      ]
+    ],
+    "q98_6_7_record": [
+      [
+        98,
+        6
+      ],
+      [
+        98,
+        7
+      ],
+      3,
+      1,
+      [
+        "خير",
+        "شر"
+      ]
+    ],
+    "verdict": "CONFIRMED"
+  },
+  "arm_D_disjointness": {
+    "j_v6_v7": 0.08333333333333333,
+    "v6_roots": [
+      "$rk",
+      "$rr",
+      "Ahl",
+      "brA",
+      "kfr",
+      "ktb",
+      "nwr",
+      "xld"
+    ],
+    "v7_roots": [
+      "Amn",
+      "Eml",
+      "SlH",
+      "brA",
+      "xyr"
+    ],
+    "shared_roots": [
+      "brA"
+    ],
+    "null_mean": 0.026093253274503275,
+    "null_std": 0.049221216407380024,
+    "z": 1.162914780185069,
+    "p_lower": 0.8784121587841216,
+    "n_le": 8784,
+    "alpha": 0.05,
+    "pool_a_size": 2195,
+    "pool_b_size": 2918,
+    "verdict": "NULL (pre-commit violation — content OVERLAP, replicates H-NEW-2360 jadal law)"
+  }
+}

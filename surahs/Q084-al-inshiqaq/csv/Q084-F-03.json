@@ -1,0 +1,78 @@
+{
+  "finding_id": "Q084-F-03",
+  "rules_tuple": "(no-tashkeel, QAC-v0.4 ROOT, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "prereg_sha256": "bf28ee3f6aafcf3fc17d8fcd9718052f5e5ddc054f1a43225c4a5ac051c38ffb",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05,
+  "arm_A_verses": [
+    7,
+    8,
+    9
+  ],
+  "arm_B_verses": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "arm_A_roots": [
+    "Ahl",
+    "Aty",
+    "Hsb",
+    "ktb",
+    "qlb",
+    "srr",
+    "ymn",
+    "ysr"
+  ],
+  "arm_B_roots": [
+    "Ahl",
+    "Aty",
+    "Hwr",
+    "Sly",
+    "Zhr",
+    "Znn",
+    "bSr",
+    "dEw",
+    "ktb",
+    "kwn",
+    "rbb",
+    "sEr",
+    "srr",
+    "vbr",
+    "wry"
+  ],
+  "shared_mirror_anchors": [
+    "Ahl",
+    "Aty",
+    "ktb",
+    "srr"
+  ],
+  "S_obs": 4,
+  "jaccard_AB": 0.21052631578947367,
+  "primary_null": {
+    "seed": 20260509,
+    "null_mean": 5.2953,
+    "null_std": 3.883464678608523,
+    "n_candidate_windows": 5365,
+    "n_ge_obs": 6132,
+    "p_perm": 0.6132386761323868,
+    "z": -0.3335423667260228
+  },
+  "replication_null": {
+    "seed": 20260511,
+    "null_mean": 5.304,
+    "null_std": 3.9068892996858766,
+    "n_candidate_windows": 5365,
+    "n_ge_obs": 6168,
+    "p_perm": 0.6168383161683831,
+    "z": -0.33376937506390186
+  },
+  "direction_match_lock": false,
+  "pre_commit_violation": true,
+  "verdict": "NULL (pre-commit violation)"
+}

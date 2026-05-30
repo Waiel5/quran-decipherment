@@ -1,0 +1,173 @@
+{
+  "test_id": "Q094-F-01",
+  "prereg_sha": "2dd938018b303e0da9e8a1313d3fe710fe83123913e6aaa705c1975908f71d2a",
+  "seed": 20260509,
+  "seed_replication": 20260530,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, QAC v0.4 roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "arm_A": {
+    "A_H1_token_single_connective_hits": [
+      [
+        94,
+        5,
+        6,
+        "فإن",
+        "إن"
+      ]
+    ],
+    "A_H1_unique_Q94_5_6": true,
+    "A_H2_wholestring_hits": [
+      [
+        94,
+        5,
+        6
+      ]
+    ],
+    "A_H2_unique_Q94_5_6": true,
+    "verdict": "CONFIRMED"
+  },
+  "arm_B": {
+    "n_substantive_adjacent_pairs": 5821,
+    "min_edit_distance": 1,
+    "rank1_pairs": [
+      [
+        94,
+        5,
+        6
+      ]
+    ],
+    "B_H1_Q94_5_6_unique_rank1_edit1": true,
+    "exact_verbatim_adjacent_count": 0,
+    "B_H2_zero_exact_adjacent": true,
+    "top12_smallest_edit": [
+      {
+        "edit": 1,
+        "pair": "Q94:5-6",
+        "len": [
+          14,
+          13
+        ]
+      },
+      {
+        "edit": 2,
+        "pair": "Q74:19-20",
+        "len": [
+          10,
+          11
+        ]
+      },
+      {
+        "edit": 2,
+        "pair": "Q75:34-35",
+        "len": [
+          11,
+          13
+        ]
+      },
+      {
+        "edit": 2,
+        "pair": "Q82:17-18",
+        "len": [
+          18,
+          19
+        ]
+      },
+      {
+        "edit": 2,
+        "pair": "Q102:3-4",
+        "len": [
+          12,
+          14
+        ]
+      },
+      {
+        "edit": 3,
+        "pair": "Q99:7-8",
+        "len": [
+          22,
+          21
+        ]
+      },
+      {
+        "edit": 4,
+        "pair": "Q37:165-166",
+        "len": [
+          15,
+          16
+        ]
+      },
+      {
+        "edit": 4,
+        "pair": "Q56:39-40",
+        "len": [
+          12,
+          13
+        ]
+      },
+      {
+        "edit": 4,
+        "pair": "Q91:2-3",
+        "len": [
+          14,
+          15
+        ]
+      },
+      {
+        "edit": 5,
+        "pair": "Q35:20-21",
+        "len": [
+          18,
+          16
+        ]
+      },
+      {
+        "edit": 5,
+        "pair": "Q70:20-21",
+        "len": [
+          15,
+          17
+        ]
+      },
+      {
+        "edit": 5,
+        "pair": "Q81:5-6",
+        "len": [
+          14,
+          14
+        ]
+      }
+    ],
+    "B_H3_perm": {
+      "obs_edit": 1,
+      "null_mean_edit_seed1": 12.8285,
+      "n_le_seed1": 2,
+      "p_perm_seed1": 0.00029997000299970003,
+      "null_mean_edit_seed2": 12.8051,
+      "n_le_seed2": 0,
+      "p_perm_seed2": 9.999000099990002e-05,
+      "alpha": 0.05,
+      "pool_a_size": 734,
+      "pool_b_size": 668,
+      "pass": true
+    },
+    "B_passes": 3,
+    "verdict": "CONFIRMED"
+  },
+  "arm_C": {
+    "usr_definite_v5": true,
+    "usr_definite_v6": true,
+    "yusr_indefinite_v5": true,
+    "yusr_indefinite_v6": true,
+    "v5_roots": [
+      "Esr",
+      "ysr"
+    ],
+    "v6_roots": [
+      "Esr",
+      "ysr"
+    ],
+    "root_jaccard_v5_v6": 1.0,
+    "C_H1_orthographic_asymmetry": true,
+    "verdict": "CONFIRMED"
+  }
+}

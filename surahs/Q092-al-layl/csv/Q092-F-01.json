@@ -1,0 +1,82 @@
+{
+  "test_id": "Q092-F-01",
+  "title": "giver/miser antithetical pair as shared-frame jadal (H-NEW-2360 replication) + H-NEW-1820 lyl-rank",
+  "prereg_sha256": "6e41fd080525daf5d638f84416339584e3bd6143da457850afc75363d01981b8",
+  "seed": 20260509,
+  "seed_replication": 20260601,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, QAC v0.4 stem-roots, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "bonferroni_k": 1,
+  "alpha_bon": 0.05,
+  "blocks": {
+    "giver_v5_7_roots": [
+      "ETw",
+      "Hsn",
+      "Sdq",
+      "wqy",
+      "ysr"
+    ],
+    "miser_v8_10_roots": [
+      "Esr",
+      "Hsn",
+      "bxl",
+      "gny",
+      "k*b",
+      "ysr"
+    ],
+    "shared_roots": [
+      "Hsn",
+      "ysr"
+    ],
+    "J_obs": 0.2222222222222222
+  },
+  "arm_A_content_overlap": {
+    "J_obs": 0.2222222222222222,
+    "null_mean": 0.03415828310578311,
+    "null_std": 0.07108065567801047,
+    "z": 2.6457822782101683,
+    "p_upper_tail": 0.0326967303269673,
+    "n_ge": 326,
+    "n_null": 10000,
+    "direction_locked": "OVERLAP-positive (TIGHTER than random)",
+    "direction_observed": "OVERLAP-positive (TIGHTER)",
+    "replication_seed": 20260601,
+    "repl_null_mean": 0.03353131812631813,
+    "repl_p_upper": 0.032896710328967106,
+    "tolerance_roots": 2,
+    "block_cardinalities": [
+      5,
+      6
+    ],
+    "confirms_h_new_2360_overlap": true,
+    "pre_commit_violation": false
+  },
+  "arm_B_frame_pole": {
+    "frame": [
+      "Hsn",
+      "ysr"
+    ],
+    "giver_poles": [
+      "ETw",
+      "Sdq",
+      "wqy"
+    ],
+    "miser_poles": [
+      "bxl",
+      "gny",
+      "k*b"
+    ],
+    "shared_subset_frame": true,
+    "poles_disjoint": true,
+    "PASS": true
+  },
+  "arm_C_title_density": {
+    "lyl_total_attestations": 92,
+    "n_surahs_with_lyl": 49,
+    "rank1_surah": 2,
+    "rank1_count": 5,
+    "q92_lyl_count": 1,
+    "q92_lyl_rank": 48,
+    "confirms_h_new_1820": true
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "test_id": "Q093-F-01",
+  "prereg_sha": "2e384496b1c2e27463135e579918d91f2dc12028276e82f4dc9f08b81be41eed",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, QAC v0.4 ROOT, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "arm_A": {
+    "A_H1_Q94_FR_rank": 4,
+    "A_H1_Q94_FR_dist": 0.364138,
+    "A_H1_pass_top5": true,
+    "Q92_FR_rank": 18,
+    "Q93_mean_FR": 0.8151733008849558,
+    "A_H2_Q93Q94_TSP_seam_delta_raw": -0.0151999999998651,
+    "A_H2_Q93Q94_TSP_ascending_rank": 10,
+    "A_H2_pass_top15_smoothest": true,
+    "seam_jaccard_by_k": {
+      "k3": {
+        "k": 3,
+        "j_Q93_Q94": 0.0,
+        "shared_roots_seam": [],
+        "n_last_roots_Q93": 7,
+        "n_first_roots_Q94": 6,
+        "corpus_mean_seam_J": 0.04162272084831732,
+        "null_mean_seam_J": 0.03808218597379741,
+        "Q93Q94_percentile_among_real_seams": 43.36283185840708,
+        "A_H3_le_corpus_mean": true
+      },
+      "k5": {
+        "k": 5,
+        "j_Q93_Q94": 0.0,
+        "shared_roots_seam": [],
+        "n_last_roots_Q93": 12,
+        "n_first_roots_Q94": 10,
+        "corpus_mean_seam_J": 0.06318408983650156,
+        "null_mean_seam_J": 0.05080634573692052,
+        "Q93Q94_percentile_among_real_seams": 24.778761061946902,
+        "A_H3_le_corpus_mean": true
+      }
+    },
+    "A_H3_seam_le_corpus_mean_both_k": true,
+    "A_H4_percentile_le_90_k3": true,
+    "A_passes": 4,
+    "pre_commit_violation": false,
+    "verdict": "CONFIRMED (scale-dissociation)"
+  },
+  "arm_B": {
+    "B_H1_wjd_verses": [
+      6,
+      7,
+      8
+    ],
+    "B_H1_pass": true,
+    "favor_block_roots_vv6_8": [
+      "Awy",
+      "Dll",
+      "Eyl",
+      "gny",
+      "hdy",
+      "wjd",
+      "ytm"
+    ],
+    "command_block_roots_vv9_11": [
+      "Hdv",
+      "nEm",
+      "nhr",
+      "qhr",
+      "rbb",
+      "sAl",
+      "ytm"
+    ],
+    "bridge_roots": [
+      "ytm"
+    ],
+    "B_H2_unique_bridge_is_ytm": true,
+    "B_H3_ytm_total_surahs": 12,
+    "B_H3_ytm_multi_verse_surahs": {
+      "2": [
+        83,
+        177,
+        215,
+        220
+      ],
+      "4": [
+        2,
+        3,
+        6,
+        8,
+        10,
+        36,
+        127
+      ],
+      "93": [
+        6,
+        9
+      ]
+    },
+    "B_H3_Q93_ytm_verses": [
+      6,
+      9
+    ],
+    "verdict": "CONFIRMED"
+  }
+}

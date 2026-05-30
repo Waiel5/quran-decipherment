@@ -1,0 +1,65 @@
+{
+  "finding_id": "Q071-F-01",
+  "title": "Q 71 Nūḥ as lexical centroid/anchor of the Nūḥ-pericope cycle",
+  "prereg_sha256": "e19913e96977f32ea95405ab399f69f992e774b68f33d331214e59d7b5cf996f",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, verse-union pericope, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "parent": "H-NEW-2260 (Nūḥ cycle PASS z=+2.51)",
+  "mw7_2260_reproduction_ok": true,
+  "direction_locked": "Q71 most-central (Arm A rank==1) AND Q71 centrality > random-anchor null (Arm B z>0)",
+  "arm_A_centrality": {
+    "table": [
+      {
+        "pericope": "Q 7:59-64",
+        "mean_jaccard": 0.2168508336447268,
+        "rank": 1
+      },
+      {
+        "pericope": "Q 23:23-30",
+        "mean_jaccard": 0.19685274337580017,
+        "rank": 2
+      },
+      {
+        "pericope": "Q 11:25-49",
+        "mean_jaccard": 0.19034602321114588,
+        "rank": 3
+      },
+      {
+        "pericope": "Q 26:105-122",
+        "mean_jaccard": 0.18127608645656346,
+        "rank": 4
+      },
+      {
+        "pericope": "Q 71:1-28",
+        "mean_jaccard": 0.14932696901261047,
+        "rank": 5
+      },
+      {
+        "pericope": "Q 54:9-17",
+        "mean_jaccard": 0.14833175728920409,
+        "rank": 6
+      }
+    ],
+    "q71_rank": 5,
+    "q71_mean_jaccard": 0.14932696901261047,
+    "centroid_pericope": "Q 7:59-64",
+    "centroid_mean_jaccard": 0.2168508336447268,
+    "verdict": "NULL"
+  },
+  "arm_B_anchor_swap_null": {
+    "L_matched": 28,
+    "q71_observed_centrality": 0.14932696901261047,
+    "null_mean": 0.13650273399873047,
+    "null_std": 0.030218883779565497,
+    "null_p95": 0.1758356175082409,
+    "z": 0.4243781837683877,
+    "p_perm_one_sided_greater": 0.2781,
+    "n_perm_ge_obs": 2781,
+    "verdict": "NULL"
+  },
+  "overall_verdict": "NULL",
+  "honest_note": "Direction was LOCKED toward the intuitive Q71-as-centroid hypothesis. Q 71 is the longest pericope (L=28, 87 unique roots) and carries large private vocabulary blocks (cosmological signs vv15-20; the five named idols v23; the night/day complaint) that the short cross-surah retellings lack — which depresses lexical (Jaccard) centrality even if Q 71 is the NARRATIVE anchor of the cycle."
+}
