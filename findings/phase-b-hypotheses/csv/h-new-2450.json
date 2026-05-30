@@ -1,0 +1,1623 @@
+{
+  "finding": "H-NEW-2450",
+  "title": "Adjacent near-verbatim reprise: corpus census + adjacency-excess / genre-concentration",
+  "prereg_sha256": "11f93da43357ff93bb6efdcdd26d716cb3ded2218e4896b897fb776cb69bf6bd",
+  "seed": 20260509,
+  "nperm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "tokenization": "NFC; waqf/codex glyphs U+06D6-U+06ED stripped; whitespace split; same-surah (i,i+1) only",
+  "bands": {
+    "substantive_min_tokens": 3,
+    "test_band_char_edit_le": 3,
+    "roster_band_char_edit_le": 6
+  },
+  "counts": {
+    "within_surah_adjacent_pairs": 6122,
+    "substantive_adjacent_pairs": 5821,
+    "N_low_observed_char_edit_le3_substantive": 6,
+    "exact_verbatim_adjacent_substantive": 0,
+    "roster_size_char_edit_le6": 33,
+    "roster_juzz_amma": 22
+  },
+  "char_edit_histogram_all": {
+    "1": 1,
+    "2": 8,
+    "3": 3,
+    "4": 5,
+    "5": 13,
+    "6": 33,
+    "7": 46,
+    "8": 44,
+    "9": 51,
+    "10": 71,
+    "11": 82,
+    "12": 102,
+    "13": 110,
+    "14": 138,
+    "15": 127,
+    "16": 124,
+    "17": 101,
+    "18": 105,
+    "19": 99,
+    "20": 73,
+    "21": 85,
+    "22": 64,
+    "23": 88,
+    "24": 73,
+    "25": 71,
+    "26": 80,
+    "27": 94,
+    "28": 86,
+    "29": 72,
+    "30": 86,
+    "31": 87,
+    "32": 75,
+    "33": 82,
+    "34": 71,
+    "35": 85,
+    "36": 78,
+    "37": 91,
+    "38": 69,
+    "39": 80,
+    "40": 67,
+    "41": 80,
+    "42": 60,
+    "43": 78,
+    "44": 76,
+    "45": 66,
+    "46": 72,
+    "47": 54,
+    "48": 77,
+    "49": 83,
+    "50": 66,
+    "51": 71,
+    "52": 63,
+    "53": 64,
+    "54": 83,
+    "55": 69,
+    "56": 61,
+    "57": 69,
+    "58": 66,
+    "59": 60,
+    "60": 58,
+    "61": 53,
+    "62": 44,
+    "63": 51,
+    "64": 34,
+    "65": 55,
+    "66": 54,
+    "67": 50,
+    "68": 44,
+    "69": 46,
+    "70": 43,
+    "71": 42,
+    "72": 41,
+    "73": 30,
+    "74": 38,
+    "75": 38,
+    "76": 40,
+    "77": 31,
+    "78": 41,
+    "79": 35,
+    "80": 38,
+    "81": 28,
+    "82": 40,
+    "83": 35,
+    "84": 24,
+    "85": 34,
+    "86": 26,
+    "87": 27,
+    "88": 27,
+    "89": 30,
+    "90": 27,
+    "91": 26,
+    "92": 23,
+    "93": 24,
+    "94": 20,
+    "95": 15,
+    "96": 20,
+    "97": 20,
+    "98": 13,
+    "99": 17,
+    "100": 14,
+    "101": 12,
+    "102": 17,
+    "103": 17,
+    "104": 13,
+    "105": 14,
+    "106": 15,
+    "107": 9,
+    "108": 15,
+    "109": 13,
+    "110": 10,
+    "111": 10,
+    "112": 10,
+    "113": 8,
+    "114": 5,
+    "115": 7,
+    "116": 7,
+    "117": 8,
+    "118": 10,
+    "119": 8,
+    "120": 7,
+    "121": 8,
+    "122": 8,
+    "123": 9,
+    "124": 8,
+    "125": 11,
+    "126": 3,
+    "127": 9,
+    "128": 5,
+    "129": 8,
+    "130": 7,
+    "131": 3,
+    "132": 2,
+    "133": 2,
+    "134": 6,
+    "135": 4,
+    "136": 1,
+    "137": 4,
+    "138": 8,
+    "139": 2,
+    "140": 4,
+    "141": 4,
+    "142": 4,
+    "143": 3,
+    "144": 2,
+    "145": 1,
+    "146": 4,
+    "147": 6,
+    "148": 4,
+    "149": 5,
+    "150": 1,
+    "151": 3,
+    "152": 4,
+    "153": 4,
+    "154": 4,
+    "155": 3,
+    "156": 4,
+    "157": 6,
+    "158": 2,
+    "159": 2,
+    "160": 3,
+    "161": 2,
+    "164": 3,
+    "166": 1,
+    "167": 5,
+    "168": 1,
+    "170": 2,
+    "171": 2,
+    "172": 1,
+    "173": 2,
+    "175": 1,
+    "177": 3,
+    "178": 1,
+    "179": 3,
+    "180": 3,
+    "181": 2,
+    "183": 2,
+    "184": 1,
+    "185": 2,
+    "188": 1,
+    "189": 2,
+    "190": 1,
+    "192": 2,
+    "195": 2,
+    "198": 2,
+    "200": 3,
+    "202": 1,
+    "208": 2,
+    "209": 1,
+    "210": 1,
+    "212": 1,
+    "214": 1,
+    "216": 1,
+    "217": 1,
+    "220": 1,
+    "221": 2,
+    "222": 2,
+    "223": 1,
+    "224": 1,
+    "227": 1,
+    "228": 1,
+    "229": 2,
+    "231": 1,
+    "234": 2,
+    "235": 2,
+    "237": 1,
+    "240": 1,
+    "241": 3,
+    "244": 1,
+    "245": 1,
+    "246": 2,
+    "258": 1,
+    "263": 1,
+    "264": 1,
+    "296": 1,
+    "299": 1,
+    "306": 1,
+    "451": 1,
+    "506": 1
+  },
+  "token_edit_histogram_all": {
+    "1": 9,
+    "2": 101,
+    "3": 227,
+    "4": 444,
+    "5": 334,
+    "6": 330,
+    "7": 240,
+    "8": 252,
+    "9": 287,
+    "10": 238,
+    "11": 275,
+    "12": 230,
+    "13": 267,
+    "14": 216,
+    "15": 249,
+    "16": 227,
+    "17": 233,
+    "18": 202,
+    "19": 174,
+    "20": 140,
+    "21": 125,
+    "22": 131,
+    "23": 147,
+    "24": 111,
+    "25": 101,
+    "26": 99,
+    "27": 97,
+    "28": 88,
+    "29": 59,
+    "30": 45,
+    "31": 47,
+    "32": 34,
+    "33": 31,
+    "34": 33,
+    "35": 27,
+    "36": 31,
+    "37": 21,
+    "38": 32,
+    "39": 12,
+    "40": 11,
+    "41": 10,
+    "42": 19,
+    "43": 20,
+    "44": 13,
+    "45": 7,
+    "46": 11,
+    "47": 10,
+    "48": 6,
+    "49": 2,
+    "50": 6,
+    "51": 6,
+    "52": 3,
+    "53": 2,
+    "54": 2,
+    "56": 4,
+    "57": 5,
+    "58": 4,
+    "59": 4,
+    "60": 2,
+    "61": 2,
+    "63": 4,
+    "64": 2,
+    "66": 2,
+    "67": 1,
+    "68": 2,
+    "69": 2,
+    "70": 2,
+    "71": 2,
+    "72": 1,
+    "73": 2,
+    "76": 2,
+    "77": 1,
+    "81": 1,
+    "87": 1,
+    "121": 1,
+    "126": 1
+  },
+  "char_edit_histogram_substantive": {
+    "1": 1,
+    "2": 4,
+    "3": 1,
+    "4": 3,
+    "5": 6,
+    "6": 18,
+    "7": 26,
+    "8": 21,
+    "9": 23,
+    "10": 48,
+    "11": 53,
+    "12": 72,
+    "13": 91,
+    "14": 119,
+    "15": 115,
+    "16": 117,
+    "17": 90,
+    "18": 97,
+    "19": 95,
+    "20": 72,
+    "21": 81,
+    "22": 60,
+    "23": 86,
+    "24": 70,
+    "25": 69,
+    "26": 77,
+    "27": 90,
+    "28": 84,
+    "29": 72,
+    "30": 84,
+    "31": 86,
+    "32": 75,
+    "33": 82,
+    "34": 69,
+    "35": 85,
+    "36": 78,
+    "37": 89,
+    "38": 69,
+    "39": 80,
+    "40": 67,
+    "41": 80,
+    "42": 59,
+    "43": 78,
+    "44": 75,
+    "45": 66,
+    "46": 72,
+    "47": 53,
+    "48": 77,
+    "49": 83,
+    "50": 66,
+    "51": 71,
+    "52": 63,
+    "53": 64,
+    "54": 83,
+    "55": 69,
+    "56": 61,
+    "57": 69,
+    "58": 66,
+    "59": 60,
+    "60": 58,
+    "61": 53,
+    "62": 44,
+    "63": 51,
+    "64": 34,
+    "65": 55,
+    "66": 54,
+    "67": 50,
+    "68": 44,
+    "69": 46,
+    "70": 43,
+    "71": 42,
+    "72": 41,
+    "73": 30,
+    "74": 38,
+    "75": 38,
+    "76": 40,
+    "77": 31,
+    "78": 41,
+    "79": 35,
+    "80": 38,
+    "81": 28,
+    "82": 40,
+    "83": 35,
+    "84": 24,
+    "85": 34,
+    "86": 25,
+    "87": 27,
+    "88": 27,
+    "89": 30,
+    "90": 27,
+    "91": 26,
+    "92": 23,
+    "93": 24,
+    "94": 20,
+    "95": 15,
+    "96": 20,
+    "97": 20,
+    "98": 13,
+    "99": 17,
+    "100": 14,
+    "101": 12,
+    "102": 17,
+    "103": 17,
+    "104": 13,
+    "105": 14,
+    "106": 15,
+    "107": 9,
+    "108": 15,
+    "109": 13,
+    "110": 10,
+    "111": 10,
+    "112": 10,
+    "113": 8,
+    "114": 5,
+    "115": 7,
+    "116": 7,
+    "117": 8,
+    "118": 10,
+    "119": 8,
+    "120": 6,
+    "121": 8,
+    "122": 8,
+    "123": 9,
+    "124": 8,
+    "125": 11,
+    "126": 3,
+    "127": 9,
+    "128": 5,
+    "129": 8,
+    "130": 7,
+    "131": 3,
+    "132": 2,
+    "133": 2,
+    "134": 6,
+    "135": 4,
+    "136": 1,
+    "137": 4,
+    "138": 8,
+    "139": 2,
+    "140": 4,
+    "141": 4,
+    "142": 4,
+    "143": 3,
+    "144": 2,
+    "145": 1,
+    "146": 4,
+    "147": 6,
+    "148": 4,
+    "149": 5,
+    "150": 1,
+    "151": 3,
+    "152": 4,
+    "153": 4,
+    "154": 4,
+    "155": 3,
+    "156": 4,
+    "157": 6,
+    "158": 2,
+    "159": 2,
+    "160": 3,
+    "161": 2,
+    "164": 3,
+    "166": 1,
+    "167": 5,
+    "168": 1,
+    "170": 2,
+    "171": 2,
+    "172": 1,
+    "173": 2,
+    "175": 1,
+    "177": 3,
+    "178": 1,
+    "179": 3,
+    "180": 3,
+    "181": 2,
+    "183": 2,
+    "184": 1,
+    "185": 2,
+    "188": 1,
+    "189": 2,
+    "190": 1,
+    "192": 2,
+    "195": 2,
+    "198": 2,
+    "200": 3,
+    "202": 1,
+    "208": 2,
+    "209": 1,
+    "210": 1,
+    "212": 1,
+    "214": 1,
+    "216": 1,
+    "217": 1,
+    "220": 1,
+    "221": 2,
+    "222": 2,
+    "223": 1,
+    "224": 1,
+    "227": 1,
+    "228": 1,
+    "229": 2,
+    "231": 1,
+    "234": 2,
+    "235": 2,
+    "237": 1,
+    "240": 1,
+    "241": 2,
+    "244": 1,
+    "245": 1,
+    "246": 2,
+    "258": 1,
+    "263": 1,
+    "264": 1,
+    "296": 1,
+    "299": 1,
+    "306": 1,
+    "451": 1,
+    "506": 1
+  },
+  "token_edit_histogram_substantive": {
+    "1": 4,
+    "2": 40,
+    "3": 136,
+    "4": 370,
+    "5": 306,
+    "6": 315,
+    "7": 232,
+    "8": 246,
+    "9": 282,
+    "10": 235,
+    "11": 274,
+    "12": 230,
+    "13": 266,
+    "14": 216,
+    "15": 249,
+    "16": 227,
+    "17": 233,
+    "18": 202,
+    "19": 174,
+    "20": 140,
+    "21": 125,
+    "22": 131,
+    "23": 147,
+    "24": 111,
+    "25": 100,
+    "26": 99,
+    "27": 97,
+    "28": 88,
+    "29": 59,
+    "30": 45,
+    "31": 47,
+    "32": 34,
+    "33": 31,
+    "34": 33,
+    "35": 26,
+    "36": 31,
+    "37": 21,
+    "38": 32,
+    "39": 12,
+    "40": 11,
+    "41": 10,
+    "42": 19,
+    "43": 20,
+    "44": 13,
+    "45": 7,
+    "46": 11,
+    "47": 10,
+    "48": 6,
+    "49": 2,
+    "50": 6,
+    "51": 6,
+    "52": 3,
+    "53": 2,
+    "54": 2,
+    "56": 4,
+    "57": 4,
+    "58": 4,
+    "59": 4,
+    "60": 2,
+    "61": 2,
+    "63": 4,
+    "64": 2,
+    "66": 2,
+    "67": 1,
+    "68": 2,
+    "69": 2,
+    "70": 2,
+    "71": 2,
+    "72": 1,
+    "73": 2,
+    "76": 2,
+    "77": 1,
+    "81": 1,
+    "87": 1,
+    "121": 1,
+    "126": 1
+  },
+  "families": {
+    "edit1": [
+      "Q94:5-6"
+    ],
+    "edit2": [
+      "Q75:34-35",
+      "Q102:3-4",
+      "Q74:19-20",
+      "Q82:17-18"
+    ],
+    "edit3": [
+      "Q99:7-8"
+    ]
+  },
+  "mechanism_tally": {
+    "parallel-template noun/verb swap": 30,
+    "rhyme-driven final-word swap (fasila re-tuning)": 26,
+    "connective/particle prepend or drop": 5,
+    "connective/particle swap": 4,
+    "pronoun/inflection shift": 4
+  },
+  "roster_region": {
+    "meccan": 32,
+    "medinan": 1
+  },
+  "H1_adjacency_excess": {
+    "statistic": "N_low = # substantive within-surah adjacent pairs with char-edit <= 3",
+    "N_low_obs": 6,
+    "primary_null": "within-surah verse-order shuffle",
+    "null_mean_within_surah": 17.2708,
+    "p_within_surah_one_sided": 1.0,
+    "replication_seed_p": 1.0,
+    "replication_null_mean": 17.2617,
+    "robustness_global_shuffle_null_mean": 0.2914,
+    "robustness_global_shuffle_p": 0.0001,
+    "direction_locked": "observed > null (adjacent more than chance)",
+    "verdict": "NULL (pre-commit violation: reversed)"
+  },
+  "H2_genre_concentration": {
+    "statistic": "Delta = mean per-surah low-edit rate (juzz-amma 78-114) - rest (1-77)",
+    "mean_rate_juzz_amma": 0.01617,
+    "mean_rate_rest": 0.00078,
+    "delta_obs": 0.01539,
+    "n_juzz_amma_surahs_with_substantive_pairs": 37,
+    "n_rest_surahs": 77,
+    "p_label_perm_one_sided": 0.0097,
+    "direction_locked": "juzz-amma rate > rest",
+    "verdict": "PASS"
+  },
+  "bonferroni_alpha": 0.025,
+  "roster": [
+    {
+      "char_edit": 1,
+      "token_edit": 1,
+      "ref": "Q94:5-6",
+      "surah": 94,
+      "name": "الشرح",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "فإن مع العسر يسرا",
+      "text_j": "إن مع العسر يسرا",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "فإن",
+          "to": "إن",
+          "mechanism": "connective/particle swap"
+        }
+      ]
+    },
+    {
+      "char_edit": 2,
+      "token_edit": 1,
+      "ref": "Q75:34-35",
+      "surah": 75,
+      "name": "القيامة",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "أولى لك فأولى",
+      "text_j": "ثم أولى لك فأولى",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "ثم",
+          "mechanism": "connective/particle prepend or drop"
+        }
+      ]
+    },
+    {
+      "char_edit": 2,
+      "token_edit": 1,
+      "ref": "Q102:3-4",
+      "surah": 102,
+      "name": "التكاثر",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "كلا سوف تعلمون",
+      "text_j": "ثم كلا سوف تعلمون",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "ثم",
+          "mechanism": "connective/particle prepend or drop"
+        }
+      ]
+    },
+    {
+      "char_edit": 2,
+      "token_edit": 2,
+      "ref": "Q74:19-20",
+      "surah": 74,
+      "name": "المدثر",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "فقتل كيف قدر",
+      "text_j": "ثم قتل كيف قدر",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "ثم",
+          "mechanism": "connective/particle prepend or drop"
+        },
+        {
+          "op": "sub",
+          "from": "فقتل",
+          "to": "قتل",
+          "mechanism": "parallel-template noun/verb swap"
+        }
+      ]
+    },
+    {
+      "char_edit": 2,
+      "token_edit": 2,
+      "ref": "Q82:17-18",
+      "surah": 82,
+      "name": "الإنفطار",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "وما أدراك ما يوم الدين",
+      "text_j": "ثم ما أدراك ما يوم الدين",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "ثم",
+          "mechanism": "connective/particle prepend or drop"
+        },
+        {
+          "op": "sub",
+          "from": "وما",
+          "to": "ما",
+          "mechanism": "pronoun/inflection shift"
+        }
+      ]
+    },
+    {
+      "char_edit": 3,
+      "token_edit": 2,
+      "ref": "Q99:7-8",
+      "surah": 99,
+      "name": "الزلزلة",
+      "region": "medinan",
+      "juzz_amma": true,
+      "text_i": "فمن يعمل مثقال ذرة خيرا يره",
+      "text_j": "ومن يعمل مثقال ذرة شرا يره",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "فمن",
+          "to": "ومن",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "خيرا",
+          "to": "شرا",
+          "mechanism": "parallel-template noun/verb swap"
+        }
+      ]
+    },
+    {
+      "char_edit": 4,
+      "token_edit": 1,
+      "ref": "Q37:165-166",
+      "surah": 37,
+      "name": "الصافات",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "وإنا لنحن الصافون",
+      "text_j": "وإنا لنحن المسبحون",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "الصافون",
+          "to": "المسبحون",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 4,
+      "token_edit": 2,
+      "ref": "Q56:39-40",
+      "surah": 56,
+      "name": "الواقعة",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "ثلة من الأولين",
+      "text_j": "وثلة من الآخرين",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "ثلة",
+          "to": "وثلة",
+          "mechanism": "pronoun/inflection shift"
+        },
+        {
+          "op": "sub",
+          "from": "الأولين",
+          "to": "الآخرين",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 4,
+      "token_edit": 2,
+      "ref": "Q91:2-3",
+      "surah": 91,
+      "name": "الشمس",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "والقمر إذا تلاها",
+      "text_j": "والنهار إذا جلاها",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "والقمر",
+          "to": "والنهار",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "تلاها",
+          "to": "جلاها",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 5,
+      "token_edit": 2,
+      "ref": "Q35:20-21",
+      "surah": 35,
+      "name": "فاطر",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "ولا الظلمات ولا النور",
+      "text_j": "ولا الظل ولا الحرور",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "الظلمات",
+          "to": "الظل",
+          "mechanism": "pronoun/inflection shift"
+        },
+        {
+          "op": "sub",
+          "from": "النور",
+          "to": "الحرور",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 5,
+      "token_edit": 2,
+      "ref": "Q81:5-6",
+      "surah": 81,
+      "name": "التكوير",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "وإذا الوحوش حشرت",
+      "text_j": "وإذا البحار سجرت",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "الوحوش",
+          "to": "البحار",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "حشرت",
+          "to": "سجرت",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 5,
+      "token_edit": 2,
+      "ref": "Q93:7-8",
+      "surah": 93,
+      "name": "الضحى",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "ووجدك ضالا فهدى",
+      "text_j": "ووجدك عائلا فأغنى",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "ضالا",
+          "to": "عائلا",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "فهدى",
+          "to": "فأغنى",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 5,
+      "token_edit": 2,
+      "ref": "Q100:4-5",
+      "surah": 100,
+      "name": "العاديات",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "فأثرن به نقعا",
+      "text_j": "فوسطن به جمعا",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "فأثرن",
+          "to": "فوسطن",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "نقعا",
+          "to": "جمعا",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 5,
+      "token_edit": 3,
+      "ref": "Q70:20-21",
+      "surah": 70,
+      "name": "المعارج",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "إذا مسه الشر جزوعا",
+      "text_j": "وإذا مسه الخير منوعا",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "إذا",
+          "to": "وإذا",
+          "mechanism": "connective/particle swap"
+        },
+        {
+          "op": "sub",
+          "from": "الشر",
+          "to": "الخير",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "جزوعا",
+          "to": "منوعا",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 5,
+      "token_edit": 3,
+      "ref": "Q88:25-26",
+      "surah": 88,
+      "name": "الغاشية",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "إن إلينا إيابهم",
+      "text_j": "ثم إن علينا حسابهم",
+      "edits": [
+        {
+          "op": "ins",
+          "from": null,
+          "to": "ثم",
+          "mechanism": "connective/particle prepend or drop"
+        },
+        {
+          "op": "sub",
+          "from": "إلينا",
+          "to": "علينا",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "إيابهم",
+          "to": "حسابهم",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q53:43-44",
+      "surah": 53,
+      "name": "النجم",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "وأنه هو أضحك وأبكى",
+      "text_j": "وأنه هو أمات وأحيا",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "أضحك",
+          "to": "أمات",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "وأبكى",
+          "to": "وأحيا",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q77:9-10",
+      "surah": 77,
+      "name": "المرسلات",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "وإذا السماء فرجت",
+      "text_j": "وإذا الجبال نسفت",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "السماء",
+          "to": "الجبال",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "فرجت",
+          "to": "نسفت",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q77:10-11",
+      "surah": 77,
+      "name": "المرسلات",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "وإذا الجبال نسفت",
+      "text_j": "وإذا الرسل أقتت",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "الجبال",
+          "to": "الرسل",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "نسفت",
+          "to": "أقتت",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q81:2-3",
+      "surah": 81,
+      "name": "التكوير",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "وإذا النجوم انكدرت",
+      "text_j": "وإذا الجبال سيرت",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "النجوم",
+          "to": "الجبال",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "انكدرت",
+          "to": "سيرت",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q81:3-4",
+      "surah": 81,
+      "name": "التكوير",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "وإذا الجبال سيرت",
+      "text_j": "وإذا العشار عطلت",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "الجبال",
+          "to": "العشار",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "سيرت",
+          "to": "عطلت",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q81:10-11",
+      "surah": 81,
+      "name": "التكوير",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "وإذا الصحف نشرت",
+      "text_j": "وإذا السماء كشطت",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "الصحف",
+          "to": "السماء",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "نشرت",
+          "to": "كشطت",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q81:12-13",
+      "surah": 81,
+      "name": "التكوير",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "وإذا الجحيم سعرت",
+      "text_j": "وإذا الجنة أزلفت",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "الجحيم",
+          "to": "الجنة",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "سعرت",
+          "to": "أزلفت",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q81:17-18",
+      "surah": 81,
+      "name": "التكوير",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "والليل إذا عسعس",
+      "text_j": "والصبح إذا تنفس",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "والليل",
+          "to": "والصبح",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "عسعس",
+          "to": "تنفس",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q82:3-4",
+      "surah": 82,
+      "name": "الإنفطار",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "وإذا البحار فجرت",
+      "text_j": "وإذا القبور بعثرت",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "البحار",
+          "to": "القبور",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "فجرت",
+          "to": "بعثرت",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q86:11-12",
+      "surah": 86,
+      "name": "الطارق",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "والسماء ذات الرجع",
+      "text_j": "والأرض ذات الصدع",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "والسماء",
+          "to": "والأرض",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "الرجع",
+          "to": "الصدع",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q88:18-19",
+      "surah": 88,
+      "name": "الغاشية",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "وإلى السماء كيف رفعت",
+      "text_j": "وإلى الجبال كيف نصبت",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "السماء",
+          "to": "الجبال",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "رفعت",
+          "to": "نصبت",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q90:1-2",
+      "surah": 90,
+      "name": "البلد",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "لا أقسم بهذا البلد",
+      "text_j": "وأنت حل بهذا البلد",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "لا",
+          "to": "وأنت",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "أقسم",
+          "to": "حل",
+          "mechanism": "parallel-template noun/verb swap"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 2,
+      "ref": "Q91:5-6",
+      "surah": 91,
+      "name": "الشمس",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "والسماء وما بناها",
+      "text_j": "والأرض وما طحاها",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "والسماء",
+          "to": "والأرض",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "بناها",
+          "to": "طحاها",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 3,
+      "ref": "Q74:18-19",
+      "surah": 74,
+      "name": "المدثر",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "إنه فكر وقدر",
+      "text_j": "فقتل كيف قدر",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "إنه",
+          "to": "فقتل",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "فكر",
+          "to": "كيف",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "وقدر",
+          "to": "قدر",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 3,
+      "ref": "Q74:33-34",
+      "surah": 74,
+      "name": "المدثر",
+      "region": "meccan",
+      "juzz_amma": false,
+      "text_i": "والليل إذ أدبر",
+      "text_j": "والصبح إذا أسفر",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "والليل",
+          "to": "والصبح",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "إذ",
+          "to": "إذا",
+          "mechanism": "connective/particle swap"
+        },
+        {
+          "op": "sub",
+          "from": "أدبر",
+          "to": "أسفر",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 3,
+      "ref": "Q82:13-14",
+      "surah": 82,
+      "name": "الإنفطار",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "إن الأبرار لفي نعيم",
+      "text_j": "وإن الفجار لفي جحيم",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "إن",
+          "to": "وإن",
+          "mechanism": "connective/particle swap"
+        },
+        {
+          "op": "sub",
+          "from": "الأبرار",
+          "to": "الفجار",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "نعيم",
+          "to": "جحيم",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 3,
+      "ref": "Q87:2-3",
+      "surah": 87,
+      "name": "الأعلى",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "الذي خلق فسوى",
+      "text_j": "والذي قدر فهدى",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "الذي",
+          "to": "والذي",
+          "mechanism": "pronoun/inflection shift"
+        },
+        {
+          "op": "sub",
+          "from": "خلق",
+          "to": "قدر",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "فسوى",
+          "to": "فهدى",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    },
+    {
+      "char_edit": 6,
+      "token_edit": 3,
+      "ref": "Q93:9-10",
+      "surah": 93,
+      "name": "الضحى",
+      "region": "meccan",
+      "juzz_amma": true,
+      "text_i": "فأما اليتيم فلا تقهر",
+      "text_j": "وأما السائل فلا تنهر",
+      "edits": [
+        {
+          "op": "sub",
+          "from": "فأما",
+          "to": "وأما",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "اليتيم",
+          "to": "السائل",
+          "mechanism": "parallel-template noun/verb swap"
+        },
+        {
+          "op": "sub",
+          "from": "تقهر",
+          "to": "تنهر",
+          "mechanism": "rhyme-driven final-word swap (fasila re-tuning)"
+        }
+      ]
+    }
+  ],
+  "H1_dispersion_diagnostic": {
+    "note": "Per-surah decomposition of the H1 reversal: the within-surah-shuffle null mean is dominated by surahs with LARGE near-identical-verse families that the canonical order DISPERSES (zero adjacent), not stacks. unordered_family_le3 = UNORDERED verse-pairs within char-edit 3; obs_adj_le3 = how many are ADJACENT in canonical order; shuffle_mean_adj_le3 = expected adjacent under within-surah shuffle (400-perm estimate, seed sid*1000+i).",
+    "surahs": [
+      {
+        "surah": 55,
+        "nv": 78,
+        "obs_adj_le3": 0,
+        "shuffle_mean_adj_le3": 12.09,
+        "unordered_family_le3": 465
+      },
+      {
+        "surah": 77,
+        "nv": 50,
+        "obs_adj_le3": 0,
+        "shuffle_mean_adj_le3": 1.82,
+        "unordered_family_le3": 45
+      },
+      {
+        "surah": 26,
+        "nv": 227,
+        "obs_adj_le3": 0,
+        "shuffle_mean_adj_le3": 0.843,
+        "unordered_family_le3": 99
+      },
+      {
+        "surah": 109,
+        "nv": 6,
+        "obs_adj_le3": 0,
+        "shuffle_mean_adj_le3": 0.36,
+        "unordered_family_le3": 1
+      },
+      {
+        "surah": 37,
+        "nv": 182,
+        "obs_adj_le3": 0,
+        "shuffle_mean_adj_le3": 0.345,
+        "unordered_family_le3": 34
+      },
+      {
+        "surah": 54,
+        "nv": 55,
+        "obs_adj_le3": 0,
+        "shuffle_mean_adj_le3": 0.333,
+        "unordered_family_le3": 9
+      },
+      {
+        "surah": 102,
+        "nv": 8,
+        "obs_adj_le3": 1,
+        "shuffle_mean_adj_le3": 0.295,
+        "unordered_family_le3": 1
+      },
+      {
+        "surah": 99,
+        "nv": 8,
+        "obs_adj_le3": 1,
+        "shuffle_mean_adj_le3": 0.26,
+        "unordered_family_le3": 1
+      },
+      {
+        "surah": 94,
+        "nv": 8,
+        "obs_adj_le3": 1,
+        "shuffle_mean_adj_le3": 0.24,
+        "unordered_family_le3": 1
+      },
+      {
+        "surah": 75,
+        "nv": 40,
+        "obs_adj_le3": 1,
+        "shuffle_mean_adj_le3": 0.163,
+        "unordered_family_le3": 3
+      },
+      {
+        "surah": 83,
+        "nv": 36,
+        "obs_adj_le3": 0,
+        "shuffle_mean_adj_le3": 0.125,
+        "unordered_family_le3": 2
+      },
+      {
+        "surah": 82,
+        "nv": 19,
+        "obs_adj_le3": 1,
+        "shuffle_mean_adj_le3": 0.122,
+        "unordered_family_le3": 1
+      },
+      {
+        "surah": 56,
+        "nv": 96,
+        "obs_adj_le3": 0,
+        "shuffle_mean_adj_le3": 0.072,
+        "unordered_family_le3": 4
+      },
+      {
+        "surah": 23,
+        "nv": 118,
+        "obs_adj_le3": 0,
+        "shuffle_mean_adj_le3": 0.048,
+        "unordered_family_le3": 3
+      },
+      {
+        "surah": 74,
+        "nv": 56,
+        "obs_adj_le3": 1,
+        "shuffle_mean_adj_le3": 0.025,
+        "unordered_family_le3": 1
+      }
+    ]
+  }
+}
