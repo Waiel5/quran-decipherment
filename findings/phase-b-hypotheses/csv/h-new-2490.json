@@ -1,0 +1,172 @@
+{
+  "finding": "H-NEW-2490",
+  "title": "Adjacent doubling-for-emphasis (taʾkīd bi-l-tikrār): census + genre-concentration",
+  "prereg_sha256": "6a2c133f2322598483a1ed87a94d7e928b588e8dc15d582d7a89668f621e5f87",
+  "seed": 20260509,
+  "nperm": 10000,
+  "rules_tuple": "(no-tashkeel, orthographic-token, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi); QAC v0.4 segment lens for connective/core separation",
+  "definition": "B doubles A iff lexical cores match (<=1 minimal change: root-shared inflection OR sawfa<->sa) AND they differ by exactly one leading emphatic connective {thumma, fa, wa}. Substantive core >= 2 words.",
+  "bands": {
+    "substantive_min_core_words": 2,
+    "juzz_amma_start": 78
+  },
+  "counts": {
+    "verse_grain_doublings": 6,
+    "verse_grain_juzz_amma": 4,
+    "clause_grain_doublings": 1,
+    "substantive_adjacent_pairs_total": 6091
+  },
+  "connective_distribution_verse_grain": {
+    "thumma": 3,
+    "fa/thumma": 1,
+    "thumma/wa": 1,
+    "fa": 1
+  },
+  "change_kind_distribution_verse_grain": {
+    "identical": 6
+  },
+  "connective_distribution_clause_grain": {
+    "wa": 1
+  },
+  "region_tally_verse_grain": {
+    "meccan": 6
+  },
+  "H1_genre_concentration": {
+    "statistic": "Delta = mean per-surah doubling-rate(juzz-amma 78-114) - mean(rest 1-77)",
+    "mean_rate_juzz_amma": 0.009917,
+    "mean_rate_rest": 0.000578,
+    "delta_obs": 0.009338,
+    "n_juzz_amma_surahs": 37,
+    "n_rest_surahs": 77,
+    "null_mean": 2.8e-05,
+    "p_one_sided": 0.0166,
+    "p_replication_seed": 0.0165,
+    "direction_locked": "juzz-amma rate > rest",
+    "alpha": 0.05,
+    "k_confirmatory": 1,
+    "verdict": "PASS (genre-concentrated in juzz-amma)"
+  },
+  "MW3_meccan_medinan": {
+    "mean_rate_meccan": 0.004784,
+    "mean_rate_medinan": 0.0,
+    "delta_meccan_minus_medinan": 0.004784,
+    "p_one_sided": 0.17268,
+    "note": "secondary genre axis (non-confirmatory)"
+  },
+  "MW6_h2450_subset_check": {
+    "h2450_low_edit_le3_count": 6,
+    "h2450_low_edit_refs": [
+      "Q102:3-4",
+      "Q74:19-20",
+      "Q75:34-35",
+      "Q82:17-18",
+      "Q94:5-6",
+      "Q99:7-8"
+    ],
+    "doublings_among_2450_low_edit": [
+      "Q102:3-4",
+      "Q74:19-20",
+      "Q75:34-35",
+      "Q82:17-18",
+      "Q94:5-6"
+    ],
+    "rejected_by_D_not_doublings": [
+      "Q99:7-8"
+    ],
+    "interpretation": "D is a STRICT SUBSET selector: it accepts the reassertion pairs and rejects the parallel-template/rhyme-swap pairs."
+  },
+  "verse_grain_roster": [
+    {
+      "ref": "Q74:19-20",
+      "surah": 74,
+      "name": "المدثر",
+      "region": "meccan",
+      "juzz_amma": false,
+      "connective": "fa/thumma",
+      "change_kind": "identical",
+      "text_i": "فقتل كيف قدر",
+      "text_j": "ثم قتل كيف قدر",
+      "core_len_i": 3,
+      "core_len_j": 3
+    },
+    {
+      "ref": "Q75:34-35",
+      "surah": 75,
+      "name": "القيامة",
+      "region": "meccan",
+      "juzz_amma": false,
+      "connective": "thumma",
+      "change_kind": "identical",
+      "text_i": "أولى لك فأولى",
+      "text_j": "ثم أولى لك فأولى",
+      "core_len_i": 3,
+      "core_len_j": 3
+    },
+    {
+      "ref": "Q78:4-5",
+      "surah": 78,
+      "name": "النبإ",
+      "region": "meccan",
+      "juzz_amma": true,
+      "connective": "thumma",
+      "change_kind": "identical",
+      "text_i": "كلا سيعلمون",
+      "text_j": "ثم كلا سيعلمون",
+      "core_len_i": 2,
+      "core_len_j": 2
+    },
+    {
+      "ref": "Q82:17-18",
+      "surah": 82,
+      "name": "الإنفطار",
+      "region": "meccan",
+      "juzz_amma": true,
+      "connective": "thumma/wa",
+      "change_kind": "identical",
+      "text_i": "وما أدراك ما يوم الدين",
+      "text_j": "ثم ما أدراك ما يوم الدين",
+      "core_len_i": 5,
+      "core_len_j": 5
+    },
+    {
+      "ref": "Q94:5-6",
+      "surah": 94,
+      "name": "الشرح",
+      "region": "meccan",
+      "juzz_amma": true,
+      "connective": "fa",
+      "change_kind": "identical",
+      "text_i": "فإن مع العسر يسرا",
+      "text_j": "إن مع العسر يسرا",
+      "core_len_i": 4,
+      "core_len_j": 4
+    },
+    {
+      "ref": "Q102:3-4",
+      "surah": 102,
+      "name": "التكاثر",
+      "region": "meccan",
+      "juzz_amma": true,
+      "connective": "thumma",
+      "change_kind": "identical",
+      "text_i": "كلا سوف تعلمون",
+      "text_j": "ثم كلا سوف تعلمون",
+      "core_len_i": 3,
+      "core_len_j": 3
+    }
+  ],
+  "clause_grain_roster": [
+    {
+      "ref": "Q112:3",
+      "surah": 112,
+      "name": "الإخلاص",
+      "region": "meccan",
+      "juzz_amma": true,
+      "connective": "wa",
+      "change_kind": "root-inflection",
+      "clause_i": "lamo yalido",
+      "clause_j": "lamo yuwlado",
+      "text": "لم يلد ولم يولد"
+    }
+  ]
+}
