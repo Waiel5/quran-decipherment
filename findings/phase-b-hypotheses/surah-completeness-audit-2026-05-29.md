@@ -231,3 +231,11 @@ with equal NULL prominence per PRE-REG-STANDARD-04.
 
 *Audit and the two completions by Waiel Al-Shujaa, 2026-05-29. Matrix re-runnable from the deterministic
 presence+size check over `surahs/Q*/`.*
+
+---
+
+## Update 2026-05-30 — the 10 empty (0/9) stubs are now COMPLETE (Wave-O)
+
+All ten formerly-empty surahs were brought to the full 8-file template (ledger §10.111-121): **Q20 Ṭā-Hā, Q71 Nūḥ, Q84 al-Inshiqāq, Q90 al-Balad, Q92 al-Layl, Q93 al-Ḍuḥā, Q94 al-Sharḥ, Q98 al-Bayyina, Q102 al-Takāthur, Q103 al-ʿAṣr.** Every surah in the corpus now has a substantive directory; the complete-count rises from 60 to ~70 (the 10 stubs + the earlier Q3/Q4 completions). Each carries ≥1 pre-registered, SHA-locked, runtime-verified novel test with an honest verdict.
+
+**Remaining work for a future completeness pass** (from the matrix above, unchanged by Wave-O): the 5 near-complete (Q2 missing 02-content; Q31/Q65 missing JOURNAL; Q32/Q99 7/9), the 19 partial (3-6/9), and the 20 skeletal (1-2/9) surahs — these have *some* substantive files but are not yet at full 8-file depth. Priority order for the next surah-completion wave: skeletal → partial → near-complete quick-wins. Recommended concurrency cap: **≤4-5 heavy deep-dive agents** (the Wave-O 10-way launch hit a 600s stream-watchdog stall on 9/10; batches of 3-4 completed cleanly).
