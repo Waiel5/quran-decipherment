@@ -1,0 +1,461 @@
+{
+  "finding_id": "H-NEW-2480",
+  "title": "Cycle-centrality ~ private-vocabulary regression (cross-finding-027 mechanism test)",
+  "prereg_sha256": "a861d7cdccbe21333d771eb48b1a29542daa92db947f51a2053f7357ad56cffb",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k_headline": 3,
+  "alpha_bon_headline": 0.016666666666666666,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, verse-union pericope, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "extends": "H-NEW-2430 + cross-finding-027 + Q071-F-01 + Q020-F-06",
+  "direction_locked": "NEGATIVE: centrality ~ private_root_count (more private vocab => more peripheral)",
+  "n_pericopes": 30,
+  "n_cycles": 6,
+  "records": [
+    {
+      "cycle": "NUH",
+      "pericope": "Q 7:59-64",
+      "surah": 7,
+      "centrality": 0.2168508336447268,
+      "private_root_count": 3,
+      "unique_root_type_count": 33,
+      "root_token_count": 49,
+      "private_fraction": 0.09090909090909091,
+      "centrality_rank": 1
+    },
+    {
+      "cycle": "NUH",
+      "pericope": "Q 11:25-49",
+      "surah": 11,
+      "centrality": 0.19034602321114588,
+      "private_root_count": 53,
+      "unique_root_type_count": 124,
+      "root_token_count": 252,
+      "private_fraction": 0.4274193548387097,
+      "centrality_rank": 3
+    },
+    {
+      "cycle": "NUH",
+      "pericope": "Q 23:23-30",
+      "surah": 23,
+      "centrality": 0.19685274337580017,
+      "private_root_count": 8,
+      "unique_root_type_count": 50,
+      "root_token_count": 68,
+      "private_fraction": 0.16,
+      "centrality_rank": 2
+    },
+    {
+      "cycle": "NUH",
+      "pericope": "Q 26:105-122",
+      "surah": 26,
+      "centrality": 0.18127608645656346,
+      "private_root_count": 8,
+      "unique_root_type_count": 35,
+      "root_token_count": 61,
+      "private_fraction": 0.22857142857142856,
+      "centrality_rank": 4
+    },
+    {
+      "cycle": "NUH",
+      "pericope": "Q 54:9-17",
+      "surah": 54,
+      "centrality": 0.14833175728920409,
+      "private_root_count": 11,
+      "unique_root_type_count": 37,
+      "root_token_count": 43,
+      "private_fraction": 0.2972972972972973,
+      "centrality_rank": 6
+    },
+    {
+      "cycle": "NUH",
+      "pericope": "Q 71:1-28",
+      "surah": 71,
+      "centrality": 0.14932696901261047,
+      "private_root_count": 49,
+      "unique_root_type_count": 87,
+      "root_token_count": 153,
+      "private_fraction": 0.5632183908045977,
+      "centrality_rank": 5
+    },
+    {
+      "cycle": "IBRAHIM",
+      "pericope": "Q 6:74-83",
+      "surah": 6,
+      "centrality": 0.15274527252893105,
+      "private_root_count": 23,
+      "unique_root_type_count": 49,
+      "root_token_count": 100,
+      "private_fraction": 0.46938775510204084,
+      "centrality_rank": 6
+    },
+    {
+      "cycle": "IBRAHIM",
+      "pericope": "Q 14:35-41",
+      "surah": 14,
+      "centrality": 0.15942572195736754,
+      "private_root_count": 20,
+      "unique_root_type_count": 47,
+      "root_token_count": 67,
+      "private_fraction": 0.425531914893617,
+      "centrality_rank": 5
+    },
+    {
+      "cycle": "IBRAHIM",
+      "pericope": "Q 19:41-50",
+      "surah": 19,
+      "centrality": 0.1744076365533615,
+      "private_root_count": 17,
+      "unique_root_type_count": 46,
+      "root_token_count": 74,
+      "private_fraction": 0.3695652173913043,
+      "centrality_rank": 3
+    },
+    {
+      "cycle": "IBRAHIM",
+      "pericope": "Q 21:51-70",
+      "surah": 21,
+      "centrality": 0.20027256992774234,
+      "private_root_count": 18,
+      "unique_root_type_count": 57,
+      "root_token_count": 98,
+      "private_fraction": 0.3157894736842105,
+      "centrality_rank": 1
+    },
+    {
+      "cycle": "IBRAHIM",
+      "pericope": "Q 26:69-104",
+      "surah": 26,
+      "centrality": 0.18585091706371018,
+      "private_root_count": 33,
+      "unique_root_type_count": 76,
+      "root_token_count": 111,
+      "private_fraction": 0.4342105263157895,
+      "centrality_rank": 2
+    },
+    {
+      "cycle": "IBRAHIM",
+      "pericope": "Q 37:83-113",
+      "surah": 37,
+      "centrality": 0.1634604256678595,
+      "private_root_count": 35,
+      "unique_root_type_count": 71,
+      "root_token_count": 105,
+      "private_fraction": 0.49295774647887325,
+      "centrality_rank": 4
+    },
+    {
+      "cycle": "HUD",
+      "pericope": "Q 7:65-72",
+      "surah": 7,
+      "centrality": 0.1806428076869856,
+      "private_root_count": 21,
+      "unique_root_type_count": 55,
+      "root_token_count": 83,
+      "private_fraction": 0.38181818181818183,
+      "centrality_rank": 2
+    },
+    {
+      "cycle": "HUD",
+      "pericope": "Q 11:50-60",
+      "surah": 11,
+      "centrality": 0.17155492703173114,
+      "private_root_count": 29,
+      "unique_root_type_count": 64,
+      "root_token_count": 106,
+      "private_fraction": 0.453125,
+      "centrality_rank": 3
+    },
+    {
+      "cycle": "HUD",
+      "pericope": "Q 26:123-140",
+      "surah": 26,
+      "centrality": 0.166120831517173,
+      "private_root_count": 17,
+      "unique_root_type_count": 41,
+      "root_token_count": 60,
+      "private_fraction": 0.4146341463414634,
+      "centrality_rank": 4
+    },
+    {
+      "cycle": "HUD",
+      "pericope": "Q 46:21-26",
+      "surah": 46,
+      "centrality": 0.18216619636871761,
+      "private_root_count": 22,
+      "unique_root_type_count": 55,
+      "root_token_count": 74,
+      "private_fraction": 0.4,
+      "centrality_rank": 1
+    },
+    {
+      "cycle": "HUD",
+      "pericope": "Q 54:18-21",
+      "surah": 54,
+      "centrality": 0.0874129601741542,
+      "private_root_count": 9,
+      "unique_root_type_count": 17,
+      "root_token_count": 21,
+      "private_fraction": 0.5294117647058824,
+      "centrality_rank": 5
+    },
+    {
+      "cycle": "MARYAM",
+      "pericope": "Q 3:35-47",
+      "surah": 3,
+      "centrality": 0.08549392008296118,
+      "private_root_count": 54,
+      "unique_root_type_count": 86,
+      "root_token_count": 157,
+      "private_fraction": 0.627906976744186,
+      "centrality_rank": 5
+    },
+    {
+      "cycle": "MARYAM",
+      "pericope": "Q 19:16-34",
+      "surah": 19,
+      "centrality": 0.09285118571064548,
+      "private_root_count": 55,
+      "unique_root_type_count": 89,
+      "root_token_count": 139,
+      "private_fraction": 0.6179775280898876,
+      "centrality_rank": 4
+    },
+    {
+      "cycle": "MARYAM",
+      "pericope": "Q 21:91",
+      "surah": 21,
+      "centrality": 0.1688418212611761,
+      "private_root_count": 0,
+      "unique_root_type_count": 8,
+      "root_token_count": 8,
+      "private_fraction": 0.0,
+      "centrality_rank": 1
+    },
+    {
+      "cycle": "MARYAM",
+      "pericope": "Q 23:50",
+      "surah": 23,
+      "centrality": 0.09630647130647131,
+      "private_root_count": 2,
+      "unique_root_type_count": 8,
+      "root_token_count": 8,
+      "private_fraction": 0.25,
+      "centrality_rank": 3
+    },
+    {
+      "cycle": "MARYAM",
+      "pericope": "Q 66:12",
+      "surah": 66,
+      "centrality": 0.1356155664666303,
+      "private_root_count": 0,
+      "unique_root_type_count": 11,
+      "root_token_count": 11,
+      "private_fraction": 0.0,
+      "centrality_rank": 2
+    },
+    {
+      "cycle": "YUNUS",
+      "pericope": "Q 10:98",
+      "surah": 10,
+      "centrality": 0.07933914306463326,
+      "private_root_count": 8,
+      "unique_root_type_count": 12,
+      "root_token_count": 14,
+      "private_fraction": 0.6666666666666666,
+      "centrality_rank": 2
+    },
+    {
+      "cycle": "YUNUS",
+      "pericope": "Q 21:87-88",
+      "surah": 21,
+      "centrality": 0.07861432861432861,
+      "private_root_count": 10,
+      "unique_root_type_count": 14,
+      "root_token_count": 16,
+      "private_fraction": 0.7142857142857143,
+      "centrality_rank": 3
+    },
+    {
+      "cycle": "YUNUS",
+      "pericope": "Q 37:139-148",
+      "surah": 37,
+      "centrality": 0.10133043259978243,
+      "private_root_count": 18,
+      "unique_root_type_count": 26,
+      "root_token_count": 28,
+      "private_fraction": 0.6923076923076923,
+      "centrality_rank": 1
+    },
+    {
+      "cycle": "YUNUS",
+      "pericope": "Q 68:48-50",
+      "surah": 68,
+      "centrality": 0.0712429221201151,
+      "private_root_count": 11,
+      "unique_root_type_count": 16,
+      "root_token_count": 18,
+      "private_fraction": 0.6875,
+      "centrality_rank": 4
+    },
+    {
+      "cycle": "MUSA",
+      "pericope": "Q 20:9-36",
+      "surah": 20,
+      "centrality": 0.2339898731952705,
+      "private_root_count": 35,
+      "unique_root_type_count": 82,
+      "root_token_count": 105,
+      "private_fraction": 0.4268292682926829,
+      "centrality_rank": 2
+    },
+    {
+      "cycle": "MUSA",
+      "pericope": "Q 27:7-14",
+      "surah": 27,
+      "centrality": 0.22991802248095153,
+      "private_root_count": 20,
+      "unique_root_type_count": 57,
+      "root_token_count": 69,
+      "private_fraction": 0.3508771929824561,
+      "centrality_rank": 3
+    },
+    {
+      "cycle": "MUSA",
+      "pericope": "Q 28:29-35",
+      "surah": 28,
+      "centrality": 0.25492239336052724,
+      "private_root_count": 21,
+      "unique_root_type_count": 67,
+      "root_token_count": 80,
+      "private_fraction": 0.31343283582089554,
+      "centrality_rank": 1
+    },
+    {
+      "cycle": "MUSA",
+      "pericope": "Q 79:15-26",
+      "surah": 79,
+      "centrality": 0.1482864400821057,
+      "private_root_count": 6,
+      "unique_root_type_count": 28,
+      "root_token_count": 33,
+      "private_fraction": 0.21428571428571427,
+      "centrality_rank": 4
+    }
+  ],
+  "per_cycle_centroids": {
+    "NUH": {
+      "n": 6,
+      "centroid": "Q 7:59-64",
+      "centroid_centrality": 0.2168508336447268
+    },
+    "IBRAHIM": {
+      "n": 6,
+      "centroid": "Q 21:51-70",
+      "centroid_centrality": 0.20027256992774234
+    },
+    "HUD": {
+      "n": 5,
+      "centroid": "Q 46:21-26",
+      "centroid_centrality": 0.18216619636871761
+    },
+    "MARYAM": {
+      "n": 5,
+      "centroid": "Q 21:91",
+      "centroid_centrality": 0.1688418212611761
+    },
+    "YUNUS": {
+      "n": 4,
+      "centroid": "Q 37:139-148",
+      "centroid_centrality": 0.10133043259978243
+    },
+    "MUSA": {
+      "n": 4,
+      "centroid": "Q 28:29-35",
+      "centroid_centrality": 0.25492239336052724
+    }
+  },
+  "pooled": {
+    "H1_centrality_vs_private": {
+      "spearman_rho": 0.17552079102903673,
+      "perm_p_one_sided_negative": 0.8238176182381762,
+      "perm_p_within_cycle_preserving": 0.5174482551744826,
+      "verdict": "POSITIVE (not sig)"
+    },
+    "H2_centrality_vs_length": {
+      "spearman_rho": 0.40013354849851823,
+      "perm_p_one_sided_negative": 0.9836016398360165,
+      "verdict": "REVERSAL — pre-commit violation"
+    },
+    "H3_partial_private_given_length": {
+      "partial_spearman_rho": -0.4979372558782972,
+      "perm_p_one_sided_negative": 0.0024997500249975004,
+      "components": {
+        "rho_centrality_private": 0.17552079102903673,
+        "rho_centrality_length": 0.40013354849851823,
+        "rho_private_length": 0.9104281690879977
+      },
+      "verdict": "MECHANISM VINDICATED — private negative BEYOND length (Bonferroni-3)"
+    },
+    "H3b_partial_length_given_private": {
+      "partial_spearman_rho": 0.5901466973963642,
+      "perm_p_one_sided_negative": 0.9997000299970003
+    },
+    "collinearity_private_vs_length_spearman": 0.9104281690879977,
+    "ols_standardized_sanity": {
+      "beta_z_private": -1.1838088582153832,
+      "beta_z_length": 1.3655109771536205,
+      "pred_corr_private_length": 0.8990521885755489
+    }
+  },
+  "per_cycle_correlations_MW7_capped": {
+    "note": "Secondary exploratory family (k=6, n<=6 per cycle). Direction-tallies only; not pass/fail.",
+    "cycles": {
+      "NUH": {
+        "n": 6,
+        "rho_centrality_private": -0.550782483869826,
+        "rho_centrality_length": 0.14285714285714285,
+        "sign_private_negative": true,
+        "sign_length_negative": false
+      },
+      "IBRAHIM": {
+        "n": 6,
+        "rho_centrality_private": -0.2571428571428571,
+        "rho_centrality_length": 0.2,
+        "sign_private_negative": true,
+        "sign_length_negative": false
+      },
+      "HUD": {
+        "n": 5,
+        "rho_centrality_private": 0.7,
+        "rho_centrality_length": 0.6,
+        "sign_private_negative": false,
+        "sign_length_negative": false
+      },
+      "MARYAM": {
+        "n": 5,
+        "rho_centrality_private": -0.872081599272381,
+        "rho_centrality_length": -0.8207826816681233,
+        "sign_private_negative": true,
+        "sign_length_negative": true
+      },
+      "YUNUS": {
+        "n": 4,
+        "rho_centrality_private": 0.2,
+        "rho_centrality_length": 0.2,
+        "sign_private_negative": false,
+        "sign_length_negative": false
+      },
+      "MUSA": {
+        "n": 4,
+        "rho_centrality_private": 0.8,
+        "rho_centrality_length": 0.8,
+        "sign_private_negative": false,
+        "sign_length_negative": false
+      }
+    },
+    "n_cycles_negative_private": 3,
+    "n_cycles_negative_length": 1,
+    "n_cycles_total": 6
+  }
+}
