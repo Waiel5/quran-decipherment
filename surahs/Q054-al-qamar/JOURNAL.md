@@ -149,4 +149,60 @@ All 5 pre-regs SHA-locked at file-write time; SHAs embedded into corresponding s
 - **Q050-Q054 cross-anchor** (queued): the canonical Prophetic ʿīd-prayer chain pairs Q 50 al-Qāf + Q 54 al-Qamar as the two recited surahs (Bukhārī, Muslim, Tirmidhī, Abū Dāwūd, Mālik all attest this pairing). Empirically test whether Q 50 + Q 54 share content-fingerprint (FR-distance, vocabulary overlap, opener structure) beyond their liturgical pairing.
 - **H-NEW-1240.2** (queued): the *fa-kayfa kāna ʿadhābī wa-nudhur* closure refrain (4 + 2 variant in Q 54 = 6 instances total) is corpus-unique to Q 54. Formal pre-reg of this second corpus-monopoly refrain alongside the *fahal min muddakir* monopoly.
 
+## 2026-05-30 — Session 2 (completion landing)
+
+Session 1 (2026-05-09) wrote `00-overview.md` + this JOURNAL + the 6 pre-regs/scripts/JSON, but the 7 template
+body-files (01-07) were never written to disk (the Session-1 "files written" list was aspirational; only 00 +
+JOURNAL + preregs/ + scripts/ + csv/ existed on disk at Session-2 start). Session 2 completes the 8-file template
+and finalizes the new pre-registered test **Q054-F-06**.
+
+### Q054-F-06 — al-Muqtadir doubled closure-frame (FINALIZED, CONFIRMED)
+- Pre-reg `preregs/Q054-F-06-muqtadir-closure-concentration-prereg.md`; SHA-256
+  `e76d3316f0bb61b670ad93b140778f46b8940f6b65f7c07a9dabcef992f87a98`.
+- Re-ran `scripts/Q054_F_06_muqtadir_closure.py` (python3, seed 20260509, 10,000 perms): printed `SHA OK`;
+  reproduced `csv/Q054-F-06.json` exactly.
+- **H6a** corpus *muqtadir* = 4 {(18,45),(43,42),(54,42),(54,55)}; Q 54 holds 2 (share 0.50), corpus-max
+  (PASS, PASS-DIRECTED ceiling). **H6b** both Q 54 instances in committed closure-frame (PASS, 2/2). **H6c**
+  perm_p (length-weighted) = 0.0002 < α_bon 0.025 (uniform secondary 0.0011) (PASS).
+- **VERDICT: CONFIRMED.** al-Qurṭubī's gloss of both vv 42/55 as *qādir ʿalā mā yashāʾ* is the classical anchor.
+- Connected to refrain-architecture: H-NEW-2310 (Q 54 *yassarnā* refrain spacing **NULL**, p=0.0846, underpowered
+  m=4 — reported with equal prominence), H-NEW-1320 (Q 54 refrain-saturation rank 5/114, tier-2 boundary),
+  H-NEW-2470 (Q 54 directional-only dispersion +0.47; Q55-anchored qualified law).
+
+### Empirical-value re-verification from disk (Session 2)
+- h-new-111: Q 54 mean FR 0.9899, nearest Q 92 (0.833); 5 farthest = Q 4/9/3/2/5 (long-Medinan).
+- h-new-750: Q 54 sig_A −2.0493 (rank 105/114), sig_B −2.1308 (rank **114/114 corpus-MIN**), rhyme entropy 0.0.
+- h-new-720: Q 53→Q 54 +0.21006 (rank 12/113 expensive); Q 54→Q 55 +0.02482 (rank 88/113 smooth).
+- h-new-840: UAS 1.8864 (rank 12/114); abs_outlier 3.57, max_cost 0.21006, abs_ijaz 2.0493.
+- h-new-700: Q 54 ر-final frac 1.0 (55 verses); phoneme vector idx 53 = [0.01906,0.05037,0.04765,0.09530].
+- h-new-2310: Q 54 *yassarnā* refrain count 4 (vv 17/22/32/40), spacing NULL p=0.0846.
+- **DATA-GAP flagged:** `h-new-590.json` carries only 6 candidate surahs (X=1,9,18,55,62,112); **Q 54 row is NOT
+  on disk** — the 00-overview's "+3.57pp WEAK_OUTLIER / window {Q51-57} / p=0.1037" is un-verifiable from
+  h-new-590; only the +3.57 magnitude is corroborated (via h-new-840 abs_outlier). Logged honestly in 01 §2/§9.
+
+### Hadith re-verification corrections (logged in 04-hadith-corpus.md)
+- ⚠ **Bukhārī #3706 narrator** = Ibn Masʿūd (ʿAbd Allāh, via al-Aʿmash ← Ibrāhīm ← Abī Maʿmar), **NOT Anas** as
+  00-overview §2 stated. The genuine Anas Bukhārī moon-split chain is **#4661** (verified). Anas Muslim = #6902;
+  Anas Tirmidhī = #3370. Ibn ʿAbbās = Bukhārī #4659/4660.
+- ⚠ **Mālik Muwaṭṭaʾ #439** pairs Q 50 (Qāf) with **al-Inshiqāq (Q 84)**, NOT al-Qamar (Q 54). The Q 50 + Q 54
+  Eid pairing is genuinely attested by **Muslim #1949/1950 + Abū Dāwūd #1155** (and CF-028 uses these, not Mālik).
+  The 00-overview §13 / Session-1 future-work claim "Mālik attests Q50+Q54" is corrected.
+- **Tirmidhī gradings** (ḥasan/ṣaḥīḥ) are NOT carried in the on-disk ahmedbaset-json records (no `grade` field);
+  left UNVERIFIED rather than asserted.
+- Dārimī #3108 = tag-match (surat-al-qamar + fahal-min-muddakir) but empty matn field → content UNVERIFIED.
+
+### Files written this session
+- `01-empirical-profile.md`, `02-content-analysis.md`, `03-tafsir-survey.md`, `04-hadith-corpus.md`,
+  `05-classical-claims-audit.md`, `06-novel-findings.md`, `07-cross-references.md`.
+- Appended this JOURNAL Session-2 entry. The 8-file template is now complete on disk.
+
+### Aggregate Q 54 finding-family verdict (after Session 2)
+- Q054-F-01 dual-refrain: **CONFIRMED 3/3** (PASS-DIRECTED ceiling)
+- Q054-F-02 compression: **CONFIRMED 2/2** descriptive (perm-null degenerate, flagged)
+- Q054-F-03 Q53→Q54 seam: **BRIEF-REFUTED-WITH-RHYME-SHIFT-CONFIRMED** (pre-commit violation, full prominence)
+- Q054-F-04 monorhyme: **CONFIRMED 2/2** (PASS-DIRECTED ceiling)
+- Q054-F-05 *wa-laqad* density: **CONFIRMED 2/2** (PASS-DIRECTED ceiling)
+- Q054-F-06 muqtadir-closure: **CONFIRMED** (H6a PASS-DIRECTED ceiling; H6b + H6c pass at α_bon=0.025)
+- **5 CONFIRMED + 1 BRIEF-REFUTED**, all reported with equal NULL prominence.
+
 *Bismillāhi al-Raḥmāni al-Raḥīm.*

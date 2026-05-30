@@ -44,7 +44,7 @@ The classical commentaries treat the moon-splitting reference at v.1 as referrin
 The four classical chains for the moon-splitting (verified 2026-05-09 from the AhmedBaset-JSON corpus, see `04-hadith-corpus.md`):
 
 - al-Bukhārī Ṣaḥīḥ idInBook 3481 (Ibn Masʿūd: *anshaqqa al-qamaru ʿalā ʿahdi rasūli llāh ṣ.ʿ.s. shiqqatayn*) — chapterId 61.
-- al-Bukhārī Ṣaḥīḥ idInBook 3706 (Anas b. Mālik: *anshaqqa al-qamaru wa-naḥnu maʿa al-Nabī ṣ.ʿ.s. bi-Minā fa-qāla: ishadū*) — chapterId 63.
+- al-Bukhārī Ṣaḥīḥ idInBook 3706 (**Ibn Masʿūd / ʿAbd Allāh** — corrected Session 2: this chain is via al-Aʿmash ← Ibrāhīm ← Abī Maʿmar ← ʿAbd Allāh, NOT Anas: *anshaqqa al-qamaru wa-naḥnu maʿa al-Nabī ṣ.ʿ.s. bi-Minā fa-qāla: ishadū*) — chapterId 63. The genuine **Anas** moon-split chain is Bukhārī **4661** (+ Muslim 6902, Tirmidhī 3370); see `04-hadith-corpus.md` ⚠ Correction 1.
 - al-Bukhārī Ṣaḥīḥ idInBook 3708 (Jābir: *anshaqqa al-qamar*) — chapterId 63.
 - al-Bukhārī Ṣaḥīḥ idInBook 4657-4661 (multiple chains via Ibn ʿAbbās, Ibn Masʿūd, Anas, in the kitāb al-tafsīr Q 54 chapter, chapterId 65).
 - Muslim Ṣaḥīḥ idInBook 6897, 6898, 6899, 6902, 6903 (kitāb al-faḍāʾil + ṣifāt al-munāfiqīn).
@@ -208,7 +208,7 @@ Q 54 uniquely closes the destruction-action AND the entire surah with two parall
 
 Both pairs feature **al-Muqtadir** as the second name, with first names that are functionally complementary: ʿAzīz (Mighty, Powerful, Inviolable) + Malīk (Sovereign-of-Power; the form is *Malīk* not the more common *al-Mālik* or *al-Malik*). Both first names are in the asma al-husna canonical 99 list (al-ʿAzīz item-9 of al-Tirmidhī's standard list; *Malīk* is a hapax in the asma list, with *al-Mālik* as the standard 99-name form).
 
-This **doubled al-Muqtadir asmaic closure** — bracketing the destruction-block (v 42) and the surah-finale (v 55) with the same divine name — is corpus-distinctive: al-Muqtadir appears only **6 times in the entire corpus** (Q 18:45, Q 43:42, Q 54:42, Q 54:55, Q 55:78, [the final verse of Q 55 is *yabqā wajhu rabbika dhū al-jalāli wa-l-ikrām*, not muqtadir; check]), with Q 54's TWO occurrences accounting for 2/4 = 50% of its corpus instances. This is among the strongest single-surah concentration of any divine-name-of-power in the corpus.
+This **doubled al-Muqtadir asmaic closure** — bracketing the destruction-block (v 42) and the surah-finale (v 55) with the same divine name — is corpus-distinctive: the orthographic *muqtadir* (مقتدر) token appears **4 times in the entire corpus** (verified Session 2, Q054-F-06: **Q 18:45, Q 43:42, Q 54:42, Q 54:55** — the speculative Q 55:78 instance is FALSE; Q 55:78 is *tabāraka smu rabbika dhī al-jalāli wa-l-ikrām*), with Q 54's TWO occurrences accounting for **2/4 = 50%** of all corpus instances, BOTH in surah-closure-frame position. This is the strongest single-surah concentration of this divine-name-of-power in the corpus (Q054-F-06 CONFIRMED; H6c perm_p = 0.0002; see `06-novel-findings.md`).
 
 Combined with the surah's overall theme (the Hour drawing near + 5 destruction-events as "previews"), the doubled al-Muqtadir is the **theological-rhetorical axis** of the surah: the moon-splitting cosmic-event (v 1) and the 5 destruction-events (vv 9-42) are all manifestations of al-Muqtadir's *qadar* (capacity); the surah's vision-of-judgment closes (v 55) with the believer in the seat-of-truth before *Malīk Muqtadir*. The surah's narrative-arc pivots on the **2-fold al-Muqtadir invocation**.
 
