@@ -1,0 +1,343 @@
+{
+  "finding_id": "H-NEW-2430",
+  "title": "Eponymous-surah cycle-centrality law",
+  "prereg_sha256": "67a689a5382cac196f7bec9cbdb19c31f3a226db864dcbe2b680e045fe09019e",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k_armB": 5,
+  "alpha_bon_armB": 0.01,
+  "rules_tuple": "(no-tashkeel, QAC v0.4 ROOT, verse-union pericope, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "extends": "H-NEW-1820 + H-NEW-2260 + Q071-F-01 + Q020-F-06",
+  "direction_locked": "eponymy != centrality — median eponymous rank > 1 (<= 2 of 5 rank-1)",
+  "degenerate_excluded": {
+    "YUSUF_Q12": "no recurring multi-surah cycle (story confined to Q12)",
+    "MUHAMMAD_Q47": "no narrated multi-surah prophet-story cycle"
+  },
+  "musa_control": {
+    "note": "No eponymous Sūrat Mūsā — control only, no data point. Q 20 = non-eponymous core-episode hub (Q020-F-06).",
+    "hub_strength": {
+      "Q 20:9-36": 0.2339898731952705,
+      "Q 27:7-14": 0.22991802248095153,
+      "Q 28:29-35": 0.25492239336052724,
+      "Q 79:15-26": 0.1482864400821057
+    },
+    "hub_rank_descending": [
+      "Q 28:29-35",
+      "Q 20:9-36",
+      "Q 27:7-14",
+      "Q 79:15-26"
+    ],
+    "q20_hub_strength": 0.2339898731952705
+  },
+  "cycles": {
+    "NUH": {
+      "cycle": "NUH",
+      "eponymous_pericope": "Q 71:1-28",
+      "eponymous_surah": 71,
+      "core_episode_carrier": false,
+      "n_pericopes": 6,
+      "centrality_table": [
+        {
+          "pericope": "Q 7:59-64",
+          "mean_jaccard": 0.2168508336447268,
+          "rank": 1
+        },
+        {
+          "pericope": "Q 23:23-30",
+          "mean_jaccard": 0.19685274337580017,
+          "rank": 2
+        },
+        {
+          "pericope": "Q 11:25-49",
+          "mean_jaccard": 0.19034602321114588,
+          "rank": 3
+        },
+        {
+          "pericope": "Q 26:105-122",
+          "mean_jaccard": 0.18127608645656346,
+          "rank": 4
+        },
+        {
+          "pericope": "Q 71:1-28",
+          "mean_jaccard": 0.14932696901261047,
+          "rank": 5
+        },
+        {
+          "pericope": "Q 54:9-17",
+          "mean_jaccard": 0.14833175728920409,
+          "rank": 6
+        }
+      ],
+      "centroid_pericope": "Q 7:59-64",
+      "centroid_mean_jaccard": 0.2168508336447268,
+      "eponymous_rank": 5,
+      "eponymous_mean_jaccard": 0.14932696901261047,
+      "arm_A_label": "PERIPHERAL",
+      "arm_B_anchor_swap": {
+        "L_matched": 28,
+        "eponymous_observed_centrality": 0.14932696901261047,
+        "null_mean": 0.13650273399873047,
+        "null_std": 0.030218883779565497,
+        "null_p95": 0.1758356175082409,
+        "z": 0.4243781837683877,
+        "p_perm_one_sided_greater": 0.2781,
+        "n_perm_ge_obs": 2781,
+        "alpha_bon": 0.01,
+        "verdict": "NULL"
+      }
+    },
+    "IBRAHIM": {
+      "cycle": "IBRAHIM",
+      "eponymous_pericope": "Q 14:35-41",
+      "eponymous_surah": 14,
+      "core_episode_carrier": false,
+      "n_pericopes": 6,
+      "centrality_table": [
+        {
+          "pericope": "Q 21:51-70",
+          "mean_jaccard": 0.20027256992774234,
+          "rank": 1
+        },
+        {
+          "pericope": "Q 26:69-104",
+          "mean_jaccard": 0.18585091706371018,
+          "rank": 2
+        },
+        {
+          "pericope": "Q 19:41-50",
+          "mean_jaccard": 0.1744076365533615,
+          "rank": 3
+        },
+        {
+          "pericope": "Q 37:83-113",
+          "mean_jaccard": 0.1634604256678595,
+          "rank": 4
+        },
+        {
+          "pericope": "Q 14:35-41",
+          "mean_jaccard": 0.15942572195736754,
+          "rank": 5
+        },
+        {
+          "pericope": "Q 6:74-83",
+          "mean_jaccard": 0.15274527252893105,
+          "rank": 6
+        }
+      ],
+      "centroid_pericope": "Q 21:51-70",
+      "centroid_mean_jaccard": 0.20027256992774234,
+      "eponymous_rank": 5,
+      "eponymous_mean_jaccard": 0.15942572195736754,
+      "arm_A_label": "PERIPHERAL",
+      "arm_B_anchor_swap": {
+        "L_matched": 7,
+        "eponymous_observed_centrality": 0.15942572195736754,
+        "null_mean": 0.10925763388688729,
+        "null_std": 0.042563261709288855,
+        "null_p95": 0.17018263346986537,
+        "z": 1.1786711369333742,
+        "p_perm_one_sided_greater": 0.0955,
+        "n_perm_ge_obs": 955,
+        "alpha_bon": 0.01,
+        "verdict": "NULL"
+      }
+    },
+    "HUD": {
+      "cycle": "HUD",
+      "eponymous_pericope": "Q 11:50-60",
+      "eponymous_surah": 11,
+      "core_episode_carrier": true,
+      "n_pericopes": 5,
+      "centrality_table": [
+        {
+          "pericope": "Q 46:21-26",
+          "mean_jaccard": 0.18216619636871761,
+          "rank": 1
+        },
+        {
+          "pericope": "Q 7:65-72",
+          "mean_jaccard": 0.1806428076869856,
+          "rank": 2
+        },
+        {
+          "pericope": "Q 11:50-60",
+          "mean_jaccard": 0.17155492703173114,
+          "rank": 3
+        },
+        {
+          "pericope": "Q 26:123-140",
+          "mean_jaccard": 0.166120831517173,
+          "rank": 4
+        },
+        {
+          "pericope": "Q 54:18-21",
+          "mean_jaccard": 0.0874129601741542,
+          "rank": 5
+        }
+      ],
+      "centroid_pericope": "Q 46:21-26",
+      "centroid_mean_jaccard": 0.18216619636871761,
+      "eponymous_rank": 3,
+      "eponymous_mean_jaccard": 0.17155492703173114,
+      "arm_A_label": "PERIPHERAL",
+      "arm_B_anchor_swap": {
+        "L_matched": 11,
+        "eponymous_observed_centrality": 0.17155492703173114,
+        "null_mean": 0.10911339007752374,
+        "null_std": 0.03424357027085725,
+        "null_p95": 0.15744688368427132,
+        "z": 1.8234528835723602,
+        "p_perm_one_sided_greater": 0.0241,
+        "n_perm_ge_obs": 241,
+        "alpha_bon": 0.01,
+        "verdict": "DIRECTIONAL"
+      }
+    },
+    "MARYAM": {
+      "cycle": "MARYAM",
+      "eponymous_pericope": "Q 19:16-34",
+      "eponymous_surah": 19,
+      "core_episode_carrier": true,
+      "n_pericopes": 5,
+      "centrality_table": [
+        {
+          "pericope": "Q 21:91",
+          "mean_jaccard": 0.1688418212611761,
+          "rank": 1
+        },
+        {
+          "pericope": "Q 66:12",
+          "mean_jaccard": 0.1356155664666303,
+          "rank": 2
+        },
+        {
+          "pericope": "Q 23:50",
+          "mean_jaccard": 0.09630647130647131,
+          "rank": 3
+        },
+        {
+          "pericope": "Q 19:16-34",
+          "mean_jaccard": 0.09285118571064548,
+          "rank": 4
+        },
+        {
+          "pericope": "Q 3:35-47",
+          "mean_jaccard": 0.08549392008296118,
+          "rank": 5
+        }
+      ],
+      "centroid_pericope": "Q 21:91",
+      "centroid_mean_jaccard": 0.1688418212611761,
+      "eponymous_rank": 4,
+      "eponymous_mean_jaccard": 0.09285118571064548,
+      "arm_A_label": "PERIPHERAL",
+      "arm_B_anchor_swap": {
+        "L_matched": 19,
+        "eponymous_observed_centrality": 0.09285118571064548,
+        "null_mean": 0.05534455514758788,
+        "null_std": 0.015287890548998697,
+        "null_p95": 0.07762990434285362,
+        "z": 2.4533555131655587,
+        "p_perm_one_sided_greater": 0.0072,
+        "n_perm_ge_obs": 72,
+        "alpha_bon": 0.01,
+        "verdict": "PASS"
+      }
+    },
+    "YUNUS": {
+      "cycle": "YUNUS",
+      "eponymous_pericope": "Q 10:98",
+      "eponymous_surah": 10,
+      "core_episode_carrier": false,
+      "n_pericopes": 4,
+      "centrality_table": [
+        {
+          "pericope": "Q 37:139-148",
+          "mean_jaccard": 0.10133043259978243,
+          "rank": 1
+        },
+        {
+          "pericope": "Q 10:98",
+          "mean_jaccard": 0.07933914306463326,
+          "rank": 2
+        },
+        {
+          "pericope": "Q 21:87-88",
+          "mean_jaccard": 0.07861432861432861,
+          "rank": 3
+        },
+        {
+          "pericope": "Q 68:48-50",
+          "mean_jaccard": 0.0712429221201151,
+          "rank": 4
+        }
+      ],
+      "centroid_pericope": "Q 37:139-148",
+      "centroid_mean_jaccard": 0.10133043259978243,
+      "eponymous_rank": 2,
+      "eponymous_mean_jaccard": 0.07933914306463326,
+      "arm_A_label": "NEAR-CENTROID",
+      "arm_B_anchor_swap": {
+        "L_matched": 1,
+        "eponymous_observed_centrality": 0.07933914306463326,
+        "null_mean": 0.02328895087232858,
+        "null_std": 0.023630123796618965,
+        "null_p95": 0.06749482401656315,
+        "z": 2.371980471821499,
+        "p_perm_one_sided_greater": 0.0233,
+        "n_perm_ge_obs": 233,
+        "alpha_bon": 0.01,
+        "verdict": "DIRECTIONAL"
+      }
+    }
+  },
+  "arm_C_cross_cycle_law": {
+    "eponymous_ranks": {
+      "NUH": 5,
+      "IBRAHIM": 5,
+      "HUD": 3,
+      "MARYAM": 4,
+      "YUNUS": 2
+    },
+    "cycle_sizes": {
+      "NUH": 6,
+      "IBRAHIM": 6,
+      "HUD": 5,
+      "MARYAM": 5,
+      "YUNUS": 4
+    },
+    "observed_median_rank": 4,
+    "n_rank1_of_5": 0,
+    "uniform_rank_null_mean_median": 3.0325,
+    "p_median_le_chance": 0.9411058894110589,
+    "p_n_rank1_ge_chance": 1.0,
+    "h1_eponymy_neq_centrality_holds": true,
+    "reversal_eponymy_implies_centrality": false,
+    "verdict": "H1 CONFIRMED — eponymy ≠ centrality (median rank > 1)"
+  },
+  "core_episode_carrier_refinement_MW7": {
+    "per_cycle_(rank,is_core_carrier)": {
+      "NUH": [
+        5,
+        false
+      ],
+      "IBRAHIM": [
+        5,
+        false
+      ],
+      "HUD": [
+        3,
+        true
+      ],
+      "MARYAM": [
+        4,
+        true
+      ],
+      "YUNUS": [
+        2,
+        false
+      ]
+    },
+    "note": "Pre-committed mechanism: core-episode carriers rank high, variant/allusive eponyms rank low. Descriptive, MW-7-capped."
+  }
+}
