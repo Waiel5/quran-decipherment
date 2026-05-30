@@ -1,0 +1,1204 @@
+{
+ "id": "H-NEW-2530",
+ "title": "Register-coded discourse grammar — joint function-word + person-grammar separability of the three Quranic registers",
+ "prereg_sha256": "e840a8477c3ba7e524c4026725b5554e7157ddcaffaf810181d4998c98736cfe",
+ "seed_primary": 20260509,
+ "seed_replication": 20260511,
+ "n_perm": 10000,
+ "bonferroni_k": 2,
+ "alpha_bonferroni": 0.025,
+ "rules_tuple": "(no-tashkeel, QAC-v0.4 features via parents 2250/2390/2490/2500/2520, per-surah feature vector, surah-scale 3-register genre proxy [reused H-NEW-2500], Hafs-Kufan, Mashriqi)",
+ "parents": [
+  "H-NEW-2250",
+  "H-NEW-2490",
+  "H-NEW-2500",
+  "H-NEW-2520"
+ ],
+ "features": [
+  "f_idh",
+  "f_lamma",
+  "f_qalu",
+  "f_idha_cascade",
+  "f_doubling",
+  "f_iltifat_type"
+ ],
+ "feature_sources": {
+  "f_idh": "h-new-2520.json per_surah.idh / V",
+  "f_lamma": "h-new-2520.json per_surah.lamma / V",
+  "f_qalu": "h-new-2520.json per_surah.qalu / V",
+  "f_idha_cascade": "h-new-2250.json runs.idha Σlength / V",
+  "f_doubling": "h-new-2490.json verse_grain_roster membership (binary)",
+  "f_iltifat_type": "h-new-2390.json all_loci, 2500 type_tags: (n31-n23)/(n31+n23)"
+ },
+ "genre_proxy_source": "h-new-2500.json genre_proxy.surah_genre (reused verbatim)",
+ "n_per_genre": {
+  "narrative": 31,
+  "legal_medinan": 20,
+  "eschatological_mufassal": 40,
+  "liturgical_didactic": 23
+ },
+ "iltifat_person_tag_marginals": {
+  "P_3<->1": 3694,
+  "P_2<->3": 6471
+ },
+ "doubling_surahs": [
+  74,
+  75,
+  78,
+  82,
+  94,
+  102
+ ],
+ "cascade_surahs": [
+  4,
+  77,
+  81,
+  82,
+  83
+ ],
+ "raw_feature_vectors": {
+  "1": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "2": {
+   "f_idh": 0.083916,
+   "f_lamma": 0.013986,
+   "f_qalu": 0.031469,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.58377
+  },
+  "3": {
+   "f_idh": 0.05,
+   "f_lamma": 0.015,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.515152
+  },
+  "4": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.017045,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.653846
+  },
+  "5": {
+   "f_idh": 0.041667,
+   "f_lamma": 0.0,
+   "f_qalu": 0.025,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.515738
+  },
+  "6": {
+   "f_idh": 0.006061,
+   "f_lamma": 0.024242,
+   "f_qalu": 0.030303,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.257937
+  },
+  "7": {
+   "f_idh": 0.029126,
+   "f_lamma": 0.043689,
+   "f_qalu": 0.033981,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.044481
+  },
+  "8": {
+   "f_idh": 0.146667,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.838384
+  },
+  "9": {
+   "f_idh": 0.0,
+   "f_lamma": 0.007752,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.731449
+  },
+  "10": {
+   "f_idh": 0.0,
+   "f_lamma": 0.036697,
+   "f_qalu": 0.027523,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.248945
+  },
+  "11": {
+   "f_idh": 0.0,
+   "f_lamma": 0.056911,
+   "f_qalu": 0.065041,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.157534
+  },
+  "12": {
+   "f_idh": 0.018018,
+   "f_lamma": 0.135135,
+   "f_qalu": 0.153153,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.189003
+  },
+  "13": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.25
+  },
+  "14": {
+   "f_idh": 0.057692,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.166667
+  },
+  "15": {
+   "f_idh": 0.020202,
+   "f_lamma": 0.010101,
+   "f_qalu": 0.070707,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.145833
+  },
+  "16": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.619512
+  },
+  "17": {
+   "f_idh": 0.018018,
+   "f_lamma": 0.0,
+   "f_qalu": 0.018018,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.328185
+  },
+  "18": {
+   "f_idh": 0.036364,
+   "f_lamma": 0.018182,
+   "f_qalu": 0.009091,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.090196
+  },
+  "19": {
+   "f_idh": 0.020408,
+   "f_lamma": 0.010204,
+   "f_qalu": 0.010204,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.277108
+  },
+  "20": {
+   "f_idh": 0.02963,
+   "f_lamma": 0.007407,
+   "f_qalu": 0.044444,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.086207
+  },
+  "21": {
+   "f_idh": 0.008929,
+   "f_lamma": 0.008929,
+   "f_qalu": 0.080357,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.439614
+  },
+  "22": {
+   "f_idh": 0.012821,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.444444
+  },
+  "23": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.033898,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.129252
+  },
+  "24": {
+   "f_idh": 0.015625,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.791667
+  },
+  "25": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.038961,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.009901
+  },
+  "26": {
+   "f_idh": 0.035242,
+   "f_lamma": 0.008811,
+   "f_qalu": 0.052863,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.011494
+  },
+  "27": {
+   "f_idh": 0.010753,
+   "f_lamma": 0.043011,
+   "f_qalu": 0.032258,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.046512
+  },
+  "28": {
+   "f_idh": 0.0,
+   "f_lamma": 0.090909,
+   "f_qalu": 0.011364,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.077626
+  },
+  "29": {
+   "f_idh": 0.0,
+   "f_lamma": 0.028986,
+   "f_qalu": 0.014493,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.043478
+  },
+  "30": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.671233
+  },
+  "31": {
+   "f_idh": 0.029412,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.278689
+  },
+  "32": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.033333,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.043478
+  },
+  "33": {
+   "f_idh": 0.068493,
+   "f_lamma": 0.013699,
+   "f_qalu": 0.013699,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.78
+  },
+  "34": {
+   "f_idh": 0.0,
+   "f_lamma": 0.018519,
+   "f_qalu": 0.074074,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.145161
+  },
+  "35": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.022222,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.410256
+  },
+  "36": {
+   "f_idh": 0.012048,
+   "f_lamma": 0.0,
+   "f_qalu": 0.060241,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.310345
+  },
+  "37": {
+   "f_idh": 0.027473,
+   "f_lamma": 0.010989,
+   "f_qalu": 0.027473,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.218391
+  },
+  "38": {
+   "f_idh": 0.034091,
+   "f_lamma": 0.0,
+   "f_qalu": 0.045455,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.245614
+  },
+  "39": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.013333,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.442308
+  },
+  "40": {
+   "f_idh": 0.023529,
+   "f_lamma": 0.035294,
+   "f_qalu": 0.023529,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.282051
+  },
+  "41": {
+   "f_idh": 0.018519,
+   "f_lamma": 0.0,
+   "f_qalu": 0.037037,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.016393
+  },
+  "42": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.147059
+  },
+  "43": {
+   "f_idh": 0.011236,
+   "f_lamma": 0.067416,
+   "f_qalu": 0.044944,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.106383
+  },
+  "44": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.071429
+  },
+  "45": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.027027,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.344828
+  },
+  "46": {
+   "f_idh": 0.028571,
+   "f_lamma": 0.028571,
+   "f_qalu": 0.057143,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.026316
+  },
+  "47": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.925926
+  },
+  "48": {
+   "f_idh": 0.034483,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.855422
+  },
+  "49": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.927273
+  },
+  "50": {
+   "f_idh": 0.022222,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.272727
+  },
+  "51": {
+   "f_idh": 0.016667,
+   "f_lamma": 0.0,
+   "f_qalu": 0.033333,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.111111
+  },
+  "52": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.020408,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.130435
+  },
+  "53": {
+   "f_idh": 0.016129,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.8
+  },
+  "54": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.018182,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.658537
+  },
+  "55": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "56": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.047619
+  },
+  "57": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.521127
+  },
+  "58": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.822222
+  },
+  "59": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.567568
+  },
+  "60": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.87013
+  },
+  "61": {
+   "f_idh": 0.142857,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.111111
+  },
+  "62": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "63": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.764706
+  },
+  "64": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.615385
+  },
+  "65": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.692308
+  },
+  "66": {
+   "f_idh": 0.083333,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.444444
+  },
+  "67": {
+   "f_idh": 0.0,
+   "f_lamma": 0.033333,
+   "f_qalu": 0.066667,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.5
+  },
+  "68": {
+   "f_idh": 0.0,
+   "f_lamma": 0.019231,
+   "f_qalu": 0.038462,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.111111
+  },
+  "69": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.259259
+  },
+  "70": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.333333
+  },
+  "71": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.035714,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.319149
+  },
+  "72": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.714286
+  },
+  "73": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.866667
+  },
+  "74": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.017857,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 1.0,
+   "f_iltifat_type": 0.2
+  },
+  "75": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 1.0,
+   "f_iltifat_type": 0.090909
+  },
+  "76": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.142857
+  },
+  "77": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.08,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.090909
+  },
+  "78": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 1.0,
+   "f_iltifat_type": 0.333333
+  },
+  "79": {
+   "f_idh": 0.021739,
+   "f_lamma": 0.0,
+   "f_qalu": 0.021739,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.454545
+  },
+  "80": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.777778
+  },
+  "81": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.413793,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "82": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.210526,
+   "f_doubling": 1.0,
+   "f_iltifat_type": -1.0
+  },
+  "83": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.083333,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.5
+  },
+  "84": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "85": {
+   "f_idh": 0.045455,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "86": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "87": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "88": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.2
+  },
+  "89": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.272727
+  },
+  "90": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.666667
+  },
+  "91": {
+   "f_idh": 0.066667,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "92": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.333333
+  },
+  "93": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "94": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 1.0,
+   "f_iltifat_type": -1.0
+  },
+  "95": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "96": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -0.714286
+  },
+  "97": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "98": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "99": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "100": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "101": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "102": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 1.0,
+   "f_iltifat_type": -1.0
+  },
+  "103": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "104": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "105": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "106": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "107": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "108": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "109": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "110": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "111": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "112": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": -1.0
+  },
+  "113": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  },
+  "114": {
+   "f_idh": 0.0,
+   "f_lamma": 0.0,
+   "f_qalu": 0.0,
+   "f_idha_cascade": 0.0,
+   "f_doubling": 0.0,
+   "f_iltifat_type": 0.0
+  }
+ },
+ "primary_3register": {
+  "classes": [
+   "narrative",
+   "legal_medinan",
+   "eschatological_mufassal"
+  ],
+  "n": 91,
+  "seed": 20260509,
+  "loo_nearest_centroid_acc": 0.76923,
+  "p_loo": 0.0001,
+  "anova_F_sum": 80.5432,
+  "p_anova": 0.0001,
+  "anova_F_per_feature": {
+   "f_idh": 10.5089,
+   "f_lamma": 12.0562,
+   "f_qalu": 33.5392,
+   "f_idha_cascade": 1.1225,
+   "f_doubling": 3.5228,
+   "f_iltifat_type": 19.7936
+  },
+  "gaussian_nb_loo_acc": 0.71429,
+  "p_nb": 0.0001,
+  "confusion_matrix": {
+   "narrative": {
+    "narrative": 25,
+    "legal_medinan": 3,
+    "eschatological_mufassal": 3
+   },
+   "legal_medinan": {
+    "narrative": 0,
+    "legal_medinan": 8,
+    "eschatological_mufassal": 12
+   },
+   "eschatological_mufassal": {
+    "narrative": 1,
+    "legal_medinan": 2,
+    "eschatological_mufassal": 37
+   }
+  },
+  "centroids_raw": {
+   "narrative": [
+    0.01771,
+    0.02072,
+    0.0371,
+    0.00269,
+    0.0,
+    -0.00138
+   ],
+   "legal_medinan": [
+    0.03227,
+    0.00252,
+    0.00351,
+    0.00085,
+    0.0,
+    -0.67122
+   ],
+   "eschatological_mufassal": [
+    0.00159,
+    0.0,
+    0.00146,
+    0.01761,
+    0.125,
+    -0.4533
+   ]
+  },
+  "baseline_majority_acc": 0.43956
+ },
+ "replication_3register": {
+  "classes": [
+   "narrative",
+   "legal_medinan",
+   "eschatological_mufassal"
+  ],
+  "n": 91,
+  "seed": 20260511,
+  "loo_nearest_centroid_acc": 0.76923,
+  "p_loo": 0.0001,
+  "anova_F_sum": 80.5432,
+  "p_anova": 0.0001,
+  "anova_F_per_feature": {
+   "f_idh": 10.5089,
+   "f_lamma": 12.0562,
+   "f_qalu": 33.5392,
+   "f_idha_cascade": 1.1225,
+   "f_doubling": 3.5228,
+   "f_iltifat_type": 19.7936
+  },
+  "gaussian_nb_loo_acc": 0.71429,
+  "p_nb": 0.0001,
+  "confusion_matrix": {
+   "narrative": {
+    "narrative": 25,
+    "legal_medinan": 3,
+    "eschatological_mufassal": 3
+   },
+   "legal_medinan": {
+    "narrative": 0,
+    "legal_medinan": 8,
+    "eschatological_mufassal": 12
+   },
+   "eschatological_mufassal": {
+    "narrative": 1,
+    "legal_medinan": 2,
+    "eschatological_mufassal": 37
+   }
+  },
+  "centroids_raw": {
+   "narrative": [
+    0.01771,
+    0.02072,
+    0.0371,
+    0.00269,
+    0.0,
+    -0.00138
+   ],
+   "legal_medinan": [
+    0.03227,
+    0.00252,
+    0.00351,
+    0.00085,
+    0.0,
+    -0.67122
+   ],
+   "eschatological_mufassal": [
+    0.00159,
+    0.0,
+    0.00146,
+    0.01761,
+    0.125,
+    -0.4533
+   ]
+  },
+  "baseline_majority_acc": 0.43956
+ },
+ "robustness_4class": {
+  "classes": [
+   "narrative",
+   "legal_medinan",
+   "eschatological_mufassal",
+   "liturgical_didactic"
+  ],
+  "n": 114,
+  "seed": 20260509,
+  "loo_nearest_centroid_acc": 0.53509,
+  "p_loo": 0.0001,
+  "anova_F_sum": 58.6106,
+  "p_anova": 0.0001,
+  "anova_F_per_feature": {
+   "f_idh": 9.6373,
+   "f_lamma": 9.4796,
+   "f_qalu": 23.6581,
+   "f_idha_cascade": 1.1785,
+   "f_doubling": 2.4256,
+   "f_iltifat_type": 12.2315
+  },
+  "gaussian_nb_loo_acc": 0.55263,
+  "p_nb": 0.0001,
+  "confusion_matrix": {
+   "narrative": {
+    "narrative": 22,
+    "legal_medinan": 2,
+    "eschatological_mufassal": 2,
+    "liturgical_didactic": 5
+   },
+   "legal_medinan": {
+    "narrative": 0,
+    "legal_medinan": 8,
+    "eschatological_mufassal": 11,
+    "liturgical_didactic": 1
+   },
+   "eschatological_mufassal": {
+    "narrative": 0,
+    "legal_medinan": 1,
+    "eschatological_mufassal": 21,
+    "liturgical_didactic": 18
+   },
+   "liturgical_didactic": {
+    "narrative": 4,
+    "legal_medinan": 3,
+    "eschatological_mufassal": 6,
+    "liturgical_didactic": 10
+   }
+  },
+  "centroids_raw": {
+   "narrative": [
+    0.01771,
+    0.02072,
+    0.0371,
+    0.00269,
+    0.0,
+    -0.00138
+   ],
+   "legal_medinan": [
+    0.03227,
+    0.00252,
+    0.00351,
+    0.00085,
+    0.0,
+    -0.67122
+   ],
+   "eschatological_mufassal": [
+    0.00159,
+    0.0,
+    0.00146,
+    0.01761,
+    0.125,
+    -0.4533
+   ],
+   "liturgical_didactic": [
+    0.00374,
+    0.0041,
+    0.01028,
+    0.0,
+    0.04348,
+    -0.26523
+   ]
+  },
+  "baseline_majority_acc": 0.35088
+ },
+ "per_feature_anova_p_primary": {
+  "f_idh": 0.0002,
+  "f_lamma": 0.0001,
+  "f_qalu": 0.0001,
+  "f_idha_cascade": 0.374163,
+  "f_doubling": 0.025197,
+  "f_iltifat_type": 0.0001
+ },
+ "h1_loo_pass": true,
+ "h2_anova_pass": true,
+ "verdict": "CONFIRMED",
+ "mint_cross_finding_028": true
+}
