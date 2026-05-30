@@ -1,0 +1,684 @@
+{
+  "finding_id": "H-NEW-2510",
+  "pre_reg_sha256": "68845be397a198ed5b95abe701c6b126159715ed07aa28c82b09ad16bfbdb53a",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "rules_tuple": "(no-tashkeel, QAC-morphology-segment, words-as-denominator, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "n_verses": 6236,
+  "metricA_definition": "Allah-name + ilah + tawhid-illa + bare-1S/1P + clitic-1S/1P, / QAC-word-count (PRIMARY, speaker-agnostic)",
+  "metricB_definition": "as A but bare/clitic 1st-person gated to divine-speech verses (has Allah-name OR tawhid-formula) (ROBUSTNESS)",
+  "observed": {
+    "max_densityA": 1.0,
+    "top20_mean_densityA": 0.7097,
+    "corpus_mean_densityA": 0.08455,
+    "corpus_mean_densityB": 0.03692,
+    "top_decile_self_ref_mass_share": 0.2623
+  },
+  "null": {
+    "method": "per-verse word-shuffle preserving each verse word-count; recount under identical token rules",
+    "p_max": 0.9876,
+    "null_max_mean": 1.0025,
+    "p_top20_mean": 0.49025,
+    "null_top20_mean": 0.7086
+  },
+  "H1_concentration_pass": false,
+  "H2_anchor_enrichment_pass": false,
+  "anchor_ranks": {
+    "20:14": 7,
+    "27:9": 233,
+    "28:30": 1232,
+    "2:255": 2946,
+    "112:1": 609,
+    "112:2": 90
+  },
+  "anchors_in_top20": 1,
+  "anchor_mean_rank": 852.8,
+  "Q20_14_corpus_rank": 7,
+  "Q20_14_density": 0.7273,
+  "spearman_A_B": 0.414,
+  "top20_metricA": [
+    {
+      "rank": 1,
+      "surah": 20,
+      "verse": 41,
+      "density": 1.0,
+      "num": 2,
+      "wc": 2,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 2,
+        "gated": false
+      }
+    },
+    {
+      "rank": 2,
+      "surah": 69,
+      "verse": 20,
+      "density": 0.8,
+      "num": 4,
+      "wc": 5,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 4,
+        "gated": false
+      }
+    },
+    {
+      "rank": 3,
+      "surah": 33,
+      "verse": 67,
+      "density": 0.75,
+      "num": 6,
+      "wc": 8,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 6,
+        "gated": false
+      }
+    },
+    {
+      "rank": 4,
+      "surah": 36,
+      "verse": 25,
+      "density": 0.75,
+      "num": 3,
+      "wc": 4,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 3,
+        "gated": false
+      }
+    },
+    {
+      "rank": 5,
+      "surah": 37,
+      "verse": 32,
+      "density": 0.75,
+      "num": 3,
+      "wc": 4,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 3,
+        "gated": false
+      }
+    },
+    {
+      "rank": 6,
+      "surah": 89,
+      "verse": 24,
+      "density": 0.75,
+      "num": 3,
+      "wc": 4,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 3,
+        "gated": false
+      }
+    },
+    {
+      "rank": 7,
+      "surah": 20,
+      "verse": 14,
+      "density": 0.7273,
+      "num": 8,
+      "wc": 11,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 1,
+        "tawhid_illa": 1,
+        "pron_1st": 2,
+        "clitic_1st": 3,
+        "gated": true
+      }
+    },
+    {
+      "rank": 8,
+      "surah": 15,
+      "verse": 95,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 2,
+        "gated": false
+      }
+    },
+    {
+      "rank": 9,
+      "surah": 20,
+      "verse": 26,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 1,
+        "clitic_1st": 1,
+        "gated": false
+      }
+    },
+    {
+      "rank": 10,
+      "surah": 26,
+      "verse": 108,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 11,
+      "surah": 26,
+      "verse": 110,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 12,
+      "surah": 26,
+      "verse": 126,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 13,
+      "surah": 26,
+      "verse": 131,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 14,
+      "surah": 26,
+      "verse": 144,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 15,
+      "surah": 26,
+      "verse": 150,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 16,
+      "surah": 26,
+      "verse": 163,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 17,
+      "surah": 26,
+      "verse": 179,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 18,
+      "surah": 37,
+      "verse": 165,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 1,
+        "clitic_1st": 1,
+        "gated": false
+      }
+    },
+    {
+      "rank": 19,
+      "surah": 37,
+      "verse": 166,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 1,
+        "clitic_1st": 1,
+        "gated": false
+      }
+    },
+    {
+      "rank": 20,
+      "surah": 44,
+      "verse": 20,
+      "density": 0.6667,
+      "num": 4,
+      "wc": 6,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 4,
+        "gated": false
+      }
+    }
+  ],
+  "top20_metricB": [
+    {
+      "rank": 1,
+      "surah": 20,
+      "verse": 14,
+      "density": 0.7273,
+      "num": 8,
+      "wc": 11,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 1,
+        "tawhid_illa": 1,
+        "pron_1st": 2,
+        "clitic_1st": 3,
+        "gated": true
+      }
+    },
+    {
+      "rank": 2,
+      "surah": 26,
+      "verse": 108,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 3,
+      "surah": 26,
+      "verse": 110,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 4,
+      "surah": 26,
+      "verse": 126,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 5,
+      "surah": 26,
+      "verse": 131,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 6,
+      "surah": 26,
+      "verse": 144,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 7,
+      "surah": 26,
+      "verse": 150,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 8,
+      "surah": 26,
+      "verse": 163,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 9,
+      "surah": 26,
+      "verse": 179,
+      "density": 0.6667,
+      "num": 2,
+      "wc": 3,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 10,
+      "surah": 6,
+      "verse": 162,
+      "density": 0.5556,
+      "num": 5,
+      "wc": 9,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 4,
+        "gated": true
+      }
+    },
+    {
+      "rank": 11,
+      "surah": 15,
+      "verse": 69,
+      "density": 0.5,
+      "num": 2,
+      "wc": 4,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 12,
+      "surah": 18,
+      "verse": 38,
+      "density": 0.5,
+      "num": 4,
+      "wc": 8,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 3,
+        "gated": true
+      }
+    },
+    {
+      "rank": 13,
+      "surah": 19,
+      "verse": 30,
+      "density": 0.5,
+      "num": 4,
+      "wc": 8,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 3,
+        "gated": true
+      }
+    },
+    {
+      "rank": 14,
+      "surah": 20,
+      "verse": 73,
+      "density": 0.5,
+      "num": 7,
+      "wc": 14,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 1,
+        "clitic_1st": 5,
+        "gated": true
+      }
+    },
+    {
+      "rank": 15,
+      "surah": 37,
+      "verse": 169,
+      "density": 0.5,
+      "num": 2,
+      "wc": 4,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 1,
+        "gated": true
+      }
+    },
+    {
+      "rank": 16,
+      "surah": 52,
+      "verse": 27,
+      "density": 0.5,
+      "num": 3,
+      "wc": 6,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 2,
+        "gated": true
+      }
+    },
+    {
+      "rank": 17,
+      "surah": 112,
+      "verse": 2,
+      "density": 0.5,
+      "num": 1,
+      "wc": 2,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 0,
+        "gated": true
+      }
+    },
+    {
+      "rank": 18,
+      "surah": 114,
+      "verse": 3,
+      "density": 0.5,
+      "num": 1,
+      "wc": 2,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 1,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 0,
+        "gated": false
+      }
+    },
+    {
+      "rank": 19,
+      "surah": 2,
+      "verse": 163,
+      "density": 0.4444,
+      "num": 4,
+      "wc": 9,
+      "breakdown": {
+        "allah": 0,
+        "ilah": 3,
+        "tawhid_illa": 1,
+        "pron_1st": 0,
+        "clitic_1st": 0,
+        "gated": true
+      }
+    },
+    {
+      "rank": 20,
+      "surah": 11,
+      "verse": 30,
+      "density": 0.4444,
+      "num": 4,
+      "wc": 9,
+      "breakdown": {
+        "allah": 1,
+        "ilah": 0,
+        "tawhid_illa": 0,
+        "pron_1st": 0,
+        "clitic_1st": 3,
+        "gated": true
+      }
+    }
+  ],
+  "verdict": "NULL"
+}
