@@ -1,0 +1,136 @@
+{
+  "finding_id": "Q093F04",
+  "title": "Verify classical Q 93 + Q 94 single-revelation pair claim against 9-book hadith corpus",
+  "date": "2026-05-09",
+  "rules_tuple": {
+    "orthography": "no-tashkeel (after stripping Arabic diacritics)",
+    "verification_corpus": "ahmedbaset-json/db/by_book/the_9_books (Bukhārī, Muslim, Tirmidhī, Abū Dāwūd, Nasāʾī, Ibn Mājah, Aḥmad, Mālik, Dārimī)"
+  },
+  "classical_anchor": "al-Suyūṭī, al-Itqān fī ʿulūm al-Qurʾān, nawʿ on Asbāb al-Nuzūl + nawʿ on Tartīb al-Tilāwa: al-Ḍuḥā + al-Sharḥ are sometimes treated as a paired-revelation. al-Suyūṭī also mentions in al-Burhān: certain Shāfiʿī fuqahāʾ recommend joint-recitation in salat.",
+  "tests": {
+    "T1_fatra_hadith_canonical": {
+      "hits": {
+        "bukhari": [
+          {
+            "idInBook": 1092,
+            "chapterId": 19,
+            "markers_matched": 6,
+            "arabic_snippet": "حدثنا محمد بن كثير، قال أخبرنا سفيان، عن الأسود بن قيس، عن جندب بن عبد الله  رضى الله عنه  قال احتبس جبريل صلى الله عليه وسلم على النبي صلى الله عليه وسلم فقالت امرأة من قريش أبطأ عليه شيطانه‏.‏ فنزلت ‏{‏والضحى * والليل إذا سجى * ما ودعك ربك وما قلى‏}‏"
+          },
+          {
+            "idInBook": 4744,
+            "chapterId": 65,
+            "markers_matched": 3,
+            "arabic_snippet": "حدثنا أحمد بن يونس، حدثنا زهير، حدثنا الأسود بن قيس، قال سمعت جندب بن سفيان  رضى الله عنه  قال اشتكى رسول الله صلى الله عليه وسلم فلم يقم ليلتين أو ثلاثا، فجاءت امرأة فقالت يا محمد إني لأرجو أن يكون شيطانك قد تركك، لم أره قربك منذ ليلتين أو ثلاثا‏.‏ فأنزل الله عز وجل ‏{‏والضحى * والليل إذا سجى * ما "
+          },
+          {
+            "idInBook": 4745,
+            "chapterId": 65,
+            "markers_matched": 3,
+            "arabic_snippet": "حدثنا محمد بن بشار، حدثنا محمد بن جعفر، غندر حدثنا شعبة، عن الأسود بن قيس، قال سمعت جندبا البجلي، قالت امرأة يا رسول الله ما أرى صاحبك إلا أبطأك‏.‏ فنزلت ‏{‏ما ودعك ربك وما قلى‏}‏"
+          },
+          {
+            "idInBook": 4776,
+            "chapterId": 66,
+            "markers_matched": 3,
+            "arabic_snippet": "حدثنا أبو نعيم، حدثنا سفيان، عن الأسود بن قيس، قال سمعت جندبا، يقول اشتكى النبي صلى الله عليه وسلم فلم يقم ليلة أو ليلتين فأتته امرأة فقالت يا محمد ما أرى شيطانك إلا قد تركك، فأنزل الله عز وجل ‏{‏والضحى * والليل إذا سجى * ما ودعك ربك وما قلى‏}‏"
+          }
+        ],
+        "muslim": [
+          {
+            "idInBook": 4525,
+            "chapterId": 32,
+            "markers_matched": 5,
+            "arabic_snippet": "حدثنا إسحاق بن إبراهيم، أخبرنا سفيان، عن الأسود بن قيس، أنه سمع جندبا، يقول أبطأ جبريل على رسول الله صلى الله عليه وسلم فقال المشركون قد ودع محمد فأنزل الله عز وجل ‏{‏ والضحى * والليل إذا سجى * ما ودعك ربك وما قلى‏}‏"
+          },
+          {
+            "idInBook": 4526,
+            "chapterId": 32,
+            "markers_matched": 3,
+            "arabic_snippet": "حدثنا إسحاق بن إبراهيم، ومحمد بن رافع، - واللفظ لابن رافع - قال إسحاق أخبرنا وقال ابن رافع، حدثنا يحيى بن آدم، حدثنا زهير، عن الأسود بن قيس، قال سمعت جندب بن سفيان، يقول اشتكى رسول الله صلى الله عليه وسلم فلم يقم ليلتين أو ثلاثا فجاءته امرأة فقالت يا محمد إني لأرجو أن يكون شيطانك قد تركك لم أره قربك"
+          }
+        ],
+        "tirmidhi": [
+          {
+            "idInBook": 3429,
+            "chapterId": 47,
+            "markers_matched": 4,
+            "arabic_snippet": "حدثنا ابن أبي عمر، حدثنا سفيان بن عيينة، عن الأسود بن قيس، عن جندب البجلي، قال كنت مع النبي صلى الله عليه وسلم في غار فدميت أصبعه فقال النبي صلى الله عليه وسلم ‏\"‏ هل أنت إلا إصبع دميت وفي سبيل الله ما لقيت ‏\"‏ ‏.‏ قال وأبطأ عليه جبريل عليه السلام فقال المشركون قد ودع محمد فأنزل الله تعالى ‏:‏ ‏(‏ م"
+          }
+        ]
+      },
+      "total_books_with_hits": 3,
+      "verdict": "CONFIRMED — canonical fatra hadith found in Bukhārī (Jundub chain), Muslim (parallel), Tirmidhī (Jundub al-Bajalī chain, ḥasan ṣaḥīḥ)"
+    },
+    "T2_q94_in_fatra_hadith": {
+      "hits": [],
+      "verdict": "CONFIRMED ABSENT"
+    },
+    "T3_dual_q93_q94_hadith": {
+      "hits": [],
+      "count": 0,
+      "verdict": "CONFIRMED ABSENT — no hadith in the 9 books mentions both Q 93 and Q 94 markers in the same narration. The \"Q 93 + Q 94 paired-revelation\" tradition is therefore NOT supported by any single ḥadīth ṣaḥīḥ in the canonical 9 books."
+    },
+    "T4_muadh_isha_hadith_q92": {
+      "hits": [
+        {
+          "book": "bukhari",
+          "idInBook": 688,
+          "markers_matched": 3,
+          "arabic_snippet": "حدثنا آدم بن أبي إياس، قال حدثنا شعبة، قال حدثنا محارب بن دثار، قال سمعت جابر بن عبد الله الأنصاري، قال أقبل رجل بناضحين وقد جنح الليل، فوافق معاذا يصلي، فترك ناضحه وأقبل إلى معاذ، فقرأ بسورة البقرة أو النساء، فانطلق الرجل، وبلغه أن معاذا نال منه، فأتى النبي صلى الله عليه وسلم فشكا إليه معاذا، فقال "
+        },
+        {
+          "book": "bukhari",
+          "idInBook": 5874,
+          "markers_matched": 3,
+          "arabic_snippet": "حدثنا محمد بن عبادة، أخبرنا يزيد، أخبرنا سليم، حدثنا عمرو بن دينار، حدثنا جابر بن عبد الله، أن معاذ بن جبل  رضى الله عنه  كان يصلي مع النبي صلى الله عليه وسلم ثم يأتي قومه فيصلي بهم الصلاة، فقرأ بهم البقرة  قال  فتجوز رجل فصلى صلاة خفيفة، فبلغ ذلك معاذا فقال إنه منافق‏.‏ فبلغ ذلك الرجل، فأتى النبي ص"
+        },
+        {
+          "book": "muslim",
+          "idInBook": 942,
+          "markers_matched": 4,
+          "arabic_snippet": "حدثني محمد بن عباد، حدثنا سفيان، عن عمرو، عن جابر، قال كان معاذ يصلي مع النبي صلى الله عليه وسلم ثم يأتي فيؤم قومه فصلى ليلة مع النبي صلى الله عليه وسلم العشاء ثم أتى قومه فأمهم فافتتح بسورة البقرة فانحرف رجل فسلم ثم صلى وحده وانصرف فقالوا له أنافقت يا فلان قال لا والله ولآتين رسول الله صلى الله علي"
+        },
+        {
+          "book": "muslim",
+          "idInBook": 943,
+          "markers_matched": 4,
+          "arabic_snippet": "وحدثنا قتيبة بن سعيد، حدثنا ليث، ح قال وحدثنا ابن رمح، أخبرنا الليث، عن أبي الزبير، عن جابر، أنه قال صلى معاذ بن جبل الأنصاري لأصحابه العشاء فطول عليهم فانصرف رجل منا فصلى فأخبر معاذ عنه فقال إنه منافق ‏.‏ فلما بلغ ذلك الرجل دخل على رسول الله صلى الله عليه وسلم فأخبره ما قال معاذ فقال له النبي صلى ا"
+        },
+        {
+          "book": "abudawud",
+          "idInBook": 790,
+          "markers_matched": 3,
+          "arabic_snippet": "حدثنا أحمد بن حنبل، حدثنا سفيان، عن عمرو، سمعه من، جابر قال كان معاذ يصلي مع النبي صلى الله عليه وسلم ثم يرجع فيؤمنا - قال مرة ثم يرجع فيصلي بقومه - فأخر النبي صلى الله عليه وسلم ليلة الصلاة - وقال مرة العشاء - فصلى معاذ مع النبي صلى الله عليه وسلم ثم جاء يؤم قومه فقرأ البقرة فاعتزل رجل من القوم فصل"
+        },
+        {
+          "book": "nasai",
+          "idInBook": 986,
+          "markers_matched": 3,
+          "arabic_snippet": "أخبرنا محمد بن بشار، قال حدثنا عبد الرحمن، قال حدثنا سفيان، عن محارب بن دثار، عن جابر، قال مر رجل من الأنصار بناضحين على معاذ وهو يصلي المغرب فافتتح بسورة البقرة فصلى الرجل ثم ذهب فبلغ ذلك النبي صلى الله عليه وسلم فقال ‏\"‏ أفتان يا معاذ أفتان يا معاذ ألا قرأت ب ‏{‏ سبح اسم ربك الأعلى ‏}‏ والشمس وضحا"
+        },
+        {
+          "book": "nasai",
+          "idInBook": 1000,
+          "markers_matched": 4,
+          "arabic_snippet": "أخبرنا قتيبة، قال حدثنا الليث، عن أبي الزبير، عن جابر، قال صلى معاذ بن جبل لأصحابه العشاء فطول عليهم فانصرف رجل منا فأخبر معاذ عنه فقال إنه منافق ‏.‏ فلما بلغ ذلك الرجل دخل على النبي صلى الله عليه وسلم فأخبره بما قال معاذ ‏.‏ فقال له النبي صلى الله عليه وسلم ‏\"‏ أتريد أن تكون فتانا يا معاذ إذا أممت "
+        },
+        {
+          "book": "ibnmajah",
+          "idInBook": 570,
+          "markers_matched": 4,
+          "arabic_snippet": "حدثنا محمد بن رمح، أنبأنا الليث بن سعد، عن أبي الزبير، عن جابر، أن معاذ بن جبل، صلى بأصحابه العشاء فطول عليهم فقال له النبي  صلى الله عليه وسلم  ‏\n\"‏ اقرأ بالشمس وضحاها وسبح اسم ربك الأعلى والليل إذا يغشى واقرأ بسم ربك ‏\"‏ ‏.‏"
+        },
+        {
+          "book": "ibnmajah",
+          "idInBook": 720,
+          "markers_matched": 4,
+          "arabic_snippet": "حدثنا محمد بن رمح، أنبأنا الليث بن سعد، عن أبي الزبير، عن جابر، قال صلى معاذ بن جبل الأنصاري بأصحابه صلاة العشاء فطول عليهم فانصرف رجل منا فصلى فأخبر معاذ عنه فقال إنه منافق ‏.‏ فلما بلغ ذلك الرجل دخل على رسول الله  صلى الله عليه وسلم  فأخبره ما قال له معاذ فقال النبي  صلى الله عليه وسلم  ‏\n\"‏ أتريد"
+        }
+      ],
+      "count": 9,
+      "verdict": "CONFIRMED — Muʿādh-isha-prayer hadith found in 9 hits; explicitly mentions Q 87 (al-Aʿlā), Q 91 (al-Shams), Q 92 (al-Layl) as preferred Isha-recitations. This is a DIFFERENT fadāʾil cluster from the Q 93 fatra hadith."
+    }
+  },
+  "headline_verdict": "1. The canonical fatra hadith (Bukhārī 1092, Muslim 4525-4526, Tirmidhī 3429 ḥasan ṣaḥīḥ) explicitly cites ONLY Q 93:1-3 — NOT Q 94. The 'Q 93 + Q 94 single-revelation event' claim attributed to al-Suyūṭī is a CLASSICAL EXEGETICAL/JURISTIC POSITION, NOT a ḥadīth-attested fact in the 9 books. 2. The Q 92 al-Layl fadāʾil hadith is a SEPARATE Muʿādh-isha-prayer cluster pairing Q 87 + Q 91 + Q 92 — NOT Q 92 with Q 93 / Q 94. 3. The empirical-architectural pair-cohesion (Q 93↔Q 94 corpus rank 128/6441) is therefore INDEPENDENT empirical support for the same intuition the classical scholars had, but it does NOT trace back to a ṣaḥīḥ hadith chain."
+}
