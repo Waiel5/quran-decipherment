@@ -36,8 +36,9 @@ Q 84 lives in the cohesive eschatological-creedal short-Meccan cloud, not on a f
 | Field | Value |
 |:--|:--|
 | Window (7-surah, centered) | Q 81-87 |
-| d̄_W (with Q 84) | 0.91540 |
-| d̄_{W−84} (Q 84 excluded) | (window recomputed) |
+| d̄_W (with Q 84) | 0.59524 |
+| d̄_{W−84} (Q 84 excluded) | 0.59009 |
+| pct_W / pct_{W−84} | 0.26 / 0.59 |
 | **Δ%ile** | **−0.33** |
 | **Classification** | **NULL** (cohesion, not outlier) |
 
