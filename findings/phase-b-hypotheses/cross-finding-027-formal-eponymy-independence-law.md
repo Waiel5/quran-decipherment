@@ -25,13 +25,13 @@ verdict: A surah's name tracks neither its dominant-word density nor its narrati
 
 H-NEW-2430 is the *stronger* pillar (0/5 vs 52.8%) and supplies the unifying mechanism. The five testable cycles (Nūḥ Q71 rank 5/6, Ibrāhīm Q14 5/6, Hūd Q11 3/5, Maryam Q19 4/5, Yūnus Q10 2/4) span the full eligible population — this is a law over the eligible set, not a sample.
 
-## The mechanism, demonstrated
+## The mechanism, demonstrated (sharpened by H-NEW-2480)
 
-The driver is **private-vocabulary mass**, monotone in pericope size:
-- Largest eponymous pericopes rank WORST in cycle-centrality: Maryam (89 roots) → rank 4/5; Nūḥ (87 roots) → rank 5/6.
-- Smallest ranks BEST: the one-verse Yūnus allusion (Q10:98, 12 roots) → rank 2/4.
+The driver is **private-vocabulary DENSITY (fraction), at fixed length** — NOT raw private-vocabulary mass or size. H-NEW-2480 (§10.127) regressed centrality on private-root-count and length across all 30 cycle-pericopes and found a **suppressor structure**: private-count and length are 91% collinear (ρ=0.910) with opposite-signed partial effects.
+- Among the eponymous surahs the raw pattern is "biggest ranks worst" (Maryam 89 roots → 4/5, Nūḥ 87 → 5/6; the 1-verse Yūnus allusion Q10:98, 12 roots → 2/4) — but this is the eponymous *subset*, which is private-dense.
+- **Pooled over all 30 pericopes:** raw centrality~length is POSITIVE (+0.40, longer retellings share more *absolute* core overlap), raw centrality~private is null, but **length-controlled partial centrality~private = −0.498 (p=0.0025), and private-FRACTION ~ centrality = −0.531** — confirming the mechanism in its density form.
 
-A surah elaborating its figure introduces scene-specific vocabulary absent from the cycle's other (briefer) retellings; this private mass dilutes its mean-pairwise overlap with the cycle, pushing it to the periphery. The cycle's shared CORE (e.g. ark/flood roots `flk`/`grq`/`njw` for Nūḥ) is best preserved in the *terse* retellings, which therefore become the centroids.
+So: a surah elaborating its figure raises its private-vocabulary *fraction*, diluting its mean-pairwise overlap with the cycle's shared CORE (e.g. ark/flood `flk`/`grq`/`njw` for Nūḥ); the core survives best in the *terse* retellings, which become the centroids. (Correction to the original wording "private-vocabulary mass monotone in size," which conflated the two opposite-signed effects — H-NEW-2480, the session's 5th generator-then-test refinement.)
 
 ## Why the earlier "core-episode-carrier = hub" mechanism was wrong (self-correction)
 
