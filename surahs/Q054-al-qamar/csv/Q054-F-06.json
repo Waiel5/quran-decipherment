@@ -1,0 +1,72 @@
+{
+  "test_id": "Q054-F-06",
+  "title": "Q 54 al-Muqtadir closure-concentration",
+  "prereg_sha256": "e76d3316f0bb61b670ad93b140778f46b8940f6b65f7c07a9dabcef992f87a98",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "H6a": {
+    "n_q54": 2,
+    "n_total": 4,
+    "share_q54": 0.5,
+    "all_muqtadir_verses": [
+      [
+        18,
+        45
+      ],
+      [
+        43,
+        42
+      ],
+      [
+        54,
+        42
+      ],
+      [
+        54,
+        55
+      ]
+    ],
+    "corpus_max_surah": 54,
+    "corpus_max_count": 2,
+    "is_corpus_max": true,
+    "threshold": 0.4,
+    "pass": true
+  },
+  "H6b": {
+    "closure_frame_committed": [
+      [
+        54,
+        42
+      ],
+      [
+        54,
+        55
+      ]
+    ],
+    "q54_muqtadir_verses": [
+      [
+        54,
+        42
+      ],
+      [
+        54,
+        55
+      ]
+    ],
+    "n_closure_frame": 2,
+    "threshold": 2,
+    "pass": true
+  },
+  "H6c": {
+    "observed_q54_count": 2,
+    "n_perm": 10000,
+    "perm_p_length_weighted": 0.0002,
+    "perm_p_uniform": 0.0011,
+    "alpha_bon": 0.025,
+    "pass": true
+  },
+  "pre_commit_violation_H6a": false,
+  "verdict": "CONFIRMED (H6a PASS-DIRECTED ceiling; H6b + H6c pass at alpha_bon)"
+}
