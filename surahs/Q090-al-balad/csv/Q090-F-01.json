@@ -1,0 +1,45 @@
+{
+  "test_id": "Q090-F-01",
+  "prereg_sha256": "5ab5e79bb7e3dcf20a36e1e7e5fccc0d64cdcbe6ac27d52c0925d7d988411d18",
+  "seed_primary": 20260509,
+  "seed_replication": 20260530,
+  "n_perm": 10000,
+  "bonferroni_k": 2,
+  "alpha_bon": 0.025,
+  "rules_tuple": "(no-tashkeel, QAC-v0.4 STEM root-tokens, graphemes, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "n_root_occurrences": 49968,
+  "observed": {
+    "T_obs_exclusive_roots": 4,
+    "distinct_roots": 45,
+    "exclusive_density": 0.08888888888888889,
+    "exclusive_roots": [
+      "$fh",
+      "kbd",
+      "njd",
+      "sgb"
+    ]
+  },
+  "H1_count": {
+    "p_perm": 0.0011998800119988001,
+    "null_mean": 0.4184,
+    "null_max": 4,
+    "direction": "enrichment (upper tail)",
+    "pass_alpha_bon": true
+  },
+  "H2_density": {
+    "p_perm": 0.0007999200079992001,
+    "pass_alpha_bon": true,
+    "direction": "enrichment (upper tail)"
+  },
+  "MW5_replication": {
+    "seed": 20260530,
+    "p_perm_count": 0.0007999200079992001
+  },
+  "MW6_control_Q91": {
+    "T_obs": 4,
+    "distinct_roots": 36,
+    "density": 0.1111111111111111,
+    "p_perm": 0.00039996000399960006
+  },
+  "verdict": "CONFIRMED"
+}
