@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Incapacity Is Its Inimitability — the Nūniyya on the Qur'an's Ordering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@600;700&family=Scheherazade+New:wght@400;700&family=Reem+Kufi:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0f14; --panel:#12161e; --panel2:#161b25; --ink:#e8e2d4; --dim:#a89f8c;
+  --gold:#c9a227; --gold2:#e3c566; --line:#2a3140; --green:#7fb069; --red:#c75c5c;
+  --qbg:#1a2030;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%; text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink); overflow-x:hidden; overflow-wrap:break-word;
+  font-family:'EB Garamond',serif; font-size:19px; line-height:1.75;
+  background-image:
+    radial-gradient(1200px 600px at 50% -10%, rgba(201,162,39,.07), transparent 60%),
+    radial-gradient(900px 500px at 10% 110%, rgba(201,162,39,.05), transparent 60%);
+}
+.wrap{max-width:880px; margin:0 auto; padding:24px 20px 80px}
+header{text-align:center; padding:56px 0 28px}
+.bism{font-family:'Scheherazade New',serif; color:var(--gold2); font-size:1.5rem; margin-bottom:18px}
+h1{
+  font-family:'Cormorant Garamond',serif; font-weight:700; color:var(--gold);
+  font-size:clamp(1.9rem, 7vw, 3rem); margin:.2em 0 .1em; line-height:1.25;
+  text-shadow:0 0 40px rgba(201,162,39,.25);
+}
+.artitle{font-family:'Scheherazade New',serif; color:var(--gold2); font-size:clamp(1.6rem,6vw,2.4rem); margin:.1em 0}
+.subtitle{font-family:'Reem Kufi',sans-serif; color:var(--dim); font-size:1.05rem; letter-spacing:.5px}
+.ornament{color:var(--gold); font-size:1.6rem; margin:18px 0; opacity:.9}
+.manifesto{
+  background:linear-gradient(180deg, var(--panel2), var(--panel));
+  border:1px solid var(--line); border-radius:14px; padding:26px 30px; margin:30px 0;
+  font-size:1.04em;
+}
+.manifesto strong{color:var(--gold2)}
+nav.toc{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:10px 0 30px}
+nav.toc a{
+  color:var(--dim); text-decoration:none; border:1px solid var(--line); border-radius:999px;
+  padding:2px 14px; font-size:.85em; transition:.2s;
+}
+nav.toc a:hover{color:var(--gold2); border-color:var(--gold)}
+h2{
+  font-family:'Cormorant Garamond',serif; color:var(--gold); font-size:1.7rem;
+  margin:60px 0 6px; text-align:center;
+}
+h2 + .h2sub{text-align:center; color:var(--dim); font-size:.92em; margin:0 0 24px}
+.panel{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:24px 28px; margin:18px 0}
+.poemfull{
+  background:linear-gradient(180deg,#141925,#10141c);
+  border:1px solid #3a3424; border-radius:16px; padding:34px 26px; margin:20px 0;
+}
+.poemfull .line{margin-bottom:26px; text-align:center}
+.poemfull .n{color:var(--gold); font-size:.8em; opacity:.7; font-family:'Reem Kufi',sans-serif}
+.ar{
+  font-family:'Scheherazade New',serif; font-size:1.5rem; line-height:2.3; color:#f3edda;
+  direction:rtl; unicode-bidi:isolate;
+}
+.poemfull .ar{display:flex; flex-wrap:wrap; justify-content:center; align-items:baseline; column-gap:14px}
+.poemfull .ar .vs{white-space:nowrap}
+.poemfull .ar .vsep{color:var(--gold); opacity:.7}
+.trans{color:var(--dim); font-style:italic; font-size:.98em; margin-top:2px}
+.bayt{
+  background:var(--panel); border:1px solid var(--line); border-radius:16px;
+  padding:26px 28px; margin:26px 0; position:relative;
+}
+.bayt .num{
+  position:absolute; top:-16px; left:24px; background:var(--bg); border:1px solid var(--gold);
+  color:var(--gold2); border-radius:999px; padding:0 16px; font-family:'Reem Kufi',sans-serif; font-size:.85em;
+}
+.bayt .verse{
+  font-family:'Scheherazade New',serif; font-size:1.5rem; text-align:center; line-height:2.4;
+  color:#f3edda; margin:6px 0 4px; direction:rtl; unicode-bidi:isolate;
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:baseline; column-gap:14px;
+}
+.verse .vs{white-space:nowrap}
+.verse .vsep{color:var(--gold); opacity:.7}
+.bayt .trans{text-align:center; margin-bottom:14px}
+.blocktitle{
+  font-family:'Reem Kufi',sans-serif; font-size:.78em; color:var(--gold);
+  letter-spacing:1.5px; text-transform:uppercase; margin:18px 0 6px; display:flex; align-items:center; gap:10px;
+}
+.blocktitle::after{content:""; flex:1; height:1px; background:linear-gradient(90deg,var(--line),transparent)}
+.words{display:grid; grid-template-columns:auto 1fr; gap:6px 18px; margin:4px 0}
+.words .w{font-family:'Scheherazade New',serif; color:var(--gold2); font-weight:700; white-space:nowrap; direction:rtl; unicode-bidi:isolate; text-align:left}
+.words .g{color:var(--ink)}
+.words .g i{color:var(--dim)}
+.meaning,.balagha{color:var(--ink)}
+.math{
+  background:var(--qbg); border-left:3px solid var(--gold); border-radius:8px;
+  padding:12px 18px; margin-top:8px; font-size:.95em;
+}
+.math .seal{
+  display:inline-block; font-family:'Reem Kufi',sans-serif; font-size:.72em; color:var(--green);
+  border:1px solid var(--green); border-radius:999px; padding:0 10px; margin-right:8px; vertical-align:middle;
+}
+.quran{color:var(--gold2); font-family:'Scheherazade New',serif; direction:rtl; unicode-bidi:isolate}
+.qabox{
+  background:linear-gradient(180deg,#1c1a10,#15140d);
+  border:1px solid var(--gold); border-radius:14px; padding:24px 28px; margin:22px 0;
+}
+.qabox h3{font-family:'Cormorant Garamond',serif; color:var(--gold2); margin:0 0 10px; font-size:1.3em}
+.scan{
+  font-family:'Scheherazade New',serif; text-align:center; font-size:1.2rem;
+  color:var(--gold2); letter-spacing:1px; line-height:2.3; direction:rtl;
+}
+.scanlatin{text-align:center; color:var(--dim); font-size:1.05em; letter-spacing:2px}
+table.freq{width:100%; border-collapse:collapse; margin:10px 0; font-size:.95em}
+table.freq td,table.freq th{border-bottom:1px solid var(--line); padding:6px 10px; text-align:left}
+table.freq th{color:var(--gold); font-family:'Reem Kufi',sans-serif; font-weight:400; font-size:.85em}
+.center{text-align:center}
+.dim{color:var(--dim)}
+.gold{color:var(--gold2)}
+.arch{display:flex; justify-content:center; align-items:center; gap:4px; margin:16px 0}
+.arch .cell{flex:1 1 0; max-width:18px; min-width:4px; height:16px; border-radius:4px; background:#232a38; border:1px solid var(--line)}
+.arch .cell.heart{background:var(--gold); border-color:var(--gold2); box-shadow:0 0 12px rgba(201,162,39,.6)}
+.legend{text-align:center; color:var(--dim); font-size:.85em}
+.honest{border:1px solid var(--line); border-radius:14px; overflow:hidden; margin:18px 0}
+.honest .row{display:grid; grid-template-columns:1fr 1fr}
+.honest .col{padding:20px 24px}
+.honest .col.yes{background:rgba(127,176,105,.06); border-right:1px solid var(--line)}
+.honest .col.no{background:rgba(199,92,92,.06)}
+.honest h3{font-family:'Reem Kufi',sans-serif; margin:0 0 10px; font-size:1em}
+.honest .yes h3{color:var(--green)} .honest .no h3{color:var(--red)}
+.honest ul{margin:0; padding-left:20px}
+footer{text-align:center; margin-top:70px; color:var(--dim); font-size:.95em}
+footer .seal-end{font-family:'Scheherazade New',serif; color:var(--gold); font-size:1.7rem; margin:10px 0; direction:rtl}
+@media(max-width:640px){
+  body{font-size:17px}
+  .wrap{padding:18px 14px 60px}
+  header{padding:36px 0 20px}
+  .poemfull{padding:24px 14px}
+  .poemfull .line{margin-bottom:24px}
+  .poemfull .ar{flex-direction:column; align-items:center; font-size:1.42rem; line-height:2.05}
+  .poemfull .ar .vs{white-space:normal; text-align:center; max-width:100%}
+  .poemfull .ar .vsep{display:none}
+  .bayt{padding:22px 16px}
+  .bayt .verse{font-size:1.38rem; line-height:2.1; flex-direction:column; align-items:center; row-gap:2px}
+  .verse .vs{white-space:normal; text-align:center; max-width:100%}
+  .verse .vsep{display:none}
+  .panel,.qabox,.manifesto{padding:18px 16px}
+  table.freq{font-size:.85em}
+  .honest .row{grid-template-columns:1fr}
+  .honest .col.yes{border-right:none; border-bottom:1px solid var(--line)}
+}
+@media(max-width:400px){
+  body{font-size:16px}
+  h2{font-size:1.35rem}
+  .poemfull .ar{font-size:1.3rem}
+  .bayt .verse{font-size:1.28rem}
+  .words{grid-template-columns:1fr; gap:0}
+  .words .w{margin-top:10px}
+  .bayt .num{left:12px; padding:0 10px; font-size:.78em}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="bism">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحيمِ</div>
+  <div class="artitle">عَجْزي إعْجازُهُ</div>
+  <h1>My Incapacity Is Its Inimitability</h1>
+  <div class="subtitle">The Great Nūniyya — a qaṣīda on the ordering of the Book · strict classical al-Kāmil · rhyme-letter nūn</div>
+  <div class="ornament">۞ ❖ ۞</div>
+  <nav class="toc">
+    <a href="#manifesto">Why this poem</a>
+    <a href="#wazn">Meter &amp; rhyme</a>
+    <a href="#nun">The secret of Nūn</a>
+    <a href="#arch">Architecture</a>
+    <a href="#text">Full text</a>
+    <a href="#maknun">The «maknūn» question</a>
+    <a href="#sharh">Line by line</a>
+    <a href="#honesty">Charter of honesty</a>
+  </nav>
+</header>
+
+<!-- ===================== MANIFESTO ===================== -->
+<section id="manifesto">
+<div class="manifesto">
+<p>This is a poem that was not written the way poems are written — it was <strong>built the way proofs are built</strong>. Every image in it derives from a <strong>computed measurement on the text of the Qur'an itself</strong>: its rhyme is extracted from a census of the verse-endings of the Book; its center sits where the Book's geometric center actually lies; its caravan-and-stars tableau translates a mathematical discovery about the ordering of the sūras; and its satire of the number-mystics rests on rigorous computational refutation, not on passing opinion.</p>
+<p>Its subject is the oldest question in Arabic criticism: <strong>why did the poets fail to imitate the Qur'an?</strong> Its answer is the doctrine of ʿAbd al-Qāhir al-Jurjānī in <em>Dalāʾil al-Iʿjāz</em>: the secret lies in <strong>naẓm</strong> — the ordering, the way word and meaning are welded together past human reach. But the poem does not merely <em>state</em> this; it <strong>performs</strong> it: a poet musters his full arsenal, makes the attempt, measures his own failure line by line — until he understands that his incapacity is itself the evidence. And so he prostrates. Hence the title: <strong>ʿAjzī Iʿjāzuh</strong> — "my incapacity (ʿajz) is its inimitability (iʿjāz)" — a derivational pun on a single Arabic root (ʿ-j-z) that carries the poem's entire thesis in two words.</p>
+<p class="dim" style="margin-bottom:0">Throughout, the poem is reverence, not rivalry: no verse of the Qur'an is ever placed in the poet's mouth, and every fracture in the poem falls on the poet alone.</p>
+</div>
+</section>
+
+<!-- ===================== METER ===================== -->
+<section id="wazn">
+<h2>Meter &amp; Rhyme</h2>
+<div class="h2sub">al-Kāmil al-tāmm — the maqṭūʿ muḍmar cadence — a bound, wāw-buttressed rhyme</div>
+<div class="panel">
+<p class="scan">مُتَفاعِلُنْ مُتَفاعِلُنْ مُتَفاعِلُنْ ‖ مُتَفاعِلُنْ مُتَفاعِلُنْ مُتْفاعِلْ</p>
+<p class="scanlatin">⏑⏑–⏑– ⏑⏑–⏑– ⏑⏑–⏑– ‖ ⏑⏑–⏑– ⏑⏑–⏑– – – –</p>
+<p><span class="gold">The meter:</span> al-Kāmil ("the Complete"), the most kinetic of the Arabic meters — the meter of ʿAntara's boasts and Labīd's wisdom. Each half-line carries three feet of <em>mutafāʿilun</em> (⏑⏑–⏑–), whose first two light syllables may freely fuse into one heavy (<em>iḍmār</em>: – –⏑–), line by line, as the classical license allows.</p>
+<p><span class="gold">The cadence:</span> the final foot of every line undergoes two classical operations — <em>iḍmār</em> (fusing) and <em>qaṭʿ</em> (docking) — leaving <strong>مُتْفاعِلْ = three heavy beats: – – –</strong>. This locked cadence falls at the end of <strong>all 29 lines without exception</strong>, like a seal stamped at the close of every breath.</p>
+<p><span class="gold">The rhyme:</span> a <em>muqayyad</em> rhyme (the rhyme-consonant nūn is silenced at pause), buttressed by a long ū (<em>ridf</em>): maknūn, mawḍūn, ʿurjūn… Every rhyme-word in the poem is distinct — <strong>except one deliberate return: المَكْنون (al-maknūn), the word that opens the poem at line 1, seals it at line 29</strong>. At a distance of 28 lines this repetition is no defect (the flaw of <em>īṭāʾ</em> concerns near repetition); it is design — "returning the close upon the opening" — for a poem whose very subject is a Book that circles back on itself.</p>
+<p class="dim">The most alive hemistich in the poem is the front half of line 15 — the tawḥīd line — three fully live <em>mutafāʿilun</em> in a row: the fastest pulse in the poem, beating exactly at its heart.</p>
+</div>
+</section>
+
+<!-- ===================== NUN ===================== -->
+<section id="nun">
+<h2>The Secret of the Nūn: why is the rhyme-letter ن?</h2>
+<div class="h2sub">Because nūn is the Book's own rhyme — the classical science of fawāṣil, now measured</div>
+<div class="panel">
+<p>The nūn was not chosen by taste but <strong>extracted by measurement</strong>. The verse-endings of the Qur'an (<em>fawāṣil al-āy</em>) are a classical science — al-Zarkashī devotes an entire chapter of <em>al-Burhān</em> to them, and al-Suyūṭī a full division of <em>al-Itqān</em> (nawʿ 59). Computed over the whole text:</p>
+<table class="freq">
+<tr><th>Measurement</th><th>Result</th></tr>
+<tr><td>Verses ending in nūn</td><td><strong>3,124 of 6,236 = 50.1%</strong> — nūn closes half the Book</td></tr>
+<tr><td>Just five letters {ن ا م ر د}</td><td>close <strong>90.2%</strong> of all verses</td></tr>
+<tr><td>Letter frequency in the body of the text</td><td>ا 13.17% &gt; ل 11.55% &gt; <strong>ن 8.25%</strong> &gt; م 8.08%</td></tr>
+<tr><td>Lām — the 2nd most common letter overall</td><td>nearly absent at verse-end: <strong>11× under-represented</strong></td></tr>
+</table>
+<p>So the nūn — not the mīm, as is popularly assumed — is the third most frequent letter of the Book, and it closes half its verses: <strong>the hidden crown of its endings</strong>. A poem about the Book's ordering, rhymed on nūn, is rhymed on the Book's own rhyme. That is what "written mathematically" means here: even the rhyme-letter is a measured decision.</p>
+</div>
+</section>
+
+<!-- ===================== ARCHITECTURE ===================== -->
+<section id="arch">
+<h2>The Architecture</h2>
+<div class="h2sub">29 lines: 14 + 1 + 14 — tawḥīd as the axis of the mill</div>
+<div class="panel">
+<div class="arch">
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+  <div class="cell heart"></div>
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+</div>
+<p class="legend">Line 15 (gold) = the tawḥīd line, with 14 + 14 lines on either side</p>
+<p><span class="gold">The heart at the exact mathematical center:</span> twenty-nine lines, so line 15 is the precise midpoint — and it alone carries pure tawḥīd: <span class="quran">هُوَ أَوَّلٌ هُوَ آخِرٌ هُوَ واحِدٌ صَمَدٌ</span>. This deliberately mirrors a measured discovery: <strong>Sūrat al-Ikhlāṣ — the sūra of pure tawḥīd — is the geometric center-of-mass of the muṣḥaf</strong> (rank 1 of 114 by proximity to the statistical centroid of all sūras). As the Book's measured heart is tawḥīd, so the poem's heart was set — same position, same finding.</p>
+<p><span class="gold">29 and 14:</span> the line-count, twenty-nine, equals the number of sūras opened by the "mysterious letters" (al-muqaṭṭaʿāt); flanking the heart, 14 + 14 = 28 — the number of letters those openings are built from, and of the lunar mansions to which the crescent-line (27) returns. <em>A deliberate craftsman's correspondence, openly declared — not a claim of numerical mystery.</em> That is the whole difference between making a proportion and hallucinating one.</p>
+<p><span class="gold">The dramatic arc:</span> the anti-ruins opening (1) → the poet's hubris and full muster (4–5) → the caravan and the stars: the shortest path (6–8) → the human tradeoff law (10–14) → <strong>the heart: tawḥīd (15–17)</strong> → incapacity as proof; the ṣarfa doctrine refused (18–20) → the satire of the counters (21–23) → the prostration (24–26) → the returning moon and the drowned poet (27–28) → <strong>return to the beginning: the text is a ring (29)</strong>.</p>
+</div>
+</section>
+
+<!-- ===================== FULL TEXT ===================== -->
+<section id="text">
+<h2>The Full Text</h2>
+<div class="h2sub">Arabic with line-by-line English rendering — the commentary follows below</div>
+<div class="poemfull">
+  <div class="line"><div class="n">1</div><div class="ar"><span class="vs">عَفَّتْ مَعالِمُ كُلِّ دارٍ، وَالهُدى</span><span class="vsep">‖</span><span class="vs">غَضٌّ، وَرَسْمُ الوَحْيِ ظَلَّ المَكْنونْ</span></div><div class="trans">The landmarks of every dwelling are effaced — yet the Guidance is fresh, and the trace of Revelation has remained the treasured one.</div></div>
+  <div class="line"><div class="n">2</div><div class="ar"><span class="vs">كَمْ حاوَلَ الشُّعَراءُ نَظْمًا مِثْلَهو</span><span class="vsep">‖</span><span class="vs">فَنَبَتْ قَوافيهِمْ، وَخابَ المَغْبونْ</span></div><div class="trans">How often the poets attempted an ordering like it — their rhymes glanced off like blunted swords, and the out-bargained went home cheated.</div></div>
+  <div class="line"><div class="n">3</div><div class="ar"><span class="vs">بَحْرٌ تَغوصُ وَلا تَنالُ قَرارَهو</span><span class="vsep">‖</span><span class="vs">وَالدُّرُّ في الأَعْماقِ باتَ المَدْفونْ</span></div><div class="trans">A sea: you dive and never reach its floor, and the pearl in the deeps passes the night buried.</div></div>
+  <div class="line"><div class="n">4</div><div class="ar"><span class="vs">وَوَرِثْتُ سِرَّ القَوْلِ فَاسْتَنْزَلْتُهو</span><span class="vsep">‖</span><span class="vs">أَحْكيهِ حَتّى العَقْلُ مِنّي المَفْتونْ</span></div><div class="trans">And I — heir to the secret of speech — presumed to summon it down and mimic it, till my own mind was the one beguiled.</div></div>
+  <div class="line"><div class="n">5</div><div class="ar"><span class="vs">جَمَّعْتُ أَقْلامي وَجَرَّدْتُ القُوى</span><span class="vsep">‖</span><span class="vs">وَنَفَضْتُ أَوْزانًا، وَهِجْتُ المَخْزونْ</span></div><div class="trans">I mustered all my pens, unsheathed my powers, shook out the meters to the last grain, and roused the hoarded store.</div></div>
+  <div class="line"><div class="n">6</div><div class="ar"><span class="vs">حَنَّتْ لَهُ الأَجْيالُ تَحْدو عيسَها</span><span class="vsep">‖</span><span class="vs">واللَّيْلُ داجٍ، والدَّليلُ المَأْمونْ</span></div><div class="trans">Generations yearned for it, driving their white camels with its chant — the night pitch-dark, and it the Guide that never betrays.</div></div>
+  <div class="line"><div class="n">7</div><div class="ar"><span class="vs">وَتَنَظَّمَتْ صَفًّا كَمِثْلِ فَراقِدٍ</span><span class="vsep">‖</span><span class="vs">سَرْدًا، عَلى قَصْدِ السَّبيلِ المَقْرونْ</span></div><div class="trans">And its sūras arrayed themselves in a row like guide-stars: chain-linked mail, upon the straight path, ring joined to ring.</div></div>
+  <div class="line"><div class="n">8</div><div class="ar"><span class="vs">لَوْ زاغَ جَدْيٌ أَوْ تَنَكَّرَ مَنْزِلٌ</span><span class="vsep">‖</span><span class="vs">بِهِ تاهَ خِرّيتٌ، وَضَلَّ المَشْحونْ</span></div><div class="trans">Had the Pole-star swerved, or one lunar mansion gone strange, the master pathfinder would wander, and the laden ship be lost.</div></div>
+  <div class="line"><div class="n">9</div><div class="ar"><span class="vs">حَتّى وَقَفْتُ بِبابِهِ مُتَهَيِّبًا</span><span class="vsep">‖</span><span class="vs">خارَتْ قُوًى دونِي، وَعَزَّ المَرْهونْ</span></div><div class="trans">Until I stood at its gate in awe: powers had collapsed at the threshold before me, and the pledged prize hung beyond all reach.</div></div>
+  <div class="line"><div class="n">10</div><div class="ar"><span class="vs">السَّدْيُ وَاللُّحْمُ اسْتَوى في نَسْجِهِ</span><span class="vsep">‖</span><span class="vs">لَحْنٌ وَمَعْنًى، ثُمَّ نَظْمٌ مَوْضونْ</span></div><div class="trans">Warp and weft come even in its weaving — melody and meaning — and then: an ordering close-woven, double-linked.</div></div>
+  <div class="line"><div class="n">11</div><div class="ar"><span class="vs">قالوا: المَعاني في الطَّريقِ طَريحَةٌ</span><span class="vsep">‖</span><span class="vs">وَالفَضْلُ في حُسْنِ البَيانِ المَضْمونْ</span></div><div class="trans">They said: meanings lie strewn in the road for any passer-by; excellence is in the craft of expression that delivers.</div></div>
+  <div class="line"><div class="n">12</div><div class="ar"><span class="vs">فَإِذا صَقَلْتُ اللَّفْظَ رَقَّ مَعينُهو</span><span class="vsep">‖</span><span class="vs">وَنَأَتْ مَعانٍ، وَالبَيانُ المَطْعونْ</span></div><div class="trans">Yet when I burnished the word, its spring ran thin — meanings receded, and the eloquence shone with a stab-wound in it.</div></div>
+  <div class="line"><div class="n">13</div><div class="ar"><span class="vs">وَإِذا غَمَسْتُ القَوْلَ في أَعْماقِهِ</span><span class="vsep">‖</span><span class="vs">ذَبُلَ الرَّنينُ، وَخارَ لَحْنٌ مَوْهونْ</span></div><div class="trans">And when I plunged speech into the depths of meaning, the ringing withered, and a weakened music buckled.</div></div>
+  <div class="line"><div class="n">14</div><div class="ar"><span class="vs">نارٌ وَغَيْثٌ ما قَدَرْتُ عَلَيْهِما</span><span class="vsep">‖</span><span class="vs">في بُرْدَةٍ، وَالوَصْلُ غَيْرُ المَرْصونْ</span></div><div class="trans">Fire and rain — I had no power to hold the two in a single mantle; the weld would never rivet.</div></div>
+  <div class="line"><div class="n">15</div><div class="ar"><span class="vs">هُوَ أَوَّلٌ هُوَ آخِرٌ هُوَ واحِدٌ</span><span class="vsep">‖</span><span class="vs">صَمَدٌ، إِلَيْهِ يَفيءُ رَكْبٌ مَيْمونْ</span></div><div class="trans">He is First, He is Last, He is One — the Eternal Refuge; to Him the blessed caravan comes home to rest.</div></div>
+  <div class="line"><div class="n">16</div><div class="ar"><span class="vs">لا كُفْءَ، لا نِدَّ، انْتَهى كُلُّ المَدى</span><span class="vsep">‖</span><span class="vs">لِلْواحِدِ الفَرْدِ، اطْمَأَنَّ المَوْزونْ</span></div><div class="trans">No equal, no rival; every horizon ends at the One, the Single — and all that is weighed grows still.</div></div>
+  <div class="line"><div class="n">17</div><div class="ar"><span class="vs">مِنْ واحِدٍ لا يُحْتَذى نَظْمٌ لَهو</span><span class="vsep">‖</span><span class="vs">فَالفَرْدُ لا يُحْكى، حِماهُ المَضْنونْ</span></div><div class="trans">From One comes an ordering none can trace: the Single is not to be mimicked, and His sanctuary is the jealously guarded treasure.</div></div>
+  <div class="line"><div class="n">18</div><div class="ar"><span class="vs">وَالعَجْزُ عَنْهُ هوَ الدَّليلُ، فَمِثْلُهو</span><span class="vsep">‖</span><span class="vs">لا يُسْتَطاعُ، وَكَلَّ فيهِ المَحْصونْ</span></div><div class="trans">And the incapacity before it is itself the proof: its like cannot be made — even the full-armored master's blade goes blunt upon it.</div></div>
+  <div class="line"><div class="n">19</div><div class="ar"><span class="vs">ما الصَّرْفُ صَدَّ القائِلينَ، وَإِنَّما</span><span class="vsep">‖</span><span class="vs">عَجْزٌ بِهِمْ، وَالقَوْلُ مِنْهُمْ مَظْنونْ</span></div><div class="trans">No "divine diversion" blocked the claimants; the incapacity lives in them — and their boast of "we could" is mere conjecture.</div></div>
+  <div class="line"><div class="n">20</div><div class="ar"><span class="vs">وَإِذا رَأَيْتَ مِنَ الغُيوبِ عَجائِبًا</span><span class="vsep">‖</span><span class="vs">ضاقَتْ بِها عُقَدُ اللِّسانِ المَسْجونْ</span></div><div class="trans">And when you behold wonders out of the Unseen, the knots of the imprisoned tongue pull tight around them.</div></div>
+  <div class="line"><div class="n">21</div><div class="ar"><span class="vs">عَدُّوا القُشورَ، وَفاتَهُمْ سِرُّ الهُدى</span><span class="vsep">‖</span><span class="vs">فَبَقَوْا عَلى وَهْمِ الحِسابِ المَأْفونْ</span></div><div class="trans">They counted the husks and missed the secret of the Guidance, and stayed marooned on the delusion of the addled arithmetic.</div></div>
+  <div class="line"><div class="n">22</div><div class="ar"><span class="vs">عَدّوا الفَواتِحَ، وَالحُروفَ، فَأَغْفَلوا</span><span class="vsep">‖</span><span class="vs">نَظْمَ الهُدى، ثُمَّ انْزَوى تاجُ النّونْ</span></div><div class="trans">They counted the Openers and the letters, and overlooked the ordering of the Guidance — and the crown of Nūn withdrew into its corner.</div></div>
+  <div class="line"><div class="n">23</div><div class="ar"><span class="vs">لكِنْ هُنا نَظْمُ الكِتابِ مُوَحَّدٌ</span><span class="vsep">‖</span><span class="vs">لَفْظٌ وَمَعْنًى في التِحامٍ مَسْنونْ</span></div><div class="trans">But here — here the Book's ordering is unified: word and meaning in one molded, polished weld.</div></div>
+  <div class="line"><div class="n">24</div><div class="ar"><span class="vs">فَنِيَ البَيانُ، بَيانُ كُلِّ مُفَوَّهٍ</span><span class="vsep">‖</span><span class="vs">صُحُفُ الأُلى قَفْرٌ، وَرَبْعٌ مَسْكونْ</span></div><div class="trans">Eloquence has perished — the eloquence of every gifted tongue; the scrolls of the ancients lie wasteland, and one dwelling alone stays inhabited.</div></div>
+  <div class="line"><div class="n">25</div><div class="ar"><span class="vs">فَخَرَرْتُ، لا عَجْزًا فَقَطْ، بَلْ سَجْدَةً</span><span class="vsep">‖</span><span class="vs">وَالعَجْزُ نُسْكي، وَالجَبينُ المَطْحونْ</span></div><div class="trans">So I fell — not in incapacity only, but in prostration: my incapacity is my rite, and my brow the one ground into the dust.</div></div>
+  <div class="line"><div class="n">26</div><div class="ar"><span class="vs">ما زِنْتُ بِالشِّعْرِ الكِتابَ، وَإِنَّما</span><span class="vsep">‖</span><span class="vs">زانَ القَريضَ، فَراحَ وَهْوَ المَأْذونْ</span></div><div class="trans">I did not adorn the Book with poetry — it adorned the poem, which went out into the world only by its leave.</div></div>
+  <div class="line"><div class="n">27</div><div class="ar"><span class="vs">وَتَلاحَقَتْ سُوَرُ الهُدى، وَكَأَنَّها</span><span class="vsep">‖</span><span class="vs">قَمَرٌ يَؤوبُ إِلى القَديمِ العُرْجونْ</span></div><div class="trans">And the sūras of Guidance follow one upon another like a moon returning, mansion by mansion, to the ancient palm-crescent.</div></div>
+  <div class="line"><div class="n">28</div><div class="ar"><span class="vs">لَكَ، يا إِلهي، الدُّرُّ، أَنْتَ مُثيرُهو</span><span class="vsep">‖</span><span class="vs">مِنْ لُجَّةٍ، وَأَنا الغَريقُ المَحْزونْ</span></div><div class="trans">Yours, my God, is the pearl — You alone raise it from the abyss — and I am the sorrowing drowned.</div></div>
+  <div class="line"><div class="n">29</div><div class="ar"><span class="vs">وَرَجَعْتُ نَحْوَ البَدْءِ بَعْدَ خِتامِهِ</span><span class="vsep">‖</span><span class="vs">فَقَرَأْتُهو، فَالخَتْمُ بَدْءٌ مَكْنونْ</span></div><div class="trans">And I turned back to the beginning after its seal, and read it again — for the seal is a beginning, kept treasured.</div></div>
+</div>
+</section>
+
+<!-- ===================== MAKNUN ANSWER ===================== -->
+<section id="maknun">
+<div class="qabox">
+<h3>۩ A reader asked: in line 1, do the last two words — ظَلَّ المَكْنونْ — even fit together?</h3>
+<p><strong>Yes — the construction is classical, and the friction the ear feels is the engineered point of the verse.</strong> Three answers:</p>
+<p><span class="gold">1. Grammar:</span> ظَلَّ ("remained") is a sister of كانَ: its subject is an implied pronoun referring back to <em>rasm al-waḥy</em> ("the trace of Revelation"), and المَكْنون ("the treasured one") is its predicate. A definite predicate after these verbs is textbook Arabic — like saying <em>kāna Zaydun al-amīra</em>, "Zayd was <em>the</em> prince." The definite article adds exclusivity: it remained the treasured one — as if nothing else were. (The final nūn is silenced because the rhyme is <em>muqayyad</em>.)</p>
+<p><span class="gold">2. Meaning — where the objection turns into the beauty:</span> a <em>rasm</em> is a visible, exposed trace; <em>maknūn</em> means hidden away, sheltered. How can the exposed thing be the sheltered thing? That tension is deliberate, and the first half of the line resolves it: every campsite's landmarks were effaced <strong>because they lay exposed</strong> to wind and time; the trace of Revelation alone stayed fresh <strong>because it is kept-treasured</strong>. The two words are not enemies — one is the <em>reason</em> for the other. Only what is treasured survives. And the word is the Qur'an's own self-description: <span class="quran">﴿إِنَّهُ لَقُرْآنٌ كَريمٌ في كِتابٍ مَكْنونٍ﴾</span> "a noble Qur'an, in a treasured Book" (56:77–78), and <span class="quran">﴿كَأَمْثالِ اللُّؤْلُؤِ المَكْنونِ﴾</span> "like treasured pearls" (56:23) — both Book and pearl, the poem's two master images.</p>
+<p><span class="gold">3. The double meaning:</span> <em>rasm</em> carries two senses at once — the <em>trace of a campsite</em> in the ruins-convention of pre-Islamic poetry, and <em>rasm al-muṣḥaf</em>: the Uthmanic orthography, the written skeleton of the Qur'anic text itself. In its second register the line says: the very script of Revelation has remained preserved as it was set down. The opening is thus a <strong>complete inversion of the classical ruins-opening</strong>: the old poet stands weeping over a trace the desert is erasing; this poem opens with the one trace that does not erode — it begins where all previous poetry ended.</p>
+<p class="dim" style="margin-bottom:0">And the poem closes on the same word: «فَالخَتْمُ بَدْءٌ مَكْنونْ» (line 29) — the word in question is the arc of the whole poem: it opens with it and is sealed by it.</p>
+</div>
+</section>
+
+<!-- ===================== SHARH ===================== -->
+<section id="sharh">
+<h2>Line-by-Line Commentary</h2>
+<div class="h2sub">Vocabulary — meaning — craft &amp; structure — and the verified measurement where one underlies the image</div>
+
+<!-- BAYT 1 -->
+<div class="bayt" id="b1">
+<div class="num">Line 1 — The opening: the ruins-motif overturned</div>
+<div class="verse"><span class="vs">عَفَّتْ مَعالِمُ كُلِّ دارٍ، وَالهُدى</span><span class="vsep">‖</span><span class="vs">غَضٌّ، وَرَسْمُ الوَحْيِ ظَلَّ المَكْنونْ</span></div>
+<div class="trans">The landmarks of every dwelling are effaced — yet the Guidance is fresh, and the trace of Revelation has remained the treasured one.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">عَفَّتْ</span><span class="g"><i>ʿaffat</i> — "were effaced, worn away": the inherited verb of the ruins-opening; Labīd's Muʿallaqa begins with this very word (عَفَتِ الدِّيارُ)</span>
+<span class="w">مَعالِم</span><span class="g"><i>maʿālim</i> — landmarks; the signs by which an abandoned camp is recognized</span>
+<span class="w">غَضّ</span><span class="g"><i>ghaḍḍ</i> — fresh, dewy, unwilted — said of a plant just emerged</span>
+<span class="w">رَسْم</span><span class="g"><i>rasm</i> — the ground-trace of a dwelling; simultaneously, the orthography of the muṣḥaf (a deliberate double meaning)</span>
+<span class="w">المَكْنون</span><span class="g"><i>al-maknūn</i> — the treasured, kept-hidden, sheltered; the Qur'an's own epithet for itself and for pearls</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">The traces of every dwelling on earth have been wiped away — that is time's law. Except one trace: the Guidance is as fresh as the day it descended, and the trace of Revelation endures precisely because it is treasured.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The opening revives the most sacred convention of the Arabic qaṣīda — standing over the ruins — in order to overturn it from inside: the pre-Islamic poet weeps for a trace that is vanishing; this poet witnesses a trace that cannot vanish. The antithesis of <em>ʿaffat</em> ("effaced") and <em>ghaḍḍ</em> ("fresh") folds thirteen centuries into a single half-line. (See the boxed answer above on the grammar, the paradox, and the double meaning.)</p>
+</div>
+
+<!-- BAYT 2 -->
+<div class="bayt" id="b2">
+<div class="num">Line 2 — The history of the imitation attempts</div>
+<div class="verse"><span class="vs">كَمْ حاوَلَ الشُّعَراءُ نَظْمًا مِثْلَهو</span><span class="vsep">‖</span><span class="vs">فَنَبَتْ قَوافيهِمْ، وَخابَ المَغْبونْ</span></div>
+<div class="trans">How often the poets attempted an ordering like it — their rhymes glanced off like blunted swords, and the out-bargained went home cheated.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">كَمْ</span><span class="g"><i>kam</i> — exclamatory "how many!": multiplying the attempts</span>
+<span class="w">نَظْم</span><span class="g"><i>naẓm</i> — "ordering, composition": al-Jurjānī's central technical term for what makes the Qur'an inimitable</span>
+<span class="w">نَبَتْ</span><span class="g"><i>nabat</i> — from <i>nabā al-sayf</i>: a sword glancing off without cutting — their rhymes are swords that bounced off the Book</span>
+<span class="w">المَغْبون</span><span class="g"><i>al-maghbūn</i> — the one cheated in a bargain: paid everything, took nothing</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">Century after century they tried to rival it; their rhymes recoiled like blunt blades, and every gambler at this table left fleeced.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The metaphor of <em>nabat</em> turns imitation into a duel where the weapon betrays its bearer. The line compresses a whole chapter of criticism — the muʿāraḍa challenge documented by al-Bāqillānī in <em>Iʿjāz al-Qurʾān</em>: attempts were recorded; what survives of them is the report of their failure.</p>
+</div>
+
+<!-- BAYT 3 -->
+<div class="bayt" id="b3">
+<div class="num">Line 3 — The sea and the diver</div>
+<div class="verse"><span class="vs">بَحْرٌ تَغوصُ وَلا تَنالُ قَرارَهو</span><span class="vsep">‖</span><span class="vs">وَالدُّرُّ في الأَعْماقِ باتَ المَدْفونْ</span></div>
+<div class="trans">A sea: you dive and never reach its floor, and the pearl in the deeps passes the night buried.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">تَغوص</span><span class="g"><i>taghūṣ</i> — "you dive": the address turns to the reader — you are the diver</span>
+<span class="w">قَرارَهو</span><span class="g"><i>qarārahu</i> — its resting-floor, its utmost depth</span>
+<span class="w">باتَ المَدْفون</span><span class="g"><i>bāta l-madfūn</i> — "passes the night buried": the pearl sleeps in the deep, as old as the sea</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">It is a sea: dive as you will, you never touch bottom. Every descent brings up pearls — and the floor remains farther down.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The shift to second person ("you dive") pulls the reader into the experience. <em>Bāta</em> lights a night inside the water — and quietly prepares the caravan's night in line 6.</p>
+<div class="math"><span class="seal">✓ verified</span> Even the modern instruments never reached the floor: the structural laws cited below describe the <em>surface</em> of the Book's order with high precision — and each extracted law exposes a deeper stratum still unexplained.</div>
+</div>
+
+<!-- BAYT 4 -->
+<div class="bayt" id="b4">
+<div class="num">Line 4 — The heir's hubris</div>
+<div class="verse"><span class="vs">وَوَرِثْتُ سِرَّ القَوْلِ فَاسْتَنْزَلْتُهو</span><span class="vsep">‖</span><span class="vs">أَحْكيهِ حَتّى العَقْلُ مِنّي المَفْتونْ</span></div>
+<div class="trans">And I — heir to the secret of speech — presumed to summon it down and mimic it, till my own mind was the one beguiled.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">وَرِثْتُ سِرَّ القَوْل</span><span class="g"><i>warithtu sirra l-qawl</i> — "I inherited the secret of speech": the poet claims the whole legacy of Arabic, Imruʾ al-Qays onward</span>
+<span class="w">فَاسْتَنْزَلْتُهو</span><span class="g"><i>fa-stanzaltuhu</i> — "so I summoned it down": a verb of presumption, echoing the boast ﴾"had we wished, we could have said the like of this"﴿ (8:31)</span>
+<span class="w">أَحْكيهِ</span><span class="g"><i>aḥkīh</i> — "I mimic it, match it"</span>
+<span class="w">المَفْتون</span><span class="g"><i>al-maftūn</i> — the beguiled, the spell-struck: the first casualty of the boast is the boaster's own mind</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">And in my arrogance I said: I am the heir of the secrets of speech — I shall summon down its like and match it — until my very reason was bewitched by its own claim.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">Here opens <strong>the arc of hubris</strong> that will not close until the prostration of line 25. The poet deliberately borrows the tongue of the Meccan challengers — in order to bring it down. The rhyme-word is diagnostic: the claim's first victim is the claimant.</p>
+</div>
+
+<!-- BAYT 5 -->
+<div class="bayt" id="b5">
+<div class="num">Line 5 — The full muster</div>
+<div class="verse"><span class="vs">جَمَّعْتُ أَقْلامي وَجَرَّدْتُ القُوى</span><span class="vsep">‖</span><span class="vs">وَنَفَضْتُ أَوْزانًا، وَهِجْتُ المَخْزونْ</span></div>
+<div class="trans">I mustered all my pens, unsheathed my powers, shook out the meters to the last grain, and roused the hoarded store.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">جَمَّعْتُ</span><span class="g"><i>jammaʿtu</i> — intensive form: gathered them all, to the last pen</span>
+<span class="w">جَرَّدْتُ القُوى</span><span class="g"><i>jarradtu l-quwā</i> — unsheathed my powers like swords drawn from scabbards</span>
+<span class="w">نَفَضْتُ أَوْزانًا</span><span class="g"><i>nafaḍtu awzānan</i> — shook out the poetic meters as one shakes a provision-bag empty</span>
+<span class="w">هِجْتُ المَخْزون</span><span class="g"><i>hijtu l-makhzūn</i> — roused the buried hoard of language and memory</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">I mobilized everything a poet can own: every pen, powers drawn naked, all sixteen meters shaken out to the last grain, every sleeping reserve startled awake.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">Four verbs in succession, each at maximum effort — a full army mobilized for a losing battle. And this is the coming proof's precondition: for incapacity to be evidence, the muster must be total. No one may say: he failed because he came under-armed.</p>
+</div>
+
+<!-- BAYT 6 -->
+<div class="bayt" id="b6">
+<div class="num">Line 6 — The caravan and the Guide</div>
+<div class="verse"><span class="vs">حَنَّتْ لَهُ الأَجْيالُ تَحْدو عيسَها</span><span class="vsep">‖</span><span class="vs">واللَّيْلُ داجٍ، والدَّليلُ المَأْمونْ</span></div>
+<div class="trans">Generations yearned for it, driving their white camels with its chant — the night pitch-dark, and it the Guide that never betrays.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">حَنَّتْ لَهُ</span><span class="g"><i>ḥannat lahu</i> — yearned for it as a she-camel moans for her calf — generation after generation</span>
+<span class="w">تَحْدو عيسَها</span><span class="g"><i>taḥdū ʿīsahā</i> — driving their white camels with the <i>ḥudāʾ</i>, the camel-driver's chant: its recitation is the caravan-song of the centuries</span>
+<span class="w">داجٍ</span><span class="g"><i>dājin</i> — pitch-dark, enveloping</span>
+<span class="w">الدَّليل المَأْمون</span><span class="g"><i>al-dalīl al-maʾmūn</i> — the trusted guide, with whom losing the way is unthinkable</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">History itself moves as one night-caravan: the generations drive their mounts to its chant, blackness on every side, and it alone is the Guide who never betrays.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">Here opens <strong>the caravan tableau</strong> (6–8), the most sensory passage of the poem: all of history as a single night-journey. The two nominal clauses of the second half ("the night — pitch-dark; the Guide — trusted") freeze the scene like a held breath.</p>
+<div class="math"><span class="seal">✓ verified</span> This line is the poetic rendering of a measured discovery: the muṣḥaf's sūra ordering lies on a <strong>statistically shortest path</strong> through meaning-space (Fisher–Rao geodesic over the 114 sūras: z = −11.46 against random orderings — the arrangement is a "deliberate road," not chance). The caravan travels the straightest of paths: <span class="quran">﴿إِنَّ هٰذا القُرْآنَ يَهْدي لِلَّتي هِيَ أَقْوَمُ﴾</span> "this Qur'an guides to that which is most upright" (17:9).</div>
+</div>
+
+<!-- BAYT 7 -->
+<div class="bayt" id="b7">
+<div class="num">Line 7 — The marshalled stars</div>
+<div class="verse"><span class="vs">وَتَنَظَّمَتْ صَفًّا كَمِثْلِ فَراقِدٍ</span><span class="vsep">‖</span><span class="vs">سَرْدًا، عَلى قَصْدِ السَّبيلِ المَقْرونْ</span></div>
+<div class="trans">And its sūras arrayed themselves in a row like guide-stars: chain-linked mail, upon the straight path, ring joined to ring.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">فَراقِد</span><span class="g"><i>farāqid</i> — plural of <i>farqad</i>: the fixed guide-stars near the celestial pole (the two Calves of Ursa Minor)</span>
+<span class="w">سَرْدًا</span><span class="g"><i>sardan</i> — chain-work, as in mail-armor: <span class="quran">﴿وَقَدِّرْ في السَّرْدِ﴾</span> "and measure the links" (34:11)</span>
+<span class="w">قَصْد السَّبيل</span><span class="g"><i>qaṣd al-sabīl</i> — the straightness of the way: <span class="quran">﴿وَعَلى اللهِ قَصْدُ السَّبيلِ﴾</span> (16:9)</span>
+<span class="w">المَقْرون</span><span class="g"><i>al-maqrūn</i> — conjoined, link locked to link</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">And its sūras stand arrayed above the caravan like the fixed stars of navigation: measured chain-mail, ring in ring, set along the very line of the straightest path — no gap, no swerve.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The line's two key terms are Qur'anic verbatim (<em>al-sard</em>, <em>qaṣd al-sabīl</em>): the description of the Book's order is drawn from the Book's own lexicon. And the <em>farāqid</em> are <em>fixed</em> stars near the pole — its sūras are not passing meteors but pole-stars that do not set.</p>
+<div class="math"><span class="seal">✓ verified</span> "In a row… chain-linked… conjoined" is the literal description of a geodesic: points arrayed along the shortest connecting line. The same computation shows that <strong>any shuffling of the sūra order moves it away from this optimality</strong> — the row really is locked.</div>
+</div>
+
+<!-- BAYT 8 -->
+<div class="bayt" id="b8">
+<div class="num">Line 8 — If one star swerved</div>
+<div class="verse"><span class="vs">لَوْ زاغَ جَدْيٌ أَوْ تَنَكَّرَ مَنْزِلٌ</span><span class="vsep">‖</span><span class="vs">بِهِ تاهَ خِرّيتٌ، وَضَلَّ المَشْحونْ</span></div>
+<div class="trans">Had the Pole-star swerved, or one lunar mansion gone strange, the master pathfinder would wander, and the laden ship be lost.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">زاغَ</span><span class="g"><i>zāgha</i> — swerved, deviated from its place</span>
+<span class="w">جَدْي</span><span class="g"><i>jady</i> — the Pole-star, by which qibla and route are found: steadiest of all stars</span>
+<span class="w">مَنْزِل</span><span class="g"><i>manzil</i> — one of the 28 lunar mansions of Arab astronomy</span>
+<span class="w">خِرّيت</span><span class="g"><i>khirrīt</i> — the master pathfinder who reads the faintest signs</span>
+<span class="w">المَشْحون</span><span class="g"><i>al-mashḥūn</i> — the laden ship: <span class="quran">﴿في الفُلْكِ المَشْحونِ﴾</span> (26:119; 36:41)</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">The system is so exact that if the Pole-star tilted a hair's breadth, or a single mansion went unrecognized, the finest guide on land would wander and the freighted ship at sea would founder.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The proof-by-sensitivity: a system's grandeur is measured by the cost of its smallest hypothetical disturbance. The line spans land and sea (the pathfinder / the laden ship), closing every road of the earth — and the rhyme-word is Qur'anic to the letter.</p>
+<div class="math"><span class="seal">✓ verified</span> This is literally what the permutation test states: z = −11.46 means thousands of random re-orderings are <em>all</em> worse than the received order — any "swerving star" corrupts the road.</div>
+</div>
+
+<!-- BAYT 9 -->
+<div class="bayt" id="b9">
+<div class="num">Line 9 — At the threshold</div>
+<div class="verse"><span class="vs">حَتّى وَقَفْتُ بِبابِهِ مُتَهَيِّبًا</span><span class="vsep">‖</span><span class="vs">خارَتْ قُوًى دونِي، وَعَزَّ المَرْهونْ</span></div>
+<div class="trans">Until I stood at its gate in awe: powers had collapsed at the threshold before me, and the pledged prize hung beyond all reach.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">مُتَهَيِّبًا</span><span class="g"><i>mutahayyiban</i> — awe-struck: fear born of majesty, not cowardice</span>
+<span class="w">خارَتْ</span><span class="g"><i>khārat</i> — gave way, collapsed (as a structure fails)</span>
+<span class="w">قُوًى دونِي</span><span class="g"><i>quwan dūnī</i> — "powers before me": the strength of those who reached the gate ahead of me, fallen short of it</span>
+<span class="w">عَزَّ المَرْهون</span><span class="g"><i>ʿazza l-marhūn</i> — the staked prize proved unattainable: the wager of imitation, never once won</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">So I came — fully armed — and stood at its gate trembling with awe: I saw the powers of my predecessors lying broken below the threshold, and the prize still hanging there, unclaimed by anyone, ever.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The threshold-line: the hubris scene ends and the trial begins. He mustered in line 5 and stands silent here — between those two verbs the boast of "I summoned it down" has already died: whoever stands at the gate in awe is no longer a claimant.</p>
+</div>
+
+<!-- BAYT 10 -->
+<div class="bayt" id="b10">
+<div class="num">Line 10 — Warp and weft</div>
+<div class="verse"><span class="vs">السَّدْيُ وَاللُّحْمُ اسْتَوى في نَسْجِهِ</span><span class="vsep">‖</span><span class="vs">لَحْنٌ وَمَعْنًى، ثُمَّ نَظْمٌ مَوْضونْ</span></div>
+<div class="trans">Warp and weft come even in its weaving — melody and meaning — and then: an ordering close-woven, double-linked.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">السَّدْي واللُّحْم</span><span class="g"><i>al-sady wa-l-luḥm</i> — warp and weft: the lengthwise and crosswise threads; no cloth exists except by their perpendicularity</span>
+<span class="w">اسْتَوى</span><span class="g"><i>istawā</i> — came level, neither thread overpowering the other</span>
+<span class="w">لَحْن</span><span class="g"><i>laḥn</i> — the melody, the music of the words</span>
+<span class="w">مَوْضون</span><span class="g"><i>mawḍūn</i> — close-woven, doubled, interlocked: <span class="quran">﴿عَلى سُرُرٍ مَوْضونَةٍ﴾</span> (56:15)</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">In its weave, the two threads that war in all other speech come even: the music is its warp, the meaning its weft — and the cloth comes off the loom double-woven, interlocked.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">This is <strong>the thesis-line</strong>. Warp and weft do not "compromise" in a textile — they run perpendicular, and from that perpendicularity the cloth exists at all. It is the most exact metaphor available for the measured discovery below:</p>
+<div class="math"><span class="seal">✓ verified</span> <strong>The anti-twin law:</strong> across all 114 sūras, semantic cohesion and end-rhyme music are <em>near-orthogonal</em> (correlation r = −0.86): each sūra maximizes the one its station requires, and neither devours the other. Control corpora — pre-Islamic odes, ḥadīth prose — show the competing pattern instead (difference significant at p &lt; 10⁻¹⁰). Warp and weft — in numbers.</div>
+</div>
+
+<!-- BAYT 11 -->
+<div class="bayt" id="b11">
+<div class="num">Line 11 — al-Jāḥiẓ's maxim</div>
+<div class="verse"><span class="vs">قالوا: المَعاني في الطَّريقِ طَريحَةٌ</span><span class="vsep">‖</span><span class="vs">وَالفَضْلُ في حُسْنِ البَيانِ المَضْمونْ</span></div>
+<div class="trans">They said: meanings lie strewn in the road for any passer-by; excellence is in the craft of expression that delivers.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">قالوا</span><span class="g"><i>qālū</i> — "they said": al-Jāḥiẓ and his school; his famous dictum runs "meanings lie strewn in the road… the art is all in the casting"</span>
+<span class="w">طَريحَة</span><span class="g"><i>ṭarīḥa</i> — flung down, free for the taking</span>
+<span class="w">المَضْمون</span><span class="g"><i>al-maḍmūn</i> — guaranteed: expression that warrants the meaning's delivery</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">The first critics said: meanings are public property scattered in the street, known to Arab and foreigner alike; the merit lies only in the casting — in expression fine enough to deliver them.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">A declared critical citation: the poem summons the most famous maxim in Arabic criticism in order to build its objection on it in the next two lines — if the craft of casting is everything, why does the casting fail exactly when it succeeds?</p>
+</div>
+
+<!-- BAYT 12 -->
+<div class="bayt" id="b12">
+<div class="num">Line 12 — The tradeoff, first blade</div>
+<div class="verse"><span class="vs">فَإِذا صَقَلْتُ اللَّفْظَ رَقَّ مَعينُهو</span><span class="vsep">‖</span><span class="vs">وَنَأَتْ مَعانٍ، وَالبَيانُ المَطْعونْ</span></div>
+<div class="trans">Yet when I burnished the word, its spring ran thin — meanings receded, and the eloquence shone with a stab-wound in it.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">صَقَلْتُ</span><span class="g"><i>ṣaqaltu</i> — burnished, polished to a mirror-shine (as sword or glass)</span>
+<span class="w">رَقَّ مَعينُهو</span><span class="g"><i>raqqa maʿīnuh</i> — its running spring thinned: <i>maʿīn</i> is visible flowing water; the polishing reduces the river to a film</span>
+<span class="w">نَأَتْ</span><span class="g"><i>naʾat</i> — drew far away</span>
+<span class="w">المَطْعون</span><span class="g"><i>al-maṭʿūn</i> — the stabbed one: bright of face, pierced in the gut</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">I tested it myself: the more I polished the wording, the thinner ran the water of meaning; the deep senses withdrew — and the style came out gleaming, with a wound in it.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">First half of <strong>the human tradeoff law</strong>: in mortal craft the two beauties compete — whoever pays the music takes from the meaning. The poet testifies from inside the workshop; this is a maker's evidence, not a spectator's.</p>
+</div>
+
+<!-- BAYT 13 -->
+<div class="bayt" id="b13">
+<div class="num">Line 13 — The tradeoff, reversed</div>
+<div class="verse"><span class="vs">وَإِذا غَمَسْتُ القَوْلَ في أَعْماقِهِ</span><span class="vsep">‖</span><span class="vs">ذَبُلَ الرَّنينُ، وَخارَ لَحْنٌ مَوْهونْ</span></div>
+<div class="trans">And when I plunged speech into the depths of meaning, the ringing withered, and a weakened music buckled.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">غَمَسْتُ</span><span class="g"><i>ghamastu</i> — plunged, immersed (as cloth into dye)</span>
+<span class="w">ذَبُلَ الرَّنين</span><span class="g"><i>dhabula l-ranīn</i> — the ringing wilted: a plant-metaphor applied to sound</span>
+<span class="w">خارَ</span><span class="g"><i>khāra</i> — buckled, gave way</span>
+<span class="w">مَوْهون</span><span class="g"><i>mawhūn</i> — enfeebled — the root of ﴾"my bones have grown frail (wahana)"﴿ (19:4)</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">And when I reversed course and drove the words deep into meaning, the ring of the language wilted and the melody buckled, enfeebled: I win the thought and lose the music.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">Lines 12–13 form an exact counterpoise: polish/plunge, word/speech, the spring thins / the ringing wilts — a mirrored construction embodying the scale that never balances: one pan rises and one falls, forever. For humans.</p>
+<div class="math"><span class="seal">✓ verified</span> These two lines describe what was actually found in every <em>human</em> corpus measured: in the control texts (pre-Islamic poetry, religious prose) the two dimensions compete and consume each other. <strong>The single measured exception is the text of the Book</strong>: orthogonality (r = −0.86) instead of predation — exactly what lines 10 and 23 claim.</div>
+</div>
+
+<!-- BAYT 14 -->
+<div class="bayt" id="b14">
+<div class="num">Line 14 — Fire and rain</div>
+<div class="verse"><span class="vs">نارٌ وَغَيْثٌ ما قَدَرْتُ عَلَيْهِما</span><span class="vsep">‖</span><span class="vs">في بُرْدَةٍ، وَالوَصْلُ غَيْرُ المَرْصونْ</span></div>
+<div class="trans">Fire and rain — I had no power to hold the two in a single mantle; the weld would never rivet.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">نار</span><span class="g"><i>nār</i> — fire: the burning word — heat, light, music</span>
+<span class="w">غَيْث</span><span class="g"><i>ghayth</i> — life-giving rain: the meaning that makes things grow (the Arabs praised a man as "fire of hospitality and rain of bounty")</span>
+<span class="w">ما قَدَرْتُ عَلَيْهِما</span><span class="g"><i>mā qadartu ʿalayhimā</i> — "I had no power over the two of them": the verb of mastery, with the correct dual pronoun</span>
+<span class="w">بُرْدَة</span><span class="g"><i>burda</i> — the single mantle a man wraps around himself: emblem of union in one body</span>
+<span class="w">المَرْصون</span><span class="g"><i>al-marṣūn</i> — riveted firm, made fast</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">Word is fire and meaning is rain — and can fire and rain be wrapped in one mantle? I tried, and had no power over them: every weld I made between them came loose at the first strain.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The tradeoff tableau peaks: two elements that annul each other by nature (water quenches fire) forced into the smallest possible space — one cloak. And the first person ("I had no power") keeps the poem's engine — the poet's own failure — alive in the image: not an abstract impossibility; <em>my</em> defeat. Then the next line hangs the answer on the One who created fire and rain together.</p>
+</div>
+
+<!-- BAYT 15 -->
+<div class="bayt" id="b15">
+<div class="num">Line 15 — The heart: tawḥīd ۞</div>
+<div class="verse"><span class="vs">هُوَ أَوَّلٌ هُوَ آخِرٌ هُوَ واحِدٌ</span><span class="vsep">‖</span><span class="vs">صَمَدٌ، إِلَيْهِ يَفيءُ رَكْبٌ مَيْمونْ</span></div>
+<div class="trans">He is First, He is Last, He is One — the Eternal Refuge; to Him the blessed caravan comes home to rest.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">أَوَّلٌ… آخِرٌ</span><span class="g"><i>awwal… ākhir</i> — <span class="quran">﴿هُوَ الأَوَّلُ وَالآخِرُ﴾</span> "He is the First and the Last" (57:3)</span>
+<span class="w">واحِدٌ صَمَدٌ</span><span class="g"><i>wāḥid ṣamad</i> — from Sūrat al-Ikhlāṣ: the One indivisible; the Ṣamad to whom all needs turn while He needs none</span>
+<span class="w">يَفيءُ إِلَيْهِ</span><span class="g"><i>yafīʾu ilayh</i> — "comes home to rest in Him": the verb of return-to-shelter — <span class="quran">﴿حَتّى تَفيءَ إِلى أَمْرِ اللهِ﴾</span> (49:9)</span>
+<span class="w">رَكْبٌ مَيْمون</span><span class="g"><i>rakb maymūn</i> — a blessed caravan: the very caravan of line 6, reaching its resting-place</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">He is the First and the Last and the One, the Eternal Refuge — and to Him alone every blessed caravan comes home: the train that crossed the whole night finds its halting-ground at His door.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha"><strong>The exact heart of the poem</strong>: line 15 of 29 — fourteen before, fourteen after. The triple <em>huwa</em> ("He… He… He…") is the cadence of pure dhikr, and the front hemistich runs on three fully live feet — the fastest pulse in the poem, beating at its tawḥīd center. Here the caravan-arc closes: it yearned in line 6, journeyed under the stars in 7–8, and here it reaches its pole and kneels — the geometric center is the resting-place.</p>
+<div class="math"><span class="seal">✓ verified</span> The placement mirrors a measurement: <strong>Sūrat al-Ikhlāṣ is the geometric center-of-mass of the muṣḥaf</strong> — rank 1 of 114 by closeness to the statistical centroid of the whole text. The Book's measured heart is pure tawḥīd — so the poem's heart was set the same way, at the exact arithmetic center (14+1+14).</div>
+</div>
+
+<!-- BAYT 16 -->
+<div class="bayt" id="b16">
+<div class="num">Line 16 — No equal, no rival</div>
+<div class="verse"><span class="vs">لا كُفْءَ، لا نِدَّ، انْتَهى كُلُّ المَدى</span><span class="vsep">‖</span><span class="vs">لِلْواحِدِ الفَرْدِ، اطْمَأَنَّ المَوْزونْ</span></div>
+<div class="trans">No equal, no rival; every horizon ends at the One, the Single — and all that is weighed grows still.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">كُفْء</span><span class="g"><i>kufʾ</i> — equal, match: <span class="quran">﴿وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴾</span> (112:4)</span>
+<span class="w">نِدّ</span><span class="g"><i>nidd</i> — rival, contending peer: <span class="quran">﴿فَلا تَجْعَلوا لِلهِ أَنْدادًا﴾</span> (2:22)</span>
+<span class="w">اطْمَأَنَّ المَوْزون</span><span class="g"><i>iṭmaʾanna l-mawzūn</i> — "everything weighed grew still": the scale settles only when it returns to its true weight</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">No equal to Him and no rival; every horizon — of language, thought, existence — terminates in Him alone. And at the One, the Single, everything that has weight finds rest: the scales settle, the two pans go quiet.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">Two absolute negations (the lā of generic denial — Arabic's strongest "no") followed by one total affirmation. "All that is weighed grows still" picks up the unbalanced scale of lines 12–13: the pan that never settles for humans settles here.</p>
+</div>
+
+<!-- BAYT 17 -->
+<div class="bayt" id="b17">
+<div class="num">Line 17 — The logic of inimitability</div>
+<div class="verse"><span class="vs">مِنْ واحِدٍ لا يُحْتَذى نَظْمٌ لَهو</span><span class="vsep">‖</span><span class="vs">فَالفَرْدُ لا يُحْكى، حِماهُ المَضْنونْ</span></div>
+<div class="trans">From One comes an ordering none can trace: the Single is not to be mimicked, and His sanctuary is the jealously guarded treasure.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">لا يُحْتَذى</span><span class="g"><i>lā yuḥtadhā</i> — cannot be patterned after, as a sandal is cut on a sandal's template</span>
+<span class="w">لا يُحْكى</span><span class="g"><i>lā yuḥkā</i> — cannot be imitated or matched</span>
+<span class="w">حِماهُ</span><span class="g"><i>ḥimāh</i> — His protected precinct</span>
+<span class="w">المَضْنون</span><span class="g"><i>al-maḍnūn</i> — that which is too precious to be given out — echoing al-Ghazālī's famous title <i>al-Maḍnūn bihi ʿalā ghayri ahlih</i></span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">An ordering that proceeds from the One cannot be traced from a template: the Single is not copied, and His speech — like Him — is single; His precinct is a treasure withheld from every reaching hand.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The poem's <strong>logical syllogism</strong>: the attribute follows the essence — He who is One without rival speaks a speech one-without-rival. This is the heart of the naẓm school: inimitability is an intrinsic property of the text that testifies to its source.</p>
+</div>
+
+<!-- BAYT 18 -->
+<div class="bayt" id="b18">
+<div class="num">Line 18 — Incapacity is the proof</div>
+<div class="verse"><span class="vs">وَالعَجْزُ عَنْهُ هوَ الدَّليلُ، فَمِثْلُهو</span><span class="vsep">‖</span><span class="vs">لا يُسْتَطاعُ، وَكَلَّ فيهِ المَحْصونْ</span></div>
+<div class="trans">And the incapacity before it is itself the proof: its like cannot be made — even the full-armored master's blade goes blunt upon it.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">العَجْزُ عَنْهُ هوَ الدَّليل</span><span class="g"><i>al-ʿajzu ʿanhu huwa l-dalīl</i> — the eloquent masters' own failure is the evidence; inimitability needs no outside witness</span>
+<span class="w">كَلَّ فيهِ</span><span class="g"><i>kalla fīh</i> — "went blunt upon it": said of a sword whose edge dies — the blade of eloquence dulls in the attempt</span>
+<span class="w">المَحْصون</span><span class="g"><i>al-maḥṣūn</i> — the fortified one: the master armored in every weapon of eloquence</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">And the failure of all who tried is itself the demonstration: its like simply cannot be done — even the man fortified in the full armory of eloquence finds his edge dead on its surface.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">This is <strong>the title-line</strong>: "my incapacity is its inimitability," stated as doctrine. The elegant reversal: defeat converted into testimony — the claim's adversaries are its witnesses. And <em>kalla</em> completes the sword-arc opened in line 2: there their rhymes <em>glanced off</em>; here the blade itself <em>goes blunt</em> — from deflection to a dead edge.</p>
+</div>
+
+<!-- BAYT 19 -->
+<div class="bayt" id="b19">
+<div class="num">Line 19 — The ṣarfa doctrine refused</div>
+<div class="verse"><span class="vs">ما الصَّرْفُ صَدَّ القائِلينَ، وَإِنَّما</span><span class="vsep">‖</span><span class="vs">عَجْزٌ بِهِمْ، وَالقَوْلُ مِنْهُمْ مَظْنونْ</span></div>
+<div class="trans">No "divine diversion" blocked the claimants; the incapacity lives in them — and their boast of "we could" is mere conjecture.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">الصَّرْف</span><span class="g"><i>al-ṣarf</i> — the <i>ṣarfa</i> doctrine (al-Naẓẓām and others): that God forcibly "diverted" the Arabs from imitation, which they could otherwise have achieved</span>
+<span class="w">عَجْزٌ بِهِمْ</span><span class="g"><i>ʿajzun bihim</i> — the incapacity is internal to them, not an external restraint</span>
+<span class="w">مَظْنون</span><span class="g"><i>maẓnūn</i> — conjectured: a claim of ability never once demonstrated</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">It is not as the ṣarfa school claimed — no outside hand held the eloquent back. The incapacity is in their own selves; and the boast "had we wished, we could have" is bare conjecture that history never once redeemed.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The poem enters the old kalām battle and takes a side — with al-Bāqillānī and al-Jurjānī, for intrinsic inimitability: were the barrier an external "diversion," the naẓm would deserve no praise and the evidence-of-failure of the previous line would collapse. A declared critical position carried inside a poetic structure.</p>
+</div>
+
+<!-- BAYT 20 -->
+<div class="bayt" id="b20">
+<div class="num">Line 20 — The knotted tongue: al-Niffarī</div>
+<div class="verse"><span class="vs">وَإِذا رَأَيْتَ مِنَ الغُيوبِ عَجائِبًا</span><span class="vsep">‖</span><span class="vs">ضاقَتْ بِها عُقَدُ اللِّسانِ المَسْجونْ</span></div>
+<div class="trans">And when you behold wonders out of the Unseen, the knots of the imprisoned tongue pull tight around them.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">الغُيوب</span><span class="g"><i>al-ghuyūb</i> — the Unseen realms, what lies past the senses</span>
+<span class="w">عُقَدُ اللِّسان</span><span class="g"><i>ʿuqad al-lisān</i> — the tongue's knots, which bind speech: <span class="quran">﴿وَاحْلُلْ عُقْدَةً مِنْ لِساني﴾</span> "and loosen a knot from my tongue" — Moses' prayer (20:27)</span>
+<span class="w">ضاقَتْ بِها</span><span class="g"><i>ḍāqat bihā</i> — tightened around them: the greater the vision, the tighter the knot</span>
+<span class="w">المَسْجون</span><span class="g"><i>al-masjūn</i> — the imprisoned one: the human tongue, jailed inside its own lexicon</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">And when the Unseen opens its wonders to you and you truly see, your tongue knots up before them — the knots pull tighter the greater the thing beheld. The tongue is a prisoner, and the windows of vision are wider than its cell.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">This is al-Niffarī's maxim — "the wider the vision, the narrower the expression" — given a body: the tongue has knots that tighten before what is seen. The allusion to Moses' prayer makes the most eloquent station in revelation itself the witness: even the one to whom God spoke asked for the knot to be loosed. With this line the witness-roster completes: the poets failed (2), the theologians argued it (19), the mystics confessed it (20).</p>
+</div>
+
+<!-- BAYT 21 -->
+<div class="bayt" id="b21">
+<div class="num">Line 21 — The satire of the counters</div>
+<div class="verse"><span class="vs">عَدُّوا القُشورَ، وَفاتَهُمْ سِرُّ الهُدى</span><span class="vsep">‖</span><span class="vs">فَبَقَوْا عَلى وَهْمِ الحِسابِ المَأْفونْ</span></div>
+<div class="trans">They counted the husks and missed the secret of the Guidance, and stayed marooned on the delusion of the addled arithmetic.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">عَدُّوا القُشور</span><span class="g"><i>ʿaddū l-qushūr</i> — "they counted the husks": letter-values, alleged numerical "balances," the surface arithmetic</span>
+<span class="w">وَهْم</span><span class="g"><i>wahm</i> — delusion, an imagined thing with no reality</span>
+<span class="w">المَأْفون</span><span class="g"><i>al-maʾfūn</i> — addle-brained, of failed judgment</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">And a crowd busied itself with the husks: they counted letters and proclaimed numerical secrets, missing the real secret in their hands — and so they remain, prisoners of an addled arithmetic of their own invention.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">A stinging satire hinged on a hidden antithesis: <em>they counted / it escaped them</em> — they tallied everything and missed the only thing. And the sting is earned by <em>measurement</em>, not by partisan scorn:</p>
+<div class="math"><span class="seal">✓ verified</span> The famous numerical-miracle claims were <strong>rigorously refuted by computation in the very project that verified this poem's positives</strong>: "Code-19" fails (its universal divisibility rule is empirically false), the golden-ratio/Fibonacci claims fail (no genuine arithmetic or geometric progressions in sūra totals), and most celebrated "word-count balances" are biased selections that die against honest baselines. <em>A method that proves honest in refutation is the method you can trust in affirmation</em> — that is what licenses this satire.</div>
+</div>
+
+<!-- BAYT 22 -->
+<div class="bayt" id="b22">
+<div class="num">Line 22 — The neglected crown of Nūn</div>
+<div class="verse"><span class="vs">عَدّوا الفَواتِحَ، وَالحُروفَ، فَأَغْفَلوا</span><span class="vsep">‖</span><span class="vs">نَظْمَ الهُدى، ثُمَّ انْزَوى تاجُ النّونْ</span></div>
+<div class="trans">They counted the Openers and the letters, and overlooked the ordering of the Guidance — and the crown of Nūn withdrew into its corner.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">الفَواتِح</span><span class="g"><i>al-fawātiḥ</i> — the "mysterious letters" opening 29 sūras (alif-lām-mīm, ḥā-mīm, nūn…) — the counters' favorite playground</span>
+<span class="w">انْزَوى</span><span class="g"><i>inzawā</i> — withdrew into a corner, shrank away unnoticed</span>
+<span class="w">تاجُ النّون</span><span class="g"><i>tāj al-nūn</i> — the crown of Nūn: the letter's unnoticed sovereignty over the Book's verse-endings</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">They counted the sūra-openers and totted up letters — and ignored the ordering of the Guidance lying open before them. And all the while, the crown of Nūn sat withdrawn in its corner: the greatest letter-phenomenon in the Book, and the letter-counters never looked at it.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">A cutting irony: the hunters of "letter-secrets" missed the letter that seals half the Book. And the poem itself — rhymed on nūn from first line to last — is the restitution of that crown: every line bows to the letter they ignored.</p>
+<div class="math"><span class="seal">✓ verified</span> Nūn is the 3rd most frequent letter of the Book (8.25% — above mīm, contrary to popular belief), closes 50.1% of its verses (3,124 of 6,236), and five letters close 90% of all endings while lām — 2nd most common overall — is ~11× under-represented there: a strict phonetic selection at verse-end, described by al-Zarkashī's chapter on the fawāṣil and measured now to be sharper than he knew.</div>
+</div>
+
+<!-- BAYT 23 -->
+<div class="bayt" id="b23">
+<div class="num">Line 23 — The answer: naẓm, not numbers</div>
+<div class="verse"><span class="vs">لكِنْ هُنا نَظْمُ الكِتابِ مُوَحَّدٌ</span><span class="vsep">‖</span><span class="vs">لَفْظٌ وَمَعْنًى في التِحامٍ مَسْنونْ</span></div>
+<div class="trans">But here — here the Book's ordering is unified: word and meaning in one molded, polished weld.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">مُوَحَّد</span><span class="g"><i>muwaḥḥad</i> — made one, its facets inseparable — and the word choice is the argument: the One God's naẓm is one</span>
+<span class="w">التِحام</span><span class="g"><i>iltiḥām</i> — the knitting of two fleshes into a single body</span>
+<span class="w">مَسْنون</span><span class="g"><i>masnūn</i> — molded, smoothed, poured: <span class="quran">﴿مِنْ حَمَإٍ مَسْنونٍ﴾</span> "from molded clay" (15:26)</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">But the secret is here — not in the numbers: the Book's ordering is <em>unified</em> — its word and its meaning are one thing, in a weld poured and polished as though it were creation rather than craft.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The poem's positive answer after its two refusals (no ṣarfa, no numerology): it is the naẓm — al-Jurjānī's doctrine, undiluted. <em>Muwaḥḥad</em> ties the case shut with the knot of tawḥīd itself: from the One, a unified ordering (echoing line 17). And <em>masnūn</em> closes on a creation-note: from molded clay man was made; by a molded weld came the speech that unmade man's pretensions.</p>
+<div class="math"><span class="seal">✓ verified</span> "Word and meaning [unified]" — the measured orthogonality again (r = −0.86): two fully independent dimensions, both at maximum — welded without rivalry. The line compresses the law into five words.</div>
+</div>
+
+<!-- BAYT 24 -->
+<div class="bayt" id="b24">
+<div class="num">Line 24 — The one inhabited dwelling</div>
+<div class="verse"><span class="vs">فَنِيَ البَيانُ، بَيانُ كُلِّ مُفَوَّهٍ</span><span class="vsep">‖</span><span class="vs">صُحُفُ الأُلى قَفْرٌ، وَرَبْعٌ مَسْكونْ</span></div>
+<div class="trans">Eloquence has perished — the eloquence of every gifted tongue; the scrolls of the ancients lie wasteland, and one dwelling alone stays inhabited.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">فَنِيَ</span><span class="g"><i>faniya</i> — perished, went extinct</span>
+<span class="w">مُفَوَّه</span><span class="g"><i>mufawwah</i> — a man of mighty mouth: the supremely eloquent</span>
+<span class="w">قَفْر</span><span class="g"><i>qafr</i> — desolate waste, no living soul in it</span>
+<span class="w">رَبْعٌ مَسْكون</span><span class="g"><i>rabʿ maskūn</i> — one dwelling still inhabited: the abode that never emptied</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">The eloquence of the ancients has died — every silver tongue of them — and their scrolls lie as wastelands no reader walks. In all the earth one dwelling remains inhabited: recited at every hour, on every horizon.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The doubled lament ("eloquence… the eloquence of every gifted tongue") tolls like a bell struck twice — classical epanalepsis. And the line is <strong>the echo of the opening</strong>: there, "the landmarks of every dwelling are effaced"; here, "one dwelling stays inhabited" — the inner ring closes. It is also plain sociological fact: the dīwāns of the masters live in archives; the Book lives in millions of breasts and is chanted every dawn.</p>
+</div>
+
+<!-- BAYT 25 -->
+<div class="bayt" id="b25">
+<div class="num">Line 25 — The prostration: the turn</div>
+<div class="verse"><span class="vs">فَخَرَرْتُ، لا عَجْزًا فَقَطْ، بَلْ سَجْدَةً</span><span class="vsep">‖</span><span class="vs">وَالعَجْزُ نُسْكي، وَالجَبينُ المَطْحونْ</span></div>
+<div class="trans">So I fell — not in incapacity only, but in prostration: my incapacity is my rite, and my brow the one ground into the dust.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">خَرَرْتُ</span><span class="g"><i>kharartu</i> — "I fell": the same verb the Qur'an uses for falling into prostration — <span class="quran">﴿وَخَرَّ راكِعًا وَأَنابَ﴾</span> (38:24)</span>
+<span class="w">لا عَجْزًا فَقَطْ، بَلْ</span><span class="g"><i>lā ʿajzan faqaṭ, bal</i> — "not incapacity only, but…": the double truth — the failure is real and not denied; it is transfigured</span>
+<span class="w">نُسْكي</span><span class="g"><i>nuskī</i> — my rite, my act of worship and offering</span>
+<span class="w">المَطْحون</span><span class="g"><i>al-maṭḥūn</i> — ground like grain: a brow milled into the dust by the length of its prostration</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">So I fell — and the falling was incapacity, I do not deny it; but it was not incapacity only: it was a prostration. My defeat itself became my worship, my offering — and my dust-ground forehead, my insignia.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha"><strong>The summit of the poem and its alchemical turn</strong>: the one verb <em>kharra</em> carries both meanings — collapse and prostration — so the transmutation of defeat into worship happens <em>inside a single word</em>. "Not incapacity only, but" holds both truths: deny the ʿajz and the whole poem lies; stop at it and it is mere defeat — so it is affirmed, and raised. With this the hubris-arc opened at "I summoned it down" (4) closes: he called the speech down, and came down himself — prostrate.</p>
+</div>
+
+<!-- BAYT 26 -->
+<div class="bayt" id="b26">
+<div class="num">Line 26 — Who adorned whom?</div>
+<div class="verse"><span class="vs">ما زِنْتُ بِالشِّعْرِ الكِتابَ، وَإِنَّما</span><span class="vsep">‖</span><span class="vs">زانَ القَريضَ، فَراحَ وَهْوَ المَأْذونْ</span></div>
+<div class="trans">I did not adorn the Book with poetry — it adorned the poem, which went out into the world only by its leave.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">ما زِنْتُ</span><span class="g"><i>mā zintu</i> — "I added no adornment": from <i>zāna</i>, to grace</span>
+<span class="w">القَريض</span><span class="g"><i>al-qarīḍ</i> — poetry; this very poem</span>
+<span class="w">المَأْذون</span><span class="g"><i>al-maʾdhūn</i> — the licensed one: the poem leaves by permission, not by its own power</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">I have not graced the Book with poetry — God forbid the thought; it graced my poem. Whatever beauty this qaṣīda has is borrowed from it, and it walks among people only as one given leave.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The inversion of the entire panegyric tradition: the Arabic poet adorns his patron; this Patron adorns His poet. There is also a quiet confession about the poem itself: its lexicon — <em>maknūn, mawḍūn, masnūn, ʿurjūn, mashḥūn</em> — is borrowed from the Revelation it praises. The poem is ornamented by the very thing it fails to match.</p>
+</div>
+
+<!-- BAYT 27 -->
+<div class="bayt" id="b27">
+<div class="num">Line 27 — The returning moon</div>
+<div class="verse"><span class="vs">وَتَلاحَقَتْ سُوَرُ الهُدى، وَكَأَنَّها</span><span class="vsep">‖</span><span class="vs">قَمَرٌ يَؤوبُ إِلى القَديمِ العُرْجونْ</span></div>
+<div class="trans">And the sūras of Guidance follow one upon another like a moon returning, mansion by mansion, to the ancient palm-crescent.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">تَلاحَقَتْ</span><span class="g"><i>talāḥaqat</i> — follow close upon one another, each at the heels of the last</span>
+<span class="w">يَؤوب</span><span class="g"><i>yaʾūb</i> — returns home (the homing word, <i>awb</i>)</span>
+<span class="w">العُرْجون</span><span class="g"><i>al-ʿurjūn</i> — the dried, curved palm-stalk — the Qur'an's own simile for the waned moon: <span class="quran">﴿حَتّى عادَ كَالعُرْجونِ القَديمِ﴾</span> (36:39)</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">And the sūras of Guidance run on, each at the last one's heels, dwindling and curving like the moon through its mansions — from full splendor down, mansion by mansion, until it comes home to the ancient palm-crescent: the thin, bowed sliver.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The most beautiful simile in the poem — taken from the moon-verse itself (36:39) to describe the very Book in which that verse descended. And the thin crescent — the ʿurjūn — is, in its shape, <strong>the shape of the letter nūn</strong>: a bowed arc and its star-point. The sūras wane toward the nūn; the poem returns to the nūn at every line-end; muṣḥaf and qaṣīda curve on one arc.</p>
+<div class="math"><span class="seal">✓ verified</span> <strong>The compression-tail law:</strong> sūra lengths decay along a fitted curve explaining 98.6% of the variance (R² = 0.986) — a <em>lawful</em> tapering, not a drift: real "mansions" through which the moon thins by rule.</div>
+</div>
+
+<!-- BAYT 28 -->
+<div class="bayt" id="b28">
+<div class="num">Line 28 — The drowned poet</div>
+<div class="verse"><span class="vs">لَكَ، يا إِلهي، الدُّرُّ، أَنْتَ مُثيرُهو</span><span class="vsep">‖</span><span class="vs">مِنْ لُجَّةٍ، وَأَنا الغَريقُ المَحْزونْ</span></div>
+<div class="trans">Yours, my God, is the pearl — You alone raise it from the abyss — and I am the sorrowing drowned.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">لَكَ… الدُّرّ</span><span class="g"><i>laka… al-durr</i> — fronted for exclusivity: Yours alone is all the pearl</span>
+<span class="w">مُثيرُهو</span><span class="g"><i>muthīruh</i> — its rouser: the one who stirs it up from the seabed to the surface</span>
+<span class="w">لُجَّة</span><span class="g"><i>lujja</i> — the fathomless mid-sea, where no floor is found</span>
+<span class="w">الغَريق المَحْزون</span><span class="g"><i>al-gharīq al-maḥzūn</i> — the sorrowing drowned: grieving not at drowning, but that his hands cannot carry what he saw</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">My God — the pearl is Yours entirely: You alone raise it out of the abyss. As for me, I am drowned in Your sea — sorrowing not for the drowning, but because my two hands are too small for what I have seen.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha">The sea of line 3 returns — but the confident diver ("you dive…") has become the drowned. The distance between those two lines is the entire journey of the poem. And the turn to direct address — "my God" — is the poem's first vocative to God, withheld until after the prostration: there is no calling-out before the breaking. The tenderest line in the qaṣīda.</p>
+</div>
+
+<!-- BAYT 29 -->
+<div class="bayt" id="b29">
+<div class="num">Line 29 — The seal: the ring</div>
+<div class="verse"><span class="vs">وَرَجَعْتُ نَحْوَ البَدْءِ بَعْدَ خِتامِهِ</span><span class="vsep">‖</span><span class="vs">فَقَرَأْتُهو، فَالخَتْمُ بَدْءٌ مَكْنونْ</span></div>
+<div class="trans">And I turned back to the beginning after its seal, and read it again — for the seal is a beginning, kept treasured.</div>
+<div class="blocktitle">Vocabulary</div>
+<div class="words">
+<span class="w">رَجَعْتُ نَحْوَ البَدْء</span><span class="g"><i>rajaʿtu naḥwa l-badʾ</i> — "I turned back toward the beginning": the custom of the completers — whoever finishes the Book opens it again</span>
+<span class="w">الخَتْم</span><span class="g"><i>al-khatm</i> — the sealing: reaching the Book's end</span>
+<span class="w">مَكْنون</span><span class="g"><i>maknūn</i> — treasured — the very word that opened the poem, returning now to seal it, by design</span>
+</div>
+<div class="blocktitle">Meaning</div>
+<p class="meaning">And when I had sealed it, I returned to its opening and read again — and found the seal was no ending but a beginning held in store for me in the lap of the Fātiḥa: a circling Book that does not run out, recited forever.</p>
+<div class="blocktitle">Craft &amp; structure</div>
+<p class="balagha"><strong>The close returned upon the opening</strong>: the poem's final word is its first rhyme-word — <em>al-maknūn</em> — deliberately, so the qaṣīda itself becomes a ring that comes back to its start, exactly as the Book's reader returns from the seal to the opening. A repetition at 28 lines' distance is no flaw of <em>īṭāʾ</em> (the defect is near-repetition); it is a crafted closure: <strong>the form performs what the words say.</strong> And after the whole lexicon — from the ground brow to the treasured seal — the ending settles on the word the Revelation chose for itself: <span class="quran">﴿في كِتابٍ مَكْنونٍ﴾</span>.</p>
+<div class="math"><span class="seal">✓ verified</span> <strong>The ring, measured:</strong> the muṣḥaf's last sūra (al-Nās) is statistically adjacent to its first (al-Fātiḥa) in meaning-space (z = −4.17) — the measured structure itself "returns toward the beginning": the Book is a ring whose recitation never ends. The poem closes on a measurement.</div>
+</div>
+
+</section>
+
+<!-- ===================== HONESTY ===================== -->
+<section id="honesty">
+<h2>The Charter of Honesty</h2>
+<div class="h2sub">A poem that asserts only what withstands testing — that constraint is its strength</div>
+<div class="honest">
+<div class="row">
+<div class="col yes">
+<h3>✓ What the poem stands on — computationally verified</h3>
+<ul>
+<li>Nūn closes 50.1% of all verses (3,124/6,236) — the poem's rhyme-letter</li>
+<li>Nūn is the 3rd most frequent letter (8.25% &gt; mīm 8.08%)</li>
+<li>The sūra order is a measured shortest path (z = −11.46) — the caravan &amp; stars tableau</li>
+<li>Word-music and meaning are orthogonal (r = −0.86) — warp &amp; weft; fire &amp; rain</li>
+<li>Sūra lengths taper by law (R² = 0.986) — the palm-crescent moon</li>
+<li>al-Ikhlāṣ is the Book's geometric center (1/114) — the poem's heart at line 15</li>
+<li>The Book's end adjoins its beginning (z = −4.17) — the closing ring</li>
+</ul>
+</div>
+<div class="col no">
+<h3>✗ What the poem satirizes — refuted by the same method</h3>
+<ul>
+<li>"Code-19": the claimed universal divisibility rule is empirically false</li>
+<li>Golden-ratio / Fibonacci length-patterns: nonexistent under testing</li>
+<li>The celebrated "word-count balances": mostly biased selection, dying against honest baselines</li>
+<li>A whole-muṣḥaf "grand ring" claim: refuted (z = −4.87, reversed) — which is why the poem claims only the verified end-to-beginning ring</li>
+</ul>
+<p class="dim" style="margin-top:10px">The method that refuted these claims is the same method that verified those laws — <strong>what is honest in denial may be trusted in affirmation.</strong></p>
+</div>
+</div>
+</div>
+<div class="panel">
+<p class="center" style="margin:0">And the etiquette of closing: this poem — whatever it attains — is a witness of incapacity, not a rival: the highest thing poetry can do in this arena is to measure, honestly, the distance between itself and the Book — and prostrate there. <span class="gold">Its real power is not that it arrived — it is that it <em>proved why no one arrives</em>.</span></p>
+</div>
+</section>
+
+<footer>
+<div class="ornament">۞ ❖ ۞</div>
+<div class="seal-end">تَمَّتِ النونيّةُ — فَالخَتْمُ بَدْءٌ مَكْنونْ</div>
+<p class="dim">My Incapacity Is Its Inimitability — a qaṣīda in strict al-Kāmil, docked cadence, bound rhyme on the letter nūn<br>Twenty-nine lines: 14 + 1 + 14 — and the heart is tawḥīd</p>
+</footer>
+
+</div>
+</body>
+</html>
