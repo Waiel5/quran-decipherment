@@ -133,13 +133,13 @@ footer .seal-end{font-family:'Aref Ruqaa',serif; color:var(--gold); font-size:2r
   .wrap{padding:18px 14px 60px}
   header{padding:36px 0 20px}
   .poemfull{padding:24px 14px}
-  .poemfull .line{flex-direction:column; gap:0; margin-bottom:16px; font-size:1.24rem; line-height:2.2}
-  .sadr,.ajuz{white-space:normal; text-align:center}
+  .poemfull .line{flex-direction:column; align-items:center; gap:0; margin-bottom:22px; font-size:1.52rem; line-height:2.05}
+  .sadr,.ajuz{white-space:normal; text-align:center; max-width:100%}
   .poemfull .line .sep{display:none}
-  .poemfull .n{text-align:center; min-width:0; opacity:.55}
+  .poemfull .n{text-align:center; min-width:0; opacity:.6; margin-bottom:2px}
   .bayt{padding:22px 16px}
-  .bayt .verse{font-size:1.22rem; line-height:2.25; flex-direction:column; row-gap:2px}
-  .verse .vs{white-space:normal}
+  .bayt .verse{font-size:1.46rem; line-height:2.1; flex-direction:column; align-items:center; row-gap:2px}
+  .verse .vs{white-space:normal; text-align:center; max-width:100%}
   .verse .vsep{display:none}
   .panel,.qabox,.manifesto{padding:18px 16px}
   table.freq{font-size:.85em}
@@ -151,6 +151,8 @@ footer .seal-end{font-family:'Aref Ruqaa',serif; color:var(--gold); font-size:2r
 @media(max-width:400px){
   body{font-size:16px}
   h2{font-size:1.3rem}
+  .poemfull .line{font-size:1.38rem}
+  .bayt .verse{font-size:1.34rem}
   .words{grid-template-columns:1fr; gap:0}
   .words .w{margin-top:10px}
   .bayt .num{right:12px; padding:0 10px; font-size:.78em}
