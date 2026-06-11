@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عَجْزي إعْجازُهُ — النونيّة الكبرى في نَظْم الكتاب</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Scheherazade+New:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0f14; --panel:#12161e; --panel2:#161b25; --ink:#e8e2d4; --dim:#a89f8c;
+  --gold:#c9a227; --gold2:#e3c566; --line:#2a3140; --green:#7fb069; --red:#c75c5c;
+  --qbg:#1a2030;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%; text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink); overflow-x:hidden; overflow-wrap:break-word;
+  font-family:'Amiri',serif; font-size:19px; line-height:2;
+  background-image:
+    radial-gradient(1200px 600px at 50% -10%, rgba(201,162,39,.07), transparent 60%),
+    radial-gradient(900px 500px at 10% 110%, rgba(201,162,39,.05), transparent 60%);
+}
+.wrap{max-width:880px; margin:0 auto; padding:24px 20px 80px}
+header{text-align:center; padding:56px 0 28px}
+.bism{font-family:'Scheherazade New',serif; color:var(--gold2); font-size:1.5rem; letter-spacing:.5px; margin-bottom:18px}
+h1{
+  font-family:'Aref Ruqaa',serif; font-weight:700; color:var(--gold);
+  font-size:clamp(2.1rem, 8vw, 3.4rem); margin:.2em 0 .1em; line-height:1.5;
+  text-shadow:0 0 40px rgba(201,162,39,.25);
+}
+.subtitle{font-family:'Reem Kufi',sans-serif; color:var(--dim); font-size:1.15rem; letter-spacing:1px}
+.ornament{color:var(--gold); font-size:1.6rem; margin:18px 0; opacity:.9}
+.manifesto{
+  background:linear-gradient(180deg, var(--panel2), var(--panel));
+  border:1px solid var(--line); border-radius:14px; padding:26px 30px; margin:30px 0;
+  font-size:1.06em;
+}
+.manifesto strong{color:var(--gold2)}
+nav.toc{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:10px 0 30px}
+nav.toc a{
+  color:var(--dim); text-decoration:none; border:1px solid var(--line); border-radius:999px;
+  padding:2px 14px; font-size:.85em; transition:.2s;
+}
+nav.toc a:hover{color:var(--gold2); border-color:var(--gold)}
+h2{
+  font-family:'Reem Kufi',sans-serif; color:var(--gold); font-size:1.55rem;
+  margin:60px 0 6px; text-align:center;
+}
+h2 + .h2sub{text-align:center; color:var(--dim); font-size:.92em; margin:0 0 24px}
+.panel{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:24px 28px; margin:18px 0}
+.poemfull{
+  background:linear-gradient(180deg,#141925,#10141c);
+  border:1px solid #3a3424; border-radius:16px; padding:34px 26px; margin:20px 0;
+}
+.poemfull .line{
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:0 14px; justify-content:center;
+  font-family:'Scheherazade New',serif; font-size:1.42rem; line-height:2.5;
+}
+.poemfull .n{color:var(--gold); font-size:.75em; min-width:2em; text-align:left; opacity:.8}
+.sadr,.ajuz{white-space:nowrap}
+.sep{color:var(--gold); opacity:.7; padding:0 6px}
+.bayt{
+  background:var(--panel); border:1px solid var(--line); border-radius:16px;
+  padding:26px 28px; margin:26px 0; position:relative;
+}
+.bayt .num{
+  position:absolute; top:-16px; right:24px; background:var(--bg); border:1px solid var(--gold);
+  color:var(--gold2); border-radius:999px; padding:0 16px; font-family:'Reem Kufi',sans-serif; font-size:.85em;
+}
+.bayt .verse{
+  font-family:'Scheherazade New',serif; font-size:1.55rem; text-align:center; line-height:2.6;
+  color:#f3edda; margin:6px 0 18px;
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:baseline; column-gap:14px;
+}
+.verse .vs{white-space:nowrap}
+.verse .vsep{color:var(--gold); opacity:.7}
+.blocktitle{
+  font-family:'Reem Kufi',sans-serif; font-size:.82em; color:var(--gold);
+  letter-spacing:1px; margin:18px 0 6px; display:flex; align-items:center; gap:10px;
+}
+.blocktitle::after{content:""; flex:1; height:1px; background:linear-gradient(270deg,transparent,var(--line))}
+.words{display:grid; grid-template-columns:auto 1fr; gap:4px 18px; margin:4px 0}
+.words .w{font-family:'Scheherazade New',serif; color:var(--gold2); font-weight:700; white-space:nowrap}
+.words .g{color:var(--ink)}
+.meaning{color:var(--ink)}
+.balagha{color:var(--ink)}
+.math{
+  background:var(--qbg); border-right:3px solid var(--gold); border-radius:8px;
+  padding:12px 18px; margin-top:8px; font-size:.97em;
+}
+.math .seal{
+  display:inline-block; font-family:'Reem Kufi',sans-serif; font-size:.75em; color:var(--green);
+  border:1px solid var(--green); border-radius:999px; padding:0 10px; margin-left:8px;
+}
+.quran{color:var(--gold2); font-family:'Scheherazade New',serif}
+.qabox{
+  background:linear-gradient(180deg,#1c1a10,#15140d);
+  border:1px solid var(--gold); border-radius:14px; padding:24px 28px; margin:22px 0;
+}
+.qabox h3{font-family:'Reem Kufi',sans-serif; color:var(--gold2); margin:0 0 10px; font-size:1.15em}
+.scan{
+  font-family:'Scheherazade New',serif; text-align:center; font-size:1.25rem;
+  color:var(--gold2); letter-spacing:1px; line-height:2.4;
+}
+.scan small{color:var(--dim); font-size:.7em; letter-spacing:0}
+table.freq{width:100%; border-collapse:collapse; margin:10px 0; font-size:.95em}
+table.freq td,table.freq th{border-bottom:1px solid var(--line); padding:6px 10px; text-align:center}
+table.freq th{color:var(--gold); font-family:'Reem Kufi',sans-serif; font-weight:400; font-size:.85em}
+.center{text-align:center}
+.dim{color:var(--dim)}
+.gold{color:var(--gold2)}
+.arch{display:flex; justify-content:center; align-items:center; gap:4px; margin:16px 0}
+.arch .cell{
+  flex:1 1 0; max-width:18px; min-width:4px; height:16px; border-radius:4px;
+  background:#232a38; border:1px solid var(--line);
+}
+.arch .cell.heart{background:var(--gold); border-color:var(--gold2); box-shadow:0 0 12px rgba(201,162,39,.6)}
+.legend{text-align:center; color:var(--dim); font-size:.85em}
+.honest{border:1px solid var(--line); border-radius:14px; overflow:hidden; margin:18px 0}
+.honest .row{display:grid; grid-template-columns:1fr 1fr; }
+.honest .col{padding:20px 24px}
+.honest .col.yes{background:rgba(127,176,105,.06); border-left:1px solid var(--line)}
+.honest .col.no{background:rgba(199,92,92,.06)}
+.honest h3{font-family:'Reem Kufi',sans-serif; margin:0 0 10px; font-size:1.05em}
+.honest .yes h3{color:var(--green)} .honest .no h3{color:var(--red)}
+.honest ul{margin:0; padding-right:20px}
+footer{text-align:center; margin-top:70px; color:var(--dim); font-size:.95em}
+footer .seal-end{font-family:'Aref Ruqaa',serif; color:var(--gold); font-size:2rem; margin:10px 0}
+@media(max-width:640px){
+  body{font-size:17px}
+  .wrap{padding:18px 14px 60px}
+  header{padding:36px 0 20px}
+  .poemfull{padding:24px 14px}
+  .poemfull .line{flex-direction:column; align-items:center; gap:0; margin-bottom:22px; font-size:1.52rem; line-height:2.05}
+  .sadr,.ajuz{white-space:normal; text-align:center; max-width:100%}
+  .poemfull .line .sep{display:none}
+  .poemfull .n{text-align:center; min-width:0; opacity:.6; margin-bottom:2px}
+  .bayt{padding:22px 16px}
+  .bayt .verse{font-size:1.46rem; line-height:2.1; flex-direction:column; align-items:center; row-gap:2px}
+  .verse .vs{white-space:normal; text-align:center; max-width:100%}
+  .verse .vsep{display:none}
+  .panel,.qabox,.manifesto{padding:18px 16px}
+  table.freq{font-size:.85em}
+  table.freq td,table.freq th{padding:6px 6px}
+  .scan{font-size:1.02rem}
+  .honest .row{grid-template-columns:1fr}
+  .honest .col.yes{border-left:none; border-bottom:1px solid var(--line)}
+}
+@media(max-width:400px){
+  body{font-size:16px}
+  h2{font-size:1.3rem}
+  .poemfull .line{font-size:1.38rem}
+  .bayt .verse{font-size:1.34rem}
+  .words{grid-template-columns:1fr; gap:0}
+  .words .w{margin-top:10px}
+  .bayt .num{right:12px; padding:0 10px; font-size:.78em}
+  nav.toc a{padding:2px 10px; font-size:.8em}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="bism">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحيمِ</div>
+  <h1>عَجْزي إعْجازُهُ</h1>
+  <div class="subtitle">النونيّةُ الكُبرى — قصيدةٌ في نَظْمِ الكتابِ، على الكاملِ التامّ، رويُّها النون</div>
+  <div class="ornament">۞ ❖ ۞</div>
+  <nav class="toc">
+    <a href="#manifesto">لماذا هذه القصيدة</a>
+    <a href="#wazn">الوزن والقافية</a>
+    <a href="#nun">سرُّ النون</a>
+    <a href="#arch">هندسة القصيدة</a>
+    <a href="#text">النصّ كاملًا</a>
+    <a href="#maknun">جواب «المَكْنون»</a>
+    <a href="#sharh">الشرح بيتًا بيتًا</a>
+    <a href="#honesty">ميثاق الصدق</a>
+  </nav>
+</header>
+
+<!-- ===================== MANIFESTO ===================== -->
+<section id="manifesto">
+<div class="manifesto">
+<p>هذه قصيدةٌ لم تُكتَب كما تُكتَب القصائد، بل <strong>بُنيت كما تُبنى البراهين</strong>. كلُّ صورةٍ فيها مأخوذةٌ من <strong>قياسٍ محسوبٍ على نصِّ الكتاب نفسِه</strong>: قافيتُها مستخرجةٌ من إحصاء فواصل آياته، وقلبُها موضوعٌ حيث يقع مركزُ المصحف هندسيًّا، وصورُ القافلةِ والنجومِ فيها ترجمةٌ لاكتشافٍ رياضيٍّ في ترتيب سوره، وهجاؤُها للعادّين المتوهّمين قائمٌ على نقضٍ حاسوبيٍّ صارمٍ لا على رأيٍ عابر.</p>
+<p>وموضوعُها أقدمُ سؤالٍ في نقد العرب: <strong>لماذا عجز الشعراءُ عن معارضة القرآن؟</strong> وجوابُها مذهبُ عبد القاهر الجرجانيّ في «دلائل الإعجاز»: السرُّ في <strong>النَّظْم</strong> — في الطريقة التي يلتحم بها اللفظُ والمعنى التحامًا لا يبلغه بشر. غير أنّ القصيدة لا <em>تقول</em> هذا فحسب، بل <strong>تمثّله</strong>: شاعرٌ يحشد عُدّته كاملةً، ويحاول، ويقيس عجزه بيتًا بيتًا، حتى يدرك أنّ عجزه نفسَه هو الشاهد — فيسجد. ومن هنا العنوان: <strong>عَجْزي إعْجازُهُ</strong> — جناسُ اشتقاقٍ من جذرٍ واحدٍ (ع-ج-ز) يحمل أطروحةَ القصيدةِ كلَّها في كلمتين.</p>
+<p class="dim" style="margin-bottom:0">القصيدةُ كلُّها أدبٌ مع الكتاب لا مساواةٌ به: ليس فيها آيةٌ منسوبةٌ إلى لسان الشاعر، وكلُّ انكسارٍ فيها واقعٌ على الشاعر وحده.</p>
+</div>
+</section>
+
+<!-- ===================== METER ===================== -->
+<section id="wazn">
+<h2>الوزن والقافية</h2>
+<div class="h2sub">الكامل التامّ — الضرب المقطوع المُضمَر — قافية مقيّدة مُردَفة</div>
+<div class="panel">
+<p class="scan">مُتَفاعِلُنْ مُتَفاعِلُنْ مُتَفاعِلُنْ <span class="sep">‖</span> مُتَفاعِلُنْ مُتَفاعِلُنْ مُتْفاعِلْ</p>
+<p><span class="gold">البحر:</span> الكاملُ التامّ، أوفى بحورِ العرب حركةً، وبه فخرُ عنترة وحِكمةُ لبيد. <span class="gold">العَروض:</span> صحيحة. <span class="gold">الضرب:</span> «مُتْفاعِلْ» — دخله <em>الإضمارُ</em> (تسكين الثاني) ثم <em>القَطْعُ</em> (حذف ساكن الوتد وإسكان ما قبله)، فيخرج إيقاعُ نهاية كلِّ بيتٍ ثلاثَ ضرباتٍ ثقالًا: <strong>ـــ ـــ ـــ</strong> — كأنّ كلَّ بيتٍ يُختَم بختمٍ يُطبَع طبعًا.</p>
+<p><span class="gold">القافية:</span> مقيّدةٌ (ساكنة الرويّ) مُردَفةٌ بواوِ مدٍّ، رويُّها <strong>النون</strong>: مَكْنونْ، مَوْضونْ، عُرْجونْ… كلماتُها كلُّها مختلفةٌ لا إيطاءَ فيها — إلا كلمةً واحدةً عادت عمدًا: «المَكْنونْ» التي فُتحت بها القصيدةُ خُتمت بها (١ ↔ ٢٩)، ردًّا للمقطع على المطلع بعد ثمانيةٍ وعشرين بيتًا — وهي مسافةٌ يغتفر معها الإيطاءُ ويصير صنعة. وكلُّ القوافي على وزنٍ طويل النظيرِ قبل الرويّ ليستقيم مع الضرب المقطوع.</p>
+<p class="dim">والضربُ المقطوعُ المُضمَر (ـــ ـــ ـــ) ملتزَمٌ في الأبيات التسعة والعشرين كلِّها بلا استثناء — قَدَمٌ واحدةٌ تُختَم بها كلُّ خطوة. وأمّا صدورُ الأبيات فالزحافُ فيها حرٌّ على سنّة الكامل؛ وأكثرُها حياةً صدرُ بيتِ التوحيد (١٥): ثلاثُ مُتَفاعِلُن حيّةٍ متوالية.</p>
+</div>
+</section>
+
+<!-- ===================== NUN ===================== -->
+<section id="nun">
+<h2>سرُّ النون: لماذا رويُّ القصيدة نون؟</h2>
+<div class="h2sub">لأنّ النونَ رويُّ الكتابِ نفسِه — عِلمُ «فواصل الآي» القديم، مُقاسًا بالأرقام</div>
+<div class="panel">
+<p>لم تُختَر النونُ استحسانًا، بل <strong>استخراجًا</strong>. فواصلُ الآيات (أواخرُها) عِلمٌ قديمٌ عقَد له الزركشيُّ في «البرهان» فصلًا كاملًا، والسيوطيُّ في «الإتقان» نوعًا برأسه. والقياسُ الحاسوبيُّ على النصّ كلِّه أظهر:</p>
+<table class="freq">
+<tr><th>القياس</th><th>النتيجة</th></tr>
+<tr><td>الآياتُ المختومةُ بالنون</td><td><strong>٣١٢٤ من ٦٢٣٦ آية = ٥٠٫١٪</strong> — النونُ تختم نصفَ الكتاب</td></tr>
+<tr><td>خمسةُ أحرفٍ فقط {ن، ا، م، ر، د}</td><td>تختم <strong>٩٠٫٢٪</strong> من جميع الآيات</td></tr>
+<tr><td>شيوع الحروف في جسد النصّ</td><td>ا ١٣٫١٧٪ &gt; ل ١١٫٥٥٪ &gt; <strong>ن ٨٫٢٥٪</strong> &gt; م ٨٫٠٨٪</td></tr>
+<tr><td>اللام (ثاني الحروف شيوعًا)</td><td>تكاد تغيب عن الفواصل: ناقصةٌ <strong>أحدَ عشرَ ضعفًا</strong> عن نصيبها</td></tr>
+</table>
+<p>فالنونُ — لا الميمُ كما يُشاع — ثالثُ حروفِ الكتابِ شيوعًا، وهي خاتمةُ نصفِ آياته: <strong>تاجُ فواصله الخفيّ</strong>. فإذا قُفّيت قصيدةٌ في نظم الكتاب على النون، فقد قُفّيت على قافيةِ الكتاب نفسِها — هذا هو معنى أن تكون القصيدةُ «مكتوبةً بالحساب»: حتى رويُّها قرارٌ قياسيّ.</p>
+</div>
+</section>
+
+<!-- ===================== ARCHITECTURE ===================== -->
+<section id="arch">
+<h2>هندسة القصيدة</h2>
+<div class="h2sub">٢٩ بيتًا: ١٤ + ١ + ١٤ — التوحيدُ قطبُ الرَّحى</div>
+<div class="panel">
+<div class="arch">
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+  <div class="cell heart"></div>
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+</div>
+<p class="legend">البيت ١٥ (الذهبيّ) = بيت التوحيد، وعن يمينه ويساره ١٤ + ١٤ بيتًا</p>
+<p><span class="gold">القلب في المركز الرياضيّ تمامًا:</span> تسعةٌ وعشرون بيتًا، فالبيتُ الخامسَ عشرَ هو المركزُ الحسابيُّ المضبوط — وفيه وحدَه التوحيدُ الخالص: <span class="quran">هُوَ أَوَّلٌ هُوَ آخِرٌ هُوَ واحِدٌ صَمَدٌ</span>. وهذا محاكاةٌ مقصودةٌ لاكتشافٍ مُقاسٍ: <strong>سورةُ الإخلاص — سورةُ التوحيد المحض — هي مركزُ ثِقَل المصحف هندسيًّا</strong> (المرتبة ١ من ١١٤ قربًا من المركز الإحصائيّ لجميع السور). فكما أنّ قلبَ الكتابِ توحيدٌ، جُعل قلبُ القصيدةِ توحيدًا — في الموضع نفسِه، بالقياس نفسِه.</p>
+<p><span class="gold">٢٩ و١٤:</span> عددُ الأبيات تسعةٌ وعشرون — عددُ السور المفتتَحة بالحروف المقطّعة؛ وعن جنبتي القلب ١٤ + ١٤ = ٢٨ — عددُ الحروف التي بُنيت منها تلك الفواتح، وعددُ منازل القمر التي يرجع إليها بيتُ العرجون (٢٧). <em>صنعةٌ مقصودةٌ من الشاعر، لا دعوى سرٍّ عدديّ</em> — وهذا هو الفرقُ كلُّه بين مَن يصنع التناسبَ صنعًا ويعلنه، ومَن يتوهّمه في النصوص ويدّعيه.</p>
+<p><span class="gold">القوس الدراميّ:</span> أطلالٌ منقوضة (١) ← غرورُ الشاعر وحشدُ عُدّته (٤-٥) ← القافلة والنجوم: الطريق الأقصر (٦-٨) ← قانون المقايضة البشريّ (١٠-١٤) ← <strong>القلب: التوحيد (١٥-١٧)</strong> ← العجزُ دليلًا وردُّ الصِّرفة (١٨-٢٠) ← هجاءُ العادّين (٢١-٢٣) ← السجدة (٢٤-٢٦) ← القمرُ العائد والغريق (٢٧-٢٨) ← <strong>العودة إلى البدء: النصُّ حلقة (٢٩)</strong>.</p>
+</div>
+</section>
+
+<!-- ===================== FULL TEXT ===================== -->
+<section id="text">
+<h2>النصُّ كاملًا</h2>
+<div class="h2sub">يُقرأ أولًا مجرَّدًا — ثم يأتي الشرح</div>
+<div class="poemfull">
+  <div class="line"><span class="n">١</span><span class="sadr">عَفَّتْ مَعالِمُ كُلِّ دارٍ، وَالهُدى</span><span class="sep">‖</span><span class="ajuz">غَضٌّ، وَرَسْمُ الوَحْيِ ظَلَّ المَكْنونْ</span></div>
+  <div class="line"><span class="n">٢</span><span class="sadr">كَمْ حاوَلَ الشُّعَراءُ نَظْمًا مِثْلَهو</span><span class="sep">‖</span><span class="ajuz">فَنَبَتْ قَوافيهِمْ، وَخابَ المَغْبونْ</span></div>
+  <div class="line"><span class="n">٣</span><span class="sadr">بَحْرٌ تَغوصُ وَلا تَنالُ قَرارَهو</span><span class="sep">‖</span><span class="ajuz">وَالدُّرُّ في الأَعْماقِ باتَ المَدْفونْ</span></div>
+  <div class="line"><span class="n">٤</span><span class="sadr">وَوَرِثْتُ سِرَّ القَوْلِ فَاسْتَنْزَلْتُهو</span><span class="sep">‖</span><span class="ajuz">أَحْكيهِ حَتّى العَقْلُ مِنّي المَفْتونْ</span></div>
+  <div class="line"><span class="n">٥</span><span class="sadr">جَمَّعْتُ أَقْلامي وَجَرَّدْتُ القُوى</span><span class="sep">‖</span><span class="ajuz">وَنَفَضْتُ أَوْزانًا، وَهِجْتُ المَخْزونْ</span></div>
+  <div class="line"><span class="n">٦</span><span class="sadr">حَنَّتْ لَهُ الأَجْيالُ تَحْدو عيسَها</span><span class="sep">‖</span><span class="ajuz">واللَّيْلُ داجٍ، والدَّليلُ المَأْمونْ</span></div>
+  <div class="line"><span class="n">٧</span><span class="sadr">وَتَنَظَّمَتْ صَفًّا كَمِثْلِ فَراقِدٍ</span><span class="sep">‖</span><span class="ajuz">سَرْدًا، عَلى قَصْدِ السَّبيلِ المَقْرونْ</span></div>
+  <div class="line"><span class="n">٨</span><span class="sadr">لَوْ زاغَ جَدْيٌ أَوْ تَنَكَّرَ مَنْزِلٌ</span><span class="sep">‖</span><span class="ajuz">بِهِ تاهَ خِرّيتٌ، وَضَلَّ المَشْحونْ</span></div>
+  <div class="line"><span class="n">٩</span><span class="sadr">حَتّى وَقَفْتُ بِبابِهِ مُتَهَيِّبًا</span><span class="sep">‖</span><span class="ajuz">خارَتْ قُوًى دونِي، وَعَزَّ المَرْهونْ</span></div>
+  <div class="line"><span class="n">١٠</span><span class="sadr">السَّدْيُ وَاللُّحْمُ اسْتَوى في نَسْجِهِ</span><span class="sep">‖</span><span class="ajuz">لَحْنٌ وَمَعْنًى، ثُمَّ نَظْمٌ مَوْضونْ</span></div>
+  <div class="line"><span class="n">١١</span><span class="sadr">قالوا: المَعاني في الطَّريقِ طَريحَةٌ</span><span class="sep">‖</span><span class="ajuz">وَالفَضْلُ في حُسْنِ البَيانِ المَضْمونْ</span></div>
+  <div class="line"><span class="n">١٢</span><span class="sadr">فَإِذا صَقَلْتُ اللَّفْظَ رَقَّ مَعينُهو</span><span class="sep">‖</span><span class="ajuz">وَنَأَتْ مَعانٍ، وَالبَيانُ المَطْعونْ</span></div>
+  <div class="line"><span class="n">١٣</span><span class="sadr">وَإِذا غَمَسْتُ القَوْلَ في أَعْماقِهِ</span><span class="sep">‖</span><span class="ajuz">ذَبُلَ الرَّنينُ، وَخارَ لَحْنٌ مَوْهونْ</span></div>
+  <div class="line"><span class="n">١٤</span><span class="sadr">نارٌ وَغَيْثٌ ما قَدَرْتُ عَلَيْهِما</span><span class="sep">‖</span><span class="ajuz">في بُرْدَةٍ، وَالوَصْلُ غَيْرُ المَرْصونْ</span></div>
+  <div class="line"><span class="n">١٥</span><span class="sadr">هُوَ أَوَّلٌ هُوَ آخِرٌ هُوَ واحِدٌ</span><span class="sep">‖</span><span class="ajuz">صَمَدٌ، إِلَيْهِ يَفيءُ رَكْبٌ مَيْمونْ</span></div>
+  <div class="line"><span class="n">١٦</span><span class="sadr">لا كُفْءَ، لا نِدَّ، انْتَهى كُلُّ المَدى</span><span class="sep">‖</span><span class="ajuz">لِلْواحِدِ الفَرْدِ، اطْمَأَنَّ المَوْزونْ</span></div>
+  <div class="line"><span class="n">١٧</span><span class="sadr">مِنْ واحِدٍ لا يُحْتَذى نَظْمٌ لَهو</span><span class="sep">‖</span><span class="ajuz">فَالفَرْدُ لا يُحْكى، حِماهُ المَضْنونْ</span></div>
+  <div class="line"><span class="n">١٨</span><span class="sadr">وَالعَجْزُ عَنْهُ هوَ الدَّليلُ، فَمِثْلُهو</span><span class="sep">‖</span><span class="ajuz">لا يُسْتَطاعُ، وَكَلَّ فيهِ المَحْصونْ</span></div>
+  <div class="line"><span class="n">١٩</span><span class="sadr">ما الصَّرْفُ صَدَّ القائِلينَ، وَإِنَّما</span><span class="sep">‖</span><span class="ajuz">عَجْزٌ بِهِمْ، وَالقَوْلُ مِنْهُمْ مَظْنونْ</span></div>
+  <div class="line"><span class="n">٢٠</span><span class="sadr">وَإِذا رَأَيْتَ مِنَ الغُيوبِ عَجائِبًا</span><span class="sep">‖</span><span class="ajuz">ضاقَتْ بِها عُقَدُ اللِّسانِ المَسْجونْ</span></div>
+  <div class="line"><span class="n">٢١</span><span class="sadr">عَدُّوا القُشورَ، وَفاتَهُمْ سِرُّ الهُدى</span><span class="sep">‖</span><span class="ajuz">فَبَقَوْا عَلى وَهْمِ الحِسابِ المَأْفونْ</span></div>
+  <div class="line"><span class="n">٢٢</span><span class="sadr">عَدّوا الفَواتِحَ، وَالحُروفَ، فَأَغْفَلوا</span><span class="sep">‖</span><span class="ajuz">نَظْمَ الهُدى، ثُمَّ انْزَوى تاجُ النّونْ</span></div>
+  <div class="line"><span class="n">٢٣</span><span class="sadr">لكِنْ هُنا نَظْمُ الكِتابِ مُوَحَّدٌ</span><span class="sep">‖</span><span class="ajuz">لَفْظٌ وَمَعْنًى في التِحامٍ مَسْنونْ</span></div>
+  <div class="line"><span class="n">٢٤</span><span class="sadr">فَنِيَ البَيانُ، بَيانُ كُلِّ مُفَوَّهٍ</span><span class="sep">‖</span><span class="ajuz">صُحُفُ الأُلى قَفْرٌ، وَرَبْعٌ مَسْكونْ</span></div>
+  <div class="line"><span class="n">٢٥</span><span class="sadr">فَخَرَرْتُ، لا عَجْزًا فَقَطْ، بَلْ سَجْدَةً</span><span class="sep">‖</span><span class="ajuz">وَالعَجْزُ نُسْكي، وَالجَبينُ المَطْحونْ</span></div>
+  <div class="line"><span class="n">٢٦</span><span class="sadr">ما زِنْتُ بِالشِّعْرِ الكِتابَ، وَإِنَّما</span><span class="sep">‖</span><span class="ajuz">زانَ القَريضَ، فَراحَ وَهْوَ المَأْذونْ</span></div>
+  <div class="line"><span class="n">٢٧</span><span class="sadr">وَتَلاحَقَتْ سُوَرُ الهُدى، وَكَأَنَّها</span><span class="sep">‖</span><span class="ajuz">قَمَرٌ يَؤوبُ إِلى القَديمِ العُرْجونْ</span></div>
+  <div class="line"><span class="n">٢٨</span><span class="sadr">لَكَ، يا إِلهي، الدُّرُّ، أَنْتَ مُثيرُهو</span><span class="sep">‖</span><span class="ajuz">مِنْ لُجَّةٍ، وَأَنا الغَريقُ المَحْزونْ</span></div>
+  <div class="line"><span class="n">٢٩</span><span class="sadr">وَرَجَعْتُ نَحْوَ البَدْءِ بَعْدَ خِتامِهِ</span><span class="sep">‖</span><span class="ajuz">فَقَرَأْتُهو، فَالخَتْمُ بَدْءٌ مَكْنونْ</span></div>
+</div>
+</section>
+
+<!-- ===================== MAKNUN ANSWER ===================== -->
+<section id="maknun">
+<div class="qabox">
+<h3>۩ سؤالٌ وَرَد: «ظَلَّ المَكْنونْ» في البيت الأول — هل تستقيم الكلمتان معًا؟</h3>
+<p><strong>نعم، والتركيبُ فصيحٌ مقصود.</strong> وبيانُه من ثلاثة وجوه:</p>
+<p><span class="gold">١. النحو:</span> «ظَلَّ» أختُ «كان». اسمُها ضميرٌ مستترٌ تقديرُه «هو» يعود على <em>رَسْمِ الوَحْي</em>، و«المَكْنونَ» خبرُها. ومجيءُ خبرِ الأفعال الناسخة معرفةً فصيحٌ معروف، كقولك: <em>كان زيدٌ الأميرَ</em>. بل التعريفُ هنا يفيد الحصرَ والكمال: بقي رسمُ الوحي <em>هو المكنونَ وحدَه</em> — كأنْ لا مكنونَ سواه. (وسُكّنت النونُ لأنّ القافية مقيّدة).</p>
+<p><span class="gold">٢. المعنى — وهنا مدارُ الإشكال ولُبُّ الجمال:</span> قد يُتوهَّم تنافرٌ: الرَّسمُ أثرٌ <em>ظاهرٌ</em> مكشوف، والمكنونُ <em>مستورٌ</em> محفوظ — فكيف يكون الظاهرُ مخبوءًا؟ هذا التوتّرُ هو عينُ المقصود، وحلُّه في صدر البيت نفسِه: كلُّ معالم الديار عَفَتْ <strong>لأنها مكشوفةٌ للريح والدهر</strong>، ورسمُ الوحي وحدَه ظلّ غضًّا <strong>لأنه مَكْنونٌ محفوظ</strong> — فإحدى الكلمتين <em>علّةُ</em> الأخرى لا ضِدُّها: ما بقي إلا ما كُنّ. وهو تناصٌّ مباشر مع <span class="quran">﴿إِنَّهُ لَقُرْآنٌ كَريمٌ في كِتابٍ مَكْنونٍ﴾</span> (الواقعة ٧٧–٧٨) و<span class="quran">﴿كَأَمْثالِ اللُّؤْلُؤِ المَكْنونِ﴾</span> (الواقعة ٢٣) — فالمكنونُ في التنزيل صفةُ الكتابِ نفسِه وصفةُ الدُّرِّ، وكلاهما من معجم القصيدة.</p>
+<p><span class="gold">٣. التورية:</span> «رَسْم» تحمل معنيين معًا: <em>رسمُ الدار</em> في عُرف الأطلال، و<em>رسمُ المصحف</em> — الخطُّ العثمانيُّ الذي كُتب به الوحي. فالبيتُ يقول في طبقته الثانية: خطُّ المصحفِ نفسُه ظلَّ محفوظًا كما أُنزل. وبهذا يكون البيتُ الأولُ <strong>نقضًا كاملًا لمطلع القصيدة الجاهلية</strong>: الجاهليُّ يقف باكيًا على رسمٍ دارس، وهذه تفتتح برسمٍ <em>لا يَدرُس</em> — قصيدةٌ تبدأ من حيث انتهى الشعرُ كلُّه.</p>
+<p class="dim" style="margin-bottom:0">ثم إنّ القصيدةَ تُختَم بالكلمة نفسِها: «فَالخَتْمُ بَدْءٌ مَكْنونْ» (البيت ٢٩) — فالكلمةُ التي سُئل عنها هي قوسُ القصيدة كلِّها: بها فُتحت وبها أُغلقت.</p>
+</div>
+</section>
+
+<!-- ===================== SHARH ===================== -->
+<section id="sharh">
+<h2>الشرحُ بيتًا بيتًا</h2>
+<div class="h2sub">المفردات — المعنى — البلاغة والبناء — الأساسُ المحسوب حيث وُجد</div>
+
+<!-- BAYT 1 -->
+<div class="bayt" id="b1">
+<div class="num">البيت ١ — المطلع: نقضُ الأطلال</div>
+<div class="verse"><span class="vs">عَفَّتْ مَعالِمُ كُلِّ دارٍ، وَالهُدى</span><span class="vsep">‖</span><span class="vs">غَضٌّ، وَرَسْمُ الوَحْيِ ظَلَّ المَكْنونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">عَفَّتْ</span><span class="g">دَرَسَتْ وامَّحت آثارُها — وهو فعلُ الأطلال الموروث: «عَفَتِ الدِّيارُ مَحَلُّها فَمُقامُها» (مطلع معلّقة لبيد)</span>
+<span class="w">مَعالِم</span><span class="g">جمع مَعْلَم: ما يُستدَلّ به على الدار من أثرٍ وعلامة</span>
+<span class="w">دار</span><span class="g">منزلُ القوم ومحلُّ إقامتهم</span>
+<span class="w">الهُدى</span><span class="g">الدلالةُ المُرشدة — والمراد هدى الكتاب</span>
+<span class="w">غَضّ</span><span class="g">طريٌّ ناضرٌ لم يذبُل، كالنبات أولَ ما يخرج</span>
+<span class="w">رَسْم</span><span class="g">ما لصق بالأرض من آثار الدار — وفيه توريةٌ برسم المصحف (الخطّ العثمانيّ)</span>
+<span class="w">المَكْنون</span><span class="g">المصونُ المحفوظ في كِنٍّ — صفةُ الكتاب والدرّ في التنزيل</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">امَّحت آثارُ كلِّ منزلٍ على وجه الأرض — هذا قانونُ الدهر — إلا أثرًا واحدًا: هدى الوحي ما زال طريًّا كيوم نزوله، ورسمُه باقٍ محفوظٌ لأنه مكنون.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">مطلعٌ يُحيي أقدسَ تقاليد القصيدة العربية — الوقوفَ على الأطلال — لينقضَه من داخله: الجاهليُّ يبكي رسمًا دارسًا، وهذا يشهد رسمًا لا يَدرُس. والطباقُ بين «عَفَّتْ» و«غَضّ» (الفناء/الطراوة) يطوي ثلاثةَ عشرَ قرنًا في شطرٍ واحد. (انظر جوابَ سؤال «المكنون» أعلاه — النحوُ والمعنى والتورية).</p>
+</div>
+
+<!-- BAYT 2 -->
+<div class="bayt" id="b2">
+<div class="num">البيت ٢ — تاريخُ المعارضات</div>
+<div class="verse"><span class="vs">كَمْ حاوَلَ الشُّعَراءُ نَظْمًا مِثْلَهو</span><span class="vsep">‖</span><span class="vs">فَنَبَتْ قَوافيهِمْ، وَخابَ المَغْبونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">كَمْ</span><span class="g">خبريّةٌ تفيد التكثير: ما أكثرَ ما حاولوا</span>
+<span class="w">نَظْمًا</span><span class="g">النَّظم: تأليفُ الكلام على نسقٍ محكم — وهو مصطلحُ عبد القاهر الجرجانيّ المركزيّ في تفسير الإعجاز</span>
+<span class="w">نَبَتْ</span><span class="g">من «نَبا السيفُ»: ارتدَّ عن الضريبة ولم يقطع — فقوافيهم سيوفٌ ارتدّت عن صفحة الكتاب</span>
+<span class="w">خابَ</span><span class="g">خسر ولم يظفر</span>
+<span class="w">المَغْبون</span><span class="g">مَن غُبن في صفقته فدفع كثيرًا وأخذ قليلًا</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">حاول الشعراءُ معارضتَه قرنًا بعد قرن، فارتدّت قوافيهم كما ينبو السيفُ الكليل، وخرج كلُّ مَن قامر ببضاعته خاسرًا مغبونًا.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">استعارةُ «نَبَتْ» تجعل المعارضةَ مبارزةً والقوافيَ سلاحًا يخون صاحبَه. وهي خلاصةُ بابٍ كاملٍ من تاريخ النقد: تحدّي المعارضة الذي دوّنه الباقلانيّ في «إعجاز القرآن» — حُكيت محاولاتٌ وما بقي منها إلا خبرُ فشلها.</p>
+</div>
+
+<!-- BAYT 3 -->
+<div class="bayt" id="b3">
+<div class="num">البيت ٣ — البحر والغوّاص</div>
+<div class="verse"><span class="vs">بَحْرٌ تَغوصُ وَلا تَنالُ قَرارَهو</span><span class="vsep">‖</span><span class="vs">وَالدُّرُّ في الأَعْماقِ باتَ المَدْفونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">تَغوص</span><span class="g">تنزل في الماء طلبًا لما في قعره — والخطابُ لكلّ مَن يقرأ: أنت الغائص</span>
+<span class="w">قَراره</span><span class="g">قعرُه ومستقَرُّ عمقه</span>
+<span class="w">الدُّرّ</span><span class="g">كبارُ اللؤلؤ — معانيه الغوالي</span>
+<span class="w">باتَ</span><span class="g">قضى ليلتَه — فالدرُّ نائمٌ في أعماقه منذ الأزل</span>
+<span class="w">المَدْفون</span><span class="g">المستورُ في باطن الشيء، لا يُنال إلا بجهدٍ ومجازفة</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">هو بحرٌ تغوص فيه ما شئتَ ولا تبلغ قاعَه، ودُرُّه راقدٌ في أعماقه: كلُّ غوصٍ يُخرج لك لؤلؤًا، والقاعُ بعدُ بعيد.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">التفت البيتُ من الغائب إلى خطاب الحاضر («تغوص») فأدخل القارئَ في التجربة. و«باتَ» تضيء ليلًا في جوف الماء — وتمهّد لليل القافلة في البيت السادس.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> حتى أدواتُ القياس الحديثة لم تبلغ القرار: قوانينُ البنية المكتشفة (الآتي ذكرُها) تصف <em>سطحَ</em> الانتظام بدقّةٍ عالية، وتترك عمقَه مفتوحًا — كلُّ قانونٍ يُستخرَج يكشف طبقةً أعمقَ لم تُفسَّر بعد.</div>
+</div>
+
+<!-- BAYT 4 -->
+<div class="bayt" id="b4">
+<div class="num">البيت ٤ — غرورُ الوارث</div>
+<div class="verse"><span class="vs">وَوَرِثْتُ سِرَّ القَوْلِ فَاسْتَنْزَلْتُهو</span><span class="vsep">‖</span><span class="vs">أَحْكيهِ حَتّى العَقْلُ مِنّي المَفْتونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">وَرِثْتُ سِرَّ القَوْل</span><span class="g">ادّعاءُ الشاعر أنه وارثُ صنعةِ العربية كلِّها، من امرئ القيس إلى مَن بعده</span>
+<span class="w">فَاسْتَنْزَلْتُهو</span><span class="g">طلبتُ نزولَه وادّعيتُ القدرةَ على استدعائه — فعلُ تكبُّر</span>
+<span class="w">أَحْكيهِ</span><span class="g">أُضاهيه وأُقلِّده — قال أهل السير: زعم زاعمون «لو نشاء لقلنا مثل هذا» (الأنفال ٣١)</span>
+<span class="w">المَفْتون</span><span class="g">المخدوعُ المسحور — فُتن عقلُه بقدرته الموهومة</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">وقلتُ في غروري: أنا وارثُ أسرار الكلام، فلأستنزلَنّ مثلَه ولأحكيَنّه — حتى صار عقلي نفسُه مفتونًا بدعواه.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">هنا يبدأ <strong>قوسُ الغرور</strong> الذي لن يُغلَق إلا بالسجدة في البيت ٢٥. والشاعرُ يستعير لنفسه لسانَ قريشٍ المتحدّية عمدًا — ليُسقطه. «المفتون» قافيةٌ تشخيصية: أولُ ضحايا الدعوى صاحبُها.</p>
+</div>
+
+<!-- BAYT 5 -->
+<div class="bayt" id="b5">
+<div class="num">البيت ٥ — حشدُ العُدّة</div>
+<div class="verse"><span class="vs">جَمَّعْتُ أَقْلامي وَجَرَّدْتُ القُوى</span><span class="vsep">‖</span><span class="vs">وَنَفَضْتُ أَوْزانًا، وَهِجْتُ المَخْزونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">جَمَّعْتُ</span><span class="g">بالتشديد للتكثير: حشدتُ كلَّ قلم</span>
+<span class="w">جَرَّدْتُ القُوى</span><span class="g">سللتُها من أغمادها كما تُجرَّد السيوف</span>
+<span class="w">نَفَضْتُ أَوْزانًا</span><span class="g">قلّبتُ بحورَ الشعر بحرًا بحرًا ونفضتُها كما يُنفَض الجرابُ حتى آخر حبّة</span>
+<span class="w">هِجْتُ</span><span class="g">أثرتُ وأيقظتُ — من هاجَ الشوقَ</span>
+<span class="w">المَخْزون</span><span class="g">الذخيرةُ الدفينة من اللغة والمحفوظ</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">عبّأتُ كلَّ ما يملكه شاعر: الأقلامَ كلَّها، والقوى مسلولةً، والبحورَ الستةَ عشرَ منفوضةً حتى القاع، وأيقظتُ كلَّ ذخيرةٍ نائمة.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">أربعةُ أفعالٍ متلاحقةٌ بصيغة الجهد الأقصى — تعبئةُ جيشٍ كاملةٌ قبل معركةٍ خاسرة. وهذا شرطُ البرهان القادم: لكي يكون العجزُ دليلًا، يجب أن تكون العُدّةُ تامّةً — فلا يقال: قصّر في الحشد.</p>
+</div>
+
+<!-- BAYT 6 -->
+<div class="bayt" id="b6">
+<div class="num">البيت ٦ — القافلة والدليل</div>
+<div class="verse"><span class="vs">حَنَّتْ لَهُ الأَجْيالُ تَحْدو عيسَها</span><span class="vsep">‖</span><span class="vs">واللَّيْلُ داجٍ، والدَّليلُ المَأْمونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">حَنَّتْ لَهُ</span><span class="g">اشتاقت إليه شوقَ الناقة إلى وليدها — قرنًا بعد قرن</span>
+<span class="w">تَحْدو</span><span class="g">تسوق الإبلَ بالحُداء (غناء السَّوق) — فجعل تلاوتَه حُداءَ القرون</span>
+<span class="w">عيسَها</span><span class="g">العِيس: كرائمُ الإبل البيضُ المشوبةُ بشُقرة</span>
+<span class="w">داجٍ</span><span class="g">شديدُ الظلمة مُدلهمّ</span>
+<span class="w">الدَّليل المَأْمون</span><span class="g">الهادي الذي يُؤمَن معه الضلالُ — وهو الكتاب</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">سارت به الأجيالُ كقافلةٍ واحدةٍ عبر الزمن: تحدو إبلَها بتلاوته، والليلُ حولها أسودُ مُطبِق، وهو وحدَه الدليلُ الذي لا يَخون.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">هنا تبدأ <strong>لوحةُ القافلة</strong> (٦-٨)، أكثرُ صور القصيدة حسّيّةً: التاريخُ كلُّه رحلةُ ليلٍ واحدة. والجملتان الاسميتان في العجز («الليلُ داجٍ، الدليلُ المأمون») تُجمّدان المشهدَ كأنّ الزمن وقف.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> هذا البيتُ ترجمةٌ شعريةٌ لاكتشافٍ مُقاس: ترتيبُ سور المصحف يقع على <strong>أقصرِ طريقٍ إحصائيٍّ</strong> عبر فضاء المعاني (قياسُ فيشر-راو على ١١٤ سورة: الانحرافُ المعياريُّ عن العشوائية z = −11.46 — أي أنّ الترتيب «طريقٌ مقصود» لا خبطُ عشواء). القافلةُ تسير على أقوم الطرق: <span class="quran">﴿إِنَّ هٰذا القُرْآنَ يَهْدي لِلَّتي هِيَ أَقْوَمُ﴾</span> (الإسراء ٩).</div>
+</div>
+
+<!-- BAYT 7 -->
+<div class="bayt" id="b7">
+<div class="num">البيت ٧ — النجومُ المصفوفة</div>
+<div class="verse"><span class="vs">وَتَنَظَّمَتْ صَفًّا كَمِثْلِ فَراقِدٍ</span><span class="vsep">‖</span><span class="vs">سَرْدًا، عَلى قَصْدِ السَّبيلِ المَقْرونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">تَنَظَّمَتْ</span><span class="g">انتظمت سورُه — والضمير لما حنّت له الأجيال</span>
+<span class="w">فَراقِد</span><span class="g">جمع فَرْقَد: النجمُ الذي يُهتدى به (والفرقدان: نجما الدبّ الأصغر قرب القطب)</span>
+<span class="w">سَرْدًا</span><span class="g">نسجًا متتابعًا محكمَ الحلقات — <span class="quran">﴿وَقَدِّرْ في السَّرْدِ﴾</span> (سبأ ١١)</span>
+<span class="w">قَصْد السَّبيل</span><span class="g">استقامةُ الطريق واعتدالُه — <span class="quran">﴿وَعَلى اللهِ قَصْدُ السَّبيلِ﴾</span> (النحل ٩)</span>
+<span class="w">المَقْرون</span><span class="g">الموصولُ بعضُه ببعضٍ حلقةً بحلقة</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">وانتظمت سورُه فوق رأس القافلة صفًّا كنجوم الهداية: درعًا مسرودةً حلقةً في حلقة، على خطِّ السبيل الأقوم، لا فجوةَ ولا اعوجاج.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">كلمتا البيت المركزيتان قرآنيتان بنصِّهما (السَّرد، قَصْد السبيل) — فوصفُ نظمِ الكتاب مأخوذٌ من معجم الكتاب. والفراقدُ نجومٌ <em>ثابتة</em> قرب القطب: سُوَرُه ليست شُهبًا عابرة بل نجومُ قطبٍ لا تغرب.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> «صفًّا… سردًا… مقرون» = الوصفُ الحرفيُّ للجيوديسية: نقاطٌ مصفوفةٌ على أقصر خطٍّ واصل. القياسُ نفسُه أظهر أنّ <strong>أيَّ خلطٍ لترتيب السور يُبعده عن هذه الأمثلية</strong> — الصفُّ مرصوصٌ فعلًا.</div>
+</div>
+
+<!-- BAYT 8 -->
+<div class="bayt" id="b8">
+<div class="num">البيت ٨ — لو زاغ نجمٌ واحد</div>
+<div class="verse"><span class="vs">لَوْ زاغَ جَدْيٌ أَوْ تَنَكَّرَ مَنْزِلٌ</span><span class="vsep">‖</span><span class="vs">بِهِ تاهَ خِرّيتٌ، وَضَلَّ المَشْحونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">زاغَ</span><span class="g">مالَ عن موضعه وانحرف</span>
+<span class="w">جَدْي</span><span class="g">نجمُ الجَدْي الذي تُعرَف به القبلةُ والشمال — أثبتُ نجوم السماء</span>
+<span class="w">تَنَكَّرَ مَنْزِل</span><span class="g">صار مُنكَرًا لا يُعرَف — والمنازل: منازلُ القمر الثمانيةُ والعشرون</span>
+<span class="w">خِرّيت</span><span class="g">الدليلُ الحاذقُ الماهر الذي يهتدي بأخفى الأمارات</span>
+<span class="w">المَشْحون</span><span class="g">الفُلْكُ الموقَر بأهله ومتاعه — <span class="quran">﴿في الفُلْكِ المَشْحونِ﴾</span> (الشعراء ١١٩، يس ٤١)</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">هذا النظامُ من الدقة بحيث لو مال نجمُ الجدي قيدَ شعرة، أو أنكرتَ منزلًا واحدًا من منازل القمر — لتاه أمهرُ الأدلّاء في البرّ، وضلّت السفينةُ الموقَرةُ في البحر.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">برهانُ الحساسية: عظمةُ النظام تُقاس بأثر أصغرِ خللٍ مفترَضٍ فيه. وجمعَ البيتُ البرَّ والبحرَ (الخرّيت/المشحون) فأحاط بطرق الأرض كلِّها. و«المشحون» قافيةٌ قرآنيةٌ بنصّها — ضلالُ السفينة المشحونة أهوالُه أعظم: فيها الأرواحُ والأحمال.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> وهذا حرفيًّا منطوقُ الاختبار العشوائيّ: قيمةُ z = −11.46 معناها أنّ آلافَ التبديلات العشوائية للترتيب <em>كلَّها</em> أسوأُ من الترتيب الواقع — أيُّ «زيغِ نجمٍ» يُفسد الطريق.</div>
+</div>
+
+<!-- BAYT 9 -->
+<div class="bayt" id="b9">
+<div class="num">البيت ٩ — على العتبة</div>
+<div class="verse"><span class="vs">حَتّى وَقَفْتُ بِبابِهِ مُتَهَيِّبًا</span><span class="vsep">‖</span><span class="vs">خارَتْ قُوًى دونِي، وَعَزَّ المَرْهونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">مُتَهَيِّبًا</span><span class="g">خائفًا إجلالًا وتعظيمًا، لا جُبنًا</span>
+<span class="w">خارَتْ</span><span class="g">ضعُفت وانهارت — من خار البناءُ</span>
+<span class="w">قُوًى دونِي</span><span class="g">قوى مَن تقدّمني إلى الباب: انهارت قبل أن يبلغ دوري</span>
+<span class="w">عَزَّ</span><span class="g">امتنع وغلا حتى لا يُنال</span>
+<span class="w">المَرْهون</span><span class="g">الجائزةُ المرتهَنة الموعودة لمن يبلغ — رهانُ المعارضة الذي لم يربحه أحد</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">فلما جئتُ — بكامل عُدّتي — وقفتُ ببابه مرتجفًا من الجلال: رأيتُ قوى مَن سبقني صرعى دون العتبة، ورأيتُ الرهانَ معلَّقًا لم يفُزْ به أحدٌ قط.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">بيتُ العتبة: نهايةُ مشهد الغرور وبدايةُ مشهد الاختبار. حشَدَ في البيت الخامس، ووقف هنا — وبين الفعلين سقط زهوُ «استنزلتُه»: مَن يقف بالباب متهيّبًا لم يعد مدّعيًا.</p>
+</div>
+
+<!-- BAYT 10 -->
+<div class="bayt" id="b10">
+<div class="num">البيت ١٠ — السَّدى واللُّحمة</div>
+<div class="verse"><span class="vs">السَّدْيُ وَاللُّحْمُ اسْتَوى في نَسْجِهِ</span><span class="vsep">‖</span><span class="vs">لَحْنٌ وَمَعْنًى، ثُمَّ نَظْمٌ مَوْضونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">السَّدْي واللُّحْم</span><span class="g">خيوطُ النسيج الطوليةُ (السَّدى) والعرضيةُ (اللُّحمة) — لا ثوبَ إلا بتعامُدِهما</span>
+<span class="w">اسْتَوى</span><span class="g">اعتدل وتكافأ، فلا غالبَ ولا مغلوب</span>
+<span class="w">لَحْن</span><span class="g">النغمُ وموسيقى الكلام</span>
+<span class="w">مَوْضون</span><span class="g">منسوجٌ مضاعفٌ محكمٌ متداخلُ الحلقات — <span class="quran">﴿عَلى سُرُرٍ مَوْضونَةٍ﴾</span> (الواقعة ١٥)</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">في نسيجه استوى الخيطان اللذان يتنازعان كلَّ كلامٍ سواه: الموسيقى سَداه، والمعنى لُحمتُه — فخرج النظمُ ثوبًا موضونًا مضاعفَ الإحكام.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">هذا <strong>بيتُ الأطروحة</strong>. السَّدى واللُّحمة لا «يتصالحان» في الثوب — بل يتعامدان، ومن تعامُدِهما يقوم النسيج. وهي أدقُّ استعارةٍ ممكنةٍ للمكتشَف الآتي:</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> <strong>قانون التوأم المضادّ:</strong> قياسُ السور كلِّها أظهر أنّ تماسُكَ المعنى وموسيقى الفاصلة <em>متعامدان</em> تعامُدًا شبهَ تامٍّ (معامل الارتباط r = −0.86): السورةُ تبلغ أقصى أحدِهما حيث يقتضي مقامُها، ولا يفترسُ أحدُهما الآخر — وهذا نمطٌ لم يوجد في شعر المعلّقات ولا في نثر الحديث عند القياس المقارن (الفرق دالٌّ عند p &lt; 10⁻¹⁰). السدى واللحمة — بالأرقام.</div>
+</div>
+
+<!-- BAYT 11 -->
+<div class="bayt" id="b11">
+<div class="num">البيت ١١ — مقولةُ الجاحظ</div>
+<div class="verse"><span class="vs">قالوا: المَعاني في الطَّريقِ طَريحَةٌ</span><span class="vsep">‖</span><span class="vs">وَالفَضْلُ في حُسْنِ البَيانِ المَضْمونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">قالوا</span><span class="g">الجاحظُ ومدرسته — قال في «الحيوان»: «المعاني مطروحةٌ في الطريق… وإنما الشأنُ في… جودة السبك»</span>
+<span class="w">طَريحَة</span><span class="g">ملقاةٌ مبذولةٌ لكل عابر</span>
+<span class="w">البَيان</span><span class="g">الإبانةُ عن المعنى بأحسن لفظ — وهو عِلمُ الجاحظ («البيان والتبيين»)</span>
+<span class="w">المَضْمون</span><span class="g">المكفولُ المُتعهَّد بأدائه — فالبيانُ الحقُّ يضمن وصولَ المعنى</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">قال النقّادُ الأوّلون: المعاني مبذولةٌ في الطريق يلتقطها العربيُّ والأعجميّ، وإنما التفاضلُ في السبك — في بيانٍ يَضمن للمعنى وصولَه.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">تضمينٌ نقديٌّ مُعلَن: القصيدةُ تستدعي أشهرَ مقولةٍ في النقد العربيّ لتبني عليها اعتراضَها في البيتين التاليين — فإن كان الشأنُ في السبك وحده، فلماذا يفسد السبكُ كلّما حسُن، ويحسُن كلّما فسد؟</p>
+</div>
+
+<!-- BAYT 12 -->
+<div class="bayt" id="b12">
+<div class="num">البيت ١٢ — المقايضة: صقلُ اللفظ يُفقر المعنى</div>
+<div class="verse"><span class="vs">فَإِذا صَقَلْتُ اللَّفْظَ رَقَّ مَعينُهو</span><span class="vsep">‖</span><span class="vs">وَنَأَتْ مَعانٍ، وَالبَيانُ المَطْعونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">صَقَلْتُ</span><span class="g">جلوتُه حتى يلمع كالسيف والمرآة</span>
+<span class="w">رَقَّ مَعينُهو</span><span class="g">المَعين: الماءُ الجاري الظاهر — رقَّ: ضعُف وقلَّ، فصار غديرًا رقراقًا لا نهرًا</span>
+<span class="w">نَأَتْ</span><span class="g">بعُدت وتباعدت</span>
+<span class="w">المَطْعون</span><span class="g">المجروحُ المُصاب في مقتل</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">جرّبتُ بنفسي: كلّما بالغتُ في صقل اللفظ وتلميعه، رقَّ ماءُ المعنى وتباعدت الدلالاتُ العميقة — وخرج البيانُ لامعَ الوجهِ مطعونَ الجوف.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">أولُ شطرَي <strong>قانون المقايضة البشريّ</strong>: حدُّ الصنعة البشرية أن الجمالين يتزاحمان — مَن أعطى الموسيقى أخذ من المعنى. والشاعرُ يشهد على نفسه من داخل التجربة، فالحجةُ هنا حجةُ صانعٍ لا متفرّج.</p>
+</div>
+
+<!-- BAYT 13 -->
+<div class="bayt" id="b13">
+<div class="num">البيت ١٣ — المقايضة معكوسة: الغوصُ يُخمد الرنين</div>
+<div class="verse"><span class="vs">وَإِذا غَمَسْتُ القَوْلَ في أَعْماقِهِ</span><span class="vsep">‖</span><span class="vs">ذَبُلَ الرَّنينُ، وَخارَ لَحْنٌ مَوْهونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">غَمَسْتُ</span><span class="g">أدخلتُه في عمق المعنى إدخالَ الثوب في الصِّبغ</span>
+<span class="w">ذَبُلَ</span><span class="g">ذوى وفقد نضارتَه — استعارةٌ نباتية للصوت</span>
+<span class="w">الرَّنين</span><span class="g">صدى الصوت وطنينُه الجميل</span>
+<span class="w">خارَ</span><span class="g">ضعُف وانكسر</span>
+<span class="w">مَوْهون</span><span class="g">واهنٌ أصابه الوهن — من <span class="quran">﴿وَهَنَ العَظْمُ مِنّي﴾</span></span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">وإذا عكستُ — فغمستُ القولَ في أعماق المعنى — ذبُل رنينُ اللفظ وانكسر النغمُ واهنًا: أربحُ الفكرَ وأخسر الموسيقى.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">البيتان ١٢-١٣ مقابلةٌ تامّة: صقلٌ/غمس، لفظٌ/قول، رقَّ المعين/ذبُل الرنين — بناءٌ متناظرٌ يجسّد الميزانَ الذي لا يعتدل: كفّةٌ تعلو وكفّةٌ تهبط أبدًا، عند البشر.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> هذان البيتان يصفان ما وُجد فعلًا في كل كلامٍ بشريٍّ قيس: في ضوابط المقارنة (شعرٌ جاهليّ، نثرٌ دينيّ) يتنافس البعدان ويفترس أحدُهما الآخر. <strong>الاستثناءُ المقيس الوحيد هو نصُّ الكتاب</strong>: تعامُدٌ (r = −0.86) لا افتراس — وهذا عينُ ما يجيب به البيتان ٢٣ و١٠.</div>
+</div>
+
+<!-- BAYT 14 -->
+<div class="bayt" id="b14">
+<div class="num">البيت ١٤ — النار والغيث</div>
+<div class="verse"><span class="vs">نارٌ وَغَيْثٌ ما قَدَرْتُ عَلَيْهِما</span><span class="vsep">‖</span><span class="vs">في بُرْدَةٍ، وَالوَصْلُ غَيْرُ المَرْصونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">نار</span><span class="g">اللفظُ المشتعل: الحرارةُ والضوءُ والموسيقى</span>
+<span class="w">غَيْث</span><span class="g">المطرُ المُحيي: المعنى الذي يُنبت — والعرب تمدح بـ«نارُ القِرى وغيثُ الندى»</span>
+<span class="w">ما قَدَرْتُ عَلَيْهِما</span><span class="g">قَدَرَ على الشيء: ملك القوةَ عليه — أي لم أملك أن أقهرهما على الاجتماع، والضمير مثنًّى صحيح</span>
+<span class="w">بُرْدَة</span><span class="g">الشَّملةُ الواحدة يلتحفها الرجل — رمزُ الجمع في كيانٍ واحد</span>
+<span class="w">المَرْصون</span><span class="g">المُحكَمُ الموثَق — من رصُن: ثبت واستحكم</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">اللفظُ نارٌ والمعنى غيث — وهل يُجمَع النارُ والمطرُ في شملةٍ واحدة؟ حاولتُ فما قدرتُ عليهما: كلُّ وصلٍ وصلتُه بينهما وصلٌ غيرُ مُحكَم، يَفرط عند أول شدّة.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">خاتمةُ لوحة المقايضة وذروتُها: استعارتان عنصريّتان متنافيتان بالطبع (الماء يطفئ النار) في أصغر حيّزٍ ممكن (بُردة). والإسنادُ إلى ضمير المتكلّم («ما قَدَرْتُ») يُبقي محرّكَ القصيدة — فشلَ الشاعر نفسِه — حيًّا في قلب الصورة: ليست استحالةً مجرّدة، بل هزيمتي أنا. ثم يجيء القلبُ التالي فيعلّق الجوابَ على مَن خلق النارَ والغيثَ معًا.</p>
+</div>
+
+<!-- BAYT 15 -->
+<div class="bayt" id="b15">
+<div class="num">البيت ١٥ — القلب: التوحيد ۞</div>
+<div class="verse"><span class="vs">هُوَ أَوَّلٌ هُوَ آخِرٌ هُوَ واحِدٌ</span><span class="vsep">‖</span><span class="vs">صَمَدٌ، إِلَيْهِ يَفيءُ رَكْبٌ مَيْمونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">أَوَّلٌ… آخِرٌ</span><span class="g"><span class="quran">﴿هُوَ الأَوَّلُ وَالآخِرُ﴾</span> (الحديد ٣)</span>
+<span class="w">واحِدٌ صَمَدٌ</span><span class="g">من سورة الإخلاص: الواحدُ الذي لا يتجزّأ، الصمدُ الذي يُقصَد في الحوائج ولا يَقصِد</span>
+<span class="w">يَفيءُ إِلَيْهِ</span><span class="g">فاءَ يَفيءُ: رجع إلى مستقَرِّه وسكن — <span class="quran">﴿حَتّى تَفيءَ إِلى أَمْرِ اللهِ﴾</span> (الحجرات ٩)</span>
+<span class="w">رَكْبٌ مَيْمون</span><span class="g">قافلةٌ مباركةٌ ذات يُمن — وهي قافلةُ الأجيال نفسُها من البيت السادس، تبلغ هنا مُناخَها</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">هو الأولُ والآخرُ والواحدُ الصمد — وإليه وحدَه يفيء كلُّ ركبٍ مبارك: القافلةُ التي قطعت الليلَ كلَّه تجد مُناخَها عند بابه.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha"><strong>قلبُ القصيدة بالضبط</strong>: البيت ١٥ من ٢٩ — أربعةَ عشرَ قبلَه وأربعةَ عشرَ بعدَه. تكرارُ «هُوَ» ثلاثًا في الصدر إيقاعُ ذِكرٍ خالص، وصدرُه جاء كلُّه تفاعيلَ حيّةً (مُتَفاعِلُن ×٣ بلا إضمار) — أسرعُ نبضٍ في صدور القصيدة يخفق عند قلبها التوحيديّ. وفيه يكتمل قوسُ القافلة: حنّت في السادس، وسارت تحت النجوم في السابع والثامن، وهنا تفيء إلى قطبها وتُنيخ — فالمركزُ الهندسيُّ هو المستقَرّ.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> موضعُ هذا البيت محاكاةٌ لقياسٍ: <strong>سورةُ الإخلاص هي مركزُ ثِقل المصحف هندسيًّا</strong> — المرتبةُ الأولى من ١١٤ سورةً قربًا من المركز الإحصائيّ للنصّ كلِّه. قلبُ الكتاب توحيدٌ خالص، بالقياس لا بالشعور وحده — فجُعل قلبُ القصيدة كذلك، في المركز الحسابيّ تمامًا (١٤+١+١٤).</div>
+</div>
+
+<!-- BAYT 16 -->
+<div class="bayt" id="b16">
+<div class="num">البيت ١٦ — لا كفءَ ولا ندّ</div>
+<div class="verse"><span class="vs">لا كُفْءَ، لا نِدَّ، انْتَهى كُلُّ المَدى</span><span class="vsep">‖</span><span class="vs">لِلْواحِدِ الفَرْدِ، اطْمَأَنَّ المَوْزونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">كُفْء</span><span class="g">المكافئُ المماثل — <span class="quran">﴿وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴾</span> (الإخلاص ٤)</span>
+<span class="w">نِدّ</span><span class="g">المثيلُ المنازِع — <span class="quran">﴿فَلا تَجْعَلوا لِلهِ أَنْدادًا﴾</span> (البقرة ٢٢)</span>
+<span class="w">انْتَهى كُلُّ المَدى</span><span class="g">الغاياتُ كلُّها تنتهي إليه: ما من مدًى إلا وهو منتهاه</span>
+<span class="w">اطْمَأَنَّ المَوْزون</span><span class="g">كلُّ ذي وزنٍ وقدْرٍ سكن إليه واستقرّ — فالميزانُ لا يستقرّ إلا إذا رجع إلى ثِقله الحقّ</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">لا مكافئَ له ولا منازع؛ كلُّ المدى — مدى اللغةِ والفكرِ والوجود — ينتهي إليه وحدَه. وعند الواحد الفرد يطمئنّ كلُّ موزون: يستقرّ الميزانُ وتسكن الكفّتان.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">نفيان متتاليان بـ«لا» النافية للجنس (أبلغُ النفي) ثم إثباتٌ واحدٌ شامل. و«اطمأنّ الموزونُ» تلتقط خيطَ الميزان من بيتَي المقايضة (١٢-١٣): الكفّةُ التي لا تعتدل عند البشر تطمئنّ هنا.</p>
+</div>
+
+<!-- BAYT 17 -->
+<div class="bayt" id="b17">
+<div class="num">البيت ١٧ — منطق الإعجاز</div>
+<div class="verse"><span class="vs">مِنْ واحِدٍ لا يُحْتَذى نَظْمٌ لَهو</span><span class="vsep">‖</span><span class="vs">فَالفَرْدُ لا يُحْكى، حِماهُ المَضْنونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">لا يُحْتَذى</span><span class="g">لا يُقتدى به احتذاءَ النعل بالنعل: لا تُصنع نسخةٌ على مثاله</span>
+<span class="w">لا يُحْكى</span><span class="g">لا يُحاكى ولا يُضاهى</span>
+<span class="w">حِماه</span><span class="g">ما يحميه ويذود عنه — جنابُه المَنيع</span>
+<span class="w">المَضْنون</span><span class="g">المبخولُ به لنفاسته، لا يُبذل لغير أهله — ومنه عنوانُ الغزالي «المضنونُ به على غير أهله»</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">نظمٌ صادرٌ عن الواحد لا يُحتذى: فالفردُ لا يُحاكى، وكلامُه على مثاله — فردٌ مثلُه — وحِماه نفيسٌ مضنونٌ به لا تبلغه يد.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">هنا <strong>قياسُ القصيدة المنطقيّ</strong>: الصفةُ تتبع الموصوف — مَن كان واحدًا لا ندَّ له، كان كلامُه واحدًا لا ندَّ له. وهو جوهرُ مذهب أهل النظم: الإعجازُ صفةٌ ذاتيةٌ في النصّ تشهد لمصدره.</p>
+</div>
+
+<!-- BAYT 18 -->
+<div class="bayt" id="b18">
+<div class="num">البيت ١٨ — العجزُ هو الدليل</div>
+<div class="verse"><span class="vs">وَالعَجْزُ عَنْهُ هوَ الدَّليلُ، فَمِثْلُهو</span><span class="vsep">‖</span><span class="vs">لا يُسْتَطاعُ، وَكَلَّ فيهِ المَحْصونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">العَجْزُ عَنْهُ هوَ الدَّليل</span><span class="g">عجزُ الفصحاء أنفسِهم هو البرهان — لا يحتاج الإعجازُ شاهدًا من خارج</span>
+<span class="w">لا يُسْتَطاع</span><span class="g">فوق الطاقة البشرية أصلًا، لا فوق الهمّة فحسب</span>
+<span class="w">كَلَّ فيهِ</span><span class="g">كَلَّ السيفُ: ذهب حَدُّه فلم يقطع — نصلُ الفصاحة يَكِلُّ في محاولته</span>
+<span class="w">المَحْصون</span><span class="g">المُدَجَّجُ المتحصِّن بعُدّته — أكملُ البلغاء سلاحًا</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">والعجزُ عنه — من كلِّ مَن حاول — هو نفسُه الدليل: فمثلُه لا يُستطاع، وحتى المتحصِّنُ بكل عُدّة البيان يَكِلُّ نصلُه فيه ويرتدّ.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">هذا <strong>بيتُ العنوان</strong>: «عجزي إعجازُه» منثورًا. والقلبُ البديع فيه أنّ الهزيمة تُقلَب شهادةً — أعداءُ الدعوى هم شهودُها. و«كَلَّ» تُكمل قوسَ السيف الذي فُتح في البيت الثاني: هناك <em>نَبَتْ</em> قوافيهم (ارتدّ السيفُ عن الضريبة)، وهنا <em>كَلَّ</em> النصلُ نفسُه — من الارتداد إلى ذهاب الحدّ.</p>
+</div>
+
+<!-- BAYT 19 -->
+<div class="bayt" id="b19">
+<div class="num">البيت ١٩ — ردُّ مذهب الصِّرفة</div>
+<div class="verse"><span class="vs">ما الصَّرْفُ صَدَّ القائِلينَ، وَإِنَّما</span><span class="vsep">‖</span><span class="vs">عَجْزٌ بِهِمْ، وَالقَوْلُ مِنْهُمْ مَظْنونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">الصَّرْف</span><span class="g">مذهبُ «الصِّرفة»: قولُ النظّام ومَن تبعه إنّ الله صرف العربَ عن المعارضة قسرًا، وإلا لقدروا</span>
+<span class="w">صَدَّ</span><span class="g">منع وردّ</span>
+<span class="w">عَجْزٌ بِهِمْ</span><span class="g">العجزُ قائمٌ في ذواتهم، لا مانعَ من خارج</span>
+<span class="w">مَظْنون</span><span class="g">ادّعاؤهم القدرةَ ظنٌّ لا يقوم عليه برهان</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">وليس الأمرُ كما زعم أهلُ الصِّرفة — أنّ مانعًا خارجيًّا صدّ الفصحاء — وإنما هو عجزٌ في أنفسهم؛ ودعوى «لو شئنا لقلنا» ظنٌّ عارٍ ما تحقّق قط.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">القصيدةُ تدخل معركةَ الكلام القديمة وتنحاز — مع الباقلانيّ وعبد القاهر — إلى الإعجاز الذاتيّ: لو كان المانعُ صرفًا خارجيًّا لما كان للنظم فضلٌ، ولَبطلت شهادةُ العجز التي قام عليها البيتُ السابق. موقفٌ نقديٌّ مُعلَن داخل بناءٍ شعريّ.</p>
+</div>
+
+<!-- BAYT 20 -->
+<div class="bayt" id="b20">
+<div class="num">البيت ٢٠ — ضيقُ العبارة: النِّفّري</div>
+<div class="verse"><span class="vs">وَإِذا رَأَيْتَ مِنَ الغُيوبِ عَجائِبًا</span><span class="vsep">‖</span><span class="vs">ضاقَتْ بِها عُقَدُ اللِّسانِ المَسْجونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">الغُيوب</span><span class="g">جمع غَيْب: ما استتر عن الحسّ من عوالم المعنى</span>
+<span class="w">عَجائِبًا</span><span class="g">ما يَبهر العقلَ ويُخرس اللسان</span>
+<span class="w">عُقَدُ اللِّسان</span><span class="g">جمع عُقْدة: ما ينعقد في اللسان فيحبس الكلام — <span class="quran">﴿وَاحْلُلْ عُقْدَةً مِنْ لِساني﴾</span> (طه ٢٧)</span>
+<span class="w">ضاقَتْ بِها</span><span class="g">انشدّت العُقَدُ وتضايقت عن حملها — فكلّما عظُم المشهودُ اشتدّت العقدة</span>
+<span class="w">المَسْجون</span><span class="g">المحبوسُ في حدود معجمه وأوزانه — لسانُ البشر</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">وإذا فتح الغيبُ لك عجائبَه ورأيتَ ما يبهر، انعقد لسانُك دونها: تشتدّ عُقَدُه كلّما عظُم المشهود — فاللسانُ سجينٌ، وأبوابُ الرؤيا أوسعُ من زنزانته.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">هذا قولُ النِّفّري — «كلّما اتسعت الرؤيةُ ضاقت العبارة» — وقد صار جسدًا: للّسانِ عُقَدٌ تتشدّد أمام الرؤى، والإشارةُ إلى دعاء موسى <span class="quran">﴿وَاحْلُلْ عُقْدَةً مِنْ لِساني﴾</span> تجعل أفصحَ مقامٍ في التنزيل شاهدًا: حتى الكليمُ سأل حلَّ العقدة. وبالبيت تكتمل جبهةُ الشهود: الشعراءُ عجزوا (٢)، والمتكلّمون برهنوا (١٩)، والعارفون اعترفوا (٢٠).</p>
+</div>
+
+<!-- BAYT 21 -->
+<div class="bayt" id="b21">
+<div class="num">البيت ٢١ — هجاء العادّين</div>
+<div class="verse"><span class="vs">عَدُّوا القُشورَ، وَفاتَهُمْ سِرُّ الهُدى</span><span class="vsep">‖</span><span class="vs">فَبَقَوْا عَلى وَهْمِ الحِسابِ المَأْفونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">عَدُّوا القُشور</span><span class="g">أحصَوا الظواهرَ السطحية: جُمَّلَ الحروف وموازينَ الأعداد المزعومة</span>
+<span class="w">سِرُّ الهُدى</span><span class="g">النظمُ نفسُه — موضعُ الإعجاز الحقّ</span>
+<span class="w">وَهْم</span><span class="g">ما يُتخيَّل ولا حقيقةَ له</span>
+<span class="w">المَأْفون</span><span class="g">الفاسدُ العقلِ الأحمق — أُفِن الرجلُ: نقص عقلُه</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">وقومٌ شغلتهم القشورُ عن اللباب: عدّوا الحروفَ وادّعَوا الأسرارَ العددية، ففاتهم سرُّ الهدى الحقيقيُّ وبقوا أسرى حسابٍ أحمقَ موهوم.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">هجاءٌ موجَعٌ بطباقٍ خفيّ: «عدّوا/فاتهم» — أحصَوا كلَّ شيءٍ وفاتهم الشيءُ الوحيد. وصدقُ هذا الهجاء صدقُ <em>قياس</em>، لا تشنيعُ خصومة:</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> الدعاوى العددية الكبرى <strong>نُقضت حاسوبيًّا نقضًا صارمًا</strong> في المشروع نفسِه الذي أثبت قوانينَ النظم: «شيفرة-١٩» سقطت (قاعدةُ القسمة المزعومة باطلةٌ إحصائيًّا)، و«النسبة الذهبية» سقطت (لا متوالياتٍ ذهبيةً حقيقيةً في أطوال السور)، و«التوازنات اللفظية» المشهورة أغلبُها انتقاءٌ متحيِّز. <em>المنهجُ الذي يصدُق في النفي هو الذي يُوثَق به في الإثبات</em> — ومن هنا قوةُ هذا الهجاء.</div>
+</div>
+
+<!-- BAYT 22 -->
+<div class="bayt" id="b22">
+<div class="num">البيت ٢٢ — تاجُ النون المهجور</div>
+<div class="verse"><span class="vs">عَدّوا الفَواتِحَ، وَالحُروفَ، فَأَغْفَلوا</span><span class="vsep">‖</span><span class="vs">نَظْمَ الهُدى، ثُمَّ انْزَوى تاجُ النّونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">الفَواتِح</span><span class="g">الحروفُ المقطّعة في أوائل السور (الم، حم، ن…) — مسرحُ العادّين الأثير</span>
+<span class="w">أَغْفَلوا</span><span class="g">تركوه غُفْلًا وانصرفوا عنه</span>
+<span class="w">انْزَوى</span><span class="g">انكمش واعتزل في زاوية</span>
+<span class="w">تاجُ النّون</span><span class="g">سيادةُ النون الخفيّة على فواصل الكتاب — تاجٌ لم ينتبه له العادّون</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">عدّوا فواتحَ السور وحروفَها عدًّا، وأغفلوا نظمَ الهدى الذي بين أيديهم — وبينما هم منشغلون بعدّهم، انزوى تاجُ النون في زاويته: أعظمُ ظاهرةٍ حرفيةٍ في الكتاب، ولم يلتفتوا.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">مفارقةٌ لاذعة: الباحثون عن «أسرار الحروف» فاتهم سرُّ الحرف الذي يختم نصفَ الكتاب. والقصيدةُ نفسُها — المقفّاةُ على النون من أولها إلى آخرها — هي ردُّ الاعتبار لهذا التاج: كلُّ بيتٍ فيها ينحني للنون التي أهملوها.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> النونُ ثالثُ حروف الكتاب شيوعًا (٨٫٢٥٪ — فوق الميم خلافًا للمشهور)، وخاتمةُ ٥٠٫١٪ من آياته (٣١٢٤ من ٦٢٣٦)، وخمسةُ أحرفٍ فقط تختم ٩٠٪ من الفواصل بينما تغيب اللامُ — ثاني الحروف شيوعًا — عنها غيابًا شبهَ تامّ (ناقصة ١١ ضعفًا). هذا انتقاءٌ صوتيٌّ صارمٌ عند خواتم الآي، عَقَد له الزركشيُّ فصلَ «الفواصل» في البرهان — وقاسته الحوسبةُ فإذا هو أدقُّ مما وصف.</div>
+</div>
+
+<!-- BAYT 23 -->
+<div class="bayt" id="b23">
+<div class="num">البيت ٢٣ — الجواب: النظم لا العدد</div>
+<div class="verse"><span class="vs">لكِنْ هُنا نَظْمُ الكِتابِ مُوَحَّدٌ</span><span class="vsep">‖</span><span class="vs">لَفْظٌ وَمَعْنًى في التِحامٍ مَسْنونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">لكِنْ هُنا</span><span class="g">استدراكٌ يردُّ القارئَ من وهم الحساب إلى موضع السرّ الحقّ</span>
+<span class="w">مُوَحَّد</span><span class="g">مجعولٌ واحدًا لا تنفصل جهاتُه — وفي اختيارها إشارة: نظمُ كتابِ الواحدِ موحَّد</span>
+<span class="w">لَفْظٌ وَمَعْنًى</span><span class="g">بيانٌ لجهتي التوحيد: الجهتان اللتان تتحاربان عند البشر صارتا فيه واحدًا</span>
+<span class="w">التِحامٌ</span><span class="g">اشتباكُ اللحمتين حتى تصيرا جسدًا واحدًا</span>
+<span class="w">مَسْنون</span><span class="g">ممهَّدٌ مصقولٌ مصبوب — <span class="quran">﴿مِنْ حَمَإٍ مَسْنونٍ﴾</span> (الحجر ٢٦)</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">لكنّ السرَّ هنا — لا في العدد: نظمُ الكتاب موحَّدٌ — لفظُه ومعناه شيءٌ واحدٌ في التحامٍ مصبوبٍ مصقولٍ كأنه خِلقةٌ لا صنعة.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">جوابُ القصيدة الإيجابيُّ بعد النفيَين (لا صِرفةَ، لا عدد): هو النظم — مذهبُ عبد القاهر خالصًا. و«موحَّد» تعقد الحجةَ بعقدة التوحيد نفسِها: من الواحد نظمٌ موحَّد (صدى البيت ١٧). و«مسنون» تختم بإيحاءٍ خِلقيّ: من حمإٍ مسنونٍ خُلق الإنسان، وبالتحامٍ مسنونٍ قام الكلام الذي أعجز الإنسان.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> «لفظًا ومعنًى» — هو التعامدُ المقيس نفسُه (r = −0.86): البعدان مستقلّان تمامَ الاستقلال وكلاهما في أقصاه — التحامٌ بلا تزاحم. البيتُ يكثّف القانونَ في خمس كلمات.</div>
+</div>
+
+<!-- BAYT 24 -->
+<div class="bayt" id="b24">
+<div class="num">البيت ٢٤ — الربعُ المسكون</div>
+<div class="verse"><span class="vs">فَنِيَ البَيانُ، بَيانُ كُلِّ مُفَوَّهٍ</span><span class="vsep">‖</span><span class="vs">صُحُفُ الأُلى قَفْرٌ، وَرَبْعٌ مَسْكونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">فَنِيَ</span><span class="g">باد وانقرض</span>
+<span class="w">مُفَوَّه</span><span class="g">العظيمُ الفصاحة، المُطلَقُ اللسان</span>
+<span class="w">صُحُفُ الأُلى</span><span class="g">كتبُ الأوّلين ودواوينُهم</span>
+<span class="w">قَفْر</span><span class="g">خلاءٌ موحشٌ لا أنيسَ به</span>
+<span class="w">رَبْعٌ مَسْكون</span><span class="g">الرَّبع: الدارُ ومحلّةُ القوم — منزلٌ واحدٌ ما زال عامرًا بأهله</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">فني بيانُ الأوّلين — بيانُ كلِّ مُفوَّهٍ منهم — وصارت صحفُهم قِفارًا مهجورةً لا يطرقها قارئ؛ وبقي في الأرض كلِّها ربعٌ واحدٌ مسكونٌ عامرٌ: يُتلى في كل لحظةٍ في كل أفق.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">تكرارُ «البيانُ، بيانُ» (عطفُ البيان للتفخيم) نعيٌ يُقرَع مرّتين. والبيتُ <strong>رجعُ صدى المطلع</strong>: هناك «عفّت معالمُ كلِّ دار» وهنا «ربعٌ مسكون» — فتنغلق حلقةُ الأطلال الداخلية: كلُّ الديار خَوَت، ودارُ الوحي مأهولةٌ أبدًا. أصدقُ صورةٍ واقعية: دواوينُ الفصحاء في المتاحف، والكتابُ في صدور الملايين يُرتَّل كلَّ فجر.</p>
+</div>
+
+<!-- BAYT 25 -->
+<div class="bayt" id="b25">
+<div class="num">البيت ٢٥ — السجدة: ذروة التحوّل</div>
+<div class="verse"><span class="vs">فَخَرَرْتُ، لا عَجْزًا فَقَطْ، بَلْ سَجْدَةً</span><span class="vsep">‖</span><span class="vs">وَالعَجْزُ نُسْكي، وَالجَبينُ المَطْحونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">خَرَرْتُ</span><span class="g">سقطتُ — والفعلُ نفسُه فعلُ السجود في التنزيل: <span class="quran">﴿وَخَرَّ راكِعًا وَأَنابَ﴾</span> (ص ٢٤)</span>
+<span class="w">لا عَجْزًا فَقَطْ، بَلْ</span><span class="g">إقرارٌ مزدوج: العجزُ واقعٌ لا يُنكَر — لكنه ليس وحدَه؛ فالخِرّةُ نفسُها صارت سجودًا</span>
+<span class="w">سَجْدَةً</span><span class="g">منصوبةٌ على المصدرية: خررتُ خِرّةَ ساجدٍ لا خِرّةَ صريع</span>
+<span class="w">نُسْكي</span><span class="g">النُّسك: العبادةُ والقربان — فعجزي هو قرباني الذي أتقرّب به</span>
+<span class="w">المَطْحون</span><span class="g">المسحوقُ كما يُطحن الحَبّ — جبينٌ بالغ في السجود حتى انسحق بالتراب</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">فسقطتُ — والسقوطُ عجزٌ لا أُنكره، لكنه لم يكن عجزًا فقط: كان سجدةً. فصار عجزي نفسُه عبادتي وقرباني، وجبيني المسحوقُ بالتراب أوسمتي.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha"><strong>ذروةُ القصيدة وقلبُ تحوُّلِها</strong>: الكلمةُ الواحدة «خرّ» تحمل المعنيين — السقوطَ والسجود — و«لا عَجْزًا فَقَطْ، بَلْ» تحفظ المعنيين معًا: لو نفى العجزَ لكذّب القصيدةَ كلَّها، ولو وقف عنده لكانت هزيمةً صِرفة — فأثبته ورفعه. به يُغلَق قوسُ الغرور المفتوحُ منذ «استنزلتُه» (٤): استنزل الكلامَ فنزل هو إلى الأرض، ساجدًا.</p>
+</div>
+
+<!-- BAYT 26 -->
+<div class="bayt" id="b26">
+<div class="num">البيت ٢٦ — مَن زان مَن؟</div>
+<div class="verse"><span class="vs">ما زِنْتُ بِالشِّعْرِ الكِتابَ، وَإِنَّما</span><span class="vsep">‖</span><span class="vs">زانَ القَريضَ، فَراحَ وَهْوَ المَأْذونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">ما زِنْتُ</span><span class="g">من زانَ يَزين: ما أضفتُ إليه زينةً</span>
+<span class="w">القَريض</span><span class="g">الشعرُ — قريضي هذا نفسُه</span>
+<span class="w">فَراحَ</span><span class="g">مضى ومشى في الناس</span>
+<span class="w">المَأْذون</span><span class="g">المُجازُ المرخَّصُ له: خرج شعري بإذنٍ منه لا بقوّتي</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">ما زدتُ الكتابَ بشعري زينةً — حاشاه — وإنما هو الذي زان شعري: فكلُّ حُسنٍ في هذه القصيدة مستعارٌ منه، وما راحت في الناس إلا مأذونًا لها من جلاله.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">عكسُ آيةِ المديح الشعريّ كلِّه: الشاعرُ العربيُّ يزين ممدوحَه، وهذا الممدوحُ يزين شاعرَه. وفيه إقرارٌ لطيفٌ بمصدر كلِّ جمالٍ في القصيدة نفسِها: معجمُها (المكنون، الموضون، المسنون، العرجون، المشحون…) مستعارٌ من التنزيل — فالقصيدةُ مزيَّنةٌ بما تمدح.</p>
+</div>
+
+<!-- BAYT 27 -->
+<div class="bayt" id="b27">
+<div class="num">البيت ٢٧ — القمرُ العائد</div>
+<div class="verse"><span class="vs">وَتَلاحَقَتْ سُوَرُ الهُدى، وَكَأَنَّها</span><span class="vsep">‖</span><span class="vs">قَمَرٌ يَؤوبُ إِلى القَديمِ العُرْجونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">تَلاحَقَتْ</span><span class="g">تتابعت يأخذ بعضُها بأعقاب بعض</span>
+<span class="w">يَؤوب</span><span class="g">يرجع — والأوبُ رجوعٌ إلى الأصل والمستقَرّ</span>
+<span class="w">العُرْجون</span><span class="g">عودُ العِذْق اليابسُ المتقوّس كالهلال — <span class="quran">﴿حَتّى عادَ كَالعُرْجونِ القَديمِ﴾</span> (يس ٣٩)</span>
+<span class="w">القَديمِ العُرْجون</span><span class="g">على الإتباع والبدل: إلى القديمِ، العرجونِ — وقدّم الوصفَ عنايةً به</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">وتلاحقت سورُ الهدى في المصحف متناقصةً متقوّسةً، كأنها القمرُ في منازله: يبدأ بدرًا تامًّا ثم يدِقّ منزلًا بعد منزلٍ حتى يؤوبَ إلى العرجون القديم — الهلالِ الدقيق.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">أجملُ تشبيهات القصيدة: مأخوذٌ من آية القمر نفسِها (يس ٣٩) ليصف ترتيبَ الكتاب الذي تنزّلت فيه الآية. والهلالُ الدقيقُ — العرجونُ — هو في صورته <strong>شكلُ النون</strong>: قوسٌ ونقطة. فالسورُ تؤوب إلى النون، والقصيدةُ تؤوب في كل بيتٍ إلى النون: الشكلُ والرويُّ والمصحفُ على قوسٍ واحد.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> <strong>قانونُ ذيل الانضغاط:</strong> أطوالُ السور تتناقص على منحنًى مضبوطٍ يفسّر ٩٨٫٦٪ من التباين (R² = 0.986) — تقوُّسٌ <em>محسوبٌ</em> لا تناقصٌ عشوائيّ: «منازلُ» حقيقيةٌ يدقّ فيها القمرُ بقانون.</div>
+</div>
+
+<!-- BAYT 28 -->
+<div class="bayt" id="b28">
+<div class="num">البيت ٢٨ — الغريق</div>
+<div class="verse"><span class="vs">لَكَ، يا إِلهي، الدُّرُّ، أَنْتَ مُثيرُهو</span><span class="vsep">‖</span><span class="vs">مِنْ لُجَّةٍ، وَأَنا الغَريقُ المَحْزونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">لَكَ… الدُّرّ</span><span class="g">تقديمُ الجارّ للحصر: لك وحدَك كلُّ الدرّ</span>
+<span class="w">مُثيرُهو</span><span class="g">مُخرجُه من قاعه ومُهيّجُه إلى السطح</span>
+<span class="w">لُجَّة</span><span class="g">مُعظمُ الماء وغمرتُه حيث لا يُدرَك قاع</span>
+<span class="w">الغَريق المَحْزون</span><span class="g">الذي غمرته اللجّةُ فهو يكابد — حزنُه حزنُ مَن رأى الدرَّ ولم يملك حملَه</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">إلهي، الدرُّ كلُّه لك: أنت وحدَك مَن يُثيره من اللجّة — وأمّا أنا فغريقٌ في بحرك، محزونٌ لا على الغرق، بل على أنّ يديَّ لا تتّسعان لما رأيت.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha">رجعُ بحرِ البيت الثالث — لكنّ الغوّاصَ الواثق («تغوص») صار غريقًا: هذه المسافةُ بين البيتين هي مسارُ القصيدة كلُّه. والالتفاتُ إلى النداء («يا إلهي») أولُ خطابٍ مباشرٍ لله في القصيدة — لم يأتِ إلا بعد السجدة: لا يصحّ النداءُ قبل الانكسار. بيتٌ يتنفّس بصدق المنكسر، وهو أرقُّ أبيات القصيدة.</p>
+</div>
+
+<!-- BAYT 29 -->
+<div class="bayt" id="b29">
+<div class="num">البيت ٢٩ — الخاتمة: الحلقة</div>
+<div class="verse"><span class="vs">وَرَجَعْتُ نَحْوَ البَدْءِ بَعْدَ خِتامِهِ</span><span class="vsep">‖</span><span class="vs">فَقَرَأْتُهو، فَالخَتْمُ بَدْءٌ مَكْنونْ</span></div>
+<div class="blocktitle">المفردات</div>
+<div class="words">
+<span class="w">رَجَعْتُ نَحْوَ البَدْء</span><span class="g">عُدتُ من آخر المصحف إلى فاتحته — سنّةُ أهل الختم: مَن ختم افتتح</span>
+<span class="w">الخَتْم</span><span class="g">بلوغُ آخر الكتاب</span>
+<span class="w">مَكْنون</span><span class="g">المصونُ المحفوظ — الكلمةُ نفسُها التي فُتحت بها القصيدة، تعود خاتمةً لها عمدًا</span>
+</div>
+<div class="blocktitle">المعنى</div>
+<p class="meaning">وختمتُه — فرجعتُ إلى أوله فقرأتُه من جديد: فإذا خَتمُه ليس نهايةً بل بدءٌ مكنونٌ كان مدّخرًا لي في حِجر الفاتحة — كتابٌ دائرٌ لا ينقضي، يُتلى أبدًا.</p>
+<div class="blocktitle">البلاغة والبناء</div>
+<p class="balagha"><strong>ردُّ المقطعِ على المطلع</strong>: آخرُ كلمةٍ في القصيدة هي أولُ قافيةٍ فيها — «المَكْنونْ» — عمدًا، فالقصيدةُ نفسُها حلقةٌ تعود إلى بدئها كما يعود قارئُ الكتاب من خاتمته إلى فاتحته. وعودةُ القافية بعد ثمانيةٍ وعشرين بيتًا ليست إيطاءً معيبًا (العيبُ في التكرار القريب)، بل براعةُ مقطعٍ مقصودة: الشكلُ يفعل ما يقول. وبعد المعجم كلِّه — من المطحون إلى المكنون — يرسو الختامُ على الكلمة التي وصف بها التنزيلُ نفسَه: <span class="quran">﴿في كِتابٍ مَكْنونٍ﴾</span>.</p>
+<div class="math"><span class="seal">✓ مُحقَّق</span> <strong>قياسُ الحلقة:</strong> آخرُ سور المصحف (الناس) أقربُ إلى أوله (الفاتحة) في فضاء المعاني قربًا دالًّا إحصائيًّا (z = −4.17) — البنيةُ المقيسة نفسُها «تَرجع نحو البدء»: الكتابُ حلقةٌ تُدار تلاوتُها أبدًا، لا خطٌّ ينتهي. وبهذا القياس خُتمت القصيدة: حتى خاتمتُها اكتشافٌ محسوب.</div>
+</div>
+
+</section>
+
+<!-- ===================== HONESTY ===================== -->
+<section id="honesty">
+<h2>ميثاقُ الصدق</h2>
+<div class="h2sub">قصيدةٌ لا تقول إلا ما يَثبُت — هذا شرطُ قوّتها</div>
+<div class="honest">
+<div class="row">
+<div class="col yes">
+<h3>✓ ما تقوم عليه القصيدة — محقَّقٌ بالقياس</h3>
+<ul>
+<li>النونُ تختم ٥٠٫١٪ من الآيات (٣١٢٤/٦٢٣٦) — رويُّ القصيدة</li>
+<li>النونُ ثالثُ الحروف شيوعًا (٨٫٢٥٪ &gt; الميم ٨٫٠٨٪)</li>
+<li>ترتيبُ السور طريقٌ أقصرُ مقيس (z = −11.46) — لوحةُ القافلة والنجوم</li>
+<li>تعامدُ اللفظ والمعنى (r = −0.86) — السَّدى واللُّحمة، النارُ والغيث</li>
+<li>تناقصُ أطوال السور بقانونٍ مضبوط (R² = 0.986) — العرجون</li>
+<li>الإخلاصُ مركزُ المصحف هندسيًّا (١/١١٤) — قلبُ القصيدة بيت ١٥</li>
+<li>آخرُ المصحف يعانق أولَه (z = −4.17) — بيتُ الخاتمة</li>
+</ul>
+</div>
+<div class="col no">
+<h3>✗ ما تهجوه القصيدة — منقوضٌ بالقياس نفسِه</h3>
+<ul>
+<li>«شيفرة-١٩»: قاعدةُ القسمة المزعومة باطلةٌ إحصائيًّا</li>
+<li>«النسبة الذهبية» و«متواليات» الأطوال: لا وجودَ لها عند الفحص</li>
+<li>«التوازنات اللفظية» الشائعة: أغلبُها انتقاءٌ متحيِّزٌ يسقط أمام خطّ الأساس</li>
+<li>دعوى «الحلقة الكلية» للمصحف كلِّه: منقوضة (z = −4.87 عكسيّة) — لذا لم تدّعِها القصيدةُ، واكتفت بحلقة الخاتمة الثابتة</li>
+</ul>
+<p class="dim" style="margin-top:10px">المنهجُ الذي نقضَ هذه الدعاوى هو نفسُه الذي أثبت تلك القوانين — <strong>مَن صدَق في النفي وُثِق به في الإثبات.</strong></p>
+</div>
+</div>
+</div>
+<div class="panel">
+<p class="center" style="margin:0">وأدبُ الختام: هذه القصيدةُ — مهما بلغت — شاهدُ عجزٍ لا منافِس: أعلى ما يقدر عليه الشعرُ في هذا الباب أن يقيس المسافةَ بينه وبين الكتاب بصدق، ثم يسجد عندها. <span class="gold">فقوّتُها الحقيقيةُ ليست في أنها بلغت — بل في أنها <em>برهنت لماذا لا يَبلُغ أحد</em>.</span></p>
+</div>
+</section>
+
+<footer>
+<div class="ornament">۞ ❖ ۞</div>
+<div class="seal-end">تَمَّتِ النونيّةُ — فَالخَتْمُ بَدْءٌ مَكْنونْ</div>
+<p class="dim">عَجْزي إعْجازُهُ — قصيدةٌ على الكامل التامّ، مقطوعةُ الضرب، مقيّدةُ القافية على رويِّ النون<br>تسعةٌ وعشرون بيتًا: ١٤ + ١ + ١٤ — والقلبُ توحيد</p>
+</footer>
+
+</div>
+</body>
+</html>
