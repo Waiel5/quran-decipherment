@@ -13,7 +13,7 @@ result commit remain visible here.
 
 | ID | Family | Preregistration | Prereg commit | Tests in family | Decision threshold | Data freeze | Status | Result |
 |---|---|---|---|---:|---:|---|---|---|
-| H-NEW-2540 | MORPH-2026-07-11-A | `prereg-h-new-2540-form-v-valency.md` | initial `333e5fa0c`; stricter pre-run amendment pending | 4 | Bonferroni α = 0.0125; strict gate = 0.005 | QAC v0.4 `a1d129…`; EQTB `a303c2…` | AMENDED BEFORE RUN; not run | pending |
+| H-NEW-2540 | MORPH-2026-07-11-A | `prereg-h-new-2540-form-v-valency.md` | initial `333e5fa0c`; two-null amendment `df8a4c9d4`; final pre-run audit pending | 4 | raw p < 0.00125; corrected p < 0.005 | QAC v0.4 `a1d129…`; EQTB `a303c2…` | FINAL PRE-RUN AUDIT; not run | pending |
 
 ## Registration rules
 
