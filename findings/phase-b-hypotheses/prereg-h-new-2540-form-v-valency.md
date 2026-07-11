@@ -2,20 +2,29 @@
 id: H-NEW-2540
 title: Form II to Form V as a directed valency-reducing relation
 date: 2026-07-11
-status: LOCKED-BEFORE-COMPUTATION
+status: AMENDED-AND-LOCKED-BEFORE-COMPUTATION
 author: Waiel Al-Shujaa
 family: MORPH-2026-07-11-A
 seed: 20260509
 n_permutations: 10000
-tests_in_family: 2
-alpha_bonferroni: 0.025
+tests_in_family: 4
+alpha_bonferroni: 0.0125
+strict_novelty_gate: 0.005
 ---
 
 # PRE-REGISTRATION — H-NEW-2540 — Does Form II→V reduce overt direct-object realization within roots?
 
-This file is committed before the analysis script exists or is run. Its full
-SHA-256 will be embedded as a fixed literal in the script. Runtime verification
-must fail if this file changes.
+The initial version of this file was committed before the analysis script existed
+or was run. The final amended SHA-256 will be embedded as a fixed literal in the
+script. Runtime verification must fail if this file changes.
+
+**Pre-run amendment, also committed before corpus computation:** after the first
+registration commit, reconciliation with `docs/statistical-rigor-protocol.md` found
+that the older project standard requires two null models and a strict novel-result
+gate below 0.005. A script skeleton and synthetic self-check existed, but neither
+QAC nor EQTB had been read by that script. Sections 5 and 7 now require both a
+root-unit sign-flip null and a token-label permutation null for each hypothesis.
+Git preserves the initial registration and this stricter amendment separately.
 
 ## 1. Formal claim and guardrail
 
@@ -97,24 +106,32 @@ The statistic is the weighted within-root rate difference:
 
 - `A = II`, `B = V`.
 - **Locked direction:** `T_II,V > 0`.
-- Null: independently swap the complete II and V outcome/count cells within each
+- Null A: independently swap the complete II and V outcome/count cells within each
   root with probability 0.5, preserving roots, form sample sizes, object outcomes,
   and the number of paired roots.
-- 10,000 swaps with `random.Random(20260509)`.
-- One-sided `p = (1 + #{T_perm >= T_obs}) / 10001`.
-- PASS iff direction is positive and `p < 0.025`.
+- Null B: within each root, preserve `n_II`, `n_V`, and the root's total number of
+  object-positive tokens, then randomly reallocate those object labels across the
+  root's II+V token slots. This is a conditional token-level independence null and
+  does not assume whole form cells are exchangeable.
+- 10,000 draws per Monte Carlo null with independent
+  `random.Random(20260509)` streams.
+- One-sided `p = (1 + #{T_perm >= T_obs}) / 10001` for each Monte Carlo null.
+- PASS iff direction is positive and **both** nulls give `p < 0.005`.
 
 ### H2 — secondary Form III→VI contraction
 
 - `A = III`, `B = VI`.
 - **Locked direction:** `T_III,VI > 0`.
-- Same extraction and statistic.
+- Same extraction, statistic, and two nulls.
 - Because at most 12 paired roots exist, enumerate all `2^R` root-label swaps when
-  `R <= 20`; otherwise use the seeded 10,000-swap null.
-- PASS iff direction is positive and exact/permutation `p < 0.025`.
+  `R <= 20`; otherwise use the seeded 10,000-swap Null A. Null B uses 10,000
+  seeded conditional token reallocations.
+- PASS iff direction is positive and both exact/permutation p-values are `< 0.005`.
 - A NULL is expected to be potentially power-limited and is still published.
 
-Bonferroni family `k=2`; `alpha_bon = 0.025`.
+The family contains four registered inferences: H1×{Null A, Null B} and
+H2×{Null A, Null B}. Bonferroni gives `alpha_bon = 0.0125`; the project-wide
+novelty rule is stricter, so the decision gate is `0.005` for all four.
 
 ## 6. Robustness and negative controls
 
@@ -141,6 +158,9 @@ These are reported but do not replace H1/H2:
   secondary or a changed threshold.
 - Any result remains an association in this Quran/EQTB annotation. It is not
   Quran-specific without a matched Classical-Arabic control corpus.
+- Even a dual PASS is `QURAN-INTERNAL SUPPORT`, not a full cross-corpus Phase-B
+  finding under `docs/statistical-rigor-protocol.md` §3, until a matched
+  Classical-Arabic dependency-treebank control is registered and passed.
 
 ## 8. Required immutable run record
 
