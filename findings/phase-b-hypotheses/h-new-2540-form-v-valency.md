@@ -84,6 +84,42 @@ bias by construction. The prereg's insistence on two nulls is what makes this ch
 
 ---
 
+## 2b. Post-hoc corroboration through an EQTB-free channel
+
+**Not pre-registered. This is a robustness check, not a confirmatory test, and it is
+reported as such.** It was run after the primary result, prompted by the circularity
+threat in §7.2.
+
+The primary outcome depends on EQTB `Obj` edges. If the treebank's annotators used
+morphological form as a cue when assigning those edges, the finding is partly circular.
+So: re-measure the same contrast through a channel that touches **no dependency
+annotation at all** — the **attached object pronoun**, a clitic that is visible in QAC's
+morphological segmentation alone. A verb carries one iff a `PRON` segment follows it
+inside the same orthographic word and its person/gender/number differs from the verb's
+own subject agreement.
+
+| | Form II | Form V | gap | roots A>B / A<B / tied | exact sign test |
+|:--|:--|:--|:--|:--|:--|
+| II vs V | 107/347 = **0.308** | 24/256 = **0.094** | **+0.215** | 18 / 1 / 4 | **p = 3.8×10⁻⁵** |
+| III vs VI | 13/47 = **0.277** | **0/33 = 0.000** | **+0.277** | 5 / 0 / 7 | p = 0.031 |
+
+**No Form VI token of any paired root carries an object pronoun — zero out of 33.**
+
+The direction and the root-level pattern replicate through a channel that requires only
+that QAC correctly segmented a clitic — a far lower-inference judgment than a dependency
+edge. The absolute rates are much lower (0.308 vs 0.749) because a suffixed pronoun is
+only one way to realize an object; full nominal objects are invisible to this channel.
+That is expected and is why this corroborates rather than replaces the primary test.
+
+**What this does and does not settle.** It does not make the result independent — same
+roots, same tokens, and QAC is EQTB's own upstream source for morphology. It does
+substantially narrow threat §7.2: for the circularity story to survive, the bias would
+have to sit in QAC's *segmentation of enclitic pronouns*, which is close to an
+orthographic fact, rather than in EQTB's syntactic judgments. Human review of the
+blinded validation sample remains the thing that would actually close it.
+
+---
+
 ## 3. The perfect dissociations
 
 Six roots split 100% / 0% — every Form II token heads an object, no Form V token does.
