@@ -1,0 +1,1339 @@
+{
+  "finding_id": "H-NEW-2790",
+  "partial": true,
+  "prereg_sha256": "6bb7e77a100810e31743734cd105407d6d21cf6d477dee1a9096c5ebde6014a8",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2790-flagged-batch.md",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519,
+    "published_used_in_A0_only": 20260419
+  },
+  "alpha_bon": 0.01,
+  "alpha_C4_published": 0.008333333333333333,
+  "drift_channels": {
+    "mushaf": {
+      "log_word_count": -0.9342,
+      "verse_count": -0.8446,
+      "mean_verse_length": -0.7131
+    },
+    "noldeke": {
+      "log_word_count": 0.6892,
+      "verse_count": 0.3903,
+      "mean_verse_length": 0.9038
+    },
+    "cross_mushaf_vs_noldeke": -0.6551
+  },
+  "h_new_183_length_only_baseline_probe": {
+    "declared_features": [
+      "log_length"
+    ],
+    "published_r2": 0.44619506582911894,
+    "rho_log_length_vs_noldeke": 0.6775,
+    "rho_log_length_vs_my_log_word_count": 0.9995,
+    "rho_log_length_vs_verse_count": 0.9096
+  },
+  "cells": {
+    "PRIMARY": {
+      "C1_reconA_ridge": {
+        "claim": "C1-RECON-A",
+        "model": "ridge",
+        "ordering": "mushaf",
+        "n_features": 15,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score"
+        ],
+        "A0": {
+          "published_r2": 0.759,
+          "recomputed_r2": 0.8025597627071519,
+          "mae": 8.959444237502595,
+          "tolerance": 0.03,
+          "reproduced": false,
+          "seed_used": 20260419,
+          "rf_trees": null
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.8377504188537745,
+          "mae_S1": 7.999780634147591,
+          "r2_S3": 0.8364648769497898,
+          "mae_S3": 8.087761194366347,
+          "r2_full": 0.8025597627071519,
+          "mae_full": 8.959444237502595,
+          "delta_r2_full_minus_S3": -0.03390511424263787,
+          "rf_trees": null
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 500,
+          "observed_r2": 0.8025597627071519,
+          "null_mean": 0.719054529248075,
+          "null_sd": 0.02803630757060707,
+          "null_p50": 0.7191353963016085,
+          "null_p95": 0.7631777885467431,
+          "null_p99": 0.7802811982987483,
+          "null_max": 0.8004984278343326,
+          "observed_pctile": 100.0,
+          "p": 0.001996007984031936,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 100,
+          "observed_r2": 0.8025597627071519,
+          "null_mean": 0.8100762093466058,
+          "null_sd": 0.016008157939059756,
+          "null_p50": 0.8112646968928554,
+          "null_p95": 0.8355887055553504,
+          "null_p99": 0.8360299349856956,
+          "null_max": 0.8406213259670114,
+          "observed_pctile": 28.999999999999996,
+          "p": 0.7128712871287128,
+          "beats_max": false
+        },
+        "A3": {
+          "r2_per_word": 0.7923085103766101,
+          "delta": -0.010251252330541805,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "DID-NOT-REPRODUCE"
+      },
+      "C1_reconA_rf": {
+        "claim": "C1-RECON-A",
+        "model": "rf",
+        "ordering": "mushaf",
+        "n_features": 15,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score"
+        ],
+        "A0": {
+          "published_r2": 0.817,
+          "recomputed_r2": 0.8485115815718597,
+          "mae": 7.179228070175439,
+          "tolerance": 0.05,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": 500
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.7812558181036209,
+          "mae_S1": 8.8393975737956,
+          "r2_S3": 0.8118560904079756,
+          "mae_S3": 7.767519388749651,
+          "r2_full": 0.8414262817682914,
+          "mae_full": 7.291578947368421,
+          "delta_r2_full_minus_S3": 0.0295701913603158,
+          "rf_trees": 200
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 100,
+          "observed_r2": 0.8414262817682914,
+          "null_mean": 0.7581429400194406,
+          "null_sd": 0.021251717009758177,
+          "null_p50": 0.7608145886069541,
+          "null_p95": 0.7893091644762155,
+          "null_p99": 0.7959395196857091,
+          "null_max": 0.7962126194285251,
+          "observed_pctile": 100.0,
+          "p": 0.009900990099009901,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 20,
+          "observed_r2": 0.8414262817682914,
+          "null_mean": 0.8224011182944857,
+          "null_sd": 0.020269883594924373,
+          "null_p50": 0.8242569752536402,
+          "null_p95": 0.8499536024280595,
+          "null_p99": 0.8591691842672283,
+          "null_max": 0.8614730797270206,
+          "observed_pctile": 80.0,
+          "p": 0.23809523809523808,
+          "beats_max": false
+        },
+        "A3": {
+          "r2_per_word": 0.8485695921508272,
+          "delta": 0.007143310382535795,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "GENRE-SHARED-BUT-LARGER"
+      },
+      "C1_reconB_ridge": {
+        "claim": "C1-RECON-B",
+        "model": "ridge",
+        "ordering": "mushaf",
+        "n_features": 15,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "divine_name_density",
+          "qul_density",
+          "legal_term_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score"
+        ],
+        "A0": {
+          "published_r2": 0.759,
+          "recomputed_r2": 0.8040666667265896,
+          "mae": 9.163316946231777,
+          "tolerance": 0.03,
+          "reproduced": false,
+          "seed_used": 20260419,
+          "rf_trees": null
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.8377504188537745,
+          "mae_S1": 7.999780634147591,
+          "r2_S3": 0.8364648769497898,
+          "mae_S3": 8.087761194366347,
+          "r2_full": 0.8040666667265896,
+          "mae_full": 9.163316946231777,
+          "delta_r2_full_minus_S3": -0.03239821022320022,
+          "rf_trees": null
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 500,
+          "observed_r2": 0.8040666667265896,
+          "null_mean": 0.7176939410172554,
+          "null_sd": 0.02798277035115536,
+          "null_p50": 0.7179004085987797,
+          "null_p95": 0.7628100181064715,
+          "null_p99": 0.7799070633182464,
+          "null_max": 0.8011297142561109,
+          "observed_pctile": 100.0,
+          "p": 0.001996007984031936,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 100,
+          "observed_r2": 0.8040666667265896,
+          "null_mean": 0.8091944834906972,
+          "null_sd": 0.016829461981209163,
+          "null_p50": 0.810151503820109,
+          "null_p95": 0.8345534970460237,
+          "null_p99": 0.8392341305774488,
+          "null_max": 0.8418223679336786,
+          "observed_pctile": 32.0,
+          "p": 0.6831683168316832,
+          "beats_max": false
+        },
+        "A3": {
+          "r2_per_word": 0.7892031052215424,
+          "delta": -0.014863561505047196,
+          "columns_swapped": [
+            "divine_name_density",
+            "qul_density",
+            "legal_term_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "DID-NOT-REPRODUCE"
+      },
+      "C1_reconB_rf": {
+        "claim": "C1-RECON-B",
+        "model": "rf",
+        "ordering": "mushaf",
+        "n_features": 15,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "divine_name_density",
+          "qul_density",
+          "legal_term_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score"
+        ],
+        "A0": {
+          "published_r2": 0.817,
+          "recomputed_r2": 0.8466934979526538,
+          "mae": 7.305087719298245,
+          "tolerance": 0.05,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": 500
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.7812558181036209,
+          "mae_S1": 8.8393975737956,
+          "r2_S3": 0.8118560904079756,
+          "mae_S3": 7.767519388749651,
+          "r2_full": 0.8400611684656042,
+          "mae_full": 7.371929824561403,
+          "delta_r2_full_minus_S3": 0.02820507805762862,
+          "rf_trees": 200
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 100,
+          "observed_r2": 0.8400611684656042,
+          "null_mean": 0.7584139421761406,
+          "null_sd": 0.020443921395510888,
+          "null_p50": 0.7603624527652336,
+          "null_p95": 0.7857015099937223,
+          "null_p99": 0.7959727741682023,
+          "null_max": 0.7994684803871934,
+          "observed_pctile": 100.0,
+          "p": 0.009900990099009901,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 20,
+          "observed_r2": 0.8400611684656042,
+          "null_mean": 0.8226640623417915,
+          "null_sd": 0.020576110285911622,
+          "null_p50": 0.8234549654725501,
+          "null_p95": 0.8517738850772564,
+          "null_p99": 0.8587066927725239,
+          "null_max": 0.8604398946963407,
+          "observed_pctile": 70.0,
+          "p": 0.3333333333333333,
+          "beats_max": false
+        },
+        "A3": {
+          "r2_per_word": 0.8516507280127985,
+          "delta": 0.011589559547194317,
+          "columns_swapped": [
+            "divine_name_density",
+            "qul_density",
+            "legal_term_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "GENRE-SHARED-BUT-LARGER"
+      },
+      "C2_ridge": {
+        "claim": "C2",
+        "model": "ridge",
+        "ordering": "noldeke",
+        "n_features": 12,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality"
+        ],
+        "A0": {
+          "published_r2": 0.836,
+          "recomputed_r2": 0.8355931448330426,
+          "mae": 8.743641515751934,
+          "tolerance": 0.03,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": null
+        },
+        "A1": {
+          "channel": "mean_verse_length",
+          "r2_S1": 0.8005313405594742,
+          "mae_S1": 11.039728045236362,
+          "r2_S3": 0.7943271619845079,
+          "mae_S3": 10.747941651924135,
+          "r2_full": 0.8355931448330426,
+          "mae_full": 8.743641515751934,
+          "delta_r2_full_minus_S3": 0.041265982848534666,
+          "rf_trees": null
+        },
+        "A2": {
+          "channel": "mean_verse_length",
+          "k_strata": 5,
+          "n_perm": 500,
+          "observed_r2": 0.8355931448330426,
+          "null_mean": 0.72977321472129,
+          "null_sd": 0.023575106724226285,
+          "null_p50": 0.7288741333309796,
+          "null_p95": 0.7710753915671464,
+          "null_p99": 0.7860859428957866,
+          "null_max": 0.8020407594606579,
+          "observed_pctile": 100.0,
+          "p": 0.001996007984031936,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "mean_verse_length",
+          "k_strata": 10,
+          "n_perm": 100,
+          "observed_r2": 0.8355931448330426,
+          "null_mean": 0.7676300123420933,
+          "null_sd": 0.01720911378956161,
+          "null_p50": 0.766321199162018,
+          "null_p95": 0.798345543233215,
+          "null_p99": 0.8009578120295685,
+          "null_max": 0.8041062389264799,
+          "observed_pctile": 100.0,
+          "p": 0.009900990099009901,
+          "beats_max": true
+        },
+        "A3": {
+          "r2_per_word": 0.8145801468534548,
+          "delta": -0.021012997979587777,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "GENRE-SHARED-BUT-LARGER"
+      },
+      "C2_rf": {
+        "claim": "C2",
+        "model": "rf",
+        "ordering": "noldeke",
+        "n_features": 12,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality"
+        ],
+        "A0": {
+          "published_r2": 0.844,
+          "recomputed_r2": 0.8438086747210465,
+          "mae": 8.348210526315789,
+          "tolerance": 0.05,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": 500
+        },
+        "A1": {
+          "channel": "mean_verse_length",
+          "r2_S1": 0.7134650258708535,
+          "mae_S1": 13.589191503063212,
+          "r2_S3": 0.7696966269528218,
+          "mae_S3": 10.644216966026175,
+          "r2_full": 0.8432105520341832,
+          "mae_full": 8.42328947368421,
+          "delta_r2_full_minus_S3": 0.07351392508136134,
+          "rf_trees": 200
+        },
+        "A2": {
+          "channel": "mean_verse_length",
+          "k_strata": 5,
+          "n_perm": 100,
+          "observed_r2": 0.8432105520341832,
+          "null_mean": 0.7540551430145199,
+          "null_sd": 0.020913840328794526,
+          "null_p50": 0.7527352341993885,
+          "null_p95": 0.7851668242137664,
+          "null_p99": 0.7947286414207894,
+          "null_max": 0.7993921566999453,
+          "observed_pctile": 100.0,
+          "p": 0.009900990099009901,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "mean_verse_length",
+          "k_strata": 10,
+          "n_perm": 20,
+          "observed_r2": 0.8432105520341832,
+          "null_mean": 0.7655687232336323,
+          "null_sd": 0.01825028356524422,
+          "null_p50": 0.765395668576983,
+          "null_p95": 0.795312522792167,
+          "null_p99": 0.798011935797169,
+          "null_max": 0.7986867890484195,
+          "observed_pctile": 100.0,
+          "p": 0.047619047619047616,
+          "beats_max": true
+        },
+        "A3": {
+          "r2_per_word": 0.8391397829124563,
+          "delta": -0.0040707691217268804,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "GENRE-SHARED-BUT-LARGER"
+      },
+      "C3_rf": {
+        "claim": "C3",
+        "model": "rf",
+        "ordering": "mushaf",
+        "n_features": 29,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score",
+          "phon_labial",
+          "phon_alveolar",
+          "phon_palatal",
+          "phon_velar",
+          "phon_pharyngeal",
+          "phon_glottal",
+          "phon_emphatic",
+          "phon_voiced",
+          "phon_continuant",
+          "kl_from_corpus",
+          "hurst_verse_len",
+          "lz_norm_simple",
+          "entropy_rate_surah",
+          "alpha_beta_residual"
+        ],
+        "A0": {
+          "published_r2": 0.8485,
+          "recomputed_r2": 0.848516936603147,
+          "mae": 7.243210526315789,
+          "tolerance": 0.05,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": 500
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.7812558181036209,
+          "mae_S1": 8.8393975737956,
+          "r2_S3": 0.8118560904079756,
+          "mae_S3": 7.767519388749651,
+          "r2_full": 0.8459589329904214,
+          "mae_full": 7.225833333333334,
+          "delta_r2_full_minus_S3": 0.03410284258244578,
+          "rf_trees": 200
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 100,
+          "observed_r2": 0.8459589329904214,
+          "null_mean": 0.7581072701099614,
+          "null_sd": 0.019116040755739583,
+          "null_p50": 0.759256530446933,
+          "null_p95": 0.7914913690893258,
+          "null_p99": 0.7951040639436221,
+          "null_max": 0.8058847242866689,
+          "observed_pctile": 100.0,
+          "p": 0.009900990099009901,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 20,
+          "observed_r2": 0.8459589329904214,
+          "null_mean": 0.8244819521982137,
+          "null_sd": 0.014905692784027032,
+          "null_p50": 0.8191080571474858,
+          "null_p95": 0.8482908521496122,
+          "null_p99": 0.8510598802373383,
+          "null_max": 0.8517521372592698,
+          "observed_pctile": 90.0,
+          "p": 0.14285714285714285,
+          "beats_max": false
+        },
+        "A3": {
+          "r2_per_word": 0.8511285302039245,
+          "delta": 0.005169597213503185,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "GENRE-SHARED-BUT-LARGER"
+      },
+      "C3_ridge": {
+        "claim": "C3",
+        "model": "ridge",
+        "ordering": "mushaf",
+        "n_features": 29,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score",
+          "phon_labial",
+          "phon_alveolar",
+          "phon_palatal",
+          "phon_velar",
+          "phon_pharyngeal",
+          "phon_glottal",
+          "phon_emphatic",
+          "phon_voiced",
+          "phon_continuant",
+          "kl_from_corpus",
+          "hurst_verse_len",
+          "lz_norm_simple",
+          "entropy_rate_surah",
+          "alpha_beta_residual"
+        ],
+        "A0": {
+          "published_r2": 0.7395,
+          "recomputed_r2": 0.7395490015311572,
+          "mae": 10.655710803998831,
+          "tolerance": 0.03,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": null
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.8377504188537745,
+          "mae_S1": 7.999780634147591,
+          "r2_S3": 0.8364648769497898,
+          "mae_S3": 8.087761194366347,
+          "r2_full": 0.7395490015311572,
+          "mae_full": 10.655710803998831,
+          "delta_r2_full_minus_S3": -0.09691587541863256,
+          "rf_trees": null
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 500,
+          "observed_r2": 0.7395490015311572,
+          "null_mean": 0.6723700865328479,
+          "null_sd": 0.043245709180132465,
+          "null_p50": 0.6756527257263436,
+          "null_p95": 0.7385770505054686,
+          "null_p99": 0.7579254634364279,
+          "null_max": 0.7903648700016793,
+          "observed_pctile": 95.39999999999999,
+          "p": 0.04790419161676647,
+          "beats_max": false
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 100,
+          "observed_r2": 0.7395490015311572,
+          "null_mean": 0.7629452731806626,
+          "null_sd": 0.030081648342324043,
+          "null_p50": 0.7676321868676095,
+          "null_p95": 0.798976531774797,
+          "null_p99": 0.80954576521919,
+          "null_max": 0.8233902731830999,
+          "observed_pctile": 12.0,
+          "p": 0.8811881188118812,
+          "beats_max": false
+        },
+        "A3": {
+          "r2_per_word": 0.768777053555122,
+          "delta": 0.029228052023964834,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "DOES-NOT-SURVIVE"
+      },
+      "C4": {
+        "claim": "C4",
+        "finding": "H-NEW-74",
+        "qul_total_recovered": 332.0,
+        "phase_order": [
+          "Early Meccan",
+          "Middle Meccan",
+          "Late Meccan",
+          "Medinan"
+        ],
+        "per_verse": {
+          "n": [
+            48,
+            21,
+            21,
+            24
+          ],
+          "mean": [
+            1.7414526952085183,
+            4.888600350164323,
+            8.948015313920614,
+            4.925924456742255
+          ],
+          "median": [
+            0.0,
+            2.2222222222222223,
+            5.339805825242719,
+            3.3435314685314683
+          ],
+          "H_uncorrected": 35.357021630162365,
+          "H_tie_corrected": 40.408562461385394,
+          "tie_correction": 0.8749883558453656,
+          "epsilon_squared": 0.340077840558049
+        },
+        "per_word": {
+          "n": [
+            48,
+            21,
+            21,
+            24
+          ],
+          "mean": [
+            0.43428233089433194,
+            0.429054741383094,
+            0.5064622338882806,
+            0.2553337806093978
+          ],
+          "median": [
+            0.0,
+            0.21291696238466998,
+            0.30977189524077725,
+            0.172669605536849
+          ],
+          "H_uncorrected": 30.189923177509,
+          "H_tie_corrected": 34.50163149166559,
+          "tie_correction": 0.8750288572527896,
+          "epsilon_squared": 0.28637846810605083
+        },
+        "A2": {
+          "per_verse": {
+            "observed_H": 40.408562461385394,
+            "n_perm": 10000,
+            "null_mean_stratified": 31.17277681628294,
+            "null_p95_stratified": 37.02703701336498,
+            "p_stratified": 0.007099290070992901,
+            "null_mean_free": 2.996506987355183,
+            "p_free_shuffle": 9.999000099990002e-05
+          },
+          "per_word": {
+            "observed_H": 34.50163149166559,
+            "n_perm": 10000,
+            "null_mean_stratified": 24.282947803259596,
+            "null_p95_stratified": 30.166873533869865,
+            "p_stratified": 0.004399560043995601,
+            "null_mean_free": 3.0346031220623946,
+            "p_free_shuffle": 9.999000099990002e-05
+          }
+        },
+        "A0_reproduced": true,
+        "epsilon_squared_drop_fraction": 0.15790317994221692,
+        "verdict": "SURVIVES"
+      },
+      "C5": {
+        "claim": "C5",
+        "finding": "H-NEW-231",
+        "spearman_kl_vs_logtokens": -0.9858322636862499,
+        "pearson": -0.8763387442558225,
+        "loocv_r2_length_only": 0.7552336903419452,
+        "D4_passes": true
+      }
+    },
+    "REPLICATION": {
+      "C1_reconA_ridge": {
+        "claim": "C1-RECON-A",
+        "model": "ridge",
+        "ordering": "mushaf",
+        "n_features": 15,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score"
+        ],
+        "A0": {
+          "published_r2": 0.759,
+          "recomputed_r2": 0.8025597627071519,
+          "mae": 8.959444237502595,
+          "tolerance": 0.03,
+          "reproduced": false,
+          "seed_used": 20260419,
+          "rf_trees": null
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.8377504188537745,
+          "mae_S1": 7.999780634147591,
+          "r2_S3": 0.8364648769497898,
+          "mae_S3": 8.087761194366347,
+          "r2_full": 0.8025597627071519,
+          "mae_full": 8.959444237502595,
+          "delta_r2_full_minus_S3": -0.03390511424263787,
+          "rf_trees": null
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 500,
+          "observed_r2": 0.8025597627071519,
+          "null_mean": 0.7175255328985745,
+          "null_sd": 0.028999271738747064,
+          "null_p50": 0.7202745303775604,
+          "null_p95": 0.7625184714026061,
+          "null_p99": 0.7795334942843269,
+          "null_max": 0.79618448291577,
+          "observed_pctile": 100.0,
+          "p": 0.001996007984031936,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 100,
+          "observed_r2": 0.8025597627071519,
+          "null_mean": 0.8144995410764221,
+          "null_sd": 0.017869263147827167,
+          "null_p50": 0.8160124697399358,
+          "null_p95": 0.8388586584732751,
+          "null_p99": 0.842351613251391,
+          "null_max": 0.8480046922489357,
+          "observed_pctile": 24.0,
+          "p": 0.7623762376237624,
+          "beats_max": false
+        },
+        "A3": {
+          "r2_per_word": 0.7923085103766101,
+          "delta": -0.010251252330541805,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "DID-NOT-REPRODUCE"
+      },
+      "C1_reconA_rf": {
+        "claim": "C1-RECON-A",
+        "model": "rf",
+        "ordering": "mushaf",
+        "n_features": 15,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score"
+        ],
+        "A0": {
+          "published_r2": 0.817,
+          "recomputed_r2": 0.8485115815718597,
+          "mae": 7.179228070175439,
+          "tolerance": 0.05,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": 500
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.7892318794096386,
+          "mae_S1": 8.712089589504064,
+          "r2_S3": 0.821939282999298,
+          "mae_S3": 7.694901271486797,
+          "r2_full": 0.8476095026427168,
+          "mae_full": 7.2634649122807025,
+          "delta_r2_full_minus_S3": 0.025670219643418868,
+          "rf_trees": 200
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 100,
+          "observed_r2": 0.8476095026427168,
+          "null_mean": 0.7535530050667261,
+          "null_sd": 0.0227325121492985,
+          "null_p50": 0.7573523753062918,
+          "null_p95": 0.7845404012676941,
+          "null_p99": 0.7928025170753934,
+          "null_max": 0.8005271588262692,
+          "observed_pctile": 100.0,
+          "p": 0.009900990099009901,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 20,
+          "observed_r2": 0.8476095026427168,
+          "null_mean": 0.8214501810109152,
+          "null_sd": 0.014507968322076065,
+          "null_p50": 0.8263685583524027,
+          "null_p95": 0.8390721118547619,
+          "null_p99": 0.8450460081225573,
+          "null_max": 0.846539482189506,
+          "observed_pctile": 100.0,
+          "p": 0.047619047619047616,
+          "beats_max": true
+        },
+        "A3": {
+          "r2_per_word": 0.8544172870132236,
+          "delta": 0.006807784370506775,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "GENRE-SHARED-BUT-LARGER"
+      },
+      "C1_reconB_ridge": {
+        "claim": "C1-RECON-B",
+        "model": "ridge",
+        "ordering": "mushaf",
+        "n_features": 15,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "divine_name_density",
+          "qul_density",
+          "legal_term_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score"
+        ],
+        "A0": {
+          "published_r2": 0.759,
+          "recomputed_r2": 0.8040666667265896,
+          "mae": 9.163316946231777,
+          "tolerance": 0.03,
+          "reproduced": false,
+          "seed_used": 20260419,
+          "rf_trees": null
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.8377504188537745,
+          "mae_S1": 7.999780634147591,
+          "r2_S3": 0.8364648769497898,
+          "mae_S3": 8.087761194366347,
+          "r2_full": 0.8040666667265896,
+          "mae_full": 9.163316946231777,
+          "delta_r2_full_minus_S3": -0.03239821022320022,
+          "rf_trees": null
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 500,
+          "observed_r2": 0.8040666667265896,
+          "null_mean": 0.7158193626665806,
+          "null_sd": 0.029281430727987962,
+          "null_p50": 0.7185373290799486,
+          "null_p95": 0.761742462380493,
+          "null_p99": 0.7776310175098624,
+          "null_max": 0.788641212834046,
+          "observed_pctile": 100.0,
+          "p": 0.001996007984031936,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 100,
+          "observed_r2": 0.8040666667265896,
+          "null_mean": 0.8139400912168517,
+          "null_sd": 0.01825800793476612,
+          "null_p50": 0.8154610264900274,
+          "null_p95": 0.8388195152780007,
+          "null_p99": 0.8445871552741491,
+          "null_max": 0.8515538319998368,
+          "observed_pctile": 26.0,
+          "p": 0.7425742574257426,
+          "beats_max": false
+        },
+        "A3": {
+          "r2_per_word": 0.7892031052215424,
+          "delta": -0.014863561505047196,
+          "columns_swapped": [
+            "divine_name_density",
+            "qul_density",
+            "legal_term_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "DID-NOT-REPRODUCE"
+      },
+      "C1_reconB_rf": {
+        "claim": "C1-RECON-B",
+        "model": "rf",
+        "ordering": "mushaf",
+        "n_features": 15,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "divine_name_density",
+          "qul_density",
+          "legal_term_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality",
+          "verse_count",
+          "type_token_ratio",
+          "refrain_score"
+        ],
+        "A0": {
+          "published_r2": 0.817,
+          "recomputed_r2": 0.8466934979526538,
+          "mae": 7.305087719298245,
+          "tolerance": 0.05,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": 500
+        },
+        "A1": {
+          "channel": "log_word_count",
+          "r2_S1": 0.7892318794096386,
+          "mae_S1": 8.712089589504064,
+          "r2_S3": 0.821939282999298,
+          "mae_S3": 7.694901271486797,
+          "r2_full": 0.8467950861667443,
+          "mae_full": 7.380745614035088,
+          "delta_r2_full_minus_S3": 0.02485580316744629,
+          "rf_trees": 200
+        },
+        "A2": {
+          "channel": "log_word_count",
+          "k_strata": 5,
+          "n_perm": 100,
+          "observed_r2": 0.8467950861667443,
+          "null_mean": 0.7523342728377312,
+          "null_sd": 0.023410983975451483,
+          "null_p50": 0.7552221369555092,
+          "null_p95": 0.7871249939247889,
+          "null_p99": 0.7945958796743687,
+          "null_max": 0.806404015309532,
+          "observed_pctile": 100.0,
+          "p": 0.009900990099009901,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "log_word_count",
+          "k_strata": 10,
+          "n_perm": 20,
+          "observed_r2": 0.8467950861667443,
+          "null_mean": 0.8216296710880704,
+          "null_sd": 0.014242479044740908,
+          "null_p50": 0.8253371768493956,
+          "null_p95": 0.8417105069864927,
+          "null_p99": 0.843625916143861,
+          "null_max": 0.844104768433203,
+          "observed_pctile": 100.0,
+          "p": 0.047619047619047616,
+          "beats_max": true
+        },
+        "A3": {
+          "r2_per_word": 0.8541302588039934,
+          "delta": 0.007335172637249143,
+          "columns_swapped": [
+            "divine_name_density",
+            "qul_density",
+            "legal_term_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "GENRE-SHARED-BUT-LARGER"
+      },
+      "C2_ridge": {
+        "claim": "C2",
+        "model": "ridge",
+        "ordering": "noldeke",
+        "n_features": 12,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality"
+        ],
+        "A0": {
+          "published_r2": 0.836,
+          "recomputed_r2": 0.8355931448330426,
+          "mae": 8.743641515751934,
+          "tolerance": 0.03,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": null
+        },
+        "A1": {
+          "channel": "mean_verse_length",
+          "r2_S1": 0.8005313405594742,
+          "mae_S1": 11.039728045236362,
+          "r2_S3": 0.7943271619845079,
+          "mae_S3": 10.747941651924135,
+          "r2_full": 0.8355931448330426,
+          "mae_full": 8.743641515751934,
+          "delta_r2_full_minus_S3": 0.041265982848534666,
+          "rf_trees": null
+        },
+        "A2": {
+          "channel": "mean_verse_length",
+          "k_strata": 5,
+          "n_perm": 500,
+          "observed_r2": 0.8355931448330426,
+          "null_mean": 0.7289467329629051,
+          "null_sd": 0.02397431555297109,
+          "null_p50": 0.7293217716848674,
+          "null_p95": 0.7655931035246656,
+          "null_p99": 0.7832168725366365,
+          "null_max": 0.7957723468229247,
+          "observed_pctile": 100.0,
+          "p": 0.001996007984031936,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "mean_verse_length",
+          "k_strata": 10,
+          "n_perm": 100,
+          "observed_r2": 0.8355931448330426,
+          "null_mean": 0.7702888282050253,
+          "null_sd": 0.015661425667473007,
+          "null_p50": 0.7693455650978297,
+          "null_p95": 0.7967564825288389,
+          "null_p99": 0.8031127462486491,
+          "null_max": 0.805205748745452,
+          "observed_pctile": 100.0,
+          "p": 0.009900990099009901,
+          "beats_max": true
+        },
+        "A3": {
+          "r2_per_word": 0.8145801468534548,
+          "delta": -0.021012997979587777,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "GENRE-SHARED-BUT-LARGER"
+      },
+      "C2_rf": {
+        "claim": "C2",
+        "model": "rf",
+        "ordering": "noldeke",
+        "n_features": 12,
+        "features": [
+          "alpha",
+          "beta",
+          "alpha_minus_beta",
+          "log_length",
+          "mean_verse_len",
+          "allah_density",
+          "qul_density",
+          "book_ref_density",
+          "loanword_density",
+          "eschat_density",
+          "dispersion",
+          "muq_cardinality"
+        ],
+        "A0": {
+          "published_r2": 0.844,
+          "recomputed_r2": 0.8438086747210465,
+          "mae": 8.348210526315789,
+          "tolerance": 0.05,
+          "reproduced": true,
+          "seed_used": 20260419,
+          "rf_trees": 500
+        },
+        "A1": {
+          "channel": "mean_verse_length",
+          "r2_S1": 0.7126929716973947,
+          "mae_S1": 13.562170582706766,
+          "r2_S3": 0.7698676544836671,
+          "mae_S3": 10.479037211083263,
+          "r2_full": 0.8429428960531378,
+          "mae_full": 8.430307017543859,
+          "delta_r2_full_minus_S3": 0.07307524156947065,
+          "rf_trees": 200
+        },
+        "A2": {
+          "channel": "mean_verse_length",
+          "k_strata": 5,
+          "n_perm": 100,
+          "observed_r2": 0.8429428960531378,
+          "null_mean": 0.7531514454061281,
+          "null_sd": 0.022347584050235087,
+          "null_p50": 0.7540818909094591,
+          "null_p95": 0.7887405595269436,
+          "null_p99": 0.7972065747838238,
+          "null_max": 0.8061458238998805,
+          "observed_pctile": 100.0,
+          "p": 0.009900990099009901,
+          "beats_max": true
+        },
+        "A2_k10": {
+          "channel": "mean_verse_length",
+          "k_strata": 10,
+          "n_perm": 20,
+          "observed_r2": 0.8429428960531378,
+          "null_mean": 0.7673968015329782,
+          "null_sd": 0.01848928358831453,
+          "null_p50": 0.7665404859156355,
+          "null_p95": 0.8003637437172192,
+          "null_p99": 0.8113693454101779,
+          "null_max": 0.8141207458334176,
+          "observed_pctile": 100.0,
+          "p": 0.047619047619047616,
+          "beats_max": true
+        },
+        "A3": {
+          "r2_per_word": 0.8391862528097851,
+          "delta": -0.0037566432433526753,
+          "columns_swapped": [
+            "allah_density",
+            "qul_density",
+            "book_ref_density",
+            "loanword_density",
+            "eschat_density"
+          ]
+        },
+        "verdict": "GENRE-SHARED-BUT-LARGER"
+      }
+    }
+  },
+  "smoke": false,
+  "elapsed_s": 3690.8
+}

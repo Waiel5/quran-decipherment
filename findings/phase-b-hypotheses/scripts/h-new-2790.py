@@ -140,11 +140,16 @@ _got = sha256_file(P(PREREG_REL))
 if _got != PREREG_SHA256:
     die("PRE-REG SHA MISMATCH\n  expected %s\n  got      %s" % (PREREG_SHA256, _got))
 log("[lock] pre-reg %s VERIFIED" % PREREG_SHA256[:16])
-for _rel, _want in sorted(FROZEN.items()):
-    _g = sha256_file(P(_rel))
-    if _g != _want:
-        die("FROZEN INPUT MISMATCH %s\n  expected %s\n  got      %s" % (_rel, _want, _g))
-log("[lock] %d frozen inputs VERIFIED" % len(FROZEN))
+# Guarded so a `spawn`ed permutation worker does not re-hash a 20 MB morphology file
+# twelve times over. The parent verifies every input before any worker exists; a worker
+# that got a different file would have to have had it swapped mid-run.
+if __name__ == "__main__":
+    for _rel, _want in sorted(FROZEN.items()):
+        _g = sha256_file(P(_rel))
+        if _g != _want:
+            die("FROZEN INPUT MISMATCH %s\n  expected %s\n  got      %s"
+                % (_rel, _want, _g))
+    log("[lock] %d frozen inputs VERIFIED" % len(FROZEN))
 
 
 # ===========================================================================
@@ -190,20 +195,44 @@ def loocv_rf(X, y, n_estimators, seed):
     return preds
 
 
-_POOL_X = None
-_POOL_TREES = None
-_POOL_SEED = None
+def rf_loocv_r2(X, y, trees, seed):
+    """The same LOOCV RF as above, written self-contained so it can be shipped to a
+    worker process: it closes over no dynamically-loaded module, only numpy + sklearn.
+
+    Asserted bit-identical to the lifted H-NEW-183 routine at startup — see `_verify_rf`.
+    """
+    import numpy as _np
+    from sklearn.ensemble import RandomForestRegressor as _RF
+    from sklearn.model_selection import LeaveOneOut as _LOO
+
+    def _imp(A, meds=None):
+        A2 = A.copy()
+        if meds is None:
+            meds = _np.nanmedian(A2, axis=0)
+        ind = _np.where(_np.isnan(A2))
+        A2[ind] = _np.take(meds, ind[1])
+        return A2, meds
+
+    preds = _np.zeros(len(y))
+    for tr, te in _LOO().split(X):
+        Xtr, meds = _imp(X[tr])
+        Xte, _ = _imp(X[te], meds)
+        m = _RF(n_estimators=trees, max_depth=None, random_state=seed, n_jobs=1)
+        m.fit(Xtr, y[tr])
+        preds[te] = m.predict(Xte)
+    ss_res = float(_np.sum((y - preds) ** 2))
+    ss_tot = float(_np.sum((y - y.mean()) ** 2))
+    return 1.0 - ss_res / ss_tot
 
 
-def _pool_init(X, trees, seed):
-    global _POOL_X, _POOL_TREES, _POOL_SEED
-    _POOL_X, _POOL_TREES, _POOL_SEED = X, trees, seed
-
-
-def _rf_r2_worker(y_perm):
-    """One permuted-target LOOCV RF fit. Identical arithmetic to the serial path."""
-    ya = np.array(y_perm, dtype=float)
-    return r2_score(ya, loocv_rf(_POOL_X, ya, _POOL_TREES, _POOL_SEED))
+def _verify_rf(X, y):
+    """The parallel worker must be bit-identical to the lifted routine, not merely close."""
+    a = rf_loocv_r2(X, y, 200, M183.SEED)
+    b = r2_score(y, M183.loocv_rf(X, y, 200))
+    if a != b:
+        die("RF worker is not bit-identical to the lifted H-NEW-183 routine: %.15f vs %.15f"
+            % (a, b))
+    log("[MW-6] parallel RF worker asserted bit-identical to the lifted routine (%.12f)" % a)
 
 
 # ===========================================================================
@@ -358,13 +387,16 @@ def arm_A2(X_full, y, ordering, model, seed, n_perm, k, rf_trees):
         draws.append(list(yy))
 
     if model == "rf":
-        import multiprocessing as _mp
-        # fork, not spawn: a spawned worker re-executes this module and so re-runs the
-        # whole SHA-lock preamble once per worker. The forks inherit it already verified.
-        ctx = _mp.get_context("fork")
-        with ctx.Pool(processes=min(12, _mp.cpu_count()), initializer=_pool_init,
-                      initargs=(X_full, rf_trees, seed)) as pool:
-            nulls = pool.map(_rf_r2_worker, draws, chunksize=1)
+        # joblib/loky, not raw multiprocessing: `fork` deadlocks against sklearn's
+        # thread pools on macOS and `spawn` re-imports this module per worker. Both were
+        # observed hanging. The draws are already fixed above, so parallelising the fits
+        # cannot change a single value.
+        from joblib import Parallel, delayed
+        # batch_size=1: joblib's `auto` batching lumped every draw into ONE batch, so a
+        # single worker ran them serially while the rest idled at 0% CPU. Observed.
+        nulls = Parallel(n_jobs=min(8, os.cpu_count()), backend="loky", batch_size=1)(
+            delayed(rf_loocv_r2)(X_full, np.array(d, dtype=float), rf_trees, seed)
+            for d in draws)
     else:
         nulls = [fit_r2(X_full, np.array(d, dtype=float), model, seed, rf_trees)[0]
                  for d in draws]
@@ -673,6 +705,7 @@ def main():
     M = build_matrices()
     log("[matrices] 183=%s  233=%s  reconA=%s  reconB=%s"
         % (M["X183"].shape, M["X233"].shape, M["X_reconA"].shape, M["X_reconB"].shape))
+    _verify_rf(M["X183"], M["y183"])
 
     # What H-NEW-183's published "length-only baseline" actually is (prereg §9)
     j183 = json.load(open(P("findings/phase-b-hypotheses/csv/h-new-183.json"),
@@ -696,6 +729,21 @@ def main():
 
     want = set(x.strip() for x in args.only.split(",") if x.strip())
     cells = {}
+
+    def snapshot(partial=True):
+        """Write results after every cell. A long run on a contended machine must never
+        be lost to a crash or a kill; the final write below is byte-identical in form."""
+        with open(os.path.join(rundir, "results.json"), "w", encoding="utf-8") as fh:
+            json.dump({"finding_id": "H-NEW-2790", "partial": partial,
+                       "prereg_sha256": PREREG_SHA256, "prereg": PREREG_REL,
+                       "seeds": {"primary": SEED, "replication": SEED_REPL,
+                                 "published_used_in_A0_only": SEED_PUBLISHED},
+                       "alpha_bon": ALPHA_BON, "alpha_C4_published": ALPHA_C4_PUB,
+                       "drift_channels": chan,
+                       "h_new_183_length_only_baseline_probe": baseline_probe,
+                       "cells": cells, "smoke": args.smoke,
+                       "elapsed_s": round(time.time() - T0, 1)},
+                      fh, ensure_ascii=False, indent=2, default=float)
     for seed_label, seed in (("PRIMARY", SEED), ("REPLICATION", SEED_REPL)):
         log("\n" + "=" * 74 + "\nCELL %s seed=%d\n" % (seed_label, seed) + "=" * 74)
         C = {}
@@ -712,6 +760,7 @@ def main():
             C["C1_reconB_rf"] = run_predictor_claim(
                 "C1-RECON-B", M["X_reconB"], M["names_reconB"], Y_MUSHAF, "mushaf",
                 "rf", PUBLISHED["C1"]["rf_r2"], seed, args)
+            cells[seed_label] = C; snapshot()
         if not want or "C2" in want:
             C["C2_ridge"] = run_predictor_claim(
                 "C2", M["X183"], M["names183"], Y_NOLD, "noldeke", "ridge",
@@ -719,6 +768,7 @@ def main():
             C["C2_rf"] = run_predictor_claim(
                 "C2", M["X183"], M["names183"], Y_NOLD, "noldeke", "rf",
                 PUBLISHED["C2"]["rf_r2"], seed, args)
+            cells[seed_label] = C; snapshot()
         if not want or "C3" in want:
             C["C3_rf"] = run_predictor_claim(
                 "C3", M["X233"], M["names233"], Y_MUSHAF, "mushaf", "rf",
@@ -726,8 +776,10 @@ def main():
             C["C3_ridge"] = run_predictor_claim(
                 "C3", M["X233"], M["names233"], Y_MUSHAF, "mushaf", "ridge",
                 PUBLISHED["C3"]["ridge_r2"], seed, args)
+            cells[seed_label] = C; snapshot()
         if not want or "C4" in want:
             C["C4"] = run_C4(seed, args)
+            cells[seed_label] = C; snapshot()
         if not want or "C5" in want:
             C["C5"] = run_C5(seed)
         cells[seed_label] = C
