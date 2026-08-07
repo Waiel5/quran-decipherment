@@ -196,7 +196,10 @@ on the principle that the record of the work is not rewritten.
 Five pointers asserted something false rather than something unclear. Each was corrected in
 place with a visible notice; none was silently edited.
 
-| # | File:line | What was wrong | Correction |
+Line numbers below are the **pre-correction** ones, recorded so the change is auditable.
+Adding the correction notices shifted them: `KNOWLEDGE-GRAPH.md` 187→189, 223→225, 278→280.
+
+| # | File:line (pre-correction) | What was wrong | Correction |
 |---|---|---|---|
 | 1 | `KNOWLEDGE-GRAPH.md:187` | "(cross-finding-027 in flight)" — the test landed 2026-04-28 | → `cf-027-takrīr`, verdict FALSIFIED-AS-PRE-REGISTERED |
 | 2 | `KNOWLEDGE-GRAPH.md:223` | "(5th-cell candidate, queued as cross-finding-027)" | → landed, `cf-027-takrīr`, NULL |

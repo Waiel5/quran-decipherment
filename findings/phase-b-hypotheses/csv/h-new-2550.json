@@ -4,11 +4,14 @@
   "date": "2026-08-07",
   "author": "Waiel Al-Shujaa",
   "prereg_sha256": "3faabc4df31f794db38b6c9495b296501f23fd917c902f0275c9744c38b7d0ed",
+  "prereg_sha256_amended": "3b7bc7216c6c3eec00b6014dd2ffce978675f3a8cd7e0bfab1b814ccff288fdc",
+  "prereg_sha256_verified_this_run": "3b7bc7216c6c3eec00b6014dd2ffce978675f3a8cd7e0bfab1b814ccff288fdc",
+  "amendment": "A1 (post-observation): prior-art disclosure (H-NEW-69, H-NEW-44.2, H-NEW-165/165.2, H-NEW-60); adds T-F/T-G sensitivity arms; TIGHTENS Bonferroni k from 20 to 28 (alpha_bon 0.0025 -> 0.00178571). No direction and no threshold loosened; primary tuple unchanged (T-A).",
   "seed": 20260509,
   "seed_replication": 20260511,
   "n_mc": 10000000,
-  "bonferroni_k": 20,
-  "alpha_bon": 0.0025,
+  "bonferroni_k": 28,
+  "alpha_bon": 0.0017857142857142859,
   "muqattaat": {
     "n_loci": 30,
     "n_surahs": 29,
@@ -584,8 +587,9 @@
       "p_upper_H1_N1": 1.0,
       "verdict_H1_N1": "CONFIRMED-BUT-MEANINGLESS",
       "verdict_H2_N1": "NULL",
-      "verdict_H1_N2": "OPTIMIZER-CONFIRMED",
-      "verdict_H2_N2": "NULL"
+      "verdict_H1_N2": "NULL",
+      "verdict_H2_N2": "NULL",
+      "post_observation": false
     },
     "T-B": {
       "label": "29 letters (hamza distinct from alif), 5 binary sifat",
@@ -918,7 +922,8 @@
       "verdict_H1_N1": "NULL (non-significant; direction-consistent, D below null median)",
       "verdict_H2_N1": "NULL",
       "verdict_H1_N2": "NULL",
-      "verdict_H2_N2": "NULL"
+      "verdict_H2_N2": "NULL",
+      "post_observation": false
     },
     "T-C": {
       "label": "28 letters, tripartite manner (shadid/bayniyya/rikhw) + 4 other sifat",
@@ -1068,7 +1073,8 @@
       "verdict_H1_N1": "NULL",
       "verdict_H2_N1": "NULL",
       "verdict_H1_N2": "NULL",
-      "verdict_H2_N2": "NULL"
+      "verdict_H2_N2": "NULL",
+      "post_observation": false
     },
     "T-D": {
       "label": "28 letters, 5 binary sifat + 17-makhraj (alif in al-jawf)",
@@ -1356,7 +1362,8 @@
       "verdict_H1_N1": "NULL (non-significant; direction-consistent, D below null median)",
       "verdict_H2_N1": "NULL",
       "verdict_H1_N2": "NULL",
-      "verdict_H2_N2": "NULL"
+      "verdict_H2_N2": "NULL",
+      "post_observation": false
     },
     "T-E": {
       "label": "28 letters, 5 binary sifat + 16-makhraj (alif in aqsa al-halq)",
@@ -1634,8 +1641,394 @@
       "verdict_H1_N1": "NULL (non-significant; direction-consistent, D below null median)",
       "verdict_H2_N1": "NULL",
       "verdict_H1_N2": "NULL",
-      "verdict_H2_N2": "NULL"
+      "verdict_H2_N2": "NULL",
+      "post_observation": false
+    },
+    "T-F": {
+      "label": "28 letters, H-NEW-165 codebook sifat only (7 features) [POST-OBS, MW-7]",
+      "N": 28,
+      "n_features": 7,
+      "D_obs": 6.0,
+      "D_obs_literal_half": 6.0,
+      "D_freq_obs": 1.688068,
+      "per_feature": [
+        {
+          "feature": "mahmus_165",
+          "size": 11,
+          "in_set": 6,
+          "expected_null": 5.5,
+          "classical_half": 5.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.617362,
+          "mass_share_dev": 0.117362
+        },
+        {
+          "feature": "stops_165",
+          "size": 7,
+          "in_set": 4,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.720133,
+          "mass_share_dev": 0.220133
+        },
+        {
+          "feature": "tafkhim_165",
+          "size": 7,
+          "in_set": 3,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.623888,
+          "mass_share_dev": 0.123888
+        },
+        {
+          "feature": "pharyngealized_165",
+          "size": 9,
+          "in_set": 5,
+          "expected_null": 4.5,
+          "classical_half": 4.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.792684,
+          "mass_share_dev": 0.292684
+        },
+        {
+          "feature": "sonorant_165",
+          "size": 7,
+          "in_set": 6,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 2.5,
+          "mass_share_in_set": 0.881522,
+          "mass_share_dev": 0.381522
+        },
+        {
+          "feature": "idhlaq_165",
+          "size": 6,
+          "in_set": 4,
+          "expected_null": 3.0,
+          "classical_half": 3.0,
+          "abs_dev": 1.0,
+          "mass_share_in_set": 0.837885,
+          "mass_share_dev": 0.337885
+        },
+        {
+          "feature": "qalqala_165",
+          "size": 5,
+          "in_set": 2,
+          "expected_null": 2.5,
+          "classical_half": 2.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.285405,
+          "mass_share_dev": 0.214595
+        }
+      ],
+      "N1_exact_H1": {
+        "n_subsets": 40116600,
+        "D_obs": 6.0,
+        "p_exact_le": 0.5105262160801264,
+        "p_exact_lt": 0.3159428266602853,
+        "percentile": 51.05262160801264,
+        "null_mean": 6.713196,
+        "null_sd": 2.137511,
+        "null_min": 3.0,
+        "n_at_null_min": 1294536,
+        "frac_at_null_min": 0.03226933488879915,
+        "obs_is_global_min": false,
+        "null_median": 6.0,
+        "distribution": {
+          "3.0": 1294536,
+          "4.0": 4350812,
+          "5.0": 7029204,
+          "6.0": 7806024,
+          "7.0": 6872648,
+          "8.0": 5149412,
+          "9.0": 3405966,
+          "10.0": 2035116,
+          "11.0": 1121234,
+          "12.0": 576374,
+          "13.0": 277148,
+          "14.0": 123858,
+          "15.0": 50060,
+          "16.0": 17864,
+          "17.0": 5132,
+          "18.0": 1100,
+          "19.0": 112
+        }
+      },
+      "N1_exact_H2": {
+        "n_subsets": 40116600,
+        "D_freq_obs": 1.688068,
+        "p_exact_le": 0.900719353085755,
+        "percentile": 90.0719353085755,
+        "null_mean": 1.294406,
+        "null_sd": 0.295895,
+        "null_min": 0.323738,
+        "n_at_null_min": 2,
+        "frac_at_null_min": 4.985467362637911e-08,
+        "obs_is_global_min": false
+      },
+      "N2_mc_seed": {
+        "n_draw": 10000000,
+        "seed": 20260509,
+        "p_h1": 0.02674199732580027,
+        "p_h2": 0.30402366959763305,
+        "n_le_h1": 267419,
+        "n_le_h2": 3040236
+      },
+      "N2_mc_replication": {
+        "n_draw": 10000000,
+        "seed": 20260511,
+        "p_h1": 0.026719697328030267,
+        "p_h2": 0.303643369635663,
+        "n_le_h1": 267196,
+        "n_le_h2": 3036433
+      },
+      "stdlib_guard_p_h1": 0.51046,
+      "p_upper_H1_N1": 0.6840571733397147,
+      "verdict_H1_N1": "NULL",
+      "verdict_H2_N1": "NULL",
+      "verdict_H1_N2": "NULL",
+      "verdict_H2_N2": "NULL",
+      "post_observation": true
+    },
+    "T-G": {
+      "label": "28 letters, H-NEW-165 sifat + H-NEW-44.2 al-Khalil 8-POA (15 features) [POST-OBS, MW-7]",
+      "N": 28,
+      "n_features": 15,
+      "D_obs": 14.0,
+      "D_obs_literal_half": 14.0,
+      "D_freq_obs": 4.698951,
+      "per_feature": [
+        {
+          "feature": "mahmus_165",
+          "size": 11,
+          "in_set": 6,
+          "expected_null": 5.5,
+          "classical_half": 5.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.617362,
+          "mass_share_dev": 0.117362
+        },
+        {
+          "feature": "stops_165",
+          "size": 7,
+          "in_set": 4,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.720133,
+          "mass_share_dev": 0.220133
+        },
+        {
+          "feature": "tafkhim_165",
+          "size": 7,
+          "in_set": 3,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.623888,
+          "mass_share_dev": 0.123888
+        },
+        {
+          "feature": "pharyngealized_165",
+          "size": 9,
+          "in_set": 5,
+          "expected_null": 4.5,
+          "classical_half": 4.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.792684,
+          "mass_share_dev": 0.292684
+        },
+        {
+          "feature": "sonorant_165",
+          "size": 7,
+          "in_set": 6,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 2.5,
+          "mass_share_in_set": 0.881522,
+          "mass_share_dev": 0.381522
+        },
+        {
+          "feature": "idhlaq_165",
+          "size": 6,
+          "in_set": 4,
+          "expected_null": 3.0,
+          "classical_half": 3.0,
+          "abs_dev": 1.0,
+          "mass_share_in_set": 0.837885,
+          "mass_share_dev": 0.337885
+        },
+        {
+          "feature": "qalqala_165",
+          "size": 5,
+          "in_set": 2,
+          "expected_null": 2.5,
+          "classical_half": 2.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.285405,
+          "mass_share_dev": 0.214595
+        },
+        {
+          "feature": "poa8:coronal_sibilant",
+          "size": 3,
+          "in_set": 2,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.834865,
+          "mass_share_dev": 0.334865
+        },
+        {
+          "feature": "poa8:coronal_sonorant",
+          "size": 3,
+          "in_set": 3,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 1.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "poa8:coronal_stop",
+          "size": 3,
+          "in_set": 1,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.063245,
+          "mass_share_dev": 0.436755
+        },
+        {
+          "feature": "poa8:interdental",
+          "size": 3,
+          "in_set": 0,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 1.5,
+          "mass_share_in_set": 0.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "poa8:labial",
+          "size": 4,
+          "in_set": 1,
+          "expected_null": 2.0,
+          "classical_half": 2.0,
+          "abs_dev": 1.0,
+          "mass_share_in_set": 0.368967,
+          "mass_share_dev": 0.131033
+        },
+        {
+          "feature": "poa8:palatal",
+          "size": 4,
+          "in_set": 1,
+          "expected_null": 2.0,
+          "classical_half": 2.0,
+          "abs_dev": 1.0,
+          "mass_share_in_set": 0.783203,
+          "mass_share_dev": 0.283203
+        },
+        {
+          "feature": "poa8:pharyngeal_glottal",
+          "size": 4,
+          "in_set": 4,
+          "expected_null": 2.0,
+          "classical_half": 2.0,
+          "abs_dev": 2.0,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "poa8:velar_uvular",
+          "size": 4,
+          "in_set": 2,
+          "expected_null": 2.0,
+          "classical_half": 2.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.825027,
+          "mass_share_dev": 0.325027
+        }
+      ],
+      "N1_exact_H1": {
+        "n_subsets": 40116600,
+        "D_obs": 14.0,
+        "p_exact_le": 0.7876911802096888,
+        "p_exact_lt": 0.6817050298380222,
+        "percentile": 78.76911802096888,
+        "null_mean": 12.375418,
+        "null_sd": 2.844066,
+        "null_min": 5.0,
+        "n_at_null_min": 25338,
+        "frac_at_null_min": 0.0006316088601725969,
+        "obs_is_global_min": false,
+        "null_median": 12.0,
+        "distribution": {
+          "5.0": 25338,
+          "6.0": 209100,
+          "7.0": 742796,
+          "8.0": 1797964,
+          "9.0": 3243108,
+          "10.0": 4669512,
+          "11.0": 5620102,
+          "12.0": 5795102,
+          "13.0": 5244666,
+          "14.0": 4251804,
+          "15.0": 3129620,
+          "16.0": 2131656,
+          "17.0": 1360468,
+          "18.0": 825894,
+          "19.0": 485570,
+          "20.0": 275492,
+          "21.0": 151780,
+          "22.0": 81442,
+          "23.0": 41390,
+          "24.0": 19822,
+          "25.0": 8896,
+          "26.0": 3490,
+          "27.0": 1198,
+          "28.0": 336,
+          "29.0": 52,
+          "30.0": 2
+        }
+      },
+      "N1_exact_H2": {
+        "n_subsets": 40116600,
+        "D_freq_obs": 4.698951,
+        "p_exact_le": 0.9717449135769233,
+        "percentile": 97.17449135769233,
+        "null_mean": 3.655125,
+        "null_sd": 0.522705,
+        "null_min": 1.736624,
+        "n_at_null_min": 2,
+        "frac_at_null_min": 4.985467362637911e-08,
+        "obs_is_global_min": false
+      },
+      "N2_mc_seed": {
+        "n_draw": 10000000,
+        "seed": 20260509,
+        "p_h1": 0.1193621880637812,
+        "p_h2": 0.5931241406875859,
+        "n_le_h1": 1193621,
+        "n_le_h2": 5931241
+      },
+      "N2_mc_replication": {
+        "n_draw": 10000000,
+        "seed": 20260511,
+        "p_h1": 0.1191057880894212,
+        "p_h2": 0.593360740663926,
+        "n_le_h1": 1191057,
+        "n_le_h2": 5933607
+      },
+      "stdlib_guard_p_h1": 0.788955,
+      "p_upper_H1_N1": 0.31829497016197783,
+      "verdict_H1_N1": "NULL",
+      "verdict_H2_N1": "NULL",
+      "verdict_H1_N2": "NULL",
+      "verdict_H2_N2": "NULL",
+      "post_observation": true
     }
   },
-  "runtime_seconds": 105.5
+  "runtime_seconds": 144.9
 }

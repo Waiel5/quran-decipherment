@@ -231,6 +231,13 @@ This is the adversarial section. Each item names a file and, where possible, a l
 
 ### C-1. **Four duplicate `cross-finding` IDs — and all four collide on the project's four standing laws**
 
+> **RESOLVED + PARTIALLY CORRECTED 2026-08-07.** C-1 is now actioned in
+> `findings/CROSS-FINDING-INDEX.md` (authoritative disambiguation table + handle convention),
+> and the wrong pointers are fixed in place. **Two claims in the original C-1 below were wrong
+> and are withdrawn — see the "Corrections" note at the end of this item.** The count is
+> **five** colliding IDs (023, 025, 026, 027, 028) across **eleven** files, not four; and the
+> recommended fix has changed from renumbering to additive disambiguation.
+
 Two directories independently mint `cross-finding-0NN` IDs, and their ranges overlap:
 
 | ID | `findings/phase-b-hypotheses/` | `findings/cross-finding/` |
@@ -255,6 +262,34 @@ has not been updated since the second series was minted.
 
 **Recommended fix:** re-mint the 2026-05-29/30 series under a distinct prefix (e.g. `LAW-01..04`)
 and add a redirect table, or renumber the older series. Do not leave both.
+
+#### Corrections to C-1 (2026-08-07)
+
+Three amendments, all from re-verification during the fix pass:
+
+1. **`cross-finding-010` and `cross-finding-012` are NOT collisions — claim withdrawn.** The
+   counting command did not exclude pre-registration files, so it read each prereg/result pair
+   as a duplicate. A prereg is *supposed* to share its result's `id:`. Verified:
+   `cross-finding-010-extended-network-prereg.md` (`status: PRE-REGISTERED 2026-04-17`) pairs
+   with `cross-finding-010-extended-network.md` (`status: MIXED`); same for 012. The genuine
+   collisions are **023, 025, 026, 027, 028**.
+2. **`cross-finding-025` has three claimants, not two** — `cf-025-multiaxis` (2026-04-28),
+   `cf-025-marker` (2026-05-09 PRELIMINARY), and `cf-025-formal` (2026-05-09 FORMAL).
+   A fourth, never-minted claimant exists for **027**: a Medinan-ṭiwāl cluster proposed at
+   `findings/phase-b-hypotheses/h-new-560-meccan-tiwal.md:70` and `MASTER-FINDINGS-LEDGER.md:1428`.
+3. **The "Live damage" paragraph named the wrong lines.** `KNOWLEDGE-GRAPH.md:217` carries the
+   date "2026-04-28" inline and is therefore unambiguous in context — calling it actively wrong
+   was too strong. The genuinely wrong pointers were lines **187, 223, 278 and 280**, which
+   described `cf-027-takrīr` as "in flight" / "queued" for a test that had already landed
+   FALSIFIED on 2026-04-28. Those four are now corrected, along with
+   `MASTER-FINDINGS-LEDGER.md:1667` and a dead path at
+   `cross-finding-025-formal-scale-of-aggregation-law.md:75`.
+
+**Superseded recommendation.** Renumbering was rejected: hundreds of cross-references and the
+whole ledger point at current paths, and renumbering would rewrite the record of what was
+minted when. The adopted fix is additive — an index, a handle convention built on the
+`finding_id: cross-finding-0NN-formal` qualifier the four law files *already* carry, and
+in-place correction of only the pointers that assert something false.
 
 ### C-2. **cross-finding-025 (the formal law) has not absorbed cross-finding-026, which bounds it**
 

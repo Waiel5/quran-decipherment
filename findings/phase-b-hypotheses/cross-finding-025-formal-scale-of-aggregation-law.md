@@ -72,7 +72,9 @@ al-Biqāʿī's *Naẓm al-durar* extends this to surah-level munāsabah but ackn
   - `findings/phase-b-hypotheses/h-new-1380-iblis-pericope-replication.md`
   - `findings/phase-b-hypotheses/h-new-1510-sajda-pericope-replication.md` (pending file write by specialist)
   - `findings/phase-b-hypotheses/h-new-1520-prophet-vocative-pericope.md` (pending file write by specialist)
-- Earlier preliminary: `findings/phase-b-hypotheses/cross-finding-025-preliminary-marker-thickness.md`
+- Earlier preliminary (`cf-025-marker`): `findings/phase-b-hypotheses/cross-finding-025-marker-thickness-vs-fr-cohesion-threshold.md`
+  *(Correction 2026-08-07: this line previously pointed at `cross-finding-025-preliminary-marker-thickness.md`, a path that does not exist on disk. The file above is the actual ancestor — its §"next steps" is what names the future "cross-finding-025-formal".)*
+- **ID disambiguation**: this document is `cf-025-formal`. Two other files also carry `cross-finding-025`: `cf-025-marker` (the preliminary above) and `cf-025-multiaxis` (`findings/cross-finding/cross-finding-025-multi-axis-architecture.md`, 2026-04-28, an unrelated topic). See `findings/CROSS-FINDING-INDEX.md`.
 
 ---
 

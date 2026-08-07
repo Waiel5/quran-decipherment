@@ -437,6 +437,160 @@ stands**, embedded in `scripts/h-new-2550.py` and verified at runtime.
 
 ---
 
+## 15. AMENDMENT A1 — POST-OBSERVATION. Prior-art disclosure + a second codebook arm
+
+**This section was written AFTER the primary run.** It is flagged as post-observation
+throughout and is bound by three constraints, each verifiable by diffing against the
+locked text above: it **adds prior-art disclosure**, it **adds test cells** (which
+*tightens* the correction), and it **changes no locked direction and no threshold in the
+loosening direction**. Nothing in §5 (direction), §6 (nulls), §8 (decision rules) or the
+identity of the **primary** tuple is altered. Per Protocol §1.8 the amendment is recorded
+here rather than folded silently into the locked text.
+
+### A1.1 Prior art that the original lock missed — and how it moves the prior
+
+A reconnaissance of the project's 906 files surfaced four muqaṭṭaʿāt-inventory findings
+that the original §9 disclosure did not cite. They should have been cited; they are cited
+now, and their effect on the prior is stated **before** the amended cells are computed.
+
+| Finding | Question | Verdict |
+|:--|:--|:--|
+| **H-NEW-69** (2026-04-15, seed 20260415, k=8) | Does the muq-14 **COINCIDE** with any classical 14-of-28 grouping (shamsiyya/qamariyya, Sībawayh voicing, modern voicing, ṣafīr, iṭbāq)? | **NULL** — 0/8 at α_bon=0.00625, 0/8 even at unprotected α=0.05 |
+| **H-NEW-44.2** (2026-04-16, 100k perms, k=8+1) | How do the muq-14 **distribute across al-Khalīl's 8 POA classes**? | **NULL** — 0/8 per-class; overall χ²=12.67, df=7, perm p=0.065 |
+| **H-NEW-44.2.1** | Are all 4 pharyngeal/glottal letters muqaṭṭaʿāt? | PASS-DIRECTED, p=0.049 |
+| **H-NEW-60** | Dotless preference | STRONG-PASS, 11/13 dotless, p=0.0009 |
+
+**LOWERED PRIOR, stated explicitly:** H-NEW-69's NULL is evidence *against* the muq-14
+being a designed phonetic partition. If the set matches no classical binary grouping, the
+hypothesis that it was selected to realise a phonetic design is weakened before this test
+begins. H-NEW-44.2's NULL does the same on the place-of-articulation axis. The
+pre-registered expectation of §0 — CONFIRMED-BUT-MEANINGLESS as the most likely outcome —
+is therefore **strengthened**, not weakened, by the prior art.
+
+**How H-NEW-2550's question differs from H-NEW-69's.** H-NEW-69 asked a **matching**
+question: *is the muq-14 the same set as some classical grouping G?* (statistic: overlap
+k, per-grouping hypergeometric). H-NEW-2550 asks an **optimization** question: *does the
+muq-14 split every genus near exact-half simultaneously?* (statistic: joint summed
+deviation D, exact enumeration over the whole subset space). The tests are distinct.
+
+**But they are closer than they look, and the amendment must say so.** For a grouping G,
+"matches G" means k ≈ |G| or k ≈ 0 — i.e. **maximal** D. "Splits G at half" means
+k ≈ |G|/2 — i.e. **minimal** D. **Perfect balance and perfect matching are opposite ends
+of the same axis.** H-NEW-69's headline NULL is literally reported as *"k=9 vs E=9.0 for
+majhūra, k=5 vs E=5.0 for mahmūsa … a striking NULL — the muqaṭṭaʿāt selection is
+voicing-NEUTRAL"*, and it further notes that the observed split *"IS the expected ratio
+under random selection given the asymmetric class sizes — not a meaningful pattern."*
+That is this finding's thesis, stated qualitatively and one genus at a time, four months
+earlier. H-NEW-2550's additive contribution is therefore narrower than the original brief
+implied, and is exactly: **(i)** the JOINT statistic over all five genera at once rather
+than genus-by-genus; **(ii)** the EXACT enumeration establishing whether the joint value
+is a global optimum; **(iii)** the exact mass at that optimum — the number H-NEW-69's
+per-grouping hypergeometrics cannot produce; **(iv)** the taxonomy-dependence test;
+**(v)** the frequency-conditioned null. Claims (i)–(v) are what this finding may assert as
+new. It may **not** assert that "the muqaṭṭaʿāt split the classical genera at chance
+level" is a new discovery: **H-NEW-69 found that first**, and the finding will say so.
+
+**Instrument corroboration (a benefit of the late discovery).** H-NEW-69 and H-NEW-165,
+two independent prior pre-registrations, reproduce four of this test's five category
+memberships from unrelated sources: H-NEW-69 G3 majhūra |G|=18 with k=9, G4 mahmūsa |G|=10
+with k=5, G8 iṭbāq |G|=4 with k=2 (all identical to §3's table); H-NEW-165's locked
+codebook gives ḥurūf al-tafkhīm = {خ ص ض ط ظ غ ق} (identical to §3's mustaʿliya) and
+qalqala = {ق ط ب ج د} (identical to §3's qalqala). The fifth, shadīda, is enumerated by
+al-Zamakhsharī himself. The §3 table was therefore **not** a free researcher choice — it is
+pinned by a runtime fail-fast against al-Zamakhsharī's nine stated counts **and**
+independently corroborated by two prior locks.
+
+### A1.2 Two added tuples from a differently-sourced codebook (T-F, T-G)
+
+The H-NEW-165 locked codebook (`h-new-165-phonological-predictor-prereg.md` §"Feature
+codebook", sourced to Ibn Jinnī / al-Khalīl / Watson 2002 / Holes 2004, and shown
+codebook-invariant across 4 variants by H-NEW-165.2) is added as an independent
+sensitivity arm.
+
+**It cannot become the PRIMARY tuple, for two reasons that are facts about the codebook,
+not preferences:**
+
+1. **It is defined only over the 14 muqaṭṭaʿāt letters.** Its per-letter table has 14 rows.
+   The statistic `D` needs `|f|` over the **full 28-letter inventory**; supplying the
+   missing 14 rows would be precisely the unlogged degree of freedom the reuse instruction
+   exists to prevent.
+2. **Its voicing coding is explicitly modern-adjusted and places ق in mahmūs** (its own
+   text: *"we follow Ibn Jinnī's majhūra = jahr for consistency with modern phonetics"*,
+   with a visible in-line self-correction). al-Zamakhsharī's claim is stated in the
+   **classical** majhūra/mahmūsa categories and he explicitly lists **القاف** among the
+   majhūra taken by the 14. Scoring his claim in a codebook that reclassifies ق would test
+   a different proposition than the source makes.
+
+Independently of both points, **primacy was locked before observation and cannot be
+reassigned after it.** T-A remains primary; relabelling would be a pre-commit violation.
+
+The parts of the H-NEW-165 codebook that ARE defined over all 28 letters are used, and the
+place-of-articulation partition is taken from **H-NEW-44.2**'s full-28 al-Khalīl 8-POA
+table (on disk, pre-registered 2026-04-16):
+
+- **T-F** — 165-codebook ṣifāt only, 7 features: mahmūs (11), stops (7), ḥurūf al-tafkhīm
+  (7), pharyngealized = tafkhīm ∪ {ع ح} (9), sonorant {ا ل م ر ي ن و} (7), idhlāq
+  {ف ر م ن ل ب} (6), qalqala {ق ط ب ج د} (5).
+- **T-G** — T-F **+ the 8 al-Khalīl POA classes of H-NEW-44.2** (15 features).
+
+Two disclosures on T-F/T-G: (a) H-NEW-165's voice lists cover 27 of 28 letters, omitting
+ج; ج is completed to majhūr as the **forced** closure (16+11=27, and it is the classical
+value) — a completion, not a choice, and flagged. (b) tafkhīm ⊂ pharyngealized are nested,
+not complementary, so both are retained; only genuinely complementary pairs are
+de-duplicated, exactly as in §5.
+
+### A1.3 Correction family — TIGHTENED, never loosened
+
+Family grows from **k = 20** (5 tuples × 2 hypotheses × 2 nulls) to
+**k = 28** (7 tuples × 2 hypotheses × 2 nulls). **α_bon moves from 0.0025 to
+0.05/28 = 0.00178571** — strictly tighter. Every verdict already issued under
+α_bon = 0.0025 is re-checked against the tighter threshold, and any cell that fails the
+tighter one is **demoted**. No cell is promoted by this amendment.
+
+> **Arithmetic correction, disclosed:** a first draft of this amendment wrote the family
+> as k = 24 and α_bon = 0.00208333. That was a slip — 7 × 2 × 2 = 28. The correct k = 28
+> is **tighter**, and the correction is consequential: it moves α_bon below
+> T-A × H1 × N2 (p = 0.001828), demoting the only cell that had cleared. The correction is
+> applied because it is right and because it runs in the conservative direction
+> (tightening self-verifies; only loosening would need ratification). It is recorded here
+> rather than quietly applied precisely because it *removes* this finding's sole positive
+> result.
+
+**Additionally, T-F and T-G cells are post-observation and are MW-7-capped**: they may
+corroborate or contradict, but they may not by themselves establish a CONFIRMED verdict.
+Both constraints — the tightened family α *and* the MW-7 cap — apply simultaneously.
+
+### A1.4 T-D / T-E are a REPLICATION, not a discovery
+
+**H-NEW-44.2 already tested the muq-14 against al-Khalīl's 8 POA classes and returned
+NULL** (χ² perm p = 0.065). Tuples T-D/T-E ask the same substantive question with a finer
+partition (al-Suyūṭī's 17/16 makhārij) and a different statistic (summed deviation vs χ²).
+Whatever they return must be reported as **convergent replication of H-NEW-44.2**, and the
+finding may not present a makhraj result as novel. Locked here, before the amended run.
+
+### A1.5 What is NOT amended
+
+Direction (§5, one-sided low, all tuples/hypotheses/nulls); both null models (§6); all
+four verdict labels and their conditions (§8); the primary tuple (T-A); the headline rule
+(T-A × H1 × N1); seeds 20260509 / 20260511; n_MC = 10⁷. The exact-enumeration results for
+T-A…T-E are deterministic and the MC seeds are fixed, so every number already reported for
+those five tuples must reproduce **bit-identically** on the amended run; this is asserted
+rather than assumed.
+
+### A1.6 Hash chain
+
+| Stage | SHA-256 |
+|:--|:--|
+| draft (arithmetic erratum, §14) | `4ec738f2948fca5d89d8b1c3e29fdf3f87335871aaec0a90166338b70edc2c7c` |
+| **binding lock, verified at the primary run** | `3faabc4df31f794db38b6c9495b296501f23fd917c902f0275c9744c38b7d0ed` |
+| post-amendment (this file) | recorded in `csv/h-new-2550.json → prereg_sha256_amended` |
+
+The **binding lock for the primary result is `3faabc4d…d0ed`** — the hash of this file as
+it stood before any observation. The amended hash certifies only the amended run. The
+script carries both and verifies the current file at runtime.
+
+---
+
 *Pre-registration locked 2026-08-07 by Waiel Al-Shujaa, before any computation of the null
 distribution, any percentile, or any p-value. The observed statistic is the classical
 source's own claim; the null is what nobody has computed. Bismillāhi al-Raḥmāni al-Raḥīm.*

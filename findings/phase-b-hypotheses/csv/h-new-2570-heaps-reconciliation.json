@@ -1,0 +1,150 @@
+{
+ "note": "DESCRIPTIVE ONLY — no inference, no p-values, MW-7 capped. Corpus-level Heaps beta is the property of H-NEW-123; see Amendment 01 §2.1.",
+ "parent_finding": "H-NEW-123 (findings/phase-b-hypotheses/h-new-123-heap-law.md)",
+ "estimator": "scripts/h_new_123_heap_law.py :: normalize/tokenize/vocab_curve/fit_heap (linear grid step=50 start=100, log-log OLS)",
+ "prereg_sha256": "6a1cab4cddb21d0621ffff6d9d57aa974bf7eaa76b865da67ac830a3f1f4e29b",
+ "amendment_sha256": "4cd628aaea6c6ce468df47533ffa1a3de80a55366938b6783a2d7cfade49d9ca",
+ "h_new_123_published": {
+  "quran": {
+   "N": 77797,
+   "V": 14870,
+   "beta": 0.7468,
+   "ci": [
+    0.729,
+    0.757
+   ],
+   "K": 0.724
+  },
+  "bukhari_matched77k": {
+   "N": 77797,
+   "V": 12154,
+   "beta": 0.7472,
+   "ci": [
+    0.732,
+    0.759
+   ],
+   "K": 0.605
+  },
+  "jahiz_first77k": {
+   "N": 77797,
+   "V": 22984,
+   "beta": 0.8023,
+   "ci": [
+    0.785,
+    0.811
+   ],
+   "K": 0.953
+  },
+  "muallaqat_7poems": {
+   "N": 7285,
+   "V": 3843,
+   "beta": 0.8313,
+   "ci": [
+    0.817,
+    0.849
+   ],
+   "K": 1.09
+  },
+  "quran_shuffled": {
+   "N": 77797,
+   "V": 14870,
+   "beta": 0.7072,
+   "ci": [
+    0.689,
+    0.717
+   ]
+  },
+  "cellB_p": 0.334,
+  "cellA1_p": 0.3826
+ },
+ "reproduction": {
+  "quran": {
+   "label": "Quran (no-tashkeel, surface-form, mushaf order)",
+   "N": 77797,
+   "V": 14870,
+   "beta": 0.7468440619718563,
+   "K": 3.311299793706284
+  },
+  "bukhari_matched77k": {
+   "label": "Bukhari matched-77k (H-NEW-123 source file)",
+   "N": 77797,
+   "V": 12154,
+   "beta": 0.74722052873117,
+   "K": 2.750853803610646
+  },
+  "muallaqat_7poems": {
+   "label": "Muallaqat, 7 poems (H-NEW-123 corpus)",
+   "N": 7285,
+   "V": 3843,
+   "beta": 0.8313331061698371,
+   "K": 2.3241544627492723
+  },
+  "jahiz_first77k": {
+   "label": "Jahiz Kitab al-Hayawan, first 77k",
+   "N": 77797,
+   "V": 22984,
+   "beta": 0.8023152014656266,
+   "K": 2.860908830942914
+  },
+  "bukhari_noquran_sensitivity": {
+   "label": "Bukhari, Quran quotations stripped (H-NEW-2570 source file) — sensitivity only",
+   "N": 77797,
+   "V": 11766,
+   "beta": 0.744282159243164,
+   "K": 2.7809779383840905
+  }
+ },
+ "length_matched_poetry": {
+  "files": [
+   "diwan-amr-ibn-kulthum.txt",
+   "diwan-antara.txt",
+   "diwan-harith.txt",
+   "diwan-imru-al-qais.txt",
+   "diwan-labid.txt",
+   "diwan-tarafa.txt",
+   "diwan-zuhayr.txt",
+   "muallaqa-amr-bin-kulthum.txt",
+   "muallaqa-antara.txt",
+   "muallaqa-harith.txt",
+   "muallaqa-imru-al-qais.txt",
+   "muallaqa-labid.txt",
+   "muallaqa-tarafa.txt",
+   "muallaqa-zuhayr.txt"
+  ],
+  "n_files": 14,
+  "available_tokens": 82520,
+  "matched_to_quran_N": 77797,
+  "fit_matched": {
+   "label": "Pre-Islamic poetry (7 muallaqat + 7 diwans), matched to Quran N",
+   "N": 77797,
+   "V": 25410,
+   "beta": 0.9458856828251736,
+   "K": 0.5500479028797491
+  },
+  "h123_caveat_resolved": "H-NEW-123 caveat: its poetry baseline was 7,285 tokens vs the Quran's 77,797, an early-N length-curvature artifact; it reported a post-hoc matched-length figure of beta_Q7.3K = 0.801 vs Muallaqat 0.831. This row removes the length mismatch."
+ },
+ "ordering_invariance_of_beta": {
+  "mushaf": {
+   "label": "Quran surface-form, mushaf order",
+   "N": 77797,
+   "V": 14870,
+   "beta": 0.7468440619718563,
+   "K": 3.311299793706284
+  },
+  "revelation": {
+   "label": "Quran surface-form, revelation order",
+   "N": 77797,
+   "V": 14870,
+   "beta": 0.6903893706517699,
+   "K": 6.428651155771477
+  },
+  "noldeke": {
+   "label": "Quran surface-form, noldeke order",
+   "N": 77797,
+   "V": 14870,
+   "beta": 0.6941188994990106,
+   "K": 6.238230249667872
+  },
+  "comment": "All three orderings use the identical token multiset, so V and N are identical by construction and only beta/K can move. H-NEW-123 Cell B (p=0.3340, NULL) already established that beta is near-invariant to shuffling the token stream; these rows are the surah-permutation analogue. Descriptive."
+ }
+}

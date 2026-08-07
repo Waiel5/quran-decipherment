@@ -1,0 +1,26 @@
+{
+ "finding_id": "H-NEW-2650",
+ "utc": "20260807T011152Z",
+ "artifact": "discard-decomposition",
+ "script": "findings/phase-b-hypotheses/scripts/h-new-2650-discard-decomposition.py",
+ "prereg_sha256": "4d7dbc76aa56e551c4dc38fcb6132c63e39884644344feb0e683c179481edacf",
+ "frozen_inputs": {
+  "qac": {
+   "path": "data/morphology/quranic-corpus-morphology-0.4.txt",
+   "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46"
+  },
+  "revelation_order": {
+   "path": "data/revelation-order.csv",
+   "sha256": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7"
+  },
+  "quran_no_tashkeel": {
+   "path": "quran-text/quran-no-tashkeel.json",
+   "sha256": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+  }
+ },
+ "eqtb_used": false,
+ "supersedes_nothing": true,
+ "outputs": [
+  "discard-decomposition.json"
+ ]
+}

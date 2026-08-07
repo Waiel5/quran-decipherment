@@ -44,26 +44,45 @@ PREREG = os.path.join(ROOT, "findings", "phase-b-hypotheses",
                       "prereg-h-new-2550-muqattaat-phonetic-optimizer.md")
 OUT_JSON = os.path.join(ROOT, "findings", "phase-b-hypotheses", "csv", "h-new-2550.json")
 
-PREREG_SHA256 = "3faabc4df31f794db38b6c9495b296501f23fd917c902f0275c9744c38b7d0ed"
+# Hash chain (pre-reg §14, §A1.6).
+#   PREREG_SHA256_LOCK    — the file as it stood BEFORE any observation. This is the hash
+#                           that was verified at the primary run and is the binding lock
+#                           for the T-A..T-E results.
+#   PREREG_SHA256_AMENDED — the file after post-observation AMENDMENT A1 (prior-art
+#                           disclosure + the T-F/T-G arms + a TIGHTENED correction family).
+#                           A1 changes no direction and no threshold in the loosening
+#                           direction; the diff against the locked text is the audit trail.
+PREREG_SHA256_LOCK = "3faabc4df31f794db38b6c9495b296501f23fd917c902f0275c9744c38b7d0ed"
+PREREG_SHA256_AMENDED = "3b7bc7216c6c3eec00b6014dd2ffce978675f3a8cd7e0bfab1b814ccff288fdc"
 
 SEED = 20260509
 SEED_REPLICATION = 20260511
 N_MC = 10_000_000
-BONFERRONI_K = 20
-ALPHA_BON = 0.05 / BONFERRONI_K            # 0.0025
+BONFERRONI_K = 28                          # A1.3: 7 tuples x 2 hypotheses x 2 nulls
+ALPHA_BON = 0.05 / BONFERRONI_K            # 0.00178571 — TIGHTER than the locked 0.0025
+
+# Locked-run values for T-A..T-E. AMENDMENT A1 adds tuples only; it must not perturb the
+# original five. Asserted bit-identical at runtime (pre-reg §A1.5).
+LOCKED_RUN_D_OBS = {"T-A": 1.0, "T-B": 55.0 / 29.0, "T-C": 6.0, "T-D": 11.0, "T-E": 11.0}
+LOCKED_RUN_P_H1_N1 = {"T-A": 0.0255381, "T-B": 0.0361086, "T-C": 0.5567158,
+                      "T-D": 0.1789824, "T-E": 0.2609958}
 
 
 def verify_prereg():
     with open(PREREG, "rb") as fh:
         got = hashlib.sha256(fh.read()).hexdigest()
-    if got != PREREG_SHA256:
+    if got not in (PREREG_SHA256_LOCK, PREREG_SHA256_AMENDED):
         raise SystemExit(
             "PRE-REGISTRATION SHA MISMATCH — refusing to run.\n"
-            f"  expected {PREREG_SHA256}\n  actual   {got}\n"
-            "The pre-registration has been altered since the lock. Per Protocol §1.2 "
-            "this run is void."
+            f"  expected lock    {PREREG_SHA256_LOCK}\n"
+            f"  or     amended   {PREREG_SHA256_AMENDED}\n"
+            f"  actual           {got}\n"
+            "The pre-registration is neither the locked nor the amended text. Per "
+            "Protocol §1.2 this run is void."
         )
-    print(f"[gate] pre-reg SHA-256 verified: {got}")
+    stage = "LOCK (pre-observation)" if got == PREREG_SHA256_LOCK else "AMENDED (A1)"
+    print(f"[gate] pre-reg SHA-256 verified [{stage}]: {got}")
+    return got
 
 
 # ----------------------------------------------------------------------------
@@ -192,6 +211,39 @@ MAKHRAJ17 = {
 MAKHRAJ16 = {k: set(v) for k, v in MAKHRAJ17.items() if k != "jawf"}
 MAKHRAJ16["aqsa_al_halq"] = set("اه")
 
+# ---------------------------------------------------------------------------
+# AMENDMENT A1.2 — a second, DIFFERENTLY-SOURCED codebook (post-observation arm).
+# Verbatim from the locked H-NEW-165 codebook
+#   (h-new-165-phonological-predictor-prereg.md, "Feature codebook (LOCKED before any
+#    training)"; sourced to Ibn Jinni / al-Khalil / Watson 2002 / Holes 2004; shown
+#    codebook-invariant across 4 variants by H-NEW-165.2)
+# plus the full-28 al-Khalil 8-POA partition of H-NEW-44.2 (h-new-44-2-poa-closure.md).
+# H-NEW-165's own table covers only the 14 muqattaat letters and codes voice in a
+# modern-adjusted way (it places qaf in mahmus); see pre-reg A1.2 for why this arm is a
+# sensitivity check and NOT the primary tuple.
+# ---------------------------------------------------------------------------
+
+K165_MAHMUS = set("صكهسحقشثفتخ")        # 11 — H-NEW-165 mahmus list (note: qaf here)
+K165_MAJHUR = set("المريعطنظبدذزضغو") | set("ج")   # 17 — +jim by forced closure (16+11=27)
+K165_STOPS = set("ابتدطقك")             # 7 — complement defines `continuant`
+K165_TAFKHIM = set("خصضطظغق")           # 7 — huruf al-tafkhim
+K165_PHARYNGEALIZED = K165_TAFKHIM | set("عح")     # 9 — tafkhim + pharyngeals
+K165_SONORANT = set("المرين") | set("و")           # 7
+K165_IDHLAQ = set("فرمنلب")             # 6 — al-Khalil's 6 fluent letters
+K165_QALQALA = set("قطبجد")             # 5 — identical to QALQALA above
+
+# H-NEW-44.2 al-Khalil 8-POA classes over all 28 letters.
+POA8_44_2 = {
+    "pharyngeal_glottal": set("اهعح"),
+    "velar_uvular":       set("غخقك"),
+    "palatal":            set("جشيض"),
+    "coronal_sibilant":   set("صزس"),
+    "coronal_stop":       set("طدت"),
+    "interdental":        set("ظذث"),
+    "coronal_sonorant":   set("رلن"),
+    "labial":             set("فبمو"),
+}
+
 
 def assert_feature_table(muq14):
     """MW-6 (e,f): the table must reproduce al-Zamakhsharī's own nine numbers."""
@@ -282,7 +334,55 @@ def build_tuples(freq, hamza_count, muq14):
             weights={k: freq[k] for k in ALPHABET28},
             subset=set(muq14),
         )
+
+    # --- AMENDMENT A1.2: post-observation sensitivity arms, MW-7-capped ---------
+    k165 = [("mahmus_165", K165_MAHMUS), ("stops_165", K165_STOPS),
+            ("tafkhim_165", K165_TAFKHIM), ("pharyngealized_165", K165_PHARYNGEALIZED),
+            ("sonorant_165", K165_SONORANT), ("idhlaq_165", K165_IDHLAQ),
+            ("qalqala_165", K165_QALQALA)]
+    tuples["T-F"] = dict(
+        label="28 letters, H-NEW-165 codebook sifat only (7 features) [POST-OBS, MW-7]",
+        inventory=list(ALPHABET28),
+        features=[(n, frozenset(s)) for n, s in k165],
+        weights={k: freq[k] for k in ALPHABET28},
+        subset=set(muq14),
+    )
+    tuples["T-G"] = dict(
+        label="28 letters, H-NEW-165 sifat + H-NEW-44.2 al-Khalil 8-POA (15 features) "
+              "[POST-OBS, MW-7]",
+        inventory=list(ALPHABET28),
+        features=[(n, frozenset(s)) for n, s in k165]
+                 + [("poa8:" + n, frozenset(s)) for n, s in sorted(POA8_44_2.items())],
+        weights={k: freq[k] for k in ALPHABET28},
+        subset=set(muq14),
+    )
     return tuples
+
+
+def assert_amendment_tables():
+    """MW-6 for the A1.2 arms: sizes and partition integrity, plus the corroborations
+    the amendment claims (prior locks reproducing this run's category memberships)."""
+    assert len(K165_MAHMUS) == 11 and len(K165_MAJHUR) == 17, "A1.2 voice sizes"
+    assert K165_MAHMUS | K165_MAJHUR == set(ALPHABET28), "A1.2 voice does not partition 28"
+    assert not (K165_MAHMUS & K165_MAJHUR), "A1.2 voice classes overlap"
+    assert len(K165_STOPS) == 7 and len(K165_TAFKHIM) == 7, "A1.2 stop/tafkhim sizes"
+    assert len(K165_PHARYNGEALIZED) == 9 and len(K165_SONORANT) == 7, "A1.2 phar/son sizes"
+    assert len(K165_IDHLAQ) == 6 and len(K165_QALQALA) == 5, "A1.2 idhlaq/qalqala sizes"
+    tot = sum(len(g) for g in POA8_44_2.values())
+    assert tot == 28 and len(set().union(*POA8_44_2.values())) == 28, "A1.2 POA8 partition"
+    # A1.1 corroboration: H-NEW-165's tafkhim == this run's mustaliya; qalqala identical.
+    assert K165_TAFKHIM == MUSTALIYA, "A1.1: H-NEW-165 tafkhim != mustaliya"
+    assert K165_QALQALA == QALQALA, "A1.1: H-NEW-165 qalqala != qalqala"
+    # A1.1 corroboration: H-NEW-69 G3/G4/G8 overlaps (majhura 18/k=9, mahmusa 10/k=5,
+    # itbaq 4/k=2) must match this run's table.
+    assert (len(MAHMUSA), len(set(ALPHABET28) - MAHMUSA)) == (10, 18), "A1.1: H-NEW-69 G3/G4"
+    assert len(MUTBAQA) == 4, "A1.1: H-NEW-69 G8 itbaq size"
+    # A1.2 divergence the amendment discloses: H-NEW-165 places qaf in mahmus, the
+    # classical tables (and al-Zamakhshari) place it in majhura. Assert the divergence is
+    # real, so the disclosure cannot silently become false.
+    assert "ق" in K165_MAHMUS and "ق" not in MAHMUSA, "A1.2: qaf divergence not present"
+    print("[MW-6] A1.2 amendment tables verified; H-NEW-165 tafkhim/qalqala reproduce "
+          "this run's mustaliya/qalqala exactly; qaf voicing divergence confirmed")
 
 
 # ----------------------------------------------------------------------------
@@ -511,10 +611,11 @@ def verdict(D_obs, null, reproduces_zamakhshari=False):
 
 def main():
     t0 = time.time()
-    verify_prereg()
+    stage_sha = verify_prereg()
     loci, muq14, surahs = derive_muqattaat()
     freq, hamza = letter_frequencies()
     zam = assert_feature_table(muq14)
+    assert_amendment_tables()
     tuples = build_tuples(freq, hamza, muq14)
 
     mass_share_total = sum(freq[c] for c in muq14) / sum(freq.values())
@@ -522,7 +623,7 @@ def main():
           f"(H-NEW-1810 T3 = 0.7441)")
 
     results = {}
-    for key in ("T-A", "T-B", "T-C", "T-D", "T-E"):
+    for key in ("T-A", "T-B", "T-C", "T-D", "T-E", "T-F", "T-G"):
         tp = tuples[key]
         D, Dlit, Df, rows = observed(tp)
         print(f"\n=== {key}: {tp['label']} ===")
@@ -553,14 +654,28 @@ def main():
             verdict_H2_N1=("OPTIMIZER-CONFIRMED" if h2["p_exact_le"] < ALPHA_BON else "NULL"),
             verdict_H1_N2=("OPTIMIZER-CONFIRMED" if mc["p_h1"] < ALPHA_BON else "NULL"),
             verdict_H2_N2=("OPTIMIZER-CONFIRMED" if mc["p_h2"] < ALPHA_BON else "NULL"),
+            post_observation=(key in ("T-F", "T-G")),
         )
+        # --- A1.5: the amendment must not perturb the locked five -------------
+        if key in LOCKED_RUN_D_OBS:
+            assert abs(D - LOCKED_RUN_D_OBS[key]) < 1e-9, (
+                f"A1.5 VIOLATION: {key} D_obs {D} != locked-run {LOCKED_RUN_D_OBS[key]}")
+            assert abs(h1["p_exact_le"] - LOCKED_RUN_P_H1_N1[key]) < 1e-7, (
+                f"A1.5 VIOLATION: {key} p_H1_N1 {h1['p_exact_le']} != locked-run "
+                f"{LOCKED_RUN_P_H1_N1[key]}")
 
     payload = dict(
         finding_id="H-NEW-2550",
         title="Muqattaat-14 as an articulatory-feature-space optimizer — "
               "al-Zamakhshari's 'half of each genus' against the exact C(28,14) null",
         date="2026-08-07", author="Waiel Al-Shujaa",
-        prereg_sha256=PREREG_SHA256,
+        prereg_sha256=PREREG_SHA256_LOCK,
+        prereg_sha256_amended=PREREG_SHA256_AMENDED,
+        prereg_sha256_verified_this_run=stage_sha,
+        amendment="A1 (post-observation): prior-art disclosure (H-NEW-69, H-NEW-44.2, "
+                  "H-NEW-165/165.2, H-NEW-60); adds T-F/T-G sensitivity arms; TIGHTENS "
+                  "Bonferroni k from 20 to 28 (alpha_bon 0.0025 -> 0.00178571). No "
+                  "direction and no threshold loosened; primary tuple unchanged (T-A).",
         seed=SEED, seed_replication=SEED_REPLICATION, n_mc=N_MC,
         bonferroni_k=BONFERRONI_K, alpha_bon=ALPHA_BON,
         muqattaat=dict(

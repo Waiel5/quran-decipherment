@@ -8,6 +8,8 @@ date_last_updated: 2026-04-28
 
 This is the navigation index. Open in Obsidian to see the connected graph. Click any link to navigate. Backlinks show where each finding is referenced.
 
+> **Disambiguation (added 2026-08-07).** Five `cross-finding-0NN` identifiers — **023, 025, 026, 027, 028** — resolve to more than one document, because `findings/cross-finding/` and `findings/phase-b-hypotheses/` mint into the same numeric space. Anywhere below that this file says `cross-finding-026` or `cross-finding-027` without a qualifier, it means the **2026-04-28** series in `findings/cross-finding/` (`cf-026-iʿjāz`, `cf-027-takrīr`) — *not* the 2026-05-29/30 formal laws of the same number. See [[CROSS-FINDING-INDEX]] for the full table and the handle convention.
+
 ---
 
 ## ROOT — The Master Empirical Claim
@@ -184,7 +186,7 @@ Seven full per-surah deep investigations completed under [[INVESTIGATION-PROTOCO
 
 - **[[Q033-al-ahzab/00-overview|Q 33 al-Aḥzāb]]** — UAS rank 1; **Structural-twin-pair** keystone. Files: [[Q033-al-ahzab/01-empirical-profile|01]], [[Q033-al-ahzab/02-content-analysis|02]], [[Q033-al-ahzab/03-tafsir-survey|03]], [[Q033-al-ahzab/04-hadith-corpus|04]], [[Q033-al-ahzab/05-classical-claims-audit|05]], [[Q033-al-ahzab/06-novel-findings|06]], [[Q033-al-ahzab/07-cross-references|07]]. Pre-reg tests: F-01 alif-monorhyme corpus-MAX **FALSIFIED** (rank 11/114; 8 surahs at 100%) · F-02 v.40 word-midpoint RULES-TUPLE-FRAGILE · F-03 ḥijāb-cluster cohesion NULL · F-04 v.72 *amāna* distinctness VINDICATED-length-ctrl · F-05 wives-cluster vs Medinan-legal **FALSIFIED** (rank 4/5).
 
-- **[[Q055-al-rahman/00-overview|Q 55 al-Raḥmān]]** — UAS rank 7; *iʿjāz al-takrīr* candidate (cross-finding-027 in flight). Files: [[Q055-al-rahman/01-empirical-profile|01]], [[Q055-al-rahman/02-content-analysis|02]], [[Q055-al-rahman/03-tafsir-survey|03]], [[Q055-al-rahman/04-hadith-corpus|04]], [[Q055-al-rahman/05-classical-claims-audit|05]], [[Q055-al-rahman/06-novel-findings|06]], [[Q055-al-rahman/07-cross-references|07]]. Pre-reg tests: F-01 31-fold refrain CONFIRMED rank 1/114 · F-02 dual-pronoun *kumā* density rank 1/114 (23× runner-up) · F-03 cosmic-vocab DIRECTIONAL (rank 4) · F-04 dual-paradise structural-similarity p=0.0033 CONFIRMED · F-05 outlier-status MODERATE_OUTLIER under standardized methodology.
+- **[[Q055-al-rahman/00-overview|Q 55 al-Raḥmān]]** — UAS rank 7; *iʿjāz al-takrīr* candidate — **tested and FALSIFIED-AS-PRE-REGISTERED** by [[cross-finding-027-ijaz-al-takrir|cf-027-takrīr]] (2026-04-28); Q 55 is *sui generis*, not the head of a refrain class. *(Correction 2026-08-07: this entry previously read "cross-finding-027 in flight" — the test had already landed NULL when this file was last updated.)* Files: [[Q055-al-rahman/01-empirical-profile|01]], [[Q055-al-rahman/02-content-analysis|02]], [[Q055-al-rahman/03-tafsir-survey|03]], [[Q055-al-rahman/04-hadith-corpus|04]], [[Q055-al-rahman/05-classical-claims-audit|05]], [[Q055-al-rahman/06-novel-findings|06]], [[Q055-al-rahman/07-cross-references|07]]. Pre-reg tests: F-01 31-fold refrain CONFIRMED rank 1/114 · F-02 dual-pronoun *kumā* density rank 1/114 (23× runner-up) · F-03 cosmic-vocab DIRECTIONAL (rank 4) · F-04 dual-paradise structural-similarity p=0.0033 CONFIRMED · F-05 outlier-status MODERATE_OUTLIER under standardized methodology.
 
 ### Wave D — eponymity / muqaṭṭaʿāt-singletons / muʿawwidhāt / recitation-tradition (2026-04-28)
 
@@ -220,7 +222,7 @@ Seven full per-surah deep investigations completed under [[INVESTIGATION-PROTOCO
 - **Structural-twin-pair** cell: [[Q024-al-nur/00-overview|Q 24]], [[Q033-al-ahzab/00-overview|Q 33]] (high outlier + bracketed top-15 adjacency BOTH SIDES + LOW sig_A; "outlier-without-fawāṣil-virtuosity").
 - **iʿjāz-al-fawāṣil-pure** cell: Q 86, 89, 100, 106, **[[Q113-al-falaq/00-overview|Q 113]] (Wave-D 2026-04-28 confirmation, all 4 criteria met, [[Q113-al-falaq/Q113-F-01-fawasil-pure-cell|Q113-F-01]])** (high sig_A, moderate outlier; al-Bāqillānī *fawāṣil* exemplars).
 - **iʿjāz-al-maʿnā** cell: **[[Q112-al-ikhlas/00-overview|Q 112]] (rank-1 FR-centroid exemplar, [[Q112-al-ikhlas/Q112-F-01-fr-centroid|Q112-F-01]])**, **[[Q114-al-nas/00-overview|Q 114]] (FR-centroid rank 6, co-member, [[Q114-al-nas/Q114-F-01-cell-co-member|Q114-F-01]])**, Q 67 (Wave-D 2026-04-28 confirmation) (low UAS, recitation-tradition / *faḍāʾil*-rich; *thuluth al-Qurʾān* / muʿawwidhāt / *al-Mānīʿa*).
-- **iʿjāz-al-takrīr** *(5th-cell candidate, queued as cross-finding-027)*: [[Q055-al-rahman/00-overview|Q 55]] (rank-1 refrain density + corpus-min sig_A).
+- **iʿjāz-al-takrīr** *(5th-cell candidate — TESTED AND FALSIFIED as pre-registered by [[cross-finding-027-ijaz-al-takrir|cf-027-takrīr]], 2026-04-28; the typology stays at 4 cells + the Q 18 6th cell below)*: [[Q055-al-rahman/00-overview|Q 55]] (rank-1 refrain density + corpus-min sig_A) is *sui generis*, not a class head. *(Correction 2026-08-07: previously read "queued as cross-finding-027".)*
 - **anti-iʿjāz-with-monolithic-rhyme-register** *(6th-cell, established by Wave-D Q 18)*: [[Q018-al-kahf/00-overview|Q 18]] (sig_A rank 110/114; 99.09% alif-monorhyme over 110 verses; cheaply-bracketed both sides; mid UAS via |sig_A| magnitude alone). Q 18 is the project's clearest case of "monolithic-register-sustained-over-large-N" as an architectural mechanism distinct from outlier-disruption (Q 24/Q 33), fāṣila-virtuosity (Q 33/Q 55), and recitation-tradition theological-iʿjāz (Q 67/Q 112).
 
 ### Falsifications and vindications (Wave A/B)
@@ -275,9 +277,13 @@ Augmenting the corpus-level anchor map above with per-surah Wave A/B vindication
 ### al-Khaṭṭābī *iʿjāz al-maʿnā* (per-surah refinement)
 - Q 33:56 *ṣalawāt verse* — empirically NOT-STRUCTURAL-DISTINCTIVE = liturgical-theological iʿjāz, not architectural: [[Q033-al-ahzab/05-classical-claims-audit|Q 33 audit Claim 3]] (concrete instance of theological-iʿjāz / structural-iʿjāz orthogonality).
 
-### Queued: cross-finding-027 (in flight)
+### Landed NULL: [[cross-finding-027-ijaz-al-takrir|cf-027-takrīr]] (2026-04-28)
 
-The Q 55 specialist's proposed **iʿjāz al-takrīr** (refrain-iʿjāz) axis — empirically anchored by Q 55's 31-fold refrain + 23× dual-pronoun density + corpus-min sig_A — is queued for corpus-level pre-registered LOOCV across candidate refrain-surahs (Q 26 *inna fī dhālika la-āyātan...*; Q 77 *wayl-un yawmaʾidh-in li-l-mukadhdhibīn*). Classical antecedents: al-Zamakhsharī *iqtisās*, al-Sakkākī *takrīr* in *Miftāḥ al-ʿulūm*. Status: **5th-cell candidate, awaiting cross-surah evaluation** before promotion to a full 5-cell typology of cross-finding-026 §13.
+> **Correction 2026-08-07.** This section previously read "Queued: cross-finding-027 (in flight)" and gave the status as "5th-cell candidate, awaiting cross-surah evaluation." The test had in fact already landed on 2026-04-28. The result is recorded below, and the ID is disambiguated: `cf-027-takrīr` is the 2026-04-28 refrain axis, **not** `cf-027-formal`, the 2026-05-30 eponymy-independence law. See [[CROSS-FINDING-INDEX]].
+
+The Q 55 specialist's proposed **iʿjāz al-takrīr** (refrain-iʿjāz) axis — empirically anchored by Q 55's 31-fold refrain + 23× dual-pronoun density + corpus-min sig_A — was tested at corpus level under SHA-locked pre-registration (`findings/cross-finding/cross-finding-027-prereg.md`, SHA 14b4ae88…) across candidate refrain-surahs (Q 26 *inna fī dhālika la-āyātan...*; Q 77 *wayl-un yawmaʾidh-in li-l-mukadhdhibīn*). Classical antecedents: al-Zamakhsharī *iqtisās*, al-Sakkākī *takrīr* in *Miftāḥ al-ʿulūm*.
+
+**Verdict: FALSIFIED as pre-registered.** Of three Bonferroni-3 sub-tests at α=0.0167, only the Q 55 cross-corpus genre-distinctness cell passed (p=0.0038); the candidate-refrain set (Q 26, Q 77) failed to cluster with Q 55 on FR-roots, sig_A, or refrain-density combined-z. Under a post-hoc recurrence-restricted re-formulation (MW-7 capped) the axis is DIRECTIONAL on Q 55 alone — **Q 55 is *sui generis*, not the head of a multi-surah class.** The 5-cell promotion of cross-finding-026 §13 therefore did **not** happen; the typology stands at 4 cells plus the Q 18 6th cell. Full record: [[cross-finding-027-ijaz-al-takrir|cf-027-takrīr]] and `findings/cross-finding/cross-finding-026-iʿjāz-architecture.md` §13.5.
 
 ---
 

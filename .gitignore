@@ -36,3 +36,10 @@ data/alt-text/risan-quran-json/_external_git/
 poem/audits/__pycache__/
 AGENTS.md
 .agents/
+
+# Run directories retained on disk but NOT committed, because their manifest.json records a
+# non-portable local input path. The standing rule is that a run directory is NEVER deleted —
+# including uncommitted, superseded, or byte-identical ones (see h-new-2540-form-v-valency.md
+# §8.1). Where a run cannot be committed it is retained locally and the reason recorded here.
+findings/phase-b-hypotheses/runs/h-new-2560/20260807T003258Z/
+findings/phase-b-hypotheses/runs/h-new-2610/

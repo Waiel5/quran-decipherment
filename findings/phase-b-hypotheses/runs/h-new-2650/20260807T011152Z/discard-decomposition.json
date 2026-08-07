@@ -1,0 +1,1458 @@
+{
+ "finding_id": "H-NEW-2650",
+ "artifact": "discard decomposition (a)/(b) + exhaustive Form VI/VII inspection",
+ "prereg_sha256": "4d7dbc76aa56e551c4dc38fcb6132c63e39884644344feb0e683c179481edacf",
+ "eqtb_used": false,
+ "note": "The RULE-NEW classifier does not take verb form as an input and therefore cannot introduce a form-correlated bias by construction.",
+ "decomposition_by_form": {
+  "I": {
+   "verbs": 11695,
+   "with_post_verb_clitic": 6439,
+   "counted_by_rule_old": 1672,
+   "discarded_by_rule_old": 4767,
+   "a_legitimate_subject_markers": 4610,
+   "b_genuine_object_false_negatives": 157,
+   "b_rate_of_discards": 0.032934759807006504,
+   "b_rate_of_rule_new_objects": 0.08583925642427556,
+   "false_positives_of_rule_old": 0
+  },
+  "II": {
+   "verbs": 1160,
+   "with_post_verb_clitic": 724,
+   "counted_by_rule_old": 381,
+   "discarded_by_rule_old": 343,
+   "a_legitimate_subject_markers": 312,
+   "b_genuine_object_false_negatives": 31,
+   "b_rate_of_discards": 0.09037900874635568,
+   "b_rate_of_rule_new_objects": 0.07524271844660194,
+   "false_positives_of_rule_old": 0
+  },
+  "III": {
+   "verbs": 310,
+   "with_post_verb_clitic": 240,
+   "counted_by_rule_old": 90,
+   "discarded_by_rule_old": 150,
+   "a_legitimate_subject_markers": 139,
+   "b_genuine_object_false_negatives": 11,
+   "b_rate_of_discards": 0.07333333333333333,
+   "b_rate_of_rule_new_objects": 0.10891089108910891,
+   "false_positives_of_rule_old": 0
+  },
+  "IV": {
+   "verbs": 3203,
+   "with_post_verb_clitic": 2181,
+   "counted_by_rule_old": 695,
+   "discarded_by_rule_old": 1486,
+   "a_legitimate_subject_markers": 1407,
+   "b_genuine_object_false_negatives": 79,
+   "b_rate_of_discards": 0.0531628532974428,
+   "b_rate_of_rule_new_objects": 0.1020671834625323,
+   "false_positives_of_rule_old": 0
+  },
+  "V": {
+   "verbs": 404,
+   "with_post_verb_clitic": 226,
+   "counted_by_rule_old": 30,
+   "discarded_by_rule_old": 196,
+   "a_legitimate_subject_markers": 191,
+   "b_genuine_object_false_negatives": 5,
+   "b_rate_of_discards": 0.025510204081632654,
+   "b_rate_of_rule_new_objects": 0.14285714285714285,
+   "false_positives_of_rule_old": 0
+  },
+  "VI": {
+   "verbs": 77,
+   "with_post_verb_clitic": 55,
+   "counted_by_rule_old": 0,
+   "discarded_by_rule_old": 55,
+   "a_legitimate_subject_markers": 54,
+   "b_genuine_object_false_negatives": 1,
+   "b_rate_of_discards": 0.01818181818181818,
+   "b_rate_of_rule_new_objects": 1.0,
+   "false_positives_of_rule_old": 0
+  },
+  "VII": {
+   "verbs": 51,
+   "with_post_verb_clitic": 22,
+   "counted_by_rule_old": 0,
+   "discarded_by_rule_old": 22,
+   "a_legitimate_subject_markers": 22,
+   "b_genuine_object_false_negatives": 0,
+   "b_rate_of_discards": 0.0,
+   "b_rate_of_rule_new_objects": null,
+   "false_positives_of_rule_old": 0
+  },
+  "VIII": {
+   "verbs": 948,
+   "with_post_verb_clitic": 642,
+   "counted_by_rule_old": 97,
+   "discarded_by_rule_old": 545,
+   "a_legitimate_subject_markers": 524,
+   "b_genuine_object_false_negatives": 21,
+   "b_rate_of_discards": 0.03853211009174312,
+   "b_rate_of_rule_new_objects": 0.17796610169491525,
+   "false_positives_of_rule_old": 0
+  },
+  "IX": {
+   "verbs": 5,
+   "with_post_verb_clitic": 0,
+   "counted_by_rule_old": 0,
+   "discarded_by_rule_old": 0,
+   "a_legitimate_subject_markers": 0,
+   "b_genuine_object_false_negatives": 0,
+   "b_rate_of_discards": null,
+   "b_rate_of_rule_new_objects": null,
+   "false_positives_of_rule_old": 0
+  },
+  "X": {
+   "verbs": 354,
+   "with_post_verb_clitic": 255,
+   "counted_by_rule_old": 45,
+   "discarded_by_rule_old": 210,
+   "a_legitimate_subject_markers": 204,
+   "b_genuine_object_false_negatives": 6,
+   "b_rate_of_discards": 0.02857142857142857,
+   "b_rate_of_rule_new_objects": 0.11764705882352941,
+   "false_positives_of_rule_old": 0
+  },
+  "XII": {
+   "verbs": 9,
+   "with_post_verb_clitic": 2,
+   "counted_by_rule_old": 0,
+   "discarded_by_rule_old": 2,
+   "a_legitimate_subject_markers": 2,
+   "b_genuine_object_false_negatives": 0,
+   "b_rate_of_discards": 0.0,
+   "b_rate_of_rule_new_objects": null,
+   "false_positives_of_rule_old": 0
+  }
+ },
+ "corpus_total": {
+  "a_legitimate_subject_markers": 7465,
+  "b_genuine_object_false_negatives": 311,
+  "b_rate_of_all_discards": 0.03999485596707819
+ },
+ "exhaustive_inspection": {
+  "VI": {
+   "n_verbs_with_clitic": 55,
+   "n_object_bearing": 1,
+   "all_rows": [
+    {
+     "loc": "(103:3:6:2)",
+     "verb_surface": "tawaASa",
+     "root": "wSy",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "woA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "إلا الذين آمنوا وعملوا الصالحات وتواصوا بالحق وتواصوا بالصبر"
+    },
+    {
+     "loc": "(103:3:8:2)",
+     "verb_surface": "tawaASa",
+     "root": "wSy",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "woA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "إلا الذين آمنوا وعملوا الصالحات وتواصوا بالحق وتواصوا بالصبر"
+    },
+    {
+     "loc": "(10:45:10:1)",
+     "verb_surface": "yataEaArafu",
+     "root": "Erf",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ويوم يحشرهم كأن لم يلبثوا إلا ساعة من النهار يتعارفون بينهم ۚ قد خسر الذين كذبوا بلقاء الله وما كانوا مهتدين"
+    },
+    {
+     "loc": "(18:19:3:2)",
+     "verb_surface": "yatasaA^'alu",
+     "root": "sAl",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وكذلك بعثناهم ليتساءلوا بينهم ۚ قال قائل منهم كم لبثتم ۖ قالوا لبثنا يوما أو بعض يوم ۚ قالوا ربكم أعلم بما لبثتم فابعثوا أحدكم بورقكم هذه إلى المدينة فلينظر أيها أزكى طعاما فليأتكم برزق منه وليتلطف ولا يشعرن بكم أحدا"
+    },
+    {
+     "loc": "(18:21:15:1)",
+     "verb_surface": "yatana`zaEu",
+     "root": "nzE",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وكذلك أعثرنا عليهم ليعلموا أن وعد الله حق وأن الساعة لا ريب فيها إذ يتنازعون بينهم أمرهم ۖ فقالوا ابنوا عليهم بنيانا ۖ ربهم أعلم بهم ۚ قال الذين غلبوا على أمرهم لنتخذن عليهم مسجدا"
+    },
+    {
+     "loc": "(20:103:1:1)",
+     "verb_surface": "yataxa`fatu",
+     "root": "xft",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يتخافتون بينهم إن لبثتم إلا عشرا"
+    },
+    {
+     "loc": "(20:62:1:2)",
+     "verb_surface": "tana`zaEu",
+     "root": "nzE",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "w^A@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فتنازعوا أمرهم بينهم وأسروا النجوى"
+    },
+    {
+     "loc": "(23:101:10:1)",
+     "verb_surface": "yatasaA^'alu",
+     "root": "sAl",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فإذا نفخ في الصور فلا أنساب بينهم يومئذ ولا يتساءلون"
+    },
+    {
+     "loc": "(27:49:2:1)",
+     "verb_surface": "taqaAsamu",
+     "root": "qsm",
+     "agr": "2MP",
+     "aspect": "IMPV",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "قالوا تقاسموا بالله لنبيتنه وأهله ثم لنقولن لوليه ما شهدنا مهلك أهله وإنا لصادقون"
+    },
+    {
+     "loc": "(28:66:7:1)",
+     "verb_surface": "yatasaA^'alu",
+     "root": "sAl",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فعميت عليهم الأنباء يومئذ فهم لا يتساءلون"
+    },
+    {
+     "loc": "(2:230:18:1)",
+     "verb_surface": "yataraAjaEa",
+     "root": "rjE",
+     "agr": "3MD",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "A^",
+       "pgn": "3MD",
+       "classification": "SUBJECT",
+       "rule": 5
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فإن طلقها فلا تحل له من بعد حتى تنكح زوجا غيره ۗ فإن طلقها فلا جناح عليهما أن يتراجعا إن ظنا أن يقيما حدود الله ۗ وتلك حدود الله يبينها لقوم يعلمون"
+    },
+    {
+     "loc": "(2:232:12:1)",
+     "verb_surface": "tara`Da",
+     "root": "rDw",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "woA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وإذا طلقتم النساء فبلغن أجلهن فلا تعضلوهن أن ينكحن أزواجهن إذا تراضوا بينهم بالمعروف ۗ ذلك يوعظ به من كان منكم يؤمن بالله واليوم الآخر ۗ ذلكم أزكى لكم وأطهر ۗ والله يعلم وأنتم لا تعلمون"
+    },
+    {
+     "loc": "(2:282:110:1)",
+     "verb_surface": "tabaAyaEo",
+     "root": "byE",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه ۚ وليكتب بينكم كاتب بالعدل ۚ ولا يأب كاتب أن يكتب كما علمه الله ۚ فليكتب وليملل الذي عليه الحق وليتق الله ربه ولا يبخس منه شيئا ۚ فإن كان الذي عليه الحق سفيها أو ضعيفا أو لا يستطيع أن يمل هو فليملل وليه بالعدل ۚ واستشهدوا شهيدين من رجالكم ۖ فإن لم يكونا رجلين فرجل وامرأتان ممن ترضون من الشهداء أن تضل إحداهما فتذكر إحداهما الأخرى ۚ ولا يأب الشهداء إذا ما دعوا ۚ ولا تسأموا أن تكتبوه صغيرا أو كبيرا إلى أجله ۚ ذلكم أقسط عند الله وأقوم للشهادة وأدنى ألا ترتابوا ۖ إلا أن تكون تجارة حاضرة تديرونها بينكم فليس عليكم جناح ألا تكتبوها ۗ وأشهدوا إذا تبايعتم ۚ ولا يضار كاتب ولا شهيد ۚ وإن تفعلوا فإنه فسوق بكم ۗ واتقوا الله ۖ ويعلمكم الله ۗ والله بكل شيء عليم"
+    },
+    {
+     "loc": "(2:282:5:1)",
+     "verb_surface": "tadaAyan",
+     "root": "dyn",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tum",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه ۚ وليكتب بينكم كاتب بالعدل ۚ ولا يأب كاتب أن يكتب كما علمه الله ۚ فليكتب وليملل الذي عليه الحق وليتق الله ربه ولا يبخس منه شيئا ۚ فإن كان الذي عليه الحق سفيها أو ضعيفا أو لا يستطيع أن يمل هو فليملل وليه بالعدل ۚ واستشهدوا شهيدين من رجالكم ۖ فإن لم يكونا رجلين فرجل وامرأتان ممن ترضون من الشهداء أن تضل إحداهما فتذكر إحداهما الأخرى ۚ ولا يأب الشهداء إذا ما دعوا ۚ ولا تسأموا أن تكتبوه صغيرا أو كبيرا إلى أجله ۚ ذلكم أقسط عند الله وأقوم للشهادة وأدنى ألا ترتابوا ۖ إلا أن تكون تجارة حاضرة تديرونها بينكم فليس عليكم جناح ألا تكتبوها ۗ وأشهدوا إذا تبايعتم ۚ ولا يضار كاتب ولا شهيد ۚ وإن تفعلوا فإنه فسوق بكم ۗ واتقوا الله ۖ ويعلمكم الله ۗ والله بكل شيء عليم"
+    },
+    {
+     "loc": "(2:72:4:2)",
+     "verb_surface": "{d~a`ra`#o",
+     "root": "drA",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وإذ قتلتم نفسا فادارأتم فيها ۖ والله مخرج ما كنتم تكتمون"
+    },
+    {
+     "loc": "(2:85:11:1)",
+     "verb_surface": "taZa`haru",
+     "root": "Zhr",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ثم أنتم هؤلاء تقتلون أنفسكم وتخرجون فريقا منكم من ديارهم تظاهرون عليهم بالإثم والعدوان وإن يأتوكم أسارى تفادوهم وهو محرم عليكم إخراجهم ۚ أفتؤمنون ببعض الكتاب وتكفرون ببعض ۚ فما جزاء من يفعل ذلك منكم إلا خزي في الحياة الدنيا ۖ ويوم القيامة يردون إلى أشد العذاب ۗ وما الله بغافل عما تعملون"
+    },
+    {
+     "loc": "(37:25:4:1)",
+     "verb_surface": "tanaASaru",
+     "root": "nSr",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ما لكم لا تناصرون"
+    },
+    {
+     "loc": "(37:27:5:1)",
+     "verb_surface": "yatasaA^'alu",
+     "root": "sAl",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وأقبل بعضهم على بعض يتساءلون"
+    },
+    {
+     "loc": "(37:50:5:1)",
+     "verb_surface": "yatasaA^'alu",
+     "root": "sAl",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فأقبل بعضهم على بعض يتساءلون"
+    },
+    {
+     "loc": "(3:152:11:2)",
+     "verb_surface": "tana`zaEo",
+     "root": "nzE",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ولقد صدقكم الله وعده إذ تحسونهم بإذنه ۖ حتى إذا فشلتم وتنازعتم في الأمر وعصيتم من بعد ما أراكم ما تحبون ۚ منكم من يريد الدنيا ومنكم من يريد الآخرة ۚ ثم صرفكم عنهم ليبتليكم ۖ ولقد عفا عنكم ۗ والله ذو فضل على المؤمنين"
+    },
+    {
+     "loc": "(40:47:2:1)",
+     "verb_surface": "yataHaA^j~u",
+     "root": "Hjj",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وإذ يتحاجون في النار فيقول الضعفاء للذين استكبروا إنا كنا لكم تبعا فهل أنتم مغنون عنا نصيبا من النار"
+    },
+    {
+     "loc": "(49:11:27:1)",
+     "verb_surface": "tanaAbazu",
+     "root": "nbz",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا لا يسخر قوم من قوم عسى أن يكونوا خيرا منهم ولا نساء من نساء عسى أن يكن خيرا منهن ۖ ولا تلمزوا أنفسكم ولا تنابزوا بالألقاب ۖ بئس الاسم الفسوق بعد الإيمان ۚ ومن لم يتب فأولئك هم الظالمون"
+    },
+    {
+     "loc": "(49:13:11:2)",
+     "verb_surface": "taEaArafu",
+     "root": "Erf",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "w^A@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الناس إنا خلقناكم من ذكر وأنثى وجعلناكم شعوبا وقبائل لتعارفوا ۚ إن أكرمكم عند الله أتقاكم ۚ إن الله عليم خبير"
+    },
+    {
+     "loc": "(4:1:21:1)",
+     "verb_surface": "tasaA^'alu",
+     "root": "sAl",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الناس اتقوا ربكم الذي خلقكم من نفس واحدة وخلق منها زوجها وبث منهما رجالا كثيرا ونساء ۚ واتقوا الله الذي تساءلون به والأرحام ۚ إن الله كان عليكم رقيبا"
+    },
+    {
+     "loc": "(4:24:33:1)",
+     "verb_surface": "tara`Dayo",
+     "root": "rDw",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tum",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "۞ والمحصنات من النساء إلا ما ملكت أيمانكم ۖ كتاب الله عليكم ۚ وأحل لكم ما وراء ذلكم أن تبتغوا بأموالكم محصنين غير مسافحين ۚ فما استمتعتم به منهن فآتوهن أجورهن فريضة ۚ ولا جناح عليكم فيما تراضيتم به من بعد الفريضة ۚ إن الله كان عليما حكيما"
+    },
+    {
+     "loc": "(4:59:12:1)",
+     "verb_surface": "tana`zaEo",
+     "root": "nzE",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا أطيعوا الله وأطيعوا الرسول وأولي الأمر منكم ۖ فإن تنازعتم في شيء فردوه إلى الله والرسول إن كنتم تؤمنون بالله واليوم الآخر ۚ ذلك خير وأحسن تأويلا"
+    },
+    {
+     "loc": "(4:60:17:1)",
+     "verb_surface": "yataHaAkamu",
+     "root": "Hkm",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "w^A@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ألم تر إلى الذين يزعمون أنهم آمنوا بما أنزل إليك وما أنزل من قبلك يريدون أن يتحاكموا إلى الطاغوت وقد أمروا أن يكفروا به ويريد الشيطان أن يضلهم ضلالا بعيدا"
+    },
+    {
+     "loc": "(51:53:1:2)",
+     "verb_surface": "tawaASa",
+     "root": "wSy",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "woA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "أتواصوا به ۚ بل هم قوم طاغون"
+    },
+    {
+     "loc": "(52:23:1:1)",
+     "verb_surface": "yatana`zaEu",
+     "root": "nzE",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يتنازعون فيها كأسا لا لغو فيها ولا تأثيم"
+    },
+    {
+     "loc": "(52:25:5:1)",
+     "verb_surface": "yatasaA^'alu",
+     "root": "sAl",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وأقبل بعضهم على بعض يتساءلون"
+    },
+    {
+     "loc": "(58:3:14:1)",
+     "verb_surface": "yatamaA^s~a",
+     "root": "mss",
+     "agr": "3MD",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "A",
+       "pgn": "3MD",
+       "classification": "SUBJECT",
+       "rule": 5
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "والذين يظاهرون من نسائهم ثم يعودون لما قالوا فتحرير رقبة من قبل أن يتماسا ۚ ذلكم توعظون به ۚ والله بما تعملون خبير"
+    },
+    {
+     "loc": "(58:4:10:1)",
+     "verb_surface": "yatamaA^s~a",
+     "root": "mss",
+     "agr": "3MD",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "A",
+       "pgn": "3MD",
+       "classification": "SUBJECT",
+       "rule": 5
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فمن لم يجد فصيام شهرين متتابعين من قبل أن يتماسا ۖ فمن لم يستطع فإطعام ستين مسكينا ۚ ذلك لتؤمنوا بالله ورسوله ۚ وتلك حدود الله ۗ وللكافرين عذاب أليم"
+    },
+    {
+     "loc": "(58:8:13:2)",
+     "verb_surface": "yatana`ja",
+     "root": "njw",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wona",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ألم تر إلى الذين نهوا عن النجوى ثم يعودون لما نهوا عنه ويتناجون بالإثم والعدوان ومعصيت الرسول وإذا جاءوك حيوك بما لم يحيك به الله ويقولون في أنفسهم لولا يعذبنا الله بما نقول ۚ حسبهم جهنم يصلونها ۖ فبئس المصير"
+    },
+    {
+     "loc": "(58:9:12:2)",
+     "verb_surface": "tana`ja",
+     "root": "njw",
+     "agr": "2MP",
+     "aspect": "IMPV",
+     "clitics": [
+      {
+       "surface": "woA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا إذا تناجيتم فلا تتناجوا بالإثم والعدوان ومعصيت الرسول وتناجوا بالبر والتقوى ۖ واتقوا الله الذي إليه تحشرون"
+    },
+    {
+     "loc": "(58:9:5:1)",
+     "verb_surface": "tana`jayo",
+     "root": "njw",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا إذا تناجيتم فلا تتناجوا بالإثم والعدوان ومعصيت الرسول وتناجوا بالبر والتقوى ۖ واتقوا الله الذي إليه تحشرون"
+    },
+    {
+     "loc": "(58:9:7:1)",
+     "verb_surface": "tatana`ja",
+     "root": "njw",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "woA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا إذا تناجيتم فلا تتناجوا بالإثم والعدوان ومعصيت الرسول وتناجوا بالبر والتقوى ۖ واتقوا الله الذي إليه تحشرون"
+    },
+    {
+     "loc": "(5:2:38:2)",
+     "verb_surface": "taEaAwanu",
+     "root": "Ewn",
+     "agr": "2MP",
+     "aspect": "IMPV",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا لا تحلوا شعائر الله ولا الشهر الحرام ولا الهدي ولا القلائد ولا آمين البيت الحرام يبتغون فضلا من ربهم ورضوانا ۚ وإذا حللتم فاصطادوا ۚ ولا يجرمنكم شنآن قوم أن صدوكم عن المسجد الحرام أن تعتدوا ۘ وتعاونوا على البر والتقوى ۖ ولا تعاونوا على الإثم والعدوان ۚ واتقوا الله ۖ إن الله شديد العقاب"
+    },
+    {
+     "loc": "(5:2:43:1)",
+     "verb_surface": "taEaAwanu",
+     "root": "Ewn",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا لا تحلوا شعائر الله ولا الشهر الحرام ولا الهدي ولا القلائد ولا آمين البيت الحرام يبتغون فضلا من ربهم ورضوانا ۚ وإذا حللتم فاصطادوا ۚ ولا يجرمنكم شنآن قوم أن صدوكم عن المسجد الحرام أن تعتدوا ۘ وتعاونوا على البر والتقوى ۖ ولا تعاونوا على الإثم والعدوان ۚ واتقوا الله ۖ إن الله شديد العقاب"
+    },
+    {
+     "loc": "(5:79:3:1)",
+     "verb_surface": "yatanaAha",
+     "root": "nhy",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wona",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "كانوا لا يتناهون عن منكر فعلوه ۚ لبئس ما كانوا يفعلون"
+    },
+    {
+     "loc": "(65:6:29:1)",
+     "verb_surface": "taEaAsaro",
+     "root": "Esr",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "أسكنوهن من حيث سكنتم من وجدكم ولا تضاروهن لتضيقوا عليهن ۚ وإن كن أولات حمل فأنفقوا عليهن حتى يضعن حملهن ۚ فإن أرضعن لكم فآتوهن أجورهن ۖ وأتمروا بينكم بمعروف ۖ وإن تعاسرتم فسترضع له أخرى"
+    },
+    {
+     "loc": "(66:4:9:1)",
+     "verb_surface": "taZa`hara",
+     "root": "Zhr",
+     "agr": "2FD",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "A",
+       "pgn": "2FD",
+       "classification": "SUBJECT",
+       "rule": 5
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "إن تتوبا إلى الله فقد صغت قلوبكما ۖ وإن تظاهرا عليه فإن الله هو مولاه وجبريل وصالح المؤمنين ۖ والملائكة بعد ذلك ظهير"
+    },
+    {
+     "loc": "(68:23:3:1)",
+     "verb_surface": "yataxa`fatu",
+     "root": "xft",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فانطلقوا وهم يتخافتون"
+    },
+    {
+     "loc": "(68:30:5:1)",
+     "verb_surface": "yatala`wamu",
+     "root": "lwm",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فأقبل بعضهم على بعض يتلاومون"
+    },
+    {
+     "loc": "(68:49:3:1)",
+     "verb_surface": "tada`raka",
+     "root": "drk",
+     "agr": "3MS",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "hu,",
+       "pgn": "3MS",
+       "classification": "OBJECT",
+       "rule": 1
+      }
+     ],
+     "object_bearing": true,
+     "verse_text": "لولا أن تداركه نعمة من ربه لنبذ بالعراء وهو مذموم"
+    },
+    {
+     "loc": "(74:40:3:1)",
+     "verb_surface": "yatasaA^'alu",
+     "root": "sAl",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "في جنات يتساءلون"
+    },
+    {
+     "loc": "(78:1:2:1)",
+     "verb_surface": "yatasaA^'alu",
+     "root": "sAl",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "عم يتساءلون"
+    },
+    {
+     "loc": "(7:38:21:1)",
+     "verb_surface": "{d~aAraku",
+     "root": "drk",
+     "agr": "2MP",
+     "aspect": "IMPV",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "قال ادخلوا في أمم قد خلت من قبلكم من الجن والإنس في النار ۖ كلما دخلت أمة لعنت أختها ۖ حتى إذا اداركوا فيها جميعا قالت أخراهم لأولاهم ربنا هؤلاء أضلونا فآتهم عذابا ضعفا من النار ۖ قال لكل ضعف ولكن لا تعلمون"
+    },
+    {
+     "loc": "(83:30:4:1)",
+     "verb_surface": "yatagaAmazu",
+     "root": "gmz",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وإذا مروا بهم يتغامزون"
+    },
+    {
+     "loc": "(89:18:2:1)",
+     "verb_surface": "taHa`^D~u",
+     "root": "HDD",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ولا تحاضون على طعام المسكين"
+    },
+    {
+     "loc": "(8:42:12:1)",
+     "verb_surface": "tawaAEad",
+     "root": "wEd",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "t~umo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "إذ أنتم بالعدوة الدنيا وهم بالعدوة القصوى والركب أسفل منكم ۚ ولو تواعدتم لاختلفتم في الميعاد ۙ ولكن ليقضي الله أمرا كان مفعولا ليهلك من هلك عن بينة ويحيى من حي عن بينة ۗ وإن الله لسميع عليم"
+    },
+    {
+     "loc": "(8:43:11:3)",
+     "verb_surface": "tana`zaEo",
+     "root": "nzE",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "إذ يريكهم الله في منامك قليلا ۖ ولو أراكهم كثيرا لفشلتم ولتنازعتم في الأمر ولكن الله سلم ۗ إنه عليم بذات الصدور"
+    },
+    {
+     "loc": "(8:46:5:1)",
+     "verb_surface": "tana`zaEu",
+     "root": "nzE",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وأطيعوا الله ورسوله ولا تنازعوا فتفشلوا وتذهب ريحكم ۖ واصبروا ۚ إن الله مع الصابرين"
+    },
+    {
+     "loc": "(90:17:6:2)",
+     "verb_surface": "tawaASa",
+     "root": "wSy",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "woA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ثم كان من الذين آمنوا وتواصوا بالصبر وتواصوا بالمرحمة"
+    },
+    {
+     "loc": "(90:17:8:2)",
+     "verb_surface": "tawaASa",
+     "root": "wSy",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "woA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ثم كان من الذين آمنوا وتواصوا بالصبر وتواصوا بالمرحمة"
+    },
+    {
+     "loc": "(9:38:13:1)",
+     "verb_surface": "{v~aAqalo",
+     "root": "vql",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا ما لكم إذا قيل لكم انفروا في سبيل الله اثاقلتم إلى الأرض ۚ أرضيتم بالحياة الدنيا من الآخرة ۚ فما متاع الحياة الدنيا في الآخرة إلا قليل"
+    }
+   ]
+  },
+  "VII": {
+   "n_verbs_with_clitic": 22,
+   "n_object_bearing": 0,
+   "all_rows": [
+    {
+     "loc": "(12:62:10:1)",
+     "verb_surface": "{nqalabu",
+     "root": "qlb",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "w^A@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وقال لفتيانه اجعلوا بضاعتهم في رحالهم لعلهم يعرفونها إذا انقلبوا إلى أهلهم لعلهم يرجعون"
+    },
+    {
+     "loc": "(18:71:1:2)",
+     "verb_surface": "{nTalaqa",
+     "root": "Tlq",
+     "agr": "3MD",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "A",
+       "pgn": "3MD",
+       "classification": "SUBJECT",
+       "rule": 5
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فانطلقا حتى إذا ركبا في السفينة خرقها ۖ قال أخرقتها لتغرق أهلها لقد جئت شيئا إمرا"
+    },
+    {
+     "loc": "(18:74:1:2)",
+     "verb_surface": "{nTalaqa",
+     "root": "Tlq",
+     "agr": "3MD",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "A",
+       "pgn": "3MD",
+       "classification": "SUBJECT",
+       "rule": 5
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فانطلقا حتى إذا لقيا غلاما فقتله قال أقتلت نفسا زكية بغير نفس لقد جئت شيئا نكرا"
+    },
+    {
+     "loc": "(18:77:1:2)",
+     "verb_surface": "{nTalaqa",
+     "root": "Tlq",
+     "agr": "3MD",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "A",
+       "pgn": "3MD",
+       "classification": "SUBJECT",
+       "rule": 5
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فانطلقا حتى إذا أتيا أهل قرية استطعما أهلها فأبوا أن يضيفوهما فوجدا فيها جدارا يريد أن ينقض فأقامه ۖ قال لو شئت لاتخذت عليه أجرا"
+    },
+    {
+     "loc": "(26:227:19:1)",
+     "verb_surface": "yanqalibu",
+     "root": "qlb",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wna",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "إلا الذين آمنوا وعملوا الصالحات وذكروا الله كثيرا وانتصروا من بعد ما ظلموا ۗ وسيعلم الذين ظلموا أي منقلب ينقلبون"
+    },
+    {
+     "loc": "(3:127:8:2)",
+     "verb_surface": "yanqalibu",
+     "root": "qlb",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "ليقطع طرفا من الذين كفروا أو يكبتهم فينقلبوا خائبين"
+    },
+    {
+     "loc": "(3:144:14:1)",
+     "verb_surface": "{nqalabo",
+     "root": "qlb",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وما محمد إلا رسول قد خلت من قبله الرسل ۚ أفإن مات أو قتل انقلبتم على أعقابكم ۚ ومن ينقلب على عقبيه فلن يضر الله شيئا ۗ وسيجزي الله الشاكرين"
+    },
+    {
+     "loc": "(3:149:11:2)",
+     "verb_surface": "tanqalibu",
+     "root": "qlb",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا أيها الذين آمنوا إن تطيعوا الذين كفروا يردوكم على أعقابكم فتنقلبوا خاسرين"
+    },
+    {
+     "loc": "(3:159:12:2)",
+     "verb_surface": "{nfaD~u",
+     "root": "fDD",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فبما رحمة من الله لنت لهم ۖ ولو كنت فظا غليظ القلب لانفضوا من حولك ۖ فاعف عنهم واستغفر لهم وشاورهم في الأمر ۖ فإذا عزمت فتوكل على الله ۚ إن الله يحب المتوكلين"
+    },
+    {
+     "loc": "(3:174:1:2)",
+     "verb_surface": "{nqalabu",
+     "root": "qlb",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فانقلبوا بنعمة من الله وفضل لم يمسسهم سوء واتبعوا رضوان الله ۗ والله ذو فضل عظيم"
+    },
+    {
+     "loc": "(48:15:4:1)",
+     "verb_surface": "{nTalaqo",
+     "root": "Tlq",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "سيقول المخلفون إذا انطلقتم إلى مغانم لتأخذوها ذرونا نتبعكم ۖ يريدون أن يبدلوا كلام الله ۚ قل لن تتبعونا كذلكم قال الله من قبل ۖ فسيقولون بل تحسدوننا ۚ بل كانوا لا يفقهون إلا قليلا"
+    },
+    {
+     "loc": "(5:21:13:2)",
+     "verb_surface": "tanqalibu",
+     "root": "qlb",
+     "agr": "2MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "يا قوم ادخلوا الأرض المقدسة التي كتب الله لكم ولا ترتدوا على أدباركم فتنقلبوا خاسرين"
+    },
+    {
+     "loc": "(62:11:6:1)",
+     "verb_surface": "{nfaD~u",
+     "root": "fDD",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "w^A@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وإذا رأوا تجارة أو لهوا انفضوا إليها وتركوك قائما ۚ قل ما عند الله خير من اللهو ومن التجارة ۚ والله خير الرازقين"
+    },
+    {
+     "loc": "(63:7:12:1)",
+     "verb_surface": "yanfaD~u",
+     "root": "fDD",
+     "agr": "3MP",
+     "aspect": "IMPF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "هم الذين يقولون لا تنفقوا على من عند رسول الله حتى ينفضوا ۗ ولله خزائن السماوات والأرض ولكن المنافقين لا يفقهون"
+    },
+    {
+     "loc": "(68:23:1:2)",
+     "verb_surface": "{nTalaqu",
+     "root": "Tlq",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فانطلقوا وهم يتخافتون"
+    },
+    {
+     "loc": "(77:29:1:1)",
+     "verb_surface": "{nTaliqu",
+     "root": "Tlq",
+     "agr": "2MP",
+     "aspect": "IMPV",
+     "clitics": [
+      {
+       "surface": "w^A@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "انطلقوا إلى ما كنتم به تكذبون"
+    },
+    {
+     "loc": "(77:30:1:1)",
+     "verb_surface": "{nTaliqu",
+     "root": "Tlq",
+     "agr": "2MP",
+     "aspect": "IMPV",
+     "clitics": [
+      {
+       "surface": "w^A@",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "انطلقوا إلى ظل ذي ثلاث شعب"
+    },
+    {
+     "loc": "(7:119:3:2)",
+     "verb_surface": "{nqalabu",
+     "root": "qlb",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "فغلبوا هنالك وانقلبوا صاغرين"
+    },
+    {
+     "loc": "(83:31:2:1)",
+     "verb_surface": "{nqalabu",
+     "root": "qlb",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "w^A@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وإذا انقلبوا إلى أهلهم انقلبوا فكهين"
+    },
+    {
+     "loc": "(83:31:5:1)",
+     "verb_surface": "{nqalabu",
+     "root": "qlb",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وإذا انقلبوا إلى أهلهم انقلبوا فكهين"
+    },
+    {
+     "loc": "(9:127:14:1)",
+     "verb_surface": "{nSarafu",
+     "root": "Srf",
+     "agr": "3MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "wA@",
+       "pgn": "3MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "وإذا ما أنزلت سورة نظر بعضهم إلى بعض هل يراكم من أحد ثم انصرفوا ۚ صرف الله قلوبهم بأنهم قوم لا يفقهون"
+    },
+    {
+     "loc": "(9:95:5:1)",
+     "verb_surface": "{nqalabo",
+     "root": "qlb",
+     "agr": "2MP",
+     "aspect": "PERF",
+     "clitics": [
+      {
+       "surface": "tumo",
+       "pgn": "2MP",
+       "classification": "SUBJECT",
+       "rule": 2
+      }
+     ],
+     "object_bearing": false,
+     "verse_text": "سيحلفون بالله لكم إذا انقلبتم إليهم لتعرضوا عنهم ۖ فأعرضوا عنهم ۖ إنهم رجس ۖ ومأواهم جهنم جزاء بما كانوا يكسبون"
+    }
+   ]
+  }
+ }
+}

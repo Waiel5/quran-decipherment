@@ -9,6 +9,9 @@ seed: 20260509 (replication 20260519)
 n_perm: 10000
 prereg: findings/phase-b-hypotheses/prereg-h-new-2570-lexical-curriculum.md
 prereg_sha256: 6a1cab4cddb21d0621ffff6d9d57aa974bf7eaa76b865da67ac830a3f1f4e29b
+amendment: findings/phase-b-hypotheses/prereg-h-new-2570-amendment-01.md
+amendment_sha256: 4cd628aaea6c6ce468df47533ffa1a3de80a55366938b6783a2d7cfade49d9ca
+parent_finding: H-NEW-123 (corpus-level Heaps β; Cell B ordering-sensitivity NULL)
 rules_tuple: "T1 (QAC v0.4 ROOT, root-bearing segments, Hafs-Kūfan) + T2 (QAC v0.4 LEM) + T3 (normalized surface word-form, cross-corpus only)"
 bonferroni_k: 12
 alpha_corrected: 0.0041667
@@ -16,6 +19,27 @@ verdict: NULL
 ---
 
 # H-NEW-2570 — The mushaf order is **not** a lexical curriculum
+
+## Scope: this is a claim about ORDERING, not about the corpus exponent
+
+The corpus-level Heaps exponent is **not** this finding's subject. It was established on
+2026-04-17 by the parent finding [[h-new-123-heap-law|H-NEW-123]] (Qurʾān β = 0.7468, 95% CI
+0.729–0.757, N = 77,797, V = 14,870; al-Bukhārī matched-77K β = 0.7472 — a tie, Cell A1 FAIL) and
+is recorded in `findings/HONEST-LIMITS-LEDGER.md` §27e as **not Qurʾān-distinctive**.
+H-NEW-2570 does not re-derive it. See Amendment 01 for the full prior-art disclosure and scope
+narrowing.
+
+What H-NEW-2570 tests is the **sequence of the 114 surahs**. The distinction is exact:
+
+> Every permutation of the surahs uses the **identical token multiset** — identical N, identical
+> V(N_tot), identical type-frequency spectrum. **β is precisely the quantity that ordering
+> leaves nearly invariant** (H-NEW-123 Cell B, p = 0.3340, NULL). The statistics used here —
+> **J** (power-law-residual jerk) and **A** (deviation from the fitted Heaps curve) — measure the
+> *shape of the path* V(N) traces between fixed endpoints, which is the information β discards.
+
+Cells 1–10 are therefore orthogonal to H-NEW-123 by construction. Cells 11–12 are not: Amendment
+01 §2.2 reclassifies them as a **replication of H-NEW-123 Cell B** at the surah-permutation
+level, and their novelty claim is withdrawn.
 
 ## Headline
 
@@ -271,57 +295,108 @@ The control that actually validates the instrument is **cell 5**, and it fires h
 jerk statistic demonstrably responds to real lexical content — which is what makes the flat null
 in cell 1 interpretable as a genuine absence of structure rather than a dead instrument.
 
-### β — one prediction that held, in a restricted form
+### β — cells 11/12 replicate H-NEW-123 Cell B; S3 holds across three instruments
 
 Cells 11/12 fail: the mushaf does **not** defer novel vocabulary relative to random or
-length-matched orderings. But **S3 HELD** under both tuples and all five grids:
-β_mushaf > β_revelation (0.41771 vs 0.38674 at root level; 0.58622 vs 0.55761 at lemma level;
-Nöldeke 0.38649 / 0.56804). Read correctly, this is not the mushaf deferring — it is **the
-chronologies front-loading**, exactly as [[h-new-2320-hapax-census|H-NEW-2320]] predicts, since
-the hapax-rich early-Meccan surahs that the mushaf places last are the ones the chronologies
-place first. The prediction was right about the corpus and wrong about which ordering was
-anomalous.
+length-matched orderings (p = 0.69, direction violated, both tuples). **Per Amendment 01 §2.2
+this is a replication, not a novel result.** [[h-new-123-heap-law|H-NEW-123]] Cell B had already
+found β insensitive to shuffling the Qurʾān's token stream (0.7468 vs 0.7072, p = 0.3340, NULL),
+and `HONEST-LIMITS-LEDGER.md` §27e records β as stream-order invariant. A permutation of surahs
+is a weaker perturbation than a full token shuffle, so a null here was the expected outcome, and
+it is reported as confirmation of the parent finding rather than as a discovery.
+
+**S3 HELD**, and now across three independent instruments: β_mushaf > β_revelation at
+0.41771 vs 0.38674 (QAC ROOT, geometric grid), 0.58622 vs 0.55761 (QAC LEMMA, geometric grid),
+and **0.7468 vs 0.6904** (surface form, H-NEW-123's own linear-grid estimator — §8.3). Nöldeke
+sits with the revelation order in all three (0.38649 / 0.56804 / 0.6941).
+
+Read correctly this is not the mushaf deferring — it is **the chronologies front-loading**,
+exactly as [[h-new-2320-hapax-census|H-NEW-2320]] predicts, since the hapax-rich early-Meccan
+surahs the mushaf places last are the ones the chronologies place first. The two facts are
+consistent: the mushaf's β exceeds the chronologies' while remaining unremarkable against
+permutation nulls.
 
 ---
 
-## 8. Cross-corpus Heaps exponents (descriptive deliverable, MW-7 capped)
+## 8. Cross-corpus Heaps: reconciliation with the parent finding H-NEW-123
 
-Heaps β is not comparable across corpora of different size, so all cross-corpus fits are at a
-**matched N = 77,000 normalized surface word-form tokens** (tuple T3), geometric grid
-N₀ = 500 → 77,000. No hypothesis is registered on this section and no p-value is computed for it.
+**The corpus-level Heaps exponent is [[h-new-123-heap-law|H-NEW-123]]'s result, not this
+finding's.** Amendment 01 §2.1 demotes this section from *deliverable* to *consistency check*
+and requires it be recomputed with **H-NEW-123's own estimator** — `normalize` / `tokenize` /
+`vocab_curve` (linear grid, step = 50, start = 100) / `fit_heap` (log-log OLS), imported directly
+from `scripts/h_new_123_heap_law.py` rather than reimplemented. Descriptive, MW-7 capped, no
+p-value, no registered inference.
 
-| Corpus | N | types | **β** | K | R² |
+### 8.1 Reproduction — the toolchain reproduces H-NEW-123 exactly
+
+| Corpus | N | V | β (re-run) | β (H-NEW-123 published) | Δβ |
 |:--|--:|--:|--:|--:|--:|
-| **Qurʾān** | 77,000 | 14,512 | **0.7455** | 3.336 | **0.99972** |
-| **Pre-Islamic poetry** (7 muʿallaqāt + 7 dīwāns) | 77,000 | **25,032** | **0.8836** | 0.994 | 0.99661 |
-| **al-Bukhārī** (Qurʾān quotations stripped) | 77,000 | 11,571 | **0.7674** | 2.215 | 0.99801 |
+| Qurʾān (no-tashkeel, surface-form) | 77,797 | 14,870 | 0.7468 | 0.7468 | **+0.0000** |
+| al-Bukhārī, matched-77K window | 77,797 | 12,154 | 0.7472 | 0.7472 | **+0.0000** |
+| Muʿallaqāt, 7 poems | 7,285 | 3,843 | 0.8313 | 0.8313 | **+0.0000** |
+| al-Jāḥiẓ *al-Ḥayawān*, first 77K | 77,797 | 22,984 | 0.8023 | 0.8023 | **+0.0000** |
 
-Two facts worth recording:
+All four rows reproduce to four decimal places. H-NEW-123 stands unchanged and remains
+authoritative for the corpus-level claim: **the Qurʾān's β is tied with Bukhārī's** (Cell A1
+FAIL, p = 0.3826) and the compactness is a genre feature of classical religious prose, not a
+Qurʾān-specific signature (`HONEST-LIMITS-LEDGER.md` §27e).
 
-1. **Pre-Islamic poetry is far more lexically expansive than the Qurʾān.** At identical token
-   count it deploys **1.72× as many distinct word-forms** (25,032 vs 14,512) and its vocabulary
-   keeps growing markedly faster (β = 0.884 vs 0.746). This is a quantitative counterpart to the
-   classical observation that the poets' *gharīb* is dense and the Qurʾānic register is
-   deliberately concentrated; it converges with
-   [[h-new-2330-lexical-burstiness|H-NEW-2330]]'s finding of a single ubiquitous spine root
-   (*rabb*, 94/114 surahs) over a heavily repeated core.
-2. **The Qurʾān is marginally *less* lexically expansive than hadith prose** (β = 0.7455 vs
-   0.7674) while having the cleanest power law of the three (R² = 0.99972). The Qurʾān is not
-   lexically rich by the standard of its own linguistic environment — it is lexically
-   *disciplined*.
+### 8.2 A correction to this finding's own earlier figures
 
-QAC-annotated fits on the Qurʾān (mushaf order, full corpus — a different instrument, not
-comparable to the surface-form row above):
+An earlier draft of H-NEW-2570 reported β_Bukhārī = 0.7674 from `bukhari-noquran.txt` under a
+tokenizer of my own. Two things differed from H-NEW-123: the source file (H-NEW-123 uses
+`matched-bukhari-77k.txt`) and the normalization (mine folded the alif family and alif maqṣūra;
+H-NEW-123's does not). Under H-NEW-123's estimator the **same** `bukhari-noquran.txt` file gives
+**β = 0.7443, V = 11,766**. The 0.7674 figure was a normalization artifact and is withdrawn.
 
-| Tuple | N | types | β | K | R² |
-|:--|--:|--:|--:|--:|--:|
-| T1 QAC ROOT | 49,968 | 1,642 | 0.4177 | 17.726 | 0.99784 |
-| T2 QAC LEMMA | 74,608 | 4,832 | 0.5862 | 6.588 | 0.99797 |
+This matters in H-NEW-123's favour: the Quran-stripped Bukhārī text gives β = 0.7443 against the
+Qurʾān's 0.7468 — **closer still to a tie** than H-NEW-123's own 0.7472. Cell A1's FAIL is
+strengthened, not weakened, by the alternative source.
 
-Non-matched full-corpus fits, recorded but **not comparable** across rows: Bukhārī full
-(N = 526,250, 36,187 types) β = 0.7211; poetry full (N = 82,520, 25,185 types) β = 0.8843;
-Qurʾān surface full (N = 77,797, 14,693 types) β = 0.7454. Note how Bukhārī's β falls from 0.767
-to 0.721 purely by extending N — the reason matched-N is mandatory here.
+### 8.3 β by surah ordering — the ordering-invariance question, on H-NEW-123's instrument
+
+All three rows use the **identical token multiset**, so N and V are fixed by construction and
+only β and K can move:
+
+| Ordering | N | V | β | K |
+|:--|--:|--:|--:|--:|
+| **mushaf** | 77,797 | 14,870 | **0.7468** | 3.311 |
+| revelation (Tanzil) | 77,797 | 14,870 | 0.6904 | 6.429 |
+| Nöldeke | 77,797 | 14,870 | 0.6941 | 6.238 |
+
+The surah-ordering spread (Δβ = 0.056) is comparable to H-NEW-123's token-shuffle spread
+(0.7468 → 0.7072, Δ = 0.040), which its Cell B found non-significant at p = 0.3340. Consistent
+with that, cells 11/12 here find β_mushaf unremarkable against 10,000 surah-permutation nulls
+(p = 0.69). **What this adds to H-NEW-123 is only the confirmation that S3's direction
+(β_mushaf > β_chronologies) survives a third, independent estimator.**
+
+### 8.4 One caveat of H-NEW-123, addressed — with a composition caveat of its own
+
+H-NEW-123's caveats flag a length mismatch it could not remove: its poetry baseline was the
+Muʿallaqāt alone at **7,285 tokens** against the Qurʾān's 77,797, *"the early-N region of the
+Heap curve, which systematically gives higher β for all corpora."* It reported a post-hoc
+matched-at-7.3K figure (β_Q = 0.801 vs Muʿallaqāt 0.831, gap 0.030).
+
+Adding the seven **dīwāns** in `data/baseline-corpora/raw/` — which H-NEW-123 did not use —
+gives 82,520 poetry tokens, enough to match the Qurʾān's full 77,797 for the first time:
+
+| Corpus | N | V | β |
+|:--|--:|--:|--:|
+| Qurʾān | 77,797 | 14,870 | 0.7468 |
+| **Pre-Islamic poetry** (7 muʿallaqāt + 7 dīwāns) | 77,797 | **25,410** | **0.9459** |
+
+**Honest limit on this row.** It removes the length mismatch but substitutes a *different
+corpus*: a 14-work, multi-author aggregate in place of a 7-poem single-genre set. Aggregating
+independent poets inflates the type count because they do not share vocabulary, and V = 25,410
+against the Qurʾān's 14,870 at identical N is partly that aggregation effect rather than
+per-poet lexical richness. It therefore **does not cleanly resolve H-NEW-123's caveat** — it
+trades a length confound for a composition confound.
+
+What is robust is the **direction**, which now holds in all three framings: unmatched
+(0.831 vs 0.747), matched-at-7.3K (0.831 vs 0.801), and matched-at-77.8K (0.946 vs 0.747).
+Poetry's vocabulary expands faster than the Qurʾān's under every version of the comparison.
+That direction is **H-NEW-123's Cell A3 PASS**, and this row confirms it under length-matching
+rather than establishing anything new.
 
 ---
 
@@ -357,15 +432,31 @@ to 0.721 purely by extending N — the reason matched-N is mandatory here.
    are philological reconstructions, not primary sources. That both give the same reversal
    (J = 0.010827 and 0.006886 vs mushaf 0.014060) strengthens the observation but does not make
    either ordering historically certain.
-5. **T3 cross-corpus figures depend on the normalization rule** (fixed in pre-reg §7: diacritics
-   and tatweel removed, alif-family and alif-maqṣūra folded). Arabic surface-form type counts are
-   sensitive to this; a different rule would shift β. The *ranking* (poetry ≫ Bukhārī ≈ Qurʾān)
-   is large enough to be robust to plausible variants, but this was not tested.
-6. **Poetry corpus composition** mixes muʿallaqāt with later dīwān material of uneven
-   provenance; it is a genre control, not a dated corpus.
+5. **Arabic surface-form β is normalization-sensitive, demonstrably so.** §8.2 is a worked
+   example: the same Bukhārī file gives β = 0.7674 under this finding's original tokenizer and
+   0.7443 under H-NEW-123's — a 0.023 shift from folding rules alone, larger than the entire
+   Qurʾān-vs-Bukhārī gap being discussed. All §8 figures now use H-NEW-123's estimator so that
+   the two findings are comparable; any comparison against a third study would need the same
+   care.
+6. **The extended poetry corpus trades one confound for another** (§8.4): it removes H-NEW-123's
+   length mismatch but substitutes a 14-work multi-author aggregate for a 7-poem single-genre
+   set, and multi-author aggregation inflates type counts. It mixes muʿallaqāt with later dīwān
+   material of uneven provenance; it is a genre control, not a dated corpus.
+7. **Cells 11/12 are a replication, not a test.** Their null outcome was predicted in advance by
+   H-NEW-123 Cell B and by `HONEST-LIMITS-LEDGER.md` §27e. Amendment 01 recorded that prior
+   before this document was written, precisely so the null could not be presented as a surprise.
 
 ## 11. Integration
 
+- **[[h-new-123-heap-law|H-NEW-123]] — PARENT FINDING on this axis.** It owns the corpus-level
+  exponent (Qurʾān β = 0.7468, tied with Bukhārī; §27e of the honest-limits ledger:
+  not Qurʾān-distinctive). Its **Cell B NULL** — β is near-invariant to shuffling the token
+  stream — is the direct prior for H-NEW-2570's result, and it was right: the ordering axis is
+  null too. H-NEW-2570's contribution is to test the ordering question with statistics that β
+  discards (J, A) rather than with β itself, and under a **length-preserving** null H-NEW-123 did
+  not have. The two findings agree. Related: **H-NEW-159** (β per chapter), **H-NEW-172**
+  (Zipf α per chapter), **H-NEW-178** ((α, β) manifold), **H-NEW-179** (predictor) — all
+  per-chapter, none testing sequence.
 - **[[h-new-111-fisher-rao-mushaf|H-NEW-111]]** — H-NEW-2570 is its orthogonal counterpart, and
   the result is a **boundary condition on pillar law #2**: information-geodesic optimality on the
   pairwise Fisher-Rao axis does **not** imply smoothness on the cumulative-lexical axis. The
@@ -377,21 +468,34 @@ to 0.721 purely by extending N — the reason matched-N is mandatory here.
   and why the chronologies' curves bow away from a power law (A 3–4× the mushaf's).
 - **[[h-new-2330-lexical-burstiness|H-NEW-2330]]** — burstiness is the mechanism behind cell 5:
   real Quranic text is 2.5–3.5× jerkier than its own shuffled tokens because content roots are
-  topic-locked. §8's low Quranic β is the same law at corpus scale.
+  topic-locked. H-NEW-123's low Qurʾānic β is the same law at corpus scale.
 - **al-Suyūṭī**, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 38 (*al-mufradāt*) and nawʿ 39
-  (*al-gharīb*) — the classical rare-vocabulary genre. §8 supplies its cross-corpus baseline: the
-  Qurʾānic lexicon is *narrower* than the poets', not wider.
+  (*al-gharīb*) — the classical rare-vocabulary genre. Its cross-corpus baseline belongs to
+  H-NEW-123 (Cells A2/A3 PASS: the Qurʾānic lexicon is narrower than Jāḥiẓ's and the poets');
+  §8.4 confirms the poetry leg under length-matching.
 - No classical source claims the mushaf order is a vocabulary curriculum; this test invented and
   then falsified a modern hypothesis. The null does not contradict any classical position.
 
 ## 12. Files
 
-- Pre-reg: `findings/phase-b-hypotheses/prereg-h-new-2570-lexical-curriculum.md`
-  (SHA-256 `6a1cab4cddb21d0621ffff6d9d57aa974bf7eaa76b865da67ac830a3f1f4e29b`, runtime-verified)
-- Script: `findings/phase-b-hypotheses/scripts/h-new-2570.py`
+| Artifact | Path | SHA-256 |
+|:--|:--|:--|
+| Pre-reg (unchanged, runtime-verified) | `findings/phase-b-hypotheses/prereg-h-new-2570-lexical-curriculum.md` | `6a1cab4cddb21d0621ffff6d9d57aa974bf7eaa76b865da67ac830a3f1f4e29b` |
+| **Amendment 01** (prior art + scope narrowing) | `findings/phase-b-hypotheses/prereg-h-new-2570-amendment-01.md` | `4cd628aaea6c6ce468df47533ffa1a3de80a55366938b6783a2d7cfade49d9ca` |
+
+The parent pre-reg is deliberately **not** edited: its hash is embedded in the run script and was
+verified at runtime before the executed run, so an edit would permanently break the
+reproducibility of that run. Amendment 01 is recorded alongside it as a corrigendum, changes no
+threshold, null, direction, or verdict, and only narrows scope (Amendment 01 §0, §3).
+
+- Run script: `findings/phase-b-hypotheses/scripts/h-new-2570.py` (verifies the pre-reg SHA)
+- Heaps reconciliation vs H-NEW-123: `findings/phase-b-hypotheses/scripts/h-new-2570-heaps-reconciliation.py`
+  (verifies both SHAs; imports the estimator from `scripts/h_new_123_heap_law.py`)
 - Diagnostics (post-hoc, descriptive): `findings/phase-b-hypotheses/scripts/h-new-2570-diagnostics.py`
 - JSON: `findings/phase-b-hypotheses/csv/h-new-2570.json`
+- Reconciliation JSON: `findings/phase-b-hypotheses/csv/h-new-2570-heaps-reconciliation.json`
 - Diagnostics JSON: `findings/phase-b-hypotheses/csv/h-new-2570-diagnostics.json`
+- Parent finding: `findings/phase-b-hypotheses/h-new-123-heap-law.md`
 
 ---
 
