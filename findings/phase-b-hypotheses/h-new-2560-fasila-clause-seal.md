@@ -310,3 +310,45 @@ a protocol violation: "it was identical" is exactly the claim an audit trail exi
 else verify. The standing correction — **run directories are never deleted, including uncommitted
 and superseded ones** — is applied here. A run that cannot be committed is retained rather than
 removed, and the reason is recorded.
+
+---
+
+## H5 rules-tuple disclosure — the waqf annotation is NOT identical across text variants
+
+**Added 2026-08-07 after an independent audit. This is a disclosure the original write-up
+owed and did not give.** The project rule is explicit: *rules-tuple specified, and every claim
+tested under ≥2 tashkeel variants.* H5 was run under one.
+
+Counting the Sajāwandī glyphs directly in each variant on disk:
+
+| glyph | grade | `quran-full-tashkeel` | `quran-min-tashkeel` | `quran-no-tashkeel` |
+|:--|:--|--:|--:|--:|
+| ۖ *ṣlà* | *al-waṣl awlā* — continue | 1651 | 1682 | 1682 |
+| ۗ *qlà* | *al-waqf awlā* — stop | 511 | 603 | **603** |
+| ۘ *mīm* | *lāzim* — must stop | 21 | 22 | **22** |
+| ۙ *lā* | *lā waqf* — do not stop | **0** | 68 | **68** |
+| ۚ *jīm* | *jāʾiz* — neutral (excluded) | 2083 | 1972 | 1972 |
+| ۛ *muʿānaqa* | embracing | 6 | 12 | 12 |
+| ۜ *saktah* | brief silence | 8 | 7 | 5 |
+| | **total** | **4280** | **4366** | **4364** |
+
+`scripts/h-new-2560.py:453` reads **`quran-text/quran-no-tashkeel.json`**. That reproduces the
+reported class sizes exactly: STOP-PREFERRED = *qlà* 603 + *mīm* 22 = **625**; CONTINUE-PREFERRED
+= *ṣlà* 1682 + *lā* 68 = 1750, against a reported 1749 (one boundary excluded by the
+mid-verse eligibility filter). The arithmetic is sound and the numbers are internally consistent.
+
+**What was not disclosed: the variants disagree substantially, and one of them cannot run this
+test at all.** `quran-full-tashkeel.json` contains **zero** ۙ *lā* marks — the *strongest*
+continue-preferred signal in the ladder is simply absent from that file — and it carries 92 fewer
+*qlà* and 111 more *jīm*. Under the full-tashkeel tuple the CONTINUE-PREFERRED class would
+collapse to *ṣlà* alone and STOP-PREFERRED would fall from 625 to 532.
+
+**Status of H5 under this disclosure.** The result stands as computed and its arithmetic is
+verified, but it is **SINGLE-TUPLE** and must be labelled so until re-run under the
+full-tashkeel inventory. I decline to predict the outcome: *ṣlà* supplies 1682 of the 1750
+continue-preferred boundaries, so losing the 68 *lā* marks may matter little — but *qlà* also
+drops by 92, and asserting robustness without running it would be exactly the unearned
+confidence this protocol exists to prevent. **A second-tuple replication is queued as required
+work, not optional.**
+
+This does not touch H1a/H1b/H3/H4, which use no waqf data.
