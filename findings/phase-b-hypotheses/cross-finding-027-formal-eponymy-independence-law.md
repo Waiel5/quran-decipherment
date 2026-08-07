@@ -11,7 +11,7 @@ verdict: A surah's name tracks neither its dominant-word density nor its narrati
 ## The principle, formally stated
 
 > **Quranic surah-naming is curatorial-thematic, NOT statistical. An eponymous surah (named for a word, theme, or figure) is independent of two distinct lexical-prominence measures:**
-> **(1) it is rank-1 in its own title-root in only ~47% of cases — title-density independence (H-NEW-1820, 47/89 eponymous surahs NOT rank-1);**
+> **(1) it is rank-1 in its own title-root in only ~46% of cases — title-density independence (H-NEW-1820, 48/89 eponymous surahs NOT rank-1);**
 > **(2) it is the lexical centroid of its own narrative cycle in 0% of testable cases — narrative-cycle-centrality independence (H-NEW-2430, 0/5 eponymous prophet-surahs are their cycle's centroid; median rank 4 of ~5, worse than chance).**
 >
 > **Mechanism: elaboration ⇒ lexical periphery.** The very surah that develops a theme/figure most fully accumulates the most *private* vocabulary (its unique scenes, vocatives, idol-names, daʿwa-formulae), which makes it the lexical OUTLIER — not the center — of the distribution that bears its name.
@@ -20,10 +20,21 @@ verdict: A surah's name tracks neither its dominant-word density nor its narrati
 
 | Measure | Finding | Result | Interpretation |
 |---|---|---|---|
-| Title-root density rank | **H-NEW-1820** | 47/89 eponymous surahs NOT rank-1 (52.8%) | Title ≠ most-frequent-word |
+| Title-root density rank | **H-NEW-1820** | 48/89 eponymous surahs NOT rank-1 (53.9%) | Title ≠ most-frequent-word |
 | Narrative-cycle centrality rank | **H-NEW-2430** | 0/5 eponymous prophet-surahs are the cycle centroid; median rank 4 | Eponymous surah ≠ cycle hub |
 
-H-NEW-2430 is the *stronger* pillar (0/5 vs 52.8%) and supplies the unifying mechanism. The five testable cycles (Nūḥ Q71 rank 5/6, Ibrāhīm Q14 5/6, Hūd Q11 3/5, Maryam Q19 4/5, Yūnus Q10 2/4) span the full eligible population — this is a law over the eligible set, not a sample.
+H-NEW-2430 is the *stronger* pillar (0/5 vs 53.9%) and supplies the unifying mechanism. The five testable cycles (Nūḥ Q71 rank 5/6, Ibrāhīm Q14 5/6, Hūd Q11 3/5, Maryam Q19 4/5, Yūnus Q10 2/4) span the full eligible population — this is a law over the eligible set, not a sample.
+
+> **SCOPE QUALIFICATIONS ADDED 2026-08-07** (adversarial audit of this file's own wording):
+> 1. **Counts corrected** from 47/89 (52.8%) to **48/89 (53.9%)** — Q 98 al-Bayyina was
+>    misfiled in the rank-1 set; see the correction notice in `h-new-1820-title-density-independence-formal.md`.
+> 2. **The "stronger pillar" rests on n = 5.** Arm C is a uniform-rank null over five
+>    observations (0/5 rank-1 against ~1/5 expected). "A law over the eligible set, not a
+>    sample" is accurate about the *population*, but it means the claim **cannot generalise
+>    beyond these five cycles**, whereas the law's wording ("**a** surah's name predicts
+>    neither…") reads as universal. Read the eponymy-vs-centrality arm as *established for the
+>    five eligible prophet-cycles*, not as a corpus-wide law.
+> 3. This is the clearest instance in the standing laws of wording that outruns its anchors.
 
 ## The mechanism, demonstrated (sharpened by H-NEW-2480)
 

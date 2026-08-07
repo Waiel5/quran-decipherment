@@ -1,13 +1,25 @@
 ---
 finding_id: H-NEW-1820
-status: REVOLUTIONARY FINDING — title-density-independence is the MAJORITY phenomenon (52.8% of eponymous surahs); empirically quantifies the structural law
+status: CORRECTED 2026-08-07 — title-density-independence is the MAJORITY phenomenon (48/89 = 53.9% of eponymous surahs); see the correction notice below
 phase: B+ → C
 date: 2026-05-09
 rules_tuple: (QAC root v0.4, Hafs-Kūfan, basmala-counted-only-in-Q1, eponymous-surahs-only)
 verdict: CONFIRMED corpus-wide structural law
 ---
 
-# H-NEW-1820 — Title-density independence as corpus-wide structural law: 47/89 eponymous surahs do NOT hold rank-1 in their title-root
+# H-NEW-1820 — Title-density independence as corpus-wide structural law: 48/89 eponymous surahs do NOT hold rank-1 in their title-root
+
+> **CORRECTION NOTICE (2026-08-07).** This file previously read **47/89 (52.8%)** and listed
+> **Q 98 al-Bayyina among the 42 rank-1 surahs**. Q098-F-01 Arm A (MASTER-FINDINGS-LEDGER
+> §10.112, 2026-05-30) established on disk that Q 98 is *byn* raw-count rank **59/71**, led by
+> Q 11 (×4 *ʿalā bayyina*) — so Q 98 is **not** rank-1 in its title-root and belongs to the
+> non-rank-1 majority. The counts are therefore **48 non-rank-1 / 41 rank-1**, i.e. **53.9%**.
+> The correction was recorded in the ledger and in `surahs/Q098-al-bayyina/00-overview.md` in
+> May 2026 but never propagated here or into `cross-finding-027-formal`.
+>
+> **Note on why this went unfixed:** the error's direction *favours* the law it supports —
+> a stale number that understates your own effect attracts no scrutiny. That is precisely why
+> it needed catching.
 
 ## Background
 
@@ -26,7 +38,7 @@ For each of 114 surahs:
 
 **89 eponymous surahs tested.**
 - **42 of 89 (47.2%) ARE rank-1** in their own title-root
-- **47 of 89 (52.8%) are NOT rank-1**
+- **48 of 89 (53.9%) are NOT rank-1**
 - Mean rank when not rank-1: 4.3 (modal rank = 2)
 
 **Title-density-independence is the MAJORITY phenomenon in the corpus.**
@@ -51,7 +63,7 @@ For each of 114 surahs:
 
 ## Top rank-1 surahs (where title-density-EXACT holds)
 
-42 surahs where the title-root density rank IS the title-eponymous surah. Includes Q 13 al-Raʿd, Q 16 al-Naḥl, Q 18 al-Kahf, Q 27 al-Naml, Q 73 al-Muzzammil, Q 74 al-Muddaththir, Q 79 al-Nāziʿāt, Q 81 al-Takwīr, Q 91 al-Shams, Q 96 al-ʿAlaq, Q 97 al-Qadr, Q 98 al-Bayyina, etc.
+41 surahs where the title-root density rank IS the title-eponymous surah. Includes Q 13 al-Raʿd, Q 16 al-Naḥl, Q 18 al-Kahf, Q 27 al-Naml, Q 73 al-Muzzammil, Q 74 al-Muddaththir, Q 79 al-Nāziʿāt, Q 81 al-Takwīr, Q 91 al-Shams, Q 96 al-ʿAlaq, Q 97 al-Qadr, etc. **Q 98 al-Bayyina was listed here in error and was removed 2026-08-07** — see the correction notice above.
 
 ## Interpretive principle
 
@@ -73,7 +85,7 @@ This finding subsumes 6 prior individual title-density-independence observations
 - Q040-F-03: Q 40 al-Ghāfir rank 25 (not even top-5 in *gfr*)
 - Q047-F-05: Q 47 / Q 81 (qtl-key)
 - H-NEW-1720: Q 55 al-Raḥmān / Q 19 al-Maryam (al-Raḥmān-key)
-- H-NEW-1820 (this): formalized as 47/89 majority
+- H-NEW-1820 (this): formalized as 48/89 majority (corrected 2026-08-07 from 47/89)
 
 **The H-NEW-1820 finding becomes a corpus-wide LAW**: title-eponymy and lexical-density-rank-1 are **empirically independent at p ≈ 50:50**.
 
@@ -83,7 +95,7 @@ This finding subsumes 6 prior individual title-density-independence observations
 - **al-Zarkashī Burhān**: treats titles as didactic-mnemonic, not statistically-extracted
 - **al-Biqāʿī Naẓm al-durar**: surah-titles are CENTERED on a theme but not REQUIRED to be density-peak — this aligns with H-NEW-1820 empirically
 
-**Classical scholarship's intuition is VINDICATED**: titles are chosen for rhetorical-mnemonic reasons, not for statistical-density purposes. The empirical 47/89 distribution corroborates this 1,400-year-old hermeneutic principle.
+**Classical scholarship's intuition is VINDICATED**: titles are chosen for rhetorical-mnemonic reasons, not for statistical-density purposes. The empirical 48/89 distribution corroborates this 1,400-year-old hermeneutic principle.
 
 ## Methodological consequence
 
