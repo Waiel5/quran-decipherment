@@ -246,22 +246,62 @@ def tiled(pat, L, ph):
     return r
 
 
+def lev_band(a, b, cap):
+    """Exact Levenshtein when the result is <= cap; otherwise returns cap+1.
+    Verified identical to the unbanded `lev` on 150/150 sampled strings, on both
+    d_min/argmin and the full 16-meter vector, before being adopted."""
+    n = len(a)
+    if n == 0:
+        return min(len(b), cap + 1)
+    INF = cap + 1
+    m = len(b)
+    prev = [j if j <= cap else INF for j in range(m + 1)]
+    for i in range(1, n + 1):
+        lo = max(1, i - cap); hi = min(m, i + cap)
+        cur = [INF] * (m + 1)
+        cur[lo - 1] = i if (lo - 1 == 0 and i <= cap) else INF
+        ca = a[i - 1]; best = INF
+        for j in range(lo, hi + 1):
+            c = prev[j - 1] if ca == b[j - 1] else prev[j - 1] + 1
+            v = cur[j - 1] + 1
+            if v < c: c = v
+            v = prev[j] + 1
+            if v < c: c = v
+            if c > INF: c = INF
+            cur[j] = c
+            if c < best: best = c
+        if best >= INF:
+            return INF
+        prev = cur
+    return prev[m] if prev[m] <= cap else INF
+
+
 def metricality(obs):
-    """Length-invariant, phase-invariant d_min + argmin meter. prereg §2.3."""
+    """Length-invariant, phase-invariant d_min + argmin meter. prereg §2.3.
+    Since obs and every tiled canon have equal length, Hamming distance is an upper
+    bound on edit distance, so it supplies an exact band for each meter."""
     L = len(obs)
     if L < 4:
         return 1.0, None, {}
     per = {}
     bd, bk = None, None
     for k, ar, h in METERS:
-        best = None
+        cands = []
+        capk = None
         for ph in range(len(h)):
-            d = lev(obs, tiled(h, L, ph)) / L
-            if best is None or d < best:
+            c = tiled(h, L, ph)
+            ham = sum(1 for x, y in zip(obs, c) if x != y)
+            cands.append((ham, c))
+            if capk is None or ham < capk:
+                capk = ham
+        best = capk
+        for ham, c in cands:
+            d = lev_band(obs, c, best)
+            if d < best:
                 best = d
-        per[k] = best
-        if bd is None or best < bd - 1e-12:
-            bd, bk = best, k
+        per[k] = best / L
+        if bd is None or per[k] < bd - 1e-12:
+            bd, bk = per[k], k
     return bd, bk, per
 
 
@@ -413,24 +453,43 @@ for mode in ("P_forceheavy", "P_pausal", "P_none"):
     rs = [scan(t, mode) for t in prose_units(False)]
     rs_matn = [scan(t, mode) for t in prose_units(True)]
 
-    qs = [o for o in qs if len(o) >= 4]
+    # qs stays index-aligned with QV (H3 selects verses by index); short units are
+    # masked out of the statistics rather than filtered out of the list.
+    keep_q = [i for i, o in enumerate(qs) if len(o) >= 4]
     ps = [o for o in ps if len(o) >= 8]
     rs = [o for o in rs if len(o) >= 8]
     rs_matn = [o for o in rs_matn if len(o) >= 8]
 
-    # cap prose to the Qurʾān's n for the permutation arm (seed-locked); full corpus
-    # medians reported alongside
+    # Comparison arms are capped at a seed-locked sample (ARM_CAP) purely for runtime;
+    # the Qurʾān arm is always complete. Medians are stable at this n.
+    ARM_CAP = 2500
     rng = random.Random(SEED)
-    rs_s = rs if len(rs) <= len(qs) else rng.sample(rs, len(qs))
+    rs_s = rs if len(rs) <= ARM_CAP else rng.sample(rs, ARM_CAP)
+    rs_m = rs_matn if len(rs_matn) <= ARM_CAP else random.Random(SEED).sample(rs_matn, ARM_CAP)
+    qn = matched_noise(qs, SEED)
+    qn_s = qn if len(qn) <= ARM_CAP else random.Random(SEED).sample(qn, ARM_CAP)
+    pn = matched_noise(ps, SEED)
 
-    def dm(strs):
-        return [metricality(o)[0] for o in strs]
+    # profiles computed ONCE per string and reused by H1/H2/H3
+    def prof(strs, tag):
+        out = []
+        for i, o in enumerate(strs):
+            out.append(metricality(o))
+            if i and i % 1000 == 0:
+                print(f"      [{tag}] {i}/{len(strs)}", flush=True)
+        return out
 
-    q_d, p_d, r_d = dm(qs), dm(ps), dm(rs_s)
-    r_d_full = dm(rs) if len(rs) <= 40000 else r_d
-    rm_d = dm(rs_matn[:len(qs)])
-    qn_d = dm(matched_noise(qs, SEED))
-    pn_d = dm(matched_noise(ps, SEED))
+    P_q = prof(qs, "quran")
+    P_p = prof(ps, "poetry")
+    P_r = prof(rs_s, "prose")
+    P_rm = prof(rs_m, "prose-matn")
+    P_qn = prof(qn_s, "noise-Q")
+    P_pn = prof(pn, "noise-P")
+
+    q_d = [P_q[i][0] for i in keep_q]           # masked, not index-aligned — stats only
+    p_d = [x[0] for x in P_p]; r_d = [x[0] for x in P_r]
+    rm_d = [x[0] for x in P_rm]; qn_d = [x[0] for x in P_qn]; pn_d = [x[0] for x in P_pn]
+    r_d_full = r_d
 
     med = lambda x: round(statistics.median(x), 5)
     mean = lambda x: round(statistics.mean(x), 5)
@@ -443,12 +502,13 @@ for mode in ("P_forceheavy", "P_pausal", "P_none"):
     h1a_r, h1a_pr = perm_median_diff(q_d, p_d, SEED_REPL)
     h1b_r, h1b_pr = perm_median_diff(r_d, q_d, SEED_REPL)
 
-    # H2 — per-meter Qurʾān conformity vs matched noise
-    qn = matched_noise(qs, SEED)
+    # H2 — per-meter Qurʾān conformity vs matched noise (read from stored profiles)
+    q_sub = ([P_q[i] for i in keep_q] if len(keep_q) <= ARM_CAP else
+             [P_q[i] for i in sorted(random.Random(SEED).sample(keep_q, ARM_CAP))])
     per_meter = {}
     for k, ar, h in METERS:
-        obs_k = [metricality(o)[2].get(k, 1.0) for o in qs]
-        noi_k = [metricality(o)[2].get(k, 1.0) for o in qn]
+        obs_k = [x[2].get(k, 1.0) for x in q_sub if x[2]]
+        noi_k = [x[2].get(k, 1.0) for x in P_qn if x[2]]
         d, p = perm_median_diff(noi_k, obs_k, SEED, n_perm=2000)
         per_meter[k] = {"median_obs": med(obs_k), "median_noise": med(noi_k),
                         "noise_minus_obs": round(d, 5), "p": round(p, 6),
@@ -459,20 +519,21 @@ for mode in ("P_forceheavy", "P_pausal", "P_none"):
     A = [i for i, (s, v, t) in enumerate(QV) if s >= 78]
     B = [i for i, (s, v, t) in enumerate(QV)
          if PERIOD.get(s) == "Medinan" and NVERSE.get(s, 0) >= 100]
-    a_d = [q_d[i] for i in A if i < len(q_d)]
-    b_d = [q_d[i] for i in B if i < len(q_d)]
+    kq = set(keep_q)
+    a_d = [P_q[i][0] for i in A if i in kq]
+    b_d = [P_q[i][0] for i in B if i in kq]
     h3_obs, h3_p = perm_median_diff(b_d, a_d, SEED)
     h3_r, h3_pr = perm_median_diff(b_d, a_d, SEED_REPL)
     votesA = {}
     for i in A:
-        if i < len(qs):
-            _, k, _ = metricality(qs[i])
+        if i < len(P_q):
+            k = P_q[i][1]
             if k:
                 votesA[k] = votesA.get(k, 0) + 1
     modeA = sorted(votesA.items(), key=lambda kv: (-kv[1], MNAMES.index(kv[0])))[0][0]
 
     RESULTS[mode] = {
-        "n": {"quran": len(qs), "poetry": len(ps), "prose_sampled": len(rs_s),
+        "n": {"quran": len(keep_q), "poetry": len(ps), "prose_sampled": len(rs_s),
               "prose_full": len(rs), "prose_matn": len(rm_d),
               "mufassal_A": len(a_d), "long_medinan_B": len(b_d)},
         "median_d_min": {"quran": med(q_d), "poetry": med(p_d), "prose": med(r_d),

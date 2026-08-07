@@ -54,8 +54,9 @@ configurations that would also have been exact was computed.**
   deterministic-order pairs already established elsewhere (modal-rhyme-count = verse-count
   is rhyme-homogeneity, H-NEW-2240).
 - **432 of 657 cells fall BELOW their exact expectation.** In the decoupled strata the
-  observed-to-expected ratios are **0.69× (E3b), 0.91× (E3a), 1.34× (E3c), 1.04× (E4)**
-  and **0.00 (E2)**. The corpus does not over-produce exact coincidences.
+  observed-to-expected ratios are **0.69× (E3b), 1.04× (E4), 1.14× (E3a), 1.34× (E3c),
+  1.38× (E1)** and **0.00 (E2)** — none significant at α_cell. The corpus does not
+  over-produce exact coincidences.
 
 The single most useful output is not the null. It is the **price list** — for the first
 time, a viral-shaped iʿjāz claim can be looked up and its denominator read off.
@@ -138,15 +139,15 @@ nine hits, which are all of them**:
 
 | root | count = last sūra | |
 |:--|--:|:--|
-| ṣ-b-r | **103** | ← *al-ʿAṣr*, "…and enjoined patience" |
-| q-r-b | **96** | ← *al-ʿAlaq*, "…and draw near" |
-| z-w-j | **81** | ← *al-Takwīr*, "…when the souls are paired" |
-| q-n-ṭ-r | 4 | |
-| ṣ-l-ḥ | 4 | |
-| q-r-ḥ | 3 | |
-| r-f-th | 2 | |
-| s-f-k | 2 | |
-| z-w-d | 2 | |
+| ṣ-b-r *ṣabr*, patience | **103** | ← *al-ʿAṣr*, "…and enjoined patience" |
+| q-r-b *qurb*, nearness | **96** | ← *al-ʿAlaq*, "…and draw near" |
+| z-w-j *zawj*, pairing | **81** | ← *al-Takwīr*, "…when the souls are paired" |
+| q-n-ṭ-r *qinṭār*, a heap of gold | 4 | Q 4:20 |
+| s-l-ḥ *asliḥa*, weapons | 4 | Q 4:102, all four in one verse |
+| q-r-ḥ *qarḥ*, a wound | 3 | Q 3:172 |
+| r-f-th *rafath*, marital intimacy | 2 | Q 2:197 |
+| s-f-k *safk*, shedding blood | 2 | Q 2:84 |
+| z-w-d *zād*, travel-provision | 2 | Q 2:197 |
 
 **Observed 9. Expected 11.05** under the unrestricted null, **7.35** under the
 dependency-preserving null. Three of the nine are homiletically spectacular and six are
@@ -168,10 +169,11 @@ rather than asserted.
 | **decoupled** (\|ρ\| < 0.70, no declared construction) | **23** | **16.61** | **1.38×** |
 | MW-7 descriptive, \|ρ\| < 0.40 | 1 | 3.61 | 0.28× |
 
-The 7.88× gross excess is entirely mechanical: fifteen of the twenty-three axes are
-length-driven, and Q 2 al-Baqara is the argmax of nearly all of them. In the decoupled
-stratum the excess falls to 1.38× (family p = 0.0396 for T-ROOT, against α_cell = 7.5 × 10⁻⁵
-— **not significant**), and **every remaining decoupled hit lands on Q 2 or Q 1**: Q 2
+The 7.88× gross excess is entirely mechanical: **14 of the 22 non-decoy axes carry
+\|ρ\| ≥ 0.70 against raw word count**, and Q 2 al-Baqara is the argmax of nearly all of
+them. In the decoupled stratum the excess falls to 1.38× (family p = 0.0396 for T-ROOT,
+against α_cell = 7.5 × 10⁻⁵ — **not significant**), and **all 23 remaining decoupled hits
+land on Q 2 (16) or Q 1 (7)**, with none anywhere else: Q 2
 because it is the longest sūra, Q 1 because it is the corpus's strongest structural
 outlier (Δ_outlier = +27 pp, H-NEW-590). The residual is carried by one axis,
 `n_exclusive_roots`, whose ρ against the size axes is 0.59–0.61 — transparently
@@ -187,8 +189,17 @@ coincidences: 0, against an exact expectation of 6.83 × 10⁻⁸.**
 
 This is the type that *could* have produced a survivor, and it did not. Nothing outside a
 definitional pair coincides exactly with anything: not the 29 muqaṭṭaʿāt sūras, not the 7
-ḥawāmīm, not the 6 musabbiḥāt, not the 14 sajdah-bearing sūras, not the 13
+ḥawāmīm, not the 6 sabbaḥa-opening sūras, not the 14 sajdah-bearing sūras, not the 13
 rhyme-homogeneous sūras — with any top-*k* or bottom-*k* class on any of 23 axes.
+
+Two class definitions need stating plainly rather than being let past on their labels.
+**C11 is not the classical musabbiḥāt.** Its locked operational definition is "verse 1
+contains a QAC `sbH`-root **verb**", which returns **6** sūras — Q 57, 59, 61, 62, 64, 87 —
+and excludes Q 17, whose opening *subḥāna alladhī* is a *maṣdar* (QAC `POS:N`), not a verb.
+The classical seven-member set is therefore *not* what was tested; the operational
+six-member set is. **C13 returns 14 sūras from 15 in-text U+06E9 glyph loci**, because Q 22
+carries two (22:18 and 22:77) — which is the corpus-internal face of the classical 14-vs-15
+sajdah dispute, recorded here and not adjudicated.
 
 The strongest **non-definitional near-miss** in the whole sweep is
 `TOP14_n_distinct_roots` vs `TOP14_n_exclusive_roots` at overlap **12 of 14**
@@ -252,7 +263,10 @@ rules-tuples because it is the same data. Reported here because a generator that
 best non-survivor is not a generator.
 
 For completeness: **exactly 3 sūras have mushaf position equal to Tanzil revelation order**
-— Q 38, Q 71, Q 82 — against an exact expectation of 0.886 and 114 opportunities. Chance.
+— Q 38, Q 71, Q 82 — against an exact expectation of **1.000** (both vectors are
+permutations of 1–114, so the expectation is exactly 1 by symmetry), p = 0.0803. Chance.
+Against **Nöldeke** order the same comparison returns **0 hits** against the same
+expectation of 1.000.
 
 ---
 
@@ -339,10 +353,11 @@ which is arithmetic.
    why those types are carried by cell-level tests and by their published denominators
    rather than by a survivor list. A reader who wants a per-hit-survivable design must use
    a smaller declared space, and must declare it in advance.
-3. **The MECHANICAL screen is aggressive**: 90 of 109 E3a cells and 88 of 91 E3c cells are
-   flagged. That is honest — most per-sūra metrics really are mechanically related — but it
-   leaves the decoupled strata small (19 and 3 cells respectively), so those tests are
-   underpowered.
+3. **The MECHANICAL screen removes a large fraction of the space**: per rules-tuple it
+   flags 49 of 109 E3a cells, 62 of 91 E3c cells, 412 of 1,012 E1 cells, and 3,963 of 9,738
+   E2 pairs. That is honest — most per-sūra metrics really are mechanically related — but
+   the decoupled strata are correspondingly smaller and the cell-level tests within them
+   are less powerful than the raw candidate count suggests.
 4. **The single locked ρ = 0.70 threshold is a blunt instrument.** It lets through the
    `n_exclusive_roots` cluster at ρ = 0.59–0.61, which is transparently length-driven. The
    threshold was **not** moved after seeing this; the residual is instead located by an
@@ -419,7 +434,7 @@ which is arithmetic.
   *already known* and mechanically explained (modal ≤ total, ρ = 0.951). Reported rather
   than absorbed.
 - **Instrument sources:** [[h-new-840-unified-architectural-score|H-NEW-840]] (UAS),
-  [[h-new-750-per-surah-ijaz-signature|H-NEW-750]], [[h-new-111-fisher-rao-matrix|H-NEW-111]],
+  [[h-new-750-per-surah-iʿjāz-signature|H-NEW-750]], [[h-new-111-fisher-rao-mushaf|H-NEW-111]],
   [[h-new-720-canonical-adjacency-cost|H-NEW-720]], [[h-new-590-outlier-spectrum|H-NEW-590]]
   (Q 1 Δ_outlier = +27 pp, which explains the Q 1 cluster in E1).
 - **Classical:** al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 17 (*ʿadad al-suwar

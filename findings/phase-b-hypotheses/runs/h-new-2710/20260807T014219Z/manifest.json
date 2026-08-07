@@ -1,0 +1,29 @@
+{
+  "id": "H-NEW-2710",
+  "SMOKE_RUN": false,
+  "utc": "20260807T014219Z",
+  "command": "python3 findings/phase-b-hypotheses/scripts/h-new-2710.py --repo . --perms 10000",
+  "inputs_relative": {
+    "prereg": "findings/phase-b-hypotheses/prereg-h-new-2710-title-density-retest.md",
+    "titles": "findings/phase-b-hypotheses/csv/h-new-1820.json",
+    "qac": "data/morphology/quranic-corpus-morphology-0.4.txt",
+    "quran": "quran-text/quran-no-tashkeel.json",
+    "script": "findings/phase-b-hypotheses/scripts/h-new-2710.py"
+  },
+  "git_commit": "3c2148a1d6de163bc62da0102d7048ce0842e847",
+  "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "n_perm": 10000,
+  "seeds": {
+    "null_b": 20260509,
+    "null_a": 20260510,
+    "replication_offset": 10
+  },
+  "sha256": {
+    "prereg": "c9d91fe656383016139271759c65ca7b306e3bc7fd0ee9054bd8f7beed100fc2",
+    "h_new_1820_json": "1a6282e451c1ff1d1cb5c0362fdfa22b6145a06bb286f66aa02a600987ea0842",
+    "qac_v04": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "quran_no_tashkeel": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "script": "b5acbcd240f14dfaa95f12b3e78499ee89305351f6c0872fb945fbacf6ea9b9f"
+  }
+}
