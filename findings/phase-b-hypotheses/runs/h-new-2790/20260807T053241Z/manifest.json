@@ -1,0 +1,68 @@
+{
+  "finding_id": "H-NEW-2790",
+  "run_utc": "20260807T053241Z",
+  "prereg": {
+    "path": "findings/phase-b-hypotheses/prereg-h-new-2790-flagged-batch.md",
+    "sha256": "6bb7e77a100810e31743734cd105407d6d21cf6d477dee1a9096c5ebde6014a8"
+  },
+  "script": {
+    "path": "findings/phase-b-hypotheses/scripts/h-new-2790.py",
+    "sha256": "0737155c1f309236f811a865fba992a6992cc4af8036e4cb5eceedf370ca6a65"
+  },
+  "frozen_inputs": [
+    {
+      "path": "data/morphology/quranic-corpus-morphology-0.4.txt",
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46"
+    },
+    {
+      "path": "data/revelation-order.csv",
+      "sha256": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-123.json",
+      "sha256": "33bbeec06c1187b1a96448ecf87720a4915a49a827cf110685d4d277aa449f46"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-125.json",
+      "sha256": "8b2f7f1cf217562dd34be75519c80d29ceaebcc40b2b0c6fbe95bebb5d0442e1"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-168-per-surah-dispersion.csv",
+      "sha256": "7778d07f620d68b3a3fefbf5903c0e9e30665e25b58fe1f766d7f08cf6a07594"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-182-surah-vectors.csv",
+      "sha256": "30571ef0ee37f32881033ca22fcb368cffbaaf986d040491ed4396b2cb2b8acc"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-183.json",
+      "sha256": "246af4b198c2c7d5d4e2edf86d5d1924c37a35f5d4e6a5292b0e12291787a16f"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-187-per-surah.csv",
+      "sha256": "7eee6ba49222e3fcd989ca2521114503fd5dcb3f907de6f1d343950970ed32ec"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-233.json",
+      "sha256": "28715441baab9bef58735acb8fa7b63bd58686844fed25ee0f162ccfe67236a0"
+    },
+    {
+      "path": "quran-text/quran-no-tashkeel.json",
+      "sha256": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+    },
+    {
+      "path": "scripts/h_new_183_chronology_predictor.py",
+      "sha256": "a30666c03c8bbdc0fa618099497ebe6962306cf7c712d5abf1b7adbbd025db2b"
+    },
+    {
+      "path": "scripts/h_new_233_ensemble_predictor.py",
+      "sha256": "ad69720a10159c43094336fab9890671743b545fbcfef5c53db1bbcb3478edd7"
+    }
+  ],
+  "python": "3.13.12",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "libs": {
+    "numpy": "2.3.1",
+    "sklearn": "1.8.0"
+  }
+}

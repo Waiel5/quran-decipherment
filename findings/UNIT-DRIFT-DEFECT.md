@@ -100,6 +100,10 @@ and no reader should treat it as established until it has been.
 Equally, a claim that already holds size fixed is **CLEAN** and should be cited as such.
 Getting this right deserves the credit, and naming the clean cases is part of the rule.
 
+**FLAGGED / CLEAN is not an exhaustive partition.** A third outcome — **UNVERIFIABLE**, where
+no code in the repository produces the claim's headline number — dominates both and must be
+screened for first. See §6.2.
+
 ---
 
 ## 5. The standing requirement
@@ -149,30 +153,135 @@ Three further clauses, each earned by a specific failure:
 
 ## 6. How to apply this mechanically in a future session
 
+0. **First, check the claim is computable at all** (§6.2). Does a script exist that produces
+   its headline number, and does a result JSON contain it? If neither, stop — it is
+   UNVERIFIABLE, and no null run against it will mean anything.
 1. Grep the finding for a denominator: `_density`, `per verse`, `per 100 v`, `per word`,
    `/ n_verses`, `words per verse`, `normalised by length`, `mean unit size`.
 2. Identify the ordering. Look it up in the §3 table. If it is not there, **measure the
    drift before proceeding** — one Spearman correlation, and it is not optional.
 3. Grep for a size-fixing null using the §3 Screen-C vocabulary. Verify it targets the
    **strong** channel for that ordering, not merely a size-shaped word.
-4. If A ∧ B ∧ ¬C: flag it, and name the one number that would settle it — usually the
-   per-word re-normalisation, the size-only baseline, or the partial correlation controlling
-   log unit size.
+4. If A ∧ B ∧ ¬C: flag it, and name the one number that would settle it — the size-only
+   baseline for a model-shaped claim (§6.1), otherwise the per-word re-normalisation or the
+   partial correlation controlling log unit size.
 5. **Do not change a verdict on the strength of the screens alone.** The screens identify
    what needs a measurement; only the measurement decides.
+6. **If two nulls disagree, report both and take the stricter.** Disagreement between a
+   lenient and a strict setting of the same null is a result about the null, and suppressing
+   it is how a free parameter becomes a finding (§6.1).
 
-**The cheapest decisive diagnostics, in order of cost:**
+**The cheapest decisive diagnostics.** *Which one to reach for first depends on the shape of
+the claim — see the rule immediately below.*
 
+- **The size-only baseline.** Run the published model on the unit-size columns alone. If it
+  reaches the published R², the remaining features are decoration. **It has no free
+  parameter, which is why it leads for any model-shaped claim.**
 - **Per-word re-normalisation.** For a per-100-verse density, per-word density is
   `density ÷ mean verse length` exactly — no new data required, and it is a one-line change.
-- **The size-only baseline.** Run the published model on the unit-size columns alone. If it
-  reaches the published R², the remaining features are decoration.
 - **Partial correlation controlling log unit size.** One number, and it can change sign.
 - **Self re-cut.** Cut the corpus's own stream to equal size, or to another arm's length
   profile, and re-measure. This is the strongest of the four because it uses no baseline
   text and so escapes the "a partition is not a composed book" caveat entirely.
 
+### 6.1 A stratified permutation null is not decisive for a model that contains the stratifying variable
+
+**Added 2026-08-07 from H-NEW-2790, which nearly lost a finding to this.** It is the unit-drift
+rule applied one level up, to the *null* rather than to the statistic.
+
+Stratified permutation — permute the target within quintiles of the drift channel — is the
+H-NEW-2770 design, and **for a correlation it is decisive and remains so**: a Spearman ρ holds
+no size column, so binning genuinely removes the channel. H-NEW-2770's verdict is untouched by
+what follows.
+
+**For a fitted model that contains size as a feature it is not decisive, because the bin width
+is a free parameter that the model can see through.** Coarse bins leave substantial size
+variation *inside* each bin — at quintiles on 114 units, about 23 units per bin — and the model
+predicts the permuted target within bins using exactly the channel the stratification was meant
+to neutralise. A finer stratification holds size more nearly fixed and is therefore the
+stricter test.
+
+The measured consequence, on H-NEW-192's model:
+
+| null | result |
+|:--|:--|
+| permute within **quintiles** of the drift channel | p = 0.0020 — an apparent clean pass |
+| permute within **deciles** | p = 0.7129; three of six mushaf cells fall **below their own null mean** in both seeds; H-NEW-233's Ridge cell reaches p = 0.8812 |
+| **size-only baseline** (no free parameter) | a single size column beats the full model, **0.8378 against 0.8026** |
+
+One free parameter moved the answer from p = 0.0020 to p = 0.7129 **on identical data**, while
+the parameter-free diagnostic agreed with the stricter setting. At deciles a random relabelling
+of mushaf position within size bins is predicted *better* by these features than the true mushaf
+order is.
+
+**Three requirements follow.**
+
+1. **For a claim whose statistic is a fitted model containing size as a feature, run the
+   size-only baseline FIRST.** It cannot be gamed by bin width.
+2. **A stratified permutation null must declare its bin width as part of the null, and report
+   at least two.** A single *k* is an undeclared researcher degree of freedom. If the two
+   disagree, the finer bin is the honest one and the disagreement is itself the result.
+3. **State which regime the claim is in.** Stratified permutation is decisive for a
+   correlation; it is not decisive for a regression containing the stratifying variable.
+
+*(H-NEW-2790 pre-registered both k values with k = 5 primary, so its locked verdicts stand on
+the more lenient arm; its §4.2 gives the stricter arm full weight and says which a reader
+should take.)*
+
+### 6.2 A fourth outcome: UNVERIFIABLE
+
+FLAGGED / CLEAN is not an exhaustive partition. A third state exists and this repository
+contains at least one load-bearing instance of it:
+
+> **UNVERIFIABLE — the claim's headline numbers are not produced by any code in the
+> repository.**
+
+**H-NEW-192 is the case.** Its finding file declares `Script: inline`
+(`h-new-192-mushaf-position-decomposition.md:129`); there is no `h_new_192*.py`, and no
+`csv/h-new-192.json`. Its headline **R² = 0.759 (Ridge) and 0.817 (RF)** exist in this
+repository **solely as hard-coded literals** in two *other* findings' scripts —
+`scripts/h_new_233_ensemble_predictor.py:532-533,571-572` and
+`scripts/h_new_250_equation_fit.py:670-671`. **Nothing computes them.** The finding also names
+only 10 of the 15 features it claims to use.
+
+**And they are load-bearing as thresholds, not merely as citations.** H-NEW-233's
+pre-registered decision rule is literally `H1 = bool(r2_A > 0.759 ...)` and
+`H2 = bool(r2_B > 0.817)` — a downstream verdict gated on numbers no code in the repository
+reproduces. Fifteen markdown files assert both values, including
+`cross-finding-020-the-complete-equation.md`.
+
+**Screen this before the other three, because it is cheaper and it dominates them.** A number
+that cannot be recomputed cannot be flagged *or* cleared — running a size-matched null against
+an unreproducible baseline measures nothing. The check is two commands: does a script exist that
+produces this number, and does a result JSON contain it? If neither, the claim is UNVERIFIABLE
+and the correct next step is to reproduce it from scratch, not to audit it.
+
 ---
 
 *Written 2026-08-07 by Waiel Al-Shujaa, on the day four laws fell to one mechanism.
 A rate is a ratio, and the divisor is part of the claim. Bismillāhi al-Raḥmāni al-Raḥīm.*
+
+---
+
+## 7. A process note on run immutability — a partial run is not yet a run record
+
+**Recorded 2026-08-07 because it happened here.** The H-NEW-2790 run directory
+`20260807T053241Z/results.json` was committed while it still carried `"partial": true`, and was
+subsequently **completed in place** — the flag removed and 297 lines of additional cells added.
+
+Under the standing rule ("nothing in a run directory may be overwritten, including uncommitted
+and superseded ones") that is a modification of a committed run record.
+
+**The honest reading, and the resolution:**
+
+- The file declared itself incomplete. Finishing an in-progress computation is not the same act
+  as revising a finished result, and the added cells extend the run rather than altering any
+  verdict already in it. The three-line deletion is the `partial` flag itself.
+- **But the error was mine, at the commit step.** A run marked `partial: true` is not yet a run
+  record and should not have been committed as one. Once committed it acquires the immutability
+  guarantee whether or not it was ready for it.
+
+**Standing addition to the rule:** never commit a run directory whose result declares itself
+partial. Either wait for completion, or — if the partial state must be preserved — commit it and
+then write the completion to a **new** timestamped directory, retaining both. The immutability
+guarantee is only meaningful if what it protects was finished when it was made.

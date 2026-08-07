@@ -1,30 +1,35 @@
 ---
 finding_id: H-NEW-2790
-title: Five flagged claims through one size-matched null — the mushaf predictors are size, the chronology predictor keeps a small real residual, and one density claim survives
+title: Five flagged claims through one size-matched null — the mushaf predictors are size, the chronology predictor keeps a small real residual, and the qul density claim sits on its own bar
 author: Waiel Al-Shujaa
 date: 2026-08-07
 phase: C
 target_claims: [H-NEW-192, H-NEW-183, H-NEW-233, H-NEW-74 Cell 6, H-NEW-231]
 prereg: findings/phase-b-hypotheses/prereg-h-new-2790-flagged-batch.md
 prereg_sha256: 6bb7e77a100810e31743734cd105407d6d21cf6d477dee1a9096c5ebde6014a8
-run: findings/phase-b-hypotheses/runs/h-new-2790/
+run: findings/phase-b-hypotheses/runs/h-new-2790/20260807T053241Z/
 rule_applied: findings/UNIT-DRIFT-DEFECT.md
 method_parent: [H-NEW-2770, H-NEW-2760, H-NEW-2680]
 seeds: 20260509 primary / 20260519 replication
+n_perm: 500 Ridge / 100 RF / 10000 Kruskal-Wallis
 status: >-
-  Eight model cells and one density cell, all against a null that permutes the ordering
-  within quantile bins of its own strongest drift channel. One SURVIVES (H-NEW-74 Cell 6),
-  five are GENRE-SHARED-BUT-LARGER in its within-corpus sense, one DOES-NOT-SURVIVE, and two
-  DID-NOT-REPRODUCE. The calibration arm passed at rho = -0.9858.
+  Eight model cells and one density cell against a null that permutes the ordering within
+  quantile bins of its own strongest drift channel. Under the locked primary stratification:
+  five GENRE-SHARED-BUT-LARGER, one DOES-NOT-SURVIVE, two DID-NOT-REPRODUCE, and one
+  SEED-FRAGILE. Under the pre-registered SECONDARY stratification every mushaf-position cell
+  fails, three of six falling BELOW their own null mean. The calibration arm passed at
+  rho = -0.9858 and both locked harness-invalidator directions held.
 verdict: >-
-  The mushaf-position predictors are size predictors. A SINGLE column — log surah word count,
-  no vocabulary at all — reaches LOOCV R2 = 0.8378, beating H-NEW-192's reconstructed
-  15-feature model (0.8026) and H-NEW-233's published 29-feature Ridge model (0.7395) outright.
-  Under Random Forest a small real residual above size remains, and it is 0.028 to 0.034 R2 —
-  about 3 % of variance, not the ~80 % H-NEW-192 attributes to composition. H-NEW-183 is the
-  healthiest of the three: its 12 features beat the strongest size baseline by +0.0413 (Ridge)
-  and +0.0735 (RF), but its published "length-only baseline achieves R2 = 0.446" prices the
-  wrong baseline — a size-only baseline on the correct channel reaches 0.8005.
+  The mushaf-position predictors are size predictors. A SINGLE column - log surah word count,
+  no vocabulary at all - reaches LOOCV R2 = 0.8378, beating H-NEW-192's reconstructed
+  15-feature model (0.8026) by 0.0352 and H-NEW-233's published 29-feature Ridge model
+  (0.7395) by 0.0983. At decile stratification a random size-matched RELABELLING of mushaf
+  order is predicted BETTER than the true order, in both seeds. H-NEW-183 is the one predictor
+  that survives every arm: its 12 features beat the strongest size baseline by +0.0413 (Ridge)
+  and +0.0735 (RF) and clear the finer null at p = 0.0099 in both seeds - but its published
+  "length-only baseline achieves R2 = 0.446" prices the wrong channel, and a one-column
+  baseline on the right channel reaches 0.8005. H-NEW-74 Cell 6 survives per WORD in both
+  seeds and straddles its own Bonferroni bar per VERSE.
 ---
 
 # H-NEW-2790 — Five flagged claims, one harness, one size-matched null
@@ -33,7 +38,8 @@ verdict: >-
 The feature matrices and the LOOCV routines are lifted from the frozen published scripts
 `h_new_183_chronology_predictor.py` and `h_new_233_ensemble_predictor.py` as SHA-checked
 modules; the parallel permutation worker is asserted **bit-identical** to the lifted routine
-at startup (`0.845648348555`, exact equality, not a tolerance). Nothing was re-implemented.**
+at startup (`0.845648348555`, exact equality, not a tolerance). Nothing was re-implemented.
+Run 4,344 s.**
 
 ---
 
@@ -43,18 +49,18 @@ at startup (`0.845648348555`, exact equality, not a tolerance). Nothing was re-i
 count whose size drifts across the ordering under test, the measure is testing the drift.**
 It flags claims; it does not retire them. This is the batch that runs the tests.
 
-Five claims, taken in load-bearing order by computed citation count, each put through the
-same three arms: **A1** a size-only baseline (same model, same LOOCV, size columns only, no
-vocabulary), **A2** a null that permutes the ordering *within quintiles of its own strongest
-drift channel*, **A3** per-word re-normalisation of every density feature. Directions,
-thresholds and the verdict rule were locked at the SHA above before any of these numbers
-existed.
+Five claims, taken in load-bearing order by computed citation count, each through the same
+arms: **A1** a size-only baseline (same model, same LOOCV, size columns only, no vocabulary),
+**A2** a null permuting the ordering *within quantile bins of its own strongest drift
+channel* — primary k = 5, secondary k = 10 — **A3** per-word re-normalisation of every
+density feature, **A4** replication at a second seed. Directions, thresholds and the verdict
+rule were locked before any of these numbers existed.
 
 ---
 
 ## 1. The nuisance channels reproduce the drift table exactly
 
-Measured on this corpus, before the null was designed, as the standing rule requires:
+Measured before the null was designed, as the standing rule requires:
 
 | ordering | channel | ρ measured here | `UNIT-DRIFT-DEFECT` §3 |
 |:--|:--|--:|--:|
@@ -66,82 +72,81 @@ Measured on this corpus, before the null was designed, as the standing rule requ
 | Nöldeke rank | verse count | +0.3903 | +0.3903 |
 
 All six to four decimals. Cross-check ρ(mushaf, Nöldeke) = −0.6551. **The drift table is
-independently confirmed** and the primary channel for each claim was locked on it.
+independently confirmed**, and each claim's primary channel was locked on the measurement.
 
 ---
 
 ## 2. The instrument reproduces — except where no instrument exists
 
-| cell | published | recomputed at the published seed | tolerance | reproduced |
+| cell | published | recomputed at the published seed | tol | reproduced |
 |:--|--:|--:|--:|:-:|
+| **H-NEW-233 Ridge** | 0.7395490015311565 | **0.7395490015311572** | 0.03 | **✓ to 15 digits** |
+| **H-NEW-233 RF** | 0.848516936603147 | **0.848516936603147** | 0.05 | **✓ exactly** |
 | **H-NEW-183 Ridge** | 0.836 | **0.8356** | 0.03 | **✓** |
 | **H-NEW-183 RF** | 0.844 | **0.8438** | 0.05 | **✓** |
-| **H-NEW-233 RF** | 0.8485 | **0.8485** | 0.05 | **✓ exact to 4 dp** |
-| **H-NEW-233 Ridge** | 0.7395 | **0.7395** | 0.03 | **✓ exact to 4 dp** |
-| **H-NEW-74 Cell 6** | H = 35.36 | **35.3570** (untied) | 1.0 | **✓** |
+| **H-NEW-74 Cell 6** | H = 35.36 | **35.3570** (untied); qul total **332** exactly | 1.0 | **✓** |
 | H-NEW-192 Ridge, RECON-A | 0.759 | 0.8026 | 0.03 | **✗** |
 | H-NEW-192 Ridge, RECON-B | 0.759 | 0.8041 | 0.03 | **✗** |
 | H-NEW-192 RF, RECON-A | 0.817 | 0.8485 | 0.05 | ✓ |
 | H-NEW-192 RF, RECON-B | 0.817 | 0.8467 | 0.05 | ✓ |
 
-**Nothing here says any published computation is wrong** where a computation exists. Four of
-four reproducible headline numbers reproduce, two of them exactly. What is challenged
-throughout is what the numbers *measure*.
+**Where a computation exists, it reproduces — two of them to fifteen significant digits.**
+Nothing here says any published arithmetic is wrong. What is challenged throughout is what the
+numbers *measure*. **H-NEW-192 is the exception, and it is a defect of the record rather than
+of a result** — §6.
 
-**H-NEW-192 is the exception, and it is a defect of the record rather than of a result** —
-see §6.
-
-**One incidental reproduction detail is worth recording**: H-NEW-74's published `H = 35.36` is
-the **tie-uncorrected** Kruskal–Wallis statistic. The tie-corrected value is `H = 40.4086`,
-because 57 of 114 surahs have `qul_density = 0` and the tie mass is large. The permutation
-p-value is unaffected either way — the tie correction is a constant factor of the *pooled*
-value multiset, which every label permutation leaves invariant — so this changes no inference.
-Both are published here.
+One incidental detail: H-NEW-74's published `H = 35.36` is the **tie-uncorrected**
+Kruskal–Wallis statistic; the tie-corrected value is **40.4086**, because 57 of 114 surahs have
+`qul_density = 0`. The permutation p is unaffected — the tie correction is a constant factor of
+the *pooled* value multiset, which every label permutation leaves invariant. Both are published.
 
 ---
 
 ## 3. The result — every cell, direction and magnitude
 
-`R²_full` = the published model. `S1` = the single strongest drift channel, one column.
-`S3` = `{log word count, verse count, mean verse length}`, three columns, **no vocabulary,
-no morphology, no phonology**. `ΔR²` = `R²_full − R²_S3`. All LOOCV, all seed 20260509.
+`S1` = the single strongest drift channel, one column. `S3` = `{log word count, verse count,
+mean verse length}`, three columns, **no vocabulary, no morphology, no phonology**.
+`ΔR² = R²_full − R²_S3`. Seed 20260509; the replication is §4.3.
 
-| cell | ordering | R²_full | **S1** | **S3** | **ΔR²** | A2 null mean | A2 null max | A2 p | per-word | verdict |
-|:--|:--|--:|--:|--:|--:|--:|--:|--:|--:|:--|
-| **C1** H-NEW-192 RECON-A Ridge | mushaf | 0.8026 | **0.8378** | 0.8365 | **−0.0339** | 0.7191 | 0.8005 | 0.0020 | 0.7923 | `DID-NOT-REPRODUCE` |
-| **C1** H-NEW-192 RECON-A RF | mushaf | 0.8414 | 0.7813 | 0.8119 | **+0.0296** | 0.7581 | 0.7962 | 0.0099 | 0.8486 | `GENRE-SHARED-BUT-LARGER` |
-| **C1** H-NEW-192 RECON-B Ridge | mushaf | 0.8041 | **0.8378** | 0.8365 | **−0.0324** | 0.7177 | 0.8011 | 0.0020 | 0.7892 | `DID-NOT-REPRODUCE` |
-| **C1** H-NEW-192 RECON-B RF | mushaf | 0.8401 | 0.7813 | 0.8119 | **+0.0282** | 0.7584 | 0.7995 | 0.0099 | 0.8517 | `GENRE-SHARED-BUT-LARGER` |
-| **C2** H-NEW-183 Ridge | Nöldeke | 0.8356 | 0.8005 | 0.7943 | **+0.0413** | 0.7298 | 0.8020 | 0.0020 | 0.8146 | `GENRE-SHARED-BUT-LARGER` |
-| **C2** H-NEW-183 RF | Nöldeke | 0.8432 | 0.7135 | 0.7697 | **+0.0735** | 0.7541 | 0.7994 | 0.0099 | 0.8391 | `GENRE-SHARED-BUT-LARGER` |
-| **C3** H-NEW-233 RF | mushaf | 0.8460 | 0.7813 | 0.8119 | **+0.0341** | 0.7581 | 0.8059 | 0.0099 | 0.8511 | `GENRE-SHARED-BUT-LARGER` |
-| **C3** H-NEW-233 Ridge | mushaf | 0.7395 | **0.8378** | 0.8365 | **−0.0969** | 0.6724 | 0.7904 | 0.0479 | 0.7688 | **`DOES-NOT-SURVIVE`** |
+| cell | ordering | R²_full | **S1** | **S3** | **ΔR²** | k=5 null mean | k=5 p | **k=10 null mean** | **k=10 p** | per-word | locked verdict |
+|:--|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|:--|
+| **C1** 192 RECON-A Ridge | mushaf | 0.8026 | **0.8378** | 0.8365 | **−0.0339** | 0.7191 | 0.0020 | **0.8101** | **0.7129** | 0.7923 | `DID-NOT-REPRODUCE` |
+| **C1** 192 RECON-A RF | mushaf | 0.8414 | 0.7813 | 0.8119 | +0.0296 | 0.7581 | 0.0099 | **0.8224** | **0.2381** | 0.8486 | `GENRE-SHARED-BUT-LARGER` |
+| **C1** 192 RECON-B Ridge | mushaf | 0.8041 | **0.8378** | 0.8365 | **−0.0324** | 0.7177 | 0.0020 | **0.8092** | **0.6832** | 0.7892 | `DID-NOT-REPRODUCE` |
+| **C1** 192 RECON-B RF | mushaf | 0.8401 | 0.7813 | 0.8119 | +0.0282 | 0.7584 | 0.0099 | **0.8227** | **0.3333** | 0.8517 | `GENRE-SHARED-BUT-LARGER` |
+| **C2** 183 Ridge | Nöldeke | 0.8356 | 0.8005 | 0.7943 | **+0.0413** | 0.7298 | 0.0020 | 0.7676 | **0.0099** | 0.8146 | `GENRE-SHARED-BUT-LARGER` |
+| **C2** 183 RF | Nöldeke | 0.8432 | 0.7135 | 0.7697 | **+0.0735** | 0.7541 | 0.0099 | 0.7656 | 0.0476 | 0.8391 | `GENRE-SHARED-BUT-LARGER` |
+| **C3** 233 RF | mushaf | 0.8460 | 0.7813 | 0.8119 | +0.0341 | 0.7581 | 0.0099 | **0.8245** | **0.1429** | 0.8511 | `GENRE-SHARED-BUT-LARGER` |
+| **C3** 233 Ridge | mushaf | 0.7395 | **0.8378** | 0.8365 | **−0.0969** | 0.6724 | 0.0479 | **0.7629** | **0.8812** | 0.7688 | **`DOES-NOT-SURVIVE`** |
 
-**The bolded S1 column is the finding.** `log(surah word count)` is one number per surah,
-carries no vocabulary, no theology, no morphology and no register, and under Ridge LOOCV it
-predicts mushaf position at **R² = 0.8378** — **better than H-NEW-192's reconstructed
-15-feature compositional model (0.8026) and better than H-NEW-233's published 29-feature
-Ridge model (0.7395), by 0.0352 and 0.0983 R² respectively.**
+**The bolded S1 column is the finding.** `log(surah word count)` is one number per surah with
+no vocabulary, no theology, no morphology and no register, and under Ridge LOOCV it predicts
+mushaf position at **R² = 0.8378** — beating H-NEW-192's reconstructed 15-feature compositional
+model (0.8026) by **0.0352** and H-NEW-233's published 29-feature Ridge model (0.7395) by
+**0.0983**.
 
-**C4 — H-NEW-74 Cell 6**, the one density claim, tested on its own statistic:
+**C4 — H-NEW-74 Cell 6**, the one density claim, on its own statistic:
 
-| arm | H (tie-corrected) | ε² | p, MVL-stratified | p, free shuffle |
+| arm | H | ε² | p, MVL-stratified (primary / replication) | p, free shuffle |
 |:--|--:|--:|--:|--:|
-| per **verse** (published form) | 40.409 | 0.3401 | **0.00710** | 0.00010 |
-| per **word** (re-normalised) | 34.502 | 0.2864 | **0.00440** | 0.00010 |
+| per **verse** (published form) | 40.4086 | 0.3401 | **0.00710 / 0.00870** | 1.0 × 10⁻⁴ |
+| per **word** (re-normalised) | 34.5016 | 0.2864 | **0.00440 / 0.00350** | 1.0 × 10⁻⁴ |
 
-Stratified null mean 31.173 (per verse) and 24.283 (per word); 95th percentiles 37.027 and
-30.167. Phase means per verse 1.74 / 4.89 / 8.95 / 4.93, reproducing the published table.
+Its own Bonferroni bar is α = 0.05/6 = **0.00833**. Stratified null means 31.17 and 24.28.
+Phase means per verse 1.74 / 4.89 / 8.95 / 4.93, reproducing the published table; `qul` total
+recovered as **332** exactly.
 
 **C5 — H-NEW-231, the calibration arm.** ρ(KL divergence, log₁₀ token count) = **−0.9858**,
-Pearson −0.8763, LOOCV R² from length alone **0.7552**. Locked direction **D4 passes**: the
-harness recovers a known length-dominated result at ρ = −0.99, so a harness failure is not
-what is producing the verdicts above. **D1 also passes** — size alone reaches R² ≥ 0.70 on
-mushaf position, at 0.8365.
+Pearson −0.8763, LOOCV R² from length alone **0.7552**. **Locked direction D4 passes** — the
+harness recovers a known length-dominated result at ρ = −0.99. **D1 also passes** — size alone
+reaches R² ≥ 0.70 on mushaf position, at 0.8365. Both were registered as harness invalidators:
+*"if D1 or D4 fails, every verdict in this batch is void."* Neither failed.
 
 ---
 
-## 4. Verdicts against the locked rule
+## 4. Verdicts
+
+### 4.1 The locked rule
 
 Diffed clause-by-clause against pre-registration §6 before execution and again after.
 
@@ -154,22 +159,69 @@ SURVIVES                 A2 p <  0.01  AND (R2_full - R2_S3) >= 0.10
 
 `GENRE-SHARED-BUT-LARGER` is the team's label and **there is no genre arm in this batch**. It
 carries here only its within-corpus sense: **the effect is largely the denominator, with a
-real but small residual above it.** Nothing in this finding compares this corpus to
-al-Bukhārī, al-Jāḥiẓ or poetry, and no verdict here may be read as such a comparison.
+real but small residual above it.** Nothing here compares this corpus to al-Bukhārī,
+al-Jāḥiẓ or poetry, and no verdict may be read as such a comparison.
 
-| claim | verdict | the one number |
+**One clause of my own pre-registration needed reading, and the stricter reading was taken.**
+The C4 rule says `p_per_word >= alpha_pub` without saying which null the per-word p comes
+from. The runner uses the per-word statistic **under the same size-matched null** — the
+demanding reading, since the lenient one (per-word against a free shuffle) returns
+p = 1.0 × 10⁻⁴ and would pass automatically. Both are published in §3 so a reader can apply
+either. **The choice makes no difference to the verdict**: checked explicitly, the lenient
+reading returns `SURVIVES` at 20260509 and `DOES-NOT-SURVIVE` at 20260519 — identically
+`SEED-FRAGILE` — because it is the **per-verse** arm that straddles the bar, on either
+reading of the per-word clause.
+
+| claim | locked verdict | the one number |
 |:--|:--|:--|
-| **H-NEW-74 Cell 6** | **`SURVIVES`** | ε² falls 0.3401 → 0.2864 per word (−15.8 %), and both arms clear its own α = 0.00833 |
-| H-NEW-183 | `GENRE-SHARED-BUT-LARGER` | +0.0413 (Ridge) / +0.0735 (RF) above the strongest size baseline |
-| H-NEW-233 (RF cell) | `GENRE-SHARED-BUT-LARGER` | +0.0341 above size; but its Ridge cell is beaten by size by −0.0969 |
-| H-NEW-233 (Ridge cell) | **`DOES-NOT-SURVIVE`** | one size column beats 29 features by 0.0969 R²; A2 p = 0.0479 |
-| H-NEW-192 (RF) | `GENRE-SHARED-BUT-LARGER` | +0.0296 above size — **3 % of variance, not 80 %** |
+| **H-NEW-183** | `GENRE-SHARED-BUT-LARGER` | **+0.0413** (Ridge) / +0.0735 (RF) above the strongest size baseline; **the only claim that also clears the finer null**, p = 0.0099 in both seeds |
+| **H-NEW-74 Cell 6** | **`SEED-FRAGILE`** — SURVIVES at 20260509, DOES-NOT-SURVIVE at 20260519 | per-verse p = 0.00710 / 0.00870 against α = 0.00833; **per-word p = 0.00440 / 0.00350 clears in both** |
+| H-NEW-233 (RF cell) | `GENRE-SHARED-BUT-LARGER` | +0.0341 above size at k=5; **p = 0.1429 at k=10** |
+| H-NEW-233 (Ridge cell) | **`DOES-NOT-SURVIVE`** | one size column beats 29 features by **0.0983** R² |
+| H-NEW-192 (RF) | `GENRE-SHARED-BUT-LARGER` | +0.0296 above size at k=5 — **3 % of variance, not 80 %**; p = 0.2381 at k=10 |
 | H-NEW-192 (Ridge) | `DID-NOT-REPRODUCE` | and no code in this repository produces its published numbers (§6) |
-| H-NEW-231 | calibration passed | ρ = −0.9858; the finding's own title was right |
+| H-NEW-231 | calibration passed | ρ = −0.9858; its own title was right. **Cite it as CLEAN.** |
+
+### 4.2 The locked primary stratification was the more lenient of the two registered
+
+**This must be stated plainly, because the verdicts above rest on it.** The pre-registration
+locked k = 5 as primary and k = 10 as secondary. **At k = 10 every mushaf-position cell fails,
+and three of the six fall BELOW their own null mean** — a random relabelling of mushaf position
+*within decile bins of log word count* is predicted **better** by these compositional features
+than the true mushaf order is.
+
+| cell | observed | k=10 null mean | k=10 p | seed 20260519 |
+|:--|--:|--:|--:|--:|
+| 192 RECON-A Ridge | 0.8026 | **0.8101** | 0.7129 | 0.8145 / 0.7624 |
+| 192 RECON-B Ridge | 0.8041 | **0.8092** | 0.6832 | 0.8139 / 0.7426 |
+| **233 Ridge** | 0.7395 | **0.7629** | **0.8812** | 0.7650 / 0.8515 |
+| 192 RECON-A RF | 0.8414 | 0.8224 | 0.2381 | 0.8215 / 0.0476 |
+| 192 RECON-B RF | 0.8401 | 0.8227 | 0.3333 | 0.8216 / 0.0476 |
+| 233 RF | 0.8460 | 0.8245 | 0.1429 | 0.8271 / 0.1429 |
+| **183 Ridge** | **0.8356** | 0.7676 | **0.0099** | 0.7703 / **0.0099** |
+| 183 RF | 0.8432 | 0.7656 | 0.0476 | 0.7674 / 0.0476 |
+
+**This is the H-NEW-2680 shape exactly** — the baseline is more extreme than the corpus — and a
+pass/fail report would have hidden it. I am not restating the verdicts, because the primary
+arm was locked in advance and changing it after seeing the result is the error this project
+retracted H-NEW-2600 for. **What I am doing is reporting that the locked primary was the
+weaker test, that the registered secondary is unambiguous, and that the secondary agrees with
+the size-only baseline while the primary does not.** A reader who wants the strict answer on
+C1 and C3 should take the k = 10 row.
+
+### 4.3 Replication
+
+**Eight of nine cells return an identical classification at seed 20260519.** Every Ridge cell
+is bit-identical (Ridge's fit is deterministic; only the permutation draws differ). RF values
+move by at most **0.0101** — on the `S3` baseline, not on any full model, whose largest move is
+0.0067 — and every ΔR² stays inside its band. The single divergence is **C4**, whose per-verse
+Monte-Carlo p is 0.00710 at one seed and 0.00870 at the other against a bar of 0.00833. That is
+not a change in the effect; it is a bar running through the middle of the estimate. That is what
+`SEED-FRAGILE` is for and it is applied.
 
 ---
 
-## 5. The two results that matter most
+## 5. The three results that matter most
 
 ### 5.1 The "8 % mushaf–chronology gap" is the above-size residual, and it inverts the reading
 
@@ -178,86 +230,105 @@ H-NEW-192's headline inference is not an R². It is a **difference**:
 > **Mushaf is ~8% LESS PREDICTABLE than Nöldeke from the same features.** … The ~20% residual
 > … **IS the M1 structural placement signal.**
 
-Published, that gap is 0.836 − 0.759 = **0.077**. Here is the same gap decomposed:
+Published, that gap is 0.836 − 0.759 = **0.077**. Decomposed:
 
 | | mushaf position | Nöldeke rank | difference |
 |:--|--:|--:|--:|
 | size-only baseline `S3` | **0.8365** | **0.7943** | mushaf **+0.0422** more predictable from size alone |
-| full model above size (`ΔR²`, Ridge) | **−0.0339** | **+0.0413** | Nöldeke **+0.0752** |
+| model above size (`ΔR²`, Ridge) | **−0.0339** | **+0.0413** | Nöldeke **+0.0752** |
 
 **The published gap of 0.077 and the above-size residual gap of 0.0752 agree to within
-0.002.** The entire "8 % gap" is accounted for by one fact: **Nöldeke rank carries
-compositional signal above surah size and mushaf position does not.**
+0.002.** The whole "8 % gap" is one fact: **Nöldeke rank carries compositional signal above
+surah size and mushaf position does not.**
 
-That reverses the inference rather than merely weakening it. The gap was read as *the mushaf
+**That agreement should be read as suggestive, not exact**, because the mushaf half of it is
+computed on a reconstruction of H-NEW-192's feature set rather than on the original, which no
+longer exists (§6). What does *not* depend on the reconstruction is the sign and the order of
+magnitude: RECON-B gives −0.0324 against RECON-A's −0.0339, and H-NEW-233's own published
+29-feature Ridge model — no reconstruction involved — gives **−0.0969**, further negative
+still. **Every mushaf-position model tested here has a negative above-size residual under
+Ridge; the Nöldeke model is the only positive one.**
+
+That inverts the inference rather than merely weakening it. The gap was read as *the mushaf
 having an extra organizing principle beyond composition*. What it measures is that **the
 mushaf ordering is more nearly a pure size ordering than the chronological ordering is** —
-which is not a discovery about a hidden principle, it is the ṭiwāl → mathānī → mufaṣṣal
-arrangement the tradition has described since before any of this was computed.
+which is not a hidden principle, it is the sabʿ al-ṭiwāl → mathānī → mufaṣṣal arrangement the
+tradition has described for twelve centuries.
 
-**The "~20 % residual IS the M1 structural placement signal" claim is not supported by this
-test and is not refuted by it either.** What is shown is that the ~80 % it is a residual
-*from* is size, not composition, so the residual is not "what is left after composition."
+**The "~20 % residual IS the M1 structural placement signal" claim is neither supported nor
+refuted here.** What is shown is that the ~80 % it is a residual *from* is size, not
+composition — so the residual is not "what is left after composition", and the arithmetic
+that produced the 20 % does not license the interpretation attached to it.
 
-### 5.2 H-NEW-183's published control priced the wrong baseline
+### 5.2 H-NEW-183's published control priced the wrong channel — and the claim survives anyway
 
-H-NEW-183 reports that its 12-feature model **"nearly doubles R²"** against a *"length-only
-baseline [that] achieves R² = 0.446"*.
+H-NEW-183 reports that its 12 features **"nearly double R²"** against a *"length-only baseline
+[that] achieves R² = 0.446"*.
 
-That baseline is **one column**, `log_length` — read from its own frozen output,
-`csv/h-new-183.json → model_B_ridge_length_only.features == ["log_length"]`. Measured on the
-frozen matrix: ρ(`log_length`, Nöldeke rank) = **+0.6775**; ρ(`log_length`, whitespace log
-word count) = **+0.9995**. **It is the word-count channel — the middle of three — not the
-strongest.** The strongest against Nöldeke rank is mean verse length at ρ = +0.9038, and
-H-NEW-183 did not use it.
+That baseline is **one column**, `log_length`, read from its own frozen output:
+`csv/h-new-183.json → model_B_ridge_length_only.features == ["log_length"]`, `r2 = 0.44620`.
+Measured on the frozen matrix: ρ(`log_length`, Nöldeke rank) = **+0.6775**; ρ(`log_length`,
+whitespace log word count) = **+0.9995**; ρ(`log_length`, verse count) = +0.9096. **It is the
+word-count channel — the middle of three — not the weakest and not the strongest.** The
+strongest against Nöldeke rank is mean verse length at ρ = +0.9038, which H-NEW-183 did not use.
 
 | baseline | columns | R² |
 |:--|:--|--:|
-| published "length-only" | `log_length` | 0.446 |
+| published "length-only" | `log_length` | 0.4462 |
 | **S1 here** | **mean verse length alone** | **0.8005** |
 | **S3 here** | log word count + verse count + mean verse length | **0.7943** |
 | full 12-feature model | — | 0.8356 |
 
-**A single column on the correct channel reaches 0.8005 where the published baseline reached
+**One column on the correct channel reaches 0.8005 where the published baseline reached
 0.446.** The model's honest advantage over size is **+0.0413 R²**, not a doubling.
 
-**This corroborates `UNIT-DRIFT-DEFECT` §5's figure of 0.799** — S1 and S3 bracket it at
-0.8005 and 0.7943 — while correcting that section's description of the *channel*: it states
-the published baseline used "verse count only (ρ = +0.390)"; the source and the data both say
-log word count (ρ = +0.6775). The mechanism the section teaches is unaffected; only the
-example's channel label is wrong, and the published control was somewhat better than the
-section implies.
+**This corroborates `UNIT-DRIFT-DEFECT` §5's figure of 0.799**, which S1 and S3 bracket at
+0.8005 and 0.7943 — while correcting that section's description of the *channel*: it states the
+published baseline used *"verse count only (ρ = +0.390)"*; the source and the data both say log
+word count (ρ = +0.6775). The mechanism the section teaches is untouched; the example's channel
+label is wrong, and the published control was better than the section implies.
 
-**H-NEW-183 remains the healthiest claim of the three predictors**, and its RF cell carries
-the largest genuine above-size residual anywhere in this batch at **+0.0735**.
+**And H-NEW-183 is the one predictor in this batch that survives everything.** It is the only
+cell that clears the finer k = 10 null — at p = 0.0099, in both seeds, on the Ridge model —
+and it does so on the ordering whose drift channel it did *not* control for. A small, real,
+replicated effect: **+0.0413 R² of Nöldeke rank is compositional and not length.**
+
+### 5.3 H-NEW-233's fourteen expansion features add 5.4 millionths of R²
+
+A **15-feature** subset of H-NEW-233's own matrix — its `BASE_FEATURES`, used here as
+H-NEW-192's RECON-A — reaches RF LOOCV **0.8485115815718597** at the published seed. Its own
+**29-feature** model reaches **0.848516936603147**.
+
+**The difference is 0.0000054 R².** The fourteen "expansion" features — nine phonological
+means, KL divergence, Hurst exponent, LZ76 norm, entropy rate, and the α–β residual — together
+move LOOCV R² by five parts in a million.
+
+H-NEW-233's verdict is `PASS — beats H-NEW-192 baseline`, on H2 = *"RF R² > 0.817"*. That 0.817
+is a hard-coded literal no code reproduces (§6), and the model it is meant to beat is matched to
+five decimal places by fifteen of its own columns.
 
 ---
 
 ## 6. A defect of the record, not of a result: H-NEW-192 is not reproducible
 
-H-NEW-192's frontmatter reads `executed_by: team-lead (inline, autonomous loop)` and its
-Files section reads `Script: inline (seed 20260419)`.
+Its `executed_by` field records an inline, unscripted run, and its Files section reads
+`Script: inline (seed 20260419)`. There is no script path anywhere in the finding.
 
 1. **No script exists.** A repository-wide search finds two files containing its numbers —
    `scripts/h_new_233_ensemble_predictor.py` and `scripts/h_new_250_equation_fit.py` — and in
-   both they appear as **hard-coded literals**: `"h_new_192_baseline_ridge": 0.759`,
+   both they are **hard-coded literals**: `"h_new_192_baseline_ridge": 0.759`,
    `"h_new_192_baseline_rf": 0.817`. **No code in this repository computes 0.759 or 0.817.**
-2. **Its feature set is under-specified.** The finding names **10** of its **15** features;
-   two of the ten — `divine_name_density`, `legal_density` — are absent from H-NEW-233's
-   `BASE_FEATURES`, while the other eight are present. Neither the finding, nor a journal
-   entry, nor any CSV records the remaining five.
-3. **Two reconstructions were pre-registered and both miss the Ridge number** by +0.044 and
-   +0.045 against a 0.03 tolerance, while both land inside tolerance on RF.
+2. **Its feature set is under-specified.** The finding names **10** of its **15** features; two
+   of the ten — `divine_name_density`, `legal_density` — are absent from H-NEW-233's
+   `BASE_FEATURES` while the other eight are present. No journal entry and no CSV records the
+   remaining five.
+3. **Two reconstructions were pre-registered; both miss the Ridge number** by +0.044 and +0.045
+   against a 0.03 tolerance, and both land inside tolerance on RF. They agree with each other
+   to **0.0015** (Ridge) and **0.0018** (RF) — an order of magnitude tighter than either misses
+   the published Ridge value by — so the miss is not reconstruction noise.
 
-**H-NEW-233's pre-registered PASS condition was scored against these literals.** Its H2 test
-is *"RF R² > 0.817"*, and 0.817 is a number no code produces. Worse for that test: a
-**15-feature** subset of H-NEW-233's own matrix reaches **0.8485** at the published seed — the
-same value to four decimals as its own 29-feature model. **On this evidence H-NEW-233's
-fourteen "expansion" features add nothing measurable**, and its headline — *"29-feature
-ensemble … +0.032 (beats)"* — is a comparison against an unreproducible baseline.
-
-This is not an accusation that the numbers are wrong. It is the statement that **they cannot
-be checked**, and that a claim which cannot be checked should not be carrying two downstream
+This is not an accusation that the numbers are wrong. It is the statement that **they cannot be
+checked**, and that a claim which cannot be checked should not be carrying two downstream
 scripts and the "complete equation" work. **Eleven markdown files in `findings/` assert both
 0.759 and 0.817** — excluding this finding and its pre-registration — among them
 `cross-finding-020-the-complete-equation.md`,
@@ -267,128 +338,214 @@ scripts and the "complete equation" work. **Eleven markdown files in `findings/`
 
 ---
 
-## 7. A methodological result: a stratified permutation null is the *weaker* of the two arms here
+## 7. A methodological result: bin width is part of the null, and the coarse bin is not a control
 
-Worth recording because it cost me the assumption going in, and because it changes how the
-next batch should be designed.
+Worth recording because it cost me an assumption and because it changes how the next batch
+should be built.
 
-**For six of the eight model cells, A2 and A1 disagree, and A1 is right.** C1-RECON-A/Ridge
-beats its size-matched null at **p = 0.0020** — the observed 0.8026 exceeds all but one of 500
-stratified draws — and is nonetheless **beaten outright by one size column** (0.8378).
+**At k = 5 the C1 Ridge cells beat their size-matched null at p = 0.0020 while being beaten
+outright by a single size column.** The two arms contradicted each other. At k = 10 they agree:
+the models fall below the null mean, exactly as the baseline said.
 
-The reason is mechanical. **The model contains the nuisance variable as a feature.** A
-quintile stratification leaves 23 surahs per bin free to permute, so a model holding
-`log_length` and `mean_verse_len` still predicts the permuted target *within* bins using
-exactly the channel the stratification was meant to neutralise. The null asks "is this mapping
-non-random given coarse size?" — and the answer is yes, because size is in the model.
+The reason is mechanical, and it is the same defect the rule document already names, one level
+up. **The model contains the nuisance variable as a feature.** Quintile bins leave 23 surahs
+free to permute inside each, so a model holding `log_length` and `mean_verse_len` still predicts
+the permuted target *within* bins using precisely the channel the stratification was meant to
+neutralise. **A coarse stratification does not hold size fixed; it holds a five-level
+approximation of size fixed, and leaves the model the residual to exploit.**
 
-**The size-only baseline asks the question that matters: do the features add anything over
-size?** For the mushaf cells under Ridge the answer is no, by −0.034 and −0.097 R².
+Three consequences, offered for `UNIT-DRIFT-DEFECT` §6:
 
-The standing rule's own §6 ranks these diagnostics by cost and puts "the size-only baseline"
-second. **On this evidence it should be first for any claim whose statistic is a fitted model
-containing size as a feature**, and the stratified null should be treated as a supporting arm
-rather than the decisive one. A stratified permutation is decisive for a *correlation* — which
-is what H-NEW-2770 tested, correctly — and is not decisive for a *regression that contains the
-stratifying variable*.
+1. **For a claim whose statistic is a fitted model containing size as a feature, the size-only
+   baseline is the decisive arm** and the stratified null is a supporting one. The baseline
+   asks the question that matters — *do the features add anything over size?* — and cannot be
+   gamed by bin width.
+2. **A stratified permutation null must declare its bin width as part of the null**, and report
+   at least two. A single k is a free parameter that moves the answer from p = 0.0020 to
+   p = 0.7129 on the same data.
+3. **A stratified permutation is decisive for a correlation** — which is what H-NEW-2770 tested,
+   correctly, since a Spearman ρ holds no size column — **and is not decisive for a regression
+   that contains the stratifying variable.**
 
 ---
 
 ## 8. What survives, and at exactly its strength
 
-**H-NEW-74 Cell 6 — the qul-density × Nöldeke-phase effect — SURVIVES.** It is the only
-`SURVIVES` in the batch, and it earns it:
+**Two things survive, and both are smaller than they were published as.**
 
-- The effect holds **per word**, not only per verse: ε² = 0.2864 against 0.3401, a fall of
-  **15.8 %**, far inside the 50 % clause.
-- It clears its own published bar **under a mean-verse-length-matched null in both
-  normalisations**: p = 0.00710 per verse and p = 0.00440 per word, against α = 0.00833.
+**(a) H-NEW-183's above-size residual — the strongest result in this batch.** Twelve
+compositional features predict Nöldeke rank **+0.0413 R² (Ridge) and +0.0735 R² (RF) better
+than the best size-only baseline**, and this is the only cell that clears the finer k = 10 null,
+at p = 0.0099 in both seeds. **This is a real, replicated, size-independent chronological
+signal.** It is also about 5 % of the published R², not the "nearly doubles" the finding claims,
+because 0.8005 of its 0.8356 is reachable from mean verse length alone.
 
-**And it must be quoted with its weakening, which is large.** Against the free shuffle the
-p-value is **1.0 × 10⁻⁴** (the floor at 10,000 draws); against the size-matched null it is
-**7.1 × 10⁻³**. **The matched null costs this effect roughly seventy-fold in p and leaves it
-inside its own bar with little room.** The published `p = 1.02 × 10⁻⁷` is an asymptotic χ²
-value against a free-shuffle null and is not the strength of this effect once verse length is
-held fixed.
+**(b) H-NEW-74 Cell 6 — real per WORD, on its bar per VERSE.** The honest statement is precise:
+
+- **Per word the effect is robust**: p = 0.00440 and 0.00350 against α = 0.00833, comfortably
+  inside in both seeds, with ε² = 0.2864 — a fall of only **15.8 %** from the per-verse 0.3401.
+  **Late Meccan surahs say *qul* more often per word, not merely per verse.**
+- **Per verse — the published form — it straddles its own bar**: p = 0.00710 and 0.00870 against
+  0.00833. `SEED-FRAGILE`.
+- **The matched null costs it roughly seventy-fold in p.** Against the free shuffle p = 1.0 ×
+  10⁻⁴ (the floor at 10,000 draws); against the size-matched null 7.1 × 10⁻³. **The published
+  `p = 1.02 × 10⁻⁷` is an asymptotic χ² against a free-shuffle null and is not the strength of
+  this effect once verse length is held fixed.**
 
 The honest headline is therefore not *"the qul-corpus is overwhelmingly a Late-Meccan
 phenomenon"* at p = 10⁻⁷, but:
 
-> **Late Meccan surahs say *qul* more often per WORD, not merely per verse, and the phase
-> difference survives a null that matches mean verse length — at p = 0.0044 to 0.0071, not
-> 10⁻⁷.**
+> **Late Meccan surahs say *qul* more often per WORD, and that survives a null matching mean
+> verse length at p ≈ 0.004 — while the published per-verse form of the same claim sits exactly
+> on its own Bonferroni bar.**
 
-This is the same shape as H-NEW-2770's surviving theonym axes, and it is worth more than what
-fell around it: it is a per-verse density claim that turned out **not** to be its denominator,
-in a batch where four model cells were.
-
-**H-NEW-183's above-size residual also stands** at +0.0413 (Ridge) and +0.0735 (RF) — small,
-real, and correctly labelled `GENRE-SHARED-BUT-LARGER` rather than a survivor, because 95 % of
-its published R² is reachable from size columns alone.
+**This is the more interesting half of the result**, because it runs opposite to the pattern
+this project has found all day: **the re-normalised statistic is the *stronger* one.** Every one
+of H-NEW-2770's eleven axes weakened under per-word re-normalisation. Here the per-word form
+clears its bar and the per-verse form does not — which is what it should look like when a
+density claim is about words rather than about its denominator.
 
 ---
 
-## 9. Honest limits
+## 9. Post-hoc reconciliation with the independent sweep — descriptive only, no verdict moves
+
+**Everything in this section was computed AFTER the verdicts above and after seeing them.**
+It exists because a second lane screened the same repository independently and published an
+inventory with numbers that touch mine. None of it is in the pre-registration, none of it
+enters a decision rule, and no classification in §4 changes. It is reported because
+reconciling two independent screens is worth more than either screen alone.
+
+### 9.1 The other lane's size baseline reproduces exactly — and mine is not the same quantity
+
+The sweep reported a size-only baseline of **0.799** for H-NEW-183 and correctly flagged that
+it was a scratchpad figure with no run directory. On this harness:
+
+| baseline | columns | Ridge R² |
+|:--|:--|--:|
+| **their two-column arm** | `log_length + mean_verse_len` | **0.7988** |
+| mean verse length alone (my `S1`) | 1 | 0.8005 |
+| **my `S3`** | log word count + verse count + mean verse length | 0.7943 |
+| published "length-only" | `log_length` | 0.4462 |
+
+**Their 0.7988 reproduces to four decimals.** The distinction they drew is real and worth
+keeping: **H-NEW-183's feature matrix contains no verse-count column at all**, so their arm
+answers *"what could H-NEW-183 have done with its own columns"* and mine answers *"what does
+size explain in principle."* Note the ordering — **my three-column S3 is the LOWEST of the
+three size baselines**, because verse count is nearly collinear with log word count
+(ρ = +0.9096) and the extra column costs a little Ridge shrinkage for nothing. **All three
+land in 0.794–0.801**, so the §5.2 conclusion is insensitive to which is used.
+
+### 9.2 The mushaf channel — a live instance of the rule's own §5 clause
+
+The sweep's inventory lists **verse count (ρ = −0.8446)** as the strongest drift channel for
+the mushaf-ordered predictor claims, while listing **log word count (ρ = −0.9342)** as
+strongest for another mushaf-ordered claim in the same table. Both are the same ordering. My
+pre-registration locked log word count, on the measurement. Measured single-column Ridge LOOCV
+predicting mushaf position:
+
+| channel | ρ with mushaf position | size-only Ridge R² |
+|:--|--:|--:|
+| **log word count** | **−0.9342** | **0.8378** |
+| verse count | −0.8446 | 0.5386 |
+| mean verse length | −0.7131 | 0.4133 |
+
+**This matters more than a bookkeeping note.** Had verse count been locked as the primary
+channel, the size baseline would have been **0.5386** — and H-NEW-192's reconstructed
+15-feature model at 0.8026 would have cleared it by **+0.264 R²**, returning `SURVIVES` at the
+top of the band. **The claim would have passed.** It is the "control on the weak channel"
+clause of `UNIT-DRIFT-DEFECT` §5 reappearing inside the inventory built to enforce it, and it
+is the sharpest available argument for that rule's own instruction to rank channels on the
+data before locking one.
+
+### 9.3 The sweep's item #6 — H-NEW-74's top-10 ranking — is not what I tested
+
+I tested H-NEW-74 **Cell 6** (the phase Kruskal–Wallis). The sweep flags a different statistic
+in the same file: the **top-10 surahs by qul density per 100 verses**. Re-cut per word, using
+the exact identity `per-word = per-verse ÷ mean verse length`:
+
+| | top 10 |
+|:--|:--|
+| per 100 **verses** (published) | Q34, Q62, Q6, Q112, Q13, Q10, Q39, Q67, Q113, Q17 |
+| per 100 **words** | Q112, Q114, Q113, Q109, Q67, Q72, Q62, Q34, Q6, Q17 |
+
+**Seven of ten survive.** Q10, Q13 and Q39 leave; Q72, Q109 and Q114 enter — and the leader
+changes from Q34 (27.78 per 100 verses) to Q112 (6.67 per 100 words).
+
+**The per-word ranking is arguably the better one on the finding's own terms.** H-NEW-74's
+Cell 3 independently establishes the surah-initial *qul* set as **{72, 109, 112, 113, 114}**.
+The per-**word** top ten contains **four** of those five; the published per-**verse** top ten
+contains **two**. A denominator change that brings a ranking into agreement with the same
+finding's other passing cell is evidence the per-word form is measuring the intended thing.
+
+**This is a descriptive re-cut, not a test.** No null was run against it and it carries no
+verdict.
+
+---
+
+## 10. Honest limits
 
 1. **Conditioning on size may remove mechanism, not only confound — and for the mushaf this is
-   near-certain.** The classical arrangement *is* a length arrangement: sabʿ al-ṭiwāl, then
-   mathānī, then mufaṣṣal. A size-matched null on mushaf position therefore removes the
-   organizing principle the tradition names. **The correct reading of C1 and C3 is not "the
-   mushaf ordering is unstructured" but "these models measure the length arrangement, and
-   attribute it to composition."** This was pre-registered as limit §10.1 and it is load-bearing
-   for how the verdicts should be read.
-2. **LOOCV R² on n = 114 is optimistically biased**, equally in every arm — which is why ΔR²
-   is quoted throughout and why no single R² should be read as a generalisation estimate.
-3. **C1's verdict rests on a reconstruction.** Both reconstructions are published, they agree
-   with each other to 0.0015 (Ridge) and 0.0018 (RF), and neither is H-NEW-192's actual
+   near-certain.** The classical arrangement *is* a length arrangement. A size-matched null on
+   mushaf position removes the organizing principle the tradition names. **The correct reading
+   of C1 and C3 is not "the mushaf ordering is unstructured" but "these models measure the
+   length arrangement and attribute it to composition."** Pre-registered as limit §10.1 and
+   load-bearing for how the verdicts should be read.
+2. **LOOCV R² on n = 114 is optimistically biased**, equally in every arm — which is why ΔR² is
+   quoted throughout and why no single R² is a generalisation estimate.
+3. **C1's verdict rests on a reconstruction.** Both are published; neither is H-NEW-192's actual
    matrix, which no longer exists in any form.
-4. **Nöldeke chronology is a scholarly reconstruction, not data.** C2 and C4 inherit its
+4. **The RF A2 bar is coarse by construction.** At 100 draws the locked rule requires the
+   observed value to exceed the null maximum, so every passing RF cell reports p = 0.0099
+   identically; the informative quantity is the margin, +0.0401 to +0.0452 at k = 5.
+5. **Nöldeke chronology is a scholarly reconstruction, not data.** C2 and C4 inherit its
    uncertainty; nothing here tests it.
-5. **No genre arm.** Nothing here compares this corpus to any other. `GENRE-SHARED-BUT-LARGER`
-   is used in its within-corpus sense only, as stated in §4.
-6. **The RF A2 bar is coarse by construction.** At 100 draws the rule requires the observed
-   value to exceed the maximum of the null, giving p = 0.0099 exactly whenever it does. Every
-   RF cell that beats its null reports that same p; the informative quantity for those cells is
-   the margin (observed minus null max), which ranges from +0.0401 (C3/RF: 0.8460 vs 0.8059) to
-   +0.0452 (C1-RECON-A/RF).
-7. **Five claims is not the inventory.** §11.
+6. **No genre arm.** Nothing here compares this corpus to any other.
+7. **C4's per-verse verdict is a Monte-Carlo boundary case, not a substantive disagreement
+   between seeds.** With 10,000 draws the standard error on p ≈ 0.0083 is **0.00091**. The two
+   estimates are **1.76 SE apart**, and they sit **1.36 SE below** and **0.40 SE above** the bar
+   respectively — both consistent with a true p of about 0.008, which is the bar. More draws
+   would settle which side it falls on; they would not make it a large effect, and the
+   per-**word** arm is 4–5 SE clear of the bar in both seeds regardless.
+8. **Five claims is not the inventory.** §11.
 
 ---
 
-## 10. Garden of forking paths
+## 11. Garden of forking paths
 
-- **Everything in §§3–8 was computed after the lock at SHA `6bb7e77a…`.** Known and recorded
-  in prereg §9 before the run: the citation ranking, each candidate's correction status, the
-  six nuisance-channel correlations, the published headlines, the absence of a script for
+- **Everything in §§3–8 was computed after the lock at SHA `6bb7e77a…`.** Recorded in prereg §9
+  before the run: the citation ranking, each candidate's correction status, the six
+  nuisance-channel correlations, the published headlines, the absence of a script for
   H-NEW-192, and the source-level reading that H-NEW-183's baseline is `log_length`. **The
-  prereg predicted the §5.2 result and recorded that it contradicted the repository's own rule
-  document, before running it.**
+  pre-registration predicted the §5.2 result and recorded that it contradicted the repository's
+  own rule document, before running it.**
 - **The nuisance channel was ranked on measurement, not judgement**, for both orderings.
-- **Locked directions D1 and D4 were declared as harness invalidators** — "if D1 or D4 fails,
-  every verdict in this batch is void." Both passed (0.8365 ≥ 0.70; ρ = −0.9858).
+- **D1 and D4 were declared as harness invalidators.** Both passed.
 - **One implementation defect, found by the calibration arm and disclosed because that is what
   the arm is for.** My first KL implementation for C5 summed the divergence **only over token
   types present in each surah**, dropping the smoothed mass on unseen types — where the length
   dependence lives. It returned ρ = +0.0745 and would have read as a harness failure. Corrected
-  to sum over the full vocabulary, it returns ρ = −0.9858. **The bug was in my own calibration
+  to sum over the full vocabulary it returns ρ = −0.9858. **The bug was in my own calibration
   code, not in any tested claim, and no tested value was computed before it was fixed.**
 - **Three engineering defects in the permutation harness, none of which touched a value.**
   `multiprocessing` with `fork` deadlocked against sklearn's thread pools; with `spawn` each
-  worker re-executed the SHA preamble; and `joblib`'s default `batch_size="auto"` assigned
-  every draw to a single worker while the rest idled at 0 % CPU. All three were wall-clock
-  faults. **The permutation draw sequence is generated serially before any parallel dispatch,
-  so parallelism cannot change a single number**, and the parallel worker is asserted
-  bit-identical to the lifted serial routine at startup.
-- **Run directories are never deleted.** The three calibration runs are retained beside the
-  primary under `runs/h-new-2790-SMOKE/`.
+  worker re-executed the SHA preamble; and `joblib`'s default `batch_size="auto"` assigned every
+  draw to a single worker while the rest idled at 0 % CPU. All three were wall-clock faults.
+  **The permutation draw sequence is generated serially before any parallel dispatch, so
+  parallelism cannot change a number**, and the parallel worker is asserted bit-identical to the
+  lifted serial routine at startup.
+- **The k = 5 / k = 10 divergence was not anticipated.** Both were pre-registered, k = 5 as
+  primary; had only k = 5 been registered this finding would have reported a materially more
+  favourable result for C1 and C3. **I have not restated the verdicts on the strength of the
+  secondary arm** — that is the H-NEW-2600 error — but §4.2 gives the secondary its full weight.
+- **Run directories are never deleted.** Eight calibration runs are retained beside the primary
+  under `runs/h-new-2790-SMOKE/`, including the ones that failed on the harness defects above.
 
 ---
 
-## 11. Flagged claims NOT reached — where the next session starts
+## 12. Flagged claims NOT reached — where the next session starts
 
-The batch was five. The screen A ∧ B ∧ ¬C scan over every uncorrected finding in
-`findings/` produced a longer list, ordered by computed citation count. **Not reached, in
-priority order:**
+The batch was five. A screen A ∧ B ∧ ¬C scan over every uncorrected finding in `findings/`
+produced a longer list, ordered by computed citation count. **Not reached, in priority order:**
 
 | claim | cites | statistic | ordering |
 |:--|--:|:--|:--|
@@ -397,53 +554,58 @@ priority order:**
 | **H-NEW-19** — extended classical anchors | 163 | nine density measures | mushaf |
 | **H-NEW-136** — muq cardinality Pattern-B | 144 | eight density measures | mushaf |
 | **H-NEW-142** — universal hinges | 119 | chronology-reversal magnitude | mushaf × Nöldeke |
-| **H-NEW-570** — muqaṭṭaʿāt content cluster | 101 | eight density measures | muq/non-muq |
+| **H-NEW-570** — muqaṭṭaʿāt content cluster | 101 | eight density measures | muq / non-muq |
 | **H-NEW-123** — Heaps' law | 90 | β, K per surah | mushaf |
 | **H-NEW-49** — surah name class | 87 | six density measures | name class |
 | **H-NEW-234** — Q55 unified profile | 65 | nine densities across fifteen orderings | mushaf |
 | **H-NEW-2210** — qasam-jawāb inventory | 51 | per-surah oath rates | mushaf |
-| **H-NEW-74 Cells 1–5** | 75 | the other five cells of a claim whose Cell 6 survives here | — |
+| **H-NEW-74 Cells 1–5** | 75 | the other five cells of a claim whose Cell 6 is tested here | — |
 
-**H-NEW-231 was reached but only as a calibration arm** and is not a tested claim; its own
-title already declares length dominant, and this run confirms it at ρ = −0.9858. It should be
-cited as **CLEAN** under the rule's §4, which asks that clean cases be named.
+**Two of these are now cheap**, because this finding's harness already holds the answer shape:
+H-NEW-88 and H-NEW-136 are both per-surah density models across mushaf position, and §3's S1
+column — 0.8378 from one size column — is the number they must beat.
 
-I also did not receive the sweep's own FLAGGED inventory before locking, so this worklist is
-my own screen applied independently. **Where the two lists differ, the difference itself is
-worth an hour**: two independent applications of the same three screens disagreeing would say
-the screens are not yet mechanical enough to be a standing rule.
+**H-NEW-231 was reached but only as a calibration arm** and is not a tested claim; its own title
+already declares length dominant and this run confirms it at ρ = −0.9858. **It should be cited
+as CLEAN** under the rule's §4, which asks that clean cases be named.
+
+I did not receive the sweep's own FLAGGED inventory before locking, so this worklist is my own
+screen applied independently. **Where the two lists differ, the difference is worth an hour**:
+two independent applications of the same three screens disagreeing would say the screens are
+not yet mechanical enough to be a standing rule.
 
 ---
 
-## 12. What should change in the project record
+## 13. What should change in the project record
 
 Flagged, not applied — a correction to another finding's file is not mine to make.
 
-- **`h-new-192-mushaf-position-decomposition.md` needs a correction notice on two counts**: its
-  numbers are not reproducible from the repository (§6), and its "80 % compositional" is
-  reached and beaten by one size column (§3). Its `verdict: STRONG PASS` should not stand
-  unamended.
-- **`h-new-233-ensemble-mushaf-predictor.md`**: its H2 PASS was scored against an
-  unreproducible baseline, and a 15-feature subset of its own matrix matches its 29-feature R²
-  to four decimals. Its Ridge cell `DOES-NOT-SURVIVE` outright.
-- **`h-new-183-chronology-predictor.md`**: the sentence *"The length-only baseline achieves
-  R² = 0.446 … nearly doubles R²"* should carry the corrected baseline of **0.8005** and the
-  honest advantage of **+0.0413**.
-- **`h-new-74-qul-distribution.md`**: Cell 6 **survives**, and should quote **p = 0.0071 under
-  a mean-verse-length-matched null** beside its `p = 1.02 × 10⁻⁷`, together with the per-word
-  ε² of 0.2864. Its published `H = 35.36` should be labelled tie-uncorrected.
-- **`findings/UNIT-DRIFT-DEFECT.md` §5**: the H-NEW-183 example names the wrong channel
-  (verse count, ρ = +0.390) for a baseline that is log word count (ρ = +0.6775). **Its 0.799
-  figure is confirmed** at 0.7943–0.8005. §6's diagnostic ordering should be amended per §7
-  above: for a fitted model containing size as a feature, the size-only baseline is the
-  decisive arm and the stratified null is not.
-- **`STATE-OF-THE-PROJECT-2026-08-07.md`** should gain rows in §2 for H-NEW-192 and H-NEW-233,
-  and H-NEW-74 Cell 6 belongs in §1 as a second surviving density claim beside the theonym
-  axes — at p = 0.0071, not 10⁻⁷.
+- **`h-new-192-mushaf-position-decomposition.md`** needs a correction notice on three counts:
+  its numbers are not reproducible from the repository (§6); its "80 % compositional" is reached
+  and beaten by one size column (§3); and its "8 % gap" is the above-size residual difference
+  and inverts on inspection (§5.1). Its `verdict: STRONG PASS` should not stand unamended.
+- **`h-new-233-ensemble-mushaf-predictor.md`**: its H2 PASS was scored against an unreproducible
+  literal; its fourteen expansion features move LOOCV R² by 5.4 × 10⁻⁶ (§5.3); its Ridge cell
+  `DOES-NOT-SURVIVE`, beaten by one size column by 0.0983 R².
+- **`h-new-183-chronology-predictor.md`**: *"The length-only baseline achieves R² = 0.446 …
+  nearly doubles R²"* should carry the corrected baseline of **0.8005** and the honest advantage
+  of **+0.0413**. Its surviving residual should be stated — it is the strongest result in this
+  batch and it deserves to be cited at that strength, not at 0.836.
+- **`h-new-74-qul-distribution.md`**: Cell 6 should quote **p = 0.0044 per word and 0.0071 per
+  verse under a mean-verse-length-matched null** beside its `p = 1.02 × 10⁻⁷`, note the
+  `SEED-FRAGILE` per-verse boundary, and label its published `H = 35.36` tie-uncorrected.
+- **`findings/UNIT-DRIFT-DEFECT.md`**: §5's H-NEW-183 example names the wrong channel (verse
+  count, ρ = +0.390) for a baseline that is log word count (ρ = +0.6775); **its 0.799 figure is
+  confirmed** at 0.7943–0.8005. §6's diagnostic ordering should be amended per §7: for a fitted
+  model containing size as a feature the size-only baseline is decisive and the stratified null
+  is not, and any stratified null must declare and report at least two bin widths.
+- **`STATE-OF-THE-PROJECT-2026-08-07.md`**: rows in §2 for H-NEW-192 and H-NEW-233; and in §1,
+  H-NEW-183's +0.0413 above-size residual and H-NEW-74 Cell 6's per-word survival, both at their
+  measured strength and not above it.
 
 ---
 
-## 13. Files
+## 14. Files
 
 - Pre-registration: `findings/phase-b-hypotheses/prereg-h-new-2790-flagged-batch.md`
   (SHA-256 `6bb7e77a100810e31743734cd105407d6d21cf6d477dee1a9096c5ebde6014a8`)
@@ -451,12 +613,13 @@ Flagged, not applied — a correction to another finding's file is not mine to m
   H-NEW-183 and H-NEW-233 matrices and LOOCV as SHA-verified modules; asserts the parallel
   permutation worker bit-identical to the lifted serial routine
 - JSON: `findings/phase-b-hypotheses/csv/h-new-2790.json`
-- Runs (immutable, never deleted): `findings/phase-b-hypotheses/runs/h-new-2790/` (primary)
-  and `runs/h-new-2790-SMOKE/` (three calibration runs), each with a `manifest.json` recording
-  every frozen input SHA in repository-relative form
+- Runs (immutable, never deleted):
+  `findings/phase-b-hypotheses/runs/h-new-2790/20260807T053241Z/` (primary, 4,344 s) and
+  `runs/h-new-2790-SMOKE/` (eight calibration runs), each with a `manifest.json` recording every
+  frozen input SHA in repository-relative form
 
 ---
 
-*Run 2026-08-07 by Waiel Al-Shujaa. A rate is a ratio, the divisor is part of the claim — and
-when the divisor is a feature of the model, the baseline settles it and the permutation does
-not. Bismillāhi al-Raḥmāni al-Raḥīm.*
+*Run 2026-08-07 by Waiel Al-Shujaa. A rate is a ratio and the divisor is part of the claim —
+and when the divisor is a feature of the model, the baseline settles it and the permutation
+does not. Bismillāhi al-Raḥmāni al-Raḥīm.*
