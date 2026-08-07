@@ -1,3 +1,31 @@
+> # ⛔ SUPERSEDED — read `WHAT-WE-ACTUALLY-FOUND.md` instead
+>
+> **This essay was written on 2026-04-12 and is retained only as a dated record. Do not cite
+> it.** On **2026-08-07** the project ran its first properly matched controls and most of the
+> findings this essay draws on did not survive them.
+>
+> **One error is load-bearing for the essay's central argument and must be read before the
+> ʿAbasa section (§ "The locus classicus is ʿAbasa").** The essay states that no tafsīr
+> tradition ever reattributed the frowner away from the Prophet, and builds its case on that:
+> *"He would re-attribute it… The Muslim community did not do this."*
+>
+> **A classical tradition did exactly that.** Al-Ṭabarsī's *Majmaʿ al-Bayān* records
+> al-Sharīf al-Murtaḍā arguing that the verse names no subject and that "the apparent meaning
+> is that *he frowned and turned away* refers to someone other than him," reasoning from
+> Q 68:4 and Q 3:159; and it records a report from al-Ṣādiq that the verse concerns a man of
+> the Banū Umayya who was present with the Prophet. Verified at
+> `data/literature/classical-tafsir/raw/tabarsi-majma-bayan.openiti.raw.txt:119473-119482`.
+> The preservation argument does not survive in the form given here.
+>
+> Also corrected: the eight divine names of Q 59:22–24 are **six**, not eight — *al-Quddūs*
+> occurs at **Q 62:1**; Q 59:23 has **19** real words, not 20, so its density is **10/19 =
+> 52.6%**; and the Birmingham folio's radiocarbon range dates the **parchment**, not the
+> writing.
+>
+> Withdrawn from the project's public claims: the Abū-Lahab-as-falsifiable-prediction
+> argument, the four-informant impossibility proof, and the Aquinas / Kant / Popper
+> "anticipation" readings with the Ockham conclusion drawn from them.
+
 # The Man at the Center of All of It
 
 *A long essay, drawing on a hundred-plus findings of the Qurʾān Decipherment Project, on the figure the book keeps refusing to describe.*

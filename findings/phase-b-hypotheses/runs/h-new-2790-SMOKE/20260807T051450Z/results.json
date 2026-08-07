@@ -1,0 +1,223 @@
+{
+  "finding_id": "H-NEW-2790",
+  "prereg_sha256": "6bb7e77a100810e31743734cd105407d6d21cf6d477dee1a9096c5ebde6014a8",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2790-flagged-batch.md",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519,
+    "published_used_in_A0_only": 20260419
+  },
+  "alpha_bon": 0.01,
+  "alpha_C4_published": 0.008333333333333333,
+  "drift_channels": {
+    "mushaf": {
+      "log_word_count": -0.9342,
+      "verse_count": -0.8446,
+      "mean_verse_length": -0.7131
+    },
+    "noldeke": {
+      "log_word_count": 0.6892,
+      "verse_count": 0.3903,
+      "mean_verse_length": 0.9038
+    },
+    "cross_mushaf_vs_noldeke": -0.6551
+  },
+  "h_new_183_length_only_baseline_probe": {
+    "declared_features": [
+      "log_length"
+    ],
+    "published_r2": 0.44619506582911894,
+    "rho_log_length_vs_noldeke": 0.6775,
+    "rho_log_length_vs_my_log_word_count": 0.9995,
+    "rho_log_length_vs_verse_count": 0.9096
+  },
+  "cells": {
+    "PRIMARY": {
+      "C4": {
+        "claim": "C4",
+        "finding": "H-NEW-74",
+        "qul_total_recovered": 332.0,
+        "phase_order": [
+          "Early Meccan",
+          "Middle Meccan",
+          "Late Meccan",
+          "Medinan"
+        ],
+        "per_verse": {
+          "n": [
+            48,
+            21,
+            21,
+            24
+          ],
+          "mean": [
+            1.7414526952085183,
+            4.888600350164323,
+            8.948015313920614,
+            4.925924456742255
+          ],
+          "median": [
+            0.0,
+            2.2222222222222223,
+            5.339805825242719,
+            3.3435314685314683
+          ],
+          "H_uncorrected": 35.357021630162365,
+          "H_tie_corrected": 40.408562461385394,
+          "tie_correction": 0.8749883558453656,
+          "epsilon_squared": 0.340077840558049
+        },
+        "per_word": {
+          "n": [
+            48,
+            21,
+            21,
+            24
+          ],
+          "mean": [
+            0.43428233089433194,
+            0.429054741383094,
+            0.5064622338882806,
+            0.2553337806093978
+          ],
+          "median": [
+            0.0,
+            0.21291696238466998,
+            0.30977189524077725,
+            0.172669605536849
+          ],
+          "H_uncorrected": 30.189923177509,
+          "H_tie_corrected": 34.50163149166559,
+          "tie_correction": 0.8750288572527896,
+          "epsilon_squared": 0.28637846810605083
+        },
+        "A2": {
+          "per_verse": {
+            "observed_H": 40.408562461385394,
+            "n_perm": 200,
+            "null_mean_stratified": 31.014985864441872,
+            "null_p95_stratified": 37.16588512271757,
+            "p_stratified": 0.009950248756218905,
+            "null_mean_free": 2.62582296938122,
+            "p_free_shuffle": 0.004975124378109453
+          },
+          "per_word": {
+            "observed_H": 34.50163149166559,
+            "n_perm": 200,
+            "null_mean_stratified": 24.41255951898811,
+            "null_p95_stratified": 30.690926052599632,
+            "p_stratified": 0.004975124378109453,
+            "null_mean_free": 2.931995179279245,
+            "p_free_shuffle": 0.004975124378109453
+          }
+        },
+        "A0_reproduced": true,
+        "epsilon_squared_drop_fraction": 0.15790317994221692,
+        "verdict": "DOES-NOT-SURVIVE"
+      },
+      "C5": {
+        "claim": "C5",
+        "finding": "H-NEW-231",
+        "spearman_kl_vs_logtokens": 0.07447174757868323,
+        "pearson": 0.2673248110581412,
+        "loocv_r2_length_only": 0.027185588113684322,
+        "D4_passes": false
+      }
+    },
+    "REPLICATION": {
+      "C4": {
+        "claim": "C4",
+        "finding": "H-NEW-74",
+        "qul_total_recovered": 332.0,
+        "phase_order": [
+          "Early Meccan",
+          "Middle Meccan",
+          "Late Meccan",
+          "Medinan"
+        ],
+        "per_verse": {
+          "n": [
+            48,
+            21,
+            21,
+            24
+          ],
+          "mean": [
+            1.7414526952085183,
+            4.888600350164323,
+            8.948015313920614,
+            4.925924456742255
+          ],
+          "median": [
+            0.0,
+            2.2222222222222223,
+            5.339805825242719,
+            3.3435314685314683
+          ],
+          "H_uncorrected": 35.357021630162365,
+          "H_tie_corrected": 40.408562461385394,
+          "tie_correction": 0.8749883558453656,
+          "epsilon_squared": 0.340077840558049
+        },
+        "per_word": {
+          "n": [
+            48,
+            21,
+            21,
+            24
+          ],
+          "mean": [
+            0.43428233089433194,
+            0.429054741383094,
+            0.5064622338882806,
+            0.2553337806093978
+          ],
+          "median": [
+            0.0,
+            0.21291696238466998,
+            0.30977189524077725,
+            0.172669605536849
+          ],
+          "H_uncorrected": 30.189923177509,
+          "H_tie_corrected": 34.50163149166559,
+          "tie_correction": 0.8750288572527896,
+          "epsilon_squared": 0.28637846810605083
+        },
+        "A2": {
+          "per_verse": {
+            "observed_H": 40.408562461385394,
+            "n_perm": 200,
+            "null_mean_stratified": 31.59458071300207,
+            "null_p95_stratified": 37.742477619643864,
+            "p_stratified": 0.014925373134328358,
+            "null_mean_free": 2.762232029479277,
+            "p_free_shuffle": 0.004975124378109453
+          },
+          "per_word": {
+            "observed_H": 34.50163149166559,
+            "n_perm": 200,
+            "null_mean_stratified": 24.62918680236562,
+            "null_p95_stratified": 29.990469382607,
+            "p_stratified": 0.004975124378109453,
+            "null_mean_free": 2.656383882492294,
+            "p_free_shuffle": 0.004975124378109453
+          }
+        },
+        "A0_reproduced": true,
+        "epsilon_squared_drop_fraction": 0.15790317994221692,
+        "verdict": "DOES-NOT-SURVIVE"
+      },
+      "C5": {
+        "claim": "C5",
+        "finding": "H-NEW-231",
+        "spearman_kl_vs_logtokens": 0.07447174757868323,
+        "pearson": 0.2673248110581412,
+        "loocv_r2_length_only": 0.027185588113684322,
+        "D4_passes": false
+      }
+    }
+  },
+  "seed_fragile": [],
+  "elapsed_s": 0.5,
+  "smoke": true
+}

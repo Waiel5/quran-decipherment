@@ -61,6 +61,7 @@ table; do not re-derive it.**
 |:--|:--|--:|:--|
 | Nöldeke / revelation rank | **mean verse length** | **+0.9038** | H-NEW-2770 §2; reproduced by H-NEW-2780 |
 | Nöldeke / revelation rank | surah word count | +0.6892 | H-NEW-2770 §2 |
+| Nöldeke / revelation rank | `log_length` *(= log word count; H-NEW-183's baseline feature)* | +0.6775 | H-NEW-2780; identity confirmed against `csv/h-new-123.json` `N` |
 | Nöldeke / revelation rank | verse count | +0.3903 | H-NEW-2770 §2; H-NEW-125 axis 1 |
 | **mushaf position** | **verse count** | **−0.8446** | H-NEW-2680 §8.1; reproduced by H-NEW-2780 |
 | **mushaf position** | **mean verse length** | **−0.7131** | H-NEW-2780 (new) |
@@ -120,11 +121,24 @@ Three further clauses, each earned by a specific failure:
   one. A cheap descriptive measurement of each candidate, *before* locking, ranks them
   correctly. H-NEW-2770 did this and it worked.
 
-- **A control on the weak channel is not a control.** H-NEW-183 ran a length baseline using
-  **verse count only** (ρ = +0.390 with Nöldeke rank) and reported that its 12-feature model
-  beat it, 0.836 against 0.446. Adding the *strong* channel — mean verse length, ρ = +0.904 —
-  takes the size-only baseline to **0.799**. The published control tested the channel that
-  could not compete.
+- **A control that does not use the strongest channel is not a control.** H-NEW-183 ran a
+  length baseline on its `log_length` feature alone and reported that its 12-feature model beat
+  it, 0.836 against 0.446. `log_length` is **log word count** — `_safe_log(N)` where `N` is
+  H-NEW-123's token count, confirmed on the data (Q 1 al-Fātiḥa has `N = 29`, its word count,
+  against 7 verses). That is the **middle** of the three channels at ρ = **+0.6775** with
+  Nöldeke rank, not the weakest. But it is not the strongest either: **mean verse length at
+  ρ = +0.9038 was never used as a baseline — it sat inside the feature set being defended.**
+  Adding it takes the size-only baseline from 0.446 to **0.799**, against the full model's
+  0.836. The control was real; it simply tested the wrong one of the two size channels it had
+  in hand.
+
+  *(Corrected 2026-08-07. This clause first read "verse count only (ρ = +0.390)", which
+  misidentified the feature. The correction was supplied by the H-NEW-2790 lane from the frozen
+  `model_B_ridge_length_only.features` field and independently re-measured here:
+  ρ(`log_length`, Nöldeke rank) = +0.6775, ρ(`log_length`, verse count) = +0.9096,
+  ρ(`log_length`, word count) = 1.000. The clause holds at reduced strength — the gap between
+  the published baseline and a properly-channelled one is smaller than the original wording
+  implied.)*
 
 - **Normalisation is not invariance.** `d_min` divides by unit length and was described as
   "length-invariant by construction", yet length alone explains **28.7 %** of its variance,

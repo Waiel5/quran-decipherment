@@ -1,3 +1,27 @@
+> # ⛔ SUPERSEDED — read `WHAT-WE-ACTUALLY-FOUND.md` instead
+>
+> **This document was written on 2026-04-12 and is retained only as a dated record of what
+> the project believed at that time. Do not cite it.**
+>
+> On **2026-08-07** the project ran its first properly matched controls. Most of the laws it
+> had accumulated did not survive them, and this summary contains specific factual errors
+> that were found and verified against the corpus on the same day:
+>
+> - The eight divine names of Q 59:22–24 do **not** all "appear nowhere else" — *al-Quddūs*
+>   also occurs at **Q 62:1**, and *al-Salām* at four further places. Six of the eight are
+>   unique to the passage (§3.2 (viii)).
+> - Q 59:23's divine-name density is **10 of 19 real words (52.6%)**, not 50% — the twentieth
+>   "word" is a recitation pause glyph (§3.2 (viii)).
+> - **Q 18:50 is not the word-midpoint of the Qurʾān** (§3.3 (x)). That result counts pause
+>   glyphs as words. On the project's own locked anchor of 77,797 real words the midpoint
+>   falls in **Q 18:77**.
+> - The embryological terms do **not** match Galen "verbatim" (§4). The project's own source
+>   file records that the bone-before-flesh sequence "is not Galen's formulation."
+> - The **iron-57 coincidence** (§3.1 (ii)) is withdrawn as survivor bias.
+>
+> The replacement document states what survived, at the strength it actually has, and gives
+> the negative results the prominence they had earned all along.
+
 # Executive Summary of the Quran Decipherment Project
 
 **Date:** 2026-04-12

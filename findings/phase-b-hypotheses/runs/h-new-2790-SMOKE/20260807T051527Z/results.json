@@ -1,0 +1,59 @@
+{
+  "finding_id": "H-NEW-2790",
+  "prereg_sha256": "6bb7e77a100810e31743734cd105407d6d21cf6d477dee1a9096c5ebde6014a8",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2790-flagged-batch.md",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519,
+    "published_used_in_A0_only": 20260419
+  },
+  "alpha_bon": 0.01,
+  "alpha_C4_published": 0.008333333333333333,
+  "drift_channels": {
+    "mushaf": {
+      "log_word_count": -0.9342,
+      "verse_count": -0.8446,
+      "mean_verse_length": -0.7131
+    },
+    "noldeke": {
+      "log_word_count": 0.6892,
+      "verse_count": 0.3903,
+      "mean_verse_length": 0.9038
+    },
+    "cross_mushaf_vs_noldeke": -0.6551
+  },
+  "h_new_183_length_only_baseline_probe": {
+    "declared_features": [
+      "log_length"
+    ],
+    "published_r2": 0.44619506582911894,
+    "rho_log_length_vs_noldeke": 0.6775,
+    "rho_log_length_vs_my_log_word_count": 0.9995,
+    "rho_log_length_vs_verse_count": 0.9096
+  },
+  "cells": {
+    "PRIMARY": {
+      "C5": {
+        "claim": "C5",
+        "finding": "H-NEW-231",
+        "spearman_kl_vs_logtokens": -0.9858322636862499,
+        "pearson": -0.8763387442558225,
+        "loocv_r2_length_only": 0.7552336903419452,
+        "D4_passes": true
+      }
+    },
+    "REPLICATION": {
+      "C5": {
+        "claim": "C5",
+        "finding": "H-NEW-231",
+        "spearman_kl_vs_logtokens": -0.9858322636862499,
+        "pearson": -0.8763387442558225,
+        "loocv_r2_length_only": 0.7552336903419452,
+        "D4_passes": true
+      }
+    }
+  },
+  "seed_fragile": [],
+  "elapsed_s": 0.4,
+  "smoke": true
+}
