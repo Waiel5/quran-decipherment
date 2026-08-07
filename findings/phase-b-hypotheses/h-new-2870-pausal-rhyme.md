@@ -19,6 +19,19 @@ alpha_bonferroni: 0.003125
 
 # H-NEW-2870 — the fāṣila at pausal phonology
 
+> **CROSS-REFERENCE ADDED 2026-08-07 — the test §9 called for has been run.**
+> **H-NEW-2880** re-tested this question with a null matching class **concentration**, not merely
+> class count. Under a null where the chance floor has *exactly zero variance* across 160,000
+> draws, the observed excess reaches **z = +15.03, 0/10,000 draws**, replicated.
+> **This does NOT overturn the locked NULL below.** It establishes that the arm producing that
+> NULL could not have returned another answer: 2880 re-implemented N1-a verbatim and reproduced
+> §9 bit-for-bit as a pre-registered gate. It also found that **N1-b — the null this file called
+> "not confounded by concentration" — was the WORSE of the two on that channel** (its draws track
+> their own floor at ρ = +0.9485 against N1-a's +0.6805). Declining to overturn on post-hoc
+> grounds was the right call; 2880 is the pre-registered test that settles it.
+> Every descriptive result in this file reproduces untouched.
+
+
 **One-line summary.** Pausal reduction collapses the corpus's verse-final rime inventory
 **3.42-fold** (397 classes → 116), and that collapse buys **+0.062 of adjacent-verse rhyme
 agreement for free**; the observed rise is **+0.187**, so **one third of the effect is

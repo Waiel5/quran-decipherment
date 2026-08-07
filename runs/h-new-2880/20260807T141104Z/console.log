@@ -1,0 +1,290 @@
+[SHA-OK] pre-reg locked: 87083f50d56cd9802a5656ebc3049da98ee0397e6a0dda657e4d3dbbebe052ab
+[SHA-OK] 8 frozen inputs verified (the parent runner among them)
+
+==============================================================================
+INSTRUMENT — executing sections 0-6 of the pinned parent runner verbatim.
+Gates A and B below are the parent's, re-run, and are reported before any statistic.
+==============================================================================
+[SHA-OK] pre-reg locked: 119753ad7862d66dfead2ff6de1032adee0a824cd7544cd8bc4d6688587508d4
+[SHA-OK] 7 frozen inputs verified
+[LOAD] 114 surahs, 6236 verses
+
+==============================================================================
+GATE A — orthography (prereg §4.1). Reported BEFORE any test statistic.
+==============================================================================
+   U+0657 [ٗ] -> U+064B [ً] : match= 1195 mismatch=  0 rate=1.0000
+   U+065E [ٞ] -> U+064C [ٌ] : match=  580 mismatch=  0 rate=1.0000
+   U+0656 [ٖ] -> U+064D [ٍ] : match=  759 mismatch=  0 rate=1.0000
+   U+064B [ً] -> U+064B [ً] : match=  270 mismatch=  0 rate=1.0000
+   U+064C [ٌ] -> U+064C [ٌ] : match=  179 mismatch=  0 rate=1.0000
+   U+064D [ٍ] -> U+064D [ٍ] : match=  242 mismatch=  0 rate=1.0000
+   tanwin encoded non-standard: 6643  standard: 1911  non-standard share = 0.777
+   GATE A: PASS
+   verse-final word, final vowel-bearing mark (recoverability of the citation form):
+      short-vowel                       3836  0.6151
+      bare(long-vowel/indeclinable)     1233  0.1977
+      tanwin                            1069  0.1714
+      sukun                               98  0.0157
+
+==============================================================================
+GATE B — instrument validation against H-NEW-2240 (prereg §4.4).
+==============================================================================
+   [PASS] Q18 al-Kahf 110/110 open -A: {'A': 110}
+   [PASS] Q112 al-Ikhlas 4/4 -ad: {'aد': 4}
+   [PASS] Q108 al-Kawthar 3/3 -ar: {'aر': 3}
+   [PASS] Q114 al-Nas 6/6 -As: {'Aس': 6}
+   [PASS] Q1 al-Fatiha all in {Im, In}: {'Iم': 3, 'Iن': 4}
+   [PASS] Q55 al-Rahman modal -An: modal=[('Aن', 63), ('Aم', 7), ('Aنن', 3)]
+   GATE B: 6/6 PASS
+
+==============================================================================
+RESULT 1 — CLASS-COLLAPSE MAGNITUDE. Reported before any headline number (prereg §9).
+==============================================================================
+
+   --- rime R2 (tanwin-transparent repair — PRIMARY)
+      C   K=  397  K_eff=  37.029  chance floor sum(p^2)=0.106814  A=0.3484
+      P1  K=  116  K_eff=  10.874  chance floor sum(p^2)=0.168712  A=0.5353
+      P2  K=  115  K_eff=  10.822  chance floor sum(p^2)=0.168758  A=0.5364
+      P3  K=  213  K_eff=  16.890  chance floor sum(p^2)=0.141535  A=0.4360
+      collapse C->P1: K 397/116 = 3.422x   K_eff 3.405x   free arithmetic gain = +0.0619   observed Δ = +0.1869
+      collapse C->P2: K 397/115 = 3.452x   K_eff 3.421x   free arithmetic gain = +0.0619   observed Δ = +0.1880
+      collapse C->P3: K 397/213 = 1.864x   K_eff 2.192x   free arithmetic gain = +0.0347   observed Δ = +0.0876
+      map C->P1: 0 citation types split, 0 verses (0.0000) — the null of §5 is defined only when this is 0
+      map C->P2: 0 citation types split, 0 verses (0.0000) — the null of §5 is defined only when this is 0
+
+   --- rime R1 (as pre-registered by the parent)
+      C   K=  157  K_eff=  14.146  chance floor sum(p^2)=0.138495  A=0.4696
+      P1  K=  116  K_eff=  10.874  chance floor sum(p^2)=0.168712  A=0.5353
+      P2  K=  115  K_eff=  10.822  chance floor sum(p^2)=0.168758  A=0.5364
+      P3  K=  213  K_eff=  16.890  chance floor sum(p^2)=0.141535  A=0.4360
+      collapse C->P1: K 157/116 = 1.353x   K_eff 1.301x   free arithmetic gain = +0.0302   observed Δ = +0.0657
+      collapse C->P2: K 157/115 = 1.365x   K_eff 1.307x   free arithmetic gain = +0.0303   observed Δ = +0.0668
+      collapse C->P3: K 157/213 = 0.737x   K_eff 0.838x   free arithmetic gain = +0.0030   observed Δ = -0.0336
+      map C->P1: 2 citation types split, 1059 verses (0.1698) — the null of §5 is defined only when this is 0
+      map C->P2: 2 citation types split, 1059 verses (0.1698) — the null of §5 is defined only when this is 0
+
+   DECOMPOSITION of the delta (rime R2, tuple P1), restated from the parent:
+      Δ = +0.1869   arithmetic (chance-collision) +0.0619 = 33.1%   compositional +0.1250 = 66.9%
+
+==============================================================================
+RESULT 2 — THE ANTI-GAMING AUDIT (prereg §6). Printed BEFORE any p-value.
+==============================================================================
+   the real pausal partition's chance floor: P1 = 0.168712   P2 = 0.168758
+   M = 397 citation types  ->  K = 116 (P1) / 115 (P2) pausal classes
+   adjacent pairs = 6122; of these 3453 differ under the truncation-only tuple P3 (the N-STEM sub-population)
+
+   (a) THE PARENT'S TWO NULLS, re-implemented verbatim — diagnostics only, gate nothing
+      N1-a P1: profile TV=0.3276  floor mean=0.2071 (sd 0.0319, range 0.1385-0.3276) vs observed 0.1687
+               floor within ±2% of the observed: 6.40% of draws | corr(A_null, floor_null) = +0.6805
+               draws beating the observation: 57; their mean floor 0.2879; more concentrated than the real partition: 57/57
+      N1-b P1: floor mean=0.2398 (sd 0.0958) vs observed 0.1687 | within ±2%: 4.15% | corr(A_null, floor_null) = +0.9485
+      N1-a P2: profile TV=0.3264  floor mean=0.2076 (sd 0.0319, range 0.1385-0.3276) vs observed 0.1688
+               floor within ±2% of the observed: 6.42% of draws | corr(A_null, floor_null) = +0.6803
+               draws beating the observation: 54; their mean floor 0.2883; more concentrated than the real partition: 54/54
+      N1-b P2: floor mean=0.2400 (sd 0.0958) vs observed 0.1688 | within ±2%: 4.07% | corr(A_null, floor_null) = +0.9481
+
+   GATE G2 — does the diagnostic have teeth? corr(A_null, floor_null) on the known-defective N1-a = +0.6805, required >= +0.50: PASS
+
+==============================================================================
+RESULT 3 — THE EXACT-CONCENTRATION NULLS (prereg §5.2). S2 is primary.
+==============================================================================
+        .. S2/P1/seed20260509: 2500/10000
+        .. S2/P1/seed20260509: 5000/10000
+        .. S2/P1/seed20260509: 7500/10000
+        .. S2/P1/seed20260509: 10000/10000
+   S2 P1 [primary seed=20260509]  E_obs=0.3666 | null E mean=0.2266 sd=0.0093 max=0.2635 | #>=obs=0 p=0.00010 z=+15.03
+        A_obs=0.5353 null A mean=0.3953 sd=0.0093 max=0.4322 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=-0.0077
+        .. S2/P1/seed20260519: 2500/10000
+        .. S2/P1/seed20260519: 5000/10000
+        .. S2/P1/seed20260519: 7500/10000
+        .. S2/P1/seed20260519: 10000/10000
+   S2 P1 [replication seed=20260519]  E_obs=0.3666 | null E mean=0.2266 sd=0.0093 max=0.2655 | #>=obs=0 p=0.00010 z=+15.03
+        A_obs=0.5353 null A mean=0.3953 sd=0.0093 max=0.4342 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=-0.0076
+        .. S2/P2/seed20260509: 2500/10000
+        .. S2/P2/seed20260509: 5000/10000
+        .. S2/P2/seed20260509: 7500/10000
+        .. S2/P2/seed20260509: 10000/10000
+   S2 P2 [primary seed=20260509]  E_obs=0.3677 | null E mean=0.2264 sd=0.0092 max=0.2653 | #>=obs=0 p=0.00010 z=+15.38
+        A_obs=0.5364 null A mean=0.3952 sd=0.0092 max=0.4340 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=-0.0079
+        .. S2/P2/seed20260519: 2500/10000
+        .. S2/P2/seed20260519: 5000/10000
+        .. S2/P2/seed20260519: 7500/10000
+        .. S2/P2/seed20260519: 10000/10000
+   S2 P2 [replication seed=20260519]  E_obs=0.3677 | null E mean=0.2264 sd=0.0092 max=0.2662 | #>=obs=0 p=0.00010 z=+15.33
+        A_obs=0.5364 null A mean=0.3952 sd=0.0092 max=0.4350 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=-0.0077
+        .. S1/P1/seed20260509: 2500/10000
+        .. S1/P1/seed20260509: 5000/10000
+        .. S1/P1/seed20260509: 7500/10000
+        .. S1/P1/seed20260509: 10000/10000
+   S1 P1 [primary seed=20260509]  E_obs=0.3666 | null E mean=0.2298 sd=0.0021 max=0.2387 | #>=obs=0 p=0.00010 z=+63.86
+        A_obs=0.5353 null A mean=0.3985 sd=0.0021 max=0.4074 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=-0.0044
+        .. S1/P1/seed20260519: 2500/10000
+        .. S1/P1/seed20260519: 5000/10000
+        .. S1/P1/seed20260519: 7500/10000
+        .. S1/P1/seed20260519: 10000/10000
+   S1 P1 [replication seed=20260519]  E_obs=0.3666 | null E mean=0.2298 sd=0.0021 max=0.2385 | #>=obs=0 p=0.00010 z=+65.81
+        A_obs=0.5353 null A mean=0.3985 sd=0.0021 max=0.4072 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=-0.0044
+        .. S1/P2/seed20260509: 2500/10000
+        .. S1/P2/seed20260509: 5000/10000
+        .. S1/P2/seed20260509: 7500/10000
+        .. S1/P2/seed20260509: 10000/10000
+   S1 P2 [primary seed=20260509]  E_obs=0.3677 | null E mean=0.2300 sd=0.0022 max=0.2386 | #>=obs=0 p=0.00010 z=+62.25
+        A_obs=0.5364 null A mean=0.3988 sd=0.0022 max=0.4074 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=-0.0045
+        .. S1/P2/seed20260519: 2500/10000
+        .. S1/P2/seed20260519: 5000/10000
+        .. S1/P2/seed20260519: 7500/10000
+        .. S1/P2/seed20260519: 10000/10000
+   S1 P2 [replication seed=20260519]  E_obs=0.3677 | null E mean=0.2300 sd=0.0022 max=0.2385 | #>=obs=0 p=0.00010 z=+62.38
+        A_obs=0.5364 null A mean=0.3987 sd=0.0022 max=0.4072 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=-0.0046
+        .. S5/P1/seed20260509: 2500/10000
+        .. S5/P1/seed20260509: 5000/10000
+        .. S5/P1/seed20260509: 7500/10000
+        .. S5/P1/seed20260509: 10000/10000
+   S5 P1 [primary seed=20260509]  E_obs=0.3666 | null E mean=0.2604 sd=0.0029 max=0.2712 | #>=obs=0 p=0.00010 z=+36.16
+        A_obs=0.5353 null A mean=0.4292 sd=0.0029 max=0.4399 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=0.0222
+        .. S5/P1/seed20260519: 2500/10000
+        .. S5/P1/seed20260519: 5000/10000
+        .. S5/P1/seed20260519: 7500/10000
+        .. S5/P1/seed20260519: 10000/10000
+   S5 P1 [replication seed=20260519]  E_obs=0.3666 | null E mean=0.2605 sd=0.0030 max=0.2715 | #>=obs=0 p=0.00010 z=+35.92
+        A_obs=0.5353 null A mean=0.4292 sd=0.0030 max=0.4402 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=0.0222
+        .. S5/P2/seed20260509: 2500/10000
+        .. S5/P2/seed20260509: 5000/10000
+        .. S5/P2/seed20260509: 7500/10000
+        .. S5/P2/seed20260509: 10000/10000
+   S5 P2 [primary seed=20260509]  E_obs=0.3677 | null E mean=0.2688 sd=0.0030 max=0.2788 | #>=obs=0 p=0.00010 z=+33.43
+        A_obs=0.5364 null A mean=0.4375 sd=0.0030 max=0.4476 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=0.0213
+        .. S5/P2/seed20260519: 2500/10000
+        .. S5/P2/seed20260519: 5000/10000
+        .. S5/P2/seed20260519: 7500/10000
+        .. S5/P2/seed20260519: 10000/10000
+   S5 P2 [replication seed=20260519]  E_obs=0.3677 | null E mean=0.2687 sd=0.0030 max=0.2809 | #>=obs=0 p=0.00010 z=+33.18
+        A_obs=0.5364 null A mean=0.4375 sd=0.0030 max=0.4497 p_A=0.00010 | floor dev max=0.00e+00 in-band=100.0% | redraws=0 | mean ARI vs observed=0.0213
+
+   N-A — exact within-size-class permutation (prereg §5.4). LOW POWER, NON-GATING.
+      measured freedom: 370/397 types movable (0.932) carrying 1538/6236 verses (0.247) — declared in prereg §5.4 before locking
+        .. NA/P1/seed20260509: 2500/10000
+        .. NA/P1/seed20260509: 5000/10000
+        .. NA/P1/seed20260509: 7500/10000
+        .. NA/P1/seed20260509: 10000/10000
+      NA P1 [primary] E_obs=0.3666 null E mean=0.2896 sd=0.0056 max=0.3084 #>=obs=0 p=0.00010 z=+13.74 | floor dev max=0.00e+00 | mean ARI=0.0695
+        .. NA/P1/seed20260519: 2500/10000
+        .. NA/P1/seed20260519: 5000/10000
+        .. NA/P1/seed20260519: 7500/10000
+        .. NA/P1/seed20260519: 10000/10000
+      NA P1 [replication] E_obs=0.3666 null E mean=0.2896 sd=0.0057 max=0.3092 #>=obs=0 p=0.00010 z=+13.62 | floor dev max=0.00e+00 | mean ARI=0.0697
+        .. NA/P2/seed20260509: 2500/10000
+        .. NA/P2/seed20260509: 5000/10000
+        .. NA/P2/seed20260509: 7500/10000
+        .. NA/P2/seed20260509: 10000/10000
+      NA P2 [primary] E_obs=0.3677 null E mean=0.2896 sd=0.0056 max=0.3084 #>=obs=0 p=0.00010 z=+13.92 | floor dev max=0.00e+00 | mean ARI=0.0692
+        .. NA/P2/seed20260519: 2500/10000
+        .. NA/P2/seed20260519: 5000/10000
+        .. NA/P2/seed20260519: 7500/10000
+        .. NA/P2/seed20260519: 10000/10000
+      NA P2 [replication] E_obs=0.3677 null E mean=0.2896 sd=0.0057 max=0.3092 #>=obs=0 p=0.00010 z=+13.81 | floor dev max=0.00e+00 | mean ARI=0.0694
+
+   N-STEM — the lexical-repetition control (prereg §5.5). NON-GATING.
+      P1: on the 3453 adjacent pairs that DIFFER under the truncation-only tuple P3 —
+          observed merge rate 0.1836 | null mean 0.0672 sd 0.0160 max 0.1355 | #>=obs=0 p=0.00010
+      P2: on the 3453 adjacent pairs that DIFFER under the truncation-only tuple P3 —
+          observed merge rate 0.1856 | null mean 0.0670 sd 0.0158 max 0.1352 | #>=obs=0 p=0.00010
+
+   --------------------------------------------------------------------------
+   GATES (prereg §6), printed before the verdict:
+      G1 exactness  : PASS  — every draw's chance floor deviates from the observed by exactly 0.00e+00; max redraw rate 0.00000; p(E) == p(A) in every arm: True
+      G2 teeth      : PASS  — rho on the known-defective N1-a = +0.6805
+      G3 non-degen  : PASS  — max mean ARI vs the real partition = +0.0697 (< 0.1); min sd(A_null) = 0.00208 (> 0.001)
+      G4 in-band    : PASS  — share of exact-null draws whose floor is within ±2% of the observed = 100.0% (N1-a: 6.40%, N1-b: 4.07%)
+      corr(A_null, floor_null) for the exact nulls: UNDEFINED — the chance floor has exactly zero variance across draws.
+      Every exact-null draw carries the identical block-size multiset, hence the identical K, K_eff, maximum class size and Simpson index.
+
+==============================================================================
+RESULT 4 — CONTROLS RETAINED FROM THE PARENT (prereg §10)
+==============================================================================
+
+   --- rime R2: D3, the within-corpus pseudo-fāṣila re-cut (no baseline text)
+      P1 [primary] Δ_obs=+0.1869 | re-cut mean=+0.0284 sd=0.0022 max=+0.0354 | #>=obs=0 p=0.00050 z=+70.7 | boundary coincidence=0.1284
+      P1 [replication] Δ_obs=+0.1869 | re-cut mean=+0.0284 sd=0.0023 max=+0.0356 | #>=obs=0 p=0.00050 z=+70.1 | boundary coincidence=0.1287
+      P2 [primary] Δ_obs=+0.1880 | re-cut mean=+0.0297 sd=0.0023 max=+0.0379 | #>=obs=0 p=0.00050 z=+69.1 | boundary coincidence=0.1284
+      P2 [replication] Δ_obs=+0.1880 | re-cut mean=+0.0298 sd=0.0023 max=+0.0374 | #>=obs=0 p=0.00050 z=+69.5 | boundary coincidence=0.1287
+   --- rime R2: POSITIVE CONTROL, pre-Islamic poetry
+      Imru' al-Qays      n=  78 readable=0.949 | READABLE (n= 71): A(C)=0.4507 A(P1)=0.4930 Δ=+0.0423
+      Zuhayr             n=  62 readable=1.000 | READABLE (n= 61): A(C)=0.5082 A(P1)=0.5082 Δ=+0.0000
+      'Amr b. Kulthum    n= 103 readable=1.000 | READABLE (n=102): A(C)=0.9804 A(P1)=1.0000 Δ=+0.0196
+      POOLED readable (n=234): A(C)=0.6966 A(P1)=0.7179 Δ=+0.0214   [Qurʾān: A(C)=0.3484 Δ=+0.1869]
+      D4a — poetry out-rhymes the Qurʾān at citation form: True
+      D4b P1: Δ_Qurʾān − Δ_poetry = +0.1655  p=0.00010 (rep 0.00010)
+      D4b P2: Δ_Qurʾān − Δ_poetry = +0.1666  p=0.00010 (rep 0.00010)
+
+   --- rime R1: D3, the within-corpus pseudo-fāṣila re-cut (no baseline text)
+      P1 [primary] Δ_obs=+0.0657 | re-cut mean=+0.0161 sd=0.0024 max=+0.0230 | #>=obs=0 p=0.00050 z=+21.0 | boundary coincidence=0.1284
+      P1 [replication] Δ_obs=+0.0657 | re-cut mean=+0.0161 sd=0.0024 max=+0.0240 | #>=obs=0 p=0.00050 z=+20.9 | boundary coincidence=0.1287
+      P2 [primary] Δ_obs=+0.0668 | re-cut mean=+0.0175 sd=0.0024 max=+0.0243 | #>=obs=0 p=0.00050 z=+20.5 | boundary coincidence=0.1284
+      P2 [replication] Δ_obs=+0.0668 | re-cut mean=+0.0174 sd=0.0024 max=+0.0248 | #>=obs=0 p=0.00050 z=+20.5 | boundary coincidence=0.1287
+   --- rime R1: POSITIVE CONTROL, pre-Islamic poetry
+      Imru' al-Qays      n=  78 readable=0.949 | READABLE (n= 71): A(C)=0.4507 A(P1)=0.4930 Δ=+0.0423
+      Zuhayr             n=  62 readable=1.000 | READABLE (n= 61): A(C)=0.5082 A(P1)=0.5082 Δ=+0.0000
+      'Amr b. Kulthum    n= 103 readable=1.000 | READABLE (n=102): A(C)=0.9804 A(P1)=1.0000 Δ=+0.0196
+      POOLED readable (n=234): A(C)=0.6966 A(P1)=0.7179 Δ=+0.0214   [Qurʾān: A(C)=0.4696 Δ=+0.0657]
+      D4a — poetry out-rhymes the Qurʾān at citation form: True
+      D4b P1: Δ_Qurʾān − Δ_poetry = +0.0443  p=0.02570 (rep 0.02380)
+      D4b P2: Δ_Qurʾān − Δ_poetry = +0.0454  p=0.02330 (rep 0.02160)
+
+   --- NEGATIVE CONTROL: prose. THE DELTA IS NOT COMPUTABLE (prereg §10).
+      al-Bukhari   arabic=  2056880 harakat=     0 ratio=0.00000  -> the citation form is NOT RECOVERABLE; Δ is NOT COMPUTABLE for this text
+      al-Jahiz     arabic=  1422374 harakat=     0 ratio=0.00000  -> the citation form is NOT RECOVERABLE; Δ is NOT COMPUTABLE for this text
+      LEVEL comparison only, on the H-NEW-2240 skeleton instrument, length-matched:
+         Qurʾān A(skeleton) = 0.5521
+         al-Bukhari   mean=0.0849 max=0.0944 over 200 matched cuts | Qurʾān percentile 1.000
+         al-Jahiz     mean=0.0754 max=0.0869 over 200 matched cuts | Qurʾān percentile 1.000
+         poetry A(skeleton) = 0.8917
+      This is a LEVEL statement about rhyme density and is NOT a control on the delta.
+
+==============================================================================
+RESULT 5 — PER-SURAH (rime R2, tuple P1). Descriptive.
+==============================================================================
+   Δ<0: 0   Δ=0: 20   Δ>0: 94   mean Δ = +0.2147
+      Q 65 At-Talaq           n=  12 A(C)=0.000 A(P1)=1.000 Δ=+1.000 K 9->1
+      Q108 Al-Kawthar         n=   3 A(C)=0.000 A(P1)=1.000 Δ=+1.000 K 3->1
+      Q112 Al-Ikhlas          n=   4 A(C)=0.000 A(P1)=1.000 Δ=+1.000 K 3->1
+      Q 18 Al-Kahf            n= 110 A(C)=0.110 A(P1)=1.000 Δ=+0.890 K 53->1
+      Q 48 Al-Fath            n=  29 A(C)=0.179 A(P1)=1.000 Δ=+0.821 K 9->1
+      Q 33 Al-Ahzab           n=  73 A(C)=0.167 A(P1)=0.972 Δ=+0.806 K 17->2
+      Q105 Al-Fil             n=   5 A(C)=0.000 A(P1)=0.750 Δ=+0.750 K 4->2
+      Q  4 An-Nisa            n= 176 A(C)=0.194 A(P1)=0.943 Δ=+0.749 K 28->5
+
+==============================================================================
+VERDICT — logic diffed against prereg §8, printed before declaration.
+==============================================================================
+   prereg §8 grid, verbatim:
+     Gate A/B or any of G1-G3 fails            -> INSTRUMENT BROKEN / NULL DEFECTIVE
+     D1 reverses                               -> REVERSED
+     D4a reverses                              -> CONTROL FAILED
+     ANY of registered tests 1-6 fails at alpha-> NULL (arithmetic); leads the write-up
+     tests 1-6 pass AND D3 passes both tuples  -> PASS
+     tests 1-6 pass but D3 fails               -> PARTIAL
+   tests 1-6 = D2 under {S2, S1, S5} x {P1, P2}, rime R2, on E = A - sum(p_i^2).
+   tests 7-10 (N-A, N-STEM), the R1 arms, P3, prose and the per-surah table gate nothing.
+   Bonferroni k = 18 -> alpha = 0.00277778
+
+   D1  Δ>0 under P1 and P2 (R2)  : True  (Δ_P1=+0.1869, Δ_P2=+0.1880)
+   D4a poetry A(C) > Qurʾān A(C) : True  (0.6966 vs 0.3484)
+   D2  S2_P1  E > exact null   : True   p=0.00010  (replication p=0.00010)
+   D2  S2_P2  E > exact null   : True   p=0.00010  (replication p=0.00010)
+   D2  S1_P1  E > exact null   : True   p=0.00010  (replication p=0.00010)
+   D2  S1_P2  E > exact null   : True   p=0.00010  (replication p=0.00010)
+   D2  S5_P1  E > exact null   : True   p=0.00010  (replication p=0.00010)
+   D2  S5_P2  E > exact null   : True   p=0.00010  (replication p=0.00010)
+   D2ᴀ NA_P1 (non-gating)       : True   p=0.00010
+   D2ᴀ NA_P2 (non-gating)       : True   p=0.00010
+   D2ˢ STEM_P1 (non-gating)     : True   p=0.00010
+   D2ˢ STEM_P2 (non-gating)     : True   p=0.00010
+   D3  re-cut R2 P1             : True   p=0.00050
+   D3  re-cut R2 P2             : True   p=0.00050
+   D4b poetry R2_P1              : True   p=0.00010
+   D4b poetry R2_P2              : True   p=0.00010
+   D4b poetry R1_P1              : False   p=0.02570
+   D4b poetry R1_P2              : False   p=0.02330
+
+   VERDICT: PASS
