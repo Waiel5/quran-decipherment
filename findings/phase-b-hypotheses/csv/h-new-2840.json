@@ -8,7 +8,9 @@
   "runs": {
     "registered": "findings/phase-b-hypotheses/runs/h-new-2840/20260807T101255Z",
     "posthoc": "findings/phase-b-hypotheses/runs/h-new-2840-posthoc/20260807T103932Z",
-    "posthoc_genre": "findings/phase-b-hypotheses/runs/h-new-2840-posthoc-genre/20260807T104225Z"
+    "posthoc_genre": "findings/phase-b-hypotheses/runs/h-new-2840-posthoc-genre/20260807T104225Z",
+    "posthoc_contiguity": "findings/phase-b-hypotheses/runs/h-new-2840-posthoc-contiguity/20260807T105754Z",
+    "posthoc_contiguity_aborted_retained": "findings/phase-b-hypotheses/runs/h-new-2840-posthoc-contiguity/20260807T105627Z"
   },
   "seeds": {
     "primary": 20260509,
@@ -1593,9 +1595,462 @@
     }
   },
   "notes": [
+    "CONTIGUITY: d-bar over the 283 pairs at mushaf gap >= 10 sits at the 5.25th percentile against 5.07 unrestricted -- the whole-set clustering is NOT adjacency.",
+    "CONTIGUITY: the hawamim are at the 47.71st percentile of all 109 consecutive six-blocks; matched on size and period they reach p = 1e-4, but hawamim-7 (adding Q42) falls to p = 0.199.",
+    "CONTIGUITY: Delta halves at gap >= 2 and reverses sign at gap >= 10, where only ALM contributes a within-class pair.",
     "The N_PERIOD matched null overlaps the observed 29 by 16.32 members on average (56.3%); every matched NULL here is weak evidence of absence.",
     "FAM_c_registered is size-confounded (rho=+0.838 with run mean log word count) and is superseded by size_conditional_adjacency_p_posthoc.",
     "The hawamim are the contiguous mushaf run 40-46; 47.5-52.0% of matched baseline partitions reach the Quran's own value at the same slots.",
     "Not an independent confirmation of Pillar 1 under any label: same 29 surahs, same corpus."
-  ]
+  ],
+  "contiguity_posthoc": {
+    "status": "POST-HOC — specified after the registered run was read; no verdict",
+    "runs_decomposition_of_the_29": {
+      "n_runs": 10,
+      "n_surahs_in_a_run_ge_2": 24,
+      "within_run_pairs": 59,
+      "between_run_pairs": 347,
+      "mean_within_run_d": 0.9132054915254236,
+      "mean_between_run_d": 0.9431671585014408,
+      "runs": [
+        {
+          "length": 2,
+          "surahs": [
+            2,
+            3
+          ]
+        },
+        {
+          "length": 1,
+          "surahs": [
+            7
+          ]
+        },
+        {
+          "length": 6,
+          "surahs": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "length": 2,
+          "surahs": [
+            19,
+            20
+          ]
+        },
+        {
+          "length": 7,
+          "surahs": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        },
+        {
+          "length": 1,
+          "surahs": [
+            36
+          ]
+        },
+        {
+          "length": 1,
+          "surahs": [
+            38
+          ]
+        },
+        {
+          "length": 7,
+          "surahs": [
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46
+          ]
+        },
+        {
+          "length": 1,
+          "surahs": [
+            50
+          ]
+        },
+        {
+          "length": 1,
+          "surahs": [
+            68
+          ]
+        }
+      ]
+    },
+    "dbar_gap_restricted": {
+      "K1": {
+        "n_pairs": 406,
+        "observed": 0.9388131231527095,
+        "null_mean": 0.9579346434209359,
+        "z": -1.6681213676759488,
+        "p_lower": 0.050794920507949204,
+        "pct_le": 5.07
+      },
+      "K2": {
+        "n_pairs": 387,
+        "observed": 0.9414148139534884,
+        "null_mean": 0.9592854839771441,
+        "z": -1.54069292770121,
+        "p_lower": 0.06379362063793621,
+        "pct_le": 6.37
+      },
+      "K5": {
+        "n_pairs": 343,
+        "observed": 0.9444666326530612,
+        "null_mean": 0.9625640773320537,
+        "z": -1.4902609699484126,
+        "p_lower": 0.07119288071192881,
+        "pct_le": 7.11
+      },
+      "K10": {
+        "n_pairs": 283,
+        "observed": 0.9472496042402827,
+        "null_mean": 0.9684838156380412,
+        "z": -1.639936694547143,
+        "p_lower": 0.052594740525947405,
+        "pct_le": 5.25
+      }
+    },
+    "delta_gap_restricted_P1": {
+      "K1": {
+        "n_pairs": 406,
+        "n_within": 41,
+        "W": 0.9084466097560975,
+        "B": 0.9422241561643837,
+        "delta": -0.03377754640828623,
+        "p_lower_F1": 0.03469653034696531,
+        "classes_still_contributing": [
+          "ALM",
+          "ALR",
+          "HM",
+          "TSM"
+        ]
+      },
+      "K2": {
+        "n_pairs": 387,
+        "n_within": 30,
+        "W": 0.9247827666666668,
+        "B": 0.9428124649859944,
+        "delta": -0.018029698319327547,
+        "p_lower_F1": 0.16328367163283672,
+        "classes_still_contributing": [
+          "ALM",
+          "ALR",
+          "HM",
+          "TSM"
+        ]
+      },
+      "K5": {
+        "n_pairs": 343,
+        "n_within": 12,
+        "W": 0.92451675,
+        "B": 0.9451898912386706,
+        "delta": -0.02067314123867059,
+        "p_lower_F1": 0.1434856514348565,
+        "classes_still_contributing": [
+          "ALM",
+          "ALR",
+          "HM"
+        ]
+      },
+      "K10": {
+        "n_pairs": 283,
+        "n_within": 8,
+        "W": 0.96984925,
+        "B": 0.9465921600000001,
+        "delta": 0.02325708999999987,
+        "p_lower_F1": 0.8753124687531247,
+        "classes_still_contributing": [
+          "ALM"
+        ]
+      }
+    },
+    "exact_enumeration_all_consecutive_runs": {
+      "HM_6": {
+        "observed": 0.8570372666666667,
+        "n_runs": 109,
+        "pct": 47.706422018348626
+      },
+      "HAWAMIM_7": {
+        "observed": 0.8672422857142857,
+        "n_runs": 108,
+        "pct": 48.148148148148145
+      },
+      "ALR_5": {
+        "observed": 0.9551825,
+        "n_runs": 110,
+        "pct": 81.81818181818181
+      },
+      "TAWASIN_3": {
+        "observed": 0.9056673333333333,
+        "n_runs": 112,
+        "pct": 64.28571428571429
+      },
+      "TSM_2": {
+        "observed": 0.953709,
+        "n_runs": 113,
+        "pct": 78.76106194690266
+      },
+      "ALM_6": {
+        "observed": 0.9256812,
+        "n_runs": 109,
+        "pct": 66.05504587155963
+      },
+      "ALM_block_29_32": {
+        "observed": 0.9159156666666665,
+        "n_runs": 111,
+        "pct": 65.76576576576576
+      },
+      "ALM_block_2_3": {
+        "observed": 0.63093,
+        "n_runs": 113,
+        "pct": 27.43362831858407
+      },
+      "MUQ_29": {
+        "observed": 0.9388131231527095,
+        "n_runs": 86,
+        "pct": 53.48837209302326
+      }
+    },
+    "mc_consecutive_size_and_period_matched": {
+      "HM_6": {
+        "observed": 0.8570372666666667,
+        "null_mean": 0.89572711944,
+        "z": -1.7896054126302166,
+        "p_lower": 9.999000099990002e-05,
+        "pct_le": 0.0,
+        "n_qualifying": 18434
+      },
+      "HAWAMIM_7": {
+        "observed": 0.8672422857142857,
+        "null_mean": 0.8999556280142856,
+        "z": -1.2111046792014506,
+        "p_lower": 0.19868013198680132,
+        "pct_le": 19.86,
+        "n_qualifying": 18492
+      },
+      "ALR_5": {
+        "observed": 0.9551825,
+        "null_mean": 0.9414669709,
+        "z": 0.8292513117056446,
+        "p_lower": 0.8363163683631637,
+        "pct_le": 83.63,
+        "n_qualifying": 21829
+      },
+      "TAWASIN_3": {
+        "observed": 0.9056673333333333,
+        "null_mean": 0.9160397543000001,
+        "z": -0.24086429770019388,
+        "p_lower": 0.36536346365363465,
+        "pct_le": 36.53,
+        "n_qualifying": 39062
+      },
+      "TSM_2": {
+        "observed": 0.953709,
+        "null_mean": 0.9220744519,
+        "z": 0.48040000072758743,
+        "p_lower": 0.46385361463853614,
+        "pct_le": 46.38,
+        "n_qualifying": 38764
+      },
+      "ALM_6": {
+        "observed": 0.9256812,
+        "null_mean": 0.9787903819200001,
+        "z": -7.774966765148221,
+        "p_lower": 9.999000099990002e-05,
+        "pct_le": 0.0,
+        "n_qualifying": 18102
+      },
+      "ALM_block_29_32": {
+        "observed": 0.9159156666666665,
+        "null_mean": 0.9083828236666668,
+        "z": 0.3074907914994738,
+        "p_lower": 0.6642335766423357,
+        "pct_le": 66.42,
+        "n_qualifying": 21461
+      },
+      "ALM_block_2_3": {
+        "observed": 0.63093,
+        "null_mean": 0.7123090669242444,
+        "z": -1.0036633918797182,
+        "p_lower": 0.4982064017660044,
+        "pct_le": 49.81371602042224,
+        "n_qualifying": 7247
+      },
+      "MUQ_29": {
+        "observed": 0.9388131231527095,
+        "null_mean": 0.9448372068438424,
+        "z": -2.3537312493849365,
+        "p_lower": 9.999000099990002e-05,
+        "pct_le": 0.0,
+        "n_qualifying": 23167
+      }
+    },
+    "cross_block_pairs_only": {
+      "ALM_6": {
+        "surahs": [
+          2,
+          3,
+          29,
+          30,
+          31,
+          32
+        ],
+        "blocks": [
+          [
+            2,
+            3
+          ],
+          [
+            29,
+            30,
+            31,
+            32
+          ]
+        ],
+        "n_cross_pairs": 8,
+        "n_within_block_pairs": 7,
+        "mean_cross_block_d": 0.96984925,
+        "mean_within_block_d": 0.8752034285714286,
+        "observed": 0.96984925,
+        "null_mean": 1.05463909635,
+        "null_sd": 0.047858700581063375,
+        "q05": 0.9714661625,
+        "q50": 1.0561715,
+        "q95": 1.13057268125,
+        "z": -1.7716704657783697,
+        "ratio_obs_over_null_mean": 0.9196029744739701,
+        "n_draws": 10000,
+        "estimable": true,
+        "p_lower": 0.0461953804619538,
+        "pct_le": 4.61
+      },
+      "ALR_5": {
+        "surahs": [
+          10,
+          11,
+          12,
+          14,
+          15
+        ],
+        "blocks": [
+          [
+            10,
+            11,
+            12
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "n_cross_pairs": 6,
+        "n_within_block_pairs": 4,
+        "mean_cross_block_d": 0.9612925000000002,
+        "mean_within_block_d": 0.9460175,
+        "observed": 0.9612925000000002,
+        "null_mean": 0.9356124761333332,
+        "null_sd": 0.03979802211811025,
+        "q05": 0.8732863000000002,
+        "q50": 0.933789,
+        "q95": 1.0040179999999999,
+        "z": 0.6452587967928489,
+        "ratio_obs_over_null_mean": 1.0274472866937352,
+        "n_draws": 10000,
+        "estimable": true,
+        "p_lower": 0.7508249175082492,
+        "pct_le": 75.08
+      },
+      "HM_6": {
+        "surahs": [
+          40,
+          41,
+          43,
+          44,
+          45,
+          46
+        ],
+        "blocks": [
+          [
+            40,
+            41
+          ],
+          [
+            43,
+            44,
+            45,
+            46
+          ]
+        ],
+        "n_cross_pairs": 8,
+        "n_within_block_pairs": 7,
+        "mean_cross_block_d": 0.852046125,
+        "mean_within_block_d": 0.8627414285714285,
+        "observed": 0.852046125,
+        "null_mean": 0.9615810787875002,
+        "null_sd": 0.03687320365994588,
+        "q05": 0.90342513125,
+        "q50": 0.959988375,
+        "q95": 1.025170975,
+        "z": -2.9705841346919457,
+        "ratio_obs_over_null_mean": 0.8860886968308302,
+        "n_draws": 10000,
+        "estimable": true,
+        "p_lower": 0.00029997000299970003,
+        "pct_le": 0.02
+      },
+      "HAWAMIM_7": {
+        "note": "single contiguous run — no cross-block pair exists"
+      },
+      "TSM_2": {
+        "surahs": [
+          26,
+          28
+        ],
+        "blocks": [
+          [
+            26
+          ],
+          [
+            28
+          ]
+        ],
+        "n_cross_pairs": 1,
+        "n_within_block_pairs": 0,
+        "mean_cross_block_d": 0.953709,
+        "mean_within_block_d": null,
+        "observed": 0.953709,
+        "null_mean": 0.9071668950999999,
+        "null_sd": 0.08271997482230369,
+        "q05": 0.753783,
+        "q50": 0.913437,
+        "q95": 1.028942,
+        "z": 0.5626465070858678,
+        "ratio_obs_over_null_mean": 1.051304897865425,
+        "n_draws": 10000,
+        "estimable": true,
+        "p_lower": 0.622937706229377,
+        "pct_le": 62.29
+      }
+    },
+    "note": "Exact-enumeration reference sets after size AND period matching are 5-6 runs for the six- and seven-member classes and are NOT a reference distribution; the Monte-Carlo arm (18k-39k qualifying blocks) is the one used in the finding."
+  },
+  "verdict_registered_note": "The two opening sections of the finding are post-hoc and carry no verdict; the registered verdict is unchanged."
 }

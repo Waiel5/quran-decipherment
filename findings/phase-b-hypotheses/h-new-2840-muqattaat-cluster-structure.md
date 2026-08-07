@@ -10,6 +10,7 @@ prereg_sha256: 321f7fe90f9f4f956b4ab91cf0e39179553175b895068ad69ac6d3e9c1e11c2a
 run: findings/phase-b-hypotheses/runs/h-new-2840/20260807T101255Z/
 run_posthoc: findings/phase-b-hypotheses/runs/h-new-2840-posthoc/20260807T103932Z/
 run_posthoc_genre: findings/phase-b-hypotheses/runs/h-new-2840-posthoc-genre/20260807T104225Z/
+run_posthoc_contiguity: findings/phase-b-hypotheses/runs/h-new-2840-posthoc-contiguity/20260807T105754Z/
 rule_applied: findings/UNIT-DRIFT-DEFECT.md §3 Screen B (grouping form), §5, §6.1, §7
 method_parent: [H-NEW-2820, H-NEW-2830, H-NEW-2760, H-NEW-2720, H-NEW-2680]
 seeds: 20260509 primary / 20260519 replication
@@ -35,14 +36,24 @@ status: >-
   al-Jāḥiẓ reproduces their tightness at the median, with 47.5–52.0 % of arbitrary offsets at
   or below the Qurʾān's own value. The non-contiguous 29-set is NOT reproduced that way
   (6.5–8.0 %). Within one instrument and the same 200 offsets, that difference is contiguity.
+  THE CONTIGUITY CONTROL, run after the registered arms and reported first: the whole-set
+  result is NOT adjacency — restricting d̄ to the 283 pairs at mushaf gap ≥ 10 leaves it at
+  the 5.25th percentile against 5.07 unrestricted, unchanged. But Δ loses half its size at
+  gap ≥ 2 and REVERSES sign at gap ≥ 10, and the ḥawāmīm sit at the 47.71st percentile of
+  all 109 consecutive six-blocks in the corpus. Matched on size and period they beat
+  consecutive blocks at p = 1 × 10⁻⁴ — but adding Q 42 destroys that (p = 0.199), and
+  matched partitions of two baselines reproduce them half the time.
 verdict: >-
-  The set clusters; its internal organisation is not the letters. Three of the four
-  multi-member classes do nothing (ALR is 79th-percentile DISPERSED, ṬSM 62nd, ṭawāsīn 36th),
-  ALM moves from a published 43.15th percentile to 2.81 without clearing the bar, and the
-  ḥawāmīm's strength is at the strength of "six consecutive chunks of one continuous book".
-  H-NEW-600's DOUBLE NULL does not survive as stated — ALM's null was size-blind and reverses
-  toward cohesion, ALR's is confirmed and hardens in the opposite direction — and its two
-  four-month-old queued follow-ups both return NULL under matching.
+  The set clusters, the clustering is not adjacency, and its internal organisation is not
+  the letters. Three of the four multi-member classes do nothing (ALR is 79th-percentile
+  DISPERSED, ṬSM 62nd, ṭawāsīn 36th), and al-Biqāʿī's Q 29–32 "tight Meccan block" is
+  adjacency alone (66th percentile of matched consecutive blocks). The ḥawāmīm clear α_bon
+  and then lose the genre control; ALM never clears α_bon and survives every control put to
+  it, including the removal of its own adjacency (cross-region pairs at p = 0.046). Neither
+  is established; ALM is the one worth a purpose-built test. H-NEW-600's DOUBLE NULL does
+  not survive as stated — ALM's null was size-blind and reverses toward cohesion, ALR's is
+  confirmed and hardens in the opposite direction — and its two four-month-old queued
+  follow-ups both return NULL under matching.
 ---
 
 # H-NEW-2840 — What the muqaṭṭaʿāt cluster is
@@ -71,6 +82,158 @@ corrected bar. The two that matter most fail in ways that are informative rather
 and one arm passes and then loses most of its meaning to a control the pre-registration did
 not register and this finding ran anyway.** The descriptive map — which was committed to
 unconditionally in pre-reg §7 — is below in full, and it is the deliverable.
+
+**Two unnumbered sections come first, before the reproduction, because they decide how
+everything after them should be read.** Neither was pre-registered in the form given here;
+both were specified after the registered run had been executed and read, and both live in a
+separate run directory and carry no verdict. **They are placed first because they are the
+controls that matter, not because they have the standing of registered arms.**
+
+---
+
+## THE CONTIGUITY CONTROL — reported first
+
+**The ḥawāmīm are Q 40, 41, 42, 43, 44, 45, 46 — seven consecutive surahs.** Adjacent
+chapters of any book resemble each other, and textual contiguity masquerading as structure is
+this project's most expensive recurring error: H-NEW-2730 moved this corpus's metricality
+**99.4 %** of the way to ḥadīth's value by re-cutting its *own* verses, using no baseline text
+at all. So the question is not whether the ḥawāmīm are tightly related. It is whether they are
+more tightly related than **any** seven consecutive surahs would be.
+
+### A. The 29 are ten contiguous blocks, and that is a fact about the set worth stating
+
+| run length | surahs |
+|--:|:--|
+| 2 | 2, 3 |
+| 1 | 7 |
+| **6** | **10, 11, 12, 13, 14, 15** |
+| 2 | 19, 20 |
+| **7** | **26, 27, 28, 29, 30, 31, 32** |
+| 1 | 36 |
+| 1 | 38 |
+| **7** | **40, 41, 42, 43, 44, 45, 46** |
+| 1 | 50 |
+| 1 | 68 |
+
+**Ten maximal runs; 24 of the 29 sit in a run of length ≥ 2.** But only **59 of the 406
+pairs** are within-run, so 85 % of the whole-set statistic never sees an adjacent pair at all.
+Within-run mean distance is **0.91321**, between-run **0.94317** — adjacency is real and worth
+0.03.
+
+### B. Remove every adjacent pair and the whole-set clustering does not move
+
+`d̄` restricted to pairs at mushaf gap ≥ K, with the identical restriction applied to every
+draw of the size × period-matched null. **At K = 10 no letter class contributes a within-class
+pair except ALM.**
+
+| restriction | pairs | observed | null mean | z | **p** | percentile |
+|:--|--:|--:|--:|--:|--:|--:|
+| none (K = 1) | 406 | 0.93881 | 0.95793 | −1.67 | 0.05079 | **5.07** |
+| gap ≥ 2 | 387 | 0.94141 | 0.95929 | −1.54 | 0.06379 | 6.37 |
+| gap ≥ 5 | 343 | 0.94447 | 0.96256 | −1.49 | 0.07119 | 7.11 |
+| **gap ≥ 10** | **283** | **0.94725** | **0.96848** | **−1.64** | **0.05259** | **5.25** |
+
+**The muqaṭṭaʿāt-29 result is not contiguity.** Deleting every pair within ten mushaf
+positions of each other leaves the effect at 5.25 against 5.07 — unchanged. **The 0.45/5.48
+percentile is carried by the 283 pairs that are nowhere near each other**, not by the
+consecutive blocks. That is the answer to "decompose the 29 into contiguous and
+non-contiguous components", and it is the strongest single defence the finding has.
+
+### C. Against arbitrary consecutive blocks the ḥawāmīm are exactly median — until you match size and period
+
+**C1, exact enumeration.** Every contiguous run of length *n* in the mushaf — all 114 − n + 1
+of them, no sampling, so the rank is exact.
+
+| set | `d̄` | percentile among **all** consecutive runs of the same length |
+|:--|--:|--:|
+| **ḤM-6** | 0.85704 | **47.71** (of 109) |
+| **ḥawāmīm-7** | 0.86724 | **48.15** (of 108) |
+| **muqaṭṭaʿāt-29** | 0.93881 | **53.49** (of 86) |
+| ṭawāsīn-3 | 0.90567 | 64.29 (of 112) |
+| ALR-5 | 0.95518 | 81.82 (of 110) |
+
+**Taken raw, the ḥawāmīm are at the median of all consecutive seven-blocks in the corpus.**
+That comparison is size-confounded in the same direction as the registered `FAM-c` (§7.2), so
+it is not the answer — but it is the number a reader deserves before the matched one, and it
+means the ḥawāmīm are *not* remarkable simply as a consecutive run.
+
+**C2, consecutive blocks matched on mean log word count AND on number of Medinan surahs
+exactly.** ~18,000–39,000 qualifying blocks per set.
+
+| set | observed | matched-consecutive null | z | **p** | percentile |
+|:--|--:|--:|--:|--:|--:|
+| **ALM-6** | 0.92568 | 0.97879 | **−7.77** | **0.00010** | **0.00** |
+| **ḤM-6** | 0.85704 | 0.89573 | −1.79 | **0.00010** | **0.00** |
+| **muqaṭṭaʿāt-29** | 0.93881 | 0.94484 | −2.35 | **0.00010** | **0.00** |
+| **ḥawāmīm-7** | 0.86724 | 0.89996 | −1.21 | **0.19868** | 19.86 |
+| ṭawāsīn-3 | 0.90567 | 0.91604 | −0.24 | 0.36536 | 36.53 |
+| ṬSM-2 | 0.95371 | 0.92207 | +0.48 | 0.46385 | 46.38 |
+| ALR-5 | 0.95518 | 0.94147 | +0.83 | 0.83632 | 83.63 |
+| **Q 29–32** (al-Biqāʿī's "tight Meccan block") | 0.91592 | 0.90838 | +0.31 | 0.66423 | 66.42 |
+
+**ḤM-6 is tighter than same-size, same-period consecutive blocks at p = 1 × 10⁻⁴, and so is
+the whole 29-set.** Within this corpus, contiguity does not explain either. **But adding
+Q 42 destroys it — ḥawāmīm-7 lands at p = 0.199** — so the classical seven-block is not what
+survives; the six surahs sharing the bare حم string are.
+
+### D. Where the class-level effect actually lives, and it is not the letters
+
+Δ (within-class minus between-class) under the same gap restrictions:
+
+| restriction | within-class pairs | Δ | p | classes still contributing |
+|:--|--:|--:|--:|:--|
+| none | 41 | −0.03378 | 0.03470 | ALM, ALR, ḤM, ṬSM |
+| gap ≥ 2 | 30 | −0.01803 | 0.16328 | ALM, ALR, ḤM, ṬSM |
+| gap ≥ 5 | 12 | −0.02067 | 0.14349 | ALM, ALR, ḤM |
+| **gap ≥ 10** | **8** | **+0.02326** | **0.87531** | **ALM only** |
+
+**Δ loses half its size the moment adjacent pairs are removed, and reverses sign once only
+ALM's cross-region pairs remain.** Read with §3.1 — where dropping the ḥawāmīm took Δ's p from
+0.033 to 0.156 — the conclusion is the same from two directions: **"the opening string predicts
+content position" is carried by adjacency plus one block, and it does not survive either.**
+
+### E. The isolated singletons
+
+Contiguity cannot apply to Ṣ (Q 38), Q (Q 50) or N (Q 68) — each is a mushaf isolate with no
+muqaṭṭaʿāt neighbour. Their matched centralities are **94.71**, **57.26** and **71.17**: one
+OUTSIDE and two INTERMEDIATE, none INSIDE (§6). **The surahs to which contiguity could
+contribute nothing are the ones sitting furthest out.** That is consistent with adjacency
+being a real part of what the whole-set statistic sees, and it is descriptive only.
+
+---
+
+## ALM — the decisive non-contiguous test
+
+ALM is the arm that adjacency cannot explain: **{Q 2, 3} and {Q 29, 30, 31, 32}, two blocks
+twenty-six surahs apart.** If ALM coheres while scattered, that survives contiguity outright.
+
+**Strip ALM's own internal adjacency and score only its 8 cross-region pairs**, against a null
+that draws a size × period-matched substitute for every member, so the two-block structure is
+held fixed by construction:
+
+| class | blocks | within-block `d̄` | **cross-block `d̄`** | matched null | z | **p** | pct |
+|:--|:--|--:|--:|--:|--:|--:|--:|
+| **ALM-6** | {2,3} · {29–32} | 0.87520 | **0.96985** | 1.05464 | −1.77 | **0.04620** | **4.61** |
+| ḤM-6 | {40,41} · {43–46} | 0.86274 | 0.85205 | 0.96158 | −2.97 | **0.00030** | 0.02 |
+| ALR-5 | {10,11,12} · {14,15} | 0.94602 | 0.96129 | 0.93561 | +0.65 | 0.75082 | 75.08 |
+| ṬSM-2 | {26} · {28} | — | 0.95371 | 0.90717 | +0.56 | 0.62294 | 62.29 |
+
+**ALM's cross-region pairs are closer than size-and-period-matched substitutes at p = 0.046 —
+direction intact, adjacency removed, and still short of α_bon = 0.00417.** ALM also has the
+best genre margin of any class (§7.3b: only **10.5 % / 13.0 %** of arbitrary baseline offsets
+reach its value, against 47.5–52.0 % for the ḥawāmīm) and beats matched consecutive blocks at
+z = −7.77.
+
+**So the honest ranking is the reverse of the registered one.** The ḥawāmīm clear α_bon and
+then lose the genre control; **ALM never clears α_bon and survives every control put to it** —
+adjacency removal, size × period matching, matched consecutive blocks, and both baselines.
+**Neither is established. ALM is the one worth testing next, with a design built for it.**
+
+**Two further readings die here.** ḤM's "cross-block" split is {40,41} against {43–46} — two
+to six surahs apart, which is not adjacency removal in any meaningful sense, so its p = 0.0003
+should not be read as ALM's result is. And **al-Biqāʿī's Q 29–32 "tight Meccan block" is at
+the 66th percentile of matched consecutive blocks and the 33.67th under `N_PERIOD`** — its
+apparent tightness is adjacency and nothing else.
 
 ---
 
@@ -422,6 +585,11 @@ The registered verdict keeps the modifier because that is what the registered ru
 the repair is post-hoc and carries no verdict. **A reader should carry both, and should note
 that the repair helps this finding, which is why it is quarantined.**
 
+**This caliper still omits period, and the opening contiguity section supplies the version that
+does not** — consecutive blocks matched on mean log word count *and* number of Medinan surahs
+exactly, plus the exact enumeration over every consecutive run in the mushaf, plus the
+gap-restricted decomposition of the whole set. Read that section in preference to this one.
+
 ### 7.3 The genre control — and it is the reason the ḥawāmīm result cannot be called a discrimination
 
 200 matched partitions per baseline, cut to the Qurʾān's exact verse word-length profile and
@@ -654,6 +822,24 @@ Flagged, not applied — a correction to another finding's file is not mine to m
    as a blanket excuse.
 4. **`FAM-c`, a registered control, is invalid** (§7.2). Its repair is post-hoc and helps this
    finding, so it is quarantined and carries no verdict.
+4a. **The contiguity arms are post-hoc and were specified after the registered run was read.**
+   They cannot change the registered verdict and are not offered as if they could. Their
+   exact-enumeration reference sets after size *and* period matching are tiny — **five or six
+   qualifying consecutive runs** for the six- and seven-member classes — so the "rank 1 of 5"
+   figures in the run JSON are **not** a reference distribution and are not quoted in the text;
+   the Monte-Carlo arm with 18,000–39,000 qualifying blocks is the one used.
+4b. **The gap-restricted statistic changes the estimand, not just the sample.** `d̄` at
+   gap ≥ 10 is a different quantity from `d̄`, computed over 283 pairs instead of 406, and its
+   null is recomputed under the same restriction — so the comparison is internally valid but
+   the two percentiles (5.07 and 5.25) are not the same statistic measured twice.
+4c. **The two contiguity controls answer different questions and both are reported.** Within
+   this corpus the ḥawāmīm beat size-and-period-matched consecutive blocks at p = 1 × 10⁻⁴;
+   against matched partitions of two baselines the same slots are reproduced ~50 % of the time
+   (§7.3b). These are consistent: in a real book, consecutive units are separately composed;
+   in a partitioned stream they are literally continuous text. Per
+   `STATE-OF-THE-PROJECT-2026-08-07.md` §4.7 the baseline arm is the **weak-evidence**
+   direction for a contiguity-sensitive statistic, and the within-corpus arm is where the
+   ḥawāmīm claim's weight sits.
 5. **Monte-Carlo resolution on the vocabulary screen.** With 10,000 draws the smallest
    attainable two-sided per-root p is 2.0 × 10⁻⁴, so BH at q = 0.05 over 411 roots requires at
    least two roots at the floor. The size-blind arm reached it (19 survivors); the matched arms
@@ -696,11 +882,23 @@ Flagged, not applied — a correction to another finding's file is not mine to m
 - **The per-class genre control of §7.3(b) was NOT registered**, was run because the registered
   arms showed the whole effect was one contiguous class, and it is **the arm that most damages
   this finding**. It is labelled post-hoc throughout and lives in its own run directory.
-- **Post-hoc material is confined to §§3.1, 5, 7.2, 7.3(b) and 10**, each labelled, none
-  carrying a verdict.
+- **The two unnumbered opening sections were NOT registered either.** They were specified
+  after the registered run had been executed and read, at the point where it was clear the one
+  passing arm was a consecutive mushaf run. **They are placed first because they decide how the
+  registered arms should be read, not because they have the standing of registered arms**, and
+  every table in them is marked to its own post-hoc run directory. Their net effect is mixed
+  and is reported as such: the whole-set defence (gap ≥ 10 unchanged) helps this finding, and
+  the Δ reversal, the 47.71st-percentile raw ḥawāmīm figure and the collapse of ḥawāmīm-7 to
+  p = 0.199 all damage it.
+- **Post-hoc material is confined to the two opening sections and §§3.1, 5, 7.2, 7.3(b) and
+  10**, each labelled, none carrying a verdict.
 - **Write-once observed**: run directories created with `exist_ok=False`, every file opened
   `'x'`, `results.json` written once at completion, checkpoints outside the run directory in
-  files never rewritten. **No run directory was deleted.**
+  files never rewritten. **No run directory was deleted — including
+  `runs/h-new-2840-posthoc-contiguity/20260807T105627Z/`, which is empty because the script
+  raised a `TypeError` on a duplicated keyword argument before writing anything. It is
+  retained rather than removed**, as `runs/h-new-2840/20260807T085630Z/`-style defective runs
+  are retained elsewhere in this repository.
 - **The pre-registration was committed before the run; no other commit was made by this lane
   before the finding was complete.**
 
@@ -714,23 +912,29 @@ Flagged, not applied — a correction to another finding's file is not mine to m
 - Registered runner: `findings/phase-b-hypotheses/scripts/h-new-2840.py` — pre-reg SHA-gated;
   lifts the H-NEW-2680 partition code verbatim with three fragment SHA checks; asserts the
   Fisher–Rao path bit-identical to the published `h-new-570` routine
-- Post-hoc: `findings/phase-b-hypotheses/scripts/h-new-2840-posthoc.py` and
-  `findings/phase-b-hypotheses/scripts/h-new-2840-posthoc-genre.py`
+- Post-hoc: `findings/phase-b-hypotheses/scripts/h-new-2840-posthoc.py`,
+  `findings/phase-b-hypotheses/scripts/h-new-2840-posthoc-genre.py`,
+  `findings/phase-b-hypotheses/scripts/h-new-2840-posthoc-contiguity.py`
 - Runs (immutable, never deleted), each with a `manifest.json` recording every frozen input
   SHA in repository-relative form:
   - `findings/phase-b-hypotheses/runs/h-new-2840/20260807T101255Z/` — **registered primary**
   - `findings/phase-b-hypotheses/runs/h-new-2840/20260807T100806Z-SMOKE/` — smoke, retained
   - `findings/phase-b-hypotheses/runs/h-new-2840-posthoc/20260807T103932Z/`
   - `findings/phase-b-hypotheses/runs/h-new-2840-posthoc-genre/20260807T104225Z/`
+  - `findings/phase-b-hypotheses/runs/h-new-2840-posthoc-contiguity/20260807T105754Z/`
+  - `findings/phase-b-hypotheses/runs/h-new-2840-posthoc-contiguity/20260807T105627Z/` —
+    empty, aborted on a `TypeError` before any write; **retained, not deleted**
 - Machine output: `findings/phase-b-hypotheses/csv/h-new-2840.json`
 
 ---
 
 *Run 2026-08-07 by Waiel Al-Shujaa. The twenty-nine are one cluster and the letters do not
 carve it: fifteen of nineteen class members sit closest to a surah that opens differently, the
-one class that coheres is six consecutive surahs, and a partitioned book of adab zoology cut at
-the same six slots does the same thing half the time. The vocabulary that looked like the
-cluster's subject was the Meccan register, and it left when period entered the null. What is
-left is real and small and single: a set of twenty-nine that are nearer to one another than to
-anything their size and period would predict, with no internal order that the opening letters
-explain. Bismillāhi al-Raḥmāni al-Raḥīm.*
+class that coheres is six consecutive surahs sitting at the median of every consecutive
+six-block in the mushaf until size and period are held fixed, and a partitioned book of adab
+zoology cut at the same six slots does the same thing half the time. The vocabulary that looked
+like the cluster's subject was the Meccan register, and it left when period entered the null.
+What survives every control, including the deletion of every adjacent pair, is one thing and it
+is not a letter: a set of twenty-nine surahs nearer to one another than their size and period
+predict, still at the fifth percentile when only the pairs ten or more surahs apart are
+counted. Bismillāhi al-Raḥmāni al-Raḥīm.*
