@@ -10,6 +10,23 @@ verdict: COMPLETE — 7+ mufassirūn surveyed; al-falaq glosses catalogued; sorc
 
 # Q 113 al-Falaq — Classical Tafsir Survey
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## DATA-GAP NOTICE
 
 Per-surah Q 113 tafsir extracts NOT pre-extracted in `data/literature/classical-tafsir/raw/`. Citations below are anchored on canonical positions; subsequent agents should extract Q 113 sections from the `*.openiti.raw.txt` masters (al-Ṭabarī, al-Rāzī, al-Qurṭubī, Ibn Kathīr, al-Suyūṭī, al-Zamakhsharī, al-Biqāʿī, al-Ṭabarsī, al-Thaʿlabī).

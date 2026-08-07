@@ -9,6 +9,23 @@ verdict: COMPLETE — 5 pre-registered tests run; 3 CONFIRMED (incl. 1 UNIQUE-MA
 
 # Q 6 al-Anʿām — Pre-Registered Novel Findings
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 Five pre-registered tests run on 2026-05-07 (seed 20260507). All pre-regs SHA-locked and verified at runtime. Outputs at `surahs/Q006-al-anam/csv/`. Each script begins with `assert sha == EXPECTED_SHA`.
 
 ## Q006-F-01 — Prophet-density per verse (LIST-FORM MAX)

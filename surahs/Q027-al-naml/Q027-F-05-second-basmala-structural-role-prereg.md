@@ -12,6 +12,23 @@ acceptance_window: see §6
 
 # Q027-F-05 — Second-Basmala Structural Role
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## 0. Origin and prior
 
 Existing Q027-F-02 verified the **lexical** identity Q 27:30 ≡ Q 1:1 (deterministic; 0 Levenshtein across all 3 tashkeel variants). This pre-reg extends that verdict to **structural / corpus-architectural** dimensions: (a) verbatim 6-token uniqueness, (b) the embedding window's lexical distinctiveness vs corpus 5-verse windows, and (c) extension to candidate **embedded-quotative-divine-name** verses. F-02 said *"the slice is identical"*; F-05 asks *"how rare is the act of embedding the basmala/divine-name as a quoted speech-act, and is the surrounding narrative window itself architecturally distinctive?"*.

@@ -10,6 +10,23 @@ verdict: 4-block content map; verse-by-verse summary; soul-return-formula and de
 
 # Q 89 al-Fajr — Content Analysis
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## 1. Macro-structure
 
 Q 89 is a **4-block compositional surah** with tight rhetorical architecture: cosmic-temporal oath → destroyed-civilizations catalog → human-wealth-psychology → soul-return formula. Each block opens with a structural-marker (*wa-l-fajr* / *a-lam tara* / *fa-ammā al-insān* / *yā ayyatuhā al-nafs*) and closes with a theological-summary (*hal fī dhālika qasamun li-dhī ḥijr* / *inna rabbaka la-bi-l-mirṣād* / *yatadhakkaru al-insān wa-annā lahu al-dhikrā* / *wa-dkhulī jannatī*).

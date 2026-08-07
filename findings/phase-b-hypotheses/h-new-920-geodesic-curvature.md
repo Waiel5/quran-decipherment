@@ -14,6 +14,20 @@ rules_tuple_inherited: "(no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-co
 
 # H-NEW-920 — Discrete geodesic curvature of the mushaf path
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: UAS is a synthesis index, not a testable law
+>
+> H-NEW-840's own frontmatter reads `status: SYNTHESIS`. It is a composite ranking with **no
+> null hypothesis and no test statistic**, so it can neither pass nor fail a control and **no
+> discrimination claim may rest on it**. Two of its three inputs are now corrected: the
+> Fisher-Rao geodesic (H-NEW-2680) and the compression-tail / iʿjāz-signature family
+> (H-NEW-2720). The one transportable diagnostic — how differentiated the 114 units are —
+> puts this corpus at sd = **1.166** against **pre-Islamic poetry's 1.267**, so even
+> descriptively it is not the most differentiated of the matched corpora.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## 1. Headline (with full prominence for both arms)
 
 The mushaf path through Fisher-Rao information space is **globally much smoother than random** at z = −5.638 (one-sided perm-p = 0.00000 against 10000 permutations). Empirical mean turn-cost 0.7435 vs perm-null mean 0.9233 (std 0.0319). **H1b PASSES strongly.**

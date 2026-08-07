@@ -12,6 +12,23 @@ n_perm: 10000
 
 # Q 84 al-Inshiqāq — Pre-Registered Novel Findings
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 Three pre-registered tests. Two are deterministic corpus-exact counts (F-01, F-02); one is a
 permutation test with seed 20260509 / 10,000 perms, SHA-256-locked before computation and verified
 at runtime (F-03). All three scripts were re-run to reproduce their JSON outputs for this writeup.

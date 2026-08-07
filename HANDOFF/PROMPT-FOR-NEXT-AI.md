@@ -1,5 +1,11 @@
 # Prompt for the Next AI — Quran Decipherment Project
 
+> **⛔ READ FIRST: [`../STATE-OF-THE-PROJECT-2026-08-07.md`](../STATE-OF-THE-PROJECT-2026-08-07.md)** —
+> on 2026-08-07 thirteen standing laws met their first matched Arabic control and almost none
+> survived (H-NEW-2680, H-NEW-2720). Anything below that predates 2026-08-07 must be read
+> against that document.
+
+
 *Handoff written 2026-04-18 by the preceding AI after Wave-5 landed at R² = 0.89 on OQ-15's terminal equation.*
 
 ---

@@ -12,6 +12,38 @@ classical_anchors: al-Bayhaqī *al-Asmāʾ wa-l-ṣifāt*; al-Rāzī *Lawāmiʿ 
 
 # H-NEW-950 — Per-surah spectral analysis of divine-name occurrences
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: the iʿjāz anti-twin is REVERSED under a matched control
+>
+> **The arithmetic reproduces** — an independent surface-instrument rebuild returns
+> r = −0.8700 against the published −0.8643. What did not survive is the inference.
+>
+> - **Both prose baselines are *more* anti-twinned than this corpus.** Cut into 114
+>   pseudo-surahs on this corpus's own verse-count and verse-length profile, al-Bukhārī
+>   averages **r = −0.9107** (this corpus at the **14th percentile**, 172 of 200 cuts more
+>   extreme) and al-Jāḥiẓ **−0.9311** (**3rd percentile**, 194 of 200). Pre-Islamic poetry
+>   under a matched partition reaches **−0.8718**.
+> - **H-NEW-740's Δ Fisher-z = −6.42 is an artefact of unmatched unit sizes.** It compared
+>   equal 30-bayt poetry blocks to this corpus's unequal surahs (10 to 6,140 words).
+>   r(d̄_content, log unit size) = **+0.956** and r(d̄_rhyme, log unit size) = **−0.838**, so a
+>   *dispersed* size profile manufactures an anti-twin and equal blocks suppress it.
+> - **About half the correlation is unit size.** Partialling out log unit size gives
+>   **r = −0.432**; re-cutting this corpus's own verses to equal size gives **−0.338** — which
+>   is indistinguishable from what H-NEW-740 measured for *poetry* (−0.48) and called the
+>   genre baseline.
+>
+> **Honest limit, for this law specifically:** the baselines are arbitrary cuts of a
+> continuous stream, not composed books, and for a **contiguity-sensitive** statistic like
+> this one arbitrary cuts *preserve* local continuity and make the law *easier* for a
+> baseline. The reversal is therefore **weaker evidence against the law than the percentile
+> alone suggests**; the size decomposition, which uses no baseline at all, carries the weight.
+>
+> al-Bāqillānī's qualitative *iʿjāz al-fawāṣil* claim is **not** refuted — it was never a
+> claim about correlation coefficients. What is withdrawn is its stated empirical vindication.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## 1. Headline (with full NULL prominence)
 
 **0 of 48 long surahs (length ≥ 50 verses) have any Lomb-Scargle periodogram peak surviving Bonferroni-150 at α_bon = 3.33×10⁻⁴.** Divine-name placement is **spectrally-random** at the per-verse-position resolution. The pre-registered direction-locked H1 (rhetorically-punctuated divine-name placement → ≥1 peak survives) NULLS. The H3 falsifier (spectral-randomness verdict) is triggered with full prominence.

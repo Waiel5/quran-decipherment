@@ -9,6 +9,23 @@ verdict: SCAFFOLD — 9-book corpus searched; primary Q 27 hadiths catalogued
 
 # Q 27 al-Naml — Ḥadīth Corpus
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 All ḥadīth citations below were extracted from the 9-book corpus at `/Users/grey/Downloads/quran/data/literature/hadith/ahmedbaset-json/db/by_book/the_9_books/`. Search method: stripped-tashkeel substring search across the Arabic field. Full results saved to `csv/Q027_hadith_search_raw.json`. Numerous false-positives on "Sulaymān" arose because of the transmitter Sulaymān b. Ḥarb (and similar) appearing in isnād chains; these were excluded by topic-relevance filtering.
 
 ## 1. ⭐ The basmala-uniqueness ḥadīth (anchored to Q 27:30)

@@ -9,6 +9,23 @@ verdict: DIRECTIONAL-TOP-3 (Q 50 ق-rate ranks 2nd of 16 Meccan 30-50-verse sura
 
 # Q050-F-07 — Q 50 ق-letter density vs 30-50-verse Meccan surahs
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## Headline
 
 Among the **16 Meccan surahs of 30-50 verses inclusive**, Q 50 Qāf has the **2nd-highest ق-letter rate** (0.0378), narrowly edged by **Q 75 al-Qiyāma** (0.0399). The pre-registered direction was **Q 50 rank = 1**; the observed result is Q 50 rank = 2.

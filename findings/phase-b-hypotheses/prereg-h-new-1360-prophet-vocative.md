@@ -23,6 +23,20 @@ rules_tuple:
 
 # H-NEW-1360 pre-registration
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: UAS is a synthesis index, not a testable law
+>
+> H-NEW-840's own frontmatter reads `status: SYNTHESIS`. It is a composite ranking with **no
+> null hypothesis and no test statistic**, so it can neither pass nor fail a control and **no
+> discrimination claim may rest on it**. Two of its three inputs are now corrected: the
+> Fisher-Rao geodesic (H-NEW-2680) and the compression-tail / iʿjāz-signature family
+> (H-NEW-2720). The one transportable diagnostic — how differentiated the 114 units are —
+> puts this corpus at sd = **1.166** against **pre-Islamic poetry's 1.267**, so even
+> descriptively it is not the most differentiated of the matched corpora.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## Origin and classical grounding
 
 The specialist dispatch follows the H-NEW-1260 confirmation that Q 49 al-Ḥujurāt is corpus-rank-1 on the *yā-ayyuhā alladhīna āmanū* believer-vocative density and that all 89 attestations of that vocative are strictly Medinan, vindicating al-Suyūṭī's classical Medinan-marker claim (*al-Itqān*, nawʿ 9 *al-makkī wa-l-madanī*; nawʿ 51 *fī khiṭābātihi*).

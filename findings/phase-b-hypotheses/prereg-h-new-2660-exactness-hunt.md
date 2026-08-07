@@ -14,6 +14,20 @@ direction_lock: EXCESS (more exact coincidences than the null) — every cell, e
 
 # PRE-REGISTRATION — H-NEW-2660
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: UAS is a synthesis index, not a testable law
+>
+> H-NEW-840's own frontmatter reads `status: SYNTHESIS`. It is a composite ranking with **no
+> null hypothesis and no test statistic**, so it can neither pass nor fail a control and **no
+> discrimination claim may rest on it**. Two of its three inputs are now corrected: the
+> Fisher-Rao geodesic (H-NEW-2680) and the compression-tail / iʿjāz-signature family
+> (H-NEW-2720). The one transportable diagnostic — how differentiated the 114 units are —
+> puts this corpus at sd = **1.166** against **pre-Islamic poetry's 1.267**, so even
+> descriptively it is not the most differentiated of the matched corpora.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 **Nothing in this file may be amended after the SHA-256 below is computed.** The run
 script embeds the SHA as a literal and raises `SystemExit` on mismatch. Seed 20260509;
 replication seed 20260519. Immutable run directory

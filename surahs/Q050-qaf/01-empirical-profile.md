@@ -10,6 +10,23 @@ verdict: COMPLETE — empirical profile integrated from all H-NEW artifacts; 5 n
 
 # Q 50 Qāf — Empirical Profile
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## Headline
 
 Q 50 is the **first surah of *al-mufaṣṣal* (per Ibn Kathīr) AND the structural anchor of the singleton-letter muqaṭṭaʿāt cohort (with Q 38, Q 68)**. Despite occupying the Hijra-kink position s=50, Q 50's content-vocabulary is more cohesive with the terminal-tail mufaṣṣal-qiṣār surahs (FR-nearest = Q 78, 86, 112, 79, 110) than with its immediate mushaf neighbours. Its iʿjāz-al-fawāṣil signature (sig_A = +0.891) places it in the moderate-positive third of the corpus, and its body-part-metaphor density is **corpus-extreme** (88.5/1000 words, 100th percentile of length-matched null, p = 10⁻⁴ — Q050-F-02).

@@ -1,5 +1,11 @@
 # NEXT-AGENT-PROMPT — paste this at session start
 
+> **⛔ READ FIRST: [`../STATE-OF-THE-PROJECT-2026-08-07.md`](../STATE-OF-THE-PROJECT-2026-08-07.md)** —
+> on 2026-08-07 thirteen standing laws met their first matched Arabic control and almost none
+> survived (H-NEW-2680, H-NEW-2720). Anything below that predates 2026-08-07 must be read
+> against that document.
+
+
 Copy everything between the lines below as your first user message to the next agent.
 
 ---

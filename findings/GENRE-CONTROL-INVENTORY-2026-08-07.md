@@ -1,0 +1,781 @@
+---
+title: Genre-control correction inventory — every file asserting a law that H-NEW-2720 controlled
+author: Waiel Al-Shujaa
+date: 2026-08-07
+status: WORKING INVENTORY — companion to findings/GENRE-CONTROL-CORRECTION-2026-08-07.md
+---
+
+# Genre-control correction inventory
+
+Every `.md` / `.html` / `.txt` file in the live tree that asserts or cites a law H-NEW-2720
+put through a matched Arabic control. Scanned for **AT** (the iʿjāz anti-twin: `0.8643`,
+`anti-twin`, `fawāṣil`, H-NEW-730/740), **CT** (the compression-tail family:
+`compression-tail`, `0.9860`, `0.01237`, `d̄_content`, H-NEW-660/700/770), **UAS**
+(H-NEW-840, `unified architectural`) and **4LAW** (the "4 architectural laws" block).
+Line numbers are as of the post-correction scan and exclude the notices themselves.
+Data artefacts (`runs/`, `csv/`, `data/`, `quran-text/`) and tooling directories are out of scope.
+
+`✅` = correction notice present. `·` = not yet.
+
+**738 files** in scope, of which **688 now carry a notice** and **50 do not**.
+
+The four laws' verdicts, and the one surviving axis, are in
+`findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`. The orientation document for anyone
+arriving new is `STATE-OF-THE-PROJECT-2026-08-07.md` at the repository root.
+
+---
+
+## CORRECTED — 688 files
+
+- ✅ `MASTER-FINDINGS-LEDGER.md` — 189 refs — AT L15,17,22,25,28,37,227,968…; CT L24,42,58,78,227,438,666,1509…; UAS L75,1609,1617,1623,1664,1701,1733,1734…
+- ✅ `findings/phase-b-hypotheses/h-new-860-hadith-architectural-alignment.md` — 76 refs — AT L24,26,31,34,37,46,235,240…; CT L33,54; UAS L3,8,9,11,18,51,82,86…
+- ✅ `findings/cross-finding/cross-finding-026-iʿjāz-architecture.md` — 72 refs — AT L3,12,17,27,29,34,37,40…; CT L3,8,9,10,14,36,54,70…; UAS L87,259,265,270,272,283,285,306…
+- ✅ `KNOWLEDGE-GRAPH.md` — 68 refs — AT L13,15,20,23,26,35,117,118…; CT L22,40,56,76,104,105,109,112…; UAS L73,121,150,153,212,231,232,233…; 4LAW L99
+- ✅ `findings/phase-b-hypotheses/h-new-700-phonological-compression-tail.md` — 52 refs — AT L5,25,27,32,35,38,47,172…; CT L2,3,5,8,12,16,19,34…
+- ✅ `findings/phase-b-hypotheses/h-new-710-translation-invariance.md` — 51 refs — AT L5,13,16,22,24,29,32,35…; CT L3,5,7,13,16,31,49,65…
+- ✅ `findings/phase-b-hypotheses/h-new-730-content-rhyme-anticorrelation.md` — 49 refs — AT L2,3,5,10,13,17,20,26…; CT L8,9,35,53,69,101,136,143…
+- ✅ `findings/phase-b-hypotheses/h-new-770-verse-length-compression-tail.md` — 46 refs — CT L2,3,5,7,12,16,19,24…
+- ✅ `findings/phase-b-hypotheses/h-new-900-cross-text-architecture.md` — 46 refs — AT L7,9,14,17,20,29,77,90…; CT L16,34,50,77,102,107,110,127…
+- ✅ `findings/phase-b-hypotheses/h-new-840-unified-architectural-score.md` — 44 refs — AT L21,23,28,31,34,43,98,159…; CT L30,48,64,84,194; UAS L2,3,15,81,102,104,108,123…
+- ✅ `findings/cross-finding/master-equation-derivation.md` — 43 refs — AT L11,12,25,27,32,35,38,47…; CT L6,8,9,10,13,34,52,68…; UAS L15,85,183,187,188,189,192,195…
+- ✅ `surahs/Q067-al-mulk/06-novel-findings.md` — 39 refs — AT L15,16,23,82; CT L15,18,23,106,107,116,133,141…; UAS L21,23,48,52,57,58,62,71…
+- ✅ `INVESTIGATION-PROTOCOL.md` — 38 refs — AT L15,17,22,25,28,37,307,308…; CT L24,42,58,78,213,287,302,303…; UAS L75,216,290,313,316,319,320,322…; 4LAW L298
+- ✅ `surahs/Q011-hud/01-empirical-profile.md` — 38 refs — AT L8,15,16,23,108,109,117,119…; CT L15,18,23,122,124,151,153,155…; UAS L8,21,23,45,60,62,63,66…
+- ✅ `surahs/Q045-al-jathiyah/01-empirical-profile.md` — 38 refs — AT L14,15,22,74,144,146; CT L14,17,22,115,117,119,120,121…; UAS L7,20,22,35,36,37,38,39…
+- ✅ `surahs/Q023-al-muminun/01-empirical-profile.md` — 37 refs — AT L15,16,23,68,74,125,129,144…; CT L15,18,23,50,211,213,233; UAS L21,23,36,38,45,60,70,72…
+- ✅ `surahs/Q055-al-rahman/01-empirical-profile.md` — 37 refs — AT L15,16,23,34,88,90,92,146…; CT L15,18,23,117,132,136,138,139…; UAS L21,23,33,35,39,41,45,46…
+- ✅ `surahs/Q067-al-mulk/01-empirical-profile.md` — 37 refs — AT L15,16,23,38,202,205,209,219…; CT L15,18,23,188,190,191,192,194…; UAS L21,23,36,54,56,58,66,200…
+- ✅ `findings/phase-b-hypotheses/h-new-700-phonological-compression-tail-prereg.md` — 36 refs — AT L19,21,26,29,32,41,87,163…; CT L2,3,6,8,13,28,46,62…
+- ✅ `surahs/Q033-al-ahzab/01-empirical-profile.md` — 36 refs — AT L14,15,22,29,77,120,125,170…; CT L14,17,22,44,85,159,164,198…; UAS L20,22,35,61,63,66,77,114…
+- ✅ `surahs/Q050-qaf/01-empirical-profile.md` — 35 refs — AT L15,16,23,32,85,101,152,211…; CT L15,18,23,125,131,132,133,135…; UAS L21,23,36,38,42,43,152,219…
+- ✅ `COLLECTED-PAPERS.md` — 34 refs — AT L6,8,13,16,19,28,267,684…; CT L15,33,49,16983,17197
+- ✅ `findings/phase-b-hypotheses/h-new-680-multi-k-compression-tail.md` — 34 refs — AT L26,28,33,36,39,48,199; CT L3,8,9,13,17,20,35,53…
+- ✅ `findings/phase-b-hypotheses/h-new-740-preislamic-poetry-control.md` — 34 refs — AT L2,3,5,8,11,15,18,24…; CT L33,51,67,134,158,171,172
+- ✅ `findings/phase-b-hypotheses/h-new-960-cross-corpus-rhyme-entropy.md` — 34 refs — AT L3,5,8,10,11,17,26,28…; CT L9,35,53,69,177,213
+- ✅ `findings/phase-b-hypotheses/h-new-810-length-controlled-ijaz.md` — 33 refs — AT L8,21,23,28,31,34,43,91…; CT L9,30,48,64,111,119,120,128…; UAS L137
+- ✅ `surahs/Q007-al-araf/01-empirical-profile.md` — 33 refs — AT L14,15,22,42,49,93,99,143…; CT L14,17,22,70,85,86,87,161…; UAS L20,22,33,35,39,44,145,175…
+- ✅ `surahs/Q009-al-tawba/07-cross-references.md` — 33 refs — AT L15,16,23,136,158,187; CT L15,18,23,138,139; UAS L21,23,68,69,70,71,72,73…
+- ✅ `findings/phase-b-hypotheses/h-new-660-compression-tail-gradient.md` — 32 refs — CT L2,3,5,8,13,17,20,25…
+- ✅ `surahs/Q010-yunus/07-cross-references.md` — 32 refs — AT L15,16,23,184,214; CT L15,18,23,182,198,200; UAS L8,21,23,95,97,98,99,100…
+- ✅ `surahs/Q018-al-kahf/01-empirical-profile.md` — 32 refs — AT L15,16,23,41,55,63,109,144…; CT L15,18,23,136,138,188; UAS L21,23,36,68,134,142,144,145…
+- ✅ `surahs/Q026-al-shuara/01-empirical-profile.md` — 32 refs — AT L14,15,22,42,44,89,160,161…; CT L14,17,22,91,93,95,97,99…; UAS L20,22,31,33,37,42,44,158…
+- ✅ `surahs/Q036-yasin/01-empirical-profile.md` — 32 refs — AT L15,16,23,65,68,117,121,167…; CT L15,18,23,159,161,203; UAS L21,23,36,56,63,68,157,165…
+- ✅ `surahs/Q067-al-mulk/07-cross-references.md` — 32 refs — AT L15,16,23,113; CT L15,18,23,100,101,114; UAS L21,23,79,80,81,82,83,84…
+- ✅ `surahs/Q069-al-haqqa/01-empirical-profile.md` — 32 refs — AT L15,16,23,43,103,105,107,111…; CT L15,18,23,39,193,209; UAS L21,23,45,155,157,161,165,167…
+- ✅ `surahs/Q002-al-baqara/01-empirical-profile.md` — 31 refs — AT L15,16,23,41,44,46,137,138…; CT L15,18,23,153,155,159,160,166…; UAS L21,23,38,142,149,291,299
+- ✅ `surahs/Q004-al-nisa/01-empirical-profile.md` — 31 refs — AT L15,16,23,99,105,107,140,158…; CT L15,18,23,32,72,78,82,182; UAS L21,23,125,127,131,136,141,161…
+- ✅ `surahs/Q017-al-isra/01-empirical-profile.md` — 31 refs — AT L14,15,22,59,61,90,144,160; CT L14,17,22,94,97,98,99,136…; UAS L20,22,35,45,47,50,61,120…
+- ✅ `surahs/Q024-al-nur/01-empirical-profile.md` — 31 refs — AT L15,16,23,62,65,67,110,232…; CT L15,18,23,224,226,244; UAS L21,23,36,65,67,230,232,233…
+- ✅ `surahs/Q041-fussilat/01-empirical-profile.md` — 31 refs — AT L14,15,22,56; CT L14,17,22,41,80,83,84,85…; UAS L7,20,22,33,34,35,36,37…; 4LAW L82
+- ✅ `surahs/Q002-al-baqara/07-cross-references.md` — 30 refs — AT L15,16,23,161,178; CT L15,18,23,90,115,117,175,176…; UAS L21,23,42,46,80,139,141,161…
+- ✅ `surahs/Q054-al-qamar/01-empirical-profile.md` — 30 refs — AT L15,16,23,100,102,104; CT L15,18,23,32,68,72,76,78…; UAS L21,23,62,63,66,123,125,129…
+- ✅ `poem/research/01-findings-harvest.md` — 29 refs — AT L16,18,23,26,29,38,92,94…; CT L25,43,59,85,87,88,115,124…; UAS L147,148; 4LAW L114
+- ✅ `poem/research/04-architecture-blueprint.md` — 29 refs — AT L6,8,13,16,19,28,80,83…; CT L15,33,49,83,157,184,188,202…
+- ✅ `surahs/Q083-al-mutaffifin/01-empirical-profile.md` — 29 refs — AT L15,16,23,51,110,114,179; CT L15,18,23,146,148,153,154,174…; UAS L21,23,53,119,121,126,127,129…
+- ✅ `surahs/Q102-al-takathur/01-empirical-profile.md` — 29 refs — AT L15,16,23,121; CT L15,18,23,34,82,86,87,91…; UAS L21,23,79,136,139,141,145,150…
+- ✅ `surahs/Q006-al-anam/01-empirical-profile.md` — 28 refs — AT L14,15,22,64,66,131,140,150; CT L14,17,22,79,82,83,84,119…; UAS L7,20,22,29,33,38,66,123…
+- ✅ `surahs/Q025-al-furqan/01-empirical-profile.md` — 28 refs — AT L14,15,22,72,88,95,156,164; CT L14,17,22,56,60,144,146,147…; UAS L20,22,90,95,99,103,109,155…
+- ✅ `surahs/Q030-al-rum/01-empirical-profile.md` — 28 refs — AT L14,15,22,80; CT L7,14,17,22,35,83,85,115…; UAS L7,20,22,38,40,44,45,46…
+- ✅ `surahs/Q040-ghafir/01-empirical-profile.md` — 28 refs — AT L14,15,22,33,94,97; CT L14,17,22,41,77,79,80,81…; UAS L20,22,33,34,35,36,37,87…
+- ✅ `surahs/Q046-al-ahqaf/01-empirical-profile.md` — 28 refs — AT L14,15,22,166; CT L14,17,22,172,174,177,178,179…; UAS L7,20,22,35,36,37,39,40…
+- ✅ `surahs/Q056-al-waqia/01-empirical-profile.md` — 28 refs — AT L13,14,21,39,41,80,153,156; CT L13,16,21,121,124,125,126,128…; UAS L19,21,30,32,36,41,150,154…
+- ✅ `surahs/Q057-al-hadid/01-empirical-profile.md` — 28 refs — AT L14,15,22,31,59,62; CT L14,17,22,118,124,125; UAS L7,20,22,31,33,35,39,44…
+- ✅ `findings/phase-b-hypotheses/h-new-960-cross-corpus-rhyme-entropy-prereg.md` — 27 refs — AT L8,10,11,28,30,35,38,41…; CT L9,37,55,71,93,145,210,214
+- ✅ `surahs/Q028-al-qasas/01-empirical-profile.md` — 27 refs — AT L14,15,22,41,71; CT L14,17,22,76,80,81,82,85…; UAS L20,22,31,35,36,41,141,162
+- ✅ `surahs/Q084-al-inshiqaq/01-empirical-profile.md` — 27 refs — AT L15,16,23,81,85,103,128,131…; CT L15,18,23,47,48,137,139,143…; UAS L8,21,23,90,94,95,100,135…
+- ✅ `surahs/Q087-al-ala/01-empirical-profile.md` — 27 refs — AT L11,12,19,151,178,180; CT L11,14,19,32,170,173,174,175; UAS L17,19,35,114,121,123,125,132…; 4LAW L172
+- ✅ `surahs/Q090-al-balad/01-empirical-profile.md` — 27 refs — AT L15,16,23,102,131,134,165,192; CT L15,18,23,32,90,101,106,109…; UAS L21,23,151,153,157,162,166,193…
+- ✅ `findings/cross-finding/cross-finding-025-multi-axis-architecture.md` — 26 refs — CT L3,5,13,23,39,67,69,128…
+- ✅ `findings/phase-b-hypotheses/h-new-690-causal-generative.md` — 26 refs — CT L3,8,18,21,26,42,66,68…
+- ✅ `findings/phase-b-hypotheses/h-new-730-content-rhyme-anticorrelation-prereg.md` — 26 refs — AT L2,3,6,11,17,19,24,27…; CT L6,26,44,60,80,84,91,92…
+- ✅ `findings/phase-b-hypotheses/h-new-740-prelislamic-poetry-control-prereg.md` — 26 refs — AT L2,3,6,11,17,19,24,27…; CT L26
+- ✅ `surahs/Q010-yunus/01-empirical-profile.md` — 26 refs — AT L14,15,22,82,114,177; CT L14,17,22,39,46,121,124,125…; UAS L20,22,33,34,48,50,52,59…
+- ✅ `surahs/Q022-al-hajj/01-empirical-profile.md` — 26 refs — AT L14,15,22; CT L14,17,22,31,37,38,39,40…; UAS L20,22,44,46,50,55,233,236…; 4LAW L33
+- ✅ `surahs/Q024-al-nur/07-cross-references.md` — 26 refs — AT L15,16,23,113; CT L15,18,23,100; UAS L21,23,103,104,109,113,131,132…
+- ✅ `surahs/Q036-yasin/06-novel-findings.md` — 26 refs — AT L15,16,23; CT L15,18,23,279; UAS L21,23,92,96,99,100,107,108…
+- ✅ `surahs/Q044-al-dukhan/01-empirical-profile.md` — 26 refs — AT L14,15,22,55,85; CT L14,17,22,87,89,103,110,119; UAS L7,20,22,33,34,35,36,37…
+- ✅ `surahs/Q098-al-bayyina/01-empirical-profile.md` — 26 refs — AT L15,16,23,118,119; CT L15,18,23,32,84,89,90,94…; UAS L21,23,39,143,145,149,154,157…
+- ✅ `findings/cross-finding/cross-finding-027-ijaz-al-takrir.md` — 25 refs — AT L23,25,30,33,36,45,63,185…; CT L32,53; UAS L50,70,87,91,199,227,236,242…
+- ✅ `findings/phase-b-hypotheses/h-new-870-q33-architectural-keystone.md` — 25 refs — CT L3,9,14,22,38,126,141,143…; UAS L12,66,230,248,279
+- ✅ `findings/phase-b-hypotheses/h-new-910-alif8-cluster.md` — 25 refs — AT L26,28,33,36,39,48,182,225…; CT L35,53,69,95,97,191,240,241…; UAS L244,290
+- ✅ `surahs/Q008-al-anfal/01-empirical-profile.md` — 25 refs — AT L15,16,23,45,104,106,170,185; CT L15,18,23,39,169,183; UAS L21,23,47,120,124,125,130,135…
+- ✅ `surahs/Q020-ta-ha/01-empirical-profile.md` — 25 refs — AT L15,16,23,125,129,187; CT L15,18,23,32,88,91,98,197…; UAS L21,23,148,150,154,159,160,163…
+- ✅ `surahs/Q027-al-naml/01-empirical-profile.md` — 25 refs — AT L14,15,22,87,159,162; CT L14,17,22,89,91,93,95,167; UAS L20,22,31,33,37,42,44,87…
+- ✅ `surahs/Q042-al-shura/01-empirical-profile.md` — 25 refs — AT L14,15,22,62,95,136; CT L14,17,22,41,97,99,100,101…; UAS L7,20,22,33,34,35,36,37…
+- ✅ `surahs/Q068-al-qalam/01-empirical-profile.md` — 25 refs — AT L15,16,23,43; CT L15,18,23,130,141,147,148,150…; UAS L21,23,32,34,38,43,168,174…; 4LAW L143
+- ✅ `surahs/Q094-al-sharh/01-empirical-profile.md` — 25 refs — AT L15,16,23,123,128; CT L15,18,23,32,83,96,99,100…; UAS L21,23,149,151,155,160,163,185…
+- ✅ `findings/cross-finding/cross-finding-028-liturgical-pair-fr.md` — 24 refs — AT L33,35,40,43,46,55,208,244…; CT L42,60,76,96,144,150,199,229…; UAS L17,93,259,260; 4LAW L244
+- ✅ `findings/phase-b-hypotheses/h-new-750-per-surah-iʿjāz-signature.md` — 24 refs — AT L7,10,25,27,32,35,38,47…; CT L8,34,52,68,287,289
+- ✅ `findings/phase-b-hypotheses/h-new-810-length-controlled-ijaz-prereg.md` — 24 refs — AT L3,6,17,19,24,27,30,39…; CT L6,26,44,60,80,91,92,143
+- ✅ `surahs/Q001-al-fatiha/01-empirical-profile.md` — 24 refs — AT L15,16,23,112,166; CT L15,18,23,145,147,176; UAS L21,23,36,54,56,164,166,167…
+- ✅ `surahs/Q021-al-anbiya/01-empirical-profile.md` — 24 refs — AT L14,15,22,39,69,98; CT L14,17,22,71,73,122; UAS L20,22,29,33,34,35,36,37…
+- ✅ `surahs/Q031-luqman/01-empirical-profile.md` — 24 refs — AT L15,16,23,45,82,140,179,187; CT L15,18,23,161,163,167,185; UAS L21,23,47,145,147,151,157,159…
+- ✅ `surahs/Q035-fatir/01-empirical-profile.md` — 24 refs — AT L15,16,23,57,95,101,104; CT L15,18,23,149,151,152,155,157…; UAS L21,23,49,53,54,86,185,197
+- ✅ `surahs/Q043-al-zukhruf/01-empirical-profile.md` — 24 refs — AT L14,15,22,38,78,81,83,101…; CT L14,17,22,85,87,103; UAS L7,20,22,33,34,35,36,37…
+- ✅ `surahs/Q066-al-tahrim/01-empirical-profile.md` — 24 refs — AT L15,16,23,116,118; CT L15,18,23,32,83,86,90,182…; UAS L21,23,62,140,142,146,151,154…
+- ✅ `surahs/Q072-al-jinn/01-empirical-profile.md` — 24 refs — AT L14,15,22,96,101; CT L14,17,22,120,124,125,126,128…; UAS L20,22,31,33,37,43,107,154…
+- ✅ `surahs/Q092-al-layl/01-empirical-profile.md` — 24 refs — AT L15,16,23,84,113,115; CT L15,18,23,32,77,83,88,182…; UAS L21,23,135,137,141,146,149,175…
+- ✅ `surahs/Q001-al-fatiha/07-cross-references.md` — 23 refs — AT L14,15,22; CT L14,17,22,140; UAS L20,22,78,79,80,81,82,86…
+- ✅ `surahs/Q005-al-maida/01-empirical-profile.md` — 23 refs — AT L15,16,23,89,172; CT L15,18,23,91,93,96,134; UAS L8,21,23,36,52,53,56,173…
+- ✅ `surahs/Q009-al-tawba/01-empirical-profile.md` — 23 refs — AT L15,16,23,84,157; CT L15,18,23,86,88,91,95,133…; UAS L8,21,23,36,47,51,53,158…
+- ✅ `surahs/Q013-al-rad/07-cross-references.md` — 23 refs — AT L15,16,23,115,122,126,132,133…; CT L15,18,23,142,143; UAS L21,23,36,123,124,131,147
+- ✅ `surahs/Q019-maryam/01-empirical-profile.md` — 23 refs — AT L15,16,23,64,172,195; CT L15,18,23,164,166,176,188; UAS L21,23,36,53,55,57,64,171…
+- ✅ `surahs/Q071-nuh/01-empirical-profile.md` — 23 refs — AT L15,16,23,98,111; CT L15,18,23,139,142,148; UAS L8,21,23,114,116,120,125,126…; 4LAW L141
+- ✅ `surahs/Q093-al-duha/01-empirical-profile.md` — 23 refs — AT L15,16,23,109,112; CT L15,18,23,32,76,82,86,192…; UAS L21,23,133,135,139,144,148,185…
+- ✅ `findings/phase-b-hypotheses/h-new-760-three-axis-inverse-regression.md` — 22 refs — AT L10,25,27,32,35,38,47,110…; CT L8,9,34,52,68,115,116,117…
+- ✅ `surahs/Q003-al-imran/01-empirical-profile.md` — 22 refs — AT L15,16,23,101,110,143; CT L15,18,23,32,74,78,84,182; UAS L21,23,128,130,134,139,161,185
+- ✅ `surahs/Q011-hud/07-cross-references.md` — 22 refs — AT L15,16,23,152,155,240; CT L15,18,23,193; UAS L21,23,58,72,114,122,124,130…
+- ✅ `surahs/Q026-al-shuara/07-cross-references.md` — 22 refs — AT L14,15,22,59,65,92,116; CT L14,17,22,94,104,105; UAS L20,22,60,61,62,64,65,92…
+- ✅ `surahs/Q029-al-ankabut/01-empirical-profile.md` — 22 refs — AT L7,14,15,22; CT L14,17,22,35,89,91,129; UAS L7,20,22,38,40,44,45,46…
+- ✅ `surahs/Q034-saba/01-empirical-profile.md` — 22 refs — AT L15,16,23,43,111,114,156,161; CT L15,18,23,39,145,217; UAS L21,23,45,131,133,137,143,220
+- ✅ `surahs/Q103-al-asr/01-empirical-profile.md` — 22 refs — AT L15,16,23,124; CT L15,18,23,84,87,96,223,237; UAS L21,23,142,144,148,153,154,159…
+- ✅ `findings/phase-b-hypotheses/h-new-2080-rhyme-scan.md` — 21 refs — AT L25,27,32,35,38,47,214,222…; CT L8,34,52,68,134,164,170,207…
+- ✅ `poem/COMPOSITION-BRIEF.md` — 21 refs — AT L6,8,13,16,19,28,84,90…; CT L15,33,49,100,140,142
+- ✅ `surahs/Q007-al-araf/07-cross-references.md` — 21 refs — AT L14,15,22,153,156,176,187,207; CT L14,17,22,173,174; UAS L20,22,153,154,157,177,188,207
+- ✅ `surahs/Q014-ibrahim/01-empirical-profile.md` — 21 refs — AT L15,16,23,96,128,158,159,168…; CT L15,18,23; UAS L21,23,36,64,158,165,181,194
+- ✅ `surahs/Q023-al-muminun/preregs/Q023-F-01-uas-top10-fr-cluster-prereg.md` — 21 refs — AT L15,16,23; CT L15,18,23; UAS L3,11,21,23,32,34,36,40…
+- ✅ `surahs/Q024-al-nur/06-novel-findings.md` — 21 refs — AT L15,16,23,281; CT L15,18,23; UAS L21,23,74,281,291,374,378,384…
+- ✅ `surahs/Q036-yasin/preregs/Q036-F-02-uas-vs-fadail-corpus-divergence-prereg.md` — 21 refs — AT L17,18,25; CT L17,20,25; UAS L3,13,23,25,34,37,38,39…
+- ✅ `surahs/Q038-sad/01-empirical-profile.md` — 21 refs — AT L15,16,23,59,127; CT L15,18,23,43,180,183,192; UAS L21,23,36,53,61,146,174,195…
+- ✅ `surahs/Q042-al-shura/06-novel-findings.md` — 21 refs — AT L14,15,22,97; CT L14,17,22; UAS L20,22,41,86,90,92,93,94…
+- ✅ `surahs/Q061-al-saff/01-empirical-profile.md` — 21 refs — AT L15,16,23,38,61,125,129,134…; CT L15,18,23; UAS L21,23,36,170,177,192,206
+- ✅ `surahs/Q070-al-maarij/01-empirical-profile.md` — 21 refs — AT L12,13,20,73; CT L12,15,20,131,147,149,151,179…; UAS L18,20,41,45,46,51,53,206
+- ✅ `surahs/Q112-al-ikhlas/01-empirical-profile.md` — 21 refs — AT L15,16,23,61,156; CT L15,18,23,132,139,188,189; UAS L21,23,36,53,59,156,176,182…
+- ✅ `findings/phase-b-hypotheses/h-new-2070-divine-name-pairing.md` — 20 refs — AT L3,8,19,25,27,32,35,38…; CT L34
+- ✅ `findings/phase-b-hypotheses/h-new-690-causal-generative-prereg.md` — 20 refs — CT L3,6,11,16,32,52,54,57…
+- ✅ `findings/phase-b-hypotheses/h-new-760-three-axis-inverse-regression-prereg.md` — 20 refs — AT L6,17,19,24,27,30,39; CT L6,26,44,60,80,81,82,83…
+- ✅ `surahs/Q012-yusuf/01-empirical-profile.md` — 20 refs — AT L15,16,23,58,123,166,188; CT L15,18,23,172,181; UAS L21,23,36,52,60,165,184,188
+- ✅ `surahs/Q012-yusuf/07-cross-references.md` — 20 refs — AT L15,16,23,83,113,114,115,149; CT L15,18,23,110,111; UAS L21,23,83,116,117,133,150
+- ✅ `surahs/Q023-al-muminun/07-cross-references.md` — 20 refs — AT L15,16,23,139,140; CT L15,18,23,136,137; UAS L21,23,55,57,60,76,142,143…
+- ✅ `surahs/Q026-al-shuara/06-novel-findings.md` — 20 refs — AT L14,15,22,254,259; CT L14,17,22,80,212,222,231,252…; UAS L20,22,92,101,254
+- ✅ `surahs/Q032-al-sajda/01-empirical-profile.md` — 20 refs — AT L14,15,22,72; CT L14,17,22,76,78,80,82,90…; UAS L20,22,33,72,94,103
+- ✅ `surahs/Q046-al-ahqaf/00-overview.md` — 20 refs — AT L14,15,22,118; CT L14,17,22,126,143; UAS L20,22,98,99,113,114,115,116…
+- ✅ `surahs/Q050-qaf/00-overview.md` — 20 refs — AT L16,17,24,156,159,160,162; CT L16,19,24,93,166,167; UAS L22,24,88,144,158,170,176
+- ✅ `surahs/Q062-al-jumuah/01-empirical-profile.md` — 20 refs — AT L15,16,23,42,77,107,110,160; CT L15,18,23,38,159,179; UAS L21,23,44,110,167,182
+- ✅ `surahs/Q081-al-takwir/01-empirical-profile.md` — 20 refs — AT L15,16,23,43,131,134,142,200…; CT L15,18,23; UAS L21,23,45,163,170,171,173,202
+- ✅ `surahs/Q113-al-falaq/01-empirical-profile.md` — 20 refs — AT L8,15,16,23,52,54,61,63…; CT L15,18,23,154,155; UAS L21,23,36,158
+- ✅ `findings/cross-finding/cross-finding-027-prereg.md` — 19 refs — AT L19,21,26,29,32,41,51,54…; CT L28; UAS L52,54,70,78,103,107,124
+- ✅ `findings/phase-b-hypotheses/h-new-770-verse-length-compression-tail-prereg.md` — 19 refs — CT L2,3,6,11,16,32,52,58…
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2070-divine-name-pairing.md` — 19 refs — AT L3,11,29,35,37,42,45,48…; CT L44
+- ✅ `surahs/Q013-al-rad/01-empirical-profile.md` — 19 refs — AT L15,16,23,117,156,160,167,172; CT L15,18,23; UAS L21,23,36,57,155,164,179,192
+- ✅ `surahs/Q016-al-nahl/01-empirical-profile.md` — 19 refs — AT L11,12,19,74; CT L11,14,19,129,132,133,134,157; UAS L17,19,76,80,84,86,160
+- ✅ `surahs/Q017-al-isra/00-overview.md` — 19 refs — AT L9,16,17,24,104,112,118,155; CT L16,19,24,75,76,153; UAS L22,24,102,104,156
+- ✅ `surahs/Q023-al-muminun/06-novel-findings.md` — 19 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,36,40,44,58,68,69…
+- ✅ `surahs/Q026-al-shuara/00-overview.md` — 19 refs — AT L16,17,24,108,116,122,156,159; CT L16,19,24,89,154; UAS L22,24,114,122,151,159
+- ✅ `surahs/Q027-al-naml/07-cross-references.md` — 19 refs — AT L14,15,22,74,113,114,119,129…; CT L14,17,22,111; UAS L20,22,114,119,145,162
+- ✅ `surahs/Q036-yasin/05-classical-claims-audit.md` — 19 refs — AT L15,16,23,246,250,251,255,256…; CT L15,18,23,223,231; UAS L21,23
+- ✅ `surahs/Q047-muhammad/01-empirical-profile.md` — 19 refs — AT L14,15,22,44; CT L14,17,22,46,52,53,54,56; UAS L20,22,31,35,44,127,139
+- ✅ `surahs/Q050-qaf/07-cross-references.md` — 19 refs — AT L15,16,23,130; CT L15,18,23,68,73,74,76,141…; UAS L21,23,41,130,145,146
+- ✅ `surahs/Q051-al-dhariyat/01-empirical-profile.md` — 19 refs — AT L15,16,23; CT L15,18,23,202,213; UAS L21,23,40,100,102,105,113,115…
+- ✅ `surahs/Q051-al-dhariyat/07-cross-references.md` — 19 refs — AT L15,16,23; CT L15,18,23,53,54,124,126,129…; UAS L21,23,57,109,133,157,183
+- ✅ `surahs/Q053-al-najm/01-empirical-profile.md` — 19 refs — AT L15,16,23,43,110,113; CT L15,18,23,39,258; UAS L21,23,45,128,132,136,138,261
+- ✅ `surahs/Q067-al-mulk/00-overview.md` — 19 refs — AT L16,17,24,87,95; CT L16,19,24,141,143,145,156; UAS L22,24,93,101,103,152,157
+- ✅ `surahs/Q095-al-tin/01-empirical-profile.md` — 19 refs — AT L15,16,23,64,179; CT L15,18,23,150,158,160,209,210; UAS L21,23,36,62,197,213
+- ✅ `findings/phase-b-hypotheses/h-new-890-numerical-reaudit-prereg.md` — 18 refs — AT L10,24,26,31,34,37,46,87; CT L8,9,33,51,67,87,110,112…
+- ✅ `surahs/Q015-al-hijr/01-empirical-profile.md` — 18 refs — AT L15,16,23,124,126,157,166; CT L15,18,23; UAS L21,23,36,59,156,163,178,191
+- ✅ `surahs/Q017-al-isra/07-cross-references.md` — 18 refs — AT L14,15,22,66,107,109,114; CT L14,17,22,104,105,108,110; UAS L20,22,109,116
+- ✅ `surahs/Q018-al-kahf/05-classical-claims-audit.md` — 18 refs — AT L15,16,23,148,187,190,206,208…; CT L15,18,23,183; UAS L21,23,206,210
+- ✅ `surahs/Q018-al-kahf/07-cross-references.md` — 18 refs — AT L15,16,23,120,124,155; CT L15,18,23,111; UAS L21,23,114,124,170,173,179,187
+- ✅ `surahs/Q024-al-nur/preregs/Q024-F-07-fr-clustering-with-uas-top10-prereg.md` — 18 refs — AT L18,19,26; CT L18,21,26; UAS L3,11,14,24,26,35,37,39…
+- ✅ `surahs/Q036-yasin/07-cross-references.md` — 18 refs — AT L15,16,23,91,128,165; CT L15,18,23; UAS L21,23,99,108,117,129,130,139…
+- ✅ `surahs/Q039-al-zumar/01-empirical-profile.md` — 18 refs — AT L19,20,27; CT L7,19,22,27; UAS L10,25,27,111,144,146,150,154…
+- ✅ `surahs/Q043-al-zukhruf/07-cross-references.md` — 18 refs — AT L13,14,21,59,67,71,119; CT L13,16,21,57,66; UAS L19,21,30,31,60,106
+- ✅ `surahs/Q048-al-fath/01-empirical-profile.md` — 18 refs — AT L12,13,20,87,98,188; CT L12,15,20,100,102; UAS L18,20,231,233,237,242,290
+- ✅ `surahs/Q055-al-rahman/07-cross-references.md` — 18 refs — AT L13,14,21,59,88; CT L13,16,21,84; UAS L19,21,58,74,75,87,88,106…
+- ✅ `surahs/Q067-al-mulk/preregs/Q067-F-01-architectural-rank-cross-comparison-prereg.md` — 18 refs — AT L11,18,19,26; CT L18,21,26; UAS L3,11,24,26,35,41,43,45…
+- ✅ `surahs/Q111-al-masad/01-empirical-profile.md` — 18 refs — AT L15,16,23,54,142; CT L15,18,23,163,164; UAS L21,23,36,54,56,167,173,183
+- ✅ `surahs/muawwidhat-cluster-synthesis.md` — 18 refs — AT L16,17,24,68,73,75,82,134…; CT L16,19,24; UAS L22,24,65,72,73
+- ✅ `findings/phase-b-hypotheses/cross-finding-015-classical-scholarship-validation-pattern.md` — 17 refs — AT L38,51,53,58,61,64,73,84…; CT L60
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2080-rhyme-scan.md` — 17 refs — AT L11,12,27,29,34,37,40,49…; CT L8,36,54,70,91,92,101,166
+- ✅ `surahs/Q004-al-nisa/00-overview.md` — 17 refs — AT L16,17,24,57,58,60,119,142; CT L16,19,24,47,92,130; UAS L22,24,96
+- ✅ `surahs/Q017-al-isra/JOURNAL.md` — 17 refs — AT L12,13,20,87,101,131,151; CT L12,15,20; UAS L18,20,61,119,130,143,151
+- ✅ `surahs/Q033-al-ahzab/00-overview.md` — 17 refs — AT L16,17,24,70,79,117; CT L16,19,24,58,89; UAS L22,24,77,79,114,116
+- ✅ `surahs/Q036-yasin/00-overview.md` — 17 refs — AT L16,17,24,83,91,96,128; CT L16,19,24,69; UAS L22,24,89,127,128,132
+- ✅ `surahs/Q037-al-saffat/01-empirical-profile.md` — 17 refs — AT L15,16,23,43,73,104,150; CT L15,18,23,39,149,162; UAS L21,23,45,165
+- ✅ `surahs/Q096-al-alaq/01-empirical-profile.md` — 17 refs — AT L15,16,23,154,156; CT L15,18,23; UAS L21,23,47,184,190,191,193,195…
+- ✅ `surahs/Q099-al-zalzala/01-empirical-profile.md` — 17 refs — AT L15,16,23,43,91,94,198; CT L15,18,23,209; UAS L21,23,45,101,196,212
+- ✅ `findings/phase-b-hypotheses/h-new-113-letter-position.md` — 16 refs — AT L23,25,30,33,36,45,53,123…; CT L32
+- ✅ `findings/phase-b-hypotheses/h-new-2240-fasila-assonance-taxonomy.md` — 16 refs — AT L19,21,26,29,32,41,100,253; CT L28,46,62,97,246,248,249,250
+- ✅ `findings/phase-b-hypotheses/h-new-670-tsp-hijra-constraint.md` — 16 refs — CT L3,5,8,14,22,38,73,107…
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2050-verse-length-symmetry.md` — 16 refs — AT L24,26,31,34,37,46,106,252; CT L14,33,51,67,91,153,237,247
+- ✅ `findings/phase-b-hypotheses/surah-completeness-audit-2026-05-29.md` — 16 refs — AT L16,18,23,26,29,38,275; CT L25,43,59,277; UAS L248,250,274,275,278
+- ✅ `findings/team-discovery-synthesis.md` — 16 refs — AT L16,18,23,26,29,38,238,286…; CT L25
+- ✅ `surahs/Q004-al-nisa/06-novel-findings.md` — 16 refs — AT L17,18,25,64,75,77,79,109…; CT L17,20,25,146; UAS L23,25,160
+- ✅ `surahs/Q008-al-anfal/07-cross-references.md` — 16 refs — AT L15,16,23,99,121; CT L15,18,23,97,163; UAS L21,23,100,121,122,163
+- ✅ `surahs/Q017-al-isra/05-classical-claims-audit.md` — 16 refs — AT L14,15,22,63,65,69,74,77…; CT L14,17,22; UAS L20,22,73
+- ✅ `surahs/Q025-al-furqan/00-overview.md` — 16 refs — AT L16,17,24,51,114; CT L16,19,24,52,197; UAS L22,24,113,116,200,210
+- ✅ `surahs/Q027-al-naml/Q027-F-07-2letter-muqattaat-family-prereg.md` — 16 refs — AT L17,18,25; CT L17,20,25,104,111,135; UAS L23,25,49,64,104,110,135
+- ✅ `surahs/Q031-luqman/00-overview.md` — 16 refs — AT L17,18,25,54,237; CT L17,20,25,250,265; UAS L23,25,56,239,243,268
+- ✅ `surahs/Q033-al-ahzab/07-cross-references.md` — 16 refs — AT L14,15,22,99,106; CT L14,17,22,97,102; UAS L20,22,100,101,106,108
+- ✅ `surahs/Q035-fatir/00-overview.md` — 16 refs — AT L16,17,24,107,110,114,122; CT L16,19,24,91,165; UAS L22,24,120,168
+- ✅ `surahs/Q036-yasin/JOURNAL.md` — 16 refs — AT L14,15,22,76,147; CT L14,17,22; UAS L20,22,45,60,113,143,147,242
+- ✅ `surahs/Q044-al-dukhan/05-classical-claims-audit.md` — 16 refs — AT L14,15,22,145,153; CT L14,17,22; UAS L20,22,138,140,142,144,155,222
+- ✅ `surahs/Q045-al-jathiyah/00-overview.md` — 16 refs — AT L16,17,24,120; CT L16,19,24,100,180; UAS L22,24,117,118,136,182,204
+- ✅ `surahs/Q046-al-ahqaf/05-classical-claims-audit.md` — 16 refs — AT L14,15,22,151; CT L14,17,22; UAS L20,22,151,152,153,154,156,184…
+- ✅ `surahs/Q049-al-hujurat/01-empirical-profile.md` — 16 refs — AT L15,16,23,45,90,145; CT L15,18,23,40; UAS L21,23,47,165,169,175
+- ✅ `surahs/Q064-al-taghabun/01-empirical-profile.md` — 16 refs — AT L15,16,23,43,117,120,205; CT L15,18,23,184,198; UAS L21,23,45,201
+- ✅ `surahs/Q069-al-haqqa/00-overview.md` — 16 refs — AT L16,17,24,71,103; CT L16,19,24,156,160,167,233; UAS L22,24,183,236
+- ✅ `surahs/Q070-al-maarij/00-overview.md` — 16 refs — AT L16,17,24; CT L16,19,24,166,182,199,202,231; UAS L22,24,190,202,269
+- ✅ `surahs/Q085-al-buruj/00-overview.md` — 16 refs — AT L16,17,24,141,148,177; CT L16,19,24,118,124; UAS L22,24,139,148,175
+- ✅ `surahs/Q087-al-ala/00-overview.md` — 16 refs — AT L16,17,24,109; CT L16,19,24,90,103,254; UAS L9,22,24,109,258,269
+- ✅ `surahs/Q088-al-ghashiya/01-empirical-profile.md` — 16 refs — AT L12,13,20,166,169; CT L12,15,20,283; UAS L18,20,171,178,179,181,274
+- ✅ `surahs/Q100-al-adiyat/01-empirical-profile.md` — 16 refs — AT L15,16,23; CT L15,18,23,230; UAS L21,23,47,109,111,113,118,232…
+- ✅ `surahs/Q112-al-ikhlas/07-cross-references.md` — 16 refs — AT L15,16,23,51; CT L15,18,23,43,60,61; UAS L21,23,51,64,65,100
+- ✅ `surahs/Q113-al-falaq/06-novel-findings.md` — 16 refs — AT L15,16,23,34,39,48,50,75…; CT L15,18,23; UAS L21,23,43
+- ✅ `surahs/hawamim-7-cluster-synthesis.md` — 16 refs — AT L16,17,24,56,227,340; CT L16,19,24,351,355; UAS L22,24,54,65,351
+- ✅ `findings/classical-sources/hashr-citation-chain-analysis.md` — 15 refs — AT L19,21,26,29,32,41,55,118…; CT L28
+- ✅ `findings/phase-b-hypotheses/form-meets-content-outliers.md` — 15 refs — AT L30,32,37,40,43,52,406,408…; CT L39
+- ✅ `findings/phase-b-hypotheses/h-new-2660-exactness-hunt.md` — 15 refs — AT L35,37,42,45,48,57,449,450…; CT L44,62,78,448,449; UAS L550
+- ✅ `poem/audits/03-honesty-auditor.md` — 15 refs — AT L25,27,32,35,38,47,101,115…; CT L34,52,68,106,265
+- ✅ `poem/research/09-ijaz-scaffolding.md` — 15 refs — AT L6,8,13,16,19,28,79,126…; CT L15,33,49,226
+- ✅ `surahs/Q004-al-nisa/07-cross-references.md` — 15 refs — AT L15,16,23,78,85,86; CT L15,18,23,76,83; UAS L21,23,79,96
+- ✅ `surahs/Q006-al-anam/00-overview.md` — 15 refs — AT L16,17,24,76; CT L16,19,24,138,139; UAS L9,22,24,101,137,141
+- ✅ `surahs/Q007-al-araf/00-overview.md` — 15 refs — AT L16,17,24,87,115,151; CT L16,19,24,149; UAS L22,24,105,115,152
+- ✅ `surahs/Q010-yunus/00-overview.md` — 15 refs — AT L9,16,17,24,95; CT L16,19,24,87,135; UAS L22,24,93,95,132
+- ✅ `surahs/Q010-yunus/05-classical-claims-audit.md` — 15 refs — AT L14,15,22,112,114,126,128,130…; CT L14,17,22; UAS L20,22
+- ✅ `surahs/Q011-hud/00-overview.md` — 15 refs — AT L9,16,17,24,100,151; CT L16,19,24,75,144; UAS L22,24,94,141
+- ✅ `surahs/Q018-al-kahf/00-overview.md` — 15 refs — AT L16,17,24,86,126,148; CT L16,19,24; UAS L22,24,84,124,126,148
+- ✅ `surahs/Q024-al-nur/JOURNAL.md` — 15 refs — AT L14,15,22,62,124; CT L14,17,22; UAS L20,22,41,124,145,152,169
+- ✅ `surahs/Q027-al-naml/06-novel-findings.md` — 15 refs — AT L14,15,22,242; CT L14,17,22; UAS L20,22,338,346,353,356,358,458
+- ✅ `surahs/Q028-al-qasas/00-overview.md` — 15 refs — AT L16,17,24,88; CT L16,19,24,66,139; UAS L22,24,86,131,136,143
+- ✅ `surahs/Q028-al-qasas/07-cross-references.md` — 15 refs — AT L14,15,22; CT L14,17,22,75,79,80,158; UAS L20,22,78,102,158
+- ✅ `surahs/Q040-ghafir/00-overview.md` — 15 refs — AT L14,15,22,76,88; CT L14,17,22,81; UAS L20,22,75,76,99,103
+- ✅ `surahs/Q041-fussilat/00-overview.md` — 15 refs — AT L14,15,22,58; CT L14,17,22; UAS L7,20,22,57,85,86,98,99
+- ✅ `surahs/Q042-al-shura/00-overview.md` — 15 refs — AT L14,15,22; CT L14,17,22,65,95; UAS L7,20,22,67,89,90,114
+- ✅ `surahs/Q043-al-zukhruf/00-overview.md` — 15 refs — AT L14,15,22,90,106; CT L14,17,22; UAS L20,22,87,88,95,102,106
+- ✅ `surahs/Q043-al-zukhruf/05-classical-claims-audit.md` — 15 refs — AT L13,14,21,88,96; CT L13,16,21; UAS L19,21,88,90,92,94,107
+- ✅ `surahs/Q044-al-dukhan/07-cross-references.md` — 15 refs — AT L13,14,21,74; CT L13,16,21,72,79,80; UAS L19,21,32,75,86
+- ✅ `surahs/Q050-qaf/JOURNAL.md` — 15 refs — AT L14,15,22,116,161,241; CT L14,17,22,52; UAS L20,22,48,65,273
+- ✅ `surahs/Q065-al-talaq/01-empirical-profile.md` — 15 refs — AT L15,16,23,55,101,103,149; CT L15,18,23; UAS L21,23,36,65,240
+- ✅ `surahs/Q082-al-infitar/00-overview.md` — 15 refs — AT L16,17,24,125,177,184,223; CT L16,19,24,224; UAS L22,24,186,221
+- ✅ `surahs/Q101-al-qaria/01-empirical-profile.md` — 15 refs — AT L16,17,24,91; CT L16,19,24,143; UAS L22,24,145,162,165,168,216
+- ✅ `surahs/Q109-al-kafirun/01-empirical-profile.md` — 15 refs — AT L13,14,21,106,204,205; CT L13,16,21; UAS L19,21,67,70,71,74
+- ✅ `surahs/Q113-al-falaq/05-classical-claims-audit.md` — 15 refs — AT L15,16,23,86,89,94,100,104…; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q113-al-falaq/Q113-F-01-fawasil-pure-cell-prereg.md` — 15 refs — AT L3,10,14,15,22,31,35; CT L14,17,22; UAS L20,22,33,40,46
+- ✅ `findings/phase-b-hypotheses/h-new-2050-verse-length-symmetry.md` — 14 refs — AT L28,30,35,38,41,50,225; CT L18,37,55,71,136,161,219
+- ✅ `findings/phase-b-hypotheses/h-new-245-chronology-consensus.md` — 14 refs — AT L20,22,27,30,33,42,92,99…; CT L29
+- ✅ `findings/phase-b-hypotheses/h-new-710-translation-invariance-prereg.md` — 14 refs — CT L3,6,9,12,17,33,53,55…
+- ✅ `findings/phase-b-hypotheses/h-new-890-numerical-reaudit.md` — 14 refs — CT L24,40,63,70,89,100,102,159…
+- ✅ `findings/phase-b-hypotheses/h-new-910-alif8-cluster-prereg.md` — 14 refs — AT L23,25,30,33,36,45,177; CT L32,50,66,146,147,150,152
+- ✅ `surahs/Q001-al-fatiha/06-novel-findings.md` — 14 refs — AT L14,15,22,100; CT L14,17,22; UAS L20,22,143,209,211,234,235
+- ✅ `surahs/Q002-al-baqara/00-overview.md` — 14 refs — AT L16,17,24,92,98; CT L16,19,24; UAS L22,24,90,104,135,136
+- ✅ `surahs/Q002-al-baqara/04-hadith-corpus.md` — 14 refs — AT L15,16,23,262; CT L15,18,23; UAS L21,23,262,265,266,267,296
+- ✅ `surahs/Q003-al-imran/05-classical-claims-audit.md` — 14 refs — AT L15,16,23,116,118,124,129,130…; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q010-yunus/JOURNAL.md` — 14 refs — AT L14,15,22,74,196; CT L14,17,22; UAS L20,22,155,156,219,225
+- ✅ `surahs/Q011-hud/06-novel-findings.md` — 14 refs — AT L15,16,23; CT L15,18,23,379,380,387; UAS L21,23,256,266,276
+- ✅ `surahs/Q014-ibrahim/00-overview.md` — 14 refs — AT L16,17,24,101,140,151; CT L16,19,24,83; UAS L22,24,106,147
+- ✅ `surahs/Q016-al-nahl/07-cross-references.md` — 14 refs — AT L11,12,19,66,102; CT L11,14,19,99,100; UAS L17,19,84,105
+- ✅ `surahs/Q019-maryam/07-cross-references.md` — 14 refs — AT L15,16,23,64,82,109; CT L15,18,23,86,87; UAS L21,23,81
+- ✅ `surahs/Q024-al-nur/05-classical-claims-audit.md` — 14 refs — AT L15,16,23,58,61,77,233; CT L15,18,23; UAS L21,23,77,79
+- ✅ `surahs/Q025-al-furqan/07-cross-references.md` — 14 refs — AT L14,15,22,118; CT L14,17,22,55,139; UAS L20,22,118,142,157
+- ✅ `surahs/Q028-al-qasas/05-classical-claims-audit.md` — 14 refs — AT L14,15,22,61; CT L14,17,22,44; UAS L20,22,61,62,63,65
+- ✅ `surahs/Q040-ghafir/05-classical-claims-audit.md` — 14 refs — AT L14,15,22,38; CT L14,17,22; UAS L20,22,38,39,40,43,109
+- ✅ `surahs/Q041-fussilat/05-classical-claims-audit.md` — 14 refs — AT L13,14,21,28,32,178; CT L13,16,21; UAS L19,21,34,38,178
+- ✅ `surahs/Q041-fussilat/06-novel-findings.md` — 14 refs — AT L13,14,21,178; CT L13,16,21; UAS L19,21,164,168,172,182,184
+- ✅ `surahs/Q044-al-dukhan/00-overview.md` — 14 refs — AT L14,15,22; CT L14,17,22; UAS L7,20,22,84,85,99,110,114
+- ✅ `surahs/Q048-al-fath/preregs/Q048-F-02-perfect-monorhyme-uniqueness-prereg.md` — 14 refs — AT L23,30,31,38; CT L17,18,30,33,38,55,92,105; UAS L36,38
+- ✅ `surahs/Q050-qaf/preregs/Q050-F-05-rhyme-vs-opener-prereg.md` — 14 refs — AT L20,21,28; CT L20,23,28,38,39,40,74,98; UAS L26,28,98
+- ✅ `surahs/Q052-al-tur/01-empirical-profile.md` — 14 refs — AT L13,14,21,43; CT L13,16,21; UAS L19,21,28,42,237,278,287
+- ✅ `surahs/Q054-al-qamar/00-overview.md` — 14 refs — AT L16,17,24,145,175; CT L16,19,24,236; UAS L22,24,153,173,239
+- ✅ `surahs/Q062-al-jumuah/00-overview.md` — 14 refs — AT L16,17,24,102; CT L16,19,24,47,82,86; UAS L22,24,100,108
+- ✅ `surahs/Q064-al-taghabun/00-overview.md` — 14 refs — AT L16,17,24,167,206,209; CT L16,19,24,134; UAS L22,24,165,207
+- ✅ `surahs/Q074-al-muddaththir/00-overview.md` — 14 refs — AT L16,17,24,131,140,167; CT L16,19,24,119; UAS L22,24,129,165
+- ✅ `surahs/Q083-al-mutaffifin/00-overview.md` — 14 refs — AT L16,17,24,147; CT L16,19,24,50,183; UAS L22,24,143,144,186
+- ✅ `surahs/Q086-al-tariq/00-overview.md` — 14 refs — AT L16,17,24,156,163; CT L16,19,24,137,141; UAS L22,24,154,188
+- ✅ `surahs/Q108-al-kawthar/01-empirical-profile.md` — 14 refs — AT L22,23,30; CT L10,22,25,30; UAS L13,28,30,194,196,200,206
+- ✅ `surahs/Q113-al-falaq/00-overview.md` — 14 refs — AT L16,17,24,97,103,130; CT L16,19,24; UAS L22,24,95,103,128
+- ✅ `surahs/Q113-al-falaq/07-cross-references.md` — 14 refs — AT L15,16,23,49,52,84; CT L15,18,23,58,59; UAS L21,23,62
+- ✅ `surahs/Q113-al-falaq/Q113-F-01-fawasil-pure-cell.md` — 14 refs — AT L8,12,13,20,41,43; CT L12,15,20; UAS L18,20,31,34,41
+- ✅ `surahs/Q114-al-nas/01-empirical-profile.md` — 14 refs — AT L15,16,23; CT L15,18,23,123,124; UAS L21,23,36,55,127,132
+- ✅ `THE-QURAN-DECIPHERMENT-MONOGRAPH.md` — 13 refs — AT L7,9,14,17,20,29,180,1598…; CT L16
+- ✅ `findings/phase-b-hypotheses/eschatological-slot-cluster-synthesis.md` — 13 refs — AT L25,27,32,35,38,47,75,122…; CT L34
+- ✅ `findings/phase-b-hypotheses/h-new-750-per-surah-iʿjāz-signature-prereg.md` — 13 refs — AT L6,17,19,24,27,30,39,80; CT L26,44,60,91,139
+- ✅ `findings/phase-b-hypotheses/h-new-790-ijaz-by-classical-class-prereg.md` — 13 refs — AT L6,17,19,24,27,30,39,80…; CT L26,44,60,80
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2240-fasila-assonance-taxonomy.md` — 13 refs — AT L18,20,25,28,31,40,84,88…; CT L27,45,61,89
+- ✅ `surahs/Q003-al-imran/00-overview.md` — 13 refs — AT L16,17,24,143,144; CT L16,19,24,47,93; UAS L22,24,97
+- ✅ `surahs/Q005-al-maida/07-cross-references.md` — 13 refs — AT L15,16,23,88; CT L15,18,23,121,122; UAS L21,23,90,113
+- ✅ `surahs/Q008-al-anfal/00-overview.md` — 13 refs — AT L16,17,24,83,91; CT L16,19,24; UAS L22,24,81,91,120
+- ✅ `surahs/Q011-hud/05-classical-claims-audit.md` — 13 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,54,59,67,117,123
+- ✅ `surahs/Q011-hud/preregs/Q011-F-04-shayyabatni-hud-cohort-prereg.md` — 13 refs — AT L18,19,26; CT L18,21,26,73,113; UAS L24,26,49,70,118
+- ✅ `surahs/Q012-yusuf/00-overview.md` — 13 refs — AT L16,17,24,87; CT L16,19,24; UAS L22,24,85,87,119,127
+- ✅ `surahs/Q013-al-rad/05-classical-claims-audit.md` — 13 refs — AT L15,16,23,144,154,161,169,236; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q014-ibrahim/07-cross-references.md` — 13 refs — AT L15,16,23,73,76; CT L15,18,23; UAS L21,23,160,162,177
+- ✅ `surahs/Q018-al-kahf/JOURNAL.md` — 13 refs — AT L14,15,22,47,93,179; CT L14,17,22; UAS L20,22,44,179
+- ✅ `surahs/Q021-al-anbiya/00-overview.md` — 13 refs — AT L16,17,24,86; CT L16,19,24,126; UAS L22,24,84,93,129
+- ✅ `surahs/Q022-al-hajj/07-cross-references.md` — 13 refs — AT L13,14,21; CT L13,16,21,49,164,165,168; UAS L19,21,169
+- ✅ `surahs/Q023-al-muminun/JOURNAL.md` — 13 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,39,55,69,79,94
+- ✅ `surahs/Q026-al-shuara/JOURNAL.md` — 13 refs — AT L14,15,22,44; CT L14,17,22,42,89; UAS L20,22,45,80
+- ✅ `surahs/Q027-al-naml/00-overview.md` — 13 refs — AT L16,17,24,111; CT L16,19,24,90,149; UAS L22,24,109,146
+- ✅ `surahs/Q029-al-ankabut/07-cross-references.md` — 13 refs — AT L14,15,22; CT L14,17,22,124,125; UAS L20,22,128,146,148
+- ✅ `surahs/Q030-al-rum/00-overview.md` — 13 refs — AT L16,17,24,98; CT L16,19,24,95; UAS L22,24,89,91,117
+- ✅ `surahs/Q031-luqman/07-cross-references.md` — 13 refs — AT L15,16,23; CT L15,18,23,76,77; UAS L21,23,89,90,155
+- ✅ `surahs/Q034-saba/00-overview.md` — 13 refs — AT L16,17,24,155,167; CT L16,19,24,166; UAS L22,24,154,191
+- ✅ `surahs/Q037-al-saffat/07-cross-references.md` — 13 refs — AT L15,16,23; CT L15,18,23,91; UAS L21,23,54,94,120,126
+- ✅ `surahs/Q039-al-zumar/07-cross-references.md` — 13 refs — AT L10,11,18,99; CT L10,13,18,92,93; UAS L16,18,105,106
+- ✅ `surahs/Q042-al-shura/05-classical-claims-audit.md` — 13 refs — AT L13,14,21,84; CT L13,16,21; UAS L19,21,80,82,86,121
+- ✅ `surahs/Q044-al-dukhan/JOURNAL.md` — 13 refs — AT L14,15,22; CT L14,17,22,74; UAS L20,22,33,34,74,129
+- ✅ `surahs/Q048-al-fath/00-overview.md` — 13 refs — AT L17,18,25,140; CT L17,20,25,98,176; UAS L23,25,138,179
+- ✅ `surahs/Q050-qaf/05-classical-claims-audit.md` — 13 refs — AT L15,16,23,38,167,171,195,213; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q054-al-qamar/07-cross-references.md` — 13 refs — AT L15,16,23; CT L15,18,23,112; UAS L21,23,67,115,134,145
+- ✅ `surahs/Q054-al-qamar/JOURNAL.md` — 13 refs — AT L16,17,24; CT L16,19,24,45,194; UAS L22,24,47,193,198
+- ✅ `surahs/Q061-al-saff/00-overview.md` — 13 refs — AT L16,17,24,106,113; CT L16,19,24; UAS L22,24,111,158,165
+- ✅ `surahs/Q067-al-mulk/JOURNAL.md` — 13 refs — AT L14,15,22,140; CT L14,17,22; UAS L20,22,45,140,142,175
+- ✅ `surahs/Q067-al-mulk/preregs/Q067-F-02-postkink-distinctness-prereg.md` — 13 refs — AT L17,18,25; CT L17,20,25,34,36,37,39,51; UAS L23,25
+- ✅ `surahs/Q084-al-inshiqaq/07-cross-references.md` — 13 refs — AT L15,16,23; CT L15,18,23,51,98; UAS L21,23,38,101,120
+- ✅ `surahs/Q093-al-duha/07-cross-references.md` — 13 refs — AT L15,16,23; CT L15,18,23,31,117; UAS L21,23,30,120,140
+- ✅ `surahs/Q094-al-sharh/00-overview.md` — 13 refs — AT L16,17,24,102,154; CT L16,19,24,48,102; UAS L22,24,106
+- ✅ `surahs/Q096-al-alaq/07-cross-references.md` — 13 refs — AT L15,16,23,102,107,208; CT L15,18,23; UAS L21,23,109,111
+- ✅ `surahs/Q099-al-zalzala/00-overview.md` — 13 refs — AT L16,17,24,153,161; CT L16,19,24,199; UAS L22,24,155,196
+- ✅ `surahs/Q102-al-takathur/00-overview.md` — 13 refs — AT L16,17,24; CT L16,19,24,47,83,99; UAS L22,24,98,104
+- ✅ `surahs/Q103-al-asr/00-overview.md` — 13 refs — AT L16,17,24,86; CT L16,19,24; UAS L22,24,80,81,105,131
+- ✅ `surahs/Q112-al-ikhlas/05-classical-claims-audit.md` — 13 refs — AT L15,16,23,139; CT L15,18,23; UAS L21,23,142,146,149,159
+- ✅ `surahs/Q114-al-nas/07-cross-references.md` — 13 refs — AT L15,16,23,49; CT L15,18,23,58,59; UAS L21,23,52,62
+- ✅ `HANDOFF/FRONTIER-MAP-2026-08-07.md` — 12 refs — AT L15,17,22,25,28,37,124; CT L24,42,58,103,109
+- ✅ `findings/balagha-mapping.md` — 12 refs — AT L37,39,44,47,50,59,130,131…; CT L46
+- ✅ `findings/phase-b-hypotheses/h-new-2030-ring-composition.md` — 12 refs — AT L24,26,31,34,37,46,158; CT L33,51,67,236,237
+- ✅ `findings/phase-b-hypotheses/h-new-2090-surah-arithmetic.md` — 12 refs — AT L23,25,30,33,36,45,119; CT L32,50,66,119,163
+- ✅ `findings/phase-b-hypotheses/h-new-880-recipe.md` — 12 refs — CT L3,8,28,44,72,122,143,144…; UAS L10,112,146
+- ✅ `poem/FINAL-strict-classical.md` — 12 refs — AT L7,9,14,17,20,29,163,165; CT L16,34,50,167
+- ✅ `poem/SENSORY-GROUNDING-LAW.md` — 12 refs — AT L6,8,13,16,19,28,72,81; CT L15,33,49,83
+- ✅ `surahs/Q001-al-fatiha/00-overview.md` — 12 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,91,97,118,119
+- ✅ `surahs/Q002-al-baqara/Q002-F-05-q2-282-length.md` — 12 refs — AT L16,17,24; CT L16,19,24,72,80,90,91; UAS L22,24
+- ✅ `surahs/Q004-al-nisa/05-classical-claims-audit.md` — 12 refs — AT L15,16,23,68,70,74,82; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q006-al-anam/04-hadith-corpus.md` — 12 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,79,111,117,132
+- ✅ `surahs/Q006-al-anam/07-cross-references.md` — 12 refs — AT L14,15,22,97,105; CT L14,17,22,95; UAS L20,22,98
+- ✅ `surahs/Q013-al-rad/00-overview.md` — 12 refs — AT L16,17,24,139; CT L16,19,24,75; UAS L22,24,99,135
+- ✅ `surahs/Q015-al-hijr/00-overview.md` — 12 refs — AT L16,17,24,95; CT L16,19,24,85; UAS L22,24,100,138
+- ✅ `surahs/Q015-al-hijr/07-cross-references.md` — 12 refs — AT L15,16,23,36; CT L15,18,23; UAS L21,23,174,176,191
+- ✅ `surahs/Q020-ta-ha/00-overview.md` — 12 refs — AT L16,17,24,74; CT L16,19,24,47,109; UAS L22,24,112
+- ✅ `surahs/Q021-al-anbiya/07-cross-references.md` — 12 refs — AT L14,15,22,82,88; CT L14,17,22,80; UAS L20,22,83
+- ✅ `surahs/Q023-al-muminun/00-overview.md` — 12 refs — AT L16,17,24,94; CT L16,19,24,72; UAS L22,24,92,147
+- ✅ `surahs/Q023-al-muminun/04-hadith-corpus.md` — 12 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,158,162,164,188
+- ✅ `surahs/Q029-al-ankabut/00-overview.md` — 12 refs — AT L16,17,24,105; CT L16,19,24; UAS L22,24,103,110,130
+- ✅ `surahs/Q032-al-sajda/00-overview-comprehensive.md` — 12 refs — AT L17,18,25; CT L17,20,25,157; UAS L23,25,56,71,172
+- ✅ `surahs/Q033-al-ahzab/03-tafsir-survey.md` — 12 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,63,187,202,289
+- ✅ `surahs/Q033-al-ahzab/05-classical-claims-audit.md` — 12 refs — AT L14,15,22; CT L14,17,22,145; UAS L20,22,35,69,195
+- ✅ `surahs/Q033-al-ahzab/06-novel-findings.md` — 12 refs — AT L14,15,22,240; CT L14,17,22,89; UAS L20,22,240,249
+- ✅ `surahs/Q035-fatir/02-content-analysis.md` — 12 refs — AT L15,16,23,142,172,233,339; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q037-al-saffat/00-overview.md` — 12 refs — AT L16,17,24,138; CT L16,19,24,126; UAS L22,24,136,180
+- ✅ `surahs/Q038-sad/00-overview.md` — 12 refs — AT L16,17,24,121; CT L16,19,24,107; UAS L22,24,119,149
+- ✅ `surahs/Q038-sad/07-cross-references.md` — 12 refs — AT L15,16,23; CT L15,18,23,94,95; UAS L21,23,90,123
+- ✅ `surahs/Q040-ghafir/07-cross-references.md` — 12 refs — AT L13,14,21,72; CT L13,16,21,70; UAS L19,21,31,73
+- ✅ `surahs/Q043-al-zukhruf/JOURNAL.md` — 12 refs — AT L14,15,22,124; CT L14,17,22; UAS L20,22,33,81,132
+- ✅ `surahs/Q048-al-fath/07-cross-references.md` — 12 refs — AT L12,13,20; CT L12,15,20,33,34; UAS L18,20,37,124
+- ✅ `surahs/Q050-qaf/06-novel-findings.md` — 12 refs — AT L15,16,23,142,152; CT L15,18,23,270,281; UAS L21,23
+- ✅ `surahs/Q051-al-dhariyat/00-overview.md` — 12 refs — AT L16,17,24,169; CT L16,19,24; UAS L22,24,167,177,195
+- ✅ `surahs/Q052-al-tur/00-overview.md` — 12 refs — AT L16,17,24,221; CT L16,19,24; UAS L22,24,215,219,313
+- ✅ `surahs/Q055-al-rahman/00-overview.md` — 12 refs — AT L16,17,24,88,93; CT L16,19,24; UAS L22,24,86,125
+- ✅ `surahs/Q055-al-rahman/06-novel-findings.md` — 12 refs — AT L13,14,21,169,175; CT L13,16,21; UAS L19,21,167,168
+- ✅ `surahs/Q057-al-hadid/00-overview.md` — 12 refs — AT L16,17,24,111,120; CT L16,19,24; UAS L22,24,119,125
+- ✅ `surahs/Q057-al-hadid/05-classical-claims-audit.md` — 12 refs — AT L13,14,21,67,71,73,111; CT L13,16,21; UAS L19,21
+- ✅ `surahs/Q058-al-mujadala/00-overview.md` — 12 refs — AT L16,17,24,171; CT L16,19,24,217; UAS L22,24,169,220
+- ✅ `surahs/Q066-al-tahrim/00-overview.md` — 12 refs — AT L16,17,24,148; CT L16,19,24,48,97; UAS L22,24,100
+- ✅ `surahs/Q072-al-jinn/JOURNAL.md` — 12 refs — AT L14,15,22; CT L14,17,22,52,105; UAS L20,22,52,105
+- ✅ `surahs/Q073-al-muzzammil/00-overview.md` — 12 refs — AT L16,17,24,72,110; CT L16,19,24,71; UAS L22,24,73
+- ✅ `surahs/Q094-al-sharh/07-cross-references.md` — 12 refs — AT L15,16,23; CT L15,18,23,108; UAS L21,23,111,125,135
+- ✅ `surahs/Q098-al-bayyina/00-overview.md` — 12 refs — AT L16,17,24; CT L16,19,24,48,102; UAS L22,24,88,105
+- ✅ `surahs/Q099-al-zalzala/07-cross-references.md` — 12 refs — AT L15,16,23; CT L15,18,23,37,94; UAS L21,23,97,115
+- ✅ `surahs/Q102-al-takathur/07-cross-references.md` — 12 refs — AT L15,16,23; CT L15,18,23,115; UAS L21,23,40,118,136
+- ✅ `surahs/Q103-al-asr/07-cross-references.md` — 12 refs — AT L15,16,23; CT L15,18,23,89; UAS L21,23,92,100,112
+- ✅ `surahs/Q104-al-humaza/00-overview.md` — 12 refs — AT L16,17,24,72,79,112; CT L16,19,24; UAS L22,24,78
+- ✅ `surahs/Q106-quraysh/00-overview.md` — 12 refs — AT L16,17,24,79,86; CT L16,19,24; UAS L22,24,85,125
+- ✅ `surahs/Q110-al-nasr/01-empirical-profile.md` — 12 refs — AT L12,13,20,57; CT L12,15,20; UAS L18,20,61,65,70
+- ✅ `surahs/Q112-al-ikhlas/00-overview.md` — 12 refs — AT L16,17,24,89; CT L16,19,24; UAS L22,24,97,106,132
+- ✅ `findings/CROSS-FINDING-INDEX.md` — 11 refs — AT L15,17,22,25,28,37,143; CT L24,42,58,130
+- ✅ `findings/TEAM-AMENDMENTS-LOG.md` — 11 refs — AT L13,15,20,23,26,35,125,186…; CT L22
+- ✅ `findings/classical-sources/fresh-wave-3-classical-anchors.md` — 11 refs — AT L26,28,33,36,39,48,118,153…; CT L35
+- ✅ `findings/phase-b-hypotheses/h-new-140-divine-name-pair-cohesion.md` — 11 refs — AT L8,24,26,31,34,37,46,109…; CT L33
+- ✅ `findings/phase-b-hypotheses/h-new-2300-dual-name-fasila-seal.md` — 11 refs — AT L19,21,26,29,32,41,62,188…; CT L28
+- ✅ `findings/phase-b-hypotheses/h-new-2370-within-verse-iconicity.md` — 11 refs — AT L19,21,26,29,32,41,128; CT L28,46,62,132
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2300-dual-name-fasila-seal.md` — 11 refs — AT L18,20,25,28,31,40,49,62…; CT L27
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2400-divine-name-network.md` — 11 refs — AT L19,21,26,29,32,41,53,54…; CT L28
+- ✅ `findings/phase-c-structures/interim-synthesis-2026-04-14.md` — 11 refs — AT L30,32,37,40,43,52,78,94…; CT L39
+- ✅ `findings/team-audits/audit-018.md` — 11 refs — AT L11,20,22,27,30,33,42,62…; CT L29
+- ✅ `surahs/Q001-al-fatiha/Q001-F-03-rhyme-entropy-vs-7-verse.md` — 11 refs — AT L15,16,23,70; CT L15,18,23; UAS L21,23,64,70
+- ✅ `surahs/Q003-al-imran/07-cross-references.md` — 11 refs — AT L15,16,23; CT L15,18,23,81; UAS L21,23,84,100
+- ✅ `surahs/Q003-al-imran/JOURNAL.md` — 11 refs — AT L14,15,22; CT L14,17,22,52; UAS L20,22,39,59
+- ✅ `surahs/Q004-al-nisa/JOURNAL.md` — 11 refs — AT L14,15,22; CT L14,17,22,52; UAS L20,22,39,58
+- ✅ `surahs/Q004-al-nisa/Q004-F-06-alif-monorhyme-prereg.md` — 11 refs — AT L18,19,26,38; CT L18,21,26,46,55; UAS L24,26
+- ✅ `surahs/Q005-al-maida/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,99,126,129
+- ✅ `surahs/Q005-al-maida/06-novel-findings.md` — 11 refs — AT L15,16,23,210; CT L15,18,23,204; UAS L21,23,210
+- ✅ `surahs/Q005-al-maida/Q005-F-05-late-medinan-signature-prereg.md` — 11 refs — AT L18,19,26; CT L18,21,26,35; UAS L14,24,26,37
+- ✅ `surahs/Q011-hud/JOURNAL.md` — 11 refs — AT L13,14,21; CT L13,16,21,100; UAS L19,21,63,191
+- ✅ `surahs/Q016-al-nahl/00-overview.md` — 11 refs — AT L17,18,25; CT L17,20,25,147; UAS L23,25,96,150
+- ✅ `surahs/Q019-maryam/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,81,125,140
+- ✅ `surahs/Q021-al-anbiya/05-classical-claims-audit.md` — 11 refs — AT L14,15,22; CT L14,17,22,72,77,115; UAS L20,22
+- ✅ `surahs/Q022-al-hajj/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24,202; UAS L22,24,147,205
+- ✅ `surahs/Q026-al-shuara/05-classical-claims-audit.md` — 11 refs — AT L14,15,22; CT L14,17,22,47; UAS L20,22,53,61
+- ✅ `surahs/Q027-al-naml/JOURNAL.md` — 11 refs — AT L12,13,20,118; CT L12,15,20; UAS L18,20,226,242
+- ✅ `surahs/Q028-al-qasas/JOURNAL.md` — 11 refs — AT L14,15,22,47; CT L14,17,22,45; UAS L20,22,48
+- ✅ `surahs/Q030-al-rum/07-cross-references.md` — 11 refs — AT L13,14,21; CT L13,16,21,114,123; UAS L19,21,126
+- ✅ `surahs/Q031-luqman/JOURNAL.md` — 11 refs — AT L14,15,22; CT L14,17,22,57; UAS L20,22,61,97
+- ✅ `surahs/Q032-al-sajda/07-cross-references.md` — 11 refs — AT L15,16,23; CT L15,18,23,81; UAS L21,23,84,99
+- ✅ `surahs/Q033-al-ahzab/JOURNAL.md` — 11 refs — AT L12,13,20; CT L12,15,20,112; UAS L18,20,90,135
+- ✅ `surahs/Q036-yasin/03-tafsir-survey.md` — 11 refs — AT L15,16,23,199,200,245; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q040-ghafir/JOURNAL.md` — 11 refs — AT L14,15,22; CT L14,17,22,47; UAS L20,22,47,58
+- ✅ `surahs/Q041-fussilat/07-cross-references.md` — 11 refs — AT L13,14,21; CT L13,16,21,65; UAS L19,21,31,61
+- ✅ `surahs/Q042-al-shura/JOURNAL.md` — 11 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,46,51,62
+- ✅ `surahs/Q045-al-jathiyah/07-cross-references.md` — 11 refs — AT L13,14,21; CT L13,16,21,76,83; UAS L19,21,79
+- ✅ `surahs/Q046-al-ahqaf/07-cross-references.md` — 11 refs — AT L13,14,21,95; CT L13,16,21,93; UAS L19,21,96
+- ✅ `surahs/Q046-al-ahqaf/JOURNAL.md` — 11 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,80,100,123
+- ✅ `surahs/Q047-muhammad/00-overview-comprehensive.md` — 11 refs — AT L17,18,25,176; CT L17,20,25; UAS L23,25,57,185
+- ✅ `surahs/Q047-muhammad/07-cross-references.md` — 11 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,60,84,86
+- ✅ `surahs/Q050-qaf/04-hadith-corpus.md` — 11 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,116,126,127
+- ✅ `surahs/Q051-al-dhariyat/JOURNAL.md` — 11 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,46,52,114
+- ✅ `surahs/Q053-al-najm/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24,229; UAS L22,24,192,232
+- ✅ `surahs/Q056-al-waqia/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24,89; UAS L22,24,78,89
+- ✅ `surahs/Q056-al-waqia/07-cross-references.md` — 11 refs — AT L13,14,21; CT L13,16,21,87,94; UAS L19,21,90
+- ✅ `surahs/Q064-al-taghabun/02-content-analysis.md` — 11 refs — AT L15,16,23,79,123,149; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q066-al-tahrim/07-cross-references.md` — 11 refs — AT L15,16,23; CT L15,18,23,87; UAS L21,23,90,107
+- ✅ `surahs/Q067-al-mulk/03-tafsir-survey.md` — 11 refs — AT L15,16,23,199,203; CT L15,18,23; UAS L21,23,203
+- ✅ `surahs/Q068-al-qalam/07-cross-references.md` — 11 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,78,84,136
+- ✅ `surahs/Q072-al-jinn/07-cross-references.md` — 11 refs — AT L14,15,22; CT L14,17,22,149,150; UAS L20,22,153
+- ✅ `surahs/Q073-al-muzzammil/JOURNAL.md` — 11 refs — AT L16,17,24,48; CT L16,19,24,46; UAS L22,24,49
+- ✅ `surahs/Q075-al-qiyama/00-overview.md` — 11 refs — AT L16,17,24,95; CT L16,19,24; UAS L22,24,93,107
+- ✅ `surahs/Q076-al-insan/01-empirical-profile.md` — 11 refs — AT L12,13,20; CT L12,15,20; UAS L18,20,136,140,173
+- ✅ `surahs/Q077-al-mursalat/00-overview.md` — 11 refs — AT L16,17,24,157; CT L16,19,24; UAS L22,24,155,211
+- ✅ `surahs/Q081-al-takwir/00-overview.md` — 11 refs — AT L16,17,24,86,96; CT L16,19,24; UAS L22,24,84
+- ✅ `surahs/Q083-al-mutaffifin/07-cross-references.md` — 11 refs — AT L15,16,23; CT L15,18,23,58; UAS L21,23,61,80
+- ✅ `surahs/Q088-al-ghashiya/00-overview.md` — 11 refs — AT L16,17,24,170; CT L16,19,24; UAS L22,24,172,215
+- ✅ `surahs/Q089-al-fajr/01-empirical-profile.md` — 11 refs — AT L15,16,23,150; CT L15,18,23,159,190; UAS L21,23
+- ✅ `surahs/Q090-al-balad/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24,47,98; UAS L22,24,101
+- ✅ `surahs/Q091-al-shams/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24,190; UAS L22,24,152,188
+- ✅ `surahs/Q092-al-layl/07-cross-references.md` — 11 refs — AT L15,16,23; CT L15,18,23,110; UAS L21,23,113,131
+- ✅ `surahs/Q093-al-duha/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24,47,98; UAS L22,24,101
+- ✅ `surahs/Q095-al-tin/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,211,216,241
+- ✅ `surahs/Q096-al-alaq/00-overview.md` — 11 refs — AT L16,17,24,201; CT L16,19,24; UAS L22,24,129,202
+- ✅ `surahs/Q096-al-alaq/03-tafsir-survey.md` — 11 refs — AT L15,16,23,58,166,192; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q098-al-bayyina/07-cross-references.md` — 11 refs — AT L15,16,23; CT L15,18,23,92; UAS L21,23,95,114
+- ✅ `surahs/Q098-al-bayyina/JOURNAL.md` — 11 refs — AT L14,15,22; CT L14,17,22,58; UAS L20,22,57,63
+- ✅ `surahs/Q100-al-adiyat/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24,219; UAS L22,24,187,220
+- ✅ `surahs/Q102-al-takathur/JOURNAL.md` — 11 refs — AT L14,15,22; CT L14,17,22,66; UAS L20,22,71,104
+- ✅ `surahs/Q104-al-humaza/01-empirical-profile.md` — 11 refs — AT L11,12,19; CT L11,14,19; UAS L17,19,68,72,157
+- ✅ `surahs/Q105-al-fil/00-overview.md` — 11 refs — AT L16,17,24,69,70; CT L16,19,24; UAS L22,24,77
+- ✅ `surahs/Q109-al-kafirun/00-overview.md` — 11 refs — AT L22,23,30,131,311; CT L22,25,30; UAS L28,30,120
+- ✅ `surahs/Q111-al-masad/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,89,97,128
+- ✅ `surahs/Q113-al-falaq/JOURNAL.md` — 11 refs — AT L14,15,22,45,59; CT L14,17,22; UAS L20,22,35
+- ✅ `surahs/Q114-al-nas/00-overview.md` — 11 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,86,93,117
+- ✅ `surahs/Q114-al-nas/05-classical-claims-audit.md` — 11 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,78,81,84
+- ✅ `HANDOFF/CONTINUE-PROMPT.md` — 10 refs — AT L7,9,14,17,20,29,110,130; CT L16; UAS L60
+- ✅ `findings/cross-finding/scholar-convergence-tracker.md` — 10 refs — AT L23,25,30,33,36,45,111,112…; CT L32
+- ✅ `findings/phase-b-hypotheses/h-new-113-letter-position-prereg.md` — 10 refs — AT L25,40,42,47,50,53,62,75…; CT L49
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2610-waqf-prosody.md` — 10 refs — AT L23,25,30,33,36,45,148,334…; CT L32
+- ✅ `surahs/Q001-al-fatiha/03-tafsir-survey.md` — 10 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,92,305
+- ✅ `surahs/Q001-al-fatiha/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,103,165
+- ✅ `surahs/Q001-al-fatiha/Q001-F-04-q1-removal-centroid-shift.md` — 10 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,79,88
+- ✅ `surahs/Q002-al-baqara/03-tafsir-survey.md` — 10 refs — AT L15,16,23,106; CT L15,18,23,355; UAS L21,23
+- ✅ `surahs/Q002-al-baqara/05-classical-claims-audit.md` — 10 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,48,61
+- ✅ `surahs/Q002-al-baqara/JOURNAL.md` — 10 refs — AT L11,12,19,188; CT L11,14,19; UAS L17,19,188
+- ✅ `surahs/Q002-al-baqara/Q002-F-06-ayat-al-kursi-root-locality.md` — 10 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,99,138
+- ✅ `surahs/Q002-al-baqara/Q002-F-08-longest-verse-monopoly.md` — 10 refs — AT L16,17,24; CT L16,19,24,137,139; UAS L22,24
+- ✅ `surahs/Q006-al-anam/05-classical-claims-audit.md` — 10 refs — AT L14,15,22; CT L14,17,22,135,139; UAS L20,22
+- ✅ `surahs/Q006-al-anam/06-novel-findings.md` — 10 refs — AT L14,15,22,263; CT L14,17,22; UAS L20,22,259
+- ✅ `surahs/Q007-al-araf/JOURNAL.md` — 10 refs — AT L13,14,21; CT L13,16,21,42; UAS L19,21,45
+- ✅ `surahs/Q008-al-anfal/JOURNAL.md` — 10 refs — AT L16,17,24; CT L16,19,24,43; UAS L22,24,46
+- ✅ `surahs/Q009-al-tawba/00-overview.md` — 10 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,92,110
+- ✅ `surahs/Q009-al-tawba/06-novel-findings.md` — 10 refs — AT L15,16,23; CT L15,18,23,299; UAS L21,23,300
+- ✅ `surahs/Q009-al-tawba/JOURNAL.md` — 10 refs — AT L12,13,20; CT L12,15,20; UAS L18,20,99,229
+- ✅ `surahs/Q012-yusuf/04-hadith-corpus.md` — 10 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,110,173
+- ✅ `surahs/Q013-al-rad/04-hadith-corpus.md` — 10 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,106,137
+- ✅ `surahs/Q013-al-rad/Q013-F-03-chronology-architecture-dissociation-prereg.md` — 10 refs — AT L18,19,26; CT L18,21,26,41; UAS L24,26,102
+- ✅ `surahs/Q014-ibrahim/04-hadith-corpus.md` — 10 refs — AT L15,16,23,123; CT L15,18,23; UAS L21,23,102
+- ✅ `surahs/Q016-al-nahl/JOURNAL.md` — 10 refs — AT L13,14,21; CT L13,16,21,48; UAS L19,21,51
+- ✅ `surahs/Q017-al-isra/06-novel-findings.md` — 10 refs — AT L14,15,22,164,217; CT L14,17,22; UAS L20,22
+- ✅ `surahs/Q020-ta-ha/07-cross-references.md` — 10 refs — AT L5,6,13,30,38; CT L5,8,13; UAS L11,13
+- ✅ `surahs/Q021-al-anbiya/JOURNAL.md` — 10 refs — AT L13,14,21; CT L13,16,21,39; UAS L19,21,42
+- ✅ `surahs/Q023-al-muminun/02-content-analysis.md` — 10 refs — AT L15,16,23,259; CT L15,18,23; UAS L21,23,253
+- ✅ `surahs/Q023-al-muminun/03-tafsir-survey.md` — 10 refs — AT L15,16,23,42,174; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q024-al-nur/00-overview.md` — 10 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,73,109
+- ✅ `surahs/Q024-al-nur/04-hadith-corpus.md` — 10 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,165,177
+- ✅ `surahs/Q025-al-furqan/06-novel-findings.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,173,258
+- ✅ `surahs/Q025-al-furqan/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,50,95
+- ✅ `surahs/Q026-al-shuara/04-hadith-corpus.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,89,99
+- ✅ `surahs/Q027-al-naml/04-hadith-corpus.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,96,117
+- ✅ `surahs/Q032-al-sajda/00-overview.md` — 10 refs — AT L16,17,24; CT L16,19,24,74; UAS L22,24,90
+- ✅ `surahs/Q032-al-sajda/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22,46; UAS L20,22,48
+- ✅ `surahs/Q034-saba/07-cross-references.md` — 10 refs — AT L15,16,23; CT L15,18,23,167; UAS L21,23,170
+- ✅ `surahs/Q035-fatir/07-cross-references.md` — 10 refs — AT L15,16,23; CT L15,18,23,188; UAS L21,23,191
+- ✅ `surahs/Q036-yasin/Q036-F-06-fr-centroid-audit.md` — 10 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,62,76
+- ✅ `surahs/Q036-yasin/Q036-F-07-town-of-prophets-cohesion.md` — 10 refs — AT L15,16,23; CT L15,18,23,57,81; UAS L21,23
+- ✅ `surahs/Q037-al-saffat/05-classical-claims-audit.md` — 10 refs — AT L15,16,23,67,72; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q037-al-saffat/JOURNAL.md` — 10 refs — AT L16,17,24; CT L16,19,24,45; UAS L22,24,48
+- ✅ `surahs/Q038-sad/06-novel-findings.md` — 10 refs — AT L15,16,23; CT L15,18,23,220; UAS L21,23,395
+- ✅ `surahs/Q038-sad/JOURNAL.md` — 10 refs — AT L12,13,20; CT L12,15,20; UAS L18,20,45,127
+- ✅ `surahs/Q041-fussilat/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,43,50
+- ✅ `surahs/Q044-al-dukhan/preregs/Q044-F-03-fr-nearest-eschatological-prereg.md` — 10 refs — AT L14,15,22; CT L14,17,22,39; UAS L20,22,38
+- ✅ `surahs/Q045-al-jathiyah/06-novel-findings.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,280,298
+- ✅ `surahs/Q045-al-jathiyah/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,81,125
+- ✅ `surahs/Q048-al-fath/06-novel-findings.md` — 10 refs — AT L13,14,21; CT L13,16,21,68,106; UAS L19,21
+- ✅ `surahs/Q048-al-fath/JOURNAL.md` — 10 refs — AT L13,14,21; CT L13,16,21,56; UAS L19,21,59
+- ✅ `surahs/Q048-al-fath/preregs/Q048-F-01-fath-root-density-prereg.md` — 10 refs — AT L30,31,38; CT L17,30,33,38; UAS L18,36,38
+- ✅ `surahs/Q050-qaf/03-tafsir-survey.md` — 10 refs — AT L15,16,23,107,111; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q053-al-najm/JOURNAL.md` — 10 refs — AT L15,16,23; CT L15,18,23,43; UAS L21,23,46
+- ✅ `surahs/Q055-al-rahman/04-hadith-corpus.md` — 10 refs — AT L13,14,21; CT L13,16,21; UAS L19,21,137,139
+- ✅ `surahs/Q055-al-rahman/05-classical-claims-audit.md` — 10 refs — AT L13,14,21,123,125; CT L13,16,21; UAS L19,21
+- ✅ `surahs/Q056-al-waqia/05-classical-claims-audit.md` — 10 refs — AT L13,14,21; CT L13,16,21,85; UAS L19,21,124
+- ✅ `surahs/Q056-al-waqia/JOURNAL.md` — 10 refs — AT L13,14,21; CT L13,16,21,42; UAS L19,21,45
+- ✅ `surahs/Q065-al-talaq/00-overview.md` — 10 refs — AT L16,17,24,126; CT L16,19,24; UAS L22,24,133
+- ✅ `surahs/Q066-al-tahrim/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22,46; UAS L20,22,50
+- ✅ `surahs/Q067-al-mulk/04-hadith-corpus.md` — 10 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,193,220
+- ✅ `surahs/Q081-al-takwir/02-content-analysis.md` — 10 refs — AT L15,16,23,341,352; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q083-al-mutaffifin/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22,42; UAS L20,22,45
+- ✅ `surahs/Q084-al-inshiqaq/00-overview.md` — 10 refs — AT L16,17,24,137; CT L16,19,24; UAS L22,24,104
+- ✅ `surahs/Q084-al-inshiqaq/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22,51; UAS L20,22,55
+- ✅ `surahs/Q090-al-balad/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22,46; UAS L20,22,49
+- ✅ `surahs/Q096-al-alaq/JOURNAL.md` — 10 refs — AT L12,13,20; CT L12,15,20,64; UAS L18,20,67
+- ✅ `surahs/Q097-al-qadr/00-overview.md` — 10 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,236,336
+- ✅ `surahs/Q099-al-zalzala/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22,38; UAS L20,22,40
+- ✅ `surahs/Q101-al-qaria/00-overview.md` — 10 refs — AT L17,18,25; CT L17,20,25,109; UAS L23,25,176
+- ✅ `surahs/Q107-al-maun/00-overview.md` — 10 refs — AT L16,17,24,80; CT L16,19,24; UAS L22,24,79
+- ✅ `surahs/Q108-al-kawthar/00-overview.md` — 10 refs — AT L17,18,25; CT L17,20,25; UAS L23,25,128,175
+- ✅ `surahs/Q110-al-nasr/00-overview.md` — 10 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,121,156
+- ✅ `surahs/Q113-al-falaq/03-tafsir-survey.md` — 10 refs — AT L15,16,23,109,112; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q114-al-nas/JOURNAL.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,35,64
+- ✅ `surahs/Q114-al-nas/Q114-F-01-cell-co-member-prereg.md` — 10 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,31,37
+- ✅ `findings/classical-sources/hashr-verification-memo.md` — 9 refs — AT L16,18,23,26,29,38,72,97; CT L25
+- ✅ `findings/classical-sources/naw-range-audit-2026-04-14.md` — 9 refs — AT L22,24,29,32,35,44,67,68; CT L31
+- ✅ `findings/phase-b-hypotheses/abjad-residue-fasila-mechanism.md` — 9 refs — AT L10,21,23,28,31,34,43,188; CT L30
+- ✅ `findings/phase-b-hypotheses/cross-finding-020-the-complete-equation.md` — 9 refs — AT L55,57,62,65,68,77,1139,1234; CT L64
+- ✅ `findings/phase-b-hypotheses/fractal-self-similarity.md` — 9 refs — AT L46,48,53,56,59,68,174,278; CT L55
+- ✅ `findings/phase-b-hypotheses/h-new-140-1-all-pair-decircularization.md` — 9 refs — AT L24,26,31,34,37,46,89,161; CT L33
+- ✅ `findings/phase-b-hypotheses/h-new-187-lempel-ziv.md` — 9 refs — AT L22,24,29,32,35,44,91,117; CT L31
+- ✅ `findings/phase-b-hypotheses/h-new-2250-particle-cascade.md` — 9 refs — AT L21,23,28,31,34,43,182,193; CT L30
+- ✅ `findings/phase-b-hypotheses/h-new-226-mushaf-order-scholarly-review.md` — 9 refs — AT L37,39,44,47,50,59,388,404; CT L46
+- ✅ `findings/phase-b-hypotheses/h-new-2380-near-twin-census.md` — 9 refs — AT L19,21,26,29,32,41,83,116; CT L28
+- ✅ `findings/phase-b-hypotheses/h-new-2400-divine-name-network.md` — 9 refs — AT L20,22,27,30,33,42,68,123; CT L29
+- ✅ `findings/phase-b-hypotheses/h-new-2450-adjacent-reprise.md` — 9 refs — AT L19,21,26,29,32,41,105,153; CT L28
+- ✅ `findings/phase-b-hypotheses/h-new-2560-fasila-clause-seal.md` — 9 refs — AT L28,30,35,38,41,50,295,296; CT L37
+- ✅ `findings/phase-b-hypotheses/h-new-62-closings-prereg.md` — 9 refs — AT L22,24,29,32,35,44,94,139; CT L31
+- ✅ `findings/phase-b-hypotheses/h-new-62-closings.md` — 9 refs — AT L20,22,27,30,33,42,54,120; CT L29
+- ✅ `findings/phase-b-hypotheses/h-new-660-compression-tail-gradient-prereg.md` — 9 refs — CT L2,3,11,16,32,56,103,109…
+- ✅ `findings/phase-b-hypotheses/h-new-680-multi-k-compression-tail-prereg.md` — 9 refs — CT L3,6,11,16,32,52,89,109…
+- ✅ `findings/phase-b-hypotheses/h-new-71-allah-distribution.md` — 9 refs — AT L37,39,44,47,50,59,189,300; CT L46
+- ✅ `findings/phase-b-hypotheses/h-new-790-ijaz-by-classical-class.md` — 9 refs — AT L8,24,26,31,34,37,46,115; CT L33
+- ✅ `findings/phase-b-hypotheses/h-new-950-divine-name-spectral.md` — 9 refs — AT L10,19,21,26,29,32,41,94; CT L28
+- ✅ `findings/phase-b-hypotheses/hapax-slot-mechanism.md` — 9 refs — AT L12,22,24,29,32,35,44,52; CT L31
+- ✅ `findings/phase-b-hypotheses/phonaesthetics.md` — 9 refs — AT L39,41,46,49,52,61,151,429; CT L48
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2560-fasila-clause-seal.md` — 9 refs — AT L24,26,31,34,37,46,64,67; CT L33
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2620-tafsir-contested.md` — 9 refs — CT L24; UAS L21,58,93,307,320,322,375,412
+- ✅ `findings/phase-b-hypotheses/saj-rhyme-analysis.md` — 9 refs — AT L32,34,39,42,45,54,426,436; CT L41
+- ✅ `findings/phase-b-hypotheses/team-discovery-017.md` — 9 refs — AT L22,24,29,32,35,44,126,127; CT L31
+- ✅ `poem/FINAL-al-Nuniyya-al-Kubra.md` — 9 refs — AT L6,8,13,16,19,28,110,117; CT L15
+- ✅ `surahs/Q001-al-fatiha/04-hadith-corpus.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,265
+- ✅ `surahs/Q001-al-fatiha/05-classical-claims-audit.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,91
+- ✅ `surahs/Q001-al-fatiha/Q001-F-01-chiastic-symmetry.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,84
+- ✅ `surahs/Q002-al-baqara/02-content-analysis-blocks-E-H.md` — 9 refs — AT L28,29,36; CT L28,31,36; UAS L34,36,236
+- ✅ `surahs/Q002-al-baqara/Q002-F-02-khawatim-baqara.md` — 9 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,92
+- ✅ `surahs/Q007-al-araf/05-classical-claims-audit.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,200
+- ✅ `surahs/Q008-al-anfal/06-novel-findings.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,190
+- ✅ `surahs/Q010-yunus/03-tafsir-survey.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,181
+- ✅ `surahs/Q010-yunus/04-hadith-corpus.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,86
+- ✅ `surahs/Q010-yunus/06-novel-findings.md` — 9 refs — AT L14,15,22,185; CT L14,17,22; UAS L20,22
+- ✅ `surahs/Q011-hud/preregs/Q011-F-05-prophet-cycle-monotone-shrink-prereg.md` — 9 refs — AT L18,19,26; CT L18,21,26,38; UAS L24,26
+- ✅ `surahs/Q012-yusuf/05-classical-claims-audit.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,240
+- ✅ `surahs/Q012-yusuf/JOURNAL.md` — 9 refs — AT L12,13,20; CT L12,15,20; UAS L18,20,42
+- ✅ `surahs/Q013-al-rad/03-tafsir-survey.md` — 9 refs — AT L15,16,23,61; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q013-al-rad/JOURNAL.md` — 9 refs — AT L15,16,23,116; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q013-al-rad/Q013-F-05-chronology-hadith-audit-prereg.md` — 9 refs — AT L18,19,26; CT L18,21,26,81; UAS L24,26
+- ✅ `surahs/Q014-ibrahim/02-content-analysis.md` — 9 refs — AT L15,16,23,166; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q014-ibrahim/05-classical-claims-audit.md` — 9 refs — AT L15,16,23,169; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q014-ibrahim/JOURNAL.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,38
+- ✅ `surahs/Q015-al-hijr/02-content-analysis.md` — 9 refs — AT L15,16,23,180; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q015-al-hijr/JOURNAL.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,38
+- ✅ `surahs/Q018-al-kahf/03-tafsir-survey.md` — 9 refs — AT L15,16,23,118; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q018-al-kahf/06-novel-findings.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,273
+- ✅ `surahs/Q019-maryam/JOURNAL.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,41
+- ✅ `surahs/Q021-al-anbiya/06-novel-findings.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,237
+- ✅ `surahs/Q022-al-hajj/JOURNAL.md` — 9 refs — AT L12,13,20; CT L12,15,20; UAS L18,20,80
+- ✅ `surahs/Q023-al-muminun/05-classical-claims-audit.md` — 9 refs — AT L15,16,23,70; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q024-al-nur/03-tafsir-survey.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,125
+- ✅ `surahs/Q025-al-furqan/04-hadith-corpus.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,105
+- ✅ `surahs/Q025-al-furqan/Q025-F-03-tabaraka-pair-prereg.md` — 9 refs — AT L24,25,32; CT L24,27,32,49; UAS L30,32
+- ✅ `surahs/Q026-al-shuara/02-content-analysis.md` — 9 refs — AT L14,15,22; CT L14,17,22,130; UAS L20,22
+- ✅ `surahs/Q026-al-shuara/03-tafsir-survey.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,135
+- ✅ `surahs/Q026-al-shuara/Q026-F-01-prophet-refrain-cycle-prereg.md` — 9 refs — AT L17,18,25; CT L17,20,25,41; UAS L23,25
+- ✅ `surahs/Q026-al-shuara/Q026-F-02-tsm-cluster-cohesion-prereg.md` — 9 refs — AT L19,20,27; CT L19,22,27; UAS L25,27,46
+- ✅ `surahs/Q026-al-shuara/Q026-F-05-verse-shortness-prereg.md` — 9 refs — AT L17,18,25; CT L17,20,25,83; UAS L23,25
+- ✅ `surahs/Q027-al-naml/03-tafsir-survey.md` — 9 refs — AT L14,15,22,129; CT L14,17,22; UAS L20,22
+- ✅ `surahs/Q027-al-naml/05-classical-claims-audit.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,176
+- ✅ `surahs/Q027-al-naml/Q027-F-05-second-basmala-structural-role-prereg.md` — 9 refs — AT L17,18,25; CT L17,20,25,114; UAS L23,25
+- ✅ `surahs/Q028-al-qasas/03-tafsir-survey.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,136
+- ✅ `surahs/Q028-al-qasas/06-novel-findings.md` — 9 refs — AT L14,15,22,135; CT L14,17,22; UAS L20,22
+- ✅ `surahs/Q028-al-qasas/Q028-F-03-qarun-block-isolation-prereg.md` — 9 refs — AT L20,21,28,45; CT L20,23,28; UAS L26,28
+- ✅ `surahs/Q029-al-ankabut/JOURNAL.md` — 9 refs — AT L13,14,21; CT L13,16,21; UAS L19,21,34
+- ✅ `surahs/Q030-al-rum/Q030-F-04-architectural-twin-prereg.md` — 9 refs — AT L18,19,26; CT L18,21,26,88; UAS L24,26
+- ✅ `surahs/Q033-al-ahzab/02-content-analysis.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,171
+- ✅ `surahs/Q033-al-ahzab/04-hadith-corpus.md` — 9 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,248
+- ✅ `surahs/Q034-saba/JOURNAL.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,46
+- ✅ `surahs/Q035-fatir/JOURNAL.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,46
+- ✅ `surahs/Q036-yasin/02-content-analysis.md` — 9 refs — AT L15,16,23,136; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q036-yasin/04-hadith-corpus.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,158
+- ✅ `surahs/Q037-al-saffat/06-novel-findings.md` — 9 refs — AT L15,16,23; CT L15,18,23,223; UAS L21,23
+- ✅ `surahs/Q037-al-saffat/Q037-F-05-q37-q38-seam-prereg.md` — 9 refs — AT L17,18,25; CT L17,20,25,54; UAS L23,25
+- ✅ `surahs/Q039-al-zumar/00-overview.md` — 9 refs — AT L25,26,33; CT L25,28,33; UAS L31,33,162
+- ✅ `surahs/Q039-al-zumar/JOURNAL.md` — 9 refs — AT L12,13,20; CT L12,15,20; UAS L18,20,62
+- ✅ `surahs/Q041-fussilat/03-tafsir-survey.md` — 9 refs — AT L13,14,21,67; CT L13,16,21; UAS L19,21
+- ✅ `surahs/Q042-al-shura/07-cross-references.md` — 9 refs — AT L13,14,21; CT L13,16,21; UAS L19,21,67
+- ✅ `surahs/Q043-al-zukhruf/06-novel-findings.md` — 9 refs — AT L14,15,22; CT L14,17,22,193; UAS L20,22
+- ✅ `surahs/Q043-al-zukhruf/Q043-F-08-zukhruf-root-rank.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,59
+- ✅ `surahs/Q044-al-dukhan/06-novel-findings.md` — 9 refs — AT L13,14,21; CT L13,16,21,145; UAS L19,21
+- ✅ `surahs/Q045-al-jathiyah/02-content-analysis.md` — 9 refs — AT L13,14,21,111; CT L13,16,21; UAS L19,21
+- ✅ `surahs/Q047-muhammad/00-overview.md` — 9 refs — AT L16,17,24,85; CT L16,19,24; UAS L22,24
+- ✅ `surahs/Q049-al-hujurat/JOURNAL.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,46
+- ✅ `surahs/Q050-qaf/02-content-analysis.md` — 9 refs — AT L15,16,23,121; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q050-qaf/Q050-F-07-qaf-density-vs-meccan-30-50.md` — 9 refs — AT L14,15,22,110; CT L14,17,22; UAS L20,22
+- ✅ `surahs/Q054-al-qamar/preregs/Q054-F-04-monorhyme-purity-prereg.md` — 9 refs — AT L17,18,25,78; CT L17,20,25; UAS L23,25
+- ✅ `surahs/Q059-al-hashr/03-tafsir-survey.md` — 9 refs — AT L13,14,21,138; CT L13,16,21; UAS L19,21
+- ✅ `surahs/Q062-al-jumuah/02-content-analysis.md` — 9 refs — AT L15,16,23; CT L15,18,23,65; UAS L21,23
+- ✅ `surahs/Q065-al-talaq/JOURNAL.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,67
+- ✅ `surahs/Q067-al-mulk/02-content-analysis.md` — 9 refs — AT L15,16,23,118; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q068-al-qalam/00-overview.md` — 9 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,105
+- ✅ `surahs/Q068-al-qalam/preregs/Q068-F-03-singleton-cluster-wordlength-rootrarity-prereg.md` — 9 refs — AT L19,20,27; CT L19,22,27,74; UAS L25,27
+- ✅ `surahs/Q071-nuh/00-overview.md` — 9 refs — AT L16,17,24; CT L16,19,24; UAS L22,24,106
+- ✅ `surahs/Q071-nuh/07-cross-references.md` — 9 refs — AT L5,6,13; CT L5,8,13; UAS L11,13,34
+- ✅ `surahs/Q071-nuh/JOURNAL.md` — 9 refs — AT L5,6,13; CT L5,8,13; UAS L11,13,27
+- ✅ `surahs/Q072-al-jinn/02-content-analysis.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,152
+- ✅ `surahs/Q073-al-muzzammil/Q073-F-05-long-verse-rank-prereg.md` — 9 refs — AT L17,18,25; CT L17,20,25,95; UAS L23,25
+- ✅ `surahs/Q074-al-muddaththir/JOURNAL.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,75
+- ✅ `surahs/Q084-al-inshiqaq/05-classical-claims-audit.md` — 9 refs — AT L15,16,23,58; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q084-al-inshiqaq/06-novel-findings.md` — 9 refs — AT L17,18,25; CT L17,20,25,136; UAS L23,25
+- ✅ `surahs/Q089-al-fajr/02-content-analysis.md` — 9 refs — AT L15,16,23,52; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q092-al-layl/00-overview.md` — 9 refs — AT L15,16,23; CT L15,18,23,45; UAS L21,23
+- ✅ `surahs/Q092-al-layl/02-content-analysis.md` — 9 refs — AT L15,16,23; CT L15,18,23,138; UAS L21,23
+- ✅ `surahs/Q093-al-duha/02-content-analysis.md` — 9 refs — AT L15,16,23; CT L15,18,23,131; UAS L21,23
+- ✅ `surahs/Q093-al-duha/05-classical-claims-audit.md` — 9 refs — AT L15,16,23,60; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q098-al-bayyina/05-classical-claims-audit.md` — 9 refs — AT L15,16,23,69; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q100-al-adiyat/02-content-analysis.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,246
+- ✅ `surahs/Q100-al-adiyat/03-tafsir-survey.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,246
+- ✅ `surahs/Q103-al-asr/06-novel-findings.md` — 9 refs — AT L17,18,25; CT L17,20,25,175; UAS L23,25
+- ✅ `surahs/Q109-al-kafirun/02-content-analysis.md` — 9 refs — AT L13,14,21; CT L13,16,21; UAS L19,21,187
+- ✅ `surahs/Q112-al-ikhlas/JOURNAL.md` — 9 refs — AT L14,15,22; CT L14,17,22; UAS L20,22,43
+- ✅ `surahs/Q113-al-falaq/02-content-analysis.md` — 9 refs — AT L15,16,23,129; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q113-al-falaq/04-hadith-corpus.md` — 9 refs — AT L15,16,23,125; CT L15,18,23; UAS L21,23
+- ✅ `surahs/Q113-al-falaq/Q113-F-03-rare-root-density.md` — 9 refs — AT L12,13,20,49; CT L12,15,20; UAS L18,20
+- ✅ `surahs/Q113-al-falaq/Q113-F-04-rhyme-typology.md` — 9 refs — AT L12,13,20,47; CT L12,15,20; UAS L18,20
+- ✅ `surahs/Q114-al-nas/06-novel-findings.md` — 9 refs — AT L15,16,23; CT L15,18,23; UAS L21,23,40
+- ✅ `surahs/Q114-al-nas/Q114-F-01-cell-co-member.md` — 9 refs — AT L12,13,20; CT L12,15,20; UAS L18,20,30
+- ✅ `findings/convergence-analysis.md` — 8 refs — AT L25,27,32,35,38,47,297; CT L34
+- ✅ `findings/phase-b-hypotheses/chronological-revelation.md` — 8 refs — AT L35,37,42,45,48,57,263; CT L44
+- ✅ `findings/phase-b-hypotheses/cross-finding-026-formal-cohesion-vs-chiasmus-bifurcation.md` — 8 refs — AT L16,18,23,26,29,38,111; CT L25
+- ✅ `findings/phase-b-hypotheses/h-new-1010-singleton-cohort-form-coherence-prereg.md` — 8 refs — AT L32,34,39,42,45,54,99; CT L41
+- ✅ `findings/phase-b-hypotheses/h-new-1010-singleton-cohort-form-coherence.md` — 8 refs — AT L27,29,34,37,40,49,178; CT L36
+- ✅ `findings/phase-b-hypotheses/h-new-1390-opening-linked-content-divergent.md` — 8 refs — AT L22,24,29,32,35,44,138; CT L31
+- ✅ `findings/phase-b-hypotheses/h-new-140-1-all-pair-decircularization-prereg.md` — 8 refs — AT L22,24,29,32,35,44,109; CT L31
+- ✅ `findings/phase-b-hypotheses/h-new-145-muq-code-decoding.md` — 8 refs — AT L24,26,31,34,37,46,124; CT L33
+- ✅ `findings/phase-b-hypotheses/h-new-181-verse-length-acf-prereg.md` — 8 refs — AT L7,9,14,17,20,29,46; CT L16
+- ✅ `findings/phase-b-hypotheses/h-new-2060-first-last-word-scan.md` — 8 refs — AT L29,31,36,39,42,51,104; CT L38
+- ✅ `findings/phase-b-hypotheses/h-new-236-1b-mufassal-terminal-mechanism-prereg.md` — 8 refs — AT L7,9,14,17,20,29,87; CT L16
+- ✅ `findings/phase-b-hypotheses/h-new-236-1b-mufassal-terminal-mechanism.md` — 8 refs — AT L7,9,14,17,20,29,244; CT L16
+- ✅ `findings/phase-b-hypotheses/h-new-2430-eponymous-cycle-centrality.md` — 8 refs — AT L22,24,29,32,35,44,151; CT L31
+- ✅ `findings/phase-b-hypotheses/h-new-247-palindromic-symmetry.md` — 8 refs — AT L7,9,14,17,20,29,125; CT L16
+- ✅ `findings/phase-b-hypotheses/h-new-2470-dispersion-law.md` — 8 refs — AT L20,22,27,30,33,42,169; CT L29
+- ✅ `findings/phase-b-hypotheses/h-new-253-mode-b-siblings.md` — 8 refs — AT L28,30,35,38,41,50,136; CT L37
+- ✅ `findings/phase-b-hypotheses/h-new-2610-waqf-prosody.md` — 8 refs — AT L22,24,29,32,35,44,661; CT L31
+- ✅ `findings/phase-b-hypotheses/h-new-2700-loanword-donor-strata.md` — 8 refs — AT L22,24,29,32,35,44,164; CT L31
+- ✅ `findings/phase-b-hypotheses/h-new-51-1-noldeke-replication.md` — 8 refs — AT L22,24,29,32,35,44,114; CT L31
+- ✅ `findings/phase-b-hypotheses/h-new-580-five-factor-regression.md` — 8 refs — AT L25,27,32,35,38,47,130; CT L34
+- ✅ `findings/phase-b-hypotheses/h-new-880-recipe-prereg.md` — 8 refs — CT L7,20,36,56,68; UAS L9,72,73
+- ✅ `findings/phase-b-hypotheses/h-new-950-divine-name-spectral-prereg.md` — 8 refs — AT L31,40,42,47,50,53,62; CT L49
+- ✅ `findings/phase-b-hypotheses/muqattaat-positional-gradient.md` — 8 refs — AT L26,28,33,36,39,48,98; CT L35
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2290-verse-pair-chiasmus.md` — 8 refs — AT L16,27,29,34,37,40,49; CT L36
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2690-quantitative-scansion.md` — 8 refs — AT L22,24,29,32,35,44,322; CT L31
+- ✅ `findings/phase-b-hypotheses/surah-boundaries.md` — 8 refs — AT L29,31,36,39,42,51,465; CT L38
+- ✅ `findings/phase-b-hypotheses/team-discovery-003.md` — 8 refs — AT L23,25,30,33,36,45,82; CT L32
+- ✅ `findings/phase-c-structures/chiastic-audit.md` — 8 refs — AT L32,34,39,42,45,54,394; CT L41
+- ✅ `findings/scholar-commentary.md` — 8 refs — AT L7,9,14,17,20,29,47; CT L16
+- ✅ `findings/team-audits/audit-020.md` — 8 refs — AT L11,20,22,27,30,33,42; CT L29
+- ✅ `poem/STATUS-CHECKPOINT.md` — 8 refs — AT L6,8,13,16,19,28,39; CT L15
+- ✅ `findings/phase-b-hypotheses/h-new-2420-within-surah-nazm.md` — 7 refs — CT L20; UAS L17,188,190,192,235,236
+- ✅ `findings/phase-b-hypotheses/h-new-630-supercluster-substructure.md` — 7 refs — CT L25,41,118,130,143,164,172
+- ✅ `findings/ORPHAN-REFERENCES.md` — 6 refs — CT L16; UAS L13,381,382,383,384
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-1360-prophet-vocative.md` — 6 refs — CT L32; UAS L29,59,113,115,124
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-2660-exactness-hunt.md` — 6 refs — CT L23; UAS L20,100,150,155,362
+- ✅ `findings/phase-b-hypotheses/h-new-1550-oath-opener-cluster.md` — 5 refs — CT L22,38,129,169,180
+- ✅ `findings/phase-b-hypotheses/h-new-2620-tafsir-contested.md` — 5 refs — CT L27; UAS L24,220,471,490
+- ✅ `findings/phase-b-hypotheses/h-new-720-canonical-adjacency-cost.md` — 5 refs — CT L21,37,113,190,212
+- ✅ `findings/phase-b-hypotheses/cross-finding-025-marker-thickness-vs-fr-cohesion-threshold.md` — 4 refs — CT L23,39,148,171
+- ✅ `findings/phase-b-hypotheses/h-new-1301-impv-qra-cluster.md` — 4 refs — CT L20,36,106,111
+- ✅ `findings/phase-b-hypotheses/h-new-1310-christ-narrative-cluster.md` — 4 refs — CT L20,36,110,116
+- ✅ `findings/phase-b-hypotheses/h-new-2200-iltifat-corpus-map.md` — 4 refs — CT L18,34,254,255
+- ✅ `findings/phase-b-hypotheses/h-new-2520-pericope-onset.md` — 4 refs — CT L23; UAS L20,164,165
+- ✅ `findings/phase-b-hypotheses/h-new-670-tsp-hijra-constraint-prereg.md` — 4 refs — CT L6,16,32,57
+- ✅ `findings/phase-b-hypotheses/information-theory.md` — 4 refs — CT L33,49,85,299
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-1550-oath-opener-cluster.md` — 4 refs — CT L29,45,120,178
+- ✅ `HANDOFF/HOW-TO-RESEARCH-THIS.md` — 3 refs — CT L9; UAS L6,224
+- ✅ `findings/phase-b-hypotheses/h-new-1360-prophet-vocative-cluster.md` — 3 refs — CT L25; UAS L22,140
+- ✅ `findings/phase-b-hypotheses/h-new-1370-long-verse-top10.md` — 3 refs — CT L16,32,112
+- ✅ `findings/phase-b-hypotheses/h-new-1540-hapax-distribution.md` — 3 refs — CT L21; UAS L18,156
+- ✅ `findings/phase-b-hypotheses/h-new-1820-title-density-independence-formal.md` — 3 refs — CT L18; UAS L15,153
+- ✅ `findings/phase-b-hypotheses/h-new-2280-munasabah-seam.md` — 3 refs — CT L18,34,191
+- ✅ `findings/phase-b-hypotheses/h-new-2320-hapax-census.md` — 3 refs — CT L15,31,78
+- ✅ `findings/phase-b-hypotheses/h-new-2390-clause-iltifat.md` — 3 refs — CT L18,34,327
+- ✅ `findings/phase-b-hypotheses/h-new-2410-number-word-census.md` — 3 refs — CT L19,35,257
+- ✅ `findings/phase-b-hypotheses/h-new-2510-divine-self-reference.md` — 3 refs — CT L19,35,184
+- ✅ `findings/phase-b-hypotheses/h-new-600-letter-families.md` — 3 refs — CT L26,42,178
+- ✅ `findings/phase-b-hypotheses/h-new-920-geodesic-curvature.md` — 3 refs — CT L23; UAS L20,64
+- ✅ `findings/phase-b-hypotheses/h-new-940-prophet-order-conservation.md` — 3 refs — CT L24,40,294
+- ✅ `findings/phase-b-hypotheses/prereg-h-new-1370-long-verse-top10.md` — 3 refs — CT L28,44,124
+
+---
+
+## NOT YET CORRECTED — 50 files
+
+These cite a corrected law without yet carrying a notice. Most are journal entries, run
+logs and pre-registrations whose value is precisely that they record what was believed at
+the time; the canonical correction is linked from every load-bearing document instead.
+Listed in full so the backlog is visible rather than implied.
+
+- · `journal/h-new-740-run-1.md` — 20 refs — AT L2,3,10,14,41,57,59,69…; CT L24,26,89,90
+- · `poem/drafts/draft-2-geometer.md` — 20 refs — AT L9,13,170,179,197,210,223,236…; CT L9,485,489,498,511,591
+- · `journal/h-new-700-run-1.md` — 18 refs — AT L63,95,100,101,102; CT L1,6,14,47,51,52,53,59…
+- · `journal/h-new-860-run-1.md` — 17 refs — AT L88; UAS L9,12,16,34,36,48,62,65…
+- · `journal/h-new-870-run-1.md` — 17 refs — CT L5,23,37,39,49,53,70,86…; UAS L14,141
+- · `poem/drafts/draft-1-heir.md` — 17 refs — AT L109,171,235,245,259,274,302,561…; CT L547,557,686
+- · `poem/drafts/draft-3-prophet.md` — 17 refs — AT L13,161,173,174,192,204,244,353…; CT L480,484,492,493,594
+- · `poem/drafts/draft-4-philologist.md` — 17 refs — AT L226,230,237,249,261,266,273,373…; CT L490,494,501
+- · `journal/h-new-770-run-1.md` — 13 refs — CT L1,20,51,53,67,71,75,77…
+- · `journal/h-new-810-run-1.md` — 12 refs — AT L16,20,23,24,36,37,41,42…; CT L16,21
+- · `journal/h-new-900-run-1.md` — 12 refs — AT L4,7,18,25,30; CT L4,7,8,17,24,25,30
+- · `journal/h-new-960-run-1.md` — 8 refs — AT L17,21,30,38,53,56; CT L17,54
+- · `poem/research/06-word-armory.md` — 8 refs — AT L206,208,289,290,346,395; CT L39,194
+- · `journal/h-new-710-run-1.md` — 7 refs — AT L58,67,69,84; CT L5,67,70
+- · `journal/h-new-690-run-1.md` — 6 refs — CT L4,7,14,52,63,65
+- · `poem/al-nuniyya-en.html` — 6 refs — AT L214,216,697,840; CT L786,841
+- · `poem/deploy/public/en.html` — 6 refs — AT L214,216,697,840; CT L786,841
+- · `journal/h-new-680-run-1.md` — 5 refs — CT L6,16,22,70,73
+- · `journal/integration-2026-04-28.md` — 5 refs — AT L73,77; UAS L33,69; 4LAW L40
+- · `journal/Q024-al-nur-deep-dive-run-1.md` — 4 refs — AT L54; UAS L11,32,37
+- · `poem/audits/02-balagha-judge.md` — 4 refs — AT L11,74,190,194
+- · `poem/drafts/master-v1.md` — 4 refs — AT L126,321; CT L240,321
+- · `journal/Q055-al-rahman-template-builder-2026-04-28.md` — 3 refs — UAS L12,43,48
+- · `journal/h-new-140-1-run-1.md` — 3 refs — AT L28,30,44
+- · `journal/h-new-62-run-1.md` — 3 refs — AT L23,37,54
+- · `journal/h-new-910-alif8-cluster-run-1.md` — 3 refs — CT L15,24,41
+- · `poem/al-nuniyya.html` — 3 refs — AT L832; CT L780,833
+- · `poem/deploy/public/index.html` — 3 refs — AT L832; CT L780,833
+- · `scratch/FRONTIER-MAP-2026-08-07.md` — 3 refs — AT L59; CT L38,44
+- · `journal/h-new-71-run-1.md` — 2 refs — AT L88,96
+- · `journal/h-new-750-run-1.md` — 2 refs — AT L89; CT L26
+- · `journal/h-new-880-run-1.md` — 2 refs — CT L15; UAS L17
+- · `poem/drafts/master-v2.md` — 2 refs — AT L61; CT L85
+- · `poem/research/07-arud-darb-ruling.md` — 2 refs — AT L226; CT L226
+- · `journal/Q012-yusuf-specialist-2026-04-28.md` — 1 refs — UAS L11
+- · `journal/balagha-run-1.md` — 1 refs — AT L63
+- · `journal/h-new-245-run-1.md` — 1 refs — AT L56
+- · `journal/h-new-253-run-1.md` — 1 refs — AT L65
+- · `journal/h-new-54-run-1.md` — 1 refs — AT L64
+- · `journal/h-new-600-run-1.md` — 1 refs — CT L95
+- · `journal/h-new-890-run-1.md` — 1 refs — CT L23
+- · `journal/h-new-950-run-1.md` — 1 refs — AT L59
+- · `journal/innama-run-1.md` — 1 refs — AT L50
+- · `journal/interim-synthesis-2026-04-14-run-1.md` — 1 refs — AT L32
+- · `journal/modality-register-run-1.md` — 1 refs — CT L60
+- · `journal/q009-al-tawba-investigation-2026-04-28.md` — 1 refs — UAS L10
+- · `journal/surah-boundaries-run-1.md` — 1 refs — AT L69
+- · `poem/research/02-power-toolkit.md` — 1 refs — AT L109
+- · `scratch/audit-037-wave-3-review.md` — 1 refs — AT L249
+- · `scratch/theorist-2026-04-17-m1-merger.md` — 1 refs — UAS L963
+
+---
+
+*Generated 2026-08-07 by Waiel Al-Shujaa. Additive only; no prior claim was deleted anywhere.*

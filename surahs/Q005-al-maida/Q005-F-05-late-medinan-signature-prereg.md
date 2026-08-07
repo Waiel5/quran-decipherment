@@ -13,6 +13,23 @@ rules_tuple: "(no-tashkeel, QAC-STEM root tokens, FR-roots distance, basmala-cou
 
 # Q005-F-05 — Late-Medinan signature triangulation (FR + sig_A + UAS + rhyme)
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## 1. Background
 
 If Q 5 is among the LAST surahs revealed (Egyptian Standard rev #112, Nöldeke #114), its multi-axis architectural signature should resemble the late-Medinan profile (Q 9 rev #113; Q 110 rev #114). The compression-tail-content law (H-NEW-660) predicts d̄_content ≈ 0.96 for early mushaf-position surahs (s ≤ 50). Q 5's mushaf-position is 5 — pre-kink — but its REVELATION position is late. This is a key dissociation.

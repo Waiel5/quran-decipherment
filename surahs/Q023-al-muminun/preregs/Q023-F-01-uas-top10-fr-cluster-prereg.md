@@ -10,6 +10,23 @@ rules_tuple: (no-tashkeel, QAC-stem-roots, QAC v0.4, Fisher-Rao K=500 stem-roots
 
 # Q023-F-01 — UAS top-10 cluster FR-cohesion (Q 23 within the rank-9 / top-10 set)
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## 1. Background
 
 [[h-new-840-unified-architectural-score|H-NEW-840]] computes the Unified Architectural Score (UAS) for all 114 surahs as a z-sum of three correlated axes (|outlier-strength|, max canonical-adjacency cost, |iʿjāz signature|). The top-10 UAS surahs are reported as `Q 33, 1, 2, 9, 24, 12, 55, 10, 23, 17` per H-NEW-840 `top_15` entries 1-10.

@@ -9,6 +9,23 @@ verdict: COMPLETE — 10 claims audited (6 VINDICATED, 2 FALSIFIED, 1 DIRECTIONA
 
 # Q 10 Yūnus — Classical claims audit
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 Pre-flight: each claim is sourced to a specific scholar + work + passage; the empirical test is pre-registered (see `Q010-F-NN-*-prereg.md`); the verdict is one of {VINDICATED, FALSIFIED, RULES-TUPLE-FRAGILE, NOT-TESTABLE, DIRECTIONAL}.
 
 ## Claim 1 — al-Suyūṭī: Q 10 has 110 (or 109) verses

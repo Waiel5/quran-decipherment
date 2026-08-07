@@ -10,6 +10,23 @@ verdict: COMPLETE — all hadith numbers verified against ahmedbaset-json corpus
 
 # Q 14 Ibrāhīm — Hadith Corpus
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 This file inventories Q 14-relevant hadith citations across the 9-book canonical corpus. All numbers are pulled from `data/literature/hadith/ahmedbaset-json/db/by_book/the_9_books/*.json` (`hadiths[i].idInBook`) and verified by Arabic-text search in this run. **CRITICAL CORRECTION**: secondary-tafsir literature widely cites Bukhārī #3364 as the Hagar-Mecca-settling narrative; verification in our digital corpus shows #3364 is actually about the Ghifar/Aslam tribes, NOT Hagar. The CORRECT Bukhārī number for the Hagar-Ishmael Mecca-foundation narrative is **#3225** (and parallels #3224, #3226 for shorter versions; #2274 for the brief *yarḥamu Allāhu umm Ismāʿīl* form). All numbers below have been re-verified.
 
 ## 1. Q 14:24-25 (the good-word parable / *kalimat al-tawḥīd* date-palm)

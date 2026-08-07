@@ -44,7 +44,7 @@ discriminates.**
 | # | law | Qurʾān (surface) | poetry | al-Bukhārī (200 cuts) | al-Jāḥiẓ (200 cuts) | verdict |
 |:--|:--|--:|--:|--:|--:|:--|
 | **G1** | H-NEW-660 content compression-tail, R² | **0.9887** | 0.8633 | 0.9577 [0.893–0.990] | 0.9686 [0.927–0.991] | **GENRE-SHARED** (Qurʾān at 99.5 / 99.0 pctile) |
-| **G1b** | …its post-kink **slope** β | **−0.01343** | −0.0133 | −0.0101 [−0.0113, −0.0088] | −0.0124 [−0.0136, −0.0114] | **GENRE-SHARED-BUT-LARGER** — steeper than 200/200 and 198/200 |
+| **G1b** | …its post-kink **slope** β | **−0.01343** | −0.0133 | −0.0101 [−0.0113, −0.0088] | −0.0124 [−0.0136, −0.0114] | **GENRE-SHARED-BUT-LARGER** — steeper than 200/200 ḥadīth and 198/200 adab cuts (196/200 on replication) |
 | **G2** | H-NEW-700 rhyme dispersion-tail, R² | 0.7983 | 0.6842 | 0.7941 [0.648–0.903] | 0.7972 [0.643–0.914] | **GENRE-SHARED** (51st / 50.5th pctile — dead centre) |
 | **G3** | H-NEW-700 phoneme dispersion-tail, R² | 0.9329 | **0.9332** | 0.8846 [0.549–0.981] | 0.8904 [0.543–0.972] | **GENRE-SHARED** |
 | **G4** | H-NEW-770 verse-length tail (letters), R² | 0.8073 | **0.8113** | 0.8098 [0.790–0.827] | 0.8107 [0.792–0.826] | **REVERSED** — 137/200 and 135/200 baselines exceed |
@@ -351,7 +351,23 @@ declared untested here rather than given a manufactured verdict.
 
 ### 7.1 Replication (MW-5), seed 20260519
 
-*(filled from the replication run — see §8)*
+A full re-run with 200 freshly drawn offsets per resampleable baseline. **Every verdict is
+identical**; the Qurʾān's percentile within each baseline band moves by at most 3 points,
+which is the sampling noise of the offset draw itself.
+
+| statistic | Qurʾān | Bukhārī pctile (primary → replication) | Jāḥiẓ pctile (primary → replication) |
+|:--|--:|:-:|:-:|
+| G1 content R² | 0.9887 | 99.5 → **99.5** (1/200 → 1/200 exceed) | 99.0 → **97.5** (2/200 → 5/200) |
+| G1b slope β | −0.01343 | 100 → **100** (0/200 steeper) | 99.0 → **98.0** (2/200 → 4/200) |
+| G2 rhyme R² | 0.7983 | 51.0 → **50.5** | 50.5 → **50.0** |
+| G3 phoneme R² | 0.9329 | 76.5 → **74.5** | 73.0 → **74.5** |
+| G4 letters R² | 0.8073 | 31.5 → **34.5** | 32.5 → **37.0** |
+| **G5 anti-twin r** | **−0.8700** | 14.0 → **16.5** | **3.0 → 1.5** |
+| G5 content×phoneme r | −0.8747 | 8.0 → 9.5 | 9.0 → 11.0 |
+
+The deterministic arms are bit-identical across seeds: QURAN-SURF (G1 R² 0.9887, β
+−0.01343, G5 −0.8700), the uniform arm (G1 R² 0.3388, β −0.00151, G5 −0.3375), poetry's
+single partition, and G6–G9 for every corpus. Wall time 512 s and 524 s.
 
 ### 7.2 What should change in the project record
 

@@ -10,6 +10,23 @@ verdict: 8 mufassirūn surveyed; first-revealed-status converged across all 8
 
 # Q 96 al-ʿAlaq — Classical Tafsir Survey
 
+
+> **⛔ CORRECTION NOTICE — 2026-08-07.** This file locates this surah within the
+> **compression-tail** and/or **iʿjāz anti-twin** framework. Both met a matched Arabic control
+> on 2026-08-07 and **neither discriminates**. The anti-twin is **REVERSED** — this corpus sits
+> at the **3rd percentile** of al-Jāḥiẓ and the 14th of al-Bukhārī, and pre-Islamic poetry under
+> a matched partition reaches r = −0.872 against this corpus's −0.870. The compression-tail is
+> **genre-shared and 91.5 % explained by unit size**: log(unit size) alone gives R² = 0.9147,
+> and re-cutting this corpus's own verses to equal size collapses R² from 0.9887 to **0.3388**.
+> UAS is a synthesis index with no null hypothesis.
+>
+> Positional statements below — "in the compression-tail", "iʿjāz-fawāṣil cell", a UAS rank —
+> remain accurate as **descriptions of where this surah sits on those axes**. What is withdrawn
+> is that the axes distinguish this corpus from ordinary Arabic. Nothing below is deleted.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2720-genre-control-sweep.md`
+> Summary: `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`.
+
 ## 1. Coverage scope
 
 This survey covers 8 mufassirūn from the 9th-15th century (CE) period, plus 2 modern academic references. The classical tradition's convergence on Q 96's first-revelation status is striking — every single mufassir surveyed identifies the surah as the first NUZŪL EVENT, with the only disagreement being whether vv 1-3 (Bukhārī) or vv 1-5 (Muslim, al-Ṭabarī, al-Suyūṭī) constitute the first-revealed core.
