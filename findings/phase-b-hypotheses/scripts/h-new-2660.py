@@ -1069,7 +1069,7 @@ def main():
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H%M%SZ")
     run_dir = os.path.join(ROOT, "findings/phase-b-hypotheses/runs/h-new-2660",
                            stamp + (("-" + args.tag) if args.tag else ""))
-    os.makedirs(run_dir, exist_ok=True)
+    os.makedirs(run_dir, exist_ok=False)
     print("[run] %s" % run_dir)
 
     plain, mint, full = load_corpus()
@@ -1381,20 +1381,20 @@ def main():
         e2_nearmiss, key=lambda r: (-r["overlap"], r["p_overlap"]))[:60]
     results["walltime_sec"] = round(time.time() - t0, 1)
 
-    with open(os.path.join(run_dir, "h-new-2660.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(run_dir, "h-new-2660.json"), "x", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=1)
     for fam in all_cells:
-        with open(os.path.join(run_dir, "cells-%s.json" % fam), "w",
+        with open(os.path.join(run_dir, "cells-%s.json" % fam), "x",
                   encoding="utf-8") as f:
             json.dump(all_cells[fam], f, ensure_ascii=False)
-        with open(os.path.join(run_dir, "hits-%s.json" % fam), "w",
+        with open(os.path.join(run_dir, "hits-%s.json" % fam), "x",
                   encoding="utf-8") as f:
             json.dump(all_hits[fam], f, ensure_ascii=False)
-    with open(os.path.join(run_dir, "mechanical.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(run_dir, "mechanical.json"), "x", encoding="utf-8") as f:
         json.dump(mechanical, f, ensure_ascii=False)
-    with open(os.path.join(run_dir, "cbm.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(run_dir, "cbm.json"), "x", encoding="utf-8") as f:
         json.dump(cbm, f, ensure_ascii=False)
-    with open(os.path.join(run_dir, "e2-nearmiss-full.json"), "w",
+    with open(os.path.join(run_dir, "e2-nearmiss-full.json"), "x",
               encoding="utf-8") as f:
         json.dump(sorted(e2_nearmiss, key=lambda r: -r["overlap"]),
                   f, ensure_ascii=False)

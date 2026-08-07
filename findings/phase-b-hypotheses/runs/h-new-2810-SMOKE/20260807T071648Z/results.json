@@ -1,0 +1,489 @@
+{
+  "finding_id": "H-NEW-2810",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2810-unverifiable-rederivation.md",
+  "prereg_sha256": "9e09aaa147b9a238b2514f42adbf28cbcd706bc6b43a855d45c24e6b966d16b4",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  },
+  "literals": {
+    "L1": {
+      "value": 0.759,
+      "claim": "H-NEW-192 Ridge LOOCV R2 (mushaf, 15 features)",
+      "consumed_at": [
+        "scripts/h_new_233_ensemble_predictor.py:532,571",
+        "scripts/h_new_250_equation_fit.py:670"
+      ]
+    },
+    "L2": {
+      "value": 0.817,
+      "claim": "H-NEW-192 RF LOOCV R2 (mushaf, 15 features)",
+      "consumed_at": [
+        "scripts/h_new_233_ensemble_predictor.py:533,572",
+        "scripts/h_new_250_equation_fit.py:671"
+      ]
+    },
+    "L3": {
+      "value": 0.836,
+      "claim": "H-NEW-183 Ridge LOOCV R2 (Noldeke)",
+      "consumed_at": [
+        "scripts/h_new_233_ensemble_predictor.py:573",
+        "scripts/h_new_250_equation_fit.py:674"
+      ]
+    },
+    "L4": {
+      "value": 0.7395,
+      "claim": "H-NEW-233 Ridge LOOCV R2 (29 features)",
+      "consumed_at": [
+        "scripts/h_new_250_equation_fit.py:672"
+      ]
+    },
+    "L5": {
+      "value": 0.8485,
+      "claim": "H-NEW-233 RF LOOCV R2 (29 features)",
+      "consumed_at": [
+        "scripts/h_new_250_equation_fit.py:673"
+      ]
+    },
+    "L6": {
+      "value": 0.4138,
+      "claim": "H-NEW-88 RF LOOCV top-1 accuracy",
+      "consumed_at": [
+        "scripts/h_new_179_alpha_beta_predictor.py:533"
+      ]
+    },
+    "L7": {
+      "value": 0.6552,
+      "claim": "H-NEW-165 RF top-1 accuracy",
+      "consumed_at": [
+        "scripts/h_new_275_bukhari_opener_phonological_replication.py:385"
+      ]
+    },
+    "L8": {
+      "value": 136,
+      "claim": "H-NEW-1710 total Musa mentions (corpus)",
+      "consumed_at": [
+        "scripts/Q028_F_06_musa_density_rank.py:126"
+      ]
+    },
+    "L9": {
+      "value": 0.923,
+      "claim": "H-NEW-1395 null uniform mean",
+      "consumed_at": [
+        "scripts/Q030_F_08_alm_cluster_fr_cohesion.py:184"
+      ]
+    }
+  },
+  "results": {
+    "L3": {
+      "tag": "L3",
+      "literal": 0.836,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-183.json -> /model_A_ridge_full/r2_loocv",
+      "artifact_value": 0.8355931448330429,
+      "literal_precision_dp": 3,
+      "artifact_rounded_to_that_precision": 0.836,
+      "verdict": "CONFIRMS"
+    },
+    "L4": {
+      "tag": "L4",
+      "literal": 0.7395,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-233.json -> /model_A_ridge/r2_loocv",
+      "artifact_value": 0.7395490015311565,
+      "literal_precision_dp": 4,
+      "artifact_rounded_to_that_precision": 0.7395,
+      "verdict": "CONFIRMS"
+    },
+    "L5": {
+      "tag": "L5",
+      "literal": 0.8485,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-233.json -> /model_B_rf/r2_loocv",
+      "artifact_value": 0.848516936603147,
+      "literal_precision_dp": 4,
+      "artifact_rounded_to_that_precision": 0.8485,
+      "verdict": "CONFIRMS"
+    },
+    "L6": {
+      "tag": "L6",
+      "literal": 0.4138,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-88.json -> /results_by_classifier/rf/loocv_top1_accuracy",
+      "artifact_value": 0.41379310344827586,
+      "literal_precision_dp": 4,
+      "artifact_rounded_to_that_precision": 0.4138,
+      "verdict": "CONFIRMS"
+    },
+    "L7": {
+      "tag": "L7",
+      "literal": 0.6552,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-165-2.json -> /baseline_reference/h_new_165_rf_top1",
+      "artifact_value": 0.6551724137931034,
+      "literal_precision_dp": 4,
+      "artifact_rounded_to_that_precision": 0.6552,
+      "verdict": "CONFIRMS"
+    },
+    "L9": {
+      "tag": "L9",
+      "literal": 0.923,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-1395.json -> /cell_A/null_mean",
+      "artifact_value": 0.9229932999809524,
+      "literal_precision_dp": 3,
+      "artifact_rounded_to_that_precision": 0.923,
+      "verdict": "CONFIRMS"
+    },
+    "L8": {
+      "tag": "L8",
+      "literal": 136,
+      "rederived_from_QAC": 136,
+      "h_new_1710_json_value": 136,
+      "Q028_F_06_own_recount": 136,
+      "q28_surah_count_rederived": 18,
+      "q28_surah_count_published": 18,
+      "verdict": "CONFIRMS"
+    },
+    "L1": {
+      "tag": "L1",
+      "literal": 0.759,
+      "exhaustive_search": {
+        "n_evaluated": 60,
+        "n_total_space": 20349,
+        "target": 0.759,
+        "tolerance": 0.0005,
+        "n_matches": 0,
+        "matches": [],
+        "closest": [
+          {
+            "r2": 0.7534942395440567,
+            "abs_dev": 0.005505760455943309,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_emphatic"
+            ]
+          },
+          {
+            "r2": 0.7524637380761507,
+            "abs_dev": 0.0065362619238492625,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "alpha_minus_beta",
+              "beta"
+            ]
+          },
+          {
+            "r2": 0.7521487528827537,
+            "abs_dev": 0.006851247117246273,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "hurst_verse_len"
+            ]
+          },
+          {
+            "r2": 0.7510146612536335,
+            "abs_dev": 0.007985338746366533,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_palatal"
+            ]
+          },
+          {
+            "r2": 0.748912151593758,
+            "abs_dev": 0.010087848406241995,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "book_ref_density"
+            ]
+          },
+          {
+            "r2": 0.7480472921346599,
+            "abs_dev": 0.010952707865340083,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "alpha_minus_beta",
+              "phon_emphatic"
+            ]
+          },
+          {
+            "r2": 0.7470369498279485,
+            "abs_dev": 0.01196305017205146,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_continuant"
+            ]
+          },
+          {
+            "r2": 0.7468907385320813,
+            "abs_dev": 0.012109261467918686,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_velar"
+            ]
+          },
+          {
+            "r2": 0.7465379422119414,
+            "abs_dev": 0.012462057788058645,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "alpha_minus_beta",
+              "hurst_verse_len"
+            ]
+          },
+          {
+            "r2": 0.7462364326163173,
+            "abs_dev": 0.012763567383682672,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_glottal"
+            ]
+          }
+        ],
+        "distribution": {
+          "min": 0.6874876046644158,
+          "p05": 0.7177829587229877,
+          "median": 0.7410059756866401,
+          "p95": 0.8022546362160553,
+          "max": 0.8119319634021516,
+          "mean": 0.7470837162875946,
+          "sd": 0.028170170498203095
+        },
+        "min_abs_dev_from_literal": 0.005505760455943309
+      },
+      "verdict": "IRRECOVERABLE"
+    },
+    "L2": {
+      "tag": "L2",
+      "literal": 0.817,
+      "channel_B": {
+        "n_trees": 200,
+        "seed": 20260509,
+        "target_rf_r2": 0.817,
+        "closest_ridge_candidates": [
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "book_ref_density"
+            ],
+            "ridge_r2": 0.748912151593758,
+            "rf_r2": 0.8184294429031409,
+            "rf_r2_abs_dev_from_literal": 0.001429442903140954,
+            "importance_max_abs_dev": 0.5376608118629368,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.03174745288453118
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.7534942395440567,
+            "rf_r2": 0.8266317393329419,
+            "rf_r2_abs_dev_from_literal": 0.009631739332941924,
+            "importance_max_abs_dev": 0.5393535039505813,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.04070781605346818
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "alpha_minus_beta",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.7480472921346599,
+            "rf_r2": 0.825148582045726,
+            "rf_r2_abs_dev_from_literal": 0.008148582045726105,
+            "importance_max_abs_dev": 0.539775807126184,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.03892682034389855
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.7510146612536335,
+            "rf_r2": 0.8205706445798993,
+            "rf_r2_abs_dev_from_literal": 0.003570644579899307,
+            "importance_max_abs_dev": 0.5413758161353003,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.026565456433595057
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "hurst_verse_len"
+            ],
+            "ridge_r2": 0.7521487528827537,
+            "rf_r2": 0.8217934760332922,
+            "rf_r2_abs_dev_from_literal": 0.0047934760332922766,
+            "importance_max_abs_dev": 0.5424938045596719,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.02501772164128523
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "alpha_minus_beta",
+              "beta"
+            ],
+            "ridge_r2": 0.7524637380761507,
+            "rf_r2": 0.8185236396589781,
+            "rf_r2_abs_dev_from_literal": 0.0015236396589781709,
+            "importance_max_abs_dev": 0.5427138918408708,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.022976547706988114
+          }
+        ],
+        "random_controls": [
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "lz_norm_simple"
+            ],
+            "ridge_r2": 0.7911533093593242,
+            "rf_r2": 0.8132437386849194,
+            "rf_r2_abs_dev_from_literal": 0.0037562613150805557,
+            "importance_max_abs_dev": 0.31857233696414394,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6506292971298262
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "entropy_rate_surah"
+            ],
+            "ridge_r2": 0.8016766543747389,
+            "rf_r2": 0.8387406731333914,
+            "rf_r2_abs_dev_from_literal": 0.021740673133391453,
+            "importance_max_abs_dev": 0.3767784774202212,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.7855886167542159
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "book_ref_density",
+              "phon_alveolar"
+            ],
+            "ridge_r2": 0.7289730847963136,
+            "rf_r2": 0.8246013580121909,
+            "rf_r2_abs_dev_from_literal": 0.007601358012190973,
+            "importance_max_abs_dev": 0.5376567724685641,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.0450456154383454
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "book_ref_density",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.741199913280939,
+            "rf_r2": 0.820210294445232,
+            "rf_r2_abs_dev_from_literal": 0.0032102944452320203,
+            "importance_max_abs_dev": 0.5388510208093017,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.03136332334284998
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_glottal"
+            ],
+            "ridge_r2": 0.7462364326163173,
+            "rf_r2": 0.8207609578582855,
+            "rf_r2_abs_dev_from_literal": 0.003760957858285563,
+            "importance_max_abs_dev": 0.5402854440122249,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.029416668878020823
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7311206250320967,
+            "rf_r2": 0.8229934288491525,
+            "rf_r2_abs_dev_from_literal": 0.005993428849152549,
+            "importance_max_abs_dev": 0.5407549954148015,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.042843741163237144
+          }
+        ],
+        "best_importance_max_abs_dev_overall": 0.31857233696414394,
+        "best_rf_r2_abs_dev_overall": 0.001429442903140954,
+        "any_rank_order_match": false,
+        "published_importance_sum_of_named_ten": 0.98
+      },
+      "verdict": "IRRECOVERABLE"
+    }
+  },
+  "verdicts": {
+    "L1": "IRRECOVERABLE",
+    "L2": "IRRECOVERABLE",
+    "L3": "CONFIRMS",
+    "L4": "CONFIRMS",
+    "L5": "CONFIRMS",
+    "L6": "CONFIRMS",
+    "L7": "CONFIRMS",
+    "L8": "CONFIRMS",
+    "L9": "CONFIRMS"
+  },
+  "elapsed_s": 187.3,
+  "smoke": true
+}

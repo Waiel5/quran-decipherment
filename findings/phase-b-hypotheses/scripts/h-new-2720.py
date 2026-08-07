@@ -592,7 +592,7 @@ def main():
     stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     rundir = P('findings/phase-b-hypotheses/runs/h-new-2720/' + stamp +
                (('-' + args.tag) if args.tag else ''))
-    os.makedirs(rundir, exist_ok=True)
+    os.makedirs(rundir, exist_ok=False)
     log('[run] %s' % rundir)
 
     rng = np.random.default_rng(args.seed)
@@ -690,14 +690,14 @@ def main():
     res['summary'] = build_summary(res)
     res['walltime_sec'] = round(time.time() - t0, 1)
 
-    with open(os.path.join(rundir, 'h-new-2720.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(rundir, 'h-new-2720.json'), 'x', encoding='utf-8') as f:
         json.dump(res, f, ensure_ascii=False, indent=1)
     manifest = dict(id='H-NEW-2720', utc=stamp, seed=args.seed,
                     prereg=dict(path=PREREG_REL, sha256=PREREG_SHA),
                     frozen_inputs={k: v for k, v in FROZEN.items()},
                     poetry_corpus=dict(files=POETRY_FILES, sha256=POETRY_SHA),
                     script='findings/phase-b-hypotheses/scripts/h-new-2720.py')
-    with open(os.path.join(rundir, 'manifest.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(rundir, 'manifest.json'), 'x', encoding='utf-8') as f:
         json.dump(manifest, f, ensure_ascii=False, indent=1)
     if not args.tag:
         with open(P('findings/phase-b-hypotheses/csv/h-new-2720.json'),

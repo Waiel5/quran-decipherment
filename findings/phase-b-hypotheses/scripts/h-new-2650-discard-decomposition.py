@@ -103,9 +103,9 @@ def main():
                          "b_rate_of_all_discards": tot_b / (tot_a + tot_b)},
         "exhaustive_inspection": inspection,
     }
-    with open(os.path.join(rundir, "discard-decomposition.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(rundir, "discard-decomposition.json"), "x", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
-    with open(os.path.join(rundir, "manifest.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(rundir, "manifest.json"), "x", encoding="utf-8") as fh:
         json.dump({"finding_id": "H-NEW-2650", "utc": ts,
                    "artifact": "discard-decomposition",
                    "script": "findings/phase-b-hypotheses/scripts/h-new-2650-discard-decomposition.py",

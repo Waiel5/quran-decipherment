@@ -575,7 +575,7 @@ def main():
     t0 = time.time()
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     run_dir = os.path.join(ROOT, "runs", "h-new-2670", stamp)
-    os.makedirs(run_dir, exist_ok=True)
+    os.makedirs(run_dir, exist_ok=False)
 
     prereg_sha = verify_gates()
     loci, muq14, surahs = derive_muqattaat()
@@ -855,7 +855,7 @@ def main():
     for p in (OUT_JSON, os.path.join(run_dir, "h-new-2670.json")):
         with open(p, "w", encoding="utf-8") as fh:
             json.dump(payload, fh, ensure_ascii=False, indent=2)
-    with open(os.path.join(run_dir, "script.sha256"), "w") as fh:
+    with open(os.path.join(run_dir, "script.sha256"), "x") as fh:
         fh.write(_sha256(os.path.abspath(__file__)) + "  h-new-2670.py\n")
     print(f"\n[done] {OUT_JSON}\n[done] {run_dir}  ({time.time()-t0:.1f}s total)")
 

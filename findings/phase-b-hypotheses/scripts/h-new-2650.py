@@ -366,17 +366,17 @@ def main():
         "sign_flips": flipped, "lost_significance": lost_sig, "degraded_pairs": degraded,
         "validation_sample_rows": len(samples),
     }
-    with open(os.path.join(rundir, "result.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(rundir, "result.json"), "x", encoding="utf-8") as fh:
         json.dump(result, fh, ensure_ascii=False, indent=1)
-    with open(os.path.join(rundir, "validation-sample.tsv"), "w", encoding="utf-8", newline="") as fh:
+    with open(os.path.join(rundir, "validation-sample.tsv"), "x", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=list(samples[0].keys()), delimiter="\t")
         w.writeheader()
         for r in samples:
             w.writerow(r)
-    with open(os.path.join(rundir, "validation-key.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(rundir, "validation-key.json"), "x", encoding="utf-8") as fh:
         json.dump({"seed": SEED_PRIMARY, "replication_seed": SEED_REPLICATION,
                    "replication_order": order, "rows": key_rows}, fh, ensure_ascii=False, indent=1)
-    with open(os.path.join(rundir, "manifest.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(rundir, "manifest.json"), "x", encoding="utf-8") as fh:
         json.dump({"finding_id": "H-NEW-2650", "utc": ts,
                    "prereg": "findings/phase-b-hypotheses/prereg-h-new-2650-pronoun-channel-validation.md",
                    "prereg_sha256": PREREG_SHA,
