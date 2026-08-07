@@ -1,0 +1,39 @@
+{
+  "id": "H-NEW-2770",
+  "utc": "20260807T043327Z",
+  "script": "findings/phase-b-hypotheses/scripts/h-new-2770.py",
+  "script_sha256": "0c69f9e42ff029b85dd935ba639ff08a6835e419f355b53c3a09e9c9b4e6fe40",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2770-chronology-content-length-nuisance.md",
+  "prereg_sha256": "da1c747d759a4da3ead662e263d38e8a4fe036057a10f041b524caf408894817",
+  "inputs_sha256": {
+    "data/asma-al-husna.txt": "f607eb3882074d2c2011b17d0edc754fe0899a34ffb39ce0b8b27a8c80781220",
+    "data/baseline-corpora/raw/bukhari-noquran.txt": "0169b60de7585a51fc340161488534c4d909370c3dcc8951ca2ae3818c44a100",
+    "data/baseline-corpora/raw/jahiz-hayawan.txt": "419095484df4e315eba889d38a9c2f6edff55c2f10f481ed9ad024e07bbff0cd",
+    "data/loanwords/jeffery-1938-loanwords.tsv": "d12ebac9d4bb62bbc1a8c810d7e2c069195e20113a77fb04505a84dfd4674b94",
+    "data/morphology/quranic-corpus-morphology-0.4.txt": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "data/revelation-order.csv": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7",
+    "findings/phase-b-hypotheses/scripts/h-new-2680.py": "57d6b214344ea81433e9f840524e6259953657fbf60e8fd54fdd8d2706b88497",
+    "quran-text/quran-no-tashkeel.json": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "scripts/h_new_125_chronology_content.py": "57d8289c7754ebc920df10d748a98b830cced399a03053e31861177a1f91e941"
+  },
+  "poetry_corpus_sha256": "f6c5525ddfa8d06ca974cbc937ad1f7f96839418e2eabdd3b94f8fce66fb983a",
+  "lifted_fragments": {
+    "h_new_125": {
+      "axes_region": "b9f6139658df1470",
+      "stats_region": "bc91f8f4548c7ad4"
+    },
+    "h_new_2680": {
+      "regex": "2cd4d0ca289fd137",
+      "normalise_words": "8e49ae080acc6335",
+      "build_pseudo_corpus": "6931e0863f09a79c"
+    }
+  },
+  "python": "3.13.12",
+  "seeds": [
+    20260509,
+    20260519
+  ],
+  "n_perm": 10000,
+  "verdict": "DOES-NOT-DISCRIMINATE",
+  "immutability": "Immutable. Never delete or overwrite, per prereg §8."
+}

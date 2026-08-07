@@ -1,0 +1,1100 @@
+{
+  "id": "H-NEW-2770",
+  "title": "Does H-NEW-125's chronology-content map survive a null matching verse length?",
+  "target_claim": "H-NEW-125",
+  "method_parent": [
+    "H-NEW-2680",
+    "H-NEW-2760"
+  ],
+  "defect_diagnosed": "null does not match the nuisance parameter (H-NEW-740 shape)",
+  "prereg_sha256": "da1c747d759a4da3ead662e263d38e8a4fe036057a10f041b524caf408894817",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  },
+  "n_perm": 200,
+  "bonferroni_k": 5,
+  "alpha_bonferroni": 0.01,
+  "alpha_per_axis_bonferroni15": 0.0033333333333333335,
+  "S_pub_density_axes_passing": 9,
+  "instrument_gate": [
+    {
+      "axis": "surah_length",
+      "reproduced": 0.3903,
+      "published": 0.39,
+      "ok": true
+    },
+    {
+      "axis": "mean_verse_length",
+      "reproduced": 0.9038,
+      "published": 0.904,
+      "ok": true
+    },
+    {
+      "axis": "muq_cardinality",
+      "reproduced": 0.2547,
+      "published": 0.255,
+      "ok": true
+    },
+    {
+      "axis": "allah_density",
+      "reproduced": 0.852,
+      "published": 0.852,
+      "ok": true
+    },
+    {
+      "axis": "qul_density",
+      "reproduced": 0.5421,
+      "published": 0.542,
+      "ok": true
+    },
+    {
+      "axis": "prophet_narrative_density",
+      "reproduced": 0.5304,
+      "published": 0.53,
+      "ok": true
+    },
+    {
+      "axis": "legal_term_density",
+      "reproduced": 0.7039,
+      "published": 0.704,
+      "ok": true
+    },
+    {
+      "axis": "eschatological_density",
+      "reproduced": 0.7096,
+      "published": 0.71,
+      "ok": true
+    },
+    {
+      "axis": "book_reference_density",
+      "reproduced": 0.5744,
+      "published": 0.574,
+      "ok": true
+    },
+    {
+      "axis": "oath_density",
+      "reproduced": -0.0041,
+      "published": -0.004,
+      "ok": true
+    },
+    {
+      "axis": "divine_name_density",
+      "reproduced": 0.8973,
+      "published": 0.897,
+      "ok": true
+    },
+    {
+      "axis": "personal_pronoun_density",
+      "reproduced": 0.4956,
+      "published": 0.496,
+      "ok": true
+    },
+    {
+      "axis": "rhyme_letter_diversity",
+      "reproduced": 0.1789,
+      "published": 0.179,
+      "ok": true
+    },
+    {
+      "axis": "refrain_density",
+      "reproduced": 0.0023,
+      "published": 0.002,
+      "ok": true
+    },
+    {
+      "axis": "loanword_density",
+      "reproduced": 0.8329,
+      "published": 0.833,
+      "ok": true
+    }
+  ],
+  "lifted": {
+    "h_new_125": {
+      "axes_region": "b9f6139658df1470",
+      "stats_region": "bc91f8f4548c7ad4"
+    },
+    "h_new_2680": {
+      "regex": "2cd4d0ca289fd137",
+      "normalise_words": "8e49ae080acc6335",
+      "build_pseudo_corpus": "6931e0863f09a79c"
+    }
+  },
+  "cells": {
+    "PRIMARY": {
+      "seed": 20260509,
+      "H2": {
+        "rho_N1_mean_verse_length": 0.9038,
+        "p": 0.0001,
+        "rho_N2_surah_words": 0.6892,
+        "rho_N3_verse_count": 0.3903,
+        "ordering_ok": true,
+        "PASS": true
+      },
+      "axes": [
+        {
+          "axis": "allah_density",
+          "rho_perverse": 0.852,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.7535,
+          "p_perword": 0.0001,
+          "delta_rho": -0.0985,
+          "p_perverse_mvl_stratified": 0.0002,
+          "p_perword_mvl_stratified": 0.0004,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.849,
+          "partial_rho_ctrl_logMVL": 0.3744,
+          "partial_rho_ctrl_logwords": 0.7649,
+          "published_passing": true
+        },
+        {
+          "axis": "qul_density",
+          "rho_perverse": 0.5421,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.4867,
+          "p_perword": 0.0001,
+          "delta_rho": -0.0554,
+          "p_perverse_mvl_stratified": 0.023198,
+          "p_perword_mvl_stratified": 0.015498,
+          "p_perverse_words_stratified": 0.005499,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.5113,
+          "partial_rho_ctrl_logMVL": 0.2174,
+          "partial_rho_ctrl_logwords": 0.2344,
+          "published_passing": true
+        },
+        {
+          "axis": "prophet_narrative_density",
+          "rho_perverse": 0.5304,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.3506,
+          "p_perword": 0.0004,
+          "delta_rho": -0.1798,
+          "p_perverse_mvl_stratified": 0.232877,
+          "p_perword_mvl_stratified": 0.237176,
+          "p_perverse_words_stratified": 0.005299,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.5854,
+          "partial_rho_ctrl_logMVL": 0.0037,
+          "partial_rho_ctrl_logwords": 0.2091,
+          "published_passing": true
+        },
+        {
+          "axis": "legal_term_density",
+          "rho_perverse": 0.7039,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.4439,
+          "p_perword": 0.0001,
+          "delta_rho": -0.26,
+          "p_perverse_mvl_stratified": 0.644236,
+          "p_perword_mvl_stratified": 0.842316,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.7935,
+          "partial_rho_ctrl_logMVL": -0.0508,
+          "partial_rho_ctrl_logwords": 0.4564,
+          "published_passing": true
+        },
+        {
+          "axis": "eschatological_density",
+          "rho_perverse": 0.7096,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.1451,
+          "p_perword": 0.117088,
+          "delta_rho": -0.5645,
+          "p_perverse_mvl_stratified": 0.156584,
+          "p_perword_mvl_stratified": 0.252475,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.7637,
+          "partial_rho_ctrl_logMVL": 0.07,
+          "partial_rho_ctrl_logwords": 0.4539,
+          "published_passing": true
+        },
+        {
+          "axis": "book_reference_density",
+          "rho_perverse": 0.5744,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.2772,
+          "p_perword": 0.0032,
+          "delta_rho": -0.2972,
+          "p_perverse_mvl_stratified": 0.933207,
+          "p_perword_mvl_stratified": 0.909909,
+          "p_perverse_words_stratified": 0.048195,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.6929,
+          "partial_rho_ctrl_logMVL": -0.168,
+          "partial_rho_ctrl_logwords": 0.171,
+          "published_passing": true
+        },
+        {
+          "axis": "oath_density",
+          "rho_perverse": -0.0041,
+          "p_perverse": 0.965303,
+          "rho_perword": -0.1362,
+          "p_perword": 0.150585,
+          "delta_rho": -0.1321,
+          "p_perverse_mvl_stratified": 0.926507,
+          "p_perword_mvl_stratified": 0.538646,
+          "p_perverse_words_stratified": 0.980102,
+          "p_perverse_verses_stratified": 0.976802,
+          "rho_vs_MVL": 0.034,
+          "partial_rho_ctrl_logMVL": -0.0813,
+          "partial_rho_ctrl_logwords": -0.1576,
+          "published_passing": false
+        },
+        {
+          "axis": "divine_name_density",
+          "rho_perverse": 0.8973,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.7631,
+          "p_perword": 0.0001,
+          "delta_rho": -0.1342,
+          "p_perverse_mvl_stratified": 0.0001,
+          "p_perword_mvl_stratified": 0.0002,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.891,
+          "partial_rho_ctrl_logMVL": 0.4735,
+          "partial_rho_ctrl_logwords": 0.8261,
+          "published_passing": true
+        },
+        {
+          "axis": "personal_pronoun_density",
+          "rho_perverse": 0.4956,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.144,
+          "p_perword": 0.124788,
+          "delta_rho": -0.3516,
+          "p_perverse_mvl_stratified": 0.611939,
+          "p_perword_mvl_stratified": 0.752425,
+          "p_perverse_words_stratified": 0.0032,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.5541,
+          "partial_rho_ctrl_logMVL": -0.0145,
+          "partial_rho_ctrl_logwords": 0.284,
+          "published_passing": true
+        },
+        {
+          "axis": "refrain_density",
+          "rho_perverse": 0.0023,
+          "p_perverse": 0.980002,
+          "rho_perword": 0.002,
+          "p_perword": 0.981302,
+          "delta_rho": -0.0003,
+          "p_perverse_mvl_stratified": 0.994701,
+          "p_perword_mvl_stratified": 0.9952,
+          "p_perverse_words_stratified": 0.989301,
+          "p_perverse_verses_stratified": 0.992401,
+          "rho_vs_MVL": -0.0447,
+          "partial_rho_ctrl_logMVL": 0.0999,
+          "partial_rho_ctrl_logwords": -0.1601,
+          "published_passing": false
+        },
+        {
+          "axis": "loanword_density",
+          "rho_perverse": 0.8329,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.0547,
+          "p_perword": 0.561944,
+          "delta_rho": -0.7781,
+          "p_perverse_mvl_stratified": 0.015898,
+          "p_perword_mvl_stratified": 0.341366,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.8866,
+          "partial_rho_ctrl_logMVL": 0.1594,
+          "partial_rho_ctrl_logwords": 0.6679,
+          "published_passing": true
+        }
+      ],
+      "counts": {
+        "S_pub_declared": 9,
+        "per_verse_reproduced": 9,
+        "per_word": 6,
+        "per_verse_MVL_stratified": 2,
+        "per_word_MVL_stratified": 2,
+        "per_verse_words_stratified": 6,
+        "per_verse_verses_stratified": 9
+      },
+      "A4": {
+        "quran_rho_vs_MVL": {
+          "allah_density": 0.849,
+          "qul_density": 0.5113,
+          "prophet_narrative_density": 0.5854,
+          "legal_term_density": 0.7935,
+          "eschatological_density": 0.7637,
+          "book_reference_density": 0.6929,
+          "divine_name_density": 0.891,
+          "personal_pronoun_density": 0.5541,
+          "loanword_density": 0.8866
+        },
+        "quran_median_rho_vs_MVL": 0.7637,
+        "corpora": {
+          "bukhari": {
+            "per_axis": {
+              "allah_density": {
+                "n_reps": 3,
+                "target_tokens": 2704,
+                "median_rho_vs_MVL": 0.8622,
+                "min_rho_vs_MVL": 0.8451,
+                "max_rho_vs_MVL": 0.8959,
+                "median_rho_vs_index": -0.629,
+                "quran_rho_vs_MVL": 0.849
+              },
+              "qul_density": {
+                "n_reps": 3,
+                "target_tokens": 332,
+                "median_rho_vs_MVL": 0.6939,
+                "min_rho_vs_MVL": 0.6368,
+                "max_rho_vs_MVL": 0.7365,
+                "median_rho_vs_index": -0.6179,
+                "quran_rho_vs_MVL": 0.5113
+              },
+              "prophet_narrative_density": {
+                "n_reps": 3,
+                "target_tokens": 528,
+                "median_rho_vs_MVL": 0.6191,
+                "min_rho_vs_MVL": 0.4274,
+                "max_rho_vs_MVL": 0.6838,
+                "median_rho_vs_index": -0.6389,
+                "quran_rho_vs_MVL": 0.5854
+              },
+              "legal_term_density": {
+                "n_reps": 3,
+                "target_tokens": 851,
+                "median_rho_vs_MVL": 0.6816,
+                "min_rho_vs_MVL": 0.6777,
+                "max_rho_vs_MVL": 0.7558,
+                "median_rho_vs_index": -0.5673,
+                "quran_rho_vs_MVL": 0.7935
+              },
+              "eschatological_density": {
+                "n_reps": 3,
+                "target_tokens": 1394,
+                "median_rho_vs_MVL": 0.7672,
+                "min_rho_vs_MVL": 0.6987,
+                "max_rho_vs_MVL": 0.7855,
+                "median_rho_vs_index": -0.6367,
+                "quran_rho_vs_MVL": 0.7637
+              },
+              "book_reference_density": {
+                "n_reps": 3,
+                "target_tokens": 1082,
+                "median_rho_vs_MVL": 0.7121,
+                "min_rho_vs_MVL": 0.6758,
+                "max_rho_vs_MVL": 0.7203,
+                "median_rho_vs_index": -0.571,
+                "quran_rho_vs_MVL": 0.6929
+              },
+              "divine_name_density": {
+                "n_reps": 3,
+                "target_tokens": 4539,
+                "median_rho_vs_MVL": 0.8946,
+                "min_rho_vs_MVL": 0.8731,
+                "max_rho_vs_MVL": 0.9229,
+                "median_rho_vs_index": -0.659,
+                "quran_rho_vs_MVL": 0.891
+              },
+              "personal_pronoun_density": {
+                "n_reps": 3,
+                "target_tokens": 646,
+                "median_rho_vs_MVL": 0.8153,
+                "min_rho_vs_MVL": 0.7716,
+                "max_rho_vs_MVL": 0.8399,
+                "median_rho_vs_index": -0.6923,
+                "quran_rho_vs_MVL": 0.5541
+              },
+              "loanword_density": {
+                "n_reps": 3,
+                "target_tokens": 6156,
+                "median_rho_vs_MVL": 0.919,
+                "min_rho_vs_MVL": 0.888,
+                "max_rho_vs_MVL": 0.9298,
+                "median_rho_vs_index": -0.6746,
+                "quran_rho_vs_MVL": 0.8866
+              }
+            },
+            "corpus_median_rho_vs_MVL": 0.7672,
+            "ratio_to_quran_median": 1.0045,
+            "reaches_half_of_quran": true
+          },
+          "jahiz": {
+            "per_axis": {
+              "allah_density": {
+                "n_reps": 3,
+                "target_tokens": 2704,
+                "median_rho_vs_MVL": 0.854,
+                "min_rho_vs_MVL": 0.8363,
+                "max_rho_vs_MVL": 0.9039,
+                "median_rho_vs_index": -0.6592,
+                "quran_rho_vs_MVL": 0.849
+              },
+              "qul_density": {
+                "n_reps": 3,
+                "target_tokens": 332,
+                "median_rho_vs_MVL": 0.6142,
+                "min_rho_vs_MVL": 0.5237,
+                "max_rho_vs_MVL": 0.6861,
+                "median_rho_vs_index": -0.5641,
+                "quran_rho_vs_MVL": 0.5113
+              },
+              "prophet_narrative_density": {
+                "n_reps": 3,
+                "target_tokens": 528,
+                "median_rho_vs_MVL": 0.7116,
+                "min_rho_vs_MVL": 0.598,
+                "max_rho_vs_MVL": 0.7704,
+                "median_rho_vs_index": -0.5406,
+                "quran_rho_vs_MVL": 0.5854
+              },
+              "legal_term_density": {
+                "n_reps": 3,
+                "target_tokens": 851,
+                "median_rho_vs_MVL": 0.7006,
+                "min_rho_vs_MVL": 0.6248,
+                "max_rho_vs_MVL": 0.7209,
+                "median_rho_vs_index": -0.6015,
+                "quran_rho_vs_MVL": 0.7935
+              },
+              "eschatological_density": {
+                "n_reps": 3,
+                "target_tokens": 1394,
+                "median_rho_vs_MVL": 0.7541,
+                "min_rho_vs_MVL": 0.7491,
+                "max_rho_vs_MVL": 0.8363,
+                "median_rho_vs_index": -0.5247,
+                "quran_rho_vs_MVL": 0.7637
+              },
+              "book_reference_density": {
+                "n_reps": 3,
+                "target_tokens": 1082,
+                "median_rho_vs_MVL": 0.7626,
+                "min_rho_vs_MVL": 0.6748,
+                "max_rho_vs_MVL": 0.813,
+                "median_rho_vs_index": -0.6085,
+                "quran_rho_vs_MVL": 0.6929
+              },
+              "divine_name_density": {
+                "n_reps": 3,
+                "target_tokens": 4539,
+                "median_rho_vs_MVL": 0.8738,
+                "min_rho_vs_MVL": 0.8583,
+                "max_rho_vs_MVL": 0.8861,
+                "median_rho_vs_index": -0.6627,
+                "quran_rho_vs_MVL": 0.891
+              },
+              "personal_pronoun_density": {
+                "n_reps": 3,
+                "target_tokens": 646,
+                "median_rho_vs_MVL": 0.6485,
+                "min_rho_vs_MVL": 0.6401,
+                "max_rho_vs_MVL": 0.6578,
+                "median_rho_vs_index": -0.5519,
+                "quran_rho_vs_MVL": 0.5541
+              },
+              "loanword_density": {
+                "n_reps": 3,
+                "target_tokens": 6156,
+                "median_rho_vs_MVL": 0.8963,
+                "min_rho_vs_MVL": 0.8752,
+                "max_rho_vs_MVL": 0.9188,
+                "median_rho_vs_index": -0.6846,
+                "quran_rho_vs_MVL": 0.8866
+              }
+            },
+            "corpus_median_rho_vs_MVL": 0.7541,
+            "ratio_to_quran_median": 0.9874,
+            "reaches_half_of_quran": true
+          },
+          "poetry": {
+            "per_axis": {
+              "allah_density": {
+                "n_reps": 3,
+                "target_tokens": 2704,
+                "median_rho_vs_MVL": 0.8646,
+                "min_rho_vs_MVL": 0.7777,
+                "max_rho_vs_MVL": 0.899,
+                "median_rho_vs_index": -0.6193,
+                "quran_rho_vs_MVL": 0.849
+              },
+              "qul_density": {
+                "n_reps": 3,
+                "target_tokens": 332,
+                "median_rho_vs_MVL": 0.6985,
+                "min_rho_vs_MVL": 0.6654,
+                "max_rho_vs_MVL": 0.7297,
+                "median_rho_vs_index": -0.5572,
+                "quran_rho_vs_MVL": 0.5113
+              },
+              "prophet_narrative_density": {
+                "n_reps": 3,
+                "target_tokens": 528,
+                "median_rho_vs_MVL": 0.6921,
+                "min_rho_vs_MVL": 0.6075,
+                "max_rho_vs_MVL": 0.7096,
+                "median_rho_vs_index": -0.5686,
+                "quran_rho_vs_MVL": 0.5854
+              },
+              "legal_term_density": {
+                "n_reps": 3,
+                "target_tokens": 851,
+                "median_rho_vs_MVL": 0.7246,
+                "min_rho_vs_MVL": 0.7168,
+                "max_rho_vs_MVL": 0.7314,
+                "median_rho_vs_index": -0.5951,
+                "quran_rho_vs_MVL": 0.7935
+              },
+              "eschatological_density": {
+                "n_reps": 3,
+                "target_tokens": 1394,
+                "median_rho_vs_MVL": 0.7875,
+                "min_rho_vs_MVL": 0.7744,
+                "max_rho_vs_MVL": 0.843,
+                "median_rho_vs_index": -0.6359,
+                "quran_rho_vs_MVL": 0.7637
+              },
+              "book_reference_density": {
+                "n_reps": 3,
+                "target_tokens": 1082,
+                "median_rho_vs_MVL": 0.7537,
+                "min_rho_vs_MVL": 0.7144,
+                "max_rho_vs_MVL": 0.8285,
+                "median_rho_vs_index": -0.6045,
+                "quran_rho_vs_MVL": 0.6929
+              },
+              "divine_name_density": {
+                "n_reps": 3,
+                "target_tokens": 4539,
+                "median_rho_vs_MVL": 0.9045,
+                "min_rho_vs_MVL": 0.8957,
+                "max_rho_vs_MVL": 0.9112,
+                "median_rho_vs_index": -0.6396,
+                "quran_rho_vs_MVL": 0.891
+              },
+              "personal_pronoun_density": {
+                "n_reps": 3,
+                "target_tokens": 646,
+                "median_rho_vs_MVL": 0.6476,
+                "min_rho_vs_MVL": 0.6196,
+                "max_rho_vs_MVL": 0.6799,
+                "median_rho_vs_index": -0.5397,
+                "quran_rho_vs_MVL": 0.5541
+              },
+              "loanword_density": {
+                "n_reps": 3,
+                "target_tokens": 6156,
+                "median_rho_vs_MVL": 0.9073,
+                "min_rho_vs_MVL": 0.8913,
+                "max_rho_vs_MVL": 0.9379,
+                "median_rho_vs_index": -0.6535,
+                "quran_rho_vs_MVL": 0.8866
+              }
+            },
+            "corpus_median_rho_vs_MVL": 0.7537,
+            "ratio_to_quran_median": 0.9869,
+            "reaches_half_of_quran": true
+          }
+        }
+      }
+    },
+    "REPLICATION": {
+      "seed": 20260519,
+      "H2": {
+        "rho_N1_mean_verse_length": 0.9038,
+        "p": 0.0001,
+        "rho_N2_surah_words": 0.6892,
+        "rho_N3_verse_count": 0.3903,
+        "ordering_ok": true,
+        "PASS": true
+      },
+      "axes": [
+        {
+          "axis": "allah_density",
+          "rho_perverse": 0.852,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.7535,
+          "p_perword": 0.0001,
+          "delta_rho": -0.0985,
+          "p_perverse_mvl_stratified": 0.0002,
+          "p_perword_mvl_stratified": 0.0003,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.849,
+          "partial_rho_ctrl_logMVL": 0.3744,
+          "partial_rho_ctrl_logwords": 0.7649,
+          "published_passing": true
+        },
+        {
+          "axis": "qul_density",
+          "rho_perverse": 0.5421,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.4867,
+          "p_perword": 0.0001,
+          "delta_rho": -0.0554,
+          "p_perverse_mvl_stratified": 0.025197,
+          "p_perword_mvl_stratified": 0.017898,
+          "p_perverse_words_stratified": 0.006099,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.5113,
+          "partial_rho_ctrl_logMVL": 0.2174,
+          "partial_rho_ctrl_logwords": 0.2344,
+          "published_passing": true
+        },
+        {
+          "axis": "prophet_narrative_density",
+          "rho_perverse": 0.5304,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.3506,
+          "p_perword": 0.0005,
+          "delta_rho": -0.1798,
+          "p_perverse_mvl_stratified": 0.242676,
+          "p_perword_mvl_stratified": 0.241776,
+          "p_perverse_words_stratified": 0.005,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.5854,
+          "partial_rho_ctrl_logMVL": 0.0037,
+          "partial_rho_ctrl_logwords": 0.2091,
+          "published_passing": true
+        },
+        {
+          "axis": "legal_term_density",
+          "rho_perverse": 0.7039,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.4439,
+          "p_perword": 0.0001,
+          "delta_rho": -0.26,
+          "p_perverse_mvl_stratified": 0.641436,
+          "p_perword_mvl_stratified": 0.835216,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.7935,
+          "partial_rho_ctrl_logMVL": -0.0508,
+          "partial_rho_ctrl_logwords": 0.4564,
+          "published_passing": true
+        },
+        {
+          "axis": "eschatological_density",
+          "rho_perverse": 0.7096,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.1451,
+          "p_perword": 0.118788,
+          "delta_rho": -0.5645,
+          "p_perverse_mvl_stratified": 0.165583,
+          "p_perword_mvl_stratified": 0.255274,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.7637,
+          "partial_rho_ctrl_logMVL": 0.07,
+          "partial_rho_ctrl_logwords": 0.4539,
+          "published_passing": true
+        },
+        {
+          "axis": "book_reference_density",
+          "rho_perverse": 0.5744,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.2772,
+          "p_perword": 0.0026,
+          "delta_rho": -0.2972,
+          "p_perverse_mvl_stratified": 0.935706,
+          "p_perword_mvl_stratified": 0.909809,
+          "p_perverse_words_stratified": 0.047195,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.6929,
+          "partial_rho_ctrl_logMVL": -0.168,
+          "partial_rho_ctrl_logwords": 0.171,
+          "published_passing": true
+        },
+        {
+          "axis": "oath_density",
+          "rho_perverse": -0.0041,
+          "p_perverse": 0.967303,
+          "rho_perword": -0.1362,
+          "p_perword": 0.147785,
+          "delta_rho": -0.1321,
+          "p_perverse_mvl_stratified": 0.923608,
+          "p_perword_mvl_stratified": 0.544946,
+          "p_perverse_words_stratified": 0.978302,
+          "p_perverse_verses_stratified": 0.978902,
+          "rho_vs_MVL": 0.034,
+          "partial_rho_ctrl_logMVL": -0.0813,
+          "partial_rho_ctrl_logwords": -0.1576,
+          "published_passing": false
+        },
+        {
+          "axis": "divine_name_density",
+          "rho_perverse": 0.8973,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.7631,
+          "p_perword": 0.0001,
+          "delta_rho": -0.1342,
+          "p_perverse_mvl_stratified": 0.0001,
+          "p_perword_mvl_stratified": 0.0001,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.891,
+          "partial_rho_ctrl_logMVL": 0.4735,
+          "partial_rho_ctrl_logwords": 0.8261,
+          "published_passing": true
+        },
+        {
+          "axis": "personal_pronoun_density",
+          "rho_perverse": 0.4956,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.144,
+          "p_perword": 0.131787,
+          "delta_rho": -0.3516,
+          "p_perverse_mvl_stratified": 0.614539,
+          "p_perword_mvl_stratified": 0.747025,
+          "p_perverse_words_stratified": 0.0031,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.5541,
+          "partial_rho_ctrl_logMVL": -0.0145,
+          "partial_rho_ctrl_logwords": 0.284,
+          "published_passing": true
+        },
+        {
+          "axis": "refrain_density",
+          "rho_perverse": 0.0023,
+          "p_perverse": 0.980402,
+          "rho_perword": 0.002,
+          "p_perword": 0.983402,
+          "delta_rho": -0.0003,
+          "p_perverse_mvl_stratified": 0.994601,
+          "p_perword_mvl_stratified": 0.9961,
+          "p_perverse_words_stratified": 0.989301,
+          "p_perverse_verses_stratified": 0.991501,
+          "rho_vs_MVL": -0.0447,
+          "partial_rho_ctrl_logMVL": 0.0999,
+          "partial_rho_ctrl_logwords": -0.1601,
+          "published_passing": false
+        },
+        {
+          "axis": "loanword_density",
+          "rho_perverse": 0.8329,
+          "p_perverse": 0.0001,
+          "rho_perword": 0.0547,
+          "p_perword": 0.558144,
+          "delta_rho": -0.7781,
+          "p_perverse_mvl_stratified": 0.016998,
+          "p_perword_mvl_stratified": 0.344266,
+          "p_perverse_words_stratified": 0.0001,
+          "p_perverse_verses_stratified": 0.0001,
+          "rho_vs_MVL": 0.8866,
+          "partial_rho_ctrl_logMVL": 0.1594,
+          "partial_rho_ctrl_logwords": 0.6679,
+          "published_passing": true
+        }
+      ],
+      "counts": {
+        "S_pub_declared": 9,
+        "per_verse_reproduced": 9,
+        "per_word": 6,
+        "per_verse_MVL_stratified": 2,
+        "per_word_MVL_stratified": 2,
+        "per_verse_words_stratified": 6,
+        "per_verse_verses_stratified": 9
+      },
+      "A4": {
+        "quran_rho_vs_MVL": {
+          "allah_density": 0.849,
+          "qul_density": 0.5113,
+          "prophet_narrative_density": 0.5854,
+          "legal_term_density": 0.7935,
+          "eschatological_density": 0.7637,
+          "book_reference_density": 0.6929,
+          "divine_name_density": 0.891,
+          "personal_pronoun_density": 0.5541,
+          "loanword_density": 0.8866
+        },
+        "quran_median_rho_vs_MVL": 0.7637,
+        "corpora": {
+          "bukhari": {
+            "per_axis": {
+              "allah_density": {
+                "n_reps": 3,
+                "target_tokens": 2704,
+                "median_rho_vs_MVL": 0.8308,
+                "min_rho_vs_MVL": 0.7928,
+                "max_rho_vs_MVL": 0.8697,
+                "median_rho_vs_index": -0.6531,
+                "quran_rho_vs_MVL": 0.849
+              },
+              "qul_density": {
+                "n_reps": 3,
+                "target_tokens": 332,
+                "median_rho_vs_MVL": 0.6788,
+                "min_rho_vs_MVL": 0.6453,
+                "max_rho_vs_MVL": 0.7169,
+                "median_rho_vs_index": -0.6279,
+                "quran_rho_vs_MVL": 0.5113
+              },
+              "prophet_narrative_density": {
+                "n_reps": 3,
+                "target_tokens": 528,
+                "median_rho_vs_MVL": 0.7119,
+                "min_rho_vs_MVL": 0.6206,
+                "max_rho_vs_MVL": 0.7585,
+                "median_rho_vs_index": -0.6176,
+                "quran_rho_vs_MVL": 0.5854
+              },
+              "legal_term_density": {
+                "n_reps": 3,
+                "target_tokens": 851,
+                "median_rho_vs_MVL": 0.7019,
+                "min_rho_vs_MVL": 0.6525,
+                "max_rho_vs_MVL": 0.7636,
+                "median_rho_vs_index": -0.5587,
+                "quran_rho_vs_MVL": 0.7935
+              },
+              "eschatological_density": {
+                "n_reps": 3,
+                "target_tokens": 1394,
+                "median_rho_vs_MVL": 0.8084,
+                "min_rho_vs_MVL": 0.6793,
+                "max_rho_vs_MVL": 0.8286,
+                "median_rho_vs_index": -0.5727,
+                "quran_rho_vs_MVL": 0.7637
+              },
+              "book_reference_density": {
+                "n_reps": 3,
+                "target_tokens": 1082,
+                "median_rho_vs_MVL": 0.7498,
+                "min_rho_vs_MVL": 0.6845,
+                "max_rho_vs_MVL": 0.779,
+                "median_rho_vs_index": -0.5886,
+                "quran_rho_vs_MVL": 0.6929
+              },
+              "divine_name_density": {
+                "n_reps": 3,
+                "target_tokens": 4539,
+                "median_rho_vs_MVL": 0.882,
+                "min_rho_vs_MVL": 0.8588,
+                "max_rho_vs_MVL": 0.8959,
+                "median_rho_vs_index": -0.6387,
+                "quran_rho_vs_MVL": 0.891
+              },
+              "personal_pronoun_density": {
+                "n_reps": 3,
+                "target_tokens": 646,
+                "median_rho_vs_MVL": 0.5799,
+                "min_rho_vs_MVL": 0.5175,
+                "max_rho_vs_MVL": 0.6193,
+                "median_rho_vs_index": -0.5103,
+                "quran_rho_vs_MVL": 0.5541
+              },
+              "loanword_density": {
+                "n_reps": 3,
+                "target_tokens": 6156,
+                "median_rho_vs_MVL": 0.9123,
+                "min_rho_vs_MVL": 0.9043,
+                "max_rho_vs_MVL": 0.9218,
+                "median_rho_vs_index": -0.6829,
+                "quran_rho_vs_MVL": 0.8866
+              }
+            },
+            "corpus_median_rho_vs_MVL": 0.7498,
+            "ratio_to_quran_median": 0.9817,
+            "reaches_half_of_quran": true
+          },
+          "jahiz": {
+            "per_axis": {
+              "allah_density": {
+                "n_reps": 3,
+                "target_tokens": 2704,
+                "median_rho_vs_MVL": 0.8282,
+                "min_rho_vs_MVL": 0.8092,
+                "max_rho_vs_MVL": 0.8606,
+                "median_rho_vs_index": -0.6633,
+                "quran_rho_vs_MVL": 0.849
+              },
+              "qul_density": {
+                "n_reps": 3,
+                "target_tokens": 332,
+                "median_rho_vs_MVL": 0.5671,
+                "min_rho_vs_MVL": 0.3659,
+                "max_rho_vs_MVL": 0.5907,
+                "median_rho_vs_index": -0.4798,
+                "quran_rho_vs_MVL": 0.5113
+              },
+              "prophet_narrative_density": {
+                "n_reps": 3,
+                "target_tokens": 528,
+                "median_rho_vs_MVL": 0.6682,
+                "min_rho_vs_MVL": 0.6363,
+                "max_rho_vs_MVL": 0.7073,
+                "median_rho_vs_index": -0.5213,
+                "quran_rho_vs_MVL": 0.5854
+              },
+              "legal_term_density": {
+                "n_reps": 3,
+                "target_tokens": 851,
+                "median_rho_vs_MVL": 0.7233,
+                "min_rho_vs_MVL": 0.6362,
+                "max_rho_vs_MVL": 0.7814,
+                "median_rho_vs_index": -0.5626,
+                "quran_rho_vs_MVL": 0.7935
+              },
+              "eschatological_density": {
+                "n_reps": 3,
+                "target_tokens": 1394,
+                "median_rho_vs_MVL": 0.7622,
+                "min_rho_vs_MVL": 0.7339,
+                "max_rho_vs_MVL": 0.7688,
+                "median_rho_vs_index": -0.4928,
+                "quran_rho_vs_MVL": 0.7637
+              },
+              "book_reference_density": {
+                "n_reps": 3,
+                "target_tokens": 1082,
+                "median_rho_vs_MVL": 0.7597,
+                "min_rho_vs_MVL": 0.7246,
+                "max_rho_vs_MVL": 0.7967,
+                "median_rho_vs_index": -0.5752,
+                "quran_rho_vs_MVL": 0.6929
+              },
+              "divine_name_density": {
+                "n_reps": 3,
+                "target_tokens": 4539,
+                "median_rho_vs_MVL": 0.8889,
+                "min_rho_vs_MVL": 0.8836,
+                "max_rho_vs_MVL": 0.8934,
+                "median_rho_vs_index": -0.6637,
+                "quran_rho_vs_MVL": 0.891
+              },
+              "personal_pronoun_density": {
+                "n_reps": 3,
+                "target_tokens": 646,
+                "median_rho_vs_MVL": 0.6632,
+                "min_rho_vs_MVL": 0.5742,
+                "max_rho_vs_MVL": 0.7263,
+                "median_rho_vs_index": -0.6896,
+                "quran_rho_vs_MVL": 0.5541
+              },
+              "loanword_density": {
+                "n_reps": 3,
+                "target_tokens": 6156,
+                "median_rho_vs_MVL": 0.9185,
+                "min_rho_vs_MVL": 0.9047,
+                "max_rho_vs_MVL": 0.9198,
+                "median_rho_vs_index": -0.6603,
+                "quran_rho_vs_MVL": 0.8866
+              }
+            },
+            "corpus_median_rho_vs_MVL": 0.7597,
+            "ratio_to_quran_median": 0.9947,
+            "reaches_half_of_quran": true
+          },
+          "poetry": {
+            "per_axis": {
+              "allah_density": {
+                "n_reps": 3,
+                "target_tokens": 2704,
+                "median_rho_vs_MVL": 0.8784,
+                "min_rho_vs_MVL": 0.8651,
+                "max_rho_vs_MVL": 0.8955,
+                "median_rho_vs_index": -0.6281,
+                "quran_rho_vs_MVL": 0.849
+              },
+              "qul_density": {
+                "n_reps": 3,
+                "target_tokens": 332,
+                "median_rho_vs_MVL": 0.6531,
+                "min_rho_vs_MVL": 0.5048,
+                "max_rho_vs_MVL": 0.6575,
+                "median_rho_vs_index": -0.5905,
+                "quran_rho_vs_MVL": 0.5113
+              },
+              "prophet_narrative_density": {
+                "n_reps": 3,
+                "target_tokens": 528,
+                "median_rho_vs_MVL": 0.7165,
+                "min_rho_vs_MVL": 0.5329,
+                "max_rho_vs_MVL": 0.7459,
+                "median_rho_vs_index": -0.5402,
+                "quran_rho_vs_MVL": 0.5854
+              },
+              "legal_term_density": {
+                "n_reps": 3,
+                "target_tokens": 851,
+                "median_rho_vs_MVL": 0.7611,
+                "min_rho_vs_MVL": 0.7609,
+                "max_rho_vs_MVL": 0.7832,
+                "median_rho_vs_index": -0.5795,
+                "quran_rho_vs_MVL": 0.7935
+              },
+              "eschatological_density": {
+                "n_reps": 3,
+                "target_tokens": 1394,
+                "median_rho_vs_MVL": 0.7769,
+                "min_rho_vs_MVL": 0.7666,
+                "max_rho_vs_MVL": 0.8246,
+                "median_rho_vs_index": -0.538,
+                "quran_rho_vs_MVL": 0.7637
+              },
+              "book_reference_density": {
+                "n_reps": 3,
+                "target_tokens": 1082,
+                "median_rho_vs_MVL": 0.6934,
+                "min_rho_vs_MVL": 0.686,
+                "max_rho_vs_MVL": 0.7361,
+                "median_rho_vs_index": -0.5533,
+                "quran_rho_vs_MVL": 0.6929
+              },
+              "divine_name_density": {
+                "n_reps": 3,
+                "target_tokens": 4539,
+                "median_rho_vs_MVL": 0.8843,
+                "min_rho_vs_MVL": 0.8709,
+                "max_rho_vs_MVL": 0.8993,
+                "median_rho_vs_index": -0.6308,
+                "quran_rho_vs_MVL": 0.891
+              },
+              "personal_pronoun_density": {
+                "n_reps": 3,
+                "target_tokens": 646,
+                "median_rho_vs_MVL": 0.6475,
+                "min_rho_vs_MVL": 0.631,
+                "max_rho_vs_MVL": 0.7061,
+                "median_rho_vs_index": -0.511,
+                "quran_rho_vs_MVL": 0.5541
+              },
+              "loanword_density": {
+                "n_reps": 3,
+                "target_tokens": 6156,
+                "median_rho_vs_MVL": 0.9088,
+                "min_rho_vs_MVL": 0.9001,
+                "max_rho_vs_MVL": 0.9175,
+                "median_rho_vs_index": -0.6836,
+                "quran_rho_vs_MVL": 0.8866
+              }
+            },
+            "corpus_median_rho_vs_MVL": 0.7611,
+            "ratio_to_quran_median": 0.9965,
+            "reaches_half_of_quran": true
+          }
+        }
+      }
+    }
+  },
+  "verdicts": {
+    "PRIMARY": {
+      "A1": "RENORM-ATTENUATES",
+      "A2": "STRATIFIED-COLLAPSES",
+      "A4": "MECHANISM-GENERIC",
+      "H2": true,
+      "overall": "DOES-NOT-DISCRIMINATE"
+    },
+    "REPLICATION": {
+      "A1": "RENORM-ATTENUATES",
+      "A2": "STRATIFIED-COLLAPSES",
+      "A4": "MECHANISM-GENERIC",
+      "H2": true,
+      "overall": "DOES-NOT-DISCRIMINATE"
+    }
+  },
+  "seed_fragile": false,
+  "verdict": "DOES-NOT-DISCRIMINATE",
+  "wall_seconds": 119.2
+}
