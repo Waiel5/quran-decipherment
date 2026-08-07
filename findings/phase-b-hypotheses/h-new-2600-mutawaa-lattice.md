@@ -3,7 +3,7 @@ id: H-NEW-2600
 title: The muṭāwaʿa lattice — causative reverse-controls hold, in EQTB and without it
 date: 2026-08-07
 author: Waiel Al-Shujaa
-status: LATTICE-STRUCTURED (causative controls reversed as locked) · P1 UNTESTABLE (2 roots) · P3 UNTESTABLE (0 roots)
+status: VERDICT RETRACTED 2026-08-07 — 'LATTICE-STRUCTURED' violated the locked decision rule. Only P2 and N2 pass the registered family; N1 misses its dual-null gate; P1/P3 unresolved.
 prereg: prereg-h-new-2600-mutawaa-lattice.md
 prereg_sha256: f058b852d5e2aadd8301070962759a8391f05f98749b49da78b2214fdf619b10
 run: runs/h-new-2600/20260807T002903Z/
@@ -13,9 +13,44 @@ family: MORPH-2026-08-07-A
 
 # H-NEW-2600 — The falsification control that H-NEW-2540 lacked
 
-**Verdict: LATTICE-STRUCTURED.** Both causative reverse-controls reversed exactly as locked.
-The novel muṭāwaʿa arm I→VIII passed. **P1, the strongest registered prediction, could not be
-tested — only 2 eligible roots. P3 had none at all.** Reported with full prominence.
+>  ## ⛔ VERDICT RETRACTED (2026-08-07) — pre-commit violation by the author
+>
+> This file originally reported **`LATTICE-STRUCTURED`**. An independent audit established that
+> **the verdict rule implemented in the script was looser than the one I pre-registered.**
+>
+> The pre-registration (§5) requires, for every confirmatory arm: correct sign **and both**
+> raw p-values `< 0.0005`. The script instead declared `LATTICE-STRUCTURED` whenever both
+> causative signs merely pointed negative and *any* positive arm passed
+> (`scripts/h-new-2600.py:163-174`). That is not the registered rule, and the immutable
+> `result.json` therefore carries a non-conforming verdict.
+>
+> **Against the rule actually locked:**
+>
+> | arm | locked | result | verdict under the LOCKED rule |
+> |:--|:--:|:--|:--|
+> | P2 I→VIII | + | pA=1.0e-4, pB=1.0e-4 | **PASS** |
+> | N2 I→IV | − | pA=1.0e-4, pB=1.0e-4 | **PASS** |
+> | N1 I→II | − | **pA=0.00060** > 0.0005, pB=1.0e-4 | **FAIL** |
+> | P1 I→VII | + | 2 roots, pA=0.25 | **FAIL** |
+> | P3 IV→VII | + | 0 roots | **UNAVAILABLE** |
+>
+> N1's miss is not a seed artefact: exhaustive enumeration of all 2³⁷ sign-flips gives
+> **p = 0.000832**, still above the gate. And the pre-registration says explicitly that a NULL
+> P1 **must not be rescued** by the other arms — which is exactly what the summary verdict did.
+>
+> **Corrected verdict: 2 of 5 registered arms pass. The causative reversal is real and its
+> direction is confirmed in both channels, but the formal `LATTICE-STRUCTURED` confirmation
+> FAILS its own locked gate and is withdrawn.** The substantive claim — that the instrument
+> is not uniformly positive — is weakened but not eliminated (see §3, also corrected).
+>
+> This is the second protocol violation I have self-reported on this family, after the
+> run-deletion breach at H-NEW-2540 §8.1. Writing a verdict rule into a runner that is looser
+> than the registered rule defeats pre-registration entirely.
+
+**Original verdict text, retained for the record:** *"LATTICE-STRUCTURED. Both causative
+reverse-controls reversed exactly as locked. The novel muṭāwaʿa arm I→VIII passed. P1, the
+strongest registered prediction, could not be tested — only 2 eligible roots. P3 had none at
+all."*
 
 Pre-reg SHA `f058b852…9b10`, runtime-verified. Extraction, join, statistic and nulls inherited
 verbatim from H-NEW-2540. Seeds 20260509 / 20260510. Raw gate 0.0005 (10 confirmatory
@@ -53,11 +88,25 @@ give positive T, causative pairs give negative T, with odds ratios on opposite s
 
 ## 3. The instrument is not biased toward "yes"
 
-Across the exploratory lattice: **17 of 34 eligible ordered form pairs have positive T.** Among
-the 30 pairs that are *neither* muṭāwaʿa nor causative, **15 of 30 are positive** — a coin flip.
-
-Positive T is not pervasive. It is structured along exactly the relation classical morphology
-names, and it inverts on exactly the relation classical morphology says should invert.
+> ## ⛔ THIS CONTROL IS RETRACTED — it was algebraically vacuous
+>
+> This section originally argued: *"17 of 34 eligible ordered form pairs have positive T, and
+> 15 of 30 unrelated pairs are positive — a coin flip, so the instrument is not biased toward
+> yes."*
+>
+> **That argument proves nothing whatsoever.** The lattice enumerates ordered pairs, so it
+> contains both A→B and B→A (`scripts/h-new-2600.py:151-161`). Since **T(B,A) = −T(A,B)**,
+> exactly half of all non-zero ordered cells are positive **by construction**. 17/34 was not
+> evidence of neutrality; it was arithmetic that could not have come out any other way.
+>
+> I presented a tautology as a control. The per-cell nulls and Bonferroni p-values the
+> pre-registration called for in §6 were also never computed.
+>
+> **What survives:** the *directional* claim in §2 — muṭāwaʿa arms positive, causative arms
+> negative, odds ratios on opposite sides of 1 — is untouched by this retraction, because it
+> rests on the signed hypotheses and their nulls, not on the lattice tally. But the "instrument
+> is not biased toward yes" argument now has **no supporting evidence in this file**, and a
+> proper unbiasedness control remains owed.
 
 ## 4. The honest failures
 
@@ -74,7 +123,40 @@ names, and it inverts on exactly the relation classical morphology says should i
 
 ## 5. The parser-free replication
 
-> ### ⚠ LIVE THREAT FLAG (2026-08-07) — this section's channel is under active validation
+> ### ✅ THREAT RESOLVED (2026-08-07) — corrected heuristic, effect SURVIVES with revised numbers
+>
+> The flag below was raised before the check completed. The check is now done and it **resolves
+> in favour of the channel**, with corrected numbers that must replace the originals.
+>
+> **The bug was real.** Excluding every following pronoun whose PNG matches subject agreement
+> wrongly drops genuine objects in **311 cases** — 3MS→3MS *nazzala-hu*, 3MP→3MP
+> *yuḥibbūna-hum*, 1S→1S *arā-nī*. Forms VI and VII showed 100% discard for exactly this reason.
+>
+> **The corrected rule** consumes only the morphologically obligatory subject suffix, then counts
+> the remaining `PRON` segments. Re-running every arm:
+>
+> | pair | locked | corrected rates | corrected gap | two-sided root-sign p |
+> |:--|:--:|:--|--:|--:|
+> | II → V | + | 122/347 vs 26/256 | **+0.2500** | 4.01×10⁻⁵ |
+> | I → VIII | + | 448/1329 vs 77/725 | **+0.2309** | 7.66×10⁻⁷ |
+> | **I → II** | **−** | 90/1215 vs 143/544 | **−0.1888** | 0.00210 |
+> | **I → IV** | **−** | 356/1758 vs 527/1983 | **−0.0633** | 1.21×10⁻⁶ |
+>
+> **Every sign survives, including both causative reversals.** The correction *raises* the
+> muṭāwaʿa gaps (+0.215 → +0.250; +0.212 → +0.231) — the buggy rule was understating them, not
+> creating them. But **I→II is materially weaker than reported**: p = 0.00210, not 3.2×10⁻⁴.
+> Use the corrected figures.
+>
+> Also checked and cleared: nūn al-wiqāya, dual, and energetic suffixes do **not** reverse
+> anything — the energetic nūn is tagged `EMPH`, not `PRON`, and was already ignored correctly.
+>
+> **Outstanding deficiency, not resolved:** this load-bearing analysis still exists only as
+> prose. It has **no executable script and no immutable run record**, unlike every other claim
+> in these files. H-NEW-2650 owes exactly that, and until it lands this section is
+> reproducible-in-principle but not reproducible-in-practice.
+
+
+> ### ⚠ ORIGINAL THREAT FLAG (superseded by the resolution above; retained for the record)
 >
 > The attached-object-pronoun rule discards any post-verb `PRON` whose PGN equals the verb's
 > own subject agreement. **That discard rate is strongly form-correlated, and it runs in the

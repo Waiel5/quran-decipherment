@@ -97,7 +97,40 @@ bias by construction. The prereg's insistence on two nulls is what makes this ch
 
 ## 2b. The EQTB-free channel — now the load-bearing evidence
 
-> ### ⚠ LIVE THREAT FLAG (2026-08-07) — this section's channel is under active validation
+> ### ✅ THREAT RESOLVED (2026-08-07) — corrected heuristic, effect SURVIVES with revised numbers
+>
+> The flag below was raised before the check completed. The check is now done and it **resolves
+> in favour of the channel**, with corrected numbers that must replace the originals.
+>
+> **The bug was real.** Excluding every following pronoun whose PNG matches subject agreement
+> wrongly drops genuine objects in **311 cases** — 3MS→3MS *nazzala-hu*, 3MP→3MP
+> *yuḥibbūna-hum*, 1S→1S *arā-nī*. Forms VI and VII showed 100% discard for exactly this reason.
+>
+> **The corrected rule** consumes only the morphologically obligatory subject suffix, then counts
+> the remaining `PRON` segments. Re-running every arm:
+>
+> | pair | locked | corrected rates | corrected gap | two-sided root-sign p |
+> |:--|:--:|:--|--:|--:|
+> | II → V | + | 122/347 vs 26/256 | **+0.2500** | 4.01×10⁻⁵ |
+> | I → VIII | + | 448/1329 vs 77/725 | **+0.2309** | 7.66×10⁻⁷ |
+> | **I → II** | **−** | 90/1215 vs 143/544 | **−0.1888** | 0.00210 |
+> | **I → IV** | **−** | 356/1758 vs 527/1983 | **−0.0633** | 1.21×10⁻⁶ |
+>
+> **Every sign survives, including both causative reversals.** The correction *raises* the
+> muṭāwaʿa gaps (+0.215 → +0.250; +0.212 → +0.231) — the buggy rule was understating them, not
+> creating them. But **I→II is materially weaker than reported**: p = 0.00210, not 3.2×10⁻⁴.
+> Use the corrected figures.
+>
+> Also checked and cleared: nūn al-wiqāya, dual, and energetic suffixes do **not** reverse
+> anything — the energetic nūn is tagged `EMPH`, not `PRON`, and was already ignored correctly.
+>
+> **Outstanding deficiency, not resolved:** this load-bearing analysis still exists only as
+> prose. It has **no executable script and no immutable run record**, unlike every other claim
+> in these files. H-NEW-2650 owes exactly that, and until it lands this section is
+> reproducible-in-principle but not reproducible-in-practice.
+
+
+> ### ⚠ ORIGINAL THREAT FLAG (superseded by the resolution above; retained for the record)
 >
 > The attached-object-pronoun rule discards any post-verb `PRON` whose PGN equals the verb's
 > own subject agreement. **That discard rate is strongly form-correlated, and it runs in the
@@ -231,7 +264,7 @@ is intransitive — and is arrogance. The morphology carries the distinction.
 
 ### ز ك و — who purifies whom
 
-- **Form II**: *yuzakkī-**him*** — Q 2:129, 2:151, 3:164 — the Messenger "purifies **them**."
+- **Form II**: *yuzakkī-**him*** — Q 2:129, 3:164 — the Messenger "purifies **them**"; and *yuzakkī-**kum*** at Q 2:151, "purifies **you**" (corrected 2026-08-07: this verse was previously grouped under the *-him* form in error).
 - **Form V**: Q 20:76 *jazāʾu man **tazakkā***; Q 79:18 (Mūsā to Firʿawn) *hal laka ilā an
   **tazakkā***; Q 80:3, 80:7 *laʿallahu **yazzakkā***.
 
