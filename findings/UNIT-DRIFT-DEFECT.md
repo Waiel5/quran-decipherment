@@ -98,7 +98,7 @@ must clear.
 | mushaf position | mean verse length | −0.7131 | 0.4133 | H-NEW-2780 |
 | **Nöldeke / revelation rank** | **mean verse length** ← strongest | **+0.9038** | **0.8005** | H-NEW-2770 §2; R² H-NEW-2780, bracketed by H-NEW-2790 |
 | Nöldeke / revelation rank | surah word count | +0.6892 | — | H-NEW-2770 §2 |
-| Nöldeke / revelation rank | `log_length` *(= log word count; H-NEW-183's baseline feature)* | +0.6775 | 0.4462 | H-NEW-2780; identity confirmed against `csv/h-new-123.json` `N` |
+| Nöldeke / revelation rank | `log_length` *(= log word count; H-NEW-183's baseline feature)* | +0.6775 | 0.4462 | H-NEW-2780; identity confirmed against `findings/phase-b-hypotheses/csv/h-new-123.json` → `N` |
 | Nöldeke / revelation rank | verse count | +0.3903 | 0.0961 | H-NEW-2770 §2; H-NEW-125 axis 1 |
 | surah-length rank | verse count | 1.000 by construction | — | — |
 
@@ -337,8 +337,9 @@ contains at least one load-bearing instance of it:
 > repository.**
 
 **H-NEW-192 is the case.** Its finding file declares `Script: inline`
-(`h-new-192-mushaf-position-decomposition.md:129`); there is no `h_new_192*.py`, and no
-`csv/h-new-192.json`. Its headline **R² = 0.759 (Ridge) and 0.817 (RF)** exist in this
+(`findings/phase-b-hypotheses/h-new-192-mushaf-position-decomposition.md:129`); there is no `h_new_192*.py`, and no
+`findings/phase-b-hypotheses/csv/h-new-192.json`. Its headline **R² = 0.759 (Ridge) and
+0.817 (RF)** exist in this
 repository **solely as hard-coded literals** in two *other* findings' scripts —
 `scripts/h_new_233_ensemble_predictor.py:532-533,571-572` and
 `scripts/h_new_250_equation_fit.py:670-671`. **Nothing computes them.** The finding also names
@@ -348,7 +349,7 @@ only 10 of the 15 features it claims to use.
 pre-registered decision rule is literally `H1 = bool(r2_A > 0.759 ...)` and
 `H2 = bool(r2_B > 0.817)` — a downstream verdict gated on numbers no code in the repository
 reproduces. Fifteen markdown files assert both values, including
-`cross-finding-020-the-complete-equation.md`.
+`findings/phase-b-hypotheses/cross-finding-020-the-complete-equation.md`.
 
 **Screen this before the other three, because it is cheaper and it dominates them.** A number
 that cannot be recomputed cannot be flagged *or* cleared — running a size-matched null against
@@ -384,8 +385,15 @@ def snapshot(partial=True):
 **The script writes progressive snapshots to `results.json` inside the run directory during
 execution**, then overwrites it once more at completion (`:806`). It overwrites a file inside an
 "immutable" run directory several times per run **regardless of whether anyone ever commits it.**
-My commit was incidental. "Never commit a partial run" would not have prevented this, and
-following that remedy would have left the actual defect in place in every future script.
+
+The commits were incidental in the strict sense: **the two that captured the file mid-flight
+(`0db7171e2` at `partial: true`, `80bb535bf` after completion) were made by neither the lane that
+owned the run nor the author of this document** — they were other lanes' `git add -A` firing
+while the run was executing. Every lane commits under one shared identity, so git cannot
+attribute them, and it does not need to: the defect is in the write pattern and would exist in a
+tree that was never committed at all. "Never commit a partial run" would not have prevented it,
+depends on every lane's tooling behaving at every instant, and following that remedy would have
+left the real defect in place in every future script.
 
 **The correct standing rule:**
 

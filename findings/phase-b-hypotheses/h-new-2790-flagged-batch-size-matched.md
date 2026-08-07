@@ -620,24 +620,49 @@ long files.
 
 **The two highest-priority flagged claims in the repository were NOT reached by this batch.**
 
-| pri | claim | citing files | statistic | denominator | ordering | strongest channel |
+| pri | claim | external citers | statistic | denominator | ordering **or grouping** | strongest channel |
 |--:|:--|--:|:--|:--|:--|:--|
-| **1** | **cross-finding-012 / 016 / 017** — the Late-Meccan apparatus | **80** | Kendall's W = 0.8929 joint peak of four content axes; the B6/B7 staircase | **verse count** | Nöldeke bins B1–B8 | mean verse length (climbs **4.05 → 20.97**, 5.2×, across B1→B8) |
-| **2** | **H-NEW-236 Cell B** | **42** | ρ(mushaf position, KL) = +0.9201, presented as a "compositional-vocabulary gradient" | surah token count | mushaf | log word count (−0.9342) |
-| 3 | **H-NEW-136 / 141 / 129** | 39 | the same four per-100-verse Pattern-B axes as pri-1 | verse count | Nöldeke / phase | mean verse length |
-| 4 | **H-NEW-88** — letter-set predictor | 24 | multi-class RF for the muqaṭṭaʿāt letter-set | mixed | — | not computed by either lane — a genuine open arm |
-| 5 | **H-NEW-74 Cells 1–5** | 31 | including the top-10-by-density ranking, re-cut descriptively in §9.3 but never tested | verse count | surah ranking | mean verse length |
-| 6 | `surahs/Q047-muhammad/00-overview-comprehensive.md:132-136` | — | "highest Muhammad-naming density", 1.828 vs 1.783 | words | 4-surah ranking | **needs no run** — both numerators are **1**, so the density is exactly 1/length and the whole 2.5 % margin is that Q 47 is 2.5 % shorter |
-| — | H-NEW-126, 19, 142, 570, 123, 49, 234, 2210 | 197 – 51 by my metric | on my screen but not the sweep's | — | — | rank these on the sweep's metric before spending a run |
+| **1** | **H-NEW-126** — isolate core | **32** | cluster membership of {Q16, 21, 22, 23, 25} against random non-cluster surahs, across 20 cluster systems | per-surah density vectors | **grouping** — a five-surah core vs the rest | measure the group size contrast first; no ordering exists |
+| **2** | **H-NEW-570** — muqaṭṭaʿāt content cluster | **27** | eight density measures, muq vs non-muq | verse count | **grouping** — 29 vs 85 | **mean verse length, 2.98× between the groups** (see below) |
+| **3** | **cross-finding-012 / 016 / 017** — the Late-Meccan apparatus | **47** (union, not the summed 80) | Kendall's W = 0.8929 joint peak of four content axes; the B6/B7 staircase | **verse count** | Nöldeke bins B1–B8 | mean verse length (climbs **4.05 → 20.97**, 5.2×) |
+| 4 | **H-NEW-2210** — qasam-jawāb inventory | 18 | per-surah oath rates | verse count | mushaf | **likely CLEAN-by-nullity** — `oath_density` is already null per-verse at ρ = −0.004 |
+| 5 | **H-NEW-19** — extended classical anchors | 17 | nine density measures | verse count | mushaf | log word count |
+| 6 | **H-NEW-49** — surah name class | 15 | six density measures | verse count | **grouping** — name class | adjacent to the withdrawn Pillar 4 |
+| 7 | **H-NEW-236 Cell B** | 8 | ρ(mushaf position, KL) = +0.9201, sold as a "compositional-vocabulary gradient" | surah token count | mushaf | log word count (−0.9342) |
+| 8 | **H-NEW-136 / 141 / 129** | 13 | the same four per-100-verse Pattern-B axes as pri-3 | verse count | Nöldeke / phase | mean verse length |
+| 9 | **H-NEW-88** — letter-set predictor | 17 | multi-class RF for the muqaṭṭaʿāt letter-set | mixed | grouping | **not computed by either lane — a genuine open arm** |
+| 10 | **H-NEW-74 Cells 1–5** | 22 | including the top-10-by-density ranking, re-cut descriptively in §9.3 but never tested | verse count | surah ranking | mean verse length |
+| 11 | `surahs/Q047-muhammad/00-overview-comprehensive.md:132-136` | — | "highest Muhammad-naming density", 1.828 vs 1.783 | words | 4-surah ranking | **needs no run** — both numerators are **1**, so the density is exactly 1/length and the whole 2.5 % margin is that Q 47 is 2.5 % shorter |
+| — | H-NEW-142, 123, 234 | 27 / 7 / 11 | — | — | — | **expected to come back CLEAN or already-dead**: H-NEW-142 is self-downgraded to SPECULATIVE-DESCRIPTIVE; H-NEW-123's β and K are fitted exponents, not ratios, and `N` is the size variable rather than a denominator |
 
-**Two are cheap now**, because this harness holds their answer shape. Pri-2 (H-NEW-236 Cell B)
-is nearly settled already: the sweep computed ρ(mushaf position, **−log word count**) =
-**+0.9342**, *higher than the claimed +0.9201 using no vocabulary at all*, and H-NEW-231
-independently publishes ρ(log-length, KL) = −0.967. Pri-4 (H-NEW-88) is a mushaf-ordered
-density model, so §3's `S1` column — **0.8378 from one size column** — is the number it must
-beat.
+**The top two were invisible to a screen written for orderings, and that is a hole in the rule
+rather than an oversight.** H-NEW-126 compares a five-surah core against random non-cluster
+surahs; H-NEW-570 compares muqaṭṭaʿāt against non-muqaṭṭaʿāt. **Neither is an ordering**, so
+Screen B — "does unit size drift monotonically along this sequence" — is structurally incapable
+of seeing them. **A grouping needs no trend to carry the defect. It only needs the groups to
+differ in size.** Measured here on the split this project uses most, and reproducing the
+sweep's figures exactly:
 
-**Pri-1 carries a caveat that must be inherited.** The sweep's per-word re-normalisation moves
+| muqaṭṭaʿāt (29) vs non-muqaṭṭaʿāt (85) | median muq | median non | ratio |
+|:--|--:|--:|--:|
+| mean verse length | 15.13 | 5.08 | **2.98×** |
+| verse count | 85.00 | 26.00 | **3.27×** |
+| word count | 928.00 | 214.00 | **4.34×** |
+
+**Any per-verse density compared across that split is reading a threefold difference in verse
+length** — and the direction is not an inference, it is this project's own `h-new-46`
+STRONG-PASS result that muqaṭṭaʿāt surahs concentrate in long surahs. Screen B has since been
+widened to "the ordering *or the grouping*", with a grouping-channel table beside the ordering
+one.
+
+**Two are already nearly settled, and neither needs a full run.** Pri-7 (H-NEW-236 Cell B): the
+sweep computed ρ(mushaf position, **−log word count**) = **+0.9342**, *higher than the claimed
++0.9201 using no vocabulary at all*, and H-NEW-231 independently publishes ρ(log-length, KL)
+= −0.967. Pri-11 (Q 047) is settled by inspection — both numerators are 1. Pri-9 (H-NEW-88) is
+the one genuine open arm neither lane has touched; as a mushaf-side density model, §3's `S1`
+column — **0.8378 from one size column** — is the number it must beat.
+
+**Pri-3 carries a caveat that must be inherited.** The sweep's per-word re-normalisation moves
 **3 of 4 peaks out of the Late-Meccan zone** (qul B7→B4, eschatological B6→B3, loanword B7→B4;
 only `book_reference` holds at B7) — but its B1–B4 bin edges are *reconstructed octiles*,
 because only the B6/B7/B8 rank ranges are published. B5–B8 reproduce the published table
@@ -653,30 +678,48 @@ while the corpus-wide ranking is not); **H-NEW-231** (clean by disclosure, and c
 arm (declared degenerate in pre-registration); H-NEW-91; and the per-1000-token work in
 `surahs/Q009-al-tawba/06-novel-findings.md:43-93`.
 
-**The two screens agreed on the claims they both saw and differed only in coverage** — no claim
-was ranked FLAGGED by one and CLEAN by the other. That is a meaningful check on the rule: the
-three screens are mechanical enough to be applied independently and converge.
+**The two screens agreed on every claim they both saw** — no claim was ranked FLAGGED by one
+and CLEAN by the other. But they did **not** agree on coverage, and the disagreement was
+diagnostic rather than cosmetic: **the two highest-priority claims in the repository were
+invisible to one of the screens by construction**, because Screen B was written for orderings
+and both are groupings. Screen B has since been widened to cover both. **Running the same rule
+twice, independently, is what found the hole** — a single application would have reported
+convergence and missed 59 external citations' worth of flagged claims.
 
-**The ranking, however, does not converge, and the table above should be read as approximate.**
-I implemented the sweep's own stated metric — distinct `.md` files under `findings/` + `surahs/`
-citing the ID, preregs excluded by filename, worktree copies and run directories excluded — and
-got systematically lower counts than it did:
+**The ranking did not converge at first, and resolving it changed the queue.** Two independent
+implementations of the same one-sentence metric differed by up to 2.3×, which meant the metric
+was under-specified as written. Two causes were found, both in the sweep's implementation and
+both since corrected:
 
-| claim | sweep | my implementation of the sweep's metric |
-|:--|--:|--:|
-| H-NEW-236 | 42 | **18** |
-| H-NEW-74 | 31 | **22** |
-| H-NEW-192 | 27 | **18** |
-| H-NEW-183 | 15 | **13** |
-| H-NEW-126 | *(not ranked)* | **33** |
+1. **The stated exclusion was not in the command** — preregs were described as excluded by
+   filename and were not. Adding it brought most of the gap to zero (H-NEW-183 to 13, matching
+   mine exactly).
+2. **The metric itself was wrong**, and this is the substantive one: **a claim's own
+   sub-findings were counted as citations of it.** H-NEW-236 has **11 own-family citers** —
+   `h-new-236-1`, `-1a` … `-1h`, `-2a`, `-2b`, and the generative-simulator parent. A finding
+   citing its own children measures productivity, not load-bearing-ness.
 
-**The ordering changes with the implementation**: on my count H-NEW-126 at 33 would head the
-unreached list, ahead of H-NEW-236 at 18. Two careful implementations of the same one-sentence
-metric differing by up to 2.3× means **the metric is under-specified as written** — most likely
-in what counts as a citation (bare ID, wiki-link target, frontmatter field) and what counts as
-in-scope. Neither count is asserted here as correct. **What is established is that "load-bearing"
-needs a specified counting rule before it can order a worklist**, and until it has one the
-priority column is a rough guide rather than a queue.
+Excluding a claim's own family, the two counts now agree closely and **agree exactly on the two
+that matter** — H-NEW-126 at **32** and H-NEW-183 at **12**:
+
+| claim | external citers | own family | effect |
+|:--|--:|--:|:--|
+| **H-NEW-126** | **32** | 2 | **heads the unreached queue** |
+| **H-NEW-570** | 27 | 1 | second |
+| H-NEW-192 | 17 | 1 | — |
+| H-NEW-183 | 12 | 1 | — |
+| **H-NEW-236** | **8** | **11** | **falls from #1 to mid-pack** |
+
+**A triage worked top-down from the original list would have started on the wrong claim.** The
+sweep also reported the cross-finding-012/016/017 cluster at 80 by *summing* its three members,
+which double-counts every file citing more than one — the honest union is **47**.
+
+**Neither count is asserted here as exact**; small residual gaps remain and the two
+implementations still differ by a few files on some IDs. What is established is that
+**"load-bearing" needs a specified counting rule — with the family-exclusion and no-summing
+clauses — before it can order a worklist**, and that a citation count cannot see a real
+dependency anyway: H-NEW-233's hard-coded threshold on H-NEW-192 (§6) is a dependency no
+citation count detects.
 
 **One category neither screen has.** H-NEW-192 is not FLAGGED-vs-CLEAN at all; it is
 **UNVERIFIABLE** — no script, an under-specified feature set, and headline numbers that exist
