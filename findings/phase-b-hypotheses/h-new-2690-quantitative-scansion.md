@@ -9,6 +9,42 @@ run: runs/h-new-2690/20260807T022237Z/
 seed: 20260509
 ---
 
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: the scansion three-way ordering does NOT survive a matched control
+>
+> H-NEW-2690 reported **poetry < this corpus < prose** on `d_min` and read it as
+> al-Bāqillānī's *neither* nathr *nor* shiʿr, measured. H-NEW-2730 genre-controlled it.
+> **The ordering falls; one of its two legs survives.**
+>
+> - **The prose leg (H1b) is WITHDRAWN — it is unit length.** Re-cut **this corpus's own
+>   verses** to ḥadīth sentence lengths and `d_min` moves **99.4 %** of the way to ḥadīth's
+>   value (0.22222 → 0.23953 against al-Dārimī's native 0.23963), using **no baseline text at
+>   all**. A matched partition of al-Dārimī lands at **0.22222** — this corpus's own median to
+>   five decimals — and one of al-Bukhārī at **0.21893**, with **199 of 200** offsets at or
+>   below it. At matched syllable length the two medians are **identical** (0.21739).
+> - **The poetry leg (H1a) SURVIVES every length control.** Length explains **5.1 %** of that
+>   gap; re-cutting this corpus to bayt lengths moves it only **7.5 %** toward poetry; it holds
+>   at full size in the one overlapping length bin (0.21739 against poetry's 0.14815) and
+>   passes a per-unit noise control matched on length *and* syllable weight at p = 1 × 10⁻⁴ in
+>   both rules-tuples.
+> - **`d_min` is not length-invariant in practice.** Length alone explains **28.7 %** of its
+>   variance. It normalises by unit length and tiles its templates to unit length, but it is a
+>   minimum over ~200 templates and a minimum-of-many falls as the string shortens.
+>   **Normalisation is not invariance.**
+> - **Matched noise alone reproduces the ordering.** Random strings matched only on length and
+>   syllable weight give poetry 0.22222 < this corpus 0.23913 < al-Bukhārī 0.25992 < al-Dārimī
+>   0.26549 — the same three-way order, from strings containing no Arabic and no metre. Only
+>   **49.2 %** of this corpus's verses are more metrical than their own matched twin — a coin
+>   flip — against **88.3 %** of poetry abyāt.
+>
+> **al-Bāqillānī is untouched**: "neither *nathr* nor *shiʿr*" was never a claim about medians
+> of normalised edit distances. What is withdrawn is half of its stated empirical
+> operationalisation. **Limit:** there is **no vocalised adab prose on disk**, so al-Jāḥiẓ is
+> untestable on this statistic by any means and the prose control is ḥadīth-only.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2730-scansion-genre-control.md`.
+> Orientation: `STATE-OF-THE-PROJECT-2026-08-07.md` §1.5.
+
+
 # H-NEW-2690 — al-Bāqillānī's "neither prose nor poetry", measured
 
 **Verdict: PARTIAL. The positive control PASSED, and the two locked ordering hypotheses PASS in

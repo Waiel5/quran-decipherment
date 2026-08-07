@@ -1,0 +1,1045 @@
+{
+ "id": "H-NEW-2740",
+ "seed": 20260519,
+ "n_perm": 10000,
+ "bonferroni_k": 5,
+ "alpha_bonferroni": 0.01,
+ "prereg_sha256": "6eee19757e437067679e7286c4d3823ef17589dacdf0ff84c22bd5c27cbb2db7",
+ "register_marginals": {
+  "narrative": 31,
+  "legal_medinan": 20,
+  "eschatological_mufassal": 40,
+  "liturgical_didactic": 23
+ },
+ "alignment": {
+  "verses_aligned": 6236,
+  "verses_failed": 0,
+  "failed_list": [],
+  "tokens": 82260,
+  "fasl_merges": 366
+ },
+ "exceptionlessness": {
+  "N1_wasla_in_simple": 0,
+  "N2_word_final_dotted_yaa_in_uthmani": 0,
+  "N3_madda_in_uthmani": 0,
+  "N1_SYSTEMATIC": true,
+  "N2_SYSTEMATIC": true,
+  "N3_SYSTEMATIC": true
+ },
+ "layer_accounting": [
+  {
+   "layer": "marks-only",
+   "divergent_tokens": 22386,
+   "removed_by_this_layer": null
+  },
+  {
+   "layer": "+N1 wasla",
+   "divergent_tokens": 11531,
+   "removed_by_this_layer": 10855
+  },
+  {
+   "layer": "+N2 yaa-dotting",
+   "divergent_tokens": 8021,
+   "removed_by_this_layer": 3510
+  },
+  {
+   "layer": "+N3 madda",
+   "divergent_tokens": 7749,
+   "removed_by_this_layer": 272
+  },
+  {
+   "layer": "+N4 hamza",
+   "divergent_tokens": 6909,
+   "removed_by_this_layer": 840
+  }
+ ],
+ "divergence_set": {
+  "total_tokens": 82260,
+  "residual_divergent_tokens": 6909,
+  "rate": 0.08398978847556528,
+  "systematic_tokens_removed": 15477,
+  "naive_diff_tokens": 22386
+ },
+ "typology": {
+  "HADHF-ALIF": {
+   "tokens": 5389,
+   "distinct_type_pairs": 1598
+  },
+  "FASL": {
+   "tokens": 366,
+   "distinct_type_pairs": 58
+  },
+  "BADAL-YA-ALIF": {
+   "tokens": 343,
+   "distinct_type_pairs": 189
+  },
+  "HADHF-YA": {
+   "tokens": 269,
+   "distinct_type_pairs": 85
+  },
+  "BADAL-WAW-ALIF": {
+   "tokens": 177,
+   "distinct_type_pairs": 20
+  },
+  "MIXED": {
+   "tokens": 96,
+   "distinct_type_pairs": 24
+  },
+  "ZIYADA-ALIF": {
+   "tokens": 96,
+   "distinct_type_pairs": 47
+  },
+  "HADHF-LAM": {
+   "tokens": 75,
+   "distinct_type_pairs": 6
+  },
+  "ZIYADA-WAW": {
+   "tokens": 50,
+   "distinct_type_pairs": 27
+  },
+  "HADHF-WAW": {
+   "tokens": 35,
+   "distinct_type_pairs": 19
+  },
+  "ZIYADA-YA": {
+   "tokens": 10,
+   "distinct_type_pairs": 9
+  },
+  "BADAL-OTHER": {
+   "tokens": 2,
+   "distinct_type_pairs": 2
+  },
+  "HADHF-OTHER": {
+   "tokens": 1,
+   "distinct_type_pairs": 1
+  },
+  "HAMZ_quarantined_by_N4": {
+   "tokens": 840,
+   "distinct_type_pairs": null
+  }
+ },
+ "typology_examples": {
+  "HADHF-ALIF": [
+   "السموت | السماوات",
+   "الكتب | الكتاب",
+   "القيمة | القيامة",
+   "الظلمين | الظالمين",
+   "الشيطن | الشيطان",
+   "جنت | جنات",
+   "اصحب | اصحاب",
+   "الصلحت | الصالحات"
+  ],
+  "BADAL-WAW-ALIF": [
+   "الحيوة | الحياة",
+   "الصلوة | الصلاة",
+   "الزكوة | الزكاة",
+   "حيوة | حياة",
+   "والصلوة | والصلاة",
+   "بالصلوة | بالصلاة",
+   "بالحيوة | بالحياة",
+   "زكوة | زكاة"
+  ],
+  "HADHF-YA": [
+   "شيا | شييا",
+   "يحي | يحيي",
+   "السيات | السييات",
+   "يستهزون | يستهزيون",
+   "را | راي",
+   "النبين | النبيين",
+   "متكين | متكيين",
+   "سياتهم | سيياتهم"
+  ],
+  "FASL": [
+   "يايها | ياايها",
+   "يقوم | ياقوم",
+   "يموسي | ياموسي",
+   "يبني | يابني",
+   "ياهل | يااهل",
+   "ويقوم | وياقوم",
+   "يابت | ياابت",
+   "يليتني | ياليتني"
+  ],
+  "BADAL-YA-ALIF": [
+   "التورية | التوراة",
+   "ادريك | ادراك",
+   "اتيهم | اتاهم",
+   "اتيكم | اتاكم",
+   "اتيك | اتاك",
+   "افتريه | افتراه",
+   "هويه | هواه",
+   "وماويهم | وماواهم"
+  ],
+  "MIXED": [
+   "اسريل | اسراييل",
+   "ابرهم | ابراهيم",
+   "التي | اللاتي",
+   "ملقوا | ملاقو",
+   "يايس | يياس",
+   "الي | اللايي",
+   "والتي | واللاتي",
+   "خسين | خاسيين"
+  ],
+  "ZIYADA-ALIF": [
+   "اولوا | اولو",
+   "يدعوا | يدعو",
+   "يتلوا | يتلو",
+   "وملايه | ومليه",
+   "واولوا | واولو",
+   "ندعوا | ندعو",
+   "يرجوا | يرجو",
+   "تتلوا | تتلو"
+  ],
+  "HADHF-LAM": [
+   "اليل | الليل",
+   "واليل | والليل",
+   "باليل | بالليل",
+   "والذان | واللذان",
+   "الذين | اللذين",
+   "وباليل | وبالليل"
+  ],
+  "BADAL-OTHER": [
+   "بصطة | بسطة",
+   "ويبصط | ويبسط"
+  ],
+  "HADHF-WAW": [
+   "داود | داوود",
+   "الريا | الرويا",
+   "يستون | يستوون",
+   "الغاون | الغاوون",
+   "المودة | الموودة",
+   "فاوا | فاووا",
+   "وتوي | وتووي",
+   "لتستوا | لتستووا"
+  ],
+  "ZIYADA-WAW": [
+   "الربوا | الربا",
+   "يبدوا | يبدا",
+   "نبوا | نبا",
+   "الملوا | الملا",
+   "جزوا | جزا",
+   "ساوريكم | ساريكم",
+   "انبوا | انبا",
+   "الضعفوا | الضعفا"
+  ],
+  "ZIYADA-YA": [
+   "افاين | افان",
+   "باييد | بايد",
+   "نباي | نبا",
+   "تلقاي | تلقا",
+   "اناي | انا",
+   "ولقاي | ولقا",
+   "وراي | ورا",
+   "بلقاي | بلقا"
+  ],
+  "HADHF-OTHER": [
+   "نجي | ننجي"
+  ]
+ },
+ "lexical_determinism": {
+  "skeleton_types_total": 14689,
+  "types_all_divergent": 1988,
+  "types_none_divergent": 12610,
+  "types_mixed": 91,
+  "divergent_tokens_in_invariant_types": 6618,
+  "divergent_tokens_in_mixed_types": 291,
+  "fraction_divergence_lexically_determined": 0.9578810247503257,
+  "verdict": "LEXICALLY-DETERMINED"
+ },
+ "I1_frequency_concentration": {
+  "statistic": "pooled length-stratified delta mean log10 frequency (divergent - non-divergent)",
+  "locked_direction": "POSITIVE",
+  "observed": 0.01668167281002037,
+  "p_perm_one_sided": 0.22847715228477153,
+  "null_mean": -0.00018995991249962926,
+  "n_strata": 11,
+  "n_types": 14597,
+  "direction_held": true,
+  "verdict": "NULL"
+ },
+ "stratified_set": {
+  "n_strata": 83,
+  "n_tokens": 963,
+  "informative_minority_mass": 127,
+  "verse_final_tokens": 40,
+  "register_marginals": {
+   "legal_medinan": 229,
+   "narrative": 560,
+   "liturgical_didactic": 125,
+   "eschatological_mufassal": 49
+  }
+ },
+ "I2_verse_final": {
+  "statistic": "count of LONG-variant tokens at verse-final position, within-stratum permutation",
+  "locked_direction": "LONG enriched verse-finally",
+  "observed": 25,
+  "null_mean": 22.0183,
+  "p_perm_one_sided": 0.096990300969903,
+  "direction_held": true,
+  "verdict": "NULL",
+  "power_note": "declared underpowered in prereg 6-I2"
+ },
+ "I3a_register_omnibus": {
+  "statistic": "within-stratum-centred dispersion of SHORT rate across 4 registers",
+  "locked_direction": "none (omnibus)",
+  "observed": 0.4548706498484956,
+  "null_mean": 0.29940339195032073,
+  "p_perm": 0.20927907209279073,
+  "verdict": "NULL"
+ },
+ "I3b_register_contrast": {
+  "statistic": "centred SHORT rate, eschatological_mufassal minus legal_medinan",
+  "locked_direction": "POSITIVE",
+  "observed": -0.010262278965492918,
+  "null_mean": -0.0004752635479721986,
+  "p_perm_one_sided": 0.5792420757924207,
+  "direction_held": false,
+  "verdict": "PRE-COMMIT VIOLATION (published as NULL)"
+ },
+ "I4_surah_position": {
+  "statistic": "pooled within-stratum mean relative-position difference (SHORT - LONG)",
+  "locked_direction": "two-sided",
+  "observed": 0.15228126098959296,
+  "null_mean": 0.0004092254775870719,
+  "p_perm_two_sided": 0.007499250074992501,
+  "verdict": "CONDITIONED"
+ },
+ "descriptive_unconditioned_register_rates": {
+  "liturgical_didactic": 0.07735655737704918,
+  "legal_medinan": 0.08620631207837554,
+  "narrative": 0.08572941137544254,
+  "eschatological_mufassal": 0.0819127419820861
+ },
+ "descriptive_unconditioned_verse_final_rate": {
+  "verse_final": 0.15169980756895446,
+  "non_final": 0.07843575712932759
+ },
+ "classical_audit": {
+  "anchor": "al-Suyuti, al-Itqan fi 'ulum al-Qur'an, al-naw' al-sadis wa-l-sab'un (fi marsum al-khatt wa-adab kitabatihi); data/literature/classical-tafsir/raw/suyuti-itqan.openiti.raw.txt line 23216",
+  "C1_badal_waw_items": {
+   "الحيوة | الحياة": 63,
+   "الصلوة | الصلاة": 58,
+   "الزكوة | الزكاة": 26,
+   "حيوة | حياة": 4,
+   "والصلوة | والصلاة": 3,
+   "بالحيوة | بالحياة": 3,
+   "بالصلوة | بالصلاة": 3,
+   "بالغدوة | بالغداة": 2,
+   "زكوة | زكاة": 2,
+   "والزكوة | والزكاة": 2,
+   "صلوة | صلاة": 2,
+   "صلوتك | صلاتك": 1,
+   "اصلوتك | اصلاتك": 1,
+   "وزكوة | وزكاة": 1,
+   "للزكوة | للزكاة": 1,
+   "كمشكوة | كمشكاة": 1,
+   "النجوة | النجاة": 1,
+   "ومنوة | ومناة": 1,
+   "للصلوة | للصلاة": 1,
+   "والحيوة | والحياة": 1
+  },
+  "C2_ibrahim_defective_by_surah": {
+   "2": 15
+  },
+  "C3_kitab_plene_locations": [
+   "13:38",
+   "15:4",
+   "18:27"
+  ],
+  "C3_kitab_defective_count": 44,
+  "C4_samawat_plene_locations": [
+   "41:12"
+  ],
+  "C5_ziyada_alif_in_Q33": [
+   {
+    "ref": "33:6",
+    "uthmani": "واولوا",
+    "simple": "واولو",
+    "verse_final": false,
+    "class": "ZIYADA-ALIF"
+   },
+   {
+    "ref": "33:21",
+    "uthmani": "يرجوا",
+    "simple": "يرجو",
+    "verse_final": false,
+    "class": "ZIYADA-ALIF"
+   }
+  ]
+ },
+ "alternating_inventory": [
+  {
+   "simple_pausal_form": "قَال",
+   "variants": {
+    "قال": 412,
+    "قل": 4
+   },
+   "n_tokens": 416
+  },
+  {
+   "simple_pausal_form": "إِبْرَاهِيم",
+   "variants": {
+    "ابرهم": 15,
+    "ابرهيم": 43
+   },
+   "n_tokens": 58
+  },
+  {
+   "simple_pausal_form": "كِتَاب",
+   "variants": {
+    "كتب": 44,
+    "كتاب": 3
+   },
+   "n_tokens": 47
+  },
+  {
+   "simple_pausal_form": "آيَاتِنَا",
+   "variants": {
+    "ايتنا": 21,
+    "اياتنا": 1
+   },
+   "n_tokens": 22
+  },
+  {
+   "simple_pausal_form": "الْمَلَأ",
+   "variants": {
+    "الملا": 13,
+    "الملوا": 4
+   },
+   "n_tokens": 17
+  },
+  {
+   "simple_pausal_form": "جَزَاء",
+   "variants": {
+    "جزا": 11,
+    "جزوا": 3
+   },
+   "n_tokens": 14
+  },
+  {
+   "simple_pausal_form": "شُرَكَاء",
+   "variants": {
+    "شركا": 11,
+    "شركوا": 2
+   },
+   "n_tokens": 13
+  },
+  {
+   "simple_pausal_form": "ثَمُود",
+   "variants": {
+    "ثمود": 12,
+    "ثمودا": 1
+   },
+   "n_tokens": 13
+  },
+  {
+   "simple_pausal_form": "الْكُفَّار",
+   "variants": {
+    "الكفار": 12,
+    "الكفر": 1
+   },
+   "n_tokens": 13
+  },
+  {
+   "simple_pausal_form": "سُبْحَان",
+   "variants": {
+    "سبحن": 12,
+    "سبحان": 1
+   },
+   "n_tokens": 13
+  },
+  {
+   "simple_pausal_form": "وَرَاء",
+   "variants": {
+    "ورا": 11,
+    "وراي": 1
+   },
+   "n_tokens": 12
+  },
+  {
+   "simple_pausal_form": "نَشَاء",
+   "variants": {
+    "نشا": 11,
+    "نشوا": 1
+   },
+   "n_tokens": 12
+  },
+  {
+   "simple_pausal_form": "آيَاتُنَا",
+   "variants": {
+    "ايتنا": 11,
+    "اياتنا": 1
+   },
+   "n_tokens": 12
+  },
+  {
+   "simple_pausal_form": "وَثَمُود",
+   "variants": {
+    "وثمود": 9,
+    "وثمودا": 3
+   },
+   "n_tokens": 12
+  },
+  {
+   "simple_pausal_form": "عِبَاد",
+   "variants": {
+    "عباد": 10,
+    "عبد": 1
+   },
+   "n_tokens": 11
+  },
+  {
+   "simple_pausal_form": "الرِّيَاح",
+   "variants": {
+    "الريح": 9,
+    "الرياح": 1
+   },
+   "n_tokens": 10
+  },
+  {
+   "simple_pausal_form": "عِبَادِي",
+   "variants": {
+    "عبادي": 9,
+    "عبدي": 1
+   },
+   "n_tokens": 10
+  },
+  {
+   "simple_pausal_form": "الْأَمْثَال",
+   "variants": {
+    "الامثال": 5,
+    "الامثل": 5
+   },
+   "n_tokens": 10
+  },
+  {
+   "simple_pausal_form": "نَبَأ",
+   "variants": {
+    "نبا": 5,
+    "نبوا": 4
+   },
+   "n_tokens": 9
+  },
+  {
+   "simple_pausal_form": "قُرْآنًا",
+   "variants": {
+    "قرنا": 2,
+    "قرانا": 7
+   },
+   "n_tokens": 9
+  },
+  {
+   "simple_pausal_form": "تُرَابًا",
+   "variants": {
+    "تربا": 3,
+    "ترابا": 6
+   },
+   "n_tokens": 9
+  },
+  {
+   "simple_pausal_form": "أَنبَاء",
+   "variants": {
+    "انبا": 6,
+    "انبوا": 2
+   },
+   "n_tokens": 8
+  },
+  {
+   "simple_pausal_form": "وَبَنَات",
+   "variants": {
+    "وبنات": 6,
+    "وبنت": 1
+   },
+   "n_tokens": 7
+  },
+  {
+   "simple_pausal_form": "بِلِقَاء",
+   "variants": {
+    "بلقا": 6,
+    "بلقاي": 1
+   },
+   "n_tokens": 7
+  },
+  {
+   "simple_pausal_form": "سَاحِر",
+   "variants": {
+    "سحر": 6,
+    "ساحر": 1
+   },
+   "n_tokens": 7
+  },
+  {
+   "simple_pausal_form": "إِحْسَانًا",
+   "variants": {
+    "احسانا": 1,
+    "احسنا": 5
+   },
+   "n_tokens": 6
+  },
+  {
+   "simple_pausal_form": "رَأَىٰ",
+   "variants": {
+    "را": 4,
+    "راي": 2
+   },
+   "n_tokens": 6
+  },
+  {
+   "simple_pausal_form": "تَبَارَك",
+   "variants": {
+    "تبارك": 4,
+    "تبرك": 2
+   },
+   "n_tokens": 6
+  },
+  {
+   "simple_pausal_form": "الْقَهَّار",
+   "variants": {
+    "القهار": 5,
+    "القهر": 1
+   },
+   "n_tokens": 6
+  },
+  {
+   "simple_pausal_form": "دُعَاء",
+   "variants": {
+    "دعا": 5,
+    "دعوا": 1
+   },
+   "n_tokens": 6
+  },
+  {
+   "simple_pausal_form": "سَمَاوَات",
+   "variants": {
+    "سموت": 4,
+    "سموات": 1
+   },
+   "n_tokens": 5
+  },
+  {
+   "simple_pausal_form": "الْآن",
+   "variants": {
+    "الن": 4,
+    "الان": 1
+   },
+   "n_tokens": 5
+  },
+  {
+   "simple_pausal_form": "بِسِيمَاهُمْ",
+   "variants": {
+    "بسيمهم": 3,
+    "بسيميهم": 2
+   },
+   "n_tokens": 5
+  },
+  {
+   "simple_pausal_form": "الْمِيعَاد",
+   "variants": {
+    "الميعاد": 4,
+    "الميعد": 1
+   },
+   "n_tokens": 5
+  },
+  {
+   "simple_pausal_form": "الْأَدْبَار",
+   "variants": {
+    "الادبار": 2,
+    "الادبر": 3
+   },
+   "n_tokens": 5
+  },
+  {
+   "simple_pausal_form": "بِظَلَّام",
+   "variants": {
+    "بظلام": 1,
+    "بظلم": 4
+   },
+   "n_tokens": 5
+  },
+  {
+   "simple_pausal_form": "أَبْنَاء",
+   "variants": {
+    "ابنوا": 1,
+    "ابنا": 4
+   },
+   "n_tokens": 5
+  },
+  {
+   "simple_pausal_form": "بَصَائِر",
+   "variants": {
+    "بصاير": 4,
+    "بصير": 1
+   },
+   "n_tokens": 5
+  },
+  {
+   "simple_pausal_form": "يَسْتَأْخِرُون",
+   "variants": {
+    "يستاخرون": 1,
+    "يستخرون": 4
+   },
+   "n_tokens": 5
+  },
+  {
+   "simple_pausal_form": "بَلَاء",
+   "variants": {
+    "بلا": 3,
+    "بلوا": 1
+   },
+   "n_tokens": 4
+  },
+  {
+   "simple_pausal_form": "شَعَائِر",
+   "variants": {
+    "شعاير": 1,
+    "شعير": 3
+   },
+   "n_tokens": 4
+  },
+  {
+   "simple_pausal_form": "عَامِل",
+   "variants": {
+    "عمل": 3,
+    "عامل": 1
+   },
+   "n_tokens": 4
+  },
+  {
+   "simple_pausal_form": "الْعَدَاوَة",
+   "variants": {
+    "العداوة": 1,
+    "العدوة": 3
+   },
+   "n_tokens": 4
+  },
+  {
+   "simple_pausal_form": "الْأَيْكَة",
+   "variants": {
+    "الايكة": 2,
+    "ليكة": 2
+   },
+   "n_tokens": 4
+  },
+  {
+   "simple_pausal_form": "الْبَنَات",
+   "variants": {
+    "البنت": 2,
+    "البنات": 2
+   },
+   "n_tokens": 4
+  },
+  {
+   "simple_pausal_form": "الْغَمَام",
+   "variants": {
+    "الغمام": 2,
+    "الغمم": 1
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "الْأَسْبَاب",
+   "variants": {
+    "الاسباب": 1,
+    "الاسبب": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "الْعِظَام",
+   "variants": {
+    "العظام": 1,
+    "العظم": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "وَأَعْنَاب",
+   "variants": {
+    "واعناب": 1,
+    "واعنب": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "آنَاء",
+   "variants": {
+    "انا": 2,
+    "اناي": 1
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "كَبَائِر",
+   "variants": {
+    "كباير": 1,
+    "كبير": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "وَكِتَاب",
+   "variants": {
+    "وكتب": 2,
+    "وكتاب": 1
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "كَفَّارَة",
+   "variants": {
+    "كفارة": 1,
+    "كفرة": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "مُبَارَك",
+   "variants": {
+    "مبارك": 2,
+    "مبرك": 1
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "أَعْنَاب",
+   "variants": {
+    "اعناب": 1,
+    "اعنب": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "تِلْقَاء",
+   "variants": {
+    "تلقا": 2,
+    "تلقاي": 1
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "شُفَعَاء",
+   "variants": {
+    "شفعا": 2,
+    "شفعوا": 1
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "الضُّعَفَاء",
+   "variants": {
+    "الضعفا": 1,
+    "الضعفوا": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "ظَالِمَة",
+   "variants": {
+    "ظلمة": 1,
+    "ظالمة": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "أَعْنَاقِهِمْ",
+   "variants": {
+    "اعناقهم": 1,
+    "اعنقهم": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "وَإِيتَاء",
+   "variants": {
+    "وايتاي": 1,
+    "وايتا": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "سِرَاجًا",
+   "variants": {
+    "سرجا": 1,
+    "سراجا": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "simple_pausal_form": "إِصْلَاح",
+   "variants": {
+    "اصلاح": 1,
+    "اصلح": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "الرَّضَاعَة",
+   "variants": {
+    "الرضاعة": 1,
+    "الرضعة": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "يَعْفُو",
+   "variants": {
+    "يعفوا": 1,
+    "يعفو": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "أَضْعَافًا",
+   "variants": {
+    "اضعافا": 1,
+    "اضعفا": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "إِطْعَام",
+   "variants": {
+    "اطعام": 1,
+    "اطعم": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "نَّبَإ",
+   "variants": {
+    "نباي": 1,
+    "نبا": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "وَعَتَوْا",
+   "variants": {
+    "وعتوا": 1,
+    "وعتو": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "وَلِقَاء",
+   "variants": {
+    "ولقا": 1,
+    "ولقاي": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "طَائِف",
+   "variants": {
+    "طيف": 1,
+    "طايف": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "لِشَيْء",
+   "variants": {
+    "لشي": 1,
+    "لشاي": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "اجْتَبَاه",
+   "variants": {
+    "اجتبيه": 1,
+    "اجتبه": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "آتَانِي",
+   "variants": {
+    "اتيني": 1,
+    "اتين": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "هَٰذَان",
+   "variants": {
+    "هذن": 1,
+    "هذان": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "الْأَصْوَات",
+   "variants": {
+    "الاصوات": 1,
+    "الاصوت": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "سَعَوْا",
+   "variants": {
+    "سعوا": 1,
+    "سعو": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "مُّبَارَكًا",
+   "variants": {
+    "مباركا": 1,
+    "مبركا": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "جِهَادًا",
+   "variants": {
+    "جهادا": 1,
+    "جهدا": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "قَوَارِير",
+   "variants": {
+    "قوارير": 1,
+    "قواريرا": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "دَاخِرِين",
+   "variants": {
+    "دخرين": 1,
+    "داخرين": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "كَاذِبَة",
+   "variants": {
+    "كاذبة": 1,
+    "كذبة": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "simple_pausal_form": "كِذَّابًا",
+   "variants": {
+    "كذابا": 1,
+    "كذبا": 1
+   },
+   "n_tokens": 2
+  }
+ ],
+ "verdicts": {
+  "descriptive_lexical_determinism": "LEXICALLY-DETERMINED",
+  "I1_frequency_concentration": "NULL",
+  "I2_verse_final": "NULL",
+  "I3a_register_omnibus": "NULL",
+  "I3b_register_contrast": "PRE-COMMIT VIOLATION (published as NULL)",
+  "I4_surah_position": "CONDITIONED",
+  "n_registered_cells_passing": 1
+ },
+ "wall_seconds": 40.7
+}

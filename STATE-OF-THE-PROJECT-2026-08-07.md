@@ -21,32 +21,79 @@ project's most defensible output — and what would actually be needed to settle
 
 Every number below is cited to a file. Nothing here is asserted from memory.
 
+> ### Updated later on 2026-08-07 — two audits changed §1 and §2
+>
+> This document was written mid-day. Two further audits landed the same evening and **both
+> changed what §1 may claim**, so §1 has been restated at post-audit strength. What the
+> document said before is preserved in the two rows added to §2 and in the sources cited
+> there; nothing has been quietly softened or hardened.
+>
+> - **H-NEW-2760** audited Pillar 1 against a null that matches its nuisance parameter.
+>   **The law survives — the first standing claim in this project to do so — and its
+>   published `p = 3.17 × 10⁻¹²` is retired.** §1.1 rewritten.
+> - **H-NEW-2730** genre-controlled the scansion ordering of H-NEW-2690. **The three-way
+>   ordering falls; one of its two legs survives.** New §1.5, and the row in §2.
+>
+> The lesson of the day is now stated twice over: **a law that has never met a control is a
+> description, and a p-value computed against the wrong null is a number, not a strength.**
+
 ---
 
 ## 1. What survives, with its actual strength
 
-Four things. Each carries its caveat inline, because the caveat is part of the result.
+Five things. Each carries its caveat inline, because the caveat is part of the result. **Each
+is stated at its post-audit strength, not the strength it was published at** — where those
+differ, the difference is named.
 
-### 1.1 The muqaṭṭaʿāt are book-introduction markers — **stands, and is partly definitional**
+### 1.1 The muqaṭṭaʿāt are book-introduction markers — **survives its nuisance parameter; its published p-value does not**
 
-The only law neither baseline satisfies. Given a generous, Bonferroni-corrected marker-class
-search over the 721 hypergeometric evaluations actually performed, the search **recovers the
-muqaṭṭaʿāt themselves** from this corpus — الر, حم, طسم, الم, المص, المر, سبحان, طه, طس, يس,
-ص, تنزيل, ق, والطور — covering 30 surahs, 27 of them book-referencing, at
-**p_bonf = 4.7 × 10⁻¹³**. Run identically on al-Bukhārī and on pre-Islamic poetry it finds
-**nothing at all**.
+**This is the strongest thing in the project and the only claim here that has met a null
+matching the variable that drives it.** H-NEW-2760 supplied that null. Read the two halves
+separately, because they are separately true.
 
-**The caveat is large and must travel with the claim.** The baselines fail partly because
-there is nothing there to find: only **6** Bukhārī pseudo-surahs and **1** poetry
-pseudo-surah mention *kitāb* or *qurʾān* in their opening three units. There is no
-self-referential target vocabulary to mark and no opening marker class to mark it with.
-**"Only scripture talks about itself as a book" is a weaker claim than "only this corpus has
-an engineered marker system," and no control run so far separates the two.** H-NEW-2720
-sharpened the problem rather than resolving it: al-Jāḥiẓ's *Kitāb al-Ḥayawān* — adab prose,
-not scripture — yields **الكتاب** and **الكتب** among its strongest marker classes, because
-adab prose talks about books constantly.
+**(a) The law survives.** H-NEW-53's headline — 24 of 29 muqaṭṭaʿāt surahs reference *kitāb*
+or *qurʾān* in their first three verses — **reproduces exactly at 24/29**, and it survives a
+null that permutes the muqaṭṭaʿāt label *within opening-window-size quintiles*, so the
+opening-token budget is identical by construction: observed **24 against a null mean of
+9.304**, rate ratio **2.580**, z = +7.01, p = 1.0 × 10⁻⁴, observation eleven above the 95 %
+band top. **Every matched null in the ladder still places the observation outside its own
+95 % band. The effect never vanishes.**
 
-Source: `findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md` §7.
+**(b) `p = 3.17 × 10⁻¹²` is withdrawn as a description of that strength.** It is
+arithmetically correct and inferentially void: it prices a hypergeometric that draws 29
+surahs *uniformly from 114*, which requires the 29 to be exchangeable with the other 85. They
+are not, and **this project established that itself** — `h-new-46` is a STRONG-PASS showing
+muqaṭṭaʿāt surahs concentrate in long surahs. **The honest effect size is a rate ratio
+between 1.27 and 2.58, not a twelve-order-of-magnitude tail.**
+
+**The sharpest form of the law is new, positional, and length-free.** Conditioning on each
+surah's own verse count and its own number of Book-bearing verses: **all 29 muqaṭṭaʿāt surahs
+mention the Book somewhere** — so do 40 others — but they place the **first** mention at
+**0.0996** of the surah against **0.3403** for the other 40 (Δ = −0.2407, p = 5.0 × 10⁻⁴).
+The law is not *"muqaṭṭaʿāt surahs mention the Book"*; it is ***"muqaṭṭaʿāt surahs announce it
+at the top."***
+
+**Three qualifications travel with the verdict and are not separable from it.**
+1. **H-NEW-2760's H2 failed its gate.** The nuisance channel it made primary — opening-window
+   size, ρ = +0.1678 — is the *weaker* of the two available; whole-surah length is stronger at
+   ρ = +0.4583. **Against that stronger channel the rate ratio falls to 1.694**, and under the
+   locked rule's own RR < 2.0 clause applied to that stratification the verdict would read
+   GENRE-SHARED-BUT-LARGER. Both numbers are the reader's entitlement.
+2. **DISCRIMINATES was earned on the within-corpus nulls, not on the genre arm.** In
+   H-NEW-2760's matched-partition control **0 of 3 baselines clear the gate, and the poetry arm
+   is a published pre-commit violation** (locked positive, observed ρ = −0.0343).
+3. **The cross-genre half remains partly definitional**, exactly as this document said before.
+   The 2680 marker-class search recovers the muqaṭṭaʿāt themselves at **p_bonf = 4.7 × 10⁻¹³**
+   and finds nothing in either baseline — but only **6** Bukhārī and **1** poetry pseudo-surah
+   mention *kitāb* or *qurʾān* in their opening units at all. **"Only scripture talks about
+   itself as a book" is a weaker claim than "only this corpus has an engineered marker system,"
+   and no control run so far separates the two.** H-NEW-2720 sharpened the problem rather than
+   resolving it: al-Jāḥiẓ's *Kitāb al-Ḥayawān* — adab prose, not scripture — yields **الكتاب**
+   and **الكتب** among its strongest marker classes, because adab prose talks about books
+   constantly.
+
+Sources: `findings/phase-b-hypotheses/h-new-2760-muqattaat-book-reference-nuisance.md`;
+`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md` §7.
 
 ### 1.2 The post-kink content-compression **slope** — **genre-shared-but-larger**
 
@@ -103,6 +150,40 @@ with the mundane explanation surviving and quantified.
 
 Source: `findings/phase-b-hypotheses/h-new-2710-title-density-retest.md`.
 
+### 1.5 The corpus is measurably less metrical than pre-Islamic poetry — **half of al-Bāqillānī, and only half**
+
+H-NEW-2690 reported that on `d_min`, the length-invariant distance to the nearest classical
+metrical template, this corpus sits **between** poetry and prose, and read that as an
+operationalisation of al-Bāqillānī's *neither* nathr *nor* shiʿr. H-NEW-2730 genre-controlled
+it. **The three-way ordering does not survive. One of its two legs does.**
+
+**What survives — the *not-poetry* half.** The corpus is less metrical than the muʿallaqāt,
+and that contrast is not a length artefact: unit length explains **5.1 %** of the gap; it
+holds at full size in the one syllable-length bin where the arms overlap (**0.21739** against
+poetry's **0.14815**); it survives a per-unit noise control matched on length *and* syllable
+weight at p = 1 × 10⁻⁴ in both rules-tuples; and re-cutting this corpus's own verses to
+bayt lengths moves it only **7.5 %** of the way toward poetry.
+
+**What falls — the *not-prose* half.** Cutting this corpus's **own verses** to ḥadīth sentence
+lengths moves its `d_min` **99.4 %** of the way to ḥadīth's value (0.22222 → 0.23953 against
+al-Dārimī's native 0.23963), **using no baseline text at all**. A matched partition of
+al-Dārimī lands at **0.22222** — this corpus's own median to five decimals — and one of
+al-Bukhārī at **0.21893**, with **199 of 200** offsets at or below it. At matched syllable
+length the two medians are **identical**. And only **49.2 %** of this corpus's verses are more
+metrical than their own length-and-heaviness-matched random twin — a coin flip — against
+**88.3 %** of poetry abyāt and **62–69 %** of ḥadīth sentences.
+
+**So: one real contrast plus one artefact, not a measured intermediate position.** The
+classical thesis is untouched — "neither *nathr* nor *shiʿr*" was never a claim about medians
+of normalised edit distances — but its stated empirical operationalisation is half withdrawn.
+
+**Caveats.** There is **no vocalised adab prose on disk**, so al-Jāḥiẓ cannot be tested on this
+statistic at all and the prose control is ḥadīth-only. The poetry side rests on 240 abyāt
+covering **two of sixteen** meters. Nothing here shows the position is unusual among elevated
+or religious Arabic prose.
+
+Source: `findings/phase-b-hypotheses/h-new-2730-scansion-genre-control.md`.
+
 ---
 
 ## 2. What fell on 2026-08-07, and why
@@ -126,11 +207,15 @@ One line each: the claim, the control, the number.
 | **Register separability** | thin grammar separates the three registers at 1.75× lift | same pipeline, surrogate 3-way labels | **poetry 1.842** against this corpus's 1.658 (capped: surrogate labels) |
 | **UAS** | a unified architectural significance ranking | it has no null hypothesis | its own frontmatter reads `status: SYNTHESIS`; the dispersion diagnostic puts poetry (1.267) above this corpus (1.166) |
 | **The four p-values** | multiply to ~10⁻¹² | check what each null randomises | they are **not commensurable**; only one multiplication is licensed (L1 × L2), and its L2 factor does not mean what it appears to |
+| **Pillar 1's p-value** *(evening)* | 24/29 book-reference at **p = 3.17 × 10⁻¹²** | a null that permutes the label **within opening-window-size quintiles** | the **law survives** (§1.1) but the p-value is **withdrawn**: it prices an exchangeable null this corpus does not satisfy. Rate ratio **2.580** against the registered channel, **1.694** against the stronger one |
+| **The scansion ordering** *(evening)* | poetry < this corpus < prose on `d_min`, "measurably more metrical than prose" | re-cut **this corpus's own verses** to ḥadīth sentence lengths; matched partitions of two ḥadīth corpora | the prose leg moves **99.4 %** of the way to ḥadīth; a matched al-Dārimī partition **ties** it at 0.22222; al-Bukhārī's **beats** it at 199/200 offsets. **H1b withdrawn; H1a survives** (§1.5) |
 
 Full evidence: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md` and
 `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`. Per-file correction status:
 `findings/PILLAR-CORRECTION-INVENTORY-2026-08-07.md` and
-`findings/GENRE-CONTROL-INVENTORY-2026-08-07.md`.
+`findings/GENRE-CONTROL-INVENTORY-2026-08-07.md`. The two evening rows:
+`findings/phase-b-hypotheses/h-new-2760-muqattaat-book-reference-nuisance.md` and
+`findings/phase-b-hypotheses/h-new-2730-scansion-genre-control.md`.
 
 **Nothing was deleted.** Every original claim remains in place with a notice beside it. The
 record of what was believed and when is itself evidence, and erasing it would be a second
@@ -165,9 +250,12 @@ pre-registered, correctly-nulled retirement of a claim that circulates widely.
   (H-NEW-2000, H-NEW-2010, H-NEW-2020, H-NEW-2230), surah-position arithmetic (H-NEW-2090),
   the number-word census (H-NEW-2410). Across the exhaustive generators the corpus produces
   *fewer* meaningful coincidences than chance predicts, not more.
-- **And now the genre controls themselves** (H-NEW-2680, H-NEW-2720), which belong in this
-  list: showing that thirteen of the project's own laws do not discriminate is a harder and
-  more useful result than any of them was.
+- **And now the genre controls themselves** (H-NEW-2680, H-NEW-2720, and in the evening
+  H-NEW-2730), which belong in this list: showing that fourteen of the project's own laws do
+  not discriminate is a harder and more useful result than any of them was. **H-NEW-2730 adds
+  the cleanest demonstration of the day**, because it needs no baseline text: re-cut this
+  corpus's own verses to another genre's unit lengths and the statistic walks 99.4 % of the way
+  to that genre's value.
 
 ---
 
@@ -206,6 +294,25 @@ pre-registered, correctly-nulled retirement of a claim that circulates widely.
    baseline pass is weak evidence against the law. For **boundary-sensitive** statistics
    arbitrary cuts *destroy* real boundaries, so a baseline pass is strong evidence. State
    which regime each verdict is in; never use the caveat as a blanket excuse.
+8. **Normalisation is not invariance.** `d_min` divides by unit length and tiles its templates
+   to unit length, and was described as "length-invariant by construction" — yet length alone
+   explains **28.7 %** of its variance, because it is a minimum over ~200 templates and a
+   minimum-of-many falls as the string shortens. A statistic can be invariant in its *units*
+   and not in its *distribution*. **Only a measurement settles which.** This is §4.5 again,
+   in a form that survived a whole finding because the normalisation looked like a proof.
+   (H-NEW-2730.)
+9. **A p-value is a property of a null, not of a claim.** Pillar 1's `p = 3.17 × 10⁻¹²` was
+   the largest number in the repository and it priced a hypergeometric drawing 29 surahs
+   uniformly from 114. The claim it described is **real and survived**; the number was still
+   void, and this project's own `h-new-46` had already shown why. **When quoting a p-value,
+   quote the null it came from in the same breath.** (H-NEW-2760.)
+10. **Rank the nuisance channels on the data before locking one as primary.** H-NEW-2760
+    pre-registered opening-window size as its primary nuisance and deferred whole-surah length
+    as "correlated but not identical". On the data the deferred channel was more than twice as
+    strong (ρ = +0.4583 against +0.1678), and the registered rate ratio of 2.580 falls to 1.694
+    against it. The pre-registration is what made this visible and it is why both numbers are
+    published — but a cheap descriptive measurement of each candidate channel, *before*
+    locking, would have ranked them correctly.
 
 ---
 
@@ -232,6 +339,13 @@ that do.
 4. **More than three matched genres.** Poetry, ḥadīth and adab prose are the only matched
    Arabic corpora on disk. Three genres cannot establish what Arabic in general does, and
    every percentile in §2 is a percentile within a very small reference class.
+4a. **A *vocalised* comparison corpus, which is a separate and narrower gap.** Any test that
+   reads syllable weight — scansion, prosody, metre, tajwīd — needs diacritics, and on disk
+   only this corpus, the ḥadīth collections and **three** of the seven muʿallaqāt have them.
+   `bukhari-noquran.txt`, `jahiz-hayawan.txt` and **all eight dīwāns** sit at a diacritic ratio
+   of **0.000**. H-NEW-2730's prose control is therefore ḥadīth-only and al-Jāḥiẓ is untestable
+   on that axis by any means. A vocalised adab-prose text and a vocalised dīwān would each
+   open a class of questions that is currently closed.
 5. **Qirāʾāt data and a rasm/imlāʾ divergence set**, neither of which is on disk, for the
    orthographic questions the project has never been able to touch.
 
@@ -244,6 +358,10 @@ that do.
 - **Two documents are canonical for what fell**:
   `findings/PILLAR-LAW-CORRECTION-2026-08-07.md` (the four pillar laws) and
   `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md` (the nine laws of the genre sweep).
+  **The two evening audits are canonical for what changed after those were written**:
+  `h-new-2760-muqattaat-book-reference-nuisance.md` (Pillar 1 survives; its p-value does not)
+  and `h-new-2730-scansion-genre-control.md` (the scansion ordering, half withdrawn). Where
+  this document and a finding disagree, the finding wins — it has the run directory.
 - **`MASTER-FINDINGS-LEDGER.md` is not a safe index on its own.** It is 1.2 MB, has
   duplicated section numbers, and asserts corrected laws in dozens of places. Use it with the
   correction notices, never alone.
@@ -256,7 +374,9 @@ that do.
 
 ---
 
-*Written 2026-08-07 by Waiel Al-Shujaa, on the day thirteen laws met their first controls.
-A law that has never met a control is a description. Most of this project's laws were
-descriptions. The negatives were real, the discipline was real, and the discipline is what
-found the error. Bismillāhi al-Raḥmāni al-Raḥīm.*
+*Written 2026-08-07 by Waiel Al-Shujaa, on the day fourteen laws met their first controls,
+and updated the same evening when the first of them survived one. A law that has never met a
+control is a description. Most of this project's laws were descriptions. One is not: the
+muqaṭṭaʿāt announce the Book at the top, at a rate ratio between 1.27 and 2.58 — smaller than
+it was published as, and real. The negatives were real, the discipline was real, and the
+discipline is what found the error. Bismillāhi al-Raḥmāni al-Raḥīm.*

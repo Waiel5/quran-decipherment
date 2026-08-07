@@ -6,6 +6,75 @@ version: 1.0
 applies_to: All Phase-B+ per-surah and corpus-wide investigations
 ---
 
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: the muqaṭṭaʿāt book-reference LAW SURVIVES; its p = 3.17 × 10⁻¹² does NOT
+>
+> **This is the only standing claim in the project to have met a null matching the variable
+> that drives it, and it passed.** Both halves are separately true and both must travel.
+>
+> - **The law survives.** 24 of 29 reproduces **exactly**. Against a null that permutes the
+>   muqaṭṭaʿāt label *within opening-window-size quintiles* — so the opening-token budget is
+>   identical by construction — the observed 24 stands against a null mean of **9.304**: rate
+>   ratio **2.580**, z = +7.01, p = 1.0 × 10⁻⁴, eleven above the 95 % band top. **Every**
+>   matched null in the ladder still places the observation outside its own 95 % band.
+> - **`p = 3.17 × 10⁻¹²` is withdrawn as a description of that strength.** It is
+>   arithmetically correct and inferentially void: the hypergeometric draws 29 surahs
+>   *uniformly from 114*, which requires the 29 to be exchangeable with the other 85. They are
+>   not, and this project established that itself — `h-new-46-muqattaat-vs-surah-length.md` is
+>   a STRONG-PASS showing muqaṭṭaʿāt surahs concentrate in **long** surahs. **The honest effect
+>   size is a rate ratio between 1.27 and 2.58, not a twelve-order-of-magnitude tail.**
+> - **The sharpest form of the law is positional and length-free.** All 29 muqaṭṭaʿāt surahs
+>   mention the Book somewhere — so do 40 others — but they place the **first** mention at
+>   **0.0996** of the surah against **0.3403** (Δ = −0.2407, p = 5.0 × 10⁻⁴). The law is not
+>   "muqaṭṭaʿāt surahs mention the Book"; it is **"muqaṭṭaʿāt surahs announce it at the top."**
+>
+> **Three qualifications travel with the verdict.** (i) H-NEW-2760's H2 **failed its gate**:
+> the nuisance channel it made primary (opening-window size, ρ = +0.1678) is weaker than
+> whole-surah length (ρ = +0.4583), and **against that stronger channel the rate ratio is
+> 1.694**. (ii) DISCRIMINATES was earned on the within-corpus nulls; in the matched-partition
+> genre arm **0 of 3 baselines clear the gate and the poetry arm is a published pre-commit
+> violation**. (iii) The cross-genre half remains partly definitional — only 6 al-Bukhārī and
+> 1 pre-Islamic-poetry pseudo-surah mention *kitāb*/*qurʾān* in their opening units at all, and
+> al-Jāḥiẓ's adab prose yields **الكتاب** among its strongest marker classes.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2760-muqattaat-book-reference-nuisance.md`.
+> Orientation: `STATE-OF-THE-PROJECT-2026-08-07.md` §1.1.
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: the scansion three-way ordering does NOT survive a matched control
+>
+> H-NEW-2690 reported **poetry < this corpus < prose** on `d_min` and read it as
+> al-Bāqillānī's *neither* nathr *nor* shiʿr, measured. H-NEW-2730 genre-controlled it.
+> **The ordering falls; one of its two legs survives.**
+>
+> - **The prose leg (H1b) is WITHDRAWN — it is unit length.** Re-cut **this corpus's own
+>   verses** to ḥadīth sentence lengths and `d_min` moves **99.4 %** of the way to ḥadīth's
+>   value (0.22222 → 0.23953 against al-Dārimī's native 0.23963), using **no baseline text at
+>   all**. A matched partition of al-Dārimī lands at **0.22222** — this corpus's own median to
+>   five decimals — and one of al-Bukhārī at **0.21893**, with **199 of 200** offsets at or
+>   below it. At matched syllable length the two medians are **identical** (0.21739).
+> - **The poetry leg (H1a) SURVIVES every length control.** Length explains **5.1 %** of that
+>   gap; re-cutting this corpus to bayt lengths moves it only **7.5 %** toward poetry; it holds
+>   at full size in the one overlapping length bin (0.21739 against poetry's 0.14815) and
+>   passes a per-unit noise control matched on length *and* syllable weight at p = 1 × 10⁻⁴ in
+>   both rules-tuples.
+> - **`d_min` is not length-invariant in practice.** Length alone explains **28.7 %** of its
+>   variance. It normalises by unit length and tiles its templates to unit length, but it is a
+>   minimum over ~200 templates and a minimum-of-many falls as the string shortens.
+>   **Normalisation is not invariance.**
+> - **Matched noise alone reproduces the ordering.** Random strings matched only on length and
+>   syllable weight give poetry 0.22222 < this corpus 0.23913 < al-Bukhārī 0.25992 < al-Dārimī
+>   0.26549 — the same three-way order, from strings containing no Arabic and no metre. Only
+>   **49.2 %** of this corpus's verses are more metrical than their own matched twin — a coin
+>   flip — against **88.3 %** of poetry abyāt.
+>
+> **al-Bāqillānī is untouched**: "neither *nathr* nor *shiʿr*" was never a claim about medians
+> of normalised edit distances. What is withdrawn is half of its stated empirical
+> operationalisation. **Limit:** there is **no vocalised adab prose on disk**, so al-Jāḥiẓ is
+> untestable on this statistic by any means and the prose control is ḥadīth-only.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2730-scansion-genre-control.md`.
+> Orientation: `STATE-OF-THE-PROJECT-2026-08-07.md` §1.5.
+
+
 # THE INVESTIGATION PROTOCOL
 
 
