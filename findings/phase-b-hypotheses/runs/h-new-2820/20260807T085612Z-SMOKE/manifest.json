@@ -1,0 +1,66 @@
+{
+  "finding_id": "H-NEW-2820",
+  "utc": "20260807T085612Z",
+  "prereg": {
+    "path": "findings/phase-b-hypotheses/prereg-h-new-2820-group-claims.md",
+    "sha256": "45abd95012bbf520070685646af909428a183781d94c58c4638353281764b5f1"
+  },
+  "frozen_inputs": [
+    {
+      "path": "data/baseline-corpora/raw/bukhari-noquran.txt",
+      "sha256": "0169b60de7585a51fc340161488534c4d909370c3dcc8951ca2ae3818c44a100"
+    },
+    {
+      "path": "data/baseline-corpora/raw/jahiz-hayawan.txt",
+      "sha256": "419095484df4e315eba889d38a9c2f6edff55c2f10f481ed9ad024e07bbff0cd"
+    },
+    {
+      "path": "data/morphology/surah-root-graph.json",
+      "sha256": "8c39642ad8b0581d5962ffad6e3e727698a0e6a0e5a6b6a3ed947b254d6819be"
+    },
+    {
+      "path": "data/revelation-order.csv",
+      "sha256": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-111.json",
+      "sha256": "4c366c414b82b0d0f3bcd06b68a7b5a87b500cf925b5088704a36c355d7f33fc"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-126.json",
+      "sha256": "699b92b11ab66bd8dd385bbb2c0a44c2f7e39ec7b7aee3525b07dbb85b79f89a"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-570.json",
+      "sha256": "e157a18dd26b815d4ec34a7caef9bd07b603d42193e43d33b92855fba5c3d83c"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/scripts/h-new-2680.py",
+      "sha256": "57d6b214344ea81433e9f840524e6259953657fbf60e8fd54fdd8d2706b88497"
+    },
+    {
+      "path": "quran-text/quran-no-tashkeel.json",
+      "sha256": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+    },
+    {
+      "path": "scripts/h_new_126_isolate_core.py",
+      "sha256": "e06102b97c5f664f14a02518be58bad0e8dd43683df65eb367f1a5157b9f9664"
+    },
+    {
+      "path": "scripts/h_new_570_muqattaat_content_cluster.py",
+      "sha256": "cdba61aecfe6cb4a985cdd89375d32da30e10ad0848fe163c0684350afd26a9a"
+    }
+  ],
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  },
+  "params": {
+    "n_perm_quran": 10000,
+    "n_perm_baseline": 2000,
+    "n_offsets": 3,
+    "k_top": 500,
+    "dirichlet_alpha": 0.5,
+    "caliper_w": 11
+  }
+}

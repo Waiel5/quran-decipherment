@@ -1,0 +1,155 @@
+{
+  "finding_id": "H-NEW-2820-POSTHOC",
+  "utc": "20260807T090239Z",
+  "quarantine": "DESCRIPTIVE ONLY",
+  "P1_mw5_matched": {
+    "tag": "H-NEW-126 Cell A MW-5 hawamim{40..44}",
+    "observed": 0.30623278547638294,
+    "n_group": 5,
+    "n_donor_pool": 109,
+    "seed": 20260509,
+    "published_null": {
+      "observed": 0.30623278547638294,
+      "null_mean": 0.12977618906521465,
+      "null_sd": 0.0568487815937555,
+      "q05": 0.050621781372693006,
+      "q50": 0.12280041364786495,
+      "q95": 0.23721740017992887,
+      "z": 3.1039644380091866,
+      "ratio_obs_over_null_mean": 2.3596993229820917,
+      "n_draws": 10000,
+      "p_upper": 0.0045995400459954,
+      "pct_le": 99.55
+    },
+    "channel_ranking": [
+      {
+        "channel": "log_root_set_size",
+        "rho": 0.9455630409721808,
+        "abs_rho": 0.9455630409721808
+      },
+      {
+        "channel": "log_word_count",
+        "rho": 0.9285116050522582,
+        "abs_rho": 0.9285116050522582,
+        "tie_with_top": true
+      },
+      {
+        "channel": "log_verse_count",
+        "rho": 0.8161547980666123,
+        "abs_rho": 0.8161547980666123
+      },
+      {
+        "channel": "log_mean_verse_length",
+        "rho": 0.7602413965466946,
+        "abs_rho": 0.7602413965466946
+      }
+    ],
+    "dominant_channel": "log_root_set_size",
+    "A1_conditional_exceedance": {
+      "channel": "log_root_set_size",
+      "group_mean_log_channel": 5.282055935932854,
+      "n_restricted": 640,
+      "underpowered": false,
+      "observed": 0.30623278547638294,
+      "null_mean": 0.25215536491242524,
+      "null_sd": 0.034296105618915246,
+      "q05": 0.20077906687885078,
+      "q50": 0.24916111866044433,
+      "q95": 0.3171470538414686,
+      "z": 1.5767802083666467,
+      "ratio_obs_over_null_mean": 1.2144607178306084,
+      "n_draws": 640,
+      "p_upper": 0.0717628705148206,
+      "pct_le": 92.96875
+    },
+    "A2": {
+      "k5": {
+        "estimable": true,
+        "k": 5,
+        "channel": "log_root_set_size",
+        "bin_occupancy": {
+          "3": 4,
+          "2": 1
+        },
+        "observed": 0.30623278547638294,
+        "null_mean": 0.2603195500505224,
+        "null_sd": 0.02106783703777731,
+        "q05": 0.22772179550985408,
+        "q50": 0.2591995378839045,
+        "q95": 0.2969507887056462,
+        "z": 2.1793046596825434,
+        "ratio_obs_over_null_mean": 1.176372598281419,
+        "n_draws": 10000,
+        "p_upper": 0.0211978802119788,
+        "pct_le": 97.89
+      },
+      "k10": {
+        "estimable": true,
+        "k": 10,
+        "channel": "log_root_set_size",
+        "bin_occupancy": {
+          "7": 2,
+          "6": 2,
+          "4": 1
+        },
+        "observed": 0.30623278547638294,
+        "null_mean": 0.2525975881492931,
+        "null_sd": 0.015389229825814017,
+        "q05": 0.22634834185372868,
+        "q50": 0.2528901154437203,
+        "q95": 0.2778511641318028,
+        "z": 3.485242467243014,
+        "ratio_obs_over_null_mean": 1.2123345583782443,
+        "n_draws": 10000,
+        "p_upper": 9.999000099990002e-05,
+        "pct_le": 100.0
+      }
+    },
+    "A2b_caliper": {
+      "estimable": true,
+      "w": 11,
+      "channel": "log_root_set_size",
+      "observed": 0.30623278547638294,
+      "null_mean": 0.268736713135293,
+      "null_sd": 0.019664369312103483,
+      "q05": 0.24011270273625218,
+      "q50": 0.26656611893556326,
+      "q95": 0.305551407626357,
+      "z": 1.9068026920146872,
+      "ratio_obs_over_null_mean": 1.139527167329061,
+      "n_draws": 10000,
+      "p_upper": 0.0476952304769523,
+      "pct_le": 95.24
+    },
+    "A2c_cross_period": {
+      "estimable": true,
+      "channel": "log_root_set_size x period",
+      "observed": 0.30623278547638294,
+      "null_mean": 0.26954659303701994,
+      "null_sd": 0.019189946378282374,
+      "q05": 0.24246669854952668,
+      "q50": 0.26717075537596324,
+      "q95": 0.30472252851959614,
+      "z": 1.9117402266887757,
+      "ratio_obs_over_null_mean": 1.1361033431215526,
+      "n_draws": 10000,
+      "p_upper": 0.043195680431956804,
+      "pct_le": 95.69
+    },
+    "own_bar": {
+      "kind": "p_upper",
+      "alpha": 0.0125
+    }
+  },
+  "P2_jaccard_ceiling": {
+    "core5_jaccard": 0.34138556942690185,
+    "core5_ceiling": 0.8376089029302441,
+    "core5_fill": 0.4075715626142674,
+    "null_jaccard_mean": 0.1286564241809835,
+    "null_ceiling_mean": 0.39792385441577144,
+    "null_fill_mean": 0.32281386875570406,
+    "enrichment_raw": 2.6534669496695176,
+    "enrichment_of_ceiling": 2.1049477020170473,
+    "note": "\"fill\" is the observed Jaccard as a fraction of its own mechanical ceiling min|R|/max|R|; enrichment_of_ceiling is how much of the published enrichment the ceiling alone delivers"
+  }
+}
