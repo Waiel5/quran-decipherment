@@ -352,3 +352,68 @@ confidence this protocol exists to prevent. **A second-tuple replication is queu
 work, not optional.**
 
 This does not touch H1a/H1b/H3/H4, which use no waqf data.
+
+---
+
+## H5 MAJOR CORRECTION — the effect is sentence-edge coincidence, and the claim of independence was FALSE
+
+**Added 2026-08-07 after independent audit. This substantially demotes H5 and retracts the
+strongest sentence in this file's own machine output.**
+
+`result.json` states: *"H5 is the only inference in the family that is independent of EQTB
+sentence segmentation."* **That claim is false, and it was never tested.** An independent
+recomputation decomposed H5 by whether each waqf-marked boundary coincides with an **EQTB
+sentence edge**:
+
+| class | n | sealed rate | **at EQTB sentence edge** |
+|:--|--:|--:|--:|
+| STOP-PREFERRED | 532 | 0.9098 | **0.8891** |
+| CONTINUE-PREFERRED | 1650 | 0.7485 | **0.6467** |
+| *jīm* (neutral, excluded from H5) | 2079 | 0.8475 | 0.8153 |
+
+Fisher exact on sentence-edge coincidence: **OR = 4.38, p = 4.34×10⁻³⁰**. Stop-preferred marks
+are overwhelmingly sitting where EQTB *ended a sentence*.
+
+**The decisive test — restrict to SENTENCE-INTERNAL waqf marks**, i.e. those the sentence
+segmentation cannot explain (59 stop-preferred, 583 continue-preferred):
+
+| direction | Fisher exact p |
+|:--|--:|
+| **locked** (stop-preferred seals more) | **0.9690 — FAILS** |
+| reversed | 0.0621 — *trending backwards* |
+
+**Once EQTB sentence-edge coincidence is removed, the locked direction does not merely weaken —
+it fails outright and trends toward reversal.**
+
+### What this means
+
+H5 as computed largely measures **"al-Sajāwandī's stop marks fall where EQTB ended a
+sentence."** If EQTB's sentence segmentation was itself informed by verse boundaries or by the
+same traditional pause conventions al-Sajāwandī codified — and nothing on disk excludes that —
+then H5 is **circular in exactly the way this file already conceded for H1a**, and the
+concession was simply not carried across to H5.
+
+**H5 is demoted from CONFIRMED to CIRCULARITY-DOMINATED / NOT INDEPENDENT.** It may not be
+cited as validation of the classical waqf tradition against an independent parse. The honest
+residual claim is far narrower: *al-Sajāwandī's stop-preferred marks and EQTB's sentence
+boundaries agree closely* — two analyses of the same sentences agreeing, with the direction of
+influence unestablished.
+
+**Second-tuple replication (also completed independently):** under `quran-full-tashkeel`
+(stop 532, continue 1650) the headline gap is +0.161 versus +0.169 under `no-tashkeel`, so the
+rules-tuple disclosure above resolves favourably — the raw effect is tuple-robust. **That does
+not rescue H5**, because the tuple was never the problem; the sentence-edge confound is, and it
+is present in both tuples.
+
+### Correction to the family verdict
+
+The file's headline of "5/6 PASS" should be read as: **H1b survives as the least
+circularity-exposed arm; H1a, H3, H4 and now H5 are all sentence-segmentation-exposed to
+degrees this run did not measure; H2 is a published reversal.** A properly independent test of
+the classical waqf tradition requires either a treebank whose sentence segmentation is
+documented as verse-blind and pause-blind, or a non-syntactic prosodic instrument. Neither
+exists on disk.
+
+**Process note.** The claim of independence was asserted in the machine output rather than
+tested. Asserting an independence property is not the same as demonstrating it, and a
+robustness claim that carries the weight of a headline must be computed, not stated.
