@@ -1,0 +1,1641 @@
+{
+  "finding_id": "H-NEW-2550",
+  "title": "Muqattaat-14 as an articulatory-feature-space optimizer — al-Zamakhshari's 'half of each genus' against the exact C(28,14) null",
+  "date": "2026-08-07",
+  "author": "Waiel Al-Shujaa",
+  "prereg_sha256": "3faabc4df31f794db38b6c9495b296501f23fd917c902f0275c9744c38b7d0ed",
+  "seed": 20260509,
+  "seed_replication": 20260511,
+  "n_mc": 10000000,
+  "bonferroni_k": 20,
+  "alpha_bon": 0.0025,
+  "muqattaat": {
+    "n_loci": 30,
+    "n_surahs": 29,
+    "surahs": [
+      2,
+      3,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      20,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      36,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      50,
+      68
+    ],
+    "letters": [
+      "ا",
+      "ح",
+      "ر",
+      "س",
+      "ص",
+      "ط",
+      "ع",
+      "ق",
+      "ك",
+      "ل",
+      "م",
+      "ن",
+      "ه",
+      "ي"
+    ],
+    "loci": [
+      {
+        "surah": 2,
+        "verse": 1,
+        "opening": "الم",
+        "opening_vocalised": "الٓمٓ"
+      },
+      {
+        "surah": 3,
+        "verse": 1,
+        "opening": "الم",
+        "opening_vocalised": "الٓمٓ"
+      },
+      {
+        "surah": 7,
+        "verse": 1,
+        "opening": "المص",
+        "opening_vocalised": "الٓمٓصٓ"
+      },
+      {
+        "surah": 10,
+        "verse": 1,
+        "opening": "الر",
+        "opening_vocalised": "الٓرۚ"
+      },
+      {
+        "surah": 11,
+        "verse": 1,
+        "opening": "الر",
+        "opening_vocalised": "الٓرۚ"
+      },
+      {
+        "surah": 12,
+        "verse": 1,
+        "opening": "الر",
+        "opening_vocalised": "الٓرۚ"
+      },
+      {
+        "surah": 13,
+        "verse": 1,
+        "opening": "المر",
+        "opening_vocalised": "الٓمٓرۚ"
+      },
+      {
+        "surah": 14,
+        "verse": 1,
+        "opening": "الر",
+        "opening_vocalised": "الٓرۚ"
+      },
+      {
+        "surah": 15,
+        "verse": 1,
+        "opening": "الر",
+        "opening_vocalised": "الٓرۚ"
+      },
+      {
+        "surah": 19,
+        "verse": 1,
+        "opening": "كهيعص",
+        "opening_vocalised": "كٓهيعٓصٓ"
+      },
+      {
+        "surah": 20,
+        "verse": 1,
+        "opening": "طه",
+        "opening_vocalised": "طه"
+      },
+      {
+        "surah": 26,
+        "verse": 1,
+        "opening": "طسم",
+        "opening_vocalised": "طسٓمٓ"
+      },
+      {
+        "surah": 27,
+        "verse": 1,
+        "opening": "طس",
+        "opening_vocalised": "طسٓۚ"
+      },
+      {
+        "surah": 28,
+        "verse": 1,
+        "opening": "طسم",
+        "opening_vocalised": "طسٓمٓ"
+      },
+      {
+        "surah": 29,
+        "verse": 1,
+        "opening": "الم",
+        "opening_vocalised": "الٓمٓ"
+      },
+      {
+        "surah": 30,
+        "verse": 1,
+        "opening": "الم",
+        "opening_vocalised": "الٓمٓ"
+      },
+      {
+        "surah": 31,
+        "verse": 1,
+        "opening": "الم",
+        "opening_vocalised": "الٓمٓ"
+      },
+      {
+        "surah": 32,
+        "verse": 1,
+        "opening": "الم",
+        "opening_vocalised": "الٓمٓ"
+      },
+      {
+        "surah": 36,
+        "verse": 1,
+        "opening": "يس",
+        "opening_vocalised": "يسٓ"
+      },
+      {
+        "surah": 38,
+        "verse": 1,
+        "opening": "ص",
+        "opening_vocalised": "صٓۚ"
+      },
+      {
+        "surah": 40,
+        "verse": 1,
+        "opening": "حم",
+        "opening_vocalised": "حمٓ"
+      },
+      {
+        "surah": 41,
+        "verse": 1,
+        "opening": "حم",
+        "opening_vocalised": "حمٓ"
+      },
+      {
+        "surah": 42,
+        "verse": 1,
+        "opening": "حم",
+        "opening_vocalised": "حمٓ"
+      },
+      {
+        "surah": 42,
+        "verse": 2,
+        "opening": "عسق",
+        "opening_vocalised": "عٓسٓقٓ"
+      },
+      {
+        "surah": 43,
+        "verse": 1,
+        "opening": "حم",
+        "opening_vocalised": "حمٓ"
+      },
+      {
+        "surah": 44,
+        "verse": 1,
+        "opening": "حم",
+        "opening_vocalised": "حمٓ"
+      },
+      {
+        "surah": 45,
+        "verse": 1,
+        "opening": "حم",
+        "opening_vocalised": "حمٓ"
+      },
+      {
+        "surah": 46,
+        "verse": 1,
+        "opening": "حم",
+        "opening_vocalised": "حمٓ"
+      },
+      {
+        "surah": 50,
+        "verse": 1,
+        "opening": "ق",
+        "opening_vocalised": "قٓۚ"
+      },
+      {
+        "surah": 68,
+        "verse": 1,
+        "opening": "ن",
+        "opening_vocalised": "نٓۚ"
+      }
+    ]
+  },
+  "letter_frequency": {
+    "counts": {
+      "ب": 11491,
+      "س": 6012,
+      "م": 26735,
+      "ا": 59280,
+      "ل": 38191,
+      "ه": 14850,
+      "ر": 12403,
+      "ح": 4140,
+      "ن": 27270,
+      "ي": 25747,
+      "د": 5991,
+      "ع": 9405,
+      "ك": 10497,
+      "و": 25486,
+      "ت": 12864,
+      "ص": 2072,
+      "ط": 1273,
+      "ق": 7034,
+      "ذ": 4932,
+      "غ": 1221,
+      "ض": 1686,
+      "ف": 8747,
+      "ز": 1599,
+      "خ": 2497,
+      "ش": 2124,
+      "ظ": 853,
+      "ج": 3317,
+      "ث": 1414
+    },
+    "standalone_hamza": 1578,
+    "total": 329131,
+    "muq14_mass_share": 0.744108
+  },
+  "zamakhshari_stated_counts": {
+    "mahmusa": 5,
+    "majhura": 9,
+    "shadida": 4,
+    "rikhwa": 10,
+    "mutbaqa": 2,
+    "munfatiha": 12,
+    "mustaliya": 3,
+    "munkhafida": 11,
+    "qalqala": 2
+  },
+  "feature_table": {
+    "mahmusa": [
+      "ت",
+      "ث",
+      "ح",
+      "خ",
+      "س",
+      "ش",
+      "ص",
+      "ف",
+      "ك",
+      "ه"
+    ],
+    "shadida": [
+      "ا",
+      "ب",
+      "ت",
+      "ج",
+      "د",
+      "ط",
+      "ق",
+      "ك"
+    ],
+    "mutbaqa": [
+      "ص",
+      "ض",
+      "ط",
+      "ظ"
+    ],
+    "mustaliya": [
+      "خ",
+      "ص",
+      "ض",
+      "ط",
+      "ظ",
+      "غ",
+      "ق"
+    ],
+    "qalqala": [
+      "ب",
+      "ج",
+      "د",
+      "ط",
+      "ق"
+    ],
+    "bayniyya": [
+      "ر",
+      "ع",
+      "ل",
+      "م",
+      "ن"
+    ],
+    "makhraj17": {
+      "jawf": [
+        "ا"
+      ],
+      "aqsa_al_halq": [
+        "ه"
+      ],
+      "wasat_al_halq": [
+        "ح",
+        "ع"
+      ],
+      "adna_al_halq": [
+        "خ",
+        "غ"
+      ],
+      "aqsa_al_lisan": [
+        "ق"
+      ],
+      "kaf": [
+        "ك"
+      ],
+      "wasat_al_lisan": [
+        "ج",
+        "ش",
+        "ي"
+      ],
+      "dad": [
+        "ض"
+      ],
+      "lam": [
+        "ل"
+      ],
+      "nun": [
+        "ن"
+      ],
+      "ra": [
+        "ر"
+      ],
+      "ta_dal_ta": [
+        "ت",
+        "د",
+        "ط"
+      ],
+      "sad_sin_zay": [
+        "ز",
+        "س",
+        "ص"
+      ],
+      "za_tha_dhal": [
+        "ث",
+        "ذ",
+        "ظ"
+      ],
+      "fa": [
+        "ف"
+      ],
+      "shafatan": [
+        "ب",
+        "م",
+        "و"
+      ]
+    },
+    "makhraj16": {
+      "aqsa_al_halq": [
+        "ا",
+        "ه"
+      ],
+      "wasat_al_halq": [
+        "ح",
+        "ع"
+      ],
+      "adna_al_halq": [
+        "خ",
+        "غ"
+      ],
+      "aqsa_al_lisan": [
+        "ق"
+      ],
+      "kaf": [
+        "ك"
+      ],
+      "wasat_al_lisan": [
+        "ج",
+        "ش",
+        "ي"
+      ],
+      "dad": [
+        "ض"
+      ],
+      "lam": [
+        "ل"
+      ],
+      "nun": [
+        "ن"
+      ],
+      "ra": [
+        "ر"
+      ],
+      "ta_dal_ta": [
+        "ت",
+        "د",
+        "ط"
+      ],
+      "sad_sin_zay": [
+        "ز",
+        "س",
+        "ص"
+      ],
+      "za_tha_dhal": [
+        "ث",
+        "ذ",
+        "ظ"
+      ],
+      "fa": [
+        "ف"
+      ],
+      "shafatan": [
+        "ب",
+        "م",
+        "و"
+      ]
+    }
+  },
+  "results": {
+    "T-A": {
+      "label": "28 letters, al-Zamakhshari's 5 binary sifat (PRIMARY)",
+      "N": 28,
+      "n_features": 5,
+      "D_obs": 1.0,
+      "D_obs_literal_half": 1.0,
+      "D_freq_obs": 0.681823,
+      "per_feature": [
+        {
+          "feature": "mahmusa",
+          "size": 10,
+          "in_set": 5,
+          "expected_null": 5.0,
+          "classical_half": 5.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.576092,
+          "mass_share_dev": 0.076092
+        },
+        {
+          "feature": "shadida",
+          "size": 8,
+          "in_set": 4,
+          "expected_null": 4.0,
+          "classical_half": 4.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.698757,
+          "mass_share_dev": 0.198757
+        },
+        {
+          "feature": "mutbaqa",
+          "size": 4,
+          "in_set": 2,
+          "expected_null": 2.0,
+          "classical_half": 2.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.568491,
+          "mass_share_dev": 0.068491
+        },
+        {
+          "feature": "mustaliya",
+          "size": 7,
+          "in_set": 3,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.623888,
+          "mass_share_dev": 0.123888
+        },
+        {
+          "feature": "qalqala",
+          "size": 5,
+          "in_set": 2,
+          "expected_null": 2.5,
+          "classical_half": 2.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.285405,
+          "mass_share_dev": 0.214595
+        }
+      ],
+      "N1_exact_H1": {
+        "n_subsets": 40116600,
+        "D_obs": 1.0,
+        "p_exact_le": 0.025538056565112696,
+        "p_exact_lt": 0.0,
+        "percentile": 2.5538056565112695,
+        "null_mean": 4.429938,
+        "null_sd": 1.778112,
+        "null_min": 1.0,
+        "n_at_null_min": 1024500,
+        "frac_at_null_min": 0.025538056565112696,
+        "obs_is_global_min": true,
+        "null_median": 4.0,
+        "distribution": {
+          "1.0": 1024500,
+          "2.0": 4255452,
+          "3.0": 7857938,
+          "4.0": 9006202,
+          "5.0": 7620010,
+          "6.0": 5218476,
+          "7.0": 2961732,
+          "8.0": 1399576,
+          "9.0": 548268,
+          "10.0": 172860,
+          "11.0": 42642,
+          "12.0": 7954,
+          "13.0": 990
+        }
+      },
+      "N1_exact_H2": {
+        "n_subsets": 40116600,
+        "D_freq_obs": 0.681823,
+        "p_exact_le": 0.09274828873832777,
+        "percentile": 9.274828873832778,
+        "null_mean": 1.008203,
+        "null_sd": 0.258629,
+        "null_min": 0.279026,
+        "n_at_null_min": 252,
+        "frac_at_null_min": 6.281688876923768e-06,
+        "obs_is_global_min": false
+      },
+      "N2_mc_seed": {
+        "n_draw": 10000000,
+        "seed": 20260509,
+        "p_h1": 0.0018282998171700183,
+        "p_h2": 0.02797629720237028,
+        "n_le_h1": 18282,
+        "n_le_h2": 279762
+      },
+      "N2_mc_replication": {
+        "n_draw": 10000000,
+        "seed": 20260511,
+        "p_h1": 0.0017943998205600178,
+        "p_h2": 0.02796649720335028,
+        "n_le_h1": 17943,
+        "n_le_h2": 279664
+      },
+      "stdlib_guard_p_h1": 0.02582,
+      "p_upper_H1_N1": 1.0,
+      "verdict_H1_N1": "CONFIRMED-BUT-MEANINGLESS",
+      "verdict_H2_N1": "NULL",
+      "verdict_H1_N2": "OPTIMIZER-CONFIRMED",
+      "verdict_H2_N2": "NULL"
+    },
+    "T-B": {
+      "label": "29 letters (hamza distinct from alif), 5 binary sifat",
+      "N": 29,
+      "n_features": 5,
+      "D_obs": 1.896552,
+      "D_obs_literal_half": 2.0,
+      "D_freq_obs": 0.652375,
+      "per_feature": [
+        {
+          "feature": "mahmusa",
+          "size": 10,
+          "in_set": 5,
+          "expected_null": 4.827586,
+          "classical_half": 5.0,
+          "abs_dev": 0.172414,
+          "mass_share_in_set": 0.576092,
+          "mass_share_dev": 0.093334
+        },
+        {
+          "feature": "shadida",
+          "size": 8,
+          "in_set": 3,
+          "expected_null": 3.862069,
+          "classical_half": 4.0,
+          "abs_dev": 0.862069,
+          "mass_share_in_set": 0.347932,
+          "mass_share_dev": 0.134826
+        },
+        {
+          "feature": "mutbaqa",
+          "size": 4,
+          "in_set": 2,
+          "expected_null": 1.931034,
+          "classical_half": 2.0,
+          "abs_dev": 0.068966,
+          "mass_share_in_set": 0.568491,
+          "mass_share_dev": 0.085732
+        },
+        {
+          "feature": "mustaliya",
+          "size": 7,
+          "in_set": 3,
+          "expected_null": 3.37931,
+          "classical_half": 3.5,
+          "abs_dev": 0.37931,
+          "mass_share_in_set": 0.623888,
+          "mass_share_dev": 0.141129
+        },
+        {
+          "feature": "qalqala",
+          "size": 5,
+          "in_set": 2,
+          "expected_null": 2.413793,
+          "classical_half": 2.5,
+          "abs_dev": 0.413793,
+          "mass_share_in_set": 0.285405,
+          "mass_share_dev": 0.197354
+        }
+      ],
+      "N1_exact_H1": {
+        "n_subsets": 77558760,
+        "D_obs": 1.896552,
+        "p_exact_le": 0.036108571101446184,
+        "p_exact_lt": 0.029439769279446963,
+        "percentile": 3.610857110144618,
+        "null_mean": 4.553999,
+        "null_sd": 1.725175,
+        "null_min": 1.172414,
+        "n_at_null_min": 541230,
+        "frac_at_null_min": 0.006978321984518577,
+        "obs_is_global_min": false,
+        "null_median": 4.344827586206897,
+        "distribution": {
+          "1.172414": 541230,
+          "1.344828": 443100,
+          "1.413793": 425592,
+          "1.586207": 488535,
+          "1.827586": 384855,
+          "1.896552": 517224,
+          "2.0": 457500,
+          "2.034483": 369360,
+          "2.068966": 403857,
+          "2.137931": 484710,
+          "2.172414": 1032162,
+          "2.206897": 330060,
+          "2.241379": 479958,
+          "2.275862": 112770,
+          "2.310345": 159150,
+          "2.344828": 938959,
+          "2.413793": 907908,
+          "2.448276": 136170,
+          "2.551724": 422580,
+          "2.586207": 1226598,
+          "2.689655": 242985,
+          "2.724138": 153090,
+          "2.758621": 351642,
+          "2.793103": 374280,
+          "2.827586": 529678,
+          "2.862069": 318990,
+          "2.896552": 1084125,
+          "2.931034": 158706,
+          "2.965517": 191040,
+          "3.0": 1099494,
+          "3.034483": 884136,
+          "3.068966": 550356,
+          "3.103448": 123480,
+          "3.137931": 1172289,
+          "3.172414": 928335,
+          "3.206897": 816858,
+          "3.241379": 1198596,
+          "3.275862": 130716,
+          "3.310345": 233835,
+          "3.344828": 979241,
+          "3.413793": 1276782,
+          "3.448276": 199806,
+          "3.551724": 747400,
+          "3.586207": 1776590,
+          "3.655172": 89610,
+          "3.689655": 438637,
+          "3.724138": 177825,
+          "3.758621": 857466,
+          "3.793103": 780410,
+          "3.827586": 288637,
+          "3.862069": 769428,
+          "3.896552": 1195026,
+          "3.931034": 134271,
+          "3.965517": 325680,
+          "4.0": 1176930,
+          "4.034483": 1102404,
+          "4.068966": 372015,
+          "4.103448": 166404,
+          "4.137931": 1577028,
+          "4.172414": 469290,
+          "4.206897": 1084730,
+          "4.241379": 1655148,
+          "4.275862": 82260,
+          "4.310345": 196810,
+          "4.344828": 674849,
+          "4.413793": 1292056,
+          "4.448276": 167895,
+          "4.551724": 624132,
+          "4.586207": 1744475,
+          "4.655172": 80835,
+          "4.689655": 382425,
+          "4.724138": 80685,
+          "4.758621": 1178964,
+          "4.793103": 891127,
+          "4.827586": 62630,
+          "4.862069": 990294,
+          "4.896552": 958785,
+          "4.931034": 60828,
+          "4.965517": 312255,
+          "5.0": 845169,
+          "5.034483": 916584,
+          "5.068966": 175668,
+          "5.103448": 130350,
+          "5.137931": 1524174,
+          "5.172414": 137808,
+          "5.206897": 999754,
+          "5.241379": 1667679,
+          "5.275862": 30420,
+          "5.310345": 122145,
+          "5.344828": 330078,
+          "5.413793": 995849,
+          "5.448276": 101120,
+          "5.551724": 340903,
+          "5.586207": 1264418,
+          "5.655172": 38570,
+          "5.689655": 202031,
+          "5.724138": 18108,
+          "5.758621": 1180713,
+          "5.793103": 710601,
+          "5.827586": 7115,
+          "5.862069": 895410,
+          "5.896552": 596388,
+          "5.931034": 21201,
+          "5.965517": 216942,
+          "6.0": 478035,
+          "6.034483": 559098,
+          "6.068966": 62070,
+          "6.103448": 84345,
+          "6.137931": 1142766,
+          "6.172414": 19449,
+          "6.206897": 686415,
+          "6.241379": 1339395,
+          "6.275862": 5970,
+          "6.310345": 55090,
+          "6.344828": 115402,
+          "6.413793": 600241,
+          "6.448276": 43089,
+          "6.551724": 136230,
+          "6.586207": 715238,
+          "6.655172": 12615,
+          "6.689655": 75715,
+          "6.724138": 1709,
+          "6.758621": 924543,
+          "6.793103": 428310,
+          "6.827586": 300,
+          "6.862069": 624707,
+          "6.896552": 288228,
+          "6.931034": 4818,
+          "6.965517": 113121,
+          "7.0": 211702,
+          "7.034483": 253251,
+          "7.068966": 14130,
+          "7.103448": 42609,
+          "7.137931": 684234,
+          "7.172414": 909,
+          "7.206897": 359970,
+          "7.241379": 887985,
+          "7.275862": 516,
+          "7.310345": 18601,
+          "7.344828": 27888,
+          "7.413793": 286458,
+          "7.448276": 13777,
+          "7.551724": 40576,
+          "7.586207": 319952,
+          "7.655172": 2061,
+          "7.689655": 18425,
+          "7.724138": 46,
+          "7.758621": 587157,
+          "7.793103": 198621,
+          "7.862069": 345411,
+          "7.896552": 112794,
+          "7.931034": 462,
+          "7.965517": 44121,
+          "8.0": 68663,
+          "8.034483": 83391,
+          "8.068966": 1386,
+          "8.103448": 16518,
+          "8.137931": 327462,
+          "8.206897": 141768,
+          "8.241379": 490719,
+          "8.275862": 13,
+          "8.310345": 3138,
+          "8.344828": 4179,
+          "8.413793": 109401,
+          "8.448276": 3062,
+          "8.551724": 8206,
+          "8.586207": 113723,
+          "8.655172": 141,
+          "8.689655": 1615,
+          "8.758621": 303870,
+          "8.793103": 67600,
+          "8.862069": 149937,
+          "8.896552": 32505,
+          "8.965517": 10296,
+          "9.0": 15147,
+          "9.034483": 17391,
+          "9.103448": 5544,
+          "9.137931": 123331,
+          "9.206897": 39691,
+          "9.241379": 227532,
+          "9.310345": 213,
+          "9.344828": 322,
+          "9.413793": 31453,
+          "9.448276": 406,
+          "9.551724": 885,
+          "9.586207": 31043,
+          "9.655172": 2,
+          "9.689655": 39,
+          "9.758621": 127194,
+          "9.793103": 16027,
+          "9.862069": 49259,
+          "9.896552": 4224,
+          "9.965517": 990,
+          "10.0": 1584,
+          "10.034483": 1485,
+          "10.103448": 924,
+          "10.137931": 33409,
+          "10.206897": 6676,
+          "10.241379": 84914,
+          "10.310345": 3,
+          "10.344828": 8,
+          "10.413793": 6728,
+          "10.448276": 21,
+          "10.551724": 35,
+          "10.586207": 6285,
+          "10.758621": 41169,
+          "10.793103": 1784,
+          "10.862069": 9581,
+          "11.137931": 5161,
+          "11.206897": 530,
+          "11.241379": 25458,
+          "11.413793": 948,
+          "11.586207": 830,
+          "11.758621": 9438,
+          "11.793103": 66,
+          "11.862069": 715,
+          "12.137931": 286,
+          "12.206897": 12,
+          "12.241379": 5571,
+          "12.413793": 70,
+          "12.586207": 56,
+          "12.758621": 1287,
+          "13.241379": 715
+        }
+      },
+      "N1_exact_H2": {
+        "n_subsets": 77558760,
+        "D_freq_obs": 0.652375,
+        "p_exact_le": 0.1895923297381237,
+        "percentile": 18.959232973812373,
+        "null_mean": 0.909102,
+        "null_sd": 0.282599,
+        "null_min": 0.138442,
+        "n_at_null_min": 120,
+        "frac_at_null_min": 1.5472140090945239e-06,
+        "obs_is_global_min": false
+      },
+      "N2_mc_seed": {
+        "n_draw": 10000000,
+        "seed": 20260509,
+        "p_h1": 0.004775099522490047,
+        "p_h2": 0.08496589150341086,
+        "n_le_h1": 47750,
+        "n_le_h2": 849658
+      },
+      "N2_mc_replication": {
+        "n_draw": 10000000,
+        "seed": 20260511,
+        "p_h1": 0.004752999524700047,
+        "p_h2": 0.08496239150376085,
+        "n_le_h1": 47529,
+        "n_le_h2": 849623
+      },
+      "stdlib_guard_p_h1": 0.036095,
+      "p_upper_H1_N1": 0.9705602307205531,
+      "verdict_H1_N1": "NULL (non-significant; direction-consistent, D below null median)",
+      "verdict_H2_N1": "NULL",
+      "verdict_H1_N2": "NULL",
+      "verdict_H2_N2": "NULL"
+    },
+    "T-C": {
+      "label": "28 letters, tripartite manner (shadid/bayniyya/rikhw) + 4 other sifat",
+      "N": 28,
+      "n_features": 7,
+      "D_obs": 6.0,
+      "D_obs_literal_half": 6.0,
+      "D_freq_obs": 1.192763,
+      "per_feature": [
+        {
+          "feature": "mahmusa",
+          "size": 10,
+          "in_set": 5,
+          "expected_null": 5.0,
+          "classical_half": 5.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.576092,
+          "mass_share_dev": 0.076092
+        },
+        {
+          "feature": "shadid",
+          "size": 8,
+          "in_set": 4,
+          "expected_null": 4.0,
+          "classical_half": 4.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.698757,
+          "mass_share_dev": 0.198757
+        },
+        {
+          "feature": "bayniyya",
+          "size": 5,
+          "in_set": 5,
+          "expected_null": 2.5,
+          "classical_half": 2.5,
+          "abs_dev": 2.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "rikhw",
+          "size": 15,
+          "in_set": 5,
+          "expected_null": 7.5,
+          "classical_half": 7.5,
+          "abs_dev": 2.5,
+          "mass_share_in_set": 0.51094,
+          "mass_share_dev": 0.01094
+        },
+        {
+          "feature": "mutbaqa",
+          "size": 4,
+          "in_set": 2,
+          "expected_null": 2.0,
+          "classical_half": 2.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.568491,
+          "mass_share_dev": 0.068491
+        },
+        {
+          "feature": "mustaliya",
+          "size": 7,
+          "in_set": 3,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.623888,
+          "mass_share_dev": 0.123888
+        },
+        {
+          "feature": "qalqala",
+          "size": 5,
+          "in_set": 2,
+          "expected_null": 2.5,
+          "classical_half": 2.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.285405,
+          "mass_share_dev": 0.214595
+        }
+      ],
+      "N1_exact_H1": {
+        "n_subsets": 40116600,
+        "D_obs": 6.0,
+        "p_exact_le": 0.5567157735201886,
+        "p_exact_lt": 0.3833276000458663,
+        "percentile": 55.671577352018865,
+        "null_mean": 6.397641,
+        "null_sd": 2.305476,
+        "null_min": 2.0,
+        "n_at_null_min": 782980,
+        "frac_at_null_min": 0.019517606177991156,
+        "obs_is_global_min": false,
+        "null_median": 6.0,
+        "distribution": {
+          "2.0": 782980,
+          "3.0": 2771880,
+          "4.0": 5099650,
+          "5.0": 6723290,
+          "6.0": 6955744,
+          "7.0": 6045222,
+          "8.0": 4601038,
+          "9.0": 3142718,
+          "10.0": 1947460,
+          "11.0": 1082852,
+          "12.0": 550080,
+          "13.0": 251772,
+          "14.0": 104200,
+          "15.0": 38582,
+          "16.0": 13478,
+          "17.0": 4150,
+          "18.0": 1156,
+          "19.0": 290,
+          "20.0": 50,
+          "21.0": 8
+        }
+      },
+      "N1_exact_H2": {
+        "n_subsets": 40116600,
+        "D_freq_obs": 1.192763,
+        "p_exact_le": 0.33469092595085326,
+        "percentile": 33.46909259508533,
+        "null_mean": 1.34746,
+        "null_sd": 0.318712,
+        "null_min": 0.382866,
+        "n_at_null_min": 2,
+        "frac_at_null_min": 4.985467362637911e-08,
+        "obs_is_global_min": false
+      },
+      "N2_mc_seed": {
+        "n_draw": 10000000,
+        "seed": 20260509,
+        "p_h1": 0.0900086909991309,
+        "p_h2": 0.024455797554420244,
+        "n_le_h1": 900086,
+        "n_le_h2": 244557
+      },
+      "N2_mc_replication": {
+        "n_draw": 10000000,
+        "seed": 20260511,
+        "p_h1": 0.0898128910187109,
+        "p_h2": 0.024350197564980244,
+        "n_le_h1": 898128,
+        "n_le_h2": 243501
+      },
+      "stdlib_guard_p_h1": 0.557675,
+      "p_upper_H1_N1": 0.6166723999541337,
+      "verdict_H1_N1": "NULL",
+      "verdict_H2_N1": "NULL",
+      "verdict_H1_N2": "NULL",
+      "verdict_H2_N2": "NULL"
+    },
+    "T-D": {
+      "label": "28 letters, 5 binary sifat + 17-makhraj (alif in al-jawf)",
+      "N": 28,
+      "n_features": 21,
+      "D_obs": 11.0,
+      "D_obs_literal_half": 11.0,
+      "D_freq_obs": 7.859362,
+      "per_feature": [
+        {
+          "feature": "mahmusa",
+          "size": 10,
+          "in_set": 5,
+          "expected_null": 5.0,
+          "classical_half": 5.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.576092,
+          "mass_share_dev": 0.076092
+        },
+        {
+          "feature": "shadida",
+          "size": 8,
+          "in_set": 4,
+          "expected_null": 4.0,
+          "classical_half": 4.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.698757,
+          "mass_share_dev": 0.198757
+        },
+        {
+          "feature": "mutbaqa",
+          "size": 4,
+          "in_set": 2,
+          "expected_null": 2.0,
+          "classical_half": 2.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.568491,
+          "mass_share_dev": 0.068491
+        },
+        {
+          "feature": "mustaliya",
+          "size": 7,
+          "in_set": 3,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.623888,
+          "mass_share_dev": 0.123888
+        },
+        {
+          "feature": "qalqala",
+          "size": 5,
+          "in_set": 2,
+          "expected_null": 2.5,
+          "classical_half": 2.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.285405,
+          "mass_share_dev": 0.214595
+        },
+        {
+          "feature": "makhraj:adna_al_halq",
+          "size": 2,
+          "in_set": 0,
+          "expected_null": 1.0,
+          "classical_half": 1.0,
+          "abs_dev": 1.0,
+          "mass_share_in_set": 0.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:aqsa_al_halq",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:aqsa_al_lisan",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:dad",
+          "size": 1,
+          "in_set": 0,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:fa",
+          "size": 1,
+          "in_set": 0,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:jawf",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:kaf",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:lam",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:nun",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:ra",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:sad_sin_zay",
+          "size": 3,
+          "in_set": 2,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.834865,
+          "mass_share_dev": 0.334865
+        },
+        {
+          "feature": "makhraj:shafatan",
+          "size": 3,
+          "in_set": 1,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.419623,
+          "mass_share_dev": 0.080377
+        },
+        {
+          "feature": "makhraj:ta_dal_ta",
+          "size": 3,
+          "in_set": 1,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.063245,
+          "mass_share_dev": 0.436755
+        },
+        {
+          "feature": "makhraj:wasat_al_halq",
+          "size": 2,
+          "in_set": 2,
+          "expected_null": 1.0,
+          "classical_half": 1.0,
+          "abs_dev": 1.0,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:wasat_al_lisan",
+          "size": 3,
+          "in_set": 1,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.825542,
+          "mass_share_dev": 0.325542
+        },
+        {
+          "feature": "makhraj:za_tha_dhal",
+          "size": 3,
+          "in_set": 0,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 1.5,
+          "mass_share_in_set": 0.0,
+          "mass_share_dev": 0.5
+        }
+      ],
+      "N1_exact_H1": {
+        "n_subsets": 40116600,
+        "D_obs": 11.0,
+        "p_exact_le": 0.178982416256612,
+        "p_exact_lt": 0.07207764366870573,
+        "percentile": 17.898241625661196,
+        "null_mean": 13.504012,
+        "null_sd": 2.166074,
+        "null_min": 8.0,
+        "n_at_null_min": 109242,
+        "frac_at_null_min": 0.0027231121281464533,
+        "obs_is_global_min": false,
+        "null_median": 13.0,
+        "distribution": {
+          "8.0": 109242,
+          "9.0": 679162,
+          "10.0": 2103106,
+          "11.0": 4288656,
+          "12.0": 6394616,
+          "13.0": 7364322,
+          "14.0": 6823472,
+          "15.0": 5268026,
+          "16.0": 3476970,
+          "17.0": 1988336,
+          "18.0": 987354,
+          "19.0": 422328,
+          "20.0": 153370,
+          "21.0": 45494,
+          "22.0": 10344,
+          "23.0": 1626,
+          "24.0": 166,
+          "25.0": 10
+        }
+      },
+      "N1_exact_H2": {
+        "n_subsets": 40116600,
+        "D_freq_obs": 7.859362,
+        "p_exact_le": 0.5735204379234531,
+        "percentile": 57.35204379234531,
+        "null_mean": 7.782726,
+        "null_sd": 0.450081,
+        "null_min": 6.078608,
+        "n_at_null_min": 6,
+        "frac_at_null_min": 1.4956402087913732e-07,
+        "obs_is_global_min": false
+      },
+      "N2_mc_seed": {
+        "n_draw": 10000000,
+        "seed": 20260509,
+        "p_h1": 0.017695598230440177,
+        "p_h2": 0.23465227653477236,
+        "n_le_h1": 176955,
+        "n_le_h2": 2346522
+      },
+      "N2_mc_replication": {
+        "n_draw": 10000000,
+        "seed": 20260511,
+        "p_h1": 0.017620498237950175,
+        "p_h2": 0.23441177655882234,
+        "n_le_h1": 176204,
+        "n_le_h2": 2344117
+      },
+      "stdlib_guard_p_h1": 0.178675,
+      "p_upper_H1_N1": 0.9279223563312943,
+      "verdict_H1_N1": "NULL (non-significant; direction-consistent, D below null median)",
+      "verdict_H2_N1": "NULL",
+      "verdict_H1_N2": "NULL",
+      "verdict_H2_N2": "NULL"
+    },
+    "T-E": {
+      "label": "28 letters, 5 binary sifat + 16-makhraj (alif in aqsa al-halq)",
+      "N": 28,
+      "n_features": 20,
+      "D_obs": 11.0,
+      "D_obs_literal_half": 11.0,
+      "D_freq_obs": 7.359362,
+      "per_feature": [
+        {
+          "feature": "mahmusa",
+          "size": 10,
+          "in_set": 5,
+          "expected_null": 5.0,
+          "classical_half": 5.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.576092,
+          "mass_share_dev": 0.076092
+        },
+        {
+          "feature": "shadida",
+          "size": 8,
+          "in_set": 4,
+          "expected_null": 4.0,
+          "classical_half": 4.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.698757,
+          "mass_share_dev": 0.198757
+        },
+        {
+          "feature": "mutbaqa",
+          "size": 4,
+          "in_set": 2,
+          "expected_null": 2.0,
+          "classical_half": 2.0,
+          "abs_dev": 0.0,
+          "mass_share_in_set": 0.568491,
+          "mass_share_dev": 0.068491
+        },
+        {
+          "feature": "mustaliya",
+          "size": 7,
+          "in_set": 3,
+          "expected_null": 3.5,
+          "classical_half": 3.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.623888,
+          "mass_share_dev": 0.123888
+        },
+        {
+          "feature": "qalqala",
+          "size": 5,
+          "in_set": 2,
+          "expected_null": 2.5,
+          "classical_half": 2.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.285405,
+          "mass_share_dev": 0.214595
+        },
+        {
+          "feature": "makhraj:adna_al_halq",
+          "size": 2,
+          "in_set": 0,
+          "expected_null": 1.0,
+          "classical_half": 1.0,
+          "abs_dev": 1.0,
+          "mass_share_in_set": 0.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:aqsa_al_halq",
+          "size": 2,
+          "in_set": 2,
+          "expected_null": 1.0,
+          "classical_half": 1.0,
+          "abs_dev": 1.0,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:aqsa_al_lisan",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:dad",
+          "size": 1,
+          "in_set": 0,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:fa",
+          "size": 1,
+          "in_set": 0,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:kaf",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:lam",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:nun",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:ra",
+          "size": 1,
+          "in_set": 1,
+          "expected_null": 0.5,
+          "classical_half": 0.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:sad_sin_zay",
+          "size": 3,
+          "in_set": 2,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.834865,
+          "mass_share_dev": 0.334865
+        },
+        {
+          "feature": "makhraj:shafatan",
+          "size": 3,
+          "in_set": 1,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.419623,
+          "mass_share_dev": 0.080377
+        },
+        {
+          "feature": "makhraj:ta_dal_ta",
+          "size": 3,
+          "in_set": 1,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.063245,
+          "mass_share_dev": 0.436755
+        },
+        {
+          "feature": "makhraj:wasat_al_halq",
+          "size": 2,
+          "in_set": 2,
+          "expected_null": 1.0,
+          "classical_half": 1.0,
+          "abs_dev": 1.0,
+          "mass_share_in_set": 1.0,
+          "mass_share_dev": 0.5
+        },
+        {
+          "feature": "makhraj:wasat_al_lisan",
+          "size": 3,
+          "in_set": 1,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 0.5,
+          "mass_share_in_set": 0.825542,
+          "mass_share_dev": 0.325542
+        },
+        {
+          "feature": "makhraj:za_tha_dhal",
+          "size": 3,
+          "in_set": 0,
+          "expected_null": 1.5,
+          "classical_half": 1.5,
+          "abs_dev": 1.5,
+          "mass_share_in_set": 0.0,
+          "mass_share_dev": 0.5
+        }
+      ],
+      "N1_exact_H1": {
+        "n_subsets": 40116600,
+        "D_obs": 11.0,
+        "p_exact_le": 0.2609957972510133,
+        "p_exact_lt": 0.12660404919659193,
+        "percentile": 26.09957972510133,
+        "null_mean": 12.985494,
+        "null_sd": 2.214064,
+        "null_min": 7.0,
+        "n_at_null_min": 52104,
+        "frac_at_null_min": 0.0012988139573144285,
+        "obs_is_global_min": false,
+        "null_median": 13.0,
+        "distribution": {
+          "7.0": 52104,
+          "8.0": 394412,
+          "9.0": 1402912,
+          "10.0": 3229496,
+          "11.0": 5391340,
+          "12.0": 6917586,
+          "13.0": 7097412,
+          "14.0": 6020932,
+          "15.0": 4344954,
+          "16.0": 2708106,
+          "17.0": 1470740,
+          "18.0": 689332,
+          "19.0": 276682,
+          "20.0": 91794,
+          "21.0": 23988,
+          "22.0": 4324,
+          "23.0": 452,
+          "24.0": 34
+        }
+      },
+      "N1_exact_H2": {
+        "n_subsets": 40116600,
+        "D_freq_obs": 7.359362,
+        "p_exact_le": 0.6564875886790007,
+        "percentile": 65.64875886790007,
+        "null_mean": 7.178854,
+        "null_sd": 0.458856,
+        "null_min": 5.499637,
+        "n_at_null_min": 6,
+        "frac_at_null_min": 1.4956402087913732e-07,
+        "obs_is_global_min": false
+      },
+      "N2_mc_seed": {
+        "n_draw": 10000000,
+        "seed": 20260509,
+        "p_h1": 0.026461397353860265,
+        "p_h2": 0.2716948728305127,
+        "n_le_h1": 264613,
+        "n_le_h2": 2716948
+      },
+      "N2_mc_replication": {
+        "n_draw": 10000000,
+        "seed": 20260511,
+        "p_h1": 0.026283597371640263,
+        "p_h2": 0.2715081728491827,
+        "n_le_h1": 262835,
+        "n_le_h2": 2715081
+      },
+      "stdlib_guard_p_h1": 0.26137,
+      "p_upper_H1_N1": 0.873395950803408,
+      "verdict_H1_N1": "NULL (non-significant; direction-consistent, D below null median)",
+      "verdict_H2_N1": "NULL",
+      "verdict_H1_N2": "NULL",
+      "verdict_H2_N2": "NULL"
+    }
+  },
+  "runtime_seconds": 105.5
+}
