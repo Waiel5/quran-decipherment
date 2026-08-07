@@ -11,11 +11,17 @@ applied_by: H-NEW-2780
 
 ## 1. The rule
 
-> **When a density is divided by a unit count, and that unit's size drifts across the
-> ordering being tested, the measure is testing the drift.**
+> **When a density is divided by a unit count, and that unit's size varies systematically
+> across the comparison being made, the measure is testing the variation in size.**
 
 A rate is a ratio. The divisor is part of the claim. If the divisor is itself a strong
-correlate of the predictor, the ratio measures the divisor and not the numerator.
+correlate of the thing being compared, the ratio measures the divisor and not the numerator.
+
+**"The comparison" covers both shapes.** An *ordering* — mushaf position, Nöldeke rank, juzʾ
+position — where unit size drifts monotonically along it. And a *grouping* — muqaṭṭaʿāt vs
+non-muqaṭṭaʿāt, Meccan vs Medinan, cluster-core vs the rest — where the groups simply differ
+in size, with no trend required. The rule was first written for orderings only and was blind
+to groupings for its first day; §3 Screen B records the extension.
 
 This is not a family of accidents. It is one error with one mechanism, and it is detectable
 by inspection — **without recomputation** — using the three screens in §3.
@@ -51,8 +57,27 @@ Includes: per-verse, per-surah, per-word, per-pericope, per-window densities; an
 called a *rate*; any "normalised count"; any measure divided by, or tiled to, unit length;
 any distance averaged over units of unequal size.
 
-### Screen B — the ordering
-Does the comparison run across an **ordering with monotone unit-size drift**?
+### Screen B — the ordering *or the grouping*
+Does the comparison run across an **ordering with monotone unit-size drift**, or across a
+**grouping whose groups differ systematically in unit size**?
+
+> **Extended 2026-08-07.** This screen originally read *ordering* only, and was therefore
+> structurally blind to a whole class of claims: those comparing **two groups** rather than
+> tracking a sequence. A grouping needs no monotone trend to carry the defect — it only needs
+> the groups to differ in size. H-NEW-2790's screen caught this from the other direction; the
+> generalisation is recorded here so the two screens agree.
+
+The grouping channels measured in this repository:
+
+| grouping | size gap (median) | source |
+|:--|:--|:--|
+| **muqaṭṭaʿāt vs non-muqaṭṭaʿāt** (29 vs 85) | mean verse length **2.98×**, verse count **3.27×**, word count **4.34×** | H-NEW-2780; the direction is H-NEW-46's own STRONG-PASS finding that muqaṭṭaʿāt surahs concentrate in long surahs |
+| Meccan vs Medinan | inherits the Nöldeke drift above | H-NEW-125 / H-NEW-2770 |
+| any cluster-core vs random-non-cluster comparison | unmeasured — **measure before using** | — |
+
+**The muqaṭṭaʿāt split is the trap to watch**, because the project uses it constantly and its
+own `h-new-46` established the confound. Any per-verse density compared across it is measuring
+a 3× difference in verse length unless something holds size fixed.
 
 The orderings in this repository that carry such drift are already measured. **Use this
 table; do not re-derive it.**
@@ -123,7 +148,7 @@ Getting this right deserves the credit, and naming the clean cases is part of th
 
 **FLAGGED / CLEAN is not an exhaustive partition.** A third outcome — **UNVERIFIABLE**, where
 no code in the repository produces the claim's headline number — dominates both and must be
-screened for first. See §6.2.
+screened for first. See §6.3.
 
 ---
 
@@ -180,7 +205,7 @@ Three further clauses, each earned by a specific failure:
 
 ## 6. How to apply this mechanically in a future session
 
-0. **First, check the claim is computable at all** (§6.2). Does a script exist that produces
+0. **First, check the claim is computable at all** (§6.3). Does a script exist that produces
    its headline number, and does a result JSON contain it? If neither, stop — it is
    UNVERIFIABLE, and no null run against it will mean anything.
 1. Grep the finding for a denominator: `_density`, `per verse`, `per 100 v`, `per word`,
@@ -259,7 +284,51 @@ order is.
 the more lenient arm; its §4.2 gives the stricter arm full weight and says which a reader
 should take.)*
 
-### 6.2 A fourth outcome: UNVERIFIABLE
+### 6.2 Ranking a worklist: specify the counting rule or do not rank
+
+**Added 2026-08-07 after two careful implementations of the same one-sentence metric disagreed
+by up to 2.3× and produced different orderings.** "Rank by load-bearing-ness" is not a
+specification. If a triage is going to be worked top-down, the count must be reproducible, and
+the following is the rule this repository uses.
+
+**Count = the number of distinct `.md` files that reference the claim, where:**
+
+- **scope** is `findings/` + `surahs/`, recursively;
+- **excluded** are any path containing `/runs/` or `/scripts/`, any filename containing
+  `prereg`, and any tooling or worktree directory;
+- **the match** is the regex `h-new-<id>\b`, case-insensitive — the `\b` is load-bearing, since
+  it stops `h-new-12` matching `h-new-125` while still allowing `h-new-236` to match a
+  reference to `h-new-236-2a`;
+- **and — the clause that actually matters — files belonging to the claim's own sub-finding
+  family are excluded.**
+
+**That last clause changes the answer, not just the number.** A finding with a large family of
+sub-findings accumulates citations from its own children, which measure productivity, not
+load-bearing-ness. Measured here:
+
+| claim | all files | **external** | its own family |
+|:--|--:|--:|--:|
+| H-NEW-126 | 34 | **32** | 2 |
+| H-NEW-570 | 31 | **30** | 1 |
+| H-NEW-74 | 23 | **22** | 1 |
+| H-NEW-192 | 20 | **19** | 1 |
+| **H-NEW-236** | 26 | **14** | **12** |
+
+H-NEW-236 was ranked **first** on a raw count and sits mid-pack on an external one, because
+twelve of its citations are its own `-1a` … `-2b` sub-findings. **A triage ordered by the raw
+count would have worked the wrong claim first.**
+
+Two further rules follow from the same episode:
+
+- **Never report a cluster's load by summing its members.** Summing cross-finding-012/016/017
+  gave 80; the honest **union of external citing files is 47**. Summing double-counts every
+  file that cites more than one member, which for a tightly cross-referencing cluster is most
+  of them.
+- **A count is a rough guide, not a queue.** Even fully specified, it measures how often a claim
+  is *mentioned*, which is not the same as how much rests on it. H-NEW-233's verdict depends on
+  H-NEW-192 through a hard-coded threshold (§6.3) — a dependency no citation count can see.
+
+### 6.3 A fourth outcome: UNVERIFIABLE
 
 FLAGGED / CLEAN is not an exhaustive partition. A third state exists and this repository
 contains at least one load-bearing instance of it:
@@ -294,25 +363,42 @@ A rate is a ratio, and the divisor is part of the claim. Bismillāhi al-Raḥmā
 
 ---
 
-## 7. A process note on run immutability — a partial run is not yet a run record
+## 7. A process note on run immutability — CORRECTED ATTRIBUTION
 
-**Recorded 2026-08-07 because it happened here.** The H-NEW-2790 run directory
-`20260807T053241Z/results.json` was committed while it still carried `"partial": true`, and was
-subsequently **completed in place** — the flag removed and 297 lines of additional cells added.
+**Recorded 2026-08-07, then corrected the same day.** The H-NEW-2790 run directory's
+`results.json` was written multiple times: it carried `"partial": true` at one point and was
+later completed, with the flag removed and 297 lines of cells added.
 
-Under the standing rule ("nothing in a run directory may be overwritten, including uncommitted
-and superseded ones") that is a modification of a committed run record.
+**My first diagnosis was wrong, and the wrong diagnosis produced the wrong fix.**
 
-**The honest reading, and the resolution:**
+I originally recorded this as *my* error at the commit step — "a run marked partial should not
+have been committed as one" — and the remedy I wrote was "never commit a partial run." A second
+lane contested the attribution and was right. The cause is in the script's design, verifiable at
+`findings/phase-b-hypotheses/scripts/h-new-2790.py:733-737`:
 
-- The file declared itself incomplete. Finishing an in-progress computation is not the same act
-  as revising a finished result, and the added cells extend the run rather than altering any
-  verdict already in it. The three-line deletion is the `partial` flag itself.
-- **But the error was mine, at the commit step.** A run marked `partial: true` is not yet a run
-  record and should not have been committed as one. Once committed it acquires the immutability
-  guarantee whether or not it was ready for it.
+```
+def snapshot(partial=True):
+    with open(os.path.join(rundir, "results.json"), "w", ...)
+```
 
-**Standing addition to the rule:** never commit a run directory whose result declares itself
-partial. Either wait for completion, or — if the partial state must be preserved — commit it and
-then write the completion to a **new** timestamped directory, retaining both. The immutability
-guarantee is only meaningful if what it protects was finished when it was made.
+**The script writes progressive snapshots to `results.json` inside the run directory during
+execution**, then overwrites it once more at completion (`:806`). It overwrites a file inside an
+"immutable" run directory several times per run **regardless of whether anyone ever commits it.**
+My commit was incidental. "Never commit a partial run" would not have prevented this, and
+following that remedy would have left the actual defect in place in every future script.
+
+**The correct standing rule:**
+
+> **A run script must never overwrite a file inside its own run directory.** Write the result
+> once, at completion. If progress must be checkpointed — and for long batch runs it should be —
+> write snapshots to a path OUTSIDE the immutable run directory, or to distinct
+> `snapshot-NNN.json` files that are never rewritten.
+
+An immutable run directory whose contents are rewritten by the very script that owns it provides
+no guarantee at all. The directory was never the protection; **write-once** is.
+
+**The generalisable lesson, which is why this is in the rule document rather than a changelog:**
+a self-reported error with a plausible-sounding cause is still an unverified claim. I accepted my
+own diagnosis without checking the script, and it took a second lane reading the code to find the
+real mechanism. **Diagnose from the artifact, not from the narrative** — including, and
+especially, when the narrative is your own confession.

@@ -454,11 +454,23 @@ land in 0.794–0.801**, so the §5.2 conclusion is insensitive to which is used
 
 ### 9.2 The mushaf channel — a live instance of the rule's own §5 clause
 
-The sweep's inventory lists **verse count (ρ = −0.8446)** as the strongest drift channel for
-the mushaf-ordered predictor claims, while listing **log word count (ρ = −0.9342)** as
-strongest for another mushaf-ordered claim in the same table. Both are the same ordering. My
-pre-registration locked log word count, on the measurement. Measured single-column Ridge LOOCV
-predicting mushaf position:
+**This was not a slip in a message. It was the live instruction in the rule document.**
+`findings/UNIT-DRIFT-DEFECT.md` §3 is the table a future session is told to use — its §6 step 2
+says *"Look it up in the §3 table"* and step 3 says *"verify it targets the **strong** channel."*
+In the version live when this pre-registration was locked (commit `b39b564ee`, lines 65–67) the
+mushaf block read:
+
+```
+| **mushaf position** | **verse count**       | **−0.8446** |   <- bolded
+| **mushaf position** | **mean verse length** | **−0.7131** |   <- bolded
+|   mushaf position   |   log word count      |   −0.9342   |   <- not bolded
+```
+
+**Bolding is how that table signals which channel is primary, and the strongest channel is the
+unbolded one.** A session following the document's own procedure would have locked verse count.
+My pre-registration locked log word count instead only because the rule's *other* instruction —
+rank the channels on the data before locking — was followed, and the two instructions
+disagreed. Measured single-column Ridge LOOCV predicting mushaf position:
 
 | channel | ρ with mushaf position | size-only Ridge R² |
 |:--|--:|--:|
@@ -470,9 +482,29 @@ predicting mushaf position:
 channel, the size baseline would have been **0.5386** — and H-NEW-192's reconstructed
 15-feature model at 0.8026 would have cleared it by **+0.264 R²**, returning `SURVIVES` at the
 top of the band. **The claim would have passed.** It is the "control on the weak channel"
-clause of `UNIT-DRIFT-DEFECT` §5 reappearing inside the inventory built to enforce it, and it
-is the sharpest available argument for that rule's own instruction to rank channels on the
-data before locking one.
+clause of `UNIT-DRIFT-DEFECT` §5 reappearing **inside the document that states it**, in the
+table that document tells the next session to trust — and it is the sharpest available argument
+for that rule's own instruction to rank channels on the data before locking one. The two
+instructions are not redundant; here one was wrong and the other caught it.
+
+**The completing half of the table, which the sweep supplied and which explains how the error
+was easy to make:**
+
+| ordering | channel | ρ | size-only Ridge R² |
+|:--|:--|--:|--:|
+| **mushaf** | **log word count** | −0.9342 | **0.8378** |
+| mushaf | verse count | −0.8446 | 0.5386 |
+| mushaf | mean verse length | −0.7131 | 0.4133 |
+| **Nöldeke** | **mean verse length** | +0.9038 | **0.8005** |
+| Nöldeke | log word count | +0.6775 | 0.4462 |
+| Nöldeke | verse count | +0.3903 | 0.0961 |
+
+**The strongest channel is a different variable for each ordering, and the ranking fully
+inverts**: log word count is strongest for mushaf and middling for Nöldeke; mean verse length
+is strongest for Nöldeke and *weakest* for mushaf. **A channel cannot be carried across
+orderings**, and ρ alone does not make this visible — −0.8446 and −0.9342 look adjacent, while
+0.5386 and 0.8378 do not. **The size-only R², not the correlation, is the number that belongs
+in a channel table**, because it is the bar the model must actually clear.
 
 ### 9.3 The sweep's item #6 — H-NEW-74's top-10 ranking — is not what I tested
 
@@ -556,6 +588,24 @@ verdict.
   secondary arm** — that is the H-NEW-2600 error — but §4.2 gives the secondary its full weight.
 - **Run directories are never deleted.** Eight calibration runs are retained beside the primary
   under `runs/h-new-2790-SMOKE/`, including the ones that failed on the harness defects above.
+- **A run-immutability defect, and it is a design decision of mine rather than an accident.**
+  Facing a multi-hour run on a saturated machine, I made the runner write `results.json`
+  **incrementally, after every claim**, carrying `"partial": true` until completion — so a crash
+  or a kill could not lose hours of work. That makes a file *inside the run directory* mutable
+  while the run is in flight, which is in direct tension with this project's rule that a run
+  directory is immutable. It then happened exactly as that tension predicts: commit `0db7171e2`
+  captured `results.json` at `"partial": true` with 10 primary and 6 replication cells, and the
+  completed file — 10 and 10, flag removed — was captured at `80bb535bf`. **Neither commit was
+  mine; both were made by other lanes running `git add -A` while my run was executing.** But the
+  commit is the trigger, not the cause: **the cause is that I wrote a mutable file under the
+  name the run record is supposed to occupy.** The right fix is not "do not commit partial
+  runs", which depends on nobody else's tooling touching the tree at the wrong moment; it is
+  **write progress to a separate `progress.json` and write `results.json` exactly once, at
+  completion**, so the run record is never mutable and no commit at any instant can capture it
+  mid-flight. That is a one-line change and it is not made here, because changing the runner
+  after the run would itself modify the record; it is registered as the correction for the next
+  harness. **No published value is affected** — the completed `results.json` is what every
+  number in this finding is read from, and the partial file was a strict prefix of it.
 
 ---
 
