@@ -1,0 +1,141 @@
+{
+  "id": "H-NEW-2640-POSTHOC",
+  "status": "NOT PRE-REGISTERED — descriptive, MW-7 capped at single-test alpha=0.05, no Bonferroni standing, no verdict authority",
+  "prereg_sha256_of_primary": "0b300fdb19c351b1692dc06b7163480bdbed642702c02dbf1bf7e9272065de89",
+  "P1_raw_feature_classifier": {
+    "loo6_baseline": 0.76923,
+    "legal_recall_6": 8,
+    "loo8_raw_DE": 0.7033,
+    "delta_raw": -0.06593,
+    "legal_recall_8_raw": 10,
+    "confusion8_raw": {
+      "narrative": {
+        "narrative": 25,
+        "legal_medinan": 4,
+        "eschatological_mufassal": 2
+      },
+      "legal_medinan": {
+        "narrative": 0,
+        "legal_medinan": 10,
+        "eschatological_mufassal": 10
+      },
+      "eschatological_mufassal": {
+        "narrative": 1,
+        "legal_medinan": 10,
+        "eschatological_mufassal": 29
+      }
+    },
+    "single_feature": {
+      "D_raw_only": {
+        "loo": 0.7033,
+        "delta": -0.06593,
+        "legal_recall": 8
+      },
+      "E_raw_only": {
+        "loo": 0.72527,
+        "delta": -0.04396,
+        "legal_recall": 9
+      }
+    },
+    "registered_residualised_delta": -0.08791
+  },
+  "P2_length_collinearity_R2": {
+    "D": 0.0355,
+    "E": 0.0612,
+    "J_rawJUS": 0.0503
+  },
+  "P3_deontic_top10": [
+    {
+      "surah": 108,
+      "density": 200.0,
+      "register": "eschatological_mufassal",
+      "count": 2
+    },
+    {
+      "surah": 110,
+      "density": 105.263,
+      "register": "eschatological_mufassal",
+      "count": 2
+    },
+    {
+      "surah": 96,
+      "density": 83.333,
+      "register": "eschatological_mufassal",
+      "count": 6
+    },
+    {
+      "surah": 93,
+      "density": 75.0,
+      "register": "eschatological_mufassal",
+      "count": 3
+    },
+    {
+      "surah": 94,
+      "density": 74.074,
+      "register": "eschatological_mufassal",
+      "count": 2
+    },
+    {
+      "surah": 49,
+      "density": 69.164,
+      "register": "legal_medinan",
+      "count": 24
+    },
+    {
+      "surah": 112,
+      "density": 66.667,
+      "register": "eschatological_mufassal",
+      "count": 1
+    },
+    {
+      "surah": 106,
+      "density": 58.824,
+      "register": "eschatological_mufassal",
+      "count": 1
+    },
+    {
+      "surah": 62,
+      "density": 51.429,
+      "register": "legal_medinan",
+      "count": 9
+    },
+    {
+      "surah": 114,
+      "density": 50.0,
+      "register": "eschatological_mufassal",
+      "count": 1
+    }
+  ],
+  "P3_deontic_bottom5": [
+    {
+      "surah": 81,
+      "density": 0.0,
+      "register": "eschatological_mufassal",
+      "count": 0
+    },
+    {
+      "surah": 82,
+      "density": 0.0,
+      "register": "eschatological_mufassal",
+      "count": 0
+    },
+    {
+      "surah": 85,
+      "density": 0.0,
+      "register": "eschatological_mufassal",
+      "count": 0
+    },
+    {
+      "surah": 90,
+      "density": 0.0,
+      "register": "eschatological_mufassal",
+      "count": 0
+    },
+    {
+      "surah": 91,
+      "density": 0.0,
+      "register": "narrative",
+      "count": 0
+    }
+  ]
+}

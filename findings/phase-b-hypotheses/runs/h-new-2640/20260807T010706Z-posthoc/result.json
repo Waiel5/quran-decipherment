@@ -1,0 +1,201 @@
+{
+  "id": "H-NEW-2640-POSTHOC",
+  "status": "NOT PRE-REGISTERED — descriptive, MW-7 capped at single-test alpha=0.05, no Bonferroni standing, no verdict authority",
+  "prereg_sha256_of_primary": "0b300fdb19c351b1692dc06b7163480bdbed642702c02dbf1bf7e9272065de89",
+  "P1_raw_feature_classifier": {
+    "loo6_baseline": 0.76923,
+    "legal_recall_6": 8,
+    "loo8_raw_DE": 0.7033,
+    "delta_raw": -0.06593,
+    "legal_recall_8_raw": 10,
+    "confusion8_raw": {
+      "narrative": {
+        "narrative": 25,
+        "legal_medinan": 4,
+        "eschatological_mufassal": 2
+      },
+      "legal_medinan": {
+        "narrative": 0,
+        "legal_medinan": 10,
+        "eschatological_mufassal": 10
+      },
+      "eschatological_mufassal": {
+        "narrative": 1,
+        "legal_medinan": 10,
+        "eschatological_mufassal": 29
+      }
+    },
+    "single_feature": {
+      "D_raw_only": {
+        "loo": 0.7033,
+        "delta": -0.06593,
+        "legal_recall": 8
+      },
+      "E_raw_only": {
+        "loo": 0.72527,
+        "delta": -0.04396,
+        "legal_recall": 9
+      }
+    },
+    "registered_residualised_delta": -0.08791
+  },
+  "P2_length_collinearity_R2": {
+    "D": 0.0355,
+    "E": 0.0612,
+    "J_rawJUS": 0.0503
+  },
+  "P4_pooled_token_weighted": {
+    "D_deontic": {
+      "pooled": {
+        "narrative": 28.527,
+        "legal_medinan": 34.16,
+        "eschatological_mufassal": 24.132
+      },
+      "argmax": "legal_medinan",
+      "spread": 10.028,
+      "perm_p_descriptive": 0.007699
+    },
+    "E_epistemic": {
+      "pooled": {
+        "narrative": 56.01,
+        "legal_medinan": 35.104,
+        "eschatological_mufassal": 45.343
+      },
+      "argmax": "narrative",
+      "spread": 20.906,
+      "perm_p_descriptive": 0.010399
+    },
+    "J_rawJUS": {
+      "pooled": {
+        "narrative": 14.924,
+        "legal_medinan": 25.447,
+        "eschatological_mufassal": 12.757
+      },
+      "argmax": "legal_medinan",
+      "spread": 12.69,
+      "perm_p_descriptive": 0.0021
+    },
+    "N_lam": {
+      "pooled": {
+        "narrative": 4.383,
+        "legal_medinan": 4.901,
+        "eschatological_mufassal": 5.994
+      },
+      "argmax": "eschatological_mufassal",
+      "spread": 1.611,
+      "perm_p_descriptive": 0.250875
+    },
+    "C_cond_jussive": {
+      "pooled": {
+        "narrative": 4.349,
+        "legal_medinan": 11.036,
+        "eschatological_mufassal": 1.691
+      },
+      "argmax": "legal_medinan",
+      "spread": 9.345,
+      "perm_p_descriptive": 0.0007
+    }
+  },
+  "P5_instrument_reliability": {
+    "surahs_under_50_tokens": 20,
+    "n": 91,
+    "token_range": [
+      10,
+      6116
+    ]
+  },
+  "P3_deontic_top10": [
+    {
+      "surah": 108,
+      "density": 200.0,
+      "register": "eschatological_mufassal",
+      "count": 2
+    },
+    {
+      "surah": 110,
+      "density": 105.263,
+      "register": "eschatological_mufassal",
+      "count": 2
+    },
+    {
+      "surah": 96,
+      "density": 83.333,
+      "register": "eschatological_mufassal",
+      "count": 6
+    },
+    {
+      "surah": 93,
+      "density": 75.0,
+      "register": "eschatological_mufassal",
+      "count": 3
+    },
+    {
+      "surah": 94,
+      "density": 74.074,
+      "register": "eschatological_mufassal",
+      "count": 2
+    },
+    {
+      "surah": 49,
+      "density": 69.164,
+      "register": "legal_medinan",
+      "count": 24
+    },
+    {
+      "surah": 112,
+      "density": 66.667,
+      "register": "eschatological_mufassal",
+      "count": 1
+    },
+    {
+      "surah": 106,
+      "density": 58.824,
+      "register": "eschatological_mufassal",
+      "count": 1
+    },
+    {
+      "surah": 62,
+      "density": 51.429,
+      "register": "legal_medinan",
+      "count": 9
+    },
+    {
+      "surah": 114,
+      "density": 50.0,
+      "register": "eschatological_mufassal",
+      "count": 1
+    }
+  ],
+  "P3_deontic_bottom5": [
+    {
+      "surah": 81,
+      "density": 0.0,
+      "register": "eschatological_mufassal",
+      "count": 0
+    },
+    {
+      "surah": 82,
+      "density": 0.0,
+      "register": "eschatological_mufassal",
+      "count": 0
+    },
+    {
+      "surah": 85,
+      "density": 0.0,
+      "register": "eschatological_mufassal",
+      "count": 0
+    },
+    {
+      "surah": 90,
+      "density": 0.0,
+      "register": "eschatological_mufassal",
+      "count": 0
+    },
+    {
+      "surah": 91,
+      "density": 0.0,
+      "register": "narrative",
+      "count": 0
+    }
+  ]
+}

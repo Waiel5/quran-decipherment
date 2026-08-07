@@ -1,0 +1,1398 @@
+{
+  "id": "H-NEW-2640",
+  "title": "Modality and register — deontic command vs epistemic certainty across the three Quranic registers",
+  "prereg_sha256": "0b300fdb19c351b1692dc06b7163480bdbed642702c02dbf1bf7e9272065de89",
+  "seed": 20260509,
+  "seed_replication": 20260519,
+  "n_perm": 10000,
+  "bonferroni_k": 4,
+  "alpha_bonferroni": 0.0125,
+  "rules_tuple_primary": "(QAC-v0.4 pipe-atom exact matching, orthographic-word-token denominator, basmala-counted-only-in-Q1 as QAC encodes it, D = IMPV + D_pro_la + D_lam_amr + IMPN, E = CERT + EMPH{l:EMPH+,+n:EMPH} + FUT{POS:FUT,sa+} + ACC^LEM:<in~, OLS residualisation on [log n_verses, mean words/verse], Hafs-Kufan, Mashriqi)",
+  "register_label_source": "csv/h-new-2500.json genre_proxy.surah_genre, via the pointer recorded in csv/h-new-2530.json (reused verbatim, never re-derived)",
+  "n_per_register": {
+    "liturgical_didactic": 23,
+    "legal_medinan": 20,
+    "narrative": 31,
+    "eschatological_mufassal": 40
+  },
+  "n_primary": 91,
+  "corpus_geometry": {
+    "word_tokens": 77429,
+    "verses": 6236,
+    "surahs": 114
+  },
+  "substring_vs_atom_exhibit": {
+    "substring_POS:PRO": 3633,
+    "atom_POS:PRO": 332,
+    "inflation": 10.94
+  },
+  "frontier_map_label_corrections": {
+    "POS:EMPH": "no such POS tag in QAC; EMPH is a clitic tag: l:EMPH+ 1001 + +n:EMPH 243 = 1244",
+    "POS:FUT": "POS:FUT alone = 42 (sawfa); sa+ prefix = 119; 42+119 = 161"
+  },
+  "marker_totals": {
+    "MOOD:JUS": 1418,
+    "MOOD:SUBJ": 1330,
+    "POS:CERT": 414,
+    "POS:PRO": 332,
+    "IMPV_verb": 1876,
+    "POS:IMPN": 2,
+    "l:EMPH+": 1001,
+    "+n:EMPH": 243,
+    "POS:FUT": 42,
+    "sa+": 119,
+    "ACC_inna": 1682,
+    "ACC_anna": 362
+  },
+  "jussive_split": {
+    "N_lam": 351,
+    "D_pro_la": 330,
+    "C_jawab_talab": 67,
+    "R_other": 28,
+    "X_neg_la": 110,
+    "C_cond": 220,
+    "C_apodosis": 189,
+    "D_lam_amr": 78,
+    "C_cond_rel": 45
+  },
+  "jussive_deontic_fraction": 0.2877,
+  "index_totals": {
+    "D_T1": 2286,
+    "E_T1": 3501,
+    "D_T2": 2396,
+    "E_T2": 3863,
+    "rawJUS": 1418
+  },
+  "mw6_controls": {
+    "prereg_sha_verified": true,
+    "frozen_inputs_verified": true,
+    "genre_marginals_reproduced": true,
+    "h_new_2530_six_feature_loo_reproduced": 0.76923,
+    "h_new_2530_confusion_reproduced": {
+      "narrative": {
+        "narrative": 25,
+        "legal_medinan": 3,
+        "eschatological_mufassal": 3
+      },
+      "legal_medinan": {
+        "narrative": 0,
+        "legal_medinan": 8,
+        "eschatological_mufassal": 12
+      },
+      "eschatological_mufassal": {
+        "narrative": 1,
+        "legal_medinan": 2,
+        "eschatological_mufassal": 37
+      }
+    },
+    "loo_fast_equals_loo_exact": true,
+    "length_tertile_cuts": [
+      19,
+      60
+    ]
+  },
+  "per_surah_indices": {
+    "2": {
+      "n_words": 6116,
+      "n_verses": 286,
+      "register": "legal_medinan",
+      "D_count": 251,
+      "E_count": 174,
+      "rawJUS_count": 124,
+      "N_lam_count": 22
+    },
+    "3": {
+      "n_words": 3481,
+      "n_verses": 200,
+      "register": "legal_medinan",
+      "D_count": 112,
+      "E_count": 147,
+      "rawJUS_count": 80,
+      "N_lam_count": 7
+    },
+    "4": {
+      "n_words": 3747,
+      "n_verses": 176,
+      "register": "legal_medinan",
+      "D_count": 123,
+      "E_count": 130,
+      "rawJUS_count": 153,
+      "N_lam_count": 26
+    },
+    "5": {
+      "n_words": 2804,
+      "n_verses": 120,
+      "register": "legal_medinan",
+      "D_count": 105,
+      "E_count": 115,
+      "rawJUS_count": 53,
+      "N_lam_count": 13
+    },
+    "7": {
+      "n_words": 3320,
+      "n_verses": 206,
+      "register": "narrative",
+      "D_count": 120,
+      "E_count": 159,
+      "rawJUS_count": 62,
+      "N_lam_count": 14
+    },
+    "8": {
+      "n_words": 1233,
+      "n_verses": 75,
+      "register": "legal_medinan",
+      "D_count": 43,
+      "E_count": 47,
+      "rawJUS_count": 41,
+      "N_lam_count": 3
+    },
+    "9": {
+      "n_words": 2498,
+      "n_verses": 129,
+      "register": "legal_medinan",
+      "D_count": 72,
+      "E_count": 91,
+      "rawJUS_count": 53,
+      "N_lam_count": 14
+    },
+    "11": {
+      "n_words": 1917,
+      "n_verses": 123,
+      "register": "narrative",
+      "D_count": 56,
+      "E_count": 115,
+      "rawJUS_count": 33,
+      "N_lam_count": 3
+    },
+    "12": {
+      "n_words": 1777,
+      "n_verses": 111,
+      "register": "narrative",
+      "D_count": 46,
+      "E_count": 109,
+      "rawJUS_count": 29,
+      "N_lam_count": 7
+    },
+    "14": {
+      "n_words": 830,
+      "n_verses": 52,
+      "register": "narrative",
+      "D_count": 21,
+      "E_count": 47,
+      "rawJUS_count": 14,
+      "N_lam_count": 5
+    },
+    "15": {
+      "n_words": 655,
+      "n_verses": 99,
+      "register": "narrative",
+      "D_count": 24,
+      "E_count": 74,
+      "rawJUS_count": 9,
+      "N_lam_count": 2
+    },
+    "17": {
+      "n_words": 1556,
+      "n_verses": 111,
+      "register": "eschatological_mufassal",
+      "D_count": 58,
+      "E_count": 78,
+      "rawJUS_count": 30,
+      "N_lam_count": 4
+    },
+    "18": {
+      "n_words": 1579,
+      "n_verses": 110,
+      "register": "narrative",
+      "D_count": 40,
+      "E_count": 51,
+      "rawJUS_count": 37,
+      "N_lam_count": 13
+    },
+    "19": {
+      "n_words": 961,
+      "n_verses": 98,
+      "register": "narrative",
+      "D_count": 29,
+      "E_count": 53,
+      "rawJUS_count": 17,
+      "N_lam_count": 11
+    },
+    "20": {
+      "n_words": 1335,
+      "n_verses": 135,
+      "register": "narrative",
+      "D_count": 63,
+      "E_count": 84,
+      "rawJUS_count": 29,
+      "N_lam_count": 7
+    },
+    "21": {
+      "n_words": 1169,
+      "n_verses": 112,
+      "register": "narrative",
+      "D_count": 19,
+      "E_count": 45,
+      "rawJUS_count": 8,
+      "N_lam_count": 1
+    },
+    "22": {
+      "n_words": 1274,
+      "n_verses": 78,
+      "register": "legal_medinan",
+      "D_count": 33,
+      "E_count": 60,
+      "rawJUS_count": 21,
+      "N_lam_count": 6
+    },
+    "23": {
+      "n_words": 1050,
+      "n_verses": 118,
+      "register": "narrative",
+      "D_count": 35,
+      "E_count": 61,
+      "rawJUS_count": 10,
+      "N_lam_count": 4
+    },
+    "24": {
+      "n_words": 1316,
+      "n_verses": 64,
+      "register": "legal_medinan",
+      "D_count": 42,
+      "E_count": 40,
+      "rawJUS_count": 45,
+      "N_lam_count": 13
+    },
+    "25": {
+      "n_words": 893,
+      "n_verses": 77,
+      "register": "narrative",
+      "D_count": 16,
+      "E_count": 25,
+      "rawJUS_count": 17,
+      "N_lam_count": 8
+    },
+    "26": {
+      "n_words": 1318,
+      "n_verses": 227,
+      "register": "narrative",
+      "D_count": 52,
+      "E_count": 101,
+      "rawJUS_count": 17,
+      "N_lam_count": 7
+    },
+    "27": {
+      "n_words": 1151,
+      "n_verses": 93,
+      "register": "narrative",
+      "D_count": 34,
+      "E_count": 72,
+      "rawJUS_count": 10,
+      "N_lam_count": 4
+    },
+    "28": {
+      "n_words": 1430,
+      "n_verses": 88,
+      "register": "narrative",
+      "D_count": 34,
+      "E_count": 51,
+      "rawJUS_count": 20,
+      "N_lam_count": 7
+    },
+    "29": {
+      "n_words": 976,
+      "n_verses": 69,
+      "register": "narrative",
+      "D_count": 27,
+      "E_count": 95,
+      "rawJUS_count": 9,
+      "N_lam_count": 3
+    },
+    "30": {
+      "n_words": 817,
+      "n_verses": 60,
+      "register": "eschatological_mufassal",
+      "D_count": 12,
+      "E_count": 32,
+      "rawJUS_count": 6,
+      "N_lam_count": 4
+    },
+    "33": {
+      "n_words": 1287,
+      "n_verses": 73,
+      "register": "legal_medinan",
+      "D_count": 44,
+      "E_count": 34,
+      "rawJUS_count": 25,
+      "N_lam_count": 7
+    },
+    "34": {
+      "n_words": 883,
+      "n_verses": 54,
+      "register": "narrative",
+      "D_count": 27,
+      "E_count": 27,
+      "rawJUS_count": 6,
+      "N_lam_count": 1
+    },
+    "36": {
+      "n_words": 725,
+      "n_verses": 83,
+      "register": "narrative",
+      "D_count": 15,
+      "E_count": 27,
+      "rawJUS_count": 18,
+      "N_lam_count": 7
+    },
+    "37": {
+      "n_words": 860,
+      "n_verses": 182,
+      "register": "narrative",
+      "D_count": 18,
+      "E_count": 97,
+      "rawJUS_count": 2,
+      "N_lam_count": 1
+    },
+    "38": {
+      "n_words": 733,
+      "n_verses": 88,
+      "register": "narrative",
+      "D_count": 32,
+      "E_count": 47,
+      "rawJUS_count": 7,
+      "N_lam_count": 1
+    },
+    "39": {
+      "n_words": 1172,
+      "n_verses": 75,
+      "register": "eschatological_mufassal",
+      "D_count": 31,
+      "E_count": 47,
+      "rawJUS_count": 11,
+      "N_lam_count": 5
+    },
+    "40": {
+      "n_words": 1219,
+      "n_verses": 85,
+      "register": "narrative",
+      "D_count": 25,
+      "E_count": 50,
+      "rawJUS_count": 20,
+      "N_lam_count": 7
+    },
+    "41": {
+      "n_words": 794,
+      "n_verses": 54,
+      "register": "narrative",
+      "D_count": 19,
+      "E_count": 48,
+      "rawJUS_count": 8,
+      "N_lam_count": 2
+    },
+    "43": {
+      "n_words": 830,
+      "n_verses": 89,
+      "register": "narrative",
+      "D_count": 14,
+      "E_count": 55,
+      "rawJUS_count": 3,
+      "N_lam_count": 0
+    },
+    "45": {
+      "n_words": 488,
+      "n_verses": 37,
+      "register": "eschatological_mufassal",
+      "D_count": 5,
+      "E_count": 11,
+      "rawJUS_count": 4,
+      "N_lam_count": 2
+    },
+    "46": {
+      "n_words": 643,
+      "n_verses": 35,
+      "register": "narrative",
+      "D_count": 17,
+      "E_count": 18,
+      "rawJUS_count": 10,
+      "N_lam_count": 4
+    },
+    "47": {
+      "n_words": 539,
+      "n_verses": 38,
+      "register": "legal_medinan",
+      "D_count": 7,
+      "E_count": 18,
+      "rawJUS_count": 15,
+      "N_lam_count": 2
+    },
+    "49": {
+      "n_words": 347,
+      "n_verses": 18,
+      "register": "legal_medinan",
+      "D_count": 24,
+      "E_count": 15,
+      "rawJUS_count": 14,
+      "N_lam_count": 4
+    },
+    "50": {
+      "n_words": 373,
+      "n_verses": 45,
+      "register": "narrative",
+      "D_count": 9,
+      "E_count": 11,
+      "rawJUS_count": 3,
+      "N_lam_count": 1
+    },
+    "51": {
+      "n_words": 360,
+      "n_verses": 60,
+      "register": "narrative",
+      "D_count": 7,
+      "E_count": 20,
+      "rawJUS_count": 3,
+      "N_lam_count": 0
+    },
+    "57": {
+      "n_words": 574,
+      "n_verses": 29,
+      "register": "legal_medinan",
+      "D_count": 11,
+      "E_count": 12,
+      "rawJUS_count": 8,
+      "N_lam_count": 2
+    },
+    "58": {
+      "n_words": 472,
+      "n_verses": 22,
+      "register": "legal_medinan",
+      "D_count": 12,
+      "E_count": 19,
+      "rawJUS_count": 12,
+      "N_lam_count": 8
+    },
+    "59": {
+      "n_words": 445,
+      "n_verses": 24,
+      "register": "legal_medinan",
+      "D_count": 11,
+      "E_count": 21,
+      "rawJUS_count": 7,
+      "N_lam_count": 2
+    },
+    "60": {
+      "n_words": 348,
+      "n_verses": 13,
+      "register": "legal_medinan",
+      "D_count": 14,
+      "E_count": 14,
+      "rawJUS_count": 20,
+      "N_lam_count": 2
+    },
+    "61": {
+      "n_words": 221,
+      "n_verses": 14,
+      "register": "legal_medinan",
+      "D_count": 2,
+      "E_count": 3,
+      "rawJUS_count": 2,
+      "N_lam_count": 0
+    },
+    "62": {
+      "n_words": 175,
+      "n_verses": 11,
+      "register": "legal_medinan",
+      "D_count": 9,
+      "E_count": 3,
+      "rawJUS_count": 1,
+      "N_lam_count": 1
+    },
+    "63": {
+      "n_words": 180,
+      "n_verses": 11,
+      "register": "legal_medinan",
+      "D_count": 5,
+      "E_count": 11,
+      "rawJUS_count": 8,
+      "N_lam_count": 1
+    },
+    "64": {
+      "n_words": 241,
+      "n_verses": 18,
+      "register": "legal_medinan",
+      "D_count": 10,
+      "E_count": 8,
+      "rawJUS_count": 15,
+      "N_lam_count": 1
+    },
+    "66": {
+      "n_words": 249,
+      "n_verses": 12,
+      "register": "legal_medinan",
+      "D_count": 11,
+      "E_count": 5,
+      "rawJUS_count": 4,
+      "N_lam_count": 1
+    },
+    "68": {
+      "n_words": 300,
+      "n_verses": 52,
+      "register": "narrative",
+      "D_count": 9,
+      "E_count": 30,
+      "rawJUS_count": 6,
+      "N_lam_count": 1
+    },
+    "69": {
+      "n_words": 258,
+      "n_verses": 52,
+      "register": "eschatological_mufassal",
+      "D_count": 9,
+      "E_count": 15,
+      "rawJUS_count": 2,
+      "N_lam_count": 2
+    },
+    "71": {
+      "n_words": 226,
+      "n_verses": 28,
+      "register": "narrative",
+      "D_count": 9,
+      "E_count": 14,
+      "rawJUS_count": 16,
+      "N_lam_count": 4
+    },
+    "75": {
+      "n_words": 164,
+      "n_verses": 40,
+      "register": "eschatological_mufassal",
+      "D_count": 2,
+      "E_count": 2,
+      "rawJUS_count": 2,
+      "N_lam_count": 1
+    },
+    "77": {
+      "n_words": 181,
+      "n_verses": 50,
+      "register": "eschatological_mufassal",
+      "D_count": 8,
+      "E_count": 6,
+      "rawJUS_count": 3,
+      "N_lam_count": 3
+    },
+    "78": {
+      "n_words": 173,
+      "n_verses": 40,
+      "register": "eschatological_mufassal",
+      "D_count": 1,
+      "E_count": 7,
+      "rawJUS_count": 1,
+      "N_lam_count": 1
+    },
+    "79": {
+      "n_words": 179,
+      "n_verses": 46,
+      "register": "narrative",
+      "D_count": 2,
+      "E_count": 9,
+      "rawJUS_count": 1,
+      "N_lam_count": 1
+    },
+    "80": {
+      "n_words": 133,
+      "n_verses": 42,
+      "register": "eschatological_mufassal",
+      "D_count": 1,
+      "E_count": 1,
+      "rawJUS_count": 2,
+      "N_lam_count": 1
+    },
+    "81": {
+      "n_words": 104,
+      "n_verses": 29,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 4,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "82": {
+      "n_words": 80,
+      "n_verses": 19,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 6,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "83": {
+      "n_words": 169,
+      "n_verses": 36,
+      "register": "narrative",
+      "D_count": 1,
+      "E_count": 13,
+      "rawJUS_count": 1,
+      "N_lam_count": 0
+    },
+    "84": {
+      "n_words": 107,
+      "n_verses": 25,
+      "register": "eschatological_mufassal",
+      "D_count": 1,
+      "E_count": 8,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "85": {
+      "n_words": 109,
+      "n_verses": 22,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 5,
+      "rawJUS_count": 1,
+      "N_lam_count": 1
+    },
+    "86": {
+      "n_words": 61,
+      "n_verses": 17,
+      "register": "eschatological_mufassal",
+      "D_count": 3,
+      "E_count": 5,
+      "rawJUS_count": 1,
+      "N_lam_count": 0
+    },
+    "87": {
+      "n_words": 72,
+      "n_verses": 19,
+      "register": "eschatological_mufassal",
+      "D_count": 2,
+      "E_count": 6,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "88": {
+      "n_words": 92,
+      "n_verses": 26,
+      "register": "eschatological_mufassal",
+      "D_count": 1,
+      "E_count": 3,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "89": {
+      "n_words": 137,
+      "n_verses": 30,
+      "register": "eschatological_mufassal",
+      "D_count": 3,
+      "E_count": 2,
+      "rawJUS_count": 2,
+      "N_lam_count": 2
+    },
+    "90": {
+      "n_words": 82,
+      "n_verses": 20,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 2,
+      "rawJUS_count": 2,
+      "N_lam_count": 2
+    },
+    "91": {
+      "n_words": 54,
+      "n_verses": 15,
+      "register": "narrative",
+      "D_count": 0,
+      "E_count": 2,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "92": {
+      "n_words": 71,
+      "n_verses": 21,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 11,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "93": {
+      "n_words": 40,
+      "n_verses": 11,
+      "register": "eschatological_mufassal",
+      "D_count": 3,
+      "E_count": 3,
+      "rawJUS_count": 3,
+      "N_lam_count": 1
+    },
+    "94": {
+      "n_words": 27,
+      "n_verses": 8,
+      "register": "eschatological_mufassal",
+      "D_count": 2,
+      "E_count": 2,
+      "rawJUS_count": 1,
+      "N_lam_count": 1
+    },
+    "95": {
+      "n_words": 34,
+      "n_verses": 8,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 2,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "96": {
+      "n_words": 72,
+      "n_verses": 19,
+      "register": "eschatological_mufassal",
+      "D_count": 6,
+      "E_count": 7,
+      "rawJUS_count": 5,
+      "N_lam_count": 3
+    },
+    "97": {
+      "n_words": 30,
+      "n_verses": 5,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 1,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "98": {
+      "n_words": 94,
+      "n_verses": 8,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 4,
+      "rawJUS_count": 1,
+      "N_lam_count": 1
+    },
+    "99": {
+      "n_words": 36,
+      "n_verses": 8,
+      "register": "narrative",
+      "D_count": 0,
+      "E_count": 0,
+      "rawJUS_count": 4,
+      "N_lam_count": 0
+    },
+    "100": {
+      "n_words": 40,
+      "n_verses": 11,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 8,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "101": {
+      "n_words": 36,
+      "n_verses": 11,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 0,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "102": {
+      "n_words": 28,
+      "n_verses": 8,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 8,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "103": {
+      "n_words": 14,
+      "n_verses": 3,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 2,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "104": {
+      "n_words": 33,
+      "n_verses": 9,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 3,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "105": {
+      "n_words": 23,
+      "n_verses": 5,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 0,
+      "rawJUS_count": 2,
+      "N_lam_count": 2
+    },
+    "106": {
+      "n_words": 17,
+      "n_verses": 4,
+      "register": "eschatological_mufassal",
+      "D_count": 1,
+      "E_count": 0,
+      "rawJUS_count": 1,
+      "N_lam_count": 0
+    },
+    "107": {
+      "n_words": 25,
+      "n_verses": 7,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 0,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "108": {
+      "n_words": 10,
+      "n_verses": 3,
+      "register": "eschatological_mufassal",
+      "D_count": 2,
+      "E_count": 2,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "109": {
+      "n_words": 26,
+      "n_verses": 6,
+      "register": "eschatological_mufassal",
+      "D_count": 1,
+      "E_count": 0,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "110": {
+      "n_words": 19,
+      "n_verses": 3,
+      "register": "eschatological_mufassal",
+      "D_count": 2,
+      "E_count": 1,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "111": {
+      "n_words": 23,
+      "n_verses": 5,
+      "register": "eschatological_mufassal",
+      "D_count": 0,
+      "E_count": 1,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "112": {
+      "n_words": 15,
+      "n_verses": 4,
+      "register": "eschatological_mufassal",
+      "D_count": 1,
+      "E_count": 0,
+      "rawJUS_count": 3,
+      "N_lam_count": 3
+    },
+    "113": {
+      "n_words": 23,
+      "n_verses": 5,
+      "register": "eschatological_mufassal",
+      "D_count": 1,
+      "E_count": 0,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    },
+    "114": {
+      "n_words": 20,
+      "n_verses": 6,
+      "register": "eschatological_mufassal",
+      "D_count": 1,
+      "E_count": 0,
+      "rawJUS_count": 0,
+      "N_lam_count": 0
+    }
+  },
+  "tuples": {
+    "T1_primary": {
+      "tuple": "T1_primary",
+      "denominator": "word",
+      "beta_D": [
+        37.127262,
+        -4.67234,
+        0.69109
+      ],
+      "beta_E": [
+        62.666068,
+        2.536609,
+        -1.905983
+      ],
+      "raw_density_by_register": {
+        "D": {
+          "narrative": 25.0938,
+          "legal_medinan": 33.2402,
+          "eschatological_mufassal": 27.6852
+        },
+        "E": {
+          "narrative": 56.0535,
+          "legal_medinan": 34.7575,
+          "eschatological_mufassal": 58.1482
+        },
+        "J": {
+          "narrative": 17.574,
+          "legal_medinan": 27.2907,
+          "eschatological_mufassal": 17.6001
+        },
+        "N_lam": {
+          "narrative": 4.2322,
+          "legal_medinan": 5.5298,
+          "eschatological_mufassal": 12.7254
+        },
+        "C_cond": {
+          "narrative": 6.7889,
+          "legal_medinan": 12.0203,
+          "eschatological_mufassal": 0.2123
+        }
+      },
+      "resid_density_by_register": {
+        "D": {
+          "narrative": 0.6544,
+          "legal_medinan": 0.51,
+          "eschatological_mufassal": -0.7621
+        },
+        "E": {
+          "narrative": 2.4761,
+          "legal_medinan": -1.5172,
+          "eschatological_mufassal": -1.1604
+        },
+        "J_rawJUS": {
+          "narrative": 2.3932,
+          "legal_medinan": 2.6102,
+          "eschatological_mufassal": -3.1598
+        },
+        "N_lam": {
+          "narrative": -0.6474,
+          "legal_medinan": -0.5239,
+          "eschatological_mufassal": 0.7637
+        },
+        "C_cond": {
+          "narrative": 2.5245,
+          "legal_medinan": 2.6942,
+          "eschatological_mufassal": -3.3036
+        }
+      },
+      "F_D": 0.0272,
+      "F_E": 0.0741,
+      "F_J_rawJUS": 0.4606,
+      "delta_F": -0.4334,
+      "argmax_D": "narrative",
+      "argmax_E": "narrative",
+      "argmax_J_rawJUS": "legal_medinan",
+      "loo6": 0.76923,
+      "loo8": 0.68132,
+      "delta_loo": -0.08791,
+      "confusion8": {
+        "narrative": {
+          "narrative": 25,
+          "legal_medinan": 3,
+          "eschatological_mufassal": 3
+        },
+        "legal_medinan": {
+          "narrative": 0,
+          "legal_medinan": 8,
+          "eschatological_mufassal": 12
+        },
+        "eschatological_mufassal": {
+          "narrative": 1,
+          "legal_medinan": 10,
+          "eschatological_mufassal": 29
+        }
+      },
+      "legal_recall_6": 8,
+      "legal_recall_8": 8,
+      "nulls": {
+        "A_primary": {
+          "p_I1_F_D": 0.978702,
+          "p_I2_F_E": 0.931007,
+          "p_I3_delta_loo": 0.962204,
+          "p_I4_delta_F": 0.681632
+        },
+        "A_replication": {
+          "p_I1_F_D": 0.978202,
+          "p_I2_F_E": 0.935706,
+          "p_I3_delta_loo": 0.958804,
+          "p_I4_delta_F": 0.671533
+        },
+        "B_primary": {
+          "p_I1_F_D": 0.951005,
+          "p_I2_F_E": 0.89511,
+          "p_I3_delta_loo": 0.962204,
+          "p_I4_delta_F": 0.729027
+        },
+        "B_replication": {
+          "p_I1_F_D": 0.949405,
+          "p_I2_F_E": 0.90021,
+          "p_I3_delta_loo": 0.958804,
+          "p_I4_delta_F": 0.729427
+        }
+      },
+      "verdicts": {
+        "I1_deontic": {
+          "p": 0.978702,
+          "direction_locked": "legal_medinan",
+          "direction_observed": "narrative",
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false
+        },
+        "I2_epistemic": {
+          "p": 0.931007,
+          "direction_locked": "eschatological_mufassal",
+          "direction_observed": "narrative",
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false
+        },
+        "I3_orthogonality": {
+          "p": 0.962204,
+          "direction_locked": "delta >= 0",
+          "delta_observed": -0.08791,
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false
+        },
+        "I4_confound": {
+          "p": 0.681632,
+          "direction_locked": "delta_F > 0",
+          "delta_F_observed": -0.4334,
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false,
+          "locked_descriptive_rawJUS_argmax_not_legal": false
+        }
+      }
+    },
+    "T2_sensitivity_A": {
+      "tuple": "T2_sensitivity_A",
+      "denominator": "word",
+      "beta_D": [
+        36.610984,
+        -4.676699,
+        0.838403
+      ],
+      "beta_E": [
+        63.451983,
+        3.020486,
+        -1.793463
+      ],
+      "raw_density_by_register": {
+        "D": {
+          "narrative": 26.3063,
+          "legal_medinan": 35.0163,
+          "eschatological_mufassal": 28.0018
+        },
+        "E": {
+          "narrative": 59.9421,
+          "legal_medinan": 41.1924,
+          "eschatological_mufassal": 60.04
+        },
+        "J": {
+          "narrative": 17.574,
+          "legal_medinan": 27.2907,
+          "eschatological_mufassal": 17.6001
+        },
+        "N_lam": {
+          "narrative": 4.2322,
+          "legal_medinan": 5.5298,
+          "eschatological_mufassal": 12.7254
+        },
+        "C_cond": {
+          "narrative": 6.7889,
+          "legal_medinan": 12.0203,
+          "eschatological_mufassal": 0.2123
+        }
+      },
+      "resid_density_by_register": {
+        "D": {
+          "narrative": 0.8643,
+          "legal_medinan": 0.0491,
+          "eschatological_mufassal": -0.6943
+        },
+        "E": {
+          "narrative": 2.3434,
+          "legal_medinan": 0.2155,
+          "eschatological_mufassal": -1.9239
+        },
+        "J_rawJUS": {
+          "narrative": 2.3932,
+          "legal_medinan": 2.6102,
+          "eschatological_mufassal": -3.1598
+        },
+        "N_lam": {
+          "narrative": -0.6474,
+          "legal_medinan": -0.5239,
+          "eschatological_mufassal": 0.7637
+        },
+        "C_cond": {
+          "narrative": 2.5245,
+          "legal_medinan": 2.6942,
+          "eschatological_mufassal": -3.3036
+        }
+      },
+      "F_D": 0.0274,
+      "F_E": 0.081,
+      "F_J_rawJUS": 0.4606,
+      "delta_F": -0.4332,
+      "argmax_D": "narrative",
+      "argmax_E": "narrative",
+      "argmax_J_rawJUS": "legal_medinan",
+      "loo6": 0.76923,
+      "loo8": 0.69231,
+      "delta_loo": -0.07692,
+      "confusion8": {
+        "narrative": {
+          "narrative": 25,
+          "legal_medinan": 3,
+          "eschatological_mufassal": 3
+        },
+        "legal_medinan": {
+          "narrative": 0,
+          "legal_medinan": 8,
+          "eschatological_mufassal": 12
+        },
+        "eschatological_mufassal": {
+          "narrative": 1,
+          "legal_medinan": 9,
+          "eschatological_mufassal": 30
+        }
+      },
+      "legal_recall_6": 8,
+      "legal_recall_8": 8,
+      "nulls": {
+        "A_primary": {
+          "p_I1_F_D": 0.979202,
+          "p_I2_F_E": 0.925307,
+          "p_I3_delta_loo": 0.90251,
+          "p_I4_delta_F": 0.681132
+        },
+        "A_replication": {
+          "p_I1_F_D": 0.976502,
+          "p_I2_F_E": 0.925507,
+          "p_I3_delta_loo": 0.90411,
+          "p_I4_delta_F": 0.670933
+        },
+        "B_primary": {
+          "p_I1_F_D": 0.952405,
+          "p_I2_F_E": 0.886911,
+          "p_I3_delta_loo": 0.90251,
+          "p_I4_delta_F": 0.730427
+        },
+        "B_replication": {
+          "p_I1_F_D": 0.950905,
+          "p_I2_F_E": 0.888111,
+          "p_I3_delta_loo": 0.90411,
+          "p_I4_delta_F": 0.730027
+        }
+      },
+      "verdicts": {
+        "I1_deontic": {
+          "p": 0.979202,
+          "direction_locked": "legal_medinan",
+          "direction_observed": "narrative",
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false
+        },
+        "I2_epistemic": {
+          "p": 0.925307,
+          "direction_locked": "eschatological_mufassal",
+          "direction_observed": "narrative",
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false
+        },
+        "I3_orthogonality": {
+          "p": 0.90251,
+          "direction_locked": "delta >= 0",
+          "delta_observed": -0.07692,
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false
+        },
+        "I4_confound": {
+          "p": 0.681132,
+          "direction_locked": "delta_F > 0",
+          "delta_F_observed": -0.4332,
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false,
+          "locked_descriptive_rawJUS_argmax_not_legal": false
+        }
+      }
+    },
+    "T3_sensitivity_B": {
+      "tuple": "T3_sensitivity_B",
+      "denominator": "verse",
+      "beta_D": [
+        23.769825,
+        -27.809463,
+        36.42003
+      ],
+      "beta_E": [
+        25.626964,
+        45.601431,
+        27.233061
+      ],
+      "raw_density_by_register": {
+        "D": {
+          "narrative": 276.9603,
+          "legal_medinan": 634.5199,
+          "eschatological_mufassal": 134.2064
+        },
+        "E": {
+          "narrative": 555.8781,
+          "legal_medinan": 655.8466,
+          "eschatological_mufassal": 275.0613
+        },
+        "J": {
+          "narrative": 171.186,
+          "legal_medinan": 518.4279,
+          "eschatological_mufassal": 82.5739
+        },
+        "N_lam": {
+          "narrative": 47.0027,
+          "legal_medinan": 107.8896,
+          "eschatological_mufassal": 56.4155
+        },
+        "C_cond": {
+          "narrative": 57.33,
+          "legal_medinan": 213.4154,
+          "eschatological_mufassal": 3.1014
+        }
+      },
+      "resid_density_by_register": {
+        "D": {
+          "narrative": -8.4782,
+          "legal_medinan": 29.5639,
+          "eschatological_mufassal": -8.2114
+        },
+        "E": {
+          "narrative": 51.7898,
+          "legal_medinan": -51.4713,
+          "eschatological_mufassal": -14.4015
+        },
+        "J_rawJUS": {
+          "narrative": -7.9435,
+          "legal_medinan": 54.4263,
+          "eschatological_mufassal": -21.057
+        },
+        "N_lam": {
+          "narrative": -2.4842,
+          "legal_medinan": -1.0326,
+          "eschatological_mufassal": 2.4415
+        },
+        "C_cond": {
+          "narrative": -4.329,
+          "legal_medinan": 46.1841,
+          "eschatological_mufassal": -19.737
+        }
+      },
+      "F_D": 0.3945,
+      "F_E": 1.4403,
+      "F_J_rawJUS": 1.1249,
+      "delta_F": -0.7304,
+      "argmax_D": "legal_medinan",
+      "argmax_E": "narrative",
+      "argmax_J_rawJUS": "legal_medinan",
+      "loo6": 0.76923,
+      "loo8": 0.7033,
+      "delta_loo": -0.06593,
+      "confusion8": {
+        "narrative": {
+          "narrative": 25,
+          "legal_medinan": 3,
+          "eschatological_mufassal": 3
+        },
+        "legal_medinan": {
+          "narrative": 0,
+          "legal_medinan": 9,
+          "eschatological_mufassal": 11
+        },
+        "eschatological_mufassal": {
+          "narrative": 2,
+          "legal_medinan": 8,
+          "eschatological_mufassal": 30
+        }
+      },
+      "legal_recall_6": 8,
+      "legal_recall_8": 9,
+      "nulls": {
+        "A_primary": {
+          "p_I1_F_D": 0.683032,
+          "p_I2_F_E": 0.240576,
+          "p_I3_delta_loo": 0.772623,
+          "p_I4_delta_F": 0.768023
+        },
+        "A_replication": {
+          "p_I1_F_D": 0.685131,
+          "p_I2_F_E": 0.236076,
+          "p_I3_delta_loo": 0.776622,
+          "p_I4_delta_F": 0.758224
+        },
+        "B_primary": {
+          "p_I1_F_D": 0.568643,
+          "p_I2_F_E": 0.181082,
+          "p_I3_delta_loo": 0.772623,
+          "p_I4_delta_F": 0.80092
+        },
+        "B_replication": {
+          "p_I1_F_D": 0.566243,
+          "p_I2_F_E": 0.181882,
+          "p_I3_delta_loo": 0.776622,
+          "p_I4_delta_F": 0.79862
+        }
+      },
+      "verdicts": {
+        "I1_deontic": {
+          "p": 0.683032,
+          "direction_locked": "legal_medinan",
+          "direction_observed": "legal_medinan",
+          "p_pass": false,
+          "direction_pass": true,
+          "PASS": false
+        },
+        "I2_epistemic": {
+          "p": 0.240576,
+          "direction_locked": "eschatological_mufassal",
+          "direction_observed": "narrative",
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false
+        },
+        "I3_orthogonality": {
+          "p": 0.772623,
+          "direction_locked": "delta >= 0",
+          "delta_observed": -0.06593,
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false
+        },
+        "I4_confound": {
+          "p": 0.768023,
+          "direction_locked": "delta_F > 0",
+          "delta_F_observed": -0.7304,
+          "p_pass": false,
+          "direction_pass": false,
+          "PASS": false,
+          "locked_descriptive_rawJUS_argmax_not_legal": false
+        }
+      }
+    }
+  },
+  "inference_verdicts": {
+    "I1_deontic": "REVERSED-PRECOMMIT-VIOLATION",
+    "I2_epistemic": "REVERSED-PRECOMMIT-VIOLATION",
+    "I3_orthogonality": "REVERSED-PRECOMMIT-VIOLATION",
+    "I4_confound": "REVERSED-PRECOMMIT-VIOLATION"
+  },
+  "verdict": "PARTIAL-WITH-PRECOMMIT-VIOLATION"
+}

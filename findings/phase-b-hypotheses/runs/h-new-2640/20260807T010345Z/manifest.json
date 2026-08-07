@@ -1,0 +1,22 @@
+{
+  "id": "H-NEW-2640",
+  "utc": "20260807T010345Z",
+  "script_sha256": "44197894f9af208a72900f7d152ad8ab5b1a9d056187498f31546803d080ee88",
+  "prereg_sha256": "0b300fdb19c351b1692dc06b7163480bdbed642702c02dbf1bf7e9272065de89",
+  "inputs_sha256": {
+    "data/morphology/quranic-corpus-morphology-0.4.txt": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "findings/phase-b-hypotheses/csv/h-new-2530.json": "5ca17050c20b15734ad9a734e7bad7b938b616c924ec53dfcd24814a1473b68c",
+    "findings/phase-b-hypotheses/csv/h-new-2500.json": "a63aef25086205891b44215897f9e09862e5cdd1e3ab2ee59ac4d15768309d25",
+    "quran-text/quran-no-tashkeel.json": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+  },
+  "python": "3.13.12",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  },
+  "n_perm": 10000,
+  "bonferroni_k": 4,
+  "alpha_bonferroni": 0.0125,
+  "verdict": "PARTIAL-WITH-PRECOMMIT-VIOLATION",
+  "immutability": "This run directory is immutable. Per prereg §8 it must never be deleted or overwritten, including if superseded or uncommitted."
+}
