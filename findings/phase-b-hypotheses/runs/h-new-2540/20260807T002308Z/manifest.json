@@ -1,0 +1,46 @@
+{
+  "command": "/opt/homebrew/opt/python@3.13/bin/python3.13 findings/phase-b-hypotheses/scripts/h-new-2540.py --eqtb /tmp/eqtb-quran/Quranic.csv",
+  "created_utc": "2026-08-07T00:23:10.142752+00:00",
+  "eqtb_path": "/private/tmp/eqtb-quran/Quranic.csv",
+  "expected_hashes_sha256": {
+    "chronology": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7",
+    "eqtb": "a303c24cf51b90f6cd5eb0fb25d6c591977a7797743d16e0dedc76a5af5ae0b7",
+    "prereg": "affe3762bd942a0612b86d7bb4ef60e27b76802ba49fd9510e9880881eb4ab5e",
+    "qac": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "quran_no_tashkeel": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+  },
+  "git_commit": "1f6d31f89ebf10f838c77f11fac14445275aec64",
+  "git_status_porcelain": "M .gitignore\n?? findings/phase-b-hypotheses/csv/h-new-2540.json\n?? findings/phase-b-hypotheses/h-new-2540-form-v-valency.md\n?? findings/phase-b-hypotheses/runs/\n?? findings/phase-b-hypotheses/scripts/h-new-2540.py",
+  "hashes_sha256": {
+    "chronology": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7",
+    "eqtb": "a303c24cf51b90f6cd5eb0fb25d6c591977a7797743d16e0dedc76a5af5ae0b7",
+    "prereg": "affe3762bd942a0612b86d7bb4ef60e27b76802ba49fd9510e9880881eb4ab5e",
+    "qac": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "quran_no_tashkeel": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "script": "c7b01d855837a47deea5c19bb256bb68c359bc868f9dc49a1f2f0d25bd2dc113"
+  },
+  "id": "H-NEW-2540",
+  "n_permutations": 10000,
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "run_directory": "findings/phase-b-hypotheses/runs/h-new-2540/20260807T002308Z",
+  "seed": 20260509,
+  "seeds": {
+    "h1_null_b": 20260510,
+    "h2_null_b": 20260511,
+    "null_a": 20260509
+  },
+  "validation_sample": {
+    "rows": 75,
+    "strata": {
+      "III|Obj+": 174,
+      "III|Obj-": 136,
+      "II|Obj+": 815,
+      "II|Obj-": 345,
+      "VI|Obj+": 5,
+      "VI|Obj-": 72,
+      "V|Obj+": 80,
+      "V|Obj-": 324
+    }
+  }
+}

@@ -1,0 +1,858 @@
+{
+  "annotation_limit": "Dependency-annotation-limited: EQTB Obj accuracy is the material limit. validation-sample.tsv review columns are blank until qualified reviewers report precision, recall and differential error by form (prereg §6.8).",
+  "corrected_novelty_gate": 0.005,
+  "h1_leave_one_root_out": {
+    "max": 0.5292969921778273,
+    "min": 0.4564897948661326,
+    "values": {
+      "*kr": 0.4988974706129947,
+      "A*n": 0.49284557941085116,
+      "Axr": 0.48408823062417317,
+      "Elm": 0.4982893088527921,
+      "Sdq": 0.4952874513579718,
+      "Thr": 0.4772653942970874,
+      "bdl": 0.4955178756460678,
+      "brA": 0.4858154896088399,
+      "bwA": 0.4909711857070615,
+      "byn": 0.4564897948661326,
+      "dbr": 0.49927232785287773,
+      "frq": 0.5022565069749505,
+      "kbr": 0.4862850158386613,
+      "klm": 0.4783024451831051,
+      "mny": 0.49821247815750136,
+      "mtE": 0.45958577517422333,
+      "nzl": 0.47816485537628645,
+      "qTE": 0.4880840884438439,
+      "qdm": 0.4993592021079961,
+      "wfy": 0.5292969921778273,
+      "wly": 0.5118818786798656,
+      "ysr": 0.4844213749237646,
+      "zkw": 0.46899239652565544
+    }
+  },
+  "h1_period_directions_min1": {
+    "Meccan": {
+      "eligible_roots": 26,
+      "weighted_rate_difference": 0.4257650513675423
+    },
+    "Medinan": {
+      "eligible_roots": 25,
+      "weighted_rate_difference": 0.4593476584130305
+    }
+  },
+  "h1_primary_II_to_V": {
+    "direction_positive": true,
+    "eligible_roots": 23,
+    "forms": [
+      "II",
+      "V"
+    ],
+    "mantel_haenszel_or": 21.077653154461757,
+    "min_tokens_per_form_per_root": 2,
+    "p_root_swap_bonferroni": 0.00039996000399960006,
+    "p_root_swap_one_sided": 9.999000099990002e-05,
+    "p_token_label_bonferroni": 0.00039996000399960006,
+    "p_token_label_one_sided": 9.999000099990002e-05,
+    "passes_strict_gate": true,
+    "raw_gate": 0.00125,
+    "root_cells": {
+      "*kr": {
+        "II": [
+          8,
+          3
+        ],
+        "V": [
+          51,
+          1
+        ]
+      },
+      "A*n": {
+        "II": [
+          3,
+          1
+        ],
+        "V": [
+          2,
+          0
+        ]
+      },
+      "Axr": {
+        "II": [
+          14,
+          12
+        ],
+        "V": [
+          3,
+          0
+        ]
+      },
+      "Elm": {
+        "II": [
+          38,
+          33
+        ],
+        "V": [
+          2,
+          2
+        ]
+      },
+      "Sdq": {
+        "II": [
+          10,
+          4
+        ],
+        "V": [
+          6,
+          0
+        ]
+      },
+      "Thr": {
+        "II": [
+          9,
+          9
+        ],
+        "V": [
+          5,
+          0
+        ]
+      },
+      "bdl": {
+        "II": [
+          21,
+          19
+        ],
+        "V": [
+          3,
+          2
+        ]
+      },
+      "brA": {
+        "II": [
+          2,
+          2
+        ],
+        "V": [
+          5,
+          0
+        ]
+      },
+      "bwA": {
+        "II": [
+          6,
+          6
+        ],
+        "V": [
+          4,
+          2
+        ]
+      },
+      "byn": {
+        "II": [
+          35,
+          29
+        ],
+        "V": [
+          18,
+          1
+        ]
+      },
+      "dbr": {
+        "II": [
+          4,
+          4
+        ],
+        "V": [
+          4,
+          4
+        ]
+      },
+      "frq": {
+        "II": [
+          9,
+          2
+        ],
+        "V": [
+          8,
+          0
+        ]
+      },
+      "kbr": {
+        "II": [
+          4,
+          4
+        ],
+        "V": [
+          2,
+          0
+        ]
+      },
+      "klm": {
+        "II": [
+          19,
+          18
+        ],
+        "V": [
+          4,
+          0
+        ]
+      },
+      "mny": {
+        "II": [
+          2,
+          2
+        ],
+        "V": [
+          6,
+          6
+        ]
+      },
+      "mtE": {
+        "II": [
+          16,
+          16
+        ],
+        "V": [
+          11,
+          0
+        ]
+      },
+      "nzl": {
+        "II": [
+          49,
+          36
+        ],
+        "V": [
+          7,
+          0
+        ]
+      },
+      "qTE": {
+        "II": [
+          9,
+          9
+        ],
+        "V": [
+          5,
+          2
+        ]
+      },
+      "qdm": {
+        "II": [
+          27,
+          3
+        ],
+        "V": [
+          2,
+          0
+        ]
+      },
+      "wfy": {
+        "II": [
+          9,
+          8
+        ],
+        "V": [
+          20,
+          20
+        ]
+      },
+      "wly": {
+        "II": [
+          30,
+          17
+        ],
+        "V": [
+          78,
+          12
+        ]
+      },
+      "ysr": {
+        "II": [
+          11,
+          11
+        ],
+        "V": [
+          2,
+          0
+        ]
+      },
+      "zkw": {
+        "II": [
+          12,
+          12
+        ],
+        "V": [
+          8,
+          0
+        ]
+      }
+    },
+    "root_null_kind": "monte-carlo",
+    "root_null_size": 10000,
+    "seed_null_a": 20260509,
+    "seed_null_b": 20260510,
+    "token_null_kind": "within-root-token-label",
+    "token_null_size": 10000,
+    "unsmoothed_macro_difference": 0.5322828497707832,
+    "weighted_rate_difference": 0.4895065346354748
+  },
+  "h2_secondary_III_to_VI": {
+    "direction_positive": true,
+    "eligible_roots": 12,
+    "forms": [
+      "III",
+      "VI"
+    ],
+    "mantel_haenszel_or": 22.530357142857145,
+    "min_tokens_per_form_per_root": 1,
+    "p_root_swap_bonferroni": 0.001953125,
+    "p_root_swap_one_sided": 0.00048828125,
+    "p_token_label_bonferroni": 0.00039996000399960006,
+    "p_token_label_one_sided": 9.999000099990002e-05,
+    "passes_strict_gate": true,
+    "raw_gate": 0.00125,
+    "root_cells": {
+      "Hjj": {
+        "III": [
+          11,
+          7
+        ],
+        "VI": [
+          1,
+          0
+        ]
+      },
+      "Zhr": {
+        "III": [
+          6,
+          3
+        ],
+        "VI": [
+          2,
+          0
+        ]
+      },
+      "brk": {
+        "III": [
+          7,
+          1
+        ],
+        "VI": [
+          9,
+          0
+        ]
+      },
+      "byE": {
+        "III": [
+          6,
+          5
+        ],
+        "VI": [
+          1,
+          0
+        ]
+      },
+      "jwz": {
+        "III": [
+          4,
+          3
+        ],
+        "VI": [
+          1,
+          0
+        ]
+      },
+      "njw": {
+        "III": [
+          1,
+          1
+        ],
+        "VI": [
+          4,
+          0
+        ]
+      },
+      "nzE": {
+        "III": [
+          1,
+          1
+        ],
+        "VI": [
+          7,
+          3
+        ]
+      },
+      "qsm": {
+        "III": [
+          1,
+          1
+        ],
+        "VI": [
+          1,
+          0
+        ]
+      },
+      "rAy": {
+        "III": [
+          2,
+          1
+        ],
+        "VI": [
+          2,
+          0
+        ]
+      },
+      "wEd": {
+        "III": [
+          4,
+          4
+        ],
+        "VI": [
+          1,
+          0
+        ]
+      },
+      "wry": {
+        "III": [
+          3,
+          3
+        ],
+        "VI": [
+          2,
+          0
+        ]
+      },
+      "xft": {
+        "III": [
+          1,
+          0
+        ],
+        "VI": [
+          2,
+          1
+        ]
+      }
+    },
+    "root_null_kind": "exact",
+    "root_null_size": 4096,
+    "seed_null_a": 20260509,
+    "seed_null_b": 20260511,
+    "token_null_kind": "within-root-token-label",
+    "token_null_size": 10000,
+    "unsmoothed_macro_difference": 0.619498556998557,
+    "weighted_rate_difference": 0.3453730104167306
+  },
+  "id": "H-NEW-2540",
+  "join": {
+    "eqtb_duplicate_locations": 0,
+    "eqtb_verbs": 19356,
+    "joined_active_verbs": 18216,
+    "joined_verbs": 19356,
+    "lineage_gate": "100% required; run aborts otherwise (prereg §6.7)",
+    "qac_duplicate_locations": 0,
+    "qac_eqtb_agreement": {
+      "form_agree": 19356,
+      "form_compared": 19356,
+      "form_rate": 1.0,
+      "root_agree": 19356,
+      "root_compared": 19356,
+      "root_rate": 1.0
+    },
+    "qac_verbs": 19356,
+    "unmatched_eqtb_verbs": 0,
+    "unmatched_qac_verbs": 0
+  },
+  "passive_orthogonality_control": {
+    "eligible_roots": 25,
+    "inference": "descriptive orthogonality control; no additional null run",
+    "weighted_passive_rate_difference_II_minus_V": 0.1208446705367383
+  },
+  "raw_p_gate": 0.00125,
+  "registered_alpha_bonferroni": 0.0125,
+  "sensitivity_II_to_V_min1": {
+    "eligible_roots": 37,
+    "forms": [
+      "II",
+      "V"
+    ],
+    "inference": "descriptive-only; no additional null run",
+    "mantel_haenszel_or": 21.304246518851965,
+    "min_tokens_per_form_per_root": 1,
+    "root_cells": {
+      "*kr": {
+        "II": [
+          8,
+          3
+        ],
+        "V": [
+          51,
+          1
+        ]
+      },
+      "A*n": {
+        "II": [
+          3,
+          1
+        ],
+        "V": [
+          2,
+          0
+        ]
+      },
+      "Axr": {
+        "II": [
+          14,
+          12
+        ],
+        "V": [
+          3,
+          0
+        ]
+      },
+      "Ejl": {
+        "II": [
+          5,
+          5
+        ],
+        "V": [
+          1,
+          0
+        ]
+      },
+      "Elm": {
+        "II": [
+          38,
+          33
+        ],
+        "V": [
+          2,
+          2
+        ]
+      },
+      "Sdq": {
+        "II": [
+          10,
+          4
+        ],
+        "V": [
+          6,
+          0
+        ]
+      },
+      "Thr": {
+        "II": [
+          9,
+          9
+        ],
+        "V": [
+          5,
+          0
+        ]
+      },
+      "TwE": {
+        "II": [
+          1,
+          1
+        ],
+        "V": [
+          2,
+          2
+        ]
+      },
+      "bdl": {
+        "II": [
+          21,
+          19
+        ],
+        "V": [
+          3,
+          2
+        ]
+      },
+      "brA": {
+        "II": [
+          2,
+          2
+        ],
+        "V": [
+          5,
+          0
+        ]
+      },
+      "bwA": {
+        "II": [
+          6,
+          6
+        ],
+        "V": [
+          4,
+          2
+        ]
+      },
+      "byn": {
+        "II": [
+          35,
+          29
+        ],
+        "V": [
+          18,
+          1
+        ]
+      },
+      "dbr": {
+        "II": [
+          4,
+          4
+        ],
+        "V": [
+          4,
+          4
+        ]
+      },
+      "fDl": {
+        "II": [
+          16,
+          16
+        ],
+        "V": [
+          1,
+          0
+        ]
+      },
+      "fjr": {
+        "II": [
+          5,
+          4
+        ],
+        "V": [
+          1,
+          0
+        ]
+      },
+      "fkr": {
+        "II": [
+          1,
+          0
+        ],
+        "V": [
+          17,
+          1
+        ]
+      },
+      "frq": {
+        "II": [
+          9,
+          2
+        ],
+        "V": [
+          8,
+          0
+        ]
+      },
+      "g$w": {
+        "II": [
+          3,
+          2
+        ],
+        "V": [
+          1,
+          1
+        ]
+      },
+      "gyr": {
+        "II": [
+          4,
+          4
+        ],
+        "V": [
+          1,
+          0
+        ]
+      },
+      "kbr": {
+        "II": [
+          4,
+          4
+        ],
+        "V": [
+          2,
+          0
+        ]
+      },
+      "klm": {
+        "II": [
+          19,
+          18
+        ],
+        "V": [
+          4,
+          0
+        ]
+      },
+      "lqy": {
+        "II": [
+          1,
+          1
+        ],
+        "V": [
+          4,
+          3
+        ]
+      },
+      "mny": {
+        "II": [
+          2,
+          2
+        ],
+        "V": [
+          6,
+          6
+        ]
+      },
+      "mtE": {
+        "II": [
+          16,
+          16
+        ],
+        "V": [
+          11,
+          0
+        ]
+      },
+      "nzl": {
+        "II": [
+          49,
+          36
+        ],
+        "V": [
+          7,
+          0
+        ]
+      },
+      "qTE": {
+        "II": [
+          9,
+          9
+        ],
+        "V": [
+          5,
+          2
+        ]
+      },
+      "qdm": {
+        "II": [
+          27,
+          3
+        ],
+        "V": [
+          2,
+          0
+        ]
+      },
+      "qlb": {
+        "II": [
+          5,
+          4
+        ],
+        "V": [
+          1,
+          0
+        ]
+      },
+      "wfy": {
+        "II": [
+          9,
+          8
+        ],
+        "V": [
+          20,
+          20
+        ]
+      },
+      "wjh": {
+        "II": [
+          2,
+          2
+        ],
+        "V": [
+          1,
+          0
+        ]
+      },
+      "wkl": {
+        "II": [
+          1,
+          1
+        ],
+        "V": [
+          40,
+          0
+        ]
+      },
+      "wly": {
+        "II": [
+          30,
+          17
+        ],
+        "V": [
+          78,
+          12
+        ]
+      },
+      "xlw": {
+        "II": [
+          1,
+          1
+        ],
+        "V": [
+          1,
+          0
+        ]
+      },
+      "ysr": {
+        "II": [
+          11,
+          11
+        ],
+        "V": [
+          2,
+          0
+        ]
+      },
+      "zkw": {
+        "II": [
+          12,
+          12
+        ],
+        "V": [
+          8,
+          0
+        ]
+      },
+      "zyl": {
+        "II": [
+          1,
+          0
+        ],
+        "V": [
+          1,
+          0
+        ]
+      },
+      "zyn": {
+        "II": [
+          16,
+          15
+        ],
+        "V": [
+          1,
+          0
+        ]
+      }
+    },
+    "unsmoothed_macro_difference": 0.5577796941076464,
+    "weighted_rate_difference": 0.48278719216789917
+  },
+  "tests_in_family": 4,
+  "verdict": "DUAL-FAMILY SUPPORT; DEPENDENCY-ANNOTATION-LIMITED"
+}
