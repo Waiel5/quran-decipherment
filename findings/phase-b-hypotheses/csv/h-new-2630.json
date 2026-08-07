@@ -1,0 +1,247 @@
+{
+  "id": "H-NEW-2630",
+  "prereg_sha256": "40f899a4bdb807d3ac39c679c532b51ab90fe7f020f4c01b4bd0dcd1281a2a5a",
+  "frozen_inputs": {
+    "data/morphology/quranic-corpus-morphology-0.4.txt": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "findings/phase-b-hypotheses/csv/h-new-2500.json": "a63aef25086205891b44215897f9e09862e5cdd1e3ab2ee59ac4d15768309d25",
+    "findings/phase-b-hypotheses/csv/h-new-2530.json": "5ca17050c20b15734ad9a734e7bad7b938b616c924ec53dfcd24814a1473b68c",
+    "data/hafs-verse-counts.tsv": "e1818fb04ac26b863ce1ade50193390d481345a3971919aeb120daf8946212ba"
+  },
+  "seed_primary": 20260509,
+  "seed_replication": 20260519,
+  "n_perm": 10000,
+  "bonferroni_k": 5,
+  "alpha_bonferroni": 0.01,
+  "lemma_marginals": {
+    "law": 185,
+    "<in": 578,
+    "{l~a*iY": 22,
+    "<im~aA": 1,
+    "man": 184,
+    "lawolaA^": 35,
+    "maA": 23,
+    ">ayon": 3,
+    "Hayov2": 2,
+    "<iyn": 1,
+    "mahomaA": 1,
+    "<i*aA": 1,
+    "<il~am": 1,
+    ">am~aA": 11,
+    ">aY~": 1
+  },
+  "n_three_register": 91,
+  "cells": {
+    "A_perVerse": {
+      "denominator": "V",
+      "realis_set": [
+        "<in"
+      ],
+      "n_defined_C": 53,
+      "mean_dR_by_register": {
+        "narrative": 0.0538785479056603,
+        "legal_medinan": 0.19908277384986126,
+        "eschatological_mufassal": 0.01314153627311522
+      },
+      "mean_dI_by_register": {
+        "narrative": 0.025231232299777,
+        "legal_medinan": 0.052760451243463666,
+        "eschatological_mufassal": 0.006731895356895357
+      },
+      "H1_realis_legal_vs_rest": {
+        "obs_diff": 0.16815465503295873,
+        "p": 9.999000099990002e-05,
+        "pass": true
+      },
+      "H2_irrealis_legal_vs_rest": {
+        "obs_diff": 0.037951380601648155,
+        "p": 1.0,
+        "pass": false
+      },
+      "H3_balance_KW": {
+        "H": 4.752957860062066,
+        "p": 0.0922907709229077,
+        "means": {
+          "narrative": 0.33107834194790714,
+          "legal_medinan": 0.5819007162737977,
+          "eschatological_mufassal": 0.38763197586727
+        },
+        "legal_highest": true,
+        "pass": false
+      },
+      "H4_length_residualised_KW": {
+        "H": 1.5232122059166215,
+        "p": 0.4771522847715228,
+        "means": {
+          "narrative": -0.05589529082278335,
+          "legal_medinan": 0.021128620402410748,
+          "eschatological_mufassal": 0.10210161907761305
+        },
+        "legal_highest": false,
+        "pass": false
+      }
+    },
+    "B_perToken": {
+      "denominator": "T",
+      "realis_set": [
+        "<in"
+      ],
+      "n_defined_C": 53,
+      "mean_dR_by_register": {
+        "narrative": 0.0026406427879014475,
+        "legal_medinan": 0.006450445147047195,
+        "eschatological_mufassal": 0.001292449388849448
+      },
+      "mean_dI_by_register": {
+        "narrative": 0.0013748210989015927,
+        "legal_medinan": 0.001778015740287378,
+        "eschatological_mufassal": 0.0007296581149658856
+      },
+      "H1_realis_legal_vs_rest": {
+        "obs_diff": 0.00456934793607645,
+        "p": 9.999000099990002e-05,
+        "pass": true
+      },
+      "H2_irrealis_legal_vs_rest": {
+        "obs_diff": 0.000766666745011536,
+        "p": 0.8295170482951705,
+        "pass": false
+      },
+      "H3_balance_KW": {
+        "H": 4.752957860062066,
+        "p": 0.0922907709229077,
+        "means": {
+          "narrative": 0.33107834194790714,
+          "legal_medinan": 0.5819007162737977,
+          "eschatological_mufassal": 0.38763197586727
+        },
+        "legal_highest": true,
+        "pass": false
+      },
+      "H4_length_residualised_KW": {
+        "H": 1.5232122059166215,
+        "p": 0.4771522847715228,
+        "means": {
+          "narrative": -0.05589529082278335,
+          "legal_medinan": 0.021128620402410748,
+          "eschatological_mufassal": 0.10210161907761305
+        },
+        "legal_highest": false,
+        "pass": false
+      }
+    },
+    "C_wideRealis": {
+      "denominator": "V",
+      "realis_set": [
+        "<il~am",
+        "<im~aA",
+        "<in",
+        "<iyn"
+      ],
+      "n_defined_C": 53,
+      "mean_dR_by_register": {
+        "narrative": 0.05414080859278331,
+        "legal_medinan": 0.19950759902468646,
+        "eschatological_mufassal": 0.01314153627311522
+      },
+      "mean_dI_by_register": {
+        "narrative": 0.025231232299777,
+        "legal_medinan": 0.052760451243463666,
+        "eschatological_mufassal": 0.006731895356895357
+      },
+      "H1_realis_legal_vs_rest": {
+        "obs_diff": 0.16846497202044855,
+        "p": 9.999000099990002e-05,
+        "pass": true
+      },
+      "H2_irrealis_legal_vs_rest": {
+        "obs_diff": 0.037951380601648155,
+        "p": 1.0,
+        "pass": false
+      },
+      "H3_balance_KW": {
+        "H": 4.752957860062066,
+        "p": 0.09259074092590741,
+        "means": {
+          "narrative": 0.33168220668220666,
+          "legal_medinan": 0.5825930356193514,
+          "eschatological_mufassal": 0.38763197586727
+        },
+        "legal_highest": true,
+        "pass": false
+      },
+      "H4_length_residualised_KW": {
+        "H": 1.5232122059166215,
+        "p": 0.47555244475552444,
+        "means": {
+          "narrative": -0.05607566313758442,
+          "legal_medinan": 0.021305643957302212,
+          "eschatological_mufassal": 0.10218922623954674
+        },
+        "legal_highest": false,
+        "pass": false
+      }
+    }
+  },
+  "MW6_generalising_control": {
+    "note": "man/maA generalising conditionals; if these separate as strongly, the axis is not MOOD",
+    "KW_H": 3.2101482399478596,
+    "KW_p": 0.20227977202279773,
+    "density_legal_vs_rest_diff": 0.06213683228089719,
+    "density_p": 0.00019998000199980003
+  },
+  "MW5_replication_seed20260519": {
+    "H3_H": 4.752957860062066,
+    "H3_p": 0.09469053094690531,
+    "H4_H": 1.5232122059166215,
+    "H4_p": 0.47635236476352366
+  },
+  "H5_classifier": {
+    "six_feature_baseline": {
+      "loo_acc": 0.7692307692307693,
+      "legal_recall_of_20": 8,
+      "confusion": {
+        "narrative": {
+          "narrative": 25,
+          "legal_medinan": 3,
+          "eschatological_mufassal": 3
+        },
+        "legal_medinan": {
+          "narrative": 0,
+          "legal_medinan": 8,
+          "eschatological_mufassal": 12
+        },
+        "eschatological_mufassal": {
+          "narrative": 1,
+          "legal_medinan": 2,
+          "eschatological_mufassal": 37
+        }
+      }
+    },
+    "seven_with_conditional": {
+      "loo_acc": 0.7912087912087912,
+      "legal_recall_of_20": 16,
+      "confusion": {
+        "narrative": {
+          "narrative": 24,
+          "legal_medinan": 2,
+          "eschatological_mufassal": 5
+        },
+        "legal_medinan": {
+          "narrative": 0,
+          "legal_medinan": 16,
+          "eschatological_mufassal": 4
+        },
+        "eschatological_mufassal": {
+          "narrative": 1,
+          "legal_medinan": 7,
+          "eschatological_mufassal": 32
+        }
+      }
+    },
+    "baseline_legal_recall": 8,
+    "new_legal_recall": 16,
+    "gain": 8,
+    "p_feature_shuffle": 0.0005999400059994001,
+    "pass": true
+  }
+}

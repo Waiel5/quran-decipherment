@@ -1,0 +1,21 @@
+{
+  "id": "H-NEW-2630",
+  "utc": "20260807T005410Z",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2630-conditional-register.md",
+  "prereg_sha256": "40f899a4bdb807d3ac39c679c532b51ab90fe7f020f4c01b4bd0dcd1281a2a5a",
+  "script_relpath": "findings/phase-b-hypotheses/scripts/h-new-2630.py",
+  "frozen_inputs": {
+    "data/morphology/quranic-corpus-morphology-0.4.txt": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "findings/phase-b-hypotheses/csv/h-new-2500.json": "a63aef25086205891b44215897f9e09862e5cdd1e3ab2ee59ac4d15768309d25",
+    "findings/phase-b-hypotheses/csv/h-new-2530.json": "5ca17050c20b15734ad9a734e7bad7b938b616c924ec53dfcd24814a1473b68c",
+    "data/hafs-verse-counts.tsv": "e1818fb04ac26b863ce1ade50193390d481345a3971919aeb120daf8946212ba"
+  },
+  "seed_primary": 20260509,
+  "seed_replication": 20260519,
+  "n_perm": 10000,
+  "bonferroni_k": 5,
+  "alpha_bonferroni": 0.01,
+  "python": "3.13.12",
+  "numpy": "2.3.1",
+  "scipy": "1.17.1"
+}

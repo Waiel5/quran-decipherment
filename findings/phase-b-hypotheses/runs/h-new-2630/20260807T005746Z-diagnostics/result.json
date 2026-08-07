@@ -1,0 +1,94 @@
+{
+  "id": "H-NEW-2630-DIAGNOSTICS",
+  "status": "EXPLORATORY (MW-7 capped, alpha=0.05)",
+  "prereg_sha256": "40f899a4bdb807d3ac39c679c532b51ab90fe7f020f4c01b4bd0dcd1281a2a5a",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "baseline": {
+    "loo_acc": 0.7692307692307693,
+    "legal_recall": 8
+  },
+  "variants": {
+    "0_baseline_six": {
+      "loo_acc": 0.7692307692307693,
+      "legal_recall": 8,
+      "gain": 0
+    },
+    "1_mood_balance_C": {
+      "loo_acc": 0.7912087912087912,
+      "legal_recall": 16,
+      "gain": 8,
+      "p_shuffle": 0.0005999400059994001
+    },
+    "2_has_any_conditional": {
+      "loo_acc": 0.8571428571428571,
+      "legal_recall": 20,
+      "gain": 12,
+      "p_shuffle": 9.999000099990002e-05
+    },
+    "3_total_cond_density": {
+      "loo_acc": 0.8571428571428571,
+      "legal_recall": 17,
+      "gain": 9,
+      "p_shuffle": 0.00029997000299970003
+    },
+    "4_realis_density_only": {
+      "loo_acc": 0.8681318681318682,
+      "legal_recall": 17,
+      "gain": 9,
+      "p_shuffle": 9.999000099990002e-05
+    },
+    "5_irrealis_density_only": {
+      "loo_acc": 0.8131868131868132,
+      "legal_recall": 14,
+      "gain": 6,
+      "p_shuffle": 0.0117988201179882
+    },
+    "6_generalising_density": {
+      "loo_acc": 0.7912087912087912,
+      "legal_recall": 12,
+      "gain": 4,
+      "p_shuffle": 0.024397560243975602
+    },
+    "7_all_cond_density": {
+      "loo_acc": 0.8901098901098901,
+      "legal_recall": 17,
+      "gain": 9,
+      "p_shuffle": 9.999000099990002e-05
+    },
+    "8_log_verse_count": {
+      "loo_acc": 0.7912087912087912,
+      "legal_recall": 12,
+      "gain": 4,
+      "p_shuffle": 0.1131886811318868
+    }
+  },
+  "spearman_C_vs_versecount": {
+    "rho": 0.35442004682547684,
+    "p": 0.000567232393483145
+  },
+  "spearman_hasCond_vs_versecount": {
+    "rho": 0.6262220395870023,
+    "p": 3.16954069497437e-11
+  },
+  "n_undefined_C": 38,
+  "undefined_by_register": {
+    "narrative": 7,
+    "legal_medinan": 0,
+    "eschatological_mufassal": 31
+  },
+  "length_residualised_dR_means": {
+    "narrative": -0.025906597543928437,
+    "legal_medinan": 0.04343155122475259,
+    "eschatological_mufassal": -0.001638162515831651
+  },
+  "length_residualised_dI_means": {
+    "narrative": -0.00467457102974081,
+    "legal_medinan": 0.008536346699737341,
+    "eschatological_mufassal": -0.0006453808018195894
+  },
+  "H1_length_residualised": {
+    "diff": 0.05566579100637298,
+    "p": 9.999000099990002e-05
+  }
+}
