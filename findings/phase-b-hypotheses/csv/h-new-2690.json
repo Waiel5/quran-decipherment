@@ -1,0 +1,703 @@
+{
+  "id": "H-NEW-2690",
+  "title": "Real quantitative scansion — the Qurʾān's syllable-weight profile vs the 16 buḥūr",
+  "prereg_sha256": "00ecfe67c21633491d80f7aff7f2dce39c1bd7c754ea5fbdc67a07304babe679",
+  "seed": 20260509,
+  "seed_replication": 20260519,
+  "n_perm": 10000,
+  "bonferroni_k": 3,
+  "alpha_bonferroni": 0.016666666666666666,
+  "alpha_meter_inner": 0.003125,
+  "differs_from_h_new_48": "H-NEW-48 compares verse LETTER-COUNT distributions to Gaussians at 1.6*syllables_per_bayt and never extracts a CV template. This performs actual scansion and measures length-invariant metricality d_min.",
+  "positive_control": {
+    "P_forceheavy": {
+      "per_bayt_acc": 0.7708,
+      "n_bayts": 240,
+      "per_poem_correct": 3,
+      "per_poet": {
+        "muallaqa-imru-al-qais": {
+          "known": "tawil",
+          "n": 75,
+          "top": "tawil",
+          "acc": 0.68
+        },
+        "muallaqa-zuhayr": {
+          "known": "tawil",
+          "n": 62,
+          "top": "tawil",
+          "acc": 0.9677
+        },
+        "muallaqa-amr-bin-kulthum": {
+          "known": "wafir",
+          "n": 103,
+          "top": "wafir",
+          "acc": 0.7184
+        }
+      }
+    },
+    "P_pausal": {
+      "per_bayt_acc": 0.6875,
+      "n_bayts": 240,
+      "per_poem_correct": 3,
+      "per_poet": {
+        "muallaqa-imru-al-qais": {
+          "known": "tawil",
+          "n": 75,
+          "top": "tawil",
+          "acc": 0.4933
+        },
+        "muallaqa-zuhayr": {
+          "known": "tawil",
+          "n": 62,
+          "top": "tawil",
+          "acc": 0.871
+        },
+        "muallaqa-amr-bin-kulthum": {
+          "known": "wafir",
+          "n": 103,
+          "top": "wafir",
+          "acc": 0.7184
+        }
+      }
+    },
+    "P_none": {
+      "per_bayt_acc": 0.775,
+      "n_bayts": 240,
+      "per_poem_correct": 3,
+      "per_poet": {
+        "muallaqa-imru-al-qais": {
+          "known": "tawil",
+          "n": 75,
+          "top": "tawil",
+          "acc": 0.6933
+        },
+        "muallaqa-zuhayr": {
+          "known": "tawil",
+          "n": 62,
+          "top": "tawil",
+          "acc": 0.9677
+        },
+        "muallaqa-amr-bin-kulthum": {
+          "known": "wafir",
+          "n": 103,
+          "top": "wafir",
+          "acc": 0.7184
+        }
+      }
+    }
+  },
+  "control_gate_passed": true,
+  "prereg_s4_benchmark_conformance": {
+    "expected": {
+      "per_bayt_acc": 0.7708,
+      "per_poem_correct": 3,
+      "n_bayts": 240
+    },
+    "matched": true
+  },
+  "vocalisation_survey": {
+    "quran_full_tashkeel": 0.918,
+    "muallaqa_zuhayr": 0.839,
+    "muallaqa_imru_al_qais": 0.777,
+    "muallaqa_amr_bin_kulthum": 0.722,
+    "muallaqa_harith": 0.205,
+    "muallaqa_labid": 0.164,
+    "muallaqa_antara": 0.068,
+    "muallaqa_tarafa": 0.031,
+    "diwans_all": 0.0,
+    "bukhari_baseline_txt": 0.006,
+    "jahiz": 0.0,
+    "darimi_hadith": 0.866
+  },
+  "meters": {
+    "tawil": "v--v---v--v-v-",
+    "madid": "-v---v--v--",
+    "basit": "--v--v---v--v-",
+    "wafir": "v-vv-v-vv-v--",
+    "kamil": "vv-v-vv-v-vv-v-",
+    "hazaj": "v---v---",
+    "rajaz": "--v---v---v-",
+    "ramal": "-v---v---v--",
+    "sari": "--v---v--v-",
+    "munsarih": "--v----v--v-",
+    "khafif": "-v----v--v--",
+    "mudari": "v----v--",
+    "muqtadab": "---v--v-",
+    "mujtathth": "--v--v--",
+    "mutaqarib": "v--v--v--v--",
+    "mutadarik": "-v--v--v--v-"
+  },
+  "tuples": {
+    "P_forceheavy": {
+      "n": {
+        "quran": 6211,
+        "poetry": 240,
+        "prose_sampled": 2500,
+        "prose_full": 5174,
+        "prose_matn": 2500,
+        "mufassal_A": 561,
+        "long_medinan_B": 909
+      },
+      "median_d_min": {
+        "quran": 0.22222,
+        "poetry": 0.14286,
+        "prose": 0.23963,
+        "prose_full": 0.23963,
+        "prose_matn": 0.23077,
+        "noise_quran": 0.23944,
+        "noise_poetry": 0.22222
+      },
+      "mean_d_min": {
+        "quran": 0.20983,
+        "poetry": 0.13868,
+        "prose": 0.23319
+      },
+      "H1a_quran_gt_poetry": {
+        "diff": 0.07937,
+        "p": 0.0001,
+        "p_repl": 0.0001,
+        "direction_ok": true,
+        "PASS": true
+      },
+      "H1b_prose_gt_quran": {
+        "diff": 0.0174,
+        "p": 0.0001,
+        "p_repl": 0.0001,
+        "direction_ok": true,
+        "PASS": true
+      },
+      "H2_per_meter": {
+        "tawil": {
+          "median_obs": 0.2619,
+          "median_noise": 0.28125,
+          "noise_minus_obs": 0.01935,
+          "p": 0.0005,
+          "matches": true
+        },
+        "madid": {
+          "median_obs": 0.3,
+          "median_noise": 0.31658,
+          "noise_minus_obs": 0.01658,
+          "p": 0.0005,
+          "matches": true
+        },
+        "basit": {
+          "median_obs": 0.30049,
+          "median_noise": 0.31579,
+          "noise_minus_obs": 0.0153,
+          "p": 0.0005,
+          "matches": true
+        },
+        "wafir": {
+          "median_obs": 0.25,
+          "median_noise": 0.27273,
+          "noise_minus_obs": 0.02273,
+          "p": 0.0005,
+          "matches": true
+        },
+        "kamil": {
+          "median_obs": 0.27273,
+          "median_noise": 0.3,
+          "noise_minus_obs": 0.02727,
+          "p": 0.0005,
+          "matches": true
+        },
+        "hazaj": {
+          "median_obs": 0.33333,
+          "median_noise": 0.34066,
+          "noise_minus_obs": 0.00733,
+          "p": 0.0005,
+          "matches": true
+        },
+        "rajaz": {
+          "median_obs": 0.33333,
+          "median_noise": 0.34066,
+          "noise_minus_obs": 0.00733,
+          "p": 0.0005,
+          "matches": true
+        },
+        "ramal": {
+          "median_obs": 0.33333,
+          "median_noise": 0.34066,
+          "noise_minus_obs": 0.00733,
+          "p": 0.0005,
+          "matches": true
+        },
+        "sari": {
+          "median_obs": 0.3,
+          "median_noise": 0.31658,
+          "noise_minus_obs": 0.01658,
+          "p": 0.0005,
+          "matches": true
+        },
+        "munsarih": {
+          "median_obs": 0.30769,
+          "median_noise": 0.31579,
+          "noise_minus_obs": 0.0081,
+          "p": 0.008496,
+          "matches": false
+        },
+        "khafif": {
+          "median_obs": 0.30769,
+          "median_noise": 0.31579,
+          "noise_minus_obs": 0.0081,
+          "p": 0.008496,
+          "matches": false
+        },
+        "mudari": {
+          "median_obs": 0.31579,
+          "median_noise": 0.325,
+          "noise_minus_obs": 0.00921,
+          "p": 0.001,
+          "matches": true
+        },
+        "muqtadab": {
+          "median_obs": 0.31579,
+          "median_noise": 0.325,
+          "noise_minus_obs": 0.00921,
+          "p": 0.001,
+          "matches": true
+        },
+        "mujtathth": {
+          "median_obs": 0.31579,
+          "median_noise": 0.325,
+          "noise_minus_obs": 0.00921,
+          "p": 0.001,
+          "matches": true
+        },
+        "mutaqarib": {
+          "median_obs": 0.30769,
+          "median_noise": 0.32911,
+          "noise_minus_obs": 0.02142,
+          "p": 0.0005,
+          "matches": true
+        },
+        "mutadarik": {
+          "median_obs": 0.30769,
+          "median_noise": 0.32911,
+          "noise_minus_obs": 0.02142,
+          "p": 0.0005,
+          "matches": true
+        }
+      },
+      "H2_matched_meters": [
+        "tawil",
+        "madid",
+        "basit",
+        "wafir",
+        "kamil",
+        "hazaj",
+        "rajaz",
+        "ramal",
+        "sari",
+        "mudari",
+        "muqtadab",
+        "mujtathth",
+        "mutaqarib",
+        "mutadarik"
+      ],
+      "H2_PASS_no_match": false,
+      "H3": {
+        "diff_B_minus_A": 0.07292,
+        "p": 0.0001,
+        "p_repl": 0.0001,
+        "modal_meter_A": "tawil",
+        "modal_ok": false,
+        "direction_ok": true,
+        "PASS": false
+      },
+      "meter_votes_mufassal": {
+        "tawil": 308,
+        "wafir": 158,
+        "madid": 34,
+        "munsarih": 18,
+        "kamil": 17,
+        "mutaqarib": 13
+      }
+    },
+    "P_pausal": {
+      "n": {
+        "quran": 6209,
+        "poetry": 240,
+        "prose_sampled": 2500,
+        "prose_full": 5151,
+        "prose_matn": 2500,
+        "mufassal_A": 560,
+        "long_medinan_B": 909
+      },
+      "median_d_min": {
+        "quran": 0.21875,
+        "poetry": 0.16667,
+        "prose": 0.2406,
+        "prose_full": 0.2406,
+        "prose_matn": 0.23077,
+        "noise_quran": 0.24324,
+        "noise_poetry": 0.23077
+      },
+      "mean_d_min": {
+        "quran": 0.20565,
+        "poetry": 0.15135,
+        "prose": 0.23448
+      },
+      "H1a_quran_gt_poetry": {
+        "diff": 0.05208,
+        "p": 0.0001,
+        "p_repl": 0.0001,
+        "direction_ok": true,
+        "PASS": true
+      },
+      "H1b_prose_gt_quran": {
+        "diff": 0.02185,
+        "p": 0.0001,
+        "p_repl": 0.0001,
+        "direction_ok": true,
+        "PASS": true
+      },
+      "H2_per_meter": {
+        "tawil": {
+          "median_obs": 0.26471,
+          "median_noise": 0.28571,
+          "noise_minus_obs": 0.02101,
+          "p": 0.0005,
+          "matches": true
+        },
+        "madid": {
+          "median_obs": 0.30896,
+          "median_noise": 0.32075,
+          "noise_minus_obs": 0.0118,
+          "p": 0.0005,
+          "matches": true
+        },
+        "basit": {
+          "median_obs": 0.30769,
+          "median_noise": 0.32143,
+          "noise_minus_obs": 0.01374,
+          "p": 0.0005,
+          "matches": true
+        },
+        "wafir": {
+          "median_obs": 0.24242,
+          "median_noise": 0.27273,
+          "noise_minus_obs": 0.0303,
+          "p": 0.0005,
+          "matches": true
+        },
+        "kamil": {
+          "median_obs": 0.26547,
+          "median_noise": 0.2973,
+          "noise_minus_obs": 0.03183,
+          "p": 0.0005,
+          "matches": true
+        },
+        "hazaj": {
+          "median_obs": 0.33333,
+          "median_noise": 0.35,
+          "noise_minus_obs": 0.01667,
+          "p": 0.0005,
+          "matches": true
+        },
+        "rajaz": {
+          "median_obs": 0.33333,
+          "median_noise": 0.35,
+          "noise_minus_obs": 0.01667,
+          "p": 0.0005,
+          "matches": true
+        },
+        "ramal": {
+          "median_obs": 0.33333,
+          "median_noise": 0.35,
+          "noise_minus_obs": 0.01667,
+          "p": 0.0005,
+          "matches": true
+        },
+        "sari": {
+          "median_obs": 0.30896,
+          "median_noise": 0.32075,
+          "noise_minus_obs": 0.0118,
+          "p": 0.0005,
+          "matches": true
+        },
+        "munsarih": {
+          "median_obs": 0.3125,
+          "median_noise": 0.32609,
+          "noise_minus_obs": 0.01359,
+          "p": 0.0005,
+          "matches": true
+        },
+        "khafif": {
+          "median_obs": 0.3125,
+          "median_noise": 0.32609,
+          "noise_minus_obs": 0.01359,
+          "p": 0.0005,
+          "matches": true
+        },
+        "mudari": {
+          "median_obs": 0.32258,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.01075,
+          "p": 0.001,
+          "matches": true
+        },
+        "muqtadab": {
+          "median_obs": 0.32258,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.01075,
+          "p": 0.001,
+          "matches": true
+        },
+        "mujtathth": {
+          "median_obs": 0.32258,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.01075,
+          "p": 0.001,
+          "matches": true
+        },
+        "mutaqarib": {
+          "median_obs": 0.31111,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.02222,
+          "p": 0.0005,
+          "matches": true
+        },
+        "mutadarik": {
+          "median_obs": 0.31111,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.02222,
+          "p": 0.0005,
+          "matches": true
+        }
+      },
+      "H2_matched_meters": [
+        "tawil",
+        "madid",
+        "basit",
+        "wafir",
+        "kamil",
+        "hazaj",
+        "rajaz",
+        "ramal",
+        "sari",
+        "munsarih",
+        "khafif",
+        "mudari",
+        "muqtadab",
+        "mujtathth",
+        "mutaqarib",
+        "mutadarik"
+      ],
+      "H2_PASS_no_match": false,
+      "H3": {
+        "diff_B_minus_A": 0.07018,
+        "p": 0.0001,
+        "p_repl": 0.0001,
+        "modal_meter_A": "tawil",
+        "modal_ok": false,
+        "direction_ok": true,
+        "PASS": false
+      },
+      "meter_votes_mufassal": {
+        "tawil": 306,
+        "wafir": 161,
+        "madid": 32,
+        "kamil": 19,
+        "munsarih": 18,
+        "mutaqarib": 14
+      }
+    },
+    "P_none": {
+      "n": {
+        "quran": 6211,
+        "poetry": 240,
+        "prose_sampled": 2500,
+        "prose_full": 5174,
+        "prose_matn": 2500,
+        "mufassal_A": 561,
+        "long_medinan_B": 909
+      },
+      "median_d_min": {
+        "quran": 0.21875,
+        "poetry": 0.16667,
+        "prose": 0.24,
+        "prose_full": 0.24,
+        "prose_matn": 0.23077,
+        "noise_quran": 0.2439,
+        "noise_poetry": 0.22727
+      },
+      "mean_d_min": {
+        "quran": 0.20669,
+        "poetry": 0.15075,
+        "prose": 0.2342
+      },
+      "H1a_quran_gt_poetry": {
+        "diff": 0.05208,
+        "p": 0.0001,
+        "p_repl": 0.0001,
+        "direction_ok": true,
+        "PASS": true
+      },
+      "H1b_prose_gt_quran": {
+        "diff": 0.02125,
+        "p": 0.0001,
+        "p_repl": 0.0001,
+        "direction_ok": true,
+        "PASS": true
+      },
+      "H2_per_meter": {
+        "tawil": {
+          "median_obs": 0.26667,
+          "median_noise": 0.28947,
+          "noise_minus_obs": 0.02281,
+          "p": 0.0005,
+          "matches": true
+        },
+        "madid": {
+          "median_obs": 0.3125,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.02083,
+          "p": 0.0005,
+          "matches": true
+        },
+        "basit": {
+          "median_obs": 0.31148,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.02186,
+          "p": 0.0005,
+          "matches": true
+        },
+        "wafir": {
+          "median_obs": 0.2381,
+          "median_noise": 0.27273,
+          "noise_minus_obs": 0.03463,
+          "p": 0.0005,
+          "matches": true
+        },
+        "kamil": {
+          "median_obs": 0.26087,
+          "median_noise": 0.29545,
+          "noise_minus_obs": 0.03458,
+          "p": 0.0005,
+          "matches": true
+        },
+        "hazaj": {
+          "median_obs": 0.34336,
+          "median_noise": 0.35417,
+          "noise_minus_obs": 0.01081,
+          "p": 0.0005,
+          "matches": true
+        },
+        "rajaz": {
+          "median_obs": 0.34336,
+          "median_noise": 0.35417,
+          "noise_minus_obs": 0.01081,
+          "p": 0.0005,
+          "matches": true
+        },
+        "ramal": {
+          "median_obs": 0.34336,
+          "median_noise": 0.35417,
+          "noise_minus_obs": 0.01081,
+          "p": 0.0005,
+          "matches": true
+        },
+        "sari": {
+          "median_obs": 0.3125,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.02083,
+          "p": 0.0005,
+          "matches": true
+        },
+        "munsarih": {
+          "median_obs": 0.32,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.01333,
+          "p": 0.001499,
+          "matches": true
+        },
+        "khafif": {
+          "median_obs": 0.32,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.01333,
+          "p": 0.001499,
+          "matches": true
+        },
+        "mudari": {
+          "median_obs": 0.33333,
+          "median_noise": 0.33929,
+          "noise_minus_obs": 0.00595,
+          "p": 0.0005,
+          "matches": true
+        },
+        "muqtadab": {
+          "median_obs": 0.33333,
+          "median_noise": 0.33929,
+          "noise_minus_obs": 0.00595,
+          "p": 0.0005,
+          "matches": true
+        },
+        "mujtathth": {
+          "median_obs": 0.33333,
+          "median_noise": 0.33929,
+          "noise_minus_obs": 0.00595,
+          "p": 0.0005,
+          "matches": true
+        },
+        "mutaqarib": {
+          "median_obs": 0.31373,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.01961,
+          "p": 0.0005,
+          "matches": true
+        },
+        "mutadarik": {
+          "median_obs": 0.31373,
+          "median_noise": 0.33333,
+          "noise_minus_obs": 0.01961,
+          "p": 0.0005,
+          "matches": true
+        }
+      },
+      "H2_matched_meters": [
+        "tawil",
+        "madid",
+        "basit",
+        "wafir",
+        "kamil",
+        "hazaj",
+        "rajaz",
+        "ramal",
+        "sari",
+        "munsarih",
+        "khafif",
+        "mudari",
+        "muqtadab",
+        "mujtathth",
+        "mutaqarib",
+        "mutadarik"
+      ],
+      "H2_PASS_no_match": false,
+      "H3": {
+        "diff_B_minus_A": 0.06863,
+        "p": 0.0001,
+        "p_repl": 0.0001,
+        "modal_meter_A": "tawil",
+        "modal_ok": false,
+        "direction_ok": true,
+        "PASS": false
+      },
+      "meter_votes_mufassal": {
+        "tawil": 300,
+        "wafir": 174,
+        "kamil": 26,
+        "madid": 24,
+        "munsarih": 17,
+        "mutaqarib": 11
+      }
+    }
+  },
+  "inference_verdicts": {
+    "H1": "PASS",
+    "H2": "FALSIFIED-buhur-matched",
+    "H3": "NULL"
+  },
+  "verdict": "PARTIAL"
+}
