@@ -300,7 +300,9 @@ the following is the rule this repository uses.
   it stops `h-new-12` matching `h-new-125` while still allowing `h-new-236` to match a
   reference to `h-new-236-2a`;
 - **and — the clause that actually matters — files belonging to the claim's own sub-finding
-  family are excluded.**
+  family are excluded**, together with the file containing the claim itself. *(A claim's own
+  file is not a citation of it. This resolves a 12-vs-11 discrepancy between two
+  implementations: the larger count was including the target file.)*
 
 **That last clause changes the answer, not just the number.** A finding with a large family of
 sub-findings accumulates citations from its own children, which measure productivity, not
@@ -410,3 +412,40 @@ a self-reported error with a plausible-sounding cause is still an unverified cla
 own diagnosis without checking the script, and it took a second lane reading the code to find the
 real mechanism. **Diagnose from the artifact, not from the narrative** — including, and
 especially, when the narrative is your own confession.
+
+---
+
+## 8. Run these screens twice, independently — agreement is not coverage
+
+**This is the most transferable thing the 2026-08-07 session produced, and it is a fact about
+the screens rather than about any claim.**
+
+Two lanes applied §3's three screens to the same repository, independently, on the same day.
+**They agreed on every claim they both saw.** Every ordering-shaped claim one flagged, the other
+flagged; the diagnostics reproduced to four decimals across separately built harnesses.
+
+That agreement was worth almost nothing, because one screen was **structurally blind to an
+entire class of claims**. §3 Screen B originally asked only about *orderings*. The two
+highest-priority flagged claims in the repository — H-NEW-126 at 32 external citations and
+H-NEW-570 at 30 — compare **groups**, not sequences. They were invisible to that screen by
+construction. **Fifty-nine external citations' worth of flagged claims sat outside the screen's
+reach while the screen reported clean convergence.**
+
+**A single application of this rule would therefore have produced a confident, mutually
+corroborated, incomplete answer.** Nothing inside that application could have revealed the gap,
+because the gap was in the question being asked, not in the answering.
+
+Three consequences, all of them cheap:
+
+1. **Run the screens twice, from independently written implementations.** Not a re-read of the
+   same list — a second construction of the search.
+2. **When two applications agree, ask what they both could not see** before treating agreement
+   as coverage. Convergence between two instances of the same blind spot is indistinguishable
+   from convergence on the truth.
+3. **Prefer a disagreement to an agreement.** Every disagreement in this session resolved into a
+   correction: the channel identity, the stratification bin width, the ranking metric, the
+   run-write pattern, and this screen's own scope. Not one agreement produced anything.
+
+The same session supplied the case in miniature: **§3's drift table stated the wrong primary
+channel, and only a second lane building against it noticed.** A rule document is not
+self-checking, and neither is a screen.

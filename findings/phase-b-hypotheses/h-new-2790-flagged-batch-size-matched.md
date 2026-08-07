@@ -613,10 +613,13 @@ verdict.
 
 The batch was five. Two independent screens of the same repository exist: mine, applied while
 this pre-registration was being written, and the sweep's, which reached me after the lock. The
-merged list below is authoritative and the sweep's ranking metric is used — **distinct in-scope
-`.md` files citing the ID, over `findings/` + `surahs/`, preregs excluded, stale duplicated
-worktree trees excluded** — because it is the better metric: raw mention counts double-count
-long files.
+merged list below is authoritative and uses the **corrected** form of the sweep's ranking
+metric — **distinct in-scope `.md` files citing the ID, over `findings/` + `surahs/`, preregs
+excluded, stale worktree trees excluded, and a claim's own sub-findings excluded.** That last
+clause was not in the original metric and adding it reorders the queue; the two clauses that
+had to be added, and why, are set out below. The metric is still better than raw mention
+counts, which double-count long files — but it required two corrections before it ranked
+anything correctly, and it is reported here with them rather than on trust.
 
 **The two highest-priority flagged claims in the repository were NOT reached by this batch.**
 
