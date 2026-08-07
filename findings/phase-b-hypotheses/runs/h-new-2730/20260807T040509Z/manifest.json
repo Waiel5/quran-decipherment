@@ -1,0 +1,38 @@
+{
+  "id": "H-NEW-2730",
+  "utc": "20260807T040509Z",
+  "script": "findings/phase-b-hypotheses/scripts/h-new-2730.py",
+  "script_sha256": "4eaf1b8ba7b02da0ff92c7f179cf76df35f442285bc57e40131e3160788e9e10",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2730-scansion-genre-control.md",
+  "prereg_sha256": "a5f742e15a8be6393b049ec2add61f237c36f165c884b54e0a17fb22c3578c25",
+  "inputs_sha256": {
+    "data/baseline-corpora/raw/muallaqa-amr-bin-kulthum.txt": "d93a81bd2095c7db00417650f883c834077fac12668e50002c8b35f26e2ef720",
+    "data/baseline-corpora/raw/muallaqa-imru-al-qais.txt": "06f05f6a299d989fcaf330f43f7fba9116b373f94096d38ec07df71432f59c14",
+    "data/baseline-corpora/raw/muallaqa-zuhayr.txt": "9a8aac1838323aaa65f916f597ec38c842b74eed77ce44f53c2932b52e6610c2",
+    "data/literature/hadith/ahmedbaset-json/db/by_book/the_9_books/bukhari.json": "9d2e4194786c275f64f627c834711ea0e339a8fe226d5e9569ef962595a562f1",
+    "data/literature/hadith/ahmedbaset-json/db/by_book/the_9_books/darimi.json": "45ec3ac92b072287e6c7451084f55f50a2676e0eab2ec165c4ffecfa57f41d2a",
+    "findings/phase-b-hypotheses/scripts/h-new-2680.py": "57d6b214344ea81433e9f840524e6259953657fbf60e8fd54fdd8d2706b88497",
+    "findings/phase-b-hypotheses/scripts/h-new-2690.py": "3262dd417b0fa4edef28ecb939a6ac57f5e0059309257c030891a56d54034672",
+    "quran-text/quran-full-tashkeel.json": "382a7341300602ec8b366316d4bbe2a44955c2bf984d395bdd82dae6110b6715",
+    "quran-text/quran-no-tashkeel.json": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+  },
+  "lifted_fragments": {
+    "h-new-2690": {
+      "scanner_region": "013d8ee0ea231c22",
+      "stats_region": "01c105b800e89fd9"
+    },
+    "h-new-2680": {
+      "regex": "2cd4d0ca289fd137",
+      "normalise_words": "8e49ae080acc6335",
+      "build_pseudo_corpus": "6931e0863f09a79c"
+    }
+  },
+  "python": "3.13.12",
+  "seeds": [
+    20260509,
+    20260519
+  ],
+  "n_perm": 10000,
+  "verdict": "ARTEFACT-OF-UNIT-LENGTH",
+  "immutability": "Immutable. Never delete or overwrite, per prereg §8."
+}

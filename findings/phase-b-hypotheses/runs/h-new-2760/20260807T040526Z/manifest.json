@@ -1,0 +1,94 @@
+{
+  "command": "python3 findings/phase-b-hypotheses/scripts/h-new-2760.py",
+  "frozen_inputs": [
+    {
+      "path": "quran-text/quran-no-tashkeel.json",
+      "sha256": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+    },
+    {
+      "path": "data/revelation-order.csv",
+      "sha256": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7"
+    },
+    {
+      "path": "data/baseline-corpora/raw/bukhari.txt",
+      "sha256": "370dfe3520c8940812893a745b7b93f57eb1e10305f98726349966388794530c"
+    },
+    {
+      "path": "data/baseline-corpora/raw/jahiz-hayawan.txt",
+      "sha256": "419095484df4e315eba889d38a9c2f6edff55c2f10f481ed9ad024e07bbff0cd"
+    },
+    {
+      "path": "data/baseline-corpora/raw/diwan-amr-ibn-kulthum.txt",
+      "sha256": "a5702c3046c781562248857f4f89c4491605f662d7e9e207edf1bf9422d20edf"
+    },
+    {
+      "path": "data/baseline-corpora/raw/diwan-antara.txt",
+      "sha256": "37b7c12564a6f297108c7ac844e5e65853368268532ec75062fd40330b354164"
+    },
+    {
+      "path": "data/baseline-corpora/raw/diwan-harith.txt",
+      "sha256": "1677c24c4fee9bb569bbad245ff9dd4d2aa47b714aeb02997d26d90de8b1c48b"
+    },
+    {
+      "path": "data/baseline-corpora/raw/diwan-imru-al-qais.txt",
+      "sha256": "40668e0bce8914a1ecbf9d812654d363aae87bacfe99b5acf9376d05fbca1b94"
+    },
+    {
+      "path": "data/baseline-corpora/raw/diwan-labid.txt",
+      "sha256": "8f8aacfadf0e6fe3efeeb8910eb2e9e4bbd3a27c8d466f55435f754eb9c4ec1f"
+    },
+    {
+      "path": "data/baseline-corpora/raw/diwan-tarafa.txt",
+      "sha256": "6349387b3c23cd1f0dfa23490a15a6b1efc2fb09de45c4b17c138cb0ce99eb5f"
+    },
+    {
+      "path": "data/baseline-corpora/raw/diwan-zuhayr.txt",
+      "sha256": "acd8be6ce8fa5609b410dc867adc243ad8e4dd597d3afcf881f6a832ea13ab7c"
+    },
+    {
+      "path": "data/baseline-corpora/raw/muallaqa-amr-bin-kulthum.txt",
+      "sha256": "d93a81bd2095c7db00417650f883c834077fac12668e50002c8b35f26e2ef720"
+    },
+    {
+      "path": "data/baseline-corpora/raw/muallaqa-antara.txt",
+      "sha256": "4df797e787fa41d3ca84e6ef0a321d1cb934c54d18846d3ebfb7d65de6c118c6"
+    },
+    {
+      "path": "data/baseline-corpora/raw/muallaqa-harith.txt",
+      "sha256": "372b00e49d9065eb46fbcf242b992b25e7cda66a4326f3dc11b53769a48069ff"
+    },
+    {
+      "path": "data/baseline-corpora/raw/muallaqa-imru-al-qais.txt",
+      "sha256": "06f05f6a299d989fcaf330f43f7fba9116b373f94096d38ec07df71432f59c14"
+    },
+    {
+      "path": "data/baseline-corpora/raw/muallaqa-labid.txt",
+      "sha256": "ade71a4225cbcec1da43f537af65fe7b8e7a0649a7fbb724fa1f654409325b6b"
+    },
+    {
+      "path": "data/baseline-corpora/raw/muallaqa-tarafa.txt",
+      "sha256": "5d103de0f56af0598bc98a6eabd66f075c9425080a71ac0914658e71820adfc1"
+    },
+    {
+      "path": "data/baseline-corpora/raw/muallaqa-zuhayr.txt",
+      "sha256": "9a8aac1838323aaa65f916f597ec38c842b74eed77ce44f53c2932b52e6610c2"
+    }
+  ],
+  "id": "H-NEW-2760",
+  "instrument_source": "findings/phase-b-hypotheses/scripts/h-new-2680b.py",
+  "prereg": {
+    "path": "findings/phase-b-hypotheses/prereg-h-new-2760-muqattaat-book-reference-nuisance.md",
+    "sha256": "a1e4419a674d254d3bf5f243d2891bafcd17986611eff94b31f6e35b8e5b9b3a"
+  },
+  "run_dir": "findings/phase-b-hypotheses/runs/h-new-2760/20260807T040526Z",
+  "script": {
+    "path": "findings/phase-b-hypotheses/scripts/h-new-2760.py",
+    "sha256": "242e104fb8bc67fcbdd60102ba80f5a8d3eb5601451eba04929422af71b352f4"
+  },
+  "seeds": [
+    20260509,
+    20260519
+  ],
+  "utc": "20260807T040526Z",
+  "verdict": "DISCRIMINATES"
+}

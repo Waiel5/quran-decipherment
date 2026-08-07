@@ -1,0 +1,228 @@
+{
+  "D1": {
+    "late_meccan_muq_fraction": 0.7619,
+    "note": "Null C stratum occupancy. A stratum that is mostly muqaṭṭaʿāt leaves the within-stratum permutation almost no freedom, so the null mean is dragged toward the observed count and the rate ratio shrinks by construction.",
+    "phase_only": {
+      "Early Meccan": {
+        "muqattaat": 1,
+        "size": 48
+      },
+      "Late Meccan": {
+        "muqattaat": 16,
+        "size": 21
+      },
+      "Medinan": {
+        "muqattaat": 2,
+        "size": 24
+      },
+      "Middle Meccan": {
+        "muqattaat": 10,
+        "size": 21
+      }
+    },
+    "strata": {
+      "ow-tertile-0 x Early Meccan": {
+        "muq_fraction": 0.0,
+        "muqattaat": 0,
+        "size": 31
+      },
+      "ow-tertile-0 x Late Meccan": {
+        "muq_fraction": 1.0,
+        "muqattaat": 1,
+        "size": 1
+      },
+      "ow-tertile-0 x Middle Meccan": {
+        "muq_fraction": 0.8333,
+        "muqattaat": 5,
+        "size": 6
+      },
+      "ow-tertile-1 x Early Meccan": {
+        "muq_fraction": 0.0588,
+        "muqattaat": 1,
+        "size": 17
+      },
+      "ow-tertile-1 x Late Meccan": {
+        "muq_fraction": 1.0,
+        "muqattaat": 8,
+        "size": 8
+      },
+      "ow-tertile-1 x Medinan": {
+        "muq_fraction": 0.4,
+        "muqattaat": 2,
+        "size": 5
+      },
+      "ow-tertile-1 x Middle Meccan": {
+        "muq_fraction": 0.625,
+        "muqattaat": 5,
+        "size": 8
+      },
+      "ow-tertile-2 x Late Meccan": {
+        "muq_fraction": 0.5833,
+        "muqattaat": 7,
+        "size": 12
+      },
+      "ow-tertile-2 x Medinan": {
+        "muq_fraction": 0.0,
+        "muqattaat": 0,
+        "size": 19
+      },
+      "ow-tertile-2 x Middle Meccan": {
+        "muq_fraction": 0.0,
+        "muqattaat": 0,
+        "size": 7
+      }
+    }
+  },
+  "D2": {
+    "Early_Meccan": {
+      "band95": [
+        -0.40818550516247887,
+        0.4864495023629773
+      ],
+      "delta": 0.32661194425527135,
+      "mean_muq": 0.7115384615384616,
+      "mean_non": 0.3849265172831902,
+      "n_muq": 1,
+      "n_non": 12,
+      "null_mean": -0.04635485812526202,
+      "p_less": 0.9074092590740926
+    },
+    "Late_Meccan": {
+      "band95": [
+        -0.09934388681561593,
+        0.19993042712069706
+      ],
+      "delta": -0.054043938684941825,
+      "mean_muq": 0.11710757646657331,
+      "mean_non": 0.17115151515151514,
+      "n_muq": 16,
+      "n_non": 5,
+      "null_mean": 0.05922039354190823,
+      "p_less": 0.0796920307969203
+    },
+    "Medinan": {
+      "band95": [
+        -0.3882999233011602,
+        -0.1566609757144289
+      ],
+      "delta": -0.38090364352833594,
+      "mean_muq": 0.010996503496503496,
+      "mean_non": 0.39190014702483944,
+      "n_muq": 2,
+      "n_non": 14,
+      "null_mean": -0.27211163986358744,
+      "p_less": 0.0334966503349665
+    },
+    "Middle_Meccan": {
+      "band95": [
+        -0.21775867574434873,
+        0.14876501390050406
+      ],
+      "delta": -0.26644162417817957,
+      "mean_muq": 0.028098052469206193,
+      "mean_non": 0.2945396766473858,
+      "n_muq": 10,
+      "n_non": 9,
+      "null_mean": -0.034310122994192775,
+      "p_less": 0.0053994600539946005
+    },
+    "all_target_bearing": {
+      "band95": [
+        -0.17153618632189502,
+        0.01493892481754166
+      ],
+      "delta": -0.24071412443191742,
+      "mean_muq": 0.0995942488513346,
+      "mean_non": 0.34030837328325203,
+      "n_muq": 29,
+      "n_non": 40,
+      "null_mean": -0.07832916535627484,
+      "p_less": 0.0004999500049995
+    },
+    "meccan_late_plus_middle": {
+      "band95": [
+        -0.13428446368767902,
+        0.11027381784041464
+      ],
+      "delta": -0.1675993319532526,
+      "mean_muq": 0.08287314415989365,
+      "mean_non": 0.25047247611314627,
+      "n_muq": 26,
+      "n_non": 14,
+      "null_mean": -0.01111804129615891,
+      "p_less": 0.006299370062993701
+    },
+    "meccan_late_plus_middle_replication": {
+      "band95": [
+        -0.13119790418064567,
+        0.11012449278273946
+      ],
+      "delta": -0.1675993319532526,
+      "mean_muq": 0.08287314415989365,
+      "mean_non": 0.25047247611314627,
+      "n_muq": 26,
+      "n_non": 14,
+      "null_mean": -0.010316281105981172,
+      "p_less": 0.005099490050994901
+    },
+    "note": "H5 restricted within revelation phase. MW-7 capped at alpha=0.05, single test, NOT confirmatory. Asks whether the front-loading survives when muqaṭṭaʿāt and non-muqaṭṭaʿāt surahs are compared inside the same phase."
+  },
+  "D3": {
+    "both_length_channels": {
+      "band95": [
+        12.0,
+        18.0
+      ],
+      "null_mean": 15.0135,
+      "null_sd": 1.734104307704701,
+      "observed": 24,
+      "p_greater": 9.999000099990002e-05,
+      "rate_ratio": 1.5985612948346488,
+      "z": 5.182214218644512
+    },
+    "note": "Null B re-stratified on WHOLE-SURAH length, the stronger of the two length channels (rho 0.458 vs the registered 0.168). MW-7 capped, NOT confirmatory: the registered primary is the opening-window stratification and it stands as run. This asks what the effect looks like against the nuisance I ranked second.",
+    "surah_length_quintiles": {
+      "band95": [
+        10.0,
+        18.0
+      ],
+      "null_mean": 14.1639,
+      "null_sd": 1.9287396895382227,
+      "observed": 24,
+      "p_greater": 9.999000099990002e-05,
+      "rate_ratio": 1.6944485628958126,
+      "z": 5.099755064590884
+    },
+    "surah_length_quintiles_replication": {
+      "band95": [
+        10.0,
+        18.0
+      ],
+      "null_mean": 14.2046,
+      "null_sd": 1.950317625413871,
+      "observed": 24,
+      "p_greater": 9.999000099990002e-05,
+      "rate_ratio": 1.6895935119609142,
+      "z": 5.022463968104349
+    },
+    "surah_length_x_phase": {
+      "band95": [
+        15.0,
+        21.0
+      ],
+      "null_mean": 18.0741,
+      "null_sd": 1.628437653089611,
+      "observed": 24,
+      "p_greater": 0.00039996000399960006,
+      "rate_ratio": 1.3278669477318372,
+      "z": 3.6390094448853323
+    }
+  },
+  "id": "H-NEW-2760-POSTHOC",
+  "mw7_cap": 0.05,
+  "n_perm": 10000,
+  "prereg_sha256": "a1e4419a674d254d3bf5f243d2891bafcd17986611eff94b31f6e35b8e5b9b3a",
+  "seed": 20260509,
+  "seed_replication": 20260519,
+  "status": "POST-HOC DIAGNOSTIC — MW-7 capped, NOT part of the registered family, NOT confirmatory, may not be cited as evidence for or against the registered verdict without a fresh pre-registration"
+}
