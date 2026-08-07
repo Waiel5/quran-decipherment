@@ -95,3 +95,30 @@ Now: invoke the skill, read the orientation files, then **immediately dispatch a
 ---
 
 *CONTINUE-PROMPT written 2026-05-29 by Waiel Al-Shujaa. Paste at session start for full-power continuation.*
+
+---
+
+## STANDING RULES added 2026-08-07 (Wave-S) — these are non-negotiable, learned the hard way
+
+Four failures were committed and self-reported in a single night. Do not repeat them.
+
+1. **The runner's verdict rule MUST literally match the pre-registration's decision rule.** H-NEW-2600 pre-registered "correct sign AND both raw p < 0.0005 per arm", then the script implemented something looser and published a verdict that failed its own gate. **Before any run, diff the script's verdict function against the prereg's decision section, line by line.** A pre-registration you quietly loosen in code is not a pre-registration.
+2. **NEVER delete a run directory — including uncommitted, superseded, byte-identical ones.** One was deleted mid-audit on the reasoning that it was identical to its replacement. "It was identical" is exactly the claim an audit trail exists to let a third party verify. If a manifest records a non-portable path, **re-run to an ADDITIONAL directory and retain both**, recording why.
+3. **Never ASSERT a robustness property — COMPUTE it.** H-NEW-2560's output claimed an arm was "independent of EQTB sentence segmentation". Never tested, and false — restricted to sentence-internal marks the locked direction failed at p=0.97 and trended reversed. It cost the headline.
+4. **Check every control for tautology.** "17/34 form-pairs positive, a coin flip" was offered as evidence of instrument neutrality; the lattice contains both A→B and B→A and T(B,A) = −T(A,B), so exactly half MUST be positive. Arithmetic is not evidence.
+
+**Two further habits:**
+- **Hunt errors whose direction FLATTERS the hypothesis first.** A formal law carried 47/89 for three months after its own follow-up corrected it to 48/89 — precisely because the correction made the law stronger and so nobody re-checked it.
+- **Bonferroni answers a UNION question ("did any test hit?"). It cannot answer the INTERSECTION question ("how many configurations satisfy ALL properties at once?").** When several properties hold of one object, compute the joint survivor count — with the property list pre-declared, a shrinkage curve under several orderings, an independence matrix, and **a control running the identical procedure on random/baseline objects.** Without that control, constraint-stacking manufactures uniqueness and you have reinvented numerology.
+
+## New instruments and assets as of 2026-08-07
+
+- **Dependency treebank (EQTB)** — acquire per `data/syntax/UD-QURAN-SOURCE.md`. **Parser-contaminated for morphology questions** (its syntax was BiLSTM-generated with morphological-feature inputs including `verb_form`; human validation was not form-blinded), and its sentence segmentation may have used verse boundaries. Parse/join code: `scripts/h-new-2540.py`.
+- **The parser-free channel** — attached object pronouns from QAC alone. Correct rule: consume only the obligatory subject suffix, THEN count remaining `PRON` segments. Do NOT drop every pronoun matching subject PNG — that deletes 311 genuine objects and the miss rate is form-correlated.
+- **`HANDOFF/FRONTIER-MAP-2026-08-07.md`** — coverage census over all ~900 phase-b files, 20 ranked untouched hypotheses with verified data paths and named confounds, contradiction audit, and an inventory of acquired-but-unread assets. **Read this before choosing a target.**
+- **`findings/CROSS-FINDING-INDEX.md`** — disambiguation for the duplicate cross-finding IDs (025-028 and 010/012/023 collide across two directories).
+- **Idle assets worth opening:** 12-edition per-verse tafsīr (77,437 files — H-NEW-2620 opened it and got a NULL), al-Wāḥidī *asbāb* (0 scripts), Jeffery loanwords (1 script), `quran-uthmani-txt.txt` (0 scripts).
+
+## The public-facing material needs rebuilding
+
+`EXECUTIVE-SUMMARY.html`, `THE-MAN-AT-THE-CENTER.html`, `Khawatim-al-Hashr.html` and `al-Rajul-fi-Qalb-al-Amr.html` are all dated **2026-04-12** — they predate every cross-finding law. The strongest results (mushaf order z = −11.46, muqaṭṭaʿāt p ≤ 10⁻¹², Q112 as corpus FR-centroid) are buried in a 1.2 MB ledger while the early, more obvious material is what is published. **Rebuild the public face around what has survived audit.**
