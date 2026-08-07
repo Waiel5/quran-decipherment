@@ -1,0 +1,38 @@
+{
+ "finding_id": "H-NEW-2850",
+ "utc": "20260807T101603Z",
+ "prereg": "findings/phase-b-hypotheses/prereg-h-new-2850-agency-grammar.md",
+ "prereg_sha256": "7e7e98f7a60617df76c42abf66547e639baebd6cd5801990f17e3ae5239b4f2c",
+ "script": "findings/phase-b-hypotheses/scripts/h-new-2850.py",
+ "frozen_inputs": {
+  "qac": {
+   "path": "data/morphology/quranic-corpus-morphology-0.4.txt",
+   "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46"
+  },
+  "revelation_order": {
+   "path": "data/revelation-order.csv",
+   "sha256": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7"
+  },
+  "quran_no_tashkeel": {
+   "path": "quran-text/quran-no-tashkeel.json",
+   "sha256": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+  }
+ },
+ "eqtb": {
+  "used": true,
+  "role": "SECONDARY transitivity only",
+  "sha256": "a303c24cf51b90f6cd5eb0fb25d6c591977a7797743d16e0dedc76a5af5ae0b7"
+ },
+ "seeds": {
+  "primary": 20260509,
+  "replication": 20260519,
+  "n_perm": 10000
+ },
+ "outputs": [
+  "result.json",
+  "census-roster.tsv",
+  "dissociation-roster.tsv",
+  "validation-sample.tsv",
+  "validation-key.json"
+ ]
+}

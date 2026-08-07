@@ -262,6 +262,16 @@ opposite ends of the valency relation.
 Magnification directed outward at God is transitive. Magnification turned back on the self
 is intransitive — and is arrogance. The morphology carries the distinction.
 
+> **Clarification added 2026-08-07 (H-NEW-2850 §7).** This is an observation about the **object**
+> slot, and it must not be cited as evidence that verb form tracks *who is acting*. All four
+> Form II tokens of ك ب ر are **second person** — *kabbirhu* (Q 17:111), *fa-kabbir* (Q 74:3),
+> *li-tukabbirū* (Q 2:185, Q 22:37) — so their grammatical **subject is the human addressee** in
+> every case. Measured against a mechanical subject classifier the root yields **zero divine
+> subjects in any form** (I 0/2, II 0/4, V 0/1, X 0/12) and does not appear in that finding's
+> dissociation roster at all. The passage above stands as written about objects; nothing in it
+> is a claim about agency. *(The count of 4 is correct; the fourth verse, unnamed above, is
+> Q 22:37.)*
+
 ### ز ك و — who purifies whom
 
 - **Form II**: *yuzakkī-**him*** — Q 2:129, 3:164 — the Messenger "purifies **them**"; and *yuzakkī-**kum*** at Q 2:151, "purifies **you**" (corrected 2026-08-07: this verse was previously grouped under the *-him* form in error).
