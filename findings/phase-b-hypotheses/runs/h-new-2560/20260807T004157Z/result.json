@@ -1,0 +1,698 @@
+{
+  "alpha_bonferroni": 0.008333333333333333,
+  "annotation_limit": "EQTB dependency and constituent accuracy is the material limit. H1a is near-equivalent to EQTB sentence-boundary coincidence and is circularity-exposed; H5 is the only inference in the family that is independent of EQTB sentence segmentation. No matched Classical-Arabic dependency-treebank control exists on disk, so nothing here is shown to be Quran-specific.",
+  "census": {
+    "boundaries_at_sentence_edge": 4798,
+    "boundaries_sentence_internal": 1324,
+    "eligible_boundaries_min2_words": 6094,
+    "eqtb_sentences": 11693,
+    "eqtb_sentences_spanning_multiple_verses": 838,
+    "internal_verse_boundaries": 6122,
+    "surahs": 114,
+    "total_arcs": 103751,
+    "verses": 6236,
+    "verses_per_sentence_distribution": {
+      "1": 10855,
+      "2": 601,
+      "3": 140,
+      "4": 46,
+      "5": 26,
+      "6": 9,
+      "7": 6,
+      "8": 2,
+      "9": 2,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "31": 1
+    }
+  },
+  "corrected_novelty_gate": 0.005,
+  "h1a_fasila_vs_matched_pseudo": {
+    "direction_held": true,
+    "direction_locked": "true > pseudo",
+    "effect": 0.709859172957007,
+    "mean_null_sealed_rate": 0.09929737446668854,
+    "n_eligible": 6094,
+    "p_bonferroni": 0.0005999400059994001,
+    "p_one_sided": 9.999000099990002e-05,
+    "passes_gate": true,
+    "replication_seed_20260510": {
+      "mean_null_sealed_rate": 0.0992014932720709,
+      "p_one_sided": 9.999000099990002e-05,
+      "true_sealed_rate": 0.8091565474236955
+    },
+    "seed": 20260509,
+    "true_sealed_rate": 0.8091565474236955
+  },
+  "h1b_within_sentence_segment_permutation": {
+    "direction_held": true,
+    "direction_locked": "true > permuted",
+    "mean_null_sealed_rate": 0.058201435045317225,
+    "n_sentences": 838,
+    "n_universe": 1324,
+    "p_bonferroni": 0.0005999400059994001,
+    "p_one_sided": 9.999000099990002e-05,
+    "passes_gate": true,
+    "seed": 20260510,
+    "true_sealed_rate": 0.1163141993957704
+  },
+  "h2_register_contrast": {
+    "direction_held": false,
+    "direction_locked": "eschatological_mufassal > legal_medinan",
+    "observed_delta_eschat_minus_legal": -0.1948025730747085,
+    "p_bonferroni": 1.0,
+    "p_one_sided": 1.0,
+    "passes_gate": false,
+    "register_rates": {
+      "eschatological_mufassal": {
+        "n_boundaries": 844,
+        "sealed_rate": 0.7002369668246445
+      },
+      "legal_medinan": {
+        "n_boundaries": 1391,
+        "sealed_rate": 0.895039539899353
+      },
+      "liturgical_didactic": {
+        "n_boundaries": 1240,
+        "sealed_rate": 0.7596774193548387
+      },
+      "narrative": {
+        "n_boundaries": 2647,
+        "sealed_rate": 0.8213071401586702
+      }
+    },
+    "seed": 20260509
+  },
+  "h3_length_stratified": {
+    "active_strata": [
+      "2-4",
+      "5-8",
+      "9-15",
+      "16-30",
+      "31+"
+    ],
+    "direction_held": true,
+    "direction_locked": "equal-weight true > equal-weight null",
+    "effect": 0.714021148062196,
+    "equal_weight_null_mean": 0.09943897282357958,
+    "equal_weight_true": 0.8134601208857756,
+    "null_stratum_sealed_rate": {
+      "16-30": 0.12033749999999999,
+      "2-4": 0.0400728280961183,
+      "31+": 0.12463800738007379,
+      "5-8": 0.09672903914590748,
+      "9-15": 0.11541748949579832
+    },
+    "p_bonferroni": 0.0005999400059994001,
+    "p_one_sided": 9.999000099990002e-05,
+    "passes_gate": true,
+    "per_stratum_p": {
+      "16-30": 9.999000099990002e-05,
+      "2-4": 9.999000099990002e-05,
+      "31+": 9.999000099990002e-05,
+      "5-8": 9.999000099990002e-05,
+      "9-15": 9.999000099990002e-05
+    },
+    "seed": 20260509,
+    "strata_bins": [
+      "2-4",
+      "5-8",
+      "9-15",
+      "16-30",
+      "31+"
+    ],
+    "strata_n": {
+      "16-30": 1432,
+      "2-4": 1082,
+      "31+": 271,
+      "5-8": 1405,
+      "9-15": 1904
+    },
+    "true_stratum_sealed_rate": {
+      "16-30": 0.8952513966480447,
+      "2-4": 0.6201478743068392,
+      "31+": 0.915129151291513,
+      "5-8": 0.7743772241992882,
+      "9-15": 0.8623949579831933
+    }
+  },
+  "h4_constituent_integrity": {
+    "direction_held": true,
+    "direction_locked": "true < pseudo (fewer broken constituents)",
+    "effect_null_minus_true": 0.34832760091893666,
+    "mean_null_split_rate": 0.38278772563176894,
+    "p_bonferroni": 0.0005999400059994001,
+    "p_one_sided": 9.999000099990002e-05,
+    "passes_gate": true,
+    "seed": 20260509,
+    "true_split_rate": 0.034460124712832295
+  },
+  "h5_classical_waqf_validation": {
+    "by_grade_ladder": {
+      "jim": {
+        "mean_cross": 0.1926977687626775,
+        "n": 1972,
+        "sealed_rate": 0.8468559837728195
+      },
+      "la": {
+        "mean_cross": 0.6617647058823529,
+        "n": 68,
+        "sealed_rate": 0.4117647058823529
+      },
+      "mim": {
+        "mean_cross": 0.13636363636363635,
+        "n": 22,
+        "sealed_rate": 0.8636363636363636
+      },
+      "muanaqa": {
+        "mean_cross": 1.0,
+        "n": 12,
+        "sealed_rate": 0.16666666666666666
+      },
+      "qla": {
+        "mean_cross": 0.10281923714759536,
+        "n": 603,
+        "sealed_rate": 0.9071310116086235
+      },
+      "saktah": {
+        "mean_cross": 1.0,
+        "n": 2,
+        "sealed_rate": 0.0
+      },
+      "sla": {
+        "mean_cross": 0.3057703747769185,
+        "n": 1681,
+        "sealed_rate": 0.7495538370017847
+      }
+    },
+    "direction_held": true,
+    "direction_locked": "stop-preferred > continue-preferred",
+    "mean_null_delta": 0.00016037818181818283,
+    "n_continue_preferred": 1749,
+    "n_stop_preferred": 625,
+    "observed_delta": 0.16917918810749,
+    "p_bonferroni": 0.0005999400059994001,
+    "p_one_sided": 9.999000099990002e-05,
+    "passes_gate": true,
+    "replication_seed_20260511_p": 9.999000099990002e-05,
+    "sealed_rate_continue_preferred": 0.73642081189251,
+    "sealed_rate_stop_preferred": 0.9056,
+    "seed": 20260509,
+    "waqf_join": {
+      "excluded_marks": 3,
+      "excluded_verses": [
+        "20:94",
+        "37:130",
+        "72:16"
+      ],
+      "usable_marks": 4360
+    }
+  },
+  "id": "H-NEW-2560",
+  "n_permutations": 10000,
+  "prereg_sha256": "4432e6fa79d330d5adc614d5175df8a70fd87476442f41bb289a6a248d7c3269",
+  "raw_p_gate": 0.0008333333333333334,
+  "robustness": {
+    "R2_circularity_exhibit": {
+      "note": "SEALED is near-equivalent to coinciding with an EQTB sentence edge; these two rates make that visible.",
+      "pseudo_boundaries_at_eqtb_sentence_edge_rate": 0.0735149327207089,
+      "true_boundaries_at_eqtb_sentence_edge_rate": 0.7837308069258412
+    },
+    "R3_crossing_arcs": {
+      "max_cross_true_boundary": 9,
+      "mean_cross_true_boundaries": 0.233093760209082
+    },
+    "R4_sealed_given_sentence_internal": {
+      "n": 1324,
+      "true_sealed_rate": 0.1163141993957704
+    },
+    "R6_exception_roster_top40": [
+      {
+        "crossing_arcs": 9,
+        "host_verse_words": 37,
+        "register": "legal_medinan",
+        "splits_constituent": true,
+        "surah": 9,
+        "verse": 111,
+        "waqf_marks_in_host_verse": [
+          "jim",
+          "jim",
+          "jim",
+          "jim",
+          "sla"
+        ],
+        "waqf_marks_in_next_verse": [
+          "qla"
+        ]
+      },
+      {
+        "crossing_arcs": 5,
+        "host_verse_words": 5,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 23,
+        "verse": 2,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 5,
+        "host_verse_words": 4,
+        "register": "eschatological_mufassal",
+        "splits_constituent": false,
+        "surah": 81,
+        "verse": 19,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 4,
+        "host_verse_words": 25,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 14,
+        "verse": 32,
+        "waqf_marks_in_host_verse": [
+          "sla",
+          "sla"
+        ],
+        "waqf_marks_in_next_verse": [
+          "sla"
+        ]
+      },
+      {
+        "crossing_arcs": 4,
+        "host_verse_words": 8,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 16,
+        "verse": 5,
+        "waqf_marks_in_host_verse": [
+          "qla"
+        ],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 4,
+        "host_verse_words": 7,
+        "register": "narrative",
+        "splits_constituent": true,
+        "surah": 20,
+        "verse": 105,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 4,
+        "host_verse_words": 5,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 23,
+        "verse": 3,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 4,
+        "host_verse_words": 5,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 37,
+        "verse": 45,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 4,
+        "host_verse_words": 2,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 56,
+        "verse": 29,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 4,
+        "host_verse_words": 5,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 68,
+        "verse": 10,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 4,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 1,
+        "verse": 2,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 11,
+        "register": "legal_medinan",
+        "splits_constituent": false,
+        "surah": 3,
+        "verse": 3,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": [
+          "qla",
+          "qla"
+        ]
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 7,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 16,
+        "verse": 6,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": [
+          "jim"
+        ]
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 14,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 16,
+        "verse": 7,
+        "waqf_marks_in_host_verse": [
+          "jim"
+        ],
+        "waqf_marks_in_next_verse": [
+          "jim"
+        ]
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 4,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 23,
+        "verse": 4,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 7,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 23,
+        "verse": 57,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 4,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 37,
+        "verse": 41,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": [
+          "sla"
+        ]
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 3,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 37,
+        "verse": 42,
+        "waqf_marks_in_host_verse": [
+          "sla"
+        ],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 8,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 38,
+        "verse": 12,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": [
+          "jim"
+        ]
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 16,
+        "register": "eschatological_mufassal",
+        "splits_constituent": false,
+        "surah": 39,
+        "verse": 4,
+        "waqf_marks_in_host_verse": [
+          "jim",
+          "sla"
+        ],
+        "waqf_marks_in_next_verse": [
+          "qla",
+          "sla",
+          "sla",
+          "sla"
+        ]
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 6,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 40,
+        "verse": 2,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": [
+          "sla",
+          "sla"
+        ]
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 9,
+        "register": "narrative",
+        "splits_constituent": true,
+        "surah": 40,
+        "verse": 70,
+        "waqf_marks_in_host_verse": [
+          "sla"
+        ],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 17,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 43,
+        "verse": 33,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 6,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 50,
+        "verse": 24,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 2,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 51,
+        "verse": 1,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 4,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 53,
+        "verse": 50,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 1,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 55,
+        "verse": 1,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 5,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 56,
+        "verse": 18,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 2,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 56,
+        "verse": 30,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 2,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 56,
+        "verse": 36,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 3,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 56,
+        "verse": 77,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 5,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 56,
+        "verse": 88,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 6,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 56,
+        "verse": 90,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 3,
+        "register": "narrative",
+        "splits_constituent": false,
+        "surah": 68,
+        "verse": 11,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 4,
+        "register": "liturgical_didactic",
+        "splits_constituent": false,
+        "surah": 70,
+        "verse": 1,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 4,
+        "register": "eschatological_mufassal",
+        "splits_constituent": false,
+        "surah": 78,
+        "verse": 21,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 3,
+        "register": "eschatological_mufassal",
+        "splits_constituent": false,
+        "surah": 80,
+        "verse": 13,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 3,
+        "register": "eschatological_mufassal",
+        "splits_constituent": true,
+        "surah": 81,
+        "verse": 8,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 3,
+        "register": "eschatological_mufassal",
+        "splits_constituent": false,
+        "surah": 81,
+        "verse": 15,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      },
+      {
+        "crossing_arcs": 3,
+        "host_verse_words": 3,
+        "register": "eschatological_mufassal",
+        "splits_constituent": false,
+        "surah": 82,
+        "verse": 10,
+        "waqf_marks_in_host_verse": [],
+        "waqf_marks_in_next_verse": []
+      }
+    ],
+    "R8_all_register_rates": {
+      "eschatological_mufassal": {
+        "n_boundaries": 844,
+        "sealed_rate": 0.7002369668246445
+      },
+      "legal_medinan": {
+        "n_boundaries": 1391,
+        "sealed_rate": 0.895039539899353
+      },
+      "liturgical_didactic": {
+        "n_boundaries": 1240,
+        "sealed_rate": 0.7596774193548387
+      },
+      "narrative": {
+        "n_boundaries": 2647,
+        "sealed_rate": 0.8213071401586702
+      }
+    }
+  },
+  "tests_in_family": 6,
+  "verdict": "FĀṢILA-AS-CLAUSE-SEAL SUPPORTED; EQTB-ANNOTATION-LIMITED"
+}
