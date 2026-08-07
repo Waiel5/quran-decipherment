@@ -37,6 +37,74 @@ Every number below is cited to a file. Nothing here is asserted from memory.
 > The lesson of the day is now stated twice over: **a law that has never met a control is a
 > description, and a p-value computed against the wrong null is a number, not a strength.**
 
+> ### Updated again, late on 2026-08-07 — four further audits, and one of them cuts both ways
+>
+> Four more findings landed after the two above. They are recorded here at their own strength,
+> and the most important thing in them is **not** a new law — it is that the same defect that
+> demoted a dozen overclaims also **concealed a real one**.
+>
+> - **H-NEW-2820** audited the two most-cited flagged claims in the repository. They moved in
+>   **opposite** directions. H-NEW-126 Cell A collapsed into its denominator. **H-NEW-570's
+>   published NULL reversed** — the muqaṭṭaʿāt *are* a content cluster. New §1.6 and two §2 rows.
+> - **H-NEW-2840** asked what that cluster is made of. **It is one cluster and the letters do not
+>   carve it.** §1.6.
+> - **H-NEW-2850** measured whether derivational form tracks subject agency. `NULL` under its
+>   locked gate on both classifiers, with a large association that survives the confound that was
+>   supposed to kill it. New §1.7.
+> - **H-NEW-2810** re-derived the nine hard-coded literals circulating in this repository. **Seven
+>   confirm exactly.** H-NEW-192's two are reachable but its published model is not. New §2 row.
+>
+> The lesson is now stated a third time, in the direction nobody was watching: **a null that
+> cannot draw the thing it compares against is not a comparison, and it hides a result as
+> readily as it manufactures one.**
+
+---
+
+## 0. The control-first rule — read this before reporting any group result
+
+**Two claims were reported with enthusiasm on 2026-08-07 before their obvious control had been
+run. Both died.** They were reported hours apart, by the same discipline that had spent the
+whole day dismantling other people's uncontrolled claims. The rule that follows is written at
+the top of this document because that is where it would have been read in time.
+
+> **Before reporting any striking group result, check whether the group is contiguous,
+> size-homogeneous, or period-homogeneous — and run that control first, not second.**
+
+**The worked example is the ḥawāmīm, and it is worked here because it is the one that got
+furthest.** H-NEW-2820 found the ḥawāmīm-7 at the **0.05th percentile** of a size-matched null —
+10.7 % tighter in root content than size-matched surah sets, in every arm including the
+parameter-free one. That was reported as the cleanest result in the finding. **The ḥawāmīm are
+surahs 40–46: seven consecutive chapters of similar length.** The control that fact demands —
+compare them to other consecutive runs — was not run until H-NEW-2840, several hours later. It
+returns: the ḥawāmīm sit at the **47.71st percentile** of all 109 consecutive six-blocks in the
+mushaf taken raw, and matched partitions of al-Bukhārī and al-Jāḥiẓ cut at the same seven slots
+reproduce their tightness **47.5 % and 52.0 %** of the time. The result is not refuted, and it is
+not a discrimination either.
+
+**The second case is the scansion ordering.** H-NEW-2690 reported that this corpus sits between
+poetry and prose in metricality and read it as al-Bāqillānī's *neither* nathr *nor* shiʿr,
+operationalised. The control that fact demands — hold unit length fixed — was not run until
+H-NEW-2730. Re-cutting this corpus's **own verses** to ḥadīth sentence lengths moves the
+statistic **99.4 %** of the way to ḥadīth's value, using no baseline text at all (§1.5).
+
+**Three homogeneities, and the check for each is one line of code:**
+
+| if the group is… | the control | the case |
+|:--|:--|:--|
+| **contiguous** in the mushaf | compare against consecutive runs of the same length — and match them on size and period | ḥawāmīm 40–46, ALM's blocks, ṭawāsīn 26–28 |
+| **size-homogeneous** | match the null on the size channel with the highest size-only R², ranked on the data | H-NEW-126's core-5, H-NEW-570's 29, the whole compression-tail family |
+| **period-homogeneous** | cross-stratify on Meccan/Medinan | the muqaṭṭaʿāt are 10.3 % Medinan against 29.4 % for the rest; it is worth a third of H-NEW-570's matched effect and all of H-NEW-2840's vocabulary result |
+
+**And the cheapest diagnostic of all, which precedes every p-value: does the null model ever
+draw a comparison set like the observed one on the nuisance channel?** For H-NEW-570 the answer
+was **0 of 10,000**. One line of code, no new statistic, and it settled the claim before any
+p-value was computed.
+
+Sources: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md` §§2.2, 3.3;
+`findings/phase-b-hypotheses/h-new-2840-muqattaat-cluster-structure.md` "THE CONTIGUITY CONTROL"
+§§C1, and §7.3(b); `findings/phase-b-hypotheses/h-new-2730-scansion-genre-control.md`; the
+general rule and its screens, `findings/UNIT-DRIFT-DEFECT.md` §3 Screen B and §4.1.
+
 ---
 
 ## 1. What survives, with its actual strength
@@ -184,6 +252,164 @@ or religious Arabic prose.
 
 Source: `findings/phase-b-hypotheses/h-new-2730-scansion-genre-control.md`.
 
+### 1.6 The muqaṭṭaʿāt surahs are one content cluster — **and the letters explain nothing about it**
+
+**This entry exists because a published NULL turned out to be wrong in the direction nobody
+audits.** It has two halves and they must be read together, because a reader who takes only the
+first will overclaim and a reader who takes only the second will miss a real result.
+
+**(a) The cluster is real, and it was hidden by the same defect that demoted everything in §2.**
+`h-new-570` reported that the muqaṭṭaʿāt are **not** a content cluster — 65.62nd percentile,
+"orthogonal to content" — and thirty external files inherited that as evidence of absence.
+H-NEW-2820 reproduced its arithmetic exactly (`d̄ = 0.938813123152709` against a published
+`0.9388131231527093`) and then asked the cheap question: **does its null ever draw a set as
+large as the muqaṭṭaʿāt? Not once in 10,000 draws.** Size-matched, the 29 fall from the 65.62nd
+percentile to the **0.45th**, crossing the claim's own 10 % bar; cross-stratified on period as
+well they sit at **5.44**. H-NEW-2840 rebuilt the matrix in a separately written harness and
+reproduces this at **5.48** period-matched and **0.43** size-only. The effect is small and the
+percentile is not: the 29 are **3.6 % tighter** in root content than size-matched surah sets.
+The ḥawāmīm-7 are **10.7 % tighter**, at the **0.05th** percentile.
+
+**It is not adjacency, and that is the strongest single thing here.** Twenty-four of the 29 sit
+in a mushaf run of length ≥ 2. Delete **every** pair within ten mushaf positions of each other —
+123 of the 406 pairs — and recompute the null under the identical restriction: the remaining 283
+pairs leave the result at the **5.25th** percentile against **5.07** unrestricted. **The
+clustering is carried by the surahs that are nowhere near each other.** Nor do the baselines
+reproduce it: only **6.5–10 %** of arbitrary matched partitions of al-Bukhārī or al-Jāḥiẓ reach
+the Qurʾān's value, in two instruments that agree.
+
+**(b) The letters do not carve the cluster. Every arm that asked them to, failed.**
+
+- **The set is *less* internally sub-structured than matched sets**, not more — max silhouette
+  **0.0829** against a null mean of 0.1103, at the **9.31st percentile**. The registered direction
+  was the opposite one.
+- **What structure exists is size, and it cuts across the letter classes.** At k = 4 the two large
+  clusters differ by a factor of **1.7** in median word count (1159 against 694) and split the
+  ḥawāmīm, ALM and ALR down the middle. The dendrogram is a size gradient wearing no letters.
+- **"The opening string predicts content position" fails at the corrected bar** — Δ = −0.03378 at
+  **p = 0.0325** (free permutation) and 0.0348 (size-restricted) against **α_bon = 0.00417** over
+  the registered family of twelve. **And the whole of it is one class**: dropping the ḥawāmīm
+  takes p from 0.0325 to **0.156**, while dropping any other class leaves it where it was or
+  improves it.
+- **The fact that needs no null at all:** of the 19 surahs belonging to a multi-member letter
+  class, **only 4 have their nearest neighbour inside their own class** — two pairs, Q 2 ↔ Q 3 and
+  Q 41 ↔ Q 46. **Fifteen of nineteen sit closest to a surah that opens with a different string.**
+- **No root distinguishes the 29 from the other 85 once size and period are held fixed** —
+  **0** roots survive BH at q = 0.05, against **19** under the size-blind null. And the size-blind
+  list is a **Meccan-versus-Medinan register list**: *say*, *sign*, *follow* enriched; *oath*,
+  *riḍwān*, *mawlā*, *jihād*, *food* depleted. The muqaṭṭaʿāt are 10.3 % Medinan against 29.4 %
+  for the rest. Its fourth-strongest depletion, `Alw` الو, has **31 of its 37 corpus tokens in
+  Q 55 al-Raḥmān alone** — a surah that is not one of the 29.
+- **These 29 surahs group as long Meccan surahs, not as letter-sharers.** That sentence is the
+  finding.
+
+**Two classes must be named individually, because they are the two a reader will ask about.**
+
+- **The ḥawāmīm are the one arm that clears α_bon** — ḤM-6 at **p = 0.00090**, the 0.08th matched
+  percentile — **and then lose the genre control**: they are the contiguous run Q 40–46, they sit
+  at the **47.71st percentile** of all 109 consecutive six-blocks taken raw, and matched
+  partitions of al-Bukhārī and al-Jāḥiẓ cut at the same slots reproduce them **47.5 % / 52.0 %**
+  of the time. Adding Q 42 destroys the within-corpus result too (p = 0.199). See §0.
+- **ALM is the opposite shape and is the one open question worth a purpose-built test.** It is
+  the non-contiguous family — {Q 2, 3} and {Q 29–32}, two blocks twenty-six surahs apart — so
+  adjacency cannot explain it. It sits at the **2.81st** matched percentile (z = −1.950,
+  p = 0.0282), beats size-and-period-matched consecutive blocks at **z = −7.77, p = 1 × 10⁻⁴**,
+  and is reproduced by only **10.5 % / 13.0 %** of arbitrary baseline offsets — the best genre
+  margin of any class. Strip its own internal adjacency and score only its **8 cross-region
+  pairs**: still directional at **p = 0.046**. **It never clears α_bon = 0.00417 and it survives
+  every control put to it.** Neither ALM nor the ḥawāmīm is established; they fail in opposite
+  ways, and ALM is the one a next test should be built for.
+- And **al-Biqāʿī's Q 29–32 "tight Meccan block" is adjacency and nothing else** — 66.42nd
+  percentile of matched consecutive blocks, 33.67th under the period-matched null. **ALR**, the
+  family with the strongest classical prior, moves the *wrong* way under matching: from the 56th
+  size-blind percentile to the **79.31st**, more dispersed than matched sets.
+
+**Three qualifications travel with this entry and are not separable from it.**
+
+1. **The matched null is more than half this group.** A "matched random 29-set" is on average
+   **16.32 of the muqaṭṭaʿāt themselves** (56.3 % overlap), because the 29 dominate the upper size
+   range. Every matched NULL above — the vocabulary result above all — is correspondingly **weak
+   evidence of absence**, and every matched pass is conservative.
+2. **Conditioning on size may remove mechanism, not only confound.** `h-new-46` is a STRONG-PASS
+   that muqaṭṭaʿāt concentrate in long surahs; a size-matched comparison group of 29
+   non-muqaṭṭaʿāt **cannot be built from the other 85 at all** (bin 3 of 5 needs 14 donors and
+   contains 9). The correct reading is narrow: *given surah sets of the same size profile*, the
+   muqaṭṭaʿāt set is measurably tighter in root content.
+3. **This is not a vindication of al-Biqāʿī and not a refutation of al-Suyūṭī.** It removes an
+   empirical falsification; it decodes nothing. What is withdrawn is the assertion that the
+   statistic *empirically vindicated* epistemic humility — the statistic was measuring the size
+   of the surahs. And **this is not an independent confirmation of Pillar 1**: same 29 surahs,
+   same corpus, same selection. Removing the entire revelation-and-recitation vocabulary — Book,
+   recite, send down, sign, remind, inspire, criterion, 1,587 tokens — moves the matched
+   percentile only from 5.48 to **6.94**, which refutes double-counting but does not make two
+   properties of one group into two results.
+
+Sources: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md` §§1, 2.2, 3.2, 3.3, 4.2,
+7.2, 8; `findings/phase-b-hypotheses/h-new-2840-muqattaat-cluster-structure.md`
+§§"THE CONTIGUITY CONTROL", "ALM", 2, 3, 3.1, 3.2, 4, 5, 7.1, 7.3, 8, 11;
+`findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
+### 1.7 Form and agency — **`NULL` under the locked gate, and the failure is power, not the effect**
+
+H-NEW-2850 asked whether derivational verb form tracks the agency class of the grammatical
+subject, and whether any such correlation survives being conditioned on transitivity — since form
+is already known to track object realization (§1.3). **The verdict is `NULL` on both classifiers
+and it is not being overridden.** But a `NULL` that fails on one specific clause is not the same
+as an absence, and the difference is stated here rather than left to the finding.
+
+**What failed.** The pre-registration required, for any arm to count, that **both** the exact
+root-level sign test **and** the token-level permutation null clear a raw p of 0.0005. **Null B
+clears it on four of five `C-WIDE` arms and two of five `C-STRICT` arms. The root-level sign test
+clears it on none** — its best value anywhere is **5.40 × 10⁻³**. Under the locked conjunction no
+arm passes. The stricter of two disagreeing nulls is the root-level one, and it fails.
+
+**What did not fail, stated at the same prominence.**
+
+- **The association is large.** Divine-subject rate **0.5089** for Form II against **0.1176** for
+  Form V; the two causatives sit at 0.44–0.52, the base form at 0.24–0.25, the four *muṭāwiʿ*
+  forms at 0.00–0.23. **The person-free classifier reproduces the ordering** — `C-STRICT`, which
+  never sees a person feature, puts Form II at **0.5214** against Form V at **0.0694** — so this
+  is not the corpus's person deixis wearing an agency label.
+- **All five locked `C-WIDE` signs hold, including both causative reverse-controls**, so the
+  pre-committed `INSTRUMENT-CONFOUNDED` escape hatch was available and the data did not take it.
+  **48 of 50 signed sensitivity cells** hold their locked direction; the two that do not are both
+  `C-STRICT` cells at 3 and 4 roots.
+- **It survives the confound that was supposed to kill it.** Conditioning on overt object
+  realization (Cochran–Mantel–Haenszel, strata = root × object-clitic) leaves every well-powered
+  arm pointing the same way **inside both strata**, at odds ratios of **6.21, 3.22, 0.292 and
+  0.217** — on opposite sides of 1 exactly as the doctrine predicts.
+
+**So the honest reading is that the evidence is token-weighted rather than lexically general.**
+Ten roots of fourteen point the predicted way on II→V, against eighteen of nineteen in the parent
+object-realization result. This project's registered bar for a confirmatory claim is lexical
+generality, and it should stay that way.
+
+**The queued redesign, and why the current one cannot answer the question.** Eligibility requires
+**≥2 classified tokens of each form, of the same root** — so a root only becomes evidence when the
+corpus supplies both members of the pair *and* the classifier can see the subject of both. It
+usually cannot: the primary classifier covers **15.94 %** of active verbs, **8,479 third-person
+verbs carry no explicit subject** and are invisible to it, and the arm testing III→VI has **zero
+eligible roots** while I→II has three. The showcase root ط ه ر is the case in miniature — it has
+nine Form II tokens, the classifier sees **three**, and the six it cannot see are exactly the
+divine-agent ones, including the showcase verse itself. **A next test must therefore stop making
+the within-root form-pair the unit of evidence** — it must not require both forms *and* both
+subject types to co-occur inside one root. Two routes are open and neither needs new annotation:
+score each form against the corpus-wide subject-class base rate so a root contributes on one form
+alone, or resolve the subjectless third-person verbs by coreference and re-run the existing
+design on the coverage that unlocks. *(Queued, not registered — this is the implication of the
+finding's own §5 and §9.3 diagnosis, not a result in it.)*
+
+**One self-reported bias travels with the entry.** Of the 2,903 explicit-subject classifications,
+**79 (2.72 %)** take a subject whose word carries a clause-linking prefix, and **43 of the 811
+divine calls (5.30 %)** are of that kind. It is form-correlated — Form X 14.29 %, Form IV 3.97 %,
+Form I 2.55 %, Form II 0.71 % — and **it runs in the direction that favours the hypothesis**,
+since Form IV is the causative in the strongest arm. The absolute numbers are small (15 Form IV
+tokens corpus-wide) and the correction was not registered and not applied.
+
+Source: `findings/phase-b-hypotheses/h-new-2850-agency-grammar.md` §§2.2, 3, 3.1, 4, 5, 7, 8, 9;
+eligibility rule at `findings/phase-b-hypotheses/prereg-h-new-2850-agency-grammar.md` §7.1,
+decision rule §9.
+
 ---
 
 ## 2. What fell on 2026-08-07, and why
@@ -209,6 +435,10 @@ One line each: the claim, the control, the number.
 | **The four p-values** | multiply to ~10⁻¹² | check what each null randomises | they are **not commensurable**; only one multiplication is licensed (L1 × L2), and its L2 factor does not mean what it appears to |
 | **Pillar 1's p-value** *(evening)* | 24/29 book-reference at **p = 3.17 × 10⁻¹²** | a null that permutes the label **within opening-window-size quintiles** | the **law survives** (§1.1) but the p-value is **withdrawn**: it prices an exchangeable null this corpus does not satisfy. Rate ratio **2.580** against the registered channel, **1.694** against the stronger one |
 | **The scansion ordering** *(evening)* | poetry < this corpus < prose on `d_min`, "measurably more metrical than prose" | re-cut **this corpus's own verses** to ḥadīth sentence lengths; matched partitions of two ḥadīth corpora | the prose leg moves **99.4 %** of the way to ḥadīth; a matched al-Dārimī partition **ties** it at 0.22222; al-Bukhārī's **beats** it at 199/200 offsets. **H1b withdrawn; H1a survives** (§1.5) |
+| **H-NEW-126's isolate core** *(late)* | the five surahs {Q 16, 21, 22, 23, 25} share root vocabulary at **2.64×** chance, p = 0.0009 — **32 external citing files**; the test that would settle it was queued as "H-NEW-126.1" and never run | permute group membership within quantile bins of the group's own dominant channel, ranked on the data (log root-set size, ρ = +0.9398) | **1.002×, p = 0.459** — the null mean rises from 0.129 to **0.341**, which *is* the observed value. **79 % of the published enrichment is the mechanical Jaccard ceiling** `min\|R\|/max\|R\|`, which uses no vocabulary overlap at all. Cutting al-Bukhārī or al-Jāḥiẓ at the same five slots reproduces it at **z = +3.19 / +3.55** against this corpus's +3.79, and after matching the baselines are the *more* extreme ones |
+| **H-NEW-570's published NULL** *(late)* — **and it fell in the other direction** | the muqaṭṭaʿāt are **not** a content cluster: 65.62nd percentile, "orthogonal to content", al-Suyūṭī "EMPIRICALLY VINDICATED", al-Biqāʿī "UNSUPPORTED" — **30 external citing files** | ask the one-line question first: does the null ever draw a set as large as the observed one? | **0 of 10,000.** The null it was scored against contained **no comparison set of comparable size at all**. Size-matched, the 29 move to the **0.45th** percentile (5.44 cross-stratified on period) and the ḥawāmīm-7 to the **0.05th**. **A flagged NULL reversed into a positive result** — the four quoted conclusions are withdrawn as empirical results, and the cluster is §1.6 |
+| **H-NEW-600's DOUBLE NULL** *(late)* | ALM-6 and ALR-5 are both NULL; ALR is *"the decisive falsifier… the family with the strongest prior is the one most thoroughly NULL"* | the size-and-period-matched null H-NEW-600 §9 queued as "the cheap next step" and never ran | **the two halves move in opposite directions.** ALM 43.15 → **2.81** (toward cohesion, p = 0.0282, still short of α_bon); ALR 56.25 → **79.31**, *more* dispersed than matched sets — **the ALR sentence survives matching and hardens.** H-NEW-600's honest-limit 7, *"length-controlled per H-NEW-111 MW-1, so this is not a confound"*, is **asserted, never computed, and false**: `d̄` correlates with mean log word count at **ρ = +0.8998**. Its queued H-NEW-620 and H-NEW-630 both return NULL under matching (49.17th, 33.67th) |
+| **H-NEW-192's model** *(late)* | mushaf position decomposes at Ridge **R² = 0.759** and RF **0.817**, *"verse-count dominates (~42 % of importance)"* — `verdict: STRONG PASS`, asserted in 15 markdown files, and hard-coded as H-NEW-233's literal decision thresholds | exhaustive evaluation of **all 20,349** admissible 15-feature sets, with the published importance vector as a second, independent constraint | the R² are **reachable and therefore not evidential**: 15 sets hit 0.759 where a normal approximation predicts **≈ 198** by chance, and 30 of 100 reach 0.817. **No candidate reproduces the importance vector** — **0 of 100** match rank order and the best misses by **16×** its bar. The best simultaneous candidate **inverts the published top feature**: verse_count 0.416 → **0.133** while type_token_ratio 0.095 → **0.635**, a deviation of **27×** the bar. **`REACHABLE-BUT-NOT-IDENTIFIED`** — the published number is recoverable by coincidence; the published model is not recoverable at all |
 
 Full evidence: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md` and
 `findings/GENRE-CONTROL-CORRECTION-2026-08-07.md`. Per-file correction status:
@@ -216,6 +446,25 @@ Full evidence: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md` and
 `findings/GENRE-CONTROL-INVENTORY-2026-08-07.md`. The two evening rows:
 `findings/phase-b-hypotheses/h-new-2760-muqattaat-book-reference-nuisance.md` and
 `findings/phase-b-hypotheses/h-new-2730-scansion-genre-control.md`.
+
+**The four late rows, and §§1.6–1.7:**
+`findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`,
+`findings/phase-b-hypotheses/h-new-2840-muqattaat-cluster-structure.md`,
+`findings/phase-b-hypotheses/h-new-2810-unverifiable-rederivation.md`,
+`findings/phase-b-hypotheses/h-new-2850-agency-grammar.md`, and
+`findings/H-NEW-570-REVERSAL-2026-08-07.md`. The mechanism common to all of them, with its three
+detection screens and the grouping form of Screen B, is `findings/UNIT-DRIFT-DEFECT.md`.
+
+**One result in that batch belongs here as a credit rather than a correction, and it is recorded
+because naming the clean cases is part of the rule.** H-NEW-2810 scanned every script in the
+repository for a numeric literal bound to a *different* finding's name — a generator, not a
+remembered list — and found nine, four of which nobody had previously identified. **Seven confirm
+exactly against their own artifacts**, several to ten decimal places. The strongest is
+H-NEW-1710's Mūsā total of **136**, the only one re-derived from the corpus rather than from an
+artifact: counting Leeds QAC tokens with `LEM:muwsaY\`` returns 136, agreeing three separate ways.
+**Only H-NEW-192's two fail both checks.** A CONFIRM here is a transcription check and not a
+validation — H-NEW-233's two constants reproduce perfectly and still do not survive a size-matched
+null — but the constants circulating in this repository are, with one exception, exactly right.
 
 **Nothing was deleted.** Every original claim remains in place with a notice beside it. The
 record of what was believed and when is itself evidence, and erasing it would be a second
