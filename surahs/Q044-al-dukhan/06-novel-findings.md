@@ -139,6 +139,24 @@ Q 44's HM-7 partners (mean FR = 0.9072):
 
 This **empirically replicates** at the per-surah level the corpus-level finding of [[h-new-600-letter-families|H-NEW-600]] and [[h-new-570-muqattaat-content-cluster|H-NEW-570]]: **letter-family clusters are letter-class-defined, NOT content-defined**. Q 44 is one of the most striking individual exemplars of this orthogonality, since its content-cohesion to non-HM-7 surahs is so much stronger than to its own letter-cluster.
 
+> **⛔ CORRECTION — 2026-08-07: there is no corpus-level NULL left to replicate.** H-NEW-570's
+> ḥawāmīm result was scored against draws of 7 surahs uniform from 114, while its distance
+> statistic rises steeply with set size and the ḥawāmīm are among the corpus's larger surahs.
+> **Size-matched, HM-7 sits at the 0.05th percentile — 10.7 % tighter in root content than
+> size-matched surah sets, corpus-extreme in every arm.** "Letter-family clusters are
+> letter-class-defined, NOT content-defined" is withdrawn as a corpus-level result;
+> H-NEW-600's ALM-6 / ALR-5 arms use the same size-blind design and are **untested, not
+> cleared**.
+>
+> **Q 44's own nearest-neighbour result stands as arithmetic and is FLAGGED, not overturned.**
+> It is a per-surah ranking with no null draw, so H-NEW-2820 does not touch it — but it has
+> never had a size control on an instrument whose distances are strongly size-dependent, and its
+> neighbour set spans 3-verse and 60-verse surahs. Whether Q 44's content-affinity to the
+> eschato-mufaṣṣal survives holding surah size fixed is unmeasured. Per
+> `findings/UNIT-DRIFT-DEFECT.md` §6.5, that is a flag and not a verdict change. **What must
+> stop is citing Q 44 as an exemplar of a corpus-level orthogonality that has reversed.**
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 **The dual-iʿjāz typology connection**: Q 44 sits content-cohesively at a corpus-position where multiple architectural axes converge:
 - Letter-family axis: HM-7 (deceptive surface-clustering).
 - FR-content axis: eschatological-mufaṣṣal cluster.

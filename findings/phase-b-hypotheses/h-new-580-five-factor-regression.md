@@ -19,6 +19,35 @@ verdict: DIRECTIONAL — model is OOS-predictive at r=0.929 (Ridge); fails STRIC
 # [[h-new-580-five-factor-regression|H-NEW-580]] — 5-Factor Cohesion Regression: Quantitative Confirmation
 
 
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: `parent_2` has REVERSED — the muqaṭṭaʿāt-axis is not ⊥ content
+>
+> This file's frontmatter names **`parent_2: H-NEW-570 (muqaṭṭaʿāt-axis ⊥ content-axis)`**, its
+> `status` line claims *"formula_share confirmed orthogonal to muqaṭṭaʿāt-axis (H-NEW-570
+> replicated at OOS scale)"*, and §5 reads the Q 7–15 model-miss (observed 78 %ile against a
+> predicted 36 %) as **"the H-NEW-570 finding REPLICATED at out-of-sample scale"**.
+>
+> **H-NEW-570 has reversed.** Its null drew 29 surahs uniformly from 114 while `d̄` rises
+> steeply with set size and the muqaṭṭaʿāt are 4.27× the median word count of the rest; it
+> never drew a set as large as the muqaṭṭaʿāt in 10,000 draws. Size-matched, the full-29 sit at
+> the **0.45th** percentile and the ḥawāmīm-7 at the **0.05th** — the sets are clustered, not
+> orthogonal to content.
+>
+> **What follows for §5, precisely.** The Q 7–15 OOS arm is a **separate 5-subset test with its
+> own uniform null**, so it is not retracted by H-NEW-570's reversal — but it can no longer be
+> described as *replicating* it, because there is nothing left to replicate. **Its own null is
+> the same size-blind design**, applied to a 9-surah letter-family band that includes some of the
+> corpus's longest surahs, so the arm is **UNTESTED under a size-matched null, not cleared.**
+> The honest current status of §5 is: an unexplained OOS miss whose stated explanation has been
+> withdrawn.
+>
+> The Ridge coefficient `+0.11 · formula_share` and the OOS r = 0.929 headline are untouched by
+> this notice; what changes is the *interpretation* of the near-zero formula_share coefficient
+> as confirming an orthogonality that no longer stands.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
+
 > ## ⛔ CORRECTION NOTICE — 2026-08-07: the iʿjāz anti-twin is REVERSED under a matched control
 >
 > **The arithmetic reproduces** — an independent surface-instrument rebuild returns

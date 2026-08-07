@@ -150,6 +150,46 @@ Getting this right deserves the credit, and naming the clean cases is part of th
 no code in the repository produces the claim's headline number — dominates both and must be
 screened for first. See §6.3.
 
+### 4.1 The sharpest case: a flagged NULL can REVERSE into a positive result
+
+**Added 2026-08-07 from H-NEW-2820, and it is the case that most changes how this rule should be
+read.** Every other flagged claim in this document was an *over*claim waiting to be cut down.
+H-NEW-570 was the opposite:
+
+> **A published NULL — "the muqaṭṭaʿāt are not a content cluster", 30 external citing files —
+> was an artefact of its own null. Size-matched, the muqaṭṭaʿāt-29 move from the 65.62nd
+> percentile to the 0.45th and the ḥawāmīm-7 from 20.90 to 0.05. The sets ARE clustered.**
+
+Three things follow that the rest of this document did not say.
+
+1. **The defect is direction-agnostic.** A denominator that inflates a statistic for the group
+   under test produces a *false negative* exactly as readily as a false positive. The screens in
+   §3 were written while cutting down overclaims and their prose reads that way; **apply them
+   with equal suspicion to any claim of absence.**
+2. **A retired NULL propagates worse than a retired positive.** Downstream work inherits a
+   positive as a citation; it inherits a NULL as **evidence of absence** — as a reason not to
+   pursue something, or as a contrast case propping up a different claim. H-NEW-1760's whole
+   frame is "whole-surah NULL → rescued at pericope scale"; H-NEW-600's is "the parent
+   generalization VINDICATED". Neither survives its parent's reversal, and neither would have
+   been found by grepping for the *number*.
+3. **The cheapest decisive diagnostic in this document is not in the §6 list, and it should be.**
+   Before computing anything, ask: **does the null model ever draw a comparison set like the
+   observed one on the nuisance channel?** For H-NEW-570 the answer was **0 of 10,000**. That is
+   one line of code, it needs no new statistic, and it settles the claim before any p-value —
+   *a null that cannot draw the thing it compares against is not a comparison.* The mirror fact
+   is equally cheap and equally decisive: for the muqaṭṭaʿāt split a size-matched comparison
+   group **cannot be built from the 85 non-muqaṭṭaʿāt at all** (bin 3 of 5 needs 14 donors and
+   contains 9), which is `h-new-46`'s STRONG-PASS stated as an impossibility.
+
+**Add the grouping channel to §3's table when working the muqaṭṭaʿāt split:** dominant channel
+for a Fisher–Rao `d̄` over root distributions is **log word count** (ρ = **+0.8998**), with log
+root-set size second (+0.8554) and log verse count third (+0.8395) — *not* the same ranking as
+for H-NEW-126's Jaccard, where log root-set size leads at +0.9398. **Rank on the data every
+time; the winner changes between statistics on the same grouping.**
+
+Sources: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`;
+`findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 ---
 
 ## 5. The standing requirement

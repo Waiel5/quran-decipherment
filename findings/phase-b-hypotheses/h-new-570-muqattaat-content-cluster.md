@@ -18,6 +18,43 @@ verdict: NULL on PRIMARY + MW-5; muqaṭṭaʿāt-axis is ORTHOGONAL to content-
 
 # [[h-new-570-muqattaat-content-cluster|H-NEW-570]] — Muqaṭṭaʿāt orthogonal to content; classical humility vindicated
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: this NULL REVERSES. The sets ARE clustered.
+>
+> **The arithmetic below reproduces exactly** — `d̄` = 0.938813123152709 and 0.867242285714286,
+> both to fifteen significant digits, and both percentiles to the hundredth. Nothing here is
+> wrong as arithmetic. **What is withdrawn is what the percentiles measure.**
+>
+> `d̄` rises steeply with set size (ρ = **+0.8998** against mean log word count, measured on this
+> finding's own null draws) and the muqaṭṭaʿāt surahs are **4.27×** the median word count of the
+> other 85. **The null used below never once drew a set as large as the muqaṭṭaʿāt — 0 of
+> 10,000.** It priced a comparison that does not exist.
+>
+> Under a null permuting muqaṭṭaʿāt membership *within quintile bins of log word count*:
+>
+> | set | published %ile | **matched %ile** | k = 10 | × period |
+> |:--|--:|--:|--:|--:|
+> | muqaṭṭaʿāt-29 | 65.62 | **0.45** | 0.82 | 5.44 |
+> | ḥawāmīm-7 | 20.90 | **0.05** | 0.02 | 0.21 |
+>
+> The muqaṭṭaʿāt-29 are **3.6 % tighter** in root content than size-matched surah sets and the
+> ḥawāmīm-7 **10.7 % tighter**, crossing this finding's own `pct ≤ 10` bar in every estimable
+> matched arm, at both bin widths, in both seeds. **All four of §§1–4's assertions —
+> "ORTHOGONAL to content-axis", "al-Suyūṭī/al-Rāzī EMPIRICALLY VINDICATED", "al-Biqāʿī
+> empirically UNSUPPORTED", ḥawāmīm "moderate only" — are withdrawn as empirical results.**
+>
+> **Read the limits with the reversal, because it is narrower than it sounds.** It does **not**
+> vindicate al-Biqāʿī — it removes a falsification; a 3.6 % tightening is not *munāsaba*. It
+> does **not** refute al-Suyūṭī — nothing here decodes anything. **A third of the matched effect
+> is Meccan/Medinan composition**, and 5.44 is the number to quote when only one can be. And
+> holding size fixed may remove mechanism as well as confound: a size-matched comparison group
+> **cannot be built from the 85 non-muqaṭṭaʿāt at all** (bin 3 needs 14 donors, has 9).
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice, propagation inventory, and the Pillar 1 independence assessment:
+> `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
+
 ## 1. Headline
 
 | Test | N | d̄ | %ile | Verdict |

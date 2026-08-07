@@ -225,6 +225,20 @@ Each was REFUTED or failed replication in this repository. Citations are where t
    → Do NOT assign arithmetic-fraction miracles to sūras (except Q112 *thuluth* which is a CENTRALITY/theological-density finding, NOT an arithmetic count — keep that distinction sharp).
 
 4. **Muqaṭṭaʿāt as a content-cluster / hidden meaning** — full-29 NULL (65.62%ile); ALM-6 NULL; ALR-5 NULL; HM-7 NULL — al-Biqāʿī content-munāsaba FALSIFIED 5×; al-Suyūṭī's epistemic humility (*Itqān* nawʿ 40, "their meaning is unknowable") VINDICATED. `KNOWLEDGE-GRAPH.md` muqaṭṭaʿāt section; `findings/phase-b-hypotheses/h-new-570-muqattaat-content-cluster.md`.
+
+   > **⛔ CORRECTION — 2026-08-07: item 4 belongs in this list for a different reason than stated.**
+   > The null behind all these percentiles draws K surahs uniformly from 114 while its distance
+   > statistic rises steeply with set size; the muqaṭṭaʿāt are 4.27× the median word count of the
+   > other 85, and **0 of 10,000 draws reached the group's size**. Size-matched, the **full-29
+   > sit at the 0.45th percentile and the ḥawāmīm-7 at the 0.05th** — they *are* a content
+   > cluster, modestly (3.6 %) for the 29 and strongly (10.7 %) for the ḥawāmīm. "FALSIFIED 5×"
+   > is withdrawn.
+   >
+   > **But the entry's place in a false-trails list is unchanged**, because the reversal decodes
+   > nothing. A small measured cohesion among size-matched peers is not a hidden meaning and not
+   > *munāsaba*. **"Hidden meaning" remains a false trail; "no content cluster at all" was also
+   > wrong.** Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
    → The disjoined letters ARE a real distinctive marker (book-introduction signal), but you may NOT decode them or claim they cluster sūras by meaning.
 
 5. **ḥisāb al-jummal / abjad numerical architecture** — systematic abjad sweep NULL (Bonferroni k=7, all cells at chance); verse-final abjad mod-7/11/19 residues NULL (6/6) — and actually MORE uniform than prose, opposite to every numerological claim. Famous sums (basmala=786, محمد=92) "verify" trivially as spelling letter-sums, explanatorily empty; 786 is even mashriqī-specific (=1026 maghribī). `findings/phase-b-hypotheses/h-new-2040-abjad-sweep.md`, `abjad-residue-null.md`.

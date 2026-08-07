@@ -193,6 +193,26 @@ Q 44's HM-7 partners average FR distance: 0.9072 — substantially HIGHER (more 
 
 **Verdict**: **VINDICATED**. Q 44, despite being a HM-7 cluster member by letter-family, sits content-cohesively with the SHORT-MUFAṢṢAL ESCHATOLOGICAL register, NOT with its HM-7 siblings. This empirically demonstrates that **letter-family clusters (HM-7) and content-cohesion clusters can be ORTHOGONAL** at the per-surah level — replicating [[h-new-600-letter-families|H-NEW-600]] and [[h-new-570-muqattaat-content-cluster|H-NEW-570]] NULL findings on letter-family content cohesion.
 
+> **⛔ CORRECTION — 2026-08-07: the corpus-level NULL this "replicates" has REVERSED, and the
+> per-surah ranking is FLAGGED but not overturned.**
+>
+> H-NEW-570's ḥawāmīm result was scored against draws of 7 surahs uniform from 114, while its
+> distance statistic rises steeply with set size. **Size-matched, HM-7 sits at the 0.05th
+> percentile — 10.7 % tighter in root content than size-matched surah sets.** There is no
+> corpus-level NULL left to replicate, and the clause "replicating H-NEW-600 and H-NEW-570 NULL
+> findings" is withdrawn.
+>
+> **Q 44's own measurement is a different statistic and is NOT retracted here.** Its 7 nearest
+> FR neighbours being 6/7 eschato-mufaṣṣal and 0/7 HM-7 is a per-surah *ranking*, involving no
+> null draw and no group comparison, so nothing in the H-NEW-2820 result touches its arithmetic.
+> **But it has never had a size control either.** The same instrument's distances are strongly
+> size-dependent (ρ = +0.8998 between `d̄` and mean log word count), and Q 44's named neighbour
+> set spans Q 110 at 3 verses to Q 51 at 60 — so whether the ranking survives holding surah size
+> fixed is an open question that no measurement in this repository answers.
+> Per `findings/UNIT-DRIFT-DEFECT.md` §6.5, **flagging is not overturning**: the verdict stands
+> as recorded, and the honest status is FLAGGED-PENDING-MEASUREMENT.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 ## Claim 10: Q 44 *dukhān*-bracket (Q 41:11 + Q 44:10 are corpus's only 2 *dukhān* attestations) (Q044-F-01)
 
 **Sources**: This session's pre-registered finding [[Q044-F-01]] at SHA `8efd2b13c3c2714e11ec8c856b80647f89df649bbbcc2cd5c042e0b033bc30b8`.

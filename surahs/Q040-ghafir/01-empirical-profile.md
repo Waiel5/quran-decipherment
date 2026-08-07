@@ -74,6 +74,19 @@ Computed in `/Users/grey/Downloads/quran/scripts/HMM_F_compute.py` (seed 2026042
 
 **Implication**: Q 40 is content-cohesive with both HM-A and HM-B (similar d̄ ≈ 0.86). The bifurcation is therefore PURELY at the rhyme/prosodic axis, NOT at the FR-roots content axis. This sharpens the *muqaṭṭaʿāt-axis ⊥ content-axis* finding ([[h-new-570-muqattaat-content-cluster|H-NEW-570]], [[h-new-600-letter-families|H-NEW-600]]) by adding a **third orthogonality**: *prosody-axis ⊥ FR-content-axis* even within the most thematically coherent letter-family.
 
+> **⛔ CORRECTION — 2026-08-07: the finding this "sharpens" has REVERSED.** H-NEW-570 scored the
+> ḥawāmīm against a null that draws 7 surahs uniformly from 114, while its distance statistic
+> rises steeply with set size — and the ḥawāmīm are among the corpus's larger surahs.
+> Size-matched, **the ḥawāmīm-7 sit at the 0.05th percentile, 10.7 % tighter in root content
+> than size-matched surah sets**, and the full-29 at the 0.45th. There is no
+> *muqaṭṭaʿāt-axis ⊥ content-axis* finding left to sharpen.
+>
+> **The paragraph's own measurement stands and is unaffected.** d̄(Q 40, HM-A) ≈ d̄(Q 40, HM-B)
+> is a within-block comparison that involves no null and no size contrast; the HM-A/HM-B
+> bifurcation genuinely is prosodic and not FR-content. What is withdrawn is only the framing of
+> it as a "third orthogonality" in a series whose first two terms have reversed.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 ## 4. Compression-tail position (s=40, intra-50)
 
 Q 40 falls in the *intra-50* region (s ≤ 50) where the compression-tail laws have NOT yet kinked downward. From [[h-new-660-compression-tail-gradient|H-NEW-660]]:

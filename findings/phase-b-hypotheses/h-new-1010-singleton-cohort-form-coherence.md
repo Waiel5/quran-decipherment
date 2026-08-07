@@ -21,6 +21,28 @@ parent_orthogonality: cross-finding-026 §1 (letter-axis ⊥ content-axis empiri
 # H-NEW-1010 — Singleton-Letter Muqaṭṭaʿāt Cohort Verse-1 Form-Coherence
 
 
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: one of the four "letter-axis ⊥ content-axis" instantiations REVERSES
+>
+> This file's §"Cross-finding-026 §1" lists **"H-NEW-570 muqaṭṭaʿāt-29 NULL at content-cohesion
+> (whole-surah FR)"** as the first of four instantiations of letter-axis ⊥ content-axis
+> orthogonality, and cross-references it again in §"Cross-references".
+>
+> **H-NEW-570 has reversed.** Its null drew 29 surahs uniformly from 114 while `d̄` rises
+> steeply with set size and the muqaṭṭaʿāt are 4.27× the median word count of the rest; it never
+> drew a comparably large set in 10,000 draws. Size-matched, the 29 are **3.6 % tighter** in
+> root content than size-matched surah sets (0.45th percentile). **The muqaṭṭaʿāt-29 are a
+> content cluster.**
+>
+> **H-NEW-1010's own H1 and H2 are untouched.** Its corpus-exact 3-of-29 form bijection and its
+> COHORT-NULL on vv. 1–10 prophet-density are different statistics on a different (n = 3) set,
+> and neither uses the Fisher–Rao instrument. What changes is the **surrounding
+> generalization**: the four instantiations are now three, and Q050-F-04's singleton-triplet
+> FR-NULL rests on the same size-blind design and is **untested rather than cleared**.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
+
 > ## ⛔ CORRECTION NOTICE — 2026-08-07: the iʿjāz anti-twin is REVERSED under a matched control
 >
 > **The arithmetic reproduces** — an independent surface-instrument rebuild returns

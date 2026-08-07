@@ -84,6 +84,20 @@ al-Biqāʿī also relates Q 12 to its mushaf-neighbours: Q 11 Hūd (multi-prophe
 
 **Important caveat**: al-Biqāʿī's broader *munāsaba* program for muqaṭṭaʿāt content-clusters has been **FALSIFIED 4 times** in this project ([[h-new-570-muqattaat-content-cluster]], [[h-new-600-letter-families]]). The local-pair Q 11/12/13 *munāsaba* is empirically supported; the wide muqaṭṭaʿāt content-clustering program is not.
 
+> **⛔ CORRECTION — 2026-08-07: the falsification count is withdrawn.** H-NEW-570's null drew
+> 29 surahs uniformly from 114 while its distance statistic rises steeply with set size, and the
+> muqaṭṭaʿāt are 4.27× the median word count of the other 85 — **0 of 10,000 draws reached the
+> group's size**. Size-matched, the full-29 sit at the **0.45th percentile** and the ḥawāmīm-7
+> at the **0.05th**; the ALM-6 and ALR-5 arms rest on the same size-blind design and are
+> **untested, not cleared**. The sentence "the wide muqaṭṭaʿāt content-clustering program is not
+> [supported]" no longer follows from the evidence cited.
+> **This does not vindicate al-Biqāʿī's *munāsaba* program**: it removes an empirical
+> falsification. A 3.6 % content-tightening relative to size-matched peers is a small measured
+> cohesion, not a thematic connection between a letter-opening and a surah's content — and
+> ALR-5, the family with the strongest classical prior, remains untested either way.
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 ## 8. Themes consolidated across the 7 mufassirūn
 
 ### 8.1 Why "*aḥsan al-qaṣaṣ*"?

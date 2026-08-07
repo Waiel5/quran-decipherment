@@ -12,6 +12,50 @@ verdict: NULL — HM-7 NOT FR-cohesive on root distribution
 
 # H-NEW-1395 — Ḥawāmīm 7-cluster Fisher-Rao cohesion test
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: this NULL reverses, and **Cell B already saw it happening**
+>
+> §5 states that H-NEW-570 *"identified the moderate-only signal pre-Bonferroni; H-NEW-1395 now
+> provides the direction-locked Bonferroni-corrected test that demotes that signal to formal
+> NULL."* **Under a properly size-matched null the ḥawāmīm-7 sit at the 0.05th percentile —
+> 10.7 % tighter in root content than size-matched surah sets, corpus-extreme in every arm
+> including the parameter-free one.** The demotion is withdrawn.
+>
+> **This file is the sharpest case in the propagation because the evidence is already in it.**
+> Cell A is size-blind; Cell B attempts a length match. Each strengthening of the match raises
+> the null mean and drives *p* down, monotonically:
+>
+> | arm | null mean | p (one-tailed lower) |
+> |:--|--:|--:|
+> | Cell A — uniform 7-of-114, size-blind | 0.9230 | **0.2086** |
+> | Cell B — length-matched ±20 % | 0.9511 | **0.0514** |
+> | *(H-NEW-2820 A2-k5, stratified on log word count)* | *0.9712* | *%ile 0.05* |
+>
+> Observed `d̄ = 0.8672` throughout. Cell B missed its α = 0.025 by two percentage points and
+> §4 recorded NULL. **Two defects in Cell B explain why it under-recovered the effect**, both
+> visible at `findings/phase-b-hypotheses/scripts/h-new-1395.py:60-70`:
+>
+> 1. It matches on **verse count** — the third-ranked channel for `d̄` (ρ = +0.8395) rather than
+>    the dominant log word count (ρ = +0.8998).
+> 2. It matches the **sum** of verse counts over the whole 7-set, not the per-surah size
+>    profile. A draw of one very long surah plus six short ones satisfies the constraint while
+>    having nothing like the ḥawāmīm's size composition — and `d̄` depends on the individual
+>    surahs' sizes, not on their total.
+>
+> This is `findings/UNIT-DRIFT-DEFECT.md` §5's *"a control that does not use the strongest
+> channel is not a control"*, occurring here well before that clause was written. **The
+> pre-registration and the Bonferroni discipline were both correct; the matching channel was
+> not.** §6's option (c) — *"true but at a magnitude under the detection threshold"* — was the
+> right one.
+>
+> §5's other two supports are unaffected in form but not in force: H-NEW-1301's IMPV-qrA NULL is
+> a different cluster on the same size-blind instrument and is **untested, not cleared**, and
+> cross-finding-025's marker-thickness rule loses this data point.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
+
 ## TL;DR
 
 The 7 consecutive ḥawāmīm surahs (Q 40-46), the corpus-EXACT HM-opener block, are **NOT FR-cohesive on QAC root-distribution**. Observed intra-cluster mean Fisher-Rao distance d̄(HM-7) = **0.8672**; lower than the uniform-7 null mean (0.9230) and length-matched null mean — direction-consistent — but neither cell crosses Bonferroni α=0.025. PC valid (p_pc=0.0414). The HM cluster is a **muqaṭṭaʿāt-axis cluster, not a root-distribution-axis cluster**, replicating the pattern observed in H-NEW-1301 (IMPV-qrA) and consistent with cross-finding-025's marker-thickness rule.

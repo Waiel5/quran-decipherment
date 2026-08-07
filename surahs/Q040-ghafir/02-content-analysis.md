@@ -81,6 +81,16 @@ These three themes are tied by a single underlying paradigm: God forgives the *b
 
 This thematic tightness is consistent with the moderate FR-roots cohesion of HM-7 (20.90%ile in [[h-new-570-muqattaat-content-cluster|H-NEW-570]]) and the partial-classical-thematic-block status: ḥawāmīm share *tawḥīd / kitāb / disputers-of-signs / divine-attributes* clusters, with each surah developing one or more of these poles.
 
+> **⛔ CORRECTION — 2026-08-07: "moderate" was a ceiling imposed by a size-blind null.** H-NEW-570
+> scored the ḥawāmīm against draws of 7 surahs uniform from 114, while its distance statistic
+> rises steeply with set size and the ḥawāmīm are among the corpus's larger surahs. Size-matched,
+> **HM-7 sits at the 0.05th percentile — 10.7 % tighter in root content than size-matched surah
+> sets, corpus-extreme in every arm.** The thematic tightness described in this section is
+> consistent with a *strong* FR-roots cohesion, not a moderate one; read "20.90%ile" here as
+> withdrawn. The classical themed-block reading of Q 40–46 is supported at a strength the
+> published percentile denied it.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 ## 9. Cross-references
 
 - [[hawamim-7-cluster-bifurcation|HM-7 cluster bifurcation]] (master comparative)

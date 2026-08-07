@@ -233,14 +233,43 @@ Factor 5 of cross-finding-024 was binary; converted to continuous spectrum.
 
 ## MUQAṬṬAʿĀT (book-introduction markers)
 
-- **[[h-new-570-muqattaat-content-cluster]]** — full-29 NULL at 65.62%ile.
-- **[[h-new-600-letter-families]]** — ALM-6 NULL at 43.15%; ALR-5 NULL at 56.25%.
-- **[[h-new-901-hm7-cohesion-prereg|H-NEW-901]]** — HM-7 NULL at 21.21%ile (sub-DIRECTIONAL; cohesive direction; 2026-04-28).
+- **[[h-new-570-muqattaat-content-cluster]]** — full-29 NULL at 65.62%ile. ⛔ **REVERSED 2026-08-07 → 0.45%ile size-matched.**
+- **[[h-new-600-letter-families]]** — ALM-6 NULL at 43.15%; ALR-5 NULL at 56.25%. ⛔ **untested on the same size-blind design.**
+- **[[h-new-901-hm7-cohesion-prereg|H-NEW-901]]** — HM-7 NULL at 21.21%ile (sub-DIRECTIONAL; cohesive direction; 2026-04-28). ⛔ **not an independent replication** — same statistic, same size-blind null; **0.05%ile size-matched.**
 - **[[hawamim-7-cluster-synthesis|ḥawāmīm-7 cluster synthesis]]** — 7-surah HM-7 cluster: bifurcation Q 42 → Q 43 between HM-A high-entropy multi-rāwī {Q 40, 41, 42} and HM-B near-monorhyme {Q 43, 44, 45, 46}; primary cohesion test NULL @ 21.21%ile; classical *dībāj al-Qurʾān* / *lubāb al-Qurʾān* / *Āl Ḥā Mīm* traditions DIRECTIONAL; al-Biqāʿī family-*munāsaba* FALSIFIED at FR-roots scale (4th replication of NULL after full-29, ALM-6, ALR-5).
 - **[[muqattaat-book-introduction-marker-synthesis]]** *(prior)*
 - **[[cross-finding-008-muqattaat-book-intro-markers]]** *(prior cross-finding)*
 
 al-Biqāʿī content-*munāsaba* claim FALSIFIED 5 times (full-29; HM-7 partial in H-NEW-570; ALM-6; ALR-5; HM-7 dedicated H-NEW-901). al-Suyūṭī epistemic-humility (*Itqān* nawʿ 40) VINDICATED 5 times.
+
+> **⛔ CORRECTION — 2026-08-07: the count of five is withdrawn. Three of the five REVERSE or
+> collapse into one another; the remaining two are untested.**
+>
+> All five percentiles above come from one instrument — the H-NEW-111 Fisher–Rao root matrix —
+> scored against nulls that draw K surahs **uniformly from 114**. That statistic rises steeply
+> with set size (ρ = **+0.8998** against mean log word count) and the muqaṭṭaʿāt are **4.27× the
+> median word count** of the other 85. The full-29 null **never once drew a comparably large set
+> in 10,000 draws**.
+>
+> | claimed falsification | published | size-matched |
+> |:--|--:|--:|
+> | full-29 (H-NEW-570) | 65.62 % | **0.45 %** |
+> | HM-7 partial (H-NEW-570 MW-5) | 20.90 % | **0.05 %** |
+> | HM-7 dedicated (H-NEW-901) | 21.21 % | **not independent** — same statistic (`d = 0.8672422857142857`, identical to sixteen digits) against the same size-blind null |
+> | ALM-6 (H-NEW-600) | 43.15 % | untested — same design |
+> | ALR-5 (H-NEW-610) | 56.25 % | untested — same design |
+>
+> **Two reversed, one was never a separate test, two are untested.** "FALSIFIED 5 times" and
+> "VINDICATED 5 times" should not be cited. The ḥawāmīm-7 line above — *"primary cohesion test
+> NULL @ 21.21%ile; al-Biqāʿī family-munāsaba FALSIFIED at FR-roots scale (4th replication)"* —
+> is withdrawn: **the ḥawāmīm are 10.7 % tighter in root content than size-matched surah sets,
+> corpus-extreme in every arm.**
+>
+> **This does not vindicate al-Biqāʿī and does not refute al-Suyūṭī.** It removes an empirical
+> falsification and withdraws an empirical vindication. A 3.6 % content-tightening among
+> size-matched peers is not *munāsaba*, and nothing here decodes any opening. A third of the
+> matched effect is Meccan/Medinan composition.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
 
 ---
 
@@ -288,13 +317,13 @@ Each finding cites specific scholars + work + verse. Below: which scholars are c
 
 ### al-Suyūṭī *al-Itqān fī ʿulūm al-Qurʾān*
 - Meccan/Medinan chronology → kink at s=50, perm p<10⁻⁴: **[[h-new-660-compression-tail-gradient]]**, **[[h-new-790-ijaz-by-classical-class]]**.
-- *Itqān* nawʿ 40 muqaṭṭaʿāt epistemic-humility → 4 NULL replications: **[[h-new-570-muqattaat-content-cluster]]**, **[[h-new-600-letter-families]]**.
+- *Itqān* nawʿ 40 muqaṭṭaʿāt epistemic-humility → 4 NULL replications: **[[h-new-570-muqattaat-content-cluster]]**, **[[h-new-600-letter-families]]**. — ⛔ **2026-08-07: withdrawn.** Two of the four reverse under a size-matched null (65.62 → 0.45; 20.90 → 0.05); the other two are untested on the same design. *Allāh aʿlam bi-murādihi* is untouched as a claim about the letters' meaning — what is withdrawn is the assertion that this statistic vindicated it. `findings/H-NEW-570-REVERSAL-2026-08-07.md`
 - Q 9 barāʾa no-basmala uniqueness → +21pp outlier: **[[h-new-590-outlier-spectrum]]**.
 - Q 33 al-Aḥzāb chronological-uniqueness → corpus-top outlier +31pp: **[[h-new-590-outlier-spectrum]]**, **[[h-new-870-q33-architectural-keystone]]**.
 
 ### al-Biqāʿī *Naẓm al-Durar fī Tanāsub al-Āyāt wa-l-Suwar*
 - Munāsabāt as primary organizing structure → block_adjacency factor in 5-factor regression: **[[cross-finding-024-five-factor-cohesion-model]]**, **[[h-new-580-five-factor-regression]]**.
-- Content-*munāsaba* of muqaṭṭaʿāt → FALSIFIED 4×: **[[h-new-570-muqattaat-content-cluster]]**, **[[h-new-600-letter-families]]**.
+- Content-*munāsaba* of muqaṭṭaʿāt → FALSIFIED 4×: **[[h-new-570-muqattaat-content-cluster]]**, **[[h-new-600-letter-families]]**. — ⛔ **2026-08-07: withdrawn.** Two of the four reverse under a size-matched null; the other two are untested. **This does not vindicate al-Biqāʿī** — it removes a falsification. `findings/H-NEW-570-REVERSAL-2026-08-07.md`
 
 ### al-Bukhārī
 - Q 1 al-Fātiḥa *umm al-Kitāb* → Δ_outlier=+27pp + Q1-Q2 adjacency cost 7.4% TSP-residual: **[[h-new-590-outlier-spectrum]]**, **[[h-new-720-canonical-adjacency-cost]]**, **[[h-new-840-unified-architectural-score]]**.

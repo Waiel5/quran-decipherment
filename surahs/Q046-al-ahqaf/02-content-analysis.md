@@ -163,6 +163,13 @@ These four themes converge on a single underlying thesis: **the Qurʾān is univ
 
 This thematic tightness is consistent with HM-7's moderate FR-roots cohesion (`h-new-570` + [[hawamim-7-cluster-bifurcation]]) and Q 46's near-monorhyme prosody (used to *bind* register diversity).
 
+> **⛔ CORRECTION — 2026-08-07: "moderate" was a ceiling imposed by a size-blind null.** H-NEW-570
+> scored the ḥawāmīm against draws of 7 surahs uniform from 114, while its distance statistic
+> rises steeply with set size. Size-matched, **HM-7 sits at the 0.05th percentile — 10.7 %
+> tighter in root content than size-matched surah sets.** The tightness described here is
+> consistent with strong cohesion, not moderate.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 ## 14. Cross-references
 
 - [[Q040-ghafir/02-content-analysis|Q 40 content analysis]] — HM-A opener; jadāl-densest reciprocal

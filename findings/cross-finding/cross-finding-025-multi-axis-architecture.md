@@ -18,6 +18,37 @@ verdict: 4-AXIS multi-axial architecture EMPIRICALLY VALIDATED — independent f
 # [[cross-finding-025-multi-axis-architecture|Cross-Finding-025]] — Multi-Axis Quran Architecture (2026-04-28 wave)
 
 
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: Axis 4's "NULL at 4 independent scales" is down to two, and both of those REVERSE
+>
+> §2 Axis 4 rests the muqaṭṭaʿāt-⊥-content orthogonality on four percentiles. **Two of the four
+> are H-NEW-570's, and both have reversed under a size-matched null.**
+>
+> | scale | quoted here | matched |
+> |:--|--:|--:|
+> | Whole-29 (H-NEW-570) | 65.62 % | **0.45 %** |
+> | Ḥawāmīm-7 (H-NEW-570 MW-5) | 20.90 % | **0.05 %** |
+> | ALM-6 (H-NEW-600) | 43.15 % | untested — same size-blind design |
+> | ALR-5 (H-NEW-610) | 56.25 % | untested — same size-blind design |
+>
+> H-NEW-570's null drew 29 surahs uniformly from 114 while `d̄` rises steeply with set size
+> (ρ = +0.8998 against mean log word count) and the muqaṭṭaʿāt are 4.27× the median word count
+> of the rest; it **never once drew a set as large as the muqaṭṭaʿāt — 0 of 10,000**. Matched,
+> the 29 are **3.6 % tighter** in root content than size-matched sets and the ḥawāmīm **10.7 %**.
+>
+> **What this does to §3's table specifically:** the row *Content-register × Muqaṭṭaʿāt-subaxis
+> = EMPIRICAL ORTHOGONALITY (4 NULL replications)* no longer has four replications, and the two
+> it did have point the other way. **"The muqaṭṭaʿāt-axis is the most orthogonal" is withdrawn**
+> — the other two scales are untested rather than supporting, so the claim has no remaining
+> empirical support in this synthesis. §4's "al-Biqāʿī FALSIFIED at four independent scales /
+> al-Suyūṭī VINDICATED at four scales" is likewise withdrawn as an empirical count.
+>
+> **Not more than that.** The reversal does not vindicate al-Biqāʿī — it removes a falsification
+> — and it decodes nothing. A third of the matched effect is Meccan/Medinan composition.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
+
 > ## ⛔ CORRECTION NOTICE — 2026-08-07: the compression-tail is GENRE-SHARED and largely a unit-SIZE effect
 >
 > **The arithmetic reproduces exactly** — the QAC rebuild returns R² = 0.9860, β = −0.01237.

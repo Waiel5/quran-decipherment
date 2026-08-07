@@ -155,6 +155,18 @@ Each claim is sourced (scholar + work + passage) and audited against project met
 
 **Verdict**: **DIRECTIONAL at cluster level** — Q 46 is one of the two HM-7 members (with Q 44) in the bottom quartile by UAS. The *dībāj* designation is rhetorically supported by HM-7's internal cohesion (20%ile in [[h-new-570-muqattaat-content-cluster]]) but Q 46 specifically does NOT meet a UAS-extreme threshold. Q 46's role is the **HM-B closer** + **bookend** — not a standalone *dībāj* member.
 
+> **⛔ CORRECTION — 2026-08-07: this claim's cluster-level support STRENGTHENS.** H-NEW-570's
+> 20.90 %ile was scored against draws of 7 surahs uniform from 114, while its distance statistic
+> rises steeply with set size and the ḥawāmīm are among the corpus's larger surahs. Size-matched,
+> **HM-7 sits at the 0.05th percentile — 10.7 % tighter in root content than size-matched surah
+> sets, corpus-extreme in every arm including the parameter-free one.** The Ibn Masʿūd *dībāj*
+> designation is supported at the cluster level at a strength the published percentile denied it.
+>
+> **The verdict itself does not change**, because its limiting clause is about Q 46 individually
+> — the UAS-extremity test — not about HM-7's cohesion, and that clause is untouched. Note also
+> that UAS carries no null hypothesis of its own (`STATE-OF-THE-PROJECT-2026-08-07.md` §2).
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 ## Claim 10: Q 46:15 *asbāb al-nuzūl* about Abū Bakr's mother (user-prompt suggestion)
 
 **Source**: User-prompt suggestion. Verified-on-disk classical sources to be checked.

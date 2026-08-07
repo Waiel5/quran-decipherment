@@ -21,6 +21,37 @@ verdict: DOUBLE NULL on ALM-6 and ALR-5 PRIMARY; H-NEW-570 generalization "muqa�
 # [[h-new-600-letter-families|H-NEW-600]]/610 — Letter-family double-NULL: muqaṭṭaʿāt is ⊥ content even within families
 
 
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: the parent this finding "vindicates" has REVERSED
+>
+> This file's frontmatter, §1, §4 and §8 assert that **H-NEW-570's "muqaṭṭaʿāt-axis ⊥
+> content-axis" generalization is VINDICATED**, and §4's table quotes H-NEW-570's two
+> percentiles — full-29 at 65.62 %, ḥawāmīm-7 at 20.90 % — as NULL rows supporting it.
+>
+> **Both rows have reversed.** H-NEW-570's null drew 29 surahs uniformly from 114 while `d̄`
+> rises steeply with set size (ρ = +0.8998 against mean log word count) and the muqaṭṭaʿāt are
+> 4.27× the median word count of the rest. It **never once drew a set as large as the
+> muqaṭṭaʿāt — 0 of 10,000**. Size-matched, the full-29 sit at the **0.45th** percentile and the
+> ḥawāmīm-7 at the **0.05th**. The sets are clustered.
+>
+> **Two consequences for this file specifically, and they are different from each other.**
+>
+> 1. **The inherited rows are withdrawn.** "VINDICATED", "al-Biqāʿī FALSIFIED", "al-Suyūṭī
+>    VINDICATED a third time" no longer follow from the parent, and the falsification count
+>    quoted across the repository is overstated.
+> 2. **H-NEW-600's OWN results are UNTESTED, not cleared.** ALM-6 at 43.15 % and ALR-5 at
+>    56.25 % were scored against the **same size-blind uniform-K null** on the same Fisher–Rao
+>    matrix. That design is now known to be confounded on this grouping. **Nothing here says
+>    ALM-6 or ALR-5 cohere** — only that the instrument that reported they do not was measuring
+>    surah size, and that the question is open. Running these two sets through the H-NEW-2820
+>    stratified null is the cheap next step and has not been done.
+>
+> §5's reading of HM-7's 20.90 % as a "chronology+adjacency artifact, since ALR-5 does not
+> replicate it" rests on 20.90 % being weak. It is 0.05 % matched.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
+
 > ## ⛔ CORRECTION NOTICE — 2026-08-07: the compression-tail is GENRE-SHARED and largely a unit-SIZE effect
 >
 > **The arithmetic reproduces exactly** — the QAC rebuild returns R² = 0.9860, β = −0.01237.

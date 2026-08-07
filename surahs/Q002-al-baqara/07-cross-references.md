@@ -104,6 +104,16 @@ Surahs opening with the trigraph الم.
 
 **Cluster signature**: ALM-cluster spans the corpus from rank 2 to rank 32. al-Biqāʿī's content-*munāsaba* claim that ALM-cluster surahs are thematically connected was **FALSIFIED 4 times** by [[h-new-570-muqattaat-content-cluster]] and [[h-new-600-letter-families]] (full-29 NULL at 65.62%ile; ALM-6 NULL at 43.15%; ALR-5 NULL at 56.25%; ḥawāmīm-7 NULL).
 
+> **⛔ CORRECTION — 2026-08-07: two of those four have REVERSED; the other two are untested.**
+> H-NEW-570's null drew 29 surahs uniformly from 114 while its distance statistic rises steeply
+> with set size, and the muqaṭṭaʿāt are 4.27× the median word count of the other 85 — it never
+> drew a comparably large set in 10,000 draws. **Size-matched: full-29 at the 0.45th percentile,
+> ḥawāmīm-7 at the 0.05th.** ALM-6's 43.15 % and ALR-5's 56.25 % rest on the same size-blind
+> design and are **untested, not cleared**. "FALSIFIED 4 times" no longer holds.
+> **This does not vindicate al-Biqāʿī** — it removes a falsification; a 3.6 % content-tightening
+> among size-matched peers is not *munāsaba*.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 Q 2's role in this cluster: it is the CLUSTER ARCHETYPE (largest, earliest in canonical order, prototype for the muqaṭṭaʿāt → book-reference pattern of cross-finding-008) but NOT a cluster-anchor in the empirical-cohesion sense. The ALM cluster is a **letter-orthographic cluster, not a content-cluster**.
 
 ### 2.3 muqaṭṭaʿāt-29 (full set)

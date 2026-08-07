@@ -20,6 +20,28 @@ verdict: NULL CLUSTER (with rules-tuple-fragile and tail-sub-cluster nuances) �
 # H-NEW-910 — The 100% alif-final-letter 8-surah cluster: cohesion audit
 
 
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: two of §7.2's four "letter-axis ⊥ content-axis" confirmations REVERSE
+>
+> §7.2 lists the generalization as *"now confirmed across muqaṭṭaʿāt openers (H-NEW-600),
+> full-29 (H-NEW-570), HM-7 (H-NEW-570), AND rhyme rāwī (H-NEW-910)."*
+>
+> **Both H-NEW-570 entries have reversed.** Its null drew 29 surahs uniformly from 114 while
+> `d̄` rises steeply with set size (ρ = +0.8998 against mean log word count) and the muqaṭṭaʿāt
+> are 4.27× the median word count of the rest; it never once drew a comparably large set in
+> 10,000 draws. Size-matched, the full-29 sit at the **0.45th** percentile and the ḥawāmīm-7 at
+> the **0.05th**. H-NEW-600's ALM-6 / ALR-5 entry rests on the same size-blind design and is
+> **untested, not cleared**.
+>
+> **H-NEW-910's own H1 NULL on the alif-8 cluster is not retracted by this** — it is a distinct
+> set on a distinct axis. But it was scored on the same Fisher–Rao instrument against a
+> size-blind uniform-K null, and the alif-8 cluster spans four of al-Zarkashī's structural tiers
+> and so is itself size-heterogeneous. **Treat §7.2's generalization as unsupported and H1 as
+> awaiting a size-matched re-run**, not as confirmed.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
+
 > ## ⛔ CORRECTION NOTICE — 2026-08-07: the iʿjāz anti-twin is REVERSED under a matched control
 >
 > **The arithmetic reproduces** — an independent surface-instrument rebuild returns

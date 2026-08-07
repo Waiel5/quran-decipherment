@@ -153,6 +153,25 @@ The meta-frame the oracle stands on: under one blind method, **classical balāgh
 ### F10 — Muqaṭṭaʿāt as decodable content-code / hidden meaning
 - **Claim:** the disjoined letters cluster sūras by hidden meaning (al-Biqāʿī) or abbreviate divine names (al-Rāzī).
 - **Refutation (exact):** al-Biqāʿī content-*munāsaba* **FALSIFIED 5×** (full-29 NULL 65.62%ile; ALM-6, ALR-5, HM-7 all NULL — `h-new-570-muqattaat-content-cluster.md`). al-Rāzī divine-names theory **REFUTED at 0/78** claims surviving shuffle null over luminous-letter overlap (`razi-muqattaʿat-divine-names-test.md`). al-Suyūṭī's epistemic humility (*Itqān* nawʿ 40, "their meaning is unknowable") VINDICATED. *Keep:* the muqaṭṭaʿāt ARE a real distinctive **book-introduction marker** (engineered at surah-position + frequency layers) — but you may NOT decode them.
+
+  > **⛔ CORRECTION — 2026-08-07: the "FALSIFIED 5×" count is withdrawn.** All five percentiles
+  > come from one size-blind instrument: it draws K surahs uniformly from 114 while its distance
+  > statistic rises steeply with set size, and the muqaṭṭaʿāt are 4.27× the median word count of
+  > the other 85 — **0 of 10,000 draws reached the group's size**. Size-matched: **full-29 at the
+  > 0.45th percentile, ḥawāmīm-7 at the 0.05th**; ALM-6 and ALR-5 are **untested, not cleared**;
+  > and the "5th" (H-NEW-901) is the same ḥawāmīm statistic re-run against the same null, not an
+  > independent test.
+  >
+  > **Two clauses of this entry survive and one does not.** The al-Rāzī divine-names refutation
+  > is a different test on a different instrument and is untouched. *"You may NOT decode them"*
+  > **stands** — nothing here decodes anything, and a 3.6 % content-tightening among size-matched
+  > peers is not *munāsaba*. What falls is the count, and with it "al-Suyūṭī VINDICATED" as an
+  > *empirical* result — *Allāh aʿlam bi-murādihi* is untouched as a claim about the letters'
+  > meaning; the statistic that was said to vindicate it was measuring surah size.
+  >
+  > **The poem's verse is untouched.** This is a research note, not the poem.
+  > Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 - **Cite:** `findings/phase-b-hypotheses/h-new-570-muqattaat-content-cluster.md`; `razi-muqattaʿat-divine-names-test.md`; `MASTER-FINDINGS-LEDGER.md` §4 line 360; `KNOWLEDGE-GRAPH.md` muqaṭṭaʿāt section.
 - **Poetic contrast:** *They will crack the disjoined letters like a lock and pour meanings through; but five readings of meaning fall to chance — the letters are a seal that says "a Book begins," and keep their silence.*
 

@@ -172,6 +172,34 @@ This is a tradition cited as *qīla* (it has been said) — preserving a poetic-
 
 ### Empirical correlate: H-NEW-570, H-NEW-600
 
+> **⛔ CORRECTION — 2026-08-07: the full-29 NULL below has REVERSED, and this section's
+> characterisation with it.**
+>
+> H-NEW-570's null drew 29 surahs uniformly from 114 while its distance statistic rises steeply
+> with set size (ρ = +0.8998 against mean log word count) and the muqaṭṭaʿāt are **4.27× the
+> median word count** of the other 85. It **never once drew a set as large as the muqaṭṭaʿāt in
+> 10,000 draws.** Size-matched, the full-29 sit at the **0.45th percentile** — 3.6 % tighter in
+> root content than size-matched surah sets — and the ḥawāmīm-7 at the **0.05th**.
+>
+> **The falsification count is wrong and the closing characterisation is withdrawn.** "Falsified
+> 4 times / vindicated 4 times" loses two of its four; ALM-6's own 43.15 % rests on the same
+> size-blind design and is **untested, not cleared**. This is therefore **not** "one of the
+> clearest classical-vindication cases in the project."
+>
+> **Neither does it vindicate al-Biqāʿī.** It removes a falsification. A 3.6 % content-tightening
+> among size-matched peers is not *munāsaba* between a letter-opening and a surah's themes, and
+> nothing here decodes ALM or any other opening. **al-Suyūṭī's *Allāh aʿlam bi-murādihi* is a
+> claim about the letters' meaning and is untouched** — what is withdrawn is the assertion that
+> this statistic empirically vindicated it, since the statistic was measuring surah size.
+>
+> The cross-finding-008 book-marker reading in the closing paragraph is a separate result and
+> stands at its own post-audit strength (`findings/phase-b-hypotheses/h-new-2760-muqattaat-book-reference-nuisance.md`),
+> **but it is no longer supported by "empirical orthogonality"** — and the clustering is not
+> independent evidence for it either. See §5 of the full notice.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
 The project's empirical work on muqaṭṭaʿāt-clusters (full-29 in [[h-new-570-muqattaat-content-cluster]]; ALM-6 in [[h-new-600-letter-families]]) has found:
 
 - **Full-29 muqaṭṭaʿāt cluster vs random-29**: NULL at 65.62 percentile. The 29 muqaṭṭaʿāt-opening surahs do NOT form a content-cluster.

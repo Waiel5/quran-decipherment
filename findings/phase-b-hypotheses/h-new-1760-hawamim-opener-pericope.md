@@ -13,6 +13,31 @@ verdict: FLIP — z = +6.008, p_perm < 10⁻⁴ (0/10,000)
 # H-NEW-1760 — Ḥawāmīm 7-surah opener-pericope (first 3 verses) flip-test of H-NEW-1395
 
 
+> ## ⛔ SECOND CORRECTION NOTICE — 2026-08-07: the whole-surah NULL this flip is measured against was itself an artefact
+>
+> This finding's title, TL;DR and §"Cross-references" all frame it as a **flip**: the ḥawāmīm
+> are NULL at whole-surah Fisher–Rao cohesion (H-NEW-1395; H-NEW-570 MW-5 at 20.90 %ile) and
+> PASS at opener-pericope scale.
+>
+> **The whole-surah result is not a NULL.** H-NEW-570's null drew K surahs uniformly from 114
+> while `d̄` rises steeply with set size, and the ḥawāmīm are among the corpus's larger surahs.
+> Size-matched, the ḥawāmīm-7 sit at the **0.05th percentile — 10.7 % tighter** in root content
+> than size-matched sets, corpus-extreme in every arm including the parameter-free one.
+> H-NEW-1395's own length-matched Cell B had already moved *p* from 0.2086 to 0.0514; see the
+> notice on that file for why its matching channel under-recovered the effect.
+>
+> **This weakens the flip framing rather than the flip measurement.** The z = +6.008 result at
+> opener-pericope scale reproduces and is not retracted here — but it is no longer a *flip*
+> from absence to presence. **The ḥawāmīm cohere at both scales**, more strongly at the opener
+> and detectably at whole-surah level once size is held fixed. The phrase *"now rescued at
+> opener-pericope scale"* (§Cross-references) is withdrawn: there was nothing to rescue.
+>
+> This is separate from, and does not supersede, the notice below on the pericope-flip law.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2820-group-claims-matched.md`.
+> Full notice: `findings/H-NEW-570-REVERSAL-2026-08-07.md`.
+
+
 > ## ⛔ CORRECTION NOTICE — 2026-08-07
 >
 > **This finding's own numbers reproduce exactly and are not retracted.** What was corrected is the
