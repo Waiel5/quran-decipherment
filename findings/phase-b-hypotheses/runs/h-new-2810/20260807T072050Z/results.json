@@ -1,0 +1,1960 @@
+{
+  "finding_id": "H-NEW-2810",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2810-unverifiable-rederivation.md",
+  "prereg_sha256": "9e09aaa147b9a238b2514f42adbf28cbcd706bc6b43a855d45c24e6b966d16b4",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  },
+  "literals": {
+    "L1": {
+      "value": 0.759,
+      "claim": "H-NEW-192 Ridge LOOCV R2 (mushaf, 15 features)",
+      "consumed_at": [
+        "scripts/h_new_233_ensemble_predictor.py:532,571",
+        "scripts/h_new_250_equation_fit.py:670"
+      ]
+    },
+    "L2": {
+      "value": 0.817,
+      "claim": "H-NEW-192 RF LOOCV R2 (mushaf, 15 features)",
+      "consumed_at": [
+        "scripts/h_new_233_ensemble_predictor.py:533,572",
+        "scripts/h_new_250_equation_fit.py:671"
+      ]
+    },
+    "L3": {
+      "value": 0.836,
+      "claim": "H-NEW-183 Ridge LOOCV R2 (Noldeke)",
+      "consumed_at": [
+        "scripts/h_new_233_ensemble_predictor.py:573",
+        "scripts/h_new_250_equation_fit.py:674"
+      ]
+    },
+    "L4": {
+      "value": 0.7395,
+      "claim": "H-NEW-233 Ridge LOOCV R2 (29 features)",
+      "consumed_at": [
+        "scripts/h_new_250_equation_fit.py:672"
+      ]
+    },
+    "L5": {
+      "value": 0.8485,
+      "claim": "H-NEW-233 RF LOOCV R2 (29 features)",
+      "consumed_at": [
+        "scripts/h_new_250_equation_fit.py:673"
+      ]
+    },
+    "L6": {
+      "value": 0.4138,
+      "claim": "H-NEW-88 RF LOOCV top-1 accuracy",
+      "consumed_at": [
+        "scripts/h_new_179_alpha_beta_predictor.py:533"
+      ]
+    },
+    "L7": {
+      "value": 0.6552,
+      "claim": "H-NEW-165 RF top-1 accuracy",
+      "consumed_at": [
+        "scripts/h_new_275_bukhari_opener_phonological_replication.py:385"
+      ]
+    },
+    "L8": {
+      "value": 136,
+      "claim": "H-NEW-1710 total Musa mentions (corpus)",
+      "consumed_at": [
+        "scripts/Q028_F_06_musa_density_rank.py:126"
+      ]
+    },
+    "L9": {
+      "value": 0.923,
+      "claim": "H-NEW-1395 null uniform mean",
+      "consumed_at": [
+        "scripts/Q030_F_08_alm_cluster_fr_cohesion.py:184"
+      ]
+    }
+  },
+  "results": {
+    "L3": {
+      "tag": "L3",
+      "literal": 0.836,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-183.json -> /model_A_ridge_full/r2_loocv",
+      "artifact_value": 0.8355931448330429,
+      "literal_precision_dp": 3,
+      "artifact_rounded_to_that_precision": 0.836,
+      "verdict": "CONFIRMS"
+    },
+    "L4": {
+      "tag": "L4",
+      "literal": 0.7395,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-233.json -> /model_A_ridge/r2_loocv",
+      "artifact_value": 0.7395490015311565,
+      "literal_precision_dp": 4,
+      "artifact_rounded_to_that_precision": 0.7395,
+      "verdict": "CONFIRMS"
+    },
+    "L5": {
+      "tag": "L5",
+      "literal": 0.8485,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-233.json -> /model_B_rf/r2_loocv",
+      "artifact_value": 0.848516936603147,
+      "literal_precision_dp": 4,
+      "artifact_rounded_to_that_precision": 0.8485,
+      "verdict": "CONFIRMS"
+    },
+    "L6": {
+      "tag": "L6",
+      "literal": 0.4138,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-88.json -> /results_by_classifier/rf/loocv_top1_accuracy",
+      "artifact_value": 0.41379310344827586,
+      "literal_precision_dp": 4,
+      "artifact_rounded_to_that_precision": 0.4138,
+      "verdict": "CONFIRMS"
+    },
+    "L7": {
+      "tag": "L7",
+      "literal": 0.6552,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-165-2.json -> /baseline_reference/h_new_165_rf_top1",
+      "artifact_value": 0.6551724137931034,
+      "literal_precision_dp": 4,
+      "artifact_rounded_to_that_precision": 0.6552,
+      "verdict": "CONFIRMS"
+    },
+    "L9": {
+      "tag": "L9",
+      "literal": 0.923,
+      "artifact_path": "findings/phase-b-hypotheses/csv/h-new-1395.json -> /cell_A/null_mean",
+      "artifact_value": 0.9229932999809524,
+      "literal_precision_dp": 3,
+      "artifact_rounded_to_that_precision": 0.923,
+      "verdict": "CONFIRMS"
+    },
+    "L8": {
+      "tag": "L8",
+      "literal": 136,
+      "rederived_from_QAC": 136,
+      "h_new_1710_json_value": 136,
+      "Q028_F_06_own_recount": 136,
+      "q28_surah_count_rederived": 18,
+      "q28_surah_count_published": 18,
+      "verdict": "CONFIRMS"
+    },
+    "L1": {
+      "tag": "L1",
+      "literal": 0.759,
+      "exhaustive_search": {
+        "n_evaluated": 20349,
+        "n_total_space": 20349,
+        "target": 0.759,
+        "tolerance": 0.0005,
+        "n_matches": 15,
+        "matches": [
+          {
+            "r2": 0.7590016212704433,
+            "extra_features": [
+              "alpha",
+              "alpha_minus_beta",
+              "beta",
+              "hurst_verse_len",
+              "phon_emphatic"
+            ]
+          },
+          {
+            "r2": 0.7589835229158477,
+            "extra_features": [
+              "alpha_minus_beta",
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ]
+          },
+          {
+            "r2": 0.7590882970599706,
+            "extra_features": [
+              "dispersion",
+              "entropy_rate_surah",
+              "kl_from_corpus",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7591087820583484,
+            "extra_features": [
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_pharyngeal",
+              "phon_velar"
+            ]
+          },
+          {
+            "r2": 0.7591294647073632,
+            "extra_features": [
+              "alpha_minus_beta",
+              "book_ref_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7588694062172348,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "beta",
+              "hurst_verse_len",
+              "phon_emphatic"
+            ]
+          },
+          {
+            "r2": 0.7588364270987054,
+            "extra_features": [
+              "alpha_minus_beta",
+              "dispersion",
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7591675004264075,
+            "extra_features": [
+              "alpha",
+              "dispersion",
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7588214909379767,
+            "extra_features": [
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_glottal",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7592730617592606,
+            "extra_features": [
+              "alpha",
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ]
+          },
+          {
+            "r2": 0.7593226407974196,
+            "extra_features": [
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_palatal",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ]
+          },
+          {
+            "r2": 0.7586686244960459,
+            "extra_features": [
+              "dispersion",
+              "kl_from_corpus",
+              "lz_norm_simple",
+              "phon_palatal",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7586356478802709,
+            "extra_features": [
+              "alpha",
+              "beta",
+              "hurst_verse_len",
+              "phon_emphatic",
+              "phon_palatal"
+            ]
+          },
+          {
+            "r2": 0.7594128569596698,
+            "extra_features": [
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_pharyngeal",
+              "phon_velar",
+              "phon_voiced"
+            ]
+          },
+          {
+            "r2": 0.7585583198410101,
+            "extra_features": [
+              "allah_density",
+              "alpha_beta_residual",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ]
+          }
+        ],
+        "closest": [
+          {
+            "r2": 0.7590016212704433,
+            "abs_dev": 1.6212704433415936e-06,
+            "extra_features": [
+              "alpha",
+              "alpha_minus_beta",
+              "beta",
+              "hurst_verse_len",
+              "phon_emphatic"
+            ]
+          },
+          {
+            "r2": 0.7589835229158477,
+            "abs_dev": 1.6477084152310972e-05,
+            "extra_features": [
+              "alpha_minus_beta",
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ]
+          },
+          {
+            "r2": 0.7590882970599706,
+            "abs_dev": 8.8297059970599e-05,
+            "extra_features": [
+              "dispersion",
+              "entropy_rate_surah",
+              "kl_from_corpus",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7591087820583484,
+            "abs_dev": 0.00010878205834841115,
+            "extra_features": [
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_pharyngeal",
+              "phon_velar"
+            ]
+          },
+          {
+            "r2": 0.7591294647073632,
+            "abs_dev": 0.0001294647073631916,
+            "extra_features": [
+              "alpha_minus_beta",
+              "book_ref_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7588694062172348,
+            "abs_dev": 0.00013059378276525369,
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "beta",
+              "hurst_verse_len",
+              "phon_emphatic"
+            ]
+          },
+          {
+            "r2": 0.7588364270987054,
+            "abs_dev": 0.00016357290129465074,
+            "extra_features": [
+              "alpha_minus_beta",
+              "dispersion",
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7591675004264075,
+            "abs_dev": 0.000167500426407452,
+            "extra_features": [
+              "alpha",
+              "dispersion",
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7588214909379767,
+            "abs_dev": 0.00017850906202332428,
+            "extra_features": [
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_glottal",
+              "phon_pharyngeal"
+            ]
+          },
+          {
+            "r2": 0.7592730617592606,
+            "abs_dev": 0.0002730617592605622,
+            "extra_features": [
+              "alpha",
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ]
+          }
+        ],
+        "distribution": {
+          "min": 0.6600724238436377,
+          "p05": 0.7026606300797266,
+          "median": 0.7800067541245366,
+          "p95": 0.8156018923713851,
+          "max": 0.8273067565865457,
+          "mean": 0.7653216912500516,
+          "sd": 0.04050599900704028
+        },
+        "min_abs_dev_from_literal": 1.6212704433415936e-06
+      },
+      "verdict": "CONFIRMS-BY-RECOVERY"
+    },
+    "L2": {
+      "tag": "L2",
+      "literal": 0.817,
+      "channel_B": {
+        "n_trees": 200,
+        "seed": 20260509,
+        "target_rf_r2": 0.817,
+        "closest_ridge_candidates": [
+          {
+            "extra_features": [
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_palatal",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7593226407974196,
+            "rf_r2": 0.8092466566088172,
+            "rf_r2_abs_dev_from_literal": 0.007753343391182721,
+            "importance_max_abs_dev": 0.32828056414127044,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6768369426227
+          },
+          {
+            "extra_features": [
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_palatal",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.758482543630906,
+            "rf_r2": 0.8020817717340677,
+            "rf_r2_abs_dev_from_literal": 0.014918228265932254,
+            "importance_max_abs_dev": 0.3297339033708203,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6736182067498808
+          },
+          {
+            "extra_features": [
+              "book_ref_density",
+              "lz_norm_simple",
+              "phon_labial",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7604148745818204,
+            "rf_r2": 0.8079706040784917,
+            "rf_r2_abs_dev_from_literal": 0.009029395921508199,
+            "importance_max_abs_dev": 0.33072744631195405,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6710854340332484
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7580009090026403,
+            "rf_r2": 0.8046540159170531,
+            "rf_r2_abs_dev_from_literal": 0.012345984082946848,
+            "importance_max_abs_dev": 0.3308332789820669,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6650237118224938
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7583224475138585,
+            "rf_r2": 0.8051089410907029,
+            "rf_r2_abs_dev_from_literal": 0.011891058909297092,
+            "importance_max_abs_dev": 0.33095054112478844,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6655407174931545
+          },
+          {
+            "extra_features": [
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_pharyngeal",
+              "phon_velar",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7594128569596698,
+            "rf_r2": 0.8079927530831696,
+            "rf_r2_abs_dev_from_literal": 0.009007246916830303,
+            "importance_max_abs_dev": 0.3310298820847787,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6732847984646436
+          },
+          {
+            "extra_features": [
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_labial",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7605539344202448,
+            "rf_r2": 0.8133739195237034,
+            "rf_r2_abs_dev_from_literal": 0.0036260804762965337,
+            "importance_max_abs_dev": 0.3312365582285967,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6688927839123208
+          },
+          {
+            "extra_features": [
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_glottal",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.760334672222289,
+            "rf_r2": 0.8098491037038537,
+            "rf_r2_abs_dev_from_literal": 0.007150896296146292,
+            "importance_max_abs_dev": 0.33145623983978,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6772835277049614
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7589835229158477,
+            "rf_r2": 0.8128336254834856,
+            "rf_r2_abs_dev_from_literal": 0.0041663745165143595,
+            "importance_max_abs_dev": 0.3314568308027779,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6687746707296647
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7592730617592606,
+            "rf_r2": 0.8134539916162087,
+            "rf_r2_abs_dev_from_literal": 0.003546008383791266,
+            "importance_max_abs_dev": 0.3315676842646915,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6685870242277987
+          },
+          {
+            "extra_features": [
+              "beta",
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7575761261380365,
+            "rf_r2": 0.8088268419027561,
+            "rf_r2_abs_dev_from_literal": 0.008173158097243838,
+            "importance_max_abs_dev": 0.3318248307973055,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.671798250642888
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "beta",
+              "lz_norm_simple",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7584110084100625,
+            "rf_r2": 0.8058213086004739,
+            "rf_r2_abs_dev_from_literal": 0.011178691399526097,
+            "importance_max_abs_dev": 0.3320746301479753,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6666925360635367
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "beta",
+              "lz_norm_simple",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.757543167751661,
+            "rf_r2": 0.8062003019379923,
+            "rf_r2_abs_dev_from_literal": 0.010799698062007645,
+            "importance_max_abs_dev": 0.3321549677765965,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6666869905584079
+          },
+          {
+            "extra_features": [
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_labial",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7597474506538959,
+            "rf_r2": 0.8138142998319191,
+            "rf_r2_abs_dev_from_literal": 0.0031857001680808406,
+            "importance_max_abs_dev": 0.33263490487099123,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6826806944820192
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "dispersion",
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7591675004264075,
+            "rf_r2": 0.8095321461695795,
+            "rf_r2_abs_dev_from_literal": 0.007467853830420479,
+            "importance_max_abs_dev": 0.3427906661625154,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6942084277654927
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "dispersion",
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7588364270987054,
+            "rf_r2": 0.8091169433587817,
+            "rf_r2_abs_dev_from_literal": 0.007883056641218245,
+            "importance_max_abs_dev": 0.3428872111331985,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6944283963685928
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "book_ref_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7595018218496135,
+            "rf_r2": 0.8120366555962819,
+            "rf_r2_abs_dev_from_literal": 0.00496334440371804,
+            "importance_max_abs_dev": 0.34522271666838394,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.698164267988449
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "beta",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7580999472727541,
+            "rf_r2": 0.8081614596707236,
+            "rf_r2_abs_dev_from_literal": 0.008838540329276334,
+            "importance_max_abs_dev": 0.345225730258635,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.696155621453469
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "book_ref_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7591294647073632,
+            "rf_r2": 0.8124541852129361,
+            "rf_r2_abs_dev_from_literal": 0.00454581478706384,
+            "importance_max_abs_dev": 0.34551160107560175,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6982022437522758
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha_minus_beta",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7597580848496548,
+            "rf_r2": 0.8093435699965574,
+            "rf_r2_abs_dev_from_literal": 0.007656430003442516,
+            "importance_max_abs_dev": 0.34551176538015665,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6960179067176632
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7600917542214196,
+            "rf_r2": 0.8089887047649906,
+            "rf_r2_abs_dev_from_literal": 0.00801129523500932,
+            "importance_max_abs_dev": 0.345595311338827,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6961735936092014
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "alpha_minus_beta",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7578754324828372,
+            "rf_r2": 0.8071926872683826,
+            "rf_r2_abs_dev_from_literal": 0.00980731273161739,
+            "importance_max_abs_dev": 0.3459316877797055,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6955984896312661
+          },
+          {
+            "extra_features": [
+              "book_ref_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7596978304971189,
+            "rf_r2": 0.812994397642818,
+            "rf_r2_abs_dev_from_literal": 0.004005602357181948,
+            "importance_max_abs_dev": 0.34601252308659103,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6960275383424372
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha_beta_residual",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7585583198410101,
+            "rf_r2": 0.8127383372147182,
+            "rf_r2_abs_dev_from_literal": 0.004261662785281728,
+            "importance_max_abs_dev": 0.34615880034576724,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6967908861349552
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_palatal",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7598671777329735,
+            "rf_r2": 0.8169480093558251,
+            "rf_r2_abs_dev_from_literal": 5.199064417482635e-05,
+            "importance_max_abs_dev": 0.3467974931268791,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.695540544599578
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7595061446858654,
+            "rf_r2": 0.8104847536501893,
+            "rf_r2_abs_dev_from_literal": 0.0065152463498105995,
+            "importance_max_abs_dev": 0.34689192888850223,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6954738712656101
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7598664076446506,
+            "rf_r2": 0.8105347617504709,
+            "rf_r2_abs_dev_from_literal": 0.006465238249529048,
+            "importance_max_abs_dev": 0.3470804340373438,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.695395606068826
+          },
+          {
+            "extra_features": [
+              "alpha_beta_residual",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7582302891514956,
+            "rf_r2": 0.8153312103845609,
+            "rf_r2_abs_dev_from_literal": 0.001668789615439037,
+            "importance_max_abs_dev": 0.3472119743473522,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.694865199296849
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7600717869256328,
+            "rf_r2": 0.8139031659950183,
+            "rf_r2_abs_dev_from_literal": 0.003096834004981619,
+            "importance_max_abs_dev": 0.3472551351579355,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6949248419217158
+          },
+          {
+            "extra_features": [
+              "book_ref_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_pharyngeal",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.7605465514842007,
+            "rf_r2": 0.816128412142322,
+            "rf_r2_abs_dev_from_literal": 0.0008715878576779357,
+            "importance_max_abs_dev": 0.34725715096374726,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6984372481836513
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7597015522590378,
+            "rf_r2": 0.8144969569267532,
+            "rf_r2_abs_dev_from_literal": 0.00250304307324678,
+            "importance_max_abs_dev": 0.3478522584521602,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6951753262559585
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_labial",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.757604388326923,
+            "rf_r2": 0.8166696154391364,
+            "rf_r2_abs_dev_from_literal": 0.0003303845608635392,
+            "importance_max_abs_dev": 0.3482934938771645,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6978665633243948
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_pharyngeal",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.7591087820583484,
+            "rf_r2": 0.8147199503857758,
+            "rf_r2_abs_dev_from_literal": 0.0022800496142241222,
+            "importance_max_abs_dev": 0.3485429159372471,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6970710828784304
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_glottal",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7588214909379767,
+            "rf_r2": 0.8177769646220207,
+            "rf_r2_abs_dev_from_literal": 0.0007769646220207038,
+            "importance_max_abs_dev": 0.3486978053941251,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.69556918826965
+          },
+          {
+            "extra_features": [
+              "beta",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7577304421371971,
+            "rf_r2": 0.8130261833498714,
+            "rf_r2_abs_dev_from_literal": 0.0039738166501285255,
+            "importance_max_abs_dev": 0.3489289571004853,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6976888152042177
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7578083232804119,
+            "rf_r2": 0.8167933626293514,
+            "rf_r2_abs_dev_from_literal": 0.0002066373706485214,
+            "importance_max_abs_dev": 0.34943408253280717,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6996237573668947
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "kl_from_corpus",
+              "lz_norm_simple",
+              "phon_palatal",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7586686244960459,
+            "rf_r2": 0.8209664707073572,
+            "rf_r2_abs_dev_from_literal": 0.003966470707357228,
+            "importance_max_abs_dev": 0.37532217523972006,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8758920203717027
+          },
+          {
+            "extra_features": [
+              "book_ref_density",
+              "dispersion",
+              "kl_from_corpus",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.760432501041068,
+            "rf_r2": 0.8200833034972965,
+            "rf_r2_abs_dev_from_literal": 0.0030833034972965745,
+            "importance_max_abs_dev": 0.3769750303226969,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8766402202641634
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "kl_from_corpus",
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.758253580066878,
+            "rf_r2": 0.8219514566331181,
+            "rf_r2_abs_dev_from_literal": 0.004951456633118134,
+            "importance_max_abs_dev": 0.3777171414043997,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8757917173980592
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "entropy_rate_surah",
+              "phon_pharyngeal",
+              "phon_velar",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7601488470594411,
+            "rf_r2": 0.8521731684251028,
+            "rf_r2_abs_dev_from_literal": 0.035173168425102874,
+            "importance_max_abs_dev": 0.38649091403789027,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8148900895235798
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "entropy_rate_surah",
+              "phon_glottal",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7582807271944298,
+            "rf_r2": 0.8528554518944533,
+            "rf_r2_abs_dev_from_literal": 0.03585545189445338,
+            "importance_max_abs_dev": 0.3868743600351445,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8148538437577197
+          },
+          {
+            "extra_features": [
+              "alpha_beta_residual",
+              "dispersion",
+              "entropy_rate_surah",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7578251131772615,
+            "rf_r2": 0.8316343605840303,
+            "rf_r2_abs_dev_from_literal": 0.014634360584030337,
+            "importance_max_abs_dev": 0.3913516931784878,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.87361061534614
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "entropy_rate_surah",
+              "kl_from_corpus",
+              "lz_norm_simple",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7590882970599706,
+            "rf_r2": 0.8368256979405035,
+            "rf_r2_abs_dev_from_literal": 0.019825697940503595,
+            "importance_max_abs_dev": 0.3955250607199272,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8969534572435165
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "beta",
+              "hurst_verse_len",
+              "phon_emphatic",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.7586356478802709,
+            "rf_r2": 0.824570790384966,
+            "rf_r2_abs_dev_from_literal": 0.007570790384965997,
+            "importance_max_abs_dev": 0.5372152191448963,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.0417182105529902
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha_minus_beta",
+              "beta",
+              "hurst_verse_len",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.7576069413779899,
+            "rf_r2": 0.8277885664526843,
+            "rf_r2_abs_dev_from_literal": 0.010788566452684334,
+            "importance_max_abs_dev": 0.5380573606584726,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.039997590824817894
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "beta",
+              "hurst_verse_len",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.7588694062172348,
+            "rf_r2": 0.8277966626840283,
+            "rf_r2_abs_dev_from_literal": 0.010796662684028346,
+            "importance_max_abs_dev": 0.5382631688959846,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.03943376960399925
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "alpha_minus_beta",
+              "beta",
+              "phon_emphatic",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.7584355628179199,
+            "rf_r2": 0.8246570525100747,
+            "rf_r2_abs_dev_from_literal": 0.007657052510074758,
+            "importance_max_abs_dev": 0.5390244323987603,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.037614350951683806
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_minus_beta",
+              "beta",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.7581198102543913,
+            "rf_r2": 0.8258706208865758,
+            "rf_r2_abs_dev_from_literal": 0.008870620886575864,
+            "importance_max_abs_dev": 0.5400494280764002,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.03736140638309452
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "alpha_minus_beta",
+              "beta",
+              "hurst_verse_len",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.7590016212704433,
+            "rf_r2": 0.82351451712197,
+            "rf_r2_abs_dev_from_literal": 0.006514517121970043,
+            "importance_max_abs_dev": 0.5400779997146136,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.033421181417072246
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "beta",
+              "phon_emphatic",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.7576284496590783,
+            "rf_r2": 0.8244505937506329,
+            "rf_r2_abs_dev_from_literal": 0.00745059375063295,
+            "importance_max_abs_dev": 0.5401810156670479,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.04014496316277041
+          }
+        ],
+        "random_controls": [
+          {
+            "extra_features": [
+              "allah_density",
+              "beta",
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.7933753420026046,
+            "rf_r2": 0.8084947447398798,
+            "rf_r2_abs_dev_from_literal": 0.008505255260120137,
+            "importance_max_abs_dev": 0.32041409949691313,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6487459534461031
+          },
+          {
+            "extra_features": [
+              "beta",
+              "lz_norm_simple",
+              "phon_emphatic",
+              "phon_glottal",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.7984448933320044,
+            "rf_r2": 0.8184079081023066,
+            "rf_r2_abs_dev_from_literal": 0.0014079081023066209,
+            "importance_max_abs_dev": 0.32874999563802276,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6606027603034211
+          },
+          {
+            "extra_features": [
+              "hurst_verse_len",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_emphatic",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7912602484589342,
+            "rf_r2": 0.8243934659079403,
+            "rf_r2_abs_dev_from_literal": 0.007393465907940322,
+            "importance_max_abs_dev": 0.33109345258014317,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6711727747825084
+          },
+          {
+            "extra_features": [
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_glottal",
+              "phon_labial",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.7763486257490972,
+            "rf_r2": 0.8187519821388793,
+            "rf_r2_abs_dev_from_literal": 0.0017519821388793932,
+            "importance_max_abs_dev": 0.33188621065695856,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6758734549859837
+          },
+          {
+            "extra_features": [
+              "alpha_beta_residual",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7632589103368675,
+            "rf_r2": 0.8131152633604017,
+            "rf_r2_abs_dev_from_literal": 0.0038847366395982075,
+            "importance_max_abs_dev": 0.33262074676428727,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6732187378751174
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "alpha_beta_residual",
+              "alpha_minus_beta",
+              "kl_from_corpus",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.7405557419858229,
+            "rf_r2": 0.8327315499888621,
+            "rf_r2_abs_dev_from_literal": 0.01573154998886217,
+            "importance_max_abs_dev": 0.34415871688873784,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.7724040933239876
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "beta",
+              "kl_from_corpus",
+              "phon_emphatic",
+              "phon_glottal"
+            ],
+            "ridge_r2": 0.7479491940734398,
+            "rf_r2": 0.8307479060772363,
+            "rf_r2_abs_dev_from_literal": 0.013747906077236305,
+            "importance_max_abs_dev": 0.34780388773997095,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.7764177367713305
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "lz_norm_simple",
+              "phon_emphatic",
+              "phon_labial",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7698711003270305,
+            "rf_r2": 0.8188598108584273,
+            "rf_r2_abs_dev_from_literal": 0.0018598108584273465,
+            "importance_max_abs_dev": 0.3483410351076087,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.699650769113246
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "dispersion",
+              "lz_norm_simple",
+              "phon_continuant",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.7923211641650036,
+            "rf_r2": 0.8200993556226079,
+            "rf_r2_abs_dev_from_literal": 0.003099355622607991,
+            "importance_max_abs_dev": 0.3487340827332536,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.6963103109027489
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "hurst_verse_len",
+              "kl_from_corpus",
+              "phon_continuant",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.716698205702813,
+            "rf_r2": 0.8284490739353192,
+            "rf_r2_abs_dev_from_literal": 0.011449073935319243,
+            "importance_max_abs_dev": 0.3491745701334791,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.7829303340876503
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "kl_from_corpus",
+              "phon_emphatic",
+              "phon_pharyngeal",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.7190051542291318,
+            "rf_r2": 0.8354227119742411,
+            "rf_r2_abs_dev_from_literal": 0.018422711974241168,
+            "importance_max_abs_dev": 0.35339804360968113,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.787059554085248
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "alpha_minus_beta",
+              "kl_from_corpus",
+              "lz_norm_simple",
+              "phon_continuant"
+            ],
+            "ridge_r2": 0.7952729235068803,
+            "rf_r2": 0.8221112577712075,
+            "rf_r2_abs_dev_from_literal": 0.005111257771207578,
+            "importance_max_abs_dev": 0.3543255271241906,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8435042167173049
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "beta",
+              "dispersion",
+              "kl_from_corpus",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.6910943967940244,
+            "rf_r2": 0.835278079625767,
+            "rf_r2_abs_dev_from_literal": 0.018278079625766996,
+            "importance_max_abs_dev": 0.37070279781499105,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8164007033285992
+          },
+          {
+            "extra_features": [
+              "book_ref_density",
+              "dispersion",
+              "kl_from_corpus",
+              "phon_labial",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.7113940528406324,
+            "rf_r2": 0.8361165924140864,
+            "rf_r2_abs_dev_from_literal": 0.019116592414086475,
+            "importance_max_abs_dev": 0.3709483161079658,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8140515325189381
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "beta",
+              "book_ref_density",
+              "log_length"
+            ],
+            "ridge_r2": 0.8112594003940841,
+            "rf_r2": 0.8420093349668901,
+            "rf_r2_abs_dev_from_literal": 0.025009334966890173,
+            "importance_max_abs_dev": 0.3753741946302106,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8460031462874563
+          },
+          {
+            "extra_features": [
+              "alpha_beta_residual",
+              "alpha_minus_beta",
+              "entropy_rate_surah",
+              "hurst_verse_len",
+              "phon_continuant"
+            ],
+            "ridge_r2": 0.8002676225874894,
+            "rf_r2": 0.8408139972864057,
+            "rf_r2_abs_dev_from_literal": 0.023813997286405764,
+            "importance_max_abs_dev": 0.37621682826030256,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.7887052216767974
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "book_ref_density",
+              "entropy_rate_surah",
+              "phon_continuant",
+              "phon_glottal"
+            ],
+            "ridge_r2": 0.8037123841861558,
+            "rf_r2": 0.8400782475041009,
+            "rf_r2_abs_dev_from_literal": 0.023078247504100924,
+            "importance_max_abs_dev": 0.3773906814474174,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.7889007842019172
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "alpha_minus_beta",
+              "beta",
+              "log_length",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.8221994723113981,
+            "rf_r2": 0.8476022075292117,
+            "rf_r2_abs_dev_from_literal": 0.030602207529211722,
+            "importance_max_abs_dev": 0.37812365823572003,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8520238809153745
+          },
+          {
+            "extra_features": [
+              "alpha_beta_residual",
+              "book_ref_density",
+              "hurst_verse_len",
+              "log_length",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.805579105837641,
+            "rf_r2": 0.8497958563010064,
+            "rf_r2_abs_dev_from_literal": 0.032795856301006454,
+            "importance_max_abs_dev": 0.37920430201934013,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8604414709566838
+          },
+          {
+            "extra_features": [
+              "entropy_rate_surah",
+              "kl_from_corpus",
+              "phon_glottal",
+              "phon_palatal",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.802652450339473,
+            "rf_r2": 0.854413361009295,
+            "rf_r2_abs_dev_from_literal": 0.03741336100929504,
+            "importance_max_abs_dev": 0.382886738157434,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8323442889364134
+          },
+          {
+            "extra_features": [
+              "beta",
+              "hurst_verse_len",
+              "kl_from_corpus",
+              "log_length",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.8145488569717005,
+            "rf_r2": 0.8453144178935218,
+            "rf_r2_abs_dev_from_literal": 0.028314417893521848,
+            "importance_max_abs_dev": 0.3829328781319563,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8597811099830057
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "alpha_beta_residual",
+              "log_length",
+              "lz_norm_simple",
+              "phon_continuant"
+            ],
+            "ridge_r2": 0.8014099549560787,
+            "rf_r2": 0.8399070239565825,
+            "rf_r2_abs_dev_from_literal": 0.022907023956582506,
+            "importance_max_abs_dev": 0.3834606624398238,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8861272517466396
+          },
+          {
+            "extra_features": [
+              "book_ref_density",
+              "log_length",
+              "phon_continuant",
+              "phon_labial",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.8076569489961183,
+            "rf_r2": 0.8463164836678074,
+            "rf_r2_abs_dev_from_literal": 0.02931648366780748,
+            "importance_max_abs_dev": 0.3835461832137558,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8569007160582205
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "hurst_verse_len",
+              "log_length",
+              "lz_norm_simple",
+              "phon_continuant"
+            ],
+            "ridge_r2": 0.8017672466241844,
+            "rf_r2": 0.8408976069743423,
+            "rf_r2_abs_dev_from_literal": 0.0238976069743424,
+            "importance_max_abs_dev": 0.3837451754018596,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8863502258645968
+          },
+          {
+            "extra_features": [
+              "book_ref_density",
+              "dispersion",
+              "entropy_rate_surah",
+              "hurst_verse_len",
+              "phon_labial"
+            ],
+            "ridge_r2": 0.7882617130263554,
+            "rf_r2": 0.8516834075859137,
+            "rf_r2_abs_dev_from_literal": 0.034683407585913706,
+            "importance_max_abs_dev": 0.3842407909780693,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8088239937023965
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "beta",
+              "log_length",
+              "phon_alveolar",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.8147143725726005,
+            "rf_r2": 0.8441118699499808,
+            "rf_r2_abs_dev_from_literal": 0.027111869949980827,
+            "importance_max_abs_dev": 0.3848827817403942,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8570765342925488
+          },
+          {
+            "extra_features": [
+              "log_length",
+              "phon_alveolar",
+              "phon_continuant",
+              "phon_pharyngeal",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.8135476108410378,
+            "rf_r2": 0.8492472959235333,
+            "rf_r2_abs_dev_from_literal": 0.03224729592353337,
+            "importance_max_abs_dev": 0.38566201401268996,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8708775857633597
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "dispersion",
+              "log_length",
+              "phon_palatal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7995227592756169,
+            "rf_r2": 0.844389394706466,
+            "rf_r2_abs_dev_from_literal": 0.027389394706466064,
+            "importance_max_abs_dev": 0.385677440312,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8736567756330663
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "log_length",
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7912512900961333,
+            "rf_r2": 0.8319595107429982,
+            "rf_r2_abs_dev_from_literal": 0.014959510742998283,
+            "importance_max_abs_dev": 0.38651756172080054,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.895956890232282
+          },
+          {
+            "extra_features": [
+              "alpha_beta_residual",
+              "kl_from_corpus",
+              "log_length",
+              "lz_norm_simple",
+              "phon_alveolar"
+            ],
+            "ridge_r2": 0.8061619164515124,
+            "rf_r2": 0.8372727862943237,
+            "rf_r2_abs_dev_from_literal": 0.02027278629432372,
+            "importance_max_abs_dev": 0.3868056896314496,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8967258224080482
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "dispersion",
+              "log_length",
+              "phon_continuant",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7929487741242659,
+            "rf_r2": 0.8493690761628967,
+            "rf_r2_abs_dev_from_literal": 0.03236907616289675,
+            "importance_max_abs_dev": 0.38838327250935034,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.883484918091644
+          },
+          {
+            "extra_features": [
+              "alpha_minus_beta",
+              "dispersion",
+              "entropy_rate_surah",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7625409275645993,
+            "rf_r2": 0.8507891393450923,
+            "rf_r2_abs_dev_from_literal": 0.03378913934509231,
+            "importance_max_abs_dev": 0.38892097895258604,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8176064199888469
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "beta",
+              "entropy_rate_surah",
+              "log_length",
+              "phon_alveolar"
+            ],
+            "ridge_r2": 0.8154894027513628,
+            "rf_r2": 0.8503816982240133,
+            "rf_r2_abs_dev_from_literal": 0.03338169822401338,
+            "importance_max_abs_dev": 0.3890180428114119,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8604523938963381
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "entropy_rate_surah",
+              "lz_norm_simple",
+              "phon_glottal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7760808526551267,
+            "rf_r2": 0.8295887693647355,
+            "rf_r2_abs_dev_from_literal": 0.01258876936473552,
+            "importance_max_abs_dev": 0.3902727319637085,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.8676707877564285
+          },
+          {
+            "extra_features": [
+              "entropy_rate_surah",
+              "log_length",
+              "lz_norm_simple",
+              "phon_alveolar",
+              "phon_emphatic"
+            ],
+            "ridge_r2": 0.8061144011014983,
+            "rf_r2": 0.8493482242157915,
+            "rf_r2_abs_dev_from_literal": 0.03234822421579153,
+            "importance_max_abs_dev": 0.39402269932792416,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.9038413378299068
+          },
+          {
+            "extra_features": [
+              "dispersion",
+              "phon_alveolar",
+              "phon_emphatic",
+              "phon_velar",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7157561197936326,
+            "rf_r2": 0.8306911757558575,
+            "rf_r2_abs_dev_from_literal": 0.013691175755857543,
+            "importance_max_abs_dev": 0.5281046036814895,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.08501070363925661
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha_minus_beta",
+              "dispersion",
+              "phon_alveolar",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.7261692628205534,
+            "rf_r2": 0.8230982315060449,
+            "rf_r2_abs_dev_from_literal": 0.006098231506044938,
+            "importance_max_abs_dev": 0.5284469450328934,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.08018381563554201
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "alpha_beta_residual",
+              "book_ref_density",
+              "phon_emphatic",
+              "phon_labial"
+            ],
+            "ridge_r2": 0.734582024316291,
+            "rf_r2": 0.8277287140803142,
+            "rf_r2_abs_dev_from_literal": 0.010728714080314283,
+            "importance_max_abs_dev": 0.5344444295753632,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.05330162484706995
+          },
+          {
+            "extra_features": [
+              "beta",
+              "book_ref_density",
+              "hurst_verse_len",
+              "phon_alveolar",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.7332730911775087,
+            "rf_r2": 0.8205768354225309,
+            "rf_r2_abs_dev_from_literal": 0.003576835422530955,
+            "importance_max_abs_dev": 0.5360911175137986,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.04130764171745312
+          },
+          {
+            "extra_features": [
+              "alpha_beta_residual",
+              "beta",
+              "phon_labial",
+              "phon_velar",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7051343845714503,
+            "rf_r2": 0.8235294250825216,
+            "rf_r2_abs_dev_from_literal": 0.006529425082521634,
+            "importance_max_abs_dev": 0.5375820757269006,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.049910522443608885
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "beta",
+              "hurst_verse_len",
+              "phon_alveolar",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7188720389362775,
+            "rf_r2": 0.828378156375934,
+            "rf_r2_abs_dev_from_literal": 0.01137815637593409,
+            "importance_max_abs_dev": 0.5377532304444781,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.048736794750212524
+          },
+          {
+            "extra_features": [
+              "alpha_beta_residual",
+              "beta",
+              "phon_continuant",
+              "phon_velar",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7088661009650805,
+            "rf_r2": 0.8222421980113809,
+            "rf_r2_abs_dev_from_literal": 0.0052421980113809274,
+            "importance_max_abs_dev": 0.5378522438322483,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.04685898823197013
+          },
+          {
+            "extra_features": [
+              "alpha_beta_residual",
+              "alpha_minus_beta",
+              "phon_emphatic",
+              "phon_pharyngeal",
+              "phon_voiced"
+            ],
+            "ridge_r2": 0.7010505242355146,
+            "rf_r2": 0.8256890662400518,
+            "rf_r2_abs_dev_from_literal": 0.008689066240051835,
+            "importance_max_abs_dev": 0.5383672617776033,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.051089190553305366
+          },
+          {
+            "extra_features": [
+              "alpha",
+              "hurst_verse_len",
+              "phon_alveolar",
+              "phon_palatal",
+              "phon_velar"
+            ],
+            "ridge_r2": 0.7282818486755744,
+            "rf_r2": 0.8238812946274883,
+            "rf_r2_abs_dev_from_literal": 0.006881294627488321,
+            "importance_max_abs_dev": 0.5383808349013788,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.0411892928396866
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "beta",
+              "hurst_verse_len",
+              "phon_continuant",
+              "phon_labial"
+            ],
+            "ridge_r2": 0.738839173146592,
+            "rf_r2": 0.824729416374719,
+            "rf_r2_abs_dev_from_literal": 0.0077294163747190225,
+            "importance_max_abs_dev": 0.5386959144897406,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.04611408318450279
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha_minus_beta",
+              "beta",
+              "book_ref_density",
+              "hurst_verse_len"
+            ],
+            "ridge_r2": 0.7516190942710229,
+            "rf_r2": 0.819762138474312,
+            "rf_r2_abs_dev_from_literal": 0.002762138474312059,
+            "importance_max_abs_dev": 0.5387436069917153,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.02765719094940784
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "beta",
+              "phon_pharyngeal"
+            ],
+            "ridge_r2": 0.7290380595205409,
+            "rf_r2": 0.8246892768473705,
+            "rf_r2_abs_dev_from_literal": 0.00768927684737053,
+            "importance_max_abs_dev": 0.5395347002509475,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.045851190537830315
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_minus_beta",
+              "beta",
+              "phon_glottal"
+            ],
+            "ridge_r2": 0.7483371113647969,
+            "rf_r2": 0.8180430422632186,
+            "rf_r2_abs_dev_from_literal": 0.0010430422632186076,
+            "importance_max_abs_dev": 0.5403608118690995,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.023690771752032557
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_minus_beta",
+              "hurst_verse_len",
+              "phon_alveolar"
+            ],
+            "ridge_r2": 0.7409365237327395,
+            "rf_r2": 0.8247892863652012,
+            "rf_r2_abs_dev_from_literal": 0.0077892863652012645,
+            "importance_max_abs_dev": 0.5404026719048916,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.03756032232121749
+          },
+          {
+            "extra_features": [
+              "allah_density",
+              "alpha",
+              "alpha_beta_residual",
+              "phon_glottal",
+              "phon_palatal"
+            ],
+            "ridge_r2": 0.7386649356425623,
+            "rf_r2": 0.8205875041007675,
+            "rf_r2_abs_dev_from_literal": 0.00358750410076758,
+            "importance_max_abs_dev": 0.5410807238884007,
+            "rank_order_matches": false,
+            "five_extra_importance_mass": 0.028227044857838612
+          }
+        ],
+        "best_importance_max_abs_dev_overall": 0.32041409949691313,
+        "best_rf_r2_abs_dev_overall": 5.199064417482635e-05,
+        "any_rank_order_match": false,
+        "published_importance_sum_of_named_ten": 0.98
+      },
+      "verdict": "RECOVERED"
+    }
+  },
+  "verdicts": {
+    "L1": "CONFIRMS-BY-RECOVERY",
+    "L2": "RECOVERED",
+    "L3": "CONFIRMS",
+    "L4": "CONFIRMS",
+    "L5": "CONFIRMS",
+    "L6": "CONFIRMS",
+    "L7": "CONFIRMS",
+    "L8": "CONFIRMS",
+    "L9": "CONFIRMS"
+  },
+  "elapsed_s": 3019.4,
+  "smoke": false
+}
