@@ -74,6 +74,42 @@ names, and it inverts on exactly the relation classical morphology says should i
 
 ## 5. The parser-free replication
 
+> ### ⚠ LIVE THREAT FLAG (2026-08-07) — this section's channel is under active validation
+>
+> The attached-object-pronoun rule discards any post-verb `PRON` whose PGN equals the verb's
+> own subject agreement. **That discard rate is strongly form-correlated, and it runs in the
+> direction that would inflate every claimed arm:**
+>
+> | form | any post-verb PRON | counted | discarded | discard rate |
+> |---|--:|--:|--:|--:|
+> | I | 6439 | 1672 | 4767 | 0.7403 |
+> | II | 724 | 381 | 343 | **0.4738** |
+> | III | 240 | 90 | 150 | 0.6250 |
+> | IV | 2181 | 695 | 1486 | 0.6813 |
+> | V | 226 | 30 | 196 | **0.8673** |
+> | VI | 55 | **0** | 55 | **1.0000** |
+> | VII | 22 | 0 | 22 | **1.0000** |
+> | VIII | 642 | 97 | 545 | 0.8489 |
+>
+> II→V (−0.394), I→II (+0.267), I→VIII (−0.109) and III→VI (−0.375) all differ in the
+> effect-inflating direction. **Forms VI and VII discard 100%** — so a reported rate of
+> 0.000 for those forms is produced by the rule, not observed in the text.
+>
+> **This does not by itself condemn the channel.** QAC segments some SUBJECT pronouns
+> separately (wāw al-jamāʿa, tāʾ al-fāʿil, nūn al-niswa) and discarding those is correct —
+> that is likely most of the 74% for Form I. The channel breaks only where a discarded PRON
+> is a genuine OBJECT sharing the subject's PGN. The rule also uses `any(tag != subj)`, so a
+> word carrying both a subject marker and a differently-marked object clitic is counted
+> correctly, which narrows the false-negative case further.
+>
+> **H-NEW-2650 is decomposing the discards into (a) legitimate subject markers and
+> (b) genuine-object false negatives, and recomputing the (b)-rate per form.** Until that
+> lands, **treat the numbers in this section as PROVISIONAL.** If (b) is form-correlated,
+> this section and the findings resting on it are downgraded.
+>
+> Flagged before the analysis completed, deliberately, rather than left standing unqualified.
+
+
 H-NEW-2540 §7.2 records confirmed contamination: the EQTB parser had morphological features,
 including `verb_form`, among its inputs, so its `Obj` edges could encode the very prior under
 test. A parser that learned the textbook would reproduce this entire lattice.
