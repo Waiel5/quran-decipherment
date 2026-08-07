@@ -18,7 +18,9 @@ status: >-
   five GENRE-SHARED-BUT-LARGER, one DOES-NOT-SURVIVE, two DID-NOT-REPRODUCE, and one
   SEED-FRAGILE. Under the pre-registered SECONDARY stratification every mushaf-position cell
   fails, three of six falling BELOW their own null mean. The calibration arm passed at
-  rho = -0.9858 and both locked harness-invalidator directions held.
+  rho = -0.9858 and both locked harness-invalidator directions held. Section 9 adds a post-hoc,
+  descriptive reconciliation with an independent sweep of the same repository; it moves no
+  verdict and is quarantined as such.
 verdict: >-
   The mushaf-position predictors are size predictors. A SINGLE column - log surah word count,
   no vocabulary at all - reaches LOOCV R2 = 0.8378, beating H-NEW-192's reconstructed
@@ -314,10 +316,22 @@ five decimal places by fifteen of its own columns.
 Its `executed_by` field records an inline, unscripted run, and its Files section reads
 `Script: inline (seed 20260419)`. There is no script path anywhere in the finding.
 
-1. **No script exists.** A repository-wide search finds two files containing its numbers —
+1. **No script exists.** There is no `h_new_192*.py` and no `csv/h-new-192.json`. A
+   repository-wide search finds two files containing its numbers —
    `scripts/h_new_233_ensemble_predictor.py` and `scripts/h_new_250_equation_fit.py` — and in
    both they are **hard-coded literals**: `"h_new_192_baseline_ridge": 0.759`,
    `"h_new_192_baseline_rf": 0.817`. **No code in this repository computes 0.759 or 0.817.**
+   **And in H-NEW-233 they are not annotations — they are the decision rule.** At
+   `scripts/h_new_233_ensemble_predictor.py:531-533`, under the comment `# Pre-reg tests`:
+
+   ```python
+   # Pre-reg tests
+   H1 = bool(r2_A > 0.759 and p_ridge < 0.025)
+   H2 = bool(r2_B > 0.817)
+   ```
+
+   **H-NEW-233's published verdict is gated on two thresholds that no code in this repository
+   reproduces.** Its `H2_rf_beats_baseline: true` is a comparison against a literal.
 2. **Its feature set is under-specified.** The finding names **10** of its **15** features; two
    of the ten — `divine_name_density`, `legal_density` — are absent from H-NEW-233's
    `BASE_FEATURES` while the other eight are present. No journal entry and no CSV records the
@@ -329,12 +343,15 @@ Its `executed_by` field records an inline, unscripted run, and its Files section
 
 This is not an accusation that the numbers are wrong. It is the statement that **they cannot be
 checked**, and that a claim which cannot be checked should not be carrying two downstream
-scripts and the "complete equation" work. **Eleven markdown files in `findings/` assert both
-0.759 and 0.817** — excluding this finding and its pre-registration — among them
-`cross-finding-020-the-complete-equation.md`,
+scripts and the "complete equation" work. **Twelve markdown files across `findings/` and
+`surahs/` assert both 0.759 and 0.817**, excluding this finding and its pre-registration —
+among them `cross-finding-020-the-complete-equation.md`,
 `cross-finding-021-mushaf-information-theoretic-optimality.md`,
 `h-new-250-quantitative-equation-fit.md` and
-`h-new-230-mushaf-nöldeke-block-decomposition.md`.
+`h-new-230-mushaf-nöldeke-block-decomposition.md`. (Scope matters for this count and should be
+quoted with it: mine excludes stale worktree copies but *includes* pre-registrations, two of
+which are in the twelve. The independent sweep counted fifteen on a slightly different scope.
+The disagreement is bookkeeping; the fact is not.)
 
 ---
 
@@ -544,35 +561,78 @@ verdict.
 
 ## 12. Flagged claims NOT reached — where the next session starts
 
-The batch was five. A screen A ∧ B ∧ ¬C scan over every uncorrected finding in `findings/`
-produced a longer list, ordered by computed citation count. **Not reached, in priority order:**
+The batch was five. Two independent screens of the same repository exist: mine, applied while
+this pre-registration was being written, and the sweep's, which reached me after the lock. The
+merged list below is authoritative and the sweep's ranking metric is used — **distinct in-scope
+`.md` files citing the ID, over `findings/` + `surahs/`, preregs excluded, stale duplicated
+worktree trees excluded** — because it is the better metric: raw mention counts double-count
+long files.
 
-| claim | cites | statistic | ordering |
-|:--|--:|:--|:--|
-| **H-NEW-126** — isolate core | 197 | cluster membership of {Q16, 21, 22, 23, 25} across 20 systems | mushaf / cluster systems |
-| **H-NEW-88** — letter-set predictor | 167 | per-surah letter-set densities | mushaf |
-| **H-NEW-19** — extended classical anchors | 163 | nine density measures | mushaf |
-| **H-NEW-136** — muq cardinality Pattern-B | 144 | eight density measures | mushaf |
-| **H-NEW-142** — universal hinges | 119 | chronology-reversal magnitude | mushaf × Nöldeke |
-| **H-NEW-570** — muqaṭṭaʿāt content cluster | 101 | eight density measures | muq / non-muq |
-| **H-NEW-123** — Heaps' law | 90 | β, K per surah | mushaf |
-| **H-NEW-49** — surah name class | 87 | six density measures | name class |
-| **H-NEW-234** — Q55 unified profile | 65 | nine densities across fifteen orderings | mushaf |
-| **H-NEW-2210** — qasam-jawāb inventory | 51 | per-surah oath rates | mushaf |
-| **H-NEW-74 Cells 1–5** | 75 | the other five cells of a claim whose Cell 6 is tested here | — |
+**The two highest-priority flagged claims in the repository were NOT reached by this batch.**
 
-**Two of these are now cheap**, because this finding's harness already holds the answer shape:
-H-NEW-88 and H-NEW-136 are both per-surah density models across mushaf position, and §3's S1
-column — 0.8378 from one size column — is the number they must beat.
+| pri | claim | citing files | statistic | denominator | ordering | strongest channel |
+|--:|:--|--:|:--|:--|:--|:--|
+| **1** | **cross-finding-012 / 016 / 017** — the Late-Meccan apparatus | **80** | Kendall's W = 0.8929 joint peak of four content axes; the B6/B7 staircase | **verse count** | Nöldeke bins B1–B8 | mean verse length (climbs **4.05 → 20.97**, 5.2×, across B1→B8) |
+| **2** | **H-NEW-236 Cell B** | **42** | ρ(mushaf position, KL) = +0.9201, presented as a "compositional-vocabulary gradient" | surah token count | mushaf | log word count (−0.9342) |
+| 3 | **H-NEW-136 / 141 / 129** | 39 | the same four per-100-verse Pattern-B axes as pri-1 | verse count | Nöldeke / phase | mean verse length |
+| 4 | **H-NEW-88** — letter-set predictor | 24 | multi-class RF for the muqaṭṭaʿāt letter-set | mixed | — | not computed by either lane — a genuine open arm |
+| 5 | **H-NEW-74 Cells 1–5** | 31 | including the top-10-by-density ranking, re-cut descriptively in §9.3 but never tested | verse count | surah ranking | mean verse length |
+| 6 | `surahs/Q047-muhammad/00-overview-comprehensive.md:132-136` | — | "highest Muhammad-naming density", 1.828 vs 1.783 | words | 4-surah ranking | **needs no run** — both numerators are **1**, so the density is exactly 1/length and the whole 2.5 % margin is that Q 47 is 2.5 % shorter |
+| — | H-NEW-126, 19, 142, 570, 123, 49, 234, 2210 | 197 – 51 by my metric | on my screen but not the sweep's | — | — | rank these on the sweep's metric before spending a run |
 
-**H-NEW-231 was reached but only as a calibration arm** and is not a tested claim; its own title
-already declares length dominant and this run confirms it at ρ = −0.9858. **It should be cited
-as CLEAN** under the rule's §4, which asks that clean cases be named.
+**Two are cheap now**, because this harness holds their answer shape. Pri-2 (H-NEW-236 Cell B)
+is nearly settled already: the sweep computed ρ(mushaf position, **−log word count**) =
+**+0.9342**, *higher than the claimed +0.9201 using no vocabulary at all*, and H-NEW-231
+independently publishes ρ(log-length, KL) = −0.967. Pri-4 (H-NEW-88) is a mushaf-ordered
+density model, so §3's `S1` column — **0.8378 from one size column** — is the number it must
+beat.
 
-I did not receive the sweep's own FLAGGED inventory before locking, so this worklist is my own
-screen applied independently. **Where the two lists differ, the difference is worth an hour**:
-two independent applications of the same three screens disagreeing would say the screens are
-not yet mechanical enough to be a standing rule.
+**Pri-1 carries a caveat that must be inherited.** The sweep's per-word re-normalisation moves
+**3 of 4 peaks out of the Late-Meccan zone** (qul B7→B4, eschatological B6→B3, loanword B7→B4;
+only `book_reference` holds at B7) — but its B1–B4 bin edges are *reconstructed octiles*,
+because only the B6/B7/B8 rank ranges are published. B5–B8 reproduce the published table
+exactly. **Anyone rerunning this must recover the exact bin edges from the runner rather than
+trust the reconstruction.**
+
+**CLEAN — named, per the rule's §4, so no run is spent on them:** H-NEW-239 (per-word density
+plus a token-preserving null that exposes the short-surah inflation bias and finds the real
+gradient running against it); **H-NEW-590** (tested by the sweep: ρ(Δ%ile, |log size deviation|)
+= +0.062 over all 114 — with the caveat that Q 1's +27.09 is confounded at |log dev| = 4.90
+while the corpus-wide ranking is not); **H-NEW-231** (clean by disclosure, and confirmed here at
+ρ = −0.9858 against its published −0.967); H-NEW-46 (not a ratio); H-NEW-770's words-per-verse
+arm (declared degenerate in pre-registration); H-NEW-91; and the per-1000-token work in
+`surahs/Q009-al-tawba/06-novel-findings.md:43-93`.
+
+**The two screens agreed on the claims they both saw and differed only in coverage** — no claim
+was ranked FLAGGED by one and CLEAN by the other. That is a meaningful check on the rule: the
+three screens are mechanical enough to be applied independently and converge.
+
+**The ranking, however, does not converge, and the table above should be read as approximate.**
+I implemented the sweep's own stated metric — distinct `.md` files under `findings/` + `surahs/`
+citing the ID, preregs excluded by filename, worktree copies and run directories excluded — and
+got systematically lower counts than it did:
+
+| claim | sweep | my implementation of the sweep's metric |
+|:--|--:|--:|
+| H-NEW-236 | 42 | **18** |
+| H-NEW-74 | 31 | **22** |
+| H-NEW-192 | 27 | **18** |
+| H-NEW-183 | 15 | **13** |
+| H-NEW-126 | *(not ranked)* | **33** |
+
+**The ordering changes with the implementation**: on my count H-NEW-126 at 33 would head the
+unreached list, ahead of H-NEW-236 at 18. Two careful implementations of the same one-sentence
+metric differing by up to 2.3× means **the metric is under-specified as written** — most likely
+in what counts as a citation (bare ID, wiki-link target, frontmatter field) and what counts as
+in-scope. Neither count is asserted here as correct. **What is established is that "load-bearing"
+needs a specified counting rule before it can order a worklist**, and until it has one the
+priority column is a rough guide rather than a queue.
+
+**One category neither screen has.** H-NEW-192 is not FLAGGED-vs-CLEAN at all; it is
+**UNVERIFIABLE** — no script, an under-specified feature set, and headline numbers that exist
+in this repository only as hard-coded literals (§6). A screen that only asks "is there a
+size-fixing null?" cannot catch a claim that has no computation to null. That deserves to be a
+third outcome alongside FLAGGED and CLEAN.
 
 ---
 
@@ -594,11 +654,21 @@ Flagged, not applied — a correction to another finding's file is not mine to m
 - **`h-new-74-qul-distribution.md`**: Cell 6 should quote **p = 0.0044 per word and 0.0071 per
   verse under a mean-verse-length-matched null** beside its `p = 1.02 × 10⁻⁷`, note the
   `SEED-FRAGILE` per-verse boundary, and label its published `H = 35.36` tie-uncorrected.
-- **`findings/UNIT-DRIFT-DEFECT.md`**: §5's H-NEW-183 example names the wrong channel (verse
-  count, ρ = +0.390) for a baseline that is log word count (ρ = +0.6775); **its 0.799 figure is
-  confirmed** at 0.7943–0.8005. §6's diagnostic ordering should be amended per §7: for a fitted
-  model containing size as a feature the size-only baseline is decisive and the stratified null
-  is not, and any stratified null must declare and report at least two bin widths.
+- **`findings/UNIT-DRIFT-DEFECT.md`**, four items:
+  1. §5's H-NEW-183 example names the wrong channel (verse count, ρ = +0.390) for a baseline
+     that is log word count (ρ = +0.6775). **Its 0.799 figure is confirmed** — reproduced here
+     at **0.7988** on its own two-column arm (§9.1).
+  2. §6's diagnostic ordering should be amended per §7: **for a fitted model containing size as
+     a feature the size-only baseline is decisive and the stratified null is not**, and any
+     stratified null must declare and report **at least two bin widths**.
+  3. **The mushaf ordering's strongest channel is log word count, not verse count** (§9.2).
+     Locking verse count would have set the size baseline at 0.5386 instead of 0.8378 and
+     returned `SURVIVES` for a claim that a one-column baseline beats outright. This is the
+     rule's own §5 clause biting inside the inventory built to enforce it, and it is the
+     strongest available case for the "rank the channels on the data first" instruction.
+  4. **A third outcome is needed beside FLAGGED and CLEAN: UNVERIFIABLE** — a claim with no
+     computation to null at all (§6). The three screens cannot see it, because Screen C asks
+     what null exists and the answer presupposes a statistic that can be recomputed.
 - **`STATE-OF-THE-PROJECT-2026-08-07.md`**: rows in §2 for H-NEW-192 and H-NEW-233; and in §1,
   H-NEW-183's +0.0413 above-size residual and H-NEW-74 Cell 6's per-word survival, both at their
   measured strength and not above it.

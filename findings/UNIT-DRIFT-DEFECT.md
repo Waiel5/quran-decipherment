@@ -57,16 +57,25 @@ Does the comparison run across an **ordering with monotone unit-size drift**?
 The orderings in this repository that carry such drift are already measured. **Use this
 table; do not re-derive it.**
 
-| ordering | drift channel | Spearman ρ | source |
-|:--|:--|--:|:--|
-| Nöldeke / revelation rank | **mean verse length** | **+0.9038** | H-NEW-2770 §2; reproduced by H-NEW-2780 |
-| Nöldeke / revelation rank | surah word count | +0.6892 | H-NEW-2770 §2 |
-| Nöldeke / revelation rank | `log_length` *(= log word count; H-NEW-183's baseline feature)* | +0.6775 | H-NEW-2780; identity confirmed against `csv/h-new-123.json` `N` |
-| Nöldeke / revelation rank | verse count | +0.3903 | H-NEW-2770 §2; H-NEW-125 axis 1 |
-| **mushaf position** | **verse count** | **−0.8446** | H-NEW-2680 §8.1; reproduced by H-NEW-2780 |
-| **mushaf position** | **mean verse length** | **−0.7131** | H-NEW-2780 (new) |
-| mushaf position | log word count | −0.9342 | H-NEW-2780 (new) |
-| surah-length rank | verse count | 1.000 by construction | — |
+Channels are listed **strongest first within each ordering**, and the strongest is bolded.
+**The strongest channel differs between the two orderings — it is not the same variable — so
+read the block for your ordering and do not carry a channel across.**
+
+`ρ` is the Spearman correlation with the ordering. `size-only R²` is single-channel Ridge
+LOOCV predicting the ordering from that column alone, on H-NEW-183's frozen pipeline; it is
+the operationally decisive number for any model-shaped claim, because it is the bar the model
+must clear.
+
+| ordering | drift channel | ρ | size-only R² | source |
+|:--|:--|--:|--:|:--|
+| **mushaf position** | **log word count** ← strongest | **−0.9342** | **0.8377** | H-NEW-2780; confirmed 0.8378 by H-NEW-2790 |
+| mushaf position | verse count | −0.8446 | 0.5386 | H-NEW-2680 §8.1; R² H-NEW-2780/2790 |
+| mushaf position | mean verse length | −0.7131 | 0.4133 | H-NEW-2780 |
+| **Nöldeke / revelation rank** | **mean verse length** ← strongest | **+0.9038** | **0.8005** | H-NEW-2770 §2; R² H-NEW-2780, bracketed by H-NEW-2790 |
+| Nöldeke / revelation rank | surah word count | +0.6892 | — | H-NEW-2770 §2 |
+| Nöldeke / revelation rank | `log_length` *(= log word count; H-NEW-183's baseline feature)* | +0.6775 | 0.4462 | H-NEW-2780; identity confirmed against `csv/h-new-123.json` `N` |
+| Nöldeke / revelation rank | verse count | +0.3903 | 0.0961 | H-NEW-2770 §2; H-NEW-125 axis 1 |
+| surah-length rank | verse count | 1.000 by construction | — | — |
 
 Nöldeke-rank bins (B1…B8) inherit the drift: mean verse length climbs monotonically
 **4.05 → 20.97** words from B1 to B8, a **5.2×** rise (H-NEW-2780).
@@ -74,6 +83,18 @@ Nöldeke-rank bins (B1…B8) inherit the drift: mean verse length climbs monoton
 **Note the sign asymmetry.** Mushaf order and Nöldeke order drift in *opposite* directions
 on verse length. A claim that holds on both orderings is not thereby robust — it may simply
 be reading the same denominator twice.
+
+> **⚠ This table previously got its own rule wrong, and the error is instructive enough to
+> keep on the record.** Until 2026-08-07 it bolded **verse count (−0.8446)** as the mushaf
+> channel and left log word count unbolded at the bottom of the block. A session following §6
+> step 3 would have locked verse count as primary — **size-only R² 0.5386** — and a
+> 15-feature model of mushaf position at 0.8026 would have cleared that by +0.264 and returned
+> SURVIVES. Against the true strongest channel at **0.8377** the same model **fails**. The
+> verdict turned entirely on which row of this table was bolded. Caught by H-NEW-2790 while
+> building against it; all three single-channel R² values independently reproduced. **This is
+> §5's "control on the weak channel" clause occurring inside the document that states it** —
+> which is the best evidence available that ranking channels by measurement rather than by
+> intuition is not optional.
 
 ### Screen C — the null
 Does **any** null model hold unit size fixed?
@@ -125,6 +146,12 @@ Three further clauses, each earned by a specific failure:
   one. A cheap descriptive measurement of each candidate, *before* locking, ranks them
   correctly. H-NEW-2770 did this and it worked.
 
+  **Rank by size-only R², not by ρ, whenever the claim is a fitted model.** The two orderings
+  differ on which channel wins, and the gap is decisive: on mushaf position, log word count
+  reaches R² **0.8377** while verse count reaches **0.5386** — a model scoring 0.80 passes
+  against one and fails against the other. §3's own table got this wrong for months and the
+  worked counterfactual is recorded there.
+
 - **A control that does not use the strongest channel is not a control.** H-NEW-183 ran a
   length baseline on its `log_length` feature alone and reported that its 12-feature model beat
   it, 0.836 against 0.446. `log_length` is **log word count** — `_safe_log(N)` where `N` is
@@ -158,10 +185,14 @@ Three further clauses, each earned by a specific failure:
    UNVERIFIABLE, and no null run against it will mean anything.
 1. Grep the finding for a denominator: `_density`, `per verse`, `per 100 v`, `per word`,
    `/ n_verses`, `words per verse`, `normalised by length`, `mean unit size`.
-2. Identify the ordering. Look it up in the §3 table. If it is not there, **measure the
-   drift before proceeding** — one Spearman correlation, and it is not optional.
+2. Identify the ordering. Look it up in the §3 table and **read only the block for your
+   ordering** — the strongest channel is not the same variable for mushaf order as for
+   Nöldeke rank. If your ordering is not in the table, **measure every candidate channel
+   before proceeding**; one Spearman correlation each, and it is not optional.
 3. Grep for a size-fixing null using the §3 Screen-C vocabulary. Verify it targets the
-   **strong** channel for that ordering, not merely a size-shaped word.
+   channel with the **highest size-only R²** for that ordering, not merely a size-shaped
+   word and not the first size variable you find. **This is the step that has failed most
+   often** — in H-NEW-183, in H-NEW-2760, and once in §3's own table.
 4. If A ∧ B ∧ ¬C: flag it, and name the one number that would settle it — the size-only
    baseline for a model-shaped claim (§6.1), otherwise the per-word re-normalisation or the
    partial correlation controlling log unit size.
