@@ -1,13 +1,43 @@
 ---
 finding_id: H-NEW-1820
-status: CORRECTED 2026-08-07 — title-density-independence is the MAJORITY phenomenon (48/89 = 53.9% of eponymous surahs); see the correction notice below
+status: ⛔ PILLAR LAW UNDER WITHDRAWAL 2026-08-07 — the 48/89 'correction' was INVALID (cross-metric) and is reverted to 47/89; more seriously, a proper null shows title-density ASSOCIATION, i.e. the OPPOSITE of independence. Do not cite this law until re-tested.
 phase: B+ → C
 date: 2026-05-09
 rules_tuple: (QAC root v0.4, Hafs-Kūfan, basmala-counted-only-in-Q1, eponymous-surahs-only)
 verdict: CONFIRMED corpus-wide structural law
 ---
 
-# H-NEW-1820 — Title-density independence as corpus-wide structural law: 48/89 eponymous surahs do NOT hold rank-1 in their title-root
+# H-NEW-1820 — Title-density independence: PILLAR LAW UNDER WITHDRAWAL
+
+> ## ⛔ TWO FAILURES, ONE OF THEM INTRODUCED TODAY (2026-08-07)
+>
+> **Failure 1 — my own "correction" earlier today was invalid and is REVERTED.**
+> I changed 47/89 → 48/89 on the basis of Q098-F-01, which found Q 98 al-Bayyina to be *byn*
+> rank 59/71. But **Q098-F-01 measures a raw-count / per-verse metric, while this law is
+> defined on per-word density.** Substituting one for the other is a category error. The
+> original **47/89 reproduces; the 48/89 does not.** The change also left the file arithmetically
+> broken — 42 rank-1 plus 48 non-rank-1 is 90 cases for a population of 89.
+>
+> I made this file worse while believing I was correcting it, and did so in the same session in
+> which I criticised the project for letting a flattering number stand unaudited. The lesson
+> generalises: **a "correction" that crosses metrics is a new error, not a fix.** Always confirm
+> the replacement number was computed under the same instrument as the one it replaces.
+>
+> **Failure 2 — and this is the serious one: the law appears to be INVERTED.**
+> An independent re-derivation reports that under a proper null, **title-eponymous surahs are
+> strongly ENRICHED for their title root's density peak.** The honest statement of the data is:
+> *title surahs are strongly enriched for their title root's density peak, although a slim
+> majority are not absolute rank-1.* "Independence" is the wrong word for that, and the causal
+> rhetoric later in this file ("titles are chosen for rhetorical-mnemonic reasons, not for
+> statistical-density purposes") does not follow from a bare rank-1 headcount with no null.
+>
+> **Consequence: Pillar 4 is withdrawn pending a re-test** with (a) one stated metric,
+> (b) an explicit null model, and (c) a distinction between "not absolute rank-1" and
+> "independent of density". The 47/89 headcount is a descriptive fact and may be cited as such;
+> the LAW may not be cited until re-tested.
+>
+> Being rank-1 out of 114 is a demanding bar, so a bare majority failing it is unremarkable —
+> which is exactly what a null model exists to reveal, and exactly what was never run.
 
 > **CORRECTION NOTICE (2026-08-07).** This file previously read **47/89 (52.8%)** and listed
 > **Q 98 al-Bayyina among the 42 rank-1 surahs**. Q098-F-01 Arm A (MASTER-FINDINGS-LEDGER
@@ -37,8 +67,8 @@ For each of 114 surahs:
 ## Results
 
 **89 eponymous surahs tested.**
-- **42 of 89 (47.2%) ARE rank-1** in their own title-root
-- **48 of 89 (53.9%) are NOT rank-1**
+- **42 of 89 (47.2%) ARE rank-1** in their own title-root *(restored)*
+- **47 of 89 (52.8%) are NOT rank-1** *(reverted from the invalid 48/89; 42 + 47 = 89 ✓)*
 - Mean rank when not rank-1: 4.3 (modal rank = 2)
 
 **Title-density-independence is the MAJORITY phenomenon in the corpus.**
@@ -63,7 +93,7 @@ For each of 114 surahs:
 
 ## Top rank-1 surahs (where title-density-EXACT holds)
 
-41 surahs where the title-root density rank IS the title-eponymous surah. Includes Q 13 al-Raʿd, Q 16 al-Naḥl, Q 18 al-Kahf, Q 27 al-Naml, Q 73 al-Muzzammil, Q 74 al-Muddaththir, Q 79 al-Nāziʿāt, Q 81 al-Takwīr, Q 91 al-Shams, Q 96 al-ʿAlaq, Q 97 al-Qadr, etc. **Q 98 al-Bayyina was listed here in error and was removed 2026-08-07** — see the correction notice above.
+42 surahs where the title-root density rank IS the title-eponymous surah. Includes Q 13 al-Raʿd, Q 16 al-Naḥl, Q 18 al-Kahf, Q 27 al-Naml, Q 73 al-Muzzammil, Q 74 al-Muddaththir, Q 79 al-Nāziʿāt, Q 81 al-Takwīr, Q 91 al-Shams, Q 96 al-ʿAlaq, Q 97 al-Qadr, Q 98 al-Bayyina, etc. **Q 98 is RESTORED here 2026-08-07**: it was removed earlier today on a cross-metric argument that does not apply to this law's per-word-density instrument.
 
 ## Interpretive principle
 

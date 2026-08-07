@@ -34,7 +34,7 @@ The scale-ladder, all live: **corpus → region → surah → pericope → verse
 1. Muqaṭṭāʿat are book-introduction markers (p ≤ 10⁻¹²)
 2. Mushaf is information-geodesic-optimal under Fisher-Rao (z = −11.46)
 3. Scale-of-aggregation is itself a finding axis (6/6 pericope-flips)
-4. Title-density independence (48/89 eponymous surahs NOT rank-1 in their title-root — corrected 2026-08-07 from 47/89; Q 98 al-Bayyina was misfiled, see h-new-1820)
+4. Title-density independence — ⛔ WITHDRAWN 2026-08-07 pending re-test. The 48/89 correction was invalid (cross-metric); 47/89 restored. A proper null reportedly shows title-density ASSOCIATION, the opposite of independence. See the withdrawal notice in h-new-1820. Do not cite as a law.
 
 ## The discipline (non-negotiable)
 

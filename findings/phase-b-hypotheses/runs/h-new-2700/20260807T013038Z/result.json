@@ -1,0 +1,1874 @@
+{
+  "id": "H-NEW-2700",
+  "SMOKE_RUN": false,
+  "prereg_sha256": "6e5332da94d1fb6ce24261e34acd99d34f171215e810dbf639981b13c5736525",
+  "n_perm": 10000,
+  "tests_in_family": 8,
+  "alpha_bonferroni": 0.00625,
+  "raw_gate": 0.000625,
+  "corrected_gate": 0.005,
+  "seeds": {
+    "null_a": 20260509,
+    "null_b": 20260510,
+    "replication_offset": 10
+  },
+  "corpus": {
+    "surahs": 114,
+    "words": 82375,
+    "phase_sizes": {
+      "Early Meccan": 48,
+      "Middle Meccan": 21,
+      "Late Meccan": 21,
+      "Medinan": 24
+    },
+    "words_per_phase": {
+      "Early Meccan": 5669,
+      "Middle Meccan": 17716,
+      "Late Meccan": 28295,
+      "Medinan": 30695
+    }
+  },
+  "registry": {
+    "data_rows": 304,
+    "note": "frontier map reported 506; that is the line count including 201 comment lines",
+    "by_source_language": {
+      "hebrew": 53,
+      "greek": 11,
+      "ethiopic": 9,
+      "persian": 35,
+      "hebrew-aramaic-shared": 163,
+      "syriac": 13,
+      "aramaic": 4,
+      "latin": 3,
+      "syriac-aramaic-shared": 6,
+      "south-arabian": 7
+    },
+    "by_confidence": {
+      "HIGH": 160,
+      "MEDIUM": 47,
+      "LOW": 97
+    }
+  },
+  "matching": {
+    "eligible_unique_lemma": 205,
+    "excluded_ambiguous": 28,
+    "excluded_unmatched": 68,
+    "excluded_multiword": 3,
+    "tier_used": {
+      "1": 196,
+      "2": 9
+    },
+    "eligible_by_donor": {
+      "hebrew": 37,
+      "greek": 8,
+      "ethiopic": 6,
+      "persian": 26,
+      "hebrew-aramaic-shared": 107,
+      "syriac": 6,
+      "aramaic": 2,
+      "latin": 3,
+      "syriac-aramaic-shared": 4,
+      "south-arabian": 6
+    },
+    "unmatched_by_donor": {
+      "hebrew": 15,
+      "persian": 6,
+      "aramaic": 2,
+      "hebrew-aramaic-shared": 31,
+      "ethiopic": 3,
+      "syriac": 6,
+      "greek": 3,
+      "syriac-aramaic-shared": 1,
+      "south-arabian": 1
+    },
+    "ambiguous_entries": [
+      {
+        "arabic": "اصر",
+        "romanized": "iṣr",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "<iSor",
+          ">aSar~u"
+        ]
+      },
+      {
+        "arabic": "امة",
+        "romanized": "umma",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          ">amap",
+          ">um~ap"
+        ]
+      },
+      {
+        "arabic": "امين",
+        "romanized": "āmīn",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          ">amiyn",
+          "A^m~iyn"
+        ]
+      },
+      {
+        "arabic": "برئ",
+        "romanized": "bariʾa",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "bar~",
+          "bir~",
+          "bi}or"
+        ]
+      },
+      {
+        "arabic": "بيع",
+        "romanized": "biyaʿ",
+        "donor": "syriac",
+        "qac_lemmas": [
+          "bayoE",
+          "biyaE"
+        ]
+      },
+      {
+        "arabic": "جنة",
+        "romanized": "janna",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "jan~ap",
+          "jin~ap",
+          "jun~ap"
+        ]
+      },
+      {
+        "arabic": "حج",
+        "romanized": "ḥajj",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "Haj~",
+          "Haj~a",
+          "Hij~"
+        ]
+      },
+      {
+        "arabic": "دين",
+        "romanized": "dīn",
+        "donor": "persian",
+        "qac_lemmas": [
+          "dayon",
+          "diyn"
+        ]
+      },
+      {
+        "arabic": "رب",
+        "romanized": "rabb",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "rab~",
+          "r~ib",
+          "r~ub"
+        ]
+      },
+      {
+        "arabic": "روح",
+        "romanized": "rūḥ",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "ruwH",
+          "r~awoH"
+        ]
+      },
+      {
+        "arabic": "سلم",
+        "romanized": "salām",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "salam",
+          "sal~ama",
+          "sul~am",
+          "s~alom",
+          "s~ilom"
+        ]
+      },
+      {
+        "arabic": "صلب",
+        "romanized": "ṣaliba",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "Salabu",
+          "S~ulob"
+        ]
+      },
+      {
+        "arabic": "عبد",
+        "romanized": "ʿabd",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "Eabada",
+          "Eabod",
+          "Eab~ad"
+        ]
+      },
+      {
+        "arabic": "فلك",
+        "romanized": "fulk",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "falak",
+          "fulok"
+        ]
+      },
+      {
+        "arabic": "كفل",
+        "romanized": "kifl",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "kaf~ala",
+          "kifol"
+        ]
+      },
+      {
+        "arabic": "كنز",
+        "romanized": "kanz",
+        "donor": "persian",
+        "qac_lemmas": [
+          "kanazo",
+          "kanz"
+        ]
+      },
+      {
+        "arabic": "ملك",
+        "romanized": "malak",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "malak",
+          "malik",
+          "malok",
+          "mulok"
+        ]
+      },
+      {
+        "arabic": "من",
+        "romanized": "mann",
+        "donor": "hebrew",
+        "qac_lemmas": [
+          "man",
+          "man~",
+          "man~a",
+          "min"
+        ]
+      },
+      {
+        "arabic": "وزر",
+        "romanized": "wizr",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "wazar",
+          "wizor"
+        ]
+      },
+      {
+        "arabic": "كرة",
+        "romanized": "karra",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "kariha",
+          "karoh",
+          "kar~aha",
+          "kar~ap",
+          "kuroh"
+        ]
+      },
+      {
+        "arabic": "بيت",
+        "romanized": "bayt",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "bayot",
+          "bay~ata"
+        ]
+      },
+      {
+        "arabic": "نبأ",
+        "romanized": "nabaʾ",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "naba>",
+          "nab~a>a"
+        ]
+      },
+      {
+        "arabic": "كذب",
+        "romanized": "kadhdhaba",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "ka*aba",
+          "ka*ib",
+          "ka*~aba"
+        ]
+      },
+      {
+        "arabic": "عجل",
+        "romanized": "ʿijl",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "Eajal",
+          "Eajila",
+          "Eaj~ala",
+          "Eijol"
+        ]
+      },
+      {
+        "arabic": "مقام",
+        "romanized": "maqām",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "maqaAm",
+          "muqaAm"
+        ]
+      },
+      {
+        "arabic": "امام",
+        "romanized": "imām",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "<imaAm",
+          ">amaAm"
+        ]
+      },
+      {
+        "arabic": "سحر",
+        "romanized": "siḥr",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "saHar",
+          "saHaru",
+          "siHor"
+        ]
+      },
+      {
+        "arabic": "علم",
+        "romanized": "ʿilm",
+        "donor": "hebrew-aramaic-shared",
+        "qac_lemmas": [
+          "Ealima",
+          "Eal~ama",
+          "Eilom"
+        ]
+      }
+    ],
+    "unmatched_entries": [
+      {
+        "arabic": "اشعيا",
+        "romanized": "Ashʿiyāʾ",
+        "donor": "hebrew",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "الواح",
+        "romanized": "alwāḥ",
+        "donor": "hebrew",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arabic": "اواه",
+        "romanized": "awwāh",
+        "donor": "hebrew",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "ايل",
+        "romanized": "īl",
+        "donor": "hebrew",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "بطاينها",
+        "romanized": "baṭāʾin",
+        "donor": "persian",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "تربت",
+        "romanized": "turbat",
+        "donor": "persian",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "ترجمان",
+        "romanized": "tarjumān",
+        "donor": "aramaic",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "تورة",
+        "romanized": "Tawrāt",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "ثقفتموهم",
+        "romanized": "thaqifa",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "جلباب",
+        "romanized": "jilbāb",
+        "donor": "ethiopic",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arabic": "حبر",
+        "romanized": "ḥibr / ʾaḥbār",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "حنفاء",
+        "romanized": "ḥunafāʾ",
+        "donor": "syriac",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "خبط",
+        "romanized": "khabaṭa",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "خزنة",
+        "romanized": "khazana",
+        "donor": "persian",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arabic": "دواة",
+        "romanized": "dawāt",
+        "donor": "persian",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "ربانيون",
+        "romanized": "rabbāniyyūn",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "سدوم",
+        "romanized": "Sadūm",
+        "donor": "hebrew",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "سيرة",
+        "romanized": "sīra",
+        "donor": "syriac",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arabic": "شعيا",
+        "romanized": "Shaʿyā",
+        "donor": "hebrew",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "صبا",
+        "romanized": "ṣabaʾa",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arabic": "صابئون",
+        "romanized": "Ṣābiʾūn",
+        "donor": "syriac",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "صلوة",
+        "romanized": "ṣalāt",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "صنم",
+        "romanized": "ṣanam",
+        "donor": "aramaic",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "صوامع",
+        "romanized": "ṣawāmiʿ",
+        "donor": "syriac",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "صيهود",
+        "romanized": "ṣayhūd",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "عزرا",
+        "romanized": "ʿUzayr",
+        "donor": "hebrew",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "قراطيس",
+        "romanized": "qarāṭīs",
+        "donor": "greek",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "كوب",
+        "romanized": "kūb",
+        "donor": "greek",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "كوفر",
+        "romanized": "kāfūr",
+        "donor": "persian",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "مشكوة",
+        "romanized": "mishkāt",
+        "donor": "ethiopic",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "منسا",
+        "romanized": "manasa",
+        "donor": "hebrew",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "منسأة",
+        "romanized": "minsaʾa",
+        "donor": "ethiopic",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arabic": "ميكال",
+        "romanized": "Mīkāl",
+        "donor": "hebrew",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "نصاب",
+        "romanized": "niṣāb",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "نصارى",
+        "romanized": "naṣārā",
+        "donor": "syriac",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "هدنا",
+        "romanized": "hudnā",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "ياسين",
+        "romanized": "Yāsīn",
+        "donor": "hebrew",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "يهود",
+        "romanized": "yahūd",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "لاهب",
+        "romanized": "lāhab",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "عليون",
+        "romanized": "ʿilliyyūn",
+        "donor": "hebrew",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "سلسبيل-2",
+        "romanized": "silsila",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arabic": "شياطين",
+        "romanized": "shayāṭīn",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "حنوط",
+        "romanized": "ḥanūṭ",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "زكا",
+        "romanized": "zakkā",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "صنادل",
+        "romanized": "ṣanādal",
+        "donor": "persian",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arabic": "ذات",
+        "romanized": "dhāt",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "بسمل",
+        "romanized": "basmala",
+        "donor": "syriac-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "حورا",
+        "romanized": "ḥawrāʾ",
+        "donor": "syriac",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arabic": "مهر",
+        "romanized": "mahr",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "ينسؤ",
+        "romanized": "yansaʾ",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "الس",
+        "romanized": "Yās / Yāsīn",
+        "donor": "hebrew",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "نهج",
+        "romanized": "nahj",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "ملاك",
+        "romanized": "malāk",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "ايام",
+        "romanized": "ayyām",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "نسبا",
+        "romanized": "nasab",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "يم-2",
+        "romanized": "yamm-2",
+        "donor": "hebrew",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "حم",
+        "romanized": "ḤM",
+        "donor": "hebrew",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "ابليس-2",
+        "romanized": "Iblīs-2",
+        "donor": "greek",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "ديك",
+        "romanized": "dīk",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "معبد",
+        "romanized": "maʿbad",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "حقب-2",
+        "romanized": "ḥuqb",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "زمزم",
+        "romanized": "Zamzam",
+        "donor": "south-arabian",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "بركة",
+        "romanized": "baraka",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "جلج",
+        "romanized": "Jūlj-Yajūj",
+        "donor": "hebrew",
+        "confidence": "HIGH"
+      },
+      {
+        "arabic": "حنين-2",
+        "romanized": "ḥnyn",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "خاصرة",
+        "romanized": "khāṣira",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "زاوية",
+        "romanized": "zāwiya",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      },
+      {
+        "arabic": "يهد",
+        "romanized": "yahūd-2",
+        "donor": "hebrew-aramaic-shared",
+        "confidence": "LOW"
+      }
+    ],
+    "multiword_entries": [
+      "حور عين",
+      "حي على الصلاة",
+      "طور سيناء"
+    ],
+    "rejected_variant_A_longa_blind": "rejected in prereg 3.2; matched qur'an to qarn"
+  },
+  "T1_primary": {
+    "n_types": 205,
+    "n_ARAM_types": 12,
+    "n_PERS_types": 26,
+    "n_ARAM_tokens": 193,
+    "n_PERS_tokens": 50,
+    "gated": true,
+    "H1_composition": {
+      "statistic": 0.004683840749414525,
+      "locked": "Delta > 0",
+      "phase_counts": {
+        "Early Meccan": {
+          "PERS": 9,
+          "ARAM": 15
+        },
+        "Middle Meccan": {
+          "PERS": 27,
+          "ARAM": 96
+        },
+        "Late Meccan": {
+          "ARAM": 30,
+          "PERS": 5
+        },
+        "Medinan": {
+          "PERS": 9,
+          "ARAM": 52
+        }
+      },
+      "null_a": {
+        "seed": 20260509,
+        "n_valid_draws": 10000,
+        "p_raw": 0.47335266473352666,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_a_replication": {
+        "seed": 20260519,
+        "n_valid_draws": 10000,
+        "p_raw": 0.48625137486251374,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_b": {
+        "seed": 20260510,
+        "n_valid_draws": 10000,
+        "p_raw": 0.49355064493550643,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_b_replication": {
+        "seed": 20260520,
+        "n_valid_draws": 10000,
+        "p_raw": 0.49165083491650835,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "direction_matches_lock": true,
+      "PASS": false
+    },
+    "H2_aram_density": {
+      "statistic": -4.257061582822989,
+      "locked": "Delta > 0",
+      "resid_means": {
+        "Early Meccan": -0.13555672290271661,
+        "Middle Meccan": 2.78769059689341,
+        "Late Meccan": -1.4693709859295796,
+        "Medinan": -0.882416213787919
+      },
+      "ols_beta": -0.30860171055203095,
+      "null_a": {
+        "seed": 20260509,
+        "n_valid_draws": 10000,
+        "p_raw": 0.9362063793620637,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_a_replication": {
+        "seed": 20260519,
+        "n_valid_draws": 10000,
+        "p_raw": 0.9361063893610639,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_b": {
+        "seed": 20260510,
+        "n_valid_draws": 10000,
+        "p_raw": 0.9286071392860714,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_b_replication": {
+        "seed": 20260520,
+        "n_valid_draws": 10000,
+        "p_raw": 0.9358064193580642,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "direction_matches_lock": false,
+      "PASS": false
+    },
+    "H3_pers_density": {
+      "statistic": -2.150218585099051,
+      "locked": "Delta > 0",
+      "resid_means": {
+        "Early Meccan": 0.03796159583286254,
+        "Middle Meccan": 1.4680445864906206,
+        "Late Meccan": -0.7751865214132427,
+        "Medinan": -0.6821739986084306
+      },
+      "ols_beta": 0.05259097242879915,
+      "null_a": {
+        "seed": 20260509,
+        "n_valid_draws": 10000,
+        "p_raw": 0.5388461153884612,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_a_replication": {
+        "seed": 20260519,
+        "n_valid_draws": 10000,
+        "p_raw": 0.5433456654334566,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_b": {
+        "seed": 20260510,
+        "n_valid_draws": 10000,
+        "p_raw": 0.9834016598340166,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_b_replication": {
+        "seed": 20260520,
+        "n_valid_draws": 10000,
+        "p_raw": 0.985001499850015,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "direction_matches_lock": false,
+      "PASS": false
+    },
+    "H4_type_level": {
+      "statistic": -0.9107787363708413,
+      "locked": "Delta > 0",
+      "mean_phi_ARAM": 3.241547967140072,
+      "mean_phi_PERS": 2.330769230769231,
+      "null_a": {
+        "seed": 20260509,
+        "n_valid_draws": 10000,
+        "p_raw": 0.9969003099690031,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_a_replication": {
+        "seed": 20260519,
+        "n_valid_draws": 10000,
+        "p_raw": 0.9974002599740026,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_b": {
+        "seed": 20260510,
+        "n_valid_draws": 10000,
+        "p_raw": 0.9944005599440056,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "null_b_replication": {
+        "seed": 20260520,
+        "n_valid_draws": 10000,
+        "p_raw": 0.9952004799520048,
+        "p_bonferroni": 1.0,
+        "passes_gate": false
+      },
+      "direction_matches_lock": false,
+      "PASS": false
+    }
+  },
+  "T2_high_confidence_only": {
+    "n_types": 112,
+    "n_ARAM_types": 11,
+    "n_PERS_types": 13,
+    "n_ARAM_tokens": 184,
+    "n_PERS_tokens": 29,
+    "gated": false,
+    "H1_composition": {
+      "statistic": -0.05738233397807868,
+      "locked": "Delta > 0",
+      "phase_counts": {
+        "Early Meccan": {
+          "PERS": 5,
+          "ARAM": 15
+        },
+        "Middle Meccan": {
+          "PERS": 17,
+          "ARAM": 96
+        },
+        "Late Meccan": {
+          "ARAM": 29,
+          "PERS": 4
+        },
+        "Medinan": {
+          "ARAM": 44,
+          "PERS": 3
+        }
+      }
+    },
+    "H2_aram_density": {
+      "statistic": -4.314562437181897,
+      "locked": "Delta > 0",
+      "resid_means": {
+        "Early Meccan": 0.023424867129583516,
+        "Middle Meccan": 2.9415329360140405,
+        "Late Meccan": -1.3730295011678566,
+        "Medinan": -1.419290239749576
+      },
+      "ols_beta": -0.3063479692138138
+    },
+    "H3_pers_density": {
+      "statistic": -1.6954616264541733,
+      "locked": "Delta > 0",
+      "resid_means": {
+        "Early Meccan": -0.04880421890227992,
+        "Middle Meccan": 1.178391056550508,
+        "Late Meccan": -0.47590076202682186,
+        "Medinan": -0.5170705699036654
+      },
+      "ols_beta": 0.02716309669624141
+    },
+    "H4_type_level": {
+      "statistic": -0.8673141770510191,
+      "locked": "Delta > 0",
+      "mean_phi_ARAM": 3.1826987924356347,
+      "mean_phi_PERS": 2.3153846153846156
+    }
+  },
+  "T3_aram_broad": {
+    "n_types": 205,
+    "n_ARAM_types": 119,
+    "n_PERS_types": 26,
+    "n_ARAM_tokens": 3471,
+    "n_PERS_tokens": 50,
+    "gated": false,
+    "H1_composition": {
+      "statistic": 0.0022173267563814214,
+      "locked": "Delta > 0",
+      "phase_counts": {
+        "Early Meccan": {
+          "PERS": 9,
+          "ARAM": 263
+        },
+        "Middle Meccan": {
+          "PERS": 27,
+          "ARAM": 793
+        },
+        "Late Meccan": {
+          "ARAM": 1094,
+          "PERS": 5
+        },
+        "Medinan": {
+          "ARAM": 1321,
+          "PERS": 9
+        }
+      }
+    },
+    "H2_aram_density": {
+      "statistic": -4.616998089908588,
+      "locked": "Delta > 0",
+      "resid_means": {
+        "Early Meccan": 1.1243865505205133,
+        "Middle Meccan": 1.1950048580412624,
+        "Late Meccan": -3.421993231867325,
+        "Medinan": -0.3001582739432241
+      },
+      "ols_beta": 0.5234846971937922
+    },
+    "H3_pers_density": {
+      "statistic": -2.150218585099051,
+      "locked": "Delta > 0",
+      "resid_means": {
+        "Early Meccan": 0.03796159583286254,
+        "Middle Meccan": 1.4680445864906206,
+        "Late Meccan": -0.7751865214132427,
+        "Medinan": -0.6821739986084306
+      },
+      "ols_beta": 0.05259097242879915
+    },
+    "H4_type_level": {
+      "statistic": -0.2522041320265074,
+      "locked": "Delta > 0",
+      "mean_phi_ARAM": 2.5829733627957383,
+      "mean_phi_PERS": 2.330769230769231
+    }
+  },
+  "robustness": {
+    "LOTO": {
+      "n": 38,
+      "H1_min": -0.1488636363636363,
+      "H1_max": 0.08504098360655743,
+      "H1_crosses_zero": true,
+      "H4_min": -1.022051837051837,
+      "H4_max": -0.8418285515653934,
+      "H4_crosses_zero": false,
+      "detail": [
+        {
+          "dropped": "qurʾān",
+          "H1": -0.1488636363636363,
+          "H4": -0.9937766035134454
+        },
+        {
+          "dropped": "zujāja",
+          "H1": -0.02421307506053272,
+          "H4": -0.977547967140072
+        },
+        {
+          "dropped": "zūr",
+          "H1": -0.02421307506053272,
+          "H4": -0.9375479671400719
+        },
+        {
+          "dropped": "baḥīra",
+          "H1": -0.009523809523809601,
+          "H4": -0.977547967140072
+        },
+        {
+          "dropped": "jizya",
+          "H1": -0.009523809523809601,
+          "H4": -0.977547967140072
+        },
+        {
+          "dropped": "sirāj",
+          "H1": -0.009523809523809601,
+          "H4": -0.9075479671400721
+        },
+        {
+          "dropped": "majūs",
+          "H1": -0.009523809523809601,
+          "H4": -0.977547967140072
+        },
+        {
+          "dropped": "Hārūt",
+          "H1": -0.009523809523809601,
+          "H4": -0.977547967140072
+        },
+        {
+          "dropped": "burhān",
+          "H1": -0.00370762711864403,
+          "H4": -0.9441012788381209
+        },
+        {
+          "dropped": "ṭūbā",
+          "H1": 0.00048216007714563247,
+          "H4": -0.9327376424744842
+        },
+        {
+          "dropped": "Raḥmān",
+          "H1": 0.0010272213662044782,
+          "H4": -1.022051837051837
+        },
+        {
+          "dropped": "Ṭūr",
+          "H1": 0.0036572622779519337,
+          "H4": -0.9691012788381208
+        },
+        {
+          "dropped": "arāʾik",
+          "H1": 0.004683840749414525,
+          "H4": -0.8815479671400723
+        },
+        {
+          "dropped": "istabraq",
+          "H1": 0.004683840749414525,
+          "H4": -0.8875479671400721
+        },
+        {
+          "dropped": "rass",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "zanjabīl",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "surādiq",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "sundus",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "firdaws",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "farāsh",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "namāriq",
+          "H1": 0.004683840749414525,
+          "H4": -0.8575479671400723
+        },
+        {
+          "dropped": "warda",
+          "H1": 0.004683840749414525,
+          "H4": -0.8575479671400723
+        },
+        {
+          "dropped": "yāqūt",
+          "H1": 0.004683840749414525,
+          "H4": -0.8575479671400723
+        },
+        {
+          "dropped": "salsabīl",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "rikz",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "ḍank",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "kāfūr-2",
+          "H1": 0.004683840749414525,
+          "H4": -0.8975479671400723
+        },
+        {
+          "dropped": "sidra",
+          "H1": 0.004683840749414525,
+          "H4": -0.8575479671400723
+        },
+        {
+          "dropped": "rahbāniyya",
+          "H1": 0.0071428571428571175,
+          "H4": -0.8418285515653934
+        },
+        {
+          "dropped": "qissīsīn",
+          "H1": 0.0071428571428571175,
+          "H4": -0.8418285515653934
+        },
+        {
+          "dropped": "kursī",
+          "H1": 0.0071428571428571175,
+          "H4": -0.9327376424744842
+        },
+        {
+          "dropped": "muhaymin",
+          "H1": 0.009685230024213065,
+          "H4": -0.8418285515653934
+        },
+        {
+          "dropped": "furqān",
+          "H1": 0.017857142857142794,
+          "H4": -0.8937766035134453
+        },
+        {
+          "dropped": "tijāra",
+          "H1": 0.022752497225305146,
+          "H4": -0.8519295616664038
+        },
+        {
+          "dropped": "tannūr",
+          "H1": 0.029893924783027992,
+          "H4": -0.9175479671400724
+        },
+        {
+          "dropped": "khardal",
+          "H1": 0.029893924783027992,
+          "H4": -0.9175479671400724
+        },
+        {
+          "dropped": "ʿĪsā",
+          "H1": 0.07348484848484849,
+          "H4": -0.8636467333835753
+        },
+        {
+          "dropped": "sarābīl",
+          "H1": 0.08504098360655743,
+          "H4": -0.9375479671400719
+        }
+      ]
+    },
+    "per_type": [
+      {
+        "romanized": "qurʾān",
+        "arabic": "قرآن",
+        "donor": "syriac",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 70,
+        "phi": 2.3285714285714287,
+        "phase_counts": {
+          "Medinan": 6,
+          "Late Meccan": 19,
+          "Middle Meccan": 37,
+          "Early Meccan": 8
+        }
+      },
+      {
+        "romanized": "Raḥmān",
+        "arabic": "رحمن",
+        "donor": "syriac-aramaic-shared",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 57,
+        "phi": 2.017543859649123,
+        "phase_counts": {
+          "Early Meccan": 5,
+          "Medinan": 2,
+          "Late Meccan": 2,
+          "Middle Meccan": 48
+        }
+      },
+      {
+        "romanized": "ʿĪsā",
+        "arabic": "عيسى",
+        "donor": "syriac",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 25,
+        "phi": 3.76,
+        "phase_counts": {
+          "Medinan": 21,
+          "Late Meccan": 2,
+          "Middle Meccan": 2
+        }
+      },
+      {
+        "romanized": "Ṭūr",
+        "arabic": "طور",
+        "donor": "syriac-aramaic-shared",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 10,
+        "phi": 2.6,
+        "phase_counts": {
+          "Medinan": 3,
+          "Middle Meccan": 3,
+          "Late Meccan": 2,
+          "Early Meccan": 2
+        }
+      },
+      {
+        "romanized": "tijāra",
+        "arabic": "تجارة",
+        "donor": "aramaic",
+        "confidence": "MEDIUM",
+        "suyuti38": "no",
+        "tokens": 9,
+        "phi": 3.888888888888889,
+        "phase_counts": {
+          "Medinan": 8,
+          "Late Meccan": 1
+        }
+      },
+      {
+        "romanized": "burhān",
+        "arabic": "برهان",
+        "donor": "syriac",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 8,
+        "phi": 2.875,
+        "phase_counts": {
+          "Medinan": 2,
+          "Late Meccan": 3,
+          "Middle Meccan": 3
+        }
+      },
+      {
+        "romanized": "furqān",
+        "arabic": "فرقان",
+        "donor": "syriac-aramaic-shared",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 7,
+        "phi": 3.4285714285714284,
+        "phase_counts": {
+          "Medinan": 5,
+          "Middle Meccan": 2
+        }
+      },
+      {
+        "romanized": "arāʾik",
+        "arabic": "ارائك",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 5,
+        "phi": 1.6,
+        "phase_counts": {
+          "Middle Meccan": 3,
+          "Early Meccan": 2
+        }
+      },
+      {
+        "romanized": "istabraq",
+        "arabic": "استبرق",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 4,
+        "phi": 1.75,
+        "phase_counts": {
+          "Middle Meccan": 3,
+          "Early Meccan": 1
+        }
+      },
+      {
+        "romanized": "zūr",
+        "arabic": "زور",
+        "donor": "persian",
+        "confidence": "LOW",
+        "suyuti38": "disputed",
+        "tokens": 4,
+        "phi": 3.0,
+        "phase_counts": {
+          "Medinan": 2,
+          "Middle Meccan": 2
+        }
+      },
+      {
+        "romanized": "sirāj",
+        "arabic": "سراج",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 4,
+        "phi": 2.25,
+        "phase_counts": {
+          "Middle Meccan": 2,
+          "Medinan": 1,
+          "Early Meccan": 1
+        }
+      },
+      {
+        "romanized": "sarābīl",
+        "arabic": "سرابيل",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 3,
+        "phi": 3.0,
+        "phase_counts": {
+          "Late Meccan": 3
+        }
+      },
+      {
+        "romanized": "sundus",
+        "arabic": "سندس",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 3,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 3
+        }
+      },
+      {
+        "romanized": "tannūr",
+        "arabic": "تنور",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 2,
+        "phi": 2.5,
+        "phase_counts": {
+          "Late Meccan": 1,
+          "Middle Meccan": 1
+        }
+      },
+      {
+        "romanized": "khardal",
+        "arabic": "خردل",
+        "donor": "persian",
+        "confidence": "MEDIUM",
+        "suyuti38": "yes",
+        "tokens": 2,
+        "phi": 2.5,
+        "phase_counts": {
+          "Middle Meccan": 1,
+          "Late Meccan": 1
+        }
+      },
+      {
+        "romanized": "rass",
+        "arabic": "رس",
+        "donor": "persian",
+        "confidence": "LOW",
+        "suyuti38": "yes",
+        "tokens": 2,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 2
+        }
+      },
+      {
+        "romanized": "zujāja",
+        "arabic": "زجاجة",
+        "donor": "persian",
+        "confidence": "MEDIUM",
+        "suyuti38": "no",
+        "tokens": 2,
+        "phi": 4.0,
+        "phase_counts": {
+          "Medinan": 2
+        }
+      },
+      {
+        "romanized": "firdaws",
+        "arabic": "فردوس",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 2,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 2
+        }
+      },
+      {
+        "romanized": "farāsh",
+        "arabic": "فردوس",
+        "donor": "persian",
+        "confidence": "MEDIUM",
+        "suyuti38": "no",
+        "tokens": 2,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 2
+        }
+      },
+      {
+        "romanized": "kursī",
+        "arabic": "كرسي",
+        "donor": "aramaic",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 2,
+        "phi": 3.0,
+        "phase_counts": {
+          "Medinan": 1,
+          "Middle Meccan": 1
+        }
+      },
+      {
+        "romanized": "muhaymin",
+        "arabic": "مهيمن",
+        "donor": "syriac-aramaic-shared",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 2,
+        "phi": 4.0,
+        "phase_counts": {
+          "Medinan": 2
+        }
+      },
+      {
+        "romanized": "sidra",
+        "arabic": "سدرة",
+        "donor": "persian",
+        "confidence": "MEDIUM",
+        "suyuti38": "yes",
+        "tokens": 2,
+        "phi": 1.0,
+        "phase_counts": {
+          "Early Meccan": 2
+        }
+      },
+      {
+        "romanized": "baḥīra",
+        "arabic": "بحيرة",
+        "donor": "persian",
+        "confidence": "LOW",
+        "suyuti38": "disputed",
+        "tokens": 1,
+        "phi": 4.0,
+        "phase_counts": {
+          "Medinan": 1
+        }
+      },
+      {
+        "romanized": "jizya",
+        "arabic": "جزية",
+        "donor": "persian",
+        "confidence": "MEDIUM",
+        "suyuti38": "disputed",
+        "tokens": 1,
+        "phi": 4.0,
+        "phase_counts": {
+          "Medinan": 1
+        }
+      },
+      {
+        "romanized": "rahbāniyya",
+        "arabic": "رهبانية",
+        "donor": "syriac",
+        "confidence": "HIGH",
+        "suyuti38": "no",
+        "tokens": 1,
+        "phi": 4.0,
+        "phase_counts": {
+          "Medinan": 1
+        }
+      },
+      {
+        "romanized": "zanjabīl",
+        "arabic": "زنجبيل",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 1
+        }
+      },
+      {
+        "romanized": "surādiq",
+        "arabic": "سرادق",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 1
+        }
+      },
+      {
+        "romanized": "ṭūbā",
+        "arabic": "طوبى",
+        "donor": "syriac",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 3.0,
+        "phase_counts": {
+          "Late Meccan": 1
+        }
+      },
+      {
+        "romanized": "qissīsīn",
+        "arabic": "قسيسين",
+        "donor": "syriac",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 4.0,
+        "phase_counts": {
+          "Medinan": 1
+        }
+      },
+      {
+        "romanized": "majūs",
+        "arabic": "مجوس",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 4.0,
+        "phase_counts": {
+          "Medinan": 1
+        }
+      },
+      {
+        "romanized": "namāriq",
+        "arabic": "نمارق",
+        "donor": "persian",
+        "confidence": "MEDIUM",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 1.0,
+        "phase_counts": {
+          "Early Meccan": 1
+        }
+      },
+      {
+        "romanized": "Hārūt",
+        "arabic": "هاروت",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 4.0,
+        "phase_counts": {
+          "Medinan": 1
+        }
+      },
+      {
+        "romanized": "warda",
+        "arabic": "وردة",
+        "donor": "persian",
+        "confidence": "MEDIUM",
+        "suyuti38": "no",
+        "tokens": 1,
+        "phi": 1.0,
+        "phase_counts": {
+          "Early Meccan": 1
+        }
+      },
+      {
+        "romanized": "yāqūt",
+        "arabic": "ياقوت",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 1.0,
+        "phase_counts": {
+          "Early Meccan": 1
+        }
+      },
+      {
+        "romanized": "salsabīl",
+        "arabic": "سلسبيل",
+        "donor": "persian",
+        "confidence": "MEDIUM",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 1
+        }
+      },
+      {
+        "romanized": "rikz",
+        "arabic": "ركز",
+        "donor": "persian",
+        "confidence": "LOW",
+        "suyuti38": "no",
+        "tokens": 1,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 1
+        }
+      },
+      {
+        "romanized": "ḍank",
+        "arabic": "ضنك",
+        "donor": "persian",
+        "confidence": "MEDIUM",
+        "suyuti38": "no",
+        "tokens": 1,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 1
+        }
+      },
+      {
+        "romanized": "kāfūr-2",
+        "arabic": "كافور",
+        "donor": "persian",
+        "confidence": "HIGH",
+        "suyuti38": "yes",
+        "tokens": 1,
+        "phi": 2.0,
+        "phase_counts": {
+          "Middle Meccan": 1
+        }
+      }
+    ],
+    "all_donor_families_raw_density_per_1000w": {
+      "aramaic": {
+        "Early Meccan": 0.0,
+        "Middle Meccan": 0.05644615037254459,
+        "Late Meccan": 0.03534193320374625,
+        "Medinan": 0.2932073627626649
+      },
+      "ethiopic": {
+        "Early Meccan": 0.1763979537837361,
+        "Middle Meccan": 0.22578460149017837,
+        "Late Meccan": 0.0,
+        "Medinan": 0.2606287669001466
+      },
+      "greek": {
+        "Early Meccan": 0.8819897689186805,
+        "Middle Meccan": 0.7902461052156243,
+        "Late Meccan": 0.35341933203746245,
+        "Medinan": 0.6189933213878482
+      },
+      "hebrew": {
+        "Early Meccan": 3.8807549832421944,
+        "Middle Meccan": 13.434183788665614,
+        "Late Meccan": 9.78971549743771,
+        "Medinan": 6.222511809741
+      },
+      "hebrew-aramaic-shared": {
+        "Early Meccan": 43.74669253836655,
+        "Middle Meccan": 39.34296680966358,
+        "Late Meccan": 37.603816928786,
+        "Medinan": 41.34223814953575
+      },
+      "latin": {
+        "Early Meccan": 0.3527959075674722,
+        "Middle Meccan": 0.9031384059607135,
+        "Late Meccan": 0.5301289980561936,
+        "Medinan": 0.5212575338002932
+      },
+      "persian": {
+        "Early Meccan": 1.587581584053625,
+        "Middle Meccan": 1.524046060058704,
+        "Late Meccan": 0.17670966601873123,
+        "Medinan": 0.2932073627626649
+      },
+      "south-arabian": {
+        "Early Meccan": 0.0,
+        "Middle Meccan": 0.11289230074508919,
+        "Late Meccan": 0.10602579961123873,
+        "Medinan": 0.09773578758755498
+      },
+      "syriac": {
+        "Early Meccan": 1.4111836302698888,
+        "Middle Meccan": 2.370738315646873,
+        "Late Meccan": 0.8835483300936561,
+        "Medinan": 1.009936471738068
+      },
+      "syriac-aramaic-shared": {
+        "Early Meccan": 1.2347856764861527,
+        "Middle Meccan": 2.991645969744863,
+        "Late Meccan": 0.141367732814985,
+        "Medinan": 0.3909431503502199
+      }
+    },
+    "suyuti38_split": {
+      "yes": {
+        "n_types": 28,
+        "tokens": 220,
+        "mean_phi": 2.486060239885428
+      },
+      "no": {
+        "n_types": 7,
+        "tokens": 17,
+        "mean_phi": 2.6984126984126986
+      },
+      "disputed": {
+        "n_types": 3,
+        "tokens": 6,
+        "mean_phi": 3.6666666666666665
+      }
+    },
+    "ambiguous_in_ARAM_or_PERS": [
+      {
+        "romanized": "biyaʿ",
+        "donor": "syriac",
+        "n_candidate_lemmas": 2
+      },
+      {
+        "romanized": "dīn",
+        "donor": "persian",
+        "n_candidate_lemmas": 2
+      },
+      {
+        "romanized": "kanz",
+        "donor": "persian",
+        "n_candidate_lemmas": 2
+      }
+    ],
+    "parent_comparison": {
+      "h_new_125_method": "whole-word exact match on proclitic-expanded surface forms (scripts/h_new_125_chronology_content.py:423-458)",
+      "h_new_125_reported_loanword_tokens": "see csv/h-new-125.json loanword_tokens",
+      "this_test_total_eligible_tokens": 4367
+    }
+  },
+  "verdict_inputs": {
+    "H1_composition": {
+      "direction": true,
+      "PASS": false,
+      "LOTO_crosses_zero": true
+    },
+    "H2_aram_density": {
+      "direction": false,
+      "PASS": false
+    },
+    "H3_pers_density": {
+      "direction": false,
+      "PASS": false
+    },
+    "H4_type_level": {
+      "direction": false,
+      "PASS": false
+    },
+    "H1_CBM_demotion_triggered": false
+  }
+}

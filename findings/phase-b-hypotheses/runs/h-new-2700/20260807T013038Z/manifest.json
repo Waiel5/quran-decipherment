@@ -1,0 +1,31 @@
+{
+  "id": "H-NEW-2700",
+  "SMOKE_RUN": false,
+  "utc": "20260807T013038Z",
+  "command": "python3 findings/phase-b-hypotheses/scripts/h-new-2700.py --repo . --perms 10000",
+  "inputs_relative": {
+    "prereg": "findings/phase-b-hypotheses/prereg-h-new-2700-loanword-donor-strata.md",
+    "tsv": "data/loanwords/jeffery-1938-loanwords.tsv",
+    "qac": "data/morphology/quranic-corpus-morphology-0.4.txt",
+    "chron": "data/revelation-order.csv",
+    "quran": "quran-text/quran-no-tashkeel.json",
+    "script": "findings/phase-b-hypotheses/scripts/h-new-2700.py"
+  },
+  "git_commit": "c254da3700b366907f6b113100b8aca5ac590a99",
+  "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "n_perm": 10000,
+  "seeds": {
+    "null_a": 20260509,
+    "null_b": 20260510,
+    "replication_offset": 10
+  },
+  "sha256": {
+    "prereg": "6e5332da94d1fb6ce24261e34acd99d34f171215e810dbf639981b13c5736525",
+    "jeffery_tsv": "d12ebac9d4bb62bbc1a8c810d7e2c069195e20113a77fb04505a84dfd4674b94",
+    "qac_v04": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "revelation_order": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7",
+    "quran_no_tashkeel": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "script": "78d7346a2b449427ba16bc70cba1e0939cb0742250f9a136a8429b0338df65e6"
+  }
+}

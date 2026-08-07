@@ -11,7 +11,7 @@ verdict: A surah's name tracks neither its dominant-word density nor its narrati
 ## The principle, formally stated
 
 > **Quranic surah-naming is curatorial-thematic, NOT statistical. An eponymous surah (named for a word, theme, or figure) is independent of two distinct lexical-prominence measures:**
-> **(1) it is rank-1 in its own title-root in only ~46% of cases — title-density independence (H-NEW-1820, 48/89 eponymous surahs NOT rank-1);**
+> **(1) it is rank-1 in its own title-root in only ~46% of cases — title-density independence (H-NEW-1820, 47/89 eponymous surahs NOT rank-1 [WITHDRAWN — see notice]);**
 > **(2) it is the lexical centroid of its own narrative cycle in 0% of testable cases — narrative-cycle-centrality independence (H-NEW-2430, 0/5 eponymous prophet-surahs are their cycle's centroid; median rank 4 of ~5, worse than chance).**
 >
 > **Mechanism: elaboration ⇒ lexical periphery.** The very surah that develops a theme/figure most fully accumulates the most *private* vocabulary (its unique scenes, vocatives, idol-names, daʿwa-formulae), which makes it the lexical OUTLIER — not the center — of the distribution that bears its name.
@@ -20,10 +20,20 @@ verdict: A surah's name tracks neither its dominant-word density nor its narrati
 
 | Measure | Finding | Result | Interpretation |
 |---|---|---|---|
-| Title-root density rank | **H-NEW-1820** | 48/89 eponymous surahs NOT rank-1 (53.9%) | Title ≠ most-frequent-word |
+| Title-root density rank | **H-NEW-1820** | 47/89 eponymous surahs NOT rank-1 [WITHDRAWN — see notice] (53.9%) | Title ≠ most-frequent-word |
 | Narrative-cycle centrality rank | **H-NEW-2430** | 0/5 eponymous prophet-surahs are the cycle centroid; median rank 4 | Eponymous surah ≠ cycle hub |
 
-H-NEW-2430 is the *stronger* pillar (0/5 vs 53.9%) and supplies the unifying mechanism. The five testable cycles (Nūḥ Q71 rank 5/6, Ibrāhīm Q14 5/6, Hūd Q11 3/5, Maryam Q19 4/5, Yūnus Q10 2/4) span the full eligible population — this is a law over the eligible set, not a sample.
+H-NEW-2430 is the *stronger* pillar (0/5 vs 52.8%) and supplies the unifying mechanism. The five testable cycles (Nūḥ Q71 rank 5/6, Ibrāhīm Q14 5/6, Hūd Q11 3/5, Maryam Q19 4/5, Yūnus Q10 2/4) span the full eligible population — this is a law over the eligible set, not a sample.
+
+>  ## ⛔ WITHDRAWAL NOTICE (2026-08-07, later the same day)
+>
+> The 48/89 figure introduced below is **REVERTED to 47/89** — it rested on a cross-metric
+> substitution (Q098-F-01's raw-count/per-verse measure applied to a per-word-density law).
+> More seriously, an independent re-derivation reports that under a proper null the title-density
+> arm is **INVERTED**: title-eponymous surahs are strongly ENRICHED for their title root's density
+> peak. **This law's first pillar is withdrawn pending re-test** — see the withdrawal notice in
+> `h-new-1820-title-density-independence-formal.md`. The eponymy-vs-centrality arm (0/5) is
+> untouched by this but, per the note below, rests on n=5.
 
 > **SCOPE QUALIFICATIONS ADDED 2026-08-07** (adversarial audit of this file's own wording):
 > 1. **Counts corrected** from 47/89 (52.8%) to **48/89 (53.9%)** — Q 98 al-Bayyina was
