@@ -1,0 +1,1331 @@
+{
+  "finding_id": "H-NEW-2680",
+  "prereg_sha256": "012ca709fad64bc8369313486095cc092e30414eccf45b1eca4e1b978fd08f94",
+  "run_utc": "20260807T011906Z",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  },
+  "N": {
+    "NULL_A": 30,
+    "NULL_B": 8,
+    "NULL_Bprime": 8
+  },
+  "inner_perms": {
+    "L2": 200,
+    "L3": 100
+  },
+  "canonical": {
+    "L1": {
+      "x": 24,
+      "K": 35,
+      "p_hyper": 9.483897204018574e-12,
+      "published": "24/29, p=3.17e-12 (H-NEW-53/56)"
+    },
+    "L2": {
+      "L": 85.75965637575258,
+      "p": 0.004975124378109453,
+      "z": -11.243935485085588,
+      "null_mean": 104.3090487344118,
+      "null_sd": 1.6497241898322776,
+      "n_le": 0,
+      "L_2opt": 77.51886565670222,
+      "ratio": 1.1063069054124874
+    },
+    "L3": {
+      "per_class": {
+        "iblis": {
+          "J": 0.14561477089814906,
+          "null_mean": 0.06572857783636273,
+          "z": 5.1671797008083935,
+          "p": 0.009900990099009901,
+          "passed": true
+        },
+        "sajda": {
+          "J": 0.09666957920939175,
+          "null_mean": 0.06220823463987581,
+          "z": 2.725176347099613,
+          "p": 0.019801980198019802,
+          "passed": true
+        },
+        "nabi": {
+          "J": 0.1260066309633845,
+          "null_mean": 0.04877499293530643,
+          "z": 6.755475089100705,
+          "p": 0.009900990099009901,
+          "passed": true
+        },
+        "hamdu": {
+          "J": 0.13251852004758982,
+          "null_mean": 0.049328862548733934,
+          "z": 4.0789197798287775,
+          "p": 0.009900990099009901,
+          "passed": true
+        },
+        "hawamim": {
+          "J": 0.15471563356637294,
+          "null_mean": 0.04982273316217082,
+          "z": 5.891685490859072,
+          "p": 0.009900990099009901,
+          "passed": true
+        }
+      },
+      "n_pass": 5
+    },
+    "L4": {
+      "rank1": 43,
+      "n": 89,
+      "p_binom": 0.8322577540225787,
+      "satisfied": true
+    },
+    "satisfaction_lenient": {
+      "L1": true,
+      "L2": true,
+      "L3": true,
+      "L4": true
+    },
+    "satisfaction_strict": {
+      "L1": true,
+      "L2": false,
+      "L3": true,
+      "L4": true
+    }
+  },
+  "L3_invariance_check_under_NULL_A": {
+    "n_checked": 25,
+    "n_identical": 25,
+    "invariant": true,
+    "note": "NULL-A randomises only marker labels, reading order and title assignment; none is an argument of the L3 statistic."
+  },
+  "L2_length_confound_diagnostic": {
+    "canonical": {
+      "L_mushaf": 85.75965637575258,
+      "L_length_sorted": 91.02780471480733,
+      "rank_corr_FRdist_vs_logsize_gap": 0.3077758039481547,
+      "mean_FR": 0.9234872305594203
+    },
+    "null_B": {
+      "n": 15,
+      "L_mushaf_mean": 83.41066428330515,
+      "L_length_sorted_mean": 82.14552136117842,
+      "rank_corr_mean": 0.6201473906757801,
+      "rank_corr_sd": 0.01431991426055012,
+      "mean_FR": 0.8238237662488627,
+      "frac_mushaf_shorter_than_lengthsorted": 0.0
+    },
+    "reading": "If rank_corr is near 0 on the canonical corpus but large under NULL-B, the reallocation null has manufactured a size-driven geometry that the L2 statistic is sensitive to, and NULL-B is not a valid null for L2."
+  },
+  "NULL_A_primary": {
+    "arm": "NULL-A/20260509",
+    "kind": "A",
+    "seed": 20260509,
+    "n_draws": 30,
+    "wall_seconds": 0.2875251770019531,
+    "lenient": {
+      "marginals": {
+        "L1": 0.13333333333333333,
+        "L2": 0.06666666666666667,
+        "L3": 1.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 4,
+        "L2": 2,
+        "L3": 30,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.03225806451612903,
+      "p_joint_floor": 0.03225806451612903,
+      "rule_of_three_95_upper": 0.1,
+      "product_of_marginals": 0.0002867383512544803,
+      "joint_over_product": 112.5,
+      "phi": {
+        "L1xL2": -0.10482848367219183,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 3.995879120879121,
+      "m_eff_multiplicativity": 1.683958457504408,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 3.0,
+          "max": 30
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 4
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "000001000001000000000000100001",
+        "L2": "000000000000000001001000000000",
+        "L3": "111111111111111111111111111111",
+        "L4": "000000000000000000000000000000"
+      }
+    },
+    "strict": {
+      "marginals": {
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 1.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 30,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.03225806451612903,
+      "p_joint_floor": 0.03225806451612903,
+      "rule_of_three_95_upper": 0.1,
+      "product_of_marginals": 3.356718472021751e-05,
+      "joint_over_product": 961.0000000000002,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.3333333333333333,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 0.0,
+          "max": 30
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "000000000000000000000000000000",
+        "L2": "000000000000000000000000000000",
+        "L3": "111111111111111111111111111111",
+        "L4": "000000000000000000000000000000"
+      }
+    },
+    "raw_summary": {
+      "L1": {
+        "p_mean": 0.48071856709016103
+      },
+      "L2": {
+        "p_mean": 0.47048092868988384
+      },
+      "L4": {
+        "p_mean": 4.7615661068172915e-21
+      }
+    },
+    "L2_z_distribution": {
+      "mean": -0.05452913877026514,
+      "sd": 1.0594066157144293,
+      "min": -1.8627384538407818,
+      "max": 2.6083007181882585
+    },
+    "L1_x_distribution": {
+      "mean": 9.6,
+      "max": 15
+    },
+    "L4_rank1_distribution": {
+      "mean": 0.8666666666666667,
+      "sd": 1.175679472569893,
+      "min": 0,
+      "max": 5
+    }
+  },
+  "NULL_B_primary": {
+    "arm": "NULL-B/20260509",
+    "kind": "B",
+    "seed": 20260509,
+    "n_draws": 8,
+    "wall_seconds": 0.38757991790771484,
+    "lenient": {
+      "marginals": {
+        "L1": 0.75,
+        "L2": 1.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 6,
+        "L2": 8,
+        "L3": 0,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.1111111111111111,
+      "p_joint_floor": 0.1111111111111111,
+      "rule_of_three_95_upper": 0.375,
+      "product_of_marginals": 0.009259259259259259,
+      "joint_over_product": 12.0,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.877114904091026,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 3.0,
+          "max": 8
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 6
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "11101101",
+        "L2": "11111111",
+        "L3": "00000000",
+        "L4": "00000000"
+      }
+    },
+    "strict": {
+      "marginals": {
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.1111111111111111,
+      "p_joint_floor": 0.1111111111111111,
+      "rule_of_three_95_upper": 0.375,
+      "product_of_marginals": 0.00015241579027587256,
+      "joint_over_product": 729.0000000000001,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.0,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "00000000",
+        "L2": "00000000",
+        "L3": "00000000",
+        "L4": "00000000"
+      }
+    },
+    "diagnostics": {
+      "l3_npass": {
+        "mean": 1.0,
+        "sd": 0.5,
+        "min": 0.0,
+        "max": 2.0,
+        "n": 8
+      },
+      "l2_ratio": {
+        "mean": 1.0768579423438123,
+        "sd": 0.003960866463203805,
+        "min": 1.071243467321275,
+        "max": 1.0819930860436373,
+        "n": 8
+      }
+    },
+    "raw_summary": {
+      "L1": {
+        "p_mean": 0.03857797035201886
+      },
+      "L2": {
+        "p_mean": 0.004975124378109453
+      },
+      "L4": {
+        "p_mean": 6.056560227055642e-06
+      }
+    },
+    "L2_z_distribution": {
+      "mean": -9.312551167357366,
+      "sd": 0.41401995681474457,
+      "min": -9.905647810289391,
+      "max": -8.579261951123138
+    },
+    "L1_x_distribution": {
+      "mean": 10.875,
+      "max": 13
+    },
+    "L4_rank1_distribution": {
+      "mean": 21.0,
+      "sd": 2.0,
+      "min": 18,
+      "max": 25
+    }
+  },
+  "NULL_Bprime_primary": {
+    "arm": "NULL-B'/20260509",
+    "kind": "Bprime",
+    "seed": 20260509,
+    "n_draws": 8,
+    "wall_seconds": 0.3957481384277344,
+    "lenient": {
+      "marginals": {
+        "L1": 0.0,
+        "L2": 1.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 0,
+        "L2": 8,
+        "L3": 0,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.1111111111111111,
+      "p_joint_floor": 0.1111111111111111,
+      "rule_of_three_95_upper": 0.375,
+      "product_of_marginals": 0.0013717421124828531,
+      "joint_over_product": 81.0,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.3333333333333335,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 0.0,
+          "max": 8
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "00000000",
+        "L2": "11111111",
+        "L3": "00000000",
+        "L4": "00000000"
+      }
+    },
+    "strict": {
+      "marginals": {
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.1111111111111111,
+      "p_joint_floor": 0.1111111111111111,
+      "rule_of_three_95_upper": 0.375,
+      "product_of_marginals": 0.00015241579027587256,
+      "joint_over_product": 729.0000000000001,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.0,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "00000000",
+        "L2": "00000000",
+        "L3": "00000000",
+        "L4": "00000000"
+      }
+    },
+    "diagnostics": {
+      "l3_npass": {
+        "mean": 0.25,
+        "sd": 0.6614378277661477,
+        "min": 0.0,
+        "max": 2.0,
+        "n": 8
+      },
+      "l2_ratio": {
+        "mean": 1.075120238057932,
+        "sd": 0.0033778143198301483,
+        "min": 1.070126457359806,
+        "max": 1.0809627539358524,
+        "n": 8
+      }
+    },
+    "raw_summary": {
+      "L1": {
+        "p_mean": 0.5811295402575755
+      },
+      "L2": {
+        "p_mean": 0.004975124378109453
+      },
+      "L4": {
+        "p_mean": 3.310338037346003e-24
+      }
+    },
+    "L2_z_distribution": {
+      "mean": -9.068586277296628,
+      "sd": 0.3648445539459847,
+      "min": -9.653092691486403,
+      "max": -8.570426949201284
+    },
+    "L1_x_distribution": {
+      "mean": 3.875,
+      "max": 5
+    },
+    "L4_rank1_distribution": {
+      "mean": 0.75,
+      "sd": 0.82915619758885,
+      "min": 0,
+      "max": 2
+    }
+  },
+  "D4_random_own_root_titles": {
+    "n_draws": 20,
+    "observed_rank1": 43,
+    "random_own_root_mean": 24.55,
+    "sd": 3.4709508783617204,
+    "q05": 19.9,
+    "q50": 25.0,
+    "q95": 30.05,
+    "p_observed_ge_random": 0.047619047619047616,
+    "band": [
+      1,
+      660
+    ]
+  },
+  "NULL_A_replication": {
+    "arm": "NULL-A/20260519",
+    "kind": "A",
+    "seed": 20260519,
+    "n_draws": 30,
+    "wall_seconds": 0.2960801124572754,
+    "lenient": {
+      "marginals": {
+        "L1": 0.03333333333333333,
+        "L2": 0.0,
+        "L3": 1.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 1,
+        "L2": 0,
+        "L3": 30,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.03225806451612903,
+      "p_joint_floor": 0.03225806451612903,
+      "rule_of_three_95_upper": 0.1,
+      "product_of_marginals": 3.4686090877558096e-05,
+      "joint_over_product": 930.0000000000001,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.33759071305736,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 0.5,
+          "max": 30
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 1
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "000000000000000000000000000001",
+        "L2": "000000000000000000000000000000",
+        "L3": "111111111111111111111111111111",
+        "L4": "000000000000000000000000000000"
+      }
+    },
+    "strict": {
+      "marginals": {
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 1.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 30,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.03225806451612903,
+      "p_joint_floor": 0.03225806451612903,
+      "rule_of_three_95_upper": 0.1,
+      "product_of_marginals": 3.356718472021751e-05,
+      "joint_over_product": 961.0000000000002,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.3333333333333333,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 0.0,
+          "max": 30
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "000000000000000000000000000000",
+        "L2": "000000000000000000000000000000",
+        "L3": "111111111111111111111111111111",
+        "L4": "000000000000000000000000000000"
+      }
+    },
+    "raw_summary": {
+      "L1": {
+        "p_mean": 0.6075185591050677
+      },
+      "L2": {
+        "p_mean": 0.5613598673300165
+      },
+      "L4": {
+        "p_mean": 3.981345226956077e-24
+      }
+    },
+    "L2_z_distribution": {
+      "mean": 0.19191600872805217,
+      "sd": 0.7363916027028415,
+      "min": -1.1595873906510175,
+      "max": 1.8541478339457702
+    },
+    "L1_x_distribution": {
+      "mean": 8.666666666666666,
+      "max": 14
+    },
+    "L4_rank1_distribution": {
+      "mean": 0.9333333333333333,
+      "sd": 0.813770374382247,
+      "min": 0,
+      "max": 2
+    }
+  },
+  "NULL_B_replication": {
+    "arm": "NULL-B/20260519",
+    "kind": "B",
+    "seed": 20260519,
+    "n_draws": 8,
+    "wall_seconds": 0.393510103225708,
+    "lenient": {
+      "marginals": {
+        "L1": 0.875,
+        "L2": 1.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 7,
+        "L2": 8,
+        "L3": 0,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.1111111111111111,
+      "p_joint_floor": 0.1111111111111111,
+      "rule_of_three_95_upper": 0.375,
+      "product_of_marginals": 0.010802469135802467,
+      "joint_over_product": 10.285714285714288,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.9410194495185118,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 3.5,
+          "max": 8
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 7
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "11111101",
+        "L2": "11111111",
+        "L3": "00000000",
+        "L4": "00000000"
+      }
+    },
+    "strict": {
+      "marginals": {
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.1111111111111111,
+      "p_joint_floor": 0.1111111111111111,
+      "rule_of_three_95_upper": 0.375,
+      "product_of_marginals": 0.00015241579027587256,
+      "joint_over_product": 729.0000000000001,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.0,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "00000000",
+        "L2": "00000000",
+        "L3": "00000000",
+        "L4": "00000000"
+      }
+    },
+    "diagnostics": {
+      "l3_npass": {
+        "mean": 1.125,
+        "sd": 0.5994789404140899,
+        "min": 0.0,
+        "max": 2.0,
+        "n": 8
+      },
+      "l2_ratio": {
+        "mean": 1.0754755524494513,
+        "sd": 0.0025510902896370463,
+        "min": 1.0702840582517872,
+        "max": 1.0782500316594104,
+        "n": 8
+      }
+    },
+    "raw_summary": {
+      "L1": {
+        "p_mean": 0.03760836376501978
+      },
+      "L2": {
+        "p_mean": 0.004975124378109453
+      },
+      "L4": {
+        "p_mean": 2.006963749104714e-06
+      }
+    },
+    "L2_z_distribution": {
+      "mean": -9.12251771267258,
+      "sd": 0.4291177193987612,
+      "min": -9.854137797289152,
+      "max": -8.705931060437901
+    },
+    "L1_x_distribution": {
+      "mean": 11.125,
+      "max": 14
+    },
+    "L4_rank1_distribution": {
+      "mean": 21.125,
+      "sd": 1.5360257159305635,
+      "min": 19,
+      "max": 23
+    }
+  },
+  "NULL_Bprime_replication": {
+    "arm": "NULL-B'/20260519",
+    "kind": "Bprime",
+    "seed": 20260519,
+    "n_draws": 8,
+    "wall_seconds": 0.3908810615539551,
+    "lenient": {
+      "marginals": {
+        "L1": 0.125,
+        "L2": 1.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 1,
+        "L2": 8,
+        "L3": 0,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.1111111111111111,
+      "p_joint_floor": 0.1111111111111111,
+      "rule_of_three_95_upper": 0.375,
+      "product_of_marginals": 0.0015432098765432098,
+      "joint_over_product": 72.0,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.3575913962058395,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 0.5,
+          "max": 8
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 1
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "00010000",
+        "L2": "11111111",
+        "L3": "00000000",
+        "L4": "00000000"
+      }
+    },
+    "strict": {
+      "marginals": {
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "marginal_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0
+      },
+      "n_joint": 0,
+      "p_joint_exact": 0.1111111111111111,
+      "p_joint_floor": 0.1111111111111111,
+      "rule_of_three_95_upper": 0.375,
+      "product_of_marginals": 0.00015241579027587256,
+      "joint_over_product": 729.0000000000001,
+      "phi": {
+        "L1xL2": null,
+        "L1xL3": null,
+        "L1xL4": null,
+        "L2xL3": null,
+        "L2xL4": null,
+        "L3xL4": null
+      },
+      "m_eff_nyholt": 4.0,
+      "m_eff_multiplicativity": 1.0,
+      "shrinkage": {
+        "1": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "2": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "3": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        },
+        "4": {
+          "min": 0,
+          "median": 0.0,
+          "max": 0
+        }
+      },
+      "indicators": {
+        "L1": "00000000",
+        "L2": "00000000",
+        "L3": "00000000",
+        "L4": "00000000"
+      }
+    },
+    "diagnostics": {
+      "l3_npass": {
+        "mean": 0.25,
+        "sd": 0.4330127018922193,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 8
+      },
+      "l2_ratio": {
+        "mean": 1.075449541321033,
+        "sd": 0.003521250090283194,
+        "min": 1.0719649016886688,
+        "max": 1.0839932631197837,
+        "n": 8
+      }
+    },
+    "raw_summary": {
+      "L1": {
+        "p_mean": 0.501354683541993
+      },
+      "L2": {
+        "p_mean": 0.004975124378109453
+      },
+      "L4": {
+        "p_mean": 9.820992628219922e-23
+      }
+    },
+    "L2_z_distribution": {
+      "mean": -9.07521895195254,
+      "sd": 0.3802568229132442,
+      "min": -9.759838361296765,
+      "max": -8.555318824453149
+    },
+    "L1_x_distribution": {
+      "mean": 5.25,
+      "max": 9
+    },
+    "L4_rank1_distribution": {
+      "mean": 1.25,
+      "sd": 1.299038105676658,
+      "min": 0,
+      "max": 3
+    }
+  },
+  "baseline_control": {
+    "QURAN_surface_reference": {
+      "label": "Quran (surface word-types)",
+      "n_words": 82375,
+      "n_types": 14879,
+      "L1": {
+        "n_candidates": 0,
+        "best": null,
+        "p_bonf": 1.0,
+        "satisfied": false,
+        "note": "no opening word-type marks 15-45 pseudo-surahs"
+      },
+      "L2": {
+        "L": 83.28871738158708,
+        "p": 0.004975124378109453,
+        "z": -10.826602641772487,
+        "null_mean": 103.46496825650736,
+        "null_sd": 1.8635809905014775,
+        "n_le": 0,
+        "ratio": 1.1296980925889044,
+        "satisfied": true
+      },
+      "L3": {
+        "classes": {
+          "وكان": {
+            "J": 0.15640666771791129,
+            "null_mean": 0.05667013645095906,
+            "z": 9.541563469909821,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "واتقوا": {
+            "J": 0.13702462662715334,
+            "null_mean": 0.056320895785803404,
+            "z": 7.578621269229149,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "قومه": {
+            "J": 0.1343819452710824,
+            "null_mean": 0.05785875282824161,
+            "z": 7.183005370136038,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "فبأي": {
+            "J": 0.19808787879397977,
+            "null_mean": 0.05515536181392187,
+            "z": 12.992841804537282,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "مؤمنين": {
+            "J": 0.12114519824147142,
+            "null_mean": 0.05883769610254287,
+            "z": 5.960447918017815,
+            "p": 0.009900990099009901,
+            "passed": true
+          }
+        },
+        "n_pass": 5,
+        "satisfied": true
+      },
+      "L4": {
+        "rank1_mean": 36.605,
+        "rank1_sd": 3.750863233976947,
+        "rank1_min": 27,
+        "rank1_max": 45,
+        "frac_draws_satisfying": 0.69,
+        "satisfied": true
+      },
+      "n_laws_satisfied": 3
+    },
+    "BL_BUKHARI": {
+      "label": "Bukhari hadith (114 pseudo-surahs)",
+      "n_words": 82375,
+      "n_types": 12125,
+      "L1": {
+        "n_candidates": 0,
+        "best": null,
+        "p_bonf": 1.0,
+        "satisfied": false,
+        "note": "no opening word-type marks 15-45 pseudo-surahs"
+      },
+      "L2": {
+        "L": 74.40539476123618,
+        "p": 0.004975124378109453,
+        "z": -13.65295913435067,
+        "null_mean": 99.82702257488374,
+        "null_sd": 1.8619866626339685,
+        "n_le": 0,
+        "ratio": 1.0731175843198084,
+        "satisfied": true
+      },
+      "L3": {
+        "classes": {
+          "الإمام": {
+            "J": 0.148664689644234,
+            "null_mean": 0.09155738124238853,
+            "z": 4.51121870672851,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "الإيمان": {
+            "J": 0.10420271300757726,
+            "null_mean": 0.09004774221553451,
+            "z": 1.0087214960009603,
+            "p": 0.15841584158415842,
+            "passed": false
+          },
+          "الماء": {
+            "J": 0.15148175947557033,
+            "null_mean": 0.08887366620125996,
+            "z": 4.36106541104519,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "والذي": {
+            "J": 0.12177112777270277,
+            "null_mean": 0.08569900673865426,
+            "z": 2.6101139207578643,
+            "p": 0.019801980198019802,
+            "passed": true
+          },
+          "ماء": {
+            "J": 0.1778233925651624,
+            "null_mean": 0.09138084590263111,
+            "z": 6.140829280947866,
+            "p": 0.009900990099009901,
+            "passed": true
+          }
+        },
+        "n_pass": 4,
+        "satisfied": true
+      },
+      "L4": {
+        "rank1_mean": 30.635,
+        "rank1_sd": 3.809432372414557,
+        "rank1_min": 20,
+        "rank1_max": 41,
+        "frac_draws_satisfying": 0.14,
+        "satisfied": false
+      },
+      "n_laws_satisfied": 2
+    },
+    "BL_POETRY": {
+      "label": "pre-Islamic poetry (114 pseudo-surahs)",
+      "n_words": 82375,
+      "n_types": 25526,
+      "L1": {
+        "n_candidates": 0,
+        "best": null,
+        "p_bonf": 1.0,
+        "satisfied": false,
+        "note": "no opening word-type marks 15-45 pseudo-surahs"
+      },
+      "L2": {
+        "L": 75.35016562568617,
+        "p": 0.004975124378109453,
+        "z": -14.366411227488994,
+        "null_mean": 96.47336697452782,
+        "null_sd": 1.4703185795227738,
+        "n_le": 0,
+        "ratio": 1.0927846209347871,
+        "satisfied": true
+      },
+      "L3": {
+        "classes": {
+          "عبل": {
+            "J": 0.09671664228480956,
+            "null_mean": 0.03721665676194446,
+            "z": 7.984296103742858,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "أي": {
+            "J": 0.08970696894764119,
+            "null_mean": 0.03605616930807396,
+            "z": 7.511607198125604,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "عبلة": {
+            "J": 0.11093666944384124,
+            "null_mean": 0.036893346940908005,
+            "z": 8.692074372486625,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "والجمع": {
+            "J": 0.08056098652213568,
+            "null_mean": 0.037158120265880036,
+            "z": 5.67519064469295,
+            "p": 0.009900990099009901,
+            "passed": true
+          },
+          "عبس": {
+            "J": 0.09964596397239937,
+            "null_mean": 0.037875442432439586,
+            "z": 8.29427478072302,
+            "p": 0.009900990099009901,
+            "passed": true
+          }
+        },
+        "n_pass": 5,
+        "satisfied": true
+      },
+      "L4": {
+        "rank1_mean": 46.18,
+        "rank1_sd": 3.787822593522564,
+        "rank1_min": 38,
+        "rank1_max": 55,
+        "frac_draws_satisfying": 0.99,
+        "satisfied": true
+      },
+      "n_laws_satisfied": 3
+    },
+    "BL_POETRY_files": [
+      "diwan-amr-ibn-kulthum.txt",
+      "diwan-antara.txt",
+      "diwan-harith.txt",
+      "diwan-imru-al-qais.txt",
+      "diwan-labid.txt",
+      "diwan-tarafa.txt",
+      "diwan-zuhayr.txt",
+      "muallaqa-amr-bin-kulthum.txt",
+      "muallaqa-antara.txt",
+      "muallaqa-harith.txt",
+      "muallaqa-imru-al-qais.txt",
+      "muallaqa-labid.txt",
+      "muallaqa-tarafa.txt",
+      "muallaqa-zuhayr.txt"
+    ],
+    "BL_POETRY_word_count": 82520
+  }
+}

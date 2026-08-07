@@ -179,8 +179,10 @@ def hits_tail_exact(mult_v, mult_t, n, h_obs, kmax_cap=64):
 
     if D <= 256:
         pmf, _ = hits_pmf_exact(mult_v, mult_t, n)
-        p = sum(pmf[h] for h in range(min(h_obs, len(pmf) - 1), len(pmf))) \
-            if h_obs <= len(pmf) - 1 else Fraction(0)
+        if h_obs > len(pmf) - 1:
+            p = Fraction(0)
+        else:
+            p = sum(pmf[h] for h in range(h_obs, len(pmf)))
         pf = float(p)
         return dict(p=pf, p_lo=pf, p_hi=pf, exact=True,
                     expectation=exp_hits, board_degree=D)
@@ -637,12 +639,23 @@ def spearman(x, y):
 
 def extremum_positions(vals, mode):
     """Return (chosen_index, tie_count). Ties -> lowest surah number (locked)."""
-    if mode == "max":
-        best = max(vals)
-    else:
-        best = min(vals)
+    best = max(vals) if mode == "max" else min(vals)
     idxs = [i for i, v in enumerate(vals) if v == best]
     return idxs[0], len(idxs)
+
+
+def extremum_pmf(t, n=N_SURAHS):
+    """
+    EXACT distribution of the extremum position under a uniform random
+    permutation of the axis's own values, with the locked lowest-index
+    tie-break.  The t tied extremal values occupy a uniform random t-subset of
+    the n positions and the extremum is that subset's minimum, so
+        P(pos = s) = C(n-1-s, t-1) / C(n, t)        (s zero-based)
+    For t = 1 this is the uniform 1/n.
+    """
+    denom = math.comb(n, t)
+    return [math.comb(n - 1 - s, t - 1) / denom if (n - 1 - s) >= (t - 1) else 0.0
+            for s in range(n)]
 
 
 def digit_reverse(n):
@@ -651,6 +664,35 @@ def digit_reverse(n):
 
 def digit_sum(n):
     return sum(int(c) for c in str(n))
+
+
+def is_functional(a, b):
+    """True iff a determines b (the map a -> b is single-valued)."""
+    seen = {}
+    for x, y in zip(a, b):
+        if x in seen and seen[x] != y:
+            return False
+        seen[x] = y
+    return True
+
+
+def mechanical_screen(a, b, constructional=False):
+    """
+    Locked pre-reg §6 screen, applied identically wherever two integer vectors
+    are compared for exact equality.
+
+    `constructional` (§6.2) is supplied from the DECLARED source map, never
+    inferred: an injective vector such as mushaf position trivially "determines"
+    every other vector, so an inferred functional-dependence test would flag
+    every M12/M13/M14 cell as mechanical and silently suppress genuinely open
+    comparisons (mushaf position vs revelation order among them).  Inferring it
+    is therefore anti-conservative for a null-seeking test and is not done.
+    """
+    ordered = all(x <= y for x, y in zip(a, b)) or all(x >= y for x, y in zip(a, b))
+    rho = spearman([float(x) for x in a], [float(x) for x in b])
+    return dict(mechanical=(constructional or ordered or abs(rho) >= RHO_COUPLE),
+                constructional=constructional, ordered=ordered,
+                rho=round(rho, 4))
 
 
 def hyper_upper_tail(k, j, n=N_SURAHS):
@@ -668,51 +710,80 @@ def hyper_upper_tail(k, j, n=N_SURAHS):
 
 def sweep_E1(axes, tuple_name, coupled_pairs):
     names = list(axes.keys())
+    ext = {}
+    for nm in names:
+        for mode in ("max", "min"):
+            i, t = extremum_positions(axes[nm], mode)
+            ext[(nm, mode)] = (i, t, extremum_pmf(t))
     cells, hits = [], []
     for a in range(len(names)):
         for b in range(a + 1, len(names)):
             na, nb = names[a], names[b]
-            va, vb = axes[na], axes[nb]
-            rho = spearman(va, vb)
+            rho = spearman(axes[na], axes[nb])
+            coupled = (abs(rho) >= RHO_COUPLE) or ((na, nb) in coupled_pairs) \
+                or ((nb, na) in coupled_pairs)
             for ma, mb in (("max", "max"), ("min", "min"),
                            ("max", "min"), ("min", "max")):
-                ia, ta = extremum_positions(va, ma)
-                ib, tb = extremum_positions(vb, mb)
-                p_exact = (ta * tb) / (N_SURAHS ** 2) if False else 1.0 / N_SURAHS
+                ia, ta, pa = ext[(na, ma)]
+                ib, tb, pb = ext[(nb, mb)]
+                # EXACT denominator: P(same extremum surah) under independent
+                # permutation of each axis, tie-structure respected.
+                p_exact = sum(pa[s] * pb[s] for s in range(N_SURAHS))
                 cell = dict(tuple=tuple_name, axis_a=na, axis_b=nb,
                             mode_a=ma, mode_b=mb, surah_a=ia + 1, surah_b=ib + 1,
                             rho=round(rho, 4), ties_a=ta, ties_b=tb,
-                            p_exact=p_exact,
-                            coupled=(abs(rho) >= RHO_COUPLE
-                                     or (na, nb) in coupled_pairs),
-                            hit=(ia == ib))
+                            p_exact=p_exact, coupled=coupled, hit=(ia == ib))
                 cells.append(cell)
                 if cell["hit"]:
                     hits.append(cell)
     return cells, hits
 
 
-def sweep_E1_family(n_axes, n_cells, obs, rng, n_mc=N_MC):
-    """Exact-form family null: extremum positions are i.i.d. uniform on 114."""
-    pairs = [(a, b) for a in range(n_axes) for b in range(a + 1, n_axes)]
-    idx_a, idx_b, mode_a, mode_b = [], [], [], []
-    for (a, b) in pairs:
-        for ma, mb in ((0, 0), (1, 1), (0, 1), (1, 0)):
-            idx_a.append(a); idx_b.append(b); mode_a.append(ma); mode_b.append(mb)
-    idx_a = np.array(idx_a); idx_b = np.array(idx_b)
-    mode_a = np.array(mode_a); mode_b = np.array(mode_b)
-    ge = 0
-    chunk = 200_000
-    done = 0
+def sweep_E1_family(axes, obs, obs_dec, coupled_mask, rng, n_mc=N_MC):
+    """
+    Family null at the pre-registered 10^7 draws. Extremum positions are drawn
+    from their EXACT per-axis distributions (tie-aware), independently across
+    axes, which is precisely null N1.
+    """
+    names = list(axes.keys())
+    cdfs = []
+    key = {}
+    for nm in names:
+        for mode in ("max", "min"):
+            _, t = extremum_positions(axes[nm], mode)
+            key[(nm, mode)] = len(cdfs)
+            cdfs.append(np.cumsum(np.array(extremum_pmf(t))))
+    cdfs = np.array(cdfs)
+    cdfs[:, -1] = 1.0
+    ia, ib = [], []
+    for a in range(len(names)):
+        for b in range(a + 1, len(names)):
+            for ma, mb in (("max", "max"), ("min", "min"),
+                           ("max", "min"), ("min", "max")):
+                ia.append(key[(names[a], ma)])
+                ib.append(key[(names[b], mb)])
+    ia = np.array(ia); ib = np.array(ib)
+    dec = np.array(coupled_mask) == False           # noqa: E712
+    ge, ge_dec, done = 0, 0, 0
+    chunk = 20_000
+    n_draw = cdfs.shape[0]
     while done < n_mc:
         b = min(chunk, n_mc - done)
-        pos = rng.integers(0, N_SURAHS, size=(b, n_axes, 2))
-        va = pos[:, idx_a, mode_a]
-        vb = pos[:, idx_b, mode_b]
-        cnt = (va == vb).sum(axis=1)
-        ge += int((cnt >= obs).sum())
+        u = rng.random((b, n_draw))
+        pos = np.empty((b, n_draw), dtype=np.int16)
+        for j in range(n_draw):
+            pos[:, j] = np.searchsorted(cdfs[j], u[:, j], side="left")
+        eq = pos[:, ia] == pos[:, ib]
+        ge += int((eq.sum(axis=1) >= obs).sum())
+        ge_dec += int((eq[:, dec].sum(axis=1) >= obs_dec).sum())
         done += b
-    return ge / n_mc, len(idx_a)
+    return ge / n_mc, ge_dec / n_mc, len(ia)
+
+
+BASE_CLASS_SOURCE_AXIS = {
+    "C18_rhyme_homogeneous": "A12_n_rhyme_classes",
+    "C15_odd_verse_count": "A01_n_verses",
+}
 
 
 def sweep_E2(classes, base_names, derived_source, axes):
@@ -741,13 +812,11 @@ def sweep_E2(classes, base_names, derived_source, axes):
                 exact = (s1 == s2)
                 p_hit = 1.0 / math.comb(N_SURAHS, size)
                 p_near = hyper_upper_tail(size, ov)
-                a1 = derived_source.get(n1)
-                a2 = derived_source.get(n2)
+                a1 = derived_source.get(n1) or BASE_CLASS_SOURCE_AXIS.get(n1)
+                a2 = derived_source.get(n2) or BASE_CLASS_SOURCE_AXIS.get(n2)
                 definitional = False
                 if a1 and a2:
                     definitional = (a1 == a2) or (abs(axis_rho(a1, a2)) >= RHO_COUPLE)
-                if s1 < s2 or s2 < s1:
-                    definitional = True
                 rec = dict(class_a=n1, class_b=n2, size=size, overlap=ov,
                            jaccard=round(jac, 4), exact=exact,
                            p_exact=p_hit, p_overlap=p_near,
@@ -775,6 +844,18 @@ def sweep_E3a(metrics, rev, tuple_name):
                  ("M12_mushaf_position", "F1_s"),
                  ("M13_revelation_order", "F5_revelation_order")}
 
+    # DECLARED constructional sources (pre-reg §6.2): each target function is
+    # built from exactly one metric, and only that metric's cells are
+    # constructional.
+    FUNC_SOURCE = {"F1_s": "M12_mushaf_position",
+                   "F2_115_minus_s": "M12_mushaf_position",
+                   "F3_2s": "M12_mushaf_position",
+                   "F4_digit_reverse_s": "M12_mushaf_position",
+                   "F8_digit_sum_s": "M12_mushaf_position",
+                   "F5_revelation_order": "M13_revelation_order",
+                   "F6_115_minus_rev": "M13_revelation_order",
+                   "F7_n_verses": "M01_n_verses"}
+
     cells, hits, n_cand = [], [], 0
     for mname, mv in metrics.items():
         mult_m = collections.Counter(mv)
@@ -782,47 +863,68 @@ def sweep_E3a(metrics, rev, tuple_name):
             if (mname, fname) in TAUTOLOGY:
                 continue
             n_cand += N_SURAHS
+            scr = mechanical_screen(mv, fv,
+                                    constructional=(FUNC_SOURCE.get(fname) == mname))
             local = [s for s in range(N_SURAHS) if mv[s] == fv[s]]
             for s in local:
                 hits.append(dict(tuple=tuple_name, geometry="E3a", metric=mname,
                                  func=fname, surah=s + 1, value=mv[s],
+                                 coupled=scr["mechanical"],
+                                 constructional=scr["constructional"],
+                                 ordered=scr["ordered"], rho=scr["rho"],
                                  p_exact=mult_m.get(fv[s], 0) / N_SURAHS))
             tail = hits_tail_exact(mult_m, collections.Counter(fv),
                                    N_SURAHS, len(local))
+            if not tail["exact"]:
+                raise SystemExit("E3a cell (%s,%s) fell off the exact branch"
+                                 % (mname, fname))
             cells.append(dict(tuple=tuple_name, geometry="E3a", metric=mname,
                               func=fname, observed=len(local),
                               expected=tail["expectation"], p_cell=tail["p"],
-                              p_lo=tail["p_lo"], p_hi=tail["p_hi"],
-                              exact=tail["exact"],
+                              exact=True, coupled=scr["mechanical"],
+                              constructional=scr["constructional"],
+                              deterministic_order=scr["ordered"], rho=scr["rho"],
                               hit_surahs=[s + 1 for s in local]))
     return cells, hits, n_cand
 
 
-def sweep_E3b(metrics, tuple_name):
+def sweep_E3b(metrics, tuple_name, rng, n_mc):
     cells, hits, n_cand = [], [], 0
     npairs = N_SURAHS // 2
     for mname, mv in metrics.items():
         n_cand += npairs
         local = [i for i in range(npairs) if mv[i] == mv[N_SURAHS - 1 - i]]
         mult = collections.Counter(mv)
+        # EXACT per-hit denominator: P(one designated mirror pair is
+        # monochromatic) = sum_w n_w(n_w-1) / (114*113).
+        p_pair = sum(nw * (nw - 1) for nw in mult.values()) \
+            / float(N_SURAHS * (N_SURAHS - 1))
         pmf = mirror_pmf_exact(mult, n=N_SURAHS, npairs=npairs)
         obs = len(local)
-        p = float(sum(pmf[h] for h in range(obs, len(pmf))))
+        p = float(sum(pmf[h] for h in range(obs, len(pmf)))) if obs < len(pmf) else 0.0
         exp = float(sum(h * pmf[h] for h in range(len(pmf))))
-        med = 0
-        acc = Fraction(0)
+        med, acc = 0, Fraction(0)
         for h in range(len(pmf)):
             acc += pmf[h]
             if acc >= Fraction(1, 2):
                 med = h
                 break
+        # pre-registered 10^7-draw permutation guard
+        arr = np.array(mv)
+        ge, done, chunk = 0, 0, 50_000
+        while done < n_mc:
+            b = min(chunk, n_mc - done)
+            perm = rng.permuted(np.tile(arr, (b, 1)), axis=1)
+            ge += int(((perm[:, :npairs] == perm[:, N_SURAHS - 1::-1][:, :npairs])
+                       .sum(axis=1) >= obs).sum())
+            done += b
         for i in local:
             hits.append(dict(tuple=tuple_name, geometry="E3b", metric=mname,
                              pair=[i + 1, N_SURAHS - i], value=mv[i],
-                             p_exact=float(pmf[1]) if len(pmf) > 1 else 0.0))
+                             p_exact=p_pair))
         cells.append(dict(tuple=tuple_name, geometry="E3b", metric=mname,
                           observed=obs, expected=exp, median=med, p_cell=p,
-                          exact=True,
+                          p_cell_mc=ge / n_mc, n_mc=n_mc, exact=True,
                           hit_pairs=[[i + 1, N_SURAHS - i] for i in local]))
     return cells, hits, n_cand
 
@@ -835,11 +937,9 @@ def sweep_E3c(metrics, tuple_name, ordered_pairs):
             na, nb = names[a], names[b]
             va, vb = metrics[na], metrics[nb]
             n_cand += N_SURAHS
-            rho = spearman([float(x) for x in va], [float(x) for x in vb])
-            le = all(va[i] <= vb[i] for i in range(N_SURAHS))
-            ge = all(va[i] >= vb[i] for i in range(N_SURAHS))
-            coupled = (abs(rho) >= RHO_COUPLE) or le or ge \
-                or (na, nb) in ordered_pairs
+            scr = mechanical_screen(va, vb)
+            rho = scr["rho"]
+            coupled = scr["mechanical"] or (na, nb) in ordered_pairs
             mult_a = collections.Counter(va)
             local = [s for s in range(N_SURAHS) if va[s] == vb[s]]
             for s in local:
@@ -850,12 +950,16 @@ def sweep_E3c(metrics, tuple_name, ordered_pairs):
                                  p_exact=mult_a.get(vb[s], 0) / N_SURAHS))
             tail = hits_tail_exact(mult_a, collections.Counter(vb),
                                    N_SURAHS, len(local))
+            if not tail["exact"]:
+                raise SystemExit("E3c cell (%s,%s) fell off the exact branch"
+                                 % (na, nb))
             cells.append(dict(tuple=tuple_name, geometry="E3c", metric_a=na,
-                              metric_b=nb, rho=round(rho, 4), coupled=coupled,
-                              deterministic_order=(le or ge),
+                              metric_b=nb, rho=rho, coupled=coupled,
+                              constructional=scr["constructional"],
+                              deterministic_order=scr["ordered"],
                               observed=len(local),
                               expected=tail["expectation"], p_cell=tail["p"],
-                              exact=tail["exact"],
+                              exact=True,
                               hit_surahs=[s + 1 for s in local]))
     return cells, hits, n_cand
 
@@ -907,25 +1011,41 @@ def sweep_E4(qac, vc, tuple_name, rng, n_mc):
             hits.append(dict(tuple=tuple_name, geometry="E4", unit=units[i],
                              func=lname, count=cvec[i], target=lv[i],
                              p_exact=hist.get(lv[i], 0) / N))
-        tail = hits_tail_exact(hist, collections.Counter(lv), N, len(local))
-        # secondary null N2: block permutation within n_distinct_surahs deciles
-        ge = 0
-        chunk = max(1, min(20_000, n_mc))
+        # EXACT closed-form expectation under N1 (unrestricted permutation).
+        tgt_mult = collections.Counter(lv)
+        exp_N1 = float(sum(nw * tgt_mult.get(w, 0)
+                           for w, nw in hist.items())) / N
+        obs = len(local)
+        # The exact rook-polynomial TAIL is mathematically correct but
+        # numerically infeasible at N = 1642 / 4832 (board degree ~10^3,
+        # catastrophic cancellation in the deficit regime).  Disclosed in the
+        # finding's garden-of-forking-paths.  Both nulls therefore use seeded
+        # permutation sampling; the per-hit denominators above stay exact.
+        ge1 = ge2 = 0
+        chunk = max(1, min(max(1, 4_000_000 // max(N, 1)), n_mc))
         done = 0
         while done < n_mc:
             b = min(chunk, n_mc - done)
-            perm = np.tile(cvec_np, (b, 1))
+            base = np.tile(cvec_np, (b, 1))
+            p1 = rng.permuted(base, axis=1)
+            ge1 += int(((p1 == lv_np).sum(axis=1) >= obs).sum())
+            p2 = np.tile(cvec_np, (b, 1))
             for blk in blocks:
-                sub = perm[:, blk]
-                perm[:, blk] = rng.permuted(sub, axis=1)
-            ge += int(((perm == lv_np).sum(axis=1) >= len(local)).sum())
+                p2[:, blk] = rng.permuted(p2[:, blk], axis=1)
+            ge2 += int(((p2 == lv_np).sum(axis=1) >= obs).sum())
             done += b
+        # exact N2 expectation (block-wise, closed form)
+        exp_N2 = 0.0
+        for blk in blocks:
+            hb = collections.Counter(cvec_np[blk].tolist())
+            tb = collections.Counter(lv_np[blk].tolist())
+            exp_N2 += sum(nw * tb.get(w, 0) for w, nw in hb.items()) / len(blk)
         cells.append(dict(tuple=tuple_name, geometry="E4", func=lname,
-                          n_units=N, observed=len(local),
-                          expected_N1=tail["expectation"], p_cell_N1=tail["p"],
-                          p_lo=tail["p_lo"], p_hi=tail["p_hi"],
-                          exact_N1=tail["exact"], p_cell_N2=ge / n_mc,
-                          n_mc_N2=n_mc))
+                          n_units=N, observed=obs,
+                          expected_N1=exp_N1, expected_N2=exp_N2,
+                          p_cell_N1=ge1 / n_mc, p_cell_N2=ge2 / n_mc,
+                          exact_expectation=True, exact_tail=False,
+                          n_mc=n_mc))
     return cells, hits, n_cand, N, hist
 
 
@@ -938,6 +1058,7 @@ def main():
     ap.add_argument("--seed", type=int, default=SEED)
     ap.add_argument("--n-mc", type=int, default=N_MC)
     ap.add_argument("--n-mc-e4", type=int, default=N_MC)
+    ap.add_argument("--n-mc-e3b", type=int, default=N_MC)
     ap.add_argument("--tag", default="")
     args = ap.parse_args()
 
@@ -1000,6 +1121,21 @@ def main():
     print("[MW-6] 6236 verses / 1642 roots / 185 counts / 30 loci in 29 surahs "
           "/ 14 letters  VERIFIED")
 
+    # MW-6e: reproduce H-NEW-2090 cells 1, 2 and 6 exactly, from this pipeline
+    vcl = [vc[s] for s in range(1, 115)]
+    c2090 = {
+        "cell1_vc_eq_N": [s for s in range(1, 115) if vcl[s - 1] == s],
+        "cell2_vc_eq_2N": [s for s in range(1, 115) if vcl[s - 1] == 2 * s],
+        "cell6_vc_eq_digitrev_N": [s for s in range(1, 115)
+                                   if vcl[s - 1] == digit_reverse(s)],
+    }
+    if (len(c2090["cell1_vc_eq_N"]) != 0
+            or c2090["cell2_vc_eq_2N"] != [30]
+            or len(c2090["cell6_vc_eq_digitrev_N"]) != 0):
+        raise SystemExit("MW-6e FAIL: H-NEW-2090 replication mismatch: %s" % c2090)
+    mw6["h_new_2090_replication"] = c2090
+    print("[MW-6e] H-NEW-2090 cells 1/2/6 reproduced: 0 hits, 1 hit (Q30), 0 hits")
+
     # ---- build all three rules-tuples --------------------------------------
     TUPLES = ["T-ROOT", "T-LEMMA", "T-NORM"]
     feats = {}
@@ -1034,6 +1170,8 @@ def main():
     all_cells = {"E1": [], "E2": [], "E3a": [], "E3b": [], "E3c": [], "E4": []}
     e2_nearmiss = []
     per_tuple = {}
+    e4_cache = {}
+    coupled_mask_by_tuple = {}
 
     for tn in TUPLES:
         axes, metrics = feats[tn]
@@ -1045,6 +1183,7 @@ def main():
         c1, h1 = sweep_E1(axes, tn, COUPLED_AXIS_PAIRS)
         K_cand += len(c1); K_cells += 1
         all_cells["E1"].extend(c1); all_hits["E1"].extend(h1)
+        coupled_mask_by_tuple[tn] = [c["coupled"] for c in c1]
 
         print("[%s] E2 exact set-coincidence sweep ..." % tn)
         c2, h2, nm2 = sweep_E2(classes, base_names, dsrc, axes)
@@ -1057,8 +1196,8 @@ def main():
         K_cand += n3a; K_cells += len(c3a)
         all_cells["E3a"].extend(c3a); all_hits["E3a"].extend(h3a)
 
-        print("[%s] E3b mirror-pair sweep ..." % tn)
-        c3b, h3b, n3b = sweep_E3b(metrics, tn)
+        print("[%s] E3b mirror-pair sweep (MC guard = %d) ..." % (tn, args.n_mc_e3b))
+        c3b, h3b, n3b = sweep_E3b(metrics, tn, rng, args.n_mc_e3b)
         K_cand += n3b; K_cells += len(c3b)
         all_cells["E3b"].extend(c3b); all_hits["E3b"].extend(h3b)
 
@@ -1068,7 +1207,16 @@ def main():
         all_cells["E3c"].extend(c3c); all_hits["E3c"].extend(h3c)
 
         print("[%s] E4 count-location sweep (N2 MC = %d) ..." % (tn, args.n_mc_e4))
-        c4, h4, n4, nunits, hist4 = sweep_E4(qac, vc, tn, rng, args.n_mc_e4)
+        # E4 depends only on the morphological unit, so T-ROOT and T-NORM are
+        # identical by construction; computed once, reused, and disclosed.
+        cache_key = "LEMMA" if tn == "T-LEMMA" else "ROOT"
+        if cache_key in e4_cache:
+            c4s, h4s, n4, nunits = e4_cache[cache_key]
+            c4 = [dict(c, tuple=tn, reused_from=cache_key) for c in c4s]
+            h4 = [dict(h, tuple=tn) for h in h4s]
+        else:
+            c4, h4, n4, nunits, _ = sweep_E4(qac, vc, tn, rng, args.n_mc_e4)
+            e4_cache[cache_key] = (c4, h4, n4, nunits)
         K_cand += n4; K_cells += len(c4)
         all_cells["E4"].extend(c4); all_hits["E4"].extend(h4)
 
@@ -1091,8 +1239,7 @@ def main():
     print("[bonferroni] K_candidates=%d  alpha_hit=%.4g | K_cells=%d alpha_cell=%.4g"
           % (K_cand, alpha_hit, K_cells, alpha_cell))
 
-    # ---- E1 family null (10^7, exact-form) ---------------------------------
-    n_axes = len(feats["T-ROOT"][0])
+    # ---- E1 family null (pre-registered 10^7 draws) ------------------------
     obs_e1 = {tn: sum(1 for c in all_cells["E1"] if c["tuple"] == tn and c["hit"])
               for tn in TUPLES}
     obs_e1_dec = {tn: sum(1 for c in all_cells["E1"]
@@ -1100,13 +1247,31 @@ def main():
                   for tn in TUPLES}
     e1_family = {}
     for tn in TUPLES:
-        p, ncell = sweep_E1_family(n_axes, None, obs_e1[tn],
-                                   np.random.default_rng(args.seed), args.n_mc)
-        e1_family[tn] = dict(observed=obs_e1[tn], observed_decoupled=obs_e1_dec[tn],
-                             expected=ncell / N_SURAHS, p_family=p,
-                             n_cells=ncell, n_mc=args.n_mc)
-        print("[E1 family %s] obs=%d exp=%.3f p=%.6f"
-              % (tn, obs_e1[tn], ncell / N_SURAHS, p))
+        tcells = [c for c in all_cells["E1"] if c["tuple"] == tn]
+        exp_analytic = sum(c["p_exact"] for c in tcells)
+        exp_dec = sum(c["p_exact"] for c in tcells if not c["coupled"])
+        # MW-7-capped descriptive diagnostic: a stricter decoupling stratum,
+        # chosen AFTER observation. No p-value, no promotion, no cell added.
+        strict = [c for c in tcells if abs(c["rho"]) < 0.40]
+        p, p_dec, ncell = sweep_E1_family(
+            feats[tn][0], obs_e1[tn], obs_e1_dec[tn],
+            coupled_mask_by_tuple[tn], np.random.default_rng(args.seed), args.n_mc)
+        e1_family[tn] = dict(
+            observed=obs_e1[tn], observed_decoupled=obs_e1_dec[tn],
+            expected_exact=exp_analytic, expected_decoupled=exp_dec,
+            p_family=p, p_family_decoupled=p_dec,
+            n_cells=ncell, n_cells_decoupled=sum(1 for c in tcells
+                                                 if not c["coupled"]),
+            mw7_strict_rho_lt_040=dict(
+                cells=len(strict), observed=sum(1 for c in strict if c["hit"]),
+                expected=sum(c["p_exact"] for c in strict),
+                note="MW-7 descriptive only; no p-value claimed"),
+            n_mc=args.n_mc)
+        print("[E1 family %s] obs=%d exp=%.3f p=%.6f | decoupled obs=%d exp=%.3f "
+              "p=%.6f | MW-7 rho<0.40 obs=%d exp=%.3f"
+              % (tn, obs_e1[tn], exp_analytic, p, obs_e1_dec[tn], exp_dec, p_dec,
+                 e1_family[tn]["mw7_strict_rho_lt_040"]["observed"],
+                 e1_family[tn]["mw7_strict_rho_lt_040"]["expected"]))
     results["E1_family"] = e1_family
 
     # ---- DECOY control (MW-6a) ---------------------------------------------
@@ -1147,7 +1312,9 @@ def main():
     for fam in ("E3a", "E3b", "E3c", "E4"):
         for c in all_cells[fam]:
             pc = c.get("p_cell", c.get("p_cell_N1"))
-            if pc is not None and pc < alpha_cell and c["observed"] > 0:
+            exp0 = c.get("expected", c.get("expected_N1"))
+            if (pc is not None and pc < alpha_cell and c["observed"] > 0
+                    and exp0 is not None and c["observed"] > exp0):
                 cell_excess.append(dict(c, family=fam))
             exp = c.get("expected", c.get("expected_N1"))
             if exp is not None and c["observed"] < exp:
@@ -1157,9 +1324,56 @@ def main():
                                                         "metric_a", "metric_b")},
                                          observed=c["observed"], expected=exp))
     results["cell_excess"] = cell_excess
+    results["cell_excess_all_mechanical"] = all(
+        c.get("coupled", False) for c in cell_excess)
     results["n_cell_deficit"] = len(cell_deficit)
     results["n_cells_scored"] = sum(len(all_cells[f])
                                     for f in ("E3a", "E3b", "E3c", "E4"))
+
+    # aggregate direction: total observed vs total exactly-expected hits
+    direction = {}
+    for fam in ("E3a", "E3b", "E3c", "E4"):
+        o = e = 0.0
+        ob = ab = eq = 0
+        o_dec = e_dec = 0.0
+        for c in all_cells[fam]:
+            ex = c.get("expected", c.get("expected_N2", c.get("expected_N1")))
+            o += c["observed"]; e += ex
+            if not c.get("coupled", False):
+                o_dec += c["observed"]; e_dec += ex
+            if c["observed"] < ex:
+                ob += 1
+            elif c["observed"] > ex:
+                ab += 1
+            else:
+                eq += 1
+        direction[fam] = dict(observed_total=o, expected_total=round(e, 3),
+                              ratio=round(o / e, 4) if e else None,
+                              observed_decoupled=o_dec,
+                              expected_decoupled=round(e_dec, 3),
+                              ratio_decoupled=round(o_dec / e_dec, 4) if e_dec else None,
+                              cells_below=ob, cells_above=ab, cells_equal=eq)
+    direction["E1"] = dict(
+        observed_total=sum(1 for c in all_cells["E1"] if c["hit"]),
+        expected_total=round(sum(c["p_exact"] for c in all_cells["E1"]), 3),
+        observed_decoupled=sum(1 for c in all_cells["E1"]
+                               if c["hit"] and not c["coupled"]),
+        expected_decoupled=round(sum(c["p_exact"] for c in all_cells["E1"]
+                                     if not c["coupled"]), 3))
+    direction["E2"] = dict(
+        observed_total=sum(1 for c in all_cells["E2"] if c["exact"]),
+        expected_total=sum(c["p_exact"] for c in all_cells["E2"]),
+        observed_nondefinitional=sum(1 for c in all_cells["E2"]
+                                     if c["exact"] and not c["definitional"]),
+        expected_nondefinitional=sum(c["p_exact"] for c in all_cells["E2"]
+                                     if not c["definitional"]),
+        pairs_scanned=len(all_cells["E2"]))
+    results["direction"] = direction
+    for k, v in direction.items():
+        print("[direction %-3s] obs=%s exp=%s  decoupled obs=%s exp=%s"
+              % (k, v.get("observed_total"), v.get("expected_total"),
+                 v.get("observed_decoupled", v.get("observed_nondefinitional")),
+                 v.get("expected_decoupled", v.get("expected_nondefinitional"))))
 
     # ---- write everything ---------------------------------------------------
     results["per_tuple"] = per_tuple

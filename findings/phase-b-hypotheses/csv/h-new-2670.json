@@ -1,0 +1,1144 @@
+{
+  "finding_id": "H-NEW-2670",
+  "title": "Joint conjunction improbability: the muqattaat-14 under ALL declared constraints simultaneously",
+  "date": "2026-08-07",
+  "author": "Waiel Al-Shujaa",
+  "run_utc": "20260807T011646Z",
+  "run_dir": "runs/h-new-2670/20260807T011646Z",
+  "prereg_sha256": "d6c5a48179585f665c5563f7357629ebb616bb00d075bf4fac2032034615fe7c",
+  "frozen_inputs": {
+    "quran-text/quran-full-tashkeel.json": "382a7341300602ec8b366316d4bbe2a44955c2bf984d395bdd82dae6110b6715",
+    "quran-text/quran-no-tashkeel.json": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "findings/phase-b-hypotheses/csv/h-new-69.json": "86d4796bc6dc2cc807565048f9ee7a1944f52bd5cc434e847481351d6bd56fb3",
+    "findings/phase-b-hypotheses/scripts/h-new-2550.py": "87aeabfff8c25d4563e77db1f9b5f59d202f824fb33a08e1606f2febe3c7264a"
+  },
+  "seed": 20260509,
+  "seed_replication": 20260519,
+  "n_subsets_exact": 40116600,
+  "n_distinct_profiles": 7887764,
+  "muqattaat": {
+    "n_loci": 30,
+    "n_surahs": 29,
+    "surahs": [
+      2,
+      3,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      20,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      36,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      50,
+      68
+    ],
+    "letters": [
+      "ا",
+      "ح",
+      "ر",
+      "س",
+      "ص",
+      "ط",
+      "ع",
+      "ق",
+      "ك",
+      "ل",
+      "م",
+      "ن",
+      "ه",
+      "ي"
+    ],
+    "mass_share": 0.744107969167292,
+    "coords": {
+      "mahmusa": 5,
+      "shadida": 4,
+      "mutbaqa": 2,
+      "mustaliya": 3,
+      "qalqala": 2,
+      "top14": 10,
+      "G1": 6,
+      "G5": 7,
+      "G7": 2,
+      "sonorant": 5,
+      "dotless": 11,
+      "pharyngeal": 4,
+      "bayniyya": 5
+    },
+    "max_jaccard": 0.4
+  },
+  "zamakhshari_stated_counts": {
+    "mahmusa": 5,
+    "majhura": 9,
+    "shadida": 4,
+    "rikhwa": 10,
+    "mutbaqa": 2,
+    "munfatiha": 12,
+    "mustaliya": 3,
+    "munkhafida": 11,
+    "qalqala": 2
+  },
+  "declared_properties": {
+    "P1": {
+      "n": 12252240,
+      "p": 0.30541571319603356,
+      "desc": "mahmusa (voiceless, 10) split at floor: |S n f| = 5",
+      "source": "al-Zamakhshari, al-Kashshaf ad Q 2:1 PageV01P028-029; H-NEW-2550 T-A; H-NEW-69 G4",
+      "mw7_capped": false
+    },
+    "P2": {
+      "n": 12932920,
+      "p": 0.3223832528180354,
+      "desc": "shadida (stops, 8) split at floor: |S n f| = 4",
+      "source": "al-Zamakhshari, al-Kashshaf ad Q 2:1; H-NEW-2550 T-A",
+      "mw7_capped": false
+    },
+    "P3": {
+      "n": 16224936,
+      "p": 0.40444444444444444,
+      "desc": "mutbaqa (emphatic, 4) split at floor: |S n f| = 2",
+      "source": "al-Zamakhshari, al-Kashshaf ad Q 2:1; H-NEW-2550 T-A; H-NEW-69 G8",
+      "mw7_capped": false
+    },
+    "P4": {
+      "n": 24690120,
+      "p": 0.6154589371980677,
+      "desc": "mustaliya (raised, 7) split at floor: |S n f| in {3,4}",
+      "source": "al-Zamakhshari, al-Kashshaf ad Q 2:1; H-NEW-2550 T-A",
+      "mw7_capped": false
+    },
+    "P5": {
+      "n": 27041560,
+      "p": 0.674074074074074,
+      "desc": "qalqala (5) split at floor: |S n f| in {2,3}",
+      "source": "al-Zamakhshari, al-Kashshaf ad Q 2:1; H-NEW-2550 T-A",
+      "mw7_capped": false
+    },
+    "P6": {
+      "n": 20058300,
+      "p": 0.5,
+      "desc": "corpus letter-mass share > 0.50",
+      "source": "H-NEW-1810 T3 (threshold 0.50 pre-locked there before observation)",
+      "mw7_capped": false
+    },
+    "P7": {
+      "n": 1142975,
+      "p": 0.028491322794055328,
+      "desc": "overlap with corpus TOP14 by frequency >= 10",
+      "source": "H-NEW-1810 T2-weak; al-Suyuti, al-Itqan nawʿ 6",
+      "mw7_capped": false
+    },
+    "P8": {
+      "n": 12326826,
+      "p": 0.3072749435395821,
+      "desc": "max Jaccard against H-NEW-69's eight classical 14-cuts <= 0.400",
+      "source": "H-NEW-69 (NULL on all 8 classical 14-cuts)",
+      "mw7_capped": false
+    },
+    "P9": {
+      "n": 3304290,
+      "p": 0.0823671497584541,
+      "desc": "sonorants: |S n {r l m n w y}| >= 5",
+      "source": "H-NEW-69 post-hoc sonorant observation; H-NEW-2550 §4 T-F  [MW-7 CAPPED]",
+      "mw7_capped": true
+    },
+    "P10": {
+      "n": 36870,
+      "p": 0.0009190709083022988,
+      "desc": "dotless: |S n DOTLESS(13)| >= 11",
+      "source": "H-NEW-60 dotless preference, p=0.000919, post-hoc-noticed  [MW-7 CAPPED]",
+      "mw7_capped": true
+    },
+    "P11": {
+      "n": 1961256,
+      "p": 0.04888888888888889,
+      "desc": "pharyngeal/glottal exhaustivity: |S n {a h ' h}| = 4",
+      "source": "H-NEW-44.2.1 pharyngeal exhaustivity, PASS-DIRECTED p=0.049  [MW-7 CAPPED]",
+      "mw7_capped": true
+    }
+  },
+  "naive_independence_product_p": 2.6764086203385714e-10,
+  "naive_independence_product_n": 0.010736841405867434,
+  "joint": {
+    "W_all_11": 7,
+    "p_exact_fraction": "7/40116600",
+    "p_exact": 1.7449135769232687e-07,
+    "W_mw7_capped_P1_P8": 10677,
+    "p_mw7_capped": 0.00026614917515442485,
+    "P1_P5_balance_block": 1024500
+  },
+  "shrinkage_curves": {
+    "O1_declared": {
+      "order": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "P10",
+        "P11"
+      ],
+      "survivors": [
+        12252240,
+        3917760,
+        1524600,
+        1155216,
+        1024500,
+        512250,
+        16127,
+        10677,
+        4532,
+        21,
+        7
+      ]
+    },
+    "O2_reverse": {
+      "order": [
+        "P11",
+        "P10",
+        "P9",
+        "P8",
+        "P7",
+        "P6",
+        "P5",
+        "P4",
+        "P3",
+        "P2",
+        "P1"
+      ],
+      "survivors": [
+        1961256,
+        17340,
+        2091,
+        544,
+        184,
+        184,
+        68,
+        9,
+        9,
+        7,
+        7
+      ]
+    },
+    "O3_most_restrictive_first": {
+      "order": [
+        "P10",
+        "P7",
+        "P11",
+        "P9",
+        "P1",
+        "P8",
+        "P2",
+        "P3",
+        "P6",
+        "P4",
+        "P5"
+      ],
+      "survivors": [
+        36870,
+        2425,
+        1390,
+        746,
+        318,
+        107,
+        59,
+        29,
+        29,
+        8,
+        7
+      ]
+    },
+    "O4_least_restrictive_first": {
+      "order": [
+        "P5",
+        "P4",
+        "P6",
+        "P3",
+        "P2",
+        "P8",
+        "P1",
+        "P9",
+        "P11",
+        "P7",
+        "P10"
+      ],
+      "survivors": [
+        27041560,
+        16508700,
+        8254350,
+        4121208,
+        1685970,
+        500156,
+        319179,
+        27928,
+        48,
+        36,
+        7
+      ]
+    },
+    "O5_random_500": {
+      "order": "500 uniformly random orderings, seed 20260509",
+      "envelope": [
+        {
+          "depth": 1,
+          "min": 36870,
+          "median": 12326826,
+          "max": 27041560
+        },
+        {
+          "depth": 2,
+          "min": 2425,
+          "median": 1123902,
+          "max": 16508700
+        },
+        {
+          "depth": 3,
+          "min": 780,
+          "median": 218460,
+          "max": 8254350
+        },
+        {
+          "depth": 4,
+          "min": 169,
+          "median": 30931,
+          "max": 4121208
+        },
+        {
+          "depth": 5,
+          "min": 51,
+          "median": 3461,
+          "max": 1615860
+        },
+        {
+          "depth": 6,
+          "min": 30,
+          "median": 712,
+          "max": 833987
+        },
+        {
+          "depth": 7,
+          "min": 9,
+          "median": 145,
+          "max": 51724
+        },
+        {
+          "depth": 8,
+          "min": 7,
+          "median": 56,
+          "max": 27928
+        },
+        {
+          "depth": 9,
+          "min": 7,
+          "median": 24,
+          "max": 4532
+        },
+        {
+          "depth": 10,
+          "min": 7,
+          "median": 9,
+          "max": 36
+        },
+        {
+          "depth": 11,
+          "min": 7,
+          "median": 7,
+          "max": 7
+        }
+      ]
+    },
+    "MW7_capped_P1_P8_declared": {
+      "order": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
+      ],
+      "survivors": [
+        12252240,
+        3917760,
+        1524600,
+        1155216,
+        1024500,
+        512250,
+        16127,
+        10677
+      ]
+    }
+  },
+  "independence_matrix": [
+    {
+      "a": "P1",
+      "b": "P2",
+      "n_a": 12252240,
+      "n_b": 12932920,
+      "n_ab": 3917760,
+      "lift": 0.9918588199131185,
+      "phi": -0.003723614768064918,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P1",
+      "b": "P3",
+      "n_a": 12252240,
+      "n_b": 16224936,
+      "n_ab": 4864860,
+      "lift": 0.9817388493859082,
+      "phi": -0.009978830524614504,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P1",
+      "b": "P4",
+      "n_a": 12252240,
+      "n_b": 24690120,
+      "n_ab": 7447440,
+      "lift": 0.9876258195585926,
+      "phi": -0.01038072858719171,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P1",
+      "b": "P5",
+      "n_a": 12252240,
+      "n_b": 27041560,
+      "n_ab": 8648640,
+      "lift": 1.0471881060116355,
+      "phi": 0.04499975152673425,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P1",
+      "b": "P6",
+      "n_a": 12252240,
+      "n_b": 20058300,
+      "n_ab": 6126120,
+      "lift": 1.0,
+      "phi": 0.0,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P1",
+      "b": "P7",
+      "n_a": 12252240,
+      "n_b": 1142975,
+      "n_ab": 361740,
+      "lift": 1.0362592633858412,
+      "phi": 0.0041175146502552724,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P1",
+      "b": "P8",
+      "n_a": 12252240,
+      "n_b": 12326826,
+      "n_ab": 6819066,
+      "lift": 1.8112660674651087,
+      "phi": 0.3582858429510894,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P1",
+      "b": "P9",
+      "n_a": 12252240,
+      "n_b": 3304290,
+      "n_ab": 803880,
+      "lift": 0.7965658629795253,
+      "phi": -0.040415651601087614,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P1",
+      "b": "P10",
+      "n_a": 12252240,
+      "n_b": 36870,
+      "n_ab": 13980,
+      "lift": 1.2414883733028566,
+      "phi": 0.004856837942512989,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P1",
+      "b": "P11",
+      "n_a": 12252240,
+      "n_b": 1961256,
+      "n_ab": 640640,
+      "lift": 1.0695187165775402,
+      "phi": 0.010451398641508352,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P2",
+      "b": "P3",
+      "n_a": 12932920,
+      "n_b": 16224936,
+      "n_ab": 5105100,
+      "lift": 0.9759976865240022,
+      "phi": -0.013643178819516507,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P2",
+      "b": "P4",
+      "n_a": 12932920,
+      "n_b": 24690120,
+      "n_ab": 7829250,
+      "lift": 0.9836135148102041,
+      "phi": -0.014299082139750658,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P2",
+      "b": "P5",
+      "n_a": 12932920,
+      "n_b": 27041560,
+      "n_ab": 11085360,
+      "lift": 1.271585557299843,
+      "phi": 0.2693985164073996,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P2",
+      "b": "P6",
+      "n_a": 12932920,
+      "n_b": 20058300,
+      "n_ab": 6466460,
+      "lift": 1.0,
+      "phi": 0.0,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P2",
+      "b": "P7",
+      "n_a": 12932920,
+      "n_b": 1142975,
+      "n_ab": 379445,
+      "lift": 1.0297685647321466,
+      "phi": 0.003516292801432444,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P2",
+      "b": "P8",
+      "n_a": 12932920,
+      "n_b": 12326826,
+      "n_ab": 4023830,
+      "lift": 1.01254861870855,
+      "phi": 0.0057646536571092696,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P2",
+      "b": "P9",
+      "n_a": 12932920,
+      "n_b": 3304290,
+      "n_ab": 910910,
+      "lift": 0.8551156224181292,
+      "phi": -0.02994044653236592,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P2",
+      "b": "P10",
+      "n_a": 12932920,
+      "n_b": 36870,
+      "n_ab": 14938,
+      "lift": 1.2567440696000503,
+      "phi": 0.005371168377639395,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P2",
+      "b": "P11",
+      "n_a": 12932920,
+      "n_b": 1961256,
+      "n_ab": 680680,
+      "lift": 1.076555023923445,
+      "phi": 0.011971741298455107,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P3",
+      "b": "P4",
+      "n_a": 16224936,
+      "n_b": 24690120,
+      "n_ab": 12697776,
+      "lift": 1.2715855572998431,
+      "phi": 0.2831412518689692,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P3",
+      "b": "P5",
+      "n_a": 16224936,
+      "n_b": 27041560,
+      "n_ab": 10682256,
+      "lift": 0.9767251382158214,
+      "phi": -0.027583525003894823,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P3",
+      "b": "P6",
+      "n_a": 16224936,
+      "n_b": 20058300,
+      "n_ab": 8112468,
+      "lift": 1.0,
+      "phi": 0.0,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P3",
+      "b": "P7",
+      "n_a": 16224936,
+      "n_b": 1142975,
+      "n_ab": 292656,
+      "lift": 0.6330847131389575,
+      "phi": -0.05178059872957013,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P3",
+      "b": "P8",
+      "n_a": 16224936,
+      "n_b": 12326826,
+      "n_ab": 5182242,
+      "lift": 1.039459445139058,
+      "phi": 0.021657204454056608,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P3",
+      "b": "P9",
+      "n_a": 16224936,
+      "n_b": 3304290,
+      "n_ab": 1257048,
+      "lift": 0.9406213480916369,
+      "phi": -0.014660243140474651,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P3",
+      "b": "P10",
+      "n_a": 16224936,
+      "n_b": 36870,
+      "n_ab": 20098,
+      "lift": 1.3477856561664534,
+      "phi": 0.008692688927948874,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P3",
+      "b": "P11",
+      "n_a": 16224936,
+      "n_b": 1961256,
+      "n_ab": 755820,
+      "lift": 0.9528514963297572,
+      "phi": -0.008808980876559864,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P4",
+      "b": "P5",
+      "n_a": 24690120,
+      "n_b": 27041560,
+      "n_ab": 16508700,
+      "lift": 0.9919323426305167,
+      "phi": -0.014678104781809118,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P4",
+      "b": "P6",
+      "n_a": 24690120,
+      "n_b": 20058300,
+      "n_ab": 12345060,
+      "lift": 1.0,
+      "phi": 0.0,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P4",
+      "b": "P7",
+      "n_a": 24690120,
+      "n_b": 1142975,
+      "n_ab": 507520,
+      "lift": 0.7214684557083623,
+      "phi": -0.0603441996793733,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P4",
+      "b": "P8",
+      "n_a": 24690120,
+      "n_b": 12326826,
+      "n_ab": 7663918,
+      "lift": 1.0101840361374672,
+      "phi": 0.00858086831638059,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P4",
+      "b": "P9",
+      "n_a": 24690120,
+      "n_b": 3304290,
+      "n_ab": 1834560,
+      "lift": 0.902099997276268,
+      "phi": -0.037106793444046146,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P4",
+      "b": "P10",
+      "n_a": 24690120,
+      "n_b": 36870,
+      "n_ab": 20990,
+      "lift": 0.9249967747003665,
+      "phi": -0.002877943706306293,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P4",
+      "b": "P11",
+      "n_a": 24690120,
+      "n_b": 1961256,
+      "n_ab": 1113840,
+      "lift": 0.9227614490772384,
+      "phi": -0.022153979698343693,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P5",
+      "b": "P6",
+      "n_a": 27041560,
+      "n_b": 20058300,
+      "n_ab": 13520780,
+      "lift": 1.0,
+      "phi": 0.0,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P5",
+      "b": "P7",
+      "n_a": 27041560,
+      "n_b": 1142975,
+      "n_ab": 816385,
+      "lift": 1.0596212554041902,
+      "phi": 0.014683461165251547,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P5",
+      "b": "P8",
+      "n_a": 27041560,
+      "n_b": 12326826,
+      "n_ab": 8729187,
+      "lift": 1.0505455988587658,
+      "phi": 0.04841287006331263,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P5",
+      "b": "P9",
+      "n_a": 27041560,
+      "n_b": 3304290,
+      "n_ab": 2095080,
+      "lift": 0.9406213480916368,
+      "phi": -0.025583928583492097,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P5",
+      "b": "P10",
+      "n_a": 27041560,
+      "n_b": 36870,
+      "n_ab": 29390,
+      "lift": 1.182548127218591,
+      "phi": 0.007962435272807987,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P5",
+      "b": "P11",
+      "n_a": 27041560,
+      "n_b": 1961256,
+      "n_ab": 1259700,
+      "lift": 0.9528514963297571,
+      "phi": -0.015372755791276643,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P6",
+      "b": "P7",
+      "n_a": 20058300,
+      "n_b": 1142975,
+      "n_ab": 1123902,
+      "lift": 1.9666256917255407,
+      "phi": 0.16553555855288027,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P6",
+      "b": "P8",
+      "n_a": 20058300,
+      "n_b": 12326826,
+      "n_ab": 5545788,
+      "lift": 0.8997917225407416,
+      "phi": -0.06674007990092319,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P6",
+      "b": "P9",
+      "n_a": 20058300,
+      "n_b": 3304290,
+      "n_ab": 3083223,
+      "lift": 1.866193947867772,
+      "phi": 0.25951214519726334,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P6",
+      "b": "P10",
+      "n_a": 20058300,
+      "n_b": 36870,
+      "n_ab": 33989,
+      "lift": 1.8437211825332247,
+      "phi": 0.02559016745934697,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P6",
+      "b": "P11",
+      "n_a": 20058300,
+      "n_b": 1961256,
+      "n_ab": 1589443,
+      "lift": 1.6208419502604454,
+      "phi": 0.1407571647756453,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P7",
+      "b": "P8",
+      "n_a": 1142975,
+      "n_b": 12326826,
+      "n_ab": 240744,
+      "lift": 0.685474957473991,
+      "phi": -0.03587329919856053,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P7",
+      "b": "P9",
+      "n_a": 1142975,
+      "n_b": 3304290,
+      "n_ab": 495055,
+      "lift": 5.258509732312888,
+      "phi": 0.21849079828072604,
+      "relation": "NOT INDEPENDENT"
+    },
+    {
+      "a": "P7",
+      "b": "P10",
+      "n_a": 1142975,
+      "n_b": 36870,
+      "n_ab": 2425,
+      "lift": 2.3084793404276605,
+      "phi": 0.006796322982920946,
+      "relation": "NOT INDEPENDENT"
+    },
+    {
+      "a": "P7",
+      "b": "P11",
+      "n_a": 1142975,
+      "n_b": 1961256,
+      "n_ab": 107976,
+      "lift": 1.9323257289092062,
+      "phi": 0.03619845960427074,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P8",
+      "b": "P9",
+      "n_a": 12326826,
+      "n_b": 3304290,
+      "n_ab": 563710,
+      "lift": 0.555201250363325,
+      "phi": -0.08875426378226167,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P8",
+      "b": "P10",
+      "n_a": 12326826,
+      "n_b": 36870,
+      "n_ab": 18469,
+      "lift": 1.6302082856693385,
+      "phi": 0.01273038122815316,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P8",
+      "b": "P11",
+      "n_a": 12326826,
+      "n_b": 1961256,
+      "n_ab": 560068,
+      "lift": 0.9293500503403198,
+      "phi": -0.010668035151912848,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P9",
+      "b": "P10",
+      "n_a": 3304290,
+      "n_b": 36870,
+      "n_ab": 6801,
+      "lift": 2.2394718067045423,
+      "phi": 0.01126298149509956,
+      "relation": "NOT INDEPENDENT"
+    },
+    {
+      "a": "P9",
+      "b": "P11",
+      "n_a": 3304290,
+      "n_b": 1961256,
+      "n_ab": 54468,
+      "lift": 0.3371732450293956,
+      "phi": -0.04502275111117351,
+      "relation": "approx independent"
+    },
+    {
+      "a": "P10",
+      "b": "P11",
+      "n_a": 36870,
+      "n_b": 1961256,
+      "n_ab": 17340,
+      "lift": 9.619794363488422,
+      "phi": 0.05927349509114645,
+      "relation": "NOT INDEPENDENT"
+    }
+  ],
+  "independence_summary": {
+    "n_nested": 0,
+    "n_not_independent": 4,
+    "effective_property_count": 11,
+    "naive_vs_true_ratio": 0.0015338344865524906
+  },
+  "rt2_tripartite": {
+    "extra_balance_properties": {
+      "bayniyya": {
+        "size": 5,
+        "in_set": 5,
+        "floor_window": [
+          2,
+          3
+        ],
+        "satisfied": false
+      },
+      "rikhw": {
+        "size": 15,
+        "in_set": 5,
+        "floor_window": [
+          7,
+          8
+        ],
+        "satisfied": false
+      }
+    },
+    "note": "both FAIL on the attested set, as pre-declared"
+  },
+  "aggregate_balance_arms": {
+    "RT-1b_T-A": {
+      "D_obs": 1.0,
+      "n": 1024500,
+      "p": 0.025538056565112696,
+      "with_P6_P11": {
+        "n": 7,
+        "p": 1.7449135769232687e-07
+      },
+      "with_P6_P8_only": {
+        "n": 10677,
+        "p": 0.00026614917515442485
+      }
+    },
+    "RT-2b_T-C": {
+      "D_obs": 6.0,
+      "n": 22333544,
+      "p": 0.5567157735201886,
+      "with_P6_P11": {
+        "n": 20,
+        "p": 4.98546736263791e-07
+      },
+      "with_P6_P8_only": {
+        "n": 108775,
+        "p": 0.0027114710618546937
+      }
+    }
+  },
+  "control": {
+    "null_medians": {
+      "top14": 7.0,
+      "sonorant": 3.0,
+      "dotless": 6.0,
+      "pharyngeal": 2.0,
+      "maxjaccard": 0.45454545454545453
+    },
+    "variants": {
+      "Control-1_direction_locked": {
+        "W_obs_under_control_rule": 7,
+        "by_seed": {
+          "20260509": {
+            "q_frac_random_at_least_as_unique": 0.005,
+            "n_random_le_W_obs": 5,
+            "W_random_min": 4,
+            "W_random_q1": 1137.0,
+            "W_random_median": 4694.0,
+            "W_random_q3": 15524.25,
+            "W_random_max": 227090,
+            "W_random_mean": 13900.771,
+            "n_random_with_W_eq_1": 0,
+            "n_random_with_W_le_10": 6,
+            "n_random_with_W_le_100": 49,
+            "declared_props_satisfied_mean": 3.337,
+            "declared_props_satisfied_max": 8,
+            "declared_props_satisfied_hist": [
+              17,
+              76,
+              204,
+              262,
+              228,
+              147,
+              46,
+              16,
+              4,
+              0,
+              0,
+              0
+            ]
+          },
+          "20260519": {
+            "q_frac_random_at_least_as_unique": 0.003,
+            "n_random_le_W_obs": 3,
+            "W_random_min": 2,
+            "W_random_q1": 1278.0,
+            "W_random_median": 4877.0,
+            "W_random_q3": 14450.5,
+            "W_random_max": 195423,
+            "W_random_mean": 13336.664,
+            "n_random_with_W_eq_1": 0,
+            "n_random_with_W_le_10": 6,
+            "n_random_with_W_le_100": 37,
+            "declared_props_satisfied_mean": 3.353,
+            "declared_props_satisfied_max": 8,
+            "declared_props_satisfied_hist": [
+              24,
+              61,
+              183,
+              280,
+              246,
+              147,
+              47,
+              11,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "Control-2_self_directed_PRIMARY": {
+        "W_obs_under_control_rule": 7,
+        "by_seed": {
+          "20260509": {
+            "q_frac_random_at_least_as_unique": 0.018,
+            "n_random_le_W_obs": 18,
+            "W_random_min": 2,
+            "W_random_q1": 176.0,
+            "W_random_median": 709.5,
+            "W_random_q3": 2467.75,
+            "W_random_max": 57966,
+            "W_random_mean": 2215.575,
+            "n_random_with_W_eq_1": 0,
+            "n_random_with_W_le_10": 27,
+            "n_random_with_W_le_100": 171,
+            "declared_props_satisfied_mean": 3.337,
+            "declared_props_satisfied_max": 8,
+            "declared_props_satisfied_hist": [
+              17,
+              76,
+              204,
+              262,
+              228,
+              147,
+              46,
+              16,
+              4,
+              0,
+              0,
+              0
+            ]
+          },
+          "20260519": {
+            "q_frac_random_at_least_as_unique": 0.012,
+            "n_random_le_W_obs": 12,
+            "W_random_min": 1,
+            "W_random_q1": 172.75,
+            "W_random_median": 621.5,
+            "W_random_q3": 2071.75,
+            "W_random_max": 46455,
+            "W_random_mean": 2150.48,
+            "n_random_with_W_eq_1": 1,
+            "n_random_with_W_le_10": 25,
+            "n_random_with_W_le_100": 161,
+            "declared_props_satisfied_mean": 3.353,
+            "declared_props_satisfied_max": 8,
+            "declared_props_satisfied_hist": [
+              24,
+              61,
+              183,
+              280,
+              246,
+              147,
+              47,
+              11,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "q_primary": 0.018,
+    "control_verdict": "CONTROL-PASSED"
+  },
+  "verdict": "JOINT-CONJUNCTION-NEAR-UNIQUE",
+  "runtime_seconds": 51.4
+}

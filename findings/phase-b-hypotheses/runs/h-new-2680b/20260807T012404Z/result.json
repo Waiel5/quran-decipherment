@@ -1,0 +1,220 @@
+{
+  "finding_id": "H-NEW-2680b",
+  "prereg_sha256": "012ca709fad64bc8369313486095cc092e30414eccf45b1eca4e1b978fd08f94",
+  "run_utc": "20260807T012404Z",
+  "seed": 20260509,
+  "note": "H-NEW-2680b — ADDENDUM to h-new-2680.py: repaired baseline-control transports.",
+  "poetry_files": [
+    "diwan-amr-ibn-kulthum.txt",
+    "diwan-antara.txt",
+    "diwan-harith.txt",
+    "diwan-imru-al-qais.txt",
+    "diwan-labid.txt",
+    "diwan-tarafa.txt",
+    "diwan-zuhayr.txt",
+    "muallaqa-amr-bin-kulthum.txt",
+    "muallaqa-antara.txt",
+    "muallaqa-harith.txt",
+    "muallaqa-imru-al-qais.txt",
+    "muallaqa-labid.txt",
+    "muallaqa-tarafa.txt",
+    "muallaqa-zuhayr.txt"
+  ],
+  "L1_repaired": {
+    "QURAN_surface": {
+      "n_hypergeom_tests": 721,
+      "n_target": 35,
+      "marker_types": [
+        "الر",
+        "حم",
+        "طسم",
+        "الم",
+        "المص",
+        "المر",
+        "سبحان",
+        "طه",
+        "طس",
+        "يس",
+        "ص",
+        "تنزيل",
+        "ق",
+        "والطور"
+      ],
+      "marker_coverage": 30,
+      "x": 27,
+      "p_raw": 6.504741042115439e-16,
+      "p_bonf": 4.689918291365232e-13,
+      "satisfied": true,
+      "marker_surahs": [
+        2,
+        3,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        20,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        36,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        50,
+        52
+      ]
+    },
+    "BL_BUKHARI": {
+      "n_hypergeom_tests": 2,
+      "n_target": 6,
+      "marker_types": [],
+      "marker_coverage": 0,
+      "x": 0,
+      "p_raw": 1.0,
+      "p_bonf": 1.0,
+      "satisfied": false,
+      "marker_surahs": []
+    },
+    "BL_POETRY": {
+      "n_hypergeom_tests": 0,
+      "n_target": 1,
+      "marker_types": [],
+      "marker_coverage": 0,
+      "x": 0,
+      "p_raw": 1.0,
+      "p_bonf": 1.0,
+      "satisfied": false,
+      "marker_surahs": []
+    }
+  },
+  "L2_contiguity_diagnostic": {
+    "QURAN_surface::source_order_contiguous": {
+      "L": 83.28871738158708,
+      "null_mean": 103.486820158355,
+      "null_sd": 1.7561139461823223,
+      "z": -11.5015900993653,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "QURAN_surface::units_shuffled_then_cut": {
+      "L": 81.04964209667212,
+      "null_mean": 90.62139098392977,
+      "null_sd": 1.0369676315031406,
+      "z": -9.230518481452394,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "BL_BUKHARI::source_order_contiguous": {
+      "L": 74.40539476123618,
+      "null_mean": 99.84806648839456,
+      "null_sd": 1.8994362847916009,
+      "z": -13.394854005302873,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "BL_BUKHARI::units_shuffled_then_cut": {
+      "L": 79.16327059372747,
+      "null_mean": 90.71325065382531,
+      "null_sd": 1.2662837940806617,
+      "z": -9.121162344562162,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "BL_POETRY::source_order_contiguous": {
+      "L": 75.35016562568617,
+      "null_mean": 96.44394321181707,
+      "null_sd": 1.4182546422951374,
+      "z": -14.873053792367777,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "BL_POETRY::units_shuffled_then_cut": {
+      "L": 78.85315497622985,
+      "null_mean": 87.7440144836728,
+      "null_sd": 0.9286535443494338,
+      "z": -9.573925132296164,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "QURAN_surface::offset_cut_ignoring_surah_seams": {
+      "L": 82.62381111909633,
+      "null_mean": 100.46957936098738,
+      "null_sd": 1.5115875755794208,
+      "z": -11.805977060277451,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    }
+  },
+  "L2_contiguity_diagnostic_QAC_roots": {
+    "real_surah_boundaries": {
+      "L": 85.75965637575258,
+      "null_mean": 104.34347524842221,
+      "null_sd": 1.6154004552102736,
+      "z": -11.504156020712898,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "offset_cut_ignoring_surah_seams": {
+      "L": 85.15337020893331,
+      "null_mean": 101.04143839296754,
+      "null_sd": 1.4141794875110025,
+      "z": -11.23483145127334,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "verses_shuffled_then_cut": {
+      "L": 85.53639318431941,
+      "null_mean": 93.58309313694127,
+      "null_sd": 0.9533373187337358,
+      "z": -8.440559070224841,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "offset_cut_37": {
+      "L": 81.37778517156657,
+      "null_mean": 101.71602047606315,
+      "null_sd": 1.5433120310202013,
+      "z": -13.178304124961725,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "offset_cut_311": {
+      "L": 87.5202411588108,
+      "null_mean": 103.43670670591312,
+      "null_sd": 1.2321348864002615,
+      "z": -12.917794733986474,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "offset_cut_1013": {
+      "L": 89.94646916497214,
+      "null_mean": 104.68460689272582,
+      "null_sd": 1.1957795292684266,
+      "z": -12.325129647243935,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    },
+    "offset_cut_2579": {
+      "L": 88.32068734716263,
+      "null_mean": 103.80637151846054,
+      "null_sd": 1.2266402940534509,
+      "z": -12.624470471392419,
+      "p": 0.0004997501249375312,
+      "satisfied": true
+    }
+  }
+}
