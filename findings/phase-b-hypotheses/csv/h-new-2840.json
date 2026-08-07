@@ -1,0 +1,1601 @@
+{
+  "id": "H-NEW-2840",
+  "date": "2026-08-07",
+  "author": "Waiel Al-Shujaa",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2840-muqattaat-structure.md",
+  "prereg_sha256": "321f7fe90f9f4f956b4ab91cf0e39179553175b895068ad69ac6d3e9c1e11c2a",
+  "prereg_commit": "bee950a31",
+  "runs": {
+    "registered": "findings/phase-b-hypotheses/runs/h-new-2840/20260807T101255Z",
+    "posthoc": "findings/phase-b-hypotheses/runs/h-new-2840-posthoc/20260807T103932Z",
+    "posthoc_genre": "findings/phase-b-hypotheses/runs/h-new-2840-posthoc-genre/20260807T104225Z"
+  },
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  },
+  "tests_in_family": 12,
+  "alpha_bonferroni": 0.004166666666666667,
+  "novelty_gate": 0.00041666666666666664,
+  "verdict_registered": {
+    "primary": "NO-SUB-STRUCTURE-ADJACENCY-EXPLAINED",
+    "replication": "NO-SUB-STRUCTURE-ADJACENCY-EXPLAINED"
+  },
+  "verdict_under_stricter_genre_reading": "NO-SUB-STRUCTURE-GENRE-SHARED-ADJACENCY-EXPLAINED",
+  "verdict_independence": "PILLAR1-DISTINCT",
+  "seed_fragile": false,
+  "reproduction": {
+    "dbar_muq29": 0.9388131231527095,
+    "published": 0.9388131231527093
+  },
+  "R1_substructure": {
+    "N_PERIOD": {
+      "S1_observed": 0.08285790820558271,
+      "null_mean": 0.11030485662805495,
+      "p_upper": 0.9069093090690931,
+      "percentile": 9.31
+    },
+    "N_SIZE5": {
+      "S1_observed": 0.08285790820558271,
+      "null_mean": 0.12948885958454584,
+      "p_upper": 0.822017798220178,
+      "percentile": 17.8
+    },
+    "N_SIZE10": {
+      "S1_observed": 0.08285790820558271,
+      "null_mean": 0.12715639050051422,
+      "p_upper": 0.8313168683131686,
+      "percentile": 16.87
+    }
+  },
+  "R2_R3_R12_delta": {
+    "R2": {
+      "primary": {
+        "delta": -0.03377754640828623,
+        "null_mean": 4.126037436688844e-05,
+        "p_lower": 0.0324967503249675
+      },
+      "replication": {
+        "delta": -0.03377754640828623,
+        "null_mean": 5.081534901440032e-05,
+        "p_lower": 0.029597040295970403
+      }
+    },
+    "R3": {
+      "primary": {
+        "delta": -0.03377754640828623,
+        "null_mean": -0.004153442351754062,
+        "p_lower": 0.0347965203479652
+      },
+      "replication": {
+        "delta": -0.03377754640828623,
+        "null_mean": -0.004583835330945508,
+        "p_lower": 0.041195880411958805
+      }
+    },
+    "R12": {
+      "primary": {
+        "delta": -0.03796365826330539,
+        "null_mean": 4.8485347579063974e-05,
+        "p_lower": 0.012598740125987402
+      },
+      "replication": {
+        "delta": -0.03796365826330539,
+        "null_mean": -2.7608413765209948e-06,
+        "p_lower": 0.0110988901109889
+      }
+    }
+  },
+  "classes_P1": {
+    "ALM": {
+      "surahs": [
+        2,
+        3,
+        29,
+        30,
+        31,
+        32
+      ],
+      "n": 6,
+      "dbar": 0.9256812,
+      "contiguous": false,
+      "N_PERIOD": {
+        "pct": 2.81,
+        "p_lower": 0.028197180281971802,
+        "p_lower_replication": 0.028697130286971302
+      },
+      "N_SIZE5_pct": 8.6,
+      "within_29_pct": 35.55,
+      "FAM_c_registered_pct": 66.12,
+      "size_conditional_adjacency_p_posthoc": 9.999000099990002e-05
+    },
+    "ALR": {
+      "surahs": [
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "n": 5,
+      "dbar": 0.9551825,
+      "contiguous": false,
+      "N_PERIOD": {
+        "pct": 79.31,
+        "p_lower": 0.7931206879312068,
+        "p_lower_replication": 0.7863213678632137
+      },
+      "N_SIZE5_pct": 40.61,
+      "within_29_pct": 66.01,
+      "FAM_c_registered_pct": 82.21,
+      "size_conditional_adjacency_p_posthoc": 0.5594440555944405
+    },
+    "TSM": {
+      "surahs": [
+        26,
+        28
+      ],
+      "n": 2,
+      "dbar": 0.953709,
+      "contiguous": false,
+      "N_PERIOD": {
+        "pct": 62.02,
+        "p_lower": 0.6202379762023797,
+        "p_lower_replication": 0.6207379262073792
+      },
+      "N_SIZE5_pct": 49.17,
+      "within_29_pct": 58.53,
+      "FAM_c_registered_pct": 79.06,
+      "size_conditional_adjacency_p_posthoc": 0.393960603939606
+    },
+    "HM": {
+      "surahs": [
+        40,
+        41,
+        43,
+        44,
+        45,
+        46
+      ],
+      "n": 6,
+      "dbar": 0.8570372666666667,
+      "contiguous": false,
+      "N_PERIOD": {
+        "pct": 0.08,
+        "p_lower": 0.0008999100089991,
+        "p_lower_replication": 0.0010998900109989002
+      },
+      "N_SIZE5_pct": 0.03,
+      "within_29_pct": 0.81,
+      "FAM_c_registered_pct": 47.27,
+      "size_conditional_adjacency_p_posthoc": 9.999000099990002e-05
+    }
+  },
+  "classes_P2": {
+    "ALM": {
+      "surahs": [
+        2,
+        3,
+        29,
+        30,
+        31,
+        32
+      ],
+      "dbar": 0.9256812,
+      "N_PERIOD_pct": 2.81
+    },
+    "ALR": {
+      "surahs": [
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "dbar": 0.9551825,
+      "N_PERIOD_pct": 79.31
+    },
+    "TAWASIN": {
+      "surahs": [
+        26,
+        27,
+        28
+      ],
+      "dbar": 0.9056673333333333,
+      "N_PERIOD_pct": 35.73
+    },
+    "HAWAMIM": {
+      "surahs": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "dbar": 0.8672422857142857,
+      "N_PERIOD_pct": 0.3
+    }
+  },
+  "R8_vocabulary": {
+    "n_tested_roots": 411,
+    "max_abs_z_observed": 8.672342538682225,
+    "N_PERIOD_p_upper": 0.4026597340265973,
+    "bh_surviving_N_PERIOD": 0,
+    "bh_surviving_size_blind_posthoc": 19,
+    "bh_surviving_N_SIZE5_posthoc": 0
+  },
+  "R9_singletons": {
+    "mean_pctile_one_off": 76.77833333333334,
+    "mean_pctile_class_members": 50.27347826086957,
+    "gap": 26.50485507246377,
+    "two_sided_p": 0.054594540545945404,
+    "note": "two-sided by pre-registration; direction was not locked"
+  },
+  "R10_R11_ablation": {
+    "R10_narrow": {
+      "excluded": [
+        "ktb",
+        "qrA"
+      ],
+      "rebuilt_full_N_PERIOD_pct": 5.48,
+      "ablated_N_PERIOD_pct": 6.01,
+      "rebuilt_full_N_SIZE5_pct": 0.43,
+      "ablated_N_SIZE5_pct": 0.44
+    },
+    "R11_wide": {
+      "excluded": [
+        "ktb",
+        "qrA",
+        "tlw",
+        "nzl",
+        "Ayy",
+        "*kr",
+        "wHy",
+        "frq"
+      ],
+      "rebuilt_full_N_PERIOD_pct": 5.48,
+      "ablated_N_PERIOD_pct": 6.94,
+      "rebuilt_full_N_SIZE5_pct": 0.43,
+      "ablated_N_SIZE5_pct": 0.66
+    }
+  },
+  "null_overlap_posthoc": {
+    "N_PERIOD": {
+      "mean_overlap": 16.3162,
+      "sd": 1.7196840673010645,
+      "min": 10,
+      "max": 23,
+      "median": 16.0,
+      "n_group": 29,
+      "frac_of_group": 0.5626275862068965
+    },
+    "N_SIZE5": {
+      "mean_overlap": 14.165,
+      "sd": 1.8682944233726229,
+      "min": 8,
+      "max": 21,
+      "median": 14.0,
+      "n_group": 29,
+      "frac_of_group": 0.48844827586206896
+    },
+    "N_SIZE10": {
+      "mean_overlap": 14.9898,
+      "sd": 1.8162670075141094,
+      "min": 8,
+      "max": 23,
+      "median": 15.0,
+      "n_group": 29,
+      "frac_of_group": 0.5168896551724138
+    },
+    "N_PUB_size_blind": {
+      "mean_overlap": 7.3717,
+      "sd": 2.032129933150565,
+      "min": 1,
+      "max": 15,
+      "frac_of_group": 0.2541965517241379
+    }
+  },
+  "genre_whole_set": {
+    "quran_surface": {
+      "dbar_matched_pct_median": 4.8,
+      "delta_F1_p_median": 0.005997001499250375,
+      "S1_matched_p_median": 0.800599700149925
+    },
+    "bukhari": {
+      "dbar_matched_pct_median": 43.325,
+      "delta_F1_p_median": 0.0064967516241879065,
+      "S1_matched_p_median": 0.5259870064967516
+    },
+    "jahiz": {
+      "dbar_matched_pct_median": 36.625,
+      "delta_F1_p_median": 0.00974512743628186,
+      "S1_matched_p_median": 0.48625687156421793
+    }
+  },
+  "genre_fraction_corrections": {
+    "bukhari": {
+      "frac_dbar_pct_at_or_below_quran_root_CORRECTED": 0.1,
+      "as_reported_in_results_json_WRONG_REFERENCE": 0.14,
+      "reference_that_should_have_been_used": 5.48,
+      "frac_delta_p_below_alpha_bon": 0.465,
+      "frac_delta_p_at_or_below_quran": 0.5
+    },
+    "jahiz": {
+      "frac_dbar_pct_at_or_below_quran_root_CORRECTED": 0.08,
+      "as_reported_in_results_json_WRONG_REFERENCE": 0.155,
+      "reference_that_should_have_been_used": 5.48,
+      "frac_delta_p_below_alpha_bon": 0.41,
+      "frac_delta_p_at_or_below_quran": 0.45
+    }
+  },
+  "genre_per_class_posthoc": {
+    "bukhari": {
+      "ALM_6": {
+        "n": 200,
+        "min": 0.0,
+        "median": 18.55,
+        "max": 96.3,
+        "quran_surface_pct": 1.0,
+        "frac_at_or_below_quran": 0.105,
+        "frac_at_or_below_10pct": 0.38,
+        "frac_at_or_below_1pct": 0.105
+      },
+      "ALR_5": {
+        "n": 200,
+        "min": 0.0,
+        "median": 10.75,
+        "max": 95.15,
+        "quran_surface_pct": 37.0,
+        "frac_at_or_below_quran": 0.755,
+        "frac_at_or_below_10pct": 0.495,
+        "frac_at_or_below_1pct": 0.225
+      },
+      "TSM_2": {
+        "n": 200,
+        "min": 0.95,
+        "median": 32.375,
+        "max": 100.0,
+        "quran_surface_pct": 67.95,
+        "frac_at_or_below_quran": 0.835,
+        "frac_at_or_below_10pct": 0.195,
+        "frac_at_or_below_1pct": 0.01
+      },
+      "HM_6": {
+        "n": 200,
+        "min": 0.0,
+        "median": 4.025,
+        "max": 96.9,
+        "quran_surface_pct": 0.3,
+        "frac_at_or_below_quran": 0.215,
+        "frac_at_or_below_10pct": 0.625,
+        "frac_at_or_below_1pct": 0.315
+      },
+      "HAWAMIM_7": {
+        "n": 200,
+        "min": 0.0,
+        "median": 3.675,
+        "max": 96.1,
+        "quran_surface_pct": 3.2,
+        "frac_at_or_below_quran": 0.475,
+        "frac_at_or_below_10pct": 0.675,
+        "frac_at_or_below_1pct": 0.315
+      },
+      "TAWASIN_3": {
+        "n": 200,
+        "min": 0.0,
+        "median": 7.85,
+        "max": 89.95,
+        "quran_surface_pct": 35.65,
+        "frac_at_or_below_quran": 0.85,
+        "frac_at_or_below_10pct": 0.565,
+        "frac_at_or_below_1pct": 0.215
+      },
+      "MUQ_29": {
+        "n": 200,
+        "min": 0.0,
+        "median": 43.15,
+        "max": 95.4,
+        "quran_surface_pct": 4.8,
+        "frac_at_or_below_quran": 0.08,
+        "frac_at_or_below_10pct": 0.155,
+        "frac_at_or_below_1pct": 0.02
+      }
+    },
+    "jahiz": {
+      "ALM_6": {
+        "n": 200,
+        "min": 0.0,
+        "median": 16.375,
+        "max": 86.0,
+        "quran_surface_pct": 1.0,
+        "frac_at_or_below_quran": 0.13,
+        "frac_at_or_below_10pct": 0.39,
+        "frac_at_or_below_1pct": 0.13
+      },
+      "ALR_5": {
+        "n": 200,
+        "min": 0.0,
+        "median": 12.024999999999999,
+        "max": 93.95,
+        "quran_surface_pct": 37.0,
+        "frac_at_or_below_quran": 0.77,
+        "frac_at_or_below_10pct": 0.465,
+        "frac_at_or_below_1pct": 0.175
+      },
+      "TSM_2": {
+        "n": 200,
+        "min": 0.95,
+        "median": 33.775,
+        "max": 97.8,
+        "quran_surface_pct": 67.95,
+        "frac_at_or_below_quran": 0.85,
+        "frac_at_or_below_10pct": 0.12,
+        "frac_at_or_below_1pct": 0.015
+      },
+      "HM_6": {
+        "n": 200,
+        "min": 0.0,
+        "median": 4.85,
+        "max": 98.3,
+        "quran_surface_pct": 0.3,
+        "frac_at_or_below_quran": 0.195,
+        "frac_at_or_below_10pct": 0.615,
+        "frac_at_or_below_1pct": 0.32
+      },
+      "HAWAMIM_7": {
+        "n": 200,
+        "min": 0.0,
+        "median": 2.75,
+        "max": 98.3,
+        "quran_surface_pct": 3.2,
+        "frac_at_or_below_quran": 0.52,
+        "frac_at_or_below_10pct": 0.665,
+        "frac_at_or_below_1pct": 0.39
+      },
+      "TAWASIN_3": {
+        "n": 200,
+        "min": 0.0,
+        "median": 8.850000000000001,
+        "max": 86.55,
+        "quran_surface_pct": 35.65,
+        "frac_at_or_below_quran": 0.86,
+        "frac_at_or_below_10pct": 0.545,
+        "frac_at_or_below_1pct": 0.125
+      },
+      "MUQ_29": {
+        "n": 200,
+        "min": 0.05,
+        "median": 36.85,
+        "max": 99.95,
+        "quran_surface_pct": 4.8,
+        "frac_at_or_below_quran": 0.065,
+        "frac_at_or_below_10pct": 0.175,
+        "frac_at_or_below_1pct": 0.01
+      }
+    }
+  },
+  "queued_sets_discharged_posthoc": {
+    "ALMR_extended_6": {
+      "surahs": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "dbar": 0.9466956666666667,
+      "size_blind_pct": 52.93,
+      "N_PERIOD_pct": 49.17,
+      "source": "H-NEW-600 §9 queued as H-NEW-620"
+    },
+    "ALM_tight_block_4": {
+      "surahs": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "dbar": 0.9159156666666665,
+      "size_blind_pct": 36.8,
+      "N_PERIOD_pct": 33.67,
+      "source": "H-NEW-600 §9 queued as H-NEW-630; al-Biqai Nazm al-Durar \"tight Meccan block\""
+    },
+    "ALM_6_published": {
+      "surahs": [
+        2,
+        3,
+        29,
+        30,
+        31,
+        32
+      ],
+      "dbar": 0.9256812,
+      "size_blind_pct": 41.89,
+      "N_PERIOD_pct": 2.81,
+      "source": "H-NEW-600 PRIMARY, published %ile 43.15"
+    },
+    "ALR_5_published": {
+      "surahs": [
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "dbar": 0.9551825,
+      "size_blind_pct": 55.92,
+      "N_PERIOD_pct": 79.31,
+      "source": "H-NEW-610 PRIMARY, published %ile 56.25"
+    },
+    "HM_7": {
+      "surahs": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "dbar": 0.8672422857142857,
+      "size_blind_pct": 19.62,
+      "N_PERIOD_pct": 0.3,
+      "source": "H-NEW-570 MW-5, published %ile 20.90"
+    },
+    "MW6_nonmuq_6": {
+      "surahs": [
+        5,
+        9,
+        17,
+        25,
+        33,
+        47
+      ],
+      "dbar": 1.0129062666666666,
+      "size_blind_pct": 87.54,
+      "N_PERIOD_pct": 93.49,
+      "source": "H-NEW-600 MW-6, published %ile 88.10"
+    }
+  },
+  "descriptive": {
+    "S1": 0.08285790820558271,
+    "S1_best_k": 2,
+    "S2": 0.012941438080785295,
+    "silhouette_by_k": {
+      "2": 0.08285790820558271,
+      "3": 0.054800417446493103,
+      "4": 0.05770197577154049,
+      "5": 0.0511988350741332
+    },
+    "cuts": {
+      "2": {
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "10": 0,
+        "11": 0,
+        "12": 1,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "19": 0,
+        "20": 0,
+        "26": 1,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 0,
+        "36": 0,
+        "38": 0,
+        "40": 0,
+        "41": 0,
+        "42": 0,
+        "43": 0,
+        "44": 0,
+        "45": 0,
+        "46": 0,
+        "50": 0,
+        "68": 0
+      },
+      "3": {
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "10": 0,
+        "11": 0,
+        "12": 1,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "19": 0,
+        "20": 0,
+        "26": 2,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 0,
+        "36": 0,
+        "38": 0,
+        "40": 0,
+        "41": 0,
+        "42": 0,
+        "43": 0,
+        "44": 0,
+        "45": 0,
+        "46": 0,
+        "50": 0,
+        "68": 0
+      },
+      "4": {
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "10": 0,
+        "11": 0,
+        "12": 1,
+        "13": 0,
+        "14": 0,
+        "15": 2,
+        "19": 2,
+        "20": 2,
+        "26": 3,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 2,
+        "36": 2,
+        "38": 2,
+        "40": 0,
+        "41": 2,
+        "42": 0,
+        "43": 2,
+        "44": 2,
+        "45": 0,
+        "46": 2,
+        "50": 2,
+        "68": 2
+      },
+      "5": {
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "10": 0,
+        "11": 0,
+        "12": 1,
+        "13": 0,
+        "14": 0,
+        "15": 2,
+        "19": 2,
+        "20": 3,
+        "26": 4,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 2,
+        "36": 2,
+        "38": 2,
+        "40": 0,
+        "41": 2,
+        "42": 0,
+        "43": 2,
+        "44": 2,
+        "45": 0,
+        "46": 2,
+        "50": 2,
+        "68": 2
+      },
+      "6": {
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "10": 0,
+        "11": 0,
+        "12": 1,
+        "13": 0,
+        "14": 0,
+        "15": 2,
+        "19": 3,
+        "20": 4,
+        "26": 5,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 2,
+        "36": 2,
+        "38": 2,
+        "40": 0,
+        "41": 2,
+        "42": 0,
+        "43": 2,
+        "44": 2,
+        "45": 0,
+        "46": 2,
+        "50": 2,
+        "68": 2
+      }
+    },
+    "neighbours": {
+      "2": {
+        "nearest_in_29": 3,
+        "nearest_in_29_d": 0.63093,
+        "farthest_in_29": 68,
+        "farthest_in_29_d": 1.147777,
+        "nearest_in_114": 3,
+        "nearest_in_114_d": 0.63093,
+        "centrality": 0.9617537142857142
+      },
+      "3": {
+        "nearest_in_29": 2,
+        "nearest_in_29_d": 0.63093,
+        "farthest_in_29": 68,
+        "farthest_in_29_d": 1.192601,
+        "nearest_in_114": 2,
+        "nearest_in_114_d": 0.63093,
+        "centrality": 0.9736678928571428
+      },
+      "7": {
+        "nearest_in_29": 10,
+        "nearest_in_29_d": 0.741608,
+        "farthest_in_29": 68,
+        "farthest_in_29_d": 1.055097,
+        "nearest_in_114": 6,
+        "nearest_in_114_d": 0.720799,
+        "centrality": 0.88878375
+      },
+      "10": {
+        "nearest_in_29": 7,
+        "nearest_in_29_d": 0.741608,
+        "farthest_in_29": 68,
+        "farthest_in_29_d": 1.123642,
+        "nearest_in_114": 6,
+        "nearest_in_114_d": 0.739572,
+        "centrality": 0.9018412857142858
+      },
+      "11": {
+        "nearest_in_29": 7,
+        "nearest_in_29_d": 0.763704,
+        "farthest_in_29": 68,
+        "farthest_in_29_d": 1.097865,
+        "nearest_in_114": 7,
+        "nearest_in_114_d": 0.763704,
+        "centrality": 0.9208337142857144
+      },
+      "12": {
+        "nearest_in_29": 7,
+        "nearest_in_29_d": 0.899544,
+        "farthest_in_29": 30,
+        "farthest_in_29_d": 1.149515,
+        "nearest_in_114": 7,
+        "nearest_in_114_d": 0.899544,
+        "centrality": 1.0362392142857142
+      },
+      "13": {
+        "nearest_in_29": 14,
+        "nearest_in_29_d": 0.783843,
+        "farthest_in_29": 26,
+        "farthest_in_29_d": 1.121296,
+        "nearest_in_114": 14,
+        "nearest_in_114_d": 0.783843,
+        "centrality": 0.9248196785714284
+      },
+      "14": {
+        "nearest_in_29": 13,
+        "nearest_in_29_d": 0.783843,
+        "farthest_in_29": 12,
+        "farthest_in_29_d": 1.075726,
+        "nearest_in_114": 13,
+        "nearest_in_114_d": 0.783843,
+        "centrality": 0.923103642857143
+      },
+      "15": {
+        "nearest_in_29": 36,
+        "nearest_in_29_d": 0.805339,
+        "farthest_in_29": 3,
+        "farthest_in_29_d": 1.076341,
+        "nearest_in_114": 51,
+        "nearest_in_114_d": 0.778775,
+        "centrality": 0.9341357857142857
+      },
+      "19": {
+        "nearest_in_29": 43,
+        "nearest_in_29_d": 0.876691,
+        "farthest_in_29": 31,
+        "farthest_in_29_d": 1.077426,
+        "nearest_in_114": 43,
+        "nearest_in_114_d": 0.876691,
+        "centrality": 0.9713714285714284
+      },
+      "20": {
+        "nearest_in_29": 7,
+        "nearest_in_29_d": 0.864988,
+        "farthest_in_29": 3,
+        "farthest_in_29_d": 1.098079,
+        "nearest_in_114": 23,
+        "nearest_in_114_d": 0.860479,
+        "centrality": 0.9738732499999999
+      },
+      "26": {
+        "nearest_in_29": 7,
+        "nearest_in_29_d": 0.832203,
+        "farthest_in_29": 31,
+        "farthest_in_29_d": 1.139767,
+        "nearest_in_114": 7,
+        "nearest_in_114_d": 0.832203,
+        "centrality": 0.99783025
+      },
+      "27": {
+        "nearest_in_29": 7,
+        "nearest_in_29_d": 0.774156,
+        "farthest_in_29": 68,
+        "farthest_in_29_d": 1.033274,
+        "nearest_in_114": 7,
+        "nearest_in_114_d": 0.774156,
+        "centrality": 0.9060272142857142
+      },
+      "28": {
+        "nearest_in_29": 7,
+        "nearest_in_29_d": 0.76191,
+        "farthest_in_29": 31,
+        "farthest_in_29_d": 1.037524,
+        "nearest_in_114": 7,
+        "nearest_in_114_d": 0.76191,
+        "centrality": 0.9249177857142856
+      },
+      "29": {
+        "nearest_in_29": 10,
+        "nearest_in_29_d": 0.792678,
+        "farthest_in_29": 68,
+        "farthest_in_29_d": 1.066909,
+        "nearest_in_114": 10,
+        "nearest_in_114_d": 0.792678,
+        "centrality": 0.9105383928571429
+      },
+      "30": {
+        "nearest_in_29": 45,
+        "nearest_in_29_d": 0.805893,
+        "farthest_in_29": 12,
+        "farthest_in_29_d": 1.149515,
+        "nearest_in_114": 45,
+        "nearest_in_114_d": 0.805893,
+        "centrality": 0.9674447857142857
+      },
+      "31": {
+        "nearest_in_29": 45,
+        "nearest_in_29_d": 0.768501,
+        "farthest_in_29": 26,
+        "farthest_in_29_d": 1.139767,
+        "nearest_in_114": 45,
+        "nearest_in_114_d": 0.768501,
+        "centrality": 0.9687922142857143
+      },
+      "32": {
+        "nearest_in_29": 41,
+        "nearest_in_29_d": 0.768379,
+        "farthest_in_29": 3,
+        "farthest_in_29_d": 1.085951,
+        "nearest_in_114": 78,
+        "nearest_in_114_d": 0.7408,
+        "centrality": 0.9031237499999999
+      },
+      "36": {
+        "nearest_in_29": 43,
+        "nearest_in_29_d": 0.787296,
+        "farthest_in_29": 3,
+        "farthest_in_29_d": 1.060755,
+        "nearest_in_114": 25,
+        "nearest_in_114_d": 0.777794,
+        "centrality": 0.9150802142857142
+      },
+      "38": {
+        "nearest_in_29": 50,
+        "nearest_in_29_d": 0.854087,
+        "farthest_in_29": 30,
+        "farthest_in_29_d": 1.081842,
+        "nearest_in_114": 78,
+        "nearest_in_114_d": 0.833107,
+        "centrality": 0.9680583571428573
+      },
+      "40": {
+        "nearest_in_29": 7,
+        "nearest_in_29_d": 0.769162,
+        "farthest_in_29": 68,
+        "farthest_in_29_d": 1.057527,
+        "nearest_in_114": 7,
+        "nearest_in_114_d": 0.769162,
+        "centrality": 0.9022623214285713
+      },
+      "41": {
+        "nearest_in_29": 46,
+        "nearest_in_29_d": 0.725446,
+        "farthest_in_29": 12,
+        "farthest_in_29_d": 1.018661,
+        "nearest_in_114": 46,
+        "nearest_in_114_d": 0.725446,
+        "centrality": 0.8726738571428572
+      },
+      "42": {
+        "nearest_in_29": 45,
+        "nearest_in_29_d": 0.801067,
+        "farthest_in_29": 26,
+        "farthest_in_29_d": 1.113933,
+        "nearest_in_114": 45,
+        "nearest_in_114_d": 0.801067,
+        "centrality": 0.946947392857143
+      },
+      "43": {
+        "nearest_in_29": 36,
+        "nearest_in_29_d": 0.787296,
+        "farthest_in_29": 3,
+        "farthest_in_29_d": 1.040107,
+        "nearest_in_114": 36,
+        "nearest_in_114_d": 0.787296,
+        "centrality": 0.913110107142857
+      },
+      "44": {
+        "nearest_in_29": 32,
+        "nearest_in_29_d": 0.797067,
+        "farthest_in_29": 3,
+        "farthest_in_29_d": 1.100658,
+        "nearest_in_114": 51,
+        "nearest_in_114_d": 0.754278,
+        "centrality": 0.948052642857143
+      },
+      "45": {
+        "nearest_in_29": 31,
+        "nearest_in_29_d": 0.768501,
+        "farthest_in_29": 12,
+        "farthest_in_29_d": 1.062865,
+        "nearest_in_114": 31,
+        "nearest_in_114_d": 0.768501,
+        "centrality": 0.8848062500000001
+      },
+      "46": {
+        "nearest_in_29": 41,
+        "nearest_in_29_d": 0.725446,
+        "farthest_in_29": 12,
+        "farthest_in_29_d": 1.040895,
+        "nearest_in_114": 41,
+        "nearest_in_114_d": 0.725446,
+        "centrality": 0.8879293571428573
+      },
+      "50": {
+        "nearest_in_29": 32,
+        "nearest_in_29_d": 0.815166,
+        "farthest_in_29": 3,
+        "farthest_in_29_d": 1.158943,
+        "nearest_in_114": 78,
+        "nearest_in_114_d": 0.764829,
+        "centrality": 0.9816713214285714
+      },
+      "68": {
+        "nearest_in_29": 32,
+        "nearest_in_29_d": 0.815133,
+        "farthest_in_29": 3,
+        "farthest_in_29_d": 1.192601,
+        "nearest_in_114": 100,
+        "nearest_in_114_d": 0.715581,
+        "centrality": 1.015891
+      }
+    },
+    "singleton_placement": {
+      "2": {
+        "centrality": 0.9617537142857142,
+        "pctile_matched": 32.79,
+        "pctile_matched_excl_other28": 24.61,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          3,
+          7,
+          29
+        ],
+        "nn3_families": [
+          "ALM"
+        ],
+        "bridge": false,
+        "p1_class": "ALM",
+        "p1_one_off": false,
+        "n_donors_literal": 9,
+        "word_count": 6140.0,
+        "medinan": true
+      },
+      "3": {
+        "centrality": 0.9736678928571428,
+        "pctile_matched": 32.81,
+        "pctile_matched_excl_other28": 25.43,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          2,
+          40,
+          29
+        ],
+        "nn3_families": [
+          "ALM",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "ALM",
+        "p1_one_off": false,
+        "n_donors_literal": 9,
+        "word_count": 3501.0,
+        "medinan": true
+      },
+      "7": {
+        "centrality": 0.88878375,
+        "pctile_matched": 23.77,
+        "pctile_matched_excl_other28": 16.39,
+        "label": "INSIDE",
+        "nn3": [
+          10,
+          28,
+          11
+        ],
+        "nn3_families": [
+          "ALR",
+          "TSM"
+        ],
+        "bridge": true,
+        "p1_class": "ALMS",
+        "p1_one_off": false,
+        "n_donors_literal": 13,
+        "word_count": 3341.0,
+        "medinan": false
+      },
+      "10": {
+        "centrality": 0.9018412857142858,
+        "pctile_matched": 38.13,
+        "pctile_matched_excl_other28": 16.42,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          7,
+          27,
+          29
+        ],
+        "nn3_families": [
+          "ALM"
+        ],
+        "bridge": false,
+        "p1_class": "ALR",
+        "p1_one_off": false,
+        "n_donors_literal": 13,
+        "word_count": 1839.0,
+        "medinan": false
+      },
+      "11": {
+        "centrality": 0.9208337142857144,
+        "pctile_matched": 62.51,
+        "pctile_matched_excl_other28": 66.57,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          7,
+          10,
+          29
+        ],
+        "nn3_families": [
+          "ALM",
+          "ALR"
+        ],
+        "bridge": true,
+        "p1_class": "ALR",
+        "p1_one_off": false,
+        "n_donors_literal": 13,
+        "word_count": 1946.0,
+        "medinan": false
+      },
+      "12": {
+        "centrality": 1.0362392142857142,
+        "pctile_matched": 100.0,
+        "pctile_matched_excl_other28": 100.0,
+        "label": "OUTSIDE",
+        "nn3": [
+          7,
+          27,
+          28
+        ],
+        "nn3_families": [
+          "TSM"
+        ],
+        "bridge": false,
+        "p1_class": "ALR",
+        "p1_one_off": false,
+        "n_donors_literal": 13,
+        "word_count": 1795.0,
+        "medinan": false
+      },
+      "13": {
+        "centrality": 0.9248196785714284,
+        "pctile_matched": 0.0,
+        "pctile_matched_excl_other28": 0.0,
+        "label": "INSIDE",
+        "nn3": [
+          14,
+          40,
+          41
+        ],
+        "nn3_families": [
+          "ALR",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "ALMR",
+        "p1_one_off": false,
+        "n_donors_literal": 4,
+        "word_count": 853.0,
+        "medinan": true
+      },
+      "14": {
+        "centrality": 0.923103642857143,
+        "pctile_matched": 68.67,
+        "pctile_matched_excl_other28": 71.17,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          13,
+          40,
+          42
+        ],
+        "nn3_families": [
+          "HM"
+        ],
+        "bridge": false,
+        "p1_class": "ALR",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 830.0,
+        "medinan": false
+      },
+      "15": {
+        "centrality": 0.9341357857142857,
+        "pctile_matched": 78.92,
+        "pctile_matched_excl_other28": 71.94,
+        "label": "OUTSIDE",
+        "nn3": [
+          36,
+          43,
+          32
+        ],
+        "nn3_families": [
+          "ALM",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "ALR",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 657.0,
+        "medinan": false
+      },
+      "19": {
+        "centrality": 0.9713714285714284,
+        "pctile_matched": 94.92,
+        "pctile_matched_excl_other28": 85.86,
+        "label": "OUTSIDE",
+        "nn3": [
+          43,
+          46,
+          41
+        ],
+        "nn3_families": [
+          "HM"
+        ],
+        "bridge": false,
+        "p1_class": "KHYAS",
+        "p1_one_off": true,
+        "n_donors_literal": 19,
+        "word_count": 971.0,
+        "medinan": false
+      },
+      "20": {
+        "centrality": 0.9738732499999999,
+        "pctile_matched": 84.34,
+        "pctile_matched_excl_other28": 83.32,
+        "label": "OUTSIDE",
+        "nn3": [
+          7,
+          41,
+          43
+        ],
+        "nn3_families": [
+          "HM"
+        ],
+        "bridge": false,
+        "p1_class": "TH",
+        "p1_one_off": true,
+        "n_donors_literal": 13,
+        "word_count": 1353.0,
+        "medinan": false
+      },
+      "26": {
+        "centrality": 0.99783025,
+        "pctile_matched": 92.27,
+        "pctile_matched_excl_other28": 100.0,
+        "label": "OUTSIDE",
+        "nn3": [
+          7,
+          15,
+          36
+        ],
+        "nn3_families": [
+          "ALR"
+        ],
+        "bridge": false,
+        "p1_class": "TSM",
+        "p1_one_off": false,
+        "n_donors_literal": 13,
+        "word_count": 1320.0,
+        "medinan": false
+      },
+      "27": {
+        "centrality": 0.9060272142857142,
+        "pctile_matched": 42.31,
+        "pctile_matched_excl_other28": 14.47,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          7,
+          10,
+          28
+        ],
+        "nn3_families": [
+          "ALR",
+          "TSM"
+        ],
+        "bridge": true,
+        "p1_class": "TS",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 1159.0,
+        "medinan": false
+      },
+      "28": {
+        "centrality": 0.9249177857142856,
+        "pctile_matched": 61.21,
+        "pctile_matched_excl_other28": 67.76,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          7,
+          27,
+          10
+        ],
+        "nn3_families": [
+          "ALR"
+        ],
+        "bridge": false,
+        "p1_class": "TSM",
+        "p1_one_off": false,
+        "n_donors_literal": 13,
+        "word_count": 1438.0,
+        "medinan": false
+      },
+      "29": {
+        "centrality": 0.9105383928571429,
+        "pctile_matched": 46.21,
+        "pctile_matched_excl_other28": 29.2,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          10,
+          45,
+          11
+        ],
+        "nn3_families": [
+          "ALR",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "ALM",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 978.0,
+        "medinan": false
+      },
+      "30": {
+        "centrality": 0.9674447857142857,
+        "pctile_matched": 95.13,
+        "pctile_matched_excl_other28": 85.32,
+        "label": "OUTSIDE",
+        "nn3": [
+          45,
+          10,
+          40
+        ],
+        "nn3_families": [
+          "ALR",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "ALM",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 817.0,
+        "medinan": false
+      },
+      "31": {
+        "centrality": 0.9687922142857143,
+        "pctile_matched": 100.0,
+        "pctile_matched_excl_other28": 100.0,
+        "label": "OUTSIDE",
+        "nn3": [
+          45,
+          13,
+          14
+        ],
+        "nn3_families": [
+          "ALR",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "ALM",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 550.0,
+        "medinan": false
+      },
+      "32": {
+        "centrality": 0.9031237499999999,
+        "pctile_matched": 14.74,
+        "pctile_matched_excl_other28": 9.97,
+        "label": "INSIDE",
+        "nn3": [
+          41,
+          45,
+          46
+        ],
+        "nn3_families": [
+          "HM"
+        ],
+        "bridge": false,
+        "p1_class": "ALM",
+        "p1_one_off": false,
+        "n_donors_literal": 14,
+        "word_count": 372.0,
+        "medinan": false
+      },
+      "36": {
+        "centrality": 0.9150802142857142,
+        "pctile_matched": 58.27,
+        "pctile_matched_excl_other28": 42.65,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          43,
+          15,
+          41
+        ],
+        "nn3_families": [
+          "ALR",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "YS",
+        "p1_one_off": true,
+        "n_donors_literal": 19,
+        "word_count": 730.0,
+        "medinan": false
+      },
+      "38": {
+        "centrality": 0.9680583571428573,
+        "pctile_matched": 94.71,
+        "pctile_matched_excl_other28": 85.91,
+        "label": "OUTSIDE",
+        "nn3": [
+          50,
+          32,
+          43
+        ],
+        "nn3_families": [
+          "ALM",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "SAD",
+        "p1_one_off": true,
+        "n_donors_literal": 19,
+        "word_count": 735.0,
+        "medinan": false
+      },
+      "40": {
+        "centrality": 0.9022623214285713,
+        "pctile_matched": 38.19,
+        "pctile_matched_excl_other28": 16.84,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          7,
+          13,
+          10
+        ],
+        "nn3_families": [
+          "ALR"
+        ],
+        "bridge": false,
+        "p1_class": "HM",
+        "p1_one_off": false,
+        "n_donors_literal": 13,
+        "word_count": 1226.0,
+        "medinan": false
+      },
+      "41": {
+        "centrality": 0.8726738571428572,
+        "pctile_matched": 5.15,
+        "pctile_matched_excl_other28": 0.0,
+        "label": "INSIDE",
+        "nn3": [
+          46,
+          32,
+          45
+        ],
+        "nn3_families": [
+          "ALM",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "HM",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 794.0,
+        "medinan": false
+      },
+      "42": {
+        "centrality": 0.946947392857143,
+        "pctile_matched": 89.41,
+        "pctile_matched_excl_other28": 71.3,
+        "label": "OUTSIDE",
+        "nn3": [
+          45,
+          14,
+          13
+        ],
+        "nn3_families": [
+          "ALR",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "HM-ASQ",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 860.0,
+        "medinan": false
+      },
+      "43": {
+        "centrality": 0.913110107142857,
+        "pctile_matched": 52.56,
+        "pctile_matched_excl_other28": 28.84,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          36,
+          15,
+          41
+        ],
+        "nn3_families": [
+          "ALR",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "HM",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 836.0,
+        "medinan": false
+      },
+      "44": {
+        "centrality": 0.948052642857143,
+        "pctile_matched": 35.49,
+        "pctile_matched_excl_other28": 30.08,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          32,
+          15,
+          45
+        ],
+        "nn3_families": [
+          "ALM",
+          "ALR",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "HM",
+        "p1_one_off": false,
+        "n_donors_literal": 14,
+        "word_count": 346.0,
+        "medinan": false
+      },
+      "45": {
+        "centrality": 0.8848062500000001,
+        "pctile_matched": 14.65,
+        "pctile_matched_excl_other28": 9.94,
+        "label": "INSIDE",
+        "nn3": [
+          31,
+          32,
+          41
+        ],
+        "nn3_families": [
+          "ALM",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "HM",
+        "p1_one_off": false,
+        "n_donors_literal": 14,
+        "word_count": 488.0,
+        "medinan": false
+      },
+      "46": {
+        "centrality": 0.8879293571428573,
+        "pctile_matched": 31.37,
+        "pctile_matched_excl_other28": 14.75,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          41,
+          32,
+          45
+        ],
+        "nn3_families": [
+          "ALM",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "HM",
+        "p1_one_off": false,
+        "n_donors_literal": 19,
+        "word_count": 645.0,
+        "medinan": false
+      },
+      "50": {
+        "centrality": 0.9816713214285714,
+        "pctile_matched": 57.26,
+        "pctile_matched_excl_other28": 49.61,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          32,
+          68,
+          38
+        ],
+        "nn3_families": [
+          "ALM"
+        ],
+        "bridge": false,
+        "p1_class": "QAF",
+        "p1_one_off": true,
+        "n_donors_literal": 14,
+        "word_count": 373.0,
+        "medinan": false
+      },
+      "68": {
+        "centrality": 1.015891,
+        "pctile_matched": 71.17,
+        "pctile_matched_excl_other28": 60.08,
+        "label": "INTERMEDIATE",
+        "nn3": [
+          32,
+          50,
+          44
+        ],
+        "nn3_families": [
+          "ALM",
+          "HM"
+        ],
+        "bridge": true,
+        "p1_class": "NUN",
+        "p1_one_off": true,
+        "n_donors_literal": 14,
+        "word_count": 301.0,
+        "medinan": false
+      }
+    }
+  },
+  "notes": [
+    "The N_PERIOD matched null overlaps the observed 29 by 16.32 members on average (56.3%); every matched NULL here is weak evidence of absence.",
+    "FAM_c_registered is size-confounded (rho=+0.838 with run mean log word count) and is superseded by size_conditional_adjacency_p_posthoc.",
+    "The hawamim are the contiguous mushaf run 40-46; 47.5-52.0% of matched baseline partitions reach the Quran's own value at the same slots.",
+    "Not an independent confirmation of Pillar 1 under any label: same 29 surahs, same corpus."
+  ]
+}
