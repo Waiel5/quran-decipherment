@@ -296,7 +296,32 @@ the scanned space, and in one geometry (E3b) it is measurably under-produced.**
 
 ---
 
-## 7. Instrument controls (MW-6) — all fail-fast, all passed
+## 7. MW-1 … MW-7 compliance
+
+- **MW-1 (instrument-prior)** — the five types, 23 axes, 156 classes, 14 metrics, 8 target
+  functions, 5 location functions, both nulls, both Bonferroni thresholds, the MECHANICAL
+  screen, the EXCESS direction lock and all four verdict vocabularies were fixed and
+  SHA-locked before a single coincidence was counted.
+- **MW-2 (corpus-prior)** — **every per-hit denominator in all 124,148 candidates is an
+  exact closed form**, not a sample. E1's and E2's are exact by construction; E3a/E3c's
+  full cell-level null distributions are exact rook-polynomial inclusion–exclusion in
+  rational arithmetic; E3b's is an exact monochromatic-pair enumeration; E4's expectations
+  under both nulls are exact. Only three quantities are sampled, each at the
+  **10,000,000 draws** the pre-registration specifies (E1 family, E3b guard) — 1,000× the
+  Protocol §7.1 minimum — or at 10⁶ with the deviation disclosed in §10 (E4 tails).
+- **MW-3 (alternative models)** — three rules-tuples, all reported, none dropped; two nulls
+  for E4; every family test reported over both the full cell set and the decoupled stratum.
+- **MW-4 (over-fitting)** — no fitted parameters anywhere. No statistic in this finding has
+  a free constant.
+- **MW-5 (replication)** — full re-run at seed 20260519 reproduces every headline quantity
+  identically and every sampled quantity to 3–4 decimals (§7.1 below). Every exact quantity
+  is seed-independent by construction and needs no replication at all.
+- **MW-6 (instrument-control)** — all fail-fast at runtime; see below.
+- **MW-7 (post-hoc cap)** — the one post-hoc diagnostic (the ρ < 0.40 stratum in §4 E1) is
+  reported with **no p-value**, adds **no cell**, and cannot produce a survivor. Type E5's
+  corpus constants were pre-emptively placed in this category and carry no inference.
+
+### Instrument controls (MW-6) — all fail-fast, all passed
 
 - **Decoy axis A23** (seeded uniform random, participating in every E1 and E2 cell):
   **0 hits in 264 cells against 2.32 expected.** The instrument does not inflate.
@@ -309,6 +334,24 @@ the scanned space, and in one geometry (E3b) it is measurably under-produced.**
 - **H-NEW-2090 replication**: cells 1, 2 and 6 reproduced exactly — 0 hits, 1 hit (Q 30),
   0 hits — *and* the exact rook-polynomial expectations reproduce its 10,000-permutation
   null means to three decimals.
+
+### 7.1 Replication (MW-5) — seed 20260519, full re-run
+
+Every headline quantity is identical, and every sampled quantity agrees to 3–4 decimals:
+
+| quantity | primary (20260509) | replication (20260519) |
+|:--|--:|--:|
+| K_candidates / K_cells | 124,148 / 663 | **124,148 / 663** |
+| total exact hits | 1,581 | **1,581** |
+| by family E1/E2/E3a/E3b/E3c/E4 | 223/147/385/30/239/557 | **223/147/385/30/239/557** |
+| MECHANICAL / CBM / **SURVIVORS** | 671 / 910 / **0** | 671 / 910 / **0** |
+| cell EXCESS (all mechanical) / DEFICIT | 13 / 432 | 13 / 432 |
+| E1 decoupled family p (T-ROOT) | 0.039450 | 0.039396 |
+| decoy hits / cells | 0 / 264 | 0 / 264 |
+| **verdict** | **HUNT-NULL** | **HUNT-NULL** |
+
+Largest seed-to-seed disagreement anywhere: **1.4 × 10⁻³** (E4 N2, T-LEMMA `last sūra`),
+and **3.1 × 10⁻⁴** across all 42 E3b 10⁷-draw guards. Wall time 1,090 s and 1,022 s.
 - **Exact-engine validation**: both the hit-distribution engine and the mirror-pair engine
   were validated against **full brute-force enumeration of every permutation** on 10
   randomised small cases before the real run; every probability matched as an exact
@@ -410,10 +453,12 @@ which is arithmetic.
     α_cell = 7.5 × 10⁻⁵, and no E4 cell is anywhere near it — every E4 result is a deficit
     or at-chance under N2. The reduced budget cannot change any verdict, and pre-reg §5
     had already established that no E4 hit can survive at the per-hit level.
-- **Run directory retained, not deleted:** `2026-08-07T013054Z` (superseded — halted
-  mid-flight when the constructional-screen defect was found) is kept alongside the four
-  development runs and the final primary and replication runs, per the project's standing
-  no-deletion rule.
+- **Run directory retained, not deleted:** `2026-08-07T012704Z` — the first full-budget
+  primary attempt, **halted mid-flight** when the constructional-screen defect above was
+  found — is kept, empty of results and superseded, alongside the four development runs
+  (`…012036Z-SMOKE`, `…012515Z-SMOKE2`, `…012626Z-SMOKE3`, `…013021Z-SMOKE4`) and the two
+  runs this finding reports (`…013054Z` primary, `…014905Z-REPLICATION`). Seven
+  directories, none deleted, per the project's standing no-deletion rule.
 - **Alternatives considered and discarded before the lock:** location functions with a
   deterministic order relation to the count (`n_distinct_surahs ≤ count`) were rejected
   *before* the run precisely because a coincidence there would be mechanical; lām-alif as

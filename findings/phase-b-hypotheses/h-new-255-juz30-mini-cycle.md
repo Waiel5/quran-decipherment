@@ -16,6 +16,21 @@ rules_tuple: "(no-tashkeel, QAC-STEM root tokens K=500, QAC v0.4, Dirichlet α=0
 
 # [[h-new-255-juz30-mini-cycle|H-NEW-255]] — Juzʾ 30 mini-ring test
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07
+>
+> **The arithmetic here is not retracted.** What fell is the inference drawn from the Fisher-Rao
+> permutation null. Under the project's first genre control (`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`),
+> al-Bukhārī scores **z = −13.84** and pre-Islamic poetry **z = −15.13** against the Qurʾān's
+> **z = −11.50** on an instrument-matched pipeline, and both baselines sit closer to their own TSP
+> optima. Cutting this corpus's own verse stream into 114 blocks of the same size profile at offsets
+> that ignore every surah seam gives z = −11.23 to −13.18. **Length-sorting alone reaches z = −8.66**
+> (H-NEW-111's write-up mis-transcribed that anchor as 107.27; its own `csv/h-new-111.json` records
+> 91.03 / 90.30). The mushaf's honest margin over pure length is **2.80 σ**, not 11.46 σ.
+> The *relative* claim survives — mushaf 85.76 < Nöldeke 87.23 < Tanzil 89.53.
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## Headline
 
 **Juzʾ 30 (Q 78..Q 114, 37 short-mufaṣṣal surahs) is a

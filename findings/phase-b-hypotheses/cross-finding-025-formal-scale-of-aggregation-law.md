@@ -8,6 +8,28 @@ verdict: 3/3 scale-of-aggregation flips CONFIRMED — principle locked at corpus
 
 # Cross-finding-025 (FORMAL) — Scale-of-aggregation as a methodological axis: pericope-scale flip law
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: this law does not discriminate
+>
+> **Nothing below is deleted and all five flips reproduce.** What did not survive is the reading of
+> the flip as a property of *this* corpus.
+>
+> - Given five best-shot marker classes each, **pre-Islamic poetry flips 5/5 and al-Bukhārī flips
+>   4/5** under the identical test. The poetry classes are ordinary content words (`عبلة` —
+>   ʿAntara's beloved; `عبس`); the Bukhārī ones are jurisprudential vocabulary (`الماء`, `الإمام`).
+> - The mechanism is **topical burstiness**, which every text has — and which this project already
+>   identified as the substrate (H-NEW-2330, cited in `cf-026-formal`).
+> - The statistic is **mathematically invariant under every redactional randomisation** (marker
+>   labels, reading order, title assignment — verified 25/25), so it contributes exactly zero to any
+>   conjunction of the pillar laws: L1∧L2∧L3 = L1∧L2 identically.
+>
+> **What still stands:** the methodological rule. Test at the scale where structure operates; a
+> whole-surah NULL is not a terminal verdict. That rule is sound and remains project discipline.
+> **What must stop:** reporting a pericope flip as evidence that the Qurʾān is structurally unusual.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md` §7. Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## The principle, formally stated
 
 > **Cohesion verdicts in the Quran corpus are jointly determined by the triple `(marker-thickness × scale-of-aggregation × instrument)`. Pre-registration of a cluster-cohesion test MUST specify all three dimensions. Discrepant verdicts across different aggregation scales are first-class findings, not contradictions.**

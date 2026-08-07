@@ -11,6 +11,24 @@ verdict: PASS-DIRECTED (whole-surah NULL → pericope-window PASS — flip confi
 
 # H-NEW-1520 — yā-ayyuhā al-nabī prophet-vocative pericope-scale flip test
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07
+>
+> **This finding's own numbers reproduce exactly and are not retracted.** What was corrected is the
+> law it feeds. Under the project's first genre control (`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`), the
+> pericope-flip test applied to five best-shot marker classes flips **5/5 on pre-Islamic poetry and
+> 4/5 on al-Bukhārī** — length-matched 114-block partitions, instrument-matched pipeline. The
+> mechanism is topical burstiness, which every text has and which this project already identified
+> (H-NEW-2330). The statistic is additionally **invariant under every redactional randomisation**
+> (marker labels, reading order, titles — verified 25/25), so it carries no weight in any conjunction
+> of the pillar laws.
+>
+> **The pericope-scale rule remains correct methodology** — a whole-surah NULL is not a terminal
+> verdict, and re-testing at the scale where structure operates is still project discipline.
+> **What must stop is citing a flip as evidence that this corpus is structurally unusual.**
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## Headline
 
 The 13 yā-ayyuhā al-nabī attestations — when re-tested at the **3-verse pericope-window scale** that captures the divine directive following each vocative — cohere on root-Jaccard at **J_mean = 0.1260 vs null = 0.0488 ± 0.0120, z = +6.41, p_perm < 10⁻⁴ (0/10,000 perms ≥ observed)**.

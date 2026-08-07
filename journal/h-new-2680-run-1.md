@@ -44,6 +44,15 @@ Two smoke runs at reduced N are preserved under `runs/h-new-2680-SMOKE/`. **No r
 
 An independent rebuild of the H-NEW-111 pipeline (reproducing L_mushaf, L_Nöldeke and the null to four decimals) shows that `h-new-111-fisher-rao-mushaf.md` mis-transcribes its length-sorted sanity anchor as 107.27 for both directions. Its own `csv/h-new-111.json` records 91.027805 / 90.301441, which the rebuild reproduces exactly. The write-up's conclusion "confirms MW-1 length control is working" is false: length-sorted descending is z = −8.66, and the mushaf's margin over pure length-sorting is 2.80 σ. **Flagged, not edited — correcting another finding's file is the ledger keeper's call.** See `h-new-2680-pillar-conjunction.md` §8.1.
 
+## Concurrent work that lands on the same material
+
+Two adjacent lines of work landed while this test ran, and both are integrated into the finding rather than ignored:
+
+- **`h-new-2710-title-density-retest.md`** withdrew and replaced Pillar 4 (H-NEW-1820), citing this study's D4 diagnostic as the prior art that triggered it. Its Null B matches candidate title-roots on **frequency *and* dispersion** where D4 matched on frequency alone, and it refines D4's rate ratio 1.68 down to **1.285**, with median rank indistinguishable (p = 0.76). **That is the tighter control and it supersedes D4's effect size**; the *direction* (dependence, not independence) agrees across both. Recorded in §9.1 of the finding. The conjunction now has three standing pillars, not four.
+- **`h-new-2670-joint-conjunction.md`** reached ARTEFACT-OF-CONSTRAINT-STACKING on the muqaṭṭaʿāt subset-intersection question (W = 7 / 40 116 600, p = 1.745×10⁻⁷ under the locked rule; q′ = 0.248 under a stricter post-observation control). Convergent methodological conclusion from the opposite end; cross-referenced in §13.
+
+Also noted: commit `30f05aeb1` (another line of work) swept this study's pre-registration and main script into the repository before the results landed. Not done by this line of work, and it does not affect the SHA-lock — the pre-reg hash `012ca709…` is embedded in all three scripts and verified at runtime by each.
+
 ## Outputs
 
 - Finding: `findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`

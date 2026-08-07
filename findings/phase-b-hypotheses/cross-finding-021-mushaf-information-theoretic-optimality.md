@@ -34,6 +34,31 @@ closes: OQ-15 (descriptive layer of the complete equation)
 
 # [[cross-finding-021-mushaf-information-theoretic-optimality|cross-finding-021]] — The Mushaf is Information-Theoretically Optimal
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: this result does not discriminate
+>
+> **Nothing below is deleted and none of its arithmetic is wrong.** L_mushaf = 85.760 reproduces
+> exactly on an independent rebuild. What did not survive is the inference that the z-score is
+> evidence of design, and it failed a control that should have been run years earlier.
+>
+> - **Both baseline corpora score MORE extreme than the Qurʾān.** Cut into 114 pseudo-surahs
+>   matching the Qurʾān's length profile and measured on an instrument-matched pipeline:
+>   al-Bukhārī **z = −13.84**, pre-Islamic poetry **z = −15.13**, Qurʾān **z = −11.50**. Their
+>   optimality ratios (1.073, 1.093) are *better* than the mushaf's (1.130).
+> - **The surah seams contribute nothing detectable.** Cutting the Qurʾān's own verse stream into
+>   114 blocks of the same size profile at offsets that ignore every surah boundary gives
+>   z = −11.23, −13.18, −12.92, −12.33, −12.62.
+> - **Length alone reaches z = −8.66.** The mushaf's margin over a pure length-sorted ordering is
+>   **2.80 σ**, not 11.46 σ. (Spearman(mushaf position, verse count) = −0.846.)
+>
+> **What still stands:** the *relative* comparison, which never used the random null — the mushaf
+> is a shorter Fisher-Rao traversal than either reconstructed chronology (85.76 < 87.23 Nöldeke
+> < 89.53 Tanzil). Cite that, with the 2.80 σ margin. **Do not cite "11.46 σ below random" as
+> evidence of design.**
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md` §7–8. Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## 1. Abstract
 
 **The canonical 114-surah mushaf ordering is measurably more information-theoretically coherent than ANY classical or modern reconstructed chronology of the Qurʾān**, at ≥ 3 independent feature spaces (QAC-STEM roots, character-4-grams, verse-length histograms, plus a non-parametric NCD-lzma axis), at BOTH path-level (open Hamiltonian traversal) AND ring-level (closed Hamiltonian cycle), with a **decomposable structural residual** whose 11% non-geodesic excess concentrates at exactly 15 pre-committed structural boundaries (15/15 triple-feature replicated, hypergeometric p = 4.78×10⁻⁶). Four independently-published academic chronologies — Nöldeke 1860, Egyptian Standard 1924, Bell 1937, Blachère 1947 — are **ALL beaten** by the mushaf on Fisher-Rao root-path length, spanning both "style-sorted" (Nöldeke/Bell) and "length-sorted" (Egyptian/Blachère) chronology schools. The mushaf's superiority is not an artefact of any single feature, metric, or benchmark; it converges across ≥ 10 independent axes of evidence and is **robust under the strongest replication discipline the project can apply**. This effectively closes **OQ-15's DESCRIPTIVE LAYER**: the 1,400-year Islamic-scholarship debate over whether mushaf order is *tawqīfī* (divinely-ordered) vs arbitrary is empirically decided at the structural level — the canonical order is neither arbitrary nor a chronology-approximation; it is a **structured information-geometric geodesic ring**. We make no theological claim; the descriptive fact stands on its own.

@@ -13,6 +13,21 @@ verdict: OQ-15 CAUSAL-GENERATIVE-LAYER = CONFIRMED (Bonferroni-protected α_bon=
 
 # [[cross-finding-023-causal-generative-closure|Cross-Finding-023]] — OQ-15 Causal-Generative Layer CONFIRMED
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07
+>
+> **The arithmetic here is not retracted.** What fell is the inference drawn from the Fisher-Rao
+> permutation null. Under the project's first genre control (`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`),
+> al-Bukhārī scores **z = −13.84** and pre-Islamic poetry **z = −15.13** against the Qurʾān's
+> **z = −11.50** on an instrument-matched pipeline, and both baselines sit closer to their own TSP
+> optima. Cutting this corpus's own verse stream into 114 blocks of the same size profile at offsets
+> that ignore every surah seam gives z = −11.23 to −13.18. **Length-sorting alone reaches z = −8.66**
+> (H-NEW-111's write-up mis-transcribed that anchor as 107.27; its own `csv/h-new-111.json` records
+> 91.03 / 90.30). The mushaf's honest margin over pure length is **2.80 σ**, not 11.46 σ.
+> The *relative* claim survives — mushaf 85.76 < Nöldeke 87.23 < Tanzil 89.53.
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## 1. Headline
 
 **The 4-principle equation of [[cross-finding-020-the-complete-equation|cross-finding-020]], when augmented with the top-100 canonical Fisher-Rao hinges as hard-adjacency constraints, generatively reproduces the empirical mushaf across all 4 pre-committed observables.** [[h-new-236-1b-mufassal-terminal-mechanism|H-NEW-236.1b]] landed 4/4 PASS at Bonferroni-protected α_bon = 0.0125 (k = 4). This is the first Wave-5 full-pass adjudication.

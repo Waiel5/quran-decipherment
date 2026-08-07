@@ -13,6 +13,8 @@ pre_reg_sha256: see JSON
 
 # [[h-new-222-more-chronologies|H-NEW-222]] — Additional classical chronologies under Fisher-Rao
 
+> **⛔ Correction 2026-08-07.** This file cites one or more of the three pillar laws that did not survive the project's first genre control. **Pillar 2 (Fisher-Rao geodesic)** and **Pillar 3 (pericope-flip / scale-of-aggregation)** are satisfied by length-matched partitions of al-Bukhārī and of pre-Islamic poetry — poetry more extremely than the Qurʾān on Pillar 2 (z = −15.13 vs −11.50) and 5/5 on Pillar 3. **Pillar 4 (title-density)** was withdrawn and replaced by `h-new-2710-title-density-retest.md`. **Pillar 1 (muqaṭṭaʿāt) stands.** The individual computations cited here are not retracted; their reading as evidence that this corpus is unusual is. See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
 ## Result
 
 Under the Fisher-Rao distance matrix D from [[h-new-111-fisher-rao-mushaf|H-NEW-111]] (QAC STEM roots, top-500,

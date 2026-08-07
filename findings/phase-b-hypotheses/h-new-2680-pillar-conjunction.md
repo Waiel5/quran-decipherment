@@ -15,8 +15,12 @@ status: >-
   baseline control shows 3 of the 4 laws are satisfied by pre-Islamic poetry.
 verdict: >-
   CONJUNCTION SUBSTANTIALLY COLLAPSES. Only Pillar 1 survives the genre control.
-  Pillar 2's magnitude is an artefact of textual contiguity. Pillar 4's published
-  framing has no reference distribution and is corrected here.
+  Pillar 2's magnitude is an artefact of block size and textual contiguity, and a
+  published sanity anchor of H-NEW-111 is mis-transcribed against its own JSON.
+  Pillar 3 is invariant under every redactional null and is exhibited by both baselines.
+  Pillar 4 was withdrawn independently during this session; the conjunction now has
+  three standing pillars, not four.
+related: [h-new-2670-joint-conjunction, h-new-2710-title-density-retest, h-new-111-fisher-rao-mushaf, cross-finding-008, cross-finding-025-formal, cross-finding-026-formal]
 ---
 
 # H-NEW-2680 — What is the joint improbability of the four pillar laws holding of one book?
@@ -24,6 +28,8 @@ verdict: >-
 ## Headline
 
 **A defensible single joint null does exist.** It is not either of the two pre-registered ones; it is their composition (NULL-C, §4). Under it all four pillar laws are simultaneously valid, non-degenerate test statistics, and **0 of 2 000 synthetic corpora satisfy all four** — but that is a statement about simulation resolution, not about the corpus: `p_joint < 5×10⁻⁴` (rule-of-three 95 % upper bound 1.5×10⁻³), and it cannot be pushed lower by any feasible amount of compute, because **a single one of the four laws already reduces the survivor count to zero**.
+
+> **Status note added on completion.** While this test was running, Pillar 4 (`h-new-1820`) was **withdrawn** by a separate line of work and replaced by [[h-new-2710-title-density-retest]], which cites this study's D4 diagnostic as the prior art that triggered the withdrawal and then refines it (§9.1). **The conjunction therefore now has three standing pillars, not four.** Everything below reports L4 as tested, because that is what the pre-registration locked; the finding is strengthened, not weakened, by the withdrawal.
 
 Three findings matter more than the number.
 
@@ -254,7 +260,21 @@ Two separate problems, both pre-registered as reportable.
 | 5th / 50th / 95th percentile | 21 / 26 / 31 |
 | draws reaching 43 | **0 / 2 000** (p = 5.0×10⁻⁴) |
 
-**Against the only principled reference, the Qurʾān's titles are strongly density-*dependent*, at roughly +5.5 σ.** H-NEW-1820's 48/89 count is correct; its reading as "independence" is an artefact of comparing to an unstated 100 % prior rather than to a null. The corpus sits far above chance, not at it. Pillar 4 should be restated as *partial* title–density alignment (48 % rank-1 against ~29 % expected), not as independence.
+**Against a principled reference, the Qurʾān's titles are density-*dependent*, not independent**: 43 observed against 25.7 expected, a rate ratio of 1.68 at +5.5 σ. The "p ≈ 50:50" reading is an artefact of comparing to an unstated 100 % prior rather than to a null. The corpus does not sit at chance.
+
+### 9.1 Superseded in the same session — read with H-NEW-2710
+
+D4 is not the last word and should not be cited as one. While this test was running, `h-new-1820` was **withdrawn** and replaced by **`h-new-2710-title-density-retest.md`**, which runs the same question with a *tighter* control: D4 matches candidate title-roots on corpus **frequency** only, whereas H-NEW-2710's Null B matches on **frequency and dispersion** — a root concentrates where its topic is discussed, and that must be conditioned on. Under that control:
+
+| control | expected rank-1 | observed | rate ratio |
+|---|--:|--:|--:|
+| naive uniform (~1/114) | ≈ 1 | 42–43 | huge — the original "independence" law is **wrong** |
+| **D4 (this test)** — frequency-matched, own-vocabulary | 25.7 | 43 | **1.68** |
+| **H-NEW-2710 Null B** — frequency **and dispersion** matched | 32.7 | 42 | **1.285** |
+
+H-NEW-2710 further finds median rank statistically indistinguishable from its null (2 vs 2.24, p = 0.76). **Its verdict — that the residual is topicality, and that "strongly dependent" is refuted at 1.285× — supersedes D4's 1.68.** D4's number is not wrong; its null was the weaker of the two, and the direction it established (dependence, not independence) is the direction H-NEW-2710 confirms and then quantifies down. That agreement across two independently pre-registered controls is worth more than either alone.
+
+**Consequence for this study.** The pillar count is now **three, not four**. Everything in §§3–6 about L4 stands as a description of how a withdrawn criterion behaved — and it corroborates the withdrawal from a different direction: a criterion that *every* synthetic corpus fails from below, in all four nulls and both seeds, was never a design-direction constraint.
 
 ---
 
@@ -285,7 +305,8 @@ Two separate problems, both pre-registered as reportable.
 5. **L1's baseline failure is partly a content fact, not a design fact.** The baselines fail L1 largely because they have almost no self-referential book-vocabulary at unit openings (target sets of 6 and 1). "Only scripture talks about itself as a book" is a weaker claim than "only the Qurʾān has an engineered marker system", and this test does not separate the two.
 6. **L3 was operationalised on 5 classes, not 6**, per `cf-026-formal`'s retirement of the ring-composition member. Using 6 would have tested a member the project has already withdrawn.
 7. **Tail-level independence was verified at the criterion level (α = 0.05), not at the published extremity**, except for L1 × L2 under NULL-A where independence is exact by construction and needs no verification.
-8. **No claim is made that any pillar law is wrong.** L1's hypergeometric, L2's path length, L3's five flips and L4's 48/89 all reproduce. What is challenged is (i) that they may be multiplied, (ii) that L2's σ measures design, (iii) that L4 means independence, and (iv) that the conjunction is Qurʾān-specific.
+8. **No claim is made here that any pillar law's arithmetic is wrong.** L1's hypergeometric, L2's path length and L3's five flips all reproduce, and L4's rank-1 headcount reproduces to within one surah on tie-handling (43 here against the published 42; the separate `48/89` figure was itself withdrawn during this session as an invalid cross-metric substitution — see §9.1). What is challenged is (i) that the four may be multiplied, (ii) that L2's σ measures design, (iii) that L4 meant independence, and (iv) that the conjunction is Qurʾān-specific.
+9. **L4's arm reports a criterion that has since been withdrawn.** It is retained as pre-registered rather than deleted, because deleting it would hide the fact that a withdrawn law was one of the four the conjunction was built on.
 
 ---
 
@@ -294,8 +315,14 @@ Two separate problems, both pre-registered as reportable.
 - **`MASTER-FINDINGS-LEDGER.md` §10.72 "Four project pillar laws now LOCKED"** should carry a cross-reference to this finding. The four are not four independent constraints on one book; on the evidence here they are one discriminating constraint (Pillar 1) plus three that a partitioned dīwān also satisfies.
 - **Pillar 2** should be restated as the *relative* claim it can support — the mushaf is a shorter Fisher-Rao traversal than either reconstructed chronology, by **2.80 σ beyond a pure length-sorted baseline** — and the "z = −11.46 below random" figure should carry both the contiguity caveat of §8 and the length caveat of §8.1 wherever it is cited as evidence of design.
 - **`h-new-111-fisher-rao-mushaf.md` needs a correction notice.** Its length-sorted sanity anchor reads 107.27 for both directions; its own `csv/h-new-111.json` records 91.0278 / 90.3014, which is what the computation actually produced and what an independent rebuild reproduces. The sentence "confirms MW-1 length control is working" is false as a result and should be replaced by the correct reading: length alone reaches z = −8.66, and the mushaf's margin over pure length-sorting is 2.80 σ. Per project convention the correction gets a visible notice; nothing is silently edited. **This is not mine to apply to another finding's file — flagged for the ledger keeper.**
-- **Pillar 4 (H-NEW-1820)** should be restated as *partial title–density alignment* (48 % rank-1 vs ~29 % expected from own-vocabulary titles, +5.5 σ), not as independence. The 48/89 count itself is unchanged and correct.
+- **Pillar 4 (H-NEW-1820) — already actioned in this session, independently.** It was withdrawn and replaced by `h-new-2710-title-density-retest.md` while this test ran; the replacement cites D4 as the prior art that triggered the withdrawal and refines its 1.68 rate ratio to 1.285 under dispersion matching. Nothing further is needed here beyond recording that **the conjunction now has three pillars, not four**, and that the withdrawn one was never a design-direction constraint.
 - **Pillar 3** should carry the note that it is not a corpus-level tail event under any redactional null — it is a property of verse-level content that survives every editorial randomisation — and that both baseline corpora exhibit it.
+
+## 13. Convergent sibling result — H-NEW-2670
+
+[[h-new-2670-joint-conjunction]] asked the intersection question on a different object (which 14-letter subsets satisfy *all* declared muqaṭṭaʿāt constraints at once) and reached the same methodological conclusion by a different route. Its locked rule returned W = 7 of 40 116 600 subsets, p = 1.745×10⁻⁷, control passing narrowly at q = 0.018 — and then a **stricter post-observation control, letting each random subset pick its own axes from the same attested menu, failed at q′ = 0.248**: one random 14-subset in four becomes as "unique" as the muqaṭṭaʿāt. Its verdict is ARTEFACT-OF-CONSTRAINT-STACKING.
+
+The two studies agree on the load-bearing point from opposite ends. H-NEW-2670 shows that **stacking constraints manufactures apparent uniqueness when the constraints are chosen after looking**; H-NEW-2680 shows that **stacking laws manufactures apparent improbability when their nulls are not commensurable**. Neither the intersection count nor the p-value product is interpretable without first asking what randomisation each constraint is a tail of. Read together they are a single methodological result about conjunction reasoning in this project.
 
 ## Files
 

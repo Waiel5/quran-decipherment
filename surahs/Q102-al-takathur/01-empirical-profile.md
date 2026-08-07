@@ -10,6 +10,8 @@ verdict: integrated from h-new-111 / -590 / -700 / -720 / -750 / -840 / -1820 (e
 
 # Q 102 al-Takāthur — Empirical Profile
 
+> **⛔ Correction 2026-08-07.** This file cites one or more of the three pillar laws that did not survive the project's first genre control. **Pillar 2 (Fisher-Rao geodesic)** and **Pillar 3 (pericope-flip / scale-of-aggregation)** are satisfied by length-matched partitions of al-Bukhārī and of pre-Islamic poetry — poetry more extremely than the Qurʾān on Pillar 2 (z = −15.13 vs −11.50) and 5/5 on Pillar 3. **Pillar 4 (title-density)** was withdrawn and replaced by `h-new-2710-title-density-retest.md`. **Pillar 1 (muqaṭṭaʿāt) stands.** The individual computations cited here are not retracted; their reading as evidence that this corpus is unusual is. See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
 All values below are read directly from the on-disk artifacts. No value is asserted from memory.
 Q 102 is surah-id 102; in the 1-indexed Fisher-Rao matrix it is index 102; in the 0-indexed phoneme
 vector list (`h-new-700.json` → phoneme.phoneme_vectors) it is **index 101**.

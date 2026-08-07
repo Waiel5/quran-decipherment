@@ -18,7 +18,8 @@ You are continuing the **Quran Decipherment Project** at `/Users/grey/Downloads/
 1. `.claude/skills/quran-investigation/SKILL.md` — invoke the `quran-investigation` skill first
 2. `HANDOFF/HOW-TO-RESEARCH-THIS.md` — the methodology (read fully)
 3. `HANDOFF/SESSION-HANDOFF-2026-05-09-PM.md` — operational playbook
-4. `findings/phase-b-hypotheses/cross-finding-025-formal-scale-of-aggregation-law.md` — the central law (6/6 pericope flips)
+4. `findings/PILLAR-LAW-CORRECTION-2026-08-07.md` — **read this before any of the "laws" below**; three of the four pillars fell to the genre control on 2026-08-07
+5. `findings/phase-b-hypotheses/cross-finding-025-formal-scale-of-aggregation-law.md` — the pericope-flip rule (5 flips, not 6 — `cf-026-formal` retired the 6th). A sound *methodological* rule; **not** evidence about this corpus: poetry flips 5/5 and Bukhārī 4/5 under the same test
 5. `MASTER-FINDINGS-LEDGER.md` — the live ledger (tail = §10.81; read the recent §10.7x-10.8x entries)
 6. Memory at `/Users/grey/.claude/projects/-Users-grey-Downloads-quran/memory/` (all files)
 
@@ -27,14 +28,46 @@ You are continuing the **Quran Decipherment Project** at `/Users/grey/Downloads/
 1. **Broad instruments** — Fisher-Rao distance, clustering, TSP-geometry, UAS. Good for corpus/region/surah scale. Already mature.
 2. **Close-reading + exhaustive GENERATORS** — this is the edge. Don't test priors; **scan the whole hypothesis space, let the data surface candidates, then pre-register and null-test the survivors.** Close-reading works aya-by-aya / verse-run / within-verse — invisible to broad metrics. The generator approach is how you find things nobody told you to look for.
 
-The scale-ladder, all live: **corpus → region → surah → pericope → verse-run → verse → within-verse.** Content structure is **pericope-scoped, not surah-scoped** (cross-finding-025, 6/6 flips). When any test NULLs at one scale, re-test at the scale where the structure actually operates.
+The scale-ladder, all live: **corpus → region → surah → pericope → verse-run → verse → within-verse.** Content structure is **pericope-scoped, not surah-scoped** (cross-finding-025, 5 flips). When any test NULLs at one scale, re-test at the scale where the structure actually operates — that rule is sound and stays. **But do not report a pericope flip as evidence that this corpus is special:** the same test flips 5/5 on pre-Islamic poetry and 4/5 on al-Bukhārī (H-NEW-2680). The mechanism is topical burstiness, which every text has.
 
-## The four pillar laws (extend / refine / falsify — don't relitigate)
+## The pillar laws — ⛔ THREE OF FOUR FELL ON 2026-08-07. READ THIS BEFORE CITING ANY OF THEM.
 
-1. Muqaṭṭāʿat are book-introduction markers (p ≤ 10⁻¹²)
-2. Mushaf is information-geodesic-optimal under Fisher-Rao (z = −11.46)
-3. Scale-of-aggregation is itself a finding axis (6/6 pericope-flips)
-4. Title-density independence — ⛔ WITHDRAWN 2026-08-07 pending re-test. The 48/89 correction was invalid (cross-metric); 47/89 restored. A proper null reportedly shows title-density ASSOCIATION, the opposite of independence. See the withdrawal notice in h-new-1820. Do not cite as a law.
+> **The genre control that should have existed years ago was finally run.** Both baseline corpora
+> (al-Bukhārī, pre-Islamic dīwāns) were cut into 114 pseudo-surahs matching the Qurʾān's length
+> profile, and each law was re-run on them through an instrument-matched pipeline.
+> **Poetry satisfies 3 of the 4; al-Bukhārī satisfies 2. Only Pillar 1 discriminates.**
+> Read `findings/PILLAR-LAW-CORRECTION-2026-08-07.md` before building on any of this, and
+> `findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md` for the evidence.
+
+The original list is kept below exactly as it stood, with the correction against each item.
+
+1. **Muqaṭṭāʿat are book-introduction markers (p ≤ 10⁻¹²)** — ✅ **STANDS.** The only law neither
+   baseline satisfies. Honest qualification: the baselines have almost nothing to find (6 Bukhārī
+   and 1 poetry pseudo-surah mention *kitāb*/*qurʾān* at their openings), so the pass is partly
+   definitional rather than a fully discriminating test.
+2. ~~Mushaf is information-geodesic-optimal under Fisher-Rao (z = −11.46)~~ — ⛔ **DOES NOT
+   DISCRIMINATE.** Both baselines score MORE extreme (Bukhārī z = −13.84, poetry z = −15.13, Qurʾān
+   z = −11.50). Arbitrary cuts of the Qurʾān's own verse stream that ignore every surah seam score
+   z = −11.23 to −13.18. And length-sorting alone — no vocabulary at all — already reaches z = −8.66
+   (H-NEW-111's write-up mis-transcribes this anchor as 107.27; its own JSON says 91.03). **The
+   mushaf's honest margin over pure length-sorting is 2.80 σ, not 11.46 σ.** What still stands is
+   the relative claim: mushaf < Nöldeke < Tanzil.
+3. ~~Scale-of-aggregation is itself a finding axis (6/6 pericope-flips)~~ — ⛔ **DOES NOT
+   DISCRIMINATE.** Poetry flips 5/5, al-Bukhārī 4/5. The mechanism is topical burstiness, which
+   every text has. It also has ZERO purchase as evidence: the statistic is mathematically invariant
+   under every redactional randomisation. **Still a correct methodological rule — test at the scale
+   where structure operates — but not evidence about this corpus.** (The roster is 5, not 6:
+   `cf-026-formal` retired the ring-composition member in May.)
+4. ~~Title-density independence~~ — ⛔ **WITHDRAWN 2026-08-07**, replaced by
+   `h-new-2710-title-density-retest.md` (TOPICALITY-EXPLAINED). The 48/89 correction was invalid
+   (cross-metric); 47/89 restored as a description only. Both the original law and its proposed
+   inversion are wrong: once topicality and rarity are controlled the residual is a rate ratio of
+   1.285 and median rank is indistinguishable (p = 0.76). Do not cite as a law.
+
+**And do not multiply these p-values.** Formally established 2026-08-07: the four nulls randomise
+different things and are not commensurable. Surah-order permutation — Pillar 2's null — leaves the
+other three *exactly* unchanged. Any document that says the laws "jointly" establish something is
+asserting something now shown to be unlicensed.
 
 ## The discipline (non-negotiable)
 
@@ -121,4 +154,4 @@ Four failures were committed and self-reported in a single night. Do not repeat 
 
 ## The public-facing material needs rebuilding
 
-`EXECUTIVE-SUMMARY.html`, `THE-MAN-AT-THE-CENTER.html`, `Khawatim-al-Hashr.html` and `al-Rajul-fi-Qalb-al-Amr.html` are all dated **2026-04-12** — they predate every cross-finding law. The strongest results (mushaf order z = −11.46, muqaṭṭaʿāt p ≤ 10⁻¹², Q112 as corpus FR-centroid) are buried in a 1.2 MB ledger while the early, more obvious material is what is published. **Rebuild the public face around what has survived audit.**
+`EXECUTIVE-SUMMARY.html`, `THE-MAN-AT-THE-CENTER.html`, `Khawatim-al-Hashr.html` and `al-Rajul-fi-Qalb-al-Amr.html` are all dated **2026-04-12** — they predate every cross-finding law. The strongest results (muqaṭṭaʿāt p ≤ 10⁻¹², Q112 as corpus FR-centroid) are buried in a 1.2 MB ledger while the early, more obvious material is what is published. **Rebuild the public face around what has survived audit.** *(Correction 2026-08-07: this line previously headed that list with "mushaf order z = −11.46". That result does not survive the genre control — both baselines score more extreme — and has been removed from the list rather than left standing as a headline. See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`. The instruction to rebuild the public face around what survives audit is now more urgent, not less.)*

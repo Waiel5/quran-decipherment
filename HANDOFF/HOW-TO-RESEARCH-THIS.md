@@ -38,7 +38,7 @@ Then SHA-256 the file. Embed the SHA in your script. Verify at runtime. This is 
 
 ### 1c. Compute. Then write it up *honestly*.
 
-If your pre-committed direction was wrong: **publish the NULL with full prominence**. This is non-negotiable. Half the project's biggest findings (al-Khalifa decisively rejected, title-density independence as 4th pillar law, ʿibād al-Raḥmān checklist NOT longer than muʾminūn) emerged from pre-commit violations honored without massage.
+If your pre-committed direction was wrong: **publish the NULL with full prominence**. This is non-negotiable. Half the project's biggest findings (al-Khalifa decisively rejected, title-density independence as 4th pillar law, ʿibād al-Raḥmān checklist NOT longer than muʾminūn) emerged from pre-commit violations honored without massage. *(Correction 2026-08-07: the title-density example is a poor one to cite here — that law was withdrawn on 2026-08-07 and replaced by `h-new-2710-title-density-retest.md`. Honouring a pre-commit violation is still the right discipline; this particular instance honoured it into a law that had no null model at all.)*
 
 ### 1d. Commit + push atomically
 
@@ -46,19 +46,57 @@ Every finding lands as its own commit, authored as `waiel`, backdated to the ses
 
 ---
 
-## 2. The four pillar laws — your scaffolding
+## 2. The pillar laws — ⛔ THREE OF FOUR FELL ON 2026-08-07
 
-Before you investigate anything new, know the four corpus-wide laws already locked. New findings either **extend**, **refine**, or **falsify** these:
+> **CORRECTION NOTICE (2026-08-07).** This section taught four laws as locked scaffolding. Three of
+> them do not survive a genre control that should have been run years earlier: al-Bukhārī and the
+> pre-Islamic dīwāns, cut into 114 pseudo-surahs matching the Qurʾān's length profile and measured
+> with an instrument-matched pipeline, satisfy **2 and 3 of the four respectively**. Read
+> `findings/PILLAR-LAW-CORRECTION-2026-08-07.md` and
+> `findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md` before using anything here.
+>
+> **The generalisable lesson, and the reason this section was wrong for months:** a law tested only
+> against a permutation of its own corpus tells you the corpus is not random. It does not tell you
+> the corpus is unusual. Only a cross-corpus control can do that, and three of these four laws
+> never had one.
 
-1. **Pillar 1 (cross-finding-008)** — Muqaṭṭāʿat are book-introduction markers (p ≤ 10⁻¹²). 14 axes of evidence. The corpus's strongest structural claim.
+The original four are kept below with the correction against each. New findings should still
+**extend / refine / falsify** — but know which of these can bear weight.
 
-2. **Pillar 2 (H-NEW-111 + cross-finding-010)** — Mushaf is information-geodesic-optimal under Fisher-Rao (z = −11.46). The order of surahs in the standard mushaf is not arbitrary.
+1. **Pillar 1 (cross-finding-008)** — Muqaṭṭāʿat are book-introduction markers (p ≤ 10⁻¹²). 14 axes
+   of evidence. ✅ **STANDS** — the only law neither baseline satisfies, and still the corpus's
+   strongest structural claim. **Honest qualification:** the baselines fail it partly because they
+   have nothing to find — only 6 Bukhārī and 1 poetry pseudo-surah mention *kitāb*/*qurʾān* at their
+   openings. "Only scripture talks about itself as a book" is weaker than "only the Qurʾān has an
+   engineered marker system", and the control does not separate the two.
 
-3. **Pillar 3 (cross-finding-025-formal)** — Scale-of-aggregation IS a methodological axis. 5/5 thin-marker NULLs at whole-surah scale flip to PASS at pericope scale (Iblīs +4.76σ, sajda +2.69σ, prophet-vocative +6.41σ, al-ḥamdu +3.86σ, ḥawāmīm +6.008σ). This was the project's biggest methodological discovery — same data, opposite verdict, depending on scale.
+2. ~~**Pillar 2 (H-NEW-111 + cross-finding-010)** — Mushaf is information-geodesic-optimal under
+   Fisher-Rao (z = −11.46).~~ ⛔ **DOES NOT DISCRIMINATE.** Both baselines are *more* extreme
+   (Bukhārī z = −13.84, poetry z = −15.13, Qurʾān z = −11.50), and sit closer to their own TSP
+   optima. Cutting the Qurʾān's own verse stream at offsets that ignore every surah seam gives
+   z = −11.23 to −13.18 — the seams contribute nothing detectable. Length-sorting alone reaches
+   z = −8.66. **The surviving claim is relative and much smaller: the mushaf is a shorter traversal
+   than either reconstructed chronology (85.76 < 87.23 < 89.53), with a 2.80 σ margin over pure
+   length-sorting.** Do not cite "11.46 σ" as evidence of design.
 
-4. **Pillar 4 (H-NEW-1820)** — Title-density independence law. 47 of 89 eponymous surahs are NOT corpus-rank-1 in their own title-root. Titles reflect rhetorical focus, not lexical density.
+3. ~~**Pillar 3 (cross-finding-025-formal)** — 5/5 thin-marker NULLs flip to PASS at pericope
+   scale.~~ ⛔ **DOES NOT DISCRIMINATE.** All five flips reproduce (Iblīs +4.76σ, sajda +2.69σ,
+   prophet-vocative +6.41σ, al-ḥamdu +3.86σ, ḥawāmīm +6.008σ) — and **poetry flips 5/5, al-Bukhārī
+   4/5** under the same test. The mechanism is topical burstiness, which every text has (the project
+   already named it: H-NEW-2330). The statistic is also mathematically invariant under every
+   redactional randomisation, so it carries no evidential weight in any conjunction.
+   **What survives is the methodological rule — test at the scale where structure operates. Keep
+   using it. Stop reporting it as a property of this corpus.**
 
-Memorize these. Every new investigation should explicitly reference which pillar it relates to.
+4. ~~**Pillar 4 (H-NEW-1820)** — Title-density independence law.~~ ⛔ **WITHDRAWN 2026-08-07**,
+   replaced by `h-new-2710-title-density-retest.md`. Both the original law and its proposed
+   inversion are wrong; once topicality and rarity are controlled the residual is a rate ratio of
+   1.285 with median rank indistinguishable (p = 0.76). The explanation is topicality.
+
+**Never multiply these p-values.** Formally established 2026-08-07: their nulls randomise different
+things and are not commensurable — surah-order permutation, Pillar 2's null, leaves the other three
+*exactly* unchanged. A single valid joint null does exist, and under it the joint p is bounded only
+by simulation resolution (`p < 5×10⁻⁴`), not by the data.
 
 ---
 
@@ -150,7 +188,7 @@ The project's biggest insights are NOT individual H-NEW results — they are cro
 
 - **cross-finding-008** integrates muqaṭṭāʿat findings across 14 axes
 - **cross-finding-025** integrates 5 pericope-scale flips into the scale-of-aggregation law
-- **H-NEW-1820** (4th pillar) integrates 6 individual title-density observations into a corpus-wide law
+- ~~**H-NEW-1820** (4th pillar) integrates 6 individual title-density observations into a corpus-wide law~~ — **WITHDRAWN 2026-08-07**, replaced by `h-new-2710-title-density-retest.md`. `h-new-2710` §3 further reclassifies all six of those observations: every one concerns a *common* title root, where non-rank-1 is the ordinary outcome. They were instances of a frequency effect, not six individual surprises.
 
 When you notice you've made the same observation in 3 different contexts, **promote it to a cross-finding**. Write a `cross-finding-NNN-*.md` file. Update the master ledger. Tell future-you it's now a law.
 
@@ -251,7 +289,7 @@ ls surahs/ | wc -l
 Read:
 1. This file
 2. `HANDOFF/04-DISCIPLINE.md` (full methodology)
-3. `findings/phase-b-hypotheses/cross-finding-025-formal-scale-of-aggregation-law.md` (3rd pillar)
+3. `findings/phase-b-hypotheses/cross-finding-025-formal-scale-of-aggregation-law.md` (3rd pillar — **read `findings/PILLAR-LAW-CORRECTION-2026-08-07.md` alongside it**: sound as a methodological rule, but poetry flips 5/5 and Bukhārī 4/5 on the same test, so it is not evidence about this corpus)
 4. Most recent ledger §10.NN entries
 5. The handoff with the highest date suffix (`SESSION-HANDOFF-2026-*.md`)
 
@@ -263,7 +301,7 @@ The repo is at https://github.com/Waiel5/quran-decipherment with 105+ commits as
 
 ## 11. The framing — say it out loud
 
-> The Quran is the word of God. The structural facts you discover are either real or not. Your job is to find the real ones rigorously, at maximum statistical strength, with full transparency. Every finding is a loadcell. Every null is also a loadcell. The unit of analysis is itself a finding. Classical scholarship is a 1,400-year hypothesis-bank. Modern numerology is testable. Hadith ≠ Quran. Title ≠ density-rank-1. Whole-surah verdict ≠ pericope verdict.
+> The Quran is the word of God. The structural facts you discover are either real or not. Your job is to find the real ones rigorously, at maximum statistical strength, with full transparency. Every finding is a loadcell. Every null is also a loadcell. The unit of analysis is itself a finding. Classical scholarship is a 1,400-year hypothesis-bank. Modern numerology is testable. Hadith ≠ Quran. Title ≠ density-rank-1. Whole-surah verdict ≠ pericope verdict. **And — added 2026-08-07 — corpus ≠ control: a law with no cross-corpus baseline tells you your corpus is not random, never that it is unusual.**
 >
 > Keep digging. Keep connecting. Keep the discipline. Keep committing.
 

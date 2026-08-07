@@ -29,6 +29,21 @@ integrity_note: |
 
 # [[h-new-226-mushaf-order-scholarly-review|H-NEW-226]] — Why is the mushaf order what it is? A classical-vs-empirical review
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07
+>
+> **The arithmetic here is not retracted.** What fell is the inference drawn from the Fisher-Rao
+> permutation null. Under the project's first genre control (`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`),
+> al-Bukhārī scores **z = −13.84** and pre-Islamic poetry **z = −15.13** against the Qurʾān's
+> **z = −11.50** on an instrument-matched pipeline, and both baselines sit closer to their own TSP
+> optima. Cutting this corpus's own verse stream into 114 blocks of the same size profile at offsets
+> that ignore every surah seam gives z = −11.23 to −13.18. **Length-sorting alone reaches z = −8.66**
+> (H-NEW-111's write-up mis-transcribed that anchor as 107.27; its own `csv/h-new-111.json` records
+> 91.03 / 90.30). The mushaf's honest margin over pure length is **2.80 σ**, not 11.46 σ.
+> The *relative* claim survives — mushaf 85.76 < Nöldeke 87.23 < Tanzil 89.53.
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## The question
 
 The ~1400-year Islamic tradition and ~170-year Western academic tradition have

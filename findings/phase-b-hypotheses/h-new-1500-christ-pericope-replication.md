@@ -18,6 +18,24 @@ aggregation_scale: PERICOPE (locked verse range)
 
 # H-NEW-1500 — Christ-narrative pericope-scale flip test for H-NEW-1310 NULL
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07
+>
+> **This finding's own numbers reproduce exactly and are not retracted.** What was corrected is the
+> law it feeds. Under the project's first genre control (`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`), the
+> pericope-flip test applied to five best-shot marker classes flips **5/5 on pre-Islamic poetry and
+> 4/5 on al-Bukhārī** — length-matched 114-block partitions, instrument-matched pipeline. The
+> mechanism is topical burstiness, which every text has and which this project already identified
+> (H-NEW-2330). The statistic is additionally **invariant under every redactional randomisation**
+> (marker labels, reading order, titles — verified 25/25), so it carries no weight in any conjunction
+> of the pillar laws.
+>
+> **The pericope-scale rule remains correct methodology** — a whole-surah NULL is not a terminal
+> verdict, and re-testing at the scale where structure operates is still project discipline.
+> **What must stop is citing a flip as evidence that this corpus is structurally unusual.**
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## Headline
 
 The 9 Christ-narrative pericopes (Q 3:33-63, Q 3:64-89, Q 4:155-172, Q 5:17, Q 5:46-48, Q 5:72-75, Q 5:109-120, Q 19:16-40, Q 19:88-93) exhibit mean pairwise root-Jaccard **J_mean = 0.156031** against a length-matched null mean of **0.085168 ± 0.016671** (10,000 permutations, seed 20260509). The observed value sits at **z = +4.25** with strict one-tailed permutation **p = 0.0001** (1 of 10,000 perms ≥ observed; reportable upper bound ≤ 10⁻⁴ at this resolution).

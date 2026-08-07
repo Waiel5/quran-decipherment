@@ -18,6 +18,24 @@ rules_tuple: (no-tashkeel, QAC v0.4 ROOT, basmala-counted-only-in-Q1, Hafs-Kufan
 
 # H-NEW-1380 — Iblīs-narrative pericope cluster: CORPUS-EXTREME at pericope-scale even though host surahs do not cohere at whole-surah scale
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07
+>
+> **This finding's own numbers reproduce exactly and are not retracted.** What was corrected is the
+> law it feeds. Under the project's first genre control (`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`), the
+> pericope-flip test applied to five best-shot marker classes flips **5/5 on pre-Islamic poetry and
+> 4/5 on al-Bukhārī** — length-matched 114-block partitions, instrument-matched pipeline. The
+> mechanism is topical burstiness, which every text has and which this project already identified
+> (H-NEW-2330). The statistic is additionally **invariant under every redactional randomisation**
+> (marker labels, reading order, titles — verified 25/25), so it carries no weight in any conjunction
+> of the pillar laws.
+>
+> **The pericope-scale rule remains correct methodology** — a whole-surah NULL is not a terminal
+> verdict, and re-testing at the scale where structure operates is still project discipline.
+> **What must stop is citing a flip as evidence that this corpus is structurally unusual.**
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## 1. The headline
 
 The 7 Iblīs-narrative pericopes — Q 2:34 (refusal to prostrate), Q 7:11-25 (full creation + temptation cycle), Q 15:31-44 (refusal + permission to mislead), Q 17:61-65 (refusal + threat), Q 18:50 (Iblīs as one of the jinn), Q 20:115-123 (Adam-temptation), Q 38:71-85 (full origin + permission) — have **mean pairwise root-Jaccard J_mean = 0.1456**, against a length-matched permutation null mean **0.0650 ± 0.0169** over 10,000 draws.

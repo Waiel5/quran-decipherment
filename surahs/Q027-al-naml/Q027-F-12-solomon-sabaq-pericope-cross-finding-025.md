@@ -12,6 +12,8 @@ verdict: NULL-DIRECTIONAL — direction matches (J_obs > null_mean) but p_perm =
 
 # Q027-F-12 — Solomon-Sabaʾ pericope cohesion (cross-finding-025-formal application): NULL-DIRECTIONAL
 
+> **⛔ Correction 2026-08-07.** This file cites one or more of the three pillar laws that did not survive the project's first genre control. **Pillar 2 (Fisher-Rao geodesic)** and **Pillar 3 (pericope-flip / scale-of-aggregation)** are satisfied by length-matched partitions of al-Bukhārī and of pre-Islamic poetry — poetry more extremely than the Qurʾān on Pillar 2 (z = −15.13 vs −11.50) and 5/5 on Pillar 3. **Pillar 4 (title-density)** was withdrawn and replaced by `h-new-2710-title-density-retest.md`. **Pillar 1 (muqaṭṭaʿāt) stands.** The individual computations cited here are not retracted; their reading as evidence that this corpus is unusual is. See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
 ## Headline
 
 The two corpus-attested Solomon-Sabaʾ narrative pericopes — **Q 27:22-44** (Hudhud's Sabaʾ report + Solomon's letter + Bilqīs's throne-bringing, 23 verses) and **Q 34:15-19** (Sabaʾ's gardens, dam-burst, divine retribution, 5 verses) — exhibit **modest but not Bonferroni-strong root-Jaccard cohesion** at the pericope-scale:

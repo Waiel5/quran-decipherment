@@ -1119,11 +1119,24 @@ claim does not survive at full strength. Three feature spaces were tested:
   this feature alone, length-sorted order performs at the null-mean
   and does not distinguish mushaf from chronology.
 
-**Verdict**: The CORE Fisher-Rao mushaf-geodesic claim (cross-finding-011)
+**Verdict (2026-08-07: SUPERSEDED — see the correction block immediately below)**: The CORE Fisher-Rao mushaf-geodesic claim (cross-finding-011)
 is CONFIRMED via cross-feature replication at z ≈ −11.4 and
 ratio L_mushaf / L_2opt ≈ 1.11 on both roots (H-NEW-111) and
 char-4-grams (H-NEW-111b) — the mushaf is within 11% of TSP-optimum
 in both feature spaces, and that aspect is load-bearing.
+
+> **⛔ CORRECTION 2026-08-07 — the CORE claim is the one that fell, not the sub-claim.**
+> This entry treated the geodesic magnitude as load-bearing and the chronology-reversal as the
+> fragile part. The first genre control inverts that. **The magnitude does not discriminate:**
+> al-Bukhārī z = −13.84 and pre-Islamic poetry z = −15.13, against the Qurʾān's z = −11.50 on an
+> instrument-matched pipeline, with the baselines *closer* to their own TSP optima (1.073, 1.093
+> vs 1.130). Cutting this corpus's own verse stream at offsets that ignore every surah seam gives
+> z = −11.23 to −13.18. And `csv/h-new-111.json` shows length-sorting alone reaches z = −8.66 —
+> the write-up's 107.27 anchor was a mis-transcription and the "MW-1 length control is working"
+> conclusion built on it is false. **The mushaf's honest margin over pure length-sorting is 2.80 σ.**
+> **What survives is exactly the sub-claim this entry doubted:** the *relative* comparison —
+> mushaf 85.76 < Nöldeke 87.23 < Tanzil 89.53 — which never used the random null.
+> Evidence `findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md` §7–8.1; summary `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
 
 But the CHRONOLOGY-REVERSAL sub-claim (mushaf > Nöldeke) is
 **FEATURE-SPECIFIC to the root-distribution feature**. It does NOT

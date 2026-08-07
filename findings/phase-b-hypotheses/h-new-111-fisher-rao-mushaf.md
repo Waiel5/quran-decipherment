@@ -1,5 +1,29 @@
 # [[h-new-111-fisher-rao-mushaf|H-NEW-111]] — Fisher-Rao information-geodesic test of mushaf order
 
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: this result does not discriminate
+>
+> **The arithmetic below is exact and reproduces independently** (L_mushaf = 85.7597,
+> L_Nöldeke = 87.2321, null 104.363/1.623). Three things did not survive:
+>
+> 1. **The genre control.** Cut into 114 pseudo-surahs matching this corpus's length profile and
+>    measured on an instrument-matched pipeline, **al-Bukhārī scores z = −13.84 and pre-Islamic
+>    poetry z = −15.13, against the Qurʾān's z = −11.50.** Both baselines are more extreme, and
+>    both sit closer to their own TSP optima (1.073, 1.093) than the mushaf does to its (1.130).
+> 2. **The surah seams.** Cutting this corpus's own verse stream into 114 blocks of the same size
+>    profile at offsets that ignore every surah boundary gives z = −11.23, −13.18, −12.92, −12.33,
+>    −12.62 — four of five *more* extreme than the canonical division.
+> 3. **The MW-1 length control**, which the §Sanity-anchors correction below shows was never
+>    working: length-sorting alone reaches z = −8.66.
+>
+> **What still stands:** the relative claim — the mushaf is a shorter traversal than either
+> reconstructed chronology — with an honest margin of **2.80 σ over pure length-sorting**.
+> The uniform-random-permutation null is simply too weak to isolate design: any text read in the
+> order it exists beats a scramble of its own chunks.
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md` §7–8.1.
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 **Finding ID**: [[h-new-111-fisher-rao-mushaf|h-new-111]]
 **Date**: 2026-04-17
 **Specialist**: [[h-new-111-fisher-rao-mushaf|h-new-111]]-specialist
@@ -7,7 +31,7 @@
 **Pre-reg SHA-256**: `ea3f0ee41d413b0e2a9bfced340f7bfa12e93f40ad8c43a92a873c82856ee8c8`
 **Seed**: 20260417
 **Rules tuple**: (no-tashkeel, QAC-STEM root tokens, QAC v0.4, basmala-counted-only-in-surah-1, mushaf order, Hafs-Kūfan)
-**Verdict**: **PASS-DIRECTED** (primary + both secondaries fire extreme; pending independent replication)
+**Verdict**: ~~**PASS-DIRECTED**~~ → **DOES-NOT-DISCRIMINATE (2026-08-07)**. The computation is exact and the relative ordering claim stands; the permutation-null magnitude does not survive the cross-corpus control. See the correction notice below.
 
 ---
 
@@ -66,17 +90,40 @@ Greedy-NN from surah 1: L = 79.211, p = 1×10⁻⁴. **Positive control fires** 
 
 ### Sanity anchors (non-pre-registered)
 
-| Ordering | Path length |
-|---|---|
-| Mushaf | 85.76 |
-| Nöldeke chronology | 87.23 |
-| Tanzil revelation order | 89.53 |
-| Length-sorted ascending | 107.27 |
-| Length-sorted descending | 107.27 |
-| Null mean | 104.35 |
-| Approx TSP optimum | 77.47 |
+> **CORRECTION 2026-08-07 — the length-sorted anchor below was mis-transcribed, and the MW-1
+> conclusion drawn from it is false.** The original table read **107.27 for both** ascending and
+> descending, and the paragraph after it concluded that MW-1 length control was working. This
+> file's own JSON — `findings/phase-b-hypotheses/csv/h-new-111.json` → `sanity_anchors` — records
+> **91.027805 and 90.301441**, and an independent rebuild of the identical K=500 / α=0.5 pipeline
+> reproduces exactly those values while also reproducing L_mushaf = 85.7597, L_Nöldeke = 87.2321
+> and the null at 104.363 / 1.623. The computation was right; the write-up's transcription was
+> wrong. (The two directions being reported as *identical* is the tell: with a stable sort,
+> descending is not the exact reverse of ascending, so their path lengths cannot be equal.)
+>
+> Both the wrong and the corrected values are shown below. Nothing has been deleted.
 
-Length-sorted orderings behave approximately at null-mean (107 ≈ 104 within noise band) — confirms MW-1 length control is working: once distributions are L1-normalized, sorting by length is NOT a low-cost traversal.
+| Ordering | Path length | z vs null (mean 104.3457, sd 1.6218) |
+|---|---|---|
+| Mushaf | 85.76 | −11.46 |
+| Nöldeke chronology | 87.23 | −10.55 |
+| Tanzil revelation order | 89.53 | −9.14 |
+| ~~Length-sorted ascending — 107.27~~ → **91.03** | **91.03** | **−8.21** |
+| ~~Length-sorted descending — 107.27~~ → **90.30** | **90.30** | **−8.66** |
+| Null mean | 104.35 | 0 |
+| Approx TSP optimum | 77.47 | — |
+
+~~Length-sorted orderings behave approximately at null-mean (107 ≈ 104 within noise band) — confirms MW-1 length control is working: once distributions are L1-normalized, sorting by length is NOT a low-cost traversal.~~
+
+**Corrected reading. MW-1 length control is NOT working on this instrument.** Sorting the real
+surahs by length alone — using no vocabulary information whatever — already reaches **z = −8.66**,
+against the mushaf's −11.46. The mushaf is itself close to length-descending:
+Spearman(mushaf position, verse count) = **−0.846**. The mushaf's content beyond what pure length
+delivers is therefore **4.54 length-units = 2.80 σ**, and that residual — not 11.46 σ — is the
+honest effect size for this finding. The Nöldeke comparison (−10.55, i.e. 1.89 σ above
+length-sorted-descending) was implicitly measuring the same quantity all along.
+
+*Note on why this went unfixed for months: a transcription error that inflates your own headline
+attracts no scrutiny. The JSON was correct and on disk the entire time.*
 
 ---
 

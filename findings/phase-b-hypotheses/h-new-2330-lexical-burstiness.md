@@ -9,6 +9,8 @@ verdict: CONFIRMED (direction locked L_obs>L_null before computation)
 
 # H-NEW-2330 — Lexical burstiness: the Quran's content vocabulary is topically clumped, anchored on surah-defining roots, over a single ubiquitous spine root (rabb)
 
+> **⛔ Correction 2026-08-07.** This file cites one or more of the three pillar laws that did not survive the project's first genre control. **Pillar 2 (Fisher-Rao geodesic)** and **Pillar 3 (pericope-flip / scale-of-aggregation)** are satisfied by length-matched partitions of al-Bukhārī and of pre-Islamic poetry — poetry more extremely than the Qurʾān on Pillar 2 (z = −15.13 vs −11.50) and 5/5 on Pillar 3. **Pillar 4 (title-density)** was withdrawn and replaced by `h-new-2710-title-density-retest.md`. **Pillar 1 (muqaṭṭaʿāt) stands.** The individual computations cited here are not retracted; their reading as evidence that this corpus is unusual is. See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
 ## What was tested
 
 The complement of H-NEW-2320 (hapax = the singleton tail). Here: are the *recurring* content roots **topically clumped** — i.e. does a root, once introduced, tend to recur within a single surah rather than spread across the corpus? This is *burstiness*, measured at the surah scale. Pre-registered with direction locked before computation (pre-reg SHA-256 `7463c7e4821e0f6516892310527324b7de1d2cc65a43cf3c4a40700162b0d645`, runtime-verified; seed 20260509; 10000 simulations).

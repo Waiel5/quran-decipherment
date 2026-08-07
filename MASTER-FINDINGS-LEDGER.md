@@ -4474,6 +4474,15 @@ H-NEW-1820 joins:
 
 The 4th project pillar law: **the Quran's surah-titling system is empirically independent of its root-distribution-density peaks**. Titles are rhetorical-curatorial, not statistical-extractive.
 
+> **⛔ CORRECTION 2026-08-07.** This paragraph is superseded on both counts. **Pillar 4 itself was
+> withdrawn** on 2026-08-07 and replaced by [[h-new-2710-title-density-retest|H-NEW-2710]]: against
+> a naive null the eponymy effect is overwhelming (so "independence" is wrong), and against a null
+> matched on frequency *and* dispersion the residual is a rate ratio of 1.285 with median rank
+> indistinguishable at p = 0.76 (so the proposed inversion is wrong too). The explanation is
+> topicality. **And the roster it joined no longer holds**: under the genre control of
+> [[h-new-2680-pillar-conjunction|H-NEW-2680]], pre-Islamic poetry satisfies 3 of the 4 pillars and
+> al-Bukhārī 2 — only Pillar 1 discriminates. See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
 ## §10.64 H-NEW-1830 inline (2026-05-09) — Meccan/Medinan letter-frequency divergence: phonetic correlate of chronological development
 
 **Status**: CONFIRMED descriptive distribution; corroborates chronological-development hypothesis at letter-frequency level.
@@ -5515,10 +5524,21 @@ Q 9 al-Tawba, Q 13 al-Raʿd + Q 32 al-Sajda, Q 27 al-Naml, Q 28 al-Qaṣaṣ, Q 
 
 ### Four project pillar laws now LOCKED
 
-1. **Pillar 1 (cross-finding-008)**: muqaṭṭāʿat are introduction-marker class (p ≤ 10⁻¹²)
-2. **Pillar 2 (H-NEW-111 + cross-finding-010)**: mushaf is information-geodesic-optimal (z = −11.46)
-3. **Pillar 3 (cross-finding-025-formal)**: scale-of-aggregation methodological axis (5/5 pericope-scale flips confirmed)
-4. **Pillar 4 (H-NEW-1820)**: title-density independence law (47/89 = 52.8% of eponymous surahs NOT rank-1 in their title-root)
+> **⛔ CORRECTION 2026-08-07 — THREE OF THESE FOUR ARE NO LONGER LOAD-BEARING.** The genre control
+> was run for the first time on 2026-08-07 ([[h-new-2680-pillar-conjunction|H-NEW-2680]]):
+> al-Bukhārī and the pre-Islamic dīwāns, each cut into 114 pseudo-surahs matching this corpus's
+> verse-count and verse-length profile and measured on an **instrument-matched** pipeline.
+> **Pre-Islamic poetry satisfies 3 of the 4; al-Bukhārī satisfies 2. Only Pillar 1 discriminates.**
+> It was also formally established that **the four p-values may not be multiplied** — their nulls
+> randomise different things and are not commensurable; surah-order permutation, Pillar 2's null,
+> leaves the other three *exactly* unchanged. Canonical summary:
+> `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`. The list is kept verbatim below with the
+> correction against each item; nothing has been deleted.
+
+1. **Pillar 1 (cross-finding-008)**: muqaṭṭāʿat are introduction-marker class (p ≤ 10⁻¹²) — ✅ **STANDS.** The only law neither baseline satisfies. Honest qualification: only 6 Bukhārī and 1 poetry pseudo-surah mention *kitāb*/*qurʾān* at their openings, so there is nothing there to mark; the pass is partly definitional rather than a fully discriminating test.
+2. ~~**Pillar 2 (H-NEW-111 + cross-finding-010)**: mushaf is information-geodesic-optimal (z = −11.46)~~ — ⛔ **DOES NOT DISCRIMINATE.** Bukhārī z = −13.84, poetry z = −15.13, Qurʾān z = −11.50 (instrument-matched); both baselines closer to their own TSP optima. Offset cuts of this corpus's own verse stream ignoring every surah seam give z = −11.23 to −13.18. **Length-sorting alone reaches z = −8.66** — H-NEW-111's write-up mis-transcribed that anchor as 107.27 while its own `csv/h-new-111.json` recorded 91.03/90.30, and the "MW-1 length control is working" conclusion built on it is false. **Honest margin over pure length: 2.80 σ.** The relative claim survives: mushaf 85.76 < Nöldeke 87.23 < Tanzil 89.53.
+3. ~~**Pillar 3 (cross-finding-025-formal)**: scale-of-aggregation methodological axis (5/5 pericope-scale flips confirmed)~~ — ⛔ **DOES NOT DISCRIMINATE.** All five flips reproduce; **poetry flips 5/5 and Bukhārī 4/5** on the same test. Mechanism is topical burstiness (H-NEW-2330), which every text has. The statistic is also mathematically invariant under every redactional randomisation, so it contributes exactly zero to any conjunction. **The methodological rule stands and remains discipline; the evidential reading does not.**
+4. ~~**Pillar 4 (H-NEW-1820)**: title-density independence law (47/89 = 52.8% of eponymous surahs NOT rank-1 in their title-root)~~ — ⛔ **WITHDRAWN 2026-08-07**, replaced by [[h-new-2710-title-density-retest|H-NEW-2710]] (TOPICALITY-EXPLAINED). Both the original law and its proposed inversion are wrong; after matching on frequency *and* dispersion the residual is a rate ratio of 1.285 with median rank indistinguishable (p = 0.76). 47/89 survives as a description only.
 
 ### Revolutionary classical-claim audits this wave
 

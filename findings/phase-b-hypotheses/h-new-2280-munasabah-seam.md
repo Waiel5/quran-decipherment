@@ -11,6 +11,24 @@ rules_tuple: (no-tashkeel, QAC v0.4 ROOT, basmala-counted-only-in-Q1, Hafs-Kufan
 
 # H-NEW-2280 — al-Biqāʿī munāsabah, tested at the seam
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07
+>
+> **This finding's own numbers reproduce exactly and are not retracted.** What was corrected is the
+> law it feeds. Under the project's first genre control (`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`), the
+> pericope-flip test applied to five best-shot marker classes flips **5/5 on pre-Islamic poetry and
+> 4/5 on al-Bukhārī** — length-matched 114-block partitions, instrument-matched pipeline. The
+> mechanism is topical burstiness, which every text has and which this project already identified
+> (H-NEW-2330). The statistic is additionally **invariant under every redactional randomisation**
+> (marker labels, reading order, titles — verified 25/25), so it carries no weight in any conjunction
+> of the pillar laws.
+>
+> **The pericope-scale rule remains correct methodology** — a whole-surah NULL is not a terminal
+> verdict, and re-testing at the scale where structure operates is still project discipline.
+> **What must stop is citing a flip as evidence that this corpus is structurally unusual.**
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## The claim and where it lives
 
 Burhān al-Dīn al-Biqāʿī (d. 885/1480), *Naẓm al-durar fī tanāsub al-āyāt

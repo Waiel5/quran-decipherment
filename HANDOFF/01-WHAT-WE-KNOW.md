@@ -125,6 +125,25 @@ A compact summary of everything statistically confirmed (as of 2026-04-16). For 
 - **cross-finding-008** (Muqaṭṭāʿat as book-introduction markers) — CONFIRMED; audit-034 noted independence-inflation; tighten don't retract
 - **cross-finding-009** (META-cluster network: Q 62 hub) — CONFIRMED via H-NEW-89; REFINED 2026-04-17 via H-NEW-112 (Q 62 is spectral PEAK, not bridge)
 - **cross-finding-010** (META-cluster EXTENDED 20-system network) — 2026-04-17; MIXED — 4-region hub architecture with 4-way tie at top {Q 62, 112, 113, 114} under audit-035 dedup
+> **⛔ CORRECTION 2026-08-07 — the Fisher-Rao geodesic result below DOES NOT DISCRIMINATE.**
+> Every arithmetic value in these entries reproduces exactly; what fell is the inference. Under the
+> project's first genre control ([[h-new-2680-pillar-conjunction|H-NEW-2680]]), al-Bukhārī and the
+> pre-Islamic dīwāns — each cut into 114 pseudo-surahs matching this corpus's length profile and
+> measured on an instrument-matched pipeline — score **z = −13.84** and **z = −15.13** against the
+> Qurʾān's **z = −11.50**, and both sit *closer* to their own TSP optima. Cutting this corpus's own
+> verse stream at offsets that ignore every surah seam gives z = −11.23 to −13.18, so the seams
+> contribute nothing detectable. Length-sorting alone reaches z = −8.66 (H-NEW-111's write-up
+> mis-transcribed that anchor as 107.27; its own JSON records 91.03/90.30). **The mushaf's honest
+> margin over pure length is 2.80 σ.** The relative claim survives: mushaf 85.76 < Nöldeke 87.23 <
+> Tanzil 89.53. This applies to every cross-finding-011 / H-NEW-111 / H-NEW-111b / cross-finding-013
+> entry in this file, and to the "STRUCTURED TOPOLOGICAL RING" summary near the end of it.
+> Canonical summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+>
+> **Also on this date:** the scale-of-aggregation law (pericope flips) likewise does not
+> discriminate — poetry flips 5/5, al-Bukhārī 4/5 — and the title-density law was withdrawn and
+> replaced by `h-new-2710-title-density-retest.md`. **Of the project's four pillar laws only the
+> muqaṭṭaʿāt book-introduction law (cross-finding-008) survives the genre control.**
+
 - **cross-finding-011** (Mushaf is Fisher-Rao information-geodesic OPTIMAL) — 2026-04-17; **CONFIRMED** primary via H-NEW-111 + H-NEW-111b cross-feature replication (z ≈ -11.4, L/L_2opt ≈ 1.11 on both); chronology-reversal feature-specific to roots only
 
 ## Session 2026-04-17 additions (Wave-1 + Wave-1.5 + Wave-1.75)

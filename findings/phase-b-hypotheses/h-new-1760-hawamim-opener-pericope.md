@@ -12,6 +12,24 @@ verdict: FLIP — z = +6.008, p_perm < 10⁻⁴ (0/10,000)
 
 # H-NEW-1760 — Ḥawāmīm 7-surah opener-pericope (first 3 verses) flip-test of H-NEW-1395
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07
+>
+> **This finding's own numbers reproduce exactly and are not retracted.** What was corrected is the
+> law it feeds. Under the project's first genre control (`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`), the
+> pericope-flip test applied to five best-shot marker classes flips **5/5 on pre-Islamic poetry and
+> 4/5 on al-Bukhārī** — length-matched 114-block partitions, instrument-matched pipeline. The
+> mechanism is topical burstiness, which every text has and which this project already identified
+> (H-NEW-2330). The statistic is additionally **invariant under every redactional randomisation**
+> (marker labels, reading order, titles — verified 25/25), so it carries no weight in any conjunction
+> of the pillar laws.
+>
+> **The pericope-scale rule remains correct methodology** — a whole-surah NULL is not a terminal
+> verdict, and re-testing at the scale where structure operates is still project discipline.
+> **What must stop is citing a flip as evidence that this corpus is structurally unusual.**
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## TL;DR
 
 The 7 ḥawāmīm surahs {Q 40, 41, 42, 43, 44, 45, 46}, NULL'd at whole-surah Fisher-Rao root-distribution cohesion under H-NEW-1395 (Cell A p=0.2086, Cell B p=0.0514), **PASS at the opener-pericope scale with z = +6.008, p_perm < 10⁻⁴ (0 of 10,000 permutations match-or-exceed)**. This is the **4th** independent supporting finding-pair for the cross-finding-025-formal scale-of-aggregation pericope-flip law, and the FIRST on an **orthographic-opener marker class** (prior 3 pairs were narrative / liturgical / discourse). The flip is corpus-extreme: J_mean = 0.1547 vs null mean = 0.0497, a 3.11× elevation; null std = 0.01747.

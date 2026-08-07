@@ -340,6 +340,13 @@ This is the project's terminal question. Working toward it requires synthesizing
 
 **STATUS 2026-04-20 (refined by H-NEW-236 / H-NEW-236.1a / H-NEW-236.1b / H-NEW-236.1d / H-NEW-236.1h / H-NEW-272 / H-NEW-236.2a / H-NEW-236.2b / H-NEW-258)**: the main OQ-16 answer is now known. H-NEW-236 showed that the Fisher-Rao TSP residual is the **structural-hinge component**, not diffuse leftover variance. H-NEW-236.1a and H-NEW-236.1b then closed the empirical path under preserved canonical consecutive-edge scaffolds, with `M_H top-100` delivering the first strict `4 / 4` generative pass. H-NEW-236.1d tightened the hard-hinge parsimony bracket to **`(95, 100]`**, H-NEW-236.1h found a real but only primary-level soft sweet spot at `lambda = 0.07`, and H-NEW-272 killed the two narrowest mixed completions. H-NEW-236.2a then showed that the landed scaffold preserves broader independent gradients (H-NEW-239 divine-name density and H-NEW-231 KL). H-NEW-236.2b asks the next honest held-out question on top of that closure: can the extra scaffold beyond top-50, `H100 \ H50`, be recovered from the locked 9-feature classical-boundary family? **Yes, but only weakly.** The held-out logistic result is **`AUC_LOOCV = 0.647692`**, exact permutation **`p = 0.030197`**, versus descriptive **`AUC = 0.900680`** on the earlier H-NEW-130 top-15 jump regime. So the extra scaffold is **not** pure unstructured residue, but the dense late `mufaṣṣal_short` tranche remains only partially compressed by this compact boundary codebook. H-NEW-258 adds the cross-corpus bound: Bukhārī closes already at `K = 15`, so the Quranic `M_H top-100` scaffold remains unusually dense and specific. The live frontier is therefore no longer "why is there an 11% gap at all?"; it is whether any compact added factor explains the late `mufaṣṣal_short` tranche better than the current weak 9-feature fit without reopening the already-solved scaffold claim.
 
+> **⛔ Correction 2026-08-07.** The premise of this open question no longer holds as stated.
+> The Fisher-Rao geodesic result does not discriminate the Qurʾān from a length-matched partition of
+> al-Bukhārī (z = −13.84) or of pre-Islamic poetry (z = −15.13), both more extreme than the Qurʾān's
+> −11.50; and length-sorting alone reaches z = −8.66, leaving a 2.80 σ margin. The question is still
+> worth asking — but it should be re-posed about the 2.80 σ residual and the relative ordering, not
+> about an 11 σ effect. See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
 **The puzzle**: cross-finding-011 CONFIRMED that the mushaf ordering is Fisher-Rao information-geodesic optimal to L_mushaf / L_2opt = 1.107. But it is NOT at the optimum — there is an 11% residual. Why?
 
 **Hypotheses to test**:

@@ -53,7 +53,7 @@ You are continuing the Quran Decipherment Project at `/Users/grey/Downloads/qura
 
 **The big confirmed findings** (do not re-test these — extend them):
 
-- **H-NEW-111**: mushaf is information-geodesic-optimal under Fisher-Rao (z = −11.46)
+- ~~**H-NEW-111**: mushaf is information-geodesic-optimal under Fisher-Rao (z = −11.46)~~ **⛔ Correction 2026-08-07 — DOES NOT DISCRIMINATE.** Under the first genre control ([[h-new-2680-pillar-conjunction|H-NEW-2680]]) al-Bukhārī reaches z = −13.84 and pre-Islamic poetry z = −15.13 against the Qurʾān's z = −11.50, both closer to their own TSP optima; offset cuts ignoring every surah seam give z = −11.23 to −13.18; length-sorting alone reaches z = −8.66. Honest margin over pure length: **2.80 σ**. The relative claim (mushaf shorter than either chronology) survives. See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
 - **H-NEW-1040**: consecutive-pair FR-mean 17.8% below corpus baseline (z = −11.65)
 - **H-NEW-1240**: 13 empirically-seamless mushaf-transitions identified (corpus-EXACT)
 - **H-NEW-250**: 14 centuries of classical block-structure Ridge-recoverable at R² = 0.89 LOOCV

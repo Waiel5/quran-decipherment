@@ -116,7 +116,7 @@ al-Biqāʿī content-*munāsaba* claim FALSIFIED 5 times (full-29; HM-7 partial 
 
 ## CROSS-FINDING SYNTHESES
 
-- **[[cross-finding-011-mushaf-fisher-rao-geodesic]]** *(prior, 2026-04-17)* — mushaf is 89% TSP-optimal in FR distance.
+- **[[cross-finding-011-mushaf-fisher-rao-geodesic]]** *(prior, 2026-04-17)* — mushaf is 89% TSP-optimal in FR distance. **⛔ Correction 2026-08-07: this does not discriminate.** Under the first genre control ([[h-new-2680-pillar-conjunction|H-NEW-2680]]), al-Bukhārī reaches z = −13.84 and pre-Islamic poetry z = −15.13 against the Qurʾān's z = −11.50, and both sit closer to their own TSP optima. Offset cuts of this corpus's own verse stream that ignore every surah seam score z = −11.23 to −13.18. Length-sorting alone reaches z = −8.66; the honest margin is **2.80 σ**. The relative claim survives (mushaf shorter than either chronology). See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
 - **[[cross-finding-022-wave5-terminal-synthesis]]** *(prior, 2026-04-19)* — Wave-5 architectural synthesis at LOOCV R²=0.89.
 - **[[cross-finding-023-mh-top-100-scaffold]]** *(prior)* — M_H top-100 hinges as generative scaffold.
 - **[[cross-finding-024-five-factor-cohesion-model]]** *(2026-04-21)* — 5-factor qualitative model.

@@ -32,6 +32,31 @@ bonferroni_family: n/a (meta-synthesis; no new inferential test)
 
 # [[cross-finding-014-five-principle-unified-equation|cross-finding-014]] — The complete 5-principle unified equation
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07: this result does not discriminate
+>
+> **Nothing below is deleted and none of its arithmetic is wrong.** L_mushaf = 85.760 reproduces
+> exactly on an independent rebuild. What did not survive is the inference that the z-score is
+> evidence of design, and it failed a control that should have been run years earlier.
+>
+> - **Both baseline corpora score MORE extreme than the Qurʾān.** Cut into 114 pseudo-surahs
+>   matching the Qurʾān's length profile and measured on an instrument-matched pipeline:
+>   al-Bukhārī **z = −13.84**, pre-Islamic poetry **z = −15.13**, Qurʾān **z = −11.50**. Their
+>   optimality ratios (1.073, 1.093) are *better* than the mushaf's (1.130).
+> - **The surah seams contribute nothing detectable.** Cutting the Qurʾān's own verse stream into
+>   114 blocks of the same size profile at offsets that ignore every surah boundary gives
+>   z = −11.23, −13.18, −12.92, −12.33, −12.62.
+> - **Length alone reaches z = −8.66.** The mushaf's margin over a pure length-sorted ordering is
+>   **2.80 σ**, not 11.46 σ. (Spearman(mushaf position, verse count) = −0.846.)
+>
+> **What still stands:** the *relative* comparison, which never used the random null — the mushaf
+> is a shorter Fisher-Rao traversal than either reconstructed chronology (85.76 < 87.23 Nöldeke
+> < 89.53 Tanzil). Cite that, with the 2.80 σ margin. **Do not cite "11.46 σ below random" as
+> evidence of design.**
+>
+> Evidence: `findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md` §7–8. Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## Executive summary
 
 The theorist's proposal enumerated 7 principles (after P1+P5 merger

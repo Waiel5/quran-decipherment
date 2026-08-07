@@ -14,6 +14,24 @@ output_json: findings/phase-b-hypotheses/csv/h-new-1510.json
 
 # H-NEW-1510 — Sajda 15-verse pericope-scale root-Jaccard cohesion
 
+
+> ## ⛔ CORRECTION NOTICE — 2026-08-07
+>
+> **This finding's own numbers reproduce exactly and are not retracted.** What was corrected is the
+> law it feeds. Under the project's first genre control (`findings/phase-b-hypotheses/h-new-2680-pillar-conjunction.md`), the
+> pericope-flip test applied to five best-shot marker classes flips **5/5 on pre-Islamic poetry and
+> 4/5 on al-Bukhārī** — length-matched 114-block partitions, instrument-matched pipeline. The
+> mechanism is topical burstiness, which every text has and which this project already identified
+> (H-NEW-2330). The statistic is additionally **invariant under every redactional randomisation**
+> (marker labels, reading order, titles — verified 25/25), so it carries no weight in any conjunction
+> of the pillar laws.
+>
+> **The pericope-scale rule remains correct methodology** — a whole-surah NULL is not a terminal
+> verdict, and re-testing at the scale where structure operates is still project discipline.
+> **What must stop is citing a flip as evidence that this corpus is structurally unusual.**
+> Summary: `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`.
+
+
 ## Verdict: PASS-DIRECTED — scale-flip CONFIRMED
 
 The 15 sajda-verse pericopes (each sajda verse ± 2 verses, clipped to surah boundaries) exhibit TIGHTER mean pairwise root-Jaccard than length-matched random pericopes from the flat 6,236-verse corpus:
