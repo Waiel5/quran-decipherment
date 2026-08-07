@@ -171,8 +171,9 @@ rather than asserted.
 
 The 7.88× gross excess is entirely mechanical: **14 of the 22 non-decoy axes carry
 \|ρ\| ≥ 0.70 against raw word count**, and Q 2 al-Baqara is the argmax of nearly all of
-them. In the decoupled stratum the excess falls to 1.38× (family p = 0.0396 for T-ROOT,
-against α_cell = 7.5 × 10⁻⁵ — **not significant**), and **all 23 remaining decoupled hits
+them. In the decoupled stratum the excess falls to 1.38× — family p = **0.03945** (T-ROOT),
+**0.03997** (T-NORM), **0.99485** (T-LEMMA) at 10⁷ draws, against α_cell = 7.5 × 10⁻⁵, so
+**not significant under any tuple** — and **all 23 remaining decoupled hits
 land on Q 2 (16) or Q 1 (7)**, with none anywhere else: Q 2
 because it is the longest sūra, Q 1 because it is the corpus's strongest structural
 outlier (Δ_outlier = +27 pp, H-NEW-590). The residual is carried by one axis,
@@ -219,9 +220,10 @@ pre-registered as descriptive; no near-miss is promoted.
 mirror equalities where chance predicts 43.7. The Q 55 / Q 60 word-count identity above is
 one of the 30 — real, exact, and one of *fewer than average*.
 
-The exact mirror engine and the pre-registered 10⁷-draw permutation guard agree to three
-decimals on every cell (e.g. 0.08522 exact vs 0.08450 sampled at only 2,000 draws in the
-development run).
+The exact mirror engine and the pre-registered 10⁷-draw permutation guard agree on every
+cell to within **2.9 × 10⁻⁴** — 0.08522 vs 0.08515, 0.62729 vs 0.62758, 0.95646 vs
+0.95648, 0.58292 vs 0.58286. Two independently derived instruments, one exact and one
+sampled, converging to four decimals.
 
 ### E4 — exact count↔location coincidences (40,580 candidates)
 
@@ -236,10 +238,12 @@ development run).
 **The two nulls are the whole story.** N1 (unrestricted permutation) badly over-predicts —
 96.5 expected against 39 observed — because it destroys the real dependency between how
 often a root occurs and where it occurs. N2, the pre-registered dependency-preserving null
-that permutes counts only within deciles of `n_distinct_surahs`, lands almost exactly on
-the observation: **41.31 vs 39, 7.35 vs 9, 38.25 vs 40, 1.80 vs 3, 1.35 vs 1.** Once the
-mundane fact that frequent roots appear early and everywhere is held fixed, **every single
-count↔location coincidence in the Qurʾān is accounted for.** No residue.
+that permutes counts only within deciles of `n_distinct_surahs`, tracks the observation
+closely on every cell: **41.31 vs 39, 7.35 vs 9, 38.25 vs 40, 1.80 vs 3, 1.35 vs 1** for
+roots, **166.25 vs 174, 28.61 vs 28, 154.72 vs 166, 1.78 vs 3, 2.29 vs 2** for lemmas.
+**Across all ten cells the smallest N2 p-value is 0.132**, against α_cell = 7.5 × 10⁻⁵.
+Once the mundane fact that frequent roots appear early and everywhere is held fixed, the
+count↔location coincidences leave **no significant residue anywhere.**
 
 ---
 
