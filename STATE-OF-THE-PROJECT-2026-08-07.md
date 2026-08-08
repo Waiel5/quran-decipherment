@@ -109,6 +109,45 @@ general rule and its screens, `findings/UNIT-DRIFT-DEFECT.md` §3 Screen B and �
 
 ## 1. What survives, with its actual strength
 
+### 1.0 The pausal-rhyme family — the session's only new positive finding (H-NEW-2870 → 2880 → 2890 → 2910)
+
+**Claim.** This corpus's verse-endings are organised at **pausal phonology** — the form a reciter
+actually produces when stopping (final short vowels and tanwīn dropped, *-an* → *ā*) — not at the
+fully-vocalised citation form.
+
+**Strength.** Statistic E = A − Σpᵢ², pre-registered as primary. Observed **0.36657**; a null in
+which every draw is identical to the real partition in class count, class sizes and concentration
+— **chance floor variance exactly 0.00 across 160,000 draws** — gives 0 of 10,000 draws reaching
+the observation, **z = +15.03**, replicated (H-NEW-2880).
+
+**The negative control, across nine vocalised ḥadīth collections** (H-NEW-2910), maximum Δ per
+book on **tuple P1, the registered gate**:
+
+| Tirmidhī | Aḥmad | Abū Dāwūd | Dārimī | Bukhārī | Muslim | Nasāʾī | Mālik | Ibn Mājah | **this corpus** |
+|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| 0.016 | 0.026 | 0.028 | 0.028 | 0.032 | 0.032 | 0.033 | 0.038 | **0.041** | **0.187** |
+
+**Zero of nine books reach the +0.04672 threshold on P1.** Prose mean 0.0344; this corpus is
+**5.4× the prose mean and 4.5× the highest single prose book.**
+
+**Everything that qualifies it, carried at equal prominence:**
+- **It isolates the pausal FAMILY, not al-Sajāwandī's rules.** A deliberately *wrong* tuple (P3,
+  dropping tanwīn fatḥ without the compensatory alif) also clears its own matched null, at
+  z = +8.99 against +15.03. Discrimination within the family is quantitative, not categorical.
+- **Two of nine books exceed the threshold on tuple P2** (Ibn Mājah 0.054, Bukhārī 0.047). P2 was
+  never the registered gate — but the PARTIAL reading of H-NEW-2890 was a real property of that
+  tuple across books, not a Bukhārī accident.
+- **Three of twelve D-P3 arms failed**, all Ṣaḥīḥ Muslim under P1. Ṣaḥīḥ Muslim's pausal merges
+  carry a small real excess (z ≈ +2.9 to +3.2 against this corpus's +15.03).
+- **33% of the raw gain is class-collapse arithmetic**, 67% compositional. For prose the
+  compositional remainder is **negative** — it gains *less* than collapse alone predicts.
+- Classical anchor, recovered after three findings declared it absent: **al-Suyūṭī, al-Itqān,
+  nawʿ 28, *fī maʿrifat al-waqf wa-l-ibtidāʾ***, `suyuti-itqan.openiti.raw.txt` line 5092.
+- **H-NEW-2890 was published incomplete** (commit `cf34b5b73`) with unfilled placeholders and no
+  run directory, and described to the project owner as publishable. Corrected the same day; the
+  publication record travels with the finding.
+
+
 Five things. Each carries its caveat inline, because the caveat is part of the result. **Each
 is stated at its post-audit strength, not the strength it was published at** — where those
 differ, the difference is named.
