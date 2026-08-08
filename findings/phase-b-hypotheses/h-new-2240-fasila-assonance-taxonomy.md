@@ -12,6 +12,23 @@ n_perms: 10000
 
 # H-NEW-2240 — Verse-final assonance / fāṣila rhyme-class taxonomy
 
+> ### ⛔ PRE-REGISTRATION LOCK BREACH AND RESTORATION (2026-08-08)
+>
+> This finding's pre-registration was **edited after its run** by commit `b76ec401f`
+> (2026-08-07, a 702-file bulk propagation of the genre-control collapse), which broke the
+> SHA-256 lock embedded in its script. The pre-registration has been **restored byte-identically
+> to its pre-`b76ec401f` state** and the lock now verifies.
+>
+> **The edit was mine and it was procedurally wrong regardless of its content.** A
+> pre-registration's entire evidential value is that it was fixed before the data was seen; a
+> lock a later edit can invalidate is not a lock. **Corrections belong in the finding, never in
+> the pre-registration.** The same commit broke four locks in total — H-NEW-2240, 2560, 2610 and
+> 2620 — all restored.
+>
+> **The verdict is unaffected**: the run was computed under the original pre-registration, before
+> the edit. What was lost and is now recovered is reproducibility.
+
+
 
 > ## ⛔ CORRECTION NOTICE — 2026-08-07: the iʿjāz anti-twin is REVERSED under a matched control
 >
