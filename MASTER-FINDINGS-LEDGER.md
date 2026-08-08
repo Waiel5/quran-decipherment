@@ -7317,3 +7317,48 @@ literal and exits non-zero on mismatch. **Four rules moved from prose into enfor
 week** — write-once run directories (`open(path,'x')`), the death-date test for source
 attribution, the three-screen defect detector, and this. **Prose in a document degrades; a script
 that exits non-zero does not.**
+
+
+## §11.6 H-NEW-2980 (partial) — reception is extraordinarily concentrated: 13.9% of verses carry any ḥadīth citation
+
+**Partial result. The two residual rosters remain unrun and are recorded as open.**
+
+Using the formal per-verse reception weight H-NEW-860.1 built from the full 50,884-record ḥadīth
+corpus — an instrument that replaced a hand-built rubric shown to carry **no** discriminative
+information, and which had been used for exactly one correlation since.
+
+**Of 5,371 eligible verses, only 749 (13.9%) carry a single ḥadīth citation. The top 20 verses
+carry 670 of 3,147 citations — 21.3% of all reception.**
+
+| verse | citations | books |
+|:--|--:|--:|
+| **112:1** *qul huwa Llāhu aḥad* | **102** | 9 |
+| 87:1 *sabbiḥ isma rabbika l-aʿlā* | 63 | 8 |
+| 109:1 *qul yā ayyuhā l-kāfirūn* | 55 | 7 |
+| 64:1 *yusabbiḥu li-Llāh* | 54 | 8 |
+| 65:2 the ṭalāq witness verse | 36 | 9 |
+| 3:77 · 33:21 · 25:68 · 1:7 · 2:158 | 34 · 33 · 32 · 30 · 27 | |
+
+Then 2:125, 113:1, 2:187, 2:196, 24:37, 4:95, 48:2, 88:1, 92:5, 114:1.
+
+**Q 112:1 alone carries 102 citations across all nine books** — the most received verse in the
+canonical ḥadīth corpus by this measure, by a factor of 1.6 over the next.
+
+**The methodological result is the more transferable one.** "Rank statistics only, no means" was
+written into the brief as a *precaution*. It is now a **measured fact about this distribution**:
+with 86% of eligible verses at zero and a fifth of all reception inside twenty verses, any
+mean-based statistic here would be meaningless. A constraint that earns its place empirically is
+worth more than one asserted defensively.
+
+**Deliberately not attempted:** the two rosters (*structurally extreme but rarely cited*;
+*heavily cited but structurally ordinary*) require joining reception to `csv/h-new-590.json` and
+`csv/h-new-840.json` — **both per-SURAH while reception is per-VERSE.** That mapping is a design
+decision, not a mechanical join, and improvising it unregistered is exactly the class of choice
+this session spent two days correcting. Recorded open in
+`OPEN-H-NEW-2980-reception-residual.md` rather than guessed.
+
+**Provenance:** computed inline after **five consecutive lanes were lost to connection errors**
+(`ENOTFOUND`, `Connection closed mid-response`). The last was instructed to write its standalone
+deliverable before attempting any inference and died before reaching even that. **A partial result
+on disk beats a complete one that never runs** — and the standing lesson is that the *order* of
+work inside a fragile lane matters as much as its scope.
