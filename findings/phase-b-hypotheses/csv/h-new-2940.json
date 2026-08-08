@@ -1,0 +1,689 @@
+{
+  "id": "H-NEW-2940",
+  "title": "The inverse re-cut — merge this corpus's own verses to prose unit lengths",
+  "run_utc": "20260808T115534Z",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2940-inverse-recut.md",
+  "prereg_sha256": "27a2d9cdf54fa2c9d73450fc831823abbaed21641204f6b52b2de2e432d51257",
+  "parent": "H-NEW-2930",
+  "instrument": "H-NEW-2870 sections 0-6, executed verbatim",
+  "frozen_inputs": {
+    "findings/phase-b-hypotheses/scripts/h-new-2870.py": "9765a448256a93dc740ceb1dcd56ffbb58f33aa8a6192f855ad3579af07d2dde",
+    "findings/phase-b-hypotheses/scripts/h-new-2880.py": "c9577870b2a4bc3451344031f46f192795534af0ef56f4f46be57f07db7c7074",
+    "findings/phase-b-hypotheses/scripts/h-new-2890.py": "ac6f83465aa32b7a761f622f0010ed414329eb654bc60cb0bbed516e90edea73",
+    "findings/phase-b-hypotheses/csv/h-new-2910.json": "b5f005fa8fd1550e84bf10f34f6c987a846f36d43fa266559303753a76da4fd1",
+    "quran-text/quran-full-tashkeel.json": "382a7341300602ec8b366316d4bbe2a44955c2bf984d395bdd82dae6110b6715",
+    "data/alt-text/quran-uthmani-txt.txt": "e5e7e54988877d6164832d55435135a563b9cfc249e0c8efd73e9e7f23231db8",
+    "data/baseline-corpora/raw/muallaqa-imru-al-qais.txt": "06f05f6a299d989fcaf330f43f7fba9116b373f94096d38ec07df71432f59c14",
+    "data/baseline-corpora/raw/muallaqa-zuhayr.txt": "9a8aac1838323aaa65f916f597ec38c842b74eed77ce44f53c2932b52e6610c2",
+    "data/baseline-corpora/raw/muallaqa-amr-bin-kulthum.txt": "d93a81bd2095c7db00417650f883c834077fac12668e50002c8b35f26e2ef720",
+    "data/baseline-corpora/raw/bukhari-noquran.txt": "0169b60de7585a51fc340161488534c4d909370c3dcc8951ca2ae3818c44a100",
+    "data/baseline-corpora/raw/jahiz-hayawan.txt": "419095484df4e315eba889d38a9c2f6edff55c2f10f481ed9ad024e07bbff0cd"
+  },
+  "python": "3.13.12",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "seed": 20260509,
+  "seed_replication": 20260519,
+  "n_randseg": 200,
+  "n_verses": 6236,
+  "n_pairs_native": 6122,
+  "gate_a_orthography": {
+    "checks": {
+      "U+0657": {
+        "predicts": "U+064B",
+        "match": 1195,
+        "mismatch": 0,
+        "rate": 1.0
+      },
+      "U+065E": {
+        "predicts": "U+064C",
+        "match": 580,
+        "mismatch": 0,
+        "rate": 1.0
+      },
+      "U+0656": {
+        "predicts": "U+064D",
+        "match": 759,
+        "mismatch": 0,
+        "rate": 1.0
+      },
+      "U+064B": {
+        "predicts": "U+064B",
+        "match": 270,
+        "mismatch": 0,
+        "rate": 1.0
+      },
+      "U+064C": {
+        "predicts": "U+064C",
+        "match": 179,
+        "mismatch": 0,
+        "rate": 1.0
+      },
+      "U+064D": {
+        "predicts": "U+064D",
+        "match": 242,
+        "mismatch": 0,
+        "rate": 1.0
+      }
+    },
+    "pass": true
+  },
+  "gate_b_instrument": {
+    "checks": [
+      {
+        "check": "Q18 al-Kahf 110/110 open -A",
+        "pass": true,
+        "detail": "{'A': 110}"
+      },
+      {
+        "check": "Q112 al-Ikhlas 4/4 -ad",
+        "pass": true,
+        "detail": "{'aد': 4}"
+      },
+      {
+        "check": "Q108 al-Kawthar 3/3 -ar",
+        "pass": true,
+        "detail": "{'aر': 3}"
+      },
+      {
+        "check": "Q114 al-Nas 6/6 -As",
+        "pass": true,
+        "detail": "{'Aس': 6}"
+      },
+      {
+        "check": "Q1 al-Fatiha all in {Im, In}",
+        "pass": true,
+        "detail": "{'Iم': 3, 'Iن': 4}"
+      },
+      {
+        "check": "Q55 al-Rahman modal -An",
+        "pass": true,
+        "detail": "modal=[('Aن', 63), ('Aم', 7), ('Aنن', 3)]"
+      }
+    ],
+    "n_pass": 6
+  },
+  "reproduction": {
+    "delta_native": 0.18686703691604045,
+    "published": 0.18686703691604045,
+    "abs_diff": 0.0,
+    "tolerance": 1e-12,
+    "pass": true,
+    "A_native": {
+      "C": 0.34841555047370143,
+      "P1": 0.5352825873897419
+    }
+  },
+  "axis": {
+    "total_words_arabic_words": 77429,
+    "native_mean_unit_len": 12.416452854393842,
+    "tanzil_txt_words": 82260,
+    "tanzil_mean": 13.191148171905068,
+    "value_used_by_2930": 13.21
+  },
+  "prose_baseline": {
+    "reconstruction": {
+      "darimi": {
+        "mean_unit_len": 49.16294773928362,
+        "cells": {
+          "S5_all": 0.028074458346048214,
+          "S5_readable": 0.028342575477510776,
+          "S3_all": 0.027150916784203102,
+          "S3_readable": 0.02743142144638404,
+          "S0_all": 0.028089887640449437,
+          "S0_readable": 0.0283497463443748
+        },
+        "max": 0.0283497463443748,
+        "which_max": "S0_readable",
+        "table_2930": 0.02835
+      },
+      "ibnmajah": {
+        "mean_unit_len": 58.4517836593786,
+        "cells": {
+          "S5_all": 0.040028422548555195,
+          "S5_readable": 0.04134050880626225,
+          "S3_all": 0.038343984440122256,
+          "S3_readable": 0.03959827833572452,
+          "S0_all": 0.03923844903645228,
+          "S0_readable": 0.040508149568552254
+        },
+        "max": 0.04134050880626225,
+        "which_max": "S5_readable",
+        "table_2930": 0.04134
+      },
+      "nasai": {
+        "mean_unit_len": 59.040742024965326,
+        "cells": {
+          "S5_all": 0.027896995708154487,
+          "S5_readable": 0.028709917971662946,
+          "S3_all": 0.031656548135299195,
+          "S3_readable": 0.03257181633114678,
+          "S0_all": 0.028866340097970622,
+          "S0_readable": 0.029733673841663616
+        },
+        "max": 0.03257181633114678,
+        "which_max": "S3_readable",
+        "table_2930": 0.03257
+      },
+      "malik": {
+        "mean_unit_len": 63.012903225806454,
+        "cells": {
+          "S5_all": 0.03693181818181818,
+          "S5_readable": 0.037681159420289864,
+          "S3_all": 0.0326530612244898,
+          "S3_readable": 0.033333333333333326,
+          "S0_all": 0.03390772651473041,
+          "S0_readable": 0.03458049886621316
+        },
+        "max": 0.037681159420289864,
+        "which_max": "S5_readable",
+        "table_2930": 0.03768
+      },
+      "abudawud": {
+        "mean_unit_len": 63.11504927975739,
+        "cells": {
+          "S5_all": 0.026035502958579884,
+          "S5_readable": 0.02694235588972431,
+          "S3_all": 0.02674659903158865,
+          "S3_readable": 0.027614858260019554,
+          "S0_all": 0.026180011465698448,
+          "S0_readable": 0.02707070707070707
+        },
+        "max": 0.027614858260019554,
+        "which_max": "S3_readable",
+        "table_2930": 0.02761
+      },
+      "muslim": {
+        "mean_unit_len": 64.60718594985923,
+        "cells": {
+          "S5_all": 0.031385130422653104,
+          "S5_readable": 0.032489389726328116,
+          "S3_all": 0.031429981898963316,
+          "S3_readable": 0.032385874246339375,
+          "S0_all": 0.03134288030262092,
+          "S0_readable": 0.03246385029770342
+        },
+        "max": 0.032489389726328116,
+        "which_max": "S5_readable",
+        "table_2930": 0.03249
+      },
+      "bukhari": {
+        "mean_unit_len": 73.22742888552975,
+        "cells": {
+          "S5_all": 0.028023812980978655,
+          "S5_readable": 0.029654297494449727,
+          "S3_all": 0.030308497203680312,
+          "S3_readable": 0.03179932846138654,
+          "S0_all": 0.029805013927576604,
+          "S0_readable": 0.03161574707402341
+        },
+        "max": 0.03179932846138654,
+        "which_max": "S3_readable",
+        "table_2930": 0.0318
+      },
+      "ahmed": {
+        "mean_unit_len": 73.60917030567686,
+        "cells": {
+          "S5_all": 0.025641025641025647,
+          "S5_readable": 0.0256797583081571,
+          "S3_all": 0.026268115942028977,
+          "S3_readable": 0.026315789473684202,
+          "S0_all": 0.02342606149341142,
+          "S0_readable": 0.02346041055718475
+        },
+        "max": 0.026315789473684202,
+        "which_max": "S3_readable",
+        "table_2930": 0.02632
+      },
+      "tirmidhi": {
+        "mean_unit_len": 91.11596348383914,
+        "cells": {
+          "S5_all": 0.01278636121470432,
+          "S5_readable": 0.013690815744438117,
+          "S3_all": 0.01529763884270037,
+          "S3_readable": 0.016231474947071278,
+          "S0_all": 0.01173826173826173,
+          "S0_readable": 0.012546716497597435
+        },
+        "max": 0.016231474947071278,
+        "which_max": "S3_readable",
+        "table_2930": 0.01623
+      }
+    },
+    "fits": {
+      "2930_max": {
+        "slope": -0.00039757012914015243,
+        "intercept": 0.056787192728971536,
+        "mean_delta": 0.030488230196729266,
+        "pred_at_native": 0.05185078196418756
+      },
+      "S5_readable": {
+        "slope": -0.0004443527040025646,
+        "intercept": 0.058785903140156304,
+        "mean_delta": 0.029392308759869243,
+        "pred_at_native": 0.05326861874018604
+      },
+      "S3_readable": {
+        "slope": -0.00036030983523067483,
+        "intercept": 0.05353224177382032,
+        "mean_delta": 0.029698019426121065,
+        "pred_at_native": 0.049058471691704235
+      },
+      "S0_readable": {
+        "slope": -0.0004642465396545286,
+        "intercept": 0.05963505653463346,
+        "mean_delta": 0.028925500013113323,
+        "pred_at_native": 0.053870761262197524
+      }
+    },
+    "table_2930_is_per_book_max": true,
+    "prose_target_primary": 0.0304878
+  },
+  "merge_gate": {
+    "checked": 18516,
+    "mismatches": 0
+  },
+  "arms": {
+    "65": {
+      "target": 65,
+      "primary_arm": true,
+      "T": 59,
+      "g": 5,
+      "M1_greedy": {
+        "n_units": 1189,
+        "mean_unit_len": 65.12111017661901,
+        "n_pairs_expected": 1075,
+        "n_surahs_ge2units": 91,
+        "A_C": 0.27162790697674416,
+        "A_P1": 0.4595348837209302,
+        "delta": 0.18790697674418605,
+        "n_pairs": 1075,
+        "native_delta_same_surahs": {
+          "delta": 0.1864123159303882,
+          "n_pairs": 5976,
+          "n_surahs": 91
+        },
+        "pred_2930_max": 0.03089698454630302,
+        "residual_ratio_2930_max": 6.081725433839144,
+        "f_vs_fit_2930_max": -0.00666756093458474,
+        "f_vs_mean_2930_max": -0.006650132776701739,
+        "pred_S5_readable": 0.02984916174552672,
+        "residual_ratio_S5_readable": 6.295217880694634,
+        "f_vs_fit_S5_readable": -0.006623066494921509,
+        "f_vs_mean_S5_readable": -0.006603852188360446,
+        "pred_S3_readable": 0.0300684652960441,
+        "residual_ratio_S3_readable": 6.249303876806365,
+        "f_vs_fit_S3_readable": -0.006632329729800771,
+        "f_vs_mean_S3_readable": -0.0066166973921071804,
+        "pred_S0_readable": 0.029402806476676775,
+        "residual_ratio_S0_readable": 6.390783712882637,
+        "f_vs_fit_S0_readable": -0.006604292449427475,
+        "f_vs_mean_S0_readable": -0.006584333979127718,
+        "f_primary": -0.006650114482294974
+      },
+      "M2_fixed": {
+        "n_units": 1288,
+        "mean_unit_len": 60.11568322981366,
+        "n_pairs_expected": 1174,
+        "n_surahs_ge2units": 105,
+        "A_C": 0.26916524701873934,
+        "A_P1": 0.47018739352640543,
+        "delta": 0.2010221465076661,
+        "n_pairs": 1174,
+        "native_delta_same_surahs": {
+          "delta": 0.18559238595339678,
+          "n_pairs": 6094,
+          "n_surahs": 105
+        },
+        "pred_2930_max": 0.03288699278394602,
+        "residual_ratio_2930_max": 6.112512257605877,
+        "f_vs_fit_2930_max": -0.09192820843383076,
+        "f_vs_mean_2930_max": -0.09051808162875326,
+        "pred_S5_readable": 0.03207333674402697,
+        "residual_ratio_S5_readable": 6.267578210274692,
+        "f_vs_fit_S5_readable": -0.09144499792882956,
+        "f_vs_mean_S5_readable": -0.08988813479701771,
+        "pred_S3_readable": 0.031871969854506715,
+        "residual_ratio_S3_readable": 6.307176726927076,
+        "f_vs_fit_S3_readable": -0.09132619418143156,
+        "f_vs_mean_S3_readable": -0.0900629769002248,
+        "pred_S0_readable": 0.03172655861622469,
+        "residual_ratio_S0_readable": 6.33608419177443,
+        "f_vs_fit_S0_readable": -0.09124059527694808,
+        "f_vs_mean_S0_readable": -0.08962246328098952,
+        "f_primary": -0.09051783261498758
+      }
+    },
+    "50": {
+      "target": 50,
+      "primary_arm": false,
+      "T": 43,
+      "g": 4,
+      "M1_greedy": {
+        "n_units": 1534,
+        "mean_unit_len": 50.47522816166884,
+        "n_pairs_expected": 1420,
+        "n_surahs_ge2units": 93,
+        "A_C": 0.3,
+        "A_P1": 0.47464788732394364,
+        "delta": 0.17464788732394365,
+        "n_pairs": 1420,
+        "native_delta_same_surahs": {
+          "delta": 0.1863136863136863,
+          "n_pairs": 6006,
+          "n_surahs": 93
+        },
+        "pred_2930_max": 0.0367197497503582,
+        "residual_ratio_2930_max": 4.756238495940185,
+        "f_vs_fit_2930_max": 0.08138108801535254,
+        "f_vs_mean_2930_max": 0.07813814319500023,
+        "pred_S5_readable": 0.03635709902137236,
+        "residual_ratio_S5_readable": 4.803680492254832,
+        "f_vs_fit_S5_readable": 0.08118500188770372,
+        "f_vs_mean_S5_readable": 0.07759435266323367,
+        "pred_S3_readable": 0.0353455206316587,
+        "residual_ratio_S3_readable": 4.9411604130542335,
+        "f_vs_fit_S3_readable": 0.0806429996988903,
+        "f_vs_mean_S3_readable": 0.07774528203613999,
+        "pred_S0_readable": 0.03620210652230589,
+        "residual_ratio_S0_readable": 4.8242465453311265,
+        "f_vs_fit_S0_readable": 0.08110148499829617,
+        "f_vs_mean_S0_readable": 0.07736501639595192,
+        "f_primary": 0.0781379282382432
+      },
+      "M2_fixed": {
+        "n_units": 1599,
+        "mean_unit_len": 48.42338961851157,
+        "n_pairs_expected": 1485,
+        "n_surahs_ge2units": 109,
+        "A_C": 0.2915824915824916,
+        "A_P1": 0.4626262626262626,
+        "delta": 0.17104377104377105,
+        "n_pairs": 1485,
+        "native_delta_same_surahs": {
+          "delta": 0.18625204582651392,
+          "n_pairs": 6110,
+          "n_surahs": 109
+        },
+        "pred_2930_max": 0.03753549946493598,
+        "residual_ratio_2930_max": 4.5568534715663676,
+        "f_vs_fit_2930_max": 0.10596064396276908,
+        "f_vs_mean_2930_max": 0.1011854880097086,
+        "pred_S5_readable": 0.03726883902620097,
+        "residual_ratio_S5_readable": 4.589457989918141,
+        "f_vs_fit_S5_readable": 0.10577176794550208,
+        "f_vs_mean_S5_readable": 0.10048130298454691,
+        "pred_S3_readable": 0.03608481823906365,
+        "residual_ratio_S3_readable": 4.740048014392032,
+        "f_vs_fit_S3_readable": 0.10494119274214846,
+        "f_vs_mean_S3_readable": 0.10067674994077178,
+        "pred_S0_readable": 0.037154665465896436,
+        "residual_ratio_S0_readable": 4.603561057514268,
+        "f_vs_fit_S0_readable": 0.10569110434229367,
+        "f_vs_mean_S0_readable": 0.10018432251925331,
+        "f_primary": 0.10118520965008203
+      }
+    },
+    "75": {
+      "target": 75,
+      "primary_arm": false,
+      "T": 70,
+      "g": 6,
+      "M1_greedy": {
+        "n_units": 1028,
+        "mean_unit_len": 75.32003891050584,
+        "n_pairs_expected": 914,
+        "n_surahs_ge2units": 88,
+        "A_C": 0.29540481400437635,
+        "A_P1": 0.48358862144420134,
+        "delta": 0.18818380743982493,
+        "n_pairs": 914,
+        "native_delta_same_surahs": {
+          "delta": 0.1875,
+          "n_pairs": 5920,
+          "n_surahs": 88
+        },
+        "pred_2930_max": 0.02684219513248042,
+        "residual_ratio_2930_max": 7.01074582429039,
+        "f_vs_fit_2930_max": -0.008228538201371682,
+        "f_vs_mean_2930_max": -0.008420389894316,
+        "pred_S5_readable": 0.025317240184694653,
+        "residual_ratio_S5_readable": 7.433030064374474,
+        "f_vs_fit_S5_readable": -0.008150864627668007,
+        "f_vs_mean_S5_readable": -0.008361789470616594,
+        "pred_S3_readable": 0.026393690964407943,
+        "residual_ratio_S3_readable": 7.129878412746136,
+        "f_vs_fit_S3_readable": -0.00820554040283652,
+        "f_vs_mean_S3_readable": -0.008378054051708626,
+        "pred_S0_readable": 0.024667989103786675,
+        "residual_ratio_S0_readable": 7.628664284229705,
+        "f_vs_fit_S0_readable": -0.008118238309935404,
+        "f_vs_mean_S0_readable": -0.008337075538234042,
+        "f_primary": -0.008420366729960788
+      },
+      "M2_fixed": {
+        "n_units": 1085,
+        "mean_unit_len": 71.363133640553,
+        "n_pairs_expected": 971,
+        "n_surahs_ge2units": 103,
+        "A_C": 0.27909371781668385,
+        "A_P1": 0.4654994850669413,
+        "delta": 0.18640576725025745,
+        "n_pairs": 971,
+        "native_delta_same_surahs": {
+          "delta": 0.1858974358974359,
+          "n_pairs": 6084,
+          "n_surahs": 103
+        },
+        "pred_2930_max": 0.028415342471650923,
+        "residual_ratio_2930_max": 6.560039437716737,
+        "f_vs_fit_2930_max": 0.002911105920327576,
+        "f_vs_mean_2930_max": 0.0029496942422060084,
+        "pred_S5_readable": 0.027075501740880192,
+        "residual_ratio_S5_readable": 6.884665297589334,
+        "f_vs_fit_S5_readable": 0.002886696502899005,
+        "f_vs_mean_S5_readable": 0.002929166293435649,
+        "pred_S3_readable": 0.027819402850248042,
+        "residual_ratio_S3_readable": 6.700566804171911,
+        "f_vs_fit_S3_readable": 0.002900198223584938,
+        "f_vs_mean_S3_readable": 0.002934863837350028,
+        "pred_S0_readable": 0.02650496868310305,
+        "residual_ratio_S0_readable": 7.032861252505134,
+        "f_vs_fit_S0_readable": 0.002876426270038942,
+        "f_vs_mean_S0_readable": 0.0029205089099930736,
+        "f_primary": 0.0029496861276452754
+      }
+    },
+    "91": {
+      "target": 91,
+      "primary_arm": false,
+      "T": 88,
+      "g": 8,
+      "M1_greedy": {
+        "n_units": 853,
+        "mean_unit_len": 90.7725674091442,
+        "n_pairs_expected": 739,
+        "n_surahs_ge2units": 85,
+        "A_C": 0.2665764546684709,
+        "A_P1": 0.43437077131258456,
+        "delta": 0.16779431664411368,
+        "n_pairs": 739,
+        "native_delta_same_surahs": {
+          "delta": 0.18686181075561606,
+          "n_pairs": 5876,
+          "n_surahs": 85
+        },
+        "pred_2930_max": 0.020698731381734885,
+        "residual_ratio_2930_max": 8.10650244933271,
+        "f_vs_fit_2930_max": 0.11477953157552778,
+        "f_vs_mean_2930_max": 0.12196486641671943,
+        "pred_S5_readable": 0.01845086736264801,
+        "residual_ratio_S5_readable": 9.094115379301732,
+        "f_vs_fit_S5_readable": 0.1132475600324125,
+        "f_vs_mean_S5_readable": 0.1211160704656809,
+        "pred_S3_readable": 0.02082599296716625,
+        "residual_ratio_S3_readable": 8.056965970777675,
+        "f_vs_fit_S3_readable": 0.1148675039516101,
+        "f_vs_mean_S3_readable": 0.12135165426703819,
+        "pred_S0_readable": 0.017494206219380824,
+        "residual_ratio_S0_readable": 9.591422127985664,
+        "f_vs_fit_S0_readable": 0.11260790879787148,
+        "f_vs_mean_S0_readable": 0.12075810230749566,
+        "f_primary": 0.1219645308933619
+      },
+      "M2_fixed": {
+        "n_units": 824,
+        "mean_unit_len": 93.96723300970874,
+        "n_pairs_expected": 710,
+        "n_surahs_ge2units": 96,
+        "A_C": 0.2802816901408451,
+        "A_P1": 0.447887323943662,
+        "delta": 0.1676056338028169,
+        "n_pairs": 710,
+        "native_delta_same_surahs": {
+          "delta": 0.18635083650819945,
+          "n_pairs": 6037,
+          "n_surahs": 96
+        },
+        "pred_2930_max": 0.01942862776635884,
+        "residual_ratio_2930_max": 8.626735548098269,
+        "f_vs_fit_2930_max": 0.11503575082348529,
+        "f_vs_mean_2930_max": 0.12317144194479243,
+        "pred_S5_readable": 0.01703130906465318,
+        "residual_ratio_S5_readable": 9.841030608191241,
+        "f_vs_fit_S5_readable": 0.11341196199940928,
+        "f_vs_mean_S5_readable": 0.12231424901474724,
+        "pred_S3_readable": 0.01967492353100974,
+        "residual_ratio_S3_readable": 8.51874384866873,
+        "f_vs_fit_S3_readable": 0.1152052134712001,
+        "f_vs_mean_S3_readable": 0.12255216340242729,
+        "pred_S0_readable": 0.01601109376896539,
+        "residual_ratio_S0_readable": 10.468093949189788,
+        "f_vs_fit_S0_readable": 0.11273475630076901,
+        "f_vs_mean_S0_readable": 0.12195273954477127,
+        "f_primary": 0.12317110310216531
+      }
+    }
+  },
+  "diagnostics": {
+    "phases": {
+      "g": 5,
+      "arms": [
+        {
+          "offset": 0,
+          "mean_unit_len": 60.11568322981366,
+          "A_C": 0.26916524701873934,
+          "A_P1": 0.47018739352640543,
+          "delta": 0.2010221465076661,
+          "n_pairs": 1174
+        },
+        {
+          "offset": 1,
+          "mean_unit_len": 55.986261749819235,
+          "A_C": 0.28132387706855794,
+          "A_P1": 0.46178092986603625,
+          "delta": 0.18045705279747834,
+          "n_pairs": 1269
+        },
+        {
+          "offset": 2,
+          "mean_unit_len": 56.68301610541727,
+          "A_C": 0.28354632587859424,
+          "A_P1": 0.45686900958466453,
+          "delta": 0.1733226837060703,
+          "n_pairs": 1252
+        },
+        {
+          "offset": 3,
+          "mean_unit_len": 57.82598954443615,
+          "A_C": 0.2922448979591837,
+          "A_P1": 0.4742857142857143,
+          "delta": 0.1820408163265306,
+          "n_pairs": 1225
+        },
+        {
+          "offset": 4,
+          "mean_unit_len": 58.83662613981763,
+          "A_C": 0.2628951747088186,
+          "A_P1": 0.4475873544093178,
+          "delta": 0.18469217970049917,
+          "n_pairs": 1202
+        }
+      ],
+      "mean_delta": 0.1843069758076489,
+      "sd_delta": 0.009166868304068576
+    },
+    "lag": [
+      {
+        "lag": 1,
+        "delta": 0.1868670369160405,
+        "n_pairs": 6122,
+        "approx_word_distance": 12.416452854393842
+      },
+      {
+        "lag": 2,
+        "delta": 0.18159121171770973,
+        "n_pairs": 6008,
+        "approx_word_distance": 24.832905708787685
+      },
+      {
+        "lag": 3,
+        "delta": 0.18018323719036308,
+        "n_pairs": 5894,
+        "approx_word_distance": 37.24935856318153
+      },
+      {
+        "lag": 4,
+        "delta": 0.1755144388725575,
+        "n_pairs": 5783,
+        "approx_word_distance": 49.66581141757537
+      },
+      {
+        "lag": 5,
+        "delta": 0.1792386323581248,
+        "n_pairs": 5674,
+        "approx_word_distance": 62.08226427196921
+      },
+      {
+        "lag": 6,
+        "delta": 0.17256239899443346,
+        "n_pairs": 5569,
+        "approx_word_distance": 74.49871712636306
+      },
+      {
+        "lag": 8,
+        "delta": 0.17073625349487417,
+        "n_pairs": 5365,
+        "approx_word_distance": 99.33162283515074
+      },
+      {
+        "lag": 10,
+        "delta": 0.16370313103981446,
+        "n_pairs": 5174,
+        "approx_word_distance": 124.16452854393842
+      }
+    ],
+    "random_segmentation": {
+      "primary": {
+        "seed": 20260509,
+        "p_boundary": 0.19102235160605913,
+        "n_draws": 200,
+        "mean_delta": 0.1820747874758667,
+        "sd_delta": 0.010651600742452211,
+        "mean_unit_len": 60.35349891715447,
+        "f_primary": 0.030645049398384656
+      },
+      "replication": {
+        "seed": 20260519,
+        "p_boundary": 0.19102235160605913,
+        "n_draws": 200,
+        "mean_delta": 0.18265789492859977,
+        "sd_delta": 0.01103876142672019,
+        "mean_unit_len": 60.529096231035034,
+        "f_primary": 0.02691624585494403
+      }
+    }
+  },
+  "f_primary": -0.006650114482294974,
+  "in_range_residual_ratio": 6.081725433839144,
+  "verdict": "RESIDUAL REAL AND LARGER than H-NEW-2930's extrapolation suggested"
+}

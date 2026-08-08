@@ -3,12 +3,23 @@ id: H-NEW-2930
 title: "The unit-drift screen applied to the pausal-rhyme family — it TRIPS, and the 5.3× headline is inflated"
 date: 2026-08-08
 author: Waiel Al-Shujaa
-status: "SCREEN TRIPPED — Δ tracks unit length at ρ = −0.65 across nine prose books; the corrected residual is 3.63×, not 5.3×"
+status: "SCREEN TRIPPED — Δ tracks unit length at ρ = −0.65 across nine prose books. §3's extrapolated 3.63× is SUPERSEDED by H-NEW-2940's measured 6.08×; §1–§2 and §5 stand."
+superseded_in_part_by: findings/phase-b-hypotheses/h-new-2940-inverse-recut.md
 screens_the: [H-NEW-2870, H-NEW-2880, H-NEW-2890, H-NEW-2910]
 applies: findings/UNIT-DRIFT-DEFECT.md
 ---
 
 # H-NEW-2930 — the screen turned on my own finding
+
+> **SUPERSEDED IN PART, 2026-08-08.** §3's residual of **3.63× is an extrapolation and is now
+> replaced by a measurement**: merging this corpus's own verses to 65.1 words — inside the prose
+> range, nothing extrapolated — leaves Δ at 0.18791, closing **none** of the gap, for an in-range
+> residual of **6.08×**. The extrapolation was unreliable in the direction that favours the null.
+> §4 of this finding said it might be. Two defects in the baseline below are also documented
+> there: the Qurʾān's 13.21-word unit length is off-axis (12.4165 on the tokeniser the nine books
+> were measured with), and each of §2's nine Δ values is a per-book maximum over six cells, which
+> inflates the prose baseline and made the residual conservative. **§1, §2 and §5 stand as
+> written.** See `findings/phase-b-hypotheses/h-new-2940-inverse-recut.md`.
 
 **This screens the session's only surviving positive result, which is my own, and it trips.**
 

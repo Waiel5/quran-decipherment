@@ -1,16 +1,35 @@
 ---
 id: OPEN-H-NEW-2940
-title: "OPEN QUESTION — the inverse re-cut arm, unrun after three agent failures"
-status: NOT RUN — no result exists; do not cite any number for this test
+title: "CLOSED — the inverse re-cut arm, run 2026-08-08"
+status: "CLOSED — measured. f = −0.0067; see findings/phase-b-hypotheses/h-new-2940-inverse-recut.md"
 date: 2026-08-08
 author: Waiel Al-Shujaa
-blocks: the cross-corpus magnitude claim of H-NEW-2880/2890/2910
+blocks: nothing further — the cross-corpus magnitude claim is now measured, not extrapolated
+resolved_by: findings/phase-b-hypotheses/h-new-2940-inverse-recut.md
 ---
 
-# OPEN — the inverse re-cut arm has NOT been run
+# CLOSED — the inverse re-cut arm has now been run
 
-**No result exists for this test. Nothing may be cited from it.** This file exists so the
-question is not silently lost, and so a future session does not have to rediscover why it matters.
+**Resolved 2026-08-08.** Run `runs/h-new-2940/20260808T115534Z`, finding at
+`findings/phase-b-hypotheses/h-new-2940-inverse-recut.md`.
+
+The native Δ reproduced **bit-identically** (0.18686703691604045, difference 0.0). Merging this
+corpus's own verses to **65.121 words** — mid-prose, inside the baseline range — gives Δ =
+**0.18791**, closing **f = −0.0067** of the gap: none of it. Every one of eight arms across four
+target lengths and two merge rules closes at most 12.3%.
+
+Per the decision rule locked below and in the pre-registration: **the residual is real and
+LARGER than H-NEW-2930's extrapolation suggested — 6.08× measured in range, against 3.63×
+extrapolated.** The magnitude claim is not withdrawn.
+
+The text below is the question as it stood before the run, left unaltered.
+
+---
+
+## The question as it stood on 2026-08-08, before the run
+
+This file existed so the question was not silently lost, and so a future session did not have to
+rediscover why it mattered.
 
 ## The question
 
@@ -59,3 +78,11 @@ checkpoints outside it. Seeds 20260509 / 20260519.
 **Until it runs, the honest statement of the cross-corpus magnitude is: ~3.6× by extrapolation,
 with the extrapolation acknowledged as unreliable in both directions.** Not 5.3×, and not a
 measured 3.63×.
+
+---
+
+## Superseded by the run
+
+The paragraph above is now superseded. The extrapolation was unreliable **in the direction that
+favours the null**: measured at matched unit length the residual is **6.08×**, not ~3.6×. See
+`findings/phase-b-hypotheses/h-new-2940-inverse-recut.md` §4.

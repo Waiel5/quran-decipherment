@@ -1,0 +1,165 @@
+[SHA-OK] pre-reg locked: 27a2d9cdf54fa2c9d73450fc831823abbaed21641204f6b52b2de2e432d51257
+[SHA-OK] 11 frozen inputs verified (the parent runner among them)
+
+==============================================================================
+INSTRUMENT — sections 0-6 of the pinned parent runner, executed verbatim.
+Its GATE A (orthography) and GATE B (instrument validation) are re-run below.
+==============================================================================
+[SHA-OK] pre-reg locked: 119753ad7862d66dfead2ff6de1032adee0a824cd7544cd8bc4d6688587508d4
+[SHA-OK] 7 frozen inputs verified
+[LOAD] 114 surahs, 6236 verses
+
+==============================================================================
+GATE A — orthography (prereg §4.1). Reported BEFORE any test statistic.
+==============================================================================
+   U+0657 [ٗ] -> U+064B [ً] : match= 1195 mismatch=  0 rate=1.0000
+   U+065E [ٞ] -> U+064C [ٌ] : match=  580 mismatch=  0 rate=1.0000
+   U+0656 [ٖ] -> U+064D [ٍ] : match=  759 mismatch=  0 rate=1.0000
+   U+064B [ً] -> U+064B [ً] : match=  270 mismatch=  0 rate=1.0000
+   U+064C [ٌ] -> U+064C [ٌ] : match=  179 mismatch=  0 rate=1.0000
+   U+064D [ٍ] -> U+064D [ٍ] : match=  242 mismatch=  0 rate=1.0000
+   tanwin encoded non-standard: 6643  standard: 1911  non-standard share = 0.777
+   GATE A: PASS
+   verse-final word, final vowel-bearing mark (recoverability of the citation form):
+      short-vowel                       3836  0.6151
+      bare(long-vowel/indeclinable)     1233  0.1977
+      tanwin                            1069  0.1714
+      sukun                               98  0.0157
+
+==============================================================================
+GATE B — instrument validation against H-NEW-2240 (prereg §4.4).
+==============================================================================
+   [PASS] Q18 al-Kahf 110/110 open -A: {'A': 110}
+   [PASS] Q112 al-Ikhlas 4/4 -ad: {'aد': 4}
+   [PASS] Q108 al-Kawthar 3/3 -ar: {'aر': 3}
+   [PASS] Q114 al-Nas 6/6 -As: {'Aس': 6}
+   [PASS] Q1 al-Fatiha all in {Im, In}: {'Iم': 3, 'Iن': 4}
+   [PASS] Q55 al-Rahman modal -An: modal=[('Aن', 63), ('Aم', 7), ('Aنن', 3)]
+   GATE B: 6/6 PASS
+
+==============================================================================
+GATE 1 — REPRODUCTION OF THE PUBLISHED NATIVE DELTA (prereg §3). Runs first.
+==============================================================================
+   verses=6236  adjacent pairs=6122
+   A(C)=0.34841555   A(P1)=0.53528259
+   Δ native (R2, P1) = 0.18686703691604045
+   published          = 0.18686703691604045
+   |difference|       = 0.000e+00   tolerance 1e-12
+   GATE 1: PASS — exact reproduction.
+   (H-NEW-2930 and the brief write this as 0.18690; that is 0.186867 at 4 dp.)
+
+==============================================================================
+THE AXIS (prereg §4) — a correction declared before the run, not after it.
+==============================================================================
+   this corpus under arabic_words(): 77429 words / 6236 verses = 12.4165 words per verse
+   h-new-2890.py prints this same figure for this corpus, as '12.4', on the same tokeniser it measured the nine prose books with.
+   H-NEW-2930 instead used 82260 words / 6236 = 13.1911 from the Tanzil .txt — a different file with different word splitting, plugged into a fit calibrated on arabic_words lengths.
+
+==============================================================================
+THE PROSE BASELINE — reconstructed from the frozen H-NEW-2910 result (prereg §7).
+==============================================================================
+   book           len |   S5_all    S5_rd   S3_all    S3_rd   S0_all    S0_rd |      max     2930
+   darimi       49.16 |  0.02807  0.02834  0.02715  0.02743  0.02809  0.02835 |  0.02835  0.02835
+   ibnmajah     58.45 |  0.04003  0.04134  0.03834  0.03960  0.03924  0.04051 |  0.04134  0.04134
+   nasai        59.04 |  0.02790  0.02871  0.03166  0.03257  0.02887  0.02973 |  0.03257  0.03257
+   malik        63.01 |  0.03693  0.03768  0.03265  0.03333  0.03391  0.03458 |  0.03768  0.03768
+   abudawud     63.12 |  0.02604  0.02694  0.02675  0.02761  0.02618  0.02707 |  0.02761  0.02761
+   muslim       64.61 |  0.03139  0.03249  0.03143  0.03239  0.03134  0.03246 |  0.03249  0.03249
+   bukhari      73.23 |  0.02802  0.02965  0.03031  0.03180  0.02981  0.03162 |  0.03180  0.03180
+   ahmed        73.61 |  0.02564  0.02568  0.02627  0.02632  0.02343  0.02346 |  0.02632  0.02632
+   tirmidhi     91.12 |  0.01279  0.01369  0.01530  0.01623  0.01174  0.01255 |  0.01623  0.01623
+
+   Every one of H-NEW-2930's nine values is the MAXIMUM over that book's six cells ({S5,S3,S0} x {all,readable}); H-NEW-2910 designates no primary segmentation.
+   Cells selected: darimi:S0_readable, ibnmajah:S5_readable, nasai:S3_readable, malik:S5_readable, abudawud:S3_readable, muslim:S5_readable, bukhari:S3_readable, ahmed:S3_readable, tirmidhi:S3_readable
+   That selection INFLATES the prose baseline, so it makes the residual CONSERVATIVE.
+
+   set                  slope  intercept    mean Δ
+   2930_max       -0.00039757    0.05679   0.03049
+   S5_readable    -0.00044435    0.05879   0.02939
+   S3_readable    -0.00036031    0.05353   0.02970
+   S0_readable    -0.00046425    0.05964   0.02893
+
+   FIT GATE: PASS — refit reproduces H-NEW-2930's published slope -0.000398 and intercept 0.05679.
+   mean Δ of the 2930 table = 0.0304882 (the '~0.030' of the decision rule; prereg §7 primary target 0.0304878)
+   2930 predicted Δ at its off-axis 13.21 : 0.05154 -> residual 3.626x  (its published 3.63x)
+   on-axis prediction at 12.4165        : 0.05185 -> residual 3.604x
+
+==============================================================================
+THE MERGE (prereg §5). Units never span a surah; a unit's label is the label of the JOINED text, gated against the label of its last constituent verse.
+==============================================================================
+
+   PRIMARY ARM — target 65 words
+   target  65  M1_greedy  T=59   units= 1189 len= 65.121 pairs= 1075 | A(C)=0.27163 A(P1)=0.45953 Δ=0.18791
+                          fit pred at that length = 0.03090 -> residual 6.082x | f vs 0.0304878 = -0.0067
+   target  65  M2_fixed   g=5    units= 1288 len= 60.116 pairs= 1174 | A(C)=0.26917 A(P1)=0.47019 Δ=0.20102
+                          fit pred at that length = 0.03289 -> residual 6.113x | f vs 0.0304878 = -0.0905
+
+   MERGE GATE: PASS — 4890 unit labels checked, 0 mismatches; merging is exactly a thinning of the ending sequence.
+   primary arm landed cleanly (|len-65| <= 2.0 and pairs > 500): True
+
+   SECONDARY ARMS — (50, 75, 91) (prereg §6; these gate nothing)
+   target  50  M1_greedy  T=43   units= 1534 len= 50.475 pairs= 1420 | A(C)=0.30000 A(P1)=0.47465 Δ=0.17465
+                          fit pred at that length = 0.03672 -> residual 4.756x | f vs 0.0304878 = +0.0781
+   target  50  M2_fixed   g=4    units= 1599 len= 48.423 pairs= 1485 | A(C)=0.29158 A(P1)=0.46263 Δ=0.17104
+                          fit pred at that length = 0.03754 -> residual 4.557x | f vs 0.0304878 = +0.1012
+   target  75  M1_greedy  T=70   units= 1028 len= 75.320 pairs=  914 | A(C)=0.29540 A(P1)=0.48359 Δ=0.18818
+                          fit pred at that length = 0.02684 -> residual 7.011x | f vs 0.0304878 = -0.0084
+   target  75  M2_fixed   g=6    units= 1085 len= 71.363 pairs=  971 | A(C)=0.27909 A(P1)=0.46550 Δ=0.18641
+                          fit pred at that length = 0.02842 -> residual 6.560x | f vs 0.0304878 = +0.0029
+   target  91  M1_greedy  T=88   units=  853 len= 90.773 pairs=  739 | A(C)=0.26658 A(P1)=0.43437 Δ=0.16779
+                          fit pred at that length = 0.02070 -> residual 8.107x | f vs 0.0304878 = +0.1220
+   target  91  M2_fixed   g=8    units=  824 len= 93.967 pairs=  710 | A(C)=0.28028 A(P1)=0.44789 Δ=0.16761
+                          fit pred at that length = 0.01943 -> residual 8.627x | f vs 0.0304878 = +0.1232
+
+==============================================================================
+DIAGNOSTICS (prereg §9) — declared, non-gating. None can change the verdict.
+==============================================================================
+   M2 phase offset 0/5: len= 60.116 Δ=0.20102 pairs=1174
+   M2 phase offset 1/5: len= 55.986 Δ=0.18046 pairs=1269
+   M2 phase offset 2/5: len= 56.683 Δ=0.17332 pairs=1252
+   M2 phase offset 3/5: len= 57.826 Δ=0.18204 pairs=1225
+   M2 phase offset 4/5: len= 58.837 Δ=0.18469 pairs=1202
+   phase mean Δ = 0.18431 sd = 0.00917
+
+   Δ at verse lag L, no merging — isolates distance decay from the merge grid:
+      lag  1 (~ 12.42 words apart): Δ=0.18687  pairs=6122
+      lag  2 (~ 24.83 words apart): Δ=0.18159  pairs=6008
+      lag  3 (~ 37.25 words apart): Δ=0.18018  pairs=5894
+      lag  4 (~ 49.67 words apart): Δ=0.17551  pairs=5783
+      lag  5 (~ 62.08 words apart): Δ=0.17924  pairs=5674
+      lag  6 (~ 74.50 words apart): Δ=0.17256  pairs=5569
+      lag  8 (~ 99.33 words apart): Δ=0.17074  pairs=5365
+      lag 10 (~124.16 words apart): Δ=0.16370  pairs=5174
+
+   randomised segmentation, geometric boundaries at the same mean length (seeds 20260509 / 20260519):
+      [primary] len=60.353 mean Δ=0.18207 sd=0.01065 f=+0.0306
+      [replication] len=60.529 mean Δ=0.18266 sd=0.01104 f=+0.0269
+
+==============================================================================
+VERDICT — prereg §8, printed against its own grid.
+==============================================================================
+   Δ native              = 0.18687   (published, reproduced exactly)
+   Δ merged at 65.121 w  = 0.18791
+   prose target          = 0.03049  (mean of H-NEW-2930's nine-book table)
+   gap                   = 0.15638
+   gap closed            = -0.00104
+
+   f = FRACTION OF THE GAP CLOSED = -0.0067  (-0.67%)
+
+   f against the internally consistent alternatives (prereg §7):
+      vs mean of 2930_max       (0.03049) : f = -0.0067   | vs fit at 65.1w (0.03090) : f = -0.0067   residual 6.082x
+      vs mean of S5_readable    (0.02939) : f = -0.0066   | vs fit at 65.1w (0.02985) : f = -0.0066   residual 6.295x
+      vs mean of S3_readable    (0.02970) : f = -0.0066   | vs fit at 65.1w (0.03007) : f = -0.0066   residual 6.249x
+      vs mean of S0_readable    (0.02893) : f = -0.0066   | vs fit at 65.1w (0.02940) : f = -0.0066   residual 6.391x
+
+   IN-RANGE RESIDUAL RATIO (the successor to 2930's extrapolated 3.63x):
+      Δ_merged / fit prediction at 65.121 words = 6.082x  — no extrapolation; 65.1 sits inside the 49.2-91.1 word prose range.
+
+   prereg §8 grid, verbatim:
+      f >= 0.75          -> FINISHED AND WITHDRAWN (Δ is a unit-length effect)
+      f <= 0.25          -> RESIDUAL REAL AND LARGER than 2930's extrapolation suggested
+      0.25 < f < 0.75    -> PARTIAL, no headline either way
+
+   VERDICT: RESIDUAL REAL AND LARGER than H-NEW-2930's extrapolation suggested
+
+   NOT AT STAKE, restated: H-NEW-2880's within-corpus null (z = +15.03, 0/10,000, floor variance 0.00 across 160,000 draws) is untouched. No cross-corpus unit length enters it.
