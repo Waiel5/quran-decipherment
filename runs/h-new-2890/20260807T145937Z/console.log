@@ -1,0 +1,207 @@
+[SHA-OK] pre-reg locked: 8d5a8af94a49b901e5109a658c22d7f4dce1edf70e9766a1b92b5646bb5a6aec
+[SHA-OK] 3 frozen inputs verified (the parent runner among them)
+
+==============================================================================
+INSTRUMENT — H-NEW-2880's machinery, loaded unmodified (prereg §4).
+It re-verifies its own pre-reg and frozen inputs, and re-runs Gates A and B.
+==============================================================================
+[SHA-OK] pre-reg locked: 87083f50d56cd9802a5656ebc3049da98ee0397e6a0dda657e4d3dbbebe052ab
+[SHA-OK] 8 frozen inputs verified (the parent runner among them)
+
+==============================================================================
+INSTRUMENT — executing sections 0-6 of the pinned parent runner verbatim.
+Gates A and B below are the parent's, re-run, and are reported before any statistic.
+==============================================================================
+[SHA-OK] pre-reg locked: 119753ad7862d66dfead2ff6de1032adee0a824cd7544cd8bc4d6688587508d4
+[SHA-OK] 7 frozen inputs verified
+[LOAD] 114 surahs, 6236 verses
+
+==============================================================================
+GATE A — orthography (prereg §4.1). Reported BEFORE any test statistic.
+==============================================================================
+   U+0657 [ٗ] -> U+064B [ً] : match= 1195 mismatch=  0 rate=1.0000
+   U+065E [ٞ] -> U+064C [ٌ] : match=  580 mismatch=  0 rate=1.0000
+   U+0656 [ٖ] -> U+064D [ٍ] : match=  759 mismatch=  0 rate=1.0000
+   U+064B [ً] -> U+064B [ً] : match=  270 mismatch=  0 rate=1.0000
+   U+064C [ٌ] -> U+064C [ٌ] : match=  179 mismatch=  0 rate=1.0000
+   U+064D [ٍ] -> U+064D [ٍ] : match=  242 mismatch=  0 rate=1.0000
+   tanwin encoded non-standard: 6643  standard: 1911  non-standard share = 0.777
+   GATE A: PASS
+   verse-final word, final vowel-bearing mark (recoverability of the citation form):
+      short-vowel                       3836  0.6151
+      bare(long-vowel/indeclinable)     1233  0.1977
+      tanwin                            1069  0.1714
+      sukun                               98  0.0157
+
+==============================================================================
+GATE B — instrument validation against H-NEW-2240 (prereg §4.4).
+==============================================================================
+   [PASS] Q18 al-Kahf 110/110 open -A: {'A': 110}
+   [PASS] Q112 al-Ikhlas 4/4 -ad: {'aد': 4}
+   [PASS] Q108 al-Kawthar 3/3 -ar: {'aر': 3}
+   [PASS] Q114 al-Nas 6/6 -As: {'Aس': 6}
+   [PASS] Q1 al-Fatiha all in {Im, In}: {'Iم': 3, 'Iن': 4}
+   [PASS] Q55 al-Rahman modal -An: modal=[('Aن', 63), ('Aم', 7), ('Aنن', 3)]
+   GATE B: 6/6 PASS
+
+==============================================================================
+RESULT 1 — CLASS-COLLAPSE MAGNITUDE. Reported before any headline number (prereg §9).
+==============================================================================
+
+   --- rime R2 (tanwin-transparent repair — PRIMARY)
+      C   K=  397  K_eff=  37.029  chance floor sum(p^2)=0.106814  A=0.3484
+      P1  K=  116  K_eff=  10.874  chance floor sum(p^2)=0.168712  A=0.5353
+      P2  K=  115  K_eff=  10.822  chance floor sum(p^2)=0.168758  A=0.5364
+      P3  K=  213  K_eff=  16.890  chance floor sum(p^2)=0.141535  A=0.4360
+      collapse C->P1: K 397/116 = 3.422x   K_eff 3.405x   free arithmetic gain = +0.0619   observed Δ = +0.1869
+      collapse C->P2: K 397/115 = 3.452x   K_eff 3.421x   free arithmetic gain = +0.0619   observed Δ = +0.1880
+      collapse C->P3: K 397/213 = 1.864x   K_eff 2.192x   free arithmetic gain = +0.0347   observed Δ = +0.0876
+      map C->P1: 0 citation types split, 0 verses (0.0000) — the null of §5 is defined only when this is 0
+      map C->P2: 0 citation types split, 0 verses (0.0000) — the null of §5 is defined only when this is 0
+
+   --- rime R1 (as pre-registered by the parent)
+      C   K=  157  K_eff=  14.146  chance floor sum(p^2)=0.138495  A=0.4696
+      P1  K=  116  K_eff=  10.874  chance floor sum(p^2)=0.168712  A=0.5353
+      P2  K=  115  K_eff=  10.822  chance floor sum(p^2)=0.168758  A=0.5364
+      P3  K=  213  K_eff=  16.890  chance floor sum(p^2)=0.141535  A=0.4360
+      collapse C->P1: K 157/116 = 1.353x   K_eff 1.301x   free arithmetic gain = +0.0302   observed Δ = +0.0657
+      collapse C->P2: K 157/115 = 1.365x   K_eff 1.307x   free arithmetic gain = +0.0303   observed Δ = +0.0668
+      collapse C->P3: K 157/213 = 0.737x   K_eff 0.838x   free arithmetic gain = +0.0030   observed Δ = -0.0336
+      map C->P1: 2 citation types split, 1059 verses (0.1698) — the null of §5 is defined only when this is 0
+      map C->P2: 2 citation types split, 1059 verses (0.1698) — the null of §5 is defined only when this is 0
+
+   DECOMPOSITION of the delta (rime R2, tuple P1), restated from the parent:
+      Δ = +0.1869   arithmetic (chance-collision) +0.0619 = 33.1%   compositional +0.1250 = 66.9%
+[OK] Qur'an Δ(P1) recomputed = 0.186867, matches the locked target
+
+==============================================================================
+RESULT 1 — THE ACQUISITION (prereg §9 step 1), and the defect in the parents
+==============================================================================
+   H-NEW-2870 §6.2 and H-NEW-2880 §5.2 both report NO vocalised Arabic prose on disk.
+   Both censused data/baseline-corpora/ ONLY. This corpus has been committed since
+   2026-04-28 at data/literature/hadith/ahmedbaset-json/. The parents' conclusion that
+   the control could not be run was wrong; their prose NUMBERS are unaffected, because
+   the baseline-corpora files really do carry zero harakat.
+   Source manifest, licence position and SHA-256: data/literature/hadith/VOCALISED-HADITH-SOURCE.md
+
+   Qur'anic skeleton n-gram types: trigram 53311, 5-gram 50102
+
+   VOCALISATION SCREEN (prereg §3.1) — threshold >= 0.90 inherited from H-NEW-2870 §6.4
+   book          units  chapters  har/char  UNIT-FINAL VOC  mean_len  contam3  contam5  admit
+   bukhari        7277        97    0.7702          0.9426      73.2    22.5%     4.0%   PASS
+   muslim         7459        57    0.7965          0.9405      64.6    17.8%     3.1%   PASS
+   abudawud       5276        43    0.7962          0.9505      63.1    17.0%     3.1%   PASS
+   tirmidhi       4053        49    0.7954          0.9887      91.1    24.6%     6.2%   PASS
+   nasai          5768        52    0.7883          0.9511      59.0    19.1%     2.1%   PASS
+   ibnmajah       4345        38    0.7911          0.9484      58.5    16.3%     2.0%   PASS
+   malik          1860        61    0.8201          0.9457      63.0    17.7%     2.1%   PASS
+   ahmed          1374         8    0.8829          0.9512      73.6    19.1%     2.9%   PASS
+   darimi         3406        24    0.8659          0.9445      49.2    16.0%     3.1%   PASS
+   QURAN          6236       114    0.7801          0.9843      12.4        -        -      -
+   admissible: 9/9 — bukhari, muslim, abudawud, tirmidhi, nasai, ibnmajah, malik, ahmed, darimi
+
+==============================================================================
+RESULT 2 — CLASS-COLLAPSE MAGNITUDE FOR PROSE, reported before any delta (prereg §9.3)
+==============================================================================
+
+   bukhari [S5] units=6984 (dropped 293), within-chapter pairs=6887, readable pairs=6306 (0.916)
+      C   K=  785  K_eff= 159.698  floor=0.027515  A=0.0715
+      P1  K=  327  K_eff=  57.573  floor=0.062409  A=0.1012
+      P2  K=  325  K_eff=  50.919  floor=0.079485  A=0.1156
+      P3  K=  347  K_eff=  71.970  floor=0.044671  A=0.0848
+      collapse C->P1: K 785/327 = 2.401x   free arithmetic gain = +0.0349
+
+   muslim [S5] units=7226 (dropped 233), within-chapter pairs=7169, readable pairs=6833 (0.953)
+      C   K=  838  K_eff= 160.154  floor=0.030623  A=0.1109
+      P1  K=  347  K_eff=  57.458  floor=0.065730  A=0.1434
+      P2  K=  344  K_eff=  50.577  floor=0.085501  A=0.1563
+      P3  K=  384  K_eff=  72.708  floor=0.047113  A=0.1300
+      collapse C->P1: K 838/347 = 2.415x   free arithmetic gain = +0.0351
+
+   [Qur'an, for reference: K 397->116 = 3.422x, floor 0.1068->0.1687, free gain +0.0619, Δ = +0.1869]
+
+==============================================================================
+RESULT 3 — ARM B: COMPOSED BOUNDARIES. PRIMARY. (prereg §5.1)
+Locked comparison target: the Qur'an's own Δ(P1) = +0.1869
+Locked damage thresholds: >= +0.09343 = COMPARABLE; >= +0.04672 = PARTIAL
+==============================================================================
+   bukhari   [S5] readable pairs n= 6306  A(C)=0.0715  A(P1)=0.1012  Δ(P1)=+0.0297  Δ(P2)=+0.0441   [all pairs: Δ(P1)=+0.0280]
+   bukhari   [S3] readable pairs n= 5063  A(C)=0.0733  A(P1)=0.1051  Δ(P1)=+0.0318  Δ(P2)=+0.0460   [all pairs: Δ(P1)=+0.0303]
+   bukhari   [S0] readable pairs n= 6579  A(C)=0.0719  A(P1)=0.1035  Δ(P1)=+0.0316  Δ(P2)=+0.0468   [all pairs: Δ(P1)=+0.0298]
+   muslim    [S5] readable pairs n= 6833  A(C)=0.1109  A(P1)=0.1434  Δ(P1)=+0.0325  Δ(P2)=+0.0454   [all pairs: Δ(P1)=+0.0314]
+   muslim    [S3] readable pairs n= 5805  A(C)=0.1082  A(P1)=0.1406  Δ(P1)=+0.0324  Δ(P2)=+0.0451   [all pairs: Δ(P1)=+0.0314]
+   muslim    [S0] readable pairs n= 7054  A(C)=0.1100  A(P1)=0.1425  Δ(P1)=+0.0325  Δ(P2)=+0.0452   [all pairs: Δ(P1)=+0.0313]
+
+==============================================================================
+RESULT 4 — ARM A: LENGTH-MATCHED CUTS (prereg §5.2)
+Locked comparison target: the Qur'an's own pseudo-fāṣila re-cut Δ = +0.0284 (arbitrary cuts against arbitrary cuts)
+==============================================================================
+   bukhari   [S5] 200 matched cuts:  Δ(P1) mean=+0.0120 sd=0.0014 max=+0.0168   Δ(P2) mean=+0.0155
+   bukhari   [S3] 200 matched cuts:  Δ(P1) mean=+0.0116 sd=0.0015 max=+0.0155   Δ(P2) mean=+0.0150
+   bukhari   [S0] 200 matched cuts:  Δ(P1) mean=+0.0120 sd=0.0014 max=+0.0155   Δ(P2) mean=+0.0154
+   muslim    [S5] 200 matched cuts:  Δ(P1) mean=+0.0128 sd=0.0015 max=+0.0176   Δ(P2) mean=+0.0168
+   muslim    [S3] 200 matched cuts:  Δ(P1) mean=+0.0128 sd=0.0016 max=+0.0185   Δ(P2) mean=+0.0166
+   muslim    [S0] 200 matched cuts:  Δ(P1) mean=+0.0128 sd=0.0014 max=+0.0168   Δ(P2) mean=+0.0168
+
+==============================================================================
+RESULT 5 — THE REGISTERED TESTS (prereg §8)
+==============================================================================
+   D-P1 bukhari   [S5] P1: Δ_Qurʾān(+0.1869) − Δ_prose(+0.0297) = +0.1572  p=0.00010 (rep 0.00010)  PASS
+   D-P1 bukhari   [S5] P2: Δ_Qurʾān(+0.1880) − Δ_prose(+0.0441) = +0.1439  p=0.00010 (rep 0.00010)  PASS
+   D-P1 bukhari   [S3] P1: Δ_Qurʾān(+0.1869) − Δ_prose(+0.0318) = +0.1551  p=0.00010 (rep 0.00010)  PASS
+   D-P1 bukhari   [S3] P2: Δ_Qurʾān(+0.1880) − Δ_prose(+0.0460) = +0.1420  p=0.00010 (rep 0.00010)  PASS
+   D-P1 bukhari   [S0] P1: Δ_Qurʾān(+0.1869) − Δ_prose(+0.0316) = +0.1553  p=0.00010 (rep 0.00010)  PASS
+   D-P1 bukhari   [S0] P2: Δ_Qurʾān(+0.1880) − Δ_prose(+0.0468) = +0.1412  p=0.00010 (rep 0.00010)  PASS
+   D-P1 muslim    [S5] P1: Δ_Qurʾān(+0.1869) − Δ_prose(+0.0325) = +0.1544  p=0.00010 (rep 0.00010)  PASS
+   D-P1 muslim    [S5] P2: Δ_Qurʾān(+0.1880) − Δ_prose(+0.0454) = +0.1426  p=0.00010 (rep 0.00010)  PASS
+   D-P1 muslim    [S3] P1: Δ_Qurʾān(+0.1869) − Δ_prose(+0.0324) = +0.1545  p=0.00010 (rep 0.00010)  PASS
+   D-P1 muslim    [S3] P2: Δ_Qurʾān(+0.1880) − Δ_prose(+0.0451) = +0.1429  p=0.00010 (rep 0.00010)  PASS
+   D-P1 muslim    [S0] P1: Δ_Qurʾān(+0.1869) − Δ_prose(+0.0325) = +0.1544  p=0.00010 (rep 0.00010)  PASS
+   D-P1 muslim    [S0] P2: Δ_Qurʾān(+0.1880) − Δ_prose(+0.0452) = +0.1428  p=0.00010 (rep 0.00010)  PASS
+
+   D-P2 bukhari   [S5] P1: prose matched-cut Δ=+0.0120 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 bukhari   [S5] P2: prose matched-cut Δ=+0.0155 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 bukhari   [S3] P1: prose matched-cut Δ=+0.0116 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 bukhari   [S3] P2: prose matched-cut Δ=+0.0150 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 bukhari   [S0] P1: prose matched-cut Δ=+0.0120 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 bukhari   [S0] P2: prose matched-cut Δ=+0.0154 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 muslim    [S5] P1: prose matched-cut Δ=+0.0128 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 muslim    [S5] P2: prose matched-cut Δ=+0.0168 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 muslim    [S3] P1: prose matched-cut Δ=+0.0128 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 muslim    [S3] P2: prose matched-cut Δ=+0.0166 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 muslim    [S0] P1: prose matched-cut Δ=+0.0128 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+   D-P2 muslim    [S0] P2: prose matched-cut Δ=+0.0168 vs the Qurʾān's own re-cut Δ=+0.0284  -> prose <= Qurʾān re-cut
+
+   D-P3 — prose against ITS OWN exact zero-variance-floor null (prereg §6).
+   NOTE, locked in prereg §7: z is NOT comparable across corpora of different size and
+   class structure. Δ is the primary comparison; this is secondary and descriptive.
+   D-P3 bukhari   [S5] P1: E_obs=0.0514 null E mean=0.0467 sd=0.0037 #>=obs=1028 p=0.10289 z=+1.26  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 bukhari   [S5] P2: E_obs=0.0522 null E mean=0.0445 sd=0.0052 #>=obs=1250 p=0.12509 z=+1.48  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 bukhari   [S3] P1: E_obs=0.0534 null E mean=0.0472 sd=0.0040 #>=obs=394 p=0.03950 z=+1.55  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 bukhari   [S3] P2: E_obs=0.0550 null E mean=0.0455 sd=0.0055 #>=obs=568 p=0.05689 z=+1.76  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 bukhari   [S0] P1: E_obs=0.0530 null E mean=0.0467 sd=0.0043 #>=obs=588 p=0.05889 z=+1.44  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 bukhari   [S0] P2: E_obs=0.0543 null E mean=0.0452 sd=0.0054 #>=obs=611 p=0.06119 z=+1.71  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 muslim    [S5] P1: E_obs=0.0945 null E mean=0.0857 sd=0.0030 #>=obs=1 p=0.00020 z=+2.88  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 muslim    [S5] P2: E_obs=0.0926 null E mean=0.0852 sd=0.0037 #>=obs=179 p=0.01800 z=+2.03  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 muslim    [S3] P1: E_obs=0.0912 null E mean=0.0819 sd=0.0029 #>=obs=3 p=0.00040 z=+3.16  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 muslim    [S3] P2: E_obs=0.0889 null E mean=0.0808 sd=0.0038 #>=obs=114 p=0.01150 z=+2.13  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 muslim    [S0] P1: E_obs=0.0932 null E mean=0.0846 sd=0.0030 #>=obs=0 p=0.00010 z=+2.90  [Qurʾān z=+15.03]  floor dev=0.0e+00
+   D-P3 muslim    [S0] P2: E_obs=0.0909 null E mean=0.0837 sd=0.0036 #>=obs=190 p=0.01910 z=+2.02  [Qurʾān z=+15.03]  floor dev=0.0e+00
+
+==============================================================================
+VERDICT — logic diffed against prereg §8, printed before declaration.
+==============================================================================
+   prereg §8 grid, verbatim:
+     no admissible text                                  -> CONTROL UNAVAILABLE
+     Δ_prose(Arm B) >= +0.09343 under ANY of S5/S3/S0     -> H-NEW-2880 DAMAGED
+     +0.04672 <= Δ_prose < +0.09343 under any setting     -> PARTIAL, amend 2880's limits
+     Δ_prose < +0.04672 under ALL three AND D-P1 passes   -> CONTROL PASSES
+     Δ_prose < +0.04672 but D-P1 fails                    -> INCONCLUSIVE
+   The verdict is taken on the WORST setting, not the best.
+   Bonferroni k = 36 -> alpha = 0.00138889
+
+   worst-case Δ_prose(Arm B, P1, readable) = +0.03249 (muslim, S5)
+   [disclosure, gates nothing] worst case over BOTH tuples = +0.04682 (bukhari, S0, P2); quarter threshold = +0.04672; that reading would give: PARTIAL
+   D-P1 passes at alpha in all 12 arms: True
+
+   VERDICT: CONTROL PASSES — H-NEW-2880's interpretation survives

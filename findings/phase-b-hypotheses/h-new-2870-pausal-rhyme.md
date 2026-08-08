@@ -424,6 +424,31 @@ must be visible.
 
 ## 12. Classical anchor — **NONE CITED, and this is a gap**
 
+> ## ⛔ CORRECTION — 2026-08-07: THE ANCHOR IS ON DISK. This section's conclusion is withdrawn.
+>
+> **Everything below about the English PDF is correct. The conclusion drawn from it is not.**
+> H-NEW-2900's repository-wide sweep found the **Arabic** Itqān in the same directory:
+> `data/literature/classical-tafsir/raw/suyuti-itqan.openiti.raw.txt`, 1,018,548 Arabic
+> characters, containing at **PageV01P281**:
+>
+> `### | النوع الثامن والعشرون: في معرفة الوقف والابتداء`
+>
+> — *the twenty-eighth nawʿ, on knowledge of waqf and ibtidāʾ* — with its body text, opening by
+> naming those who wrote monographs on it: *"أفرده بالتصنيف خلائق منهم أبو جعفر النحاس وابن
+> الأنباري والزجاج والداني والعماني والسجاوندي"* (al-Nahhās, Ibn al-Anbārī, al-Zajjāj,
+> **al-Dānī**, al-ʿUmānī, **al-Sajāwandī**), and calling it *"فن جليل به يعرف كيف أداء القراءة"*
+> — a noble science by which the manner of performing the recitation is known. The file carries
+> **140** occurrences of الوقف and **74** of الابتداء.
+>
+> **The anchor for this finding is therefore: al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 28,
+> *fī maʿrifat al-waqf wa-l-ibtidāʾ*, V01 p. 281.** The *waqf* rules this finding operationalises
+> are the ones the tradition itself sets out under that heading.
+>
+> **How the error was made, kept on the record because it generalises:** the search below
+> established, correctly, that a **partial English translation** lacked the nawʿ — and that true
+> statement about one file was generalised into *"No citable primary waqf source is on disk"*.
+> **A property of one file is not a property of the work.** See `findings/ABSENCE-CLAIMS.md`.
+
 The brief named `suyuti-al-itqan-fi-ulum-al-quran-english.pdf` nawʿ 27 (waqf). **It is not in
 that file.** Checked before locking:
 

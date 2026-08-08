@@ -6,8 +6,10 @@ date: 2026-08-07
 author: Waiel Al-Shujaa
 frontier_item: F-16
 parents: [H-NEW-2880, H-NEW-2870]
+verdict: "CONTROL PASSES — vocalised Classical Arabic prose gains Δ = +0.030 to +0.033 at its own composed boundaries against this corpus's +0.1869. Cite with §7.1: under a worst-case-over-both-tuples reading the verdict would be PARTIAL, by a margin of 0.00010. Three of twelve D-P3 arms clear α in the damaging direction (§6.1)."
 prereg: prereg-h-new-2890-prose-control.md
 prereg_sha256: 8d5a8af94a49b901e5109a658c22d7f4dce1edf70e9766a1b92b5646bb5a6aec
+run: runs/h-new-2890/20260807T145937Z/
 seed: 20260509
 seed_replication: 20260519
 n_perm: 10000
@@ -18,46 +20,41 @@ source_manifest: data/literature/hadith/VOCALISED-HADITH-SOURCE.md
 
 # H-NEW-2890 — the prose control that both parents said could not be run
 
-> # ⛔ THIS FINDING WAS PUBLISHED INCOMPLETE — DO NOT CITE THE VERDICT
+> ### Publication record — this finding was published incomplete and was completed afterwards
 >
-> **Committed and pushed in commit `cf34b5b73` while its run was still executing.** At the time
-> of that commit this file contained two unfilled placeholders (§6.1 and §7), had no `run:`
-> frontmatter field, and **no run directory existed**. The orchestrator committed it under a
-> `git add -A` sweep and then described it to the project owner as a completed, publishable
-> result. Both were errors, and the second was worse than the first.
+> **Commit `cf34b5b73` published this file while its run was still executing.** At that moment
+> §6.1 and §7 were unfilled placeholders, there was no `run:` frontmatter field, and no run
+> directory existed. It was then described to the project owner as a completed, publishable
+> result. Both were errors.
 >
-> **What is FINAL and reproducible** (these do not depend on the unfinished permutation arms):
-> - The census defect that motivated this test — 50,884 fully vocalised ḥadīth already committed,
->   at ḥarakāt densities 0.7702–0.8829 against this corpus's 0.7801.
-> - **Arm B**, composed-boundary deltas: prose **+0.0297 to +0.0325** against this corpus's
->   **+0.1869**.
-> - **Arm A**, matched cuts: **+0.0116 to +0.0128** against the re-cut baseline **+0.0284**.
-> - **D-P1**: 12/12 arms, p = 0.0001, both seeds.
-> - The collapse decomposition: prose free gain **+0.0349** against an observed **+0.0297**,
->   leaving a **NEGATIVE compositional remainder of −0.0052**.
+> **They are now corrected. §6.1 and §7 are filled from
+> `runs/h-new-2890/20260807T145937Z/result.json` and from nothing else** — not from the partial
+> arms visible at commit time, and not from the 200-draw smoke run whose figures were briefly
+> quoted into H-NEW-2880 §5.2 and have since been replaced with the measured values.
 >
-> **What is NOT established as of that commit:**
-> - **D-P3** — whether prose clears its OWN exactly-matched null. Four of twelve arms had run
->   (z = +1.26, +1.48, +1.55, +1.76); the Muslim arms were not computed.
-> - **The locked verdict.** There was none.
+> **The cause, recorded because it generalises:** a partial finding was written to its final
+> path intending to be completed later, and any lane's `git add -A` can capture such a file at
+> any instant — the hazard `UNIT-DRIFT-DEFECT.md` §7 already documents for run directories.
+> **The rule that follows: never write a partial finding to its final path. Draft outside the
+> findings tree, or write the file only once the run directory exists.**
 >
-> **The claim "prose does not clear its own matched null" was NOT established at commit time and
-> must not be cited from that commit.** The figures "z = +1.3 to +3.2" that were placed into
-> H-NEW-2880 §5.2 came from a **200-draw smoke run**, not the registered 10,000-draw run, and are
-> withdrawn pending the real arms.
->
-> The specialist lane caught this and halted it. This banner stands until the run completes and
-> §6.1 and §7 are filled from `result.json`.
-
+> Nothing in the finding's substance changed between the incomplete commit and this completion:
+> Arm A, Arm B, D-P1 and the collapse decomposition were final at commit time and are unaltered.
+> What was genuinely missing — D-P3 and the verdict — is now present, **and D-P3 returns three
+> failures in twelve arms, which is reported in §6.1 rather than smoothed over.**
 
 **One-line summary.** H-NEW-2870 and H-NEW-2880 both reported the vocalised-prose negative
-control as **NOT COMPUTABLE**. **Both were wrong, and the error was mine as well as theirs: the
-census that produced the claim enumerated one directory.** A repository-wide ḥarakāt census
-found 50,884 fully vocalised ḥadīth already committed, at ḥarakāt densities of 0.7702–0.8829
-against this corpus's own 0.7801. The control was then run on H-NEW-2880's instrument,
-unmodified. **Vocalised Classical Arabic prose gains Δ = +0.030 to +0.033 at its own composed
-boundaries against this corpus's +0.1869 — about one sixth — and it does not clear its own
-exactly-matched null.**
+control as **NOT COMPUTABLE**. **Both were wrong, and the error was mine as well as theirs.** A
+repository-wide ḥarakāt census found 50,884 fully vocalised ḥadīth already committed, at
+ḥarakāt densities of 0.7702–0.8829 against this corpus's own 0.7801. The control was then run
+on H-NEW-2880's instrument, unmodified. **Vocalised Classical Arabic prose gains Δ = +0.030 to
++0.033 at its own composed boundaries against this corpus's +0.1869 — about one sixth — and its
+excess over its own exactly-matched null is z = +1.26 to +3.16 against this corpus's +15.03.**
+
+**Two things must travel with that.** Prose's excess over its own null is small but **not
+uniformly absent: three of twelve D-P3 arms clear α**, all of them Ṣaḥīḥ Muslim under tuple P1
+(§6.1). And the verdict's margin is thin under one alternative reading of the locked threshold
+(§7.1). Neither changes the Δ comparison, which is what the verdict gates on.
 
 ---
 
@@ -72,8 +69,18 @@ all."* The sentence is true and the inference drawn from it was not. **The censu
 do carry zero ḥarakāt — but the conclusion "the delta is not computable" should have read "not
 computable *from the baseline corpora*".
 
+**And the narrow census is not the worst of it.** The H-NEW-2900 sweep established that
+**H-NEW-2730 — the finding H-NEW-2870's own frontmatter names as `method_parent_2` — had
+already run "an exhaustive sweep of `data/`", found this corpus, and measured Ṣaḥīḥ al-Bukhārī
+at diacritic ratio 0.770 and Sunan al-Dārimī at 0.866**, using both as its prose control. The
+independent measurements here are 0.7702 and 0.8659: **agreement to three decimals, which is
+the proof that nothing on disk changed and only the claim did.** `STATE-OF-THE-PROJECT` §5.4a
+says the same thing in the document every pre-flight mandates.
+
 > **The transferable lesson, and it is cheap: an absence claim is only as wide as the search
-> that produced it. State the search, not just the absence.**
+> that produced it. State the search, not just the absence — and grep your cited parents before
+> asserting one.** Generalised, with the repository-wide inventory, in
+> `findings/ABSENCE-CLAIMS.md`.
 
 A correction notice has been added to H-NEW-2880 §5.2. Source, provenance, licence position and
 SHA-256 for every file: `data/literature/hadith/VOCALISED-HADITH-SOURCE.md`.
@@ -221,15 +228,85 @@ below target in **12 / 12** arms (§5).
 
 The decisive form of the question. H-NEW-2880's exact zero-variance-floor null is applied to
 prose's own partition: every draw carries prose's own class-size multiset, hence prose's own
-chance floor, to the last bit.
+chance floor, to the last bit. **Floor deviation is 0.0 × 10⁰ in all twelve arms**, so the
+instrument's exactness gate holds on prose exactly as it did on this corpus.
 
-*(Filled from the run below.)*
+| text | setting | tuple | E_obs | null E mean | sd | null max | #≥obs / 10,000 | **p** | **z** | replication | clears α? |
+|:--|:--|:--|--:|--:|--:|--:|--:|--:|--:|--:|:--|
+| al-Bukhārī | S5 | P1 | 0.0514 | 0.0467 | 0.0037 | 0.0563 | 1,028 | 0.10289 | **+1.26** | 0.10609 | no |
+| al-Bukhārī | S5 | P2 | 0.0522 | 0.0445 | 0.0052 | 0.0586 | 1,250 | 0.12509 | +1.48 | 0.13059 | no |
+| al-Bukhārī | S3 | P1 | 0.0534 | 0.0472 | 0.0040 | 0.0581 | 394 | 0.03950 | +1.55 | 0.04060 | no |
+| al-Bukhārī | S3 | P2 | 0.0550 | 0.0455 | 0.0055 | 0.0625 | 568 | 0.05689 | +1.76 | 0.06049 | no |
+| al-Bukhārī | S0 | P1 | 0.0530 | 0.0467 | 0.0043 | 0.0579 | 588 | 0.05889 | +1.44 | 0.06459 | no |
+| al-Bukhārī | S0 | P2 | 0.0543 | 0.0452 | 0.0054 | 0.0601 | 611 | 0.06119 | +1.71 | 0.05779 | no |
+| **Muslim** | **S5** | **P1** | 0.0945 | 0.0857 | 0.0030 | 0.0961 | **1** | **0.00020** | **+2.88** | 0.00030 | **YES** |
+| Muslim | S5 | P2 | 0.0926 | 0.0852 | 0.0037 | 0.0969 | 179 | 0.01800 | +2.03 | 0.01680 | no |
+| **Muslim** | **S3** | **P1** | 0.0912 | 0.0819 | 0.0029 | 0.0917 | **3** | **0.00040** | **+3.16** | 0.00030 | **YES** |
+| Muslim | S3 | P2 | 0.0889 | 0.0808 | 0.0038 | 0.0920 | 114 | 0.01150 | +2.13 | 0.01130 | no |
+| **Muslim** | **S0** | **P1** | 0.0932 | 0.0846 | 0.0030 | 0.0929 | **0** | **0.00010** | **+2.90** | 0.00020 | **YES** |
+| Muslim | S0 | P2 | 0.0909 | 0.0837 | 0.0036 | 0.0949 | 190 | 0.01910 | +2.02 | 0.01830 | no |
+| ***this corpus*** | — | *P1* | *0.3666* | *0.2266* | *0.0093* | *0.2635* | ***0*** | ***0.0001*** | ***+15.03*** | *0.0001* | *yes* |
+
+> ### **THREE OF TWELVE D-P3 ARMS CLEAR α IN THE DAMAGING DIRECTION, AND THAT IS A REGISTERED
+> ### INFERENCE FAILING.**
+>
+> All three are **Muslim under tuple P1**, at p = 0.00010–0.00040 and z = +2.88 to +3.16, and
+> they replicate at the second seed. **Ṣaḥīḥ Muslim's pausal merges do carry a small but real
+> excess over a regrouping of identical coarseness.** al-Bukhārī's six arms do not (p = 0.040
+> to 0.125), and no P2 arm does.
+
+**What mitigates it, and what does not.** The pre-registration anticipated this in writing —
+§7 states that *"prose isnād chains repeat proper names locally, so some excess over a random
+regrouping is expected in any Arabic prose"*, and that *"what would damage H-NEW-2880 is a
+large prose **Δ**"*, with z declared **not** comparable across corpora of different size and
+class structure. **An anticipated failure is still a failure**, and it is recorded here as one
+rather than dissolved into the caveat that predicted it.
+
+**What it does not do is touch the verdict**, which gates on Δ (§7). The magnitude gap is the
+point: prose's standardised excess is **+2.9 to +3.2** where this corpus reaches **+15.03**,
+and prose's excess sits on a Δ of +0.033 against +0.1869.
 
 ---
 
 ## 7. Verdict
 
-*(Filled from the run below.)*
+The runner printed prereg §8's grid verbatim, then its computed decisions, then the verdict.
+Run `runs/h-new-2890/20260807T145937Z/`.
+
+| locked outcome | measured |
+|:--|:--|
+| no admissible text → CONTROL UNAVAILABLE | 9/9 books admissible |
+| Δ_prose(Arm B) ≥ **+0.09343** under any setting → **2880 DAMAGED** | worst = +0.03249 — **not reached** |
+| **+0.04672** ≤ Δ_prose < +0.09343 → PARTIAL, amend 2880 | worst = +0.03249 — **not reached** |
+| Δ_prose < +0.04672 under all three **and** D-P1 passes | **+0.03249**, and D-P1 **12/12** at α |
+
+> ## **VERDICT: CONTROL PASSES — H-NEW-2880's interpretation survives**
+>
+> Worst-case Δ_prose over both texts and all three stripping settings: **+0.03249**
+> (Muslim, S5) — **17.4 %** of this corpus's +0.1869, and 30 % below the quarter-threshold
+> that would have forced an amendment.
+
+### 7.1 The disclosure that must travel with the verdict
+
+**The locked threshold quantity is tuple P1** (prereg §7, *"Arm B, **P1**, rime R2, setting
+S5"*), and §8 extends the worst case over the three stripping settings. A reader could instead
+take the worst case over **both** tuples. The runner prints both and gates on P1 as registered:
+
+| reading | worst case | vs quarter threshold +0.04672 | verdict it gives |
+|:--|--:|:--|:--|
+| **as locked — P1 only** | **+0.03249** (Muslim, S5) | 30 % below | **CONTROL PASSES** |
+| worst over both tuples | **+0.04682** (al-Bukhārī, S0, P2) | **exceeds by 0.00010** | PARTIAL |
+
+**Under the stricter reading the finding would return PARTIAL, by a margin of one ten-thousandth
+of a unit of agreement — roughly six adjacent ḥadīth pairs out of 6,579.** The P1 gate was fixed
+in the pre-registration before any prose number existed, and it is not being reinterpreted now;
+but a verdict that turns on 0.00010 should not be reported as comfortable, and it is not.
+**Anyone citing "CONTROL PASSES" should cite this row with it.**
+
+Two further honest notes on the verdict: **three of twelve D-P3 arms fail** (§6.1), and the P2
+tuple runs consistently ~0.014 above P1 in prose because tāʾ marbūṭa → *h* merges a large class
+of feminine endings that ḥadīth prose uses heavily — which is why the tuple choice moves the
+number at all.
 
 ---
 
@@ -255,7 +332,14 @@ chance floor, to the last bit.
 6. **E's absolute level is not comparable across corpora.** The prose exact null takes its floor
    from all units and its agreement from readable pairs; the floor is constant across draws so
    the p-value is unaffected, but the E *level* should not be read against this corpus's E.
-7. **This control does not rescue what it does not touch.** H-NEW-2880 §10 stands: the
+7. **The classical anchor, which this family recorded as missing, is on disk and is now cited.**
+   H-NEW-2900 found the **Arabic** Itqān at
+   `data/literature/classical-tafsir/raw/suyuti-itqan.openiti.raw.txt`, carrying
+   `النوع الثامن والعشرون: في معرفة الوقف والابتداء` in full at **PageV01P281**.
+   **Anchor for the whole pausal family: al-Suyūṭī, *al-Itqān*, nawʿ 28, *fī maʿrifat al-waqf
+   wa-l-ibtidāʾ*, V01 p. 281.** This is the *second* false absence corrected in this family, by
+   the same mechanism as the first, and it is why `findings/ABSENCE-CLAIMS.md` exists.
+8. **This control does not rescue what it does not touch.** H-NEW-2880 §10 stands: the
    deliberately wrong pausal tuple also clears its own exact null, so within the pausal family
    the discrimination remains quantitative rather than categorical.
 

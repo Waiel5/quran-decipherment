@@ -257,9 +257,17 @@ clear α, and they are named here rather than left in the JSON.
 >
 > **The control's result, for anyone reading this section for it:** vocalised ḥadīth prose gains
 > **Δ = +0.030 to +0.033** at its own composed boundaries, against this corpus's **+0.1869** —
-> about one sixth — and its excess over its own exactly-matched null is **z = +1.3 to +3.2**
-> against this corpus's **z = +15.03**. **The control behaves.** See
-> `h-new-2890-vocalised-prose-control.md`.
+> about one sixth — and its excess over its own exactly-matched null is **z = +1.26 to +3.16**
+> against this corpus's **z = +15.03**. **The control behaves**, with two qualifications that
+> must travel with it: **three of twelve of the prose null-arms clear α** (all Ṣaḥīḥ Muslim
+> under tuple P1, p = 0.00010–0.00040), and the verdict's margin is thin under one alternative
+> reading of its locked threshold. See `h-new-2890-vocalised-prose-control.md` §6.1 and §7.1.
+>
+> *(Figure corrected 2026-08-07. This row first read "z = +1.3 to +3.2", which came from a
+> **200-draw smoke run** and was quoted here before the registered 10,000-draw run had finished.
+> The range above is the measured one, from `runs/h-new-2890/20260807T145937Z/result.json`. The
+> smoke figure happened to be close; it was still not a result, and quoting it was the same
+> class of error this notice exists to record.)*
 
 Re-measured: `bukhari-noquran.txt` carries **0** ḥarakāt over 2,056,880 Arabic characters;
 `jahiz-hayawan.txt` **0** over 1,422,374. A census of all 36 baseline corpora on disk found no
@@ -395,11 +403,17 @@ one by construction, under three different constructions, at two seeds.
 5. **The "citation form" is the Ḥafṣ mushaf's written iʿrāb**, itself a recitational tradition
    rather than a neutral pre-recitational baseline. The contrast is waṣl-vs-waqf *within* one
    reading.
-6. **No classical anchor is cited, because none is on disk in citable form.** The parent
-   established this: al-Suyūṭī's Itqān PDF is Muneer Fareed's partial translation and lacks the
-   *waqf* nawʿ entirely; al-Zarkashī's *Burhān*, which has it, is a scan with no text layer
-   (`pdftotext` returns 0 characters); no Ibn al-Jazarī *al-Nashr* or al-Dānī is present.
-   **No citation was invented.** Acquisition need: a text-layer *al-Burhān* or *al-Nashr* vol. 1.
+6. ~~**No classical anchor is cited, because none is on disk in citable form.**~~ **WITHDRAWN
+   2026-08-07 — the anchor is on disk and this finding now has one.** The claim was inherited
+   from the parent, which correctly established that the **English partial translation** lacks
+   the *waqf* nawʿ and then generalised that to the repository. H-NEW-2900 found the **Arabic**
+   Itqān in the same directory: `data/literature/classical-tafsir/raw/suyuti-itqan.openiti.raw.txt`
+   carries `النوع الثامن والعشرون: في معرفة الوقف والابتداء` in full at **PageV01P281**, naming
+   al-Nahhās, Ibn al-Anbārī, al-Zajjāj, al-Dānī, al-ʿUmānī and al-Sajāwandī.
+   **Anchor: al-Suyūṭī, *al-Itqān*, nawʿ 28, *fī maʿrifat al-waqf wa-l-ibtidāʾ*, V01 p. 281.**
+   What remains genuinely absent: al-Zarkashī's *Burhān* has no text layer (`pdftotext` returns
+   0 characters), and no Ibn al-Jazarī *al-Nashr* or al-Dānī *al-Muqniʿ* is present. **No
+   citation was invented then and none is invented now.**
 7. **The pairwise-adjacency statistic ignores rhyme structure beyond immediate neighbours.** A
    surah rhyming ABAB scores 0 and is not distinguished from an unrhymed one.
 8. **The poetry arm is 234 pairs from three poems**, four of the seven muʿallaqāt having been
