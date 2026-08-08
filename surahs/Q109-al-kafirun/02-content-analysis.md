@@ -141,7 +141,9 @@ The classical name *al-muqashqishatān* ("the two cleansing surahs") refers to Q
 - **Q 109 al-Kāfirūn**: cleanses the believer of *shirk al-shubha* (associative-confusion polytheism) by an explicit refusal of any worship-rotation
 - **Q 112 al-Ikhlāṣ**: cleanses the believer of *shirk al-takyīf* (anthropomorphic-conception polytheism) by stating absolute divine simplicity
 
-Together: **negation + affirmation of tawḥīd**. al-Suyūṭī (*al-Itqān*) and al-Zarkashī (*al-Burhān*) both note this functional pairing. Ibn ʿAbbās is reported to have called them *al-muqashqishatān* in *Tafsīr Ibn ʿAbbās* (the so-called *Tanwīr al-Miqbās* attribution, also reflected in al-Suyūṭī).
+Together: **negation + affirmation of tawḥīd**. al-Suyūṭī (*al-Itqān*) and al-Zarkashī (*al-Burhān*) both note this functional pairing. > **⚠ ATTRIBUTION CORRECTED 2026-08-08.** The *al-muqashqishatān* epithet is **not** traceable to Ibn ʿAbbās on disk: `muqashqish`/`مقشقش` returns **0 hits** in both `en-tafsir-ibn-abbas.txt` and `ar-tafseer-tanwir-al-miqbas.txt`. The only on-disk locus is al-Qurṭubī (2 hits), where he credits the epithet to **al-Aṣmaʿī** (*wa-qāla al-Aṣmaʿī: kāna yuqālu li-qul yā ayyuhā l-kāfirūn wa-qul huwa Llāhu aḥad al-muqashqishatān*) — and his second locus applies it to the **muʿawwidhatān (Q 113 + Q 114)**, not Q 109 + Q 112. Ibn ʿAbbās appears in the same passage saying something else. This is a substantive attribution error independent of the Tanwīr slug collision.
+>
+> Original claim retained: Ibn ʿAbbās is reported to have called them *al-muqashqishatān* in *Tafsīr Ibn ʿAbbās* (the so-called *Tanwīr al-Miqbās* attribution, also reflected in al-Suyūṭī).
 
 The empirical-FR pairing (Q 109 ↔ Q 112 = 0.3611, 4th-closest neighbor) is consistent with the classical doctrinal pairing — see [[Q109-al-kafirun/05-classical-claims-audit|05-classical-claims-audit]] Claim 3.
 
