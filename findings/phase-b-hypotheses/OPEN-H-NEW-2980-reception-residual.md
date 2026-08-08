@@ -54,3 +54,44 @@ should complete on a stable connection.
 Pre-register, SHA-lock, immutable run directory (mode `'x'`, `exist_ok=False`, checkpoints
 outside), never delete a run directory, never edit the pre-registration after the run —
 `scripts/verify-prereg-locks.sh` enforces the last.
+
+---
+
+## PARTIAL RESULT — the concentration census, computed 2026-08-08 (the rosters remain unrun)
+
+Computed directly after a **fifth** consecutive lane died on a connection error. This is the half
+that needed no structural join; **the two rosters still require one and are still open.**
+
+**Reception is extraordinarily concentrated.** Of 5,371 eligible verses, only **749 (13.9%) carry
+a single ḥadīth citation**. The top 20 verses carry **670 of 3,147 citations — 21.3% of all
+reception**.
+
+Top-20 raw counts, reported rather than averaged away:
+
+| verse | citations | books | |
+|:--|--:|--:|:--|
+| **112:1** | **102** | 9 | *qul huwa Llāhu aḥad* |
+| 87:1 | 63 | 8 | *sabbiḥ isma rabbika l-aʿlā* |
+| 109:1 | 55 | 7 | *qul yā ayyuhā l-kāfirūn* |
+| 64:1 | 54 | 8 | *yusabbiḥu li-Llāhi mā fī l-samāwāt* |
+| 65:2 | 36 | 9 | the ṭalāq witness verse |
+| 3:77 | 34 | 7 | those who sell God's covenant cheaply |
+| 33:21 | 33 | 6 | *uswatun ḥasana* |
+| 25:68 | 32 | 5 | the ʿibād al-Raḥmān prohibitions |
+| 1:7 | 30 | 8 | *ṣirāṭa lladhīna anʿamta* |
+| 2:158 | 27 | 8 | Ṣafā and Marwa |
+
+Then 2:125, 113:1, 2:187, 2:196, 24:37, 4:95, 48:2, 88:1, 92:5, 114:1.
+
+**Q 112:1 alone carries 102 citations across all nine books** — the single most received verse in
+the canonical ḥadīth corpus by this measure, and by a factor of 1.6 over the next.
+
+**This vindicates the rank-only constraint empirically rather than by assumption.** With 86% of
+eligible verses at zero and a fifth of all reception in twenty verses, any mean-based statistic on
+this distribution would be meaningless.
+
+### Still open
+The two rosters — *structurally extreme but rarely cited*, and *heavily cited but structurally
+ordinary* — require joining to `csv/h-new-590.json` and `csv/h-new-840.json`, **both of which are
+per-SURAH while reception is per-VERSE.** That mapping is a design decision, not a mechanical
+join, and must be pre-registered rather than improvised. **Not attempted here.**
