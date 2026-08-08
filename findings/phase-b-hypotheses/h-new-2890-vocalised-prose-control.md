@@ -18,6 +18,38 @@ source_manifest: data/literature/hadith/VOCALISED-HADITH-SOURCE.md
 
 # H-NEW-2890 — the prose control that both parents said could not be run
 
+> # ⛔ THIS FINDING WAS PUBLISHED INCOMPLETE — DO NOT CITE THE VERDICT
+>
+> **Committed and pushed in commit `cf34b5b73` while its run was still executing.** At the time
+> of that commit this file contained two unfilled placeholders (§6.1 and §7), had no `run:`
+> frontmatter field, and **no run directory existed**. The orchestrator committed it under a
+> `git add -A` sweep and then described it to the project owner as a completed, publishable
+> result. Both were errors, and the second was worse than the first.
+>
+> **What is FINAL and reproducible** (these do not depend on the unfinished permutation arms):
+> - The census defect that motivated this test — 50,884 fully vocalised ḥadīth already committed,
+>   at ḥarakāt densities 0.7702–0.8829 against this corpus's 0.7801.
+> - **Arm B**, composed-boundary deltas: prose **+0.0297 to +0.0325** against this corpus's
+>   **+0.1869**.
+> - **Arm A**, matched cuts: **+0.0116 to +0.0128** against the re-cut baseline **+0.0284**.
+> - **D-P1**: 12/12 arms, p = 0.0001, both seeds.
+> - The collapse decomposition: prose free gain **+0.0349** against an observed **+0.0297**,
+>   leaving a **NEGATIVE compositional remainder of −0.0052**.
+>
+> **What is NOT established as of that commit:**
+> - **D-P3** — whether prose clears its OWN exactly-matched null. Four of twelve arms had run
+>   (z = +1.26, +1.48, +1.55, +1.76); the Muslim arms were not computed.
+> - **The locked verdict.** There was none.
+>
+> **The claim "prose does not clear its own matched null" was NOT established at commit time and
+> must not be cited from that commit.** The figures "z = +1.3 to +3.2" that were placed into
+> H-NEW-2880 §5.2 came from a **200-draw smoke run**, not the registered 10,000-draw run, and are
+> withdrawn pending the real arms.
+>
+> The specialist lane caught this and halted it. This banner stands until the run completes and
+> §6.1 and §7 are filled from `result.json`.
+
+
 **One-line summary.** H-NEW-2870 and H-NEW-2880 both reported the vocalised-prose negative
 control as **NOT COMPUTABLE**. **Both were wrong, and the error was mine as well as theirs: the
 census that produced the claim enumerated one directory.** A repository-wide ḥarakāt census
