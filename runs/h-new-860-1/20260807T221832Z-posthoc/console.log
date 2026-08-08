@@ -1,0 +1,69 @@
+POST-HOC for locked run runs/h-new-860-1/20260807T221459Z
+locked normaliser and constants re-imported from the runner (head section only)
+
+1. SPAN SENSITIVITY on the rubric's top-10 surahs (quotation instrument, surah level)
+    surah  rubric    N=4    N=5    N=6
+   Q1          10     30     30      6
+   Q36         10     10      4      4
+   Q67         10      6      0      0
+   Q112        10    111    111    111
+   Q113        10     36     36     36
+   Q114        10     18     18     18
+   Q2           9    485    328    257
+   Q18          9     44     37     25
+   Q32          6     31     17     17
+   Q50          5     14     11     11
+
+2. Q 67:1 has 9 words: تبارك الذي بيده الملك وهو علي كل شيء قدير
+   4-word incipit  [تبارك الذي بيده الملك] occurs in 6 records
+   5-word incipit  [تبارك الذي بيده الملك وهو] occurs in 0 records
+   -> the locked N=5 arm cannot see a surah cited by its four-word incipit.
+   surahs whose 4-word opening is cited >=5 times and >2x its 5-word extension: 4
+      Q5    n4=  97 n5=   2  [يا ايها الذين امنوا]
+      Q76   n4=  12 n5=   3  [هل اتي علي الانسان]
+      Q98   n4=   8 n5=   2  [لم يكن الذين كفروا]
+      Q67   n4=   6 n5=   0  [تبارك الذي بيده الملك]
+
+3. LENGTH-CONTROLLED roster (reception rank residualised on log surah word count)
+   structurally extreme, cited far less than its LENGTH predicts:
+      Q26   UASrank  14 outRank   8 count    3 words  1320  length-residual   +46.5
+      Q51   UASrank  15 outRank 113 count    2 words   360  length-residual   +35.5
+      Q16   UASrank  30 outRank  30 count    8 words  1844  length-residual   +33.9
+      Q86   UASrank  28 outRank  71 count    0 words    61  length-residual   +32.5
+      Q27   UASrank  23 outRank 108 count    6 words  1159  length-residual   +31.0
+      Q23   UASrank   9 outRank 111 count    7 words  1052  length-residual   +28.5
+      Q55   UASrank   7 outRank   5 count    3 words   352  length-residual   +27.0
+      Q52   UASrank  19 outRank 110 count    3 words   312  length-residual   +24.8
+      Q56   UASrank  75 outRank  26 count    5 words   379  length-residual   +20.2
+      Q37   UASrank  79 outRank  19 count    9 words   865  length-residual   +20.1
+      Q10   UASrank   8 outRank 106 count   12 words  1839  length-residual   +17.9
+      Q30   UASrank  56 outRank  17 count    9 words   817  length-residual   +17.6
+   structurally ordinary, cited far more than its length predicts:
+      Q87   UASrank 114 outRank  65 count   63 words    72  length-residual   -64.3
+      Q62   UASrank  95 outRank  81 count   26 words   177  length-residual   -39.6
+      Q88   UASrank  68 outRank  61 count   20 words    92  length-residual   -37.1
+      Q66   UASrank  77 outRank  84 count   22 words   254  length-residual   -31.2
+      Q5    UASrank  66 outRank 101 count  125 words  2837  length-residual   -27.1
+      Q60   UASrank  73 outRank  67 count   22 words   352  length-residual   -26.0
+      Q63   UASrank  63 outRank  92 count   15 words   181  length-residual   -18.9
+      Q75   UASrank  72 outRank  81 count   12 words   164  length-residual   -16.1
+      Q49   UASrank  89 outRank  66 count   17 words   353  length-residual   -13.8
+      Q39   UASrank  78 outRank 100 count   26 words  1177  length-residual   -13.0
+      Q83   UASrank 110 outRank  60 count   10 words   169  length-residual    -9.1
+      Q11   UASrank  88 outRank  99 count   28 words  1946  length-residual    -8.1
+
+4. LENGTH NULLS on arms the locked run did not test (POST-HOC)
+   cell A (36)  quotation: raw rho -0.2923 (p=0.0836)  ->  partial -0.1426 (p=0.4069)
+   cell A (36)  naming   : raw rho -0.6071 (p=8.628e-05)  ->  partial -0.3125 (p=0.06355)
+   cell A (36)  union    : raw rho -0.3192 (p=0.05772)  ->  partial -0.1602 (p=0.3506)
+   cell B (114) quotation: raw rho -0.3353 (p=0.0002656)  ->  partial -0.0584 (p=0.5374)
+   cell B (114) naming   : raw rho -0.5121 (p=5.77e-09)  ->  partial -0.1860 (p=0.04761)
+   cell B (114) union    : raw rho -0.3424 (p=0.0001926)  ->  partial -0.0606 (p=0.5219)
+
+5. EXTERNAL CROSS-CHECK against this repository's own 2026-04-28 extractions
+    surah  independent  this run (U)  quotation  naming  method note
+   Q1               59            34         30       8  alias-rich name search (umm al-kitab, al-sab' al-mathani) + English
+   Q2              126           427        328     132  alias + English
+   Q6               14           101         98       5  hand-tagged verse motifs
+   Q19             236            21         20       2  hand-tagged narrative motifs
+   Q33             272           130        130       7  hand-tagged verse + English motifs

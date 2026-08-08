@@ -1,0 +1,2478 @@
+{
+  "id": "H-NEW-860.1",
+  "run": "20260807T221459Z",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-860-1-fadail-formal.md",
+  "prereg_sha256": "15f3940478d1842a22ab99fee41e831e22934c7766d299339f477d824444c7f1",
+  "seed": 20260509,
+  "seed_replication": 20260519,
+  "n_perm": 10000,
+  "bonferroni_k": 18,
+  "alpha_bonferroni": 0.002777777777777778,
+  "python": "3.13.12",
+  "numpy": "2.3.1",
+  "scipy": "1.17.1",
+  "corpus": {
+    "n_verses": 6236,
+    "n_records_9": 40943,
+    "n_records_17": 50884,
+    "n_words_hadith9": 2678037,
+    "n_words_quran": 77797
+  },
+  "instrument": {
+    "span_primary": 5,
+    "min_words": 4,
+    "fp_control_poetry_words": 75971,
+    "fp_links_per_Mword": {
+      "4": 157.9550091482276,
+      "5": 118.4662568611707,
+      "6": 92.14042200313278
+    },
+    "hadith_links_per_Mword": {
+      "4": 1674.360735120538,
+      "5": 1175.1144588368272,
+      "6": 1002.9734465953982
+    },
+    "records_linked": 2355,
+    "naming_links": 394,
+    "book_share": {
+      "bukhari": 805,
+      "muslim": 478,
+      "abudawud": 328,
+      "tirmidhi": 568,
+      "nasai": 377,
+      "ibnmajah": 214,
+      "malik": 84,
+      "ahmed": 111,
+      "darimi": 182
+    }
+  },
+  "published_reference": {
+    "rho_pub": 0.33,
+    "note": "H-NEW-860 Spearman(rubric, UAS_rank), N=36"
+  },
+  "primary_arm": {
+    "instrument": "Q",
+    "span": 5,
+    "cell": "A",
+    "n": 36,
+    "rho_vs_uas_rank": -0.2923374720671294,
+    "p": 0.08360441972846458,
+    "sig_bonferroni": false
+  },
+  "all_arms": [
+    {
+      "instrument": "Q",
+      "span": 4,
+      "cell": "A",
+      "n": 36,
+      "rho_vs_uas_rank": -0.3726020620414649,
+      "p": 0.0252217103162724,
+      "sig_bonferroni": false
+    },
+    {
+      "instrument": "Q",
+      "span": 4,
+      "cell": "B",
+      "n": 114,
+      "rho_vs_uas_rank": -0.3392366065293455,
+      "p": 0.0002222780584971794,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "Q",
+      "span": 5,
+      "cell": "A",
+      "n": 36,
+      "rho_vs_uas_rank": -0.2923374720671294,
+      "p": 0.08360441972846458,
+      "sig_bonferroni": false
+    },
+    {
+      "instrument": "Q",
+      "span": 5,
+      "cell": "B",
+      "n": 114,
+      "rho_vs_uas_rank": -0.3353036433544941,
+      "p": 0.00026556025160430876,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "Q",
+      "span": 6,
+      "cell": "A",
+      "n": 36,
+      "rho_vs_uas_rank": -0.18002707291574596,
+      "p": 0.2934165526046376,
+      "sig_bonferroni": false
+    },
+    {
+      "instrument": "Q",
+      "span": 6,
+      "cell": "B",
+      "n": 114,
+      "rho_vs_uas_rank": -0.275695401786369,
+      "p": 0.002988253765136178,
+      "sig_bonferroni": false
+    },
+    {
+      "instrument": "N",
+      "span": 4,
+      "cell": "A",
+      "n": 36,
+      "rho_vs_uas_rank": -0.607140965543893,
+      "p": 8.628248196919842e-05,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "N",
+      "span": 4,
+      "cell": "B",
+      "n": 114,
+      "rho_vs_uas_rank": -0.5120635524160873,
+      "p": 5.76986918276139e-09,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "N",
+      "span": 5,
+      "cell": "A",
+      "n": 36,
+      "rho_vs_uas_rank": -0.607140965543893,
+      "p": 8.628248196919842e-05,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "N",
+      "span": 5,
+      "cell": "B",
+      "n": 114,
+      "rho_vs_uas_rank": -0.5120635524160873,
+      "p": 5.76986918276139e-09,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "N",
+      "span": 6,
+      "cell": "A",
+      "n": 36,
+      "rho_vs_uas_rank": -0.607140965543893,
+      "p": 8.628248196919842e-05,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "N",
+      "span": 6,
+      "cell": "B",
+      "n": 114,
+      "rho_vs_uas_rank": -0.5120635524160873,
+      "p": 5.76986918276139e-09,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "U",
+      "span": 4,
+      "cell": "A",
+      "n": 36,
+      "rho_vs_uas_rank": -0.3655443621044502,
+      "p": 0.028353298375656165,
+      "sig_bonferroni": false
+    },
+    {
+      "instrument": "U",
+      "span": 4,
+      "cell": "B",
+      "n": 114,
+      "rho_vs_uas_rank": -0.3425636718823234,
+      "p": 0.0001908663814362824,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "U",
+      "span": 5,
+      "cell": "A",
+      "n": 36,
+      "rho_vs_uas_rank": -0.31923255633629055,
+      "p": 0.0577237218569408,
+      "sig_bonferroni": false
+    },
+    {
+      "instrument": "U",
+      "span": 5,
+      "cell": "B",
+      "n": 114,
+      "rho_vs_uas_rank": -0.34236709631206497,
+      "p": 0.00019260140283894315,
+      "sig_bonferroni": true
+    },
+    {
+      "instrument": "U",
+      "span": 6,
+      "cell": "A",
+      "n": 36,
+      "rho_vs_uas_rank": -0.20369537895358936,
+      "p": 0.23342513017915262,
+      "sig_bonferroni": false
+    },
+    {
+      "instrument": "U",
+      "span": 6,
+      "cell": "B",
+      "n": 114,
+      "rho_vs_uas_rank": -0.30023583983532787,
+      "p": 0.0011723222885717532,
+      "sig_bonferroni": true
+    }
+  ],
+  "nulls": {
+    "partial_spearman": {
+      "rho": -0.14256017026820667,
+      "p": 0.40686535872129026
+    },
+    "stratified": [
+      {
+        "k": 5,
+        "seed": 20260509,
+        "observed": -0.2923374720671294,
+        "p_two_sided": 0.41775822417758224,
+        "null_mean": -0.2673551487939502,
+        "null_sd": 0.10381582042696043,
+        "null_absmax": 0.6441727027664234
+      },
+      {
+        "k": 5,
+        "seed": 20260519,
+        "observed": -0.2923374720671294,
+        "p_two_sided": 0.417958204179582,
+        "null_mean": -0.26839536794070257,
+        "null_sd": 0.10313440234884716,
+        "null_absmax": 0.5938185390755654
+      },
+      {
+        "k": 10,
+        "seed": 20260509,
+        "observed": -0.2923374720671294,
+        "p_two_sided": 0.0851914808519148,
+        "null_mean": -0.1711698487504331,
+        "null_sd": 0.08482610140273102,
+        "null_absmax": 0.4584675773387579
+      },
+      {
+        "k": 10,
+        "seed": 20260519,
+        "observed": -0.2923374720671294,
+        "p_two_sided": 0.07849215078492151,
+        "null_mean": -0.1693744588096479,
+        "null_sd": 0.0847983761120954,
+        "null_absmax": 0.47379275759249734
+      }
+    ],
+    "set_median_logwords": {
+      "observed": 6.012068507128692,
+      "frac_random_ge": 0.148
+    }
+  },
+  "verdict": "UNDETERMINED",
+  "verdict_inputs": {
+    "rho_f": -0.2923374720671294,
+    "p_f": 0.08360441972846458,
+    "same_sign": false,
+    "clears_half_bar": false,
+    "nulls_pass": false
+  },
+  "rubric_agreement": [
+    {
+      "label": "36 rubric-listed surahs",
+      "n": 36,
+      "quotation": {
+        "spearman": 0.054642735041653345,
+        "p_spearman": 0.7516060538901305,
+        "kendall": 0.0412209311771832,
+        "p_kendall": 0.7395780138277979
+      },
+      "naming": {
+        "spearman": -0.31537432889493083,
+        "p_spearman": 0.06098594529731451,
+        "kendall": -0.23118046315012816,
+        "p_kendall": 0.0787536055453982
+      },
+      "union": {
+        "spearman": 0.006071023843012911,
+        "p_spearman": 0.9719674108423634,
+        "kendall": 0.0034350775980986,
+        "p_kendall": 0.9779019993583555
+      }
+    },
+    {
+      "label": "all 114, unlisted-as-zero",
+      "n": 114,
+      "quotation": {
+        "spearman": 0.37423367416315767,
+        "p_spearman": 4.1001370188025785e-05,
+        "kendall": 0.2967222777986754,
+        "p_kendall": 5.466335532583897e-05
+      },
+      "naming": {
+        "spearman": 0.15080542972344133,
+        "p_spearman": 0.10924626481568762,
+        "kendall": 0.13898332594476512,
+        "p_kendall": 0.08242063035984067
+      },
+      "union": {
+        "spearman": 0.3724488049469004,
+        "p_spearman": 4.490828829579804e-05,
+        "kendall": 0.293314444779311,
+        "p_kendall": 6.602132729302754e-05
+      }
+    }
+  ],
+  "top_overlap": {
+    "top10": {
+      "rubric": [
+        1,
+        36,
+        67,
+        112,
+        113,
+        114,
+        2,
+        18,
+        32,
+        50
+      ],
+      "formal": [
+        2,
+        4,
+        3,
+        33,
+        5,
+        112,
+        6,
+        9,
+        87,
+        24
+      ],
+      "overlap": [
+        2,
+        112
+      ],
+      "n_overlap": 2
+    },
+    "top20": {
+      "rubric": [
+        1,
+        36,
+        67,
+        112,
+        113,
+        114,
+        2,
+        18,
+        32,
+        50,
+        76,
+        87,
+        88,
+        109,
+        3,
+        17,
+        19,
+        55,
+        57,
+        59
+      ],
+      "formal": [
+        2,
+        4,
+        3,
+        33,
+        5,
+        112,
+        6,
+        9,
+        87,
+        24,
+        8,
+        64,
+        109,
+        65,
+        17,
+        25,
+        18,
+        59,
+        48,
+        22
+      ],
+      "overlap": [
+        2,
+        3,
+        17,
+        18,
+        59,
+        87,
+        109,
+        112
+      ],
+      "n_overlap": 8
+    }
+  },
+  "biggest_disagreements": {
+    "rubric_overrated": [
+      {
+        "surah": 67,
+        "rubric_score": 10,
+        "rubric_rank": 3,
+        "formal_rank": 35,
+        "formal_count": 0,
+        "drop": 32
+      },
+      {
+        "surah": 36,
+        "rubric_score": 10,
+        "rubric_rank": 2,
+        "formal_rank": 30,
+        "formal_count": 4,
+        "drop": 28
+      },
+      {
+        "surah": 76,
+        "rubric_score": 5,
+        "rubric_rank": 11,
+        "formal_rank": 32,
+        "formal_count": 3,
+        "drop": 21
+      },
+      {
+        "surah": 50,
+        "rubric_score": 5,
+        "rubric_rank": 10,
+        "formal_rank": 27,
+        "formal_count": 11,
+        "drop": 17
+      },
+      {
+        "surah": 114,
+        "rubric_score": 10,
+        "rubric_rank": 6,
+        "formal_rank": 22,
+        "formal_count": 18,
+        "drop": 16
+      },
+      {
+        "surah": 1,
+        "rubric_score": 10,
+        "rubric_rank": 1,
+        "formal_rank": 15,
+        "formal_count": 34,
+        "drop": 14
+      },
+      {
+        "surah": 55,
+        "rubric_score": 4,
+        "rubric_rank": 18,
+        "formal_rank": 31,
+        "formal_count": 3,
+        "drop": 13
+      },
+      {
+        "surah": 97,
+        "rubric_score": 4,
+        "rubric_rank": 21,
+        "formal_rank": 33,
+        "formal_count": 3,
+        "drop": 12
+      },
+      {
+        "surah": 32,
+        "rubric_score": 6,
+        "rubric_rank": 9,
+        "formal_rank": 21,
+        "formal_count": 18,
+        "drop": 12
+      },
+      {
+        "surah": 113,
+        "rubric_score": 10,
+        "rubric_rank": 5,
+        "formal_rank": 14,
+        "formal_count": 36,
+        "drop": 9
+      }
+    ],
+    "rubric_underrated": [
+      {
+        "surah": 33,
+        "rubric_score": 2,
+        "rubric_rank": 34,
+        "formal_rank": 3,
+        "formal_count": 130,
+        "gain": 31
+      },
+      {
+        "surah": 6,
+        "rubric_score": 2,
+        "rubric_rank": 29,
+        "formal_rank": 5,
+        "formal_count": 101,
+        "gain": 24
+      },
+      {
+        "surah": 25,
+        "rubric_score": 2,
+        "rubric_rank": 33,
+        "formal_rank": 11,
+        "formal_count": 48,
+        "gain": 22
+      },
+      {
+        "surah": 7,
+        "rubric_score": 1,
+        "rubric_rank": 35,
+        "formal_rank": 16,
+        "formal_count": 26,
+        "gain": 19
+      },
+      {
+        "surah": 9,
+        "rubric_score": 3,
+        "rubric_rank": 23,
+        "formal_rank": 6,
+        "formal_count": 92,
+        "gain": 17
+      },
+      {
+        "surah": 24,
+        "rubric_score": 3,
+        "rubric_rank": 24,
+        "formal_rank": 8,
+        "formal_count": 61,
+        "gain": 16
+      },
+      {
+        "surah": 3,
+        "rubric_score": 4,
+        "rubric_rank": 15,
+        "formal_rank": 2,
+        "formal_count": 195,
+        "gain": 13
+      },
+      {
+        "surah": 10,
+        "rubric_score": 1,
+        "rubric_rank": 36,
+        "formal_rank": 26,
+        "formal_count": 12,
+        "gain": 10
+      },
+      {
+        "surah": 12,
+        "rubric_score": 2,
+        "rubric_rank": 30,
+        "formal_rank": 20,
+        "formal_count": 19,
+        "gain": 10
+      },
+      {
+        "surah": 62,
+        "rubric_score": 3,
+        "rubric_rank": 26,
+        "formal_rank": 17,
+        "formal_count": 26,
+        "gain": 9
+      }
+    ]
+  },
+  "concentration": {
+    "n_eligible": 5371,
+    "total_links": 3147,
+    "n_ineligible_short": 600,
+    "n_nondistinctive": 265,
+    "n_verses_cited": 749,
+    "share_top20": 0.2129011757229107,
+    "share_top100": 0.49126151890689546,
+    "gini_eligible": 0.9375956993911624,
+    "top20": [
+      {
+        "ref": "Q112:1",
+        "n": 102,
+        "books": 9,
+        "span": "قل هو الله احد",
+        "words": 4
+      },
+      {
+        "ref": "Q87:1",
+        "n": 63,
+        "books": 8,
+        "span": "سبح اسم ربك الاعلي",
+        "words": 4
+      },
+      {
+        "ref": "Q109:1",
+        "n": 55,
+        "books": 7,
+        "span": "قل يا ايها الكافرون",
+        "words": 4
+      },
+      {
+        "ref": "Q64:1",
+        "n": 54,
+        "books": 8,
+        "span": "له الملك وله الحمد وهو",
+        "words": 17
+      },
+      {
+        "ref": "Q65:2",
+        "n": 36,
+        "books": 9,
+        "span": "كان يومن بالله واليوم الاخر",
+        "words": 30
+      },
+      {
+        "ref": "Q3:77",
+        "n": 34,
+        "books": 7,
+        "span": "ان الذين يشترون بعهد الله",
+        "words": 27
+      },
+      {
+        "ref": "Q33:21",
+        "n": 33,
+        "books": 6,
+        "span": "في رسول الله اسوه حسنه",
+        "words": 17
+      },
+      {
+        "ref": "Q25:68",
+        "n": 32,
+        "books": 5,
+        "span": "لا يدعون مع الله الها",
+        "words": 22
+      },
+      {
+        "ref": "Q1:7",
+        "n": 30,
+        "books": 8,
+        "span": "غير المغضوب عليهم ولا الضالين",
+        "words": 9
+      },
+      {
+        "ref": "Q2:158",
+        "n": 27,
+        "books": 8,
+        "span": "ان الصفا والمروه من شعاير",
+        "words": 24
+      },
+      {
+        "ref": "Q2:125",
+        "n": 24,
+        "books": 8,
+        "span": "واتخذوا من مقام ابراهيم مصلي",
+        "words": 22
+      },
+      {
+        "ref": "Q113:1",
+        "n": 22,
+        "books": 6,
+        "span": "قل اعوذ برب الفلق",
+        "words": 4
+      },
+      {
+        "ref": "Q2:187",
+        "n": 21,
+        "books": 7,
+        "span": "الخيط الابيض من الخيط الاسود",
+        "words": 65
+      },
+      {
+        "ref": "Q2:196",
+        "n": 21,
+        "books": 7,
+        "span": "ثلاثه ايام في الحج وسبعه",
+        "words": 73
+      },
+      {
+        "ref": "Q24:37",
+        "n": 21,
+        "books": 6,
+        "span": "الله واقام الصلاه وايتاء الزكاه",
+        "words": 19
+      },
+      {
+        "ref": "Q4:95",
+        "n": 20,
+        "books": 6,
+        "span": "لا يستوي القاعدون من المومنين",
+        "words": 33
+      },
+      {
+        "ref": "Q48:2",
+        "n": 20,
+        "books": 9,
+        "span": "ما تقدم من ذنبك وما",
+        "words": 15
+      },
+      {
+        "ref": "Q88:1",
+        "n": 19,
+        "books": 7,
+        "span": "هل اتاك حديث الغاشيه",
+        "words": 4
+      },
+      {
+        "ref": "Q92:5",
+        "n": 18,
+        "books": 6,
+        "span": "فاما من اعطي واتقي",
+        "words": 4
+      },
+      {
+        "ref": "Q114:1",
+        "n": 18,
+        "books": 5,
+        "span": "قل اعوذ برب الناس",
+        "words": 4
+      }
+    ]
+  },
+  "residual_roster": {
+    "structurally_extreme_rarely_cited": [
+      {
+        "surah": 86,
+        "uas_rank": 28,
+        "outlier_rank": 71,
+        "reception_rank": 105,
+        "formal_count": 0,
+        "quotation_count": 0,
+        "naming_count": 0,
+        "residual": 77
+      },
+      {
+        "surah": 55,
+        "uas_rank": 7,
+        "outlier_rank": 6,
+        "reception_rank": 82,
+        "formal_count": 3,
+        "quotation_count": 3,
+        "naming_count": 1,
+        "residual": 76
+      },
+      {
+        "surah": 103,
+        "uas_rank": 106,
+        "outlier_rank": 35,
+        "reception_rank": 111,
+        "formal_count": 0,
+        "quotation_count": 0,
+        "naming_count": 0,
+        "residual": 76
+      },
+      {
+        "surah": 105,
+        "uas_rank": 112,
+        "outlier_rank": 37,
+        "reception_rank": 112,
+        "formal_count": 0,
+        "quotation_count": 0,
+        "naming_count": 0,
+        "residual": 75
+      },
+      {
+        "surah": 106,
+        "uas_rank": 70,
+        "outlier_rank": 38,
+        "reception_rank": 113,
+        "formal_count": 0,
+        "quotation_count": 0,
+        "naming_count": 0,
+        "residual": 75
+      },
+      {
+        "surah": 107,
+        "uas_rank": 92,
+        "outlier_rank": 39,
+        "reception_rank": 114,
+        "formal_count": 0,
+        "quotation_count": 0,
+        "naming_count": 0,
+        "residual": 75
+      },
+      {
+        "surah": 51,
+        "uas_rank": 15,
+        "outlier_rank": 113,
+        "reception_rank": 89,
+        "formal_count": 2,
+        "quotation_count": 2,
+        "naming_count": 0,
+        "residual": 74
+      },
+      {
+        "surah": 26,
+        "uas_rank": 14,
+        "outlier_rank": 8,
+        "reception_rank": 79,
+        "formal_count": 3,
+        "quotation_count": 2,
+        "naming_count": 2,
+        "residual": 71
+      },
+      {
+        "surah": 104,
+        "uas_rank": 104,
+        "outlier_rank": 36,
+        "reception_rank": 99,
+        "formal_count": 1,
+        "quotation_count": 1,
+        "naming_count": 0,
+        "residual": 63
+      },
+      {
+        "surah": 52,
+        "uas_rank": 19,
+        "outlier_rank": 110,
+        "reception_rank": 81,
+        "formal_count": 3,
+        "quotation_count": 3,
+        "naming_count": 0,
+        "residual": 62
+      },
+      {
+        "surah": 101,
+        "uas_rank": 98,
+        "outlier_rank": 48,
+        "reception_rank": 110,
+        "formal_count": 0,
+        "quotation_count": 0,
+        "naming_count": 0,
+        "residual": 62
+      },
+      {
+        "surah": 23,
+        "uas_rank": 9,
+        "outlier_rank": 111,
+        "reception_rank": 69,
+        "formal_count": 7,
+        "quotation_count": 7,
+        "naming_count": 1,
+        "residual": 60
+      },
+      {
+        "surah": 100,
+        "uas_rank": 62,
+        "outlier_rank": 49,
+        "reception_rank": 109,
+        "formal_count": 0,
+        "quotation_count": 0,
+        "naming_count": 0,
+        "residual": 60
+      },
+      {
+        "surah": 45,
+        "uas_rank": 41,
+        "outlier_rank": 109,
+        "reception_rank": 100,
+        "formal_count": 0,
+        "quotation_count": 0,
+        "naming_count": 0,
+        "residual": 59
+      },
+      {
+        "surah": 98,
+        "uas_rank": 93,
+        "outlier_rank": 33,
+        "reception_rank": 92,
+        "formal_count": 2,
+        "quotation_count": 2,
+        "naming_count": 0,
+        "residual": 59
+      }
+    ],
+    "heavily_cited_structurally_ordinary": [
+      {
+        "surah": 2,
+        "uas_rank": 3,
+        "outlier_rank": 114,
+        "reception_rank": 1,
+        "formal_count": 427,
+        "quotation_count": 328,
+        "naming_count": 132,
+        "residual": -113
+      },
+      {
+        "surah": 3,
+        "uas_rank": 37,
+        "outlier_rank": 112,
+        "reception_rank": 3,
+        "formal_count": 195,
+        "quotation_count": 177,
+        "naming_count": 24,
+        "residual": -109
+      },
+      {
+        "surah": 87,
+        "uas_rank": 114,
+        "outlier_rank": 65,
+        "reception_rank": 9,
+        "formal_count": 63,
+        "quotation_count": 63,
+        "naming_count": 1,
+        "residual": -105
+      },
+      {
+        "surah": 112,
+        "uas_rank": 109,
+        "outlier_rank": 44,
+        "reception_rank": 6,
+        "formal_count": 111,
+        "quotation_count": 111,
+        "naming_count": 0,
+        "residual": -103
+      },
+      {
+        "surah": 5,
+        "uas_rank": 66,
+        "outlier_rank": 101,
+        "reception_rank": 5,
+        "formal_count": 125,
+        "quotation_count": 119,
+        "naming_count": 11,
+        "residual": -96
+      },
+      {
+        "surah": 59,
+        "uas_rank": 58,
+        "outlier_rank": 107,
+        "reception_rank": 18,
+        "formal_count": 47,
+        "quotation_count": 40,
+        "naming_count": 8,
+        "residual": -89
+      },
+      {
+        "surah": 64,
+        "uas_rank": 42,
+        "outlier_rank": 97,
+        "reception_rank": 12,
+        "formal_count": 55,
+        "quotation_count": 55,
+        "naming_count": 0,
+        "residual": -85
+      },
+      {
+        "surah": 65,
+        "uas_rank": 94,
+        "outlier_rank": 28,
+        "reception_rank": 14,
+        "formal_count": 54,
+        "quotation_count": 54,
+        "naming_count": 2,
+        "residual": -80
+      },
+      {
+        "surah": 17,
+        "uas_rank": 10,
+        "outlier_rank": 94,
+        "reception_rank": 15,
+        "formal_count": 49,
+        "quotation_count": 48,
+        "naming_count": 2,
+        "residual": -79
+      },
+      {
+        "surah": 21,
+        "uas_rank": 16,
+        "outlier_rank": 102,
+        "reception_rank": 23,
+        "formal_count": 31,
+        "quotation_count": 31,
+        "naming_count": 2,
+        "residual": -79
+      },
+      {
+        "surah": 11,
+        "uas_rank": 88,
+        "outlier_rank": 99,
+        "reception_rank": 25,
+        "formal_count": 28,
+        "quotation_count": 23,
+        "naming_count": 6,
+        "residual": -74
+      },
+      {
+        "surah": 39,
+        "uas_rank": 78,
+        "outlier_rank": 100,
+        "reception_rank": 27,
+        "formal_count": 26,
+        "quotation_count": 26,
+        "naming_count": 0,
+        "residual": -73
+      },
+      {
+        "surah": 114,
+        "uas_rank": 113,
+        "outlier_rank": 46,
+        "reception_rank": 40,
+        "formal_count": 18,
+        "quotation_count": 18,
+        "naming_count": 0,
+        "residual": -73
+      },
+      {
+        "surah": 62,
+        "uas_rank": 95,
+        "outlier_rank": 80,
+        "reception_rank": 28,
+        "formal_count": 26,
+        "quotation_count": 17,
+        "naming_count": 14,
+        "residual": -67
+      },
+      {
+        "surah": 7,
+        "uas_rank": 11,
+        "outlier_rank": 91,
+        "reception_rank": 26,
+        "formal_count": 26,
+        "quotation_count": 24,
+        "naming_count": 3,
+        "residual": -65
+      }
+    ],
+    "verse_level_top_cited": [
+      {
+        "ref": "Q112:1",
+        "n": 102,
+        "books": 9,
+        "span": "قل هو الله احد",
+        "words": 4
+      },
+      {
+        "ref": "Q87:1",
+        "n": 63,
+        "books": 8,
+        "span": "سبح اسم ربك الاعلي",
+        "words": 4
+      },
+      {
+        "ref": "Q109:1",
+        "n": 55,
+        "books": 7,
+        "span": "قل يا ايها الكافرون",
+        "words": 4
+      },
+      {
+        "ref": "Q64:1",
+        "n": 54,
+        "books": 8,
+        "span": "له الملك وله الحمد وهو",
+        "words": 17
+      },
+      {
+        "ref": "Q65:2",
+        "n": 36,
+        "books": 9,
+        "span": "كان يومن بالله واليوم الاخر",
+        "words": 30
+      },
+      {
+        "ref": "Q3:77",
+        "n": 34,
+        "books": 7,
+        "span": "ان الذين يشترون بعهد الله",
+        "words": 27
+      },
+      {
+        "ref": "Q33:21",
+        "n": 33,
+        "books": 6,
+        "span": "في رسول الله اسوه حسنه",
+        "words": 17
+      },
+      {
+        "ref": "Q25:68",
+        "n": 32,
+        "books": 5,
+        "span": "لا يدعون مع الله الها",
+        "words": 22
+      },
+      {
+        "ref": "Q1:7",
+        "n": 30,
+        "books": 8,
+        "span": "غير المغضوب عليهم ولا الضالين",
+        "words": 9
+      },
+      {
+        "ref": "Q2:158",
+        "n": 27,
+        "books": 8,
+        "span": "ان الصفا والمروه من شعاير",
+        "words": 24
+      },
+      {
+        "ref": "Q2:125",
+        "n": 24,
+        "books": 8,
+        "span": "واتخذوا من مقام ابراهيم مصلي",
+        "words": 22
+      },
+      {
+        "ref": "Q113:1",
+        "n": 22,
+        "books": 6,
+        "span": "قل اعوذ برب الفلق",
+        "words": 4
+      },
+      {
+        "ref": "Q2:187",
+        "n": 21,
+        "books": 7,
+        "span": "الخيط الابيض من الخيط الاسود",
+        "words": 65
+      },
+      {
+        "ref": "Q2:196",
+        "n": 21,
+        "books": 7,
+        "span": "ثلاثه ايام في الحج وسبعه",
+        "words": 73
+      },
+      {
+        "ref": "Q24:37",
+        "n": 21,
+        "books": 6,
+        "span": "الله واقام الصلاه وايتاء الزكاه",
+        "words": 19
+      },
+      {
+        "ref": "Q4:95",
+        "n": 20,
+        "books": 6,
+        "span": "لا يستوي القاعدون من المومنين",
+        "words": 33
+      },
+      {
+        "ref": "Q48:2",
+        "n": 20,
+        "books": 9,
+        "span": "ما تقدم من ذنبك وما",
+        "words": 15
+      },
+      {
+        "ref": "Q88:1",
+        "n": 19,
+        "books": 7,
+        "span": "هل اتاك حديث الغاشيه",
+        "words": 4
+      },
+      {
+        "ref": "Q92:5",
+        "n": 18,
+        "books": 6,
+        "span": "فاما من اعطي واتقي",
+        "words": 4
+      },
+      {
+        "ref": "Q114:1",
+        "n": 18,
+        "books": 5,
+        "span": "قل اعوذ برب الناس",
+        "words": 4
+      }
+    ]
+  },
+  "supplementary": {
+    "rho_reception_vs_outlier_A": [
+      0.15173969198157755,
+      0.3769994393952644
+    ],
+    "rho_reception_vs_outlier_B": [
+      0.14073677281398503,
+      0.1352955034573086
+    ],
+    "rho_reception_vs_uasvalue_B": [
+      0.34236709631206497,
+      0.00019260140283894315
+    ],
+    "pearson_like_for_like_B": [
+      0.41739577530457606,
+      3.834729414911051e-06
+    ],
+    "drift_surah_words": [
+      0.48472484873305893,
+      4.6302034422524443e-08
+    ],
+    "drift_surah_verses": [
+      0.3281591733658089,
+      0.00036468492906360935
+    ],
+    "drift_naming_words": [
+      0.6595564836229421,
+      1.4667998539237004e-15
+    ],
+    "rho_quotation_naming": [
+      0.5701064025844907,
+      3.573249182228962e-11
+    ],
+    "drift_verse_words": [
+      0.18013253500221912,
+      2.099066277213203e-40
+    ]
+  },
+  "surah_counts": {
+    "1": {
+      "quotation": 30,
+      "naming": 8,
+      "union": 34,
+      "rubric": 10,
+      "uas": 8.869121012085472,
+      "uas_rank": 2,
+      "outlier": 27.089999999999996,
+      "words": 29,
+      "verses": 7
+    },
+    "2": {
+      "quotation": 328,
+      "naming": 132,
+      "union": 427,
+      "rubric": 9,
+      "uas": 7.396251009415892,
+      "uas_rank": 3,
+      "outlier": -20.620000000000005,
+      "words": 6140,
+      "verses": 286
+    },
+    "3": {
+      "quotation": 177,
+      "naming": 24,
+      "union": 195,
+      "rubric": 4,
+      "uas": 0.4517232715519415,
+      "uas_rank": 37,
+      "outlier": -15.280000000000001,
+      "words": 3501,
+      "verses": 200
+    },
+    "4": {
+      "quotation": 232,
+      "naming": 38,
+      "union": 254,
+      "rubric": null,
+      "uas": 0.8777572984677837,
+      "uas_rank": 26,
+      "outlier": 1.0799999999999983,
+      "words": 3763,
+      "verses": 176
+    },
+    "5": {
+      "quotation": 119,
+      "naming": 11,
+      "union": 125,
+      "rubric": null,
+      "uas": -0.6426650429152896,
+      "uas_rank": 66,
+      "outlier": -5.68,
+      "words": 2837,
+      "verses": 120
+    },
+    "6": {
+      "quotation": 98,
+      "naming": 5,
+      "union": 101,
+      "rubric": 2,
+      "uas": -0.1321656536683411,
+      "uas_rank": 52,
+      "outlier": 2.34,
+      "words": 3056,
+      "verses": 165
+    },
+    "7": {
+      "quotation": 24,
+      "naming": 3,
+      "union": 26,
+      "rubric": 1,
+      "uas": 1.9197163094419893,
+      "uas_rank": 11,
+      "outlier": -3.779999999999994,
+      "words": 3341,
+      "verses": 206
+    },
+    "8": {
+      "quotation": 53,
+      "naming": 8,
+      "union": 57,
+      "rubric": null,
+      "uas": 1.0364001376012015,
+      "uas_rank": 22,
+      "outlier": 9.809999999999995,
+      "words": 1242,
+      "verses": 75
+    },
+    "9": {
+      "quotation": 89,
+      "naming": 11,
+      "union": 92,
+      "rubric": 3,
+      "uas": 6.184635716362661,
+      "uas_rank": 4,
+      "outlier": 21.57,
+      "words": 2505,
+      "verses": 129
+    },
+    "10": {
+      "quotation": 12,
+      "naming": 1,
+      "union": 12,
+      "rubric": 1,
+      "uas": 3.479230079510967,
+      "uas_rank": 8,
+      "outlier": -7.829999999999998,
+      "words": 1839,
+      "verses": 109
+    },
+    "11": {
+      "quotation": 23,
+      "naming": 6,
+      "union": 28,
+      "rubric": null,
+      "uas": -1.4569093203852042,
+      "uas_rank": 88,
+      "outlier": -4.8799999999999955,
+      "words": 1946,
+      "verses": 123
+    },
+    "12": {
+      "quotation": 14,
+      "naming": 5,
+      "union": 19,
+      "rubric": 2,
+      "uas": 4.10139919161463,
+      "uas_rank": 6,
+      "outlier": 14.260000000000005,
+      "words": 1795,
+      "verses": 111
+    },
+    "13": {
+      "quotation": 11,
+      "naming": 4,
+      "union": 13,
+      "rubric": null,
+      "uas": 1.042824138745371,
+      "uas_rank": 21,
+      "outlier": -3.8500000000000014,
+      "words": 853,
+      "verses": 43
+    },
+    "14": {
+      "quotation": 21,
+      "naming": 3,
+      "union": 21,
+      "rubric": null,
+      "uas": 1.2449988478450955,
+      "uas_rank": 20,
+      "outlier": -4.280000000000001,
+      "words": 830,
+      "verses": 52
+    },
+    "15": {
+      "quotation": 9,
+      "naming": 1,
+      "union": 10,
+      "rubric": null,
+      "uas": 0.4386770855816,
+      "uas_rank": 38,
+      "outlier": 5.509999999999998,
+      "words": 657,
+      "verses": 99
+    },
+    "16": {
+      "quotation": 8,
+      "naming": 2,
+      "union": 8,
+      "rubric": null,
+      "uas": 0.5816999555366253,
+      "uas_rank": 30,
+      "outlier": 0.46999999999999886,
+      "words": 1844,
+      "verses": 128
+    },
+    "17": {
+      "quotation": 48,
+      "naming": 2,
+      "union": 49,
+      "rubric": 4,
+      "uas": 2.219932429126427,
+      "uas_rank": 10,
+      "outlier": -3.9399999999999977,
+      "words": 1558,
+      "verses": 111
+    },
+    "18": {
+      "quotation": 37,
+      "naming": 10,
+      "union": 47,
+      "rubric": 9,
+      "uas": 0.04564381726798272,
+      "uas_rank": 46,
+      "outlier": 0.39000000000000057,
+      "words": 1583,
+      "verses": 110
+    },
+    "19": {
+      "quotation": 20,
+      "naming": 2,
+      "union": 21,
+      "rubric": 4,
+      "uas": 0.6455620866154415,
+      "uas_rank": 29,
+      "outlier": 4.600000000000001,
+      "words": 971,
+      "verses": 98
+    },
+    "20": {
+      "quotation": 16,
+      "naming": 2,
+      "union": 17,
+      "rubric": 2,
+      "uas": 0.15848852167702332,
+      "uas_rank": 43,
+      "outlier": 5.519999999999996,
+      "words": 1353,
+      "verses": 135
+    },
+    "21": {
+      "quotation": 31,
+      "naming": 2,
+      "union": 31,
+      "rubric": null,
+      "uas": 1.7051774390323082,
+      "uas_rank": 16,
+      "outlier": -5.709999999999994,
+      "words": 1174,
+      "verses": 112
+    },
+    "22": {
+      "quotation": 32,
+      "naming": 5,
+      "union": 37,
+      "rubric": null,
+      "uas": 1.6134948618429117,
+      "uas_rank": 17,
+      "outlier": 5.159999999999997,
+      "words": 1279,
+      "verses": 78
+    },
+    "23": {
+      "quotation": 7,
+      "naming": 1,
+      "union": 7,
+      "rubric": 2,
+      "uas": 2.97651758900217,
+      "uas_rank": 9,
+      "outlier": -10.909999999999997,
+      "words": 1052,
+      "verses": 118
+    },
+    "24": {
+      "quotation": 58,
+      "naming": 8,
+      "union": 61,
+      "rubric": 3,
+      "uas": 4.45013102356719,
+      "uas_rank": 5,
+      "outlier": 23.509999999999998,
+      "words": 1319,
+      "verses": 64
+    },
+    "25": {
+      "quotation": 32,
+      "naming": 16,
+      "union": 48,
+      "rubric": 2,
+      "uas": 1.871043643506693,
+      "uas_rank": 13,
+      "outlier": 0.75,
+      "words": 896,
+      "verses": 77
+    },
+    "26": {
+      "quotation": 2,
+      "naming": 2,
+      "union": 3,
+      "rubric": null,
+      "uas": 1.822325367203936,
+      "uas_rank": 14,
+      "outlier": 8.829999999999998,
+      "words": 1320,
+      "verses": 227
+    },
+    "27": {
+      "quotation": 4,
+      "naming": 2,
+      "union": 6,
+      "rubric": null,
+      "uas": 1.0229729446413383,
+      "uas_rank": 23,
+      "outlier": -8.759999999999991,
+      "words": 1159,
+      "verses": 93
+    },
+    "28": {
+      "quotation": 10,
+      "naming": 1,
+      "union": 10,
+      "rubric": null,
+      "uas": -0.04073787343313251,
+      "uas_rank": 50,
+      "outlier": -1.8400000000000034,
+      "words": 1438,
+      "verses": 88
+    },
+    "29": {
+      "quotation": 3,
+      "naming": 2,
+      "union": 3,
+      "rubric": null,
+      "uas": 0.15789323858220933,
+      "uas_rank": 44,
+      "outlier": -7.340000000000003,
+      "words": 978,
+      "verses": 69
+    },
+    "30": {
+      "quotation": 9,
+      "naming": 0,
+      "union": 9,
+      "rubric": null,
+      "uas": -0.2441478306113587,
+      "uas_rank": 56,
+      "outlier": 3.6400000000000006,
+      "words": 817,
+      "verses": 60
+    },
+    "31": {
+      "quotation": 23,
+      "naming": 2,
+      "union": 25,
+      "rubric": null,
+      "uas": -1.1707016458725135,
+      "uas_rank": 80,
+      "outlier": 2.1400000000000006,
+      "words": 550,
+      "verses": 34
+    },
+    "32": {
+      "quotation": 17,
+      "naming": 3,
+      "union": 18,
+      "rubric": 6,
+      "uas": 0.752222791368629,
+      "uas_rank": 27,
+      "outlier": -1.3599999999999994,
+      "words": 372,
+      "verses": 30
+    },
+    "33": {
+      "quotation": 130,
+      "naming": 7,
+      "union": 130,
+      "rubric": 2,
+      "uas": 9.364271626045946,
+      "uas_rank": 1,
+      "outlier": 31.46,
+      "words": 1303,
+      "verses": 73
+    },
+    "34": {
+      "quotation": 19,
+      "naming": 1,
+      "union": 19,
+      "rubric": null,
+      "uas": 1.604919589267498,
+      "uas_rank": 18,
+      "outlier": -4.700000000000003,
+      "words": 884,
+      "verses": 54
+    },
+    "35": {
+      "quotation": 9,
+      "naming": 4,
+      "union": 9,
+      "rubric": null,
+      "uas": 0.017304249591816978,
+      "uas_rank": 47,
+      "outlier": 6.68,
+      "words": 778,
+      "verses": 45
+    },
+    "36": {
+      "quotation": 4,
+      "naming": 0,
+      "union": 4,
+      "rubric": 10,
+      "uas": 0.5040129672966395,
+      "uas_rank": 35,
+      "outlier": -6.170000000000002,
+      "words": 730,
+      "verses": 83
+    },
+    "37": {
+      "quotation": 8,
+      "naming": 1,
+      "union": 9,
+      "rubric": null,
+      "uas": -1.1581076972225741,
+      "uas_rank": 79,
+      "outlier": 3.280000000000001,
+      "words": 865,
+      "verses": 182
+    },
+    "38": {
+      "quotation": 16,
+      "naming": 1,
+      "union": 16,
+      "rubric": null,
+      "uas": -0.3198375697982137,
+      "uas_rank": 59,
+      "outlier": 2.6999999999999957,
+      "words": 735,
+      "verses": 88
+    },
+    "39": {
+      "quotation": 26,
+      "naming": 0,
+      "union": 26,
+      "rubric": null,
+      "uas": -1.1484781645081394,
+      "uas_rank": 78,
+      "outlier": -5.240000000000002,
+      "words": 1177,
+      "verses": 75
+    },
+    "40": {
+      "quotation": 14,
+      "naming": 1,
+      "union": 14,
+      "rubric": null,
+      "uas": -0.8678234290526169,
+      "uas_rank": 74,
+      "outlier": -2.3699999999999974,
+      "words": 1226,
+      "verses": 85
+    },
+    "41": {
+      "quotation": 7,
+      "naming": 1,
+      "union": 7,
+      "rubric": null,
+      "uas": 0.4356620196836012,
+      "uas_rank": 39,
+      "outlier": -7.68,
+      "words": 794,
+      "verses": 54
+    },
+    "42": {
+      "quotation": 9,
+      "naming": 0,
+      "union": 9,
+      "rubric": null,
+      "uas": 0.5681498877884984,
+      "uas_rank": 31,
+      "outlier": 0.36999999999999744,
+      "words": 860,
+      "verses": 53
+    },
+    "43": {
+      "quotation": 14,
+      "naming": 1,
+      "union": 14,
+      "rubric": null,
+      "uas": 0.5367882801316807,
+      "uas_rank": 33,
+      "outlier": 1.490000000000002,
+      "words": 836,
+      "verses": 89
+    },
+    "44": {
+      "quotation": 15,
+      "naming": 0,
+      "union": 15,
+      "rubric": null,
+      "uas": -1.8820200185946439,
+      "uas_rank": 97,
+      "outlier": 1.4400000000000013,
+      "words": 346,
+      "verses": 59
+    },
+    "45": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": 0.34990540878197096,
+      "uas_rank": 41,
+      "outlier": -10.68,
+      "words": 488,
+      "verses": 37
+    },
+    "46": {
+      "quotation": 11,
+      "naming": 0,
+      "union": 11,
+      "rubric": null,
+      "uas": -1.5907342243080773,
+      "uas_rank": 91,
+      "outlier": -2.3400000000000034,
+      "words": 645,
+      "verses": 35
+    },
+    "47": {
+      "quotation": 10,
+      "naming": 0,
+      "union": 10,
+      "rubric": null,
+      "uas": 0.46558361665260056,
+      "uas_rank": 36,
+      "outlier": 5.200000000000003,
+      "words": 542,
+      "verses": 38
+    },
+    "48": {
+      "quotation": 35,
+      "naming": 11,
+      "union": 45,
+      "rubric": null,
+      "uas": 0.5449210989567976,
+      "uas_rank": 32,
+      "outlier": 2.489999999999995,
+      "words": 560,
+      "verses": 29
+    },
+    "49": {
+      "quotation": 17,
+      "naming": 0,
+      "union": 17,
+      "rubric": null,
+      "uas": -1.4843743364850137,
+      "uas_rank": 89,
+      "outlier": -0.45999999999999375,
+      "words": 353,
+      "verses": 18
+    },
+    "50": {
+      "quotation": 11,
+      "naming": 0,
+      "union": 11,
+      "rubric": 5,
+      "uas": 0.37979242636202826,
+      "uas_rank": 40,
+      "outlier": 5.419999999999995,
+      "words": 373,
+      "verses": 45
+    },
+    "51": {
+      "quotation": 2,
+      "naming": 0,
+      "union": 2,
+      "rubric": null,
+      "uas": 1.80183749872599,
+      "uas_rank": 15,
+      "outlier": -16.17000000000001,
+      "words": 360,
+      "verses": 60
+    },
+    "52": {
+      "quotation": 3,
+      "naming": 0,
+      "union": 3,
+      "rubric": null,
+      "uas": 1.2498092972165165,
+      "uas_rank": 19,
+      "outlier": -10.820000000000007,
+      "words": 312,
+      "verses": 49
+    },
+    "53": {
+      "quotation": 25,
+      "naming": 4,
+      "union": 29,
+      "rubric": null,
+      "uas": 0.5323836707429827,
+      "uas_rank": 34,
+      "outlier": 6.25,
+      "words": 360,
+      "verses": 62
+    },
+    "54": {
+      "quotation": 17,
+      "naming": 1,
+      "union": 18,
+      "rubric": null,
+      "uas": 1.8864367596854639,
+      "uas_rank": 12,
+      "outlier": 3.569999999999993,
+      "words": 342,
+      "verses": 55
+    },
+    "55": {
+      "quotation": 3,
+      "naming": 1,
+      "union": 3,
+      "rubric": 4,
+      "uas": 4.09739487633181,
+      "uas_rank": 7,
+      "outlier": 14.260000000000005,
+      "words": 352,
+      "verses": 78
+    },
+    "56": {
+      "quotation": 3,
+      "naming": 2,
+      "union": 5,
+      "rubric": null,
+      "uas": -0.933929184386578,
+      "uas_rank": 75,
+      "outlier": 1.3299999999999983,
+      "words": 379,
+      "verses": 96
+    },
+    "57": {
+      "quotation": 17,
+      "naming": 0,
+      "union": 17,
+      "rubric": 4,
+      "uas": -0.19979025545186302,
+      "uas_rank": 55,
+      "outlier": -0.3200000000000074,
+      "words": 575,
+      "verses": 29
+    },
+    "58": {
+      "quotation": 10,
+      "naming": 1,
+      "union": 10,
+      "rubric": null,
+      "uas": -1.8678179985296666,
+      "uas_rank": 96,
+      "outlier": -1.3799999999999955,
+      "words": 475,
+      "verses": 22
+    },
+    "59": {
+      "quotation": 40,
+      "naming": 8,
+      "union": 47,
+      "rubric": 4,
+      "uas": -0.31771811634233943,
+      "uas_rank": 58,
+      "outlier": -8.36,
+      "words": 447,
+      "verses": 24
+    },
+    "60": {
+      "quotation": 22,
+      "naming": 0,
+      "union": 22,
+      "rubric": null,
+      "uas": -0.8633053892595346,
+      "uas_rank": 73,
+      "outlier": -0.5599999999999996,
+      "words": 352,
+      "verses": 13
+    },
+    "61": {
+      "quotation": 2,
+      "naming": 0,
+      "union": 2,
+      "rubric": 3,
+      "uas": -1.3093050674604985,
+      "uas_rank": 83,
+      "outlier": -2.5,
+      "words": 226,
+      "verses": 14
+    },
+    "62": {
+      "quotation": 17,
+      "naming": 14,
+      "union": 26,
+      "rubric": 3,
+      "uas": -1.7591349544257346,
+      "uas_rank": 95,
+      "outlier": -1.8200000000000003,
+      "words": 177,
+      "verses": 11
+    },
+    "63": {
+      "quotation": 15,
+      "naming": 0,
+      "union": 15,
+      "rubric": 3,
+      "uas": -0.5993249031348673,
+      "uas_rank": 63,
+      "outlier": -3.780000000000001,
+      "words": 181,
+      "verses": 11
+    },
+    "64": {
+      "quotation": 55,
+      "naming": 0,
+      "union": 55,
+      "rubric": null,
+      "uas": 0.34933356829177875,
+      "uas_rank": 42,
+      "outlier": -4.390000000000001,
+      "words": 242,
+      "verses": 18
+    },
+    "65": {
+      "quotation": 54,
+      "naming": 2,
+      "union": 54,
+      "rubric": null,
+      "uas": -1.7241155806455881,
+      "uas_rank": 94,
+      "outlier": 0.9399999999999995,
+      "words": 289,
+      "verses": 12
+    },
+    "66": {
+      "quotation": 22,
+      "naming": 0,
+      "union": 22,
+      "rubric": null,
+      "uas": -1.0521149337952846,
+      "uas_rank": 77,
+      "outlier": -1.9000000000000021,
+      "words": 254,
+      "verses": 12
+    },
+    "67": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": 10,
+      "uas": -2.0525738348176406,
+      "uas_rank": 102,
+      "outlier": -0.1999999999999993,
+      "words": 333,
+      "verses": 30
+    },
+    "68": {
+      "quotation": 3,
+      "naming": 1,
+      "union": 3,
+      "rubric": null,
+      "uas": -1.0074233674755786,
+      "uas_rank": 76,
+      "outlier": -3.4499999999999993,
+      "words": 301,
+      "verses": 52
+    },
+    "69": {
+      "quotation": 1,
+      "naming": 1,
+      "union": 1,
+      "rubric": null,
+      "uas": -1.2076395289977673,
+      "uas_rank": 81,
+      "outlier": -1.6699999999999982,
+      "words": 260,
+      "verses": 52
+    },
+    "70": {
+      "quotation": 4,
+      "naming": 0,
+      "union": 4,
+      "rubric": null,
+      "uas": 1.0172706723750335,
+      "uas_rank": 24,
+      "outlier": -1.9499999999999993,
+      "words": 217,
+      "verses": 44
+    },
+    "71": {
+      "quotation": 1,
+      "naming": 0,
+      "union": 1,
+      "rubric": null,
+      "uas": -1.324247596591138,
+      "uas_rank": 84,
+      "outlier": -1.8200000000000003,
+      "words": 227,
+      "verses": 28
+    },
+    "72": {
+      "quotation": 7,
+      "naming": 2,
+      "union": 9,
+      "rubric": null,
+      "uas": -1.4180507111964966,
+      "uas_rank": 85,
+      "outlier": -0.6199999999999992,
+      "words": 286,
+      "verses": 28
+    },
+    "73": {
+      "quotation": 1,
+      "naming": 0,
+      "union": 1,
+      "rubric": null,
+      "uas": -2.696244078896621,
+      "uas_rank": 111,
+      "outlier": -4.08,
+      "words": 200,
+      "verses": 20
+    },
+    "74": {
+      "quotation": 4,
+      "naming": 1,
+      "union": 4,
+      "rubric": null,
+      "uas": -0.19397707794841734,
+      "uas_rank": 54,
+      "outlier": -3.4299999999999997,
+      "words": 256,
+      "verses": 56
+    },
+    "75": {
+      "quotation": 12,
+      "naming": 0,
+      "union": 12,
+      "rubric": null,
+      "uas": -0.8539557155112849,
+      "uas_rank": 72,
+      "outlier": -1.8200000000000003,
+      "words": 164,
+      "verses": 40
+    },
+    "76": {
+      "quotation": 3,
+      "naming": 0,
+      "union": 3,
+      "rubric": 5,
+      "uas": -0.8088529779954493,
+      "uas_rank": 69,
+      "outlier": -0.8000000000000007,
+      "words": 243,
+      "verses": 31
+    },
+    "77": {
+      "quotation": 1,
+      "naming": 0,
+      "union": 1,
+      "rubric": null,
+      "uas": -0.8380497076618206,
+      "uas_rank": 71,
+      "outlier": -1.1100000000000003,
+      "words": 181,
+      "verses": 50
+    },
+    "78": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": 3,
+      "uas": -2.049743995982527,
+      "uas_rank": 101,
+      "outlier": -1.3000000000000003,
+      "words": 174,
+      "verses": 40
+    },
+    "79": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -0.6072301003776159,
+      "uas_rank": 64,
+      "outlier": -0.73,
+      "words": 179,
+      "verses": 46
+    },
+    "80": {
+      "quotation": 3,
+      "naming": 0,
+      "union": 3,
+      "rubric": null,
+      "uas": -1.4235172514792203,
+      "uas_rank": 86,
+      "outlier": -0.6799999999999999,
+      "words": 133,
+      "verses": 42
+    },
+    "81": {
+      "quotation": 2,
+      "naming": 1,
+      "union": 3,
+      "rubric": null,
+      "uas": 0.05928632096034836,
+      "uas_rank": 45,
+      "outlier": -1.04,
+      "words": 104,
+      "verses": 29
+    },
+    "82": {
+      "quotation": 1,
+      "naming": 1,
+      "union": 1,
+      "rubric": null,
+      "uas": -0.11651769793698863,
+      "uas_rank": 51,
+      "outlier": -0.98,
+      "words": 81,
+      "verses": 19
+    },
+    "83": {
+      "quotation": 10,
+      "naming": 0,
+      "union": 10,
+      "rubric": null,
+      "uas": -2.4913545298446067,
+      "uas_rank": 110,
+      "outlier": -0.26000000000000006,
+      "words": 169,
+      "verses": 36
+    },
+    "84": {
+      "quotation": 8,
+      "naming": 0,
+      "union": 8,
+      "rubric": null,
+      "uas": 0.9260963111806659,
+      "uas_rank": 25,
+      "outlier": -0.32999999999999996,
+      "words": 108,
+      "verses": 25
+    },
+    "85": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -1.2798869626185438,
+      "uas_rank": 82,
+      "outlier": -0.37,
+      "words": 109,
+      "verses": 22
+    },
+    "86": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": 0.6678744474630463,
+      "uas_rank": 28,
+      "outlier": -0.8,
+      "words": 61,
+      "verses": 17
+    },
+    "87": {
+      "quotation": 63,
+      "naming": 1,
+      "union": 63,
+      "rubric": 5,
+      "uas": -2.816969526276506,
+      "uas_rank": 114,
+      "outlier": -0.44,
+      "words": 72,
+      "verses": 19
+    },
+    "88": {
+      "quotation": 20,
+      "naming": 0,
+      "union": 20,
+      "rubric": 5,
+      "uas": -0.7787652648695312,
+      "uas_rank": 68,
+      "outlier": -0.32,
+      "words": 92,
+      "verses": 26
+    },
+    "89": {
+      "quotation": 1,
+      "naming": 0,
+      "union": 1,
+      "rubric": null,
+      "uas": -0.007293395871125652,
+      "uas_rank": 49,
+      "outlier": -0.12,
+      "words": 139,
+      "verses": 30
+    },
+    "90": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -0.4422038222660482,
+      "uas_rank": 60,
+      "outlier": -0.17,
+      "words": 82,
+      "verses": 20
+    },
+    "91": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -2.3018392476869427,
+      "uas_rank": 108,
+      "outlier": -0.15999999999999998,
+      "words": 54,
+      "verses": 15
+    },
+    "92": {
+      "quotation": 20,
+      "naming": 0,
+      "union": 20,
+      "rubric": null,
+      "uas": -2.029253952979334,
+      "uas_rank": 100,
+      "outlier": -0.06,
+      "words": 71,
+      "verses": 21
+    },
+    "93": {
+      "quotation": 7,
+      "naming": 0,
+      "union": 7,
+      "rubric": null,
+      "uas": -1.452115311617516,
+      "uas_rank": 87,
+      "outlier": -0.06,
+      "words": 40,
+      "verses": 11
+    },
+    "94": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -0.6415239671346452,
+      "uas_rank": 65,
+      "outlier": -0.07,
+      "words": 27,
+      "verses": 8
+    },
+    "95": {
+      "quotation": 2,
+      "naming": 0,
+      "union": 2,
+      "rubric": null,
+      "uas": -2.111139980974089,
+      "uas_rank": 103,
+      "outlier": -0.08,
+      "words": 34,
+      "verses": 8
+    },
+    "96": {
+      "quotation": 12,
+      "naming": 1,
+      "union": 12,
+      "rubric": null,
+      "uas": -0.00355907772491304,
+      "uas_rank": 48,
+      "outlier": -0.010000000000000002,
+      "words": 72,
+      "verses": 19
+    },
+    "97": {
+      "quotation": 3,
+      "naming": 0,
+      "union": 3,
+      "rubric": 4,
+      "uas": -2.2670477116647367,
+      "uas_rank": 107,
+      "outlier": -0.049999999999999996,
+      "words": 30,
+      "verses": 5
+    },
+    "98": {
+      "quotation": 2,
+      "naming": 0,
+      "union": 2,
+      "rubric": null,
+      "uas": -1.6965373942780064,
+      "uas_rank": 93,
+      "outlier": 0.009999999999999998,
+      "words": 94,
+      "verses": 8
+    },
+    "99": {
+      "quotation": 10,
+      "naming": 0,
+      "union": 10,
+      "rubric": 4,
+      "uas": -0.4830000798977165,
+      "uas_rank": 61,
+      "outlier": -0.07,
+      "words": 36,
+      "verses": 8
+    },
+    "100": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -0.5180345329083526,
+      "uas_rank": 62,
+      "outlier": -0.03,
+      "words": 40,
+      "verses": 11
+    },
+    "101": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -1.966343765356668,
+      "uas_rank": 98,
+      "outlier": -0.02,
+      "words": 36,
+      "verses": 11
+    },
+    "102": {
+      "quotation": 4,
+      "naming": 0,
+      "union": 4,
+      "rubric": null,
+      "uas": -0.7412368385068929,
+      "uas_rank": 67,
+      "outlier": 0.0,
+      "words": 28,
+      "verses": 8
+    },
+    "103": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -2.243940646632672,
+      "uas_rank": 106,
+      "outlier": 0.0,
+      "words": 14,
+      "verses": 3
+    },
+    "104": {
+      "quotation": 1,
+      "naming": 0,
+      "union": 1,
+      "rubric": null,
+      "uas": -2.162484194798999,
+      "uas_rank": 104,
+      "outlier": 0.0,
+      "words": 33,
+      "verses": 9
+    },
+    "105": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -2.763750215442654,
+      "uas_rank": 112,
+      "outlier": 0.0,
+      "words": 23,
+      "verses": 5
+    },
+    "106": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -0.8129955494865627,
+      "uas_rank": 70,
+      "outlier": 0.0,
+      "words": 17,
+      "verses": 4
+    },
+    "107": {
+      "quotation": 0,
+      "naming": 0,
+      "union": 0,
+      "rubric": null,
+      "uas": -1.6535629088777917,
+      "uas_rank": 92,
+      "outlier": 0.0,
+      "words": 25,
+      "verses": 7
+    },
+    "108": {
+      "quotation": 2,
+      "naming": 1,
+      "union": 3,
+      "rubric": null,
+      "uas": -1.9961601945933198,
+      "uas_rank": 99,
+      "outlier": 0.0,
+      "words": 10,
+      "verses": 3
+    },
+    "109": {
+      "quotation": 55,
+      "naming": 0,
+      "union": 55,
+      "rubric": 5,
+      "uas": -0.1432634855723765,
+      "uas_rank": 53,
+      "outlier": 0.0,
+      "words": 27,
+      "verses": 6
+    },
+    "110": {
+      "quotation": 16,
+      "naming": 1,
+      "union": 16,
+      "rubric": null,
+      "uas": -1.5162944231984252,
+      "uas_rank": 90,
+      "outlier": 0.0,
+      "words": 19,
+      "verses": 3
+    },
+    "111": {
+      "quotation": 5,
+      "naming": 0,
+      "union": 5,
+      "rubric": null,
+      "uas": -2.188227909141426,
+      "uas_rank": 105,
+      "outlier": 0.0,
+      "words": 23,
+      "verses": 5
+    },
+    "112": {
+      "quotation": 111,
+      "naming": 0,
+      "union": 111,
+      "rubric": 10,
+      "uas": -2.4621972542954467,
+      "uas_rank": 109,
+      "outlier": 0.0,
+      "words": 15,
+      "verses": 4
+    },
+    "113": {
+      "quotation": 36,
+      "naming": 0,
+      "union": 36,
+      "rubric": 10,
+      "uas": -0.2937979439445091,
+      "uas_rank": 57,
+      "outlier": 0.0,
+      "words": 23,
+      "verses": 5
+    },
+    "114": {
+      "quotation": 18,
+      "naming": 0,
+      "union": 18,
+      "rubric": 10,
+      "uas": -2.7968114791122023,
+      "uas_rank": 113,
+      "outlier": 0.0,
+      "words": 20,
+      "verses": 6
+    }
+  }
+}

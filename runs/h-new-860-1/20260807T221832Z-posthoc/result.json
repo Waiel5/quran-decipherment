@@ -1,0 +1,365 @@
+{
+  "id": "H-NEW-860.1-posthoc",
+  "locked_run": "runs/h-new-860-1/20260807T221459Z",
+  "run": "20260807T221832Z",
+  "span_sensitivity_rubric_top10": {
+    "1": {
+      "4": 30,
+      "5": 30,
+      "6": 6
+    },
+    "36": {
+      "4": 10,
+      "5": 4,
+      "6": 4
+    },
+    "67": {
+      "4": 6,
+      "5": 0,
+      "6": 0
+    },
+    "112": {
+      "4": 111,
+      "5": 111,
+      "6": 111
+    },
+    "113": {
+      "4": 36,
+      "5": 36,
+      "6": 36
+    },
+    "114": {
+      "4": 18,
+      "5": 18,
+      "6": 18
+    },
+    "2": {
+      "4": 485,
+      "5": 328,
+      "6": 257
+    },
+    "18": {
+      "4": 44,
+      "5": 37,
+      "6": 25
+    },
+    "32": {
+      "4": 31,
+      "5": 17,
+      "6": 17
+    },
+    "50": {
+      "4": 14,
+      "5": 11,
+      "6": 11
+    }
+  },
+  "q67_incipit": {
+    "words": 9,
+    "incipit4": "تبارك الذي بيده الملك",
+    "n_records_incipit4": 6,
+    "incipit5": "تبارك الذي بيده الملك وهو",
+    "n_records_incipit5": 0,
+    "surah_count_N4": 6,
+    "surah_count_N5": 0
+  },
+  "incipit_truncation_general": [
+    {
+      "surah": 5,
+      "incipit4": "يا ايها الذين امنوا",
+      "n4": 97,
+      "n5": 2
+    },
+    {
+      "surah": 67,
+      "incipit4": "تبارك الذي بيده الملك",
+      "n4": 6,
+      "n5": 0
+    },
+    {
+      "surah": 76,
+      "incipit4": "هل اتي علي الانسان",
+      "n4": 12,
+      "n5": 3
+    },
+    {
+      "surah": 98,
+      "incipit4": "لم يكن الذين كفروا",
+      "n4": 8,
+      "n5": 2
+    }
+  ],
+  "length_controlled_roster": {
+    "neglected": [
+      {
+        "surah": 26,
+        "uas_rank": 14,
+        "outlier_rank": 8,
+        "union": 3,
+        "words": 1320,
+        "length_residual": 46.473158521470744
+      },
+      {
+        "surah": 51,
+        "uas_rank": 15,
+        "outlier_rank": 113,
+        "union": 2,
+        "words": 360,
+        "length_residual": 35.46664560499645
+      },
+      {
+        "surah": 16,
+        "uas_rank": 30,
+        "outlier_rank": 30,
+        "union": 8,
+        "words": 1844,
+        "length_residual": 33.92646236846581
+      },
+      {
+        "surah": 86,
+        "uas_rank": 28,
+        "outlier_rank": 71,
+        "union": 0,
+        "words": 61,
+        "length_residual": 32.480145325524276
+      },
+      {
+        "surah": 27,
+        "uas_rank": 23,
+        "outlier_rank": 108,
+        "union": 6,
+        "words": 1159,
+        "length_residual": 31.026525553476375
+      },
+      {
+        "surah": 23,
+        "uas_rank": 9,
+        "outlier_rank": 111,
+        "union": 7,
+        "words": 1052,
+        "length_residual": 28.533196432477084
+      },
+      {
+        "surah": 55,
+        "uas_rank": 7,
+        "outlier_rank": 5,
+        "union": 3,
+        "words": 352,
+        "length_residual": 26.98665824199857
+      },
+      {
+        "surah": 52,
+        "uas_rank": 19,
+        "outlier_rank": 110,
+        "union": 3,
+        "words": 312,
+        "length_residual": 24.766677197501735
+      },
+      {
+        "surah": 56,
+        "uas_rank": 75,
+        "outlier_rank": 26,
+        "union": 5,
+        "words": 379,
+        "length_residual": 20.193297528493986
+      },
+      {
+        "surah": 37,
+        "uas_rank": 79,
+        "outlier_rank": 19,
+        "union": 9,
+        "words": 865,
+        "length_residual": 20.066550827480604
+      },
+      {
+        "surah": 10,
+        "uas_rank": 8,
+        "outlier_rank": 106,
+        "union": 12,
+        "words": 1839,
+        "length_residual": 17.93313324746652
+      },
+      {
+        "surah": 30,
+        "uas_rank": 56,
+        "outlier_rank": 17,
+        "union": 9,
+        "words": 817,
+        "length_residual": 17.599905222484125
+      }
+    ],
+    "overcited": [
+      {
+        "surah": 87,
+        "uas_rank": 114,
+        "outlier_rank": 65,
+        "union": 63,
+        "words": 72,
+        "length_residual": -64.28653187197749
+      },
+      {
+        "surah": 62,
+        "uas_rank": 95,
+        "outlier_rank": 81,
+        "union": 26,
+        "words": 177,
+        "length_residual": -39.626588738487
+      },
+      {
+        "surah": 88,
+        "uas_rank": 68,
+        "outlier_rank": 61,
+        "union": 20,
+        "words": 92,
+        "length_residual": -37.05987994847996
+      },
+      {
+        "surah": 66,
+        "uas_rank": 77,
+        "outlier_rank": 84,
+        "union": 22,
+        "words": 254,
+        "length_residual": -31.193297528494043
+      },
+      {
+        "surah": 5,
+        "uas_rank": 66,
+        "outlier_rank": 101,
+        "union": 125,
+        "words": 2837,
+        "length_residual": -27.093550268536298
+      },
+      {
+        "surah": 60,
+        "uas_rank": 73,
+        "outlier_rank": 67,
+        "union": 22,
+        "words": 352,
+        "length_residual": -26.01334175800143
+      },
+      {
+        "surah": 63,
+        "uas_rank": 63,
+        "outlier_rank": 92,
+        "union": 15,
+        "words": 181,
+        "length_residual": -18.89326593598875
+      },
+      {
+        "surah": 75,
+        "uas_rank": 72,
+        "outlier_rank": 81,
+        "union": 12,
+        "words": 164,
+        "length_residual": -16.10657610148489
+      },
+      {
+        "surah": 49,
+        "uas_rank": 89,
+        "outlier_rank": 66,
+        "union": 17,
+        "words": 353,
+        "length_residual": -13.773348076502486
+      },
+      {
+        "surah": 39,
+        "uas_rank": 78,
+        "outlier_rank": 100,
+        "union": 26,
+        "words": 1177,
+        "length_residual": -12.986816204525027
+      },
+      {
+        "surah": 83,
+        "uas_rank": 110,
+        "outlier_rank": 60,
+        "union": 10,
+        "words": 169,
+        "length_residual": -9.113246980485584
+      },
+      {
+        "surah": 11,
+        "uas_rank": 88,
+        "outlier_rank": 99,
+        "union": 28,
+        "words": 1946,
+        "length_residual": -8.080208510534888
+      }
+    ]
+  },
+  "partials": {
+    "cell A (36)|quotation": {
+      "raw_rho": -0.2923374720671294,
+      "raw_p": 0.08360441972846458,
+      "partial_rho": -0.14256017026820667,
+      "partial_p": 0.40686535872129026
+    },
+    "cell A (36)|naming": {
+      "raw_rho": -0.607140965543893,
+      "raw_p": 8.628248196919842e-05,
+      "partial_rho": -0.31246004889826223,
+      "partial_p": 0.06354537306183114
+    },
+    "cell A (36)|union": {
+      "raw_rho": -0.31923255633629055,
+      "raw_p": 0.0577237218569408,
+      "partial_rho": -0.16023043323479286,
+      "partial_p": 0.35055957952726463
+    },
+    "cell B (114)|quotation": {
+      "raw_rho": -0.3353036433544941,
+      "raw_p": 0.00026556025160430876,
+      "partial_rho": -0.05835570236156466,
+      "partial_p": 0.5374143471124809
+    },
+    "cell B (114)|naming": {
+      "raw_rho": -0.5120635524160873,
+      "raw_p": 5.76986918276139e-09,
+      "partial_rho": -0.18595235635261215,
+      "partial_p": 0.0476070243990077
+    },
+    "cell B (114)|union": {
+      "raw_rho": -0.34236709631206497,
+      "raw_p": 0.00019260140283894315,
+      "partial_rho": -0.06059168343459225,
+      "partial_p": 0.5219117835700929
+    }
+  },
+  "external_crosscheck": {
+    "1": {
+      "independent": 59,
+      "source": "Q001-citations.md",
+      "this_union": 34,
+      "this_quotation": 30,
+      "this_naming": 8
+    },
+    "2": {
+      "independent": 126,
+      "source": "Q002-citations.md",
+      "this_union": 427,
+      "this_quotation": 328,
+      "this_naming": 132
+    },
+    "6": {
+      "independent": 14,
+      "source": "Q006-citations.json",
+      "this_union": 101,
+      "this_quotation": 98,
+      "this_naming": 5
+    },
+    "19": {
+      "independent": 236,
+      "source": "Q019-citations-raw.json",
+      "this_union": 21,
+      "this_quotation": 20,
+      "this_naming": 2
+    },
+    "33": {
+      "independent": 272,
+      "source": "Q033-citations.json",
+      "this_union": 130,
+      "this_quotation": 130,
+      "this_naming": 7
+    }
+  }
+}

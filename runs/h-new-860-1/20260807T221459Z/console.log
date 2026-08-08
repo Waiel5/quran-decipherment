@@ -1,0 +1,58 @@
+H-NEW-860.1  run 20260807T221459Z
+rundir runs/h-new-860-1/20260807T221459Z
+prereg SHA-256 verified: 15f3940478d1842a22ab99fee41e831e22934c7766d299339f477d824444c7f1
+norm() self-test passed, vector 4221505b325b11ca88a84d2a210011f9c2bec66edbf359787397239679abb3f0
+Quran: 114 surahs, 6236 verses, 77,797 normalised words
+hadith: 40,943 records in the nine books, 50,884 in all seventeen; 2,678,037 normalised words in the nine
+inverted index: 1,304,779 distinct 4-grams over all 17 books
+  arm N=4 verse:   894 verses matched,   4484 links, 600 short, 284 non-distinctive
+  arm N=4 surah:   963 verses matched,   4808 links, 600 short, 198 non-distinctive
+  arm N=5 verse:   749 verses matched,   3147 links, 600 short, 265 non-distinctive
+  arm N=5 surah:   795 verses matched,   3293 links, 600 short, 180 non-distinctive
+  arm N=6 verse:   663 verses matched,   2686 links, 600 short, 259 non-distinctive
+  arm N=6 surah:   703 verses matched,   2749 links, 600 short, 176 non-distinctive
+naming instrument: 394 links over 58 surahs (canonical names only, prereg 3.6)
+FP control (pre-Islamic diwans, 75971 words): N=4: 12 links = 158.0/Mw, N=5: 9 links = 118.5/Mw, N=6: 7 links = 92.1/Mw
+deliverable written: findings/phase-b-hypotheses/csv/h-new-860-1-reception-weights.csv (6236 verses, 22 columns)
+concentration: top-20 hold 21.3% of all links; Gini 0.938; 749 of 5371 eligible verses cited at all
+UAS on 114 surahs; outlier on 114; rubric on 36 surahs
+UAS-rank reconstruction: 36/36 match H-NEW-860; mismatches none
+
+PRIMARY ARM (Q, N=5, cell A, n=36): rho(formal count, UAS_rank) = -0.2923, p = 0.0836
+  sign convention: UAS_rank 1 = most architecturally distinct, so POSITIVE rho = more hadith attention -> WORSE architectural rank = ANTI-alignment
+  partial Spearman controlling log surah word count: -0.1426, p = 0.4069
+  stratified permutation k=5 seed=20260509: p = 0.4178 (null sd 0.104, |max| 0.644)
+  stratified permutation k=5 seed=20260519: p = 0.4180 (null sd 0.103, |max| 0.594)
+  stratified permutation k=10 seed=20260509: p = 0.0852 (null sd 0.085, |max| 0.458)
+  stratified permutation k=10 seed=20260519: p = 0.0785 (null sd 0.085, |max| 0.474)
+  cheapest diagnostic: the rubric's 36-surah set has median log word count 6.012; a random 36 reaches it 14.80% of the time
+
+--- verdict logic, diffed against prereg 6.2 ---
+  rho_pub = +0.330   half-bar = +0.165   alpha = 0.05
+  rho_f = -0.2923  p_f = 0.0836  same_sign = False  clears_half = False  nulls_pass = False
+  REVERSES  <- (not same_sign) and p<0.05          : False
+  SURVIVES  <- same_sign and p<0.05 and rho>=half  : False
+  WEAKENS   <- same_sign and (p>=0.05 or rho<half) : False
+  UNDETERM. <- (not same_sign) and p>=0.05         : True
+  VERDICT = UNDETERMINED
+
+rubric agreement (36 rubric-listed surahs, n=36):
+    rubric x quotation: rho = +0.0546 (p=0.7516), tau = +0.0412
+    rubric x naming   : rho = -0.3154 (p=0.06099), tau = -0.2312
+    rubric x union    : rho = +0.0061 (p=0.972), tau = +0.0034
+
+rubric agreement (all 114, unlisted-as-zero, n=114):
+    rubric x quotation: rho = +0.3742 (p=4.1e-05), tau = +0.2967
+    rubric x naming   : rho = +0.1508 (p=0.1092), tau = +0.1390
+    rubric x union    : rho = +0.3724 (p=4.491e-05), tau = +0.2933
+  top-10 overlap rubric vs formal (union instrument): 2/10
+  top-20 overlap rubric vs formal (union instrument): 8/20
+  rho_reception_vs_outlier_A: rho = +0.1517, p = 0.377
+  rho_reception_vs_outlier_B: rho = +0.1407, p = 0.1353
+  rho_reception_vs_uasvalue_B: rho = +0.3424, p = 0.0001926
+  pearson_like_for_like_B: rho = +0.4174, p = 3.835e-06
+  drift_surah_words: rho = +0.4847, p = 4.63e-08
+  drift_surah_verses: rho = +0.3282, p = 0.0003647
+  drift_naming_words: rho = +0.6596, p = 1.467e-15
+  rho_quotation_naming: rho = +0.5701, p = 3.573e-11
+  drift_verse_words: rho = +0.1801, p = 2.099e-40
