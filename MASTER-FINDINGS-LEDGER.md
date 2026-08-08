@@ -7137,3 +7137,70 @@ Files: `prereg-h-new-2840-muqattaat-structure.md` (SHA-256 `321f7fe90f9f4f956b4a
 **Queued, not registered.** Eligibility requires **≥2 classified tokens of each form of the same root** (prereg §7.1), so a root becomes evidence only when the corpus supplies both members of the pair *and* the classifier can see the subject of both — which at 15.94 % coverage it usually cannot, leaving III→VI with **zero** eligible roots and I→II with three. **A next test must stop making the within-root form-pair the unit of evidence: it must not require both forms *and* both subject types to co-occur inside one root.** Two routes need no new annotation — score each form against the corpus-wide subject-class base rate so a root can contribute on one form alone, or resolve the 8,479 subjectless third-person verbs by coreference and re-run the existing design on the coverage that unlocks.
 
 Files: `prereg-h-new-2850-agency-grammar.md` (SHA-256 `7e7e98f7a60617df76c42abf66547e639baebd6cd5801990f17e3ae5239b4f2c`, committed `044815a75`), `scripts/h-new-2850.py` (committed `12e414ba7`), `h-new-2850-agency-grammar.md`; runs `runs/h-new-2850/20260807T101603Z/` (primary) and `runs/h-new-2850/20260807T101641Z/` (replication), **both retained**; a third directory `20260807T101421Z` is a smoke run at `N_PERM = 60` written into the runs tree by an output-path substitution that silently failed — **retained with a notice at `runs/h-new-2850/SMOKE-NOTICE-20260807T101421Z.md` rather than removed**, per the standing correction at §10.140.
+
+
+---
+
+# Wave-T (2026-08-07) — the pausal-rhyme family
+
+## §11.1 H-NEW-2870 → 2880 → 2890 → 2910 — the fāṣila is organised at PAUSAL phonology (the session's only new positive finding)
+
+**Claim.** This corpus's verse-endings are organised at the form a reciter produces when stopping
+— final short vowels and tanwīn dropped, *-an* → *ā* — not at the fully-vocalised citation form.
+
+**H-NEW-2870 — NULL by its locked gate, and the gate was ill-posed.** p = 0.0058 against
+α_bon = 0.003125. Its §9, declared post-hoc and gating nothing, showed the null could not have
+returned another answer: of the draws beating the observation, **57 of 57 were more concentrated
+than the real partition** (mean floor 0.2372–0.2879 against 0.1687), agreement tracking floor at
+ρ = +0.70. Matching class COUNT does not match class CONCENTRATION. **The finding declined to
+overturn itself on post-hoc grounds and named the test that would settle it** — the right call.
+
+**H-NEW-2880 — PASS on the pre-registered repair.** E = A − Σpᵢ², registered as primary *before*
+any output. E_obs = 0.36657; every draw identical to the real partition in class count, class
+sizes and concentration — **chance floor variance exactly 0.00 across 160,000 draws** — gives
+**0/10,000, z = +15.03**, replicated. Raw: A_obs = 0.5353 while 10,000 identically-coarse
+regroupings average 0.3953, best 0.4322. Collapse decomposition: **33.1% arithmetic, 66.9%
+compositional**. Post-hoc deflation, run after the verdict locked and reported because it could
+only weaken it: **a deliberately WRONG tuple (P3) also clears, z = +8.99.** The pausal FAMILY is
+isolated; al-Sajāwandī's specific rules are not. 634 of 1,144 cross-type merges (55.4%) require
+*-an* → *ā*, which bare truncation cannot reach.
+
+**H-NEW-2890 — the negative control both parents called impossible.** Both reported it NOT
+COMPUTABLE from a census that **enumerated one directory**. 50,884 fully vocalised ḥadīth were
+already committed. Worse: **H-NEW-2730 — named in 2870's own frontmatter as method_parent_2 — had
+already found and measured them** (al-Bukhārī 0.770, al-Dārimī 0.866). Control run: prose
+Δ = +0.030 to +0.033 against this corpus's +0.1869, and **prose's compositional remainder is
+NEGATIVE (−0.0052)** — it gains *less* than collapse arithmetic alone predicts. **3 of 12 D-P3
+arms failed**, all Ṣaḥīḥ Muslim under P1 (z = +2.88/+3.16/+2.90). **Published incomplete in
+`cf34b5b73`** with unfilled placeholders and no run directory, and described to the project owner
+as publishable; corrected the same day, publication record retained in the file.
+
+**H-NEW-2910 — nine books settle the margin. ROBUST.** 2890's verdict turned on **0.00010**. On
+tuple P1, the registered gate, **zero of nine books reach the +0.04672 threshold** — prose max
+Ibn Mājah 0.04134, mean 0.03556, against this corpus's **0.18690**: **5.3× the prose mean, 4.5×
+the highest single book**, unit lengths spanning 49.2–91.1 words. **The unflattering half settles
+it:** al-Bukhārī S0 P2 at 0.04682 is NOT the extreme — Ibn Mājah P2 is 0.05357 and **two of nine
+exceed on P2**. The PARTIAL reading was a real property of the P2 tuple across books, not a
+Bukhārī accident. 2890 survives *because P2 was never the registered gate*.
+
+**Standing limits:** the pausal family is isolated, not the classical rules; two books clear on
+P2; three arms failed on Muslim; the baseline is **ḥadīth only** — vocalised adab and dīwāns are
+genuinely absent, verified with commands.
+
+**Classical anchor, recovered after three findings declared none existed:** al-Suyūṭī, *al-Itqān*,
+nawʿ 28, *fī maʿrifat al-waqf wa-l-ibtidāʾ* —
+`data/literature/classical-tafsir/raw/suyuti-itqan.openiti.raw.txt` line 5092. The parents had
+searched the **English** partial translation, correctly found 0 hits, and generalised a true
+statement about one file into a false statement about the repository.
+
+## §11.2 Wave-T synthesis — what the session's method produced
+
+Four findings, one claim, and the arc is the method working: a NULL that declined to rescue itself
+→ a pre-registered repair that passed → a control its own parents said was impossible → a
+nine-book distribution that settled a margin of one ten-thousandth. **Every step was tried
+hardest by the lane that owned it.**
+
+Rules minted this session and now standing: `findings/UNIT-DRIFT-DEFECT.md` (when a density's
+denominator drifts across the ordering, the measure is testing the drift) and
+`findings/ABSENCE-CLAIMS.md` (claims of absence are the least audited claims in any project,
+because nothing downstream fails when they are wrong — the work simply never happens).
