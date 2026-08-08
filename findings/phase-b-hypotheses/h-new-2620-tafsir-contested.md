@@ -18,6 +18,34 @@ verdict: NULL
 
 # H-NEW-2620 — Twelve tafsīr editions, measured
 
+> ### ⛔ ATTRIBUTION CORRECTION 2026-08-08 — the "classical-only" sensitivity was never run
+>
+> **`ar-tafseer-tanwir-al-miqbas/` is Ibn ʿĀshūr's *al-Taḥrīr wa'l-Tanwīr* (d. 1393 AH / 1973 CE),
+> NOT *Tanwīr al-Miqbās* attributed to Ibn ʿAbbās (d. 68 AH).** The folder cites al-Zamakhsharī
+> ×249, al-Qurṭubī ×220, al-Sakkākī ×75, Ibn Mālik ×70, al-Raḍī ×69. See
+> `data/literature/classical-tafsir/MISLABELLED-TANWIR-FOLDER.md`.
+>
+> **The load-bearing consequence.** This file's sensitivity row labelled
+> **"classical-only (5 pre-modern)"** is **4 pre-modern editions plus one from 1973.** The
+> accompanying sentence — *"Dropping the three modern editions does not rescue the hypothesis"* —
+> **is false as written: only three of FOUR modern editions were dropped.** Four of the eight
+> primary Arabic editions are modern, not three.
+>
+> **And the mislabelled edition is the most influential single edition in the set** — the
+> leave-one-edition-out range is carried by it at **−0.2096**.
+>
+> **A further error in the same family:** this file states that `en-tafsir-ibn-abbas` is an English
+> translation of the Arabic slug and that the English set holds ~2 independent witnesses. **They
+> are unrelated works** — the English edition is the genuine short Ibn ʿAbbās recension (962 chars
+> at Q 2:1 against the Arabic slug's 17,227), and the English set holds **3** independent
+> witnesses.
+>
+> **What does NOT change: the NULL verdict stands.** Every number was computed on whatever text
+> was in the folder, and those computations are correct. What changes is **whose exegetical
+> behaviour was measured**, and the claim that a classical-only sensitivity was ever performed.
+> That sensitivity has not been run and is queued.
+
+
 
 > ## ⛔ CORRECTION NOTICE — 2026-08-07: UAS is a synthesis index, not a testable law
 >
