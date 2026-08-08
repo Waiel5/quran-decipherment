@@ -1,0 +1,105 @@
+prereg SHA-256 verified: adb194fb759d72f88ffb4600448c84b4faa14bf9236b34e9d5dbea534b4e4cdb
+run directory: /Users/grey/Downloads/quran/runs/h-new-2920/20260807T225701Z
+
+norm() self-test PASSED  (بسم الله الرحمن الرحيم)
+F2 liturgical chapter stems (normalised): صلا | جمع | عيد | وتر | تهجد | قيام | اذان | سجود | فضايل القران | فضل القران | دعا | ذكر | تراويح | رمضان
+
+========================================================================================
+T1 — H-NEW-150 liturgical-prominence score vs formal hadith naming count
+========================================================================================
+proxy operating range: 27 surahs with non-zero liturgical score
+  [1, 2, 3, 18, 24, 32, 36, 40, 50, 55, 56, 57, 59, 62, 63, 67, 73, 76, 87, 88, 94, 97, 109, 110, 112, 113, 114]
+published H-NEW-150 primary : rho = +0.3121, p_perm = 0.0002
+published H-NEW-150 residual: rho = +0.0859, p_perm = 0.1848
+
+instrument positive control — records scanned: 40943 (published 40943)
+  naming links, my re-implementation : 394 over 58 surahs
+  naming links, published H-NEW-860.1: 394 over 58 surahs
+  agreement rho(mine, published)     : +1.0000
+  liturgical chapters matched by the §3.2 stem list: 54 of 429
+  F2 naming links inside liturgical chapters: 123
+
+agreement  liturgical_score x F1_naming                         op-range(n= 27) rho=+0.4319 p=0.0245   full(114) rho=+0.0663 p=0.484
+agreement  liturgical_score x F2_naming_liturgical_chapters     op-range(n= 27) rho=+0.4724 p=0.0128   full(114) rho=+0.2307 p=0.0135
+agreement  liturgical_score x quotation                         op-range(n= 27) rho=+0.4956 p=0.0086   full(114) rho=+0.2508 p=0.00711
+agreement  liturgical_score x union                             op-range(n= 27) rho=+0.5030 p=0.0075   full(114) rho=+0.2494 p=0.00744
+
+headline re-run  rho(F1_naming, cluster_degree) = -0.0556  p=0.557  p_perm=0.5533/0.5542   partial|log words = -0.0634 (p=0.5031)
+headline re-run  rho(quotation, cluster_degree) = +0.0217  p=0.8188  p_perm=0.8138/0.8173   partial|log words = +0.0315 (p=0.7395)
+headline re-run  rho(union, cluster_degree) = +0.0265  p=0.7795  p_perm=0.7727/0.7797   partial|log words = +0.0374 (p=0.6931)
+  (proxy itself reproduced here: rho(liturgical_score, degree) = +0.3121, published +0.3121)
+
+drift  rho(liturgical_score        , log surah word count) = -0.1028  (p=0.276)
+drift  rho(cluster_degree          , log surah word count) = -0.0121  (p=0.899)
+drift  rho(F1_naming               , log surah word count) = +0.6596  (p=1.47e-15)
+drift  rho(F2_liturgical_chapters  , log surah word count) = +0.3904  (p=1.75e-05)
+drift  rho(quotation               , log surah word count) = +0.4847  (p=4.63e-08)
+drift  rho(union                   , log surah word count) = +0.4942  (p=2.3e-08)
+POST-HOC  liturgical_score     rho(.,log verses)=-0.1382 (p=0.142)   rho(.,|log verses - median|)=+0.1754 (p=0.062)
+POST-HOC  cluster_degree       rho(.,log verses)=+0.0161 (p=0.865)   rho(.,|log verses - median|)=+0.0004 (p=0.996)
+POST-HOC  F1_naming            rho(.,log verses)=+0.5849 (p=8.28e-12)   rho(.,|log verses - median|)=+0.0810 (p=0.392)
+POST-HOC  quotation            rho(.,log verses)=+0.3282 (p=0.000365)   rho(.,|log verses - median|)=+0.1215 (p=0.198)
+
+classification inputs (prereg §6):
+  rho_op                 = +0.4319   (NOISE if |rho|<0.2, CARRIES if >=0.6)
+  headline reproduces    = False  (rho=-0.0556 > 0 and p_perm=0.5533 < 0.025)
+  ==> T1 CLASSIFICATION: PARTIAL
+
+========================================================================================
+T2 — Noldeke rank vs the Egyptian standard revelation order (rater swap)
+========================================================================================
+rho(Noldeke, Egyptian standard) = +0.7714  (p=9.97e-24, Kendall tau=+0.5771)
+surahs whose two ranks differ by more than 20 places: 38 of 114
+  largest disagreements (|delta rank|, surah):  Q99:68, Q82:56, Q84:54, Q55:54, Q79:50, Q83:49, Q7:48, Q78:47, Q76:46, Q35:43, Q1:43, Q69:40
+
+H-NEW-125 axis re-scoring under the alternative rater (published values used verbatim; alpha_bon = 0.0033333333333333335)
+axis                            rho|Noldeke  rho|Egyptian    delta     p|Nold      p|Egy  survives
+surah_length                        +0.3903       +0.2482  -0.1421     0.0001     0.0073   N-
+mean_verse_length                   +0.9038       +0.6690  -0.2348     0.0001     0.0001   NE
+muq_cardinality                     +0.2547       +0.0290  -0.2257     0.0079     0.7558   --
+allah_density                       +0.8520       +0.6590  -0.1929     0.0001     0.0001   NE
+qul_density                         +0.5421       +0.2607  -0.2813     0.0001     0.0050   N-
+prophet_narrative_density           +0.5304       +0.3114  -0.2190     0.0001     0.0006   NE
+legal_term_density                  +0.7039       +0.5657  -0.1382     0.0001     0.0001   NE
+eschatological_density              +0.7096       +0.5167  -0.1929     0.0001     0.0001   NE
+book_reference_density              +0.5744       +0.4166  -0.1577     0.0001     0.0001   NE
+oath_density                        -0.0041       +0.0183  +0.0224     0.9648     0.8457   --
+divine_name_density                 +0.8973       +0.6258  -0.2714     0.0001     0.0001   NE
+personal_pronoun_density            +0.4956       +0.3808  -0.1148     0.0001     0.0001   NE
+rhyme_letter_diversity              +0.1789       +0.1409  -0.0380     0.0576     0.1356   --
+refrain_density                     +0.0023       +0.0484  +0.0461     0.9778     0.6125   --
+loanword_density                    +0.8329       +0.5699  -0.2630     0.0001     0.0001   NE
+axes surviving alpha_bon: Noldeke 11/15   Egyptian standard 9/15
+published H-NEW-125 count: 11/15
+  published passing set reproduced under Noldeke here: True
+  survivor set identical across raters: False
+    only under Noldeke : ['qul_density', 'surah_length']
+    only under Egyptian: []
+sign agreement across raters: 14/15 axes
+
+drift channel mean_verse_length    rho|Noldeke=+0.9038   rho|Egyptian=+0.6690
+drift channel verse_count          rho|Noldeke=+0.3903   rho|Egyptian=+0.2482
+drift channel log_surah_words      rho|Noldeke=+0.6775   rho|Egyptian=+0.4436
+
+  ==> T2 CLASSIFICATION: PARTIAL  (rho_op=+0.7714, headline_reproduces=False)
+
+========================================================================================
+T3 — Q036-F-01's reconstructed 860 rubric vs the published rubric and the formal count
+========================================================================================
+reconstruction scores 20 surahs; published rubric scores 36
+  dropped by the reconstruction: [6, 7, 17, 20, 23, 25, 32, 50, 57, 59, 61, 62, 63, 76, 78, 88, 97, 99]
+  invented by the reconstruction: [56, 75]
+  surahs where the two differ: 30 of 38 in the union support
+rho(reconstruction, published rubric) over the union support (n=38) = +0.4878  p=0.001894
+rho(reconstruction, published rubric) over the published 36  (n=36) = +0.5571  p=0.0004168
+rho(reconstruction, formal naming)    over its own 20      = -0.2208  p=0.3496
+rho(reconstruction, formal quotation) over its own 20      = -0.0396  p=0.8682
+
+  ==> T3 CLASSIFICATION: NOISE  (rho_op=-0.0396 against the formal quotation count over its own support)
+
+========================================================================================
+SUMMARY
+========================================================================================
+T1  H-NEW-150 liturgical-prominence score        -> PARTIAL
+T2  Noldeke chronology rank                      -> PARTIAL
+T3  Q036-F-01 reconstructed rubric               -> NOISE
