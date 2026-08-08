@@ -489,3 +489,42 @@ Three consequences, all of them cheap:
 The same session supplied the case in miniature: **§3's drift table stated the wrong primary
 channel, and only a second lane building against it noticed.** A rule document is not
 self-checking, and neither is a screen.
+
+---
+
+## 9. Never edit a pre-registration after its run — and no bulk operation may touch one
+
+**Established 2026-08-08, from a failure in this repository.**
+
+> **A pre-registration is the one document that must never be edited after its run — for any
+> reason, including to correct an error in it. Corrections go in the FINDING. If a
+> pre-registration is itself wrong, that fact is a finding to record, not a file to repair.**
+
+### What happened
+
+Commit `b76ec401f` — a 702-file propagation adding correction notices after the genre-control
+collapse — **broke four SHA-256 pre-registration locks at once**: H-NEW-2240, 2560, 2610 and 2620.
+Each script hard-codes its pre-registration's hash and aborts on mismatch, so all four became
+unrunnable. It went unnoticed for a day, across four subsequent commits. H-NEW-2620's was broken a
+second time by a later correction.
+
+All four have been restored byte-identically from `b76ec401f^` and verified against their scripts'
+literals. The **verdicts were unaffected** — every run was computed under its original
+pre-registration. What was lost and recovered is **reproducibility**: a third party's ability to
+re-run the script and have its own gate pass.
+
+### The generalisable shape of the error
+
+**Every one of those 702 edits was an accurate correction.** Not one was wrong on its own terms.
+Four of them landed on documents whose entire value depends on never being edited.
+
+> **A bulk operation that is correct file-by-file can still be categorically wrong.**
+
+So the remedy is not "be careful during bulk edits". It is: **the pre-registration file class must
+be excluded from bulk operations by construction, not by remembering.**
+
+### The standing check
+
+`scripts/verify-prereg-locks.sh` hashes every pre-registration against its script's embedded
+literal and exits non-zero on any mismatch. **Run it after any bulk edit.** It found four broken
+locks in one pass that four separate commits had walked past.
