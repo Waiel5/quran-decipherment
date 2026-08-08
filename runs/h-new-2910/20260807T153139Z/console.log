@@ -1,0 +1,193 @@
+[SHA-OK] pre-reg locked: 86aa22f76203001f03442976a729797a96b3dc74d89433efd3af98f2777833a8
+[SHA-OK] 2 frozen inputs verified (the parent runners)
+
+==============================================================================
+INSTRUMENT — H-NEW-2890's machinery, loaded unmodified (prereg §4).
+==============================================================================
+   (parent SHA gates and Gates A/B ran and passed; its output is in the run log)
+   [OK] corpus Δ(P1) recomputed = 0.186867, matches the lock
+   parallelism: 8 worker processes over 108 exact-null arms (bit-identical to serial; prereg §4)
+
+==============================================================================
+RESULT 1 — THE NINE-BOOK CENSUS AND THE INCLUSION GATE (prereg §3)
+==============================================================================
+   gate: unit-final vocalisation >= 0.9, readable pairs >= 500, pausal partition a coarsening of the citation partition
+   book        units  chap  har/ch  unitfinal  pairs readable  coarsen admit
+   bukhari      7277    97  0.7702     0.9426   7180     6579     True PASS
+   muslim       7459    57  0.7965     0.9405   7402     7054     True PASS
+   abudawud     5276    43  0.7962     0.9505   5233     4950     True PASS
+   tirmidhi     4053    49  0.7954     0.9887   4004     3746     True PASS
+   nasai        5768    52  0.7883     0.9511   5716     5482     True PASS
+   ibnmajah     4345    38  0.7911     0.9484   4307     4172     True PASS
+   malik        1860    61  0.8201     0.9457   1799     1764     True PASS
+   ahmed        1374     8  0.8829     0.9512   1366     1364     True PASS
+   darimi       3406    24  0.8659     0.9445   3382     3351     True PASS
+   admitted: 9/9 — bukhari, muslim, abudawud, tirmidhi, nasai, ibnmajah, malik, ahmed, darimi
+
+==============================================================================
+RESULT 2 — ARM B: THE Δ DISTRIBUTION ACROSS BOOKS (prereg §4). PRIMARY.
+==============================================================================
+   book        set  n_read    A(C)   A(P1)     Δ(P1)     Δ(P2)   K(C)->K(P1)
+   bukhari      S5    6306  0.0715  0.1012  +0.02965  +0.04408    785->327   
+   bukhari      S3    5063  0.0733  0.1051  +0.03180  +0.04602    728->310   
+   bukhari      S0    6579  0.0719  0.1035  +0.03162  +0.04682    799->329   
+   muslim       S5    6833  0.1109  0.1434  +0.03249  +0.04537    838->347   
+   muslim       S3    5805  0.1082  0.1406  +0.03239  +0.04513    775->330   
+   muslim       S0    7054  0.1100  0.1425  +0.03246  +0.04522    846->349   
+   abudawud     S5    4788  0.0495  0.0764  +0.02694  +0.03864    832->346   
+   abudawud     S3    4092  0.0501  0.0777  +0.02761  +0.03861    782->331   
+   abudawud     S0    4950  0.0503  0.0774  +0.02707  +0.03859    850->353   
+   tirmidhi     S5    3506  0.0742  0.0878  +0.01369  +0.01683    459->234   
+   tirmidhi     S3    2834  0.0667  0.0829  +0.01623  +0.02011    421->222   
+   tirmidhi     S0    3746  0.0766  0.0892  +0.01255  +0.01548    468->238   
+   nasai        S5    5364  0.1721  0.2008  +0.02871  +0.03505    702->300   
+   nasai        S3    4421  0.1703  0.2029  +0.03257  +0.03823    665->285   
+   nasai        S0    5482  0.1696  0.1994  +0.02973  +0.03667    711->304   
+   ibnmajah     S5    4088  0.1037  0.1451  +0.04134  +0.05357    726->293   
+   ibnmajah     S3    3485  0.1033  0.1429  +0.03960  +0.05222    673->277   
+   ibnmajah     S0    4172  0.1028  0.1433  +0.04051  +0.05345    736->296   
+   malik        S5    1725  0.0870  0.1246  +0.03768  +0.04638    445->217   
+   malik        S3    1440  0.0889  0.1222  +0.03333  +0.04167    403->200   
+   malik        S0    1764  0.0867  0.1213  +0.03458  +0.04365    453->221   
+   ahmed        S5    1324  0.0393  0.0650  +0.02568  +0.03701    305->157   
+   ahmed        S3    1102  0.0445  0.0708  +0.02632  +0.03630    276->147   
+   ahmed        S0    1364  0.0381  0.0616  +0.02346  +0.03446    309->157   
+   darimi       S5    3246  0.0795  0.1078  +0.02834  +0.03820    646->286   
+   darimi       S3    2807  0.0819  0.1094  +0.02743  +0.03954    610->273   
+   darimi       S0    3351  0.0782  0.1065  +0.02835  +0.03820    657->287   
+
+   DISTRIBUTION of Δ (Arm B, readable, R2), over admitted books x 3 settings:
+      P1           n= 27  mean=+0.02934  sd=0.00711  min=+0.01255  median=+0.02965  q90=+0.03845  max=+0.04134
+      P2           n= 27  mean=+0.03946  sd=0.00957  min=+0.01548  median=+0.03864  q90=+0.04898  max=+0.05357
+      both_tuples  n= 54  mean=+0.03440  sd=0.00979  min=+0.01255  median=+0.03481  q90=+0.04582  max=+0.05357
+   this corpus: Δ(P1)=+0.18687  Δ(P2)=+0.18801
+   this corpus sits +15.6 sd above the prose cell mean, and 3.5x its maximum
+
+   === THE MARGIN QUESTION (prereg §5) ===
+   threshold T = +0.04672 (H-NEW-2890's quarter threshold)
+   cells at or above T: 4/54  ->  f = 0.0741
+   al-Bukhārī S0 P2 (+0.04682) sits at the 92.6th percentile of the 54-cell distribution
+
+==============================================================================
+RESULT 3 — ARM A: length-matched cuts, vs this corpus's own re-cut Δ = +0.0284
+==============================================================================
+   bukhari     S5  Δ(P1) mean=+0.01200 sd=0.00141 max=+0.01682   Δ(P2) mean=+0.01550
+   bukhari     S3  Δ(P1) mean=+0.01162 sd=0.00147 max=+0.01552   Δ(P2) mean=+0.01504
+   bukhari     S0  Δ(P1) mean=+0.01196 sd=0.00144 max=+0.01552   Δ(P2) mean=+0.01545
+   muslim      S5  Δ(P1) mean=+0.01285 sd=0.00151 max=+0.01764   Δ(P2) mean=+0.01684
+   muslim      S3  Δ(P1) mean=+0.01275 sd=0.00157 max=+0.01846   Δ(P2) mean=+0.01660
+   muslim      S0  Δ(P1) mean=+0.01284 sd=0.00142 max=+0.01682   Δ(P2) mean=+0.01682
+   abudawud    S5  Δ(P1) mean=+0.01378 sd=0.00149 max=+0.01748   Δ(P2) mean=+0.01759
+   abudawud    S3  Δ(P1) mean=+0.01357 sd=0.00147 max=+0.01731   Δ(P2) mean=+0.01719
+   abudawud    S0  Δ(P1) mean=+0.01360 sd=0.00159 max=+0.01813   Δ(P2) mean=+0.01736
+   tirmidhi    S5  Δ(P1) mean=+0.01393 sd=0.00171 max=+0.02025   Δ(P2) mean=+0.01691
+   tirmidhi    S3  Δ(P1) mean=+0.01406 sd=0.00159 max=+0.01993   Δ(P2) mean=+0.01691
+   tirmidhi    S0  Δ(P1) mean=+0.01449 sd=0.00177 max=+0.01846   Δ(P2) mean=+0.01753
+   nasai       S5  Δ(P1) mean=+0.01336 sd=0.00146 max=+0.01927   Δ(P2) mean=+0.01751
+   nasai       S3  Δ(P1) mean=+0.01311 sd=0.00145 max=+0.01731   Δ(P2) mean=+0.01726
+   nasai       S0  Δ(P1) mean=+0.01334 sd=0.00153 max=+0.01715   Δ(P2) mean=+0.01742
+   ibnmajah    S5  Δ(P1) mean=+0.01339 sd=0.00152 max=+0.01731   Δ(P2) mean=+0.01734
+   ibnmajah    S3  Δ(P1) mean=+0.01328 sd=0.00143 max=+0.01699   Δ(P2) mean=+0.01704
+   ibnmajah    S0  Δ(P1) mean=+0.01358 sd=0.00143 max=+0.01780   Δ(P2) mean=+0.01744
+   malik       S5  Δ(P1) mean=+0.01578 sd=0.00152 max=+0.01976   Δ(P2) mean=+0.02008
+   malik       S3  Δ(P1) mean=+0.01094 sd=0.00000 max=+0.01094   Δ(P2) mean=+0.01666
+   malik       S0  Δ(P1) mean=+0.01585 sd=0.00170 max=+0.02009   Δ(P2) mean=+0.02024
+   ahmed       S5  Δ(P1) mean=+0.01780 sd=0.00000 max=+0.01780   Δ(P2) mean=+0.02483
+   ahmed       S3  Δ(P1) mean=+0.01405 sd=0.00000 max=+0.01405   Δ(P2) mean=+0.02123
+   ahmed       S0  Δ(P1) mean=+0.01610 sd=0.00145 max=+0.02025   Δ(P2) mean=+0.02154
+   darimi      S5  Δ(P1) mean=+0.01494 sd=0.00170 max=+0.01993   Δ(P2) mean=+0.02106
+   darimi      S3  Δ(P1) mean=+0.01491 sd=0.00163 max=+0.01960   Δ(P2) mean=+0.02113
+   darimi      S0  Δ(P1) mean=+0.01507 sd=0.00168 max=+0.01960   Δ(P2) mean=+0.02115
+
+==============================================================================
+RESULT 4 — THE REGISTERED TESTS (prereg §6)
+==============================================================================
+   D-P1 — 54 arms, label exchange, 10,000 perms x 2 seeds
+   D-P1: 54/54 arms PASS at alpha=0.00046296
+
+   D-P3 — 54 arms against each book's OWN exact null, 8 processes, per-arm checkpoints
+      [  1/54] bukhari    S3 P1: E=0.0534 z=+1.55 p=0.03950 (rep 0.04060) floordev=0e+00 -
+      [  2/54] bukhari    S3 P2: E=0.0550 z=+1.76 p=0.05689 (rep 0.06049) floordev=0e+00 -
+      [  3/54] bukhari    S5 P1: E=0.0514 z=+1.26 p=0.10289 (rep 0.10609) floordev=0e+00 -
+      [  4/54] bukhari    S5 P2: E=0.0522 z=+1.48 p=0.12509 (rep 0.13059) floordev=0e+00 -
+      [  5/54] bukhari    S0 P1: E=0.0530 z=+1.44 p=0.05889 (rep 0.06459) floordev=0e+00 -
+      [  6/54] bukhari    S0 P2: E=0.0543 z=+1.71 p=0.06119 (rep 0.05779) floordev=0e+00 -
+      [  7/54] muslim     S5 P2: E=0.0926 z=+2.03 p=0.01800 (rep 0.01680) floordev=0e+00 -
+      [  8/54] muslim     S5 P1: E=0.0945 z=+2.88 p=0.00020 (rep 0.00030) floordev=0e+00 CLEARS
+      [  9/54] muslim     S3 P2: E=0.0889 z=+2.13 p=0.01150 (rep 0.01130) floordev=0e+00 -
+      [ 10/54] muslim     S3 P1: E=0.0912 z=+3.16 p=0.00040 (rep 0.00030) floordev=0e+00 CLEARS
+      [ 11/54] abudawud   S5 P1: E=0.0327 z=+1.26 p=0.09459 (rep 0.10369) floordev=0e+00 -
+      [ 12/54] muslim     S0 P2: E=0.0909 z=+2.02 p=0.01910 (rep 0.01830) floordev=0e+00 -
+      [ 13/54] muslim     S0 P1: E=0.0932 z=+2.90 p=0.00010 (rep 0.00020) floordev=0e+00 CLEARS
+      [ 14/54] abudawud   S3 P1: E=0.0348 z=+1.56 p=0.04890 (rep 0.05169) floordev=0e+00 -
+      [ 15/54] abudawud   S3 P2: E=0.0360 z=+1.68 p=0.05309 (rep 0.05499) floordev=0e+00 -
+      [ 16/54] abudawud   S5 P2: E=0.0340 z=+1.37 p=0.09789 (rep 0.09649) floordev=0e+00 -
+      [ 17/54] tirmidhi   S3 P1: E=0.0235 z=+2.06 p=0.02420 (rep 0.02280) floordev=0e+00 -
+      [ 18/54] tirmidhi   S3 P2: E=0.0222 z=+1.12 p=0.14849 (rep 0.14659) floordev=0e+00 -
+      [ 19/54] tirmidhi   S5 P1: E=0.0269 z=+1.23 p=0.12699 (rep 0.12739) floordev=0e+00 -
+      [ 20/54] tirmidhi   S5 P2: E=0.0251 z=+0.35 p=0.38496 (rep 0.38996) floordev=0e+00 -
+      [ 21/54] tirmidhi   S0 P1: E=0.0271 z=+1.05 p=0.16748 (rep 0.16988) floordev=0e+00 -
+      [ 22/54] tirmidhi   S0 P2: E=0.0252 z=+0.12 p=0.47235 (rep 0.47055) floordev=0e+00 -
+      [ 23/54] abudawud   S0 P1: E=0.0334 z=+0.97 p=0.16508 (rep 0.17258) floordev=0e+00 -
+      [ 24/54] abudawud   S0 P2: E=0.0343 z=+1.11 p=0.15058 (rep 0.14629) floordev=0e+00 -
+      [ 25/54] nasai      S3 P1: E=0.1581 z=+3.81 p=0.00020 (rep 0.00010) floordev=0e+00 CLEARS
+      [ 26/54] nasai      S3 P2: E=0.1556 z=+2.94 p=0.00090 (rep 0.00210) floordev=0e+00 -
+      [ 27/54] nasai      S5 P2: E=0.1538 z=+2.11 p=0.01350 (rep 0.01130) floordev=0e+00 -
+      [ 28/54] nasai      S5 P1: E=0.1560 z=+2.55 p=0.00320 (rep 0.00380) floordev=0e+00 -
+      [ 29/54] nasai      S0 P2: E=0.1529 z=+2.44 p=0.00370 (rep 0.00310) floordev=0e+00 -
+      [ 30/54] nasai      S0 P1: E=0.1546 z=+2.78 p=0.00110 (rep 0.00140) floordev=0e+00 -
+      [ 31/54] ibnmajah   S5 P1: E=0.0940 z=+4.91 p=0.00010 (rep 0.00010) floordev=0e+00 CLEARS
+      [ 32/54] ibnmajah   S5 P2: E=0.0932 z=+4.33 p=0.00010 (rep 0.00010) floordev=0e+00 CLEARS
+      [ 33/54] malik      S5 P1: E=0.0688 z=+2.68 p=0.00580 (rep 0.00620) floordev=0e+00 -
+      [ 34/54] malik      S5 P2: E=0.0679 z=+2.40 p=0.01080 (rep 0.01180) floordev=0e+00 -
+      [ 35/54] ibnmajah   S3 P1: E=0.0911 z=+3.55 p=0.00020 (rep 0.00030) floordev=0e+00 CLEARS
+      [ 36/54] ibnmajah   S3 P2: E=0.0917 z=+3.56 p=0.00020 (rep 0.00040) floordev=0e+00 CLEARS
+      [ 37/54] malik      S3 P1: E=0.0656 z=+1.25 p=0.12659 (rep 0.12259) floordev=0e+00 -
+      [ 38/54] ibnmajah   S0 P1: E=0.0923 z=+4.35 p=0.00010 (rep 0.00010) floordev=0e+00 CLEARS
+      [ 39/54] malik      S3 P2: E=0.0650 z=+1.29 p=0.11649 (rep 0.11639) floordev=0e+00 -
+      [ 40/54] ibnmajah   S0 P2: E=0.0922 z=+3.92 p=0.00010 (rep 0.00010) floordev=0e+00 CLEARS
+      [ 41/54] malik      S0 P1: E=0.0658 z=+1.95 p=0.03610 (rep 0.02930) floordev=0e+00 -
+      [ 42/54] malik      S0 P2: E=0.0653 z=+1.88 p=0.03710 (rep 0.03800) floordev=0e+00 -
+      [ 43/54] ahmed      S5 P1: E=0.0152 z=-0.15 p=0.58094 (rep 0.57704) floordev=0e+00 -
+      [ 44/54] ahmed      S5 P2: E=0.0154 z=+0.05 p=0.47945 (rep 0.47885) floordev=0e+00 -
+      [ 45/54] ahmed      S3 P1: E=0.0207 z=-0.10 p=0.56474 (rep 0.57824) floordev=0e+00 -
+      [ 46/54] ahmed      S3 P2: E=0.0199 z=-0.18 p=0.59654 (rep 0.58344) floordev=0e+00 -
+      [ 47/54] ahmed      S0 P1: E=0.0120 z=-0.56 p=0.72383 (rep 0.72853) floordev=0e+00 -
+      [ 48/54] ahmed      S0 P2: E=0.0115 z=-0.40 p=0.64604 (rep 0.65373) floordev=0e+00 -
+      [ 49/54] darimi     S3 P1: E=0.0659 z=+1.64 p=0.06329 (rep 0.06729) floordev=0e+00 -
+      [ 50/54] darimi     S3 P2: E=0.0676 z=+2.02 p=0.02790 (rep 0.03100) floordev=0e+00 -
+      [ 51/54] darimi     S5 P2: E=0.0628 z=+1.46 p=0.08049 (rep 0.08639) floordev=0e+00 -
+      [ 52/54] darimi     S5 P1: E=0.0637 z=+1.78 p=0.04820 (rep 0.04970) floordev=0e+00 -
+      [ 53/54] darimi     S0 P1: E=0.0628 z=+1.91 p=0.03530 (rep 0.03360) floordev=0e+00 -
+      [ 54/54] darimi     S0 P2: E=0.0620 z=+1.54 p=0.07039 (rep 0.06889) floordev=0e+00 -
+
+   G1 exactness across all 54 prose nulls: PASS
+
+   D-P3 arms clearing alpha, per book (of 6 each):
+      bukhari    0/6 at alpha=0.000463   0/6 at H-NEW-2890's alpha=0.001389
+      muslim     3/6 at alpha=0.000463   3/6 at H-NEW-2890's alpha=0.001389
+      abudawud   0/6 at alpha=0.000463   0/6 at H-NEW-2890's alpha=0.001389
+      tirmidhi   0/6 at alpha=0.000463   0/6 at H-NEW-2890's alpha=0.001389
+      nasai      1/6 at alpha=0.000463   3/6 at H-NEW-2890's alpha=0.001389
+      ibnmajah   6/6 at alpha=0.000463   6/6 at H-NEW-2890's alpha=0.001389
+      malik      0/6 at alpha=0.000463   0/6 at H-NEW-2890's alpha=0.001389
+      ahmed      0/6 at alpha=0.000463   0/6 at H-NEW-2890's alpha=0.001389
+      darimi     0/6 at alpha=0.000463   0/6 at H-NEW-2890's alpha=0.001389
+   books with >=1 clearing arm: 3/9 (33%)  -> BOOK-SPECIFIC (prereg §6 threshold: >50%)
+
+==============================================================================
+VERDICT — logic diffed against prereg §5/§6, printed before declaration.
+==============================================================================
+   prereg §5, verbatim:
+     f < 0.10                      -> 2890 ROBUST
+     0.10 <= f < 0.25              -> BORDERLINE, strengthen 2890 §7.1
+     f >= 0.25                     -> 2890 RE-VERDICTED TO PARTIAL
+     Bukhari S0 P2 >= 90th pctile  -> outlier, consistent with ROBUST
+     Bukhari S0 P2 <= 75th pctile  -> typical; at least BORDERLINE regardless of f
+     both triggers evaluated; the STRICTER outcome is taken
+
+   f = 0.0741 (4/54 cells >= T)
+   al-Bukhārī S0 P2 percentile = 92.6
+   trigger 1 (f): ROBUST    trigger 2 (percentile): ROBUST    stricter: ROBUST
+
+   VERDICT: H-NEW-2890 ROBUST — its verdict stands as published
