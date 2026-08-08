@@ -316,6 +316,21 @@ bound on the sentence containing it, and it needs no death-date table. **Grep `�
 `طيب الله ثراه` early, then look up only the modern names they attach to.** Do not use bare
 `رحمه الله` for this — every author says it of every predecessor, and it dates nothing.
 
+**Before declaring a citation unverifiable, search the source it actually names.** This audit
+nearly recorded one as unresolvable. `razi-99names-test.md:65` attributes the *kāf-hā-yā-ʿayn-ṣād*
+decomposition **Kabīr / Hādī / Amīn / ʿAzīz / Ṣādiq** to Ibn ʿAbbās, and it appears in **neither**
+Tanwīr folder — the genuine English recension at Q 19:1 gives Kāfī/Hādī/ʿĀlim/Ṣādiq and
+Karīm/Hādī/Ḥalīm/ʿĀlim/Ṣādiq instead. But the finding never claimed a Tanwīr source: its own table
+says *"Ibn ʿAbbās via al-Durr al-Manthūr 4/679"* — **and *al-Durr al-Manthūr* is on disk.**
+`raw/suyuti-durr-manthur.openiti.raw.txt` at **PageV05P477** reads
+*«عن ابن عباس في قوله: {كهيعص} قال: **كبير هاد أمين عزيز صادق**»*, with the full transmission —
+al-Firyābī, Ibn Abī Shayba, Ibn Jarīr, Ibn Abī Ḥātim, al-Ḥākim *(ṣaḥḥaḥahu)*, al-Bayhaqī — and the
+variant *«وفي لفظ: كاف بدل كبير»*. **Verbatim, and the citation is sound.** Checking the two
+folders the auditor was thinking about, rather than the work the footnote named, would have
+produced a false UNDETERMINABLE. `ABSENCE-CLAIMS.md` §4 already says it: search for the work by
+author and title, **not by the filename you happened to open** — and that applies to the auditor
+as forcefully as to the author.
+
 **Search titles as well as names, because a scholar is often cited only by his book.** Re-counting
 `ar-tafseer-tanwir-al-miqbas/2/2.json` reproduces that file's published figures exactly —
 al-Zamakhsharī ×5, al-Raḍī ×3, Ibn Mālik ×2 — **except al-Sakkākī, who returns 0 under his own
@@ -458,6 +473,17 @@ Four of those files inherit one: `tanwir-miqbas-ar-Q001.txt` and `-Q002.txt` (Ib
 and `asbab-nuzul-wahidi-en-Q001.txt` (**100% the Sufi text, 0 of 7 verses al-Wāḥidī**) and
 `-Q002.txt` (**83 of 128 verses, 72% not al-Wāḥidī**). **Re-verify derivatives separately: the
 extraction is downstream of the label, so it is never evidence for it.**
+
+**And the blend already has live consumers.** Ten `surahs/` loci cite that folder as al-Wāḥidī;
+**five are genuine** (Q 54:1, 29:1, 30:2, 66:1, 64:14) and **four are the Sufi text** — Q 48:1
+(`surahs/Q048-al-fath/03-tafsir-survey.md:189`, marked VERIFIED), Q 71:13
+(`surahs/Q071-nuh/03-tafsir-survey.md:84`), Q 58:12 of the pair cited at
+`surahs/Q058-al-mujadala/Q058-F-03-najwa-abrogation-prereg.md:32`, and Q 38:1
+(`surahs/Q038-sad/03-tafsir-survey.md:13`, which also calls the English folder *"Arabic"*).
+**A per-file check would have caught every one, and a folder-level check caught none.** Note what
+`surahs/Q071-nuh/04-hadith-corpus.md:77` already says of its own citation — that the material *"is
+homiletic"*. **The symptom was recorded and not chased.** When a source reads unlike the work it is
+supposed to be, that observation *is* the audit; finish it.
 
 ---
 

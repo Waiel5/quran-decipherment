@@ -6,6 +6,7 @@ author: Waiel Al-Shujaa
 status: NULL — 0 of 6 registered inferences pass. The rosters are the deliverable, and two of the four required post-hoc correction.
 prereg: prereg-h-new-2620-tafsir-contested.md
 prereg_sha256: 8826da50f861405478664097399264784bf52745a8986921c8290b23f600bc63
+prereg_lock_history: BROKEN 2026-08-07 (b76ec401f) and again 2026-08-08 (81db39027) by post-publication edits to the pre-registration; RESTORED 2026-08-08 to its b0cf8a09a bytes, re-hashing to 8826da50…bc63. See §10.1.
 run: runs/h-new-2620/20260807T005200Z/
 posthoc_runs: runs/h-new-2620/20260807T005519Z-posthoc/, runs/h-new-2620/20260807T005701Z-posthoc/
 seed: 20260509
@@ -17,6 +18,22 @@ verdict: NULL
 ---
 
 # H-NEW-2620 — Twelve tafsīr editions, measured
+
+> ### ⛔ PRE-REGISTRATION LOCK BROKEN AND RESTORED — 2026-08-07 to 2026-08-08
+>
+> **This finding's pre-registration was edited twice after its run, which broke the SHA lock in
+> `scripts/h-new-2620.py` and left the script unable to execute.** The file has been restored to
+> its published bytes and the gate passes again. **Both breaking edits were mine, and both were
+> content-correct corrections placed in the wrong file** — the notices they carried are reproduced
+> in this document, below, where they always belonged.
+>
+> **The NULL verdict is unaffected.** Every number was computed on 2026-08-07 under the original
+> pre-registration, before either edit. What was damaged was reproducibility, not the result.
+>
+> **Full record, with commits and hashes: §10.1.** The standing rule it produced: **never edit a
+> pre-registration after its run, for any reason, including to correct an error in it. Corrections
+> go in the finding. If a pre-registration is itself wrong, that is a finding to record, not a file
+> to repair.**
 
 > ### ⛔ ATTRIBUTION CORRECTION 2026-08-08 — the "classical-only" sensitivity was never run
 >
@@ -65,7 +82,10 @@ residualised on verse length and lexical difficulty, has no positive relation to
 project's structural-extremeness instruments — and the bare positive correlation that
 exists before residualisation is entirely a confound.**
 
-Pre-reg SHA-256 `8826da50…bc63`, runtime-verified. Seeds 20260509–20260514, 10,000
+Pre-reg SHA-256 `8826da50…bc63`, runtime-verified **at the 2026-08-07 run. The lock was
+subsequently broken by two post-publication edits to the pre-registration (`b76ec401f`,
+`81db39027`) and restored on 2026-08-08 to these exact bytes; the gate passes again — see §10.1.**
+Seeds 20260509–20260514, 10,000
 permutations per null, Bonferroni α = 0.05/6 = 0.00833.
 
 This is the first corpus-wide use of `data/literature/classical-tafsir/spa5k-tafsir-api/`.
@@ -509,6 +529,76 @@ not looked, and nothing here licenses a claim about them.
   the engineering consequence of the standing correction recorded at H-NEW-2540 §8.1.
 - Immutable run: `findings/phase-b-hypotheses/runs/h-new-2620/20260807T005200Z/`.
 
+### 10.1 The pre-registration lock was broken twice and has been restored
+
+**This section exists because the repair must not erase the fact that there was something to
+repair.** A restored file looks identical to a file that was never touched; only this record
+distinguishes them, and a reader judging reproducibility needs that difference.
+
+**What the lock is.** `scripts/h-new-2620.py:26` hard-codes
+`EXPECTED_PREREG_SHA = 8826da50f861405478664097399264784bf52745a8986921c8290b23f600bc63`, and
+`verify_integrity()` at lines 114-116 calls `die()` on mismatch. The pre-registration's whole
+evidential value is that it was fixed before the data was seen, so the script refuses to run
+against a pre-registration that has changed. **That is the lock working as designed — the failure
+was not the script's.**
+
+**What happened.**
+
+| commit | date | prereg SHA-256 | state |
+|:--|:--|:--|:--|
+| `b0cf8a09a` | publication | `8826da50…bc63` | ✅ matches the script |
+| `b76ec401f` | 2026-08-07 — the 702-file genre-control propagation | `b4a17e28…` | ❌ **broken here** |
+| `81db39027` | 2026-08-08 — the attribution-correction block | `7c7fc5fb…9736` | ❌ broken again |
+| — | 2026-08-08 — a breach-disclosure banner added to the pre-registration itself | `a392476d…527f` | ❌ broken a third time |
+| **restored** | **2026-08-08** | **`8826da50…bc63`** | ✅ **gate passes** |
+
+**Both breaking edits were mine.** The first swept this pre-registration up in a bulk propagation
+across 702 files; the second added an attribution correction. **Each was content-correct and
+procedurally wrong.** The third change was the disclosure notice itself — which is the sharpest
+form of the lesson: *even documenting the breach inside the locked file breaks the lock again.*
+The disclosure belongs here, in the finding, and that is where it now is.
+
+**The restoration, with its verification.** The pre-registration was replaced with its
+`b0cf8a09a` bytes and re-hashed:
+
+```
+$ shasum -a 256 findings/phase-b-hypotheses/prereg-h-new-2620-tafsir-contested.md
+8826da50f861405478664097399264784bf52745a8986921c8290b23f600bc63
+```
+
+**Exact match to the literal in the script — not a near-match.** The divergence removed was a
+single hunk of **70 added lines and 0 deleted lines**, so nothing of the original pre-registration
+had been altered or lost; the three notices in it were purely additive and all three are preserved
+in this document. Running the script's own gate end to end:
+
+```
+[ok] pre-reg SHA-256 verified: 8826da50f861405478664097399264784bf52745a8986921c8290b23f600bc63
+[ok] tafsir manifest SHA-256 verified: 2ce03c91087fad7a357c130a496e2557a07dd6a6a1b6e8df8e8b7d15cf1bcff6
+[ok] 4 further input hashes verified
+```
+
+**All three checks pass — pre-registration, manifest, and the four further frozen inputs.** The
+queued classical-only sensitivity is runnable again; it was not, while the lock was broken.
+
+**What this cost, stated plainly.** Between 2026-08-07 and the restoration, `scripts/h-new-2620.py`
+could not execute at all. The remedy prescribed by the attribution correction above — *"that
+sensitivity has not been run and is queued"* — required the very script the correction's own commit
+had disabled. **A correction that disables its own remedy is the specific hazard here**, and it is
+why the rule is absolute rather than discretionary.
+
+**The rule this produced:** *never edit a pre-registration after its run, for any reason, including
+to correct an error in it. Corrections go in the finding. If a pre-registration is itself wrong,
+that is a finding to record, not a file to repair.*
+
+**Where that rule currently lives, stated exactly: here, and nowhere else.** The disclosure banner
+removed from the pre-registration described this rule as *"added to `findings/UNIT-DRIFT-DEFECT.md`
+§7's family"* — **it was not.** `grep -n "pre-registration after its run" findings/UNIT-DRIFT-DEFECT.md
+findings/ABSENCE-CLAIMS.md findings/PROXY-CLAIMS.md` returns **zero hits in all three.** The banner
+asserted a completed action that had not been performed, which is the same defect in miniature as
+the one it was disclosing. **Promoting this to a standing rule document is queued and not done**,
+and it is recorded as undone here so that the next session extends the work rather than assuming
+it happened.
+
 ---
 
 ## 11. Cross-references
@@ -531,6 +621,63 @@ not looked, and nothing here licenses a claim about them.
   that had a plausible mechanism, plus a working instrument and two usable rosters.
 - **F-12 (asbāb al-nuzūl as a chronology instrument)** — the al-Wāḥidī coverage figure it
   needs is measured here: **1,089 verses across 75 surahs, 17.46% of the corpus.**
+
+---
+
+## 12. Mislabels flagged here rather than edited, and two attributions left open
+
+*Added 2026-08-08 by the H-NEW-2970 attribution audit. **Nothing in this section has been fixed in
+place.** Each item is recorded beside the artifact that carries it, per the additive-correction
+rule — and the two open attributions are recorded as open, because an unresolved attribution
+recorded as unresolved is worth more than a guess.*
+
+### 12.1 Where the mislabel is still written as true
+
+The attribution-correction block at the head of this file names its load-bearing consequences. It
+does **not** reach the following, each of which still reads as true in isolation:
+
+| location | what it still says | why it is wrong |
+|:--|:--|:--|
+| **§2 roster row**, this file | *"ascribed to Ibn ʿAbbās via al-Kalbī; compilation traditionally attributed to al-Fīrūzābādī (d. 817/1414) — Tanwīr al-Miqbās"* | **The most quotable false sentence in this file**, and the one most likely to be copied out of the table. That description is scholarly-correct **for `en-tafsir-ibn-abbas/`** and false for the Arabic slug, which is Ibn ʿĀshūr. Mirrored at `prereg-h-new-2620-tafsir-contested.md:137` — **and that file is locked; it must not be edited.** |
+| `scripts/h-new-2620.py:57` | `AR_CLASSICAL = AR_EDITIONS[:5]  # pre-reg §6.1 — the five pre-modern Arabic editions` | **The comment that mints the label.** Only four of those five are pre-modern. |
+| `csv/h-new-2620.json:358` and `runs/h-new-2620/20260807T005200Z/result.json:358` | key `S1_classical_only_5ed`; and at `:441`, `"ar-tafseer-tanwir-al-miqbas": -0.2096` | **Immutable run artifacts — deliberately NOT edited.** The two files are byte-identical (both SHA `ad4fa1d4…4937`), so the `csv/` copy is the run output, not a separate document. The key is mislabelled; the number is correct. |
+| `HANDOFF/FRONTIER-MAP-2026-08-07.md:259` | lists *"Ibn ʿAbbās"* **and** *"Tanwīr al-Miqbās"* as two separate members of "the classical corpus" | They are not two witnesses to one work. The first is the genuine English recension; the second is Ibn ʿĀshūr. |
+| `data/literature/INDEX.md:6` and `ACQUISITION-2026-04-28.md:33` | Wave-A acquisition credits the Arabic tree as *"Tanwīr al-Miqbās"* / *"(attr. Ibn ʿAbbās)"* | **Where the error entered the project**, inherited from `spa5k-tafsir-api/README.md:86`, whose `editions.json` carries the bare author string `"Tanweer"`. |
+
+**The `en-tafsir-ibn-abbas` figure this file needs, corrected:** the English set holds **3**
+independent witnesses, not ~2. The English edition is the genuine short recension — 962 characters
+at Q 2:1 against the Arabic slug's 17,227 — and the two are unrelated works.
+
+### 12.2 Two attributions that the on-disk corpus does not settle
+
+**Neither is resolved, and neither should be recorded as clean.**
+
+- **The *kāf-hā-yāʾ-ʿayn-ṣād* decomposition Kabīr / Hādī / *Amīn* / *ʿAzīz* / Ṣādiq.** Present in
+  **neither** Tanwīr folder: `en-tafsir-ibn-abbas` at Q 19:1 gives Kāfī/Hādī/ʿĀlim/Ṣādiq and
+  Karīm/Hādī/Ḥalīm/ʿĀlim/Ṣādiq; the Arabic slug gives Kāfī/Karīm/Kabīr, Hādī, Ḥakīm/Raḥīm,
+  ʿAlīm/ʿAẓīm, Ṣādiq. **Neither has *Amīn* or *ʿAzīz*.** It *is* verbatim in *al-Durr al-manthūr* —
+  `raw/suyuti-durr-manthur.openiti.raw.txt` at **PageV05P477**,
+  *«عن ابن عباس في قوله: {كهيعص} قال: كبير هاد أمين عزيز صادق»*, with the transmission (al-Firyābī,
+  Ibn Abī Shayba, Ibn Jarīr, Ibn Abī Ḥātim, al-Ḥākim *ṣaḥḥaḥahu*, al-Bayhaqī) and the variant
+  *«كاف بدل كبير»*. **So the decomposition is soundly attested — what remains open is which text
+  the citing findings actually consulted**, since they name a page (*al-Durr al-manthūr* 4/679) in
+  an edition whose pagination differs from the on-disk one. **UNDETERMINABLE as to source, sound as
+  to substance.**
+- **"ق = *qiyāma* or *qurʾān*, per Ibn ʿAbbās"** (`h-new-145-muq-code-decoding-prereg.md:112`;
+  `journal/h-new-147-run-1.md:35,41`). **Contradicted by both on-disk Ibn ʿAbbās sources.** The
+  genuine recension at `en-tafsir-ibn-abbas` Q 50:1 says ق is *"an azure mountain overlooking this
+  world"*; *al-Durr al-manthūr* at PageV07P588 gives, from Ibn ʿAbbās via Ibn Jarīr and Ibn
+  al-Mundhir, **«هو اسم من أسماء الله»** — one of God's names — and via Ibn Abī Ḥātim the same
+  encircling-mountain cosmology. **Neither is *qiyāma* or *qurʾān*.** The citing files attribute the
+  gloss to al-Suyūṭī's *Itqān*, whose on-disk PDF has no text layer, so this is **FLAGGED, not
+  refuted** — it cannot be checked against the source it names. *(This file's own §7 table row for
+  ق is attributed to "various", not to Ibn ʿAbbās, and is unaffected.)*
+
+**And one that checks out, recorded because a clean result is worth the same as a dirty one:** the
+Arabic slug at Q 50:1 explicitly rejects the mountain report as *«رواية بعض القصاصين المكذوبة عن
+ابن عباس»* — "a report of certain storytellers, falsely attributed to Ibn ʿAbbās." **The two
+folders take opposite positions on the same verse**, which is itself the cleanest available proof
+that they are different works.
 
 ---
 
