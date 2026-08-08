@@ -528,3 +528,34 @@ be excluded from bulk operations by construction, not by remembering.**
 `scripts/verify-prereg-locks.sh` hashes every pre-registration against its script's embedded
 literal and exits non-zero on any mismatch. **Run it after any bulk edit.** It found four broken
 locks in one pass that four separate commits had walked past.
+
+### 9.1 A pre-registration citing a since-refuted law is NOT an error — do not "fix" it
+
+**Clarification added 2026-08-08, from a case that arose while sweeping.**
+
+An integrity sweep found two pre-registrations still citing the Fisher-Rao geodesic (z = −11.46)
+as established — `h-new-169-ncd-mushaf-prereg.md` and `h-new-255-juz30-mini-cycle-prereg.md` —
+after H-NEW-2680 showed the geodesic does not discriminate this corpus from matched partitions of
+ḥadīth or pre-Islamic poetry.
+
+**They were left untouched, deliberately, and that is the correct handling.**
+
+A pre-registration is a **record of what was believed when the test was designed**. That a
+designer relied on a law later refuted is a historical fact about the test, and it is often
+exactly what a reader needs in order to judge the test's motivation and its blind spots.
+**Editing it to reflect later knowledge would falsify the record** — and would break the SHA lock,
+which is how four locks were broken in the first place (§9).
+
+**The rule, stated fully:**
+
+> A pre-registration is never edited after its run — including when the world has since proved
+> one of its premises wrong. **The correction goes in the finding, which is the document that
+> makes claims.** A pre-registration makes no claims; it records intentions. An intention formed
+> under a false premise is still accurately recorded.
+
+Where the citing pre-registration's *own* verdict depends on the refuted law, that dependency is
+recorded in the **finding**, flagged as a limit — never by touching the pre-registration.
+
+**Detection note for the sweep:** a grep for a refuted law's signature will hit pre-registrations,
+and those hits are **expected and correct**. Filter `prereg-*` and `*-prereg.md` out of any such
+sweep, or the sweep will keep proposing the exact edit the rule forbids.
