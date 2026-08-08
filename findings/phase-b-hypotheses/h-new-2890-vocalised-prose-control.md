@@ -20,6 +20,21 @@ source_manifest: data/literature/hadith/VOCALISED-HADITH-SOURCE.md
 
 # H-NEW-2890 — the prose control that both parents said could not be run
 
+> ### ⚠ MAGNITUDE CORRECTED 2026-08-08 — the cross-corpus headline is inflated by unit length
+>
+> **H-NEW-2930** applied `findings/UNIT-DRIFT-DEFECT.md`'s screen to this family and it **TRIPS.**
+> Δ tracks mean unit length across the nine prose books at **ρ = −0.65** (shorter units, larger Δ),
+> and the Qurʾān's 13.21-word mean verse is **3.7× shorter than the shortest prose book**.
+> Extrapolating the nine-book trend to that unit length predicts Δ = 0.05154 against the observed
+> 0.18690 — **a residual of 3.63×, not the 5.3× reported here.**
+>
+> **Do not quote "5.3× the prose mean."** The defensible figure is ~3.6× after the unit-length
+> trend, and that figure is itself an extrapolation 0.86 prose-ranges beyond the data.
+>
+> **Unaffected:** H-NEW-2880's within-corpus null, which permutes this corpus against itself with
+> class count, sizes and concentration exactly fixed — no cross-corpus unit length enters it.
+> z = +15.03 stands.
+
 > ### Publication record — this finding was published incomplete and was completed afterwards
 >
 > **Commit `cf34b5b73` published this file while its run was still executing.** At that moment

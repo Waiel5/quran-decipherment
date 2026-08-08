@@ -128,7 +128,7 @@ book on **tuple P1, the registered gate**:
 | 0.016 | 0.026 | 0.028 | 0.028 | 0.032 | 0.032 | 0.033 | 0.038 | **0.041** | **0.187** |
 
 **Zero of nine books reach the +0.04672 threshold on P1.** Prose mean 0.0344; this corpus is
-**5.4× the prose mean and 4.5× the highest single prose book.**
+**~3.6× after the unit-length trend is removed** (H-NEW-2930; the raw 5.3× figure is inflated — Δ tracks unit length at ρ = −0.65 and this corpus's verses are 3.7× shorter than the shortest prose book).
 
 **Everything that qualifies it, carried at equal prominence:**
 - **It isolates the pausal FAMILY, not al-Sajāwandī's rules.** A deliberately *wrong* tuple (P3,
