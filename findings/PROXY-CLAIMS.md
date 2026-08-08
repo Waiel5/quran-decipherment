@@ -256,6 +256,211 @@ correlation, because **its headline does not survive substitution**: ρ(formal, 
 
 ---
 
+## 6.1 Provenance is a proxy too — and a folder name is the cheapest one to check
+
+*Added 2026-08-08 by H-NEW-2970, after auditing all thirteen editions under
+`data/literature/classical-tafsir/spa5k-tafsir-api/`.*
+
+**A slug is a hand-assigned attribution standing in for a verifiable one.** It has the exact shape
+§1 describes: a label somebody assigned, substituted for a fact somebody could have established,
+where the substitution asserts *"this folder holds what its name says"* — and that assertion is
+the one thing in the substitution nobody tests. It is worse than an ordinary proxy in one respect
+and better in another. **Worse**, because a wrong provenance does not degrade a coefficient by
+degrees, it inverts the evidential weight outright: a Companion gloss and a modern reading are not
+interchangeable authorities, and no sensitivity analysis recovers from a 1,300-year error.
+**Better**, because unlike agreement with a computed quantity, this one is *decidable*, usually in
+minutes.
+
+> **Standing requirement — before citing any classical source from a slug-named directory, verify
+> the author from the text's own internal citations. A folder name is metadata, and metadata is
+> not evidence.**
+
+The name-collision clause this extends is `ABSENCE-CLAIMS.md` §4, final bullet — *"a hit is not a
+verification, and neither is a miss — open the file"* — which is where that rule lives, not here.
+This adds the mechanical test that turns it from a warning into a procedure.
+
+### The death-date test
+
+**A commentary cannot quote someone who died after its author.** Take the latest securely-cited
+authority in the text; the author died no earlier than that. Compare against the claimed author's
+death date. One inequality settles it.
+
+**This test was not invented here.** `h-new-2620-tafsir-contested.md` §2.4 had already run it on
+two slugs of its own accord — rejecting al-Suddī (d. 127) for `ar-tafseer-al-saddi` and rejecting
+al-Wāḥidī (d. 468) for `ar-tafsir-al-wasit` because that folder quotes *ṣāḥib al-Kashshāf*,
+al-Zamakhsharī, **d. 538, seventy years after al-Wāḥidī** — and it closed with the sentence this
+whole clause is trying to make routine: ***"Which one I do not know and do not assert."*** What
+§6.1 adds is that the check should be run on **every** slug, not on the ones that happen to look
+odd. Two of the tree's four problem directories were found only by the exhaustive pass.
+
+`ar-tafseer-tanwir-al-miqbas/` is labelled *Tanwīr al-Miqbās min tafsīr Ibn ʿAbbās*
+(**Ibn ʿAbbās, d. 68 AH**), and over its 6,236 verse files it cites al-Zamakhsharī (d. 538)
+254 times and his *Kashshāf* 892 more, Ibn ʿAṭiyya (d. 541) 389, al-Qurṭubī (d. 671) 220,
+al-Sakkākī (d. 626) 78, Ibn Mālik (d. 672) 73, al-Raḍī (d. 686) 72, al-Taftāzānī (d. 793) 30,
+al-Suyūṭī (d. 911) 13, al-Ālūsī (d. 1270) 8, Muḥammad ʿAbduh (d. 1323) 2. **Ibn ʿAbbās does not
+quote al-Raḍī.** The text is Ibn ʿĀshūr's *al-Taḥrīr wa'l-Tanwīr* (d. 1393/1973); the slug
+collided on the word *Tanwīr*. Full verification:
+`data/literature/classical-tafsir/MISLABELLED-TANWIR-FOLDER.md`.
+
+**Strip diacritics before counting, and reconcile when two counts disagree.** H-NEW-2620's
+correction block reports 249 / 220 / 75 / 70 / 69 for al-Zamakhsharī, al-Qurṭubī, al-Sakkākī, Ibn
+Mālik and al-Raḍī against the 254 / 220 / 78 / 73 / 72 above. **Every difference is the
+diacritics**: searching the raw text reproduces 2620's five figures exactly, searching the
+harakāt-stripped text reproduces these. Two harnesses, one corpus, no disagreement — but only
+because the discrepancy was chased rather than rounded over.
+
+**And the sharpest dating cue is not a name but a courtesy.** `ar-tafsir-al-wasit/` calls both
+Muḥammad ʿAbdallāh Darrāz and Shaykh Muḥammad al-Khiḍr Ḥusayn *"فضيلة **المرحوم**"* — "His
+Eminence **the late**" — and both died in **1958 CE**. A *"the late X"* honorific is a hard lower
+bound on the sentence containing it, and it needs no death-date table. **Grep `المرحوم` and
+`طيب الله ثراه` early, then look up only the modern names they attach to.** Do not use bare
+`رحمه الله` for this — every author says it of every predecessor, and it dates nothing.
+
+**Search titles as well as names, because a scholar is often cited only by his book.** Re-counting
+`ar-tafseer-tanwir-al-miqbas/2/2.json` reproduces that file's published figures exactly —
+al-Zamakhsharī ×5, al-Raḍī ×3, Ibn Mālik ×2 — **except al-Sakkākī, who returns 0 under his own
+name and 3 under `صاحب «المفتاح»`**, "the author of *al-Miftāḥ*". A battery of personal names
+alone would have missed him entirely.
+
+### Look for self-declaration first, because it is free
+
+**Before counting anything, grep the data for its own title and for the author's family.** The
+Tanwīr folder contains the Arabic sentence *"ليس لها تفسير في كتاب **التحرير والتنوير**"* — "there
+is no commentary for it in the book *al-Taḥrīr wa'l-Tanwīr*" — **nine times**, as the placeholder
+for verses the work does not cover: `ar-tafseer-tanwir-al-miqbas/21/75.json`, `70/30`, `74/13`,
+`74/43`, `74/44`, `74/45`, `75/17`, `101/8`, `113/2`. Two more name the book with the title
+truncated (`70/31`, `70/32`), and there are **25** such placeholders in all. **The data names its
+own source work, in its own text.** And at
+`ar-tafseer-tanwir-al-miqbas/2/271.json` the author writes *"وقال الشيخ ابن عاشور **جدي**"* — "and
+Shaykh Ibn ʿĀshūr, **my grandfather**, said" — an authorial self-identification, not an inference.
+Both were sitting in the file the whole time. A death-date battery over 15.5 million characters is
+the fallback, not the first move.
+
+### The five ways the test misleads, each met in this audit
+
+1. **It refutes; it cannot confirm.** `en-al-jalalayn/` and `en-tafsir-ibn-abbas/` — the genuine
+   Ibn ʿAbbās recension — return **zero** securely-cited post-500 AH authorities, because both are
+   terse lemma glosses that name almost no one. (The single apparent hit in `en-tafsir-ibn-abbas/`
+   is `Razi` inside the personal name *ʿAbd al-Rāziq* — see failure mode 4.) **Zero late citations
+   is not a verification; it is no measurement.** For a non-citing text the method has no power and
+   you must say so rather than record a pass. *(This is Screen B's ABSENT-versus-NOT-YET-DERIVED
+   distinction wearing different clothes: no result is not a clean result.)*
+2. **The editorial apparatus is not the author.** `ar-tafsir-al-tabari/` cites al-Suyūṭī (d. 911)
+   214 times, Ibn Ḥajar (d. 852) 131 and al-Shawkānī (d. 1250) 8 — every one of them in **Maḥmūd
+   Shākir's** modern notes, identifiable by volume:page references (486 hits for
+   `الدر المنثور N: N`, 157 numbered *ḥadīth*/*athar* notes, 10,460 print/manuscript sigla). The
+   attribution to al-Ṭabarī (d. 310) is **correct**; the naive test would have condemned it.
+   *Read the context of the latest hit before believing it* — and note separately that anything
+   measuring this edition's text is measuring a 20th-century apparatus along with it.
+3. **Homonyms.** `ابن كثير` is the mufassir (d. 774) after `قال` and the Meccan reciter (d. 120)
+   after `قرأ` — the latter is why al-Baghawī (d. 516) appears to cite him 199 times.
+   `ابن هشام` is the *sīra* author (d. 218) or al-Anṣārī the grammarian (d. 761);
+   `أبو حيان` is al-Andalusī (d. 745) or the *rāwī* al-Taymī (d. 145), and in
+   `ar-tafseer-al-qurtubi` the single hit is the *rāwī* (`رواه سفيان عن أبي حيان`).
+4. **Common words masquerade as names, and so do sloppy regexes.** `النحاس` is al-Naḥḥās (d. 338)
+   in al-Qurṭubī and *copper* in al-Muyassar; `الراغب` is al-Rāghib al-Iṣfahānī (d. 502) or simply
+   "the desirous". Worse, this audit's own first pass wrote the optional shadda as `الكشَّ?اف` and
+   `الفرَّ?اء`, which after diacritic-stripping match **الكاف** and **الفاء** — "the *kāf*", "the
+   *fāʾ*" — inflating al-Farrāʾ to 1,417 hits in al-Qurṭubī and inventing 37 Zamakhsharī citations
+   in al-Baghawī that do not exist (**the true count is 0**). **Gate every name on a citation verb**
+   — `قال|وقال|قاله|ذكره|نقله|عن|عند|كلام|تفسير|صاحب|الإمام|الشيخ|الحافظ|رواه` — **and read the
+   latest hit.** An ungated battery is not a measurement.
+5. **A folder can be a blend, and then sampling proves nothing.**
+   `en-asbab-al-nuzul-by-al-wahidi/` is **28% al-Wāḥidī and 72% something else**, interleaved verse
+   by verse — see below. **Verifying one verse verifies one verse.** Classify every unit.
+
+### The census, 2026-08-08 — mostly clean, and that is the result
+
+Thirteen edition directories, each checked against its own internal citations. **Two are
+mislabelled** — the Tanwīr folder, already recorded, and one found here. **One was already
+disambiguated by the project against a misleading slug** (`ar-tafseer-al-saddi`, H-NEW-2620 §2.4).
+**One was honestly marked undeterminable and is now bounded** (`ar-tafsir-al-wasit`). **The
+remaining nine carry correct labels** — and state the grade of that honestly: **seven are
+positively verified** by a latest-citation earlier than the claimed author's death, and **two
+(`en-al-jalalayn`, `en-tafsir-ibn-abbas`) are untested rather than passed**, because they cite no
+one and the method has no purchase on them. Nine correct labels; seven verifications.
+
+**The new one: `en-asbab-al-nuzul-by-al-wahidi/` is not one work but two.** Of its 1,089
+non-empty entries, only **312 (522,456 chars) are al-Wāḥidī's *Asbāb al-nuzūl*** — full *isnād*
+chains, *"was revealed concerning"*. The other **777 (1,345,654 chars, 72.0%) are a Sufi
+commentary**, and the decisive citation is at `en-asbab-al-nuzul-by-al-wahidi/20/5.json`:
+*"**Shaykh al-Islām Anṣārī** said, 'The sitting of the Lord on the Throne is in the Qurʾān, and I
+have faith in it'"* — **Khwāja ʿAbdallāh Anṣārī of Herat died in 481 AH and al-Wāḥidī died in 468.
+Al-Wāḥidī cannot quote a man who outlived him by thirteen years.** That refutation is verified.
+**The positive identification is an inference, and is offered as one:** the phrase *"the Persian
+of this report is this"* means the work's base language is Persian, Anṣārī is its standing
+authority, and the English carries the vocabulary of William Chittick's translations — "the Real"
+×653, "recognition" ×205, "unneediness" ×22, "the Beginningless" / "the Endless". Those three
+together point to **Rashīd al-Dīn Maybudī, *Kashf al-asrār wa ʿuddat al-abrār*** (Persian, 520 AH),
+which is built on Anṣārī throughout. Nothing in the folder names itself — `Maybudi` and `Kashf`
+both return **0** — so the identification rests on style, not self-declaration, and should be
+cited that way. **What is settled either way is that 72% of this directory is not al-Wāḥidī.**
+The two works alternate within a single surah: `2/2` is the Sufi text, `2/14` is al-Wāḥidī, and
+**all seven verses of Q 1 are the Sufi text** — so a reader who checked al-Fātiḥa to verify the
+folder would have seen 100% of the wrong work and 0% of the right one.
+
+| slug | claimed author (`editions.json`) | **verified** author | death | establishing internal citation |
+|:--|:--|:--|--:|:--|
+| `ar-tafsir-al-tabari` | `Tabari` | al-Ṭabarī ✓ **+ Shākir apparatus** | 310 | main text stops at al-Farrāʾ/Abū ʿUbayda; all post-500 names are in the modern notes |
+| `ar-tafseer-al-qurtubi` | `Qurtubi` | al-Qurṭubī ✓ | 671 | Ibn ʿAṭiyya (d. 541) ×410 gated; no securely-cited authority later |
+| `ar-tafsir-ibn-kathir` | `Hafiz Ibn Kathir` | Ibn Kathīr ✓ | 774 | Ibn Taymiyya (d. 728) ×13 — his own teacher |
+| `ar-tafsir-al-baghawi` | `Baghawy` | al-Baghawī ✓ | 516 | al-Thaʿlabī (d. 427), his teacher. **Anomaly:** `قال القرطبي` at `21/51` and `23/108` — 2 hits in 4.4 M chars, a spot contamination, not a reattribution |
+| **`ar-tafseer-tanwir-al-miqbas`** | **`Tanweer`** | **Ibn ʿĀshūr, *al-Taḥrīr wa'l-Tanwīr*** | **1393** | **self-titled ×9; "my grandfather" at `2/271`; al-Ālūsī d. 1270, ʿAbduh d. 1323 — vs Ibn ʿAbbās d. 68** |
+| `ar-tafseer-al-saddi` | `Saddi` | al-Saʿdī, *Taysīr al-Karīm al-Raḥmān* ✓ | 1376 | Ibn al-Qayyim (d. 751) ×5, incl. *Jalāʾ al-afhām* by title; Ibn Taymiyya ×1. **Slug reads as al-Suddī (d. 128) — already disambiguated with evidence by H-NEW-2620 prereg §#6** |
+| `ar-tafsir-al-wasit` | `Waseet` | **a later-20th-century work** — Ṭanṭāwī's *al-Wasīṭ* on the balance of evidence | **≥1393** | Calls **Muḥammad ʿAbdallāh Darrāz** and **Muḥammad al-Khiḍr Ḥusayn** — both d. **1958 CE** — *"فضيلة المرحوم"*, **the late**; refers to the year **1945**; cites `قال صاحب تفسير التحرير والتنوير` ×3 (first at 2:73), Rashīd Riḍā (d. 1354) ×73 gated, ʿAbduh (d. 1323) ×22. **Not al-Wāḥidī's *al-Wasīṭ* (d. 468) — excluded by nine centuries.** H-NEW-2620 marked this *"not determinable from disk"*; it is now bounded |
+| `ar-tafsir-muyassar` | `المیسر` | King Fahd Complex committee ✓ | modern | no gated citation at all; consistent with a committee paraphrase |
+| `en-al-jalalayn` | `Al-Jalalayn` | al-Maḥallī + al-Suyūṭī — **not testable by this method** | 864 / 911 | **zero** internal citations; Q 2:2 is 458 chars of lemma gloss |
+| **`en-asbab-al-nuzul-by-al-wahidi`** | `Asbab Al-Nuzul by Al-Wahidi` | **al-Wāḥidī 28% + a Persian Sufi commentary 72%** (Maybudī, *Kashf al-asrār*, on style) | 468 / 520 | **Shaykh al-Islām Anṣārī (d. 481) quoted at `20/5` — al-Wāḥidī d. 468** |
+| `en-tafisr-ibn-kathir` | `Hafiz Ibn Kathir` | Ibn Kathīr, abridged ✓ | 774 | Ibn Taymiyya (d. 728) ×6; no later name survives inspection |
+| `en-tafsir-ibn-abbas` | `Tanwîr al-Miqbâs…` | *Tanwīr al-Miqbās* ✓ — **not testable by this method** | 68 (ascribed) | **zero** internal citations. **This is the genuine recension, and it is English-only** |
+| `en-tafsir-maarif-ul-quran` | `Mufti Muhammad Shafi` | Muftī Muḥammad Shafīʿ ✓ | 1396 | Thānwī (d. 1362) ×48, al-Ālūsī ×72, Iqbāl ×3 — all before him |
+
+**Two of thirteen is a good tree, and reporting it as a good tree is the point.** The pull, after
+a real failure, is toward finding more — and §4's closing clause applies here as elsewhere:
+**reporting a directory as sound is a result of the same value as condemning one.** What made the
+two failures findable was not suspicion; it was running the same check on all thirteen.
+
+### Where the error enters, and the one-line prophylactic
+
+**Every problem slug in this tree has a degenerate `editions.json` author field**, and one screen
+catches all four: `"Tanweer"`, `"Waseet"` and `"Saddi"` are transliterated **title fragments, not
+people**, and `"Asbab Al-Nuzul by Al-Wahidi"` is a **work title in the author slot**. Those four
+are precisely the mislabelled edition, the blended edition, the edition that was undeterminable,
+and the edition whose slug reads as the wrong man.
+
+**Treat a metadata author field that is not a person's name as an unverified directory.** State
+its performance honestly: on this tree the screen's **recall is 4/4 and its precision is 4/7** —
+it also flags `المیسر` (a title, and the edition is fine), `Al-Jalalayn` (a dual epithet, fine)
+and `Tanwîr al-Miqbâs min Tafsîr Ibn ʿAbbâs` (a title, and the **genuine** recension). It costs
+one look at `editions.json` and it never gave a false all-clear, which is the direction that
+matters — but it is a triage cue for what to verify first, **not a verdict**. The verification is
+still the death-date test.
+
+**The control, and it is the most useful number in this section: the OpenITI tree is 10 for 10.**
+The other classical corpus on disk, `data/literature/classical-tafsir/raw/*.openiti.raw.txt`,
+embeds real bibliographic metadata in every file — `010.AuthorNAME`, `011.AuthorDIED`,
+`020.BookTITLE`. All ten match their filenames exactly: al-Ṭabarī **310**, al-Thaʿlabī **427**,
+al-Zamakhsharī **538** (*al-Kashshāf*), al-Ṭabarsī **548**, al-Rāzī **606** (*Mafātīḥ al-ghayb*),
+al-Qurṭubī **671**, Ibn Kathīr **774**, al-Biqāʿī **885** (*Naẓm al-durar*), al-Suyūṭī **911** for
+both *al-Durr al-manthūr* and *al-Itqān*. **Zero mismatches.**
+
+**So the lesson is not that digital corpora are unreliable.** Two corpora sit in the same
+directory; the one that records an author and a death date per file has a perfect record, and the
+one whose provenance is a slug has four problems in thirteen. **The defect is the metadata format,
+not the medium** — which is the §1 point exactly: a slug is a hand-assignment substituted for a
+recorded fact, and the corpus that recorded the fact did not need auditing.
+
+**And a mislabel propagates into every derivative that keeps the slug.** The Q001/Q002 plaintext
+extractions at `data/literature/classical-tafsir/raw/` each carry a `# Source: spa5k/tafsir_api →
+<slug>` header — good practice, and exactly the mechanism by which a wrong label travels intact.
+Four of those files inherit one: `tanwir-miqbas-ar-Q001.txt` and `-Q002.txt` (Ibn ʿĀshūr, not Ibn
+ʿAbbās — `Q001` opens with the *naḥt* analysis of the basmala quoting Sībawayh's *bāb al-iḍāfa*),
+and `asbab-nuzul-wahidi-en-Q001.txt` (**100% the Sufi text, 0 of 7 verses al-Wāḥidī**) and
+`-Q002.txt` (**83 of 128 verses, 72% not al-Wāḥidī**). **Re-verify derivatives separately: the
+extraction is downstream of the label, so it is never evidence for it.**
+
+---
+
 ## 7. The compound case, stated once more because it is the reason for this document
 
 **H-NEW-860 was all three defects at once**, and the order matters:
