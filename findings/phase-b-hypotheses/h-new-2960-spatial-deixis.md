@@ -140,7 +140,7 @@ first stem):
 | 58 | *ulāʾika humu* | 20 | *dhālika āyatan* |
 | 30 | *dhālika anna* | 19 | *ulāʾika hum* |
 | 28 | *ulāʾika lladhīna* | 19 | *dhālika najzī* |
-| 24 | *dhālika āyātinā* | 15 | *hādhā illā* |
+| 24 | *dhālika āyātin* | 15 | *hādhā illā* |
 | 21 | *ulāʾika aṣḥābu* | 13 | *dhālika huwa* |
 
 **The distal's dominant use is the anaphoric human-group verdict formula** — `ulāʾika humu…`,
@@ -194,9 +194,22 @@ but functionally present to the addressee, so the distal is licensed where a pro
 > correct but leaky association — rather than a clean partition. This is the strongest reason not
 > to read the null below as a refutation of the axis.
 
-*(A parallel search of the Arabic sources for al-Qurṭubī's and al-Zamakhsharī's treatment of the
-same verse was run alongside this analysis; §9 records what it returned, and nothing in §§1–8
-depends on it.)*
+### 2.1 A source caution that this search turned up, and it is worth more than a citation
+
+The obvious place to look for Ibn ʿAbbās on this verse is
+`spa5k-tafsir-api/ar-tafseer-tanwir-al-miqbas/`. **That folder is not Ibn ʿAbbās.** It holds Ibn
+ʿĀshūr's *al-Taḥrīr wa'l-Tanwīr* (d. 1393 AH), the slug having collided on the word *Tanwīr*; its
+Q 2:2 entry quotes al-Zamakhsharī five times, al-Raḍī al-Astarābādhī three times and al-Sakkākī
+three times, and **Ibn ʿAbbās died in 68 AH.** Recorded with its verification at
+`data/literature/classical-tafsir/MISLABELLED-TANWIR-FOLDER.md`.
+
+**This finding does not depend on that folder.** §2's Ibn ʿAbbās attribution comes from
+al-Ṭabarī's own isnād — al-Qāsim b. al-Ḥasan ← al-Ḥusayn b. Dāwūd ← Ḥajjāj ← Ibn Jurayj ← Ibn
+ʿAbbās, report 250 — read verbatim in the Arabic and independently confirmed by a
+diacritic-insensitive recount of every transmitter named. The genuine *Tanwīr al-Miqbās* on disk
+(`en-tafsir-ibn-abbas/`, English only) renders Q 2:2 as *"this is the Book that Muhammad is
+reciting to you"* — **silently taking the distal as a proximal, with no deictic discussion at
+all**, which is the same reading al-Ṭabarī reports and argues past.
 
 ---
 
@@ -252,8 +265,12 @@ verse counts fixed, tokens travelling with their verse; 200,000 draws, seed 2026
 20260519. Fisher is reported alongside as the unclustered comparison and is not the gate.
 
 Because the primary's state space is small, the **exact** permutation p is also computed by a
-dynamic programme over the multiset — no sampling error at all. It is verified against brute-force
-enumeration in the script's self-check and agrees to machine precision.
+dynamic programme over the multiset — no sampling error at all. **It was verified against
+brute-force enumeration of all subsets before the run**, on the multiset {0,1,2,1,3,0,2} choosing
+3: the DP and the exhaustive enumeration return 0.571429, 0.342857 and 0.142857 at thresholds
+4, 5 and 6, identical to six decimals. The script's own `--self-check` verifies the Fisher
+routine against a hand-computable 2×2 (17/70) and the deixis rule against four forms including
+`hākadhā`.
 
 Direction locked in advance: one-sided upper, **proximal → this-world, distal → Hereafter**.
 Bonferroni over the three registered tests, α = 0.05/3 = **0.0166667**.
@@ -377,12 +394,18 @@ values of k (prereg §4.2).
 | C2, k = 25 | 702 | 1.612 | 0.01239 | 0.01204 | 0.01927 / 0.01307 |
 | **C3, k = 50** | 762 | **1.771** | **0.00275** | 0.00288 | **0.00548 / 0.00328** |
 
-They survive the length control at both bin widths that `UNIT-DRIFT-DEFECT.md` §6.1 requires, so
-verse length is not the driver — even though the distal share does climb monotonically with verse
-length (0.622 in the shortest quintile to 0.741 in the longest).
+Verse length is not the driver: stratifying the permutation within length bins barely moves
+either, at either of the two bin widths `UNIT-DRIFT-DEFECT.md` §6.1 requires — even though the
+distal share does climb monotonically with verse length (0.622 in the shortest quintile to 0.741
+in the longest). **C2 is the one arm that moves across the gate**: 0.01239 unstratified → 0.01927
+at quintiles, which would fail α = 0.0167, → 0.01307 at deciles, which would pass. §6.1's rule is
+that the finer bin is the honest one, and it agrees with the unstratified value; the disagreement
+is recorded rather than resolved in the finding's favour. C3 clears at every setting.
 
 **And none of that matters, because the instrument is measuring the wrong thing.** From its own
-output (post-hoc run, §7 below):
+output (post-hoc run
+`findings/phase-b-hypotheses/runs/h-new-2960-posthoc/20260808T065928Z/result.json`, probe P2 —
+**not pre-registered, and it can only weaken**):
 
 | side | top five generated terms |
 |:--|:--|
