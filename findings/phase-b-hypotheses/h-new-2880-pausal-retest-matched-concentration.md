@@ -238,6 +238,29 @@ clear α, and they are named here rather than left in the JSON.
 
 ### 5.2 Negative control — prose. **The delta is still not computable, and that is unchanged.**
 
+> ## ⛔ CORRECTION NOTICE — 2026-08-07, same day: THIS SECTION'S CONCLUSION IS WRONG
+>
+> **"A census of all 36 baseline corpora on disk found no vocalised prose at all" is true as
+> written and false as reasoned. The census enumerated `data/baseline-corpora/` only.**
+> A repository-wide ḥarakāt census run for H-NEW-2890 found
+> `data/literature/hadith/ahmedbaset-json/`, committed since 2026-04-28: **50,884 fully
+> vocalised ḥadīth across nine canonical books**, at ḥarakāt densities of 0.7702–0.8829
+> against this corpus's own **0.7801**. **The control could be run, and H-NEW-2890 runs it.**
+>
+> - **Every number in this section stands.** The `baseline-corpora` files really do carry zero
+>   ḥarakāt, so the skeleton level comparison below is unaffected.
+> - **The conclusion "the delta is not computable" does not stand.** It should have read: not
+>   computable *from the baseline corpora*.
+> - The error is mine, it is a scope error in a census rather than a fault in any measurement,
+>   and the lesson is the cheap one: **an absence claim is only as wide as the search that
+>   produced it — state the search, not just the absence.**
+>
+> **The control's result, for anyone reading this section for it:** vocalised ḥadīth prose gains
+> **Δ = +0.030 to +0.033** at its own composed boundaries, against this corpus's **+0.1869** —
+> about one sixth — and its excess over its own exactly-matched null is **z = +1.3 to +3.2**
+> against this corpus's **z = +15.03**. **The control behaves.** See
+> `h-new-2890-vocalised-prose-control.md`.
+
 Re-measured: `bukhari-noquran.txt` carries **0** ḥarakāt over 2,056,880 Arabic characters;
 `jahiz-hayawan.txt` **0** over 1,422,374. A census of all 36 baseline corpora on disk found no
 vocalised prose at all (`sira-ibn-hisham.txt` 0 over 1,090,188; `bukhari.txt` 0.61 %,
