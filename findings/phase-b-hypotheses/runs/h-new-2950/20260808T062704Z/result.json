@@ -1,0 +1,3793 @@
+{
+  "alpha_bonferroni": 0.016666666666666666,
+  "census": {
+    "canonical_locus_set": [
+      [
+        7,
+        206
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        16,
+        50
+      ],
+      [
+        17,
+        109
+      ],
+      [
+        19,
+        58
+      ],
+      [
+        22,
+        18
+      ],
+      [
+        22,
+        77
+      ],
+      [
+        25,
+        60
+      ],
+      [
+        27,
+        26
+      ],
+      [
+        32,
+        15
+      ],
+      [
+        38,
+        24
+      ],
+      [
+        41,
+        38
+      ],
+      [
+        53,
+        62
+      ],
+      [
+        84,
+        21
+      ],
+      [
+        96,
+        19
+      ]
+    ],
+    "flat_concatenations": {
+      "quran-text/quran-flat-full-tashkeel.txt": {
+        "body_bytes": 1048576,
+        "body_is_exactly_1_mib": true,
+        "chars_in_reference_json": 706471,
+        "chars_present": 556584,
+        "coverage_pct": 78.78,
+        "file_bytes": 1048609,
+        "header": "GROUP_CONCAT(text SEPARATOR ' ')",
+        "last_complete_verse": [
+          40,
+          65
+        ],
+        "loci_beyond_cut": [
+          [
+            41,
+            38
+          ],
+          [
+            53,
+            62
+          ],
+          [
+            84,
+            21
+          ],
+          [
+            96,
+            19
+          ]
+        ],
+        "n_glyphs": 11,
+        "n_loci_beyond_cut": 4
+      },
+      "quran-text/quran-flat-min-tashkeel.txt": {
+        "body_bytes": 1048577,
+        "body_is_exactly_1_mib": false,
+        "chars_in_reference_json": 611637,
+        "chars_present": 562068,
+        "coverage_pct": 91.9,
+        "file_bytes": 1048610,
+        "header": "GROUP_CONCAT(text SEPARATOR ' ')",
+        "last_complete_verse": [
+          61,
+          4
+        ],
+        "loci_beyond_cut": [
+          [
+            84,
+            21
+          ],
+          [
+            96,
+            19
+          ]
+        ],
+        "n_glyphs": 13,
+        "n_loci_beyond_cut": 2
+      },
+      "quran-text/quran-flat-no-tashkeel.txt": {
+        "body_bytes": 752948,
+        "body_is_exactly_1_mib": false,
+        "chars_in_reference_json": 417661,
+        "chars_present": 417661,
+        "coverage_pct": 100.0,
+        "file_bytes": 752948,
+        "header": null,
+        "last_complete_verse": [
+          114,
+          5
+        ],
+        "loci_beyond_cut": [],
+        "n_glyphs": 15,
+        "n_loci_beyond_cut": 0
+      }
+    },
+    "glyph": "U+06E9 ARABIC PLACE OF SAJDAH",
+    "json_variants": {
+      "data/alt-text/quran-uthmani-consonantal.json": {
+        "loci": [],
+        "n_glyphs": 0,
+        "n_loci": 0
+      },
+      "quran-text/quran-full-tashkeel.json": {
+        "loci": [
+          [
+            7,
+            206,
+            1
+          ],
+          [
+            13,
+            15,
+            1
+          ],
+          [
+            16,
+            50,
+            1
+          ],
+          [
+            17,
+            109,
+            1
+          ],
+          [
+            19,
+            58,
+            1
+          ],
+          [
+            22,
+            18,
+            1
+          ],
+          [
+            22,
+            77,
+            1
+          ],
+          [
+            25,
+            60,
+            1
+          ],
+          [
+            27,
+            26,
+            1
+          ],
+          [
+            32,
+            15,
+            1
+          ],
+          [
+            38,
+            24,
+            1
+          ],
+          [
+            41,
+            38,
+            1
+          ],
+          [
+            53,
+            62,
+            1
+          ],
+          [
+            84,
+            21,
+            1
+          ],
+          [
+            96,
+            19,
+            1
+          ]
+        ],
+        "n_glyphs": 15,
+        "n_loci": 15
+      },
+      "quran-text/quran-min-tashkeel.json": {
+        "loci": [
+          [
+            7,
+            206,
+            1
+          ],
+          [
+            13,
+            15,
+            1
+          ],
+          [
+            16,
+            50,
+            1
+          ],
+          [
+            17,
+            109,
+            1
+          ],
+          [
+            19,
+            58,
+            1
+          ],
+          [
+            22,
+            18,
+            1
+          ],
+          [
+            22,
+            77,
+            1
+          ],
+          [
+            25,
+            60,
+            1
+          ],
+          [
+            27,
+            26,
+            1
+          ],
+          [
+            32,
+            15,
+            1
+          ],
+          [
+            38,
+            24,
+            1
+          ],
+          [
+            41,
+            38,
+            1
+          ],
+          [
+            53,
+            62,
+            1
+          ],
+          [
+            84,
+            21,
+            1
+          ],
+          [
+            96,
+            19,
+            1
+          ]
+        ],
+        "n_glyphs": 15,
+        "n_loci": 15
+      },
+      "quran-text/quran-no-tashkeel.json": {
+        "loci": [
+          [
+            7,
+            206,
+            1
+          ],
+          [
+            13,
+            15,
+            1
+          ],
+          [
+            16,
+            50,
+            1
+          ],
+          [
+            17,
+            109,
+            1
+          ],
+          [
+            19,
+            58,
+            1
+          ],
+          [
+            22,
+            18,
+            1
+          ],
+          [
+            22,
+            77,
+            1
+          ],
+          [
+            25,
+            60,
+            1
+          ],
+          [
+            27,
+            26,
+            1
+          ],
+          [
+            32,
+            15,
+            1
+          ],
+          [
+            38,
+            24,
+            1
+          ],
+          [
+            41,
+            38,
+            1
+          ],
+          [
+            53,
+            62,
+            1
+          ],
+          [
+            84,
+            21,
+            1
+          ],
+          [
+            96,
+            19,
+            1
+          ]
+        ],
+        "n_glyphs": 15,
+        "n_loci": 15
+      }
+    },
+    "locus_sets_identical_across_all_keyed_variants": true,
+    "n_surahs": 14,
+    "n_variants_carrying_a_locus_set": 8,
+    "surah_support": [
+      7,
+      13,
+      16,
+      17,
+      19,
+      22,
+      25,
+      27,
+      32,
+      38,
+      41,
+      53,
+      84,
+      96
+    ],
+    "tanzil_keyed_variants": {
+      "data/alt-text/quran-simple-clean-txt-2.txt": {
+        "loci": [
+          [
+            7,
+            206,
+            1
+          ],
+          [
+            13,
+            15,
+            1
+          ],
+          [
+            16,
+            50,
+            1
+          ],
+          [
+            17,
+            109,
+            1
+          ],
+          [
+            19,
+            58,
+            1
+          ],
+          [
+            22,
+            18,
+            1
+          ],
+          [
+            22,
+            77,
+            1
+          ],
+          [
+            25,
+            60,
+            1
+          ],
+          [
+            27,
+            26,
+            1
+          ],
+          [
+            32,
+            15,
+            1
+          ],
+          [
+            38,
+            24,
+            1
+          ],
+          [
+            41,
+            38,
+            1
+          ],
+          [
+            53,
+            62,
+            1
+          ],
+          [
+            84,
+            21,
+            1
+          ],
+          [
+            96,
+            19,
+            1
+          ]
+        ],
+        "n_glyphs": 15,
+        "n_loci": 15
+      },
+      "data/alt-text/quran-simple-min-txt-2.txt": {
+        "loci": [
+          [
+            7,
+            206,
+            1
+          ],
+          [
+            13,
+            15,
+            1
+          ],
+          [
+            16,
+            50,
+            1
+          ],
+          [
+            17,
+            109,
+            1
+          ],
+          [
+            19,
+            58,
+            1
+          ],
+          [
+            22,
+            18,
+            1
+          ],
+          [
+            22,
+            77,
+            1
+          ],
+          [
+            25,
+            60,
+            1
+          ],
+          [
+            27,
+            26,
+            1
+          ],
+          [
+            32,
+            15,
+            1
+          ],
+          [
+            38,
+            24,
+            1
+          ],
+          [
+            41,
+            38,
+            1
+          ],
+          [
+            53,
+            62,
+            1
+          ],
+          [
+            84,
+            21,
+            1
+          ],
+          [
+            96,
+            19,
+            1
+          ]
+        ],
+        "n_glyphs": 15,
+        "n_loci": 15
+      },
+      "data/alt-text/quran-simple-txt-2.txt": {
+        "loci": [
+          [
+            7,
+            206,
+            1
+          ],
+          [
+            13,
+            15,
+            1
+          ],
+          [
+            16,
+            50,
+            1
+          ],
+          [
+            17,
+            109,
+            1
+          ],
+          [
+            19,
+            58,
+            1
+          ],
+          [
+            22,
+            18,
+            1
+          ],
+          [
+            22,
+            77,
+            1
+          ],
+          [
+            25,
+            60,
+            1
+          ],
+          [
+            27,
+            26,
+            1
+          ],
+          [
+            32,
+            15,
+            1
+          ],
+          [
+            38,
+            24,
+            1
+          ],
+          [
+            41,
+            38,
+            1
+          ],
+          [
+            53,
+            62,
+            1
+          ],
+          [
+            84,
+            21,
+            1
+          ],
+          [
+            96,
+            19,
+            1
+          ]
+        ],
+        "n_glyphs": 15,
+        "n_loci": 15
+      },
+      "data/alt-text/quran-uthmani-min-txt-2.txt": {
+        "loci": [
+          [
+            7,
+            206,
+            1
+          ],
+          [
+            13,
+            15,
+            1
+          ],
+          [
+            16,
+            50,
+            1
+          ],
+          [
+            17,
+            109,
+            1
+          ],
+          [
+            19,
+            58,
+            1
+          ],
+          [
+            22,
+            18,
+            1
+          ],
+          [
+            22,
+            77,
+            1
+          ],
+          [
+            25,
+            60,
+            1
+          ],
+          [
+            27,
+            26,
+            1
+          ],
+          [
+            32,
+            15,
+            1
+          ],
+          [
+            38,
+            24,
+            1
+          ],
+          [
+            41,
+            38,
+            1
+          ],
+          [
+            53,
+            62,
+            1
+          ],
+          [
+            84,
+            21,
+            1
+          ],
+          [
+            96,
+            19,
+            1
+          ]
+        ],
+        "n_glyphs": 15,
+        "n_loci": 15
+      },
+      "data/alt-text/quran-uthmani-txt-2.txt": {
+        "loci": [
+          [
+            7,
+            206,
+            1
+          ],
+          [
+            13,
+            15,
+            1
+          ],
+          [
+            16,
+            50,
+            1
+          ],
+          [
+            17,
+            109,
+            1
+          ],
+          [
+            19,
+            58,
+            1
+          ],
+          [
+            22,
+            18,
+            1
+          ],
+          [
+            22,
+            77,
+            1
+          ],
+          [
+            25,
+            60,
+            1
+          ],
+          [
+            27,
+            26,
+            1
+          ],
+          [
+            32,
+            15,
+            1
+          ],
+          [
+            38,
+            24,
+            1
+          ],
+          [
+            41,
+            38,
+            1
+          ],
+          [
+            53,
+            62,
+            1
+          ],
+          [
+            84,
+            21,
+            1
+          ],
+          [
+            96,
+            19,
+            1
+          ]
+        ],
+        "n_glyphs": 15,
+        "n_loci": 15
+      }
+    },
+    "tanzil_plain_variants": {
+      "data/alt-text/quran-simple-clean-txt.txt": {
+        "n_glyphs": 15
+      },
+      "data/alt-text/quran-simple-min-txt.txt": {
+        "n_glyphs": 15
+      },
+      "data/alt-text/quran-simple-txt.txt": {
+        "n_glyphs": 15
+      },
+      "data/alt-text/quran-uthmani-min-txt.txt": {
+        "n_glyphs": 15
+      },
+      "data/alt-text/quran-uthmani-txt.txt": {
+        "n_glyphs": 15
+      }
+    }
+  },
+  "diagnostic_arm": {
+    "K": 15,
+    "arm": "diagnostic_NOT_GATED",
+    "axes": {
+      "F1_imperative": {
+        "direction_as_locked": true,
+        "feature": "F1_imperative",
+        "null_expected_sum": 4.625,
+        "null_max_sum": 29,
+        "null_min_sum": 0,
+        "observed_sum": 9,
+        "p_exact_fraction": "177697448470601/2251799813685248",
+        "p_exact_one_sided_upper": 0.07891351948368142,
+        "p_min_attainable_on_these_pools": 1.3322676295501878e-14,
+        "p_min_tie_free_floor": 8.673617379884035e-19,
+        "passes_bonferroni": false,
+        "passes_novelty_gate": false,
+        "per_locus": [
+          {
+            "locus": "7:206",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "13:15",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 0,
+            "pool_mean": 0.0,
+            "pool_size": 16
+          },
+          {
+            "locus": "16:50",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.125,
+            "pool_size": 16
+          },
+          {
+            "locus": "17:109",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          },
+          {
+            "locus": "19:58",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 4,
+            "pool_mean": 0.5,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:18",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 4,
+            "pool_mean": 0.6875,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:77",
+            "n_pool_members_ge_observed": 1,
+            "observed": 4,
+            "pool_max": 4,
+            "pool_mean": 0.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "25:60",
+            "n_pool_members_ge_observed": 7,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.5625,
+            "pool_size": 16
+          },
+          {
+            "locus": "27:26",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.0625,
+            "pool_size": 16
+          },
+          {
+            "locus": "32:15",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          },
+          {
+            "locus": "38:24",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.875,
+            "pool_size": 16
+          },
+          {
+            "locus": "41:38",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.1875,
+            "pool_size": 16
+          },
+          {
+            "locus": "53:62",
+            "n_pool_members_ge_observed": 1,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 0.125,
+            "pool_size": 16
+          },
+          {
+            "locus": "84:21",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 0,
+            "pool_mean": 0.0,
+            "pool_size": 16
+          },
+          {
+            "locus": "96:19",
+            "n_pool_members_ge_observed": 1,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          }
+        ],
+        "product_space_size": 1152921504606846976,
+        "verdict": "DIAGNOSTIC — NOT GATED, CANNOT SUPPORT A PASS (prereg §7.3)"
+      },
+      "F2_second_person": {
+        "direction_as_locked": true,
+        "feature": "F2_second_person",
+        "null_expected_sum": 20.6875,
+        "null_max_sum": 104,
+        "null_min_sum": 0,
+        "observed_sum": 27,
+        "p_exact_fraction": "266604283781249457/1152921504606846976",
+        "p_exact_one_sided_upper": 0.2312423549356581,
+        "p_min_attainable_on_these_pools": 8.673617379884035e-19,
+        "p_min_tie_free_floor": 8.673617379884035e-19,
+        "passes_bonferroni": false,
+        "passes_novelty_gate": false,
+        "per_locus": [
+          {
+            "locus": "7:206",
+            "n_pool_members_ge_observed": 9,
+            "observed": 1,
+            "pool_max": 7,
+            "pool_mean": 1.875,
+            "pool_size": 16
+          },
+          {
+            "locus": "13:15",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 3,
+            "pool_mean": 0.6875,
+            "pool_size": 16
+          },
+          {
+            "locus": "16:50",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 5,
+            "pool_mean": 1.3125,
+            "pool_size": 16
+          },
+          {
+            "locus": "17:109",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 7,
+            "pool_mean": 1.4375,
+            "pool_size": 16
+          },
+          {
+            "locus": "19:58",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 9,
+            "pool_mean": 1.875,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:18",
+            "n_pool_members_ge_observed": 9,
+            "observed": 1,
+            "pool_max": 16,
+            "pool_mean": 3.0625,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:77",
+            "n_pool_members_ge_observed": 1,
+            "observed": 12,
+            "pool_max": 12,
+            "pool_mean": 1.3125,
+            "pool_size": 16
+          },
+          {
+            "locus": "25:60",
+            "n_pool_members_ge_observed": 3,
+            "observed": 3,
+            "pool_max": 6,
+            "pool_mean": 1.4375,
+            "pool_size": 16
+          },
+          {
+            "locus": "27:26",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 5,
+            "pool_mean": 0.875,
+            "pool_size": 16
+          },
+          {
+            "locus": "32:15",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 12,
+            "pool_mean": 1.8125,
+            "pool_size": 16
+          },
+          {
+            "locus": "38:24",
+            "n_pool_members_ge_observed": 9,
+            "observed": 2,
+            "pool_max": 6,
+            "pool_mean": 2.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "41:38",
+            "n_pool_members_ge_observed": 5,
+            "observed": 1,
+            "pool_max": 7,
+            "pool_mean": 1.0625,
+            "pool_size": 16
+          },
+          {
+            "locus": "53:62",
+            "n_pool_members_ge_observed": 1,
+            "observed": 4,
+            "pool_max": 4,
+            "pool_mean": 0.5,
+            "pool_size": 16
+          },
+          {
+            "locus": "84:21",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.1875,
+            "pool_size": 16
+          },
+          {
+            "locus": "96:19",
+            "n_pool_members_ge_observed": 1,
+            "observed": 3,
+            "pool_max": 3,
+            "pool_mean": 0.875,
+            "pool_size": 16
+          }
+        ],
+        "product_space_size": 1152921504606846976,
+        "verdict": "DIAGNOSTIC — NOT GATED, CANNOT SUPPORT A PASS (prereg §7.3)"
+      },
+      "F3_divine_name": {
+        "direction_as_locked": true,
+        "feature": "F3_divine_name",
+        "null_expected_sum": 8.0625,
+        "null_max_sum": 30,
+        "null_min_sum": 0,
+        "observed_sum": 17,
+        "p_exact_fraction": "5161833416277/2251799813685248",
+        "p_exact_one_sided_upper": 0.0022923145232121023,
+        "p_min_attainable_on_these_pools": 6.661338147750939e-15,
+        "p_min_tie_free_floor": 8.673617379884035e-19,
+        "passes_bonferroni": false,
+        "passes_novelty_gate": false,
+        "per_locus": [
+          {
+            "locus": "7:206",
+            "n_pool_members_ge_observed": 3,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          },
+          {
+            "locus": "13:15",
+            "n_pool_members_ge_observed": 10,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.75,
+            "pool_size": 16
+          },
+          {
+            "locus": "16:50",
+            "n_pool_members_ge_observed": 5,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.3125,
+            "pool_size": 16
+          },
+          {
+            "locus": "17:109",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "19:58",
+            "n_pool_members_ge_observed": 4,
+            "observed": 2,
+            "pool_max": 3,
+            "pool_mean": 1.0625,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:18",
+            "n_pool_members_ge_observed": 3,
+            "observed": 3,
+            "pool_max": 6,
+            "pool_mean": 1.8125,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:77",
+            "n_pool_members_ge_observed": 9,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.625,
+            "pool_size": 16
+          },
+          {
+            "locus": "25:60",
+            "n_pool_members_ge_observed": 2,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 0.5625,
+            "pool_size": 16
+          },
+          {
+            "locus": "27:26",
+            "n_pool_members_ge_observed": 2,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 0.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "32:15",
+            "n_pool_members_ge_observed": 7,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.5,
+            "pool_size": 16
+          },
+          {
+            "locus": "38:24",
+            "n_pool_members_ge_observed": 6,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.4375,
+            "pool_size": 16
+          },
+          {
+            "locus": "41:38",
+            "n_pool_members_ge_observed": 6,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "53:62",
+            "n_pool_members_ge_observed": 2,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.125,
+            "pool_size": 16
+          },
+          {
+            "locus": "84:21",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          },
+          {
+            "locus": "96:19",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          }
+        ],
+        "product_space_size": 1152921504606846976,
+        "verdict": "DIAGNOSTIC — NOT GATED, CANNOT SUPPORT A PASS (prereg §7.3)"
+      }
+    },
+    "headline": "DIAGNOSTIC ONLY — quantifies the definitional component (prereg §7.3)",
+    "pool_size": 16,
+    "pools": {
+      "13:15": {
+        "member_word_counts": [
+          11,
+          11,
+          9,
+          13,
+          13,
+          13,
+          14,
+          8,
+          14,
+          8,
+          15,
+          15,
+          15,
+          15,
+          7,
+          15
+        ],
+        "members": [
+          "13:15",
+          "13:28",
+          "13:12",
+          "13:21",
+          "13:32",
+          "13:40",
+          "13:10",
+          "13:29",
+          "13:34",
+          "13:39",
+          "13:1",
+          "13:7",
+          "13:8",
+          "13:19",
+          "13:20",
+          "13:23"
+        ],
+        "word_count": 11
+      },
+      "16:50": {
+        "member_word_counts": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          8,
+          8,
+          6,
+          8,
+          8,
+          6
+        ],
+        "members": [
+          "16:50",
+          "16:3",
+          "16:6",
+          "16:17",
+          "16:21",
+          "16:46",
+          "16:57",
+          "16:83",
+          "16:109",
+          "16:121",
+          "16:4",
+          "16:5",
+          "16:19",
+          "16:29",
+          "16:47",
+          "16:55"
+        ],
+        "word_count": 7
+      },
+      "17:109": {
+        "member_word_counts": [
+          5,
+          5,
+          6,
+          7,
+          7,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "members": [
+          "17:109",
+          "17:50",
+          "17:43",
+          "17:14",
+          "17:38",
+          "17:11",
+          "17:32",
+          "17:108",
+          "17:3",
+          "17:10",
+          "17:22",
+          "17:27",
+          "17:48",
+          "17:49",
+          "17:52",
+          "17:65"
+        ],
+        "word_count": 5
+      },
+      "19:58": {
+        "member_word_counts": [
+          29,
+          25,
+          18,
+          18,
+          16,
+          16,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          13,
+          13
+        ],
+        "members": [
+          "19:58",
+          "19:75",
+          "19:26",
+          "19:64",
+          "19:35",
+          "19:73",
+          "19:21",
+          "19:42",
+          "19:4",
+          "19:8",
+          "19:9",
+          "19:48",
+          "19:49",
+          "19:98",
+          "19:5",
+          "19:10"
+        ],
+        "word_count": 29
+      },
+      "22:18": {
+        "member_word_counts": [
+          37,
+          35,
+          44,
+          29,
+          28,
+          27,
+          27,
+          27,
+          25,
+          25,
+          24,
+          23,
+          22,
+          22,
+          22,
+          22
+        ],
+        "members": [
+          "22:18",
+          "22:40",
+          "22:78",
+          "22:72",
+          "22:73",
+          "22:36",
+          "22:52",
+          "22:65",
+          "22:11",
+          "22:25",
+          "22:30",
+          "22:46",
+          "22:2",
+          "22:15",
+          "22:17",
+          "22:23"
+        ],
+        "word_count": 37
+      },
+      "22:77": {
+        "member_word_counts": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          12,
+          12,
+          10,
+          12,
+          10,
+          12,
+          12,
+          10,
+          10,
+          9
+        ],
+        "members": [
+          "22:77",
+          "22:4",
+          "22:33",
+          "22:44",
+          "22:48",
+          "22:75",
+          "22:3",
+          "22:7",
+          "22:13",
+          "22:22",
+          "22:39",
+          "22:56",
+          "22:64",
+          "22:66",
+          "22:76",
+          "22:1"
+        ],
+        "word_count": 11
+      },
+      "25:60": {
+        "member_word_counts": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          12,
+          12,
+          14,
+          14,
+          12,
+          12,
+          15,
+          11,
+          11
+        ],
+        "members": [
+          "25:60",
+          "25:15",
+          "25:37",
+          "25:48",
+          "25:58",
+          "25:62",
+          "25:74",
+          "25:6",
+          "25:54",
+          "25:55",
+          "25:57",
+          "25:63",
+          "25:77",
+          "25:19",
+          "25:27",
+          "25:29"
+        ],
+        "word_count": 13
+      },
+      "27:26": {
+        "member_word_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          9,
+          7,
+          9,
+          9,
+          7,
+          7,
+          9
+        ],
+        "members": [
+          "27:26",
+          "27:13",
+          "27:29",
+          "27:30",
+          "27:35",
+          "27:54",
+          "27:74",
+          "27:78",
+          "27:85",
+          "27:3",
+          "27:6",
+          "27:17",
+          "27:21",
+          "27:27",
+          "27:50",
+          "27:51"
+        ],
+        "word_count": 8
+      },
+      "32:15": {
+        "member_word_counts": [
+          15,
+          14,
+          14,
+          16,
+          16,
+          14,
+          14,
+          17,
+          13,
+          13,
+          17,
+          18,
+          12,
+          18,
+          11,
+          11
+        ],
+        "members": [
+          "32:15",
+          "32:9",
+          "32:10",
+          "32:12",
+          "32:13",
+          "32:14",
+          "32:23",
+          "32:5",
+          "32:17",
+          "32:22",
+          "32:27",
+          "32:3",
+          "32:19",
+          "32:26",
+          "32:11",
+          "32:16"
+        ],
+        "word_count": 15
+      },
+      "38:24": {
+        "member_word_counts": [
+          32,
+          30,
+          23,
+          16,
+          15,
+          15,
+          15,
+          14,
+          14,
+          13,
+          12,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "members": [
+          "38:24",
+          "38:26",
+          "38:22",
+          "38:27",
+          "38:8",
+          "38:23",
+          "38:35",
+          "38:44",
+          "38:75",
+          "38:28",
+          "38:6",
+          "38:17",
+          "38:32",
+          "38:41",
+          "38:60",
+          "38:61"
+        ],
+        "word_count": 32
+      },
+      "41:38": {
+        "member_word_counts": [
+          12,
+          12,
+          12,
+          12,
+          11,
+          11,
+          13,
+          11,
+          11,
+          13,
+          11,
+          11,
+          13,
+          14,
+          14,
+          10
+        ],
+        "members": [
+          "41:38",
+          "41:20",
+          "41:48",
+          "41:54",
+          "41:24",
+          "41:26",
+          "41:33",
+          "41:35",
+          "41:36",
+          "41:42",
+          "41:46",
+          "41:49",
+          "41:51",
+          "41:9",
+          "41:17",
+          "41:27"
+        ],
+        "word_count": 12
+      },
+      "53:62": {
+        "member_word_counts": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "members": [
+          "53:62",
+          "53:1",
+          "53:5",
+          "53:6",
+          "53:7",
+          "53:8",
+          "53:14",
+          "53:15",
+          "53:19",
+          "53:20",
+          "53:25",
+          "53:33",
+          "53:34",
+          "53:37",
+          "53:51",
+          "53:54"
+        ],
+        "word_count": 3
+      },
+      "7:206": {
+        "member_word_counts": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "members": [
+          "7:206",
+          "7:9",
+          "7:10",
+          "7:34",
+          "7:36",
+          "7:62",
+          "7:81",
+          "7:106",
+          "7:113",
+          "7:116",
+          "7:117",
+          "7:135",
+          "7:136",
+          "7:151",
+          "7:166",
+          "7:184"
+        ],
+        "word_count": 11
+      },
+      "84:21": {
+        "member_word_counts": [
+          6,
+          6,
+          6,
+          5,
+          5,
+          5,
+          4,
+          8,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        "members": [
+          "84:21",
+          "84:10",
+          "84:15",
+          "84:7",
+          "84:13",
+          "84:14",
+          "84:4",
+          "84:6",
+          "84:8",
+          "84:9",
+          "84:19",
+          "84:20",
+          "84:22",
+          "84:23",
+          "84:1",
+          "84:2"
+        ],
+        "word_count": 6
+      },
+      "96:19": {
+        "member_word_counts": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4,
+          4,
+          6,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "members": [
+          "96:19",
+          "96:1",
+          "96:5",
+          "96:11",
+          "96:14",
+          "96:2",
+          "96:6",
+          "96:8",
+          "96:13",
+          "96:15",
+          "96:3",
+          "96:4",
+          "96:7",
+          "96:9",
+          "96:10",
+          "96:12"
+        ],
+        "word_count": 5
+      }
+    },
+    "seed": 20260509,
+    "sjd_exclusion": "sjd_included"
+  },
+  "id": "H-NEW-2950",
+  "n_loci": 15,
+  "novelty_gate_corrected": 0.005,
+  "novelty_gate_raw": 0.0016666666666666668,
+  "primary_arm": {
+    "K": 15,
+    "arm": "primary",
+    "axes": {
+      "F1_imperative": {
+        "direction_as_locked": true,
+        "feature": "F1_imperative",
+        "monte_carlo_cross_check": {
+          "agrees": true,
+          "draws": 200000,
+          "hits": 86582,
+          "p": 0.43291,
+          "seed": 20260509,
+          "tolerance": 0.005555542591198211
+        },
+        "null_expected_sum": 4.375,
+        "null_max_sum": 26,
+        "null_min_sum": 0,
+        "observed_sum": 5,
+        "p_exact_fraction": "30506516276467/70368744177664",
+        "p_exact_one_sided_upper": 0.43352367067181774,
+        "p_min_attainable_on_these_pools": 3.9968028886505635e-14,
+        "p_min_tie_free_floor": 8.673617379884035e-19,
+        "passes_bonferroni": false,
+        "passes_novelty_gate": false,
+        "per_locus": [
+          {
+            "locus": "7:206",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "13:15",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 0,
+            "pool_mean": 0.0,
+            "pool_size": 16
+          },
+          {
+            "locus": "16:50",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.125,
+            "pool_size": 16
+          },
+          {
+            "locus": "17:109",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          },
+          {
+            "locus": "19:58",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 4,
+            "pool_mean": 0.5,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:18",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 4,
+            "pool_mean": 0.6875,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:77",
+            "n_pool_members_ge_observed": 1,
+            "observed": 3,
+            "pool_max": 3,
+            "pool_mean": 0.3125,
+            "pool_size": 16
+          },
+          {
+            "locus": "25:60",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.5,
+            "pool_size": 16
+          },
+          {
+            "locus": "27:26",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.0625,
+            "pool_size": 16
+          },
+          {
+            "locus": "32:15",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          },
+          {
+            "locus": "38:24",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.875,
+            "pool_size": 16
+          },
+          {
+            "locus": "41:38",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.1875,
+            "pool_size": 16
+          },
+          {
+            "locus": "53:62",
+            "n_pool_members_ge_observed": 1,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.0625,
+            "pool_size": 16
+          },
+          {
+            "locus": "84:21",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 0,
+            "pool_mean": 0.0,
+            "pool_size": 16
+          },
+          {
+            "locus": "96:19",
+            "n_pool_members_ge_observed": 3,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.1875,
+            "pool_size": 16
+          }
+        ],
+        "product_space_size": 1152921504606846976,
+        "verdict": "NULL"
+      },
+      "F2_second_person": {
+        "direction_as_locked": true,
+        "feature": "F2_second_person",
+        "monte_carlo_cross_check": {
+          "agrees": true,
+          "draws": 200000,
+          "hits": 71657,
+          "p": 0.358285,
+          "seed": 20260509,
+          "tolerance": 0.005377779827568502
+        },
+        "null_expected_sum": 20.375,
+        "null_max_sum": 100,
+        "null_min_sum": 0,
+        "observed_sum": 23,
+        "p_exact_fraction": "103430023058136545/288230376151711744",
+        "p_exact_one_sided_upper": 0.35884497823954387,
+        "p_min_attainable_on_these_pools": 1.5612511283791264e-17,
+        "p_min_tie_free_floor": 8.673617379884035e-19,
+        "passes_bonferroni": false,
+        "passes_novelty_gate": false,
+        "per_locus": [
+          {
+            "locus": "7:206",
+            "n_pool_members_ge_observed": 9,
+            "observed": 1,
+            "pool_max": 7,
+            "pool_mean": 1.875,
+            "pool_size": 16
+          },
+          {
+            "locus": "13:15",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 3,
+            "pool_mean": 0.6875,
+            "pool_size": 16
+          },
+          {
+            "locus": "16:50",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 5,
+            "pool_mean": 1.3125,
+            "pool_size": 16
+          },
+          {
+            "locus": "17:109",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 7,
+            "pool_mean": 1.4375,
+            "pool_size": 16
+          },
+          {
+            "locus": "19:58",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 9,
+            "pool_mean": 1.875,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:18",
+            "n_pool_members_ge_observed": 9,
+            "observed": 1,
+            "pool_max": 16,
+            "pool_mean": 3.0625,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:77",
+            "n_pool_members_ge_observed": 1,
+            "observed": 11,
+            "pool_max": 11,
+            "pool_mean": 1.25,
+            "pool_size": 16
+          },
+          {
+            "locus": "25:60",
+            "n_pool_members_ge_observed": 6,
+            "observed": 2,
+            "pool_max": 6,
+            "pool_mean": 1.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "27:26",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 5,
+            "pool_mean": 0.875,
+            "pool_size": 16
+          },
+          {
+            "locus": "32:15",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 12,
+            "pool_mean": 1.8125,
+            "pool_size": 16
+          },
+          {
+            "locus": "38:24",
+            "n_pool_members_ge_observed": 9,
+            "observed": 2,
+            "pool_max": 5,
+            "pool_mean": 2.3125,
+            "pool_size": 16
+          },
+          {
+            "locus": "41:38",
+            "n_pool_members_ge_observed": 5,
+            "observed": 1,
+            "pool_max": 7,
+            "pool_mean": 1.0625,
+            "pool_size": 16
+          },
+          {
+            "locus": "53:62",
+            "n_pool_members_ge_observed": 1,
+            "observed": 3,
+            "pool_max": 3,
+            "pool_mean": 0.4375,
+            "pool_size": 16
+          },
+          {
+            "locus": "84:21",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.1875,
+            "pool_size": 16
+          },
+          {
+            "locus": "96:19",
+            "n_pool_members_ge_observed": 6,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 0.8125,
+            "pool_size": 16
+          }
+        ],
+        "product_space_size": 1152921504606846976,
+        "verdict": "NULL"
+      },
+      "F3_divine_name": {
+        "direction_as_locked": true,
+        "feature": "F3_divine_name",
+        "monte_carlo_cross_check": {
+          "agrees": true,
+          "draws": 200000,
+          "hits": 499,
+          "p": 0.002495,
+          "seed": 20260509,
+          "tolerance": 0.0005496797893761712
+        },
+        "null_expected_sum": 8.0625,
+        "null_max_sum": 30,
+        "null_min_sum": 0,
+        "observed_sum": 17,
+        "p_exact_fraction": "5161833416277/2251799813685248",
+        "p_exact_one_sided_upper": 0.0022923145232121023,
+        "p_min_attainable_on_these_pools": 6.661338147750939e-15,
+        "p_min_tie_free_floor": 8.673617379884035e-19,
+        "passes_bonferroni": true,
+        "passes_novelty_gate": false,
+        "per_locus": [
+          {
+            "locus": "7:206",
+            "n_pool_members_ge_observed": 3,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          },
+          {
+            "locus": "13:15",
+            "n_pool_members_ge_observed": 10,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.75,
+            "pool_size": 16
+          },
+          {
+            "locus": "16:50",
+            "n_pool_members_ge_observed": 5,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.3125,
+            "pool_size": 16
+          },
+          {
+            "locus": "17:109",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "19:58",
+            "n_pool_members_ge_observed": 4,
+            "observed": 2,
+            "pool_max": 3,
+            "pool_mean": 1.0625,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:18",
+            "n_pool_members_ge_observed": 3,
+            "observed": 3,
+            "pool_max": 6,
+            "pool_mean": 1.8125,
+            "pool_size": 16
+          },
+          {
+            "locus": "22:77",
+            "n_pool_members_ge_observed": 9,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.625,
+            "pool_size": 16
+          },
+          {
+            "locus": "25:60",
+            "n_pool_members_ge_observed": 2,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 0.5625,
+            "pool_size": 16
+          },
+          {
+            "locus": "27:26",
+            "n_pool_members_ge_observed": 2,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 0.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "32:15",
+            "n_pool_members_ge_observed": 7,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.5,
+            "pool_size": 16
+          },
+          {
+            "locus": "38:24",
+            "n_pool_members_ge_observed": 6,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.4375,
+            "pool_size": 16
+          },
+          {
+            "locus": "41:38",
+            "n_pool_members_ge_observed": 6,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.375,
+            "pool_size": 16
+          },
+          {
+            "locus": "53:62",
+            "n_pool_members_ge_observed": 2,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.125,
+            "pool_size": 16
+          },
+          {
+            "locus": "84:21",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          },
+          {
+            "locus": "96:19",
+            "n_pool_members_ge_observed": 16,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.25,
+            "pool_size": 16
+          }
+        ],
+        "product_space_size": 1152921504606846976,
+        "verdict": "PASS-DIRECTED"
+      }
+    },
+    "headline": "NULL — primary F1 held direction but did not clear its gate",
+    "pool_size": 16,
+    "pools": {
+      "13:15": {
+        "member_word_counts": [
+          11,
+          11,
+          9,
+          13,
+          13,
+          13,
+          14,
+          8,
+          14,
+          8,
+          15,
+          15,
+          15,
+          15,
+          7,
+          15
+        ],
+        "members": [
+          "13:15",
+          "13:28",
+          "13:12",
+          "13:21",
+          "13:32",
+          "13:40",
+          "13:10",
+          "13:29",
+          "13:34",
+          "13:39",
+          "13:1",
+          "13:7",
+          "13:8",
+          "13:19",
+          "13:20",
+          "13:23"
+        ],
+        "word_count": 11
+      },
+      "16:50": {
+        "member_word_counts": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          8,
+          8,
+          6,
+          8,
+          8,
+          6
+        ],
+        "members": [
+          "16:50",
+          "16:3",
+          "16:6",
+          "16:17",
+          "16:21",
+          "16:46",
+          "16:57",
+          "16:83",
+          "16:109",
+          "16:121",
+          "16:4",
+          "16:5",
+          "16:19",
+          "16:29",
+          "16:47",
+          "16:55"
+        ],
+        "word_count": 7
+      },
+      "17:109": {
+        "member_word_counts": [
+          5,
+          5,
+          6,
+          7,
+          7,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "members": [
+          "17:109",
+          "17:50",
+          "17:43",
+          "17:14",
+          "17:38",
+          "17:11",
+          "17:32",
+          "17:108",
+          "17:3",
+          "17:10",
+          "17:22",
+          "17:27",
+          "17:48",
+          "17:49",
+          "17:52",
+          "17:65"
+        ],
+        "word_count": 5
+      },
+      "19:58": {
+        "member_word_counts": [
+          29,
+          25,
+          18,
+          18,
+          16,
+          16,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          13,
+          13
+        ],
+        "members": [
+          "19:58",
+          "19:75",
+          "19:26",
+          "19:64",
+          "19:35",
+          "19:73",
+          "19:21",
+          "19:42",
+          "19:4",
+          "19:8",
+          "19:9",
+          "19:48",
+          "19:49",
+          "19:98",
+          "19:5",
+          "19:10"
+        ],
+        "word_count": 29
+      },
+      "22:18": {
+        "member_word_counts": [
+          37,
+          35,
+          44,
+          29,
+          28,
+          27,
+          27,
+          27,
+          25,
+          25,
+          24,
+          23,
+          22,
+          22,
+          22,
+          22
+        ],
+        "members": [
+          "22:18",
+          "22:40",
+          "22:78",
+          "22:72",
+          "22:73",
+          "22:36",
+          "22:52",
+          "22:65",
+          "22:11",
+          "22:25",
+          "22:30",
+          "22:46",
+          "22:2",
+          "22:15",
+          "22:17",
+          "22:23"
+        ],
+        "word_count": 37
+      },
+      "22:77": {
+        "member_word_counts": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          12,
+          12,
+          10,
+          12,
+          10,
+          12,
+          12,
+          10,
+          10,
+          9
+        ],
+        "members": [
+          "22:77",
+          "22:4",
+          "22:33",
+          "22:44",
+          "22:48",
+          "22:75",
+          "22:3",
+          "22:7",
+          "22:13",
+          "22:22",
+          "22:39",
+          "22:56",
+          "22:64",
+          "22:66",
+          "22:76",
+          "22:1"
+        ],
+        "word_count": 11
+      },
+      "25:60": {
+        "member_word_counts": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          12,
+          12,
+          14,
+          14,
+          12,
+          12,
+          15,
+          11,
+          11
+        ],
+        "members": [
+          "25:60",
+          "25:15",
+          "25:37",
+          "25:48",
+          "25:58",
+          "25:62",
+          "25:74",
+          "25:6",
+          "25:54",
+          "25:55",
+          "25:57",
+          "25:63",
+          "25:77",
+          "25:19",
+          "25:27",
+          "25:29"
+        ],
+        "word_count": 13
+      },
+      "27:26": {
+        "member_word_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          9,
+          7,
+          9,
+          9,
+          7,
+          7,
+          9
+        ],
+        "members": [
+          "27:26",
+          "27:13",
+          "27:29",
+          "27:30",
+          "27:35",
+          "27:54",
+          "27:74",
+          "27:78",
+          "27:85",
+          "27:3",
+          "27:6",
+          "27:17",
+          "27:21",
+          "27:27",
+          "27:50",
+          "27:51"
+        ],
+        "word_count": 8
+      },
+      "32:15": {
+        "member_word_counts": [
+          15,
+          14,
+          14,
+          16,
+          16,
+          14,
+          14,
+          17,
+          13,
+          13,
+          17,
+          18,
+          12,
+          18,
+          11,
+          11
+        ],
+        "members": [
+          "32:15",
+          "32:9",
+          "32:10",
+          "32:12",
+          "32:13",
+          "32:14",
+          "32:23",
+          "32:5",
+          "32:17",
+          "32:22",
+          "32:27",
+          "32:3",
+          "32:19",
+          "32:26",
+          "32:11",
+          "32:16"
+        ],
+        "word_count": 15
+      },
+      "38:24": {
+        "member_word_counts": [
+          32,
+          30,
+          23,
+          16,
+          15,
+          15,
+          15,
+          14,
+          14,
+          13,
+          12,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "members": [
+          "38:24",
+          "38:26",
+          "38:22",
+          "38:27",
+          "38:8",
+          "38:23",
+          "38:35",
+          "38:44",
+          "38:75",
+          "38:28",
+          "38:6",
+          "38:17",
+          "38:32",
+          "38:41",
+          "38:60",
+          "38:61"
+        ],
+        "word_count": 32
+      },
+      "41:38": {
+        "member_word_counts": [
+          12,
+          12,
+          12,
+          12,
+          11,
+          11,
+          13,
+          11,
+          11,
+          13,
+          11,
+          11,
+          13,
+          14,
+          14,
+          10
+        ],
+        "members": [
+          "41:38",
+          "41:20",
+          "41:48",
+          "41:54",
+          "41:24",
+          "41:26",
+          "41:33",
+          "41:35",
+          "41:36",
+          "41:42",
+          "41:46",
+          "41:49",
+          "41:51",
+          "41:9",
+          "41:17",
+          "41:27"
+        ],
+        "word_count": 12
+      },
+      "53:62": {
+        "member_word_counts": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "members": [
+          "53:62",
+          "53:1",
+          "53:5",
+          "53:6",
+          "53:7",
+          "53:8",
+          "53:14",
+          "53:15",
+          "53:19",
+          "53:20",
+          "53:25",
+          "53:33",
+          "53:34",
+          "53:37",
+          "53:51",
+          "53:54"
+        ],
+        "word_count": 3
+      },
+      "7:206": {
+        "member_word_counts": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "members": [
+          "7:206",
+          "7:9",
+          "7:10",
+          "7:34",
+          "7:36",
+          "7:62",
+          "7:81",
+          "7:106",
+          "7:113",
+          "7:116",
+          "7:117",
+          "7:135",
+          "7:136",
+          "7:151",
+          "7:166",
+          "7:184"
+        ],
+        "word_count": 11
+      },
+      "84:21": {
+        "member_word_counts": [
+          6,
+          6,
+          6,
+          5,
+          5,
+          5,
+          4,
+          8,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        "members": [
+          "84:21",
+          "84:10",
+          "84:15",
+          "84:7",
+          "84:13",
+          "84:14",
+          "84:4",
+          "84:6",
+          "84:8",
+          "84:9",
+          "84:19",
+          "84:20",
+          "84:22",
+          "84:23",
+          "84:1",
+          "84:2"
+        ],
+        "word_count": 6
+      },
+      "96:19": {
+        "member_word_counts": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4,
+          4,
+          6,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "members": [
+          "96:19",
+          "96:1",
+          "96:5",
+          "96:11",
+          "96:14",
+          "96:2",
+          "96:6",
+          "96:8",
+          "96:13",
+          "96:15",
+          "96:3",
+          "96:4",
+          "96:7",
+          "96:9",
+          "96:10",
+          "96:12"
+        ],
+        "word_count": 5
+      }
+    },
+    "seed": 20260509,
+    "sjd_exclusion": "sjd_excluded"
+  },
+  "replication_arm": {
+    "K": 10,
+    "arm": "replication",
+    "axes": {
+      "F1_imperative": {
+        "direction_as_locked": true,
+        "feature": "F1_imperative",
+        "monte_carlo_cross_check": {
+          "agrees": true,
+          "draws": 200000,
+          "hits": 101074,
+          "p": 0.50537,
+          "seed": 20260519,
+          "tolerance": 0.005604696998896102
+        },
+        "null_expected_sum": 4.818181818181818,
+        "null_max_sum": 23,
+        "null_min_sum": 0,
+        "observed_sum": 5,
+        "p_exact_fraction": "144511451267/285311670611",
+        "p_exact_one_sided_upper": 0.5065038207428605,
+        "p_min_attainable_on_these_pools": 5.047112152532052e-10,
+        "p_min_tie_free_floor": 2.3939204936916367e-16,
+        "passes_bonferroni": false,
+        "passes_novelty_gate": false,
+        "per_locus": [
+          {
+            "locus": "7:206",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.2727,
+            "pool_size": 11
+          },
+          {
+            "locus": "13:15",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 0,
+            "pool_mean": 0.0,
+            "pool_size": 11
+          },
+          {
+            "locus": "16:50",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 0,
+            "pool_mean": 0.0,
+            "pool_size": 11
+          },
+          {
+            "locus": "17:109",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.2727,
+            "pool_size": 11
+          },
+          {
+            "locus": "19:58",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 4,
+            "pool_mean": 0.5455,
+            "pool_size": 11
+          },
+          {
+            "locus": "22:18",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 4,
+            "pool_mean": 1.0,
+            "pool_size": 11
+          },
+          {
+            "locus": "22:77",
+            "n_pool_members_ge_observed": 1,
+            "observed": 3,
+            "pool_max": 3,
+            "pool_mean": 0.3636,
+            "pool_size": 11
+          },
+          {
+            "locus": "25:60",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.6364,
+            "pool_size": 11
+          },
+          {
+            "locus": "27:26",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 0,
+            "pool_mean": 0.0,
+            "pool_size": 11
+          },
+          {
+            "locus": "32:15",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.2727,
+            "pool_size": 11
+          },
+          {
+            "locus": "38:24",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.9091,
+            "pool_size": 11
+          },
+          {
+            "locus": "41:38",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.1818,
+            "pool_size": 11
+          },
+          {
+            "locus": "53:62",
+            "n_pool_members_ge_observed": 1,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.0909,
+            "pool_size": 11
+          },
+          {
+            "locus": "84:21",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 0,
+            "pool_mean": 0.0,
+            "pool_size": 11
+          },
+          {
+            "locus": "96:19",
+            "n_pool_members_ge_observed": 3,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.2727,
+            "pool_size": 11
+          }
+        ],
+        "product_space_size": 4177248169415651,
+        "verdict": "NULL"
+      },
+      "F2_second_person": {
+        "direction_as_locked": true,
+        "feature": "F2_second_person",
+        "monte_carlo_cross_check": {
+          "agrees": true,
+          "draws": 200000,
+          "hits": 76300,
+          "p": 0.3815,
+          "seed": 20260519,
+          "tolerance": 0.005451575164514188
+        },
+        "null_expected_sum": 20.818181818181817,
+        "null_max_sum": 93,
+        "null_min_sum": 0,
+        "observed_sum": 23,
+        "p_exact_fraction": "1602388022378716/4177248169415651",
+        "p_exact_one_sided_upper": 0.38359895256184207,
+        "p_min_attainable_on_these_pools": 9.575681974766545e-15,
+        "p_min_tie_free_floor": 2.3939204936916367e-16,
+        "passes_bonferroni": false,
+        "passes_novelty_gate": false,
+        "per_locus": [
+          {
+            "locus": "7:206",
+            "n_pool_members_ge_observed": 7,
+            "observed": 1,
+            "pool_max": 7,
+            "pool_mean": 2.1818,
+            "pool_size": 11
+          },
+          {
+            "locus": "13:15",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 3,
+            "pool_mean": 0.7273,
+            "pool_size": 11
+          },
+          {
+            "locus": "16:50",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 5,
+            "pool_mean": 0.6364,
+            "pool_size": 11
+          },
+          {
+            "locus": "17:109",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 4,
+            "pool_mean": 1.0909,
+            "pool_size": 11
+          },
+          {
+            "locus": "19:58",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 9,
+            "pool_mean": 1.8182,
+            "pool_size": 11
+          },
+          {
+            "locus": "22:18",
+            "n_pool_members_ge_observed": 8,
+            "observed": 1,
+            "pool_max": 16,
+            "pool_mean": 4.1818,
+            "pool_size": 11
+          },
+          {
+            "locus": "22:77",
+            "n_pool_members_ge_observed": 1,
+            "observed": 11,
+            "pool_max": 11,
+            "pool_mean": 1.2727,
+            "pool_size": 11
+          },
+          {
+            "locus": "25:60",
+            "n_pool_members_ge_observed": 4,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 1.0,
+            "pool_size": 11
+          },
+          {
+            "locus": "27:26",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 5,
+            "pool_mean": 0.8182,
+            "pool_size": 11
+          },
+          {
+            "locus": "32:15",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 12,
+            "pool_mean": 1.8182,
+            "pool_size": 11
+          },
+          {
+            "locus": "38:24",
+            "n_pool_members_ge_observed": 7,
+            "observed": 2,
+            "pool_max": 5,
+            "pool_mean": 2.5455,
+            "pool_size": 11
+          },
+          {
+            "locus": "41:38",
+            "n_pool_members_ge_observed": 4,
+            "observed": 1,
+            "pool_max": 7,
+            "pool_mean": 1.0,
+            "pool_size": 11
+          },
+          {
+            "locus": "53:62",
+            "n_pool_members_ge_observed": 1,
+            "observed": 3,
+            "pool_max": 3,
+            "pool_mean": 0.4545,
+            "pool_size": 11
+          },
+          {
+            "locus": "84:21",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.2727,
+            "pool_size": 11
+          },
+          {
+            "locus": "96:19",
+            "n_pool_members_ge_observed": 5,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 1.0,
+            "pool_size": 11
+          }
+        ],
+        "product_space_size": 4177248169415651,
+        "verdict": "NULL"
+      },
+      "F3_divine_name": {
+        "direction_as_locked": true,
+        "feature": "F3_divine_name",
+        "monte_carlo_cross_check": {
+          "agrees": true,
+          "draws": 200000,
+          "hits": 939,
+          "p": 0.004695,
+          "seed": 20260519,
+          "tolerance": 0.0007866605385386985
+        },
+        "null_expected_sum": 8.636363636363637,
+        "null_max_sum": 29,
+        "null_min_sum": 1,
+        "observed_sum": 17,
+        "p_exact_fraction": "19994779957289/4177248169415651",
+        "p_exact_one_sided_upper": 0.0047865913506608924,
+        "p_min_attainable_on_these_pools": 1.3788982043663826e-12,
+        "p_min_tie_free_floor": 2.3939204936916367e-16,
+        "passes_bonferroni": true,
+        "passes_novelty_gate": false,
+        "per_locus": [
+          {
+            "locus": "7:206",
+            "n_pool_members_ge_observed": 2,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.2727,
+            "pool_size": 11
+          },
+          {
+            "locus": "13:15",
+            "n_pool_members_ge_observed": 6,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.7273,
+            "pool_size": 11
+          },
+          {
+            "locus": "16:50",
+            "n_pool_members_ge_observed": 3,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.2727,
+            "pool_size": 11
+          },
+          {
+            "locus": "17:109",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 2,
+            "pool_mean": 0.3636,
+            "pool_size": 11
+          },
+          {
+            "locus": "19:58",
+            "n_pool_members_ge_observed": 3,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 1.0909,
+            "pool_size": 11
+          },
+          {
+            "locus": "22:18",
+            "n_pool_members_ge_observed": 3,
+            "observed": 3,
+            "pool_max": 6,
+            "pool_mean": 2.1818,
+            "pool_size": 11
+          },
+          {
+            "locus": "22:77",
+            "n_pool_members_ge_observed": 5,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.5455,
+            "pool_size": 11
+          },
+          {
+            "locus": "25:60",
+            "n_pool_members_ge_observed": 2,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 0.6364,
+            "pool_size": 11
+          },
+          {
+            "locus": "27:26",
+            "n_pool_members_ge_observed": 2,
+            "observed": 2,
+            "pool_max": 2,
+            "pool_mean": 0.5455,
+            "pool_size": 11
+          },
+          {
+            "locus": "32:15",
+            "n_pool_members_ge_observed": 4,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.4545,
+            "pool_size": 11
+          },
+          {
+            "locus": "38:24",
+            "n_pool_members_ge_observed": 3,
+            "observed": 1,
+            "pool_max": 2,
+            "pool_mean": 0.3636,
+            "pool_size": 11
+          },
+          {
+            "locus": "41:38",
+            "n_pool_members_ge_observed": 5,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.4545,
+            "pool_size": 11
+          },
+          {
+            "locus": "53:62",
+            "n_pool_members_ge_observed": 2,
+            "observed": 1,
+            "pool_max": 1,
+            "pool_mean": 0.1818,
+            "pool_size": 11
+          },
+          {
+            "locus": "84:21",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.1818,
+            "pool_size": 11
+          },
+          {
+            "locus": "96:19",
+            "n_pool_members_ge_observed": 11,
+            "observed": 0,
+            "pool_max": 1,
+            "pool_mean": 0.3636,
+            "pool_size": 11
+          }
+        ],
+        "product_space_size": 4177248169415651,
+        "verdict": "PASS-DIRECTED"
+      }
+    },
+    "headline": "NULL — primary F1 held direction but did not clear its gate",
+    "pool_size": 11,
+    "pools": {
+      "13:15": {
+        "member_word_counts": [
+          11,
+          11,
+          9,
+          13,
+          13,
+          13,
+          14,
+          8,
+          14,
+          8,
+          15
+        ],
+        "members": [
+          "13:15",
+          "13:28",
+          "13:12",
+          "13:21",
+          "13:32",
+          "13:40",
+          "13:10",
+          "13:29",
+          "13:34",
+          "13:39",
+          "13:1"
+        ],
+        "word_count": 11
+      },
+      "16:50": {
+        "member_word_counts": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          8
+        ],
+        "members": [
+          "16:50",
+          "16:3",
+          "16:6",
+          "16:17",
+          "16:21",
+          "16:46",
+          "16:57",
+          "16:83",
+          "16:109",
+          "16:121",
+          "16:4"
+        ],
+        "word_count": 7
+      },
+      "17:109": {
+        "member_word_counts": [
+          5,
+          5,
+          6,
+          7,
+          7,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "members": [
+          "17:109",
+          "17:50",
+          "17:43",
+          "17:14",
+          "17:38",
+          "17:11",
+          "17:32",
+          "17:108",
+          "17:3",
+          "17:10",
+          "17:22"
+        ],
+        "word_count": 5
+      },
+      "19:58": {
+        "member_word_counts": [
+          29,
+          25,
+          18,
+          18,
+          16,
+          16,
+          15,
+          15,
+          14,
+          14,
+          14
+        ],
+        "members": [
+          "19:58",
+          "19:75",
+          "19:26",
+          "19:64",
+          "19:35",
+          "19:73",
+          "19:21",
+          "19:42",
+          "19:4",
+          "19:8",
+          "19:9"
+        ],
+        "word_count": 29
+      },
+      "22:18": {
+        "member_word_counts": [
+          37,
+          35,
+          44,
+          29,
+          28,
+          27,
+          27,
+          27,
+          25,
+          25,
+          24
+        ],
+        "members": [
+          "22:18",
+          "22:40",
+          "22:78",
+          "22:72",
+          "22:73",
+          "22:36",
+          "22:52",
+          "22:65",
+          "22:11",
+          "22:25",
+          "22:30"
+        ],
+        "word_count": 37
+      },
+      "22:77": {
+        "member_word_counts": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          12,
+          12,
+          10,
+          12,
+          10
+        ],
+        "members": [
+          "22:77",
+          "22:4",
+          "22:33",
+          "22:44",
+          "22:48",
+          "22:75",
+          "22:3",
+          "22:7",
+          "22:13",
+          "22:22",
+          "22:39"
+        ],
+        "word_count": 11
+      },
+      "25:60": {
+        "member_word_counts": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          12,
+          12,
+          14,
+          14
+        ],
+        "members": [
+          "25:60",
+          "25:15",
+          "25:37",
+          "25:48",
+          "25:58",
+          "25:62",
+          "25:74",
+          "25:6",
+          "25:54",
+          "25:55",
+          "25:57"
+        ],
+        "word_count": 13
+      },
+      "27:26": {
+        "member_word_counts": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          9,
+          7
+        ],
+        "members": [
+          "27:26",
+          "27:13",
+          "27:29",
+          "27:30",
+          "27:35",
+          "27:54",
+          "27:74",
+          "27:78",
+          "27:85",
+          "27:3",
+          "27:6"
+        ],
+        "word_count": 8
+      },
+      "32:15": {
+        "member_word_counts": [
+          15,
+          14,
+          14,
+          16,
+          16,
+          14,
+          14,
+          17,
+          13,
+          13,
+          17
+        ],
+        "members": [
+          "32:15",
+          "32:9",
+          "32:10",
+          "32:12",
+          "32:13",
+          "32:14",
+          "32:23",
+          "32:5",
+          "32:17",
+          "32:22",
+          "32:27"
+        ],
+        "word_count": 15
+      },
+      "38:24": {
+        "member_word_counts": [
+          32,
+          30,
+          23,
+          16,
+          15,
+          15,
+          15,
+          14,
+          14,
+          13,
+          12
+        ],
+        "members": [
+          "38:24",
+          "38:26",
+          "38:22",
+          "38:27",
+          "38:8",
+          "38:23",
+          "38:35",
+          "38:44",
+          "38:75",
+          "38:28",
+          "38:6"
+        ],
+        "word_count": 32
+      },
+      "41:38": {
+        "member_word_counts": [
+          12,
+          12,
+          12,
+          12,
+          11,
+          11,
+          13,
+          11,
+          11,
+          13,
+          11
+        ],
+        "members": [
+          "41:38",
+          "41:20",
+          "41:48",
+          "41:54",
+          "41:24",
+          "41:26",
+          "41:33",
+          "41:35",
+          "41:36",
+          "41:42",
+          "41:46"
+        ],
+        "word_count": 12
+      },
+      "53:62": {
+        "member_word_counts": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "members": [
+          "53:62",
+          "53:1",
+          "53:5",
+          "53:6",
+          "53:7",
+          "53:8",
+          "53:14",
+          "53:15",
+          "53:19",
+          "53:20",
+          "53:25"
+        ],
+        "word_count": 3
+      },
+      "7:206": {
+        "member_word_counts": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "members": [
+          "7:206",
+          "7:9",
+          "7:10",
+          "7:34",
+          "7:36",
+          "7:62",
+          "7:81",
+          "7:106",
+          "7:113",
+          "7:116",
+          "7:117"
+        ],
+        "word_count": 11
+      },
+      "84:21": {
+        "member_word_counts": [
+          6,
+          6,
+          6,
+          5,
+          5,
+          5,
+          4,
+          8,
+          4,
+          4,
+          4
+        ],
+        "members": [
+          "84:21",
+          "84:10",
+          "84:15",
+          "84:7",
+          "84:13",
+          "84:14",
+          "84:4",
+          "84:6",
+          "84:8",
+          "84:9",
+          "84:19"
+        ],
+        "word_count": 6
+      },
+      "96:19": {
+        "member_word_counts": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4,
+          4,
+          6,
+          3
+        ],
+        "members": [
+          "96:19",
+          "96:1",
+          "96:5",
+          "96:11",
+          "96:14",
+          "96:2",
+          "96:6",
+          "96:8",
+          "96:13",
+          "96:15",
+          "96:3"
+        ],
+        "word_count": 5
+      }
+    },
+    "seed": 20260519,
+    "sjd_exclusion": "sjd_excluded"
+  },
+  "sajdah_verse_word_counts": {
+    "13:15": 11,
+    "16:50": 7,
+    "17:109": 5,
+    "19:58": 29,
+    "22:18": 37,
+    "22:77": 11,
+    "25:60": 13,
+    "27:26": 8,
+    "32:15": 15,
+    "38:24": 32,
+    "41:38": 12,
+    "53:62": 3,
+    "7:206": 11,
+    "84:21": 6,
+    "96:19": 5
+  },
+  "sign_test_floor_2_pow_minus_15": 3.0517578125e-05,
+  "tests_in_family": 3,
+  "underpowered": "n = 15. This test is underpowered. A NULL is not evidence that the loci are unmarked; it is evidence that any marking is not large enough for 15 verses to reveal it under a surah- and length-matched null (prereg §6.1).",
+  "verdict": "NULL — primary F1 held direction but did not clear its gate"
+}

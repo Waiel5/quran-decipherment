@@ -1,0 +1,33 @@
+{
+  "command": "/opt/homebrew/opt/python@3.13/bin/python3.13 findings/phase-b-hypotheses/scripts/h-new-2950.py",
+  "created_utc": "2026-08-08T06:27:09.386376+00:00",
+  "expected_hashes_sha256": {
+    "prereg": "1495116ef07920d7753ed217a491f3b574e79ec3b6d94730cf75d39a7bc52847",
+    "qac": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "quran_no_tashkeel": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+  },
+  "git_commit": "3b26fd2d7316bd71aaab814877f3dee30f4cc6b7",
+  "git_status_porcelain": "?? findings/phase-b-hypotheses/prereg-h-new-2950-sajdah-loci.md\n?? findings/phase-b-hypotheses/runs/h-new-2950/\n?? findings/phase-b-hypotheses/scripts/h-new-2950.py",
+  "hashes_sha256": {
+    "prereg": "1495116ef07920d7753ed217a491f3b574e79ec3b6d94730cf75d39a7bc52847",
+    "qac": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "quran_no_tashkeel": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "script": "b522a81e0ccbd7afcab0a2bb0043d2b10517907787b8ee71662e90cf802b8694"
+  },
+  "id": "H-NEW-2950",
+  "inference_is_exact": "p-values are exact convolutions over the full product space; Monte Carlo is a correctness check only",
+  "input_paths_repo_relative": {
+    "prereg": "findings/phase-b-hypotheses/prereg-h-new-2950-sajdah-loci.md",
+    "qac": "data/morphology/quranic-corpus-morphology-0.4.txt",
+    "quran_no_tashkeel": "quran-text/quran-no-tashkeel.json",
+    "script": "findings/phase-b-hypotheses/scripts/h-new-2950.py"
+  },
+  "n_monte_carlo_cross_check": 200000,
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "run_directory": "findings/phase-b-hypotheses/runs/h-new-2950/20260808T062704Z",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  }
+}
