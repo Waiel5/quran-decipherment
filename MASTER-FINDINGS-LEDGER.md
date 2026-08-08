@@ -7204,3 +7204,52 @@ Rules minted this session and now standing: `findings/UNIT-DRIFT-DEFECT.md` (whe
 denominator drifts across the ordering, the measure is testing the drift) and
 `findings/ABSENCE-CLAIMS.md` (claims of absence are the least audited claims in any project,
 because nothing downstream fails when they are wrong — the work simply never happens).
+
+
+## §11.3 H-NEW-860.1, H-NEW-2920, H-NEW-2930 — the third defect class, and the screen turned inward
+
+**H-NEW-860.1 — a published ρ = +0.330 at p = 0.050 does not reproduce; it inverts.** H-NEW-860
+substituted a hand-built 0–10 "rough rubric" for a formal ḥadīth count, on the stated grounds
+that a database "is not on disk". **It was on disk, and had been since 2026-04-28** — 50,884
+records, nine books, per-chapter indices. Formal count gives **ρ = −0.2923, p = 0.0836**; all
+eighteen registered arms carry the opposite sign and none survives a length control. Verdict
+**UNDETERMINED**, not REVERSED — no primary cell clears the registered reverses gate either.
+Two diagnoses: **the rubric carried no discriminative information where it operated**, and the
+published anti-alignment was **two size-loaded variables meeting**. Deliverable that stands
+regardless: a formal per-verse reception weight for all 6,236 verses
+(`csv/h-new-860-1-reception-weights.csv`), an instrument this project had never built.
+
+**H-NEW-2920 + `findings/PROXY-CLAIMS.md` — the third defect class.** Census of every
+hand-assigned quantity: **2 CARRIES INFORMATION, 22 PARTIAL, 9 NOISE, 1 NOT-YET-TESTABLE**. Three
+tests pre-registered and run. **T1 (H-NEW-150's liturgical score) forced the distinction that
+matters:** the proxy tracks its formal counterpart at ρ = +0.43 to +0.50 — *not* noise — yet its
+**headline collapses to ρ = −0.056 to +0.027 under substitution.** A proxy can carry real
+information about what it represents and still not support the claim built on it; this project
+had been treating those as one question. **T2 (the Nöldeke rank): PARTIAL** — inter-rater
+ρ = +0.7714, 14/15 signs agree, but every axis shrinks and two cells fail. Chronological findings
+inherit that shrinkage.
+
+**THE COMPOUNDING — H-NEW-860 was all three defects at once, in causal order:** a **false absence
+claim** licensed a **hand-built proxy** which carried a **size-loaded correlation**. Each made the
+next reachable. You do not reach for an eyeballed score unless you believe the data is missing,
+and an eyeballed score is exactly the kind of thing that tracks unit size. Recorded as the closing
+clause of `PROXY-CLAIMS.md`: any hand-assigned quantity must be validated against a computed
+alternative, or state why none exists — **and that statement is itself an absence claim.**
+
+**H-NEW-2930 — the screen turned on the session's own surviving positive finding, and it trips.**
+The pausal Δ is a rate over adjacent verse-end pairs, compared across nine prose books whose mean
+unit lengths span 49.2–91.1 words. **Spearman ρ(unit length, Δ) = −0.6500** — shorter units,
+larger Δ — and this corpus's **13.21-word mean verse is 3.7× shorter than the shortest prose
+book**, sitting off the end of the axis that predicts the outcome. Extrapolating the nine-book fit
+to 13.21 words predicts **0.05154** against the observed **0.18690**: **residual 3.63×, not the
+5.3× reported.** The caveat is stated in both directions — the extrapolation reaches 0.86 full
+prose-ranges beyond the data on a nine-point linear fit, so 3.63× is itself unreliable. **What is
+firm: the published cross-corpus headline is inflated and must not be quoted.**
+**Untouched:** H-NEW-2880's within-corpus null (z = +15.03) permutes this corpus against itself
+with class count, sizes and concentration exactly fixed; no cross-corpus unit length enters it.
+
+**Provenance recorded with the finding:** a lane was dispatched to apply all three screens jointly,
+instructed to screen this family *harder than someone else's work*. It returned nothing — no
+finding, no run directory, no scratch files. The screen was run directly instead. **The check that
+cost this finding two thirds of its headline existed only because a delegation that produced
+nothing was followed up rather than assumed done.**
