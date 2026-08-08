@@ -15,6 +15,40 @@ rules_tuple: (no-tashkeel for verse text, orthographic-token, graphemes, basmala
 
 # Pre-registration — H-NEW-2620
 
+> # ⛔ THIS PRE-REGISTRATION WAS EDITED AFTER PUBLICATION — TWICE — AND ITS SHA LOCK IS BROKEN
+>
+> **`scripts/h-new-2620.py` can no longer run.** Its line 26 hard-codes
+> `EXPECTED_PREREG_SHA = 8826da50…bc63` and lines 114-116 abort on mismatch. This file now hashes
+> `7c7fc5fb…9736`.
+>
+> | commit | prereg SHA | state |
+> |:--|:--|:--|
+> | `b0cf8a09a` — publication | `8826da50…bc63` | ✅ matches the script |
+> | `b76ec401f` — 2026-08-07, the 702-file genre-control propagation | `b4a17e28…` | ❌ **broken here** |
+> | `81db39027` — 2026-08-08, the attribution-correction block | `7c7fc5fb…9736` | ❌ broken again |
+>
+> **Both edits were mine, and both were well-intentioned corrections.** The first swept this file
+> up in a bulk propagation across 702 files; the second added an attribution-correction block. Each
+> was *content*-correct and *procedurally* wrong.
+>
+> **A pre-registration is the one document in this project that must never be edited after its
+> run.** Its entire evidential value is that it is fixed before the data is seen — a SHA lock that
+> can be invalidated by a later correction is not a lock. **The correct place for every one of
+> those corrections was the FINDING file, which is exactly where such notices belong and where the
+> attribution block should have gone alone.**
+>
+> **The stale hash is still asserted as "runtime-verified"** at `h-new-2620-tafsir-contested.md:8`
+> and `:68`, `csv/h-new-2620.json:3`, and `MASTER-FINDINGS-LEDGER.md:6813`. Those assertions were
+> true when written and are false now. **H-NEW-2620's NULL verdict is unaffected** — the numbers
+> were computed under the original prereg, before either edit — but the run is no longer
+> reproducible without reverting this file to `b0cf8a09a`.
+>
+> **STANDING RULE, added to `findings/UNIT-DRIFT-DEFECT.md` §7's family: never edit a
+> pre-registration after its run, for any reason, including to correct an error in it. Corrections
+> go in the finding. If a pre-registration itself is wrong, that fact is a finding — record it, do
+> not repair it.**
+
+
 > ### ⛔ ATTRIBUTION CORRECTION 2026-08-08 — the "classical-only" sensitivity was never run
 >
 > **`ar-tafseer-tanwir-al-miqbas/` is Ibn ʿĀshūr's *al-Taḥrīr wa'l-Tanwīr* (d. 1393 AH / 1973 CE),
