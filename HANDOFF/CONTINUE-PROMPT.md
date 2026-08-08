@@ -227,3 +227,38 @@ Four failures were committed and self-reported in a single night. Do not repeat 
 ## The public-facing material needs rebuilding
 
 `EXECUTIVE-SUMMARY.html`, `THE-MAN-AT-THE-CENTER.html`, `Khawatim-al-Hashr.html` and `al-Rajul-fi-Qalb-al-Amr.html` are all dated **2026-04-12** — they predate every cross-finding law. The strongest results (muqaṭṭaʿāt p ≤ 10⁻¹², Q112 as corpus FR-centroid) are buried in a 1.2 MB ledger while the early, more obvious material is what is published. **Rebuild the public face around what has survived audit.** *(Correction 2026-08-07: this line previously headed that list with "mushaf order z = −11.46". That result does not survive the genre control — both baselines score more extreme — and has been removed from the list rather than left standing as a headline. See `findings/PILLAR-LAW-CORRECTION-2026-08-07.md`. The instruction to rebuild the public face around what survives audit is now more urgent, not less.)*
+
+## STANDING RULES added 2026-08-08 — enforcement, not prose
+
+Four rules moved from documents into code this week. **Prose degrades; a script that exits
+non-zero does not.**
+
+1. **Never edit a pre-registration after its run** — for any reason, including to correct an
+   error in it. Corrections go in the FINDING. If a pre-registration is itself wrong, that is a
+   finding to record, not a file to repair. **Run `scripts/verify-prereg-locks.sh` after any bulk
+   edit** — it hashes every prereg against its script's embedded literal. One 702-file
+   propagation broke **four** locks at once and it went unnoticed for a day.
+2. **A bulk operation that is correct file-by-file can still be categorically wrong.** Every one
+   of those 702 edits was an accurate correction. Four landed on documents whose value depends on
+   never being edited. Exclude the pre-registration class **by construction**, not by remembering.
+3. **Write-once run directories** — `open(path, 'x')`, `os.makedirs(..., exist_ok=False)`.
+   Checkpoint OUTSIDE the run directory. Never delete a run directory, including uncommitted or
+   superseded ones.
+4. **The death-date test** — before citing a classical source from a slug-named directory, verify
+   the author from the text's own internal citations. A commentary cannot quote someone who died
+   after its author. **A folder name is metadata, and metadata is not evidence.**
+
+## The three compounding defects — check for all three together
+
+`findings/UNIT-DRIFT-DEFECT.md`, `findings/ABSENCE-CLAIMS.md`, `findings/PROXY-CLAIMS.md`. They
+chain in a fixed causal order and H-NEW-860 was all three at once:
+
+> a **false absence claim** licensed a **hand-built proxy** which carried a **size-loaded
+> correlation**
+
+You do not reach for an eyeballed score unless you believe the data is missing, and an eyeballed
+score is exactly the kind of thing that tracks unit size. **When you find one, check for the
+other two in the same finding.**
+
+**And the distinction that cost a day to learn:** a proxy can genuinely track what it represents
+*and still not support the claim built on it*. Those are two separate questions.
