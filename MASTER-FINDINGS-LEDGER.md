@@ -7253,3 +7253,67 @@ instructed to screen this family *harder than someone else's work*. It returned 
 finding, no run directory, no scratch files. The screen was run directly instead. **The check that
 cost this finding two thirds of its headline existed only because a delegation that produced
 nothing was followed up rather than assumed done.**
+
+
+## §11.4 H-NEW-2940 — the inverse re-cut: unit length explains NONE of the pausal effect; the residual is a MEASURED 6.08×
+
+**The test was built to kill the finding, its kill condition was locked in writing before the
+run, and it went the other way.**
+
+`OPEN-H-NEW-2940-inverse-recut.md` committed in advance: *if re-cutting closes most of the gap,
+the cross-corpus magnitude claim is finished and withdrawn.*
+
+**Method — the H-NEW-2730 move, inverted, requiring no baseline text at all.** Merge this
+corpus's own adjacent verses into longer units and measure how far Δ moves toward the prose value.
+H-NEW-2730 killed the scansion result by re-cutting the Qurʾān to ḥadīth sentence lengths and
+watching its statistic travel **99.4%** of the way to ḥadīth's; the same instrument is turned
+here on the pausal claim.
+
+**Result: f = −0.0067 at a merged mean of 65.121 words.** Essentially zero, very slightly
+negative. **Merging this corpus's verses to mid-prose length does not move its Δ toward prose at
+all. Unit length does not drive the effect.**
+
+Reproduction gate passed first: Δ_native = **0.18686703691604045** (both H-NEW-2930 and the
+dispatching brief wrote this as 0.18690 — a rounding propagated from the parent, corrected here).
+
+**The residual is therefore a MEASURED 6.08× at matched unit length, in range.** It supersedes
+H-NEW-2930 §3's **extrapolated 3.63×**, which reached 0.86 prose-ranges beyond the data on a
+nine-point linear fit and was flagged unreliable in both directions when committed. It was
+unreliable — and it was too **low**.
+
+**The full sequence, all three figures mine:**
+
+| | figure | status |
+|:--|:--|:--|
+| published | 5.3× | wrong — inflated by unit length |
+| corrected (H-NEW-2930) | 3.63× | wrong the other way — extrapolated |
+| **measured (H-NEW-2940)** | **6.08×** | in range, no extrapolation — supersedes both |
+
+**Why the outcome matters less than its shape.** Three separate lanes died attempting this test —
+two on mid-response connection errors, one producing no artifacts — and the soft 3.63× could have
+stood indefinitely without anyone noticing. **A finding that survives a pre-committed kill
+condition occupies a different evidential position from one never given the chance to fail.** The
+`OPEN-` file recording it as unrun, with its decision rule locked, is what made the difference
+between a queued test and a forgotten one.
+
+H-NEW-2930 §3 superseded and marked. The OPEN file is closed. **H-NEW-2880's within-corpus null
+(z = +15.03, floor variance 0.00 across 160,000 draws) was never at stake** — no cross-corpus unit
+length enters it — and is untouched.
+
+## §11.5 The four broken pre-registration locks, and the rules that became code
+
+Commit `b76ec401f` — a 702-file propagation adding correction notices — **broke four SHA-256
+pre-registration locks at once** (H-NEW-2240, 2560, 2610, 2620), rendering all four scripts
+unrunnable. Unnoticed for a day across four subsequent commits; 2620's was broken a second time by
+a later correction. All restored byte-identically from `b76ec401f^` and verified.
+
+**Every one of those 702 edits was an accurate correction.** Four landed on documents whose entire
+value depends on never being edited.
+
+> **A bulk operation that is correct file-by-file can still be categorically wrong.**
+
+`scripts/verify-prereg-locks.sh` now hashes every pre-registration against its script's embedded
+literal and exits non-zero on mismatch. **Four rules moved from prose into enforcement this
+week** — write-once run directories (`open(path,'x')`), the death-date test for source
+attribution, the three-screen defect detector, and this. **Prose in a document degrades; a script
+that exits non-zero does not.**
