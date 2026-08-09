@@ -114,6 +114,37 @@ P = C(74,29) / C(114,29) = 3.063 × 10⁻⁷        (about 1 in 3,265,000)
 This is a **clean combinatorial fact with no model, no clustering, no parameter, and no chosen k**.
 It needs no permutation null because the null is exact.
 
+### 4.0 Threshold sensitivity — "40" was not a chosen number
+
+A result that holds at exactly one arbitrary cutoff is a chosen threshold, not a finding. So the
+cutoff was swept. `muq_in_bottom_k` is the number of the 29 falling among the *k* shortest surahs:
+
+| k | muqaṭṭaʿāt in the k shortest | exact P | odds |
+|--:|--:|--:|--:|
+| 20 | 0 | 1.460×10⁻³ | 1 in 684 |
+| 25 | 0 | 2.197×10⁻⁴ | 1 in 4,551 |
+| 30 | 0 | 2.891×10⁻⁵ | 1 in 34,588 |
+| 35 | 0 | 3.258×10⁻⁶ | 1 in 306,956 |
+| 40 | 0 | 3.063×10⁻⁷ | 1 in 3,265,129 |
+| 45 | 0 | 2.323×10⁻⁸ | 1 in 43,050,392 |
+| **50** | **0** | **1.360×10⁻⁹** | **1 in 735,283,455** |
+| 51 | 1 | — | claim fails here |
+
+**The claim holds continuously for every k from 1 to 50 and fails only at 51.** There is no
+threshold-shopping: 40 was *conservative*. The boundary is set by a single surah —
+
+> **Q 32 (al-Sajda), 30 verses, length-rank #64 of 114** — the shortest surah in the corpus that
+> opens with the disconnected letters.
+
+So the maximal honest form of the statement is:
+
+> **All 29 muqaṭṭaʿāt surahs fall within the 64 longest surahs of the Quran.**
+> Not one of them lies in the shorter 44% of the corpus.
+> Exact P = 1.360×10⁻⁹ — about **1 in 735 million**.
+
+This is the form that should be pre-registered, because it is threshold-free: it is a statement
+about where the *minimum* sits, and it quotes the surah that sets it.
+
 ### 4.1 Three honest limits on it
 
 1. **It is a length fact, not a content fact.** Saying so is precisely what makes it survivable.
