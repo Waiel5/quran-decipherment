@@ -48,9 +48,25 @@ K_SENSITIVITY = 10    # prereg §3 second tuple, m = 11
 K_SURAH = 7           # prereg §7.1 / §10 decision 6 — surah pools, m = 8
 
 # Prereg §7.3 — family = {C1,C2,C3} x {F1,F2}
+#
+# k STAYS AT 6. The 2026-08-09 direction stripped C1 of its verdict (see REPRODUCTION_TARGETS),
+# which would nominally shrink the family to 4. It is NOT shrunk. Reducing k raises alpha, and
+# loosening a correction after seeing the design is a ratification-level change, not a
+# self-verifying one: tightening self-verifies, loosening does not
+# (feedback_bonferroni_tightening_vs_loosening). k = 6 is therefore conservative and stands.
 TESTS_IN_FAMILY = 6
 ALPHA_BONFERRONI = 0.05 / TESTS_IN_FAMILY  # 0.008333...
 NOVELTY_GATE = 0.005                       # prereg §7.5
+
+# H-NEW-2950's published exact p-values, as stored rational strings in its own result.json.
+# C1 is checked against these for REPRODUCTION — it does not carry a verdict (see §1.1 of the
+# finding). A reproduction either matches or it does not; it cannot PASS or NULL.
+REPRODUCTION_TARGETS = {
+    ("C1_within_surah_K15", "F1_imperative"): "30506516276467/70368744177664",
+    ("C1_within_surah_K15", "F2_second_person"): "103430023058136545/288230376151711744",
+    ("C1_within_surah_K10", "F1_imperative"): "144511451267/285311670611",
+    ("C1_within_surah_K10", "F2_second_person"): "1602388022378716/4177248169415651",
+}
 
 POWER_TARGET = 0.80                        # prereg §6.2 / §10 decision 4
 
@@ -513,6 +529,32 @@ def match_quality(pools, size_of, labels):
     }
 
 
+def as_reproduction_check(arm, arm_key):
+    """Strip the verdict from a non-blind arm and replace it with a match/no-match check.
+
+    Directed 2026-08-09. H-NEW-2950's observed values were known before this pre-registration was
+    locked, so C1 is a reproduction, not a test. A reproduction either matches or it does not; it
+    cannot PASS or NULL, and it may not contribute to any verdict. The exact p is still computed
+    and reported — it is the thing being checked — but it carries no inferential weight here.
+    """
+    for feature, axis in arm["axes"].items():
+        target = REPRODUCTION_TARGETS[(arm_key, feature)]
+        axis["reproduction_check"] = {
+            "target_p_exact_fraction_h_new_2950": target,
+            "observed_p_exact_fraction": axis["p_exact_fraction"],
+            "MATCHES": axis["p_exact_fraction"] == target,
+        }
+        axis["verdict"] = (
+            "REPRODUCES H-NEW-2950 EXACTLY" if axis["reproduction_check"]["MATCHES"]
+            else "DIFFERS FROM H-NEW-2950 — INVESTIGATE BEFORE USING"
+        )
+        axis["carries_verdict"] = False
+        axis.pop("PASS", None)
+        axis.pop("passes_novelty_gate", None)
+    arm["role"] = "REPRODUCTION CHECK — non-blind, carries no verdict, excluded from the family gate"
+    return arm
+
+
 def run_arm(name, pools, units, feature_tables, size_of, seed, monte_carlo, with_power):
     axes = {}
     for feature in FEATURES:
@@ -551,6 +593,27 @@ def headline_verdict(c1, c2, c3):
         return "CONFOUND-EXPLAINED"
     else:
         return "NULL"
+
+
+def headline_verdict_directed(c2, c3):
+    """POST-REGISTRATION, directed 2026-08-09. NOT the pre-registered rule.
+
+    The registered rule above still runs and is still reported; this does not replace it. This
+    variant drops C1 entirely because it is non-blind (see as_reproduction_check), leaving only
+    the two prospective arms.
+
+    Consequence, stated plainly: C2 and C3 are both CONFOUND-DIAGNOSTIC arms whose passes are
+    locked by prereg §7.4 as evidence AGAINST F-8, never for it. So under this variant there is
+    no route to a PASS for F-8 by construction -- the inferential half becomes purely a confound
+    test, and the power computation is the only component that speaks to F-8 itself.
+    """
+    def P(arm, axis):
+        return arm["axes"][axis]["PASS"]
+
+    if (P(c2, "F1_imperative") or P(c2, "F2_second_person")
+            or P(c3, "F1_imperative") or P(c3, "F2_second_person")):
+        return "CONFOUND-EXPLAINED"
+    return "NULL"
 
 
 # --------------------------------------------------------------------------------------
@@ -609,6 +672,35 @@ def self_check():
     assert headline_verdict(dead, arm(True, False), dead) == "CONFOUND-EXPLAINED"
     assert headline_verdict(dead, dead, arm(False, True)) == "CONFOUND-EXPLAINED"
     assert headline_verdict(dead, dead, dead) == "NULL"
+
+    # directed variant: C1 is not consulted at all, so a C1 pass cannot produce SUPPORTED
+    assert headline_verdict_directed(dead, dead) == "NULL"
+    assert headline_verdict_directed(arm(True, False), dead) == "CONFOUND-EXPLAINED"
+    assert headline_verdict_directed(dead, arm(False, True)) == "CONFOUND-EXPLAINED"
+    # and the two rules agree whenever C1 does not pass -- the invariance the finding relies on
+    for c2 in (dead, arm(True, False)):
+        for c3 in (dead, arm(False, True)):
+            assert headline_verdict(dead, c2, c3) == headline_verdict_directed(c2, c3)
+
+    # as_reproduction_check strips the verdict fields and grades match/no-match
+    probe = {"axes": {"F1_imperative": {"p_exact_fraction": "1/2", "PASS": True,
+                                        "passes_novelty_gate": True, "verdict": "PASS-DIRECTED"}}}
+    saved = REPRODUCTION_TARGETS.get(("__probe__", "F1_imperative"))
+    REPRODUCTION_TARGETS[("__probe__", "F1_imperative")] = "1/2"
+    as_reproduction_check(probe, "__probe__")
+    assert "PASS" not in probe["axes"]["F1_imperative"]
+    assert probe["axes"]["F1_imperative"]["reproduction_check"]["MATCHES"] is True
+    assert probe["axes"]["F1_imperative"]["carries_verdict"] is False
+    probe2 = {"axes": {"F1_imperative": {"p_exact_fraction": "3/4", "PASS": False,
+                                         "passes_novelty_gate": False, "verdict": "NULL"}}}
+    as_reproduction_check(probe2, "__probe__")
+    assert probe2["axes"]["F1_imperative"]["reproduction_check"]["MATCHES"] is False
+    assert "DIFFERS" in probe2["axes"]["F1_imperative"]["verdict"]
+    if saved is None:
+        del REPRODUCTION_TARGETS[("__probe__", "F1_imperative")]
+
+    # k must not have been shrunk by the C1 change
+    assert TESTS_IN_FAMILY == 6 and abs(ALPHA_BONFERRONI - 0.05 / 6) < 1e-15
     print("self-check OK")
 
 
@@ -704,10 +796,26 @@ def main():
         axis["passes_novelty_gate"] = False
         axis["verdict"] = "DIAGNOSTIC - NOT GATED, CANNOT SUPPORT A PASS (prereg §3)"
 
-    headline = headline_verdict(
+    # ORDER MATTERS. The registered rule of prereg §7.4 reads C1's PASS field, and
+    # as_reproduction_check removes it. Evaluate the registered rule FIRST so the locked verdict
+    # is computed exactly as pre-registered, then strip C1 for the directed re-analysis.
+    headline_registered = headline_verdict(
         arms["C1_within_surah_K15"], arms["C2_corpus_wide_K15"], arms["C3_surah_level_K7"]
     )
     primary_power = arms["C1_within_surah_K15"]["axes"]["F1_imperative"]
+
+    headline_directed = headline_verdict_directed(
+        arms["C2_corpus_wide_K15"], arms["C3_surah_level_K7"]
+    )
+    for arm_key in ("C1_within_surah_K15", "C1_within_surah_K10"):
+        as_reproduction_check(arms[arm_key], arm_key)
+
+    reproductions = {
+        f"{arm_key}.{feature}": arms[arm_key]["axes"][feature]["reproduction_check"]
+        for arm_key in ("C1_within_surah_K15", "C1_within_surah_K10")
+        for feature in FEATURES
+    }
+    all_reproduce = all(r["MATCHES"] for r in reproductions.values())
 
     result = {
         "id": "H-NEW-3030",
@@ -721,9 +829,41 @@ def main():
         "census_deliverable_A": census,
         "arms_deliverable_C": arms,
         "diagnostic_arm_not_gated": diagnostic,
-        "headline_verdict": headline,
+        "headline_verdict": headline_registered,
+        "headline_verdict_source": "the PRE-REGISTERED rule, prereg §7.4, computed before C1 was stripped",
+        "headline_verdict_directed_posthoc": headline_directed,
+        "headline_verdict_directed_note": (
+            "POST-REGISTRATION variant directed 2026-08-09, dropping the non-blind C1 arm. Reported "
+            "alongside the registered verdict, not in place of it. It is safe to report precisely "
+            "because it is VERDICT-INVARIANT here: both rules return the same label, so the change "
+            "cannot have bought or cost a result."
+        ),
+        "headline_verdict_invariant_under_directed_change": headline_registered == headline_directed,
+        "c1_reproduction_checks": reproductions,
+        "c1_reproduces_h_new_2950_on_all_four_cells": all_reproduce,
         "power_verdict_deliverable_B": primary_power["power_verdict"],
         "power_verdict_detail": primary_power["power_verdict_detail"],
+        "untestable_at_this_n_branch": {
+            "definition": (
+                "UNTESTABLE-AT-THIS-N would hold if S* exceeded the attainable ceiling S_max, i.e. "
+                "no configuration of the corpus could reject at alpha. That is a strictly different "
+                "claim from NULL: NULL invites 'no signal exists', untestability says 'this "
+                "instrument could not have seen one'. See findings/ABSENCE-CLAIMS.md."
+            ),
+            "S_star": primary_power["power"]["S_star_critical_value"],
+            "S_max_attainable_ceiling": primary_power["power"]["attainable_ceiling_S_max"],
+            "branch_fired": not primary_power["power"]["design_can_ever_reject"],
+            "verdict": (
+                "DID NOT FIRE — S_max (26) exceeds S* (12), so the design CAN reject in principle. "
+                "It is not untestable; it is severely underpowered, requiring a 3.25x effect. That "
+                "is the honest position between 'untestable' and 'adequately powered'."
+            ),
+        },
+        "reusable_floor_note": (
+            "S*, S_max and the B1 quantile power curve are properties of the POOLS, not of the "
+            "observation. Any future n=15-scale matched-pool test in this project can read its "
+            "detectability floor straight off B1_quantile_power_curve without re-deriving it."
+        ),
         "h_new_2950_published_p": {
             "F1_imperative_K15": 0.4335, "F2_second_person_K15": 0.3588,
             "F1_imperative_K10": 0.5065, "F2_second_person_K10": 0.3836,
@@ -768,7 +908,11 @@ def main():
         "run_dir": str(run_dir.relative_to(repo_root)),
         "census_n_loci": census["n_verses"],
         "census_matches_2950": census["matches_h_new_2950_locus_set"],
-        "headline_verdict": headline,
+        "headline_verdict_registered": headline_registered,
+        "headline_verdict_directed": headline_directed,
+        "verdict_invariant": headline_registered == headline_directed,
+        "c1_reproduces_all_four_cells": all_reproduce,
+        "untestable_branch_fired": not primary_power["power"]["design_can_ever_reject"],
         "power_verdict": primary_power["power_verdict"],
         "S_star": primary_power["power"]["S_star_critical_value"],
         "observed": primary_power["observed_sum"],

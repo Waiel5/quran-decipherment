@@ -9,12 +9,19 @@ prereg_sha256: 712a98af0126158bd6a283790aeea8778cacd0049ff6573dee090df88d293009
 script_path: findings/phase-b-hypotheses/scripts/h-new-3030.py
 posthoc_script_path: findings/phase-b-hypotheses/scripts/h-new-3030-posthoc.py
 run_dir: findings/phase-b-hypotheses/runs/h-new-3030/20260809T065545Z
+run_dir_2_directed_reanalysis: findings/phase-b-hypotheses/runs/h-new-3030/20260809T070603Z
 posthoc_run_dir: findings/phase-b-hypotheses/runs/h-new-3030-posthoc/20260809T065803Z
 prior_work: [H-NEW-2950, H-NEW-1330, H-NEW-1331, H-NEW-1510]
 method_parents: [findings/TIED-OUTCOME-DEFECT.md, findings/ABSENCE-CLAIMS.md, findings/PROXY-CLAIMS.md, findings/UNIT-DRIFT-DEFECT.md]
-replicates: H-NEW-2950 (exactly — identical rational p-values)
+replicates: H-NEW-2950 (exactly — identical rational p-values on all four cells)
+corrects: [briefing framing of the 14-vs-15 dispute (§2.3), H-NEW-2270 nawʿ citation (§2.4)]
 flags: [SELF-REPORTED-DESIGN-DEFECT — the registered C2 arm is invalid; see §5]
 ---
+
+> **Two run directories, both retained.** `20260809T065545Z` is the pre-registered run.
+> `20260809T070603Z` re-runs it after a directed change that stripped the non-blind C1 arm of its
+> verdict (§4.1). **Both rules return NULL** — the change is verdict-invariant, which is why it can
+> be reported at all. Neither directory was deleted or edited.
 
 # H-NEW-3030 — the power F-8 actually had
 
@@ -146,14 +153,76 @@ Per `ABSENCE-CLAIMS.md` §4, the search is stated rather than described. File:
 nawʿ 35, V01 p. 380.** Verified by me on disk; not taken from H-NEW-2950, which reports the same
 locus and is correct.
 
-> **The brief's framing — "Ḥanafī 14 vs Shāfiʿī 15, contested Q 38:24 and Q 22:77" — is not what
-> the on-disk Arabic says.** The muṣḥaf's 15 is neither school's legal count but their **union**:
-> every place prostration is performed, whether *ʿazīma* or merely *mustaḥabba*. Ṣād is the
-> fifteenth glyph precisely because al-Suyūṭī still holds prostration there to be recommended.
-> **The glyph marks the act, not the ruling's strength.**
-
 I did **not** verify a Ḥanafī primary text on disk and do not assert one exists. The union reading
 rests on al-Suyūṭī plus the glyph, both verified.
+
+### 2.3 CORRECTION TO THE BRIEFING — the framing that dispatched this work is wrong
+
+**This is recorded as a correction of record, not a footnote.** The briefing that commissioned
+H-NEW-3030, and `HANDOFF/FRONTIER-MAP-2026-08-07.md:238` before it, framed the dispute as:
+
+> *"The 14 vs 15 sajdah dispute (Ḥanafī vs Shāfiʿī counts; Q 38:24 and Q 22:77)."*
+
+**That is the textbook summary. It is not what the on-disk Arabic says**, and the *Itqān* passage
+at nawʿ 35 supersedes it on three specific points:
+
+| the framing says | al-Suyūṭī actually writes |
+|:--|:--|
+| the Shāfiʿī count is **15** | al-Suyūṭī, **a Shāfiʿī**, gives **fourteen** |
+| Q 22:77 is **contested** | it is **in** — he says *wa-fī l-Ḥajji sajdatān*, two prostrations in al-Ḥajj |
+| Q 38:24 is **contested between schools** | he **excludes** it from the *ʿazāʾim* while still holding prostration there *mustaḥabba* — a distinction of **degree**, not a dispute over membership |
+
+> **The muṣḥaf's 15 is neither school's legal count. It is their union** — every place prostration
+> is performed, whether *ʿazīma* or merely *mustaḥabba*. Ṣād is the fifteenth glyph precisely
+> because al-Suyūṭī still holds prostration there to be recommended. **The glyph marks the act,
+> not the ruling's strength.** And the set has a verified upper boundary: al-Suyūṭī records a
+> sixteenth candidate (end of al-Ḥijr, **Q 15:98**, from Ibn al-Faras) which **carries no glyph in
+> any variant on disk**.
+
+**The citation of record is: al-Suyūṭī, *al-Itqān fī ʿulūm al-Qurʾān*, nawʿ 35
+(*fī ādāb tilāwatihi wa-tālīhi*), V01 p. 380.** It supersedes the Ḥanafī/Shāfiʿī framing wherever
+that framing appears.
+
+### 2.4 Where the framing propagated — and a wrong-nawʿ citation found on the way
+
+Repo-wide grep over `findings/`, `surahs/`, `HANDOFF/` and the root docs. **Pre-registrations are
+listed but MUST NOT be edited** — they are immutable even when wrong, and a prereg citing a
+since-corrected claim is not an error to repair (`UNIT-DRIFT-DEFECT.md` §9.1). Correcting a prereg
+would destroy the very thing that makes it evidence.
+
+| file | what it says | class |
+|:--|:--|:--|
+| **`HANDOFF/FRONTIER-MAP-2026-08-07.md:238`** | *"Ḥanafī vs Shāfiʿī counts; Q 38:24 and Q 22:77"* | **editable — the source that propagated into the brief** |
+| `surahs/Q041-fussilat/03-tafsir-survey.md:92` | *"minor count (14 vs 15)"* | editable, vague rather than wrong |
+| `surahs/Q032-al-sajda/Q032-F-06-…-prereg.md:88` | *"14 vs 15 vs Shafi'i 14+1"* | **PREREG — do not edit** |
+| `findings/…/prereg-h-new-1510-…md:98` | *"Classical-Sunnī 14 … + Q 22:77 (widely held in Shāfiʿī school) = 15"* | **PREREG — do not edit** |
+| `findings/…/prereg-h-new-2270-…md:74` | *"Shāfiʿī count, Itqān **nawʿ 19**"* | **PREREG — do not edit** |
+| **`findings/…/h-new-2270-itqan-distributional-audit.md:90`** | *"Sajda verse-list (14, Shāfiʿī): al-Itqān **nawʿ 19**, lines 6783-6786"* | **editable — and wrong on the nawʿ** |
+
+**The wrong-nawʿ citation is a separate error and worth more than the framing one.** H-NEW-2270
+cites **the same lines I verified** — 6783-6786 — but attributes them to **nawʿ 19**. Verified
+against the file's own headers:
+
+| | |
+|:--|:--|
+| **nawʿ 19** = `في عدد سوره وآياته وكلماته وحروفه` (*on the number of its surahs, verses, words and letters*) | lines **4022-4372** |
+| **nawʿ 35** = `في آداب تلاوته وتاليه` (*on the etiquette of its recitation and its reciter*) | lines **6386-6982** |
+
+**Line 6783 lies inside nawʿ 35, sixteen nawʿ away from the one cited.** The error is
+understandable — nawʿ 19 is the *counting* nawʿ, exactly where a reader would expect a sajdah
+tally to live — but it is not there.
+
+**Two independent citation errors now attach to this one passage**: H-NEW-1510 cites a nawʿ that
+does not exist (caught by H-NEW-2950 §3.1a), and H-NEW-2270 cites nawʿ 19 (caught here, and
+**missed** by H-NEW-2950's audit). **A passage that three findings have cited and two have cited
+wrongly is a signal about citation practice, not about this passage.** The line numbers travelled
+correctly every time; only the human-readable locus drifted. Line offsets are checkable
+mechanically and nawʿ numbers are not, which is precisely why the unchecked field is the one that
+rots.
+
+**I have edited none of these files.** They belong to other lanes; the list is reported for the
+ledger keeper, per `ABSENCE-CLAIMS.md` §4 (*a correction that lands only in the child finding does
+not stop the parent from being inherited again*).
 
 ---
 
@@ -240,34 +309,62 @@ mostly empty.
 
 ## 4. Deliverable C — the arms, and an exact replication
 
-| arm | axis | observed | null E | **p (exact, raw)** | p Bonf. | direction | verdict |
+**Only C2 and C3 carry verdicts.** C1 is non-blind and was stripped of its verdict (§4.1).
+
+| arm | axis | observed | null E | **p (exact, raw)** | p Bonf. | direction | status |
 |:--|:--|--:|--:|--:|--:|:-:|:--|
-| **C1 within-surah, K=15** (replication) | **F1 imperative** | 5 | 4.375 | **0.4335** | 1.000 | as locked | **NULL** |
-| C1 within-surah, K=15 | F2 second-person | 23 | 20.375 | **0.3588** | 1.000 | as locked | NULL |
-| C1 within-surah, K=10 | F1 imperative | 5 | 4.818 | 0.5065 | 1.000 | as locked | NULL |
-| C1 within-surah, K=10 | F2 second-person | 23 | 20.818 | 0.3836 | 1.000 | as locked | NULL |
-| **C2 corpus-wide, K=15** | F1 imperative | 5 | 7.062 | 0.8041 | 1.000 | **reversed** | **NULL — see §5, arm invalid** |
-| C2 corpus-wide, K=15 | F2 second-person | 23 | 43.188 | 0.9744 | 1.000 | **reversed** | **NULL — see §5, arm invalid** |
+| **C1 within-surah, K=15** | F1 imperative | 5 | 4.375 | 0.4335 | — | as locked | **reproduction check — MATCHES** |
+| C1 within-surah, K=15 | F2 second-person | 23 | 20.375 | 0.3588 | — | as locked | reproduction check — **MATCHES** |
+| C1 within-surah, K=10 | F1 imperative | 5 | 4.818 | 0.5065 | — | as locked | reproduction check — **MATCHES** |
+| C1 within-surah, K=10 | F2 second-person | 23 | 20.818 | 0.3836 | — | as locked | reproduction check — **MATCHES** |
+| **C2 corpus-wide, K=15** | F1 imperative | 5 | 7.062 | 0.8041 | 1.000 | **reversed** | **NULL — and arm invalid, §5** |
+| C2 corpus-wide, K=15 | F2 second-person | 23 | 43.188 | 0.9744 | 1.000 | **reversed** | **NULL — and arm invalid, §5** |
 | **C3 surah-level, K=7** | **F1 imperative** | 340 | 306.500 | **0.1505** | 0.903 | as locked | **NULL** |
 | C3 surah-level, K=7 | F2 second-person | 1,884 | 1,935.500 | 0.6083 | 1.000 | reversed | NULL |
 
-**Headline verdict, by the locked rule of prereg §7.4: NULL.** No arm passed; the primary held its
-locked direction; nothing triggered CONFOUND-EXPLAINED.
+**Headline verdict: NULL, under both rules.** The pre-registered rule of prereg §7.4 returns NULL;
+so does the directed variant that drops C1 entirely. **The change is verdict-invariant**, which is
+the only condition under which a post-registration change to a decision rule can be reported
+without contaminating it — it cannot have bought or cost a result.
 
-### 4.1 The replication is exact, not approximate
+**Bonferroni stayed at k = 6.** Stripping C1 of its verdict would nominally shrink the family to
+4 and raise α from 0.00833 to 0.0125. **It was not shrunk.** Tightening a correction
+self-verifies; loosening one after seeing the design is a ratification-level change
+(`feedback_bonferroni_tightening_vs_loosening`). k = 6 is conservative here and stands, and the
+script asserts it (`self_check`).
 
-C1 reproduces H-NEW-2950 **as identical rational numbers**, not merely to published decimals:
+### 4.1 C1 is a reproduction check, not a test — and it reproduces exactly
 
-| arm | H-NEW-2950 p (exact fraction) | H-NEW-3030 | identical? |
-|:--|:--|:--|:-:|
-| F1, K=15 | 0.433523670672 | 0.433523670672 | **yes** |
-| F2, K=15 | 0.358844978240 | 0.358844978240 | **yes** |
-| F1, K=10 | 0.506503820743 | 0.506503820743 | **yes** |
-| F2, K=10 | 0.383598952562 | 0.383598952562 | **yes** |
+**C1 carries no verdict and is excluded from the family gate.** H-NEW-2950's observed values were
+known to me before this pre-registration was locked (§1.1), so C1 is a reproduction, and **a
+reproduction either matches or it does not — it cannot PASS or NULL.** The exact p is still
+computed and reported, because the p *is* the thing being checked; it simply carries no
+inferential weight.
 
-Verified by comparing the stored `p_exact_fraction` strings in both run directories' `result.json`.
-**H-NEW-2950's arithmetic is sound.** Its instrument was reused deliberately: a replication that
-changes the instrument is not a replication, and any divergence would have been uninterpretable.
+**All four cells reproduce as identical rational numbers**, not merely to published decimals —
+compared as stored `p_exact_fraction` strings across the two run directories:
+
+| cell | H-NEW-2950 exact fraction | H-NEW-3030 | identical? |
+|:--|:--|:-:|:-:|
+| F1, K=15 | `30506516276467/70368744177664` | same | **yes** |
+| F2, K=15 | `103430023058136545/288230376151711744` | same | **yes** |
+| F1, K=10 | `144511451267/285311670611` | same | **yes** |
+| F2, K=10 | `1602388022378716/4177248169415651` | same | **yes** |
+
+**H-NEW-2950's arithmetic is sound.** Its instrument was reused deliberately: a reproduction that
+changes the instrument is not a reproduction, and any divergence would have been uninterpretable —
+instrument difference, or effect?
+
+**What C1 is actually for, now that it carries no verdict:** it authenticates the pools. The whole
+power computation (§3) is a function of those pools, so a bit-exact reproduction of the p-values
+they generate is the evidence that the MDE below describes H-NEW-2950's real design and not a
+near-miss rebuild of it.
+
+**One consequence must be stated plainly.** With C1 out, the only verdict-bearing arms are C2 and
+C3 — and both are *confound-diagnostic* arms whose passes are locked as evidence **against** F-8,
+never for it. **So the inferential half of this finding has no route to a PASS for F-8 by
+construction.** That is the correct design given the non-blindness, but it means the power
+computation is the only component here that speaks to F-8 itself.
 
 ### 4.2 C3 — the named confound is cleared, and this is the strong kind of NULL
 

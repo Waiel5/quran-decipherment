@@ -157,8 +157,6 @@ things remain genuinely untested, and they are what H-NEW-3050 governs:
 
 Only those are blind. The observation itself is not.
 
-## 4.0 (retained) What the sweep showed
-
 Strip the taxonomy claim and one fact remains, stated as what it actually is:
 
 > **No muqaṭṭaʿāt surah is short.**
@@ -173,7 +171,7 @@ P = C(74,29) / C(114,29) = 3.063 × 10⁻⁷        (about 1 in 3,265,000)
 This is a **clean combinatorial fact with no model, no clustering, no parameter, and no chosen k**.
 It needs no permutation null because the null is exact.
 
-### 4.0 Threshold sensitivity — "40" was not a chosen number
+### 4.0 The sweep itself — retained; see §4.-1 for how it must be stated
 
 A result that holds at exactly one arbitrary cutoff is a chosen threshold, not a finding. So the
 cutoff was swept. `muq_in_bottom_k` is the number of the 29 falling among the *k* shortest surahs:
