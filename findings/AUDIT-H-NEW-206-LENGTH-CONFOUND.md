@@ -98,7 +98,66 @@ compared to a fixed cutoff with **no multiplicity accounting** is not a 0.025-le
 
 ---
 
-## 4. What survives — and it is worth keeping
+## 4. What survives — and it is NOT new
+
+> **CORRECTION, 2026-08-09, entered same day.** §4 as first written presented the surviving
+> observation as though it were new to this project. **It is not. It is H-NEW-46 cell 4**,
+> pre-registered 2026-04-16 and published STRONG-PASS 4/4:
+>
+> | Cell | Statistic | Observed | Null mean | p |
+> |:--|:--|--:|--:|--:|
+> | 4 | Bottom-29 shortest count (one-sided lower) | **0/29** | 7.37 | 3.0×10⁻⁵ |
+>
+> Same corpus, same label set, same direction. It differs only in the threshold (29 vs 40) and
+> the null (10⁵ permutations vs exact combinatorics). H-NEW-46's own pre-registration records
+> that cell 4 was *designed* as the dual of its top-K cell — not eyeballed after the fact.
+>
+> It is also load-bearing, not merely un-retracted: `UNIT-DRIFT-DEFECT.md` cites it as
+> established project fact and names the muqaṭṭaʿāt split *"the trap to watch"*, and
+> `H-NEW-570-REVERSAL-2026-08-07.md` §57–59 — dated **two days before this file** — rests an
+> impossibility argument on it directly.
+>
+> **This was a re-derivation published as a survival.** The error was mine: I audited H-NEW-206
+> without first checking whether the residual fact was already held elsewhere in the ledger. The
+> lesson is narrow and worth stating — *an audit that isolates a surviving fact must search for
+> that fact before publishing it, exactly as a new finding would have to.* Demoting one finding
+> does not license treating its residue as unclaimed ground.
+
+### 4.-1 The threshold sweep in §4.0 was right about the number and wrong about the reason
+
+§4.0 below reports the sweep and calls k=50 *"the maximal honest statement."* The number
+(P = 1.360×10⁻⁹) is correct. **The justification is not.** A cutoff chosen because it is where the
+zeros stop is a **maximally-selected** statistic, and its nominal p-value does not account for the
+selection. Sweeping the threshold answers the threshold-shopping objection; it does not license
+quoting the extreme of the sweep as though it were a fixed test.
+
+The clean instrument, pre-registered in `prereg-h-new-3050-muqattaat-length-floor.md` §3, removes
+the freedom entirely:
+
+> **Statistic: `R_min`** — the length-rank of the *shortest* muqaṭṭaʿāt surah, ranking ascending
+> so rank 1 is the shortest. Observed **R_min = 51** (Q 32, al-Sajda, 30 verses).
+> `P(R_min ≥ 51) = C(64,29)/C(114,29) = 1.360×10⁻⁹`.
+
+Numerically identical, because *"the largest k with zero in the bottom k"* **is** `R_min − 1`. But
+`R_min` is defined before the data are seen and its observed value *determines* its own tail, so
+`P(R_min ≥ r)` is an ordinary exact one-sided p-value with nothing to correct for. The right way to
+state a maximum is as a statistic, never as a chosen cutoff that happens to sit at one.
+
+### 4.-2 What is actually open
+
+H-NEW-46 used the rules-tuple `(no-tashkeel, ḥafṣ-kūfan, **verse-count metric**)` — verse count
+only. Per prereg-3050 §6.2, **verse count is not the classical measure of surah length.** So three
+things remain genuinely untested, and they are what H-NEW-3050 governs:
+
+1. **Metric robustness** — does the effect survive word-count and character-count metrics? (Word
+   count, M2, is already partly covered by H-NEW-570-REVERSAL's log-word-count quintiles; M3 is
+   untouched.)
+2. **The threshold-free statistic** — `R_min`, above.
+3. **A control battery that has never been run.**
+
+Only those are blind. The observation itself is not.
+
+## 4.0 (retained) What the sweep showed
 
 Strip the taxonomy claim and one fact remains, stated as what it actually is:
 
