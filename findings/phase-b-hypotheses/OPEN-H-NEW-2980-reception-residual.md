@@ -1,10 +1,12 @@
 ---
 id: OPEN-H-NEW-2980
 title: "OPEN QUESTION — the reception-weight residual rosters, unrun after a connection failure"
-status: "PARTIAL — concentration census delivered; the two rosters are ILL-POSED as briefed (no per-verse structural instrument exists) and are not runnable without one"
+status: "PARTIAL — concentration census delivered; the two rosters were ILL-POSED for want of a per-verse structural instrument, which H-NEW-2990 built on 2026-08-09. THE ROSTERS THEMSELVES REMAIN UNRUN."
 date: 2026-08-08
+updated: 2026-08-09
 author: Waiel Al-Shujaa
 instrument_ready: findings/phase-b-hypotheses/csv/h-new-860-1-reception-weights.csv
+structural_instrument: findings/phase-b-hypotheses/csv/h-new-2990-verse-profile.csv
 ---
 
 # OPEN — the reception-residual rosters have NOT been produced
@@ -125,6 +127,29 @@ properties, and the resulting residual against a genuinely per-verse reception c
 
 A corpus-wide **per-verse** structural instrument, which does not exist here. Building one is a
 separate registered piece of work, not a preliminary step to be improvised inside this test.
+
+> #### ✅ BUILT — 2026-08-09, as H-NEW-2990
+>
+> **`findings/phase-b-hypotheses/csv/h-new-2990-verse-profile.csv` — 6,236 rows × 33 columns**,
+> every column a function of the verse's own segments and its own text, with each column's
+> Spearman ρ against verse length published alongside it in
+> `csv/h-new-2990-column-declarations.csv`. It joins to
+> `csv/h-new-860-1-reception-weights.csv` on `(surah, verse)` at the **same unit**, so the
+> unit mismatch that made these rosters ill-posed no longer applies.
+>
+> Finding: `findings/phase-b-hypotheses/h-new-2990-verse-profile.md`.
+>
+> **The rosters remain unrun**, and three conditions from that finding's §8 bind whoever runs
+> them:
+>
+> 1. **Rank statistics only on the reception side** — unchanged by the new instrument.
+> 2. **Name the column, or name the composite's four members.** *"Structurally extreme"* is
+>    still not a quantity; `frac_hapax_root_tokens` and `mean_root_surprisal_bits` are.
+> 3. **Stratify on `n_words`.** No column is length-free, and the cleanest one by ρ (+0.0105)
+>    still has an **8.2× drift in its conditional mean** across the length deciles.
+>
+> Two columns are labelled **LENGTH-DOMINATED** and must not be used as structure:
+> `sum_root_surprisal_bits` (ρ = +0.9411) and `n_root_types` (ρ = +0.9508).
 
 ### What this does NOT retract
 

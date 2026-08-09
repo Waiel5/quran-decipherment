@@ -1,0 +1,55 @@
+{
+  "deterministic": true,
+  "git_commit": "9561fbbc1794d2baeffe4d7403c86687d72b9598",
+  "git_status_porcelain": "?? findings/phase-b-hypotheses/csv/h-new-2990-column-declarations.csv\n?? findings/phase-b-hypotheses/csv/h-new-2990-verse-profile.csv\n?? findings/phase-b-hypotheses/prereg-h-new-2990-verse-profile.md\n?? findings/phase-b-hypotheses/runs/h-new-2990/\n?? findings/phase-b-hypotheses/scripts/h-new-2990.py",
+  "hypothesis": "H-NEW-2990",
+  "inputs": [
+    {
+      "path": "data/morphology/quranic-corpus-morphology-0.4.txt",
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/hapaxes-full-list.csv",
+      "sha256": "50d77bd3f82792c739e57c47fbc39d3c67054c77c5a8026bfd08a9e4a27dcb2d"
+    },
+    {
+      "path": "quran-text/quran-full-tashkeel.json",
+      "sha256": "382a7341300602ec8b366316d4bbe2a44955c2bf984d395bdd82dae6110b6715"
+    }
+  ],
+  "numpy": "2.3.1",
+  "outputs": [
+    {
+      "path": "findings/phase-b-hypotheses/runs/h-new-2990/20260808T225517Z/verse-profile.csv",
+      "role": "instrument, pre-composite, write-once"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/runs/h-new-2990/20260808T225517Z/verse-profile-final.csv",
+      "role": "instrument, final"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/runs/h-new-2990/20260808T225517Z/column-declarations.csv",
+      "role": "column declarations"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-2990-verse-profile.csv",
+      "role": "published deliverable (outside the run directory; replaceable)"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-2990-column-declarations.csv",
+      "role": "published declarations (outside the run directory; replaceable)"
+    }
+  ],
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-2990-verse-profile.md",
+  "prereg_sha256": "7a155da65a96eed918d2debf8f324df5b3e225d0ed8b4c8adde1ef70afe510ee",
+  "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "run_directory": "findings/phase-b-hypotheses/runs/h-new-2990/20260808T225517Z",
+  "run_id": "20260808T225517Z",
+  "script": "findings/phase-b-hypotheses/scripts/h-new-2990.py",
+  "seeds": {
+    "primary": 20260509,
+    "replication_declared_unused": 20260519
+  },
+  "utc": "2026-08-08T22:55:19.049464+00:00"
+}

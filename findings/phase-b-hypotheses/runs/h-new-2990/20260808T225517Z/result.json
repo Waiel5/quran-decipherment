@@ -1,0 +1,502 @@
+{
+  "census": {
+    "hapax_agreement": {
+      "hapax_csv_rows": 2445,
+      "lemma_symmetric_difference": [],
+      "published_lemma_hapaxes": 1994,
+      "published_root_hapaxes": 395,
+      "qac_derived_lemma_hapaxes": 1994,
+      "qac_derived_root_hapaxes": 395,
+      "root_symmetric_difference": []
+    },
+    "hapax_location_route_mismatches": [],
+    "n_distinct_lemmas": 4832,
+    "n_distinct_roots": 1642,
+    "n_fasila_readable": 6216,
+    "n_lemma_bearing_tokens": 74608,
+    "n_pos_bearing_segments": 77915,
+    "n_rime_classes": 115,
+    "n_root_bearing_tokens": 49968,
+    "n_segments": 128219,
+    "n_verses": 6236,
+    "rime_R1_equals_R2_at_this_convention": true,
+    "rime_convention": "P2"
+  },
+  "column_count": 33,
+  "columns": [
+    "surah",
+    "verse",
+    "mushaf_index",
+    "n_words",
+    "n_segments",
+    "n_letters_rasm",
+    "n_root_tokens",
+    "n_lemma_tokens",
+    "n_pos_segments",
+    "n_hapax_root_tokens",
+    "frac_hapax_root_tokens",
+    "n_hapax_lemma_tokens",
+    "frac_hapax_lemma_tokens",
+    "mean_log10_root_freq",
+    "median_log10_root_freq",
+    "min_root_freq",
+    "mean_root_surprisal_bits",
+    "sum_root_surprisal_bits",
+    "frac_root_tokens_freq_le5",
+    "n_root_types",
+    "ttr_root",
+    "root_simpson_repeat",
+    "rime_pausal",
+    "rime_class_size",
+    "fasila_readable",
+    "share_nominal",
+    "share_verbal",
+    "share_pronominal",
+    "share_particle",
+    "segments_per_word",
+    "frac_derived_stems",
+    "struct_z_composite",
+    "struct_z_composite_resid"
+  ],
+  "composite": {
+    "dropped": [
+      {
+        "member": "root_simpson_repeat",
+        "rho_vs_n_words": 0.443559989590077,
+        "sign": -1
+      }
+    ],
+    "emitted": true,
+    "kept": [
+      {
+        "member": "frac_hapax_root_tokens",
+        "rho_vs_n_words": 0.01053855657143283,
+        "sign": 1
+      },
+      {
+        "member": "mean_root_surprisal_bits",
+        "rho_vs_n_words": -0.2333279847157545,
+        "sign": 1
+      },
+      {
+        "member": "frac_root_tokens_freq_le5",
+        "rho_vs_n_words": 0.06921887320423356,
+        "sign": 1
+      },
+      {
+        "member": "log10_rime_class_size",
+        "rho_vs_n_words": 0.14272054007344528,
+        "sign": -1
+      }
+    ],
+    "members": [
+      {
+        "member": "frac_hapax_root_tokens",
+        "rho_vs_n_words": 0.01053855657143283,
+        "sign": 1
+      },
+      {
+        "member": "mean_root_surprisal_bits",
+        "rho_vs_n_words": -0.2333279847157545,
+        "sign": 1
+      },
+      {
+        "member": "frac_root_tokens_freq_le5",
+        "rho_vs_n_words": 0.06921887320423356,
+        "sign": 1
+      },
+      {
+        "member": "root_simpson_repeat",
+        "rho_vs_n_words": 0.443559989590077,
+        "sign": -1
+      },
+      {
+        "member": "log10_rime_class_size",
+        "rho_vs_n_words": 0.14272054007344528,
+        "sign": -1
+      }
+    ],
+    "min_members": 3,
+    "n_defined": 6214,
+    "n_members_used": 4,
+    "ols_on_rank_n_words": {
+      "intercept": 0.3364349186366696,
+      "slope": -0.00010833470278237315
+    },
+    "rho_composite_vs_n_words": -0.18237161919291958,
+    "rho_resid_vs_n_words": 0.2381953318787983,
+    "threshold": 0.3
+  },
+  "diagnostics": {
+    "fasila_readable": {
+      "denominator": "",
+      "family": "F fasila",
+      "kind": "INVARIANT-BOOLEAN",
+      "length_dominated": false,
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": 0.06228198339642225,
+      "rho_vs_mushaf_index": -0.0027255874728508624,
+      "rho_vs_n_letters_rasm": 0.0979389910257212,
+      "rho_vs_n_words": 0.09792613387862531
+    },
+    "frac_derived_stems": {
+      "denominator": "n_root_tokens",
+      "family": "G morphology",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": -0.06145354224317495,
+      "rho_vs_mushaf_index": -0.08310659080362917,
+      "rho_vs_n_letters_rasm": 0.09709543562939867,
+      "rho_vs_n_words": 0.057721271741426425
+    },
+    "frac_hapax_lemma_tokens": {
+      "denominator": "n_lemma_tokens",
+      "family": "C hapax",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6216,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": 0.09899391869392629,
+      "rho_vs_mushaf_index": 0.08161817216324628,
+      "rho_vs_n_letters_rasm": 0.00651953846692069,
+      "rho_vs_n_words": 0.0010068615792293754
+    },
+    "frac_hapax_root_tokens": {
+      "denominator": "n_root_tokens",
+      "family": "C hapax",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": 0.05119776111605782,
+      "rho_vs_mushaf_index": 0.036639910595487574,
+      "rho_vs_n_letters_rasm": 0.009867730474541737,
+      "rho_vs_n_words": 0.01053855657143283
+    },
+    "frac_root_tokens_freq_le5": {
+      "denominator": "n_root_tokens",
+      "family": "D rarity",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": 0.07436455771565162,
+      "rho_vs_mushaf_index": 0.023036089054495033,
+      "rho_vs_n_letters_rasm": 0.07024520337999714,
+      "rho_vs_n_words": 0.06921887320423356
+    },
+    "mean_log10_root_freq": {
+      "denominator": "",
+      "family": "D rarity",
+      "kind": "INVARIANT",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": -0.1272562283805275,
+      "rho_vs_mushaf_index": -0.2327616221912869,
+      "rho_vs_n_letters_rasm": 0.21767601794188632,
+      "rho_vs_n_words": 0.23332798045040917
+    },
+    "mean_root_surprisal_bits": {
+      "denominator": "",
+      "family": "D rarity",
+      "kind": "INVARIANT",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": 0.12725659030613232,
+      "rho_vs_mushaf_index": 0.23276191670397778,
+      "rho_vs_n_letters_rasm": -0.2176760331150279,
+      "rho_vs_n_words": -0.2333279847157545
+    },
+    "median_log10_root_freq": {
+      "denominator": "",
+      "family": "D rarity",
+      "kind": "INVARIANT",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": -0.10206370705994723,
+      "rho_vs_mushaf_index": -0.20472378091329996,
+      "rho_vs_n_letters_rasm": 0.20639187967631725,
+      "rho_vs_n_words": 0.21901060464751088
+    },
+    "min_root_freq": {
+      "denominator": "",
+      "family": "D rarity",
+      "kind": "COUNT-LIKE",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "declared length-sensitive a priori by extreme-value logic",
+      "partial_rho_vs_mushaf_given_n_words": -0.09199594230033474,
+      "rho_vs_mushaf_index": 0.07561053582274627,
+      "rho_vs_n_letters_rasm": -0.2751012535848341,
+      "rho_vs_n_words": -0.26779953820225694
+    },
+    "n_hapax_lemma_tokens": {
+      "denominator": "",
+      "family": "C hapax",
+      "kind": "COUNT",
+      "length_dominated": false,
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": 0.09353786314877917,
+      "rho_vs_mushaf_index": 0.022293276861458666,
+      "rho_vs_n_letters_rasm": 0.10432957335684465,
+      "rho_vs_n_words": 0.09946595323856934
+    },
+    "n_hapax_root_tokens": {
+      "denominator": "",
+      "family": "C hapax",
+      "kind": "COUNT",
+      "length_dominated": false,
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": 0.05059668153620493,
+      "rho_vs_mushaf_index": 0.030267887874523933,
+      "rho_vs_n_letters_rasm": 0.020781364425941737,
+      "rho_vs_n_words": 0.021326791594541594
+    },
+    "n_lemma_tokens": {
+      "denominator": "",
+      "family": "B length",
+      "kind": "COUNT",
+      "length_dominated": "IS_LENGTH",
+      "n_defined": 6236,
+      "note": "denominator of the lemma family",
+      "partial_rho_vs_mushaf_given_n_words": -0.008296427406540931,
+      "rho_vs_mushaf_index": -0.5523036046691698,
+      "rho_vs_n_letters_rasm": 0.9827195605335632,
+      "rho_vs_n_words": 0.9946718110260006
+    },
+    "n_letters_rasm": {
+      "denominator": "",
+      "family": "B length",
+      "kind": "COUNT",
+      "length_dominated": "IS_LENGTH",
+      "n_defined": 6236,
+      "note": "secondary length variable; U+0670 removed",
+      "partial_rho_vs_mushaf_given_n_words": -0.13731253795976442,
+      "rho_vs_mushaf_index": -0.5659834240110136,
+      "rho_vs_n_letters_rasm": 1.0,
+      "rho_vs_n_words": 0.9845912868482848
+    },
+    "n_pos_segments": {
+      "denominator": "",
+      "family": "B length",
+      "kind": "COUNT",
+      "length_dominated": "IS_LENGTH",
+      "n_defined": 6236,
+      "note": "denominator of the morphology family",
+      "partial_rho_vs_mushaf_given_n_words": -0.019487244532098134,
+      "rho_vs_mushaf_index": -0.5547805575445998,
+      "rho_vs_n_letters_rasm": 0.9840455873242535,
+      "rho_vs_n_words": 0.999469544722162
+    },
+    "n_root_tokens": {
+      "denominator": "",
+      "family": "B length",
+      "kind": "COUNT",
+      "length_dominated": "IS_LENGTH",
+      "n_defined": 6236,
+      "note": "denominator of the root family",
+      "partial_rho_vs_mushaf_given_n_words": -0.014845519312947595,
+      "rho_vs_mushaf_index": -0.5377542144907824,
+      "rho_vs_n_letters_rasm": 0.9689142851576784,
+      "rho_vs_n_words": 0.9637771987545125
+    },
+    "n_root_types": {
+      "denominator": "",
+      "family": "E repetition",
+      "kind": "COUNT",
+      "length_dominated": true,
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": -0.0016231295139899696,
+      "rho_vs_mushaf_index": -0.5277003759461202,
+      "rho_vs_n_letters_rasm": 0.9567756885105239,
+      "rho_vs_n_words": 0.9508345575272844
+    },
+    "n_segments": {
+      "denominator": "",
+      "family": "B length",
+      "kind": "COUNT",
+      "length_dominated": "IS_LENGTH",
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": -0.1201953520803216,
+      "rho_vs_mushaf_index": -0.5633207780235646,
+      "rho_vs_n_letters_rasm": 0.9891049404591458,
+      "rho_vs_n_words": 0.97940930366779
+    },
+    "n_words": {
+      "denominator": "",
+      "family": "B length",
+      "kind": "COUNT",
+      "length_dominated": "IS_LENGTH",
+      "n_defined": 6236,
+      "note": "PRIMARY LENGTH VARIABLE",
+      "partial_rho_vs_mushaf_given_n_words": null,
+      "rho_vs_mushaf_index": -0.5545465965307959,
+      "rho_vs_n_letters_rasm": 0.9845912868482849,
+      "rho_vs_n_words": 1.0
+    },
+    "rime_class_size": {
+      "denominator": "",
+      "family": "F fasila",
+      "kind": "INVARIANT",
+      "length_dominated": false,
+      "n_defined": 6236,
+      "note": "corpus constant keyed by the verse's own fasila",
+      "partial_rho_vs_mushaf_given_n_words": -0.22305850896826793,
+      "rho_vs_mushaf_index": -0.26286375019431707,
+      "rho_vs_n_letters_rasm": 0.1657162703731674,
+      "rho_vs_n_words": 0.14272054007344528
+    },
+    "rime_pausal": {
+      "denominator": "",
+      "eta2_n_letters_by_class": 0.10089561287517244,
+      "eta2_n_words_by_class": 0.10482548770755415,
+      "family": "F fasila",
+      "kind": "INVARIANT-CATEGORICAL",
+      "length_dominated": null,
+      "n_defined": 6236,
+      "note": "P2 pausal rime string; categorical -- no rho. eta^2(n_words | class) = 0.1048, eta^2(n_letters | class) = 0.1009",
+      "rho_vs_n_words": null
+    },
+    "root_simpson_repeat": {
+      "denominator": "",
+      "family": "E repetition",
+      "kind": "INVARIANT",
+      "length_dominated": false,
+      "n_defined": 6095,
+      "note": "length-honest counterpart of ttr_root; empty when n_root_tokens < 2",
+      "partial_rho_vs_mushaf_given_n_words": -0.009276622185243413,
+      "rho_vs_mushaf_index": -0.24798963660988718,
+      "rho_vs_n_letters_rasm": 0.43951664047190786,
+      "rho_vs_n_words": 0.443559989590077
+    },
+    "segments_per_word": {
+      "denominator": "n_words",
+      "family": "G morphology",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": -0.1151007728947459,
+      "rho_vs_mushaf_index": -0.04587822753108873,
+      "rho_vs_n_letters_rasm": 0.024115800163826376,
+      "rho_vs_n_words": -0.08929912793100107
+    },
+    "share_nominal": {
+      "denominator": "n_pos_segments",
+      "family": "G morphology",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": 0.030752973800536338,
+      "rho_vs_mushaf_index": 0.10075495006523623,
+      "rho_vs_n_letters_rasm": -0.10247368614475644,
+      "rho_vs_n_words": -0.13596953960547267
+    },
+    "share_particle": {
+      "denominator": "n_pos_segments",
+      "family": "G morphology",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": 0.030832868798331067,
+      "rho_vs_mushaf_index": -0.02784043121183072,
+      "rho_vs_n_letters_rasm": 0.03423952965706114,
+      "rho_vs_n_words": 0.09625691511805745
+    },
+    "share_pronominal": {
+      "denominator": "n_pos_segments",
+      "family": "G morphology",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": -0.022840271828116657,
+      "rho_vs_mushaf_index": -0.16284724690874433,
+      "rho_vs_n_letters_rasm": 0.2346249837183816,
+      "rho_vs_n_words": 0.26056823549783176
+    },
+    "share_verbal": {
+      "denominator": "n_pos_segments",
+      "family": "G morphology",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6236,
+      "note": "",
+      "partial_rho_vs_mushaf_given_n_words": -0.05552100638544616,
+      "rho_vs_mushaf_index": -0.07730180639826795,
+      "rho_vs_n_letters_rasm": 0.08999667631664031,
+      "rho_vs_n_words": 0.056213324715717
+    },
+    "struct_z_composite": {
+      "denominator": "",
+      "family": "H composite (SECONDARY)",
+      "kind": "DERIVED",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "prereg §5; secondary to the columns, never a replacement for them",
+      "partial_rho_vs_mushaf_given_n_words": 0.21143386312509474,
+      "rho_vs_mushaf_index": 0.27424238898882647,
+      "rho_vs_n_letters_rasm": -0.18364775585557774,
+      "rho_vs_n_words": -0.18237161919291958
+    },
+    "struct_z_composite_resid": {
+      "denominator": "",
+      "family": "H composite (SECONDARY)",
+      "kind": "DERIVED",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "prereg §5; secondary to the columns, never a replacement for them",
+      "partial_rho_vs_mushaf_given_n_words": 0.22214769687253894,
+      "rho_vs_mushaf_index": 0.046441941240489865,
+      "rho_vs_n_letters_rasm": 0.22811698422174978,
+      "rho_vs_n_words": 0.2381953318787983
+    },
+    "sum_root_surprisal_bits": {
+      "denominator": "",
+      "family": "D rarity",
+      "kind": "COUNT",
+      "length_dominated": true,
+      "n_defined": 6214,
+      "note": "length-dominated BY CONSTRUCTION; the instrument's own calibration case",
+      "partial_rho_vs_mushaf_given_n_words": 0.045403039206608584,
+      "rho_vs_mushaf_index": -0.5116260340270726,
+      "rho_vs_n_letters_rasm": 0.9499655163307316,
+      "rho_vs_n_words": 0.9411166413459373
+    },
+    "ttr_root": {
+      "denominator": "n_root_tokens",
+      "family": "E repetition",
+      "kind": "RATE",
+      "length_dominated": false,
+      "n_defined": 6214,
+      "note": "declared mechanically length-dependent a priori",
+      "partial_rho_vs_mushaf_given_n_words": -0.006396950621763688,
+      "rho_vs_mushaf_index": 0.28353760047236837,
+      "rho_vs_n_letters_rasm": -0.5135499731905251,
+      "rho_vs_n_words": -0.5170390639458052
+    }
+  },
+  "gates": {
+    "composite_gate_threshold": 0.3,
+    "composite_min_members": 3,
+    "length_dominated_threshold": 0.7
+  },
+  "hypothesis": "H-NEW-2990",
+  "kind": "INSTRUMENT -- no verdict, no null model, no p-value",
+  "length_dominated_columns": [
+    "n_root_types",
+    "sum_root_surprisal_bits"
+  ]
+}
