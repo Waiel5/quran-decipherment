@@ -1,0 +1,33 @@
+{
+  "command": "/opt/homebrew/opt/python@3.13/bin/python3.13 findings/phase-b-hypotheses/scripts/h-new-3030.py",
+  "created_utc": "2026-08-09T07:06:08.599982+00:00",
+  "expected_hashes_sha256": {
+    "prereg": "712a98af0126158bd6a283790aeea8778cacd0049ff6573dee090df88d293009",
+    "qac": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "quran_full_tashkeel": "382a7341300602ec8b366316d4bbe2a44955c2bf984d395bdd82dae6110b6715",
+    "quran_no_tashkeel": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+  },
+  "git_commit": "13fa43a64d5a622b358f0509b5a18829e5088715",
+  "git_status_porcelain": "M findings/phase-b-hypotheses/scripts/h-new-3030.py\n?? findings/phase-b-hypotheses/h-new-3010-conditional-register.md\n?? findings/phase-b-hypotheses/h-new-3020-loanword-donor-strata.md\n?? findings/phase-b-hypotheses/prereg-h-new-3010-conditional-register.md\n?? findings/phase-b-hypotheses/prereg-h-new-3020-loanword-donor-strata.md\n?? findings/phase-b-hypotheses/prereg-h-new-3040-modality-axis.md\n?? findings/phase-b-hypotheses/prereg-h-new-3050-muqattaat-length-floor.md\n?? findings/phase-b-hypotheses/runs/h-new-3010/\n?? findings/phase-b-hypotheses/runs/h-new-3020/\n?? findings/phase-b-hypotheses/runs/h-new-3030/20260809T070603Z/\n?? findings/phase-b-hypotheses/runs/h-new-3040/\n?? findings/phase-b-hypotheses/scripts/h-new-3010-posthoc-null-means.py\n?? findings/phase-b-hypotheses/scripts/h-new-3010.py\n?? findings/phase-b-hypotheses/scripts/h-new-3020.py\n?? findings/phase-b-hypotheses/scripts/h-new-3040.py",
+  "hashes_sha256": {
+    "prereg": "712a98af0126158bd6a283790aeea8778cacd0049ff6573dee090df88d293009",
+    "qac": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+    "quran_full_tashkeel": "382a7341300602ec8b366316d4bbe2a44955c2bf984d395bdd82dae6110b6715",
+    "quran_no_tashkeel": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "script": "0040b0b1dfb086bcc28aa7be622f7c59de4b7bed566f310d00d0a699ba75655a"
+  },
+  "id": "H-NEW-3030",
+  "input_paths_repo_relative": {
+    "prereg": "findings/phase-b-hypotheses/prereg-h-new-3030-sajdah-glyph.md",
+    "qac": "data/morphology/quranic-corpus-morphology-0.4.txt",
+    "quran_full_tashkeel": "quran-text/quran-full-tashkeel.json",
+    "quran_no_tashkeel": "quran-text/quran-no-tashkeel.json",
+    "script": "findings/phase-b-hypotheses/scripts/h-new-3030.py"
+  },
+  "n_monte_carlo_cross_check": 200000,
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "run_directory": "findings/phase-b-hypotheses/runs/h-new-3030/20260809T070603Z",
+  "seed": 20260509,
+  "seed_role": "Monte-Carlo correctness cross-check only; the inference is exact and deterministic"
+}

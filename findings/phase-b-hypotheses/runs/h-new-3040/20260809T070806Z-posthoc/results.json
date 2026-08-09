@@ -1,0 +1,118 @@
+{
+  "header": "POST-HOC. MW-7 single-test cap alpha=0.05. No number here has confirmatory weight. Primary run directory untouched.",
+  "D1_RT5_tautology": {
+    "rankings_identical": true,
+    "n_surahs_with_different_rank": 0,
+    "spearman_between_the_two_forms": 1.0,
+    "conclusion": "RT-5 is NOT an independent robustness arm: the bounded contrast and the smoothed log-ratio induce the identical ranking, so every rank statistic is identical by construction."
+  },
+  "D2_RT2_scope": {
+    "conclusion": "RT-2 changes only the register labels. H2 uses all 114 surahs and no label, so RT-2's H2 numbers are identical to RT-1's BY CONSTRUCTION and are not evidence of robustness for H2. RT-2 is a robustness arm for H1 only."
+  },
+  "D3_length_decomposition": {
+    "ARM_B": {
+      "rho_M_logWC": -0.337216,
+      "rho_R_logWC": 0.660103,
+      "product_of_loadings": -0.222597,
+      "rho_marginal": -0.27969,
+      "rho_partial_logWC": -0.080733,
+      "share_of_marginal_removed_by_logWC": 0.711347
+    },
+    "ARM_A": {
+      "rho_M_logWC": -0.337216,
+      "rho_R_logWC": 0.559104,
+      "product_of_loadings": -0.188539,
+      "rho_marginal": -0.371157,
+      "rho_partial_logWC": -0.233966,
+      "share_of_marginal_removed_by_logWC": 0.369631
+    }
+  },
+  "D4_oath_tautology": {
+    "eschat_surahs_whose_own_label_says_oath": [
+      51,
+      52,
+      77,
+      79,
+      81,
+      85,
+      86,
+      89
+    ],
+    "their_labels": {
+      "51": "oath-sworn-eschatological",
+      "52": "oath-sworn-eschatological",
+      "77": "oath-sworn-eschatological",
+      "79": "oath-sworn-eschatological",
+      "81": "eschatological-oracle-oath",
+      "85": "oath-sworn-eschatological",
+      "86": "oath-sworn-eschatological",
+      "89": "oath-sworn-eschatological-narrative"
+    },
+    "n_oath": 8,
+    "n_eschat_total": 28,
+    "H1_full": {
+      "mode": "residualised",
+      "n_strata": null,
+      "n_legal": 17,
+      "n_eschat": 28,
+      "delta_obs": 27.857609,
+      "p_one_sided": 0.0021,
+      "n_distinct_permutations": 10000,
+      "frac_differing_from_observed": 1.0,
+      "degenerate": false
+    },
+    "H1_oath_surahs_removed": {
+      "mode": "residualised",
+      "n_strata": null,
+      "n_legal": 17,
+      "n_eschat": 20,
+      "delta_obs": 31.037733,
+      "p_one_sided": 0.0025,
+      "n_distinct_permutations": 10000,
+      "frac_differing_from_observed": 1.0,
+      "degenerate": false
+    },
+    "note": "jawab al-qasam takes the emphatic lam (l:EMPH), which supplies 1001 of 1684 epistemic-pole tokens (59.4%). If H1 collapsed on removing these surahs the separation would be partly a definition."
+  },
+  "D5_leave_one_component_out": {
+    "full": {
+      "E_total": 1684,
+      "h1_delta": 27.857609,
+      "h1_p": 0.0021,
+      "rho_M_RB": -0.27969
+    },
+    "drop_CERT": {
+      "E_total": 1270,
+      "h1_delta": 35.183897,
+      "h1_p": 0.0004,
+      "rho_M_RB": -0.197336
+    },
+    "drop_FUT": {
+      "E_total": 1523,
+      "h1_delta": 27.426686,
+      "h1_p": 0.0021,
+      "rho_M_RB": -0.314248
+    },
+    "drop_EMPH_pref": {
+      "E_total": 683,
+      "h1_delta": 6.129951,
+      "h1_p": 0.265573,
+      "rho_M_RB": -0.205807
+    },
+    "drop_SUBJ_lan": {
+      "E_total": 1576,
+      "h1_delta": 29.220258,
+      "h1_p": 0.0019,
+      "rho_M_RB": -0.308441
+    }
+  },
+  "D6_emph_concentration": {
+    "l_EMPH_total": 1001,
+    "in_oath_labelled_eschat_surahs": 15,
+    "their_share_of_corpus_words": 0.018636,
+    "their_share_of_l_EMPH": 0.014985,
+    "enrichment_ratio": 0.8041,
+    "per_1000_words_in_oath_surahs": 10.395,
+    "per_1000_words_corpus": 12.928
+  }
+}

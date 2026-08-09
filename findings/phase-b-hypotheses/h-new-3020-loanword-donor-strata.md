@@ -430,6 +430,43 @@ carries the wrong Arabic word**, which is also why the file has 303 unique lemma
 
 ---
 
+## 9.2 Prior-work check — run AFTER the run, which is itself the error
+
+A ledger and `findings/` grep on `loanword` · `Jeffery` · `muʿarrab` · `nawʿ 38` ·
+`donor-language` **should have preceded the pre-registration and did not.** It was run after
+publication and it found one live error (§7's correction notice) plus a substantial prior
+literature that the pre-registration cites only in part.
+
+| prior work | status | relation to this study |
+|:--|:--|:--|
+| **`h-new-2770-chronology-content-length-nuisance`** | PASS (demotes 125) | **Not found before running.** Produced §7's correction. Directly bears on §1's confound. |
+| `h-new-2700-loanword-donor-strata` | NULL / REVERSED ×3 | The parent. Executed F-5. Correctly identified before locking. |
+| `h-new-125-chronology-content` axis 15 | PASS, **demoted by 2770** | Grandparent. |
+| **`foreign-loan-words.md`** (2026-04-12) | descriptive; **no script, no prereg** | **Already records al-Suyūṭī's donor grouping** — *"roughly 118 items, grouped by donor language: Persian, Greek (rūmī), Syriac, Hebrew, Nabataean, Ethiopic, Coptic, Berber, and a miscellany."* **My extraction returns 118 headword entries and exactly that family list.** An independent reproduction of a four-month-old descriptive count — but the roster's existence was **not** news to this project, and the pre-registration should have cited it. |
+| `cross-finding-012`, `cross-finding-016`, `cross-finding-017` | PASS / SYNTHESIS | Put `loanword_density` in the Late-Meccan Pattern-B bundle and in OQ-17. All inherit 2770's demotion. |
+| `h-new-129-joint-late-meccan-peak` | NULL-BROKEN | Loanword axis is one of the five. |
+| `h-new-302-pattern-b-marker-content-peak-lag` | NULL | Loanword axis is one of four content axes. |
+| `h-new-136`, `h-new-141`, `h-new-183`, `h-new-188`, `h-new-192`, `h-new-206` | mixed | Use the axis as an input; none splits it by donor. |
+| `h-classic-45` (al-Suyūṭī *gharīb*) | PASS, ρ = −0.6818 | A different al-Suyūṭī lexicon class; its header names H-NEW-17 (the loanword-density line) as a parallel test. |
+| `h-new-1540-hapax-distribution` / **H-NEW-1540C** | **QUEUED, never run** | *"Jeffery-loanword overlap with the 395-hapax set."* Still open; not touched here. |
+
+**What is genuinely new after that check, stated narrowly:**
+
+1. **The κ.** No finding in the repository computes agreement between Jeffery's donor field and
+   any second rater. `h-new-2920-proxy-census` runs this class of test on other proxies and
+   explicitly does not reach this one.
+2. **The machine extraction of nawʿ 38's per-word donor assignments.** The *Itqān* raw text is
+   read by five other scripts (`h-new-2740`, `h-new-2800`, `Q009_F_04_last_revealed`, and two
+   tafsīr extractors), so the **file** is not an idle asset; **nawʿ 38's donor assignments**
+   had never been parsed, and `foreign-loan-words.md` recorded them by hand without a script.
+3. **The rater swap** (§5) and **the registry-flag audit** (§6).
+4. **F-5 re-tested under a second rater** (§4.1).
+
+**What is NOT new:** that al-Suyūṭī groups nawʿ 38 by donor language, and that his roster is
+~118 items. `foreign-loan-words.md` had both in April.
+
+---
+
 ## 10. Cross-references
 
 - **[[h-new-2700-loanword-donor-strata]]** — the parent, which executed F-5. Strengthened by

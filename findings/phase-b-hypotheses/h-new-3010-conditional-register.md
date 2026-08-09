@@ -1,23 +1,84 @@
 ---
 id: H-NEW-3010
-title: Realis vs irrealis conditionals are NOT established as register-coded — NULL
+title: Realis vs irrealis conditionals are NOT register-coded — an independent REPLICATION
+  of H-NEW-2630's NULL on a second register labelling and a stronger length control
 date: 2026-08-09
 phase: B
 author: Waiel Al-Shujaa
-verdict: NULL — 0 of 12 pre-registered tests clear; the primary contrast loses 43 % of its
-  magnitude to verse length alone
-status: NULL (no pre-commit violation — all 12 directions ran as locked)
+verdict: NULL — 0 of 12 pre-registered tests clear. NOT A NEW FINDING - this is a
+  re-derivation of H-NEW-2630 (2026-08-07), whose H3/H4 tested an affine transform of the
+  same statistic and also returned NULL.
+status: NULL · REPLICATION OF H-NEW-2630 · the novel content is the length-channel
+  ranking and the 43 % reproduction figure, not the register result
+supersedes: nothing
+replicates: H-NEW-2630 (H3/H4)
 prereg: prereg-h-new-3010-conditional-register.md
 prereg_sha256: 2b1718af47814c1eebc38178977074eba2631e45a7ff43e0ff0e98ad8c11fe93
 script: scripts/h-new-3010.py
 run: runs/h-new-3010/20260809T065744Z/
-frontier_item: F-3 (HANDOFF/FRONTIER-MAP-2026-08-07.md lines 199-205)
-parents: [cross-finding-028-formal, H-NEW-2530]
+frontier_item: F-3 (HANDOFF/FRONTIER-MAP-2026-08-07.md lines 199-205) — the map listed
+  F-3 as an open item with prior CONFIRMED on the same day H-NEW-2630 answered it
+parents: [H-NEW-2630, cross-finding-028-formal, H-NEW-2530]
 seed: 20260509
 n_perm: 10000
 ---
 
-# H-NEW-3010 — Realis (`in`) vs irrealis (`law` / `lawlā`) conditionals are NOT established as register-coded
+# H-NEW-3010 — Realis (`in`) vs irrealis (`law` / `lawlā`) conditionals are NOT register-coded
+
+> ## ⛔ PRIOR WORK — READ THIS BEFORE THE VERDICT: **this is a REPLICATION of H-NEW-2630, not a new result**
+>
+> **`h-new-2630-conditional-register.md`, dated 2026-08-07 — two days before this run —
+> pre-registered and rejected this hypothesis already.** Ledger entry §10.147. Its title
+> is *"Realis vs irrealis conditionals are NOT register-coded."* I did not grep for it
+> before designing or running this test. That is my error and it is recorded in §11.
+>
+> **The statistics are the same statistic.** H-NEW-2630's mood balance is
+> `C(s) = (n_R − n_I)/(n_R + n_I)`; my irrealis share is `n_I/(n_R + n_I)`. Therefore
+> **`C = 1 − 2 × share`, exactly.** My primary statistic is an affine transform of the
+> quantity its H3 and H4 already tested.
+>
+> **And the two runs agree, closely.** Converting H-NEW-2630's published per-register
+> mean `C` into an implied mean irrealis share, `(1 − C)/2`:
+>
+> | register | H-NEW-2630 mean `C` | implied share | H-NEW-3010 surah-unweighted share |
+> |:--|--:|--:|--:|
+> | legal | 0.5819 | **0.2090** | **0.1857** (LEGAL) |
+> | eschatological | 0.3876 | 0.3062 | 0.3609 (polemic ∪ eschatological) |
+> | narrative | 0.3311 | 0.3345 | 0.3380 (OTHER) |
+>
+> H-NEW-2630 recorded `legal_highest: true` on `C` — i.e. **legal has the lowest irrealis
+> share** — with Kruskal-Wallis p = 0.0923, failing its α_bon = 0.01. My H2 finds legal
+> lowest at D = −0.108, failing its α_bon = 0.0042. **Same direction, same statistic, same
+> NULL, on two independent register labellings** (H-NEW-2630 used H-NEW-2500's 91-surah
+> proxy; this run used the Neuwirth–Sinai TSV over all 114 with two mechanical mappings).
+> The lemma marginals are identical in both runs: `<in` 578, `law` 185, `lawolaA^` 35.
+>
+> **What is genuinely new here, and it is narrow:**
+> 1. **The length-channel ranking.** The dominant nuisance channel for this grouping is
+>    **mean verse length (ρ = +0.5467)**, not verse count (+0.0719) or word count
+>    (+0.2720). **H-NEW-2630's H4 residualised on `log V` (verse count) and `log T`
+>    (token count) — neither is the dominant channel.**
+> 2. **The stratified design H-NEW-2630 asked for.** Its §8 item 1 says OLS
+>    residualisation "is fragile here" and requests "a matched-pair or stratified design."
+>    This run supplies one, on three channels × two bin widths.
+> 3. **The 43 % figure** — verse length alone, with register labels randomised,
+>    reproduces 43 % of the observed contrast.
+> 4. **A disagreement between the two length controls, unresolved.** H-NEW-2630's H4
+>    reported the register ordering **inverting** under OLS residualisation (p = 0.4772,
+>    eschatological becoming highest). Under this run's stratified permutation the
+>    ordering does **not** invert in any of 12 null configurations. Per
+>    `UNIT-DRIFT-DEFECT.md` §6 rule 6, both are reported; I do not claim mine is the
+>    stricter, because 53 defined surahs is thin for an OLS residual and the two
+>    operations are not comparable.
+>
+> **What H-NEW-2630 asked for that this run does NOT deliver:** its §8 open item is the
+> **mood-blind presence** question — does "has any conditional at all" separate legal from
+> eschatological after a *stratified* length control (post-hoc it reached 20/20 legal
+> recall). This design would have suited that question well. **I tested mood again
+> instead.** That item remains open.
+>
+> **cross-finding-028-formal gets no amendment from this run, and got none from
+> H-NEW-2630 either.** §7 below should be read with that already settled.
 
 > ## VERDICT: **NULL**
 >

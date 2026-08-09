@@ -1,0 +1,1661 @@
+{
+  "id": "H-NEW-3040",
+  "title": "The modality axis (deontic vs epistemic/alethic) and its orthogonality to the cross-finding-028 function-word axis",
+  "frontier_id": "F-10",
+  "prereg_sha256": "48e02a04a252e91dac41cd747968e769c6a28379a1cbd85582bf2a2161e353df",
+  "run_utc": "20260809T070448Z",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "n_boot": 10000,
+  "bonferroni_k_primary": 2,
+  "alpha_bonferroni_primary": 0.025,
+  "delta_primary": 0.25,
+  "rules_tuple_primary": "(no-tashkeel, QAC-v0.4 TAG-field + FEATURES-field, per-surah, trigger window W=5, E includes l:EMPH prefix and excludes n:EMPH suffix, register = Neuwirth-Sinai sinai_genre mechanical mapping, M = smoothed log-ratio, basmala-counted-only-in-Q1, Hafs-Kufan, Mashriqi)",
+  "corpus_verification": {
+    "segments": 128219,
+    "words": 77429,
+    "verses": 6236,
+    "tag_counts": {
+      "MOOD:JUS": 1418,
+      "PRO": 332,
+      "EMPH": 1244,
+      "MOOD:SUBJ": 1330,
+      "FUT": 161,
+      "CERT": 414
+    }
+  },
+  "length_channels_measured_first": {
+    "f_idh": {
+      "log_word_count": 0.487917,
+      "verse_count": 0.464651,
+      "mean_verse_length": 0.343879,
+      "mushaf_position": -0.480575
+    },
+    "f_lamma": {
+      "log_word_count": 0.57315,
+      "verse_count": 0.569886,
+      "mean_verse_length": 0.32619,
+      "mushaf_position": -0.509578
+    },
+    "f_qalu": {
+      "log_word_count": 0.567241,
+      "verse_count": 0.611282,
+      "mean_verse_length": 0.276175,
+      "mushaf_position": -0.528537
+    },
+    "f_idha_cascade": {
+      "log_word_count": -0.052885,
+      "verse_count": 0.028302,
+      "mean_verse_length": -0.123314,
+      "mushaf_position": 0.05503
+    },
+    "f_doubling": {
+      "log_word_count": -0.201749,
+      "verse_count": -0.103875,
+      "mean_verse_length": -0.26681,
+      "mushaf_position": 0.191001
+    },
+    "f_iltifat_type": {
+      "log_word_count": 0.232523,
+      "verse_count": 0.353898,
+      "mean_verse_length": 0.016862,
+      "mushaf_position": -0.182277
+    },
+    "D_deontic_count": {
+      "log_word_count": 0.786649,
+      "verse_count": 0.693488,
+      "mean_verse_length": 0.63579,
+      "mushaf_position": -0.748338
+    },
+    "E_epistemic_count": {
+      "log_word_count": 0.904894,
+      "verse_count": 0.84906,
+      "mean_verse_length": 0.627494,
+      "mushaf_position": -0.844599
+    },
+    "M_modality_contrast": {
+      "log_word_count": -0.337216,
+      "verse_count": -0.374309,
+      "mean_verse_length": -0.113839,
+      "mushaf_position": 0.289778
+    },
+    "R_A_pc1_6feature": {
+      "log_word_count": 0.559104,
+      "verse_count": 0.5857,
+      "mean_verse_length": 0.318098,
+      "mushaf_position": -0.495434
+    },
+    "R_B_pc1_5feature": {
+      "log_word_count": 0.660103,
+      "verse_count": 0.610389,
+      "mean_verse_length": 0.459614,
+      "mushaf_position": -0.626544
+    }
+  },
+  "channel_x_channel": {
+    "log_word_count": {
+      "log_word_count": 1.0,
+      "verse_count": 0.910177,
+      "mean_verse_length": 0.752204,
+      "mushaf_position": -0.933086
+    },
+    "verse_count": {
+      "log_word_count": 0.910177,
+      "verse_count": 1.0,
+      "mean_verse_length": 0.447371,
+      "mushaf_position": -0.844618
+    },
+    "mean_verse_length": {
+      "log_word_count": 0.752204,
+      "verse_count": 0.447371,
+      "mean_verse_length": 1.0,
+      "mushaf_position": -0.710909
+    },
+    "mushaf_position": {
+      "log_word_count": -0.933086,
+      "verse_count": -0.844618,
+      "mean_verse_length": -0.710909,
+      "mushaf_position": 1.0
+    }
+  },
+  "instrument": {
+    "jussive_trigger_census_W5": {
+      "negation_lam": 355,
+      "prohibition_la": 335,
+      "unassigned": 297,
+      "conditional": 343,
+      "command_lam_amr": 78,
+      "sub_an_kay": 10
+    },
+    "subjunctive_trigger_census_W5": {
+      "negation_lan": 108,
+      "sub_an_kay": 529,
+      "prohibition_la": 30,
+      "purpose": 289,
+      "unassigned": 298,
+      "conditional": 57,
+      "negation_lam": 19
+    },
+    "particle_tag_totals": {
+      "PRO": 332,
+      "EMPH_pref": 1001,
+      "EMPH_suf": 243,
+      "FUT": 161,
+      "CERT": 414
+    },
+    "D_total": 413,
+    "E_total": 1684,
+    "n_surahs_D_plus_E_zero": 14,
+    "surahs_D_plus_E_zero": [
+      1,
+      88,
+      94,
+      97,
+      99,
+      101,
+      105,
+      107,
+      108,
+      109,
+      110,
+      112,
+      113,
+      114
+    ],
+    "pc1_loadings_armA": {
+      "f_idh": 0.113205,
+      "f_lamma": 0.570108,
+      "f_qalu": 0.622259,
+      "f_idha_cascade": -0.213651,
+      "f_doubling": -0.181499,
+      "f_iltifat_type": 0.443132
+    },
+    "pc1_loadings_armB": {
+      "f_idh": 0.159443,
+      "f_lamma": 0.65657,
+      "f_qalu": 0.667047,
+      "f_idha_cascade": -0.202313,
+      "f_doubling": -0.240023
+    },
+    "pc1_var_explained_armA": 0.324027,
+    "pc1_var_explained_armB": 0.343621
+  },
+  "H1_separation": {
+    "primary_residualised_unstratified": {
+      "mode": "residualised",
+      "n_strata": null,
+      "n_legal": 17,
+      "n_eschat": 28,
+      "delta_obs": 27.857609,
+      "p_one_sided": 0.0021,
+      "n_distinct_permutations": 10000,
+      "frac_differing_from_observed": 1.0,
+      "degenerate": false
+    },
+    "secondary_raw_quintile": {
+      "mode": "raw",
+      "n_strata": 5,
+      "n_legal": 17,
+      "n_eschat": 28,
+      "delta_obs": 0.392037,
+      "p_one_sided": 0.088191,
+      "n_distinct_permutations": 9856,
+      "frac_differing_from_observed": 1.0,
+      "degenerate": false
+    },
+    "secondary_raw_decile": {
+      "mode": "raw",
+      "n_strata": 10,
+      "n_legal": 17,
+      "n_eschat": 28,
+      "delta_obs": 0.392037,
+      "p_one_sided": 0.037496,
+      "n_distinct_permutations": 7819,
+      "frac_differing_from_observed": 1.0,
+      "degenerate": false
+    },
+    "secondary_raw_unstratified": {
+      "mode": "raw",
+      "n_strata": null,
+      "n_legal": 17,
+      "n_eschat": 28,
+      "delta_obs": 0.392037,
+      "p_one_sided": 0.122588,
+      "n_distinct_permutations": 10000,
+      "frac_differing_from_observed": 1.0,
+      "degenerate": false
+    },
+    "verdict": "PASS",
+    "direction_locked": "Delta = mean(M|LEGAL) - mean(M|ESCHAT) > 0",
+    "legal_surahs": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      24,
+      33,
+      47,
+      49,
+      58,
+      59,
+      60,
+      62,
+      65,
+      66,
+      98
+    ],
+    "eschat_surahs": [
+      44,
+      50,
+      51,
+      52,
+      54,
+      56,
+      67,
+      69,
+      70,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      88,
+      89,
+      97,
+      99,
+      101,
+      104
+    ],
+    "group_means_raw_M": {
+      "legal": -0.74072,
+      "eschat": -1.132757
+    }
+  },
+  "H2_orthogonality": {
+    "ARM_B_5feature_VERDICT_BEARING": {
+      "rho_marginal": -0.27969,
+      "boot_ci95": [
+        -0.440738,
+        -0.106217
+      ],
+      "boot_n_effective": 10000,
+      "fisher_ci95_crosscheck": [
+        -0.449874,
+        -0.089905
+      ],
+      "perm_p_two_sided": 0.0032,
+      "perm_p_below_alpha_bon": true,
+      "equivalence": {
+        "delta_0.20": "INDETERMINATE",
+        "delta_0.25": "INDETERMINATE",
+        "delta_0.30": "INDETERMINATE"
+      },
+      "verdict_primary_delta": "INDETERMINATE",
+      "length_partialled": {
+        "log_word_count": {
+          "partial_rho": -0.080733,
+          "boot_ci95": [
+            -0.276826,
+            0.120604
+          ],
+          "boot_n_effective": 10000,
+          "equivalence": {
+            "delta_0.20": "INDETERMINATE",
+            "delta_0.25": "INDETERMINATE",
+            "delta_0.30": "ORTHOGONAL"
+          }
+        },
+        "verse_count": {
+          "partial_rho": -0.069727,
+          "boot_ci95": [
+            -0.270917,
+            0.138875
+          ],
+          "boot_n_effective": 10000,
+          "equivalence": {
+            "delta_0.20": "INDETERMINATE",
+            "delta_0.25": "INDETERMINATE",
+            "delta_0.30": "ORTHOGONAL"
+          }
+        },
+        "mean_verse_length": {
+          "partial_rho": -0.257686,
+          "boot_ci95": [
+            -0.417906,
+            -0.081929
+          ],
+          "boot_n_effective": 10000,
+          "equivalence": {
+            "delta_0.20": "INDETERMINATE",
+            "delta_0.25": "INDETERMINATE",
+            "delta_0.30": "INDETERMINATE"
+          }
+        },
+        "mushaf_position": {
+          "partial_rho": -0.131553,
+          "boot_ci95": [
+            -0.324613,
+            0.070142
+          ],
+          "boot_n_effective": 10000,
+          "equivalence": {
+            "delta_0.20": "INDETERMINATE",
+            "delta_0.25": "INDETERMINATE",
+            "delta_0.30": "INDETERMINATE"
+          }
+        }
+      }
+    },
+    "ARM_A_6feature_fidelity_only": {
+      "rho_marginal": -0.371157,
+      "boot_ci95": [
+        -0.530599,
+        -0.199576
+      ],
+      "boot_n_effective": 10000,
+      "fisher_ci95_crosscheck": [
+        -0.527707,
+        -0.190222
+      ],
+      "perm_p_two_sided": 0.0001,
+      "perm_p_below_alpha_bon": true,
+      "equivalence": {
+        "delta_0.20": "INDETERMINATE",
+        "delta_0.25": "INDETERMINATE",
+        "delta_0.30": "INDETERMINATE"
+      },
+      "verdict_primary_delta": "INDETERMINATE",
+      "length_partialled": {
+        "log_word_count": {
+          "partial_rho": -0.233966,
+          "boot_ci95": [
+            -0.42367,
+            -0.036269
+          ],
+          "boot_n_effective": 10000,
+          "equivalence": {
+            "delta_0.20": "INDETERMINATE",
+            "delta_0.25": "INDETERMINATE",
+            "delta_0.30": "INDETERMINATE"
+          }
+        },
+        "verse_count": {
+          "partial_rho": -0.202133,
+          "boot_ci95": [
+            -0.397906,
+            0.001697
+          ],
+          "boot_n_effective": 10000,
+          "equivalence": {
+            "delta_0.20": "INDETERMINATE",
+            "delta_0.25": "INDETERMINATE",
+            "delta_0.30": "INDETERMINATE"
+          }
+        },
+        "mean_verse_length": {
+          "partial_rho": -0.355608,
+          "boot_ci95": [
+            -0.51881,
+            -0.177261
+          ],
+          "boot_n_effective": 10000,
+          "equivalence": {
+            "delta_0.20": "INDETERMINATE",
+            "delta_0.25": "INDETERMINATE",
+            "delta_0.30": "INDETERMINATE"
+          }
+        },
+        "mushaf_position": {
+          "partial_rho": -0.273753,
+          "boot_ci95": [
+            -0.458367,
+            -0.074668
+          ],
+          "boot_n_effective": 10000,
+          "equivalence": {
+            "delta_0.20": "INDETERMINATE",
+            "delta_0.25": "INDETERMINATE",
+            "delta_0.30": "INDETERMINATE"
+          }
+        }
+      }
+    },
+    "arm_note": "prereg §3.5: ARM B carries the orthogonality verdict; ARM A is the axis cross-finding-028 actually uses and is reported in full, but may NOT establish an orthogonality verdict because f_iltifat_type is a 2<->3 vs 3<->1 person contrast and the deontic pole is 91.9% 2nd-person (prohibition) / 98.7% 3rd-person (lam al-amr).",
+    "conditional_on_register": {
+      "ARM_B": {
+        "partial_rho_given_register": -0.255563,
+        "boot_ci95": [
+          -0.426142,
+          -0.071061
+        ],
+        "boot_n_effective": 10000,
+        "equivalence": {
+          "delta_0.20": "INDETERMINATE",
+          "delta_0.25": "INDETERMINATE",
+          "delta_0.30": "INDETERMINATE"
+        }
+      },
+      "ARM_A": {
+        "partial_rho_given_register": -0.328778,
+        "boot_ci95": [
+          -0.503786,
+          -0.140226
+        ],
+        "boot_n_effective": 10000,
+        "equivalence": {
+          "delta_0.20": "INDETERMINATE",
+          "delta_0.25": "INDETERMINATE",
+          "delta_0.30": "INDETERMINATE"
+        }
+      },
+      "interpretation_locked": "prereg §7.4: marginal orthogonality asks whether the two axes are unrelated; conditional orthogonality asks whether they carry unrelated information once register is known. A pass on one may not be reported as a pass on the other."
+    },
+    "per_feature_secondary_family_k6": {
+      "f_idh": {
+        "rho": -0.127569,
+        "perm_p_two_sided": 0.175482,
+        "below_alpha_secondary": false,
+        "boot_ci95": [
+          -0.289555,
+          0.042465
+        ]
+      },
+      "f_lamma": {
+        "rho": -0.261529,
+        "perm_p_two_sided": 0.005,
+        "below_alpha_secondary": true,
+        "boot_ci95": [
+          -0.407875,
+          -0.097699
+        ]
+      },
+      "f_qalu": {
+        "rho": -0.326992,
+        "perm_p_two_sided": 0.0004,
+        "below_alpha_secondary": true,
+        "boot_ci95": [
+          -0.475971,
+          -0.162184
+        ]
+      },
+      "f_idha_cascade": {
+        "rho": -0.037451,
+        "perm_p_two_sided": 0.70073,
+        "below_alpha_secondary": false,
+        "boot_ci95": [
+          -0.166974,
+          0.091129
+        ]
+      },
+      "f_doubling": {
+        "rho": 0.002392,
+        "perm_p_two_sided": 0.984102,
+        "below_alpha_secondary": false,
+        "boot_ci95": [
+          NaN,
+          NaN
+        ]
+      },
+      "f_iltifat_type": {
+        "rho": -0.330096,
+        "perm_p_two_sided": 0.0006,
+        "below_alpha_secondary": true,
+        "boot_ci95": [
+          -0.497198,
+          -0.150546
+        ]
+      }
+    },
+    "alpha_secondary": 0.008333,
+    "max_abs_rho_over_features": 0.330096,
+    "multiple_correlation": {
+      "arm_A_R": 0.394798,
+      "arm_A_R2": 0.155865,
+      "arm_A_loocv_R2": 0.055029,
+      "arm_B_R": 0.305403,
+      "arm_B_R2": 0.093271,
+      "arm_B_loocv_R2": 0.008001
+    }
+  },
+  "rules_tuple_robustness": {
+    "RT-1_primary": {
+      "h1_delta": 27.857609,
+      "h1_p": 0.0021,
+      "h1_verdict": "PASS",
+      "rho_armB": -0.27969,
+      "ci_armB": [
+        -0.440738,
+        -0.106217
+      ],
+      "equiv_armB_d025": "INDETERMINATE",
+      "rho_armA": -0.371157,
+      "ci_armA": [
+        -0.530599,
+        -0.199576
+      ],
+      "equiv_armA_d025": "INDETERMINATE"
+    },
+    "RT-2_cf028_labels": {
+      "h1_delta": 26.874741,
+      "h1_p": 0.0006,
+      "h1_verdict": "PASS",
+      "rho_armB": -0.27969,
+      "ci_armB": [
+        -0.440738,
+        -0.106217
+      ],
+      "equiv_armB_d025": "INDETERMINATE",
+      "rho_armA": -0.371157,
+      "ci_armA": [
+        -0.530599,
+        -0.199576
+      ],
+      "equiv_armA_d025": "INDETERMINATE"
+    },
+    "RT-3_no_EMPH": {
+      "h1_delta": 6.129951,
+      "h1_p": 0.265573,
+      "h1_verdict": "NULL",
+      "rho_armB": -0.205807,
+      "ci_armB": [
+        -0.37335,
+        -0.027689
+      ],
+      "equiv_armB_d025": "INDETERMINATE",
+      "rho_armA": -0.27762,
+      "ci_armA": [
+        -0.44293,
+        -0.101201
+      ],
+      "equiv_armA_d025": "INDETERMINATE"
+    },
+    "RT-4_window40": {
+      "h1_delta": 27.695039,
+      "h1_p": 0.0021,
+      "h1_verdict": "PASS",
+      "rho_armB": -0.277352,
+      "ci_armB": [
+        -0.438881,
+        -0.104372
+      ],
+      "equiv_armB_d025": "INDETERMINATE",
+      "rho_armA": -0.370803,
+      "ci_armA": [
+        -0.529787,
+        -0.199461
+      ],
+      "equiv_armA_d025": "INDETERMINATE"
+    },
+    "RT-5_bounded_contrast": {
+      "h1_delta": 27.857609,
+      "h1_p": 0.0021,
+      "h1_verdict": "PASS",
+      "rho_armB": -0.27969,
+      "ci_armB": [
+        -0.440738,
+        -0.106217
+      ],
+      "equiv_armB_d025": "INDETERMINATE",
+      "rho_armA": -0.371157,
+      "ci_armA": [
+        -0.530599,
+        -0.199576
+      ],
+      "equiv_armA_d025": "INDETERMINATE"
+    },
+    "RT-4_jussive_census_W40": {
+      "negation_lam": 360,
+      "prohibition_la": 337,
+      "unassigned": 214,
+      "negation_lan": 3,
+      "conditional": 399,
+      "command_lam_amr": 78,
+      "sub_an_kay": 27
+    }
+  },
+  "verdict": {
+    "H1_separation": "PASS",
+    "H2_orthogonality_armB_delta025": "INDETERMINATE",
+    "H2_orthogonality_armA_delta025": "INDETERMINATE",
+    "rules_tuple_fragile_H1": true,
+    "rules_tuple_fragile_H2_armB": false
+  },
+  "per_surah": {
+    "1": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 29,
+      "verses": 7
+    },
+    "2": {
+      "D": 53,
+      "E": 76,
+      "M": -0.357609,
+      "R_A": 0.848367,
+      "R_B": 1.294126,
+      "words": 6116,
+      "verses": 286
+    },
+    "3": {
+      "D": 19,
+      "E": 78,
+      "M": -1.392684,
+      "R_A": -0.028352,
+      "R_B": 0.237187,
+      "words": 3481,
+      "verses": 200
+    },
+    "4": {
+      "D": 38,
+      "E": 67,
+      "M": -0.561469,
+      "R_A": -0.912624,
+      "R_B": -0.672762,
+      "words": 3747,
+      "verses": 176
+    },
+    "5": {
+      "D": 22,
+      "E": 58,
+      "M": -0.955511,
+      "R_A": 0.135281,
+      "R_B": 0.364823,
+      "words": 2804,
+      "verses": 120
+    },
+    "6": {
+      "D": 14,
+      "E": 70,
+      "M": -1.581464,
+      "R_A": 1.081976,
+      "R_B": 1.126366,
+      "words": 3050,
+      "verses": 165
+    },
+    "7": {
+      "D": 17,
+      "E": 84,
+      "M": -1.574551,
+      "R_A": 2.063048,
+      "R_B": 2.045751,
+      "words": 3320,
+      "verses": 206
+    },
+    "8": {
+      "D": 8,
+      "E": 18,
+      "M": -0.777705,
+      "R_A": -0.34822,
+      "R_B": 0.326796,
+      "words": 1233,
+      "verses": 75
+    },
+    "9": {
+      "D": 14,
+      "E": 49,
+      "M": -1.227824,
+      "R_A": -0.670629,
+      "R_B": -0.327476,
+      "words": 2498,
+      "verses": 129
+    },
+    "10": {
+      "D": 6,
+      "E": 31,
+      "M": -1.578185,
+      "R_A": 1.364427,
+      "R_B": 1.440818,
+      "words": 1833,
+      "verses": 109
+    },
+    "11": {
+      "D": 13,
+      "E": 47,
+      "M": -1.25804,
+      "R_A": 3.033236,
+      "R_B": 3.186655,
+      "words": 1917,
+      "verses": 123
+    },
+    "12": {
+      "D": 7,
+      "E": 51,
+      "M": -1.926679,
+      "R_A": 8.078119,
+      "R_B": 8.462176,
+      "words": 1777,
+      "verses": 111
+    },
+    "13": {
+      "D": 0,
+      "E": 17,
+      "M": -3.555348,
+      "R_A": -0.454083,
+      "R_B": -0.595223,
+      "words": 853,
+      "verses": 43
+    },
+    "14": {
+      "D": 4,
+      "E": 19,
+      "M": -1.466337,
+      "R_A": -0.118858,
+      "R_B": -0.232544,
+      "words": 830,
+      "verses": 52
+    },
+    "15": {
+      "D": 5,
+      "E": 39,
+      "M": -1.971553,
+      "R_A": 2.150078,
+      "R_B": 1.855099,
+      "words": 655,
+      "verses": 99
+    },
+    "16": {
+      "D": 10,
+      "E": 42,
+      "M": -1.398129,
+      "R_A": -0.798717,
+      "R_B": -0.595223,
+      "words": 1844,
+      "verses": 128
+    },
+    "17": {
+      "D": 9,
+      "E": 46,
+      "M": -1.588161,
+      "R_A": 0.022775,
+      "R_B": 0.021187,
+      "words": 1556,
+      "verses": 111
+    },
+    "18": {
+      "D": 13,
+      "E": 40,
+      "M": -1.098612,
+      "R_A": 0.807622,
+      "R_B": 0.515228,
+      "words": 1579,
+      "verses": 110
+    },
+    "19": {
+      "D": 4,
+      "E": 25,
+      "M": -1.734601,
+      "R_A": 0.700458,
+      "R_B": 0.170448,
+      "words": 961,
+      "verses": 98
+    },
+    "20": {
+      "D": 12,
+      "E": 44,
+      "M": -1.269761,
+      "R_A": 1.210812,
+      "R_B": 1.087944,
+      "words": 1335,
+      "verses": 135
+    },
+    "21": {
+      "D": 3,
+      "E": 24,
+      "M": -1.94591,
+      "R_A": 2.58999,
+      "R_B": 2.013221,
+      "words": 1169,
+      "verses": 112
+    },
+    "22": {
+      "D": 6,
+      "E": 25,
+      "M": -1.366876,
+      "R_A": -0.57821,
+      "R_B": -0.514624,
+      "words": 1274,
+      "verses": 78
+    },
+    "23": {
+      "D": 3,
+      "E": 36,
+      "M": -2.344549,
+      "R_A": 0.782656,
+      "R_B": 0.351355,
+      "words": 1050,
+      "verses": 118
+    },
+    "24": {
+      "D": 22,
+      "E": 17,
+      "M": 0.251314,
+      "R_A": -0.889541,
+      "R_B": -0.496997,
+      "words": 1316,
+      "verses": 64
+    },
+    "25": {
+      "D": 1,
+      "E": 19,
+      "M": -2.564949,
+      "R_A": 0.803229,
+      "R_B": 0.492736,
+      "words": 893,
+      "verses": 77
+    },
+    "26": {
+      "D": 5,
+      "E": 45,
+      "M": -2.112964,
+      "R_A": 1.56696,
+      "R_B": 1.406811,
+      "words": 1318,
+      "verses": 227
+    },
+    "27": {
+      "D": 3,
+      "E": 27,
+      "M": -2.061423,
+      "R_A": 2.000692,
+      "R_B": 1.858718,
+      "words": 1151,
+      "verses": 93
+    },
+    "28": {
+      "D": 7,
+      "E": 14,
+      "M": -0.659246,
+      "R_A": 2.873937,
+      "R_B": 2.862022,
+      "words": 1430,
+      "verses": 88
+    },
+    "29": {
+      "D": 4,
+      "E": 46,
+      "M": -2.335375,
+      "R_A": 1.066481,
+      "R_B": 0.810634,
+      "words": 976,
+      "verses": 69
+    },
+    "30": {
+      "D": 1,
+      "E": 20,
+      "M": -2.61496,
+      "R_A": -0.846956,
+      "R_B": -0.595223,
+      "words": 817,
+      "verses": 60
+    },
+    "31": {
+      "D": 3,
+      "E": 8,
+      "M": -0.887303,
+      "R_A": -0.349563,
+      "R_B": -0.410325,
+      "words": 546,
+      "verses": 34
+    },
+    "32": {
+      "D": 1,
+      "E": 7,
+      "M": -1.609438,
+      "R_A": 0.606838,
+      "R_B": 0.335578,
+      "words": 372,
+      "verses": 30
+    },
+    "33": {
+      "D": 6,
+      "E": 14,
+      "M": -0.802346,
+      "R_A": 0.125005,
+      "R_B": 0.691043,
+      "words": 1287,
+      "verses": 73
+    },
+    "34": {
+      "D": 0,
+      "E": 14,
+      "M": -3.367296,
+      "R_A": 2.399451,
+      "R_B": 2.112871,
+      "words": 883,
+      "verses": 54
+    },
+    "35": {
+      "D": 2,
+      "E": 10,
+      "M": -1.435085,
+      "R_A": -0.024681,
+      "R_B": 0.025311,
+      "words": 775,
+      "verses": 45
+    },
+    "36": {
+      "D": 2,
+      "E": 12,
+      "M": -1.609438,
+      "R_A": 1.69155,
+      "R_B": 1.162704,
+      "words": 725,
+      "verses": 83
+    },
+    "37": {
+      "D": 1,
+      "E": 47,
+      "M": -3.455265,
+      "R_A": 1.150618,
+      "R_B": 0.7242,
+      "words": 860,
+      "verses": 182
+    },
+    "38": {
+      "D": 5,
+      "E": 17,
+      "M": -1.157453,
+      "R_A": 1.344398,
+      "R_B": 0.888388,
+      "words": 733,
+      "verses": 88
+    },
+    "39": {
+      "D": 1,
+      "E": 21,
+      "M": -2.662588,
+      "R_A": -0.286127,
+      "R_B": -0.222908,
+      "words": 1172,
+      "verses": 75
+    },
+    "40": {
+      "D": 1,
+      "E": 22,
+      "M": -2.70805,
+      "R_A": 1.292451,
+      "R_B": 1.428745,
+      "words": 1219,
+      "verses": 85
+    },
+    "41": {
+      "D": 3,
+      "E": 22,
+      "M": -1.860752,
+      "R_A": 0.811244,
+      "R_B": 0.555428,
+      "words": 794,
+      "verses": 54
+    },
+    "42": {
+      "D": 2,
+      "E": 11,
+      "M": -1.526056,
+      "R_A": -0.358073,
+      "R_B": -0.595223,
+      "words": 860,
+      "verses": 53
+    },
+    "43": {
+      "D": 1,
+      "E": 23,
+      "M": -2.751535,
+      "R_A": 3.121074,
+      "R_B": 3.058928,
+      "words": 830,
+      "verses": 89
+    },
+    "44": {
+      "D": 1,
+      "E": 8,
+      "M": -1.734601,
+      "R_A": -0.287535,
+      "R_B": -0.595223,
+      "words": 346,
+      "verses": 59
+    },
+    "45": {
+      "D": 0,
+      "E": 5,
+      "M": -2.397895,
+      "R_A": 0.161509,
+      "R_B": 0.159487,
+      "words": 488,
+      "verses": 37
+    },
+    "46": {
+      "D": 1,
+      "E": 8,
+      "M": -1.734601,
+      "R_A": 2.276557,
+      "R_B": 2.166882,
+      "words": 643,
+      "verses": 35
+    },
+    "47": {
+      "D": 2,
+      "E": 15,
+      "M": -1.824549,
+      "R_A": -1.084501,
+      "R_B": -0.595223,
+      "words": 539,
+      "verses": 38
+    },
+    "48": {
+      "D": 0,
+      "E": 17,
+      "M": -3.555348,
+      "R_A": -0.864832,
+      "R_B": -0.378446,
+      "words": 560,
+      "verses": 29
+    },
+    "49": {
+      "D": 9,
+      "E": 2,
+      "M": 1.335001,
+      "R_A": -1.085757,
+      "R_B": -0.595223,
+      "words": 347,
+      "verses": 18
+    },
+    "50": {
+      "D": 1,
+      "E": 9,
+      "M": -1.845827,
+      "R_A": 0.132636,
+      "R_B": -0.455525,
+      "words": 373,
+      "verses": 45
+    },
+    "51": {
+      "D": 2,
+      "E": 5,
+      "M": -0.788457,
+      "R_A": 0.82541,
+      "R_B": 0.440354,
+      "words": 360,
+      "verses": 60
+    },
+    "52": {
+      "D": 3,
+      "E": 1,
+      "M": 0.847298,
+      "R_A": 0.432354,
+      "R_B": -0.025344,
+      "words": 312,
+      "verses": 49
+    },
+    "53": {
+      "D": 1,
+      "E": 8,
+      "M": -1.734601,
+      "R_A": -0.895063,
+      "R_B": -0.493828,
+      "words": 360,
+      "verses": 62
+    },
+    "54": {
+      "D": 0,
+      "E": 26,
+      "M": -3.970292,
+      "R_A": 0.866914,
+      "R_B": -0.087503,
+      "words": 342,
+      "verses": 55
+    },
+    "55": {
+      "D": 2,
+      "E": 1,
+      "M": 0.510826,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 351,
+      "verses": 78
+    },
+    "56": {
+      "D": 0,
+      "E": 10,
+      "M": -3.044522,
+      "R_A": -0.176502,
+      "R_B": -0.595223,
+      "words": 379,
+      "verses": 96
+    },
+    "57": {
+      "D": 1,
+      "E": 7,
+      "M": -1.609438,
+      "R_A": -0.706956,
+      "R_B": -0.595223,
+      "words": 574,
+      "verses": 29
+    },
+    "58": {
+      "D": 2,
+      "E": 6,
+      "M": -0.955511,
+      "R_A": -0.987779,
+      "R_B": -0.595223,
+      "words": 472,
+      "verses": 22
+    },
+    "59": {
+      "D": 2,
+      "E": 11,
+      "M": -1.526056,
+      "R_A": -0.75027,
+      "R_B": -0.595223,
+      "words": 445,
+      "verses": 24
+    },
+    "60": {
+      "D": 6,
+      "E": 8,
+      "M": -0.268264,
+      "R_A": -1.032461,
+      "R_B": -0.595223,
+      "words": 348,
+      "verses": 13
+    },
+    "61": {
+      "D": 0,
+      "E": 1,
+      "M": -1.098612,
+      "R_A": 0.313082,
+      "R_B": 0.302844,
+      "words": 221,
+      "verses": 14
+    },
+    "62": {
+      "D": 0,
+      "E": 1,
+      "M": -1.098612,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 175,
+      "verses": 11
+    },
+    "63": {
+      "D": 2,
+      "E": 7,
+      "M": -1.098612,
+      "R_A": -0.934135,
+      "R_B": -0.595223,
+      "words": 180,
+      "verses": 11
+    },
+    "64": {
+      "D": 1,
+      "E": 3,
+      "M": -0.847298,
+      "R_A": -0.794868,
+      "R_B": -0.595223,
+      "words": 241,
+      "verses": 18
+    },
+    "65": {
+      "D": 5,
+      "E": 7,
+      "M": -0.310155,
+      "R_A": -0.866612,
+      "R_B": -0.595223,
+      "words": 287,
+      "verses": 12
+    },
+    "66": {
+      "D": 1,
+      "E": 2,
+      "M": -0.510826,
+      "R_A": -0.263487,
+      "R_B": -0.071352,
+      "words": 249,
+      "verses": 12
+    },
+    "67": {
+      "D": 0,
+      "E": 7,
+      "M": -2.70805,
+      "R_A": 2.049062,
+      "R_B": 2.417697,
+      "words": 333,
+      "verses": 30
+    },
+    "68": {
+      "D": 5,
+      "E": 15,
+      "M": -1.036092,
+      "R_A": 1.461378,
+      "R_B": 1.143022,
+      "words": 300,
+      "verses": 52
+    },
+    "69": {
+      "D": 0,
+      "E": 7,
+      "M": -2.70805,
+      "R_A": -0.462719,
+      "R_B": -0.595223,
+      "words": 258,
+      "verses": 52
+    },
+    "70": {
+      "D": 0,
+      "E": 1,
+      "M": -1.098612,
+      "R_A": 0.089976,
+      "R_B": -0.595223,
+      "words": 217,
+      "verses": 44
+    },
+    "71": {
+      "D": 3,
+      "E": 2,
+      "M": 0.336472,
+      "R_A": 0.41175,
+      "R_B": 0.402065,
+      "words": 226,
+      "verses": 28
+    },
+    "72": {
+      "D": 1,
+      "E": 9,
+      "M": -1.845827,
+      "R_A": 0.44528,
+      "R_B": -0.595223,
+      "words": 285,
+      "verses": 28
+    },
+    "73": {
+      "D": 0,
+      "E": 3,
+      "M": -1.94591,
+      "R_A": -1.029232,
+      "R_B": -0.595223,
+      "words": 199,
+      "verses": 20
+    },
+    "74": {
+      "D": 1,
+      "E": 3,
+      "M": -0.847298,
+      "R_A": -0.37846,
+      "R_B": -1.16676,
+      "words": 255,
+      "verses": 56
+    },
+    "75": {
+      "D": 1,
+      "E": 1,
+      "M": 0.0,
+      "R_A": -0.945369,
+      "R_B": -1.665404,
+      "words": 164,
+      "verses": 40
+    },
+    "76": {
+      "D": 1,
+      "E": 0,
+      "M": 1.098612,
+      "R_A": -0.354154,
+      "R_B": -0.595223,
+      "words": 243,
+      "verses": 31
+    },
+    "77": {
+      "D": 0,
+      "E": 1,
+      "M": -1.098612,
+      "R_A": -0.690025,
+      "R_B": -0.959149,
+      "words": 181,
+      "verses": 50
+    },
+    "78": {
+      "D": 0,
+      "E": 3,
+      "M": -1.94591,
+      "R_A": -0.719267,
+      "R_B": -1.665404,
+      "words": 173,
+      "verses": 40
+    },
+    "79": {
+      "D": 0,
+      "E": 2,
+      "M": -1.609438,
+      "R_A": 0.01846,
+      "R_B": 0.148485,
+      "words": 179,
+      "verses": 46
+    },
+    "80": {
+      "D": 1,
+      "E": 0,
+      "M": 1.098612,
+      "R_A": -0.946327,
+      "R_B": -0.595223,
+      "words": 133,
+      "verses": 42
+    },
+    "81": {
+      "D": 0,
+      "E": 3,
+      "M": -1.94591,
+      "R_A": -3.141459,
+      "R_B": -2.477597,
+      "words": 104,
+      "verses": 29
+    },
+    "82": {
+      "D": 0,
+      "E": 3,
+      "M": -1.94591,
+      "R_A": -2.974202,
+      "R_B": -2.623102,
+      "words": 80,
+      "verses": 19
+    },
+    "83": {
+      "D": 1,
+      "E": 6,
+      "M": -1.466337,
+      "R_A": -1.087585,
+      "R_B": -0.974311,
+      "words": 169,
+      "verses": 36
+    },
+    "84": {
+      "D": 0,
+      "E": 4,
+      "M": -2.197225,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 107,
+      "verses": 25
+    },
+    "85": {
+      "D": 0,
+      "E": 1,
+      "M": -1.098612,
+      "R_A": -0.950704,
+      "R_B": -0.309471,
+      "words": 109,
+      "verses": 22
+    },
+    "86": {
+      "D": 1,
+      "E": 2,
+      "M": -0.510826,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 61,
+      "verses": 17
+    },
+    "87": {
+      "D": 0,
+      "E": 4,
+      "M": -2.197225,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 72,
+      "verses": 19
+    },
+    "88": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -0.407449,
+      "R_B": -0.595223,
+      "words": 92,
+      "verses": 26
+    },
+    "89": {
+      "D": 0,
+      "E": 1,
+      "M": -1.098612,
+      "R_A": 0.03345,
+      "R_B": -0.595223,
+      "words": 137,
+      "verses": 30
+    },
+    "90": {
+      "D": 0,
+      "E": 3,
+      "M": -1.94591,
+      "R_A": 0.400867,
+      "R_B": -0.595223,
+      "words": 82,
+      "verses": 20
+    },
+    "91": {
+      "D": 0,
+      "E": 2,
+      "M": -1.609438,
+      "R_A": 0.076646,
+      "R_B": -0.176122,
+      "words": 54,
+      "verses": 15
+    },
+    "92": {
+      "D": 0,
+      "E": 8,
+      "M": -2.833213,
+      "R_A": 0.089976,
+      "R_B": -0.595223,
+      "words": 71,
+      "verses": 21
+    },
+    "93": {
+      "D": 2,
+      "E": 3,
+      "M": -0.336472,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 40,
+      "verses": 11
+    },
+    "94": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -1.962831,
+      "R_B": -1.665404,
+      "words": 27,
+      "verses": 8
+    },
+    "95": {
+      "D": 0,
+      "E": 2,
+      "M": -1.609438,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 34,
+      "verses": 8
+    },
+    "96": {
+      "D": 2,
+      "E": 4,
+      "M": -0.587787,
+      "R_A": -0.88711,
+      "R_B": -0.595223,
+      "words": 72,
+      "verses": 19
+    },
+    "97": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 30,
+      "verses": 5
+    },
+    "98": {
+      "D": 0,
+      "E": 2,
+      "M": -1.609438,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 94,
+      "verses": 8
+    },
+    "99": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 36,
+      "verses": 8
+    },
+    "100": {
+      "D": 0,
+      "E": 4,
+      "M": -2.197225,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 40,
+      "verses": 11
+    },
+    "101": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 36,
+      "verses": 11
+    },
+    "102": {
+      "D": 0,
+      "E": 5,
+      "M": -2.397895,
+      "R_A": -1.962831,
+      "R_B": -1.665404,
+      "words": 28,
+      "verses": 8
+    },
+    "103": {
+      "D": 0,
+      "E": 1,
+      "M": -1.098612,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 14,
+      "verses": 3
+    },
+    "104": {
+      "D": 0,
+      "E": 1,
+      "M": -1.098612,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 33,
+      "verses": 9
+    },
+    "105": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 23,
+      "verses": 5
+    },
+    "106": {
+      "D": 1,
+      "E": 0,
+      "M": 1.098612,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 17,
+      "verses": 4
+    },
+    "107": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 25,
+      "verses": 7
+    },
+    "108": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 10,
+      "verses": 3
+    },
+    "109": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 26,
+      "verses": 6
+    },
+    "110": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 19,
+      "verses": 3
+    },
+    "111": {
+      "D": 0,
+      "E": 1,
+      "M": -1.098612,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 23,
+      "verses": 5
+    },
+    "112": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -1.153588,
+      "R_B": -0.595223,
+      "words": 15,
+      "verses": 4
+    },
+    "113": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 23,
+      "verses": 5
+    },
+    "114": {
+      "D": 0,
+      "E": 0,
+      "M": 0.0,
+      "R_A": -0.220915,
+      "R_B": -0.595223,
+      "words": 20,
+      "verses": 6
+    }
+  }
+}

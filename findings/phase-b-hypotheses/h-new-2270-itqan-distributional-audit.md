@@ -87,7 +87,15 @@ among the ~10 verses classically flagged as Medinan-within-a-Meccan-sūra.)
 ## Claim 4 — al-Hudhalī's sajda criterion: RULES-FRAGILE
 
 > "وفي كامل الهذلي كل سورة فيها سجدة فهي مكية" — al-Itqān nawʿ 1, line 1176.
-> Sajda verse-list (14, Shāfiʿī): al-Itqān nawʿ 19, lines 6783-6786.
+> Sajda verse-list (14): al-Itqān **nawʿ 35** (*fī ādāb tilāwatihi wa-tālīhi*), lines 6783-6786.
+>
+> **CITATION CORRECTED 2026-08-09.** This line previously read *nawʿ 19*. The line offsets were
+> right; the nawʿ was off by sixteen. Verified against the file's own headers: nawʿ 19
+> (*fī ʿadad suwarihi wa-āyātihi wa-kalimātihi wa-ḥurūfihi*) runs lines 4022-4372; nawʿ 35 opens
+> at line 6386. Line 6783 is inside nawʿ 35. The error is understandable — nawʿ 19 is the
+> *counting* nawʿ, exactly where a sajdah tally would be expected — but the tally is not there.
+> The "(Shāfiʿī)" attribution is also dropped: al-Suyūṭī is himself a Shāfiʿī and gives fourteen,
+> so 14 is not the non-Shāfiʿī count. See [[h-new-3030-sajdah-glyph]] §2.3.
 
 The 13 sajda-bearing surahs are Q7,13,16,17,19,22,25,27,32,41,53,84,96. Under the project's binary
 Tanzil/Egyptian-standard label, **two are Medinan** — Q13 al-Raʿd and Q22 al-Ḥajj — which falsifies

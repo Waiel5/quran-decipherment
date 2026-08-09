@@ -56,7 +56,13 @@ have detected anything short of a threefold effect**, so the NULL carries almost
 weight against textual marking. *Did not detect* and *could not have detected* are different
 claims, and only a computed MDE distinguishes them.
 
-**Headline inferential verdict: NULL**, per the locked rule at prereg §7.4. No arm passed.
+**It is not, however, UNTESTABLE-AT-THIS-N** — that branch was computed and did not fire
+(S\* = 12 against an attainable ceiling of 26). The design *can* reject; it just cannot reject
+anything under 3.25×. §3.5 states why that distinction had to be checked rather than assumed, and
+why an underpowered NULL is the same species of claim as an unverified absence claim.
+
+**Headline inferential verdict: NULL**, under both the pre-registered rule and the directed
+variant that drops the non-blind arm. No verdict-bearing arm passed.
 
 **Two results stand independently:**
 
@@ -292,7 +298,48 @@ an honest rate ratio between **1.27 and 2.58** (INVESTIGATION-PROTOCOL correctio
 2026-08-07). **This design could not have detected an effect as large as the strongest law the
 project has established.** That single comparison is the finding.
 
-### 3.5 B3 — the lit-locus count, model-free
+### 3.5 UNTESTABLE-AT-THIS-N — the branch was evaluated, and it did not fire
+
+A design can fail in two distinguishable ways, and conflating them is the error this section
+exists to prevent:
+
+| | claim | what it licenses |
+|:--|:--|:--|
+| **NULL** | the test ran and did not reject | invites the reading *"no signal exists"* |
+| **UNTESTABLE-AT-THIS-N** | **S\* exceeds the attainable ceiling S_max** — no configuration of the corpus could reject at α | *"this instrument could not have seen one"*, and **nothing whatever about the signal** |
+
+**Computed here: S\* = 12, S_max = 26. The branch did NOT fire.** The design *can* reject in
+principle — if the fifteen loci were maximal it would return p ≈ 4 × 10⁻¹⁴. So F-8 is **not**
+untestable at n = 15.
+
+**Where it actually lands is between the two**, and that position needs saying precisely: the
+design can reject, but only against an effect of **3.25×**. So the NULL is not vacuous, and it is
+not worth much either. Reporting it as a bare NULL overstates it; reporting it as untestability
+would have been **false**, and the check that establishes which is one subtraction.
+
+> **This generalises `findings/ABSENCE-CLAIMS.md` from data to effects.** That file's rule is *"a
+> claim of absence is a claim about a search, and it is only as wide as the search that produced
+> it — state the search or do not make the claim."* **A NULL is a claim of absence about an
+> effect, and it is only as wide as the power of the test that produced it.** The parallel is
+> exact, including the reason it matters: ABSENCE-CLAIMS §1 notes that nothing downstream fails
+> when an absence claim is wrong, because the experiment it blocked is simply never run. **An
+> underpowered NULL does the same thing** — it retires a hypothesis without contradicting
+> anything, and no later test collides with it.
+>
+> The remedy transfers directly. ABSENCE-CLAIMS requires an absence claim to state its *command,
+> paths and threshold*. **A NULL should be required to state its MDE.** Without one, "we tested it
+> and found nothing" is the same species of unverifiable assertion as "it is not on disk".
+
+### 3.6 These numbers are reusable — read your floor off the curve
+
+**S\*, S_max and the §3.3 power curve are properties of the pools, not of the observation.** Any
+future n = 15-scale matched-pool test in this project can read its detectability floor straight off
+`B1_quantile_power_curve` in either run's `result.json` without re-deriving it. The shape is
+governed by the tie fraction of the outcome and the pool size, so it transfers to any sparse count
+outcome at this n: **top quartile for 80 % power, and only 15 % power against a uniform
+above-median effect.**
+
+### 3.7 B3 — the lit-locus count, model-free
 
 Every one of the fifteen pools has **modal value zero**, so the modal configuration gives S = 0.
 Promoting loci to their pool maximum, largest gain first, until S ≥ S\* = 12:
@@ -307,7 +354,7 @@ mostly empty.
 
 ---
 
-## 4. Deliverable C — the arms, and an exact replication
+## 4. Deliverable C — the arms, and an exact reproduction
 
 **Only C2 and C3 carry verdicts.** C1 is non-blind and was stripped of its verdict (§4.1).
 
@@ -449,8 +496,13 @@ so no ordering can enter. 200,000 draws, seed 20260509.
 2. **Two alternative families, not all of them.** The quantile and tilt models were locked in
    advance and disagreed on the severity band. A different alternative would give a different MDE.
    The full power curve is published (§3.3) so any reader may apply their own threshold or model.
-3. **C1 is not a blind arm** (§1.1) and contributes no novelty. Its value here is that it
-   reproduces exactly, which authenticates the pools the power computation runs on.
+3. **C1 is not a blind arm** (§1.1), carries no verdict, and contributes no novelty. Its value is
+   that it reproduces exactly, which authenticates the pools the power computation runs on.
+   **The pre-registered decision rule at §7.4 was written with C1 as its primary**, and stripping
+   C1 is therefore a post-registration change to that rule. It is reported alongside the
+   registered verdict rather than in place of it, and it is defensible **only** because both rules
+   return NULL on this data. Had they differed, the registered rule would govern and the
+   divergence would itself have been the finding.
 4. **C2 as registered is invalid** (§5). The repaired version is post-hoc and cannot support any
    verdict.
 5. **C3's length match is poor** — mean |Δ| = 118.7 words against a mean surah length far larger.
@@ -483,9 +535,20 @@ so no ordering can enter. 200,000 draws, seed 20260509.
 - **A deterministic tie-break silently converted a corpus-wide null into an al-Baqara null**
   (§5), and the detection is a one-line candidate count.
 
+**Also settled, on the classical side:**
+- **The briefing's Ḥanafī-vs-Shāfiʿī framing is superseded** by al-Suyūṭī's own text (§2.3), and
+  the six places it propagated are inventoried (§2.4) — two editable, four in immutable
+  pre-registrations that must be left as they stand.
+- **H-NEW-2270 cites the sajdah passage to nawʿ 19; it is nawʿ 35** (§2.4). Second wrong citation
+  of this one passage; the line offsets were right every time.
+
 **Queued — each needs its own prospective pre-registration:**
 - **H-NEW-3031** — an audit sweep for the §5 tie-break defect across every matched-pool design in
   the repository. The screen is mechanical: for each pool, count candidates tying at the optimum.
+- **Ledger action (not mine to edit):** correct `HANDOFF/FRONTIER-MAP-2026-08-07.md:238` and
+  `h-new-2270-itqan-distributional-audit.md:90` per §2.4. Both are outside this lane.
+- **A standing proposal, from §3.5:** require every NULL in this project to state its MDE, on the
+  same footing that `ABSENCE-CLAIMS.md` requires every absence claim to state its search.
 - **H-NEW-3032** — F-8 re-run at pericope scale, where H-NEW-1510 already found structure, with
   the MDE computed **first** so the design is chosen to have power rather than discovered not to.
 - **H-NEW-2953** (from H-NEW-2950, still open) — repair or delete the two truncated flat files.
@@ -495,7 +558,12 @@ so no ordering can enter. 200,000 draws, seed 20260509.
 ## Sources
 
 - `findings/phase-b-hypotheses/prereg-h-new-3030-sajdah-glyph.md` — SHA-256 `712a98af…d293009`.
-- Run: `findings/phase-b-hypotheses/runs/h-new-3030/20260809T065545Z/{result,manifest}.json`.
+- Registered run: `findings/phase-b-hypotheses/runs/h-new-3030/20260809T065545Z/{result,manifest}.json`.
+- Directed re-analysis: `findings/phase-b-hypotheses/runs/h-new-3030/20260809T070603Z/{result,manifest}.json`
+  — same prereg SHA, C1 stripped of its verdict, both headline rules computed and equal. **Both
+  directories retained; neither deleted or edited.**
+- `data/literature/classical-tafsir/raw/suyuti-itqan.openiti.raw.txt` — nawʿ header index used for
+  §2.4: nawʿ 19 at line 4022, nawʿ 35 at line 6386, sajdah masʾala at line 6783.
 - Post-hoc: `findings/phase-b-hypotheses/runs/h-new-3030-posthoc/20260809T065803Z/{result,manifest}.json`.
 - `data/morphology/quranic-corpus-morphology-0.4.txt` — QAC v0.4, SHA-256 `a1d12923…5d8c46`.
 - `quran-text/quran-full-tashkeel.json` — SHA-256 `382a7341…6b6715`.

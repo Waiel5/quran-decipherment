@@ -153,26 +153,28 @@ not have.
 
 ### 3.2 Why this replaces the "40 shortest" cutoff
 
-"Zero of 29 in the bottom-40" is `R_min ≥ 41` stated with a chosen 40. Any cutoff `T` below
-`R_min` yields count 0, and the exact p-value falls monotonically as `T` rises (§6.1 curve).
+"Zero of 29 in the bottom-40" is `S_below ≥ 40` stated with a chosen 40. Any cutoff `T ≤
+S_below` yields count 0, and the exact p-value falls monotonically as `T` rises (§6.1 curve).
 A threshold picked after seeing where the zeros stop is a **maximally-selected** statistic and
-its nominal p-value is not valid.
+its nominal p-value is not valid — sweeping the threshold answers the threshold-shopping
+objection, but it does not license quoting the extreme of the sweep as a fixed test.
 
-`R_min` has no such freedom. It is defined before the data are seen; its observed value
-*determines* the tail. `P(R_min ≥ r)` is an ordinary exact one-sided p-value with no selection
-to correct for. This is a strict methodological improvement over both H-NEW-46's `T = 29` and
-the audit's `T = 40`.
+`S_below` has no such freedom. It is defined before the data are seen; its observed value
+*determines* the tail. `P(S_below ≥ s)` is an ordinary exact one-sided p-value with no
+selection to correct for, and per §3.0 no tie-break freedom either. This is a strict
+methodological improvement over H-NEW-46's `T = 29`, the audit's `T = 40`, and any rank-based
+form of the same statistic.
 
 ---
 
 ## 4. The null — exact, and why no permutation is run
 
 Under H₀ the 29 labels are a uniformly random 29-subset of the 114 surahs, independent of
-length. The event `{R_min ≥ r}` is exactly the event that all 29 labels avoid the `r − 1`
-shortest surahs. Counting subsets directly:
+length. The event `{S_below ≥ s}` is exactly the event that all 29 labels avoid the `s`
+strictly-shorter surahs. Counting subsets directly:
 
 ```
-P(R_min ≥ r) = C(114 − (r − 1), 29) / C(114, 29)
+P(S_below ≥ s) = C(114 − s, 29) / C(114, 29)
 ```
 
 **No permutation null is run, and this is a deliberate design choice, not an omission.**
@@ -188,8 +190,8 @@ division in `fractions.Fraction` before converting to float, so no intermediate 
 enters the reported p.
 
 **Positive control on the arithmetic (pre-locked):** substituting the 29 *longest* surahs as
-a synthetic label set must return `R_min = 86` and `p = C(29,29)/C(114,29) = 1/C(114,29)`;
-substituting the 29 *shortest* must return `R_min = 1` and `p = 1.0` exactly. Both are checked
+a synthetic label set must return `S_below = 85` and `p = C(29,29)/C(114,29) = 1/C(114,29)`;
+substituting the 29 *shortest* must return `S_below = 0` and `p = 1.0` exactly. Both are checked
 by assertion; the run aborts on either failure.
 
 ---
@@ -222,7 +224,7 @@ metrics closer to the classical measure.
 | outcome | verdict |
 |:--|:--|
 | `p < α_bon` under **all three** metrics | **ROBUST** — the length floor is not a metric artefact |
-| `p < α_bon` under **two** metrics | **PARTIAL** — report which metric dissents and its `R_min` |
+| `p < α_bon` under **two** metrics | **PARTIAL** — report which metric dissents and its `S_below` |
 | `p < α_bon` under **one or zero** metrics | **METRIC-DEPENDENT** — H-NEW-46's tuple is withdrawn as too narrow |
 
 Per §0.1 this decides *metric robustness only*. **No outcome of §5.1 makes the underlying
@@ -236,11 +238,11 @@ unremarkable among them. The control is classically grounded — al-Suyūṭī, 
 partitions all 114 surahs into **ten** opening types and gives the count of each (§6.2.1).
 The muqaṭṭaʿāt are his type 2.
 
-For each of the other nine types, compute `R_min` and its exact p under all three metrics,
+For each of the other nine types, compute `S_below` and its exact p under all three metrics,
 using the same formula with the class's own size `k` in place of 29.
 
 **Reported statistic: the survivor count** — how many of the ten opening classes clear
-α = 0.05 on `R_min` in the upper direction. This is the intersection question, not a
+α = 0.05 on `S_below` in the upper direction. This is the intersection question, not a
 union of ten separate tests: if six of ten classes show a length floor, "the letters mark long
 surahs" is a fact about *surah openings and length* generally and the muqaṭṭaʿāt lose their
 claim to be special. If the muqaṭṭaʿāt are the sole or near-sole survivor, the specificity
@@ -260,8 +262,8 @@ control position in the muṣḥaf. The muqaṭṭaʿāt surahs sit overwhelming
 codex, and the codex is loosely ordered long-to-short. A length floor could be a positional
 floor wearing a length label — the same failure mode as H-NEW-206, one level up.
 
-Statistic: `R_min` recomputed on **position-residualised length**. Regress length on muṣḥaf
-index (`surah_id`) by LOESS, take residuals, re-rank, recompute `R_min`. Because
+Statistic: `S_below` recomputed on **position-residualised length**. Regress length on muṣḥaf
+index (`surah_id`) by LOESS, take residuals, re-rank, recompute `S_below`. Because
 residualisation destroys the exact-null argument (the residual ranks are no longer exchangeable
 under a simple subset null), this arm alone uses a **permutation null**: 10⁵ uniform random
 29-subsets, seed **20260809**, empirical one-sided upper p.
@@ -278,7 +280,7 @@ it bounds what §5.1 may be said to mean.
 
 **The §5.1 statistics were computed before this file was written.** While verifying al-Suyūṭī's
 length claim for the novelty search (§6.2.2) I went beyond what that verification required and
-computed `R_min` and the full threshold curve under all three metrics. The observed values are
+computed the floor statistic and the full threshold curve under all three metrics. The observed values are
 therefore known at pre-registration time and are disclosed in full in §6.1 rather than hidden.
 
 **Consequence, stated plainly: §5.1 is a disclosed re-analysis, not a confirmatory test.** It
@@ -315,15 +317,54 @@ the audit's 40.
 **What the curve shows.** The count is 0 at every `T ≤ 48` under all three metrics; the p-value
 falls smoothly and monotonically; nothing distinguishes 40. **The result does not depend on the
 threshold — it depends on there being no muqaṭṭaʿāt surah below rank 49.** That is precisely
-what `R_min` measures directly, which is why §3 discards the cutoff.
+what `S_below` measures directly, which is why §3 discards the cutoff.
 
 **The audit's 40 was conservative, not favourable.** The threshold-free statistic is two orders
 of magnitude more extreme than the number the audit reported. Had 40 been chosen to flatter the
 result, it would have been chosen at 48.
 
-Observed values, disclosed: `R_min` = **49** (M1, Q 32 al-Sajda), **53** (M2, Q 68 al-Qalam),
-**54** (M3, Q 68 al-Qalam). The identity of the floor surah is itself metric-dependent — a
-further reason the single-metric tuple was too narrow.
+Observed values, disclosed, under the §3.0 strictly-shorter rule:
+
+| metric | floor surah | `S_below` | maximal statement | exact P |
+|:--|:--|--:|:--|--:|
+| M1 verse | Q 32 al-Sajda (30 v.) | **48** | all 29 within the **66** longest | 4.380×10⁻⁹ |
+| M2 word | Q 68 al-Qalam (308 w.) | **52** | all 29 within the **62** longest | 4.014×10⁻¹⁰ |
+| M3 char | Q 68 al-Qalam (1296 c.) | **53** | all 29 within the **61** longest | 2.137×10⁻¹⁰ |
+
+The identity of the floor surah is itself metric-dependent — Q 32 under M1, Q 68 under M2 and
+M3 — a further reason the single-metric tuple was too narrow.
+
+### 6.1.1 Amendment, 2026-08-09 — threshold-free restatement, and a tie-break correction
+
+**Change 1 (as directed, and legitimate).** The hypothesis is restated from the k = 40 cutoff to
+the threshold-free form that names the boundary surah, so that it is falsifiable by a single
+counterexample. Made **before any confirmatory run**, and it strictly narrows the claim.
+
+**Change 2 (found while making Change 1, and it goes the other way).** The threshold-free form
+proposed for adoption was:
+
+> All 29 muqaṭṭaʿāt surahs fall within the **64 longest**. Floor: Q 32 al-Sajda, 30 verses,
+> length-rank **#64** of 114. Exact P = **1.360×10⁻⁹**. Holds for every k from 1 to 50, fails
+> only at 51.
+
+**That form is internally consistent but rests on an unstated tie-break, chosen in the
+direction that flatters the result.** Q 32 has 30 verses; so do Q 67 al-Mulk and Q 89 al-Fajr.
+Ordering Q 32 *last* among the three tied surahs puts it at rank 51 and yields
+C(64,29)/C(114,29) = 1.360×10⁻⁹. Ordering it *first* — the convention an ascending sort with an
+index tie-break actually produces — puts it at rank 49 and yields C(66,29)/C(114,29) =
+4.380×10⁻⁹. **The tie-break alone moves the p-value by a factor of 3.2**, and nothing in the
+data selects between the two.
+
+Verified directly: **exactly 48 surahs have fewer than 30 verses; three are tied at 30.** The
+sweep statement "holds for k = 1…50, fails at 51" is true only under the Q-32-last tie-break;
+under an index tie-break the first muqaṭṭaʿāt surah enters the bottom-k band at **k = 49**.
+
+§3.0 therefore locks the statistic to `S_below`, a count of **strictly shorter** surahs, which
+has no tie-break freedom at all. **The pre-registered M1 claim is "all 29 within the 66
+longest, P = 4.380×10⁻⁹"** — the conservative reading, three times weaker than the number
+currently in `AUDIT-H-NEW-206-LENGTH-CONFOUND.md` §4.-1, and the one this file will be held to.
+
+M2 and M3 have no boundary tie and are unaffected.
 
 ### 6.2 Novelty search of the classical corpus — what was searched and what was found
 
@@ -482,7 +523,7 @@ the Kufans count `الم` as a verse (al-Qurṭubī) — and, in al-Ṭabarsī, 
 | Classical awareness that muqaṭṭaʿāt surahs *have* comparable lengths | **PRESENT** — al-Suyūṭī nawʿ 18 (§6.2.2) |
 | Classical placement of letter-groups and length-classes in one scheme | **PRESENT** — *Jamāl al-qurrāʾ* via al-Itqān nawʿ 17 (§6.2.3) |
 | Classical linkage of the letters to a length-division boundary | **PRESENT** — al-Biqāʿī (§6.2.4), positional not metric, and pointing the other way |
-| The exact combinatorial null on `R_min` | **Novel so far as this search reached** — and it is a modern statistical object, not the kind of claim the tradition makes |
+| The exact combinatorial null on `S_below` | **Novel so far as this search reached** — and it is a modern statistical object, not the kind of claim the tradition makes |
 | Metric-robustness of the floor under M2 (word count) | **Partly pre-empted** — `H-NEW-570-REVERSAL` already binned by log word count (§0.1) |
 | Metric-robustness of the floor under M3 (character count) | **Not previously tested** |
 
@@ -496,7 +537,9 @@ robustness. That is a methodological contribution to an existing finding, not a 
 
 ## 7. What is published regardless of outcome
 
-- All three `R_min` values and exact p's, and the full §6.1 curve recomputed by the harness.
+- All three `S_below` values and exact p's, and the full §6.1 curve recomputed by the harness.
+- The §3.0 boundary-tie audit under every metric: the floor surah, its length, and the list of
+  surahs tied with it. A tie that moves the p-value must be visible, never absorbed by a sort.
 - The §5.2 survivor count across all ten of al-Suyūṭī's opening classes, whatever it shows —
   **including the outcome in which the muqaṭṭaʿāt are unremarkable among them.**
 - The §5.3 position-residualised result, **including a failure**, which would mean the length
