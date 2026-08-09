@@ -152,3 +152,36 @@ involve counts?"* nor *"did it pass?"* but **"is there a parametric p, computed 
 is mostly tied, carrying a verdict?"** A descriptive census, a Bonferroni-corrected permutation
 test, and an exact enumeration are all immune regardless of how sparse their counts are. **The
 defect lives in the test, not in the data.**
+
+### 7.3 The triage resolves — the risk surface is 10 scripts, not 34 findings
+
+§7.2 established that **the defect lives in the test, not the data**. That converts the triage from
+a prose question into a mechanical one: **which scripts use a parametric test at all?**
+
+Grepping every script in `findings/phase-b-hypotheses/scripts/` and `scripts/` for
+`pearsonr` · `ttest_` · `chi2_contingency` · `f_oneway` · `linregress`:
+
+| | |
+|:--|--:|
+| scripts using a **parametric** test | **10** |
+| scripts using **permutation / shuffle / seeded resampling** | **454** |
+
+**The risk surface is ten scripts.** Everything else in this project is structurally immune,
+because permutation nulls are the standing protocol here and a permutation null does not care how
+tied its outcome is.
+
+Of those ten, **four are from this week and already handled**: `h-new-2920` and its post-hoc (the
+proxy census, which reported both routes), and `h-new-860-1` and its post-hoc (which used the
+parametric arm descriptively alongside its registered nulls). The remaining six are the genuine
+read list: `canonical_order_followup`, `h_new_112_spectral_network`, `h_new_150_liturgical_hub`,
+`h_new_200_name_class_predictor`, `h_new_206_semi_supervised_taxonomy`,
+`Q029_F_03_ankabut_corpus_singleton`.
+
+**The proportion is the finding.** A defect that looked like it might touch 34 findings touches at
+most six, and it does so only because this project adopted permutation nulls as a standing rule
+long before the defect was identified. **A convention chosen for general rigour turned out to
+immunise the corpus against a specific failure nobody had named yet** — which is the strongest
+practical argument for standing methodological rules over case-by-case judgement.
+
+**Still unread**, and recorded as such: whether any of those six actually pairs a parametric
+primary test with a mostly-tied outcome AND a passing verdict. All three conditions are required.
