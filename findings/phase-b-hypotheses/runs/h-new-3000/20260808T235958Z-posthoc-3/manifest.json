@@ -1,0 +1,27 @@
+{
+  "hypothesis": "H-NEW-3000",
+  "inputs": [
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-2990-verse-profile.csv",
+      "sha256": "f4ca4377fe0fe4b7bf2b1cf34f8afa8632f61427e8bcd1d393d1afe8795d90de"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-860-1-reception-weights.csv",
+      "sha256": "f6bf5f744025d65d47d6b3f4d2ba7425531e56c048e5c75baa25f85f0f0b26c0"
+    }
+  ],
+  "kind": "POST-HOC 3 -- not pre-registered",
+  "n_permutations": 10000,
+  "numpy": "2.3.1",
+  "parent_prereg": "findings/phase-b-hypotheses/prereg-h-new-3000-reception-residual-rosters.md",
+  "parent_prereg_sha256": "6515fe1a12ebf742e3ab72d5c6e18e8c5a82d1c0a4f4fd894aa9397eed344789",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "run_directory": "findings/phase-b-hypotheses/runs/h-new-3000/20260808T235958Z-posthoc-3",
+  "script": "findings/phase-b-hypotheses/scripts/h-new-3000-posthoc-3.py",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  },
+  "utc": "2026-08-08T23:59:58.448047+00:00"
+}

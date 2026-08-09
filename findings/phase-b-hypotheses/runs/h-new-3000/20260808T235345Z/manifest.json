@@ -1,0 +1,62 @@
+{
+  "git_commit": "30a8d5f1c0fc5816f444439a231b9ae4f137dd8d",
+  "hypothesis": "H-NEW-3000",
+  "inputs": [
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-2990-column-declarations.csv",
+      "sha256": "61f7b6d12490214abb8857a5e76b532968ee64ae6c33018e29bc23769897a3a2"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-2990-verse-profile.csv",
+      "sha256": "f4ca4377fe0fe4b7bf2b1cf34f8afa8632f61427e8bcd1d393d1afe8795d90de"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-860-1-reception-weights.csv",
+      "sha256": "f6bf5f744025d65d47d6b3f4d2ba7425531e56c048e5c75baa25f85f0f0b26c0"
+    },
+    {
+      "path": "quran-text/quran-full-tashkeel.json",
+      "sha256": "382a7341300602ec8b366316d4bbe2a44955c2bf984d395bdd82dae6110b6715"
+    },
+    {
+      "path": "quran-text/quran-no-tashkeel.json",
+      "sha256": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+    }
+  ],
+  "n_permutations": 10000,
+  "numpy": "2.3.1",
+  "outputs": [
+    {
+      "path": "findings/phase-b-hypotheses/runs/h-new-3000/20260808T235345Z/roster-1-structurally-unusual-rarely-cited.csv",
+      "role": "roster 1, write-once"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/runs/h-new-3000/20260808T235345Z/roster-2-heavily-cited-structurally-ordinary.csv",
+      "role": "roster 2, write-once"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/runs/h-new-3000/20260808T235345Z/result.json",
+      "role": "result, written once at completion"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-3000-roster-1-structurally-unusual-rarely-cited.csv",
+      "role": "published roster 1 (outside the run directory; replaceable)"
+    },
+    {
+      "path": "findings/phase-b-hypotheses/csv/h-new-3000-roster-2-heavily-cited-structurally-ordinary.csv",
+      "role": "published roster 2 (outside the run directory; replaceable)"
+    }
+  ],
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "prereg": "findings/phase-b-hypotheses/prereg-h-new-3000-reception-residual-rosters.md",
+  "prereg_sha256": "6515fe1a12ebf742e3ab72d5c6e18e8c5a82d1c0a4f4fd894aa9397eed344789",
+  "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "run_directory": "findings/phase-b-hypotheses/runs/h-new-3000/20260808T235345Z",
+  "run_id": "20260808T235345Z",
+  "script": "findings/phase-b-hypotheses/scripts/h-new-3000.py",
+  "seeds": {
+    "primary": 20260509,
+    "replication": 20260519
+  },
+  "utc": "2026-08-08T23:53:49.043318+00:00"
+}

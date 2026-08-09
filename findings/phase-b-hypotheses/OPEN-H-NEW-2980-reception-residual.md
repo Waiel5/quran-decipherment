@@ -1,12 +1,45 @@
 ---
 id: OPEN-H-NEW-2980
-title: "OPEN QUESTION — the reception-weight residual rosters, unrun after a connection failure"
-status: "PARTIAL — concentration census delivered; the two rosters were ILL-POSED for want of a per-verse structural instrument, which H-NEW-2990 built on 2026-08-09. THE ROSTERS THEMSELVES REMAIN UNRUN."
+title: "CLOSED — the reception-weight residual rosters, run as H-NEW-3000 on 2026-08-09"
+status: "CLOSED 2026-08-09 by findings/phase-b-hypotheses/h-new-3000-reception-residual-rosters.md. Both rosters delivered. Inferential arm: locked verdict SUPPORTED, NULL under exact tests."
 date: 2026-08-08
 updated: 2026-08-09
+closed_by: findings/phase-b-hypotheses/h-new-3000-reception-residual-rosters.md
 author: Waiel Al-Shujaa
 instrument_ready: findings/phase-b-hypotheses/csv/h-new-860-1-reception-weights.csv
 structural_instrument: findings/phase-b-hypotheses/csv/h-new-2990-verse-profile.csv
+---
+
+> # ✅ CLOSED — 2026-08-09, by H-NEW-3000
+>
+> **`findings/phase-b-hypotheses/h-new-3000-reception-residual-rosters.md`. Both rosters exist:**
+>
+> - `csv/h-new-3000-roster-1-structurally-unusual-rarely-cited.csv`
+> - `csv/h-new-3000-roster-2-heavily-cited-structurally-ordinary.csv`
+>
+> 30 rows each, with verse text, both scores, both ranks, the four composite members and two
+> repetition flags. Structural score: **`struct_z_composite`** and its four named members;
+> `sum_root_surprisal_bits` and `n_root_types` excluded as LENGTH-DOMINATED. Length control:
+> stratification into ten `n_words` deciles plus partial Spearman.
+>
+> **The concentration census below is reproduced exactly** by that run from the locked
+> instruments — 13.9 %, top-20 at 21.3 %, Q 112:1 at 102.
+>
+> **Inferential verdict: SUPPORTED under the locked rule, NULL under exact tests.** Three of six
+> arms cleared Bonferroni α on parametric p-values; `n_hadith` is 86 % tied at zero and those
+> p-values are **13–57× too liberal**. Under an exact permutation null with the same statistic
+> only `−log10(rime_class_size)` survives, and it collapses when surah-mean-centred
+> (ρ +0.0883 → +0.0284, p 0.0001 → 0.0193, 53 % of variance retained). **Nothing verse-level
+> survives.** See H-NEW-3000 §6.
+>
+> **This file's ill-posedness ruling was vindicated in an unexpected form.** The unit mismatch it
+> refused to improvise came back through a column that *is* verse-local by definition but carries
+> **41 % of its variance between surahs**. **Verse-locality of a definition does not make a
+> column's variance verse-level**, and η² by the coarser unit belongs beside ρ-against-length in
+> any future instrument's declarations.
+>
+> **The text below is preserved unchanged as the record of what was known before the run.**
+
 ---
 
 # OPEN — the reception-residual rosters have NOT been produced
