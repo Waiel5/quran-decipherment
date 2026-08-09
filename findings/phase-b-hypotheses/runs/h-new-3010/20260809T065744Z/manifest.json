@@ -1,0 +1,37 @@
+{
+  "finding_id": "H-NEW-3010",
+  "title": "Realis vs irrealis conditionals are register-coded?",
+  "run_utc": "20260809T065744Z",
+  "prereg": {
+    "path": "findings/phase-b-hypotheses/prereg-h-new-3010-conditional-register.md",
+    "sha256": "2b1718af47814c1eebc38178977074eba2631e45a7ff43e0ff0e98ad8c11fe93"
+  },
+  "script": {
+    "path": "findings/phase-b-hypotheses/scripts/h-new-3010.py",
+    "sha256": "3c49c1fe34c1013a8d617dcd385da7e78abaeea1eb5307cf94b5cc296e3abff9"
+  },
+  "frozen_inputs": [
+    {
+      "path": "data/morphology/quranic-corpus-morphology-0.4.txt",
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46"
+    },
+    {
+      "path": "findings/classical-sources/neuwirth-sinai-genre-labels.tsv",
+      "sha256": "16ec35b2793922bd007767ccddfb6d7aeb5ca53e48394792984f88b49164572a"
+    },
+    {
+      "path": "data/hafs-verse-counts.tsv",
+      "sha256": "e1818fb04ac26b863ce1ade50193390d481345a3971919aeb120daf8946212ba"
+    },
+    {
+      "path": "data/revelation-order.csv",
+      "sha256": "74f52ec1518abf8ecbf67671ee1cdd8e4cfc553fc8c5ead8274cc7dae8916fb7"
+    }
+  ],
+  "seed": 20260509,
+  "n_perm": 10000,
+  "k_family": 12,
+  "alpha_bonferroni": 0.004166666666666667,
+  "python": "3.13.12",
+  "write_once": true
+}

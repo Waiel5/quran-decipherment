@@ -1,0 +1,571 @@
+{
+  "note": "POST-HOC, not pre-registered. Changes no verdict. Reports the null MEAN of the permutation distribution under each stratification, which measures how much of the observed contrast the length channel alone reproduces.",
+  "n_perm": 10000,
+  "seed": 20260509,
+  "cells": {
+    "H1|M1|T1": {
+      "observed_D_pooled": 0.15815676036670512,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.00360691930086303,
+          "null_sd": 0.05426081989624335,
+          "fraction_of_observed_reproduced_by_null_mean": -0.022805976124573885,
+          "z_observed_vs_null": 2.981224389474579
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.0070832206872700225,
+          "null_sd": 0.05731191866476064,
+          "fraction_of_observed_reproduced_by_null_mean": -0.04478607598465433,
+          "z_observed_vs_null": 2.883169590264934
+        },
+        "verse_count|bins=5": {
+          "null_mean": 0.017111955434754286,
+          "null_sd": 0.05718546153305615,
+          "fraction_of_observed_reproduced_by_null_mean": 0.1081961681250817,
+          "z_observed_vs_null": 2.466445161947668
+        },
+        "verse_count|bins=10": {
+          "null_mean": 0.02915007500825083,
+          "null_sd": 0.051937258732892407,
+          "fraction_of_observed_reproduced_by_null_mean": 0.18431128040725506,
+          "z_observed_vs_null": 2.4838947704560503
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": 0.05257039650422024,
+          "null_sd": 0.05654467009602266,
+          "fraction_of_observed_reproduced_by_null_mean": 0.33239424215777796,
+          "z_observed_vs_null": 1.8673088671873213
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": 0.06799609925210702,
+          "null_sd": 0.04921726127278951,
+          "fraction_of_observed_reproduced_by_null_mean": 0.42992850317906134,
+          "z_observed_vs_null": 1.8318910638866601
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": -0.005169682732402008,
+          "null_sd": 0.05984459598779372,
+          "fraction_of_observed_reproduced_by_null_mean": -0.03268708033988233,
+          "z_observed_vs_null": 2.729176133671622
+        }
+      }
+    },
+    "H2|M1|T1": {
+      "observed_D_pooled": -0.1079928013189192,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.0203169180406578,
+          "null_sd": 0.04032739063865996,
+          "fraction_of_observed_reproduced_by_null_mean": 0.1881321513334842,
+          "z_observed_vs_null": -2.1741025613050864
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.026834852781887845,
+          "null_sd": 0.039327863917057206,
+          "fraction_of_observed_reproduced_by_null_mean": 0.24848742188509804,
+          "z_observed_vs_null": -2.0636246277752113
+        },
+        "verse_count|bins=5": {
+          "null_mean": -0.0038675469401153527,
+          "null_sd": 0.04956039553113494,
+          "fraction_of_observed_reproduced_by_null_mean": 0.035813006912320915,
+          "z_observed_vs_null": -2.1009770657175255
+        },
+        "verse_count|bins=10": {
+          "null_mean": -0.03713676479812029,
+          "null_sd": 0.04054543636397059,
+          "fraction_of_observed_reproduced_by_null_mean": 0.3438818545733411,
+          "z_observed_vs_null": -1.7475711911134562
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": -0.02934659728425181,
+          "null_sd": 0.035223127573057435,
+          "fraction_of_observed_reproduced_by_null_mean": 0.2717458657043893,
+          "z_observed_vs_null": -2.2328001359772705
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": -0.04410321061355762,
+          "null_sd": 0.03161420380719367,
+          "fraction_of_observed_reproduced_by_null_mean": 0.40839028226811264,
+          "z_observed_vs_null": -2.0209141149024847
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": 0.0074277546473966735,
+          "null_sd": 0.053771531426948314,
+          "fraction_of_observed_reproduced_by_null_mean": -0.06878009049382267,
+          "z_observed_vs_null": -2.146499326007132
+        }
+      }
+    },
+    "H3|M1|T1": {
+      "observed_D_pooled": 0.11165454264045815,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.019991289315167866,
+          "null_sd": 0.046238849892906435,
+          "fraction_of_observed_reproduced_by_null_mean": -0.17904591109689433,
+          "z_observed_vs_null": 2.8470827509881897
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.02990831612247324,
+          "null_sd": 0.04980927874212746,
+          "fraction_of_observed_reproduced_by_null_mean": -0.26786474974674185,
+          "z_observed_vs_null": 2.8420981459263936
+        },
+        "verse_count|bins=5": {
+          "null_mean": 0.018280939967646424,
+          "null_sd": 0.04171520114273926,
+          "fraction_of_observed_reproduced_by_null_mean": 0.16372768662456824,
+          "z_observed_vs_null": 2.2383591620069145
+        },
+        "verse_count|bins=10": {
+          "null_mean": 0.002754702723321315,
+          "null_sd": 0.043091194163396504,
+          "fraction_of_observed_reproduced_by_null_mean": 0.024671658296893557,
+          "z_observed_vs_null": 2.527194755944847
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": 0.03936907012282417,
+          "null_sd": 0.05295321951698866,
+          "fraction_of_observed_reproduced_by_null_mean": 0.3525971195779968,
+          "z_observed_vs_null": 1.365081730194763
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": 0.046524441373722206,
+          "null_sd": 0.04668959393252277,
+          "fraction_of_observed_reproduced_by_null_mean": 0.41668202899309553,
+          "z_observed_vs_null": 1.3949596854679003
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": 0.0016437083267525935,
+          "null_sd": 0.04104080540230896,
+          "fraction_of_observed_reproduced_by_null_mean": 0.01472137440968742,
+          "z_observed_vs_null": 2.6805232800698486
+        }
+      }
+    },
+    "H1|M1|T2": {
+      "observed_D_pooled": 0.16029564990883044,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.002162861842794653,
+          "null_sd": 0.05796011092763474,
+          "fraction_of_observed_reproduced_by_null_mean": -0.013492954075951528,
+          "z_observed_vs_null": 2.8029365222309583
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.005197066331227312,
+          "null_sd": 0.06129010983695599,
+          "fraction_of_observed_reproduced_by_null_mean": -0.03242175526399618,
+          "z_observed_vs_null": 2.7001536900537726
+        },
+        "verse_count|bins=5": {
+          "null_mean": 0.011755723040027477,
+          "null_sd": 0.05842203204071653,
+          "fraction_of_observed_reproduced_by_null_mean": 0.07333775462224738,
+          "z_observed_vs_null": 2.542532700082733
+        },
+        "verse_count|bins=10": {
+          "null_mean": 0.024620421850883506,
+          "null_sd": 0.05470351168460758,
+          "fraction_of_observed_reproduced_by_null_mean": 0.15359382406750643,
+          "z_observed_vs_null": 2.480192292593221
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": 0.03957650324532352,
+          "null_sd": 0.05512493804557091,
+          "fraction_of_observed_reproduced_by_null_mean": 0.2468969261975169,
+          "z_observed_vs_null": 2.1899189539897588
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": 0.06646506022347315,
+          "null_sd": 0.047755452465176366,
+          "fraction_of_observed_reproduced_by_null_mean": 0.4146404488286222,
+          "z_observed_vs_null": 1.9648141697281427
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": -0.0034730524957599677,
+          "null_sd": 0.060358829119523304,
+          "fraction_of_observed_reproduced_by_null_mean": -0.021666542402961633,
+          "z_observed_vs_null": 2.713251810771438
+        }
+      }
+    },
+    "H2|M1|T2": {
+      "observed_D_pooled": -0.09304707722547512,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.01570006170041368,
+          "null_sd": 0.04266958334547182,
+          "fraction_of_observed_reproduced_by_null_mean": 0.16873245424322905,
+          "z_observed_vs_null": -1.8126967610352738
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.01655156715062998,
+          "null_sd": 0.04275515087027325,
+          "fraction_of_observed_reproduced_by_null_mean": 0.1778837943562871,
+          "z_observed_vs_null": -1.7891530848983823
+        },
+        "verse_count|bins=5": {
+          "null_mean": -0.002116538715181082,
+          "null_sd": 0.050523755610897135,
+          "fraction_of_observed_reproduced_by_null_mean": 0.022746966141152476,
+          "z_observed_vs_null": -1.7997581021210116
+        },
+        "verse_count|bins=10": {
+          "null_mean": -0.03095895791500917,
+          "null_sd": 0.043536709200057346,
+          "fraction_of_observed_reproduced_by_null_mean": 0.3327235936706349,
+          "z_observed_vs_null": -1.4261096084493259
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": -0.01686687421781156,
+          "null_sd": 0.03656719662169132,
+          "fraction_of_observed_reproduced_by_null_mean": 0.18127247755390669,
+          "z_observed_vs_null": -2.083293499247196
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": -0.0350757476466127,
+          "null_sd": 0.032378966500965,
+          "fraction_of_observed_reproduced_by_null_mean": 0.37696775323329984,
+          "z_observed_vs_null": -1.790400863385639
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": 0.004894206051399216,
+          "null_sd": 0.05436987477578447,
+          "fraction_of_observed_reproduced_by_null_mean": -0.05259924542862744,
+          "z_observed_vs_null": -1.8013887962915802
+        }
+      }
+    },
+    "H3|M1|T2": {
+      "observed_D_pooled": 0.12412457912457914,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.014756994134263093,
+          "null_sd": 0.04928986763658094,
+          "fraction_of_observed_reproduced_by_null_mean": -0.11888857338603386,
+          "z_observed_vs_null": 2.8176495478305963
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.019415736300733875,
+          "null_sd": 0.05238416953429153,
+          "fraction_of_observed_reproduced_by_null_mean": -0.15642136664364464,
+          "z_observed_vs_null": 2.7401468172813006
+        },
+        "verse_count|bins=5": {
+          "null_mean": 0.013188846667259887,
+          "null_sd": 0.042968556570463674,
+          "fraction_of_observed_reproduced_by_null_mean": 0.10625491550728837,
+          "z_observed_vs_null": 2.5817886685441
+        },
+        "verse_count|bins=10": {
+          "null_mean": 0.00267210822206636,
+          "null_sd": 0.044088104385094466,
+          "fraction_of_observed_reproduced_by_null_mean": 0.021527631681912622,
+          "z_observed_vs_null": 2.75476735950512
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": 0.033439851895364234,
+          "null_sd": 0.05034879541917323,
+          "fraction_of_observed_reproduced_by_null_mean": 0.2694055611806097,
+          "z_observed_vs_null": 1.8011300265325
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": 0.05116124588656033,
+          "null_sd": 0.044259190531499355,
+          "fraction_of_observed_reproduced_by_null_mean": 0.41217659102966003,
+          "z_observed_vs_null": 1.6485464908376635
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": 0.0009681002069182776,
+          "null_sd": 0.04131791953739331,
+          "fraction_of_observed_reproduced_by_null_mean": 0.007799423883215202,
+          "z_observed_vs_null": 2.9807037792936906
+        }
+      }
+    },
+    "H1|M2|T1": {
+      "observed_D_pooled": 0.1070450585013692,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": 0.00466807158499754,
+          "null_sd": 0.06623971882198,
+          "fraction_of_observed_reproduced_by_null_mean": 0.0436084733882212,
+          "z_observed_vs_null": 1.545552860686365
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.0054733197980080025,
+          "null_sd": 0.06792693764083775,
+          "fraction_of_observed_reproduced_by_null_mean": -0.05113098983394917,
+          "z_observed_vs_null": 1.6564618133429736
+        },
+        "verse_count|bins=5": {
+          "null_mean": 0.013146666464343254,
+          "null_sd": 0.06696168623077253,
+          "fraction_of_observed_reproduced_by_null_mean": 0.12281432369131824,
+          "z_observed_vs_null": 1.4022704224236593
+        },
+        "verse_count|bins=10": {
+          "null_mean": 0.03445627744094472,
+          "null_sd": 0.06264430063682498,
+          "fraction_of_observed_reproduced_by_null_mean": 0.32188573600063936,
+          "z_observed_vs_null": 1.158745174301678
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": 0.04540241673844158,
+          "null_sd": 0.06477009247153814,
+          "fraction_of_observed_reproduced_by_null_mean": 0.4241430419495809,
+          "z_observed_vs_null": 0.9517145863272494
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": 0.05158932246836799,
+          "null_sd": 0.0635390034018825,
+          "fraction_of_observed_reproduced_by_null_mean": 0.48194025198938184,
+          "z_observed_vs_null": 0.8727825912258201
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": -0.004628231741189622,
+          "null_sd": 0.07108389600419442,
+          "fraction_of_observed_reproduced_by_null_mean": -0.0432362951264156,
+          "z_observed_vs_null": 1.571006887916911
+        }
+      }
+    },
+    "H2|M2|T1": {
+      "observed_D_pooled": -0.12049096219117533,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.02218938226063364,
+          "null_sd": 0.04199441536581219,
+          "fraction_of_observed_reproduced_by_null_mean": 0.1841580634523207,
+          "z_observed_vs_null": -2.3408250614811363
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.02378344662797274,
+          "null_sd": 0.041948633496938954,
+          "fraction_of_observed_reproduced_by_null_mean": 0.19738780565331582,
+          "z_observed_vs_null": -2.3053794009823814
+        },
+        "verse_count|bins=5": {
+          "null_mean": -0.00034311253559163557,
+          "null_sd": 0.05367528839093828,
+          "fraction_of_observed_reproduced_by_null_mean": 0.002847620513206964,
+          "z_observed_vs_null": -2.2384201977733134
+        },
+        "verse_count|bins=10": {
+          "null_mean": -0.033576096883899925,
+          "null_sd": 0.04389379872474548,
+          "fraction_of_observed_reproduced_by_null_mean": 0.2786607084324455,
+          "z_observed_vs_null": -1.9801171881320097
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": -0.02888331879688517,
+          "null_sd": 0.038514017906827895,
+          "fraction_of_observed_reproduced_by_null_mean": 0.23971357080755856,
+          "z_observed_vs_null": -2.3785532741846094
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": -0.04829591166783095,
+          "null_sd": 0.0342753288579951,
+          "fraction_of_observed_reproduced_by_null_mean": 0.40082601042892246,
+          "z_observed_vs_null": -2.1063269975454686
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": 0.009774312265865084,
+          "null_sd": 0.060753701144791915,
+          "fraction_of_observed_reproduced_by_null_mean": -0.08112070887405484,
+          "z_observed_vs_null": -2.144153722364738
+        }
+      }
+    },
+    "H3|M2|T1": {
+      "observed_D_pooled": 0.035953177257525115,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.012365412382170446,
+          "null_sd": 0.05871667042755131,
+          "fraction_of_observed_reproduced_by_null_mean": -0.34393100486222883,
+          "z_observed_vs_null": 0.8229109261110842
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.025088333075122097,
+          "null_sd": 0.060119687688275206,
+          "fraction_of_observed_reproduced_by_null_mean": -0.6978057292522326,
+          "z_observed_vs_null": 1.015333124302836
+        },
+        "verse_count|bins=5": {
+          "null_mean": 0.015411669534506456,
+          "null_sd": 0.049858146985917104,
+          "fraction_of_observed_reproduced_by_null_mean": 0.4286594596109234,
+          "z_observed_vs_null": 0.41199902051756554
+        },
+        "verse_count|bins=10": {
+          "null_mean": 0.009735471842903217,
+          "null_sd": 0.05362757914004847,
+          "fraction_of_observed_reproduced_by_null_mean": 0.270781961025866,
+          "z_observed_vs_null": 0.4888847461518697
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": 0.028548245304685468,
+          "null_sd": 0.0593912427686119,
+          "fraction_of_observed_reproduced_by_null_mean": 0.7940395670791579,
+          "z_observed_vs_null": 0.12468053550738514
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": 0.020674519756407658,
+          "null_sd": 0.05944189961110622,
+          "fraction_of_observed_reproduced_by_null_mean": 0.5750401308991521,
+          "z_observed_vs_null": 0.25703514862541116
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": 0.004976863502014337,
+          "null_sd": 0.0468551881207309,
+          "fraction_of_observed_reproduced_by_null_mean": 0.1384262499630033,
+          "z_observed_vs_null": 0.6611074461102296
+        }
+      }
+    },
+    "H1|M2|T2": {
+      "observed_D_pooled": 0.10786193672099711,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": 0.004327285740881229,
+          "null_sd": 0.07089513472015752,
+          "fraction_of_observed_reproduced_by_null_mean": 0.04011874691323664,
+          "z_observed_vs_null": 1.4603914836863696
+        },
+        "log_word_count|bins=10": {
+          "null_mean": 0.001015671613309715,
+          "null_sd": 0.0733069365672222,
+          "fraction_of_observed_reproduced_by_null_mean": 0.009416404379395848,
+          "z_observed_vs_null": 1.4575191668214065
+        },
+        "verse_count|bins=5": {
+          "null_mean": 0.011234151284457702,
+          "null_sd": 0.06835123549612368,
+          "fraction_of_observed_reproduced_by_null_mean": 0.10415306479723897,
+          "z_observed_vs_null": 1.4136947889115967
+        },
+        "verse_count|bins=10": {
+          "null_mean": 0.03304731536323253,
+          "null_sd": 0.06423988786221058,
+          "fraction_of_observed_reproduced_by_null_mean": 0.30638533265645806,
+          "z_observed_vs_null": 1.1646131997963007
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": 0.03161596005544454,
+          "null_sd": 0.06446804066843405,
+          "fraction_of_observed_reproduced_by_null_mean": 0.293115078558477,
+          "z_observed_vs_null": 1.182694182652358
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": 0.04620622548981405,
+          "null_sd": 0.06212358027443707,
+          "fraction_of_observed_reproduced_by_null_mean": 0.42838305054112047,
+          "z_observed_vs_null": 0.9924687366506061
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": -0.002947472673405933,
+          "null_sd": 0.07183203548283261,
+          "fraction_of_observed_reproduced_by_null_mean": -0.02732634665211012,
+          "z_observed_vs_null": 1.5426182572939309
+        }
+      }
+    },
+    "H2|M2|T2": {
+      "observed_D_pooled": -0.1060186187486469,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.017252444289254678,
+          "null_sd": 0.04499670639719542,
+          "fraction_of_observed_reproduced_by_null_mean": 0.16273032503995782,
+          "z_observed_vs_null": -1.9727260407869518
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.016207665664866835,
+          "null_sd": 0.04568598839896349,
+          "fraction_of_observed_reproduced_by_null_mean": 0.1528756538820092,
+          "z_observed_vs_null": -1.9658314557952667
+        },
+        "verse_count|bins=5": {
+          "null_mean": -0.0016435009593515108,
+          "null_sd": 0.054564718897508156,
+          "fraction_of_observed_reproduced_by_null_mean": 0.015502003126903467,
+          "z_observed_vs_null": -1.9128682397383698
+        },
+        "verse_count|bins=10": {
+          "null_mean": -0.030197600287267427,
+          "null_sd": 0.047358866334902064,
+          "fraction_of_observed_reproduced_by_null_mean": 0.28483299106981463,
+          "z_observed_vs_null": -1.600988881896053
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": -0.016685649617496547,
+          "null_sd": 0.040056797714121135,
+          "fraction_of_observed_reproduced_by_null_mean": 0.15738414454404032,
+          "z_observed_vs_null": -2.2301575320300255
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": -0.04116828210437937,
+          "null_sd": 0.03504091725831466,
+          "fraction_of_observed_reproduced_by_null_mean": 0.38831181343706,
+          "z_observed_vs_null": -1.8507031698458056
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": 0.006544906015876371,
+          "null_sd": 0.06152435378269869,
+          "fraction_of_observed_reproduced_by_null_mean": -0.06173355296576058,
+          "z_observed_vs_null": -1.8295767097707796
+        }
+      }
+    },
+    "H3|M2|T2": {
+      "observed_D_pooled": 0.047142857142857125,
+      "by_channel": {
+        "log_word_count|bins=5": {
+          "null_mean": -0.00889942114518393,
+          "null_sd": 0.062076737939999946,
+          "fraction_of_observed_reproduced_by_null_mean": -0.18877560004935617,
+          "z_observed_vs_null": 0.9027903228776055
+        },
+        "log_word_count|bins=10": {
+          "null_mean": -0.011907032650756015,
+          "null_sd": 0.06444899268209996,
+          "fraction_of_observed_reproduced_by_null_mean": -0.25257341986452164,
+          "z_observed_vs_null": 0.9162267296384546
+        },
+        "verse_count|bins=5": {
+          "null_mean": 0.01179839319864571,
+          "null_sd": 0.051242914287166506,
+          "fraction_of_observed_reproduced_by_null_mean": 0.2502689466379394,
+          "z_observed_vs_null": 0.6897434393785686
+        },
+        "verse_count|bins=10": {
+          "null_mean": 0.010933911785249478,
+          "null_sd": 0.05294084377433732,
+          "fraction_of_observed_reproduced_by_null_mean": 0.23193146211135265,
+          "z_observed_vs_null": 0.683951043771608
+        },
+        "mean_verse_length|bins=5": {
+          "null_mean": 0.022632172249201832,
+          "null_sd": 0.05794621646804976,
+          "fraction_of_observed_reproduced_by_null_mean": 0.4800763810436754,
+          "z_observed_vs_null": 0.4229902552338328
+        },
+        "mean_verse_length|bins=10": {
+          "null_mean": 0.02021461251073934,
+          "null_sd": 0.05732675337152278,
+          "fraction_of_observed_reproduced_by_null_mean": 0.42879481083386495,
+          "z_observed_vs_null": 0.46973259513933097
+        },
+        "UNSTRATIFIED|bins=1": {
+          "null_mean": 0.0035126693531505205,
+          "null_sd": 0.04739884987337627,
+          "fraction_of_observed_reproduced_by_null_mean": 0.07451116809713228,
+          "z_observed_vs_null": 0.9204904318620081
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+H-NEW-3010 — realis vs irrealis conditionals are register-coded?
+run_utc: 20260809T065744Z
+prereg sha256: 2b1718af47814c1eebc38178977074eba2631e45a7ff43e0ff0e98ad8c11fe93
+
+VERDICT: NULL
+tests clearing (Bonferroni alpha=0.00416667): 0 of 12
+
+test             sign    pow       D_pooled     D_verse     p(max)   clears 
+H1|M1|T1         +       ok         0.15816     0.22057    0.04390       no
+H1|M1|T2         +       ok         0.16030     0.24350    0.03140       no
+H1|M2|T1         +       ok         0.10705     0.08350    0.33047       no
+H1|M2|T2         +       ok         0.10786     0.09083    0.30047       no
+H2|M1|T1         -       ok        -0.10799    -0.11220    0.02460       no
+H2|M1|T2         -       ok        -0.09305    -0.11192    0.06709       no
+H2|M2|T1         -       ok        -0.12049    -0.11958    0.02530       no
+H2|M2|T2         -       ok        -0.10602    -0.12334    0.03610       no
+H3|M1|T1         +       ok         0.11165     0.14759    0.10949       no
+H3|M1|T2         +       ok         0.12412     0.16658    0.07929       no
+H3|M2|T1         +       ok         0.03595     0.02771    0.48035       no
+H3|M2|T2         +       ok         0.04714     0.04003    0.38336       no
