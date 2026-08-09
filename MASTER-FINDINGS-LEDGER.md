@@ -7362,3 +7362,53 @@ this session spent two days correcting. Recorded open in
 deliverable before attempting any inference and died before reaching even that. **A partial result
 on disk beats a complete one that never runs** — and the standing lesson is that the *order* of
 work inside a fragile lane matters as much as its scope.
+
+
+## §11.7 H-NEW-2990 + H-NEW-3000 — the per-verse instrument, and the rosters that publish their own refutation
+
+**H-NEW-2990 — the instrument this project lacked.** H-NEW-2980's residual rosters were found
+**ill-posed**: a scan of every `csv/*.json` artifact found **no per-verse structural score
+anywhere**. `h-new-590` and `h-new-840` are per-SURAH. So *"is this verse structurally unusual?"*
+was a question that could not be asked, blocking any verse-level residual analysis.
+
+Built: `csv/h-new-2990-verse-profile.csv`, all **6,236 verses, 33 columns**, each computed from the
+verse itself and **never inherited from its surah**. The tempting shortcut — assigning each verse
+its surah's score — was explicitly not built; it would measure surah membership while labelled as
+measuring verses.
+
+**Its companion is the point.** `csv/h-new-2990-column-declarations.csv` gives every column four
+correlations — vs word count, vs letter count, vs mushaf position, and the **partial** vs mushaf
+position given word count — plus a `length_dominated` flag. **Only 2 of 33 flagged**:
+`sum_root_surprisal_bits` (ρ=0.941) and `n_root_types` (ρ=0.951), both sums that scale with length
+*by construction*. **31 columns are clean.** An instrument whose columns silently tracked verse
+length would have rebuilt the exact defect that killed five claims this week, baked into a tool
+downstream work would trust. Here the limitation is measured and printed on the label.
+
+**H-NEW-3000 — the rosters, and a verdict pair.**
+
+| | |
+|:--|:--|
+| `verdict_locked` | **SUPPORTED** |
+| `verdict_after_exact_tests` | **NULL** |
+
+**Both reported.** §6 opens: *"the alternative — publishing SUPPORTED and letting a reader discover
+this — is not acceptable."*
+
+**The diagnosis was inside the locked run.** Reception is **86% tied at zero** (H-NEW-2980). A
+parametric p on an outcome that tied is **13–57× too liberal**. The design happened to give one
+relationship both a parametric p and an exact permutation null — `struct_z_composite` × `n_hadith`
+as I1 and I2 — and **they disagreed by 57×: 0.00015 against 0.0085.** The run contained its own
+refutation and the lane found it rather than quoting the smaller number.
+
+**Second self-disqualification this week**, after H-NEW-2960 discarded a p=0.0028 instrument
+because its strongest *this-world* term was *qiyāma*. **Neither lane was asked to.**
+
+**The rosters stand as descriptive deliverables.** Roster 1 (structurally unusual, rarely cited) is
+headed by **Q 111:5** *fī jīdihā ḥablun min masad* (struct_z = 5.19), then **Q 37:47** *lā fīhā
+ghawlun*, **Q 38:3** *wa-lāta ḥīna manāṣ*, **Q 9:57** *maljaʾan aw maghārātin aw muddakhalan*,
+**Q 22:73**. The instrument is surfacing genuinely lexically extraordinary verses — hapax-dense,
+rare-particle, rare-cluster — that the ḥadīth tradition passes over.
+
+The expected verdict was NULL (H-NEW-2620 returned NULL on all six inferences for the tafsīr
+corpus once length was residualised). **The exact tests agree with that prior; the parametric route
+did not.**
