@@ -104,3 +104,29 @@ proportional to the corpus rather than to the risk.
 
 **Not yet done:** enumerating which of the 34 actually passed on a parametric test over a tied
 outcome. That requires reading each verdict and primary-test choice, and is the next step.
+
+### 7.1 The triage list — candidates, not verdicts
+
+Applying all three conditions (counts/incidence mentioned · no exact test mentioned · verdict not
+already NULL) to findings only, **20 candidates remain** of the original 34. **This is a candidate
+list and not a defect list**, and the distinction is the point: several entries are audits from
+this same week that used exact or permutation methods without matching the keyword, and several
+have multi-line YAML verdicts the screen could not read.
+
+**Resolving each requires reading its actual outcome variable and primary test.** That has not
+been done and is recorded as unfinished rather than asserted.
+
+**The strongest single candidate is `h-new-1780-sahihayn-vs-sunan-distribution.md`** — verdict
+`DESCRIPTIVE-CONFIRMED`, and its outcome is **per-surah ḥadīth citation counts**, which is exactly
+the distribution H-NEW-2980 measured at **86% tied at zero**. It is the closest structural match
+in the corpus to the case that established this rule, and it should be re-tested first.
+
+Also worth reading before dismissing: `h-new-71-allah-distribution` (6 of 7 cells PASS),
+`h-new-89-meta-cluster-network` (PASS, 2 of 3 cells), `h-new-45-muqattaat-surah-index-number-theory`
+(PARTIAL-PASS), `h-new-263-divine-name-surah-network` (PASS-STRUCTURE-NO-HUB), and
+`h-new-2080-rhyme-scan` (PASS-BOTH — though its outcome is a proportion rather than a sparse
+count, so it is likely safe).
+
+**A keyword screen produces candidates. Only reading the outcome variable produces a verdict.**
+Publishing the candidate list as though it were a defect list would be the same error as
+publishing a parametric p on a tied outcome — a number that looks like an answer and is not one.
