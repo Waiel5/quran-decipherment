@@ -72,3 +72,35 @@ H-NEW-3000's lane was not asked to run the exact tests. It ran them, found its o
 unsupported, and led with that. **The second such self-disqualification in a week** — H-NEW-2960
 discarded a p = 0.0028 instrument because its strongest *this-world* term was *qiyāma*, the
 Resurrection. Neither was instructed to.
+
+---
+
+## 7. Triage — and the filter that makes the screen usable
+
+A first keyword sweep of findings mentioning counts or incidence, **excluding pre-registrations**
+(per `UNIT-DRIFT-DEFECT.md` §9.1 — a sweep that hits pre-registrations will propose the exact edit
+the rules forbid), returned **34 candidates**. That list is too crude to act on directly, and
+treating it as 34 defective findings would be its own error.
+
+**The sharpening comes from the defect's own direction. This defect is LIBERAL — it manufactures
+findings.** Therefore:
+
+- **A finding that NULLed under a parametric test on a tied outcome is DOUBLY SAFE.** It failed
+  even under a test biased toward passing it. Re-testing it exactly can only move it further from
+  significance. **These need no re-test**, and most of the 34 are in this class — the retired
+  numerology series (H-NEW-2000, 2010, 2020, 2040, 2090), the exactness hunt, the conjunction
+  tests, and the audits.
+- **Only findings that PASSED on a parametric test over a tied outcome are at risk.** That is the
+  actual triage list, and it is much shorter.
+
+**The screen, stated correctly:**
+
+> Tie fraction above ~50% **AND** a parametric primary test **AND** a passing verdict.
+> All three, or there is nothing to re-test.
+
+Applying the direction of a defect to prune its own candidate list is the general move here. A
+defect that only inflates cannot have harmed a null, and a sweep that ignores this generates work
+proportional to the corpus rather than to the risk.
+
+**Not yet done:** enumerating which of the 34 actually passed on a parametric test over a tied
+outcome. That requires reading each verdict and primary-test choice, and is the next step.
