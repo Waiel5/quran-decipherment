@@ -130,3 +130,25 @@ count, so it is likely safe).
 **A keyword screen produces candidates. Only reading the outcome variable produces a verdict.**
 Publishing the candidate list as though it were a defect list would be the same error as
 publishing a parametric p on a tied outcome — a number that looks like an answer and is not one.
+
+### 7.2 First candidate read — and it CLEARS
+
+`h-new-1780-sahihayn-vs-sunan-distribution.md` was §7.1's **strongest candidate**: verdict
+`DESCRIPTIVE-CONFIRMED`, outcome apparently per-surah ḥadīth counts — the closest structural match
+in the corpus to the case that established this rule.
+
+**Reading its outcome variable clears it.** Its verdict is `DESCRIPTIVE-CONFIRMED`, and its own
+honest-limits section states the finding measures **"the GRADE-MIX OF CITATIONS THE PROJECT HAS
+MADE, not the GRADE-MIX OF ALL CLASSICAL ḤADĪTH on these surahs."** It is a **census of the
+project's own citation practice**, not an inferential test against a null. **There is no
+parametric p on a tied outcome to correct**, because there is no parametric p.
+
+**A cleared candidate is worth exactly as much as a confirmed one**, and this one validates the
+§7.1 discipline in the direction that matters: the keyword screen flagged it, the verdict field
+flagged it, and **only reading the outcome variable resolved it — as clean.**
+
+**Method note for the remaining candidates:** the decisive question is not *"does this finding
+involve counts?"* nor *"did it pass?"* but **"is there a parametric p, computed on an outcome that
+is mostly tied, carrying a verdict?"** A descriptive census, a Bonferroni-corrected permutation
+test, and an exact enumeration are all immune regardless of how sparse their counts are. **The
+defect lives in the test, not in the data.**
