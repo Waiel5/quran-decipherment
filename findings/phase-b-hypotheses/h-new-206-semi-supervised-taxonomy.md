@@ -1,3 +1,11 @@
+> **DEMOTED 2026-08-09 — BOTH INFERENCES WITHDRAWN.** Inference (b) is length-confounded:
+> `surah_length` is one of the clustering features, and muqaṭṭaʿāt surahs are 3.3x longer at the
+> median (85 vs 26 verses), so the chi-square partly answers itself. Inference (a) is a
+> max-over-7 silhouette (0.2144) against a fixed 0.2 cutoff with no multiplicity correction;
+> the other six k values all fall below it. See [[AUDIT-H-NEW-206-LENGTH-CONFOUND]].
+> One fact survives, as a LENGTH result and POST-HOC: no muqatta'at surah is among the 40
+> shortest (0/29, exact P = 3.06e-7).
+
 # [[h-new-206-semi-supervised-taxonomy|H-NEW-206]] — Semi-supervised surah taxonomy (results)
 
 **seed**: 20260419 | **Bonferroni k** = 2 | α_bon = 0.0250
