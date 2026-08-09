@@ -1,7 +1,7 @@
 ---
 id: OPEN-H-NEW-2980
 title: "OPEN QUESTION — the reception-weight residual rosters, unrun after a connection failure"
-status: NOT RUN — no result exists; do not cite any number for this test
+status: "PARTIAL — concentration census delivered; the two rosters are ILL-POSED as briefed (no per-verse structural instrument exists) and are not runnable without one"
 date: 2026-08-08
 author: Waiel Al-Shujaa
 instrument_ready: findings/phase-b-hypotheses/csv/h-new-860-1-reception-weights.csv
@@ -95,3 +95,39 @@ The two rosters — *structurally extreme but rarely cited*, and *heavily cited 
 ordinary* — require joining to `csv/h-new-590.json` and `csv/h-new-840.json`, **both of which are
 per-SURAH while reception is per-VERSE.** That mapping is a design decision, not a mechanical
 join, and must be pre-registered rather than improvised. **Not attempted here.**
+
+---
+
+## THE ROSTERS ARE ILL-POSED AS BRIEFED — established 2026-08-09
+
+**The two rosters cannot be computed with the instruments in this repository, and the reason is
+structural rather than technical.**
+
+A scan of every `csv/*.json` artifact for a **per-verse** structural score found none.
+`h-new-590.json` (outlier strength) and `h-new-840.json` (UAS) are **per-SURAH**. The only file
+carrying verse-level keys is `h-new-92.json`, whose `target_scores` cover a hand-picked target set
+for one test — not a corpus-wide instrument.
+
+**So "structurally extreme verses" is not a quantity this project can currently measure.** The
+brief asked for a roster of them, and it cannot be built.
+
+### Why improvising it would be wrong
+
+The available shortcut is to assign each verse its **surah's** structural score. That would
+produce a roster — and it would be measuring surah membership while labelled as measuring verses.
+Every verse in a high-UAS surah would appear "structurally extreme" regardless of its own
+properties, and the resulting residual against a genuinely per-verse reception count would be
+**a unit-mismatch artefact of exactly the class `findings/UNIT-DRIFT-DEFECT.md` catalogues.**
+
+**Recording the question as unanswerable is the correct outcome, not a failure to deliver.**
+
+### What would make it answerable
+
+A corpus-wide **per-verse** structural instrument, which does not exist here. Building one is a
+separate registered piece of work, not a preliminary step to be improvised inside this test.
+
+### What this does NOT retract
+
+The **concentration census above stands** — it needed no structural join. 13.9% of eligible verses
+carry any citation; the top 20 carry 21.3% of all reception; Q 112:1 carries 102 across all nine
+books.
