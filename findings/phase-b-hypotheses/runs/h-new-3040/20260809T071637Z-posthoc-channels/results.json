@@ -1,0 +1,147 @@
+{
+  "header": "POST-HOC. MW-7 cap. Multi-channel length control for H1, prompted by H-NEW-3010's 70x channel swing (F-3) and by H-NEW-2640's use of a different channel pair on the same hypothesis.",
+  "channel_dominance": {
+    "log_word_count": {
+      "rho_channel_vs_grouping": 0.642344,
+      "rho_channel_vs_M_all114": -0.337216
+    },
+    "verse_count": {
+      "rho_channel_vs_grouping": 0.114723,
+      "rho_channel_vs_M_all114": -0.374309
+    },
+    "log_verse_count": {
+      "rho_channel_vs_grouping": 0.114723,
+      "rho_channel_vs_M_all114": -0.374309
+    },
+    "mean_verse_length": {
+      "rho_channel_vs_grouping": 0.839988,
+      "rho_channel_vs_M_all114": -0.113839
+    },
+    "mushaf_position": {
+      "rho_channel_vs_grouping": -0.617618,
+      "rho_channel_vs_M_all114": 0.289778
+    }
+  },
+  "H1_by_channel": {
+    "none (raw)": {
+      "controls": [],
+      "delta": 0.392037,
+      "p": 0.122588,
+      "verdict": "NULL"
+    },
+    "log_word_count": {
+      "controls": [
+        "log_word_count"
+      ],
+      "delta": 27.857609,
+      "p": 0.0021,
+      "verdict": "PASS"
+    },
+    "verse_count": {
+      "controls": [
+        "verse_count"
+      ],
+      "delta": 18.678166,
+      "p": 0.026597,
+      "verdict": "NULL"
+    },
+    "log_verse_count": {
+      "controls": [
+        "log_verse_count"
+      ],
+      "delta": 18.678166,
+      "p": 0.026597,
+      "verdict": "NULL"
+    },
+    "mean_verse_length": {
+      "controls": [
+        "mean_verse_length"
+      ],
+      "delta": 22.536301,
+      "p": 0.009799,
+      "verdict": "PASS"
+    },
+    "mushaf_position": {
+      "controls": [
+        "mushaf_position"
+      ],
+      "delta": 25.659857,
+      "p": 0.004,
+      "verdict": "PASS"
+    },
+    "H-NEW-2640 pair [log_verse_count, mean_verse_length]": {
+      "controls": [
+        "log_verse_count",
+        "mean_verse_length"
+      ],
+      "delta": 14.402722,
+      "p": 0.064894,
+      "verdict": "NULL"
+    },
+    "all four": {
+      "controls": [
+        "log_word_count",
+        "verse_count",
+        "mean_verse_length",
+        "mushaf_position"
+      ],
+      "delta": 15.866804,
+      "p": 0.049595,
+      "verdict": "NULL"
+    }
+  },
+  "swing": {
+    "min_p": 0.0021,
+    "max_p": 0.122588,
+    "ratio": 58.4,
+    "n_arms_PASS": 3,
+    "n_arms": 8
+  },
+  "h_new_2640_estimator_reproduction": {
+    "D": {
+      "surah_unweighted_mean": {
+        "narrative": 4.32,
+        "legal_medinan": 7.35,
+        "eschatological_mufassal": 4.36
+      },
+      "pooled": {
+        "narrative": 4.42,
+        "legal_medinan": 7.77,
+        "eschatological_mufassal": 2.92
+      },
+      "argmax_unweighted": "legal_medinan",
+      "argmax_pooled": "legal_medinan"
+    },
+    "E": {
+      "surah_unweighted_mean": {
+        "narrative": 26.21,
+        "legal_medinan": 16.34,
+        "eschatological_mufassal": 28.26
+      },
+      "pooled": {
+        "narrative": 26.65,
+        "legal_medinan": 16.88,
+        "eschatological_mufassal": 23.98
+      },
+      "argmax_unweighted": "eschatological_mufassal",
+      "argmax_pooled": "narrative"
+    }
+  },
+  "instrument_agreement_with_2640": {
+    "mine": {
+      "prohibition": 335,
+      "lam_amr": 78,
+      "deontic_total": 413,
+      "negation_lam": 355,
+      "deontic_pct": 29.13
+    },
+    "h_new_2640": {
+      "prohibition": 330,
+      "lam_amr": 78,
+      "deontic_total": 408,
+      "negation_lam": 351,
+      "deontic_pct": 28.8
+    },
+    "note": "independent reimplementations; deontic totals differ by 5 tokens (1.2%)"
+  }
+}
