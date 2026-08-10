@@ -10,6 +10,7 @@ runs:
   - runs/h-new-3130/20260809T085958Z   # first confirmatory run, retained
   - runs/h-new-3130/20260809T090605Z   # re-run after the §6.1 residualise fix; PRIMARY cell byte-identical
   - runs/h-new-3130-posthoc/20260809T091051Z
+  - runs/h-new-3130-addendum/20260809T092105Z   # POST-HOC: proxy label source, no-Form-I, untagged bound
 seed_null_a: 20260509
 seed_null_b: 20260510
 n_perms: 10000
@@ -52,6 +53,15 @@ single most transferable result here:
 Neither alternative is significant (T2 D1-RAW p = 0.13–0.20; D1-ROOT p = 0.54–0.98). **Had the
 brief's token counts been used uncritically, this finding would have reported a directional
 near-miss instead of a reversal.** The discrepancy was caught in the Step-0 census, before design.
+
+A post-hoc arm (§6.5.B) found a **second** sign-flipper: dropping **Form I** — a *derived* category
+holding 63.8 % of all verbs — from the denominator moves D1 to **+0.0183**. Narrative has the
+highest Form I share of any register (0.6862 vs 0.6207), so with Form I in the denominator the
+"Form IV share" is substantially measuring how much Form I a register uses. **A Form IV share is
+not a well-defined quantity until its denominator is declared.**
+
+**None of this rescues the hypothesis, and none of it touches the verdict**: the root control fails
+under every label source, every counting unit, and with or without Form I.
 
 **`cross-finding-028`'s extension base rate is now 0 of 7.**
 
@@ -259,10 +269,21 @@ against phase is 39.** Degenerate: `narrative` 26/0, `legal` 0/17, `oath` 15/0, 
 ### 5.1 The counting unit decides the sign — the deciding parameter for this hypothesis
 
 Per `cross-finding-029` §3, the finding names the single choice its verdict was most sensitive to
-and reports the verdict under an alternative setting. **For D1 it is the counting unit, and it
-flips the sign** (−0.0285 / +0.0433 / +0.0029 for verb tokens / all form-tagged POS / lemma types).
-For H1 it is **mean verse length** (385×) and, second, the **coarsening order** (~190×). The
-verdict is unchanged under all of them, because the root control fails in every cell.
+and reports the verdict under an alternative setting. **For D1 there are two, and each flips the
+sign:**
+
+| choice | setting | D1 |
+|:--|:--|--:|
+| counting unit | verb tokens (as stated) | **−0.0285** |
+| | all form-tagged POS (the brief's counts) | **+0.0433** |
+| | distinct lemma types | +0.0029 |
+| denominator | includes Form I | **−0.0285** |
+| | excludes Form I (§6.5.B) | **+0.0183** |
+
+**Under none of the five settings does D1 reach significance.** For H1 the deciding parameter is
+**mean verse length** (385×) and, second, the **coarsening order** (~190×). **The verdict is
+unchanged under every one of them, because the root control fails in every cell** — including
+under the substring register proxy (§6.5.A) and without Form I (§6.5.B).
 
 ### 5.2 QAC leaves Form I untagged — 12,347 verbs
 
@@ -291,9 +312,14 @@ tokens (32.8 %) sit on single-form roots**, where form carries zero information 
 
 IV 4,585 · II 1,615 · VIII 1,161 … are **VERB 7,009 + N 1,778 + ADJ 170 + PN 20 = 8,977**
 form-tagged tokens including maṣdars and participles. Verb-only: **I 12,347 · IV 3,487 · II 1,300 ·
-VIII 963 · V 414 · X 369 · III 334 · VI 77 · VII 51 · XII 9 · IX 5 · XI 0.** **Form XI has no verb
-token in the corpus.** Forms VII / IX / XI / XII are too sparse to carry a test and were excluded
-by name, not silently.
+VIII 963 · V 414 · X 369 · III 334 · VI 77 · VII 51 · XII 9 · IX 5 · XI 0.**
+
+> **Four of the eleven attested forms were never testable at this corpus size**, and the excluded
+> counts are given so a reader can see it rather than take the exclusion rule on trust:
+> **VII = 51 · XII = 9 · IX = 5 · XI = 0.** **Form XI has no verb token in the Qurʾān at all** — the
+> "XI 1" circulating in the F-6 brief is a single deverbal nominal. A fifth, **VI = 77**, is
+> testable only pooled with V (§5.6). So the "distribution over verb forms I–X" that the hypothesis
+> names is, in practice, a distribution over **seven** forms plus a derived Form I.
 
 ### 5.6 Form VI cannot be tested alone
 
@@ -351,6 +377,120 @@ All seven matched. The diff is reproduced as a comment block above `decide()` in
 
 ---
 
+## 6.5 ADDENDUM — three arms added after the run, all POST-HOC
+
+Requested by the lead after the confirmatory run had executed. **The pre-registration is immutable
+once run** (standing rule 2026-08-08 #1: *"never edit a pre-registration after its run — for any
+reason"*), so none of this can enter the confirmatory family and none of it can move the verdict.
+Run: `runs/h-new-3130-addendum/20260809T092105Z`. **It does not change the verdict; it strengthens
+two of the three substantive conclusions and identifies a third sign-flip.**
+
+### 6.5.A The `h-new-2500` substring proxy as a second label source
+
+The proxy's four locked classes reproduce as `eschatological_mufassal` 40 · `narrative` 31 ·
+`liturgical_didactic` 23 · `legal_medinan` 20. Its marker counts reproduce the
+`AUDIT-REGISTER-PROXY-ORTHOGRAPHY-DEPENDENCE` figures exactly — **89** `يا أيها الذين آمنوا` and
+**5** `كتب عليكم` in `quran-text/quran-no-tashkeel.json`, the single file the proxy silently depends
+on.
+
+> **A two-instrument discrepancy worth recording: the substring proxy finds 89 vocative
+> occurrences; my QAC morphological detector finds 91.** Two instruments for the same marker
+> disagree by 2 tokens. Neither is obviously wrong — they are different instruments (orthographic
+> substring vs. morphological parse) — but a reader should not assume "the marker count" is a
+> single well-defined number.
+
+**The two label sources agree on 97/114 (85.1 %) for `narrative` and 107/114 (93.9 %) for `legal`.**
+They are not interchangeable, and the disagreement is a result about the proxy:
+
+| arm | scholar labels (primary) | substring proxy |
+|:--|--:|--:|
+| H1-RAW observed accuracy | 0.3363 | **0.4035** |
+| H1-RAW p_best / p_worst | 0.00010 / 0.0385 | 0.00090 / 0.0468 |
+| **H1-ROOT p_worst** | **0.9313 (fails)** | **0.6929 (fails)** |
+| D1 (Form IV → narrative) | **−0.0285 REVERSED** | **−0.0297 REVERSED** |
+| D2 (V+VI → legal) | +0.0068 | **−0.0005** |
+
+Three readings, in order of how much they matter:
+
+1. **The root confound defeats both label sources.** H1-ROOT fails under the proxy as it fails
+   under the scholar labels. **The central conclusion is not an artefact of the label source.**
+2. **D1's reversal replicates across label sources** (−0.0285 / −0.0297). The reversal is a property
+   of the morphology-by-register relation, not of Neuwirth and Sinai's judgements.
+3. **The proxy classifies 6.7 points BETTER on the raw arm (0.4035 vs 0.3363), and D2 flips sign
+   under it.** The higher raw accuracy is what §2.4 predicted: the proxy is *defined* by countable
+   text features, so it is easier for any countable feature to recover. That it nevertheless fails
+   the root control is the point. **D2 flipping sign (+0.0068 → −0.0005) confirms D2 was never
+   carrying signal in either direction.**
+
+### 6.5.B The profile computed WITHOUT Form I — and a third thing that flips D1's sign
+
+Form I is a **derived** category (§5.2) and 63.8 % of all verbs, so a profile including it is
+dominated by an inference. Recomputed over the seven genuinely-tagged forms (II, III, IV, V, VI,
+VIII, X), renormalised. **Five surahs — Q109, Q111, Q112, Q113, Q114 — have zero non-Form-I verb
+tokens and drop out**, so this arm runs on 109 surahs, and the losses are 3 `hymn` and 2 `polemic`.
+
+| arm | with Form I | **without Form I** |
+|:--|--:|--:|
+| H1-RAW accuracy | 0.3363 | 0.3148 |
+| H1-RAW p_best / p_worst | 0.00010 / 0.0385 | 0.00020 / 0.0450 |
+| **H1-ROOT p_worst** | **0.9313 (fails)** | **0.8279 (fails)** |
+| **D1** | **−0.0285** | **+0.0183** |
+| D2 | +0.0068 | +0.0159 |
+
+**H1 is essentially unchanged and the root control still fails.** But **D1 flips to the locked
+positive direction** — a third parameter, alongside the counting unit, that decides its sign. It is
+not significant either way (D1-RAW p = 0.16–0.34).
+
+**The mechanism is measured, not guessed:**
+
+| register | **Form I share** | Form IV share (with I) | Form IV share (no I) |
+|:--|--:|--:|--:|
+| polemic | **0.7595** | 0.0845 | — |
+| **narrative** | **0.6862** | 0.1602 | **0.5233** |
+| hymn | 0.6271 | 0.1487 | — |
+| other | 0.6253 | 0.2186 | 0.5870 |
+| eschat | 0.6170 | 0.1926 | 0.5107 |
+| oath | 0.5973 | 0.1840 | 0.4849 |
+| **legal** | **0.5780** | 0.2128 | 0.5054 |
+
+**Narrative has the highest Form I share of any testable register (0.6862 vs 0.6207 for the rest,
++6.55 points); legal has the lowest.** With Form I in the denominator, narrative's abundance of
+simple verbs mechanically deflates its Form IV *share* — so **the "Form IV" arm with Form I
+included is substantially measuring how much Form I a register uses.** Remove it and the ordering
+reverses.
+
+> **This is the sharpest form of the deciding-parameter law in this finding.** D1's sign is set by
+> three analyst choices — the counting unit, and whether a 64 %-of-data *derived* category sits in
+> the denominator — and by none of them does it reach significance. **A "Form IV share" is not a
+> well-defined quantity until the denominator is declared.**
+
+### 6.5.C The untagged set is NOT homogeneous — bounded
+
+"Untagged verb = Form I" is an assumption, and it can be bounded. Using diagnostics that cannot be
+confused with an inflectional prefix (`{sota-` Form X, `{n-` Form VII, `{-t-` Form VIII), plus
+`>a-` and `ta-` **only on lemmas attested in the perfect** — because `>a-` is also the 1sg
+imperfect prefix and `ta-` the 2nd/3rd-person imperfect prefix:
+
+> **11 lemmas / 50 tokens are demonstrably derived forms that QAC left untagged — 0.40 % of the
+> untagged set, 0.26 % of all verbs.**
+
+They are real: *taʿālā* (VI, ع ل و, 20 tokens), *aghnā* (IV, غ ن ي, 15), *tamārā* (VI), *tamannā*
+(V), *tajallā* (V), *taḍarraʿa* (V), *tadallā* (V), *taʿāṭā* (VI), *tanādā* (VI), *taḥarrā* (V),
+*talahhā* (V).
+
+**A first, liberal screen returned 94 lemmas / 492 tokens (3.98 %), and I inspected it rather than
+publishing it.** It was dominated by two false-positive classes: (a) `ta-` on *imperfect* surface
+lemmas — the person prefix, not a Form V/VI stem; (b) `~` on the **first** character of the lemma
+string (`l~ayosa`, `n~aZara`, `m~aAta`, `r~aDiYa`, `r~aHima`) — an assimilated proclitic, not
+middle-radical gemination. Both would have inflated the bound by ~10×.
+
+**So: treating untagged as Form I is ~99.6 % accurate at token level, the residual is 0.26 % of all
+verbs, and it skews toward Forms V/VI — the two rarest tested forms.** That is small in absolute
+terms and proportionally largest exactly where the data is thinnest, which is stated rather than
+waved away.
+
+---
+
 ## 7. Honest limits
 
 - **No matched Classical-Arabic corpus with register labels exists on disk.** Nothing here
@@ -360,9 +500,15 @@ All seven matched. The diff is reproduced as a comment block above `decide()` in
   heterogeneous texts. A 286-verse surah is not one register. **R2 is a much weaker robustness
   axis than its presence in the table suggests**: the `neuwirth_genre` and `sinai_genre` columns of
   the same TSV disagree, under coarsening C1, about **3 surahs out of 114 (Q2, Q3, Q6)**. It is a
-  within-source check, **not a second rater** — no independent register roster exists here, so
-  nothing like H-NEW-3020's κ = 0.386 could be computed, and the near-identical D1 values across R1
-  and R2 are close to arithmetically guaranteed rather than a replication.
+  within-source check, **not a second rater**, and the near-identical D1 values across R1 and R2 are
+  close to arithmetically guaranteed rather than a replication. **The genuinely independent second
+  label source is the `h-new-2500` substring proxy added post-hoc in §6.5.A** — a different
+  instrument rather than a second human rater, agreeing with the scholar labels on 85.1 %
+  (`narrative`) and 93.9 % (`legal`). It carries its own declared fragility: a **total, silent
+  single-file dependency** on `quran-text/quran-no-tashkeel.json`, where the markers match 89 and 5
+  times and match **zero** times in every other corpus file on disk
+  (`AUDIT-REGISTER-PROXY-ORTHOGRAPHY-DEPENDENCE`). No human-rater agreement statistic like
+  H-NEW-3020's κ = 0.386 is available for register on this project.
 - **D1/D2 are inseparable from phase** (§4.4).
 - **QAC's form tagging is itself an annotation**, unvalidated here against an independent
   morphological analyser.
