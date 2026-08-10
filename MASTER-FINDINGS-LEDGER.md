@@ -7509,3 +7509,6 @@ denominator and tested a monotone contrast on an axis whose published shape is a
 **F-9 (rasm/imlāʾ) was dispatched and produced nothing.** Its groundwork survives in
 [[AUDIT-REGISTER-PROXY-ORTHOGRAPHY-DEPENDENCE]]; the hypothesis itself is untouched.
 
+| [[h-new-3150-mubalagha-fasila]] | Intensive nominal patterns at verse-end. **Locked PASS is an artefact of its own rhyme control** — unvocalised rhyme merged *khayr*-type (0/186 verse-final) with *khabīr*-type (59/71). φ(mubālagha, long rhyme) = 0.9985, so the correct control leaves S_max = 0. Simpson's paradox: crude 2.16× reverses to −5.2% | **PASS-AS-LOCKED, NOT BELIEVED** |
+| [[cross-finding-030-three-ways-a-control-fails]] | A control can fail by not discriminating, not applying, or duplicating the treatment — three anchors, one day, all pre-registered and all silent | **CONVERGENT** |
+
