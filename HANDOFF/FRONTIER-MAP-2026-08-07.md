@@ -186,6 +186,7 @@ enabling data is stripped or absent.
 > | **F-8** sajdah loci | open, prior NULL | H-NEW-2950 | 2026-08-08 |
 > | **F-10** modality | open, *"genuinely orthogonal to what has been done"* | H-NEW-2640 | 2026-08-07 |
 > | **F-4** deixis | open, prior *"CONFIRMED but at risk of CBM"* | H-NEW-2960 — **partially**; its own front-matter names F-4 | 2026-08-08 |
+> | **F-13** reception weight | open, prior "CONFIRMED-descriptive" | H-NEW-3000 — the map's F-13 sentence **is that finding's title** | 2026-08-08 |
 >
 > **F-4 is the fifth case and the FIRST caught prospectively** — the Step-0 grep rule fired before any
 > design work, so no lane was spent. Only the *eschatological* half of F-4 is answered; the
