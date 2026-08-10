@@ -236,3 +236,66 @@ different shape. That is a *bookkeeping* error, not a statistical one, and it is
 in one grep — which is exactly the category [[AUDIT-TWO-BLOCKED-INSTRUMENTS-2026-08-10]] §8 says
 tends to survive longest.
 
+
+---
+
+## 11. The death-date test fails in BOTH directions — and one work signs its own colophon
+
+The F-11 lane re-ran the death-date audit on all thirteen tafsīr directories rather than inheriting
+it. Its confirmations matter less than its **two false positives**, which are the transferable result.
+
+### 11.1 Verified here independently
+
+**`ar-tafseer-tanwir-al-miqbas` signs itself.** Confirmed directly:
+`spa5k-tafsir-api/ar-tafseer-tanwir-al-miqbas/114/6.json` — **the last verse of the book** — contains
+**محمد الطاهر ابن عاشور**. The work names its own author in its colophon. Ibn ʿAbbās (d. 68 AH)
+cannot have written it. This is stronger evidence than any citation-based inference and settles
+[[MISLABELLED-TANWIR-FOLDER]] beyond argument.
+
+**The qirāʾa mechanism in al-Qurṭubī is real.** `qurtubi-jami-ahkam.openiti.raw.txt` carries 250
+instances of **ابن كثير**, of which **at least 20 are explicitly qirāʾa citations** — 11 as
+«قراءة ابن كثير», 9 as «وقرأ نافع وابن كثير». That is **ʿAbdallāh ibn Kathīr al-Makkī, one of the
+seven canonical readers (d. 120 AH)** — a different man from the mufassir (d. 774), and one who died
+551 years *before* al-Qurṭubī rather than after.
+
+### 11.2 Scope of my verification, stated precisely
+
+I confirmed the **mechanism**, not the lane's full counts. The reported ×292 hit count, the
+«ابن عاشور جدي» line at Q 2:271, and the shahāda instances at Q 85:22 did not resolve on my file
+globs and **I did not verify them.** They are reported as the lane's, not as mine.
+
+### 11.3 The rule
+
+> **The death-date test is only as strong as the uniqueness of the name string, and it fails in both
+> directions.**
+
+Two failure classes, both found here:
+
+1. **A name shared by an earlier man in a different discipline.** *Ibn Kathīr* the qāriʾ (d. 120) vs
+   *Ibn Kathīr* the mufassir (d. 774). A raw grep condemns al-Qurṭubī **at scale** — hundreds of
+   hits, not one — for citing someone who predates him by five centuries.
+2. **A name that is also an ordinary Arabic phrase.** *Muḥammad ʿAbduh* (d. 1323) against the shahāda
+   «ومحمدٌ **عبدُه** ورسولُه» — *"and Muhammad is **His servant**."* Ordinary devotional Arabic,
+   indistinguishable from a proper name by string match.
+
+A third, subtler class: **the modern editorial apparatus.** al-Ṭabarī's single *Rashīd Riḍā* hit sits
+inside Aḥmad Shākir's twentieth-century footnote, not al-Ṭabarī's text. A digitised edition contains
+its editor.
+
+**A raw hit count is not evidence; a read context is.** The published census got all of these right —
+but the same test applied without reading would have condemned al-Qurṭubī on 250 hits.
+
+### 11.4 And there are not twelve traditions
+
+Composition of the "twelve", per the lane: **four** pre-modern Arabic (al-Ṭabarī 310, al-Baghawī 516,
+al-Qurṭubī 671, Ibn Kathīr 774); **four** modern Arabic (al-Saʿdī d. 1376, Ibn ʿĀshūr d. 1393,
+al-Wasīṭ 20th c., al-Muyassar a 2007 committee paraphrase); **four** English, of which Ibn Kathīr
+abridged **duplicates** the Arabic edition. **At most eleven distinct works, half the Arabic set
+twentieth-century.**
+
+Consequence: H-NEW-2620's sensitivity row labelled *"classical-only (5 pre-modern)"* contains **four**
+pre-modern works plus one from **1973**. Flagged in that finding and still uncorrected in its script
+comment.
+
+**"Twelve tafsīr traditions disagree systematically" is not a claim this corpus can support**, and
+F-11 has been restated at verse level accordingly.
