@@ -81,12 +81,16 @@ seed: 20260509
 > madīd 34, munsariḥ 18, kāmil 17, mutaqārib 13). The prediction that sajʿ-dense short surahs sit near
 > *rajaz* is not merely unsupported — it is close to inverted.
 >
-> **A further flag on H2, not applied here.** Metre-specificity spread (median baḥr − best baḥr)
-> against matched noise is **1.20× / 1.22× / 1.30×** across the three tuples. If that holds under the
-> per-unit statistic, `inference_verdicts.H2 = "FALSIFIED-buhur-matched"` is reporting **general
-> rhythmic regularity rather than metre-specificity**, and H2 should not be cited as a falsification
-> of al-Bāqillānī until the post-hoc settles it. This is the same paired-vs-unpaired defect
-> [[h-new-2730]] §7 used to demote this finding's "metrical structure above noise" claim.
+> **A further flag on H2 — NOW SETTLED, see the post-hoc block above; the estimate below was too
+> generous and is superseded.** This notice first flagged a metre-specificity spread of
+> **1.20× / 1.22× / 1.30×** across the three tuples, computed as a corpus-level median-of-medians
+> from `H2_per_meter`, and left the question open pending the post-hoc. **The post-hoc has since run
+> and the correct per-unit statistic is 1.02×, not 1.20×.** The aggregate proxy overstated the
+> excess; the direction of the concern was right and its magnitude was not. H2 is reclassified
+> **UNINTERPRETABLE** on the strength of the per-unit figure, not this one. This is the same
+> paired-vs-unpaired defect [[h-new-2730]] §7 used to demote this finding's "metrical structure above
+> noise" claim, and it is recorded here as a **replication of that demotion on a second channel** —
+> metre-specificity rather than metricality — not as an independent finding.
 >
 > Also unresolved: [[AUDIT-TANWIN-DELETION-2690]] — this script's `DROP` set deletes 77.66% of the
 > corpus's tanwīn before syllabification, in all three pausal tuples. Every quantity above that is

@@ -89,3 +89,54 @@ not a new hypothesis.
 
 Related: [[cross-finding-029-the-deciding-parameter]] · [[PROXY-CLAIMS]] ·
 [[AUDIT-WAQF-MARK-INVENTORY-DIVERGENCE]] (the same corpus, a different encoding divergence)
+
+---
+
+## 6. The defect is Qurʾān-SPECIFIC, so every comparison in the family was asymmetric
+
+Counting the affected codepoints in each comparison arm sharpens §3 considerably:
+
+| arm | affected codepoints | classic tanwīn |
+|:--|--:|--:|
+| **Qurʾān** | **6,643** | 1,911 |
+| muʿallaqa (ʿAmr b. Kulthūm) | **0** | 114 |
+| muʿallaqa (ʿAntara) | **0** | 93 |
+| muʿallaqa (al-Ḥārith) | **0** | 102 |
+| Sunan al-Dārimī | **0** | 15,798 |
+| Ṣaḥīḥ al-Bukhārī | **0** | 46,606 |
+
+*(Verified here: the Qurʾān row and the three muʿallaqāt. The two prose rows are the F-2 lane's
+figures — my file glob did not resolve those corpora and I did not confirm them.)*
+
+**Every corpus the Qurʾān was compared against loses zero tanwīn. The Qurʾān loses 77.66%.** So every
+poetry-vs-Qurʾān and prose-vs-Qurʾān comparison in this family was **asymmetric, in one direction,
+on one side only.**
+
+This is also the precise reason §3's blind control was blind: **the muʿallaqāt do not exercise the
+encoding that broke.** The two facts are the same fact seen from either end.
+
+## 7. The repair replication is pre-registered — and its primary target is the family's only survivor
+
+`prereg-h-new-3140-tanwin-repair-replication.md`, SHA `3c896203…5779a0`, typed as an
+**instrument-repair replication**: no hypothesis is restated or reopened, and H-NEW-2690's
+pre-registration is not edited.
+
+Two features worth recording as method:
+
+**It names, before running, the result it cannot claim.** §0 states that the repair cannot rescue
+H1b, and gives the mechanical reason: H-NEW-2730's demolition rests on a *within-corpus self-recut*
+and a *matched-length bin*, both invariant to a uniform phonemiser change because **both sides move
+together**. A length-driven artefact does not stop being length-driven because the weights beneath it
+changed. The prereg says outright: *"If this run returns 'conclusion unchanged' on D8, that is the
+expected result and must not be reported as a vindication of H1b."*
+
+**Its primary target is the one thing it can legitimately destroy.** Because the defect is
+Qurʾān-specific and every comparison arm is clean, the arm most exposed to repair is **H1a — the
+family's sole surviving result.** If the primary target fires `CONCLUSION-CHANGED`, the honest
+summary of the entire scansion family becomes *nothing survives*.
+
+**And it carries a void condition.** Self-check S4: the *defective* arm must reproduce the
+2026-08-07 published values exactly. **If S4 fails, the run is void and no repaired number is
+reported at all** — the harness must be shown to reproduce the original before any corrected figure
+is trusted.
+
