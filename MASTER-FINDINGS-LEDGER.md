@@ -7485,3 +7485,27 @@ calibration block at the head of section B.
 
 | [[h-new-3080-quantifier-scope]] | *kull* vs *baʿḍ* separates legal from universalist register; **survives formula deletion with the effect growing** — the map's CBM prior refuted in the opposite direction. Verdict-rule diff run and stated. **Rests on three *baʿḍ* tokens in two verses; one unambiguous.** 4 of 6 cells NULL | **CONFIRMED, narrow** |
 
+### Wave 2026-08-10 — four lanes, two blocked at Step 0, two NULL
+
+| ID | result | verdict |
+|:--|:--|:--|
+| [[h-new-3120-asbab-chronology]] | Occasion-markers vs chronology. Both hypotheses correct-signed, both fail. **1,270× / 7,024× length swing** — largest in the project. Dominant channel mean verse length | **NULL** |
+| [[h-new-3130-derived-form-fingerprint]] | Verb-form profile vs register. **Shuffling forms within root reproduces 95.7%** of the effect. 385× length swing, 190× coarsening swing. D1 has **two independent sign-flippers** | **NULL, 0/9 cells** |
+| [[AUDIT-TWO-BLOCKED-INSTRUMENTS-2026-08-10]] | F-13 already answered (6th staleness case); F-12's asbāb source truncated at surah 77, 35/37 absent surahs Early Meccan | INSTRUMENT |
+| [[AUDIT-REGISTER-PROXY-ORTHOGRAPHY-DEPENDENCE]] | The register-defining phrase matches 89× in one file and **0× in every other**; the whole 367-token alt-text gap is vocative joining | FRAGILITY |
+
+**Standing-rule amendment (H-NEW-3120):** *"worst length channel governs"* is **unsound when the
+outcome is chronology** — ρ(mean verse length, Nöldeke phase) = +0.79 to +0.91, so the strictest
+channel is a near-duplicate of the treatment and the rule returns NULL regardless of truth.
+Chronology lanes must report each control's collinearity beside its p.
+
+**cross-finding-028 extensions: 0 of 7.** The seventh was the only candidate whose predictor sat
+inside the defining construct; the overlap measured immaterial, so the mechanism survives.
+
+**Open, unanswered:** whether MW-2's kitāb/qurʾān anchor (z = −3.75) survives a mean-verse-length
+control. An attempt was made and was **not a valid test** — it reconstructed the axis with the wrong
+denominator and tested a monotone contrast on an axis whose published shape is an inverted U.
+
+**F-9 (rasm/imlāʾ) was dispatched and produced nothing.** Its groundwork survives in
+[[AUDIT-REGISTER-PROXY-ORTHOGRAPHY-DEPENDENCE]]; the hypothesis itself is untouched.
+
