@@ -1,0 +1,62 @@
+H-NEW-3150  20260809T100346Z  seed=20260509 n_perm=10000
+prereg sha 968cbdf44294b451dae11727ca4463880142970047816a407f20d0f5ccb25437
+
+frame 9383 tokens | final 2029 (21.624%) | tie fraction 78.4%
+mub6 2915 | strict5 710 | divine 1274 | divine verses 927
+
+LADDER (descriptive)
+arm          n_inf  n_tok     obs      exp  excess     rel       z    p_perm
+A1|CH-N          1   9383    1256    630.3   625.7   99.3%   33.90   0.00010
+A1|CH-S          1   9383    1256    630.3   625.7   99.3%   33.90   0.00010
+A1|CH-W          1   9383    1256    630.3   625.7   99.3%   33.90   0.00010
+A2|CH-N          4   9383    1256    641.8   614.2   95.7%   33.91   0.00010
+A2|CH-S          5   9383    1256    656.0   600.0   91.5%   33.28   0.00010
+A2|CH-W          5   9383    1256    652.0   604.0   92.6%   33.51   0.00010
+A3|CH-N          8   9383    1256    642.2   613.8   95.6%   33.95   0.00010
+A3|CH-S         10   9383    1256    657.6   598.4   91.0%   33.26   0.00010
+A3|CH-W         10   9383    1256    653.5   602.5   92.2%   33.50   0.00010
+A4|CH-N         12   9378    1253    911.2   341.8   37.5%   23.01   0.00010
+A4|CH-S         15   9378    1253    914.0   339.0   37.1%   22.96   0.00010
+A4|CH-W         15   9378    1253    912.5   340.5   37.3%   23.11   0.00010
+A5DF|CH-N       47   2134     393    258.5   134.5   52.1%   17.87   0.00010
+A5DF|CH-S       45   1796     389    260.5   128.5   49.3%   17.29   0.00010
+A5DF|CH-W       45   1967     383    252.5   130.5   51.7%   17.48   0.00010
+A5|CH-N         44   2621     434    284.3   149.7   52.7%   18.62   0.00010
+A5|CH-S         49   2299     432    289.3   142.7   49.3%   18.25   0.00010
+A5|CH-W         50   2496     433    286.7   146.3   51.0%   18.64   0.00010
+
+CONFIRMATORY (k=6, raw gate 0.001, bonferroni 0.008333)
+id  arm               obs      exp  excess     rel      z    p_perm      S*  S_max    MDE  pass
+C1  A5|CH-W           433    286.7   146.3   51.0%  18.64   0.00010   310.9    452   30.9  True
+C2  A5|CH-S           432    289.3   142.7   49.3%  18.25   0.00010   313.4    454   30.7  True
+C3  A5|CH-N           434    284.3   149.7   52.7%  18.62   0.00010   309.1    462   31.6  True
+C4  A5DF|CH-W         383    252.5   130.5   51.7%  17.48   0.00010   275.6    402   29.4  True
+C5  A5DF|CH-S         389    260.5   128.5   49.3%  17.29   0.00010   283.4    409   29.2  True
+C6  A5DF|CH-N         393    258.5   134.5   52.1%  17.87   0.00010   281.7    411   29.6  True
+
+HEADLINE (worst of C1-C6) = C1 p=0.00010
+DOMINANT CHANNEL = A5|CH-W
+VERDICT = CONFIRMED (PASS-RESIDUAL)
+
+SENSITIVITY
+S1|C1        n_tok=  811 obs=    62 exp=   54.3 excess=    7.7 rel=  14.1% z=  3.64 p=0.00020
+S1|C2        n_tok=  651 obs=    60 exp=   53.3 excess=    6.7 rel=  12.6% z=  3.12 p=0.00170
+S1|C3        n_tok= 1004 obs=    60 exp=   48.7 excess=   11.3 rel=  23.1% z=  4.50 p=0.00010
+S1|C4        n_tok=  618 obs=    37 exp=   31.0 excess=    6.0 rel=  19.4% z=  3.02 p=0.00110
+S1|C5        n_tok=  431 obs=    42 exp=   36.4 excess=    5.6 rel=  15.5% z=  2.83 p=0.00370
+S1|C6        n_tok=  859 obs=    49 exp=   39.7 excess=    9.3 rel=  23.3% z=  4.14 p=0.00010
+S2|CH-N      n_tok= 2512 obs=   422 exp=  273.9 excess=  148.1 rel=  54.1% z= 18.80 p=0.00010
+S2|CH-S      n_tok= 1899 obs=   408 exp=  264.8 excess=  143.2 rel=  54.1% z= 18.74 p=0.00010
+S2|CH-W      n_tok= 2237 obs=   403 exp=  260.1 excess=  142.9 rel=  54.9% z= 18.57 p=0.00010
+S3|CH-N      n_tok= 2551 obs=   430 exp=  283.4 excess=  146.6 rel=  51.7% z= 18.47 p=0.00010
+S3|CH-S      n_tok= 2180 obs=   425 exp=  284.5 excess=  140.5 rel=  49.4% z= 18.15 p=0.00010
+S3|CH-W      n_tok= 2389 obs=   427 exp=  282.5 excess=  144.5 rel=  51.1% z= 18.60 p=0.00010
+S5|CH-N      n_tok=  103 obs=    43 exp=   28.8 excess=   14.2 rel=  49.4% z=  6.24 p=0.00010
+S5|CH-S      n_tok=  111 obs=    48 exp=   33.4 excess=   14.6 rel=  43.7% z=  6.26 p=0.00010
+S5|CH-W      n_tok=  101 obs=    40 exp=   27.1 excess=   12.9 rel=  47.9% z=  5.89 p=0.00010
+
+S6 within-verse uniform-slot null (H-NEW-23 comparable)
+  all|mub              n= 2915 obs= 1256 exp=   249.6 ratio=5.032 z=+68.82
+  all|mub5             n=  710 obs=  147 exp=    57.3 ratio=2.566 z=+12.75
+  divine_free|mub      n= 1527 obs=  551 exp=   141.4 ratio=3.896 z=+37.53
+  divine_free|mub5     n=  461 obs=  104 exp=    40.5 ratio=2.566 z=+10.82

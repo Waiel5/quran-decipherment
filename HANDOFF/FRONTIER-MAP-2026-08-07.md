@@ -239,8 +239,13 @@ enabling data is stripped or absent.
 > it from published anchors, as the protocol already requires, and must not cite this map's prior as
 > one of them.
 >
-> Where a *confound* is named the map has done better: F-4's and F-14's confound warnings were both
-> real and both changed the design. It is the **outcome predictions** that fail.
+> Where a *confound* is named the map has done better — but **not uniformly, and the exception is
+> instructive.** F-4's and F-14's confound warnings were both real and both changed the design.
+> **F-7's did not: it named the divine-name overlap (which turned out innocent, +51.0% → +51.7% on
+> deletion) and missed the rhyme-shape confound that was fatal.** Confound predictions are therefore
+> **2-for-3, not 2-for-2** — and the F-7 lane reports that it weighted the map's confound line as
+> evidence *because this calibration block told it to*. Treat the confound line as a hypothesis to
+> test, not a finding to inherit.
 >
 > **BINDING RULE FOR ANY LANE DISPATCHED FROM THIS MAP:** grep `findings/` and
 > `MASTER-FINDINGS-LEDGER.md` for your hypothesis **before designing the test**, and put the result
