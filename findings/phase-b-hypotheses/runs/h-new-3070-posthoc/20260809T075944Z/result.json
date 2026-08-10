@@ -1,0 +1,158 @@
+{
+  "NOT_PREREGISTERED": true,
+  "note": "post-hoc probes; can only weaken the locked PASS",
+  "seed": 20260509,
+  "n_permutations": 10000,
+  "alpha_reference": 0.025,
+  "probes": {
+    "P1_adjacent_phase_pairs": {
+      "phase1_vs_phase2": {
+        "meta": {
+          "n_surahs": 44,
+          "n_tokens": 306,
+          "n_distal": 156,
+          "n_proximal": 150
+        },
+        "H1_obs": -0.03846153846153853,
+        "H1_p_worst": 0.9073092690730927,
+        "H2_obs": -0.07248608997725087,
+        "H2_p_worst": 0.7127287271272873
+      },
+      "phase2_vs_phase3": {
+        "meta": {
+          "n_surahs": 41,
+          "n_tokens": 630,
+          "n_distal": 382,
+          "n_proximal": 248
+        },
+        "H1_obs": 0.17942492822158415,
+        "H1_p_worst": 0.032396760323967606,
+        "H2_obs": 0.4373652802788262,
+        "H2_p_worst": 0.0552944705529447
+      },
+      "phase3_vs_phase4": {
+        "meta": {
+          "n_surahs": 44,
+          "n_tokens": 753,
+          "n_distal": 573,
+          "n_proximal": 180
+        },
+        "H1_obs": 0.23307155322862133,
+        "H1_p_worst": 0.012698730126987301,
+        "H2_obs": 0.49753005444595844,
+        "H2_p_worst": 0.003999600039996
+      }
+    },
+    "P2_meccan_only": {
+      "meta": {
+        "n_surahs": 65,
+        "n_tokens": 687,
+        "n_distal": 414,
+        "n_proximal": 273
+      },
+      "H1_obs": 0.18691936083240424,
+      "H1_p_worst": 0.11758824117588242,
+      "H1_p_best": 0.0022997700229977,
+      "H2_obs": 0.15501200307085025,
+      "H2_p_worst": 0.17818218178182182,
+      "H2_p_best": 0.014698530146985302,
+      "all_cells": {
+        "H1|L0_unstratified": 0.0211978802119788,
+        "H1|L1_verse_count|quintile": 0.004999500049995001,
+        "H1|L1_verse_count|decile": 0.0100989901009899,
+        "H1|L2_word_count|quintile": 0.023497650234976502,
+        "H1|L2_word_count|decile": 0.0059994000599940004,
+        "H1|L3_mean_verse_length|quintile": 0.0678932106789321,
+        "H1|L3_mean_verse_length|decile": 0.11758824117588242,
+        "H1|L4_dem_count|quintile": 0.0022997700229977,
+        "H1|L4_dem_count|decile": 0.0071992800719928,
+        "H2|L0_unstratified": 0.1075892410758924,
+        "H2|L1_verse_count|quintile": 0.07389261073892611,
+        "H2|L1_verse_count|decile": 0.17818218178182182,
+        "H2|L2_word_count|quintile": 0.022497750224977502,
+        "H2|L2_word_count|decile": 0.015398460153984602,
+        "H2|L3_mean_verse_length|quintile": 0.053094690530946904,
+        "H2|L3_mean_verse_length|decile": 0.0756924307569243,
+        "H2|L4_dem_count|quintile": 0.014698530146985302,
+        "H2|L4_dem_count|decile": 0.09729027097290271
+      }
+    },
+    "P3_drop_ulaaika_lemma": {
+      "meta": {
+        "n_surahs": 86,
+        "n_tokens": 853,
+        "n_distal": 523,
+        "n_proximal": 330
+      },
+      "n_dropped": 206,
+      "H1_obs": 0.44744191436352054,
+      "H1_p_worst": 0.0036996300369963003,
+      "H2_obs": 0.38212206348683886,
+      "H2_p_worst": 0.0015998400159984002
+    },
+    "P3b_only_ulaaika_lemma": {
+      "meta": {
+        "n_surahs": 54,
+        "n_tokens": 206,
+        "n_distal": 206,
+        "n_proximal": 0
+      },
+      "H1_obs": null,
+      "H1_p_worst": null
+    },
+    "P4_phase_profile_with_CI": {
+      "1": {
+        "n_tokens": 57,
+        "distal_share": 0.5614035087719298,
+        "ci95_surah_clustered_bootstrap": [
+          0.44642170329670333,
+          0.6875
+        ]
+      },
+      "2": {
+        "n_tokens": 249,
+        "distal_share": 0.4979919678714859,
+        "ci95_surah_clustered_bootstrap": [
+          0.4124481346930496,
+          0.5804252199413489
+        ]
+      },
+      "3": {
+        "n_tokens": 381,
+        "distal_share": 0.6771653543307087,
+        "ci95_surah_clustered_bootstrap": [
+          0.6229112927203619,
+          0.7490787765020507
+        ]
+      },
+      "4": {
+        "n_tokens": 372,
+        "distal_share": 0.8467741935483871,
+        "ci95_surah_clustered_bootstrap": [
+          0.8161290322580645,
+          0.8811903793119038
+        ]
+      }
+    },
+    "P4b_lemma_counts_by_phase": {
+      "*a`lik": {
+        "1": 26,
+        "2": 101,
+        "3": 193,
+        "4": 200
+      },
+      ">uwla`^}ik": {
+        "1": 6,
+        "2": 22,
+        "3": 62,
+        "4": 114
+      },
+      "ha`*aA": {
+        "1": 24,
+        "2": 122,
+        "3": 122,
+        "4": 49
+      }
+    }
+  }
+}

@@ -1,0 +1,5389 @@
+{
+  "hypothesis": "H-NEW-3070",
+  "scope": "F-4 clause 2 ONLY (chronological gradient). Clause 1 answered by H-NEW-2960.",
+  "prereg_sha256": "83bdecc61c8e82df366f05f1112121ff23678d17d0c6bf25c4e39955e9a17bee",
+  "seed": 20260509,
+  "n_permutations": 10000,
+  "alpha_bonferroni": 0.025,
+  "census": {
+    "n_dem": 1059,
+    "n_loc": 669,
+    "n_t": 1166,
+    "n_distal_kaf": 729,
+    "n_proximal_kaf": 330,
+    "kaf_vs_lemma_disagreements": 0,
+    "n_lemma_unclassified": 0
+  },
+  "muqattaat_surahs_from_POS_INL": [
+    2,
+    3,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    19,
+    20,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    36,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    50,
+    68
+  ],
+  "n_dropped_by_arm": {
+    "A0_full": 0,
+    "A1_no_muqattaat_openings": 17,
+    "A2_no_ka_prefixed": 126,
+    "A3_no_top10_phrase_types": 247,
+    "A4_no_openings_no_ka_no_top10": 369
+  },
+  "top_phrase_types": [
+    {
+      "dem_form": ">uw@la`^}ika",
+      "next_form": "humu",
+      "n": 58
+    },
+    {
+      "dem_form": "*a`lika",
+      "next_form": ">an~a",
+      "n": 30
+    },
+    {
+      "dem_form": ">uw@la`^}ika",
+      "next_form": "{l~a*iyna",
+      "n": 28
+    },
+    {
+      "dem_form": "*a`lika",
+      "next_form": "'aAya`tK",
+      "n": 24
+    },
+    {
+      "dem_form": ">uw@la`^}ika",
+      "next_form": ">aSoHa`bu",
+      "n": 21
+    },
+    {
+      "dem_form": "*a`lika",
+      "next_form": "'aAyapF",
+      "n": 20
+    },
+    {
+      "dem_form": ">uw@la`^}ika",
+      "next_form": "humo",
+      "n": 19
+    },
+    {
+      "dem_form": "*a`lika",
+      "next_form": "najoziY",
+      "n": 19
+    },
+    {
+      "dem_form": "ha`*aA^",
+      "next_form": "<il~aA",
+      "n": 15
+    },
+    {
+      "dem_form": "*a`lika",
+      "next_form": "huwa",
+      "n": 13
+    }
+  ],
+  "descriptive_by_phase": {
+    "Early Meccan": {
+      "n_surahs_with_dem": 24,
+      "n_tokens": 57,
+      "n_distal": 32,
+      "token_level_distal_share": 0.5614035087719298,
+      "mean_per_surah_distal_share": 0.5576388888888889
+    },
+    "Middle Meccan": {
+      "n_surahs_with_dem": 20,
+      "n_tokens": 249,
+      "n_distal": 124,
+      "token_level_distal_share": 0.4979919678714859,
+      "mean_per_surah_distal_share": 0.5013120089759778
+    },
+    "Late Meccan": {
+      "n_surahs_with_dem": 21,
+      "n_tokens": 381,
+      "n_distal": 258,
+      "token_level_distal_share": 0.6771653543307087,
+      "mean_per_surah_distal_share": 0.7046727328172163
+    },
+    "Medinan": {
+      "n_surahs_with_dem": 23,
+      "n_tokens": 372,
+      "n_distal": 315,
+      "token_level_distal_share": 0.8467741935483871,
+      "mean_per_surah_distal_share": 0.8737661862671567
+    }
+  },
+  "diagnostics": {
+    "R1_noldeke_phase_kaf|A0_full": {
+      "n_surahs": 88,
+      "n_tokens": 1059,
+      "n_distal": 729,
+      "n_proximal": 330
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings": {
+      "n_surahs": 88,
+      "n_tokens": 1042,
+      "n_distal": 715,
+      "n_proximal": 327
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed": {
+      "n_surahs": 88,
+      "n_tokens": 933,
+      "n_distal": 603,
+      "n_proximal": 330
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types": {
+      "n_surahs": 86,
+      "n_tokens": 812,
+      "n_distal": 497,
+      "n_proximal": 315
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10": {
+      "n_surahs": 86,
+      "n_tokens": 690,
+      "n_distal": 378,
+      "n_proximal": 312
+    },
+    "R2_revelation_order_kaf|A0_full": {
+      "n_surahs": 88,
+      "n_tokens": 1059,
+      "n_distal": 729,
+      "n_proximal": 330
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings": {
+      "n_surahs": 88,
+      "n_tokens": 1042,
+      "n_distal": 715,
+      "n_proximal": 327
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed": {
+      "n_surahs": 88,
+      "n_tokens": 933,
+      "n_distal": 603,
+      "n_proximal": 330
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types": {
+      "n_surahs": 86,
+      "n_tokens": 812,
+      "n_distal": 497,
+      "n_proximal": 315
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10": {
+      "n_surahs": 86,
+      "n_tokens": 690,
+      "n_distal": 378,
+      "n_proximal": 312
+    },
+    "R3_noldeke_phase_lemma|A0_full": {
+      "n_surahs": 88,
+      "n_tokens": 1059,
+      "n_distal": 729,
+      "n_proximal": 330
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings": {
+      "n_surahs": 88,
+      "n_tokens": 1042,
+      "n_distal": 715,
+      "n_proximal": 327
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed": {
+      "n_surahs": 88,
+      "n_tokens": 933,
+      "n_distal": 603,
+      "n_proximal": 330
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types": {
+      "n_surahs": 86,
+      "n_tokens": 812,
+      "n_distal": 497,
+      "n_proximal": 315
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10": {
+      "n_surahs": 86,
+      "n_tokens": 690,
+      "n_distal": 378,
+      "n_proximal": 312
+    },
+    "R4_period_kaf|A0_full": {
+      "n_surahs": 88,
+      "n_tokens": 1059,
+      "n_distal": 729,
+      "n_proximal": 330
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings": {
+      "n_surahs": 88,
+      "n_tokens": 1042,
+      "n_distal": 715,
+      "n_proximal": 327
+    },
+    "R4_period_kaf|A2_no_ka_prefixed": {
+      "n_surahs": 88,
+      "n_tokens": 933,
+      "n_distal": 603,
+      "n_proximal": 330
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types": {
+      "n_surahs": 86,
+      "n_tokens": 812,
+      "n_distal": 497,
+      "n_proximal": 315
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10": {
+      "n_surahs": 86,
+      "n_tokens": 690,
+      "n_distal": 378,
+      "n_proximal": 312
+    }
+  },
+  "dominant_channel": {
+    "H1": {
+      "worst_setting": "L3_mean_verse_length|decile",
+      "worst_p": 0.0028997100289971,
+      "best_setting": "L0_unstratified",
+      "best_p": 9.999000099990002e-05,
+      "p_swing_ratio": 28.999999999999996,
+      "all": {
+        "L0_unstratified": 9.999000099990002e-05,
+        "L1_verse_count|quintile": 9.999000099990002e-05,
+        "L1_verse_count|decile": 9.999000099990002e-05,
+        "L2_word_count|quintile": 9.999000099990002e-05,
+        "L2_word_count|decile": 9.999000099990002e-05,
+        "L3_mean_verse_length|quintile": 0.001999800019998,
+        "L3_mean_verse_length|decile": 0.0028997100289971,
+        "L4_dem_count|quintile": 9.999000099990002e-05,
+        "L4_dem_count|decile": 9.999000099990002e-05
+      }
+    },
+    "H2": {
+      "worst_setting": "L3_mean_verse_length|decile",
+      "worst_p": 0.0021997800219978004,
+      "best_setting": "L0_unstratified",
+      "best_p": 9.999000099990002e-05,
+      "p_swing_ratio": 22.0,
+      "all": {
+        "L0_unstratified": 9.999000099990002e-05,
+        "L1_verse_count|quintile": 0.00039996000399960006,
+        "L1_verse_count|decile": 0.00039996000399960006,
+        "L2_word_count|quintile": 9.999000099990002e-05,
+        "L2_word_count|decile": 9.999000099990002e-05,
+        "L3_mean_verse_length|quintile": 0.0011998800119988001,
+        "L3_mean_verse_length|decile": 0.0021997800219978004,
+        "L4_dem_count|quintile": 9.999000099990002e-05,
+        "L4_dem_count|decile": 0.00019998000199980003
+      }
+    }
+  },
+  "results": {
+    "R1_noldeke_phase_kaf|A0_full|H1|L0_unstratified": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0011328232946751402,
+      "null_sd": 0.1420290175158422,
+      "null_q975": 0.2755527497194159,
+      "n_distinct_null_values": 9804,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H1|L1_verse_count|quintile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.005467073201147276,
+      "null_sd": 0.11414365996025314,
+      "null_q975": 0.21902107494700082,
+      "n_distinct_null_values": 9635,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H1|L1_verse_count|decile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05536094650205762,
+      "null_sd": 0.1045667907076323,
+      "null_q975": 0.2589995635366006,
+      "n_distinct_null_values": 9610,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H1|L2_word_count|quintile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.024221050006235187,
+      "null_sd": 0.10335528702176285,
+      "null_q975": 0.22540466392318217,
+      "n_distinct_null_values": 9551,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H1|L2_word_count|decile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.07856638733009103,
+      "null_sd": 0.0853291277029365,
+      "null_q975": 0.24156472128694342,
+      "n_distinct_null_values": 9146,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.53178700586108,
+      "p": 0.001999800019998,
+      "null_mean": 0.35989562663673774,
+      "null_sd": 0.0639866978921136,
+      "null_q975": 0.4833068337697966,
+      "n_distinct_null_values": 8447,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H1|L3_mean_verse_length|decile": {
+      "obs": 0.53178700586108,
+      "p": 0.0028997100289971,
+      "null_mean": 0.3998115326100511,
+      "null_sd": 0.050059263502257735,
+      "null_q975": 0.49558860207008354,
+      "n_distinct_null_values": 7517,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H1|L4_dem_count|quintile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.032819476243920676,
+      "null_sd": 0.10163132667956672,
+      "null_q975": 0.23042866941015086,
+      "n_distinct_null_values": 9459,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H1|L4_dem_count|decile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.10174008853971815,
+      "null_sd": 0.08930124246117026,
+      "null_q975": 0.2777434842249656,
+      "n_distinct_null_values": 8926,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H2|L0_unstratified": {
+      "obs": 0.3811244068568479,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0014021707298663385,
+      "null_sd": 0.10684713577327352,
+      "null_q975": 0.20705515313617293,
+      "n_distinct_null_values": 9425,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H2|L1_verse_count|quintile": {
+      "obs": 0.3811244068568479,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.004305688959066566,
+      "null_sd": 0.11139043483448849,
+      "null_q975": 0.2234519587343673,
+      "n_distinct_null_values": 9463,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H2|L1_verse_count|decile": {
+      "obs": 0.3811244068568479,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.009849777687442116,
+      "null_sd": 0.11157907927100322,
+      "null_q975": 0.22897887154648552,
+      "n_distinct_null_values": 9449,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H2|L2_word_count|quintile": {
+      "obs": 0.3811244068568479,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.06292425306305036,
+      "null_sd": 0.10299862858575266,
+      "null_q975": 0.13798156219930346,
+      "n_distinct_null_values": 9413,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H2|L2_word_count|decile": {
+      "obs": 0.3811244068568479,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.037541711396033225,
+      "null_sd": 0.1015341620674427,
+      "null_q975": 0.15816495776940195,
+      "n_distinct_null_values": 9442,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.3811244068568479,
+      "p": 0.0011998800119988001,
+      "null_mean": 0.24912572274054218,
+      "null_sd": 0.044717807324642284,
+      "null_q975": 0.33603064478748296,
+      "n_distinct_null_values": 8673,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H2|L3_mean_verse_length|decile": {
+      "obs": 0.3811244068568479,
+      "p": 0.0021997800219978004,
+      "null_mean": 0.2644583806114137,
+      "null_sd": 0.04098116622823933,
+      "null_q975": 0.3477223407957056,
+      "n_distinct_null_values": 8120,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H2|L4_dem_count|quintile": {
+      "obs": 0.3811244068568479,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.018284948633361536,
+      "null_sd": 0.10303662569316079,
+      "null_q975": 0.18268445268041905,
+      "n_distinct_null_values": 9435,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A0_full|H2|L4_dem_count|decile": {
+      "obs": 0.3811244068568479,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.02436536216852812,
+      "null_sd": 0.09453722064699165,
+      "null_q975": 0.20878460253542538,
+      "n_distinct_null_values": 9328,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H1|L0_unstratified": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.001152454395757168,
+      "null_sd": 0.14296035207162944,
+      "null_q975": 0.27885877119822056,
+      "n_distinct_null_values": 9869,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H1|L1_verse_count|quintile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.003707230384294583,
+      "null_sd": 0.11464139115163646,
+      "null_q975": 0.22160315219948223,
+      "n_distinct_null_values": 9628,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H1|L1_verse_count|decile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05916917687816773,
+      "null_sd": 0.10479271038498444,
+      "null_q975": 0.2625157716900835,
+      "n_distinct_null_values": 9578,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H1|L2_word_count|quintile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.02481432518551788,
+      "null_sd": 0.1040829264860808,
+      "null_q975": 0.2266059322940057,
+      "n_distinct_null_values": 9520,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H1|L2_word_count|decile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0811555484271081,
+      "null_sd": 0.08609784270816374,
+      "null_q975": 0.24460533350441604,
+      "n_distinct_null_values": 9045,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.5396163469557966,
+      "p": 0.0017998200179982,
+      "null_mean": 0.36181052928722657,
+      "null_sd": 0.06476759815843794,
+      "null_q975": 0.48595186159406345,
+      "n_distinct_null_values": 8325,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H1|L3_mean_verse_length|decile": {
+      "obs": 0.5396163469557966,
+      "p": 0.0023997600239976003,
+      "null_mean": 0.4038827043904109,
+      "null_sd": 0.050532055390511726,
+      "null_q975": 0.5001224310857338,
+      "n_distinct_null_values": 7549,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H1|L4_dem_count|quintile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.024242697119394398,
+      "null_sd": 0.10260414442695147,
+      "null_q975": 0.22371388550287633,
+      "n_distinct_null_values": 9470,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H1|L4_dem_count|decile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0788568187164518,
+      "null_sd": 0.09018952361388116,
+      "null_q975": 0.2546481041893886,
+      "n_distinct_null_values": 9003,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H2|L0_unstratified": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0014108511247216938,
+      "null_sd": 0.10686276036453589,
+      "null_q975": 0.20697019881226397,
+      "n_distinct_null_values": 9449,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H2|L1_verse_count|quintile": {
+      "obs": 0.3822985936213453,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.004304249584101073,
+      "null_sd": 0.11121164833988532,
+      "null_q975": 0.22340279321496445,
+      "n_distinct_null_values": 9429,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H2|L1_verse_count|decile": {
+      "obs": 0.3822985936213453,
+      "p": 0.0004999500049995,
+      "null_mean": 0.01134806156723851,
+      "null_sd": 0.11132890332612855,
+      "null_q975": 0.22906026114483363,
+      "n_distinct_null_values": 9444,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H2|L2_word_count|quintile": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.06370517853412815,
+      "null_sd": 0.10287907274005603,
+      "null_q975": 0.13617035174923076,
+      "n_distinct_null_values": 9412,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H2|L2_word_count|decile": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.03775352633959687,
+      "null_sd": 0.10146298934180689,
+      "null_q975": 0.15789458906047837,
+      "n_distinct_null_values": 9449,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.3822985936213453,
+      "p": 0.0012998700129987,
+      "null_mean": 0.2502641716552912,
+      "null_sd": 0.04474987379860946,
+      "null_q975": 0.3369533460237788,
+      "n_distinct_null_values": 8703,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H2|L3_mean_verse_length|decile": {
+      "obs": 0.3822985936213453,
+      "p": 0.0022997700229977,
+      "null_mean": 0.26645263028049576,
+      "null_sd": 0.04087874652079927,
+      "null_q975": 0.34916464475647485,
+      "n_distinct_null_values": 8481,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H2|L4_dem_count|quintile": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.027016555553845457,
+      "null_sd": 0.10260688305009259,
+      "null_q975": 0.17036926807291844,
+      "n_distinct_null_values": 9430,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A1_no_muqattaat_openings|H2|L4_dem_count|decile": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.008341685444359363,
+      "null_sd": 0.09422115785836999,
+      "null_q975": 0.1932815209962753,
+      "n_distinct_null_values": 9354,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H1|L0_unstratified": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0016803060455299512,
+      "null_sd": 0.15658547576431006,
+      "null_q975": 0.3025659580883461,
+      "n_distinct_null_values": 9766,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H1|L1_verse_count|quintile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.002814641941806093,
+      "null_sd": 0.12426660331311858,
+      "null_q975": 0.24295379164782158,
+      "n_distinct_null_values": 9534,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H1|L1_verse_count|decile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.06515092868988395,
+      "null_sd": 0.11694475989906972,
+      "null_q975": 0.2941383989145184,
+      "n_distinct_null_values": 9485,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H1|L2_word_count|quintile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.01740437207899898,
+      "null_sd": 0.11359250188265065,
+      "null_q975": 0.2367145333936379,
+      "n_distinct_null_values": 9455,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H1|L2_word_count|decile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.09531978290366352,
+      "null_sd": 0.09146150409771697,
+      "null_q975": 0.2716568671792553,
+      "n_distinct_null_values": 8909,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.6046736016885271,
+      "p": 0.0008999100089991,
+      "null_mean": 0.4096927951153325,
+      "null_sd": 0.06660410338829295,
+      "null_q975": 0.539606512890095,
+      "n_distinct_null_values": 8256,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H1|L3_mean_verse_length|decile": {
+      "obs": 0.6046736016885271,
+      "p": 0.0021997800219978004,
+      "null_mean": 0.4523989084878638,
+      "null_sd": 0.05448864282685855,
+      "null_q975": 0.5576224935926428,
+      "n_distinct_null_values": 7335,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H1|L4_dem_count|quintile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.013248522538821075,
+      "null_sd": 0.1116124461368051,
+      "null_q975": 0.22911465400271364,
+      "n_distinct_null_values": 9300,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H1|L4_dem_count|decile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.13131813206693804,
+      "null_sd": 0.08713709183061914,
+      "null_q975": 0.29985489220563843,
+      "n_distinct_null_values": 8357,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H2|L0_unstratified": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0010179920818826217,
+      "null_sd": 0.10699286153411819,
+      "null_q975": 0.2106794448801888,
+      "n_distinct_null_values": 9425,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H2|L1_verse_count|quintile": {
+      "obs": 0.4103081507375445,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.009804339047542018,
+      "null_sd": 0.10870299111981696,
+      "null_q975": 0.2250319402697168,
+      "n_distinct_null_values": 9449,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H2|L1_verse_count|decile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.014499603314716893,
+      "null_sd": 0.10917428081768148,
+      "null_q975": 0.22865017793054168,
+      "n_distinct_null_values": 9411,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H2|L2_word_count|quintile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.05795721710407285,
+      "null_sd": 0.10306223956341862,
+      "null_q975": 0.14293160871938,
+      "n_distinct_null_values": 9455,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H2|L2_word_count|decile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.02224683593464026,
+      "null_sd": 0.1007234886132729,
+      "null_q975": 0.171503091108799,
+      "n_distinct_null_values": 9354,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.4103081507375445,
+      "p": 0.0006999300069993001,
+      "null_mean": 0.2793246090189348,
+      "null_sd": 0.04330249249889662,
+      "null_q975": 0.3638054382089431,
+      "n_distinct_null_values": 8626,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H2|L3_mean_verse_length|decile": {
+      "obs": 0.4103081507375445,
+      "p": 0.0029997000299970002,
+      "null_mean": 0.2991183182919362,
+      "null_sd": 0.04018458267980609,
+      "null_q975": 0.3795317188976665,
+      "n_distinct_null_values": 8422,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H2|L4_dem_count|quintile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.017271836095806903,
+      "null_sd": 0.10313087034532943,
+      "null_q975": 0.1845000068886273,
+      "n_distinct_null_values": 9371,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A2_no_ka_prefixed|H2|L4_dem_count|decile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.026641401293957454,
+      "null_sd": 0.09387124564260262,
+      "null_q975": 0.20821045568144309,
+      "n_distinct_null_values": 9358,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H1|L0_unstratified": {
+      "obs": 0.47882852671585063,
+      "p": 0.00029997000299970003,
+      "null_mean": -0.0017667471495640343,
+      "null_sd": 0.14014527905842233,
+      "null_q975": 0.2692164095685223,
+      "n_distinct_null_values": 9447,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H1|L1_verse_count|quintile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.010757147328414917,
+      "null_sd": 0.11434822759901607,
+      "null_q975": 0.2105589090096132,
+      "n_distinct_null_values": 9263,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H1|L1_verse_count|decile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0523698770400179,
+      "null_sd": 0.10646935527056543,
+      "null_q975": 0.2611234071093225,
+      "n_distinct_null_values": 9249,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H1|L2_word_count|quintile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.020907851553767058,
+      "null_sd": 0.09965339285148564,
+      "null_q975": 0.21354907221104402,
+      "n_distinct_null_values": 9190,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H1|L2_word_count|decile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.10396048736865642,
+      "null_sd": 0.08450114580298783,
+      "null_q975": 0.26761122289291284,
+      "n_distinct_null_values": 8910,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.47882852671585063,
+      "p": 0.014498550144985502,
+      "null_mean": 0.35122756539235417,
+      "null_sd": 0.06050562812450821,
+      "null_q975": 0.4674279007377598,
+      "n_distinct_null_values": 7599,
+      "frac_null_exactly_equal_obs": 0.0001,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H1|L3_mean_verse_length|decile": {
+      "obs": 0.47882852671585063,
+      "p": 0.029197080291970802,
+      "null_mean": 0.391963255086072,
+      "null_sd": 0.047707979044797046,
+      "null_q975": 0.48160406885758983,
+      "n_distinct_null_values": 7126,
+      "frac_null_exactly_equal_obs": 0.0001,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.6976744186046512
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H1|L4_dem_count|quintile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.013725584618824076,
+      "null_sd": 0.1057308270181551,
+      "null_q975": 0.21790744466800774,
+      "n_distinct_null_values": 9234,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H1|L4_dem_count|decile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.12038226246367094,
+      "null_sd": 0.0826594228629091,
+      "null_q975": 0.28021797451374914,
+      "n_distinct_null_values": 8419,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H2|L0_unstratified": {
+      "obs": 0.35767244270995907,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0015565194724463216,
+      "null_sd": 0.10823107384886076,
+      "null_q975": 0.2108394664627111,
+      "n_distinct_null_values": 9409,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H2|L1_verse_count|quintile": {
+      "obs": 0.35767244270995907,
+      "p": 0.0004999500049995,
+      "null_mean": -0.008709672745789838,
+      "null_sd": 0.1141267081279143,
+      "null_q975": 0.2158430180119894,
+      "n_distinct_null_values": 9451,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H2|L1_verse_count|decile": {
+      "obs": 0.35767244270995907,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.010101363000116116,
+      "null_sd": 0.11082375559339167,
+      "null_q975": 0.23053064150910427,
+      "n_distinct_null_values": 9390,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H2|L2_word_count|quintile": {
+      "obs": 0.35767244270995907,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.06274751527514721,
+      "null_sd": 0.10102694455638693,
+      "null_q975": 0.1303290990760734,
+      "n_distinct_null_values": 9363,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H2|L2_word_count|decile": {
+      "obs": 0.35767244270995907,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.010447433281511369,
+      "null_sd": 0.09571727141127383,
+      "null_q975": 0.1747663474754036,
+      "n_distinct_null_values": 9359,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.35767244270995907,
+      "p": 0.004199580041995801,
+      "null_mean": 0.24122646564798197,
+      "null_sd": 0.045175123836037875,
+      "null_q975": 0.32948503370659754,
+      "n_distinct_null_values": 8618,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H2|L3_mean_verse_length|decile": {
+      "obs": 0.35767244270995907,
+      "p": 0.015398460153984602,
+      "null_mean": 0.2645228070584372,
+      "null_sd": 0.04241740124091119,
+      "null_q975": 0.3490670203025767,
+      "n_distinct_null_values": 8433,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.6976744186046512
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H2|L4_dem_count|quintile": {
+      "obs": 0.35767244270995907,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.01858735603629404,
+      "null_sd": 0.10592163675968386,
+      "null_q975": 0.1873546361307188,
+      "n_distinct_null_values": 9435,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A3_no_top10_phrase_types|H2|L4_dem_count|decile": {
+      "obs": 0.35767244270995907,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.039552812993782466,
+      "null_sd": 0.10331843710605523,
+      "null_q975": 0.23940517484477997,
+      "n_distinct_null_values": 9369,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H1|L0_unstratified": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.001975656288156392,
+      "null_sd": 0.1590054813797475,
+      "null_q975": 0.30744556369556353,
+      "n_distinct_null_values": 9409,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H1|L1_verse_count|quintile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0034938848188849304,
+      "null_sd": 0.128751237058961,
+      "null_q975": 0.2468482905982904,
+      "n_distinct_null_values": 9285,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H1|L1_verse_count|decile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.06401879833129821,
+      "null_sd": 0.12281899525232341,
+      "null_q975": 0.3041844729344727,
+      "n_distinct_null_values": 9276,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H1|L2_word_count|quintile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.00632400793650781,
+      "null_sd": 0.11329235821071101,
+      "null_q975": 0.22559523809523777,
+      "n_distinct_null_values": 9249,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H1|L2_word_count|decile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.12867423178673165,
+      "null_sd": 0.09156439328213391,
+      "null_q975": 0.30321657509157485,
+      "n_distinct_null_values": 8831,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.5604395604395604,
+      "p": 0.005699430056994301,
+      "null_mean": 0.40730449735449725,
+      "null_sd": 0.0630895899189961,
+      "null_q975": 0.5286960724460723,
+      "n_distinct_null_values": 7653,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H1|L3_mean_verse_length|decile": {
+      "obs": 0.5604395604395604,
+      "p": 0.015398460153984602,
+      "null_mean": 0.4496741452991451,
+      "null_sd": 0.05231663862704944,
+      "null_q975": 0.5501144688644688,
+      "n_distinct_null_values": 6926,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.6976744186046512
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H1|L4_dem_count|quintile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.007711289173789048,
+      "null_sd": 0.12104017036840536,
+      "null_q975": 0.24161451973951947,
+      "n_distinct_null_values": 9238,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H1|L4_dem_count|decile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05363777472527461,
+      "null_sd": 0.10967029808324709,
+      "null_q975": 0.26348188848188836,
+      "n_distinct_null_values": 8751,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H2|L0_unstratified": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0012835782058247982,
+      "null_sd": 0.10816832205003751,
+      "null_q975": 0.20764671763280523,
+      "n_distinct_null_values": 9372,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H2|L1_verse_count|quintile": {
+      "obs": 0.37965212320804764,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.010723725070395849,
+      "null_sd": 0.11174817845947957,
+      "null_q975": 0.20735672058117122,
+      "n_distinct_null_values": 9438,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H2|L1_verse_count|decile": {
+      "obs": 0.37965212320804764,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.007473149712694811,
+      "null_sd": 0.1085728718912968,
+      "null_q975": 0.22436501700442404,
+      "n_distinct_null_values": 9360,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H2|L2_word_count|quintile": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.07157672257115007,
+      "null_sd": 0.09998033972591329,
+      "null_q975": 0.11966553601722882,
+      "n_distinct_null_values": 9348,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H2|L2_word_count|decile": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.00172147841336417,
+      "null_sd": 0.09393609840726212,
+      "null_q975": 0.1777050431879485,
+      "n_distinct_null_values": 9289,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.37965212320804764,
+      "p": 0.004999500049995001,
+      "null_mean": 0.27018146701635776,
+      "null_sd": 0.04393748448533922,
+      "null_q975": 0.3558202513389904,
+      "n_distinct_null_values": 8651,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H2|L3_mean_verse_length|decile": {
+      "obs": 0.37965212320804764,
+      "p": 0.020097990200979902,
+      "null_mean": 0.29323189823826423,
+      "null_sd": 0.0418837987997924,
+      "null_q975": 0.37641605040057524,
+      "n_distinct_null_values": 8511,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.6976744186046512
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H2|L4_dem_count|quintile": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.029183555201191962,
+      "null_sd": 0.10601577810725571,
+      "null_q975": 0.1742342750921771,
+      "n_distinct_null_values": 9365,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R1_noldeke_phase_kaf|A4_no_openings_no_ka_no_top10|H2|L4_dem_count|decile": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.022660118978748804,
+      "null_sd": 0.10716609794220512,
+      "null_q975": 0.1824129276701619,
+      "n_distinct_null_values": 9374,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H1|L0_unstratified": {
+      "obs": 12.558012220975185,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.0022404900860456337,
+      "null_sd": 3.6867977250582524,
+      "null_q975": 7.064710998877664,
+      "n_distinct_null_values": 9995,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H1|L1_verse_count|quintile": {
+      "obs": 12.558012220975185,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.23494718917570773,
+      "null_sd": 2.95018722712949,
+      "null_q975": 6.0065912208504795,
+      "n_distinct_null_values": 9988,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H1|L1_verse_count|decile": {
+      "obs": 12.558012220975185,
+      "p": 9.999000099990002e-05,
+      "null_mean": 1.3141322633744854,
+      "null_sd": 2.584203940015393,
+      "null_q975": 6.394384586606807,
+      "n_distinct_null_values": 9986,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H1|L2_word_count|quintile": {
+      "obs": 12.558012220975185,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.009351851851851814,
+      "null_sd": 2.974379487303808,
+      "null_q975": 5.966976555680256,
+      "n_distinct_null_values": 9989,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H1|L2_word_count|decile": {
+      "obs": 12.558012220975185,
+      "p": 9.999000099990002e-05,
+      "null_mean": 1.4366597917446067,
+      "null_sd": 2.8820441421497356,
+      "null_q975": 6.9957413642598825,
+      "n_distinct_null_values": 9988,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H1|L3_mean_verse_length|quintile": {
+      "obs": 12.558012220975185,
+      "p": 0.016198380161983803,
+      "null_mean": 7.40561813193665,
+      "null_sd": 2.3660369812925284,
+      "null_q975": 12.112026437211618,
+      "n_distinct_null_values": 9981,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H1|L3_mean_verse_length|decile": {
+      "obs": 12.558012220975185,
+      "p": 0.029897010298970104,
+      "null_mean": 8.575652166105499,
+      "null_sd": 2.102309351307071,
+      "null_q975": 12.687759383963087,
+      "n_distinct_null_values": 9968,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H1|L4_dem_count|quintile": {
+      "obs": 12.558012220975185,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.25498991644843505,
+      "null_sd": 3.0457008823454075,
+      "null_q975": 6.219856902356901,
+      "n_distinct_null_values": 9992,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H1|L4_dem_count|decile": {
+      "obs": 12.558012220975185,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.6477564721286944,
+      "null_sd": 2.9930240174246032,
+      "null_q975": 6.399366816311259,
+      "n_distinct_null_values": 9995,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H2|L0_unstratified": {
+      "obs": 0.3078062412124442,
+      "p": 0.0015998400159984002,
+      "null_mean": -0.0014546419254202604,
+      "null_sd": 0.10746226593590398,
+      "null_q975": 0.212578962269026,
+      "n_distinct_null_values": 8961,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H2|L1_verse_count|quintile": {
+      "obs": 0.3078062412124442,
+      "p": 0.010798920107989201,
+      "null_mean": 0.043862933488141825,
+      "null_sd": 0.114307111831428,
+      "null_q975": 0.2680984473946089,
+      "n_distinct_null_values": 9026,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H2|L1_verse_count|decile": {
+      "obs": 0.3078062412124442,
+      "p": 0.016298370162983702,
+      "null_mean": 0.05603253363340298,
+      "null_sd": 0.11603767778131899,
+      "null_q975": 0.28549485255865914,
+      "n_distinct_null_values": 8997,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H2|L2_word_count|quintile": {
+      "obs": 0.3078062412124442,
+      "p": 0.00039996000399960006,
+      "null_mean": -0.04729906369091974,
+      "null_sd": 0.10984076499818346,
+      "null_q975": 0.16712538991586173,
+      "n_distinct_null_values": 8985,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H2|L2_word_count|decile": {
+      "obs": 0.3078062412124442,
+      "p": 0.00039996000399960006,
+      "null_mean": -0.007899843547373714,
+      "null_sd": 0.10354208662146534,
+      "null_q975": 0.19390224655337895,
+      "n_distinct_null_values": 8875,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.3078062412124442,
+      "p": 0.07379262073792621,
+      "null_mean": 0.1865797244770968,
+      "null_sd": 0.08409638908637256,
+      "null_q975": 0.35322835412654857,
+      "n_distinct_null_values": 8703,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H2|L3_mean_verse_length|decile": {
+      "obs": 0.3078062412124442,
+      "p": 0.0734926507349265,
+      "null_mean": 0.19069604408578494,
+      "null_sd": 0.08070906072289577,
+      "null_q975": 0.3510166669425044,
+      "n_distinct_null_values": 8656,
+      "frac_null_exactly_equal_obs": 0.0001,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H2|L4_dem_count|quintile": {
+      "obs": 0.3078062412124442,
+      "p": 0.0011998800119988001,
+      "null_mean": -0.021694767696947507,
+      "null_sd": 0.11087955791844013,
+      "null_q975": 0.19519053273741366,
+      "n_distinct_null_values": 8944,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A0_full|H2|L4_dem_count|decile": {
+      "obs": 0.3078062412124442,
+      "p": 0.0014998500149985001,
+      "null_mean": -0.007675250624109361,
+      "null_sd": 0.11203756930298835,
+      "null_q975": 0.21059834688032966,
+      "n_distinct_null_values": 9015,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H1|L0_unstratified": {
+      "obs": 12.669061825025128,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.0013777626654687197,
+      "null_sd": 3.71219457092206,
+      "null_q975": 7.131949915527895,
+      "n_distinct_null_values": 9996,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H1|L1_verse_count|quintile": {
+      "obs": 12.669061825025128,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.23569229357798213,
+      "null_sd": 2.9626865919297463,
+      "null_q975": 6.048329804751823,
+      "n_distinct_null_values": 9998,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H1|L1_verse_count|decile": {
+      "obs": 12.669061825025128,
+      "p": 9.999000099990002e-05,
+      "null_mean": 1.4034858035542443,
+      "null_sd": 2.5902390436890124,
+      "null_q975": 6.522489467718824,
+      "n_distinct_null_values": 9998,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H1|L2_word_count|quintile": {
+      "obs": 12.669061825025128,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.01965006394217363,
+      "null_sd": 2.9933885837323264,
+      "null_q975": 6.006350912084849,
+      "n_distinct_null_values": 9996,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H1|L2_word_count|decile": {
+      "obs": 12.669061825025128,
+      "p": 9.999000099990002e-05,
+      "null_mean": 1.4947580684758672,
+      "null_sd": 2.8954293522179118,
+      "null_q975": 7.061576420521374,
+      "n_distinct_null_values": 9998,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H1|L3_mean_verse_length|quintile": {
+      "obs": 12.669061825025128,
+      "p": 0.0150984901509849,
+      "null_mean": 7.452780622741172,
+      "null_sd": 2.388560760314268,
+      "null_q975": 12.20505111096854,
+      "n_distinct_null_values": 9988,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H1|L3_mean_verse_length|decile": {
+      "obs": 12.669061825025128,
+      "p": 0.029197080291970802,
+      "null_mean": 8.670702577361476,
+      "null_sd": 2.1155497569925643,
+      "null_q975": 12.824589294497551,
+      "n_distinct_null_values": 9987,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H1|L4_dem_count|quintile": {
+      "obs": 12.669061825025128,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0218595012938127,
+      "null_sd": 3.064839352905011,
+      "null_q975": 5.965435512499732,
+      "n_distinct_null_values": 9999,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H1|L4_dem_count|decile": {
+      "obs": 12.669061825025128,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.11396208079382432,
+      "null_sd": 3.007899568226522,
+      "null_q975": 6.024801009388162,
+      "n_distinct_null_values": 9995,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H2|L0_unstratified": {
+      "obs": 0.3106231963565346,
+      "p": 0.0014998500149985001,
+      "null_mean": -0.0014940390833737634,
+      "null_sd": 0.10746620902985787,
+      "null_q975": 0.21163919327506006,
+      "n_distinct_null_values": 8942,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H2|L1_verse_count|quintile": {
+      "obs": 0.3106231963565346,
+      "p": 0.0103989601039896,
+      "null_mean": 0.04392210401269549,
+      "null_sd": 0.11412084533607539,
+      "null_q975": 0.26793820749287295,
+      "n_distinct_null_values": 8978,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H2|L1_verse_count|decile": {
+      "obs": 0.3106231963565346,
+      "p": 0.016298370162983702,
+      "null_mean": 0.05916060449205485,
+      "null_sd": 0.11579151843148545,
+      "null_q975": 0.287881900533693,
+      "n_distinct_null_values": 9006,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H2|L2_word_count|quintile": {
+      "obs": 0.3106231963565346,
+      "p": 0.00039996000399960006,
+      "null_mean": -0.0475344940375946,
+      "null_sd": 0.10971280091953868,
+      "null_q975": 0.16790712507760325,
+      "n_distinct_null_values": 9016,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H2|L2_word_count|decile": {
+      "obs": 0.3106231963565346,
+      "p": 0.00039996000399960006,
+      "null_mean": -0.007016155585362538,
+      "null_sd": 0.103407078539488,
+      "null_q975": 0.19490697186846803,
+      "n_distinct_null_values": 8911,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.3106231963565346,
+      "p": 0.07279272072792721,
+      "null_mean": 0.1887272957484577,
+      "null_sd": 0.08404194202245639,
+      "null_q975": 0.3546816183116471,
+      "n_distinct_null_values": 8633,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H2|L3_mean_verse_length|decile": {
+      "obs": 0.3106231963565346,
+      "p": 0.07379262073792621,
+      "null_mean": 0.193648616473651,
+      "null_sd": 0.08057448702465027,
+      "null_q975": 0.35306513697026537,
+      "n_distinct_null_values": 8643,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H2|L4_dem_count|quintile": {
+      "obs": 0.3106231963565346,
+      "p": 0.0011998800119988001,
+      "null_mean": -0.03191008788353093,
+      "null_sd": 0.11077911192651733,
+      "null_q975": 0.182111378816272,
+      "n_distinct_null_values": 8999,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A1_no_muqattaat_openings|H2|L4_dem_count|decile": {
+      "obs": 0.3106231963565346,
+      "p": 0.0012998700129987,
+      "null_mean": -0.0209105801886847,
+      "null_sd": 0.11243566497936308,
+      "null_q975": 0.1966165072344361,
+      "n_distinct_null_values": 8982,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H1|L0_unstratified": {
+      "obs": 15.078230061812153,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0052026338006942695,
+      "null_sd": 4.069106841492923,
+      "null_q975": 7.813604703753957,
+      "n_distinct_null_values": 9996,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H1|L1_verse_count|quintile": {
+      "obs": 15.078230061812153,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.42115645560078463,
+      "null_sd": 3.23158236313714,
+      "null_q975": 6.817101990049747,
+      "n_distinct_null_values": 9988,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H1|L1_verse_count|decile": {
+      "obs": 15.078230061812153,
+      "p": 9.999000099990002e-05,
+      "null_mean": 1.9950383747927036,
+      "null_sd": 2.9297980405019532,
+      "null_q975": 7.775546132971505,
+      "n_distinct_null_values": 9987,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H1|L2_word_count|quintile": {
+      "obs": 15.078230061812153,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.14655555555555472,
+      "null_sd": 3.3219514411877205,
+      "null_q975": 6.5669742198100405,
+      "n_distinct_null_values": 9989,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H1|L2_word_count|decile": {
+      "obs": 15.078230061812153,
+      "p": 9.999000099990002e-05,
+      "null_mean": 1.8280644188150166,
+      "null_sd": 3.224060804488913,
+      "null_q975": 8.020975802804161,
+      "n_distinct_null_values": 9985,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H1|L3_mean_verse_length|quintile": {
+      "obs": 15.078230061812153,
+      "p": 0.0047995200479952005,
+      "null_mean": 8.409126292778533,
+      "null_sd": 2.525837964723318,
+      "null_q975": 13.454689808533091,
+      "n_distinct_null_values": 9967,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H1|L3_mean_verse_length|decile": {
+      "obs": 15.078230061812153,
+      "p": 0.0098990100989901,
+      "null_mean": 9.574055501281473,
+      "null_sd": 2.338134582221162,
+      "null_q975": 14.190254786672698,
+      "n_distinct_null_values": 9961,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H1|L4_dem_count|quintile": {
+      "obs": 15.078230061812153,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.10889757726519002,
+      "null_sd": 3.300095101668016,
+      "null_q975": 6.6168803708729085,
+      "n_distinct_null_values": 9987,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H1|L4_dem_count|decile": {
+      "obs": 15.078230061812153,
+      "p": 9.999000099990002e-05,
+      "null_mean": 2.0304348846675717,
+      "null_sd": 3.191776239416627,
+      "null_q975": 8.26211028192371,
+      "n_distinct_null_values": 9993,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H2|L0_unstratified": {
+      "obs": 0.3432699588610287,
+      "p": 0.00029997000299970003,
+      "null_mean": -0.0015068310950533217,
+      "null_sd": 0.10797638940243628,
+      "null_q975": 0.2122438660954949,
+      "n_distinct_null_values": 8966,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H2|L1_verse_count|quintile": {
+      "obs": 0.3432699588610287,
+      "p": 0.0051994800519948,
+      "null_mean": 0.05358999286185717,
+      "null_sd": 0.11137721386776683,
+      "null_q975": 0.27296016670747253,
+      "n_distinct_null_values": 8981,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H2|L1_verse_count|decile": {
+      "obs": 0.3432699588610287,
+      "p": 0.009599040095990401,
+      "null_mean": 0.07219360939009851,
+      "null_sd": 0.11395105198217759,
+      "null_q975": 0.2978388389344469,
+      "n_distinct_null_values": 9066,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H2|L2_word_count|quintile": {
+      "obs": 0.3432699588610287,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.050040293722381356,
+      "null_sd": 0.11031584703507862,
+      "null_q975": 0.16414099224076717,
+      "n_distinct_null_values": 8983,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H2|L2_word_count|decile": {
+      "obs": 0.3432699588610287,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.0032655309040914267,
+      "null_sd": 0.1035450639224718,
+      "null_q975": 0.19861980491996667,
+      "n_distinct_null_values": 8885,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.3432699588610287,
+      "p": 0.0456954304569543,
+      "null_mean": 0.20291612530680983,
+      "null_sd": 0.08326353064341402,
+      "null_q975": 0.3660772737912421,
+      "n_distinct_null_values": 8664,
+      "frac_null_exactly_equal_obs": 0.0001,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H2|L3_mean_verse_length|decile": {
+      "obs": 0.3432699588610287,
+      "p": 0.046495350464953504,
+      "null_mean": 0.20788399010156344,
+      "null_sd": 0.08046298022244625,
+      "null_q975": 0.3656027632014321,
+      "n_distinct_null_values": 8624,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H2|L4_dem_count|quintile": {
+      "obs": 0.3432699588610287,
+      "p": 0.0010998900109989002,
+      "null_mean": -0.007891397898221046,
+      "null_sd": 0.1148381791876098,
+      "null_q975": 0.21318668162517826,
+      "n_distinct_null_values": 8939,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A2_no_ka_prefixed|H2|L4_dem_count|decile": {
+      "obs": 0.3432699588610287,
+      "p": 0.0011998800119988001,
+      "null_mean": 0.010883147938400858,
+      "null_sd": 0.11241310466626078,
+      "null_q975": 0.2276600303206282,
+      "n_distinct_null_values": 9000,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H1|L0_unstratified": {
+      "obs": 10.832819137044488,
+      "p": 0.0010998900109989002,
+      "null_mean": -0.029480040241447927,
+      "null_sd": 3.6319203661499446,
+      "null_q975": 6.9963424994410905,
+      "n_distinct_null_values": 9972,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H1|L1_verse_count|quintile": {
+      "obs": 10.832819137044488,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.03386365302928609,
+      "null_sd": 2.9141167902891687,
+      "null_q975": 5.8354471272076855,
+      "n_distinct_null_values": 9970,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H1|L1_verse_count|decile": {
+      "obs": 10.832819137044488,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.9872031746031753,
+      "null_sd": 2.6337084234373886,
+      "null_q975": 6.089998882181981,
+      "n_distinct_null_values": 9964,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H1|L2_word_count|quintile": {
+      "obs": 10.832819137044488,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.16765854236530214,
+      "null_sd": 2.9205055314096406,
+      "null_q975": 5.673269617706238,
+      "n_distinct_null_values": 9964,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H1|L2_word_count|decile": {
+      "obs": 10.832819137044488,
+      "p": 0.00039996000399960006,
+      "null_mean": 1.8910241806393926,
+      "null_sd": 2.89989067552817,
+      "null_q975": 7.406085401296669,
+      "n_distinct_null_values": 9974,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H1|L3_mean_verse_length|quintile": {
+      "obs": 10.832819137044488,
+      "p": 0.06259374062593741,
+      "null_mean": 7.341143031522469,
+      "null_sd": 2.2985833935730775,
+      "null_q975": 11.675553319919514,
+      "n_distinct_null_values": 9936,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H1|L3_mean_verse_length|decile": {
+      "obs": 10.832819137044488,
+      "p": 0.1503849615038496,
+      "null_mean": 8.676613646322378,
+      "null_sd": 2.0332804730037726,
+      "null_q975": 12.599993293091883,
+      "n_distinct_null_values": 9903,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H1|L4_dem_count|quintile": {
+      "obs": 10.832819137044488,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.24334529398613972,
+      "null_sd": 3.0390982426864395,
+      "null_q975": 6.282581041806389,
+      "n_distinct_null_values": 9969,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H1|L4_dem_count|decile": {
+      "obs": 10.832819137044488,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.6093674044265601,
+      "null_sd": 2.8467324671223695,
+      "null_q975": 6.205549966465452,
+      "n_distinct_null_values": 9970,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H2|L0_unstratified": {
+      "obs": 0.2976108216055555,
+      "p": 0.0022997700229977,
+      "null_mean": -0.0016124624354062948,
+      "null_sd": 0.10878276142972504,
+      "null_q975": 0.20961922450111756,
+      "n_distinct_null_values": 8828,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H2|L1_verse_count|quintile": {
+      "obs": 0.2976108216055555,
+      "p": 0.0096990300969903,
+      "null_mean": 0.02545816152459991,
+      "null_sd": 0.11772720083540937,
+      "null_q975": 0.25501937144860054,
+      "n_distinct_null_values": 8979,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H2|L1_verse_count|decile": {
+      "obs": 0.2976108216055555,
+      "p": 0.012698730126987301,
+      "null_mean": 0.04616722628905953,
+      "null_sd": 0.11500337122270583,
+      "null_q975": 0.26826328552591644,
+      "n_distinct_null_values": 8949,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H2|L2_word_count|quintile": {
+      "obs": 0.2976108216055555,
+      "p": 0.0012998700129987,
+      "null_mean": -0.04493136458658585,
+      "null_sd": 0.11430485090105677,
+      "null_q975": 0.18110732198257332,
+      "n_distinct_null_values": 8921,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H2|L2_word_count|decile": {
+      "obs": 0.2976108216055555,
+      "p": 0.0032996700329967,
+      "null_mean": 0.025819683840702688,
+      "null_sd": 0.10283215112501476,
+      "null_q975": 0.2255600853952887,
+      "n_distinct_null_values": 8813,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.2976108216055555,
+      "p": 0.07639236076392361,
+      "null_mean": 0.17328735872296913,
+      "null_sd": 0.08620547551431422,
+      "null_q975": 0.33832601105804233,
+      "n_distinct_null_values": 8597,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H2|L3_mean_verse_length|decile": {
+      "obs": 0.2976108216055555,
+      "p": 0.14258574142585742,
+      "null_mean": 0.2066540103652981,
+      "null_sd": 0.08388325361395294,
+      "null_q975": 0.37162726595144696,
+      "n_distinct_null_values": 8610,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H2|L4_dem_count|quintile": {
+      "obs": 0.2976108216055555,
+      "p": 0.0033996600339966003,
+      "null_mean": -0.0007052263243014567,
+      "null_sd": 0.11257424216379407,
+      "null_q975": 0.21970661702908545,
+      "n_distinct_null_values": 8889,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A3_no_top10_phrase_types|H2|L4_dem_count|decile": {
+      "obs": 0.2976108216055555,
+      "p": 0.0027997200279972004,
+      "null_mean": -0.0029473180062777366,
+      "null_sd": 0.11051970447829111,
+      "null_q975": 0.21240751683785383,
+      "n_distinct_null_values": 8875,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H1|L0_unstratified": {
+      "obs": 13.576414326414325,
+      "p": 0.0005999400059994001,
+      "null_mean": -0.033168131868134505,
+      "null_sd": 4.128019225149475,
+      "null_q975": 7.941744251119245,
+      "n_distinct_null_values": 9973,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H1|L1_verse_count|quintile": {
+      "obs": 13.576414326414325,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.11369448514448238,
+      "null_sd": 3.313518879959127,
+      "null_q975": 6.667350936100932,
+      "n_distinct_null_values": 9971,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H1|L1_verse_count|decile": {
+      "obs": 13.576414326414325,
+      "p": 9.999000099990002e-05,
+      "null_mean": 1.5527080789580763,
+      "null_sd": 3.083766849960002,
+      "null_q975": 7.613478072853061,
+      "n_distinct_null_values": 9980,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H1|L2_word_count|quintile": {
+      "obs": 13.576414326414325,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.37090778897029186,
+      "null_sd": 3.394338615920994,
+      "null_q975": 6.3692727411477374,
+      "n_distinct_null_values": 9965,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H1|L2_word_count|decile": {
+      "obs": 13.576414326414325,
+      "p": 9.999000099990002e-05,
+      "null_mean": 2.5774077737077707,
+      "null_sd": 3.3238141394822036,
+      "null_q975": 8.88343253968253,
+      "n_distinct_null_values": 9969,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H1|L3_mean_verse_length|quintile": {
+      "obs": 13.576414326414325,
+      "p": 0.018098190180981903,
+      "null_mean": 8.610682076719574,
+      "null_sd": 2.432491027653357,
+      "null_q975": 13.316688288563277,
+      "n_distinct_null_values": 9919,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H1|L3_mean_verse_length|decile": {
+      "obs": 13.576414326414325,
+      "p": 0.05799420057994201,
+      "null_mean": 9.976474577737074,
+      "null_sd": 2.251864864436254,
+      "null_q975": 14.373144332519326,
+      "n_distinct_null_values": 9910,
+      "frac_null_exactly_equal_obs": 0.0001,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H1|L4_dem_count|quintile": {
+      "obs": 13.576414326414325,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05079853988603709,
+      "null_sd": 3.4746002052428504,
+      "null_q975": 6.927464896214893,
+      "n_distinct_null_values": 9970,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H1|L4_dem_count|decile": {
+      "obs": 13.576414326414325,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.7056062932437904,
+      "null_sd": 3.3803155753874696,
+      "null_q975": 7.333623321123312,
+      "n_distinct_null_values": 9970,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H2|L0_unstratified": {
+      "obs": 0.33829270655035903,
+      "p": 0.0011998800119988001,
+      "null_mean": -0.0015437149718545047,
+      "null_sd": 0.10888411168414709,
+      "null_q975": 0.21096074294044817,
+      "n_distinct_null_values": 8898,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H2|L1_verse_count|quintile": {
+      "obs": 0.33829270655035903,
+      "p": 0.0029997000299970002,
+      "null_mean": 0.028297672108019672,
+      "null_sd": 0.11570800476243877,
+      "null_q975": 0.25594306565380803,
+      "n_distinct_null_values": 8919,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H2|L1_verse_count|decile": {
+      "obs": 0.33829270655035903,
+      "p": 0.0051994800519948,
+      "null_mean": 0.062124416773275015,
+      "null_sd": 0.1131204352299083,
+      "null_q975": 0.28077183588024435,
+      "n_distinct_null_values": 8927,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H2|L2_word_count|quintile": {
+      "obs": 0.33829270655035903,
+      "p": 0.00039996000399960006,
+      "null_mean": -0.04483445734917573,
+      "null_sd": 0.11408279169238233,
+      "null_q975": 0.17918383898211107,
+      "n_distinct_null_values": 8907,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H2|L2_word_count|decile": {
+      "obs": 0.33829270655035903,
+      "p": 0.0013998600139986002,
+      "null_mean": 0.03951706653403121,
+      "null_sd": 0.10189258918411347,
+      "null_q975": 0.2375586556334894,
+      "n_distinct_null_values": 8814,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.33829270655035903,
+      "p": 0.04689531046895311,
+      "null_mean": 0.19455375179072293,
+      "null_sd": 0.08494256309464401,
+      "null_q975": 0.3608355035064063,
+      "n_distinct_null_values": 8599,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H2|L3_mean_verse_length|decile": {
+      "obs": 0.33829270655035903,
+      "p": 0.08599140085991401,
+      "null_mean": 0.22395688154291174,
+      "null_sd": 0.08276369339176162,
+      "null_q975": 0.38754974467618364,
+      "n_distinct_null_values": 8559,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H2|L4_dem_count|quintile": {
+      "obs": 0.33829270655035903,
+      "p": 0.0008999100089991,
+      "null_mean": -0.0076609557029098194,
+      "null_sd": 0.11403092826622141,
+      "null_q975": 0.21452086913867774,
+      "n_distinct_null_values": 8912,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R2_revelation_order_kaf|A4_no_openings_no_ka_no_top10|H2|L4_dem_count|decile": {
+      "obs": 0.33829270655035903,
+      "p": 0.0011998800119988001,
+      "null_mean": -0.004865466553278034,
+      "null_sd": 0.11318018707414441,
+      "null_q975": 0.21726622118964614,
+      "n_distinct_null_values": 8933,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H1|L0_unstratified": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0011328232946751402,
+      "null_sd": 0.1420290175158422,
+      "null_q975": 0.2755527497194159,
+      "n_distinct_null_values": 9804,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H1|L1_verse_count|quintile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.005467073201147276,
+      "null_sd": 0.11414365996025314,
+      "null_q975": 0.21902107494700082,
+      "n_distinct_null_values": 9635,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H1|L1_verse_count|decile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05536094650205762,
+      "null_sd": 0.1045667907076323,
+      "null_q975": 0.2589995635366006,
+      "n_distinct_null_values": 9610,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H1|L2_word_count|quintile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.024221050006235187,
+      "null_sd": 0.10335528702176285,
+      "null_q975": 0.22540466392318217,
+      "n_distinct_null_values": 9551,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H1|L2_word_count|decile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.07856638733009103,
+      "null_sd": 0.0853291277029365,
+      "null_q975": 0.24156472128694342,
+      "n_distinct_null_values": 9146,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.53178700586108,
+      "p": 0.001999800019998,
+      "null_mean": 0.35989562663673774,
+      "null_sd": 0.0639866978921136,
+      "null_q975": 0.4833068337697966,
+      "n_distinct_null_values": 8447,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H1|L3_mean_verse_length|decile": {
+      "obs": 0.53178700586108,
+      "p": 0.0028997100289971,
+      "null_mean": 0.3998115326100511,
+      "null_sd": 0.050059263502257735,
+      "null_q975": 0.49558860207008354,
+      "n_distinct_null_values": 7517,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H1|L4_dem_count|quintile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.032819476243920676,
+      "null_sd": 0.10163132667956672,
+      "null_q975": 0.23042866941015086,
+      "n_distinct_null_values": 9459,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H1|L4_dem_count|decile": {
+      "obs": 0.53178700586108,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.10174008853971815,
+      "null_sd": 0.08930124246117026,
+      "null_q975": 0.2777434842249656,
+      "n_distinct_null_values": 8926,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H2|L0_unstratified": {
+      "obs": 0.3811244068568479,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0014021707298663385,
+      "null_sd": 0.10684713577327352,
+      "null_q975": 0.20705515313617293,
+      "n_distinct_null_values": 9425,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H2|L1_verse_count|quintile": {
+      "obs": 0.3811244068568479,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.004305688959066566,
+      "null_sd": 0.11139043483448849,
+      "null_q975": 0.2234519587343673,
+      "n_distinct_null_values": 9463,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H2|L1_verse_count|decile": {
+      "obs": 0.3811244068568479,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.009849777687442116,
+      "null_sd": 0.11157907927100322,
+      "null_q975": 0.22897887154648552,
+      "n_distinct_null_values": 9449,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H2|L2_word_count|quintile": {
+      "obs": 0.3811244068568479,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.06292425306305036,
+      "null_sd": 0.10299862858575266,
+      "null_q975": 0.13798156219930346,
+      "n_distinct_null_values": 9413,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H2|L2_word_count|decile": {
+      "obs": 0.3811244068568479,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.037541711396033225,
+      "null_sd": 0.1015341620674427,
+      "null_q975": 0.15816495776940195,
+      "n_distinct_null_values": 9442,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.3811244068568479,
+      "p": 0.0011998800119988001,
+      "null_mean": 0.24912572274054218,
+      "null_sd": 0.044717807324642284,
+      "null_q975": 0.33603064478748296,
+      "n_distinct_null_values": 8673,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H2|L3_mean_verse_length|decile": {
+      "obs": 0.3811244068568479,
+      "p": 0.0021997800219978004,
+      "null_mean": 0.2644583806114137,
+      "null_sd": 0.04098116622823933,
+      "null_q975": 0.3477223407957056,
+      "n_distinct_null_values": 8120,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H2|L4_dem_count|quintile": {
+      "obs": 0.3811244068568479,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.018284948633361536,
+      "null_sd": 0.10303662569316079,
+      "null_q975": 0.18268445268041905,
+      "n_distinct_null_values": 9435,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A0_full|H2|L4_dem_count|decile": {
+      "obs": 0.3811244068568479,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.02436536216852812,
+      "null_sd": 0.09453722064699165,
+      "null_q975": 0.20878460253542538,
+      "n_distinct_null_values": 9328,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H1|L0_unstratified": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.001152454395757168,
+      "null_sd": 0.14296035207162944,
+      "null_q975": 0.27885877119822056,
+      "n_distinct_null_values": 9869,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H1|L1_verse_count|quintile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.003707230384294583,
+      "null_sd": 0.11464139115163646,
+      "null_q975": 0.22160315219948223,
+      "n_distinct_null_values": 9628,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H1|L1_verse_count|decile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05916917687816773,
+      "null_sd": 0.10479271038498444,
+      "null_q975": 0.2625157716900835,
+      "n_distinct_null_values": 9578,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H1|L2_word_count|quintile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.02481432518551788,
+      "null_sd": 0.1040829264860808,
+      "null_q975": 0.2266059322940057,
+      "n_distinct_null_values": 9520,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H1|L2_word_count|decile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0811555484271081,
+      "null_sd": 0.08609784270816374,
+      "null_q975": 0.24460533350441604,
+      "n_distinct_null_values": 9045,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.5396163469557966,
+      "p": 0.0017998200179982,
+      "null_mean": 0.36181052928722657,
+      "null_sd": 0.06476759815843794,
+      "null_q975": 0.48595186159406345,
+      "n_distinct_null_values": 8325,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H1|L3_mean_verse_length|decile": {
+      "obs": 0.5396163469557966,
+      "p": 0.0023997600239976003,
+      "null_mean": 0.4038827043904109,
+      "null_sd": 0.050532055390511726,
+      "null_q975": 0.5001224310857338,
+      "n_distinct_null_values": 7549,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H1|L4_dem_count|quintile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.024242697119394398,
+      "null_sd": 0.10260414442695147,
+      "null_q975": 0.22371388550287633,
+      "n_distinct_null_values": 9470,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H1|L4_dem_count|decile": {
+      "obs": 0.5396163469557966,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0788568187164518,
+      "null_sd": 0.09018952361388116,
+      "null_q975": 0.2546481041893886,
+      "n_distinct_null_values": 9003,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H2|L0_unstratified": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0014108511247216938,
+      "null_sd": 0.10686276036453589,
+      "null_q975": 0.20697019881226397,
+      "n_distinct_null_values": 9449,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H2|L1_verse_count|quintile": {
+      "obs": 0.3822985936213453,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.004304249584101073,
+      "null_sd": 0.11121164833988532,
+      "null_q975": 0.22340279321496445,
+      "n_distinct_null_values": 9429,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H2|L1_verse_count|decile": {
+      "obs": 0.3822985936213453,
+      "p": 0.0004999500049995,
+      "null_mean": 0.01134806156723851,
+      "null_sd": 0.11132890332612855,
+      "null_q975": 0.22906026114483363,
+      "n_distinct_null_values": 9444,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H2|L2_word_count|quintile": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.06370517853412815,
+      "null_sd": 0.10287907274005603,
+      "null_q975": 0.13617035174923076,
+      "n_distinct_null_values": 9412,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H2|L2_word_count|decile": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.03775352633959687,
+      "null_sd": 0.10146298934180689,
+      "null_q975": 0.15789458906047837,
+      "n_distinct_null_values": 9449,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.3822985936213453,
+      "p": 0.0012998700129987,
+      "null_mean": 0.2502641716552912,
+      "null_sd": 0.04474987379860946,
+      "null_q975": 0.3369533460237788,
+      "n_distinct_null_values": 8703,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H2|L3_mean_verse_length|decile": {
+      "obs": 0.3822985936213453,
+      "p": 0.0022997700229977,
+      "null_mean": 0.26645263028049576,
+      "null_sd": 0.04087874652079927,
+      "null_q975": 0.34916464475647485,
+      "n_distinct_null_values": 8481,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H2|L4_dem_count|quintile": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.027016555553845457,
+      "null_sd": 0.10260688305009259,
+      "null_q975": 0.17036926807291844,
+      "n_distinct_null_values": 9430,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A1_no_muqattaat_openings|H2|L4_dem_count|decile": {
+      "obs": 0.3822985936213453,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.008341685444359363,
+      "null_sd": 0.09422115785836999,
+      "null_q975": 0.1932815209962753,
+      "n_distinct_null_values": 9354,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H1|L0_unstratified": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0016803060455299512,
+      "null_sd": 0.15658547576431006,
+      "null_q975": 0.3025659580883461,
+      "n_distinct_null_values": 9766,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H1|L1_verse_count|quintile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.002814641941806093,
+      "null_sd": 0.12426660331311858,
+      "null_q975": 0.24295379164782158,
+      "n_distinct_null_values": 9534,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H1|L1_verse_count|decile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.06515092868988395,
+      "null_sd": 0.11694475989906972,
+      "null_q975": 0.2941383989145184,
+      "n_distinct_null_values": 9485,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H1|L2_word_count|quintile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.01740437207899898,
+      "null_sd": 0.11359250188265065,
+      "null_q975": 0.2367145333936379,
+      "n_distinct_null_values": 9455,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H1|L2_word_count|decile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.09531978290366352,
+      "null_sd": 0.09146150409771697,
+      "null_q975": 0.2716568671792553,
+      "n_distinct_null_values": 8909,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.6046736016885271,
+      "p": 0.0008999100089991,
+      "null_mean": 0.4096927951153325,
+      "null_sd": 0.06660410338829295,
+      "null_q975": 0.539606512890095,
+      "n_distinct_null_values": 8256,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H1|L3_mean_verse_length|decile": {
+      "obs": 0.6046736016885271,
+      "p": 0.0021997800219978004,
+      "null_mean": 0.4523989084878638,
+      "null_sd": 0.05448864282685855,
+      "null_q975": 0.5576224935926428,
+      "n_distinct_null_values": 7335,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H1|L4_dem_count|quintile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.013248522538821075,
+      "null_sd": 0.1116124461368051,
+      "null_q975": 0.22911465400271364,
+      "n_distinct_null_values": 9300,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H1|L4_dem_count|decile": {
+      "obs": 0.6046736016885271,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.13131813206693804,
+      "null_sd": 0.08713709183061914,
+      "null_q975": 0.29985489220563843,
+      "n_distinct_null_values": 8357,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H2|L0_unstratified": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0010179920818826217,
+      "null_sd": 0.10699286153411819,
+      "null_q975": 0.2106794448801888,
+      "n_distinct_null_values": 9425,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H2|L1_verse_count|quintile": {
+      "obs": 0.4103081507375445,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.009804339047542018,
+      "null_sd": 0.10870299111981696,
+      "null_q975": 0.2250319402697168,
+      "n_distinct_null_values": 9449,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H2|L1_verse_count|decile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.014499603314716893,
+      "null_sd": 0.10917428081768148,
+      "null_q975": 0.22865017793054168,
+      "n_distinct_null_values": 9411,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H2|L2_word_count|quintile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.05795721710407285,
+      "null_sd": 0.10306223956341862,
+      "null_q975": 0.14293160871938,
+      "n_distinct_null_values": 9455,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H2|L2_word_count|decile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.02224683593464026,
+      "null_sd": 0.1007234886132729,
+      "null_q975": 0.171503091108799,
+      "n_distinct_null_values": 9354,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.4103081507375445,
+      "p": 0.0006999300069993001,
+      "null_mean": 0.2793246090189348,
+      "null_sd": 0.04330249249889662,
+      "null_q975": 0.3638054382089431,
+      "n_distinct_null_values": 8626,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H2|L3_mean_verse_length|decile": {
+      "obs": 0.4103081507375445,
+      "p": 0.0029997000299970002,
+      "null_mean": 0.2991183182919362,
+      "null_sd": 0.04018458267980609,
+      "null_q975": 0.3795317188976665,
+      "n_distinct_null_values": 8422,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H2|L4_dem_count|quintile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.017271836095806903,
+      "null_sd": 0.10313087034532943,
+      "null_q975": 0.1845000068886273,
+      "n_distinct_null_values": 9371,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A2_no_ka_prefixed|H2|L4_dem_count|decile": {
+      "obs": 0.4103081507375445,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.026641401293957454,
+      "null_sd": 0.09387124564260262,
+      "null_q975": 0.20821045568144309,
+      "n_distinct_null_values": 9358,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H1|L0_unstratified": {
+      "obs": 0.47882852671585063,
+      "p": 0.00029997000299970003,
+      "null_mean": -0.0017667471495640343,
+      "null_sd": 0.14014527905842233,
+      "null_q975": 0.2692164095685223,
+      "n_distinct_null_values": 9447,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H1|L1_verse_count|quintile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.010757147328414917,
+      "null_sd": 0.11434822759901607,
+      "null_q975": 0.2105589090096132,
+      "n_distinct_null_values": 9263,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H1|L1_verse_count|decile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0523698770400179,
+      "null_sd": 0.10646935527056543,
+      "null_q975": 0.2611234071093225,
+      "n_distinct_null_values": 9249,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H1|L2_word_count|quintile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.020907851553767058,
+      "null_sd": 0.09965339285148564,
+      "null_q975": 0.21354907221104402,
+      "n_distinct_null_values": 9190,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H1|L2_word_count|decile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.10396048736865642,
+      "null_sd": 0.08450114580298783,
+      "null_q975": 0.26761122289291284,
+      "n_distinct_null_values": 8910,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.47882852671585063,
+      "p": 0.014498550144985502,
+      "null_mean": 0.35122756539235417,
+      "null_sd": 0.06050562812450821,
+      "null_q975": 0.4674279007377598,
+      "n_distinct_null_values": 7599,
+      "frac_null_exactly_equal_obs": 0.0001,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H1|L3_mean_verse_length|decile": {
+      "obs": 0.47882852671585063,
+      "p": 0.029197080291970802,
+      "null_mean": 0.391963255086072,
+      "null_sd": 0.047707979044797046,
+      "null_q975": 0.48160406885758983,
+      "n_distinct_null_values": 7126,
+      "frac_null_exactly_equal_obs": 0.0001,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.6976744186046512
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H1|L4_dem_count|quintile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.013725584618824076,
+      "null_sd": 0.1057308270181551,
+      "null_q975": 0.21790744466800774,
+      "n_distinct_null_values": 9234,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H1|L4_dem_count|decile": {
+      "obs": 0.47882852671585063,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.12038226246367094,
+      "null_sd": 0.0826594228629091,
+      "null_q975": 0.28021797451374914,
+      "n_distinct_null_values": 8419,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H2|L0_unstratified": {
+      "obs": 0.35767244270995907,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0015565194724463216,
+      "null_sd": 0.10823107384886076,
+      "null_q975": 0.2108394664627111,
+      "n_distinct_null_values": 9409,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H2|L1_verse_count|quintile": {
+      "obs": 0.35767244270995907,
+      "p": 0.0004999500049995,
+      "null_mean": -0.008709672745789838,
+      "null_sd": 0.1141267081279143,
+      "null_q975": 0.2158430180119894,
+      "n_distinct_null_values": 9451,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H2|L1_verse_count|decile": {
+      "obs": 0.35767244270995907,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.010101363000116116,
+      "null_sd": 0.11082375559339167,
+      "null_q975": 0.23053064150910427,
+      "n_distinct_null_values": 9390,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H2|L2_word_count|quintile": {
+      "obs": 0.35767244270995907,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.06274751527514721,
+      "null_sd": 0.10102694455638693,
+      "null_q975": 0.1303290990760734,
+      "n_distinct_null_values": 9363,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H2|L2_word_count|decile": {
+      "obs": 0.35767244270995907,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.010447433281511369,
+      "null_sd": 0.09571727141127383,
+      "null_q975": 0.1747663474754036,
+      "n_distinct_null_values": 9359,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.35767244270995907,
+      "p": 0.004199580041995801,
+      "null_mean": 0.24122646564798197,
+      "null_sd": 0.045175123836037875,
+      "null_q975": 0.32948503370659754,
+      "n_distinct_null_values": 8618,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H2|L3_mean_verse_length|decile": {
+      "obs": 0.35767244270995907,
+      "p": 0.015398460153984602,
+      "null_mean": 0.2645228070584372,
+      "null_sd": 0.04241740124091119,
+      "null_q975": 0.3490670203025767,
+      "n_distinct_null_values": 8433,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.6976744186046512
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H2|L4_dem_count|quintile": {
+      "obs": 0.35767244270995907,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.01858735603629404,
+      "null_sd": 0.10592163675968386,
+      "null_q975": 0.1873546361307188,
+      "n_distinct_null_values": 9435,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A3_no_top10_phrase_types|H2|L4_dem_count|decile": {
+      "obs": 0.35767244270995907,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.039552812993782466,
+      "null_sd": 0.10331843710605523,
+      "null_q975": 0.23940517484477997,
+      "n_distinct_null_values": 9369,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H1|L0_unstratified": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.001975656288156392,
+      "null_sd": 0.1590054813797475,
+      "null_q975": 0.30744556369556353,
+      "n_distinct_null_values": 9409,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H1|L1_verse_count|quintile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0034938848188849304,
+      "null_sd": 0.128751237058961,
+      "null_q975": 0.2468482905982904,
+      "n_distinct_null_values": 9285,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H1|L1_verse_count|decile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.06401879833129821,
+      "null_sd": 0.12281899525232341,
+      "null_q975": 0.3041844729344727,
+      "n_distinct_null_values": 9276,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H1|L2_word_count|quintile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.00632400793650781,
+      "null_sd": 0.11329235821071101,
+      "null_q975": 0.22559523809523777,
+      "n_distinct_null_values": 9249,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H1|L2_word_count|decile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.12867423178673165,
+      "null_sd": 0.09156439328213391,
+      "null_q975": 0.30321657509157485,
+      "n_distinct_null_values": 8831,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.5604395604395604,
+      "p": 0.005699430056994301,
+      "null_mean": 0.40730449735449725,
+      "null_sd": 0.0630895899189961,
+      "null_q975": 0.5286960724460723,
+      "n_distinct_null_values": 7653,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H1|L3_mean_verse_length|decile": {
+      "obs": 0.5604395604395604,
+      "p": 0.015398460153984602,
+      "null_mean": 0.4496741452991451,
+      "null_sd": 0.05231663862704944,
+      "null_q975": 0.5501144688644688,
+      "n_distinct_null_values": 6926,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.6976744186046512
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H1|L4_dem_count|quintile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.007711289173789048,
+      "null_sd": 0.12104017036840536,
+      "null_q975": 0.24161451973951947,
+      "n_distinct_null_values": 9238,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H1|L4_dem_count|decile": {
+      "obs": 0.5604395604395604,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05363777472527461,
+      "null_sd": 0.10967029808324709,
+      "null_q975": 0.26348188848188836,
+      "n_distinct_null_values": 8751,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H2|L0_unstratified": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0012835782058247982,
+      "null_sd": 0.10816832205003751,
+      "null_q975": 0.20764671763280523,
+      "n_distinct_null_values": 9372,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H2|L1_verse_count|quintile": {
+      "obs": 0.37965212320804764,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.010723725070395849,
+      "null_sd": 0.11174817845947957,
+      "null_q975": 0.20735672058117122,
+      "n_distinct_null_values": 9438,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H2|L1_verse_count|decile": {
+      "obs": 0.37965212320804764,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.007473149712694811,
+      "null_sd": 0.1085728718912968,
+      "null_q975": 0.22436501700442404,
+      "n_distinct_null_values": 9360,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H2|L2_word_count|quintile": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.07157672257115007,
+      "null_sd": 0.09998033972591329,
+      "null_q975": 0.11966553601722882,
+      "n_distinct_null_values": 9348,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H2|L2_word_count|decile": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.00172147841336417,
+      "null_sd": 0.09393609840726212,
+      "null_q975": 0.1777050431879485,
+      "n_distinct_null_values": 9289,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.37965212320804764,
+      "p": 0.004999500049995001,
+      "null_mean": 0.27018146701635776,
+      "null_sd": 0.04393748448533922,
+      "null_q975": 0.3558202513389904,
+      "n_distinct_null_values": 8651,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H2|L3_mean_verse_length|decile": {
+      "obs": 0.37965212320804764,
+      "p": 0.020097990200979902,
+      "null_mean": 0.29323189823826423,
+      "null_sd": 0.0418837987997924,
+      "null_q975": 0.37641605040057524,
+      "n_distinct_null_values": 8511,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.6976744186046512
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H2|L4_dem_count|quintile": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.029183555201191962,
+      "null_sd": 0.10601577810725571,
+      "null_q975": 0.1742342750921771,
+      "n_distinct_null_values": 9365,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R3_noldeke_phase_lemma|A4_no_openings_no_ka_no_top10|H2|L4_dem_count|decile": {
+      "obs": 0.37965212320804764,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.022660118978748804,
+      "null_sd": 0.10716609794220512,
+      "null_q975": 0.1824129276701619,
+      "n_distinct_null_values": 9374,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H1|L0_unstratified": {
+      "obs": 0.26782641227085674,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0003974884648958714,
+      "null_sd": 0.0566241822991877,
+      "null_q975": 0.11120089786756449,
+      "n_distinct_null_values": 9176,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H1|L1_verse_count|quintile": {
+      "obs": 0.26782641227085674,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.010038969946377355,
+      "null_sd": 0.05553817570380123,
+      "null_q975": 0.12035166479610923,
+      "n_distinct_null_values": 8588,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 4,
+        "share_surahs_informative": 0.8068181818181818
+      }
+    },
+    "R4_period_kaf|A0_full|H1|L1_verse_count|decile": {
+      "obs": 0.26782641227085674,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05275194537972316,
+      "null_sd": 0.04887547816791053,
+      "null_q975": 0.14983383214864696,
+      "n_distinct_null_values": 8210,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A0_full|H1|L2_word_count|quintile": {
+      "obs": 0.26782641227085674,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0007604402045142792,
+      "null_sd": 0.057641499449797025,
+      "null_q975": 0.11382030178326472,
+      "n_distinct_null_values": 8685,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H1|L2_word_count|decile": {
+      "obs": 0.26782641227085674,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.03643269235565532,
+      "null_sd": 0.05534164636804985,
+      "null_q975": 0.14262376854969444,
+      "n_distinct_null_values": 8141,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.26782641227085674,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.14195794113979301,
+      "null_sd": 0.040073849631569416,
+      "null_q975": 0.2166021324354657,
+      "n_distinct_null_values": 7479,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H1|L3_mean_verse_length|decile": {
+      "obs": 0.26782641227085674,
+      "p": 0.0010998900109989002,
+      "null_mean": 0.16237502182316998,
+      "null_sd": 0.03573559299373813,
+      "null_q975": 0.23127572016460907,
+      "n_distinct_null_values": 6831,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A0_full|H1|L4_dem_count|quintile": {
+      "obs": 0.26782641227085674,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.007171853098890136,
+      "null_sd": 0.059349186971621934,
+      "null_q975": 0.12319647088165604,
+      "n_distinct_null_values": 8644,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H1|L4_dem_count|decile": {
+      "obs": 0.26782641227085674,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.026284561666043146,
+      "null_sd": 0.05783812130177687,
+      "null_q975": 0.13742517770295545,
+      "n_distinct_null_values": 7952,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R4_period_kaf|A0_full|H2|L0_unstratified": {
+      "obs": 0.38188072841383275,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0011513161237127632,
+      "null_sd": 0.10754826618988522,
+      "null_q975": 0.21314273213795315,
+      "n_distinct_null_values": 1133,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H2|L1_verse_count|quintile": {
+      "obs": 0.38188072841383275,
+      "p": 0.0008999100089991,
+      "null_mean": 0.07460691299023534,
+      "null_sd": 0.10105466688436536,
+      "null_q975": 0.27284243257474095,
+      "n_distinct_null_values": 1068,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 4,
+        "share_surahs_informative": 0.8068181818181818
+      }
+    },
+    "R4_period_kaf|A0_full|H2|L1_verse_count|decile": {
+      "obs": 0.38188072841383275,
+      "p": 0.0022997700229977,
+      "null_mean": 0.09795240683814808,
+      "null_sd": 0.0992801883626879,
+      "null_q975": 0.29259020538451297,
+      "n_distinct_null_values": 1055,
+      "frac_null_exactly_equal_obs": 0.0001,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A0_full|H2|L2_word_count|quintile": {
+      "obs": 0.38188072841383275,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.030685892717485945,
+      "null_sd": 0.10308734597203256,
+      "null_q975": 0.169243716878753,
+      "n_distinct_null_values": 1100,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H2|L2_word_count|decile": {
+      "obs": 0.38188072841383275,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0021604384154760865,
+      "null_sd": 0.1007700023844835,
+      "null_q975": 0.19982131137933107,
+      "n_distinct_null_values": 1064,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.38188072841383275,
+      "p": 0.007699230076992301,
+      "null_mean": 0.21613896635954424,
+      "null_sd": 0.07014535306964512,
+      "null_q975": 0.3542511149885425,
+      "n_distinct_null_values": 761,
+      "frac_null_exactly_equal_obs": 0.0002,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H2|L3_mean_verse_length|decile": {
+      "obs": 0.38188072841383275,
+      "p": 0.0100989901009899,
+      "null_mean": 0.22212482343094256,
+      "null_sd": 0.06619564688511152,
+      "null_q975": 0.35622465880463466,
+      "n_distinct_null_values": 720,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A0_full|H2|L4_dem_count|quintile": {
+      "obs": 0.38188072841383275,
+      "p": 0.00029997000299970003,
+      "null_mean": -0.0006040030849150055,
+      "null_sd": 0.10470407023742023,
+      "null_q975": 0.20722210068967667,
+      "n_distinct_null_values": 1112,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A0_full|H2|L4_dem_count|decile": {
+      "obs": 0.38188072841383275,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.023091498758781706,
+      "null_sd": 0.10375440401839667,
+      "null_q975": 0.2274509248046213,
+      "n_distinct_null_values": 1098,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H1|L0_unstratified": {
+      "obs": 0.27079831483501204,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.00041191847907444894,
+      "null_sd": 0.056998394136950625,
+      "null_q975": 0.11147430551100275,
+      "n_distinct_null_values": 9169,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H1|L1_verse_count|quintile": {
+      "obs": 0.27079831483501204,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.010161817754111343,
+      "null_sd": 0.05591366774108246,
+      "null_q975": 0.12075650649045126,
+      "n_distinct_null_values": 8632,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 4,
+        "share_surahs_informative": 0.8068181818181818
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H1|L1_verse_count|decile": {
+      "obs": 0.27079831483501204,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.054383893415453056,
+      "null_sd": 0.04904563916677854,
+      "null_q975": 0.1513263189409978,
+      "n_distinct_null_values": 8252,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H1|L2_word_count|quintile": {
+      "obs": 0.27079831483501204,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0012793361989692326,
+      "null_sd": 0.058014734428084413,
+      "null_q975": 0.11531457838797288,
+      "n_distinct_null_values": 8747,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H1|L2_word_count|decile": {
+      "obs": 0.27079831483501204,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.03858026731678108,
+      "null_sd": 0.055701934742079004,
+      "null_q975": 0.14522786082419112,
+      "n_distinct_null_values": 8192,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.27079831483501204,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.14293163106007142,
+      "null_sd": 0.04036798452468045,
+      "null_q975": 0.21782115438078734,
+      "n_distinct_null_values": 7360,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H1|L3_mean_verse_length|decile": {
+      "obs": 0.27079831483501204,
+      "p": 0.0008999100089991,
+      "null_mean": 0.16390281987126024,
+      "null_sd": 0.0358862271167617,
+      "null_q975": 0.2324426338187806,
+      "n_distinct_null_values": 6669,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H1|L4_dem_count|quintile": {
+      "obs": 0.27079831483501204,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.002220830606702173,
+      "null_sd": 0.06049409342639211,
+      "null_q975": 0.12024304441735634,
+      "n_distinct_null_values": 8591,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H1|L4_dem_count|decile": {
+      "obs": 0.27079831483501204,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.017419768610594306,
+      "null_sd": 0.05839452738514762,
+      "null_q975": 0.13045914330318004,
+      "n_distinct_null_values": 8238,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H2|L0_unstratified": {
+      "obs": 0.3858484634554475,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.001149749475120056,
+      "null_sd": 0.10754265050770716,
+      "null_q975": 0.21364755073683983,
+      "n_distinct_null_values": 1137,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H2|L1_verse_count|quintile": {
+      "obs": 0.3858484634554475,
+      "p": 0.0007999200079992001,
+      "null_mean": 0.07446490483051396,
+      "null_sd": 0.10097002882526324,
+      "null_q975": 0.2728570336200287,
+      "n_distinct_null_values": 1071,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 4,
+        "share_surahs_informative": 0.8068181818181818
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H2|L1_verse_count|decile": {
+      "obs": 0.3858484634554475,
+      "p": 0.001999800019998,
+      "null_mean": 0.10044227598574129,
+      "null_sd": 0.09911553997974386,
+      "null_q975": 0.29506058970122456,
+      "n_distinct_null_values": 1033,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H2|L2_word_count|quintile": {
+      "obs": 0.3858484634554475,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.03058238868646735,
+      "null_sd": 0.10306262229484549,
+      "null_q975": 0.17023959859810184,
+      "n_distinct_null_values": 1091,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H2|L2_word_count|decile": {
+      "obs": 0.3858484634554475,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.00390629629198265,
+      "null_sd": 0.10074311470692449,
+      "null_q975": 0.20131224180284216,
+      "n_distinct_null_values": 1073,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.3858484634554475,
+      "p": 0.007499250074992501,
+      "null_mean": 0.21850460330021934,
+      "null_sd": 0.07013035789375362,
+      "null_q975": 0.3557503096564931,
+      "n_distinct_null_values": 763,
+      "frac_null_exactly_equal_obs": 0.0003,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H2|L3_mean_verse_length|decile": {
+      "obs": 0.3858484634554475,
+      "p": 0.009799020097990201,
+      "null_mean": 0.2252053404781098,
+      "null_sd": 0.06606445217477301,
+      "null_q975": 0.35920419615801247,
+      "n_distinct_null_values": 721,
+      "frac_null_exactly_equal_obs": 0.0003,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H2|L4_dem_count|quintile": {
+      "obs": 0.3858484634554475,
+      "p": 0.00019998000199980003,
+      "null_mean": -0.012650500747879191,
+      "null_sd": 0.1052625315402335,
+      "null_q975": 0.1954036288234571,
+      "n_distinct_null_values": 1105,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A1_no_muqattaat_openings|H2|L4_dem_count|decile": {
+      "obs": 0.3858484634554475,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.010995200971408173,
+      "null_sd": 0.10425969120322343,
+      "null_q975": 0.21463437545155967,
+      "n_distinct_null_values": 1099,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 9,
+        "share_surahs_informative": 0.8977272727272727
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H1|L0_unstratified": {
+      "obs": 0.3176390773405699,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0006561314638926675,
+      "null_sd": 0.06238449571405268,
+      "null_q975": 0.12281622192069948,
+      "n_distinct_null_values": 8961,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H1|L1_verse_count|quintile": {
+      "obs": 0.3176390773405699,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.016541172923262484,
+      "null_sd": 0.0614147127068873,
+      "null_q975": 0.1380235187697874,
+      "n_distinct_null_values": 8353,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 4,
+        "share_surahs_informative": 0.8068181818181818
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H1|L1_verse_count|decile": {
+      "obs": 0.3176390773405699,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.06420216342529776,
+      "null_sd": 0.05720057910646614,
+      "null_q975": 0.17702397105382184,
+      "n_distinct_null_values": 7952,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H1|L2_word_count|quintile": {
+      "obs": 0.3176390773405699,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0004931388511985628,
+      "null_sd": 0.06415802612267356,
+      "null_q975": 0.12624905774159503,
+      "n_distinct_null_values": 8466,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H1|L2_word_count|decile": {
+      "obs": 0.3176390773405699,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.04908132368460728,
+      "null_sd": 0.06137493435194428,
+      "null_q975": 0.16760704055480166,
+      "n_distinct_null_values": 7952,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.3176390773405699,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.15995611488014475,
+      "null_sd": 0.04398990417217049,
+      "null_q975": 0.2446310116086235,
+      "n_distinct_null_values": 7332,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H1|L3_mean_verse_length|decile": {
+      "obs": 0.3176390773405699,
+      "p": 0.00029997000299970003,
+      "null_mean": 0.18296363636363638,
+      "null_sd": 0.04017314210103136,
+      "null_q975": 0.2632756671189507,
+      "n_distinct_null_values": 6761,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H1|L4_dem_count|quintile": {
+      "obs": 0.3176390773405699,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.000334459520578914,
+      "null_sd": 0.06598461554046,
+      "null_q975": 0.12808683853459973,
+      "n_distinct_null_values": 8300,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H1|L4_dem_count|decile": {
+      "obs": 0.3176390773405699,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05682688828584351,
+      "null_sd": 0.05939406493071636,
+      "null_q975": 0.17222976028946183,
+      "n_distinct_null_values": 7377,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H2|L0_unstratified": {
+      "obs": 0.4101610507479343,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0010391733769490987,
+      "null_sd": 0.10796874169064577,
+      "null_q975": 0.2127309420846687,
+      "n_distinct_null_values": 1147,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H2|L1_verse_count|quintile": {
+      "obs": 0.4101610507479343,
+      "p": 0.0004999500049995,
+      "null_mean": 0.09096779815263194,
+      "null_sd": 0.09797943946898369,
+      "null_q975": 0.28578008229007695,
+      "n_distinct_null_values": 1041,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 4,
+        "share_surahs_informative": 0.8068181818181818
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H2|L1_verse_count|decile": {
+      "obs": 0.4101610507479343,
+      "p": 0.000999900009999,
+      "null_mean": 0.11352310220181239,
+      "null_sd": 0.09762188726028861,
+      "null_q975": 0.307003818971378,
+      "n_distinct_null_values": 1034,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H2|L2_word_count|quintile": {
+      "obs": 0.4101610507479343,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.03494157549144208,
+      "null_sd": 0.10315737486638203,
+      "null_q975": 0.16534771600548495,
+      "n_distinct_null_values": 1085,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H2|L2_word_count|decile": {
+      "obs": 0.4101610507479343,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.012590414174619443,
+      "null_sd": 0.0997339720443787,
+      "null_q975": 0.20927591518306154,
+      "n_distinct_null_values": 1062,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.4101610507479343,
+      "p": 0.0030996900309969004,
+      "null_mean": 0.22821622458509042,
+      "null_sd": 0.06865526476973566,
+      "null_q975": 0.3637649752120669,
+      "n_distinct_null_values": 752,
+      "frac_null_exactly_equal_obs": 0.0001,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H2|L3_mean_verse_length|decile": {
+      "obs": 0.4101610507479343,
+      "p": 0.0052994700529947,
+      "null_mean": 0.23605276853073429,
+      "null_sd": 0.06524969835140666,
+      "null_q975": 0.36722000211367406,
+      "n_distinct_null_values": 709,
+      "frac_null_exactly_equal_obs": 0.0002,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7045454545454546
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H2|L4_dem_count|quintile": {
+      "obs": 0.4101610507479343,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.007235616052400022,
+      "null_sd": 0.10691162133637609,
+      "null_q975": 0.19841725920658193,
+      "n_distinct_null_values": 1108,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A2_no_ka_prefixed|H2|L4_dem_count|decile": {
+      "obs": 0.4101610507479343,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.031851103285481644,
+      "null_sd": 0.10286910375769318,
+      "null_q975": 0.2329798676044447,
+      "n_distinct_null_values": 1077,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H1|L0_unstratified": {
+      "obs": 0.2501676727028839,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0003167672702883904,
+      "null_sd": 0.05572302181382266,
+      "null_q975": 0.11218533422758775,
+      "n_distinct_null_values": 8631,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H1|L1_verse_count|quintile": {
+      "obs": 0.2501676727028839,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0043622982338475365,
+      "null_sd": 0.054489645196306405,
+      "null_q975": 0.11433489827856018,
+      "n_distinct_null_values": 8412,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H1|L1_verse_count|decile": {
+      "obs": 0.2501676727028839,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.04320586630896491,
+      "null_sd": 0.050978983803761146,
+      "null_q975": 0.1436183769282361,
+      "n_distinct_null_values": 8126,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 8,
+        "share_surahs_informative": 0.813953488372093
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H1|L2_word_count|quintile": {
+      "obs": 0.2501676727028839,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.002746313436172597,
+      "null_sd": 0.05704198357888676,
+      "null_q975": 0.11782472613458524,
+      "n_distinct_null_values": 8511,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H1|L2_word_count|decile": {
+      "obs": 0.2501676727028839,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.04568159177285938,
+      "null_sd": 0.0557873160435183,
+      "null_q975": 0.15122065727699532,
+      "n_distinct_null_values": 8164,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.2501676727028839,
+      "p": 0.0020997900209979003,
+      "null_mean": 0.15255839928459644,
+      "null_sd": 0.03830370841462077,
+      "null_q975": 0.22267046724793205,
+      "n_distinct_null_values": 6642,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H1|L3_mean_verse_length|decile": {
+      "obs": 0.2501676727028839,
+      "p": 0.007899210078992101,
+      "null_mean": 0.1734478783813995,
+      "null_sd": 0.03269480657406677,
+      "null_q975": 0.23688799463447346,
+      "n_distinct_null_values": 6017,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7093023255813954
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H1|L4_dem_count|quintile": {
+      "obs": 0.2501676727028839,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.005535895372233407,
+      "null_sd": 0.05814204815177105,
+      "null_q975": 0.11858148893360158,
+      "n_distinct_null_values": 8276,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H1|L4_dem_count|decile": {
+      "obs": 0.2501676727028839,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.03216962217750951,
+      "null_sd": 0.05518147423034316,
+      "null_q975": 0.13753856472166331,
+      "n_distinct_null_values": 7699,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H2|L0_unstratified": {
+      "obs": 0.38134306103099685,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0020258396137437145,
+      "null_sd": 0.10859467042058403,
+      "null_q975": 0.2106466432361697,
+      "n_distinct_null_values": 1090,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H2|L1_verse_count|quintile": {
+      "obs": 0.38134306103099685,
+      "p": 0.0007999200079992001,
+      "null_mean": 0.04834646574387112,
+      "null_sd": 0.10521416831679777,
+      "null_q975": 0.2531910391607163,
+      "n_distinct_null_values": 1051,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H2|L1_verse_count|decile": {
+      "obs": 0.38134306103099685,
+      "p": 0.0007999200079992001,
+      "null_mean": 0.07981167836874982,
+      "null_sd": 0.10211494149546665,
+      "null_q975": 0.28120808037932016,
+      "n_distinct_null_values": 1039,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 8,
+        "share_surahs_informative": 0.813953488372093
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H2|L2_word_count|quintile": {
+      "obs": 0.38134306103099685,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.02842017531169376,
+      "null_sd": 0.10323194098328717,
+      "null_q975": 0.1722529200847496,
+      "n_distinct_null_values": 1041,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H2|L2_word_count|decile": {
+      "obs": 0.38134306103099685,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.02802638023234338,
+      "null_sd": 0.09930403261929803,
+      "null_q975": 0.2184291546857819,
+      "n_distinct_null_values": 1011,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.38134306103099685,
+      "p": 0.0110988901109889,
+      "null_mean": 0.21598108788419185,
+      "null_sd": 0.07086579850501513,
+      "null_q975": 0.3585143607788011,
+      "n_distinct_null_values": 731,
+      "frac_null_exactly_equal_obs": 0.0003,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H2|L3_mean_verse_length|decile": {
+      "obs": 0.38134306103099685,
+      "p": 0.0188981101889811,
+      "null_mean": 0.2374318685425289,
+      "null_sd": 0.06926690391724505,
+      "null_q975": 0.3745982177746663,
+      "n_distinct_null_values": 718,
+      "frac_null_exactly_equal_obs": 0.0002,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7093023255813954
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H2|L4_dem_count|quintile": {
+      "obs": 0.38134306103099685,
+      "p": 0.0005999400059994001,
+      "null_mean": 0.023085834430490917,
+      "null_sd": 0.1064053228985192,
+      "null_q975": 0.22984350481187973,
+      "n_distinct_null_values": 1076,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A3_no_top10_phrase_types|H2|L4_dem_count|decile": {
+      "obs": 0.38134306103099685,
+      "p": 0.0006999300069993001,
+      "null_mean": 0.04571877857802407,
+      "null_sd": 0.10604208252821684,
+      "null_q975": 0.24904036638758978,
+      "n_distinct_null_values": 1062,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H1|L0_unstratified": {
+      "obs": 0.31033781033781027,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0005286019536019995,
+      "null_sd": 0.06299184485973315,
+      "null_q975": 0.12571225071225067,
+      "n_distinct_null_values": 8555,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H1|L1_verse_count|quintile": {
+      "obs": 0.31033781033781027,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.011811624949124907,
+      "null_sd": 0.062386893825488995,
+      "null_q975": 0.13817791005290997,
+      "n_distinct_null_values": 8261,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H1|L1_verse_count|decile": {
+      "obs": 0.31033781033781027,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.05320436507936504,
+      "null_sd": 0.06086005207400944,
+      "null_q975": 0.17425849613349587,
+      "n_distinct_null_values": 7958,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 8,
+        "share_surahs_informative": 0.813953488372093
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H1|L2_word_count|quintile": {
+      "obs": 0.31033781033781027,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.001862957875457829,
+      "null_sd": 0.06588087922051267,
+      "null_q975": 0.1337009055759055,
+      "n_distinct_null_values": 8457,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H1|L2_word_count|decile": {
+      "obs": 0.31033781033781027,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.06536124338624334,
+      "null_sd": 0.06290103341930552,
+      "null_q975": 0.1853988603988602,
+      "n_distinct_null_values": 7747,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H1|L3_mean_verse_length|quintile": {
+      "obs": 0.31033781033781027,
+      "p": 0.00039996000399960006,
+      "null_mean": 0.18091123321123317,
+      "null_sd": 0.04214527003996894,
+      "null_q975": 0.25885353072853057,
+      "n_distinct_null_values": 6524,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H1|L3_mean_verse_length|decile": {
+      "obs": 0.31033781033781027,
+      "p": 0.0015998400159984002,
+      "null_mean": 0.20481730260480255,
+      "null_sd": 0.03681703592554985,
+      "null_q975": 0.2774216524216523,
+      "n_distinct_null_values": 5726,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7093023255813954
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H1|L4_dem_count|quintile": {
+      "obs": 0.31033781033781027,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.0033744708994708516,
+      "null_sd": 0.0667901778839352,
+      "null_q975": 0.13522588522588516,
+      "n_distinct_null_values": 8053,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H1|L4_dem_count|decile": {
+      "obs": 0.31033781033781027,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.02060496031746027,
+      "null_sd": 0.06833760121425406,
+      "null_q975": 0.15460927960927956,
+      "n_distinct_null_values": 7410,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H2|L0_unstratified": {
+      "obs": 0.41895317190613407,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.0020047973530977915,
+      "null_sd": 0.10857573678034683,
+      "null_q975": 0.21285105388043987,
+      "n_distinct_null_values": 1100,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 1,
+        "n_informative": 1,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H2|L1_verse_count|quintile": {
+      "obs": 0.41895317190613407,
+      "p": 0.0004999500049995,
+      "null_mean": 0.058597635558829145,
+      "null_sd": 0.10336997535722198,
+      "null_q975": 0.2585361581279489,
+      "n_distinct_null_values": 1036,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H2|L1_verse_count|decile": {
+      "obs": 0.41895317190613407,
+      "p": 0.00019998000199980003,
+      "null_mean": 0.09060643661582565,
+      "null_sd": 0.10055830088539018,
+      "null_q975": 0.2886467950183526,
+      "n_distinct_null_values": 1033,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 8,
+        "share_surahs_informative": 0.813953488372093
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H2|L2_word_count|quintile": {
+      "obs": 0.41895317190613407,
+      "p": 9.999000099990002e-05,
+      "null_mean": -0.034075429045502,
+      "null_sd": 0.10300240799508067,
+      "null_q975": 0.16508935398531677,
+      "n_distinct_null_values": 1034,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H2|L2_word_count|decile": {
+      "obs": 0.41895317190613407,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.045139374911316074,
+      "null_sd": 0.09728201566234533,
+      "null_q975": 0.23259169125557072,
+      "n_distinct_null_values": 991,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H2|L3_mean_verse_length|quintile": {
+      "obs": 0.41895317190613407,
+      "p": 0.0047995200479952005,
+      "null_mean": 0.23934010796140465,
+      "null_sd": 0.06921760575265094,
+      "null_q975": 0.3763959398528435,
+      "n_distinct_null_values": 715,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H2|L3_mean_verse_length|decile": {
+      "obs": 0.41895317190613407,
+      "p": 0.010198980101989802,
+      "null_mean": 0.26059925590385347,
+      "null_sd": 0.06828921100582076,
+      "null_q975": 0.395591470870476,
+      "n_distinct_null_values": 712,
+      "frac_null_exactly_equal_obs": 0.0006,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 7,
+        "share_surahs_informative": 0.7093023255813954
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H2|L4_dem_count|quintile": {
+      "obs": 0.41895317190613407,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.004109063637716297,
+      "null_sd": 0.10902880209319529,
+      "null_q975": 0.21701722389846537,
+      "n_distinct_null_values": 1104,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 5,
+        "n_informative": 5,
+        "share_surahs_informative": 1.0
+      }
+    },
+    "R4_period_kaf|A4_no_openings_no_ka_no_top10|H2|L4_dem_count|decile": {
+      "obs": 0.41895317190613407,
+      "p": 9.999000099990002e-05,
+      "null_mean": 0.007997125583635268,
+      "null_sd": 0.11083019513216734,
+      "null_q975": 0.2237531810304136,
+      "n_distinct_null_values": 1108,
+      "frac_null_exactly_equal_obs": 0.0,
+      "informative_strata": {
+        "n_strata": 10,
+        "n_informative": 10,
+        "share_surahs_informative": 1.0
+      }
+    }
+  },
+  "power_and_mde": {
+    "at_worst_channel": {
+      "S_star_H1": 0.49558860207008354,
+      "S_star_H2": 0.3477223407957056,
+      "S_max_H1": 1.053098890135927,
+      "untestable_at_this_n": false,
+      "normal_approx_MDE_H1": 0.5377195411706053,
+      "power_at_delta_0.25": {
+        "mean_s1": 0.2498675188425485,
+        "power_h1": 0.0,
+        "power_h2": 0.149
+      },
+      "MDE_H1_simulated_80pct_power": 0.53594970703125
+    },
+    "at_L0_unstratified": {
+      "S_star_H1": 0.2755527497194159,
+      "S_star_H2": 0.20705515313617293,
+      "S_max_H1": 1.053098890135927,
+      "untestable_at_this_n": false,
+      "normal_approx_MDE_H1": 0.3950873866442481,
+      "power_at_delta_0.25": {
+        "mean_s1": 0.2498675188425485,
+        "power_h1": 0.348,
+        "power_h2": 0.5395
+      },
+      "MDE_H1_simulated_80pct_power": 0.32354736328125
+    },
+    "worst_channel_H1": "L3_mean_verse_length|decile",
+    "worst_channel_H2": "L3_mean_verse_length|decile"
+  },
+  "verdict": {
+    "verdict": "PASS",
+    "p_worst_H1_A0_R1": 0.0028997100289971,
+    "p_worst_H2_A0_R1": 0.0021997800219978004,
+    "obs_H1_L0": 0.53178700586108,
+    "obs_H2_L0": 0.3811244068568479,
+    "direction_as_locked": true,
+    "formulaic_read": {
+      "A1_worst": [
+        0.0023997600239976003,
+        0.0022997700229977
+      ],
+      "A4_worst": [
+        0.015398460153984602,
+        0.020097990200979902
+      ],
+      "A1_fails": false,
+      "A4_fails": false
+    }
+  }
+}
