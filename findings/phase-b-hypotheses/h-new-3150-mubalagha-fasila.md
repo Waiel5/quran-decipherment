@@ -147,7 +147,71 @@ vindicating the TSV.** Three qualifications, all measured:
    `مَعْز` (*maʿz*, "goats") and *al-ʿAfū* to `عَفْو` (the verbal noun). The TSV is right both
    times; on correctly-joined names the machine never contradicted it (45/45).
 3. **The two raters are not independent** — both read the same surface string. This measures
-   transcription fidelity, not the analytic judgement the other lanes' κ measured.
+   transcription fidelity, not the analytic judgement the other lanes' κ measured. **And my
+   template set is itself a hand-built instrument**: I chose which 19 templates to write and how
+   to treat weak radicals, hamza, gemination and defective spelling. κ is agreement between two
+   judgements with different failure modes. It is not an accuracy estimate and must never be
+   quoted as one.
+
+### 2.4a Refusal count — the derivation declines rather than forcing a label
+
+| | n |
+|:--|--:|
+| names in TSV | 100 |
+| **no QAC lemma join** (name not attested as a nominal lemma) | **28** |
+| **joined but REFUSED** (no template matches, or >1 does) | **25** |
+| labelled | 47 |
+
+**53 of 100 names carry no machine label.** No name was forced to a nearest template; a token is
+labelled only on an exact single-template match. Declared failure modes, all systematic and all
+visible in the refusal list: **weak radicals** (*al-ʿAlī, al-Qawī, al-Walī, al-Ghanī, al-Ḥayy,
+al-Qayyūm, al-Nūr, al-Awwal, al-Muqīt, al-Mujīb*), **hamzated radicals** (*al-Bāriʾ, al-Muʾmin*),
+**quadriliteral / contested derivation** (*al-Muhaymin*), **defective Quranic rasm** (*al-Raḥmān,
+al-Khāliq, al-Bāsiṭ, al-Wāsiʿ, al-Ẓāhir, al-Wāḥid*), and **compounds** (*Mālik al-Mulk, Dhū
+al-Jalāl wa-l-Ikrām*). Corpus-wide the same gaps leave 65 % of nominal stems unlabelled, which
+§4.3 shows is the limitation that decides the finding.
+
+The TSV was read **by column name off the header row**, never positionally. Its last field is
+free prose carrying Sībawayh and Ghazālī citations; it was used only for a contestation-keyword
+scan, never as a label. All 101 non-comment lines split to exactly 10 fields, so no embedded tab
+corrupts the parse.
+
+### 2.5a The shared error — where both raters agree and both are wrong
+
+Disagreements advertise themselves; shared errors do not. Hand-checking the cells where hand and
+machine **agree** finds one error class, and it is large.
+
+**All 27 Faʿīl names are flagged `is_mubalagha = 1` at HIGH confidence, and the machine agrees
+with the TSV on the surface wazn for every one of them.** Both are reading the same surface, and
+the surface does not carry the distinction that matters. Classical grammar splits Faʿīl three ways:
+
+- **ṣīghat al-mubālagha** — intensified action from a *transitive* base (*raḥīm, ʿalīm, samīʿ,
+  ḥafīẓ, raqīb, shahīd*);
+- **al-ṣifa al-mushabbaha** — a *fixed quality* from a stative/intransitive base, which Sībawayh
+  does **not** place in the mubālagha set: *ʿazīz* (ʿazza), *laṭīf* (laṭufa), *ḥalīm* (ḥaluma),
+  *ʿaẓīm* (ʿaẓuma), *ʿalī*, *kabīr* (kabura), *jalīl* (jalla), *karīm* (karuma), *majīd*, *qawī*,
+  *matīn*, *ghanī*, *rashīd* — **13 names**;
+- **faʿīl bi-maʿnā mafʿūl** — passive sense: **al-Ḥamīd = *maḥmūd***, "the Praised", not "the
+  much-praising" — the textbook case, and flagged `is_mubalagha = 1` like the rest.
+
+**On classical grounds roughly 14 of the 27 are not ṣiyagh al-mubālagha at all**, which would cut
+the mubālagha token count far below 2,915. Neither rater could have caught it: the distinction is a
+property of the *base verb*, and neither instrument consults the base verb.
+
+**I then tried to mechanise the check and failed three times, which is the more useful result.**
+(i) A transitivity probe keyed on `POS:PRON` returned zero attached objects for all 27 roots
+including ʿ-l-m with 425 verb tokens — QAC writes object pronouns as `SUFFIX|PRON:3MS` with no
+`POS:` field, so the detector never fired. (ii) Fixed, it counted all verb forms, so Form-II/IV
+transitives masked stative Form-I bases. (iii) Restricted to Form I it still does not discriminate
+— mean object-pronoun rate **0.590** for the hand-called stative/passive group against **0.656**
+for the hand-called mubālagha group — **and it is silent on 11 of 27 names**, including 8 of the 13
+stative calls, because *laṭufa, ḥaluma, ʿaẓuma, jalla, karuma, majuda, qawiya, matuna* **do not
+occur in the Quran as Form-I verbs at all**. You cannot measure the transitivity of a base the
+corpus never uses.
+
+So the shared error is identified by hand, on classical grounds, and is **not** corroborated by any
+machine instrument I could build. That is the honest status, and it generalises: a second
+classification is a second judgement, and a third one here was three broken judgements in a row.
 
 ### 2.5 Tie fraction, per `findings/TIED-OUTCOME-DEFECT.md`
 
@@ -299,6 +363,42 @@ Quoting the 5.03× against H-NEW-23's 2.24× would be wrong twice over: the unif
 ignores that nominals as a class are verse-final-loaded (2.63× before any morphology is consulted),
 and §4.3 shows the residual above that baseline is rime, not pattern.
 
+## 5a. Did the §7 reversal clause fire? No — and why that is not reassuring
+
+The clause: *"any confirmatory arm has S_obs < E[S]_null with two-sided p ≤ 0.008333."*
+
+**The confirmatory arms are C1–C6 and only those** — prereg §5.2 defines them as A5 and A5-minus-
+the-divine-stratum, where A5's rime class is the orthographic one of §5.2. All six have
+`S_obs > E[S]_null` (433 > 286.7, …), `positive = True`, `reversed = False`, recorded per-arm in
+`runs/h-new-3150/.../results.json`. **The clause did not fire, correctly.**
+
+The post-hoc arms sit in the opposite tail — `p_perm_lo = 1e-4`, `p_perm_two = 2e-4`, far below
+0.008333 — but they are **not** confirmatory arms in §7's sense: different rime definition,
+different frame (27,097 tokens against 9,383), not pre-registered.
+
+**Three things rule out the alternative readings.** The sign convention is not inverted: the
+post-hoc script imports `run_arm` from the locked script (`M.run_arm`) and both accumulate
+`obs += Σ mub × final`, so the same statistic is being counted with the same sign in both
+directories, and the tails differ because the effect differs. Every verdict-bearing p is **exact**:
+`p_hi = (1 + #{S_perm ≥ S_obs}) / (1 + 10,000)`; `passes` reads `p_perm` and `reversed_` reads
+`p_perm_two`, and the parametric `z_param` is computed for display only and appears in neither —
+required, since the tie fraction is 0.7838. And no arm is `UNTESTABLE` under the locked rime, so
+the NULL/untestable interaction never engages.
+
+**But the clause not firing is a fact about the locked arm, not about the text.** It did not fire
+because the pre-registered arm was broken (§4.1). Under a rime control that actually holds rhyme
+constant the effect is at or below zero. Reporting "the reversal clause did not fire" and stopping
+there would be true and would mislead, which is why the abstract leads with §4 instead.
+
+## 5b. Which control is primary
+
+**The rhyme-shape-matched control is primary and the divine-name residualisation is secondary** —
+that is how the pre-registration was locked (rime is stratum level 5, the outermost; divine-name
+is level 4 plus the divine-free subset), and it is what decided the finding. The two controls
+disagreed exactly as anticipated: the effect **survives** divine-name residualisation
+(+51.0 % → +51.7 %) and **dies** under rhyme matching. The pre-registration named that outcome in
+advance and assigned it a meaning — *this is rhyme, not morphology* — and it is the title.
+
 ## 6. Verdict
 
 **As locked: `CONFIRMED (PASS-RESIDUAL)`.** It is recorded because a pre-registration that can be
@@ -332,6 +432,14 @@ reading is not supported.**
 4. **The map's confound line was reliable until now.** Prereg §2 records that F-4's and F-14's
    confound warnings were both real, and I weighted this map's confound line accordingly. It named
    the innocent variable here.
+5. **I broke the transitivity probe three times** (§2.5a) — a `POS:` regex against a field QAC
+   does not write, then a dropped Form-I filter, then a probe that simply does not discriminate.
+   The first was caught only because the output was absurd (425 verb tokens, zero objects). Had it
+   returned a plausible number it would have entered this file as corroboration.
+6. **I did not hand-check the agreeing cells until asked.** I checked the two disagreements,
+   found both were join failures, and reported 45/45 corrected agreement — treating the agreeing
+   cells as settled. The 27-name shared error in §2.5a was sitting in the column I had already
+   read, and it is larger than anything the disagreements showed.
 
 ## 8. Reproduction
 
