@@ -7412,3 +7412,25 @@ rare-particle, rare-cluster — that the ḥadīth tradition passes over.
 The expected verdict was NULL (H-NEW-2620 returned NULL on all six inferences for the tafsīr
 corpus once length was residualised). **The exact tests agree with that prior; the parametric route
 did not.**
+
+---
+
+## Wave 2026-08-09 — five lanes, four NULLs, one demotion, one cross-finding
+
+| ID | Result | Verdict |
+|:--|:--|:--|
+| [[AUDIT-H-NEW-206-LENGTH-CONFOUND]] | H-NEW-206 both inferences withdrawn — `surah_length` was itself a clustering feature; the max-over-7 silhouette had no multiplicity correction | **DEMOTED** |
+| [[h-new-3010-conditional-register]] | `in` vs `law` are not established as register-coded; 0 of 12 tests clear; **p swings ~70× on which length channel controls** (0.0006 vs 0.027–0.044) | **NULL** |
+| [[h-new-3020-loanword-donor-strata]] | Jeffery vs al-Suyūṭī on donor language: κ = 0.386, 52.4% agreement. The field is PARTIAL, not a measurement. Parent H-NEW-2700 found by prior-work check | **NULL / PARTIAL** |
+| [[h-new-3030-sajdah-glyph]] | Sajdah loci: MDE 3.25× against a corpus whose strongest law runs 1.27–2.58×. **Could not have detected**, not did not detect. Untestable branch computed, did not fire (S\*=12, S_max=26) | **NULL + UNDERPOWERED-SEVERE** |
+| [[cross-finding-029-the-deciding-parameter]] | Five independent lanes: the quantity that fixed the verdict was not the quantity under test | **CONVERGENT** |
+
+**Corrections entered the same day.** The muqaṭṭaʿāt length floor published in the H-NEW-206 audit
+is a **re-derivation of H-NEW-46 cell 4** (2026-04-16, STRONG-PASS, 0/29, p = 3.0×10⁻⁵), not a new
+result; and its "maximal statement" framing was a maximally-selected statistic, replaced by the
+threshold-free `R_min` (observed 51 at Q 32; P = 1.360×10⁻⁹). Two wrong *Itqān* nawʿ citations
+corrected (H-NEW-2270 cited nawʿ 19; it is nawʿ 35) — line offsets travelled correctly both times,
+nawʿ numbers rotted both times. Record-integrity erratum filed at [[ERRATUM-COMMIT-eb6a40d0e]].
+
+**H-NEW-3040** (modality axis) — prereg and runs committed at `eb6a40d0e`; verdict pending.
+
