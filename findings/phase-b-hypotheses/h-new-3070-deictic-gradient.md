@@ -424,7 +424,10 @@ and are unaffected by this defect.
 - Pre-registration `prereg-h-new-3070-deictic-gradient.md`, SHA-256 `83bdecc6…7bee`, embedded in
   the script and verified at runtime before the run directory was created.
 - Run `runs/h-new-3070/20260809T075716Z/{result,manifest}.json`; post-hoc
-  `runs/h-new-3070-posthoc/20260809T075944Z/{result,manifest}.json`. Neither deleted.
+  `runs/h-new-3070-posthoc/20260809T075944Z/`; power audit of the published NULLs
+  `runs/h-new-3070-posthoc2/20260809T080716Z/`. **None deleted.**
 - Prior work, not re-litigated: `h-new-2960-spatial-deixis.md`.
 - Method: `UNIT-DRIFT-DEFECT.md`, `PROXY-CLAIMS.md`, `TIED-OUTCOME-DEFECT.md`,
   `cross-finding-029-the-deciding-parameter.md`. Model: `h-new-3030-sajdah-glyph.md`.
+- Constraint on limit 2 and on H-NEW-3072, from a parallel lane and read after this run:
+  `findings/AUDIT-REGISTER-PHASE-COLLINEARITY.md` (2026-08-09).
