@@ -7469,3 +7469,17 @@ verbatim and NOT re-judged.
 
 *20 entries recovered.*
 
+### Wave 2026-08-09/10 — second batch
+
+| ID | result | verdict |
+|:--|:--|:--|
+| [[h-new-3070-deictic-gradient]] | Distal deixis skews later — but as a **step at the Medinan boundary**, not a gradient. Middle Meccan reverses. Dies without Medinan (p=0.118). Chronology-instrument dependent: NULL under the Egyptian standard. Meccan-internal null is STRONG (MDE 0.261 vs corpus effect 0.532) | **PASS, narrowed** |
+| [[h-new-3090-kinship-affiliation]] | 0 of 24 cells; effect **reversed**. Six-term vocabulary at most 32.4% clean; *ikhwa* 0/7 (four are Joseph's brothers). Deciding parameter is **lemma vs root**, 126× swing | **NULL** |
+| [[AUDIT-WAQF-MARK-INVENTORY-DIVERGENCE]] | 13 text files disagree on the waqf marks; the one F-1 was pointed at is missing *lā* entirely | DATA-PROVENANCE |
+| [[AUDIT-REGISTER-PHASE-COLLINEARITY]] | 43% of surahs sit in a register occurring in one phase only — "control for register" undefined against phase | STRUCTURAL |
+| [[AUDIT-CF028-SCOPE-VS-ANCHORS]] | cross-finding-028's extensions are 0 of 6; the law succeeds where construct overlaps definition | SCOPE NARROWING |
+| [[AUDIT-LENGTH-CHANNEL-EXPOSURE]] | 120 of 158 length-controlling scripts use one channel; 20 findings pair that with a passing verdict | CANDIDATE LIST |
+
+**Frontier-map priors scored 1 of 6**, the only correct one being the only NULL prediction. See the
+calibration block at the head of section B.
+

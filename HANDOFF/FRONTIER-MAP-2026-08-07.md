@@ -207,6 +207,38 @@ enabling data is stripped or absent.
 > screen with false negatives on the confirmed cases cannot certify the unconfirmed ones. The four
 > above are recorded as *confirmed by execution*; nothing else here is recorded either way.
 >
+> ---
+>
+> ## ⚠ CALIBRATION — THIS MAP'S PRIORS ARE 1 FOR 6. ADDED 2026-08-10.
+>
+> Six section-B items have now been executed. Scoring each item's **Prior** line against what the
+> run actually returned:
+>
+> | item | topic | the map's prior | outcome | |
+> |:--|:--|:--|:--|:--|
+> | F-3 | conditionals | CONFIRMED | NULL, 0 of 12 tests clear | ✗ |
+> | F-4 | deixis | CONFIRMED but at risk of CBM | PASS — but as a **step**, and CBM refuted twice | ~ |
+> | F-5 | loanword donors | CONFIRMED-weak | NULL | ✗ |
+> | F-8 | sajdah loci | **NULL** | **NULL** | **✓** |
+> | F-10 | modality | CONFIRMED, *"genuinely orthogonal"* | DIRECTIONAL; orthogonality unsupported | ✗ |
+> | F-20 | kinship | CONFIRMED but CBM-leaning | NULL, effect **reversed** | ✗ |
+>
+> **One prior in six was right, and it is the only one that predicted a NULL.** Every optimistic
+> prior on this map has now failed. The error is not random — it runs in one direction.
+>
+> Two of the misses were worse than wrong. F-10's entry asserts the hypothesis is *"genuinely
+> orthogonal to what has been done"* when prior work had pre-registered and rejected it three days
+> earlier. F-20's prior worried the result would merely restate the Hijra; the effect ran
+> **backwards**, and the six-word vocabulary turned out to be at most 32% clean.
+>
+> **Treat every remaining `Prior.` line as an unscored guess, not evidence.** Six is a small sample
+> and this is a calibration note, not a law — but a lane pre-registering a direction should derive
+> it from published anchors, as the protocol already requires, and must not cite this map's prior as
+> one of them.
+>
+> Where a *confound* is named the map has done better: F-4's and F-14's confound warnings were both
+> real and both changed the design. It is the **outcome predictions** that fail.
+>
 > **BINDING RULE FOR ANY LANE DISPATCHED FROM THIS MAP:** grep `findings/` and
 > `MASTER-FINDINGS-LEDGER.md` for your hypothesis **before designing the test**, and put the result
 > in the pre-registration's forking-paths log as an explicit entry. H-NEW-3010's log had sixteen
