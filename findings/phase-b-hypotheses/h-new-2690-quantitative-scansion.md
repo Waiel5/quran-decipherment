@@ -9,6 +9,56 @@ run: runs/h-new-2690/20260807T022237Z/
 seed: 20260509
 ---
 
+> ### POST-HOC RESULT 2026-08-10 — both diagnostics fire; H2 is reclassified UNINTERPRETABLE
+>
+> `scripts/h-new-2690-posthoc.py` was written at the time of the primary run and **never executed**.
+> It has now been run (`runs/h-new-2690/20260809T095950Z-posthoc/`). Both of its pre-written
+> diagnostics fire against this finding. Figures verified from the artefact.
+>
+> **D2 — the Qurʾān has essentially no metre-specificity above its own matched noise.**
+> Median (median baḥr − best baḥr) per unit:
+>
+> | arm | observed | matched noise | **excess** | n |
+> |:--|--:|--:|--:|--:|
+> | poetry | 0.12500 | 0.05948 | **2.10×** | 240 |
+> | prose | 0.10697 | 0.08916 | **1.20×** | 900 |
+> | **Qurʾān** | **0.09091** | **0.08889** | **1.02×** | 899 |
+>
+> **The instrument works** — poetry separates from its own noise by 2.10×. **The Qurʾān separates by
+> 1.02×, i.e. not at all**, and ḥadīth prose shows *more* metre-specificity than the Qurʾān.
+>
+> **Therefore `inference_verdicts.H2 = "FALSIFIED-buhur-matched"` is RECLASSIFIED UNINTERPRETABLE.**
+> H2's criterion flagged 14–16 of 16 buḥūr as "matching"; D2 shows that criterion detects **general
+> rhythmic regularity, not conformity to any metre**. A falsification of **al-Bāqillānī** on the
+> metricality axis has been standing in this record on an instrument that cannot distinguish the
+> Qurʾān from random syllable strings of matched length and heaviness. **It should not be cited as a
+> falsification.**
+>
+> **D1 — H3(b) was never a real test of the text.** Modal best-meter, arm vs its own matched noise:
+>
+> | arm | modal | share | | noise modal | share |
+> |:--|:--|--:|:--|:--|--:|
+> | Qurʾān | wāfir | 39.49% | | wāfir | 37.93% |
+> | prose | wāfir | 56.67% | | wāfir | 53.44% |
+> | poetry | ṭawīl | 58.75% | | ṭawīl | 38.75% |
+>
+> `D1_quran_and_noise_share_modal: True`. The Qurʾān and its noise return **the same modal metre at
+> nearly the same share**; only poetry pulls away. The script's own pre-written reading applies:
+> *"the argmin-meter statistic is an instrument attractor and H3(b) was not a real test of the text."*
+> H3(b) could not have passed for **any** text of this length and heaviness profile.
+>
+> **Where that leaves the five registered results:**
+>
+> | registered | as published | now |
+> |:--|:--|:--|
+> | H1a Qurʾān less metrical than poetry | PASS | **SURVIVES** |
+> | H1b prose less metrical than Qurʾān | PASS | **WITHDRAWN** (H-NEW-2730, unit-length artefact) |
+> | H2 no single baḥr matches | FALSIFIED | **UNINTERPRETABLE** |
+> | H3(a) mufaṣṣal more metrical than long Medinan | folded into "fail" | **DIRECTION CONFIRMED** +0.07292, p=1e-4 |
+> | H3(b) modal metre is rajaz/sarīʿ | fails | **NOT A REAL TEST** |
+>
+> **One of five survives.** The pre-registration is not edited.
+
 > ## ⚠ CORRECTION 2026-08-10 — this finding's prose contradicts its own run artefact on H3
 >
 > §3 states that H3 fails because *"the locked direction is not satisfied."* **The run artefact says

@@ -1,0 +1,108 @@
+{
+  "id": "H-NEW-2690-POSTHOC",
+  "status": "NOT PRE-REGISTERED — descriptive, MW-7 capped, no verdict authority",
+  "mode": "P_forceheavy",
+  "sample_per_arm": 900,
+  "seed": 20260509,
+  "D1_modal_meter_by_arm": {
+    "quran": {
+      "n": 899,
+      "modal": "wafir",
+      "modal_share": 0.3949,
+      "top4": {
+        "wafir": 0.3949,
+        "tawil": 0.386,
+        "kamil": 0.0834,
+        "madid": 0.0545
+      }
+    },
+    "quran_noise": {
+      "n": 899,
+      "modal": "wafir",
+      "modal_share": 0.3793,
+      "top4": {
+        "wafir": 0.3793,
+        "tawil": 0.327,
+        "kamil": 0.099,
+        "madid": 0.0712
+      }
+    },
+    "poetry": {
+      "n": 240,
+      "modal": "tawil",
+      "modal_share": 0.5875,
+      "top4": {
+        "tawil": 0.5875,
+        "wafir": 0.275,
+        "madid": 0.0917,
+        "kamil": 0.025
+      }
+    },
+    "poetry_noise": {
+      "n": 240,
+      "modal": "tawil",
+      "modal_share": 0.3875,
+      "top4": {
+        "tawil": 0.3875,
+        "wafir": 0.2375,
+        "madid": 0.1458,
+        "munsarih": 0.1042
+      }
+    },
+    "prose": {
+      "n": 900,
+      "modal": "wafir",
+      "modal_share": 0.5667,
+      "top4": {
+        "wafir": 0.5667,
+        "kamil": 0.2511,
+        "tawil": 0.1456,
+        "madid": 0.0122
+      }
+    },
+    "prose_noise": {
+      "n": 900,
+      "modal": "wafir",
+      "modal_share": 0.5344,
+      "top4": {
+        "wafir": 0.5344,
+        "tawil": 0.1978,
+        "kamil": 0.1767,
+        "madid": 0.0344
+      }
+    }
+  },
+  "D1_quran_and_noise_share_modal": true,
+  "D2_metre_specificity_spread": {
+    "quran": {
+      "median_spread": 0.09091,
+      "mean_spread": 0.09675,
+      "n": 899
+    },
+    "quran_noise": {
+      "median_spread": 0.08889,
+      "mean_spread": 0.09706,
+      "n": 899
+    },
+    "poetry": {
+      "median_spread": 0.125,
+      "mean_spread": 0.12232,
+      "n": 240
+    },
+    "poetry_noise": {
+      "median_spread": 0.05948,
+      "mean_spread": 0.06919,
+      "n": 240
+    },
+    "prose": {
+      "median_spread": 0.10697,
+      "mean_spread": 0.10812,
+      "n": 900
+    },
+    "prose_noise": {
+      "median_spread": 0.08916,
+      "mean_spread": 0.09561,
+      "n": 900
+    }
+  }
+}
