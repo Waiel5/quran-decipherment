@@ -323,6 +323,21 @@ words per verse: legal 19.36 against irrealis-register 4.58, a 4.2× gap, on ide
 ### F-6. Derived-form profile is a surah-level stylistic fingerprint
 **Hypothesis.** The distribution over verb forms I–X is a per-surah signature that predicts genre independently of root vocabulary — Form IV (causative/declarative, 4,585 tokens) should mark divine-agency narrative, Form V/VI (reflexive/reciprocal) should mark community/legal discourse.
 **Data (verified).** I counted directly from QAC: (IV) 4,585, (II) 1,615, (VIII) 1,161, (III) 497, (V) 466, (X) 459, (VI) 106, (VII) 63, (XII) 13, (IX) 11, (XI) 1.
+
+> **⚠ DATA WARNING ADDED 2026-08-10 — THESE ARE NOT VERB COUNTS.** All eleven reproduce exactly, but
+> only when counting **every POS carrying a form tag**: V 7,009 + N 1,778 + ADJ 170 + PN 20 = 8,977.
+> The nominals are *maṣdars* and participles. The hypothesis says *"distribution over **verb** forms
+> I–X"*, and verb-only (`POS:V`) the counts are **IV 3,487 · II 1,300 · VIII 963 · V 414 · X 369 ·
+> III 334 · VI 77 · VII 51 · XII 9 · IX 5 · XI 0** — Form IV moves by **1,098 tokens (31%)**. Whether
+> deverbal nominals are included is a **rules-tuple element**, not a detail.
+>
+> **And Form I does not exist in QAC.** Zero verbs carry an explicit `(I)` tag; **12,347 verbs are
+> untagged — 64% of all 19,356 verbs.** "Forms I–X" therefore requires Form I to be *derived* as
+> "verb with no form tag," which is an inference rather than a reading and must be declared.
+>
+> On verbs, **XI = 0** and IX (5), XII (9), VII (51) cannot carry a test. Say so rather than
+> including them silently. Same shape as [[AUDIT-WAQF-MARK-INVENTORY-DIVERGENCE]]: the counts are
+> verified against one reading of the question and ambiguous across readings.
 **Confound.** Root identity. Many roots are lexically restricted to one form, so a "form profile" may just be a coarse root profile. Must test with root held fixed — which is precisely the design H-NEW-2540 uses for II→V, so the method is already validated in-house.
 **Classical anchor.** Sībawayhi/al-Zamakhsharī on `maʿānī al-abniya`. Neither primary text is on disk; `findings/classical-sources/99-names-wazn-classification.tsv` gives a wazn classification for the divine names only and is read by **0** scripts.
 **Prior.** CONFIRMED but high CBM risk. Worth running because the confound test is the interesting half.
