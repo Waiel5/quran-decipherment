@@ -1,0 +1,735 @@
+{
+  "prereg_sha256": "bede8fc660467763a26e1068ec2d0a3dce044491c1da9c1f6718837210539caa",
+  "qac_sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha": 0.025,
+  "utc": "20260809T090141Z",
+  "census": {
+    "idh_tokens_total": 239,
+    "surahs_with_idh": 50,
+    "tie_fraction_density": 0.5964912280701754,
+    "n_distinct_density": 46
+  },
+  "exact_test_triggered": true,
+  "R1_noldeke": {
+    "H1_step": {
+      "L0 unstratified": {
+        "obs": 0.03629953662689225,
+        "p": 0.00019998000199980003,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 7.323764243383614e-05,
+        "null_sd": 0.008831308351455097,
+        "crit_value": 0.018420387662171703
+      },
+      "L1 verse count quintile": {
+        "obs": 0.03629953662689225,
+        "p": 0.00039996000399960006,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.003757964055438756,
+        "null_sd": 0.008442435936867852,
+        "crit_value": 0.02075699880756535
+      },
+      "L1 verse count decile": {
+        "obs": 0.03629953662689225,
+        "p": 0.0006999300069993001,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.008823949600008691,
+        "null_sd": 0.008540833467946199,
+        "crit_value": 0.025791540749025774
+      },
+      "L2 word count quintile": {
+        "obs": 0.03629953662689225,
+        "p": 0.0021997800219978004,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.011947007800081082,
+        "null_sd": 0.008192557154794023,
+        "crit_value": 0.02881432856452623
+      },
+      "L2 word count decile": {
+        "obs": 0.03629953662689225,
+        "p": 0.004399560043995601,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.012739462735689109,
+        "null_sd": 0.00862050887408409,
+        "crit_value": 0.030220752850578275
+      },
+      "L3 mean verse length quintile": {
+        "obs": 0.03629953662689225,
+        "p": 0.25407459254074594,
+        "n_distinct_null": 9997,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.031055198319428212,
+        "null_sd": 0.007694779687492588,
+        "crit_value": 0.04574742246128428
+      },
+      "L3 mean verse length decile": {
+        "obs": 0.03629953662689225,
+        "p": 0.23967603239676033,
+        "n_distinct_null": 9998,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.030950120911707586,
+        "null_sd": 0.0073955982757445094,
+        "crit_value": 0.045292296249326285
+      }
+    },
+    "H2_gradient": {
+      "L0 unstratified": {
+        "obs": 0.471822471090295,
+        "p": 9.999000099990002e-05,
+        "n_distinct_null": 9085,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.000697091354045319,
+        "null_sd": 0.09332801349456184,
+        "crit_value": 0.18176147746156204
+      },
+      "L1 verse count quintile": {
+        "obs": 0.471822471090295,
+        "p": 0.00039996000399960006,
+        "n_distinct_null": 8788,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.22921810452579575,
+        "null_sd": 0.07412308080482527,
+        "crit_value": 0.37338159021288936
+      },
+      "L1 verse count decile": {
+        "obs": 0.471822471090295,
+        "p": 0.0008999100089991,
+        "n_distinct_null": 8758,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.2590738069815966,
+        "null_sd": 0.07196569905399977,
+        "crit_value": 0.39949645959080493
+      },
+      "L2 word count quintile": {
+        "obs": 0.471822471090295,
+        "p": 0.20177982201779823,
+        "n_distinct_null": 8499,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.42357632545651797,
+        "null_sd": 0.057246787720235795,
+        "crit_value": 0.5397258513883025
+      },
+      "L2 word count decile": {
+        "obs": 0.471822471090295,
+        "p": 0.21177882211778823,
+        "n_distinct_null": 8479,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.4268901583527084,
+        "null_sd": 0.05588199616617184,
+        "crit_value": 0.5385717616199321
+      },
+      "L3 mean verse length quintile": {
+        "obs": 0.471822471090295,
+        "p": 0.5397460253974603,
+        "n_distinct_null": 7595,
+        "frac_null_eq_obs": 0.0002,
+        "null_mean": 0.4755316102883212,
+        "null_sd": 0.03283212506656434,
+        "crit_value": 0.5399093645179595
+      },
+      "L3 mean verse length decile": {
+        "obs": 0.471822471090295,
+        "p": 0.7023297670232976,
+        "n_distinct_null": 7548,
+        "frac_null_eq_obs": 0.0002,
+        "null_mean": 0.4894642948225992,
+        "null_sd": 0.03265412643231,
+        "crit_value": 0.5540553737313025
+      }
+    },
+    "H1_worst": {
+      "p": 0.25407459254074594,
+      "setting": "L3 mean verse length quintile",
+      "obs": 0.03629953662689225
+    },
+    "H2_worst": {
+      "p": 0.7023297670232976,
+      "setting": "L3 mean verse length decile",
+      "obs": 0.471822471090295
+    }
+  },
+  "R2_egyptian": {
+    "H1_step": {
+      "L0 unstratified": {
+        "obs": 0.02788073707479869,
+        "p": 0.000999900009999,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 2.6685042835066897e-05,
+        "null_sd": 0.008328970760885446,
+        "crit_value": 0.01716290519484538
+      },
+      "L1 verse count quintile": {
+        "obs": 0.02788073707479869,
+        "p": 0.0015998400159984002,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.001993765235361758,
+        "null_sd": 0.007960106208392997,
+        "crit_value": 0.018274671155246232
+      },
+      "L1 verse count decile": {
+        "obs": 0.02788073707479869,
+        "p": 0.004299570042995701,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.007144503114153053,
+        "null_sd": 0.008003945102332976,
+        "crit_value": 0.022848013524074454
+      },
+      "L2 word count quintile": {
+        "obs": 0.02788073707479869,
+        "p": 0.0117988201179882,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.009819168475891012,
+        "null_sd": 0.007623583584759878,
+        "crit_value": 0.025166699316200337
+      },
+      "L2 word count decile": {
+        "obs": 0.02788073707479869,
+        "p": 0.0192980701929807,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.010567538807100802,
+        "null_sd": 0.008033743468601837,
+        "crit_value": 0.026818226933984647
+      },
+      "L3 mean verse length quintile": {
+        "obs": 0.02788073707479869,
+        "p": 0.48835116488351166,
+        "n_distinct_null": 9999,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.027561755347845746,
+        "null_sd": 0.006750992890085405,
+        "crit_value": 0.04035441471949552
+      },
+      "L3 mean verse length decile": {
+        "obs": 0.02788073707479869,
+        "p": 0.40995900409959,
+        "n_distinct_null": 9993,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.02640758843316621,
+        "null_sd": 0.006224354602449341,
+        "crit_value": 0.038392545023337867
+      }
+    },
+    "H2_gradient": {
+      "L0 unstratified": {
+        "obs": 0.2630770980095039,
+        "p": 0.0016998300169983002,
+        "n_distinct_null": 9352,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": -0.00017381463552803246,
+        "null_sd": 0.09322056384801132,
+        "crit_value": 0.18189815470137338
+      },
+      "L1 verse count quintile": {
+        "obs": 0.2630770980095039,
+        "p": 0.0633936606339366,
+        "n_distinct_null": 9207,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.1498918612060083,
+        "null_sd": 0.07432506027961557,
+        "crit_value": 0.29652892535898145
+      },
+      "L1 verse count decile": {
+        "obs": 0.2630770980095039,
+        "p": 0.1085891410858914,
+        "n_distinct_null": 9211,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.17115852737829682,
+        "null_sd": 0.07495484891098458,
+        "crit_value": 0.31492778196530463
+      },
+      "L2 word count quintile": {
+        "obs": 0.2630770980095039,
+        "p": 0.4607539246075392,
+        "n_distinct_null": 9076,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.2561789164090343,
+        "null_sd": 0.06417042474170143,
+        "crit_value": 0.3820913708907291
+      },
+      "L2 word count decile": {
+        "obs": 0.2630770980095039,
+        "p": 0.5226477352264773,
+        "n_distinct_null": 9088,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.2657697902554022,
+        "null_sd": 0.0631997184212138,
+        "crit_value": 0.3856912757746981
+      },
+      "L3 mean verse length quintile": {
+        "obs": 0.2630770980095039,
+        "p": 0.9164083591640836,
+        "n_distinct_null": 9006,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.34565276691244257,
+        "null_sd": 0.05930276783609236,
+        "crit_value": 0.4627505573535752
+      },
+      "L3 mean verse length decile": {
+        "obs": 0.2630770980095039,
+        "p": 0.8666133386661334,
+        "n_distinct_null": 8906,
+        "frac_null_eq_obs": 0.0001,
+        "null_mean": 0.3219397471227294,
+        "null_sd": 0.05228767889289639,
+        "crit_value": 0.4236023869449471
+      }
+    },
+    "H1_worst": {
+      "p": 0.48835116488351166,
+      "setting": "L3 mean verse length quintile",
+      "obs": 0.02788073707479869
+    },
+    "H2_worst": {
+      "p": 0.9164083591640836,
+      "setting": "L3 mean verse length quintile",
+      "obs": 0.2630770980095039
+    },
+    "binary_disagreements_with_noldeke": [
+      13,
+      55,
+      76,
+      99
+    ]
+  },
+  "U1_token_level": {
+    "mean_phase_ordinal_of_idh_tokens": 2.066945606694561,
+    "mean_phase_ordinal_of_all_verses": 1.5392880051314946,
+    "difference": 0.5276576015630663,
+    "n_tokens": 239
+  },
+  "meccan_internal": {
+    "n_surahs": 90,
+    "H1m_step_late_vs_earlymid": {
+      "L0 unstratified": {
+        "obs": 0.019962524229828353,
+        "p": 0.0025997400259974,
+        "n_distinct_null": 9997,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.00012893810939682368,
+        "null_sd": 0.006526273576637113,
+        "crit_value": 0.013420389571755892
+      },
+      "L1 verse count quintile": {
+        "obs": 0.019962524229828353,
+        "p": 0.0801919808019198,
+        "n_distinct_null": 10000,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.010897545905720963,
+        "null_sd": 0.006302503496754183,
+        "crit_value": 0.023473589533543393
+      },
+      "L1 verse count decile": {
+        "obs": 0.019962524229828353,
+        "p": 0.0766923307669233,
+        "n_distinct_null": 9999,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.010693628383827798,
+        "null_sd": 0.006421810169378022,
+        "crit_value": 0.02360140463935294
+      },
+      "L2 word count quintile": {
+        "obs": 0.019962524229828353,
+        "p": 0.6571342865713429,
+        "n_distinct_null": 9998,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.02206523176325014,
+        "null_sd": 0.00533309943997125,
+        "crit_value": 0.03202484117233322
+      },
+      "L2 word count decile": {
+        "obs": 0.019962524229828353,
+        "p": 0.7331266873312668,
+        "n_distinct_null": 9989,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.02308281904056397,
+        "null_sd": 0.005065663732931849,
+        "crit_value": 0.032523955925333435
+      },
+      "L3 mean verse length quintile": {
+        "obs": 0.019962524229828353,
+        "p": 0.8779122087791221,
+        "n_distinct_null": 356,
+        "frac_null_eq_obs": 0.016,
+        "null_mean": 0.023086352181870773,
+        "null_sd": 0.0026501637800384757,
+        "crit_value": 0.0285446387025459
+      },
+      "L3 mean verse length decile": {
+        "obs": 0.019962524229828353,
+        "p": 0.9023097690230977,
+        "n_distinct_null": 56,
+        "frac_null_eq_obs": 0.0383,
+        "null_mean": 0.023597589458214052,
+        "null_sd": 0.002778750466876406,
+        "crit_value": 0.028961359315619953
+      }
+    },
+    "H2m_gradient": {
+      "L0 unstratified": {
+        "obs": 0.4971334168563253,
+        "p": 9.999000099990002e-05,
+        "n_distinct_null": 8205,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.002516537103491571,
+        "null_sd": 0.1054973781216597,
+        "crit_value": 0.21358153873510966
+      },
+      "L1 verse count quintile": {
+        "obs": 0.4971334168563253,
+        "p": 0.0684931506849315,
+        "n_distinct_null": 7673,
+        "frac_null_eq_obs": 0.0001,
+        "null_mean": 0.38002031788557616,
+        "null_sd": 0.07740078422582403,
+        "crit_value": 0.5339207319797689
+      },
+      "L1 verse count decile": {
+        "obs": 0.4971334168563253,
+        "p": 0.0547945205479452,
+        "n_distinct_null": 7660,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.3745978516792794,
+        "null_sd": 0.07635947721356058,
+        "crit_value": 0.5248968363462688
+      },
+      "L2 word count quintile": {
+        "obs": 0.4971334168563253,
+        "p": 0.9873012698730127,
+        "n_distinct_null": 4023,
+        "frac_null_eq_obs": 0.0,
+        "null_mean": 0.58076547023623,
+        "null_sd": 0.0392859579385117,
+        "crit_value": 0.6596193106517588
+      },
+      "L2 word count decile": {
+        "obs": 0.4971334168563253,
+        "p": 0.9885011498850115,
+        "n_distinct_null": 3895,
+        "frac_null_eq_obs": 0.0006,
+        "null_mean": 0.5808712022984122,
+        "null_sd": 0.038358873017186684,
+        "crit_value": 0.6575565067484143
+      },
+      "L3 mean verse length quintile": {
+        "obs": 0.4971334168563253,
+        "p": 0.6054394560543945,
+        "n_distinct_null": 5866,
+        "frac_null_eq_obs": 0.0003,
+        "null_mean": 0.5086791603644628,
+        "null_sd": 0.04097237358395996,
+        "crit_value": 0.5898569558124228
+      },
+      "L3 mean verse length decile": {
+        "obs": 0.4971334168563253,
+        "p": 0.545945405459454,
+        "n_distinct_null": 4641,
+        "frac_null_eq_obs": 0.0001,
+        "null_mean": 0.5019696625442577,
+        "null_sd": 0.03842715707077676,
+        "crit_value": 0.5764711943209682
+      }
+    },
+    "H1m_worst": {
+      "p": 0.9023097690230977,
+      "setting": "L3 mean verse length decile",
+      "obs": 0.019962524229828353
+    },
+    "H2m_worst": {
+      "p": 0.9885011498850115,
+      "setting": "L2 word count decile",
+      "obs": 0.4971334168563253
+    }
+  },
+  "stratum_informativeness": {
+    "L0 unstratified": {
+      "frac_strata_informative": 1.0,
+      "frac_units_informative": 1.0
+    },
+    "L1 verse count quintile": {
+      "frac_strata_informative": 1.0,
+      "frac_units_informative": 1.0
+    },
+    "L1 verse count decile": {
+      "frac_strata_informative": 0.8,
+      "frac_units_informative": 0.7894736842105263
+    },
+    "L2 word count quintile": {
+      "frac_strata_informative": 1.0,
+      "frac_units_informative": 1.0
+    },
+    "L2 word count decile": {
+      "frac_strata_informative": 0.8,
+      "frac_units_informative": 0.8070175438596491
+    },
+    "L3 mean verse length quintile": {
+      "frac_strata_informative": 0.6,
+      "frac_units_informative": 0.5877192982456141
+    },
+    "L3 mean verse length decile": {
+      "frac_strata_informative": 0.6,
+      "frac_units_informative": 0.5877192982456141
+    }
+  },
+  "phase_profile": {
+    "Early Meccan": {
+      "n_surahs": 48,
+      "idh_tokens": 13,
+      "verses": 1219,
+      "tokens_per_verse": 0.01066447908121411,
+      "mean_surah_density": 0.006359016402407006
+    },
+    "Middle Meccan": {
+      "n_surahs": 21,
+      "idh_tokens": 63,
+      "verses": 1898,
+      "tokens_per_verse": 0.033192834562697573,
+      "mean_surah_density": 0.026258517429191802
+    },
+    "Late Meccan": {
+      "n_surahs": 21,
+      "idh_tokens": 58,
+      "verses": 1656,
+      "tokens_per_verse": 0.035024154589371984,
+      "mean_surah_density": 0.03237791050995247
+    },
+    "Medinan": {
+      "n_surahs": 24,
+      "idh_tokens": 105,
+      "verses": 1463,
+      "tokens_per_verse": 0.07177033492822966,
+      "mean_surah_density": 0.053372845227309645
+    }
+  },
+  "verdict": "NULL",
+  "verdict_inputs": {
+    "H1_sign_ok": true,
+    "H1_p_worst": 0.25407459254074594,
+    "H2_sign_ok": true,
+    "H2_p_worst": 0.7023297670232976
+  },
+  "shape_verdict": "STEP-REPLICATED",
+  "shape_inputs": {
+    "S1_binary_beats_rank": true,
+    "S2_meccan_internal_null": true,
+    "S3_egyptian_weaker": true
+  },
+  "mde": {
+    "H1_full_corpus": {
+      "untestable": false,
+      "s_max": 0.07820969007819746,
+      "crit": 0.04574742246128428,
+      "mde": 0.03507004553916813,
+      "power_at_mde": 0.84,
+      "n_sim": 300,
+      "n_perm_inner": 2000
+    },
+    "H1m_meccan_internal": {
+      "untestable": false,
+      "s_max": 0.054590485565040765,
+      "crit": 0.028961359315619953,
+      "mde": 0.07545791665436917,
+      "power_at_mde": 0.7966666666666666,
+      "n_sim": 300,
+      "n_perm_inner": 2000
+    }
+  },
+  "armBC_descriptive_NOT_preregistered": {
+    "surahs_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77
+    ],
+    "surahs_absent": [
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114
+    ],
+    "n_absent": 37,
+    "absent_phase_counts": {
+      "Early Meccan": 35,
+      "Middle Meccan": 0,
+      "Late Meccan": 0,
+      "Medinan": 2
+    },
+    "zero_entry_files_inside_block": [
+      72,
+      77
+    ],
+    "entries_total": 1089,
+    "medinan_entry_fraction": 0.4921946740128558,
+    "corpus_medinan_verse_share": 0.2602629890955741,
+    "channels_all114_absent_as_zero": {
+      "verse count": {
+        "rho": 0.49952891800316346,
+        "p": 1.5335540277638615e-08
+      },
+      "word count": {
+        "rho": 0.7244152734607909,
+        "p": 8.302735119519214e-20
+      },
+      "mean verse length": {
+        "rho": 0.820573214481014,
+        "p": 5.620291766830969e-29
+      },
+      "noldeke phase ordinal": {
+        "rho": 0.7349670370096469,
+        "p": 1.2942282584016357e-20
+      },
+      "egyptian rank": {
+        "rho": 0.518717517582772,
+        "p": 3.3786380034363502e-09
+      },
+      "mushaf index": {
+        "rho": -0.7664976865400012,
+        "p": 2.830440210957454e-23
+      },
+      "tie_fraction": 0.37719298245614036
+    },
+    "channels_window_1_77": {
+      "verse count": {
+        "rho": -0.06781744458301993,
+        "p": 0.5578503944874573
+      },
+      "word count": {
+        "rho": 0.2571445473598769,
+        "p": 0.023968360521806238
+      },
+      "mean verse length": {
+        "rho": 0.6394252893644838,
+        "p": 3.8691727082934243e-10
+      },
+      "noldeke phase ordinal": {
+        "rho": 0.5773820991270917,
+        "p": 3.859544619651674e-08
+      },
+      "egyptian rank": {
+        "rho": 0.3943974869313695,
+        "p": 0.0003863424878532991
+      },
+      "mushaf index": {
+        "rho": -0.3236759430960608,
+        "p": 0.004085020262544252
+      },
+      "tie_fraction": 0.07792207792207792
+    }
+  }
+}
