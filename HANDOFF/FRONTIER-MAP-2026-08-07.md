@@ -201,7 +201,23 @@ reduce to length, frequency, or genre).
 **Data (verified).** QAC POS:COND = 1,049 tokens in `data/morphology/quranic-corpus-morphology-0.4.txt`; lemma field distinguishes the particles. Register labels already locked in `findings/classical-sources/neuwirth-sinai-genre-labels.tsv` (read by 9 scripts).
 **Confound.** Verse length and surah length — the legal register lives in long surahs. cross-finding-028's own `H-NEW-2530` confusion matrix shows legal is the hardest register (8/20). Must residualise on length, per MW-1.
 **Classical anchor.** The *sharṭ* / *jazāʾ* apparatus in al-Zarkashī *al-Burhān*; `data/literature/classical-tafsir/zarkashi-al-burhan-fi-ulum-al-quran.pdf` **is on disk**.
-**Prior.** CONFIRMED. Cheap, and it directly extends a law that was minted 2026-05-30.
+**Prior.** ~~CONFIRMED~~ — **RETIRED 2026-08-09. F-3 WAS ALREADY ANSWERED BY H-NEW-2630 ON THE VERY DAY THIS MAP WAS WRITTEN**
+(`findings/phase-b-hypotheses/h-new-2630-conditional-register.md`, 2026-08-07, ledger §10.147), whose title
+states the conclusion outright: *"Realis vs irrealis conditionals are NOT register-coded — the mood hypothesis
+is rejected; conditional PRESENCE is the real signal."* This entry carried no pointer to it, and H-NEW-3010
+duly re-derived it two days later. The two statistics are **the same statistic**: 2630's mood balance
+`C = (n_R − n_I)/(n_R + n_I)` and 3010's irrealis share `n_I/(n_R + n_I)` satisfy `C = 1 − 2·share` exactly,
+so both found legal-lowest and both returned NULL — on two independent register labellings and two null models.
+
+**The real successor is NOT the mood question.** It is 2630's own open item: the **mood-blind PRESENCE**
+question — does the mere presence of a conditional mark register, independent of which particle — tested under
+a *stratified* length control. 2630 hit 20/20 legal recall on it post-hoc and asked for exactly this design;
+H-NEW-3010 built the design and then re-tested mood with it instead.
+
+**And the confound named in this entry is misidentified.** This entry says *"verse length and surah length — the
+legal register lives in long surahs."* Measured: the surah-length half is nearly absent (Spearman ρ = +0.0719 on
+verse count); the **verse-length** half is the entire confound (ρ = **+0.5467** on mean verse length). Median
+words per verse: legal 19.36 against irrealis-register 4.58, a 4.2× gap, on identical median verse counts (38 vs 38).
 
 ### F-4. Spatial-deictic distance (hādhā vs dhālika) tracks eschatological reference
 **Hypothesis.** Proximal demonstratives cluster on present/this-world referents, distal on the Hereafter and on scripture-as-object (`dhālika l-kitāb`), giving a measurable deictic gradient across the Nöldeke phases.

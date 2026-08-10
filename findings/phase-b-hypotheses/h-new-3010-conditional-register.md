@@ -411,25 +411,32 @@ under its own pre-registration.
 
 ## 7. WHAT THIS MEANS FOR THE SURROUNDING WORK
 
-**F-3's prior was wrong.** `HANDOFF/FRONTIER-MAP-2026-08-07.md` records the prior for
-F-3 as *"CONFIRMED. Cheap, and it directly extends a law that was minted 2026-05-30."*
-It was cheap. It did not confirm. The frontier map's confound note named "verse length
-and surah length — the legal register lives in long surahs"; the measurement says the
-surah-length half is nearly absent (ρ = +0.07 on verse count) and **the verse-length
-half is the whole confound** (ρ = +0.55).
+**F-3 was already answered when the frontier map listed it as open.** The map is dated
+2026-08-07 and records F-3's prior as *"CONFIRMED. Cheap, and it directly extends a law
+that was minted 2026-05-30."* **H-NEW-2630 is dated 2026-08-07 as well and rejected it.**
+Two artefacts of the same day disagree about whether the question is open, and nothing
+in the map points at H-NEW-2630. **The map needs a pointer added at F-3; until it has
+one, the next lane to read it will do what I did.**
 
-**cross-finding-028 does not gain a fourth column.** Its claim — that register is coded
-at the function-word grain — is not damaged by this result, but it is now **bounded**:
-here is a function-word axis, chosen on strong grammatical grounds, that does **not**
-carry register once verse length is held fixed. cross-finding-028's own open follow-up
-2 proposed resolving the legal↔eschatological blur with an added legal-specific feature.
-**The conditional-modality axis is not that feature.**
+What this run adds to F-3 is the confound anatomy, and it corrects the map: the map's
+note named *"verse length and surah length — the legal register lives in long surahs."*
+Measured, the **surah**-length half is nearly absent (ρ = +0.0719 on verse count) and
+**the verse-length half is the whole confound** (ρ = +0.5467).
 
-**A NULL that bounds a law is worth as much as a column that extends it.** The
-distinction being tested — realis vs irrealis modality — is one of the sharpest
-semantic contrasts available in the Arabic particle inventory, and it is *not* how this
-corpus separates its legal register from its polemical one. That is a fact about the
-text, not merely about this test.
+**cross-finding-028 does not gain a fourth column — but H-NEW-2630 established that,
+not this run.** Its ledger entry §10.147 already states "cross-finding-028-formal gets
+no amendment from this test." What this run adds is that the same negative holds under a
+**second, independent register labelling** and under a length control targeted at the
+**dominant** channel rather than at verse and token counts. A NULL that replicates across
+independent labellings is worth more than either instance alone; it is still a
+replication, and it is not a new column.
+
+**The one substantive thing this run says that H-NEW-2630 does not:** its H4 concluded
+the register ordering *inverts* once length is residualised out. Under a stratified
+control targeted at the dominant channel it does not invert — legal stays lowest in all
+12 null configurations. So the honest state of the mood question is **NULL with the
+originally-reasoned direction intact**, rather than NULL-with-inversion. That is a
+smaller claim than a fourth column and it is the size of claim the evidence supports.
 
 ---
 
@@ -489,7 +496,56 @@ control.
 
 ---
 
-## 10. FILES
+## 10. WHAT I GOT WRONG
+
+**1. I did not run a prior-work check before designing or running this test.** The
+project had already answered this question two days earlier, in a file whose slug differs
+from mine by four digits — `h-new-2630-conditional-register.md` against
+`h-new-3010-conditional-register.md` — and whose title states the conclusion. A single
+`grep -ril "conditional.register" findings/` would have surfaced it in under a second. I
+ran that grep only when the team lead asked for it, **after** the run had completed and
+the finding had been written. The whole prior-work section above exists because someone
+else asked the question I should have asked first.
+
+The cost is not the compute. It is that this file was written as a discovery — the
+original §7 said "cross-finding-028 does not gain a fourth column" as though that were
+news, when the ledger had recorded exactly that at §10.147 on 2026-08-07 — and had it
+been committed in that form, the repository would have carried two findings presenting
+the same negative as independent. **The pre-registration was locked before computation
+and its SHA holds; what was not locked before computation was the literature.**
+
+**2. The pre-registration's §9 garden-of-forking-paths log has 16 entries and not one of
+them is "does this already exist."** The log is thorough about every analytic choice and
+silent about the only question that would have changed whether to run at all. A
+forking-paths log that catalogues instrument choices while omitting the prior-work check
+is measuring the wrong surface.
+
+**3. My al-Zarkashī check was weaker than the one already on disk.** I ran `pdftotext`
+on pages 1–5 and concluded the PDF is image-only. H-NEW-2630 §6 had already established
+the same fact more thoroughly — `pdftotext` producing a 0-byte output **and**
+`pypdf.extract_text()` returning 0 characters on pages 0, 5, 50, 200 and 400 of a
+1,568-page scan. It also found what I did not look for: **al-Suyūṭī's *al-Itqān* is
+extractable and contains two verified loci on the `sharṭ`/`jazāʾ` pair and on `law`,
+including Q 41:14** `qālū law shāʾa rabbunā la-anzala malāʾikatan`. My finding says "no
+classical citation is made"; that is true of my run and false of the project, which had a
+verified anchor available the whole time.
+
+**4. Six token counts in the §2 verdict table were wrong on first write.** I transcribed
+the T2 columns from memory rather than from `results.json` (87/345, 62/296, 345/418,
+296/467, 87/676, 62/701 against the true 88/349, 63/298, 349/414, 298/465, 88/675,
+63/700). They were caught by a machine diff of every number in this file against the run
+artefacts and corrected before any commit. The D_pooled, D_verse and p-values were
+correct throughout. **The lesson is that the numbers I did not machine-check were exactly
+the ones that were wrong.**
+
+**5. Not an error, but the correct reading of this file's value.** The register result
+here is a replication. The novel content is §3.1's channel ranking, §3.3's 43 % figure,
+and the §7 non-inversion — three narrow methodological facts, not a finding about the
+Qurʾān.
+
+---
+
+## 11. FILES
 
 - Pre-registration: `prereg-h-new-3010-conditional-register.md`
   (SHA-256 `2b1718af47814c1eebc38178977074eba2631e45a7ff43e0ff0e98ad8c11fe93`, embedded
