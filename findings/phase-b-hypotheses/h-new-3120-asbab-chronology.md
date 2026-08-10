@@ -25,20 +25,31 @@ bears_on: findings/phase-b-hypotheses/h-new-3070-deictic-gradient.md
 
 ## 1. Verdict in one paragraph
 
-**F-12's coverage framing is not runnable, and the reason is a fact about the file tree.** The only
-asbāb source on disk stops at surah 77; the 37 absent surahs are 35/37 Early Meccan; and the
-resulting "coverage" variable is the indicator `surah ≤ 77`. Run naively it returns **ρ = +0.7350
-against Nöldeke at p ≈ 1.3×10⁻²⁰** — a spectacular measurement of where a scraper stopped.
-**The artefact-free substitute — the text's own retrospective particle *ʾiḏ* against chronology —
-returns NULL on the locked rule**: H1 +0.0363 at p_worst 0.2541, H2 ρ = +0.4718 at p_worst 0.7023,
-both correct-signed, both failing α = 0.025 at the mean-verse-length control. **And the most
-useful thing here is why.** The control that kills it is **ρ = +0.9058 collinear with the Nöldeke
-phase ordinal itself** — the p-value rises *monotonically* with how closely the control duplicates
-the treatment (0.000→0.0002, 0.357→0.0004, 0.677→0.0022, 0.906→0.2541). **At the surah level in
-this corpus, "mean verse length" and "chronological phase" are very nearly the same variable, so
-the project's standing "worst length channel governs" rule will return NULL for any chronological
-hypothesis whether or not it is true.** That claim is measured, it is new, and §6 states what it
-does and does not license.
+**Asbāb coverage is a LENGTH instrument, not a chronology instrument — and that is true even after
+the artefact is removed.** Mean verse length beats chronology in both windows: **+0.8206 against
++0.7350** with the truncation present, **+0.6394 against +0.5774** inside the clean window 1–77.
+F-12 proposed to measure chronology; what its variable actually tracks is how long the verses are.
+Separately and additionally, the variable is unusable at all, because the only asbāb source on disk
+**stops at surah 77** (the 37 absent surahs being 35/37 Early Meccan), so coverage *is* the
+indicator `surah ≤ 77` and returns **ρ = +0.7350 at p = 1.29×10⁻²⁰** — a spectacular measurement of
+where a scraper stopped. **The artefact-free substitute — the text's own retrospective particle
+*ʾiḏ* against chronology — returns NULL on the locked rule**: H1 +0.0363 at p_worst 0.2541,
+H2 ρ = +0.4718 at p_worst 0.7023, both correct-signed, both failing α = 0.025 at the
+mean-verse-length control. **And the most useful thing here is why.** That control is
+**ρ = +0.9058 collinear with the Nöldeke phase ordinal itself**, and the p-value rises
+*monotonically* with how closely the control duplicates the treatment (0.000→0.0002, 0.357→0.0004,
+0.677→0.0022, 0.906→0.2541). **At surah level in this corpus, "mean verse length" and
+"chronological phase" are very nearly the same variable, so the standing "worst length channel
+governs" rule will return NULL for any chronological hypothesis whether or not it is true.**
+Measured, new, and §6 states exactly what it does and does not license.
+
+> **Relation to what is already committed.** The truncation, the blend, the tuple non-independence
+> and the truncation-confound collinearity are recorded in
+> [[AUDIT-TWO-BLOCKED-INSTRUMENTS-2026-08-10]] Part II (commit 329) and the
+> `HANDOFF/CONTINUE-PROMPT.md:225` annotation. **They are summarised here, not re-derived.** What is
+> new in this file and in neither of those: **the length-instrument channel table (§3.3), the
+> generalised zero-entry method (§3.1.1), the whole of Arm A (§4–5), and the control-collinearity
+> result (§6).**
 
 ---
 
@@ -83,12 +94,49 @@ expressed at verse level throughout; a contiguous gapless surah-level cut on top
 ingestion boundary, not an editorial judgement.**
 
 **Comparator control:** `en-al-jalalayn`, `ar-tafsir-ibn-kathir`, `en-tafsir-ibn-abbas` each carry
-**114** surah files from the same spa5k tree. Only the asbāb edition carries 77.
+**114 surah-level `.json` files**; the asbāb edition carries **77**. *(Counting note, because the
+same fact appears in two units across the record: the committed audit and the CONTINUE-PROMPT
+annotation state "**228 files each; this one has 152**", counting all top-level entries — 114 JSON
++ 114 per-verse directories, against 77 + 75. Both counts are correct and describe the same tree.
+Stated explicitly so the two numbers are not read as a discrepancy.)*
 
 **Absence claim with its search stated, per [[ABSENCE-CLAIMS]]:** `find` repo-wide (excluding
 `.git`, `.claude/worktrees`) for `*asbab* *wahidi* *nuzul* *lubab* *wahidy* *waahid*` returns 5
 hits, all accounted for; `editions.json` (27 editions) holds exactly one asbāb edition, id 86,
 source altafsir.com. **No al-Wāḥidī coverage of surahs 78–114 exists on disk.**
+
+### 3.1.1 THE TRANSFERABLE METHOD — when silence has a representation, check which silence you have
+
+The generalisable part of §3.1 is not a fact about al-Wāḥidī. It is a discharge procedure for
+absence claims, and it is stronger than the argument from silence that [[ABSENCE-CLAIMS]] warns
+against.
+
+> **A dataset that can represent "this unit has no value" gives you two distinguishable silences.
+> Find out whether the format has such a representation, then check which one your gap is.**
+
+| silence | how it appears here | what it means |
+|:--|:--|:--|
+| **encoded absence** | Q 72, Q 77 — file present, zero entries | the source says "nothing here" |
+| **structural absence** | Q 78–114 — no file at all | the pipeline never reached it |
+
+**The presence of the first kind is what makes the second kind evidential.** Had every surah with
+no sabab simply been missing, the two would be indistinguishable and the truncation would be a
+conjecture. Because Q 72 and Q 77 exist *and are empty*, the format demonstrably can say "no
+occasion here" — so 37 consecutive files that do not exist are not the source's silence.
+
+**Two supporting checks make it airtight, and both generalise:**
+
+1. **A sibling control in the same tree** — three other editions carry all 114, so the gap is
+   edition-specific, not an artefact of the format or the scrape as a whole.
+2. **Selectivity at a finer grain** — coverage inside the block is scattered at 19% (1,089/5,672),
+   from 0.45 to 0.07. **A gapless cut at the coarse grain sitting on top of scattered selectivity
+   at the fine grain is an ingestion boundary**, because a genuine editorial pattern would be
+   scattered at both.
+
+**The screen, for reuse:** *does the format encode a null? · is there an instance of the encoded
+null? · is my gap that, or is it missing structure? · does a sibling dataset in the same tree have
+what mine lacks? · is selectivity at the finer grain scattered while the coarse cut is contiguous?*
+Any dataset with per-unit records supports this test, and it costs one `ls` and one count.
 
 ### 3.2 The source is a blend — independently re-verified, not inherited
 
@@ -114,10 +162,29 @@ Per-surah coverage rate, Spearman. Three length variables, none locked.
 | **mushaf index** | **−0.7665** | −0.3237 |
 | tie fraction | **0.3772** | 0.0779 |
 
-**Mean verse length beats chronology in both windows.** The dominant channel is mean verse length;
-**verse count is nothing at all in the clean window (−0.0678)**. The naive instrument's tie fraction
-of 0.3772 is 37 surahs tied at exactly zero — the 37 never ingested. **ρ(coverage, mushaf index)
-= −0.7665 is the scrape boundary showing through.**
+**THIS IS THE HEADLINE, not a footnote to the truncation.** Mean verse length beats chronology in
+**both** windows — +0.8206 vs +0.7350 naive, +0.6394 vs +0.5774 clean. **Remove the artefact
+entirely and the thing F-12 proposed to measure is still better explained by how long the verses
+are than by when they were revealed.** The hypothesis is not merely blocked; its construct is
+mis-specified.
+
+**And verse count — the channel almost everyone means by "surah length" — is the weakest in both
+windows and is nothing at all in the clean window (−0.0678).** That ordering is now confirmed four
+times independently in this project:
+
+| # | finding | evidence for the ordering |
+|--:|:--|:--|
+| 1 | `h-new-3010-conditional-register` | ~70× p-swing between length channels |
+| 2 | `h-new-3070-deictic-gradient` §3 | 29× on H1, 22× on H2; mean verse length the only channel to move either off the permutation floor |
+| 3 | F-3 correction (frontier map) | mean verse length ρ = +0.5467 against verse count ρ = +0.0719 |
+| 4 | **this finding** | **1,270× on H1, 7,024× on H2** (§4.1); and on the coverage channel the two disagree in *sign* |
+
+> **Four independent confirmations is where a pattern stops being an observation and becomes a
+> property of the corpus.** §6 supplies the mechanism that was missing from the first three:
+> mean verse length dominates because it is **ρ = +0.906 collinear with chronological phase**.
+
+The naive instrument's tie fraction of 0.3772 is 37 surahs tied at exactly zero — the 37 never
+ingested. **ρ(coverage, mushaf index) = −0.7665 is the scrape boundary showing through.**
 
 > These p-values are **parametric** Spearman p's on an outcome that is 37.7% tied. Per
 > [[TIED-OUTCOME-DEFECT]] they are liberal by 13–57× and are quoted as descriptive only. Nothing
@@ -150,6 +217,43 @@ not by string**, which is why this count is trustworthy where a string match is 
 Only 50 of 114 surahs carry any *ʾiḏ*. The design already uses a permutation null throughout, which
 is [[TIED-OUTCOME-DEFECT]] §3's prescribed remedy; **no parametric p is verdict-bearing anywhere in
 Arm A.**
+
+### 4.0 Which side of the MW-2 domain split this outcome sits on — declared, and then complicated
+
+Ledger §274 records the **MW-2 domain split**: Nöldeke chronology is a **hidden-axis pseudo-confound**
+on structural/geometric axes (R-002 Fiedler, R-004 geometric-inversion, R-010 canonical-order
+recovery) but a **genuine axis** on lexical-content axes, the anchor case being the kitāb/qurʾān
+shift at z = −3.75. **Which side an outcome sits on decides whether a chronology correlation is
+informative or circular**, so it is declared before the result.
+
+**Declaration: *ʾiḏ* density is a LEXICAL-CONTENT axis — the genuine side.** Justification, three
+points, none of which is "it is made of words":
+
+1. **The unit is a lexeme, not a geometry.** The measurement is the count of one QAC lemma. It
+   involves no distance matrix, no eigenvector, no ordering of surahs, and no adjacency — the three
+   structural constructs on which MW-2 found chronology to be a pseudo-confound.
+2. **It is the same *kind* of object as the anchor case.** kitāb/qurʾān is a two-lexeme frequency
+   contrast across phase; *ʾiḏ* is a one-lexeme frequency measure across phase. If the split holds
+   anywhere it holds here.
+3. **It is not derived from any ordering.** A pseudo-confound arises on axes that are themselves
+   computed from surah order or from a similarity structure that encodes it. *ʾiḏ* counts are
+   invariant to how the surahs are arranged.
+
+**So a chronology correlation here would have been informative, and it is on that basis that the
+NULL is reported as a real result rather than a foregone one.**
+
+> **But this finding complicates the MW-2 split rather than simply sitting inside it, and that
+> should be recorded.** §6 measures **ρ(mean verse length, Nöldeke phase ordinal) = +0.9058**. Mean
+> verse length is a *structural* property of a surah. If phase and a structural quantity are that
+> nearly the same variable at surah level, then the clean partition of axes into
+> "structural = pseudo-confound" and "lexical-content = genuine" is **not clean at the surah unit** —
+> a lexical-content correlation with phase is also, to within ρ = 0.906, a correlation with a
+> structural quantity. **This does not refute MW-2** (its anchor case, kitāb/qurʾān, was established
+> at z = −3.75 and nothing here touches it, and MW-2's own claim is about which axes carry a
+> *spurious* chronology signal). **It does mean the split cannot be applied at surah granularity
+> without reporting the collinearity**, and I have not tested whether the kitāb/qurʾān result
+> survives a mean-verse-length control. **That is a live, cheap, and currently unasked question**,
+> and it is flagged rather than answered here.
 
 ### 4.1 The channel table — and both chronology instruments
 
@@ -325,13 +429,27 @@ MDE < observed < critical is impossible; had the three numbers been merely impla
 arithmetically inconsistent I would probably have published them. The corrected audit is in a
 separate run directory; the wrong one is retained.
 
-**7.3 ARM B WAS DESTROYED BY MY OWN SEQUENCING, AND IT WAS AVOIDABLE.** The brief required a
-circularity assessment before testing. Carrying it out meant computing ρ(coverage, Nöldeke phase)
-in the clean window — **which is exactly the statistic a bounded Arm B would have tested.** I saw
-the answer (+0.5774) before I could pre-register it. Arm B is reported as **descriptive only, not
-pre-registered**, is excluded from the Bonferroni family and carries no verdict. **The mandated
-confound check and the bounded test were the same computation and I did not notice until after
-running it.** Logged in prereg §6.2 before the run, not after.
+**7.3 ARM B WAS DESTROYED BY MY OWN SEQUENCING, AND I THEN DEFENDED IT ON THE WRONG GROUND.**
+The brief required a circularity assessment before testing. Carrying it out meant computing
+ρ(coverage, Nöldeke phase) in the clean window — **which is exactly the statistic a bounded Arm B
+would have tested.** I saw the answer (+0.5774) before I could pre-register it. Arm B is therefore
+**descriptive only, not pre-registered**, excluded from the Bonferroni family, carrying no verdict.
+Logged in prereg §6.2 before the run, not after.
+
+**Arm B was then declined twice, and the second refusal corrected my reasoning.** I had argued to
+keep it by promising its MDE — **which answers a power objection.** The objection was
+**interpretability**: 31.5% of the entries in the coverage variable have unresolved provenance
+between al-Wāḥidī and Maybudī's Persian Sufi commentary. **A perfectly-powered estimate on a
+variable where a third of the observations may be a different author's mysticism is not a weak
+result, it is an uninterpretable one** — power says whether an effect is detectable, not what the
+variable means. My own §3.4 number made it worse rather than better: the Medinan enrichment
+**persists at 1.74× inside the clean window**, so Arm B would have estimated a confounded contrast
+on a variable of unknown authorship. **Arm B was not run.** It becomes worth running if a provenance
+classifier ever drops the ambiguous fraction below ~10%.
+
+*(Distinguishing what was run from what was not: §3.3's coverage channel table is the **instrument
+audit** — descriptive correlations establishing what the variable is. It is not Arm B, which would
+have been a pre-registered chronology test on that variable, and which does not exist.)*
 
 **7.4 The prior number I locked my direction from is refuted.** `asbab-nuzul.md` §2.1 reports
 **156 *ʾiḏ* tokens** (106 Meccan + 50 Medinan) from a string match requiring word-initial

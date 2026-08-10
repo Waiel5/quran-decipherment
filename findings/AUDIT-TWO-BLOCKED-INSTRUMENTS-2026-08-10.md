@@ -129,3 +129,42 @@ in a dispatch document is a claim, and it has now been wrong twice in one day.
 
 Related: [[ABSENCE-CLAIMS]] · [[PROXY-CLAIMS]] · [[cross-finding-029-the-deciding-parameter]] ·
 [[AUDIT-WAQF-MARK-INVENTORY-DIVERGENCE]] · [[AUDIT-REGISTER-PROXY-ORTHOGRAPHY-DEPENDENCE]]
+
+---
+
+## 9. An open flag, and a check I attempted and failed to run properly
+
+H-NEW-3120 §4.0 raises a live problem with the **MW-2 domain split** — the standing rule that Nöldeke
+chronology is a *pseudo*-confound on structural axes but a *genuine* axis on lexical-content ones.
+
+The complication: **ρ(mean verse length, Nöldeke phase) ≈ +0.79 to +0.91**, and mean verse length is
+a **structural** property. So at surah granularity a lexical correlation with phase is also, to
+within that ρ, a correlation with a structural quantity. **The partition does not separate cleanly.**
+This does not refute MW-2 and touches nothing about its anchor directly.
+
+The obvious cheap check is whether MW-2's anchor case — the kitāb/qurʾān axis, published at
+**z = −3.75** — survives a mean-verse-length control. **I attempted it and the attempt failed, for a
+reason worth recording.**
+
+I reconstructed the axis as `ROOT:{ktb, qrA, Ayy, nzl}` tokens per 1,000 tokens and tested a
+Medinan-minus-Meccan contrast over 110 phase-labelled surahs. Result: observed −0.239 per 1,000,
+**unstratified p = 0.4822**, stratified on mean-verse-length quintiles p = 0.0794.
+
+**That does not reproduce the published anchor, so it is not a test of it.** Two reasons my
+reconstruction is the wrong instrument, both findable in one grep:
+
+1. `cross-finding-012` defines the axis as *"kitāb/qurʾān/āyāt/nazala root tokens **per 100
+   verses**"* — a per-verse denominator, not per-token. Different unit, and [[UNIT-DRIFT-DEFECT]]
+   exists because that difference is not cosmetic.
+2. The same file records the axis as **ρ = +0.574, INVERTED-U, peaking Late Meccan** — so its
+   published shape is *not* a monotone Meccan/Medinan contrast. **I tested a two-group difference on
+   an axis whose own documentation says it peaks in the middle.** A null was guaranteed by the design
+   before any data was involved.
+
+**This is the hand-built-proxy defect** ([[PROXY-CLAIMS]]) committed by the person who spent the day
+warning lanes about it: I substituted my own reconstruction for a published instrument and tested the
+substitute. The p-values above are arithmetically correct and answer a question nobody asked.
+
+**Status: the flag stands OPEN.** Answering it requires H-NEW-125's actual axis-9 definition and its
+computed values, not a reconstruction — and it must test the inverted-U shape the axis actually has.
+It remains cheap, and it remains worth doing.
