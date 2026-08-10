@@ -87,3 +87,54 @@ map's optimistic per-item priors, which rated three of these six as likely CONFI
 Related: [[cross-finding-029-the-deciding-parameter]] · [[AUDIT-REGISTER-PHASE-COLLINEARITY]]
 (the register axis is degenerate against phase for 43% of the corpus, which bounds these tests
 further) · [[ABSENCE-CLAIMS]]
+
+---
+
+## 7. Why 0-of-6 — a mechanism, built from two facts both already disclosed
+
+This section discovers nothing. It joins two things the project had already written down
+separately, and the join explains the base rate in §2.
+
+**Fact one, from `h-new-2500.py` line 60.** The legal register is *defined* by counting two
+substrings:
+
+```python
+LEGAL_MARKERS = ["يا أيها الذين آمنوا", "كتب عليكم"]
+```
+
+**Fact two, from H-NEW-2530 honest-limits §2**, disclosed at publication:
+
+> *"f_iltifāt-type partly co-determines the legal label by construction-adjacency: the legal
+> register's defining marker drives both its genre label (via 2500's proxy) and its 2↔3 iltifāt
+> dominance. These are not circular (the genre proxy uses yā ayyuhā alladhīna āmanū substrings, NOT
+> iltifāt counts), but the two are correlated by the underlying register, which is the point — the
+> law claims register IS coded in the grammar."*
+
+That defence is honestly stated and it is not wrong. But put beside §2's record it predicts exactly
+what happened:
+
+> **`يا أيها الذين آمنوا` is itself person-grammar** — a second-person plural community vocative.
+> So the legal register is *defined* by a grammatical marker, and the feature that best isolates it
+> (`f_iltifāt-type`, F = 19.79, the second-strongest of six) measures the same construct the
+> definition uses. Where a candidate feature shares that construct, separation is close to
+> guaranteed. **Where it does not — conditionals, modality, loanword donors — there is nothing to
+> recover, and six pre-registered attempts found nothing.**
+
+So the law is not failing to replicate. **It is succeeding exactly on the span where its
+grouping variable and its features share a construct, and failing everywhere else** — which is what
+0-of-6 on unrelated word classes looks like from the inside.
+
+This does not retract H-NEW-2530: `f_qālū` (F = 33.54) is the strongest separator and has no such
+overlap, so the joint result is not an artefact. It sharpens §5's amendment. The scope is not merely
+*"the six-detector vector"* — it is:
+
+> **narrative-onset densities, which are construct-independent of the register definition, plus a
+> person-grammar axis that is construct-adjacent to it and should be reported as such.**
+
+**Note on how this section came to exist.** It was nearly published as a discovery. A grep found
+H-NEW-2800 had already recorded that *kutiba ʿalaykum* is "the same object as one of the frames",
+and a second grep found H-NEW-2530's limits §2 above. Both disclosures were already on disk, made by
+the findings themselves at publication. **Three separate times on 2026-08-09 the prior-work check
+converted an intended discovery into a citation.** That is the check working, and it is the reason
+nothing in this section is claimed as new.
+
