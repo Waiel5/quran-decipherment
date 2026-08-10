@@ -185,6 +185,15 @@ enabling data is stripped or absent.
 > | **F-5** loanword donors | open, prior CONFIRMED-weak | H-NEW-2700 | 2026-08-07 |
 > | **F-8** sajdah loci | open, prior NULL | H-NEW-2950 | 2026-08-08 |
 > | **F-10** modality | open, *"genuinely orthogonal to what has been done"* | H-NEW-2640 | 2026-08-07 |
+> | **F-4** deixis | open, prior *"CONFIRMED but at risk of CBM"* | H-NEW-2960 — **partially**; its own front-matter names F-4 | 2026-08-08 |
+>
+> **F-4 is the fifth case and the FIRST caught prospectively** — the Step-0 grep rule fired before any
+> design work, so no lane was spent. Only the *eschatological* half of F-4 is answered; the
+> **chronological deictic gradient across the Nöldeke phases** is genuinely untouched (H-NEW-2960 has
+> zero occurrences of nöldeke/chronolog/revelation-order in either its finding or its prereg, and never
+> opened `data/revelation-order.csv`). Note also that the map's CBM prior for F-4 is **refuted, not
+> confirmed**: dropping the top-10 formulaic phrase types RAISED the odds ratio from 2.74 to 3.00, and
+> dropping *ka-dhālika* raised it to 4.19.
 >
 > Three of the five lanes dispatched on 2026-08-09 were re-derivations. They were not wasted — each
 > produced a genuine replication on an independent estimator, and F-10's channel sweep became the

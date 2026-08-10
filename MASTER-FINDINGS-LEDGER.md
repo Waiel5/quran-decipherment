@@ -7434,3 +7434,38 @@ nawʿ numbers rotted both times. Record-integrity erratum filed at [[ERRATUM-COM
 
 **H-NEW-3040** (modality axis) — prereg and runs committed at `eb6a40d0e`; verdict pending.
 
+
+---
+
+## Ledger-coverage repair — 2026-08-09
+
+**These findings existed on disk with no ledger entry.** The binding prior-work rule tells every lane
+to grep `MASTER-FINDINGS-LEDGER.md`; a finding absent from it is invisible to that check and is a live
+re-derivation trap. Recovered mechanically from each file's own front-matter; status strings are copied
+verbatim and NOT re-judged.
+
+| ID | file | status as published |
+|:--|:--|:--|
+| **H-NEW-46-1** | [[h-new-46-1-chronology-disentangle]] | STRONG-PASS (6/7 cells significant under Bonferroni-7 at α_bon = 0.00714 |
+| **H-NEW-59-99** | [[h-new-59-99-names-distribution]] | COMPLETE 2026-04-15 — 4 of 6 cells PASS, 2 cells produce LIVE NULLS, 1 n |
+| **H-NEW-65** | [[h-new-65-fatiha-as-dna]] | REFUTED-WEAK (1 of 6 axes Bonferroni-significant; threshold ≥ 2) |
+| **H-NEW-85** | [[h-new-85-oath-openers]] | PASS — 4 of 5 cells fired (Cells 1, 2, 2b, 3 PASS; Cells 4, 5 NULL) |
+| **H-NEW-87-786** | [[h-new-87-786-substrings]] | — |
+| **H-NEW-139-2** | [[h-new-139-2-shuffle-null]] | — |
+| **H-NEW-140-1** | [[h-new-140-1-all-pair-decircularization]] | MIXED (pre-registered boundary; match rate exactly 50.0%) |
+| **H-NEW-159** | [[h-new-159-heap-beta-per-chapter]] | — |
+| **H-NEW-164** | [[h-new-164-fourier-verse-count]] | reject-null (descriptive; structural trend, not hidden period) |
+| **H-NEW-166** | [[h-new-166-multi-scale-hurst]] | — |
+| **H-NEW-174-175** | [[h-new-174-175-176-triple-inline]] | 174 NULL / 175 BENFORD-PASS / 176 HIGH-DIM-CONFIRMED + PC1=MECCAN-MEDINA |
+| **H-NEW-184** | [[h-new-184-lsa-semantic-axes]] | 3/3 PASS (SV-structure, SV2=M/Md, LSA-M1 mushaf-adjacency) |
+| **H-NEW-195** | [[h-new-195-entropy-per-surah]] | PARTIAL-PASS (primary PASS; secondary muq FAIL; MW-5 PASS) |
+| **H-NEW-196** | [[h-new-196-oath-cluster]] | PASS — 3 of 3 cells fired (Cells V, H1, H2 PASS) |
+| **H-NEW-197** | [[h-new-197-prophet-cycle]] | — |
+| **H-NEW-199** | [[h-new-199-positional-ratios]] | — |
+| **H-NEW-2740** | [[h-new-2740-rasm-divergence]] | - |
+| **H-NEW-2770** | [[h-new-2770-chronology-content-length-nuisance]] | - |
+| **H-NEW-2800** | [[h-new-2800-legal-formulae]] | COMPLETE |
+| **H-NEW-2950** | [[h-new-2950-sajdah-loci]] | CENSUS ESTABLISHED (documentary) + NULL (inferential, underpowered) |
+
+*20 entries recovered.*
+
