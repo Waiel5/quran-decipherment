@@ -168,3 +168,71 @@ substitute. The p-values above are arithmetically correct and answer a question 
 **Status: the flag stands OPEN.** Answering it requires H-NEW-125's actual axis-9 definition and its
 computed values, not a reconstruction — and it must test the inverted-U shape the axis actually has.
 It remains cheap, and it remains worth doing.
+
+---
+
+## 10. The MW-2 check, run properly — and the anchor citation conflates two instruments
+
+§9 recorded a failed attempt. This is the corrected one, and it produced two results.
+
+### 10.1 The citation is wrong before any statistics
+
+H-NEW-3120 §4.0 describes MW-2's anchor as *"the kitāb/qurʾān axis at z = −3.75."* **Those are two
+different instruments and neither is the pair.**
+
+| | what it is | shape | source |
+|:--|:--|:--|:--|
+| `book_reference_density` (H-NEW-125 axis 9) | roots {ktb, qrA, Ayy, nzl} **per 100 verses** | ρ = +0.574, **inverted-U, peak Late Meccan** | `h-new-125-chronology-content.md:43` |
+| **z = −3.75** | ***kitāb* alone**, per verse, Meccan vs Medinan | monotone, Medinan ≫ Meccan | `compression-and-self-reference.md:203` |
+
+The z = −3.75 is a **single-lemma** result from a ten-lemma decomposition, not an axis. §9's failed
+attempt used axis 9's four roots with the z-value's two-group contrast — a hybrid matching neither.
+**That is why it returned nothing: it tested an instrument that does not exist.**
+
+### 10.2 The check, on the right instrument
+
+*kitāb* surface tokens per verse, 110 phase-labelled surahs, permutation null, seed 20260509,
+10,000 permutations:
+
+| | Medinan | Meccan | difference |
+|:--|--:|--:|--:|
+| this reproduction (no disambiguation) | 0.0568 | 0.0223 | **+0.0345** |
+| source, with hand disambiguation | 0.0770 | 0.0243 | +0.0527 |
+
+The Meccan figures agree closely (0.0223 vs 0.0243); mine is lower on the Medinan side, consistent
+with the source excluding *kitāb* when it denotes Torah or Gospel and my reproduction excluding
+nothing. **This is a looser instrument and is declared as such** — it is not the source's.
+
+| control | p |
+|:--|--:|
+| unstratified | **0.0051** |
+| stratified on mean verse length | **0.3018** |
+
+**The unstratified result reproduces the published direction and significance. It does not survive a
+mean-verse-length control.**
+
+### 10.3 Why that does NOT refute the anchor — and this is the point
+
+[[h-new-3120-asbab-chronology]] established, on independent data, that
+**ρ(mean verse length, Nöldeke phase) = +0.79 to +0.91.** So *"the anchor fails under a
+mean-verse-length control"* is **precisely the claim that cannot be distinguished from "the control
+is a near-duplicate of the treatment."**
+
+This is the second independent instance of that inseparability, and it lands on a *lexical-content*
+axis — the side of the MW-2 split where chronology is supposed to be a **genuine** axis rather than a
+pseudo-confound. **So the split does not rescue this anchor.** At surah granularity, a lexical
+phase-effect and a structural length-effect are the same measurement.
+
+**Status: the flag is now RUN and its answer is that the question is not answerable at surah
+granularity.** A verse-level or pericope-level design, where mean verse length is not a
+near-duplicate of phase, is the only route. Nothing here retracts the anchor, and nothing here
+supports it.
+
+### 10.4 What is retractable, independently of any of the above
+
+**The citation "the kitāb/qurʾān axis at z = −3.75" should not be used again.** It names an axis and
+attaches a statistic from a different instrument with a different unit, a different lemma set and a
+different shape. That is a *bookkeeping* error, not a statistical one, and it is fixable by anyone
+in one grep — which is exactly the category [[AUDIT-TWO-BLOCKED-INSTRUMENTS-2026-08-10]] §8 says
+tends to survive longest.
+
