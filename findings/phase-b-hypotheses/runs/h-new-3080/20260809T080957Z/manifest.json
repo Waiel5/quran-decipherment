@@ -1,0 +1,38 @@
+{
+ "finding_id": "H-NEW-3080",
+ "title": "Quantifier scope (kull vs bad) and register",
+ "run_utc": "20260809T080957Z",
+ "prereg": {
+  "path": "findings/phase-b-hypotheses/prereg-h-new-3080-quantifier-scope.md",
+  "sha256": "2e2cde58e7fc2e66f34d27d007c3ed8be19d6eeb30550c6a88ec24f7cc4443e4"
+ },
+ "script": {
+  "path": "findings/phase-b-hypotheses/scripts/h-new-3080.py",
+  "sha256": "be392cd3a1424984bc6f74432674efbcf2bc75082ddebcf5ae807ea3d0a0561d"
+ },
+ "frozen_inputs": [
+  {
+   "path": "data/morphology/quranic-corpus-morphology-0.4.txt",
+   "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46"
+  },
+  {
+   "path": "findings/classical-sources/neuwirth-sinai-genre-labels.tsv",
+   "sha256": "16ec35b2793922bd007767ccddfb6d7aeb5ca53e48394792984f88b49164572a"
+  },
+  {
+   "path": "data/hafs-verse-counts.tsv",
+   "sha256": "e1818fb04ac26b863ce1ade50193390d481345a3971919aeb120daf8946212ba"
+  }
+ ],
+ "classical_anchor_read": {
+  "path": "data/literature/classical-tafsir/raw/suyuti-itqan.openiti.raw.txt",
+  "lines": "14254-14287",
+  "nawv_from_locator_header": 45
+ },
+ "seed": 20260509,
+ "n_perm": 10000,
+ "k_family": 6,
+ "alpha_bonferroni": 0.008333333333333333,
+ "python": "3.13.12",
+ "write_once": true
+}

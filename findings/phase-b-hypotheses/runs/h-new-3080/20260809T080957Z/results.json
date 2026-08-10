@@ -1,0 +1,2085 @@
+{
+ "finding_id": "H-NEW-3080",
+ "frontier_id": "F-14",
+ "run_utc": "20260809T080957Z",
+ "prereg_sha256": "2e2cde58e7fc2e66f34d27d007c3ed8be19d6eeb30550c6a88ec24f7cc4443e4",
+ "seed": 20260509,
+ "n_perm": 10000,
+ "k_family": 6,
+ "alpha_bonferroni": 0.008333333333333333,
+ "locked_direction": "LOR < 0  (universal/partitive ratio HIGHER in UNIV than in LEGAL)",
+ "census": {
+  "kull_tokens": 359,
+  "bad_tokens": 157,
+  "min_definite_proxy_tokens": 677,
+  "kull_retained_by_level": {
+   "EX-0": 359,
+   "EX-1": 238,
+   "EX-2": 215,
+   "EX-3": 200
+  }
+ },
+ "arm2_blocks": {
+  "openers_universal": 23,
+  "openers_community": 89,
+  "openers_non_delimiting": 38,
+  "n_blocks": 112,
+  "verses_universal": 489,
+  "verses_community": 939
+ },
+ "length_channels": {
+  "MAP-1": {
+   "n_labelled": 59,
+   "n_LEGAL": 17,
+   "n_UNIV": 42,
+   "spearman_channel_vs_LEGAL_indicator": {
+    "log_word_count": 0.6131439454724367,
+    "verse_count": 0.22972477467637162,
+    "mean_verse_length": 0.751617769373482
+   },
+   "DOMINANT_channel": "mean_verse_length",
+   "median_word_count_LEGAL": 539,
+   "median_word_count_UNIV": 137
+  },
+  "MAP-2": {
+   "n_labelled": 53,
+   "n_LEGAL": 17,
+   "n_UNIV": 36,
+   "spearman_channel_vs_LEGAL_indicator": {
+    "log_word_count": 0.5522953681831844,
+    "verse_count": 0.13479781651447825,
+    "mean_verse_length": 0.7795556632250689
+   },
+   "DOMINANT_channel": "mean_verse_length",
+   "median_word_count_LEGAL": 539,
+   "median_word_count_UNIV": 179
+  },
+  "ARM2": {
+   "n_blocks": 112,
+   "spearman_channel_vs_COMMUNITY_indicator": {
+    "log_word_count": -0.08887638875194774,
+    "verse_count": -0.16564498858520066,
+    "mean_verse_length": 0.24099946683099974
+   },
+   "DOMINANT_channel": "mean_verse_length"
+  }
+ },
+ "cells": {
+  "cell-1": {
+   "LOR_obs": -2.6959214896555954,
+   "table": {
+    "U_LEGAL": 39,
+    "P_LEGAL": 74,
+    "U_UNIV": 27,
+    "P_UNIV": 3
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0007999200079992001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9996,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0006999300069993001,
+     "tie_fraction": 0.0006,
+     "distinct_label_vectors": 5906,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0007999200079992001,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0006,
+   "fisher_exact_p": 2.9114744012033887e-08,
+   "p_cell": 0.0007999200079992001,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "arm": "ARM1",
+   "map": "MAP-1",
+   "exclusion": "EX-2",
+   "tuples": [
+    "RT-A1",
+    "RT-B1"
+   ],
+   "verdict": "PASS"
+  },
+  "cell-2": {
+   "LOR_obs": -2.2894909588459886,
+   "table": {
+    "U_LEGAL": 89,
+    "P_LEGAL": 74,
+    "U_UNIV": 41,
+    "P_UNIV": 3
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0014998500149985001,
+     "tie_fraction": 0.0003,
+     "distinct_label_vectors": 9997,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.00019998000199980003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 5960,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0014998500149985001,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0003,
+   "fisher_exact_p": 4.289637439522046e-07,
+   "p_cell": 0.0014998500149985001,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "arm": "ARM1",
+   "map": "MAP-1",
+   "exclusion": "EX-0",
+   "tuples": [
+    "RT-A1",
+    "RT-B1"
+   ],
+   "verdict": "PASS"
+  },
+  "cell-3": {
+   "LOR_obs": -1.2270021082586955,
+   "table": {
+    "U_LEGAL": 39,
+    "P_LEGAL": 74,
+    "U_UNIV": 42,
+    "P_UNIV": 23
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.00019998000199980003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0025997400259974,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.18598140185981402,
+     "tie_fraction": 0.0035,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.18598140185981402,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0035,
+   "fisher_exact_p": 9.180282080898346e-05,
+   "p_cell": 0.18598140185981402,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "arm": "ARM1",
+   "map": "MAP-2",
+   "exclusion": "EX-2",
+   "tuples": [
+    "RT-A1",
+    "RT-B1"
+   ],
+   "verdict": "NULL"
+  },
+  "cell-4": {
+   "LOR_obs": -0.9008868315253373,
+   "table": {
+    "U_LEGAL": 89,
+    "P_LEGAL": 74,
+    "U_UNIV": 69,
+    "P_UNIV": 23
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0004999500049995,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0136986301369863,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0012998700129987,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.2753724627537246,
+     "tie_fraction": 0.0121,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.2753724627537246,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0121,
+   "fisher_exact_p": 0.0008757284002333149,
+   "p_cell": 0.2753724627537246,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "arm": "ARM1",
+   "map": "MAP-2",
+   "exclusion": "EX-0",
+   "tuples": [
+    "RT-A1",
+    "RT-B1"
+   ],
+   "verdict": "NULL"
+  },
+  "cell-5": {
+   "LOR_obs": -1.1946397692453206,
+   "table": {
+    "U_LEGAL": 30,
+    "P_LEGAL": 55,
+    "U_UNIV": 24,
+    "P_UNIV": 13
+   },
+   "n_units": 112,
+   "n_LEGAL": 89,
+   "channels": {
+    "C0": {
+     "p": 0.044795520447955206,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0217978202179782,
+     "tie_fraction": 0.0004,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.027897210278972105,
+     "tie_fraction": 0.0004,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.06059394060593941,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.06059394060593941,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0004,
+   "fisher_exact_p": 0.0023483105543166526,
+   "p_cell": 0.06059394060593941,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "arm": "ARM2",
+   "map": "BLOCKS",
+   "exclusion": "EX-2",
+   "tuples": [
+    "RT-A1",
+    "RT-B1"
+   ],
+   "verdict": "NULL"
+  },
+  "cell-6": {
+   "LOR_obs": -0.7860240841275666,
+   "table": {
+    "U_LEGAL": 66,
+    "P_LEGAL": 55,
+    "U_UNIV": 35,
+    "P_UNIV": 13
+   },
+   "n_units": 112,
+   "n_LEGAL": 89,
+   "channels": {
+    "C0": {
+     "p": 0.09579042095790422,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.08409159084091591,
+     "tie_fraction": 0.0016,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.08709129087091291,
+     "tie_fraction": 0.0012,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.09499050094990501,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.09579042095790422,
+   "p_cell_channel_argmax": "C0",
+   "max_tie_fraction": 0.0016,
+   "fisher_exact_p": 0.020427373997706753,
+   "p_cell": 0.09579042095790422,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "arm": "ARM2",
+   "map": "BLOCKS",
+   "exclusion": "EX-0",
+   "tuples": [
+    "RT-A1",
+    "RT-B1"
+   ],
+   "verdict": "NULL"
+  }
+ },
+ "FINDING_VERDICT": "CONFIRMED",
+ "mde": {
+  "cell-3": {
+   "grid": [
+    {
+     "OR": 1.1,
+     "power": 1.0
+    },
+    {
+     "OR": 1.2,
+     "power": 1.0
+    },
+    {
+     "OR": 1.3,
+     "power": 1.0
+    },
+    {
+     "OR": 1.5,
+     "power": 1.0
+    },
+    {
+     "OR": 1.75,
+     "power": 1.0
+    },
+    {
+     "OR": 2.0,
+     "power": 1.0
+    },
+    {
+     "OR": 2.5,
+     "power": 1.0
+    },
+    {
+     "OR": 3.0,
+     "power": 1.0
+    },
+    {
+     "OR": 4.0,
+     "power": 1.0
+    }
+   ],
+   "MDE_at_80pct_power": 1.1,
+   "sims_per_point": 1000,
+   "inner_perms": 2000,
+   "alpha": 0.008333333333333333,
+   "null": "C0 unstratified",
+   "rng": "numpy default_rng(20260509)",
+   "reference": "compare against this corpus's strongest surviving law, rate ratio 1.27-2.58 (muqattaat book-reference, 2026-08-07 correction)",
+   "underpowered_vs_corpus_effect_scale": false
+  },
+  "cell-4": {
+   "grid": [
+    {
+     "OR": 1.1,
+     "power": 1.0
+    },
+    {
+     "OR": 1.2,
+     "power": 1.0
+    },
+    {
+     "OR": 1.3,
+     "power": 1.0
+    },
+    {
+     "OR": 1.5,
+     "power": 1.0
+    },
+    {
+     "OR": 1.75,
+     "power": 1.0
+    },
+    {
+     "OR": 2.0,
+     "power": 1.0
+    },
+    {
+     "OR": 2.5,
+     "power": 1.0
+    },
+    {
+     "OR": 3.0,
+     "power": 1.0
+    },
+    {
+     "OR": 4.0,
+     "power": 1.0
+    }
+   ],
+   "MDE_at_80pct_power": 1.1,
+   "sims_per_point": 1000,
+   "inner_perms": 2000,
+   "alpha": 0.008333333333333333,
+   "null": "C0 unstratified",
+   "rng": "numpy default_rng(20260509)",
+   "reference": "compare against this corpus's strongest surviving law, rate ratio 1.27-2.58 (muqattaat book-reference, 2026-08-07 correction)",
+   "underpowered_vs_corpus_effect_scale": false
+  },
+  "cell-5": {
+   "grid": [
+    {
+     "OR": 1.1,
+     "power": 0.0
+    },
+    {
+     "OR": 1.2,
+     "power": 0.0
+    },
+    {
+     "OR": 1.3,
+     "power": 0.005
+    },
+    {
+     "OR": 1.5,
+     "power": 0.04
+    },
+    {
+     "OR": 1.75,
+     "power": 0.186
+    },
+    {
+     "OR": 2.0,
+     "power": 0.419
+    },
+    {
+     "OR": 2.5,
+     "power": 0.785
+    },
+    {
+     "OR": 3.0,
+     "power": 0.917
+    },
+    {
+     "OR": 4.0,
+     "power": 0.983
+    }
+   ],
+   "MDE_at_80pct_power": 3.0,
+   "sims_per_point": 1000,
+   "inner_perms": 2000,
+   "alpha": 0.008333333333333333,
+   "null": "C0 unstratified",
+   "rng": "numpy default_rng(20260509)",
+   "reference": "compare against this corpus's strongest surviving law, rate ratio 1.27-2.58 (muqattaat book-reference, 2026-08-07 correction)",
+   "underpowered_vs_corpus_effect_scale": true
+  },
+  "cell-6": {
+   "grid": [
+    {
+     "OR": 1.1,
+     "power": 0.0
+    },
+    {
+     "OR": 1.2,
+     "power": 0.0
+    },
+    {
+     "OR": 1.3,
+     "power": 0.0
+    },
+    {
+     "OR": 1.5,
+     "power": 0.0
+    },
+    {
+     "OR": 1.75,
+     "power": 0.001
+    },
+    {
+     "OR": 2.0,
+     "power": 0.023
+    },
+    {
+     "OR": 2.5,
+     "power": 0.276
+    },
+    {
+     "OR": 3.0,
+     "power": 0.594
+    },
+    {
+     "OR": 4.0,
+     "power": 0.935
+    }
+   ],
+   "MDE_at_80pct_power": 4.0,
+   "sims_per_point": 1000,
+   "inner_perms": 2000,
+   "alpha": 0.008333333333333333,
+   "null": "C0 unstratified",
+   "rng": "numpy default_rng(20260509)",
+   "reference": "compare against this corpus's strongest surviving law, rate ratio 1.27-2.58 (muqattaat book-reference, 2026-08-07 correction)",
+   "underpowered_vs_corpus_effect_scale": true
+  }
+ },
+ "robustness": {
+  "ARM1|MAP-1|EX-0|RT-A1|RT-B2": {
+   "LOR_obs": -2.0127955382027003,
+   "table": {
+    "U_LEGAL": 85,
+    "P_LEGAL": 39,
+    "U_UNIV": 40,
+    "P_UNIV": 2
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0023997600239976003,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 9997,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0005999400059994001,
+     "tie_fraction": 0.0005,
+     "distinct_label_vectors": 5956,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0023997600239976003,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0005,
+   "fisher_exact_p": 0.0001750189730717428,
+   "p_cell": 0.0023997600239976003,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-0|RT-A2|RT-B1": {
+   "LOR_obs": -1.143972866952846,
+   "table": {
+    "U_LEGAL": 89,
+    "P_LEGAL": 294,
+    "U_UNIV": 41,
+    "P_UNIV": 43
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.005699430056994301,
+     "tie_fraction": 0.0003,
+     "distinct_label_vectors": 9996,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.00029997000299970003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.00039996000399960006,
+     "tie_fraction": 0.0002,
+     "distinct_label_vectors": 5956,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.005699430056994301,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0003,
+   "fisher_exact_p": 4.650493766080676e-06,
+   "p_cell": 0.005699430056994301,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-0|RT-A2|RT-B2": {
+   "LOR_obs": -0.9391845517400076,
+   "table": {
+    "U_LEGAL": 85,
+    "P_LEGAL": 229,
+    "U_UNIV": 40,
+    "P_UNIV": 42
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.013798620137986202,
+     "tie_fraction": 0.0006,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0033996600339966003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 5909,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.013798620137986202,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0006,
+   "fisher_exact_p": 0.0001903254973178535,
+   "p_cell": 0.013798620137986202,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-1|RT-A1|RT-B1": {
+   "LOR_obs": -2.6802736513313175,
+   "table": {
+    "U_LEGAL": 44,
+    "P_LEGAL": 74,
+    "U_UNIV": 30,
+    "P_UNIV": 3
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0008999100089991,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9997,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.000999900009999,
+     "tie_fraction": 0.0009,
+     "distinct_label_vectors": 5961,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.000999900009999,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0009,
+   "fisher_exact_p": 1.7131935470464383e-08,
+   "p_cell": 0.000999900009999,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-1|RT-A1|RT-B2": {
+   "LOR_obs": -2.3489110142065006,
+   "table": {
+    "U_LEGAL": 44,
+    "P_LEGAL": 39,
+    "U_UNIV": 29,
+    "P_UNIV": 2
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0013998600139986002,
+     "tie_fraction": 0.0002,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0011998800119988001,
+     "tie_fraction": 0.0011,
+     "distinct_label_vectors": 5953,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0013998600139986002,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0011,
+   "fisher_exact_p": 2.1400122536954943e-05,
+   "p_cell": 0.0013998600139986002,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-1|RT-A2|RT-B1": {
+   "LOR_obs": -1.5347555594381743,
+   "table": {
+    "U_LEGAL": 44,
+    "P_LEGAL": 294,
+    "U_UNIV": 30,
+    "P_UNIV": 43
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0005999400059994001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0008999100089991,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0004999500049995,
+     "tie_fraction": 0.0002,
+     "distinct_label_vectors": 5971,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0008999100089991,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0002,
+   "fisher_exact_p": 1.8071574084441498e-07,
+   "p_cell": 0.0008999100089991,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-1|RT-A2|RT-B2": {
+   "LOR_obs": -1.2753000277438085,
+   "table": {
+    "U_LEGAL": 44,
+    "P_LEGAL": 229,
+    "U_UNIV": 29,
+    "P_UNIV": 42
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.001999800019998,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0037996200379962005,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0008999100089991,
+     "tie_fraction": 0.0006,
+     "distinct_label_vectors": 5897,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0037996200379962005,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0006,
+   "fisher_exact_p": 1.59172095471782e-05,
+   "p_cell": 0.0037996200379962005,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-2|RT-A1|RT-B2": {
+   "LOR_obs": -2.3608540011180215,
+   "table": {
+    "U_LEGAL": 39,
+    "P_LEGAL": 39,
+    "U_UNIV": 26,
+    "P_UNIV": 2
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0010998900109989002,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 9998,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0011998800119988001,
+     "tie_fraction": 0.0011,
+     "distinct_label_vectors": 5921,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0011998800119988001,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0011,
+   "fisher_exact_p": 2.661047160661572e-05,
+   "p_cell": 0.0011998800119988001,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-2|RT-A2|RT-B1": {
+   "LOR_obs": -1.5504033977624523,
+   "table": {
+    "U_LEGAL": 39,
+    "P_LEGAL": 294,
+    "U_UNIV": 27,
+    "P_UNIV": 43
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.00029997000299970003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0010998900109989002,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 9998,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0006999300069993001,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 5944,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0010998900109989002,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0001,
+   "fisher_exact_p": 4.4692008214434915e-07,
+   "p_cell": 0.0010998900109989002,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-2|RT-A2|RT-B2": {
+   "LOR_obs": -1.287243014655329,
+   "table": {
+    "U_LEGAL": 39,
+    "P_LEGAL": 229,
+    "U_UNIV": 26,
+    "P_UNIV": 42
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0014998500149985001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0037996200379962005,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 9998,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.00039996000399960006,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.000999900009999,
+     "tie_fraction": 0.0008,
+     "distinct_label_vectors": 5984,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0037996200379962005,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0008,
+   "fisher_exact_p": 3.0070210758245537e-05,
+   "p_cell": 0.0037996200379962005,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-3|RT-A1|RT-B1": {
+   "LOR_obs": -2.721563920268933,
+   "table": {
+    "U_LEGAL": 38,
+    "P_LEGAL": 74,
+    "U_UNIV": 27,
+    "P_UNIV": 3
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0006999300069993001,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0018998100189981002,
+     "tie_fraction": 0.0018,
+     "distinct_label_vectors": 5908,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0018998100189981002,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0018,
+   "fisher_exact_p": 2.174016150998903e-08,
+   "p_cell": 0.0018998100189981002,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-3|RT-A1|RT-B2": {
+   "LOR_obs": -2.3864964317313593,
+   "table": {
+    "U_LEGAL": 38,
+    "P_LEGAL": 39,
+    "U_UNIV": 26,
+    "P_UNIV": 2
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.00019998000199980003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0017998200179982,
+     "tie_fraction": 0.0004,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0012998700129987,
+     "tie_fraction": 0.0012,
+     "distinct_label_vectors": 5878,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0017998200179982,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0012,
+   "fisher_exact_p": 2.1657902590602796e-05,
+   "p_cell": 0.0017998200179982,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-3|RT-A2|RT-B1": {
+   "LOR_obs": -1.57604582837579,
+   "table": {
+    "U_LEGAL": 38,
+    "P_LEGAL": 294,
+    "U_UNIV": 27,
+    "P_UNIV": 43
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0008999100089991,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0006999300069993001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.00019998000199980003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0010998900109989002,
+     "tie_fraction": 0.0007,
+     "distinct_label_vectors": 5887,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0010998900109989002,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0007,
+   "fisher_exact_p": 3.1761657982191274e-07,
+   "p_cell": 0.0010998900109989002,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-1|EX-3|RT-A2|RT-B2": {
+   "LOR_obs": -1.3128854452686667,
+   "table": {
+    "U_LEGAL": 38,
+    "P_LEGAL": 229,
+    "U_UNIV": 26,
+    "P_UNIV": 42
+   },
+   "n_units": 59,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0018998100189981002,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0035996400359964,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0004999500049995,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0018998100189981002,
+     "tie_fraction": 0.0012,
+     "distinct_label_vectors": 5934,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0035996400359964,
+   "p_cell_channel_argmax": "C1",
+   "max_tie_fraction": 0.0012,
+   "fisher_exact_p": 2.2427093610694826e-05,
+   "p_cell": 0.0035996400359964,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-0|RT-A1|RT-B2": {
+   "LOR_obs": -0.8530955575547522,
+   "table": {
+    "U_LEGAL": 85,
+    "P_LEGAL": 39,
+    "U_UNIV": 63,
+    "P_UNIV": 12
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0004999500049995,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.025297470252974703,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0010998900109989002,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.20277972202779723,
+     "tie_fraction": 0.0065,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.20277972202779723,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0065,
+   "fisher_exact_p": 0.01095658828181445,
+   "p_cell": 0.20277972202779723,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-0|RT-A2|RT-B1": {
+   "LOR_obs": -0.8025043318031153,
+   "table": {
+    "U_LEGAL": 89,
+    "P_LEGAL": 294,
+    "U_UNIV": 69,
+    "P_UNIV": 102
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.005099490050994901,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0010998900109989002,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0096990300969903,
+     "tie_fraction": 0.0028,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0096990300969903,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0028,
+   "fisher_exact_p": 3.759071870762045e-05,
+   "p_cell": 0.0096990300969903,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-0|RT-A2|RT-B2": {
+   "LOR_obs": -0.7135799275997214,
+   "table": {
+    "U_LEGAL": 85,
+    "P_LEGAL": 229,
+    "U_UNIV": 63,
+    "P_UNIV": 83
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.000999900009999,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.014198580141985802,
+     "tie_fraction": 0.0004,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0023997600239976003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0221977802219778,
+     "tie_fraction": 0.0029,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0221977802219778,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0029,
+   "fisher_exact_p": 0.0004904337794188239,
+   "p_cell": 0.0221977802219778,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-1|RT-A1|RT-B1": {
+   "LOR_obs": -1.2398733130066435,
+   "table": {
+    "U_LEGAL": 44,
+    "P_LEGAL": 74,
+    "U_UNIV": 48,
+    "P_UNIV": 23
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.00039996000399960006,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.003999600039996,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.00019998000199980003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.21447855214478553,
+     "tie_fraction": 0.0026,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.21447855214478553,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0026,
+   "fisher_exact_p": 4.5193710919650655e-05,
+   "p_cell": 0.21447855214478553,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-1|RT-A1|RT-B2": {
+   "LOR_obs": -1.1945351510199367,
+   "table": {
+    "U_LEGAL": 44,
+    "P_LEGAL": 39,
+    "U_UNIV": 46,
+    "P_UNIV": 12
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.00039996000399960006,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0037996200379962005,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.13808619138086192,
+     "tie_fraction": 0.004,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.13808619138086192,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.004,
+   "fisher_exact_p": 0.00107529874607539,
+   "p_cell": 0.13808619138086192,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-1|RT-A2|RT-B1": {
+   "LOR_obs": -1.1414908132844215,
+   "table": {
+    "U_LEGAL": 44,
+    "P_LEGAL": 294,
+    "U_UNIV": 48,
+    "P_UNIV": 102
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0007999200079992001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0006999300069993001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.023297670232976703,
+     "tie_fraction": 0.0032,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.023297670232976703,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0032,
+   "fisher_exact_p": 1.4337253191346333e-06,
+   "p_cell": 0.023297670232976703,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-1|RT-A2|RT-B2": {
+   "LOR_obs": -1.055019521064906,
+   "table": {
+    "U_LEGAL": 44,
+    "P_LEGAL": 229,
+    "U_UNIV": 46,
+    "P_UNIV": 83
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0017998200179982,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0011998800119988001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.004199580041995801,
+     "tie_fraction": 0.0041,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.004199580041995801,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0041,
+   "fisher_exact_p": 1.5438502694319768e-05,
+   "p_cell": 0.004199580041995801,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-2|RT-A1|RT-B2": {
+   "LOR_obs": -1.199964782928397,
+   "table": {
+    "U_LEGAL": 39,
+    "P_LEGAL": 39,
+    "U_UNIV": 41,
+    "P_UNIV": 12
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.004399560043995601,
+     "tie_fraction": 0.0002,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.14078592140785923,
+     "tie_fraction": 0.0026,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.14078592140785923,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0026,
+   "fisher_exact_p": 0.0012944175391569192,
+   "p_cell": 0.14078592140785923,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-2|RT-A2|RT-B1": {
+   "LOR_obs": -1.1286196085364735,
+   "table": {
+    "U_LEGAL": 39,
+    "P_LEGAL": 294,
+    "U_UNIV": 42,
+    "P_UNIV": 102
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0015998400159984002,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.00019998000199980003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.00019998000199980003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.015798420157984203,
+     "tie_fraction": 0.0037,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.015798420157984203,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0037,
+   "fisher_exact_p": 5.8432397299085706e-06,
+   "p_cell": 0.015798420157984203,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-2|RT-A2|RT-B2": {
+   "LOR_obs": -1.0604491529733666,
+   "table": {
+    "U_LEGAL": 39,
+    "P_LEGAL": 229,
+    "U_UNIV": 41,
+    "P_UNIV": 83
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0026997300269973002,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0007999200079992001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0005999400059994001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0025997400259974,
+     "tie_fraction": 0.0025,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0026997300269973002,
+   "p_cell_channel_argmax": "C0",
+   "max_tie_fraction": 0.0025,
+   "fisher_exact_p": 3.23588508339365e-05,
+   "p_cell": 0.0026997300269973002,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-3|RT-A1|RT-B1": {
+   "LOR_obs": -1.1537987042354005,
+   "table": {
+    "U_LEGAL": 38,
+    "P_LEGAL": 74,
+    "U_UNIV": 38,
+    "P_UNIV": 23
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.00039996000399960006,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0032996700329967,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.00019998000199980003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.21987801219878012,
+     "tie_fraction": 0.0028,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.21987801219878012,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0028,
+   "fisher_exact_p": 0.00029522255007092884,
+   "p_cell": 0.21987801219878012,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-3|RT-A1|RT-B2": {
+   "LOR_obs": -1.1242547192814474,
+   "table": {
+    "U_LEGAL": 38,
+    "P_LEGAL": 39,
+    "U_UNIV": 37,
+    "P_UNIV": 12
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.00019998000199980003,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0034996500349965005,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 9999,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 9.999000099990002e-05,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.16948305169483052,
+     "tie_fraction": 0.0027,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.16948305169483052,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0027,
+   "fisher_exact_p": 0.0028436680375522935,
+   "p_cell": 0.16948305169483052,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-3|RT-A2|RT-B1": {
+   "LOR_obs": -1.0554162045131785,
+   "table": {
+    "U_LEGAL": 38,
+    "P_LEGAL": 294,
+    "U_UNIV": 38,
+    "P_UNIV": 102
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0015998400159984002,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0012998700129987,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0007999200079992001,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.09259074092590741,
+     "tie_fraction": 0.0093,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.09259074092590741,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0093,
+   "fisher_exact_p": 3.618643416518848e-05,
+   "p_cell": 0.09259074092590741,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM1|MAP-2|EX-3|RT-A2|RT-B2": {
+   "LOR_obs": -0.9847390893264166,
+   "table": {
+    "U_LEGAL": 38,
+    "P_LEGAL": 229,
+    "U_UNIV": 37,
+    "P_UNIV": 83
+   },
+   "n_units": 53,
+   "n_LEGAL": 17,
+   "channels": {
+    "C0": {
+     "p": 0.0037996200379962005,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.004199580041995801,
+     "tie_fraction": 0.0001,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0015998400159984002,
+     "tie_fraction": 0.0,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0603939606039396,
+     "tie_fraction": 0.0028,
+     "distinct_label_vectors": 330,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0603939606039396,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0028,
+   "fisher_exact_p": 0.00016471037848008455,
+   "p_cell": 0.0603939606039396,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true
+  },
+  "ARM2|W3|EX-0|RT-A1|RT-B1": {
+   "LOR_obs": -2.830028627988696,
+   "table": {
+    "U_LEGAL": 18,
+    "P_LEGAL": 16,
+    "U_UNIV": 9,
+    "P_UNIV": 0
+   },
+   "n_units": 112,
+   "n_LEGAL": 89,
+   "channels": {
+    "C0": {
+     "p": 0.0143985601439856,
+     "tie_fraction": 0.0073,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.006299370062993701,
+     "tie_fraction": 0.0038,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.0415958404159584,
+     "tie_fraction": 0.0212,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0164983501649835,
+     "tie_fraction": 0.0093,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0415958404159584,
+   "p_cell_channel_argmax": "C2",
+   "max_tie_fraction": 0.0212,
+   "fisher_exact_p": 0.00831112288854778,
+   "p_cell": 0.0415958404159584,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true,
+   "n_blocks": 112
+  },
+  "ARM2|W3|EX-2|RT-A1|RT-B1": {
+   "LOR_obs": -3.186352633162641,
+   "table": {
+    "U_LEGAL": 7,
+    "P_LEGAL": 16,
+    "U_UNIV": 5,
+    "P_UNIV": 0
+   },
+   "n_units": 112,
+   "n_LEGAL": 89,
+   "channels": {
+    "C0": {
+     "p": 0.024197580241975804,
+     "tie_fraction": 0.0143,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.017198280171982803,
+     "tie_fraction": 0.0112,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.06979302069793021,
+     "tie_fraction": 0.037,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.044195580441955803,
+     "tie_fraction": 0.0288,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.06979302069793021,
+   "p_cell_channel_argmax": "C2",
+   "max_tie_fraction": 0.037,
+   "fisher_exact_p": 0.008058608058608058,
+   "p_cell": 0.06979302069793021,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true,
+   "n_blocks": 112
+  },
+  "ARM2|W5|EX-0|RT-A1|RT-B1": {
+   "LOR_obs": -2.865967363724945,
+   "table": {
+    "U_LEGAL": 26,
+    "P_LEGAL": 24,
+    "U_UNIV": 9,
+    "P_UNIV": 0
+   },
+   "n_units": 112,
+   "n_LEGAL": 89,
+   "channels": {
+    "C0": {
+     "p": 0.020097990200979902,
+     "tie_fraction": 0.0089,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0168983101689831,
+     "tie_fraction": 0.0083,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.016698330166983303,
+     "tie_fraction": 0.0089,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.030296970302969704,
+     "tie_fraction": 0.0139,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.030296970302969704,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0139,
+   "fisher_exact_p": 0.005619075856229508,
+   "p_cell": 0.030296970302969704,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true,
+   "n_blocks": 112
+  },
+  "ARM2|W5|EX-2|RT-A1|RT-B1": {
+   "LOR_obs": -3.245193133185574,
+   "table": {
+    "U_LEGAL": 10,
+    "P_LEGAL": 24,
+    "U_UNIV": 5,
+    "P_UNIV": 0
+   },
+   "n_units": 112,
+   "n_LEGAL": 89,
+   "channels": {
+    "C0": {
+     "p": 0.018198180181981802,
+     "tie_fraction": 0.0106,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C1": {
+     "p": 0.0193980601939806,
+     "tie_fraction": 0.0101,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C2": {
+     "p": 0.025697430256974303,
+     "tie_fraction": 0.0174,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    },
+    "C3": {
+     "p": 0.0395960403959604,
+     "tie_fraction": 0.0235,
+     "distinct_label_vectors": 10000,
+     "degenerate": false
+    }
+   },
+   "degenerate_channels": [],
+   "p_cell_permutation": 0.0395960403959604,
+   "p_cell_channel_argmax": "C3",
+   "max_tie_fraction": 0.0235,
+   "fisher_exact_p": 0.005215742057847403,
+   "p_cell": 0.0395960403959604,
+   "p_cell_source": "permutation max over non-degenerate channels (prereg 6.3)",
+   "verdict_inert": true,
+   "n_blocks": 112
+  }
+ },
+ "secondary_per_surah": {
+  "MAP-1": {
+   "n_eligible": 10,
+   "n_LEGAL": 8,
+   "n_UNIV": 2,
+   "mean_log_ratio_LEGAL": -0.7822430726400944,
+   "mean_log_ratio_UNIV": 2.4814223151299535,
+   "mean_difference_LEGAL_minus_UNIV": -3.2636653877700477,
+   "mann_whitney_U_LEGAL_gt_UNIV": 0.0,
+   "channel_p": {
+    "C0": 0.0212978702129787,
+    "C1": 0.24537546245375463,
+    "C2": 0.2440755924407559,
+    "C3": 1.0
+   },
+   "p_worst_channel": 1.0,
+   "note": "verdict-inert; underpowered by construction (prereg 7.5)"
+  },
+  "MAP-2": {
+   "n_eligible": 12,
+   "n_LEGAL": 8,
+   "n_UNIV": 4,
+   "mean_log_ratio_LEGAL": -0.7822430726400944,
+   "mean_log_ratio_UNIV": 0.9481933444024132,
+   "mean_difference_LEGAL_minus_UNIV": -1.7304364170425077,
+   "mann_whitney_U_LEGAL_gt_UNIV": 0.0,
+   "channel_p": {
+    "C0": 0.0021997800219978004,
+    "C1": 0.05729427057294271,
+    "C2": 0.026997300269973004,
+    "C3": 0.33356664333566644
+   },
+   "p_worst_channel": 0.33356664333566644,
+   "note": "verdict-inert; underpowered by construction (prereg 7.5)"
+  }
+ },
+ "secondary_density_FLAGGED": {
+  "flag": "UNIT-DRIFT Screens A and B BOTH fire on this statistic. Reported for the reader; never a verdict input.",
+  "MAP-1": {
+   "LEGAL": {
+    "kull_per_1000w": 1.5331393977513956,
+    "bad_per_1000w": 2.9090337290667505,
+    "words": 25438
+   },
+   "UNIV": {
+    "kull_per_1000w": 3.736507057846665,
+    "bad_per_1000w": 0.41516745087185164,
+    "words": 7226
+   }
+  },
+  "MAP-2": {
+   "LEGAL": {
+    "kull_per_1000w": 1.5331393977513956,
+    "bad_per_1000w": 2.9090337290667505,
+    "words": 25438
+   },
+   "UNIV": {
+    "kull_per_1000w": 3.626003626003626,
+    "bad_per_1000w": 1.985668652335319,
+    "words": 11583
+   }
+  }
+ }
+}
