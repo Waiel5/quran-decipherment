@@ -187,6 +187,7 @@ enabling data is stripped or absent.
 > | **F-10** modality | open, *"genuinely orthogonal to what has been done"* | H-NEW-2640 | 2026-08-07 |
 > | **F-4** deixis | open, prior *"CONFIRMED but at risk of CBM"* | H-NEW-2960 — **partially**; its own front-matter names F-4 | 2026-08-08 |
 > | **F-13** reception weight | open, prior "CONFIRMED-descriptive" | H-NEW-3000 — the map's F-13 sentence **is that finding's title** | 2026-08-08 |
+> | **F-2** scansion | open, prior "CONFIRMED for distinct region" | H-NEW-2690 — near-identical prereg title; **both halves refuted** | 2026-08-07 |
 >
 > **F-4 is the fifth case and the FIRST caught prospectively** — the Step-0 grep rule fired before any
 > design work, so no lane was spent. Only the *eschatological* half of F-4 is answered; the
@@ -221,10 +222,11 @@ enabling data is stripped or absent.
 > | F-4 | deixis | CONFIRMED but at risk of CBM | PASS — but as a **step**, and CBM refuted twice | ~ |
 > | F-5 | loanword donors | CONFIRMED-weak | NULL | ✗ |
 > | F-8 | sajdah loci | **NULL** | **NULL** | **✓** |
+> | F-2 | scansion | CONFIRMED region; *"NULL for any single-meter match"* | region **half-withdrawn**; single-meter claim **FLATLY FALSIFIED** — 14 of 16 buḥūr beat matched noise | ✗ |
 > | F-10 | modality | CONFIRMED, *"genuinely orthogonal"* | DIRECTIONAL; orthogonality unsupported | ✗ |
 > | F-20 | kinship | CONFIRMED but CBM-leaning | NULL, effect **reversed** | ✗ |
 >
-> **One prior in six was right, and it is the only one that predicted a NULL.** Every optimistic
+> **One prior in SEVEN was right, and it is the only one that predicted a NULL.** Every optimistic
 > prior on this map has now failed. The error is not random — it runs in one direction.
 >
 > Two of the misses were worse than wrong. F-10's entry asserts the hypothesis is *"genuinely
