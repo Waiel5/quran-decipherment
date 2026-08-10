@@ -46,10 +46,18 @@ failed:
 
 | corpus | affected codepoints | classic tanwīn |
 |:--|--:|--:|
-| muʿallaqa (ʿAmr b. Kulthūm) | **0** | 114 |
-| muʿallaqa (ʿAntara) | **0** | 93 |
-| muʿallaqa (al-Ḥārith) | **0** | 102 |
+| muʿallaqa — **Imruʾ al-Qays** (75 abyāt) | **0** | 109 |
+| muʿallaqa — **Zuhayr** (62 abyāt) | **0** | 86 |
+| muʿallaqa — **ʿAmr b. Kulthūm** (103 abyāt) | **0** | 114 |
 | **Quran (full tashkeel)** | **6,643** | 1,911 |
+
+> **CORRECTED 2026-08-10.** This table originally named *ʿAmr b. Kulthūm, ʿAntara, al-Ḥārith*. **Two
+> of those three are not in the gate.** The run artefact's `positive_control.per_poet` keys are
+> `muallaqa-imru-al-qais`, `muallaqa-zuhayr`, `muallaqa-amr-bin-kulthum` — 75 + 62 + 103 = 240 abyāt,
+> matching the published n. ʿAntara (vocalisation ratio 0.068) and al-Ḥārith (0.205) fall below the
+> threshold and are **never scanned**. The conclusion is unaffected — all seven muʿallaqāt carry zero
+> affected codepoints — but an audit whose whole force is that it is checkable must name files a
+> reader can actually check.
 
 **The scanner deletes 77.66% of the Quran's tanwīn and 0% of the control corpus's.** The control
 exercises only the classic codepoints, which the scanner handles correctly.
@@ -99,14 +107,15 @@ Counting the affected codepoints in each comparison arm sharpens §3 considerabl
 | arm | affected codepoints | classic tanwīn |
 |:--|--:|--:|
 | **Qurʾān** | **6,643** | 1,911 |
-| muʿallaqa (ʿAmr b. Kulthūm) | **0** | 114 |
-| muʿallaqa (ʿAntara) | **0** | 93 |
-| muʿallaqa (al-Ḥārith) | **0** | 102 |
+| muʿallaqa — Imruʾ al-Qays | **0** | 109 |
+| muʿallaqa — Zuhayr | **0** | 86 |
+| muʿallaqa — ʿAmr b. Kulthūm | **0** | 114 |
 | Sunan al-Dārimī | **0** | 15,798 |
 | Ṣaḥīḥ al-Bukhārī | **0** | 46,606 |
 
-*(Verified here: the Qurʾān row and the three muʿallaqāt. The two prose rows are the F-2 lane's
-figures — my file glob did not resolve those corpora and I did not confirm them.)*
+*(All six rows now verified here. The two prose rows were initially unconfirmed; recounted directly
+from `the_9_books/darimi.json` and `the_9_books/bukhari.json` — 0/15,798 and 0/46,606, reproducing
+exactly.)*
 
 **Every corpus the Qurʾān was compared against loses zero tanwīn. The Qurʾān loses 77.66%.** So every
 poetry-vs-Qurʾān and prose-vs-Qurʾān comparison in this family was **asymmetric, in one direction,
