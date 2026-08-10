@@ -1,4 +1,6 @@
-# Audit: "control for register" is undefined against phase for 43% of the corpus
+# Audit: "control for register" is undefined against phase for 37–57% of the corpus
+
+*(Title corrected 2026-08-10: originally "43%", which is one point in a coarsening-dependent range. See the correction block below.)*
 
 **Date:** 2026-08-09
 **Status:** STRUCTURAL CONSTRAINT. Applies to every test that stratifies on Neuwirth–Sinai register
@@ -39,8 +41,14 @@ while testing against Meccan/Medinan phase.
 
 ## 1. The crosstab
 
-`findings/classical-sources/neuwirth-sinai-genre-labels.tsv`, 115 surah rows, genre coarsened to its
-head term, phase reduced to Meccan/Medinan:
+`findings/classical-sources/neuwirth-sinai-genre-labels.tsv`, **114** surah rows, genre coarsened to
+its head term, phase reduced to Meccan/Medinan.
+
+> **The table below is retained as published and is KNOWN WRONG in its cell counts** — it sums to
+> 113, not 115, and `narrative` is 23/0 on a verified parse rather than 26/0. It is not corrected in
+> place because the correction block above is the record of what was published. **Read the
+> structure, not the cells:** `legal` 0/15, `oath` 8/0 and `narrative` single-phase all reproduce
+> exactly.
 
 | register | Meccan | Medinan | |
 |:--|--:|--:|:--|
@@ -52,7 +60,9 @@ head term, phase reduced to Meccan/Medinan:
 | polemic | 5 | 3 | |
 | other | 18 | 6 | |
 
-**49 of 115 surahs (43%) sit in a register that occurs in only one phase.**
+~~**49 of 115 surahs (43%) sit in a register that occurs in only one phase.**~~
+**Corrected: 36.8%–57.0% depending on the coarsening; 40.4% under this file's own coarsening,
+correctly parsed.**
 
 ## 2. Why this matters, stated precisely
 
@@ -61,7 +71,7 @@ A stratum containing only one phase has **nothing to permute** — every permuta
 observed value. Those 49 surahs contribute **zero information** to the null distribution while still
 appearing in the sample size.
 
-So a test reporting *"n = 115, stratified on register"* is, against phase, effectively running on
+So a test reporting *"n = 114, stratified on register"* is, against phase, effectively running on
 **66 surahs** — and the remaining strata are themselves lopsided (the mixed registers skew Meccan).
 The reported n is not the effective n.
 
@@ -92,9 +102,9 @@ number, and report it as though register had been controlled.
   `hymn`, `eschat`, `polemic`, `other`). A finer partition splits these cells and could change which
   strata are degenerate — though it can only make strata *smaller*, so degeneracy will generally
   increase, not decrease.
-- **The TSV carries a `liturgical` value and one malformed row** that my parse bucketed to `other`;
-  115 rows parsed against 114 surahs, so one row is spurious. Neither affects the three collinear
-  registers, whose counts are large and unambiguous.
+- ~~**The TSV carries a `liturgical` value and one malformed row**… so one row is spurious.~~
+  **WITHDRAWN — this was a guess and it was wrong.** The extra row is the header line. See the
+  correction block.
 - **F-20's independent count differed slightly** (27 narrative vs my 26) — a coarsening difference,
   not a disagreement about the structure. Both found legal and narrative perfectly collinear; this
   recount additionally found **oath**.
