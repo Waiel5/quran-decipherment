@@ -44,20 +44,30 @@ H-NEW-2690's hard gate was the muʿallaqāt — three vocalised pre-Islamic poem
 per-*bayt* accuracy, 3 of 3 poems correctly identified. That gate passed, and it could not have
 failed:
 
-| corpus | affected codepoints | classic tanwīn |
-|:--|--:|--:|
-| muʿallaqa — **Imruʾ al-Qays** (75 abyāt) | **0** | 109 |
-| muʿallaqa — **Zuhayr** (62 abyāt) | **0** | 86 |
-| muʿallaqa — **ʿAmr b. Kulthūm** (103 abyāt) | **0** | 114 |
-| **Quran (full tashkeel)** | **6,643** | 1,911 |
+**All seven muʿallaqāt on disk**, with the vocalisation ratio that selects the gate's three
+(threshold 0.55) — every figure recomputed here:
 
-> **CORRECTED 2026-08-10.** This table originally named *ʿAmr b. Kulthūm, ʿAntara, al-Ḥārith*. **Two
-> of those three are not in the gate.** The run artefact's `positive_control.per_poet` keys are
-> `muallaqa-imru-al-qais`, `muallaqa-zuhayr`, `muallaqa-amr-bin-kulthum` — 75 + 62 + 103 = 240 abyāt,
-> matching the published n. ʿAntara (vocalisation ratio 0.068) and al-Ḥārith (0.205) fall below the
-> threshold and are **never scanned**. The conclusion is unaffected — all seven muʿallaqāt carry zero
-> affected codepoints — but an audit whose whole force is that it is checkable must name files a
-> reader can actually check.
+| poem | vocalisation | affected codepoints | classic tanwīn | in the gate |
+|:--|--:|--:|--:|:--|
+| Zuhayr | 0.839 | **0** | 86 | **yes** |
+| Imruʾ al-Qays | 0.777 | **0** | 109 | **yes** |
+| ʿAmr b. Kulthūm | 0.722 | **0** | 114 | **yes** |
+| al-Ḥārith | 0.205 | **0** | 102 | no |
+| Labīd | 0.164 | **0** | 126 | no |
+| ʿAntara | 0.068 | **0** | 93 | no |
+| Ṭarafa | 0.031 | **0** | 156 | no |
+| **Quran (full tashkeel)** | — | **6,643** | 1,911 | — |
+
+**Zero of seven.** The generalisation is therefore broader than the three-poem version stated: **no
+pre-Islamic poetry file in this repo exercises the encoding that broke.**
+
+> **CORRECTION 2026-08-10, and my error was narrower than first recorded.** This table originally
+> listed *ʿAmr b. Kulthūm, ʿAntara, al-Ḥārith* as the control. **Those counts were correct** — ʿAntara
+> really does carry 93 classic tanwīn and al-Ḥārith 102. What was wrong was the claim that they are
+> *in the gate*: both fall below the 0.55 vocalisation threshold and are never scanned. I named real
+> files with real numbers that the instrument does not read. Recording the distinction because
+> "wrong counts" and "right counts, wrong files" are different errors and only the second one is
+> mine here.
 
 **The scanner deletes 77.66% of the Quran's tanwīn and 0% of the control corpus's.** The control
 exercises only the classic codepoints, which the scanner handles correctly.
