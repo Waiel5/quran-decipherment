@@ -46,8 +46,8 @@ Two independent orthographic facts, either of which alone is sufficient:
 
 ### 2.1 This accounts for the entire token-count discrepancy between the two alt-texts
 
-`quran-uthmani-txt.txt` and `quran-simple-txt.txt` align line-for-line (6,264 each) but the Uthmānī
-carries **367 fewer word tokens**. Localised: **363 lines differ in token count — 359 by exactly −1
+`quran-uthmani-txt.txt` and `quran-simple-txt.txt` align line-for-line (**6,236 verse lines** each) but the Uthmānī
+carries **367 fewer word tokens** (82,260 vs 82,627). Localised: **363 lines differ in token count — 359 by exactly −1
 and 4 by −2.** Every inspected case is vocative joining. The −2 cases are three-word phrases
 collapsing to one, as at Q 20:94 (`يَا ابْنَ أُمَّ` → `يَبْنَؤُمَّ`).
 
@@ -132,7 +132,7 @@ result, and the number would carry no evidential weight once obtained that way.
 
 | claim | status |
 |:--|:--|
-| 6,264 lines align; Uthmānī carries 367 fewer word tokens | **verified** |
+| ~~6,264~~ **6,236 verse lines** align; Uthmānī carries 367 fewer word tokens | **verified, count corrected** |
 | 363 lines differ in token count; 359 by −1, 4 by −2 | **verified** |
 | the −2 cases are three-word phrases collapsing to one (Q 20:94) | **verified by inspection** |
 | vocative joining is *the* mechanism | **verified on inspected cases** |
@@ -146,4 +146,41 @@ one file and no other — rests on direct counts, not on this classification.
 test is trivial to state: `bare("يَا") == "يا"` and
 `bare("يَٰٓأَيُّهَا") == bare("يَا") + bare("أَيُّهَا")`. Both of my attempts would have failed that
 assertion on the first line, before touching the corpus.
+
+### 6.2 CORRECTION 2026-08-10 — the line count was wrong, and so was one of my assertions
+
+**Two errors of mine, both found by the third F-9 lane, both verified here before amending.**
+
+**1. The file is 6,236 verse lines, not 6,264.** Counted directly: 6,266 raw lines, 6,264 non-empty,
+**6,236 non-comment** — and 6,236 is the canonical Ḥafṣ verse count. My figure counted **28 comment
+lines** as verses. My token totals (82,429 / 82,796) were inflated the same way; the correct pair is
+**82,260 / 82,627**. **The delta is −367 either way**, so the headline is untouched — but the
+denominators were wrong in a published file for two days.
+
+**2. My assertion set was over-specified and one member is impossible.** I demanded
+`bare("يَبْنَؤُمَّ") == bare("يَا") + bare("ابْنَ") + bare("أُمَّ")` alongside `bare("يَا") == "يا"`.
+**These cannot both hold.** يَبْنَؤُمَّ contains **five** letter characters; with alef surviving
+normalisation the right-hand side has **seven**. No character-level function maps 5 to 7. The
+assertion is not a spec for a normaliser — **it is a statement about the data.**
+
+### 6.3 And that impossibility is the first substantive F-9 result
+
+The two merges are **not the same phenomenon**:
+
+| class | example | behaviour |
+|:--|:--|:--|
+| **CONCATENATIVE** | يَٰٓأَيُّهَا | exact concatenation under `bare()`; nothing is lost |
+| **ELISIVE** | يَبْنَؤُمَّ | requires **deleting two alefs** (the *yā* alef and the waṣl alef of *ibn*) and moving the hamza from an alef seat to a wāw seat |
+
+**Pooling these into one "vocative joining" bucket would be
+[[cross-finding-030-three-ways-a-control-fails]] mechanism 1** — strata not homogeneous in the thing
+they claim to hold fixed, which is the failure that destroyed H-NEW-3150. They are kept as separate
+classes.
+
+### 6.4 Scope warning that changes what F-9 is
+
+With spaces ignored, **only 2,092 of 6,236 lines (33.5%) are character-identical** between the two
+orthographies under `bare()`. The 367-token gap is a **tokenisation-level** difference; character-level
+divergence runs to roughly **two-thirds of all verses**. The published claim only ever concerned the
+token gap, so nothing above is contradicted — but **F-9's real surface is far larger than 363 lines.**
 
