@@ -98,3 +98,52 @@ assert leg_total > 0, "LEGAL_MARKERS matched nothing — wrong orthographic vari
 Related: [[AUDIT-WAQF-MARK-INVENTORY-DIVERGENCE]] · [[cross-finding-029-the-deciding-parameter]] ·
 [[AUDIT-CF028-SCOPE-VS-ANCHORS]] §7 (the same marker, in its role as a construct that overlaps the
 features tested against it)
+
+---
+
+## 6. The exhaustive classification is STILL OPEN — two lanes and two of my own attempts have failed
+
+§2.1 claims the 367-token gap is *entirely* vocative joining, with the caveat that this rests on the
+three largest deltas plus a sample of the −1 cases rather than all 363 lines. **That caveat has not
+been discharged, and this section records why rather than leaving the gap silent.**
+
+**Two dispatched lanes produced nothing.** F-9 and its re-dispatch both went idle with no
+pre-registration, no script and no run directory. No output to salvage.
+
+**Two of my own attempts produced a number I do not believe.** Both classifiers returned
+**"vocative yā = 0.0% of resolved merges"** while printing, in the same output, obviously vocative
+examples:
+
+```
+line 27   U: يَٰٓأَيُّهَا ٱلنَّاسُ …      S: يَا أَيُّهَا النَّاسُ …
+line 41   U: وَقُلْنَا يَٰٓـَٔادَمُ …      S: وَقُلْنَا يَا آدَمُ …
+```
+
+A classifier that reports 0% of a category while displaying members of that category is broken. The
+second attempt normalised combining marks and alef variants and still bucketed 191 merges under an
+**empty-string key**, meaning its normaliser reduced `يَا` to nothing. The bug is in the
+normalisation, not in the data.
+
+**I stopped rather than attempt a third pass.** The alternative was to keep adjusting a normaliser
+until it produced the answer §2.1 already predicts — which is fitting the instrument to the expected
+result, and the number would carry no evidential weight once obtained that way.
+
+### 6.1 What therefore stands and what does not
+
+| claim | status |
+|:--|:--|
+| 6,264 lines align; Uthmānī carries 367 fewer word tokens | **verified** |
+| 363 lines differ in token count; 359 by −1, 4 by −2 | **verified** |
+| the −2 cases are three-word phrases collapsing to one (Q 20:94) | **verified by inspection** |
+| vocative joining is *the* mechanism | **verified on inspected cases** |
+| vocative joining accounts for **all** 363 | **STILL UNVERIFIED** |
+
+Nothing downstream of this file depends on the exhaustive version. The
+[[AUDIT-REGISTER-PROXY-ORTHOGRAPHY-DEPENDENCE]] result — that the register-defining phrase matches in
+one file and no other — rests on direct counts, not on this classification.
+
+**What the task needs is a proper Arabic normaliser with a unit test**, not another ad-hoc strip. The
+test is trivial to state: `bare("يَا") == "يا"` and
+`bare("يَٰٓأَيُّهَا") == bare("يَا") + bare("أَيُّهَا")`. Both of my attempts would have failed that
+assertion on the first line, before touching the corpus.
+
