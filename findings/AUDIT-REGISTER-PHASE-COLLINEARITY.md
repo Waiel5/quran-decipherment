@@ -7,6 +7,36 @@ while testing against Meccan/Medinan phase.
 
 ---
 
+
+> ## ⚠ CORRECTION, 2026-08-10 — three errors in this file's own arithmetic
+>
+> Caught by the F-20 lane during reconciliation, verified here before amending.
+>
+> 1. **The "115 rows / one spurious row" claim was wrong.** The extra row is the **header line**.
+>    The TSV's column-name row does not begin with `#`, so a comment-strip leaves it in. There are
+>    **114 surah rows**, exactly as there should be. My §4 limit guessed at a malformed record; the
+>    real cause was a parse that never checked whether its first field was a number.
+> 2. **§1's table sums to 113, not 115.** Two rows are missing from it. The underlying tabulation
+>    had **four** phase columns — `Meccan`, `Medinan`, plus a `liturgical` value and a malformed
+>    `neuwirth_p` — and I published only the first two without saying where the rest went. That is
+>    a table that does not add up, printed without checking that it adds up.
+> 3. **The 43% figure is coarsening-dependent and sits at the LOW end of its range.** Recomputed
+>    across four coarsenings on a verified 114-row parse: **36.8%** (6-class) · **40.4%** (this
+>    file's coarsening, correctly parsed) · **43%** (as published) · **57.0%** (finer head-term,
+>    oath split before eschatological). §4 predicted this and it is confirmed — but the prediction
+>    does not excuse quoting a single number as though it were stable.
+>
+> **The structural conclusion survives and is the reason this file still stands.** On a verified
+> 114-row parse, `legal` reproduces exactly at 0 Meccan / 15 Medinan, `oath` exactly at 8 / 0, and
+> `narrative` remains single-phase (23 / 0 rather than 26 / 0). The three degenerate strata are
+> real; only the cell counts and the headline percentage were wrong.
+>
+> **The transferable point is now sharper than the one this file was written to make:** the
+> *coarsening choice is itself a deciding parameter* in the sense of
+> [[cross-finding-029-the-deciding-parameter]], and it belongs in any register-stratified
+> pre-registration alongside the length channel. Named consumers of this label file, for whoever
+> audits them: `h-new-3010`, `h-new-3040`, `h-new-3080`, and the `h-new-127-*` family.
+
 ## 1. The crosstab
 
 `findings/classical-sources/neuwirth-sinai-genre-labels.tsv`, 115 surah rows, genre coarsened to its
