@@ -7483,3 +7483,5 @@ verbatim and NOT re-judged.
 **Frontier-map priors scored 1 of 6**, the only correct one being the only NULL prediction. See the
 calibration block at the head of section B.
 
+| [[h-new-3080-quantifier-scope]] | *kull* vs *baʿḍ* separates legal from universalist register; **survives formula deletion with the effect growing** — the map's CBM prior refuted in the opposite direction. Verdict-rule diff run and stated. **Rests on three *baʿḍ* tokens in two verses; one unambiguous.** 4 of 6 cells NULL | **CONFIRMED, narrow** |
+

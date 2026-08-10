@@ -111,3 +111,51 @@ yet** — and that, rather than case-by-case vigilance, is the durable form of t
 **Anchors:** [[AUDIT-H-NEW-206-LENGTH-CONFOUND]] · [[h-new-3010-conditional-register]] ·
 [[h-new-3020-loanword-donor-strata]] · [[h-new-3030-sajdah-glyph]] · [[ERRATUM-COMMIT-eb6a40d0e]]
 **Related:** [[UNIT-DRIFT-DEFECT]] · [[ABSENCE-CLAIMS]] · [[PROXY-CLAIMS]] · [[TIED-OUTCOME-DEFECT]]
+
+---
+
+## 5. Extension, 2026-08-10 — the law generalises past length, and the parameter list is now five
+
+§1's five anchors were all found on 2026-08-09. Four further lanes closed on 2026-08-10 and each
+surfaced a deciding parameter the original file did not name. The pattern is not "length is
+underspecified"; **length was simply the first instance.**
+
+| # | deciding parameter | anchor | swing |
+|--:|:--|:--|:--|
+| 1 | **length channel** — verse count vs word count vs mean verse length | [[h-new-3010-conditional-register]] | **70×** in p |
+| 1b | same | [[h-new-3040-modality-axis]] | verdict **flips**, 3 PASS / 5 NULL of 8 |
+| 1c | same | [[h-new-3070-deictic-gradient]] | **29×** on H1, 22× on H2 |
+| 2 | **control feature set** — which features enter the matrix | [[h-new-3040-modality-axis]] | dropping EMPH flips PASS → NULL |
+| 3 | **rater identity** — who assigned a hand-coded label | [[h-new-3020-loanword-donor-strata]] · [[h-new-3090-kinship-affiliation]] | κ = 0.386 / 0.468 — raters agree about half the time |
+| 4 | **lemma vs root** — the counting unit | [[h-new-3090-kinship-affiliation]] | **126×** in p |
+| 5 | **coarsening choice** — how many classes a categorical is reduced to | [[AUDIT-REGISTER-PHASE-COLLINEARITY]] §CORRECTION | 36.8% → 57.0% degeneracy |
+| 6 | **chronology instrument** — Nöldeke vs Egyptian standard | [[h-new-3070-deictic-gradient]] | PASS → **NULL** |
+
+### 5.1 What the extension changes
+
+The original §3 rule — *declare the deciding parameter* — stands. What changes is that **the list is
+not closable.** Six parameters found in two days, each by a different lane, none anticipated by the
+lane that found it. The honest form of the rule is therefore not a checklist but a procedure:
+
+> **Before locking a design, name every choice that could have gone another way, and run the ones
+> you can. Report the verdict under the worst of them.**
+
+Three lanes now build this into the instrument rather than checking it afterward.
+[[h-new-3080-quantifier-scope]] takes its p as the **maximum over all non-degenerate length
+channels**, so no channel had to be chosen; [[h-new-3070-deictic-gradient]] clears α under the
+**worst of nine** settings; [[h-new-3090-kinship-affiliation]] runs 36 cells. That is the mature
+form: **not "which parameter decided this?" but "make the verdict survive all of them."**
+
+### 5.2 Two anchors where the parameter did NOT decide — reported because absence of the effect matters
+
+Not every finding is fragile, and saying so is what keeps this from being a universal solvent:
+
+- [[h-new-3090-kinship-affiliation]] — the **length** channel spans only 1.37×–2.0×. Length was
+  irrelevant there; the counting unit was everything.
+- [[h-new-3080-quantifier-scope]] — survives all four channels, and survives deleting 34.8% of its
+  own most formulaic material with the effect **growing**. Its fragility lies elsewhere entirely:
+  a denominator of three tokens.
+
+**A deciding parameter is found by varying it, never by alleging it.** Two of the seven anchors
+above varied it and found nothing.
+
