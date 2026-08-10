@@ -158,4 +158,24 @@ Not every finding is fragile, and saying so is what keeps this from being a univ
 
 **A deciding parameter is found by varying it, never by alleging it.** Two of the seven anchors
 above varied it and found nothing.
+### 5.3 Sixth anchor, 2026-08-10 — **rank vs density**
+
+[[h-new-3160-tafsir-disagreement]]. Same corpus, same 6,095 verses, same marker list, same structural
+block. The only difference is whether an amortised marker count is **ranked** or **divided by length**:
+
+| channel | ΔR² over the length block | verdict |
+|:--|--:|:--|
+| C1 — rank | **0.03933** | passes all four gates |
+| C2 — density | **0.00993** | fails the 0.01 floor by 0.00007 |
+
+**A 3.96× shift in the estimate, and the verdict moves with it.** Mechanism, measured: ρ(C1, verse
+words) = **+0.4085** against ρ(C2, verse words) = **+0.0772** — the rank channel carries **5.3×** the
+length correlation, because ranking a *count* ranks length. A longer commentary has more words and
+therefore more marker words whatever the exegete thinks.
+
+**Two things make this the cleanest anchor in the file.** First, the worst-channel rule *converted a
+PASS into a NULL* — the rule earning its keep in the direction that costs a result. Second, **all
+four channels returned p = 9.999×10⁻⁵, the permutation floor**, and not one passed: a lane gating on
+p alone would have reported four passes out of four. The pre-registration made effect size binding
+before the data was seen, and that is the only reason the distinction was available.
 

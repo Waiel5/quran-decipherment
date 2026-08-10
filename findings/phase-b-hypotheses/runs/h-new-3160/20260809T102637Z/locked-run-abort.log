@@ -1,0 +1,26 @@
+ABORT: C4: permutation null mean 0.0150312 deviates from analytic expectation 0.000686089 by more than 3 permutation-SD
+[ok] pre-reg SHA-256 verified: 6ebab8006998accd93e269937eb2a4bf1ca81325b33a3f69f90d49981722c746
+[..] loading tafsir tree (12 editions, 74,832 files) and hashing every file read
+     ar-tafsir-al-tabari              6236 verses, 6186 distinct blocks
+     ar-tafseer-al-qurtubi            6236 verses, 6116 distinct blocks
+     ar-tafsir-ibn-kathir             6236 verses, 5894 distinct blocks
+     ar-tafsir-al-baghawi             6236 verses, 6171 distinct blocks
+     ar-tafseer-tanwir-al-miqbas      6236 verses, 6080 distinct blocks
+     ar-tafseer-al-saddi              6236 verses, 5753 distinct blocks
+     ar-tafsir-al-wasit               6236 verses, 6035 distinct blocks
+     ar-tafsir-muyassar               6236 verses, 5018 distinct blocks
+     en-al-jalalayn                   6236 verses, 6171 distinct blocks
+     en-tafisr-ibn-kathir             6236 verses, 1895 distinct blocks
+     en-tafsir-ibn-abbas              6236 verses, 6209 distinct blocks
+     en-tafsir-maarif-ul-quran        6236 verses, 3037 distinct blocks
+[ok] 74832 tafsir files read and hashed
+[ok] all 8 marker-coverage figures reproduce H-NEW-2620 to 0.01 pp
+[ok] DISPUTE eligible editions: 7 (excluded: ['ar-tafsir-muyassar'])
+[ok] tie fractions: C1_DISPUTE_rank 0.1732, C2_DISPUTE_density 0.1732, C3_DIVERGENCE_L 0.0010, C4_DIVERGENCE_V 0.0002
+[ok] all 5 structural columns flagged length_dominated=False
+[ok] lemma-echo verses: 70; repeat verses: 178
+[ok] analysis n = 6095 (dropped 141 verses with undefined columns)
+[ok] length-rule floors: C1 0.00866, C2 0.00070, C3 0.00581, C4 0.01399
+     C1 dR2=0.03933 p=0.00010 floors(abs=0.010,len=0.00866) dir=+0.1181 p_rev=1.0000 -> PASS
+     C2 dR2=0.00993 p=0.00010 floors(abs=0.010,len=0.00070) dir=+0.0368 p_rev=0.9849 -> NULL
+     C3 dR2=0.00852 p=0.00010 floors(abs=0.010,len=0.00581) dir=+0.0748 p_rev=1.0000 -> NULL
