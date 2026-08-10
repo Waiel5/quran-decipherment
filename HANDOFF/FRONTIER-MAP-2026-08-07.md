@@ -172,6 +172,38 @@ enabling data is stripped or absent.
 
 ---
 
+> # ⚠ STALENESS WARNING — ADDED 2026-08-09. READ BEFORE DISPATCHING ANY ITEM.
+>
+> **This map is dated 2026-08-07 and it does not carry answered-status pointers. At least four of
+> its twenty section-B items were already executed on or before the day it was written.** Every one
+> of the four was discovered the hard way — by a lane that ran the hypothesis, wrote it up, and only
+> then grepped the ledger.
+>
+> | item | map says | actually answered by | dated |
+> |:--|:--|:--|:--|
+> | **F-3** conditionals | open, prior CONFIRMED | H-NEW-2630 — *"NOT register-coded"* | 2026-08-07 |
+> | **F-5** loanword donors | open, prior CONFIRMED-weak | H-NEW-2700 | 2026-08-07 |
+> | **F-8** sajdah loci | open, prior NULL | H-NEW-2950 | 2026-08-08 |
+> | **F-10** modality | open, *"genuinely orthogonal to what has been done"* | H-NEW-2640 | 2026-08-07 |
+>
+> Three of the five lanes dispatched on 2026-08-09 were re-derivations. They were not wasted — each
+> produced a genuine replication on an independent estimator, and F-10's channel sweep became the
+> third anchor of [[cross-finding-029-the-deciding-parameter]] — but none of that was the intent,
+> and the cost was three lanes' worth of design effort spent rediscovering known answers.
+>
+> **THE REMAINING SIXTEEN ITEMS ARE NOT CERTIFIED CLEAN.** A keyword screen over 712 finding titles
+> was run and is *not* trustworthy enough to publish as a staleness list: it flagged eight
+> candidates, of which several are plainly false positives (F-2 matched a surah-third study), **and
+> it missed two of the four cases known to be real — F-8 and F-10 both scored below threshold.** A
+> screen with false negatives on the confirmed cases cannot certify the unconfirmed ones. The four
+> above are recorded as *confirmed by execution*; nothing else here is recorded either way.
+>
+> **BINDING RULE FOR ANY LANE DISPATCHED FROM THIS MAP:** grep `findings/` and
+> `MASTER-FINDINGS-LEDGER.md` for your hypothesis **before designing the test**, and put the result
+> in the pre-registration's forking-paths log as an explicit entry. H-NEW-3010's log had sixteen
+> entries about instrument choices and not one asking whether the work already existed. The check
+> that determines *whether to run at all* belongs before the checks about *how to run*.
+
 # B. The 20 highest-value UNTOUCHED hypotheses
 
 Ranked. Each carries: (1) the hypothesis, (2) **verified** on-disk data, (3) the obvious
