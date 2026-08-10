@@ -1,0 +1,70 @@
+{
+  "NOT_PREREGISTERED": true,
+  "purpose": "MDE + power for the NULLs h-new-3070 publishes (cross-finding-029 SS3.2)",
+  "N1_meccan_only_the_load_bearing_null": {
+    "label": "Meccan only (Early+Middle+Late)",
+    "n_surahs": 65,
+    "n_tokens": 687,
+    "n_distal": 414,
+    "n_proximal": 273,
+    "obs_H1": 0.18691936083240424,
+    "obs_H2": 0.15501200307085025,
+    "worst_setting_H1": "L3_mean_verse_length|decile",
+    "p_worst_H1": 0.11758824117588242,
+    "worst_setting_H2": "L1_verse_count|decile",
+    "p_worst_H2": 0.17818218178182182,
+    "p_best_H1": 0.0022997700229977,
+    "p_best_H2": 0.014698530146985302,
+    "power_at_worst_channel": {
+      "S_star_H1": 0.21895936189414442,
+      "S_star_H2": 0.26246443181709567,
+      "S_max_H1": 0.5713754844189625,
+      "untestable_at_this_n": false,
+      "normal_approx_MDE_H1": 0.2504754122546398,
+      "power_at_delta_0.25": {
+        "mean_s1": 0.24989549789554763,
+        "power_h1": 0.737,
+        "power_h2": 0.835
+      },
+      "MDE_H1_simulated_80pct_power": 0.26092529296875
+    },
+    "observed_vs_MDE": {
+      "obs_H1": 0.18691936083240424,
+      "MDE_H1_80pct": 0.26092529296875,
+      "obs_exceeds_MDE": false
+    }
+  },
+  "N2_egyptian_revelation_order_tuple_R2": {
+    "label": "R2 Egyptian-standard revelation order",
+    "n_surahs": 88,
+    "n_tokens": 1059,
+    "n_distal": 729,
+    "n_proximal": 330,
+    "obs_H1": 12.558012220975185,
+    "obs_H2": 0.3078062412124442,
+    "worst_setting_H1": "L3_mean_verse_length|decile",
+    "p_worst_H1": 0.029897010298970104,
+    "worst_setting_H2": "L3_mean_verse_length|quintile",
+    "p_worst_H2": 0.07379262073792621,
+    "p_best_H1": 9.999000099990002e-05,
+    "p_best_H2": 0.00039996000399960006,
+    "power_at_worst_channel": {
+      "S_star_H1": 12.687759383963087,
+      "S_star_H2": 0.35322835412654857,
+      "S_max_H1": 30.799725651577504,
+      "untestable_at_this_n": false,
+      "normal_approx_MDE_H1": 14.457107573562016,
+      "power_at_delta_0.25": {
+        "mean_s1": 0.2670360303998844,
+        "power_h1": 0.0,
+        "power_h2": 0.0005
+      },
+      "MDE_H1_simulated_80pct_power": NaN
+    },
+    "observed_vs_MDE": {
+      "obs_H1": 12.558012220975185,
+      "MDE_H1_80pct": NaN,
+      "obs_exceeds_MDE": false
+    }
+  }
+}

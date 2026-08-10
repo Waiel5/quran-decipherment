@@ -1,0 +1,111 @@
+H-NEW-3090  run 20260809T080047Z
+prereg sha256 = c163a0b27c63628a16a313c0d54fab8948dce9d40605036e9bfd12bda76721b8  VERIFIED
+seed=20260509 n_perm=10000 k=24 alpha_bon=0.00208333
+QAC: 6236 verses, 77429 words
+quran-min-tashkeel.json: 114 top-level entries (cross-check only)
+phase: 86 Meccan / 28 Medinan
+register x phase crosstab:
+  ESCHATOLOGICAL   Meccan= 23 Medinan=  2  MIXED
+  EXHORT_POLEM     Meccan= 11 Medinan=  8  MIXED
+  HYMNIC_OATH      Meccan= 14 Medinan=  2  MIXED
+  LEGAL            Meccan=  0 Medinan= 15  DEGENERATE(zero permutable information)
+  NARRATIVE        Meccan= 27 Medinan=  0  DEGENERATE(zero permutable information)
+  SCRIPTURE        Meccan= 11 Medinan=  1  MIXED
+translation alignment: 3/3 positive controls PASS
+R1 tokens: 71 BIO / 114 AFF
+R2 tokens: 444 BIO / 328 AFF
+R3 tokens (both raters agree AND agree with F-20 class): 18 BIO / 42 AFF
+kappa(A,B) operating-range = 0.4683 (n=160, raw agreement 0.6312)
+kappa(A,B) full-set        = 0.3776 (n=185)
+  <ixowapN     F20=AFF  n=  7  clean=  0 (0.0%)  cross-class=  5  divine=  0
+  >aroHaAm     F20=BIO  n= 12  clean=  3 (25.0%)  cross-class=  0  divine=  2
+  mawa`liY     F20=AFF  n=  2  clean=  0 (0.0%)  cross-class=  1  divine=  0
+  mawa`liy     F20=AFF  n=  1  clean=  0 (0.0%)  cross-class=  1  divine=  0
+  mawolaY`     F20=AFF  n= 18  clean=  3 (16.7%)  cross-class=  0  divine= 11
+  nasab        F20=BIO  n=  3  clean=  0 (0.0%)  cross-class=  0  divine=  0
+  walad        F20=BIO  n= 56  clean= 15 (26.8%)  cross-class=  0  divine= 18
+  waliY~       F20=AFF  n= 86  clean= 39 (45.3%)  cross-class=  0  divine= 33
+T1 N=114  T2 N=99 (dropped 15 LEGAL surahs)  T3 N=72 over 4 mixed strata
+
+=== PRIMARY CELLS ===
+  [VERDICT   ] R1 T1_FULL                  RATIO      obs=-0.025047 null=+0.002238 p=0.5932406759324068 fail 
+  [VERDICT   ] R1 T1_FULL                  PER_WORD   obs=+0.000167 null=-0.000001 p=0.35356464353564643 fail 
+  [VERDICT   ] R1 T1_FULL                  PER_VERSE  obs=+0.003347 null=-0.000001 p=0.32456754324567544 fail 
+  [VERDICT   ] R1 T1_FULL                  MVL_RESID  obs=-0.000187 null=-0.000002 p=0.6537346265373463 fail 
+  [VERDICT   ] R1 T2_LEGAL_ABLATED         RATIO      obs=-0.099802 null=-0.005701 p=0.7092092092092092 fail 
+  [VERDICT   ] R1 T2_LEGAL_ABLATED         PER_WORD   obs=-0.000895 null=-0.000003 p=0.9465053494650535 fail 
+  [VERDICT   ] R1 T2_LEGAL_ABLATED         PER_VERSE  obs=-0.012161 null=-0.000046 p=0.9454054594540546 fail 
+  [VERDICT   ] R1 T2_LEGAL_ABLATED         MVL_RESID  obs=-0.001049 null=-0.000003 p=0.9692030796920308 fail 
+  [VERDICT   ] R1 T3_REGISTER_STRATIFIED   RATIO      obs=+0.213220 null=+0.018376 p=0.1517 fail 
+  [VERDICT   ] R1 T3_REGISTER_STRATIFIED   PER_WORD   obs=-0.000749 null=-0.000007 p=0.5736426357364264 fail 
+  [VERDICT   ] R1 T3_REGISTER_STRATIFIED   PER_VERSE  obs=-0.007358 null=-0.000101 p=0.4861513848615138 fail 
+  [VERDICT   ] R1 T3_REGISTER_STRATIFIED   MVL_RESID  obs=-0.000919 null=-0.000007 p=0.6398360163983602 fail 
+  [VERDICT   ] R3 T1_FULL                  RATIO      obs=-0.315018 null=+0.043009 p=0.920884176835367 fail 
+  [VERDICT   ] R3 T1_FULL                  PER_WORD   obs=-0.000023 null=+0.000001 p=0.5520447955204479 fail 
+  [VERDICT   ] R3 T1_FULL                  PER_VERSE  obs=+0.000756 null=+0.000012 p=0.38866113388661133 fail 
+  [VERDICT   ] R3 T1_FULL                  MVL_RESID  obs=-0.000230 null=+0.000000 p=0.9089091090890911 fail 
+  [VERDICT   ] R3 T2_LEGAL_ABLATED         RATIO      obs=-0.366300 null=+0.039523 p=0.9076138897738133 fail 
+  [VERDICT   ] R3 T2_LEGAL_ABLATED         PER_WORD   obs=-0.000234 null=+0.000001 p=0.8764123587641236 fail 
+  [VERDICT   ] R3 T2_LEGAL_ABLATED         PER_VERSE  obs=-0.002059 null=+0.000003 p=0.7451254874512548 fail 
+  [VERDICT   ] R3 T2_LEGAL_ABLATED         MVL_RESID  obs=-0.000402 null=+0.000001 p=0.942905709429057 fail 
+  [VERDICT   ] R3 T3_REGISTER_STRATIFIED   RATIO      obs=+0.270408 null=+0.016437 p=0.12342696063626296 fail 
+  [VERDICT   ] R3 T3_REGISTER_STRATIFIED   PER_WORD   obs=+0.000012 null=+0.000011 p=0.38996100389961 fail 
+  [VERDICT   ] R3 T3_REGISTER_STRATIFIED   PER_VERSE  obs=+0.004114 null=+0.000144 p=0.30526947305269475 fail 
+  [VERDICT   ] R3 T3_REGISTER_STRATIFIED   MVL_RESID  obs=-0.000192 null=+0.000012 p=0.49695030496950304 fail 
+  [diagnostic] R2 T1_FULL                  RATIO      obs=+0.157685 null=-0.001751 p=0.0046995300469953 fail 
+  [diagnostic] R2 T1_FULL                  PER_WORD   obs=+0.004418 null=+0.000033 p=0.11638836116388361 fail 
+  [diagnostic] R2 T1_FULL                  PER_VERSE  obs=+0.035062 null=+0.000086 p=0.0184981501849815 fail 
+  [diagnostic] R2 T1_FULL                  MVL_RESID  obs=+0.002301 null=+0.000028 p=0.39066093390660933 fail 
+  [diagnostic] R2 T2_LEGAL_ABLATED         RATIO      obs=+0.105344 null=-0.006019 p=0.1294870512948705 fail 
+  [diagnostic] R2 T2_LEGAL_ABLATED         PER_WORD   obs=+0.002690 null=-0.000039 p=0.4450554944505549 fail 
+  [diagnostic] R2 T2_LEGAL_ABLATED         PER_VERSE  obs=+0.011132 null=-0.000255 p=0.40635936406359363 fail 
+  [diagnostic] R2 T2_LEGAL_ABLATED         MVL_RESID  obs=+0.001692 null=-0.000039 p=0.5580441955804419 fail 
+  [diagnostic] R2 T3_REGISTER_STRATIFIED   RATIO      obs=+0.222453 null=-0.002279 p=0.0341965803419658 fail 
+  [diagnostic] R2 T3_REGISTER_STRATIFIED   PER_WORD   obs=+0.002225 null=-0.000017 p=0.20287971202879712 fail 
+  [diagnostic] R2 T3_REGISTER_STRATIFIED   PER_VERSE  obs=+0.028761 null=-0.000033 p=0.1601839816018398 fail 
+  [diagnostic] R2 T3_REGISTER_STRATIFIED   MVL_RESID  obs=+0.001014 null=-0.000015 p=0.3584641535846415 fail 
+
+ladder inputs: T1_R1=False T2_R1=False T2_R3=False T3_R1_RATIO=False
+*** VERDICT: NULL ***
+dominant channel (T2/R1, furthest p in log10 from the median) = RATIO
+worst channel (T2/R1) = MVL_RESID
+
+=== DESCRIPTIVE ABLATIONS (no Bonferroni slots, cannot change the verdict) ===
+  6.1_no_mawla           T1_FULL              RATIO      obs=-0.071545 p=0.734026597340266 fail
+  6.1_no_mawla           T1_FULL              PER_WORD   obs=-0.000428 p=0.8464153584641536 fail
+  6.1_no_mawla           T1_FULL              PER_VERSE  obs=-0.008534 p=0.8938106189381062 fail
+  6.1_no_mawla           T1_FULL              MVL_RESID  obs=-0.000548 p=0.9043095690430957 fail
+  6.1_no_mawla           T2_LEGAL_ABLATED     RATIO      obs=-0.173838 p=0.8070684821786144 fail
+  6.1_no_mawla           T2_LEGAL_ABLATED     PER_WORD   obs=-0.001149 p=0.9829017098290171 fail
+  6.1_no_mawla           T2_LEGAL_ABLATED     PER_VERSE  obs=-0.017645 p=0.9903009699030098 fail
+  6.1_no_mawla           T2_LEGAL_ABLATED     MVL_RESID  obs=-0.001237 p=0.9878012198780122 fail
+  6.2_no_surah12         T1_FULL              RATIO      obs=-0.010291 p=0.526047395260474 fail
+  6.2_no_surah12         T1_FULL              PER_WORD   obs=+0.000193 p=0.33296670332966705 fail
+  6.2_no_surah12         T1_FULL              PER_VERSE  obs=+0.003766 p=0.30646935306469353 fail
+  6.2_no_surah12         T1_FULL              MVL_RESID  obs=-0.000136 p=0.6124387561243876 fail
+  6.2_no_surah12         T2_LEGAL_ABLATED     RATIO      obs=-0.085046 p=0.672108162243365 fail
+  6.2_no_surah12         T2_LEGAL_ABLATED     PER_WORD   obs=-0.000869 p=0.9433056694330567 fail
+  6.2_no_surah12         T2_LEGAL_ABLATED     PER_VERSE  obs=-0.011742 p=0.942005799420058 fail
+  6.2_no_surah12         T2_LEGAL_ABLATED     MVL_RESID  obs=-0.000995 p=0.9641035896410359 fail
+  6.3_walad_nondivine    T1_FULL              RATIO      obs=-0.040909 p=0.6673332666733327 fail
+  6.3_walad_nondivine    T1_FULL              PER_WORD   obs=+0.000559 p=0.09719028097190281 fail
+  6.3_walad_nondivine    T1_FULL              PER_VERSE  obs=+0.010306 p=0.07749225077492251 fail
+  6.3_walad_nondivine    T1_FULL              MVL_RESID  obs=+0.000018 p=0.47185281471852814 fail
+  6.3_walad_nondivine    T2_LEGAL_ABLATED     RATIO      obs=-0.079310 p=0.6765855124737 fail
+  6.3_walad_nondivine    T2_LEGAL_ABLATED     PER_WORD   obs=-0.000187 p=0.6286371362863714 fail
+  6.3_walad_nondivine    T2_LEGAL_ABLATED     PER_VERSE  obs=-0.000913 p=0.49495050494950504 fail
+  6.3_walad_nondivine    T2_LEGAL_ABLATED     MVL_RESID  obs=-0.000513 p=0.8769123087691231 fail
+
+=== SIZE LOADING (R1) ===
+  rho_AFF_vs_log_wordcount           +0.7293
+  rho_BIO_vs_log_wordcount           +0.6957
+  rho_AFF_vs_log_versecount          +0.5837
+  rho_BIO_vs_log_versecount          +0.5356
+  rho_AFF_vs_log_MVL                 +0.6194
+  rho_BIO_vs_log_MVL                 +0.6157
+
+=== MDE / POWER for T2_LEGAL_ABLATED under R1 ===
+  RATIO      MDE@80% = 0.36  (observed -0.099802; MDE = 3.61x observed)
+  PER_WORD   MDE@80% = 0.0036044585225704965  (observed -0.000895; MDE = 4.03x observed)
+  PER_VERSE  MDE@80% = 0.05237601386899202  (observed -0.012161; MDE = 4.31x observed)
+  MVL_RESID  MDE@80% = 0.003781010369284634  (observed -0.001049; MDE = 3.60x observed)
