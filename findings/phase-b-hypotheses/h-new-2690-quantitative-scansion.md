@@ -9,6 +9,41 @@ run: runs/h-new-2690/20260807T022237Z/
 seed: 20260509
 ---
 
+> ## ⚠ CORRECTION 2026-08-10 — this finding's prose contradicts its own run artefact on H3
+>
+> §3 states that H3 fails because *"the locked direction is not satisfied."* **The run artefact says
+> otherwise.** `runs/h-new-2690/20260807T022237Z/result.json` records, in all three pausal tuples:
+>
+> ```
+> H3.direction_ok  = True        <- the direction IS satisfied
+> H3.modal_ok      = False
+> H3.modal_meter_A = "tawil"
+> ```
+>
+> **H3 fails on clause (b), the modal-meter attribution — not on direction.** The published wording
+> therefore conceals a *surviving* directional sub-result: the mufaṣṣal is significantly more metrical
+> than long Medinan surahs (diff_B_minus_A = **+0.07292, p = 1×10⁻⁴, replicated**). Correcting this
+> **adds** a confirmed result rather than removing one.
+>
+> **And the refuted half is more strongly refuted than "does not pass" conveys.** Ranking the sixteen
+> buḥūr by `H2_per_meter.median_obs` (lower = better fit), **rajaz is 15th of 16 in every tuple**
+> (0.33333 / 0.33333 / 0.34336) and takes **zero** modal votes in the mufaṣṣal (ṭawīl 308, wāfir 158,
+> madīd 34, munsariḥ 18, kāmil 17, mutaqārib 13). The prediction that sajʿ-dense short surahs sit near
+> *rajaz* is not merely unsupported — it is close to inverted.
+>
+> **A further flag on H2, not applied here.** Metre-specificity spread (median baḥr − best baḥr)
+> against matched noise is **1.20× / 1.22× / 1.30×** across the three tuples. If that holds under the
+> per-unit statistic, `inference_verdicts.H2 = "FALSIFIED-buhur-matched"` is reporting **general
+> rhythmic regularity rather than metre-specificity**, and H2 should not be cited as a falsification
+> of al-Bāqillānī until the post-hoc settles it. This is the same paired-vs-unpaired defect
+> [[h-new-2730]] §7 used to demote this finding's "metrical structure above noise" claim.
+>
+> Also unresolved: [[AUDIT-TANWIN-DELETION-2690]] — this script's `DROP` set deletes 77.66% of the
+> corpus's tanwīn before syllabification, in all three pausal tuples. Every quantity above that is
+> computed from syllable weight needs re-running under the repaired phonemiser.
+>
+> The pre-registration is **not** edited. This notice records the discrepancy; it does not rewrite it.
+
 > ## ⛔ CORRECTION NOTICE — 2026-08-07: the scansion three-way ordering does NOT survive a matched control
 >
 > H-NEW-2690 reported **poetry < this corpus < prose** on `d_min` and read it as
