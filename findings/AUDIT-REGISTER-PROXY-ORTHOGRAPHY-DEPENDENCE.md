@@ -51,8 +51,7 @@ carries **367 fewer word tokens** (82,260 vs 82,627). Localised: **363 lines dif
 and 4 by −2.** Every inspected case is vocative joining. The −2 cases are three-word phrases
 collapsing to one, as at Q 20:94 (`يَا ابْنَ أُمَّ` → `يَبْنَؤُمَّ`).
 
-**The whole 367-token gap between the project's two "same text, different orthography" files is one
-grammatical phenomenon.**
+~~**The whole 367-token gap … is one grammatical phenomenon.**~~ **REFUTED 2026-08-10 — see §6.5. It is neither one phenomenon nor one mechanism.**
 
 ## 3. Why this is a fragility worth recording rather than a defect
 
@@ -183,4 +182,49 @@ With spaces ignored, **only 2,092 of 6,236 lines (33.5%) are character-identical
 orthographies under `bare()`. The 367-token gap is a **tokenisation-level** difference; character-level
 divergence runs to roughly **two-thirds of all verses**. The published claim only ever concerned the
 token gap, so nothing above is contradicted — but **F-9's real surface is far larger than 363 lines.**
+
+### 6.5 REFUTED — the exhaustive classification is done and the claim does not hold
+
+The third F-9 lane classified **all 363 lines**, and §2.1's claim fails, narrowly but definitely.
+367 tokens resolve into **366 merge sites**, exhaustively:
+
+| sites | tokens | share | class | example |
+|--:|--:|--:|:--|:--|
+| **361** | 362 | **98.64%** | vocative *yā* | يَٰٓأَيُّهَا ← يَا أَيُّهَا |
+| **4** | 4 | **1.09%** | **presentative *hā*** | هَٰٓأَنتُمْ ← هَا أَنتُمْ |
+| **1** | 1 | **0.27%** | **assimilative** | وَأَلَّوِ ← وَأَن لَّوِ |
+
+**Verified here** at Q 3:66, 3:119, 4:109 and 47:38 — the Uthmānī carries هَٰٓأَنتُمْ where the simple
+text has هَا + أَنتُمْ, delta −1 at each. **هَا is the presentative/tanbīh particle and أنتم is the
+subject of a nominal sentence — there is no vocative in the clause.** It merges by the *same*
+concatenative rule as *yā*, which is precisely why every sampling pass mistook it for one.
+**Same mechanism, different particle.**
+
+**Q 72:16 is a fourth mechanism and resolves at no level of the cascade.** The *nūn* of أَنْ
+assimilates into the *lām* of لَوِ and survives in the rasm only as a shadda. **Nothing is
+concatenated — a consonant is deleted.** The lane declined to add a rule absorbing it, on the grounds
+that absorbing it would hide it. That is the right call.
+
+**So there are four mechanisms, not one:** concatenative (322 sites), rewrite-mediated (38),
+elisive (1, Q 20:94), assimilative (1, Q 72:16).
+
+### 6.6 Exhaustiveness established rather than asserted
+
+The gap all four earlier attempts left open was whether the 363 lines contain *every* merge. The
+aligner was run over **all 6,236 verses**: **365 merge events, ZERO split events, and none of either
+on an equal-token-count line.** So no merge is masked by a compensating split, and the 363 lines are
+the complete set. **That is the difference between a sample and a census, and it is what four
+previous attempts could not deliver.**
+
+### 6.7 Two further encoding bugs, found by codepoint census rather than by whether they helped
+
+- **NFC was composing alef + U+0653 into آ.** U+0653 occurs **5,376×** in the Uthmānī file and **0×**
+  in the simple one, and sits on mīm, lām, sīn, ṣād, ʿayn, qāf, kāf and nūn — it is the recitation
+  *madd* sign, never part of a letter. It must be dropped **before** NFC.
+- **U+0640 TATWEEL is a hamza chair here**: 772 of 812 tatweels are immediately followed by U+0654,
+  and 772 of 773 U+0654 sit on one. The pair *is* the letter ء. Previously both vanished and the
+  hamza was lost.
+
+Both were diagnosed by counting the codepoint in both files, **not** by whether fixing them improved
+the answer — the discipline that separates a repair from a tuning.
 

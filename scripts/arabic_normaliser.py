@@ -100,20 +100,39 @@ that this merge deletes two alefs and changes a hamza seat."""
 # --- normalisers -------------------------------------------------------------
 
 def bare(text):
-    """Letter skeleton, alef-preserving. Satisfies A1, A2, A4."""
-    # NFC first: the Uthmani text writes some hamza carriers as base + U+0654,
-    # and alef-madda as alef + U+0653. NFC folds those onto the precomposed
-    # letters the simple text uses, so the two orthographies agree before any
-    # stripping happens.
-    text = unicodedata.normalize("NFC", text)
+    """Letter skeleton, alef-preserving. Satisfies A1, A2, A4.
+
+    Step order matters and each step is justified by a codepoint count over the
+    two corpus files (both counts printed by `evidence()`):
+
+    1. Drop U+0653 MADDAH ABOVE. In the Uthmani file it occurs 5,376 times and
+       in the simple file 0 times, and it sits on mim, lam, seen, sad, ain, qaf,
+       kaf and nun as well as on alef -- so it is the recitation madd sign, not
+       part of any letter. It MUST be dropped before NFC, because NFC would
+       otherwise compose alef+U+0653 into U+0622 ALEF WITH MADDA and invent a
+       letter the Uthmani text does not contain (it has zero U+0622).
+    2. U+0640 TATWEEL + U+0654 HAMZA ABOVE -> U+0621 HAMZA. Of 812 tatweels,
+       772 are immediately followed by U+0654, and 772 of the 773 U+0654 sit on
+       a tatweel. The tatweel is a hamza chair, so the pair is one letter.
+    3. U+0670 SUPERSCRIPT ALEF and U+0671 ALEF WASLA -> U+0627 ALEF. (This is
+       what A2 and A4 require. The remaining lone U+0654, at Q 2:72, sits on a
+       U+0670, so doing this before NFC lets it compose correctly to U+0623.)
+    4. NFC, composing any surviving U+0654/U+0655 onto its carrier letter.
+    5. Drop the remaining harakat, Quranic annotation marks and tatweels.
+    6. Decompose U+0622 ALEF WITH MADDA -> hamza + alef. The simple file uses
+       U+0622 1,511 times and the Uthmani file never; the Uthmani writes the
+       same letter as hamza + alef. This makes one letter have one spelling.
+    """
+    text = text.replace("ٓ", "")                       # 1
+    text = text.replace(TATWEEL + "ٔ", "ء")            # 2
+    text = text.replace(SUPERSCRIPT_ALEF, ALEF)        # 3
+    text = text.replace(ALEF_WASLA, ALEF)
+    text = unicodedata.normalize("NFC", text)          # 4
     out = []
-    for ch in text:
+    for ch in text:                                    # 5
         if ch in TASHKEEL or ch in QURANIC_ANNOTATION or ch == TATWEEL:
             continue
-        if ch == SUPERSCRIPT_ALEF or ch == ALEF_WASLA:
-            out.append(ALEF)
-            continue
-        out.append(ch)
+        out.append("ءا" if ch == "آ" else ch)          # 6
     return "".join(out)
 
 
