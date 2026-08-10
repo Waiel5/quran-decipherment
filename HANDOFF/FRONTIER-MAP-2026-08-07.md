@@ -247,6 +247,39 @@ enabling data is stripped or absent.
 > evidence *because this calibration block told it to*. Treat the confound line as a hypothesis to
 > test, not a finding to inherit.
 >
+> ## 📊 SECTION-B SCORECARD — updated 2026-08-10. 13 of 20 resolved.
+>
+> | item | topic | resolved by | outcome |
+> |:--|:--|:--|:--|
+> | F-2 | scansion | H-NEW-2690 / 2730 | **already answered** — both halves refuted |
+> | F-3 | conditionals | H-NEW-2630 | **already answered** — NULL |
+> | F-4 | deixis | H-NEW-2960 + 3070 | **half already answered**; PASS, but as a *step* not a gradient |
+> | F-5 | loanword donors | H-NEW-2700 / 3020 | **already answered** — NULL |
+> | F-6 | derived-form profile | H-NEW-3130 | NULL, 0 of 9 cells |
+> | F-7 | ṣīghat al-mubālagha | H-NEW-3150 | PASS as locked, **not believed** — control artefact |
+> | F-8 | sajdah loci | H-NEW-2950 / 3030 | **already answered** — NULL, underpowered-severe |
+> | F-10 | modality | H-NEW-2640 / 3040 | **already answered** — DIRECTIONAL |
+> | F-11 | tafsīr disagreement | H-NEW-3160 | NULL, 0 of 3 |
+> | F-12 | asbāb chronology | H-NEW-3120 | NULL — instrument truncated at surah 77 |
+> | F-13 | reception weight | H-NEW-3000 | **already answered** — NULL |
+> | F-14 | quantifier scope | H-NEW-3080 | **CONFIRMED** — on three *baʿḍ* tokens in two verses |
+> | F-20 | kinship | H-NEW-3090 | NULL, effect reversed |
+>
+> **Seven of the thirteen were already answered before dispatch.** Of all thirteen: **eight NULL-ish,
+> three pass-ish, and the single substantive CONFIRMED (F-14) rests on a denominator of three
+> tokens.**
+>
+> **Still unresolved (7):** F-1 waqf *(carries a data warning — the file it names is a 13-way
+> outlier)* · F-9 rasm *(three lanes dispatched, none produced output)* · F-15 legal formulae
+> *(check H-NEW-2800 first)* · F-16 pausal rhyme *(check H-NEW-2870 first)* · F-17 dependency depth
+> *(needs EQTB; note the parser contamination)* · F-18 translation invariance *(check H-NEW-710
+> first)* · F-19 Buckwalter phoneme.
+>
+> **What this scorecard is for.** Not to disparage the map — its *data* lines have been accurate
+> almost everywhere, and its *confound* lines changed four designs for the better. It is to record
+> that **"UNTOUCHED" was the least reliable field in the document**, wrong on seven of thirteen, and
+> that the cost of trusting it was three lanes' full design effort before Step 0 was made mandatory.
+
 > **BINDING RULE FOR ANY LANE DISPATCHED FROM THIS MAP:** grep `findings/` and
 > `MASTER-FINDINGS-LEDGER.md` for your hypothesis **before designing the test**, and put the result
 > in the pre-registration's forking-paths log as an explicit entry. H-NEW-3010's log had sixteen
