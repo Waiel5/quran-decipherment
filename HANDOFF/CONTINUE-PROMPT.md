@@ -222,7 +222,24 @@ Four failures were committed and self-reported in a single night. Do not repeat 
 - **The parser-free channel** — attached object pronouns from QAC alone. Correct rule: consume only the obligatory subject suffix, THEN count remaining `PRON` segments. Do NOT drop every pronoun matching subject PNG — that deletes 311 genuine objects and the miss rate is form-correlated.
 - **`HANDOFF/FRONTIER-MAP-2026-08-07.md`** — coverage census over all ~900 phase-b files, 20 ranked untouched hypotheses with verified data paths and named confounds, contradiction audit, and an inventory of acquired-but-unread assets. **Read this before choosing a target.**
 - **`findings/CROSS-FINDING-INDEX.md`** — disambiguation for the duplicate cross-finding IDs (025-028 and 010/012/023 collide across two directories).
-- **Idle assets worth opening:** 12-edition per-verse tafsīr (77,437 files — H-NEW-2620 opened it and got a NULL), al-Wāḥidī *asbāb* (0 scripts), Jeffery loanwords (1 script), `quran-uthmani-txt.txt` (0 scripts).
+- **Idle assets worth opening:** 12-edition per-verse tafsīr (77,437 files — H-NEW-2620 opened it and got a NULL), ~~al-Wāḥidī *asbāb* (0 scripts)~~ **← DO NOT USE AS A COVERAGE INSTRUMENT, see below**, Jeffery loanwords (1 script — but see H-NEW-3020: donor labels are 52% inter-rater agreement, κ=0.386), `quran-uthmani-txt.txt` (0 scripts — but see below).
+
+  > **⚠ TWO OF THESE ASSETS ARE BROKEN IN WAYS THAT ARE INVISIBLE UNTIL MEASURED (added 2026-08-10).**
+  >
+  > **al-Wāḥidī *asbāb*** — `spa5k-tafsir-api/en-asbab-al-nuzul-by-al-wahidi/` is **truncated at surah 77**.
+  > Surahs 78–114 are absent entirely (37 surahs, **35 of them Early Meccan**). Proof that this is a scrape
+  > boundary and not al-Wāḥidī's own silence: **Q 72 and Q 77 have files carrying zero entries** — the format
+  > can express "no occasion here" — while 78–114 have no file at all. Sibling editions in the same tree carry
+  > **228 files each; this one has 152.** A coverage variable built here **is the indicator `surah ≤ 77`** and
+  > would predict chronology at ρ≈+0.74, p≈10⁻²⁰, measuring where a scraper stopped. The directory is also a
+  > **blend** — ~72% is Maybudī's Sufi *Kashf al-asrār*, not al-Wāḥidī (PROXY-CLAIMS §384–486; all seven verses
+  > of Q 1 are the Sufi text). See [[AUDIT-TWO-BLOCKED-INSTRUMENTS-2026-08-10]].
+  >
+  > **`quran-uthmani-txt.txt`** — carries **367 fewer word tokens** than `quran-simple-txt.txt` despite aligning
+  > line-for-line at 6,264. The entire gap is **vocative joining**: *yā* is written joined to its noun in the
+  > Uthmānī rasm (`يَٰٓأَيُّهَا`, one token) and separate in the simple text (`يَا أَيُّهَا`, two). Any
+  > word-aligned diff across these two files misaligns on 363 lines. See
+  > [[AUDIT-REGISTER-PROXY-ORTHOGRAPHY-DEPENDENCE]].
 
 ## The public-facing material needs rebuilding
 
