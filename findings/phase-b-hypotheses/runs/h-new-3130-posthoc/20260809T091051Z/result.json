@@ -1,0 +1,189 @@
+{
+  "H1_confusion_L0": {
+    "eschat": {
+      "n": 16,
+      "predicted_as": {
+        "eschat": 2,
+        "hymn": 3,
+        "legal": 3,
+        "narrative": 2,
+        "oath": 2,
+        "other": 3,
+        "polemic": 1
+      },
+      "recall": 0.125
+    },
+    "hymn": {
+      "n": 9,
+      "predicted_as": {
+        "legal": 1,
+        "oath": 3,
+        "polemic": 5
+      },
+      "recall": 0.0
+    },
+    "legal": {
+      "n": 17,
+      "predicted_as": {
+        "hymn": 1,
+        "legal": 10,
+        "narrative": 1,
+        "oath": 2,
+        "other": 3
+      },
+      "recall": 0.5882352941176471
+    },
+    "narrative": {
+      "n": 26,
+      "predicted_as": {
+        "hymn": 1,
+        "legal": 1,
+        "narrative": 19,
+        "other": 2,
+        "polemic": 3
+      },
+      "recall": 0.7307692307692307
+    },
+    "oath": {
+      "n": 15,
+      "predicted_as": {
+        "eschat": 1,
+        "hymn": 5,
+        "legal": 2,
+        "narrative": 4,
+        "other": 2,
+        "polemic": 1
+      },
+      "recall": 0.0
+    },
+    "other": {
+      "n": 23,
+      "predicted_as": {
+        "eschat": 1,
+        "legal": 9,
+        "narrative": 5,
+        "other": 5,
+        "polemic": 3
+      },
+      "recall": 0.21739130434782608
+    },
+    "polemic": {
+      "n": 7,
+      "predicted_as": {
+        "hymn": 1,
+        "narrative": 4,
+        "polemic": 2
+      },
+      "recall": 0.2857142857142857
+    }
+  },
+  "classes": [
+    "eschat",
+    "hymn",
+    "legal",
+    "narrative",
+    "oath",
+    "other",
+    "polemic"
+  ],
+  "n_perms": 10000,
+  "parent_run": "runs/h-new-3130/20260809T090605Z",
+  "per_register_descriptive": {
+    "eschat": {
+      "mean_form_IV_share": 0.1926483206295575,
+      "mean_form_V_VI_share": 0.034275163980220055,
+      "mean_residual_IV": 0.016865841230653954,
+      "mean_root_expected_IV": 0.17578247939890357,
+      "mean_verb_tokens": 38.9375,
+      "mean_verse_len": 4.64230851310369,
+      "n_surahs": 16
+    },
+    "hymn": {
+      "mean_form_IV_share": 0.1486841285522299,
+      "mean_form_V_VI_share": 0.055391893642501064,
+      "mean_residual_IV": -0.018139132460785252,
+      "mean_root_expected_IV": 0.16682326101301514,
+      "mean_verb_tokens": 22.555555555555557,
+      "mean_verse_len": 5.19327485380117,
+      "n_surahs": 9
+    },
+    "legal": {
+      "mean_form_IV_share": 0.21281944659857632,
+      "mean_form_V_VI_share": 0.03953461863494029,
+      "mean_residual_IV": 0.012099601234299338,
+      "mean_root_expected_IV": 0.20071984536427695,
+      "mean_verb_tokens": 368.3529411764706,
+      "mean_verse_len": 19.41154244826009,
+      "n_surahs": 17
+    },
+    "narrative": {
+      "mean_form_IV_share": 0.160165936376152,
+      "mean_form_V_VI_share": 0.019190340488775263,
+      "mean_residual_IV": -0.004633664403043247,
+      "mean_root_expected_IV": 0.16479960077919525,
+      "mean_verb_tokens": 262.65384615384613,
+      "mean_verse_len": 10.804679104395102,
+      "n_surahs": 26
+    },
+    "oath": {
+      "mean_form_IV_share": 0.1839622314921675,
+      "mean_form_V_VI_share": 0.06737284990407708,
+      "mean_residual_IV": 0.0014041188105281396,
+      "mean_root_expected_IV": 0.18255811268163938,
+      "mean_verb_tokens": 30.4,
+      "mean_verse_len": 4.338962457671064,
+      "n_surahs": 15
+    },
+    "other": {
+      "mean_form_IV_share": 0.21856430214837305,
+      "mean_form_V_VI_share": 0.02116514148989687,
+      "mean_residual_IV": 0.01679087585311735,
+      "mean_root_expected_IV": 0.2017734262952556,
+      "mean_verb_tokens": 145.0,
+      "mean_verse_len": 12.868241572429257,
+      "n_surahs": 23
+    },
+    "polemic": {
+      "mean_form_IV_share": 0.08452175596022604,
+      "mean_form_V_VI_share": 0.0137236852472836,
+      "mean_residual_IV": -0.033051290353644625,
+      "mean_root_expected_IV": 0.11757304631387065,
+      "mean_verb_tokens": 225.57142857142858,
+      "mean_verse_len": 10.479557050092764,
+      "n_surahs": 7
+    }
+  },
+  "prereg_gap": "prereg §4.3 registered a null for ROOT-B D1/D2 but not for ROOT-B H1",
+  "root_B_H1": {
+    "L0": {
+      "accuracy_raw_profile": 0.336283185840708,
+      "accuracy_root_residualised": 0.26548672566371684,
+      "null_mean": 0.1448522123893805,
+      "null_sd": 0.037669662255720056,
+      "p_label_shuffle": 0.0015998400159984002
+    },
+    "L1": {
+      "accuracy_raw_profile": 0.30973451327433627,
+      "accuracy_root_residualised": 0.24778761061946902,
+      "null_mean": 0.14562035398230092,
+      "null_sd": 0.037561533809835145,
+      "p_label_shuffle": 0.0058994100589941
+    },
+    "L2": {
+      "accuracy_raw_profile": 0.3185840707964602,
+      "accuracy_root_residualised": 0.23893805309734514,
+      "null_mean": 0.1461592920353982,
+      "null_sd": 0.0375418882660297,
+      "p_label_shuffle": 0.013298670132986702
+    },
+    "L3": {
+      "accuracy_raw_profile": 0.22123893805309736,
+      "accuracy_root_residualised": 0.26548672566371684,
+      "null_mean": 0.14633451327433628,
+      "null_sd": 0.03776959463585555,
+      "p_label_shuffle": 0.0022997700229977
+    }
+  },
+  "seed": 20260509,
+  "status": "POST-HOC — NOT PRE-REGISTERED, NOT VERDICT-BEARING"
+}

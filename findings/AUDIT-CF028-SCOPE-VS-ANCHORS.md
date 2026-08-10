@@ -138,3 +138,31 @@ the findings themselves at publication. **Three separate times on 2026-08-09 the
 converted an intended discovery into a citation.** That is the check working, and it is the reason
 nothing in this section is claimed as new.
 
+---
+
+## 8. Update 2026-08-10 — the record is 0 of 7, and the seventh was the one that could have complicated §7
+
+H-NEW-3130 (derived-form profile against register) is the seventh pre-registered extension. **NULL,
+0 of 6 arms.** It matters more than the six before it for one reason:
+
+**It is the only candidate whose predictor overlapped the construct that *defines* the legal
+register.** `آمنوا` parses as a **Form IV verb** — 537 Form IV verbs carry `ROOT:Amn`, 15.4% of all
+Form IV verb tokens. §7's mechanism predicts that a feature sharing the defining construct should
+*succeed*. So this was the test that could have complicated it.
+
+**It did not.** Ablating the 91 full-vocative Form IV tokens moves the flagship contrast from
+−0.0285 to −0.0248 — **the overlap is real, measured, and immaterial.** §7's mechanism survives the
+one test designed to strain it.
+
+**What killed it instead was the confound the map named**: permuting verb forms *within root*
+reproduces **32.19 of the observed 33.63 accuracy points — 95.7%.** Against a null that knows nothing,
+the form profile is a strong classifier (p = 0.0001); against a null that knows only which roots each
+surah uses, it is worth 1.4 points at p = 0.41. Root identity does not merely intrude on the form
+profile; it very nearly *is* the form profile.
+
+And the mechanism of the residual is legible: the classifier recovers **narrative (recall 0.731) and
+legal (0.588) and nothing else** — oath 0.000, hymn 0.000. Those two are the long registers (mean
+verse length 10.80 and 19.41 against 4.34 and 5.19). *"Register signature"* here means **"long surahs
+separate from short ones,"** which is exactly why residualising on verse length destroys it — a
+**385× p-swing**, the largest recorded in this project.
+
