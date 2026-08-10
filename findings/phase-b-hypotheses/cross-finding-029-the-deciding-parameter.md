@@ -1,10 +1,10 @@
 ---
 id: cross-finding-029
-title: The deciding parameter — in five independent results on one day, the quantity that fixed the verdict was not the quantity under test
+title: The deciding parameter — the quantity that fixed the verdict was not the quantity under test; six distinct parameters found in two days
 date: 2026-08-09
 author: Waiel Al-Shujaa
 type: methodological
-status: CONVERGENT — five anchors, all from 2026-08-09, all self-reported
+status: CONVERGENT — 5 anchors 2026-08-09, extended to 6 deciding parameters 2026-08-10; all self-reported
 ---
 
 # Cross-finding 029 — the deciding parameter
@@ -114,7 +114,7 @@ yet** — and that, rather than case-by-case vigilance, is the durable form of t
 
 ---
 
-## 5. Extension, 2026-08-10 — the law generalises past length, and the parameter list is now five
+## 5. Extension, 2026-08-10 — the law generalises past length, and the parameter list is now SIX
 
 §1's five anchors were all found on 2026-08-09. Four further lanes closed on 2026-08-10 and each
 surfaced a deciding parameter the original file did not name. The pattern is not "length is
