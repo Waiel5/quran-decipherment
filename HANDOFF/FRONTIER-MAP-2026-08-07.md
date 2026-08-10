@@ -230,6 +230,19 @@ reduce to length, frequency, or genre).
 **Classical anchor.** al-Sajāwandī *ʿIlal al-wuqūf*; al-Suyūṭī *Itqān* nawʿ 27 (*fī al-waqf wa-l-ibtidāʾ*). `data/literature/classical-tafsir/suyuti-al-itqan-fi-ulum-al-quran-english.pdf` **is on disk** — nawʿ-level verification is possible per the project's own MW-6 discipline.
 **Prior.** CONFIRMED. Highest-EV item on this list because the instrument is free, in-corpus, and the project has been deleting it for months.
 
+> **⚠ DATA WARNING ADDED 2026-08-09 — READ BEFORE RUNNING F-1.** The six counts above reproduce
+> **exactly** against `quran-full-tashkeel.json`. But that file is the **only one of thirteen** in the
+> repo giving those numbers. Twelve others — including `quran-min-tashkeel.json`,
+> `quran-no-tashkeel.json` and all ten Tanzil alt-text files — agree with each other and disagree with
+> it: ṣlà 1682, qlà 603, mīm 22, jīm 1972, muʿānaqa 12, **and lā (U+06D9) ×68 where full-tashkeel has
+> ZERO**. jīm moves *up* by 111 while qlà moves *down* by 92, so this is a **re-grading, not a
+> truncation**. Critically, **lā is the mark meaning *do not stop*** — the inventory's only
+> prohibition grade — so running F-1 on the file named here would test a boundary hierarchy with its
+> entire negative grade silently absent. Note too that `quran-no-tashkeel.json` carries MORE waqf
+> marks than `quran-full-tashkeel.json`; "no tashkeel" strips vowels, not pause marks.
+> Which inventory is correct is **not** settled. See [[AUDIT-WAQF-MARK-INVENTORY-DIVERGENCE]] —
+> the source file is now a rules-tuple element and F-1 must run under **both** inventories.
+
 ### F-2. Real quantitative scansion — the Quran's sabab/watid profile vs the 16 buḥūr
 **Hypothesis.** Extracting actual syllable weight from the vocalised text and building the long/short sequence per verse will show the Quran occupies a *distinct region* of prosodic space rather than merely a distinct length distribution — and that saj‛-dense short surahs sit closer to *rajaz*/*sarīʿ* than long Medinan prose does.
 **Data (verified).** `quran-text/quran-full-tashkeel.json` — 122,777 fatḥa, 46,069 kasra, 37,454 ḍamma, 22,678 shadda, 9,726 superscript alef, 3,988 sukūn, 37,147 U+06E1 (Uthmānī sukūn variant), plus tanwīn. That is everything needed for CV templating. Controls: 7 muʿallaqāt with known meters at `data/baseline-corpora/raw/muallaqa-*.txt` and 8 dīwāns.
