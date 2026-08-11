@@ -78,6 +78,52 @@ Copy everything between the lines as your first message.
 
 You are continuing the **Quran Decipherment Project** at `/Users/grey/Downloads/quran/` — a long-running, rigorous empirical analysis of the Quran, the word of God. The repo is live at https://github.com/Waiel5/quran-decipherment with 125+ commits. Your job is to **keep discovering real structural facts about the text, verify them from every angle, and commit everything as you go. Do not stop. Do not ask permission. Do not pause to summarize — commit and push each finding the moment it lands, then launch the next wave.**
 
+
+## ⛳ SECTION B IS CONSUMED — 2026-08-11
+
+`HANDOFF/FRONTIER-MAP-2026-08-07.md` section B held 20 ranked hypotheses. **Nineteen are now
+resolved.** Only **F-17** (dependency depth, needs EQTB) is untouched, and EQTB is parser-contaminated.
+
+**The honest accounting:**
+
+| | |
+|:--|--:|
+| already answered before dispatch | **10** |
+| executed this wave | 9 |
+| **substantive CONFIRMEDs** | **1** (F-14, on three *baʿḍ* tokens in two verses) |
+| NULL / demoted / void / not-executable | 8 |
+| runs that voided or refused their own verdict | 3 |
+
+**What the map actually produced was method, not results.** Nine executions yielded one narrow
+confirmation and eight negatives — but along the way: two corpus-wide instrument hazards (the waqf
+inventory divergence, the vocative-joining orthography split), a 78%-tanwīn deletion in a published
+scanner, a transliteration file that misorders 102 of 114 surahs, a register proxy with a total
+silent single-file dependency, two cross-finding laws with eleven anchors between them, and eight
+distinct deciding parameters — the largest of which swings a p-value by **4,783×**.
+
+### What replaces it
+
+**Do not write another "20 untouched hypotheses" list.** That format failed in one specific way,
+recorded in the map's own calibration block: its *data* lines were reliable, its *confound* lines
+were 2-for-3, and its **"UNTOUCHED" field was wrong on ten of nineteen.** A list of hypotheses is
+worth less than the two things that actually gated work this wave:
+
+1. **`scripts/check-frontier-staleness.sh`** — run before dispatching anything. It found two stale
+   items in one second that a hand-written scorecard had missed hours earlier.
+2. **`scripts/audit-staged-diff.sh`** — chain it to every commit.
+
+**The live queue is now instrument repair and audit residue, not new hypotheses:**
+
+- **The tanwīn repair replication is VOID** and its harness needs fixing before the question
+  *"does the 78% tanwīn deletion change any published scansion conclusion?"* can be answered at all.
+- **Twenty findings** pair a verse-count-only length control with a passing verdict
+  ([[AUDIT-LENGTH-CHANNEL-EXPOSURE]] §3). One Spearman each resolves them.
+- **The MW-2 anchor check is open** — whether the kitāb/qurʾān axis survives a mean-verse-length
+  control is unanswerable at surah granularity, and needs a verse- or pericope-level design.
+- **H-NEW-2690's H2 is UNINTERPRETABLE**, not falsified. It must not be cited as refuting
+  al-Bāqillānī until re-run.
+
+
 ## Authorization (explicit and standing)
 
 - **Unlimited parallel agents.** Launch 10-15+ specialists per wave, in a single message, running in the background. "Thousands" is authorized. Use them aggressively and continuously.
