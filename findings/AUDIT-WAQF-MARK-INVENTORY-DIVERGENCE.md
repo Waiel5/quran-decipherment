@@ -95,3 +95,52 @@ field verified perfectly and the unchecked one had drifted.
 
 Related: [[cross-finding-029-the-deciding-parameter]] · [[PROXY-CLAIMS]] · [[ABSENCE-CLAIMS]] ·
 [[UNIT-DRIFT-DEFECT]]
+
+---
+
+## 8. CORRECTION — §4's absence claim is FALSE, and it is this project's own defect class
+
+§4 stated that **"no finding using pause marks has ever declared which file it used as a rules-tuple
+element."** That is false on disk, in two places, both **dated 2026-08-07 — two days before this
+audit was written**:
+
+- **`h-new-2560-fasila-clause-seal.md` line 18**, YAML front-matter:
+  `rules_tuple: "(no-tashkeel for the waqf join, EQTB segment-token, …)"`
+- **The same file, line 365**, an entire section headed
+  **"H5 rules-tuple disclosure — the waqf annotation is NOT identical across text variants"**, which
+  opens: *"Added 2026-08-07 after an independent audit. This is a disclosure the original write-up
+  owed and did not give."* It tabulates the glyph counts across all three variants, records that
+  full-tashkeel has **zero lā**, 92 fewer qlà and 111 more jīm, and **self-demotes H5 to
+  SINGLE-TUPLE on that basis.**
+- `h-new-2610-waqf-prosody.md` §7 does the same, and its §0.5 **retracts its own priority claim** in
+  2560's favour.
+
+**So the divergence was found on 2026-08-07, disclosed against its own finder's result, and then
+re-derived independently on 2026-08-09 by this audit — which asserted its absence.**
+
+This is [[ABSENCE-CLAIMS]]'s defect, committed **inside the file written to catch a data-provenance
+defect.** The rule that file states is *"claims of absence are the least audited claims in any
+project, because nothing downstream fails when they are wrong."* Nothing downstream failed here
+either.
+
+**What survives:** the counts in §1 and §3 are correct and independently reverified; the binding
+consequence in §5 is correct and remains; the blind-control generalisation in §3 is correct and was
+genuinely new. **What does not:** §4's absence sentence, and any reading of §6's "general lesson"
+that implies the project had not noticed. It had, first, and said so against its own interest.
+
+### 8.1 And the automated staleness check has a confirmed false negative
+
+`scripts/check-frontier-staleness.sh` does **not** list F-1 — because `h-new-2610-waqf-prosody.md`
+carries no `frontier_item:` tag. The script's own printed caveat is therefore not hypothetical:
+**absence from its output is not proof an item is open.** F-1 is the first confirmed instance.
+A grep on the topic words found it immediately.
+
+### 8.2 Two further corrections inherited from the same lane
+
+- **The map cites *Itqān* nawʿ 27 for waqf; the recension on disk is nawʿ 28** (H-NEW-2610 §0.1,
+  verified at line 5092). Third nawʿ-number error found in this repo.
+- **The muṣḥaf places no waqf mark at any verse-end at all** — al-Suyūṭī's rule exempts it
+  (nawʿ 28, line 5245). So F-1's clause *"grade predicts verse-final rhyme-class stability"* has **no
+  verse-final marks to work with**; H-NEW-2610's H2 correctly re-read it as the pre-pause word at
+  verse-*internal* marks.
+
