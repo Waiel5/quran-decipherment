@@ -249,3 +249,55 @@ carry which grades — stronger grades sit in longer verses (mean host length 22
 the three well-powered rungs, marks-per-verse flat at ~2.4) — and not a fact about where inside a
 verse a grade falls.
 
+---
+
+## 6. Eight anchors in, an ordering — and it runs the wrong way round
+
+The eight deciding parameters, ranked by the largest swing each produced:
+
+| rank | parameter | largest swing | how close to the subject matter? |
+|--:|:--|:--|:--|
+| 1 | **null model** | **4,783×** | none — pure methodology |
+| 2 | length channel | 1,270× | none — pure methodology |
+| 3 | coarsening choice | 190× | none — pure methodology |
+| 4 | lemma vs root | 126× | instrument encoding |
+| 5 | rank vs density | 3.96× | pure methodology |
+| 6 | control feature set | PASS → NULL | methodology |
+| 7 | **orthographic convention** | **sign flip** | instrument encoding |
+| 8 | chronology instrument | PASS → NULL | **subject matter** |
+| — | rater identity | κ 0.386–0.468 | instrument |
+
+**The pattern is uncomfortable and worth stating plainly: the parameters that decide verdicts are
+mostly the ones with nothing to do with the Quran.**
+
+[[h-new-3180-waqf-boundary]] makes it visible inside a single run. Its four free parameters, ranked
+by its own sweep:
+
+```
+null model 4,783×  ≫  orientation 3.56×  >  length channel 2.42×  >  inventory 1.11×
+```
+
+**The inventory — *which Sajāwandī marks exist in the text*, the only parameter about the subject
+matter — mattered least, by a factor of 4,300.** The brief was built around it. Three text variants
+spanning a genuine editorial disagreement moved ρ by 11%; a choice about what to shuffle moved the
+p-value by three and a half orders of magnitude.
+
+### 6.1 What this does and does not imply
+
+**It does not imply the substantive questions are unanswerable.** [[h-new-3130-derived-form-fingerprint]]
+was killed by a *substantive* control — permuting forms within root reproduced 95.7% of the effect,
+which is a fact about Arabic morphology, not about method. [[h-new-3080-quantifier-scope]] survives
+every methodological sweep and is limited by a substantive fact: three tokens.
+
+**It does imply that the current binding constraint on this project is methodological, not
+evidential.** Where a result dies, it usually dies to a choice the analyst made and could have made
+otherwise — and eight times out of nine that choice was not about the text.
+
+**The practical consequence is a priority ordering for pre-registration.** Lock, in this order:
+1. **the null model** — what is permuted, and what is held fixed;
+2. **the unit** — per-token, per-verse, per-surah, ranked or divided;
+3. **the encoding convention** — which file, which normalisation, which tagset;
+4. **the subject-matter parameters** last, because they have moved least.
+
+Most pre-registrations in this project, including the ones I wrote, do the reverse.
+
