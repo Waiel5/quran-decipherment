@@ -110,3 +110,66 @@ have produced clean-looking results. **This documents what a discipline surfaces
 
 Related: [[cross-finding-029-the-deciding-parameter]] · [[AUDIT-TANWIN-DELETION-2690]] ·
 [[h-new-3120-asbab-chronology]] · [[h-new-3150-mubalagha-fasila]] · [[UNIT-DRIFT-DEFECT]]
+
+---
+
+## 6. Extension 2026-08-11 — mechanism 1 applies to the STRATIFIER, not only the outcome
+
+[[h-new-3190-translation-invariance]] registered **SUPPORTED** and its own lane refuses to believe
+it. The reason is mechanism 1 in a place this file did not think to look.
+
+The design stratifies on **`d`, the absolute token-edit distance** between two verses. But:
+
+> **d = 3 on a 5-token verse is 60% of the verse. d = 3 on a 20-token verse is 15%.**
+
+So the strata pool *nearly identical* pairs with *almost entirely different* ones — **strata not
+homogeneous in the thing they claim to hold fixed**, which is exactly §1.1. The lane ran three length
+channels on the **outcome** and none on the **stratifier**.
+
+Its own locked §4.1 asserted the stratifier was safe *"because d is an exact integer count, not a
+proxy."* **Exact is not the same as homogeneous**, and that sentence is now the cleanest one-line
+statement of how mechanism 1 hides.
+
+### 6.1 The hand-check that caught it — in the agreement direction
+
+Pairs admitted as "near-twins" that **all ten translations agree are far apart**:
+
+- **Q 23:3 ↔ Q 70:32**, d = 3 — *"who turn away from ill speech"* vs *"who are to their trusts and
+  promises attentive."* Shared material: `والذين هم`.
+- **Q 21:107 ↔ Q 36:17**, d = 3 — *"We sent you only as a mercy to the worlds"* vs *"we are
+  responsible only for clear notification."* Shared material: `وما … إلا`.
+
+Different verses on a shared syntactic frame. [[h-new-2380-near-twin-census]] set L ≥ 8, d ≤ 2
+*precisely* to exclude that class; this lane widened to L ≥ 5, d ≤ 3 for power and re-admitted it.
+
+### 6.2 The contrast is monotone in pool impurity
+
+| relative-edit cap | n | contrast |
+|:--|--:|--:|
+| ≤ 0.15 | 92 | **−0.2333** |
+| ≤ 0.20 | 132 | +0.0769 |
+| ≤ 0.30 | 156 | +0.1723 |
+| full pool | 417 | **+0.3580** |
+
+**The result is a function of how much impurity is admitted.** And the pre-registered sensitivity on
+H-NEW-2380's own window runs **negative on all three channels**.
+
+### 6.3 And it declines to claim the reversal — because it computed the power
+
+On the purest subset the contrast is −0.2333 with **p(reverse) = 0.317 and a null SD of 0.526**;
+MDE ≈ 1.48. **On genuine near-twins the design has no power at all.** So F-18's honest status is
+**UNTESTABLE at n ≈ 92**, not answered and not reversed. Refusing a reversal that would have been
+more interesting than the null is the same discipline as refusing a favourable power figure.
+
+### 6.4 The reusable measurement — the translator-noise floor
+
+On the **59 exact Arabic twins** the mean cross-language rank spread is **0.6131**; on pairs whose
+Arabic differs it is **0.4957**.
+
+> **The ten translations disagree 1.24× MORE about verse pairs whose Arabic is *identical* than about
+> pairs whose Arabic differs.**
+
+Mechanism: with identical Arabic some translators produce identical output and others do not, so the
+spread is maximal; with different Arabic everyone differs, so it compresses. **Any
+translation-invariance instrument must clear that floor first.** This one does not.
+
