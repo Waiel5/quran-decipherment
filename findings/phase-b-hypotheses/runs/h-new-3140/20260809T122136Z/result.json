@@ -1,0 +1,261 @@
+{
+  "id": "H-NEW-3140",
+  "type": "INSTRUMENT-REPAIR REPLICATION",
+  "prereg_sha256": "3c89620395628191a7ede97050f9665aa2a7a195678a81431fa642d8405779a0",
+  "mode": "P_forceheavy",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "alpha": 0.016666666666666666,
+  "tolerance": 0.005,
+  "d8_bar": 0.8,
+  "d8_draws": 60,
+  "cannot_rescue_h1b": "prereg §0 — D8/D5 are invariant to a uniform phonemiser change",
+  "defect": {
+    "codepoints": [
+      "U+0656",
+      "U+0657",
+      "U+065E"
+    ],
+    "deleted": 6643,
+    "retained": 1911,
+    "deleted_share": 0.7766,
+    "comparison_arms_affected": 0
+  },
+  "self_checks": {
+    "S1_poetry_identical": true,
+    "S2_prose_identical": true,
+    "S3_quran_moved": false,
+    "S4_defective_reproduces_published": false,
+    "S4_detail": {
+      "quran": {
+        "got": 0.22222,
+        "want": 0.22222,
+        "ok": true
+      },
+      "poetry": {
+        "got": 0.14286,
+        "want": 0.14286,
+        "ok": true
+      },
+      "prose": {
+        "got": 0.24,
+        "want": 0.23963,
+        "ok": false
+      },
+      "noise_quran": {
+        "got": 0.23913,
+        "want": 0.23944,
+        "ok": false
+      },
+      "noise_poetry": {
+        "got": 0.22222,
+        "want": 0.22222,
+        "ok": true
+      }
+    }
+  },
+  "locked_predictions": {
+    "P1_quran_dmin_rises": false,
+    "P2_h1a_gap_widens": false
+  },
+  "defective": {
+    "positive_control": {
+      "per_poem_correct": 3,
+      "per_bayt_acc": 0.7708,
+      "n_bayts": 240,
+      "per_poet": {
+        "muallaqa-imru-al-qais": {
+          "known": "tawil",
+          "n": 75,
+          "acc": 0.68,
+          "top": "tawil"
+        },
+        "muallaqa-zuhayr": {
+          "known": "tawil",
+          "n": 62,
+          "acc": 0.9677,
+          "top": "tawil"
+        },
+        "muallaqa-amr-bin-kulthum": {
+          "known": "wafir",
+          "n": 103,
+          "acc": 0.7184,
+          "top": "wafir"
+        }
+      }
+    },
+    "n": {
+      "quran": 6211,
+      "poetry": 240,
+      "prose": 2500,
+      "mufassal_A": 561,
+      "long_medinan_B": 909
+    },
+    "median_d_min": {
+      "quran": 0.22222,
+      "poetry": 0.14286,
+      "prose": 0.24,
+      "noise_quran": 0.23913,
+      "noise_poetry": 0.22222
+    },
+    "T1_H1a": {
+      "diff": 0.07937,
+      "p": 0.0001,
+      "p_repl": 0.0001,
+      "direction_ok": true
+    },
+    "T3_H1b": {
+      "diff": 0.01778,
+      "p": 0.0001,
+      "direction_ok": true
+    },
+    "T4_H3a": {
+      "diff_B_minus_A": 0.07292,
+      "p": 0.0001,
+      "direction_ok": true
+    },
+    "T5_H3b": {
+      "modal_meter_A": "tawil",
+      "share": 0.549,
+      "votes": {
+        "tawil": 308,
+        "wafir": 158,
+        "madid": 34,
+        "munsarih": 18,
+        "kamil": 17,
+        "mutaqarib": 13
+      },
+      "modal_ok": false
+    },
+    "T6_paired_excess": {
+      "median_excess": 0.0,
+      "mean_excess": -0.01758,
+      "win_rate": 0.4891,
+      "poetry_win_rate": 0.8833
+    },
+    "T8_specificity": {
+      "quran": 0.08571,
+      "quran_noise": 0.08333,
+      "ratio": 1.0286,
+      "poetry": 0.11769,
+      "quran_modal": "wafir",
+      "quran_modal_share": 0.4075,
+      "noise_modal": "wafir",
+      "noise_modal_share": 0.3977,
+      "share_modal_with_noise": true
+    }
+  },
+  "repaired": {
+    "positive_control": {
+      "per_poem_correct": 3,
+      "per_bayt_acc": 0.7708,
+      "n_bayts": 240,
+      "per_poet": {
+        "muallaqa-imru-al-qais": {
+          "known": "tawil",
+          "n": 75,
+          "acc": 0.68,
+          "top": "tawil"
+        },
+        "muallaqa-zuhayr": {
+          "known": "tawil",
+          "n": 62,
+          "acc": 0.9677,
+          "top": "tawil"
+        },
+        "muallaqa-amr-bin-kulthum": {
+          "known": "wafir",
+          "n": 103,
+          "acc": 0.7184,
+          "top": "wafir"
+        }
+      }
+    },
+    "n": {
+      "quran": 6211,
+      "poetry": 240,
+      "prose": 2500,
+      "mufassal_A": 561,
+      "long_medinan_B": 909
+    },
+    "median_d_min": {
+      "quran": 0.22222,
+      "poetry": 0.14286,
+      "prose": 0.24,
+      "noise_quran": 0.2381,
+      "noise_poetry": 0.22222
+    },
+    "T1_H1a": {
+      "diff": 0.07937,
+      "p": 0.0001,
+      "p_repl": 0.0001,
+      "direction_ok": true
+    },
+    "T3_H1b": {
+      "diff": 0.01778,
+      "p": 0.0001,
+      "direction_ok": true
+    },
+    "T4_H3a": {
+      "diff_B_minus_A": 0.07372,
+      "p": 0.0001,
+      "direction_ok": true
+    },
+    "T5_H3b": {
+      "modal_meter_A": "tawil",
+      "share": 0.5312,
+      "votes": {
+        "tawil": 298,
+        "wafir": 155,
+        "madid": 46,
+        "kamil": 19,
+        "munsarih": 16,
+        "mutaqarib": 10
+      },
+      "modal_ok": false
+    },
+    "T6_paired_excess": {
+      "median_excess": 0.0,
+      "mean_excess": -0.0145,
+      "win_rate": 0.4796,
+      "poetry_win_rate": 0.8833
+    },
+    "T8_specificity": {
+      "quran": 0.08333,
+      "quran_noise": 0.07895,
+      "ratio": 1.0556,
+      "poetry": 0.11769,
+      "quran_modal": "wafir",
+      "quran_modal_share": 0.3995,
+      "noise_modal": "wafir",
+      "noise_modal_share": 0.3935,
+      "share_modal_with_noise": true
+    }
+  },
+  "T7_selfrecut": {
+    "defective": {
+      "native": 0.22222,
+      "recut": 0.2423,
+      "prose_native": 0.24,
+      "moved": 1.1296
+    },
+    "repaired": {
+      "native": 0.22222,
+      "recut": 0.24447,
+      "prose_native": 0.24,
+      "moved": 1.2517
+    },
+    "draws": 60
+  },
+  "target_labels": {
+    "T1_H1a": "UNCHANGED",
+    "T2_control": "UNCHANGED",
+    "T3_H1b": "UNCHANGED",
+    "T4_H3a": "UNCHANGED",
+    "T5_H3b": "UNCHANGED",
+    "T6_excess": "UNCHANGED",
+    "T7_selfrecut": "NUMBERS-CHANGED-CONCLUSION-UNCHANGED",
+    "T8_specificity": "UNCHANGED"
+  },
+  "overall": "NUMBERS-CHANGED-CONCLUSION-UNCHANGED"
+}
