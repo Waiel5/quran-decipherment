@@ -188,6 +188,7 @@ enabling data is stripped or absent.
 > | **F-4** deixis | open, prior *"CONFIRMED but at risk of CBM"* | H-NEW-2960 — **partially**; its own front-matter names F-4 | 2026-08-08 |
 > | **F-13** reception weight | open, prior "CONFIRMED-descriptive" | H-NEW-3000 — the map's F-13 sentence **is that finding's title** | 2026-08-08 |
 > | **F-2** scansion | open, prior "CONFIRMED for distinct region" | H-NEW-2690 — near-identical prereg title; **both halves refuted** | 2026-08-07 |
+> | **F-9** rasm | open, prior "CONFIRMED-descriptive" | H-NEW-2740 — its front-matter names F-9; **NULL on all 5 inferences** | 2026-08-07 |
 >
 > **F-4 is the fifth case and the FIRST caught prospectively** — the Step-0 grep rule fired before any
 > design work, so no lane was spent. Only the *eschatological* half of F-4 is answered; the
@@ -265,7 +266,7 @@ enabling data is stripped or absent.
 > | F-14 | quantifier scope | H-NEW-3080 | **CONFIRMED** — on three *baʿḍ* tokens in two verses |
 > | F-20 | kinship | H-NEW-3090 | NULL, effect reversed |
 >
-> **Seven of the thirteen were already answered before dispatch.** Of all thirteen: **eight NULL-ish,
+> **Eight of the fourteen were already answered before dispatch.** Of all thirteen: **eight NULL-ish,
 > three pass-ish, and the single substantive CONFIRMED (F-14) rests on a denominator of three
 > tokens.**
 >

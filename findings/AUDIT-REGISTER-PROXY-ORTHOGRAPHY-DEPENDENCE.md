@@ -228,3 +228,52 @@ previous attempts could not deliver.**
 Both were diagnosed by counting the codepoint in both files, **not** by whether fixing them improved
 the answer — the discipline that separates a repair from a tuning.
 
+### 6.8 F-9 WAS ALREADY ANSWERED, and my own assertion set hid most of the phenomenon
+
+**H-NEW-2740** (2026-08-07) carries `frontier_item: F-9` and the title *"The rasm/imlāʾ divergence
+set is a lexicon, not a distribution"* — **NULL on all five registered inferences.** Eighth confirmed
+stale section-B item.
+
+**The failure is mine and it is worse than the earlier seven.** I wrote three dispatch briefs
+demanding a Step-0 grep, and wrote §6 of this file about four failed attempts, and **never ran that
+grep myself for the item I was re-dispatching.** Three lanes and four of my own attempts on an
+answered hypothesis.
+
+And H-NEW-2740 names the trap I was walking into: verse-final enrichment is **1.93× at p = 10⁻⁴**,
+collapsing to **p = 0.10** once conditioned on lexical identity — because verse-final words are rhyme
+words, and rhyme words are the sound-plural and participle templates where the rasm drops its alif.
+Its own phrase for the unconditioned number is *"real arithmetic and a worthless inference."*
+
+### 6.9 The assertion set I specified erases the main phenomenon
+
+`bare("يَٰٓأَيُّهَا") == bare("يَا") + bare("أَيُّهَا")` forces **U+0670 dagger-alef → ا**. But
+dagger-alef **is** *ḥadhf al-alif*: the rasm omits the alif and later hands write it small. **Mapping
+it to a full alef restores exactly the letter the rasm dropped, so the divergence vanishes.**
+
+Two independent measurements of how much the convention decides, reported side by side because they
+disagree and picking the friendlier one would be the failure this file exists to catalogue:
+
+| instrument | dagger-alef as **letter** | as **mark** | ratio | aligned pairs |
+|:--|--:|--:|--:|--:|
+| my crude normaliser | 19,138 (25.61%) | 21,793 (29.16%) | **1.14×** | 74,740 |
+| the lane's normaliser | 4,951 (6.05%) | 10,065 (12.29%) | **2.03×** | 81,895 |
+
+**Same direction, magnitudes differing by 1.8×, on pair counts differing by ~7,000.** Two instruments
+disagreeing that much about the size of the set a finding is *about* is itself reportable.
+
+The tokens the letter-convention hides are the core classical category — السموت/السماوات ×182,
+الكتب/الكتاب ×163, القيمة/القيامة ×70, الظلمين/الظالمين ×64 — and H-NEW-2740 measures *ḥadhf al-alif*
+at **78% of its divergence set**.
+
+> **So four assertions I wrote as a correctness gate are jointly satisfiable only under a convention
+> that erases the phenomenon.** That is a
+> [[cross-finding-029-the-deciding-parameter]] deciding parameter **sitting inside a unit test** — and
+> H-NEW-2740 never varied it either. It locked one convention and never asked what the other does.
+
+### 6.10 And the classical anchor IS on disk — my instruction was wrong in my favour
+
+I briefed three lanes to report F-9's orthography anchor as UNVERIFIED. **al-Suyūṭī's *al-Itqān*
+nawʿ 76, `fī marsūm al-khaṭṭ wa-ādāb kitābatihi`, is on disk** — verified here at
+`raw/suyuti-itqan.openiti.raw.txt` **line 23216**, with the six *qawāʿid* sentence at **line 23255**.
+F-9 has a real, on-disk, verified classical anchor.
+
