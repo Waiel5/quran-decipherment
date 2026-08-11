@@ -1,0 +1,738 @@
+{
+ "H1": {
+  "arm": "H1_full_tashkeel_4rung",
+  "by_grade_rank": {
+   "1": 1651,
+   "2": 2083,
+   "3": 511,
+   "4": 21
+  },
+  "grade_census": {
+   "jim": 2083,
+   "meem": 21,
+   "qla": 511,
+   "sla": 1651
+  },
+  "length_channels": {
+   "L1_words": {
+    "distinct": 39,
+    "max": 49.0,
+    "mean": 8.156586966713549,
+    "median": 7.0,
+    "min": 1.0,
+    "tie_fraction": 0.9981247069854665
+   },
+   "L2_skeleton": {
+    "distinct": 134,
+    "max": 228.0,
+    "mean": 33.9774964838256,
+    "median": 29.0,
+    "min": 1.0,
+    "tie_fraction": 0.9943741209563994
+   },
+   "L3_raw": {
+    "distinct": 224,
+    "max": 465.0,
+    "mean": 65.47257383966245,
+    "median": 55.0,
+    "min": 2.0,
+    "tie_fraction": 0.9899203000468824
+   }
+  },
+  "loci_in_permutable_verses": 1834,
+  "n_segments": 4266,
+  "n_verses_with_marks": 2610,
+  "null_summaries": {
+   "A": {
+    "L1_words": {
+     "null_mean": 0.13565305973265326,
+     "null_sd": 0.009084361633747914,
+     "q_1_minus_gate": 0.16601859294617372
+    },
+    "L2_skeleton": {
+     "null_mean": 0.13902183824494926,
+     "null_sd": 0.009077238118726624,
+     "q_1_minus_gate": 0.1693632579489831
+    },
+    "L3_raw": {
+     "null_mean": 0.13873174574162472,
+     "null_sd": 0.009094897551871298,
+     "q_1_minus_gate": 0.16953161973578282
+    }
+   },
+   "B": {
+    "L1_words": {
+     "null_mean": 0.03493849694508824,
+     "null_sd": 0.014418958457784839,
+     "q_1_minus_gate": 0.08597553173455985
+    },
+    "L2_skeleton": {
+     "null_mean": 0.04117477726558551,
+     "null_sd": 0.014307372260984106,
+     "q_1_minus_gate": 0.08816986813867206
+    },
+    "L3_raw": {
+     "null_mean": 0.040375077754211015,
+     "null_sd": 0.014314749832819775,
+     "q_1_minus_gate": 0.08942049280426048
+    }
+   }
+  },
+  "p_locked_direction": {
+   "L1_words": {
+    "A": 0.197980201979802,
+    "B": 9.999000099990002e-05
+   },
+   "L2_skeleton": {
+    "A": 0.45555444455554445,
+    "B": 9.999000099990002e-05
+   },
+   "L3_raw": {
+    "A": 0.47825217478252174,
+    "B": 9.999000099990002e-05
+   }
+  },
+  "p_opposite_tail": {
+   "L1_words": {
+    "A": 0.8021197880211979,
+    "B": 1.0
+   },
+   "L2_skeleton": {
+    "A": 0.5445455454454554,
+    "B": 1.0
+   },
+   "L3_raw": {
+    "A": 0.5218478152184781,
+    "B": 1.0
+   }
+  },
+  "permutable_fraction": 0.42991092358180966,
+  "raw_gate": 0.0004166666666666667,
+  "replication_agrees": true,
+  "rho_crit_nullA_at_gate": {
+   "L1_words": 0.16601859294617372,
+   "L2_skeleton": 0.1693632579489831,
+   "L3_raw": 0.16953161973578282
+  },
+  "rho_extremes_within_verse_relabel": {
+   "L1_words": {
+    "rho_max": 0.36916740287088073,
+    "rho_min": -0.09863931822666955
+   },
+   "L2_skeleton": {
+    "rho_max": 0.37158098723403893,
+    "rho_min": -0.09438486966441506
+   },
+   "L3_raw": {
+    "rho_max": 0.3720753007508932,
+    "rho_min": -0.09545994474990914
+   }
+  },
+  "rho_observed": {
+   "L1_words": 0.14332731947215654,
+   "L2_skeleton": 0.14004290559431068,
+   "L3_raw": 0.13925391573908488
+  },
+  "rho_residualised_on_host_verse_wordcount": {
+   "L1_words": 0.11370714589815703,
+   "L2_skeleton": 0.11122915833230668,
+   "L3_raw": 0.11042111242675767
+  },
+  "sign_ok": true,
+  "sign_reversed": false,
+  "source_file": "quran-text/quran-full-tashkeel.json",
+  "untestable": false,
+  "verdict": "NULL",
+  "worst_p_locked": 0.47825217478252174,
+  "worst_p_opposite": 1.0
+ },
+ "H1_replication": {
+  "arm": "H1_repl",
+  "by_grade_rank": {
+   "1": 1651,
+   "2": 2083,
+   "3": 511,
+   "4": 21
+  },
+  "grade_census": {
+   "jim": 2083,
+   "meem": 21,
+   "qla": 511,
+   "sla": 1651
+  },
+  "length_channels": {
+   "L1_words": {
+    "distinct": 39,
+    "max": 49.0,
+    "mean": 8.156586966713549,
+    "median": 7.0,
+    "min": 1.0,
+    "tie_fraction": 0.9981247069854665
+   },
+   "L2_skeleton": {
+    "distinct": 134,
+    "max": 228.0,
+    "mean": 33.9774964838256,
+    "median": 29.0,
+    "min": 1.0,
+    "tie_fraction": 0.9943741209563994
+   },
+   "L3_raw": {
+    "distinct": 224,
+    "max": 465.0,
+    "mean": 65.47257383966245,
+    "median": 55.0,
+    "min": 2.0,
+    "tie_fraction": 0.9899203000468824
+   }
+  },
+  "loci_in_permutable_verses": 1834,
+  "n_segments": 4266,
+  "n_verses_with_marks": 2610,
+  "null_summaries": {
+   "A": {
+    "L1_words": {
+     "null_mean": 0.13578829356642622,
+     "null_sd": 0.00902292986016966,
+     "q_1_minus_gate": 0.16488652308056334
+    },
+    "L2_skeleton": {
+     "null_mean": 0.13914020944263047,
+     "null_sd": 0.00901358816278645,
+     "q_1_minus_gate": 0.16925220207889505
+    },
+    "L3_raw": {
+     "null_mean": 0.13886709745546463,
+     "null_sd": 0.009031005553756896,
+     "q_1_minus_gate": 0.16965782303559473
+    }
+   },
+   "B": {
+    "L1_words": {
+     "null_mean": 0.034852651146960775,
+     "null_sd": 0.014547725223601989,
+     "q_1_minus_gate": 0.08253642760909241
+    },
+    "L2_skeleton": {
+     "null_mean": 0.041042484813895774,
+     "null_sd": 0.014450705326681175,
+     "q_1_minus_gate": 0.08854584194110529
+    },
+    "L3_raw": {
+     "null_mean": 0.04024748676832722,
+     "null_sd": 0.014466583266926158,
+     "q_1_minus_gate": 0.08699661720045952
+    }
+   }
+  },
+  "p_locked_direction": {
+   "L1_words": {
+    "A": 0.20057994200579943,
+    "B": 9.999000099990002e-05
+   },
+   "L2_skeleton": {
+    "A": 0.45685431456854314,
+    "B": 9.999000099990002e-05
+   },
+   "L3_raw": {
+    "A": 0.47965203479652035,
+    "B": 9.999000099990002e-05
+   }
+  },
+  "p_opposite_tail": {
+   "L1_words": {
+    "A": 0.7995200479952005,
+    "B": 1.0
+   },
+   "L2_skeleton": {
+    "A": 0.5432456754324567,
+    "B": 1.0
+   },
+   "L3_raw": {
+    "A": 0.5204479552044795,
+    "B": 1.0
+   }
+  },
+  "permutable_fraction": 0.42991092358180966,
+  "raw_gate": 0.0004166666666666667,
+  "rho_crit_nullA_at_gate": {
+   "L1_words": 0.16488652308056334,
+   "L2_skeleton": 0.16925220207889505,
+   "L3_raw": 0.16965782303559473
+  },
+  "rho_extremes_within_verse_relabel": {
+   "L1_words": {
+    "rho_max": 0.36916740287088073,
+    "rho_min": -0.09863931822666955
+   },
+   "L2_skeleton": {
+    "rho_max": 0.37158098723403893,
+    "rho_min": -0.09438486966441506
+   },
+   "L3_raw": {
+    "rho_max": 0.3720753007508932,
+    "rho_min": -0.09545994474990914
+   }
+  },
+  "rho_observed": {
+   "L1_words": 0.14332731947215654,
+   "L2_skeleton": 0.14004290559431068,
+   "L3_raw": 0.13925391573908488
+  },
+  "rho_residualised_on_host_verse_wordcount": {
+   "L1_words": 0.11370714589815703,
+   "L2_skeleton": 0.11122915833230668,
+   "L3_raw": 0.11042111242675767
+  },
+  "sign_ok": true,
+  "sign_reversed": false,
+  "source_file": "quran-text/quran-full-tashkeel.json",
+  "untestable": false,
+  "verdict": "NULL",
+  "worst_p_locked": 0.47965203479652035,
+  "worst_p_opposite": 1.0
+ },
+ "H2": {
+  "arm": "H2_min_tashkeel_5rung",
+  "by_grade_rank": {
+   "1": 68,
+   "2": 1682,
+   "3": 1972,
+   "4": 603,
+   "5": 22
+  },
+  "grade_census": {
+   "jim": 1972,
+   "la": 68,
+   "meem": 22,
+   "qla": 603,
+   "sla": 1682
+  },
+  "length_channels": {
+   "L1_words": {
+    "distinct": 39,
+    "max": 49.0,
+    "mean": 8.121002990568208,
+    "median": 7.0,
+    "min": 1.0,
+    "tie_fraction": 0.998389694041868
+   },
+   "L2_skeleton": {
+    "distinct": 136,
+    "max": 228.0,
+    "mean": 33.71198527720267,
+    "median": 28.0,
+    "min": 1.0,
+    "tie_fraction": 0.994018863584081
+   },
+   "L3_raw": {
+    "distinct": 196,
+    "max": 383.0,
+    "mean": 54.59650333563377,
+    "median": 46.0,
+    "min": 1.0,
+    "tie_fraction": 0.9926386013342535
+   }
+  },
+  "loci_in_permutable_verses": 1923,
+  "n_segments": 4347,
+  "n_verses_with_marks": 2635,
+  "null_summaries": {
+   "A": {
+    "L1_words": {
+     "null_mean": 0.12581028084223772,
+     "null_sd": 0.008786853192953518,
+     "q_1_minus_gate": 0.15243223800148087
+    },
+    "L2_skeleton": {
+     "null_mean": 0.12829246194247262,
+     "null_sd": 0.008783614878719837,
+     "q_1_minus_gate": 0.1559939505004668
+    },
+    "L3_raw": {
+     "null_mean": 0.1333851354391673,
+     "null_sd": 0.008761423789096149,
+     "q_1_minus_gate": 0.16028202883125467
+    }
+   },
+   "B": {
+    "L1_words": {
+     "null_mean": 0.036896524010265705,
+     "null_sd": 0.014302770724502884,
+     "q_1_minus_gate": 0.08244703207444129
+    },
+    "L2_skeleton": {
+     "null_mean": 0.04158369738375468,
+     "null_sd": 0.014143513591439212,
+     "q_1_minus_gate": 0.08582274740629241
+    },
+    "L3_raw": {
+     "null_mean": 0.042786097090148585,
+     "null_sd": 0.014132030890492019,
+     "q_1_minus_gate": 0.08871181245541761
+    }
+   }
+  },
+  "p_locked_direction": {
+   "L1_words": {
+    "A": 0.22757724227577242,
+    "B": 9.999000099990002e-05
+   },
+   "L2_skeleton": {
+    "A": 0.39216078392160786,
+    "B": 9.999000099990002e-05
+   },
+   "L3_raw": {
+    "A": 0.39856014398560147,
+    "B": 9.999000099990002e-05
+   }
+  },
+  "p_opposite_tail": {
+   "L1_words": {
+    "A": 0.7725227477252274,
+    "B": 1.0
+   },
+   "L2_skeleton": {
+    "A": 0.6079392060793921,
+    "B": 1.0
+   },
+   "L3_raw": {
+    "A": 0.6015398460153984,
+    "B": 1.0
+   }
+  },
+  "permutable_fraction": 0.44237405106970323,
+  "raw_gate": 0.0004166666666666667,
+  "replication_agrees": true,
+  "rho_crit_nullA_at_gate": {
+   "L1_words": 0.15243223800148087,
+   "L2_skeleton": 0.1559939505004668,
+   "L3_raw": 0.16028202883125467
+  },
+  "rho_extremes_within_verse_relabel": {
+   "L1_words": {
+    "rho_max": 0.3595413451850919,
+    "rho_min": -0.10602089676968604
+   },
+   "L2_skeleton": {
+    "rho_max": 0.36086206087082,
+    "rho_min": -0.10261577724160229
+   },
+   "L3_raw": {
+    "rho_max": 0.36590272296722826,
+    "rho_min": -0.09779110376278653
+   }
+  },
+  "rho_observed": {
+   "L1_words": 0.1324790105903519,
+   "L2_skeleton": 0.13058426451105168,
+   "L3_raw": 0.13560434117392403
+  },
+  "rho_residualised_on_host_verse_wordcount": {
+   "L1_words": 0.10471683496599211,
+   "L2_skeleton": 0.1041401551486701,
+   "L3_raw": 0.10869310512394388
+  },
+  "sign_ok": true,
+  "sign_reversed": false,
+  "source_file": "quran-text/quran-min-tashkeel.json",
+  "untestable": false,
+  "verdict": "NULL",
+  "worst_p_locked": 0.39856014398560147,
+  "worst_p_opposite": 1.0
+ },
+ "H2_replication": {
+  "arm": "H2_repl",
+  "by_grade_rank": {
+   "1": 68,
+   "2": 1682,
+   "3": 1972,
+   "4": 603,
+   "5": 22
+  },
+  "grade_census": {
+   "jim": 1972,
+   "la": 68,
+   "meem": 22,
+   "qla": 603,
+   "sla": 1682
+  },
+  "length_channels": {
+   "L1_words": {
+    "distinct": 39,
+    "max": 49.0,
+    "mean": 8.121002990568208,
+    "median": 7.0,
+    "min": 1.0,
+    "tie_fraction": 0.998389694041868
+   },
+   "L2_skeleton": {
+    "distinct": 136,
+    "max": 228.0,
+    "mean": 33.71198527720267,
+    "median": 28.0,
+    "min": 1.0,
+    "tie_fraction": 0.994018863584081
+   },
+   "L3_raw": {
+    "distinct": 196,
+    "max": 383.0,
+    "mean": 54.59650333563377,
+    "median": 46.0,
+    "min": 1.0,
+    "tie_fraction": 0.9926386013342535
+   }
+  },
+  "loci_in_permutable_verses": 1923,
+  "n_segments": 4347,
+  "n_verses_with_marks": 2635,
+  "null_summaries": {
+   "A": {
+    "L1_words": {
+     "null_mean": 0.12576222576078913,
+     "null_sd": 0.008825181975286053,
+     "q_1_minus_gate": 0.1539156040837219
+    },
+    "L2_skeleton": {
+     "null_mean": 0.12822434262839352,
+     "null_sd": 0.008849141900625121,
+     "q_1_minus_gate": 0.15677700106620246
+    },
+    "L3_raw": {
+     "null_mean": 0.13330691306019857,
+     "null_sd": 0.008837376753765452,
+     "q_1_minus_gate": 0.16287748059853638
+    }
+   },
+   "B": {
+    "L1_words": {
+     "null_mean": 0.03719827247979763,
+     "null_sd": 0.01424570808754777,
+     "q_1_minus_gate": 0.08727798138585473
+    },
+    "L2_skeleton": {
+     "null_mean": 0.041812707311493336,
+     "null_sd": 0.014189997084026807,
+     "q_1_minus_gate": 0.08894479108984421
+    },
+    "L3_raw": {
+     "null_mean": 0.0430044842486204,
+     "null_sd": 0.014189887472784928,
+     "q_1_minus_gate": 0.09040842661251174
+    }
+   }
+  },
+  "p_locked_direction": {
+   "L1_words": {
+    "A": 0.2253774622537746,
+    "B": 9.999000099990002e-05
+   },
+   "L2_skeleton": {
+    "A": 0.40155984401559847,
+    "B": 9.999000099990002e-05
+   },
+   "L3_raw": {
+    "A": 0.40255974402559747,
+    "B": 9.999000099990002e-05
+   }
+  },
+  "p_opposite_tail": {
+   "L1_words": {
+    "A": 0.7747225277472253,
+    "B": 1.0
+   },
+   "L2_skeleton": {
+    "A": 0.5985401459854015,
+    "B": 1.0
+   },
+   "L3_raw": {
+    "A": 0.5975402459754025,
+    "B": 1.0
+   }
+  },
+  "permutable_fraction": 0.44237405106970323,
+  "raw_gate": 0.0004166666666666667,
+  "rho_crit_nullA_at_gate": {
+   "L1_words": 0.1539156040837219,
+   "L2_skeleton": 0.15677700106620246,
+   "L3_raw": 0.16287748059853638
+  },
+  "rho_extremes_within_verse_relabel": {
+   "L1_words": {
+    "rho_max": 0.3595413451850919,
+    "rho_min": -0.10602089676968604
+   },
+   "L2_skeleton": {
+    "rho_max": 0.36086206087082,
+    "rho_min": -0.10261577724160229
+   },
+   "L3_raw": {
+    "rho_max": 0.36590272296722826,
+    "rho_min": -0.09779110376278653
+   }
+  },
+  "rho_observed": {
+   "L1_words": 0.1324790105903519,
+   "L2_skeleton": 0.13058426451105168,
+   "L3_raw": 0.13560434117392403
+  },
+  "rho_residualised_on_host_verse_wordcount": {
+   "L1_words": 0.10471683496599211,
+   "L2_skeleton": 0.1041401551486701,
+   "L3_raw": 0.10869310512394388
+  },
+  "sign_ok": true,
+  "sign_reversed": false,
+  "source_file": "quran-text/quran-min-tashkeel.json",
+  "untestable": false,
+  "verdict": "NULL",
+  "worst_p_locked": 0.40255974402559747,
+  "worst_p_opposite": 1.0
+ },
+ "MDE_H1": {
+  "MDE_f_at_power_0.80": 0.2,
+  "curve": [
+   {
+    "detected": 0,
+    "f": 0.05,
+    "of": 20,
+    "power": 0.0
+   },
+   {
+    "detected": 4,
+    "f": 0.1,
+    "of": 20,
+    "power": 0.2
+   },
+   {
+    "detected": 11,
+    "f": 0.15,
+    "of": 20,
+    "power": 0.55
+   },
+   {
+    "detected": 20,
+    "f": 0.2,
+    "of": 20,
+    "power": 1.0
+   }
+  ],
+  "definition": "smallest fraction f of permutable verses that must be perfectly length-ordered, starting from a Null-A draw, for rho to exceed the Null-A critical value at the raw gate (prereg 4.4)",
+  "n_perm_for_crit": 10000,
+  "n_permutable_verses": 632,
+  "n_seeds": 20,
+  "nullA_crit_at_gate": 0.16601859294617372
+ },
+ "SMOKE_RUN": false,
+ "alpha_bonferroni": 0.004166666666666667,
+ "declared_variants_ungated": {
+  "P1_no_tashkeel_third_tuple": {
+   "by_grade": {
+    "1": 68,
+    "2": 1682,
+    "3": 1972,
+    "4": 603,
+    "5": 22
+   },
+   "gated": false,
+   "n": 4347,
+   "rho": {
+    "L1_words": 0.12867164181394516,
+    "L2_skeleton": 0.1289843016366864,
+    "L3_raw": 0.1288276727256266
+   }
+  },
+  "P4_all_marks_boundaries_full": {
+   "gated": false,
+   "n": 4266,
+   "rho": {
+    "L1_words": 0.14296759581390187,
+    "L2_skeleton": 0.13956070263800116,
+    "L3_raw": 0.13875952370491532
+   }
+  },
+  "P4_all_marks_boundaries_min": {
+   "gated": false,
+   "n": 4347,
+   "rho": {
+    "L1_words": 0.1318235776865482,
+    "L2_skeleton": 0.12979570613077343,
+    "L3_raw": 0.1349141918499629
+   }
+  },
+  "P6_segment_opened_full": {
+   "gated": false,
+   "n": 4266,
+   "rho": {
+    "L1_words": 0.040308594446912434,
+    "L2_skeleton": 0.0404338831881411,
+    "L3_raw": 0.037563177048997115
+   }
+  },
+  "P6_segment_opened_min": {
+   "gated": false,
+   "n": 4347,
+   "rho": {
+    "L1_words": 0.04752612977660274,
+    "L2_skeleton": 0.044331249671954794,
+    "L3_raw": 0.05763689861409051
+   }
+  }
+ },
+ "exact_test_note": "every p-value is a permutation p-value; no asymptotic distribution is used anywhere (prereg 4.3, tie fractions ~0.99)",
+ "family_verdict": "SECOND CLEAN-CHANNEL NULL",
+ "frozen_input_sha256": {
+  "quran-text/quran-full-tashkeel.json": "382a7341300602ec8b366316d4bbe2a44955c2bf984d395bdd82dae6110b6715",
+  "quran-text/quran-min-tashkeel.json": "87aaab41f78d1b148c8051b8afc1ee5fa66fd6d45f2f7a2984e3f9192c458b36",
+  "quran-text/quran-no-tashkeel.json": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a"
+ },
+ "id": "H-NEW-3180",
+ "instrument_control": {
+  "full_tashkeel_by_grade": {
+   "expected_h_new_2610": {
+    "1": 1651,
+    "2": 2083,
+    "3": 511,
+    "4": 21
+   },
+   "n": 4266,
+   "observed": {
+    "1": 1651,
+    "2": 2083,
+    "3": 511,
+    "4": 21
+   }
+  },
+  "min_tashkeel_by_grade": {
+   "expected_h_new_2610": {
+    "1": 68,
+    "2": 1682,
+    "3": 1972,
+    "4": 603,
+    "5": 22
+   },
+   "n": 4347,
+   "observed": {
+    "1": 68,
+    "2": 1682,
+    "3": 1972,
+    "4": 603,
+    "5": 22
+   }
+  },
+  "passed": true
+ },
+ "n_perm": 10000,
+ "prereg_sha256": "047ccde36fb53e500882fa4959e877b6481d292b663bc111b803d09e2d33a86a",
+ "raw_gate": 0.0004166666666666667,
+ "replication_offset": 10,
+ "seeds": {
+  "H1_nullA": 20260509,
+  "H1_nullB": 20260510,
+  "H2_nullA": 20260511,
+  "H2_nullB": 20260512,
+  "MDE": 20260513,
+  "VARIANTS": 20260514
+ },
+ "tests_in_family": 12
+}

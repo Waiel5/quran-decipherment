@@ -205,4 +205,47 @@ Conditioned on lexeme the flip evaporates and both conventions sit slightly belo
 so [[h-new-2740-rasm-divergence]]'s NULL is reproduced by an independent instrument **and shown to be
 convention-robust** — which is more than the original established, since it locked one convention and
 never varied it.
+### 5.5 Eighth anchor, 2026-08-10 — **the null model**, and it is the largest swing yet
+
+[[h-new-3180-waqf-boundary]]. Two nulls were pre-registered and the worst governed:
+
+| null | what it permutes | p |
+|:--|:--|--:|
+| **B** — within-sūra label permutation | grade labels across the sūra | **9.999×10⁻⁵** (MC floor) |
+| **A** — within-*verse*, positions fixed | grade labels **inside each verse**, mark positions held | **0.478** |
+
+**A 4,783× swing** — larger than the previous maximum (1,270×, [[h-new-3120-asbab-chronology]]) by a
+factor of 3.8, and larger than the length-channel swing *in the same run* by a factor of 1,977.
+
+The lane's ranked sweep of its own free parameters:
+
+```
+null model  4,783×   >>   P6 orientation  3.56×   >   length channel  2.42×   >   inventory  1.11×
+```
+
+**The inventory — the parameter the brief was built around — turned out to matter least.**
+
+### 5.5.1 Why this anchor is the sharpest statement of the law
+
+Within-sūra permutation is **the obvious first-choice null.** A lane registering only that would have
+published *"the Sajāwandī grades order segment length, p < 10⁻⁴, replicated, both inventories"* — a
+clean, defensible, wrong result.
+
+The lane's own words: *"I locked 'worst over both nulls' before seeing any number and I hold to it —
+but the choice was mine, it was free, and it decided the verdict."*
+
+And the decomposition shows what the second null buys. ρ = +0.143 is real, and **all of it is
+between-verse**:
+
+| component | ρ |
+|:--|--:|
+| between-sūra | +0.0349 |
+| between-verse within sūra | +0.1007 |
+| **within-verse — the hypothesis itself** | **+0.0077** (0.84σ, p = 0.198) |
+
+Hold a verse's mark positions and its own label multiset fixed, and **the grades are assigned to
+segments at random with respect to length.** The correlation is entirely a fact about which verses
+carry which grades — stronger grades sit in longer verses (mean host length 22.2 → 24.6 → 26.3 across
+the three well-powered rungs, marks-per-verse flat at ~2.4) — and not a fact about where inside a
+verse a grade falls.
 
