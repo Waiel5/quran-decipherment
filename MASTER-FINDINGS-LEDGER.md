@@ -7531,3 +7531,32 @@ alignment over Arabic in this repo must declare its orthographic variant.**
 F-15 and F-16 already answered, both previously listed as unresolved. **Ten of sixteen resolved
 section-B items were already answered before dispatch.**
 
+### Length-channel triage — COMPLETE, 20 of 20 (2026-08-11)
+
+[[AUDIT-LENGTH-CHANNEL-TRIAGE]]. A diagnostic screen with no verdict authority; it ranks what to read.
+
+| verdict | n | findings |
+|:--|--:|:--|
+| **EXPOSED — severe** | **4** | `h-new-127-6` (gap +0.674, propagates to 127-3…127-11) · `h-new-1500` · `h-new-1520` · `h-new-1550` |
+| EXPOSED — moderate | 2 | `h-new-91`, `h-new-85` |
+| EXPOSED — marginal / nominal | 4 | `h-new-112`, `h-new-264`, `h-new-1380`, `h-new-1750` |
+| EXPOSED — **conservative direction** | 1 | `h-new-1760` |
+| CLEAR | 5 | `h-new-150`, `155`, `187`, `195`, `270` |
+| NOT-APPLICABLE | 4 | `h-new-46-1`, `140`, `170`, `2300` |
+
+**All four severe cases share one shape:** the outcome is a rate over a window, the window was matched
+on **verse count**, and **mean verse length** was the dominant channel nobody controlled.
+
+**Two corrections to the screen's own design, both mine:**
+1. **"Under-control ⇒ liberal" is not automatic.** `h-new-1760`'s under-match runs *conservative* —
+   a word-matched null would strengthen its pass. So the filter that kept only passing verdicts may
+   have discarded genuine cases among the 138 excluded.
+2. **There are more than three channels.** `h-new-187` and `h-new-195` control on *character* and
+   *letter* counts — a fourth channel the screen cannot see, ≥0.999 correlated with word count. Both
+   are false positives.
+
+**Separate escalation, more serious than any length finding:** [[h-new-112-spectral-network]]'s
+published χ² is a **LAPACK artifact** — λ₂ = 2.66×10⁻¹⁶, so its Fiedler vector is arbitrary within a
+degenerate null space. Re-running with the same seed gives a different partition (88/26 vs 100/14) and
+a different statistic (χ² 12.755 vs 8.143).
+
