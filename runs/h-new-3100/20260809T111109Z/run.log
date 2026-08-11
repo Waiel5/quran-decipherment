@@ -1,0 +1,47 @@
+H-NEW-3100  run 20260809T111109Z
+prereg sha256 18b76c99153931db928757eb81752145232da6929bf15c77dcaddca030929ae7 VERIFIED
+normaliser self-test PASS (exit 0)
+verse lines 6236  uthmani tokens 82260  simple tokens 82627
+1:1 aligned pairs 81895   merge sites 365
+
+=== ARM 1 — descriptive census ===
+  A_dagger_is_letter     divergent   4951  rate 6.0455%  distinct skeleton-pairs 1099
+  B_dagger_is_mark       divergent  10065  rate 12.2901%  distinct skeleton-pairs 2578
+  A\B 0   B\A 5114   A&B 4951   A subset of B: True
+  N2 check — uthmani word-final ى 4100 / ي 0 ; simple ى 678 / ي 3434
+  A_dagger_is_letter     types 14900  never 13804  always 1060  alternating 36  lexical determinism 98.3034%
+  B_dagger_is_mark       types 14900  never 12326  always 2489  alternating 85  lexical determinism 97.4565%
+
+=== ARM 3 — typology (convention B) ===
+  divergent under B after N2: 6548
+    T1_HADHF_ALIF            5184   visible under convention A: 71
+    T10_HAMZ                  402   visible under convention A: 402
+    T8_BADAL_YA_ALIF          343   visible under convention A: 343
+    T9_BADAL_WAW_ALIF         177   visible under convention A: 177
+    UNASSIGNED                170   visible under convention A: 169
+    T5_ZIYADA_ALIF             87   visible under convention A: 87
+    T4_HADHF_LAM               75   visible under convention A: 75
+    T2_HADHF_YA                54   visible under convention A: 54
+    T3_HADHF_WAW               28   visible under convention A: 28
+    T12_MIXED                  13   visible under convention A: 13
+    T6_ZIYADA_WAW               9   visible under convention A: 9
+    T7_ZIYADA_YA                4   visible under convention A: 4
+    T11_BADAL_OTHER             2   visible under convention A: 2
+  unambiguous 97.2053%  ambiguous 0.0000%  mixed 0.1985%  unassigned 2.5962%
+  ARI vs parameter-free edit-signature partition: 0.8249   purity 1.0000
+
+=== ARM 2 — within-lexeme verse-final enrichment, both conventions ===
+    [A_dagger_is_letter] C0_lexeme_only         p=0.9959 tie=0.0381 info_tok=102 S*=116 S_max=127 rho=None
+    [A_dagger_is_letter] C1_verse_tokens        p=1.0000 tie=0.1670 info_tok=12 S*=116 S_max=119 rho=-0.003883318675419312
+    [A_dagger_is_letter] C2_log_verse_tokens    p=1.0000 tie=0.1599 info_tok=12 S*=116 S_max=119 rho=-0.003154665386926361
+    [A_dagger_is_letter] C3_surah_mean_verse_len p=1.0000 tie=0.2137 info_tok=15 S*=116 S_max=120 rho=-0.025415849795315904
+  [A_dagger_is_letter] RR_obs=0.2916 final rate 1.8635% vs 6.3896% ; headline p=1.0 on C1_verse_tokens ; dominant channel C3_surah_mean_verse_len
+    [B_dagger_is_mark] C0_lexeme_only         p=0.9940 tie=0.0167 info_tok=142 S*=959 S_max=973 rho=None
+    [B_dagger_is_mark] C1_verse_tokens        p=0.9991 tie=0.0062 info_tok=33 S*=959 S_max=968 rho=-0.020508745009352083
+    [B_dagger_is_mark] C2_log_verse_tokens    p=0.9994 tie=0.0076 info_tok=33 S*=959 S_max=968 rho=-0.022301364634855787
+    [B_dagger_is_mark] C3_surah_mean_verse_len p=0.9870 tie=0.0628 info_tok=44 S*=959 S_max=968 rho=-0.020723549531335022
+  [B_dagger_is_mark] RR_obs=1.2802 final rate 15.4056% vs 12.0338% ; headline p=0.9994000599940006 on C2_log_verse_tokens ; dominant channel C2_log_verse_tokens
+
+=== VERDICT: CONVENTION-STABLE NULL ===
+
+artefacts written to runs/h-new-3100/20260809T111109Z/

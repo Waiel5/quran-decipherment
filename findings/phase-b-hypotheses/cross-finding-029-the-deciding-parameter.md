@@ -178,4 +178,31 @@ PASS into a NULL* — the rule earning its keep in the direction that costs a re
 four channels returned p = 9.999×10⁻⁵, the permutation floor**, and not one passed: a lane gating on
 p alone would have reported four passes out of four. The pre-registration made effect size binding
 before the data was seen, and that is the only reason the distinction was available.
+### 5.4 Seventh anchor, 2026-08-10 — **the orthographic convention**, and it flips the SIGN
+
+[[h-new-3100-rasm-divergence]]. Whether the dagger-alef (U+0670) is treated as a **letter** or as a
+**mark** is an unrecorded convention. It does not move a p-value — **it moves the headline across
+RR = 1**:
+
+| convention | verse-final divergence | elsewhere | **RR** | reads as |
+|:--|--:|--:|--:|:--|
+| A — dagger-alef as **letter** | 1.8635% | 6.3896% | **0.2916** | **depleted** |
+| B — dagger-alef as **mark** | 15.4056% | 12.0338% | **1.2802** | **enriched** |
+
+**Anchor 2 was a 70× swing in significance. This is a reversal of direction.** And it is invisible
+from either side: each convention alone yields a clean, publishable, internally consistent number.
+
+**The parameter was hiding inside a unit test.** The four normaliser assertions in that lane's brief —
+written by me as a *correctness gate* — force convention A. They are jointly satisfiable only under
+the convention that erases the phenomenon: `T1_HADHF_ALIF` is 5,184 tokens, of which **71 survive
+under A**. The gate erases **98.63%** of the largest classical rasm category.
+
+**And under A the design cannot reject at all.** Critical *x* = 119.45 against **S_max = 119** —
+the maximum attainable statistic is *below* the critical value, so `design_can_reject = false`
+whatever the data says. Under B it clears by **nine tokens** (967.11 vs 968).
+
+Conditioned on lexeme the flip evaporates and both conventions sit slightly below their null means,
+so [[h-new-2740-rasm-divergence]]'s NULL is reproduced by an independent instrument **and shown to be
+convention-robust** — which is more than the original established, since it locked one convention and
+never varied it.
 
