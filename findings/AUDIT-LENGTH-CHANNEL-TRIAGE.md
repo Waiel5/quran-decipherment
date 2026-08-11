@@ -156,3 +156,74 @@ does not threaten the finding.**
 4 of 8 resolved rows and **was never the channel anyone controlled on.** Every script reaches for
 verse count or token count.
 
+---
+
+## 8. Batches C and D — a FOURTH channel, and the pericope designs
+
+| finding | channel used | dominant | gap | verdict |
+|:--|:--|:--|--:|:--|
+| `h-new-187-lempel-ziv` | **character count** (ρ 0.972) | character count | — | **CLEAR — screen false positive** |
+| `h-new-195-entropy-per-surah` | **letter count** (ρ 0.971) | letter count | — | **CLEAR — screen false positive** |
+| `h-new-170-99name-network` | none | — | — | NOT-APPLICABLE |
+| `h-new-264-q1-connects-everything` | verse count (0.120) | word count (0.152) | +0.032 | EXPOSED, barely |
+| `h-new-270-hud-template-lattice` | word count | word count | +0.000 | **CLEAR by construction** |
+| `h-new-1380-iblis-pericope` | verse count | mvl | +0.029 rescaled | EXPOSED, nominal only |
+| **`h-new-1500-christ-pericope`** | verse count | **mvl** | **+0.519 rescaled** | **EXPOSED — severe** |
+| **`h-new-1520-prophet-vocative-pericope`** | verse count | **mvl** | **+0.592 rescaled** | **EXPOSED — severe** |
+
+### 8.1 The screen has a blind spot: there are more than three channels
+
+**Two of batch C's four rows are false positives for the same reason.** `h-new-187` controls on
+**character** count and `h-new-195` on **letter** count — a *fourth* channel the three-channel screen
+cannot see. In both cases that channel is **≥ 0.999 rank-correlated with word count**, so the control
+is effectively the dominant one.
+
+**Any finding computing on character or letter sequences is likely mis-flagged the same way.** The
+screen's own §5 predicted false positives; this is their mechanism.
+
+*(Separately, and outside this screen: `h-new-187`'s control is applied but does not work —
+ρ(n_chars, its normalised outcome) = −0.972, i.e. dividing by n leaves the length dependence intact.
+The finding admits this in its own limits. The consequence is that its headline ρ(LZ, gzip) = +0.996
+has no length control on either side and is largely two length-proxies agreeing.)*
+
+### 8.2 The pericope family — matched on verse count, unmatched on words
+
+Three of the six pericope-scale findings match their nulls on **verse count only**. For two of them
+the treatment arm is systematically **word-denser** than its own matched controls:
+
+| finding | mean word-count percentile of the treatment pericopes |
+|:--|--:|
+| `h-new-1380` | 0.506 — **a wash** |
+| `h-new-1500` | **0.752** |
+| `h-new-1520` | **0.796** — 11 of 13 windows above 0.66 |
+
+**And the residual channel feeds the instrument directly:** over 2,071 non-overlapping 3-verse
+windows, **ρ(n_words, root-set size) = +0.963.** Root-set size is the input to the root-Jaccard
+statistic these findings test. So the imbalance is one-directional and lands on the measured
+quantity.
+
+`h-new-1380` is the control case that shows the design *can* be clean: same method, same matching,
+percentile 0.506, negligible residual. The difference between it and 1500/1520 is which pericopes
+were chosen, not how they were matched.
+
+### 8.3 A prereg/script divergence found in passing
+
+`h-new-1520`'s pre-registration specifies the null window start as `Uniform[0, 6236 − L]`. The script
+uses `len(all_verses)`, which is **6,214** — because 22 muṣḥaf verses carry no QAC root (20
+muqaṭṭaʿāt openers plus Q 70:15 and Q 85:18). Outside this screen's question; recorded because a
+prereg and its script disagreeing about the size of the corpus is worth someone's attention.
+
+## 9. Running total — 16 of 20 resolved
+
+| verdict | n |
+|:--|--:|
+| **EXPOSED — severe** | **3** (127-6, 1500, 1520) |
+| EXPOSED — moderate | 2 (91, 85) |
+| EXPOSED — barely / nominal | 3 (112, 264, 1380) |
+| CLEAR | 4 (150, 155, 187, 195) |
+| CLEAR by construction | 1 (270) |
+| NOT-APPLICABLE | 3 (46-1, 140, 170) |
+
+**4 remain unresolved.** And the §4 pattern holds across all sixteen: **mean verse length dominates
+wherever the outcome is a per-verse or per-window rate, and no script in the set controls on it.**
+
