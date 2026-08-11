@@ -1,0 +1,29 @@
+[S1-OK] id-keyed: 114 surahs, 6236 verses on all three sides; transliteration list order scrambled (surah 13 at position 39)
+[S2-OK] tanwin repair active: 8554 tanwin survive normalisation (defective instrument yields 1911)
+[S3-OK] zero waqf codepoints survive into P or T
+[D1] muqattaat pipeline: 1 read-mode file calls, 0 corpus path substrings across 3 scripts -> READS TEXT
+[S4] aligned 70230 token pairs; excluded 375 verses / 7570 tokens = 9.7301% -> FAIL
+[S4] NOTE: exceeds the 1% limit. Per prereg section 6 this VOIDS the run.
+[D2] H(T|A): V-case = 0.174853 bits, V-fold = 0.002925 bits; headline V-case -> ADDS SOMETHING
+[D3] H(A|T): A1_full_tashkeel = 0.5689 bits, A2_phonemic = 0.2206 bits, A3_skeleton = 0.0295 bits
+[D3] most favourable to T is A3_skeleton -> LOSSY
+[D3/theta=0.25] merged pairs 4 (S5 excluded 0), merged consonants 7: تثدذضطظ  | in target set: ضطظ
+[D3/theta=0.5] merged pairs 1 (S5 excluded 0), merged consonants 2: دض  | in target set: ض
+[D3/theta=0.75] merged pairs 0 (S5 excluded 0), merged consonants 0:   | in target set: 
+[C4] headline theta=0.25: F_obs=0.14495565410199557, p_used=0.8209179082091791 (permutation), tie_fraction=0.0003 -> FAIL
+[C5/theta=0.25/L1_verse_count] rho_must=0.9842 rho_son=1.0000 delta=+0.0158 p=0.34217 ties=0.000 dom|rho|=0.9036
+[C5/theta=0.25/L2_word_count] rho_must=0.6850 rho_son=1.0000 delta=+0.3150 p=0.00920 ties=0.000 dom|rho|=0.9946
+[C5/theta=0.25/L3_mean_verse_len] rho_must=0.9950 rho_son=1.0000 delta=+0.0050 p=0.40046 ties=0.000 dom|rho|=0.7552
+[C5/theta=0.5/L1_verse_count] rho_must=0.9912 rho_son=1.0000 delta=+0.0088 p=0.42006 ties=0.000 dom|rho|=0.9036
+[C5/theta=0.5/L2_word_count] rho_must=0.8415 rho_son=1.0000 delta=+0.1585 p=0.11859 ties=0.000 dom|rho|=0.9946
+[C5/theta=0.5/L3_mean_verse_len] rho_must=0.9977 rho_son=1.0000 delta=+0.0023 p=0.47015 ties=0.000 dom|rho|=0.7552
+[C5/theta=0.75/L1_verse_count] rho_must=1.0000 rho_son=1.0000 delta=+0.0000 p=0.49565 ties=0.000 dom|rho|=0.9036
+[C5/theta=0.75/L2_word_count] rho_must=1.0000 rho_son=1.0000 delta=-0.0000 p=0.50175 ties=0.000 dom|rho|=0.9946
+[C5/theta=0.75/L3_mean_verse_len] rho_must=1.0000 rho_son=1.0000 delta=-0.0000 p=0.49615 ties=0.000 dom|rho|=0.7552
+[S7] rho(sonorant, mustaliya) across 114 surahs = 0.1196 -> PASS
+[C5] headline (worst) channel = theta=0.75/L2_word_count: delta_rho=-0.0000 p=0.50175 -> FAIL; dominant channel = L2_word_count
+[POWER/C4] S*=0.818162 S_max=1.0 untestable=False MDE=0.880949
+[POWER/C5] S*=0.261855 S_max=2.0 untestable=False MDE=0.378932
+[D6] P adds: 25256 geminate pairs (0.0805/consonant) and 54655 long vowels (0.2407 of vowels) -- both undefined under G, both sourced from the TASHKEEL
+
+[VERDICT] VOID -- hard gate(s) failed: ['S4']

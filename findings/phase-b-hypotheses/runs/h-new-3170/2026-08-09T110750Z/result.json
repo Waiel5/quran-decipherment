@@ -1,0 +1,1507 @@
+{
+  "finding_id": "H-NEW-3170",
+  "frontier_item": "F-19",
+  "utc": "2026-08-09T110750Z",
+  "prereg_sha256": "26f7807fc50df71195e2982bdb441dccf3f7ca22a1ea711d8dcb7a3d382fae16",
+  "script_sha256": "0a2c89270d9ff8ef145f18a8fbac6ec8c23a5d0cf7b8a69e0e4f4ad7ef78edfe",
+  "seed": 20260509,
+  "n_perm": 10000,
+  "k_confirmatory": 2,
+  "alpha_bon": 0.025,
+  "git_head": "ff7fdc30030948f815e3376b0cdf1765f28791a6",
+  "python": "3.13.12",
+  "input_sha256": {
+    "quran-text/quran-transliteration.json": "0016ffd497328c9037485c6a65a927e5825ec40fcee1de1c14b8428be995a0ac",
+    "quran-text/quran-full-tashkeel.json": "382a7341300602ec8b366316d4bbe2a44955c2bf984d395bdd82dae6110b6715",
+    "quran-text/quran-no-tashkeel.json": "253f72f32f1dd4f6288c24be1b3b81b2e32c67aedd59aecb6e4a057dae35918a",
+    "findings/phase-b-hypotheses/scripts/h-new-2990.py": "851ad0dc604f56a6d574d346352f6a919c5da1c6c07d36f2546b17cc288d681a"
+  },
+  "gates": {
+    "S1": {
+      "translit_list_order_is_sorted": false,
+      "translit_list_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        33,
+        34,
+        37,
+        38,
+        39,
+        40,
+        42,
+        43,
+        93,
+        13,
+        32,
+        61,
+        94,
+        95,
+        97,
+        35,
+        36,
+        41,
+        44,
+        62,
+        99,
+        100,
+        45,
+        101,
+        102,
+        103,
+        104,
+        105,
+        46,
+        106,
+        107,
+        108,
+        109,
+        47,
+        110,
+        111,
+        112,
+        113,
+        114,
+        48,
+        49,
+        63,
+        50,
+        64,
+        51,
+        65,
+        52,
+        66,
+        53,
+        70,
+        54,
+        71,
+        55,
+        56,
+        57,
+        58,
+        72,
+        59,
+        73,
+        60,
+        75,
+        67,
+        76,
+        68,
+        77,
+        69,
+        78,
+        74,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        96,
+        98
+      ],
+      "position_of_surah_13": 39,
+      "n_surahs": {
+        "T": 114,
+        "A": 114,
+        "G": 114
+      },
+      "n_verses": {
+        "T": 6236,
+        "A": 6236,
+        "G": 6236
+      },
+      "verdict": "PASS"
+    },
+    "S2": {
+      "probe_survives": true,
+      "corpus_tanwin_after_normalize": 8554,
+      "audit_expected_min": 8000,
+      "defective_instrument_would_give": 1911,
+      "verdict": "PASS"
+    },
+    "S3": {
+      "waqf_in_P_stream": 0,
+      "waqf_in_T_stream": 0,
+      "verdict": "PASS"
+    },
+    "S4": {
+      "aligned_token_pairs": 70230,
+      "excluded_verses": 375,
+      "excluded_tokens": 7570,
+      "total_T_tokens": 77800,
+      "excluded_fraction": 0.09730077120822622,
+      "limit": 0.01,
+      "verdict": "FAIL"
+    },
+    "S5_note": "applied per theta; see merger_by_theta[*].S5_inhomogeneous_excluded",
+    "S6": {
+      "null_varies": true
+    },
+    "S7": {
+      "rho_sonorant_vs_mustaliya": 0.11964439404242798,
+      "limit": 0.8,
+      "verdict": "PASS"
+    },
+    "S8": {
+      "prereg_sha_verified": true
+    },
+    "S9": {
+      "exist_ok": false
+    }
+  },
+  "D1_executability": {
+    "scripts": [
+      {
+        "script": "scripts/h_new_165_phonological_predictor.py",
+        "sha256": "780000d03f22aa180d3ab12bbd84e9e68f7efc3621c0b9cebd0b7c4eee35f4cd",
+        "read_calls": [],
+        "write_calls": [
+          {
+            "line": 458,
+            "call": "open",
+            "mode": "w",
+            "src": "OUTPUT_JSON.open(\"w\")"
+          }
+        ],
+        "n_read_calls": 0,
+        "corpus_path_substrings_present": []
+      },
+      {
+        "script": "scripts/h_new_232_oq1_singleton.py",
+        "sha256": "2f11aa896fa11baefe08c54115d6c8d88cc959a8fa1fc155ec62e2a71b5a7b83",
+        "read_calls": [],
+        "write_calls": [
+          {
+            "line": 347,
+            "call": "open",
+            "mode": "w",
+            "src": "OUTPUT_JSON.open(\"w\")"
+          }
+        ],
+        "n_read_calls": 0,
+        "corpus_path_substrings_present": []
+      },
+      {
+        "script": "scripts/h_new_301_minimal_2feature_singleton.py",
+        "sha256": "cdd910281b666c3b870d771f4395fc8e4c1e99b39310f5fd62977fbea400fd5e",
+        "read_calls": [
+          {
+            "line": 84,
+            "call": "read_bytes",
+            "mode": null,
+            "src": "p.read_bytes()"
+          }
+        ],
+        "write_calls": [
+          {
+            "line": 237,
+            "call": "open",
+            "mode": "w",
+            "src": "open(OUT_JSON, \"w\")"
+          }
+        ],
+        "n_read_calls": 1,
+        "corpus_path_substrings_present": []
+      }
+    ],
+    "total_read_calls": 1,
+    "corpus_path_hits": 0,
+    "PASS": false
+  },
+  "D2_addition": {
+    "V-case": {
+      "n_arabic_types": 19743,
+      "arabic_types_with_multiple_latin_images": 791,
+      "token_mass_ambiguous": 24003,
+      "H_T_given_A_bits": 0.17485292229306393,
+      "examples": [
+        [
+          "فِي",
+          {
+            "Fee": 21,
+            "fee": 1007
+          }
+        ],
+        [
+          "ٱلَّذِينَ",
+          {
+            "allatheena": 607,
+            "Allatheena": 76
+          }
+        ],
+        [
+          "مِن",
+          {
+            "min": 667,
+            "Min": 10
+          }
+        ],
+        [
+          "مَا",
+          {
+            "ma": 605,
+            "Ma": 36
+          }
+        ],
+        [
+          "لَا",
+          {
+            "la": 509,
+            "La": 36
+          }
+        ],
+        [
+          "إِنَّ",
+          {
+            "Inna": 196,
+            "inna": 339
+          }
+        ],
+        [
+          "إِلَّا",
+          {
+            "illa": 483,
+            "Illa": 49
+          }
+        ],
+        [
+          "وَلَا",
+          {
+            "wala": 429,
+            "Wala": 88
+          }
+        ],
+        [
+          "وَمَا",
+          {
+            "wama": 372,
+            "Wama": 112
+          }
+        ],
+        [
+          "أَن",
+          {
+            "an": 388,
+            "An": 7
+          }
+        ],
+        [
+          "مِنَ",
+          {
+            "mina": 368,
+            "Mina": 1
+          }
+        ],
+        [
+          "مِّن",
+          {
+            "min": 340,
+            "Min": 2,
+            "mi": 1
+          }
+        ]
+      ]
+    },
+    "V-fold": {
+      "n_arabic_types": 19743,
+      "arabic_types_with_multiple_latin_images": 42,
+      "token_mass_ambiguous": 1561,
+      "H_T_given_A_bits": 0.0029251106558372,
+      "examples": [
+        [
+          "مِّن",
+          {
+            "min": 342,
+            "mi": 1
+          }
+        ],
+        [
+          "ٱلَّذِي",
+          {
+            "allathee": 200,
+            "alathee": 1
+          }
+        ],
+        [
+          "كَانُواْ",
+          {
+            "kanoo": 199,
+            "kano": 1
+          }
+        ],
+        [
+          "مَّا",
+          {
+            "ma": 156,
+            "mma": 1
+          }
+        ],
+        [
+          "كُنتُمۡ",
+          {
+            "kuntum": 131,
+            "kutum": 1
+          }
+        ],
+        [
+          "لَكُمۡ",
+          {
+            "lakum": 120,
+            "lakam": 1
+          }
+        ],
+        [
+          "ٱلصَّـٰلِحَٰتِ",
+          {
+            "alssalihati": 56,
+            "alsalihati": 1
+          }
+        ],
+        [
+          "ٱلنَّارِ",
+          {
+            "alnnari": 47,
+            "alnari": 1
+          }
+        ],
+        [
+          "عَنۡ",
+          {
+            "aaan": 1,
+            "ǀan": 29
+          }
+        ],
+        [
+          "أَلِيمٞ",
+          {
+            "aleemun": 22,
+            "aleemin": 1
+          }
+        ],
+        [
+          "فَأَمَّا",
+          {
+            "fa-amma": 20,
+            "faama": 1
+          }
+        ],
+        [
+          "ٱلظَّـٰلِمُونَ",
+          {
+            "alththalimoona": 18,
+            "althalimoona": 1
+          }
+        ]
+      ]
+    },
+    "headline_variant": "V-case",
+    "variants_agree": true,
+    "PASS": false
+  },
+  "D3_loss": {
+    "A1_full_tashkeel": {
+      "n_latin_types": 17022,
+      "latin_types_with_multiple_arabic_preimages": 2331,
+      "token_mass_ambiguous": 40729,
+      "H_A_given_T_bits": 0.5689368183931841,
+      "examples": [
+        [
+          "min",
+          {
+            "مِن": 667,
+            "مِّن": 340,
+            "مِنۢ": 118,
+            "مِّنۡ": 128,
+            "مِّنۢ": 39,
+            "مِنۡ": 228
+          }
+        ],
+        [
+          "fee",
+          {
+            "فِي": 1007,
+            "فِيٓ": 76,
+            "فِّي": 1
+          }
+        ],
+        [
+          "ma",
+          {
+            "مَا": 605,
+            "مَّا": 140,
+            "مَآ": 89,
+            "مَّآ": 15
+          }
+        ],
+        [
+          "Allahi",
+          {
+            "ٱللَّهِ": 605,
+            "ٱللَّهِۗ": 28,
+            "ٱللَّهِۚ": 72,
+            "ٱللَّهِۖ": 41,
+            "ٱللَّهِۘ": 1
+          }
+        ],
+        [
+          "Allahu",
+          {
+            "ٱللَّهُ": 612,
+            "ٱللَّهُۚ": 32,
+            "ٱللَّهُۗ": 9,
+            "ٱللَّهُۖ": 23,
+            "ٱللَّهُۘ": 1,
+            "۞ٱللَّهُ": 3
+          }
+        ],
+        [
+          "la",
+          {
+            "لَا": 509,
+            "لَّا": 92,
+            "لَّآ": 14,
+            "لَآ": 37
+          }
+        ],
+        [
+          "mina",
+          {
+            "مِّنَ": 242,
+            "مِنَ": 368
+          }
+        ],
+        [
+          "AAala",
+          {
+            "عَلَىٰ": 309,
+            "عَلَى": 220,
+            "عَلَىٰٓ": 66,
+            "عَلَا": 1
+          }
+        ],
+        [
+          "illa",
+          {
+            "إِلَّآ": 86,
+            "إِلَّا": 483
+          }
+        ],
+        [
+          "Allaha",
+          {
+            "ٱللَّهَ": 488,
+            "ٱللَّهَۚ": 9,
+            "ٱللَّهَۖ": 7,
+            "ٱللَّهَۗ": 1
+          }
+        ],
+        [
+          "wala",
+          {
+            "وَلَا": 429,
+            "وَلَآ": 43
+          }
+        ],
+        [
+          "wama",
+          {
+            "وَمَآ": 66,
+            "وَمَا": 372
+          }
+        ]
+      ]
+    },
+    "A2_phonemic": {
+      "n_latin_types": 17022,
+      "latin_types_with_multiple_arabic_preimages": 866,
+      "token_mass_ambiguous": 22331,
+      "H_A_given_T_bits": 0.22060853624885915,
+      "examples": [
+        [
+          "min",
+          {
+            "CمViCن": 1013,
+            "CمCمViCن": 507
+          }
+        ],
+        [
+          "fee",
+          {
+            "CفVVi": 1083,
+            "CفCفVVi": 1
+          }
+        ],
+        [
+          "ma",
+          {
+            "CمVVa": 605,
+            "CمCمVVa": 140,
+            "CمVaCأVVa": 89,
+            "CمCمVaCأVVa": 15
+          }
+        ],
+        [
+          "la",
+          {
+            "CلVVa": 509,
+            "CلCلVVa": 92,
+            "CلCلVaCأVVa": 14,
+            "CلVaCأVVa": 37
+          }
+        ],
+        [
+          "mina",
+          {
+            "CمCمViCنVa": 242,
+            "CمViCنVa": 368
+          }
+        ],
+        [
+          "AAala",
+          {
+            "CعVaCلVVaVVa": 375,
+            "CعVaCلVVa": 221
+          }
+        ],
+        [
+          "illa",
+          {
+            "CإViCلCلVaCأVVa": 86,
+            "CإViCلCلVVa": 483
+          }
+        ],
+        [
+          "wala",
+          {
+            "CوVaCلVVa": 429,
+            "CوVaCلVaCأVVa": 43
+          }
+        ],
+        [
+          "wama",
+          {
+            "CوVaCمVaCأVVa": 66,
+            "CوVaCمVVa": 372
+          }
+        ],
+        [
+          "inna",
+          {
+            "CإViCنCنVVa": 66,
+            "CإViCنCنVa": 339,
+            "CإViCنCنVaCأVVa": 16
+          }
+        ],
+        [
+          "ila",
+          {
+            "CإViCلVVaVVa": 233,
+            "CإViCلVVa": 125
+          }
+        ],
+        [
+          "man",
+          {
+            "CمVaCن": 265,
+            "CمCمVaCن": 60
+          }
+        ]
+      ]
+    },
+    "A3_skeleton": {
+      "n_latin_types": 17022,
+      "latin_types_with_multiple_arabic_preimages": 247,
+      "token_mass_ambiguous": 4501,
+      "H_A_given_T_bits": 0.02949255112218813,
+      "examples": [
+        [
+          "AAala",
+          {
+            "علي": 595,
+            "علا": 1
+          }
+        ],
+        [
+          "inna",
+          {
+            "انا": 82,
+            "ان": 339
+          }
+        ],
+        [
+          "kana",
+          {
+            "كانا": 2,
+            "كان": 304
+          }
+        ],
+        [
+          "bima",
+          {
+            "بما": 273,
+            "بم": 1
+          }
+        ],
+        [
+          "Inna",
+          {
+            "ان": 209,
+            "انا": 56
+          }
+        ],
+        [
+          "Qala",
+          {
+            "قال": 177,
+            "قالا": 2,
+            "قل": 4
+          }
+        ],
+        [
+          "qala",
+          {
+            "قال": 162,
+            "قلي": 1
+          }
+        ],
+        [
+          "anna",
+          {
+            "ان": 96,
+            "اني": 13,
+            "انا": 16
+          }
+        ],
+        [
+          "mimma",
+          {
+            "مما": 98,
+            "مم": 1
+          }
+        ],
+        [
+          "baAAdi",
+          {
+            "بعد": 76,
+            "بعض": 4
+          }
+        ],
+        [
+          "fainna",
+          {
+            "فان": 61,
+            "فانا": 8
+          }
+        ],
+        [
+          "wainna",
+          {
+            "وانا": 21,
+            "وان": 44
+          }
+        ]
+      ]
+    },
+    "headline_variant_worst": "A1_full_tashkeel",
+    "decision_variant_best_for_T": "A3_skeleton",
+    "PASS": true
+  },
+  "D6_what_P_adds": {
+    "corpus_consonant_tokens_P": 313777,
+    "corpus_geminate_pairs_P": 25256,
+    "geminate_rate_per_consonant": 0.08049028450141342,
+    "corpus_long_vowels_P": 54655,
+    "corpus_short_vowels_P": 172407,
+    "long_vowel_fraction": 0.24070518184460632,
+    "computable_under_G": false,
+    "source_of_the_information": "quran-full-tashkeel.json (the tashkeel), NOT the transliteration"
+  },
+  "merger_by_theta": {
+    "0.25": {
+      "merged_pairs_raw": [
+        "ذ+ظ",
+        "ث+ظ",
+        "د+ض",
+        "ت+ط"
+      ],
+      "S5_inhomogeneous_excluded": [],
+      "merged_pairs_kept": [
+        "ذ+ظ",
+        "ث+ظ",
+        "د+ض",
+        "ت+ط"
+      ],
+      "merged_consonants": [
+        "ت",
+        "ث",
+        "د",
+        "ذ",
+        "ض",
+        "ط",
+        "ظ"
+      ],
+      "n_merged_consonants": 7,
+      "in_target": [
+        "ض",
+        "ط",
+        "ظ"
+      ],
+      "in_sonorant": []
+    },
+    "0.5": {
+      "merged_pairs_raw": [
+        "د+ض"
+      ],
+      "S5_inhomogeneous_excluded": [],
+      "merged_pairs_kept": [
+        "د+ض"
+      ],
+      "merged_consonants": [
+        "د",
+        "ض"
+      ],
+      "n_merged_consonants": 2,
+      "in_target": [
+        "ض"
+      ],
+      "in_sonorant": []
+    },
+    "0.75": {
+      "merged_pairs_raw": [],
+      "S5_inhomogeneous_excluded": [],
+      "merged_pairs_kept": [],
+      "merged_consonants": [],
+      "n_merged_consonants": 0,
+      "in_target": [],
+      "in_sonorant": []
+    }
+  },
+  "C4": {
+    "by_theta": {
+      "0.25": {
+        "status": "OK",
+        "theta": "0.25",
+        "merged_consonants": [
+          "ت",
+          "ث",
+          "د",
+          "ذ",
+          "ض",
+          "ط",
+          "ظ"
+        ],
+        "F_obs": 0.14495565410199557,
+        "null_mean_perm": 0.33251582958015663,
+        "null_median_perm": 0.26577818627450983,
+        "null_min_perm": 0.030166995869994613,
+        "null_max_perm": 1.0,
+        "p_perm": 0.8209179082091791,
+        "tie_fraction": 0.0003,
+        "tie_trigger": 0.5,
+        "n_exact_configurations": 5145,
+        "exact": {
+          "n_configurations": 5145,
+          "p_exact": 0.8171039844509232,
+          "tie_fraction_exact": 0.00019436345966958212,
+          "null_mean": 0.3308205461878692,
+          "null_min": 0.030166995869994613,
+          "null_max": 1.0
+        },
+        "governing_test": "permutation",
+        "p_used": 0.8209179082091791,
+        "S6_null_varies": true
+      },
+      "0.5": {
+        "status": "OK",
+        "theta": "0.5",
+        "merged_consonants": [
+          "د",
+          "ض"
+        ],
+        "F_obs": 0.2105890770331505,
+        "null_mean_perm": 0.4272631075122595,
+        "null_median_perm": 0.2509592155748188,
+        "null_min_perm": 0.0,
+        "null_max_perm": 1.0,
+        "p_perm": 0.5703429657034297,
+        "tie_fraction": 0.0178,
+        "tie_trigger": 0.5,
+        "n_exact_configurations": 49,
+        "exact": {
+          "n_configurations": 49,
+          "p_exact": 0.5714285714285714,
+          "tie_fraction_exact": 0.02040816326530612,
+          "null_mean": 0.4244550867835777,
+          "null_min": 0.0,
+          "null_max": 1.0
+        },
+        "governing_test": "permutation",
+        "p_used": 0.5703429657034297,
+        "S6_null_varies": true
+      },
+      "0.75": {
+        "status": "NO-MERGED-CONSONANTS",
+        "F_obs": null
+      }
+    },
+    "headline_theta": "0.25",
+    "headline": {
+      "status": "OK",
+      "theta": "0.25",
+      "merged_consonants": [
+        "ت",
+        "ث",
+        "د",
+        "ذ",
+        "ض",
+        "ط",
+        "ظ"
+      ],
+      "F_obs": 0.14495565410199557,
+      "null_mean_perm": 0.33251582958015663,
+      "null_median_perm": 0.26577818627450983,
+      "null_min_perm": 0.030166995869994613,
+      "null_max_perm": 1.0,
+      "p_perm": 0.8209179082091791,
+      "tie_fraction": 0.0003,
+      "tie_trigger": 0.5,
+      "n_exact_configurations": 5145,
+      "exact": {
+        "n_configurations": 5145,
+        "p_exact": 0.8171039844509232,
+        "tie_fraction_exact": 0.00019436345966958212,
+        "null_mean": 0.3308205461878692,
+        "null_min": 0.030166995869994613,
+        "null_max": 1.0
+      },
+      "governing_test": "permutation",
+      "p_used": 0.8209179082091791,
+      "S6_null_varies": true
+    },
+    "PASS": false
+  },
+  "C5": {
+    "by_channel": {
+      "theta=0.25/L1_verse_count": {
+        "theta": "0.25",
+        "channel": "L1_verse_count",
+        "rho_mustaliya_P_T": 0.9842285283827692,
+        "rho_sonorant_P_T": 1.0,
+        "delta_rho": 0.015771471617230803,
+        "p_perm": 0.3421657834216578,
+        "tie_fraction": 0.0,
+        "null_mean": 0.000182735537345623,
+        "null_median": 0.00011734295201016459,
+        "null_sd": 0.03826268057694948,
+        "null_min": -0.14116535699679672,
+        "null_max": 0.13348810060632196,
+        "dominance_abs_rho_channel_vs_grouping": 0.9035778603903942,
+        "T_target_class_members": {
+          "ت": [
+            "ت",
+            "ط"
+          ],
+          "ث": [
+            "ث",
+            "ذ",
+            "ظ"
+          ],
+          "ح": [
+            "ح"
+          ],
+          "خ": [
+            "خ"
+          ],
+          "د": [
+            "د",
+            "ض"
+          ],
+          "ذ": [
+            "ث",
+            "ذ",
+            "ظ"
+          ],
+          "ص": [
+            "ص"
+          ],
+          "ض": [
+            "د",
+            "ض"
+          ],
+          "ط": [
+            "ت",
+            "ط"
+          ],
+          "ظ": [
+            "ث",
+            "ذ",
+            "ظ"
+          ],
+          "ع": [
+            "ع"
+          ],
+          "غ": [
+            "غ"
+          ],
+          "ق": [
+            "ق"
+          ],
+          "ه": [
+            "ه"
+          ]
+        }
+      },
+      "theta=0.25/L2_word_count": {
+        "theta": "0.25",
+        "channel": "L2_word_count",
+        "rho_mustaliya_P_T": 0.6849775012859302,
+        "rho_sonorant_P_T": 1.0,
+        "delta_rho": 0.31502249871406984,
+        "p_perm": 0.0091990800919908,
+        "tie_fraction": 0.0,
+        "null_mean": 0.0018382710223423884,
+        "null_median": 0.001552902674940529,
+        "null_sd": 0.13374765221301158,
+        "null_min": -0.47532130956860474,
+        "null_max": 0.5726650090545253,
+        "dominance_abs_rho_channel_vs_grouping": 0.9946170361308976,
+        "T_target_class_members": {
+          "ت": [
+            "ت",
+            "ط"
+          ],
+          "ث": [
+            "ث",
+            "ذ",
+            "ظ"
+          ],
+          "ح": [
+            "ح"
+          ],
+          "خ": [
+            "خ"
+          ],
+          "د": [
+            "د",
+            "ض"
+          ],
+          "ذ": [
+            "ث",
+            "ذ",
+            "ظ"
+          ],
+          "ص": [
+            "ص"
+          ],
+          "ض": [
+            "د",
+            "ض"
+          ],
+          "ط": [
+            "ت",
+            "ط"
+          ],
+          "ظ": [
+            "ث",
+            "ذ",
+            "ظ"
+          ],
+          "ع": [
+            "ع"
+          ],
+          "غ": [
+            "غ"
+          ],
+          "ق": [
+            "ق"
+          ],
+          "ه": [
+            "ه"
+          ]
+        }
+      },
+      "theta=0.25/L3_mean_verse_len": {
+        "theta": "0.25",
+        "channel": "L3_mean_verse_len",
+        "rho_mustaliya_P_T": 0.9949595896409492,
+        "rho_sonorant_P_T": 1.0,
+        "delta_rho": 0.005040410359050784,
+        "p_perm": 0.40045995400459955,
+        "tie_fraction": 0.0,
+        "null_mean": 0.00026588783062446686,
+        "null_median": 0.00010967894644112186,
+        "null_sd": 0.019583496047927973,
+        "null_min": -0.06973557821605544,
+        "null_max": 0.07741241009118521,
+        "dominance_abs_rho_channel_vs_grouping": 0.7551677978649137,
+        "T_target_class_members": {
+          "ت": [
+            "ت",
+            "ط"
+          ],
+          "ث": [
+            "ث",
+            "ذ",
+            "ظ"
+          ],
+          "ح": [
+            "ح"
+          ],
+          "خ": [
+            "خ"
+          ],
+          "د": [
+            "د",
+            "ض"
+          ],
+          "ذ": [
+            "ث",
+            "ذ",
+            "ظ"
+          ],
+          "ص": [
+            "ص"
+          ],
+          "ض": [
+            "د",
+            "ض"
+          ],
+          "ط": [
+            "ت",
+            "ط"
+          ],
+          "ظ": [
+            "ث",
+            "ذ",
+            "ظ"
+          ],
+          "ع": [
+            "ع"
+          ],
+          "غ": [
+            "غ"
+          ],
+          "ق": [
+            "ق"
+          ],
+          "ه": [
+            "ه"
+          ]
+        }
+      },
+      "theta=0.5/L1_verse_count": {
+        "theta": "0.5",
+        "channel": "L1_verse_count",
+        "rho_mustaliya_P_T": 0.9911866974722323,
+        "rho_sonorant_P_T": 1.0,
+        "delta_rho": 0.008813302527767686,
+        "p_perm": 0.42005799420057993,
+        "tie_fraction": 0.0,
+        "null_mean": 4.4166074128282e-05,
+        "null_median": 0.00038020784635926785,
+        "null_sd": 0.0413739660089031,
+        "null_min": -0.1360613846563692,
+        "null_max": 0.15365085834601877,
+        "dominance_abs_rho_channel_vs_grouping": 0.9035778603903942,
+        "T_target_class_members": {
+          "ح": [
+            "ح"
+          ],
+          "خ": [
+            "خ"
+          ],
+          "د": [
+            "د",
+            "ض"
+          ],
+          "ص": [
+            "ص"
+          ],
+          "ض": [
+            "د",
+            "ض"
+          ],
+          "ط": [
+            "ط"
+          ],
+          "ظ": [
+            "ظ"
+          ],
+          "ع": [
+            "ع"
+          ],
+          "غ": [
+            "غ"
+          ],
+          "ق": [
+            "ق"
+          ],
+          "ه": [
+            "ه"
+          ]
+        }
+      },
+      "theta=0.5/L2_word_count": {
+        "theta": "0.5",
+        "channel": "L2_word_count",
+        "rho_mustaliya_P_T": 0.8414698109594922,
+        "rho_sonorant_P_T": 1.0,
+        "delta_rho": 0.15853018904050775,
+        "p_perm": 0.11858814118588142,
+        "tie_fraction": 0.0,
+        "null_mean": 0.0014329134877612548,
+        "null_median": 0.0017700660544095886,
+        "null_sd": 0.13209969465637733,
+        "null_min": -0.49132816716521727,
+        "null_max": 0.4829298025605756,
+        "dominance_abs_rho_channel_vs_grouping": 0.9946170361308976,
+        "T_target_class_members": {
+          "ح": [
+            "ح"
+          ],
+          "خ": [
+            "خ"
+          ],
+          "د": [
+            "د",
+            "ض"
+          ],
+          "ص": [
+            "ص"
+          ],
+          "ض": [
+            "د",
+            "ض"
+          ],
+          "ط": [
+            "ط"
+          ],
+          "ظ": [
+            "ظ"
+          ],
+          "ع": [
+            "ع"
+          ],
+          "غ": [
+            "غ"
+          ],
+          "ق": [
+            "ق"
+          ],
+          "ه": [
+            "ه"
+          ]
+        }
+      },
+      "theta=0.5/L3_mean_verse_len": {
+        "theta": "0.5",
+        "channel": "L3_mean_verse_len",
+        "rho_mustaliya_P_T": 0.9977177410719738,
+        "rho_sonorant_P_T": 1.0,
+        "delta_rho": 0.0022822589280262484,
+        "p_perm": 0.47015298470152983,
+        "tie_fraction": 0.0,
+        "null_mean": 0.0004064301745223524,
+        "null_median": 0.0005526535098514251,
+        "null_sd": 0.02211822211567138,
+        "null_min": -0.07863743997290187,
+        "null_max": 0.07936667907164652,
+        "dominance_abs_rho_channel_vs_grouping": 0.7551677978649137,
+        "T_target_class_members": {
+          "ح": [
+            "ح"
+          ],
+          "خ": [
+            "خ"
+          ],
+          "د": [
+            "د",
+            "ض"
+          ],
+          "ص": [
+            "ص"
+          ],
+          "ض": [
+            "د",
+            "ض"
+          ],
+          "ط": [
+            "ط"
+          ],
+          "ظ": [
+            "ظ"
+          ],
+          "ع": [
+            "ع"
+          ],
+          "غ": [
+            "غ"
+          ],
+          "ق": [
+            "ق"
+          ],
+          "ه": [
+            "ه"
+          ]
+        }
+      },
+      "theta=0.75/L1_verse_count": {
+        "theta": "0.75",
+        "channel": "L1_verse_count",
+        "rho_mustaliya_P_T": 1.0,
+        "rho_sonorant_P_T": 1.0,
+        "delta_rho": 0.0,
+        "p_perm": 0.49565043495650435,
+        "tie_fraction": 0.0,
+        "null_mean": -0.0004970707001158355,
+        "null_median": -0.0004050189953908878,
+        "null_sd": 0.04062149163559959,
+        "null_min": -0.16474552656519592,
+        "null_max": 0.1638301836356125,
+        "dominance_abs_rho_channel_vs_grouping": 0.9035778603903942,
+        "T_target_class_members": {
+          "ح": [
+            "ح"
+          ],
+          "خ": [
+            "خ"
+          ],
+          "ص": [
+            "ص"
+          ],
+          "ض": [
+            "ض"
+          ],
+          "ط": [
+            "ط"
+          ],
+          "ظ": [
+            "ظ"
+          ],
+          "ع": [
+            "ع"
+          ],
+          "غ": [
+            "غ"
+          ],
+          "ق": [
+            "ق"
+          ],
+          "ه": [
+            "ه"
+          ]
+        }
+      },
+      "theta=0.75/L2_word_count": {
+        "theta": "0.75",
+        "channel": "L2_word_count",
+        "rho_mustaliya_P_T": 1.0000000000000002,
+        "rho_sonorant_P_T": 1.0,
+        "delta_rho": -2.220446049250313e-16,
+        "p_perm": 0.5017498250174982,
+        "tie_fraction": 0.0,
+        "null_mean": 0.00047107436492326726,
+        "null_median": 0.00048561138284571037,
+        "null_sd": 0.13165018107624726,
+        "null_min": -0.4701817867726375,
+        "null_max": 0.5560094489285486,
+        "dominance_abs_rho_channel_vs_grouping": 0.9946170361308976,
+        "T_target_class_members": {
+          "ح": [
+            "ح"
+          ],
+          "خ": [
+            "خ"
+          ],
+          "ص": [
+            "ص"
+          ],
+          "ض": [
+            "ض"
+          ],
+          "ط": [
+            "ط"
+          ],
+          "ظ": [
+            "ظ"
+          ],
+          "ع": [
+            "ع"
+          ],
+          "غ": [
+            "غ"
+          ],
+          "ق": [
+            "ق"
+          ],
+          "ه": [
+            "ه"
+          ]
+        }
+      },
+      "theta=0.75/L3_mean_verse_len": {
+        "theta": "0.75",
+        "channel": "L3_mean_verse_len",
+        "rho_mustaliya_P_T": 1.0000000000000002,
+        "rho_sonorant_P_T": 1.0,
+        "delta_rho": -2.220446049250313e-16,
+        "p_perm": 0.4961503849615039,
+        "tie_fraction": 0.0,
+        "null_mean": -6.218386031833706e-05,
+        "null_median": -0.00024891480410448724,
+        "null_sd": 0.02183817023018797,
+        "null_min": -0.08416661867871696,
+        "null_max": 0.08124889475516642,
+        "dominance_abs_rho_channel_vs_grouping": 0.7551677978649137,
+        "T_target_class_members": {
+          "ح": [
+            "ح"
+          ],
+          "خ": [
+            "خ"
+          ],
+          "ص": [
+            "ص"
+          ],
+          "ض": [
+            "ض"
+          ],
+          "ط": [
+            "ط"
+          ],
+          "ظ": [
+            "ظ"
+          ],
+          "ع": [
+            "ع"
+          ],
+          "غ": [
+            "غ"
+          ],
+          "ق": [
+            "ق"
+          ],
+          "ه": [
+            "ه"
+          ]
+        }
+      }
+    },
+    "headline_worst_channel": "theta=0.75/L2_word_count",
+    "dominant_channel": "L2_word_count",
+    "headline": {
+      "theta": "0.75",
+      "channel": "L2_word_count",
+      "rho_mustaliya_P_T": 1.0000000000000002,
+      "rho_sonorant_P_T": 1.0,
+      "delta_rho": -2.220446049250313e-16,
+      "p_perm": 0.5017498250174982,
+      "tie_fraction": 0.0,
+      "null_mean": 0.00047107436492326726,
+      "null_median": 0.00048561138284571037,
+      "null_sd": 0.13165018107624726,
+      "null_min": -0.4701817867726375,
+      "null_max": 0.5560094489285486,
+      "dominance_abs_rho_channel_vs_grouping": 0.9946170361308976,
+      "T_target_class_members": {
+        "ح": [
+          "ح"
+        ],
+        "خ": [
+          "خ"
+        ],
+        "ص": [
+          "ص"
+        ],
+        "ض": [
+          "ض"
+        ],
+        "ط": [
+          "ط"
+        ],
+        "ظ": [
+          "ظ"
+        ],
+        "ع": [
+          "ع"
+        ],
+        "غ": [
+          "غ"
+        ],
+        "ق": [
+          "ق"
+        ],
+        "ه": [
+          "ه"
+        ]
+      }
+    },
+    "PASS": false
+  },
+  "power": {
+    "C4": {
+      "name": "C4 F concentration",
+      "alpha": 0.025,
+      "S_star": 0.8181619733682602,
+      "S_max": 1.0,
+      "branch_UNTESTABLE_AT_THIS_N": false,
+      "theta_star": 16.039500516267175,
+      "MDE_tilted_mean": 0.8809490231702545,
+      "power_against_null_at_S_star": 0.0249,
+      "null_mean": 0.33251582958015663,
+      "null_min": 0.030166995869994613,
+      "null_max": 1.0
+    },
+    "C5": {
+      "name": "C5 delta_rho",
+      "alpha": 0.025,
+      "S_star": 0.2618546482148697,
+      "S_max": 2.0,
+      "branch_UNTESTABLE_AT_THIS_N": false,
+      "theta_star": 21.278516201222573,
+      "MDE_tilted_mean": 0.37893178777885445,
+      "power_against_null_at_S_star": 0.0249,
+      "null_mean": 0.00047107436492326726,
+      "null_min": -0.4701817867726375,
+      "null_max": 0.5560094489285486
+    }
+  },
+  "verdict": "VOID",
+  "verdict_why": "hard gate(s) failed: ['S4']"
+}
