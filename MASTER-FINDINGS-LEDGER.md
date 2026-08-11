@@ -7512,3 +7512,22 @@ denominator and tested a monotone contrast on an axis whose published shape is a
 | [[h-new-3150-mubalagha-fasila]] | Intensive nominal patterns at verse-end. **Locked PASS is an artefact of its own rhyme control** — unvocalised rhyme merged *khayr*-type (0/186 verse-final) with *khabīr*-type (59/71). φ(mubālagha, long rhyme) = 0.9985, so the correct control leaves S_max = 0. Simpson's paradox: crude 2.16× reverses to −5.2% | **PASS-AS-LOCKED, NOT BELIEVED** |
 | [[cross-finding-030-three-ways-a-control-fails]] | A control can fail by not discriminating, not applying, or duplicating the treatment — three anchors, one day, all pre-registered and all silent | **CONVERGENT** |
 
+### Wave 2026-08-10 second batch
+
+| ID | result | verdict |
+|:--|:--|:--|
+| [[h-new-3100-rasm-divergence]] | Rasm/imlāʾ divergence. **One unrecorded convention flips the SIGN** — dagger-alef as letter gives RR 0.29 (depleted), as mark gives RR 1.28 (enriched). Under the letter convention the design **cannot reject at all** (critical 119.45 vs S_max 119). Conditioned on lexeme the flip evaporates | **CONVENTION-STABLE NULL** |
+| [[h-new-3170-phoneme-level]] | Phoneme-level analysis. **Run VOID on its own hard gate** (9.73% excluded against a 1% limit set without computing it). F-19's target statistic reads no corpus text; the transliteration file misorders **102 of 114 surahs** silently | **VOID / NOT EXECUTABLE** |
+| [[h-new-3160-tafsir-disagreement]] | Cross-edition exegetical divergence. Verdict decided by **rank vs density** — 3.96× shift, PASS→NULL | **NULL** |
+
+**Instrument hazard, now seen in THREE independent file pairs.** The Uthmānī rasm writes the vocative
+particle *yā* **joined** to its noun where the simple orthography writes it **separate**. This has now
+surfaced in: (i) the two alt-texts, a 367-token gap across 363 lines; (ii) the register proxy's
+defining marker, which matches 89× in one file and **0×** in every other; (iii) the transliteration
+file, which follows the simple segmentation and thereby voided H-NEW-3170's run. **Any cross-file
+alignment over Arabic in this repo must declare its orthographic variant.**
+
+**Step-0 automation installed:** `scripts/check-frontier-staleness.sh`. Running it immediately found
+F-15 and F-16 already answered, both previously listed as unresolved. **Ten of sixteen resolved
+section-B items were already answered before dispatch.**
+
