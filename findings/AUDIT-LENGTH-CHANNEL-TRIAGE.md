@@ -227,3 +227,80 @@ prereg and its script disagreeing about the size of the corpus is worth someone'
 **4 remain unresolved.** And the §4 pattern holds across all sixteen: **mean verse length dominates
 wherever the outcome is a per-verse or per-window rate, and no script in the set controls on it.**
 
+---
+
+## 10. Batch E — 20 of 20, and it refutes the rationale I built the screen on
+
+| finding | channel used | dominant | gap | verdict |
+|:--|:--|:--|--:|:--|
+| **`h-new-1550-oath-opener-cluster`** | verse count (0.118) | **mvl (0.351)** | **+0.233** | **EXPOSED — the batch's only real inflation risk** |
+| `h-new-1750-alhamdu-opener` | verse count (**perfectly matched**) | word count | +0.002 | EXPOSED, marginal, liberal |
+| `h-new-1760-hawamim-opener` | verse count (**perfectly matched**) | word count | +0.012 | **EXPOSED — but CONSERVATIVE** |
+| `h-new-2300-dual-name-fasila-seal` | none | — | — | NOT-APPLICABLE |
+
+### 10.1 The correction to my own screening logic
+
+[[AUDIT-LENGTH-CHANNEL-EXPOSURE]] §3 justified filtering the 158 candidates down to 20 with this:
+
+> *"Under-controlling leaves residual confound, which inflates significance. So the defect is
+> LIBERAL: it manufactures passes. A finding that NULLed under a single weak channel is DOUBLY SAFE."*
+
+**That is not automatic, and batch E shows both signs in the same design.** `h-new-1750` and
+`h-new-1760` are structurally identical — both fix window length at 3 verses on both arms, so verse
+count is *perfectly* matched and word count is the only live channel. Their treatment arms diverge:
+
+| | treatment mean words | control mean | direction |
+|:--|--:|--:|:--|
+| `h-new-1750` | 42.0 | 37.5 | slightly **liberal** |
+| `h-new-1760` | **14.3** | 37.5 | **2.6× shorter → CONSERVATIVE** |
+
+A word-matched null for 1760 **halves the null mean** (0.0497 → 0.0226) and would *strengthen* its
+pass, from z = +6.01 to roughly +7.56. **Its under-match runs against the finding, not for it.**
+
+**So the liberal-direction argument holds only once the nuisance function is measured, not assumed.**
+My filter kept only passing verdicts on the reasoning that NULLs are doubly safe. **If under-control
+can run conservative, some NULLs in the 138 I discarded may be genuine cases I filtered out.** That
+is a real limitation on the screen's coverage, and it is mine.
+
+### 10.2 ρ is arm-size-crushed on the pericope rows
+
+With 7 treatment units against 70,000 controls, **the ceiling on |ρ| is 0.0173.** Read raw,
+`h-new-1760`'s −0.0120 looks negligible; it is **69% of the maximum attainable**, corresponding to
+AUC = 0.153. **Any reading of these rows on raw |ρ| systematically under-calls pericope exposures** —
+the gap column must be read against its ceiling, not against the 0-to-1 scale.
+
+### 10.3 h-new-1550 is not pericope-scale, and it fails hard
+
+Flagged as pericope-scale; it is **whole-surah** Fisher-Rao. So the "verse is the natural unit"
+defence does not apply. Its length-matched null nails verse totals (31.8th percentile) and **misses
+words almost completely**: the cluster carries **2,813 words where matched draws average 7,092** —
+z = −2.95 on words, **−3.58 on mean verse length**. The cell the finding leans on claims the oath
+formula *"adds cohesion above and beyond shared brevity."* **The control as built does not support
+that.** Corroborated by the finding's own 2026-08-07 correction notice.
+
+### 10.4 h-new-2300 — NOT-APPLICABLE, with a distortion worth its own look
+
+Two channels are degenerate at verse scale. But the live one is not inert: MERCY-seal verses average
+**23.1 words against KNOW's 15.3**, and ρ(verse word count, in-lexicon content roots) = **+0.32**. Its
+null is a label shuffle with no length term, which **destroys rather than absorbs** a length-mediated
+association.
+
+And a length-graded distortion sits inside the predictor: the script strips the final two words as
+"the seal." Verse lengths run 5 to 78 words, so **the shortest verses lose 40% of their body and the
+longest lose 2.6%.**
+
+## 11. Final tally — 20 of 20
+
+| verdict | n | which |
+|:--|--:|:--|
+| **EXPOSED — severe** | **4** | 127-6, 1500, 1520, 1550 |
+| EXPOSED — moderate | 2 | 91, 85 |
+| EXPOSED — marginal | 3 | 112, 264, 1380 |
+| **EXPOSED — conservative direction** | **1** | 1760 |
+| EXPOSED — nominal | 1 | 1750 |
+| CLEAR | 5 | 150, 155, 187, 195, 270 |
+| NOT-APPLICABLE | 4 | 46-1, 140, 170, 2300 |
+
+**Four severe.** All four share the same shape: **the outcome is a rate over a window, the window was
+matched on verse count, and mean verse length was the dominant channel nobody controlled.**
+
