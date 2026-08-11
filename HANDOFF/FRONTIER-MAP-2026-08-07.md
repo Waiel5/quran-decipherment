@@ -266,7 +266,14 @@ enabling data is stripped or absent.
 > | F-14 | quantifier scope | H-NEW-3080 | **CONFIRMED** — on three *baʿḍ* tokens in two verses |
 > | F-20 | kinship | H-NEW-3090 | NULL, effect reversed |
 >
-> **Eight of the fourteen were already answered before dispatch.** Of all thirteen: **eight NULL-ish,
+> **TEN of the sixteen were already answered before dispatch** — F-15 (H-NEW-2800, COMPLETE) and F-16
+> (H-NEW-2870 / 2880 / 2890) were found by an automated check *after* this scorecard was first
+> written, having been listed as unresolved.
+>
+> **RUN `scripts/check-frontier-staleness.sh` BEFORE DISPATCHING ANYTHING.** It greps `frontier_item:`
+> tags across `findings/` and returns in about a second. It would have caught F-9 before three lanes
+> and four of my own attempts were spent on it. Absence from its output is **not** proof an item is
+> open — a finding can answer an item without carrying the tag — but presence is proof it is closed. Of all thirteen: **eight NULL-ish,
 > three pass-ish, and the single substantive CONFIRMED (F-14) rests on a denominator of three
 > tokens.**
 >

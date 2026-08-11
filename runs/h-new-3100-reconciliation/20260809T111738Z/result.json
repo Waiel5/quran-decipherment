@@ -1,0 +1,160 @@
+{
+ "id": "H-NEW-3100-RECONCILIATION",
+ "run": "20260809T111738Z",
+ "type": "DESCRIPTIVE",
+ "verdict": null,
+ "input_sha256": {
+  "data/alt-text/quran-uthmani-txt.txt": "e5e7e54988877d6164832d55435135a563b9cfc249e0c8efd73e9e7f23231db8",
+  "data/alt-text/quran-simple-txt.txt": "777c190d8e4ab081a80b4f10f5e309f1ab2a87e4d3ea97e5a7eabc59f4fe0b72",
+  "data/literature/classical-tafsir/raw/suyuti-itqan.openiti.raw.txt": "a067ebb34ccabe92376f3008b9cdfb32eea9d6167062172318635e53f500fb05",
+  "scripts/arabic_normaliser.py": "e294193483919c2978976004006848f65e542a05925b5989c021e0708b2c4198",
+  "scripts/h-new-3100.py": "0ad50439786c2ae988a15c9805f4c0976ec520ed1f8288e06db97b495f56436b"
+ },
+ "pair_accounting": {
+  "uthmani_tokens": 82260,
+  "pairs": 81895,
+  "merge_sites": 365,
+  "identity_holds": true,
+  "team_lead_pairs": 74740,
+  "team_lead_unpaired": 7155
+ },
+ "ratio_ladder": {
+  "L0_strip_marks_only": {
+   "letter": 19062,
+   "mark": 22021,
+   "ratio": 1.1552303011226523
+  },
+  "L1_plus_alef_wasla": {
+   "letter": 6402,
+   "mark": 11166,
+   "ratio": 1.7441424554826617
+  },
+  "L2_plus_madda_hamza_alefmadda": {
+   "letter": 4951,
+   "mark": 10065,
+   "ratio": 2.032922641890527
+  }
+ },
+ "team_lead_report": {
+  "pairs": 74740,
+  "letter": 19138,
+  "mark": 21793,
+  "ratio": 1.1387292298045772
+ },
+ "suyuti_anchor": {
+  "23216": {
+   "note": "naw' heading: al-naw' al-sadis wa-l-sab'un: fi marsum al-khatt wa-adab kitabatihi",
+   "text": "### | النوع السادس والسبعون: في مرسوم الخط وآداب كتابته"
+  },
+  "23255": {
+   "note": "the six qawa'id sentence",
+   "text": "# قلت، وسنحصر أمر الرسم في الحذف والزيادة والهمز والبدل والفصل، وما فيه"
+  },
+  "23257": {
+   "note": "qa'ida 1: al-hadhf",
+   "text": "# القاعدة الأولى: في الحذف"
+  },
+  "23258": {
+   "note": "hadhf al-alif from ya' al-nida' AND ha' al-tanbih, with named examples",
+   "text": "# تحذف الألف من ياء النداء، نحو: \"يأيها الناس\"، \"يا آدم\"، \"يارب\"،"
+  },
+  "23259": {
+   "note": "continuation: ha'ulа'i, ha antum",
+   "text": "~~\"ياعبادي\"، وهاء التنبيه نحو: \"هؤلاء\"، \"ها أنتم\"، ونا مع ضمير \"أنجيناكم\"،"
+  },
+  "23336": {
+   "note": "qa'ida 2: al-ziyada",
+   "text": "# القاعدة الثانية في الزيادة"
+  },
+  "23359": {
+   "note": "qa'ida 3 heading",
+   "text": "# القاعدة الثالثة"
+  },
+  "23360": {
+   "note": "qa'ida 3: fi al-hamz",
+   "text": "# في الهمز"
+  },
+  "23397": {
+   "note": "qa'ida 4 heading",
+   "text": "# القاعدة الرابعة"
+  },
+  "23398": {
+   "note": "qa'ida 4: fi al-badal",
+   "text": "# في البدل"
+  },
+  "23417": {
+   "note": "qa'ida 5 heading",
+   "text": "# القاعدة الخامسة"
+  },
+  "23418": {
+   "note": "qa'ida 5: fi al-wasl wa-l-fasl",
+   "text": "# في الوصل والفصل"
+  },
+  "23449": {
+   "note": "ibn umm, except in Ta-Ha, where the hamza is written as a waw",
+   "text": "# و\"يوم هم\"،و \"لات حين\" و \"ابن أم\" إلا في طه، فكتبت الهمزة حينئذ واوا"
+  },
+  "23450": {
+   "note": "and the hamza of ibn was elided, so it became thus: yabna'umm",
+   "text": "# وحذفت همزة \"ابن\" فصارت هكذا \"يبنؤم\""
+  },
+  "23452": {
+   "note": "qa'ida 6 heading",
+   "text": "# القاعدة السادسة"
+  },
+  "23453": {
+   "note": "qa'ida 6: ma fihi qira'atan",
+   "text": "# فيما فيه قراءتان فكتب على إحداهما"
+  }
+ },
+ "type_to_qaida": {
+  "T1_HADHF_ALIF": [
+   "al-hadhf",
+   23257
+  ],
+  "T2_HADHF_YA": [
+   "al-hadhf",
+   23257
+  ],
+  "T3_HADHF_WAW": [
+   "al-hadhf",
+   23257
+  ],
+  "T4_HADHF_LAM": [
+   "al-hadhf",
+   23257
+  ],
+  "T5_ZIYADA_ALIF": [
+   "al-ziyada",
+   23336
+  ],
+  "T6_ZIYADA_WAW": [
+   "al-ziyada",
+   23336
+  ],
+  "T7_ZIYADA_YA": [
+   "al-ziyada",
+   23336
+  ],
+  "T8_BADAL_YA_ALIF": [
+   "al-badal",
+   23398
+  ],
+  "T9_BADAL_WAW_ALIF": [
+   "al-badal",
+   23398
+  ],
+  "T11_BADAL_OTHER": [
+   "al-badal",
+   23398
+  ],
+  "T10_HAMZ": [
+   "al-hamz",
+   23360
+  ],
+  "MERGE_SITES": [
+   "al-wasl wa-l-fasl",
+   23418
+  ]
+ }
+}
